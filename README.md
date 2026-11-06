@@ -1,5 +1,7 @@
 # Knotlab
 
+By John Cullen.
+
 Findings and intuitions from the contact-first research program of Prespatial
 Labs. The program asks whether logic can build structure, such as holes,
 paths and spaces, without assuming a space to start from.

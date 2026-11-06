@@ -3,6 +3,19 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 5 November 2026: authorship and the Rowell note for arXiv
+
+- The three notes and [CITATION.cff](CITATION.cff) now name John Cullen as
+  the author, in place of "Prespatial Labs".
+- [notes/knot-group-counting](notes/knot-group-counting/) is now the version
+  prepared for arXiv. A first-page footnote states the AI assistance, and the
+  evidence section points to this repository. One citation was corrected:
+  Matveev's 1987 paper is "Generalized *surgery* of three-dimensional
+  manifolds and representations of homology spheres". All 17 references were
+  checked against their published records, and the note's replay of its ten
+  cited checks passes from this repository.
+- The counting note's footnote now points to this repository.
+
 ## 5 November 2026: the ranking
 
 - [RANKING.md](RANKING.md): the proved results since 19 October 2026 ranked

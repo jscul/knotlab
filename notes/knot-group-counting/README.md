@@ -1,7 +1,7 @@
 # Counting homomorphisms from knot groups to solvable groups can be #P-hard
 
 [PDF](rowell_note.pdf) · [TeX source](rowell_note.tex) · [link checks](links/) ·
-14 pages · draft of 26 October 2026
+14 pages · version of 5 November 2026, prepared for arXiv
 
 **Results.** For a finite group G and a link L in S³, let H_L(G) be the number
 of homomorphisms from π₁(S³ ∖ L) to G. Rowell conjectured in 2009 (Conjecture
@@ -35,9 +35,11 @@ about knots in the program's sense. See
 the sector formula, cables, local knots, the Potts and colouring reductions
 for S₃, and the same reductions for D₅ and D₇. It also includes a separate
 brute force of the two smallest instances. Run `python3 run_all.py` there; it
-needs numpy and takes about three minutes. The knot results rest on proofs
-whose checks run in our private research workspace; the note's last section
-lists them. Two reviews with separately written code reproduced the main
+needs numpy and takes about three minutes. The knot results rest on the proofs
+listed in the note's last section, which are in this repository under
+`proofs/`. The note's replay driver,
+`proofs/ROWELL-NOTE-20261026-001/ROWELL-NOTE-20261026-001-P001_note/replay.py`,
+reruns all ten of their checks from here (about five minutes). Two reviews with separately written code reproduced the main
 numbers. Both were done by AI systems, and they are no substitute for expert
 review.
 

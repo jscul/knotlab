@@ -25,13 +25,15 @@
 \newcommand{\FP}{\mathrm{FP}}
 \setlength{\parskip}{0.3em}
 \title{Counting homomorphisms from knot groups\\ to solvable groups can be $\sharpP$-hard}
-\author{Prespatial Labs\thanks{Draft of 26 October 2026, prepared with Claude
-(Anthropic). The results come from proofs with executable checks in the
-Prespatial Labs repository; Section~\ref{sec:evidence} lists them, and a replay
-driver reruns every cited check. No human expert has reviewed this note.}}
-\date{}
+\author{John Cullen}
+\date{5 November 2026}
 \begin{document}
 \maketitle
+\begingroup\renewcommand{\thefootnote}{}\footnotetext{This note was prepared
+with the assistance of AI systems: Anthropic's Claude for the proofs, code and
+text, and OpenAI's Codex for two independent reviews of the underlying proofs.
+Every cited computation can be rerun from the public repository
+\url{https://github.com/jscul/knotlab}; Section~\ref{sec:evidence} explains how.}\endgroup
 
 \begin{abstract}
 For a finite group $G$ and a link $L\subset S^3$, let $H_L(G)$ be the number of
@@ -823,9 +825,10 @@ and $2O$ (for $S_4$ itself the repository proves hardness with $H_1=\Z/2$,
 
 \section{Evidence and replay}\label{sec:evidence}
 
-The proofs, each with a standard-library check, are in the Prespatial Labs
-repository under \texttt{proofs/<ticket>/}. The replay driver
-\texttt{replay.py} next to this note copies them to a temporary directory,
+The proofs, each with a standard-library check, are in the public
+repository \url{https://github.com/jscul/knotlab} under
+\texttt{proofs/<ticket>/}. The replay driver \texttt{replay.py} in
+\texttt{proofs/ROWELL-NOTE-20261026-001/} copies them to a temporary directory,
 reruns every check there, and compares each fresh result with the frozen one;
 the frozen files are not touched.
 
@@ -834,7 +837,7 @@ the frozen files are not touched.
 \toprule
 Claim & Proof and check\\
 \midrule
-Links: $S_3$ and $D_n$ ($n$ odd) hard; cables and local knots & \texttt{links/} in this note's directory (\texttt{run\_all.py})\\
+Links: $S_3$ and $D_n$ ($n$ odd) hard; cables and local knots & \texttt{notes/knot-group-counting/links/} (\texttt{run\_all.py})\\
 Bicycle law, Potts$(12,\tfrac12)$, knot gadgets, $T(K)$ $\sharpP$-hard & \texttt{BOUNDED-H1-20261025-001A}\\
 Abelian-by-nilpotent targets polynomial on knots & \texttt{BOUNDED-H1-20261025-001B}\\
 Livingston's identity re-proved & \texttt{CLOSED-H1-20261025-001B}\\
@@ -879,7 +882,7 @@ Knot Theory Ramifications 4 (1995), 225--234.
 \bibitem{Mas03} G.~Massuyeau, \emph{Cohomology rings, Rochlin function, linking
 pairing and the Goussarov--Habiro theory of three-manifolds}, Algebr. Geom.
 Topol. 3 (2003), 1139--1166.
-\bibitem{Mat87} S.~V.~Matveev, \emph{Generalized surgeries of three-dimensional
+\bibitem{Mat87} S.~V.~Matveev, \emph{Generalized surgery of three-dimensional
 manifolds and representations of homology spheres}, Math. Notes 42 (1987),
 651--656.
 \bibitem{Mou17} D.~Moussard, \emph{Equivariant triple intersections}, Ann. Fac.

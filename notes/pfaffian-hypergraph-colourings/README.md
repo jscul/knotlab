@@ -44,5 +44,5 @@ It prints `ALL OK` when every part agrees.
 **Status and novelty.** Proved in the note. No human expert has reviewed it.
 Each theorem's novelty and folklore risk is in the table of the note's last
 section. For most theorems we found no prior statement; the Fano uniqueness is
-likely known. The full replay of every cited proof runs in our private research
-workspace, and the record names in that table refer to it.
+likely known. The record names in that table are folders under
+`proofs/` in this repository, each with its own `check.py`.

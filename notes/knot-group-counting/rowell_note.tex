@@ -26,7 +26,7 @@
 \setlength{\parskip}{0.3em}
 \title{Counting homomorphisms from knot groups\\ to solvable groups can be $\sharpP$-hard}
 \author{John Cullen}
-\date{5 November 2026}
+\date{6 November 2026}
 \begin{document}
 \maketitle
 \begingroup\renewcommand{\thefootnote}{}\footnotetext{This note was prepared
@@ -194,8 +194,13 @@ $\mathrm{UT}_3(\F_4)\rtimes C_3$ (cubic obstruction).
 
 \paragraph{Wirtinger colourings.} A homomorphism from a link group to $G$ is a
 colouring of the arcs of a diagram by elements of $G$ such that at each
-crossing the outgoing under-arc is the conjugate of the incoming one by the
-over-arc. All meridians of a knot are conjugate and generate the group, so a
+crossing, with over-arc coloured $g$ and incoming under-arc coloured $x$, the
+outgoing under-arc is coloured $gxg^{-1}$ or $g^{-1}xg$ according to the sign
+of the crossing. The signs of individual crossings matter in general, but not
+when $g$ is an involution, as for the transposition colourings of
+Section~\ref{sec:s4}. Reversing the convention at every crossing at once
+replaces each colouring by its pointwise inverse, so counts over conjugacy
+classes closed under inversion do not depend on it. All meridians of a knot are conjugate and generate the group, so a
 homomorphism from a knot group sends every meridian into one conjugacy class.
 
 \paragraph{Counting over a quotient.} If $G=N\rtimes Q$ with $N$ abelian, the
@@ -465,7 +470,20 @@ T\bigl(D((\tilde H[\Gamma_1^{\parallel k}])^{(3)})\bigr)=
 where $N_{ij}$ counts the $z\in(\Z/12)^V$ with $i$ edges having $z_u=z_v$ and
 $j$ edges having $z_v=\nu(z_u)$. The $\beta_{ij}=5^{2i+j}3^j17^{-i-j}$ are
 pairwise distinct, so the $K$ counts determine every $N_{ij}$ through a
-Vandermonde system in $\beta_{ij}^2$. Finally
+Vandermonde system in $\beta_{ij}^2$.
+
+The reduction runs in polynomial time. It makes $K=O(\tilde m^2)$ queries,
+and each diagram has $12k\tilde m=O(\tilde m^3)$ crossings and as many arcs,
+so each count $T$ is at most $6^{12k\tilde m}$ and has $O(\tilde m^3)$ bits.
+Each $\beta_{ij}$ is a quotient of integers with $O(\tilde m)$ bits and
+$k\le2K-1=O(\tilde m^2)$, so every coefficient $\beta_{ij}^k$ and every factor
+$2^{-n}17^{k\tilde m}$ has $O(\tilde m^3)$ bits. The coefficient matrix of the
+system is a Vandermonde matrix in the $\beta_{ij}^2$ times the invertible
+diagonal matrix of the $\beta_{ij}$, and exact Gaussian elimination over
+$\mathbb{Q}$ solves it in time polynomial in these bit lengths. The reduction
+is a polynomial-time Turing reduction with $K$ queries, not a parsimonious one.
+
+Finally
 $P(H,12)=\sum_jN_{0j}$: a colouring is proper exactly when no edge has equal
 ends, whatever happens on the $\nu$-related edges. By Lemma~\ref{lem:split},
 $T=(H_K(S_4)-4-R)/2$, so $H_K(S_4)$ is $\sharpP$-hard as well.
@@ -481,8 +499,14 @@ a $2$-group of order at most $16$, whose derived subgroup has order at most
 $4$), and the only non-metabelian groups of order $24$ are $S_4$ and
 $\mathrm{SL}(2,3)$. Metabelian (indeed abelian-by-nilpotent) targets give
 polynomial counts on knots: maps to the nilpotent quotient are boundedly many
-because $H_1=\Z$, and their lifts through the abelian kernel solve a linear
-system (\texttt{BOUNDED-H1-20261025-001B}). For $\mathrm{SL}(2,3)$, a central
+because $H_1=\Z$, and their lifts through the abelian kernel $A$ are the
+solutions of a system of linear equations over $A$
+(\texttt{BOUNDED-H1-20261025-001B}). Writing
+$A=\Z/d_1\times\dots\times\Z/d_s$, these are integer congruences modulo the
+$d_i$, and the Smith normal form of the integer matrix that combines the
+coefficients with the moduli counts their solutions in polynomial time. This
+covers primary parts with several different exponents, which need not be free
+over a single $\Z/p^a$. For $\mathrm{SL}(2,3)$, a central
 extension of $A_4$ by $\Z/2$, the argument for the double covers gives
 $H_K(\mathrm{SL}(2,3))=2H_K(A_4)$.
 \end{proof}

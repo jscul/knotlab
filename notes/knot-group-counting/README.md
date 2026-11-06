@@ -1,7 +1,7 @@
 # Counting homomorphisms from knot groups to solvable groups can be #P-hard
 
 [PDF](rowell_note.pdf) · [TeX source](rowell_note.tex) · [link checks](links/) ·
-14 pages · version of 5 November 2026, prepared for arXiv
+14 pages · version of 6 November 2026, prepared for arXiv
 
 **Results.** For a finite group G and a link L in S³, let H_L(G) be the number
 of homomorphisms from π₁(S³ ∖ L) to G. Rowell conjectured in 2009 (Conjecture

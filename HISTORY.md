@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 6 November 2026: review clarifications in the knot-group counting note
+
+[The note](notes/knot-group-counting/) now covers the three points an
+independent review asked for before submission. None changes a result.
+
+- **Interpolation cost.** A paragraph in the S₄ hardness proof bounds the bit
+  length of every number in the interpolation. The reduction is a
+  polynomial-time Turing reduction with K queries.
+- **Mixed-exponent kernels.** The polynomial side counts lifts through an
+  abelian kernel with cyclic factors of different orders by the Smith normal
+  form. It does not assume that a primary part is free over a single Z/p^a.
+- **Crossing signs.** The Wirtinger rule now states the sign of each
+  crossing. Individual signs matter, except for involutions. Reversing the
+  convention at every crossing at once only inverts each colouring.
+
 ## 5 November 2026: authorship and the Rowell note for arXiv
 
 - The three notes and [CITATION.cff](CITATION.cff) now name John Cullen as

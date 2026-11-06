@@ -68,6 +68,7 @@ hours.
 | [lean](lean/) | Five kernel-checked proofs: the knot test, competing pairs, the ring theorem, loop nerves |
 | [notes](notes/) | Three self-contained notes with PDFs, sources and check scripts |
 | [RESULTS.md](RESULTS.md) | Every result since 19 October 2026, dated, grouped by line of work, with links |
+| [RANKING.md](RANKING.md) | The results ranked in five tiers by significance to the theory |
 | [docs](docs/) | The working perspective: the knot intuition, the foundational thesis, the foundation's classical sources, and the program's vocabulary |
 | [proofs](proofs/) | Every proof since 19 October 2026: `proof.md`, `check.py`, frozen results and manifests |
 | [experiments](experiments/), [artifacts](artifacts/) | Frozen experiment contracts and their outputs |

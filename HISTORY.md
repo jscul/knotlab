@@ -3,6 +3,12 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 5 November 2026: the ranking
+
+- [RANKING.md](RANKING.md): the proved results since 19 October 2026 ranked
+  in five tiers by significance to the theory, from what the theory stands on
+  to local proofs kept visible. Computed results and conjectures are left out.
+
 ## 5 November 2026: the full record
 
 - [RESULTS.md](RESULTS.md): every result recorded since the knot test K1–K3

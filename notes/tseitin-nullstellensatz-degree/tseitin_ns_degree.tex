@@ -1,0 +1,474 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\sloppy
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\NS}{\mathrm{NS}}
+\newcommand{\tgw}{\mathrm{tgw}}
+\newcommand{\cw}{\mathrm{cw}}
+\newcommand{\ch}{\operatorname{char}}
+\setlength{\parskip}{0.3em}
+\title{The Nullstellensatz degree of Tseitin formulas is the toggle width:\\
+cutwidth plus one on graphs of maximum degree three}
+\author{Prespatial Labs\thanks{Draft of 20 October 2026, prepared with Claude
+(Anthropic). A standalone script (\texttt{replay.py}) checks every certificate
+described here on ten small graphs. No human expert has reviewed this note.}}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let $G$ be a connected graph with an odd charge $c$, and let $T(G,c)$ be its
+Tseitin formula, written as polynomials clause by clause. We show that over
+every field of characteristic other than~$2$ the Nullstellensatz degree of
+$T(G,c)$ equals the \emph{toggle width} of $G$: the least $k$ such that the
+empty vertex set can be turned into $V(G)$ by adding or removing one vertex at
+a time, where toggling $v$ at the set $U$ costs $|\delta(U)\cup E(v)|$. When $G$
+has at least three vertices, the toggle width lies between $\cw(G)+1$ and
+$\cw(G)+\lfloor\Delta(G)/2\rfloor$, where $\cw$ is the cutwidth and $\Delta$ the
+maximum degree. So on graphs of maximum degree at most three the degree is
+exactly $\cw(G)+1$. Over characteristic~$2$ it is $\Delta(G)$. The upper bound is
+a refutation with integer coefficients that sweeps the charge across a layout.
+The lower bound is a design whose values are signed sums over cuts. In the
+$\pm1$ encoding, with degree measured modulo $y_e^2=1$, the same arguments give
+exactly $\cw(G)$. A standalone script replays both bounds, and recomputes the
+degrees directly, on ten cubic graphs including the Petersen graph.
+\end{abstract}
+
+\section{Results}
+
+Let $G=(V,E)$ be a connected graph and $c\colon V\to\{0,1\}$ a charge with
+$\sum_v c(v)$ odd. The Tseitin formula $T(G,c)$ has a Boolean variable $x_e$
+for each edge and, for each vertex $v$, the constraint
+$\sum_{e\in E(v)}x_e\equiv c(v)\pmod 2$, where $E(v)$ is the set of edges at
+$v$. It is unsatisfiable~\cite{Tse68}.
+
+\paragraph{Encoding.} For each vertex $v$ and each assignment $\beta$ of $E(v)$
+that violates its constraint, the clause polynomial is
+$\chi_{v,\beta}=\prod_{e:\beta_e=1}x_e\prod_{e:\beta_e=0}(1-x_e)$, of degree
+$|E(v)|$. A \emph{Nullstellensatz refutation of degree $d$} over a field $F$ is
+an identity
+\[
+\textstyle\sum_{v,\beta}q_{v,\beta}\,\chi_{v,\beta}+\sum_e r_e\,(x_e^2-x_e)=1
+\]
+in $F[x]$ in which every product has degree at most $d$. We write $\NS_F$ for
+the least such $d$. This is the usual translation of the CNF formula, one
+polynomial per clause.
+
+\paragraph{Widths.} For $U\subseteq V$ let $\delta(U)$ be the set of edges with
+exactly one end in $U$.
+\begin{itemize}
+\item A \emph{toggle path} is a sequence
+$\emptyset=U_0,U_1,\dots,U_m=V$ in which each $U_i$ arises from $U_{i-1}$ by
+adding or removing one vertex $v_i$. The $i$-th step \emph{costs}
+$|\delta(U_{i-1})\cup E(v_i)|$.
+\item The \emph{toggle width} $\tgw(G)$ is the least $k$ such that some toggle
+path has every step costing at most $k$.
+\item The \emph{cutwidth} $\cw(G)$ is the least, over vertex orderings, of the
+largest $|\delta(\cdot)|$ of a prefix.
+\end{itemize}
+
+\begin{theorem}\label{thm:main}
+Let $F$ be a field. If $\ch F=2$ then $\NS_F(T(G,c))=\Delta(G)$. Otherwise
+$\NS_F(T(G,c))=\tgw(G)$, whatever the charge.
+\end{theorem}
+
+\begin{theorem}\label{thm:width}
+If $G$ is connected with at least three vertices, then
+$\cw(G)+1\le\tgw(G)\le\cw(G)+\lfloor\Delta(G)/2\rfloor$.
+\end{theorem}
+
+\begin{corollary}\label{cor:cubic}
+If $G$ is connected with at least three vertices and maximum degree at most
+three, and $\ch F\ne2$, then $\NS_F(T(G,c))=\cw(G)+1$.
+\end{corollary}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+graph & $n$ & $|E|$ & treewidth & $\cw$ & $\NS_F$, $\ch F\ne2$ & $\NS_F$, $\ch F=2$\\
+\midrule
+$K_4$ & 4 & 6 & 3 & 4 & 5 & 3\\
+triangular prism & 6 & 9 & 3 & 4 & 5 & 3\\
+$K_{3,3}$ & 6 & 9 & 3 & 5 & 6 & 3\\
+cube $Q_3$ & 8 & 12 & 3 & 5 & 6 & 3\\
+Wagner graph & 8 & 12 & 4 & 5 & 6 & 3\\
+Petersen graph & 10 & 15 & 4 & 6 & 7 & 3\\
+\bottomrule
+\end{tabular}
+\caption{Values given by Corollary~\ref{cor:cubic}. \texttt{replay.py} also
+obtains every entry of the last two columns by direct Gaussian elimination
+over $\mathbb F_3$ and $\mathbb F_2$. The degree is not a function of
+treewidth: $K_4$ and $K_{3,3}$ both have treewidth~$3$.}
+\label{tab:values}
+\end{table}
+
+For bounded-degree expanders the cutwidth is linear in $n$, so these degrees
+are linear in $n$, in line with Grigoriev's linear lower bounds for
+Nullstellensatz refutations of Tseitin formulas~\cite{Gri98}.
+Theorem~\ref{thm:main} gives the exact value for every graph. (The linear lower
+bounds of Buss, Grigoriev, Impagliazzo and Pitassi~\cite{BGIP01} are for the
+stronger polynomial calculus and are not implied.)
+
+\section{Designs as pseudo-distributions}
+
+\begin{definition}
+A \emph{pseudo-distribution of level $d$} over $F$ assigns to each set
+$S\subseteq E$ with $|S|\le d$ a function $z_S\colon\{0,1\}^S\to F$ such that
+\begin{itemize}
+\item $z_\emptyset=1$;
+\item $z_S(f)=z_{S\cup\{e\}}(f,0)+z_{S\cup\{e\}}(f,1)$ whenever
+$|S\cup\{e\}|\le d$ and $e\notin S$;
+\item $z_S(f)=0$ whenever $f$ violates the constraint of some vertex $v$ with
+$E(v)\subseteq S$.
+\end{itemize}
+\end{definition}
+
+\begin{lemma}\label{lem:dual}
+$\NS_F(T(G,c))>d$ if and only if a pseudo-distribution of level $d$ over $F$
+exists.
+\end{lemma}
+
+\begin{proof}
+By linear duality, no refutation of degree $d$ exists if and only if some
+linear functional $D$ on the polynomials of degree at most $d$ satisfies
+$D(1)=1$ and vanishes on every product $q\chi_{v,\beta}$ and $r(x_e^2-x_e)$ of
+degree at most $d$.
+
+\emph{From $D$ to $z$.} Given such a $D$, put $z_S(f)=D(\iota_{S,f})$, where
+$\iota_{S,f}=\prod_{e\in S}(x_e\text{ if }f_e=1,\ 1-x_e\text{ if }f_e=0)$ has
+degree $|S|$.
+\begin{itemize}
+\item Consistency holds because $\iota_{S,f}=\iota_{S+e,(f,0)}+\iota_{S+e,(f,1)}$.
+\item $z_\emptyset=D(1)=1$.
+\item If $f$ violates $v$ and $E(v)\subseteq S$, then
+$\iota_{S,f}=\chi_{v,f|E(v)}\cdot\iota_{S\setminus E(v),f}$ is a multiple of
+an axiom of degree $|S|\le d$, so $z_S(f)=0$.
+\end{itemize}
+
+\emph{From $z$ to $D$.} Conversely, given $z$, define $D$ on multilinear
+monomials by $D(x_W)=z_W(1_W)$, and on any polynomial of degree at most $d$ by
+first reducing exponents with $x_e^2=x_e$.
+\begin{itemize}
+\item $D(1)=z_\emptyset=1$, and $D$ vanishes on the multiples of $x_e^2-x_e$.
+\item By consistency, $D(P)=\sum_{f\in\{0,1\}^S}z_S(f)P(f)$ for every
+multilinear $P$ whose variables lie in $S$ with $|S|\le d$.
+\item A multiple $x_T\chi_{v,\beta}$ of degree at most $d$ reduces either to
+$0$ or to such a $P$ on $S=T\cup E(v)$. That $P$ vanishes except at
+assignments restricting to the violating $\beta$, where $z_S$ vanishes, so
+$D(x_T\chi_{v,\beta})=0$.
+\item Every multiple $q\chi_{v,\beta}$ is a combination of these. \qedhere
+\end{itemize}
+\end{proof}
+
+\section{Upper bounds}
+
+\paragraph{Characteristic $2$.} Over $\mathbb F_2$ the multilinear polynomial
+$\sum_{\beta}\chi_{v,\beta}$, summed over the violating $\beta$, is the
+indicator of a violation at $v$. That indicator equals
+$\sum_{e\in E(v)}x_e+c(v)$. Summing over all vertices counts every $x_e$ twice,
+so
+\[
+\textstyle\sum_v\sum_\beta\chi_{v,\beta}=\sum_v c(v)=1,
+\]
+a refutation of degree $\Delta(G)$.
+
+Conversely, below degree $\Delta(G)$ the axioms of a vertex $u$ of maximum
+degree cannot be used. Without $u$'s constraint the formula is satisfiable
+($G$ is connected), and evaluating at a satisfying assignment turns any
+identity $\sum q\chi=1$ that avoids $u$'s axioms into $0=1$. This works over
+every field, so $\NS_F\ge\Delta(G)$ always.
+
+\paragraph{The sweep refutation, over every field.} Let $(U_i)$ be a toggle path
+whose steps cost at most $k$.
+\begin{itemize}
+\item \emph{Parities along the path.} Put $t_0=0$ and $t_i=t_{i-1}+c(v_i)\bmod2$.
+Let $\Pi_{U,t}$ be the multilinear polynomial of the Boolean function
+$[\sum_{e\in\delta(U)}x_e\equiv t\pmod 2]$; its coefficients are integers.
+\item \emph{One step.} Put $P_i=\Pi_{U_i,t_i}-\Pi_{U_{i-1},t_{i-1}}$. Its
+variables lie in $S_i=\delta(U_{i-1})\cup E(v_i)$, with $|S_i|\le k$.
+\item \emph{$P_i$ vanishes where $v_i$ is satisfied.} Since
+$\delta(U_i)=\delta(U_{i-1})\triangle E(v_i)$, the two parities differ by
+$\sum_{e\in E(v_i)}x_e$. So $P_i$ vanishes at every point of $\{0,1\}^{S_i}$
+satisfying $v_i$'s constraint.
+\item \emph{$P_i$ is a combination of axiom multiples.} Interpolating over
+$\{0,1\}^{S_i}$,
+\[
+P_i=\sum_{f\text{ violating }v_i}P_i(f)\,\chi_{v_i,f|E(v_i)}\,\iota_{S_i\setminus E(v_i),f},
+\]
+an integer combination of multiples $x_T\chi_{v_i,\beta}$ with
+$T\cap E(v_i)=\emptyset$ and $|T|+|E(v_i)|\le|S_i|\le k$.
+\item \emph{Telescoping.} Since $\delta(\emptyset)=\delta(V)=\emptyset$ and
+$t_m=\sum_v c(v)=1$, we get $\sum_iP_i=\Pi_{V,1}-\Pi_{\emptyset,0}=0-1$.
+\end{itemize}
+So $-\sum_iP_i=1$ is a refutation of degree at most $k$ with integer
+coefficients. It holds as a polynomial identity, without the Boolean axioms.
+Hence $\NS_F\le\tgw(G)$ for every field~$F$.
+
+\section{The lower bound outside characteristic two}\label{sec:lower}
+
+Let $\ch F\ne2$ and $k<\tgw(G)$. We build a pseudo-distribution of level $k$.
+
+\paragraph{Reachable sets and signed cuts.} Call $U$ \emph{reachable} if some
+toggle path from $\emptyset$ to $U$ has every step costing at most $k$.
+\begin{itemize}
+\item \emph{Reversible and complement-symmetric.} Toggling $v$ costs the same
+from $U$ and from $U\triangle\{v\}$, because
+$\delta(U)\cup E(v)=\delta(U\triangle\{v\})\cup E(v)$. Complementing a path
+preserves its costs, since $\delta(V\setminus U)=\delta(U)$.
+\item \emph{One representative per cut.} If $U$ and $V\setminus U$ were both
+reachable, then $V$ would be reachable through $U$: complement the path to
+$V\setminus U$ and reverse it. That contradicts $k<\tgw(G)$. Since $G$ is
+connected, $\delta(U)=\delta(U')$ only for $U'\in\{U,V\setminus U\}$. So each
+cut $\gamma$ has at most one reachable representative.
+\item \emph{The sign function.} Put $h(\gamma)=(-1)^{c(U)}$ if $\gamma=\delta(U)$
+with $U$ reachable, where $c(U)=\sum_{u\in U}c(u)$, and $h(\gamma)=0$ if
+$\gamma$ has no reachable representative. In particular $h(\emptyset)=1$.
+\end{itemize}
+
+\begin{lemma}\label{lem:relation}
+Let $|S|\le k$, let $\gamma\subseteq S$ be a cut, and let $w$ be a vertex with
+$E(w)\subseteq S$. Then $h(\gamma\triangle E(w))=(-1)^{c(w)}h(\gamma)$.
+\end{lemma}
+
+\begin{proof}
+Write $\gamma=\delta(U)$. Then $\gamma\triangle E(w)=\delta(U\triangle\{w\})$,
+and toggling $w$ at $U$ costs $|\gamma\cup E(w)|\le|S|\le k$. So $U$ is
+reachable exactly when $U\triangle\{w\}$ is; the same holds for their
+complements, and the charge changes by $c(w)$. \qedhere
+\end{proof}
+
+\paragraph{The pseudo-distribution.} For $|S|\le k$ and $f\in\{0,1\}^S$, let
+$\mathcal C(S)$ be the set of cuts contained in $S$ and put
+\[
+z_S(f)=2^{-|S|}\sum_{\gamma\in\mathcal C(S)}h(\gamma)\,(-1)^{\sum_{e\in\gamma}f_e}.
+\]
+\begin{itemize}
+\item \emph{Normalization.} $z_\emptyset=h(\emptyset)=1$.
+\item \emph{Consistency.} Summing $z_{S\cup\{e\}}(f,b)$ over $b$ cancels every
+cut that contains $e$ and doubles the others. The cuts in $S\cup\{e\}$ that
+avoid $e$ are exactly $\mathcal C(S)$.
+\item \emph{Vanishing.} Let $f$ violate the constraint of $v$, with
+$E(v)\subseteq S$.
+\begin{itemize}
+\item The map $\gamma\mapsto\gamma\triangle E(v)$ is a fixed-point-free
+involution of $\mathcal C(S)$.
+\item By Lemma~\ref{lem:relation}, it multiplies $h$ by $(-1)^{c(v)}$. Since
+$\sum_{e\in E(v)}f_e\equiv c(v)+1$, it multiplies the character by
+$(-1)^{c(v)+1}$.
+\item So paired terms cancel, and $z_S(f)=0$.
+\end{itemize}
+\end{itemize}
+By Lemma~\ref{lem:dual}, $\NS_F>k$. With the sweep this proves
+Theorem~\ref{thm:main}.
+
+\section{Toggle width and cutwidth}
+
+\begin{lemma}[monotone bound]
+Take an ordering whose prefix cuts are at most $\cw(G)$. When $v$ is added to
+the prefix $U$ and has $d$ neighbours in $U$, the step costs
+\[
+|\delta(U)|+\deg v-d=|\delta(U\cup\{v\})|+d\le\cw(G)+\min(d,\deg v-d).
+\]
+Hence $\tgw(G)\le\cw(G)+\lfloor\Delta(G)/2\rfloor$.
+\end{lemma}
+
+\begin{lemma}[peak elimination]\label{lem:peaks}
+Let $G$ be connected with at least three vertices. If a toggle path has every
+step costing at most $k$, then some toggle path has every step costing at most
+$k$ and every visited cut of size at most $k-1$.
+\end{lemma}
+
+\begin{proof}
+Call a visited set $U$ with $|\delta(U)|=k$ a \emph{peak}.
+\begin{itemize}
+\item \emph{Peaks are interior.} The cost of a step bounds the cuts on both
+of its sides, so every visited cut is at most $k$. The endpoints have cut
+$0$.
+\item \emph{The neighbouring toggles.} Let a peak $U$ be entered by toggling
+$v$ and left by toggling $w$. Entering costs at most $|\delta(U)|$, which
+forces $E(v)\subseteq\delta(U)$; likewise $E(w)\subseteq\delta(U)$.
+\item \emph{If $v=w$}, delete the detour.
+\item \emph{Otherwise} replace $U$ by $X=U\triangle\{v,w\}$, toggling $w$
+before $v$.
+\begin{itemize}
+\item Then $|\delta(X)|=k-\deg v-\deg w+2[vw\in E]\le k-1$. A cut of size
+$k$ would need $v$ and $w$ adjacent and both of degree one, which connectivity
+and $n\ge3$ exclude.
+\item The two new steps cost $k-\deg v+[vw\in E]$ and $k-\deg w+[vw\in E]$,
+both at most $k$.
+\end{itemize}
+\end{itemize}
+Each step removes a peak and creates none. \qedhere
+\end{proof}
+
+\begin{lemma}[Fomin and Thilikos~\cite{FT03}, Lemma~1; after Bienstock and Seymour~\cite{BS91}]\label{lem:FT}
+Let $\rho$ be a submodular function on the subsets of $V$ with nonnegative
+integer values. Suppose some sequence
+$\emptyset=A_1,\dots,A_r=V$ has $\rho(A_i)\le k$ and $|A_{i+1}\setminus
+A_i|\le1$ for every $i$, with removals unrestricted. Then a monotone such
+sequence exists.
+\end{lemma}
+
+\begin{proof}
+Choose a sequence minimizing $\sum\rho(A_i)$, and subject to that
+$\sum(|A_i|+1)$.
+\begin{itemize}
+\item \emph{Unions do not help.} Replacing $A_i$ by $A_{i-1}\cup A_i$ keeps the
+step conditions. If $\rho(A_{i-1}\cup A_i)<\rho(A_i)$, the result would be a
+valid sequence with smaller $\sum\rho$. So
+$\rho(A_{i-1}\cup A_i)\ge\rho(A_i)$.
+\item \emph{Intersections do not hurt.} By submodularity,
+$\rho(A_{i-1}\cap A_i)\le\rho(A_{i-1})$.
+\item \emph{So the sequence is monotone.} Replacing $A_{i-1}$ by
+$A_{i-1}\cap A_i$ keeps the step conditions and does not raise
+$\sum\rho$. Minimality then forces $A_{i-1}\subseteq A_i$. \qedhere
+\end{itemize}
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:width}]
+Take a toggle path of cost $k=\tgw(G)$.
+\begin{itemize}
+\item Lemma~\ref{lem:peaks} turns it into a path whose cuts are all at most
+$k-1$.
+\item Lemma~\ref{lem:FT}, applied to $\rho=|\delta(\cdot)|$, turns that into
+an ordering of cutwidth at most $k-1$.
+\end{itemize}
+So $\cw(G)\le\tgw(G)-1$. The monotone bound gives the other inequality. \qedhere
+\end{proof}
+
+\section{Remarks}
+
+\begin{itemize}
+\item \textbf{The $\pm1$ encoding.} Let $\ch F\ne2$. Put $y_e=1-2x_e$,
+$y_A=\prod_{e\in A}y_e$ and $s_v=(-1)^{c(v)}$, and write the constraint of $v$
+as the single binomial $y_{E(v)}-s_v$, with the axioms $y_e^2-1$.
+\begin{itemize}
+\item \emph{Degree counted before reduction.} As polynomials in $x$,
+$y_{E(v)}-s_v=-2s_v\sum_\beta\chi_{v,\beta}$ and $y_e^2-1=4(x_e^2-x_e)$. So
+every refutation in this encoding becomes a clause-encoded refutation of no
+larger degree, and its degree is therefore at least $\tgw(G)$. Modulo $y_e^2=1$ the product
+$y_{\delta(U)}(y_{E(v)}-s_v)$ is $y_{\delta(U\triangle\{v\})}-s_vy_{\delta(U)}$,
+so these products, taken along an ordering of cutwidth $\cw(G)$, telescope to
+a refutation of degree at most $\cw(G)+\Delta(G)$.
+\item \emph{Degree counted after reduction modulo $y_e^2=1$.} The degree is
+then exactly $\cw(G)$, for every connected $G$. A product
+$y_A(y_{E(v)}-s_v)$ reduces to $y_{A\triangle E(v)}-s_vy_A$, of degree
+$\max(|A|,|A\triangle E(v)|)$, so the products above give degree $\cw(G)$.
+These two-term relations pair up the monomials, so the reduced multiples of
+one binomial of degree at most $d$ span exactly the relations with
+$|A|,|A\triangle E(v)|\le d$. For $d<\cw(G)$, call $U$ reachable if a toggle
+path reaches it with every visited cut at most $d$. If $U$ and
+$V\setminus U$ were both reachable, so would be $V$, as in Section~\ref{sec:lower}, and
+Lemma~\ref{lem:FT} would give an ordering of cutwidth at most $d$. So we may
+put $L(y_{\delta(U)})=(-1)^{c(U)}$ for reachable $U$ and $L=0$ on every other
+monomial. Then $L(1)=1$, and as in Lemma~\ref{lem:relation} $L$ satisfies every
+relation of degree at most $d$.
+\item On the ten graphs of Table~\ref{tab:values} the replay finds degree
+$\cw(G)$ after reduction and $\tgw(G)+1$ before.
+\end{itemize}
+\item \textbf{Sherali--Adams.} Requiring the pseudo-distributions to be
+nonnegative gives Sherali--Adams. Let $\mathrm{tw}$ be the treewidth of the
+variable graph, here the line graph of $G$. Then no nonnegative
+pseudo-distribution of level $\mathrm{tw}+1$ exists: gluing the local
+distributions along a tree decomposition would give a satisfying
+distribution~\cite{WJ04}. For the 10-vertex cubic graph with edges
+$01,02,03,12,14,25,36,37,46,48,57,59,68,79,89$, the line graph has treewidth
+$4$ while $\cw=5$. So Nullstellensatz needs degree $6$ there, while
+Sherali--Adams refutes at degree $5$.
+\item \textbf{Tseitin modulo $p$.} Let each edge carry a $\mathbb
+Z_p$-valued variable, orient the edges, and require at each vertex that the
+outflow minus the inflow equal $c(v)$, with $\sum_vc(v)\ne0$. Define
+pseudo-distributions as above. Over any field of characteristic other than $p$
+they exist exactly below level $\tgw(G)$: the same proof works with characters
+of order $p$ in place of signs and $\mathbb Z_p$-labellings $u$ of the vertices
+in place of vertex sets. A labelling is reachable if it can be reached from $0$
+by changing one label at a time, a change at $v$ costing
+$|\operatorname{supp}\delta u\cup E(v)|$, where $\delta u$ is the induced
+labelling of the edges. If $u$ and $u+a$ were both reachable for a nonzero
+constant $a$, then so would be the constant $-a$, and the level sets of the
+value $-a$ along the way would form a toggle path from $\emptyset$ to $V$ of no
+larger cost. A $p$-th root of unity may be adjoined, since the
+conditions are linear with integer coefficients. Over a field of
+characteristic $p$ the threshold is $\Delta(G)$.
+\item \textbf{Layout parameters.} For graphs of maximum degree three,
+cutwidth equals the search number (Makedon and Sudborough~\cite{MS89}), so
+Corollary~\ref{cor:cubic} can be read in those terms.
+\item \textbf{Resolution.} Galesi, Talebanfard and Tor\'an characterize the
+resolution width, variable space and depth of Tseitin formulas exactly by a
+cops-and-robber game, a variant of the Seymour--Thomas game for
+treewidth~\cite{GTT20}.
+\end{itemize}
+
+\paragraph{Novelty.} After a targeted search we did not find
+Theorem~\ref{thm:main}, Corollary~\ref{cor:cubic} or the $\pm1$ statement above
+stated. The methods,
+sweeping refutations, character-sum designs and monotonicity of submodular
+games, are standard. We would be glad to learn of prior statements.
+
+\section{The replay script}
+
+\texttt{python3 replay.py} needs only the Python standard library. It runs on
+$K_4$, the prism, $K_{3,3}$, all five connected cubic graphs on eight
+vertices, the 10-vertex graph above, and the Petersen graph, each with charge
+$1$ at one vertex. For each graph it checks:
+\begin{enumerate}
+\item the cutwidth, the toggle width and its monotone version;
+\item the sweep refutation, as a polynomial identity over $\mathbb Z$, using
+products of degree at most $\tgw(G)$;
+\item the pseudo-distribution of level $\tgw(G)-1$, in its dual form as a
+design, against every axiom multiple of that degree, over $\mathbb F_3$,
+$\mathbb F_5$ and (up to twelve edges) $\mathbb Q$;
+\item the characteristic-$2$ refutation;
+\item the least degree at which $1$ lies in the span of the axiom multiples,
+by Gaussian elimination over $\mathbb F_2$ and $\mathbb F_3$;
+\item peak elimination and uncrossing on random toggle paths;
+\item the least degree of the $\pm1$ encoding, before and after reduction, by
+signed union-find on the two-term relations;
+\item the treewidth of $G$ and of its line graph.
+\end{enumerate}
+Controls must fail, and do:
+\begin{itemize}
+\item an even charge admits no refutation, in either encoding;
+\item the design breaks down at level $\tgw(G)$;
+\item the sweep with one step removed does not sum to~$1$.
+\end{itemize}
+The run takes about half a minute.
+
+\begin{thebibliography}{BGIP01}
+\bibitem[BGIP01]{BGIP01} S.~Buss, D.~Grigoriev, R.~Impagliazzo, T.~Pitassi.
+Linear gaps between degrees for the polynomial calculus modulo distinct primes.
+\emph{J. Comput. System Sci.} 62(2):267--289, 2001.
+\bibitem[BS91]{BS91} D.~Bienstock, P.~Seymour. Monotonicity in graph searching.
+\emph{J. Algorithms} 12(2):239--245, 1991.
+\bibitem[FT03]{FT03} F.~V.~Fomin, D.~M.~Thilikos. On the monotonicity of games
+generated by symmetric submodular functions. \emph{Discrete Appl. Math.}
+131(2):323--335, 2003.
+\bibitem[Gri98]{Gri98} D.~Grigoriev. Tseitin's tautologies and lower bounds for
+Nullstellensatz proofs. In \emph{Proc. 39th FOCS}, 648--652, 1998.
+\bibitem[GTT20]{GTT20} N.~Galesi, N.~Talebanfard, J.~Tor\'an. Cops-robber games
+and the resolution of Tseitin formulas. \emph{ACM Trans. Comput. Theory}
+12(2), 2020.
+\bibitem[MS89]{MS89} F.~Makedon, I.~H.~Sudborough. On minimizing width in
+linear layouts. \emph{Discrete Appl. Math.} 23(3):243--265, 1989.
+\bibitem[Tse68]{Tse68} G.~S.~Tseitin. On the complexity of derivation in
+propositional calculus. In \emph{Studies in Constructive Mathematics and
+Mathematical Logic, Part 2}, 115--125, 1968.
+\bibitem[WJ04]{WJ04} M.~J.~Wainwright, M.~I.~Jordan. Treewidth-based conditions
+for exactness of the Sherali--Adams and Lasserre relaxations. Technical Report
+671, University of California, Berkeley, 2004.
+\end{thebibliography}
+\end{document}

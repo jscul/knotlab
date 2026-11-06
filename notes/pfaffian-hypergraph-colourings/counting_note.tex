@@ -1,0 +1,663 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\sloppy
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\sharpP}{\#\mathrm{P}}
+\newcommand{\FP}{\mathrm{FP}}
+\newcommand{\col}{\#\mathrm{col}}
+\newcommand{\MGI}{\operatorname{MGI}}
+\newcommand{\NAE}{\operatorname{NAE}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\setlength{\parskip}{0.3em}
+\title{Counting 2-colourings of 3-regular hypergraphs\\ with Pfaffian incidence graphs}
+\author{Prespatial Labs\thanks{Draft of 31 October 2026, prepared with Claude
+(Anthropic). The results come from proofs with executable checks in the
+Prespatial Labs repository; Section~\ref{sec:evidence} lists them, a replay
+driver reruns every cited check, and a separately written script recomputes
+the headline numbers. No human expert has reviewed this note.}}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Counting the proper 2-colourings of a 3-regular 3-uniform hypergraph is
+$\sharpP$-hard (Fan and Cai), and polynomial when its incidence graph is
+planar (Valiant). We study the class in between where the incidence graph is
+Pfaffian. It contains every hypergraph that cannot be 2-coloured: by Seymour
+and by Robertson, Seymour and Thomas, these are exactly the ones whose
+incidence matrix is sign-nonsingular. Our results:
+(A) for every connected non-2-colourable such hypergraph $H$ and every edge
+$L$, the number of 2-colourings of $H-L$ is computable in polynomial time, as
+a product over braces of determinants assembled along trisum trees by a
+three-term ``trisum law''; (B) with signed incidences, counting stays
+polynomial as long as the signs differ from a Pfaffian signing by a twist that
+does not branch, because a junction with one untwisted side multiplies the
+matchgate identity by $\alpha^2+\alpha\beta+\beta^2$; (C) once twists branch,
+counting is $\sharpP$-hard on Pfaffian graphs; (D) it remains $\sharpP$-hard
+without any signs; and (E) it remains $\sharpP$-hard when the incidence graph
+is a Pfaffian brace. The hardness proofs build crossings inside Pfaffian
+graphs: junctions of twisted pieces cross softly, and ladders of plain cube
+junctions cross exactly after interpolation. Along the way we find that every
+plain planar piece is twisted, and that the Fano plane is the only
+non-2-colourable 3-regular 3-uniform hypergraph whose incidence graph is a
+brace.
+\end{abstract}
+
+\section{Results}\label{sec:results}
+
+A \emph{cubic triple system} $H$ has $n$ points and $n$ lines; every line has
+three distinct points and every point lies on three lines. Its incidence graph
+$B=B(H)$ is a cubic bipartite graph. A 2-colouring of the points is
+\emph{proper} if no line is monochromatic, and $\col(H)$ counts them. In the
+language of counting complexity this is $\mathrm{Holant}([0,1,1,0]\mid{=}_3)$,
+or not-all-equal 3-SAT with positive literals in which every variable occurs
+three times.
+
+Fan and Cai~\cite{FC20} proved $\col$ $\sharpP$-hard; Valiant's holographic
+algorithm~\cite{Val08} computes it when $B$ is planar. We consider incidence
+graphs that are \emph{Pfaffian}, the class on which perfect matchings can be
+counted by a single Pfaffian~\cite{Kas63,Lit75,RST99,McC04}. We also use
+\emph{signed} systems: a set $\sigma$ of incidences, at which a line sees the
+complement of the point's colour.
+
+\begin{theorem}[counting on Seymour's bound]\label{thm:A}
+Let $H$ be a connected cubic triple system that is not 2-colourable, and $L$
+one of its lines. Then $\col(H-L)$ can be computed in time polynomial in $n$.
+More precisely, $\col(H-L)=2\prod_{K}a(K)$, the product over the braces $K$ of
+$B(H)$, where $a(K)=1$ for the two degenerate braces, $a(K)=5$ for the Heawood
+graph, $a(K)=|\det|$ of a line--face matrix for a planar brace, and $a(K)$ is
+given by the trisum law of Theorem~\ref{thm:law} with two determinants per
+planar leaf otherwise. The same holds for every connected cubic signed system
+that is not colourable.
+\end{theorem}
+
+\begin{theorem}[unbranched twists]\label{thm:B}
+Let $T$ be a cubic Pfaffian brace with a trisum tree, $\kappa$ a Pfaffian
+signing and $\sigma$ any signing. If no square of the tree has all three of
+its branches twisted (Definition~\ref{def:twist}), then $\col(T,\sigma)$ is
+computable in polynomial time. The same holds for every connected cubic
+bipartite Pfaffian graph through its tight cuts.
+\end{theorem}
+
+\begin{theorem}[hardness under signings]\label{thm:C}
+Counting $\col(B,\sigma)$ for cubic bipartite Pfaffian graphs $B$ and
+signings $\sigma$ is $\sharpP$-hard under polynomial-time Turing reductions.
+In the instances used, every junction square has three twisted branches.
+\end{theorem}
+
+\begin{theorem}[no signs]\label{thm:D}
+Counting $\col(H)$ for cubic triple systems whose incidence graphs are
+Pfaffian is $\sharpP$-hard under polynomial-time Turing reductions.
+\end{theorem}
+
+\begin{theorem}[braces]\label{thm:E}
+Counting $\col(H)$ for cubic triple systems whose incidence graphs are
+Pfaffian braces is $\sharpP$-hard under polynomial-time Turing reductions.
+\end{theorem}
+
+Theorems~\ref{thm:A} and~\ref{thm:B} describe where the Pfaffian structure
+helps: where the signs agree with a Pfaffian signing, counting is a
+determinant per planar piece, and twists that run along a path of the trisum
+tree do not change that. Theorems~\ref{thm:C}--\ref{thm:E} show that nothing
+more survives. Deciding 2-colourability for these systems is polynomial
+(Robertson, Seymour and Thomas~\cite{RST99}, McCuaig~\cite{McC04}); counting
+is not.
+
+Two structural facts appear on the way (Section~\ref{sec:plain}): every plain
+planar piece is twisted, so in a plain trisum brace all twists branch; and
+the Heawood graph is the only cubic brace whose plain system cannot be
+2-coloured, that is, the Fano plane is the only non-2-colourable cubic triple
+system whose incidence graph is a brace. Among plain Pfaffian braces the
+polynomial cases we know are therefore planarity and the Fano plane
+(Corollary~\ref{cor:picture}).
+
+\paragraph{Provenance.} The source of hardness is Fan and Cai's theorem (we
+also give an independent reduction from not-all-equal 3-SAT, which
+Creignou and Hermann~\cite{CH96} showed $\sharpP$-complete). Planar
+tractability is Valiant's; the structure of Pfaffian braces is due to
+Robertson, Seymour and Thomas and to McCuaig; Lemma~\ref{lem:dict} is a
+signed form of Seymour's linear-algebra theorem~\cite{Sey74}; Berman's
+determinant~\cite{Ber80} is used for planar pieces. Bounded literature
+searches found no statement of Theorems~\ref{thm:A}--\ref{thm:E}; folklore
+risk is discussed per result in Section~\ref{sec:evidence}.
+
+\section{Preliminaries}\label{sec:prelim}
+
+\paragraph{Signed systems.} A \emph{signed system} is a cubic bipartite graph
+$B$ (points and lines) with a set $\sigma\subseteq E(B)$ of negated
+incidences. A colouring $c$ of the points is proper if every line $\ell$ sees
+the values $c(p)\oplus[p\ell\in\sigma]$ not all equal. Complementing a point's
+colour, or all three values a line sees, is a bijection between proper
+colourings for $\sigma$ and for $\sigma\triangle\delta(v)$; so $\col(B,\sigma)$
+depends only on the class of $\sigma$ modulo cuts.
+
+\paragraph{Pfaffian signings.} A signing $\sigma$ is \emph{Pfaffian} if all
+perfect matchings of $B$ contribute with the same sign to the determinant of
+the signed biadjacency matrix. A cycle $C$ is \emph{nice} if $B-V(C)$ has a
+perfect matching; a signing is Pfaffian if and only if every nice cycle
+carries $|C|/2-1$ negations modulo 2, and any two Pfaffian signings of a
+connected matching-covered bipartite graph differ by a cut~\cite{Lit75,LP86}.
+For planar graphs Kasteleyn's face condition gives one~\cite{Kas63}.
+
+\begin{lemma}[dictionary]\label{lem:dict}
+A connected cubic signed system is not colourable if and only if its signing
+is Pfaffian. If it is not colourable, deleting any line makes it colourable.
+\end{lemma}
+For plain systems this is the equivalence of non-2-colourability with
+sign-nonsingularity of the incidence matrix (Seymour~\cite{Sey74}; see
+\cite[Sect.~1]{RST99}); the signed form is proved in the repository
+(\texttt{THREEFOLD-AMPLITUDE-20261030-001C}, Lemma 4). So the non-2-colourable
+cubic triple systems are those whose incidence graph is Pfaffian with the
+empty signing; we call them \emph{three-fold spaces}.
+
+\paragraph{Braces and trisums.} A \emph{brace} is a connected bipartite graph
+in which every matching of two edges extends to a perfect matching; the tight
+cut decomposition~\cite{ELP82,LP86} splits a matching-covered bipartite graph
+into braces. By Robertson, Seymour and Thomas~\cite{RST99} and
+McCuaig~\cite{McC04}, a Pfaffian brace is planar, the Heawood graph, or a
+\emph{trisum} of smaller Pfaffian braces: three braces sharing a 4-cycle, the
+\emph{square}, glued along it with its four edges deleted. For a cubic
+Pfaffian brace $T$ that is neither planar nor the Heawood graph, splitting
+repeatedly along squares gives a \emph{trisum tree}: its leaves are planar
+braces, its squares are disjoint, each square is a face of the three leaves
+containing it, and each square has three \emph{branches}, the components of
+the tree minus the square (\texttt{SEYMOUR-COUNT-20261030-001B}, Lemma 1).
+A square is written $(c_0,c_1,c_2,c_3)$ with $c_0,c_2$ points and $c_1,c_3$
+lines.
+
+\paragraph{The Hadamard form.} With $H=\begin{pmatrix}1&1\\1&-1\end{pmatrix}$
+on every edge, a point becomes $2[1,0,1,0]$, a line
+$\tfrac14[3,0,-1,0]$ and a negated edge $\mathrm{diag}(1,-1)$, so
+\begin{equation}\label{eq:hadamard}
+\col(B,\sigma)=\Bigl(\tfrac32\Bigr)^{n}\sum_{\chi}\Bigl(-\tfrac13\Bigr)^{|\chi|/2}(-1)^{|\sigma\cap\chi|},
+\end{equation}
+the sum over even subgraphs $\chi$ of $B$ (disjoint unions of cycles). Both
+constraint functions are matchgate signatures; this is Valiant's planar
+algorithm. A 4-ary even function $f$ with legs in the cyclic order of a square
+is a matchgate signature if and only if
+$\MGI(f)=f_{0000}f_{1111}-f_{1100}f_{0011}+f_{1010}f_{0101}-f_{1001}f_{0110}=0$.
+
+\begin{definition}[twists]\label{def:twist}
+Let $\kappa$ be a Pfaffian signing of $B$. The \emph{twist} of a signing
+$\sigma$ is $\sigma\triangle\kappa$ modulo cuts. In a trisum tree, the branch
+$b$ of a square is \emph{twisted} if $\sigma\triangle\kappa$, restricted to the
+edges of the leaves in $b$ (square edges excluded), is not a cut of the graph
+they form.
+\end{definition}
+A branch is untwisted if and only if some sign pattern on its square completes
+$\sigma$ to a Pfaffian signing of the branch, and a branch containing a
+twisted branch is twisted (\texttt{TWIST-COUNT-20261030-001A}, Lemma 3).
+
+\section{Counting on Seymour's bound}\label{sec:A}
+
+Let $P$ be a \emph{piece}: a connected cubic signed system containing a square,
+with a Pfaffian signing in which the square carries an odd number of
+negations. Exactly one of $c_1,c_3$ then sees $c_0$ and $c_2$ equal. In a proper
+colouring of $P-c_1$, the line $c_3$ sees $c_0$ and $c_2$ different, and its
+third point agrees (as seen by $c_3$) with exactly one of them. The
+\emph{leaning split} $(\alpha,\beta)$ counts half the colourings of $P-c_1$ in
+which it agrees with $c_0$, respectively $c_2$; $\rho=\alpha+\beta$ is the
+amplitude $\col(P-L)/2$, the same for every line $L$.
+
+\begin{theorem}[the trisum law]\label{thm:law}
+Three pieces in a common gauge, glued along their square, have amplitude
+\[
+A(T)=\rho_1\rho_2\rho_3-\alpha_1\alpha_2\alpha_3-\beta_1\beta_2\beta_3,
+\]
+the number of choices of leanings, weighted by the splits, that are not all
+equal. Seen from $c_3$ the split is $(\beta,\alpha)$. A piece glued at a
+second square $D$ to two pieces $Q,R$ acts on the colourings of its own lines
+only through the weights $W_\alpha=\rho_Q\rho_R-\alpha_Q\alpha_R$ and
+$W_\beta=\rho_Q\rho_R-\beta_Q\beta_R$.
+\end{theorem}
+\begin{proof}[Proof outline]
+In a common gauge (every piece carries the same odd pattern on the square,
+Lemma 1 of \texttt{SEYMOUR-COUNT-20261030-001A}), fix the colours of $c_0,c_2$.
+In each piece the square line that sees them equal must be improper inside
+the piece, so its third point takes that value; the other square line is then
+proper and its third point leans to $c_0$ or $c_2$, with weights $\alpha_i$ or
+$\beta_i$. In the trisum, the square lines receive one point from each piece
+and must see not-all-equal values; counting gives the law
+(\texttt{SEYMOUR-COUNT-20261030-001A}, Theorem 3 and Propositions 4--5).
+\end{proof}
+
+\begin{proposition}[a leaf with its children]\label{prop:leaf}
+For a planar leaf $\ell$ of a trisum tree, at a square $S$, let $M$ be the
+matrix with rows the lines of $\ell$ other than $c_1$ and columns the faces
+not at $c_1$, with entry 1 for incidence, except that the rows $d_1,d_3$ of
+every other square $D$ of $\ell$ carry $W_\alpha,W_\beta$ on $D$'s two side
+faces (in opposite orders) and 1 on $D$'s face. Restricting the row of $c_3$
+to its side face through $c_0$, respectively $c_2$, gives matrices
+$M_\alpha,M_\beta$, and the split of the branch at $S$ is
+$(|\det M_\alpha|,|\det M_\beta|)$.
+\end{proposition}
+\begin{proof}[Proof outline]
+For a planar brace, $|\det|$ of the line--face matrix counts Tutte matchings
+with outer triangle at the omitted line, all with one sign (Berman~\cite{Ber80});
+weights keep the sign coherence, and Theorem~\ref{thm:law} identifies the
+weighted count with the split (\texttt{SEYMOUR-COUNT-20261030-001B},
+Proposition 3 and Lemma 4).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:A}]
+By Lemma~\ref{lem:dict} and the tight cut decomposition, $\col(H-L)/2$ is a
+product of brace amplitudes, independent of $L$ (\texttt{THREEFOLD-AMPLITUDE-20261030-001C},
+Corollary 5). The degenerate braces contribute 1 and the Heawood graph 5. A
+planar brace contributes the determinant of its line--face matrix. Any other
+brace has a trisum tree (Section~\ref{sec:prelim}); its amplitude is the
+trisum law at one square, with each branch's split given by
+Proposition~\ref{prop:leaf} from the splits one level down. That is two
+determinants per leaf, and no signing is needed at any step
+(\texttt{SEYMOUR-COUNT-20261030-001B}, Theorem 5).
+\end{proof}
+
+\begin{remark}
+The checks compare the algorithm with direct counts on 67 braces, on
+three-fold spaces of 22 to 118 points (for example amplitudes $125$ for a
+22-point space and $3906250000$ for a 90-point one, an amplitude being
+$\col(H-L)/2$), and on trisums of omnitruncated polyhedra up to 480 vertices; trisums of three omnitruncated $9\times 9$ grids (1720
+vertices) are counted in seconds, where variable elimination would need tables
+of width 30.
+\end{remark}
+
+\section{Twists}\label{sec:B}
+
+Let $T$ be a cubic Pfaffian brace with a trisum tree and $\sigma$ a signing.
+For a square $S$ and a branch $b$, the \emph{branch tensor}
+$F_{S,b}(z_0,z_1,z_2,z_3)$ counts the colourings of the branch's own points
+that make its own lines proper, where $z_0,z_2$ are the colours of $c_0,c_2$
+and $z_1,z_3$ those of the neighbours of $c_1,c_3$ in $b$. Seen from a third
+branch, the \emph{junction} of two closed branches $Q,R$ is
+\[
+W(x_0,z_1,x_2,z_3)=\sum F_Q(x_0,q_1,x_2,q_3)F_R(x_0,r_1,x_2,r_3)\,
+\NAE(z_1,q_1,r_1)\,\NAE(z_3,q_3,r_3),
+\]
+with incidence signs complementing the corresponding arguments. In the
+Hadamard basis, branch tensors are even, and a single planar leaf is a
+matchgate signature under any signing.
+
+\begin{theorem}[the junction is a similitude]\label{thm:sim}
+If $Q$ is untwisted with split $(\alpha,\beta)$, then for every $R$
+\[
+\MGI(\hat W)=\pm(\alpha^2+\alpha\beta+\beta^2)\,\MGI(\hat F_R),
+\]
+the sign given by four incidence signs at the junction. In particular $W$ is a
+matchgate signature if and only if $F_R$ is.
+\end{theorem}
+\begin{proof}[Proof outline]
+An untwisted branch has the \emph{split form}: a matchgate signature
+determined by $(\alpha,\beta)$, an odd pattern on the square and the leg signs
+(\texttt{TWIST-COUNT-20261030-001A}, Lemma 3). The identity is then a
+polynomial identity in $\alpha,\beta$ and the eight even entries of
+$\hat F_R$, verified symbolically for all eight odd patterns and all four
+choices of leg signs (ibid., Theorem 4).
+\end{proof}
+
+The multiplier is $|\alpha+\beta e^{i\pi/3}|^2$, a norm in the Eisenstein
+integers; it is positive, so an untwisted side never moves a junction off the
+matchgate class.
+
+\begin{proof}[Proof of Theorem~\ref{thm:B}]
+If no square has three twisted branches, some leaf $r$ sees at most one
+twisted branch among the two closed branches of every square
+(\texttt{TWIST-COUNT-20261030-001A}, Lemma 5). Rooted at $r$, every junction
+has an untwisted closed branch, so by Theorem~\ref{thm:sim} and induction
+every junction is a matchgate signature, and each leaf is a planar matchgate
+computation (FKT). Tight cuts contribute three-edge gadgets, which are always
+matchgates (ibid., Theorem 6).
+\end{proof}
+
+When twists branch the mechanism stops: junctions of two twisted pages leave
+the matchgate class. They still cannot cross wires sharply.
+
+\begin{proposition}[soft crossings]\label{prop:soft}
+(i) With nonnegative branch tensors no junction is an exact crossover
+$[x_0=x_2\oplus a][z_1=z_3\oplus b]$: the square's lines forbid one pattern
+only, so on any slice confined to one parity class of $(z_1,z_3)$ the junction
+pins $z_1$ (\texttt{TWIST-COUNT-20261030-001B}, Theorem 2).
+(ii) Junctions of two twisted truncated-octahedron pages include 256 that are
+\emph{crossover-type} (zero turning entries in the Hadamard basis) with all
+four straight entries nonzero, for example $(40000,-1112,3336,-192)$
+(ibid., Proposition 3). We call such a junction a \emph{soft crossing}.
+\end{proposition}
+
+\section{Hardness under signings}\label{sec:C}
+
+A \emph{dead cap} is the cube minus an edge, attached to an outside line and
+an outside point: its count is 3 whatever they see, so a line with one capped
+leg acts on its other two legs by $3M$, $M=\begin{pmatrix}1&2\\2&1\end{pmatrix}$.
+A \emph{$k$-snake} is $k$ soft crossings in series, the wires joined between
+junctions by capped lines and points.
+
+\begin{lemma}[snakes and the lattice condition]\label{lem:snake}
+The $k$-snake built from the soft crossing $\sigma_1=(40000,-1112,3336,-192)$
+is crossover-type with straight entries $\sigma_1(s)\Lambda(s)^{k-1}$, where
+\[
+\Lambda=(810000,\ 7506,\ -22518,\ -432)=(2^43^45^4,\ 2\cdot3^3\cdot139,\ -2\cdot3^4\cdot139,\ -2^43^3).
+\]
+The valuations at $5$, $139$ and $3$ determine any count vector $n\in\mathbb N^4$
+of given total from $\prod_s\Lambda(s)^{n_s}$, so the products
+$\prod_s\Lambda(s)^{2n_s}$ are distinct.
+\end{lemma}
+\begin{proof}
+The multiplier per step is $\tfrac94\mu(y_A)\mu(y_B)\sigma_1(s)$ with
+$\mu=(3,-1)$ the eigenvalues of $M$; the valuations are $v_5=(4,0,0,0)$,
+$v_{139}=(0,1,1,0)$ and $v_3=(4,3,4,3)$, which give $n_{00}$, then $n_{01}+n_{10}$
+and $n_{10}$ (\texttt{SOFT-CROSS-20261031-001A}, Lemmas 2--3).
+\end{proof}
+
+\begin{theorem}[universality inside Pfaffian graphs]\label{thm:univ}
+Let $G$ be a cubic signed system drawn in the plane with $m$ crossings. Replace
+every edge by a capped path with $k_E$ pairs and every crossing by a
+$k_S$-snake. The resulting instances are Pfaffian, and $\col(G)$ is computed
+in polynomial time from their counts for $k_E$ in an interval of length
+$|E(G)|+1$ and $k_S=1,3,\dots,2N-1$, $N=\binom{m+3}{3}$.
+\end{theorem}
+\begin{proof}[Proof outline]
+The host (everything outside the pages) is planar and every junction square
+is a face of it and of its pages, so Kasteleyn signings of all pieces,
+switched to a common odd pattern on each square, glue to a non-colourable,
+hence Pfaffian, signing (Theorem~\ref{thm:law}'s gauge lemma and
+Lemma~\ref{lem:dict}). Expanding long edges into $9^kP_+ +(-3)^kP_-$ and snakes
+into their straight states gives a sum over two families of distinct nodes
+(Lemma~\ref{lem:snake}); a two-parameter Vandermonde system determines every
+coefficient, and replacing each snake by the compensated crossover
+$[z_1=z_3]\,w(z_0,z_2)$ with $w=\begin{pmatrix}-1&2\\2&-1\end{pmatrix}$ gives
+$9^m\col(G)$ (\texttt{SOFT-CROSS-20261031-001A}, Theorem 5).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:C}]
+Counting the colourings of plain cubic triple systems is $\sharpP$-hard: this
+is Fan and Cai's theorem for $\mathrm{Holant}([0,1,1,0]\mid{=}_3)$, and the
+repository also derives it from positive not-all-equal 3-SAT~\cite{CH96} by
+joining the copies of a variable with capped paths, which act by
+$9^k(P_++(-\tfrac13)^kP_-)$ and interpolate to equalities
+(\texttt{SOFT-CROSS-20261031-001B}, Theorem 3). Theorem~\ref{thm:univ} reduces
+these to Pfaffian instances. Both pages of every junction are twisted, a
+cut restricts to a cut, and the host side of a junction in a snake contains
+other junctions' pages, so all three branches are twisted
+(ibid., Theorem 4).
+\end{proof}
+
+\section{No signs}\label{sec:plain}
+
+\begin{lemma}[signs are path lengths]\label{lem:long}
+Replace each of the $L$ negated incidences $(p,\ell)$ of a signed system by
+an unsigned capped path with $k$ pairs, acting by $9^k(P_++tP_-)$ with
+$t=(-\tfrac13)^k$. The count is $9^{kL}q(t)$ for a polynomial $q$ of degree at
+most $L$, and $q(-1)$ is the signed count while $q(1)$ is the count with the
+signs dropped.
+\end{lemma}
+\begin{proof}
+At $t=-1$ the path acts by $P_+-P_-=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, the
+negation; the nodes $(-\tfrac13)^k$, $k=1,\dots,L+1$, are distinct
+(\texttt{PLAIN-COUNT-20261031-001A}, Lemma 1).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:D}]
+Capped paths drawn inside the planar pieces keep them planar, so the
+certificate of Theorem~\ref{thm:univ} survives. Switching inside the pages
+leaves six negations per junction. Lemma~\ref{lem:long} then removes all
+signs from the instances of Theorem~\ref{thm:C}
+(\texttt{PLAIN-COUNT-20261031-001A}, Theorem 4).
+\end{proof}
+
+\begin{proposition}[plain pages are twisted]\label{prop:pages}
+(i) Every 2-connected planar cubic bipartite graph has at least six square
+faces, and at most five faces meet a given square face. (ii) Hence every
+\emph{plain page} (such a graph with a junction square face, no signs) is
+twisted. (iii) In a plain cubic Pfaffian brace that is a trisum, every square
+has three twisted branches, so Theorem~\ref{thm:B} applies to none.
+\end{proposition}
+\begin{proof}
+(i) $\sum_f(6-|f|)=12$ by Euler's formula, and only squares contribute
+positively; a face meeting a square $S$ at a vertex contains an edge of $S$.
+(ii) A square face $Q$ disjoint from $S$ is a cycle of the page's own edges, a
+Kasteleyn signing has $|Q|/2-1=1$ negation on it, and the plain signing has
+none, so they differ by a non-cut. (iii) Every branch contains a leaf of the
+tree, a plain page, and twistedness is inherited
+(\texttt{PLAIN-COUNT-20261031-001B}, Theorem 2 and Corollary 3).
+\end{proof}
+
+\begin{proposition}[the Fano plane among braces]\label{prop:fano}
+In a plain non-colourable system every nice cycle has length $2$ modulo $4$.
+Consequently the Heawood graph is the only cubic brace whose plain system is
+not 2-colourable: the Fano plane is the only non-2-colourable cubic triple
+system whose incidence graph is a brace.
+\end{proposition}
+\begin{proof}
+The empty signing is Pfaffian (Lemma~\ref{lem:dict}), so a nice cycle $C$
+needs $|C|/2-1\equiv0$. In a brace every 4-cycle is nice, so a plain
+non-colourable brace has no 4-cycle. Planar cubic bipartite graphs have
+square faces (Proposition~\ref{prop:pages}), and a trisum contains a square
+face of a leaf away from its junction; by Robertson, Seymour and Thomas only
+the Heawood graph remains (\texttt{PLAIN-COUNT-20261031-001B}, Corollary 5).
+\end{proof}
+This is probably implied by the description of minimal non-2-colourable
+square hypergraphs as splices of Fano planes~\cite{RST99}; the argument above
+is short and direct.
+
+\section{Braces}\label{sec:E}
+
+The instances so far contain 2-edge cuts (caps and capped paths), so they are
+not braces, and a single junction of plain pages is never a crossing.
+
+\paragraph{Ladder sites.} Replace a crossing of edges $e$ and $f$ by $k$
+junction squares, each glued by trisum to two plain cubes. Wire $A$ runs from
+$e$'s point end through $l_s$, then $c_0\to c_2$ of each junction; wire $B$
+runs from $f$'s line end through $\pi_s$, then $c_1\to c_3$ of each junction.
+The start rung $l_s\pi_s$ and a rung $\lambda_j\pi_j$ between consecutive
+junctions close every leg; there are no caps.
+
+\begin{lemma}[the site is a matrix power]\label{lem:power}
+As a map from (colour of $e$'s point end, colour of $\pi_s$) to (colour seen by
+$e$'s line end, colour of $f$'s point end) the site acts by $(NW)^k$, where $W$
+is the junction and $N[(z_2,z_3),(a,b)]=\NAE(z_2,a,b)[z_3=b]$ the rung.
+Restoring $e$ and $f$ is the identity, the term $k=0$.
+\end{lemma}
+
+\begin{lemma}[the cube junction]\label{lem:cube}
+For two plain cubes,
+\[
+NW=\begin{pmatrix}2&3&2&5\\8&4&8&9\\9&8&4&8\\5&2&3&2\end{pmatrix},\qquad
+\det(xI-NW)=(x^2-19x-1)(x^2+7x+13).
+\]
+The roots are $\varepsilon,-1/\varepsilon$ with $\varepsilon=(19+\sqrt{365})/2$ a
+unit of norm $-1$, and $\pi,\bar\pi$ with $\pi=(-7+i\sqrt3)/2$ an Eisenstein
+prime of norm 13. For count vectors $n\ne n'$ of equal total,
+$\prod\lambda_i^{2n_i}\ne\prod\lambda_i^{2n'_i}$.
+\end{lemma}
+\begin{proof}
+If two such products agree, $\varepsilon^{2(a-a')}$ (in $\Q(\sqrt{365})$)
+equals $\pi^{2(b'-b)}\bar\pi^{2(c'-c)}$ (in $\Q(\sqrt{-3})$), so both are
+rational; $\pi/\bar\pi$ is not a root of unity, so $b'-b=c'-c$, and a rational
+power of the unit $\varepsilon$ is trivial
+(\texttt{PLAIN-BRACE-20261031-001A}, Lemmas 2--3).
+\end{proof}
+
+Consequently, with $Z(k)$ the count when a single site has $k$ junctions, the
+count with the crossing restored is
+$\sum_{j=0}^{3}f_jZ(2j+1)$, where
+$f=(-\tfrac{53451621}{2804438},\tfrac{521319}{200317},-\tfrac{23524}{200317},\tfrac{853}{2804438})$
+is the unique cubic with $xf(x^2)\equiv1$ modulo the characteristic
+polynomial; for $m$ sites sharing an odd $k$, $\binom{m+3}{3}$ counts suffice.
+Only odd $k$ gives a planar host. For $K_{3,3}$ drawn with one crossing, the
+plain instances with $k=1,3,5,7$ have 20, 48, 76 and 104 vertices and counts
+80, 31500, 11459396 and 4159886188, and the formula returns $\col(K_{3,3})=6$.
+
+\begin{lemma}\label{lem:braces}
+(i) A connected cubic bipartite graph on at least six vertices that is
+cyclically 4-edge-connected is a brace. (ii) A site with $k$ junctions is the
+ladder $P_{3k}\times K_2$ with its ports at the corners. (iii) Let a connected
+cubic bipartite graph $G$ be drawn with its vertices in distinct faces of a
+cyclically 4-edge-connected planar cubic bipartite frame $F$, all edges in
+general position. Then every bond with at most three edges of the planarized
+drawing isolates one vertex, and the host obtained by replacing every crossing
+by a site is cyclically 4-edge-connected. (iv) Gluing two cubes onto a
+4-cycle of a cyclically 4-edge-connected cubic graph, the cycle's edges
+deleted, keeps it cyclically 4-edge-connected.
+\end{lemma}
+\begin{proof}[Proof outline]
+(i) If $|N(X)|\le|X|+1$ for some $X$ on one side with $2\le|X|\le n-2$, the cut
+around $X\cup N(X)$ has three edges and both sides contain cycles; the Hall-type
+characterization of braces~\cite{LP86} concludes. (ii) The rungs are the start
+rung, the two square edges of each junction and the rungs between junctions.
+(iii) A closed curve crossing at most three edges has at most one frame vertex
+inside (the frame is cyclically 4-edge-connected), and the one-vertex-per-face
+condition leaves room for at most one vertex of $G$; sites are ladders, so a
+site cut through costs two edges and its pieces with a cycle have four boundary
+edges. (iv) The twelve vertices of the junction are 2-edge-connected, their
+subsets with a cycle have at least four boundary edges, and the host minus the
+square has no bridge (\texttt{PLAIN-BRACE-20261031-001B}, Lemmas 1--5).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:E}]
+Take a hard plain source $G$ (Theorem~\ref{thm:C}'s proof), connected, and draw
+it with its vertices in distinct square faces of a prism $C_{2n}\times K_2$,
+$2n\ge|V(G)|$, drawn by Tutte's method~\cite{Tut63}. Replace every crossing by
+a site with $k=2t+1$ junctions. By Lemma~\ref{lem:braces} each instance is
+cyclically 4-edge-connected, hence a brace; it is Pfaffian by the certificate
+of Theorem~\ref{thm:univ} (every 4-cycle of the host is a face); it carries no
+sign. By Lemma~\ref{lem:cube} the counts for $t<\binom{m+3}{3}$ determine
+$\col(G\sqcup F)=\col(G)\col(F)$, and $\col(F)\ne0$ because $F$ has nice
+4-cycles (Proposition~\ref{prop:fano})
+(\texttt{PLAIN-BRACE-20261031-001B}, Theorem 7).
+\end{proof}
+
+\begin{corollary}\label{cor:picture}
+Among cubic triple systems whose incidence graphs are Pfaffian braces, the
+planar ones count in polynomial time (Valiant), the Fano plane is a single
+system, and the class is $\sharpP$-hard. The Fano plane is the only one
+without twists.
+\end{corollary}
+
+\section{Remarks and open questions}\label{sec:remarks}
+
+\paragraph{The picture.} On Pfaffian incidence graphs the count is governed by
+the sign class: the Pfaffian class gives one determinant per planar piece
+(Theorem~\ref{thm:A}), twists along a path of the trisum tree change nothing
+(Theorem~\ref{thm:B}), and branching twists make the count universal
+(Theorems~\ref{thm:C}--\ref{thm:E}). Two twisted sides at a square pass as a
+similitude when the third side is untwisted; three twisted sides make a soft
+crossing; a ladder of plain squares crosses exactly.
+
+\paragraph{An Ising reading.} By~\eqref{eq:hadamard}, $\col(B,\sigma)$ is an
+Ising partition function on $B$ at the imaginary coupling with $x^2=-\tfrac13$,
+the signing giving the signs of the couplings; Pfaffian signings are its
+free-fermion sign patterns. We have not used this reading.
+
+\paragraph{Open questions.}
+\begin{itemize}
+\item \emph{Few branched squares.} An even 4-ary signature with a nonzero
+entry at $0000$ is a matchgate signature plus a multiple of the indicator of
+$1111$. This suggests an algorithm exponential only in the number of squares
+with three twisted branches; we have not written it down.
+\item \emph{Approximation.} Approximate counting on these classes is untouched;
+the degree-3 and edge-size-3 setting lies between the known algorithmic and
+hardness thresholds for hypergraph colourings.
+\item \emph{Deficiency one.} Theorem~\ref{thm:A} uses that $H$ sits on
+Seymour's bound ($n$ lines on $n$ points). Systems with one line fewer are
+open.
+\end{itemize}
+
+\section{Evidence and replay}\label{sec:evidence}
+
+Every theorem is proved in the repository, with a \texttt{check.py} that
+recomputes the cited facts and controls that must fail. Proof directories are
+\texttt{proofs/<ticket>/<ticket>-P001\_<slug>/}.
+
+\begin{center}
+\footnotesize
+\begin{tabular}{@{}p{3.3cm}p{6.2cm}p{5.2cm}@{}}
+\toprule
+Result & Proved in & Novelty, folklore risk\\
+\midrule
+Lemma~\ref{lem:dict} & \texttt{THREEFOLD-AMPLITUDE-20261030-001C} & signed form of Seymour's theorem; high\\
+Theorem~\ref{thm:law}, Prop.~\ref{prop:leaf} & \texttt{SEYMOUR-COUNT-20261030-001A}, \texttt{SEYMOUR-COUNT-20261030-001B} & no statement found; moderate\\
+Theorem~\ref{thm:A} & \texttt{SEYMOUR-COUNT-20261030-001B} & no statement found; moderate\\
+Theorem~\ref{thm:sim}, Theorem~\ref{thm:B} & \texttt{TWIST-COUNT-20261030-001A} & no statement found; low--moderate\\
+Proposition~\ref{prop:soft} & \texttt{TWIST-COUNT-20261030-001B} & exact computation; low\\
+Lemma~\ref{lem:snake}, Theorem~\ref{thm:univ} & \texttt{SOFT-CROSS-20261031-001A} & standard method, new setting; moderate\\
+Theorem~\ref{thm:C} & \texttt{SOFT-CROSS-20261031-001B}, \texttt{SOFT-CROSS-20261031-001C} & source known (Fan--Cai); moderate\\
+Lemma~\ref{lem:long}, Theorem~\ref{thm:D} & \texttt{PLAIN-COUNT-20261031-001A} & standard method, new setting; moderate\\
+Props.~\ref{prop:pages}, \ref{prop:fano} & \texttt{PLAIN-COUNT-20261031-001B} & Prop.~\ref{prop:fano} likely known; high\\
+Lemmas~\ref{lem:power}, \ref{lem:cube} & \texttt{PLAIN-BRACE-20261031-001A} & no statement found; low--moderate\\
+Lemma~\ref{lem:braces}, Theorem~\ref{thm:E} & \texttt{PLAIN-BRACE-20261031-001B} & no statement found; moderate\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Computations.} Among the checks: the similitude identity
+symbolically for all 32 pattern and sign choices; 13120 junctions of cube and
+6-prism pages, none a crossover; 256 soft crossings among truncated-octahedron
+pages; $K_{3,3}$ recovered from Pfaffian instances under three signings
+($54,18,18=9\cdot(6,2,2)$); six formulas recovered through the source
+reduction on graphs up to 2710 vertices; two formulas recovered end to end
+through 44 certified Pfaffian instances; $K_{3,3}$ recovered from 100 counts of
+plain Pfaffian instances, the largest with 18504 vertices; 454 plain pages
+over 33 planar graphs, all twisted; woven brace instances of 214 to 1078
+vertices, certified Pfaffian, with a site recovered exactly inside them.
+
+\paragraph{Replay.} \texttt{replay.py} reruns every cited check in a
+temporary copy and compares each fresh result with the frozen one, ignoring
+timings. Two checks depend on Python's per-run hash order: one labels the two
+weights of a child square in that order, the other draws random signings.
+There the replay accepts equal polynomials up to exchanging those weights, and
+equal numbers of signings of each kind with no failures; every other field
+must match exactly; \texttt{independent.py}, written separately without the repository's
+libraries, recomputes the soft crossing, the cube junction and its
+characteristic polynomial, the $K_{3,3}$ counts through plain braces, sign
+interpolation, the similitude identity, and Theorem~\ref{thm:A} on
+compositions of Fano planes; \texttt{check.py} ties every number quoted here to
+those runs. The review package lists the claims, the replay steps and
+questions for a reviewer.
+
+\begin{thebibliography}{99}
+\bibitem{Ber80} K.~A.~Berman, \emph{A proof of Tutte's trinity theorem and a
+new determinant formula}, SIAM J. Algebraic Discrete Methods 1 (1980) 64--69.
+\bibitem{CH96} N.~Creignou and M.~Hermann, \emph{Complexity of generalized
+satisfiability counting problems}, Inform. and Comput. 125 (1996) 1--12.
+\bibitem{CLX10} J.-Y.~Cai, P.~Lu and M.~Xia, \emph{Holographic algorithms with
+matchgates capture precisely tractable planar \#CSP}, FOCS 2010.
+\bibitem{ELP82} J.~Edmonds, L.~Lov\'asz and W.~R.~Pulleyblank, \emph{Brick
+decompositions and the matching rank of graphs}, Combinatorica 2 (1982)
+247--274.
+\bibitem{FC20} A.~Z.~Fan and J.-Y.~Cai, \emph{Dichotomy result on 3-regular
+bipartite non-negative functions}, arXiv:2011.09110 (2020).
+\bibitem{Kas63} P.~W.~Kasteleyn, \emph{Dimer statistics and phase
+transitions}, J. Math. Phys. 4 (1963) 287--293.
+\bibitem{Lit75} C.~H.~C.~Little, \emph{A characterization of convertible
+$(0,1)$-matrices}, J. Combin. Theory Ser. B 18 (1975) 187--208.
+\bibitem{LP86} L.~Lov\'asz and M.~D.~Plummer, \emph{Matching Theory},
+North-Holland, 1986.
+\bibitem{McC04} W.~McCuaig, \emph{P\'olya's permanent problem}, Electron. J.
+Combin. 11 (2004) R79.
+\bibitem{RST99} N.~Robertson, P.~D.~Seymour and R.~Thomas, \emph{Permanents,
+Pfaffian orientations, and even directed circuits}, Ann. of Math. 150 (1999)
+929--975.
+\bibitem{Sey74} P.~D.~Seymour, \emph{On the two-colouring of hypergraphs},
+Quart. J. Math. Oxford 25 (1974) 303--312.
+\bibitem{Tut63} W.~T.~Tutte, \emph{How to draw a graph}, Proc. London Math.
+Soc. 13 (1963) 743--767.
+\bibitem{Val08} L.~G.~Valiant, \emph{Holographic algorithms}, SIAM J. Comput.
+37 (2008) 1565--1594.
+\bibitem{VY89} V.~V.~Vazirani and M.~Yannakakis, \emph{Pfaffian orientations,
+0-1 permanents, and even cycles in directed graphs}, Discrete Appl. Math. 25
+(1989) 179--190.
+\end{thebibliography}
+\end{document}

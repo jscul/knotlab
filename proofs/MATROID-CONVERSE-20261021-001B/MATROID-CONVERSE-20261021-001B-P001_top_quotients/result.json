@@ -1,0 +1,235 @@
+{
+  "artifact_id": "MATROID-CONVERSE-20261021-001B-P001",
+  "checks": {
+    "census_agreement": {
+      "predictions": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true
+      },
+      "signal": true
+    },
+    "corollary_4_vamos": {
+      "binary": false,
+      "connected": true,
+      "ternary": false
+    },
+    "proposition_1_single_relations": {
+      "random_downsets": {
+        "downsets": 200,
+        "exact": 200
+      },
+      "vamos": {
+        "support relation": {
+          "circuit": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "direct_case": {
+            "T": [],
+            "e": 0
+          },
+          "free_sets_are_vamos": true,
+          "tuples": 158,
+          "two_copies_fail": true
+        },
+        "union of two GF(7) codes": {
+          "circuit": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "direct_case": {
+            "T": [
+              1
+            ],
+            "e": 0
+          },
+          "free_sets_are_vamos": true,
+          "tuples": 4801,
+          "two_copies_fail": true
+        }
+      }
+    },
+    "proposition_6_unique_maximal_equivalence": {
+      "K4 (lift)": {
+        "all_joins_proper": true,
+        "classes_of_largest": 3,
+        "proper_equivalences_found": 1
+      },
+      "K6 (shadow)": {
+        "all_joins_proper": true,
+        "classes_of_largest": 3,
+        "proper_equivalences_found": 2
+      },
+      "x+y+z=0 over Z6": {
+        "all_joins_proper": false,
+        "classes_of_largest": 2,
+        "proper_equivalences_found": 3
+      },
+      "x+y+z=0 over Z9": {
+        "all_joins_proper": true,
+        "classes_of_largest": 9,
+        "proper_equivalences_found": 1
+      }
+    },
+    "theorem_2_top_lemma": {
+      "AGL(1,5)": {
+        "agree": 60,
+        "full": 24,
+        "order": 20,
+        "subdirect_products": 60,
+        "subgroups": 14,
+        "unique_maximal_normal": true
+      },
+      "D5": {
+        "agree": 60,
+        "full": 31,
+        "order": 10,
+        "subdirect_products": 60,
+        "subgroups": 8,
+        "unique_maximal_normal": true
+      },
+      "S3": {
+        "agree": 60,
+        "full": 36,
+        "order": 6,
+        "subdirect_products": 60,
+        "subgroups": 6,
+        "unique_maximal_normal": true
+      },
+      "Z4": {
+        "agree": 60,
+        "full": 15,
+        "order": 4,
+        "subdirect_products": 60,
+        "subgroups": 3,
+        "unique_maximal_normal": true
+      },
+      "Z6 control": {
+        "R_full": false,
+        "image_in_Z3_x_Z3_full": true
+      },
+      "Z9": {
+        "agree": 60,
+        "full": 23,
+        "order": 9,
+        "subdirect_products": 60,
+        "subgroups": 3,
+        "unique_maximal_normal": true
+      }
+    },
+    "theorem_3_group_laws": {
+      "AGL(1,5)": {
+        "equal_to_prime_codes": 60,
+        "matroids": 60,
+        "non_abelian_tops": 0,
+        "systems": 60,
+        "systems_with_two_primes": 8
+      },
+      "D5": {
+        "equal_to_prime_codes": 60,
+        "matroids": 60,
+        "non_abelian_tops": 0,
+        "systems": 60,
+        "systems_with_two_primes": 6
+      },
+      "S3": {
+        "equal_to_prime_codes": 60,
+        "matroids": 60,
+        "non_abelian_tops": 0,
+        "systems": 60,
+        "systems_with_two_primes": 13
+      },
+      "Z4": {
+        "equal_to_prime_codes": 60,
+        "matroids": 60,
+        "non_abelian_tops": 0,
+        "systems": 60,
+        "systems_with_two_primes": 0
+      },
+      "Z9": {
+        "equal_to_prime_codes": 60,
+        "matroids": 60,
+        "non_abelian_tops": 0,
+        "systems": 60,
+        "systems_with_two_primes": 0
+      }
+    }
+  },
+  "claim": "(1) Every downset of subsets of a finite set containing the singletons is the free-set family of one relation (its support relation); so the Vamos matroid is carried by single relations, for example its support relation and a union of two GF(7) codes, and both relations' laws fail elimination. (2) Top lemma: a subdirect product of finite algebras in a Mal'tsev variety, each with a unique maximal congruence, is the full product exactly when its image in the product of the simple tops is full. (3) If every nontrivial subgroup of a finite group G has a unique maximal normal subgroup, every system of a law of cosets of subgroups of powers of G has as matroid a direct sum of one GF(p)-representable matroid per prime p and rank-one parallel classes; laws of affine subspaces over a finite field F carry F-representable matroids. (4) Hence the Vamos matroid, the non-Pappus matroid and the 2-sum of the Fano and non-Fano matroids never occur in such laws, nor in their shadows, lifts and disjoint unions. (5) In any law that composes like cycles, every pp-definable set has a unique maximal pp-definable equivalence, so tops exist. Open: whether every law that composes like cycles carries only direct sums of finite-field-representable matroids, and the top lemma for such laws.",
+  "controls": {
+    "group_law_matroids_in_one_characteristic": {
+      "designed_S3_system": true,
+      "random_systems_with_both": false,
+      "rejected": true
+    },
+    "single_relation_law_composes_like_cycles": {
+      "rejected": true
+    },
+    "top_lemma_without_unique_maximal_congruence": {
+      "R_full": false,
+      "image_in_Z3_x_Z3_full": true,
+      "rejected": true
+    },
+    "unique_maximal_equivalence_without_cycle_composition": {
+      "Z6_joins_proper": false,
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "MATROID-CONVERSE-20261021-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "group_and_field_laws_in_R_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "matroid_level_converse_proved": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "single_relation_universality_proved": true,
+    "three_cnf_boundary_proved": false,
+    "top_lemma_proved": true,
+    "tops_exist_in_cycle_composing_laws_proved": true,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "MATROID-CONVERSE-20261021-001B"
+}

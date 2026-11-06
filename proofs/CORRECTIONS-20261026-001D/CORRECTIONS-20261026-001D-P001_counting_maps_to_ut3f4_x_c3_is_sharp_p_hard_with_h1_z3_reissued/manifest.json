@@ -1,0 +1,111 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CORRECTIONS-20261026-001D-P001",
+  "canonical_id": "CORRECTIONS-20261026-001D-P001",
+  "kind": "proof",
+  "ticket": "CORRECTIONS-20261026-001D",
+  "proof": "CORRECTIONS-20261026-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Counting maps to UT3(F4) x| C3 is #P-hard with H1 = Z/3 (reissued)",
+  "status": "Proved",
+  "claim": "Let G = UT3(F4) x| C3 (action (w^2 x, w^2 y, w z); order 192, Fitting height 2). Counting homomorphisms from pi1(S^3_3(K)) to G, for knots K given by diagrams, is #P-hard under polynomial-time Turing reductions with one oracle call; every such manifold has H1 = Z/3. Gadget: for a graph with n vertices and m edges, the alternating form A = sum over edges uv of (x_u + x_v) ^ p_e ^ q_e on F4^{n+2m} has kernel count N(A) = 4^{2m-n} Z(64, 15), where Z(q, v) = sum over maps s from vertices to q colours of the product over edges of (1 + v [s(u) = s(v)]) is the Potts partition function; Z(64, 15) = 64^k 15^{n-k} T(79/15, 16), with k components and T the Tutte polynomial, which is #P-hard to evaluate (Jaeger-Vertigan-Welsh; Vertigan for planar graphs) because (79/15 - 1)(16 - 1) = 64. Realization: starting from 3-surgery on a connected sum of n + 2m figure-eight knots (V = F4^{n+2m}, T = 0), one Borromean move per edge, with leaves a band sum of the vertex loops and the two edge loops, gives a knot K_G with T = A and |Hom(pi1 S^3_3(K_G), G)| = 1 + 128 4^{n+2m} 4^{2m-n} Z(64, 15). So with bounded first homology, a group of Fitting height 2 can be #P-hard, while SL(2,3) is polynomial. Reissue of TRIPLE-PRODUCT-20261026-001D-P001 after the independent review COPRIME-CLASS2-20261026-001A: the knot construction is explicit (psi = 0 mod 3 on closed loops through band cores and Y-graph edges, disk-framed leaves, pairwise disjoint Y-graphs, O(m(n+m)) crossings); the novelty wording is corrected (bounded H1 is not enough; Samperton-Weiss assume bounded twisted H2); the reduction is a Turing reduction with one oracle call per Tutte evaluation; and for every knot |Hom(knot group, G)| = |Hom(pi1 S^3_3(K), G)| + 63, so counting maps from knot groups is #P-hard and Rowell's Conjecture 3.2(b) fails for this G unless every #P function is polynomial-time computable.",
+  "dependencies": [
+    "COPRIME-CLASS2-20261026-001A",
+    "CORRECTIONS-20261026-001A",
+    "CORRECTIONS-20261026-001C"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A graph on which the brute-force kernel count of the gadget differs from 4^{2m-n} Z(64, 15), or Z(64, 15) differs from the Tutte expression.",
+    "An end-to-end knot built from figure-eight summands and Borromean insertions realizing a cycle configuration whose count differs from the gadget value.",
+    "A figure-eight connected sum with nonzero triple product or with dim V different from the number of summands.",
+    "A control that cannot fail: an unbalanced realization of a cycle (gains with product not 1) must give a different count.",
+    "A knot for which the knot-group count is not the 3-surgery count plus 63."
+  ],
+  "lineage": {
+    "home_scope": "CORRECTIONS-20261026-001",
+    "epic_path": [
+      "CORRECTIONS-20261026-001"
+    ],
+    "parents": [
+      "proofs/TRIPLE-PRODUCT-20261026-001D/TRIPLE-PRODUCT-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3/manifest.json",
+      "proofs/TRIPLE-PRODUCT-20261026-001D/TRIPLE-PRODUCT-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3/result.json",
+      "proofs/CORRECTIONS-20261026-001A/CORRECTIONS-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum_reissued/manifest.json",
+      "proofs/CORRECTIONS-20261026-001A/CORRECTIONS-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum_reissued/result.json",
+      "proofs/CORRECTIONS-20261026-001C/CORRECTIONS-20261026-001C-P001_borromean_insertions_steer_the_twisted_triple_product_reissued/manifest.json",
+      "proofs/CORRECTIONS-20261026-001C/CORRECTIONS-20261026-001C-P001_borromean_insertions_steer_the_twisted_triple_product_reissued/result.json",
+      "research/COPRIME-CLASS2-20261026-001A/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TRIPLE-PRODUCT-20261026-001D/TRIPLE-PRODUCT-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3/manifest.json": "47e580471087f4367b42bb072165164c81b836edd842f574fc11bece3e14b46e",
+    "proofs/TRIPLE-PRODUCT-20261026-001D/TRIPLE-PRODUCT-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3/result.json": "2f14f8b62b040ed98136dd3af8ff0b74530a88af9f504f80c0cfe2efdd3e2a0f",
+    "proofs/CORRECTIONS-20261026-001A/CORRECTIONS-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum_reissued/manifest.json": "e1030aa0a2c966a51d671251fd7b5202e40db42696a87e7010c1db02dc9406ff",
+    "proofs/CORRECTIONS-20261026-001A/CORRECTIONS-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum_reissued/result.json": "a7a47806d91386a4c4ea98a493a96016c74bba3cfdd3d7ba5d12b4931e37ee7c",
+    "proofs/CORRECTIONS-20261026-001C/CORRECTIONS-20261026-001C-P001_borromean_insertions_steer_the_twisted_triple_product_reissued/manifest.json": "58a34c61b581e8f0a43b4998b58ac1630a63ac17c61eb71f51e081f00921ee93",
+    "proofs/CORRECTIONS-20261026-001C/CORRECTIONS-20261026-001C-P001_borromean_insertions_steer_the_twisted_triple_product_reissued/result.json": "c97b3e3478999c38a20f1b409ec14259ec590ee74185f1f32a7f3192d4123c19",
+    "research/COPRIME-CLASS2-20261026-001A/manifest.json": "a7d1bdaab50b73b76491504ab4fa3ba1360220812f4ca0b4f4a545f92ddf53d3"
+  },
+  "paths": {
+    "manifest": "proofs/CORRECTIONS-20261026-001D/CORRECTIONS-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3_reissued/manifest.json",
+    "identity": "proofs/CORRECTIONS-20261026-001D/CORRECTIONS-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3_reissued/identity.json",
+    "directory": "proofs/CORRECTIONS-20261026-001D/CORRECTIONS-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3_reissued",
+    "proof": "proofs/CORRECTIONS-20261026-001D/CORRECTIONS-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3_reissued/proof.md",
+    "result": "proofs/CORRECTIONS-20261026-001D/CORRECTIONS-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3_reissued/result.json",
+    "check": "proofs/CORRECTIONS-20261026-001D/CORRECTIONS-20261026-001D-P001_counting_maps_to_ut3f4_x_c3_is_sharp_p_hard_with_h1_z3_reissued/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "ut3_hardness_reissued": false
+  },
+  "foundation_claim_scope": "3-surgeries on knots in the 3-sphere (closed 3-manifolds with H1 = Z/3), given by knot diagrams; Turing reductions with one oracle call. Cited, not proved: the #P-hardness of Tutte evaluation off the hyperbola (x-1)(y-1) = 1 (Jaeger-Vertigan-Welsh 1990; Vertigan 2005 for planar graphs), Habiro's clasper calculus for drawing the moves, and the results cited by TRIPLE-PRODUCT-20261026-001A and 001C. Checked: the gadget formula by brute force over F2 and F4, and end-to-end on knots realizing a triangle and a digon. Hardness of exact counting only; no claim about approximate counting, decision versions, P versus NP, or physics. Also covers knot groups. Supersedes TRIPLE-PRODUCT-20261026-001D-P001 (left unchanged).",
+  "validation": {
+    "status": "checked: the gadget lemma by brute force over F2 and F4 with Potts and Tutte values, figure-eight sums, four end-to-end knots, the gain control, and the knot-group identity (+63) on four knots, on the reissued library; reviewed independently in COPRIME-CLASS2-20261026-001A; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-26."
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "artifact_id": "MALTSEV-CONVERSE-20261020-001B-P001",
+  "checks": {
+    "census_agreement": {
+      "laws_with_knots": 34,
+      "laws_with_knots_and_no_knot_failure": 0,
+      "nonrectangular_knots_by_mechanism": {
+        "neither": 0,
+        "pairwise_meeting": 142,
+        "selector": 0,
+        "total": 142
+      },
+      "predictions": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "M4": true
+      }
+    },
+    "lemma_2_direct_hubs": {
+      "knots": 959,
+      "meeting": 583,
+      "meeting_hub": 583,
+      "selector": 245,
+      "selector_hub": 245
+    },
+    "observation_6_diagonal_derivation": {
+      "2": {
+        "neither_knots": 20,
+        "resolved_by_diagonal": 20
+      },
+      "3": {
+        "neither_knots": 20,
+        "resolved_by_diagonal": 20
+      },
+      "4": {
+        "neither_knots": 12,
+        "resolved_by_diagonal": 12
+      }
+    },
+    "proposition_1_naive_converse_fails": {
+      "A: parity beside x<=y": {
+        "any_failures": 14,
+        "knot_failures": 0,
+        "second_relation_has_maltsev_on_its_range": false,
+        "split_ok": 462,
+        "systems": 462,
+        "tie_failures": 14,
+        "with_knots": 58
+      },
+      "B: parity beside an isolated value": {
+        "any_failures": 0,
+        "knot_failures": 0,
+        "second_relation_has_maltsev_on_its_range": false,
+        "split_ok": 448,
+        "systems": 448,
+        "tie_failures": 0,
+        "with_knots": 46
+      }
+    },
+    "remark_5_selectors": {
+      "boolean_neither_knot": {
+        "is_knot": true,
+        "meeting_variable": null,
+        "rectangular": false,
+        "selector": null
+      },
+      "nae_is_knot": true,
+      "nae_meeting_variable": null,
+      "nae_rectangular": false,
+      "nae_selector": [
+        1,
+        0
+      ],
+      "nae_selector_hub": true
+    },
+    "theorem_3_two_values": {
+      "affine_knots_3": 2,
+      "affine_knots_4": 2,
+      "nonaffine_knots_3": 32,
+      "single_parities": 4,
+      "with_knot_hub": 32
+    },
+    "theorem_4_rectangular_knots_suffice": {
+      "Z2xZ2": {
+        "all_knots_rectangular": 16,
+        "failures": 0,
+        "failures_with_total_pair": 0,
+        "systems": 16,
+        "total_pairs": 0,
+        "total_pairs_fail_when_joined_alone": 0
+      },
+      "Z3": {
+        "all_knots_rectangular": 52,
+        "failures": 0,
+        "failures_with_total_pair": 0,
+        "systems": 52,
+        "total_pairs": 0,
+        "total_pairs_fail_when_joined_alone": 0
+      },
+      "Z4": {
+        "all_knots_rectangular": 47,
+        "failures": 0,
+        "failures_with_total_pair": 0,
+        "systems": 47,
+        "total_pairs": 0,
+        "total_pairs_fail_when_joined_alone": 0
+      },
+      "Z6": {
+        "all_knots_rectangular": 12,
+        "failures": 1,
+        "failures_with_total_pair": 1,
+        "systems": 12,
+        "total_pairs": 2,
+        "total_pairs_fail_when_joined_alone": 2
+      },
+      "two_congruence_knot_hub_Z2xZ2": true
+    }
+  },
+  "claim": "(1) The naive converse of the difference-law theorem is false: parity on {0,1} beside x<=y on {2,3} composes knots like cycles and parity beside an isolated-value relation on {2,3,4} composes all circuits like cycles, yet neither has a Mal'tsev polymorphism. (2) A knot whose fibres pairwise meet at some variable, or that has a selector, forms a hub with a copy of itself. (3) In a law composing knots like cycles, every knot on one two-element range is a single parity. (4) If every knot of a law is rectangular, the law composes knots like cycles exactly when no two knots meeting at a variable induce fibre partitions whose composition is total; no Mal'tsev operation is needed. Open: whether composing knots like cycles forces every knot to be rectangular; every 3-variable knot tested on 2, 3 and 4 values gives a hub directly or through the diagonal derivation exists h: K(x0,x0,h) and K(x1,x2,h).",
+  "controls": {
+    "direct_cases_cover_every_nonrectangular_knot": {
+      "knot": "000 010 011 101 110",
+      "meeting": null,
+      "rejected": true,
+      "selector": null
+    },
+    "every_knot_rectangular": {
+      "OR3_knot": true,
+      "OR3_rectangular": false,
+      "rejected": true
+    },
+    "no_failure_implies_maltsev": {
+      "law_B_any_failures": 0,
+      "law_B_maltsev": false,
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "MALTSEV-CONVERSE-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "direct_hub_lemma_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "local_converse_proved": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "naive_converse_refuted": true,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "rectangular_knots_suffice_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "two_valued_local_converse_proved": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "MALTSEV-CONVERSE-20261020-001B"
+}

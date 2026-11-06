@@ -1,0 +1,75 @@
+{
+  "artifact_id": "NATIVE-COUNTING-20261024-001B-P001",
+  "checks": {
+    "Theorem 1 (identity)": {
+      "Ising relation holds": 40,
+      "count = 2^(-n/2) 3^n Z(-1/3)": 40,
+      "graphs": 40,
+      "wrong power of 3 disagrees": 40
+    },
+    "Theorem 2 (planar determinant)": {
+      "count = 2^(-n/2) 3^n sqrt(det)": 26,
+      "det = Z^2": 26,
+      "drawings": 26,
+      "largest graph": 16,
+      "straight and non-crossing": 26
+    },
+    "hardness condition": {
+      "all reproduce not-all-equal": true,
+      "cube-root choices": 9,
+      "exceptional cases met": 0
+    }
+  },
+  "claim": "For a closed native network of not-all-equal knots on a loopless cubic multigraph with n knots, the witness count is 2^(-n/2) 3^n Z(-1/3), with Z the even-subgraph sum: an antiferromagnetic Ising partition function with e^(2b) = 1/2, up to explicit factors. Given the Kac-Ward formula, on networks drawn in the plane with straight non-crossing edges the count is 2^(-n/2) 3^n times the square root of a determinant, so counting closed worlds is polynomial on the sphere; with these methods a genus-g surface needs 4^g determinants, and on general cubic graphs counting is #P-hard given the cited three-regular dichotomy, whose exceptional cases not-all-equal does not meet (checked).",
+  "controls": {
+    "3^(n+1) in place of 3^n disagrees": true,
+    "K(3,3) drawn with crossings breaks the determinant formula": true,
+    "the Petersen graph drawn with crossings breaks it": true,
+    "the hardness test accepts all-equal (an exceptional case)": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NATIVE-COUNTING-20261024-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "nae_worlds_are_ising_shown": true,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NATIVE-COUNTING-20261024-001B"
+}

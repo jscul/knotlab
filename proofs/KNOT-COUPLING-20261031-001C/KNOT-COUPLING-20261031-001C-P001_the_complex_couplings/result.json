@@ -1,0 +1,186 @@
+{
+ "artifact_id": "KNOT-COUPLING-20261031-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "info": {
+    "mismatched": {},
+    "parents": 4
+   },
+   "pass": true
+  },
+  "1 the two ratios (the Fano atom, and the splice class with 12 incidences) agree with ticket A": {
+   "info": {
+    "rho_F": "(lam - 1)**3*(lam + 1)*(lam**3 + lam**2 + lam + 5)/(lam**7 + lam**6 + lam**5 + 9*lam**4 + 9*lam**3 + 41*lam**2 + 61*lam + 5)",
+    "rho_S": "(lam - 1)**3*(lam + 1)*(lam**9 + lam**8 + lam**7 + 11*lam**6 + 6*lam**5 + 24*lam**4 + 61*lam**3 + 51*lam**2 + 75*lam + 25)/(lam**13 + lam**12 + lam**11 + 17*lam**10 + 21*lam**9 + 83*lam**8 + 246*lam**7 + 310*lam**6 + 783*lam**5 + 1547*lam**4 + 2241*lam**3 + 2241*lam**2 + 675*lam + 25)",
+    "splice incidence": "(0, ('a', 1))"
+   },
+   "pass": true
+  },
+  "2 the curve f(X, Y) = Res_lam(X dF - nF, Y dS - nS) is irreducible over Q of bidegree (13, 7); by ticket A (Proposition 7) the ratios are multiplicatively independent, so it is not a torsion coset and has finitely many torsion points (Lang; Ihara, Serre, Tate)": {
+   "info": {
+    "bidegree": [
+     13,
+     7
+    ],
+    "terms": 102
+   },
+   "pass": true
+  },
+  "3 Beukers-Smyth (Lemma 1): for each of the seven substitutions g, f does not divide g, and the cyclotomic factors of the resultants (filtered at roots of unity in finite fields, confirmed by exact division) are Phi_1 and Phi_2 only": {
+   "info": {
+    "f(-X, -Y)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [
+      1,
+      2
+     ],
+     "m with Phi_m | Res_Y": [
+      1,
+      2
+     ],
+     "resultant degrees (X, Y)": [
+      182,
+      182
+     ]
+    },
+    "f(-X, Y)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [],
+     "m with Phi_m | Res_Y": [],
+     "resultant degrees (X, Y)": [
+      175,
+      182
+     ]
+    },
+    "f(-X^2, -Y^2)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [
+      1,
+      2
+     ],
+     "m with Phi_m | Res_Y": [
+      1,
+      2
+     ],
+     "resultant degrees (X, Y)": [
+      364,
+      364
+     ]
+    },
+    "f(-X^2, Y^2)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [],
+     "m with Phi_m | Res_Y": [],
+     "resultant degrees (X, Y)": [
+      364,
+      364
+     ]
+    },
+    "f(X, -Y)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [],
+     "m with Phi_m | Res_Y": [],
+     "resultant degrees (X, Y)": [
+      182,
+      169
+     ]
+    },
+    "f(X^2, -Y^2)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [],
+     "m with Phi_m | Res_Y": [],
+     "resultant degrees (X, Y)": [
+      364,
+      364
+     ]
+    },
+    "f(X^2, Y^2)": {
+     "f divides g": false,
+     "m with Phi_m | Res_X": [
+      1,
+      2
+     ],
+     "m with Phi_m | Res_Y": [
+      1,
+      2
+     ],
+     "resultant degrees (X, Y)": [
+      364,
+      364
+     ]
+    }
+   },
+   "pass": true
+  },
+  "4 the torsion points of the curve are exactly (1, 1) and (-1, -1)": {
+   "info": {
+    "torsion points (a/m for X, b/m for Y)": [
+     [
+      "0/1",
+      "0/1"
+     ],
+     [
+      "1/2",
+      "1/2"
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "5 the torsion points come from lam = 0 ((-1, -1)) and lam = oo ((1, 1)) only": {
+   "info": {
+    "gcd(M_F, M_S) (both ratios -1)": "2*lam",
+    "gcd(M_F^e, M_S^e) (both ratios +1)": "2",
+    "limits at lam = oo": [
+     "1",
+     "1"
+    ]
+   },
+   "pass": true
+  },
+  "6 where one ratio is 0 or infinite, the other is finite, nonzero and of infinite order, except at lam = 1 and lam = -1 (both 0)": {
+   "info": {
+    "bad": [
+     "zeros of rho_F: lam + 1",
+     "zeros of rho_F: lam - 1",
+     "zeros of rho_S: lam + 1",
+     "zeros of rho_S: lam - 1"
+    ],
+    "cases": {
+     "poles of rho_F: lam**7 + lam**6 + lam**5 + 9*lam**4 + 9*lam**3 + 41*lam**2 + 61*lam + 5": "finite, nonzero, not torsion",
+     "poles of rho_S: lam**13 + lam**12 + lam**11 + 17*lam**10 + 21*lam**9 + 83*lam**8 + 246*lam**7 + 310*lam**6 + 783*lam**5 + 1547*lam**4 + 2241*lam**3 + 2241*lam**2 + 675*lam + 25": "finite, nonzero, not torsion",
+     "zeros of rho_F: lam + 1": "0",
+     "zeros of rho_F: lam - 1": "0",
+     "zeros of rho_F: lam**3 + lam**2 + lam + 5": "finite, nonzero, not torsion",
+     "zeros of rho_S: lam + 1": "0",
+     "zeros of rho_S: lam - 1": "0",
+     "zeros of rho_S: lam**9 + lam**8 + lam**7 + 11*lam**6 + 6*lam**5 + 24*lam**4 + 61*lam**3 + 51*lam**2 + 75*lam + 25": "finite, nonzero, not torsion"
+    }
+   },
+   "pass": true
+  },
+  "7 deficiency one: the six line-deleted Fano atoms degenerate together only where their gcd vanishes, and its roots lie in {0, 1, -1, -3}": {
+   "info": {
+    "gcd": "(lam - 1)**3"
+   },
+   "pass": true
+  },
+  "8 controls: a dependent pair gives a subtorus (infinitely many torsion points), and the known torsion point at lam = 0 is found": {
+   "info": {
+    "a dependent pair (rho_F, rho_F^2) gives the curve Y = X^2, a subtorus": "X**2 - Y",
+    "lam = 0 is found as the torsion point (-1, -1)": true,
+    "the special values: rho_F(0) = rho_S(0) = -1": [
+     "-1",
+     "-1"
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "Counting on the knot's spaces is #P-hard at every complex coupling lam0 outside {0, 1, -1, -3} (and polynomial at those and at lam = oo). The ratios of the Fano atom and of the 12-incidence splice class define an irreducible curve of bidegree (13, 7) that is not a torsion coset; by Beukers and Smyth its torsion points lie on seven resultants, whose only cyclotomic factors are Phi_1 and Phi_2, so its torsion points are exactly (1, 1) and (-1, -1), reached only at lam = oo and lam = 0. Where one ratio is 0 or infinite the other has infinite order, except at lam = +-1. So at every other lam0 one of the two atoms meets the hypothesis of Theorem 1 of ticket B. With one line deleted the same holds except at lam = -3 (left open): the six line-deleted Fano atoms degenerate together only at lam = 1.",
+ "kind": "proof",
+ "proof": "KNOT-COUPLING-20261031-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "KNOT-COUPLING-20261031-001C"
+}

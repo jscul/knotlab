@@ -1,0 +1,177 @@
+{
+ "schema_version": 1,
+ "artifact_id": "PLAIN-COUNT-20261031-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 7,
+    "mismatched": {}
+   }
+  },
+  "1 Euler: at least six square faces, at most five faces meet a square, some square face avoids each square": {
+   "ok": true,
+   "detail": {
+    "graphs": 33,
+    "square faces (min, max)": [
+     6,
+     33
+    ],
+    "vertices (min, max)": [
+     8,
+     132
+    ],
+    "most faces meeting a square": 5
+   }
+  },
+  "2 every plain page is twisted (cut test on every page, tensor test on the small ones)": {
+   "ok": true,
+   "detail": {
+    "pages": 454,
+    "twisted (cut test)": 454,
+    "tensor tests": 197,
+    "twisted (tensor test)": 197
+   }
+  },
+  "3 plain trisum braces: three twisted branches at every square, no good root": {
+   "ok": true,
+   "detail": {
+    "three truncated octahedra": {
+     "vertices": 64,
+     "brace": true,
+     "Pfaffian (glued signing non-colourable)": true,
+     "plain colourable": true,
+     "twisted branches per square": [
+      3
+     ],
+     "good root": null
+    },
+    "cube, 6-prism, truncated octahedron": {
+     "vertices": 36,
+     "brace": true,
+     "Pfaffian (glued signing non-colourable)": true,
+     "plain colourable": true,
+     "twisted branches per square": [
+      3
+     ],
+     "good root": null
+    },
+    "three cubes": {
+     "vertices": 16,
+     "brace": true,
+     "Pfaffian (glued signing non-colourable)": true,
+     "plain colourable": true,
+     "twisted branches per square": [
+      3
+     ],
+     "good root": null
+    },
+    "two squares: a truncated octahedron with four cubes": {
+     "vertices": 40,
+     "brace": true,
+     "Pfaffian (glued signing non-colourable)": true,
+     "plain colourable": true,
+     "twisted branches per square": [
+      3,
+      3
+     ],
+     "good root": null
+    }
+   }
+  },
+  "4 non-2-colourable systems (census n = 7..10, splices): only the Fano plane is a brace; nice cycles have length 2 mod 4": {
+   "ok": true,
+   "detail": {
+    "census": {
+     "7": {
+      "non-2-colourable systems": 1,
+      "brace incidence graphs": 1,
+      "nice cycles of length 4 or 8": 0,
+      "seconds": 0.3
+     },
+     "8": {
+      "non-2-colourable systems": 0,
+      "brace incidence graphs": 0,
+      "nice cycles of length 4 or 8": 0,
+      "seconds": 1.1
+     },
+     "9": {
+      "non-2-colourable systems": 0,
+      "brace incidence graphs": 0,
+      "nice cycles of length 4 or 8": 0,
+      "seconds": 8.1
+     },
+     "10": {
+      "non-2-colourable systems": 0,
+      "brace incidence graphs": 0,
+      "nice cycles of length 4 or 8": 0,
+      "seconds": 65.0
+     }
+    },
+    "splices of Fano blocks": {
+     "a point block": {
+      "points": 13,
+      "colourable": false,
+      "brace": false,
+      "nice cycles of length 4, 6, 8": [
+       0,
+       32,
+       0
+      ]
+     },
+     "a line block": {
+      "points": 13,
+      "colourable": false,
+      "brace": false,
+      "nice cycles of length 4, 6, 8": [
+       0,
+       32,
+       0
+      ]
+     },
+     "two point blocks": {
+      "points": 19,
+      "colourable": false,
+      "brace": false,
+      "nice cycles of length 4, 6, 8": [
+       0,
+       40,
+       0
+      ]
+     },
+     "a point and a line block": {
+      "points": 19,
+      "colourable": false,
+      "brace": false,
+      "nice cycles of length 4, 6, 8": [
+       0,
+       39,
+       0
+      ]
+     },
+     "three line blocks": {
+      "points": 25,
+      "colourable": false,
+      "brace": false,
+      "nice cycles of length 4, 6, 8": [
+       0,
+       52,
+       0
+      ]
+     }
+    }
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "the cut test is not degenerate (20 switchings untwisted; one extra negation on a far square twists)": true,
+    "Heawood: brace, no 4-cycle, plain non-colourable": true,
+    "every graph of the family: plain colourable, non-colourable under its Kasteleyn signing": true
+   }
+  },
+  "ok": true,
+  "seconds": 78.8
+ }
+}

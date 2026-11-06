@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-COMPETITION-20261019-001B-E002",
+  "ticket": "KNOT-COMPETITION-20261019-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "KNOT-COMPETITION-20261019-001B-E001 found near and far under competition for 178 of 470 circulant pairwise rules (none under the strict reading), but never more than two separation levels. The decisive uncertainty is whether competition can give separation that keeps growing with layout distance.",
+  "question": "Under the competition reading, can rules on pairs give a shape with three or more separation levels, with separation never decreasing as layout distance grows, as a strict chain of knots does?",
+  "public_inputs": {
+    "strip_per_triangle": "vertices 0..n-1, n in 5..14; triangles (i, i+1, i+2); every pair in a triangle should differ; cost = for each triangle, the number of its broken preferences (a pair weighs the number of triangles containing it)",
+    "strip_per_pair": "the same pairs, each broken pair counted once",
+    "strip_nae_strict": "strict reading of not-all-equal on each triangle (the compilation comparator)",
+    "ring_per_triangle": "triangles (i, i+1, i+2) mod n, n in 6..14, counted per triangle",
+    "ring_per_pair": "the circulant C_n[1d,2d], each broken pair counted once, n in 6..14",
+    "atom_chain_control": "strict clauses (not x_2i or not x_2i+1 or x_2i+2), n in 5, 7, 9, 11, 13 variables"
+  },
+  "definitions": "as in KNOT-COMPETITION-20261019-001B-E001: circuits, separation, layout steps; levels = number of distinct finite separation values",
+  "primary_observable": "per rule: separation levels, separation by layout steps, and whether separation never decreases with layout steps",
+  "predictions": {
+    "compilation_check": "strip_per_triangle competition equals strip_nae_strict for every n; ring_per_triangle competition equals strict not-all-equal on the ring's triangles whenever some ring state satisfies them all",
+    "positive_control": "atom_chain_control reaches at least three levels by n = 9 and its levels grow with n",
+    "H_grow": "strip_per_triangle reaches at least three levels for some n <= 14, with separation never decreasing in layout steps",
+    "H_flat": "strip_per_triangle has at most two levels for every n <= 14",
+    "open": "per-pair strips and rings"
+  },
+  "decision_rule": "H_grow supported: competition can give growing near and far from pairs, on a triangulated layout, by compiling into not-all-equal knots. H_flat: no growth beyond two levels in the tested families. A failed compilation check or positive control stops the run as invalid.",
+  "resource_budget": {
+    "wall_seconds": 1800,
+    "memory_mib": 2048,
+    "max_variables": 14
+  },
+  "stop_rule": "Stop immediately if the compilation check or the positive control fails; otherwise stop after the frozen roster.",
+  "nonclaims": [
+    "Finite enumeration up to 14 variables; no asymptotic claim.",
+    "A strip is a layout chosen by the experimenter; growth along it would be inherited from that layout, not a constructed space.",
+    "Separation is not a distance or a metric."
+  ],
+  "forbidden_inputs": [
+    "any coordinate or metric in the shape computation",
+    "the expected verdict as an input to the producer"
+  ]
+}

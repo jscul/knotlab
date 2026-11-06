@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "AFFINE-TOPS-20261021-001Z-P001",
+  "canonical_id": "AFFINE-TOPS-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "AFFINE-TOPS-20261021-001Z",
+  "proof": "AFFINE-TOPS-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the affine-tops epic",
+  "status": "Proved",
+  "claim": "Ledger closing AFFINE-TOPS-20261021-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "AFFINE-TOPS-20261021-001A",
+    "AFFINE-TOPS-20261021-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved or its checks did not pass.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A proved, B proved)."
+  ],
+  "lineage": {
+    "home_scope": "AFFINE-TOPS-20261021-001",
+    "epic_path": [
+      "AFFINE-TOPS-20261021-001"
+    ],
+    "parents": [
+      "proofs/AFFINE-TOPS-20261021-001A/AFFINE-TOPS-20261021-001A-P001_rectangular_tops/manifest.json",
+      "proofs/AFFINE-TOPS-20261021-001A/AFFINE-TOPS-20261021-001A-P001_rectangular_tops/result.json",
+      "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/manifest.json",
+      "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/AFFINE-TOPS-20261021-001A/AFFINE-TOPS-20261021-001A-P001_rectangular_tops/manifest.json": "93b6d03192228140bb784cc2b149d681180addae6a412397f2248872f4c1d3fa",
+    "proofs/AFFINE-TOPS-20261021-001A/AFFINE-TOPS-20261021-001A-P001_rectangular_tops/result.json": "050c17f7b60ee7ac8d5b8adfbabc106b573a4bf2f450a9e006ccbc8cf0f4db4d",
+    "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/manifest.json": "b36b5985a45516dd7ad1cf8fccafb2b63736d97b35697686467ea8e0c8e1a752",
+    "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/result.json": "6046fc87ec6dc159491bfb728a8d7511c4ccecfed8c6fcc65884f2fb92faf221"
+  },
+  "paths": {
+    "manifest": "proofs/AFFINE-TOPS-20261021-001Z/AFFINE-TOPS-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/AFFINE-TOPS-20261021-001Z/AFFINE-TOPS-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/AFFINE-TOPS-20261021-001Z/AFFINE-TOPS-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/AFFINE-TOPS-20261021-001Z/AFFINE-TOPS-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/AFFINE-TOPS-20261021-001Z/AFFINE-TOPS-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/AFFINE-TOPS-20261021-001Z/AFFINE-TOPS-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the two Proved proofs and their passed results; decision note present; tickets proved; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, result statuses, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

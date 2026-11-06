@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HARD-3D-20261025-001B-P001",
+  "canonical_id": "HARD-3D-20261025-001B-P001",
+  "kind": "proof",
+  "ticket": "HARD-3D-20261025-001B",
+  "proof": "HARD-3D-20261025-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closed manifolds: the doubles count pairs of colourings",
+  "status": "Proved",
+  "claim": "The double M_G of the fin handlebody of a connected plane multigraph G is a closed orientable 3-manifold whose fundamental group has an explicit presentation (a graph of groups over the faces of G plus a Seifert piece over a punctured torus for each edge). With every edge repeated k times, its number of homomorphisms into a finite group is an exponential polynomial in k whose bases are products of |C(lambda)|^2/psi(1)^2. The coefficient of the target base is a chromatic polynomial: 2 P(G,9)/3^|V| for S3 (pairs of 3-colourings, by Potts duality on the dual graph), 2 P(G,N^2)/N^|V| for dihedral groups of order 2N with N odd, 2 (4/N)^|V| P(G,N^2/4) for N even other than 4, P(G,8) for the dihedral group of order 8 and for Q8, and 3 P(G,16)/4^|V| for A4. Where the target base is unique it is recovered by interpolation, so counting homomorphisms from closed orientable 3-manifold groups into S3, into every dihedral group whose order is not a power of 2 at least 16, into Q8 and into A4 is #P-hard under Turing reductions (planar colouring hardness and triangulation cited). For the class-2 groups (dihedral of order 8, Q8) this shows that the bounded-H2 hypothesis of the Samperton-Weiss algorithm cannot be dropped. For the dihedral group of order 16 the identity holds on the target channels but the base collides (256 x 16 = 64^2) and contaminates the coefficient (192 on the 4-cycle), so that case is left open.",
+  "dependencies": [
+    "HARD-3D-20261025-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A closed count from the presentation that differs from an independently identified manifold's count (single edge, path, doubled edge, cycles as graph manifolds), or depends on the choice of outer face or on mirroring.",
+    "A thickened count that differs from the digon-collapsed formula, or an exponential polynomial with bases outside the stated products.",
+    "A target coefficient that differs from the stated chromatic-polynomial identity, or interpolation that fails to recover it where the target base is unique.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "HARD-3D-20261025-001",
+    "epic_path": [
+      "HARD-3D-20261025-001"
+    ],
+    "parents": [
+      "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/manifest.json": "b7b5f28ddb4e4fec7795c5a73b214df43640113646914fcdd6e72de1779fdec0"
+  },
+  "paths": {
+    "manifest": "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/manifest.json",
+    "identity": "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/identity.json",
+    "directory": "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings",
+    "proof": "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/proof.md",
+    "result": "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/result.json",
+    "check": "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "closed_dihedral_hardness_shown": true
+  },
+  "foundation_claim_scope": "Closed orientable 3-manifolds obtained as doubles of fin handlebodies over plane multigraphs; counting homomorphisms into S3, dihedral groups, Q8 and A4; Turing reductions; hardness of planar colouring and polynomial-time triangulation cited; instances have first Betti number growing with the graph. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, 127 s) matches the presentation against five independently identified manifolds for S3 and the dihedral group of order 8, confirms invariance under the outer-face choice and mirroring, the digon collapse, exact exponential-polynomial fits with extra values, the target identities in exact rationals for seven groups on two to nine plane graphs each, the order-16 collision and its contamination, and six controls. No human or external review",
+    "level": "V1 prose proof with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

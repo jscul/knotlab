@@ -1,0 +1,149 @@
+{
+  "artifact_id": "FROZEN-WORLDS-20261020-001C-P001",
+  "checks": {
+    "theorem_1_flexible_flat_class": {
+      "all_window_vertices_flexible": true,
+      "worlds": 8
+    },
+    "theorem_1_frozen_boxes": {
+      "antiplane": {
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      },
+      "flat": {
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 2
+      },
+      "plane": {
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      }
+    },
+    "theorem_1_plane_world": {
+      "window_vertices_flexible": 0
+    },
+    "theorem_2_star_knot_nativity": {
+      "native_at_a_flat_class_world": true,
+      "native_at_the_plane_world": false
+    },
+    "theorem_2_star_knot_z2": {
+      "allowed": 21,
+      "equals_not_all_distinct": true,
+      "knot": true
+    },
+    "theorem_3_tree": {
+      "frozen_colouring_completions": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "patching": {
+        "change_inside_ball": 60,
+        "deepest_change": 10,
+        "match_window": 60,
+        "patterns": 60,
+        "valid": 60
+      },
+      "star_knot": true,
+      "star_knot_equals_not_all_distinct": true,
+      "two_colouring_completions": {
+        "3": 2,
+        "4": 2,
+        "5": 2
+      }
+    },
+    "theorem_4_hard_core": {
+      "flexible": 180,
+      "knots": 0,
+      "not_majority_closed": 0,
+      "triples": 84,
+      "window_vertices_checked": 180
+    }
+  },
+  "claim": "For proper 3-colourings of Z^2 and of the 3-regular tree: (1) the plane colourings (x +/- y) mod 3 of Z^2, and tree colourings whose every vertex's children carry both other colours, are frozen (no other colouring differs from them at finitely many vertices, so every finite region is determined by the rest of the world), while the bipartition 2-colourings are flexible at every vertex and their classes are dense, so for each finite vertex set the worlds at which it is flexible form a dense open set excluding the frozen worlds; (2) three neighbours of a vertex carry exactly the relation 'not all three colours distinct', which passes K1-K3 and, under the source-aware reading, is native exactly at the worlds where the three vertices are flexible: native on a dense open set of worlds and at no frozen world; (3) the hard-core law (independent sets) is flexible at every vertex of every world yet has no K1-K3 knot among its variables. So under the source-aware reading native knots depend on the world for colourings, and native loops are necessary but not sufficient for them.",
+  "controls": {
+    "theorem_1_frozen_test_on_flat": {
+      "counts": {
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 2
+      },
+      "rejected": true
+    },
+    "theorem_2_triples_without_a_common_neighbour": {
+      "path_allowed": 12,
+      "path_knot": false,
+      "rejected": true,
+      "spread_allowed": 27,
+      "spread_knot": false
+    },
+    "theorem_3_frozen_test_on_the_two_colouring": {
+      "counts": {
+        "3": 2,
+        "4": 2,
+        "5": 2
+      },
+      "rejected": true
+    },
+    "theorem_4_flexibility_test_at_the_plane_colouring": {
+      "rejected": true,
+      "window_vertices_flexible": 0
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "FROZEN-WORLDS-20261020-001C-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "colourings_frozen_and_flexible_worlds_proved": true,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "hard_core_native_everywhere_without_knots_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "nativity_world_relative_proved": true,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "star_knot_not_all_distinct_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "FROZEN-WORLDS-20261020-001C"
+}

@@ -1,0 +1,167 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SOFT-CROSS-20261031-001C-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 7,
+    "mismatched": {}
+   }
+  },
+  "1 the drawings: G_k non-planar, one crossing e1 x e2 for every k": {
+   "ok": true,
+   "detail": {
+    "(a, a, b)": {
+     "k": [
+      2,
+      5
+     ],
+     "crossing": [
+      [
+       [
+        "pt",
+        "q",
+        0,
+        0
+       ],
+       [
+        "ln",
+        "C",
+        0
+       ]
+      ],
+      [
+       [
+        "pt",
+        "q",
+        0,
+        1
+       ],
+       [
+        "ln",
+        "M",
+        [
+         "a",
+         1
+        ],
+        0
+       ]
+      ]
+     ]
+    },
+    "(b, a, c)(c, b, c)": {
+     "k": [
+      2,
+      8
+     ],
+     "crossing": [
+      [
+       [
+        "pt",
+        "q",
+        0,
+        0
+       ],
+       [
+        "ln",
+        "C",
+        0
+       ]
+      ],
+      [
+       [
+        "pt",
+        "q",
+        1,
+        1
+       ],
+       [
+        "ln",
+        "M",
+        [
+         "b",
+         1
+        ],
+        0
+       ]
+      ]
+     ]
+    }
+   }
+  },
+  "2 the instances: certified Pfaffian, non-planar, three twisted branches at every junction, no good root": {
+   "ok": true,
+   "detail": {
+    "(a, a, b)": {
+     "instances": 16,
+     "certified": 16,
+     "non-planar": 16,
+     "junctions with three twisted branches": 64,
+     "junctions": 64,
+     "good roots": 0,
+     "largest instance (vertices)": 590
+    },
+    "(b, a, c)(c, b, c)": {
+     "instances": 28,
+     "certified": 28,
+     "non-planar": 28,
+     "junctions with three twisted branches": 112,
+     "junctions": 112,
+     "good roots": 0,
+     "largest instance (vertices)": 922
+    }
+   }
+  },
+  "3 end to end: 9 #col(G_k) through the snakes equals the direct count; #formula recovered exactly": {
+   "ok": true,
+   "detail": {
+    "(a, a, b)": {
+     "k": [
+      2,
+      5
+     ],
+     "9 #col(G_k) through snakes = direct": true,
+     "#formula recovered": "2",
+     "#formula": 2
+    },
+    "(b, a, c)(c, b, c)": {
+     "k": [
+      2,
+      8
+     ],
+     "9 #col(G_k) through snakes = direct": true,
+     "#formula recovered": "4",
+     "#formula": 4
+    }
+   }
+  },
+  "4 control: the bare exact crossover (no compensation) recovers wrong values": {
+   "ok": true,
+   "detail": {
+    "(a, a, b)": {
+     "k with a wrong value without compensation": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    "(b, a, c)(c, b, c)": {
+     "k with a wrong value without compensation": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   }
+  },
+  "ok": true,
+  "seconds": 4.7
+ }
+}

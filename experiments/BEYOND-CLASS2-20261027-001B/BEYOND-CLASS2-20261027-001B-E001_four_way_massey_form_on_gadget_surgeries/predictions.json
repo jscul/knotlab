@@ -1,0 +1,17 @@
+{
+ "kappa": {
+  "braid_model": 2,
+  "level_model": -2
+ },
+ "R0_base": "Q = 0 identically on S^3_2 of sums of 4_1 (p = 5), 5_2 (p = 7) and T(2, p), every sample and every table entry",
+ "R1_steering": "inserting gamma . cable(P, 2, o) . gamma^-1 at a level changes Q by kappa * sum_j Lam_j(c) ell_j(s), Lam_j(c) = sum M_j(i1 i2 i3) ell_i1(c_y) ell_i2(c_x) ell_i3(c_w), M_j the degree-3 Magnus part of the geometric conjugator W_j of P, ell_k = difference of the transported colors of bundle k at the middle level; insertions add; exact equality on every sample (braid model) and every table entry (level model, constant -kappa)",
+ "R2_gadget": "on the gadget manifold of K2, P3, the digon, K3, K1,3 and C4 at p = 5, 7, 11: Q = kappa * sum over edges of the P4 tensor with leaf 0 = s_v - s_u and leaf k = s_{b+2k} - s_{b+2k-1} (top colors); the transported leaves equal these closed forms",
+ "R3_counts": {
+  "S^3_2(4_1), p = 5, sector 1": 390625,
+  "S^3_2(T(2,5)), p = 5, sector 1": 390625,
+  "S^3_2(T(2,5)#T(2,5)), p = 5, sector 1": 244140625,
+  "S^3_2(4_1), p = 5, sector 0": 1
+ },
+ "R4_lifting": "on 4_1 x4 + P4 (0,0) at p = 5, for 40 class triples (10 with c_y = 0, 10 with c_x = 0, 20 random), the independent group-law count with fixed layer-1 data is positive exactly when Q(c; .) = 0, and then equals p^(N+1) = 3125",
+ "dims": "dim of the fixed colorings = number of summands + 1 on every fixture (dim H^1(M; F_p^-) = number of summands)"
+}

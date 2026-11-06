@@ -1,0 +1,156 @@
+{
+ "artifact_id": "PARITY-CORRECTION-20261031-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; ticket A Proved and passed": {
+   "info": {
+    "A": [
+     "passed",
+     "Proved"
+    ],
+    "mismatched": {},
+    "parents": 4
+   },
+   "pass": true
+  },
+  "1 the piece: census graph n = 8 #11, cubic, simple, connected, no repeated lines, GF(2) rank 6; with line 3 negated it is parity-unsolvable, with a certificate (lines covering every point evenly, odd number of negations) avoiding the port line 0": {
+   "info": {
+    "certificate (lines)": [
+     [
+      7,
+      6,
+      1
+     ],
+     [
+      1,
+      7,
+      5
+     ],
+     [
+      3,
+      0,
+      5
+     ],
+     [
+      3,
+      0,
+      6
+     ]
+    ],
+    "certificates avoiding the port line": 1,
+    "lines": [
+     [
+      4,
+      2,
+      5
+     ],
+     [
+      4,
+      6,
+      2
+     ],
+     [
+      3,
+      2,
+      0
+     ],
+     [
+      7,
+      6,
+      1
+     ],
+     [
+      1,
+      7,
+      5
+     ],
+     [
+      3,
+      0,
+      5
+     ],
+     [
+      3,
+      0,
+      6
+     ],
+     [
+      4,
+      1,
+      7
+     ]
+    ],
+    "negated line": [
+     7,
+     6,
+     1
+    ],
+    "port": {
+     "line": [
+      4,
+      2,
+      5
+     ],
+     "point": 4
+    }
+   },
+   "pass": true
+  },
+  "2 transfer matrix G (host point's colour -> colour delivered to the host line): det G = -16 lam^2 (lam-1)^6 (lam+1)^6, tr G = 8 lam (lam+1)^4 (lam^2+1); det G vanishes only at lam in {0, 1, -1}": {
+   "info": {
+    "G": [
+     [
+      "8*lam*(lam + 1)**3*(2*lam**2 - lam + 1)",
+      "4*lam*(lam + 1)**4*(lam**2 + 1)"
+     ],
+     [
+      "4*lam*(lam + 1)**4*(lam**2 + 1)",
+      "8*lam**2*(lam + 1)**3*(lam**2 - lam + 2)"
+     ]
+    ],
+    "det": "-16*lam**2*(lam - 1)**6*(lam + 1)**6",
+    "trace": "8*lam*(lam + 1)**4*(lam**2 + 1)"
+   },
+   "pass": true
+  },
+  "3 every spliced system (12 hosts, plain and signed, two incidences, chains of 1-3 pieces) is cubic, simple, connected like its host, has no repeated lines when the host has none, and is parity-unsolvable with every piece's certificate intact": {
+   "info": {
+    "failures": [],
+    "spliced systems": 72
+   },
+   "pass": true
+  },
+  "4 the transfer model, by direct computation: M(H_k) = sum_{x,y} F_H(x, y) G^k(x, y), with F_H from the cut host by brute force and M(H_k) by variable elimination on the spliced system (hosts up to 12 points, k = 1, 2, 3, lam = 2 and 1 + i)": {
+   "info": {
+    "cases": 60,
+    "failures": []
+   },
+   "pass": true
+  },
+  "5 two calls on parity-unsolvable systems recover the count: M(H) = (tr G M(H_1) - M(H_2)) / det G on 12 hosts (theta images of K3,3, K4^(3) and Fano, Fano, K4^(3), census n = 6, and signed copies) at four real and two complex couplings": {
+   "info": {
+    "cases": 72,
+    "failures": [],
+    "theta(Fano) at lam = 2": {
+     "M(H_1)": "69832991324160",
+     "M(H_2)": "453026915754688512",
+     "M(theta Fano; 2)": "10912465152"
+    }
+   },
+   "pass": true
+  },
+  "6 contrast (observed): splicing the knot's failing Fano plane into a 2-colourable census host (n <= 6) at an incidence never keeps the failure: every such system is 2-colourable": {
+   "info": {
+    "not 2-colourable": 0,
+    "spliced systems": 54,
+    "why no analogue of the two-call splice can exist for the knot": "the knot's connected failing systems are exactly the Pfaffian ones, on which the dimer law is a determinant; a failure-keeping splice with a recovery formula for every host would make perfect matchings of cubic bipartite graphs (Dagum-Luby, #P-complete) polynomial to count"
+   },
+   "pass": true
+  }
+ },
+ "claim": "Parity's failing systems carry every hard instance of its coupling family. (i) Splice lemma: if a signed cubic piece has a parity certificate, a set s of lines covering every point evenly with b.s = 1, and s avoids a line m, then swapping an incidence (q, m) of the piece with an incidence (p, l) of any host gives a cubic system that is again parity-unsolvable, with the same certificate. (ii) Two calls: with G the piece's 2x2 transfer matrix from the host point's colour to the colour delivered to the host line, and H_k the host with one incidence replaced by a chain of k pieces, M(H_k) = sum over x, y of F(x, y) G^k(x, y), so M(H) = (tr G M(H_1) - M(H_2)) / det G by Cayley-Hamilton. (iii) The eight-line piece from the census (no repeated lines, one negated line) has det G = -16 lam^2 (lam - 1)^6 (lam + 1)^6. So for every complex lam outside {0, 1, -1}, counting parity's coupling on connected simple cubic systems reduces with two oracle calls to counting it on connected simple parity-unsolvable systems, without repeated lines when the host has none; with ticket A it is #P-hard there for every lam outside {0, 1, -1, i, -i, oo}. Parity's failing class makes no member of its family easy. Contrast (observed): splicing a not-all-equal-unsolvable piece into a 2-colourable host gave a 2-colourable system in every tested case, so the knot's failures do not transplant.",
+ "kind": "proof",
+ "proof": "PARITY-CORRECTION-20261031-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PARITY-CORRECTION-20261031-001B"
+}

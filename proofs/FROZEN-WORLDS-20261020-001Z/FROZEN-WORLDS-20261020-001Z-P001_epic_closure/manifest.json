@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "artifact_id": "FROZEN-WORLDS-20261020-001Z-P001",
+  "canonical_id": "FROZEN-WORLDS-20261020-001Z-P001",
+  "kind": "proof",
+  "ticket": "FROZEN-WORLDS-20261020-001Z",
+  "proof": "FROZEN-WORLDS-20261020-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the frozen-worlds epic",
+  "status": "Proved",
+  "claim": "Ledger closing FROZEN-WORLDS-20261020-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001B",
+    "FROZEN-WORLDS-20261020-001C"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or the proof is not Proved.",
+    "The decision note is missing.",
+    "The proof ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "FROZEN-WORLDS-20261020-001",
+    "epic_path": [
+      "FROZEN-WORLDS-20261020-001"
+    ],
+    "parents": [
+      "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json",
+      "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json": "9f66fed64307a5e9b8ca5a8a0b69a5413826bc257dd2c5ef9fca158523676e54",
+    "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/result.json": "69cbcfc294941fe4dd8e1ad79e01a0070490748387873e09d5729b0b1a3cc3bd",
+    "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/manifest.json": "2aa78e1b1ad9d384d7f088c30a50d17285d3583b40323e61c3905fea6109d5c5",
+    "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/result.json": "21b84d48ea286f9de960b21d14e3b6459dac601b677d479ee9b9ddab2c7c897f"
+  },
+  "paths": {
+    "manifest": "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure",
+    "proof": "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/result.json",
+    "check": "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to its two Proved proofs and passed results; decision note present; proof tickets proved; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, result statuses, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-20."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-CIRCUITS-20261020-001A-E001",
+  "ticket": "KNOT-CIRCUITS-20261020-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "In which laws do two knots (or circuits) that share a distinction always leave a constraint among their other variables once it is forgotten, so that every system's circuits obey circuit elimination?",
+  "definitions": {
+    "system": "a relation S on n variables obtained from copies of a law relation R applied to tuples of variables (a repeated variable is an equality), with some variables hidden: a pp-definition",
+    "range": "the set of values a variable takes in S, its open alternatives",
+    "constrained set": "a set Y of variables whose projection has fewer elements than the product of their ranges",
+    "circuit": "a minimal constrained set; a knot is a circuit with at least 3 variables (Fact 2 of docs/KNOT_INTUITION.md); with full ranges this is the canonical K1-K3 test",
+    "failure": "two distinct circuits C1, C2 and a shared variable e with (C1 u C2) - e unconstrained; a failure between knots has |C1|, |C2| >= 3",
+    "affine": "a Boolean relation closed under x+y+z (mod 2)",
+    "bijunctive": "a Boolean relation closed under majority",
+    "Mal'tsev polymorphism": "an operation m with m(x,x,y) = m(y,x,x) = y that preserves the relation",
+    "isolated reflexive value": "a value c with (c,c) in R and no other pair of R containing c",
+    "coset law of a group G": "all cosets of subgroups of powers of G; its polymorphism algebra is the heap x y^-1 z, its subalgebras are cosets of subgroups, and the congruences of a coset of H are given by the normal subgroups of H",
+    "GF(4)-linear law": "all cosets of GF(4)-subspaces of powers of GF(4), on the same four-element domain as Z2xZ2"
+  },
+  "public_inputs": {
+    "boolean": "every nonempty, non-full Boolean relation of arity 2 or 3",
+    "three_element": "every nonempty, non-full binary relation on {0, 1, 2}",
+    "groups": "Z2, Z3, Z4, Z5, Z8, Z9, Z2xZ2, Z6, S3, A4, D4, Q8, Dic3, and the GF(4)-linear law",
+    "searches": "Boolean: systems of two copies over at most 5 variables (up to 2 hidden), knots from systems of one or two copies over at most 4 variables and chains over 5, and hubs of two such knots on fresh variables sharing one or two variables; three elements: systems of two or three copies over at most 4 variables, and the binary pp-closure under composition, converse and intersection; groups: an explicit construction inside a coset of a subgroup with two maximal normal subgroups, and 300 random cosets in G^3 and 300 in G^4"
+  },
+  "forbidden_inputs": [
+    "no prediction label is used to choose which systems are searched"
+  ],
+  "predictions": {
+    "P1": "every non-affine Boolean relation of arity 2 or 3 has a failure in the searched systems, and no affine relation has one",
+    "P2": "a failure between knots is found exactly for the Boolean relations that are neither affine nor bijunctive",
+    "P3": "among binary relations on three elements, no relation with a Mal'tsev polymorphism has a failure, and every other relation has one unless it has an isolated reflexive value, in which case it has none",
+    "P4": "a group's coset law has a failure exactly when some subgroup of the group has two maximal normal subgroups (constructed when it does; none in the random cosets when it does not), and the GF(4)-linear law has none"
+  },
+  "primary_observable": "per relation or law: classification flags (affine, bijunctive, Mal'tsev, isolated value, congruence condition), whether a failure and a failure between knots were found, and a witness system for each failure",
+  "cheapest_meaningful_control": "(C1) 'self-complementary Boolean laws compose like cycles' must be rejected by NAE; (C2) 'a Mal'tsev polymorphism suffices' must be rejected by Z2xZ2; (C3) 'a group law composes like cycles exactly when the group is abelian' must be rejected by S3 and Z2xZ2; (C4, observation) the failures recomputed with every range replaced by the whole domain show what the range convention changes",
+  "independent_check": "check_result.py recomputes affinity by linear algebra over GF(2), bijunctivity by comparing each relation with the conjunction of its binary projections, Mal'tsev polymorphisms by its own search, isolated values, subgroups and normal subgroups by brute force over subsets, and rebuilds every recorded failure witness and verifies it with its own circuit routine",
+  "decision_or_followup_rule": "A signal is P1-P4 holding. A failure in a Mal'tsev law meeting the congruence condition, or a non-affine Boolean relation without a failure, stops ticket B until it is understood.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "the probes of 2026-10-20 (disposable): every non-affine Boolean relation of arity at most 3 had a failure and no affine one did; Z2xZ2, Z6, D4 and Q8 failed by construction, Z3, Z4, Z5, Z8, Z9, S3, A4 and Dic3 showed no failure in random subgroups under the whole-domain convention; on three elements 114 Mal'tsev binary relations showed no failure and 384 of 396 others did, the remaining 12 having an isolated reflexive value",
+  "stop_rule": "Stop after the declared roster or budget; stop early only on a solver or control failure.",
+  "nonclaims": [
+    "Finite searches on the declared relations and groups only; the general statements belong to ticket B.",
+    "A failure not found within the searched systems is not a proof that none exists.",
+    "No claim about native structure, distance or physics."
+  ],
+  "notes": [
+    "The range convention matters: with the whole domain as every variable's alternatives, a variable confined to a coset is constrained by itself and can join no larger circuit, so A4's failure inside a V4 coset disappears; the census uses ranges."
+  ]
+}

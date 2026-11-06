@@ -1,0 +1,109 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-GRAMMAR-20261030-001A-P001",
+  "canonical_id": "THREEFOLD-GRAMMAR-20261030-001A-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-GRAMMAR-20261030-001A",
+  "proof": "THREEFOLD-GRAMMAR-20261030-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Fano leaves and planar glue",
+  "status": "Proved",
+  "claim": "For a connected 3-regular triple system H with distinct points per line that is not 2-colourable (the dual of a three-fold space of the knot): (1) The approved grammar is incomplete. Three twisted 14-point pieces placed on the cube (a Kasteleyn sign pattern, one negation per face) give a 43-point system whose tight-cut decomposition contains the cube as a brace, while every system built from Fano planes by splices and (twisted) cycles of Fano blocks decomposes into Heawood graphs and doubled squares only; brace lists are unique (Lovasz). (2) Structure: tight cuts of the incidence graph are 3-edge cuts with cubic contractions; a brace with a repeated incidence is the 4-vertex doubled square (sign-nonsingular exactly with an odd number of negated classes); every leaf is a simple cubic brace signed trivially except possibly one negated edge at its contracted vertex; every brace carries an induced Pfaffian signing. (3) Every Pfaffian brace other than the Heawood graph has, for each 4-cycle, an edge-disjoint 4-cycle (planar braces by Euler's formula, the rest by induction over the Robertson-Seymour-Thomas trisum structure), so a brace on at least six vertices with a Pfaffian signing negating at most one edge is the Heawood graph signed trivially. (4) Fano leaves: every leaf of every tight-cut decomposition is a Fano plane minus a line (attached at its points) or minus a point (attached at its lines); H, unless it is the Fano plane, contains at least two vertex-disjoint such pieces. (5) Decoration: every cubic multi-system with a sign-nonsingular signing becomes a non-colourable triple system with distinct points per line when its signed and repeated points are replaced by twisted 14-point pieces and Fano blocks; so every planar cubic bipartite graph (Kasteleyn) is the core of three-fold knot spaces (cube 43, hexagonal prism 45, truncated octahedron 90, the 3-cycle core 21, the tripod core 22 points).",
+  "dependencies": [
+    "THREEFOLD-SPACES-20261030-001A",
+    "THREEFOLD-SPACES-20261030-001C"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A system built by splices and cycles of Fano blocks with a brace other than Heawood graphs and doubled squares.",
+    "A brace with a repeated incidence on more than four vertices, or a leaf that is not simple.",
+    "A Pfaffian brace other than the Heawood graph with a 4-cycle that shares an edge with every other 4-cycle, or a brace on at least six vertices other than the trivially signed Heawood graph with a sign-nonsingular signing negating at most one edge.",
+    "A leaf of a tight-cut decomposition that is not a Heawood graph.",
+    "A signed core that decorates to a 2-colourable system, or a computation that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-GRAMMAR-20261030-001",
+    "epic_path": [
+      "THREEFOLD-GRAMMAR-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "7d4aea1e0994189c09c1d9f84db61ad21aed7fde23283db4dddc1ebafc183837",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json": "07f5a91dd9bbcd4256ff0839442ee84ddc92ef9c7e5fe6683f57dfbf9b1306f2",
+    "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/result.json": "dee76f5d3b635e6b4308f39534b80d0df217113b8ed43a995a626e772b47c99c"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json",
+    "identity": "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/identity.json",
+    "directory": "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue",
+    "proof": "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/proof.md",
+    "result": "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json",
+    "check": "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_grammar_shown": true
+  },
+  "foundation_claim_scope": "Cubic triple systems with distinct or repeated points per line, their incidence graphs, tight cuts, Pfaffian signings and decorations; the knot reading via the duality of SPACE-SELECTION-20261030-001C. The Robertson-Seymour-Thomas structure theorem (6.8 and its proof) and Kasteleyn's signings are external inputs, not replayed.",
+  "validation": {
+    "status": "checked: twisted cube and generated systems decomposed (brace lists); structure on all computed decompositions; doubled-square signings; one-twist lemma and the 4-cycle partner property on the Heawood graph, three planar braces and two non-planar cubic trisums (16 and 24 vertices, one Pfaffian class each); Fano pieces on every constructed system; five decorations non-colourable by SAT, the smaller ones minimal; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "classical inputs: Lovasz's tight-cut decomposition and uniqueness of braces, Pfaffian contractions, Robertson-Seymour-Thomas 1999 (Theorem 6.8, trisums), Kasteleyn's planar signings; the 4-cycle partner property is stated by Gorsky, Johanni and Wiederrecht (arXiv 2408.08128, Lemma 3.4; their proof not read); no overlap found (candidate local delta) for the one-twist lemma, the Fano-leaf theorem and the decoration theorem in this setting, and the reading as the knot's three-fold spaces",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

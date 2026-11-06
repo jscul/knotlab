@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COPRIME-PAIRS-20261027-001E-P001",
+  "canonical_id": "COPRIME-PAIRS-20261027-001E-P001",
+  "kind": "proof",
+  "ticket": "COPRIME-PAIRS-20261027-001E",
+  "proof": "COPRIME-PAIRS-20261027-001E-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Interacting pair failures with a clean edge are #P-hard",
+  "status": "Proved",
+  "claim": "p >= 5, r | p - 1, n graded of class at most 4 with a grading-preserving C_r action, d | r, m = m_d the ideal of nonzero characters, k in {0, gamma_4(m)} with m/k of class at most 3. A clean edge is a hard pair (alpha, beta) of (m/k)/gamma_3 with slot types alpha (vertex), beta, gamma = alpha + beta such that brackets between layer-1 characters of distinct leaves lie in gamma_3 outside the characters forced by the private duals, the layer-3 brackets of the two private leaves avoid the vertex roots, and k avoids the active characters. If a clean edge exists, counting |Hom(pi_1 S^3_(d/p)(K), G)| is #P-hard. Proof: zero-jump gadget knots (blocks returning exactly to the meridian value, dedicated vertex copies, Brunnian commutator insertions) make the pinned count an edge-local integer partition function on the layer-2 variety; the edge count is maximal on the diagonal and strictly smaller but positive across a pair-failing difference (Brunnian rank lemma); subdivision gives the symmetric matrix F F^T of rank at least two; anchor isolation recovers the total count.",
+  "dependencies": [
+    "COPRIME-PAIRS-20261027-001D"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A cabled commutator braid whose conjugators do not vanish when a bundle is deleted, or a zero-jump block whose end strand differs from its base strand or whose copies differ from the reading strand under some pinned representation.",
+    "An algebra listed as having a clean edge that violates a stated condition, or a census count of clean edges other than 50 of 176.",
+    "For free class 3 on (1, 1) at d = 5, p = 11: an edge count with F(s, s) < F_max, F(0, D) = F_max for D != 0, or rank F F^T < 2.",
+    "An open-algebra breakdown by minimal failing conditions other than the one stated in proof.md (126 algebras; 26 blocked only by (K), 12 only by (V3), 10 only by (B2), 4 without a hard pair modulo gamma_3).",
+    "On the single-edge gadget at the diagonal: vertex equations vanishing for the stated (K)-only or (V3)-only example, or not vanishing for the stated (B2)-only example."
+  ],
+  "lineage": {
+    "home_scope": "COPRIME-PAIRS-20261027-001",
+    "epic_path": [
+      "COPRIME-PAIRS-20261027-001"
+    ],
+    "parents": [
+      "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/manifest.json",
+      "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/manifest.json",
+      "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/result.json",
+      "experiments/COPRIME-PAIRS-20261027-001D/COPRIME-PAIRS-20261027-001D-E001_interacting_pairs_on_zero_jump_gadgets/contract.json",
+      "experiments/COPRIME-PAIRS-20261027-001D/COPRIME-PAIRS-20261027-001D-E002_interacting_pairs_on_the_solution_variety/contract.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/manifest.json": "3b72223b23bb7afa7a0964c0084ea11fb0221980179630f38155a9c0b74dbe5c",
+    "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/manifest.json": "5d9e75fe20cda04e86d2a953fca9b4b567187c6cc8d7246facec59f2d2603c67",
+    "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/result.json": "54b14a855eaa165a54e790aef5a6bd91073e8eef7677209f203fd6e59d806c2f",
+    "experiments/COPRIME-PAIRS-20261027-001D/COPRIME-PAIRS-20261027-001D-E001_interacting_pairs_on_zero_jump_gadgets/contract.json": "efa11e576e9dbff9f0df77be9fb68cbe95b45a63209ff1f4314bc4febe450137",
+    "experiments/COPRIME-PAIRS-20261027-001D/COPRIME-PAIRS-20261027-001D-E002_interacting_pairs_on_the_solution_variety/contract.json": "a76f9a4d45d07e102286feefe8ab9b38646754e6280b9b9c795744a019e54316"
+  },
+  "paths": {
+    "manifest": "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json",
+    "identity": "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/identity.json",
+    "directory": "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard",
+    "proof": "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/proof.md",
+    "result": "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/result.json",
+    "check": "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "coprime_clean_edge_hardness_shown": false
+  },
+  "foundation_claim_scope": "p >= 5, r | p - 1, graded nilpotent Lie algebras of class at most 4 with a grading-preserving C_r action; manifolds S^3_(d/p)(K). Cited: the triple-construction lemmas (COPRIME-PAIRS-20261027-001A), the reductions (COPRIME-PAIRS-20261027-001C), Lemma I, Bulatov-Grohe via Cai-Chen-Lu. Not covered: interacting pair failures without a clean edge (126 of 850 census algebras), class at least 5, non-graded algebras, p = 2, 3. r counts the characters of the action, not Boolean variables. No P versus NP claim.",
+  "validation": {
+    "status": "checked: the cabled commutator braid fixes the remaining strands when a bundle is deleted (free group, d = 2..6); zero-jump blocks carry exact base and reading values under random pinned lifts on amphichiral and cable summands; 50 of the 176 interacting census algebras have a clean edge (Theorem 4) and 5 more under the character-0 refinement (Theorem 5), with (V3) including the leaves' determined layer-2 parts; the open algebras by minimal failing sets; for free class 3 on (1,1) at d = 5 the full 121 x 121 edge matrix has F(s,s) = F_max, F(0,D) < F_max for D != 0 and rank F F^T = 121; diagonal vertex equations nonzero for a (K)-only and a (V3)-only algebra, zero for the first Theorem 5 algebra, which also passes the diagonal, deficit and on-variety path tests; frozen experiment COPRIME-PAIRS-20261027-001D-E001 refuted by an off-variety locality rule, successor E002 supported on five algebras with three controls; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-27."
+  }
+}

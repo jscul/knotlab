@@ -1,0 +1,895 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SEYMOUR-COUNT-20261030-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 13,
+    "mismatched": {}
+   }
+  },
+  "1 Berman on planar braces: |det| = Tutte matchings = direct count at every line; restricted rows give the leaning splits": {
+   "ok": true,
+   "detail": {
+    "4-prism": {
+     "lines": 4,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       2,
+       2,
+       2
+      ]
+     ],
+     "square faces x labellings": 12,
+     "leaning splits": {
+      "(1, 1)": 12
+     }
+    },
+    "6-prism": {
+     "lines": 6,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       3,
+       3,
+       3
+      ]
+     ],
+     "square faces x labellings": 12,
+     "leaning splits": {
+      "(1, 2)": 6,
+      "(2, 1)": 6
+     }
+    },
+    "8-prism": {
+     "lines": 8,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       4,
+       4,
+       4
+      ]
+     ],
+     "square faces x labellings": 16,
+     "leaning splits": {
+      "(1, 3)": 8,
+      "(3, 1)": 8
+     }
+    },
+    "10-prism": {
+     "lines": 10,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       5,
+       5,
+       5
+      ]
+     ],
+     "square faces x labellings": 20,
+     "leaning splits": {
+      "(1, 4)": 10,
+      "(4, 1)": 10
+     }
+    },
+    "12-prism": {
+     "lines": 12,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       6,
+       6,
+       6
+      ]
+     ],
+     "square faces x labellings": 24,
+     "leaning splits": {
+      "(1, 5)": 12,
+      "(5, 1)": 12
+     }
+    },
+    "truncated octahedron": {
+     "lines": 12,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       16,
+       16,
+       16
+      ]
+     ],
+     "square faces x labellings": 12,
+     "leaning splits": {
+      "(8, 8)": 12
+     }
+    },
+    "Omni(K2,3)": {
+     "lines": 12,
+     "(|det|, Tutte matchings, direct amplitude) over all lines": [
+      [
+       12,
+       12,
+       12
+      ]
+     ],
+     "square faces x labellings": 18,
+     "leaning splits": {
+      "(4, 8)": 9,
+      "(8, 4)": 9
+     }
+    }
+   }
+  },
+  "2 weighted rows: |det| = the weighted permanent; every coefficient of the determinant in the weights has one sign": {
+   "ok": true,
+   "detail": {
+    "random weights": {
+     "truncated octahedron": {
+      "child squares": 1,
+      "restricted weighted determinants equal to weighted permanents": "8/8"
+     },
+     "10-prism": {
+      "child squares": 2,
+      "restricted weighted determinants equal to weighted permanents": "8/8"
+     },
+     "12-prism": {
+      "child squares": 2,
+      "restricted weighted determinants equal to weighted permanents": "8/8"
+     }
+    },
+    "symbolic": {
+     "truncated octahedron, lean F0": "-4*a0 - 4*b0",
+     "truncated octahedron, lean F2": "-4*a0 - 4*b0",
+     "10-prism, lean F0": "2*a0*a1 + a0*b1 + a1*b0",
+     "10-prism, lean F2": "a0*a1",
+     "12-prism, lean F0": "-3*a0*a1 - a0*b1 - a1*b0",
+     "12-prism, lean F2": "-a0*a1"
+    }
+   }
+  },
+  "3 the trisum tree: planar brace leaves, disjoint trisectors on no 4-cycle, faces of their leaves, a tree": {
+   "ok": true,
+   "detail": {
+    "leaves per brace": {
+     "3": 44,
+     "5": 14,
+     "7": 9
+    },
+    "all trisectors (braces up to 48 vertices)": {
+     "trisum (2, 2, 2) 000": {
+      "vertices": 16,
+      "trisectors": 1
+     },
+     "trisum (3, 3, 3) 001": {
+      "vertices": 28,
+      "trisectors": 1
+     },
+     "nested (2, 2, 2) 000 | (2, 2)": {
+      "vertices": 24,
+      "trisectors": 2
+     },
+     "nested (2, 2, 2) 000 | (2, 3)": {
+      "vertices": 28,
+      "trisectors": 2
+     },
+     "star 0": {
+      "vertices": 48,
+      "trisectors": 3
+     }
+    }
+   }
+  },
+  "4 brace amplitudes: the tree (any root square, either colour class as lines) equals the direct count": {
+   "ok": true,
+   "detail": {
+    "braces": 67,
+    "amplitudes": {
+     "trisum (2, 2, 2) 000": {
+      "vertices": 16,
+      "planar pieces": 3,
+      "tree": 6,
+      "direct": [
+       6
+      ]
+     },
+     "trisum (2, 2, 2) 001": {
+      "vertices": 16,
+      "planar pieces": 3,
+      "tree": 6,
+      "direct": [
+       6
+      ]
+     },
+     "trisum (2, 2, 2) 010": {
+      "vertices": 16,
+      "planar pieces": 3,
+      "tree": 6,
+      "direct": [
+       6
+      ]
+     },
+     "trisum (2, 2, 2) 011": {
+      "vertices": 16,
+      "planar pieces": 3,
+      "tree": 6,
+      "direct": [
+       6
+      ]
+     },
+     "trisum (2, 2, 3) 000": {
+      "vertices": 20,
+      "planar pieces": 3,
+      "tree": 9,
+      "direct": [
+       9
+      ]
+     },
+     "trisum (2, 2, 3) 001": {
+      "vertices": 20,
+      "planar pieces": 3,
+      "tree": 9,
+      "direct": [
+       9
+      ]
+     },
+     "trisum (2, 2, 3) 010": {
+      "vertices": 20,
+      "planar pieces": 3,
+      "tree": 9,
+      "direct": [
+       9
+      ]
+     },
+     "trisum (2, 2, 3) 011": {
+      "vertices": 20,
+      "planar pieces": 3,
+      "tree": 9,
+      "direct": [
+       9
+      ]
+     },
+     "trisum (2, 3, 3) 000": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 13,
+      "direct": [
+       13
+      ]
+     },
+     "trisum (2, 3, 3) 001": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 14,
+      "direct": [
+       14
+      ]
+     },
+     "trisum (2, 3, 3) 010": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 14,
+      "direct": [
+       14
+      ]
+     },
+     "trisum (2, 3, 3) 011": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 13,
+      "direct": [
+       13
+      ]
+     },
+     "trisum (3, 3, 3) 000": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 18,
+      "direct": [
+       18
+      ]
+     },
+     "trisum (3, 3, 3) 001": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 21,
+      "direct": [
+       21
+      ]
+     },
+     "trisum (3, 3, 3) 010": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 21,
+      "direct": [
+       21
+      ]
+     },
+     "trisum (3, 3, 3) 011": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 21,
+      "direct": [
+       21
+      ]
+     },
+     "trisum (2, 2, 4) 000": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 12,
+      "direct": [
+       12
+      ]
+     },
+     "trisum (2, 2, 4) 001": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 12,
+      "direct": [
+       12
+      ]
+     },
+     "trisum (2, 2, 4) 010": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 12,
+      "direct": [
+       12
+      ]
+     },
+     "trisum (2, 2, 4) 011": {
+      "vertices": 24,
+      "planar pieces": 3,
+      "tree": 12,
+      "direct": [
+       12
+      ]
+     },
+     "trisum (2, 3, 4) 000": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 17,
+      "direct": [
+       17
+      ]
+     },
+     "trisum (2, 3, 4) 001": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 19,
+      "direct": [
+       19
+      ]
+     },
+     "trisum (2, 3, 4) 010": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 19,
+      "direct": [
+       19
+      ]
+     },
+     "trisum (2, 3, 4) 011": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 17,
+      "direct": [
+       17
+      ]
+     },
+     "trisum (3, 3, 4) 000": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 23,
+      "direct": [
+       23
+      ]
+     },
+     "trisum (3, 3, 4) 001": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 29,
+      "direct": [
+       29
+      ]
+     },
+     "trisum (3, 3, 4) 010": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 28,
+      "direct": [
+       28
+      ]
+     },
+     "trisum (3, 3, 4) 011": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 28,
+      "direct": [
+       28
+      ]
+     },
+     "trisum (2, 4, 4) 000": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 22,
+      "direct": [
+       22
+      ]
+     },
+     "trisum (2, 4, 4) 001": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 26,
+      "direct": [
+       26
+      ]
+     },
+     "trisum (2, 4, 4) 010": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 26,
+      "direct": [
+       26
+      ]
+     },
+     "trisum (2, 4, 4) 011": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 22,
+      "direct": [
+       22
+      ]
+     },
+     "trisum (4, 4, 4) 000": {
+      "vertices": 40,
+      "planar pieces": 3,
+      "tree": 36,
+      "direct": [
+       36
+      ]
+     },
+     "trisum (4, 4, 4) 001": {
+      "vertices": 40,
+      "planar pieces": 3,
+      "tree": 52,
+      "direct": [
+       52
+      ]
+     },
+     "trisum (4, 4, 4) 010": {
+      "vertices": 40,
+      "planar pieces": 3,
+      "tree": 52,
+      "direct": [
+       52
+      ]
+     },
+     "trisum (4, 4, 4) 011": {
+      "vertices": 40,
+      "planar pieces": 3,
+      "tree": 52,
+      "direct": [
+       52
+      ]
+     },
+     "trisum (2, 2, 5) 000": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 15,
+      "direct": [
+       15
+      ]
+     },
+     "trisum (2, 2, 5) 001": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 15,
+      "direct": [
+       15
+      ]
+     },
+     "trisum (2, 2, 5) 010": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 15,
+      "direct": [
+       15
+      ]
+     },
+     "trisum (2, 2, 5) 011": {
+      "vertices": 28,
+      "planar pieces": 3,
+      "tree": 15,
+      "direct": [
+       15
+      ]
+     },
+     "trisum (2, 3, 5) 000": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 21,
+      "direct": [
+       21
+      ]
+     },
+     "trisum (2, 3, 5) 001": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 24,
+      "direct": [
+       24
+      ]
+     },
+     "trisum (2, 3, 5) 010": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 24,
+      "direct": [
+       24
+      ]
+     },
+     "trisum (2, 3, 5) 011": {
+      "vertices": 32,
+      "planar pieces": 3,
+      "tree": 21,
+      "direct": [
+       21
+      ]
+     },
+     "nested (2, 2, 2) 000 | (2, 2)": {
+      "vertices": 24,
+      "planar pieces": 5,
+      "tree": 18,
+      "direct": [
+       18
+      ]
+     },
+     "nested (2, 2, 2) 000 | (2, 3)": {
+      "vertices": 28,
+      "planar pieces": 5,
+      "tree": 27,
+      "direct": [
+       27
+      ]
+     },
+     "nested (3, 3, 2) 000 | (2, 2)": {
+      "vertices": 32,
+      "planar pieces": 5,
+      "tree": 39,
+      "direct": [
+       39
+      ]
+     },
+     "nested (3, 3, 2) 000 | (2, 3)": {
+      "vertices": 36,
+      "planar pieces": 5,
+      "tree": 61,
+      "direct": [
+       61
+      ]
+     },
+     "nested (3, 3, 3) 001 | (2, 2)": {
+      "vertices": 36,
+      "planar pieces": 5,
+      "tree": 63,
+      "direct": [
+       63
+      ]
+     },
+     "nested (3, 3, 3) 001 | (2, 3)": {
+      "vertices": 40,
+      "planar pieces": 5,
+      "tree": 98,
+      "direct": [
+       98
+      ]
+     },
+     "nested (2, 3, 3) 010 | (2, 2)": {
+      "vertices": 32,
+      "planar pieces": 5,
+      "tree": 42,
+      "direct": [
+       42
+      ]
+     },
+     "nested (2, 3, 3) 010 | (2, 3)": {
+      "vertices": 36,
+      "planar pieces": 5,
+      "tree": 63,
+      "direct": [
+       63
+      ]
+     },
+     "nested (3, 2, 3) 100 | (2, 2)": {
+      "vertices": 32,
+      "planar pieces": 5,
+      "tree": 42,
+      "direct": [
+       42
+      ]
+     },
+     "nested (3, 2, 3) 100 | (2, 3)": {
+      "vertices": 36,
+      "planar pieces": 5,
+      "tree": 65,
+      "direct": [
+       65
+      ]
+     },
+     "nested (4, 3, 2) 010 | (2, 2)": {
+      "vertices": 36,
+      "planar pieces": 5,
+      "tree": 57,
+      "direct": [
+       57
+      ]
+     },
+     "nested (4, 3, 2) 010 | (2, 3)": {
+      "vertices": 40,
+      "planar pieces": 5,
+      "tree": 90,
+      "direct": [
+       90
+      ]
+     },
+     "nested (4, 4, 3) 101 | (2, 2)": {
+      "vertices": 44,
+      "planar pieces": 5,
+      "tree": 117,
+      "direct": [
+       117
+      ]
+     },
+     "nested (4, 4, 3) 101 | (2, 3)": {
+      "vertices": 48,
+      "planar pieces": 5,
+      "tree": 185,
+      "direct": [
+       185
+      ]
+     },
+     "depth-3 chain 0": {
+      "vertices": 64,
+      "planar pieces": 7,
+      "tree": 1040,
+      "direct": [
+       1040
+      ]
+     },
+     "depth-3 chain 1": {
+      "vertices": 72,
+      "planar pieces": 7,
+      "tree": 2145,
+      "direct": [
+       2145
+      ]
+     },
+     "depth-3 chain 2": {
+      "vertices": 56,
+      "planar pieces": 7,
+      "tree": 471,
+      "direct": [
+       471
+      ]
+     },
+     "depth-3 chain 3": {
+      "vertices": 72,
+      "planar pieces": 7,
+      "tree": 2262,
+      "direct": [
+       2262
+      ]
+     },
+     "depth-3 chain 4": {
+      "vertices": 60,
+      "planar pieces": 7,
+      "tree": 959,
+      "direct": [
+       959
+      ]
+     },
+     "depth-3 chain 5": {
+      "vertices": 80,
+      "planar pieces": 7,
+      "tree": 3757,
+      "direct": [
+       3757
+      ]
+     },
+     "star 0": {
+      "vertices": 48,
+      "planar pieces": 7,
+      "tree": 270,
+      "direct": [
+       270
+      ]
+     },
+     "star 1": {
+      "vertices": 48,
+      "planar pieces": 7,
+      "tree": 243,
+      "direct": [
+       243
+      ]
+     },
+     "star 2": {
+      "vertices": 48,
+      "planar pieces": 7,
+      "tree": 243,
+      "direct": [
+       243
+      ]
+     }
+    }
+   }
+  },
+  "5 the pipeline on three-fold spaces: product over braces (trees for non-planar ones) = direct count": {
+   "ok": true,
+   "detail": {
+    "tripod core (22)": {
+     "points": 22,
+     "braces": {
+      "heawood": 3,
+      "doubled square": 3
+     },
+     "pipeline": 125,
+     "direct": [
+      125
+     ],
+     "colourable": false
+    },
+    "twisted cube (43)": {
+     "points": 43,
+     "braces": {
+      "heawood": 6,
+      "doubled square": 3,
+      "planar": 1
+     },
+     "pipeline": 31250,
+     "direct": [
+      31250
+     ],
+     "colourable": false
+    },
+    "hexagonal prism glue": {
+     "points": 45,
+     "braces": {
+      "heawood": 6,
+      "doubled square": 3,
+      "planar": 1
+     },
+     "pipeline": 46875,
+     "direct": [
+      46875
+     ],
+     "colourable": false
+    },
+    "truncated octahedron glue": {
+     "points": 90,
+     "braces": {
+      "heawood": 12,
+      "doubled square": 6,
+      "planar": 1
+     },
+     "pipeline": 3906250000,
+     "direct": [
+      3906250000
+     ],
+     "colourable": false
+    },
+    "trisum of three cubes glue": {
+     "points": 35,
+     "braces": {
+      "heawood": 4,
+      "doubled square": 3,
+      "trisum tree (3 planar pieces)": 1
+     },
+     "pipeline": 3750,
+     "direct": [
+      3750
+     ],
+     "colourable": false
+    },
+    "trisum (2, 3, 3) 001 glue": {
+     "points": 103,
+     "braces": {
+      "heawood": 14,
+      "doubled square": 7,
+      "trisum tree (3 planar pieces)": 1
+     },
+     "pipeline": 85449218750,
+     "direct": [
+      85449218750
+     ],
+     "colourable": false
+    },
+    "nested (2, 2, 2) 000 | (2, 3) glue": {
+     "points": 118,
+     "braces": {
+      "heawood": 16,
+      "doubled square": 8,
+      "trisum tree (5 planar pieces)": 1
+     },
+     "pipeline": 4119873046875,
+     "direct": [
+      4119873046875
+     ],
+     "colourable": false
+    }
+   }
+  },
+  "6 scale: exact against direct counts to 480 vertices; omnitruncated grids to 1720 vertices": {
+   "ok": true,
+   "detail": {
+    "against direct counts": {
+     "Omni(dodecahedron) x 3": {
+      "vertices": 352,
+      "planar pieces": 3,
+      "tree": 106962246696960000000,
+      "seconds": 0.05,
+      "glued Kasteleyn signing colourable": false,
+      "direct": [
+       106962246696960000000
+      ]
+     },
+     "Omni(icosahedron), Omni(cube), Omni(octahedron)": {
+      "vertices": 208,
+      "planar pieces": 3,
+      "tree": 578617344000,
+      "seconds": 0.03,
+      "glued Kasteleyn signing colourable": false,
+      "direct": [
+       578617344000
+      ]
+     },
+     "depth-3 chain of omnitruncations": {
+      "vertices": 480,
+      "planar pieces": 7,
+      "tree": 2359006864517902211481600000,
+      "seconds": 0.08,
+      "glued Kasteleyn signing colourable": false,
+      "direct": [
+       2359006864517902211481600000
+      ]
+     }
+    },
+    "beyond elimination": {
+     "Omni(5x5 grid) x 3": {
+      "vertices": 472,
+      "amplitude digits": 27,
+      "seconds": 0.1,
+      "transposed agrees": true,
+      "each piece's alpha + beta = spanning trees of the grid": true,
+      "elimination width": 17
+     },
+     "Omni(7x7 grid) x 3": {
+      "vertices": 1000,
+      "amplitude digits": 58,
+      "seconds": 0.6,
+      "transposed agrees": true,
+      "each piece's alpha + beta = spanning trees of the grid": true,
+      "elimination width": 24
+     },
+     "Omni(9x9 grid) x 3": {
+      "vertices": 1720,
+      "amplitude digits": 102,
+      "seconds": 2.6,
+      "transposed agrees": true,
+      "each piece's alpha + beta = spanning trees of the grid": true,
+      "elimination width": 30
+     }
+    }
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "the unswapped weights on c1's row give a wrong amplitude on some nested braces": true,
+    "dropping the children's weights (all weights 1) gives a wrong amplitude": true,
+    "reading one asymmetric piece's split from the wrong side breaks the law": true,
+    "K3,3 (non-planar, no square trisector) is refused by the tree": true,
+    "the Heawood graph (non-planar, no square trisector) is refused by the tree": true
+   }
+  },
+  "ok": true,
+  "seconds": 50.1
+ }
+}

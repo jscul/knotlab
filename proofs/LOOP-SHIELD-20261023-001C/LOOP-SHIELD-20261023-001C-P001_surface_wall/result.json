@@ -1,0 +1,93 @@
+{
+  "artifact_id": "LOOP-SHIELD-20261023-001C-P001",
+  "checks": {
+    "L(2, 2, 2, 2) twist 0010 class (0, -1, 0, 0)": {
+      "PD(c) realized": 96,
+      "examined": 96,
+      "image in the partner line event": 96,
+      "involution returns": 96,
+      "lemma holds": 96,
+      "seams carry only 0 and PD(c)": 96
+    },
+    "L(2, 2, 2, 2) twist 1000 class (0, 0, 0, 1)": {
+      "PD(c) realized": 94,
+      "examined": 94,
+      "image in the partner line event": 94,
+      "involution returns": 94,
+      "lemma holds": 94,
+      "seams carry only 0 and PD(c)": 94
+    },
+    "L(3, 1, 2, 2) twist 0101 class (0, 0, 1, 0)": {
+      "PD(c) realized": 235,
+      "examined": 235,
+      "image in the partner line event": 235,
+      "involution returns": 235,
+      "lemma holds": 235,
+      "seams carry only 0 and PD(c)": 235
+    },
+    "cubic 5x5x5, loops along x within a 2 x 2 tube": {
+      "loops": 200,
+      "only the zero seam class": 200
+    },
+    "surface L(3,2,2,2), random vertex sets": {
+      "seam classes among duals of G[P]'s classes (diagonals ignored)": 196,
+      "seam classes among duals of the open star's classes": 300,
+      "sets": 300
+    }
+  },
+  "claim": "On every closed orientable surface with a cellularly embedded graph, for every primitive class c and twist q odd on c, an explicit involution maps the orientations whose twisted strong components wind along c and nothing else in twist q onto those in twist q + PD(c), keeping every directed cycle up to a relabelling of sheets; so the two line probabilities are equal under fair orientations. The seams next to a vertex set P (mod-2 cocycles on the edges with one end in P) carry exactly the duals of the classes of curves in the open star of P minus the graph on P; for square tilings that open star retracts onto the graph on P plus a diagonal across each square with exactly two opposite corners in P, so next to a lone odd loop with no such square a seam carries only 0 or PD(c). In three dimensions the same duality involves closed surfaces, and a set whose open star lies in a solid torus carries no seam class. An earlier statement of the seam lemma with the graph on P in place of the open star was false and is corrected.",
+  "controls": {
+    "bits flipped on the wrong wall edges change the cyclic arcs": 425,
+    "diagonal squares matter": 104,
+    "full slice supports a nonzero seam class": 1,
+    "two disjoint loops of classes h2 and v2 support two independent seam classes": 1
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "LOOP-SHIELD-20261023-001C-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "seam_duality_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "specificity_of_shielding_proved": false,
+    "surface_wall_theorem_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "LOOP-SHIELD-20261023-001C"
+}

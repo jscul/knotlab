@@ -1,0 +1,515 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SURFACES-20261030-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 8,
+    "mismatched": {}
+   }
+  },
+  "1 every space up to 22 points (8 untwisted, 24 twisted classes): genus = sum of the braces' genera": {
+   "ok": true,
+   "detail": {
+    "untwisted": {
+     "classes": 8,
+     "genus = sum of the braces' genera": true,
+     "genus = number of Heawood braces": true,
+     "(name, Heawood braces, sum of brace genera, genus[, braces when non-planar glue])": [
+      [
+       "Fano (7)",
+       1,
+       1,
+       1
+      ],
+      [
+       "13-point class 0",
+       2,
+       2,
+       2
+      ],
+      [
+       "19-point class 0",
+       3,
+       3,
+       3
+      ],
+      [
+       "19-point class 1",
+       3,
+       3,
+       3
+      ],
+      [
+       "19-point class 2",
+       3,
+       3,
+       3
+      ],
+      [
+       "19-point class 3",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 0",
+       3,
+       3,
+       3
+      ],
+      [
+       "22-point class 0",
+       3,
+       3,
+       3
+      ]
+     ]
+    },
+    "twisted": {
+     "classes": 24,
+     "genus = sum of the braces' genera": true,
+     "genus = number of Heawood braces": false,
+     "(name, Heawood braces, sum of brace genera, genus[, braces when non-planar glue])": [
+      [
+       "14-point class 0",
+       2,
+       2,
+       2
+      ],
+      [
+       "15-point class 0",
+       2,
+       2,
+       2
+      ],
+      [
+       "18-point class 0",
+       2,
+       2,
+       2
+      ],
+      [
+       "20-point class 0",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 1",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 2",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 3",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 4",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 5",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 6",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 7",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 8",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 9",
+       3,
+       3,
+       3
+      ],
+      [
+       "20-point class 10",
+       2,
+       2,
+       2
+      ],
+      [
+       "21-point class 0",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 1",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 2",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 3",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 4",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 5",
+       3,
+       3,
+       3
+      ],
+      [
+       "21-point class 6",
+       3,
+       3,
+       3
+      ],
+      [
+       "22-point class 0",
+       3,
+       3,
+       3
+      ],
+      [
+       "22-point class 1",
+       3,
+       3,
+       3
+      ],
+      [
+       "22-point class 2",
+       2,
+       3,
+       3,
+       {
+        "other": 1,
+        "heawood": 2,
+        "doubled square": 2
+       }
+      ]
+     ]
+    }
+   }
+  },
+  "2 larger spaces: genus = number of Heawood braces (+1 for the trisum glue)": {
+   "ok": true,
+   "detail": {
+    "Fano composition of 4 planes (25)": {
+     "vertices": 50,
+     "braces": {
+      "heawood": 4
+     },
+     "genus": 4,
+     "predicted": 4,
+     "seconds": 0.6
+    },
+    "Fano composition of 5 planes (31)": {
+     "vertices": 62,
+     "braces": {
+      "heawood": 5
+     },
+     "genus": 5,
+     "predicted": 5,
+     "seconds": 1.5
+    },
+    "5-cycle of Fano blocks (35)": {
+     "vertices": 70,
+     "braces": {
+      "heawood": 5,
+      "doubled square": 4
+     },
+     "genus": 5,
+     "predicted": 5,
+     "seconds": 2.5
+    },
+    "7-cycle of Fano blocks (49)": {
+     "vertices": 98,
+     "braces": {
+      "heawood": 7,
+      "doubled square": 6
+     },
+     "genus": 7,
+     "predicted": 7,
+     "seconds": 5.9
+    },
+    "twisted cube (43)": {
+     "vertices": 86,
+     "braces": {
+      "heawood": 6,
+      "doubled square": 3,
+      "planar": 1
+     },
+     "genus": 6,
+     "predicted": 6,
+     "seconds": 12.4
+    },
+    "hexagonal prism as glue (45)": {
+     "vertices": 90,
+     "braces": {
+      "heawood": 6,
+      "doubled square": 3,
+      "planar": 1
+     },
+     "genus": 6,
+     "predicted": 6,
+     "seconds": 5.2
+    },
+    "truncated octahedron as glue (90)": {
+     "vertices": 180,
+     "braces": {
+      "heawood": 12,
+      "doubled square": 6,
+      "planar": 1
+     },
+     "genus": 12,
+     "predicted": 12,
+     "seconds": 230.7
+    },
+    "trisum of three cubes as glue (35)": {
+     "vertices": 70,
+     "braces": {
+      "heawood": 4,
+      "doubled square": 3,
+      "other": 1
+     },
+     "genus": 5,
+     "predicted": 5,
+     "seconds": 2.7
+    }
+   }
+  },
+  "3 minimal maps up to 19 points: 16, 128, 1024 rotation systems, all standard connected sums": {
+   "ok": true,
+   "detail": {
+    "Fano (7)": {
+     "atoms": 1,
+     "tight cuts": 0,
+     "minimum-genus rotation systems": 16,
+     "predicted": 16,
+     "standard at every cut": 16,
+     "automorphisms": 336,
+     "orbits": 1,
+     "orbit sizes": [
+      16
+     ],
+     "face profiles": {
+      "(6, 6, 6, 6, 6, 6, 6)": 16
+     }
+    },
+    "13-point class 0": {
+     "atoms": 2,
+     "tight cuts": 1,
+     "minimum-genus rotation systems": 128,
+     "predicted": 128,
+     "standard at every cut": 128,
+     "automorphisms": 192,
+     "orbits": 2,
+     "orbit sizes": [
+      64,
+      64
+     ],
+     "face profiles": {
+      "(6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10)": 128
+     }
+    },
+    "19-point class 0": {
+     "atoms": 3,
+     "tight cuts": 2,
+     "minimum-genus rotation systems": 1024,
+     "predicted": 1024,
+     "standard at every cut": 1024,
+     "automorphisms": 128,
+     "orbits": 4,
+     "orbit sizes": [
+      256,
+      256,
+      256,
+      256
+     ],
+     "face profiles": {
+      "(6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10, 14)": 1024
+     }
+    },
+    "19-point class 1": {
+     "atoms": 3,
+     "tight cuts": 2,
+     "minimum-genus rotation systems": 1024,
+     "predicted": 1024,
+     "standard at every cut": 1024,
+     "automorphisms": 256,
+     "orbits": 3,
+     "orbit sizes": [
+      256,
+      256,
+      512
+     ],
+     "face profiles": {
+      "(6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 14, 14)": 1024
+     }
+    },
+    "19-point class 2": {
+     "atoms": 3,
+     "tight cuts": 2,
+     "minimum-genus rotation systems": 1024,
+     "predicted": 1024,
+     "standard at every cut": 1024,
+     "automorphisms": 192,
+     "orbits": 6,
+     "orbit sizes": [
+      64,
+      64,
+      128,
+      192,
+      192,
+      384
+     ],
+     "face profiles": {
+      "(6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10, 14)": 768,
+      "(6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10, 10, 10)": 256
+     }
+    },
+    "19-point class 3": {
+     "atoms": 3,
+     "tight cuts": 2,
+     "minimum-genus rotation systems": 1024,
+     "predicted": 1024,
+     "standard at every cut": 1024,
+     "automorphisms": 128,
+     "orbits": 4,
+     "orbit sizes": [
+      256,
+      256,
+      256,
+      256
+     ],
+     "face profiles": {
+      "(6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10, 14)": 1024
+     }
+    },
+    "predicted by ticket A, not enumerated: 21 points 16^3 4^2 / 2^4 = 4096; 22 points 16^3 4^3 / 2^5 = 8192": true
+   }
+  },
+  "4 additivity holds when one side keeps its genus under vertex deletion, and fails for K3,3 with K3,3": {
+   "ok": true,
+   "detail": {
+    "trisum of three cubes": {
+     "genus": 1,
+     "genus minus the splice vertex": 1
+    },
+    "Petersen": {
+     "genus": 1,
+     "genus minus the splice vertex": 1
+    },
+    "K3,3": {
+     "genus": 1,
+     "genus minus the splice vertex": 0
+    },
+    "trisum + cube": {
+     "genera": [
+      1,
+      0
+     ],
+     "splices": [
+      1,
+      1
+     ]
+    },
+    "trisum + Heawood": {
+     "genera": [
+      1,
+      1
+     ],
+     "splices": [
+      2,
+      2
+     ]
+    },
+    "trisum + K3,3": {
+     "genera": [
+      1,
+      1
+     ],
+     "splices": [
+      2,
+      2
+     ]
+    },
+    "Petersen + Petersen": {
+     "genera": [
+      1,
+      1
+     ],
+     "splices": [
+      2,
+      2
+     ]
+    },
+    "K3,3 + Petersen": {
+     "genera": [
+      1,
+      1
+     ],
+     "splices": [
+      2,
+      2
+     ]
+    },
+    "K3,3 + K3,3": {
+     "genera": [
+      1,
+      1
+     ],
+     "splices": [
+      1,
+      1
+     ]
+    }
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "the SAT bound one below the genus is unsatisfiable (13-point space, genus 1 excluded)": true,
+    "a random rotation system of the 19-point composition has genus above 3": true,
+    "the cube (planar) has genus 0 and the Heawood graph 1": true
+   }
+  },
+  "ok": true,
+  "seconds": 621.2
+ }
+}

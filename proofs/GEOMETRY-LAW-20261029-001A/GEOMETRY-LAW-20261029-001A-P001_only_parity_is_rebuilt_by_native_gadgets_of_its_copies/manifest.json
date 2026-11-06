@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GEOMETRY-LAW-20261029-001A-P001",
+  "canonical_id": "GEOMETRY-LAW-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "GEOMETRY-LAW-20261029-001A",
+  "proof": "GEOMETRY-LAW-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Only parity is rebuilt by native gadgets of its own copies (three places)",
+  "status": "Proved",
+  "claim": "Knots on three bits are the 34 relations in which every two coordinates are unconstrained, other than the full cube. A native gadget is a connected loopless network of m >= 2 copies of one knot, each placed in any coordinate order, with variables identified in pairs between distinct copies and three legs; its relation is the projection onto the legs. Theorem 1: for the two parity knots every native gadget gives back the knot. Theorem 3: for every other knot K every native gadget excludes strictly fewer leg tuples than K: none if K has no wire face (the 8 atoms and the 4 knots of not-all-equal type), at most one if K excludes two tuples, at most two if it excludes three, and at most one unless a copy carries two legs. Corollary 4: no non-parity knot is rebuilt, and repeated substitution of a knot by a native gadget of its copies reaches the full relation within three levels. Proposition 5: no three-bit knot has its coordinate symmetry group inside the rotations of a cyclic order, so placements never orient a vertex; among four-bit knots some do.",
+  "dependencies": [
+    "NATIVE-HARDNESS-20261024-001B",
+    "SURFACE-GLUING-20261024-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A connected loopless native gadget of copies of a non-parity three-bit knot whose leg relation excludes at least as many tuples as the knot, or more than the stated bound for its type.",
+    "A native gadget of a parity knot whose leg relation is not that parity knot.",
+    "A three-bit knot whose coordinate symmetry group lies inside the rotations of a cyclic order.",
+    "An excluded leg tuple whose pinned network is not a cactus of odd wire cycles with a leg beyond every bridge."
+  ],
+  "lineage": {
+    "home_scope": "GEOMETRY-LAW-20261029-001",
+    "epic_path": [
+      "GEOMETRY-LAW-20261029-001"
+    ],
+    "parents": [
+      "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/manifest.json",
+      "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/result.json",
+      "proofs/NATIVE-HARDNESS-20261024-001B/NATIVE-HARDNESS-20261024-001B-P001_only_parity_is_hard/manifest.json",
+      "proofs/NATIVE-HARDNESS-20261024-001B/NATIVE-HARDNESS-20261024-001B-P001_only_parity_is_hard/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/manifest.json": "e247a48f8dc549ac55cff789ebb9f518efecc10ee2bff5782f6e3848ecd5b05a",
+    "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/result.json": "e947a75df34207261335950a4ee741095de4c0e2eb0f8f09a4fc8bb4de827384",
+    "proofs/NATIVE-HARDNESS-20261024-001B/NATIVE-HARDNESS-20261024-001B-P001_only_parity_is_hard/manifest.json": "3e5111ae5ba6b224dc73946460ca3fd14dc3699410924088aad299e4b513044f",
+    "proofs/NATIVE-HARDNESS-20261024-001B/NATIVE-HARDNESS-20261024-001B-P001_only_parity_is_hard/result.json": "5de7edf034d38f1eb855dad8cbb23f8eebf2e170866e5606ac411019f09b0854"
+  },
+  "paths": {
+    "manifest": "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json",
+    "identity": "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/identity.json",
+    "directory": "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies",
+    "proof": "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/proof.md",
+    "result": "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json",
+    "check": "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_patterns_of_patterns_three_places_only_parity_shown": false
+  },
+  "foundation_claim_scope": "Set-level relations (allowed tuples, not counts) on three bits that pass K1-K3 (the 34 knots); native gadgets are connected, loopless, with every internal variable in exactly two copies of one knot; the orientation statement compares coordinate symmetry groups with rotation groups of cyclic orders. Exhaustive checks cover gadgets of three and five copies; the theorems are proved for every size.",
+  "validation": {
+    "status": "checked: 34 knots and their types; three-bit symmetry groups all contain a transposition (none orients a vertex), 96 of 742 four-bit knots orient one; exhaustive census of native gadgets with 3 and 5 copies (11 shapes, every placement): parity rebuilt by every gadget, no other knot rebuilt, bounds 0/1/2 hold and are attained, flow strictly decreasing with longest chain 3; the cactus and odd-wire-cycle structure verified for all 798 excluded leg tuples; 6120 random evaluations with 7, 9 and 11 copies; controls fire (self-gluing rebuilds non-parity knots, all-equal is rebuilt, a mutated bound fails). The theorems are proved in prose for every gadget size from NATIVE-HARDNESS-20261024-001B Lemma 1 and Corollary 3; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

@@ -1,0 +1,48 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LOOP-HUB-20261025-001A-E001",
+ "ticket": "LOOP-HUB-20261025-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "SOFT-HUB-20261024-001C-P001 proves the arm inequality for tree gadgets of the open knots and leaves gadgets with cycles open. Scoping before this contract, disclosed: annealing for the ratio of the two sides at sizes 4 to 20 (24 seeds each, 8,000 moves) never exceeded 1 and reached exactly 1 in almost every run; chains of double edges of length 1 to 10 stayed at most 1; on 6,483 small axis-terminal cases (4,422 with cycles) linked pairs split by the empty side at the first branching knot never exceeded F(u + e_i)F(u-bar) or F(u)F(u-bar + e_i); the bound per partner solution failed in 77 cases, per image difference pattern in 131 of 42,483, one-sided path-flip matchings into the two target classes in 245 of 11,103, and the minor inequality in 7,881 of 240,000, while the arm inequality never failed. Fresh: annealing at sizes up to 40 with 48 seeds and two generators, chains up to length 12, gadgets with every non-terminal slot paired, and exact counts on 2,000 new small gadgets.",
+ "question": "Does any gadget of an open knot with cycles violate the arm inequality F(u)F(u-bar) <= s_u + F(u + e_i)F(u-bar) + F(u)F(u-bar + e_i), and do linked pairs obey the split bounds by the side empty at the first branching knot?",
+ "public_inputs": {
+  "knot": "the open knot excluding 000, 011 and 101 (the other five are relabellings or complements)",
+  "gadgets": "connected native networks with pins, free legs and three terminals, self-loops and parallel edges allowed, counted exactly",
+  "annealing": "sizes 4, 8, 12, 16, 20, 24, 32 and 40 knots; 48 seeds per size, even seeds with pin probability 0.3 and odd seeds 0.75 in the generator; 20,000 moves; objective the largest over the four axes and three terminals of log(lhs / rhs)",
+  "chains": "chains of double edges: terminal 1's knot joined by two edges to a second knot, which joins by one edge to the next pair, and so on, ending in a knot carrying terminals 2 and 3; lengths 1 to 12; 300 random place orders per length",
+  "cores": "gadgets in which every non-terminal slot lies on an internal edge, with 3, 5, ..., 15 knots; 2,000 random gadgets per size",
+  "pairs": "2,000 random gadgets with 2 to 7 knots and at most 13 unpinned variables, pin probability 0.3 or 0.75 alternately; for every axis with F(u)F(u-bar) at most 3,000 and every terminal i, every pair is classified"
+ },
+ "definitions": "lhs = F(u)F(u-bar); rhs = s_u + F(u + e_i)F(u-bar) + F(u)F(u-bar + e_i), with s_u the split products. A linked pair has one difference component containing all three terminals; its first branching knot on terminal i's difference walk has local tuples c and c-bar; link_A counts linked pairs whose first configuration is empty there, link_B the others.",
+ "predictions": {
+  "P1_no_violation_annealing": "fresh at scale: no annealed gadget has lhs > rhs for any axis and terminal",
+  "P2_no_violation_families": "fresh: no chain or core gadget has lhs > rhs for any axis and terminal",
+  "P3_split_bounds": "fresh at scale: on every small gadget, axis and terminal, link_A <= F(u + e_i)F(u-bar) and link_B <= F(u)F(u-bar + e_i)",
+  "reported": "largest lhs/rhs by part and size; the number of cases with equality; on the small gadgets, how often the bound fails per partner solution, per image difference pattern, and for the minor inequality"
+ },
+ "controls": "(i) annealing restricted to tree gadgets at sizes 8 and 16 (24 seeds) never exceeds lhs/rhs = 1 (SOFT-HUB-20261024-001C-P001); (ii) the annealer reaches lhs/rhs = 1 at sizes 4, 8 and 12; (iii) the planted function [10, 1, 1, 1, 1, 1, 1, 10] is flagged; (iv) on the small gadgets, separated + linked = F(u)F(u-bar) and separated <= s_u",
+ "decision_rule": "If a control fails, the result is invalid. Supported if P1, P2 and P3 all hold. Refuted otherwise, naming the predictions that failed.",
+ "resource_budget": {
+  "wall_seconds": 7200,
+  "memory_mib": 8192,
+  "threads": 24
+ },
+ "stop_rule": "Run controls, then every part once, writing rows as they finish; decide when all parts are in. No adaptive extension.",
+ "seeds": "annealing 1000 * size + seed index; chains 20261028; cores 20261029; pairs 20261030; controls 800000 and up",
+ "environment": "the workspace .venv Python with numpy; pair classification with the standard library",
+ "red_team_r0": [
+  "A search cannot prove the inequality; P1 and P2 holding is evidence, not a theorem.",
+  "The annealer weakens at large sizes, as seen before, so the largest sizes are weak evidence.",
+  "The split bounds are tested only on small gadgets where pairs can be enumerated."
+ ],
+ "nonclaims": [
+  "No proof of the arm inequality for gadgets with cycles.",
+  "No approximation or hardness result."
+ ],
+ "forbidden_inputs": [
+  "Expected ratios as inputs"
+ ],
+ "outputs": "artifacts/LOOP-HUB-20261025-001A/LOOP-HUB-20261025-001A-E001_arm_violations/rows.jsonl, controls.json and result.json"
+}

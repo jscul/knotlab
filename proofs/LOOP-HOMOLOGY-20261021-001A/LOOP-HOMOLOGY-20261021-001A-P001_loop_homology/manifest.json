@@ -1,0 +1,113 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-HOMOLOGY-20261021-001A-P001",
+  "canonical_id": "LOOP-HOMOLOGY-20261021-001A-P001",
+  "kind": "proof",
+  "ticket": "LOOP-HOMOLOGY-20261021-001A",
+  "proof": "LOOP-HOMOLOGY-20261021-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Loop memory and cycle-like composition",
+  "status": "Proved",
+  "claim": "(1) The transfers of a knot link either have a full product, and then rings forget (the excluded share is at most (1 - |M|^-l)^floor(k/l) for a full product of length l), or they permute the blocks of a partition of the witness values into two or more blocks, and then rings keep a lasting record (lim sup of the excluded share at least one over the order of the block group); this is Protasov and Voynov's theorem read for knots, and it extends the ring theorem of KNOT-LOOPS-20261019-001B-P001 from two witness values to any number. (2) For links of two-valued knots, being group-like, keeping a lasting record, having no full product, composing like cycles and being a parity relation coincide. (3) In a law that composes like cycles, for a three-variable knot whose two witnesses share a knot range with top A: modulo the tops the knot is z = phi x + t(y) with one gain phi in the multiplicative group of the finite field D = End_R(A); a network of copies on a graph remembers modulo the tops exactly the twisted first cohomology H1(G; A_phi), of size |A|^(E-V) |H0|; its free sets of edges are the independent sets of the frame matroid of the gain graph; untwisted links give the graphic matroid and one class of A per independent loop; a ring of k copies remembers |A| classes when phi^k = 1 and nothing otherwise; and two loops of gain other than 1 bind into one circuit. (4) The claim that group-like knots are exactly those that remember loops and compose like cycles holds for two values and fails beyond: the 3-nets of Z6 and S3 are group-like and keep a lasting record but do not compose like cycles, while their networks still remember |G|^b1 classes with graphic free sets; a dressed parity knot composes like cycles and keeps one bit at every length without permutation transfers; x + y + z = 0 over F3 composes like cycles and is group-like but forgets every odd ring. (5) Corrected: memory needs contact that is group-like modulo blocks; composing like cycles makes it finite-field cohomology modulo the tops, possibly twisted, with a larger p-group below the tops (Z4); binding loops through fixed points, as the selector law does, leaves cycle-like composition.",
+  "dependencies": [
+    "CYCLE-TRACTABILITY-20261021-001Z",
+    "KNOT-LOOPS-20261019-001Z",
+    "HOLES-COHOMOLOGY-20261019-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A knot link has both a full product and a block system, or neither, or violates its ring bound.",
+    "A Boolean link where group-like, no full product, a block system, an affine law and parity disagree.",
+    "A network of a knot from a law composing like cycles whose memory modulo the tops differs from |A|^(E-V) |H0|, or whose free sets modulo the tops differ from the frame matroid of its gain graph.",
+    "A network of the Z6 or S3 3-net that is not graphic or does not remember |G|^b1 classes.",
+    "The Z6, S3 or selector failing system satisfies elimination, or a sampled system of the dressed parity or twisted affine laws violates it.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-HOMOLOGY-20261021-001",
+    "epic_path": [
+      "LOOP-HOMOLOGY-20261021-001"
+    ],
+    "parents": [
+      "proofs/CYCLE-TRACTABILITY-20261021-001Z/CYCLE-TRACTABILITY-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/KNOT-LOOPS-20261019-001B/KNOT-LOOPS-20261019-001B-P001_ring_theorem/manifest.json",
+      "proofs/HOLES-COHOMOLOGY-20261019-001B/HOLES-COHOMOLOGY-20261019-001B-P001_loop_nerve/manifest.json",
+      "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json",
+      "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CYCLE-TRACTABILITY-20261021-001Z/CYCLE-TRACTABILITY-20261021-001Z-P001_epic_closure/manifest.json": "2f552c726331a4694c9e8a234d1f233188d4b16e5d531b2644ccdcc08462a520",
+    "proofs/KNOT-LOOPS-20261019-001B/KNOT-LOOPS-20261019-001B-P001_ring_theorem/manifest.json": "142e426cefadd223f1477e61254dbf785d2ab4f2144019ba8fea19d20699ce89",
+    "proofs/HOLES-COHOMOLOGY-20261019-001B/HOLES-COHOMOLOGY-20261019-001B-P001_loop_nerve/manifest.json": "0e040f2fc4e8bfa9abe970bd3f8b381c297e0ad55b415e8839b834ccd7a9ecb7",
+    "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json": "17ca9eef6bf9da1f8857b7cf59681c31dd8b1ded31f82a652d65195a977a08dc",
+    "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/manifest.json": "b36b5985a45516dd7ad1cf8fccafb2b63736d97b35697686467ea8e0c8e1a752"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/manifest.json",
+    "identity": "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/identity.json",
+    "directory": "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology",
+    "proof": "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/proof.md",
+    "result": "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/result.json",
+    "check": "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "transfer_dichotomy_proved": true,
+    "network_cohomology_proved": true,
+    "unified_claim_tested": true
+  },
+  "foundation_claim_scope": "Loop memory of knot links, and the holes of contact networks in laws that compose like cycles. No native recurrence, composed topology in the protected sense, path, metric distance or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py tests the dichotomy and its ring bounds on all 9,108 links of Boolean knots on three and four variables and on 258 links of 43 many-valued knots (154 with full products, 104 with block systems), 64 networks of eight knots from laws composing like cycles against twisted cohomology and the frame matroid, 16 networks of the Z6 and S3 3-nets, the failing systems of Z6, S3 and the selector law, and 480 sampled systems of four laws composing like cycles; six controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and randomized checks; Protasov and Voynov's theorem (in Blondel, Jungers and Olshevsky's combinatorial form), Jordan's theorem, convergence of periodic Markov chains, Schur's lemma, Wedderburn's little theorem, Zaslavsky's frame matroids, and KNOT-LOOPS-20261019-001B-P001, HOLES-COHOMOLOGY-20261019-001B-P001, THOMSEN-KNOTS-20261021-001A-P001 and AFFINE-TOPS-20261021-001B-P001 are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta: the dichotomy is Protasov and Voynov's theorem and the network theorem is classical gain-graph cohomology with Zaslavsky's frame matroid, both applied through the affine-tops results; new to the program are the many-valued ring theorem, the field-scalar gain, twisted loops binding in pairs, and the test and correction of the owner's unified claim.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLANAR-COMPOSE-20261102-001Z-P001",
+  "canonical_id": "PLANAR-COMPOSE-20261102-001Z-P001",
+  "kind": "proof",
+  "ticket": "PLANAR-COMPOSE-20261102-001Z",
+  "proof": "PLANAR-COMPOSE-20261102-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the planar-compose epic",
+  "status": "Proved",
+  "claim": "Ledger closing PLANAR-COMPOSE-20261102-001: one line per conclusion with its novelty label and evidence (tickets A and B), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PLANAR-COMPOSE-20261102-001A",
+    "PLANAR-COMPOSE-20261102-001B"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PLANAR-COMPOSE-20261102-001",
+    "epic_path": [
+      "PLANAR-COMPOSE-20261102-001"
+    ],
+    "parents": [
+      "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/manifest.json",
+      "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/result.json",
+      "proofs/PLANAR-COMPOSE-20261102-001B/PLANAR-COMPOSE-20261102-001B-P001_cutting_a_handle_open/manifest.json",
+      "proofs/PLANAR-COMPOSE-20261102-001B/PLANAR-COMPOSE-20261102-001B-P001_cutting_a_handle_open/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/manifest.json": "a6ea8ac39420df40a8b12530bef27cd12620e3d756564d04695b42c443b6b6ca",
+    "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/result.json": "fbc83510da9295a9f06e47e4d1050e3498aebc4c8721e1972dfb893bb3b4666f",
+    "proofs/PLANAR-COMPOSE-20261102-001B/PLANAR-COMPOSE-20261102-001B-P001_cutting_a_handle_open/manifest.json": "5d347ef3e0a0d3b3a0a8a0f8df3dc3ad1ac6861501fd7120a7f416d8144c2647",
+    "proofs/PLANAR-COMPOSE-20261102-001B/PLANAR-COMPOSE-20261102-001B-P001_cutting_a_handle_open/result.json": "d45e9a8a2e39be581a6c7f23c384e53c2c1b45367c826968fdc31b8bcdc991fc"
+  },
+  "paths": {
+    "manifest": "proofs/PLANAR-COMPOSE-20261102-001Z/PLANAR-COMPOSE-20261102-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PLANAR-COMPOSE-20261102-001Z/PLANAR-COMPOSE-20261102-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/PLANAR-COMPOSE-20261102-001Z/PLANAR-COMPOSE-20261102-001Z-P001_epic_closure",
+    "proof": "proofs/PLANAR-COMPOSE-20261102-001Z/PLANAR-COMPOSE-20261102-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PLANAR-COMPOSE-20261102-001Z/PLANAR-COMPOSE-20261102-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PLANAR-COMPOSE-20261102-001Z/PLANAR-COMPOSE-20261102-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "access_lemma_checked": false,
+    "handle_cut_measured": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02."
+  }
+}

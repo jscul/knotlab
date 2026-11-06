@@ -1,0 +1,261 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-GRAMMAR-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 5,
+    "mismatched": {}
+   }
+  },
+  "1 the twisted cube needs a planar brace; splices and cycles of Fano blocks never do": {
+   "ok": true,
+   "detail": {
+    "twisted cube: points, linear, connected, 2-colourable, minimal": [
+     43,
+     true,
+     true,
+     false,
+     true
+    ],
+    "twisted cube: brace types, leaves": [
+     {
+      "heawood": 6,
+      "doubled square": 3,
+      "planar": 1
+     },
+     {
+      "heawood": 6
+     }
+    ],
+    "generated systems: brace types, 2-colourable": {
+     "Fano splice (13)": [
+      {
+       "heawood": 2
+      },
+      false
+     ],
+     "line splice (13)": [
+      {
+       "heawood": 2
+      },
+      false
+     ],
+     "Fano composition (19)": [
+      {
+       "heawood": 3
+      },
+      false
+     ],
+     "3-cycle of blocks (21)": [
+      {
+       "heawood": 3,
+       "doubled square": 2
+      },
+      false
+     ],
+     "5-cycle of blocks (35)": [
+      {
+       "heawood": 5,
+       "doubled square": 4
+      },
+      false
+     ],
+     "twisted 2-cycle spliced pair (27)": [
+      {
+       "heawood": 4,
+       "doubled square": 2
+      },
+      false
+     ]
+    }
+   }
+  },
+  "2 decomposition structure: multigraph braces are doubled squares, leaves are simple": {
+   "ok": true,
+   "detail": {
+    "doubled hexagon has a nontrivial tight cut (size of shore)": 3,
+    "doubled square: numbers of negated classes over its SNS signings": [
+     [
+      1,
+      4
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "every brace with a parallel pair has 4 vertices; every leaf is simple (all computed decompositions)": [
+     true,
+     true
+    ]
+   }
+  },
+  "3 one negated edge never makes a brace sign-nonsingular; only the Heawood graph needs none (planar braces and trisums)": {
+   "ok": true,
+   "detail": {
+    "Heawood: single negations that are SNS (of 21), Pfaffian classes": [
+     0,
+     [
+      []
+     ]
+    ],
+    "Pfaffian braces": {
+     "cube": {
+      "planar": true,
+      "brace": true,
+      "Pfaffian classes": 1,
+      "every 4-cycle has an edge-disjoint 4-cycle": true,
+      "pairwise edge-disjoint 4-cycles (capped at 3)": 2,
+      "SNS signings with at most one negated edge": 0
+     },
+     "hexagonal prism": {
+      "planar": true,
+      "brace": true,
+      "Pfaffian classes": 1,
+      "every 4-cycle has an edge-disjoint 4-cycle": true,
+      "pairwise edge-disjoint 4-cycles (capped at 3)": 3,
+      "SNS signings with at most one negated edge": 0
+     },
+     "truncated octahedron": {
+      "planar": true,
+      "brace": true,
+      "Pfaffian classes": 1,
+      "every 4-cycle has an edge-disjoint 4-cycle": true,
+      "pairwise edge-disjoint 4-cycles (capped at 3)": 3,
+      "SNS signings with at most one negated edge": 0
+     },
+     "trisum of three cubes (16 vertices)": {
+      "planar": false,
+      "brace": true,
+      "Pfaffian classes": 1,
+      "every 4-cycle has an edge-disjoint 4-cycle": true,
+      "pairwise edge-disjoint 4-cycles (capped at 3)": 3,
+      "SNS signings with at most one negated edge": 0
+     },
+     "trisum of that with two cubes (24 vertices)": {
+      "planar": false,
+      "brace": true,
+      "Pfaffian classes": 1,
+      "every 4-cycle has an edge-disjoint 4-cycle": true,
+      "pairwise edge-disjoint 4-cycles (capped at 3)": 3,
+      "SNS signings with at most one negated edge": 0
+     }
+    }
+   }
+  },
+  "4 every leaf of every constructed system is a Fano piece (at least two)": {
+   "ok": true,
+   "detail": {
+    "Fano splice (13)": [
+     {
+      "block": 1,
+      "dual block": 1
+     },
+     true
+    ],
+    "line splice (13)": [
+     {
+      "block": 1,
+      "dual block": 1
+     },
+     true
+    ],
+    "Fano composition (19)": [
+     {
+      "block": 2
+     },
+     true
+    ],
+    "3-cycle of blocks (21)": [
+     {
+      "block": 3
+     },
+     true
+    ],
+    "5-cycle of blocks (35)": [
+     {
+      "block": 2,
+      "dual block": 1
+     },
+     true
+    ],
+    "twisted 2-cycle spliced pair (27)": [
+     {
+      "block": 3
+     },
+     true
+    ],
+    "twisted cube (43)": [
+     {
+      "block": 6
+     },
+     true
+    ]
+   }
+  },
+  "5 every signed core decorates to a three-fold knot space (planar glue of any shape)": {
+   "ok": true,
+   "detail": {
+    "cube": {
+     "core SNS with the signing": true,
+     "points": 43,
+     "linear": true,
+     "connected": true,
+     "cubic": true,
+     "2-colourable": false,
+     "every line removal 2-colourable": true
+    },
+    "hexagonal prism": {
+     "core SNS with the signing": true,
+     "points": 45,
+     "linear": true,
+     "connected": true,
+     "cubic": true,
+     "2-colourable": false,
+     "every line removal 2-colourable": true
+    },
+    "truncated octahedron": {
+     "core SNS with the signing": true,
+     "points": 90,
+     "linear": true,
+     "connected": true,
+     "cubic": true,
+     "2-colourable": false
+    },
+    "3-cycle core": {
+     "core SNS with the signing": true,
+     "points": 21,
+     "linear": true,
+     "connected": true,
+     "cubic": true,
+     "2-colourable": false,
+     "every line removal 2-colourable": true
+    },
+    "tripod core": {
+     "core SNS with the signing": true,
+     "points": 22,
+     "linear": true,
+     "connected": true,
+     "cubic": true,
+     "2-colourable": false,
+     "every line removal 2-colourable": true
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "the cube with a non-Kasteleyn signing decorates to a 2-colourable system": true,
+    "the 2-cycle core (two blocks, untwisted) is 2-colourable": true,
+    "a planar cubic bipartite graph with the trivial signing is not SNS": true,
+    "the Fano plane is a single brace": true,
+    "K3,3 (three lines on the same three points) has no Pfaffian signing": true
+   }
+  },
+  "ok": true,
+  "seconds": 2.1
+ }
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "artifact_id": "HOLES-AT-INFINITY-20261020-001C-P001",
+  "canonical_id": "HOLES-AT-INFINITY-20261020-001C-P001",
+  "kind": "proof",
+  "ticket": "HOLES-AT-INFINITY-20261020-001C",
+  "proof": "HOLES-AT-INFINITY-20261020-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The ends of a constraint system: things at infinity and trends",
+  "status": "Proved",
+  "claim": "For a locally finite constraint system over finite domains, with solutions equivalent when they differ in finitely many variables: (1) the readable invariants (rigid functions) form a Boolean algebra whose Stone space, the ends of the system, is a continuous quotient of the solutions, a point when some class is dense, and the solution space itself when no finite change exists. (2) For GF(2)-linear systems the ends are the solutions modulo the closure of the finitely supported homogeneous solutions, and every open parity is either loop-supplied (changed by a finitely supported homogeneous solution) or end-supplied (rigid); for Tseitin systems this is B's classification with ends M_c, and for Ledrappier's system on Z^2 there is no finitely supported homogeneous solution, so every triangle is a K1-K3 parity knot whose openness is all end-supplied on a one-ended grid where Tseitin's law has only loop-supplied openness. (3) Every relation among finitely many variables is the relation of a finite stage; rigidity is not. (4) No three variables of a two-literal clause system form a K1-K3 knot, though rigid variables exist (equality chains), and a not-all-equal centre with equality legs is a knot of rigid variables. (5) Trends (finite-change invariants that no readable function sees) separate solutions of the implication chain (where the switch went), of proper 3-colourings of Z^2 (the slope of the height function; the flat class is dense and the plane colouring is frozen) and of Tseitin on the one-way ladder (a circle through the end).",
+  "dependencies": [
+    "HOLES-AT-INFINITY-20261020-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology",
+    "cnf-arity"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "Ledrappier's system has a non-zero homogeneous solution supported inside a checked box, a loop-supplied parity near the origin, or a triangle relation that is not a K1-K3 parity knot.",
+    "The Tseitin grid has an end-supplied parity near the origin, or a projection changes with the radius.",
+    "A triple of variables of a checked two-literal system is a knot or not majority-closed, or the equality chain's bit is not open and rigid.",
+    "The not-all-equal centre with equality legs is not a knot or its legs admit a finite change.",
+    "The implication chain's window is not covered by thresholds, or all-0 or all-1 admits a finite change.",
+    "A patched colouring is invalid, misses its window, or changes the flat colouring outside a finite region; or the plane colouring has a second completion of its boundary.",
+    "A control (boundary solutions counted as loops, an added three-variable parity, an unconstrained chain, a two-literal centre, patching into the frozen plane, the frozen test on the flat colouring) is accepted."
+  ],
+  "lineage": {
+    "home_scope": "HOLES-AT-INFINITY-20261020-001",
+    "epic_path": [
+      "HOLES-AT-INFINITY-20261020-001"
+    ],
+    "parents": [
+      "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/manifest.json",
+      "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/manifest.json": "46e2ef5c4f129dee7dac521f577d3791e8a6af6a2a6f33531473edfb079a3a8f",
+    "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/result.json": "a0ba944738922187662c1fd03ff0ba74410bf4ee33a415c138e9fc99f2b41adc"
+  },
+  "paths": {
+    "manifest": "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json",
+    "identity": "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/identity.json",
+    "directory": "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends",
+    "proof": "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/proof.md",
+    "result": "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/result.json",
+    "check": "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "ends_of_a_system_structure_proved": true,
+    "linear_systems_loops_or_ends_proved": true,
+    "ledrappier_all_openness_from_ends_proved": true,
+    "finite_stage_formation_proved": true,
+    "no_knot_among_two_clause_variables_proved": true,
+    "trends_separated_from_readable_ends_proved": true,
+    "native_loops_question_decided": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Finite-change invariants of infinite constraint systems and K1-K3 verdicts among their variables. No native recurrence, composed topology, path, metric, space or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py classifies every parity near the origin of the Tseitin grid (2^24) and of Ledrappier's system (512) from exact GF(2) projections and inner homogeneous solutions, confirms no finitely supported homogeneous solution of Ledrappier's system in boxes of radius 3-7 and the triangle knot with knotlab, enumerates 120 triples of 12 planted two-literal systems, the equality chain, the not-all-equal centre with rigid legs, the implication chain, 150 height-function patches into the flat colouring, the frozen plane on boxes of side 4-6 and the ladder's circle; six controls rejected; no human or external review",
+    "level": "V1 prose proof with executable checks; cites Lind-Schmidt (1999), Ledrappier (1978), Peled-Spinka, Chandgotia-Peled-Sheffield-Tassy, Ray-Spinka, Schaefer (1978), Baker-Pixley (1975), Stone (1936) and HOLES-AT-INFINITY-20261020-001B-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. The finite-change relation is the homoclinic relation of symbolic dynamics; Ledrappier's system, frozen 3-colourings, height functions and majority closure are classical. The delta is the reading through K1-K3: loops and ends as sources of open distinctions are relative to the law (Ledrappier versus Tseitin on the same grid), and the knot test sees things at infinity but not trends.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

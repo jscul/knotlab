@@ -1,0 +1,256 @@
+{
+ "artifact_id": "FOUR-PLACE-20261031-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "info": {
+    "mismatched": {},
+    "parents": 5
+   },
+   "pass": true
+  },
+  "1 the value-free four-place knots: 30 relations in four classes (parity 8 states x 2, not-exactly-two 10 x 8, twelve 12 x 12, not-all-equal 14 x 8), confirmed by brute force over all 2^16 relations": {
+   "info": {
+    "not-all-equal": {
+     "a representative (truth table)": "1111111001111111",
+     "relations": 8,
+     "states": 14,
+     "symmetric members": 1
+    },
+    "not-exactly-two": {
+     "a representative (truth table)": "1110100110010111",
+     "relations": 8,
+     "states": 10,
+     "symmetric members": 1
+    },
+    "parity": {
+     "a representative (truth table)": "1001011001101001",
+     "relations": 2,
+     "states": 8,
+     "symmetric members": 2
+    },
+    "twelve": {
+     "a representative (truth table)": "1111100110011111",
+     "relations": 12,
+     "states": 12,
+     "symmetric members": 0
+    }
+   },
+   "pass": true
+  },
+  "2 a complement-invariant law cannot pin: every accepted relation of every piece with three or four internal points, in every class, is complement-invariant, so no port is ever forced to a value": {
+   "info": {
+    "distinct (piece, accepted relation) pairs checked": 231,
+    "violations": []
+   },
+   "pass": true
+  },
+  "3 Schaefer: parity is affine; the other three classes are closed under none of the six tractable polymorphisms": {
+   "info": {
+    "not-all-equal": [],
+    "not-exactly-two": [],
+    "parity": [
+     "affine (minority)"
+    ],
+    "twelve": []
+   },
+   "pass": true
+  },
+  "4 on plain systems only relations excluding both constant colourings can fail: eight of them (odd parity, three of not-exactly-two = odd parity plus one balanced pair, three of twelve = odd parity plus two balanced pairs, not-all-equal)": {
+   "info": {
+    "not-all-equal": [
+     "0111111111111110"
+    ],
+    "not-exactly-two": [
+     "0111100110011110",
+     "0110110110110110",
+     "0110101111010110"
+    ],
+    "parity": [
+     "0110100110010110"
+    ],
+    "twelve": [
+     "0111110110111110",
+     "0111101111011110",
+     "0110111111110110"
+    ]
+   },
+   "pass": true
+  },
+  "5 every 4-regular 4-uniform system with n <= 7 points, up to isomorphism: 1, 1, 4, 14 (complements in K_{n,n} of the (n-4)-regular bipartite graphs: cycle covers for n = 6, the 14 cubic bipartite graphs on 7 + 7 vertices for n = 7); all regular and simple, pairwise non-isomorphic": {
+   "info": {
+    "connected": {
+     "4": 1,
+     "5": 1,
+     "6": 4,
+     "7": 14
+    },
+    "counts": {
+     "4": 1,
+     "5": 1,
+     "6": 4,
+     "7": 14
+    }
+   },
+   "pass": true
+  },
+  "6 failure census over every signing (one member relation per line) of every 4-regular 4-uniform system with n <= 7: not-all-equal never fails; parity and not-exactly-two fail on every system; twelve fails on every system with n <= 6 and on 11 of the 14 with n = 7": {
+   "info": {
+    "systems with a failing signing": {
+     "not-all-equal": {
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+     },
+     "not-exactly-two": {
+      "4": 1,
+      "5": 1,
+      "6": 4,
+      "7": 14
+     },
+     "parity": {
+      "4": 1,
+      "5": 1,
+      "6": 4,
+      "7": 14
+     },
+     "twelve": {
+      "4": 1,
+      "5": 1,
+      "6": 4,
+      "7": 11
+     }
+    },
+    "table": {
+     "n=4 #0": {
+      "not-all-equal": "0/4096",
+      "not-exactly-two": "864/4096",
+      "parity": "14/16",
+      "twelve": "216/20736"
+     },
+     "n=5 #0": {
+      "not-all-equal": "0/32768",
+      "not-exactly-two": "2688/32768",
+      "parity": "16/32",
+      "twelve": "96/248832"
+     },
+     "n=6 #0": {
+      "not-all-equal": "0/262144",
+      "not-exactly-two": "24672/262144",
+      "parity": "48/64",
+      "twelve": "256/2985984"
+     },
+     "n=6 #1": {
+      "not-all-equal": "0/262144",
+      "not-exactly-two": "44288/262144",
+      "parity": "56/64",
+      "twelve": "1856/2985984"
+     },
+     "n=6 #2": {
+      "not-all-equal": "0/262144",
+      "not-exactly-two": "11520/262144",
+      "parity": "32/64",
+      "twelve": "192/2985984"
+     },
+     "n=6 #3": {
+      "not-all-equal": "0/262144",
+      "not-exactly-two": "49792/262144",
+      "parity": "60/64",
+      "twelve": "6896/2985984"
+     },
+     "n=7 #0": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "115456/2097152",
+      "parity": "96/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #1": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "58176/2097152",
+      "parity": "64/128",
+      "twelve": "no failure (all 12^7 signings solvable)"
+     },
+     "n=7 #10": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "167552/2097152",
+      "parity": "96/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #11": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "255360/2097152",
+      "parity": "112/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #12": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "158784/2097152",
+      "parity": "120/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #13": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "248832/2097152",
+      "parity": "112/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #2": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "116544/2097152",
+      "parity": "96/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #3": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "261632/2097152",
+      "parity": "112/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #4": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "148416/2097152",
+      "parity": "96/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #5": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "57600/2097152",
+      "parity": "64/128",
+      "twelve": "no failure (all 12^7 signings solvable)"
+     },
+     "n=7 #6": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "181632/2097152",
+      "parity": "112/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #7": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "55296/2097152",
+      "parity": "64/128",
+      "twelve": "no failure (all 12^7 signings solvable)"
+     },
+     "n=7 #8": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "67776/2097152",
+      "parity": "64/128",
+      "twelve": "fails (one failure exhibited)"
+     },
+     "n=7 #9": {
+      "not-all-equal": "0/2097152",
+      "not-exactly-two": "213376/2097152",
+      "parity": "96/128",
+      "twelve": "fails (one failure exhibited)"
+     }
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The complement-invariant (value-free) four-place knot relations, unions of antipodal pairs of {0,1}^4 whose three-place projections are full, are exactly 30, in four classes under flips and permutations: parity (8 states, 2 relations), not-exactly-two (10 states, 8), twelve (12 states, 12) and not-all-equal (14 states, 8). A complement-invariant law can never pin a value, since every piece's accepted relation is complement-invariant. By Schaefer's theorem only parity is tractable with unbounded occurrences. On plain systems only the eight relations excluding both constants can fail (odd parity, three of not-exactly-two, three of twelve, not-all-equal). Census over every 4-regular 4-uniform system with n <= 7 and every signing: not-all-equal never fails; parity and not-exactly-two fail on every such system; twelve fails on every system with n <= 6 and on 11 of the 14 with n = 7.",
+ "kind": "proof",
+ "proof": "FOUR-PLACE-20261031-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FOUR-PLACE-20261031-001A"
+}

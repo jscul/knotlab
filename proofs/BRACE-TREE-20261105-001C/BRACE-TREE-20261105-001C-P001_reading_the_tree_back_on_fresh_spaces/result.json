@@ -1,0 +1,116 @@
+{
+ "artifact_id": "BRACE-TREE-20261105-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the fresh spaces: 11 trees of Fano atoms and 100 three-fold classes of 23 to 26 points, each failing": {
+   "info": {
+    "census by size": {
+     "twisted 23": 4,
+     "twisted 24": 11,
+     "twisted 25": 4,
+     "twisted 26": 70,
+     "untwisted 25": 11
+    },
+    "points": {
+     "19": 1,
+     "20": 1,
+     "22": 2,
+     "23": 4,
+     "24": 11,
+     "25": 21,
+     "26": 71
+    }
+   },
+   "pass": true
+  },
+  "2 B's rules on fresh pairs: is every fresh pair of atom lines at one of B's 21 places as B recorded there?": {
+   "info": {
+    "fresh pairs at B's places": {
+     "as predicted": 32016
+    },
+    "places B never saw (place: relations)": {
+     "apart | <>< | cut line | emitter": {
+      "mutual": 36
+     },
+     "apart | <>< | intact | emitter": {
+      "forward": 48
+     },
+     "apart | ><< | emitter | emitter": {
+      "mutual": 36
+     },
+     "apart | ><> | emitter | cut line": {
+      "mutual": 36
+     },
+     "apart | ><> | emitter | intact": {
+      "backward": 48
+     },
+     "apart | >>< | emitter | emitter": {
+      "mutual": 36
+     }
+    },
+    "prediction holds": true
+   },
+   "pass": true
+  },
+  "3 cut directions on fresh spaces: does every cut between two atoms read one way, from the receiver's intact lines to the emitter?": {
+   "info": {
+    "cuts": {
+     "one way, from the receiver's intact lines to the emitter": 163
+    },
+    "prediction holds": true
+   },
+   "pass": true
+  },
+  "4 glue on fresh spaces: are lines of plane pieces and doubled squares silent to each other unless a non-Fano handle lies between?": {
+   "info": {
+    "creating pairs by space": {
+     "twisted 26-point class 65 (a Fano atom between)": 12
+    },
+    "pairs": {
+     "a Fano atom between: backward": 6,
+     "a Fano atom between: forward": 6,
+     "a Fano atom between: silent": 12,
+     "no handle between: silent": 1354
+    },
+    "prediction holds": false,
+    "silent whenever no handle lies between": true
+   },
+   "pass": true
+  },
+  "5 the source rule on fresh spaces: do kept blocks count the Heawood braces, and the genus, on every fresh space without a non-Fano brace?": {
+   "info": {
+    "fresh spaces without a non-Fano brace": 110,
+    "misses (label, genus, Heawood braces, blocks, kept)": [],
+    "of them, all blocks = genus": 83,
+    "of them, kept blocks = Heawood braces = genus": 110,
+    "prediction holds": true,
+    "spaces with a non-Fano brace (label, genus, Heawood, other, blocks, kept)": [
+     [
+      "census 58 + X at a point, Y at a line",
+      3,
+      2,
+      1,
+      6,
+      4
+     ]
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "Ticket B's rules and reconstruction hold on fresh spaces, except its glue rule. On 111 fresh spaces (all 100 three-fold classes of 23 to 26 points and 11 new trees of Fano atoms), creation computed exactly: all 32,016 fresh pairs of atom lines at B's 21 places have the relation B recorded there, and 6 places B never saw (zigzags) each carry one relation; all 163 cuts between two atoms read one way, from the receiver's intact lines to the emitter; and the source rule counts the Heawood braces, and the genus, on all 110 fresh spaces without a non-Fano brace (the plain block count on 83), failing only on the space built on census 58. B's glue prediction is refuted as stated: in one class (twisted 26-point class 65), 12 of the 24 pairs of glue lines with a Fano atom between them create, one way. With no handle between, glue lines are silent in all 1,354 fresh pairs, as in all 306 of B's.",
+ "kind": "proof",
+ "proof": "BRACE-TREE-20261105-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "BRACE-TREE-20261105-001C"
+}

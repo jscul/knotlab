@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-LOOPS-20261019-001A-E001",
+  "ticket": "KNOT-LOOPS-20261019-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "When copies of a knot are joined in a ring through witness distinctions and the witnesses are forgotten, is the composite on the remaining distinctions constrained, and which excluded patterns does it keep?",
+  "definitions": {
+    "knot": "a Boolean relation on at least three variables whose excluded states form a nonempty set with no two states at Hamming distance one (K1-K3 under the forgetting reading)",
+    "placement": "a knot with an ordered pair of its variables chosen as witness in and witness out; the others are its middle distinctions",
+    "transfer": "for one value m of the middle distinctions, the 2x2 table of allowed (witness in, witness out) pairs",
+    "ring": "k copies of placements; copy i's witness out is copy i+1's witness in, indices mod k; the composite allows a middle pattern when some witness assignment satisfies every copy, and the witnesses are forgotten",
+    "chain": "k copies joined the same way without closing; the two end witnesses are kept as distinctions of the composite",
+    "classes": "free (nothing excluded); knot (at least three variables, excluded set nonempty with no two excluded patterns adjacent); small (constrained, fewer than three variables, no two excluded adjacent); contradiction (everything excluded); other (constrained with two adjacent excluded patterns)"
+  },
+  "public_inputs": {
+    "knots": "all knots on three variables (34) and on four variables (742), enumerated from their definition",
+    "placements": "every ordered witness pair: 6 per three-variable knot, 12 per four-variable knot",
+    "ring_lengths": "k = 1..8 for three-variable knots; k = 1..6 for four-variable knots",
+    "chains": "k = 1..4 for three-variable knots",
+    "mixed_rings": "every ordered pair of distinct three-variable placements, alternating, k = 2 and 4",
+    "holes": "reduced GF(2) homology of the composite's shape (free sets) when it has at most 8 variables"
+  },
+  "forbidden_inputs": [
+    "the predicted classes or excluded sets as inputs to the producer's classification"
+  ],
+  "predictions": {
+    "P1": "no ring composite is 'other' or 'contradiction'",
+    "P2": "a ring excludes a middle pattern exactly when every transfer along it is a permutation and an odd number of them are the swap",
+    "P3": "a placement keeps every ring constrained (k = 1..max) exactly when all its transfers are permutations, exactly when the knot is a parity relation",
+    "P4": "three-variable placements split 12 (every ring constrained) / 36 (constrained exactly at odd k) / 156 (never constrained)",
+    "P5": "chain composites are knots or free (KNOT-FOUNDATION-20261019-001D composition), so chains keep constraints that rings of the same placement can lose"
+  },
+  "primary_observable": "per placement and k: composite class, excluded-set size, agreement of the excluded set with P2; per placement: the set of k at which rings are constrained",
+  "cheapest_meaningful_control": "(1) the composite is computed two ways: by brute force over witness assignments for k <= 3, and by composing transfer tables for every k; the two must agree. (2) A relation that is not a knot (two adjacent excluded states) used as a link must be able to yield 'other'. (3) The contradiction class must be reachable: a link that forbids every pair for some middle value. (4) The prediction with 'even' in place of 'odd' must fail.",
+  "independent_check": "check_result.py recomputes composites and classes with separate code and confirms every knot verdict with knotlab's check_knot and homology",
+  "decision_or_followup_rule": "A signal is P1-P4 holding on every case and P5 holding on every chain. A signal supports the ring theorem of ticket B, which carries the proof; a mismatch is reported as a counterexample to the theory and stops ticket B until it is understood.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "three-variable rings at k = 1..8, then four-variable rings, then chains and mixed rings",
+  "stop_rule": "Stop after the declared roster; stop early only on a classifier or control failure.",
+  "nonclaims": [
+    "Finite enumeration on the declared knots, placements and lengths only; the general statement is ticket B's proof.",
+    "Boolean distinctions only; many-valued knots are ticket C.",
+    "One witness passed between neighbouring copies; networks with several loops are ticket C.",
+    "No claim about native loops, space, distance or physics."
+  ]
+}

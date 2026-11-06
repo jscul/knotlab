@@ -1,0 +1,113 @@
+{
+  "schema_version": 3,
+  "artifact_id": "URQUHART-TSEITIN-20261020-001B-P001",
+  "canonical_id": "URQUHART-TSEITIN-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "URQUHART-TSEITIN-20261020-001B",
+  "proof": "URQUHART-TSEITIN-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Re-querying and proof size: Urquhart's conjecture and hole-faithful refutations",
+  "status": "Proved",
+  "claim": "(1) For bounded degree, Urquhart's conjecture (regular resolution polynomially simulates resolution on Tseitin formulas) on a family is equivalent to general resolution size 2^Omega(tw)/poly(n) on it; hence it holds on graphs with cell systems, bounded-degree minor-free graphs (planar included), linear-treewidth families and families with compact topological minors. (2) Read-2 branching programs of size 2m+2 compute satisfiable Tseitin formulas, so branching-program size arguments stop at regular resolution. (3) Hole-faithful refutations (no step forgets a variable touching the region where the hole must lie after the pivot is read) of a 2-edge-connected graph with an edge-linked set of w vertices have at least (1-4eps) 2^(eps w/2) clauses, so 2^Omega(tw): the hole of a random critical assignment stays uniform on the clause's region, regions fragment size-biased, and balanced regions are falsified with probability 2^-Omega(w). (4) Davis-Putnam refutations are regular and hole-faithful, so hole-faithful size is 2^Theta(tw) at bounded degree; a refutation of size 2^o(tw) must both re-read and forget at the hole's region. Urquhart's conjecture is not resolved.",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z",
+    "GENERAL-SIZE-20261020-001Z",
+    "SOS-SIZE-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "resolution-size",
+    "tseitin-formulas"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "inherited-consequence"
+    ]
+  },
+  "failure_conditions": [
+    "A carving or Davis-Putnam refutation on a checked instance is invalid, violates hole-faithfulness, lets a region grow along a walk, gives a non-uniform hole posterior given a walk prefix, or exceeds the 2^-fd passing bound.",
+    "The non-faithful control fails to make the hole posterior non-uniform on some declared instance.",
+    "A read-2 program errs on some assignment or reads a variable three times.",
+    "A published statement of the hole-faithful bound is found (novelty only)."
+  ],
+  "lineage": {
+    "home_scope": "URQUHART-TSEITIN-20261020-001",
+    "epic_path": [
+      "URQUHART-TSEITIN-20261020-001"
+    ],
+    "parents": [
+      "proofs/SOS-SIZE-20261020-001Z/SOS-SIZE-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json",
+      "proofs/CELL-SIZE-20261020-001Z/CELL-SIZE-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/manifest.json",
+      "proofs/GENERAL-SIZE-20261020-001Z/GENERAL-SIZE-20261020-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SOS-SIZE-20261020-001Z/SOS-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "420cb87b5db82c25a5d67eead0f7b33e90e48cb22f787a2f491af4a8c556cbe2",
+    "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json": "14315a305e22b245c25ae8c7b9db6cf8db2bdfc21b22b5ccbbb58d2ad780f720",
+    "proofs/CELL-SIZE-20261020-001Z/CELL-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "bfa4ebb1a3a404b098ede4deda2d9e5a724e4faa07980f4fadf7319791b719b9",
+    "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/manifest.json": "9afde6b7b3bab4c0f9b45f229956131543baf35690ed05a171bbfbe7fe6820a4",
+    "proofs/GENERAL-SIZE-20261020-001Z/GENERAL-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "efff9c502b4931a6a70eadc1121a75b3d8e1fce42f29ffb989276a34dd6ee598"
+  },
+  "paths": {
+    "manifest": "proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/manifest.json",
+    "identity": "proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/identity.json",
+    "directory": "proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful",
+    "proof": "proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/proof.md",
+    "result": "proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/result.json",
+    "check": "proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "urquhart_equivalence_proved": true,
+    "urquhart_settled_cases_proved": true,
+    "read_two_branching_program_barrier_proved": true,
+    "hole_faithful_lower_bound_proved": true,
+    "urquhart_conjecture_resolved": false,
+    "general_resolution_open_problem_resolved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Proof-complexity size bounds for Tseitin formulas; no contact-first claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py builds carving and Davis-Putnam refutations on seven graphs, verifies validity and hole-faithfulness, walks every critical assignment (exact hole posteriors per walk prefix and per node, monotone regions, passing fractions against (|K|/n) 2^-fd), runs a non-faithful control on four graphs, and verifies read-2 programs on all assignments; no human or external review",
+    "level": "V1 prose proof with executable checks; cites Itsykson-Riazanov-Smirnov (2022) for the regular bound and the conjecture's status, Galesi-Talebanfard-Toran for the width version, Reed for well-linked sets, Ben-Sasson-Wigderson, and CELL-SIZE-20261020-001B-P001, GENERAL-SIZE-20261020-001B-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 found Urquhart's conjecture listed as open (Itsykson-Riazanov-Smirnov 2022), the monotone cops-robber characterization of width, space and depth (Galesi-Talebanfard-Toran), and no lower bound for a class defined like hole-faithful refutations. The argument is Haken's counting method in Urquhart's probabilistic form; Theorem 1, Corollary 2 and Proposition 3 are short consequences of known results.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

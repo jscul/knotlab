@@ -1,0 +1,212 @@
+{
+  "artifact_id": "DIAGONAL-LEMMA-20261021-001B-P001",
+  "checks": {
+    "census_agreement": {
+      "predictions": {
+        "L1": true,
+        "L2": true,
+        "L3": true,
+        "L4": false,
+        "L5": false,
+        "L6": false
+      },
+      "shadows_equal_and_failure_free": true
+    },
+    "census_candidates": {
+      "NAE block": true,
+      "all-but-000 block equals K4": true,
+      "dihedral action with shared point variables fails": true,
+      "even parity block": true,
+      "inner factor x+y+z=0 plus {001, 010}: fibre distance fails": true,
+      "neither-knot block": true,
+      "odd parity block": true
+    },
+    "corollary_3_counterexamples": {
+      "K4": {
+        "diagonal_resolves": false,
+        "direct_case": false,
+        "fibre_distance": false,
+        "knot": true,
+        "rectangular": false
+      },
+      "K4x4": {
+        "direct_case": false,
+        "fibre_distance": false,
+        "knot": true,
+        "rectangular": false
+      },
+      "K6": {
+        "diagonal_resolves": false,
+        "direct_case": false,
+        "fibre_distance": false,
+        "knot": true,
+        "rectangular": false
+      }
+    },
+    "remark_5_full_ranges": {
+      "positional": {
+        "equal_to_parity": 300,
+        "failures": 0,
+        "no_constant_parity_variable": 300,
+        "systems": 300
+      },
+      "single_sorted_failure_between_knots": true
+    },
+    "remark_6_identifications": {
+      "failure_between_ties": true,
+      "failures_between_knots_observed": 0,
+      "lifted_4ary_parity_knot": true,
+      "sampled_systems": 1500
+    },
+    "theorem_1_shadows": {
+      "K4x4": {
+        "diagonal_resolves": null,
+        "direct_case": false,
+        "equal_to_M": 400,
+        "failures": 0,
+        "fibre_distance": false,
+        "knot": true,
+        "rectangular": false,
+        "systems": 400,
+        "values": 4,
+        "variables": 4
+      },
+      "K6": {
+        "diagonal_resolves": false,
+        "direct_case": false,
+        "equal_to_M": 400,
+        "failures": 0,
+        "fibre_distance": false,
+        "knot": true,
+        "rectangular": false,
+        "systems": 400,
+        "values": 6,
+        "variables": 3
+      },
+      "random_shadows": {
+        "equal_to_M": 900,
+        "failures": 0,
+        "shadows": 9,
+        "systems": 900
+      }
+    },
+    "theorem_2_lifts": {
+      "GF(4), 1 doubled": {
+        "diagonal_resolves": false,
+        "direct_case": false,
+        "equal_to_M": 500,
+        "failures": 0,
+        "fibre_distance": false,
+        "knot": true,
+        "pinned_ranges_ok": 500,
+        "rectangular": false,
+        "systems": 500,
+        "values": 5
+      },
+      "K4 (Z3, 2 doubled)": {
+        "diagonal_resolves": false,
+        "direct_case": false,
+        "equal_to_M": 500,
+        "failures": 0,
+        "fibre_distance": false,
+        "knot": true,
+        "pinned_ranges_ok": 500,
+        "rectangular": false,
+        "systems": 500,
+        "values": 4
+      }
+    },
+    "theorem_4_fibre_distance": {
+      "composed_knot_with_meeting_fibres": 30,
+      "knots": 30,
+      "neither_knot_not_covered": true,
+      "steps": {
+        "1": 30
+      },
+      "two_copies_fail": 30
+    }
+  },
+  "claim": "(1) Shadows: if every system over M has full ranges and h is a surjection with h(M) contained in K, then in every system the product M x K has exactly M's constrained sets, so it composes like cycles whenever M does. (2) Lifts: if M contains every constant tuple and every identification of its positions leaving two or more distinct variables is constrained, then doubling a value a and removing (a, ..., a) keeps M's constrained sets in every system. (3) The local converse and the diagonal lemma are false: K4 = {(x,y,z) in {0,1,2,3}^3 : the readings mod 3 with 3 read as 2 sum to 0} minus (2,2,2), the product of x+y+z=0 over Z3 with 'not exactly two ones' (6 values) and a 4-variable product on 4 values are non-rectangular knots with no direct case whose laws compose all circuits like cycles. (4) Fibre distance: if a knot's fibre graph at e is connected with two fibres at distance at least 2, or at distance 1 with a value at distance at least 2 from a fibre, composing with the fibre-sharing relation gives a knot with pairwise meeting fibres and hence a failure; so in a law composing knots like cycles each fibre graph is disconnected or dense. Two values admit no counterexample; three values are open.",
+  "controls": {
+    "composing_knots_like_cycles_forces_rectangular_knots": {
+      "K4_failures_in_sampled_systems": 0,
+      "K4_rectangular": false,
+      "rejected": true
+    },
+    "diagonal_derivation_resolves_every_neither_knot": {
+      "K4_diagonal": false,
+      "K4_direct_case": false,
+      "rejected": true
+    },
+    "full_range_hypothesis_can_be_dropped": {
+      "rejected": true
+    },
+    "identification_hypothesis_can_be_dropped": {
+      "rejected": true
+    },
+    "shadow_composes_because_its_inner_factor_does": {
+      "inner_failure": {
+        "C1": [
+          0,
+          1
+        ],
+        "C2": [
+          1,
+          2
+        ],
+        "e": 1
+      },
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "DIAGONAL-LEMMA-20261021-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "diagonal_lemma_refuted": true,
+    "extended_path_metric_distance_formed": false,
+    "fibre_distance_construction_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "lift_theorem_proved": true,
+    "local_converse_refuted": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shadow_theorem_proved": true,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "DIAGONAL-LEMMA-20261021-001B"
+}

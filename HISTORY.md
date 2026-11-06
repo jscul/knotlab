@@ -3,6 +3,22 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 5 November 2026: the full record
+
+- [RESULTS.md](RESULTS.md): every result recorded since the knot test K1–K3
+  became canonical on 19 October 2026, with the date it was recorded. That is
+  166 current results and 5 superseded ones from 127 epics, plus 5 notes. Four
+  current results and one note carry a pending qualification, stated in their
+  entries.
+- [docs/](docs/): the documents that define the working perspective,
+  unchanged.
+- [proofs/](proofs/), [experiments/](experiments/), [artifacts/](artifacts/)
+  and [research/](research/): every committed record from those epics, copied
+  byte for byte from our workspace. Work in progress that had not been
+  committed is not included.
+- [INTUITIONS.md](INTUITIONS.md) and [FINDINGS.md](FINDINGS.md) now point to
+  the full record.
+
 ## 5 November 2026: first release
 
 - [INTUITIONS.md](INTUITIONS.md) and [FINDINGS.md](FINDINGS.md), written for

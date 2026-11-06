@@ -4,9 +4,18 @@ Findings and intuitions from the contact-first research program of Prespatial
 Labs. The program asks whether logic can build structure, such as holes,
 paths and spaces, without assuming a space to start from.
 
-This repository holds only what we consider established. Every finding has a
-complete proof, and a script or Lean file here checks it. The focus is the
-intuitions behind the program, stated plainly and tied to those proofs.
+The repository has two layers:
+
+- **The introduction.** [INTUITIONS.md](INTUITIONS.md) states the program's
+  intuitions plainly. [FINDINGS.md](FINDINGS.md) lists eleven findings we
+  packaged for outside readers, each with Lean proofs, a note or exhaustive
+  checks that run here.
+- **The full record.** [RESULTS.md](RESULTS.md) lists, with dates, every result
+  recorded since the knot test K1–K3 became canonical on 19 October 2026: 166
+  current results and 5 superseded ones. They are stated in the program's own
+  language and linked to their proofs, experiments and working notes, which
+  are published as recorded. The documents that define the working
+  perspective are in [docs/](docs/).
 
 ## The idea in five lines
 
@@ -19,8 +28,9 @@ intuitions behind the program, stated plainly and tied to those proofs.
 - **Hidden bits have depth**: to see one, an observer must hold a part of the
   network as wide as the network's layout.
 
-Read [INTUITIONS.md](INTUITIONS.md) for the full picture, then
-[FINDINGS.md](FINDINGS.md) for the list of results and their status.
+Read [INTUITIONS.md](INTUITIONS.md) for the picture,
+[FINDINGS.md](FINDINGS.md) for the packaged findings, and
+[RESULTS.md](RESULTS.md) for everything, by line of work and date.
 
 ## Check it yourself
 
@@ -37,7 +47,15 @@ cd lean && python3 check.py && cd ..
 (cd notes/tseitin-nullstellensatz-degree && python3 replay.py)        # standard library
 (cd notes/pfaffian-hypergraph-colourings && python3 independent.py)   # numpy, sympy, networkx
 (cd notes/knot-group-counting/links && python3 run_all.py)           # numpy; about 3 minutes
+
+# any record in the full record: run its check from its own folder
+(cd proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth && python3 check.py)
 ```
+
+Each `check.py` recomputes its proof's facts, runs controls that must fail,
+and compares the outcome with the frozen `result.json` beside it. Some checks
+need numpy, sympy, networkx, python-sat or a Lean toolchain, and a few run for
+hours.
 
 ## Contents
 
@@ -49,7 +67,18 @@ cd lean && python3 check.py && cd ..
 | [tests](tests/) | Exhaustive checks of the finite facts the intuitions rely on |
 | [lean](lean/) | Five kernel-checked proofs: the knot test, competing pairs, the ring theorem, loop nerves |
 | [notes](notes/) | Three self-contained notes with PDFs, sources and check scripts |
+| [RESULTS.md](RESULTS.md) | Every result since 19 October 2026, dated, grouped by line of work, with links |
+| [docs](docs/) | The working perspective: the knot intuition, the foundational thesis, the foundation's classical sources, and the program's vocabulary |
+| [proofs](proofs/) | Every proof since 19 October 2026: `proof.md`, `check.py`, frozen results and manifests |
+| [experiments](experiments/), [artifacts](artifacts/) | Frozen experiment contracts and their outputs |
+| [research](research/) | Working notes, decision notes and discovery records for each epic |
 | [HISTORY.md](HISTORY.md) | Releases and corrections |
+
+The full record is copied byte for byte from our research workspace, so the
+SHA-256 hashes in its manifests and contracts still verify. As a result, some
+scripts and logs still contain absolute paths from that workspace. Records
+refer to each other by labels such as `KNOT-LOOPS-20261019-001B`, which are
+also their folder names.
 
 ## How this was produced
 

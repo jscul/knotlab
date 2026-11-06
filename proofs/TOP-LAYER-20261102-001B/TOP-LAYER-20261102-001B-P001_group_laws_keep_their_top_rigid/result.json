@@ -1,0 +1,263 @@
+{
+ "artifact_id": "TOP-LAYER-20261102-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "passed",
+     "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json": "passed",
+     "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/manifest.json": "Proved",
+     "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 among all groups with a metacyclic presentation <a, b | a^m, b^n, b a b^-1 = a^r> up to order 60 (every group whose Sylow subgroups are cyclic has one), those whose subgroups each have a unique maximal normal subgroup are the cyclic p-groups and 18 non-abelian groups; in each, every abelian subgroup is a cyclic p-group, every subgroup's abelianization is a cyclic p-group, and the unique maximal normal subgroup has prime index": {
+   "info": {
+    "composing like cycles (trivial group included)": 44,
+    "cyclic ones (orders)": [
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     11,
+     13,
+     16,
+     17,
+     19,
+     23,
+     25,
+     27,
+     29,
+     31,
+     32,
+     37,
+     41,
+     43,
+     47,
+     49,
+     53,
+     59
+    ],
+    "groups (isomorphism classes, trivial group included)": 102,
+    "non-abelian (order, m, n, r)": [
+     [
+      6,
+      3,
+      2,
+      2
+     ],
+     [
+      10,
+      5,
+      2,
+      4
+     ],
+     [
+      14,
+      7,
+      2,
+      6
+     ],
+     [
+      18,
+      9,
+      2,
+      8
+     ],
+     [
+      20,
+      5,
+      4,
+      2
+     ],
+     [
+      21,
+      7,
+      3,
+      2
+     ],
+     [
+      22,
+      11,
+      2,
+      10
+     ],
+     [
+      26,
+      13,
+      2,
+      12
+     ],
+     [
+      34,
+      17,
+      2,
+      16
+     ],
+     [
+      38,
+      19,
+      2,
+      18
+     ],
+     [
+      39,
+      13,
+      3,
+      3
+     ],
+     [
+      46,
+      23,
+      2,
+      22
+     ],
+     [
+      50,
+      25,
+      2,
+      24
+     ],
+     [
+      52,
+      13,
+      4,
+      5
+     ],
+     [
+      54,
+      27,
+      2,
+      26
+     ],
+     [
+      55,
+      11,
+      5,
+      3
+     ],
+     [
+      57,
+      19,
+      3,
+      7
+     ],
+     [
+      58,
+      29,
+      2,
+      28
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "2 random knot systems in the seven non-abelian groups up to order 24 (S3, D5, D7, D9, C5:C4, C7:C3, D11) on cubic substrates with 4 to 7 points and on K5^(4), by brute force over G^n: every global failure leaves, after any removal, solutions saturated by the derived subgroups of the ambient ranges and a top image in G/N of at most one line, with only ties": {
+   "info": {
+    "order 10 (m=5, n=2, r=4)": {
+     "global failures": 9,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 46,
+     "systems": 400
+    },
+    "order 14 (m=7, n=2, r=6)": {
+     "global failures": 16,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 77,
+     "systems": 400
+    },
+    "order 18 (m=9, n=2, r=8)": {
+     "global failures": 18,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 89,
+     "systems": 400
+    },
+    "order 20 (m=5, n=4, r=2)": {
+     "global failures": 33,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 162,
+     "systems": 400
+    },
+    "order 21 (m=7, n=3, r=2)": {
+     "global failures": 7,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 33,
+     "systems": 400
+    },
+    "order 22 (m=11, n=2, r=10)": {
+     "global failures": 21,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 103,
+     "systems": 400
+    },
+    "order 6 (m=3, n=2, r=2)": {
+     "global failures": 4,
+     "removals keeping a knot": 0,
+     "removals with rigid top": 20,
+     "systems": 400
+    }
+   },
+   "pass": true
+  },
+  "3 knots kept below the top: in C5:C4, signed Z4 placed in a cyclic subgroup of order 4 fails globally and keeps knots after every removal, while its top image (G/N of order 2, onto which the subgroup maps) is one line; in D9, a Z9 system placed in the cyclic subgroup of order 9 fails globally and keeps knots after two removals, while its top is constant (the subgroup lies in N)": {
+   "info": {
+    "C5:C4, signed Z4 example 1 of RIGID-SELECTION B in a subgroup of order 4": {
+     "fails": true,
+     "generator in the top kernel": false,
+     "global": true,
+     "removals keeping a knot": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "top images": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "top index q": 2,
+     "top rigid": true
+    },
+    "D9, a unit-weighted Z9 system on a 6-point cubic substrate in the subgroup of order 9": {
+     "fails": true,
+     "generator in the top kernel": true,
+     "global": true,
+     "removals keeping a knot": [
+      1,
+      3
+     ],
+     "top images": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "top index q": 2,
+     "top rigid": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Group laws keep their top rigid. A group's coset law composes like cycles exactly when every subgroup has a unique maximal normal subgroup (KNOT-CIRCUITS Theorem 1). Such a group has all Sylow subgroups cyclic, its unique maximal normal subgroup N has prime index q, and every subgroup's abelianization is a cyclic p-group. Up to order 60 these are the cyclic p-groups and 18 non-abelian groups: the dihedral groups of order 2p^k (p^k = 3, 5, 7, 9, 11, 13, 17, 19, 23, 25, 27, 29) and C5:C4, C7:C3, C13:C3, C13:C4, C11:C5, C19:C3. (1) Every knot of such a law is pulled back from a linear relation over a cyclic p-group quotient of its ranges. (2) Every system's solutions are pulled back from a linear system over the cyclic p-groups R_v/R_v' of the variables' ranges, and a global failure lives in one prime, as a square system over Z_(p^K). (3) By RIGID-SELECTION D the top image in G/N after any removal from a global failure on a substrate is at most one line: the top is rigid. (4) The law is rigid when the order is squarefree, and keeps knots below its top in C5:C4 and D9, through their cyclic subgroups of order 4 and 9. Checked: the list from all metacyclic presentations up to order 60; brute force on small substrates for the non-abelian groups up to order 24 (saturation and top); the examples in C5:C4 and D9 by brute force inside the cyclic subgroups.",
+ "kind": "proof",
+ "proof": "TOP-LAYER-20261102-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TOP-LAYER-20261102-001B"
+}

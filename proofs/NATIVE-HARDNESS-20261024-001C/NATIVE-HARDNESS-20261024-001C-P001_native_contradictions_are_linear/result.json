@@ -1,0 +1,71 @@
+{
+  "artifact_id": "NATIVE-HARDNESS-20261024-001C-P001",
+  "checks": {
+    "decision procedure": {
+      "networks": 20000,
+      "procedure agrees": 20000,
+      "unsatisfiable": 2603,
+      "with the half rule reversed agrees": 11387,
+      "without the Gaussian step agrees": 18742
+    },
+    "half rule and linear blocks": {
+      "2-edge-connected components": 1778,
+      "components that are unsatisfiable parity systems": 1778,
+      "knots whose removal keeps the network connected": 2021,
+      "unsatisfiable connected closed networks": 600,
+      "with a parity face and the complementary rest": 2021
+    }
+  },
+  "claim": "In an unsatisfiable connected closed hub-free network of three-place knots with pins, every knot whose removal keeps the network connected has as face a parity relation (a constant, a wire or a parity knot), and the rest allows exactly the complementary relation: the face and the rest each allow at least half of the states of the knot's edges. Hence every native contradiction, cut at its bridges with the forced values pinned, splits into unsatisfiable systems of parity equations, and native networks of every law are decided in polynomial time by peeling, the bridge tree, the half rule and Gaussian elimination, without the theorem of Kazda, Kolmogorov and Rolinek.",
+  "controls": {
+    "a cut-vertex knot allowing six of eight states sits in an unsatisfiable network": true,
+    "the procedure with the half rule reversed disagrees with the solver": true,
+    "the procedure without its Gaussian step disagrees with the solver": true,
+    "with hubs a non-cut knot allowing six of eight states sits in an unsatisfiable network": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NATIVE-HARDNESS-20261024-001C-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_contradictions_linear_shown": true,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NATIVE-HARDNESS-20261024-001C"
+}

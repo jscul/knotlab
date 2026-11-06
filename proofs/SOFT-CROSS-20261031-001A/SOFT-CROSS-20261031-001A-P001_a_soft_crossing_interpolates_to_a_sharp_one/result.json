@@ -1,0 +1,221 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SOFT-CROSS-20261031-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 8,
+    "mismatched": {}
+   }
+  },
+  "1 the cube minus an edge, unsigned, is a dead cap": {
+   "ok": true,
+   "detail": {
+    "F(xu, xp)": {
+     "(0, 0)": 3,
+     "(0, 1)": 3,
+     "(1, 0)": 3,
+     "(1, 1)": 3
+    }
+   }
+  },
+  "2 the soft crossing from the explicit page signings": {
+   "ok": true,
+   "detail": {
+    "straight": [
+     40000,
+     -1112,
+     3336,
+     -192
+    ],
+    "turning": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pages twisted": [
+     true,
+     true
+    ],
+    "MGI": -11389632
+   }
+  },
+  "3 snakes: crossover-type, straight entries sigma_1 Lambda^(k-1); predictions equal direct instance counts": {
+   "ok": true,
+   "detail": {
+    "Hadamard straight entries": {
+     "1": [
+      40000,
+      -1112,
+      3336,
+      -192
+     ],
+     "2": [
+      32400000000,
+      -8346672,
+      -75120048,
+      82944
+     ],
+     "3": [
+      26244000000000000,
+      -62650120032,
+      1691553240864,
+      -35831808
+     ],
+     "4": [
+      21257640000000000000000,
+      -470251800960192,
+      -38090395877775552,
+      15479341056
+     ],
+     "5": [
+      17218688400000000000000000000,
+      -3529710018007201152,
+      857719534375749879936,
+      -6687075336192
+     ],
+     "6": [
+      13947137604000000000000000000000000,
+      -26494003395162051846912,
+      -19314128475073135796398848,
+      2888816545234944
+     ]
+    },
+    "instances": {
+     "unsigned": {
+      "1": "354996",
+      "3": "236194590372299280",
+      "7": "101674633132833365897272..."
+     },
+     "two negations": {
+      "1": "224928",
+      "3": "147623063837643360",
+      "7": "635466457083878696073869..."
+     },
+     "five negations": {
+      "1": "365004",
+      "3": "236197409627700720",
+      "7": "101674633133486634102727..."
+     }
+    }
+   }
+  },
+  "4 the lattice condition: valuations of Lambda separate count vectors; squared products distinct": {
+   "ok": true,
+   "detail": {
+    "valuations (2, 3, 5, 139)": {
+     "2": [
+      4,
+      1,
+      1,
+      4
+     ],
+     "3": [
+      4,
+      3,
+      4,
+      3
+     ],
+     "5": [
+      4,
+      0,
+      0,
+      0
+     ],
+     "139": [
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    "distinct for total m": {
+     "1": true,
+     "2": true,
+     "3": true,
+     "4": true,
+     "5": true,
+     "6": true,
+     "7": true,
+     "8": true
+    }
+   }
+  },
+  "5 long edges: counts 9^k c+ + (-3)^k c-; the exact edge is recovered by interpolation": {
+   "ok": true,
+   "detail": {
+    "counts with long edge of k pairs": {
+     "0": 6,
+     "1": 54,
+     "2": 486,
+     "3": 4374,
+     "4": 39366
+    },
+    "recovered exact edge (from k = 1, 2)": "6",
+    "consistent at k = 3, 4": true
+   }
+  },
+  "6 end to end: 9 #col(K3,3) recovered from four counts of certified Pfaffian instances": {
+   "ok": true,
+   "detail": {
+    "recovered": {
+     "unsigned": {
+      "recovered": "54",
+      "#col(K3,3)": 6
+     },
+     "two negations": {
+      "recovered": "18",
+      "#col(K3,3)": 2
+     },
+     "five negations": {
+      "recovered": "18",
+      "#col(K3,3)": 2
+     }
+    },
+    "Pfaffian certificates": {
+     "1": {
+      "planar pieces": 3,
+      "certified": true,
+      "vertices": 60
+     },
+     "3": {
+      "planar pieces": 7,
+      "certified": true,
+      "vertices": 188
+     },
+     "5": {
+      "planar pieces": 11,
+      "certified": true,
+      "vertices": 316
+     },
+     "7": {
+      "planar pieces": 15,
+      "certified": true,
+      "vertices": 444
+     }
+    }
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "a single host point on wire B makes the one-site system singular": true,
+    "an exclusive crossing (double entry 0) leaves the double state unrecoverable": true,
+    "K3,3 is colourable under every signing (not Pfaffian)": true,
+    "a cube cap with one negated edge is not dead (for some edge)": true,
+    "exclusive crossing straight entries": [
+     64,
+     -8,
+     24,
+     0
+    ],
+    "non-dead single negations": 7
+   }
+  },
+  "ok": true,
+  "seconds": 0.6
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BPHP-RES-PARITY-AUDIT-20261019-001A-E001",
+  "ticket": "BPHP-RES-PARITY-AUDIT-20261019-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "A published reproduction procedure (arXiv 2609.23015v1, Appendix B.2) for a claim that the author says rests on its Lean formalization.",
+  "question": "Does the pinned formalization of Braun's bit-PHP lower bound build, report only standard axioms for every declaration its aggregate module lists, and pass a fresh kernel replay?",
+  "public_inputs": {
+    "repository": "https://github.com/kbr-/math-research.git",
+    "commit": "8904bf09a5376f48a00d1c25d079bf0c6441502a",
+    "toolchain_pin": "formalization/lean-toolchain (expected leanprover/lean4:v4.34.0-rc2)",
+    "mathlib_pin": "67248ba34806c60bf24b5e99f0f09946ffc465c9 (lakefile.lean and lake-manifest.json)",
+    "commands": [
+      "lake exe cache get claims/BitPHPPreprintRevision1.lean",
+      "python3 verify.py --target claims/BitPHPPreprintRevision1.lean --out <artifact>/verification.txt",
+      "lake env leanchecker --fresh claims.BitPHPPreprintRevision1"
+    ],
+    "checkout_location": "/home/jscul/external-audits/bit-php-check (outside this repository; third-party code built at the owner's request)"
+  },
+  "forbidden_inputs": [
+    "edits to the pinned sources, toolchain or dependency pins",
+    "skipping the fresh kernel replay"
+  ],
+  "primary_observable": "exit status of each command; the axiom set reported for each of the seven declarations listed by claims/BitPHPPreprintRevision1.lean; the elaborated type of MathResearch.bitPHP_exponential",
+  "controls": [
+    "A copy of the aggregate's audit with an extra declaration whose proof is sorry must be reported with sorryAx (the axiom check can fail).",
+    "A copy of the main theorem with the constant 32768 replaced by 1 must be rejected by Lean (the bound is not vacuous for the proof as written)."
+  ],
+  "decision_rule": "Pass: all three commands exit 0, every listed declaration depends only on propext, Classical.choice and Quot.sound, and both controls fail as intended. Any other outcome is recorded exactly; nothing is patched.",
+  "resource_budget": {
+    "wall_seconds": 14400,
+    "disk_gib": 25
+  },
+  "stop_rule": "Stop at the first failing command and record its output; otherwise stop after the controls.",
+  "nonclaims": [
+    "A clean replay shows only that the formal statements follow from the formal definitions in Lean's kernel with Mathlib; whether those definitions are the standard ones is ticket B.",
+    "No assessment of the paper's prose, literature claims or novelty."
+  ]
+}

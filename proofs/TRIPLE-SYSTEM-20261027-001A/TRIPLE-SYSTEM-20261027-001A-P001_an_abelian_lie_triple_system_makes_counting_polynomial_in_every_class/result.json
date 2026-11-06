@@ -1,0 +1,251 @@
+{
+ "schema_version": 1,
+ "artifact_id": "TRIPLE-SYSTEM-20261027-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "1 Lemma 1": {
+   "ok": true,
+   "detail": {
+    "cross3 (x+, y-)": {
+     "dim": 5,
+     "minus": 3,
+     "class": 3,
+     "abelian triple system": true,
+     "nonzero odd words deg 3": 0,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": true
+    },
+    "cross4 mod c3": {
+     "dim": 7,
+     "minus": 4,
+     "class": 4,
+     "abelian triple system": true,
+     "nonzero odd words deg 3": 0,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": true
+    },
+    "cross4 (x+, y-)": {
+     "dim": 8,
+     "minus": 5,
+     "class": 4,
+     "abelian triple system": false,
+     "nonzero odd words deg 3": 2,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": null
+    },
+    "four-way u4": {
+     "dim": 6,
+     "minus": 4,
+     "class": 3,
+     "abelian triple system": false,
+     "nonzero odd words deg 3": 4,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": null
+    },
+    "heisenberg (y1-, y2-)": {
+     "dim": 3,
+     "minus": 2,
+     "class": 2,
+     "abelian triple system": true,
+     "nonzero odd words deg 3": 0,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": true
+    },
+    "free class 3 on xy signs [1, -1]": {
+     "dim": 5,
+     "minus": 3,
+     "class": 3,
+     "abelian triple system": true,
+     "nonzero odd words deg 3": 0,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": true
+    },
+    "free class 4 on xy signs [1, -1]": {
+     "dim": 8,
+     "minus": 5,
+     "class": 4,
+     "abelian triple system": false,
+     "nonzero odd words deg 3": 2,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": null
+    },
+    "free class 5 on xy signs [1, -1]": {
+     "dim": 14,
+     "minus": 8,
+     "class": 5,
+     "abelian triple system": false,
+     "nonzero odd words deg 3": 6,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": null
+    },
+    "free class 3 on yv signs [-1, -1]": {
+     "dim": 5,
+     "minus": 4,
+     "class": 3,
+     "abelian triple system": false,
+     "nonzero odd words deg 3": 4,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": null
+    },
+    "free class 4 on xvy signs [1, 1, -1]": {
+     "dim": 32,
+     "minus": 17,
+     "class": 4,
+     "abelian triple system": false,
+     "nonzero odd words deg 3": 4,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": null
+    },
+    "free class 3 on xvy signs [1, 1, -1]": {
+     "dim": 14,
+     "minus": 7,
+     "class": 3,
+     "abelian triple system": true,
+     "nonzero odd words deg 3": 0,
+     "deg 5 (if abelian)": 0,
+     "Z central in g": true
+    }
+   }
+  },
+  "2 independent counts": {
+   "ok": true,
+   "detail": [
+    {
+     "manifold": "S^3_2(4_1)",
+     "p": 5,
+     "sector": 1,
+     "dim Z1": 2,
+     "count": 15625,
+     "predicted": 15625
+    },
+    {
+     "manifold": "S^3_2(T(2,5))",
+     "p": 5,
+     "sector": 1,
+     "dim Z1": 2,
+     "count": 15625,
+     "predicted": 15625
+    },
+    {
+     "manifold": "S^3_2(4_1#4_1)",
+     "p": 5,
+     "sector": 1,
+     "dim Z1": 3,
+     "count": 1953125,
+     "predicted": 1953125
+    },
+    {
+     "manifold": "S^3_2(T(2,5)#T(2,5))",
+     "p": 5,
+     "sector": 1,
+     "dim Z1": 3,
+     "count": 1953125,
+     "predicted": 1953125
+    },
+    {
+     "manifold": "S^3_2(5_2)",
+     "p": 7,
+     "sector": 1,
+     "dim Z1": 2,
+     "count": 117649,
+     "predicted": 117649
+    },
+    {
+     "manifold": "S^3_2(4_1 sector 0)",
+     "p": 5,
+     "sector": 0,
+     "dim Z1": 2,
+     "count": 1,
+     "predicted": 1
+    }
+   ]
+  },
+  "3 gadget surgeries": {
+   "ok": true,
+   "detail": [
+    {
+     "p": 5,
+     "gadget": "K3",
+     "algebra": "cross3 (x+, y-)",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 5,
+     "gadget": "K3",
+     "algebra": "cross4 mod c3",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 5,
+     "gadget": "K3",
+     "algebra": "cross4 (x+, y-)",
+     "obstructs (control)": true
+    },
+    {
+     "p": 5,
+     "gadget": "P3",
+     "algebra": "cross3 (x+, y-)",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 5,
+     "gadget": "P3",
+     "algebra": "cross4 mod c3",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 5,
+     "gadget": "P3",
+     "algebra": "cross4 (x+, y-)",
+     "obstructs (control)": true
+    },
+    {
+     "p": 7,
+     "gadget": "K3",
+     "algebra": "cross3 (x+, y-)",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 7,
+     "gadget": "K3",
+     "algebra": "cross4 mod c3",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 7,
+     "gadget": "K3",
+     "algebra": "cross4 (x+, y-)",
+     "obstructs (control)": true
+    },
+    {
+     "p": 7,
+     "gadget": "P3",
+     "algebra": "cross3 (x+, y-)",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 7,
+     "gadget": "P3",
+     "algebra": "cross4 mod c3",
+     "all samples lift": true,
+     "samples": 16
+    },
+    {
+     "p": 7,
+     "gadget": "P3",
+     "algebra": "cross4 (x+, y-)",
+     "obstructs (control)": true
+    }
+   ]
+  },
+  "all_ok": true
+ },
+ "seconds": 20.6
+}

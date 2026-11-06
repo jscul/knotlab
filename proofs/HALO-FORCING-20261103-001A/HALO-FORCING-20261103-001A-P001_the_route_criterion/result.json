@@ -1,0 +1,47 @@
+{
+ "artifact_id": "HALO-FORCING-20261103-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the route criterion, knot by knot: on the Fano plane attached at a point of five grown plane pieces (10 to 14 points), at every removal inside the handle, every six-pattern plane gluing line and four far sides, the new crossing knots (exact up to three points) are exactly the three-point candidates with a handle point and no route": {
+   "info": {
+    "candidates, both near points in the handle: no route, new": 2000,
+    "candidates, both near points in the handle: route (i), not new": 480,
+    "candidates, both near points in the handle: route (ii), not new": 2528,
+    "candidates, one near point elsewhere: no route, new": 400,
+    "candidates, one near point elsewhere: route (i), not new": 3840,
+    "candidates, one near point elsewhere: route (ii), not new": 32400,
+    "candidates, one near point on the gluing line: no route, new": 600,
+    "candidates, one near point on the gluing line: route (i), not new": 1920,
+    "candidates, one near point on the gluing line: route (ii), not new": 18816,
+    "cases (removal, gluing line, far side): create": 182,
+    "cases (removal, gluing line, far side): no new knot": 1210,
+    "new knots": 1500
+   },
+   "pass": true
+  },
+  "2 the transfer lemma's consequence: creation is a function of (removal, far side, the plane piece's transfer between ports and gluing line)": {
+   "info": {
+    "classes": 840,
+    "transfer classes with a single outcome": 840
+   },
+   "pass": true
+  }
+ },
+ "claim": "The route criterion. Let K = {r, o, c} be a crossing knot at a gluing line L, with near points r, o leaving the set T of L's patterns and the far point c excluding the set E. (1) The route lemma (proved): K is generated from one-sided knots when it has a route. Either one point of L separates T from what the far point allows, or, for some ordered pair (y, y') of L's points and values (b, b') with T fixing y = b and E containing every pattern with (y, y') = (b, b'), one of two things holds. (i) r is tied to y and T also fixes y' = b' (eliminate y' from {r, o, y'} and {y, y', c}). (ii) r is tied to neither and {r, y, y'} excludes (r's value, b, not b'); eliminate y' from {r, y, y'} and {y, y', c}, then y. Degenerate ties put K in the base. (2) The converse (computation). The Fano plane was attached at a point of five grown plane pieces (10 to 14 points), with every removal inside the handle, every six-pattern plane gluing line and four far sides. The new crossing knots, exact up to three points, are exactly the three-point candidates with a handle point and no route: 1,500 knots in 182 creating cases, against 59,984 routed candidate instances, none new. (3) Creation is a function of (removal, far side, the plane piece's transfer between the handle's ports and L): 840 classes, none mixed.",
+ "kind": "proof",
+ "proof": "HALO-FORCING-20261103-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HALO-FORCING-20261103-001A"
+}

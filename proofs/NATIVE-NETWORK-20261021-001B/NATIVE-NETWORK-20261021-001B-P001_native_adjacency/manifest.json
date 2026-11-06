@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-NETWORK-20261021-001B-P001",
+  "canonical_id": "NATIVE-NETWORK-20261021-001B-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-NETWORK-20261021-001B",
+  "proof": "NATIVE-NETWORK-20261021-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Adjacency, routes and separation from allowed states",
+  "status": "Proved",
+  "claim": "In a declared substrate (a system) of a law that composes like cycles, read from allowed states alone: (1) every route of circuits from x to y yields one circuit inside the route's union containing x and y, so reachability is the matroid's connectivity, while two not-all-three knots sharing a distinction give a route that does not compose; (2) the bond distance, the least size of a circuit containing x and y minus one, is an extended metric finite exactly on components, which the not-all-three pair violates, and in a chain of k atoms the circuits are exactly the runs, so the bond distance from e_i to e_j is j - i + 1; (3) in affine laws over finite fields erasing Z leaves M minus Z and pinning leaves the contraction read with single-valued distinctions free, so in a chain erasing the shared distinctions composes the ends into one contact, erasing a private loop separates them, pinning a shared distinction separates them and ties its neighbours, and pinning a private loop ties its neighbours and shortens the end-to-end bond by one; (4) the drawing is not recovered: three parity contacts in a triangle have the matroid of K4, whose 24 automorphisms are transitive and carry a drawn contact to the knot the loop leaves among the contacts; (5) the 3-net of Z_p pp-defines every linear subspace, so the law fixes no substrate (parity realizes the Fano plane, not graphic; the 3-net of Z3 realizes U(2,4), not binary). Hence the allowed states of a declared substrate fix contact adjacency, routes, native separation and an extended bond distance without a drawing, but not the drawing, and the law fixes none of them.",
+  "dependencies": [
+    "NATIVE-NETWORK-20261021-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A sampled system of a law composing like cycles with a route whose ends share no circuit, a violated triangle inequality, or finite bond-distance classes that differ from route classes.",
+    "A chain whose circuits are not exactly its runs, or whose bond distances are not j - i + 1.",
+    "In an affine law, an erased or pinned system whose circuits differ from those of the deletion or of the contraction read with single-valued distinctions free, or a chain-of-four statement that fails.",
+    "The triangle network's matroid is not that of K4, or its automorphisms do not carry the drawn contact to the loop's knot.",
+    "The parity or Z3 3-net substrate does not realize the Fano plane or U(2,4).",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-NETWORK-20261021-001",
+    "epic_path": [
+      "NATIVE-NETWORK-20261021-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-NETWORK-20261021-001A/NATIVE-NETWORK-20261021-001A-P001_network_gates/manifest.json",
+      "proofs/KNOT-SPACE-20261020-001B/KNOT-SPACE-20261020-001B-P001_recognized_space/manifest.json",
+      "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json",
+      "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/manifest.json",
+      "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json",
+      "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-NETWORK-20261021-001A/NATIVE-NETWORK-20261021-001A-P001_network_gates/manifest.json": "b9c162daedaa23f703935fbc721dae86b8c66e04676e91d134beed9a6106f9a5",
+    "proofs/KNOT-SPACE-20261020-001B/KNOT-SPACE-20261020-001B-P001_recognized_space/manifest.json": "f4e4a376a7294450675c8b07c0e1cf517333b4b0973d6f7119f17be60b61aa95",
+    "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json": "f62ce6ce9fb7d1c3fba07391bede51bdb302a93cf3b7ffe9e44f9a04bdd63f17",
+    "proofs/AFFINE-TOPS-20261021-001B/AFFINE-TOPS-20261021-001B-P001_affine_tops/manifest.json": "b36b5985a45516dd7ad1cf8fccafb2b63736d97b35697686467ea8e0c8e1a752",
+    "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json": "17ca9eef6bf9da1f8857b7cf59681c31dd8b1ded31f82a652d65195a977a08dc",
+    "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json": "015b24e9beb2935496b16ffe7b82b53b86aa029a9815e04e7f24d06b32b99f1e"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json",
+    "identity": "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/identity.json",
+    "directory": "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency",
+    "proof": "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/proof.md",
+    "result": "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/result.json",
+    "check": "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "routes_compose_proved": true,
+    "bond_distance_metric_proved": true,
+    "erasure_pinning_separation_proved": true,
+    "drawing_nonrecovery_proved": true,
+    "law_nonselection_proved": true
+  },
+  "foundation_claim_scope": "Contact-supported adjacency, routes, native separation and a candidate bond distance, relative to a declared substrate of a law that composes like cycles. No space created by a law, no metric geometry beyond the bond distance, no coordinates and no physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py samples 520 systems of thirteen laws composing like cycles (469 nonempty, 2,043 route pairs), chains of up to four atoms in eight laws, 150 erased and 454 pinned systems of three affine laws and a chain of four in each, the triangle network's matroid and automorphisms, and Fano and U(2,4) substrates; six controls rejected; no human or external review",
+    "level": "V1 prose proof with explicit and randomized checks; matroid connectivity (Whitney), puncturing and shortening, the Galois connection, the top lemma, Latin and affine tops, the gate audit and the space epic's recovery are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta: elementary matroid theory; new to the program are routes composing into contacts, the bond distance as an extended metric wherever composition holds, the erasure and pinning duality on shared and private distinctions, the loss of the drawing, and the law's non-selection of a substrate.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

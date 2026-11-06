@@ -1,0 +1,182 @@
+{
+ "artifact_id": "BRACE-TREE-20261105-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "passed",
+     "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/manifest.json": "Proved",
+     "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/result.json": "passed",
+     "proofs/NATIVE-GENUS-20261104-001B/NATIVE-GENUS-20261104-001B-P001_counting_and_locating_handles/manifest.json": "Proved",
+     "proofs/NATIVE-GENUS-20261104-001B/NATIVE-GENUS-20261104-001B-P001_counting_and_locating_handles/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the Fano plane alone: every removal creates at every other line, so its seven lines form one block (21 of 21 pairs mutual); census 58 alone: its three pairs of lines sharing two points are silent": {
+   "info": {
+    "Fano creating entries by far side (of 42)": {
+     "K4^(3)": 0,
+     "census 58": 42,
+     "census 6": 14,
+     "the Fano plane": 42
+    },
+    "Fano pairs": {
+     "mutual": 21
+    },
+    "census 58": {
+     "lines sharing two points": {
+      "silent": 3
+     },
+     "other pairs": {
+      "backward": 4,
+      "forward": 8,
+      "mutual": 12,
+      "silent": 1
+     }
+    },
+    "census 58 pairs sharing two points": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      3,
+      7
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "2 the block lemma for atoms attached at a line (proved: the rest forces the ports constant, so the screening lemma reduces creation among the atom's lines to the Fano plane's): checked on every design with such an atom": {
+   "info": {
+    "census 58, an atom at a line (Y)": {
+     "atom": "Y",
+     "entries equal to the Fano plane's": "42 of 42",
+     "its lines form one block": true
+    },
+    "prism(4), an atom at a line (Y)": {
+     "atom": "Y",
+     "entries equal to the Fano plane's": "42 of 42",
+     "its lines form one block": true
+    },
+    "prism(4), an atom at a line and one at a point on it (Y)": {
+     "atom": "Y",
+     "entries equal to the Fano plane's": "42 of 42",
+     "its lines form one block": true
+    },
+    "prism(5), an atom at a line (Y)": {
+     "atom": "Y",
+     "entries equal to the Fano plane's": "42 of 42",
+     "its lines form one block": true
+    },
+    "the Fano plane, an atom at a line (Y)": {
+     "atom": "Y",
+     "entries equal to the Fano plane's": "42 of 42",
+     "its lines form one block": true
+    },
+    "the Fano plane, atoms at a point and at a line off it (Y)": {
+     "atom": "Y",
+     "entries equal to the Fano plane's": "42 of 42",
+     "its lines form one block": true
+    }
+   },
+   "pass": true
+  },
+  "3 atoms attached at a point (computed): creation among the atom's lines equals the Fano plane's, so they form a block": {
+   "info": {
+    "census 58, an atom at a point (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "prism(4), an atom at a line and one at a point on it (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "prism(4), an atom at a point (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "prism(5), an atom at a point (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "the Fano plane, an atom at a point (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "the Fano plane, an atom at a point and another on that atom (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "the Fano plane, an atom at a point and another on that atom (Z)": {
+     "atom": "Z",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "the Fano plane, atoms at a point and at a line off it (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "the Fano plane, atoms at two points (W)": {
+     "atom": "W",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    },
+    "the Fano plane, atoms at two points (X)": {
+     "atom": "X",
+     "entries equal to the Fano plane's": "30 of 30",
+     "its lines form one block": true
+    }
+   },
+   "pass": true
+  },
+  "4 across a cut between two atoms (computed on the designs and every three-fold space up to 19 points): the receiver's intact lines create at the emitter's lines, and the emitter's removals never create at them (one-way, against the cut's direction)": {
+   "info": {
+    "(receiver's line, relation of an emitter line to it)": {
+     "cut line: mutual": 294,
+     "intact line: backward": 382
+    },
+    "cuts between two atoms": 17,
+    "relations seen at cut lines": [
+     "mutual"
+    ],
+    "spaces": 21,
+    "spaces showing each case": {
+     "cut line: mutual": 10,
+     "intact line: backward": 10
+    }
+   },
+   "pass": true
+  },
+  "5 lines sharing two points (doubled squares) never create at each other, in either direction, in the designs and the three-fold spaces up to 19 points": {
+   "info": {
+    "pairs": {
+     "silent": 40
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Native creation keeps atoms whole and reads the direction of the cuts between them. The Fano plane's creation map is complete: every removal creates at every other line, so its seven lines form one block (21 of 21 pairs mutual). For a Fano atom attached at a line, creation among its own lines equals the Fano plane's (proved: the rest of the space is a knot space minus that line, so it forces the ports constant and the screening lemma applies), so its lines form a block; checked on 6 designs, 42 of 42 entries each. For a Fano atom attached at a point the same holds on all 10 designs tested (30 of 30 entries each), unproved. Across a cut between two atoms (17 cuts in 21 spaces: designs and every three-fold space up to 19 points), an emitter line and a cut line of the receiver create at each other (294 of 294 pairs), while the receiver's intact lines create at the emitter's lines and the emitter's removals never create at them (382 of 382): creation runs one way, against the cut's direction. Lines sharing two points never create at each other: census 58's three such pairs alone, and 40 of 40 pairs in the spaces tested.",
+ "kind": "proof",
+ "proof": "BRACE-TREE-20261105-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "BRACE-TREE-20261105-001A"
+}

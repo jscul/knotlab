@@ -1,0 +1,104 @@
+{
+  "artifact_id": "LOOP-HUB-20261025-001B-P001",
+  "checks": {
+    "Lemma 1": {
+      "gadgets": 300,
+      "images compatible": true,
+      "injective per pattern": true,
+      "patterns": 15582,
+      "reversed rule fails somewhere": true,
+      "tree pattern maps injective": true,
+      "trees": 184
+    },
+    "Proposition 2: algebra": {
+      "identities hold": true,
+      "random functions": 20000
+    },
+    "Proposition 2: positivity": {
+      "G positive on every pattern": true,
+      "gadgets": 2000
+    },
+    "Proposition 3: witnesses": {
+      "image": {
+        "arm inequality holds": true,
+        "fails": true,
+        "image patterns over capacity": 1,
+        "knots": 3
+      },
+      "matching": {
+        "arm inequality holds": true,
+        "fails": true,
+        "knots": 3,
+        "linked pairs": 5,
+        "linked pairs within the two target classes": true,
+        "maximum matching": 4
+      },
+      "minor": {
+        "arm inequality holds": true,
+        "cross": 0,
+        "fails": true,
+        "is a tree": true,
+        "knots": 2,
+        "minor": 1
+      },
+      "partner": {
+        "F(u + e_i)": 3,
+        "arm inequality holds": true,
+        "fails": true,
+        "knots": 3,
+        "largest number of partners": 4
+      }
+    }
+  },
+  "claim": "For a gadget of a non-windable knot and a linked difference pattern d, the configurations compatible with d inject into those compatible with d xor arm(d), so the arm inequality holds whenever d -> d xor arm(d) is injective, as on trees. For any function on three bits, the arm inequality for the axes u and u + e_i together is equivalent to |minor| <= agree + cross in the table of terminal i against terminals j, k, and to 2F(u)F(u-bar) <= G(A)G(Abar) + the j and k split products, with G (terminal i free) positive on every pattern of a native gadget by co-independence. Explicit gadgets of two or three knots satisfy the arm inequality but fail the bound per partner solution, per image pattern, for one-sided path-flip matchings, and without the agreeing terms, so any proof for gadgets with cycles must be global.",
+  "controls": {
+    "path-flip matchings saturate on tree gadgets": true,
+    "the planted function violates the symmetric form": true,
+    "the reversed side rule gives an incompatible image": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "LOOP-HUB-20261025-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "arm_proof_requirements_shown": true,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "LOOP-HUB-20261025-001B"
+}

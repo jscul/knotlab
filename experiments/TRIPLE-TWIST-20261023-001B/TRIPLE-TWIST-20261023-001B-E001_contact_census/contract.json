@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "TRIPLE-TWIST-20261023-001B-E001",
+  "ticket": "TRIPLE-TWIST-20261023-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "The owner asked for a cheap feasibility check of the three-literal side. Scratch scoping: the monotone contact from four-place not-all-equal never contradicts on 20 triangular tori in any twist (a twisted not-all-equal colouring exists); for contacts that are not complement-closed a contractible seam on a planar patch creates contradictions (0 to 201 of 300 for x or 1-in-3), so their twist is a defect line, not a class; on planar patches of radius 3 and 5 and on 3 x 3, 4 x 4 and 5 x 5 tori, each of the 120 complement-closed placements either had a doubly allowed assignment on some torus (54) or contradicted on planar patches (66), never both. Among the 54, 20 placements that are neither pair nor parity contradicted in at least 40 of 100 samples in every twist without a doubly allowed assignment, and never in a twist with one.",
+  "question": "On fresh triangular tori and planar patches, does every complement-closed three-place contact either tile or contradict locally, with the local set as scoped; does the twist decide contradiction for the scoped group; and do minimal contradictions always wind, with line-shaped ones among them?",
+  "public_inputs": {
+    "model": "fair contacts with a visible bit x and three hidden places, the corners (a, b, c) of the up triangles ((i, j), (i+1, j), (i+1, j+1)) and down triangles ((i, j), (i, j+1), (i+1, j+1)) of the triangular lattice; allowed patterns R when x = 0 and their complements when x = 1",
+    "placements": "all 120 sets R of patterns that differ from their complement set, each taken once with its complement",
+    "patches": "planar hexagonal patches of radius 4 and 6 (no twist)",
+    "tori": "4 x 6, 6 x 4, 6 x 6, 7 x 7 (no shear) and 5 x 7 with shear 2, each in the four twists (alpha, beta)",
+    "core_tori": "4 x 6 and 6 x 6",
+    "samples": "200 fair x per patch and per torus twist; up to 30 minimal contradicting sets per non-fitting twist of the core tori, from up to 800 samples",
+    "predictions_file": "scoping_classes.json (scoping classes of the 120 placements and the group H list)"
+  },
+  "definitions": "A twist of class (alpha, beta) assigns each triangle the gauge of the twist cocycle (deck coordinates k1, k2 of each side; value alpha k1 + beta k2 mod 2) relative to its first corner; the hidden values are compared with the allowed patterns after adding the gauge. A doubly allowed assignment has every triangle's pattern allowed for both values of x. Tiling certificate: a doubly allowed assignment on some roster torus in some twist. Local certificate: a contradicting sample on a planar patch. Classes: TILING (tiling only), LOCAL (local only), BOTH, NONE. A twist fits a torus when a doubly allowed assignment exists there. Kinds: pair (R closed under majority), parity (R closed under minority), three (neither). A minimal contradicting set is found by deletion over triangles; its winding is the Hermite basis of the period lattice of its sides in deck coordinates (rank 0: contractible, rank 1: a line, rank 2: a cross).",
+  "predictions": {
+    "P1_theorem": "theorem-predicted (ticket A): no placement has both certificates; no sample contradicts in a fitting twist; every minimal contradicting set has a nonzero winding",
+    "P2_dichotomy": "scoping-predicted: every placement has exactly one certificate, and the set of LOCAL placements equals the scoping set (66 placements)",
+    "P3_twist_decides": "scoping-predicted: for each of the 20 group H placements and each roster torus, the twists split (some fit and some do not), and every non-fitting twist contradicts in at least one of 200 samples",
+    "P4_lines": "feasibility: among minimal contradicting sets of placements of kind three, at least one has winding of rank 1",
+    "reported": "per placement and geometry: certificates, fits, contradiction counts; the kinds by class; the placements that fit every twist; the placements that never contradict on tori although some twist does not fit; the ranks and sizes of minimal contradicting sets"
+  },
+  "controls": "the satisfiability solver agrees with brute force on 200 random 3 x 3 torus instances; the lattice of a full row of triangles on the 6 x 6 torus is Z(1, 0) and that of one triangle is 0; for six complement-closed contacts a contractible seam on a planar patch gives instances equisatisfiable with the plain patch after flipping x on the triangles whose first corner lies in the seam's disc (300 of 300); for x or 1-in-3, which is not complement-closed, the same seam raises the contradictions on the patch from 0 to at least 30 of 300",
+  "decision_rule": "If a control fails, the census does not run and the result is invalid. Refuted if P1 fails. Supported if P1, P2, P3 and P4 hold. Partially supported if P1 holds and any of P2, P3 or P4 fails; failures are reported placement by placement.",
+  "resource_budget": {"wall_seconds": 7200, "memory_mib": 4096, "threads": 1},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the 120 placements. Rows are written as they finish.",
+  "seeds": "deterministic: each sample stream is seeded by the SHA-256 of its (purpose, placement, geometry, twist) key",
+  "environment": "the repository's .venv CPython 3 with the PySAT package (Glucose 3) for satisfiability",
+  "red_team_r0": [
+    "The certificates are exact: a doubly allowed assignment found by the solver, or a contradicting instance found by the solver; only the contradiction frequencies are sampled.",
+    "P1 follows from ticket A; a failure would indicate a code or theorem error.",
+    "Sampling can miss rare contradictions, so a placement with rare planar contradictions could be misread as TILING; the scoping minimum for LOCAL placements was 145 of 200.",
+    "P3 is restricted to group H, whose scoping frequencies were high; placements with rare contradictions are reported without a prediction.",
+    "Minimal contradicting sets are one per sample, found by deletion in triangle order; they are not all minimal sets, so the winding distribution is of these representatives.",
+    "Only the triangular lattice is used; other triangulations or the square lattice with three-place contacts are not tested.",
+    "The kind of a placement is a property of its relation under polarity flips; contradictions are decided by a complete solver, not by local reasoning."
+  ],
+  "nonclaims": [
+    "Feasibility on small triangular tori; no asymptotic claim and no claim about other geometries.",
+    "No statement about walls or shielding for winding contradictions.",
+    "Lattices are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected certificates or counts as inputs to the census"
+  ]
+}

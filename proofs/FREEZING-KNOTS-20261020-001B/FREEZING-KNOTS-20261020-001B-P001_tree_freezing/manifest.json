@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "artifact_id": "FREEZING-KNOTS-20261020-001B-P001",
+  "canonical_id": "FREEZING-KNOTS-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "FREEZING-KNOTS-20261020-001B",
+  "proof": "FREEZING-KNOTS-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Star knots stop being native at the freezing threshold of the tree",
+  "status": "Proved",
+  "claim": "On the d-regular tree with the broadcast q-colouring (the uniform colouring of finite subtrees, and the local limit of planted colourings of random d-regular graphs): (1) a vertex is frozen (no finite change recolours it) exactly when every other colour is carried by a neighbour frozen within its own branch, and a branch root is frozen with probability p*, the largest fixed point of the coverage polynomial Phi; (2) for d >= q the relation on q neighbours of a vertex over all colourings is 'not all q colours used', a K1-K3 knot at every degree; (3) under the source-aware reading the knot is native with probability (1 - p*)^q (1 - zeta) + (1 - mu)^q zeta, equal to 1 exactly when p* = 0; (4) p* = 0 for d < 6, 10, 15 (q = 3, 4, 5), certified by exact Bernstein bounds, and p* >= 449/500, 427/500, 219/250 at and beyond those degrees, where nativity is below 0.0011, 0.00046, 0.00003. So star knots stop being native exactly and discontinuously at the freezing threshold, while the source-blind knot exists at every degree; as a threshold, native-knot density restates freezing.",
+  "dependencies": [
+    "FREEZING-KNOTS-20261020-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A Bernstein certificate of Phi(p) < p on (0, 1] fails below a stated threshold, or no rational witness Phi(r) >= r exists at it.",
+    "The star relation fails K1-K3 for q = 3, 4, 5, or a tuple not using all colours does not extend.",
+    "The nativity formula disagrees with the experiment's tree table, or nativity is not 1 below and below 0.001 at a threshold.",
+    "A control (witness one degree lower, unfrozen certificate at the threshold degree, all-colour tuples added) is accepted."
+  ],
+  "lineage": {
+    "home_scope": "FREEZING-KNOTS-20261020-001",
+    "epic_path": [
+      "FREEZING-KNOTS-20261020-001"
+    ],
+    "parents": [
+      "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json",
+      "experiments/FREEZING-KNOTS-20261020-001A/FREEZING-KNOTS-20261020-001A-E001_freezing_census/contract.json",
+      "artifacts/FREEZING-KNOTS-20261020-001A/FREEZING-KNOTS-20261020-001A-E001_freezing_census/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json": "346c1c957ec83f2988b84c38b0106de37dc2a7ace044bee8d7629fc30ff8c2c0",
+    "experiments/FREEZING-KNOTS-20261020-001A/FREEZING-KNOTS-20261020-001A-E001_freezing_census/contract.json": "849b1de9c6b6ced7da22a510b7ee2a5791067ff11961353c95811314b53936b5",
+    "artifacts/FREEZING-KNOTS-20261020-001A/FREEZING-KNOTS-20261020-001A-E001_freezing_census/result.json": "bef382bcfefe2804a53a980355db2e0680492f4b2742f7340cd2b565548bfb02"
+  },
+  "paths": {
+    "manifest": "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/manifest.json",
+    "identity": "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/identity.json",
+    "directory": "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing",
+    "proof": "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/proof.md",
+    "result": "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/result.json",
+    "check": "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "frozen_branch_recursion_proved": true,
+    "star_relation_knot_at_every_degree_proved": true,
+    "star_nativity_formula_proved": true,
+    "thresholds_certified_exactly": true,
+    "random_graph_statement_proved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "When knots on the regular tree's colourings are native at the typical (broadcast) world. No claim about uniformly random colourings of finite graphs, algorithms, native recurrence, composed topology, path, metric, space or physics.",
+  "validation": {
+    "status": "checked: prose proof; check.py certifies the thresholds in exact arithmetic (Bernstein coefficients with subdivision below, rational witnesses at), checks monotonicity in d on a grid, K1-K3 of the star relation for q = 3, 4, 5, the nativity formula against the experiment's 21-row tree table and the jump at each threshold; three controls rejected; calibrated on finite planted graphs by FREEZING-KNOTS-20261020-001A-E001; no human or external review",
+    "level": "V1 prose proof with exact certificates; cites Mezard-Montanari, Semerjian (2008), Zdeborova-Krzakala (2007), Molloy, Achlioptas-Coja-Oghlan and FREEZING-KNOTS-20261020-001A-E001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. The frozen-field recursion and the freezing (naive-reconstruction) thresholds are classical in the cavity-method literature; the thresholds were not compared against a published table. The delta is the star-knot reading: the source-blind knot exists at every degree, its nativity formula, and the exact bound at the threshold. As a threshold, native-knot density restates freezing.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLASS4-PAIRS-20261028-001C-P001",
+  "canonical_id": "CLASS4-PAIRS-20261028-001C-P001",
+  "kind": "proof",
+  "ticket": "CLASS4-PAIRS-20261028-001C",
+  "proof": "CLASS4-PAIRS-20261028-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Class-4 pair failures with linear flows are #P-hard if gadget counts are local up to relabeling",
+  "status": "Proved",
+  "claim": "p >= 5, r | p - 1, n graded with a grading-preserving C_r action, d | r, m = m_d of class 4 with a hard pair whose clean-edge conditions hold modulo gamma_4. Theorem 7 (an implication): if the zero-jump gadget counts are local up to a relabeling of degree-3 data (L4: for fixed degree-<=2 data on the variety, the degree-4 system of every graph gadget has the same linear part as the system assembled from single edges, and the constant parts differ by an element of its column space), single edges have linear flows (LS: private solutions split as S_1 x U(pi_1) with U linear, endpoint terms linear in the dual slot's data, vertex terms vanishing at zero data) and the rank witness (RW), then counting |Hom(pi_1 S^3_(d/p)(K), G)| is #P-hard (Fourier dual with independent endpoint potentials, non-negative by linearity). Corollary 7.1: (LS) and (RW) hold for free class 4 on (1,1), (0,1,1), (1,1,1) at d = 5 and on (2,2), (0,2,2), (2,2,2) at d = 10, so these six census algebras are #P-hard if (L4) holds; experiment CLASS4-PAIRS-20261028-001B-E001 supports (L4) on graphs up to K4. (L4) itself is not proved.",
+  "dependencies": [
+    "CLASS4-PAIRS-20261028-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A component of m_d in layer k <= 4 at a character other than k (after scaling) for one of the six algebras, or slot 2 with layer-1 data, a layer-4 component at a root of slot 2, or vertex/slot-1 data at two characters.",
+    "For free class 4 on (1, 1) at d = 5: a private solution set not of the form S_1 x U(pi_1) with U linear, endpoint terms not linear in slot-2 data or with a slot-2-free part, a negative or non-real Fourier value, or F(s, s) != F_max, F(0, D) not in [1, F_max).",
+    "Experiment CLASS4-PAIRS-20261028-001B-E001 not supported, or its contract or result changed."
+  ],
+  "lineage": {
+    "home_scope": "CLASS4-PAIRS-20261028-001",
+    "epic_path": [
+      "CLASS4-PAIRS-20261028-001"
+    ],
+    "parents": [
+      "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/manifest.json",
+      "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/result.json",
+      "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json",
+      "experiments/CLASS4-PAIRS-20261028-001B/CLASS4-PAIRS-20261028-001B-E001_class_4_gadget_counts_are_local_up_to_relabeling/contract.json",
+      "artifacts/CLASS4-PAIRS-20261028-001B/CLASS4-PAIRS-20261028-001B-E001_class_4_gadget_counts_are_local_up_to_relabeling/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/manifest.json": "6ac2fc09bd854a27849e196b38e0247f43ae2d31b2afe62459ecfcd1dce145be",
+    "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/result.json": "51337fa72f0ed94a03495e2eb6f2aad97bb584b6f07d50522137e976549c57bd",
+    "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json": "9c3f7e976d8dfd0613bb68ac21293f1a34edb8efee2d5c2fd021c137888c5cf1",
+    "experiments/CLASS4-PAIRS-20261028-001B/CLASS4-PAIRS-20261028-001B-E001_class_4_gadget_counts_are_local_up_to_relabeling/contract.json": "b22774ccb04e867b52ebe7898e4e1550cc727f404f6b7dcd211e7b9d081185b7",
+    "artifacts/CLASS4-PAIRS-20261028-001B/CLASS4-PAIRS-20261028-001B-E001_class_4_gadget_counts_are_local_up_to_relabeling/result.json": "236faca7f071973d60ed215e13501ec00a920636357ab44bbba4fb47c6203424"
+  },
+  "paths": {
+    "manifest": "proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality/manifest.json",
+    "identity": "proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality/identity.json",
+    "directory": "proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality",
+    "proof": "proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality/proof.md",
+    "result": "proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality/result.json",
+    "check": "proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "class4_linear_flow_hardness_conditional_shown": false
+  },
+  "foundation_claim_scope": "p >= 5, r | p - 1, graded nilpotent Lie algebras with m_d of class 4 and a grading-preserving C_r action; manifolds S^3_(d/p)(K). The theorem is an implication from the gadget-locality hypothesis (L4), which is supported by experiment on graphs with at most 4 vertices and 6 edges, not proved. Cited: Theorems 4-6 and lemmas of COPRIME-PAIRS-20261027-001E and F, Theorem 8 (CLASS4-PAIRS-20261028-001A), Lemma I, Bulatov-Grohe via Cai-Chen-Lu. Not covered: the other twenty (K)-only census algebras (d = 7, 9), the (B0), (B2') and order-3 cross-layer families. r counts the characters of the action, not Boolean variables. No P versus NP claim.",
+  "validation": {
+    "status": "checked: the six algebras have every layer-k component (k <= 4) of m_d at character k (scaled), so slot 2 has no layer-1 data and no layer-4 equations and the vertex and slot-1 data sit at one character; for free class 4 on (1,1) at d = 5, p = 11, exhaustively over the 11^5 private configurations at a diagonal and a pair-failing pair: solutions split as S_1 x U(pi_1) with U linear, endpoint terms linear in slot-2 data with no slot-2-free part, 200 random Fourier values real and non-negative, F(s,s) = F_max and 1 <= F(0,D) < F_max; experiment CLASS4-PAIRS-20261028-001B-E001 bound by hash, verdict supported. Theorem 7 is an implication from (L4), which is supported, not proved; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-28."
+  }
+}

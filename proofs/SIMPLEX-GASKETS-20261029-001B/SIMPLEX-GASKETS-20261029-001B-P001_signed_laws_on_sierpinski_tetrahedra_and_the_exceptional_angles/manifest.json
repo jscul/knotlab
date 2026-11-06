@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIMPLEX-GASKETS-20261029-001B-P001",
+  "canonical_id": "SIMPLEX-GASKETS-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "SIMPLEX-GASKETS-20261029-001B",
+  "proof": "SIMPLEX-GASKETS-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Signed laws on Sierpinski tetrahedra and the exceptional angles",
+  "status": "Proved",
+  "claim": "On level-k Sierpinski d-simplices: (1) the cosine wave (-1)^(x_0) cos(theta E) reproduces itself when the number of up simplices C(k+d-1, d) is odd and becomes a multiple of the sine wave (-1)^(x_0) sin(theta E)/sin(theta) when it is even, for every d, k and all but finitely many theta per level; the parity twist exchanges the two families in even d and maps sine to sine (theta -> pi/2 - theta) in odd d, so the d = 2 law (-1)^a [NAE] of period 4 is the cosine wave at pi/6; (2) for d >= 2 and even k both waves vanish at theta = pi/4 (phase frustration along the edges between non-base corners), so y^2 - 2 divides the factor; (3) complement preserves exactness, and the non-base flip does at odd k for complement-(anti)invariant laws; (4) even parity is exact exactly at powers of 2 in every dimension, odd parity also needs d even (Lucas); (5) census of the 3,280 (d = 3, levels 2-5) and 29,524 (d = 4, levels 2-3) laws f(x_0, ones among the other corners) with weights in {-1, 0, 1}: 75 and 75 exact, 13 and 8 with knot support; every family law is exact exactly where its theorem allows except at listed zero factors; 6 and 2 sporadic knot laws; the knots exact at every computed level are exactly standing waves (sine pi/3 and pi/6 in d = 3; sine pi/3 and cosine pi/6 in d = 4); (6) the exceptional angles of the sine wave for d = 2 (k <= 8), 3 (k <= 5), 4 (k <= 3): rational ones only pi/2 and pi/4 (even k), all others irrational multiples of pi.",
+  "dependencies": [
+    "SIMPLEX-GASKETS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "An exact law of the census outside the stated families, or a family law not exact at a level where its family predicts.",
+    "A real root of a factor polynomial in (-2, 2) missing from the stated list of exceptional angles, or a listed angle at which the wave is exact.",
+    "A census law whose computed corner relation disagrees with brute-force enumeration on the small levels."
+  ],
+  "lineage": {
+    "home_scope": "SIMPLEX-GASKETS-20261029-001",
+    "epic_path": [
+      "SIMPLEX-GASKETS-20261029-001"
+    ],
+    "parents": [
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json",
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json": "2947fa1cc430a1f97695fbc0cbf17415e4a7d668c4af8e26166894673356aea4",
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json": "4fb653729f829c3732e8b2a52f71602448ffd64e7ea46494caddd27dc4149a08"
+  },
+  "paths": {
+    "manifest": "proofs/SIMPLEX-GASKETS-20261029-001B/SIMPLEX-GASKETS-20261029-001B-P001_signed_laws_on_sierpinski_tetrahedra_and_the_exceptional_angles/manifest.json",
+    "identity": "proofs/SIMPLEX-GASKETS-20261029-001B/SIMPLEX-GASKETS-20261029-001B-P001_signed_laws_on_sierpinski_tetrahedra_and_the_exceptional_angles/identity.json",
+    "directory": "proofs/SIMPLEX-GASKETS-20261029-001B/SIMPLEX-GASKETS-20261029-001B-P001_signed_laws_on_sierpinski_tetrahedra_and_the_exceptional_angles",
+    "proof": "proofs/SIMPLEX-GASKETS-20261029-001B/SIMPLEX-GASKETS-20261029-001B-P001_signed_laws_on_sierpinski_tetrahedra_and_the_exceptional_angles/proof.md",
+    "result": "proofs/SIMPLEX-GASKETS-20261029-001B/SIMPLEX-GASKETS-20261029-001B-P001_signed_laws_on_sierpinski_tetrahedra_and_the_exceptional_angles/result.json",
+    "check": "proofs/SIMPLEX-GASKETS-20261029-001B/SIMPLEX-GASKETS-20261029-001B-P001_signed_laws_on_sierpinski_tetrahedra_and_the_exceptional_angles/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "simplex_gasket_exactness_shown": true
+  },
+  "foundation_claim_scope": "Signed (d+1)-bit laws symmetric in the non-base corners on level-k Sierpinski d-simplices (d = 3, 4; finite gadgets) and the standing wave's exceptional angles (d = 2, 3); exactness of the corner relation; the knot status of supports under K1-K3.",
+  "validation": {
+    "status": "checked: census engine against direct enumeration on 160 law-level pairs; full census recomputed exactly (int64, exact by the bound on summed vertices); every family law against its predicted levels with zero factors confirmed in floating point; Theorem 1 in floating point (60 cases, error below 1e-12 of the absolute sum) and in exact integers (cosine wave at pi/6, d = 2, k <= 8; d = 4, k <= 3); Theorem 2 by polynomial division and floating point; factorizations of the exact factor polynomials (six primes, stable under four); Theorem 4 in 36 cases; Lemma 3 on 54 flip instances; controls fire; proofs in proof.md; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found in the bounded search of SIMPLEX-GASKETS-20261029-001A (candidate local delta) for Theorems 1, 2, the census and Proposition 6; Lemma 3 elementary; Theorem 4 a direct extension of Lucas's theorem",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

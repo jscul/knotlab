@@ -1,0 +1,90 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-SURVIVORS-20261029-001B-P001",
+  "canonical_id": "HUB-SURVIVORS-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "HUB-SURVIVORS-20261029-001B",
+  "proof": "HUB-SURVIVORS-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Not-all-equal is rebuilt by its copies on the Fano plane, and by nothing smaller",
+  "status": "Proved",
+  "claim": "Let NAE be the relation on three bits excluding 000 and 111. A hub gadget of NAE copies has copies on triples of variables, three legs each in exactly one copy, hidden variables each in at least two copies, no variable twice in a copy, and connected copies; its relation is the set of leg tuples that extend to a 2-colouring with no monochromatic copy. Theorem 1: placing seven copies on the lines of the Fano plane and replacing one point by three legs, one on each line through it, gives relation NAE. Theorem 4: every hub gadget of NAE copies with relation NAE has at least seven copies, and with exactly seven it is this punctured Fano plane. The proof merges legs on distinct copies into one point (a 3-uniform hypergraph without property B, so at least seven edges, with equality only for the Fano plane: m(3) = 7, cited), and shows that two legs on one copy force the rest to be an equality wire of NAE copies, of which none has at most six copies (exhaustive search). Proposition 5: the punctured Fano gadget has exactly 5 hidden completions for every tuple of NAE and none for 000 and 111, so substituting it for every copy of NAE in any network multiplies the number of solutions by 5 per replaced copy and leaves the relation unchanged: an exact counted fixed point.",
+  "dependencies": [],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The punctured Fano gadget's relation differs from NAE.",
+    "A hub gadget of at most six NAE copies with relation NAE, or a seven-copy one not isomorphic to the punctured Fano plane.",
+    "An equality or inequality wire of at most six NAE copies with one end in one copy and the other end in any number of copies.",
+    "A tuple of NAE with a number of punctured-Fano completions other than 5."
+  ],
+  "lineage": {
+    "home_scope": "HUB-SURVIVORS-20261029-001",
+    "epic_path": [
+      "HUB-SURVIVORS-20261029-001"
+    ],
+    "parents": [],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/manifest.json",
+    "identity": "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/identity.json",
+    "directory": "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane",
+    "proof": "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/proof.md",
+    "result": "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/result.json",
+    "check": "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "nae_rebuilt_by_fano_plane_shown": false
+  },
+  "foundation_claim_scope": "Not-all-equal on three bits, hub gadgets as stated (legs in one copy each, hidden variables in at least two copies). Exhaustive searches cover up to seven copies for rebuilding and up to six for wires; the uniqueness of the Fano plane among seven-edge 3-uniform hypergraphs without property B is cited, and the seven-copy search checks the gadget-level statement.",
+  "validation": {
+    "status": "checked: the Fano plane has no property B and every line deletion gives it; the punctured Fano gadget has relation NAE at every point; exhaustive: no hub gadget of at most six NAE copies has relation NAE (199,340 at six), no NAE wire of at most six copies is an equality or inequality (1,017,014 at six), and all 17,610,420 seven-copy gadgets give exactly 90 labelled NAE rebuilds, all punctured Fano planes; the punctured Fano gadget has exactly 5 completions per NAE tuple at every point; controls fire (OR, a mutated plane, parity wires). The m(3) = 7 uniqueness of the Fano plane is cited and independently confirmed at the gadget level; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

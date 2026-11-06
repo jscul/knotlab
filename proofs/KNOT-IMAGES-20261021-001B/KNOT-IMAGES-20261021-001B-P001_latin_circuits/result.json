@@ -1,0 +1,338 @@
+{
+  "artifact_id": "KNOT-IMAGES-20261021-001B-P001",
+  "checks": {
+    "census": {
+      "controls": {
+        "C1_parity": true,
+        "C2_neither_knot_fails": true,
+        "C3_non_group_5_fails_on_the_shared_diagonal": true,
+        "C4_Z6_collapses": true
+      },
+      "predictions": {
+        "H1": true,
+        "H2": true,
+        "H2b": true,
+        "H3": true,
+        "H4": true,
+        "H5": false,
+        "H6": true
+      },
+      "signal": false
+    },
+    "proposition_5": {
+      "D4": {
+        "join_blocks": 1,
+        "m=2": {
+          "closure_blocks": 1,
+          "gadget_equals_right_translation_by_omega": true,
+          "proper": true
+        }
+      },
+      "Q8": {
+        "join_blocks": 1,
+        "m=2": {
+          "closure_blocks": 4,
+          "gadget_equals_right_translation_by_omega": true,
+          "proper": true
+        },
+        "m=4": {
+          "closure_blocks": 1,
+          "gadget_equals_right_translation_by_omega": true,
+          "proper": false
+        }
+      },
+      "S3": {
+        "join_blocks": 1,
+        "m=2": {
+          "closure_blocks": 1,
+          "gadget_equals_right_translation_by_omega": true,
+          "proper": true
+        }
+      },
+      "Z6": {
+        "join_blocks": 1,
+        "m=2": {
+          "closure_blocks": 3,
+          "gadget_equals_right_translation_by_omega": true,
+          "proper": true
+        },
+        "m=3": {
+          "closure_blocks": 2,
+          "gadget_equals_right_translation_by_omega": true,
+          "proper": true
+        }
+      }
+    },
+    "proposition_6": {
+      "beta_sum": 1,
+      "census_failures_or_collapse": false,
+      "census_search": "timeout",
+      "certificate_equations": 416,
+      "every_unknown_even": true,
+      "maltsev_affine_maps_on_Z2xZ2": 1,
+      "mod_pm1_is_the_m2_gadget": true,
+      "only_x_plus_y_plus_z": true,
+      "rebuilt_matches_census": true,
+      "tops_certified": true,
+      "tops_mod_pm1": true
+    },
+    "theorem_1": {
+      "3-net Q8": {
+        "circuits": 350,
+        "excluded_verified": 460,
+        "functional": 350,
+        "pairs": 460,
+        "systems": 120
+      },
+      "3-net Z2": {
+        "circuits": 513,
+        "excluded_verified": 1240,
+        "functional": 513,
+        "pairs": 1240,
+        "systems": 120
+      },
+      "3-net Z2xZ2": {
+        "circuits": 518,
+        "excluded_verified": 1262,
+        "functional": 518,
+        "pairs": 1262,
+        "systems": 120
+      },
+      "3-net Z2xZ4": {
+        "circuits": 344,
+        "excluded_verified": 448,
+        "functional": 344,
+        "pairs": 448,
+        "systems": 120
+      },
+      "3-net Z3": {
+        "circuits": 524,
+        "excluded_verified": 1287,
+        "functional": 524,
+        "pairs": 1287,
+        "systems": 120
+      },
+      "3-net Z4": {
+        "circuits": 515,
+        "excluded_verified": 1230,
+        "functional": 515,
+        "pairs": 1230,
+        "systems": 120
+      },
+      "3-net Z5": {
+        "circuits": 504,
+        "excluded_verified": 1196,
+        "functional": 504,
+        "pairs": 1196,
+        "systems": 120
+      },
+      "3-net Z7": {
+        "circuits": 350,
+        "excluded_verified": 460,
+        "functional": 350,
+        "pairs": 460,
+        "systems": 120
+      },
+      "3-net Z8": {
+        "circuits": 356,
+        "excluded_verified": 472,
+        "functional": 356,
+        "pairs": 472,
+        "systems": 120
+      },
+      "parity": {
+        "circuits": 158,
+        "excluded_verified": 147,
+        "functional": 158,
+        "pairs": 147,
+        "systems": 120
+      }
+    },
+    "theorem_3": {
+      "NG5_reidemeister": false,
+      "NG5_subsquare_functional": false,
+      "agree": 669,
+      "group isotopes": 594,
+      "others": 75,
+      "squares": 669
+    },
+    "theorem_4": {
+      "agree": true,
+      "binary_polymorphisms_Z2": 16,
+      "census_tops_match": {
+        "3-net Z2": true,
+        "3-net Z2xZ2": true,
+        "3-net Z2xZ4": true,
+        "3-net Z3": true,
+        "3-net Z4": true,
+        "3-net Z5": true,
+        "3-net Z7": true,
+        "3-net Z8": true
+      },
+      "groups": {
+        "Z10": {
+          "p_group": false,
+          "unique_maximal_fully_invariant": false
+        },
+        "Z11": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z12": {
+          "p_group": false,
+          "unique_maximal_fully_invariant": false
+        },
+        "Z13": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z14": {
+          "p_group": false,
+          "unique_maximal_fully_invariant": false
+        },
+        "Z15": {
+          "p_group": false,
+          "unique_maximal_fully_invariant": false
+        },
+        "Z16": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z2": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z2xZ2": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z2xZ2xZ2": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z2xZ2xZ4": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z2xZ4": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z2xZ6": {
+          "p_group": false,
+          "unique_maximal_fully_invariant": false
+        },
+        "Z2xZ8": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z3": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z3xZ3": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z4": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z4xZ4": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z5": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z6": {
+          "p_group": false,
+          "unique_maximal_fully_invariant": false
+        },
+        "Z7": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z8": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        },
+        "Z9": {
+          "p_group": true,
+          "unique_maximal_fully_invariant": true
+        }
+      },
+      "unary_polymorphisms_Z3": 27
+    }
+  },
+  "claim": "(1) If each range carries a proper pp-definable equivalence modulo which every circuit of every system is functional at each of its variables, the law composes like cycles; so a law composes like cycles with no overlapping circuit exactly when every circuit is a Latin hypercube modulo the tops (the Latin conjecture says overlapping never occurs). (2) For a Latin square, the relation of a 2x2 subsquare's entries is functional exactly when Reidemeister's condition holds, that is exactly for group isotopes. (3) The 3-net law of a finite abelian group composes like cycles exactly when the group is a p-group (its polymorphisms are the End(G)-affine maps, and a unique maximal proper fully invariant subgroup exists exactly for p-groups), and its systems then carry GF(p)-representable matroids. (4) If the elements with u^m = 1 generate a group without exhausting it (or two such sets do), its 3-net law does not compose like cycles: S3, D4, Z6. (5) No ternary polymorphism of the 3-net law of Q8 is a Mal'tsev operation modulo +-1 (an explicit 416-equation certificate); since census A found no failure for that law, either it fails in larger systems or Conjecture 7 of CYCLE-TOPS-20261021-001B-P001 is false.",
+  "controls": {
+    "every_abelian_3net_composes_like_cycles": {
+      "rejected": true
+    },
+    "every_group_3net_composes_like_cycles": {
+      "rejected": true
+    },
+    "every_square_reidemeister": {
+      "rejected": true
+    },
+    "functional_without_common_equivalence": {
+      "rejected": true,
+      "tie_mod2_proper": true,
+      "tie_mod3_proper": true,
+      "union_without_shared_free": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "KNOT-IMAGES-20261021-001B-P001",
+  "safe_conclusions": {
+    "abelian_3net_classification_proved": true,
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "latin_circuits_compose_like_cycles_proved": true,
+    "latin_conjecture_proved": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "q8_not_maltsev_on_tops_proved": true,
+    "reidemeister_link_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "small_element_obstruction_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "KNOT-IMAGES-20261021-001B"
+}

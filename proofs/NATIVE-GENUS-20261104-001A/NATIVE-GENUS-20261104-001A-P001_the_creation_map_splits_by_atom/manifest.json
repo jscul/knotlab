@@ -1,0 +1,143 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-GENUS-20261104-001A-P001",
+  "canonical_id": "NATIVE-GENUS-20261104-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-GENUS-20261104-001A",
+  "proof": "NATIVE-GENUS-20261104-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The creation map splits by atom",
+  "status": "Proved",
+  "claim": "The splitting lemma: in a space made of a base and atoms (the Fano plane or census 58 minus one element) at 3-edge cuts, whether removing a line M creates at a gluing line L depends only on the atoms holding M and L, because every other atom acts as the vertex it replaced. Proved for untouched atoms attached at a point (interface lemma: they leave their ports exactly the two constant patterns, checked for every element; screening lemma); for untouched atoms attached at a line the solutions are unchanged (their splits allow exactly the six other patterns) and creation is checked. Exact on thirteen designs with two or three atoms, including adjacent and touching placements and atoms attached to the Fano plane and census 58: every entry agrees with the space keeping only the touched atoms, and plane glue alone never creates. So each removal's creation in the glue is its atom's halo with that atom alone, atoms attached at lines have no halo, and glue removals see each atom as if it were alone. The creation map, taken over the four far sides, does not depend on the order of the gluing line's points (786 of 786 cases), though the census-6 far side alone does.",
+  "dependencies": [
+    "RELAY-NET-20261104-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "An atom (the Fano plane or census 58) minus a line that leaves its ports a non-constant pattern, or split at a point so that it excludes anything but the constant pair.",
+    "A gluing line where creation by some far side changes with the order of the line's points.",
+    "An entry of the creation map that differs from the entry in the space keeping only the atoms holding the removal and the gluing line, or plane glue that creates on its own."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-GENUS-20261104-001",
+    "epic_path": [
+      "NATIVE-GENUS-20261104-001"
+    ],
+    "parents": [
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json",
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json",
+      "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/manifest.json",
+      "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/result.json",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json",
+      "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/relay_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json": "31437632bde5e11865b2f754abafd2ffd18b844eef4ed6bbca8b8a21c86c7775",
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json": "b9d1e91e1b4ce97f44e8ceeb10fa291b97f29e9cdd2ff6536d89bc5d3578529e",
+    "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/manifest.json": "cf551d2feea2b4a65a7eb0882d41b6f630cff40304882799a879c798cc3aafe0",
+    "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/result.json": "822c6210b3b4c3fd51e4bf041db7f9bdc54148f13a8502ac6f5a16ec173340f4",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json": "f29b57c76d0fe81b8840932311a77204be4b20c62af8b857e722857ae68ab188",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json": "f4482c7572bb99bd43fd8a6e7d3de0b0882246f397cf3ea1fc3befb242cbd1f0",
+    "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "e8b7c28499893abe82eb07589a5463adc20417d4a5d1f851a7df6862acf08d4e",
+    "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "26efbb2ef81bed4787f3943d212dbf794f9d7dde159980a96ea32874c4eba23d",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "a185efe753f500980c65e3e80872d2cc52cf6cfd2ec4cf6b732ad42f2cca7ca5",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "2273beae421a889086a6f53a7f39dca6befd8ae3751ca8ee75e8b60f6e18a7d0",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json": "42934869c8dd4cddaa963c01417ff54dbd56a6064b040628df8c1c484a7427ed",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json": "2b128cbedcfff13fc3725063ccd30e6f038f7f731a046031d049a88439c25c08",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py": "55bf8bb3096978270faf9728d4baf4e8529419ae751af66c7bb32cb21bb8c98f",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py": "570c7a63a090648e999df5b319c74b8eb3ff0b7fd63725dd6d710c4c0a0ae2f4",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/relay_lib.py": "60a2da2a544d6797f29ad08b2bae4df3b0ee1ed375363522210150eef55d6764",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py": "0748e21df9761fdd6ba98a9ac11dd9e60b19e574bf38ba81ff5ffd8b8f15c6f9",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py": "0789a72111c3cb32fb4e29806061d95b94ea6facc87a83ade345ca8e5fbf4ed7",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/manifest.json",
+    "identity": "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/identity.json",
+    "directory": "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom",
+    "proof": "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/proof.md",
+    "result": "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/result.json",
+    "check": "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "splitting_checked": true
+  },
+  "foundation_claim_scope": "Thirteen designs: two or three atoms (the Fano plane or census 58, attached at points or lines) on the cube and the prisms over 8- and 10-cycles, at separated, adjacent and touching placements; atoms attached to the Fano plane and to census 58. Creation by the join method, new knots up to three points, four census far sides.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-04.",
+    "status": "splitting proved for untouched atoms attached at points (interface and screening lemmas); for untouched atoms attached at lines the solutions are unchanged and creation is checked exactly; no human or external review",
+    "novelty": "New here."
+  }
+}

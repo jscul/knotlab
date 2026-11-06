@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "artifact_id": "PC-SIZE-GRID-20261020-001B-P001",
+  "canonical_id": "PC-SIZE-GRID-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "PC-SIZE-GRID-20261020-001B",
+  "proof": "PC-SIZE-GRID-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Polynomial calculus size of Tseitin formulas on grids is exponential in the side",
+  "status": "Proved",
+  "claim": "For the a x b grid with any odd charge, every refutation of its Tseitin formula in polynomial calculus (0/1 basis) or in PCR (with twin variables), over any field of characteristic other than 2, has size at least 2^(gamma min(a,b) - O(1)) for an absolute constant gamma > 0; refutations of size 2^O(min(a,b)) poly(ab) exist, so the bound is tight up to the constant. Proof: a random restriction deleting the edges of non-corner faces at pairwise L-infinity distance at least 3 keeps at least a fifth of every cut (planar duality), so the restricted formula is Tseitin on a connected grid with holes whose balanced cuts give an explicit tangle of order about min(a,b)/15; the tangle lemma of PC-DEGREE-20261020-001B then forbids degree below about min(a,b)/30, while every monomial with that many variables is killed with probability 1 - exp(-Omega(min(a,b))).",
+  "dependencies": [
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "polynomial-calculus-size",
+    "tseitin-formulas",
+    "random-restrictions"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "The cut lemma fails: some vertex set on a checked grid keeps less than a fifth of its cut, or a nontrivial cut vanishes.",
+    "The isoperimetric lemma fails on a checked grid.",
+    "A sampled kill frequency falls below the claimed bound beyond sampling error, or far edges are dependent.",
+    "A damaged grid's computed degree falls below the tangle bound.",
+    "A control passes: separation 2 or corner faces keep every cut at a fifth.",
+    "A published statement of the bound is found."
+  ],
+  "lineage": {
+    "home_scope": "PC-SIZE-GRID-20261020-001",
+    "epic_path": [
+      "PC-SIZE-GRID-20261020-001"
+    ],
+    "parents": [
+      "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json",
+      "proofs/PC-DEGREE-20261020-001Z/PC-DEGREE-20261020-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json": "5815b573a2b3594b5014ce3fc584ead636dd35a60413b3bf1bb7434f96610446",
+    "proofs/PC-DEGREE-20261020-001Z/PC-DEGREE-20261020-001Z-P001_epic_closure/manifest.json": "8acae0feb2637fe0fa86aad7a1b976b00f43d11bda26e733919ebd53c8e4dd51"
+  },
+  "paths": {
+    "manifest": "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/manifest.json",
+    "identity": "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/identity.json",
+    "directory": "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size",
+    "proof": "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/proof.md",
+    "result": "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/result.json",
+    "check": "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "separated_face_restrictions_keep_a_fifth_of_every_cut_proved": true,
+    "grid_balanced_cut_at_least_a_third_of_side_proved": true,
+    "restricted_grid_degree_lower_bound_proved": true,
+    "pc_and_pcr_grid_size_lower_bound_proved": true,
+    "general_graph_size_lower_bound_proved": false,
+    "resolution_open_problem_resolved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "A proof-complexity size lower bound for Tseitin formulas on grids; no contact-first claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies the cut lemma exhaustively (compiled C) on every valid face selection and vertex set of six small grids, where the factor 5 is attained, and on 3,593 sampled vertex sets of 12x12 to 30x17 grids; both controls (separation 2, corner faces) break it; the isoperimetric lemma exhaustively on all grids with at most 28 vertices; selection and kill probabilities against 20,000 samples with far-edge independence; a degree sanity check by the label closure; the constant gamma; no human or external review",
+    "level": "V1 prose proof with exhaustive and sampled checks of its lemmas; the degree step uses the tangle lemma of PC-DEGREE-20261020-001B-P001 with an explicit tangle (no duality theorem needed); no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 (Beck-Nordstrom-Tang 2013 on XOR-substituted grids; Filmus-Lauria-Miksa-Nordstrom-Vinyals on PCR space; Mouli 2024 on bases; Itsykson-Riazanov-Smirnov 2022 on resolution and treewidth; Hastad and Hastad-Risse on bounded-depth Frege for grids) found no exponential PC or PCR size lower bound for plain grid Tseitin. The ingredients are standard; the bound may be known to specialists.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

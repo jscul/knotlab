@@ -1,0 +1,922 @@
+{
+  "schema_version": 1,
+  "artifact_id": "PATTERN-3D-20261025-001A-P001",
+  "status": "Proved",
+  "checks": {
+    "part1_partial_operations": {
+      "tables by label count": {
+        "1": 2,
+        "2": 81,
+        "3": 262144
+      },
+      "outcomes": {
+        "1": {
+          "empty": 1,
+          "survives": 1
+        },
+        "2": {
+          "empty": 28,
+          "survives": 7,
+          "fails 1-4": 36,
+          "mu = 0": 8,
+          "fails 2-3": 2
+        },
+        "3": {
+          "empty": 21521,
+          "survives": 3894,
+          "fails 1-4": 169622,
+          "mu = 0": 67045,
+          "fails 2-3": 62
+        }
+      },
+      "surviving tables": 3902,
+      "reduced survivors by groupoid components [(objects, group order)]": {
+        "[(1, 1), (1, 1), (1, 1)]": 54,
+        "[(1, 1), (1, 1)]": 289,
+        "[(1, 1)]": 3500,
+        "[(1, 2)]": 56,
+        "[(1, 3)]": 3
+      },
+      "every survivor reduces to a groupoid with equal values, lam = 1, mu = objects x group order": true,
+      "groupoid tables with equal values (all labels used)": 8,
+      "each of them survives with lam = 1 and mu = objects x group order": true,
+      "fast 1-4 test agrees with the generic test on 1,500 random tables": true
+    },
+    "part2_groupoids": {
+      "cases": {
+        "1": {
+          "arrows": 1,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 1,
+          "as predicted": true
+        },
+        "Z2": {
+          "arrows": 2,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 2,
+          "as predicted": true
+        },
+        "Z3": {
+          "arrows": 3,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 3,
+          "as predicted": true
+        },
+        "Z4": {
+          "arrows": 4,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 4,
+          "as predicted": true
+        },
+        "Z2xZ2": {
+          "arrows": 4,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 4,
+          "as predicted": true
+        },
+        "Z5": {
+          "arrows": 5,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 5,
+          "as predicted": true
+        },
+        "Z6": {
+          "arrows": 6,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 6,
+          "as predicted": true
+        },
+        "S3": {
+          "arrows": 6,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 6,
+          "as predicted": true
+        },
+        "Z7": {
+          "arrows": 7,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 7,
+          "as predicted": true
+        },
+        "Z8": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 8,
+          "as predicted": true
+        },
+        "Z4xZ2": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 8,
+          "as predicted": true
+        },
+        "Z2^3": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 8,
+          "as predicted": true
+        },
+        "D4": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 8,
+          "as predicted": true
+        },
+        "Q8": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 8,
+          "as predicted": true
+        },
+        "2 objects x 1": {
+          "arrows": 4,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 2,
+          "as predicted": true
+        },
+        "2 objects x Z2": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 4,
+          "as predicted": true
+        },
+        "two constants": {
+          "arrows": 2,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 1,
+          "as predicted": true
+        },
+        "four constants": {
+          "arrows": 4,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 1,
+          "as predicted": true
+        },
+        "Z2 + Z2": {
+          "arrows": 4,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 2,
+          "as predicted": true
+        },
+        "Z3 + Z3": {
+          "arrows": 6,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 3,
+          "as predicted": true
+        },
+        "Z4 + Z2xZ2": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 4,
+          "as predicted": true
+        },
+        "Z2 + 2 objects x 1": {
+          "arrows": 6,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 2,
+          "as predicted": true
+        },
+        "2 objects x 1 + 2 objects x 1": {
+          "arrows": 8,
+          "verdict": "survives",
+          "lam": 1,
+          "mu": 2,
+          "as predicted": true
+        },
+        "Z2 + 1 (unequal)": {
+          "arrows": 3,
+          "verdict": "fails 1-4",
+          "lam": null,
+          "mu": null,
+          "as predicted": true
+        },
+        "Z3 + Z2 (unequal)": {
+          "arrows": 5,
+          "verdict": "fails 1-4",
+          "lam": null,
+          "mu": null,
+          "as predicted": true
+        },
+        "2 objects x 1 + 1 (unequal)": {
+          "arrows": 5,
+          "verdict": "fails 1-4",
+          "lam": null,
+          "mu": null,
+          "as predicted": true
+        }
+      },
+      "all as predicted": true
+    },
+    "part4_count_formula": {
+      "sampled triangulations": 40,
+      "H1 types": [
+        [
+          0,
+          []
+        ],
+        [
+          0,
+          [
+            2
+          ]
+        ],
+        [
+          0,
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          0,
+          [
+            3
+          ]
+        ],
+        [
+          0,
+          [
+            4
+          ]
+        ],
+        [
+          0,
+          [
+            5
+          ]
+        ],
+        [
+          1,
+          []
+        ]
+      ],
+      "counts equal mu^V * sum |Hom(H1, G_i)| / |G_i|": true,
+      "the formula test can fail (some sample separates)": {
+        "Z4 vs Z2xZ2": true,
+        "Z3 vs trivial": true
+      },
+      "rows": [
+        {
+          "tetrahedra": 1,
+          "H1": [
+            0,
+            []
+          ],
+          "V": 1,
+          "E": 2,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 1,
+          "H1": [
+            0,
+            []
+          ],
+          "V": 2,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 4,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 1,
+          "H1": [
+            0,
+            []
+          ],
+          "V": 2,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 4,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 1,
+          "H1": [
+            0,
+            []
+          ],
+          "V": 2,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 4,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            []
+          ],
+          "V": 2,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 4,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 1,
+          "H1": [
+            0,
+            []
+          ],
+          "V": 1,
+          "E": 2,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 4,
+          "H1": [
+            0,
+            [
+              3
+            ]
+          ],
+          "V": 1,
+          "E": 5,
+          "Z3": 3,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              2
+            ]
+          ],
+          "V": 2,
+          "E": 5,
+          "Z3": 3,
+          "Z4": 8,
+          "Z2xZ2": 16,
+          "pair groupoid": 4,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            1,
+            []
+          ],
+          "V": 1,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            1,
+            []
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            [
+              2
+            ]
+          ],
+          "V": 2,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 8,
+          "Z2xZ2": 16,
+          "pair groupoid": 4,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            1,
+            []
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            [
+              2
+            ]
+          ],
+          "V": 1,
+          "E": 3,
+          "Z3": 1,
+          "Z4": 2,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              2
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 2,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            1,
+            []
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            [
+              2
+            ]
+          ],
+          "V": 2,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 8,
+          "Z2xZ2": 16,
+          "pair groupoid": 4,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            1,
+            []
+          ],
+          "V": 1,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              2
+            ]
+          ],
+          "V": 2,
+          "E": 5,
+          "Z3": 3,
+          "Z4": 8,
+          "Z2xZ2": 16,
+          "pair groupoid": 4,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            [
+              3
+            ]
+          ],
+          "V": 1,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            [
+              3
+            ]
+          ],
+          "V": 1,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            1,
+            []
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 4,
+          "H1": [
+            0,
+            [
+              3
+            ]
+          ],
+          "V": 1,
+          "E": 5,
+          "Z3": 3,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 2,
+          "H1": [
+            0,
+            [
+              3
+            ]
+          ],
+          "V": 1,
+          "E": 3,
+          "Z3": 3,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              3
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 3,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              5
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              4
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              4
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              4
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              4
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              4
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              5
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              5
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 4,
+          "H1": [
+            0,
+            [
+              5
+            ]
+          ],
+          "V": 1,
+          "E": 5,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              4
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 4,
+          "pair groupoid": 2,
+          "Z2 + Z2": 4
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              5
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 16,
+          "pair groupoid": 2,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 4,
+          "H1": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "V": 1,
+          "E": 5,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 16,
+          "pair groupoid": 2,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              5
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 1,
+          "Z2xZ2": 1,
+          "pair groupoid": 2,
+          "Z2 + Z2": 2
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 16,
+          "pair groupoid": 2,
+          "Z2 + Z2": 8
+        },
+        {
+          "tetrahedra": 3,
+          "H1": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "V": 1,
+          "E": 4,
+          "Z3": 1,
+          "Z4": 4,
+          "Z2xZ2": 16,
+          "pair groupoid": 2,
+          "Z2 + Z2": 8
+        }
+      ]
+    },
+    "part5_reduction_lemma": {
+      "survivors re-tested on their reduced triangles": 61,
+      "random rules with junk triangles re-tested": 300,
+      "same verdict and constants": true
+    },
+    "controls": {
+      "verdicts": {
+        "pair groupoid with its identities merged": "fails 1-4",
+        "two pair groupoids with X->Y and U->W merged": "fails 1-4",
+        "monoid {0,1} under multiplication": "fails 1-4",
+        "projection table x*y = x on three labels": "fails 2-3",
+        "Z2 + one constant (unequal values)": "fails 1-4",
+        "Z3 table with one entry changed": "fails 1-4"
+      },
+      "all fail": true
+    },
+    "all_checks_pass": true,
+    "seconds": 26.5
+  }
+}

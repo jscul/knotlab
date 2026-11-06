@@ -1,0 +1,217 @@
+{
+  "artifact_id": "GENERAL-SIZE-20261020-001B-P001",
+  "checks": {
+    "K33_in_grid6x6": {
+      "H_total_charge_odd": true,
+      "crossing_vertices": 5,
+      "immersion_found": true,
+      "off_path_vertices_even": true,
+      "path_lengths": [
+        1,
+        5,
+        4,
+        1,
+        3,
+        4,
+        5,
+        1,
+        6
+      ],
+      "path_union_total_odd": true,
+      "paths_edge_disjoint_with_correct_ends": true,
+      "renamed_formula_equivalent_to_H": true,
+      "split_constraints_imply_original": true,
+      "split_edges_partition_each_vertex": true,
+      "split_graph_is_subdivision_of_H": true
+    },
+    "Petersen_in_grid10x10": {
+      "H_total_charge_odd": true,
+      "crossing_vertices": 16,
+      "immersion_found": true,
+      "off_path_vertices_even": true,
+      "path_lengths": [
+        5,
+        5,
+        11,
+        5,
+        2,
+        2,
+        4,
+        8,
+        16,
+        5,
+        6,
+        7,
+        6,
+        2,
+        7
+      ],
+      "path_union_total_odd": true,
+      "paths_edge_disjoint_with_correct_ends": true,
+      "renamed_formula_equivalent_to_H": true,
+      "split_constraints_imply_original": true,
+      "split_edges_partition_each_vertex": true,
+      "split_graph_is_subdivision_of_H": true
+    },
+    "wall_networks": {
+      "E1_ordered_bundles_cell_system_m16": {
+        "w12": {
+          "cell_edges_without_detour_within_40": 0,
+          "cell_length_L": 6,
+          "cells": 9480,
+          "exceptional_edges_U": 0,
+          "longest_detour_l": 17
+        },
+        "w24": {
+          "cell_edges_without_detour_within_40": 0,
+          "cell_length_L": 6,
+          "cells": 37416,
+          "exceptional_edges_U": 0,
+          "longest_detour_l": 17
+        }
+      },
+      "E2_spectral_gaps_m16": {
+        "w12": {
+          "blocks_b4": {
+            "all_degree_3": true,
+            "branch_vertices": 480,
+            "ladder_minor_gap": 0.0373,
+            "ladder_minor_gap_at_half_steps": 0.0374
+          },
+          "ordered_b1": {
+            "all_degree_3": true,
+            "branch_vertices": 480,
+            "ladder_minor_gap": 0.0,
+            "ladder_minor_gap_at_half_steps": 0.0
+          },
+          "uniform_bw": {
+            "all_degree_3": true,
+            "boundary_cycle_minor_gap": 0.0064,
+            "branch_vertices": 480,
+            "ladder_minor_gap": 0.0538,
+            "ladder_minor_gap_at_half_steps": 0.0538
+          }
+        },
+        "w24": {
+          "blocks_b4": {
+            "all_degree_3": true,
+            "branch_vertices": 1056,
+            "ladder_minor_gap": 0.0,
+            "ladder_minor_gap_at_half_steps": 0.0
+          },
+          "ordered_b1": {
+            "all_degree_3": true,
+            "branch_vertices": 1056,
+            "ladder_minor_gap": 0.0,
+            "ladder_minor_gap_at_half_steps": 0.0005
+          },
+          "uniform_bw": {
+            "all_degree_3": true,
+            "boundary_cycle_minor_gap": 0.0029,
+            "branch_vertices": 1056,
+            "ladder_minor_gap": 0.0419,
+            "ladder_minor_gap_at_half_steps": 0.0419
+          }
+        },
+        "w48": {
+          "blocks_b4": {
+            "all_degree_3": true,
+            "branch_vertices": 2208,
+            "ladder_minor_gap": 0.0,
+            "ladder_minor_gap_at_half_steps": 0.0004
+          },
+          "ordered_b1": {
+            "all_degree_3": true,
+            "branch_vertices": 2208,
+            "ladder_minor_gap": 0.0,
+            "ladder_minor_gap_at_half_steps": 0.0048
+          },
+          "uniform_bw": {
+            "all_degree_3": true,
+            "boundary_cycle_minor_gap": 0.0014,
+            "branch_vertices": 2208,
+            "ladder_minor_gap": 0.0437,
+            "ladder_minor_gap_at_half_steps": 0.0437
+          }
+        }
+      },
+      "E3_shortest_cycle_through_bundle_edges_K4_w64": {
+        "b1": {
+          "max": 6,
+          "mean": 6,
+          "median": 6.0
+        },
+        "b16": {
+          "max": 16,
+          "mean": 8.74,
+          "median": 8.0
+        },
+        "b4": {
+          "max": 10,
+          "mean": 6.61,
+          "median": 6.0
+        },
+        "b64": {
+          "max": 18,
+          "mean": 11.85,
+          "median": 12.0
+        }
+      }
+    }
+  },
+  "claim": "(1) If a connected graph H is weakly immersed in a connected graph G of maximum degree Delta (edges to edge-disjoint paths, crossings allowed), then for every odd charge on G there is an odd charge on H such that the resolution and PCR size of Tseitin on H is at most 2^O(Delta) times that on G. (2) Every connected graph of treewidth t needs resolution and PCR (characteristic other than 2) size 2^Omega(t^(1/9)/polylog t), from walls (CELL-SIZE-20261020-001) and the Chuzhoy-Tan grid-minor theorem. (3) If every graph of maximum degree 3 and treewidth t has a topological minor of treewidth at least t/polylog t that is cellular (a cell system with bounded parameters and few exceptional edges) or compact (at most treewidth times polylog vertices), then resolution and PCR need size 2^Omega(t/polylog t) for Tseitin on every graph; asking only for immersions does not weaken this hypothesis. (4) On wall networks G(K,w,b), whose bundles reverse blocks of b ports and permute ports inside each block, every topological minor H has tw(H) <= C sqrt(m(|V(H)| + mwb)); with an expander skeleton (treewidth lower bound sketched) a compact minor keeping the treewidth up to a factor lambda forces w <= C lambda^2 b, so the compact case fails at b = sqrt(w). The hypothesis of (3) is not proved.",
+  "controls": {},
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "GENERAL-SIZE-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "all_graphs_polynomial_exponent_bound_proved": true,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "cellular_or_compact_conjecture_proved": false,
+    "composed_logical_topology_formed": false,
+    "conditional_reduction_proved": true,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "general_resolution_open_problem_resolved": false,
+    "immersion_monotonicity_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "wall_network_surface_bound_proved": true,
+    "wall_network_treewidth_lower_bound_proved": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "resolution-size",
+    "polynomial-calculus-size",
+    "tseitin-formulas",
+    "graph-immersions"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "GENERAL-SIZE-20261020-001B"
+}

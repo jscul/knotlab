@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FOUR-PLACE-20261031-001A-P001",
+  "canonical_id": "FOUR-PLACE-20261031-001A-P001",
+  "kind": "proof",
+  "ticket": "FOUR-PLACE-20261031-001A",
+  "proof": "FOUR-PLACE-20261031-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The value-free four-place knots",
+  "status": "Proved",
+  "claim": "The complement-invariant (value-free) four-place knot relations, unions of antipodal pairs of {0,1}^4 whose three-place projections are full, are exactly 30, in four classes under flips and permutations: parity (8 states, 2 relations), not-exactly-two (10 states, 8), twelve (12 states, 12) and not-all-equal (14 states, 8). A complement-invariant law can never pin a value, since every piece's accepted relation is complement-invariant. By Schaefer's theorem only parity is tractable with unbounded occurrences. On plain systems only the eight relations excluding both constants can fail (odd parity, three of not-exactly-two, three of twelve, not-all-equal). Census over every 4-regular 4-uniform system with n <= 7 and every signing: not-all-equal never fails; parity and not-exactly-two fail on every such system; twelve fails on every system with n <= 6 and on 11 of the 14 with n = 7.",
+  "dependencies": [
+    "PINNING-20261031-001Z",
+    "PARITY-CORRECTION-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A fifth class of value-free four-place knots, or a class count other than 2, 8, 12, 8.",
+    "A piece of a complement-invariant law whose accepted relation is not complement-invariant.",
+    "A non-affine class closed under one of Schaefer's tractable polymorphisms.",
+    "A 4-regular 4-uniform system with n <= 7 missing from the enumeration."
+  ],
+  "lineage": {
+    "home_scope": "FOUR-PLACE-20261031-001",
+    "epic_path": [
+      "FOUR-PLACE-20261031-001"
+    ],
+    "parents": [
+      "research/MUTUAL-SELECTION-20261031-001C/census.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json",
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json",
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json": "1ff4c941d6b0da079e7f8cc81fa3b7f56e0b55b34b44fb8cb7137b3404301a73",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json": "de7599c4aa49df6b39bbd8258153bc3dd33ebcd660633c77e05e492045b54076",
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json": "71e60d9524306382f0790416a1d531eded2ae19273b080c75fa85e57d8f78374",
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json": "f3978b2c6c627a9ff093990b408b5296e3261d6da0eb65d559b4316a93f1f905"
+  },
+  "paths": {
+    "manifest": "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json",
+    "identity": "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/identity.json",
+    "directory": "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots",
+    "proof": "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/proof.md",
+    "result": "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json",
+    "check": "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "four_place_catalogue_shown": true
+  },
+  "foundation_claim_scope": "A structural classification of value-free four-place relations and a finite census; no counting claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31.",
+    "status": "checked: the catalogue by enumeration; complement invariance of accepted relations; Schaefer polymorphisms; the enumeration of 4-regular 4-uniform systems up to n = 7 (1, 1, 4, 14) and the failure census; no human or external review",
+    "novelty": "Schaefer (1978) and Thomassen (1992) are classical; the four-class census of value-free four-place knots was found in no source checked (elementary enumeration)."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-APPROX-20261024-001A-P001",
+  "canonical_id": "NATIVE-APPROX-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-APPROX-20261024-001A",
+  "proof": "NATIVE-APPROX-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Windable knots count approximately",
+  "status": "Proved",
+  "claim": "Every knot is strictly terraced in McQuillan's sense because of K2 (no two excluded tuples adjacent). A knot is windable exactly when it excludes at most two tuples or is a parity knot (26 of 34), decided both by McQuillan's three-place inequality and by exact feasibility of his definition; the 8 knots excluding three tuples (a parity class minus one) are not windable. Given McQuillan's winding theorem, native counting with pins and free legs has a fully polynomial randomized approximation scheme for every windable knot; with exact formulas for the four topological knots, only the six non-symmetric knots excluding three tuples lack an efficient counting algorithm.",
+  "dependencies": [
+    "NATIVE-COUNTING-20261024-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A knot that is not strictly terraced.",
+    "A windability verdict that differs from the census, or a non-windable knot that does not exclude three tuples.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-APPROX-20261024-001",
+    "epic_path": [
+      "NATIVE-APPROX-20261024-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-COUNTING-20261024-001Z/NATIVE-COUNTING-20261024-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-COUNTING-20261024-001Z/NATIVE-COUNTING-20261024-001Z-P001_epic_closure/manifest.json": "d8c070774490198247a3415f70504f29e1027273260af54d56936d44c8f790f5"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/manifest.json",
+    "identity": "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/identity.json",
+    "directory": "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately",
+    "proof": "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/proof.md",
+    "result": "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/result.json",
+    "check": "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "windable_knots_count_approximately_shown": true
+  },
+  "foundation_claim_scope": "Finite census of three-place relations; the approximation algorithms are cited external theorems. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, exact simplex over fractions) confirms the terraced property, the census by two independent tests, and four controls reproducing published verdicts. The approximation scheme is a cited external theorem. No human or external review",
+    "level": "V1 prose proof with exact finite checks; conditional algorithmic corollary",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIGNED-SUBDIVISION-20261029-001A-P001",
+  "canonical_id": "SIGNED-SUBDIVISION-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "SIGNED-SUBDIVISION-20261029-001A",
+  "proof": "SIGNED-SUBDIVISION-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Signs add no exact law under shared subdivision",
+  "status": "Proved",
+  "claim": "Under shared subdivision of the triangular-lattice torus (the S2 and S1 rule shapes of SHARED-SUBDIVISION-20261029-001A), weights plus or minus one on a knot's tuples (135,440 signed rules in 944 gauge orbits, by a gauge lemma: edge sign functions for S1, corner sign functions with product one for S2) create no new exact or support-exact shape at scale 2 (coarse sides 2, 3, 4) or scale 3 (coarse sides 2, 3). At scale 2 the support-exact signed rules are exactly the sign patterns of the 22 counted-exact shapes (all 80 of their orbits); 28 orbits (3,144 rules) are exact: the unsigned orbit (one of two) for parity and the three-excluded pairs, two of eight for each twisted not-all-equal pair. At scale 3 the support-exact signed rules are 36 orbits (4,608 rules) of the six twisted pairs, six of eight per pair, all exact. The planned expectation that every sign pattern of a counted-exact shape stays exact is refuted by the census.",
+  "dependencies": [
+    "SHARED-SUBDIVISION-20261029-001A",
+    "INTERFERENCE-20261029-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A signed rule of a shape outside the counted-exact census that is exact or support-exact on coarse tori of side 2, 3 and 4 at scale 2 (or 2 and 3 at scale 3).",
+    "An orbit count, exact or support-exact, that differs from the table in proof.md when recomputed from the definitions.",
+    "Gauge-related rules with different fine or coarse sums."
+  ],
+  "lineage": {
+    "home_scope": "SIGNED-SUBDIVISION-20261029-001",
+    "epic_path": [
+      "SIGNED-SUBDIVISION-20261029-001"
+    ],
+    "parents": [
+      "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json",
+      "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json",
+      "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json",
+      "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json": "2bb0f66e2f0e06a7f2f2caeb5fd72f80266169e82841868efe8aacf3355319bb",
+    "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json": "5b58aed5c2c3f929d3a29c38347ca89efd958a3817bed8fd57fc3ed6498678e3",
+    "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json": "c9320bdd38dd588456335ee9b99f9681c220299ec0b9fb0dcbe77c4d3fb7e733",
+    "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json": "cb16c95e8c0376e399151cd65d751e2fe2aebf101c8034426ae02e6c84b78e1e"
+  },
+  "paths": {
+    "manifest": "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/manifest.json",
+    "identity": "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/identity.json",
+    "directory": "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision",
+    "proof": "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/proof.md",
+    "result": "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/result.json",
+    "check": "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "signed_subdivision_census_shown": true
+  },
+  "foundation_claim_scope": "Weighted three-bit laws (weights plus or minus one on a knot's tuples) on the triangular-lattice torus, S2 and S1 rule shapes of SHARED-SUBDIVISION-20261029-001A; exactness and support-exactness (the interference reading) under shared subdivision at scale 2 (coarse sides 2, 3, 4) and scale 3 (coarse sides 2, 3).",
+  "validation": {
+    "status": "checked: 34 knots, 122 shapes, 135,440 signed rules; the unsigned baseline reproduces the counted census (22 at scale 2, 6 at scale 3); gauge invariance on 200 random (rule, gauge) pairs and 944 orbits; exact fine and coarse sums modulo three to six primes on every orbit representative at coarse sides 2 to 4 (scale 2) and 2 to 3 (scale 3); survivors as tabulated; controls fire (a magnitude-2 weight breaks exactness, the up part of a gauge alone changes F, an unsigned non-exact shape stays non-exact); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

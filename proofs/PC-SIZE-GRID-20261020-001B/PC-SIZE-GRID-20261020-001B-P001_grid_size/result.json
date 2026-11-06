@@ -1,0 +1,159 @@
+{
+  "artifact_id": "PC-SIZE-GRID-20261020-001B-P001",
+  "checks": {
+    "c_checker_built": true,
+    "constants": {
+      "gamma_at_least_1e-6": true,
+      "gamma_bits_per_unit_side": 1.006759867222048e-06,
+      "independence_spacing_edges": 360,
+      "p": 0.04,
+      "q": 0.007508
+    },
+    "cut_lemma_exhaustive": {
+      "factor_five_attained": true,
+      "grids": {
+        "3x8": {
+          "max_ratio": 5.0,
+          "min_balanced_cut_G": 3,
+          "min_balanced_cut_any_G_prime": 1,
+          "selections": 23,
+          "vanishing_cuts": 0
+        },
+        "4x4": {
+          "max_ratio": 3.0,
+          "min_balanced_cut_G": 4,
+          "min_balanced_cut_any_G_prime": 2,
+          "selections": 6,
+          "vanishing_cuts": 0
+        },
+        "4x5": {
+          "max_ratio": 5.0,
+          "min_balanced_cut_G": 4,
+          "min_balanced_cut_any_G_prime": 1,
+          "selections": 10,
+          "vanishing_cuts": 0
+        },
+        "4x6": {
+          "max_ratio": 3.0,
+          "min_balanced_cut_G": 4,
+          "min_balanced_cut_any_G_prime": 2,
+          "selections": 19,
+          "vanishing_cuts": 0
+        },
+        "4x7": {
+          "max_ratio": 5.0,
+          "min_balanced_cut_G": 4,
+          "min_balanced_cut_any_G_prime": 2,
+          "selections": 37,
+          "vanishing_cuts": 0
+        },
+        "5x5": {
+          "max_ratio": 5.0,
+          "min_balanced_cut_G": 5,
+          "min_balanced_cut_any_G_prime": 1,
+          "selections": 21,
+          "vanishing_cuts": 0
+        }
+      },
+      "holds": true
+    },
+    "cut_lemma_sampled": {
+      "holds": true,
+      "restricted_grids_connected": true,
+      "vertex_sets": 3593
+    },
+    "degree_sanity_damaged_5x5": {
+      "distinct_rows": [
+        "{\"deleted_edges\": 0, \"min_balanced_cut\": 5, \"pc_degree_balanced\": 4, \"tangle_bound\": 3}",
+        "{\"deleted_edges\": 4, \"min_balanced_cut\": 3, \"pc_degree_balanced\": 3, \"tangle_bound\": null}",
+        "{\"deleted_edges\": 8, \"min_balanced_cut\": 1, \"pc_degree_balanced\": 3, \"tangle_bound\": null}",
+        "{\"deleted_edges\": 8, \"min_balanced_cut\": 2, \"pc_degree_balanced\": 3, \"tangle_bound\": null}"
+      ],
+      "grids": 21,
+      "holds": true
+    },
+    "isoperimetric_lemma_exhaustive": {
+      "holds": true,
+      "min_balanced_cut": {
+        "3x3": 3,
+        "3x4": 3,
+        "3x5": 3,
+        "3x6": 3,
+        "3x7": 3,
+        "3x8": 3,
+        "3x9": 3,
+        "4x4": 4,
+        "4x5": 4,
+        "4x6": 4,
+        "4x7": 4,
+        "5x5": 5
+      }
+    },
+    "kill_probabilities": {
+      "every_candidate_face_at_least_q_bound": true,
+      "far_edges_independent": true,
+      "joint_kill_z_score": 1.18,
+      "largest_z_score": 3.35,
+      "min_kill_probability_of_a_literal": 0.007508,
+      "q_used_in_proof": 0.007508,
+      "selection_matches_exact_formula": true
+    }
+  },
+  "claim": "For the a x b grid with any odd charge, every refutation of its Tseitin formula in polynomial calculus (0/1 basis) or in PCR (with twin variables), over any field of characteristic other than 2, has size at least 2^(gamma min(a,b) - O(1)) for an absolute constant gamma > 0; refutations of size 2^O(min(a,b)) poly(ab) exist, so the bound is tight up to the constant. Proof: a random restriction deleting the edges of non-corner faces at pairwise L-infinity distance at least 3 keeps at least a fifth of every cut (planar duality), so the restricted formula is Tseitin on a connected grid with holes whose balanced cuts give an explicit tangle of order about min(a,b)/15; the tangle lemma of PC-DEGREE-20261020-001B then forbids degree below about min(a,b)/30, while every monomial with that many variables is killed with probability 1 - exp(-Omega(min(a,b))).",
+  "controls": {
+    "corner_faces_break_the_lemma": true,
+    "pm1_restrictions_never_kill": true,
+    "separation_two_breaks_the_lemma": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "PC-SIZE-GRID-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "general_graph_size_lower_bound_proved": false,
+    "grid_balanced_cut_at_least_a_third_of_side_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "pc_and_pcr_grid_size_lower_bound_proved": true,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "resolution_open_problem_resolved": false,
+    "restricted_grid_degree_lower_bound_proved": true,
+    "separated_face_restrictions_keep_a_fifth_of_every_cut_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "polynomial-calculus-size",
+    "tseitin-formulas",
+    "random-restrictions"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "PC-SIZE-GRID-20261020-001B"
+}

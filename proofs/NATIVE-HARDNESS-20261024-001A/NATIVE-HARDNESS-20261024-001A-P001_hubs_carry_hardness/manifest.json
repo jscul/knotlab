@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-HARDNESS-20261024-001A-P001",
+  "canonical_id": "NATIVE-HARDNESS-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-HARDNESS-20261024-001A",
+  "proof": "NATIVE-HARDNESS-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Hubs carry hardness",
+  "status": "Proved",
+  "claim": "All 34 three-place knots are delta-matroids, exactly the two parity knots are even, and all 34 (indeed all 155 nonempty three-place delta-matroids) are coverable in the sense of Kazda, Kolmogorov and Rolinek; the hub relation, all-equal on three places, is not a delta-matroid (degree set {0, 3}). Hub-free networks of knots with pins are exactly edge constraint problems over these relations, and hubs are exactly all-equal constraints. Conditionally on the cited theorems (Kazda-Kolmogorov-Rolinek Theorem 11, Feder's fan-out theorem, Schaefer, Lovasz and Cornuejols), hub-free networks of every knot are polynomial, while networks with hubs are NP-complete for the 16 knots outside the Schaefer classes: hardness lives in hubs.",
+  "dependencies": [
+    "BASE-THREE-20261021-001Z",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A knot that is not a delta-matroid, or not coverable, or a misclassified Schaefer class.",
+    "A random small network whose hub-free edge-problem encoding or hub encoding is not equisatisfiable with it.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-HARDNESS-20261024-001",
+    "epic_path": [
+      "NATIVE-HARDNESS-20261024-001"
+    ],
+    "parents": [
+      "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/manifest.json": "90a6636d9d2598c2df04c6ba2aeeda239c1fa4a1a72a5011534b1e1228f3b4f8",
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "79d4141c67f0e6f1467e2b98a3661cbe5dfaefcfdc1542c7f3c5ce9b29a589c7"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-HARDNESS-20261024-001A/NATIVE-HARDNESS-20261024-001A-P001_hubs_carry_hardness/manifest.json",
+    "identity": "proofs/NATIVE-HARDNESS-20261024-001A/NATIVE-HARDNESS-20261024-001A-P001_hubs_carry_hardness/identity.json",
+    "directory": "proofs/NATIVE-HARDNESS-20261024-001A/NATIVE-HARDNESS-20261024-001A-P001_hubs_carry_hardness",
+    "proof": "proofs/NATIVE-HARDNESS-20261024-001A/NATIVE-HARDNESS-20261024-001A-P001_hubs_carry_hardness/proof.md",
+    "result": "proofs/NATIVE-HARDNESS-20261024-001A/NATIVE-HARDNESS-20261024-001A-P001_hubs_carry_hardness/result.json",
+    "check": "proofs/NATIVE-HARDNESS-20261024-001A/NATIVE-HARDNESS-20261024-001A-P001_hubs_carry_hardness/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "knot_delta_matroid_census_shown": true
+  },
+  "foundation_claim_scope": "Finite Boolean constraint networks; complexity statements are conditional on cited external theorems, which are not admitted as local evidence. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) confirms the census (exchange axiom, evenness, KKR coverability, Schaefer classes, gaps) for all 34 knots and all 155 three-place delta-matroids, and the two reductions on 300 random networks; three controls including a non-coverable four-place delta-matroid. Complexity statements are conditional on cited external theorems. No human or external review",
+    "level": "V1 census and reductions; conditional complexity corollaries",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

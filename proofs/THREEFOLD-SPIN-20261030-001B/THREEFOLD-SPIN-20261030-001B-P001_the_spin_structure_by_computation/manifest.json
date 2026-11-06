@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-SPIN-20261030-001B-P001",
+  "canonical_id": "THREEFOLD-SPIN-20261030-001B-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-SPIN-20261030-001B",
+  "proof": "THREEFOLD-SPIN-20261030-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The spin structure by computation",
+  "status": "Proved",
+  "claim": "Exact computation confirming ticket A and extending it to non-planar glue. (1) On every three-fold space with at most 22 points (the Fano space, the 13-point space, the four 19-point classes, and the 21- and 22-point spaces), on all or a stated number of minimal maps: every face has length 2 mod 4, every vertex lies on three distinct faces, the knot's spin structure has Arf invariant 0, the form vanishes on every difference of perfect matchings, and these differences realize exactly 3^h homology classes for h Fano atoms, the spin structures even on every handle. (2) On minimal maps of the 35-point space with non-planar (trisum) glue and the 43-point twisted cube: faces of length 2 mod 4, three distinct faces at every vertex, Arf invariant 0, and the form vanishing on sampled matching differences. (3) Four trisums of prisms (non-planar glue braces) are rigid of genus one, and on all of their minimal maps their Pfaffian signing is Kasteleyn with three distinct faces at every vertex, Arf invariant 0, and the matching differences fill the three even classes. (4) On the Heawood torus the four Kasteleyn classes have determinants of absolute value 24, 8, 8, 8; only the knot's class counts the 24 perfect matchings; the Cimasoni-Reshetikhin formula recovers 24 from the four. (5) On non-minimal maps the same signs can be Kasteleyn with an odd spin structure: on 1,500 seeded random maps each, 22 of 1,002 Kasteleyn maps of the 13-point space (genus 6 and 7) and 8 of 1,149 of the trisum (2,2,3) (genus 5) are odd; none of 1,240 Kasteleyn maps of the Heawood graph (genus 1 to 4); none below genus 3.",
+  "dependencies": [
+    "THREEFOLD-SPIN-20261030-001A",
+    "THREEFOLD-AMPLITUDE-20261030-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "theorem"
+    ]
+  },
+  "failure_conditions": [
+    "A minimal map of a listed space with a face of length 0 mod 4, or with Arf invariant 1.",
+    "A space up to 22 points whose matching differences realize other than 3^h classes, or a difference on which the form is 1.",
+    "A listed trisum that is not rigid, or one of whose minimal maps is not Kasteleyn for its Pfaffian signing.",
+    "Heawood Kasteleyn determinants other than 24, 8, 8, 8, or the Cimasoni-Reshetikhin sum not equal to 2^g times 24."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-SPIN-20261030-001",
+    "epic_path": [
+      "THREEFOLD-SPIN-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/manifest.json",
+      "proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/result.json",
+      "proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/spin_lib.py",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/manifest.json",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/result.json",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/computation_lib.py",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/manifest.json": "cce6ce1148d87bbaba68c64b20a02a2d0698a4d60549f2b392fc23712ad1e793",
+    "proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/result.json": "bb81be29943626438240ed80601abf725ff0c9a6932781b8a58938da2a74ebac",
+    "proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/spin_lib.py": "252f7395c6a791d9f4d3ac1a247df0b8d42279b58ffb1a9ca4f928e8ccd11b13",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/manifest.json": "0d403ce46a54b07bd0f16773809be17394f01d2055c81e16cb5c16ac77b9f184",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/result.json": "31eddbfb8b7fc54bef1f2706f5396b61a4579f1d0066520e2cdbc24c31fec195",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/computation_lib.py": "0ea7887ef7be1decee2180bcd826aff167fb240f6dd5826c4f46eafbae30d621",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py": "0789a72111c3cb32fb4e29806061d95b94ea6facc87a83ade345ca8e5fbf4ed7",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py": "b128dbc6be5a114d6d978b718a738a04d5393b4ae1fe5567d6bc119d2b16a7ba",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-SPIN-20261030-001B/THREEFOLD-SPIN-20261030-001B-P001_the_spin_structure_by_computation/manifest.json",
+    "identity": "proofs/THREEFOLD-SPIN-20261030-001B/THREEFOLD-SPIN-20261030-001B-P001_the_spin_structure_by_computation/identity.json",
+    "directory": "proofs/THREEFOLD-SPIN-20261030-001B/THREEFOLD-SPIN-20261030-001B-P001_the_spin_structure_by_computation",
+    "proof": "proofs/THREEFOLD-SPIN-20261030-001B/THREEFOLD-SPIN-20261030-001B-P001_the_spin_structure_by_computation/proof.md",
+    "result": "proofs/THREEFOLD-SPIN-20261030-001B/THREEFOLD-SPIN-20261030-001B-P001_the_spin_structure_by_computation/result.json",
+    "check": "proofs/THREEFOLD-SPIN-20261030-001B/THREEFOLD-SPIN-20261030-001B-P001_the_spin_structure_by_computation/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_spin_computed": true
+  },
+  "foundation_claim_scope": "Exhaustive for the minimal maps and perfect matchings stated; sampled where stated (larger spaces, non-minimal maps). Computation does not discharge a theorem; it confirms ticket A and explores non-planar glue and non-minimal maps.",
+  "validation": {
+    "status": "computed exactly (SAT for minimal maps, GF(2) linear algebra for homology, determinants); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "the realized classes 3^h, the trisum braces' behaviour and the odd spin structures on non-minimal maps: new here",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

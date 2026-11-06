@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "STRIP-RELAY-20261103-001B-P001",
+  "canonical_id": "STRIP-RELAY-20261103-001B-P001",
+  "kind": "proof",
+  "ticket": "STRIP-RELAY-20261103-001B",
+  "proof": "STRIP-RELAY-20261103-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Pendant rings",
+  "status": "Proved",
+  "claim": "Pendant rings. A ring (the prism over a 2k-cycle minus one line) spliced onto a grid through one 3-edge cut. (1) The ring law (proved given the reduction lemma, the ladder law and the route criterion): with an opened Fano handle attached at the middle point of the removed line, every ring line sees the closed prism, since the grid acts as the removed line; there the removed line is the point's line whose far corner lies on the long face opposite it, so the far halo on the ring is exactly the far part of that face, k - 3 lines running the whole length of the ring. (2) Checked with the validated pipeline on rings over 16- to 64-cycles spliced onto the 64-point grid: at every attachment point, exactly one point creates beyond distance 3 off the faces around it in the spliced space; it is that cut point, and it creates at k - 3 ring lines (5, 9, 13, 21, 29); in the closed prism its far halo is exactly the far lines of the opposite long face and contains them.",
+  "dependencies": [
+    "STRIP-RELAY-20261103-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A ring length where the cut point's halo does not run along the ring's whole far face, or another point creates off the faces around it.",
+    "A ring line where creation from the cut point differs from the closed prism's."
+  ],
+  "lineage": {
+    "home_scope": "STRIP-RELAY-20261103-001",
+    "epic_path": [
+      "STRIP-RELAY-20261103-001"
+    ],
+    "parents": [
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py",
+      "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json",
+      "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json": "f29b57c76d0fe81b8840932311a77204be4b20c62af8b857e722857ae68ab188",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json": "f4482c7572bb99bd43fd8a6e7d3de0b0882246f397cf3ea1fc3befb242cbd1f0",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py": "0748e21df9761fdd6ba98a9ac11dd9e60b19e574bf38ba81ff5ffd8b8f15c6f9",
+    "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json": "26779753c89703f1d61df6c466416183348de5070badfe51714a4e0b5763128d",
+    "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json": "0b6ac5369c0b5d0dbd717a81ba33199fe696f0815a98b11eb8c726c0d4f88424",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c"
+  },
+  "paths": {
+    "manifest": "proofs/STRIP-RELAY-20261103-001B/STRIP-RELAY-20261103-001B-P001_pendant_rings/manifest.json",
+    "identity": "proofs/STRIP-RELAY-20261103-001B/STRIP-RELAY-20261103-001B-P001_pendant_rings/identity.json",
+    "directory": "proofs/STRIP-RELAY-20261103-001B/STRIP-RELAY-20261103-001B-P001_pendant_rings",
+    "proof": "proofs/STRIP-RELAY-20261103-001B/STRIP-RELAY-20261103-001B-P001_pendant_rings/proof.md",
+    "result": "proofs/STRIP-RELAY-20261103-001B/STRIP-RELAY-20261103-001B-P001_pendant_rings/result.json",
+    "check": "proofs/STRIP-RELAY-20261103-001B/STRIP-RELAY-20261103-001B-P001_pendant_rings/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "pendant_ring_law_checked": true
+  },
+  "foundation_claim_scope": "Rings (prisms over 2k-cycles minus a line) spliced onto the 64-point grid, k = 8 to 32; the Fano plane as handle.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03.",
+    "status": "the ring law follows from the reduction lemma and the ladder law; computed for every ring length tested; no human or external review",
+    "novelty": "New here."
+  }
+}

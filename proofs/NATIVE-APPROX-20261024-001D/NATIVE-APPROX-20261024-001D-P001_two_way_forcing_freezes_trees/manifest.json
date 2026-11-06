@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-APPROX-20261024-001D-P001",
+  "canonical_id": "NATIVE-APPROX-20261024-001D-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-APPROX-20261024-001D",
+  "proof": "NATIVE-APPROX-20261024-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Two-way forcing freezes native trees",
+  "status": "Proved",
+  "claim": "A place of a knot is two-way when the knot's excluded tuples take both values there. A knot freezes every native tree without pins (some boundary values force the root edge to 0 and others to 1, at every depth) exactly when all three places are two-way; at a one-way place with value u, every tree whose root edge sits there has P(root edge = u) at most 1/2. Exactly 14 knots are two-way forcing: the four excluding an antipodal pair, the eight excluding three tuples (including the six open knots) and the two parity knots. So decay uniform over boundary pins fails for the six open knots, as for not-all-equal and parity; this explains the refutation recorded by ticket C and is not a hardness signal.",
+  "dependencies": [
+    "NATIVE-APPROX-20261024-001C"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A two-way forcing knot and a native tree without pins on which some root value cannot be forced.",
+    "A one-way place and a tree with its root edge there whose root marginal exceeds 1/2 for the forbidden value.",
+    "The census differs from 14 knots in the three stated families.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-APPROX-20261024-001",
+    "epic_path": [
+      "NATIVE-APPROX-20261024-001"
+    ],
+    "parents": [
+      "experiments/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/contract.json",
+      "artifacts/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/result.json",
+      "artifacts/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/rows.jsonl"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "experiments/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/contract.json": "debd49e4b6de867326e5ab5a63351c7478fac7e06c371b4cb8956199c27de19a",
+    "artifacts/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/result.json": "e6809db4515f7a186bc724d688b1d82bdce8104a5013bcc4c3201cc1ba5b6ec3",
+    "artifacts/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/rows.jsonl": "84e4b234015778e6bde97a7d2915b8aeb5ac43b5792823346130e876447a3f2f"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-APPROX-20261024-001D/NATIVE-APPROX-20261024-001D-P001_two_way_forcing_freezes_trees/manifest.json",
+    "identity": "proofs/NATIVE-APPROX-20261024-001D/NATIVE-APPROX-20261024-001D-P001_two_way_forcing_freezes_trees/identity.json",
+    "directory": "proofs/NATIVE-APPROX-20261024-001D/NATIVE-APPROX-20261024-001D-P001_two_way_forcing_freezes_trees",
+    "proof": "proofs/NATIVE-APPROX-20261024-001D/NATIVE-APPROX-20261024-001D-P001_two_way_forcing_freezes_trees/proof.md",
+    "result": "proofs/NATIVE-APPROX-20261024-001D/NATIVE-APPROX-20261024-001D-P001_two_way_forcing_freezes_trees/result.json",
+    "check": "proofs/NATIVE-APPROX-20261024-001D/NATIVE-APPROX-20261024-001D-P001_two_way_forcing_freezes_trees/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "two_way_forcing_freezes_trees_shown": true
+  },
+  "foundation_claim_scope": "Finite relations and finite native trees. Decay is the uniform-over-pins notion used by correlation-decay schemes; no approximation or hardness claim. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) confirms the census, the forcing construction on 2,100 random trees by exact counts (1,826 forcings also by brute force), the bound 1/2 at one-way places on 11,904 hard and 432 soft boundaries, and consistency with ticket C's rows; two controls. No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

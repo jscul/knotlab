@@ -1,0 +1,92 @@
+{
+  "artifact_id": "NATIVE-APPROX-20261024-001D-P001",
+  "checks": {
+    "census": {
+      "families of the one-way knots": {
+        "pair at distance two": 12,
+        "single clause": 8
+      },
+      "families of the two-way knots": {
+        "antipodal pair": 4,
+        "parity": 2,
+        "three excluded": 8
+      },
+      "knots": 34,
+      "the six open knots are two-way": true,
+      "two-way forcing knots": 14
+    },
+    "exact counting": {
+      "exact counts equal brute force": 204,
+      "trees": 204
+    },
+    "if": {
+      "every root value forced on every tree": true,
+      "of which also by brute force": 1826,
+      "root values forced": 4200,
+      "trees": 2100
+    },
+    "only if": {
+      "P(root edge = u) <= 1/2 at every one-way root place": true,
+      "hard boundaries checked": 11904,
+      "soft boundaries checked": 432
+    },
+    "ticket C": {
+      "C knots two-way / one-way": [
+        11,
+        3
+      ],
+      "C: one-way controls fell below 1e-6 at depth 16 without pins": true,
+      "C: two-way knots kept width 1 on every tree without pins": true
+    }
+  },
+  "claim": "A place of a knot is two-way when the knot's excluded tuples take both values there. A knot freezes every native tree without pins (some boundary values force the root edge to 0 and others to 1, at every depth) exactly when all three places are two-way; at a one-way place with value u, every tree whose root edge sits there has P(root edge = u) at most 1/2. Exactly 14 knots are two-way forcing: the four excluding an antipodal pair, the eight excluding three tuples (including the six open knots) and the two parity knots. So decay uniform over boundary pins fails for the six open knots, as for not-all-equal and parity; this explains the refutation recorded by ticket C and is not a hardness signal.",
+  "controls": {
+    "the construction is refused at every one-way place for its forbidden value": true,
+    "without K2 the construction can leave no consistent assignment": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NATIVE-APPROX-20261024-001D-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "two_way_forcing_freezes_trees_shown": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NATIVE-APPROX-20261024-001D"
+}

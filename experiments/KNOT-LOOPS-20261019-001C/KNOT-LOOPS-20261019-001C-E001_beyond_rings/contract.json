@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-LOOPS-20261019-001C-E001",
+  "ticket": "KNOT-LOOPS-20261019-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "(a) In networks with several loops, can a three-variable knot that is not parity remember structure, that is, exclude a pattern of its middle distinctions when some edge's transfer is not a permutation? (b) Do many-valued links whose transfers are permutations keep a constant amount of memory around loops, and do non-commuting ones remember the order of the loop? (c) Among sampled three-valued knots, do only all-permutation links keep a constant amount of memory as rings grow?",
+  "public_inputs": {
+    "networks": "K4, K_{2,3}, the triangular prism, the 3x3 grid and K_{3,3}, plus the 4-cycle as a ring check; every edge oriented from lower to higher vertex number; one copy of the same three-variable placement on every edge, witnesses at the vertices, the edge's middle distinction as its variable; all 204 placements",
+    "many_valued_links": "three-valued witnesses: Z3 (w' = w + m mod 3, m in Z3); transpositions (w' = t_m(w), t_0, t_1, t_2 the transpositions of Z3); S3 (w' = s(w), s ranging over the six permutations); rings of length k = 1..6",
+    "sampled_knots": "2000 three-valued relations on (w, m, w') drawn by including each of the 27 states in the excluded set with probability 1/4 and kept when they are knots (excluded set nonempty, no line of three states along one variable fully excluded); seed 20261019; rings k = 1..7"
+  },
+  "forbidden_inputs": [
+    "predicted counts as inputs to the producer"
+  ],
+  "observables": {
+    "network": "per graph and placement: excluded patterns of the composite, split into patterns whose every edge transfer is a permutation and patterns with at least one transfer that is not; for the former, agreement with the holonomy rule (excluded exactly when some cycle has an odd number of swaps); bits remembered = log2(2^E / allowed)",
+    "many_valued": "per link and k: bits remembered = log2(values^k / allowed); whether swapping two neighbouring links changes the composite",
+    "sampled": "per sampled knot and k: bits remembered; maximum and mean at k = 7, split by whether every transfer is a permutation"
+  },
+  "cheapest_meaningful_control": "the 4-cycle network must reproduce ticket B: no exclusions with a transfer that is not a permutation; Z3 rings must keep log2(3) bits at every length and be symmetric under reordering; the checker recomputes network composites by brute force over witness assignments for every graph with at most six vertices",
+  "decision_or_followup_rule": "Report (a) as the count of placements with exclusions outside permutation patterns, per graph. Report (b) and (c) as measured. A finding of loop memory from transfers that are not permutations, or of order memory from non-commuting links, is worth a proof ticket only if it is clean and general.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "the 4-cycle and K4 networks, then the rest, then many-valued rings, then sampled knots",
+  "stop_rule": "Stop after the declared roster.",
+  "nonclaims": [
+    "Finite exploration on the declared graphs, links and samples only.",
+    "Edge orientation is fixed (lower to higher vertex); other orientations are not explored.",
+    "No claim about native loops, space, distance or physics."
+  ]
+}

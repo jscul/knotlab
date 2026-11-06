@@ -1,0 +1,900 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\sloppy
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Col}{\operatorname{Col}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\sharpP}{\#\mathrm{P}}
+\newcommand{\FP}{\mathrm{FP}}
+\setlength{\parskip}{0.3em}
+\title{Counting homomorphisms from knot groups\\ to solvable groups can be $\sharpP$-hard}
+\author{Prespatial Labs\thanks{Draft of 26 October 2026, prepared with Claude
+(Anthropic). The results come from proofs with executable checks in the
+Prespatial Labs repository; Section~\ref{sec:evidence} lists them, and a replay
+driver reruns every cited check. No human expert has reviewed this note.}}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For a finite group $G$ and a link $L\subset S^3$, let $H_L(G)$ be the number of
+homomorphisms from $\pi_1(S^3\setminus L)$ to $G$. Rowell conjectured in 2009
+that $H_L(G)$ can be computed exactly in polynomial time from a diagram of $L$
+whenever $G$ is solvable. Unless every function in $\sharpP$ is computable in
+polynomial time, this fails. On links it fails already for $S_3$ and the other
+dihedral groups of order $2n$ with $n$ odd: tying torus knots into the
+components and cabling some of them turns the count into a Potts model, at the
+price of unboundedly many components. The main point of this note is that it
+fails on knots too, where metabelian targets are easy. Knot counting is
+$\sharpP$-hard for $S_4$, the smallest group for which this can happen, and for
+its double covers $\mathrm{GL}(2,3)$ and $2O$. It is also $\sharpP$-hard for
+groups of Fitting height two: for $\mathrm{UT}_3(\F_4)\rtimes
+C_3$, and for the Heisenberg groups $H(\F_p)\rtimes C_r$ ($p$ odd) whose
+action has a ``hard pair'' of eigencharacters. For the second family we prove
+the converse: without a hard pair, the count is polynomial for knot groups and
+for closed 3-manifolds with bounded first homology. The $S_4$ proof rests on a
+``bicycle law'' for transposition colourings of alternating diagrams with
+tripled crossings, which turns the count into a 12-state Potts-type model. The
+Heisenberg proofs read the count as the kernel size of a twisted triple cup
+product, which Borromean surgeries steer freely enough to encode Potts
+partition functions. For $\mathrm{UT}_3(\F_4)\rtimes C_3$ the reduction also
+preserves approximation, so approximating the count is $\#\mathrm{BIS}$-hard.
+\end{abstract}
+
+\section{Results}
+
+For a finite group $G$ and a link $L\subset S^3$, write
+\[
+H_L(G)=|\Hom(\pi_1(S^3\setminus L),G)|.
+\]
+Up to normalization it is the link invariant of the modular category
+$\mathrm{Rep}(D(G))$. Rowell
+\cite[\S3.3.5]{Row09} made the following conjecture.
+
+\begin{quote}
+\textbf{Conjecture 3.2.} Let $G$ be a finite group and $L$ a link.
+(a) There exists an FPRAS for computing $H_L(G)$ for any group $G$.
+(b) Suppose $G$ is solvable. Then there is a polynomial algorithm for exact
+computation of $H_L(G)$.
+\end{quote}
+
+Kuperberg and Samperton proved that for every nonabelian simple $G$ and
+nontrivial conjugacy class $C$, counting the homomorphisms from knot groups to
+$G$ that send the meridian into $C$ is $\sharpP$-complete \cite{KS21}. They also wrote that they were ``much less
+confident'' in part~(b) \cite[\S5.3]{KS18}. Krovi and Russell had shown exact
+$\sharpP$-hardness on links for the alternating groups $A_m$, $m\ge5$, with
+meridians in a fixed class \cite{KR15}. On the
+positive side, $H_K(G)=|G|$ for nilpotent $G$, and metabelian targets reduce
+to linear algebra over the Alexander module \cite[\S1]{KS21}.
+Galindo~\cite{Gal26} proved that $|\Hom(\pi_1M,G)|$ is $\sharpP$-hard for
+every nonabelian $G$ when $M$ ranges over closed 3-manifolds; his hard
+instances are graph manifolds whose first Betti number grows with the input.
+Samperton and Wei\ss~\cite{SW26} proved that class-two nilpotent targets are
+polynomial when $|H^2(M;Z(G))|$ is bounded, and named $S_3$ on 3-manifold groups
+as open. None of these addresses solvable targets on link or knot complements,
+and we found no statement in either direction.
+
+On links, part~(b) fails for a simple reason (Proposition~\ref{prop:links}): the
+components of a link may carry different conjugacy classes, and the sum over
+these choices encodes the Potts model, already for $S_3$. This uses unboundedly
+many components; for links with a bounded number of components every
+metabelian target gives a polynomial-time count. On knots, whose groups have
+abelianization $\Z$, nilpotent targets give $H_K(G)=|G|$ and metabelian
+targets reduce to linear algebra, so a counterexample must have derived length
+at least three. Our main results are such counterexamples.
+
+All reductions below are polynomial-time Turing reductions, and links are
+given by diagrams. Recall that $\FP=\sharpP$ would mean that every function
+in $\sharpP$ is computable in polynomial time; it implies $\mathrm{P}=
+\mathrm{NP}$.
+
+\begin{proposition}[links]\label{prop:links}
+For the dihedral group $D_n$ of order $2n$ with $n\ge3$ odd (so $D_3=S_3$),
+computing $H_L(D_n)$ from a link diagram is $\sharpP$-hard. For each fixed $C$
+and each metabelian $G$, $H_L(G)$ is computable in polynomial time on links with
+at most $C$ components.
+\end{proposition}
+
+\begin{theorem}[$S_4$]\label{thm:s4}
+For $G=S_4$, for its double covers $G=\mathrm{GL}(2,3)$ and $G=2O$ (the binary
+octahedral group), and for the count of maps sending the meridian to a
+transposition, computing $H_K(G)$ from a knot diagram is $\sharpP$-hard.
+Every group of order less than $24$, and $\mathrm{SL}(2,3)$, gives a
+polynomial-time count, so $S_4$ is the smallest group with this property
+unless $\FP=\sharpP$.
+\end{theorem}
+
+Let $\omega$ be a primitive cube root of unity in $\F_4$. For a field $\F_q$
+let $H(\F_q)$ be the Heisenberg group of triples with
+$(x,y,z)(u,v,t)=(x+u,\,y+v,\,z+t+xv)$. For $r\mid q-1$ and
+$\alpha,\beta\in\F_q^\times$ with $\alpha^r=\beta^r=1$, let
+\[
+G_{\alpha,\beta}=H(\F_q)\rtimes C_r,\qquad h\cdot(x,y,z)=(\alpha x,\ \beta y,\
+\alpha\beta z),
+\]
+where $h$ generates $C_r$. The group $\mathrm{UT}_3(\F_4)\rtimes C_3$ of order
+$192$ is $G_{\omega^2,\omega^2}$ over $\F_4$; it has trivial centre and Fitting
+height two. Write $S^3_r(K)$ for $r$-surgery on $K$; its first homology is
+$\Z/r$.
+
+\begin{theorem}[$\mathrm{UT}_3(\F_4)\rtimes C_3$]\label{thm:ut3}
+Let $G=\mathrm{UT}_3(\F_4)\rtimes C_3$. For every knot $K$,
+\[
+H_K(G)=|\Hom(\pi_1S^3_3(K),G)|+63.
+\]
+Computing either number from a diagram of $K$ is $\sharpP$-hard.
+\end{theorem}
+
+\begin{theorem}[Heisenberg dichotomy]\label{thm:heis}
+Let $p$ be an odd prime, $r\ge2$ a divisor of $p-1$, and $G=G_{\alpha,\beta}$
+over $\F_p$. Call $(\alpha,\beta)$ a \emph{hard pair} if $\alpha\ne1$,
+$\beta\ne1$ and $\alpha\beta\ne1$.
+\begin{enumerate}
+\item If $(\alpha,\beta)$ is not a hard pair, then $H_K(G)$ is computable in
+polynomial time from a knot diagram, and for every $C$ the number
+$|\Hom(\pi_1M,G)|$ is computable in polynomial time for closed orientable
+3-manifolds $M$ with $|H_1(M;\Z)|\le C$, given by triangulations.
+\item If $(\alpha,\beta)$ is a hard pair, then computing $H_K(G)$, and
+computing $|\Hom(\pi_1S^3_r(K),G)|$, from a diagram of $K$ is $\sharpP$-hard.
+\end{enumerate}
+\end{theorem}
+
+For odd $p$ the smallest groups with a hard pair are $G_{2,2}$ over $\F_5$ with
+$r=4$ (order $500$) and $G_{2,2}$ over $\F_7$ with $r=3$ (order $1029$); there is
+none with $r=2$. Part~(1) is a special case of a more general statement
+(Remark~\ref{rem:K}).
+
+\begin{corollary}\label{cor:rowell}
+Unless $\FP=\sharpP$, Rowell's Conjecture 3.2(b) fails on links for the
+dihedral groups of Proposition~\ref{prop:links}, and already on knots for each of
+the groups shown $\sharpP$-hard in Theorems~\ref{thm:s4}--\ref{thm:heis}.
+\end{corollary}
+
+\noindent\emph{Proof.} All these groups are solvable, and a polynomial
+algorithm for $H_L(G)$ would compute a $\sharpP$-hard function in
+polynomial time. \qed
+
+\smallskip
+For $\mathrm{UT}_3(\F_4)\rtimes C_3$ the reduction also preserves
+approximation, so approximating $H_K(G)$ is $\#\mathrm{BIS}$-hard
+(Proposition~\ref{prop:bis}); this bears on part~(a).
+
+\paragraph{The line, as tested.} On knots, metabelian targets are easy, and
+the hard examples above have derived length three. Derived length three does
+not suffice: $\mathrm{SL}(2,3)$ and the groups $G_{\alpha,\beta}$ with
+$\alpha\beta=1$, $\alpha\ne1$, have derived length three and are polynomial.
+In the Heisenberg family the obstruction to lifting a map is a twisted
+\emph{triple} product of first cohomology classes. Without a hard pair every
+unbounded part of it is linear or pairwise and Gauss sums count its zeros;
+with a hard pair it is a genuinely three-way form whose alternating part can be
+steered at will, and that freedom encodes the Potts model. The same picture
+separates $\mathrm{SL}(2,3)$ (quadratic obstruction, bounded target) from
+$\mathrm{UT}_3(\F_4)\rtimes C_3$ (cubic obstruction).
+
+\section{Preliminaries}\label{sec:prelim}
+
+\paragraph{Wirtinger colourings.} A homomorphism from a link group to $G$ is a
+colouring of the arcs of a diagram by elements of $G$ such that at each
+crossing the outgoing under-arc is the conjugate of the incoming one by the
+over-arc. All meridians of a knot are conjugate and generate the group, so a
+homomorphism from a knot group sends every meridian into one conjugacy class.
+
+\paragraph{Counting over a quotient.} If $G=N\rtimes Q$ with $N$ abelian, the
+homomorphisms $\pi\to G$ lying over a fixed $\psi\colon\pi\to Q$ are the
+$1$-cocycles $Z^1(\pi;N_\psi)$, where $N_\psi$ is $N$ with $\pi$ acting through
+$\psi$. For a central extension $1\to A\to\tilde G\to G\to1$, a map
+$\rho\colon\pi\to G$ lifts if and only if an obstruction class in
+$H^2(\pi;A)$ vanishes, and the lifts then form a torsor under $H^1(\pi;A)$;
+twisted versions of both statements hold for extensions by modules
+\cite{MS05}.
+
+\paragraph{Potts and Tutte.} For a multigraph $\Gamma$ with $n$ vertices, $m$
+edges and $k$ components, the Potts partition function is
+\[
+Z_\Gamma(Q,v)=\sum_{\sigma\colon V\to[Q]}\prod_{uv\in E}\bigl(1+v[\sigma_u=\sigma_v]\bigr)
+=\sum_{S\subseteq E}Q^{k(S)}v^{|S|}=Q^kv^{n-k}\,T_\Gamma\!\left(1+\tfrac Qv,\,1+v\right),
+\]
+where $k(S)$ counts the components of $(V,S)$ and $T_\Gamma$ is the Tutte
+polynomial. Evaluating $T_\Gamma$ at a rational point $(x,y)$ is
+$\sharpP$-hard unless $(x-1)(y-1)=1$ or $(x,y)$ is one of eight special
+points \cite{JVW90}; on planar graphs it stays hard off the hyperbolas
+$(x-1)(y-1)\in\{1,2\}$ and finitely many points \cite{Ver05}. In particular the
+chromatic polynomial $P(H,12)$ of a planar graph is $\sharpP$-hard to compute.
+The hardness proofs use interpolation, so they are Turing reductions.
+
+\section{Links: the dihedral groups}\label{sec:links}
+
+For a link $L$ with a component $K_i$, write $\mu_i$ for its meridian and
+$\lambda_i$ for its Seifert longitude, and sum over
+$\rho\in\Hom(\pi_1(S^3\setminus L),G)$.
+
+\begin{lemma}[cables and local knots]\label{lem:cable}
+\begin{enumerate}
+\item Replacing $K_i$ by $k$ parallel copies, pushed off along the Seifert
+framing, gives $H=\sum_\rho|C_G(\rho(\lambda_i))|^{k-1}$.
+\item Tying a knot $J$ into $K_i$ gives $H=\sum_\rho N_J(\rho(\mu_i))$, where
+$N_J(g)$ counts the homomorphisms from the group of $J$ that send its meridian
+to $g$. If $G$ is metabelian, the new longitude has image $\rho(\lambda_i)$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(1) The new exterior is the old one with the cable space
+$(D^2\setminus k\text{ points})\times S^1$ glued to the boundary torus of $K_i$,
+the boundary circle of the disk going to $\mu_i$ and the circle factor to
+$\lambda_i$. Its group is $F_k\times\Z$, so an extension of $\rho$ chooses
+$a_1,\dots,a_k\in C_G(\rho(\lambda_i))$ with $a_1\cdots a_k=\rho(\mu_i)$; since
+$\rho(\mu_i)$ commutes with $\rho(\lambda_i)$, there are $|C_G(\rho(\lambda_i))|^{k-1}$
+choices. (2) The new exterior is the union of the two exteriors along a
+meridional annulus, so maps are pairs that agree on the meridian. The new
+longitude is $\lambda_i\lambda_J$, and $\lambda_J$ lies in the second commutator
+subgroup, which a metabelian $G$ kills.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:links}]
+Let $\Gamma=(V,E)$ be a multigraph with $n$ vertices and $m$ edges, and
+$c=n+m$. Let $L_\Gamma$ be a link with an unknotted component $U_v$ for each
+vertex and $K_e$ for each edge, with $\mathrm{lk}(K_e,U_u)=1$ and
+$\mathrm{lk}(K_e,U_v)=-1$ for $e=uv$ and all other linking numbers $0$; the
+closure of the pure braid $\prod_{e=uv}A_{u,e}A_{v,e}^{-1}$ is one. Choose a
+prime $p\mid n$ and let $J$ be the torus knot $T(2,p)$. A homomorphism from its
+group to $D_n$ is determined by the meridian when the meridian is a rotation,
+and there are $p$ of them when it is a fixed reflection, so $N_J$ is $1$ on
+rotations and $p$ on reflections. Let $L(j)$ be $L_\Gamma$ with $j$ copies of
+$J$ tied into every component and then every edge component replaced by two
+parallel copies. By Lemma~\ref{lem:cable},
+\[
+H_{L(j)}(D_n)=\sum_{s=0}^{c}p^{js}B_s,\qquad
+B_s=\sum_{\rho:\ s\text{ reflection meridians}}\ \prod_{e\in E}|C(\rho(\lambda_e))|.
+\]
+The $c+1$ values $j=0,\dots,c$ determine $B_0$ through a Vandermonde system in
+the distinct nodes $p^s$. In $B_0$ every meridian goes to the cyclic subgroup
+$C_n$ of rotations, so $\rho$ factors through $H_1=\Z^c$ and is any
+$x\in(\Z/n)^c$; then $\rho(\lambda_e)=x_u-x_v$, whose centralizer has order $2n$
+if $x_u=x_v$ and $n$ otherwise ($n$ is odd). Hence
+\[
+B_0=n^m\sum_{x\colon V\to\Z/n}\ \prod_{uv\in E}n\bigl(1+[x_u=x_v]\bigr)=n^{2m}Z_\Gamma(n,1),
+\]
+and $Z_\Gamma(n,1)=n^kT_\Gamma(1+n,2)$ lies on $(x-1)(y-1)=n\ge3$, which is
+$\sharpP$-hard \cite{JVW90} (also for planar $\Gamma$ \cite{Ver05}). The link $L(j)$
+has polynomial size. Using $k$-fold instead of $2$-fold cables and
+interpolating in $k$ recovers $Z_\Gamma(n,2^{k-1}-1)$ for several $k$, hence the
+number of proper $n$-colourings, without appeal to the Tutte classification.
+
+For the second statement, the maps to the abelian quotient $G/G'$ factor
+through $H_1=\Z^c$, so there are at most $|G/G'|^C$ of them, and the lifts of each
+through the abelian $G'$ solve a linear system (\texttt{BOUNDED-H1-20261025-001B}).
+\end{proof}
+
+\begin{remark}\label{rem:galindo}
+More is true if one accepts Galindo's theorem~\cite{Gal26}, whose hard
+instances are closed manifolds given by planar surgery diagrams with framing
+$0$. Replacing every component of such a diagram by $k$ framed parallels, for
+polynomially many $k$, determines by interpolation the number of $\rho$ that
+send every framed longitude into the centre of $G$, since only those reach the
+largest node $|G|^c$ (Lemma~\ref{lem:cable}(1) with framings). For $G$ with
+trivial centre this is the count of the surgered closed manifold, so
+$H_L(G)$ is $\sharpP$-hard on links for every nonabelian $G$ with trivial
+centre. We have not checked the proofs of~\cite{Gal26}. For nilpotent targets
+the cables see framed longitudes only modulo the centre, and we do not know the
+complexity on links: for $D_4$ and $Q_8$ the count depends only on the linking
+numbers, as $4^c\sum_S4^{-\operatorname{cutrank}(S)}$ over subsets $S$ of the
+components, where $\operatorname{cutrank}(S)$ is the rank over $\F_2$ of the
+linking matrix with rows in $S$ and columns outside $S$ (verified on 60 random
+links each).
+\end{remark}
+
+\section{The symmetric group \texorpdfstring{$S_4$}{S4}}\label{sec:s4}
+
+\subsection{Reduction to transposition colourings}
+
+Let $T(K)$ and $R(K)$ count the homomorphisms $\pi_1(S^3\setminus K)\to S_4$
+that send the meridian to a transposition and to a $3$-cycle respectively.
+
+\begin{lemma}\label{lem:split}
+$H_K(S_4)=4+R(K)+2T(K)$, and $R(K)$ is computable in polynomial time.
+\end{lemma}
+
+\begin{proof}
+Sort the maps by the class of the meridian's image. The identity gives one
+map. If the meridian goes to a double transposition, the image lies in the
+abelian normal subgroup $V_4$, so the map factors through $H_1=\Z$: three
+maps. Livingston \cite[Thm.~9]{Liv95} proved that over each Fox
+$3$-colouring the lifts to $S_4$ with a transposition meridian and with a
+$4$-cycle meridian are equally many, so the $4$-cycle class contributes
+$T(K)$; for colourings with cyclic image both lifts lie in a dihedral group
+of order 8 and are counted directly. Finally a map with a $3$-cycle meridian
+lands in $A_4=V_4\rtimes C_3$, which is metabelian, so $R(K)$ is a sum of two
+cocycle counts $|Z^1(\pi;\F_{4,\omega^{\pm1}})|$, computed by linear algebra.
+\end{proof}
+
+The repository re-proves Livingston's identity
+(\texttt{CLOSED-H1-20261025-001B}). It remains to show that $T(K)$ is
+$\sharpP$-hard.
+
+\subsection{Tripled alternating diagrams}
+
+Let $G=(V,E)$ be a connected plane multigraph with $n$ vertices and $m$ edges.
+Let $D(G)$ be the alternating link diagram whose Tait graph is $G$: the black
+regions are the vertices, and each edge is one crossing. Let $G^{(3)}$ repeat
+every edge three times side by side, so that $D(G^{(3)})$ has a twist of three
+crossings for each edge. For a spanning subgraph $H$ write $c(H)$ for its
+number of components (isolated vertices included) and $B(H)$ for its bicycle
+space over $\F_2$: the edge sets that are both cycles and cocycles. Let
+$\Col(D)$ be the number of colourings of $D$ by the six transpositions of
+$S_4$.
+
+The transpositions of $S_4$ lie over the transpositions of $S_3=S_4/V_4$, two
+over each, and the two commute. Label the transpositions of $S_3$ by $\Z/3$ so
+that conjugation reads $a\triangleright b=2a-b$. A twist of $k$ crossings acts
+on the colours at its top by the $k$-th power of the Hurwitz move
+$\sigma(x,y)=(x\triangleright y,\,x)$.
+
+\begin{lemma}\label{lem:twist}
+On pairs of transpositions of $S_3$, $\sigma^3$ is the identity. On pairs of
+transpositions of $S_4$ over colours $a,b$: if $a=b$ then
+$\sigma^3(x,y)=(y,x)$; if $a\ne b$ then $\sigma^3$ keeps the $S_3$-colours in
+place and changes each of the two lifts by an element of $V_4$ that depends
+only on $(a,b)$.
+\end{lemma}
+
+\begin{proof}
+$\sigma^3(a,b)=(3b-2a,\,b)=(a,b)$ modulo $3$. Over equal colours the two
+transpositions commute, so $\sigma(x,y)=(y,x)$. The remaining case is a
+direct check on the $6\times6$ table of conjugates.
+\end{proof}
+
+\begin{proposition}[the bicycle law]\label{prop:bicycle}
+\[
+\Col\bigl(D(G^{(3)})\bigr)=\sum_{\varphi\colon V\to\Z/3}2^{\,c(H_\varphi)+\dim
+B(H_\varphi)},\qquad H_\varphi=\bigl(V,\{uv\in E:\varphi_u=\varphi_v\}\bigr).
+\]
+Equivalently, with $\nu(t,\varphi,x)=(1-t,\varphi,1-x)$ the fixed-point-free
+involution of $\Z/2\times\Z/3\times\Z/2\cong\Z/12$, $N$ its permutation matrix
+and $J$ the all-ones matrix,
+\[
+\Col\bigl(D(G^{(3)})\bigr)=2^{-n}\sum_{z\in(\Z/12)^V}\ \prod_{uv\in
+E}M(z_u,z_v),\qquad M=J-2N .
+\]
+\end{proposition}
+
+\begin{proof}
+By Lemma~\ref{lem:twist} each twist passes $S_3$-colours along positions, as
+the smoothing that separates the two black regions would. That smoothing
+turns $D(G^{(3)})$ into one circle around each black region, so the
+$S_3$-colourings correspond to potentials $\varphi\colon V\to\Z/3$, and the
+twist of $uv$ is monochromatic exactly when $\varphi_u=\varphi_v$.
+
+Fix $\varphi$. A lift to $S_4$ chooses one of two transpositions on each arc.
+By Lemma~\ref{lem:twist} the choices follow the strands through monochromatic
+twists, which cross, and keep their positions, up to fixed elements of $V_4$,
+through the other twists, which is the smoothing that deletes the edge. So the
+lifts form an affine space whose dimension is the number of closed curves of
+the diagram of $H_\varphi$, each isolated vertex contributing its circle. The
+space is not empty: $S_3=\mathrm{Stab}(4)\subset S_4$ is a complement of $V_4$
+whose transpositions are transpositions of $S_4$. By Rosenstiehl and Read
+\cite{RR78}, \cite[\S17.3]{GR01}, a connected plane graph $C$ has
+$1+\dim B(C)$ left-right cycles, so the number of curves is
+$c(H_\varphi)+\dim B(H_\varphi)$.
+
+For the second form, $c(H)+\dim B(H)$ is the nullity over $\F_2$ of the
+Laplacian $L_H$: $x\mapsto\delta x$ maps $\ker L_H$ onto $B(H)$ with the
+locally constant functions as kernel. The condition $L_Hx=0$ says that every
+vertex has an even number of $H$-edges whose ends carry different bits.
+Writing each parity condition as $\tfrac12\sum_{t_v\in\F_2}(-1)^{t_v(\cdots)}$
+gives the edge factor $(-1)^{(t_u+t_v)[\varphi_u=\varphi_v][x_u\ne x_v]}
+=1-2[z_v=\nu(z_u)]$ with $z=(t,\varphi,x)$.
+\end{proof}
+
+\begin{remark}\label{rem:links}
+If every edge of $G$ is subdivided, summing out each middle vertex gives
+$\tfrac12M^2=4J+2I$ per edge, and
+$\Col=2^{-n}4^mZ_G(12,\tfrac12)$. The diagram is then a link with
+$1+\beta_1(G)$ components, and one query to the colouring count evaluates the
+planar Tutte polynomial at $(25,\tfrac32)$, which is $\sharpP$-hard. Knots need
+the gadgets below.
+\end{remark}
+
+\subsection{Knots}
+
+A two-terminal series-parallel network $\Gamma$, with every edge tripled,
+substituted for each edge of $G$, gives an interaction matrix $M_\Gamma$ on
+$\Z/12$ after its internal vertices are summed (with a factor $\tfrac12$ each).
+Series composition is the matrix product (with the factor $\tfrac12$ for the
+middle vertex) and parallel composition the entrywise product. The span of $J,I,N$ is closed under both, because $J^2=12J$,
+$JN=NJ=J$, $N^2=I$, $J\circ X=X$, $N\circ N=N$ and $I\circ N=0$. Writing
+$M_\Gamma=a\bigl((1+b)I+(1+g)N+(J-I-N)\bigr)$, parallel composition multiplies
+$a$, $1+b$ and $1+g$.
+
+\begin{lemma}\label{lem:knot}
+\begin{enumerate}
+\item If $\tau$ counts spanning trees, $t_\Gamma$ the spanning trees of $\Gamma$
+and $f_\Gamma$ its spanning $2$-forests separating the terminals, then
+$\tau(G[\Gamma])=\tau(G)\,t_\Gamma^{\,n-1}f_\Gamma^{\,m-n+1}$.
+\item $D(K^{(3)})$ is a knot if and only if $\tau(K)$ is odd, for a connected
+plane multigraph $K$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(1) A spanning tree of $G[\Gamma]$ meets each copy of $\Gamma$ in a spanning
+tree or in a separating $2$-forest, and the copies of the first kind form a
+spanning tree of $G$. (2) A twist with an odd number of crossings connects
+strands like one crossing, so $D(K^{(3)})$ and $D(K)$ have the same number of
+components, namely $1+\dim B(K)$ by Rosenstiehl--Read. And $\dim B(K)$ is the
+$\F_2$-nullity of the reduced Laplacian, whose determinant is $\tau(K)$.
+\end{proof}
+
+The gadget $\Gamma_1=S(e,P(e,S(e,e)))$ has
+$M_{\Gamma_1}=17J+8I-2N$ (with the factors $\tfrac12$ included), so
+$(1+b,1+g)=(25/17,15/17)$, $t=3$ and $f=5$. Its $k$-fold parallel power
+$\Gamma_1^{\parallel k}$ has $t_k=3k\cdot5^{k-1}$ and $f_k=5^k$, both odd for odd $k$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:s4}]
+Let $H$ be a connected planar graph; $P(H,12)$ is $\sharpP$-hard. Double every
+edge outside a spanning tree $T_0$ to get $\tilde H$, with $\tilde m$ edges.
+Then $P(\tilde H,12)=P(H,12)$, and $\tau(\tilde H)=\sum_T2^{|T\setminus T_0|}$
+is odd. For odd $k=1,3,\dots,2K-1$, with $K=(\tilde m+1)(\tilde m+2)/2$, the
+diagram $D\bigl((\tilde H[\Gamma_1^{\parallel k}])^{(3)}\bigr)$ is a knot by
+Lemma~\ref{lem:knot}, with $12k\tilde m$ crossings, and by
+Proposition~\ref{prop:bicycle}
+\[
+T\bigl(D((\tilde H[\Gamma_1^{\parallel k}])^{(3)})\bigr)=
+2^{-n}\,17^{k\tilde m}\sum_{i,j}N_{ij}\,\beta_{ij}^{\,k},
+\qquad \beta_{ij}=\Bigl(\tfrac{25}{17}\Bigr)^{i}\Bigl(\tfrac{15}{17}\Bigr)^{j},
+\]
+where $N_{ij}$ counts the $z\in(\Z/12)^V$ with $i$ edges having $z_u=z_v$ and
+$j$ edges having $z_v=\nu(z_u)$. The $\beta_{ij}=5^{2i+j}3^j17^{-i-j}$ are
+pairwise distinct, so the $K$ counts determine every $N_{ij}$ through a
+Vandermonde system in $\beta_{ij}^2$. Finally
+$P(H,12)=\sum_jN_{0j}$: a colouring is proper exactly when no edge has equal
+ends, whatever happens on the $\nu$-related edges. By Lemma~\ref{lem:split},
+$T=(H_K(S_4)-4-R)/2$, so $H_K(S_4)$ is $\sharpP$-hard as well.
+
+For the double covers $\tilde G\in\{\mathrm{GL}(2,3),2O\}$, central extensions
+of $S_4$ by $\Z/2$: every map from a knot group to $S_4$ lifts, because
+$H^2$ of a knot exterior vanishes, and the lifts form a torsor under
+$H^1(\pi;\F_2)=\F_2$. So $H_K(\tilde G)=2H_K(S_4)$.
+
+For the smallest-group statement: every group of order less than $24$ is
+metabelian (it has an abelian normal Sylow subgroup with abelian quotient, or is
+a $2$-group of order at most $16$, whose derived subgroup has order at most
+$4$), and the only non-metabelian groups of order $24$ are $S_4$ and
+$\mathrm{SL}(2,3)$. Metabelian (indeed abelian-by-nilpotent) targets give
+polynomial counts on knots: maps to the nilpotent quotient are boundedly many
+because $H_1=\Z$, and their lifts through the abelian kernel solve a linear
+system (\texttt{BOUNDED-H1-20261025-001B}). For $\mathrm{SL}(2,3)$, a central
+extension of $A_4$ by $\Z/2$, the argument for the double covers gives
+$H_K(\mathrm{SL}(2,3))=2H_K(A_4)$.
+\end{proof}
+
+\section{Heisenberg groups twisted by a cyclic group}\label{sec:heis}
+
+Throughout, $q=p$ is an odd prime with $r\mid p-1$, or $q=4$ with $r=3$, and
+$G=G_{\alpha,\beta}$. Let $M$ be a closed oriented 3-manifold with
+$\pi=\pi_1M$, and $\psi\colon\pi\to\Z/r$. For $\chi\in\mu_r(\F_q)$ let
+$\F_\chi$ be $\F_q$ with $g\in\pi$ acting by $\chi^{\psi(g)}$, and
+$V_\chi=H^1(M;\F_\chi)$. Put $\gamma=(\alpha\beta)^{-1}$.
+
+\subsection{The count is the kernel size of a triple product}
+
+\begin{proposition}[\texttt{COPRIME-CLASS2-20261026-001B}, \texttt{CORRECTIONS-20261026-001A}]\label{prop:count}
+The homomorphisms $\pi\to G$ lying over $\psi$ number
+\[
+|Z^1(\pi;\F_{\alpha\beta})|\cdot|B^1(\pi;\F_\alpha)|\cdot|B^1(\pi;\F_\beta)|\cdot\cN_\psi,
+\qquad \cN_\psi=\#\{(a,b)\in V_\alpha\times V_\beta:\ T(a,b,\cdot)=0\},
+\]
+where $T(a,b,c)=\langle a\smile b\smile c,[M]\rangle$ for $c\in V_\gamma$. For
+$\mathrm{UT}_3(\F_4)\rtimes C_3$ and $H_1(M)=\Z/3$ this gives
+$|\Hom(\pi,G)|=1+128\cdot4^d\cdot\cN_\psi$ with $d=\dim_{\F_4}V_{\omega^2}$.
+\end{proposition}
+
+\begin{proof}
+The centre $A=\{(0,0,z)\}$ is invariant and $G/A=(\F_\alpha\oplus\F_\beta)
+\rtimes C_r$, because $h$ preserves the section $(x,y)\mapsto(x,y,0)$. Maps to
+$G/A$ over $\psi$ are pairs of cocycles $(c_x,c_y)$. The section has the
+bilinear cocycle $((x,y),(u,v))\mapsto xv$, so the obstruction to lifting is
+$[c_x\smile c_y]\in H^2(\pi;\F_{\alpha\beta})$, and when it vanishes the lifts
+form a torsor under $Z^1(\pi;\F_{\alpha\beta})$. The class depends only on
+the cohomology classes $a=[c_x]$, $b=[c_y]$, which accounts for the factors
+$|B^1|$. Since $H^2(\pi)\to H^2(M)$ is injective and Poincar\'e duality pairs
+$H^2(M;\F_{\alpha\beta})$ perfectly with $H^1(M;\F_\gamma)$, the class vanishes
+exactly when $T(a,b,\cdot)=0$. For the last formula, $\psi=0$ gives only the
+trivial map (a nontrivial image in the $2$-group $\mathrm{UT}_3(\F_4)$ would
+need $2$-torsion in $H_1$), and the two surjections $\psi$ are Galois conjugate
+and contribute $4\cdot4^d\cdot4^2\cdot\cN_\psi$ each.
+\end{proof}
+
+Equivalently $\cN_\psi=|V_\gamma|^{-1}\sum_{a,b,c}e(T(a,b,c))$ for a nontrivial
+additive character $e$ of $\F_q$: the count is a cubic exponential sum.
+
+\subsection{Without a hard pair: polynomial}
+
+\begin{proof}[Proof of Theorem~\ref{thm:heis}(1)]
+There are at most $|H_1(M)|$ maps $\psi$, and for each $k$ the characters
+$\alpha^k,\beta^k,(\alpha\beta)^k$ still include $1$. The factors $|Z^1|$ and
+$|B^1|$ are linear algebra. If $\alpha^k=1$ then $V_{\alpha^k}=H^1(M;\F_p)$ has
+at most $|H_1(M)|$ elements: enumerate $a$ and count the kernel of the linear
+map $b\mapsto T(a,b,\cdot)$. The case $\beta^k=1$ is symmetric. If
+$(\alpha\beta)^k=1$, then $V_{\gamma^k}$ is bounded with a basis
+$c_1,\dots,c_s$, and $\cN$ counts the common zeros of $s$ bilinear forms:
+\[
+\cN=p^{-s}\sum_{\theta\in\F_p^s}\ \sum_{a,b}e\Bigl(\textstyle\sum_i\theta_iT(a,b,c_i)\Bigr)
+=p^{-s}\sum_{\theta}p^{\dim V_{\alpha^k}+\dim V_{\beta^k}-\operatorname{rank}T(\cdot,\cdot,\sum\theta_ic_i)}.
+\]
+All the inputs (cocycle spaces, cup products on a triangulation, the
+obstruction modulo coboundaries) are polynomial-time linear algebra. For a
+knot exterior $X$, which is aspherical, the count over $\psi$ is the same with
+$\cN=\#\{(a,b):a\smile b=0\in H^2(X;\F_{(\alpha\beta)^k})\}$. Here $\psi$
+ranges over the $r$ maps $\Z\to\Z/r$, $H^1(X;\F_p)=\F_p$ and $H^2(X;\F_p)=0$,
+so each term is again an enumeration of a bounded space followed by linear
+algebra.
+\end{proof}
+
+\begin{remark}\label{rem:K}
+The same argument proves more (\texttt{COPRIME-CLASS2-20261026-001C}). Let
+$G=N\rtimes C_r$ with $N$ a $p$-group, $p\nmid r$, having a $C_r$-invariant
+central subgroup $A$ with $A$ and $N/A$ elementary abelian and with
+$N$ described by an equivariant bilinear cocycle (hypotheses (K)). Over a
+splitting field the commutator pairing has components
+$\kappa_{\chi,\chi'}\colon\bar B_\chi\times\bar B_{\chi'}\to\bar
+A_{\chi\chi'}$. If no component with $\chi$, $\chi'$ and $\chi\chi'$ all
+nontrivial is nonzero, counting is polynomial with bounded first homology
+(for $p=2$ the quadratic part is handled by Arf invariants). Whether the
+converse holds for all such $N$ is open; Theorem~\ref{thm:heis} proves it for
+Heisenberg groups. Groups with higher-exponent layers are not covered.
+\end{remark}
+
+\subsection{Steering the triple product by Borromean surgery}
+
+A Y-graph (a clasper with three leaves) in $M$ determines a Borromean surgery
+$M\rightsquigarrow M'$ \cite{Mat87,Hab00}. When the leaves $\ell_1,\ell_2,
+\ell_3$ lie in $\ker\psi$, the cover and the cohomology are undisturbed.
+
+\begin{proposition}[\texttt{COPRIME-CLASS2-20261026-001B}(c), \texttt{CORRECTIONS-20261026-001C}]\label{prop:steer}
+If the leaves lie in $\ker\psi$, then $H_1(M')\cong H_1(M)$, $\psi$ extends,
+every $V_\chi$ is unchanged, and for characters $\chi_1\chi_2\chi_3=1$
+\[
+T'(a,b,c)-T(a,b,c)=\varepsilon\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,
+\lambda_{\sigma1}(a)\,\lambda_{\sigma2}(b)\,\lambda_{\sigma3}(c),
+\]
+where $\lambda_i(a)$ evaluates a cocycle representing $a$ on the based leaf
+$\ell_i$, and $\varepsilon=\pm1$ is a fixed orientation convention.
+\end{proposition}
+
+\begin{proof}[Sketch]
+Since $\psi$ vanishes on the boundary of a neighbourhood of the Y-graph, and
+$H_1$ of that boundary surjects onto $H_1$ of both the neighbourhood and the
+handlebody glued in, the $r$-fold cyclic cover is trivial over the surgery
+region and the twisted cocycles extend; this gives the first statements.
+Massuyeau's formula for the change of the triple cup product under a
+Y-surgery \cite[Lemma~3.2]{Mas03}, applied to the $r$ lifts in the cover,
+adds $r$ equal determinants, because the characters multiply to $1$; the
+transfer divides by $r$, which is invertible in $\F_q$. Changing the basing
+path multiplies the three leaf functionals by $\chi_1(g),\chi_2(g),\chi_3(g)$,
+whose product is $1$.
+\end{proof}
+
+This is the finite-cover, $\F_q$ analogue of Moussard's formula for null
+Y-graphs and equivariant triple intersections in the infinite cyclic cover
+\cite[Prop.~2.5, Thm.~2.7]{Mou17}. Our leaves need only lie in $\ker\psi$.
+
+\begin{lemma}[pure leaves; \texttt{COPRIME-CLASS2-20261026-001B}(d)]\label{lem:pure}
+Let $q=p$ and suppose $\psi$ is onto. For each $\zeta\in\mu_r(\F_p)$ and each
+functional $f$ on $V_\zeta$ there is a loop in $\ker\psi$ whose functional is
+$f$ on $V_\zeta$ and $0$ on $V_\chi$ for every $\chi\ne\zeta$.
+\end{lemma}
+
+\begin{proof}
+$H_1$ of the cover with $\F_p$ coefficients surjects onto
+$\bigoplus_\chi V_\chi^*$, and every class comes from a loop in $\ker\psi$.
+Pick $t\in\pi$ with $\psi(t)=1$ and apply the eigenprojector
+$P_\zeta=r^{-1}\sum_j\zeta^{-j}t^j$, realized by the product of the conjugates
+$t^j\ell t^{-j}$ raised to the powers $r^{-1}\zeta^{-j}\bmod p$.
+\end{proof}
+
+The hypothesis that $\psi$ is onto is needed: for the lens space $L(7,1)$ with
+$p=7$, $r=3$ and $\psi=0$ the three local systems coincide and no loop
+separates them. In the constructions below $\psi$ sends the meridian to $1$.
+
+\subsection{Gadgets}
+
+Fix a multigraph $\Gamma$ with $n$ vertices and $m$ edges, and orient each
+edge $e=uv$. Use coordinates $x_v$ ($v\in V$) and $p_e,s_e,w_e$ ($e\in E$),
+and put $\ell_e=x_u-x_v$. For three functionals write $\lambda\wedge\mu\wedge\nu$
+for the trilinear form $\det(\lambda,\mu,\nu)$, and for two
+$(\lambda\wedge\mu)(a,b)=\lambda(a)\mu(b)-\mu(a)\lambda(b)$. Proposition~\ref{prop:steer}
+can change the component $(\alpha,\beta,\gamma)$ only by forms that are
+alternating in every pair of slots with equal characters. The coincidences
+among $\alpha,\beta,\gamma$ give four patterns.
+
+\begin{lemma}[\texttt{COPRIME-CLASS2-20261026-001D} \S1, \texttt{CORRECTIONS-20261026-001D} Lemma~6]\label{lem:gadget}
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Pattern & Spaces & Form $T$ & $\cN$\\
+\midrule
+$\alpha,\beta,\gamma$ distinct & $X\oplus P\oplus S$ in each slot & $\sum_e\ell_e\wedge p_e\wedge s_e$ & $q^{2m-n}Z_\Gamma(q^3,q^2-1)$\\
+$\alpha=\beta=\gamma$ & $V_\alpha=X\oplus P\oplus S$ & $\sum_e\ell_e\wedge p_e\wedge s_e$ & $q^{2m-n}Z_\Gamma(q^3,q^2-1)$\\
+$\alpha=\beta\ne\gamma$ & $V_\alpha=X\oplus P$, $V_\gamma=W$ & $\sum_e(\ell_e\wedge p_e)\otimes w_e$ & $q^{m}Z_\Gamma(q^2,q-1)$\\
+$\gamma=\alpha\ne\beta$ & $V_\alpha=X\oplus P$, $V_\beta=S$ & $\sum_e s_e(b)\,(\ell_e\wedge p_e)(a,c)$ & $q^{m-n}Z_\Gamma(q^2,q-1)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For $q=4$, where a hard pair forces $\alpha=\beta=\gamma$, the second row holds
+with $\ell_e=x_u+x_v$. The case $\gamma=\beta\ne\alpha$ is symmetric to the
+last.
+\end{lemma}
+
+\begin{proof}
+Write $\cN=|V_\gamma|^{-1}\sum_{a,b,c}e(T(a,b,c))$ and sum the edge coordinates
+first; the sums factor over the edges. For the three-way form fix the vertex
+parts and let $u_e=(\ell_e(a),\ell_e(b),\ell_e(c))\in\F_q^3$. Then
+$\sum_{P\in\F_q^{3\times2}}e(\det(u_e\mid P))$ is $q^6$ if $u_e=0$ and $q^4$
+otherwise: move $u_e$ to the first basis vector by $\mathrm{GL}_3$, after which
+$\det=p_2s_3-p_3s_2$ and each product sum gives $q$. Colouring each vertex by
+$(a_v,b_v,c_v)\in\F_q^3$, the total is
+$q^{4m}\sum_\sigma\prod_e(1+(q^2-1)[\sigma_u=\sigma_v])$, and dividing by
+$|V|=q^{n+2m}$ gives the first two rows. For $\alpha=\beta\ne\gamma$ the
+condition at $e$ is $\ell_e(a)p_e(b)-p_e(a)\ell_e(b)=0$, which has $q^2$
+solutions $(p_e(a),p_e(b))$ if $\ell_e(a)=\ell_e(b)=0$ and $q$ otherwise. For
+$\gamma=\alpha\ne\beta$ the conditions are $s_e(b)\ell_e(a)=0$ for each edge
+and $\sum_{e\ni w}\pm s_e(b)p_e(a)=0$ for each vertex; with $S=\operatorname{supp}s$
+the second system has $q^{m-n+k(S)}$ solutions $p(a)$, and the first forces
+$S$-edges to be monochromatic, so $\cN=q^{m-n}\sum_{S}(q-1)^{|S|}q^{2k(S)}$.
+\end{proof}
+
+All four Tutte points $(1+q^3/(q^2-1),\,q^2)$ and $(1+q^2/(q-1),\,q)$ lie on
+$(x-1)(y-1)=q^3$ or $q^2$, so evaluating the Potts functions above is
+$\sharpP$-hard \cite{JVW90}.
+
+\subsection{Realizing the gadgets by knots}
+
+\paragraph{Base knots.} For odd $p$ and $\zeta\in\F_p^\times\setminus\{1\}$,
+the twist knot $K_m$ with Alexander polynomial $mt^2-(2m+1)t+m$ and
+$m\equiv\zeta(\zeta-1)^{-2}\pmod p$ has $\zeta$ and $\zeta^{-1}$ as roots
+modulo $p$. Its Alexander module is cyclic, so for $S^3_r(K_m)$ with $\psi$
+the meridian character, $V_\zeta$ and $V_{\zeta^{-1}}$ are one-dimensional and
+all other $V_\chi$ vanish. (For example $6_1$ has roots $2$ and $1/2$ for
+every $p\ge5$.) For $q=4$ use the figure-eight knot, with $V_{\omega}$ and
+$V_{\omega^2}$ one-dimensional over $\F_4$. In a connected sum the twisted
+cohomology and $T$ split over the summands, because the splitting annulus has
+no twisted cohomology. Every component of $T$ vanishes on the base: a nonzero
+component would need three characters with product $1$ from one summand's
+$\{\zeta,\zeta^{-1}\}$, forcing $\zeta^3=1$ on a one-dimensional space, where an
+alternating form is zero; for $4_1$ over $\F_4$ the form is zero by direct
+computation. With a hard pair no two of $\alpha,\beta,\gamma$ are inverse to
+each other, so the summands for different slots do not interfere.
+
+\paragraph{Construction} (\texttt{COPRIME-CLASS2-20261026-001D} \S3,
+\texttt{CORRECTIONS-20261026-001D} \S3). Given $\Gamma$ and the pattern:
+\begin{enumerate}
+\item Take one base summand for each coordinate of each \emph{distinct}
+character space of the pattern, drawn in disjoint balls $B_i$ joined by bands,
+with a base point and a reference path into each ball.
+\item In each $B_i$ pick arcs $a_i,b_i$ on which the summand's nonzero class
+takes different values (constant cochains are coboundaries), and let
+$\gamma_i$ be the loop around $a_i$ positively and $b_i$ negatively. It bounds
+a disk in $B_i$ meeting the knot twice, and its functional is nonzero on the
+summand's block. For odd $p$ apply Lemma~\ref{lem:pure} inside $B_i$ to get a
+\emph{pure} leaf supported on the slot's eigenspace.
+\item Realize $\ell_e$ as a band sum of the leaves of the summands of $u$ and
+$v$ (the second reversed), choosing the band so that the closed loop through
+it has $\psi\equiv0$; otherwise unbalanced gains change the count.
+\item Expand the gadget into decomposable terms and give each term one
+Y-graph whose leaves are parallel push-offs of the leaves it names, with edges
+routed so that every leaf, read from the Y-graph's vertex, has its reference
+value, and every leaf has the framing of its disk.
+\item Each term has a leaf carrying a coordinate that occurs in no other
+factor of that term ($p_e$, $s_e$ or $w_e$). Choose its cap disk disjoint from
+all other Y-graphs; parallel caps suffice when another term uses the same
+coordinate. Forgetting the knot, that leaf bounds a disk, so the Y-surgery
+gives back $S^3$ \cite[Props.~3.3--3.4]{Hab00}, and the diffeomorphism is the
+identity near a meridian. Hence the result is $S^3_r(K_\Gamma)$ for a knot
+$K_\Gamma$, with the same framing.
+\end{enumerate}
+The Y-graphs and their leaf disks are pairwise disjoint, so the surgeries are
+independent tangle replacements, and $K_\Gamma$ has $O(m(n+m))$ crossings.
+By Proposition~\ref{prop:steer}, applied once per Y-graph, the component
+$(\alpha,\beta,\gamma)$ of $T$ on $S^3_r(K_\Gamma)$ is the gadget form.
+
+\paragraph{The other characters.} By Proposition~\ref{prop:count},
+$|\Hom(\pi_1S^3_r(K_\Gamma),G)|=1+\sum_{k=1}^{r-1}c_k\cN_k$, where $c_k>0$
+depends only on dimensions and $\cN_k$ reads the component
+$(\alpha^k,\beta^k,\gamma^k)$. With pure leaves only components that are
+permutations of $(\alpha,\beta,\gamma)$ change, and each such $\cN_k$ equals the
+gadget count; every other component keeps its base value $0$, so its
+$\cN_k=|V_{\alpha^k}||V_{\beta^k}|$. Over $\F_4$ the two surjections are Galois
+conjugate and contribute equally. In all cases the oracle answer is an affine
+function of the gadget count with known coefficients.
+
+\subsection{Knot groups}
+
+\begin{proof}[Proof of Theorem~\ref{thm:ut3}]
+Let $N=\mathrm{UT}_3(\F_4)$ and $\rho\colon\pi_1(S^3\setminus K)\to G$, with
+meridian $\mu$ and preferred longitude $\lambda$. If $\rho(\mu)\in N$, the
+image is a finite $2$-group normally generated by one element, hence cyclic
+(its abelianization is cyclic), so there are $|N|=64$ such maps; for them
+$\rho(\lambda)=1$, and $\rho(\mu)^3=1$ forces $\rho(\mu)=1$, so only the trivial
+one satisfies $\mu^3\lambda=1$. Otherwise $\lambda$ lies in the second
+commutator subgroup, so $\rho(\lambda)\in G''=Z(N)$; it commutes with
+$\rho(\mu)\in Nh^{\pm1}$, which acts on $Z(N)$ by $\omega^{\pm1}$ without fixed
+points, so $\rho(\lambda)=1$. Every element of $Nh^{\pm1}$ has order $3$, so
+$\rho(\mu)^3\rho(\lambda)=1$ holds automatically. Hence
+$H_K(G)=|\Hom(\pi_1S^3_3(K),G)|+64-1$. Hardness: given $\Gamma$, build
+$K_\Gamma$ with base $\#^{\,n+2m}4_1$, query once, and solve
+$1+128\cdot4^{n+2m}\cdot4^{2m-n}Z_\Gamma(64,15)$ for $Z_\Gamma(64,15)$, a
+$\sharpP$-hard Tutte evaluation at $(79/15,16)$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:heis}(2)]
+For the surgeries this is the construction above with one oracle call per
+Tutte evaluation. For the knot exterior $X$ of $K_\Gamma$: if a character $\chi$ is
+nontrivial on the meridian, the boundary torus and the surgery solid torus have
+no $\chi$-twisted cohomology, so $H^i(X;\F_\chi)=H^i(S^3_r(K_\Gamma);\F_\chi)$
+for $i=1,2$, compatibly with cup products. Hence a term of the count whose three
+characters are all nontrivial on the meridian is the same for $X$ as for
+$S^3_r(K_\Gamma)$. Terms in which one of
+the three characters is trivial fall under the algorithm of part~(1). So
+$H_{K_\Gamma}(G)$ is a computable quantity plus a known positive multiple of
+the gadget count.
+\end{proof}
+
+\section{Remarks and open questions}\label{sec:remarks}
+
+\paragraph{What is tested.} For links, $B_0=9^mZ_\Gamma(3,1)$ is recovered from
+directly computed counts $H_{L(j)}(S_3)$ on five graphs (the largest link has
+$2088$ crossings and $12$ components), the proper $3$-colourings of a path and a
+triangle ($12$ and $6$) are recovered from link counts, and the same holds for
+$D_5$ and $D_7$ on three graphs; the counting method is checked against brute
+force on random braids, and Lemma~\ref{lem:cable} on separate cases. The
+identities of Sections~\ref{sec:s4} and \ref{sec:heis} are checked by brute
+force on small cases (Section~\ref{sec:evidence}).
+The steering law is checked in all four patterns against direct computation of
+the obstruction on braid closures with Borromean insertions. Complete
+graph-to-knot instances were computed for the triangle and the digon over
+$\F_4$ ($\cN=45162496$ and $326656$), for patterns two, three and four over
+$\F_5$ and $\F_7$ ($\cN=3240625$, $46101601$ and $25925$), with leaf
+configurations found by search and equal to the gadget up to a change of
+basis. The band-and-projector recipe of the construction has not been run end
+to end, and pattern one (which needs $r\ge6$) has steering checks but no
+complete instance.
+
+\paragraph{Approximate counting.} Part~(a) of Rowell's conjecture asks for an
+FPRAS for every $G$. All our reductions land on ferromagnetic Potts points
+($v>0$), and for one group the reduction preserves approximation.
+
+\begin{proposition}\label{prop:bis}
+For $G=\mathrm{UT}_3(\F_4)\rtimes C_3$, approximating $H_K(G)$ is
+$\#\mathrm{BIS}$-hard under approximation-preserving reductions. So part~(a)
+of Rowell's conjecture for this $G$ would give an FPRAS for $\#\mathrm{BIS}$.
+\end{proposition}
+
+\begin{proof}
+By the proofs of Theorem~\ref{thm:ut3} and Proposition~\ref{prop:count}, the knot
+$K_\Gamma$ built from a multigraph $\Gamma$ with $m$ edges has
+$H_{K_\Gamma}(G)=64+128\cdot4^{4m}Z_\Gamma(64,15)$: over $\F_4$ both nontrivial
+characters are steered, so no unsteered term remains. One query with relative
+error $\delta$, minus the known constant $64$ and divided by $128\cdot4^{4m}$,
+approximates $Z_\Gamma(64,15)$ with relative error at most $2\delta$. Approximating
+the ferromagnetic Potts partition function $Z_\Gamma(Q,v)$ with $Q>2$ and
+$v>0$ is $\#\mathrm{BIS}$-hard on general graphs \cite[Thm.~1]{GJ12}.
+\end{proof}
+
+This is evidence against part~(a), not a refutation. The other reductions do
+not preserve approximation as written. For the Heisenberg groups with pure
+leaves, the component read by $\psi^{-1}$ is never a permutation of
+$(\alpha,\beta,\gamma)$, so it keeps its maximal value and dominates the count.
+For $S_4$ the knot reduction interpolates, and the link reduction of
+Remark~\ref{rem:links} lands on the planar ferromagnetic Potts model, for which
+we know no $\#\mathrm{BIS}$-hardness. The interactions induced by kernel counts
+are positive semidefinite, which suggests that this route gives at most
+$\#\mathrm{BIS}$-type hardness of approximation.
+
+\paragraph{Open questions.}
+\begin{enumerate}
+\item The converse of Remark~\ref{rem:K} for all coprime class-two groups with
+a hard pair, and groups with higher-exponent layers.
+\item Extension fields other than $\F_4$; for $q=2^k$ in patterns 2 and 4 a
+twisted Bockstein term can appear.
+\item Approximation for the Heisenberg groups and for $S_4$; upper bounds
+($H_K(G)\le_{\mathrm{AP}}\#\mathrm{BIS}$) for any solvable $G$.
+\item Closed 3-manifolds with bounded first homology for $\mathrm{GL}(2,3)$
+and $2O$ (for $S_4$ itself the repository proves hardness with $H_1=\Z/2$,
+\texttt{CLOSED-H1-20261025-001C}).
+\end{enumerate}
+
+\section{Evidence and replay}\label{sec:evidence}
+
+The proofs, each with a standard-library check, are in the Prespatial Labs
+repository under \texttt{proofs/<ticket>/}. The replay driver
+\texttt{replay.py} next to this note copies them to a temporary directory,
+reruns every check there, and compares each fresh result with the frozen one;
+the frozen files are not touched.
+
+\begin{center}
+\begin{tabular}{@{}p{0.43\textwidth}p{0.5\textwidth}@{}}
+\toprule
+Claim & Proof and check\\
+\midrule
+Links: $S_3$ and $D_n$ ($n$ odd) hard; cables and local knots & \texttt{links/} in this note's directory (\texttt{run\_all.py})\\
+Bicycle law, Potts$(12,\tfrac12)$, knot gadgets, $T(K)$ $\sharpP$-hard & \texttt{BOUNDED-H1-20261025-001A}\\
+Abelian-by-nilpotent targets polynomial on knots & \texttt{BOUNDED-H1-20261025-001B}\\
+Livingston's identity re-proved & \texttt{CLOSED-H1-20261025-001B}\\
+$H_K(S_4)=4+R+2T$; double covers & \texttt{SL23-BOUNDED-20261025-001B}\\
+Count as a triple-product kernel ($\F_4$) & \texttt{CORRECTIONS-20261026-001A}\\
+Steering ($\F_4$) & \texttt{CORRECTIONS-20261026-001C}\\
+$\mathrm{UT}_3(\F_4)\rtimes C_3$ hard; knot groups ($+63$) & \texttt{CORRECTIONS-20261026-001D}\\
+Count, steering and pure leaves (odd $p$) & \texttt{COPRIME-CLASS2-20261026-001B}\\
+No hard pair: polynomial; Remark~\ref{rem:K} & \texttt{COPRIME-CLASS2-20261026-001C}\\
+Hard pair: gadgets, construction, knot groups & \texttt{COPRIME-CLASS2-20261026-001D}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+An independent review with fresh code (\texttt{COPRIME-CLASS2-20261026-001A})
+reproduced every number of the $\F_4$ case and 894 further steering
+configurations; a second review replayed the four gadget patterns and the
+$+63$ identity with separate code. Both were performed by AI systems and are
+no substitute for expert review.
+
+\begin{thebibliography}{99}
+\bibitem{Gal26} C.~Galindo, \emph{A complexity dichotomy for quantum invariants of
+3-manifolds}, arXiv:2605.06984 (2026).
+\bibitem{GJ12} L.~A.~Goldberg and M.~Jerrum, \emph{Approximating the partition
+function of the ferromagnetic Potts model}, J. ACM 59 (2012), art.~25.
+\bibitem{GR01} C.~Godsil and G.~Royle, \emph{Algebraic Graph Theory}, Springer,
+2001.
+\bibitem{Hab00} K.~Habiro, \emph{Claspers and finite type invariants of links},
+Geom. Topol. 4 (2000), 1--83.
+\bibitem{JVW90} F.~Jaeger, D.~L.~Vertigan and D.~J.~A.~Welsh, \emph{On the
+computational complexity of the Jones and Tutte polynomials}, Math. Proc.
+Cambridge Philos. Soc. 108 (1990), 35--53.
+\bibitem{KR15} H.~Krovi and A.~Russell, \emph{Quantum Fourier transforms and the
+complexity of link invariants for quantum doubles of finite groups}, Comm. Math.
+Phys. 334 (2015), 743--777.
+\bibitem{KS18} G.~Kuperberg and E.~Samperton, \emph{Computational complexity and
+3-manifolds and zombies}, Geom. Topol. 22 (2018), 3623--3670.
+\bibitem{KS21} G.~Kuperberg and E.~Samperton, \emph{Coloring invariants of knots
+and links are often intractable}, Algebr. Geom. Topol. 21 (2021), 1479--1510.
+\bibitem{Liv95} C.~Livingston, \emph{Lifting representations of knot groups}, J.
+Knot Theory Ramifications 4 (1995), 225--234.
+\bibitem{Mas03} G.~Massuyeau, \emph{Cohomology rings, Rochlin function, linking
+pairing and the Goussarov--Habiro theory of three-manifolds}, Algebr. Geom.
+Topol. 3 (2003), 1139--1166.
+\bibitem{Mat87} S.~V.~Matveev, \emph{Generalized surgeries of three-dimensional
+manifolds and representations of homology spheres}, Math. Notes 42 (1987),
+651--656.
+\bibitem{Mou17} D.~Moussard, \emph{Equivariant triple intersections}, Ann. Fac.
+Sci. Toulouse Math. (6) 26 (2017), 601--643.
+\bibitem{MS05} D.~Matei and A.~I.~Suciu, \emph{Counting homomorphisms onto finite
+solvable groups}, J. Algebra 286 (2005), 161--186.
+\bibitem{Row09} E.~C.~Rowell, \emph{Two paradigms for topological quantum
+computation}, in: Advances in Quantum Computation, Contemp. Math. 482, Amer.
+Math. Soc., 2009, 165--177.
+\bibitem{RR78} P.~Rosenstiehl and R.~C.~Read, \emph{On the principal edge
+tripartition of a graph}, Ann. Discrete Math. 3 (1978), 195--226.
+\bibitem{SW26} E.~Samperton and A.~Wei\ss, \emph{Obstruction theory and the
+complexity of counting group homomorphisms}, arXiv:2602.02885 (2026).
+\bibitem{Ver05} D.~Vertigan, \emph{The computational complexity of Tutte
+invariants for planar graphs}, SIAM J. Comput. 35 (2005), 690--712.
+\end{thebibliography}
+
+\end{document}

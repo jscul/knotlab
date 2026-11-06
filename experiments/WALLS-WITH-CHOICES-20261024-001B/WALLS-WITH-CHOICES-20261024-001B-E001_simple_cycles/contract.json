@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WALLS-WITH-CHOICES-20261024-001B-E001",
+  "ticket": "WALLS-WITH-CHOICES-20261024-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "WALLS-WITH-CHOICES-20261024-001A-P001 proved that an odd class has an assignment exactly when the torus's wall graph has a closed walk with a transverse class and no overlap in Z c + Z e; it leaves open whether simple cycles of the wall graph suffice. Scoping before this contract, all disclosed: during DIRECTIONAL-RIGIDITY-20261023-001 the simple-cycle rule matched 240 random 3 x 3 configurations of each of the eight bending placements whose walls have choices, 100 random 3 x 4 configurations of four of them (155, 159, 62, 111) and 96 selective 3 x 3 configurations located on purpose; during this epic, before this contract, walls.c reproduced the full frozen 3 x 3 histograms of placements 155 and 159 in every twist. The other six placements with choices are images of 155 and 159 under the frame flip and the half turn, so the 3 x 3 part of this test is largely seen; the 3 x 4 part is fresh apart from those 400 sampled configurations.",
+  "question": "On the 3 x 3 and 3 x 4 tori, for every configuration and twist of the twelve bending placements, does the contradiction pattern predicted by simple cycles of the wall graph equal the frozen pattern of DIRECTIONAL-RIGIDITY-20261023-001A-E001?",
+  "public_inputs": {
+    "placements": "the twelve bending-wall placements of DIRECTIONAL-RIGIDITY-20261023-001B-P001: 54, 62, 109, 110, 111, 125, 147, 151, 155, 159, 203, 215",
+    "tori_and_classes": "3 x 3 with the 16 classes and 3 x 4 with the 13 classes of the frozen rows, in their order",
+    "configurations": "every configuration of the visible bits, every twist",
+    "truth": "the frozen histograms of DIRECTIONAL-RIGIDITY-20261023-001A-E001 (rows.jsonl), configurations with an assignment on the torus counted under pattern 0",
+    "program": "walls.c (C99): the wall graph in the constant frame, simple cycles from their smallest state, the overlap test over every pair of visits"
+  },
+  "definitions": "A state of the wall graph is a triangle of the torus, its entry edge and the wall's left value relative to the twist. A turn is allowed when its lone corner's place is free, or pinned with the coin's value on the turn's side. The simple-cycle pattern of a configuration marks an odd class as contradicting when no simple cycle of the wall graph has det(c, e) != 0 and no difference of positions of two visits to one torus triangle in Z c + Z e.",
+  "predictions": {
+    "P1_three_by_three": "scoping-predicted (largely seen): for every bending placement and twist on 3 x 3 the simple-cycle histogram equals the frozen histogram",
+    "P2_three_by_four": "scoping-predicted: for every bending placement and twist on 3 x 4 the simple-cycle histogram equals the frozen histogram",
+    "reported": "per placement, torus and twist both histograms; any mismatch with the patterns that differ"
+  },
+  "controls": "(i) totals; (ii) the engine reproduces the twelve certified selective patterns of DIRECTIONAL-RIGIDITY-20261023-001B-P001, Proposition 4, over its eight classes; (iii) the first-visit-only variant misreads configuration 210021 of placement 151 in twist 01 on 3 x 3; (iv) the four placements whose walls have no choices (54, 109, 147, 151) match on 3 x 3, where their rule is a theorem",
+  "decision_rule": "If a control fails, the result is invalid. Supported if P1 and P2 hold. Refuted if P1 or P2 fails: then simple cycles do not suffice on these tori, and the mismatches are listed.",
+  "resource_budget": {"wall_seconds": 10800, "memory_mib": 4096, "threads": 24},
+  "stop_rule": "Run both tori in full, writing rows as they finish; then decide. No adaptive extension.",
+  "seeds": "none: every configuration is enumerated",
+  "environment": "CPython 3 standard library and gcc (C99)",
+  "red_team_r0": [
+    "The 3 x 3 part is largely seen: placements 155 and 159 matched in full before freezing, and the other six with choices are their images; P1 is a regression test there.",
+    "Agreement on two small tori does not show that simple cycles suffice in general; the theorem needs closed walks.",
+    "The truth comes from a different program (spat.c), whose output was independently checked with PySAT in DIRECTIONAL-RIGIDITY-20261023-001A-E001."
+  ],
+  "nonclaims": [
+    "No general statement about simple cycles beyond the two tori.",
+    "Only the twelve bending placements; the straight-wall and stripe placements are not tested.",
+    "Lattices and twists are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected histograms or verdicts as inputs to the engine; the frozen histograms are read only for the comparison"
+  ],
+  "outputs": "artifacts/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/rows.jsonl and result.json"
+}

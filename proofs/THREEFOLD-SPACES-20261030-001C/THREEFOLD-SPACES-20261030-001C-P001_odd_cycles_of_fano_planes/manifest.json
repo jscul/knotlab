@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-SPACES-20261030-001C-P001",
+  "canonical_id": "THREEFOLD-SPACES-20261030-001C-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-SPACES-20261030-001C",
+  "proof": "THREEFOLD-SPACES-20261030-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Odd cycles of Fano planes: beyond Fano compositions",
+  "status": "Proved",
+  "claim": "(1) Erratum for THREEFOLD-SPACES-20261030-001A, Theorem 4: its conclusion (every non-colourable cubic triple system is a Fano composition, with 7 + 6k points) is false, and its induction overlooked tight-cut contractions that put a point twice on a line. (2) A Fano block (Fano plane minus a line) forces its three ports to one colour, either colour; a line through two ports of one block and one port of another is the inequality between the blocks' colours, twisted at the single port the equality. (3) A cycle of k Fano blocks is a linear connected cubic triple system on 7k points that is not 2-colourable iff k is odd (7, 21, 35, ...); with one twisted connecting line, iff k is even. (4) The twisted 2-cycle (14 points, sign-nonsingular with its twist, |det| = per = 320) is the smallest twisted system (none on at most 13 points, ticket B) and is the one found by SAT; splicing two of them at the twisted incidences gives a non-colourable linear cubic triple system on 27 points. (5) Hence, by the duality of SPACE-SELECTION-20261030-001C, the knot has three-fold spaces with 21, 27, 35, ... triangles that are not Fano compositions; the 21-triangle gadgets are exact with lambda(0) = 125. (6) Conjecture: every non-colourable cubic triple system is assembled from Fano blocks by splices and by cycles with an odd number of inequalities, i.e. its tight-cut decomposition consists of Heawood graphs and planar pieces with doubled edges whose faces have length 2 mod 4.",
+  "dependencies": [
+    "THREEFOLD-SPACES-20261030-001A",
+    "THREEFOLD-SPACES-20261030-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A Fano block that does not force its ports, or a cycle of blocks whose colourability disagrees with the parity of k.",
+    "A twisted cycle whose colourability disagrees with the stated parity, or a 14-point system not isomorphic to the SAT solution.",
+    "A 2-colourable 27-point splice, or a dual gadget of a stated system that is not exact at the knot.",
+    "A computation that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-SPACES-20261030-001",
+    "epic_path": [
+      "THREEFOLD-SPACES-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/result.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "7d4aea1e0994189c09c1d9f84db61ad21aed7fde23283db4dddc1ebafc183837",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/manifest.json": "fcf3c7016c86c9c2476564f14156a3bbc45fdc424fdc098c05d93524dd3d0d42",
+    "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/result.json": "eddf64cdcc43aa2a23c45dc4398d65994b2556e2911e0a945a0826f457bef477",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py": "b876a6a2d4b198b2e68eb99b3b9185809ebf3614d4ea6ad2e949b491aa8ac97b"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json",
+    "identity": "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/identity.json",
+    "directory": "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes",
+    "proof": "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/proof.md",
+    "result": "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/result.json",
+    "check": "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "fano_odd_cycles_shown": true
+  },
+  "foundation_claim_scope": "Cubic triple systems with three distinct points per line; their Fano blocks, cycles and splices; the dual three-fold gadgets of the signed not-all-equal knot. Conjecture 5 is not claimed.",
+  "validation": {
+    "status": "checked: erratum examples; block lemma exhaustive; cycles k = 1..7 and twisted k = 1..6 by SAT against the core parity; 14-point isomorphism and exact det/per; 27-point system by SAT; 21-triangle gadgets exact at the knot; duality conditions at 27 and 35 points; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "elementary consequences of the block lemma and ticket A's splice calculus; no overlap found (candidate local delta) for the reading as the knot's three-fold spaces; Conjecture 5 is the expected specialization of Robertson-Seymour-Thomas and Kasteleyn",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

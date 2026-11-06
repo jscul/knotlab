@@ -1,0 +1,266 @@
+{
+  "artifact_id": "PC-DEGREE-20261020-001B-P001",
+  "checks": {
+    "carving_derivations": {
+      "all_replay": true,
+      "graphs": 155,
+      "named": {
+        "K33": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 28
+        },
+        "K4": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 15
+        },
+        "K44": {
+          "cvw": 8,
+          "degree_bound": 5,
+          "max_degree": 5,
+          "ok": true,
+          "steps": 51
+        },
+        "K45": {
+          "cvw": 10,
+          "degree_bound": 6,
+          "max_degree": 6,
+          "ok": true,
+          "steps": 66
+        },
+        "K55": {
+          "cvw": 12,
+          "degree_bound": 7,
+          "max_degree": 7,
+          "ok": true,
+          "steps": 86
+        },
+        "K6": {
+          "cvw": 8,
+          "degree_bound": 5,
+          "max_degree": 5,
+          "ok": true,
+          "steps": 39
+        },
+        "cube": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 33
+        },
+        "cubic8-a": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 33
+        },
+        "cubic8-b": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 29
+        },
+        "cubic8-c": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 35
+        },
+        "heawood": {
+          "cvw": 6,
+          "degree_bound": 4,
+          "max_degree": 4,
+          "ok": true,
+          "steps": 64
+        },
+        "petersen": {
+          "cvw": 5,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 46
+        },
+        "prism": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 22
+        },
+        "wagner": {
+          "cvw": 4,
+          "degree_bound": 3,
+          "max_degree": 3,
+          "ok": true,
+          "steps": 35
+        }
+      }
+    },
+    "closure_matches_linear_algebra": {
+      "agree": true,
+      "graph_degree_cases": 255
+    },
+    "duality_on_small_instances": true,
+    "encodings": {
+      "reduced_closures_agree_above_maxdeg": true,
+      "standard_within_one": true,
+      "values": {
+        "K33": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "K4": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "K45": {
+          "PC_Rclause": 6,
+          "PC_Rstd": 6,
+          "PC_SC": 6,
+          "PC_bal": 6,
+          "maxdeg": 5
+        },
+        "K6": {
+          "PC_Rclause": 5,
+          "PC_Rstd": 5,
+          "PC_SC": 5,
+          "PC_bal": 5,
+          "maxdeg": 5
+        },
+        "cube": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "cubic8-a": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "cubic8-b": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "cubic8-c": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "petersen": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "prism": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        },
+        "wagner": {
+          "PC_Rclause": 3,
+          "PC_Rstd": 3,
+          "PC_SC": 3,
+          "PC_bal": 3,
+          "maxdeg": 3
+        }
+      }
+    },
+    "geometry": {
+      "cases": 561,
+      "connected_below_2d": true,
+      "frozen_at_2d": true,
+      "median_center": true,
+      "three_point_center": true
+    },
+    "tangle_lower_bound": {
+      "labels_on_small_side_and_no_refutation": true,
+      "tangles_checked": 23
+    }
+  },
+  "claim": "For a connected graph G with an odd charge, over any field of characteristic other than 2: (1) the reduced polynomial calculus closure of the binomial Tseitin system is the closure of signed relations y_A ~ +-y_B among monomials of degree at most d under translation within degree and transitivity, each relation labelled by the vertex set U with A xor B = cut(U); (2) if the cut function has a tangle of order 2d+1, every label stays on the tangle's small side, so no degree-d refutation exists, and by the duality theorem of Robertson and Seymour (Graph Minors X (3.5); Geelen, Gerards, Robertson and Whittle 2006, Theorem 3.2) the degree is at least ceil(cvw/2); (3) a carving of width w yields a refutation of degree floor(w/2)+1 with balanced binomial axioms; (4) with the standard binomial or clause axioms the reduced degree is max(maxdegree, that value), and the standard (unreduced) convention is at most one higher.",
+  "controls": {
+    "flipped_sign_replay_fails": true,
+    "no_translation_no_refutation_K4_d3": true,
+    "tangle_without_T2_found_where_cvw_small": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "PC-DEGREE-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "binomial_pc_closure_is_signed_relation_closure_proved": true,
+    "candidate_package_persistence_proved": false,
+    "carving_of_width_w_gives_degree_floor_half_w_plus_one_proved": true,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "duality_theorem_reproved_here": false,
+    "even_width_rule_determined": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "pc_degree_at_least_half_carving_width_proved_given_duality": true,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "standard_encodings_within_one_proved": true,
+    "tangle_of_order_2d_plus_1_forbids_degree_d_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "polynomial-calculus-degree",
+    "tseitin-formulas",
+    "graph-layout-widths"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "PC-DEGREE-20261020-001B"
+}

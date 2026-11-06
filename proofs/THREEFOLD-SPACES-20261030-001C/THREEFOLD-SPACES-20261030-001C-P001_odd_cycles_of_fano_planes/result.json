@@ -1,0 +1,221 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SPACES-20261030-001C-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 6,
+    "mismatched": {}
+   }
+  },
+  "1 erratum: the classification by Fano compositions fails at 27 points; contractions can repeat a point": {
+   "ok": true,
+   "detail": {
+    "27-point splice of two copies of the 14-point twisted system at the twisted incidence: points, cubic, linear, connected, 2-colourable": [
+     27,
+     true,
+     true,
+     true,
+     false
+    ],
+    "27 mod 6 (Fano compositions have 7 + 6k points)": 3,
+    "T14: lines inside the block, contraction of the remaining lines": [
+     6,
+     [
+      [
+       "t",
+       1,
+       2
+      ],
+      [
+       1,
+       7,
+       8
+      ],
+      [
+       1,
+       9,
+       10
+      ],
+      [
+       2,
+       7,
+       9
+      ],
+      [
+       2,
+       8,
+       10
+      ],
+      [
+       7,
+       10,
+       13
+      ],
+      [
+       8,
+       9,
+       13
+      ],
+      [
+       "t",
+       "t",
+       13
+      ]
+     ]
+    ]
+   }
+  },
+  "2 a Fano block forces its ports to one colour, either colour": {
+   "ok": true,
+   "detail": {
+    "proper colourings of Fano minus a line": 10,
+    "ports always equal": true,
+    "port colours that occur": [
+     0,
+     1
+    ]
+   }
+  },
+  "3 a cycle of k Fano blocks is not 2-colourable iff k is odd": {
+   "ok": true,
+   "detail": {
+    "k=1: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     7,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "k=2: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     14,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "k=3: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     21,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "k=4: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     28,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "k=5: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     35,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "k=6: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     42,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "k=7: points, cubic, linear, connected, 2-colourable, core 2-colourable": [
+     49,
+     true,
+     true,
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  "4 one twist makes even cycles odd; the twisted 2-cycle is the smallest twisted system": {
+   "ok": true,
+   "detail": {
+    "k=1: twisted at the single port of one connecting line: 2-colourable, core": [
+     true,
+     true
+    ],
+    "k=2: twisted at the single port of one connecting line: 2-colourable, core": [
+     false,
+     false
+    ],
+    "k=3: twisted at the single port of one connecting line: 2-colourable, core": [
+     true,
+     true
+    ],
+    "k=4: twisted at the single port of one connecting line: 2-colourable, core": [
+     false,
+     false
+    ],
+    "k=5: twisted at the single port of one connecting line: 2-colourable, core": [
+     true,
+     true
+    ],
+    "k=6: twisted at the single port of one connecting line: 2-colourable, core": [
+     false,
+     false
+    ],
+    "twisted 2-cycle ~ the system found by SAT at 14 points (twist marked)": true,
+    "the 14-point system: untwisted 2-colourable, twisted 2-colourable, signed SNS (det, per)": [
+     true,
+     false,
+     [
+      true,
+      -320,
+      320
+     ]
+    ],
+    "ticket B: twisted systems on n = 3..13": [
+     "UNSAT"
+    ]
+   }
+  },
+  "5 the knot is exact on gadgets dual to odd cycles of Fano planes and to the 27-point system": {
+   "ok": true,
+   "detail": {
+    "3-cycle (21 triangles): corner line -> (exact, lambda(0))": {
+     "(0, 3, 4)": [
+      true,
+      125
+     ],
+     "(14, 15, 2)": [
+      true,
+      125
+     ]
+    },
+    "duality conditions: not 2-colourable, 2-colourable after deleting any line": {
+     "5-cycle (35 points)": [
+      true,
+      true
+     ],
+     "27-point splice": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "even cycles of blocks are 2-colourable": true,
+    "twisting a doubled port makes the connecting line vacuous (3-cycle becomes 2-colourable)": true,
+    "splicing the twisted systems with mis-paired cut edges gives a 2-colourable system": true
+   }
+  },
+  "ok": true,
+  "seconds": 7.6
+ }
+}

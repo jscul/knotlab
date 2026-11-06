@@ -1,0 +1,35 @@
+{
+ "schema_version": 3,
+ "artifact_id": "INTERFERENCE-20261029-001Z-P001",
+ "kind": "proof",
+ "ticket": "INTERFERENCE-20261029-001Z",
+ "proof": "INTERFERENCE-20261029-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing INTERFERENCE-20261029-001: one line per conclusion with its novelty label and evidence (tickets A, B and C), and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/manifest.json": "Proved",
+   "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/result.json": "Proved",
+   "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json": "Proved",
+   "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json": "Proved",
+   "experiments/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/contract.json": "Frozen",
+   "artifacts/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "contracts_frozen": true,
+  "experiment_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "proved",
+   "C": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

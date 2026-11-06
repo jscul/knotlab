@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "artifact_id": "TSEITIN-NS-DEGREE-NOTE-20261020-001-P001",
+  "canonical_id": "TSEITIN-NS-DEGREE-NOTE-20261020-001-P001",
+  "kind": "proof",
+  "ticket": "TSEITIN-NS-DEGREE-NOTE-20261020-001",
+  "proof": "TSEITIN-NS-DEGREE-NOTE-20261020-001-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A checkable note: the Nullstellensatz degree of Tseitin formulas is the toggle width (cutwidth + 1 at degree three)",
+  "status": "Proved",
+  "claim": "Let G be a connected graph with an odd charge c, and T(G, c) its Tseitin formula written as polynomials one clause at a time (one polynomial per violating assignment of a vertex, plus the Boolean axioms). Over a field of characteristic 2 its Nullstellensatz degree is the maximum degree of G; over every other field it is the toggle width tgw(G), whatever the charge. With cw(G) + 1 <= tgw(G) <= cw(G) + floor(maxdegree/2) on at least 3 vertices (from CUTWIDTH-DEPTH-20261020-001B), the degree is cw(G) + 1 when the maximum degree is at most 3. In the +-1 binomial encoding the degree is exactly cw(G) for every connected G when products are measured after reduction modulo y^2 = 1, and lies between tgw(G) and cw(G) + maxdegree when they are measured before. The note proves these self-containedly; the new step is the duality between degree-d refutations and level-d pseudo-distributions for this encoding. replay.py (standard library only) checks the sweep refutation as an integer polynomial identity, the closed-form design against every axiom multiple, and the degrees by direct elimination on ten cubic graphs.",
+  "dependencies": [
+    "DEEP-HOLES-20261020-001Z",
+    "CUTWIDTH-DEPTH-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "nullstellensatz-degree",
+    "tseitin-formulas",
+    "graph-layout-widths"
+  ],
+  "evidence_modes": [
+    "external-presentation",
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "inherited-consequence",
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "replay.py fails on a declared graph: the sweep refutation is not 1 over the integers, the design fails an axiom multiple, or a directly computed degree differs from the stated value.",
+    "A number in the note's table or remarks differs from the replay.",
+    "The note fails to compile, or leaves an undefined reference.",
+    "A control is accepted: an even charge refuted, the design surviving at level tgw, or the sweep without one step summing to 1.",
+    "A published statement of the exact degree is found (the ticket's stop rule)."
+  ],
+  "lineage": {
+    "home_scope": "TSEITIN-NS-DEGREE-NOTE-20261020-001",
+    "epic_path": [],
+    "parents": [
+      "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/CUTWIDTH-DEPTH-20261020-001Z/CUTWIDTH-DEPTH-20261020-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/manifest.json": "e7f3b0ab568d3cca21af80e88fc277cc2c613bb943f3a4c837c687a9ee248008",
+    "proofs/CUTWIDTH-DEPTH-20261020-001Z/CUTWIDTH-DEPTH-20261020-001Z-P001_epic_closure/manifest.json": "fa4dc62fee4fe6ac1d2ba4381e4ca8bff527e7c74685d003102638d7ae013301",
+    "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/manifest.json": "5c8f6f8482e873b329129b070cea775d7fbbd3b785a925123397d0d4670da4d1",
+    "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/result.json": "310721419e2689043755c5a83499d33605b1bf6723f1bb1c0a8d5e2e6f19d53d",
+    "proofs/CUTWIDTH-DEPTH-20261020-001B/CUTWIDTH-DEPTH-20261020-001B-P001_toggle_cutwidth/manifest.json": "98117946f0a9adeac2038523da1678ffe136e89492b1c6e879ceee37f8a896f3",
+    "proofs/CUTWIDTH-DEPTH-20261020-001B/CUTWIDTH-DEPTH-20261020-001B-P001_toggle_cutwidth/result.json": "29c7c952a127980a9013295129b91fe4cc648c9598ca18da836f39aa4f039291"
+  },
+  "paths": {
+    "manifest": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/manifest.json",
+    "identity": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/identity.json",
+    "directory": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note",
+    "proof": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/proof.md",
+    "result": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/result.json",
+    "check": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/check.py",
+    "replay": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/replay.py",
+    "note": "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/note/tseitin_ns_degree.tex"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "ns_designs_are_pseudo_distributions_proved": true,
+    "tseitin_ns_degree_is_max_degree_in_characteristic_two_proved": true,
+    "tseitin_ns_degree_is_toggle_width_outside_characteristic_two_proved": true,
+    "tseitin_ns_degree_is_cutwidth_plus_one_at_degree_three_proved": true,
+    "pm1_reduced_degree_is_cutwidth_proved": true,
+    "pm1_unreduced_degree_between_tgw_and_cw_plus_max_degree_proved": true,
+    "replay_checks_pass": true,
+    "note_numbers_match_replay": true,
+    "polynomial_calculus_claim": false,
+    "sherali_adams_degree_determined": false,
+    "sent_or_shared_outside_repository": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Presentation of a proof-complexity result for an external reader; no contact-first claim.",
+  "validation": {
+    "status": "checked: self-contained prose proofs in the note; replay.py (standard library only) verifies the sweep refutation as an integer identity, the closed-form design against every axiom multiple over F3, F5 and Q, and the degrees by direct elimination over F2 and F3 and by signed union-find for the +-1 encoding, on ten cubic graphs with four negative controls; check.py ties every number in the note to the replay, identifies the roster, builds the PDF cleanly and catches five tampering controls; no human or external review",
+    "level": "V1 prose proof with executable certificates on declared instances; the duality lemma is new here; Theorem 2 is inherited from CUTWIDTH-DEPTH-20261020-001B-P001 and its Lemma 9 restated with proof from Fomin and Thilikos (2003); no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 (Tseitin with Nullstellensatz, polynomial calculus, Sherali-Adams and affine relaxations, rank, cutwidth, Weisfeiler-Leman; Grigoriev 1998; Buss, Grigoriev, Impagliazzo and Pitassi 2001; Galesi, Talebanfard and Toran 2020; Wainwright and Jordan 2004; Makedon and Sudborough 1989) found no statement of the exact degree. The methods are standard, and the +-1 statement after reduction may be close to known arguments for binomial systems.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "artifact_id": "HUB-DIMENSION-20261024-001A-P001",
+  "checks": {
+    "Fibonacci rule": {
+      "Fibonacci rule breaks on some sampled move": true,
+      "Fibonacci rule fails the identities": true,
+      "all-ones boundary: 2-tetrahedron side, 3-tetrahedron side": [
+        1,
+        2
+      ]
+    },
+    "global certificates": {
+      "1-4 moves": 28,
+      "2-3 moves": 37,
+      "failing laws never allowed on the sample": 0,
+      "failing laws that are ever allowed break on some sampled move": true,
+      "laws never allowed by the identities are never allowed on the sample": true,
+      "moves keep H_1": true,
+      "passing laws keep one ratio per move kind": true,
+      "sampled moves": 65
+    },
+    "local census": {
+      "distinct sets of allowed tetrahedron classes among the passing laws": 7,
+      "failing": 18968,
+      "laws (masks)": 32768,
+      "never allowed": 8097,
+      "passing both identities": 5703,
+      "ratios (lambda, mu) per named law": {
+        "all edges 0": [
+          "1",
+          "1"
+        ],
+        "all edges 1": [
+          "1",
+          "1"
+        ],
+        "all edges equal": [
+          "1",
+          "1"
+        ],
+        "even or odd": [
+          "1",
+          "2"
+        ],
+        "even parity": [
+          "1",
+          "2"
+        ],
+        "free": [
+          "2",
+          "16"
+        ],
+        "odd parity": [
+          "1",
+          "2"
+        ]
+      },
+      "they are exactly the seven named laws": true
+    },
+    "native networks": {
+      "H_1 (sphere, L(4,1))": [
+        "(0, [])",
+        "(0, [4])"
+      ],
+      "edge-parity counts (sphere, L(4,1))": [
+        1,
+        2
+      ],
+      "every symmetric face law counts them equally": true,
+      "native networks of the sphere and L(4,1) coincide": true
+    },
+    "parity": {
+      "count = 2^(dim H^1 + V - 1) on all": true,
+      "sampled triangulations": 65
+    }
+  },
+  "claim": "Among symmetric laws of bits on the edges of triangulations of closed orientable three-manifolds (a rule on the number of 1-edges of each triangle and a rule on the class of each tetrahedron's labelling), the laws satisfying the 2-3 and 1-4 move identities and allowing some configuration reduce to seven: all 0, all 1, all equal, free, even parity, odd parity, and even or odd; their normalized counts are constants or the size of the mod-2 first cohomology, and even parity counts |H^1(M; Z/2)| times two to the vertices minus one. Every other law that is ever allowed breaks on explicit sampled moves. Native networks, with bits on faces, see only the dual graph: one-tetrahedron triangulations of the sphere and of L(4,1) share their native network while edge parity counts 1 and 2. So bits see dimension three only through hubs, and then only through the mod-2 first cohomology.",
+  "controls": {
+    "2^V instead of 2^(dim H^1 + V - 1) disagrees with parity": true,
+    "comparing the sphere with L(4,1) as one move breaks parity's ratio": true,
+    "dropping the interior edge's sum rejects parity": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "HUB-DIMENSION-20261024-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "bits_see_mod2_cohomology_shown": true,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "HUB-DIMENSION-20261024-001A"
+}

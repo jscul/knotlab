@@ -1,0 +1,40 @@
+{
+ "artifact_id": "PLANAR-THEOREM-20261102-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json": "Proved",
+     "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 on splices of six near sides (four plane, two non-planar) and two 10-point plane near sides into K4^(3), census 6, the Fano plane and census 58 (lines 0 and 1, every removal on the near side), every crossing knot one of whose excluded patterns is separated by a single port y has y outside the knot, and its near part with y and its far part with y are circuits: eliminating y from them gives the knot, or (degenerate) one of them is a tie and the knot is tie-equivalent to the other, a one-sided circuit": {
+   "info": {
+    "at 4-pattern removals": 16438,
+    "at 6-pattern removals": 17118,
+    "non-planar near sides, 4-pattern removals: a class-level 2-sum through a separating port": 794,
+    "non-planar near sides, 4-pattern removals: only degenerate (every separating port tied to the knot's lone point on one side)": 568,
+    "non-planar near sides, 6-pattern removals: a class-level 2-sum through a separating port": 4556,
+    "non-planar near sides, 6-pattern removals: only degenerate (every separating port tied to the knot's lone point on one side)": 1024,
+    "non-planar near sides: separated crossing knots": 6942,
+    "non-planar near sides: separated crossing knots accounted for": 6942,
+    "plane near sides, 4-pattern removals: a class-level 2-sum through a separating port": 8247,
+    "plane near sides, 4-pattern removals: only degenerate (every separating port tied to the knot's lone point on one side)": 6829,
+    "plane near sides, 6-pattern removals: a class-level 2-sum through a separating port": 9548,
+    "plane near sides, 6-pattern removals: only degenerate (every separating port tied to the knot's lone point on one side)": 1990,
+    "plane near sides: separated crossing knots": 26614,
+    "plane near sides: separated crossing knots accounted for": 26614
+   },
+   "pass": true
+  }
+ },
+ "claim": "Crossing knots separated by one port are 2-sums, for any near side. Glue two knot spaces along a simple 3-edge cut with ports X and remove any near line. Let K be a crossing knot with near part U and far part V, and let one of its excluded patterns (u, v) be separated by a single port y: every port pattern compatible with u has y = b, and every one compatible with v has y = not b. Then y lies outside K, U + y and V + y are circuits, and K is their elimination through y. If y is tied to a point of K, that point is alone on its side, the circuit on that side is the tie, and K is tie-equivalent to the other circuit, which is one-sided. Otherwise both circuits are one-sided knots, and the elimination is a class-level step of the closure. Either way K is generated, never new. The proof uses only the join lemma, complement symmetry and minimality. Checked on splices of six census near sides (four plane, two non-planar) and two 10-point plane near sides into four far sides, at every near removal: 33,556 separated crossing knots, all as stated.",
+ "kind": "proof",
+ "proof": "PLANAR-THEOREM-20261102-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PLANAR-THEOREM-20261102-001B"
+}

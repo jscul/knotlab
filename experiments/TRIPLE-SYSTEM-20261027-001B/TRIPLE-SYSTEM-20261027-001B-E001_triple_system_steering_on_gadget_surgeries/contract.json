@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TRIPLE-SYSTEM-20261027-001B-E001",
+ "ticket": "TRIPLE-SYSTEM-20261027-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "TRIPLE-SYSTEM-20261027-001A proved the polynomial side (abelian triple system, every class). The hardness side (ticket C) needs the steering rule of BEYOND-CLASS2-20261027-001C for general nilpotent groups: the change of the layered obstruction by a cabled pure braid with conjugators in the third lower central term is the degree-3 Lie part of the conjugators evaluated on the bundle values of all free minus classes (layer 1 and deeper), paired with the dual classes. Scoping (scoping/README.md) confirmed it for u4, free class 3 on two minus generators and a class-4 cross-layer algebra on three fixtures, and found no obstruction for the abelian cross-layer class-3 algebra. This contract tests it on new algebras (three generators, mixed signs, class 4 with free layer-2 and layer-3 classes), gadgets, p = 11, against an independent matrix model and an independent group-law count.",
+ "question": "Is the four-way form of G = N x| C2 on gadget surgeries exactly the Dynkin-evaluated degree-3 Lie part of the cable conjugators on all free minus classes, for six nonabelian triple systems of class 3 and 4 at p = 5, 7, 11; do bases and abelian triple systems never obstruct; and do an independent matrix model and group-law count agree?",
+ "public_inputs": {
+  "algebras": "tsfix.algebras: u4; free nilpotent algebras (lm.free_nilpotent) of class 3 on (y1-, y2-), (y1-, y2-, y3-), (x+, y1-, y2-), of class 4 on (x+, y-) and (x+, y1-, y2-) (layer-1 data on y1 only); abelian: free class 3 on (x+, y-), class 4 on (x+, y-) modulo [y,[y,[x,y]]], Heisenberg (y1-, y2-)",
+  "fixtures": "tsfix.fixture_words and base_words (braids, cables and gadgets of BEYOND-CLASS2-20261027-001B-E001's fixtures.py)",
+  "measurement": "lm.LieBraidModel: closed-braid presentation of S^3_2, labels as (BCH vector, theta-parity), layers solved in order, the measured top-layer minus obstructions paired with (J^T s, 0)"
+ },
+ "predictions": {
+  "kappa": 2,
+  "R0_abelian": "cross3 (x+, y-), cross4 mod [y,[y,[x,y]]] and heisenberg (y1-, y2-): on every fixture, 16 random free data in every minus component lift",
+  "R1_steering": "for u4, free3 (y1-, y2-), free3 (y1-, y2-, y3-), free3 (x+, y1-, y2-), cross4 (x+, y-) and free4 (x+, y1-, y2-) with layer-1 data on y1 only: on 4_1 x4 + P4 (0,0) and gadget K3 (p = 5), T(2,p) x8 + P4 (0,1) + P4B (3p,0) (p = 5, 7), gadget C4 (p = 7), T(2,11) x8 + P4B (0,1) (p = 11): Q = 2 sum_events sum_j sum_b <W_j^(3)(ell(x))>_b ell_j(s_b) on all 32 samples, with x all free minus data (including layer-2 and layer-3 classes)",
+  "R2_base": "T(2,p) x4 (p = 5, 7) and 4_1 x3 (p = 5): no algebra obstructs",
+  "R3_model_agreement": "u4: the BCH model equals the matrix model of BEYOND-CLASS2-20261027-001B-E001 on the same samples, on the four fixtures at p = 5, 7",
+  "R4_lifting": "free3 (y1-, y2-) on 4_1 x4 + P4 (0,0) at p = 5, 24 layer-1 data (8 with c_y2 = 0): the direct count of BEYOND-CLASS2-20261027-001A with fixed layer-1 data is positive exactly when Q(x; .) = 0, and then equals |Z1|^2"
+ },
+ "controls": {
+  "machinery (any failure makes the run invalid)": "M1 sparse bracket equals the dense structure-constant contraction; M2 BCH (degree <= 4) associative on random triples; M3 inverses; M4 on every R0/R2 fixture, Fix has dimension summands + 1 and (J^T s, 0) annihilates the minus linear part (p = 5, 7, 11 for M1-M3)",
+  "negative (each must show a mismatch, else invalid)": "X1 kappa = 1 and X2 the P4B tensor for a P4 insertion (free3 (y1-, y2-) on 4_1 x4 + P4); X3 one edge dropped (free3 (x+, y1-, y2-) on gadget K3); X4 leaves 0 and 2 swapped and X5 the rule with layer-1 data only (cross4 (x+, y-) on gadget K3)"
+ },
+ "decision_rule": "Invalid if a machinery check fails or a negative control matches. Supported if R0-R4 hold on every fixture. Refuted otherwise, naming every failed item; neither predictions nor construction change after this contract.",
+ "resource_budget": {
+  "wall_seconds": 3600,
+  "memory_mib": 8192,
+  "threads": 1
+ },
+ "stop_rule": "Run run.py once; no adaptive extension.",
+ "seeds": "numpy default_rng with fixed seeds (run.py)",
+ "environment": "workspace .venv python (numpy); BEYOND-CLASS2-20261027-001B-E001 (fixtures.py, mlib.py, bm.py), cp_lib.py and bc_lib.py imported read-only",
+ "red_team_r0": [
+  "32 samples per fixture test a polynomial identity at random points, not every point.",
+  "Class-4 steering is tested where the layer-3 part of the conjugator value vanishes or the layer-3 obstruction is absent (free4 restricted to y1; cross4 with one minus generator): the non-central case (two layer-1 directions with nonzero triple brackets) is not exercised, because there the layer-3 obstruction blocks layer 4 on generic samples; ticket C covers it by characters.",
+  "Prediction and measurement share the colourings (layer-1 inputs) and the Magnus tensors of the braids; the model agreement (R3) and the group-law count (R4) are the independent routes.",
+  "No class 5 or higher: the BCH truncation is exact only to class 4."
+ ],
+ "nonclaims": [
+  "No hardness proof here (ticket C).",
+  "No claim for class 5 or higher, p = 2, 3, or non-graded algebras."
+ ],
+ "forbidden_inputs": [
+  "Measured forms as inputs to predictions",
+  "Predicted values as inputs to the measurement"
+ ],
+ "outputs": "artifacts/TRIPLE-SYSTEM-20261027-001B/TRIPLE-SYSTEM-20261027-001B-E001_triple_system_steering_on_gadget_surgeries/result.json, rows.json and run_log.txt"
+}

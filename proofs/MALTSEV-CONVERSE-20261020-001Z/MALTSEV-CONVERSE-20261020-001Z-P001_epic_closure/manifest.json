@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "artifact_id": "MALTSEV-CONVERSE-20261020-001Z-P001",
+  "canonical_id": "MALTSEV-CONVERSE-20261020-001Z-P001",
+  "kind": "proof",
+  "ticket": "MALTSEV-CONVERSE-20261020-001Z",
+  "proof": "MALTSEV-CONVERSE-20261020-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the converse epic",
+  "status": "Proved",
+  "claim": "Ledger closing MALTSEV-CONVERSE-20261020-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "MALTSEV-CONVERSE-20261020-001A",
+    "MALTSEV-CONVERSE-20261020-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract, manifest or result changes, the contract is not Frozen, the experiment's signal differs from its recorded value (true), or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A supported, B proved)."
+  ],
+  "lineage": {
+    "home_scope": "MALTSEV-CONVERSE-20261020-001",
+    "epic_path": [
+      "MALTSEV-CONVERSE-20261020-001"
+    ],
+    "parents": [
+      "experiments/MALTSEV-CONVERSE-20261020-001A/MALTSEV-CONVERSE-20261020-001A-E001_converse_census/contract.json",
+      "proofs/MALTSEV-CONVERSE-20261020-001B/MALTSEV-CONVERSE-20261020-001B-P001_converse/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "experiments/MALTSEV-CONVERSE-20261020-001A/MALTSEV-CONVERSE-20261020-001A-E001_converse_census/contract.json": "3d0b1afb1e22cb95878c02527624af545196a626554fb2192b025eb345a1b1e2",
+    "artifacts/MALTSEV-CONVERSE-20261020-001A/MALTSEV-CONVERSE-20261020-001A-E001_converse_census/result.json": "51bfb6ed2ad7bb68a2b5605a3634af5eb442ab53436019456d34cfc2210d5016",
+    "proofs/MALTSEV-CONVERSE-20261020-001B/MALTSEV-CONVERSE-20261020-001B-P001_converse/manifest.json": "d1f1fd0d891913129604a5984c0962e07b3b9ad53e5143b8d0e9f1df2acfb7f1",
+    "proofs/MALTSEV-CONVERSE-20261020-001B/MALTSEV-CONVERSE-20261020-001B-P001_converse/result.json": "7ffc0eba6f1db535875403aa86406d9a0e0349498dfe988a1656ff86d6b01cff"
+  },
+  "paths": {
+    "manifest": "proofs/MALTSEV-CONVERSE-20261020-001Z/MALTSEV-CONVERSE-20261020-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/MALTSEV-CONVERSE-20261020-001Z/MALTSEV-CONVERSE-20261020-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/MALTSEV-CONVERSE-20261020-001Z/MALTSEV-CONVERSE-20261020-001Z-P001_epic_closure",
+    "proof": "proofs/MALTSEV-CONVERSE-20261020-001Z/MALTSEV-CONVERSE-20261020-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/MALTSEV-CONVERSE-20261020-001Z/MALTSEV-CONVERSE-20261020-001Z-P001_epic_closure/result.json",
+    "check": "proofs/MALTSEV-CONVERSE-20261020-001Z/MALTSEV-CONVERSE-20261020-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the frozen census contract and its signalling result and to the Proved proof and its passed result; decision note present; tickets supported and proved; no human or external review",
+    "level": "V0 ledger check: bound digests, frozen contract, recorded experiment signal, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-20."
+  }
+}

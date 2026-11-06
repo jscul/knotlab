@@ -1,0 +1,250 @@
+{
+ "artifact_id": "NATIVE-GENUS-20261104-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "passed",
+     "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json": "Proved",
+     "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json": "passed",
+     "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/manifest.json": "Proved",
+     "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/result.json": "passed",
+     "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json": "Proved",
+     "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json": "passed",
+     "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json": "Proved",
+     "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 interface: the Fano plane and census 58 minus any line leave their ports exactly the two constant patterns (so an intact atom acts as a point), and split at any point allow exactly the six others (so it acts as a line)": {
+   "info": {
+    "F": {
+     "lines whose removal leaves the two constant port patterns": "7 of 7",
+     "points whose split allows exactly the six non-constant patterns": "7 of 7"
+    },
+    "c58": {
+     "lines whose removal leaves the two constant port patterns": "8 of 8",
+     "points whose split allows exactly the six non-constant patterns": "8 of 8"
+    }
+   },
+   "pass": true
+  },
+  "2 the creation map does not depend on which far-side line each point of the gluing line meets: on three spaces, creation by some far side is the same for all six orders of the line's points (the census-6 far side alone is not)": {
+   "info": {
+    "prism(4): Fano at a point + Fano at a line through it (touching)": {
+     "K4^(3) alone independent of the order": 315,
+     "cases": 315,
+     "census 58 alone independent of the order": 315,
+     "census 6 alone independent of the order": 145,
+     "the Fano plane alone independent of the order": 315,
+     "union over far sides independent of the order": 315
+    },
+    "prism(4): Fano at a point + Fano at the farthest line": {
+     "K4^(3) alone independent of the order": 315,
+     "cases": 315,
+     "census 58 alone independent of the order": 315,
+     "census 6 alone independent of the order": 143,
+     "the Fano plane alone independent of the order": 315,
+     "union over far sides independent of the order": 315
+    },
+    "the Fano plane: Fano at a point": {
+     "K4^(3) alone independent of the order": 156,
+     "cases": 156,
+     "census 58 alone independent of the order": 156,
+     "census 6 alone independent of the order": 42,
+     "the Fano plane alone independent of the order": 156,
+     "union over far sides independent of the order": 156
+    }
+   },
+   "pass": true
+  },
+  "3 splitting, exact: on 13 designs (two or three atoms on plane glue, adjacent and touching placements, atoms on the Fano plane and on census 58), every entry of the creation map equals the entry in the space that keeps only the atoms holding the removal and the gluing line; plane glue alone never creates": {
+   "info": {
+    "census 58: Fano at a point": {
+     "creation in the base alone": 36,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 56,
+      "one atom (the full space): agree": 126
+     },
+     "points": 14
+    },
+    "cube: Fano at three points": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 12,
+      "one atom: agree": 234,
+      "two atoms: agree": 216
+     },
+     "points": 22
+    },
+    "prism(4): Fano at a line + Fano at the farthest disjoint line": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 30,
+      "one atom: agree": 252,
+      "two atoms (the full space): agree": 98
+     },
+     "points": 20
+    },
+    "prism(4): Fano at a point + Fano at a line through it (touching)": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 42,
+      "one atom: agree": 254,
+      "two atoms (the full space): agree": 84
+     },
+     "points": 20
+    },
+    "prism(4): Fano at a point + Fano at the farthest line": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 42,
+      "one atom: agree": 254,
+      "two atoms (the full space): agree": 84
+     },
+     "points": 20
+    },
+    "prism(4): Fano at a point + Fano at the farthest point": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 56,
+      "one atom: agree": 252,
+      "two atoms (the full space): agree": 72
+     },
+     "points": 20
+    },
+    "prism(4): Fano at two lines sharing a point": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 30,
+      "one atom: agree": 252,
+      "two atoms (the full space): agree": 98
+     },
+     "points": 20
+    },
+    "prism(4): Fano at two points + Fano at a line off both": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 42,
+      "one atom: agree": 368,
+      "two atoms: agree": 240
+     },
+     "points": 26
+    },
+    "prism(4): Fano at two points of one line": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 56,
+      "one atom: agree": 252,
+      "two atoms (the full space): agree": 72
+     },
+     "points": 20
+    },
+    "prism(5): Fano at a point + census 58 (minus line 3) at the farthest point": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 90,
+      "one atom: agree": 332,
+      "two atoms (the full space): agree": 84
+     },
+     "points": 23
+    },
+    "prism(5): census 58 at a point + census 58 at the farthest line": {
+     "creation in the base alone": 0,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 72,
+      "one atom: agree": 368,
+      "two atoms (the full space): agree": 112
+     },
+     "points": 24
+    },
+    "the Fano plane: Fano at a point": {
+     "creation in the base alone": 42,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 42,
+      "one atom (the full space): agree": 114
+     },
+     "points": 13
+    },
+    "the Fano plane: Fano at a point + Fano at a line off it": {
+     "creation in the base alone": 42,
+     "entries by atoms touched": {
+      "neither line in an atom: agree": 30,
+      "one atom: agree": 228,
+      "two atoms (the full space): agree": 84
+     },
+     "points": 19
+    }
+   },
+   "pass": true
+  },
+  "4 halos split: the base-side lines where each atom's removals create (its halo), which by 3 equal its halo with that atom alone": {
+   "info": {
+    "census 58: Fano at a point": {
+     "A": 6
+    },
+    "cube: Fano at three points": {
+     "A": 4,
+     "B": 4,
+     "C": 4
+    },
+    "prism(4): Fano at a line + Fano at the farthest disjoint line": {
+     "A": 0,
+     "B": 0
+    },
+    "prism(4): Fano at a point + Fano at a line through it (touching)": {
+     "A": 5,
+     "B": 0
+    },
+    "prism(4): Fano at a point + Fano at the farthest line": {
+     "A": 5,
+     "B": 0
+    },
+    "prism(4): Fano at a point + Fano at the farthest point": {
+     "A": 6,
+     "B": 6
+    },
+    "prism(4): Fano at two lines sharing a point": {
+     "A": 0,
+     "B": 0
+    },
+    "prism(4): Fano at two points + Fano at a line off both": {
+     "A": 5,
+     "B": 5,
+     "C": 0
+    },
+    "prism(4): Fano at two points of one line": {
+     "A": 6,
+     "B": 6
+    },
+    "prism(5): Fano at a point + census 58 (minus line 3) at the farthest point": {
+     "A": 7,
+     "B": 7
+    },
+    "prism(5): census 58 at a point + census 58 at the farthest line": {
+     "A": 7,
+     "B": 0
+    },
+    "the Fano plane: Fano at a point": {
+     "A": 3
+    },
+    "the Fano plane: Fano at a point + Fano at a line off it": {
+     "A": 3,
+     "B": 6
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The splitting lemma: in a space made of a base and atoms (the Fano plane or census 58 minus one element) at 3-edge cuts, whether removing a line M creates at a gluing line L depends only on the atoms holding M and L, because every other atom acts as the vertex it replaced. Proved for untouched atoms attached at a point (interface lemma: they leave their ports exactly the two constant patterns, checked for every element; screening lemma); for untouched atoms attached at a line the solutions are unchanged (their splits allow exactly the six other patterns) and creation is checked. Exact on thirteen designs with two or three atoms, including adjacent and touching placements and atoms attached to the Fano plane and census 58: every entry agrees with the space keeping only the touched atoms, and plane glue alone never creates. So each removal's creation in the glue is its atom's halo with that atom alone, atoms attached at lines have no halo, and glue removals see each atom as if it were alone. The creation map, taken over the four far sides, does not depend on the order of the gluing line's points (786 of 786 cases), though the census-6 far side alone does.",
+ "kind": "proof",
+ "proof": "NATIVE-GENUS-20261104-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "NATIVE-GENUS-20261104-001A"
+}

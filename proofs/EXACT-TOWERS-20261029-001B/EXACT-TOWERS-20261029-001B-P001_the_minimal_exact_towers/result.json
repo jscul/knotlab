@@ -1,0 +1,817 @@
+{
+ "schema_version": 1,
+ "artifact_id": "EXACT-TOWERS-20261029-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "ok": true,
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 the three gadgets": {
+   "ok": true,
+   "detail": {
+    "parity triangle": {
+     "excluded": [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "factor": [
+      2
+     ],
+     "copies": 3,
+     "hidden": 3,
+     "legs on copies": [
+      0,
+      1,
+      2
+     ],
+     "leg distances": [
+      2,
+      2,
+      2
+     ],
+     "every variable within s of each leg": true,
+     "every copy has a variable within s - 1 of each leg": true,
+     "dimension log m / log s": 1.584963
+    },
+    "twisted not-all-equal tetrahedron": {
+     "excluded": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "factor": [
+      2
+     ],
+     "copies": 4,
+     "hidden": 3,
+     "legs on copies": [
+      0,
+      1,
+      2
+     ],
+     "leg distances": [
+      2,
+      2,
+      2
+     ],
+     "every variable within s of each leg": true,
+     "every copy has a variable within s - 1 of each leg": true,
+     "dimension log m / log s": 2.0
+    },
+    "not-all-equal Fano plane": {
+     "excluded": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "factor": [
+      5
+     ],
+     "copies": 7,
+     "hidden": 6,
+     "legs on copies": [
+      0,
+      1,
+      2
+     ],
+     "leg distances": [
+      3,
+      3,
+      3
+     ],
+     "every variable within s of each leg": true,
+     "every copy has a variable within s - 1 of each leg": true,
+     "dimension log m / log s": 1.771244
+    }
+   }
+  },
+  "2 tower structure (copies, variables, distances, balls)": {
+   "ok": true,
+   "detail": {
+    "parity triangle": [
+     {
+      "level": 1,
+      "copies": 3,
+      "variables": 6,
+      "corner distances": [
+       2,
+       2,
+       2
+      ],
+      "eccentricities": [
+       2,
+       2,
+       2
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6
+      ]
+     },
+     {
+      "level": 2,
+      "copies": 9,
+      "variables": 15,
+      "corner distances": [
+       4,
+       4,
+       4
+      ],
+      "eccentricities": [
+       4,
+       4,
+       4
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       15
+      ]
+     },
+     {
+      "level": 3,
+      "copies": 27,
+      "variables": 42,
+      "corner distances": [
+       8,
+       8,
+       8
+      ],
+      "eccentricities": [
+       8,
+       8,
+       8
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       15,
+       42
+      ]
+     },
+     {
+      "level": 4,
+      "copies": 81,
+      "variables": 123,
+      "corner distances": [
+       16,
+       16,
+       16
+      ],
+      "eccentricities": [
+       16,
+       16,
+       16
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       15,
+       42,
+       123
+      ]
+     },
+     {
+      "level": 5,
+      "copies": 243,
+      "variables": 366,
+      "corner distances": [
+       32,
+       32,
+       32
+      ],
+      "eccentricities": [
+       32,
+       32,
+       32
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       15,
+       42,
+       123,
+       366
+      ]
+     },
+     {
+      "level": 6,
+      "copies": 729,
+      "variables": 1095,
+      "corner distances": [
+       64,
+       64,
+       64
+      ],
+      "eccentricities": [
+       64,
+       64,
+       64
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       15,
+       42,
+       123,
+       366,
+       1095
+      ]
+     }
+    ],
+    "twisted not-all-equal tetrahedron": [
+     {
+      "level": 1,
+      "copies": 4,
+      "variables": 6,
+      "corner distances": [
+       2,
+       2,
+       2
+      ],
+      "eccentricities": [
+       2,
+       2,
+       2
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6
+      ]
+     },
+     {
+      "level": 2,
+      "copies": 16,
+      "variables": 18,
+      "corner distances": [
+       4,
+       4,
+       4
+      ],
+      "eccentricities": [
+       4,
+       4,
+       4
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       18
+      ]
+     },
+     {
+      "level": 3,
+      "copies": 64,
+      "variables": 66,
+      "corner distances": [
+       8,
+       8,
+       8
+      ],
+      "eccentricities": [
+       8,
+       8,
+       8
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       18,
+       66
+      ]
+     },
+     {
+      "level": 4,
+      "copies": 256,
+      "variables": 258,
+      "corner distances": [
+       16,
+       16,
+       16
+      ],
+      "eccentricities": [
+       16,
+       16,
+       16
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       18,
+       66,
+       258
+      ]
+     },
+     {
+      "level": 5,
+      "copies": 1024,
+      "variables": 1026,
+      "corner distances": [
+       32,
+       32,
+       32
+      ],
+      "eccentricities": [
+       32,
+       32,
+       32
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       6,
+       18,
+       66,
+       258,
+       1026
+      ]
+     }
+    ],
+    "not-all-equal Fano plane": [
+     {
+      "level": 1,
+      "copies": 7,
+      "variables": 9,
+      "corner distances": [
+       3,
+       3,
+       3
+      ],
+      "eccentricities": [
+       3,
+       3,
+       3
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       9
+      ]
+     },
+     {
+      "level": 2,
+      "copies": 49,
+      "variables": 51,
+      "corner distances": [
+       9,
+       9,
+       9
+      ],
+      "eccentricities": [
+       9,
+       9,
+       9
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       9,
+       51
+      ]
+     },
+     {
+      "level": 3,
+      "copies": 343,
+      "variables": 345,
+      "corner distances": [
+       27,
+       27,
+       27
+      ],
+      "eccentricities": [
+       27,
+       27,
+       27
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       9,
+       51,
+       345
+      ]
+     },
+     {
+      "level": 4,
+      "copies": 2401,
+      "variables": 2403,
+      "corner distances": [
+       81,
+       81,
+       81
+      ],
+      "eccentricities": [
+       81,
+       81,
+       81
+      ],
+      "balls |B(a, s^j)|": [
+       3,
+       9,
+       51,
+       345,
+       2403
+      ]
+     }
+    ]
+   }
+  },
+  "3 the law at every level (variable elimination)": {
+   "ok": true,
+   "detail": {
+    "parity triangle": [
+     {
+      "level": 1,
+      "completions per allowed tuple": [
+       2
+      ],
+      "predicted": 2,
+      "zero off the knot": true
+     },
+     {
+      "level": 2,
+      "completions per allowed tuple": [
+       16
+      ],
+      "predicted": 16,
+      "zero off the knot": true
+     },
+     {
+      "level": 3,
+      "completions per allowed tuple": [
+       8192
+      ],
+      "predicted": 8192,
+      "zero off the knot": true
+     },
+     {
+      "level": 4,
+      "completions per allowed tuple": [
+       1099511627776
+      ],
+      "predicted": 1099511627776,
+      "zero off the knot": true
+     },
+     {
+      "corner law": "uniform on the knot at every level",
+      "mutual information of two corners (bits)": 0.0,
+      "total correlation (bits)": 1.0
+     }
+    ],
+    "twisted not-all-equal tetrahedron": [
+     {
+      "level": 1,
+      "completions per allowed tuple": [
+       2
+      ],
+      "predicted": 2,
+      "zero off the knot": true
+     },
+     {
+      "level": 2,
+      "completions per allowed tuple": [
+       32
+      ],
+      "predicted": 32,
+      "zero off the knot": true
+     },
+     {
+      "level": 3,
+      "completions per allowed tuple": [
+       2097152
+      ],
+      "predicted": 2097152,
+      "zero off the knot": true
+     },
+     {
+      "corner law": "uniform on the knot at every level",
+      "mutual information of two corners (bits)": 0.081704,
+      "total correlation (bits)": 0.415037
+     }
+    ],
+    "not-all-equal Fano plane": [
+     {
+      "level": 1,
+      "completions per allowed tuple": [
+       5
+      ],
+      "predicted": 5,
+      "zero off the knot": true
+     },
+     {
+      "level": 2,
+      "completions per allowed tuple": [
+       390625
+      ],
+      "predicted": 390625,
+      "zero off the knot": true
+     },
+     {
+      "level": 3,
+      "completions per allowed tuple": [
+       6938893903907228377647697925567626953125
+      ],
+      "predicted": 6938893903907228377647697925567626953125,
+      "zero off the knot": true
+     },
+     {
+      "corner law": "uniform on the knot at every level",
+      "mutual information of two corners (bits)": 0.081704,
+      "total correlation (bits)": 0.415037
+     }
+    ]
+   }
+  },
+  "4 finite ramification (tree decomposition, three-corner cuts)": {
+   "ok": true,
+   "detail": {
+    "parity triangle": {
+     "level": 4,
+     "copies covered": true,
+     "subtrees connected": true,
+     "width": 5,
+     "h + 2": 5,
+     "three-corner cuts": true,
+     "nodes tested": 40
+    },
+    "twisted not-all-equal tetrahedron": {
+     "level": 4,
+     "copies covered": true,
+     "subtrees connected": true,
+     "width": 5,
+     "h + 2": 5,
+     "three-corner cuts": true,
+     "nodes tested": 85
+    },
+    "not-all-equal Fano plane": {
+     "level": 3,
+     "copies covered": true,
+     "subtrees connected": true,
+     "width": 8,
+     "h + 2": 8,
+     "three-corner cuts": true,
+     "nodes tested": 57
+    }
+   }
+  },
+  "5 softening is unstable (exact maps)": {
+   "ok": true,
+   "detail": {
+    "parity triangle": {
+     "allowed weight D(r)": [
+      2,
+      0,
+      6
+     ],
+     "excluded weight N(r)": [
+      0,
+      6,
+      0,
+      2
+     ],
+     "two-valued": true,
+     "N - r D factorization": true,
+     "D - N factorization": true,
+     "0 < r < r' < 1 sampled": true,
+     "multiplier N1 / D0": "3",
+     "copies m": 3,
+     "trajectory from 0.001": [
+      0.001,
+      0.003,
+      0.009,
+      0.027,
+      0.0808,
+      0.2383,
+      0.6225,
+      0.9751,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "twisted not-all-equal tetrahedron": {
+     "allowed weight D(r)": [
+      2,
+      4,
+      2
+     ],
+     "excluded weight N(r)": [
+      0,
+      8
+     ],
+     "two-valued": true,
+     "N - r D factorization": true,
+     "D - N factorization": true,
+     "0 < r < r' < 1 sampled": true,
+     "multiplier N1 / D0": "4",
+     "copies m": 4,
+     "trajectory from 0.001": [
+      0.001,
+      0.004,
+      0.0158,
+      0.0614,
+      0.218,
+      0.5878,
+      0.9326,
+      0.9988,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "not-all-equal Fano plane": {
+     "allowed weight D(r)": [
+      5,
+      26,
+      20,
+      9,
+      2,
+      1,
+      1
+     ],
+     "excluded weight N(r)": [
+      0,
+      35,
+      21,
+      0,
+      7,
+      0,
+      0,
+      1
+     ],
+     "two-valued": true,
+     "N - r D factorization": true,
+     "D - N factorization": true,
+     "0 < r < r' < 1 sampled": true,
+     "multiplier N1 / D0": "7",
+     "copies m": 7,
+     "trajectory from 0.001": [
+      0.001,
+      0.007,
+      0.0473,
+      0.2711,
+      0.8074,
+      0.998,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   }
+  },
+  "6 controls": {
+   "ok": true,
+   "detail": {
+    "drift": {
+     "placements": [
+      [
+       [
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0
+       ]
+      ],
+      [
+       [
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        1,
+        1
+       ]
+      ],
+      [
+       [
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        1,
+        0
+       ]
+      ],
+      [
+       [
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        1
+       ]
+      ]
+     ],
+     "level-1 counts": {
+      "(0, 0, 1)": 2,
+      "(0, 1, 0)": 2,
+      "(0, 1, 1)": 5,
+      "(1, 0, 0)": 2,
+      "(1, 0, 1)": 5,
+      "(1, 1, 1)": 2
+     },
+     "corner law level 1": {
+      "(0, 0, 1)": "1/9",
+      "(0, 1, 0)": "1/9",
+      "(0, 1, 1)": "5/18",
+      "(1, 0, 0)": "1/9",
+      "(1, 0, 1)": "5/18",
+      "(1, 1, 1)": "1/9"
+     },
+     "corner law level 2": {
+      "(0, 0, 1)": "4/81",
+      "(0, 1, 0)": "4/81",
+      "(0, 1, 1)": "65/162",
+      "(1, 0, 0)": "4/81",
+      "(1, 0, 1)": "65/162",
+      "(1, 1, 1)": "4/81"
+     },
+     "changes": true,
+     "tuples far from both excluded tuples": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "their share at levels 1, 2, 3": [
+      0.555556,
+      0.802469,
+      0.960982
+     ],
+     "share increases": true
+    },
+    "shared midpoints": {
+     "side": 4,
+     "triangles": 16,
+     "sub-triangle vertices besides corners": 3,
+     "reached outside after deleting corners": 9,
+     "not cut off": true
+    },
+    "mutated Fano": {
+     "relation excluded": [],
+     "counts": [
+      4,
+      9
+     ],
+     "not exact": true
+    }
+   }
+  }
+ },
+ "seconds": 0.1
+}

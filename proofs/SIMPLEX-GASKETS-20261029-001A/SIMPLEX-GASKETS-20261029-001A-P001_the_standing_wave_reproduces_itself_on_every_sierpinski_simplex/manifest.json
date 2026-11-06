@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIMPLEX-GASKETS-20261029-001A-P001",
+  "canonical_id": "SIMPLEX-GASKETS-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "SIMPLEX-GASKETS-20261029-001A",
+  "proof": "SIMPLEX-GASKETS-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The standing wave reproduces itself on every Sierpinski simplex",
+  "status": "Proved",
+  "claim": "On the level-k Sierpinski d-simplex SG^d_k (copies of a (d+1)-bit law on the C(k+d-1, d) up simplices {v, v+e_1, ..., v+e_d}, base corner first, every vertex but the d+1 corners summed), the standing wave w^(y)(x) = (-1)^(x_0) U_(E-1)(y/2) (= (-1)^(x_0) sin(theta E)/sin(theta) at y = 2 cos(theta); E the sum of (-1)^(x_i)) has corner relation lambda_(d,k)(y) w^(y) for every d, k and every complex y, where lambda_(d,k) is a monic integer polynomial in y of degree d(#T - 1) with lambda(2) = 2^N and lambda(-y) = (-1)^(d(#T-1)) lambda(y); at level 2 it is y^d (y^2 - 2)^(d(d-1)/2). Proof: two phase sectors per copy, locked along the d edges from the base corner, with an odd global flip; the limit law 1 + sum_i s_0 s_i reproduces itself with factor 2^N because its only even edge sets are the empty set and the d axis paths. Consequences: finitely many exceptional angles per level, none at theta = j pi/q with q an odd prime power (2 cos(theta) is congruent to plus or minus 2 modulo the prime above q); the Legendre law (-1)^(x_0) (E|3) has factor congruent to (-1)^N mod 3 and is an exact knot on every SG^d_k for every d >= 2; for sin(2 theta) nonzero the support of w_theta is a knot (K1-K3) exactly when d is odd or theta = j pi/q with q odd and q <= d + 1. Hence knots build exact finitely ramified towers of similarity dimension log C(k+d-1, d)/log k, increasing to d, in every dimension.",
+  "dependencies": [
+    "SIGNED-GASKETS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A dimension d, level k and angle theta with sin(theta) nonzero at which the corner relation of w_theta is not proportional to w_theta.",
+    "A case where the factor is not a monic integer polynomial in y = 2 cos(theta) of degree d(#T - 1), or where its value at y = 2 is not 2^N.",
+    "An edge set of the kind used for the limit law, with even degree at every vertex but the corners, other than the empty set and the d axis paths.",
+    "An angle j pi/q with q an odd prime power at which the factor vanishes.",
+    "A pair (d, theta) with d >= 2 and sin(2 theta) nonzero at which the knot test of the support disagrees with the stated criterion."
+  ],
+  "lineage": {
+    "home_scope": "SIMPLEX-GASKETS-20261029-001",
+    "epic_path": [
+      "SIMPLEX-GASKETS-20261029-001"
+    ],
+    "parents": [
+      "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/manifest.json",
+      "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/manifest.json": "ab76ce5eea97c4397f4f6680949dcb66b2d3ba6ba67fdbd23328f7a01f0e5c99",
+    "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/result.json": "a0a57667af282c22e879cad1663a9a30e3456e721501c46d3331b1033066c97c"
+  },
+  "paths": {
+    "manifest": "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json",
+    "identity": "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/identity.json",
+    "directory": "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex",
+    "proof": "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/proof.md",
+    "result": "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json",
+    "check": "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "simplex_gasket_exactness_shown": true
+  },
+  "foundation_claim_scope": "Signed and real (d+1)-bit laws on level-k Sierpinski d-simplices (finite gadgets for every d and k, and the towers they generate level by level); exactness of the corner relation; the knot status of the support under K1-K3.",
+  "validation": {
+    "status": "checked: closed forms for d = 1 to 7 on all tuples; Legendre exactness in exact integers for d = 2 (k <= 7), 3 (k <= 5), 4 (k <= 3), 5 to 7 (k <= 2); the factor polynomial (identity at d#T + 3 values modulo three primes, monic degree d(#T-1), parity, lambda(+-2), level-2 closed form, stable under three further primes) for 11 cases; the sector formula in 8 cases; the edge-set lemma exactly in every exactness case and by enumeration in 8; exact gcds with minimal polynomials of 2 cos(2 pi/n), n <= 60 (only n = 4, 8 occur); the knot criterion for d = 2 to 9, q <= 13, and knotlab on six supports; towers of levels 2 and 3 in 8 cases; floating point at four angles in 12 cases; controls fire; the proof for every d and k is in proof.md; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found in a bounded search of four queries on 2026-10-29 (candidate local delta) for Theorems 2, 3 and Corollary 5; Lemmas 1, 4 and Proposition 6 elementary; the Sierpinski-simplex geometry classical (Hilfer-Blumen)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

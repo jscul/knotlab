@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HOLE-CRITERION-COLOURING-20261019-001A-E001",
+  "ticket": "HOLE-CRITERION-COLOURING-20261019-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "(a) For which graphs G on s vertices and which N does the complex of partial proper N-colourings, Ind(G □ K_N), have no hole in dimension s-2? Is N >= 2s-1 always enough, as Björner, Lovász, Vrećica and Živaljević prove for the complete graph? (b) For non-N-colourable graphs, how close is the Nullstellensatz degree of the functional colouring system over GF(2) to one more than B_hole, the largest B such that every vertex set S with 2 <= |S| <= B has no hole in dimension |S|-2?",
+  "public_inputs": {
+    "universality": "every graph on s = 2, 3, 4, 5 vertices up to isomorphism, with N = 2 .. 2s+1 colours",
+    "roster": [
+      "K3, N=2",
+      "K4, N=3",
+      "K5, N=4",
+      "K6, N=5",
+      "C5, N=2",
+      "C7, N=2",
+      "Petersen, N=2",
+      "W5 (odd wheel on 6 vertices), N=3",
+      "W7 (odd wheel on 8 vertices), N=3",
+      "Moser spindle, N=3",
+      "Mycielskian of K3 (7 vertices), N=3",
+      "Grötzsch graph (11 vertices), N=3",
+      "Mycielskian of K4 (9 vertices), N=4"
+    ],
+    "colouring_system": "variables X_vc; Boolean; X_vc X_vc' (c != c'); X_uc X_vc for uv in E; sum_c X_vc - 1 for each v",
+    "degree_budget": "Nullstellensatz degree searched for B = 1 .. 7, or until the moment system exceeds 400000 unknowns"
+  },
+  "forbidden_inputs": [
+    "the expected verdicts as inputs to the producer",
+    "any precomputed homology or degree values"
+  ],
+  "definitions": {
+    "hole_in_dimension_d": "nonzero reduced GF(2) homology in dimension d",
+    "B_hole": "largest B such that every vertex set S with 2 <= |S| <= B has H~_{|S|-2}(Ind(G[S] □ K_N); GF(2)) = 0",
+    "NS_degree": "least B such that no linear functional with value 1 on the constant annihilates the degree-B Nullstellensatz span, equivalently the moment equations (z_empty = 1; for |T| < B and v outside T, the sum over colours c allowed at v of z_{T+(v,c)} equals z_T) have no solution over GF(2)",
+    "theorem_check": "the cycle-filling argument of Braun's Theorem 4.2, with the chessboard complex replaced by the partial-colouring complex, implies NS_degree > B_hole; a violation means a bug or a flaw in that argument"
+  },
+  "primary_observable": "per graph and N: dim H~_{s-2}; per roster entry: B_hole, NS_degree and the slack NS_degree - 1 - B_hole",
+  "cheapest_meaningful_control": "complete graphs K_s must have a hole in dimension s-2 at N = 2s-2 and none at N = 2s-1 (Shareshian and Wachs; Björner, Lovász, Vrećica and Živaljević); the odd cycle with two colours must have a hole already at s = 2",
+  "decision_or_followup_rule": "Signal: no hole once N >= 2s-1 for every graph tested, and NS_degree > B_hole on the whole roster with small slack on most entries. A signal earns a proof ticket for the criterion and a bit-colouring probe. A violation of NS_degree > B_hole stops the run as a bug or flaw to investigate.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "K5 at N = 8 and N = 9, then the universality sweep, then the roster",
+  "stop_rule": "Stop on the first NS_degree <= B_hole; otherwise stop after the frozen roster and degree budget.",
+  "nonclaims": [
+    "Finite enumeration on the declared graphs only; no asymptotic claim.",
+    "The functional unary encoding over GF(2) only; nothing about the bit encoding or Res(⊕) yet.",
+    "Nullstellensatz degree, not polynomial-calculus degree, unless they coincide by a separate argument."
+  ]
+}

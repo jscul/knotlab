@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "EXACT-TOWERS-20261029-001A-P001",
+  "canonical_id": "EXACT-TOWERS-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "EXACT-TOWERS-20261029-001A",
+  "proof": "EXACT-TOWERS-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Exact counted fixed points: which knots, at which sizes, with which factors",
+  "status": "Proved",
+  "claim": "A hub gadget of copies of a three-bit knot K (legs in one copy each, hidden variables in at least two distinct copies, no variable twice in a copy, connected) is an exact counted fixed point when its relation is a placement of K and every allowed leg tuple has the same number c of extensions, the factor. Theorem 1: c is the number of solutions with free legs divided by |K|, and substituting the gadget for every copy of a network multiplies its solutions by c per copy and keeps its law. Theorem 2: for the two parity classes every rebuilding gadget is exact (fibres of an affine map), with c a power of two. Theorem 3: a gadget whose automorphisms act transitively on its relation is exact; the symmetries of K are transitive on K only for the parity classes, not-all-equal and twisted not-all-equal. Lemma 4: if the legs lie on three distinct copies, deleting the copy of a leg leaves exactly c extensions of each excluded tuple. Theorem 5 (exhaustive over gadgets of three to six copies with every placement): exact gadgets exist for parity (from three copies), twisted not-all-equal (from four) and the three-excluded classes {000, 011, 101} and {001, 010, 111} (from five); the x or (y != z) classes are rebuilt (1, 8 and 77 shapes at four, five and six copies) but never exact up to six copies, and in all 1120 of their rebuilding gadgets the two tuples far from both excluded tuples have more extensions on average than the other four; not-all-equal is exact at seven copies (punctured Fano plane, factor 5, from HUB-SURVIVORS-20261029-001B). For the classes other than parity every irredundant exact gadget has a pendant (copies holding no leg cut off by at most two variables), a frozen hidden variable, a tied pair or transitive automorphisms, except 22 at six copies. The smallest single-scale exact gadgets (legs pairwise at one distance s, tower growth exponent log m / log s) are the parity triangle (log2 3), the punctured tetrahedron of twisted not-all-equal (2), six-copy gadgets of the three-excluded classes (log2 6) and the punctured Fano plane (log3 7).",
+  "dependencies": [
+    "HUB-SURVIVORS-20261029-001A",
+    "HUB-SURVIVORS-20261029-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An exact gadget of at most six copies for a class other than parity, twisted not-all-equal and the two three-excluded classes, or none for these at the stated smallest sizes.",
+    "A parity rebuilding gadget with non-uniform counts, or an exact gadget whose factor differs from its number of free solutions divided by |K|.",
+    "An exact gadget with its legs on distinct copies in which deleting a leg's copy leaves other than c extensions of some excluded tuple.",
+    "A single-scale exact gadget smaller than the stated smallest one for its class."
+  ],
+  "lineage": {
+    "home_scope": "EXACT-TOWERS-20261029-001",
+    "epic_path": [
+      "EXACT-TOWERS-20261029-001"
+    ],
+    "parents": [
+      "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/manifest.json",
+      "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/result.json",
+      "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/manifest.json",
+      "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/manifest.json": "c95e2aceb2edea28f9265742a70e8b3fa954228125ff1949bdaed0188605badc",
+    "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/result.json": "f241f2a022e42e5d5a0c3cc9a89861b4875b4b7e6085825d17ba9bfb9ebc4fdc",
+    "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/manifest.json": "ce09536b2c762c504d155c9af6d6f9f6f2a70676cf400b4c2f7dd68a26deeb87",
+    "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/result.json": "05cb91a755e5916699be8440448a33633c2f19b396586f1443fd436dc669b96b"
+  },
+  "paths": {
+    "manifest": "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json",
+    "identity": "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/identity.json",
+    "directory": "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots",
+    "proof": "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/proof.md",
+    "result": "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json",
+    "check": "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "exact_counted_fixed_points_census_shown": false
+  },
+  "foundation_claim_scope": "Set-level knots on three bits (K1-K3), 16 classes up to coordinate order; hub gadgets as in HUB-SURVIVORS-20261029-001A, exhaustive over three to six copies with every placement; not-all-equal at seven copies by citation of HUB-SURVIVORS-20261029-001B and a recomputation of the Fano counts. Counts are of hidden completions (a branch-internal measure), not part of the canonical set-level knot test.",
+  "validation": {
+    "status": "checked: 34 knots in 16 classes with their symmetries; the enumeration equals a full canonical enumeration at three to five copies (control: the size-first ordering misses shapes); exhaustive census over hub gadgets of three to six copies with every placement: factor formula for every exact gadget, all 440 parity rebuilds exact and affine, mechanisms of all 4057 irredundant exact gadgets of the other classes (22 with none), the far tuples of x or (y != z) in its 1120 rebuilding gadgets, Lemma 4 on 458 gadgets; the punctured Fano gadget exact with factor 5; controls fire (a non-uniform rebuild, a doubled copy, brute force against contraction on 2836 samples); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

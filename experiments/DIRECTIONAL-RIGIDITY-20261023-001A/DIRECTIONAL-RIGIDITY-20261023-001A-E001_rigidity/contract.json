@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "DIRECTIONAL-RIGIDITY-20261023-001A-E001",
+  "ticket": "DIRECTIONAL-RIGIDITY-20261023-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "The owner approved the directional-rigidity epic after LINE-DETECTOR-20261023-001 proved two-literal tiling worlds rigid (no class, one class, or every odd class contradicts) and found 12 of 30 three-place placements selective. Scoping, all on the seen 3 x 3 torus unless stated: (1) with 16 classes the same 12 placements are selective and the other 16 with a non-fitting twist stay rigid; (2) no ternary operation preserving both relations of the contact separates rigid from selective three-place placements: every three-place tiling contact has only projections, or projections and constants, while every two-literal one has majority; (3) the frozen record of LINE-DETECTOR-20261023-001A-E001 (3 x 3, 3 x 4, 4 x 4, eight classes) shows three kinds of rigid three-place placement: saturated (45, 61, 101, 103, 135, 149, 157, 199: every contradiction runs along every odd class), one-dimensional (91, 94, 123, 183, 167, 173: the doubly allowed patterns constrain only the pair (a, c), and contradictions run only along the diagonal class) and never contradicting (127, 223, 191, 239); (4) every three-place placement with both single-class and every-odd-class patterns is selective; (5) spat2.c agreed with spat.c on eight cases. A pipeline test of run.py drew the first 256 configurations of each 4 x 5 sample stream (0.1 percent of the frozen sample), after these predictions were set; nothing else was computed on 4 x 5 or 5 x 5, and only eight classes on 3 x 4 and 4 x 4.",
+  "question": "With more classes and on larger tori, do the 18 rigid three-place placements stay rigid, each in its kind (saturated, one-dimensional, never contradicting); do the selective families stay selective; and does every three-place placement whose contradictions come both as single lines and along every odd class turn out selective?",
+  "public_inputs": {
+    "model": "as in TRIPLE-SHIELD-20261023-001A-E001 and LINE-DETECTOR-20261023-001A-E001",
+    "placements": "the 54 TILING placements of the census of TRIPLE-TWIST-20261023-001B-E001 on 3 x 3 and 3 x 4; the 19 orbit representatives of TRIPLE-SHIELD-20261023-001A-E001 on 4 x 4, 4 x 5 and 5 x 5",
+    "groups": "two-literal (24); three-place saturated (45, 61, 101, 103, 135, 149, 157, 199), one-dimensional (91, 94, 123, 183, 167, 173), never contradicting (127, 223, 191, 239) and selective (54, 62, 109, 110, 111, 125, 147, 151, 155, 159, 203, 215)",
+    "tori_and_classes": "3 x 3 (F_seen, every configuration, 16 classes: (1,0), (0,1), (1,1), (1,-1), (1,2), (2,1), (1,-2), (2,-1), (1,3), (3,1), (1,-3), (3,-1), (2,3), (3,2), (1,4), (4,1)); 3 x 4 (F_fresh, every configuration, 13 classes: the first eight, (1,3), (3,1), (3,-1), (3,2), (4,1)); 4 x 4 (F_fresh, 2^22 sampled per twist, 12 classes: the first eight, (1,3), (3,1), (2,3), (3,2)); 4 x 5 (F_fresh, 2^22 sampled per twist, 9 classes: (1,0), (0,1), (1,1), (1,-1), (1,2), (2,1), (2,-1), (3,1), (3,2)); 5 x 5 (F_fresh, 2^20 sampled per twist, 6 classes: (1,0), (0,1), (1,1), (1,-1), (1,2), (2,1))",
+    "samples": "16 streams per twist, seeded by SHA-256 of (rigidity, torus, placement, twist, stream)",
+    "frozen_inputs": "fitting twists and torus, cylinder, lone and cross counts of TRIPLE-SHIELD-20261023-001A-E001 (rows.jsonl) and its 4 x 4 orbit representatives (result.json); fitting twists on 4 x 5 and 5 x 5 are computed by backtracking",
+    "programs": "spat.c (as frozen in LINE-DETECTOR-20261023-001A-E001) on 3 x 3, 3 x 4, 4 x 4; spat2.c on 4 x 5 and 5 x 5"
+  },
+  "definitions": "A pattern is the set of listed classes along which a configuration's cylinder cover has no hidden assignment. The odd classes of a twist are those odd relative to every fitting twist. A pattern is selective when it has at least two classes and misses an odd class. The diagonal class of an L x M torus is (l / L, l / M) with l = lcm(L, M): the class of the lattice lines in the direction (1, 1). A placement has single lines on a torus when some configuration's pattern is one class, and global contradictions when some configuration's pattern is every odd class (at least two).",
+  "predictions": {
+    "P1_even_classes": "theorem-predicted (TRIPLE-SHIELD-20261023-001B-P001, Theorem 1): no pattern contains an even class",
+    "P2_two_literal_rigid": "theorem-predicted (LINE-DETECTOR-20261023-001B-P001, Theorem 3): no two-literal placement has a selective pattern",
+    "P3_one_dimensional": "theorem-predicted (ticket B of this epic): no one-dimensional placement contradicts along a listed class other than the diagonal class",
+    "P4_saturated": "scoping-predicted: every nonzero pattern of a saturated placement is the set of all odd classes",
+    "P5_never": "scoping-predicted: no placement of the never-contradicting group has a nonzero pattern",
+    "P6_selective_on_larger_tori": "scoping-predicted: each selective representative (54, 62, 109, 111) has a selective pattern on 4 x 5 and on 5 x 5",
+    "P7_lines_and_global": "scoping-predicted: on every torus, every three-place placement with both single lines and global contradictions has a selective pattern",
+    "reported": "per placement, torus and twist the histogram of patterns; per torus and group the number of placements with a selective pattern"
+  },
+  "controls": "(i) totals; (ii) on 3 x 3 and 3 x 4, the torus, cylinder, lone and cross counts implied by the patterns equal the frozen record of TRIPLE-SHIELD-20261023-001A-E001 for every placement and twist; (iii) on 3 x 3, spat2.c and spat.c give the same patterns over their first eight common classes for every placement and twist",
+  "decision_rule": "If a control fails, the result is invalid. Refuted if P1, P2 or P3 fails. Supported if P1 to P7 hold. Partially supported if P1 to P3 hold and any of P4 to P7 fails; the exceptions are listed.",
+  "resource_budget": {"wall_seconds": 14400, "memory_mib": 8192, "threads": 24},
+  "stop_rule": "Run the five tori in order, writing rows as each finishes; then run the controls and decide. No adaptive extension.",
+  "seeds": "3 x 3 and 3 x 4 enumerated; sampled tori seeded as above",
+  "environment": "CPython 3 standard library and gcc (C99)",
+  "red_team_r0": [
+    "Rigidity is a statement about all configurations and all classes; exhaustive tori give it for the listed classes only, sampled tori only for the configurations drawn. A selective pattern found is certain; its absence is not proof.",
+    "The class lists differ by torus because the transfer handles windows of at most 13 or 14 bits; longer classes are untested.",
+    "P1 to P3 are theorem-predicted; a failure would point to a code error or a gap in the proofs.",
+    "The groups were fixed from 3 x 3 scoping and the frozen record of LINE-DETECTOR-20261023-001A-E001; P4 to P7 are judged on all tori, including the seen 3 x 3, which can only make them easier to pass there.",
+    "On 3 x 4 and 4 x 5 the diagonal class is not listed, so P3 there means that no listed class contradicts at all.",
+    "A pipeline test drew 0.1 percent of the 4 x 5 sample before the run; it did not change any prediction."
+  ],
+  "nonclaims": [
+    "Exact counts on two small tori and samples on three; no asymptotic statement.",
+    "No claim about classes outside the lists or about other triangulations.",
+    "Lattices and twists are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected patterns, counts or verdicts as inputs to the run"
+  ],
+  "outputs": "artifacts/DIRECTIONAL-RIGIDITY-20261023-001A/DIRECTIONAL-RIGIDITY-20261023-001A-E001_rigidity/rows.jsonl and result.json"
+}

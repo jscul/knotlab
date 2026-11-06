@@ -1,0 +1,84 @@
+{
+  "artifact_id": "HUB-DIMENSION-20261024-001B-P001",
+  "checks": {
+    "admissible tetrahedron classes": [
+      0,
+      4,
+      8,
+      9,
+      10
+    ],
+    "derivation on 200 random non-zero rationals": {
+      "(v) holds exactly when d^2 = d + 1": true,
+      "W10 = -(W9 t2)^2": true
+    },
+    "exact solution": {
+      "W10 = -(W9 t2)^2 at the point": true,
+      "W10 at the point": "-3/2+1/2*sqrt5",
+      "d^2 = d + 1 at the point": true,
+      "distinct identities": 19,
+      "explicit point satisfies all": true
+    },
+    "identities used in the proof are present": {
+      "(i)   W4 W9 t2 (W9 d t2 t3 - 1)": true,
+      "(ii)  W9 t2 (W9^2 d t3^2 - W8)": true,
+      "(iii) W9 (W10 W9 d t3^3 + W8^2 t2^3)": true,
+      "(iv)  W8 t2 (W4^2 t2 - W8)": true,
+      "(v)   W4^2 - W8^3 t2^3 - W9^3 d t3^3": true
+    },
+    "unweighted": {
+      "all weights 1 fail some identity": true
+    }
+  },
+  "claim": "With labels on edges, the Fibonacci rule on triangles and real Turaev-Viro-form weights with full support (per tau edge, per triangle with two or three tau edges, per admissible tetrahedron class, per vertex), the 2-3 and 1-4 identities force d t2 t3 W9 = 1, W8 = W9 t3/t2, W4^2 = W9 t3/t2^2, d^2 = d + 1 and W10 = -(W9 t2)^2 < 0: the all-tau tetrahedron carries a negative weight, so no non-negative weighting, in particular no count of hidden witnesses, makes the Fibonacci rule a three-manifold invariant in this form. An exact solution exists in Q(sqrt 5) (d = phi, W10 = -1/phi^2, vertex weight (5 - sqrt 5)/10), and unweighted counts fail.",
+  "controls": {
+    "a rational perturbation of d leaves a residual": true,
+    "identities without the new edge's weight reject the point": true,
+    "the point with a positive all-tau weight fails": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "HUB-DIMENSION-20261024-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "fibonacci_sign_shown": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "HUB-DIMENSION-20261024-001B"
+}

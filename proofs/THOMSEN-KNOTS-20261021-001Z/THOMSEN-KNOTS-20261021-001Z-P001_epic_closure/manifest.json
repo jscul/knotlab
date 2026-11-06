@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "artifact_id": "THOMSEN-KNOTS-20261021-001Z-P001",
+  "canonical_id": "THOMSEN-KNOTS-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "THOMSEN-KNOTS-20261021-001Z",
+  "proof": "THOMSEN-KNOTS-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the Thomsen-knots epic",
+  "status": "Proved",
+  "claim": "Ledger closing THOMSEN-KNOTS-20261021-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "THOMSEN-KNOTS-20261021-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or the proof is not Proved or its checks did not pass.",
+    "The decision note is missing.",
+    "The ticket lacks its terminal status class (A proved)."
+  ],
+  "lineage": {
+    "home_scope": "THOMSEN-KNOTS-20261021-001",
+    "epic_path": [
+      "THOMSEN-KNOTS-20261021-001"
+    ],
+    "parents": [
+      "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json",
+      "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json": "17ca9eef6bf9da1f8857b7cf59681c31dd8b1ded31f82a652d65195a977a08dc",
+    "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/result.json": "0361b2fbd46e64c7b921743b1744f859453eb5fde0f45267f73ea814b93af1a3"
+  },
+  "paths": {
+    "manifest": "proofs/THOMSEN-KNOTS-20261021-001Z/THOMSEN-KNOTS-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/THOMSEN-KNOTS-20261021-001Z/THOMSEN-KNOTS-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/THOMSEN-KNOTS-20261021-001Z/THOMSEN-KNOTS-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/THOMSEN-KNOTS-20261021-001Z/THOMSEN-KNOTS-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/THOMSEN-KNOTS-20261021-001Z/THOMSEN-KNOTS-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/THOMSEN-KNOTS-20261021-001Z/THOMSEN-KNOTS-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proof and its passed result; decision note present; ticket proved; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, result status, note present, terminal ticket class.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

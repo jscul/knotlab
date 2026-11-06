@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HANDLE-LOCALITY-20261103-001B-P001",
+  "canonical_id": "HANDLE-LOCALITY-20261103-001B-P001",
+  "kind": "proof",
+  "ticket": "HANDLE-LOCALITY-20261103-001B",
+  "proof": "HANDLE-LOCALITY-20261103-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Where creation happens",
+  "status": "Proved",
+  "claim": "Where creation happens, on spaces made of Fano planes and plane pieces. (1) The screening lemma (proved): if, after the removal, the three ports of the cut between a piece P and the rest take one antipodal pair (they carry one bit), every crossing knot at a gluing line of P that meets the rest is a one-port 2-sum through the ports' class. So creation there is creation on P's closure minus a line. One bit crosses when the removal lies in the plane piece of a handle attached at a point (the intact handle acts as the point), or inside a handle attached at a line (the plane piece minus that line forces its points equal). (2) The creation map (computation): six near sides of 16 and 22 points, spliced at every six-pattern gluing line into K4^(3), census 6, the Fano plane and census 58, with new crossing knots exact up to three points. No new knot appears when neither the gluing line nor the removed line lies on a handle (896 cases), nor at a plane gluing line beside a handle attached at a line (224). A handle attached at a point and opened by the removal creates at plane gluing lines at distance 1, 3 and 5 from it (to 5 on plane pieces of 12 and 14 points). Two handles act independently. (3) The premise of PLANAR-COMPOSE fails on composite spaces. At plane gluing lines near an opened handle, many new knots are unpinned three-point knots through the hub (1,092 of 2,496 on the creation and reach maps). Up to four points, new four-point knots appear at gluing lines inside handles (2,965), while at plane gluing lines every new knot has three points. The join-based method agrees with brute force on all 184 small splices compared.",
+  "dependencies": [
+    "HANDLE-LOCALITY-20261103-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation",
+    "finite-instance-classification"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "finite-validation"
+    ]
+  },
+  "failure_conditions": [
+    "A splice whose circuits up to four points, found from its two sides by the join lemma, differ from brute force.",
+    "A new crossing knot when neither the gluing line nor the removed line lies on a handle.",
+    "A new crossing knot at a plane gluing line when the handle is attached at a line.",
+    "No creating plane gluing line at distance 5 from an opened handle on the larger plane pieces."
+  ],
+  "lineage": {
+    "home_scope": "HANDLE-LOCALITY-20261103-001",
+    "epic_path": [
+      "HANDLE-LOCALITY-20261103-001"
+    ],
+    "parents": [
+      "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json",
+      "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/check.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "e8b7c28499893abe82eb07589a5463adc20417d4a5d1f851a7df6862acf08d4e",
+    "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "26efbb2ef81bed4787f3943d212dbf794f9d7dde159980a96ea32874c4eba23d",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/check.py": "ee2f40e09575b73cdb309e188fc7ddc8b3a18c9dde84138bcc9125776c918670"
+  },
+  "paths": {
+    "manifest": "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json",
+    "identity": "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/identity.json",
+    "directory": "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens",
+    "proof": "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/proof.md",
+    "result": "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json",
+    "check": "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "creation_map_computed": true
+  },
+  "foundation_claim_scope": "Knot spaces made of Fano planes and plane knot spaces glued along simple 3-edge cuts, spliced into four census far sides; new knots exact up to three points (four on part).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03.",
+    "status": "computed exhaustively on the stated near sides, far sides and knot sizes; join method checked against brute force; no human or external review",
+    "novelty": "New here."
+  }
+}

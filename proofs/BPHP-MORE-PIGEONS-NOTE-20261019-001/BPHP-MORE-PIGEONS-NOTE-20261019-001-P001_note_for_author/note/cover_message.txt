@@ -1,0 +1,38 @@
+Subject: Your bit-PHP Res(⊕) formalization: an independent replay, and a corollary for more pigeons
+
+Dear Kamil Braun,
+
+[One sentence on who you are.]
+
+1. An independent replay. Your FEEDBACK.md asks for two things: that an
+independent party build the formalization and print its axioms, and that an
+expert check the definitions. We did the following:
+- rebuilt the formalization from source at commit 8904bf09 (Lean
+  v4.34.0-rc2, Mathlib 67248ba; the cache command fetched nothing);
+- ran verify.py, which passed on all 7 declarations, each using only the
+  standard axioms;
+- ran leanchecker --fresh, which passed;
+- compared each definition with the standard system.
+The attached one-page summary (replay_summary.pdf) has the details. An AI
+agent (Claude) did this, not a human Res(⊕) expert. So it covers the first
+item but not the second.
+
+2. A corollary. Your Lean lemmas take the number of pigeons as a parameter.
+Only the last step of bitPHP_exponential fixes it at 2^l + 1. Calibrating that
+step for m pigeons gives the following:
+- for l >= 32, 2^l < m and 8192·m·l²·(2l+5) <= 4^l, every refutation of bit
+  PHP with m pigeons has more than exp(4^l/(8192·m·l²)) lines;
+- through a proper colouring, the same bound holds for the bit encoding of
+  colouring any graph whose chromatic number lies in that range.
+The attached note (more_pigeons.pdf) has the statements and proofs. The file
+MorePigeonsColouring.lean compiles with only the standard axioms when placed
+in formalization/claims/ at 8904bf09 (lake build
+claims.MorePigeonsColouring). The files it depends on are unchanged at
+25239211.
+
+We did not find these statements in your paper, your repository or the
+bounded-depth literature. They follow so directly from your development that
+you may already have them.
+
+Best regards,
+[Your name]

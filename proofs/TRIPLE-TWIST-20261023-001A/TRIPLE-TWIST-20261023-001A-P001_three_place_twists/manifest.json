@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TRIPLE-TWIST-20261023-001A-P001",
+  "canonical_id": "TRIPLE-TWIST-20261023-001A-P001",
+  "kind": "proof",
+  "ticket": "TRIPLE-TWIST-20261023-001A",
+  "proof": "TRIPLE-TWIST-20261023-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Twisted three-place worlds: when a twist is defined, hidden, frozen or forced to wind",
+  "status": "Proved",
+  "claim": "For fair contacts with a visible bit and three hidden places on a triangulated surface, a twist (a cocycle flipping the hidden places' polarities relative to each triangle's first corner) changes the random world only through its cohomology class exactly when the contact is complement-closed (flipping all three places exchanges its two relations); otherwise a contractible seam is a physical defect. Independent fair polarities make every twist invisible, and two hidden places give a two-literal world. The monotone contact from four-place not-all-equal contradicts in a twist only if the cubic dual graph has no 2-factor in the class dual to the twist; on every triangular torus with sides 2 to 5 it never contradicts in any twist (by such a 2-factor except on four non-simplicial two-row tori, where every x was enumerated), so that world is frozen there. For a complement-closed contact whose doubly allowed patterns tile the plane, planar patches and fitting twists never contradict, and on a torus every minimal contradicting set of triangles winds, along a period lattice on which the twist differs from every fitting twist (a line runs along a class that the relative twist makes odd), so a lone winding contradiction event is well defined.",
+  "dependencies": [
+    "CONTACT-CENSUS-20261022-001A",
+    "BASE-THREE-20261021-001A",
+    "ODD-LOOP-20261023-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A complement-closed instance whose seam-moved or corner-changed world is not equisatisfiable after the flip of x.",
+    "A twisted not-all-equal colouring whose cocycle has a triangle without exactly two ones or whose class differs from the twist, or a contradiction of the monotone world on a triangular torus with sides 2 to 5.",
+    "A placement with a doubly allowed assignment that contradicts on a planar patch or in a fitting twist, or a minimal contradicting set with zero winding or with a lattice on which the twist agrees with some fitting twist.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "TRIPLE-TWIST-20261023-001",
+    "epic_path": [
+      "TRIPLE-TWIST-20261023-001"
+    ],
+    "parents": [
+      "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/manifest.json",
+      "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/manifest.json",
+      "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/manifest.json": "c8de62f643f50a17c7ff879215384e512e807b5d5eba4bc523fa5780d91b0969",
+    "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/manifest.json": "aa555d56fbfa143fd766cd9abd39cc13770ebbbb1827d10c46b04fe1fcf1b41d",
+    "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/manifest.json": "b968d3e90bd6015578de43f4479d178e2263950995f8680af560713645193476"
+  },
+  "paths": {
+    "manifest": "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/manifest.json",
+    "identity": "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/identity.json",
+    "directory": "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists",
+    "proof": "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/proof.md",
+    "result": "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/result.json",
+    "check": "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "three_place_twist_well_defined_proved": true,
+    "winding_of_three_place_contradictions_proved": true,
+    "three_place_shielding_proved": false
+  },
+  "foundation_claim_scope": "Random constraint worlds of fair three-place contacts on triangulated surfaces; exact statements about twists, frozen worlds and winding contradictions. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, own solver) confirms Lemma 1 on 240 random instances (seam moves and first-corner changes equisatisfiable after the flip of x) and its converse over all 65,536 contact pairs, Lemma 2 on 120 instances, Lemma 3 on all relations on two bits; Proposition 4 on the 3 x 3 and 4 x 4 tori (196 colourings, cocycle and class as stated) and on all triangular tori with sides 2 to 5 and every shear (220 of 224 shape-twist pairs have a twisted not-all-equal colouring; on the other four, two-row tori with shear 1, every x was enumerated and none contradicts); Theorem 5 on all 54 tiling placements (no planar or fitting-twist contradiction; 306 of 306 minimal contradicting sets wind, on lattices where the twist differs from every fitting twist). Two controls rejected. A first statement of Proposition 4 (colourings in every twist) was false and is corrected. No human or external review",
+    "level": "V1 prose proof with sampled checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

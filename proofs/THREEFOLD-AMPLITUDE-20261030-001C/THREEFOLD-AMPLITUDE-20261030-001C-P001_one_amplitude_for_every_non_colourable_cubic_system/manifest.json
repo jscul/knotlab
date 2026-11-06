@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-AMPLITUDE-20261030-001C-P001",
+  "canonical_id": "THREEFOLD-AMPLITUDE-20261030-001C-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-AMPLITUDE-20261030-001C",
+  "proof": "THREEFOLD-AMPLITUDE-20261030-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "One amplitude for every non-colourable cubic system",
+  "status": "Proved",
+  "claim": "Let H be a cubic signed system (n points, n lines, a point may repeat on a line, repeated incidences equally signed), HT its transpose (points and lines exchanged, signs kept), M its incidence matrix with multiplicity, and N_H(L) the number of colourings proper on every line except L and improper on L. (1) Two-way count: for every line L, #col(H) + 6 N_H(L) = 2 sum_p M[L,p] N_HT(p) + R(L), where R(L) sums, over the colourings y of HT and the incidences (L, p), +1 when the incidence is in the majority at p and -1 when it is the odd one; in particular #col(H) = #col(HT). Both sides count the Ising weight prod exp(+-i pi/6 s_w s_p) on the incidence graph (couplings at half the knot's angle, signs from the signing), with the factor s_L m_L inserted, summed first over the lines and then over the points: summing out a vertex at this angle leaves sqrt(3) times the not-all-equal constraint. (2) One amplitude: if H is connected and not colourable, then A(H, L) = A(HT, p) for every line L and every point p (3 A(H, L) = sum_p M[L,p] A(HT, p) and the transposed identity, with a maximum principle on the connected incidence graph). (3) Signed dictionary: a connected cubic signed system is not colourable iff its signing is Pfaffian (its signed incidence matrix is sign-nonsingular), and then it is minimally not colourable, so its amplitude is positive. (4) Hence every brace with a Pfaffian signing has one positive amplitude a(B), for every connected cubic signed system that is not colourable A(H, L) = prod_B a(B) over its braces at every line L, and on every three-fold odd gadget with distinct corner triangles the knot's exactness factor is lambda(0) = (-1)^(n-1) prod_B a(B), whatever the corner line; on a planar brace the number of Tutte matchings of its trinity is the same for every outer triangle, white or black.",
+  "dependencies": [
+    "THREEFOLD-AMPLITUDE-20261030-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A cubic signed system and a line where the two-way count fails, or whose transpose has a different number of colourings.",
+    "A connected cubic signed system that is not colourable whose amplitude differs between two lines, or from its transpose's at a point.",
+    "A connected cubic signed system that is not colourable but not sign-nonsingular, or sign-nonsingular but colourable.",
+    "A three-fold space whose exactness factor differs from (-1)^(n-1) times the product of its brace amplitudes."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-AMPLITUDE-20261030-001",
+    "epic_path": [
+      "THREEFOLD-AMPLITUDE-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/amplitude_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json": "82ee308028fe2888226a4355fd1322e1ec08fe15a89d41e1630c22a562bd155a",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json": "631005617ff91dd7fa57f5d615aeeed2f27ab4700065c25e58460ee63b1fb0f3",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/amplitude_lib.py": "32f35f6db38b39cb7b1a078c521c06e3ea4d1511a9314765ffedfa0dd93c33b2",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/manifest.json",
+    "identity": "proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/identity.json",
+    "directory": "proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system",
+    "proof": "proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/proof.md",
+    "result": "proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/result.json",
+    "check": "proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_amplitude_invariant_shown": true
+  },
+  "foundation_claim_scope": "Finite cubic signed systems (3-regular, 3-uniform, repetition allowed) and their 2-colourings in the not-all-equal sense; the knot's exactness factor through ticket A's amplitude identity. The complex Ising weight is a counting device, not a physical model.",
+  "validation": {
+    "status": "checked: the two-way count and #col(H) = #col(HT) on 400 random signed cubic systems (colourable or not) by brute force; the Ising sums both ways on small systems in exact cyclotomic arithmetic; one amplitude shared with the transpose on spaces, cores and trisums; the signed dictionary on random systems; the product formula and the law on spaces with trisum glue; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "nearest: Valiant's Holant theorem (holographic transformations; #col(H) = #col(HT) is an instance), Seymour 1974 (minimal non-2-colourable hypergraphs), Kasteleyn, Tutte 1948; the inserted two-way count, the one-amplitude theorem for non-colourable cubic systems and the general product formula: no overlap found in one search (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "artifact_id": "HOLES-AT-INFINITY-20261020-001B-P001",
+  "canonical_id": "HOLES-AT-INFINITY-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "HOLES-AT-INFINITY-20261020-001B",
+  "proof": "HOLES-AT-INFINITY-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Ends supply open distinctions that the knot test cannot tell from loops",
+  "status": "Proved",
+  "claim": "On a connected, locally finite, infinite graph, for any charge: (1) a parity of finitely many edge variables of the Tseitin system is constant exactly when its support is a finite cut with a finite side; otherwise it is open either because a finite circuit meets it oddly (loop-supplied, changed by a finite change of solution) or because it is a finite cut with infinitely many vertices on both sides (end-supplied, unchanged by every change in the closure of the finite cycle space); finite graphs have only the first kind. (2) A vertex relation passes K1-K3 exactly when no nonempty proper subset of its edges has constant parity; at degree 3 exactly when its edges are open, so the 3-regular tree carries a knot at every vertex, all of whose openness is end-supplied, and a finite tree carries none. (3) Adding one edge outside any finite ball across an end-supplied cut keeps the ball's projection and makes the parity loop-supplied, so no finite part and no K1-K3 verdict decides the source. (4) For each end, the uniform measure on the solutions whose hole went to that end has the moments of the tangle pseudo-expectation of SOS-SIZE-20261020-001B-P001 Theorem 1, for every finite F; on one-ended graphs this is the uniform measure on all solutions. (5) A computable binary tree with root charge 1 has a satisfiable system and no computable solution.",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z",
+    "SOS-SIZE-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "On a declared graph and charge, a parity's computed constancy or value disagrees with its loop/end/fixed classification, or the open truncation's projection changes with the radius.",
+    "A closed finite truncation has an open parity that no finite circuit supplies.",
+    "A knotlab K1-K3 verdict on a projected vertex relation disagrees with the classification's prediction, a vertex of the 3-regular tree fails to be a knot, or a closed finite tree carries a knot.",
+    "A fold pair or a one-edge modification outside the ball changes the ball's projection, or leaves the parity end-supplied.",
+    "A computed moment differs from the tangle formula for the graph's end (one-ended) or for the chosen end (conditioned), or an end-separating cut has a nonzero unconditioned moment.",
+    "A control (end parities called constant, closed tree with the infinite prediction, edge inside the ball, edge on one side, infinite side's charge, wrong end, free edge at a dead end) is accepted.",
+    "A published statement of Theorem 3 or Theorem 4 is found (novelty only)."
+  ],
+  "lineage": {
+    "home_scope": "HOLES-AT-INFINITY-20261020-001",
+    "epic_path": [
+      "HOLES-AT-INFINITY-20261020-001"
+    ],
+    "parents": [
+      "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/manifest.json",
+      "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/manifest.json",
+      "proofs/SOS-SIZE-20261020-001Z/SOS-SIZE-20261020-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/manifest.json": "6ec955435455af0f86928451fa026e976dff7f2fa2e99f290a9d7c84c11c693e",
+    "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/manifest.json": "8a4431275bc8ff77b33b4ff86516357c3c831607811a6c1c986eb65230eb0b32",
+    "proofs/SOS-SIZE-20261020-001Z/SOS-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "420cb87b5db82c25a5d67eead0f7b33e90e48cb22f787a2f491af4a8c556cbe2"
+  },
+  "paths": {
+    "manifest": "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/manifest.json",
+    "identity": "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/identity.json",
+    "directory": "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness",
+    "proof": "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/proof.md",
+    "result": "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/result.json",
+    "check": "proofs/HOLES-AT-INFINITY-20261020-001B/HOLES-AT-INFINITY-20261020-001B-P001_ends_supply_openness/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "openness_dichotomy_proved": true,
+    "vertex_knot_iff_open_edges_proved": true,
+    "source_undecided_by_every_finite_ball_proved": true,
+    "end_tangle_haar_moments_proved": true,
+    "no_computable_solution_example_proved": true,
+    "native_loops_question_decided": false,
+    "ends_counted_as_native_recurrences": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "K1-K3 verdicts on projections of Tseitin systems on infinite graphs, and where their open distinctions come from. No native recurrence, composed topology, path, metric, space or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py computes exact GF(2) projections of open truncations on nine infinite graphs (stable in the radius), classifies every parity of the edges near the root from closed truncations, runs knotlab's K1-K3 check on 28 vertex relations and a closed-tree control, verifies fold pairs and 152 one-edge modifications, compares 65,536 grid moments and four end-conditioned moment tables with the tangle formula, and samples a finite shadow of Proposition 5; seven controls rejected; no human or external review",
+    "level": "V1 prose proof with executable checks; cites Diestel-Kuhn (2004), Bruhn-Stein (2007), Berger-Bruhn (2011), Diestel (2017), Grigoriev (2001), Kleene (1952) and SOS-SIZE-20261020-001B-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. A search on 2026-10-20 found the topological cycle space and its end-parity characterization (Diestel-Kuhn; Bruhn-Stein; Berger-Bruhn), ends as tangles (Diestel), and no treatment of Tseitin formulas on infinite graphs, of the source of openness, or of the tangle pseudo-expectation as a measure at an end. Lemma 2, Theorem 1 and Proposition 2 restate classical results; Theorems 2-4 are short consequences; Proposition 5 is folklore-level.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

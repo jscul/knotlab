@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SPACE-SELECTION-20261030-001C-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 5,
+    "mismatched": {}
+   }
+  },
+  "1 ticket A's Theorem 5: the claim misses n = 1 and the proof uses the wrong hypergraph": {
+   "ok": true,
+   "detail": {
+    "one-triangle gadget: plain NAE exact (any law is)": true,
+    "R_plain(000) = proper colourings with A = B = C = 0 (gadgets n <= 4)": [
+     true,
+     1324
+    ],
+    "gadgets where 'R(000) = 0' differs from 'G + ABC not 2-colourable' (A's reduction)": 1
+   }
+  },
+  "2 the corrected bound: no nonnegative not-all-equal law is exact for 2 <= n <= 6": {
+   "ok": true,
+   "detail": {
+    "2-colourable 3-graphs with <= 5 edges on 8 vertices forcing a pair equal": 0,
+    "Fano minus a line: 2-colourable, and every proper colouring makes its points 0, 1, 2 equal": [
+     true,
+     true
+    ],
+    "ticket B: plain NAE exact on gadgets with n = 3, 4, 5": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "3 at the knot angle a three-fold gluing is plain not-all-equal on its dual": {
+   "ok": true,
+   "detail": {
+    "three-fold gadgets with odd base counts, n <= 5": 282,
+    "three-fold gadgets with any base counts, n <= 5: total, exact at the knot (outside the theorem)": [
+     2389,
+     60
+    ],
+    "odd base counts are all equal to one": true,
+    "Z(eps) at zeta6 = (-i sqrt3)^(n-1) eps_A eps_B eps_C N*(eps), all eps": true,
+    "knot exact <=> dual 2-colourable and forcing equal corner phases (all three-fold gadgets tested)": true,
+    "three-fold gadgets with n <= 5 exact at the knot": 0
+   }
+  },
+  "4 the Fano gadgets: the smallest three-fold spaces of the knot, also exact without signs": {
+   "ok": true,
+   "detail": {
+    "Fano gadgets up to isomorphism": 64,
+    "all linear": true,
+    "dual plus corner line: 7 edges, 3-regular, not 2-colourable; dual 2-colourable": true,
+    "signed knot exact, lambda(0) values": [
+     true,
+     [
+      5
+     ]
+    ],
+    "plain not-all-equal exact (the corrected bound is sharp)": true,
+    "standing wave not generic": true,
+    "every role pattern of the Fano gluing: classes, exact at the knot, of which odd": [
+     2592,
+     1216,
+     64
+    ]
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "the duality identity fails when a contact has even base count": true,
+    "an odd three-fold 7-gadget whose dual plus corner line is 2-colourable is not exact at the knot": true,
+    "the full Fano plane is not 2-colourable, Fano minus a line is": true
+   }
+  },
+  "ok": true,
+  "seconds": 126.2
+ }
+}

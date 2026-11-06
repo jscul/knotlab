@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-CORRECTION-20261031-001A-P001",
+  "canonical_id": "PARITY-CORRECTION-20261031-001A-P001",
+  "kind": "proof",
+  "ticket": "PARITY-CORRECTION-20261031-001A",
+  "proof": "PARITY-CORRECTION-20261031-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Parity's coupling family is #P-hard except at six points",
+  "status": "Proved",
+  "claim": "Correction of MUTUAL-SELECTION-20261031-001 lane B. Parity's coupling family on cubic systems, M(H, b; lam) = sum over colourings of lam^(number of lines whose parity misses its right-hand side), is not polynomial everywhere. (i) The error: the Hadamard basis change turns each line's [1, lam, 1, lam] into a generalized equality but each point's equality into even parity, so the transformed count is the weight enumerator of the code of line sets covering every point evenly, M = sum over s in ker N of (-1)^(b.s) (1 + lam)^(n - |s|) (1 - lam)^|s| = 2^(n - r) sum over d in b + D of lam^|d|. (ii) Fan and Cai (2020, Theorem 2.2) apply: for real lam > 0, lam != 1, [1, lam, 1, lam] lies in none of their tractable cases, so the count is #P-hard on cubic bipartite graphs; their gadget G4 is the theta substitution. (iii) Theta substitution: replacing each line {x, y, z} by {x, u, v}, {y, u, v}, {z, u, v} with two new points gives M_par(theta H; lam) = (2 lam (1 + lam))^n M_nae(H; lam + 1/lam - 1), where M_nae weighs each monochromatic line by its argument; in the knot's even-form variable, u = ((lam - 1)/(lam + 1))^2. (iv) Dichotomy: with the knot's coupling dichotomy (KNOT-COUPLING-20261031-001) and #P-hardness of counting 2-colourings (PLAIN-COUNT-20261031-001A), counting parity's coupling on connected cubic systems with simple incidence graphs and no repeated lines is polynomial at lam in {0, 1, -1, i, -i, oo} and #P-hard (Turing) at every other complex lam.",
+  "dependencies": [
+    "MUTUAL-SELECTION-20261031-001Z",
+    "KNOT-COUPLING-20261031-001Z",
+    "PLAIN-COUNT-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A cubic system on which the coset or dual weight-enumerator identity fails.",
+    "A system on which the theta identity fails, or a theta image that is not a simple cubic system without repeated lines.",
+    "A complex lam outside the six points where the theta reduction does not land on a #P-hard point of the knot's coupling or of 2-colouring counts.",
+    "One of the six points without a polynomial algorithm."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-CORRECTION-20261031-001",
+    "epic_path": [
+      "PARITY-CORRECTION-20261031-001"
+    ],
+    "parents": [
+      "research/MUTUAL-SELECTION-20261031-001B/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001B/results.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json",
+      "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json",
+      "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/result.json",
+      "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/manifest.json",
+      "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "research/MUTUAL-SELECTION-20261031-001B/manifest.json": "00780b4bcefba1e2d98732ecb2c9e4e133710a5beebec4cad931e4b730f0fb5e",
+    "research/MUTUAL-SELECTION-20261031-001B/results.json": "9e905080ec656289d9246b56bc15dd22f3caba321cd94517f845e9aad4258d97",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07",
+    "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json": "3e27518733884eb32e10a1ae7972beed9fee540cf3de5f09b70bd76dfb814dbe",
+    "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json": "2f18c256eba9b877329625cbecc8deeb971e5e69392660b3a7e36b4a57004eb7",
+    "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/manifest.json": "6145c2fecd97d2bd576bb8e5d0d513c841d68cc55504b491d1f1b88aff548f3f",
+    "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/result.json": "be17fc665757e80eea66dc2e40b28ebe435417e20cfea6c3799f73df6ba8810c",
+    "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/manifest.json": "5bd248b9fed4bf20351738b54e67132c74d059bee5b7f8c312c2b439fa4c2e68",
+    "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/result.json": "15be7487e1e372cd8e6300e03e2d0a13c0726353f15f3f5391bcedd55050b9cc"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json",
+    "identity": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/identity.json",
+    "directory": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points",
+    "proof": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/proof.md",
+    "result": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json",
+    "check": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "parity_family_dichotomy_shown": true
+  },
+  "foundation_claim_scope": "A complexity classification of one weighted counting family on cubic triple systems, inherited through the theta substitution from the knot's coupling dichotomy; no knot, contact or topology claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session on 2026-10-31, at the owner's request relayed by a peer session that found the error.",
+    "status": "checked: the transform error on every census graph with n <= 7; Fan-Cai's case conditions and gadget G4; the theta identity on census graphs and knot's spaces at real and complex couplings; the six easy points; the case analysis of lam + 1/lam - 1; no human or external review",
+    "novelty": "For real lam > 0 the hardness is Fan and Cai (2020); for rational lam it is covered by Cai, Fan and Liu (2021, mixed signs). The theta substitution is Fan-Cai's gadget G4 read on cubic systems. The complex case of this family, obtained from the knot's coupling dichotomy, was not found in the literature checked (both abstracts cover nonnegative or rational values only)."
+  }
+}

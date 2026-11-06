@@ -1,0 +1,90 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLOSED-H1-20261025-001B-P001",
+  "canonical_id": "CLOSED-H1-20261025-001B-P001",
+  "kind": "proof",
+  "ticket": "CLOSED-H1-20261025-001B",
+  "proof": "CLOSED-H1-20261025-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The two connected quandles of order 6 colour every knot equally",
+  "status": "Proved",
+  "claim": "Target: let K be a knot in S3 with group pi, exterior X, meridian mu and preferred longitude lambda. (a) Every homomorphism rho: pi -> S4 with rho(mu) a transposition t has rho(lambda) = 1. Reason: rho lifts through the central extension {+I, -I} -> GL(2,3) -> PGL(2,3) = S4, because the obstruction lies in H^2(pi; F2) = 0 (equivalently, one Wirtinger relator follows from the others); lambda lies in the commutator subgroup and commutes with mu, so rho(lambda) is 1 or the double transposition z commuting with t, and every pair of lifts of t and z anticommutes. (b) Let phi: pi -> S3 send mu to the image of t, and let V be V4 with S3 acting by conjugation, a self-dual module. By half-lives-half-dies the image of H^1(X; V) in the 2-dimensional space H^1(boundary of X; V) is a line, and by (a) it is not the line of classes that vanish on the meridian. Hence evaluation at the meridian maps the lifting cocycles onto V4: for a fixed 4-cycle c over the image of t, the lifts of phi with rho(mu) = t and with rho(mu) = c are equinumerous, and all lifts with rho(mu) = c share one longitude in {1, c^2}. (c) Consequently every knot has as many colourings by the transposition conjugation quandle of S4 as by the 4-cycle conjugation quandle; these are the connected quandles C[6,1] = G(Z2, 0) and C[6,2] = G(Z2, 1), so their counts agree on every knot, as Clark, Elhamdadi, Hou, Saito and Yeatman conjectured in 2013 for this pair. Every knot with a non-trivial Fox 3-colouring has a non-trivial C[6,2] colouring, as Carter, Oshiro and Saito conjectured in 2009.",
+  "dependencies": [],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A knot with a transposition colouring whose longitude is not 1, or a pair of lifts to GL(2,3) of a transposition and of its commuting double transposition that commute.",
+    "An S3 colouring of a knot whose numbers of lifts with a fixed transposition meridian and with a fixed 4-cycle meridian differ, whose 4-cycle lifts have two different longitudes, or whose boundary restriction image is not one-dimensional.",
+    "A knot whose colouring counts by the two conjugation quandles differ, or a failure of the identification of C[6,1] and C[6,2] with these quandles.",
+    "A virtual-knot control under which the equality cannot fail."
+  ],
+  "lineage": {
+    "home_scope": "CLOSED-H1-20261025-001",
+    "epic_path": [
+      "CLOSED-H1-20261025-001"
+    ],
+    "parents": [],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/CLOSED-H1-20261025-001B/CLOSED-H1-20261025-001B-P001_two_connected_quandles_of_order_6_colour_every_knot_equally/manifest.json",
+    "identity": "proofs/CLOSED-H1-20261025-001B/CLOSED-H1-20261025-001B-P001_two_connected_quandles_of_order_6_colour_every_knot_equally/identity.json",
+    "directory": "proofs/CLOSED-H1-20261025-001B/CLOSED-H1-20261025-001B-P001_two_connected_quandles_of_order_6_colour_every_knot_equally",
+    "proof": "proofs/CLOSED-H1-20261025-001B/CLOSED-H1-20261025-001B-P001_two_connected_quandles_of_order_6_colour_every_knot_equally/proof.md",
+    "result": "proofs/CLOSED-H1-20261025-001B/CLOSED-H1-20261025-001B-P001_two_connected_quandles_of_order_6_colour_every_knot_equally/result.json",
+    "check": "proofs/CLOSED-H1-20261025-001B/CLOSED-H1-20261025-001B-P001_two_connected_quandles_of_order_6_colour_every_knot_equally/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "order_six_quandle_counts_equal_shown": false
+  },
+  "foundation_claim_scope": "Classical knots in S3, not links or virtual knots; colouring counts by the two connected quandles of order 6. Cited, not proved: Poincare-Lefschetz duality with local coefficients, asphericity of knot exteriors or the redundancy of one Wirtinger relator, and S4 = PGL(2,3). The other pairs of Galkin quandles in the 2013 conjecture are not covered. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof (cited: Poincare-Lefschetz duality and universal coefficients with local coefficients, asphericity of knot exteriors, S4 = PGL(2,3)); check.py (standard library, under 1 s) verifies the GL(2,3) anticommutation of lifts of a transposition and its commuting double transposition, the identification of the Galkin quandles G(Z2,0), G(Z2,1) with the transposition and 4-cycle quandles, and on 27 knots (braid closures, alternating and tripled alternating diagrams, connected sums, random braids) by brute force: trivial transposition longitudes, equal lift counts for all four meridian values over every S3 colouring with one longitude each, equal totals, non-trivial 4-cycle colourings of 3-colourable knots; controls: a virtual knot breaks the equality (5 against 1), longitudes take both values. No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

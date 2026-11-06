@@ -1,0 +1,69 @@
+{
+ "artifact_id": "FOUR-PLACE-20261031-001D-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; tickets A, B, C and PARITY-CORRECTION B Proved and passed": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "Proved",
+     "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json": "passed",
+     "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/manifest.json": "Proved",
+     "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/result.json": "passed",
+     "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/manifest.json": "Proved",
+     "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/result.json": "passed",
+     "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/manifest.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 parity's count on 4-regular systems is 2^(n-r) or 0 (Gaussian elimination), checked against brute force on every system with n <= 7 and four random signings each: its count is polynomial, so it fails (M2)": {
+   "info": {
+    "mismatches": 0,
+    "systems x signings": 80
+   },
+   "pass": true
+  },
+  "2 the four value-free four-place classes: none is mutually selecting on 4-regular systems (unless NP-complete problems are polynomial): parity's count is polynomial, not-exactly-two and twelve have coNP-complete failures, not-all-equal never fails": {
+   "info": {
+    "not-all-equal": {
+     "count #P-hard in general": "not needed",
+     "fails on 4-regular systems": false,
+     "failures recognisable": "vacuous (never fails, B)",
+     "mutually selecting": "no: (M1) fails (empty failing class)"
+    },
+    "not-exactly-two": {
+     "count #P-hard in general": "not needed",
+     "fails on 4-regular systems": true,
+     "failures recognisable": "no unless P = NP (coNP-complete, C)",
+     "mutually selecting": "no: (M1) fails unless P = NP"
+    },
+    "parity": {
+     "count #P-hard in general": false,
+     "fails on 4-regular systems": true,
+     "failures recognisable": "yes (linear algebra)",
+     "mutually selecting": "no: (M2) fails (count 2^(n-r) or 0, check 1)"
+    },
+    "twelve": {
+     "count #P-hard in general": "not needed",
+     "fails on 4-regular systems": true,
+     "failures recognisable": "no unless P = NP (coNP-complete, C)",
+     "mutually selecting": "no: (M1) fails unless P = NP"
+    }
+   },
+   "pass": true
+  },
+  "3 value-free not-all-equal on regular systems fails at three places (the Fano plane, the smallest knot's space) and never at k >= 4 (B): among value-free laws, failures that can be recognised occur only at three places": {
+   "info": {
+    "B, the k >= 4 theorem": "Thomassen's even digraphs (in- and out-degree >= 3)",
+    "Fano fails not-all-equal": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "No value-free four-place knot is mutually selecting on 4-regular systems, unless NP-complete problems are polynomial: parity fails recognisably but its count is polynomial (2^(n-r) or 0), and its failures are local; the not-exactly-two and twelve classes have coNP-complete failures (C); not-all-equal never fails (B). With B for every k >= 4, the value-free not-all-equal law fails on regular systems only at three places, where its failures are the knot's Pfaffian spaces. So among value-free laws, mutual selection is special to three places. Open: four-place laws that prefer a value, and the counts of the four-place laws.",
+ "kind": "proof",
+ "proof": "FOUR-PLACE-20261031-001D-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FOUR-PLACE-20261031-001D"
+}

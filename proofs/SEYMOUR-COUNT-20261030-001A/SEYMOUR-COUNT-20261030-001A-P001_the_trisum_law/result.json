@@ -1,0 +1,639 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SEYMOUR-COUNT-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 10,
+    "mismatched": {}
+   }
+  },
+  "1 splits: prisms (k - 1, 1), truncated octahedron (8, 8); the c3 view and the reversed orientation swap them": {
+   "ok": true,
+   "detail": {
+    "('4-prism', False)": {
+     "split (c1 removed)": [
+      1,
+      1
+     ],
+     "split (c3 removed)": [
+      1,
+      1
+     ],
+     "amplitude": 2
+    },
+    "('4-prism', True)": {
+     "split (c1 removed)": [
+      1,
+      1
+     ],
+     "split (c3 removed)": [
+      1,
+      1
+     ],
+     "amplitude": 2
+    },
+    "('6-prism', False)": {
+     "split (c1 removed)": [
+      2,
+      1
+     ],
+     "split (c3 removed)": [
+      1,
+      2
+     ],
+     "amplitude": 3
+    },
+    "('6-prism', True)": {
+     "split (c1 removed)": [
+      1,
+      2
+     ],
+     "split (c3 removed)": [
+      2,
+      1
+     ],
+     "amplitude": 3
+    },
+    "('8-prism', False)": {
+     "split (c1 removed)": [
+      3,
+      1
+     ],
+     "split (c3 removed)": [
+      1,
+      3
+     ],
+     "amplitude": 4
+    },
+    "('8-prism', True)": {
+     "split (c1 removed)": [
+      1,
+      3
+     ],
+     "split (c3 removed)": [
+      3,
+      1
+     ],
+     "amplitude": 4
+    },
+    "('10-prism', False)": {
+     "split (c1 removed)": [
+      4,
+      1
+     ],
+     "split (c3 removed)": [
+      1,
+      4
+     ],
+     "amplitude": 5
+    },
+    "('10-prism', True)": {
+     "split (c1 removed)": [
+      1,
+      4
+     ],
+     "split (c3 removed)": [
+      4,
+      1
+     ],
+     "amplitude": 5
+    },
+    "('truncated octahedron', False)": {
+     "split (c1 removed)": [
+      8,
+      8
+     ],
+     "split (c3 removed)": [
+      8,
+      8
+     ],
+     "amplitude": 16
+    },
+    "('truncated octahedron', True)": {
+     "split (c1 removed)": [
+      8,
+      8
+     ],
+     "split (c3 removed)": [
+      8,
+      8
+     ],
+     "amplitude": 16
+    }
+   }
+  },
+  "2 the trisum law on all prism triples and orientations and on random trisums": {
+   "ok": true,
+   "detail": {
+    "prism triples": {
+     "(2, 2, 2)": {
+      "000": [
+       6,
+       6
+      ],
+      "001": [
+       6,
+       6
+      ],
+      "010": [
+       6,
+       6
+      ],
+      "011": [
+       6,
+       6
+      ]
+     },
+     "(2, 2, 3)": {
+      "000": [
+       9,
+       9
+      ],
+      "001": [
+       9,
+       9
+      ],
+      "010": [
+       9,
+       9
+      ],
+      "011": [
+       9,
+       9
+      ]
+     },
+     "(2, 3, 3)": {
+      "000": [
+       13,
+       13
+      ],
+      "001": [
+       14,
+       14
+      ],
+      "010": [
+       14,
+       14
+      ],
+      "011": [
+       13,
+       13
+      ]
+     },
+     "(3, 3, 3)": {
+      "000": [
+       18,
+       18
+      ],
+      "001": [
+       21,
+       21
+      ],
+      "010": [
+       21,
+       21
+      ],
+      "011": [
+       21,
+       21
+      ]
+     },
+     "(2, 2, 4)": {
+      "000": [
+       12,
+       12
+      ],
+      "001": [
+       12,
+       12
+      ],
+      "010": [
+       12,
+       12
+      ],
+      "011": [
+       12,
+       12
+      ]
+     },
+     "(2, 3, 4)": {
+      "000": [
+       17,
+       17
+      ],
+      "001": [
+       19,
+       19
+      ],
+      "010": [
+       19,
+       19
+      ],
+      "011": [
+       17,
+       17
+      ]
+     },
+     "(3, 3, 4)": {
+      "000": [
+       23,
+       23
+      ],
+      "001": [
+       29,
+       29
+      ],
+      "010": [
+       28,
+       28
+      ],
+      "011": [
+       28,
+       28
+      ]
+     },
+     "(2, 4, 4)": {
+      "000": [
+       22,
+       22
+      ],
+      "001": [
+       26,
+       26
+      ],
+      "010": [
+       26,
+       26
+      ],
+      "011": [
+       22,
+       22
+      ]
+     },
+     "(4, 4, 4)": {
+      "000": [
+       36,
+       36
+      ],
+      "001": [
+       52,
+       52
+      ],
+      "010": [
+       52,
+       52
+      ],
+      "011": [
+       52,
+       52
+      ]
+     },
+     "(2, 2, 5)": {
+      "000": [
+       15,
+       15
+      ],
+      "001": [
+       15,
+       15
+      ],
+      "010": [
+       15,
+       15
+      ],
+      "011": [
+       15,
+       15
+      ]
+     },
+     "(2, 3, 5)": {
+      "000": [
+       21,
+       21
+      ],
+      "001": [
+       24,
+       24
+      ],
+      "010": [
+       24,
+       24
+      ],
+      "011": [
+       21,
+       21
+      ]
+     }
+    },
+    "random": {
+     "holds": 20
+    }
+   }
+  },
+  "3 support lemma: 8 nonzero boundary entries per piece, carrying exactly its split": {
+   "ok": true,
+   "detail": {
+    "((2, 2, 2), (False, False, False))": {
+     "x": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "split": [
+       1,
+       1
+      ]
+     },
+     "y": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "split": [
+       1,
+       1
+      ]
+     },
+     "z": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "split": [
+       1,
+       1
+      ]
+     }
+    },
+    "((2, 3, 3), (False, False, True))": {
+     "x": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "split": [
+       1,
+       1
+      ]
+     },
+     "y": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "split": [
+       2,
+       1
+      ]
+     },
+     "z": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "split": [
+       1,
+       2
+      ]
+     }
+    },
+    "((3, 3, 4), (False, True, False))": {
+     "x": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "split": [
+       2,
+       1
+      ]
+     },
+     "y": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "split": [
+       1,
+       2
+      ]
+     },
+     "z": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       3,
+       3,
+       3,
+       3
+      ],
+      "split": [
+       3,
+       1
+      ]
+     }
+    },
+    "((2, 3, 4), (True, False, False))": {
+     "x": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "split": [
+       1,
+       1
+      ]
+     },
+     "y": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "split": [
+       2,
+       1
+      ]
+     },
+     "z": {
+      "nonzero entries": 8,
+      "values": [
+       1,
+       1,
+       1,
+       1,
+       3,
+       3,
+       3,
+       3
+      ],
+      "split": [
+       3,
+       1
+      ]
+     }
+    }
+   }
+  },
+  "4 weights lemma: a nested trisum's split is its host's weighted colouring count": {
+   "ok": true,
+   "detail": {
+    "(2, 2, 2, (0, 0, 0))": {
+     "direct split of the nested trisum": [
+      3,
+      3
+     ],
+     "weighted host count": [
+      3,
+      3
+     ]
+    },
+    "(3, 3, 2, (0, 0, 0))": {
+     "direct split of the nested trisum": [
+      9,
+      4
+     ],
+     "weighted host count": [
+      9,
+      4
+     ]
+    },
+    "(3, 3, 3, (0, 0, 1))": {
+     "direct split of the nested trisum": [
+      14,
+      7
+     ],
+     "weighted host count": [
+      14,
+      7
+     ]
+    },
+    "(2, 3, 3, (0, 1, 0))": {
+     "direct split of the nested trisum": [
+      7,
+      7
+     ],
+     "weighted host count": [
+      7,
+      7
+     ]
+    },
+    "(3, 2, 3, (1, 0, 0))": {
+     "direct split of the nested trisum": [
+      9,
+      5
+     ],
+     "weighted host count": [
+      9,
+      5
+     ]
+    },
+    "(4, 3, 2, (0, 1, 0))": {
+     "direct split of the nested trisum": [
+      14,
+      5
+     ],
+     "weighted host count": [
+      14,
+      5
+     ]
+    },
+    "(4, 4, 3, (1, 0, 1))": {
+     "direct split of the nested trisum": [
+      29,
+      10
+     ],
+     "weighted host count": [
+      29,
+      10
+     ]
+    }
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "the product of amplitudes alone is not the trisum's amplitude": true,
+    "ignoring orientation (using the unswapped split) breaks the law": true,
+    "the plain sum of pieces' amplitudes is not it either": true
+   }
+  },
+  "ok": true,
+  "seconds": 15.7
+ }
+}

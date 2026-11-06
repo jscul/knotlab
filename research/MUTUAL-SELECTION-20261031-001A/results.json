@@ -1,0 +1,82 @@
+{
+ "1 symmetric laws": {
+  "{0}": {
+   "knot": false,
+   "allows a constant colouring": true
+  },
+  "{1}": {
+   "knot": false,
+   "allows a constant colouring": false
+  },
+  "{2}": {
+   "knot": false,
+   "allows a constant colouring": false
+  },
+  "{3}": {
+   "knot": false,
+   "allows a constant colouring": true
+  },
+  "{0, 1}": {
+   "knot": false,
+   "allows a constant colouring": true
+  },
+  "{0, 2}": {
+   "knot": true,
+   "allows a constant colouring": true
+  },
+  "{0, 3}": {
+   "knot": false,
+   "allows a constant colouring": true
+  },
+  "{1, 2}": {
+   "knot": true,
+   "allows a constant colouring": false
+  },
+  "{1, 3}": {
+   "knot": true,
+   "allows a constant colouring": true
+  },
+  "{2, 3}": {
+   "knot": false,
+   "allows a constant colouring": true
+  },
+  "{0, 1, 2}": {
+   "knot": true,
+   "allows a constant colouring": true
+  },
+  "{0, 1, 3}": {
+   "knot": true,
+   "allows a constant colouring": true
+  },
+  "{0, 2, 3}": {
+   "knot": true,
+   "allows a constant colouring": true
+  },
+  "{1, 2, 3}": {
+   "knot": true,
+   "allows a constant colouring": true
+  }
+ },
+ "1 laws that can fail on plain cubic systems": [
+  "{1}",
+  "{2}",
+  "{1, 2}"
+ ],
+ "1 knots that can fail on plain cubic systems": [
+  "{1, 2}"
+ ],
+ "1 each of the three fails on some plain cubic systems": {
+  "W = {1}, n = 6": "7/60 random plain cubic systems unsolvable",
+  "W = {1}, n = 9": "22/60 random plain cubic systems unsolvable",
+  "W = {1}, n = 12": "38/60 random plain cubic systems unsolvable",
+  "W = {2}, n = 6": "8/60 random plain cubic systems unsolvable",
+  "W = {2}, n = 9": "19/60 random plain cubic systems unsolvable",
+  "W = {2}, n = 12": "30/60 random plain cubic systems unsolvable",
+  "W = {1, 2}, n = 6": "0/60 random plain cubic systems unsolvable",
+  "W = {1, 2}, n = 9": "0/60 random plain cubic systems unsolvable",
+  "W = {1, 2}, n = 12": "0/60 random plain cubic systems unsolvable",
+  "W = {1, 2}: the Fano plane (random systems almost never fail: the failing ones are exactly the knot's spaces)": "0 colourings"
+ },
+ "2 exact transversals of H = exact covers of the dual H* (each element in exactly three triples)": "120/120 systems agree",
+ "seconds": 0.7
+}

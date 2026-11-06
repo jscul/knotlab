@@ -1,0 +1,249 @@
+{
+ "artifact_id": "KNOT-COUPLING-20261031-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "info": {
+    "mismatched": {},
+    "parents": 4
+   },
+   "pass": true
+  },
+  "1 the reduction's instances (even chains off a Pfaffian negation set O, odd chains on O) are connected cubic knot's spaces; odd chains on a non-Pfaffian set give colourable systems": {
+   "info": {
+    "6-prism system, control: odd chains on a non-Pfaffian set": {
+     "#col": "150"
+    },
+    "6-prism system, i = 0, j = 0": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 27
+    },
+    "6-prism system, i = 0, j = 1": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 69
+    },
+    "6-prism system, i = 1, j = 0": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 237
+    },
+    "6-prism system, i = 1, j = 1": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 279
+    },
+    "6-prism system, i = 2, j = 0": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 447
+    },
+    "6-prism system, i = 2, j = 1": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 489
+    },
+    "K4^(3), control: odd chains on a non-Pfaffian set": {
+     "#col": "100"
+    },
+    "K4^(3), i = 0, j = 0": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 25
+    },
+    "K4^(3), i = 0, j = 1": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 67
+    },
+    "K4^(3), i = 1, j = 0": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 151
+    },
+    "K4^(3), i = 1, j = 1": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 193
+    },
+    "K4^(3), i = 2, j = 0": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 277
+    },
+    "K4^(3), i = 2, j = 1": {
+     "#col": "0",
+     "connected": true,
+     "cubic": true,
+     "lines": 319
+    },
+    "negation sets": {
+     "6-prism system": [
+      "(0, 6)",
+      "(1, 8)",
+      "(2, 10)"
+     ],
+     "K4^(3)": [
+      "(0, 0)",
+      "(1, 3)",
+      "(3, 2)"
+     ],
+     "K4^(3) with a Fano atom (non-planar)": [
+      "(1, 3)",
+      "(3, 2)"
+     ]
+    }
+   },
+   "pass": true
+  },
+  "2 the oracle identity: M(G_ij; lam0) = 2^n ((lam0+3)/4)^n (alpha+beta)^(sum of chain lengths) Q(rho^2i, rho^2j), Q summed over the even subgraphs of G directly (K4^(3), lam0 = 2)": {
+   "info": {
+    "cases": 9,
+    "i = 0, j = 0": true,
+    "i = 0, j = 1": true,
+    "i = 0, j = 2": true,
+    "i = 1, j = 0": true,
+    "i = 1, j = 1": true,
+    "i = 1, j = 2": true,
+    "i = 2, j = 0": true,
+    "i = 2, j = 1": true,
+    "i = 2, j = 2": true,
+    "rho(2)": "57/731"
+   },
+   "pass": true
+  },
+  "3 end to end: the colouring counts of plain Pfaffian systems (two planar, one non-planar) are recovered exactly from the counts of knot's spaces at real, negative and complex couplings, with the Fano or the splice atom": {
+   "info": {
+    "6-prism system, atom Fano, lam0 = 2": {
+     "largest instance (lines)": 2673,
+     "oracle calls": 52,
+     "recovered #col": "20",
+     "rho": "57/731",
+     "true #col": "20"
+    },
+    "K4^(3) with a Fano atom (non-planar), atom Fano, lam0 = 2": {
+     "largest instance (lines)": 9629,
+     "oracle calls": 69,
+     "recovered #col": "30",
+     "rho": "57/731",
+     "true #col": "30"
+    },
+    "K4^(3), atom 13-point splice, lam0 = 2": {
+     "largest instance (lines)": 1915,
+     "oracle calls": 32,
+     "recovered #col": "6",
+     "rho": "9129/193147",
+     "true #col": "6"
+    },
+    "K4^(3), atom Fano, lam0 = -1/2": {
+     "largest instance (lines)": 1033,
+     "oracle calls": 32,
+     "recovered #col": "6",
+     "rho": "999/2027",
+     "true #col": "6"
+    },
+    "K4^(3), atom Fano, lam0 = 1 + 1 i": {
+     "largest instance (lines)": 1033,
+     "oracle calls": 32,
+     "recovered #col": "6",
+     "rho": "-199/20137 + -2022/20137 i",
+     "true #col": "6"
+    },
+    "K4^(3), atom Fano, lam0 = 2": {
+     "largest instance (lines)": 1033,
+     "oracle calls": 32,
+     "recovered #col": "6",
+     "rho": "57/731",
+     "true #col": "6"
+    }
+   },
+   "pass": true
+  },
+  "4 real couplings: at 150 random rational lam0 outside {0, 1, -1, -3} some atom has |rho| != 1 and rho != 0 (ticket A, Proposition 6 proves it for every real lam0)": {
+   "info": {
+    "smallest best distance of |rho| from 1": 0.005333409087538745
+   },
+   "pass": true
+  },
+  "5 the tractable couplings on knot's spaces: lam = 0 (zero), 1 (2^n), -1 (a quadratic exponential sum over GF(2)), oo (a linear system), -3 ((-2)^n |det|)": {
+   "info": {
+    "13-point splice": {
+     "lam = -1: quadratic exponential sum = M": true,
+     "lam = -3: (-2)^n |det| = M": true,
+     "lam = 0: #col = 0": true,
+     "lam = 1: 2^n": true,
+     "lam = oo: linear system = leading coefficient": true
+    },
+    "Fano": {
+     "lam = -1: quadratic exponential sum = M": true,
+     "lam = -3: (-2)^n |det| = M": true,
+     "lam = 0: #col = 0": true,
+     "lam = 1: 2^n": true,
+     "lam = oo: linear system = leading coefficient": true
+    },
+    "K4^(3) decorated on O (knot's space)": {
+     "lam = -1: quadratic exponential sum = M": true,
+     "lam = -3: (-2)^n |det| = M": true,
+     "lam = 0: #col = 0": true,
+     "lam = 1: 2^n": true,
+     "lam = oo: linear system = leading coefficient": true
+    },
+    "quadratic sum against the counter on 30 random signed systems": 30
+   },
+   "pass": true
+  },
+  "6 deficiency one: #col(K4^(3)) recovered from counts of knot's spaces minus a line; the line-deleted atoms degenerate together only at special points; at lam = -3 the count is 2^n sum_p #PM(B - N[L] - N[p]), whose subgraphs are not Pfaffian-faithful (open)": {
+   "info": {
+    "K4^(3) from deficiency-one knot's spaces, lam0 = 2": {
+     "largest instance (lines)": 962,
+     "oracle calls": 64,
+     "recovered #col": "6",
+     "rho of the line-deleted atom": "29/533"
+    },
+    "deficiency one at lam = -3 (left open)": {
+     "13-point splice": {
+      "2^n sum_p #PM(B - N[L] - N[p])": 1015808,
+      "M(H - L; -3)": "1015808",
+      "points p with #PM != |det|": 9
+     },
+     "Fano": {
+      "2^n sum_p #PM(B - N[L] - N[p])": 1792,
+      "M(H - L; -3)": "1792",
+      "points p with #PM != |det|": 3
+     }
+    },
+    "real roots common to every line-deleted Fano atom's degeneracy polynomial": [
+     "1",
+     "1",
+     "1"
+    ]
+   },
+   "pass": true
+  },
+  "7 controls: the reduction degenerates at the special couplings": {
+   "info": {
+    "at lam0 = -3 the normalization (lam0 + 3)/4 vanishes": true,
+    "at lam0 = 0 every oracle value vanishes (no information)": true,
+    "at lam0 = 1 every atom has rho = 0": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Counting on the knot's spaces (connected non-2-colourable cubic triple systems) with weight lam per monochromatic line is #P-hard under Turing reductions at every coupling lam0 not in {1, -3} at which some atom has alpha + beta != 0 and rho^2 of infinite order: from a plain system G with Pfaffian incidence graph and a Pfaffian negation set O, the knot's spaces G_ij (2i atoms on each incidence off O, 2j + 1 on O) give Q(rho^2i, rho^2j), and bivariate interpolation returns #col(G) (Theorem 4 of PLAIN-COUNT-20261031-001A). With ticket A this covers every real lam0 outside {0, 1, -1, -3}, and the same holds with one line deleted (deficiency one). The excluded couplings are polynomial on knot's spaces: lam = 0 (zero; with one line deleted, Theorem 1 of the note), 1, -1 (a quadratic exponential sum over GF(2)), oo (linear algebra) and -3 ((-2)^n |det|, the dimer coupling). Checked end to end: #col of two planar and one non-planar Pfaffian source recovered exactly from counts of knot's spaces at real, negative and complex couplings, with Fano and splice atoms, and from deficiency-one knot's spaces. Deficiency one at lam = -3 is left open.",
+ "kind": "proof",
+ "proof": "KNOT-COUPLING-20261031-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "KNOT-COUPLING-20261031-001B"
+}

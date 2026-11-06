@@ -1,0 +1,26 @@
+{
+ "experiment_id": "CLASS4-LOCALITY-20261028-001A-E001",
+ "verdict": "invalid",
+ "failures": [
+  {
+   "case": "K011",
+   "failed": [
+    "P5 slot-1 data off the diagonal in some parallel configuration"
+   ]
+  }
+ ],
+ "controls": [
+  {
+   "control": "XA free class 4 on (0, 1, 2), edge (1, 2): intrinsic equality must fail in some configuration on the variety",
+   "configurations on the variety": 15,
+   "matched (intrinsic equality everywhere on the variety)": false
+  },
+  {
+   "control": "XB free class 4 on (1, 2), edge (2, 1): intrinsic equality must fail in some configuration on the variety",
+   "configurations on the variety": 7,
+   "matched (intrinsic equality everywhere on the variety)": true
+  }
+ ],
+ "cases": 3,
+ "seconds": 17052.3
+}

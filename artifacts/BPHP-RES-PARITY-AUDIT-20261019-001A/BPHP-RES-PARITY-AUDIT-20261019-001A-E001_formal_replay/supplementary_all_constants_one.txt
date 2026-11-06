@@ -1,0 +1,49 @@
+.lake/audit_controls/AllConstantsOne.lean:125:8: error: linarith failed to find a contradiction
+ℓ : ℕ
+hℓ : ℓ ≥ 32
+S : ℕ
+C : Fin S → FiniteParityClause (BitVar (2 ^ ℓ + 1) ℓ)
+dag : AffineDAG (usualBitPHPInitials (2 ^ ℓ + 1) ℓ) C
+finish : Fin S
+hempty : C finish = ∅
+hnot : ¬Real.exp (↑(2 ^ ℓ) / (1 * ↑ℓ ^ 2)) < ↑S
+n : ℕ := 2 ^ ℓ
+x : ℝ := ↑n / (1 * ↑ℓ ^ 2)
+hS : ↑S ≤ Real.exp x
+hn1 : 1 ≤ n
+hroom : 1 * ((2 * ℓ + 4) * ℓ ^ 2) ≤ n
+hℓℓ : 32 * ℓ ≤ ℓ * ℓ
+h64 : 64 * ℓ ≤ n
+hℓR : 32 ≤ ↑ℓ
+hnR : 1 ≤ ↑n
+hden : 0 < 1 * ↑ℓ ^ 2
+hxmul : x * (1 * ↑ℓ ^ 2) = ↑n
+hroomR : 1 * ((2 * ↑ℓ + 4) * ↑ℓ ^ 2) ≤ ↑n
+hx : 2 * ↑ℓ + 4 ≤ x
+hx0 : 0 ≤ x
+he2 : 2 ≤ Real.exp 1
+hncast : ↑n = 2 ^ ℓ
+hexp : 16 * ↑n ^ 2 ≤ Real.exp x
+M : ℕ := 3 * S + (n + 1).choose 2
+hchoose : (n + 1).choose 2 ≤ 4 * n ^ 2
+hM : 1 ≤ M
+hMR : ↑M ≤ 3 * Real.exp x + 4 * ↑n ^ 2
+hMpos : 0 < 4 * ↑M
+h4M : 4 * ↑M ≤ Real.exp (2 * x)
+hlog : Real.log (4 * ↑M) ≤ 2 * x
+k : ℕ := n / (32 * ℓ)
+hqpos : 0 < 32 * ℓ
+hkmul : k * (32 * ℓ) ≤ n
+hkpos : 1 ≤ k
+hkn : k ≤ n
+hklt : n < (k + 1) * (32 * ℓ)
+hnk : n ≤ 64 * ℓ * k
+hnkR : ↑n ≤ 64 * ↑ℓ * ↑k
+hm : ↑(n + 1) ≤ 2 * ↑n
+hm0 : 0 ≤ ↑(n + 1)
+hstep1 : ↑(n + 1) * Real.log (4 * ↑M) ≤ 2 * ↑n * (2 * x)
+hsqr : ↑n * ↑n ≤ 64 * ↑ℓ * ↑k * (64 * ↑ℓ * ↑k)
+this : 2 * ↑n * (2 * x) * (1 * ↑ℓ ^ 2) = 4 * ↑n * ↑n
+a✝ : ↑k ^ 2 * (1 * ↑ℓ ^ 2) < 4 * ↑n * ↑n
+⊢ False
+failed

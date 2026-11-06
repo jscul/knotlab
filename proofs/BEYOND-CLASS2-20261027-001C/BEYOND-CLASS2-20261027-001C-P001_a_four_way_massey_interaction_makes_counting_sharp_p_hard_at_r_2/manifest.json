@@ -1,0 +1,113 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BEYOND-CLASS2-20261027-001C-P001",
+  "canonical_id": "BEYOND-CLASS2-20261027-001C-P001",
+  "kind": "proof",
+  "ticket": "BEYOND-CLASS2-20261027-001C",
+  "proof": "BEYOND-CLASS2-20261027-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A four-way Massey interaction makes counting #P-hard where no pair can be hard",
+  "status": "Proved",
+  "claim": "for p >= 5 and G_p = U4(F_p) x| <D>, D = diag(1, -1, 1, -1) (order 2p^6, no graded hard pair; at r = 2 none can exist and every coprime class-2 group is polynomial), on closed 3-manifolds M = S^3_2(K) with H1 = Z/2: |Hom(pi1 M, G_p)| = 1 + p^(N+4) #{c in V^3 : Q_M(c; .) = 0}, V = H^1(M; F_p twisted), Q_M the twisted triple Massey product paired with V through the J-duality of the Fox-coloring transport (Burau at t = -1). Q vanishes on 2-surgeries of sums of knots with one-dimensional V; inserting gamma . cable2(P) . gamma^-1 for a pure braid P with conjugators in the third lower central term adds 2 sum_j Lam_j(c) ell_j(s) (degree-3 Magnus tensor contracted with bundle functionals). The gadget of a loopless multigraph gives |Hom| = 1 + p^(12m+4) Z_f(Gamma) with an integer, even edge weight f, f(0) = p^12, f(0,0,0,1) = p^6 (2p^4 - p^2); W = f^2 is not block-rank-1, so counting is #P-hard (Bulatov-Grohe, edge doubling).",
+  "dependencies": [
+    "BEYOND-CLASS2-20261027-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A letter (n <= 12) whose Fox-coloring transport fails to preserve J or J^T over Z, or a failure of the bundle identity or of J^T 1 = ((-1)^(n-1-q)).",
+    "A support pattern whose construction is not a homomorphism from Aff(F_p) into G_p, sends the reflection fixing 0 elsewhere than D, or has a superdiagonal constant that depends on g or vanishes on its support (p = 5, 7, 11, 13).",
+    "P4 not pure, a conjugator with nonzero degree-1 or degree-2 Magnus part, a 2-cable not acting by substitution of bundle products, or a cable coloring transport different from the identity over Z.",
+    "A count #{(A, B) : Phi_0(A, B, .) = 0} different from 2p^4 - p^2 (p = 5, 7, 11, 13), a non-integral or rescaling-dependent edge weight at p = 5, f(0) != p^12, f(d*) != p^6 (2p^4 - p^2), or a vanishing minor.",
+    "A reduced K2 template on which the kernel-rank count differs from p^(-N) Z_f(K2).",
+    "Experiment BEYOND-CLASS2-20261027-001B-E001 not supported (base vanishing, exact steering for P4 and P4B, gadgets on six graphs at p = 5, 7, 11, independent counts and lifting test)."
+  ],
+  "lineage": {
+    "home_scope": "BEYOND-CLASS2-20261027-001",
+    "epic_path": [
+      "BEYOND-CLASS2-20261027-001"
+    ],
+    "parents": [
+      "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/manifest.json",
+      "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/result.json",
+      "experiments/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/contract.json",
+      "artifacts/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/result.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/manifest.json": "ac198ba261ad12d675a8ed2896314f2a106a1a5b6d129718cfe35511999cd5cc",
+    "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/result.json": "71a7ba79096525f0845fbb99d0336dae8eb1a7c59e94dbbd434aac33fe34da66",
+    "experiments/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/contract.json": "e2351672bdad5827348242b73b0332b21caadb669e282b0e4215044abbb871e4",
+    "artifacts/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/result.json": "89e905f6bc4111c9aaa9cab692339050ac11abb99a25d58b2f2d4de56f9613d2",
+    "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json": "c81fd7b466460090a82ab3a39d6465d95ceeb59daab2aeedd67abc76751baf0f",
+    "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json": "eaa1b53eb187899ccc2b6d28f42da49a4e4cdf34b1728abfc503b1e4d9377a4f",
+    "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json": "544822680bc1cdaecad825054e722c303afdff947c4a0544a753672b8f0b924a",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json": "d374186cfa5b0fda8e0a672d62e8a1605e05693c07cba01576a681871365e049"
+  },
+  "paths": {
+    "manifest": "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/manifest.json",
+    "identity": "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/identity.json",
+    "directory": "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2",
+    "proof": "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/proof.md",
+    "result": "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/result.json",
+    "check": "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/check.py",
+    "library": "experiments/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/mlib.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "four_way_massey_sharp_p_hard_shown": false
+  },
+  "foundation_claim_scope": "p >= 5, r = 2 (closed 3-manifolds with H1 = Z/2 given as 2-surgeries on closed braids); hardness under polynomial-time Turing reductions. Cited, not reproved: Bulatov-Grohe as stated in Cai-Chen-Lu Thm 2.1; closed-braid presentations and the Seifert longitude; longitudes lie in the second derived subgroup; meridian amalgams for connected sums; Poincare duality for H^2(M; F_p); CLASSK-DICHOTOMY-20261026-001C for the class-2 side. Not covered: p = 2, 3; r > 2 (channel terms in the base form); knot exteriors; a full class-3 criterion. No P versus NP claim.",
+  "validation": {
+    "status": "checked: the group and its characters, no graded hard pair; J-invariance of the Fox-coloring transport over Z for every letter and n <= 12, the bundle and constant identities; the eight symmetric-power constructions as homomorphisms on Aff(F_p) into G_p with the stated constants (p = 5, 7, 11, 13); P4 pure, conjugators in the third term over Z, single cabled letters and the whole cable acting by bundle substitution, cable transport the identity; the edge-weight count 2p^4 - p^2 at p = 5, 7, 11, 13 and f on every support pattern at p = 5; the count identity on a reduced K2 template at p = 5 by kernel ranks; experiment BEYOND-CLASS2-20261027-001B-E001 supported (two independent models and an independent group-law count); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-27."
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "artifact_id": "WALLS-WITH-CHOICES-20261024-001C-P001",
+  "checks": {
+    "honeycomb with a free place (frozen rows)": {
+      "3x3": {
+        "configurations and twists": 3145728,
+        "contradicting along every odd class": 0,
+        "contradicting along none": 2967072
+      },
+      "3x4": {
+        "configurations and twists": 201326592,
+        "contradicting along every odd class": 0,
+        "contradicting along none": 192641088
+      }
+    },
+    "per placement": {
+      "109": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "turning both ways, no free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "110": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "directed, free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "147": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "directed, no free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "151": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "turning both ways, no free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "155": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "directed, free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "203": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "directed, free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "54": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "directed, no free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      },
+      "62": {
+        "certified directly": 3,
+        "certified tori": 3,
+        "components are single cycles": 49,
+        "kind": "directed, free place",
+        "selective by Theorem 1": 49,
+        "states accounted for": 49,
+        "tori": 49,
+        "winding walls as listed": 49
+      }
+    },
+    "tori": "3 <= L, M <= 9"
+  },
+  "claim": "For the eight bending contacts with directed walls or without a free place (54, 62, 109, 110, 147, 151, 155, 203), planted configurations are selective on every L x M torus with L, M >= 3: their periodic walls are a planted staircase, which blocks the classes (1, 0) and (0, 1) and serves (1, 2) and (2, 1), and for 109 and 151 also a braid that blocks (1, 0) and (0, 1). For the four whose walls turn both ways and have a free place (111, 125, 159, 215) no uniform construction was found; on 3 x 3 and 3 x 4 none of their configurations contradicts along every odd class.",
+  "controls": {
+    "147's planted configuration in the fitting twist has no odd class to contradict": true,
+    "155 without the column's blocking has another winding wall and is not selective": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "WALLS-WITH-CHOICES-20261024-001C-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "selectivity_on_large_tori_proved": false,
+    "selectivity_on_large_tori_proved_for_eight": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "WALLS-WITH-CHOICES-20261024-001C"
+}

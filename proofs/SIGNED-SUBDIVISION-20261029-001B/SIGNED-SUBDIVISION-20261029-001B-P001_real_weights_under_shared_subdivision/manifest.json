@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIGNED-SUBDIVISION-20261029-001B-P001",
+  "canonical_id": "SIGNED-SUBDIVISION-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "SIGNED-SUBDIVISION-20261029-001B",
+  "proof": "SIGNED-SUBDIVISION-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Real weights under shared subdivision",
+  "status": "Proved",
+  "claim": "With arbitrary nonzero real weights on a knot's tuples, under shared subdivision of the triangular-lattice torus (the 122 S2 and S1 rule shapes of SHARED-SUBDIVISION-20261029-001A): (1) every weighting is gauge-equivalent to one of 944 sign classes times 1 to 4 free positive magnitudes; (2) positive weights have the counted supports, so they are exact or support-exact only on the 22 counted-exact shapes at scale 2 (coarse sides 2-4) and the 6 twisted not-all-equal pairs at scale 3 (sides 2-3); (3) if every fine extension of a coarse-forbidden assignment uses each tuple equally often mod 2, no real weighting cancels it: this excludes 54 of the 100 non-affine shapes at scale 2 (coarse sides 2-3) and 34 shapes at scale 3 (side 2), and asking for one sign-coherent witness per sign class excludes nothing more; (4) on the 22 affine shapes the exact real weightings are exactly the gauge images of the exact plus-minus-one classes, at scale 2 on coarse sides 2-6 and at scale 3 on sides 2-4; sides 2-4 alone admit one more class for each parity law on up triangles (slice magnitudes 2^(1/9) and 2^(-1/3)), and the coarse 2-torus alone admits golden-ratio (scale 3) and reciprocal-tribonacci (scale 2) weightings of every sign class of the twisted pairs, all removed by larger tori; (5) the atoms excluding 000 or 111, weighted on Hamming classes, have no exact weighting on the coarse 2-torus. Left open: 46 shapes at scale 2 (atoms and two-excluded laws) and 82 non-affine shapes at scale 3.",
+  "dependencies": [
+    "SIGNED-SUBDIVISION-20261029-001A",
+    "SHARED-SUBDIVISION-20261029-001A",
+    "SHARED-SUBDIVISION-20261029-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A positive weighting whose support differs from the counted support on a tested torus.",
+    "A shape listed as excluded by the sign-parity obstruction whose witness fails when recomputed (an extension with a different usage parity, or an allowed coarse assignment).",
+    "A real exact weighting of an affine shape, on the stated coarse sides, that is not gauge-equivalent to an exact plus-minus-one class (or the reverse).",
+    "A nonzero real solution of the symmetric-slice systems on the coarse 2-torus."
+  ],
+  "lineage": {
+    "home_scope": "SIGNED-SUBDIVISION-20261029-001",
+    "epic_path": [
+      "SIGNED-SUBDIVISION-20261029-001"
+    ],
+    "parents": [
+      "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/manifest.json",
+      "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/result.json",
+      "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json",
+      "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json",
+      "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/manifest.json": "95315c1fa4e3b5e4e469ca3524656597e7675096f29bd12082c3cf224b7c4240",
+    "proofs/SIGNED-SUBDIVISION-20261029-001A/SIGNED-SUBDIVISION-20261029-001A-P001_signs_add_no_exact_law_under_shared_subdivision/result.json": "bc5d5e8866cb1a37080d21e60181af1f9c0dbb0e7fb43fcaa5f10741951c8789",
+    "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json": "2bb0f66e2f0e06a7f2f2caeb5fd72f80266169e82841868efe8aacf3355319bb",
+    "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json": "c9320bdd38dd588456335ee9b99f9681c220299ec0b9fb0dcbe77c4d3fb7e733",
+    "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/manifest.json": "c530c4aa11155a75dc75c8603510470f7c43a9d749cbc0a4606e3c9be23a6300"
+  },
+  "paths": {
+    "manifest": "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/manifest.json",
+    "identity": "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/identity.json",
+    "directory": "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision",
+    "proof": "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/proof.md",
+    "result": "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/result.json",
+    "check": "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "real_weight_subdivision_shown": true
+  },
+  "foundation_claim_scope": "Weighted three-bit laws (arbitrary nonzero real weights on a knot's tuples) on the triangular-lattice torus, S2 and S1 rule shapes of SHARED-SUBDIVISION-20261029-001A; exactness and support-exactness under shared subdivision at scale 2 and 3 on the stated coarse tori.",
+  "validation": {
+    "status": "checked: 944 sign classes and gauge slices; counted support census (residues modulo three primes) and a random positive-weight control; sign-parity witnesses by single-tuple sign flips, exact integers by the Chinese remainder theorem, at scale 2 (coarse sides 2, 3) and scale 3 (side 2), plus the per-class refinement; explicit solution sets of the 22 affine shapes checked complete against trace(T^L) on L = 2-6, 8, 9, 10, 12; exact algebra (gcd and real roots, lexicographic Groebner bases, minimal polynomials) on coarse sides 2-6 (scale 2) and 2-4 (scale 3); symmetric slices by gcd and resultants; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

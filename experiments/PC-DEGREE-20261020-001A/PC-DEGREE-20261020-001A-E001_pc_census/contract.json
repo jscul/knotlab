@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PC-DEGREE-20261020-001A-E001",
+  "ticket": "PC-DEGREE-20261020-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "question": "Is the polynomial calculus degree of Tseitin formulas, outside characteristic 2, governed by half the carving width: ceil(cvw/2) <= PC <= floor(cvw/2) + 1 for the balanced binomial encoding, and max(maxdegree, that) for the standard encodings?",
+  "definitions": {
+    "Tseitin system": "connected simple graph G, one variable y_e = +-1 per edge, vertex v constrains the product of its edges' variables to s_v = (-1)^c(v); total charge odd unless stated",
+    "balanced binomial encoding": "vertex v contributes y_A - s_v y_(E(v) minus A) with A the first ceil(deg v / 2) edges of v; degree ceil(deg v / 2)",
+    "standard binomial encoding": "vertex v contributes y_E(v) - s_v; degree deg v",
+    "clause encoding": "vertex v contributes the indicator polynomials of its violating assignments (one per clause); over a field of characteristic other than 2 their span is the span of y_A - s_v y_(E(v) xor A) for A within E(v)",
+    "reduced convention (R)": "lines are multilinear polynomials modulo y^2 = 1 of degree at most d; a line p may be multiplied by y_e when the reduced product has degree at most d",
+    "standard convention (S)": "lines of degree at most d; a line may be multiplied by a variable only if it has degree at most d - 1 (the product before reduction has degree at most d)",
+    "PC degree": "the least d at which the closure of the axioms under linear combination and the allowed multiplications contains 1",
+    "signed closure": "the computation used: union-find with signs over monomials of degree at most d; a component's members eligible for multiplication by y_e are translated together (pairwise relations keep their signs); a component with a contradiction contains all its monomials; refutation iff the component of 1 has a contradiction. B proves this equals the PC closure; check_result.py tests it against plain linear algebra over F3",
+    "carving width cvw": "the least over subcubic trees whose leaves are the vertices of G of the largest number of edges crossing a tree edge's split (leaf edges included)",
+    "PC_bal, PC_Rstd, PC_SC, PC_SB": "PC degree of: balanced binomials, reduced; standard binomials, reduced; clause encoding, standard convention; standard binomials, standard convention"
+  },
+  "public_inputs": {
+    "pilot_roster": "graphs of CUTWIDTH-DEPTH-20261020-001A (raw_rows.jsonl, sha256 d465a0a23a3e4f56b9cdae43a8bc6945005a29bfebcb9738fab7e9c4ac150f36): all 112 connected cubic graphs on 4-12 vertices, all 141 connected graphs on 3-6 vertices, and the 691 sampled graphs (4-regular, G(n, 0.4)) with at most 18 edges",
+    "held_out": "300 random connected graphs not seen before the freeze: for each of n = 7, 8, 9, 10, 11, draw G(n, p) with p uniform in [0.25, 0.45] until connected with at most 18 edges, 60 graphs per n (seed 20261021)",
+    "named": "K44, K45, K55, K6, K7, the 3x4 grid, the Heawood graph, the Moebius-Kantor graph, the 4-cube Q4"
+  },
+  "forbidden_inputs": [
+    "carving width or predicted degrees as inputs to the closure computations"
+  ],
+  "predictions": {
+    "P1": "every graph in all three groups satisfies ceil(cvw/2) <= PC_bal <= floor(cvw/2) + 1 (so PC_bal = ceil(cvw/2) exactly when cvw is odd)",
+    "P2": "every graph has PC_Rstd = max(maxdegree, PC_bal)",
+    "P3": "every graph has max(maxdegree, PC_bal) <= PC_SC <= max(maxdegree, PC_bal) + 1 and the same for PC_SB",
+    "P4": "PC_bal does not depend on where the odd charge sits: on the cubic graphs with at most 10 vertices and the 141 small graphs it is the same with charge at vertex 0, at the last vertex, and at vertices 0, 1, 2",
+    "P5": "both ends of the sandwich occur among graphs of even carving width, so neither ceil(cvw/2) nor floor(cvw/2) + 1 alone is the degree"
+  },
+  "primary_observable": "per graph: group, n, m, maxdegree, cvw, PC_bal, PC_Rstd, PC_SC, PC_SB",
+  "cheapest_meaningful_control": "(1) With even total charge (vertices 0 and 1 charged) the balanced closure never refutes up to floor(cvw/2) + 2 on the P4 subset. (2) P1 with floor(cvw/2) + 1 replaced by ceil(cvw/2) (exactness) must fail on some even-width graph, as P5 says. (3) check_result.py's linear-algebra closure over F3 must agree with the signed closure on every small instance it covers.",
+  "independent_check": "check_result.py recomputes carving width by a different algorithm (memoized top-down threshold search) on graphs with at most 12 vertices; recomputes PC_bal and PC_SC by plain sparse linear algebra over F3 (no binomial structure assumed) on every graph with at most 12 edges up to degree 4; recounts the predictions from the raw rows",
+  "decision_or_followup_rule": "A signal is P1-P5 holding on every graph. If P1 fails on any graph, record the counterexample and stop the epic's theorem as stated (ticket B is restricted to what survives). If only P3 or P4 fails, B proceeds without that part.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "the cubic graphs on 4-10 vertices, then the held-out sample",
+  "stop_rule": "Stop after the declared roster or the budget; stop early only on a generator, closure or control failure.",
+  "notes": [
+    "Pilot before this freeze (recorded honestly): on the pilot roster above, plus K4, prism, K33, cube, Wagner, cubic10, Petersen, K5, K6, 3x3 grid, C6, K34, K45, K55 and Heawood, PC_bal satisfied P1 on all 944 + 15 graphs; even-width graphs split 56/226 (cvw 4), 71/284 (cvw 6), 1/2 (cvw 8) between the two ends. On K55, PC_bal = PC_Rstd = 6 and PC_SC = 7; on K45, 6, 6, 6; on Heawood, 3, 3, 4. P1 on the pilot roster is therefore a replication; the held-out sample and the named graphs Q4, Moebius-Kantor, K44, K7 and the 3x4 grid are new. P2-P4 were not piloted.",
+    "The proof outline (closure model; tangle lower bound with Robertson-Seymour duality, Graph Minors X (3.5) and Geelen-Gerards-Robertson-Whittle 2006 Theorem 3.2; carving upper bound) was worked out before this freeze and is ticket B's subject."
+  ],
+  "nonclaims": [
+    "Finite computation on the declared roster; general statements belong to ticket B.",
+    "No exact rule for even carving width is claimed.",
+    "No claim about native structure, distance or physics."
+  ]
+}

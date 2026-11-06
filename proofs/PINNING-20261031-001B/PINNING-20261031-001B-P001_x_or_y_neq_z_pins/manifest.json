@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINNING-20261031-001B-P001",
+  "canonical_id": "PINNING-20261031-001B-P001",
+  "kind": "proof",
+  "ticket": "PINNING-20261031-001B",
+  "proof": "PINNING-20261031-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "x or (y != z) pins, so it is NP-complete on cubic systems",
+  "status": "Proved",
+  "claim": "The asymmetric knot x or (y != z), with signs and any order of places (12 relations), has a pinning piece with four internal points and five lines (the skeleton that also pins the Fibonacci law and parity), a pinned line x = 0 is a disequality, and a full piece exists; by the pinning theorem of ticket A and Schaefer, deciding it on cubic systems is NP-complete, so its failing cubic systems are coNP-complete to recognise. Checked: the pieces by enumeration, the reduction on 80 instances (cubic, simple, same solvability), failures on small cubic systems (exhaustive n = 4, 5; sampled n = 6, 8, 10), controls.",
+  "dependencies": [
+    "PINNING-20261031-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A piece that does not accept what is claimed, or a reduction instance with different solvability.",
+    "No failing cubic system for x or (y != z)."
+  ],
+  "lineage": {
+    "home_scope": "PINNING-20261031-001",
+    "epic_path": [
+      "PINNING-20261031-001"
+    ],
+    "parents": [
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/pin_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json": "1ff4c941d6b0da079e7f8cc81fa3b7f56e0b55b34b44fb8cb7137b3404301a73",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json": "de7599c4aa49df6b39bbd8258153bc3dd33ebcd660633c77e05e492045b54076",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/pin_lib.py": "3d319e1775b3f8647b60928544a665831f10b4e5ddc170c77ed1f1a7ce62bf92"
+  },
+  "paths": {
+    "manifest": "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/manifest.json",
+    "identity": "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/identity.json",
+    "directory": "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins",
+    "proof": "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/proof.md",
+    "result": "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/result.json",
+    "check": "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "x_or_y_neq_z_np_complete_cubic_shown": true
+  },
+  "foundation_claim_scope": "An NP-completeness theorem for one three-place law on cubic systems.",
+  "validation": {
+    "status": "checked: pieces by enumeration, reduction end to end, census of failures, controls; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "the reduction pattern is standard; the explicit pieces for this law: no overlap found yet",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31."
+  }
+}

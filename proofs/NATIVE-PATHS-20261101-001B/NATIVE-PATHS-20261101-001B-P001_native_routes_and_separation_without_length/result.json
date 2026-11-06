@@ -1,0 +1,428 @@
+{
+ "artifact_id": "NATIVE-PATHS-20261101-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "passed",
+     "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 every nontrivial 3-edge cut of the ten knot's spaces is a proper splice cut (three distinct ports and slots) or the shift of a nontrivial 2-edge cut (a vertex carries two of its edges; removing it from its shore leaves the 2-edge cut); every proper cut's point side accepts two states whatever its size": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "2-edge cuts": 3,
+     "proper point sides (points, states)": [
+      [
+       21,
+       2
+      ]
+     ],
+     "proper splice cuts (plain, twisted)": [
+      1,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      6,
+      6
+     ]
+    },
+    "Fano": {
+     "2-edge cuts": 0,
+     "proper point sides (points, states)": [],
+     "proper splice cuts (plain, twisted)": [
+      0,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      0,
+      0
+     ]
+    },
+    "chain of 2": {
+     "2-edge cuts": 0,
+     "proper point sides (points, states)": [
+      [
+       7,
+       2
+      ]
+     ],
+     "proper splice cuts (plain, twisted)": [
+      1,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      0,
+      0
+     ]
+    },
+    "chain of 3": {
+     "2-edge cuts": 0,
+     "proper point sides (points, states)": [
+      [
+       7,
+       2
+      ],
+      [
+       13,
+       2
+      ]
+     ],
+     "proper splice cuts (plain, twisted)": [
+      2,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      0,
+      0
+     ]
+    },
+    "chain of 4": {
+     "2-edge cuts": 0,
+     "proper point sides (points, states)": [
+      [
+       7,
+       2
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       19,
+       2
+      ]
+     ],
+     "proper splice cuts (plain, twisted)": [
+      3,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      0,
+      0
+     ]
+    },
+    "cycle of 3 blocks": {
+     "2-edge cuts": 3,
+     "proper point sides (points, states)": [],
+     "proper splice cuts (plain, twisted)": [
+      0,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      6,
+      6
+     ]
+    },
+    "cycle of 5 blocks": {
+     "2-edge cuts": 10,
+     "proper point sides (points, states)": [],
+     "proper splice cuts (plain, twisted)": [
+      0,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      20,
+      20
+     ]
+    },
+    "cycle of 7 blocks": {
+     "2-edge cuts": 21,
+     "proper point sides (points, states)": [],
+     "proper splice cuts (plain, twisted)": [
+      0,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      42,
+      42
+     ]
+    },
+    "star of 4": {
+     "2-edge cuts": 0,
+     "proper point sides (points, states)": [
+      [
+       7,
+       2
+      ]
+     ],
+     "proper splice cuts (plain, twisted)": [
+      3,
+      0
+     ],
+     "shifts (plain, twisted)": [
+      0,
+      0
+     ]
+    },
+    "twisted cube": {
+     "2-edge cuts": 3,
+     "proper point sides (points, states)": [
+      [
+       7,
+       2
+      ],
+      [
+       14,
+       2
+      ]
+     ],
+     "proper splice cuts (plain, twisted)": [
+      3,
+      3
+     ],
+     "shifts (plain, twisted)": [
+      6,
+      6
+     ]
+    }
+   },
+   "pass": true
+  },
+  "2 twist rule: a shift is twisted (point side {v, v-bar} with v != 000) exactly when the shore that absorbed the moved vertex accepts disequality across the 2-edge cut": {
+   "info": {
+    "3-cycle spliced into Fano": [
+     6,
+     6
+    ],
+    "Fano": [
+     0,
+     0
+    ],
+    "chain of 2": [
+     0,
+     0
+    ],
+    "chain of 3": [
+     0,
+     0
+    ],
+    "chain of 4": [
+     0,
+     0
+    ],
+    "cycle of 3 blocks": [
+     6,
+     6
+    ],
+    "cycle of 5 blocks": [
+     20,
+     20
+    ],
+    "cycle of 7 blocks": [
+     42,
+     42
+    ],
+    "star of 4": [
+     0,
+     0
+    ],
+    "twisted cube": [
+     6,
+     6
+    ]
+   },
+   "pass": true
+  },
+  "3 fixed by the space: in all ten spaces the proper splice cuts are pairwise non-crossing and cross no 2-edge cut; every crossing pair involves a shift or two 2-edge cuts (the crossing test fires on those)": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 6,
+     "shift-proper": 0,
+     "shift-shift": 21
+    },
+    "Fano": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 0,
+     "shift-proper": 0,
+     "shift-shift": 0
+    },
+    "chain of 2": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 0,
+     "shift-proper": 0,
+     "shift-shift": 0
+    },
+    "chain of 3": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 0,
+     "shift-proper": 0,
+     "shift-shift": 0
+    },
+    "chain of 4": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 0,
+     "shift-proper": 0,
+     "shift-shift": 0
+    },
+    "cycle of 3 blocks": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 6,
+     "shift-proper": 0,
+     "shift-shift": 21
+    },
+    "cycle of 5 blocks": {
+     "2cut-2cut": 5,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 100,
+     "shift-proper": 0,
+     "shift-shift": 250
+    },
+    "cycle of 7 blocks": {
+     "2cut-2cut": 35,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 490,
+     "shift-proper": 0,
+     "shift-shift": 1127
+    },
+    "star of 4": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 0,
+     "shift-proper": 0,
+     "shift-shift": 0
+    },
+    "twisted cube": {
+     "2cut-2cut": 0,
+     "proper-2cut": 0,
+     "proper-proper": 0,
+     "shift-2cut": 0,
+     "shift-proper": 6,
+     "shift-shift": 6
+    }
+   },
+   "pass": true
+  },
+  "4 the decomposition is unchanged under relabelling points and reordering lines (two random relabellings of three spaces)": {
+   "info": {
+    "3-cycle spliced into Fano": [
+     true,
+     true
+    ],
+    "chain of 3": [
+     true,
+     true
+    ],
+    "cycle of 3 blocks": [
+     true,
+     true
+    ]
+   },
+   "pass": true
+  },
+  "5 in cycles of 3, 5 and 7 Fano blocks every arc of m units (1 <= m < k, every start) accepts exactly x + y = m (mod 2) on (port colour, slot value): a route through atoms carries its length mod 2": {
+   "info": {
+    "cycle of 3 blocks": {
+     "disequality": 3,
+     "equality": 3
+    },
+    "cycle of 5 blocks": {
+     "disequality": 10,
+     "equality": 10
+    },
+    "cycle of 7 blocks": {
+     "disequality": 21,
+     "equality": 21
+    }
+   },
+   "pass": true
+  },
+  "6 two routes and separation: for every pair of units and every non-empty set J of junctions (cycles of 3, 5, 7 blocks) the system with J cut is colourable and the units' port colours are unrelated (a product) exactly when J meets both routes; otherwise they carry the parity of the intact route; the two routes' parities differ and the closed cycle fails": {
+   "info": {
+    "cycle of 3 blocks": {
+     "back route intact: its parity": 5,
+     "both routes cut: product": 9,
+     "closed_cycle_fails": true,
+     "forward route intact: its parity": 7
+    },
+    "cycle of 5 blocks": {
+     "back route intact: its parity": 42,
+     "both routes cut: product": 180,
+     "closed_cycle_fails": true,
+     "forward route intact: its parity": 88
+    },
+    "cycle of 7 blocks": {
+     "back route intact: its parity": 219,
+     "both routes cut: product": 1827,
+     "closed_cycle_fails": true,
+     "forward route intact: its parity": 621
+    }
+   },
+   "pass": true
+  },
+  "7 counting the witnesses the relations quantify away: each Fano unit has 5 colourings for each accepted pair and 0 otherwise; an arc of m units (m = 1, 2, 3) has 5^m for each accepted pair": {
+   "info": {
+    "arc of 1 units of the 5-cycle": {
+     "(0, 0)": 0,
+     "(0, 1)": 5,
+     "(1, 0)": 5,
+     "(1, 1)": 0
+    },
+    "arc of 2 units of the 5-cycle": {
+     "(0, 0)": 25,
+     "(0, 1)": 0,
+     "(1, 0)": 0,
+     "(1, 1)": 25
+    },
+    "arc of 3 units of the 5-cycle": {
+     "(0, 0)": 0,
+     "(0, 1)": 125,
+     "(1, 0)": 125,
+     "(1, 1)": 0
+    },
+    "unit 0 of the 3-cycle": {
+     "(0, 0)": 0,
+     "(0, 1)": 5,
+     "(1, 0)": 5,
+     "(1, 1)": 0
+    },
+    "unit 1 of the 3-cycle": {
+     "(0, 0)": 0,
+     "(0, 1)": 5,
+     "(1, 0)": 5,
+     "(1, 1)": 0
+    },
+    "unit 2 of the 3-cycle": {
+     "(0, 0)": 0,
+     "(0, 1)": 5,
+     "(1, 0)": 5,
+     "(1, 1)": 0
+    }
+   },
+   "pass": true
+  },
+  "8 control: the even cycle of 4 Fano blocks is colourable, and its two routes between any two units carry the same parity, which the closed cycle keeps": {
+   "info": {
+    "colourable": true,
+    "routes agree for every pair": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Routes in the knot's spaces are fixed by the space and carry at most one bit. Let H be a knot's space. (1) Kinds of 3-edge cut: a nontrivial 3-edge cut is either a shift of a nontrivial 2-edge cut (one vertex carries two of its edges; removing that vertex from its shore leaves the 2-edge cut) or a proper splice cut (three distinct ports and three distinct slots); a shift is twisted iff the shore that absorbed the moved vertex accepts disequality across the 2-edge cut. (2) Fixed by the space: in ten knot's spaces the proper splice cuts are pairwise non-crossing and cross no 2-edge cut, and every crossing pair of nontrivial cuts involves a shift or two 2-edge cuts of one cycle of units; so the parts and the cuts between them form one decomposition determined by the incidence graph (unchanged under relabelling), and a route between two parts, through hubs or through 2-edge cuts, is fixed by the space, not chosen by an observer. (3) What routes carry: in a cycle of k Fano blocks (k = 3, 5, 7) an arc of m units accepts exactly x + y = m (mod 2) on its port colour and slot value; between two units there are exactly two routes, which carry opposite parities because k is odd, and the space fails because they disagree (the even cycle of 4 blocks, a control, is colourable and its routes agree). Across a proper splice cut each side acts as one point or one line whatever it contains (A), so a route through a hub carries nothing about what lies beyond it. (4) Separation: for every pair of units and every non-empty set J of junctions of the cycles of 3, 5 and 7 blocks, H with J's incidences cut is colourable, and the joint relation of the two units' port colours is a product exactly when J meets both routes; otherwise it is the parity of the route J leaves intact. (5) Counting the witnesses that relations quantify away, every Fano unit has 5 colourings for each accepted pair and an arc of m units 5^m (m <= 3 by enumeration), so a counted length exists, as a count of hidden witnesses rather than a relation. (6) Reading: every route between parts is a two-place parity (it identifies its two channels up to sign) or passes a hub (equality on three channels); neither is a complete contact, so under the program's definitions these are routes of a declared substrate, separable by cutting them, not native paths composed of complete contacts, and no relation along them gives an extended distance.",
+ "kind": "proof",
+ "proof": "NATIVE-PATHS-20261101-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "NATIVE-PATHS-20261101-001B"
+}

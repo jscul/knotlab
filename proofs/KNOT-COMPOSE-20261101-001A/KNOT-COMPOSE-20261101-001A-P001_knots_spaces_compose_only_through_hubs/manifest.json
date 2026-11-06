@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "KNOT-COMPOSE-20261101-001A-P001",
+  "canonical_id": "KNOT-COMPOSE-20261101-001A-P001",
+  "kind": "proof",
+  "ticket": "KNOT-COMPOSE-20261101-001A",
+  "proof": "KNOT-COMPOSE-20261101-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Knot's spaces compose only through hubs",
+  "status": "Proved",
+  "claim": "The knot's spaces (connected non-2-colourable cubic systems) compose only through hubs. (i) Balance: every 3-edge cut of a cubic incidence graph has a point side, whose three cut edges all leave from its points, and a line side. (ii) A composition across a cut fails iff the two sides' accepted relations on the channels are disjoint. (iii) A relation on k channels whose (k-1)-place projections are full has at least 2^(k-1) states, with equality only for a parity coset (an independent set of size 2^(k-1) in the k-cube is a colour class); so two sides that both accept knots fail together only as complementary parity cosets. (iv) Across every nontrivial 3-edge cut of a knot's space the line side accepts exactly not-all-equal on its slots and the point side exactly equality on its ports, complementary halves of {0,1}^3 (point lemma of THREEFOLD-AMPLITUDE); a double cut of a knot's space accepts a twelve-class knot or no knot, and two twelve-class sides never fail together (12 + 12 > 16). So a composition of knot's spaces always meets a hub (equality fan-out), and a hub-free failing composition is a parity one. (v) The transpose of a knot's space is a knot's space (sign-nonsingularity is transpose-invariant) and exchanges the two sides of every 3-edge cut, the knot side with the hub side.",
+  "dependencies": [
+    "THREEFOLD-AMPLITUDE-20261030-001Z",
+    "THREEFOLD-SPACES-20261030-001Z",
+    "FOUR-PLACE-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A 3-edge cut of a cubic incidence graph with cut edges leaving both shores' points.",
+    "A k-channel relation with full (k-1)-projections and 2^(k-1) states that is not a parity coset.",
+    "A nontrivial 3-edge cut of a knot's space whose sides are not exactly not-all-equal and equality.",
+    "A failing join of two knot sides that is not a parity composition."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-COMPOSE-20261101-001",
+    "epic_path": [
+      "KNOT-COMPOSE-20261101-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json": "82ee308028fe2888226a4355fd1322e1ec08fe15a89d41e1630c22a562bd155a",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json": "631005617ff91dd7fa57f5d615aeeed2f27ab4700065c25e58460ee63b1fb0f3",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "7d4aea1e0994189c09c1d9f84db61ad21aed7fde23283db4dddc1ebafc183837",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py": "72a12e521ab7a616cecad61aac31c17ac7477878545e5cfdcc608eeac4e5ad68",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "5d89c5ac8100c1eb2a5e68492fa9dbd9d05251b08348db7a5bbd597c4428f8c9",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json",
+    "identity": "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/identity.json",
+    "directory": "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs",
+    "proof": "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/proof.md",
+    "result": "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json",
+    "check": "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "knot_spaces_hub_composition_shown": true
+  },
+  "foundation_claim_scope": "A structural theorem on how the knot's spaces decompose across cuts; no counting claim beyond the cited amplitudes.",
+  "validation": {
+    "status": "checked: balance on every 3-edge cut of four knot's spaces; side relations at every nontrivial 3-edge cut; the complementarity lemma for k <= 4 by enumeration; double cuts and cross-joins; a parity control; the transpose; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "Tight cuts, the splice calculus and the point lemma are from THREEFOLD-SPACES and THREEFOLD-AMPLITUDE (on Lov\u00e1sz-Plummer and Robertson-Seymour-Thomas); the complementarity lemma is elementary; the reading that knot's spaces meet only through hubs and that hub-free failure is parity was found in no source checked.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01."
+  }
+}

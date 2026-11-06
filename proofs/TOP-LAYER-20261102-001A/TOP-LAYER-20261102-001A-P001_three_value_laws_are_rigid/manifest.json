@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TOP-LAYER-20261102-001A-P001",
+  "canonical_id": "TOP-LAYER-20261102-001A-P001",
+  "kind": "proof",
+  "ticket": "TOP-LAYER-20261102-001A",
+  "proof": "TOP-LAYER-20261102-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Every law on three values that composes like cycles is rigid",
+  "status": "Proved",
+  "claim": "Every law on three values that composes like cycles is rigid on the substrates tested. All 531441 Mal'tsev operations on three values give laws that compose like cycles (BEYOND-TWO B); the 1020 non-simple ones fall into 185 classes up to relabelling. For every class: (1) every three-place knot (all subuniverses of A^3, enumerated exhaustively) is pulled back from a two-element abelian section of its ranges, and every such pull-back is a knot; (2) random systems of three-place knots on the 73 connected cubic substrates with at most 8 points rarely fail globally (a variable confined to a two-element block shortens the parity of a line that reads its top bit), and every global failure found is rigid: after any line is removed only ties remain; (3) on random 4-regular substrates with 5 to 8 points, with four-place knots pulled back from two-element sections, every global failure found is rigid. The same holds for Z3 and for 300 sampled classes of simple three-value laws (sections of two or three elements). Every abelian section here has one layer; ticket C proves that this forces rigidity.",
+  "dependencies": [
+    "BEYOND-TWO-20261101-001Z",
+    "MUTUAL-SELECTION-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A three-place knot of a non-simple three-value Mal'tsev law not pulled back from a two-element abelian section.",
+    "A global failure of such a law on a tested substrate that keeps a knot after a line is removed."
+  ],
+  "lineage": {
+    "home_scope": "TOP-LAYER-20261102-001",
+    "epic_path": [
+      "TOP-LAYER-20261102-001"
+    ],
+    "parents": [
+      "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json",
+      "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json",
+      "research/MUTUAL-SELECTION-20261031-001C/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json": "bf92df57b62ac432a80d3e1de8ef11527e779084beb1d067be4ab53e8dbaf47a",
+    "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json": "7f2de70ff60ab553d7cd33e1516d20528749cdfc158a0362465110e68340c8ea",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07",
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "dce42dbefe8c23386bf8b7567ff010e427dcc0acd1685bb15e50b0b2da51ca15"
+  },
+  "paths": {
+    "manifest": "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/manifest.json",
+    "identity": "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/identity.json",
+    "directory": "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid",
+    "proof": "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/proof.md",
+    "result": "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/result.json",
+    "check": "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "three_value_rigidity_checked": true
+  },
+  "foundation_claim_scope": "All non-simple Mal'tsev laws on three values (exhaustive at three places), and a sample of the simple ones.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: exhaustive enumeration of three-place relations for 185 classes; random systems on cubic census and random 4-regular substrates; a sample of simple laws; no human or external review",
+    "novelty": "New here; elementary given ticket C."
+  }
+}

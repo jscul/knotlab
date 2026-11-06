@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "artifact_id": "MALTSEV-CONDITIONS-20261021-001B-P001",
+  "canonical_id": "MALTSEV-CONDITIONS-20261021-001B-P001",
+  "kind": "proof",
+  "ticket": "MALTSEV-CONDITIONS-20261021-001B",
+  "proof": "MALTSEV-CONDITIONS-20261021-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Composing like cycles is a condition on tops, not a classical Mal'tsev condition",
+  "status": "Proved",
+  "claim": "Composing like cycles is not a classical Mal'tsev condition. (1) K4, the lift of x+y+z=0 over Z3 with the tuple (2,2,2) removed, has explicit Hagemann-Mitschke terms for 3-permutability and Gumm terms for congruence modularity, but no Mal'tsev polymorphism. (2) Restriction lemma: linear identities among a shadow's polymorphisms pass to its fibre clone, and idempotent identities pass to congruence classes. (3) K6, the shadow of the Z3 law on 'not exactly two ones', composes like cycles, yet its polymorphisms generate a variety that is neither congruence modular nor n-permutable for any n, because its fibre clone has only conjunctions and constants. (4) So composing like cycles is incomparable with permutability, n-permutability and modularity; x+y+z=0 over Z6 has a Mal'tsev polymorphism and fails elimination. (5) Every difference law that composes like cycles, every lift of one under the lift theorem's hypotheses, and every shadow of one in which equality of first components is pp-definable has a ternary polymorphism that is Mal'tsev modulo each range's unique maximal pp-definable equivalence. Open: whether every law that composes like cycles has one (Conjecture 6).",
+  "dependencies": [
+    "MALTSEV-CONDITIONS-20261021-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": [
+      "uniform-family-theorem"
+    ]
+  },
+  "failure_conditions": [
+    "An explicit Hagemann-Mitschke or Gumm term for K4 is not a polymorphism of K4 or fails an identity, or K4 has a Mal'tsev polymorphism.",
+    "A fibre restriction of a polymorphism of K6 does not preserve 'not exactly two ones', or that relation has a ternary or 4-ary polymorphism other than a conjunction or a constant.",
+    "K6's law has a system whose constrained sets differ from those of x+y+z=0 over Z3.",
+    "x+y+z=0 over Z6, or the Z2xZ2 law with its two line congruences, composes like cycles.",
+    "A lift or shadow covered by Theorem 5 has a range on which its operation is not Mal'tsev modulo the top.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "MALTSEV-CONDITIONS-20261021-001",
+    "epic_path": [
+      "MALTSEV-CONDITIONS-20261021-001"
+    ],
+    "parents": [
+      "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/MATROID-CONVERSE-20261021-001B/MATROID-CONVERSE-20261021-001B-P001_top_quotients/manifest.json",
+      "proofs/DIAGONAL-LEMMA-20261021-001B/DIAGONAL-LEMMA-20261021-001B-P001_shadow_converse/manifest.json",
+      "experiments/MALTSEV-CONDITIONS-20261021-001A/MALTSEV-CONDITIONS-20261021-001A-E001_conditions_census/contract.json",
+      "artifacts/MALTSEV-CONDITIONS-20261021-001A/MALTSEV-CONDITIONS-20261021-001A-E001_conditions_census/result.json",
+      "artifacts/MALTSEV-CONDITIONS-20261021-001A/MALTSEV-CONDITIONS-20261021-001A-E001_conditions_census/raw_rows.jsonl"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/manifest.json": "cc3f8630378c8776131a86858bef3e16aadb0846035e1992a3fc60ed4cf2fd48",
+    "proofs/MATROID-CONVERSE-20261021-001B/MATROID-CONVERSE-20261021-001B-P001_top_quotients/manifest.json": "ca37e54a7476f5ccb833a4b0db0a31248923ccba04d519d5bb7f54fbd31a3cec",
+    "proofs/DIAGONAL-LEMMA-20261021-001B/DIAGONAL-LEMMA-20261021-001B-P001_shadow_converse/manifest.json": "20b53cf2af040acd16c5c6367dd982d8e6a22e3ba855e74219a286fcc521c1b2",
+    "experiments/MALTSEV-CONDITIONS-20261021-001A/MALTSEV-CONDITIONS-20261021-001A-E001_conditions_census/contract.json": "bd577efadd0f1bb36ddfe6b0dd3dcaefc4bc3d24b22227d90ea161171de3b7fb",
+    "artifacts/MALTSEV-CONDITIONS-20261021-001A/MALTSEV-CONDITIONS-20261021-001A-E001_conditions_census/result.json": "eca5bb561fa6166cb1bffbc101db8e12b1a9cfb2fcb5dea8ac46dc8fabba7c10",
+    "artifacts/MALTSEV-CONDITIONS-20261021-001A/MALTSEV-CONDITIONS-20261021-001A-E001_conditions_census/raw_rows.jsonl": "dfdef7416a041ceb8fc1a289ac3a14a135f2f6f2a2d6a1602a285ed9fbb9b0e8"
+  },
+  "paths": {
+    "manifest": "proofs/MALTSEV-CONDITIONS-20261021-001B/MALTSEV-CONDITIONS-20261021-001B-P001_tops_not_modularity/manifest.json",
+    "identity": "proofs/MALTSEV-CONDITIONS-20261021-001B/MALTSEV-CONDITIONS-20261021-001B-P001_tops_not_modularity/identity.json",
+    "directory": "proofs/MALTSEV-CONDITIONS-20261021-001B/MALTSEV-CONDITIONS-20261021-001B-P001_tops_not_modularity",
+    "proof": "proofs/MALTSEV-CONDITIONS-20261021-001B/MALTSEV-CONDITIONS-20261021-001B-P001_tops_not_modularity/proof.md",
+    "result": "proofs/MALTSEV-CONDITIONS-20261021-001B/MALTSEV-CONDITIONS-20261021-001B-P001_tops_not_modularity/result.json",
+    "check": "proofs/MALTSEV-CONDITIONS-20261021-001B/MALTSEV-CONDITIONS-20261021-001B-P001_tops_not_modularity/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "k4_three_permutable_and_modular_proved": true,
+    "restriction_lemma_proved": true,
+    "k6_not_modular_not_permutable_proved": true,
+    "incomparability_with_classical_conditions_proved": true,
+    "maltsev_on_tops_for_known_families_proved": true,
+    "maltsev_on_tops_conjecture_proved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Which algebraic (Mal'tsev) conditions laws that compose like cycles satisfy. No native recurrence, composed topology in the protected sense, path, metric distance or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies the explicit Hagemann-Mitschke and Gumm terms for K4, the fibre restrictions of 20 random polymorphisms of K6, the exhaustive two-element clone of 'not exactly two ones' (9 ternary, 17 quaternary operations) with no Day or Hagemann-Mitschke chain, K6's constrained sets against Z3 on 300 random systems, failing systems for Z6 and for Z2xZ2 with its line congruences, parity's free sets for Z2xZ2 alone on 200 systems, the Theorem 5 operations and pp-definitions, the failure of the shadow operation for Z3 paired with itself, the census witnesses for L223 and L233, and agreement with the census; four controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and randomized checks; the Hagemann-Mitschke, Day and Gumm characterizations are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta: the incomparability of composing like cycles with the classical Mal'tsev conditions and the notion of being Mal'tsev modulo the tops are new to the program; the restriction lemma is routine; the notion resembles difference terms (Mal'tsev modulo a commutator), and that literature was not searched for it.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

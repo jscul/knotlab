@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TWIST-3D-20261025-001A-P001",
+  "canonical_id": "TWIST-3D-20261025-001A-P001",
+  "kind": "proof",
+  "ticket": "TWIST-3D-20261025-001A",
+  "proof": "TWIST-3D-20261025-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Twists add nothing to counting laws in three dimensions",
+  "status": "Proved",
+  "claim": "On ordered triangulations, a counting law with one bit per edge, any of the 255 triangle rules read in vertex order and any tetrahedron rules for the two orientations satisfies the ordered 2-3 and 1-4 identities with some constants exactly when both tetrahedron rules equal one of the seven symmetric laws (all 0, all 1, all equal, even cocycles, odd cocycles, even or odd, free) contained in the labellings compatible with the triangle rule: 354 laws, none using an asymmetric part of its rule or orientation. So invariant counts are 1, 2, |H1(M; Z2)|/2 or |H1(M; Z2)|, and each twisted Fibonacci knot carries only one constant law and one cocycle law.",
+  "dependencies": [],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A triangle rule and tetrahedron rules satisfying every ordered identity that are not one of the seven symmetric laws, or with different rules for the two orientations.",
+    "One of the seven laws contained in the compatible labellings that fails an ordered identity.",
+    "A sampled ordered triangulation whose counts differ from the stated cocycle counts.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "TWIST-3D-20261025-001",
+    "epic_path": [
+      "TWIST-3D-20261025-001"
+    ],
+    "parents": [
+      "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json",
+      "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json": "9f298e54aae39808118ecd96c19d0e425d1f4402fafd04ef56c063a039a63be6",
+    "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/manifest.json": "9635719f2fa11322f3bd6199bf1b14fbf162db169b0d1d5b185584921095f21b"
+  },
+  "paths": {
+    "manifest": "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json",
+    "identity": "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/identity.json",
+    "directory": "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting",
+    "proof": "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/proof.md",
+    "result": "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/result.json",
+    "check": "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "twists_add_nothing_shown": true
+  },
+  "foundation_claim_scope": "Ordered triangulations of closed orientable three-manifolds, one bit per edge, counting laws; exhaustive over the 255 triangle rules. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) runs a complete search with unit propagation for all 255 triangle rules, with one and with two orientation rules, finds exactly the 354 expected laws, evaluates each directly, and confirms the cocycle counts on 60 sampled ordered triangulations across nine homology types; three controls. No human or external review",
+    "level": "V1 prose proof with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

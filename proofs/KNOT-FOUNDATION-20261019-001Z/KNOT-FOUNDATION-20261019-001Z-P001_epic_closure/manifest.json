@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "artifact_id": "KNOT-FOUNDATION-20261019-001Z-P001",
+  "canonical_id": "KNOT-FOUNDATION-20261019-001Z-P001",
+  "kind": "proof",
+  "ticket": "KNOT-FOUNDATION-20261019-001Z",
+  "proof": "KNOT-FOUNDATION-20261019-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the knot foundation epic",
+  "status": "Proved",
+  "claim": "Ledger closing KNOT-FOUNDATION-20261019-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001A",
+    "KNOT-FOUNDATION-20261019-001C",
+    "KNOT-FOUNDATION-20261019-001D",
+    "KNOT-FOUNDATION-20261019-001E"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "cnf-arity"
+  ],
+  "evidence_modes": [
+    "audit"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound proof manifest changes or is not Proved.",
+    "A cited decision note or the write-up is missing.",
+    "A ticket of the epic lacks a terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-FOUNDATION-20261019-001",
+    "epic_path": [
+      "KNOT-FOUNDATION-20261019-001"
+    ],
+    "parents": [
+      "proofs/KNOT-FOUNDATION-20261019-001A/KNOT-FOUNDATION-20261019-001A-P001_relational_knot_boundary/manifest.json",
+      "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-FOUNDATION-20261019-001A/KNOT-FOUNDATION-20261019-001A-P001_relational_knot_boundary/manifest.json": "b2922b9471f94e731cda965ac0fd93e953d5c2e2577a3d95d4790d2b3e8cdd24",
+    "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json": "10b44105465401c686a5b6c58944163462b1e348c626c948507e4421ef618af5"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure",
+    "proof": "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/result.json",
+    "check": "proofs/KNOT-FOUNDATION-20261019-001Z/KNOT-FOUNDATION-20261019-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": true,
+    "three_cnf_boundary_proved": true,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": true,
+    "two_cnf_three_cnf_knot_boundary_proved": true,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "closure_ledger_only": true
+  },
+  "thesis_alignment": {
+    "protected_thesis": "native-3-cnf-positive-native-2-cnf-negative",
+    "two_cnf_native_emergence": "proved_absent",
+    "three_cnf_native_emergence": "proved_present",
+    "two_cnf_irreducible_joint_contact": "proved_absent",
+    "two_cnf_loop_erasure_contact_loss": "proved_absent",
+    "three_cnf_irreducible_joint_contact": "proved_present",
+    "three_cnf_loop_erasure_contact_loss": "proved_present",
+    "two_cnf_atomic_logical_topology": "proved_absent",
+    "three_cnf_atomic_logical_topology": "proved_present",
+    "irreducible_joint_contact_checked": true,
+    "loop_erasure_contact_loss_checked": true,
+    "encoding_firewall_checked": true,
+    "bare_semantics_only_is_terminal": false,
+    "thesis_status": "supported",
+    "scope": "Inherited from KNOT-FOUNDATION-20261019-001E-P001 under the forgetting reading of K1-K3; this closure makes no new claim."
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to Proved parents; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved parents, cited notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "known-overlap-found for conclusions 1, 2, 4 and 5; candidate-local-delta for conclusion 3.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-19."
+  }
+}

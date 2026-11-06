@@ -1,0 +1,49 @@
+{
+ "artifact_id": "PLANAR-THEOREM-20261102-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json": "passed",
+     "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/manifest.json": "Proved",
+     "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 potentials: on 30 plane knot spaces at every removal, integrating the matching against a reference from the hole gives well defined integer potentials, one per matching; a point's value relative to the hub is the parity of its potential; and the set of potentials is closed under rounded midpoints": {
+   "info": {
+    "heights well defined": 325,
+    "one potential per matching (solutions / 2)": 325,
+    "parity of the potential = value relative to the hub": 325,
+    "potentials closed under rounded midpoints (L-natural convex)": 325,
+    "removals": 325
+   },
+   "pass": true
+  },
+  "2 the staircase: for every gluing line sharing no face with the removed line and showing all three states, the two non-odd ports of each state differ by one potential value on that state and by the neighbouring value off it; and when a port's potential is constant (the port tied to the hub), the other two ports take one point per state, forming a chain with that port's state in the middle": {
+   "info": {
+    "(state, gluing line, removal) triples": 4464,
+    "gluing lines with a port tied to the hub": 877,
+    "non-odd difference: one value on the state, the neighbouring value off it": 4464,
+    "the other two ports: one point per state, a chain, the tied port's state in the middle": 877
+   },
+   "pass": true
+  },
+  "3 the theorem's conclusion, on 42 plane knot spaces (the 30 above and 12 grown spaces of 16, 18 and 20 points): every pinning of the gluing pattern by the hub and a near point is of type (i) or (ii)": {
+   "info": {
+    "(i) hub tied to a non-odd port": 5410,
+    "(ii) two-port knot, excluded pattern one step from the pinned one": 3610
+   },
+   "pass": true
+  }
+ },
+ "claim": "The access lemma is a theorem. Let H be a plane knot space with Kasteleyn signs, M a removed line, and L a gluing line with six port patterns. (1) Potentials: fix a reference matching and integrate, across each edge of the line-face incidence graph, the difference between a matching and the reference, from the hole of M's faces (potential 0). This gives one integer potential per matching on every point. The potentials are exactly the integer solutions of difference constraints, hence closed under rounded midpoints (L-natural convex), and a point's value relative to the hub is the parity of its potential. (2) Staircase: the two non-odd ports of each state of L differ in potential by one value on that state and by the neighbouring value off it. If a port is tied to the hub, its potential is constant and the other two ports take one point per state, forming a chain with that port's state in the middle. (3) The access lemma, by rounded midpoints of a pinning point with points of the other states: (i) if the hub is tied to a port, no pinning by the hub and a near point selects the pattern whose odd port is that port; (ii) if the hub is tied to no port, the non-odd ports' common potential is constant off the pinned state, so the hub and those two ports form a near knot excluding a pattern one step from the pinned one. With the route lemma of PLANAR-COMPOSE A, no pinned-and-separated three-point knot through the hub is ever new at a six-pattern removal on a plane near side, whatever the far side. Checked: potentials and staircase on 30 plane spaces (325 removals, 4464 states, 877 tied chains); the lemma's conclusion on 42 plane spaces (9020 pinnings).",
+ "kind": "proof",
+ "proof": "PLANAR-THEOREM-20261102-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PLANAR-THEOREM-20261102-001A"
+}

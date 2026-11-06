@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "artifact_id": "CLASS4-LOCALITY-20261028-001Z-P001",
+  "canonical_id": "CLASS4-LOCALITY-20261028-001Z-P001",
+  "kind": "proof",
+  "ticket": "CLASS4-LOCALITY-20261028-001Z",
+  "proof": "CLASS4-LOCALITY-20261028-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the class-4 locality epic",
+  "status": "Proved",
+  "claim": "Ledger closing CLASS4-LOCALITY-20261028-001: one line per conclusion with its novelty label and evidence, the tried proof routes, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "CLASS4-LOCALITY-20261028-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract or result changes, or the frozen experiment verdict differs from the recorded one (invalid).",
+    "The decision note is missing.",
+    "Ticket A lacks its terminal status class (closed-null: invalid run)."
+  ],
+  "lineage": {
+    "home_scope": "CLASS4-LOCALITY-20261028-001",
+    "epic_path": [
+      "CLASS4-LOCALITY-20261028-001"
+    ],
+    "parents": [
+      "experiments/CLASS4-LOCALITY-20261028-001A/CLASS4-LOCALITY-20261028-001A-E001_class_4_gadget_equations_are_exactly_local_in_intrinsic_coordinates/contract.json",
+      "artifacts/CLASS4-LOCALITY-20261028-001A/CLASS4-LOCALITY-20261028-001A-E001_class_4_gadget_equations_are_exactly_local_in_intrinsic_coordinates/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "experiments/CLASS4-LOCALITY-20261028-001A/CLASS4-LOCALITY-20261028-001A-E001_class_4_gadget_equations_are_exactly_local_in_intrinsic_coordinates/contract.json": "ae074b48e4945e2354030bec1850149a6aec35e25ffdad7a3508b6707c573f2f",
+    "artifacts/CLASS4-LOCALITY-20261028-001A/CLASS4-LOCALITY-20261028-001A-E001_class_4_gadget_equations_are_exactly_local_in_intrinsic_coordinates/result.json": "6a13028b56f842cf99a21fe695fae674aab70e3efb2fac8a5413ce6585f08252"
+  },
+  "paths": {
+    "manifest": "proofs/CLASS4-LOCALITY-20261028-001Z/CLASS4-LOCALITY-20261028-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/CLASS4-LOCALITY-20261028-001Z/CLASS4-LOCALITY-20261028-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/CLASS4-LOCALITY-20261028-001Z/CLASS4-LOCALITY-20261028-001Z-P001_epic_closure",
+    "proof": "proofs/CLASS4-LOCALITY-20261028-001Z/CLASS4-LOCALITY-20261028-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/CLASS4-LOCALITY-20261028-001Z/CLASS4-LOCALITY-20261028-001Z-P001_epic_closure/result.json",
+    "check": "proofs/CLASS4-LOCALITY-20261028-001Z/CLASS4-LOCALITY-20261028-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the frozen contract and result of experiment E001 (verdict invalid: control XB matched and P5 failed for (0,1,1); the 84 main configurations all showed exact intrinsic equality, descriptively); decision note present; ticket terminal (closed-null); no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-28."
+  }
+}

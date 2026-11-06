@@ -1,0 +1,66 @@
+{
+ "experiment_id": "COPRIME-PAIRS-20261027-001D-E001",
+ "verdict": "refuted",
+ "machinery_failures": [],
+ "failures": [
+  "A5"
+ ],
+ "controls": [
+  {
+   "control": "X1 A1 on the cumulative design: locality should fail",
+   "rows": [
+    {
+     "e0 solutions": 0,
+     "distinct e1 equation values": 0,
+     "e0 sets equal K2 sets": false,
+     "vertex pairings nonzero": 0
+    },
+    {
+     "e0 solutions": 0,
+     "distinct e1 equation values": 0,
+     "e0 sets equal K2 sets": false,
+     "vertex pairings nonzero": 0
+    },
+    {
+     "e0 solutions": 11,
+     "distinct e1 equation values": 1,
+     "e0 sets equal K2 sets": false,
+     "vertex pairings nonzero": 0
+    }
+   ],
+   "matched (locality held)": false
+  },
+  {
+   "control": "X2 A1 with the dual slot given type +-1 (no duals at +-2): F should be constant (no deficit)",
+   "rows": [
+    {
+     "Delta": [
+      4,
+      7
+     ],
+     "F(0,D)": 14641,
+     "F_max": 14641
+    },
+    {
+     "Delta": [
+      3,
+      2
+     ],
+     "F(0,D)": 14641,
+     "F_max": 14641
+    },
+    {
+     "Delta": [
+      8,
+      8
+     ],
+     "F(0,D)": 14641,
+     "F_max": 14641
+    }
+   ],
+   "matched (a deficit appeared)": false
+  }
+ ],
+ "cases": 5,
+ "seconds": 6951.7
+}

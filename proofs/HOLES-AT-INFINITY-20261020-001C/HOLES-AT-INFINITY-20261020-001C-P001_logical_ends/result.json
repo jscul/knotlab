@@ -1,0 +1,194 @@
+{
+  "artifact_id": "HOLES-AT-INFINITY-20261020-001C-P001",
+  "checks": {
+    "ledrappier_no_finite_loops": {
+      "3": 0,
+      "4": 0,
+      "6": 0,
+      "7": 0
+    },
+    "ledrappier_triangle": {
+      "is_knot": true,
+      "pairwise_definable": false,
+      "states": 4
+    },
+    "proposition_4_equality_chain": {
+      "solutions_with_tail_fixed": 1,
+      "x0_open": true
+    },
+    "proposition_4_two_literal": {
+      "knots": 0,
+      "not_majority_closed": 0,
+      "systems": 12,
+      "triples": 120,
+      "unstable": 0
+    },
+    "rigid_legs_not_all_equal": {
+      "centre": "nae",
+      "is_knot": true,
+      "majority_closed": false,
+      "solutions_with_leg_ends_fixed": 1,
+      "states": 6
+    },
+    "theorem_2_linear_types": [
+      {
+        "counts": {
+          "end": 0,
+          "fixed": 512,
+          "loop": 16776704
+        },
+        "inner_loop_dimension": 64,
+        "loop_on_fixed_parity": 0,
+        "near_variables": 24,
+        "radius": 5,
+        "stable_in_radius": true,
+        "system": "Tseitin system on the square grid"
+      },
+      {
+        "counts": {
+          "end": 496,
+          "fixed": 16,
+          "loop": 0
+        },
+        "inner_loop_dimension": 0,
+        "loop_on_fixed_parity": 0,
+        "near_variables": 9,
+        "radius": 5,
+        "stable_in_radius": true,
+        "system": "Ledrappier's system on Z^2"
+      }
+    ],
+    "theorem_5_colourings_flat_class_dense": {
+      "box_radius": 24,
+      "change_inside_box": 150,
+      "largest_change_radius": 13,
+      "match_window": 150,
+      "patterns": 150,
+      "valid": 150
+    },
+    "theorem_5_implication_chain": {
+      "finite_changes_of_a_threshold": 11,
+      "finite_changes_of_all_one": 0,
+      "finite_changes_of_all_zero": 0,
+      "thresholds_cover_window": true,
+      "window_patterns": 6
+    },
+    "theorem_5_ladder_circle": {
+      "even_degree_inside": true,
+      "fixed_parities": 16,
+      "meets_every_fixed_parity_evenly": true,
+      "near_edges": 7,
+      "readable_difference": true
+    },
+    "theorem_5_plane_frozen": {
+      "flat_colourings_with_boundary": {
+        "4": 2,
+        "5": 2,
+        "6": 2
+      },
+      "plane_colourings_with_boundary": {
+        "4": 1,
+        "5": 1,
+        "6": 1
+      }
+    }
+  },
+  "claim": "For a locally finite constraint system over finite domains, with solutions equivalent when they differ in finitely many variables: (1) the readable invariants (rigid functions) form a Boolean algebra whose Stone space, the ends of the system, is a continuous quotient of the solutions, a point when some class is dense, and the solution space itself when no finite change exists. (2) For GF(2)-linear systems the ends are the solutions modulo the closure of the finitely supported homogeneous solutions, and every open parity is either loop-supplied (changed by a finitely supported homogeneous solution) or end-supplied (rigid); for Tseitin systems this is B's classification with ends M_c, and for Ledrappier's system on Z^2 there is no finitely supported homogeneous solution, so every triangle is a K1-K3 parity knot whose openness is all end-supplied on a one-ended grid where Tseitin's law has only loop-supplied openness. (3) Every relation among finitely many variables is the relation of a finite stage; rigidity is not. (4) No three variables of a two-literal clause system form a K1-K3 knot, though rigid variables exist (equality chains), and a not-all-equal centre with equality legs is a knot of rigid variables. (5) Trends (finite-change invariants that no readable function sees) separate solutions of the implication chain (where the switch went), of proper 3-colourings of Z^2 (the slope of the height function; the flat class is dense and the plane colouring is frozen) and of Tseitin on the one-way ladder (a circle through the end).",
+  "controls": {
+    "proposition_4_three_literal_parity_added": {
+      "knots": 3,
+      "not_majority_closed": 3,
+      "rejected": true,
+      "systems": 3,
+      "triples": 168,
+      "unstable": 0
+    },
+    "rigid_legs_two_literal_centre": {
+      "centre": "pair",
+      "is_knot": false,
+      "majority_closed": true,
+      "rejected": true,
+      "solutions_with_leg_ends_fixed": 1,
+      "states": 6
+    },
+    "rigidity_on_an_unconstrained_chain": {
+      "rejected": true,
+      "solutions_with_tail_fixed": 128,
+      "x0_open": true
+    },
+    "theorem_2_boundary_supported_solutions_counted_as_loops": {
+      "inner_loop_dimension": 22,
+      "loop": 496,
+      "rejected": true
+    },
+    "theorem_5_frozen_test_on_flat": {
+      "counts": {
+        "4": 2,
+        "5": 2,
+        "6": 2
+      },
+      "rejected": true
+    },
+    "theorem_5_patching_into_the_frozen_plane": {
+      "box_radius": 24,
+      "change_inside_box": 0,
+      "largest_change_radius": 24,
+      "match_window": 20,
+      "patterns": 20,
+      "rejected": true,
+      "valid": 20
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "HOLES-AT-INFINITY-20261020-001C-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "ends_of_a_system_structure_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "finite_stage_formation_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "ledrappier_all_openness_from_ends_proved": true,
+    "linear_systems_loops_or_ends_proved": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "no_knot_among_two_clause_variables_proved": true,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "trends_separated_from_readable_ends_proved": true,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology",
+    "cnf-arity"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "HOLES-AT-INFINITY-20261020-001C"
+}

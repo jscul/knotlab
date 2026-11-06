@@ -1,0 +1,125 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SELECT-COUNT-20261101-001A-P001",
+  "canonical_id": "SELECT-COUNT-20261101-001A-P001",
+  "kind": "proof",
+  "ticket": "SELECT-COUNT-20261101-001A",
+  "proof": "SELECT-COUNT-20261101-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Selection and cycle-like composition exclude each other",
+  "status": "Proved",
+  "claim": "Selection and cycle-like composition exclude each other. (1) Each of the five weak four-place classes of FOUR-PREFER (13-17, the only four-place laws that could still have mutual selection) contains a knot with a forcing place, a place where one value allows every state: directly for 13, 16 and 17, and after identifying two places for 14 and 15, which become three-place clauses (for 6 of the 48 relations of class 15 the identified places carry opposite signs). Two copies of such a knot sharing only that place form a hub (KNOT-CIRCUITS Proposition 3): both are circuits of their system, and their union minus the shared place is unconstrained, so circuit elimination fails and none of the five composes its knots like cycles, as KNOT-CIRCUITS Theorem 2 predicts (none is affine or bijunctive). (2) For every Boolean law with at least one knot, plain or signed, of any arity: if its knots compose like cycles it is affine (Theorem 2 allows affine or bijunctive, and a bijunctive relation is determined by its two-place projections, so a bijunctive law has no knot), and an affine law's solution count is 2^(n-r) or 0, so (M2) fails and it has no mutual selection (PINNING C). So no law with a knot both selects its spaces and composes its knots like cycles: at three places the knot selects and parity composes, and at four places the weak classes cannot do both, whether or not they ever fail. The knot is needed: a knot-free law such as signed two-clauses can fail recognisably with a #P-complete count. Checked: knots, forcing places and hubs for every relation of the five classes; the closure tests; bijunctive knot-freeness and the affine knots, exhaustively at three and four places; the three-place table; a parity control.",
+  "dependencies": [
+    "KNOT-CIRCUITS-20261020-001Z",
+    "FOUR-PREFER-20261101-001Z",
+    "PINNING-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A weak four-place class with no knot that has a forcing place, directly or after identifying two places.",
+    "A pair of copies of such a knot, sharing its forcing place, whose union minus that place is constrained.",
+    "A bijunctive Boolean relation that is a knot, or an affine knot that is not a parity coset.",
+    "A Boolean law with a knot whose knots compose like cycles and which has mutual selection."
+  ],
+  "lineage": {
+    "home_scope": "SELECT-COUNT-20261101-001",
+    "epic_path": [
+      "SELECT-COUNT-20261101-001"
+    ],
+    "parents": [
+      "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/prefer_lib.py",
+      "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/manifest.json",
+      "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/result.json",
+      "proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/manifest.json",
+      "proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/result.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json",
+      "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json",
+      "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/result.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json",
+      "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json",
+      "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/prefer_lib.py": "39186e2c482fbac7a8e3fbbf1fd9351d02db4a7ff9bf51ed2f3bb9604d134132",
+    "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/manifest.json": "23d6542011d00fdc9650b71ae9d40e593103322dae80c993ece69791ef53e905",
+    "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/result.json": "262e1b5ae2ecfd94b23d87340994e7cd8442f2189e85a2484ef85b82f3912763",
+    "proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/manifest.json": "08dd3aa2891f768ebb5ac6a6a613f8462759518bcec51d67dbb93d1392a578a4",
+    "proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/result.json": "960c42e99667ec660ed735973ad1f2466fe28ed36db137877ce91d9e66830aab",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py": "72a12e521ab7a616cecad61aac31c17ac7477878545e5cfdcc608eeac4e5ad68",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "5d89c5ac8100c1eb2a5e68492fa9dbd9d05251b08348db7a5bbd597c4428f8c9",
+    "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json": "015b24e9beb2935496b16ffe7b82b53b86aa029a9815e04e7f24d06b32b99f1e",
+    "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/result.json": "fa4e258d0e9afcbcbead25b4db6cd8fc6211226442d7175a80f6b4db4869dcc4",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json": "1ff4c941d6b0da079e7f8cc81fa3b7f56e0b55b34b44fb8cb7137b3404301a73",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json": "de7599c4aa49df6b39bbd8258153bc3dd33ebcd660633c77e05e492045b54076",
+    "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json": "2ecad4a95dd2f0aa95a8bc52e77900e481959930dcf00f361c18f29263347849",
+    "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json": "565be492e94c7304d3c0b9e4af58d7c240bda142398cc3f58b44fab768d95306"
+  },
+  "paths": {
+    "manifest": "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/manifest.json",
+    "identity": "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/identity.json",
+    "directory": "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other",
+    "proof": "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/proof.md",
+    "result": "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/result.json",
+    "check": "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "selection_and_composition_exclusive_shown": true
+  },
+  "foundation_claim_scope": "A statement about Boolean laws and their cycle-like composition and mutual selection; no claim about whether the weak classes ever fail.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: forcing-place knots and hubs for all 288 relations of the five weak classes; affine, bijunctive and complement closure; exhaustive bijunctive and affine knot censuses at three and four places; the three-place table; parity control; no human or external review",
+    "novelty": "KNOT-CIRCUITS Theorem 2 and Proposition 3 and PINNING C are ours; the forcing-place hubs for the weak classes and the exclusion statement are new here and elementary."
+  }
+}

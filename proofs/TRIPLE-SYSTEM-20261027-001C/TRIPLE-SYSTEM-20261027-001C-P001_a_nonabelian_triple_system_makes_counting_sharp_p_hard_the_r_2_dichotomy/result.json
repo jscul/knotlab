@@ -1,0 +1,160 @@
+{
+ "schema_version": 1,
+ "artifact_id": "TRIPLE-SYSTEM-20261027-001C-P001",
+ "status": "Proved",
+ "checks": {
+  "1 Dynkin form": {
+   "ok": true,
+   "detail": {
+    "P4 W_0": {
+     "(3, 2, 1)": -1,
+     "(2, 3, 1)": 1,
+     "(1, 3, 2)": 1,
+     "(1, 2, 3)": -1
+    },
+    "P4 W_1": {
+     "(0, 2, 3)": 1,
+     "(3, 2, 0)": 1,
+     "(2, 3, 0)": -1,
+     "(0, 3, 2)": -1
+    },
+    "P4 W_2": {
+     "(1, 0, 3)": -1,
+     "(0, 1, 3)": 1,
+     "(3, 1, 0)": 1,
+     "(3, 0, 1)": -1
+    },
+    "P4 W_3": {
+     "(2, 0, 1)": 1,
+     "(1, 0, 2)": 1,
+     "(0, 1, 2)": -1,
+     "(2, 1, 0)": -1
+    },
+    "P4B W_0": {
+     "(1, 2, 3)": 1,
+     "(3, 2, 1)": 1,
+     "(1, 3, 2)": -1,
+     "(2, 3, 1)": -1
+    },
+    "P4B W_1": {
+     "(2, 3, 0)": 1,
+     "(3, 2, 0)": -1,
+     "(0, 2, 3)": -1,
+     "(0, 3, 2)": 1
+    },
+    "P4B W_2": {
+     "(3, 1, 0)": -1,
+     "(0, 1, 3)": -1,
+     "(3, 0, 1)": 1,
+     "(1, 0, 3)": 1
+    },
+    "P4B W_3": {
+     "(2, 1, 0)": 1,
+     "(0, 1, 2)": 1,
+     "(2, 0, 1)": -1,
+     "(1, 0, 2)": -1
+    }
+   }
+  },
+  "2 one-parameter subgroups": {
+   "ok": true,
+   "detail": {
+    "algebras": [
+     "u4 four-way",
+     "free3 (y1-, y2-)",
+     "free3 (y1-, y2-, y3-)",
+     "free3 (x+, y1-, y2-)",
+     "cross4 (x+, y-)",
+     "free4 (x+, y1-, y2-), y1 only",
+     "cross3 (x+, y-)",
+     "cross4 mod [y,[y,[x,y]]]",
+     "heisenberg (y1-, y2-)"
+    ],
+    "primes": [
+     5,
+     7
+    ]
+   }
+  },
+  "3-4 Lemma 5.2 and abelian side": {
+   "ok": true,
+   "detail": {
+    "u4 four-way": {
+     "d": 4,
+     "nonabelian": true,
+     "abelian expected": false,
+     "s*": "t",
+     "count (pi2, pi3)": 30625,
+     "bounds": [
+      1,
+      390625
+     ]
+    },
+    "free3 (y1-, y2-)": {
+     "d": 4,
+     "nonabelian": true,
+     "abelian expected": false,
+     "s*": "[y1,y2,y1]",
+     "count (pi2, pi3)": 90625,
+     "bounds": [
+      1,
+      390625
+     ]
+    },
+    "free3 (y1-, y2-, y3-)": {
+     "d": 11,
+     "nonabelian": true,
+     "abelian expected": false,
+     "s*": "[y1,y2,y1]"
+    },
+    "free3 (x+, y1-, y2-)": {
+     "d": 8,
+     "nonabelian": true,
+     "abelian expected": false,
+     "s*": "[y1,y2,y1]"
+    },
+    "cross4 (x+, y-)": {
+     "d": 5,
+     "nonabelian": true,
+     "abelian expected": false,
+     "s*": "[x,y,y,y]",
+     "count (pi2, pi3)": 2265625,
+     "bounds": [
+      1,
+      9765625
+     ]
+    },
+    "free4 (x+, y1-, y2-), y1 only": {
+     "d": 18,
+     "nonabelian": true,
+     "abelian expected": false,
+     "s*": "[y1,y2,y1]"
+    },
+    "cross3 (x+, y-)": {
+     "d": 3,
+     "nonabelian": false,
+     "abelian expected": true
+    },
+    "cross4 mod [y,[y,[x,y]]]": {
+     "d": 4,
+     "nonabelian": false,
+     "abelian expected": true
+    },
+    "heisenberg (y1-, y2-)": {
+     "d": 2,
+     "nonabelian": false,
+     "abelian expected": true
+    }
+   }
+  },
+  "5 dependencies": {
+   "ok": true,
+   "detail": {
+    "experiment B": "supported",
+    "ticket A": "Proved"
+   }
+  },
+  "all_ok": true
+ },
+ "seconds": 6.8
+}

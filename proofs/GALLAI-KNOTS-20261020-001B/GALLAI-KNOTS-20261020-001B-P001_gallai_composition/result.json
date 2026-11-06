@@ -1,0 +1,224 @@
+{
+  "artifact_id": "GALLAI-KNOTS-20261020-001B-P001",
+  "checks": {
+    "corollary_2_exhaustive": {
+      "agree": 168,
+      "gallai": 65,
+      "graphs": 168,
+      "skipped_by_cap": 0
+    },
+    "corollary_5_monomial": {
+      "2": {
+        "coefficient": "1",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": false
+      },
+      "3": {
+        "coefficient": "1/2",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": true
+      },
+      "4": {
+        "coefficient": "2/9",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": true
+      },
+      "5": {
+        "coefficient": "3/32",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": true
+      },
+      "6": {
+        "coefficient": "24/625",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": true
+      },
+      "7": {
+        "coefficient": "5/324",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": true
+      },
+      "8": {
+        "coefficient": "720/117649",
+        "identity_at_q_plus_1_points": true,
+        "only_fixed_point_zero": true
+      }
+    },
+    "corollary_5_rainbow_world": {
+      "q3_depth3": {
+        "extensions_of_boundary": 1,
+        "interior_degrees_q": true,
+        "proper": true
+      },
+      "q4_depth2": {
+        "extensions_of_boundary": 1,
+        "interior_degrees_q": true,
+        "proper": true
+      },
+      "q5_depth2": {
+        "extensions_of_boundary": 1,
+        "interior_degrees_q": true,
+        "proper": true
+      }
+    },
+    "graphs_up_to_isomorphism": {
+      "counts": [
+        1,
+        1,
+        2,
+        6,
+        21,
+        112
+      ],
+      "matches_A001349": true
+    },
+    "lemma_1_greedy": {
+      "coloured": 1500,
+      "instances": 1500
+    },
+    "lemma_2_exhaustive": {
+      "excluded_match": 89,
+      "networks": 89
+    },
+    "lemma_3_construction_random": {
+      "completed": 597,
+      "instances": 597
+    },
+    "lemma_3_exhaustive": {
+      "networks": 89,
+      "nonempty_and_projections_full": 89
+    },
+    "lemma_4_exhaustive": {
+      "bad_constant": 74,
+      "nonempty_iff_complete_or_odd_cycle": 74,
+      "two_connected": 74
+    },
+    "lemma_4_random": {
+      "bad_constant": 203,
+      "nonempty_iff_complete_or_odd_cycle": 203,
+      "two_connected": 203
+    },
+    "remark_6_hub": {
+      "3": {
+        "conjunction_constrained": true,
+        "hiding_u_leaves_full": true,
+        "k2_fails_at": 4,
+        "union_witness_is_knot": true
+      },
+      "4": {
+        "conjunction_constrained": true,
+        "hiding_u_leaves_full": true,
+        "k2_fails_at": 6,
+        "union_witness_is_knot": true
+      }
+    },
+    "theorem_1_gluing_law": {
+      "gallai_pairs": 136,
+      "law_holds": 160,
+      "nonempty_glued": 136,
+      "pairs": 160,
+      "split_unique": 160
+    },
+    "theorem_3_exhaustive": {
+      "agree": 89,
+      "gallai": 33,
+      "knots": 33,
+      "networks": 89
+    },
+    "theorem_3_random_networks": {
+      "gallai_knots": 95,
+      "gallai_tested": 95,
+      "non_gallai_full": 146,
+      "non_gallai_tested": 146
+    },
+    "theorem_4_exhaustive": {
+      "gallai_trees": 65,
+      "mass_match": 65,
+      "systems_match": 65,
+      "tree_formula": 30,
+      "trees": 30
+    },
+    "theorem_4_random_gallai_trees": {
+      "gallai_trees": 130,
+      "mass_match": 130,
+      "systems_match": 130
+    }
+  },
+  "claim": "For q >= 2 colours and a finite connected witness graph W of maximum degree at most q, each witness carrying q - deg(v) pendant leaves, the leaf relation (witnesses hidden) passes K1-K3 exactly when W is a Gallai tree with at least one leaf; K2 and K3 hold for every W, and a non-Gallai W imposes no constraint at all. Gluing two witness networks at a vertex joins their excluded leaf colourings through a unique hidden split of the glued vertex's colours; the excluded colourings are the block colour-set systems (Kostochka-Stiebitz-Wirth), and their number is q! times a product of block masses, q!((q-1)!)^(k-1) for any tree on k witnesses. On the d-regular tree with p* = 0 (d = q for every q >= 3, and below the freezing thresholds) every such knot is native at almost every broadcast world; at d = q the rainbow world freezes them all. Two knots sharing a visible vertex form a common hub, not a knot.",
+  "controls": {
+    "glued_vertex_never_split": {
+      "gallai_gluings_with_bad_assignments": 136,
+      "rejected": true
+    },
+    "knot_iff_bipartite": {
+      "disagreements": 25,
+      "rejected": true
+    },
+    "knot_iff_every_block_complete": {
+      "disagreements": 2,
+      "rejected": true
+    },
+    "knot_iff_tree": {
+      "disagreements": 14,
+      "rejected": true
+    },
+    "lemma_1_without_strict_vertex": {
+      "rejected": true,
+      "triangle_with_equal_pairs_coloured": false
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "GALLAI-KNOTS-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "bipartite_substrates_need_tree_witnesses_proved": false,
+    "bipartite_witness_networks_knot_iff_tree_proved": true,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "composition_by_gluing_proved": true,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "degree_q_witness_knots_iff_gallai_tree_proved": true,
+    "excluded_mass_multiplicative_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "knot_types_by_block_proved": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_on_regular_tree_proved": true,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "shared_visible_vertex_is_hub_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "witnesses_above_degree_q_classified": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "GALLAI-KNOTS-20261020-001B"
+}

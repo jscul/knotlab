@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-CORRECTION-20261031-001B-P001",
+  "canonical_id": "PARITY-CORRECTION-20261031-001B-P001",
+  "kind": "proof",
+  "ticket": "PARITY-CORRECTION-20261031-001B",
+  "proof": "PARITY-CORRECTION-20261031-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Parity's failing systems carry every hard instance",
+  "status": "Proved",
+  "claim": "Parity's failing systems carry every hard instance of its coupling family. (i) Splice lemma: if a signed cubic piece has a parity certificate, a set s of lines covering every point evenly with b.s = 1, and s avoids a line m, then swapping an incidence (q, m) of the piece with an incidence (p, l) of any host gives a cubic system that is again parity-unsolvable, with the same certificate. (ii) Two calls: with G the piece's 2x2 transfer matrix from the host point's colour to the colour delivered to the host line, and H_k the host with one incidence replaced by a chain of k pieces, M(H_k) = sum over x, y of F(x, y) G^k(x, y), so M(H) = (tr G M(H_1) - M(H_2)) / det G by Cayley-Hamilton. (iii) The eight-line piece from the census (no repeated lines, one negated line) has det G = -16 lam^2 (lam - 1)^6 (lam + 1)^6. So for every complex lam outside {0, 1, -1}, counting parity's coupling on connected simple cubic systems reduces with two oracle calls to counting it on connected simple parity-unsolvable systems, without repeated lines when the host has none; with ticket A it is #P-hard there for every lam outside {0, 1, -1, i, -i, oo}. Parity's failing class makes no member of its family easy. Contrast (observed): splicing a not-all-equal-unsolvable piece into a 2-colourable host gave a 2-colourable system in every tested case, so the knot's failures do not transplant.",
+  "dependencies": [
+    "PARITY-CORRECTION-20261031-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A spliced system that is parity-solvable, not cubic, not simple, disconnected, or has a repeated line when the host has none.",
+    "A host and coupling where the two-call formula disagrees with the directly computed count.",
+    "A complex lam outside {0, 1, -1} where det G vanishes."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-CORRECTION-20261031-001",
+    "epic_path": [
+      "PARITY-CORRECTION-20261031-001"
+    ],
+    "parents": [
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json",
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json",
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/parity_lib.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json": "71e60d9524306382f0790416a1d531eded2ae19273b080c75fa85e57d8f78374",
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json": "f3978b2c6c627a9ff093990b408b5296e3261d6da0eb65d559b4316a93f1f905",
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/parity_lib.py": "86e7ee1ca9c108f12747d1326722ec4437675df4598975cd6a87d7f1805bc710",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/manifest.json",
+    "identity": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/identity.json",
+    "directory": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance",
+    "proof": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/proof.md",
+    "result": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/result.json",
+    "check": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "parity_failing_class_hardness_shown": true
+  },
+  "foundation_claim_scope": "A reduction between two instance classes of one weighted counting family; no knot, contact or topology claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session on 2026-10-31, at the owner's request relayed by a peer session that found the error.",
+    "status": "checked: the piece's certificate and transfer matrix; structure of every spliced system; the two-call formula end to end on plain and signed hosts at real and complex couplings; the knot contrast on census hosts; no human or external review",
+    "novelty": "Elementary (certificate-preserving splicing and Cayley-Hamilton interpolation are standard Holant tools); recorded as part of the correction, not as a discovery."
+  }
+}

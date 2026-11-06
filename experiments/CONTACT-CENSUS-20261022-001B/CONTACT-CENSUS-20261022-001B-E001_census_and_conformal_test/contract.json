@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "experiment_id": "CONTACT-CENSUS-20261022-001B-E001",
+  "ticket": "CONTACT-CENSUS-20261022-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "Disposable scoping on 2026-10-22, not evidence: 'x or (h != h')' gave 1.531, 1.551, 1.520 bits on square tori with both sides odd (sides 9, 17, 33) and 1.971, 2.018, 1.996 on 1:2 tori, against Pinson's 1.50846 and 1.98520. CONTACT-CENSUS-20261022-001A-P001 proves the ten classes, the regimes, the bipartite-percolation reduction and two-sided bounds; the conformal limit is a prediction.",
+  "question": "On square-lattice tori with one placed three-variable contact on every edge, hidden joints and fair visible spokes: do the ten classes show their predicted regimes, and does the emergence of 'x or (h != h')' match Pinson's conformal prediction on several torus shapes and on rotated tori?",
+  "public_inputs": {
+    "C1_census": "class representatives with transfer pairs (spoke 0, spoke 1): vacuum classes (I,J), (U,L), (A1,I), (A1,J), (J,L), (A1,L) on 9 x 9, 17 x 17 and 9 x 18 tori, 2,000 samples; parity (I,S) on 3 x 3 (200,000 samples) and 3 x 5 (1,000,000); swap-or-order (S,L) on 3 x 3 and 5 x 5 (200,000); not-all-equal (A1,A2) and 'x or (h != h')' (S,J) on a x a tori, a in {9, 17, 33, 65}, 8,000 samples",
+    "C2_conformal": "'x or (h != h')' on: a x a, a in {9, 17, 33, 65}; a x 2a, a in {9, 17, 33, 65}; 2a x a, a in {9, 17, 33}; 3k x 2k, k in {3, 5, 11, 21}; 3m x 5m, m in {3, 5, 9, 13}; rotated squares with bases (c,d), (-d,c) for (c,d) in {(12,5), (24,7), (20,13), (35,12)}; 10,000 samples each",
+    "C3_contrast": "not-all-equal on 17 x 34 and 33 x 66, 8,000 samples",
+    "C4_placements": "all 12 placements of not-all-equal and all 12 of 'x or (h != h')' on the 17 x 17 torus, 4,000 samples each",
+    "controls": "not-all-equal and 'x or (h != h')' on the bipartite 16 x 16 and 32 x 32 tori, 2,000 samples each"
+  },
+  "definitions": "Tori have a rows and b columns; edges are oriented east and north. A sample draws one fair spoke per edge; it is consistent when some joint assignment satisfies every edge's transfer. E = -log2 of the consistent fraction with a delta-method standard error; zero consistent samples give the lower bound log2(N). 'x or (h != h')' is judged by two independent tests: limited backtracking on the transfer tables, and union-find bipartiteness of the edges whose spoke selects disequality (both on every sample up to side 33, the first 1,000 samples beyond).",
+  "predictions": {
+    "pinson_limits_bits": {
+      "square_both_odd": 1.508460306,
+      "rows_odd_columns_double": 1.985200554,
+      "columns_odd_rows_double": 1.985200554,
+      "rows_3k_columns_2k": 0.677388093,
+      "both_odd_3_by_5": 1.789801876
+    },
+    "H_conformal": "for each of the five rectangular shapes, the weighted mean E over its two largest sizes lies within 3 standard errors plus 0.01 bits of the Pinson limit; the rotated squares' weighted mean lies within 3 standard errors plus 0.01 of 1.508460",
+    "H_census": "vacuum classes are consistent in every sample; parity has E within 3 standard errors of 10 on 3 x 3 and of 16 on 3 x 5; swap-or-order has E(5 x 5) > E(3 x 3) + 3; the two critical classes have |slope| <= 0.05 bits per doubling over sides 9-65, and their family means differ by more than 0.5 bits",
+    "H_placements": "within each critical class, every placement's E on 17 x 17 lies within 3.5 standard errors of the class's weighted mean",
+    "controls": "the two critical classes are consistent in every sample on bipartite tori; the two tests agree on every doubly judged sample"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Supported when H_conformal, H_census and H_placements all hold; refuted when some rectangular shape's mean deviates from its Pinson limit by more than 5 standard errors plus 0.02 bits; closed null otherwise.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 2048,
+    "max_vertices": 8450
+  },
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster.",
+  "seeds": "random.Random(f'{family}-{label}') per torus",
+  "red_team_r0": [
+    "Identifiability: the reduction (proved) makes the 'x or (h != h')' observable exactly a percolation topology event; the test compares it with an independently derived formula.",
+    "Leakage: Pinson's values enter only as frozen hypotheses; the producer never reads them.",
+    "Solver error: two independent consistency tests judge the critical contact.",
+    "Finite size: the allowance of 0.01 bits covers corrections at sides 33-65; a failure beyond 5 standard errors plus 0.02 refutes.",
+    "Multiplicity: six shape comparisons (five rectangular, one rotated) with a fixed rule."
+  ],
+  "nonclaims": [
+    "Monte Carlo estimates on finite tori; agreement with Pinson's formula supports, and does not prove, the conformal limit.",
+    "Lattices and placements are declared; nothing is said about space.",
+    "Only one contact per torus, uniformly oriented."
+  ],
+  "forbidden_inputs": [
+    "Pinson's predicted values or scoping values as producer inputs"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "experiment_id": "BEYOND-CLASS2-20261027-001B-E001",
+ "ticket": "BEYOND-CLASS2-20261027-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "BEYOND-CLASS2-20261027-001A proved that a graded hard pair across layers makes counting #P-hard; the open case is the four-way group, here realized as G = U4(F_p) x| <D>, D = diag(1, -1, 1, -1) at r = 2 (no graded hard pair; at r = 2 none can exist). Earlier scoping in the epic found the base four-way form zero on twist-knot sums at alpha = -1 and steering by cabled pure-braid insertions matching the Milnor tensor up to an isomorphism of the target. The theory for ticket C now predicts the form exactly: a J-duality (the Fox-coloring transport, Burau at t = -1, preserves the form J with 2 (-1)^(q - q') below the diagonal) turns layer-3 obstructions into a four-linear form Q(c; s) = <o(c), J^T s>; inserting the 2-cable of a pure braid with conjugators in the third lower central term changes Q by a constant times the Magnus tensor of the conjugators contracted with bundle functionals; sums of knots with one-dimensional twisted H^1 have Q = 0. This experiment tests those predictions exactly, on new primes, knots, a second pure braid, combined and dragged insertions, and the full gadget, with two independent measurement paths. Scoping disclosed in scoping/README.md: it fixed the constant kappa (2 in the braid model, -2 in the level model) on cabled P4 insertions on 4_1 x4 at p = 5 and ran gadgets K2, P3, the digon, K3 and the star at p = 5, 7 (all as predicted); those fixtures are rerun as regression.",
+ "question": "Is the four-way form of S^3_2 of the gadget braids exactly the predicted sum of Magnus tensors of the inserted pure braids contracted with bundle functionals, with zero base, at p = 5, 7, 11, 13, for two different pure braids, combined and dragged insertions and six graphs; and do independent group-law counts confirm the count formula and the lifting criterion?",
+ "public_inputs": {
+  "group": "G = U4(F_p) x| <D>, D = diag(1, -1, 1, -1): superdiagonal (c_y, c_x, c_w) layer 1, entries (1,3), (2,4) layer 2, (1,4) layer 3; isomorphic for p >= 5 to bc_lib.four_way_algebra(p, 2, 1) with y = E12, x = E23, w = E34",
+  "manifolds": "S^3_2(closure of a braid word); bases: connected sums of 4_1 and 5_2 (cp_lib.connected_sum) and of T(2, p) (closure of s1^p ... sN^p)",
+  "braids": "P4 = [[A12, A23], A34] and P4B = [[A23, A34], A12] (mlib.py), inserted as gamma . cable(P, 2, offset) . gamma^-1 (cp_lib.cable)",
+  "gadget": "fixtures.gadget: vertex v <-> strand v, edge e = (u, v): private strands b+1..b+6 (b = n + 6e), gamma drags strand v then strand u over to positions b, b - 1, insertion of cable(P4, 2, b - 1); base = sum of n + 6m copies of T(2, p)",
+  "fixtures": "fixtures.py: BASES_LEVEL (9 bases, level model, full tables), BASES_BRAID (6 sums of T(2, p) at p = 5, 7, 11, 13), STEERING (17 insertion fixtures), STEERING_LEVEL (2 full-table fixtures), LIFT_FIXTURE, GRAPHS (6) x GADGET_PRIMES (5, 7, 11), COUNTS (4)",
+  "measurement": "bm.py: closed-braid presentation, labels pushed through the braid as 4x4 matrices, layers 1 and 2 solved as linear systems, Q(c; s) = <o(c), (J^T s, 0)>; lp.py: level presentation with ticket A's Fox calculus, Q(c; s) = <o(c), (J s_{l+1}), 0>; bc_lib.direct_count: BCH four-way group on cp_lib's Wirtinger presentation (independent of bm.py, lp.py and mlib.py)"
+ },
+ "predictions": {
+  "kappa": {
+   "braid_model": 2,
+   "level_model": -2
+  },
+  "R0_base": "Q = 0 identically on S^3_2 of sums of 4_1 (p = 5), 5_2 (p = 7) and T(2, p), every sample and every table entry",
+  "R1_steering": "inserting gamma . cable(P, 2, o) . gamma^-1 at a level changes Q by kappa * sum_j Lam_j(c) ell_j(s), Lam_j(c) = sum M_j(i1 i2 i3) ell_i1(c_y) ell_i2(c_x) ell_i3(c_w), M_j the degree-3 Magnus part of the geometric conjugator W_j of P, ell_k = difference of the transported colors of bundle k at the middle level; insertions add; exact equality on every sample (braid model) and every table entry (level model, constant -kappa)",
+  "R2_gadget": "on the gadget manifold of K2, P3, the digon, K3, K1,3 and C4 at p = 5, 7, 11: Q = kappa * sum over edges of the P4 tensor with leaf 0 = s_v - s_u and leaf k = s_{b+2k} - s_{b+2k-1} (top colors); the transported leaves equal these closed forms",
+  "R3_counts": {
+   "S^3_2(4_1), p = 5, sector 1": 390625,
+   "S^3_2(T(2,5)), p = 5, sector 1": 390625,
+   "S^3_2(T(2,5)#T(2,5)), p = 5, sector 1": 244140625,
+   "S^3_2(4_1), p = 5, sector 0": 1
+  },
+  "R4_lifting": "on 4_1 x4 + P4 (0,0) at p = 5, for 40 class triples (10 with c_y = 0, 10 with c_x = 0, 20 random), the independent group-law count with fixed layer-1 data is positive exactly when Q(c; .) = 0, and then equals p^(N+1) = 3125",
+  "dims": "dim of the fixed colorings = number of summands + 1 on every fixture (dim H^1(M; F_p^-) = number of summands)"
+ },
+ "controls": {
+  "machinery (any failure makes the run invalid)": "M1 B^T J B = J for every letter, n <= 10, p in 5, 7, 11, 13; M2 (J^T s)_q + (J^T s)_{q+1} = -(s_{q+1} - s_q); M3 the 2-cable acts by substituting bundle products x_{2k+1} x_{2k} into the geometric conjugators, the conjugators lie in the third lower central term, and the cable's coloring transport is the identity, for P4 and P4B; M4 on every braid-model fixture the fixed colorings have dimension (summands + 1) and (J^T s, 0) annihilates the layer-3 linear part; M5 on every level-model base y(s) lies in the left kernel and dim H^1 = summands",
+  "negative (each must show a mismatch, else the run is invalid)": "X1 gadget K3 at p = 5 predicted with one edge dropped; X2 gadget P3 at p = 5 with bundles 0 and 2 swapped; X3 4_1 x4 + P4 (0,0) with a random tensor of the same size; X4 the same with kappa = 1; X5 T(2,5) x8 without insertion predicted as if P4 were inserted at (0,1)"
+ },
+ "decision_rule": "Invalid if a machinery check fails or a negative control matches. Supported if R0-R4 and the dimension prediction hold on every fixture. Refuted otherwise, naming every failed item; neither predictions nor construction change after this contract.",
+ "resource_budget": {
+  "wall_seconds": 7200,
+  "memory_mib": 12288,
+  "threads": 1
+ },
+ "stop_rule": "Run run.py once (machinery first); no adaptive extension.",
+ "seeds": "numpy default_rng with fixed seeds per fixture (in run.py)",
+ "environment": "workspace .venv python (numpy); cp_lib.py (COPRIME-CLASS2-20261026-001B) and bc_lib.py (BEYOND-CLASS2-20261027-001A) imported read-only",
+ "red_team_r0": [
+  "Random samples test a four-linear identity at 64 points per fixture; a wrong form agreeing on all of them is unlikely but not excluded. Full tables (level model) cover two insertions and nine bases exactly.",
+  "The predictions use the transported colorings, which bm.py also uses as layer-1 data; the colors are inputs, not the object under test. The closed-form leaves of the gadget are checked against the transported ones.",
+  "The constant kappa was read off in scoping at p = 5 on P4; its value at other primes and for P4B is a test.",
+  "Gadgets up to 28 summands and 788 crossings test the construction, not every graph; the realization for all graphs is ticket C's proof.",
+  "The lifting test and the direct counts use an independent group model and presentation but only small fixtures."
+ ],
+ "nonclaims": [
+  "No hardness claim here (ticket C).",
+  "No claim for p = 2, 3, for r > 2, or for knot exteriors."
+ ],
+ "forbidden_inputs": [
+  "Measured forms as inputs to the predictions",
+  "Predicted values as inputs to the measurement"
+ ],
+ "outputs": "artifacts/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/result.json, rows.json and run_log.txt"
+}

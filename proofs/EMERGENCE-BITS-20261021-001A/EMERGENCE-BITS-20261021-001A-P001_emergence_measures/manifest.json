@@ -1,0 +1,113 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "EMERGENCE-BITS-20261021-001A-P001",
+  "canonical_id": "EMERGENCE-BITS-20261021-001A-P001",
+  "kind": "proof",
+  "ticket": "EMERGENCE-BITS-20261021-001A",
+  "proof": "EMERGENCE-BITS-20261021-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Measuring emergence in bits",
+  "status": "Proved",
+  "claim": "For a nonempty relation R on n bits, with pair closure pc(R) (points whose every two-coordinate projection occurs in R): (1) the logical emergence E(R) = log2|pc(R)| - log2|R| is zero exactly when R is majority-closed, that is, definable by clauses of at most two literals; (2) a knot on N bits is the complement of a nonempty independent set Z of the N-cube and has E = -log2(1 - |Z|/2^N) <= 1, with equality only for the two parity relations (34, 742 and 254,474 knots on 3, 4 and 5 bits); (3) the statistical emergence I(R), the divergence of the uniform distribution on R from the pairwise exponential family, satisfies 0 <= I <= E and vanishes exactly on least sets of pairwise energies, so the four not-all-equal relations are the only knots with I = 0; (4) the largest E on n bits is n - log2 CAN(2,n,2), attained by minimum covering arrays; (5) I <= min(n, |R| - 1) - log2|R| <= n - log2(n+1), with equality exactly for orthogonal arrays of strength two with n + 1 runs (Hadamard designs), which on seven bits are the 480 cosets of the Fano simplex codes; (6) affine relations have I = E <= n - ceil(log2(n+1)); E and I add over products.",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z",
+    "KNOT-COMPETITION-20261019-001A",
+    "BASE-THREE-20261021-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A relation on at most four bits where zero logical emergence and majority closure differ.",
+    "A knot on three or four bits that is not the complement of an independent set, or whose emergence differs from -log2(1 - |Z|/2^N), or a one-bit knot other than parity.",
+    "A three-bit relation where zero statistical emergence and least-set membership differ, where I falls outside [0, E], or a silent knot other than not-all-equal; a sampled four-bit knot that is a least set.",
+    "A relation on at most four bits, or one with at most five points on five bits, above n - log2 CAN(n); a failure of the capacity inequality for 6 <= n <= 5000.",
+    "A relation exceeding min(n, |R| - 1) - log2|R|, or an 8-point set on seven bits with uniform pairs outside the 480 simplex cosets.",
+    "A subspace on at most six bits with all pairs free and codimension above n - ceil(log2(n+1)).",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "EMERGENCE-BITS-20261021-001",
+    "epic_path": [
+      "EMERGENCE-BITS-20261021-001"
+    ],
+    "parents": [
+      "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json",
+      "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json",
+      "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json": "10b44105465401c686a5b6c58944163462b1e348c626c948507e4421ef618af5",
+    "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json": "bf8af759dace62852e5d35c8107432edd2cabdb3a52cfaadedd460bc0c650ff1",
+    "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/manifest.json": "aa555d56fbfa143fd766cd9abd39cc13770ebbbb1827d10c46b04fe1fcf1b41d"
+  },
+  "paths": {
+    "manifest": "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/manifest.json",
+    "identity": "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/identity.json",
+    "directory": "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures",
+    "proof": "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/proof.md",
+    "result": "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/result.json",
+    "check": "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "emergence_zero_set_proved": true,
+    "knot_emergence_formula_proved": true,
+    "statistical_zero_set_proved": true,
+    "logical_capacity_proved": true,
+    "statistical_capacity_proved": true,
+    "affine_capacity_proved": true
+  },
+  "foundation_claim_scope": "Two measures of how much a relation on bits hides from its pairs, their zero sets and their maxima. No native recurrence beyond the K1-K3 reading, no space, no physics.",
+  "validation": {
+    "status": "checked: prose proof; check.py decides zero emergence on all 65,805 relations on two to four bits, the knot classification on three and four bits and the independent sets of the 5-cube, statistical emergence on all 255 three-bit relations with exact rational linear programming, the capacities exhaustively on at most four bits, on small five-bit relations, by construction to ten bits and by the proof inequality to n = 5000, the 480 seven-bit maximizers by clique search, and all subspaces on at most six bits; five controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and exact checks; Baker and Pixley, Schaefer, the closure of exponential families, Rauh-Kahle-Ay, Kleitman-Spencer and Katona, Hadamard-orthogonal-array correspondence and the Hamming bound are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "known-overlap-found for the zero sets (majority closure; facial sets); candidate-local-delta for the two capacity theorems for relations (covering arrays; Hadamard designs, with the 480 Fano maximizers on seven bits), the statistically silent knots, and the reading of both measures as emergence. Bounded search: Rauh 2011 and Matus-Ay study maximizers of divergence from exponential families over all distributions.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

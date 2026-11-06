@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "artifact_id": "FROZEN-WORLDS-20261020-001C-P001",
+  "canonical_id": "FROZEN-WORLDS-20261020-001C-P001",
+  "kind": "proof",
+  "ticket": "FROZEN-WORLDS-20261020-001C",
+  "proof": "FROZEN-WORLDS-20261020-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Colourings have frozen and flexible worlds",
+  "status": "Proved",
+  "claim": "For proper 3-colourings of Z^2 and of the 3-regular tree: (1) the plane colourings (x +/- y) mod 3 of Z^2, and tree colourings whose every vertex's children carry both other colours, are frozen (no other colouring differs from them at finitely many vertices, so every finite region is determined by the rest of the world), while the bipartition 2-colourings are flexible at every vertex and their classes are dense, so for each finite vertex set the worlds at which it is flexible form a dense open set excluding the frozen worlds; (2) three neighbours of a vertex carry exactly the relation 'not all three colours distinct', which passes K1-K3 and, under the source-aware reading, is native exactly at the worlds where the three vertices are flexible: native on a dense open set of worlds and at no frozen world; (3) the hard-core law (independent sets) is flexible at every vertex of every world yet has no K1-K3 knot among its variables. So under the source-aware reading native knots depend on the world for colourings, and native loops are necessary but not sufficient for them.",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "The projection onto three neighbours of a vertex differs from 'not all distinct', or fails K1-K3.",
+    "A plane colouring of Z^2 or the frozen tree colouring has a second completion of a box or subtree with its boundary fixed.",
+    "A window vertex at a world of the flat class cannot be recoloured by a finite change, or one at the plane world can.",
+    "A height-function patch on the tree is invalid, misses its window, or is not finite.",
+    "A hard-core window vertex is not flexible, or a hard-core triple is a knot or not majority-closed.",
+    "A control (triples without a common neighbour, the frozen test on flexible colourings, the flexibility test at the plane colouring) is accepted."
+  ],
+  "lineage": {
+    "home_scope": "FROZEN-WORLDS-20261020-001",
+    "epic_path": [
+      "FROZEN-WORLDS-20261020-001"
+    ],
+    "parents": [
+      "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json",
+      "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/result.json",
+      "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json": "9f66fed64307a5e9b8ca5a8a0b69a5413826bc257dd2c5ef9fca158523676e54",
+    "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/result.json": "69cbcfc294941fe4dd8e1ad79e01a0070490748387873e09d5729b0b1a3cc3bd",
+    "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json": "878d29c742324d764cd3e51550e75657f23d06462f1d8213505cc3b663f702ab"
+  },
+  "paths": {
+    "manifest": "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/manifest.json",
+    "identity": "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/identity.json",
+    "directory": "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds",
+    "proof": "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/proof.md",
+    "result": "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/result.json",
+    "check": "proofs/FROZEN-WORLDS-20261020-001C/FROZEN-WORLDS-20261020-001C-P001_frozen_and_flexible_worlds/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "colourings_frozen_and_flexible_worlds_proved": true,
+    "star_knot_not_all_distinct_proved": true,
+    "nativity_world_relative_proved": true,
+    "hard_core_native_everywhere_without_knots_proved": true
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Which worlds of non-linear laws admit finite changes, and whether their K1-K3 knots are native there. No native recurrence, composed topology, path, metric, space or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py computes the star-knot projection on Z^2 and the tree with finite-domain K1-K3, unique completions of the plane colourings on boxes of side 4-7 and of the frozen tree colouring at depths 3-5, flexibility at eight flat-class worlds and none at the plane world, 60 exact height-function patches on the tree, and flexibility and the absence of knots for the hard-core law; three controls rejected; no human or external review",
+    "level": "V1 prose proof with executable checks; cites Peled-Spinka, Chandgotia-Peled-Sheffield-Tassy, Ray-Spinka, Zdeborova-Krzakala (2007), Achlioptas-Coja-Oghlan (2008), Molloy, Brightwell-Winkler (2000), Schaefer (1978), FROZEN-WORLDS-20261020-001B-P001 and HOLES-AT-INFINITY-20261020-001C-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. Frozen colourings, height functions and freezing in random colourings are classical; the star relation is elementary. The delta is the reading: under the source-aware reading native knots of one law depend on the world, and native loops without knots occur (hard-core).",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

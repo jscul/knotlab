@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "CYCLE-TOPS-20261021-001Z-P001",
+  "canonical_id": "CYCLE-TOPS-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "CYCLE-TOPS-20261021-001Z",
+  "proof": "CYCLE-TOPS-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the cycle-tops epic",
+  "status": "Proved",
+  "claim": "Ledger closing CYCLE-TOPS-20261021-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "CYCLE-TOPS-20261021-001A",
+    "CYCLE-TOPS-20261021-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract, manifest or result changes, the contract is not Frozen, the experiment's signal differs from its recorded value (true), or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A supported, B proved)."
+  ],
+  "lineage": {
+    "home_scope": "CYCLE-TOPS-20261021-001",
+    "epic_path": [
+      "CYCLE-TOPS-20261021-001"
+    ],
+    "parents": [
+      "experiments/CYCLE-TOPS-20261021-001A/CYCLE-TOPS-20261021-001A-E001_tops_census/contract.json",
+      "artifacts/CYCLE-TOPS-20261021-001A/CYCLE-TOPS-20261021-001A-E001_tops_census/result.json",
+      "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json",
+      "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "experiments/CYCLE-TOPS-20261021-001A/CYCLE-TOPS-20261021-001A-E001_tops_census/contract.json": "8f2c157fc45bb95fb8faea512cfbfbe3c8a47a77a0b6d1ab6ed64fb4fa11d8c5",
+    "artifacts/CYCLE-TOPS-20261021-001A/CYCLE-TOPS-20261021-001A-E001_tops_census/result.json": "30c4c0dd6a263d776dd679ed5852926309bb9e8a9fbbf4b7e58a8cbec4dd26c7",
+    "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json": "f62ce6ce9fb7d1c3fba07391bede51bdb302a93cf3b7ffe9e44f9a04bdd63f17",
+    "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/result.json": "5ea83089f98ce1304738499c21207d440f5bc459f9cd3ea2e3a10af1f94f0b16"
+  },
+  "paths": {
+    "manifest": "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the frozen census contract and its signalling result and to the Proved proof and its passed result; decision note present; tickets supported and proved; no human or external review",
+    "level": "V0 ledger check: bound digests, frozen contract, recorded experiment signal, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

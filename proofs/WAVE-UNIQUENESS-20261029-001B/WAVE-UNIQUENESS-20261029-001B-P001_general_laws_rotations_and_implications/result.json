@@ -1,0 +1,221 @@
+{
+ "schema_version": 1,
+ "artifact_id": "WAVE-UNIQUENESS-20261029-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 level 2: R_2 = sum <v_i,u_j><y_i,u_k><y_j,v_k> u_i v_j y_k for every two-sector law": {
+   "ok": true,
+   "detail": {
+    "symbolic identity in twelve vector entries": true
+   }
+  },
+  "2 the hexagon of cross pairings has exactly five minimal covers; the three of size four force a pair symmetry": {
+   "ok": true,
+   "detail": {
+    "constraints (edges)": [
+     [
+      "X1",
+      "Y1"
+     ],
+     [
+      "X1",
+      "Z2"
+     ],
+     [
+      "X2",
+      "Y2"
+     ],
+     [
+      "X2",
+      "Z1"
+     ],
+     [
+      "Y1",
+      "Z1"
+     ],
+     [
+      "Y2",
+      "Z2"
+     ]
+    ],
+    "minimal covers": [
+     [
+      "X1",
+      "Y2",
+      "Z1"
+     ],
+     [
+      "X2",
+      "Y1",
+      "Z2"
+     ],
+     [
+      "X1",
+      "X2",
+      "Y1",
+      "Y2"
+     ],
+     [
+      "X1",
+      "X2",
+      "Z1",
+      "Z2"
+     ],
+     [
+      "Y1",
+      "Y2",
+      "Z1",
+      "Z2"
+     ]
+    ],
+    "size-four covers give pair-symmetric laws": true
+   }
+  },
+  "3 the cyclic branch: level 2 exactly c = +-1; level 3 exactly when a first-sector vector is a coordinate vector": {
+   "ok": true,
+   "detail": {
+    "(0, 0, 0)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x1*x2*x3"
+     ],
+     "level 3, c = -1": "none"
+    },
+    "(0, 0, 1)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x1*x2"
+     ],
+     "level 3, c = -1": [
+      "x3"
+     ]
+    },
+    "(0, 1, 0)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x1*x3"
+     ],
+     "level 3, c = -1": [
+      "x2"
+     ]
+    },
+    "(0, 1, 1)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x1"
+     ],
+     "level 3, c = -1": [
+      "x2*x3"
+     ]
+    },
+    "(1, 0, 0)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x2*x3"
+     ],
+     "level 3, c = -1": [
+      "x1"
+     ]
+    },
+    "(1, 0, 1)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x2"
+     ],
+     "level 3, c = -1": [
+      "x1*x3"
+     ]
+    },
+    "(1, 1, 0)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": [
+      "x3"
+     ],
+     "level 3, c = -1": [
+      "x1*x2"
+     ]
+    },
+    "(1, 1, 1)": {
+     "level 2": [
+      "(c - 1)*(c + 1)"
+     ],
+     "level 3, c = 1": "none",
+     "level 3, c = -1": [
+      "x1*x2*x3"
+     ]
+    }
+   }
+  },
+  "4 implication laws: closure pairings vanish; all twelve types exact at levels 2 to 9 with factor <v,y>^(k-1)": {
+   "ok": true,
+   "detail": {
+    "vanishing pairings and the two surviving assignments (symbolic)": true,
+    "types checked": 12,
+    "support of e0 v y + Jv Jy e1 (a = 1 implies c = 1)": [
+     [
+      "000",
+      "001",
+      "010",
+      "011",
+      "101",
+      "111"
+     ]
+    ]
+   }
+  },
+  "5 rank one in a corner: R_k = u (x) M^k times a scalar, so M^2 = cM: products and u(a)[b = c]; the rotations are exact at levels 2 to 8": {
+   "ok": true,
+   "detail": {
+    "identity for k = 2, 3": true,
+    "u(a)[b = c], rotation (0, 1, 2)": true,
+    "u(a)[b = c], rotation (1, 2, 0)": true,
+    "u(a)[b = c], rotation (2, 0, 1)": true,
+    "product u(a) x(b) z(c), rotation (0, 1, 2)": true,
+    "product u(a) x(b) z(c), rotation (1, 2, 0)": true,
+    "product u(a) x(b) z(c), rotation (2, 0, 1)": true
+   }
+  },
+  "6 knots: implication and rank-one laws are not knots; the rotations of signed not-all-equal are": {
+   "ok": true,
+   "detail": {
+    "implication law (2, -3)": false,
+    "u(a)[b = c]": false,
+    "product": false,
+    "signed not-all-equal, rotation (0, 1, 2)": true,
+    "signed not-all-equal, rotation (1, 2, 0)": true,
+    "signed not-all-equal, rotation (2, 0, 1)": true
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "a cyclic law with no coordinate vector is exact at level 2 but not 3": true,
+    "an implication law with one weight changed fails level 2 or 3": true,
+    "a law with ratio c = 2 on the cyclic branch fails level 2": true
+   }
+  },
+  "ok": true,
+  "seconds": 38.4
+ }
+}

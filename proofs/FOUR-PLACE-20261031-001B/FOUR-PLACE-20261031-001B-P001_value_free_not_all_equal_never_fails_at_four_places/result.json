@@ -1,0 +1,153 @@
+{
+ "artifact_id": "FOUR-PLACE-20261031-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; ticket A and PINNING C Proved and passed": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "Proved",
+     "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json": "passed",
+     "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json": "Proved",
+     "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 signed Seymour lemma on 150 random unsatisfiable signed systems (lines of 2-4 points): every minimal unsatisfiable set of lines covers at most as many points as it has lines, and when equal its signed incidence pattern is sign-nonsingular (|det| = #PM)": {
+   "info": {
+    "systems drawn": 482,
+    "unsatisfiable": 150,
+    "violations": []
+   },
+   "pass": true
+  },
+  "1b the lemma's cubic instance, from PINNING-20261031-001C: on all 1,380,864 signings of cubic systems with n <= 6, not-all-equal fails exactly when the signed incidence matrix is sign-nonsingular": {
+   "info": {
+    "PINNING C check 2": {
+     "agree": 1380864,
+     "failing signings": 2176,
+     "signings": 1380864
+    }
+   },
+   "pass": true
+  },
+  "2 no incidence graph of a 4-regular 4-uniform system with n <= 7 has a sign-nonsingular signing (all signings up to row and column sign changes); with a perfect matching as diagonal each digraph has in- and out-degree 3 and strong weak components (Thomassen's hypothesis); control: the Fano plane's incidence graph (cubic, the knot's space) does have one": {
+   "info": {
+    "Fano control": {
+     "perfect matchings": 24,
+     "sign-nonsingular signing": true
+    },
+    "any sign-nonsingular": false,
+    "rows": {
+     "n=4 #0": {
+      "perfect matchings": 24,
+      "sign-nonsingular signing": false
+     },
+     "n=5 #0": {
+      "perfect matchings": 44,
+      "sign-nonsingular signing": false
+     },
+     "n=6 #0": {
+      "perfect matchings": 80,
+      "sign-nonsingular signing": false
+     },
+     "n=6 #1": {
+      "perfect matchings": 80,
+      "sign-nonsingular signing": false
+     },
+     "n=6 #2": {
+      "perfect matchings": 82,
+      "sign-nonsingular signing": false
+     },
+     "n=6 #3": {
+      "perfect matchings": 80,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #0": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #1": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #10": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #11": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #12": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #13": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #2": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #3": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #4": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #5": {
+      "perfect matchings": 148,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #6": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #7": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #8": {
+      "perfect matchings": 144,
+      "sign-nonsingular signing": false
+     },
+     "n=7 #9": {
+      "perfect matchings": 148,
+      "sign-nonsingular signing": false
+     }
+    },
+    "systems": 20
+   },
+   "pass": true
+  },
+  "3 satisfiability: k = 4, every signing of every 4-regular 4-uniform system with n <= 7 has a solution (ticket A, check 6); k = 5, every signing of the 5-regular 5-uniform systems K5,5 (n = 5) and K6,6 minus a perfect matching (n = 6) has one": {
+   "info": {
+    "k = 5 failing/total": {
+     "n=5": "0/1048576",
+     "n=6": "0/16777216"
+    }
+   },
+   "pass": true
+  },
+  "4 rigidity (observed): every not-all-equal piece with three to five internal points accepts a not-all-equal relation (14 states) or everything (16), never nothing, never an equality": {
+   "info": {
+    "(piece, accepted relation) pairs": 37,
+    "accepted sizes": [
+     14,
+     16
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "For every k >= 4, signed not-all-equal never fails on k-regular k-uniform systems (any signs on incidences). (i) Signed Seymour lemma: if a signed system is not-all-equal-unsatisfiable and minimal, then it has at least as many lines as points, and with equality every real matrix with its signed incidence pattern is nonsingular (sign-nonsingular): otherwise a nonzero real kernel vector colours its support by sign, satisfying every line it meets, and minimality colours the rest. (ii) In a k-regular k-uniform system a minimal failing subsystem has as many lines as points and full degrees, so it is a union of components. (iii) Its incidence pattern is not sign-nonsingular: with a perfect matching as diagonal its digraph has in- and out-degree k - 1 >= 3, every weak component of a regular digraph is strong, and Thomassen (1992) proved such digraphs even (an even-weight cycle under every 0/1 weighting). At k = 3 the digraph has degree 2 and the failures are exactly the knot's Pfaffian spaces. Checked: k = 4, every 4-regular 4-uniform system with n <= 7 and every signing satisfiable; no such incidence graph has a sign-nonsingular signing; not-all-equal pieces with up to five internal points accept only not-all-equal relations or everything.",
+ "kind": "proof",
+ "proof": "FOUR-PLACE-20261031-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FOUR-PLACE-20261031-001B"
+}

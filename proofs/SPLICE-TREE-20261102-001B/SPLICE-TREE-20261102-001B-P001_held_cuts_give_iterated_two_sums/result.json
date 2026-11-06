@@ -1,0 +1,75 @@
+{
+ "artifact_id": "SPLICE-TREE-20261102-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/manifest.json": "Proved",
+     "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 on seven assemblies of three and four pieces, at every removal (one per piece on the 19-point Fano chain): the circuits that cross at least one cut, all of them held, are exactly the iterated 2-sums through held hubs of circuits crossing no cut, and every iterated 2-sum produced is a circuit (all circuits up to 13 points; up to 6 elements at 16 and 5 at 19)": {
+   "info": {
+    "Fano > Fano > Fano": {
+     "circuits crossing only held cuts": 402,
+     "iterated 2-sums produced": 402,
+     "of which crossing two or more held cuts": 162,
+     "removals": 3,
+     "removals where the two sets are equal": 3
+    },
+    "Fano > K4 > Fano": {
+     "circuits crossing only held cuts": 36,
+     "iterated 2-sums produced": 36,
+     "of which crossing two or more held cuts": 0,
+     "removals": 16,
+     "removals where the two sets are equal": 16
+    },
+    "K4 > Fano > K4": {
+     "circuits crossing only held cuts": 72,
+     "iterated 2-sums produced": 72,
+     "of which crossing two or more held cuts": 0,
+     "removals": 13,
+     "removals where the two sets are equal": 13
+    },
+    "K4 > K4 < K4": {
+     "circuits crossing only held cuts": 0,
+     "iterated 2-sums produced": 0,
+     "of which crossing two or more held cuts": 0,
+     "removals": 10,
+     "removals where the two sets are equal": 10
+    },
+    "K4 > K4 > K4": {
+     "circuits crossing only held cuts": 0,
+     "iterated 2-sums produced": 0,
+     "of which crossing two or more held cuts": 0,
+     "removals": 10,
+     "removals where the two sets are equal": 10
+    },
+    "K4 > K4 > K4 > K4": {
+     "circuits crossing only held cuts": 0,
+     "iterated 2-sums produced": 0,
+     "of which crossing two or more held cuts": 0,
+     "removals": 13,
+     "removals where the two sets are equal": 13
+    },
+    "K4 star (three leaves into a K4 centre)": {
+     "circuits crossing only held cuts": 0,
+     "iterated 2-sums produced": 0,
+     "of which crossing two or more held cuts": 0,
+     "removals": 13,
+     "removals where the two sets are equal": 13
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Knots that cross only held cuts are iterated 2-sums. In a knot space assembled along a tree of simple 3-edge cuts, after removing a line M: (1) every circuit of the solutions that crosses at least one cut, all of them held, is obtained from circuits that cross no cut by repeated 2-sums through the hubs of held cuts, (K1 - p) u (K2 - p') with K1 on a held cut's point side and K2 on its line side, each through one port; (2) every such iterated 2-sum is a circuit; (3) so a circuit that is not obtained this way crosses a cut that M opens: new emergence lives only across opened cuts. Proof: HUB-GLUE B at each held cut, by induction on the number of cuts crossed, using that in a tree every cut crossed by either part of a 2-sum is crossed by the whole. Checked as an exact set equality on the six assemblies of ticket A (all circuits) and on a chain of three Fano pieces (19 points, circuits up to 5 elements, one removal in each piece): 510 circuits crossing only held cuts, 162 of them across two held cuts at once, all iterated 2-sums.",
+ "kind": "proof",
+ "proof": "SPLICE-TREE-20261102-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SPLICE-TREE-20261102-001B"
+}

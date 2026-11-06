@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TWIST-3D-20261025-001B-P001",
+  "canonical_id": "TWIST-3D-20261025-001B-P001",
+  "kind": "proof",
+  "ticket": "TWIST-3D-20261025-001B",
+  "proof": "TWIST-3D-20261025-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The sign survives the twist",
+  "status": "Proved",
+  "claim": "In Turaev-Viro form on ordered triangulations, for the triangle rule of each of the eight non-windable knots (the no-lone knots and the six twisted Fibonacci knots), positive weights cannot have full support, because 60 to 162 identities have monomials on one side only. Every positive weighting is supported, on tetrahedra, on constant labellings, on the whole parity class of the knot, or for the no-lone knots on that class with one constant; on the parity class the logarithmic 2-3 system is exactly the span of the gauge directions, so the state sum is |H1(M; Z2)|/2. Every positive state sum with these triangle rules is 1, 2, |H1(M; Z2)|/2 or |H1(M; Z2)|/2 + 1: the sign survives the twist.",
+  "dependencies": [
+    "TWIST-3D-20261025-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A non-windable knot whose identities under full positive support are all two-sided.",
+    "A consistent positive support outside the stated families.",
+    "On a parity class, a solution direction of the 2-3 identities that is not a gauge direction, or a gauge direction that is not a solution direction.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "TWIST-3D-20261025-001",
+    "epic_path": [
+      "TWIST-3D-20261025-001"
+    ],
+    "parents": [
+      "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/manifest.json",
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/manifest.json": "5ce596b8a00cac6a10d3a61bedb693d5792a3f75979ce9f364222146379ef0aa",
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json": "c726ce5f6bd7ef51a27f6e9972b979fc0b43c7ba8008b2944acbc184a20fd30a"
+  },
+  "paths": {
+    "manifest": "proofs/TWIST-3D-20261025-001B/TWIST-3D-20261025-001B-P001_the_sign_survives_the_twist/manifest.json",
+    "identity": "proofs/TWIST-3D-20261025-001B/TWIST-3D-20261025-001B-P001_the_sign_survives_the_twist/identity.json",
+    "directory": "proofs/TWIST-3D-20261025-001B/TWIST-3D-20261025-001B-P001_the_sign_survives_the_twist",
+    "proof": "proofs/TWIST-3D-20261025-001B/TWIST-3D-20261025-001B-P001_the_sign_survives_the_twist/proof.md",
+    "result": "proofs/TWIST-3D-20261025-001B/TWIST-3D-20261025-001B-P001_the_sign_survives_the_twist/result.json",
+    "check": "proofs/TWIST-3D-20261025-001B/TWIST-3D-20261025-001B-P001_the_sign_survives_the_twist/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "sign_survives_twist_shown": true
+  },
+  "foundation_claim_scope": "Ordered triangulations, one bit per edge, positive weights in Turaev-Viro form, triangle rules from the eight non-windable knots. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) lists the one-sided identities, enumerates all consistent positive supports for the eight knots, and computes over the rationals that the logarithmic 2-3 system on the parity class equals the span of the gauge directions (dimension 7); three controls. No human or external review",
+    "level": "V1 prose proof with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

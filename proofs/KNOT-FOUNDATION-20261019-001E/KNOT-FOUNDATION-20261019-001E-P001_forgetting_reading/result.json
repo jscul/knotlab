@@ -1,0 +1,173 @@
+{
+  "artifact_id": "KNOT-FOUNDATION-20261019-001E-P001",
+  "checks": {
+    "absence_knots": 2,
+    "absence_knots_are_knots": true,
+    "four_variable_eight_state_knots": 2,
+    "four_variable_eight_state_knots_are_parity": true,
+    "gated_cross_guards_are_knot": true,
+    "hub_is_knot": false,
+    "knots_by_width": {
+      "3": {
+        "atom_is_knot": true,
+        "atom_minimum_width": 3,
+        "parity_is_knot": true,
+        "parity_minimum_width": 3
+      },
+      "4": {
+        "atom_is_knot": true,
+        "atom_minimum_width": 4,
+        "parity_is_knot": true,
+        "parity_minimum_width": 4
+      },
+      "5": {
+        "atom_is_knot": true,
+        "atom_minimum_width": 5,
+        "parity_is_knot": true,
+        "parity_minimum_width": 5
+      },
+      "6": {
+        "atom_is_knot": true,
+        "atom_minimum_width": null,
+        "parity_is_knot": true,
+        "parity_minimum_width": null
+      }
+    },
+    "lean_axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "lean_axioms_standard_only": true,
+    "lean_kernel_accepted": true,
+    "lean_source_free_of_escapes": true,
+    "lean_theorems_present": true,
+    "lean_version": "Lean (version 4.32.2, x86_64-unknown-linux-gnu, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+    "majority_closed_knots": 0,
+    "most_hidden_bits": 1.0,
+    "most_hidden_only_parity": true,
+    "no_knot_with_fewer_than_half_the_states": true,
+    "parents_bound": true,
+    "parity_chain": {
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true
+    },
+    "parity_is_absence_knot": false,
+    "parity_of_fixed_value_is_knot": false,
+    "shapes": [
+      [
+        1,
+        8,
+        0.193
+      ],
+      [
+        2,
+        4,
+        0.415
+      ],
+      [
+        2,
+        12,
+        0.415
+      ],
+      [
+        3,
+        8,
+        0.678
+      ],
+      [
+        4,
+        2,
+        1.0
+      ]
+    ],
+    "single_clauses_are_knots": 8,
+    "three_variable_knots_minimum_width": [
+      3
+    ],
+    "tied_is_knot": false,
+    "two_cnf_knots": 0,
+    "two_cnf_relations_without_witnesses": 166,
+    "two_loop_knots": 34
+  },
+  "claim": "Under the forgetting reading of K1-K3, a knot of two loops and a contact is a relation on three variables that is constrained as a whole while every pair is unconstrained. Exactly 34 relations qualify, in five shapes up to renaming and negation, from a single three-literal clause (the atom, 0.19 bits) to parity (1 bit, the most a three-variable pattern can hide). No 2-CNF with witnesses defines a knot; a knot implies no clause narrower than its variables; naming each partial match keeps parity at three literals with 4(n-1)+1 clauses; and every knot of the absence reading is a knot here, while parity is a knot only here.",
+  "controls": {
+    "broken_chain_rejected": true,
+    "k2_without_the_contact_admits_more": true,
+    "knot_test_rejects_hub": true,
+    "lean_rejects_mutated_parity": true,
+    "majority_check_rejects_parity": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control",
+    "audit"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "KNOT-FOUNDATION-20261019-001E-P001",
+  "safe_conclusions": {
+    "absence_knots_are_forgetting_knots": true,
+    "affine_xor_boundary_proved": false,
+    "atom_hides_least_parity_hides_most": true,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "forgetting_reading_defined": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "knot_implies_only_full_width_clauses": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "native_status_of_loop_structures_decided": false,
+    "no_two_cnf_with_witnesses_defines_a_knot": true,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "parity_chain_keeps_width_three": true,
+    "parity_is_a_knot_under_forgetting": true,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": true,
+    "transition_system_boundary_proved": true,
+    "two_cnf_boundary_proved": true,
+    "two_cnf_three_cnf_knot_boundary_proved": true,
+    "two_loop_knot_census_34_in_5_shapes": true,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "cnf-arity"
+  ],
+  "status": "passed",
+  "thesis_alignment": {
+    "bare_semantics_only_is_terminal": false,
+    "encoding_firewall_checked": true,
+    "irreducible_joint_contact_checked": true,
+    "loop_erasure_contact_loss_checked": true,
+    "protected_thesis": "native-3-cnf-positive-native-2-cnf-negative",
+    "scope": "Relational semantics with the forgetting reading of K1-K3 (canonical since 2026-10-19): a knot is a relation over the loops' open distinctions and a contact that is constrained as a whole and unconstrained in every part. 'proved_present' means three-literal relations pass it; 'proved_absent' means no 2-CNF with witnesses does, since 2-CNF relations are determined by their pairs. Which logical structures count as native loops stays interpretive, so the native-formation safe flags stay false.",
+    "thesis_status": "supported",
+    "three_cnf_atomic_logical_topology": "proved_present",
+    "three_cnf_irreducible_joint_contact": "proved_present",
+    "three_cnf_loop_erasure_contact_loss": "proved_present",
+    "three_cnf_native_emergence": "proved_present",
+    "two_cnf_atomic_logical_topology": "proved_absent",
+    "two_cnf_irreducible_joint_contact": "proved_absent",
+    "two_cnf_loop_erasure_contact_loss": "proved_absent",
+    "two_cnf_native_emergence": "proved_absent"
+  },
+  "ticket": "KNOT-FOUNDATION-20261019-001E"
+}

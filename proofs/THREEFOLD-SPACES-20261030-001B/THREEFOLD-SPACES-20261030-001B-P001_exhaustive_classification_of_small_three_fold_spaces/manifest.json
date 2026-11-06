@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-SPACES-20261030-001B-P001",
+  "canonical_id": "THREEFOLD-SPACES-20261030-001B-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-SPACES-20261030-001B",
+  "proof": "THREEFOLD-SPACES-20261030-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Exhaustive classification of small three-fold spaces",
+  "status": "Proved",
+  "claim": "Exhaustive SAT classification (sound lexicographic symmetry breaking; CaDiCaL, replayed with Glucose 4 for n <= 12 and without symmetry breaking for n <= 9) of connected cubic triple systems with three distinct points per line: for n <= 13 a system that is not 2-colourable exists only for n = 7 (the Fano plane, unique) and n = 13 (unique up to isomorphism: the Fano splice; point and line splices are isomorphic); with one twisted incidence, none for n <= 13. With the duality of SPACE-SELECTION-20261030-001C: the knot's three-fold spaces (contacts three-fold with odd base count, distinct corner triangles) with at most 13 triangles are exactly the duals of the Fano plane and of the Fano splice, for any corner line; the 13-point system has three line orbits, and all 18 corner choices give gadgets exact at the knot with lambda(0) = 25. Phase-pure gadgets (contacts two-fold with one base incidence or three-fold with odd base count) number 1, 0, 2, 24, 256, 3248 for n = 1..6; none has a lock and none is exact at the knot.",
+  "dependencies": [
+    "THREEFOLD-SPACES-20261030-001A",
+    "SPACE-SELECTION-20261030-001C"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "theorem"
+    ]
+  },
+  "failure_conditions": [
+    "A SAT answer that does not replay with the second solver or without symmetry breaking.",
+    "A second isomorphism class at 7 or 13 points.",
+    "A corner choice of the 13-point system whose gadget is not exact at the knot.",
+    "A phase-pure gadget with a lock, or one exact at the knot, with at most six triangles."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-SPACES-20261030-001",
+    "epic_path": [
+      "THREEFOLD-SPACES-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/manifest.json",
+      "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/result.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "7d4aea1e0994189c09c1d9f84db61ad21aed7fde23283db4dddc1ebafc183837",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/manifest.json": "b66da6ad62e762adb3177017f4cc3dd8a27585e28cbc9f7d56f85af1b6f0a2ec",
+    "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/result.json": "01edac6c88d0f1605787c11c3220128b6a806756b9b22c37d43066cafff629b1",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py": "b876a6a2d4b198b2e68eb99b3b9185809ebf3614d4ea6ad2e949b491aa8ac97b"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/manifest.json",
+    "identity": "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/identity.json",
+    "directory": "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces",
+    "proof": "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/proof.md",
+    "result": "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/result.json",
+    "check": "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "small_threefold_spaces_classified": true
+  },
+  "foundation_claim_scope": "Connected cubic triple systems with three distinct points per line, at most 13 points; their dual three-fold gadgets and the signed not-all-equal knot. Lines repeating a point (multigraph pieces) are outside the search.",
+  "validation": {
+    "status": "checked: SAT answers for n = 3..13, untwisted and twisted, replayed with a second solver (n <= 12) and without symmetry breaking (n <= 9); enumeration of all symmetry-broken solutions at 7 and 13 with isomorphism classification; 18 gadgets at 13 exact; phase-pure enumeration to six triangles; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta); the small cases are consistent with the known theory of sign-nonsingular matrices and even cycles (F7 unique strongly 2-connected, McCuaig 2000)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

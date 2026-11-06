@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SURFACE-GLUING-20261024-001A-P001",
+  "canonical_id": "SURFACE-GLUING-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "SURFACE-GLUING-20261024-001A",
+  "proof": "SURFACE-GLUING-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Native gluing builds surfaces, and four knots see only the surface",
+  "status": "Proved",
+  "claim": "Hub-free networks of three-place relations (every shared variable in exactly two copies) are pants decompositions of compact orientable surfaces with Euler characteristic minus the number of copies; two-place relations give only paths and cycles. A symmetric three-place relation glues topologically, as a relation or with witness counts, exactly when two glued copies give a result symmetric in its four legs. Among the 34 knots exactly four glue topologically with counts: the two parity knots (leg total fixed, 2^genus witnesses, one hidden bit per handle) and the two 'no lone value' knots (sphere: no single leg carries the lone value; any handle frees everything; closed genus-g counts tr H^(g-1), H = [[3,1],[1,2]], eigenvalue ratio the golden ratio squared); the two frozen knots forget once glued; not-all-equal and the 27 asymmetric knots see more than the surface. All-equal, the hub, glues topologically but is not a knot.",
+  "dependencies": [
+    "NATIVE-NETWORK-20261021-001Z",
+    "EMERGENCE-BITS-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A hub-free network whose glued result or witness counts differ from the profile of its genus and boundary for a relation classified as topological.",
+    "A relation classified as not topological whose four-leg composite is symmetric, or the converse.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "SURFACE-GLUING-20261024-001",
+    "epic_path": [
+      "SURFACE-GLUING-20261024-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/EMERGENCE-BITS-20261021-001Z/EMERGENCE-BITS-20261021-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "79d4141c67f0e6f1467e2b98a3661cbe5dfaefcfdc1542c7f3c5ce9b29a589c7",
+    "proofs/EMERGENCE-BITS-20261021-001Z/EMERGENCE-BITS-20261021-001Z-P001_epic_closure/manifest.json": "7942ab8b0429fd13e7a9e6639273935c4a3d92a1744749b19c6d24fca66e8e9e"
+  },
+  "paths": {
+    "manifest": "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/manifest.json",
+    "identity": "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/identity.json",
+    "directory": "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing",
+    "proof": "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/proof.md",
+    "result": "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/result.json",
+    "check": "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "topological_gluing_classified": true
+  },
+  "foundation_claim_scope": "Finite Boolean relations glued along shared variables; surfaces are read from the gluing pattern, not drawn. No physical space is claimed.",
+  "validation": {
+    "status": "checked: prose proof (elementary: Euler characteristic, generalized associativity, linear algebra over GF(2), an induction for the no-lone relations); check.py (standard library) enumerates all connected hub-free networks with up to six copies (220 shapes up to isomorphism) and confirms the census of all 16 symmetric relations, the four-leg criterion, the parity and no-lone formulas, the frozen certificate, the knot census and three controls. No human or external review",
+    "level": "V1 prose proof with exhaustive checks up to six copies",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

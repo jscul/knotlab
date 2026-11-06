@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "artifact_id": "PC-DEGREE-20261020-001B-P001",
+  "canonical_id": "PC-DEGREE-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "PC-DEGREE-20261020-001B",
+  "proof": "PC-DEGREE-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Polynomial calculus degree of Tseitin formulas is half the carving width, up to one",
+  "status": "Proved",
+  "claim": "For a connected graph G with an odd charge, over any field of characteristic other than 2: (1) the reduced polynomial calculus closure of the binomial Tseitin system is the closure of signed relations y_A ~ +-y_B among monomials of degree at most d under translation within degree and transitivity, each relation labelled by the vertex set U with A xor B = cut(U); (2) if the cut function has a tangle of order 2d+1, every label stays on the tangle's small side, so no degree-d refutation exists, and by the duality theorem of Robertson and Seymour (Graph Minors X (3.5); Geelen, Gerards, Robertson and Whittle 2006, Theorem 3.2) the degree is at least ceil(cvw/2); (3) a carving of width w yields a refutation of degree floor(w/2)+1 with balanced binomial axioms; (4) with the standard binomial or clause axioms the reduced degree is max(maxdegree, that value), and the standard (unreduced) convention is at most one higher.",
+  "dependencies": [
+    "TSEITIN-NS-DEGREE-NOTE-20261020-001"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "polynomial-calculus-degree",
+    "tseitin-formulas",
+    "graph-layout-widths"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "The signed closure disagrees with plain linear algebra on a declared instance.",
+    "An explicit carving derivation uses a line above degree floor(w/2)+1 or an illegal step, or fails to reach 1.",
+    "A brute-force tangle of order 2d+1 exists on a declared instance but some label of the degree-d closure lies outside it.",
+    "A geometric lemma fails on the exhaustive small range."
+  ],
+  "lineage": {
+    "home_scope": "PC-DEGREE-20261020-001",
+    "epic_path": [
+      "PC-DEGREE-20261020-001"
+    ],
+    "parents": [
+      "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/manifest.json": "4b0c440d36480fddd1d63795d1069a2515227be3fdf7d1a373da489e0ba87ccd",
+    "artifacts/PC-DEGREE-20261020-001A/PC-DEGREE-20261020-001A-E001_pc_census/result.json": "0a4f2c6bd88f6e0fb9a94c3adafbcae01e45b5b87573099fdb166c02f7479dbd"
+  },
+  "paths": {
+    "manifest": "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json",
+    "identity": "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/identity.json",
+    "directory": "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width",
+    "proof": "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/proof.md",
+    "result": "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/result.json",
+    "check": "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "binomial_pc_closure_is_signed_relation_closure_proved": true,
+    "tangle_of_order_2d_plus_1_forbids_degree_d_proved": true,
+    "pc_degree_at_least_half_carving_width_proved_given_duality": true,
+    "carving_of_width_w_gives_degree_floor_half_w_plus_one_proved": true,
+    "standard_encodings_within_one_proved": true,
+    "even_width_rule_determined": false,
+    "duality_theorem_reproved_here": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "A proof-complexity theorem about Tseitin formulas; no contact-first claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies the geometric lemmas exhaustively on small ground sets, the closure model against plain linear algebra over F3 (255 cases), the tangle invariant and the duality on small instances by exhaustive tangle search, and replays explicit carving derivations as legal reduced PC steps on 155 graphs including K55; three controls fail as they should; the census PC-DEGREE-20261020-001A-E001 agrees on 1,253 graphs; no human or external review",
+    "level": "V1 prose proof with executable checks on declared instances; the lower bound uses the tangle duality theorem (Robertson and Seymour, Graph Minors X (3.5); Geelen, Gerards, Robertson and Whittle 2006, Theorem 3.2), cited, not reproved; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 found exact characterizations for resolution measures (Galesi, Talebanfard and Toran), branch-width governing resolution size (Alekhnovich and Razborov) and linear PC degree lower bounds on expanders (Buss, Grigoriev, Impagliazzo and Pitassi), but no statement of PC degree in terms of carving width; not found stated.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

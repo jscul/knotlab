@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ACYCLIC-COINCIDENCE-20261023-001A-P001",
+  "canonical_id": "ACYCLIC-COINCIDENCE-20261023-001A-P001",
+  "kind": "proof",
+  "ticket": "ACYCLIC-COINCIDENCE-20261023-001A",
+  "proof": "ACYCLIC-COINCIDENCE-20261023-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The path-sign move: why non-isomorphic shrunken graphs have equal acyclic counts",
+  "status": "Proved",
+  "claim": "In a signed graph, let a path of k edges run from a to b (a != b) through vertices met by nothing else, and let a and b be joined elsewhere by a positive and a negative link. Flipping the sign of one path edge leaves the chromatic polynomial, which equals chi(rest) ((lambda - 1)^k - (-1)^k) / lambda, the zero-free chromatic polynomial, the characteristic polynomial of the frame matroid, T(x, 0) and so the number of acyclic orientations unchanged, while the Tutte polynomial can change. Each of the 48 skeletons behind the six residual twist relations of TWIST-MAP-20261023-001B-E001 on L(3,1,3,1) is explained by one such flip followed by an isomorphism of frame matroids, so every exact twist relation left by walls and symmetries on the four fresh genus-2 surfaces holds skeleton by skeleton through isomorphic reduced pieces, with this move on 48 skeletons of six relations.",
+  "dependencies": [
+    "TWIST-MAP-20261023-001A",
+    "TWIST-MAP-20261023-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A signed graph satisfying the hypothesis whose chromatic polynomial or T(x, 0) changes under the flip.",
+    "One of the 48 residual skeleton pairs that no single flip relates to an isomorphic frame matroid.",
+    "The reconstructed shrunken graphs give skeleton counts c * A different from the recorded ones.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "ACYCLIC-COINCIDENCE-20261023-001",
+    "epic_path": [
+      "ACYCLIC-COINCIDENCE-20261023-001"
+    ],
+    "parents": [
+      "proofs/TWIST-MAP-20261023-001A/TWIST-MAP-20261023-001A-P001_local_factorization/manifest.json",
+      "experiments/TWIST-MAP-20261023-001B/TWIST-MAP-20261023-001B-E001_genus_two_map/contract.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TWIST-MAP-20261023-001A/TWIST-MAP-20261023-001A-P001_local_factorization/manifest.json": "362f26e1f90b1593c7c40a45383d3ac9d9bad64507ceb038929653c4715c8e24",
+    "experiments/TWIST-MAP-20261023-001B/TWIST-MAP-20261023-001B-E001_genus_two_map/contract.json": "8bb7e38e18055c9647e14a690676d1104d2f2c60545bd1075605cf357bf81eab"
+  },
+  "paths": {
+    "manifest": "proofs/ACYCLIC-COINCIDENCE-20261023-001A/ACYCLIC-COINCIDENCE-20261023-001A-P001_path_sign_move/manifest.json",
+    "identity": "proofs/ACYCLIC-COINCIDENCE-20261023-001A/ACYCLIC-COINCIDENCE-20261023-001A-P001_path_sign_move/identity.json",
+    "directory": "proofs/ACYCLIC-COINCIDENCE-20261023-001A/ACYCLIC-COINCIDENCE-20261023-001A-P001_path_sign_move",
+    "proof": "proofs/ACYCLIC-COINCIDENCE-20261023-001A/ACYCLIC-COINCIDENCE-20261023-001A-P001_path_sign_move/proof.md",
+    "result": "proofs/ACYCLIC-COINCIDENCE-20261023-001A/ACYCLIC-COINCIDENCE-20261023-001A-P001_path_sign_move/result.json",
+    "check": "proofs/ACYCLIC-COINCIDENCE-20261023-001A/ACYCLIC-COINCIDENCE-20261023-001A-P001_path_sign_move/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "path_sign_move_proved": true,
+    "residual_relations_explained": true
+  },
+  "foundation_claim_scope": "Signed graphs and the shrunken signed graphs of twisted orientations on the genus-2 surface L(3,1,3,1); exact polynomial identities. Graphs and surfaces are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) confirms Theorem 2 on 300 random signed graphs (chromatic and characteristic polynomials, T(2,0) and the closed form unchanged in all; brute-force colourings at lambda = 3, 5 and zero-free colourings at lambda = 2, 4 on 271; the Tutte polynomial changed in 149), rebuilds L(3,1,3,1) and the shrunken graphs of the 48 residual skeletons (c * A reproduces all 96 recorded counts; equal characteristic and different Tutte polynomials in all 48; one flip gives isomorphic frame matroids in all 48). Four controls rejected. No human or external review",
+    "level": "V1 prose proof with exhaustive residue check and sampled theorem checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

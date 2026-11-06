@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPLICE-TREE-20261102-001B-P001",
+  "canonical_id": "SPLICE-TREE-20261102-001B-P001",
+  "kind": "proof",
+  "ticket": "SPLICE-TREE-20261102-001B",
+  "proof": "SPLICE-TREE-20261102-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Knots that cross only held cuts are iterated 2-sums",
+  "status": "Proved",
+  "claim": "Knots that cross only held cuts are iterated 2-sums. In a knot space assembled along a tree of simple 3-edge cuts, after removing a line M: (1) every circuit of the solutions that crosses at least one cut, all of them held, is obtained from circuits that cross no cut by repeated 2-sums through the hubs of held cuts, (K1 - p) u (K2 - p') with K1 on a held cut's point side and K2 on its line side, each through one port; (2) every such iterated 2-sum is a circuit; (3) so a circuit that is not obtained this way crosses a cut that M opens: new emergence lives only across opened cuts. Proof: HUB-GLUE B at each held cut, by induction on the number of cuts crossed, using that in a tree every cut crossed by either part of a 2-sum is crossed by the whole. Checked as an exact set equality on the six assemblies of ticket A (all circuits) and on a chain of three Fano pieces (19 points, circuits up to 5 elements, one removal in each piece): 510 circuits crossing only held cuts, 162 of them across two held cuts at once, all iterated 2-sums.",
+  "dependencies": [
+    "SPLICE-TREE-20261102-001A"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A circuit crossing only held cuts that is not an iterated 2-sum of circuits crossing no cut.",
+    "An iterated 2-sum through held hubs that is not a circuit."
+  ],
+  "lineage": {
+    "home_scope": "SPLICE-TREE-20261102-001",
+    "epic_path": [
+      "SPLICE-TREE-20261102-001"
+    ],
+    "parents": [
+      "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/manifest.json",
+      "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/result.json",
+      "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/tree_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/manifest.json": "506c729eaaec89e310f5c73d55023beaadc3f6b6a6c64c0fe15213eb05cb8a3d",
+    "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/result.json": "a6d3626e3deb9d93daf2de9fbc146f283bdf84746e3f213d3fe0fd304beb2074",
+    "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/tree_lib.py": "670722fd76fa375e134260590be62a651926bbb497952b20101b538961d08c7c"
+  },
+  "paths": {
+    "manifest": "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/manifest.json",
+    "identity": "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/identity.json",
+    "directory": "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums",
+    "proof": "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/proof.md",
+    "result": "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/result.json",
+    "check": "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "iterated_two_sums_proved": true
+  },
+  "foundation_claim_scope": "Knot spaces assembled along trees of simple 3-edge cuts; removal of one line.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: exact set equality on seven assemblies of three and four pieces; no human or external review",
+    "novelty": "An induction on HUB-GLUE B; new here."
+  }
+}

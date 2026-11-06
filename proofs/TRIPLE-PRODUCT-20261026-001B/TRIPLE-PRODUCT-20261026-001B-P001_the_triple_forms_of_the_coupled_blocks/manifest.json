@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TRIPLE-PRODUCT-20261026-001B-P001",
+  "canonical_id": "TRIPLE-PRODUCT-20261026-001B-P001",
+  "kind": "proof",
+  "ticket": "TRIPLE-PRODUCT-20261026-001B",
+  "proof": "TRIPLE-PRODUCT-20261026-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The triple forms of the coupled blocks",
+  "status": "Proved",
+  "claim": "On 3-surgery on the closure of s1^3 s2^3 ... s_{n-1}^3 times a full twist, for n = 6, 9, 12, the twisted triple product T (recovered up to scalar per block from the obstruction bimap through duality) splits into one inseparable block of F4-dimension d = 3, 5, 7 and n/3 - 1 trefoil-type singletons. On the inseparable block, the Bockstein part D(a) = T(a, a, .), a Frobenius-semilinear map V -> V*, has rank d - 1, and the alternating part is nonzero. The block counts are 244, 8176 and 367684, as in UT3-INTERACT-PROBE-20261026-001. These counts are not functions of the Bockstein part: in a fixed basis, keeping the entries T(e_i, e_i, e_k) (which transform among themselves under a change of basis) and changing only the entries with three distinct indices changes the count (d = 3: 784 when the distinct-index entry is 0, 244 when it is nonzero; d = 5: several values). So the family's counts reflect one choice of alternating part, which Borromean moves change freely (TRIPLE-PRODUCT-20261026-001C); no closed form for them was found.",
+  "dependencies": [
+    "TRIPLE-PRODUCT-20261026-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A recovered block form whose kernel count differs from the obstruction bimap's count, or whose singleton splitting fails.",
+    "A Bockstein rank other than d - 1 on the inseparable block, or a block count other than 244, 8176, 367684.",
+    "Counts that do not change when only the alternating part changes (the D-only control)."
+  ],
+  "lineage": {
+    "home_scope": "TRIPLE-PRODUCT-20261026-001",
+    "epic_path": [
+      "TRIPLE-PRODUCT-20261026-001"
+    ],
+    "parents": [
+      "proofs/TRIPLE-PRODUCT-20261026-001A/TRIPLE-PRODUCT-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum/manifest.json",
+      "proofs/TRIPLE-PRODUCT-20261026-001A/TRIPLE-PRODUCT-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TRIPLE-PRODUCT-20261026-001A/TRIPLE-PRODUCT-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum/manifest.json": "c6fbbf2e53e912bfeb3af0e55dda82ec37d3a536d3c0f66dabb76e3de13af6a1",
+    "proofs/TRIPLE-PRODUCT-20261026-001A/TRIPLE-PRODUCT-20261026-001A-P001_counting_maps_is_a_twisted_cubic_gauss_sum/result.json": "44e6499af5bb7fee38591d4b25b7b6e5194ea6d3542bda7fcc0c99e5c4d73a71"
+  },
+  "paths": {
+    "manifest": "proofs/TRIPLE-PRODUCT-20261026-001B/TRIPLE-PRODUCT-20261026-001B-P001_the_triple_forms_of_the_coupled_blocks/manifest.json",
+    "identity": "proofs/TRIPLE-PRODUCT-20261026-001B/TRIPLE-PRODUCT-20261026-001B-P001_the_triple_forms_of_the_coupled_blocks/identity.json",
+    "directory": "proofs/TRIPLE-PRODUCT-20261026-001B/TRIPLE-PRODUCT-20261026-001B-P001_the_triple_forms_of_the_coupled_blocks",
+    "proof": "proofs/TRIPLE-PRODUCT-20261026-001B/TRIPLE-PRODUCT-20261026-001B-P001_the_triple_forms_of_the_coupled_blocks/proof.md",
+    "result": "proofs/TRIPLE-PRODUCT-20261026-001B/TRIPLE-PRODUCT-20261026-001B-P001_the_triple_forms_of_the_coupled_blocks/result.json",
+    "check": "proofs/TRIPLE-PRODUCT-20261026-001B/TRIPLE-PRODUCT-20261026-001B-P001_the_triple_forms_of_the_coupled_blocks/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "coupled_blocks_identified": false
+  },
+  "foundation_claim_scope": "Exact computation on three manifolds of one family (n = 6, 9, 12); the n = 15 block (d = 9) is not identified. The decomposition into a Bockstein part and an alternating part is basis-dependent except for the Bockstein map up to semilinear congruence. No closed form for the block counts is claimed or excluded beyond the tested hypotheses. No complexity claim; no P versus NP claim.",
+  "validation": {
+    "status": "checked: exact recomputation of the three coupled blocks (recovered forms, singleton splitting, Bockstein ranks, counts and corank distributions) and the alternating-part control; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-26."
+  }
+}

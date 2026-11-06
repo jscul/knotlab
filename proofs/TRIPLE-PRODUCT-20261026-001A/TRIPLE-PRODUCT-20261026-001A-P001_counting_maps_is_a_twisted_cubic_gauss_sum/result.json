@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "artifact_id": "TRIPLE-PRODUCT-20261026-001A-P001",
+  "status": "Proved",
+  "checks": {
+    "1_group": {
+      "|G|": 192,
+      "associativity (20000 random triples)": true,
+      "(n, h^e) -> (Frobenius(n), h^2e) is an automorphism": true,
+      "centre trivial": true,
+      "ok": true
+    },
+    "2_brute_force": {
+      "rows": {
+        "3_1": {
+          "d": 1,
+          "N": 7,
+          "N for psi^2": 7,
+          "1 + 128 4^d N": 3585,
+          "brute force": 3585,
+          "H1": [
+            3
+          ],
+          "ok": true,
+          "seconds": 0.1
+        },
+        "5_1": {
+          "d": 0,
+          "N": 1,
+          "N for psi^2": 1,
+          "1 + 128 4^d N": 129,
+          "brute force": 129,
+          "H1": [
+            3
+          ],
+          "ok": true,
+          "seconds": 0.1
+        },
+        "4_1": {
+          "d": 1,
+          "N": 16,
+          "N for psi^2": 16,
+          "1 + 128 4^d N": 8193,
+          "brute force": 8193,
+          "H1": [
+            3
+          ],
+          "ok": true,
+          "seconds": 1.6
+        },
+        "5_2": {
+          "d": 0,
+          "N": 1,
+          "N for psi^2": 1,
+          "1 + 128 4^d N": 129,
+          "brute force": 129,
+          "H1": [
+            3
+          ],
+          "ok": true,
+          "seconds": 2.8
+        },
+        "8_18": {
+          "d": 2,
+          "N": 112,
+          "N for psi^2": 112,
+          "1 + 128 4^d N": 229377,
+          "brute force": 229377,
+          "H1": [
+            3
+          ],
+          "ok": true,
+          "seconds": 9.5
+        },
+        "3_1 # 3_1": {
+          "d": 2,
+          "N": 49,
+          "N for psi^2": 49,
+          "1 + 128 4^d N": 100353,
+          "brute force": 100353,
+          "H1": [
+            3
+          ],
+          "ok": true,
+          "seconds": 4.6
+        }
+      },
+      "ok": true
+    },
+    "3_duality": {
+      "rows": {
+        "3_1": {
+          "dim_F2 V": 2,
+          "dim W": 2,
+          "symmetric balanced solutions (F2 dim)": 2,
+          "injective solution": true,
+          "N": 7,
+          "N from T": 7,
+          "cubic character sum": 7,
+          "ok": true,
+          "seconds": 0.0
+        },
+        "8_18": {
+          "dim_F2 V": 4,
+          "dim W": 2,
+          "symmetric balanced solutions (F2 dim)": 2,
+          "injective solution": true,
+          "N": 112,
+          "N from T": 112,
+          "cubic character sum": 112,
+          "ok": true,
+          "seconds": 0.0
+        },
+        "3_1 # 3_1": {
+          "dim_F2 V": 4,
+          "dim W": 4,
+          "symmetric balanced solutions (F2 dim)": 4,
+          "injective solution": true,
+          "N": 49,
+          "N from T": 49,
+          "cubic character sum": 49,
+          "ok": true,
+          "seconds": 0.0
+        },
+        "(3_1)^#3": {
+          "dim_F2 V": 6,
+          "dim W": 6,
+          "symmetric balanced solutions (F2 dim)": 6,
+          "injective solution": true,
+          "N": 343,
+          "N from T": 343,
+          "cubic character sum": 343,
+          "ok": true,
+          "seconds": 0.0
+        },
+        "coupled n = 6": {
+          "dim_F2 V": 8,
+          "dim W": 8,
+          "symmetric balanced solutions (F2 dim)": 4,
+          "injective solution": true,
+          "N": 1708,
+          "N from T": 1708,
+          "ok": true,
+          "seconds": 0.0
+        },
+        "(4_1)^#5 with a Borromean insertion": {
+          "dim_F2 V": 10,
+          "dim W": 6,
+          "symmetric balanced solutions (F2 dim)": 2,
+          "injective solution": true,
+          "N": 80896,
+          "N from T": 80896,
+          "ok": true,
+          "seconds": 0.1
+        }
+      },
+      "ok": true
+    },
+    "4_regression": {
+      "rows": {
+        "(3_1)^#1": {
+          "count": 3585,
+          "1 + 128 28^k": 3585
+        },
+        "(3_1)^#2": {
+          "count": 100353,
+          "1 + 128 28^k": 100353
+        },
+        "(3_1)^#3": {
+          "count": 2809857,
+          "1 + 128 28^k": 2809857
+        },
+        "(4_1)^#1": {
+          "count": 8193,
+          "1 + 128 64^k": 8193
+        },
+        "(4_1)^#2": {
+          "count": 524289,
+          "1 + 128 64^k": 524289
+        }
+      },
+      "ok": true
+    },
+    "5_controls": {
+      "rows": {
+        "dropping the obstruction overcounts on S3_3(3_1)": true,
+        "the figure-eight has zero obstruction (N = |V|^2)": true
+      },
+      "ok": true
+    },
+    "ok": true,
+    "seconds": 18.8
+  }
+}

@@ -1,0 +1,67 @@
+{
+ "artifact_id": "STRIP-RELAY-20261103-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json": "Proved",
+     "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json": "passed",
+     "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/manifest.json": "Proved",
+     "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/result.json": "passed",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "passed",
+     "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json": "Proved",
+     "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the heights lemma: on a ladder, a grid, a grown space, a thick tube and a ladder arm spliced onto a grid, every port pattern fixes the ports' height differences, every point it freezes has a fixed height difference to the ports, and the transfer's frozen lines are exactly the lines with two frozen points": {
+   "info": {
+    "(line, port pattern) pairs": 4752,
+    "(line, port pattern) pairs with at most two patterns": 376,
+    "(point, port pattern) pairs": 5172,
+    "frozen": 488,
+    "frozen with a fixed height difference": 488,
+    "frozen with a varying height difference": 0,
+    "pairs where the transfer's two fixed points are the heights' frozen points": 4752,
+    "port patterns": 102,
+    "port patterns fixing every port height difference": 102
+   },
+   "pass": true
+  },
+  "2 reduction: on two rings spliced onto the 64-point grid and four small junction pieces, at every attachment point, creation (pipeline) at every gluing line on the point's side of the cut, every removal and far side, is the same in the spliced space and in the side's own closed space with the handle's ports on corresponding lines": {
+   "info": {
+    "far: spliced False, reduced False": 190320,
+    "far: spliced True, reduced True": 2232,
+    "near: spliced False, reduced False": 50888,
+    "near: spliced True, reduced True": 10096
+   },
+   "pass": true
+  },
+  "3 the reduced-faces law: every creating far line on the point's side lies on a face around the point in the reduced space, including every line off those faces in the spliced space; creating far lines across the cut lie on faces around the point": {
+   "info": {
+    "across the cut: on the faces around z in the spliced space True": 100,
+    "same side: spliced off, reduced on": 28,
+    "same side: spliced on, reduced on": 526
+   },
+   "pass": true
+  },
+  "4 exact reduction: on the 21-point junction with the Fano plane at three points, exact creation (join method) at every gluing line on the point's side agrees between the spliced space and the reduced 16-point grid": {
+   "info": {
+    "spliced False, reduced False": 984,
+    "spliced True, reduced True": 96
+   },
+   "pass": true
+  }
+ },
+ "claim": "Heights and reduction. (1) The heights lemma (proved). In the split at the attachment point the merged face takes one skip, on the arc fixed by the port class, so the class fixes the ports' height differences exactly; the heights with those port values are the integer solutions of a difference system, closed under rounded midpoints, so each point's height ranges over an interval of integers and its value is fixed exactly when its height is. So a port pattern freezes exactly the points whose height difference to the ports cannot vary. Checked: 102 of 102 port patterns fix the ports' heights, 488 of 488 frozen (point, pattern) pairs have a fixed height difference, and 4,752 of 4,752 (line, pattern) pairs agree with the transfer, on a ladder, a grid, a grown space, a thick tube and a ladder arm spliced onto a grid. (2) The reduction lemma (proved for the transfer and the pipeline). Across a 3-edge cut, a side holding neither the attachment point nor the gluing line acts as the vertex it lost, so replacing it by that vertex leaves the transfer and the pipeline's creation unchanged, with the handle's ports on corresponding lines. Checked at every attachment point of two rings spliced onto the 64-point grid and four small junctions: 253,536 (line, removal, far side) cases with no disagreement; exactly (join method) on the 21-point junction, 1,080 cases. (3) So the faces-around-the-point law holds in the reduced space: all 554 creating far lines on the point's side lie on a face around it there, including the 28 off those faces in the spliced space, the junction counterexample of FACE-CLAIM-20261103-001C. A ring point sees the closed prism, where the ring's far face is its opposite face.",
+ "kind": "proof",
+ "proof": "STRIP-RELAY-20261103-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "STRIP-RELAY-20261103-001A"
+}

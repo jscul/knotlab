@@ -1,0 +1,166 @@
+{
+ "artifact_id": "FOUR-PLACE-20261031-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; ticket A passed": {
+   "info": {
+    "mismatched": {},
+    "parents": 3
+   },
+   "pass": true
+  },
+  "1 each class has a piece with five internal points (degree 4), four ports (degree 1) and six distinct lines whose accepted relation is (a rel b) x {0,1}^2 with rel equality or disequality: two ports linked, two free on different lines (recomputed by brute force)": {
+   "info": {
+    "not-exactly-two": {
+     "accepted": 8,
+     "free ports": [
+      5,
+      6
+     ],
+     "lines": [
+      [
+       0,
+       1,
+       2,
+       3
+      ],
+      [
+       0,
+       1,
+       2,
+       4
+      ],
+      [
+       0,
+       1,
+       2,
+       5
+      ],
+      [
+       0,
+       1,
+       3,
+       4
+      ],
+      [
+       2,
+       3,
+       4,
+       6
+      ],
+      [
+       3,
+       4,
+       7,
+       8
+      ]
+     ],
+     "link": "port 7 = port 8",
+     "relations (truth tables over 0000..1111, in line order)": [
+      "1110100110010111",
+      "1110100110010111",
+      "1110100110010111",
+      "1001111001111001",
+      "1110100110010111",
+      "1001111001111001"
+     ]
+    },
+    "twelve": {
+     "accepted": 8,
+     "free ports": [
+      5,
+      6
+     ],
+     "lines": [
+      [
+       0,
+       1,
+       2,
+       3
+      ],
+      [
+       0,
+       1,
+       2,
+       4
+      ],
+      [
+       0,
+       1,
+       2,
+       5
+      ],
+      [
+       0,
+       1,
+       3,
+       4
+      ],
+      [
+       2,
+       3,
+       4,
+       6
+      ],
+      [
+       3,
+       4,
+       7,
+       8
+      ]
+     ],
+     "link": "port 7 = port 8",
+     "relations (truth tables over 0000..1111, in line order)": [
+      "1111100110011111",
+      "1111100110011111",
+      "1111100110011111",
+      "1001111111111001",
+      "1111100110011111",
+      "1001111111111001"
+     ]
+    }
+   },
+   "pass": true
+  },
+  "2 neither class is closed under a Schaefer polymorphism (ticket A, check 3), so with unbounded occurrences both are NP-complete": {
+   "info": {
+    "not-all-equal": [],
+    "not-exactly-two": [],
+    "parity": [
+     "affine (minority)"
+    ],
+    "twelve": []
+   },
+   "pass": true
+  },
+  "3 regularization end to end: 160 random instances (4-9 variables, up to 27 constraints) map to simple 4-regular 4-uniform systems without repeated lines, over the same class, with the same satisfiability (SAT solver on both)": {
+   "info": {
+    "failures": [],
+    "tallies": {
+     "not-exactly-two": {
+      "instances": 80,
+      "satisfiable": 38,
+      "unsatisfiable": 42
+     },
+     "twelve": {
+      "instances": 80,
+      "satisfiable": 58,
+      "unsatisfiable": 22
+     }
+    }
+   },
+   "pass": true
+  },
+  "4 control: with a piece that accepts everything in place of the link, copies decouple and satisfiability changes on some instances": {
+   "info": {
+    "instances whose satisfiability changed (of 60)": 21
+   },
+   "pass": true
+  }
+ },
+ "claim": "The not-exactly-two and twelve classes build equality on 4-regular pieces, so deciding them on 4-regular systems is NP-complete and their failures are coNP-complete to recognise. Each class has a piece with five internal points of degree 4, four ports of degree 1 and six lines without repetition, whose accepted port relation is (a = b) x {0,1}^2: two ports forced equal, two free. Regularization: replace each variable with occurrence count d by m = max(d, 2) copies joined in a cycle by m equality pieces; the 2m free ports fill the copies' 2m - d spare incidences, and the remaining sum of d, four per constraint, fill one absorber point per constraint. The result is a simple 4-regular 4-uniform system without repeated lines, solvable iff the instance is. With Schaefer's theorem (neither class is 0-valid, 1-valid, Horn, dual Horn, bijunctive or affine) both are NP-complete on 4-regular systems. Checked: the pieces by enumeration, the reduction end to end on random instances with a SAT solver.",
+ "kind": "proof",
+ "proof": "FOUR-PLACE-20261031-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FOUR-PLACE-20261031-001C"
+}

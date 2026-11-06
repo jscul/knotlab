@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-DIMENSION-20261024-001A-P001",
+  "canonical_id": "HUB-DIMENSION-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "HUB-DIMENSION-20261024-001A",
+  "proof": "HUB-DIMENSION-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Bits see a three-manifold only through its mod-2 cohomology",
+  "status": "Proved",
+  "claim": "Among symmetric laws of bits on the edges of triangulations of closed orientable three-manifolds (a rule on the number of 1-edges of each triangle and a rule on the class of each tetrahedron's labelling), the laws satisfying the 2-3 and 1-4 move identities and allowing some configuration reduce to seven: all 0, all 1, all equal, free, even parity, odd parity, and even or odd; their normalized counts are constants or the size of the mod-2 first cohomology, and even parity counts |H^1(M; Z/2)| times two to the vertices minus one. Every other law that is ever allowed breaks on explicit sampled moves. Native networks, with bits on faces, see only the dual graph: one-tetrahedron triangulations of the sphere and of L(4,1) share their native network while edge parity counts 1 and 2. So bits see dimension three only through hubs, and then only through the mod-2 first cohomology.",
+  "dependencies": [
+    "SURFACE-GLUING-20261024-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A symmetric edge law satisfying the local move identities that is not trivial or parity, or a law failing them whose counts keep a fixed ratio on every sampled move.",
+    "A triangulation on which the parity count differs from the mod-2 first cohomology times two to the vertices minus one.",
+    "One-tetrahedron triangulations of the sphere and L(4,1) with different native networks, or equal edge-parity counts.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "HUB-DIMENSION-20261024-001",
+    "epic_path": [
+      "HUB-DIMENSION-20261024-001"
+    ],
+    "parents": [
+      "proofs/SURFACE-GLUING-20261024-001Z/SURFACE-GLUING-20261024-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SURFACE-GLUING-20261024-001Z/SURFACE-GLUING-20261024-001Z-P001_epic_closure/manifest.json": "c1a47c6571296cf5c17a3a95ef04d3bc15d78333f71c56c947b3769817fed2f0"
+  },
+  "paths": {
+    "manifest": "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json",
+    "identity": "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/identity.json",
+    "directory": "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology",
+    "proof": "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/proof.md",
+    "result": "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/result.json",
+    "check": "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "bits_see_mod2_cohomology_shown": true
+  },
+  "foundation_claim_scope": "Finite census of symmetric Boolean laws on the edges of triangulations of closed orientable three-manifolds, with explicit triangulations; classical topology cited as background. No physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, own triangulation code, Smith normal form and moves on singular triangulations) confirms the census of 32,768 laws, 65 sampled moves certifying every failing law, the parity formula on 65 triangulations, the blindness of native networks and the failure of the Fibonacci rule; three controls. Move connectivity (Pachner, Matveev-Piergallini) cited as background. No human or external review",
+    "level": "V1 prose proof with exhaustive local census and sampled global certificates",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

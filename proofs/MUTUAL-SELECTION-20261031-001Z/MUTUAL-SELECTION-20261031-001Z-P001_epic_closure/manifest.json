@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "artifact_id": "MUTUAL-SELECTION-20261031-001Z-P001",
+  "canonical_id": "MUTUAL-SELECTION-20261031-001Z-P001",
+  "kind": "proof",
+  "ticket": "MUTUAL-SELECTION-20261031-001Z",
+  "proof": "MUTUAL-SELECTION-20261031-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the mutual-selection scan",
+  "status": "Proved",
+  "claim": "Ledger closing MUTUAL-SELECTION-20261031-001: one line per lane conclusion with its label and evidence, the replays, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "MUTUAL-SELECTION-20261031-001A",
+    "MUTUAL-SELECTION-20261031-001B",
+    "MUTUAL-SELECTION-20261031-001C"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound lane manifest changes.",
+    "The decision note or a lane report is missing.",
+    "A lane ticket lacks its terminal status class (closed-null)."
+  ],
+  "lineage": {
+    "home_scope": "MUTUAL-SELECTION-20261031-001",
+    "epic_path": [
+      "MUTUAL-SELECTION-20261031-001"
+    ],
+    "parents": [
+      "research/MUTUAL-SELECTION-20261031-001A/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001B/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001C/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "research/MUTUAL-SELECTION-20261031-001A/manifest.json": "63720d09d5f4df5e62dcc5fbe6994626e05e49b0906396c3bf45877f4a504068",
+    "research/MUTUAL-SELECTION-20261031-001B/manifest.json": "00780b4bcefba1e2d98732ecb2c9e4e133710a5beebec4cad931e4b730f0fb5e",
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "dce42dbefe8c23386bf8b7567ff010e427dcc0acd1685bb15e50b0b2da51ca15"
+  },
+  "paths": {
+    "manifest": "proofs/MUTUAL-SELECTION-20261031-001Z/MUTUAL-SELECTION-20261031-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/MUTUAL-SELECTION-20261031-001Z/MUTUAL-SELECTION-20261031-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/MUTUAL-SELECTION-20261031-001Z/MUTUAL-SELECTION-20261031-001Z-P001_epic_closure",
+    "proof": "proofs/MUTUAL-SELECTION-20261031-001Z/MUTUAL-SELECTION-20261031-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/MUTUAL-SELECTION-20261031-001Z/MUTUAL-SELECTION-20261031-001Z-P001_epic_closure/result.json",
+    "check": "proofs/MUTUAL-SELECTION-20261031-001Z/MUTUAL-SELECTION-20261031-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the three lane documentation manifests; decision note and lane reports present; lane tickets terminal; every lane's script rerun in a temporary mirror with outputs identical apart from timing; no human or external review",
+    "level": "V0 ledger check: bound digests, note and reports present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31."
+  }
+}

@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SIGNED-SUBDIVISION-20261029-001C-E001",
+ "ticket": "SIGNED-SUBDIVISION-20261029-001C",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "numerical_search",
+ "question": "Under shared subdivision of the triangular-lattice torus, does any rule shape that SIGNED-SUBDIVISION-20261029-001B leaves open (not excluded by the sign-parity obstruction and without an affine solution set) admit a real weighting, with magnitudes in the gauge slice between 1/100 and 100 and any sign class, that satisfies the exactness equations F = c W on the coarse 2-torus and 3-torus (and the 4-torus at scale 2), at scale 2 or scale 3, as found by a multistart local search?",
+ "public_inputs": {
+  "rule_shapes": "the 122 S2 and S1 rule shapes of SHARED-SUBDIVISION-20261029-001A (ss_lib.rule_shapes)",
+  "labels": "SIGNED-SUBDIVISION-20261029-001B-P001 result.json: shapes excluded by the sign-parity obstruction, open shapes, and the 22 affine shapes",
+  "code": "ss_lib.py and rw_lib.py of SIGNED-SUBDIVISION-20261029-001B-P001 (sign classes, gauge slice); run.py here (float evaluation by block products of the transfer matrix, checked against the exact sums of ss_lib)",
+  "parameters": "N_START = 24 random starts per (shape, scale, sign class) on the coarse 2-torus; N_JOINT = 8 random starts plus the best point for the joint search on the coarse 2- and 3-tori; free log-magnitudes in [-ln 100, ln 100]; CAND = 1e-8; CONF = 1e-9; NONDEG = 1e-6 (an allowed assignment must keep |F| above this fraction of the sum of the absolute values of its terms, so that c != 0); seed 20261029"
+ },
+ "forbidden_inputs": "No tuning of thresholds, box or starts after seeing the full results, except to fix a bug (recorded with its reason). No use of the pre-activation scoping searches of this epic as evidence.",
+ "primary_observable": "For each (shape, scale, sign class): the best residual on the coarse 2-torus, where each exactness equation is normalized by its own scale (allowed x: (F(x) W(x0) - F(x0) W(x)) / (|F(x) W(x0)| + |F(x0) W(x)|); forbidden x: F(x) divided by the sum of the absolute values of its terms); for candidates (best < CAND), the best joint residual on the coarse 2- and 3-tori and, at scale 2, the residual on the coarse 4-torus. Confirmation also requires the non-degeneracy NONDEG on both tori.",
+ "predictions": [
+  "P1: no open shape has a confirmed weighting (joint residual below CONF, and the 4-torus residual below CONF at scale 2) at either scale.",
+  "P2 (power): every exact plus-minus-one class of the affine shapes (28 at scale 2, 36 at scale 3) is confirmed from random starts.",
+  "P3 (consistency): no shape excluded by SIGNED-SUBDIVISION-20261029-001B is confirmed, and no shape excluded on the coarse 2-torus reaches a 2-torus candidate.",
+  "P4: no golden weighting of the Fibonacci laws in the targeted grid is exact on the coarse 2- and 3-tori (largest residual above CONF)."
+ ],
+ "decision_rule": "If P1 holds and P2, P3 hold, record evidence (not proof) that interference with real weights in the box builds no exact law on the open shapes at these sizes. If an open shape is confirmed, record a candidate non-affine exact real law and propose an exact verification ticket; do not claim exactness from the search. If P2 or P3 fails, the search is unreliable: record the failure and do not draw the P1 conclusion.",
+ "cheapest_control": "The prototype flaw must stay fixed: at the weighting where the earlier globally normalized residual reported 5e-9 on the S1 atom excluding 000 (F and W concentrated on one coarse assignment, per-assignment ratios from 3e-7 to 1), the per-equation residual must exceed 0.1.",
+ "resource_ceiling": "Four worker processes, standard numpy and scipy; at most three hours wall-clock.",
+ "first_executable_signal": "Prototype on 2026-10-29 (before freezing): the S1 atom excluding 000 has best residual 2.24 in its unsigned class at both scales; the twisted pair excluding 011, 100 is confirmed in its unsigned class at both scales; block evaluation agrees with the exact sums of ss_lib on coarse sides 2 to 4 (scale 2) and 2 to 3 (scale 3). An earlier prototype with a residual normalized globally (F/|F| - s W/|W|) was fooled by concentration and was replaced before freezing. End-to-end prototype on the first 12 tasks after SIGNED-SUBDIVISION-20261029-001B closed: the S2 atom excluding 000 reaches a best 2-torus residual of 9.2e-5 at scale 2 (no candidate); the cheapest control gives 1.0; the golden grid gives 1.0 everywhere.",
+ "stop_rule": "Run once over all 122 shapes, both scales and every sign class (1,888 searches); search every candidate jointly once; then stop and record.",
+ "nonclaims": [
+  "A local search can miss exact weightings; a null result is evidence, not a theorem.",
+  "Magnitudes are limited to the gauge slice between 1/100 and 100; weightings outside the box, or reached only in the limit of degenerate weights, are not tested.",
+  "Exactness is tested on the coarse 2- and 3-tori (and the 4-torus at scale 2), not on all tori."
+ ],
+ "targeted_record": "The epic's starting point: the Fibonacci laws (no lone one, and no lone zero), on up triangles and on all triangles, with weights sigma_|t| phi^(s |t|) on Hamming classes (phi the golden ratio, s in {-1, -1/2, -1/4, 1/4, 1/2, 1}, the two nonzero-class signs free); the largest per-equation residual on the coarse 2- and 3-tori at both scales is recorded. Prediction P4: none is below CONF.",
+ "frozen_at": "2026-10-29",
+ "code_sha256": {
+  "run.py": "92e6f6f3507aab2f7f6ba852a203b3f98a1be5a124f6a02daee148e05a3546f2"
+ }
+}

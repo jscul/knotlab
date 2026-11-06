@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RELAY-NET-20261104-001B-P001",
+  "canonical_id": "RELAY-NET-20261104-001B-P001",
+  "kind": "proof",
+  "ticket": "RELAY-NET-20261104-001B",
+  "proof": "RELAY-NET-20261104-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Broadcast, depth and bypasses",
+  "status": "Proved",
+  "claim": "Broadcast, depth and bypasses (validated pipeline; exact on three small networks). (1) Broadcast: a hub (a 16-point grid or a cube) receiving a relay from a ring that carries an opened Fano handle, and emitting into two 16-point grids at the lines nearest its receiving point, relays the handle into both grids at once (5 ring points reach both through the 16-point grid, 2 through the cube); through strips after the hub no ring point reaches both. (2) Direction: in chains of strips, cubes, 16-point grids and thick tubes with the handle at every point, no creation ever lies upstream of the handle's piece. (3) Bypasses: stations whose two cut vertices are adjacent pass the relay without loss through 1 to 4 stations (5 ring points reach the final grid each time). (4) Exact: on a cube hub with two small prism receivers, an aligned chain three cuts deep and a two-cut relay (18 to 19 plane points), at the relaying ring points exact creation (join method) agrees with the pipeline in all 1,896 cases and creates in each receiver, three cuts away and two cuts away.",
+  "dependencies": [
+    "RELAY-NET-20261104-001A"
+  ],
+  "evidence_modes": [
+    "finite-validation",
+    "finite-instance-classification",
+    "exact-proof"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "exact-proof"
+    ]
+  },
+  "failure_conditions": [
+    "A hub network where no ring point reaches both receivers.",
+    "A creation upstream of the handle's piece in any chain.",
+    "A chain of thin stations (adjacent cut vertices) that stops the relay.",
+    "A small network where exact creation and the pipeline disagree, or where the broadcast, the three-cut relay or the two-cut relay is not exact."
+  ],
+  "lineage": {
+    "home_scope": "RELAY-NET-20261104-001",
+    "epic_path": [
+      "RELAY-NET-20261104-001"
+    ],
+    "parents": [
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json",
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json",
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/relay_lib.py",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json": "31437632bde5e11865b2f754abafd2ffd18b844eef4ed6bbca8b8a21c86c7775",
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json": "b9d1e91e1b4ce97f44e8ceeb10fa291b97f29e9cdd2ff6536d89bc5d3578529e",
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/relay_lib.py": "60a2da2a544d6797f29ad08b2bae4df3b0ee1ed375363522210150eef55d6764",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py": "0748e21df9761fdd6ba98a9ac11dd9e60b19e574bf38ba81ff5ffd8b8f15c6f9",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py": "55bf8bb3096978270faf9728d4baf4e8529419ae751af66c7bb32cb21bb8c98f",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1"
+  },
+  "paths": {
+    "manifest": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/manifest.json",
+    "identity": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/identity.json",
+    "directory": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses",
+    "proof": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/proof.md",
+    "result": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/result.json",
+    "check": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "broadcast_checked": true
+  },
+  "foundation_claim_scope": "Hubs (cubes and 16-point grids) receiving from a ring and emitting into two receivers; chains of strips, cubes, grids and thick tubes; thin-station chains; small networks of cubes and prisms for exact creation; the Fano plane as handle.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-04.",
+    "status": "computed with the validated pipeline; exact on three small networks; no human or external review",
+    "novelty": "New here."
+  }
+}

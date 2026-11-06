@@ -1,0 +1,78 @@
+{
+  "artifact_id": "TRIPLE-SHIELD-20261023-001B-P001",
+  "checks": {
+    "Exhaustive line-event counts on 3 x 3 against the recorded lone counts": {
+      "(placement, twist) pairs": 8,
+      "L(c) counts equal the recorded lone counts": 8
+    },
+    "Theorem 1 on the 3 x 3, 3 x 4 and 4 x 3 tori": {
+      "even twists tested": 1260,
+      "even twists: h_f + G doubly allowed on the whole strip": 1260,
+      "fitting (placement, torus, twist)": 210,
+      "odd twists tested": 1260,
+      "odd twists: no gauge exists (control)": 1260
+    },
+    "Theorem 5 and Lemma 3 on sampled configurations of the orientation worlds": {
+      "class comparisons": 1518,
+      "configurations": 1091,
+      "contradicting configurations certified": 506,
+      "lone_c equals L(c)": 1518,
+      "no contradiction (torus has an assignment, so every cylinder has one)": 585,
+      "rank two: exactly two cylinders contradict": 316,
+      "rank-two contradictions": 316
+    }
+  },
+  "claim": "In tiling worlds of fair three-place contacts on triangular tori, the cylinder cover along a class contradicts only in twists odd on that class relative to every fitting twist. In the four orientation worlds, where each fair coin decides one clause on two places, a lone line along c (exactly one of the cylinders along (1,0), (0,1), (1,1) contradicts) is exactly the line event L(c) of the two-literal shielding theorem, because a contradiction whose cluster has rank two makes every cylinder along an odd class contradict; so their dual pairs are equal on every torus. From the exact counts of TRIPLE-SHIELD-20261023-001A-E001, the identity fails for every tested dual pair of a world in which one coin decides three places (36 three-place and 18 shared-coin pairs on the fresh 3 x 4 and 4 x 4 tori, none related by a symmetry map): the dual-pair identity separates coins that reach two places from coins that reach three, not clause width.",
+  "controls": {
+    "cylinder event without the lone condition differs from L(c)": 632,
+    "odd twist: no gauge (Theorem 1's hypothesis is needed)": 1260,
+    "rank-one contradiction leaves a cylinder along an odd class free": 190
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "TRIPLE-SHIELD-20261023-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "cylinder_parity_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "lone_lines_identified": true,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "three_place_identity_decided": true,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TRIPLE-SHIELD-20261023-001B"
+}

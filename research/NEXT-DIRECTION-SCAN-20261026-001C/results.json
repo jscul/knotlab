@@ -1,0 +1,1041 @@
+{
+  "all_trilinear_forms_F2": {
+    "alternating_F2^4": {
+      "bit_knots": 0,
+      "vector_knots": 15
+    },
+    "table": [
+      {
+        "bit_knot_only_all_ones_tensor": true,
+        "bit_knots": 1,
+        "dims": [
+          1,
+          1,
+          1
+        ],
+        "nonzero_forms": 1,
+        "vector_knots": 1
+      },
+      {
+        "bit_knot_only_all_ones_tensor": true,
+        "bit_knots": 1,
+        "dims": [
+          1,
+          1,
+          2
+        ],
+        "nonzero_forms": 3,
+        "vector_knots": 3
+      },
+      {
+        "bit_knot_only_all_ones_tensor": true,
+        "bit_knots": 1,
+        "dims": [
+          1,
+          2,
+          2
+        ],
+        "nonzero_forms": 15,
+        "vector_knots": 15
+      },
+      {
+        "bit_knot_only_all_ones_tensor": true,
+        "bit_knots": 1,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "nonzero_forms": 255,
+        "vector_knots": 255
+      },
+      {
+        "bit_knot_only_all_ones_tensor": true,
+        "bit_knots": 1,
+        "dims": [
+          1,
+          2,
+          3
+        ],
+        "nonzero_forms": 63,
+        "vector_knots": 63
+      },
+      {
+        "bit_knot_only_all_ones_tensor": true,
+        "bit_knots": 1,
+        "dims": [
+          2,
+          2,
+          3
+        ],
+        "nonzero_forms": 4095,
+        "vector_knots": 4095
+      }
+    ]
+  },
+  "bit_reading": {
+    "atom_of_parities_6bits": {
+      "allowed_states": 56,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "minimum_width": 6,
+      "notes": [],
+      "pairwise_definable": false,
+      "seconds": 0.1
+    },
+    "det2_minor_4bits": {
+      "allowed_states": 10,
+      "binding": true,
+      "bonds": {
+        "bonds": 4,
+        "examples": {
+          "size 3, atom (1 excluded state)": [
+            "{x1, x2, y1}",
+            "{x1, x2, y2}",
+            "{x1, y1, y2}"
+          ]
+        },
+        "kinds": {
+          "size 3, atom (1 excluded state)": 4
+        }
+      },
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 3,
+      "notes": [
+        "with x1 forgotten, x2=1, y1=1, y2=0 is still excluded, so a binding survives without that loop",
+        "with x2 forgotten, x1=1, y1=0, y2=1 is still excluded, so a binding survives without that loop",
+        "with y1 forgotten, x1=1, x2=0, y2=1 is still excluded, so a binding survives without that loop",
+        "with the contact y2 forgotten, x1=0, x2=1, y1=1 is still excluded, so the loops are tied without it"
+      ],
+      "pairwise_definable": false,
+      "seconds": 0.1
+    },
+    "det_F2_9bits": {
+      "allowed_states": 344,
+      "binding": true,
+      "bonds": {
+        "bonds": 36,
+        "examples": {
+          "size 6, atom (1 excluded state)": [
+            "{u1, u2, u3, v1, v2, w1}",
+            "{u1, u2, u3, v1, v2, w2}",
+            "{u1, u2, u3, v1, v3, w1}"
+          ]
+        },
+        "kinds": {
+          "size 6, atom (1 excluded state)": 36
+        }
+      },
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 8,
+      "notes": [
+        "with u1 forgotten, u2=0, u3=1, v1=0, v2=1, v3=0, w1=1, w2=0, w3=0 is still excluded, so a binding survives without that loop",
+        "with u2 forgotten, u1=0, u3=1, v1=0, v2=1, v3=0, w1=1, w2=0, w3=0 is still excluded, so a binding survives without that loop",
+        "with u3 forgotten, u1=0, u2=1, v1=0, v2=0, v3=1, w1=1, w2=0, w3=0 is still excluded, so a binding survives without that loop",
+        "with v1 forgotten, u1=0, u2=0, u3=1, v2=1, v3=0, w1=1, w2=0, w3=0 is still excluded, so a binding survives without that loop",
+        "with v2 forgotten, u1=0, u2=0, u3=1, v1=1, v3=0, w1=0, w2=1, w3=0 is still excluded, so a binding survives without that loop",
+        "with v3 forgotten, u1=0, u2=0, u3=1, v1=0, v2=1, w1=1, w2=0, w3=0 is still excluded, so a binding survives without that loop",
+        "with w1 forgotten, u1=0, u2=0, u3=1, v1=1, v2=0, v3=0, w2=1, w3=0 is still excluded, so a binding survives without that loop",
+        "with w2 forgotten, u1=0, u2=0, u3=1, v1=0, v2=1, v3=0, w1=1, w3=0 is still excluded, so a binding survives without that loop",
+        "with the contact w3 forgotten, u1=0, u2=0, u3=1, v1=0, v2=1, v3=0, w1=1, w2=0 is still excluded, so the loops are tied without it"
+      ],
+      "pairwise_definable": false,
+      "seconds": 0.9
+    },
+    "det_F3_9trits": {
+      "K1": true,
+      "K2": false,
+      "K2_fails_when_forgetting": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "K3": true,
+      "allowed": 8451,
+      "knot": false,
+      "states": 19683
+    },
+    "det_F4_18bits": {
+      "K1": true,
+      "K2": false,
+      "K2_fails_when_forgetting": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "K3": true,
+      "allowed": 80704,
+      "knot": false,
+      "states": 262144
+    },
+    "dot_times_c_5bits": {
+      "allowed_states": 26,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 4,
+      "notes": [
+        "with a1 forgotten, a2=1, b1=0, b2=1, c=1 is still excluded, so a binding survives without that loop",
+        "with a2 forgotten, a1=1, b1=1, b2=0, c=1 is still excluded, so a binding survives without that loop",
+        "with b1 forgotten, a1=0, a2=1, b2=1, c=1 is still excluded, so a binding survives without that loop",
+        "with b2 forgotten, a1=1, a2=0, b1=1, c=1 is still excluded, so a binding survives without that loop"
+      ],
+      "pairwise_definable": false,
+      "seconds": 0.1
+    },
+    "dot_zero_4bits": {
+      "allowed_states": 10,
+      "binding": true,
+      "bonds": {
+        "bonds": 4,
+        "examples": {
+          "size 3, atom (1 excluded state)": [
+            "{a1, a2, b1}",
+            "{a1, a2, b2}",
+            "{a1, b1, b2}"
+          ]
+        },
+        "kinds": {
+          "size 3, atom (1 excluded state)": 4
+        }
+      },
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 3,
+      "notes": [
+        "with a1 forgotten, a2=1, b1=0, b2=1 is still excluded, so a binding survives without that loop",
+        "with a2 forgotten, a1=1, b1=1, b2=0 is still excluded, so a binding survives without that loop",
+        "with b1 forgotten, a1=0, a2=1, b2=1 is still excluded, so a binding survives without that loop",
+        "with the contact b2 forgotten, a1=1, a2=0, b1=1 is still excluded, so the loops are tied without it"
+      ],
+      "pairwise_definable": false,
+      "seconds": 0.1
+    },
+    "e123_e456_18bits": {
+      "K1": true,
+      "K2": false,
+      "K2_fails_when_forgetting": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "K3": true,
+      "allowed": 146560,
+      "knot": false,
+      "states": 262144
+    },
+    "graph_det_10bits": {
+      "allowed_states": 512,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 10,
+      "notes": [
+        "with u1 forgotten, u2=0, u3=0, v1=0, v2=0, v3=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with u2 forgotten, u1=0, u3=0, v1=0, v2=0, v3=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with u3 forgotten, u1=0, u2=0, v1=0, v2=0, v3=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with v1 forgotten, u1=0, u2=0, u3=0, v2=0, v3=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with v2 forgotten, u1=0, u2=0, u3=0, v1=0, v3=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with v3 forgotten, u1=0, u2=0, u3=0, v1=0, v2=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with w1 forgotten, u1=0, u2=0, u3=0, v1=0, v2=0, v3=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with w2 forgotten, u1=0, u2=0, u3=0, v1=0, v2=0, v3=0, w1=0, w3=0, s=1 is still excluded, so a binding survives without that loop",
+        "with w3 forgotten, u1=0, u2=0, u3=0, v1=0, v2=0, v3=0, w1=0, w2=0, s=1 is still excluded, so a binding survives without that loop"
+      ],
+      "pairwise_definable": false,
+      "seconds": 7.8
+    },
+    "kernel_det_F2_6bits": {
+      "allowed_states": 22,
+      "binding": true,
+      "bonds": {
+        "bonds": 12,
+        "examples": {
+          "size 3, atom (1 excluded state)": [
+            "{a1, a2, b1}",
+            "{a1, a2, b2}",
+            "{a1, a3, b1}"
+          ]
+        },
+        "kinds": {
+          "size 3, atom (1 excluded state)": 12
+        }
+      },
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 3,
+      "notes": [
+        "with a1 forgotten, a2=0, a3=1, b1=0, b2=1, b3=0 is still excluded, so a binding survives without that loop",
+        "with a2 forgotten, a1=0, a3=1, b1=0, b2=1, b3=0 is still excluded, so a binding survives without that loop",
+        "with a3 forgotten, a1=0, a2=1, b1=0, b2=0, b3=1 is still excluded, so a binding survives without that loop",
+        "with b1 forgotten, a1=0, a2=0, a3=1, b2=1, b3=0 is still excluded, so a binding survives without that loop",
+        "with b2 forgotten, a1=0, a2=0, a3=1, b1=1, b3=0 is still excluded, so a binding survives without that loop",
+        "with the contact b3 forgotten, a1=0, a2=0, a3=1, b1=0, b2=1 is still excluded, so the loops are tied without it"
+      ],
+      "pairwise_definable": false,
+      "seconds": 0.0
+    },
+    "signed_atom_graph_4bits": {
+      "allowed_states": 8,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 4,
+      "notes": [
+        "with x forgotten, y=0, z=0, s=1 is still excluded, so a binding survives without that loop",
+        "with y forgotten, x=0, z=0, s=1 is still excluded, so a binding survives without that loop",
+        "with z forgotten, x=0, y=0, s=1 is still excluded, so a binding survives without that loop"
+      ],
+      "pairwise_definable": false,
+      "seconds": 0.0
+    },
+    "trdet_F4_18bits": {
+      "K1": true,
+      "K2": false,
+      "K2_fails_when_forgetting": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "K3": true,
+      "allowed": 141184,
+      "knot": false,
+      "states": 262144
+    }
+  },
+  "controls": {
+    "atom_xyz": {
+      "allowed_states": 7,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "minimum_width": 3,
+      "notes": [],
+      "pairwise_definable": false,
+      "seconds": 0.0
+    },
+    "parity": {
+      "allowed_states": 4,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "minimum_width": 3,
+      "notes": [],
+      "pairwise_definable": false,
+      "seconds": 0.0
+    },
+    "tie": {
+      "allowed_states": 4,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 2,
+      "notes": [
+        "with the contact z forgotten, x=0, y=1 is still excluded, so the loops are tied without it"
+      ],
+      "pairwise_definable": true,
+      "seconds": 0.0
+    },
+    "xor_of_fixed": {
+      "allowed_states": 2,
+      "binding": true,
+      "coexistence": true,
+      "is_knot": false,
+      "loss_on_erasure": false,
+      "minimum_width": 2,
+      "notes": [
+        "with A forgotten, B=0, c=0 is still excluded, so a binding survives without that loop",
+        "with B forgotten, A=0, c=0 is still excluded, so a binding survives without that loop",
+        "with the contact c forgotten, A=0, B=0 is still excluded, so the loops are tied without it"
+      ],
+      "pairwise_definable": true,
+      "seconds": 0.0
+    }
+  },
+  "count_identity": {
+    "all_hold": true,
+    "cases": [
+      {
+        "N": 10,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 52
+      },
+      {
+        "N": 9,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 50
+      },
+      {
+        "N": 10,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 52
+      },
+      {
+        "N": 10,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 52
+      },
+      {
+        "N": 10,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 52
+      },
+      {
+        "N": 10,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 52
+      },
+      {
+        "N": 20,
+        "dims": [
+          3,
+          3,
+          3
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 336
+      },
+      {
+        "N": 21,
+        "dims": [
+          3,
+          3,
+          3
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 340
+      },
+      {
+        "N": 23,
+        "dims": [
+          3,
+          3,
+          3
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 348
+      },
+      {
+        "N": 23,
+        "dims": [
+          3,
+          3,
+          3
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 348
+      },
+      {
+        "N": 16,
+        "dims": [
+          2,
+          3,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 96
+      },
+      {
+        "N": 16,
+        "dims": [
+          2,
+          3,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 96
+      },
+      {
+        "N": 16,
+        "dims": [
+          2,
+          3,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 96
+      },
+      {
+        "N": 14,
+        "dims": [
+          2,
+          3,
+          2
+        ],
+        "identity_holds": true,
+        "q": 2,
+        "zeros": 92
+      },
+      {
+        "N": 25,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 3,
+        "zeros": 393
+      },
+      {
+        "N": 21,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 3,
+        "zeros": 369
+      },
+      {
+        "N": 17,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 3,
+        "zeros": 345
+      },
+      {
+        "N": 17,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 3,
+        "zeros": 345
+      },
+      {
+        "N": 49,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 4,
+        "zeros": 1612
+      },
+      {
+        "N": 40,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 4,
+        "zeros": 1504
+      },
+      {
+        "N": 49,
+        "dims": [
+          2,
+          2,
+          2
+        ],
+        "identity_holds": true,
+        "q": 4,
+        "zeros": 1612
+      }
+    ],
+    "det_F2_bits_hidden": 0.5737352452979021
+  },
+  "failures": [],
+  "group_laws": {
+    "D4 = UT3(F2)": {
+      "Hom(Z^3)": 176,
+      "bits_hidden_by_multiplication": 3.0,
+      "commuting_pairs": 40,
+      "commuting_with_free_contact": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          2
+        ],
+        "K3": true,
+        "allowed": 320,
+        "knot": false,
+        "states": 512
+      },
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 64,
+        "knot": true,
+        "states": 512
+      },
+      "order": 8
+    },
+    "H(F3)": {
+      "bits_hidden_by_multiplication": 4.754887502163468,
+      "commuting_pairs": 297,
+      "commuting_with_free_contact": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          2
+        ],
+        "K3": true,
+        "allowed": 8019,
+        "knot": false,
+        "states": 19683
+      },
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 729,
+        "knot": true,
+        "states": 19683
+      },
+      "order": 27
+    },
+    "Q8": {
+      "Hom(Z^3)": 176,
+      "bits_hidden_by_multiplication": 3.0,
+      "commuting_pairs": 40,
+      "commuting_with_free_contact": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          2
+        ],
+        "K3": true,
+        "allowed": 320,
+        "knot": false,
+        "states": 512
+      },
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 64,
+        "knot": true,
+        "states": 512
+      },
+      "order": 8
+    },
+    "S3": {
+      "bits_hidden_by_multiplication": 2.584962500721156,
+      "commuting_pairs": 18,
+      "commuting_with_free_contact": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          2
+        ],
+        "K3": true,
+        "allowed": 108,
+        "knot": false,
+        "states": 216
+      },
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 36,
+        "knot": true,
+        "states": 216
+      },
+      "order": 6
+    },
+    "UT3(F4) x| C3, action (w, w, w^2): hard pair": {
+      "bits_hidden_by_multiplication": 7.584962500721156,
+      "commuting_pairs": 1728,
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 36864,
+        "knot": true,
+        "states": 7077888
+      },
+      "order": 192
+    },
+    "UT3(F4) x| C3, action (w, w^2, 1): no hard pair": {
+      "bits_hidden_by_multiplication": 7.584962500721156,
+      "commuting_pairs": 1728,
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 36864,
+        "knot": true,
+        "states": 7077888
+      },
+      "order": 192
+    },
+    "Z2^3": {
+      "bits_hidden_by_multiplication": 3.0,
+      "commuting_pairs": 64,
+      "commuting_with_free_contact": {
+        "K1": false,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 512,
+        "knot": false,
+        "states": 512
+      },
+      "multiplication": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 64,
+        "knot": true,
+        "states": 512
+      },
+      "order": 8
+    },
+    "type_III": {
+      "T3": "22",
+      "connected_sum_three_S1xS2": "512/8 = 64 (T = 0)",
+      "type_I_II_on_both": "64: a cup a = 0 for classes that lift to Z"
+    }
+  },
+  "potts_gadget": {
+    "F2_sum_w0": 64,
+    "F2_sum_w_nonzero": [
+      16
+    ],
+    "F3_counts_w0": [
+      729,
+      0,
+      0
+    ],
+    "F3_counts_w_nonzero": [
+      [
+        297,
+        216,
+        216
+      ]
+    ],
+    "end_to_end_F2": [
+      {
+        "N": 1936,
+        "graph": "path of two edges",
+        "predicted": "1936",
+        "seconds": 0.0
+      },
+      {
+        "N": 12160,
+        "graph": "triangle",
+        "predicted": "12160",
+        "seconds": 0.2
+      }
+    ],
+    "tutte_point": "Q = 8, v = 3: (x, y) = (1 + Q/v, 1 + v) = (11/3, 4)"
+  },
+  "seconds": 15.7,
+  "signed": {
+    "atom_marginal": {
+      "(0, 0)": 2,
+      "(0, 1)": 2,
+      "(1, 0)": 2,
+      "(1, 1)": 0
+    },
+    "checks": {
+      "hub_cubic": 60,
+      "quadratic": 60,
+      "signed_2cnf": 60
+    },
+    "det_marginal_support": 22,
+    "pair_marginal": {
+      "0": 2,
+      "1": 0
+    }
+  },
+  "validation": {
+    "four_bits_agree": 3000,
+    "three_bit_knots": 34,
+    "three_bits_agree": 256
+  },
+  "vector_reading": {
+    "N_det_F2": 22,
+    "atom_of_parities": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 56,
+      "knot": true,
+      "states": 64
+    },
+    "bilinear det2 [a b] (symplectic)": {
+      "free_contact": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          2
+        ],
+        "K3": true,
+        "allowed": 20,
+        "knot": false,
+        "states": 32
+      },
+      "graph": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          0,
+          1
+        ],
+        "K3": true,
+        "allowed": 16,
+        "knot": false,
+        "states": 32
+      },
+      "times_bounded_contact": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 26,
+        "knot": true,
+        "states": 32
+      }
+    },
+    "bilinear dot a.b": {
+      "free_contact": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          2
+        ],
+        "K3": true,
+        "allowed": 20,
+        "knot": false,
+        "states": 32
+      },
+      "graph": {
+        "K1": true,
+        "K2": false,
+        "K2_fails_when_forgetting": [
+          0,
+          1
+        ],
+        "K3": true,
+        "allowed": 16,
+        "knot": false,
+        "states": 32
+      },
+      "times_bounded_contact": {
+        "K1": true,
+        "K2": true,
+        "K2_fails_when_forgetting": [],
+        "K3": true,
+        "allowed": 26,
+        "knot": true,
+        "states": 32
+      }
+    },
+    "decomposable e1^e2^e3 on F_2^4": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 2752,
+      "knot": true,
+      "states": 4096
+    },
+    "det_F2": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 344,
+      "knot": true,
+      "states": 512
+    },
+    "det_F3": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 8451,
+      "knot": true,
+      "states": 19683
+    },
+    "det_F4": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 80704,
+      "knot": true,
+      "states": 262144
+    },
+    "e123 + e145 on F_2^5 (two Borromean triples sharing a leaf)": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 19328,
+      "knot": true,
+      "states": 32768
+    },
+    "e123 + e456 on F_2^6 (two disjoint Borromean triples)": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 146560,
+      "knot": true,
+      "states": 262144
+    },
+    "graph_det_F2": {
+      "K1": true,
+      "K2": false,
+      "K2_fails_when_forgetting": [
+        0,
+        1,
+        2
+      ],
+      "K3": true,
+      "allowed": 512,
+      "knot": false,
+      "states": 1024
+    },
+    "kernel_det_F2_free_contact": {
+      "K1": true,
+      "K2": false,
+      "K2_fails_when_forgetting": [
+        2
+      ],
+      "K3": true,
+      "allowed": 176,
+      "knot": false,
+      "states": 512
+    },
+    "trdet_F4": {
+      "K1": true,
+      "K2": true,
+      "K2_fails_when_forgetting": [],
+      "K3": true,
+      "allowed": 141184,
+      "knot": true,
+      "states": 262144
+    }
+  }
+}

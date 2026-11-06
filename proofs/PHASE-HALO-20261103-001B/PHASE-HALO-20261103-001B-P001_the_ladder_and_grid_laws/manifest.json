@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PHASE-HALO-20261103-001B-P001",
+  "canonical_id": "PHASE-HALO-20261103-001B-P001",
+  "kind": "proof",
+  "ticket": "PHASE-HALO-20261103-001B",
+  "proof": "PHASE-HALO-20261103-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The ladder and grid laws",
+  "status": "Proved",
+  "claim": "The ladder and grid laws. (1) The ladder law (proved, with a finite certificate). The prism over a 2k-cycle is the cyclic chain of consecutive triples (explicit isomorphism). It has Kasteleyn signs (0, 0, 1) on every line except two beside the attachment point: squares repeat, and each standard line adds a zero-parity corner to the long faces, so this holds for every k. Its 4-state transfer matrix has powers of period 2 from the second (T^2 = T^4, T^3 = T^5). The transfer between the split point's ports and a line, assembled from these powers, equals the heights computation on every line (k = 4 to 25). So every far line's transfer depends only on its parity, one for the face opposite the attachment point and one for the point's own face, the same on every prism. Creation is decided from the transfer by the route criterion. Since every far opposite-face line creates and no far own-face line does for k = 5 to 40, the halo of an opened Fano handle runs the full length of the opposite face on every prism. (2) The grid law (exact certificates). A line whose transfer is all 36 pairs is independent of the split point, and no crossing knot through handle points alone reaches it, whatever the handle and far side (proved). On the 64-point grid every line at distance 9 or more is independent at four attachment points, and every line at distance 7 or more at two of them. On the 256-point grid every line at distance 7 or more is independent. The reason: the smallest range of height differences between a port and the line is 0 at every distance on ladders (frozen) but grows with distance on grids (liquid), from 0 at distance 3 to 11 at 29 on the 256-point grid.",
+  "dependencies": [
+    "PHASE-HALO-20261103-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A grid line at distance 7 or more without a decoupling certificate, or a certified line whose transfer is not full.",
+    "A prism where the chain labelling fails or the canonical signs are not Kasteleyn.",
+    "A line whose transfer from the matrices differs from the heights computation.",
+    "Two far lines of the same parity with different transfers, or a far bottom-face line that does not create."
+  ],
+  "lineage": {
+    "home_scope": "PHASE-HALO-20261103-001",
+    "epic_path": [
+      "PHASE-HALO-20261103-001"
+    ],
+    "parents": [
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/result.json",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json": "dedcfb1db3da2936e8fac5d7e9996ea6342e66a69ab1a4628dfca84232bcdbcc",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/result.json": "43e40eac2a5b536bf60f3f7fcd8dc8ca91881a12e995147b6583f91acb81e600",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py": "570c7a63a090648e999df5b319c74b8eb3ff0b7fd63725dd6d710c4c0a0ae2f4",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c"
+  },
+  "paths": {
+    "manifest": "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json",
+    "identity": "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/identity.json",
+    "directory": "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws",
+    "proof": "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/proof.md",
+    "result": "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json",
+    "check": "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "ladder_and_grid_laws_proved": true
+  },
+  "foundation_claim_scope": "Point splits of grids (subdivided-octahedron duals) and of prisms over even cycles; the Fano plane as handle.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03.",
+    "status": "the decoupling lemma and the ladder reduction proved; certificates and the finite cases computed; no human or external review",
+    "novelty": "New here; Boolean transfer matrices and difference constraints are classical."
+  }
+}

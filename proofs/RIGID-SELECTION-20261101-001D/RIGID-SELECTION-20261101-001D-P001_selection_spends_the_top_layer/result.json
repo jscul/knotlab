@@ -1,0 +1,172 @@
+{
+ "artifact_id": "RIGID-SELECTION-20261101-001D-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/result.json": "passed",
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 over Z_(p^k) for p^k in 2, 3, 5, 4, 8, 16, 9, 27, 25 (knot systems on random regular substrates, and arbitrary m x n systems with m = n - 1, n, n + 1, n + 2): every global failure has m <= n + 1, every removal leaves a top layer of dimension n - m + 1, and in square systems every kept knot has at most one full-range variable and index at most p^(k-1)": {
+   "info": {
+    "global failures by m - n": {
+     "-1": 176,
+     "0": 271,
+     "1": 425
+    },
+    "kept knots (square)": 763,
+    "largest kept index by ring": {
+     "16": 8,
+     "2": 1,
+     "25": 5,
+     "27": 9,
+     "3": 1,
+     "4": 2,
+     "5": 1,
+     "8": 4,
+     "9": 3
+    },
+    "removals": 4418,
+    "violations": []
+   },
+   "pass": true
+  },
+  "2 brute force over F2[t]/(t^2), a chain ring of characteristic 2 that is not Z4, with no Smith form: every removal from a global failure leaves a top layer of dimension n - m + 1, square global failures do keep knots, and each has at most one full-range variable and index at most 2; no global failure has m > n + 1": {
+   "info": {
+    "an example keeping a knot": [
+     {
+      "A (a + bt coded a + 2b)": [
+       [
+        0,
+        1,
+        1,
+        0,
+        3,
+        3
+       ],
+       [
+        1,
+        3,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        3,
+        3,
+        3,
+        0,
+        3,
+        0
+       ],
+       [
+        1,
+        3,
+        1,
+        3,
+        0,
+        0
+       ],
+       [
+        3,
+        0,
+        0,
+        1,
+        1,
+        1
+       ],
+       [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+       ]
+      ],
+      "knots": 6,
+      "removed": 0
+     }
+    ],
+    "global failures by m - n": {
+     "-1": 16,
+     "0": 169,
+     "1": 13
+    },
+    "kept knots (square)": 261,
+    "removals": 969,
+    "removals keeping a knot": 46,
+    "violations": []
+   },
+   "pass": true
+  },
+  "3 the bound p^(k-1) is attained at k = 3: a cubic knot system over Z8 (brute force over Z8^6) and one over Z27 fail globally and keep knots of index 4 and 9": {
+   "info": {
+    "Z27": {
+     "cubic with unit coefficients": true,
+     "global right-hand side": [
+      9,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "index": 9,
+     "is a circuit": true,
+     "knot": [
+      0,
+      2,
+      5
+     ],
+     "projection": 243,
+     "ranges": [
+      27,
+      9,
+      9
+     ],
+     "removed line": 4
+    },
+    "Z8": {
+     "cubic with unit coefficients": true,
+     "global right-hand side": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "index": 4,
+     "is a circuit": true,
+     "knot": [
+      0,
+      1,
+      2
+     ],
+     "projection": 32,
+     "ranges": [
+      4,
+      4,
+      8
+     ],
+     "removed line": 0
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Selection spends the top layer. Let R be a finite chain ring with maximal ideal (pi), residue field F and length k (for example Z_(p^k), GF(q), Galois rings, GF(q)[t]/(t^k)), and let a system of m linear equations in n variables over R fail globally: it has no solution, but removing any one equation makes it solvable. Then m <= n + 1, and after removing any equation L the solutions form a coset of a group K_L isomorphic to R^(n-m+1) + N, where pi^(k-1) N = 0; so their top layer (residues mod pi) has dimension exactly n - m + 1 over F. For the square systems of a substrate (m = n) the top layer is one line. Hence (1) over a field (k = 1) only ties remain, which reproves ticket A's rigidity; (2) a knot kept after a removal has at most one variable taking all |R| values, its other variables take at most |R|/|F| values, and its index in the product of its ranges is at most |R|/|F| = |F|^(k-1): it hides at most k - 1 digits; (3) the bound is attained over Z8 (index 4) and Z27 (index 9). Proof: the classes of the equations in the cokernel M must share one socle line, so pi^(k-1) M lies in every cyclic submodule R g_L; hence M / R g_L, the cokernel of the system without L, has no free summand, and the Smith form gives the kernel. Checked on random global failures over Z4, Z8, Z16, Z9, Z27 and Z25 (square and rectangular, unit and arbitrary coefficients) and by brute force over F2[t]/(t^2), a chain ring of characteristic 2 that is not Z4.",
+ "kind": "proof",
+ "proof": "RIGID-SELECTION-20261101-001D-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "RIGID-SELECTION-20261101-001D"
+}

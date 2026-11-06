@@ -1,0 +1,98 @@
+{
+ "artifact_id": "NATIVE-GENUS-20261104-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/manifest.json": "Proved",
+     "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/result.json": "passed",
+     "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/manifest.json": "Proved",
+     "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 single atoms: native counts against SAT genus (summary: atoms | placement | genus | (count through points, through interior points) over every quiet part | blocks | located | quiet parts)": {
+   "info": {
+    "spaces": 720,
+    "summary": {
+     "1 | separated | genus 1 | counts [(1, 1)] | blocks 1 | located True | quiet parts one": 112,
+     "1 | separated | genus 1 | counts [(1, 1)] | blocks 10 | located True | quiet parts one": 76,
+     "1 | separated | genus 1 | counts [(1, 1)] | blocks 6 | located True | quiet parts one": 456,
+     "1 | separated | genus 1 | counts [(1, 2)] | blocks 2 | located False | quiet parts one": 76
+    }
+   },
+   "pass": true
+  },
+  "2 pairs: native counts against SAT genus (summary: atoms | placement | genus | (count through points, through interior points) over every quiet part | blocks | located | quiet parts)": {
+   "info": {
+    "spaces": 486,
+    "summary": {
+     "2 | separated | genus 2 | counts [(1, 2)] | blocks 11 | located True | quiet parts one": 32,
+     "2 | separated | genus 2 | counts [(1, 2)] | blocks 2 | located True | quiet parts one": 36,
+     "2 | separated | genus 2 | counts [(2, 2)] | blocks 11 | located True | quiet parts one": 24,
+     "2 | separated | genus 2 | counts [(2, 2)] | blocks 16 | located True | quiet parts one": 40,
+     "2 | separated | genus 2 | counts [(2, 2)] | blocks 2 | located True | quiet parts one": 220,
+     "2 | separated | genus 2 | counts [(2, 2)] | blocks 7 | located True | quiet parts one": 56,
+     "2 | touching | genus 2 | counts [(1, 1)] | blocks 2 | located False | quiet parts one": 54,
+     "2 | touching | genus 2 | counts [(1, 1)] | blocks 52 | located False | quiet parts one": 8,
+     "2 | touching | genus 2 | counts [(1, 2)] | blocks 16 | located True | quiet parts one": 16
+    }
+   },
+   "pass": true
+  },
+  "3 triples: native counts against SAT genus (summary: atoms | placement | genus | (count through points, through interior points) over every quiet part | blocks | located | quiet parts)": {
+   "info": {
+    "spaces": 60,
+    "summary": {
+     "3 | separated | genus 3 | counts [(1, 1)] | blocks 1 | located False | quiet parts several": 4,
+     "3 | separated | genus 3 | counts [(3, 3)] | blocks 3 | located True | quiet parts one": 8,
+     "3 | touching | genus 3 | counts [(1, 1)] | blocks 2 | located False | quiet parts one": 24,
+     "3 | touching | genus 3 | counts [(1, 2)] | blocks 3 | located False | quiet parts one": 12,
+     "3 | touching | genus 3 | counts [(2, 2)] | blocks 3 | located False | quiet parts one": 12
+    }
+   },
+   "pass": true
+  },
+  "4 atoms on atoms (the base is an atom too): native counts against SAT genus (summary: atoms | placement | genus | (count through points, through interior points) over every quiet part | blocks | located | quiet parts)": {
+   "info": {
+    "spaces": 21,
+    "summary": {
+     "1 | separated | genus 2 | counts [(1, 1), (1, 2)] | blocks 6 | located False | quiet parts several": 8,
+     "1 | separated | genus 2 | counts [(1, 1)] | blocks 10 | located False | quiet parts several": 4,
+     "1 | separated | genus 2 | counts [(1, 1)] | blocks 2 | located False | quiet parts several": 2,
+     "1 | separated | genus 2 | counts [(1, 1)] | blocks 6 | located False | quiet parts several": 4,
+     "2 | separated | genus 3 | counts [(1, 1)] | blocks 3 | located False | quiet parts several": 1,
+     "2 | separated | genus 3 | counts [(1, 1)] | blocks 4 | located False | quiet parts several": 1,
+     "2 | touching | genus 3 | counts [(1, 1)] | blocks 3 | located False | quiet parts several": 1
+    }
+   },
+   "pass": true
+  },
+  "5 every three-fold space up to 22 points: native counts against SAT genus": {
+   "info": {
+    "(genus, counts, blocks)": {
+     "(1, '[(1, 1)]', 'blocks 1')": 1,
+     "(2, '[(1, 1)]', 'blocks 2')": 1,
+     "(2, '[(2, 2)]', 'blocks 2')": 4,
+     "(3, '[(1, 1), (2, 2)]', 'blocks 3')": 4,
+     "(3, '[(1, 1), (2, 2)]', 'blocks 4')": 1,
+     "(3, '[(1, 1)]', 'blocks 3')": 3,
+     "(3, '[(1, 1)]', 'blocks 4')": 1,
+     "(3, '[(2, 2)]', 'blocks 10')": 1,
+     "(3, '[(2, 2)]', 'blocks 3')": 11,
+     "(3, '[(3, 3)]', 'blocks 3')": 5
+    },
+    "classes": 32
+   },
+   "pass": true
+  }
+ },
+ "claim": "Native selection counts and locates handles that plane glue separates. The quiet part of a space is a largest set of lines among which no removal creates at a gluing line; the native count is the number of pieces of the remaining, creative lines. Fixed before evaluation and computed exactly, with SAT genus as ground truth: joined through interior points (points all of whose lines are creative), the count equals the number of atoms and the genus, one piece in each atom, in 416 of the 420 separated spaces with two or three atoms (every placement on the prisms over 8- and 10-cycles, and triples). It fails for three atoms attached at lines of the 4-point cube, whose glue keeps one line. Joined through shared points, every one of 720 single atoms is one piece, but atoms whose lines share a glue point merge (68 pairs); through interior points, 76 census-58 atoms split in two (minus one of its two disjoint lines). Touching atoms merge (all 78 touching pairs through shared points; 16 census-58 pairs stay apart through interior points). On the 32 three-fold spaces up to 22 points, where atoms mostly touch, the count equals the genus in 10. Exploratory, recorded without a prediction: the maximal blocks of mutual creation within each piece number the genus in 29 of the 32 and in all 310 Fano pairs, overcount by one where two point-attached atoms hang from one Fano atom (they create at each other, adding a block), and break census-58 atoms into several blocks, since its lines sharing two points never create at each other.",
+ "kind": "proof",
+ "proof": "NATIVE-GENUS-20261104-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "NATIVE-GENUS-20261104-001B"
+}

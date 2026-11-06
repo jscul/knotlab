@@ -1,0 +1,94 @@
+{
+  "artifact_id": "TRIPLE-TWIST-20261023-001A-P001",
+  "checks": {
+    "Lemma 1 (complement-closed placements, random tori and seams)": {
+      "first corner changed: equisatisfiable after flipping x": 240,
+      "instances": 240,
+      "seam moved by a coboundary: equisatisfiable after flipping x": 240
+    },
+    "Lemma 1 converse: one-triangle gauge invariance at the first corner iff complement-closed (all 65536 pairs)": {
+      "agree": 65536,
+      "pairs": 65536
+    },
+    "Lemma 2 (independent polarities): twisted world equals untwisted world with re-labelled polarities (3 x 3 torus)": {
+      "agree": 120,
+      "instances": 120
+    },
+    "Lemma 3: every relation on two bits is closed under majority": true,
+    "Proposition 4 (monotone world)": {
+      "class of d equals the twist": 196,
+      "colourings checked": 196,
+      "contradicting x where no colouring exists (every x enumerated)": 0,
+      "exactly two sides with d = 1 on every triangle": 196,
+      "tori and twists tested": 224,
+      "tori and twists with a twisted not-all-equal colouring": 220,
+      "tori and twists without one": [
+        "2x2s1(1,1)",
+        "3x2s1(0,1)",
+        "4x2s1(1,1)",
+        "5x2s1(0,1)"
+      ]
+    },
+    "Theorem 5 (4 x 4 and 3 x 3 tori, radius-3 patches)": {
+      "fitting-twist contradictions": 0,
+      "minimal sets": 306,
+      "minimal sets on which the twist differs from every fitting twist": 306,
+      "minimal sets with nonzero winding": 306,
+      "planar contradictions": 0,
+      "tiling placements": 54
+    }
+  },
+  "claim": "For fair contacts with a visible bit and three hidden places on a triangulated surface, a twist (a cocycle flipping the hidden places' polarities relative to each triangle's first corner) changes the random world only through its cohomology class exactly when the contact is complement-closed (flipping all three places exchanges its two relations); otherwise a contractible seam is a physical defect. Independent fair polarities make every twist invisible, and two hidden places give a two-literal world. The monotone contact from four-place not-all-equal contradicts in a twist only if the cubic dual graph has no 2-factor in the class dual to the twist; on every triangular torus with sides 2 to 5 it never contradicts in any twist (by such a 2-factor except on four non-simplicial two-row tori, where every x was enumerated), so that world is frozen there. For a complement-closed contact whose doubly allowed patterns tile the plane, planar patches and fitting twists never contradict, and on a torus every minimal contradicting set of triangles winds, along a period lattice on which the twist differs from every fitting twist (a line runs along a class that the relative twist makes odd), so a lone winding contradiction event is well defined.",
+  "controls": {
+    "placements without a tiling do contradict on planar patches (counting every set as winding would be wrong)": 326,
+    "x or 1-in-3: contradictions on a radius-4 patch with a contractible seam (of 60; 0 without)": 27
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "TRIPLE-TWIST-20261023-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "three_place_shielding_proved": false,
+    "three_place_twist_well_defined_proved": true,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "winding_of_three_place_contradictions_proved": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TRIPLE-TWIST-20261023-001A"
+}

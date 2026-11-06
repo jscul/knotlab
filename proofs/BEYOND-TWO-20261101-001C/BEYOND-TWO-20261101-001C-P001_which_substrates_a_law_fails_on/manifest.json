@@ -1,0 +1,121 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BEYOND-TWO-20261101-001C-P001",
+  "canonical_id": "BEYOND-TWO-20261101-001C-P001",
+  "kind": "proof",
+  "ticket": "BEYOND-TWO-20261101-001C",
+  "proof": "BEYOND-TWO-20261101-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which substrates a law fails on, and whether globally",
+  "status": "Proved",
+  "claim": "Which substrates a law fails on, and whether globally. On a connected cubic substrate (a 3-regular 3-uniform system), with signs: (1) the knot (not-all-equal) fails under some signing exactly when the substrate is Pfaffian, and every failure is global: removing any line leaves it colourable (Seymour's bound); (2) parity fails exactly when the substrate has an even number of perfect matchings (det = perm mod 2), and no failure is ever global, since a dependency using every line would put each point in three of them, an odd number; blurred parity fails exactly as parity does; (3) Z3-linear x + y + z = c fails on every substrate, because the sum of all lines vanishes (3 = 0 mod 3), and its failures are all global when the substrate's Z3-corank is 1 and all local otherwise; blurred Z3 fails exactly as Z3 does. Checked on all 60 connected cubic substrates with up to 8 points: Pfaffian by a signing with |det| = perm (agreeing with the census), the knot's failures minimal, parity's never, Z3's minimal exactly at corank 1. (4) So blurred Z3 on corank-1 substrates both selects and composes: its failures are global and recognisable, removing a line leaves exactly three solutions so its count is easy there (checked against brute force), its count is #P-complete in general, and it composes like cycles: the first law that does both, at four values. Its selection is linear (the whole space cancels, 3 = 0 mod 3); the knot's is sign-nonsingular (nothing cancels). (5) Rigidity: on blurred Z3's selected spaces, removing a line leaves one degree of freedom, so every circuit is a tie of two variables and no knot survives (every corank-1 substrate, every line); the knot's selected spaces are not rigid in general (on the Fano plane every line removal leaves 10 colourings and a knot), though on some Pfaffian substrates only ties remain. The four-value bridge selects only rigid, pairwise spaces.",
+  "dependencies": [
+    "BEYOND-TWO-20261101-001B",
+    "THREEFOLD-SPACES-20261030-001Z",
+    "NATIVE-PATHS-20261101-001Z",
+    "MUTUAL-SELECTION-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A connected cubic substrate where the knot fails non-globally, or fails without being Pfaffian.",
+    "A substrate where signed parity fails globally, or fails with an odd number of perfect matchings.",
+    "A substrate where signed Z3 fails locally at corank 1 or globally at corank 2 or more.",
+    "A corank-1 failing Z3 system with a line whose removal leaves other than three solutions.",
+    "A corank-1 failing Z3 system minus a line with a circuit of three or more variables."
+  ],
+  "lineage": {
+    "home_scope": "BEYOND-TWO-20261101-001",
+    "epic_path": [
+      "BEYOND-TWO-20261101-001"
+    ],
+    "parents": [
+      "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json",
+      "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json",
+      "proofs/NATIVE-PATHS-20261101-001C/NATIVE-PATHS-20261101-001C-P001_knot_meets_knot_only_pairwise/manifest.json",
+      "proofs/NATIVE-PATHS-20261101-001C/NATIVE-PATHS-20261101-001C-P001_knot_meets_knot_only_pairwise/result.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json",
+      "research/MUTUAL-SELECTION-20261031-001C/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json": "bf92df57b62ac432a80d3e1de8ef11527e779084beb1d067be4ab53e8dbaf47a",
+    "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json": "7f2de70ff60ab553d7cd33e1516d20528749cdfc158a0362465110e68340c8ea",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "7d4aea1e0994189c09c1d9f84db61ad21aed7fde23283db4dddc1ebafc183837",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "10cb4f0382fc24672706a5fa64b4964581f782bf4fee1a5187d4ebfb79051826",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "68da26a9c5d6ec418874f008036494e7f66433b4de796c4d67fec6c8a86bc59f",
+    "proofs/NATIVE-PATHS-20261101-001C/NATIVE-PATHS-20261101-001C-P001_knot_meets_knot_only_pairwise/manifest.json": "0e0d794cfd26eff186e81cbc28840891e526db0bf57487c958f75e81d1bdc4c3",
+    "proofs/NATIVE-PATHS-20261101-001C/NATIVE-PATHS-20261101-001C-P001_knot_meets_knot_only_pairwise/result.json": "40008310dfef9aee0f947b63c95cb71ec4d6fdcd6dc163860bf6f988c1d8bd07",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07",
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "dce42dbefe8c23386bf8b7567ff010e427dcc0acd1685bb15e50b0b2da51ca15"
+  },
+  "paths": {
+    "manifest": "proofs/BEYOND-TWO-20261101-001C/BEYOND-TWO-20261101-001C-P001_which_substrates_a_law_fails_on/manifest.json",
+    "identity": "proofs/BEYOND-TWO-20261101-001C/BEYOND-TWO-20261101-001C-P001_which_substrates_a_law_fails_on/identity.json",
+    "directory": "proofs/BEYOND-TWO-20261101-001C/BEYOND-TWO-20261101-001C-P001_which_substrates_a_law_fails_on",
+    "proof": "proofs/BEYOND-TWO-20261101-001C/BEYOND-TWO-20261101-001C-P001_which_substrates_a_law_fails_on/proof.md",
+    "result": "proofs/BEYOND-TWO-20261101-001C/BEYOND-TWO-20261101-001C-P001_which_substrates_a_law_fails_on/result.json",
+    "check": "proofs/BEYOND-TWO-20261101-001C/BEYOND-TWO-20261101-001C-P001_which_substrates_a_law_fails_on/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "bridge_at_four_values_shown": true
+  },
+  "foundation_claim_scope": "Failures of three laws on connected cubic substrates; the bridge is stated for blurred Z3 on corank-1 substrates.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: all 60 connected cubic bipartite substrates with up to 8 points; Pfaffian signings, minimality of the knot's failures, parity's and Z3's failures over every right-hand side or a sample, blurred Z3 counts against brute force; no human or external review",
+    "novelty": "Seymour's bound, Pfaffian signings and linear algebra are classical; the census of the three laws' failing substrates and their globality, and the four-value bridge, are new here."
+  }
+}

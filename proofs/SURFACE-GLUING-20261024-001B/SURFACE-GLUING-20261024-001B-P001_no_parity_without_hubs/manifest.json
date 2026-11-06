@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SURFACE-GLUING-20261024-001B-P001",
+  "canonical_id": "SURFACE-GLUING-20261024-001B-P001",
+  "kind": "proof",
+  "ticket": "SURFACE-GLUING-20261024-001B",
+  "proof": "SURFACE-GLUING-20261024-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Hub-free gadgets cannot create parity",
+  "status": "Proved",
+  "claim": "Relations whose excluded tuples are pairwise non-adjacent (co-independent; on three variables exactly the 34 knots) are closed under hub-free gluing, self-gluing and pinning, and the glued excluded count is |Z_M^0||Z_N^1| + |Z_M^1||Z_N^0|. Hence relations without a parity face of dimension three or more never produce one: among the 34 knots only the parity knots build parity without hubs, even when several non-parity knots are combined, while with hubs not-all-equal and pins define parity. Memory is never created without hubs.",
+  "dependencies": [
+    "SURFACE-GLUING-20261024-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A hub-free gadget of non-parity knots whose glued relation is a parity relation on three or more variables.",
+    "A co-independent pair whose glued excluded count differs from |Z_M^0||Z_N^1| + |Z_M^1||Z_N^0|.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "SURFACE-GLUING-20261024-001",
+    "epic_path": [
+      "SURFACE-GLUING-20261024-001"
+    ],
+    "parents": [
+      "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SURFACE-GLUING-20261024-001A/SURFACE-GLUING-20261024-001A-P001_surface_gluing/manifest.json": "228046a0e4e86ea73caf4ee83be704f0796f641182cac36af6b7bc0ab896d511"
+  },
+  "paths": {
+    "manifest": "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/manifest.json",
+    "identity": "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/identity.json",
+    "directory": "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs",
+    "proof": "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/proof.md",
+    "result": "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/result.json",
+    "check": "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "no_parity_without_hubs_shown": true
+  },
+  "foundation_claim_scope": "Finite Boolean relations glued along shared variables; surfaces are read from the gluing pattern, not drawn. No physical space is claimed.",
+  "validation": {
+    "status": "checked: prose proof (elementary: hypercube independent sets, an exact gluing count, faces); check.py (standard library) confirms the lemmas on random relations, Lemma 4 exhaustively to four variables, Theorem 5 on random pairs, and the hub-free closures of all 34 knots and of all 32 non-parity knots together up to five variables; three controls. No human or external review",
+    "level": "V1 prose proof with computational checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

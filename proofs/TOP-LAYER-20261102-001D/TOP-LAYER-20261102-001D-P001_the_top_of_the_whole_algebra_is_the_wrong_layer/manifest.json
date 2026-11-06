@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TOP-LAYER-20261102-001D-P001",
+  "canonical_id": "TOP-LAYER-20261102-001D-P001",
+  "kind": "proof",
+  "ticket": "TOP-LAYER-20261102-001D",
+  "proof": "TOP-LAYER-20261102-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The top of the whole algebra is the wrong layer",
+  "status": "Proved",
+  "claim": "The top of the whole algebra is the wrong layer. (1) The Mal'tsev operation on five values given in check.py extends x - y + z on Z4 = {0,1,2,3}; its subalgebras are the five points, {0,2}, {1,3}, Z4 and the whole set, each with a unique maximal congruence, and the whole algebra is simple. So its law composes like cycles (KNOT-CIRCUITS Theorem 1) and its top is the whole algebra. (2) RIGID-SELECTION B's two signed Z4 systems are systems of this law, with every point's domain Z4; they fail globally and keep knots after removals, and since the top is everything, so does the top image. 'Every law that composes like cycles keeps its top layer rigid' is therefore false. (3) The layer that stays rigid is the top of each point's own section: for systems with declared domains whose abelian sections in the failing part are cyclic modules over one finite chain ring R (as for group laws, chain-ring laws, their blurs and this five-value law), after any removal the leading digits of the variables, each read in its own section, form at most one line (RIGID-SELECTION D after lifting every section to R). So every kept knot has at most one variable whose leading digit varies, and the top of the whole algebra is rigid whenever it factors through these digits (groups, chain rings). (4) Sections from two different chain rings joined only through their tops (Z4 and F2[s]/(s^2)): no global failure checked keeps a knot in the leading digits; not proved. (5) With ticket C: a law that composes like cycles keeps emergence inside a selected space only through a two-layer abelian section (at least four values) and, when its sections come from one chain ring, only below that section's top; the knot keeps three-place emergence on two values, in its only layer (on the Fano plane, after every removal). (6) Correction to ticket B: its theorem holds for systems with declared domains; lines with their own smaller ranges are not covered by its proof, though every such case met was rigid.",
+  "dependencies": [
+    "TOP-LAYER-20261102-001C",
+    "TOP-LAYER-20261102-001B",
+    "RIGID-SELECTION-20261101-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "The five-value algebra failing to be Mal'tsev, having a subalgebra without a unique maximal congruence, or not being simple.",
+    "A declared-domain system over one chain ring whose leading digits after a removal span more than one line."
+  ],
+  "lineage": {
+    "home_scope": "TOP-LAYER-20261102-001",
+    "epic_path": [
+      "TOP-LAYER-20261102-001"
+    ],
+    "parents": [
+      "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/manifest.json",
+      "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/result.json",
+      "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/manifest.json",
+      "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/result.json",
+      "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json",
+      "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json",
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/manifest.json": "4df003c16ce46a42959955af79bf93cdf893330da4c4d9d7f73659eb8002b100",
+    "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/result.json": "6019e0b0ae14e02441532b776f801b068afc1de499bd83ee07307f2e899ee381",
+    "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/manifest.json": "f209bf60d4dc91bdbc4ed19d5febe83ca74f2eb5979f7bd57262e6ecacb5b825",
+    "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/result.json": "c1a201c2dd0ad4c9d726bdd2573668e270a31d567b8bae6d6245762f2f3c0cff",
+    "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "cfa9b1320686064afd57c6bfd7de64e1ed657e60d0c8cca8f85f5794a5f1fc0d",
+    "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "8e3afd228953e814ce5b6ef63f647c68d66a75cd95c0bbad8f4c5446fe91af4e",
+    "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json": "e260f828cc1023344baf06af44fe3b4ba6d2eb7b3de9cc6a43dcdd13d9c3a095",
+    "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json": "0c6721995c04fe054c0af8f3d563c708f345d6f249db2e4ada68393be3d8e3c9",
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py": "5777f4e3efed6ea9454a742156b2a54b9dacc443631586276c1f8ad6516258ca",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/TOP-LAYER-20261102-001D/TOP-LAYER-20261102-001D-P001_the_top_of_the_whole_algebra_is_the_wrong_layer/manifest.json",
+    "identity": "proofs/TOP-LAYER-20261102-001D/TOP-LAYER-20261102-001D-P001_the_top_of_the_whole_algebra_is_the_wrong_layer/identity.json",
+    "directory": "proofs/TOP-LAYER-20261102-001D/TOP-LAYER-20261102-001D-P001_the_top_of_the_whole_algebra_is_the_wrong_layer",
+    "proof": "proofs/TOP-LAYER-20261102-001D/TOP-LAYER-20261102-001D-P001_the_top_of_the_whole_algebra_is_the_wrong_layer/proof.md",
+    "result": "proofs/TOP-LAYER-20261102-001D/TOP-LAYER-20261102-001D-P001_the_top_of_the_whole_algebra_is_the_wrong_layer/result.json",
+    "check": "proofs/TOP-LAYER-20261102-001D/TOP-LAYER-20261102-001D-P001_the_top_of_the_whole_algebra_is_the_wrong_layer/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "global_top_refuted": true
+  },
+  "foundation_claim_scope": "One explicit five-value law (refuting the top-layer statement as phrased) and the layer-wise statement for sections from one chain ring.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: the five-value algebra exhaustively; both examples by brute force over five values; random declared-domain systems; the two-ring search; the Fano plane; no human or external review",
+    "novelty": "New here: the counterexample and the layer-wise reading."
+  }
+}

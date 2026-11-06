@@ -1,0 +1,246 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fontspec}
+\setmonofont{DejaVu Sans Mono}[Scale=0.78]
+\newfontfamily\ellfont{FreeMono}[Scale=0.85]
+\usepackage{newunicodechar}
+\newunicodechar{ℓ}{{\ellfont ℓ}}
+\usepackage{fvextra}
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\sloppy
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Res}{\mathrm{Res}(\oplus)}
+\newcommand{\BPHP}{\mathrm{BPHP}}
+\newcommand{\Col}{\mathrm{Col}}
+\setlength{\parskip}{0.3em}
+\title{Bit PHP with more pigeons, and bit-colouring, in resolution over parities:\\
+a corollary of Braun's lower bound, with a Lean proof}
+\author{Prespatial Labs\thanks{Draft of 19 October 2026, prepared with Claude
+(Anthropic). The mathematics is an immediate corollary of~\cite{Br26}; the Lean
+proofs are checked by Lean's kernel against the formalization of~\cite{Br26}.
+No human expert has reviewed this note.}}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Braun~\cite{Br26} proved that every DAG-like $\Res$ refutation of the bit
+pigeonhole principle with $n+1$ pigeons and $n=2^\ell$ holes has more than
+$\exp(n/(32768\,\ell^2))$ lines. The lemmas of his formalization take the number
+of pigeons as a parameter, and only the final calibration fixes it to $n+1$.
+Calibrating for $m$ pigeons gives, for $\ell\ge32$, a bound of
+$\exp(n^2/(8192\,m\,\ell^2))$ for every $m$ with $n<m\le n^2/(8192\,\ell^2(2\ell+5))$, superpolynomial while
+$m=o(n^2/\log^3 n)$. A proper colouring turns the bit encoding of colouring a
+graph into bit PHP by a substitution, so the same bound holds for every graph
+whose chromatic number lies in that range. Both statements are proved in one
+Lean file on top of the formalization of~\cite{Br26}, using only the standard
+axioms.
+\end{abstract}
+
+\section{Statements}
+
+$\Res$ works with linear clauses, disjunctions of affine equations over
+$\mathbb F_2$. A refutation is a sequence of lines, each an initial clause or
+derived from earlier lines, ending in the empty clause; its size is the number
+of lines. We use the proof system of the formalization of~\cite{Br26}: initial
+clauses, semantic weakening, resolution on any affine form, and any sound
+inference from two earlier lines. It contains every standard rule set, so
+lower bounds for it hold for standard DAG-like $\Res$.
+
+Let $n=2^\ell$. The bit pigeonhole principle $\BPHP^m_n$ has variables
+$b_{i,t}$ for $i\in[m]$ and $t\in[\ell]$. For every two pigeons $i<i'$ and
+every label $z\in\{0,1\}^\ell$, it has the clause
+$\bigvee_t (b_{i,t}\ne z_t)\vee\bigvee_t (b_{i',t}\ne z_t)$. For a graph
+$G=(V,E)$, the bit encoding $\Col_\ell(G)$ of colouring $G$ with $2^\ell$
+colours has variables $b_{v,t}$ for $v\in V$ and the same clause for every
+edge $\{u,w\}$ and every label $z$. It is satisfiable exactly when $G$ is
+$2^\ell$-colourable.
+
+\begin{theorem}[more pigeons]\label{thm:more}
+Let $\ell\ge 32$ and $n=2^\ell$, and let $m$ satisfy $n<m$ and
+$8192\,m\,\ell^2(2\ell+5)\le n^2$. Every refutation of $\BPHP^m_n$ has more
+than $\exp\bigl(n^2/(8192\,m\,\ell^2)\bigr)$ lines.
+\end{theorem}
+
+\begin{theorem}[transfer]\label{thm:transfer}
+Let $f\colon V\to[m]$ be a proper colouring of $G$. The substitution
+$b_{v,t}\mapsto b_{f(v),t}$ maps every refutation of $\Col_\ell(G)$, line by
+line, to a refutation of $\BPHP^m_{2^\ell}$ with the same number of lines.
+\end{theorem}
+
+\begin{corollary}\label{cor:colouring}
+If $\ell\ge32$, $2^\ell<\chi(G)$ and $8192\,\chi(G)\,\ell^2(2\ell+5)\le 4^\ell$,
+every refutation of $\Col_\ell(G)$ has more than
+$\exp\bigl(4^\ell/(8192\,\chi(G)\,\ell^2)\bigr)$ lines.
+\end{corollary}
+
+\begin{remark}[ranges and instances]\leavevmode
+\begin{itemize}
+\item At $\ell=32$ the range is $2^{32}<m\le 31{,}869{,}902{,}254\approx 7.42\cdot
+2^{32}$. In general its upper end is about $n^2/(16384\,\ell^3)$.
+\item The pigeon count $m=2n$ is in range for every $\ell\ge32$, with bound
+$\exp(n/(16384\,\ell^2))$. The count $m=\lfloor n^{3/2}\rfloor$ is in range
+for every $\ell\ge65$, with bound at least $\exp(\sqrt n/(8192\,\ell^2))$.
+\item For $m=n+1$ the bound is $\exp(n^2/(8192(n+1)\ell^2))$, of the same form
+as~\cite{Br26}. The constants were not optimized.
+\item The Mycielskian of $K_n$ has chromatic number $n+1$ but no clique on
+$n+1$ vertices~\cite{My55}. By Corollary~\ref{cor:colouring} its bit-colouring
+with $n=2^\ell$ colours is still exponentially hard, although it contains no
+copy of $\BPHP^{n+1}_n$ as a sub-formula.
+\item The encoding assumes the number of colours is a power of two. For other
+numbers, the clauses that exclude unused labels are not treated here.
+\end{itemize}
+\end{remark}
+
+\section{Proofs}
+
+\begin{proof}[Proof of Theorem~\ref{thm:more}]
+This is the proof of \texttt{bitPHP\_exponential} in~\cite{Br26} with $m$ in
+place of $n+1$, using two of its lemmas.
+\begin{itemize}
+\item Transfer (\texttt{usual\_bitPHP\_PC\_transfer}): a refutation with $S$
+lines yields a polynomial-calculus derivation of $1$ of degree $D=12\ell+1$,
+over at most $M=3S+\binom m2$ blocks of extension variables.
+\item Exclusion (\texttt{affine\_family\_exclusion\_of\_square}): no such
+derivation exists if $1\le k\le m$, $m\ln(4M)\le k^2$, $4(k-1)<n$ and
+$2k(D+1)-1\le n$.
+\end{itemize}
+Only the first two conditions involve $m$. Take $k=\lfloor n/(32\ell)\rfloor$,
+as in~\cite{Br26}; then $k\le n<m$ and $n\le 64\,\ell\,k$, and the last two
+conditions hold.
+
+Suppose $S\le e^x$ with $x=n^2/(8192\,m\,\ell^2)$. The hypothesis gives
+$x\ge2\ell+5$, so $e^x\ge 2^{2\ell+5}=32n^2$. It also gives $m\le n^2$. Hence
+$4M\le 12e^x+4m^2\le e^{2x}$, and
+\[
+ m\ln(4M)\le 2mx=\frac{n^2}{4096\,\ell^2}\le k^2 .
+\]
+The exclusion lemma now contradicts the derivation, so $S>e^x$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:transfer}]
+Map each affine form $g$ over the vertex variables to $y\mapsto g(y\circ\hat
+f)$, where $\hat f(v,t)=(f(v),t)$, and map each line to the set of images of
+its forms.
+\begin{itemize}
+\item The image of a line holds at $y$ exactly when the line holds at
+$y\circ\hat f$. So the image of every inference is again sound: weakening and
+two-premise steps map to the same steps, and resolution maps to a two-premise
+step.
+\item The initial clause for an edge $\{u,w\}$ and a label $z$ maps to the
+clause of $\BPHP^m_{2^\ell}$ for the pigeons $f(u)$ and $f(w)$ and the label
+$z$. This uses $f(u)\ne f(w)$; the clause is symmetric in the two pigeons.
+\item The empty clause maps to the empty clause.\qedhere
+\end{itemize}
+\end{proof}
+
+Corollary~\ref{cor:colouring} follows by taking $f$ an optimal colouring and
+$m=\chi(G)$. With $m=n+1$, Theorem~\ref{thm:transfer} together with Theorem~1.1
+of~\cite{Br26} already gives Braun's bound for every graph with chromatic
+number $n+1$.
+
+\section{Earlier work}
+
+\begin{itemize}
+\item \cite{Br26} proves the case $m=n+1$, with no restriction on the
+refutation. Its moment construction needs no assumption on the number of
+pigeons.
+\item Byramji and Impagliazzo~\cite{BI25} bound bounded-depth $\Res$ for bit
+PHP. A refutation of size $S$ and depth $D$ satisfies:
+\begin{itemize}
+\item for every $m>n$, $D\sqrt{\log S}=\Omega(n^{1.5})$ \cite[Theorem~1.1]{BI25};
+\item for $m=n+k$ with $k\le\delta n$,
+$\log S=\Omega(\min\{n^2/D,\,n^4/(kD^2)\})$ \cite[Theorem~1.3]{BI25}.
+\end{itemize}
+These bounds weaken as the depth grows. When the depth is not restricted, they
+give no superpolynomial bound.
+\item Efremenko, Garl\'ik and Itsykson~\cite{EGI} prove:
+\begin{itemize}
+\item a size bound for regular $\Res$ refutations of $\BPHP^{n+1}_n$;
+\item a size bound of $2^{\Omega(n)}$ for tree-like refutations of weak bit
+PHP;
+\item a width bound for DAG-like refutations of weak bit PHP.
+\end{itemize}
+\end{itemize}
+A brief search on 19 October 2026 found no superpolynomial size bound without
+depth restriction for DAG-like $\Res$ refutations of bit PHP with more than
+$n+1$ pigeons. It also found none for bit-colouring beyond complete graphs. The
+statements here follow directly from the development of~\cite{Br26} and may
+well be known to experts.
+
+\section{Formal verification}
+\begingroup\raggedright
+
+The file \texttt{MorePigeonsColouring.lean}, in the namespace
+\texttt{MorePigeonsColouring}, imports \texttt{claims.BitPHPExponential}. It
+proves eight declarations:
+\begin{itemize}
+\item the main results:
+\begin{itemize}
+\item \texttt{bitPHP\_more\_pigeons} (Theorem~\ref{thm:more});
+\item \texttt{colouring\_refutation\_transfer} (Theorem~\ref{thm:transfer});
+\item \texttt{bitColouring\_more\_pigeons} (Corollary~\ref{cor:colouring});
+\end{itemize}
+\item witnesses against vacuity: \texttt{range\_nonempty},
+\texttt{usualBitPHP\_unsat\_more}, \texttt{bitColouring\_unsat},
+\texttt{bitColouring\_sat} and \texttt{complete\_graph\_is\_bitPHP}.
+\end{itemize}
+Each depends only on \texttt{propext}, \texttt{Classical.choice} and
+\texttt{Quot.sound}.
+
+A graph is a symmetric loopless relation on \texttt{Fin v}. Mathlib's
+\texttt{SimpleGraph} is not part of the formalization's build, so it is not
+used. The colouring clauses reuse \texttt{usualCNFClause u w z} for edges
+$u<w$.
+
+To replay:
+\begin{enumerate}
+\item Take a checkout of the \texttt{math-research} repository at commit
+\texttt{8904bf09}.
+\item Build it, for example with \texttt{lake build claims.BitPHPExponential}.
+\item Copy the file to \texttt{formalization/claims/}.
+\item From \texttt{formalization/}, run \texttt{lake build
+claims.MorePigeonsColouring}.
+\end{enumerate}
+Every formalization file the drop-in depends on, the toolchain and the Lake
+manifest are byte-identical at commit \texttt{25239211}, so the same holds
+there.
+
+Our checker also verified four controls, each of which the kernel rejects:
+\begin{itemize}
+\item lowering the constant $8192$ to $2048$ throughout the proof of
+Theorem~\ref{thm:more}, which fails exactly at the step that calibrates $k$;
+\item the transfer without properness;
+\item unsatisfiability of bit PHP with as many pigeons as labels;
+\item unsatisfiability of bit-colouring without a monochromatic edge.
+\end{itemize}
+The main formal statements follow.
+\par\endgroup
+
+\begin{footnotesize}
+\VerbatimInput[breaklines=true,breakanywhere=true]{lean_statements.txt}
+\end{footnotesize}
+
+\begin{thebibliography}{EGI25}\raggedright
+\bibitem[Br26]{Br26} K.~Braun, \emph{An exponential lower bound for the bit
+pigeonhole principle in resolution over parities}, arXiv:2609.23015v1, 2026.
+Formalization: \url{https://github.com/kbr-/math-research}, commit
+\texttt{8904bf09}.
+\bibitem[BI25]{BI25} F.~Byramji and R.~Impagliazzo, \emph{Lower bounds for bit
+pigeonhole principles in bounded-depth resolution over parities},
+arXiv:2511.20023v1, 2025; earlier version ECCC TR25-118.
+\bibitem[EGI25]{EGI} K.~Efremenko, M.~Garl\'ik and D.~Itsykson, \emph{Lower
+bounds for regular resolution over parities}, SIAM J.\ Comput., 2025; ECCC
+TR23-187.
+\bibitem[My55]{My55} J.~Mycielski, \emph{Sur le coloriage des graphes},
+Colloq.\ Math.\ 3 (1955), 161--162.
+\end{thebibliography}
+\end{document}

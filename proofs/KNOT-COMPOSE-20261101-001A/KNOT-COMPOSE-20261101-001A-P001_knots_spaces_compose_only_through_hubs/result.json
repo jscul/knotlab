@@ -1,0 +1,140 @@
+{
+ "artifact_id": "KNOT-COMPOSE-20261101-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "Proved",
+     "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json": "Proved",
+     "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 four knot's spaces (Fano, the 13-point splice, two 19-point splices): connected, cubic, simple, not 2-colourable": {
+   "info": {
+    "Fano": 7,
+    "S13": 13,
+    "S19": 19,
+    "S19b": 19
+   },
+   "pass": true
+  },
+  "2 balance: every nontrivial 3-edge cut of the four spaces has all three cut edges leaving one shore's points for the other shore's lines": {
+   "info": {
+    "Fano": {
+     "nontrivial 3-edge cuts": 0,
+     "point side = equality and line side = not-all-equal": 0
+    },
+    "S13": {
+     "nontrivial 3-edge cuts": 1,
+     "point side = equality and line side = not-all-equal": 1
+    },
+    "S19": {
+     "nontrivial 3-edge cuts": 2,
+     "point side = equality and line side = not-all-equal": 2
+    },
+    "S19b": {
+     "nontrivial 3-edge cuts": 2,
+     "point side = equality and line side = not-all-equal": 2
+    }
+   },
+   "pass": true
+  },
+  "3 at every nontrivial 3-edge cut of a knot's space, the line side accepts exactly not-all-equal on its slots and the point side exactly equality on its ports: complementary halves of {0,1}^3 (the point lemma), so the composition fails and meets a hub": {
+   "info": {
+    "Fano": {
+     "nontrivial 3-edge cuts": 0,
+     "point side = equality and line side = not-all-equal": 0
+    },
+    "S13": {
+     "nontrivial 3-edge cuts": 1,
+     "point side = equality and line side = not-all-equal": 1
+    },
+    "S19": {
+     "nontrivial 3-edge cuts": 2,
+     "point side = equality and line side = not-all-equal": 2
+    },
+    "S19b": {
+     "nontrivial 3-edge cuts": 2,
+     "point side = equality and line side = not-all-equal": 2
+    }
+   },
+   "pass": true
+  },
+  "4 complementarity: on k = 2, 3, 4 channels the only relations with full (k-1)-place projections and exactly 2^(k-1) states are the two parity cosets (in general: such a relation is an independent set of size 2^(k-1) in the k-cube, hence a colour class), so two knot sides are disjoint only as complementary parity cosets": {
+   "info": {
+    "k=2": {
+     "all parity cosets": true,
+     "relations with full (k-1)-projections and 2^(k-1) states": 2
+    },
+    "k=3": {
+     "all parity cosets": true,
+     "relations with full (k-1)-projections and 2^(k-1) states": 2
+    },
+    "k=4": {
+     "all parity cosets": true,
+     "relations with full (k-1)-projections and 2^(k-1) states": 2
+    }
+   },
+   "pass": true
+  },
+  "5 double cuts: a pair of cuts accepts a twelve-class knot (12 states) or no knot, never another knot; joining two twelve-class sides knot to knot never fails (12 + 12 > 16), checked on 200 random joins of Fano and 13-point pieces": {
+   "info": {
+    "double-cut relations": {
+     "Fano": {
+      "no knot (10 states)": 84,
+      "twelve-class knot": 84
+     },
+     "S13": {
+      "no knot (10 states)": 124,
+      "no knot (6 states)": 3,
+      "twelve-class knot": 173
+     }
+    },
+    "joins": {
+     "failing": 0,
+     "tried": 200
+    }
+   },
+   "pass": true
+  },
+  "6 control: parity does fail hub-free. A double cut of a census system (n = 6) under the parity law accepts a parity coset on its four channels (8 states, a knot); joining it knot to knot with a copy whose line 0 is negated makes the sides complementary, and the joined cubic system has no parity solution": {
+   "info": {
+    "accepted states": [
+     8,
+     8
+    ],
+    "disjoint after crossing": true,
+    "joined system solvable": false
+   },
+   "pass": true
+  },
+  "7 the transpose of each knot's space is a knot's space (sign-nonsingularity is transpose-invariant); it exchanges points and lines, so every 3-edge cut's point side (hub) becomes a line side (knot) and conversely": {
+   "info": {
+    "Fano": {
+     "transpose is a knot's space": true
+    },
+    "S13": {
+     "transpose is a knot's space": true
+    },
+    "S19": {
+     "transpose is a knot's space": true
+    },
+    "S19b": {
+     "transpose is a knot's space": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The knot's spaces (connected non-2-colourable cubic systems) compose only through hubs. (i) Balance: every 3-edge cut of a cubic incidence graph has a point side, whose three cut edges all leave from its points, and a line side. (ii) A composition across a cut fails iff the two sides' accepted relations on the channels are disjoint. (iii) A relation on k channels whose (k-1)-place projections are full has at least 2^(k-1) states, with equality only for a parity coset (an independent set of size 2^(k-1) in the k-cube is a colour class); so two sides that both accept knots fail together only as complementary parity cosets. (iv) Across every nontrivial 3-edge cut of a knot's space the line side accepts exactly not-all-equal on its slots and the point side exactly equality on its ports, complementary halves of {0,1}^3 (point lemma of THREEFOLD-AMPLITUDE); a double cut of a knot's space accepts a twelve-class knot or no knot, and two twelve-class sides never fail together (12 + 12 > 16). So a composition of knot's spaces always meets a hub (equality fan-out), and a hub-free failing composition is a parity one. (v) The transpose of a knot's space is a knot's space (sign-nonsingularity is transpose-invariant) and exchanges the two sides of every 3-edge cut, the knot side with the hub side.",
+ "kind": "proof",
+ "proof": "KNOT-COMPOSE-20261101-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "KNOT-COMPOSE-20261101-001A"
+}

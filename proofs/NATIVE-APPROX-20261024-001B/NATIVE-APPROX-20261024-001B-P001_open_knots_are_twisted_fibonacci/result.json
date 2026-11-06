@@ -1,0 +1,75 @@
+{
+  "artifact_id": "NATIVE-APPROX-20261024-001B-P001",
+  "checks": {
+    "orbit and twists": {
+      "Fib with 0 or 3 negations gives the two no-lone-value knots": true,
+      "S(x, y, z) = Fib(x, y, not z)": true,
+      "each is Fib with one or two negated places": true,
+      "open knots": 6,
+      "they form one orbit": true
+    },
+    "random networks": {
+      "S count = twisted Fibonacci count": 1000,
+      "networks": 1000,
+      "signed two-spin sum = count": 1000,
+      "twisted edges present": 779
+    },
+    "the twist in the Fibonacci basis": {
+      "C is symmetric and orthogonal (C C = I)": true,
+      "C matches [[2 phi, phi], [phi, -2 phi]]/D^2": true,
+      "Fib = sum lambda_j v_j^3": true,
+      "negative entries of C": 1
+    }
+  },
+  "claim": "The six non-symmetric knots excluding three tuples form one orbit under place permutations and complement, and each is the Fibonacci knot with one or two negated places (S(x, y, z) = Fib(x, y, not z)); so native networks of such a knot with pins are Fibonacci networks with twisted (disequality) edges and complemented pins. In the Fibonacci eigenbasis a twist is the reflection [[2 phi, phi], [phi, -2 phi]]/D^2 with one negative entry, so the count is a signed two-spin sum. McQuillan's winding fails because the knot is not windable, the Fibonacci holographic algorithm fails because a twist is not diagonal, and weighted Fibonacci gates admit edge activities but not twists.",
+  "controls": {
+    "not-all-equal is not Fib with negations": true,
+    "the absolute value of C changes the signed sum on some network": true,
+    "treating twisted edges as plain changes some count": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NATIVE-APPROX-20261024-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "open_knots_twisted_fibonacci_shown": true,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NATIVE-APPROX-20261024-001B"
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 3,
+  "artifact_id": "BPHP-MORE-PIGEONS-NOTE-20261019-001-P001",
+  "canonical_id": "BPHP-MORE-PIGEONS-NOTE-20261019-001-P001",
+  "kind": "proof",
+  "ticket": "BPHP-MORE-PIGEONS-NOTE-20261019-001",
+  "proof": "BPHP-MORE-PIGEONS-NOTE-20261019-001-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A checkable note for Braun: bit PHP with more pigeons, bit-colouring, and an independent replay",
+  "status": "Proved",
+  "claim": "The drop-in Lean file MorePigeonsColouring.lean, placed in the claims folder of Braun's formalization, proves the eight theorems of HOLE-CRITERION-COLOURING-20261019-001B-P001 with only the standard axioms at commit 8904bf09, and applies unchanged at his newest commit 25239211; the note states exactly those theorems, its numbers are recomputed, and the one-page replay summary reports exactly the recorded results of BPHP-RES-PARITY-AUDIT-20261019-001. No new mathematics beyond B-P001.",
+  "dependencies": [
+    "HOLE-CRITERION-COLOURING-20261019-001Z",
+    "BPHP-RES-PARITY-AUDIT-20261019-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "resolution-over-parities",
+    "graph-colouring-proof-complexity"
+  ],
+  "evidence_modes": [
+    "external-presentation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The drop-in file fails to compile in Braun's claims folder, or a theorem uses a nonstandard axiom.",
+    "A theorem statement in the drop-in file differs from B-P001's kernel file.",
+    "A formalization file the drop-in depends on differs between 8904bf09 and 25239211.",
+    "A number or formula in the note disagrees with the Lean statement or with its recomputation.",
+    "The replay summary reports a result the audit did not record."
+  ],
+  "lineage": {
+    "home_scope": "BPHP-MORE-PIGEONS-NOTE-20261019-001",
+    "epic_path": [],
+    "parents": [
+      "proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/manifest.json",
+      "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/manifest.json": "114a64e4777c7367a572c20fde33abaa45ed5368205351f6b44ed04095f5f0cb",
+    "proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/result.json": "55e19fca67bec3833ac8fc683271a8d2ca2e6f8f695125ac19fffbff9d3d8f33",
+    "proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/MorePigeonsColouring.lean": "2411435c3a7a3bb562bef6f0ac27f9c3a403c63cc7a6a3789d63d2e07c583a36",
+    "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json": "4126014582ba2a271aa07918e6adbb9dab115b1f0f5cb7935eb18b11dca7ddc6",
+    "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/result.json": "f1d3968659e584a58df19790703f305bcb0ed7cff7fdf2102b12bdff6bcead1f",
+    "artifacts/BPHP-RES-PARITY-AUDIT-20261019-001A/BPHP-RES-PARITY-AUDIT-20261019-001A-E001_formal_replay/result.json": "fb6143385432833a3c53818a5b4114dc5ecef9200d44e74ac047a89d20d3dbb2"
+  },
+  "audited_source": {
+    "repository": "https://github.com/kbr-/math-research",
+    "commit": "8904bf09a5376f48a00d1c25d079bf0c6441502a",
+    "newest_commit_checked": "25239211058ef718402a908b3272f01480c159c4",
+    "files": {
+      "claims/BitPHPExponential.lean": "fb55c84eb428280a349f74457bc90931c7c9637e3ae69bfada05b8187ae9777a",
+      "claims/BitPHPClauseTransfer.lean": "fe9b4ef3c8c606ad8b6b3f2e310cbfb95c2ee00c2751cae48badedb9157f0339",
+      "claims/AffineFamilyExclusion.lean": "a96dc436ca0f7e1132f61a072581e1e838e6e29c854c2c36b8b7e6d5517a37f8",
+      "claims/CommonAffineRestrictionKernel.lean": "5d84142b162fe1329edc86e57376ebc8fc0f8ef0682afe9205906cbfc2c715f0",
+      "claims/AffineBlockRestriction.lean": "06725776da89c70c95e849e9822c359761227c5a39a41e65866641825402d7f4",
+      "claims/BitPHPInitialBridge.lean": "64919f5cc6fa8942374e0d4e337d799d095939c873da002340d570bdeae5a421",
+      "claims/AffineDAGRegistry.lean": "4e871f1343c3f4f0a864e7427814ab49345d253a4c2b7293461daa6a63eca8e6",
+      "claims/BinaryAffineZeroCover.lean": "8dad7bde6f319b14e70edbbc235b31b69a7957fea3bbfca33e032278527c6ecb",
+      "claims/BinarySemanticAffineCover.lean": "7b744cbf171883e5b89b45ed203649fb8e8fceb500a7fd9f75487a2a2bcfd1dc",
+      "claims/CompactBitDecoder.lean": "6c9b5e15f828521378a85625ac9be9de6c16752114633548490d7360ff5f6888",
+      "claims/AffineClauseRegistry.lean": "e93e08a21ef3b07417d28822462b98a400a55f4677bf72eee0538033e316d161",
+      "lakefile.lean": "91ed7c213c3a62e7d1076a98eb079ea215babd6f5d1ca5ff1c56991cedf5bc84",
+      "lake-manifest.json": "394af091c3c7fc321b95e2b2a8b93519067bef1de5a9c478627599257d64cf72",
+      "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+    }
+  },
+  "paths": {
+    "manifest": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/manifest.json",
+    "identity": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/identity.json",
+    "directory": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author",
+    "proof": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/proof.md",
+    "result": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/result.json",
+    "check": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/check.py",
+    "kernel": "proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/MorePigeonsColouring.lean"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "weak_bit_php_lower_bound_kernel_checked": true,
+    "bit_colouring_transfer_kernel_checked": true,
+    "bit_colouring_lower_bound_kernel_checked": true,
+    "non_vacuity_witnesses_kernel_checked": true,
+    "braun_theorem_admitted_locally": false,
+    "unary_colouring_or_pc_degree_claim": false,
+    "ac0_2_frege_lower_bound": false,
+    "drop_in_compiles_at_pinned_commit": true,
+    "drop_in_applies_at_newest_commit": true,
+    "note_matches_lean_statements": true,
+    "replay_summary_matches_audit": true,
+    "sent_to_author": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Presentation of proof-complexity results for an external reader; no contact-first claim.",
+  "validation": {
+    "status": "checked: drop-in built in the author's claims folder with standard axioms; newest-commit equivalence by git diff; note and summary tied to the Lean file and the audit records; both PDFs built; four tampering controls caught; no human or external review",
+    "level": "V2 trusted kernel for the drop-in (Lean 4.34.0-rc2 with the pinned Mathlib, against the author's development); V1 recomputation for the documents' figures and numbers.",
+    "external_review": false,
+    "trusted_kernel": true,
+    "novelty": "inherited from HOLE-CRITERION-COLOURING-20261019-001B-P001 (corollary level); a 2026-10-19 check of Braun's newest commit, arXiv:2609.23015v1 and Byramji-Impagliazzo arXiv:2511.20023 found no prior statement.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-19."
+  }
+}

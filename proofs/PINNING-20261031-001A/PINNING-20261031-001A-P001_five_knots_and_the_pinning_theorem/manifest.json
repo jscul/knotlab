@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINNING-20261031-001A-P001",
+  "canonical_id": "PINNING-20261031-001A-P001",
+  "kind": "proof",
+  "ticket": "PINNING-20261031-001A",
+  "proof": "PINNING-20261031-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Five knots and the pinning theorem",
+  "status": "Proved",
+  "claim": "The 34 three-place knot relations form exactly five classes under flips and permutations: parity, Fibonacci (no-lone), not-all-equal, x or (y != z), clause. Only not-all-equal excludes both constant colourings, so on plain cubic systems it is the only knot that can fail; only the four signed not-all-equal relations are unchanged by flipping every colour, and such laws cannot pin a value. Pinning theorem: a signed law with a pinning piece, a relation that becomes an equality or disequality when one point is pinned, and a full piece is as hard on simple cubic systems as with unbounded occurrences (copy chains through pinned points, spare incidences absorbed by full pieces); with Schaefer this makes every non-affine such law NP-complete on cubic systems. Only parity is Schaefer-tractable. The clause cannot pin (a pinning piece would give an unsatisfiable cubic clause system, against Tovey). Checked: the generic reduction on 60 Fibonacci instances; Tovey on 300 random cubic clause systems; no pinning piece for the clause or not-all-equal with up to four internal points.",
+  "dependencies": [
+    "MUTUAL-SELECTION-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A sixth class of three-place knots, or a knot other than not-all-equal excluding both constants.",
+    "A reduction instance whose cubic system differs in solvability from the source, or is not cubic or not simple.",
+    "A pinning piece for the clause or for not-all-equal."
+  ],
+  "lineage": {
+    "home_scope": "PINNING-20261031-001",
+    "epic_path": [
+      "PINNING-20261031-001"
+    ],
+    "parents": [
+      "research/MUTUAL-SELECTION-20261031-001C/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001B/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001A/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "dce42dbefe8c23386bf8b7567ff010e427dcc0acd1685bb15e50b0b2da51ca15",
+    "research/MUTUAL-SELECTION-20261031-001B/manifest.json": "00780b4bcefba1e2d98732ecb2c9e4e133710a5beebec4cad931e4b730f0fb5e",
+    "research/MUTUAL-SELECTION-20261031-001A/manifest.json": "63720d09d5f4df5e62dcc5fbe6994626e05e49b0906396c3bf45877f4a504068"
+  },
+  "paths": {
+    "manifest": "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json",
+    "identity": "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/identity.json",
+    "directory": "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem",
+    "proof": "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/proof.md",
+    "result": "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json",
+    "check": "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "pinning_theorem_shown": true
+  },
+  "foundation_claim_scope": "A structural classification of the three-place knots and a gadget theorem for cubic systems; no counting claim.",
+  "validation": {
+    "status": "checked: the five classes and their Schaefer status by enumeration; the constant and complement lemmas; the generic reduction on 60 instances; the clause lemma's ingredients; searches for pinning pieces; controls; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "Schaefer (1978), Tovey (1984) and bounded-occurrence constraint satisfaction (Feder; Dalmau and Ford) are classical; the five-class census of three-place knots, the no-preferred-value lemma and the pinning theorem for exactly-three occurrences in this form: no overlap found yet (literature check at closure)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31."
+  }
+}

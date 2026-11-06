@@ -1,0 +1,24 @@
+machinery: J_t invariance and bundle identity ok
+{"test": "R1", "p": 5, "d": 4, "e": 1, "knot": "6_1", "slope d/p: count(K), count(K#K), product": [61, 3721, 3721], "slope d/1: count(K), count(K#K), product": [61, 1929, 3721], "class dims (x; y, w)": [[1, 1], [2, 2]], "multiplicative at d/p": true, "multiplicative at d/1": false}
+{"test": "R1", "p": 7, "d": 3, "e": 1, "knot": "6_1", "slope d/p: count(K), count(K#K), product": [127, 16129, 16129], "slope d/1: count(K), count(K#K), product": [127, 7489, 16129], "class dims (x; y, w)": [[1, 1], [2, 2]], "multiplicative at d/p": true, "multiplicative at d/1": false}
+{"test": "R1", "p": 7, "d": 6, "e": 1, "knot": "3_1", "slope d/p: count(K), count(K#K), product": [127, 16129, 16129], "slope d/1: count(K), count(K#K), product": [343, 20881, 117649], "class dims (x; y, w)": [[1, 1], [2, 2]], "multiplicative at d/p": true, "multiplicative at d/1": false}
+R2 amphichiral rows 66
+R2 cable rows 56
+Traceback (most recent call last):
+  File "/home/jscul/p-vs-np-contact-first/experiments/COPRIME-DICHOTOMY-20261027-001B/COPRIME-DICHOTOMY-20261027-001B-E001_base_terms_and_steering_at_higher_characters/run.py", line 217, in <module>
+    same, out = steer_case(p, d, e, summ, nc, aname, lf, off)
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/experiments/COPRIME-DICHOTOMY-20261027-001B/COPRIME-DICHOTOMY-20261027-001B-E001_base_terms_and_steering_at_higher_characters/run.py", line 184, in steer_case
+    Mb, Mi = CyclicBraidModel(base, n, A, p), CyclicBraidModel(w2, n, A, p)
+                                              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/proofs/COPRIME-DICHOTOMY-20261027-001A/COPRIME-DICHOTOMY-20261027-001A-P001_pairs_and_triples_of_nontrivial_characters_the_polynomial_side_for_every_cyclic_action/cd_lib.py", line 381, in __init__
+    self.Lin = {c: self._linear_part(c) for c in range(A.d)}
+                   ~~~~~~~~~~~~~~~~~^^^
+  File "/home/jscul/p-vs-np-contact-first/proofs/COPRIME-DICHOTOMY-20261027-001A/COPRIME-DICHOTOMY-20261027-001A-P001_pairs_and_triples_of_nontrivial_characters_the_polynomial_side_for_every_cyclic_action/cd_lib.py", line 422, in _linear_part
+    return self.run(V, A1)[:, :, 0].T % self.p
+           ~~~~~~~~^^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/proofs/COPRIME-DICHOTOMY-20261027-001A/COPRIME-DICHOTOMY-20261027-001A-P001_pairs_and_triples_of_nontrivial_characters_the_polynomial_side_for_every_cyclic_action/cd_lib.py", line 391, in run
+    a, b = cur[i], cur[i + 1]
+                   ~~~^^^^^^^
+IndexError: list index out of range
+exit 1

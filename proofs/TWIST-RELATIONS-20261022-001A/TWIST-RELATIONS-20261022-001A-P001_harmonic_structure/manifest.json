@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TWIST-RELATIONS-20261022-001A-P001",
+  "canonical_id": "TWIST-RELATIONS-20261022-001A-P001",
+  "kind": "proof",
+  "ticket": "TWIST-RELATIONS-20261022-001A",
+  "proof": "TWIST-RELATIONS-20261022-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The harmonic structure of the twist sectors",
+  "status": "Proved",
+  "claim": "On square-lattice tori with periods (Lh, 0) and (s, Lv), shearing by Lh relabels the twist sectors (a, b) -> (a, a + b) and the mirror maps shear s to -s, pathwise for every orientation. Hence, for P_ab = P(all strong components contractible), E = P00 - P01, P00 + P01 and P10 + P11 are even and Lh-periodic in s and carry only whole harmonics, while O = P10 - P11 is even and Lh-antiperiodic and carries only half-integer harmonics, with O(Lh/2) = 0; the second difference is E - O, so additivity at half shear holds exactly when P00 = P01. In twisted sectors P(consistent) = 1 - P(contractible) - P(odd winding), so the consistency relation is equivalent to D = odd10 + odd01 - odd11. None of the measured large-size relations holds exactly on the 3 x 3 torus.",
+  "dependencies": [
+    "SC-TORUS-EXACT-20261022-001A",
+    "NAE-INVARIANT-20261022-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "An orientation whose sectors disagree with their relabelled sectors after a shear by Lh, or with the mirrored and gauge-fixed sectors.",
+    "At half shear, an orientation whose (1, 0)-sector differs from the (1, 1)-sector of its mirrored image.",
+    "On the 3 x 3 torus, contractible and cross counts that differ, or consistency different from 1 - contractible - odd winding.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "TWIST-RELATIONS-20261022-001",
+    "epic_path": [
+      "TWIST-RELATIONS-20261022-001"
+    ],
+    "parents": [
+      "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/manifest.json",
+      "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/manifest.json": "c3df7ce3ee64b5fa68b3d7ab2646f4323b1bd1ef991f820fcc6fce7f139d54b6",
+    "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json": "3dc17f4ab6171f5d61989a43816aca233d401ef04fc8746e7f623e67ce47e0bc"
+  },
+  "paths": {
+    "manifest": "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/manifest.json",
+    "identity": "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/identity.json",
+    "directory": "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure",
+    "proof": "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/proof.md",
+    "result": "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/result.json",
+    "check": "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "basis_covariance_proved": true,
+    "harmonic_parity_proved": true,
+    "rectangle_additivity_proved": false,
+    "odd_line_identity_proved": false
+  },
+  "foundation_claim_scope": "Twist sectors of uniform random orientations of square-lattice tori; exact covariance and its harmonic consequences. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies Theorem 1 (a), (b) and (c) pathwise on 1,150 sampled orientations of six tori (4 x 3 s = 1, 4 x 4 s = 2, 5 x 4 s = 2, 6 x 4 s = 3, 6 x 5 s = 1, 5 x 5 s = -2) in all four sectors, with zero mismatches in kind, oddness and mapped class; enumerates all 2^18 orientations of the 3 x 3 torus at shears 0 and 1 to confirm the duality identities exactly and the failure of the four large-size relations, and records the odd-line counts (Conjecture 6 holds there); two controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and sampled checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per theorem in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-22."
+  }
+}

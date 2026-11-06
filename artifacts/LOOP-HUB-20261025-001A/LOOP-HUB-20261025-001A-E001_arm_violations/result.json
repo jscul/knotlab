@@ -1,0 +1,104 @@
+{
+  "controls": {
+    "(i) tree gadgets never exceed lhs/rhs = 1": true,
+    "(ii) the annealer reaches equality at sizes 4, 8 and 12": true,
+    "(iii) the planted function is flagged": true
+  },
+  "evidence_stage": "confirmatory",
+  "experiment_id": "LOOP-HUB-20261025-001A-E001",
+  "rows": 443,
+  "schema_version": 1,
+  "summary": {
+    "P1_no_violation_annealing": true,
+    "P2_no_violation_families": true,
+    "P3_split_bounds": true,
+    "best_annealing": 1.0,
+    "best_chains": 1.0,
+    "best_cores": 1.0,
+    "lemma2_holds_on_pairs": true,
+    "pairs": {
+      "P3_fail_A": 0,
+      "P3_fail_B": 0,
+      "arm_fail": 0,
+      "axis_terminal_cases": 21660,
+      "gadgets": 2000,
+      "linked": 371328,
+      "minor_cases": 24000,
+      "minor_fail": 828,
+      "per_image_cases": 143618,
+      "per_image_fail": 656,
+      "per_partner_cases": 32011,
+      "per_partner_fail": 107
+    }
+  },
+  "table": {
+    "annealing_by_size": {
+      "12": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 48
+      },
+      "16": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 48
+      },
+      "20": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 45
+      },
+      "24": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 18
+      },
+      "32": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 3
+      },
+      "4": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 48
+      },
+      "40": {
+        "best": 0.876237333228633,
+        "runs": 48,
+        "runs_reaching_equality": 0
+      },
+      "8": {
+        "best": 1.0,
+        "runs": 48,
+        "runs_reaching_equality": 48
+      }
+    },
+    "chains": {
+      "1": 1.0,
+      "10": 0.6909965034965035,
+      "11": 0.6382423102735676,
+      "12": 0.6357652916476045,
+      "2": 1.0,
+      "3": 1.0,
+      "4": 0.7297297297297297,
+      "5": 0.7333333333333333,
+      "6": 0.695364238410596,
+      "7": 0.6854764107308048,
+      "8": 0.6277216157486537,
+      "9": 0.6971153846153846
+    },
+    "cores": {
+      "11": 0.5851063829787234,
+      "13": 0.6003098373353989,
+      "15": 0.5880241196033942,
+      "3": 1.0,
+      "5": 1.0,
+      "7": 1.0,
+      "9": 1.0
+    }
+  },
+  "ticket": "LOOP-HUB-20261025-001A",
+  "verdict": "supported",
+  "wall_seconds_this_run": 273.2
+}

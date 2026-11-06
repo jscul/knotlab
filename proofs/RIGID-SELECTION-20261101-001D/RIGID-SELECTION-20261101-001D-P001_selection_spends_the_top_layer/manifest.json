@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RIGID-SELECTION-20261101-001D-P001",
+  "canonical_id": "RIGID-SELECTION-20261101-001D-P001",
+  "kind": "proof",
+  "ticket": "RIGID-SELECTION-20261101-001D",
+  "proof": "RIGID-SELECTION-20261101-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Selection spends the top layer",
+  "status": "Proved",
+  "claim": "Selection spends the top layer. Let R be a finite chain ring with maximal ideal (pi), residue field F and length k (for example Z_(p^k), GF(q), Galois rings, GF(q)[t]/(t^k)), and let a system of m linear equations in n variables over R fail globally: it has no solution, but removing any one equation makes it solvable. Then m <= n + 1, and after removing any equation L the solutions form a coset of a group K_L isomorphic to R^(n-m+1) + N, where pi^(k-1) N = 0; so their top layer (residues mod pi) has dimension exactly n - m + 1 over F. For the square systems of a substrate (m = n) the top layer is one line. Hence (1) over a field (k = 1) only ties remain, which reproves ticket A's rigidity; (2) a knot kept after a removal has at most one variable taking all |R| values, its other variables take at most |R|/|F| values, and its index in the product of its ranges is at most |R|/|F| = |F|^(k-1): it hides at most k - 1 digits; (3) the bound is attained over Z8 (index 4) and Z27 (index 9). Proof: the classes of the equations in the cokernel M must share one socle line, so pi^(k-1) M lies in every cyclic submodule R g_L; hence M / R g_L, the cokernel of the system without L, has no free summand, and the Smith form gives the kernel. Checked on random global failures over Z4, Z8, Z16, Z9, Z27 and Z25 (square and rectangular, unit and arbitrary coefficients) and by brute force over F2[t]/(t^2), a chain ring of characteristic 2 that is not Z4.",
+  "dependencies": [
+    "RIGID-SELECTION-20261101-001A",
+    "RIGID-SELECTION-20261101-001B"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A global failure over a finite chain ring whose solutions after removing an equation have a top layer of dimension other than n - m + 1, or a global failure with m > n + 1.",
+    "A knot kept inside a square global failure with two variables taking all |R| values, or with index above |R|/|F|."
+  ],
+  "lineage": {
+    "home_scope": "RIGID-SELECTION-20261101-001",
+    "epic_path": [
+      "RIGID-SELECTION-20261101-001"
+    ],
+    "parents": [
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/result.json",
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py",
+      "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/manifest.json": "45ae09864fb7f087905d82c1888b9204baaf186eb264de18b540fc2d405fe49f",
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/result.json": "2a5928a6a2a3017af738116698d2fc25b01a5cc740dfe21ea923da36afe4921e",
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py": "5777f4e3efed6ea9454a742156b2a54b9dacc443631586276c1f8ad6516258ca",
+    "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "cfa9b1320686064afd57c6bfd7de64e1ed657e60d0c8cca8f85f5794a5f1fc0d",
+    "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "8e3afd228953e814ce5b6ef63f647c68d66a75cd95c0bbad8f4c5446fe91af4e"
+  },
+  "paths": {
+    "manifest": "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json",
+    "identity": "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/identity.json",
+    "directory": "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer",
+    "proof": "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/proof.md",
+    "result": "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json",
+    "check": "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "top_layer_theorem_proved": true
+  },
+  "foundation_claim_scope": "Linear systems over finite chain rings that fail globally, and the solutions left after removing one equation.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: random global failures over six rings Z_(p^k) by the local Smith form; brute force over F2[t]/(t^2); attaining examples over Z8 and Z27; no human or external review",
+    "novelty": "The Smith form over chain rings is classical; no source found treats minimally unsolvable systems over chain rings or the solutions they leave (closest: the Min-r-Lin(Z_m) optimisation literature)."
+  }
+}

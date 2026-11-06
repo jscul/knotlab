@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "artifact_id": "CELL-SIZE-20261020-001B-P001",
+  "canonical_id": "CELL-SIZE-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "CELL-SIZE-20261020-001B",
+  "proof": "CELL-SIZE-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Tseitin size from cell systems: planar, minor-free and grid-like graphs",
+  "status": "Proved",
+  "claim": "Let G be connected of maximum degree Delta. Suppose every edge outside an exceptional set U lies on a cycle (cell) of length at most L, and every edge e = uv of every cell C has a u-v path of length at most ell avoiding the edges of C. If the cut function of G has a tangle of order k, then every PC (0/1 basis) or PCR refutation of a Tseitin formula on G over a field of characteristic other than 2, and every resolution refutation, has size 2^(c k - O(|U|)) with c = c(Delta, L, ell) > 0. Corollaries: 2-connected plane graphs whose faces pairwise share at most one edge and whose inner faces have length at most L (for example 3-connected planar graphs with short faces); d-dimensional grids [k]^d, size 2^Omega(k^(d-1)); walls. Restriction plus renaming carries lower bounds from a wall topological minor to the whole graph (PCR and resolution), so every graph excluding a fixed minor H, planar graphs included, needs size 2^Omega_H(tw); this is tight for bounded degree.",
+  "dependencies": [
+    "PC-SIZE-GRID-20261020-001Z",
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "polynomial-calculus-size",
+    "resolution-size",
+    "tseitin-formulas",
+    "graph-minors"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "inherited-consequence"
+    ]
+  },
+  "failure_conditions": [
+    "A family claimed to have a cell system fails (C2) or (C3) on a checked instance.",
+    "A detour meets a restricted edge, or some free edge carries more than L detours, under the selection rule.",
+    "Some cut keeps less than a 1/(L+1) fraction, or vanishes, for a selectable restriction on a checked instance.",
+    "Sampled selection probabilities disagree with the exact formula.",
+    "The transfer to a wall topological minor fails: a vertex outside the wall stays odd, or the renamed formula is not the suppressed wall's Tseitin formula with odd total charge.",
+    "A published statement of these bounds is found."
+  ],
+  "lineage": {
+    "home_scope": "CELL-SIZE-20261020-001",
+    "epic_path": [
+      "CELL-SIZE-20261020-001"
+    ],
+    "parents": [
+      "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/manifest.json",
+      "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/manifest.json": "23f67726587bd69c7ad22f2b110b5980a7dea89fb0168bc51d16327be84c94c0",
+    "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json": "5815b573a2b3594b5014ce3fc584ead636dd35a60413b3bf1bb7434f96610446"
+  },
+  "paths": {
+    "manifest": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json",
+    "identity": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/identity.json",
+    "directory": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem",
+    "proof": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/proof.md",
+    "result": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/result.json",
+    "check": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/check.py",
+    "families": "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/families.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "detour_lemma_proved": true,
+    "cell_theorem_proved": true,
+    "plane_short_face_corollary_proved": true,
+    "d_dimensional_grid_corollary_proved": true,
+    "topological_minor_transfer_proved": true,
+    "minor_free_corollary_proved": true,
+    "general_graph_bound_2_to_omega_tw_proved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Proof-complexity size lower bounds for Tseitin formulas; no contact-first claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies the cell conditions on grids, triangulated grids, suppressed walls and 3D grids, explicit detour systems (avoidance and congestion at most L) under the selection rule, exhaustive retention for every single cell of five small instances, a radius control, selection probabilities against sampling, and the transfer to a wall topological minor (parity correction and renaming equivalence on 300 random assignments); no human or external review",
+    "level": "V1 prose proof with executable checks; cites the tangle-branch-width duality (Robertson-Seymour; Geelen-Gerards-Robertson-Whittle), the linear grid-minor theorems (Robertson-Seymour-Thomas 1994; Demaine-Hajiaghayi 2008) and the regular-resolution upper bound (Alekhnovich-Razborov 2011); no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 found regular resolution 2^Theta(tw) for all graphs (Itsykson et al.), bounded-depth Frege 2^(tw^Omega(1/d)) (Galesi et al.) and grid results (Hastad; Hastad-Risse; Beck-Nordstrom-Tang), but no statement of 2^Omega(tw) for general resolution or PCR on planar, minor-free or d-dimensional grid graphs. Ingredients are standard; the detour lemma is elementary.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

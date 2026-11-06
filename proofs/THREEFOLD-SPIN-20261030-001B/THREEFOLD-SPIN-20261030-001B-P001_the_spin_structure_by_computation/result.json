@@ -1,0 +1,218 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SPIN-20261030-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 10,
+    "mismatched": {}
+   }
+  },
+  "1 every space up to 22 points: Kasteleyn faces, Arf 0, exactly 3^h classes realized": {
+   "ok": true,
+   "detail": {
+    "Fano (7)": {
+     "genus (Fano atoms)": 1,
+     "maps": 16,
+     "perfect matchings": 24,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 3, 3)": 16
+     }
+    },
+    "13-point splice": {
+     "genus (Fano atoms)": 2,
+     "maps": 128,
+     "perfect matchings": 192,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 9, 10)": 128
+     }
+    },
+    "19-point class 0": {
+     "genus (Fano atoms)": 3,
+     "maps": 128,
+     "perfect matchings": 1536,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 27, 36)": 128
+     }
+    },
+    "19-point class 1": {
+     "genus (Fano atoms)": 3,
+     "maps": 128,
+     "perfect matchings": 1536,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 27, 36)": 128
+     }
+    },
+    "19-point class 2": {
+     "genus (Fano atoms)": 3,
+     "maps": 128,
+     "perfect matchings": 1536,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 27, 36)": 128
+     }
+    },
+    "19-point class 3": {
+     "genus (Fano atoms)": 3,
+     "maps": 128,
+     "perfect matchings": 1536,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 27, 36)": 128
+     }
+    },
+    "21-point 3-cycle of blocks": {
+     "genus (Fano atoms)": 3,
+     "maps": 64,
+     "perfect matchings": 4608,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 27, 36)": 64
+     }
+    },
+    "22-point tripod": {
+     "genus (Fano atoms)": 3,
+     "maps": 64,
+     "perfect matchings": 6144,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on differences, classes realized, zeros of q)": {
+      "(True, True, 0, True, 27, 36)": 64
+     }
+    }
+   }
+  },
+  "2 larger spaces (trisum glue, twisted cube): Kasteleyn faces and Arf 0 on sampled maps": {
+   "ok": true,
+   "detail": {
+    "35-point space with trisum glue": {
+     "genus": 5,
+     "maps": 3,
+     "sampled perfect matchings": 2000,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on sampled differences, classes hit, zeros of q)": {
+      "(True, True, 0, True, 54, 528)": 1,
+      "(True, True, 0, True, 27, 528)": 2
+     }
+    },
+    "43-point twisted cube": {
+     "genus": 6,
+     "maps": 3,
+     "sampled perfect matchings": 2000,
+     "maps by (faces 2 mod 4, three distinct faces, Arf, form 0 on sampled differences, classes hit, zeros of q)": {
+      "(True, True, 0, True, 54, 2080)": 2,
+      "(True, True, 0, True, 108, 2080)": 1
+     }
+    }
+   }
+  },
+  "3 trisums of prisms: rigid genus one, Kasteleyn on every minimal map, Arf 0, the three even classes": {
+   "ok": true,
+   "detail": {
+    "trisum (2, 2, 2)": {
+     "genus": 1,
+     "rigid at every vertex": true,
+     "minimal maps": 36,
+     "perfect matchings": 36,
+     "maps by (Kasteleyn, three distinct faces, Arf, form 0 on differences, classes realized, zeros)": {
+      "(True, True, 0, True, 3, 3)": 36
+     }
+    },
+    "trisum (2, 2, 3)": {
+     "genus": 1,
+     "rigid at every vertex": true,
+     "minimal maps": 56,
+     "perfect matchings": 80,
+     "maps by (Kasteleyn, three distinct faces, Arf, form 0 on differences, classes realized, zeros)": {
+      "(True, True, 0, True, 3, 3)": 56
+     }
+    },
+    "trisum (2, 3, 3) (flip)": {
+     "genus": 1,
+     "rigid at every vertex": true,
+     "minimal maps": 76,
+     "perfect matchings": 169,
+     "maps by (Kasteleyn, three distinct faces, Arf, form 0 on differences, classes realized, zeros)": {
+      "(True, True, 0, True, 3, 3)": 76
+     }
+    },
+    "trisum (3, 3, 3)": {
+     "genus": 1,
+     "rigid at every vertex": true,
+     "minimal maps": 96,
+     "perfect matchings": 450,
+     "maps by (Kasteleyn, three distinct faces, Arf, form 0 on differences, classes realized, zeros)": {
+      "(True, True, 0, True, 3, 3)": 96
+     }
+    }
+   }
+  },
+  "4 Heawood torus: |det| 24 for the knot's class, 8 for the other three; the Cimasoni-Reshetikhin sum is 2 x 24": {
+   "ok": true,
+   "detail": {
+    "maps by (knot's class |det|, other classes |det|, Cimasoni-Reshetikhin sum)": {
+     "(24, (8, 8, 8), 48)": 16
+    }
+   }
+  },
+  "5 non-minimal maps: odd spin structures occur for the same signs, only from genus 3 on": {
+   "ok": true,
+   "detail": {
+    "Fano (Heawood graph)": {
+     "tally (genus, kind)": {
+      "(1, 'Kasteleyn, Arf', 0)": 2,
+      "(2, 'Kasteleyn, Arf', 0)": 83,
+      "(2, 'not Kasteleyn')": 4,
+      "(3, 'Kasteleyn, Arf', 0)": 751,
+      "(3, 'not Kasteleyn')": 256,
+      "(4, 'Kasteleyn, Arf', 0)": 404
+     },
+     "odd spin structures by genus": {},
+     "form vanishes on matching differences on every Kasteleyn map": true,
+     "fast Arf agrees with the Gauss sum (maps of genus at most 3)": "836 of 836"
+    },
+    "13-point space": {
+     "tally (genus, kind)": {
+      "(4, 'Kasteleyn, Arf', 0)": 11,
+      "(4, 'not Kasteleyn')": 14,
+      "(5, 'Kasteleyn, Arf', 0)": 209,
+      "(5, 'not Kasteleyn')": 125,
+      "(6, 'Kasteleyn, Arf', 0)": 579,
+      "(6, 'Kasteleyn, Arf', 1)": 10,
+      "(6, 'not Kasteleyn')": 359,
+      "(7, 'Kasteleyn, Arf', 0)": 181,
+      "(7, 'Kasteleyn, Arf', 1)": 12
+     },
+     "odd spin structures by genus": {
+      "6": 10,
+      "7": 12
+     },
+     "form vanishes on matching differences on every Kasteleyn map": true,
+     "fast Arf agrees with the Gauss sum (maps of genus at most 3)": "0 of 0"
+    },
+    "trisum (2, 2, 3)": {
+     "tally (genus, kind)": {
+      "(2, 'Kasteleyn, Arf', 0)": 4,
+      "(3, 'Kasteleyn, Arf', 0)": 79,
+      "(3, 'not Kasteleyn')": 20,
+      "(4, 'Kasteleyn, Arf', 0)": 441,
+      "(4, 'not Kasteleyn')": 195,
+      "(5, 'Kasteleyn, Arf', 0)": 617,
+      "(5, 'Kasteleyn, Arf', 1)": 8,
+      "(5, 'not Kasteleyn')": 136
+     },
+     "odd spin structures by genus": {
+      "5": 8
+     },
+     "form vanishes on matching differences on every Kasteleyn map": true,
+     "fast Arf agrees with the Gauss sum (maps of genus at most 3)": "83 of 83"
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "on the 13-point space one even class is not realized: the handle-even restriction is real": true,
+    "the planar cube without its Kasteleyn signs is not Kasteleyn (its faces are 4-cycles)": true
+   }
+  },
+  "ok": true,
+  "seconds": 53.2
+ }
+}

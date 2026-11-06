@@ -1,0 +1,447 @@
+{
+ "artifact_id": "PINNING-20261031-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "info": {
+    "mismatched": {},
+    "parents": 3
+   },
+   "pass": true
+  },
+  "1 the three-place knots (34 relations) form exactly five classes under flips and permutations": {
+   "info": {
+    "Fibonacci (no-lone)": {
+     "canonical states": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "relations in the class": 8
+    },
+    "clause": {
+     "canonical states": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ],
+     "relations in the class": 8
+    },
+    "not-all-equal": {
+     "canonical states": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "relations in the class": 4
+    },
+    "parity": {
+     "canonical states": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ],
+     "relations in the class": 2
+    },
+    "x or (y != z)": {
+     "canonical states": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "relations in the class": 12
+    }
+   },
+   "pass": true
+  },
+  "2 plain systems: not-all-equal is the only knot relation excluding both constant colourings, so every other knot is satisfied by a constant on every plain system": {
+   "info": {
+    "knot relations excluding 000 and 111": [
+     [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "3 the knot relations unchanged by flipping every colour are exactly the four signed not-all-equal relations": {
+   "info": {
+    "relations": [
+     [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "4 Schaefer: only the parity law is tractable with unbounded occurrences (affine); the other four signed laws are NP-complete": {
+   "info": {
+    "Fibonacci (no-lone)": [],
+    "clause": [],
+    "not-all-equal": [],
+    "parity": [
+     "affine (closed under a+b+c)"
+    ],
+    "x or (y != z)": []
+   },
+   "pass": true
+  },
+  "5 the pinning theorem's reduction (generic code) on the Fibonacci law: unbounded instances become simple cubic systems with the same solvability": {
+   "info": {
+    "agree, cubic and simple": 60,
+    "full piece internal points": 2,
+    "instances": 60,
+    "largest system (lines)": 182,
+    "link (coordinate, value, kind)": [
+     0,
+     1,
+     "equality"
+    ],
+    "pinning piece": {
+     "face (port, value)": [
+      0,
+      0
+     ],
+     "internal points": 4,
+     "lines": [
+      [
+       "0",
+       "1",
+       "2"
+      ],
+      [
+       "0",
+       "1",
+       "3"
+      ],
+      [
+       "0",
+       "2",
+       "3"
+      ],
+      [
+       "1",
+       "2",
+       "a"
+      ],
+      [
+       "3",
+       "b",
+       "c"
+      ]
+     ]
+    },
+    "unsolvable sources": 24
+   },
+   "pass": true
+  },
+  "6 the clause cannot pin: a pinning piece and its sign-flipped copy, glued at the pinned port and padded with full pieces, would be an unsatisfiable cubic clause system, against Tovey's theorem (checked: random cubic clause systems are all satisfiable; a full clause piece exists; no pinning piece with up to four internal points)": {
+   "info": {
+    "full clause piece internal points": 2,
+    "pinning piece found (k <= 4)": false,
+    "random cubic clause systems satisfiable": "300/300"
+   },
+   "pass": true
+  },
+  "7 not-all-equal cannot pin: every accepted set of its pieces is closed under flipping every port (none found otherwise, k <= 4)": {
+   "info": {
+    "accepted set not flip-closed found": false,
+    "pinning piece found": false
+   },
+   "pass": true
+  },
+  "8 controls": {
+   "info": {
+    "disagreements (of 40)": 16,
+    "exactly-one (not a knot) also excludes both constants: the knot hypothesis matters in 2": true,
+    "the parity law can pin (affine pieces include faces), yet stays polynomial": true,
+    "with a link that is not an equality (a clause line) the copies decouple and solvability is lost on some instances": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "The 34 three-place knot relations form exactly five classes under flips and permutations: parity, Fibonacci (no-lone), not-all-equal, x or (y != z), clause. Only not-all-equal excludes both constant colourings, so on plain cubic systems it is the only knot that can fail; only the four signed not-all-equal relations are unchanged by flipping every colour, and such laws cannot pin a value. Pinning theorem: a signed law with a pinning piece, a relation that becomes an equality or disequality when one point is pinned, and a full piece is as hard on simple cubic systems as with unbounded occurrences (copy chains through pinned points, spare incidences absorbed by full pieces); with Schaefer this makes every non-affine such law NP-complete on cubic systems. Only parity is Schaefer-tractable. The clause cannot pin (a pinning piece would give an unsatisfiable cubic clause system, against Tovey). Checked: the generic reduction on 60 Fibonacci instances; Tovey on 300 random cubic clause systems; no pinning piece for the clause or not-all-equal with up to four internal points.",
+ "kind": "proof",
+ "proof": "PINNING-20261031-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PINNING-20261031-001A"
+}

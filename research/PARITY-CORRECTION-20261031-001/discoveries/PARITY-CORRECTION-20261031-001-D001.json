@@ -1,0 +1,43 @@
+{
+  "schema_version": 3,
+  "id": "PARITY-CORRECTION-20261031-001-D001",
+  "scope_id": "PARITY-CORRECTION-20261031-001",
+  "title": "Parity's weighted family is hard, also where parity fails",
+  "subject": "Whether parity's coupling family on cubic systems is easy, and whether parity's recognisable failures make any of it easy",
+  "conclusion": "Counting parity's coupling (weight lam per line missing its parity) on connected simple cubic systems is polynomial exactly at lam in {0, 1, -1, i, -i, oo} and #P-hard at every other complex lam, since the theta substitution turns it into the knot's coupling at lam + 1/lam - 1. It stays #P-hard on systems where parity fails, because a parity certificate survives grafting into any host, so parity's recognisable failures select nothing.",
+  "authority_class": "proof",
+  "significance": [
+    "frontier_change"
+  ],
+  "status": "active",
+  "superseded_by": null,
+  "curated_at": "2026-10-31",
+  "epic_closure": {
+    "ticket_id": "PARITY-CORRECTION-20261031-001Z",
+    "artifact_id": "PARITY-CORRECTION-20261031-001Z-P001",
+    "manifest_path": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/manifest.json",
+    "manifest_sha256": "e69a98b2d595410b77d7165d4e0d9f739dbafc39f4b768e833e31af671747e1b",
+    "report_path": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/proof.md",
+    "dependency_graph_sha256": "aaffa7fa3d55cf3ee308adce42d9ae9cf33d21be6f4b2a622ebd5196b40140d2"
+  },
+  "evidence": [
+    {
+      "artifact_id": "PARITY-CORRECTION-20261031-001A-P001",
+      "kind": "proof",
+      "ticket_id": "PARITY-CORRECTION-20261031-001A",
+      "authority_path": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json",
+      "authority_sha256": "71e60d9524306382f0790416a1d531eded2ae19273b080c75fa85e57d8f78374",
+      "explanation_path": "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/proof.md",
+      "explanation_sha256": "de8c1df6f98bf3c2b543b205f7fee8e05ccfbd7371ec1b10739192e7b2e20ae5"
+    },
+    {
+      "artifact_id": "PARITY-CORRECTION-20261031-001B-P001",
+      "kind": "proof",
+      "ticket_id": "PARITY-CORRECTION-20261031-001B",
+      "authority_path": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/manifest.json",
+      "authority_sha256": "2d9f5a3953fab4dfa63222fbe78eac016631cf107e3176a63a216af2759601d6",
+      "explanation_path": "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/proof.md",
+      "explanation_sha256": "8cc940def96502dc5fbbe7d6f29ffe18352eae8556d3bbc7ef9df0ecd7667fb9"
+    }
+  ]
+}

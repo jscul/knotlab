@@ -1,0 +1,165 @@
+{
+ "artifact_id": "TOP-LAYER-20261102-001D-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "passed",
+     "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json": "passed",
+     "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/manifest.json": "Proved",
+     "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/result.json": "passed",
+     "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/manifest.json": "Proved",
+     "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 a Mal'tsev operation on five values extending Z4's x - y + z: its subalgebras are the five points, {0,2}, {1,3}, Z4 and the whole set, each with a unique maximal congruence, and the whole algebra is simple; so its law composes like cycles (KNOT-CIRCUITS Theorem 1) and its top is the whole algebra": {
+   "info": {
+    "Mal'tsev, extending x - y + z on Z4": true,
+    "congruences of the whole algebra": 2,
+    "each has a unique maximal congruence": true,
+    "subalgebras": [
+     [
+      0
+     ],
+     [
+      1
+     ],
+     [
+      2
+     ],
+     [
+      3
+     ],
+     [
+      4
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "2 RIGID-SELECTION B's two signed Z4 systems, as systems of the five-value law (brute force over 5^6 and 5^9): both fail globally and keep knots after removals; the top is the whole algebra, so the top image keeps knots and the top-layer statement fails": {
+   "info": {
+    "6-point four-place example": {
+     "fails": true,
+     "global": true,
+     "relations are subuniverses of A5^k": true,
+     "removals keeping a knot": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    "9-point cubic example": {
+     "fails": true,
+     "global": true,
+     "relations are subuniverses of A5^k": true,
+     "removals keeping a knot": [
+      0
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 systems of the five-value law with declared domains Z4, {0,2} or {1,3}: RIGID-SELECTION B's example (domains Z4) and random systems on cubic and 4-regular substrates up to 7 points. After every removal from a global failure the leading digits (each read in its own section) form at most one line, and every kept knot has at most one variable whose leading digit varies": {
+   "info": {
+    "RIGID-SELECTION B's example: removals keeping a knot": 6,
+    "global failures": 316,
+    "random systems: removals keeping a knot": 0
+   },
+   "pass": true
+  },
+  "4 points of two kinds, Z4 and F2[s]/(s^2), joined only through their leading digits, on random regular substrates up to 7 points: no global failure leaves a knot among the leading digits (evidence, not a proof)": {
+   "info": {
+    "global failures": 407,
+    "with both kinds of point": 385
+   },
+   "pass": true
+  },
+  "5 the knot (not-all-equal on two values) on the Fano plane fails globally and keeps a knot after every removal: three-place emergence in its only layer": {
+   "info": {
+    "Fano lines": [
+     [
+      1,
+      2,
+      5
+     ],
+     [
+      0,
+      6,
+      2
+     ],
+     [
+      3,
+      2,
+      4
+     ],
+     [
+      4,
+      0,
+      5
+     ],
+     [
+      6,
+      3,
+      5
+     ],
+     [
+      4,
+      6,
+      1
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ],
+    "removals keeping a knot": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "The top of the whole algebra is the wrong layer. (1) The Mal'tsev operation on five values given in check.py extends x - y + z on Z4 = {0,1,2,3}; its subalgebras are the five points, {0,2}, {1,3}, Z4 and the whole set, each with a unique maximal congruence, and the whole algebra is simple. So its law composes like cycles (KNOT-CIRCUITS Theorem 1) and its top is the whole algebra. (2) RIGID-SELECTION B's two signed Z4 systems are systems of this law, with every point's domain Z4; they fail globally and keep knots after removals, and since the top is everything, so does the top image. 'Every law that composes like cycles keeps its top layer rigid' is therefore false. (3) The layer that stays rigid is the top of each point's own section: for systems with declared domains whose abelian sections in the failing part are cyclic modules over one finite chain ring R (as for group laws, chain-ring laws, their blurs and this five-value law), after any removal the leading digits of the variables, each read in its own section, form at most one line (RIGID-SELECTION D after lifting every section to R). So every kept knot has at most one variable whose leading digit varies, and the top of the whole algebra is rigid whenever it factors through these digits (groups, chain rings). (4) Sections from two different chain rings joined only through their tops (Z4 and F2[s]/(s^2)): no global failure checked keeps a knot in the leading digits; not proved. (5) With ticket C: a law that composes like cycles keeps emergence inside a selected space only through a two-layer abelian section (at least four values) and, when its sections come from one chain ring, only below that section's top; the knot keeps three-place emergence on two values, in its only layer (on the Fano plane, after every removal). (6) Correction to ticket B: its theorem holds for systems with declared domains; lines with their own smaller ranges are not covered by its proof, though every such case met was rigid.",
+ "kind": "proof",
+ "proof": "TOP-LAYER-20261102-001D-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TOP-LAYER-20261102-001D"
+}

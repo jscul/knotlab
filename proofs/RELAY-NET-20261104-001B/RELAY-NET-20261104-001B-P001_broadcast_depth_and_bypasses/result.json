@@ -1,0 +1,128 @@
+{
+ "artifact_id": "RELAY-NET-20261104-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json": "Proved",
+     "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 broadcast: a hub (a cube or a 16-point grid) receiving from a ring and emitting into two grids relays one opened handle into both grids at once; through a strip after the hub each grid is reached from fewer ring points and none reaches both": {
+   "info": {
+    "hub cube, receivers grid16 directly": {
+     "reaching both receivers": 2,
+     "reaching one": 3,
+     "ring points": 12
+    },
+    "hub cube, receivers grid16 through strips": {
+     "reaching both receivers": 0,
+     "reaching one": 2,
+     "ring points": 12
+    },
+    "hub grid16, receivers grid16 directly": {
+     "reaching both receivers": 5,
+     "reaching one": 0,
+     "ring points": 12
+    },
+    "hub grid16, receivers grid16 through strips": {
+     "reaching both receivers": 0,
+     "reaching one": 2,
+     "ring points": 12
+    }
+   },
+   "pass": true
+  },
+  "2 direction: in chains grid <- three stations (strips, cubes, 16-point grids or thick tubes) with the handle at every point, no creation ever lies upstream of the handle's piece": {
+   "info": {
+    "cube: creation 2 cut(s) downstream": 3,
+    "cube: creation in the handle's piece": 6,
+    "grid16: creation 1 cut(s) downstream": 15,
+    "grid16: creation in the handle's piece": 21,
+    "strip: creation 1 cut(s) downstream": 15,
+    "strip: creation 2 cut(s) downstream": 2,
+    "strip: creation in the handle's piece": 40,
+    "tube: creation 1 cut(s) downstream": 21,
+    "tube: creation in the handle's piece": 41
+   },
+   "pass": true
+  },
+  "3 bypasses: chains of up to four thin stations (strips or cubes whose two cut vertices are adjacent) relay ring handles into the final grid at every length": {
+   "info": {
+    "1 thin cube station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "1 thin strip station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "2 thin cube station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "2 thin strip station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "3 thin cube station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "3 thin strip station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "4 thin cube station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    },
+    "4 thin strip station(s)": {
+     "ring points": 12,
+     "ring points reaching the final grid": 5
+    }
+   },
+   "pass": true
+  },
+  "4 exact: on three small networks (a cube hub with two prism receivers, an aligned chain three cuts deep, a two-cut relay), at the relaying ring points, exact creation (join method) agrees with the pipeline at every far line, removal and far side, and creates in the far receivers": {
+   "info": {
+    "a cube hub relaying into two small prisms": {
+     "(line, removal, far side) cases": 576,
+     "disagreements": 0,
+     "exact creations by piece": {
+      "A": 16,
+      "B": 16
+     }
+    },
+    "a two-cut relay": {
+     "(line, removal, far side) cases": 744,
+     "disagreements": 0,
+     "exact creations by piece": {
+      "c0": 48,
+      "c1": 8,
+      "c2": 8
+     }
+    },
+    "an aligned chain three cuts deep": {
+     "(line, removal, far side) cases": 576,
+     "disagreements": 0,
+     "exact creations by piece": {
+      "c0": 16,
+      "c1": 16,
+      "c2": 8
+     }
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Broadcast, depth and bypasses (validated pipeline; exact on three small networks). (1) Broadcast: a hub (a 16-point grid or a cube) receiving a relay from a ring that carries an opened Fano handle, and emitting into two 16-point grids at the lines nearest its receiving point, relays the handle into both grids at once (5 ring points reach both through the 16-point grid, 2 through the cube); through strips after the hub no ring point reaches both. (2) Direction: in chains of strips, cubes, 16-point grids and thick tubes with the handle at every point, no creation ever lies upstream of the handle's piece. (3) Bypasses: stations whose two cut vertices are adjacent pass the relay without loss through 1 to 4 stations (5 ring points reach the final grid each time). (4) Exact: on a cube hub with two small prism receivers, an aligned chain three cuts deep and a two-cut relay (18 to 19 plane points), at the relaying ring points exact creation (join method) agrees with the pipeline in all 1,896 cases and creates in each receiver, three cuts away and two cuts away.",
+ "kind": "proof",
+ "proof": "RELAY-NET-20261104-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "RELAY-NET-20261104-001B"
+}

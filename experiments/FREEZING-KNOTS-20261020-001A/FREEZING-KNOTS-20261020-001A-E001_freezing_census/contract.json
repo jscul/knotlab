@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FREEZING-KNOTS-20261020-001A-E001",
+  "ticket": "FREEZING-KNOTS-20261020-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "At planted colourings of random regular graphs, do star knots stop being native at the freezing threshold, and does the star relation over all colourings of the graph stop being a knot there too?",
+  "definitions": {
+    "planted graph": "n vertices with a balanced q-colouring sigma (n/q per colour, random assignment) and a d-regular simple graph all of whose edges join different colours, built by sequential random stub matching between colour classes and repaired by switchings",
+    "native at radius L": "a vertex v is native at radius L at sigma when some proper colouring that agrees with sigma outside the ball of radius L about v gives v a different colour; measured only when the ball of radius L+1 is a tree (every vertex at distance k <= L+1 has exactly one neighbour at distance k-1 and none at distance k for k <= L)",
+    "star knot": "for a vertex z, the relation on its first q neighbours (by index) that not all q colours are used; native at radius L when each of those q neighbours is native at radius L",
+    "tree values": "on the d-regular tree with the broadcast colouring (root uniform, each child uniform among the q-1 colours other than its parent's), p_0 = 1 and p_k = Phi(p_(k-1)) with Phi(p) = sum_j (-1)^j C(q-1,j) (1 - j p/(q-1))^(d-1); a vertex is frozen at radius L with probability Psi(p_L) = sum_j (-1)^j C(q-1,j) (1 - j p_L/(q-1))^d; the star value at radius L is the exact sum over the joint states of z's neighbours (outer children forced at depths L and L-2) described in run.py",
+    "star relation over all colourings": "for a star with three pairwise non-adjacent neighbours a, b, c of z, the set of colour triples (a, b, c) realized by some proper 3-colouring of the whole graph; it is the knot when it equals the 21 triples that are not all distinct"
+  },
+  "public_inputs": {
+    "local": "q = 3: d in {3,4,5,6,7}, n = 240000, L in {1,2} for every d and L = 3 for d <= 6; q = 4: d in {9,10,11}, n = 60000, L = 1; 4000 sampled centres per (q, d), seed 20261020",
+    "tree": "q = 3, d in 3..8; q = 4, d in 6..12; q = 5, d in 10..17; 20000 iterations of Phi from p = 1",
+    "relation": "q = 3, d in {3,4,5,6,7}, n in {24, 36}, 4 planted graphs per (d, n), the first 6 vertices with three pairwise non-adjacent neighbours among their neighbours in index order"
+  },
+  "forbidden_inputs": [
+    "the planted colouring is never used to decide realizability in the relation test beyond being one solution among all"
+  ],
+  "predictions": {
+    "P1": "for every measured (q, d, L) the frozen fraction of vertices is within max(0.03, 3 standard errors) of Psi(p_L)",
+    "P2": "for every measured (q, d, L) the native fraction of star knots is within max(0.03, 3 standard errors) of the exact tree value",
+    "P3": "on the tree, p_L tends to 0 for d < d_f and to p* > 0.8 for d >= d_f, with d_f(3) = 6, d_f(4) = 10, d_f(5) = 15; the limiting star nativity is 1 below d_f and below 0.001 at and above it",
+    "P4": "the fraction of stars whose relation over all colourings is the knot is at least 0.8 at d = 3 and at most 0.5 at d = 7, for both n"
+  },
+  "primary_observable": "per (q, d, L): sampled centres, tree-like counts, frozen fraction of vertices, native fraction of stars, the tree values; per (d, n): stars tested, fraction whose relation is the knot, relation sizes, colouring counts up to a cap",
+  "cheapest_meaningful_control": "(C1) the ball computation agrees with exhaustive search on 300 balls for q = 3, d = 4, L = 2 and 100 balls for q = 4, d = 9, L = 1; (C2) a wrong tree formula using d - 1 neighbours for the centre must fall outside the tolerance for some (q, d, L) where Psi passes; (C3) every realizable triple carries a proper witness colouring",
+  "independent_check": "check_result.py recomputes p_L and Psi in exact rational arithmetic, estimates star nativity on explicit broadcast trees by exhaustive search on balls (no producer code), re-solves the stored balls by exhaustive search, verifies every stored witness colouring and re-proves unrealizable triples with its own solver",
+  "decision_or_followup_rule": "A signal is P1-P3 holding on every measured case, with P4 read as a direction. If P1 or P2 fails beyond finite-size explanation, the tree theory of ticket B does not describe planted graphs and the epic stops. If star nativity is a function of vertex freezing alone, the line is reported as restating freezing.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 6144
+  },
+  "first_executable_signal": "vertex frozen fractions at q = 3, d = 6, L = 1 and 2 against Psi(p_L) (feasibility: 0.960 vs 0.955 and 0.952 vs 0.949)",
+  "stop_rule": "Stop after the declared roster or the budget; stop early only on a generator, solver or control failure.",
+  "nonclaims": [
+    "Planted colourings of finite random regular graphs only; nothing about uniformly random colourings beyond the quiet-planting regime.",
+    "Finite radius and finite n; the threshold itself belongs to ticket B on the tree.",
+    "No claim about algorithms, hardness or physics."
+  ],
+  "notes": [
+    "Feasibility on 2026-10-20 (disposable): q = 3, d = 6, n = 60000 gave 0.960 and 0.952 frozen at L = 1 and 2 against Psi = 0.955 and 0.949; q = 4, d = 10, n = 60000 gave 0.918 at L = 1 against 0.924, while L = 2 needs a much larger graph, so q = 4 is measured at L = 1 only."
+  ]
+}

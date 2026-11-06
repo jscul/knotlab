@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "TRIPLE-TWIST-20261023-001Z-P001",
+  "canonical_id": "TRIPLE-TWIST-20261023-001Z-P001",
+  "kind": "proof",
+  "ticket": "TRIPLE-TWIST-20261023-001Z",
+  "proof": "TRIPLE-TWIST-20261023-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the twisted three-literal epic",
+  "status": "Proved",
+  "claim": "Ledger closing TRIPLE-TWIST-20261023-001: one line per conclusion with its novelty label and evidence, the challenged assumptions, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "TRIPLE-TWIST-20261023-001A",
+    "TRIPLE-TWIST-20261023-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, result or contract changes, the proof is not Proved or its check did not pass, or the experiment's recorded verdict is not supported under its frozen contract.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A proved, B supported)."
+  ],
+  "lineage": {
+    "home_scope": "TRIPLE-TWIST-20261023-001",
+    "epic_path": [
+      "TRIPLE-TWIST-20261023-001"
+    ],
+    "parents": [
+      "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/manifest.json",
+      "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/result.json",
+      "experiments/TRIPLE-TWIST-20261023-001B/TRIPLE-TWIST-20261023-001B-E001_contact_census/contract.json",
+      "artifacts/TRIPLE-TWIST-20261023-001B/TRIPLE-TWIST-20261023-001B-E001_contact_census/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/manifest.json": "ebc612f252ea09cbeb47bc6b922ecdfd7651e32cf60c907d1e7ef0b81ebbcf86",
+    "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/result.json": "6a61e585f0b26d09406a874ab68b76c22020ce6ec00a70adc5b56dec7c5db073",
+    "experiments/TRIPLE-TWIST-20261023-001B/TRIPLE-TWIST-20261023-001B-E001_contact_census/contract.json": "bc5697ab0dbdaa799a440c3358b75a5d4862a0db1c5747514abe6c3f7dd70c5a",
+    "artifacts/TRIPLE-TWIST-20261023-001B/TRIPLE-TWIST-20261023-001B-E001_contact_census/result.json": "33ee9d6d2c4af6c330bc8cec77e2436d0f61ddb7570d7dc635b72819f1c8f50f"
+  },
+  "paths": {
+    "manifest": "proofs/TRIPLE-TWIST-20261023-001Z/TRIPLE-TWIST-20261023-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/TRIPLE-TWIST-20261023-001Z/TRIPLE-TWIST-20261023-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/TRIPLE-TWIST-20261023-001Z/TRIPLE-TWIST-20261023-001Z-P001_epic_closure",
+    "proof": "proofs/TRIPLE-TWIST-20261023-001Z/TRIPLE-TWIST-20261023-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/TRIPLE-TWIST-20261023-001Z/TRIPLE-TWIST-20261023-001Z-P001_epic_closure/result.json",
+    "check": "proofs/TRIPLE-TWIST-20261023-001Z/TRIPLE-TWIST-20261023-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proof and its passed result and to the frozen contract and supported result of the experiment; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

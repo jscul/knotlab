@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLASSK-DICHOTOMY-20261026-001C-P001",
+  "canonical_id": "CLASSK-DICHOTOMY-20261026-001C-P001",
+  "kind": "proof",
+  "ticket": "CLASSK-DICHOTOMY-20261026-001C",
+  "proof": "CLASSK-DICHOTOMY-20261026-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "With a hard pair, class-(K) counting is #P-hard with H1 = Z/r: the dichotomy",
+  "status": "Proved",
+  "claim": "for p odd, r | p - 1 and G = N x| C_r of class (K), if G has a hard pair then counting homomorphisms from pi1 of r-surgeries on knots (H1 = Z/r), given by diagrams, to G is #P-hard under polynomial-time Turing reductions (at most r oracle calls per value of a fixed Bulatov-Grohe partition function): the construction of COPRIME-CLASS2-20261026-001D section 3 realizes the gadget manifolds of CLASSK-DICHOTOMY-20261026-001A for all three slot patterns, the count is a positive sum of multiplicative sector partition functions, an anchor graph and a Vandermonde solve over disjoint unions isolate the hard sector, and Bulatov-Grohe applies to its positive weight matrix of rank at least two. With COPRIME-CLASS2-20261026-001C this is a dichotomy for closed 3-manifolds with |H1| <= C: polynomial iff no G_d (d | r, d <= C) has a hard pair. The same holds for knot groups (at most r|B| calls), also when commutators involve the trivial character: the u-pairing is unchanged by the moves and block-diagonal over the base summands, so the knot count is a positive sum of multiplicative terms indexed by (k, beta). Hence Rowell's Conjecture 3.2(b) fails for every class-(K) group with a hard pair over odd prime fields unless every #P function is polynomial-time computable.",
+  "dependencies": [
+    "CLASSK-DICHOTOMY-20261026-001B",
+    "COPRIME-CLASS2-20261026-001C",
+    "COPRIME-CLASS2-20261026-001D"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A hard pair whose sector-1 weight is constant, not positive, or of rank one.",
+    "A group with no hard pair and a nonconstant sector weight for some slot triple.",
+    "A concrete group for which no anchor among small multigraphs separates sector 1 from the sectors that differ from it, or for which the Vandermonde solve does not return (sum over I of c_k) f_1(Gamma).",
+    "A disjoint union on which a sector term is not the product of its parts (model or measured surgeries).",
+    "On the extended knot-exterior model, a sector where the sum over beta of the fixed-beta counts differs from the knot count, where the beta = 0 term differs from the closed count, or where a fixed-beta count is not multiplicative.",
+    "Measured knot-exterior counts on K2 + K2 that differ from the sum over beta of the squared fixed-beta counts on K2.",
+    "A restricted subgroup G_d whose hard pairs differ from the stated refinement examples."
+  ],
+  "lineage": {
+    "home_scope": "CLASSK-DICHOTOMY-20261026-001",
+    "epic_path": [
+      "CLASSK-DICHOTOMY-20261026-001"
+    ],
+    "parents": [
+      "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001D/COPRIME-CLASS2-20261026-001D-P001_with_a_hard_pair_heisenberg_counting_is_sharp_p_hard/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001D/COPRIME-CLASS2-20261026-001D-P001_with_a_hard_pair_heisenberg_counting_is_sharp_p_hard/result.json",
+      "experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/contract.json",
+      "artifacts/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/result.json",
+      "experiments/PATTERN1-CHECKPOINT-20261026-001/PATTERN1-CHECKPOINT-20261026-001-E001_projector_fixtures/contract.json",
+      "artifacts/PATTERN1-CHECKPOINT-20261026-001/PATTERN1-CHECKPOINT-20261026-001-E001_projector_fixtures/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json": "544822680bc1cdaecad825054e722c303afdff947c4a0544a753672b8f0b924a",
+    "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/result.json": "1078d80ee1d07efd257d860c335ba10e24c6137df919b3f7cbef09a224aa0b8b",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json": "d374186cfa5b0fda8e0a672d62e8a1605e05693c07cba01576a681871365e049",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json": "9903c01f0e540c6feea0ff9e05d5cd16c39bed7a8eac968d685c14bb4bd0b419",
+    "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/manifest.json": "89e52c06980ff147b9a3d6f1f63a33525b51b6d1b7a85b2e30542509d7c096e4",
+    "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/result.json": "d18a83b184cd0813d13a0bd0651020fd2739ebb853d9102dc68f15c2c0ef83b9",
+    "proofs/COPRIME-CLASS2-20261026-001D/COPRIME-CLASS2-20261026-001D-P001_with_a_hard_pair_heisenberg_counting_is_sharp_p_hard/manifest.json": "11cbb682310c4f1c1317f89dfea3d0893556139dbd8797c3792740bf8203c04c",
+    "proofs/COPRIME-CLASS2-20261026-001D/COPRIME-CLASS2-20261026-001D-P001_with_a_hard_pair_heisenberg_counting_is_sharp_p_hard/result.json": "e16498ce4cdef1c836ce0a23c61ce026a1fb5bda0f04bdef7db3aa10228ccc52",
+    "experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/contract.json": "d34fb3a67c2a5669d99ea902a8bc7c94eb43b8b6f63ca1472e778b6ca3f6eb6c",
+    "artifacts/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/result.json": "468750cc1cc13b15daa16e05fe3af1f2ec9efcdc5d113141680e5a70655e172b",
+    "experiments/PATTERN1-CHECKPOINT-20261026-001/PATTERN1-CHECKPOINT-20261026-001-E001_projector_fixtures/contract.json": "e9ec43e9f7be9d1514cc1a10e9545c6de82e4a0580a2b4e59797df145c1fd6bc",
+    "artifacts/PATTERN1-CHECKPOINT-20261026-001/PATTERN1-CHECKPOINT-20261026-001-E001_projector_fixtures/result.json": "1c025de9f23977e1f3f6d58eafdb608073681053ed6d85618b6d15e01a815861"
+  },
+  "paths": {
+    "manifest": "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json",
+    "identity": "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/identity.json",
+    "directory": "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy",
+    "proof": "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/proof.md",
+    "result": "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json",
+    "check": "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "classk_dichotomy_shown": false
+  },
+  "foundation_claim_scope": "Odd prime fields with r | p - 1, closed orientable 3-manifolds with bounded first homology (triangulations, balanced presentations or knot surgeries) and knot groups; Turing reductions. Cited, not reproved: Bulatov-Grohe (as stated in Cai-Chen-Lu, Theorem 2.1), the realization of COPRIME-CLASS2-20261026-001D section 3 (Habiro, Massuyeau through COPRIME-CLASS2-20261026-001B), COPRIME-CLASS2-20261026-001B (c) and (d), COPRIME-CLASS2-20261026-001C. Not covered: p = 2, extension fields, groups outside class (K), approximate counting. No P versus NP claim.",
+  "validation": {
+    "status": "checked: Bulatov-Grohe hypotheses for 94 hard pairs (63 ranks computed, 7 too large to tabulate with the pairing criterion checked) and 576 negative cases; anchors and exact Vandermonde recovery on four groups including two equivalent hard sectors; the knot-exterior decomposition over beta on the extended model for five fixture-group pairs with multiplicativity; end to end on the frozen experiment rows, closed counts on K2 + K2 equal squares and knot counts equal sums over beta of squares for eight groups; the refinement by subgroup orders; size data; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-26."
+  }
+}

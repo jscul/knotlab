@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "WAVE-UNIQUENESS-20261029-001B-P001",
+  "canonical_id": "WAVE-UNIQUENESS-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "WAVE-UNIQUENESS-20261029-001B",
+  "proof": "WAVE-UNIQUENESS-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "General three-bit laws: rotations of the wave and implication laws",
+  "status": "Proved",
+  "claim": "For general three-bit laws with complex weights on the level-k Sierpinski gaskets: in the generic stratum (two sectors u1 v1 y1 + u2 v2 y2 with each pair independent), level 2 holds iff the diagonal products agree and the vanishing cross pairings cover a hexagon, whose minimal covers are three of size four (pair-symmetric laws, reduced to WAVE-UNIQUENESS-20261029-001A by a symmetry of the gasket) and two of size three (the cyclic branch u2 = J v1, v2 = J y1, y2 = J u1 and its mirror); on the cyclic branch, level 2 is c^2 = 1 and level 3 holds iff a first-sector vector is a coordinate vector, which gives the implication laws e0 v y + Jv Jy e1 (support a = 1 implies c = 1; twelve types), exact at every level with factor <v, y>^(k-1) (v0 y0)^(m_k) by a closure argument on the sectors. Laws of rank one in a corner give products and u(a)[b = c] up to rotation. Hence in these strata the laws exact at levels 2 to 5 are the images of the symmetric classes, the implication laws and the products, and the only knots among them are the rotations of signed not-all-equal. The stratum of vanishing hyperdeterminant with full multilinear rank is not classified.",
+  "dependencies": [
+    "WAVE-UNIQUENESS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A generic or slot-rank-one law exact at levels 2 to 5 outside the stated classes.",
+    "An implication law that fails exactness at some level.",
+    "A symbolic identity, Groebner basis or factorization that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "WAVE-UNIQUENESS-20261029-001",
+    "epic_path": [
+      "WAVE-UNIQUENESS-20261029-001"
+    ],
+    "parents": [
+      "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/manifest.json",
+      "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/result.json",
+      "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/wave_lib.py",
+      "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/gasket_engine.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/manifest.json": "4170b68a75621ab9d8a908bcd241e5198fc30c75a54bc71c2fca287cdae7d53c",
+    "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/result.json": "eb0d00491a5dcfec5b10515bf0ca4c09bdb088c586de99ff61f675d1962619fc",
+    "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/wave_lib.py": "643bd8b05e86638f31baf4881f94ad23d1acaff58b112f0d077b4bebdd6da3d5",
+    "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/gasket_engine.py": "71c011aa9acdedb9fb7d0989be25ca86476f0b3ee0728cbd05d3b054759ccfea"
+  },
+  "paths": {
+    "manifest": "proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications/manifest.json",
+    "identity": "proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications/identity.json",
+    "directory": "proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications",
+    "proof": "proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications/proof.md",
+    "result": "proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications/result.json",
+    "check": "proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gasket_uniqueness_shown": true
+  },
+  "foundation_claim_scope": "General three-bit laws with complex weights on level-k Sierpinski gaskets; exactness of the corner relation; the knot status of supports.",
+  "validation": {
+    "status": "checked: level-2 coefficient identity (symbolic); hexagon and its minimal covers (enumeration); size-four covers pair-symmetric (random instances); cyclic branch in eight charts (Groebner bases); implication closure pairings and weights (symbolic) and all twelve types exact at levels 2 to 9 (exact integers); rank-one identity (symbolic) and rotations exact at levels 2 to 8; knot statuses; controls fire; the W-type stratum open; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "Lemma 1 and Proposition 4 elementary; Theorems 2 and 3: no overlap found (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

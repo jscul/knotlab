@@ -1,0 +1,68 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PATTERN1-CHECKPOINT-20261026-001-E001",
+ "ticket": "PATTERN1-CHECKPOINT-20261026-001",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "NEXT-DIRECTION-SCAN-20261026-001A (lane A) predicted, from the steered tensor, the kernel counts N_psi = 133 for the graph K2 and 2737 for the digon, for the free class-2 group on three generators with characters zeta, zeta^2, zeta^3 (p = 7, r = 6, zeta = 3), and asked for the projector construction of COPRIME-CLASS2-20261026-001D section 3 to be built end to end. The owner asked (relayed by a peer session) for exactly this checkpoint and to stop at it. Scoping before this contract, disclosed (scripts in scoping/): the diagram machinery reproduced cp_lib's twisted cohomology dimensions on 3_1, 4_1, 5_2 and 6_1 and lane A's counts 938791 and 49735 on the two insertion knots; it matched cp_lib's chirality and framing (121 and 1 maps to A5 from +1 and -1 surgery on the trefoil); the Borromean rings gave 138 and 48 maps to S3; a Y-graph realized as its six-component link reproduced the braid insertion (938791, H = 18865, H1 = Z/6); single copies calibrated the winding direction (direction -1 gives chi^j, i.e. conjugation by t^j); on the K2 base the projector leaves were pure and the band sum equalled the difference of the reference copies; every variant below was built and passed the geometric, H1 and psi checks. No surgery count of a fixture or control variant was computed before this contract.",
+ "question": "Does the explicit projector construction of COPRIME-CLASS2-20261026-001D section 3 (eigenprojector leaves made of band-summed copies of a two-arc band loop with bands winding j times around a meridian, balanced band sums for x_u - x_v, disk-framed leaves, Y-graphs with edges routed above the diagram), applied at p = 7, r = 6 to the graph K2 and to the digon, give closed manifolds S^3_6(K_Gamma) with H1 = Z/6 on which the actual lifting obstruction of the free class-2 group has the predicted kernel counts?",
+ "public_inputs": {
+  "group": "N = free class-2 group of exponent 7 on e1, e2, e3: A = span(z12, z13, z23), B = span(e1, e2, e3), cocycle beta upper triangular with beta(e1, e2) = z12, beta(e1, e3) = z13, beta(e2, e3) = z23; G = N x| C_6 with the generator acting on e1, e2, e3 by zeta = 3, zeta^2 = 2, zeta^3 = 6 and on z12, z13, z23 by zeta^3, zeta^4, zeta^5 (class (K), p = 7, r = 6)",
+  "count": "N_psi for the onto meridian character psi (sector psi^1) = #{(c1, c2, c3) in H^1(M; F_zeta) x H^1(M; F_zeta^2) x H^1(M; F_zeta^3) : c1 u c2 = 0, c1 u c3 = 0, c2 u c3 = 0}, the three cup products computed as Heisenberg lifting obstructions (relator z-components evaluated on lifts, reduced modulo the image of the twisted Fox matrix); sector psi^5 likewise with characters zeta^5, zeta^4, zeta^3",
+  "base knots": "connected sums of braid closures (cp_lib words): K2 base = 3_1 # 3_1 # 6_1 # 5_2 (x_u, x_v, y, t); digon base = 3_1 # 3_1 # 6_1 # 6_1 # 5_2 # 5_2; the twist knots have roots zeta^(+-1) (3_1), zeta^(+-2) (6_1), zeta^3 (5_2) mod 7",
+  "arc choice": "per summand, the first (gap after crossing k, adjacent positions q, q + 1) inside the summand such that the arc functionals c(a) - c(b) of summands sharing a slot character are independent (pc_fixtures.choose_arcs)",
+  "leaves": "x-, y-, t-leaves are eigenprojector combs: copies of the band loop around the arcs (a, b), copy j repeated m_j = 6^-1 chi^-j mod 7 times (literal residues 0..6: 21, 28 and 21 copies for chi = 3, 2, 6), the band of copy j winding j times around strand a in direction -1; ell_e = (comb at u) # band above the diagram # (comb at v reversed); y_e, t_e are private combs; all leaves 0-framed (disk framing)",
+  "Y-graphs": "each Y-graph is surgery on its six-component link: the three leaves and 0-framed Borromean rings at a vertex above-left of the diagram, each ring Hopf-clasped to the root segment of its leaf through an edge routed above everything; the base knot has framing +6",
+  "diagram": "polygons in R^3, projected after a fixed small rotation; Wirtinger arcs, relators x_j = x_o^-s x_i x_o^s, Seifert longitudes, framing relators mu^f lambda (pc_core.Diagram)",
+  "code": {
+   "pc_core.py": "e540b8c298fb62fe158d765a20755754e928370ca73f1ad71fecc0f356bb01f6",
+   "pc_build.py": "655b733ac7b892bc57487687313864d59f9bf71cb4bf104afeecfeba8a95d0e8",
+   "pc_fixtures.py": "f159094ac1024d5b6848425e2e8b2eb946f1b08d992300e55b592351fc629576",
+   "predict.py": "c40392df5089aa22959bcdfa4f466e142347ad0ae63e05ac7de9344b8aa7c4f1",
+   "validate.py": "08f3dd995d8fa4a87c9e61994f270a9d84a01b622d0535e78365fb435e5595fe",
+   "run.py": "91c27a3e126c714807a2fb194127008e62a9a57d24e1179ccea9d9841005ca87"
+  },
+  "imported read-only": {
+   "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/cp_lib.py": "98092137d7cf7b1a5ec1edd5274f986fdef86808ee02014f5ded82d7e2a51b3c"
+  }
+ },
+ "predictions": {
+  "P1_K2": "S^3_6(K_Gamma) for K2: H1 = Z/6, psi well defined and onto, dims of H^1 for characters (3, 2, 6, 4, 5) = (2, 1, 1, 1, 2), N_psi = 133 (sector psi^1)",
+  "P2_digon": "for the digon: H1 = Z/6, psi onto, dims (2, 2, 2, 2, 2), N_psi = 2737",
+  "P3_purity": "on both fixtures every leaf functional (read at its root, leaves forgotten) is nonzero exactly on its slot character (ell: 3, y: 2, t: 6); in the digon ell_1 and ell_2 are proportional on V_zeta (balanced), y_1, y_2 and t_1, t_2 are independent",
+  "P4_trivial_leaves": "the clasper-only surgery (base knot forgotten) has trivial first homology on both fixtures",
+  "P5_other_sector": "with pure leaves the psi^5 sector keeps its base value: 2401 (K2) and 117649 (digon)"
+ },
+ "controls": {
+  "machinery (validate.py, rerun first; any failure makes the run invalid)": "V1 dims equal cp_lib's on 3_1, 4_1, 5_2, 6_1; V1b N = 938791 and 49735 on lane A's insertion knots; V2 121 and 1 A5 maps (chirality); V3 138 and 48 S3 maps (Borromean rings); V4 Y-graph link = braid insertion (938791, H = 18865); T2 winding direction -1 gives chi^j for j = 1, 2 and direction +1 gives chi^-1",
+  "C1_base_only": "base knots without claspers: psi^1 and psi^5 counts 2401, 2401 (K2) and 117649, 117649 (digon)",
+  "C2_unbalanced_band": "digon with the second band winding once around the strand right of b_u: psi^1 count 361 (any gain other than 1 gives 361), psi^5 count 117649, ell_1 and ell_2 not proportional",
+  "C3_reversed_windings": "K2 with windings in direction +1 (projectors onto zeta^-s): psi^1 count 2401, psi^5 count 133",
+  "C5_unprojected_leaves": "K2 with single unwound copies instead of projector combs: psi^1 count 133, psi^5 count 133 (the projectors are what keep psi^5 fixed)"
+ },
+ "decision_rule": "Invalid if a machinery control fails or a built manifold fails H1 = Z/6 or the psi check. Supported if P1-P5 hold and C1, C2, C3 and C5 give their stated values. Refuted otherwise, naming every failed item; a mismatch is diagnosed at this checkpoint and neither the predictions nor the construction are changed.",
+ "resource_budget": {
+  "wall_seconds": 7200,
+  "memory_mib": 8192,
+  "threads": 1
+ },
+ "stop_rule": "Run validate.py, then every fixture and control once; no adaptive extension; stop and report to the owner.",
+ "seeds": "deterministic (no randomness)",
+ "environment": "workspace .venv python (numpy); cp_lib.py imported read-only from COPRIME-CLASS2-20261026-001B-P001",
+ "red_team_r0": [
+  "The two fixtures are one realization of the general construction; they test it at p = 7, r = 6 on two small graphs, not uniformly.",
+  "The Y-graph surgery is computed as surgery on its six-component link; that model is validated against the braid insertion (V4), not proved here.",
+  "At these bases the summands separate the three slot characters, so unprojected leaves would also give 133 in sector psi^1 (C5); the projectors are tested through purity (P3) and the other sector (P5, C3, C5).",
+  "Geometry is verified numerically (depth separation at every crossing, no crossings at vertices); the code and the predictions come from the same research program (lane A's tensor and this construction).",
+  "The polynomial size bound of the construction is not tested."
+ ],
+ "nonclaims": [
+  "No proof of the class-(K) dichotomy; no claim for p = 2, extension fields or other graphs.",
+  "No knot-group statement beyond the closed surgeries."
+ ],
+ "forbidden_inputs": [
+  "Expected counts as inputs to the construction or to the counting code"
+ ],
+ "outputs": "artifacts/PATTERN1-CHECKPOINT-20261026-001/PATTERN1-CHECKPOINT-20261026-001-E001_projector_fixtures/result.json, rows.json, surgery_K2.json and surgery_digon.json"
+}

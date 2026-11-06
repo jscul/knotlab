@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "artifact_id": "SOS-SIZE-20261020-001B-P001",
+  "canonical_id": "SOS-SIZE-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "SOS-SIZE-20261020-001B",
+  "proof": "SOS-SIZE-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Sum-of-squares and Sherali-Adams on Tseitin formulas: degree is the carving width, and size is 2^Theta(tw) beyond expanders",
+  "status": "Proved",
+  "claim": "(1) If the cut function of a connected graph G has a tangle of order k, the Tseitin formula T(G,c) with odd charge has a pseudo-expectation up to degree k-1 (E[y_F] = s_X for F = delta(X) with X small, 0 off the cut space, y = 1-2x) that defeats Sherali-Adams and sum-of-squares refutations of degree k-1 in the clause and standard binomial encodings, and in the balanced binomial encoding when every degree is at most k-1 (a hub of degree cvw shows the hypothesis is needed), with or without twin variables. (2) Hence SA and SoS degree are at least cvw(G) (clause and standard encodings; balanced when Delta < cvw); SoS degree is at most 2 max(Delta, floor(cvw/2)+1) + 2, so between cvw and cvw+4 when cvw >= 2 Delta - 2 (Berkholz's simulation and PC-DEGREE); SA degree in the clause encoding is at most floor(3 cvw/2)+1 (supports give Duplicator strategies; Atserias-Dalmau; carving-based resolution width). (3) On graphs with a cell system and a tangle of order k, SoS and SA size is 2^(c k - c'|U|): 2^Theta(tw) on grids, d-dimensional grids, plane graphs with short faces pairwise sharing at most one edge, and walls (tight for SoS at bounded degree). (4) With twin variables, SoS and SA size is 2^Omega_H(tw) on H-minor-free graphs and 2^Omega(tw^(1/9)/polylog) on all graphs.",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z",
+    "GENERAL-SIZE-20261020-001Z",
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "polynomial-calculus-size",
+    "tseitin-formulas",
+    "sums-of-squares"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "inherited-consequence"
+    ]
+  },
+  "failure_conditions": [
+    "On a checked instance the pseudo-expectation built from a tangle of order cvw violates an ideal constraint (any of the three encodings), a Sherali-Adams nonnegativity condition, or moment-matrix positivity at degree cvw-1.",
+    "A flipped orientation (one small set replaced by its complement) passes every check (the control).",
+    "On the hub joined to two copies of K4 the tangle fails a standard or clause constraint, or fails no balanced constraint at the hub (the hypothesis control).",
+    "On an instance with at most 9 vertices a tangle of order cvw+1 is found.",
+    "A published statement of these bounds is found (novelty only)."
+  ],
+  "lineage": {
+    "home_scope": "SOS-SIZE-20261020-001",
+    "epic_path": [
+      "SOS-SIZE-20261020-001"
+    ],
+    "parents": [
+      "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json",
+      "proofs/CELL-SIZE-20261020-001Z/CELL-SIZE-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json",
+      "proofs/PC-DEGREE-20261020-001Z/PC-DEGREE-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/GENERAL-SIZE-20261020-001Z/GENERAL-SIZE-20261020-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json": "14315a305e22b245c25ae8c7b9db6cf8db2bdfc21b22b5ccbbb58d2ad780f720",
+    "proofs/CELL-SIZE-20261020-001Z/CELL-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "bfa4ebb1a3a404b098ede4deda2d9e5a724e4faa07980f4fadf7319791b719b9",
+    "proofs/PC-DEGREE-20261020-001B/PC-DEGREE-20261020-001B-P001_half_carving_width/manifest.json": "5815b573a2b3594b5014ce3fc584ead636dd35a60413b3bf1bb7434f96610446",
+    "proofs/PC-DEGREE-20261020-001Z/PC-DEGREE-20261020-001Z-P001_epic_closure/manifest.json": "8acae0feb2637fe0fa86aad7a1b976b00f43d11bda26e733919ebd53c8e4dd51",
+    "proofs/GENERAL-SIZE-20261020-001Z/GENERAL-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "efff9c502b4931a6a70eadc1121a75b3d8e1fce42f29ffb989276a34dd6ee598"
+  },
+  "paths": {
+    "manifest": "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/manifest.json",
+    "identity": "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/identity.json",
+    "directory": "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation",
+    "proof": "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/proof.md",
+    "result": "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/result.json",
+    "check": "proofs/SOS-SIZE-20261020-001B/SOS-SIZE-20261020-001B-P001_tangle_pseudo_expectation/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "tangle_pseudo_expectation_proved": true,
+    "sos_degree_within_cvw_plus_4_proved": true,
+    "sherali_adams_degree_between_cvw_and_three_halves_cvw_proved": true,
+    "sos_and_sa_size_on_cell_systems_proved": true,
+    "twin_variable_minor_free_and_all_graph_bounds_proved": true,
+    "exact_sos_degree_proved": false,
+    "linear_exponent_sos_size_all_graphs_proved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Proof-complexity degree and size bounds for Tseitin formulas; no contact-first claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py builds the pseudo-expectation from an exhaustively found tangle of order cvw on 15 graphs (cubic graphs, Petersen, Heawood, K44, K6, 2D and 3D grids, restricted grids) and verifies ideal constraints for three encodings, Sherali-Adams nonnegativity by Walsh-Hadamard transforms on every edge set of size at most cvw-1, and SoS positivity by an entrywise rank-one block certificate plus exact rational LDL; three flipped-orientation controls each fail; no human or external review",
+    "level": "V1 prose proof with executable checks; cites the tangle-branch-width duality (Robertson-Seymour; Geelen-Gerards-Robertson-Whittle), Berkholz (STACS 2018: SoS simulates PC at degree 2d; SA to SoS), Atserias-Dalmau (JCSS 2008: width and pebble games), Alekhnovich-Razborov (upper bounds), and CELL-SIZE-20261020-001B-P001, PC-DEGREE-20261020-001B-P001, GENERAL-SIZE-20261020-001B-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 found SoS size lower bounds for Tseitin only on expanders (Grigoriev's degree bound with the Atserias-Hakoniemi size-degree relation) and no SoS or Sherali-Adams size lower bound for Tseitin on grids, planar or other non-expanding graphs, and no carving-width characterization of SoS degree. The pseudo-expectation is Grigoriev's construction with the expander replaced by a tangle; its Theta(tw) degree consequence may be folklore.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

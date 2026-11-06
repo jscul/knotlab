@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-SPACE-20261020-001C-E001",
+  "ticket": "KNOT-SPACE-20261020-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does the dual reading of a gauge law's allowed states succeed exactly on planar graphs, and do local parity laws written on no graph, with non-degenerate knot matroids, carry graphs?",
+  "definitions": {
+    "graph reading, dual reading, 3-connected, graphic, cographic": "as in KNOT-SPACE-20261020-001A-E001",
+    "planar by embeddings": "some rotation system (a cyclic order of the neighbours at every vertex) gives V - E + F = 2; decided by exhaustive search, independent of any matroid",
+    "local law, three of size six": "random parity constraints of size six with every variable in exactly three constraints (m/2 constraints on m variables)",
+    "local law, sparse": "m/2 random parity constraints on m variables, each of a random size from three to five"
+  },
+  "public_inputs": {
+    "graphs": "K4, K5, K6 (planar search capped; known non-planar), wheels W4-W9, prisms on 3-6 sides, the cube, the octahedron, K3,3, K3,4, the Petersen graph, and 24 random 3-connected cubic graphs on 8, 10 and 12 vertices",
+    "local laws": "40 laws of each kind on 12, 14 and 16 variables (240 laws)",
+    "ledrappier": "x(i,j)+x(i+1,j)+x(i,j+1)=0 on L x L tori for L = 3..8"
+  },
+  "forbidden_inputs": [
+    "the planarity search never uses the matroid; the readings never see the presentation"
+  ],
+  "predictions": {
+    "T1": "for every 3-connected graph whose planarity search terminates, the dual reading of its gauge law's allowed states succeeds exactly when it is planar",
+    "T2": "among the local laws whose knot matroid is 3-connected, at most 5 percent are graphic or cographic, and at least 20 local laws are 3-connected"
+  },
+  "primary_observable": "per graph: planarity by embeddings, dual reading; per local law: dimension, dual dimension, 3-connectivity, graphic, cographic; per torus: dimension of Ledrappier's allowed states",
+  "cheapest_meaningful_control": "(C1) the planarity search accepts the known planar graphs (wheels, prisms, cube, octahedron) and rejects K5, K3,3 and Petersen; (C2) a graph law presented with every variable in exactly two constraints (a disguised graph) is recovered by the reading",
+  "independent_check": "check_result.py re-runs the planarity search with a different vertex order, recomputes allowed codes, readings and 3-connectivity with its own linear algebra, and recounts",
+  "decision_or_followup_rule": "A signal is T1 and T2 holding. A non-planar graph with a successful dual reading, or graphic local laws well above 5 percent, becomes the subject of ticket B.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "KNOT-SPACE-20261020-001A-E001: the dual reading succeeded on all 21 labelled-planar graphs, failed on all 12 genuinely non-planar ones, and succeeded on 6 random cubic graphs later found planar by a rotation-system search",
+  "stop_rule": "Stop after the declared roster or budget.",
+  "nonclaims": [
+    "Finite enumeration only; the general statements belong to ticket B.",
+    "Graphicness is decided completely only for 3-connected knot matroids.",
+    "No claim about native structure, distance, physical space or dimension."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FOUR-PLACE-20261031-001C-P001",
+  "canonical_id": "FOUR-PLACE-20261031-001C-P001",
+  "kind": "proof",
+  "ticket": "FOUR-PLACE-20261031-001C",
+  "proof": "FOUR-PLACE-20261031-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The other value-free four-place laws build equality and are NP-complete",
+  "status": "Proved",
+  "claim": "The not-exactly-two and twelve classes build equality on 4-regular pieces, so deciding them on 4-regular systems is NP-complete and their failures are coNP-complete to recognise. Each class has a piece with five internal points of degree 4, four ports of degree 1 and six lines without repetition, whose accepted port relation is (a = b) x {0,1}^2: two ports forced equal, two free. Regularization: replace each variable with occurrence count d by m = max(d, 2) copies joined in a cycle by m equality pieces; the 2m free ports fill the copies' 2m - d spare incidences, and the remaining sum of d, four per constraint, fill one absorber point per constraint. The result is a simple 4-regular 4-uniform system without repeated lines, solvable iff the instance is. With Schaefer's theorem (neither class is 0-valid, 1-valid, Horn, dual Horn, bijunctive or affine) both are NP-complete on 4-regular systems. Checked: the pieces by enumeration, the reduction end to end on random instances with a SAT solver.",
+  "dependencies": [
+    "FOUR-PLACE-20261031-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A piece whose accepted relation is not (a = b) x {0,1}^2.",
+    "A regularized system that is not 4-regular, not simple, has a repeated line, or differs in satisfiability from its source.",
+    "Either class closed under a Schaefer polymorphism."
+  ],
+  "lineage": {
+    "home_scope": "FOUR-PLACE-20261031-001",
+    "epic_path": [
+      "FOUR-PLACE-20261031-001"
+    ],
+    "parents": [
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "5d89c5ac8100c1eb2a5e68492fa9dbd9d05251b08348db7a5bbd597c4428f8c9",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json": "935ad7f6b75a0793a3a2d2df4a46037ea347966d53f9f1cf9d72a47fed6d4d90",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py": "72a12e521ab7a616cecad61aac31c17ac7477878545e5cfdcc608eeac4e5ad68"
+  },
+  "paths": {
+    "manifest": "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/manifest.json",
+    "identity": "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/identity.json",
+    "directory": "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality",
+    "proof": "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/proof.md",
+    "result": "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/result.json",
+    "check": "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "four_place_equality_hardness_shown": true
+  },
+  "foundation_claim_scope": "Decision complexity of two value-free laws on regular systems; no counting claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31.",
+    "status": "checked: the equality pieces by enumeration (structures up to five internal points); Schaefer polymorphisms; the regularization on random instances against a SAT solver; no human or external review",
+    "novelty": "Bounded-occurrence hardness via equality gadgets is classical (Tovey; Dalmau-Ford with constants); here the laws cannot pin, so equality is built without constants. The pieces are new (explicit)."
+  }
+}

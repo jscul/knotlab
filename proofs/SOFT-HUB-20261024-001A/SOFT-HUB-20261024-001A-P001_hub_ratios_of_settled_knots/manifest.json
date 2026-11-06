@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SOFT-HUB-20261024-001A-P001",
+  "canonical_id": "SOFT-HUB-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "SOFT-HUB-20261024-001A",
+  "proof": "SOFT-HUB-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Hub ratios of the settled knots",
+  "status": "Proved",
+  "claim": "No native gadget of any knot is an exact hub: supports are co-independent and exclude at most four of eight terminal values. For every gadget and axis u, exchanging the difference component of terminal 1 maps the pairs that do not link all three terminals injectively onto split patterns, so F(u)F(u-bar) is at most the split products plus the linked pairs, and every linked pair branches at a knot with antipodal local tuples. Parity gadgets have no linked pairs and hub ratio at most 1; no-lone gadgets obey the Fibonacci recurrence and have hub ratio at most 1; windable gadgets have hub ratio at most the square root of 3 given McQuillan. The eight non-windable knots are a closed neighbourhood plus the antipode of its centre, rigid for exchanges, so for the six open knots only linked pairs through knots that are empty on one side and full on the other can push the ratio above the square root of 3.",
+  "dependencies": [],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A native gadget supported exactly on the constant tuples of three or more legs.",
+    "A gadget and axis where the exchange of the component of terminal 1 is invalid or not injective, or where the separated pairs exceed the split products.",
+    "A linked pair without a branching knot with antipodal local tuples.",
+    "A parity or Fibonacci gadget with hub ratio above 1.",
+    "A non-windable knot that is not a closed neighbourhood plus its antipode.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "SOFT-HUB-20261024-001",
+    "epic_path": [
+      "SOFT-HUB-20261024-001"
+    ],
+    "parents": [
+      "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/manifest.json",
+      "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/manifest.json",
+      "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SURFACE-GLUING-20261024-001B/SURFACE-GLUING-20261024-001B-P001_no_parity_without_hubs/manifest.json": "e247a48f8dc549ac55cff789ebb9f518efecc10ee2bff5782f6e3848ecd5b05a",
+    "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/manifest.json": "b39f8a0b7156d39ccd35a0710c45d2ef7e5e106e313dbc8b980222c687c6f99b",
+    "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/manifest.json": "49131852b501be0a1f372a13a4daae162f73ab0c7d0d702e43c9669ee94fd2c8"
+  },
+  "paths": {
+    "manifest": "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/manifest.json",
+    "identity": "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/identity.json",
+    "directory": "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots",
+    "proof": "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/proof.md",
+    "result": "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/result.json",
+    "check": "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "settled_hub_ratios_shown": true
+  },
+  "foundation_claim_scope": "Finite relations and random finite gadgets; McQuillan's theorem cited as a hypothesis for the windable bound. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) enumerates 476 random gadgets of all 34 knots: supports co-independent, exchange valid and injective on 439,439 pairs (80,129 linked, all branching at antipodal tuples), parity and no-lone bounds, the closed-neighbourhood census and rigidity; windable inequality as a consistency check given McQuillan; three controls. No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

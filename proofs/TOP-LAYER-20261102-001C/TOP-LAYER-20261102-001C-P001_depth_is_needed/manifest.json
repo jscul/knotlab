@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TOP-LAYER-20261102-001C-P001",
+  "canonical_id": "TOP-LAYER-20261102-001C-P001",
+  "kind": "proof",
+  "ticket": "TOP-LAYER-20261102-001C",
+  "proof": "TOP-LAYER-20261102-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Depth is needed: simple abelian sections force rigid selection",
+  "status": "Proved",
+  "claim": "Depth is needed: simple abelian sections force rigid selection. In every Mal'tsev law, composing like cycles or not: (1) a knot H inside R_1 x ... x R_k (k >= 3, every (k-1)-projection full) is a union of classes of its fork congruences rho_i, and every quotient R_i/rho_i is abelian (commutator theory); (2) for a knot system with declared domains (every point carries one subalgebra D_v and every line carries a knot whose ranges are its points' domains), the solutions, and the solutions after any line is removed, are pulled back from one linear system over the abelianizations D_v/[1,1]; (3) if every abelian section of the algebra is simple, every global failure of such a system on a substrate is rigid: the failing part is one square linear system over the division ring End(S) of one simple module S, so after any removal it leaves one line, and only ties. Corollaries: every Mal'tsev law on at most three values, every non-affine Mal'tsev law on four values, and every group law that composes like cycles with abelian sections of prime order (squarefree order). Systems whose lines confine a point further than its domain are not covered by the proof; every one of them met in the checks of this ticket and of tickets A and B was rigid. Depth is necessary but not sufficient: the module F2^2 over the upper-triangular ring T2(F2) has two layers yet is rigid on every regular substrate, because its knots read the top as plain parity and an even line then forces the top's free direction onto every variable. Checked on random Mal'tsev algebras on four values (all three-place knots enumerated, forks abelian, systems with declared and with mixed domains), with Z4 and the T2(F2)-module as controls.",
+  "dependencies": [
+    "TOP-LAYER-20261102-001A",
+    "TOP-LAYER-20261102-001B"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A knot of a Mal'tsev algebra with a fork quotient that is not abelian, or that is not saturated by its forks.",
+    "A global failure of a Mal'tsev law whose abelian sections are all simple, keeping a knot after a line is removed.",
+    "A global failure of the T2(F2)-module law on a regular substrate keeping a knot."
+  ],
+  "lineage": {
+    "home_scope": "TOP-LAYER-20261102-001",
+    "epic_path": [
+      "TOP-LAYER-20261102-001"
+    ],
+    "parents": [
+      "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/manifest.json",
+      "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/result.json",
+      "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/manifest.json",
+      "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/manifest.json": "8c7019aee935d42fcfdc9ddd9b41eb7c27d3c4218c1bc80583c0a4a4ccc30b18",
+    "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/result.json": "388e042fc5aeabb68e0cefde0f2e261d3316ae46079b12e850d1e49972628822",
+    "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/manifest.json": "f209bf60d4dc91bdbc4ed19d5febe83ca74f2eb5979f7bd57262e6ecacb5b825",
+    "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/result.json": "c1a201c2dd0ad4c9d726bdd2573668e270a31d567b8bae6d6245762f2f3c0cff"
+  },
+  "paths": {
+    "manifest": "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/manifest.json",
+    "identity": "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/identity.json",
+    "directory": "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed",
+    "proof": "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/proof.md",
+    "result": "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/result.json",
+    "check": "proofs/TOP-LAYER-20261102-001C/TOP-LAYER-20261102-001C-P001_depth_is_needed/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "depth_theorem_proved": true
+  },
+  "foundation_claim_scope": "Mal'tsev laws (constraint languages with a Mal'tsev polymorphism) on regular substrates.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: random four-value Mal'tsev algebras with every three-place knot enumerated; random systems on cubic and 4-regular substrates; Z4 and T2(F2) controls; no human or external review",
+    "novelty": "Commutator theory (Freese-McKenzie, Herrmann) is classical; the depth theorem for selection is new here."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPACE-SELECTION-20261030-001C-P001",
+  "canonical_id": "SPACE-SELECTION-20261030-001C-P001",
+  "kind": "proof",
+  "ticket": "SPACE-SELECTION-20261030-001C",
+  "proof": "SPACE-SELECTION-20261030-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Three-fold contacts: the knot on phases, the Fano gadget, and the corrected interference bound",
+  "status": "Proved",
+  "claim": "(1) Correction of SPACE-SELECTION-20261030-001A, Theorem 5: its claim overlooked the one-triangle gadget, exact for every law, and its proof used the wrong hypergraph (G plus the corner triple; the right one merges the three corners). Corrected: no law with nonnegative values and support not-all-equal is exact on a gadget with 2 <= n <= 6 triangles. Proof by m(3) = 7 when the corner triangles are distinct, and by a forcing lemma (no 2-colourable 3-graph with at most five edges forces two vertices equal, exhaustive) when two corners share a triangle. (2) Duality at the knot angle: in a gadget whose contacts are all three-fold with an odd number of base incidences (then exactly one each), the signed knot's sector sums are (-i sqrt3)^(n-1) eps_A eps_B eps_C times the counts of not-all-equal phase assignments of the dual configuration (triangles as points, contacts as lines). The knot is exact iff the dual is 2-colourable and the dual plus the corner line is not. (3) Hence such gadgets need at least 7 triangles; with distinct corner triangles the 7-triangle ones are exactly the Fano gadgets (dual plus corner line = the Fano plane), 64 up to isomorphism. Contacts of even base count fall outside the duality: 60 three-fold gadgets with at most five triangles are exact at the knot, and 1216 of the 2592 role patterns of the Fano gluing are. (4) The Fano gadgets are linear, exact for signed not-all-equal (lambda(0) = 5) and for plain not-all-equal, so the corrected bound is sharp, and not generic for the standing wave; no three-fold gadget with at most five triangles is exact at the knot.",
+  "dependencies": [
+    "SPACE-SELECTION-20261030-001A",
+    "SPACE-SELECTION-20261030-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A gadget with 2 <= n <= 6 on which a nonnegative not-all-equal law is exact.",
+    "A 2-colourable 3-graph with at most five edges forcing two vertices equal.",
+    "A three-fold gadget violating the duality identity, or exact at the knot against the dual criterion.",
+    "A Fano gadget that is not exact for the signed or the plain knot, or a count that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "SPACE-SELECTION-20261030-001",
+    "epic_path": [
+      "SPACE-SELECTION-20261030-001"
+    ],
+    "parents": [
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/manifest.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/result.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py",
+      "proofs/SPACE-SELECTION-20261030-001B/SPACE-SELECTION-20261030-001B-P001_census_of_small_gadgets/manifest.json",
+      "proofs/SPACE-SELECTION-20261030-001B/SPACE-SELECTION-20261030-001B-P001_census_of_small_gadgets/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/manifest.json": "6c21a6b6b8c48ac64e7c6a5dc5524140b6fb6d6ba4a8c2a2cabc37b5ec40058a",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/result.json": "ca6571643442c03642551c7585e660310e06f36b0f21a75e4eea229425e3ee41",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py": "b876a6a2d4b198b2e68eb99b3b9185809ebf3614d4ea6ad2e949b491aa8ac97b",
+    "proofs/SPACE-SELECTION-20261030-001B/SPACE-SELECTION-20261030-001B-P001_census_of_small_gadgets/manifest.json": "3e2586405d996be60d728eedbcca372eb573a3ffab33000f6b9a9498d231e6f0",
+    "proofs/SPACE-SELECTION-20261030-001B/SPACE-SELECTION-20261030-001B-P001_census_of_small_gadgets/result.json": "5a5aba1cb70942c3a35d1f18cd1e2eac40d61c5ce5a96c270e32e09449d2800d"
+  },
+  "paths": {
+    "manifest": "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/manifest.json",
+    "identity": "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/identity.json",
+    "directory": "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget",
+    "proof": "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/proof.md",
+    "result": "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/result.json",
+    "check": "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "fano_gadget_shown": true
+  },
+  "foundation_claim_scope": "Three-bit laws on finite gadgets of triangles glued at vertices; the signed and plain not-all-equal knots; phase (sector) expansions at the knot angle; 2-colourings of 3-graphs.",
+  "validation": {
+    "status": "checked: the error in A exhibited; forcing lemma exhaustive on 8 vertices; duality identity exact in Z[zeta6] on all 282 three-fold gadgets with n <= 5 and the 64 Fano gadgets; Fano gadgets exact for both knots; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta) for the duality at the knot angle and the Fano gadgets; classical inputs: property B and m(3) = 7 (the Fano plane)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

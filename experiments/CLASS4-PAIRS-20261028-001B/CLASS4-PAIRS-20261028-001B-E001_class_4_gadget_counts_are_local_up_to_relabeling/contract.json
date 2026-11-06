@@ -1,0 +1,55 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CLASS4-PAIRS-20261028-001B-E001",
+ "ticket": "CLASS4-PAIRS-20261028-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "Scoping in this epic (scoping/README.md). A value-level path test on free class 4 on (1, 1) at d = 5 found vertex equations of a non-incident vertex changing with another edge's data; for every such configuration a unique translation of the first edge's layer-3 slot-2 coordinates (linear in the other edge's data) explained it exactly, and a canonical reading-strand gauge did not remove it. An edge passing over an isolated vertex was exactly local. For fixed layer-<=2 data the layer-4 equations are affine in the layer-3 data, and in scoping (other seeds) the global and assembled local systems had equal linear parts and constant parts differing by an element of the column space in 15 of 15 configurations for free class 4 on (1, 1) and on (1, 1, 1); the cumulative design failed this test. The linear-flow structure held for (1, 1) and failed for (1, 2). This contract tests the relabeling form of locality on three algebras, seven shapes and three configuration types, with fresh seeds and two controls.",
+ "question": "For zero-jump gadget knots over class-4 algebras whose only failing clean-edge condition is (K), and fixed layer-<=2 data on the solution variety: are the layer-4 equations of the graph gadget, as an affine function of the layer-3 data, equal to the system assembled from single-edge gadgets up to a relabeling (same linear part, constant parts differing by an element of its column space), and do the single edges have the linear-flow structure and the rank-witness ingredients?",
+ "public_inputs": {
+  "algebras": "free graded Lie algebras of class 4 (cd_lib.free_graded) on generator characters (1, 1), (0, 1, 1) and (1, 1, 1) at d = 5, p = 11; slots (1, 1, 2); control X2 on (1, 2) with slots (1, 2, 3)",
+  "summands": "pf_lib.summand_types: 8_9 at +-1, 4_1 at +-2 (amphichiral 3-braids)",
+  "gadget": "pf_lib.Gadget (zero-jump blocks, dedicated vertex copies, cable_d([A12, A23]) insertions); control X1 with zero_jump=False (cumulative design)",
+  "graphs": "P3 (0-1-2), an edge (0, 2) over an isolated vertex 1, the star K_{1,3}, the triangle, the path with edges (0, 2), (1, 2), the 4-cycle, K4; configurations: all vertex states equal, all random, alternating",
+  "variety points": "c4_lib.Case.variety_point: slot-1 layer-1 data enumerated against the layer-2 equations, slot-1 layer-2 data solved affinely, slot-2 data drawn from the kernel; asserted to solve every layer-2/3 private equation",
+  "measurement": "c4_lib.affine_system on the layer-3 free data (unit vectors plus 3 random checks); local system assembled from single-edge gadgets with and without private data; ranks over F_11"
+ },
+ "predictions": {
+  "R1": "every configuration lies on the variety (the layer-2/3 private equations of every edge hold) and the layer-4 equations are affine in the layer-3 data, for the graph gadget and for every single-edge gadget (verified at 3 random points each)",
+  "R2": "the linear parts agree: A_global = A_local in every configuration",
+  "R3": "the constant parts differ by a relabeling: b_global - b_local lies in the column space of A_local in every configuration",
+  "R4": "hence the number of layer-3 completions agrees: same solvability and, when solvable, the same kernel dimension",
+  "R5": "linear flows: vertex rows vanish at zero private data (10 random pairs); private rows vanish at the diagonal (100 random data); at a diagonal, a random and a pair-failing vertex pair, every sampled slot-1 solution gives private equations homogeneous affine in slot-2 data and endpoint vertex terms additive in slot-2 data with no slot-2-free term; every pair has at least one sample",
+  "R6": "rank-witness ingredients: at (0, D) and (D, 0) for a pair-failing D, zero private data solve and some of 50 random private data violate a private equation"
+ },
+ "controls": {
+  "machinery (any failure makes the run invalid)": "the variety-point assertion; affineness of every system (R1)",
+  "negative (a match makes the run invalid)": "X1: the cumulative design (zero_jump=False) for free class 4 on (1, 1) on P3, the skipping edge, the star and the triangle in all three configuration types: R2-R3 must fail in some configuration. X2: free class 4 on (1, 2), slots (1, 2, 3), whose dual slot has layer-1 data: the linear-flow structure of R5 must fail at some pair or sample"
+ },
+ "decision_rule": "Invalid if a machinery check fails or a negative control matches. Supported if R1-R6 hold for all three algebras. Refuted otherwise, naming every failed algebra; neither predictions nor construction change after this contract.",
+ "resource_budget": {
+  "wall_seconds": 28800,
+  "memory_mib": 16384,
+  "threads": 1
+ },
+ "stop_rule": "Run run.py once (after build_check.py); no adaptive extension.",
+ "seeds": "numpy default_rng(20261028) in run.py (scoping used 2810, 5, 31, 99, 77 and per-case seeds)",
+ "environment": "workspace .venv python (numpy); pf_lib.py (COPRIME-PAIRS-20261027-001D-E002), cd_lib.py (COPRIME-DICHOTOMY-20261027-001A-P001), gd.py (COPRIME-DICHOTOMY-20261027-001B-E002), mlib.py (TRIPLE-SYSTEM-20261027-001B-E001) and cp_lib.py (COPRIME-CLASS2-20261026-001B-P001) imported read-only",
+ "red_team_r0": [
+  "Graphs have at most 4 vertices and 6 edges; locality on all graphs is a hypothesis this run supports, not a theorem.",
+  "The three algebras share alpha = beta = 1 at d = 5, where the junction twists of an edge's layer-3 conjugators land at a character the preceding dual slot can absorb (2 gamma + alpha = 0 mod 5). No summand braids are available at d = 7 or 9, so other characters are not probed.",
+  "Prediction and measurement share the gadget model; the controls (cumulative design; a dual slot with layer-1 data) are the discriminators.",
+  "Vertex states and private data are sampled, not enumerated; R5 samples at most 8 slot-1 solutions per pair.",
+  "Equal linear parts plus a column-space difference (R2-R3) is the relabeling criterion; equal counts alone (R4) would be weaker and is reported only as a consequence."
+ ],
+ "nonclaims": [
+  "No proof of locality and no hardness claim here (ticket CLASS4-PAIRS-20261028-001C).",
+  "No claim for (K)-only algebras other than the three tested, or for d other than 5."
+ ],
+ "forbidden_inputs": [
+  "Measured systems as inputs to predictions",
+  "Scoping outputs as inputs to predictions"
+ ],
+ "outputs": "artifacts/CLASS4-PAIRS-20261028-001B/CLASS4-PAIRS-20261028-001B-E001_class_4_gadget_counts_are_local_up_to_relabeling/result.json, rows.json and run_log.txt"
+}

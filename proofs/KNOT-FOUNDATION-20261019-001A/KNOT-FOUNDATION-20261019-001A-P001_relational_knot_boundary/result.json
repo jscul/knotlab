@@ -1,0 +1,174 @@
+{
+  "artifact_id": "KNOT-FOUNDATION-20261019-001A-P001",
+  "checks": {
+    "affine_relations_that_are_knots": 0,
+    "cross_gated_equals_atom": true,
+    "cross_relational_is_hub": true,
+    "hub_is_knot": false,
+    "knots_by_loop_count": {
+      "2": {
+        "affine_closed": false,
+        "chain_clause_widths": [
+          3
+        ],
+        "chain_defines_knot": true,
+        "chain_witnesses": 0,
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "majority_closed": false,
+        "minimum_width_without_witnesses": 3
+      },
+      "3": {
+        "affine_closed": false,
+        "chain_clause_widths": [
+          3
+        ],
+        "chain_defines_knot": true,
+        "chain_witnesses": 1,
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "majority_closed": false,
+        "minimum_width_without_witnesses": 4
+      },
+      "4": {
+        "affine_closed": false,
+        "chain_clause_widths": [
+          3
+        ],
+        "chain_defines_knot": true,
+        "chain_witnesses": 2,
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "majority_closed": false,
+        "minimum_width_without_witnesses": 5
+      },
+      "5": {
+        "affine_closed": null,
+        "chain_clause_widths": [
+          3
+        ],
+        "chain_defines_knot": true,
+        "chain_witnesses": 3,
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "majority_closed": null,
+        "minimum_width_without_witnesses": 6
+      },
+      "6": {
+        "affine_closed": null,
+        "chain_clause_widths": [
+          3
+        ],
+        "chain_defines_knot": true,
+        "chain_witnesses": 4,
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "majority_closed": null,
+        "minimum_width_without_witnesses": null
+      }
+    },
+    "lean_axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "lean_axioms_standard_only": true,
+    "lean_kernel_accepted": true,
+    "lean_source_free_of_escapes": true,
+    "lean_theorems_present": true,
+    "lean_version": "Lean (version 4.32.2, x86_64-unknown-linux-gnu, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+    "majority_closed_relations_that_are_knots": 0,
+    "parents_bound": true,
+    "parity_invisible_in_pairs": true,
+    "parity_is_knot": false,
+    "sampled_two_cnf_with_witnesses": 3000,
+    "sampled_two_cnf_with_witnesses_knots": 0,
+    "sampled_two_cnf_with_witnesses_majority_closed": true,
+    "tied_factors": false,
+    "tied_is_knot": false,
+    "tied_is_two_cnf_and_majority_closed": true,
+    "tied_passes_old_erasure": true,
+    "two_cnf_knots_without_witnesses": 0,
+    "two_cnf_relations_all_majority_closed": true,
+    "two_cnf_relations_without_witnesses": 166,
+    "two_loop_knots": 2,
+    "two_loop_knots_are_atom_and_mirror": true
+  },
+  "claim": "Under relational semantics with the K1-K3 knot test, the two-loop knot is unique up to which contact value counts as made (the clause not-A or not-B or c); every knot is invisible in its smaller shadows; no 2-CNF with existentially quantified witnesses defines a knot; three-literal clauses with witnesses define the knot of any number of loops, which needs width n+1 without witnesses; and no affine relation is a knot. Proof 0009's executor rule supplies the gating literal that turns cross-wired 2-clause guards into the atom, and the earlier Lean kernel's erasure condition accepts the 2-CNF relation (A<->B) and (A->c).",
+  "controls": {
+    "broken_chain_rejected": true,
+    "k2_weakened_admits_more": true,
+    "knot_test_rejects_hub": true,
+    "lean_rejects_mutated_atom": true,
+    "majority_check_rejects_atom": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control",
+    "audit"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "KNOT-FOUNDATION-20261019-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": true,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "earlier_kernel_erasure_accepts_a_two_cnf_relation": true,
+    "executor_gating_supplies_presence_literal": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "knot_invisible_in_every_smaller_shadow": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "loop_presence_constructed_natively": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "no_affine_relation_is_a_knot": true,
+    "no_two_cnf_with_witnesses_defines_a_knot": true,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "relational_knot_test_k1_k3_defined": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": true,
+    "three_literal_chain_defines_knot_of_any_loop_count": true,
+    "transition_system_boundary_proved": true,
+    "two_cnf_boundary_proved": true,
+    "two_cnf_three_cnf_knot_boundary_proved": true,
+    "two_loop_knot_unique": true,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "cnf-arity"
+  ],
+  "status": "passed",
+  "thesis_alignment": {
+    "bare_semantics_only_is_terminal": false,
+    "encoding_firewall_checked": true,
+    "irreducible_joint_contact_checked": true,
+    "loop_erasure_contact_loss_checked": true,
+    "protected_thesis": "native-3-cnf-positive-native-2-cnf-negative",
+    "scope": "Relational semantics with K1-K3 (docs/KNOT_INTUITION.md): allowed states only, witnesses quantified away, no executor-supplied input, loop presence taken as given. 'proved_present' means a three-literal relation passes K1-K3 there; 'proved_absent' means no 2-CNF with witnesses passes K1-K3 (jointness fails because 2-CNF relations are determined by their pairs). Whether loop presence can be formed natively is open (KNOT-FOUNDATION-20261019-001B), so the native-formation safe flags stay false.",
+    "thesis_status": "supported",
+    "three_cnf_atomic_logical_topology": "proved_present",
+    "three_cnf_irreducible_joint_contact": "proved_present",
+    "three_cnf_loop_erasure_contact_loss": "proved_present",
+    "three_cnf_native_emergence": "proved_present",
+    "two_cnf_atomic_logical_topology": "proved_absent",
+    "two_cnf_irreducible_joint_contact": "proved_absent",
+    "two_cnf_loop_erasure_contact_loss": "proved_absent",
+    "two_cnf_native_emergence": "proved_absent"
+  },
+  "ticket": "KNOT-FOUNDATION-20261019-001A"
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "WAVE-UNIQUENESS-20261029-001A-P001",
+  "canonical_id": "WAVE-UNIQUENESS-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "WAVE-UNIQUENESS-20261029-001A",
+  "proof": "WAVE-UNIQUENESS-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Symmetric laws: four levels force the standing wave",
+  "status": "Proved",
+  "claim": "Among laws w(a, b, c) = f(a, b + c) with complex weights on the level-k Sierpinski gaskets, the laws exact at levels 2, 3, 4 and 5 are exactly: the standing waves (-1)^a U_(E-1)(y/2) for complex y with their limits (-1)^a E and equality; products u(a)v(b)v(c); the laws u(a)[b = c]; and the two frozen laws [a=0][b!=c] + [a=b=c=1] and its complement (each with nonzero factors), all of them exact at every level where their factor is nonzero. Fewer levels do not suffice: generic two-sector laws u1 v1 v1 + u2 v2 v2 are exact at level 2 iff u1 is orthogonal to v2, u2 to v1 and one balance holds (a two-dimensional family); at levels 2 and 3 the waves are joined by an irreducible curve K of degree 10 with real points; at levels 2 to 4 by 16 complex laws (8 conjugate pairs), which fail level 5. Proof by the pencil classification, sector formulas, exact resultants and factorizations, 80-digit root isolation, and Groebner bases for the tangent stratum. The only knot among the laws exact at levels 2 to 5 is signed not-all-equal.",
+  "dependencies": [
+    "SIGNED-GASKETS-20261029-001A",
+    "SIMPLEX-GASKETS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A symmetric law exact at levels 2 to 5 outside the stated classes.",
+    "A stated class member that fails exactness at some level of the stated range.",
+    "A factorization, resultant or Groebner computation that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "WAVE-UNIQUENESS-20261029-001",
+    "epic_path": [
+      "WAVE-UNIQUENESS-20261029-001"
+    ],
+    "parents": [
+      "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/manifest.json",
+      "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/result.json",
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json",
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json",
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/simplex_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/manifest.json": "ab76ce5eea97c4397f4f6680949dcb66b2d3ba6ba67fdbd23328f7a01f0e5c99",
+    "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/result.json": "a0a57667af282c22e879cad1663a9a30e3456e721501c46d3331b1033066c97c",
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json": "2947fa1cc430a1f97695fbc0cbf17415e4a7d668c4af8e26166894673356aea4",
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json": "4fb653729f829c3732e8b2a52f71602448ffd64e7ea46494caddd27dc4149a08",
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/simplex_lib.py": "71c011aa9acdedb9fb7d0989be25ca86476f0b3ee0728cbd05d3b054759ccfea"
+  },
+  "paths": {
+    "manifest": "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/manifest.json",
+    "identity": "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/identity.json",
+    "directory": "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave",
+    "proof": "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/proof.md",
+    "result": "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/result.json",
+    "check": "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gasket_uniqueness_shown": true
+  },
+  "foundation_claim_scope": "Three-bit laws symmetric in the two non-base corners, with complex weights, on level-k Sierpinski gaskets (k = 2 to 5 and beyond for the final classes); exactness of the corner relation; the knot status of supports.",
+  "validation": {
+    "status": "checked: level-2 coefficient identity symbolic; sector formulas against exact integer corner relations (k = 3, 4, 5); exact resultants and factorizations at levels 3 and 4; 80-digit intersection of K with level 4 (32 points with a common ratio, 0 on the other factor, p = 0 degenerate) and level 5 failing for the 16 laws; tangent stratum by Groebner bases; rank-one stratum symbolic; final classes exact at levels 2 to 8 in exact integers; knot statuses; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta); classical tools (pencils of binary quadrics, resultants, Groebner bases)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

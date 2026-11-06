@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TRIPLE-SYSTEM-20261027-001A-P001",
+  "canonical_id": "TRIPLE-SYSTEM-20261027-001A-P001",
+  "kind": "proof",
+  "ticket": "TRIPLE-SYSTEM-20261027-001A",
+  "proof": "TRIPLE-SYSTEM-20261027-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "An abelian Lie triple system makes counting polynomial in every class",
+  "status": "Proved",
+  "claim": "for p odd, N of exponent p and class c < p with an involution theta and n = n+ + n- (Lazard): [[n-, n-], n-] = 0 iff every odd Lie word of degree at least 3 in n- vanishes iff n- + [n-, n-] is a subalgebra with [n-, n-] central in it; and then, for every group pi with H^1(pi; F_p) = H^2(pi; F_p) = 0 and every psi: pi -> C2, |Hom_psi(pi, N x| C2)| = |Z^1(pi; F_p^psi)|^(dim n-), every homomorphism landing in exp(n- + [n-, n-]) x| <theta>. Hence counting maps to N x| C2 is polynomial on closed 3-manifolds with H1(M; F_p) = 0 and bounded 2-rank, in every class; with H1 = Z/2 the count is 1 + p^((N+1) dim n-).",
+  "dependencies": [
+    "BEYOND-CLASS2-20261027-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An algebra with an abelian triple system and a nonzero odd left-normed word of degree 3 or 5 in its minus part, or with [n-, n-] not central in n- + [n-, n-].",
+    "A 2-surgery and sector on which ticket A's direct layered count for the class-3 cross-layer algebra at r = 2 differs from |Z1(F_p^psi)|^(dim n-).",
+    "A gadget surgery on which random free data of an abelian example fail to lift, or on which the nonabelian class-4 control never obstructs."
+  ],
+  "lineage": {
+    "home_scope": "TRIPLE-SYSTEM-20261027-001",
+    "epic_path": [
+      "TRIPLE-SYSTEM-20261027-001"
+    ],
+    "parents": [
+      "proofs/BEYOND-CLASS2-20261027-001Z/BEYOND-CLASS2-20261027-001Z-P001_epic_closure/manifest.json",
+      "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/manifest.json",
+      "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/result.json",
+      "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/manifest.json",
+      "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/result.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json",
+      "experiments/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/contract.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BEYOND-CLASS2-20261027-001Z/BEYOND-CLASS2-20261027-001Z-P001_epic_closure/manifest.json": "296e56f0c349209cd7a8e259127cf10e1318705897349e01c64f1f600f214951",
+    "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/manifest.json": "ac198ba261ad12d675a8ed2896314f2a106a1a5b6d129718cfe35511999cd5cc",
+    "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/result.json": "71a7ba79096525f0845fbb99d0336dae8eb1a7c59e94dbbd434aac33fe34da66",
+    "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/manifest.json": "bfc0153a6a58893230994bd235dcb2c7d549759b7bb4e9b7c1c7752b0ba9fd07",
+    "proofs/BEYOND-CLASS2-20261027-001C/BEYOND-CLASS2-20261027-001C-P001_a_four_way_massey_interaction_makes_counting_sharp_p_hard_at_r_2/result.json": "34daabd4e008ed6de2e39481bf0a37f6498cdf1830b94b6e4f033436dd0e9ca4",
+    "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json": "c81fd7b466460090a82ab3a39d6465d95ceeb59daab2aeedd67abc76751baf0f",
+    "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json": "eaa1b53eb187899ccc2b6d28f42da49a4e4cdf34b1728abfc503b1e4d9377a4f",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json": "d374186cfa5b0fda8e0a672d62e8a1605e05693c07cba01576a681871365e049",
+    "experiments/BEYOND-CLASS2-20261027-001B/BEYOND-CLASS2-20261027-001B-E001_four_way_massey_form_on_gadget_surgeries/contract.json": "e2351672bdad5827348242b73b0332b21caadb669e282b0e4215044abbb871e4"
+  },
+  "paths": {
+    "manifest": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class/manifest.json",
+    "identity": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class/identity.json",
+    "directory": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class",
+    "proof": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class/proof.md",
+    "result": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class/result.json",
+    "check": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class/check.py",
+    "library": "proofs/TRIPLE-SYSTEM-20261027-001A/TRIPLE-SYSTEM-20261027-001A-P001_an_abelian_lie_triple_system_makes_counting_polynomial_in_every_class/lm.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "abelian_triple_system_polynomial_shown": false
+  },
+  "foundation_claim_scope": "p odd, N of exponent p and class c < p (Lazard correspondence), coprime involution; groups with H^1 and H^2 with F_p coefficients zero, in particular closed 3-manifolds with H1(M; F_p) = 0. Cited, not reproved: the Lazard correspondence; Hopf's injection H^2(pi) -> H^2(M); nonabelian lifting through central extensions. Not covered: p = 2; manifolds with p-torsion in H1 (trivial-character classes); unbounded 2-rank (exponentially many sectors). No P versus NP claim.",
+  "validation": {
+    "status": "checked: Lemma 1 on eleven algebras (free nilpotent with prescribed involution signs, classes 3 to 5, and the examples): abelian triple systems kill odd words of degree 3 and 5 and make [n-, n-] central in n- + [n-, n-]; ticket A's direct layered count for the class-3 cross-layer algebra at r = 2 equals |Z1|^(dim n-) on five 2-surgeries at p = 5, 7 and gives 1 in sector 0; on gadget surgeries the abelian class-3 and class-4 examples never obstruct and the nonabelian class-4 control does; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-27."
+  }
+}

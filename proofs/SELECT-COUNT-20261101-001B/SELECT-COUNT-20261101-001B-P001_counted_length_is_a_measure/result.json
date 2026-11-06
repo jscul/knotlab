@@ -1,0 +1,376 @@
+{
+ "artifact_id": "SELECT-COUNT-20261101-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "passed",
+     "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/result.json": "passed",
+     "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json": "Proved",
+     "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json": "Proved",
+     "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json": "Proved",
+     "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 one amplitude: on each of the ten knot's spaces, half the number of colourings of H minus a line is the same at every line; it is 5 per Fano block, times 2 for the twisted cube's glue; the counter agrees with brute force on three spaces": {
+   "info": {
+    "brute force agrees (Fano, chain of 2, cycle of 3)": {
+     "Fano": true,
+     "chain of 2": true,
+     "cycle of 3 blocks": true
+    },
+    "spaces": {
+     "3-cycle spliced into Fano": {
+      "5^blocks x glue": 625,
+      "amplitude at every line": [
+       625
+      ],
+      "counted length / log 5": 4.0
+     },
+     "Fano": {
+      "5^blocks x glue": 5,
+      "amplitude at every line": [
+       5
+      ],
+      "counted length / log 5": 1.0
+     },
+     "chain of 2": {
+      "5^blocks x glue": 25,
+      "amplitude at every line": [
+       25
+      ],
+      "counted length / log 5": 2.0
+     },
+     "chain of 3": {
+      "5^blocks x glue": 125,
+      "amplitude at every line": [
+       125
+      ],
+      "counted length / log 5": 3.0
+     },
+     "chain of 4": {
+      "5^blocks x glue": 625,
+      "amplitude at every line": [
+       625
+      ],
+      "counted length / log 5": 4.0
+     },
+     "cycle of 3 blocks": {
+      "5^blocks x glue": 125,
+      "amplitude at every line": [
+       125
+      ],
+      "counted length / log 5": 3.0
+     },
+     "cycle of 5 blocks": {
+      "5^blocks x glue": 3125,
+      "amplitude at every line": [
+       3125
+      ],
+      "counted length / log 5": 5.0
+     },
+     "cycle of 7 blocks": {
+      "5^blocks x glue": 78125,
+      "amplitude at every line": [
+       78125
+      ],
+      "counted length / log 5": 7.0
+     },
+     "star of 4": {
+      "5^blocks x glue": 625,
+      "amplitude at every line": [
+       625
+      ],
+      "counted length / log 5": 4.0
+     },
+     "twisted cube": {
+      "5^blocks x glue": 31250,
+      "amplitude at every line": [
+       31250
+      ],
+      "counted length / log 5": 6.430677
+     }
+    }
+   },
+   "pass": true
+  },
+  "2 at every nontrivial 2- and 3-edge cut of the ten spaces each side has the same count for every channel assignment it accepts (and none for the others), and the two sides' counts multiply to the amplitude: a(X) a(X-bar) = A(H)": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "2-edge, states 2/2, log5 counts [1.0, 3.0]": 2,
+     "2-edge, states 2/2, log5 counts [2.0, 2.0]": 1,
+     "3-edge, states 2/6, log5 counts [1.0, 3.0]": 9,
+     "3-edge, states 2/6, log5 counts [2.0, 2.0]": 4
+    },
+    "Fano": {},
+    "chain of 2": {
+     "3-edge, states 2/6, log5 counts [1.0, 1.0]": 1
+    },
+    "chain of 3": {
+     "3-edge, states 2/6, log5 counts [1.0, 2.0]": 2
+    },
+    "chain of 4": {
+     "3-edge, states 2/6, log5 counts [1.0, 3.0]": 2,
+     "3-edge, states 2/6, log5 counts [2.0, 2.0]": 1
+    },
+    "cycle of 3 blocks": {
+     "2-edge, states 2/2, log5 counts [1.0, 2.0]": 3,
+     "3-edge, states 2/6, log5 counts [1.0, 2.0]": 12
+    },
+    "cycle of 5 blocks": {
+     "2-edge, states 2/2, log5 counts [1.0, 4.0]": 5,
+     "2-edge, states 2/2, log5 counts [2.0, 3.0]": 5,
+     "3-edge, states 2/6, log5 counts [1.0, 4.0]": 20,
+     "3-edge, states 2/6, log5 counts [2.0, 3.0]": 20
+    },
+    "cycle of 7 blocks": {
+     "2-edge, states 2/2, log5 counts [1.0, 6.0]": 7,
+     "2-edge, states 2/2, log5 counts [2.0, 5.0]": 7,
+     "2-edge, states 2/2, log5 counts [3.0, 4.0]": 7,
+     "3-edge, states 2/6, log5 counts [1.0, 6.0]": 28,
+     "3-edge, states 2/6, log5 counts [2.0, 5.0]": 28,
+     "3-edge, states 2/6, log5 counts [3.0, 4.0]": 28
+    },
+    "star of 4": {
+     "3-edge, states 2/6, log5 counts [1.0, 3.0]": 3
+    },
+    "twisted cube": {
+     "2-edge, states 2/2, log5 counts [1.0, 5.430677]": 3,
+     "3-edge, states 2/6, log5 counts [1.0, 5.430677]": 15,
+     "3-edge, states 2/6, log5 counts [2.0, 4.430677]": 3
+    }
+   },
+   "pass": true
+  },
+  "3 routes: every arc of m units of the cycles of 3, 5 and 7 Fano blocks has exactly 5^m colourings for each accepted pair (port colour, slot value) and none otherwise: counted length m log 5 along the route, where the relation keeps only m mod 2": {
+   "info": {
+    "cycle of 3 blocks": {
+     "m = 1": 3,
+     "m = 2": 3
+    },
+    "cycle of 5 blocks": {
+     "m = 1": 5,
+     "m = 2": 5,
+     "m = 3": 5,
+     "m = 4": 5
+    },
+    "cycle of 7 blocks": {
+     "m = 1": 7,
+     "m = 2": 7,
+     "m = 3": 7,
+     "m = 4": 7,
+     "m = 5": 7,
+     "m = 6": 7
+    }
+   },
+   "pass": true
+  },
+  "4 rings of units cut from different knot's spaces: every unit accepts exactly a negation; a ring fails exactly when it has an odd number of units, and then its amplitude (at every line) is the product of the units' amplitudes, while an even ring has twice that product as colourings: the relation counts parts, the count counts what is inside them": {
+   "info": {
+    "rings": {
+     "Fano + Fano + Fano + Fano + chain of 2": {
+      "amplitude at every line": [
+       15625
+      ],
+      "colourings": 0,
+      "cubic": true,
+      "product of unit amplitudes": 15625,
+      "units": 5
+     },
+     "Fano + chain of 2": {
+      "colourings": 250,
+      "cubic": true,
+      "product of unit amplitudes": 125,
+      "units": 2
+     },
+     "Fano + chain of 2 + Fano": {
+      "amplitude at every line": [
+       625
+      ],
+      "colourings": 0,
+      "cubic": true,
+      "product of unit amplitudes": 625,
+      "units": 3
+     },
+     "Fano + twisted cube + cycle of 3 blocks": {
+      "amplitude at every line": [
+       19531250
+      ],
+      "colourings": 0,
+      "cubic": true,
+      "product of unit amplitudes": 19531250,
+      "units": 3
+     },
+     "chain of 2 + chain of 2 + Fano + cycle of 3 blocks": {
+      "colourings": 781250,
+      "cubic": true,
+      "product of unit amplitudes": 390625,
+      "units": 4
+     },
+     "chain of 2 + twisted cube": {
+      "colourings": 1562500,
+      "cubic": true,
+      "product of unit amplitudes": 781250,
+      "units": 2
+     },
+     "twisted cube + cycle of 3 blocks + chain of 2 + Fano + Fano": {
+      "amplitude at every line": [
+       2441406250
+      ],
+      "colourings": 0,
+      "cubic": true,
+      "product of unit amplitudes": 2441406250,
+      "units": 5
+     }
+    },
+    "unit relations": {
+     "Fano": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "chain of 2": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "cycle of 3 blocks": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "twisted cube": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    }
+   },
+   "pass": true
+  },
+  "5 the amplitude is unchanged by transposition (points and lines exchanged, which swaps knot sides and hub sides) and by a random relabelling of every space": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "relabelled amplitude": [
+      625
+     ],
+     "transpose amplitude": [
+      625
+     ]
+    },
+    "Fano": {
+     "relabelled amplitude": [
+      5
+     ],
+     "transpose amplitude": [
+      5
+     ]
+    },
+    "chain of 2": {
+     "relabelled amplitude": [
+      25
+     ],
+     "transpose amplitude": [
+      25
+     ]
+    },
+    "chain of 3": {
+     "relabelled amplitude": [
+      125
+     ],
+     "transpose amplitude": [
+      125
+     ]
+    },
+    "chain of 4": {
+     "relabelled amplitude": [
+      625
+     ],
+     "transpose amplitude": [
+      625
+     ]
+    },
+    "cycle of 3 blocks": {
+     "relabelled amplitude": [
+      125
+     ],
+     "transpose amplitude": [
+      125
+     ]
+    },
+    "cycle of 5 blocks": {
+     "relabelled amplitude": [
+      3125
+     ],
+     "transpose amplitude": [
+      3125
+     ]
+    },
+    "cycle of 7 blocks": {
+     "relabelled amplitude": [
+      78125
+     ],
+     "transpose amplitude": [
+      78125
+     ]
+    },
+    "star of 4": {
+     "relabelled amplitude": [
+      625
+     ],
+     "transpose amplitude": [
+      625
+     ]
+    },
+    "twisted cube": {
+     "relabelled amplitude": [
+      31250
+     ],
+     "transpose amplitude": [
+      31250
+     ]
+    }
+   },
+   "pass": true
+  },
+  "6 controls: a disconnected failing system has no amplitude, a colourable cycle still multiplies, and two parts with the same relation have different counts (counted length is not a function of relations)": {
+   "info": {
+    "even cycle of 4 blocks: colourable with 2 * 5^4 colourings (counts still multiply)": true,
+    "relationally equal units with different counts: Fano unit and 13-point unit both accept exactly a negation, counts 5 and 25": true,
+    "two disjoint Fano planes: not colourable, but every line's amplitude is 0 (not minimal), so no counted length": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Counted length is a measure on the knot's spaces. Let H be a knot's space (a connected cubic system on which not-all-equal fails) and A(H) its amplitude, half the number of colourings of H minus a line, which is the same for every line (THREEFOLD-AMPLITUDE). (1) Across every nontrivial 2- or 3-edge cut, each side has the same number a(X) of colourings for every channel assignment it accepts: by complement symmetry on two-state sides, and by the point lemma with the one amplitude on the six-state line side. (2) The two sides multiply to the whole: a(X) a(X-bar) = A(H), since the atom twist of a cut edge has 2 a(X) a(X-bar) colourings and also 2 A(H). So counted length, l(X) = log a(X), is additive over every cut and over the whole decomposition into parts: a measure. (3) It is worth log 5 per Fano block, which is one handle where THREEFOLD-SURFACES applies, plus the logarithm of the glue's tree-trinity number (log 2 in the twisted cube). Along a route of m Fano units it is m log 5, which no relation sees (relations keep m mod 2). (4) In rings of units cut from different knot's spaces, every unit is a negation, the ring fails exactly when the number of units is odd, and the count is the product of the units' amplitudes, so the relation and the count vary independently: the relation counts parts, the count counts handles and glue. (5) It is unchanged by transposition, which exchanges knot sides and hub sides, and by isomorphism, but not by replacing a part with a relationally equal one. Reading: a law-intrinsic measure on the routes of the declared substrate, which supplies canonical weights where earlier route values needed chosen ones; since these routes are not native paths, it is counted length, not a native extended distance.",
+ "kind": "proof",
+ "proof": "SELECT-COUNT-20261101-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SELECT-COUNT-20261101-001B"
+}

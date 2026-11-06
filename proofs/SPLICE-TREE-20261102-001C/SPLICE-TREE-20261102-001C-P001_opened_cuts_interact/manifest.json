@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPLICE-TREE-20261102-001C-P001",
+  "canonical_id": "SPLICE-TREE-20261102-001C-P001",
+  "kind": "proof",
+  "ticket": "SPLICE-TREE-20261102-001C",
+  "proof": "SPLICE-TREE-20261102-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Opened cuts interact, and no hub-level feature decides how",
+  "status": "Proved",
+  "claim": "Opened cuts interact, and no hub-level feature decides how. Take a knot space assembled along a tree of simple 3-edge cuts and a removal that opens two or more cuts. Call a knot generated from a base when repeated eliminations (C1 u C2 minus one shared tie class, kept when it is a circuit) produce it; a derivation never uses a knot larger than its result, so a closure computed with circuits up to a size bound is exact within the bound. A knot crossing k opened cuts is new at one cut (k = 1, not generated from knots crossing none), carried (k >= 2, generated from knots crossing fewer opened cuts but not from knots crossing none) or joint (k >= 2, not generated even from knots crossing fewer). (1) The hypothesis that opened cuts interact only where their hubs touch fails: K4 > Fano > K4 with disjoint hubs carries new knots across its second opened cut, and K4 > K4 > K4 with touching hubs has no knot crossing both opened cuts that is not generated from knots crossing none. (2) On 96 chains of three and four K4^(3) and Fano pieces (every second splice line of three-piece chains and selected lines of four-piece chains, 10 to 19 points, all circuits; 642 removals opening two or more cuts), carried and joint knots occur with disjoint hubs as with touching ones, joint knots occur at removals through a port shared by two opened cuts and at removals whose line misses every shared port, and both through the removed line's hub and off it: 1126 joint knots, 664 at removals whose line misses every shared port (368 where the opened cuts' hubs are disjoint), 290 off the hub. (3) Two regularities hold on all 96: every joint knot has three or four points, and chains of K4^(3) pieces alone have no new, carried or joint knot. (4) The closure up to tie classes reproduces HUB-GLUE C's count at an opened hub (72 of the 762 crossing knots of the 13-point Fano splice not generated), which was computed with representatives. (5) Example: with touching hubs, removing either line through the shared port leaves 12 corner circuits (a point of the removed line, a point of the port's other near-side line, a point of its slot line beyond the second cut); with a Fano far end they are exactly the joint knots (Fano > K4 > Fano, Fano > Fano > Fano), with a K4^(3) far end knots crossing fewer cuts generate them (Fano > K4 > K4, Fano > Fano > K4).",
+  "dependencies": [
+    "SPLICE-TREE-20261102-001B"
+  ],
+  "evidence_modes": [
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A joint knot of more than four points on one of the 96 chains.",
+    "A chain of K4^(3) pieces alone with a new, carried or joint knot.",
+    "A hub-level feature (disjoint hubs excluded, a shared port on the removed line, passage through the removed line's hub) present at every joint knot.",
+    "The closure up to tie classes disagreeing with forward elimination, or a bounded closure disagreeing with the full one within its bound."
+  ],
+  "lineage": {
+    "home_scope": "SPLICE-TREE-20261102-001",
+    "epic_path": [
+      "SPLICE-TREE-20261102-001"
+    ],
+    "parents": [
+      "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/manifest.json",
+      "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/result.json",
+      "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/tree_lib.py",
+      "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/manifest.json",
+      "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/manifest.json": "5b4ebdeeddafcbbaa27c1314f8f4761abd894eb563bf2df764d07228c4ea12b0",
+    "proofs/SPLICE-TREE-20261102-001B/SPLICE-TREE-20261102-001B-P001_held_cuts_give_iterated_two_sums/result.json": "a438f43c4bbd9130eef565f8b3946ead7a5cfca4267059b417d2a646fa894ef6",
+    "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/tree_lib.py": "670722fd76fa375e134260590be62a651926bbb497952b20101b538961d08c7c",
+    "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/manifest.json": "45fd98f658993dbf309e7a03587d78f89d257170a8ee4a0651b2239535cd714a",
+    "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/result.json": "e4d5ea2d8c989d0ee52993442f6499781cfe56276e7eb1feec5d4abf9d587591"
+  },
+  "paths": {
+    "manifest": "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/manifest.json",
+    "identity": "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/identity.json",
+    "directory": "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact",
+    "proof": "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/proof.md",
+    "result": "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/result.json",
+    "check": "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "opened_cut_interaction_measured": true
+  },
+  "foundation_claim_scope": "Chains of three and four K4^(3) and Fano pieces, removals that open two or more cuts, eliminations up to ties.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: 96 chains of 10 to 19 points with all circuits; no human or external review",
+    "novelty": "New here; the size bound on derivations is elementary."
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "artifact_id": "HARD-3D-20261025-001B-P001",
+  "status": "Proved",
+  "checks": {
+    "part1_identified_manifolds": {
+      "cases": {
+        "S3": {
+          "single edge = T^3 # S1xS2": {
+            "presentation": 288,
+            "independent": 288,
+            "equal": true
+          },
+          "path = T^3 # T^3 # S1xS2": {
+            "presentation": 13824,
+            "independent": 13824,
+            "equal": true
+          },
+          "doubled edge = (genus-2 surface x S1) # S1xS2": {
+            "presentation": 4176,
+            "independent": 4176,
+            "equal": true
+          },
+          "C3 = graph manifold # S1xS2": {
+            "presentation": 136080,
+            "independent": 136080,
+            "equal": true
+          },
+          "C4 = graph manifold # S1xS2": {
+            "presentation": 5745168,
+            "independent": 5745168,
+            "equal": true
+          }
+        },
+        "dihedral of order 8": {
+          "single edge = T^3 # S1xS2": {
+            "presentation": 1408,
+            "independent": 1408,
+            "equal": true
+          },
+          "path = T^3 # T^3 # S1xS2": {
+            "presentation": 247808,
+            "independent": 247808,
+            "equal": true
+          },
+          "doubled edge = (genus-2 surface x S1) # S1xS2": {
+            "presentation": 47104,
+            "independent": 47104,
+            "equal": true
+          },
+          "C3 = graph manifold # S1xS2": {
+            "presentation": 6225920,
+            "independent": 6225920,
+            "equal": true
+          },
+          "C4 = graph manifold # S1xS2": {
+            "presentation": 996671488,
+            "independent": 996671488,
+            "equal": true
+          }
+        }
+      },
+      "all equal": true
+    },
+    "part2_outer_face_and_mirror": {
+      "cases": {
+        "diamond": {
+          "distinct values over outer faces and mirror": [
+            70400016
+          ],
+          "invariant": true
+        },
+        "K4": {
+          "distinct values over outer faces and mirror": [
+            1067885856
+          ],
+          "invariant": true
+        },
+        "C4": {
+          "distinct values over outer faces and mirror": [
+            5745168
+          ],
+          "invariant": true
+        },
+        "triangle with pendant": {
+          "distinct values over outer faces and mirror": [
+            6531840
+          ],
+          "invariant": true
+        }
+      },
+      "all invariant": true
+    },
+    "part3_digon_collapse": {
+      "cases": {
+        "S3 C3": {
+          "full": 1616035536,
+          "collapsed": 1616035536
+        },
+        "S3 C4": {
+          "full": 794726071056,
+          "collapsed": 794726071056
+        },
+        "dihedral of order 8 C3": {
+          "full": 600490115072,
+          "collapsed": 600490115072
+        }
+      },
+      "all equal": true
+    },
+    "part4_exponential_polynomial": {
+      "cases": {
+        "S3 C3": {
+          "bases": 10,
+          "two extra values reproduced": true,
+          "coefficient of target^(mk)": "112/3",
+          "identity": "112/3",
+          "match": true
+        },
+        "S3 C4": {
+          "bases": 15,
+          "two extra values reproduced": true,
+          "coefficient of target^(mk)": "304/3",
+          "identity": "304/3",
+          "match": true
+        },
+        "dihedral of order 8 C3": {
+          "bases": 4,
+          "two extra values reproduced": true,
+          "coefficient of target^(mk)": "336",
+          "identity": "336",
+          "match": true
+        },
+        "dihedral of order 16 (collision)": {
+          "256*16 == 64^2": true,
+          "rows": {
+            "C3": {
+              "coefficient of 64^(mk)": "840",
+              "identity 2 P(G,16)/2^V": "840",
+              "contamination": "0"
+            },
+            "C4": {
+              "coefficient of 64^(mk)": "6522",
+              "identity 2 P(G,16)/2^V": "6330",
+              "contamination": "192"
+            }
+          },
+          "triangle uncontaminated (parity)": true,
+          "C4 contaminated": true
+        }
+      },
+      "all as stated": true
+    },
+    "part5_target_identities": {
+      "cases": {
+        "S3": {
+          "C3": {
+            "coefficient": "112/3",
+            "2 P(G,9)/3^V": "112/3",
+            "match": true
+          },
+          "C4": {
+            "coefficient": "304/3",
+            "2 P(G,9)/3^V": "304/3",
+            "match": true
+          },
+          "C5": {
+            "coefficient": "7280/27",
+            "2 P(G,9)/3^V": "7280/27",
+            "match": true
+          },
+          "theta2": {
+            "coefficient": "16",
+            "2 P(G,9)/3^V": "16",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "16",
+            "2 P(G,9)/3^V": "16",
+            "match": true
+          },
+          "theta4": {
+            "coefficient": "16",
+            "2 P(G,9)/3^V": "16",
+            "match": true
+          },
+          "diamond": {
+            "coefficient": "784/9",
+            "2 P(G,9)/3^V": "784/9",
+            "match": true
+          },
+          "K4": {
+            "coefficient": "224/3",
+            "2 P(G,9)/3^V": "224/3",
+            "match": true
+          },
+          "triangle with pendant": {
+            "coefficient": "896/9",
+            "2 P(G,9)/3^V": "896/9",
+            "match": true
+          }
+        },
+        "dihedral of order 8": {
+          "C3": {
+            "coefficient": "336",
+            "P(G,8)": "336",
+            "match": true
+          },
+          "C4": {
+            "coefficient": "2408",
+            "P(G,8)": "2408",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "56",
+            "P(G,8)": "56",
+            "match": true
+          },
+          "diamond": {
+            "coefficient": "2016",
+            "P(G,8)": "2016",
+            "match": true
+          },
+          "K4": {
+            "coefficient": "1680",
+            "P(G,8)": "1680",
+            "match": true
+          }
+        },
+        "dihedral of order 10": {
+          "C3": {
+            "coefficient": "1104/5",
+            "2 P(G,25)/5^V": "1104/5",
+            "match": true
+          },
+          "C4": {
+            "coefficient": "26544/25",
+            "2 P(G,25)/5^V": "26544/25",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "48",
+            "2 P(G,25)/5^V": "48",
+            "match": true
+          }
+        },
+        "dihedral of order 12": {
+          "C3": {
+            "coefficient": "896/3",
+            "2 (2/3)^V P(G,9)": "896/3",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "64",
+            "2 (2/3)^V P(G,9)": "64",
+            "match": true
+          }
+        },
+        "Q8": {
+          "C3": {
+            "coefficient": "336",
+            "P(G,8)": "336",
+            "match": true
+          },
+          "C4": {
+            "coefficient": "2408",
+            "P(G,8)": "2408",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "56",
+            "P(G,8)": "56",
+            "match": true
+          }
+        },
+        "A4": {
+          "C3": {
+            "coefficient": "315/2",
+            "3 P(G,16)/4^V": "315/2",
+            "match": true
+          },
+          "C4": {
+            "coefficient": "9495/16",
+            "3 P(G,16)/4^V": "9495/16",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "45",
+            "3 P(G,16)/4^V": "45",
+            "match": true
+          }
+        },
+        "dihedral of order 16": {
+          "C3": {
+            "coefficient": "840",
+            "2 P(G,16)/2^V": "840",
+            "match": true
+          },
+          "theta3": {
+            "coefficient": "120",
+            "2 P(G,16)/2^V": "120",
+            "match": true
+          }
+        }
+      },
+      "all match": true
+    },
+    "controls": {
+      "results": {
+        "genus-1 rotation system has one face": true,
+        "genus-1 rotation system breaks the S3 identity": true,
+        "S3: wrong target 2 P(G,8)/3^V rejected": true,
+        "S3: wrong target 2 P(G,3) rejected": true,
+        "order-8 dihedral: wrong target 2 P(G,9)/3^V rejected": true,
+        "abelian Z6: equal closed counts on graphs with equal V, E, F and different P(G,3)": true
+      },
+      "all pass": true
+    },
+    "all_checks_pass": true,
+    "seconds": 127.4
+  }
+}

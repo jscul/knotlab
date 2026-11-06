@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "artifact_id": "COUNT-NOTE-20261031-001-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 27,
+    "mismatched": {}
+   }
+  },
+  "1 the replay: every cited check rerun in a temporary copy equals its frozen result": {
+   "ok": true,
+   "detail": {
+    "rows": [
+     [
+      "SEYMOUR-COUNT-20261030-001A",
+      true,
+      "Proved"
+     ],
+     [
+      "SEYMOUR-COUNT-20261030-001B",
+      true,
+      "Proved"
+     ],
+     [
+      "TWIST-COUNT-20261030-001A",
+      true,
+      "Proved"
+     ],
+     [
+      "TWIST-COUNT-20261030-001B",
+      true,
+      "Proved"
+     ],
+     [
+      "SOFT-CROSS-20261031-001A",
+      true,
+      "Proved"
+     ],
+     [
+      "SOFT-CROSS-20261031-001B",
+      true,
+      "Proved"
+     ],
+     [
+      "SOFT-CROSS-20261031-001C",
+      true,
+      "Proved"
+     ],
+     [
+      "PLAIN-COUNT-20261031-001A",
+      true,
+      "Proved"
+     ],
+     [
+      "PLAIN-COUNT-20261031-001B",
+      true,
+      "Proved"
+     ],
+     [
+      "PLAIN-BRACE-20261031-001A",
+      true,
+      "Proved"
+     ],
+     [
+      "PLAIN-BRACE-20261031-001B",
+      true,
+      "Proved"
+     ]
+    ],
+    "copied directories": 20
+   }
+  },
+  "2 the independent replay (fresh code) agrees": {
+   "ok": true,
+   "detail": {
+    "I1 soft crossing": true,
+    "I2 cube junction": true,
+    "I3 K3,3 through plain braces": true,
+    "I4 signs are path lengths": true,
+    "I5 Theorem A on Fano compositions": true,
+    "I6 similitude": true
+   }
+  },
+  "3 the note's numbers are the evidence's; every cited ticket is named": {
+   "ok": true,
+   "detail": {
+    "quoted numbers": 33,
+    "failures": []
+   }
+  },
+  "4 the note compiles": {
+   "ok": true,
+   "detail": {
+    "pages": 10,
+    "overfull boxes": false
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "a tampered number in the note is caught": true,
+    "a missing quotation is caught": true,
+    "a mismatching replay row is caught": true,
+    "a failing independent part is caught": true,
+    "the hash-order tolerance accepts its own frozen polynomials": true,
+    "the hash-order tolerance rejects a different polynomial": true,
+    "the random-signing tolerance rejects a failure": true
+   }
+  },
+  "ok": true,
+  "seconds": 0.9
+ }
+}

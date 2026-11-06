@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ODD-LOOP-20261023-001B-P001",
+  "canonical_id": "ODD-LOOP-20261023-001B-P001",
+  "kind": "proof",
+  "ticket": "ODD-LOOP-20261023-001B",
+  "proof": "ODD-LOOP-20261023-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The wall involution and the odd-loop identity",
+  "status": "Proved",
+  "claim": "On every square-lattice torus with periods (Lh, 0) and (s, Lv), for every primitive class c and the two twists q and q' = q + chi_c that are odd on c, an explicit involution maps the orientations whose sector-q strong components wind along c and nothing else onto those with the same property in sector q'. It moves the second twist's seam onto the wall that bounds the lift of the canonical swap-invariant strong component from above in the cover along c, flips the bits of the wall edges whose end off the component is their head, and returns to the standard twist by a gauge transformation; the moved digraph has exactly the same directed cycles. Hence the odd-loop identity P_q(line c) = P_q'(line c) holds exactly for uniform orientations, every statistic of the cyclic structure has the same law on the two events, and odd10 + odd01 - odd11 = 2 times the sum of P(line c) over the classes c = (1, 1) mod 2. The earlier straight-band rule is an involution only on bands avoiding the row above the default seam; a stored 4 x 4 orientation shows that the unrestricted rule fails.",
+  "dependencies": [
+    "TWIST-RELATIONS-20261022-001A",
+    "NAE-INVARIANT-20261022-001A",
+    "SC-TORUS-EXACT-20261022-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "An orientation in a line event whose moved digraph has different arcs on directed cycles.",
+    "An orientation whose image is not in the other sector's line event, or whose image does not map back to it.",
+    "On the 3 x 3 torus, line counts that differ between the two twists odd on a class, or from TWIST-RELATIONS-20261022-001A-P001.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "ODD-LOOP-20261023-001",
+    "epic_path": [
+      "ODD-LOOP-20261023-001"
+    ],
+    "parents": [
+      "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/manifest.json",
+      "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json",
+      "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TWIST-RELATIONS-20261022-001A/TWIST-RELATIONS-20261022-001A-P001_harmonic_structure/manifest.json": "b98f0f5bae07b2489876010fc231bf6854d007396d1b09fbbbe284b3f39cd88c",
+    "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json": "3dc17f4ab6171f5d61989a43816aca233d401ef04fc8746e7f623e67ce47e0bc",
+    "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/manifest.json": "c3df7ce3ee64b5fa68b3d7ab2646f4323b1bd1ef991f820fcc6fce7f139d54b6"
+  },
+  "paths": {
+    "manifest": "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/manifest.json",
+    "identity": "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/identity.json",
+    "directory": "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution",
+    "proof": "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/proof.md",
+    "result": "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/result.json",
+    "check": "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "wall_lemma_proved": true,
+    "odd_line_identity_proved": true,
+    "shear_independence_proved": false,
+    "rectangle_additivity_proved": false
+  },
+  "foundation_claim_scope": "Twist sectors of uniform random orientations of square-lattice tori; an exact identity between the two twists odd on a class, proved by an explicit involution. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py examines every line configuration of the 3 x 3 torus at shears 0 and 1 (8,112 and 4,056 in the twisted sectors) and 10,558 distinct orientations from random walks inside nine line events on tori from 4 x 4 to 9 x 4 and 7 x 7 (shears -3 to 4; classes (1, 0), (0, 1), (1, -1), (1, 1); 8,341 bent walls). Every one passes: the moved digraph has the same arcs on directed cycles, the image lies in the other line event, and the involution returns the orientation. The 3 x 3 line counts equal those of TWIST-RELATIONS-20261022-001A-P001. Three controls rejected: the twist moved without bit flips, the sector changed without a move, and the unrestricted straight-band rule on a stored 4 x 4 orientation. ODD-LOOP-20261023-001A-E001 independently finds the identity exact in all 126 comparisons on 13 tori up to 4 x 4. No human or external review",
+    "level": "V1 prose proof with exhaustive and sampled checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "artifact_id": "CYCLE-UTILITY-20261021-001A-P001",
+  "checks": {
+    "proposition_1": {
+      "almost_affine": true,
+      "code_alone_satisfies_elimination": true,
+      "codewords": 729,
+      "example": [
+        [
+          1,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          7
+        ]
+      ],
+      "failing_system_circuits": [
+        [
+          "c1",
+          "w1"
+        ],
+        [
+          "c2",
+          "w2"
+        ],
+        [
+          "c1",
+          "c2",
+          "c4",
+          "c5"
+        ],
+        [
+          "c1",
+          "c4",
+          "c5",
+          "w2"
+        ],
+        [
+          "c2",
+          "c4",
+          "c5",
+          "w1"
+        ]
+      ],
+      "failing_system_failures": [
+        [
+          [
+            "c1",
+            "w1"
+          ],
+          [
+            "c1",
+            "c4",
+            "c5",
+            "w2"
+          ],
+          "c1"
+        ],
+        [
+          [
+            "c2",
+            "w2"
+          ],
+          [
+            "c2",
+            "c4",
+            "c5",
+            "w1"
+          ],
+          "c2"
+        ]
+      ],
+      "failing_system_tuples": 6561,
+      "image_sets_with_other_freeness": 171,
+      "non_pappus": true,
+      "theta_is_line_congruence": true,
+      "theta_pairs": 27,
+      "unary_are_zero_identity_negation": true,
+      "unary_polymorphisms": 3
+    },
+    "proposition_2": {
+      "hard_law_circuits": {
+        "not_all_equal": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "one_in_three": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "three_colouring": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "hard_laws_fail": {
+        "not_all_equal": true,
+        "one_in_three": true,
+        "three_colouring": true
+      },
+      "maltsev_with_constants": {
+        "GF(4)": true,
+        "Z3": true,
+        "parity": true
+      }
+    },
+    "proposition_3": {
+      "k4_matrix": [
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "k4_one_block_rank_above_one": true,
+      "lift_matrix": [
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "lift_one_block_rank_above_one": true,
+      "z3_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "z3_rank_one": true
+    },
+    "proposition_4": {
+      "k4_with_constant_2": {
+        "circuits": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "failures": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            1
+          ]
+        ],
+        "tuples": [
+          [
+            2,
+            3,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            3,
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            3,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            2,
+            3
+          ]
+        ]
+      },
+      "parity_J_with_constant_3": {
+        "circuits": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "failures": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            0
+          ]
+        ],
+        "tuples": [
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            3
+          ],
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            4,
+            3,
+            3
+          ]
+        ]
+      },
+      "sampled": {
+        "L-{222}": {
+          "failures": 1,
+          "systems": 150
+        },
+        "L-{}": {
+          "failures": 0,
+          "systems": 150
+        },
+        "Z3": {
+          "failures": 0,
+          "systems": 150
+        },
+        "parity": {
+          "failures": 0,
+          "systems": 150
+        },
+        "parity + J": {
+          "failures": 3,
+          "systems": 150
+        }
+      }
+    }
+  },
+  "claim": "(1) Codes. If the law of a relation composes like cycles, every matroid of its systems is a direct sum of rank-one parallel classes and matroids representable over finite fields; with trivial tops, full coordinate ranges and a circuit of three or more variables, the relation is a coset of a module code over a finite field. So the Simonis-Ashikhmin almost affine code over F_3^2, whose matroid is the non-Pappus matroid, generates a law that fails elimination: an equivalence of the alphabet defined by one copy, attached to two coordinates of another, gives a three-copy system with circuits {c1,w1} and {c1,c4,c5,w2} whose union without c1 is free. (2) Complexity. If a single-sorted law with all constants added composes like cycles, its polymorphism algebra is Taylor (no two-element projection algebra lies in HS), so by the CSP dichotomy theorem its constraint problem is in P; with trivial tops a genuine Mal'tsev polymorphism exists. One-in-three, not-all-equal and 3-colouring each fail elimination. (3) Counting. The lifted Z3 law and K4 compose like cycles but are not balanced, so counting their solutions is #P-complete. (4) Constants can destroy composing like cycles: parity beside J and K4 each have a system with one constant that fails elimination, so the hypothesis of (2) is strictly stronger than composing like cycles, and whether every law composing like cycles has a polynomial-time constraint problem is open.",
+  "controls": {
+    "adding_constants_preserves_composing_like_cycles": {
+      "rejected": true
+    },
+    "composing_like_cycles_makes_counting_tractable": {
+      "rejected": true
+    },
+    "every_tractable_law_composes_like_cycles": {
+      "rejected": true,
+      "x_le_y_fails": true
+    },
+    "some_np_hard_law_composes_like_cycles": {
+      "rejected": true
+    },
+    "uniform_fibres_force_composition_like_cycles": {
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "CYCLE-UTILITY-20261021-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "code_linearity_criterion_proved": true,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "constants_can_destroy_composition_proved": true,
+    "constants_preserve_composition_proved": false,
+    "contract_frozen": true,
+    "counting_limit_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "tractability_with_constants_proved": true,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "CYCLE-UTILITY-20261021-001A"
+}

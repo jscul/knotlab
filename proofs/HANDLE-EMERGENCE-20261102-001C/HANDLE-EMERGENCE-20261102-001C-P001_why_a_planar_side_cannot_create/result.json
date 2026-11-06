@@ -1,0 +1,194 @@
+{
+ "artifact_id": "HANDLE-EMERGENCE-20261102-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/result.json": "passed",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the odd-point model: on every census knot space (planar or not) and every removal, choosing each line's odd point is a bijection between the solutions up to complement and the choices of one incidence per line whose number on each cycle of the incidence graph (without the removed line) has the parity of the cycle's signs": {
+   "info": {
+    "removals": 56,
+    "removals where solutions up to complement = incidence choices with the cycle parities": 56
+   },
+   "pass": true
+  },
+  "2 the skip model on 17 plane knot spaces (the planar census spaces, grown spaces of 10 and 12 points, prisms, the truncated octahedron): faces = lines + 2, the signs satisfy the face condition, and at every removal the solutions up to complement are exactly the perfect matchings of the other lines to the faces not touching the removed line (each line to one of its own faces, the face it skips); every failing signing of the planar census spaces satisfies the face condition": {
+   "info": {
+    "census signings": {
+     "failing signings of planar census spaces": 488,
+     "satisfying the face condition": 488
+    },
+    "spaces": {
+     "census 1": {
+      "face condition": true,
+      "faces": 6,
+      "faces = lines + 2": true,
+      "removals": 4,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 4
+     },
+     "census 14": {
+      "face condition": true,
+      "faces": 9,
+      "faces = lines + 2": true,
+      "removals": 7,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 7
+     },
+     "census 38": {
+      "face condition": true,
+      "faces": 10,
+      "faces = lines + 2": true,
+      "removals": 8,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 8
+     },
+     "census 45": {
+      "face condition": true,
+      "faces": 10,
+      "faces = lines + 2": true,
+      "removals": 8,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 8
+     },
+     "census 56": {
+      "face condition": true,
+      "faces": 10,
+      "faces = lines + 2": true,
+      "removals": 8,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 8
+     },
+     "census 6": {
+      "face condition": true,
+      "faces": 8,
+      "faces = lines + 2": true,
+      "removals": 6,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 6
+     },
+     "grown 10 points, seed 0": {
+      "face condition": true,
+      "faces": 12,
+      "faces = lines + 2": true,
+      "removals": 10,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 10
+     },
+     "grown 10 points, seed 0, dual reading": {
+      "face condition": true,
+      "faces": 12,
+      "faces = lines + 2": true,
+      "removals": 10,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 10
+     },
+     "grown 10 points, seed 1": {
+      "face condition": true,
+      "faces": 12,
+      "faces = lines + 2": true,
+      "removals": 10,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 10
+     },
+     "grown 10 points, seed 1, dual reading": {
+      "face condition": true,
+      "faces": 12,
+      "faces = lines + 2": true,
+      "removals": 10,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 10
+     },
+     "grown 12 points, seed 0": {
+      "face condition": true,
+      "faces": 14,
+      "faces = lines + 2": true,
+      "removals": 12,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 12
+     },
+     "grown 12 points, seed 0, dual reading": {
+      "face condition": true,
+      "faces": 14,
+      "faces = lines + 2": true,
+      "removals": 12,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 12
+     },
+     "grown 12 points, seed 2": {
+      "face condition": true,
+      "faces": 14,
+      "faces = lines + 2": true,
+      "removals": 12,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 12
+     },
+     "grown 12 points, seed 2, dual reading": {
+      "face condition": true,
+      "faces": 14,
+      "faces = lines + 2": true,
+      "removals": 12,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 12
+     },
+     "prism over a 10-cycle": {
+      "face condition": true,
+      "faces": 12,
+      "faces = lines + 2": true,
+      "removals": 10,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 10
+     },
+     "prism over a 12-cycle": {
+      "face condition": true,
+      "faces": 14,
+      "faces = lines + 2": true,
+      "removals": 12,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 12
+     },
+     "truncated octahedron": {
+      "face condition": true,
+      "faces": 14,
+      "faces = lines + 2": true,
+      "removals": 12,
+      "solutions up to complement = perfect matchings of the other lines to the faces off the removed line": 12
+     }
+    }
+   },
+   "pass": true
+  },
+  "3 interfaces on the same spaces: after a removal, a line's possible odd points are exactly the incidences opposite its faces matched to it in some perfect matching; a line sharing faces with the removed line loses those faces, and every line meeting the removed line in a point shares a face with it and has at most four port patterns": {
+   "info": {
+    "(line, removed line) pairs": 1494,
+    "interfaces of 2 patterns (0 faces shared with the removed line)": 2,
+    "interfaces of 2 patterns (1 faces shared with the removed line)": 4,
+    "interfaces of 2 patterns (2 faces shared with the removed line)": 2,
+    "interfaces of 4 patterns (0 faces shared with the removed line)": 22,
+    "interfaces of 4 patterns (1 faces shared with the removed line)": 838,
+    "interfaces of 6 patterns (0 faces shared with the removed line)": 626,
+    "odd points = incidences opposite the line's faces matched to it in some perfect matching": 1494,
+    "pairs meeting in a point": 722,
+    "pairs meeting in a point that share a face": 722,
+    "pairs meeting in a point with at most four port patterns": 722
+   },
+   "pass": true
+  },
+  "4 a handle leaves slack: the Fano plane has 16 torus embeddings (rotation systems with 7 faces), all with 7 hexagons, and on each the knot's signs satisfy the face condition; 7 lines meet 7 faces, so counting no longer forces failure; after each removal the 9 skips cover the 7 faces oddly only with one face skipped three times, and of the 14 such assignments just 5 are solutions (twice, for the complement): the two homology parities, absent on a plane space, decide": {
+   "info": {
+    "slack": {
+     "each with one face skipped three times": 7,
+     "every solution among them": 7,
+     "of which solutions": 35,
+     "removals": 7,
+     "skip assignments with every face skipped an odd number of times": 98,
+     "solutions": 70
+    },
+    "tori": {
+     "on which the knot's signs satisfy the face condition": 16,
+     "torus embeddings": 16,
+     "with 7 hexagonal faces": 16
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Why a planar side cannot create, in part. (1) The odd-point model (proved): on a knot space with a line M removed, choosing each line's odd point (the one whose signed value differs from the other two) is a bijection between the solutions up to complement and the choices of one incidence per line whose number on every cycle of the incidence graph without M has the parity of that cycle's signs; checked at all 56 census removals. (2) The skip model (proved): on a plane knot space whose signs satisfy Kasteleyn's face condition (a face of length 2k has k + 1 negative incidences mod 2), call the corner of a line opposite its odd point the corner it skips; the cycle conditions say that every face holds an odd number of skipped corners. Euler's formula gives n + 2 faces for n lines, so the knot fails by counting. After a line M is removed (its three corners count as skipped), every face holds exactly one skipped corner, so the solutions up to complement are exactly the perfect matchings of the other lines to the faces off M, each line to one of its own faces. Checked on 17 plane knot spaces at every removal; every failing signing of the planar census spaces (488) satisfies the face condition. (3) Interfaces (proved): a line's possible odd points are the incidences opposite its faces matched to it in some such matching, so a line meeting M shares a face with M and has at most four port patterns (checked on 1494 pairs). (4) Handles (proved count, computed example): on a surface of genus g there are n + 2 - 2g faces and 2g further cycle parities, so counting no longer forces failure. On the Fano plane's 16 torus embeddings (7 hexagons) the knot's signs satisfy the face condition, and after a removal 14 face-odd skip assignments remain, each with one face skipped three times, of which the two homology parities keep 5. (5) Open: that a planar removed side never creates (ticket A, finite); the skip model reduces it to perfect matchings of lines to faces in which the closing line's matched face carries the interface.",
+ "kind": "proof",
+ "proof": "HANDLE-EMERGENCE-20261102-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HANDLE-EMERGENCE-20261102-001C"
+}

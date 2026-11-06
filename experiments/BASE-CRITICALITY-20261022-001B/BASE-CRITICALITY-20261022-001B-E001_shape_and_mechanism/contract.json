@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BASE-CRITICALITY-20261022-001B-E001",
+  "ticket": "BASE-CRITICALITY-20261022-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "EMERGENCE-BITS-20261021-001C-E001 found size-independent emergence on square tori with odd sides (0.83 bits 1:1, 1.15 bits 1:2). Disposable scoping on 2026-10-22, not evidence: aspect ratios 0.5, 1, 2 and 4 gave 0.10, 0.50, 1.12 and 2.3-2.45 bits, flat in size; rotated squares gave 0.83-0.87 against 0.83-0.86 axis-aligned; up-crossing chances matched percolation; gadgets with traversal probability 1/8 or 27/64 drove emergence to 0, and 3/4, 7/8 or 0.67 drove it past 8 bits; a 3 x 4 x 4 cubic torus held about 10 bits. BASE-CRITICALITY-20261022-001A-P001 proves the reduction to percolation and the regimes except the lower bound at criticality, and the divergence for parallel pairs and cubic tori.",
+  "question": "For not-all-equal relations NAE(h_u, x_e, h_v) on every edge of a torus grid with hidden joints and uniformly random visible spokes, does emergence E = -log2 P(consistent) depend only on the shape of the torus (aspect ratio, rotation, shear) and not on its size, does the chance of no directed up-crossing equal the percolation non-crossing chance, and does the effective percolation parameter of the contacts decide whether emergence vanishes, stays bounded or grows, in two and three dimensions?",
+  "public_inputs": {
+    "F1_shape": "axis-aligned a x b tori with a odd and b even at exact aspect ratios b/a = 2/3, 4/3, 2, 4: (9,6), (15,10), (27,18), (45,30); (9,12), (15,20), (27,36), (45,60); (9,18), (15,30), (27,54), (45,90); (9,36), (15,60), (27,108), (45,180); 6,000 samples each",
+    "F2_rotation": "axis-aligned a x a tori, a in {17, 25, 33, 41}; rotated squares with lattice bases (c,d), (-d,c) for (c,d) in {(12,5), (24,7), (20,13), (35,12), (30,17)}; axis-aligned a x 2a, a in {13, 17, 25}; rotated 1:2 tori with bases (c,d), (-2d,2c) for (c,d) in {(12,5), (20,13), (24,7)}; 6,000 samples each",
+    "F3_shear": "sheared tori with bases (3m, 0), (m, 6m), m in {3, 5, 9, 13}, shape 1/3 + 2i, and the mirror (3m, 0), (-m, 6m) at m = 9; 6,000 samples each",
+    "F4_coupling": "on the F1 tori of ratio 4/3: an independent bond-percolation sampler at 1/2 on the cut cylinder, 6,000 samples each",
+    "F6_gadgets": "a x a tori with a odd, every edge a series of blocks of parallel edges: [1,1,1] (traversal 1/8) and [2,2,2] (27/64) at a in {9, 17, 25, 33}, 6,000 samples; [2] (3/4), [3] (7/8) and [3,3,3] (0.67) at a in {3, 5, 7, 9}, 20,000 samples",
+    "F7_cubic": "cubic a x b x b tori with a odd, b even: (3,2,2), (3,4,4), (3,6,6), (5,2,2), (5,4,4), (5,6,6); 100,000 samples each",
+    "F8_wide": "axis-aligned 9 x b and 15 x b tori at ratios 4, 6, 8 (exploratory slope); 20,000 samples each",
+    "controls": "bipartite 16 x 16 and 32 x 32 tori, 2,000 samples each; parity links on the 3 x 3 and 5 x 5 tori, 500 samples each"
+  },
+  "definitions": "Spokes are independent fair bits. A sample is consistent when the not-all-equal constraints can all be satisfied by some joint assignment; E = -log2 of the consistent fraction, with a delta-method standard error; a family with no consistent sample reports the lower bound E > log2(N). On axis-aligned tori with one odd side the recoloured orientation (tau = h xor ((i+j) mod 2)) defines directed up- and down-crossings of the cylinder cut along the row of wrap-around vertical edges. Two solvers judge each square-torus sample: limited backtracking on the not-all-equal tables, and strongly connected components on the recoloured instance built from the spokes.",
+  "primary_observable": "E per torus with its standard error; per F1 family and for F3, the weighted least-squares slope of E against log2 of the size",
+  "predictions": {
+    "H_shape": "each F1 family has |slope| <= 0.05 bits per doubling, and the family means increase strictly with the aspect ratio",
+    "H_rotation": "the mean E of rotated squares is within 0.06 bits and three combined standard errors of the mean E of axis-aligned squares, and likewise for 1:2 tori",
+    "H_shear": "the sheared family has |slope| <= 0.05 bits per doubling and its mirror is within three standard errors of the m = 9 value",
+    "H_coupling": "on every ratio-4/3 torus the chance of no directed up-crossing is within four combined standard errors of the percolation non-crossing chance",
+    "H_mechanism": "[1,1,1] and [2,2,2] have E <= 0.02 at a = 33 and E(33) <= E(9); [2], [3] and [3,3,3] have E strictly increasing with a (a family with no consistent sample counts as above every finite value)",
+    "H_cubic": "E increases strictly from (3,2,2) to (3,4,4) to (3,6,6), and from (5,2,2) to (5,4,4) to (5,6,6), with the same lower-bound rule",
+    "secondary": "consistency given two-way crossings has |slope| <= 0.05 per doubling in each F1 family; the F8 slope of E against the ratio is reported",
+    "controls": "bipartite tori are consistent in every sample; the two solvers agree on every square-torus sample; parity links agree with the cycle-sum criterion"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Otherwise the ticket is supported when every primary hypothesis holds; refuted when H_shape or H_rotation fails with the slope or the difference exceeding its threshold by more than three standard errors; closed null otherwise. Secondary results do not change the verdict.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 2048,
+    "max_vertices": 8100
+  },
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster.",
+  "seeds": "random.Random(f'{family}-{label}') per torus",
+  "red_team_r0": [
+    "Identifiability: E is a property of the declared torus and the uniform spoke measure; sampling error is reported per torus.",
+    "Leakage: no expected value enters the producer; hypotheses are evaluated only from recorded counts.",
+    "Solver error: two independently written solvers on two independently built instances judge every square-torus sample.",
+    "Shape drift: exact aspect ratios are used so that size and shape are not confounded; rotated tori have exact shapes.",
+    "Finite size: sides range over a factor of 5; slow drifts below 0.05 bits per doubling pass, so no infinite-size claim is made.",
+    "Multiplicity: six primary hypotheses with fixed thresholds; secondary results do not change the verdict."
+  ],
+  "nonclaims": [
+    "Monte Carlo estimates on finite tori; no proof of size independence, rotation invariance or of the regimes not proved in A.",
+    "The lattices and their decorations are declared by the experimenter; nothing is said about space.",
+    "Agreement with conformal invariance is a consistency check, not a derivation."
+  ],
+  "forbidden_inputs": [
+    "the scoping values or expected verdicts as producer inputs"
+  ]
+}

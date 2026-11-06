@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLASS4-PAIRS-20261028-001A-P001",
+  "canonical_id": "CLASS4-PAIRS-20261028-001A-P001",
+  "kind": "proof",
+  "ticket": "CLASS4-PAIRS-20261028-001A",
+  "proof": "CLASS4-PAIRS-20261028-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Linear flows: class-3 vertex-root pair failures are #P-hard when the dual slot has no layer-1 data",
+  "status": "Proved",
+  "claim": "p >= 5, r | p - 1, n graded with a grading-preserving C_r action, d | r, m = m_d (ideal of nonzero characters) of class at most 3. A linear-flow edge is a hard pair (alpha, beta) of m with slot types alpha, beta, gamma = alpha + beta such that m has no degree-1 component at a character of R(gamma) (LF) and vertex-private brackets vanish modulo gamma_3 outside R(gamma) and character 0 (B2'); the vertex-root condition (V3) may fail. If a linear-flow edge exists, counting |Hom(pi_1 S^3_(d/p)(K), G)| is #P-hard. Proof: on the layer-2 variety the vertex equations are a conserved flow (COPRIME-PAIRS-20261027-001F); the flow and the dual slot's constraints are linear in the dual slot's data, so each Fourier-dual edge weight is a non-negative count; the Brunnian rank witness and subdivision give EVAL(M) for a non-negative M of rank at least two. Together with Theorem 6 this decides all 16 census algebras whose only failing clean-edge condition is (V3); 8 are new, leaving 105 of 850 open.",
+  "dependencies": [
+    "COPRIME-PAIRS-20261027-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A census count other than 16 vertex-root algebras, 12 with linear-flow edges, and exactly the 8 listed new ones.",
+    "For free class 3 on (1, 1, 4) at d = 5, p = 11, slots (1, 1, 2): a solution where the endpoint flows are not exact negatives, a slot-1 configuration whose slot-2 solutions are not a linear subspace, a flow that is not additive in slot-2 data or nonzero at slot-2 data 0, a negative or non-real Fourier value, or off-diagonal flows vanishing on every sampled solution.",
+    "The control (free class 3 on (1, 2, 3), slots (1, 1, 2)) showing homogeneous-affine dependence on slot-2 data at every sampled point."
+  ],
+  "lineage": {
+    "home_scope": "CLASS4-PAIRS-20261028-001",
+    "epic_path": [
+      "CLASS4-PAIRS-20261028-001"
+    ],
+    "parents": [
+      "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json",
+      "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/result.json",
+      "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/manifest.json",
+      "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/result.json",
+      "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json": "9c3f7e976d8dfd0613bb68ac21293f1a34edb8efee2d5c2fd021c137888c5cf1",
+    "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/result.json": "bfa556e265b89cde5dcd605fd0ad0ff0c5d39b8e543f5b2fc24642e8301181bd",
+    "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/manifest.json": "20591071003683610882cd50a560eea57f0ece64dbee9c497718b552217dd99a",
+    "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/result.json": "623b32db20053949896fae626b96eb4b2ff20ec3715e628ef5b0e576aef47269",
+    "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/result.json": "54b14a855eaa165a54e790aef5a6bd91073e8eef7677209f203fd6e59d806c2f"
+  },
+  "paths": {
+    "manifest": "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/manifest.json",
+    "identity": "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/identity.json",
+    "directory": "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard",
+    "proof": "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/proof.md",
+    "result": "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/result.json",
+    "check": "proofs/CLASS4-PAIRS-20261028-001A/CLASS4-PAIRS-20261028-001A-P001_linear_flows_make_class_3_vertex_root_failures_sharp_p_hard/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "class3_linear_flow_hardness_shown": false
+  },
+  "foundation_claim_scope": "p >= 5, r | p - 1, graded nilpotent Lie algebras whose ideal m_d has class at most 3, grading-preserving C_r action; manifolds S^3_(d/p)(K). Cited: Theorems 4-6 and lemmas of COPRIME-PAIRS-20261027-001E and F, Lemma I, Bulatov-Grohe via Cai-Chen-Lu. Not covered: class 4, the 26 class-3 census algebras failing (B0) with (V3) or (B2') at a nonzero character. r counts the characters of the action, not Boolean variables. No P versus NP claim.",
+  "validation": {
+    "status": "checked: 16 open interacting census algebras fail only (V3); 12 have a linear-flow edge (no layer-1 data in the dual slot) and 8 of these are not decided by Theorem 6, listed; on free class 3 on (1,1,4) at d = 5, p = 11, exhaustively over the 11^4 private configurations at four vertex pairs: endpoint flows exact negatives, slot-2 solutions linear subspaces, flows additive in slot-2 data, Fourier values real and non-negative, off-diagonal flows nonzero; control (free class 3 on (1,2,3)) not homogeneous-affine in slot-2 data; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-28."
+  }
+}

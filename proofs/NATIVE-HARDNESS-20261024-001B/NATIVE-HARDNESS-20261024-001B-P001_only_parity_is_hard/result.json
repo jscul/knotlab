@@ -1,0 +1,141 @@
+{
+  "artifact_id": "NATIVE-HARDNESS-20261024-001B-P001",
+  "checks": {
+    "counting": {
+      "co-independent three-place relations": 35,
+      "fewest tuples allowed by a non-parity knot": 5,
+      "fewest tuples allowed by one of them": 4,
+      "those allowing exactly four are the two parity relations": true
+    },
+    "cut-edge parity networks": {
+      "Petersen graph, even knots: unsatisfiable with unequal pins, satisfiable with equal": true,
+      "Petersen graph, odd knots: unsatisfiable with unequal pins, satisfiable with equal": true,
+      "cube graph, even knots: unsatisfiable with unequal pins, satisfiable with equal": true,
+      "cube graph, odd knots: unsatisfiable with unequal pins, satisfiable with equal": true
+    },
+    "minimal unsatisfiability at the knot level": {
+      "minimal at the knot level": 236,
+      "unsatisfiable networks": 236
+    },
+    "necklaces of odd rings": {
+      "1 ring(s)": {
+        "cactus": true,
+        "cycles": 1,
+        "every cycle an odd wire cycle": true,
+        "knots": 3,
+        "minimal at the knot level": true,
+        "refuted with derived clauses of at most two literals": true,
+        "unsatisfiable": true
+      },
+      "2 ring(s)": {
+        "cactus": true,
+        "cycles": 2,
+        "every cycle an odd wire cycle": true,
+        "knots": 7,
+        "minimal at the knot level": true,
+        "refuted with derived clauses of at most two literals": true,
+        "unsatisfiable": true
+      },
+      "3 ring(s)": {
+        "cactus": true,
+        "cycles": 3,
+        "every cycle an odd wire cycle": true,
+        "knots": 11,
+        "minimal at the knot level": true,
+        "refuted with derived clauses of at most two literals": true,
+        "unsatisfiable": true
+      }
+    },
+    "parity networks on cubic graphs": {
+      "Petersen graph": {
+        "balanced edge boundary": 5,
+        "minimal at the knot level": true,
+        "refuted with derived clauses of at most two literals": false,
+        "refuted with derived clauses of fewer literals than the boundary": false,
+        "unsatisfiable": true
+      },
+      "complete bipartite graph on three and three": {
+        "balanced edge boundary": 4,
+        "minimal at the knot level": true,
+        "refuted with derived clauses of at most two literals": false,
+        "refuted with derived clauses of fewer literals than the boundary": false,
+        "unsatisfiable": true
+      },
+      "cube graph": {
+        "balanced edge boundary": 4,
+        "minimal at the knot level": true,
+        "refuted with derived clauses of at most two literals": false,
+        "refuted with derived clauses of fewer literals than the boundary": false,
+        "unsatisfiable": true
+      }
+    },
+    "random networks without parity knots": {
+      "cacti": 452,
+      "every cycle an odd wire cycle": 452,
+      "largest number of cycles": 2,
+      "minimal at the knot level": 452,
+      "networks": 100000,
+      "refuted with derived clauses of at most two literals": 452,
+      "unsatisfiable": 452
+    },
+    "surrounded knots": {
+      "networks": 20000,
+      "of which non-parity": 0,
+      "of which parity with the complementary class as the rest": 1590,
+      "rest relations co-independent": true,
+      "surrounded knots in unsatisfiable networks": 1590,
+      "unsatisfiable": 1157
+    }
+  },
+  "claim": "In an unsatisfiable connected closed hub-free network of three-place knots with pins, every surrounded knot (three distinct internal edges, none a bridge) is a parity knot and the rest allows exactly the complementary parity class on its edges: the rest allows at least four of the eight states and a non-parity knot at least five. Hence without parity knots every unsatisfiable native network is a cactus of odd wire cycles and has a resolution refutation whose derived clauses have at most two literals, of linear size, so such laws are decided by resolution at three literals; every unsatisfiable native network needs width at least the balanced edge boundary of its graph (flip repair, which is K2, plus hub-freeness). A parity knot is unsatisfiable on every connected cubic graph with one edge cut into two legs pinned to different values, so native contradictions are hard for resolution exactly when the law contains a parity knot (size bound conditional on Ben-Sasson and Wigderson).",
+  "controls": {
+    "a non-parity knot whose edges are bridges can be unsatisfiable (connectivity is needed)": true,
+    "parity networks are not refuted with derived clauses of at most two literals": true,
+    "with hubs a surrounded non-parity knot can be unsatisfiable (rest allows only 000 and 111)": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NATIVE-HARDNESS-20261024-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_hardness_needs_parity_shown": true,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NATIVE-HARDNESS-20261024-001B"
+}

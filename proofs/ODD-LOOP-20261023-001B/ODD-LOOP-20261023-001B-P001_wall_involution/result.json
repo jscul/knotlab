@@ -1,0 +1,187 @@
+{
+  "artifact_id": "ODD-LOOP-20261023-001B-P001",
+  "checks": {
+    "3x3 s=0 exhaustive": {
+      "examined": 8112,
+      "identity": true,
+      "image in the other line event": 8112,
+      "involution returns": 8112,
+      "lemma holds": 8112,
+      "line counts": {
+        "01": {
+          "0,1": 2028
+        },
+        "10": {
+          "1,0": 2028
+        },
+        "11": {
+          "0,1": 2028,
+          "1,0": 2028
+        }
+      },
+      "walls with both edge directions": 0,
+      "walls with flipped bits": 4056,
+      "walls with twist-only edges": 4056
+    },
+    "3x3 s=1 exhaustive": {
+      "examined": 4056,
+      "identity": true,
+      "image in the other line event": 4056,
+      "involution returns": 4056,
+      "lemma holds": 4056,
+      "line counts": {
+        "01": {},
+        "10": {
+          "1,0": 2028
+        },
+        "11": {
+          "1,0": 2028
+        }
+      },
+      "walls with both edge directions": 0,
+      "walls with flipped bits": 4056,
+      "walls with twist-only edges": 0
+    },
+    "4x4 s=1 sector 10 class 1,0: walk of 2500 steps": {
+      "examined": 1070,
+      "image in the other line event": 1070,
+      "involution returns": 1070,
+      "lemma holds": 1070,
+      "walls with both edge directions": 192,
+      "walls with flipped bits": 1070,
+      "walls with twist-only edges": 192
+    },
+    "5x4 s=2 sector 01 class 0,1: walk of 2500 steps": {
+      "examined": 1150,
+      "image in the other line event": 1150,
+      "involution returns": 1150,
+      "lemma holds": 1150,
+      "walls with both edge directions": 1150,
+      "walls with flipped bits": 1150,
+      "walls with twist-only edges": 1150
+    },
+    "5x7 s=2 sector 01 class 1,-1: walk of 2000 steps": {
+      "examined": 976,
+      "image in the other line event": 976,
+      "involution returns": 976,
+      "lemma holds": 976,
+      "walls with both edge directions": 976,
+      "walls with flipped bits": 976,
+      "walls with twist-only edges": 32
+    },
+    "6x5 s=-3 sector 10 class 1,1: walk of 2000 steps": {
+      "examined": 1111,
+      "image in the other line event": 1111,
+      "involution returns": 1111,
+      "lemma holds": 1111,
+      "walls with both edge directions": 1111,
+      "walls with flipped bits": 1111,
+      "walls with twist-only edges": 1111
+    },
+    "6x5 s=0 sector 10 class 1,0: walk of 2500 steps": {
+      "examined": 1438,
+      "image in the other line event": 1438,
+      "involution returns": 1438,
+      "lemma holds": 1438,
+      "walls with both edge directions": 909,
+      "walls with flipped bits": 1438,
+      "walls with twist-only edges": 909
+    },
+    "6x5 s=2 sector 11 class 1,0: walk of 2500 steps": {
+      "examined": 1435,
+      "image in the other line event": 1435,
+      "involution returns": 1435,
+      "lemma holds": 1435,
+      "walls with both edge directions": 898,
+      "walls with flipped bits": 1435,
+      "walls with twist-only edges": 898
+    },
+    "7x7 s=3 sector 01 class 0,1: walk of 2000 steps": {
+      "examined": 1377,
+      "image in the other line event": 1377,
+      "involution returns": 1377,
+      "lemma holds": 1377,
+      "walls with both edge directions": 1377,
+      "walls with flipped bits": 1377,
+      "walls with twist-only edges": 1377
+    },
+    "8x6 s=1 sector 10 class 1,-1: walk of 2000 steps": {
+      "examined": 1133,
+      "image in the other line event": 1133,
+      "involution returns": 1133,
+      "lemma holds": 1133,
+      "walls with both edge directions": 1133,
+      "walls with flipped bits": 1133,
+      "walls with twist-only edges": 66
+    },
+    "9x4 s=4 sector 10 class 1,0: walk of 2000 steps": {
+      "examined": 868,
+      "image in the other line event": 868,
+      "involution returns": 868,
+      "lemma holds": 868,
+      "walls with both edge directions": 595,
+      "walls with flipped bits": 868,
+      "walls with twist-only edges": 595
+    },
+    "stored 4x4 orientation": {
+      "straight-band top": 4,
+      "top after the straight-band move": 1,
+      "wall involution works": true
+    }
+  },
+  "claim": "On every square-lattice torus with periods (Lh, 0) and (s, Lv), for every primitive class c and the two twists q and q' = q + chi_c that are odd on c, an explicit involution maps the orientations whose sector-q strong components wind along c and nothing else onto those with the same property in sector q'. It moves the second twist's seam onto the wall that bounds the lift of the canonical swap-invariant strong component from above in the cover along c, flips the bits of the wall edges whose end off the component is their head, and returns to the standard twist by a gauge transformation; the moved digraph has exactly the same directed cycles. Hence the odd-loop identity P_q(line c) = P_q'(line c) holds exactly for uniform orientations, every statistic of the cyclic structure has the same law on the two events, and odd10 + odd01 - odd11 = 2 times the sum of P(line c) over the classes c = (1, 1) mod 2. The earlier straight-band rule is an involution only on bands avoiding the row above the default seam; a stored 4 x 4 orientation shows that the unrestricted rule fails.",
+  "controls": {
+    "sector changed without a move leaves the line event": 17254,
+    "straight-band rule not an involution on the stored 4 x 4 orientation": 1,
+    "twist moved without bit flips changes the cyclic arcs": 18668
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "ODD-LOOP-20261023-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "odd_line_identity_proved": true,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "rectangle_additivity_proved": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "shear_independence_proved": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "wall_lemma_proved": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "ODD-LOOP-20261023-001B"
+}

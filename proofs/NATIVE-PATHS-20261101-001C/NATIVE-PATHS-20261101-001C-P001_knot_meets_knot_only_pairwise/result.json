@@ -1,0 +1,164 @@
+{
+ "artifact_id": "NATIVE-PATHS-20261101-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "passed",
+     "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/manifest.json": "Proved",
+     "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/result.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 the twist criterion on every twist pattern of every nontrivial 2- and 3-edge cut of the ten knot's spaces: the space stays non-colourable exactly when the twisted set is a cocycle": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "cocycle": 32,
+     "not a cocycle": 84
+    },
+    "Fano": {},
+    "chain of 2": {
+     "cocycle": 2,
+     "not a cocycle": 6
+    },
+    "chain of 3": {
+     "cocycle": 4,
+     "not a cocycle": 12
+    },
+    "chain of 4": {
+     "cocycle": 6,
+     "not a cocycle": 18
+    },
+    "cycle of 3 blocks": {
+     "cocycle": 30,
+     "not a cocycle": 78
+    },
+    "cycle of 5 blocks": {
+     "cocycle": 100,
+     "not a cocycle": 260
+    },
+    "cycle of 7 blocks": {
+     "cocycle": 210,
+     "not a cocycle": 546
+    },
+    "star of 4": {
+     "cocycle": 6,
+     "not a cocycle": 18
+    },
+    "twisted cube": {
+     "cocycle": 42,
+     "not a cocycle": 114
+    }
+   },
+   "pass": true
+  },
+  "2 the twist criterion on random incidence sets (60 per space) and random cocycles d(S) (60 per space): a random set keeps the space non-colourable exactly when it is a cocycle, and every d(S) does": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "Fano": {
+     "random d(S): non-colourable": 60,
+     "random set: cocycle": 1,
+     "random set: not a cocycle": 59
+    },
+    "chain of 2": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "chain of 3": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "chain of 4": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "cycle of 3 blocks": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "cycle of 5 blocks": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "cycle of 7 blocks": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "star of 4": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    },
+    "twisted cube": {
+     "random d(S): non-colourable": 60,
+     "random set: not a cocycle": 60
+    }
+   },
+   "pass": true
+  },
+  "3 knot meets knot only pairwise: across every nontrivial 2-edge cut both sides accept knots (two-place parity), and across every nontrivial 3-edge cut of the ten spaces and 4-edge cut of Fano, the chains of 2 and 3 and the 3-cycle they never both do": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "2-edge: both sides knots": 3,
+     "3-edge: sides 2/6": 13
+    },
+    "Fano": {
+     "4-edge: sides 6/10": 21
+    },
+    "chain of 2": {
+     "3-edge: sides 2/6": 1,
+     "4-edge: sides 6/10": 45
+    },
+    "chain of 3": {
+     "3-edge: sides 2/6": 2,
+     "4-edge: sides 6/10": 69
+    },
+    "chain of 4": {
+     "3-edge: sides 2/6": 3
+    },
+    "cycle of 3 blocks": {
+     "2-edge: both sides knots": 3,
+     "3-edge: sides 2/6": 12,
+     "4-edge: sides 6/10": 87,
+     "4-edge: sides 6/6": 12
+    },
+    "cycle of 5 blocks": {
+     "2-edge: both sides knots": 10,
+     "3-edge: sides 2/6": 40
+    },
+    "cycle of 7 blocks": {
+     "2-edge: both sides knots": 21,
+     "3-edge: sides 2/6": 84
+    },
+    "star of 4": {
+     "3-edge: sides 2/6": 3
+    },
+    "twisted cube": {
+     "2-edge: both sides knots": 3,
+     "3-edge: sides 2/6": 18
+    }
+   },
+   "pass": true
+  },
+  "4 controls: off the knot's spaces the criterion fails both ways (a colourable system stays colourable under a cocycle twist, and the colourable even cycle of Fano blocks becomes non-colourable under a non-cocycle twist)": {
+   "info": {
+    "colourable K4^(3) pair: the empty twist (a cocycle) leaves it colourable": true,
+    "even cycle of 4 Fano blocks: colourable untwisted": true,
+    "even cycle of 4 Fano blocks: one twisted junction (not a cocycle) makes it non-colourable": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Knot meets knot only pairwise in the knot's spaces. Let H be a knot's space (a connected cubic system on which not-all-equal fails) with incidence graph B(H). (1) The twist criterion: for a set t of incidences, the signed system H^t (each incidence in t reads its point's colour exchanged) is non-colourable iff t is a cocycle of B(H), an edge set of the form d(S). Switching at S gives one direction. For the other: a connected cubic signed system is non-colourable iff its signed incidence matrix is sign-nonsingular (Seymour's argument with signs), so the plain signing and (-1)^t are both Pfaffian, and the Pfaffian signings of a matching covered bipartite graph form one switching class (THREEFOLD-AMPLITUDE A, Lemma 1). (2) If both sides of a nontrivial k-edge cut accept knots (relations passing K1-K3 on the k channels), then k = 2. Such sides are complementary parity cosets (complementarity), so twisting any two cut edges keeps H non-colourable; by (1) every pair of cut edges is a cocycle, so the cut edges lie in series around a cycle of k blobs, and both shores, each holding alternate blobs, are connected only when k = 2. So in the knot's spaces knot meets knot only pairwise (the two-place parity of 2-edge cuts); across three or more channels the parts meet otherwise, a knot against a hub at 3-edge cuts. Checked: the criterion on every twist of every nontrivial 2- and 3-edge cut of ten knot's spaces and on random and random-cocycle incidence sets; the side relations of every nontrivial 2-, 3- and 4-edge cut (4-edge cuts on four small spaces), where both sides accept knots only at 2-edge cuts; controls off the knot's spaces.",
+ "kind": "proof",
+ "proof": "NATIVE-PATHS-20261101-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "NATIVE-PATHS-20261101-001C"
+}

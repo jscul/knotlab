@@ -1,0 +1,78 @@
+{
+ "artifact_id": "SPLICE-TREE-20261102-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json": "Proved",
+     "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json": "passed",
+     "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/manifest.json": "Proved",
+     "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/result.json": "passed",
+     "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/manifest.json": "Proved",
+     "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 six assemblies of three and four pieces (chains in both orientations, a chain of four, a star; K4^(3) and Fano pieces, 10 to 16 points) are knot spaces failing globally, and every one of their cuts is a simple 3-edge cut of the whole space": {
+   "info": {
+    "Fano > K4 > Fano": {
+     "cuts simple (3 edges, 3 ports, 3 slots, one more point than lines)": true,
+     "fails globally": true,
+     "points": 16
+    },
+    "K4 > Fano > K4": {
+     "cuts simple (3 edges, 3 ports, 3 slots, one more point than lines)": true,
+     "fails globally": true,
+     "points": 13
+    },
+    "K4 > K4 < K4": {
+     "cuts simple (3 edges, 3 ports, 3 slots, one more point than lines)": true,
+     "fails globally": true,
+     "points": 10
+    },
+    "K4 > K4 > K4": {
+     "cuts simple (3 edges, 3 ports, 3 slots, one more point than lines)": true,
+     "fails globally": true,
+     "points": 10
+    },
+    "K4 > K4 > K4 > K4": {
+     "cuts simple (3 edges, 3 ports, 3 slots, one more point than lines)": true,
+     "fails globally": true,
+     "points": 13
+    },
+    "K4 star (three leaves into a K4 centre)": {
+     "cuts simple (3 edges, 3 ports, 3 slots, one more point than lines)": true,
+     "fails globally": true,
+     "points": 13
+    }
+   },
+   "pass": true
+  },
+  "2 at every removal and every cut: a cut whose point side does not contain the removed line is held (its ports tied), and a cut whose point side contains it is opened, with port patterns exactly those the near contraction allows on its closing line without the removed line": {
+   "info": {
+    "held": 107,
+    "held cuts with tied ports": 107,
+    "opened": 69,
+    "opened cuts matching the interface formula": 69,
+    "opened interface of 4 patterns": 36,
+    "opened interface of 6 patterns": 33
+   },
+   "pass": true
+  },
+  "3 beyond every held cut nothing depends on the removed line: the circuits of the solutions inside the far point side are exactly the circuits of that side's own system (its contraction without the closing line), for every removal off it": {
+   "info": {
+    "far side keeps exactly its own system's circuits": 107,
+    "held (cut, removal) pairs": 107
+   },
+   "pass": true
+  }
+ },
+ "claim": "A removal opens exactly the cuts that point away from it. Assemble a knot space from pieces along a tree of splices, and orient every cut from its point side to its line side; every cut stays a simple 3-edge cut of the whole space. (1) Removing a line M holds every cut whose point side does not contain M (the cut points toward M) and opens every cut whose point side contains M (the cut points away from M). (2) At a held cut the three ports are tied, and the far point side keeps exactly the circuits of its own system: the knots of its contraction without its closing line, whatever M is. (3) At an opened cut the port patterns are exactly those the near contraction (which contains M) allows on the closing line once M is gone, so M reaches the far line side only through that interface. These follow from HUB-GLUE A-C applied to each cut. Checked on chains and trees of three and four pieces (K4^(3) and Fano pieces, 10 to 16 points): every removal, every cut.",
+ "kind": "proof",
+ "proof": "SPLICE-TREE-20261102-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SPLICE-TREE-20261102-001A"
+}

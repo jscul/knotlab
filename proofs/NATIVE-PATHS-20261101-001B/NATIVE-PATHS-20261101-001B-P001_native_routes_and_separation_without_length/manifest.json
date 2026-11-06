@@ -1,0 +1,109 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-PATHS-20261101-001B-P001",
+  "canonical_id": "NATIVE-PATHS-20261101-001B-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-PATHS-20261101-001B",
+  "proof": "NATIVE-PATHS-20261101-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Routes fixed by the space, carrying one bit at most",
+  "status": "Proved",
+  "claim": "Routes in the knot's spaces are fixed by the space and carry at most one bit. Let H be a knot's space. (1) Kinds of 3-edge cut: a nontrivial 3-edge cut is either a shift of a nontrivial 2-edge cut (one vertex carries two of its edges; removing that vertex from its shore leaves the 2-edge cut) or a proper splice cut (three distinct ports and three distinct slots); a shift is twisted iff the shore that absorbed the moved vertex accepts disequality across the 2-edge cut. (2) Fixed by the space: in ten knot's spaces the proper splice cuts are pairwise non-crossing and cross no 2-edge cut, and every crossing pair of nontrivial cuts involves a shift or two 2-edge cuts of one cycle of units; so the parts and the cuts between them form one decomposition determined by the incidence graph (unchanged under relabelling), and a route between two parts, through hubs or through 2-edge cuts, is fixed by the space, not chosen by an observer. (3) What routes carry: in a cycle of k Fano blocks (k = 3, 5, 7) an arc of m units accepts exactly x + y = m (mod 2) on its port colour and slot value; between two units there are exactly two routes, which carry opposite parities because k is odd, and the space fails because they disagree (the even cycle of 4 blocks, a control, is colourable and its routes agree). Across a proper splice cut each side acts as one point or one line whatever it contains (A), so a route through a hub carries nothing about what lies beyond it. (4) Separation: for every pair of units and every non-empty set J of junctions of the cycles of 3, 5 and 7 blocks, H with J's incidences cut is colourable, and the joint relation of the two units' port colours is a product exactly when J meets both routes; otherwise it is the parity of the route J leaves intact. (5) Counting the witnesses that relations quantify away, every Fano unit has 5 colourings for each accepted pair and an arc of m units 5^m (m <= 3 by enumeration), so a counted length exists, as a count of hidden witnesses rather than a relation. (6) Reading: every route between parts is a two-place parity (it identifies its two channels up to sign) or passes a hub (equality on three channels); neither is a complete contact, so under the program's definitions these are routes of a declared substrate, separable by cutting them, not native paths composed of complete contacts, and no relation along them gives an extended distance.",
+  "dependencies": [
+    "NATIVE-PATHS-20261101-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A nontrivial 3-edge cut with a vertex carrying two of its edges that is not a shift of a nontrivial 2-edge cut.",
+    "A shift whose twist disagrees with the parity accepted by the shore that absorbed the moved vertex.",
+    "Two crossing proper splice cuts, or a proper splice cut crossing a 2-edge cut, in one of the ten spaces.",
+    "An arc of m units whose accepted relation is not x + y = m (mod 2).",
+    "A non-empty junction set whose cut leaves two units unrelated while it misses a route, or related while it meets both.",
+    "A Fano unit with other than 5 colourings for an accepted pair."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-PATHS-20261101-001",
+    "epic_path": [
+      "NATIVE-PATHS-20261101-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/paths_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/cycles_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "10cb4f0382fc24672706a5fa64b4964581f782bf4fee1a5187d4ebfb79051826",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "68da26a9c5d6ec418874f008036494e7f66433b4de796c4d67fec6c8a86bc59f",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/paths_lib.py": "e09572a5568d261137b944dd9cfc93b87ef0e4ca102016730af50c80eb3136f7",
+    "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/cycles_lib.py": "9e91329642a51e6e434a1a6f846cd9aa41b68547be1c832b8b56ebbd1b46e785",
+    "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json": "07f5a91dd9bbcd4256ff0839442ee84ddc92ef9c7e5fe6683f57dfbf9b1306f2"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/manifest.json",
+    "identity": "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/identity.json",
+    "directory": "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length",
+    "proof": "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/proof.md",
+    "result": "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/result.json",
+    "check": "proofs/NATIVE-PATHS-20261101-001B/NATIVE-PATHS-20261101-001B-P001_native_routes_and_separation_without_length/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "routes_fixed_by_space": true
+  },
+  "foundation_claim_scope": "Routes, separation and counts in declared finite systems; no extended distance is constructed.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: classification of every nontrivial 3-edge cut of ten knot's spaces, the twist rule, crossings, relabelling invariance, arc relations on cycles of 3, 5, 7 blocks, separation for every pair of units and every non-empty junction set, unit and arc counts, an even-cycle control; no human or external review",
+    "novelty": "The cactus of 2-edge cuts, laminar tight cuts and frustrated cycles are classical graph and matching theory; the knot's-space instances and the reading against the program's definitions are new here."
+  }
+}

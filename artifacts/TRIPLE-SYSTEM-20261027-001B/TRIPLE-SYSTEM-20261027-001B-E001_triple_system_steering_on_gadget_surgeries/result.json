@@ -1,0 +1,40 @@
+{
+ "experiment_id": "TRIPLE-SYSTEM-20261027-001B-E001",
+ "verdict": "supported",
+ "machinery_failures": [],
+ "failures": [],
+ "controls": [
+  {
+   "control": "X1 kappa = 1",
+   "fixture": "4_1x4 + P4 (0,0)",
+   "algebra": "free3 (y1-, y2-)",
+   "matched": false
+  },
+  {
+   "control": "X2 P4B tensor for a P4 insertion",
+   "fixture": "4_1x4 + P4 (0,0)",
+   "algebra": "free3 (y1-, y2-)",
+   "matched": false
+  },
+  {
+   "control": "X3 one edge dropped",
+   "fixture": "gadget K3",
+   "algebra": "free3 (x+, y1-, y2-)",
+   "matched": false
+  },
+  {
+   "control": "X4 leaves 0 and 2 swapped",
+   "fixture": "gadget K3",
+   "algebra": "cross4 (x+, y-)",
+   "matched": false
+  },
+  {
+   "control": "X5 layer-1 data only",
+   "fixture": "gadget K3",
+   "algebra": "cross4 (x+, y-)",
+   "matched": false
+  }
+ ],
+ "rows": 84,
+ "seconds": 57.7
+}

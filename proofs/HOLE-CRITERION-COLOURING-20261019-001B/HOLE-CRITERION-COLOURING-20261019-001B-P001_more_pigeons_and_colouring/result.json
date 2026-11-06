@@ -1,0 +1,113 @@
+{
+  "artifact_id": "HOLE-CRITERION-COLOURING-20261019-001B-P001",
+  "checks": {
+    "checkout_has_no_tracked_changes": true,
+    "checkout_is_pinned_commit": true,
+    "kernel_compiles": true,
+    "kernel_free_of_escapes": true,
+    "larger_exponent_calibration_line": 131,
+    "larger_exponent_first_error_line": 131,
+    "relied_on_files_match_digests": true,
+    "theorem_axioms": {
+      "MorePigeonsColouring.bitColouring_more_pigeons": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.bitColouring_sat": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.bitColouring_unsat": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.bitPHP_more_pigeons": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.colouring_refutation_transfer": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.complete_graph_is_bitPHP": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.range_nonempty": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "MorePigeonsColouring.usualBitPHP_unsat_more": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "theorem_axioms_standard": true
+  },
+  "claim": "Against Braun's formal development at commit 8904bf09 of https://github.com/kbr-/math-research (replayed in BPHP-RES-PARITY-AUDIT-20261019-001A, definitions audited in -001B): (1) for every l >= 32 and every m with 2^l+1 <= m and 8192 m l^2 (2l+5) <= 4^l, every refutation of the usual bit pigeonhole clause set with m pigeons and 2^l holes, in the audited proof system, has more than exp(4^l/(8192 m l^2)) lines; (2) for every graph G on v vertices and every map f from its vertices to m classes that gives adjacent vertices different classes, every refutation of the bit encoding of 2^l-colouring G maps line by line to a refutation of the bit pigeonhole clause set with m pigeons, so the bound of (1) holds for G whenever m is in that range; (3) witnesses against vacuity: the range of m is nonempty at l = 32, the clause sets are unsatisfiable when m > 2^l or G has no 2^l-colouring, and the bit-colouring clause set of the complete graph on m vertices is the bit pigeonhole clause set with m pigeons.",
+  "controls": {
+    "colouring_unsat_without_conflict_rejected": true,
+    "larger_exponent_rejected_at_calibration": true,
+    "transfer_without_properness_rejected": true,
+    "unsat_with_as_many_pigeons_as_labels_rejected": true
+  },
+  "evidence_modes": [
+    "external-presentation",
+    "obstruction"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "HOLE-CRITERION-COLOURING-20261019-001B-P001",
+  "safe_conclusions": {
+    "ac0_2_frege_lower_bound": false,
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "bit_colouring_lower_bound_kernel_checked": true,
+    "bit_colouring_transfer_kernel_checked": true,
+    "braun_theorem_admitted_locally": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "non_vacuity_witnesses_kernel_checked": true,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "unary_colouring_or_pc_degree_claim": false,
+    "weak_bit_php_lower_bound_kernel_checked": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "resolution-over-parities",
+    "graph-colouring-proof-complexity"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "HOLE-CRITERION-COLOURING-20261019-001B"
+}

@@ -1,0 +1,288 @@
+{
+ "artifact_id": "RIGID-SELECTION-20261101-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 signed Z4 at four places fails globally on a 6-point 4-regular substrate, and removing any of its 6 lines leaves 8 solutions, a non-cyclic group, and a knot of three variables (brute force over Z4^6)": {
+   "info": {
+    "coefficients are signs (+1 or -1 on incidences, 0 elsewhere)": true,
+    "fails (brute force)": true,
+    "global": true,
+    "lines whose removal keeps a knot": 6,
+    "removals": [
+     {
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 0,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 1,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 2,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 3,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 4,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 5,
+      "solution group cyclic": false,
+      "solutions": 8
+     }
+    ],
+    "substrate: connected, 4-regular, 4-uniform, simple": true
+   },
+   "pass": true
+  },
+  "2 signed Z4 at three places fails globally on a 9-point cubic substrate, and removing a line leaves 8 solutions with a knot (brute force over Z4^9)": {
+   "info": {
+    "coefficients are signs (+1 or -1 on incidences, 0 elsewhere)": true,
+    "fails (brute force)": true,
+    "global": true,
+    "lines whose removal keeps a knot": 1,
+    "removals": [
+     {
+      "knots": [
+       [
+        0,
+        3,
+        4
+       ],
+       [
+        0,
+        4,
+        5
+       ],
+       [
+        1,
+        3,
+        4
+       ]
+      ],
+      "line": 0,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [],
+      "line": 1,
+      "solution group cyclic": true,
+      "solutions": 4
+     },
+     {
+      "knots": [],
+      "line": 2,
+      "solution group cyclic": true,
+      "solutions": 4
+     },
+     {
+      "knots": [],
+      "line": 3,
+      "solution group cyclic": true,
+      "solutions": 4
+     },
+     {
+      "knots": [],
+      "line": 4,
+      "solution group cyclic": true,
+      "solutions": 4
+     },
+     {
+      "knots": [],
+      "line": 5,
+      "solution group cyclic": true,
+      "solutions": 4
+     },
+     {
+      "knots": [],
+      "line": 6,
+      "solution group cyclic": false,
+      "solutions": 8
+     },
+     {
+      "knots": [],
+      "line": 7,
+      "solution group cyclic": true,
+      "solutions": 4
+     },
+     {
+      "knots": [],
+      "line": 8,
+      "solution group cyclic": false,
+      "solutions": 8
+     }
+    ],
+    "substrate: connected, 3-regular, 3-uniform, simple": true
+   },
+   "pass": true
+  },
+  "3 signed Z4 at three places on all 73 connected cubic substrates with at most 8 points, every signing class: its global failures are all rigid, so a cubic signed Z4 space that keeps a knot needs at least 9 points (check 2 has 9)": {
+   "info": {
+    "signing classes failing globally": 16,
+    "signing classes failing globally and keeping a knot": 0,
+    "substrates": 73,
+    "substrates where signed Z4 fails globally": 1
+   },
+   "pass": true
+  },
+  "3a the census read both ways: 60 incidence graphs give 73 connected cubic substrates with at most 8 points up to isomorphism": {
+   "info": {
+    "graphs": 60,
+    "substrates": 73
+   },
+   "pass": true
+  },
+  "4 unit-weighted Z8, Z9, Z25 and Z27 laws (30 random weightings on each of the 72 simple substrates of check 3a): global failures that keep a knot occur on many substrates, and every removal that keeps a knot leaves a non-cyclic solution group": {
+   "info": {
+    "Z_25": {
+     "keeping a knot": 9,
+     "simple substrates hosting one (of 72)": 8,
+     "unit-weighted global failures sampled": 81
+    },
+    "Z_27": {
+     "keeping a knot": 21,
+     "simple substrates hosting one (of 72)": 17,
+     "unit-weighted global failures sampled": 109
+    },
+    "Z_8": {
+     "keeping a knot": 47,
+     "simple substrates hosting one (of 72)": 18,
+     "unit-weighted global failures sampled": 68
+    },
+    "Z_9": {
+     "keeping a knot": 41,
+     "simple substrates hosting one (of 72)": 27,
+     "unit-weighted global failures sampled": 91
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Global failures that keep a knot. (1) Signed Z4 at four places (x +- y +- z +- w = c mod 4) fails globally on the 6-point 4-regular substrate whose lines are the complements of the edges of a hexagon, and removing any one of its 6 lines leaves 8 solutions with knots of three variables. (2) Signed Z4 at three places fails globally on a 9-point cubic substrate, and removing one of its lines leaves 8 solutions with knots; on all 73 connected cubic substrates with at most 8 points (the 60 census incidence graphs read both ways), under every signing class, its global failures are rigid, so 9 points is the minimum for a cubic signed Z4 space that keeps a knot. (3) Unit-weighted Z8, Z9, Z25 and Z27 laws fail globally and keep a knot on many census substrates. (4) Every removal found that keeps a knot has a non-cyclic solution group, as ticket A requires. So composing like cycles does not force rigid selection: the coset laws of Z_(p^k), k >= 2, which compose like cycles (KNOT-CIRCUITS Theorem 1), have globally failing spaces that keep emergence inside. Checked by brute force over Z4^6 and Z4^9 for the two signed examples, exhaustively over signing classes on the census, and by sampling for the unit-weighted laws.",
+ "kind": "proof",
+ "proof": "RIGID-SELECTION-20261101-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "RIGID-SELECTION-20261101-001B"
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-COUNTING-20261024-001A-P001",
+  "canonical_id": "NATIVE-COUNTING-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-COUNTING-20261024-001A",
+  "proof": "NATIVE-COUNTING-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Emergence is countable exactly when it is topological",
+  "status": "Proved",
+  "claim": "A symmetric three-place signature glues topologically with counts exactly when f0 f2 + f1 f3 = f1^2 + f2^2, that is when it is a generalized Fibonacci gate or of the form [a, 0, 0, b]; among the 34 knots exactly the four topological knots qualify. Each is a sum of two cubes of orthonormal vectors, so every native network with pins and unpinned legs counts by the closed formula sum_j lambda_j^n prod_legs u_j (2^g for parity, Verlinde dimensions for the Fibonacci knot) in polynomial time. The other 30 knots lie in none of the tractable families of Backens's Holant dichotomy with pins, so counting their native networks is #P-hard given that cited theorem: emergence is countable exactly when it is topological.",
+  "dependencies": [
+    "SURFACE-GLUING-20261024-001Z",
+    "NATIVE-HARDNESS-20261024-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A symmetric signature on the tested grid for which four-leg symmetry of two glued copies and the stated equation disagree.",
+    "A native network of a topological knot whose count differs from the closed formula.",
+    "A knot outside the four topological knots found in a tractable family, or a topological knot found in none.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-COUNTING-20261024-001",
+    "epic_path": [
+      "NATIVE-COUNTING-20261024-001"
+    ],
+    "parents": [
+      "proofs/SURFACE-GLUING-20261024-001Z/SURFACE-GLUING-20261024-001Z-P001_epic_closure/manifest.json",
+      "proofs/NATIVE-HARDNESS-20261024-001Z/NATIVE-HARDNESS-20261024-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SURFACE-GLUING-20261024-001Z/SURFACE-GLUING-20261024-001Z-P001_epic_closure/manifest.json": "c1a47c6571296cf5c17a3a95ef04d3bc15d78333f71c56c947b3769817fed2f0",
+    "proofs/NATIVE-HARDNESS-20261024-001Z/NATIVE-HARDNESS-20261024-001Z-P001_epic_closure/manifest.json": "b37c2c53b6c87162cb06ecabe2161071884b44b61a8e1560ffb7e19e17dc43ed"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/manifest.json",
+    "identity": "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/identity.json",
+    "directory": "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological",
+    "proof": "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/proof.md",
+    "result": "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/result.json",
+    "check": "proofs/NATIVE-COUNTING-20261024-001A/NATIVE-COUNTING-20261024-001A-P001_countable_exactly_when_topological/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "countable_exactly_when_topological_shown": true
+  },
+  "foundation_claim_scope": "Counting solutions of finite native networks with pins; hardness is conditional on a cited external dichotomy theorem. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) confirms the gluing criterion on 625 symmetric signatures, the count formula on 366 random native networks with exact closed forms, and the family classification of all 34 knots; eight controls including a positive member for each family. Hardness is conditional on a cited external dichotomy. No human or external review",
+    "level": "V1 prose proof with finite checks; conditional hardness corollary",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

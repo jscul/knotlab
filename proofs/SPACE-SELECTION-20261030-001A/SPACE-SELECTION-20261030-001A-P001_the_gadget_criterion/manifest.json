@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPACE-SELECTION-20261030-001A-P001",
+  "canonical_id": "SPACE-SELECTION-20261030-001A-P001",
+  "kind": "proof",
+  "ticket": "SPACE-SELECTION-20261030-001A",
+  "proof": "SPACE-SELECTION-20261030-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The gadget criterion: when the wave reproduces itself on a gluing",
+  "status": "Proved",
+  "claim": "Gadgets: n triangles (roles a, b, c) glued at vertices, corners A, B, C each in one triangle in roles a, b, c, inner vertices in at least two triangles, connected; the standing wave is the pencil w_q = K + q M (q = sin 3t/sin t = 1 + 2 cos 2t), K signed not-all-equal (q = 0), M the all-equal indicator. (1) Base incidences of inner vertices sum to n - 1, so the sector-flip parity is odd for every gadget and never obstructs the standing wave; the cosine wave is exact only when n is odd. (2) For zeta^4 != 1 the wave is exact iff the six mixed corner sector sums vanish; the remaining sum has leading term zeta^(3n-3); a gadget is either exact for every q outside the roots of a monic lambda(q) of degree n - 1, or exact for at most n values of q. (3) Phase locking (every mixed sector assignment meets a vertex of odd base count and sector sum 0; at angle pi/k sums divisible by k, or k/2 mod k at even base count) and balanced cancellation (survivors cancel within classes of equal vertex factors) each imply exactness; neither is necessary: the Sierpinski gadget is locked, a four-triangle twin gadget cancels only in balance, and gadgets with six and seven triangles cancel only algebraically; the conjectured criterion 'sector locking plus odd flip parity' is refuted. (4) Exact gadgets compose under substitution, lambda multiplying, so each builds an exact tower. (5) No nonnegative law with support not-all-equal is exact on a gadget with fewer than 7 triangles (Seymour 1974 and the Fano plane), while signed not-all-equal is exact on the 3-triangle Sierpinski gadget. (6) Pasch tadpoles multiply the relation by (q-1)(q+1)(q^2+3) and keep the corner chains, so exact linear gadgets have unbounded growth exponents log n / log rho. (7) At the knot angle a vertex of three triangles with odd base count acts on their sectors as the not-all-equal knot up to a sign gauge.",
+  "dependencies": [
+    "SIMPLEX-GASKETS-20261029-001A",
+    "WAVE-UNIQUENESS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A gadget exact for generic angle whose mixed sector sums do not vanish, or the converse.",
+    "A locked or balanced gadget that is not exact.",
+    "A gadget with fewer than 7 triangles on which a nonnegative not-all-equal law is exact.",
+    "A tadpole attachment that changes exactness or corner growth.",
+    "A symbolic identity, enumeration or exact contraction that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "SPACE-SELECTION-20261030-001",
+    "epic_path": [
+      "SPACE-SELECTION-20261030-001"
+    ],
+    "parents": [
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json",
+      "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json",
+      "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/manifest.json",
+      "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/manifest.json": "2947fa1cc430a1f97695fbc0cbf17415e4a7d668c4af8e26166894673356aea4",
+    "proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/result.json": "4fb653729f829c3732e8b2a52f71602448ffd64e7ea46494caddd27dc4149a08",
+    "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/manifest.json": "4170b68a75621ab9d8a908bcd241e5198fc30c75a54bc71c2fca287cdae7d53c",
+    "proofs/WAVE-UNIQUENESS-20261029-001A/WAVE-UNIQUENESS-20261029-001A-P001_symmetric_laws_four_levels_force_the_wave/result.json": "eb0d00491a5dcfec5b10515bf0ca4c09bdb088c586de99ff61f675d1962619fc"
+  },
+  "paths": {
+    "manifest": "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/manifest.json",
+    "identity": "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/identity.json",
+    "directory": "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion",
+    "proof": "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/proof.md",
+    "result": "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/result.json",
+    "check": "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gadget_criterion_shown": true
+  },
+  "foundation_claim_scope": "Three-bit laws on finite gadgets of triangles glued at vertices (corner relations by summation over inner vertices); the pencils of the standing wave, the cosine wave and plain not-all-equal; growth of corner chains in the substitution towers (a combinatorial count of triangles, not a metric).",
+  "validation": {
+    "status": "checked: pencil and sector identities symbolic; flip parity on every gadget with n <= 5; criterion, leading term, monic lambda and mechanisms on every gadget with n <= 4; algebraic examples at n = 6, 7 exactly; substitutions and the level-2 gasket exactly; property B lemmas and the Fano enumeration exhaustively; Pasch tadpoles exactly; knot on sectors symbolic; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta) for the gadget criterion, the mechanism hierarchy and the interference bound; classical inputs: Seymour 1974 (minimal non-2-colourable hypergraphs have at least as many edges as vertices), the Fano plane as the smallest 3-graph without property B, sector (Fourier) expansions of transfer laws, decimation on finitely ramified fractals",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

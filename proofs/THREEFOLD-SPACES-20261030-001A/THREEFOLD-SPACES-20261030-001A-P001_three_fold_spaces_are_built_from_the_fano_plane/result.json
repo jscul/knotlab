@@ -1,0 +1,230 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SPACES-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 5,
+    "mismatched": {}
+   }
+  },
+  "1 the dictionary: not 2-colourable = minimal = sign-nonsingular = no even dicycle": {
+   "ok": true,
+   "detail": {
+    "Fano": {
+     "points": 7,
+     "cubic": true,
+     "connected": true,
+     "2-colourable": false,
+     "minimal": true,
+     "det": -24,
+     "per": 24,
+     "even dicycle": false
+    },
+    "point splice 13": {
+     "points": 13,
+     "cubic": true,
+     "connected": true,
+     "2-colourable": false,
+     "minimal": true,
+     "det": 192,
+     "per": 192,
+     "even dicycle": false
+    },
+    "line splice 13": {
+     "points": 13,
+     "cubic": true,
+     "connected": true,
+     "2-colourable": false,
+     "minimal": true,
+     "det": 192,
+     "per": 192,
+     "even dicycle": false
+    },
+    "point splice 19": {
+     "points": 19,
+     "cubic": true,
+     "connected": true,
+     "2-colourable": false,
+     "minimal": true,
+     "det": -1536,
+     "per": 1536
+    },
+    "line splice 19": {
+     "points": 19,
+     "cubic": true,
+     "connected": true,
+     "2-colourable": false,
+     "minimal": true,
+     "det": -1536,
+     "per": 1536
+    },
+    "random cubic systems: colourable <=> not SNS": [
+     300,
+     300
+    ],
+    "random cubic systems n <= 9: colourable <=> even dicycle (three matchings each)": [
+     180,
+     180
+    ]
+   }
+  },
+  "2 the splice calculus: signs factorize across tight cuts; Fano pieces act as points and lines": {
+   "ok": true,
+   "detail": {
+    "sign factorization, Fano o Fano: holds, matchings, (piece signs) per cut edge": [
+     true,
+     192,
+     {
+      "0": [
+       [
+        1,
+        1
+       ]
+      ],
+      "1": [
+       [
+        1,
+        1
+       ]
+      ],
+      "2": [
+       [
+        1,
+        1
+       ]
+      ]
+     }
+    ],
+    "sign factorization, K4^(3) o Fano and Fano o K4^(3) (2-colourable, mixed signs): holds": [
+     true,
+     72,
+     true,
+     72
+    ],
+    "tight cuts of the 13-point splice (point-type shores)": [
+     [
+      6,
+      7
+     ]
+    ],
+    "Fano minus a line: proper colourings, all make the line monochromatic": [
+     10,
+     true
+    ],
+    "Fano minus a point acts as a line on its three completions": true
+   }
+  },
+  "3 Fano compositions give knot spaces with 7 + 6k triangles": {
+   "ok": true,
+   "detail": {
+    "point counts": {
+     "P25": 25,
+     "seven-fold": 49
+    },
+    "not 2-colourable (SAT): 25-point, 49-point": [
+     true,
+     true
+    ],
+    "cubic and connected: 25-point, 49-point": [
+     true,
+     true
+    ],
+    "dual gadgets: triangles, (knot exact, lambda(0))": {
+     "Fano": [
+      7,
+      [
+       true,
+       5
+      ]
+     ],
+     "point splice 13": [
+      13,
+      [
+       true,
+       25
+      ]
+     ],
+     "line splice 13": [
+      13,
+      [
+       true,
+       25
+      ]
+     ],
+     "point splice 19": [
+      19,
+      [
+       true,
+       125
+      ]
+     ]
+    }
+   }
+  },
+  "4 one negative edge never makes the Heawood graph or planar examples sign-nonsingular": {
+   "ok": true,
+   "detail": {
+    "Fano with one negated incidence: SNS cases, colourable cases (of 21)": [
+     0,
+     21
+    ],
+    "planar cubic bipartite examples: (cubic, SNS signings with <= 2 negative edges)": {
+     "cube": [
+      true,
+      0
+     ],
+     "hexagonal prism": [
+      true,
+      0
+     ]
+    }
+   }
+  },
+  "5 the uniqueness premise is false at 13 points": {
+   "ok": true,
+   "detail": {
+    "13-point splice: linear, cubic, connected, not 2-colourable": [
+     true,
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  "6 a gluing of phase locks and phase knots has no locks": {
+   "ok": true,
+   "detail": {
+    "n=1: gadgets with only locks and odd three-fold contacts, of which with a lock": [
+     1,
+     0
+    ],
+    "n=3: gadgets with only locks and odd three-fold contacts, of which with a lock": [
+     2,
+     0
+    ],
+    "n=4: gadgets with only locks and odd three-fold contacts, of which with a lock": [
+     24,
+     0
+    ],
+    "n=5: gadgets with only locks and odd three-fold contacts, of which with a lock": [
+     256,
+     0
+    ]
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "K4^(3) is 2-colourable and not SNS": true,
+    "removing a line from the 13-point splice makes it 2-colourable": true,
+    "the gadget dual to a 2-colourable cubic system (K4^(3), 4 triangles) is not exact at the knot": true,
+    "a 2-colourable random cubic system on 13 points is not SNS": true
+   }
+  },
+  "ok": true,
+  "seconds": 16.9
+ }
+}

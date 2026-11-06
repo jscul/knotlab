@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "artifact_id": "DEEP-HOLES-20261020-001B-P001",
+  "canonical_id": "DEEP-HOLES-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "DEEP-HOLES-20261020-001B",
+  "proof": "DEEP-HOLES-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The depth of a charge hole",
+  "status": "Proved",
+  "claim": "For a Z_p charge network on a connected graph (knots at the vertices asking out-flow minus in-flow to equal the charge; distinctions on the edges) with nonzero total charge: (1) a knot on three Boolean distinctions is a hole at its own scope in the complex of partial solutions with rank |E| - 1, so every non-atom knot is one and the plain hole criterion certifies only level 2 on parity, sum-mod-3 and not-all-equal networks; (2) over a ring of characteristic p, and over Z, the affine relaxation refutes the network at the size of a star (3 on cubic graphs); (3) over any field in which p is invertible, the least refuting level is the toggle width tgw(G), whatever the charges: a sweep certificate with integer coefficients refutes at tgw(G) over every ring, and a closed-form Fourier solution exists one level below; (4) on connected cubic graphs with at least 4 vertices the monotone toggle width equals cutwidth + 1. Observed on all 27 connected cubic graphs with 4 to 10 vertices: the toggle width equals the monotone one, so the depth is cutwidth + 1 there.",
+  "dependencies": [
+    "HOLES-COHOMOLOGY-20261019-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A constructed certificate fails substitution: a refutation leaves a variable or a zero constant, a sweep uses a bag larger than the toggle width, or the Fourier solution violates an equation.",
+    "A broken certificate (a sweep step removed, the charge sum over the wrong characteristic, the Fourier construction at the toggle width) is accepted.",
+    "Disagreement with the exact census DEEP-HOLES-20261020-001A-E001 on its cases."
+  ],
+  "lineage": {
+    "home_scope": "DEEP-HOLES-20261020-001",
+    "epic_path": [
+      "DEEP-HOLES-20261020-001"
+    ],
+    "parents": [
+      "proofs/HOLES-COHOMOLOGY-20261019-001Z/HOLES-COHOMOLOGY-20261019-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HOLES-COHOMOLOGY-20261019-001Z/HOLES-COHOMOLOGY-20261019-001Z-P001_epic_closure/manifest.json": "dfcdbaf9ee6ba81911a880f20b930b0414d2b161c8a86e1fc2687cecf6ff3d1a",
+    "experiments/DEEP-HOLES-20261020-001A/DEEP-HOLES-20261020-001A-E001_charge_census/contract.json": "b06e4dc3e35998240c20974f2ce4686bfc4809a6714e6b67348cf7c5b6f3666d",
+    "artifacts/DEEP-HOLES-20261020-001A/DEEP-HOLES-20261020-001A-E001_charge_census/result.json": "08427b5eed9d77e10ac90008651d972e8acdf8907439bf30ec63d5b256e2a74a"
+  },
+  "paths": {
+    "manifest": "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/manifest.json",
+    "identity": "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/identity.json",
+    "directory": "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth",
+    "proof": "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/proof.md",
+    "result": "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/result.json",
+    "check": "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "competition_reading_defined": false,
+    "three_variable_least_set_knots_are_not_all_equal": false,
+    "no_least_set_knot_on_four_or_more_variables": false,
+    "every_three_variable_relation_by_gadgets_with_hidden_variables": false,
+    "readings_agree_when_satisfiable": false,
+    "strict_pairwise_rules_never_allow_a_knot": false,
+    "competition_needs_equal_weights_for_the_triangle_knot": false,
+    "question_10_decided": false,
+    "ring_exclusion_kernel_checked": false,
+    "ring_knot_or_free_kernel_checked": false,
+    "permutations_iff_parity_kernel_checked": false,
+    "memory_lengths_kernel_checked": false,
+    "loop_rule_kernel_checked": false,
+    "shape_is_nerve_kernel_checked": false,
+    "knots_among_loops_are_atoms_kernel_checked": false,
+    "free_contact_binds_nothing_kernel_checked": false,
+    "knot_among_k_loops_needs_k_plus_one_values_kernel_checked": false,
+    "every_complex_is_a_nerve_kernel_checked": false,
+    "basic_relaxation_orbit_ideal_criterion_proved": false,
+    "pinned_basic_relaxation_decides_proved": false,
+    "three_witness_relaxation_refutes_over_every_ring_proved": false,
+    "arc_consistency_and_basic_lp_accept_every_network_proved": false,
+    "plain_hole_bound_stuck_at_two_proved": true,
+    "matched_rings_refute_at_star_size_proved": true,
+    "unmatched_field_depth_is_toggle_width_proved": true,
+    "monotone_toggle_width_is_cutwidth_plus_one_on_cubic_graphs_proved": true
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "How many distinctions linear local reasoning must hold at once to see that a charge network is impossible, over which rings. No claim about Sherali-Adams with nonnegativity, Nullstellensatz degree, native structure or physics.",
+  "validation": {
+    "status": "checked: prose proofs; check.py builds and verifies by substitution the hole ranks, the charge-sum refutation, the sweep refutation at the toggle width and the Fourier solution one level below on the 30 census networks, verifies sweep refutations and spot-checks Fourier solutions on all 19 connected cubic graphs with 10 vertices (in full on the one whose line graph's treewidth + 1 is below the toggle width), rejects three broken certificates, and agrees with the census; no human or external review",
+    "level": "V1 prose proof with mechanized certificate checks on declared instances; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "known-overlap-likely for the method (averaging over cycle-space symmetries and characters, as in Grigoriev 2001 and Buss, Grigoriev, Impagliazzo and Pitassi 2001) and for statements 1-2; not found stated: the exact level of the affine relaxation for charge networks over a field of the other characteristic as the toggle width, the monotone toggle width as cutwidth + 1 on cubic graphs, and a small cubic graph where signed reasoning needs one level more than the variable graph's treewidth + 1.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIGNED-GASKETS-20261029-001A-P001",
+  "canonical_id": "SIGNED-GASKETS-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "SIGNED-GASKETS-20261029-001A",
+  "proof": "SIGNED-GASKETS-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Signed not-all-equal reproduces itself on every level-k Sierpinski gasket",
+  "status": "Proved",
+  "claim": "On the level-k Sierpinski gasket SG_k (copies of a three-bit law on the k(k+1)/2 up triangles of a k-subdivided triangle, corners a = (i, j), b = (i+1, j), c = (i, j+1), every vertex but the three corners summed), signed not-all-equal w = (-1)^((a xor b)(a xor c)) - [a = b = c] = (-1)^a ((a+b+c)|3) = (-1)^a sin(pi E/3)/sin(pi/3) (E the sum of (-1)^x over the tuple; the product of the Eisenstein field in the basis of primitive sixth roots, a as output) has corner relation lambda_k w for every k >= 1, with lambda_k an integer congruent to (-1)^floor(k/2) modulo 3, hence nonzero. Proof: each copy splits into two phase sectors; the gasket's bottom row and left side lock the sectors of the three corner triangles, and flipping every sector is odd; modulo 3 the corner relation is (-1)^N w because the only even edge sets of the reduced expansion are the empty set, the bottom row and the left side. The same identity holds for every w_theta = (-1)^a sin(theta E)/sin(theta) with sin(theta) nonzero, lambda_k(theta) a Laurent polynomial in e^(i theta) with finitely many zeros; signed not-all-equal is the only member whose support is a knot (knotlab: K1-K3). Hence signed not-all-equal builds an exact tower of every level k, of similarity dimension log(k(k+1)/2)/log k.",
+  "dependencies": [
+    "INTERFERENCE-20261029-001B",
+    "SIGNED-SUBDIVISION-20261029-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A level k whose corner relation is not proportional to w, or whose factor is zero or not congruent to (-1)^floor(k/2) modulo 3.",
+    "A tuple on which the closed forms of w disagree.",
+    "A value of theta with sin(theta) nonzero and a level k at which the corner relation of w_theta is not proportional to w_theta.",
+    "An edge set of the kind used modulo 3, with even degree at every vertex but the corners, other than the empty set, the bottom row and the left column."
+  ],
+  "lineage": {
+    "home_scope": "SIGNED-GASKETS-20261029-001",
+    "epic_path": [
+      "SIGNED-GASKETS-20261029-001"
+    ],
+    "parents": [
+      "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json",
+      "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json",
+      "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/manifest.json",
+      "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json": "5b58aed5c2c3f929d3a29c38347ca89efd958a3817bed8fd57fc3ed6498678e3",
+    "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json": "cb16c95e8c0376e399151cd65d751e2fe2aebf101c8034426ae02e6c84b78e1e",
+    "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/manifest.json": "5a69e2cea531173a29af68eb46c735e360d85d982e2c118e5b59697c76283efe",
+    "proofs/SIGNED-SUBDIVISION-20261029-001B/SIGNED-SUBDIVISION-20261029-001B-P001_real_weights_under_shared_subdivision/result.json": "697024cfb5535a69e072f08594156a3a0b7b16303d06d2c95030e353c43dacde"
+  },
+  "paths": {
+    "manifest": "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/manifest.json",
+    "identity": "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/identity.json",
+    "directory": "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket",
+    "proof": "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/proof.md",
+    "result": "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/result.json",
+    "check": "proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gasket_exactness_shown": true
+  },
+  "foundation_claim_scope": "Signed three-bit laws on the level-k Sierpinski gaskets (finite gadgets for every k, and the towers they generate level by level); exactness of the corner relation; the knot status of its support under K1-K3.",
+  "validation": {
+    "status": "checked: closed forms on all tuples (Legendre symbol, sine, Eisenstein phases and product, row matrices); exactness by exact integers for k = 1 to 14; the sector formula for k <= 7; the family w_theta at six angles for k <= 7 and symbolically for k = 2, 3; the mod-3 relation for k <= 21; the edge-set lemma for k <= 4; knotlab K1-K3 on the support; controls fire; the proof for every k is in proof.md; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found in a bounded search (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

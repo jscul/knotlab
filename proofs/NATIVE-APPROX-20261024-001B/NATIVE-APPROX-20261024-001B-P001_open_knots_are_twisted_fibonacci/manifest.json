@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-APPROX-20261024-001B-P001",
+  "canonical_id": "NATIVE-APPROX-20261024-001B-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-APPROX-20261024-001B",
+  "proof": "NATIVE-APPROX-20261024-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The open knots are twisted Fibonacci knots",
+  "status": "Proved",
+  "claim": "The six non-symmetric knots excluding three tuples form one orbit under place permutations and complement, and each is the Fibonacci knot with one or two negated places (S(x, y, z) = Fib(x, y, not z)); so native networks of such a knot with pins are Fibonacci networks with twisted (disequality) edges and complemented pins. In the Fibonacci eigenbasis a twist is the reflection [[2 phi, phi], [phi, -2 phi]]/D^2 with one negative entry, so the count is a signed two-spin sum. McQuillan's winding fails because the knot is not windable, the Fibonacci holographic algorithm fails because a twist is not diagonal, and weighted Fibonacci gates admit edge activities but not twists.",
+  "dependencies": [
+    "NATIVE-APPROX-20261024-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The six knots do not form one orbit, or one of them is not a Fibonacci knot with negated legs.",
+    "A random network whose count differs from that of its twisted Fibonacci network or from the signed two-spin sum.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-APPROX-20261024-001",
+    "epic_path": [
+      "NATIVE-APPROX-20261024-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-APPROX-20261024-001A/NATIVE-APPROX-20261024-001A-P001_windable_knots_count_approximately/manifest.json": "b39f8a0b7156d39ccd35a0710c45d2ef7e5e106e313dbc8b980222c687c6f99b"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/manifest.json",
+    "identity": "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/identity.json",
+    "directory": "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci",
+    "proof": "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/proof.md",
+    "result": "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/result.json",
+    "check": "proofs/NATIVE-APPROX-20261024-001B/NATIVE-APPROX-20261024-001B-P001_open_knots_are_twisted_fibonacci/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "open_knots_twisted_fibonacci_shown": true
+  },
+  "foundation_claim_scope": "Finite relations and random finite networks; known algorithms cited as background. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) confirms the orbit and the twists by enumeration, and the agreement of direct counts, twisted Fibonacci counts and the signed two-spin sum on 1,000 random networks; three controls. Cited algorithms are background. No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

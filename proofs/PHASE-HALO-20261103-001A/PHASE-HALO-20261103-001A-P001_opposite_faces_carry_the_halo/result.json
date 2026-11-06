@@ -1,0 +1,95 @@
+{
+ "artifact_id": "PHASE-HALO-20261103-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/result.json": "passed",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json": "passed",
+     "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the claiming lemma: on every point split of the planar census and two 10-point grown spaces, in every solution, a port is the odd point of its line exactly when no other line of the face opposite the port (across its line) skips into that face, and otherwise exactly one other line does": {
+   "info": {
+    "(split, port line, solution) triples": 5544,
+    "triples obeying the claim (odd port: no other line skips into the opposite face; else exactly one)": 5544
+   },
+   "pass": true
+  },
+  "2 the opposite-face law (Fano plane as handle): on ladders, thick tubes, a grid, random grown spaces and a ladder arm spliced onto a grid, at every attachment point tested, every halo line beyond distance 3 lies on a face opposite the attachment point (a face holding a corner of a line through the point but not the point itself)": {
+   "info": {
+    "a ladder arm spliced onto a grid: attachment points": 32,
+    "a ladder arm spliced onto a grid: attachment points with a far halo": 12,
+    "a ladder arm spliced onto a grid: far halo equal to the opposite faces' far lines": 30,
+    "a ladder arm spliced onto a grid: far halo inside the lines of the point's own and opposite faces": 32,
+    "a ladder arm spliced onto a grid: far halo inside the opposite faces' lines": 32,
+    "a ladder arm spliced onto a grid: largest opposite face <= 3 corners": 19,
+    "a ladder arm spliced onto a grid: largest opposite face >= 4 corners": 13,
+    "grids: attachment points": 4,
+    "grids: far halo equal to the opposite faces' far lines": 4,
+    "grids: far halo inside the lines of the point's own and opposite faces": 4,
+    "grids: far halo inside the opposite faces' lines": 4,
+    "grids: largest opposite face <= 3 corners": 4,
+    "ladders: attachment points": 6,
+    "ladders: attachment points with a far halo": 6,
+    "ladders: far halo equal to the opposite faces' far lines": 6,
+    "ladders: far halo inside the lines of the point's own and opposite faces": 6,
+    "ladders: far halo inside the opposite faces' lines": 6,
+    "ladders: largest opposite face >= 4 corners": 6,
+    "random grown spaces: attachment points": 50,
+    "random grown spaces: attachment points with a far halo": 36,
+    "random grown spaces: far halo equal to the opposite faces' far lines": 50,
+    "random grown spaces: far halo inside the lines of the point's own and opposite faces": 50,
+    "random grown spaces: far halo inside the opposite faces' lines": 50,
+    "random grown spaces: largest opposite face <= 3 corners": 14,
+    "random grown spaces: largest opposite face >= 4 corners": 36,
+    "thick tubes: attachment points": 34,
+    "thick tubes: attachment points with a far halo": 10,
+    "thick tubes: far halo equal to the opposite faces' far lines": 34,
+    "thick tubes: far halo inside the lines of the point's own and opposite faces": 34,
+    "thick tubes: far halo inside the opposite faces' lines": 34,
+    "thick tubes: largest opposite face <= 3 corners": 24,
+    "thick tubes: largest opposite face >= 4 corners": 10
+   },
+   "pass": true
+  },
+  "3 census 58 as handle: the pipeline equals exact creation in every case on two 10-point grown spaces at two attachment points each; on ladders, the grid and the mixed space, the halo beyond distance 3 lies on the faces around the attachment point (its own three faces and the three opposite it); on the ladder arm of the mixed space it uses the point's own big face as well as the opposite one": {
+   "info": {
+    "census 58 handle, a ladder arm spliced onto a grid: attachment points": 16,
+    "census 58 handle, a ladder arm spliced onto a grid: attachment points with a far halo": 5,
+    "census 58 handle, a ladder arm spliced onto a grid: far halo equal to the opposite faces' far lines": 11,
+    "census 58 handle, a ladder arm spliced onto a grid: far halo inside the lines of the point's own and opposite faces": 16,
+    "census 58 handle, a ladder arm spliced onto a grid: far halo inside the opposite faces' lines": 11,
+    "census 58 handle, a ladder arm spliced onto a grid: largest opposite face <= 3 corners": 11,
+    "census 58 handle, a ladder arm spliced onto a grid: largest opposite face >= 4 corners": 5,
+    "census 58 handle, grids: attachment points": 2,
+    "census 58 handle, grids: far halo equal to the opposite faces' far lines": 2,
+    "census 58 handle, grids: far halo inside the lines of the point's own and opposite faces": 2,
+    "census 58 handle, grids: far halo inside the opposite faces' lines": 2,
+    "census 58 handle, grids: largest opposite face <= 3 corners": 2,
+    "census 58 handle, ladders: attachment points": 6,
+    "census 58 handle, ladders: attachment points with a far halo": 6,
+    "census 58 handle, ladders: far halo equal to the opposite faces' far lines": 6,
+    "census 58 handle, ladders: far halo inside the lines of the point's own and opposite faces": 6,
+    "census 58 handle, ladders: far halo inside the opposite faces' lines": 6,
+    "census 58 handle, ladders: largest opposite face >= 4 corners": 6,
+    "census 58 handle: cases": 976,
+    "census 58 handle: pipeline cases equal to exact creation (creates)": 156,
+    "census 58 handle: pipeline cases equal to exact creation (none)": 820
+   },
+   "pass": true
+  }
+ },
+ "claim": "Opposite faces carry the halo. (1) The claiming lemma (proved): in a point split, a port is the odd point of its line exactly when that line takes the single skip of the face opposite the port across the line, so no other line of that face skips into it; otherwise exactly one other line does. Checked on 5,544 (split, port line, solution) triples. (2) The opposite-face law (computation, Fano plane as handle, validated pipeline). On ladders, thick tubes (duals of subdivided bipyramids), a grid, random grown spaces and a ladder arm spliced onto a grid, at 126 attachment points, every halo line beyond distance 3 lies on one of the three faces opposite the attachment point. In 124 of the 126 it is exactly those faces' far lines. So the halo's reach is set by the size of the faces opposite the handle, not by the dimer phase as such. A ladder reaches its full length because its opposite face is a whole cycle; a grid reaches distance 3 because its faces have at most three corners; a thick tube reaches around its polar face only when the handle sits beside it. (3) Census 58 as handle: the pipeline equals exact creation in all 976 small cases. The halo beyond distance 3 lies on the attachment point's own or opposite faces at all 24 points, but on the ladder arm of the mixed space (5 points) it also uses the point's own big face, so the opposite faces alone do not suffice for every handle.",
+ "kind": "proof",
+ "proof": "PHASE-HALO-20261103-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PHASE-HALO-20261103-001A"
+}

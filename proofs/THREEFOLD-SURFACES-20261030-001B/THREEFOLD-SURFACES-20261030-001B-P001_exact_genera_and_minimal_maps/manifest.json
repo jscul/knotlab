@@ -1,0 +1,113 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-SURFACES-20261030-001B-P001",
+  "canonical_id": "THREEFOLD-SURFACES-20261030-001B-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-SURFACES-20261030-001B",
+  "proof": "THREEFOLD-SURFACES-20261030-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Exact genera and minimal maps by SAT",
+  "status": "Proved",
+  "claim": "Exact orientable genera by SAT (rotation systems with face labels; a bound is excluded by unsatisfiability). (1) Every three-fold space up to 22 points (the 8 untwisted classes) and every twisted one (24 classes): the incidence graph's genus equals the sum of its braces' genera, which is the number of Heawood braces except for one twisted 22-point class whose glue is the trisum of three cubes (genus 3 = 2 atoms + 1); all untwisted ones have genus equal to their number of Heawood braces. (2) Larger spaces: Fano compositions of 4 and 5 planes (genus 4, 5), cycles of 5 and 7 Fano blocks (5, 7), the twisted cube (6), the hexagonal prism and the truncated octahedron as glue (6 and 12; the latter has 180 vertices), and the 35-point space whose glue is the trisum of three cubes (5 = 4 atoms + 1). (3) Minimal maps: the spaces with 7, 13 and 19 points have exactly 16, 128 and 1024 minimum-genus rotation systems, as ticket A's formula predicts, every one a standard connected sum at every tight cut; up to automorphisms and mirroring there are 1, 2 and (for the four 19-point classes) 4, 3, 6 and 4 of them. (4) Additivity beyond the Heawood graph: the trisum of three cubes and the Petersen graph keep their genus when a vertex is deleted and splice additively, while K3,3 does not and K3,3 spliced with K3,3 has genus 1; one rigid side suffices (K3,3 with Petersen has genus 2).",
+  "dependencies": [
+    "THREEFOLD-SURFACES-20261030-001A",
+    "THREEFOLD-GRAMMAR-20261030-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "theorem"
+    ]
+  },
+  "failure_conditions": [
+    "A space in the stated lists whose genus differs from the sum of its braces' genera, or an untwisted one whose genus differs from its number of Heawood braces.",
+    "A count of minimum-genus rotation systems different from ticket A's formula, or a minimum-genus system that is not a standard connected sum at some tight cut.",
+    "A splice with a rigid side that is not additive, or a SAT answer that does not reproduce."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-SURFACES-20261030-001",
+    "epic_path": [
+      "THREEFOLD-SURFACES-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/manifest.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/result.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json": "42934869c8dd4cddaa963c01417ff54dbd56a6064b040628df8c1c484a7427ed",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json": "2b128cbedcfff13fc3725063ccd30e6f038f7f731a046031d049a88439c25c08",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py": "0789a72111c3cb32fb4e29806061d95b94ea6facc87a83ade345ca8e5fbf4ed7",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/manifest.json": "c5c6ee3b5bbb68bbe2a5f3f1df363bdff0d3d531b16c79245f21d665da318b9d",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/result.json": "62815057534c29fbad4ebe59c8953ec15e5d5ed27182b8048fec9ee2a9666afd",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py": "b128dbc6be5a114d6d978b718a738a04d5393b4ae1fe5567d6bc119d2b16a7ba",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/manifest.json",
+    "identity": "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/identity.json",
+    "directory": "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps",
+    "proof": "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/proof.md",
+    "result": "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/result.json",
+    "check": "proofs/THREEFOLD-SURFACES-20261030-001B/THREEFOLD-SURFACES-20261030-001B-P001_exact_genera_and_minimal_maps/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_surface_genera_checked": true
+  },
+  "foundation_claim_scope": "Orientable genus of incidence graphs of three-fold spaces: all classes up to 22 points and the listed larger spaces; minimum-genus rotation systems of the spaces up to 19 points. Counts at 21 and 22 points are ticket A's predictions, not enumerated.",
+  "validation": {
+    "status": "checked: 32 classes up to 22 points and 9 larger spaces by exact SAT genus; all minimum-genus rotation systems of 6 spaces enumerated and classified; additivity tests; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "computational confirmation of ticket A; the SAT model with face labels follows the published approach of Beyer, Chimani, Hedtke and Kotrbcik (minimum genus by SAT/ILP) in spirit; no overlap found for the values themselves",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

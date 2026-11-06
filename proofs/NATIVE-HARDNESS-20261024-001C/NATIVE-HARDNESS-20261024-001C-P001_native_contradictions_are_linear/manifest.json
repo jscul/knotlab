@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-HARDNESS-20261024-001C-P001",
+  "canonical_id": "NATIVE-HARDNESS-20261024-001C-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-HARDNESS-20261024-001C",
+  "proof": "NATIVE-HARDNESS-20261024-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Native contradictions are linear",
+  "status": "Proved",
+  "claim": "In an unsatisfiable connected closed hub-free network of three-place knots with pins, every knot whose removal keeps the network connected has as face a parity relation (a constant, a wire or a parity knot), and the rest allows exactly the complementary relation: the face and the rest each allow at least half of the states of the knot's edges. Hence every native contradiction, cut at its bridges with the forced values pinned, splits into unsatisfiable systems of parity equations, and native networks of every law are decided in polynomial time by peeling, the bridge tree, the half rule and Gaussian elimination, without the theorem of Kazda, Kolmogorov and Rolinek.",
+  "dependencies": [
+    "NATIVE-HARDNESS-20261024-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An unsatisfiable connected closed network with a knot whose removal keeps it connected and whose face is not a parity relation, or whose rest does not allow exactly the complementary relation.",
+    "An unsatisfiable network one of whose components, with forced bridge values pinned, is not an unsatisfiable system of parity equations.",
+    "A network on which the decision procedure disagrees with the solver.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-HARDNESS-20261024-001",
+    "epic_path": [
+      "NATIVE-HARDNESS-20261024-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-HARDNESS-20261024-001B/NATIVE-HARDNESS-20261024-001B-P001_only_parity_is_hard/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-HARDNESS-20261024-001B/NATIVE-HARDNESS-20261024-001B-P001_only_parity_is_hard/manifest.json": "3e5111ae5ba6b224dc73946460ca3fd14dc3699410924088aad299e4b513044f"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-HARDNESS-20261024-001C/NATIVE-HARDNESS-20261024-001C-P001_native_contradictions_are_linear/manifest.json",
+    "identity": "proofs/NATIVE-HARDNESS-20261024-001C/NATIVE-HARDNESS-20261024-001C-P001_native_contradictions_are_linear/identity.json",
+    "directory": "proofs/NATIVE-HARDNESS-20261024-001C/NATIVE-HARDNESS-20261024-001C-P001_native_contradictions_are_linear",
+    "proof": "proofs/NATIVE-HARDNESS-20261024-001C/NATIVE-HARDNESS-20261024-001C-P001_native_contradictions_are_linear/proof.md",
+    "result": "proofs/NATIVE-HARDNESS-20261024-001C/NATIVE-HARDNESS-20261024-001C-P001_native_contradictions_are_linear/result.json",
+    "check": "proofs/NATIVE-HARDNESS-20261024-001C/NATIVE-HARDNESS-20261024-001C-P001_native_contradictions_are_linear/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_contradictions_linear_shown": true
+  },
+  "foundation_claim_scope": "Finite Boolean constraint networks without hubs; polynomial-time statements are unconditional. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, own solver) confirms the half rule on 2,021 non-cut knots and the linear structure on 1,778 components of 600 unsatisfiable random networks, and agreement of the decision procedure with the solver on 20,000 random networks of mixed laws; four controls (hubs, cut knots, procedure without Gaussian elimination, half rule reversed). No external theorem. No human or external review",
+    "level": "V1 prose proof with randomized finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

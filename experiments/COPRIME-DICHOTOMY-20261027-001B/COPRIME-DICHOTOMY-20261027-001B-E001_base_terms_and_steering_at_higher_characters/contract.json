@@ -1,0 +1,50 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COPRIME-DICHOTOMY-20261027-001B-E001",
+ "ticket": "COPRIME-DICHOTOMY-20261027-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "COPRIME-DICHOTOMY-20261027-001A proved the polynomial side for every cyclic action. The hardness side at sector orders d >= 3 needs (i) bases without channel terms, (ii) summands with vanishing local forms, and (iii) the steering rule at a character t of order d. Scoping (scoping/README.md) found: slope d/p removes channels (lambda^p acts trivially); local forms vanish on negative amphichiral knots and on (k,1)-cables of T(2,p) at characters with t^k = -1; the Squier form J_t and d-strand bundles give the steering constant kappa_t = t^-2 - t^-1. This contract tests these on new knots, primes, algebras (including class 4 through free layer-2 classes and a pair-failing algebra on cables) and gadgets.",
+ "question": "At characters of order d >= 3: are pinned counts at slope d/p multiplicative over connected sums (and not at slope d/1); do negative amphichiral knots and (k,1)-cables of T(2,p) have vanishing local forms while chiral knots do not; does the steering rule with kappa_t = t^-2 - t^-1 and d-strand bundles hold exactly on single insertions and on gadgets, in classes 3 and 4?",
+ "public_inputs": {
+  "algebras": "gd.four_way (x: a, y and w: -a, t = [[x,y],w]); F3 = gd.p2_quotient(free class 3 on (a, -a)); layer4 = gd.layer4_algebra (pair quotient of free class 4 on (x: trivial, y: a, v: -a) modulo [[y,v],y] and [[y,v],v]); pairfail3 = free class 3 on (a, a)",
+  "knots": "gd.AMPH (4_1, 6_3, 8_9, 8_17, 8_18 as closed 3-braids), gd.CHIRAL (3_1, 5_2, 6_1, 7_5, 8_5), gd.torus_cable(p, k) = (k,1)-cable of T(2,p)",
+  "measurement": "cd_lib.CyclicBraidModel (COPRIME-DICHOTOMY-20261027-001A-P001) at slope d/p (and d/1 in R1): labels in the coset N sigma, layers solved in order, the relator values of the obstruction layer paired with (J_t^T s, 0) for dual cocycles s at 1/t"
+ },
+ "predictions": {
+  "kappa_t": "t^-2 - t^-1, with t the character of the obstruction component (equal to 2 at t = -1)",
+  "R1_pinning": "four-way algebra: exact counts of lifting class data on K and K # K (K = 6_1 at (p, d) = (5, 4), (7, 3); 3_1 at (7, 6)). At slope d/p the count on K # K is the square of the count on K in all three cases; at slope d/1 it differs from the square in at least one case (a cross-summand channel).",
+  "R2_local_forms": "(a) the chiral knots 3_1, 5_2, 6_1, 7_5, 8_5 obstruct (32 random class data, lift fraction < 1) at each listed (p, d) and root; (b) the negative amphichiral knots 4_1, 6_3, 8_9, 8_17, 8_18 never obstruct at any root of order at least 3 for p in {7, 11, 13, 17, 19}, for the four-way algebra, the pair-quotient F3 of free class 3 on (a, -a), and the class-4 algebra layer4; (c) the (k,1)-cables of T(2,p) at (p, d, k) in {(5,4,2), (13,4,2), (7,6,3), (13,6,3), (11,10,5), (13,12,6), (17,8,4)} have roots exactly at the characters with t^k = -1 and never obstruct there, for four-way, F3, layer4 and the pair-failing free class 3 on (a, a).",
+  "R3_steering": "on connected sums of summands with vanishing local forms (6_3, 8_17, 4_1; (2,1)- and (3,1)-cables of T(2,p)) with one cable_d(P4) insertion: the base form is zero and the change of the obstruction pairing at every odd component of layers 3 and 4 equals kappa_t sum_j <W_j^(3)(leaves)>_comp ell_j(s), leaves = sum_i t^(d-1-i) c_i over the d bundle strands (reverse-order product), the data including free layer-2 classes; insertions leave the cocycle spaces unchanged; (J_t^T 1, 0) annihilates every obstruction vector.",
+  "R4_gadgets": "gadget surgeries (K2, P3, K3 at (7,3) on 6_3; P3 at (13,4) and K2 at (7,6) on cables): the measured form equals kappa_t times the sum over edges of the P4 form of the leaves, for four-way and layer4, and the vertex leaf reads X_v - X_u exactly at every character."
+ },
+ "controls": {
+  "machinery (any failure makes the run invalid)": "M1 Bur_{1/t}(g)^T J_t Bur_t(g) = J_t for every letter, n in {3, 6, 10}, every t != 0, 1 mod p, p in {5, 7, 11, 13}; M2 the bundle identity sum_{i<d} (J_t^T s)_{o+i} = sum_i t^i s_{o+i} for t of order d; M3 insertions leave every cocycle space unchanged; M4 (J_t^T 1, 0) annihilates every measured obstruction vector; M5 the gadget vertex leaf equals X_v - X_u on every layer-1 cocycle",
+  "negative (each must show a mismatch, else invalid)": "X1 kappa = 2 in place of kappa_t (d = 6, p = 7); X2 bundle products in forward order (d = 3, p = 13); X3 a twist-knot base (6_1, p = 7, d = 3), where the base form must fail to vanish or the rule must fail"
+ },
+ "decision_rule": "Invalid if a machinery check fails or a negative control matches. Supported if R1-R4 hold on every listed case. Refuted otherwise, naming every failed item; neither predictions nor construction change after this contract.",
+ "resource_budget": {
+  "wall_seconds": 5400,
+  "memory_mib": 8192,
+  "threads": 1
+ },
+ "stop_rule": "Run run.py once; no adaptive extension.",
+ "seeds": "numpy default_rng with fixed seeds (run.py)",
+ "environment": "workspace .venv python (numpy); cd_lib.py (COPRIME-DICHOTOMY-20261027-001A-P001), mlib.py (TRIPLE-SYSTEM-20261027-001B-E001) and cp_lib.py (COPRIME-CLASS2-20261026-001B-P001) imported read-only",
+ "red_team_r0": [
+  "Random samples test polynomial identities at random points, not every point; R1 counts are exhaustive over class data.",
+  "Prediction and measurement share the colourings and the Magnus tensor of P4; the independent routes are the exact counts of R1 and the algebra-independent controls.",
+  "Vanishing local forms are tested for three algebras; the uniform statements are ticket C's lemmas (orientation reversal for amphichiral knots, one-parameter subgroups for cables).",
+  "No class 5 or higher (BCH truncated at degree 4), no p = 2, 3."
+ ],
+ "nonclaims": [
+  "No hardness proof here (ticket C).",
+  "No claim for pair failures in classes 3 and 4 beyond the cable base test."
+ ],
+ "forbidden_inputs": [
+  "Measured forms as inputs to predictions",
+  "Predicted values as inputs to the measurement"
+ ],
+ "outputs": "artifacts/COPRIME-DICHOTOMY-20261027-001B/COPRIME-DICHOTOMY-20261027-001B-E001_base_terms_and_steering_at_higher_characters/result.json, rows.json and run_log.txt"
+}

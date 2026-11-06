@@ -1,0 +1,276 @@
+{
+ "schema_version": 1,
+ "artifact_id": "PLAIN-COUNT-20261031-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 6,
+    "mismatched": {}
+   }
+  },
+  "1 long edges remove signs: q(-1) is the signed count, q(1) the count with the signs dropped": {
+   "ok": true,
+   "detail": {
+    "two negations": {
+     "L": 2,
+     "q(-1)": "2",
+     "signed count": 2,
+     "q(1)": "6",
+     "count with signs dropped": 6
+    },
+    "five negations": {
+     "L": 5,
+     "q(-1)": "2",
+     "signed count": 2,
+     "q(1)": "6",
+     "count with signs dropped": 6
+    }
+   }
+  },
+  "2 switching inside the pages: 2 negations per Q page and 4 per R page, counts unchanged": {
+   "ok": true,
+   "detail": {
+    "1": {
+     "negations before": 11,
+     "after": 6,
+     "per page (kind, before, after)": [
+      [
+       "Q",
+       4,
+       2
+      ],
+      [
+       "R",
+       7,
+       4
+      ]
+     ],
+     "count unchanged": true
+    },
+    "3": {
+     "negations before": 33,
+     "after": 18,
+     "per page (kind, before, after)": [
+      [
+       "Q",
+       4,
+       2
+      ],
+      [
+       "R",
+       7,
+       4
+      ]
+     ],
+     "count unchanged": true
+    },
+    "5": {
+     "negations before": 55,
+     "after": 30,
+     "per page (kind, before, after)": [
+      [
+       "Q",
+       4,
+       2
+      ],
+      [
+       "R",
+       7,
+       4
+      ]
+     ],
+     "count unchanged": true
+    },
+    "7": {
+     "negations before": 77,
+     "after": 42,
+     "per page (kind, before, after)": [
+      [
+       "Q",
+       4,
+       2
+      ],
+      [
+       "R",
+       7,
+       4
+      ]
+     ],
+     "count unchanged": true
+    }
+   }
+  },
+  "3 end to end: 9 #col(K3,3) = 54 from counts of plain Pfaffian instances only": {
+   "ok": true,
+   "detail": {
+    "1": {
+     "L": 6,
+     "plain counts": 7,
+     "largest plain instance (vertices)": 480,
+     "q(-1) = signed instance count": true,
+     "seconds": 0.1
+    },
+    "3": {
+     "L": 18,
+     "plain counts": 19,
+     "largest plain instance (vertices)": 3608,
+     "q(-1) = signed instance count": true,
+     "seconds": 4.0
+    },
+    "5": {
+     "L": 30,
+     "plain counts": 31,
+     "largest plain instance (vertices)": 9616,
+     "q(-1) = signed instance count": true,
+     "seconds": 38.5
+    },
+    "7": {
+     "L": 42,
+     "plain counts": 43,
+     "largest plain instance (vertices)": 18504,
+     "q(-1) = signed instance count": true,
+     "seconds": 200.1
+    },
+    "9 #col(K3,3) from plain counts only": "54"
+   }
+  },
+  "4 the plain instances: no signs, cubic bipartite, certified Pfaffian, non-planar, branched twists": {
+   "ok": true,
+   "detail": {
+    "k_S=1, length 1": {
+     "vertices": 120,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3
+     ],
+     "good root": null
+    },
+    "k_S=1, length 2": {
+     "vertices": 180,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3
+     ],
+     "good root": null
+    },
+    "k_S=3, length 1": {
+     "vertices": 368,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3,
+      3,
+      3
+     ],
+     "good root": null
+    },
+    "k_S=3, length 2": {
+     "vertices": 548,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3,
+      3,
+      3
+     ],
+     "good root": null
+    },
+    "k_S=5, length 1": {
+     "vertices": 616,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "good root": null
+    },
+    "k_S=5, length 2": {
+     "vertices": 916,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "good root": null
+    },
+    "k_S=7, length 1": {
+     "vertices": 864,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "good root": null
+    },
+    "k_S=7, length 2": {
+     "vertices": 1284,
+     "signs": 0,
+     "certified": true,
+     "non-planar": true,
+     "twisted branches": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "good root": null
+    }
+   }
+  },
+  "5 signed hosts: host negations removed the same way": {
+   "ok": true,
+   "detail": {
+    "two negations": {
+     "L": 8,
+     "q(-1)": "224928",
+     "signed instance count": 224928,
+     "certified (length 1)": true
+    },
+    "five negations": {
+     "L": 11,
+     "q(-1)": "365004",
+     "signed instance count": 365004,
+     "certified (length 1)": true
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "q(1) is the count with the signs dropped": true,
+    "which differs from the signed count": true,
+    "L counts leave q(-1) undetermined": true
+   }
+  },
+  "ok": true,
+  "seconds": 244.9
+ }
+}

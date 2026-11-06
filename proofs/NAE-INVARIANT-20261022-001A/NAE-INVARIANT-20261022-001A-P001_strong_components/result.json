@@ -1,0 +1,238 @@
+{
+  "artifact_id": "NAE-INVARIANT-20261022-001A-P001",
+  "checks": {
+    "emergence_sandwich": {
+      "3x3 s=0 parity=(1,1)": {
+        "E": 0.861448,
+        "P0": 0.434128,
+        "inside": true,
+        "lower": 0.821452,
+        "upper": 1.203808
+      },
+      "3x3 s=1 parity=(1,0)": {
+        "E": 0.479213,
+        "P0": 0.274895,
+        "inside": true,
+        "lower": 0.463738,
+        "upper": 1.863049
+      }
+    },
+    "exhaustive_twisted_3x3": {
+      "3x3 s=0 parity=(1,1)": {
+        "tally": {
+          "cons": 144284,
+          "contr": 113804,
+          "cross": 113804,
+          "even_wind": 30480,
+          "n": 262144,
+          "odd_wind": 4056
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      },
+      "3x3 s=1 parity=(1,0)": {
+        "tally": {
+          "cons": 188054,
+          "contr": 72062,
+          "cross": 72062,
+          "even_wind": 115992,
+          "n": 262144,
+          "odd_wind": 2028
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      }
+    },
+    "plane_complementarity": [
+      {
+        "edges_cyclic_in_both_or_neither": 0,
+        "grid": "3x3",
+        "mean_cyclic_fraction": 0.197754,
+        "orientations": 4096
+      },
+      {
+        "edges_cyclic_in_both_or_neither": 0,
+        "grid": "2x4",
+        "mean_cyclic_fraction": 0.166797,
+        "orientations": 1024
+      }
+    ],
+    "sampled_twisted": {
+      "5x3 s=0 parity=(1,1)": {
+        "tally": {
+          "cons": 762,
+          "contr": 636,
+          "cross": 590,
+          "even_wind": 126,
+          "n": 1500,
+          "odd_wind": 148
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      },
+      "5x4 s=0 parity=(1,0)": {
+        "tally": {
+          "cons": 1239,
+          "contr": 254,
+          "cross": 257,
+          "even_wind": 985,
+          "n": 1500,
+          "odd_wind": 4
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      },
+      "5x5 s=0 parity=(1,1)": {
+        "tally": {
+          "cons": 865,
+          "contr": 650,
+          "cross": 616,
+          "even_wind": 215,
+          "n": 1500,
+          "odd_wind": 19
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      },
+      "5x5 s=2 parity=(1,1)": {
+        "tally": {
+          "cons": 938,
+          "contr": 532,
+          "cross": 539,
+          "even_wind": 406,
+          "n": 1500,
+          "odd_wind": 23
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      },
+      "7x5 s=3 parity=(1,0)": {
+        "tally": {
+          "cons": 614,
+          "contr": 188,
+          "cross": 184,
+          "even_wind": 426,
+          "n": 800,
+          "odd_wind": 2
+        },
+        "violations": {
+          "cons_identity": 0,
+          "cross_not_full": 0,
+          "not_complementary": 0,
+          "scc_vs_colour": 0,
+          "scc_vs_homology": 0,
+          "solver": 0,
+          "trichotomy": 0
+        }
+      }
+    },
+    "untwisted_3x3_sampled": {
+      "doubly_cyclic_edges": 95452,
+      "orientations": 20000,
+      "with_doubly_cyclic_edges": 15795
+    },
+    "untwisted_3x3_topology": {
+      "contractible": 362,
+      "cross": 2704,
+      "orientations": 4000
+    }
+  },
+  "claim": "With fair visible spokes, a not-all-equal world on a non-bipartite graph is the uniformly random orientation of the bipartite double cover that the deck swap reverses; it is inconsistent exactly when some strongly connected component is swap-invariant, equivalently when the projected cyclic edges form a cluster with an odd cycle (on a torus: a cross cluster or an odd winding). In the plane, primal and dual cyclic edges are complementary; on a twisted torus the complementarity is exact, so P(all contractible) = P(cross), consistency is P(contractible) + P(even windings), and emergence lies between -log2(1 - P(contractible)) and -log2 P(contractible).",
+  "controls": {
+    "single_sheet_test_rejected": true,
+    "untwisted_duality_rejected": true,
+    "wrong_rotation_rejected": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NAE-INVARIANT-20261022-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "cyclic_edge_criterion_proved": true,
+    "double_cover_reduction_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "lower_bound_proved": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "planar_complementarity_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "twisted_exact_duality_proved": true,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NAE-INVARIANT-20261022-001A"
+}

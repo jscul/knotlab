@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CONTACT-CENSUS-20261022-001A-P001",
+  "canonical_id": "CONTACT-CENSUS-20261022-001A-P001",
+  "kind": "proof",
+  "ticket": "CONTACT-CENSUS-20261022-001A",
+  "proof": "CONTACT-CENSUS-20261022-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The census of fair contacts on square tori",
+  "status": "Proved",
+  "claim": "With the same placed three-variable contact C(h_u, x_e, h_v) on every edge of a square-lattice torus (east and north), hidden joints and fair visible spokes: (1) the 204 placements of the 34 three-variable knots form 10 classes with equal consistency laws under spoke swap, joint-value swap and reversal; (2) six classes have a vacuum and hold nothing; parity holds the cycle rank and swap-or-order is frustrated by a 2 x 3 domino (8 of 128 patterns), so both grow with the area; not-all-equal and 'x or (h != h')' are consistent on every bipartite graph and hold only global emergence; (3) 'x or (h != h')' is consistent exactly when its h != h' edges, Bernoulli(1/2) percolation, are bipartite, that is when no cluster has a cross topology or winds in a class of odd length; its emergence is bounded away from 0 and from infinity at fixed shape (crossing bounds and positive correlation); Pinson's conformal formula predicts its limit, 1.508460 bits on square tori with both sides odd and 1.985201 bits on 1:2 tori with one odd side.",
+  "dependencies": [
+    "BASE-CRITICALITY-20261022-001A",
+    "EMERGENCE-BITS-20261021-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A placement whose class differs from the stated ten, or two placements of one class with different consistency counts on the 3 x 2 torus.",
+    "A vacuum class with an inconsistent pattern; a smallest frustrating patch other than one face (parity) or the domino (swap-or-order); a frustrating patch for not-all-equal or 'x or (h != h')'.",
+    "A pattern where consistency of 'x or (h != h')' differs from bipartiteness of its h != h' edges, or bipartiteness differs from the absence of an odd topology.",
+    "The Pinson implementation failing to reproduce Newman and Ziff's reference values or to sum to 1.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "CONTACT-CENSUS-20261022-001",
+    "epic_path": [
+      "CONTACT-CENSUS-20261022-001"
+    ],
+    "parents": [
+      "proofs/BASE-CRITICALITY-20261022-001A/BASE-CRITICALITY-20261022-001A-P001_percolation_reduction/manifest.json",
+      "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BASE-CRITICALITY-20261022-001A/BASE-CRITICALITY-20261022-001A-P001_percolation_reduction/manifest.json": "bd8867ed3f554cf83478fa3ae077af6aa8f8dcc17a37ec87ce1c2790ffa4d3e7",
+    "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/manifest.json": "c6e0225f2ba9f397babfdb436cacc7a09b6adf3b50f53721573289e9a89503f9"
+  },
+  "paths": {
+    "manifest": "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/manifest.json",
+    "identity": "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/identity.json",
+    "directory": "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census",
+    "proof": "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/proof.md",
+    "result": "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/result.json",
+    "check": "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "ten_classes_proved": true,
+    "vacuum_zero_proved": true,
+    "extensive_classes_proved": true,
+    "patch_free_classes_proved": true,
+    "bipartite_percolation_reduction_proved": true,
+    "two_sided_bounds_or_not_equal_proved": true
+  },
+  "foundation_claim_scope": "Emergence of networks of one placed three-variable contact with hidden joints and fair visible spokes on square-lattice tori, classified over all placements. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py enumerates all 204 placements into 10 classes with equal laws on the 3 x 2 torus, the vacuum classes, the smallest frustrating grid patches up to 3 x 4, parity's count on the 3 x 3 torus, the bipartite reduction against an independent winding classification on all 262,144 patterns of the 3 x 3 torus and 60,000 sampled patterns of larger tori, and the Pinson implementation against Newman and Ziff's values; four controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive checks; the two-sided bounds (Theorem 6) are argued from cited crossing bounds and positive correlation; Pinson's limit is a cited conformal prediction, not a theorem; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta: the census of placed contacts and its three regimes are elementary consequences of earlier proofs; the reduction of 'x or (h != h')' worlds to bipartiteness of critical percolation on the torus is elementary (frustration of diluted antiferromagnets), with moderate folklore risk; identifying a three-literal world's emergence with Pinson's torus winding probabilities was not found in a bounded search.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-22."
+  }
+}

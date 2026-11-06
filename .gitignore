@@ -2,18 +2,18 @@ __pycache__/
 *.pyc
 .venv/
 
-# LaTeX build files
-*.aux
-*.log
-*.out
-*.fdb_latexmk
-*.fls
-*.synctex.gz
-*.toc
-*.bbl
-*.blg
+# LaTeX build files from rebuilding the notes
+notes/**/*.aux
+notes/**/*.log
+notes/**/*.out
+notes/**/*.fdb_latexmk
+notes/**/*.fls
+notes/**/*.synctex.gz
+notes/**/*.toc
+notes/**/*.bbl
+notes/**/*.blg
 
-# outputs written by the check scripts
+# outputs written by the note check scripts
 notes/knot-group-counting/links/logs/
 notes/knot-group-counting/links/links_result.json
 notes/pfaffian-hypergraph-colourings/independent_result.json

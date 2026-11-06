@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPLICE-TREE-20261102-001A-P001",
+  "canonical_id": "SPLICE-TREE-20261102-001A-P001",
+  "kind": "proof",
+  "ticket": "SPLICE-TREE-20261102-001A",
+  "proof": "SPLICE-TREE-20261102-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A removal opens exactly the cuts that point away from it",
+  "status": "Proved",
+  "claim": "A removal opens exactly the cuts that point away from it. Assemble a knot space from pieces along a tree of splices, and orient every cut from its point side to its line side; every cut stays a simple 3-edge cut of the whole space. (1) Removing a line M holds every cut whose point side does not contain M (the cut points toward M) and opens every cut whose point side contains M (the cut points away from M). (2) At a held cut the three ports are tied, and the far point side keeps exactly the circuits of its own system: the knots of its contraction without its closing line, whatever M is. (3) At an opened cut the port patterns are exactly those the near contraction (which contains M) allows on the closing line once M is gone, so M reaches the far line side only through that interface. These follow from HUB-GLUE A-C applied to each cut. Checked on chains and trees of three and four pieces (K4^(3) and Fano pieces, 10 to 16 points): every removal, every cut.",
+  "dependencies": [
+    "HUB-GLUE-20261102-001Z",
+    "MUTUAL-SELECTION-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A removal off a cut's point side after which that cut's ports are not tied.",
+    "A held cut whose far side keeps circuits other than those of its own system.",
+    "An opened cut whose port patterns differ from those the near contraction allows without the removed line."
+  ],
+  "lineage": {
+    "home_scope": "SPLICE-TREE-20261102-001",
+    "epic_path": [
+      "SPLICE-TREE-20261102-001"
+    ],
+    "parents": [
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py",
+      "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/manifest.json",
+      "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/result.json",
+      "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/manifest.json",
+      "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/result.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json": "58c6c8436f278d9f239671c3635c60580ce94b05fd7c37c9c46a619b3b7571bc",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json": "b42a8ed8611d03d5818076269f6ce5cf320f7a99d25a273efa6bd8f6aafb3cdc",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c",
+    "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/manifest.json": "b796c75471523a92d571fdb5a60c23a74d189b13199e82a22d309ff572a75b40",
+    "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/result.json": "60946595481428a1cc9ab3d66401877b6f4feac181d2cc3db1cc79d09afc6599",
+    "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/manifest.json": "45fd98f658993dbf309e7a03587d78f89d257170a8ee4a0651b2239535cd714a",
+    "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/result.json": "e4d5ea2d8c989d0ee52993442f6499781cfe56276e7eb1feec5d4abf9d587591",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/manifest.json",
+    "identity": "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/identity.json",
+    "directory": "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away",
+    "proof": "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/proof.md",
+    "result": "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/result.json",
+    "check": "proofs/SPLICE-TREE-20261102-001A/SPLICE-TREE-20261102-001A-P001_a_removal_opens_the_cuts_that_point_away/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "orientation_rule_shown": true
+  },
+  "foundation_claim_scope": "Knot spaces assembled along trees of simple 3-edge cuts; removal of one line.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: chains and trees of three and four pieces up to 16 points, every removal and cut; no human or external review",
+    "novelty": "A corollary of HUB-GLUE A-C; the orientation reading is new here."
+  }
+}

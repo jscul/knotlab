@@ -1,0 +1,46 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PATTERN-3D-20261025-001B-E001",
+ "ticket": "PATTERN-3D-20261025-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "PATTERN-3D-20261025-001A-P001 proves that a deterministic law survives the ordered moves exactly when its reduced rule is a groupoid with equal component values, which predicts P2 and the table part of P3; relations that are not functions are covered there only by the reduction lemma, so P1 tests a conjecture. Scoping before this contract, disclosed: the same censuses were run in scratch with earlier versions of census.c (7,948 surviving relations on three labels reducing to the seven listed laws; 14,284 surviving tables on four labels reducing to the five listed groupoids; 8 relations on two labels; 3 tables on three labels). Fresh: the frozen code, the classification by groupoid pullbacks, and the controls against the independent standard-library law test.",
+ "question": "Which pure counting laws on three labels (any triangle relation) and on four labels (any multiplication table) satisfy the ordered 2-3 and 1-4 identities, and are they all groupoid laws pulled back along classes of interchangeable labels?",
+ "public_inputs": {
+  "rules": "all 2^8 relations on two labels, all 3^9 tables on three labels, all 2^27 relations on three labels, all 4^16 tables on four labels",
+  "identities": "the ordered 2-3 and 1-4 identities of TWIST-3D-20261025-001A and PATTERN-3D-20261025-001A-P001, constants lam, mu >= 1",
+  "code": "census.c compiled with gcc -O3 -march=native; run.py, controls.py, check_result.py and common.py in this directory"
+ },
+ "definitions": "Reduced rule: the triangles lying in some allowed tetrahedron. Groupoid pullback: labels fall into classes of interchangeable labels (replacing a label by another of its class in one place of a triple stays in the rule), all of one size k, and the quotient rule is the composition of a finite groupoid; consistent with (lam, mu) when k = lam and every component has objects x group order x k^4 = mu. Types: one, two or three constants; Z2; Z3; Z4; Z2xZ2; the pair groupoid (two objects, trivial group); free on k labels (class size k over the trivial group).",
+ "predictions": {
+  "P1_relations_three_labels": "every surviving relation on three labels reduces to a groupoid pullback consistent with its (lam, mu), and the reduced rules fall into exactly seven orbits under relabelling and reversal: one, two or three constants, Z2, Z3, free on two labels, free on three labels",
+  "P2_tables_four_labels": "every surviving table on four labels has lam = 1 and reduces to a groupoid consistent with its mu, of exactly the types one constant, two constants, the pair groupoid, Z4 and Z2xZ2",
+  "P3_small_parts": "relations on two labels: exactly 8 survivors (one constant 4, two constants 1, Z2 2, free on two labels 1); tables on three labels: exactly 3 survivors, all Z3",
+  "reported": "census statistics per part (empty, mu = 0, failing 1-4, failing 2-3, surviving), survivors by type and by (lam, mu)"
+ },
+ "controls": "(i) the C census and the independent law test of PATTERN-3D-20261025-001A-P001 agree on verdict and constants for 3,000 random relations on three labels, 1,500 random tables on four labels, 300 group tables with one entry changed, and 11 planted rules (Z3, the free relation, Z4, Z2xZ2, the pair groupoid inside a Latin square, a constant and two constants inside junk must survive with the stated constants; merged identities, the projection, Z2 plus a constant and a padded non-group monoid must fail); (ii) the classifier rejects four planted rules that are not groupoid pullbacks and accepts four planted groupoid pullbacks.",
+ "decision_rule": "If a control fails, the result is invalid. Supported if P1, P2 and P3 all hold. Refuted otherwise, naming the predictions that failed.",
+ "resource_budget": {
+  "wall_seconds": 7200,
+  "memory_mib": 8192,
+  "threads": 24
+ },
+ "stop_rule": "Run controls, then every chunk once, writing rows as they finish; decide when all chunks are in. No adaptive extension.",
+ "seeds": "controls: 20261028; re-check sampling: 20261029; the censuses are exhaustive and deterministic",
+ "environment": "system python3 (standard library) and gcc 14",
+ "red_team_r0": [
+  "The censuses are exhaustive but finite: P1 is evidence for, not a proof of, the conjecture that every pure counting law is a groupoid pullback.",
+  "The table part repeats what PATTERN-3D-20261025-001A-P001 proves; it is an independent computational check of that theorem, not new evidence about functions.",
+  "The census code and the classifier were written by the same author as the theorem; the controls compare against a separately written propagation solver, not against an outside implementation.",
+  "Only pure laws are covered: laws with a separate tetrahedron rule, weights or signs are not censused."
+ ],
+ "nonclaims": [
+  "No classification of relations on four or more labels.",
+  "No claim about weighted, signed or phased laws."
+ ],
+ "forbidden_inputs": [
+  "Expected survivor lists as inputs"
+ ],
+ "outputs": "artifacts/PATTERN-3D-20261025-001B/PATTERN-3D-20261025-001B-E001_complete_censuses/rows.jsonl, controls.json and result.json"
+}

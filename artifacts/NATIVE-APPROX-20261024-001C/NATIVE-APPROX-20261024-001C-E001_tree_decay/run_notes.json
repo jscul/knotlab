@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "experiment_id": "NATIVE-APPROX-20261024-001C-E001",
+  "invocations": [
+    {
+      "started": "2026-10-24T22:53:34-07:00",
+      "wall_seconds": 247.0,
+      "outcome": "controls.py passed (700 trees, 679 with boundary leaves); run.py wrote all 196 settings and result.json (verdict refuted); check_result.py reproduced the table, summary and verdict, replayed 588 widths from their seeds and recomputed 20 widths with exact fractions"
+    }
+  ],
+  "budget": "247 s of the 3600 s budget, one thread",
+  "independent_check": "check_result.py passed",
+  "post_hoc_note": "Without pins the six open knots kept width exactly 1 on every tree at every depth. The scoping probe, which used only the boundaries all 0, all 1 and all free, did not reveal this; the worst-case boundaries in this run did. An elementary explanation is examined in ticket NATIVE-APPROX-20261024-001D."
+}

@@ -1,0 +1,51 @@
+{
+ "artifact_id": "HALO-FORCING-20261103-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 corner matchings: on every point split of the planar census spaces and of the 10-point grown and prism spaces, choosing for each line one corner, with each face receiving exactly one, gives a bijection with the solutions up to complement (the three port lines have two corners in the merged face, so the line-face graph has double edges)": {
+   "info": {
+    "lines with two corners in one face (double edges)": 215,
+    "point splits": 71,
+    "point splits whose corner matchings are exactly the solutions up to complement": 71
+   },
+   "pass": true
+  },
+  "2 heights decide the transfer: on every point split of the planar census, five grown and two prism spaces (to 14 points), for every line, the pairs (port pattern, line pattern) found by shortest paths and parity halving equal those of the enumerated solutions": {
+   "info": {
+    "(split, line) pairs": 1221,
+    "transfer by heights equal to enumeration": 1221,
+    "transfer size 10": 363,
+    "transfer size 12": 24,
+    "transfer size 14": 294,
+    "transfer size 16": 263,
+    "transfer size 18": 95,
+    "transfer size 20": 62,
+    "transfer size 22": 54,
+    "transfer size 24": 26,
+    "transfer size 26": 14,
+    "transfer size 28": 16,
+    "transfer size 32": 2,
+    "transfer size 6": 2,
+    "transfer size 8": 6
+   },
+   "pass": true
+  }
+ },
+ "claim": "Heights compute the transfer. (1) Corner matchings: in a point split of a plane knot space with Kasteleyn signs, choosing for each line one corner, with each face receiving exactly one, is a bijection with the solutions up to complement. The three port lines have two corners in the merged face, so the line-face graph has double edges; HANDLE-LOCALITY A's matching statement is to be read with corners as edges. (2) The transfer R(L), the set of (port pattern, L pattern) pairs that occur together, is decided exactly by heights. Fix L's matched corner; the heights are the integer solutions of difference constraints. Their projection onto the regions of the three ports and L's points is cut out by the shortest-path distances between those regions, and a parity vector is feasible iff halving the constraints leaves no negative cycle. A point's value relative to another is the parity of their height difference. This takes polynomial time, with no enumeration. Verified: corner matchings equal the solutions on all 71 point splits of the planar census and 10-point spaces; the transfer by heights equals enumeration on all 1,221 (split, line) pairs of the planar census, five grown and two prism spaces to 14 points.",
+ "kind": "proof",
+ "proof": "HALO-FORCING-20261103-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HALO-FORCING-20261103-001B"
+}

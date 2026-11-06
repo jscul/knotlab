@@ -1,0 +1,232 @@
+{
+ "artifact_id": "FACE-CLAIM-20261103-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json": "Proved",
+     "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json": "passed",
+     "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 frozen lines: on ladders, a grid, a thick tube, two grown spaces and every point of a ladder arm spliced onto a grid, every line beyond distance 3 with a corner on a face barred by the class is frozen; unit propagation from the class's seeds never fixes two points of an unfrozen line, finds every frozen line on the generic pieces, and misses frozen lines on the arm-on-grid piece at the points listed": {
+   "info": {
+    "arm on grid": {
+     "lines on a face barred by the class: frozen True": 2740,
+     "unit propagation fixes two points: False, frozen: False": 45412,
+     "unit propagation fixes two points: False, frozen: True": 184,
+     "unit propagation fixes two points: True, frozen: True": 2746
+    },
+    "arm on grid: points where propagation misses frozen lines": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     9,
+     94
+    ],
+    "generic pieces": {
+     "lines on a face barred by the class: frozen True": 266,
+     "unit propagation fixes two points: False, frozen: False": 12460,
+     "unit propagation fixes two points: True, frozen: True": 266
+    }
+   },
+   "pass": true
+  },
+  "2 claim types: on the generic pieces every frozen own-arc line claims from one port pattern per value and every frozen opposite-face line from two, and no frozen line lies off the faces around the point; on the arm-on-grid piece the frozen lines off those faces are rigid (no claim) except at one point, where they claim from two port patterns per value": {
+   "info": {
+    "arm on grid": {
+     "claim type (0, 0) on another face around the point": 56,
+     "claim type (0, 0) on off the faces around the point": 108,
+     "claim type (0, 0) on opposite face": 88,
+     "claim type (0, 0) on own arc": 112,
+     "claim type (1, 1) on own arc": 1664,
+     "claim type (2, 2) on off the faces around the point": 26,
+     "claim type (2, 2) on opposite face": 876
+    },
+    "arm on grid, off the faces around the point, by point and claim type": {
+     "off-face frozen lines at point 0 with claim type (0, 0)": 4,
+     "off-face frozen lines at point 2 with claim type (0, 0)": 4,
+     "off-face frozen lines at point 3 with claim type (0, 0)": 4,
+     "off-face frozen lines at point 4 with claim type (0, 0)": 60,
+     "off-face frozen lines at point 5 with claim type (0, 0)": 4,
+     "off-face frozen lines at point 9 with claim type (0, 0)": 32,
+     "off-face frozen lines at point 94 with claim type (2, 2)": 26
+    },
+    "generic": {
+     "claim type (1, 1) on own arc": 140,
+     "claim type (2, 2) on opposite face": 126
+    }
+   },
+   "pass": true
+  },
+  "3 creation off the faces around the point: on the arm-on-grid piece (95 points), each of the three handles creates beyond distance 3 off the faces around the attachment point at exactly one point, the one whose off-face frozen lines claim from two port patterns per value; there the halo runs along the arm's far long face": {
+   "info": {
+    "census 58 minus line 0: attachment points": 95,
+    "census 58 minus line 0: points with far creation off the faces around the point": 1,
+    "census 58 minus line 6: attachment points": 95,
+    "census 58 minus line 6: points with far creation off the faces around the point": 1,
+    "points and lines": {
+     "census 58 minus line 0": [
+      [
+       94,
+       [
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92
+       ]
+      ]
+     ],
+     "census 58 minus line 6": [
+      [
+       94,
+       [
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92
+       ]
+      ]
+     ],
+     "the Fano plane": [
+      [
+       94,
+       [
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92
+       ]
+      ]
+     ]
+    },
+    "the Fano plane: attachment points": 95,
+    "the Fano plane: points with far creation off the faces around the point": 1
+   },
+   "pass": true
+  },
+  "4 exact creation on a small junction: on a 21-point ladder arm spliced onto a 16-point grid, with the Fano plane attached at three points, exact creation agrees with the pipeline at every removal, gluing line and far side, and creates beyond distance 3 off the faces around the attachment point": {
+   "info": {
+    "count": 12,
+    "exact far creation off the faces around the point": [
+     [
+      1,
+      2,
+      5,
+      "K4^(3)"
+     ],
+     [
+      1,
+      2,
+      5,
+      "census 6"
+     ],
+     [
+      1,
+      3,
+      5,
+      "K4^(3)"
+     ],
+     [
+      1,
+      3,
+      5,
+      "census 6"
+     ],
+     [
+      3,
+      2,
+      3,
+      "K4^(3)"
+     ],
+     [
+      3,
+      2,
+      3,
+      "census 6"
+     ],
+     [
+      3,
+      3,
+      3,
+      "K4^(3)"
+     ],
+     [
+      3,
+      3,
+      3,
+      "census 6"
+     ],
+     [
+      4,
+      2,
+      0,
+      "K4^(3)"
+     ],
+     [
+      4,
+      2,
+      0,
+      "census 6"
+     ],
+     [
+      4,
+      3,
+      0,
+      "K4^(3)"
+     ],
+     [
+      4,
+      3,
+      0,
+      "census 6"
+     ]
+    ],
+    "far, off the faces around the point: exact False, pipeline False": 588,
+    "far, off the faces around the point: exact True, pipeline True": 12,
+    "near, on a face around the point: exact False, pipeline False": 794,
+    "near, on a face around the point: exact True, pipeline True": 118
+   },
+   "pass": true
+  }
+ },
+ "claim": "The frozen region. (1) Creation needs a frozen line (proved): a candidate knot needs a pair of handle points to leave the gluing line two patterns with two points fixed, so some port pattern in its pin freezes the line; by the reading lemma every line with a corner on a face barred by the pattern's class is frozen (266 cases on ladders, a grid, a thick tube and two grown spaces; 2,740 on a ladder arm spliced onto a grid). (2) Two-sided unit propagation from the class's seeds never fixes two points of an unfrozen line. On the generic pieces it finds every frozen line beyond distance 3, and all of them lie on the faces around the attachment point. On the arm-on-grid piece it misses 184 frozen (line, pattern) cases at 8 of 95 points, where a global rigidity freezes the arm's far long face. (3) Claim types: on the generic pieces frozen own-arc lines claim from one port pattern per value (140 cases) and frozen opposite-face lines from two (126); on the arm-on-grid piece the frozen lines off the faces around the point are rigid, with no claim (108 cases), except at one point, where they claim from two patterns per value (26 cases). (4) At exactly that point each of three handles (the Fano plane, census 58 minus line 0 or line 6) creates beyond distance 3 off the faces around the attachment point, along the arm's far long face (13 lines, pipeline). On a 21-point ladder arm spliced onto a 16-point grid with the Fano plane at three points, exact creation agrees with the pipeline in all 1,512 cases and creates beyond distance 3 off the faces around the point (12 instances). So the law proposed by PHASE-HALO-20261103-001A, that the halo beyond distance 3 lies on the faces around the attachment point, is false; the halo lies on frozen lines whose claims survive the handle's single points.",
+ "kind": "proof",
+ "proof": "FACE-CLAIM-20261103-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FACE-CLAIM-20261103-001C"
+}

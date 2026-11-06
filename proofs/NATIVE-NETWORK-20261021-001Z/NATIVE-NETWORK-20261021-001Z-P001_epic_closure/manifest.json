@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "NATIVE-NETWORK-20261021-001Z-P001",
+  "canonical_id": "NATIVE-NETWORK-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-NETWORK-20261021-001Z",
+  "proof": "NATIVE-NETWORK-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the native-network epic",
+  "status": "Proved",
+  "claim": "Ledger closing NATIVE-NETWORK-20261021-001: one line per conclusion with its novelty label and evidence, the correction of the loop-homology closure, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "NATIVE-NETWORK-20261021-001A",
+    "NATIVE-NETWORK-20261021-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved or its checks did not pass.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A and B proved)."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-NETWORK-20261021-001",
+    "epic_path": [
+      "NATIVE-NETWORK-20261021-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-NETWORK-20261021-001A/NATIVE-NETWORK-20261021-001A-P001_network_gates/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001A/NATIVE-NETWORK-20261021-001A-P001_network_gates/result.json",
+      "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-NETWORK-20261021-001A/NATIVE-NETWORK-20261021-001A-P001_network_gates/manifest.json": "b9c162daedaa23f703935fbc721dae86b8c66e04676e91d134beed9a6106f9a5",
+    "proofs/NATIVE-NETWORK-20261021-001A/NATIVE-NETWORK-20261021-001A-P001_network_gates/result.json": "0bdde14444530b92e41ebd56b78dd4b187dd2b380f54e1b3e571d8bcbd9a597f",
+    "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json": "621a63ca2336e1a8478a794c9b0c775b6f27f346a5b8cf85b8f4abbaaaa2a035",
+    "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/result.json": "970af7923f0711cd3ada2fa6b81f92e6828a65ea3467d7e93f9a0f0827da765e"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the two Proved proofs and their passed results; decision note present; tickets proved; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

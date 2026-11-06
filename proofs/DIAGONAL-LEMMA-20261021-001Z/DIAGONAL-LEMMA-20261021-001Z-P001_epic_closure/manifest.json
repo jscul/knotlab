@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "DIAGONAL-LEMMA-20261021-001Z-P001",
+  "canonical_id": "DIAGONAL-LEMMA-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "DIAGONAL-LEMMA-20261021-001Z",
+  "proof": "DIAGONAL-LEMMA-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the diagonal-lemma epic",
+  "status": "Proved",
+  "claim": "Ledger closing DIAGONAL-LEMMA-20261021-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "DIAGONAL-LEMMA-20261021-001A",
+    "DIAGONAL-LEMMA-20261021-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract, manifest or result changes, the contract is not Frozen, the experiment's signal differs from its recorded value (false), or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A refuted, B proved)."
+  ],
+  "lineage": {
+    "home_scope": "DIAGONAL-LEMMA-20261021-001",
+    "epic_path": [
+      "DIAGONAL-LEMMA-20261021-001"
+    ],
+    "parents": [
+      "experiments/DIAGONAL-LEMMA-20261021-001A/DIAGONAL-LEMMA-20261021-001A-E001_diagonal_census/contract.json",
+      "artifacts/DIAGONAL-LEMMA-20261021-001A/DIAGONAL-LEMMA-20261021-001A-E001_diagonal_census/result.json",
+      "proofs/DIAGONAL-LEMMA-20261021-001B/DIAGONAL-LEMMA-20261021-001B-P001_shadow_converse/manifest.json",
+      "proofs/DIAGONAL-LEMMA-20261021-001B/DIAGONAL-LEMMA-20261021-001B-P001_shadow_converse/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "experiments/DIAGONAL-LEMMA-20261021-001A/DIAGONAL-LEMMA-20261021-001A-E001_diagonal_census/contract.json": "8a9f86b89eb6b0f3502d937630bb1998ac93b0954afca7c91884bc5ee4ed482d",
+    "artifacts/DIAGONAL-LEMMA-20261021-001A/DIAGONAL-LEMMA-20261021-001A-E001_diagonal_census/result.json": "0a432d9b93a8c765c88ebf391d5dd403ed59ece0d74b8a90d766d0686e7212ed",
+    "proofs/DIAGONAL-LEMMA-20261021-001B/DIAGONAL-LEMMA-20261021-001B-P001_shadow_converse/manifest.json": "20b53cf2af040acd16c5c6367dd982d8e6a22e3ba855e74219a286fcc521c1b2",
+    "proofs/DIAGONAL-LEMMA-20261021-001B/DIAGONAL-LEMMA-20261021-001B-P001_shadow_converse/result.json": "b53d03b14b5d0830a24586ba77f1fe006e0f0113d572871b1f3313afe962b04d"
+  },
+  "paths": {
+    "manifest": "proofs/DIAGONAL-LEMMA-20261021-001Z/DIAGONAL-LEMMA-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/DIAGONAL-LEMMA-20261021-001Z/DIAGONAL-LEMMA-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/DIAGONAL-LEMMA-20261021-001Z/DIAGONAL-LEMMA-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/DIAGONAL-LEMMA-20261021-001Z/DIAGONAL-LEMMA-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/DIAGONAL-LEMMA-20261021-001Z/DIAGONAL-LEMMA-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/DIAGONAL-LEMMA-20261021-001Z/DIAGONAL-LEMMA-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the frozen census contract and its result and to the Proved proof and its passed result; decision note present; tickets refuted and proved; no human or external review",
+    "level": "V0 ledger check: bound digests, frozen contract, recorded experiment signal, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

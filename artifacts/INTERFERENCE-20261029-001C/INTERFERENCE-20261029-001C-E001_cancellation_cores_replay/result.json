@@ -1,0 +1,621 @@
+{
+ "schema_version": 1,
+ "experiment_id": "INTERFERENCE-20261029-001C-E001",
+ "evidence_stage": "exploratory",
+ "runs": [
+  "result_parts_1_2_4.json",
+  "result_parts_3_lambda_12.json",
+  "result_parts_3_lambda_3.json"
+ ],
+ "parts": {
+  "1 eight-square identity": {
+   "settings": 4096,
+   "violations": 0,
+   "costs (log2 rank)": {
+    "crossing 2[x=v][y=u]": {
+     "rows bits": 6.0,
+     "columns bits": 6.0
+    },
+    "row choice": {
+     "rows bits": 3.0,
+     "columns bits": 6.0
+    },
+    "column choice": {
+     "rows bits": 6.0,
+     "columns bits": 3.0
+    }
+   },
+   "sign table is a Hadamard matrix": true,
+   "knotlab check": {
+    "parity hyperedge x+y+u+v=0 (one bit)": {
+     "is_knot": true,
+     "binding": true,
+     "loss_on_erasure": true,
+     "coexistence": true,
+     "minimum_width": 4
+    },
+    "two equalities x=v, y=u": {
+     "is_knot": false,
+     "binding": true,
+     "loss_on_erasure": false,
+     "coexistence": true,
+     "minimum_width": 2
+    }
+   },
+   "control: one flipped sign-table entry, violations": 28,
+   "pass": true
+  },
+  "2 Lemma 2 grouped pieces": {
+   "t=1": {
+    "sum = 2^t [x=v][y=u]": true,
+    "pieces": [
+     {
+      "i": 0,
+      "rank rows": 8,
+      "bound rows 2^": 4,
+      "rank columns": 64,
+      "bound columns 2^": 7,
+      "within": true
+     },
+     {
+      "i": 1,
+      "rank rows": 64,
+      "bound rows 2^": 7,
+      "rank columns": 8,
+      "bound columns 2^": 4,
+      "within": true
+     }
+    ],
+    "seconds": 0.0
+   },
+   "t=2": {
+    "sum = 2^t [x=v][y=u]": true,
+    "pieces": [
+     {
+      "i": 0,
+      "rank rows": 64,
+      "bound rows 2^": 8,
+      "rank columns": 4096,
+      "bound columns 2^": 14,
+      "within": true
+     },
+     {
+      "i": 1,
+      "rank rows": 960,
+      "bound rows 2^": 11,
+      "rank columns": 960,
+      "bound columns 2^": 11,
+      "within": true
+     },
+     {
+      "i": 2,
+      "rank rows": 4096,
+      "bound rows 2^": 14,
+      "rank columns": 64,
+      "bound columns 2^": 8,
+      "within": true
+     }
+    ],
+    "seconds": 147.7
+   },
+   "control: rows and columns costs swapped (t=2) violates a bound": true,
+   "pass": true
+  },
+  "4 swap-matrix construction": {
+   "(r,Q,R)=(2,4,2)": {
+    "r": 2,
+    "Q": 4,
+    "R": 2,
+    "degree": 1,
+    "D": 256,
+    "window": [
+     1,
+     2
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 94,
+    "with nonzero correction": 94,
+    "rank(I - A)": 94,
+    "max disagreements of a nonzero entry": 1,
+    "pass": true
+   },
+   "(r,Q,R)=(2,5,2)": {
+    "r": 2,
+    "Q": 5,
+    "R": 2,
+    "degree": 1,
+    "D": 1024,
+    "window": [
+     1,
+     2
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 349,
+    "with nonzero correction": 349,
+    "rank(I - A)": 349,
+    "max disagreements of a nonzero entry": 1,
+    "pass": true
+   },
+   "(r,Q,R)=(3,3,2)": {
+    "r": 3,
+    "Q": 3,
+    "R": 2,
+    "degree": 1,
+    "D": 729,
+    "window": [
+     1,
+     2
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 243,
+    "with nonzero correction": 243,
+    "rank(I - A)": 243,
+    "max disagreements of a nonzero entry": 1,
+    "pass": true
+   },
+   "(r,Q,R)=(2,6,3)": {
+    "r": 2,
+    "Q": 6,
+    "R": 3,
+    "degree": 2,
+    "D": 4096,
+    "window": [
+     1,
+     2,
+     3
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 883,
+    "with nonzero correction": 883,
+    "rank(I - A)": 883,
+    "max disagreements of a nonzero entry": 2,
+    "pass": true
+   },
+   "control: degree R instead of R-1 exceeds the disagreement bound": true,
+   "pass": true
+  },
+  "3 Theorem B pieces": {
+   "lambda=1": {
+    "h": 2,
+    "sum = h! [x=v][y=u]": true,
+    "pieces within stated counts": true,
+    "max over s of log2 R^row + log2 R^col": 7.17,
+    "diagonal cost 4*lambda": 4,
+    "pieces": [
+     {
+      "s": -4,
+      "rank rows": 1,
+      "R_s^row": 1,
+      "rank columns": 4,
+      "R_s^col": 60,
+      "within": true
+     },
+     {
+      "s": -3,
+      "rank rows": 2,
+      "R_s^row": 2,
+      "rank columns": 4,
+      "R_s^col": 41,
+      "within": true
+     },
+     {
+      "s": -2,
+      "rank rows": 3,
+      "R_s^row": 4,
+      "rank columns": 4,
+      "R_s^col": 28,
+      "within": true
+     },
+     {
+      "s": -1,
+      "rank rows": 3,
+      "R_s^row": 7,
+      "rank columns": 4,
+      "R_s^col": 18,
+      "within": true
+     },
+     {
+      "s": 0,
+      "rank rows": 4,
+      "R_s^row": 12,
+      "rank columns": 4,
+      "R_s^col": 12,
+      "within": true
+     },
+     {
+      "s": 1,
+      "rank rows": 4,
+      "R_s^row": 18,
+      "rank columns": 4,
+      "R_s^col": 7,
+      "within": true
+     },
+     {
+      "s": 2,
+      "rank rows": 4,
+      "R_s^row": 28,
+      "rank columns": 4,
+      "R_s^col": 4,
+      "within": true
+     },
+     {
+      "s": 3,
+      "rank rows": 4,
+      "R_s^row": 41,
+      "rank columns": 2,
+      "R_s^col": 2,
+      "within": true
+     },
+     {
+      "s": 4,
+      "rank rows": 4,
+      "R_s^row": 60,
+      "rank columns": 1,
+      "R_s^col": 1,
+      "within": true
+     }
+    ],
+    "seconds": 0.0
+   },
+   "lambda=2": {
+    "h": 4,
+    "sum = h! [x=v][y=u]": true,
+    "pieces within stated counts": true,
+    "max over s of log2 R^row + log2 R^col": 12.132,
+    "diagonal cost 4*lambda": 8,
+    "pieces": [
+     {
+      "s": -8,
+      "rank rows": 1,
+      "R_s^row": 1,
+      "rank columns": 16,
+      "R_s^col": 870,
+      "within": true
+     },
+     {
+      "s": -7,
+      "rank rows": 2,
+      "R_s^row": 2,
+      "rank columns": 16,
+      "R_s^col": 654,
+      "within": true
+     },
+     {
+      "s": -6,
+      "rank rows": 4,
+      "R_s^row": 4,
+      "rank columns": 16,
+      "R_s^col": 489,
+      "within": true
+     },
+     {
+      "s": -5,
+      "rank rows": 6,
+      "R_s^row": 7,
+      "rank columns": 16,
+      "R_s^col": 361,
+      "within": true
+     },
+     {
+      "s": -4,
+      "rank rows": 9,
+      "R_s^row": 12,
+      "rank columns": 16,
+      "R_s^col": 265,
+      "within": true
+     },
+     {
+      "s": -3,
+      "rank rows": 13,
+      "R_s^row": 19,
+      "rank columns": 16,
+      "R_s^col": 191,
+      "within": true
+     },
+     {
+      "s": -2,
+      "rank rows": 15,
+      "R_s^row": 30,
+      "rank columns": 16,
+      "R_s^col": 137,
+      "within": true
+     },
+     {
+      "s": -1,
+      "rank rows": 16,
+      "R_s^row": 45,
+      "rank columns": 16,
+      "R_s^col": 96,
+      "within": true
+     },
+     {
+      "s": 0,
+      "rank rows": 16,
+      "R_s^row": 67,
+      "rank columns": 16,
+      "R_s^col": 67,
+      "within": true
+     },
+     {
+      "s": 1,
+      "rank rows": 16,
+      "R_s^row": 96,
+      "rank columns": 16,
+      "R_s^col": 45,
+      "within": true
+     },
+     {
+      "s": 2,
+      "rank rows": 16,
+      "R_s^row": 137,
+      "rank columns": 15,
+      "R_s^col": 30,
+      "within": true
+     },
+     {
+      "s": 3,
+      "rank rows": 16,
+      "R_s^row": 191,
+      "rank columns": 13,
+      "R_s^col": 19,
+      "within": true
+     },
+     {
+      "s": 4,
+      "rank rows": 16,
+      "R_s^row": 265,
+      "rank columns": 12,
+      "R_s^col": 12,
+      "within": true
+     },
+     {
+      "s": 5,
+      "rank rows": 16,
+      "R_s^row": 361,
+      "rank columns": 7,
+      "R_s^col": 7,
+      "within": true
+     },
+     {
+      "s": 6,
+      "rank rows": 16,
+      "R_s^row": 489,
+      "rank columns": 4,
+      "R_s^col": 4,
+      "within": true
+     },
+     {
+      "s": 7,
+      "rank rows": 16,
+      "R_s^row": 654,
+      "rank columns": 2,
+      "R_s^col": 2,
+      "within": true
+     },
+     {
+      "s": 8,
+      "rank rows": 16,
+      "R_s^row": 870,
+      "rank columns": 1,
+      "R_s^col": 1,
+      "within": true
+     }
+    ],
+    "seconds": 4.4
+   },
+   "control: sign (-1)^i dropped breaks the sum identity (lambda=1)": true,
+   "pass": true,
+   "lambda=3": {
+    "h": 6,
+    "sum = h! [x=v][y=u]": true,
+    "pieces within stated counts": true,
+    "max over s of log2 R^row + log2 R^col": 16.175,
+    "diagonal cost 4*lambda": 12,
+    "pieces": [
+     {
+      "s": -12,
+      "rank rows": 1,
+      "R_s^row": 1,
+      "rank columns": 64,
+      "R_s^col": 7143,
+      "within": true
+     },
+     {
+      "s": -11,
+      "rank rows": 2,
+      "R_s^row": 2,
+      "rank columns": 64,
+      "R_s^col": 5624,
+      "within": true
+     },
+     {
+      "s": -10,
+      "rank rows": 4,
+      "R_s^row": 4,
+      "rank columns": 64,
+      "R_s^col": 4411,
+      "within": true
+     },
+     {
+      "s": -9,
+      "rank rows": 7,
+      "R_s^row": 7,
+      "rank columns": 64,
+      "R_s^col": 3439,
+      "within": true
+     },
+     {
+      "s": -8,
+      "rank rows": 12,
+      "R_s^row": 12,
+      "rank columns": 64,
+      "R_s^col": 2669,
+      "within": true
+     },
+     {
+      "s": -7,
+      "rank rows": 18,
+      "R_s^row": 19,
+      "rank columns": 64,
+      "R_s^col": 2057,
+      "within": true
+     },
+     {
+      "s": -6,
+      "rank rows": 27,
+      "R_s^row": 30,
+      "rank columns": 64,
+      "R_s^col": 1578,
+      "within": true
+     },
+     {
+      "s": -5,
+      "rank rows": 40,
+      "R_s^row": 45,
+      "rank columns": 64,
+      "R_s^col": 1200,
+      "within": true
+     },
+     {
+      "s": -4,
+      "rank rows": 57,
+      "R_s^row": 67,
+      "rank columns": 64,
+      "R_s^col": 908,
+      "within": true
+     },
+     {
+      "s": -3,
+      "rank rows": 64,
+      "R_s^row": 97,
+      "rank columns": 64,
+      "R_s^col": 680,
+      "within": true
+     },
+     {
+      "s": -2,
+      "rank rows": 64,
+      "R_s^row": 139,
+      "rank columns": 64,
+      "R_s^col": 506,
+      "within": true
+     },
+     {
+      "s": -1,
+      "rank rows": 64,
+      "R_s^row": 195,
+      "rank columns": 64,
+      "R_s^col": 372,
+      "within": true
+     },
+     {
+      "s": 0,
+      "rank rows": 64,
+      "R_s^row": 272,
+      "rank columns": 64,
+      "R_s^col": 272,
+      "within": true
+     },
+     {
+      "s": 1,
+      "rank rows": 64,
+      "R_s^row": 372,
+      "rank columns": 64,
+      "R_s^col": 195,
+      "within": true
+     },
+     {
+      "s": 2,
+      "rank rows": 64,
+      "R_s^row": 506,
+      "rank columns": 64,
+      "R_s^col": 139,
+      "within": true
+     },
+     {
+      "s": 3,
+      "rank rows": 64,
+      "R_s^row": 680,
+      "rank columns": 64,
+      "R_s^col": 97,
+      "within": true
+     },
+     {
+      "s": 4,
+      "rank rows": 64,
+      "R_s^row": 908,
+      "rank columns": 62,
+      "R_s^col": 67,
+      "within": true
+     },
+     {
+      "s": 5,
+      "rank rows": 64,
+      "R_s^row": 1200,
+      "rank columns": 45,
+      "R_s^col": 45,
+      "within": true
+     },
+     {
+      "s": 6,
+      "rank rows": 64,
+      "R_s^row": 1578,
+      "rank columns": 30,
+      "R_s^col": 30,
+      "within": true
+     },
+     {
+      "s": 7,
+      "rank rows": 64,
+      "R_s^row": 2057,
+      "rank columns": 19,
+      "R_s^col": 19,
+      "within": true
+     },
+     {
+      "s": 8,
+      "rank rows": 64,
+      "R_s^row": 2669,
+      "rank columns": 12,
+      "R_s^col": 12,
+      "within": true
+     },
+     {
+      "s": 9,
+      "rank rows": 64,
+      "R_s^row": 3439,
+      "rank columns": 7,
+      "R_s^col": 7,
+      "within": true
+     },
+     {
+      "s": 10,
+      "rank rows": 64,
+      "R_s^row": 4411,
+      "rank columns": 4,
+      "R_s^col": 4,
+      "within": true
+     },
+     {
+      "s": 11,
+      "rank rows": 64,
+      "R_s^row": 5624,
+      "rank columns": 2,
+      "R_s^col": 2,
+      "within": true
+     },
+     {
+      "s": 12,
+      "rank rows": 64,
+      "R_s^row": 7143,
+      "rank columns": 1,
+      "R_s^col": 1,
+      "within": true
+     }
+    ],
+    "seconds": 6591.9
+   }
+  }
+ },
+ "all pass": true
+}

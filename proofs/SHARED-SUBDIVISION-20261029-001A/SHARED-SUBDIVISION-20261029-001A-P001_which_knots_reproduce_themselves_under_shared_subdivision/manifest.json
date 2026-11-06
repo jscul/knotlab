@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SHARED-SUBDIVISION-20261029-001A-P001",
+  "canonical_id": "SHARED-SUBDIVISION-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "SHARED-SUBDIVISION-20261029-001A",
+  "proof": "SHARED-SUBDIVISION-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which knots reproduce themselves under shared subdivision of the triangular lattice",
+  "status": "Proved",
+  "claim": "On the triangular-lattice torus, put copies of a three-bit knot on every up triangle (S2, 34 rules) or one placement on every up and one on every down triangle from one class (S1, 88 rules), and cut every triangle of the coarse torus into k^2 with shared new vertices (fine side L = k m). A rule is set-level exact when the fine solutions restricted to the coarse sites are exactly the coarse solutions, and counted exact when every coarse solution has the same number of extensions. Theorem 1 (exact computation: residues modulo four primes and floats, agreeing with an independent count in Python integers on 854 sampled assignments): at scale 2 (tori of side 6 and 8) exactly 22 rules are exact, set-level and counted alike: parity on up triangles (2), parity on all triangles (2), twelve placement pairs of the three-excluded classes and six of twisted not-all-equal; at scale 3 (side 9) exactly the six twisted not-all-equal pairs; not-all-equal on all triangles gains 21,510 forbidden coarse assignments on the 8-torus. Theorem 2: every exact rule has affine solution sets on the tori of side 3 to 6 and at most 2^L solutions on the L-torus (L = 2..11), every other rule has a non-affine solution set on some torus of side 3 to 6, and no rule above 0.1 bit per site is exact; the exact rules form three families (parity on up triangles; frozen rules with at most four solutions; line-constant rules).",
+  "dependencies": [
+    "EXACT-TOWERS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A rule classified exact (or not) whose exact counts on a declared torus contradict the classification.",
+    "The engine disagreeing with the independent count in Python integers on a sampled coarse assignment.",
+    "An exact rule with a non-affine solution set on a torus of side 3 to 6, or a non-exact rule whose solution sets are affine on every such torus.",
+    "An exact rule with more than 2^L solutions on the L-torus for some L in 2..11."
+  ],
+  "lineage": {
+    "home_scope": "SHARED-SUBDIVISION-20261029-001",
+    "epic_path": [
+      "SHARED-SUBDIVISION-20261029-001"
+    ],
+    "parents": [
+      "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json",
+      "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json": "eeec92bbfc5beadfa9645e3da52df559e242bf062c42fa8ffdd67237f84026ac",
+    "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json": "1c189b23f00a9ff7e3e59bf91a72cf87a085176215cf79aa7bf5f503b525a9e8"
+  },
+  "paths": {
+    "manifest": "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json",
+    "identity": "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/identity.json",
+    "directory": "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision",
+    "proof": "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/proof.md",
+    "result": "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json",
+    "check": "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "shared_subdivision_census_shown": false
+  },
+  "foundation_claim_scope": "Copies of one knot class on the triangular-lattice torus, on up triangles or on all triangles with placements fixed per triangle orientation; shared subdivision by 2 (tori of side 6 and 8) and by 3 (side 9); exactness is checked only on these tori, entropy on sides 2 to 11, affineness on sides 3 to 6. Counts are a branch-internal measure; set-level exactness is the canonical reading.",
+  "validation": {
+    "status": "checked: 34 knots in 16 classes, 122 rules; exact fine-extension counts of every coarse assignment at scale 2 on the 6- and 8-tori and at scale 3 on the 9-torus (residues modulo four primes plus floats), agreeing with an independent count in Python integers on 854 sampled assignments; solution counts on tori of side 2 to 11; affineness on sides 3 to 6; the exact rules by family; controls fire (not-all-equal gains forbidden coarse assignments; no rule above 0.1 bit per site is exact); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PATTERN-3D-20261025-001B-E001",
+  "invocations": [
+    {
+      "started": "2026-10-25T10:45:49-07:00",
+      "wall_seconds": 554.0,
+      "outcome": "controls.py passed (4,811 rules compared with the independent law test, 89 survivors among them, no disagreement; planted rules and classifier as required); run.py ran 130 chunks on 24 processes in 215 s and wrote result.json (verdict supported); check_result.py recomputed every reduced rule by brute force, re-verified 300 sampled survivors with the independent law test and replayed four chunks, all matching"
+    }
+  ],
+  "budget": "about 554 s of the 7200 s budget, 24 threads",
+  "independent_check": "check_result.py passed",
+  "post_hoc_note": "The censuses reproduced the scoping counts exactly: 7,948 surviving relations on three labels (7,482 one constant, 336 two constants, 54 three constants, 60 Z2, 3 Z3, 12 free on two labels, 1 free on three) and 14,284 surviving tables on four labels (13,824 one constant, 432 two constants, 12 pair groupoid, 12 Z4, 4 Z2xZ2)."
+}

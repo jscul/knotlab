@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIGNED-3D-20261029-001A-P001",
+  "canonical_id": "SIGNED-3D-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "SIGNED-3D-20261029-001A",
+  "proof": "SIGNED-3D-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Signed bit laws on ordered triangulations: one twist and nothing else",
+  "status": "Proved",
+  "claim": "On ordered triangulations of closed orientable three-manifolds with one bit per edge (the setting of TWIST-3D-20261025-001A), let a signed law give each labelling of a tetrahedron's six ordered edges a weight in {-1, 0, 1}, possibly depending on the tetrahedron's orientation, and require every ordered 2-3 and 1-4 identity with factors lambda and mu. Exhaustively (complete SAT encoding, every support and sign pattern enumerated): if mu is nonzero, then up to the global sign (lambda, mu) is (1, 1), (1, 2) or (2, 16); the support is one of the seven counting supports, the same for both orientations; and up to the face gauge (a sign per face labelling, cancelling between the two tetrahedra at each face) the law is one of twelve: the seven counting laws, the twisted Dijkgraaf-Witten law (-1)^(x_01 x_12 x_23) on even cocycles, its translate on odd cocycles, and three mixed twisted laws on even-or-odd, all orientation-independent. No twisted class has a member invariant under the vertex permutations, so signs add nothing without the vertex order, as order adds nothing without signs. Laws with mu = 0 (state sum killed by every 1-4 move) and the reading with the 2-3 move alone are excluded.",
+  "dependencies": [
+    "TWIST-3D-20261025-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A signed law with mu nonzero whose factors, support or sign class lies outside the stated list.",
+    "A stated representative that fails some move identity by direct evaluation.",
+    "A disagreement between the identities generated here and those of TWIST-3D-20261025-001A.",
+    "A face-gauge copy of a twisted class that is invariant under the vertex permutations and the same for both orientations."
+  ],
+  "lineage": {
+    "home_scope": "SIGNED-3D-20261029-001",
+    "epic_path": [
+      "SIGNED-3D-20261029-001"
+    ],
+    "parents": [
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json",
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/result.json",
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/check.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json": "c726ce5f6bd7ef51a27f6e9972b979fc0b43c7ba8008b2944acbc184a20fd30a",
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/result.json": "ef5933fad30f2347b4a0c518c332b54d8c4c5bf76f4f9f5bf846def741ac9e70",
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/check.py": "e57e72a3f782f2e5ec733e6d14903900117eb98709698e4dd0d4e61fee526538"
+  },
+  "paths": {
+    "manifest": "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/manifest.json",
+    "identity": "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/identity.json",
+    "directory": "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else",
+    "proof": "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/proof.md",
+    "result": "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/result.json",
+    "check": "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "signed_three_manifold_census_shown": true
+  },
+  "foundation_claim_scope": "Signed Boolean state sums with one bit per edge on ordered triangulations of closed orientable three-manifolds, invariant under the ordered 2-3 and 1-4 moves; the classification of their weights and what their supports are.",
+  "validation": {
+    "status": "checked: the 10,880 identities equal TWIST-3D-20261025-001A's generator; all 165 factor pairs solved; supports and sign patterns enumerated to exhaustion; twelve face-gauge orbits identified with the stated representatives; representatives and random gauges pass every identity by direct evaluation; symmetry test of every gauge copy; controls fire; proof in proof.md; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "the twisted law and its invariance are classical (Dijkgraaf-Witten 1990, Wakui 1992); the exhaustive census with its support statement and the order corollary: no overlap found in a bounded search of two queries on 2026-10-29 (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

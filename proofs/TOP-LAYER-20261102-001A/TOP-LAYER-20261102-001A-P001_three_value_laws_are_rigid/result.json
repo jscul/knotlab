@@ -1,0 +1,68 @@
+{
+ "artifact_id": "TOP-LAYER-20261102-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json": "Proved",
+     "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 of the 531441 Mal'tsev operations on three values, 1020 have exactly one nontrivial congruence (none has two); up to relabelling they form 185 classes": {
+   "info": {
+    "classes": 185,
+    "non-simple": 1020,
+    "operations": 531441,
+    "simple": 530421
+   },
+   "pass": true
+  },
+  "2 for each of the 185 classes, every three-place knot (all subuniverses of A^3 enumerated) is pulled back from a two-element abelian section, and every such pull-back is a knot: the two sets coincide; no class has a three-element abelian section": {
+   "info": {
+    "classes": 185,
+    "classes with a knot": 57,
+    "three-place knots": 452
+   },
+   "pass": true
+  },
+  "3 random systems of three-place knots of every class on all 73 cubic substrates: global failures occur (a variable confined to a two-element block shortens the parity of a line that reads its top bit), and every one is rigid": {
+   "info": {
+    "failing": 7384,
+    "failing globally": 1,
+    "global and rigid": 1,
+    "systems": 16644
+   },
+   "pass": true
+  },
+  "4 random systems of four-place knots (pulled back from two-element sections) of every class on random 4-regular substrates with 5 to 8 points: every global failure is rigid": {
+   "info": {
+    "classes with four-place knots": 57,
+    "failing globally": 320,
+    "global and rigid": 320,
+    "systems": 1710
+   },
+   "pass": true
+  },
+  "5 Z3 and 300 sampled classes of simple Mal'tsev laws on three values: every three-place knot is pulled back from a two- or three-element abelian section (the sets coincide), and every global failure found on cubic and 4-regular substrates is rigid": {
+   "info": {
+    "4-regular global failures": 119,
+    "4-regular systems": 558,
+    "classes": 301,
+    "classes with a knot": 84,
+    "cubic global failures": 3,
+    "cubic systems": 3767,
+    "with a three-element section": 1
+   },
+   "pass": true
+  }
+ },
+ "claim": "Every law on three values that composes like cycles is rigid on the substrates tested. All 531441 Mal'tsev operations on three values give laws that compose like cycles (BEYOND-TWO B); the 1020 non-simple ones fall into 185 classes up to relabelling. For every class: (1) every three-place knot (all subuniverses of A^3, enumerated exhaustively) is pulled back from a two-element abelian section of its ranges, and every such pull-back is a knot; (2) random systems of three-place knots on the 73 connected cubic substrates with at most 8 points rarely fail globally (a variable confined to a two-element block shortens the parity of a line that reads its top bit), and every global failure found is rigid: after any line is removed only ties remain; (3) on random 4-regular substrates with 5 to 8 points, with four-place knots pulled back from two-element sections, every global failure found is rigid. The same holds for Z3 and for 300 sampled classes of simple three-value laws (sections of two or three elements). Every abelian section here has one layer; ticket C proves that this forces rigidity.",
+ "kind": "proof",
+ "proof": "TOP-LAYER-20261102-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TOP-LAYER-20261102-001A"
+}

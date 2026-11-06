@@ -1,0 +1,87 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmonofont{DejaVu Sans Mono}[Scale=0.8]
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\sloppy
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\begin{document}
+\raggedright
+
+{\large\bfseries Independent build and definitional check of the formalization of arXiv:2609.23015}
+
+Prespatial Labs, 19 October 2026. Carried out by an AI agent (Claude, Anthropic)
+at our request. This is not a review by a human expert.
+
+\textbf{What was replayed.} Commit \texttt{8904bf09} of
+\url{https://github.com/kbr-/math-research}, with
+\texttt{leanprover/lean4:v4.34.0-rc2} and Mathlib \texttt{67248ba}, on our own
+machine. The cache command \texttt{lake exe cache get
+claims/BitPHPPreprintRevision1.lean} fetched nothing, so Mathlib was compiled
+from source.
+\begin{itemize}
+\item \texttt{python3 verify.py --target claims/BitPHPPreprintRevision1.lean}
+passed on all 7 audited declarations. Each depends only on \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound}.
+\item \texttt{lake env leanchecker --fresh claims.BitPHPPreprintRevision1}
+passed (206\,s).
+\item The controls behaved as they should:
+\begin{itemize}
+\item a \texttt{sorry} probe is reported as \texttt{sorryAx};
+\item the main theorem with 32768 replaced by 1 in its statement is rejected,
+at line 41 of the altered copy;
+\item with 32768 replaced by 1 throughout \texttt{BitPHPExponential.lean}, the
+proof fails only at line 125, the inequality that calibrates the bound.
+\end{itemize}
+\end{itemize}
+
+\textbf{Definitions.} These are the items listed in \texttt{FEEDBACK.md}. We
+compared every definition that \texttt{MathResearch.bitPHP\_exponential}
+depends on with the paper's (1.1) and (1.2) and with the standard system.
+\begin{itemize}
+\item Linear clauses and their truth, and entailment, are faithful.
+\item \texttt{AffineDAG} has four step constructors: initial clause, semantic
+weakening from one earlier line, resolution on any affine form $u$ against
+$1-u$, and any line implied by two earlier lines.
+\item Refutations: premises are any earlier lines, with reuse unrestricted.
+Size is the number of lines, initial ones included.
+\item The bit variables, the $2^\ell$ labels, the literal $x_{i,t}+z_t$ and
+the initial clauses are exactly the usual BPHP clauses with $2^\ell+1$
+pigeons.
+\item The statement is the paper's Theorem 1.1.
+\end{itemize}
+The rule set contains every standard $\mathrm{Res}(\oplus)$ rule set, since
+each standard rule is a sound inference from at most two lines. So the theorem
+gives the bound for standard DAG-like $\mathrm{Res}(\oplus)$.
+
+\textbf{Not vacuous.} Two Lean witnesses, against the author's definitions,
+each depend only on the three standard axioms:
+\begin{itemize}
+\item for every $\ell$, the formal clause set with $2^\ell+1$ pigeons is
+unsatisfiable;
+\item the formal system refutes $\ell=1$ (three pigeons, two holes) in 11
+lines.
+\end{itemize}
+The kernel rejects the first witness with $2^\ell$ pigeons, and the second
+with one step given the wrong premises.
+
+\textbf{Not covered.}
+\begin{itemize}
+\item The prose proof was not checked line by line.
+\item Novelty was not assessed.
+\item Trust still rests on Lean's kernel, Mathlib at the pinned revision and
+the release-candidate toolchain.
+\end{itemize}
+This check covers the \texttt{FEEDBACK.md} item ``Get the formalization built
+and its axioms printed by an independent party''. Being an AI review, it does
+not replace the independent human $\mathrm{Res}(\oplus)$ expert that the file
+also asks for. The witness file is available on request.
+
+\end{document}

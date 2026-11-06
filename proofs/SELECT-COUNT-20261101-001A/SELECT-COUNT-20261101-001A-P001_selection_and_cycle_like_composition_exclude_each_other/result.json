@@ -1,0 +1,351 @@
+{
+ "artifact_id": "SELECT-COUNT-20261101-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "Proved",
+     "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/manifest.json": "Proved",
+     "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/result.json": "passed",
+     "proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/manifest.json": "Proved",
+     "proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/result.json": "passed",
+     "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json": "Proved",
+     "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/result.json": "passed",
+     "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json": "Proved",
+     "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json": "passed",
+     "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json": "Proved",
+     "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the five weak four-place classes (13-17) are the classes FOUR-PREFER D leaves open; all 288 of their relations are knots, and none is affine, bijunctive or complement-closed": {
+   "info": {
+    "class 13": {
+     "affine (members)": 0,
+     "bijunctive (members)": 0,
+     "complement-closed (members)": 0,
+     "excluded states (canonical)": [
+      "1011",
+      "1101",
+      "1110"
+     ],
+     "knots (members)": 64,
+     "relations": 64,
+     "states": 13
+    },
+    "class 14": {
+     "affine (members)": 0,
+     "bijunctive (members)": 0,
+     "complement-closed (members)": 0,
+     "excluded states (canonical)": [
+      "0111",
+      "1011",
+      "1100"
+     ],
+     "knots (members)": 96,
+     "relations": 96,
+     "states": 13
+    },
+    "class 15": {
+     "affine (members)": 0,
+     "bijunctive (members)": 0,
+     "complement-closed (members)": 0,
+     "excluded states (canonical)": [
+      "0111",
+      "1000",
+      "1110"
+     ],
+     "knots (members)": 48,
+     "relations": 48,
+     "states": 13
+    },
+    "class 16": {
+     "affine (members)": 0,
+     "bijunctive (members)": 0,
+     "complement-closed (members)": 0,
+     "excluded states (canonical)": [
+      "1101",
+      "1110"
+     ],
+     "knots (members)": 48,
+     "relations": 48,
+     "states": 14
+    },
+    "class 17": {
+     "affine (members)": 0,
+     "bijunctive (members)": 0,
+     "complement-closed (members)": 0,
+     "excluded states (canonical)": [
+      "1011",
+      "1100"
+     ],
+     "knots (members)": 32,
+     "relations": 32,
+     "states": 14
+    },
+    "classes left open by FOUR-PREFER D": [
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   "pass": true
+  },
+  "2 every relation of the five weak classes yields a knot with a forcing place (13, 16, 17 directly; 14 and 15 by identifying two places, giving three-place clauses, with opposite signs for 6 relations of class 15), and two copies sharing that place form a hub: both are circuits and their union minus the shared place is unconstrained, so circuit elimination fails": {
+   "info": {
+    "class 13": {
+     "canonical example": {
+      "construction": "the relation itself",
+      "excluded": [
+       "1011",
+       "1101",
+       "1110"
+      ],
+      "forcing (place, value)": [
+       0,
+       0
+      ],
+      "hub": {
+       "both copies are circuits": true,
+       "ranges full": true,
+       "union minus the shared place unconstrained (hub)": true
+      },
+      "knot states": [
+       "0000",
+       "0001",
+       "0010",
+       "0011",
+       "0100",
+       "0101",
+       "0110",
+       "0111",
+       "1000",
+       "1001",
+       "1010",
+       "1100",
+       "1111"
+      ],
+      "places": 4
+     },
+     "members by construction": {
+      "the relation itself": 64
+     }
+    },
+    "class 14": {
+     "canonical example": {
+      "construction": "places 0 and 1 identified",
+      "excluded": [
+       "100"
+      ],
+      "forcing (place, value)": [
+       0,
+       0
+      ],
+      "hub": {
+       "both copies are circuits": true,
+       "ranges full": true,
+       "union minus the shared place unconstrained (hub)": true
+      },
+      "knot states": [
+       "000",
+       "001",
+       "010",
+       "011",
+       "101",
+       "110",
+       "111"
+      ],
+      "places": 3
+     },
+     "members by construction": {
+      "two places identified": 96
+     }
+    },
+    "class 15": {
+     "canonical example": {
+      "construction": "places 0 and 1 identified",
+      "excluded": [
+       "110"
+      ],
+      "forcing (place, value)": [
+       0,
+       0
+      ],
+      "hub": {
+       "both copies are circuits": true,
+       "ranges full": true,
+       "union minus the shared place unconstrained (hub)": true
+      },
+      "knot states": [
+       "000",
+       "001",
+       "010",
+       "011",
+       "100",
+       "101",
+       "111"
+      ],
+      "places": 3
+     },
+     "members by construction": {
+      "two places identified": 42,
+      "two places identified with opposite signs": 6
+     }
+    },
+    "class 16": {
+     "canonical example": {
+      "construction": "the relation itself",
+      "excluded": [
+       "1101",
+       "1110"
+      ],
+      "forcing (place, value)": [
+       0,
+       0
+      ],
+      "hub": {
+       "both copies are circuits": true,
+       "ranges full": true,
+       "union minus the shared place unconstrained (hub)": true
+      },
+      "knot states": [
+       "0000",
+       "0001",
+       "0010",
+       "0011",
+       "0100",
+       "0101",
+       "0110",
+       "0111",
+       "1000",
+       "1001",
+       "1010",
+       "1011",
+       "1100",
+       "1111"
+      ],
+      "places": 4
+     },
+     "members by construction": {
+      "the relation itself": 48
+     }
+    },
+    "class 17": {
+     "canonical example": {
+      "construction": "the relation itself",
+      "excluded": [
+       "1011",
+       "1100"
+      ],
+      "forcing (place, value)": [
+       0,
+       0
+      ],
+      "hub": {
+       "both copies are circuits": true,
+       "ranges full": true,
+       "union minus the shared place unconstrained (hub)": true
+      },
+      "knot states": [
+       "0000",
+       "0001",
+       "0010",
+       "0011",
+       "0100",
+       "0101",
+       "0110",
+       "0111",
+       "1000",
+       "1001",
+       "1010",
+       "1101",
+       "1110",
+       "1111"
+      ],
+      "places": 4
+     },
+     "members by construction": {
+      "the relation itself": 32
+     }
+    }
+   },
+   "pass": true
+  },
+  "3 lemmas of the general statement, exhaustively at three and four places: no bijunctive relation is a knot (a bijunctive relation is determined by its two-place projections, which a knot leaves full), and the affine knots are exactly the two parity cosets, whose solution counts are 2^(n-r) or 0": {
+   "info": {
+    "3 places": {
+     "affine knots": 2,
+     "affine knots are the two parity cosets": true,
+     "bijunctive knots": 0,
+     "knots": 34
+    },
+    "4 places": {
+     "affine knots": 2,
+     "affine knots are the two parity cosets": true,
+     "bijunctive knots": 0,
+     "knots": 742
+    }
+   },
+   "pass": true
+  },
+  "4 at three places: of the 34 knots only parity is affine (composes its knots like cycles, by Theorem 2) and none is bijunctive; the knot (not-all-equal), the only law with mutual selection (PINNING C), is not affine; so at three places the selecting law and the composing law are different": {
+   "info": {
+    "34 knots": {
+     "Fibonacci (no-lone)": {
+      "affine": 0,
+      "bijunctive": 0,
+      "relations": 8,
+      "with a forcing place": 0
+     },
+     "clause": {
+      "affine": 0,
+      "bijunctive": 0,
+      "relations": 8,
+      "with a forcing place": 8
+     },
+     "not-all-equal": {
+      "affine": 0,
+      "bijunctive": 0,
+      "relations": 4,
+      "with a forcing place": 0
+     },
+     "parity": {
+      "affine": 2,
+      "bijunctive": 0,
+      "relations": 2,
+      "with a forcing place": 0
+     },
+     "x or (y != z)": {
+      "affine": 0,
+      "bijunctive": 0,
+      "relations": 12,
+      "with a forcing place": 12
+     }
+    },
+    "mutual selection (PINNING C)": [
+     "not-all-equal"
+    ]
+   },
+   "pass": true
+  },
+  "5 control: parity, the composing law, has no forcing place and its knots satisfy circuit elimination, while the test does find the three-place clause's hub": {
+   "info": {
+    "four-place parity has no forcing place": true,
+    "identifying two places of four-place parity gives a two-place relation, not a knot": true,
+    "the hub test fires on the clause x or y or z (forcing place)": true,
+    "two parity knots sharing a place: union minus it is constrained (elimination holds)": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Selection and cycle-like composition exclude each other. (1) Each of the five weak four-place classes of FOUR-PREFER (13-17, the only four-place laws that could still have mutual selection) contains a knot with a forcing place, a place where one value allows every state: directly for 13, 16 and 17, and after identifying two places for 14 and 15, which become three-place clauses (for 6 of the 48 relations of class 15 the identified places carry opposite signs). Two copies of such a knot sharing only that place form a hub (KNOT-CIRCUITS Proposition 3): both are circuits of their system, and their union minus the shared place is unconstrained, so circuit elimination fails and none of the five composes its knots like cycles, as KNOT-CIRCUITS Theorem 2 predicts (none is affine or bijunctive). (2) For every Boolean law with at least one knot, plain or signed, of any arity: if its knots compose like cycles it is affine (Theorem 2 allows affine or bijunctive, and a bijunctive relation is determined by its two-place projections, so a bijunctive law has no knot), and an affine law's solution count is 2^(n-r) or 0, so (M2) fails and it has no mutual selection (PINNING C). So no law with a knot both selects its spaces and composes its knots like cycles: at three places the knot selects and parity composes, and at four places the weak classes cannot do both, whether or not they ever fail. The knot is needed: a knot-free law such as signed two-clauses can fail recognisably with a #P-complete count. Checked: knots, forcing places and hubs for every relation of the five classes; the closure tests; bijunctive knot-freeness and the affine knots, exhaustively at three and four places; the three-place table; a parity control.",
+ "kind": "proof",
+ "proof": "SELECT-COUNT-20261101-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SELECT-COUNT-20261101-001A"
+}

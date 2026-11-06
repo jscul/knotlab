@@ -1,0 +1,1280 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SIMPLEX-GASKETS-20261029-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 2,
+    "mismatched": {}
+   }
+  },
+  "1 closed forms of the standing wave (d = 1 to 7, all tuples)": {
+   "ok": true,
+   "detail": {
+    "per d: Chebyshev form, two sectors, pi - theta, Legendre = (-1)^d w_(pi/3) and 1 + sum s_0 s_i mod 3, tau at y = +-2, y | U for even E": {
+     "1": true,
+     "2": true,
+     "3": true,
+     "4": true,
+     "5": true,
+     "6": true,
+     "7": true
+    },
+    "d = 1 is y [x_0 = x_1]": true
+   }
+  },
+  "2 the Legendre law is exact, lambda = (-1)^N mod 3 (exact integers)": {
+   "ok": true,
+   "detail": {
+    "d=2 k=1": "1",
+    "d=2 k=2": "-1",
+    "d=2 k=3": "-4",
+    "d=2 k=4": "13",
+    "d=2 k=5": "85",
+    "d=2 k=6": "-634",
+    "d=2 k=7": "-7492",
+    "d=3 k=1": "1",
+    "d=3 k=2": "1",
+    "d=3 k=3": "-128",
+    "d=3 k=4": "-187",
+    "d=3 k=5": "124990",
+    "d=4 k=1": "1",
+    "d=4 k=2": "1",
+    "d=4 k=3": "65536",
+    "d=5 k=1": "1",
+    "d=5 k=2": "-1",
+    "d=6 k=1": "1",
+    "d=6 k=2": "-1",
+    "d=7 k=2": "1"
+   }
+  },
+  "3 lambda is a monic integer polynomial in y = 2 cos(theta) of degree d(#T-1), lambda(2) = 2^N, level 2 closed form": {
+   "ok": true,
+   "detail": {
+    "d=2 k=2": {
+     "degree": 4,
+     "d(#T-1)": 4,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": -1,
+     "factors": "(1, [(y, 2), (y**2 - 2, 1)])"
+    },
+    "d=2 k=3": {
+     "degree": 10,
+     "d(#T-1)": 10,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": -4,
+     "factors": "(1, [(y, 4), (y**6 - 5*y**4 + 8*y**2 - 8, 1)])"
+    },
+    "d=2 k=4": {
+     "degree": 18,
+     "d(#T-1)": 18,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 13,
+     "factors": "(1, [(y, 6), (y**2 - 2, 1), (y**10 - 7*y**8 + 19*y**6 - 34*y**4 + 40*y**2 - 32, 1)])"
+    },
+    "d=2 k=5": {
+     "degree": 28,
+     "d(#T-1)": 28,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 85,
+     "factors": "(1, [(y, 8), (y**20 - 14*y**18 + 87*y**16 - 331*y**14 + 892*y**12 - 1838*y**10 + 3016*y**8 - 3968*y**6 + 4032*y**4 - 2816*y**2 + 1024, 1)])"
+    },
+    "d=3 k=2": {
+     "degree": 9,
+     "d(#T-1)": 9,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": -1,
+     "factors": "(1, [(y, 3), (y**2 - 2, 3)])"
+    },
+    "d=3 k=3": {
+     "degree": 27,
+     "d(#T-1)": 27,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 128,
+     "factors": "(1, [(y, 9), (y**6 - 5*y**4 + 8*y**2 - 8, 1), (y**12 - 13*y**10 + 71*y**8 - 207*y**6 + 324*y**4 - 224*y**2 + 16, 1)])"
+    },
+    "d=3 k=4": {
+     "degree": 57,
+     "d(#T-1)": 57,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 187,
+     "factors": "degree 57"
+    },
+    "d=4 k=2": {
+     "degree": 16,
+     "d(#T-1)": 16,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 1,
+     "factors": "(1, [(y, 4), (y**2 - 2, 6)])"
+    },
+    "d=4 k=3": {
+     "degree": 56,
+     "d(#T-1)": 56,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 65536,
+     "factors": "degree 56"
+    },
+    "d=5 k=2": {
+     "degree": 25,
+     "d(#T-1)": 25,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": 1,
+     "factors": "(1, [(y, 5), (y**2 - 2, 10)])"
+    },
+    "d=6 k=2": {
+     "degree": 36,
+     "d(#T-1)": 36,
+     "monic": true,
+     "R = lambda w at all samples": true,
+     "same polynomial from three other primes": true,
+     "lambda(2) = 2^N": true,
+     "lambda(1)": -1,
+     "factors": "degree 36"
+    }
+   }
+  },
+  "4 the sector formula lambda = D^(1-#T) Z(1) equals the direct factor": {
+   "ok": true,
+   "detail": {
+    "d=2 k=2 theta=0.41": [
+     4.590587932,
+     4.590587932
+    ],
+    "d=2 k=2 theta=1.3": [
+     -0.490521671,
+     -0.490521671
+    ],
+    "d=2 k=2 theta=2.2": [
+     -0.851517508,
+     -0.851517508
+    ],
+    "d=2 k=3 theta=0.41": [
+     4.54918041,
+     4.54918041
+    ],
+    "d=2 k=3 theta=1.3": [
+     -0.499436346,
+     -0.499436346
+    ],
+    "d=2 k=3 theta=2.2": [
+     -7.397205087,
+     -7.397205087
+    ],
+    "d=2 k=4 theta=0.41": [
+     -1274.10685961,
+     -1274.10685961
+    ],
+    "d=2 k=4 theta=1.3": [
+     0.921688252,
+     0.921688252
+    ],
+    "d=2 k=4 theta=2.2": [
+     19.614733399,
+     19.614733399
+    ],
+    "d=2 k=5 theta=0.41": [
+     -53100.62840545,
+     -53100.62840545
+    ],
+    "d=2 k=5 theta=1.3": [
+     3.170630155,
+     3.170630155
+    ],
+    "d=2 k=5 theta=2.2": [
+     178.690300075,
+     178.690300075
+    ],
+    "d=3 k=2 theta=0.41": [
+     15.676001013,
+     15.676001013
+    ],
+    "d=3 k=2 theta=1.3": [
+     -0.770759624,
+     -0.770759624
+    ],
+    "d=3 k=2 theta=2.2": [
+     0.378659523,
+     0.378659523
+    ],
+    "d=3 k=3 theta=0.41": [
+     -940.840467564,
+     -940.840467564
+    ],
+    "d=3 k=3 theta=1.3": [
+     0.568527537,
+     0.568527537
+    ],
+    "d=3 k=3 theta=2.2": [
+     -344.428851268,
+     -344.428851268
+    ],
+    "d=4 k=2 theta=0.41": [
+     73.039445313,
+     73.039445313
+    ],
+    "d=4 k=2 theta=1.3": [
+     2.075554548,
+     2.075554548
+    ],
+    "d=4 k=2 theta=2.2": [
+     0.103500678,
+     0.103500678
+    ],
+    "d=5 k=2 theta=0.41": [
+     464.33867857,
+     464.33867857
+    ],
+    "d=5 k=2 theta=1.3": [
+     9.578638553,
+     9.578638553
+    ],
+    "d=5 k=2 theta=2.2": [
+     -0.017389076,
+     -0.017389076
+    ]
+   }
+  },
+  "5 edge-set lemma: tau reproduces itself with factor 2^N; the only even edge sets are the empty set and the d axis paths": {
+   "ok": true,
+   "detail": {
+    "tau exact with 2^N in every case of check 2": true,
+    "edge sets found by enumeration (d + 1 expected)": {
+     "d=2 k=1": 3,
+     "d=2 k=2": 3,
+     "d=2 k=3": 3,
+     "d=2 k=4": 3,
+     "d=3 k=2": 4,
+     "d=3 k=3": 4,
+     "d=4 k=2": 5,
+     "d=5 k=2": 6
+    }
+   }
+  },
+  "6 no zero at theta = j pi/q with q an odd prime power (exact gcd with minimal polynomials, n <= 60)": {
+   "ok": true,
+   "detail": {
+    "n <= 60 with 2 cos(2 pi m/n) a root (theta = 2 pi m/n)": {
+     "d=2 k=2": [
+      4,
+      8
+     ],
+     "d=2 k=3": [
+      4
+     ],
+     "d=2 k=4": [
+      4,
+      8
+     ],
+     "d=2 k=5": [
+      4
+     ],
+     "d=3 k=2": [
+      4,
+      8
+     ],
+     "d=3 k=3": [
+      4
+     ],
+     "d=3 k=4": [
+      4,
+      8
+     ],
+     "d=4 k=2": [
+      4,
+      8
+     ],
+     "d=4 k=3": [
+      4
+     ],
+     "d=5 k=2": [
+      4,
+      8
+     ],
+     "d=6 k=2": [
+      4,
+      8
+     ]
+    },
+    "floating-point factor at pi/q": {
+     "d=2 k=4 pi/3": 13.0,
+     "d=2 k=4 pi/5": -279.872283,
+     "d=2 k=4 pi/7": -1166.115698,
+     "d=2 k=4 pi/9": -1174.955058,
+     "d=3 k=3 pi/3": 128.0,
+     "d=3 k=3 pi/5": 1435.395855,
+     "d=3 k=3 pi/7": 983.555678,
+     "d=3 k=3 pi/9": -5048.052158,
+     "d=4 k=2 pi/3": 1.0,
+     "d=4 k=2 pi/5": 0.381966,
+     "d=4 k=2 pi/7": 39.638318,
+     "d=4 k=2 pi/9": 161.349276,
+     "d=5 k=2 pi/3": 1.0,
+     "d=5 k=2 pi/5": 0.09017,
+     "d=5 k=2 pi/7": 172.700025,
+     "d=5 k=2 pi/9": 1670.777749
+    }
+   }
+  },
+  "7 knot criterion (K1-K3 on supports, d = 2 to 9) and knotlab on named supports": {
+   "ok": true,
+   "detail": {
+    "knot angles (q <= 13) per d": {
+     "2": [
+      "1pi/3",
+      "2pi/3"
+     ],
+     "3": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/4",
+      "3pi/4",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5",
+      "1pi/6",
+      "5pi/6",
+      "1pi/7",
+      "2pi/7",
+      "3pi/7",
+      "4pi/7",
+      "5pi/7",
+      "6pi/7",
+      "1pi/8",
+      "3pi/8",
+      "5pi/8",
+      "7pi/8",
+      "1pi/9",
+      "2pi/9",
+      "4pi/9",
+      "5pi/9",
+      "7pi/9",
+      "8pi/9",
+      "1pi/10",
+      "3pi/10",
+      "7pi/10",
+      "9pi/10",
+      "1pi/11",
+      "2pi/11",
+      "3pi/11",
+      "4pi/11",
+      "5pi/11",
+      "6pi/11",
+      "7pi/11",
+      "8pi/11",
+      "9pi/11",
+      "10pi/11",
+      "1pi/12",
+      "5pi/12",
+      "7pi/12",
+      "11pi/12",
+      "1pi/13",
+      "2pi/13",
+      "3pi/13",
+      "4pi/13",
+      "5pi/13",
+      "6pi/13",
+      "7pi/13",
+      "8pi/13",
+      "9pi/13",
+      "10pi/13",
+      "11pi/13",
+      "12pi/13",
+      "generic"
+     ],
+     "4": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5"
+     ],
+     "5": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/4",
+      "3pi/4",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5",
+      "1pi/6",
+      "5pi/6",
+      "1pi/7",
+      "2pi/7",
+      "3pi/7",
+      "4pi/7",
+      "5pi/7",
+      "6pi/7",
+      "1pi/8",
+      "3pi/8",
+      "5pi/8",
+      "7pi/8",
+      "1pi/9",
+      "2pi/9",
+      "4pi/9",
+      "5pi/9",
+      "7pi/9",
+      "8pi/9",
+      "1pi/10",
+      "3pi/10",
+      "7pi/10",
+      "9pi/10",
+      "1pi/11",
+      "2pi/11",
+      "3pi/11",
+      "4pi/11",
+      "5pi/11",
+      "6pi/11",
+      "7pi/11",
+      "8pi/11",
+      "9pi/11",
+      "10pi/11",
+      "1pi/12",
+      "5pi/12",
+      "7pi/12",
+      "11pi/12",
+      "1pi/13",
+      "2pi/13",
+      "3pi/13",
+      "4pi/13",
+      "5pi/13",
+      "6pi/13",
+      "7pi/13",
+      "8pi/13",
+      "9pi/13",
+      "10pi/13",
+      "11pi/13",
+      "12pi/13",
+      "generic"
+     ],
+     "6": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5",
+      "1pi/7",
+      "2pi/7",
+      "3pi/7",
+      "4pi/7",
+      "5pi/7",
+      "6pi/7"
+     ],
+     "7": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/4",
+      "3pi/4",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5",
+      "1pi/6",
+      "5pi/6",
+      "1pi/7",
+      "2pi/7",
+      "3pi/7",
+      "4pi/7",
+      "5pi/7",
+      "6pi/7",
+      "1pi/8",
+      "3pi/8",
+      "5pi/8",
+      "7pi/8",
+      "1pi/9",
+      "2pi/9",
+      "4pi/9",
+      "5pi/9",
+      "7pi/9",
+      "8pi/9",
+      "1pi/10",
+      "3pi/10",
+      "7pi/10",
+      "9pi/10",
+      "1pi/11",
+      "2pi/11",
+      "3pi/11",
+      "4pi/11",
+      "5pi/11",
+      "6pi/11",
+      "7pi/11",
+      "8pi/11",
+      "9pi/11",
+      "10pi/11",
+      "1pi/12",
+      "5pi/12",
+      "7pi/12",
+      "11pi/12",
+      "1pi/13",
+      "2pi/13",
+      "3pi/13",
+      "4pi/13",
+      "5pi/13",
+      "6pi/13",
+      "7pi/13",
+      "8pi/13",
+      "9pi/13",
+      "10pi/13",
+      "11pi/13",
+      "12pi/13",
+      "generic"
+     ],
+     "8": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5",
+      "1pi/7",
+      "2pi/7",
+      "3pi/7",
+      "4pi/7",
+      "5pi/7",
+      "6pi/7",
+      "1pi/9",
+      "2pi/9",
+      "4pi/9",
+      "5pi/9",
+      "7pi/9",
+      "8pi/9"
+     ],
+     "9": [
+      "1pi/3",
+      "2pi/3",
+      "1pi/4",
+      "3pi/4",
+      "1pi/5",
+      "2pi/5",
+      "3pi/5",
+      "4pi/5",
+      "1pi/6",
+      "5pi/6",
+      "1pi/7",
+      "2pi/7",
+      "3pi/7",
+      "4pi/7",
+      "5pi/7",
+      "6pi/7",
+      "1pi/8",
+      "3pi/8",
+      "5pi/8",
+      "7pi/8",
+      "1pi/9",
+      "2pi/9",
+      "4pi/9",
+      "5pi/9",
+      "7pi/9",
+      "8pi/9",
+      "1pi/10",
+      "3pi/10",
+      "7pi/10",
+      "9pi/10",
+      "1pi/11",
+      "2pi/11",
+      "3pi/11",
+      "4pi/11",
+      "5pi/11",
+      "6pi/11",
+      "7pi/11",
+      "8pi/11",
+      "9pi/11",
+      "10pi/11",
+      "1pi/12",
+      "5pi/12",
+      "7pi/12",
+      "11pi/12",
+      "1pi/13",
+      "2pi/13",
+      "3pi/13",
+      "4pi/13",
+      "5pi/13",
+      "6pi/13",
+      "7pi/13",
+      "8pi/13",
+      "9pi/13",
+      "10pi/13",
+      "11pi/13",
+      "12pi/13",
+      "generic"
+     ]
+    },
+    "knotlab": {
+     "d=3 pi/3 (not exactly two ones)": {
+      "is_knot": true,
+      "allowed matches": true
+     },
+     "d=3 pi/4 (odd parity)": {
+      "is_knot": true,
+      "allowed matches": true
+     },
+     "d=4 pi/5 (five-place not-all-equal)": {
+      "is_knot": true,
+      "allowed matches": true
+     },
+     "d=4 pi/3 (not one or four ones)": {
+      "is_knot": true,
+      "allowed matches": true
+     },
+     "d=5 pi/3 (not zero, three or six ones)": {
+      "is_knot": true,
+      "allowed matches": true
+     },
+     "d=6 pi/7 (seven-place not-all-equal)": {
+      "is_knot": true,
+      "allowed matches": true
+     }
+    }
+   }
+  },
+  "8 towers: lambda^((n^m-1)/(n-1)) at level m; up simplices share at most one vertex; dimensions log C(k+d-1,d)/log k -> d": {
+   "ok": true,
+   "detail": {
+    "tower factors": {
+     "d=2 k=2 m=2": "1",
+     "d=2 k=2 m=3": "-1",
+     "d=2 k=3 m=2": "-16384",
+     "d=2 k=4 m=2": "1792160394037",
+     "d=3 k=2 m=2": "1",
+     "d=3 k=2 m=3": "1",
+     "d=3 k=3 m=2": "-151115727451828646838272",
+     "d=4 k=2 m=2": "1"
+    },
+    "up simplices share <= 1 vertex (d <= 5, k <= 4)": true,
+    "#T = C(k+d-1, d)": true,
+    "similarity dimension at k = 2, 3, 4, 10, 100, 10^6": {
+     "d=2": [
+      1.585,
+      1.6309,
+      1.661,
+      1.7404,
+      1.8516,
+      1.9498
+     ],
+     "d=3": [
+      2.0,
+      2.0959,
+      2.161,
+      2.3424,
+      2.6174,
+      2.8703
+     ],
+     "d=4": [
+      2.3219,
+      2.465,
+      2.5646,
+      2.8543,
+      3.3228,
+      3.77
+     ],
+     "d=5": [
+      2.585,
+      2.7712,
+      2.9037,
+      3.3015,
+      3.9818,
+      4.6535
+     ],
+     "d=6": [
+      2.8074,
+      3.0331,
+      3.1962,
+      3.6994,
+      4.6033,
+      5.5238
+     ]
+    },
+    "d - log(d!)/log k <= dimension <= d, increasing in k": true
+   }
+  },
+  "9 the wave reproduces itself at four angles (floating point), factor = lambda(2 cos theta)": {
+   "ok": true,
+   "detail": {
+    "d=2 k=2 theta=0.3700": [
+     5.135217,
+     "0.0e+00"
+    ],
+    "d=2 k=2 theta=1.1000": [
+     -0.96867,
+     "0.0e+00"
+    ],
+    "d=2 k=2 theta=1.2566": [
+     -0.618034,
+     "0.0e+00"
+    ],
+    "d=2 k=2 theta=2.5000": [
+     1.456506,
+     "9.7e-17"
+    ],
+    "d=2 k=3 theta=0.3700": [
+     16.961601,
+     "5.1e-16"
+    ],
+    "d=2 k=3 theta=1.1000": [
+     -2.875386,
+     "0.0e+00"
+    ],
+    "d=2 k=3 theta=1.2566": [
+     -0.81966,
+     "0.0e+00"
+    ],
+    "d=2 k=3 theta=2.5000": [
+     -23.039682,
+     "2.0e-16"
+    ],
+    "d=2 k=4 theta=0.3700": [
+     -1254.418585,
+     "4.4e-16"
+    ],
+    "d=2 k=4 theta=1.1000": [
+     9.416196,
+     "0.0e+00"
+    ],
+    "d=2 k=4 theta=1.2566": [
+     1.872283,
+     "2.4e-16"
+    ],
+    "d=2 k=4 theta=2.5000": [
+     -234.869257,
+     "3.9e-16"
+    ],
+    "d=2 k=5 theta=0.3700": [
+     -90800.476734,
+     "1.9e-16"
+    ],
+    "d=2 k=5 theta=1.1000": [
+     56.769056,
+     "3.1e-17"
+    ],
+    "d=2 k=5 theta=1.2566": [
+     7.815994,
+     "3.4e-16"
+    ],
+    "d=2 k=5 theta=2.5000": [
+     6156.883181,
+     "9.4e-17"
+    ],
+    "d=2 k=6 theta=0.3700": [
+     5432386.336914,
+     "8.3e-16"
+    ],
+    "d=2 k=6 theta=1.1000": [
+     -486.950151,
+     "0.0e+00"
+    ],
+    "d=2 k=6 theta=1.2566": [
+     -58.794755,
+     "1.2e-16"
+    ],
+    "d=2 k=6 theta=2.5000": [
+     120866.284745,
+     "1.5e-16"
+    ],
+    "d=3 k=2 theta=0.3700": [
+     20.88725,
+     "1.2e-16"
+    ],
+    "d=3 k=2 theta=1.1000": [
+     -1.21739,
+     "1.7e-16"
+    ],
+    "d=3 k=2 theta=1.2566": [
+     -1.0,
+     "1.1e-16"
+    ],
+    "d=3 k=2 theta=2.5000": [
+     -0.751131,
+     "7.4e-16"
+    ],
+    "d=3 k=3 theta=0.3700": [
+     -3626.131408,
+     "1.3e-15"
+    ],
+    "d=3 k=3 theta=1.1000": [
+     64.157884,
+     "2.1e-16"
+    ],
+    "d=3 k=3 theta=1.2566": [
+     2.395855,
+     "1.9e-16"
+    ],
+    "d=3 k=3 theta=2.5000": [
+     -1323.016158,
+     "2.1e-16"
+    ],
+    "d=3 k=4 theta=0.3700": [
+     -93308713.615643,
+     "3.7e-15"
+    ],
+    "d=3 k=4 theta=1.1000": [
+     183.819523,
+     "2.9e-16"
+    ],
+    "d=3 k=4 theta=1.2566": [
+     2.903252,
+     "6.1e-16"
+    ],
+    "d=3 k=4 theta=2.5000": [
+     -636859.035306,
+     "2.3e-16"
+    ],
+    "d=4 k=2 theta=0.3700": [
+     125.477455,
+     "3.4e-16"
+    ],
+    "d=4 k=2 theta=1.1000": [
+     1.800782,
+     "6.0e-15"
+    ],
+    "d=4 k=2 theta=1.2566": [
+     2.618034,
+     "1.0e-15"
+    ],
+    "d=4 k=2 theta=2.5000": [
+     0.219761,
+     "2.8e-14"
+    ],
+    "d=4 k=3 theta=0.3700": [
+     -11845089.822679,
+     "3.4e-15"
+    ],
+    "d=4 k=3 theta=1.1000": [
+     30694.342796,
+     "7.1e-16"
+    ],
+    "d=4 k=3 theta=1.2566": [
+     741.13699,
+     "3.0e-16"
+    ],
+    "d=4 k=3 theta=2.5000": [
+     -186708.612443,
+     "9.9e-16"
+    ],
+    "d=5 k=2 theta=0.3700": [
+     1113.299826,
+     "2.2e-15"
+    ],
+    "d=5 k=2 theta=1.1000": [
+     3.135231,
+     "4.1e-15"
+    ],
+    "d=5 k=2 theta=1.2566": [
+     11.09017,
+     "4.8e-16"
+    ],
+    "d=5 k=2 theta=2.5000": [
+     -0.036477,
+     "2.9e-13"
+    ],
+    "d=6 k=2 theta=0.3700": [
+     14588.834062,
+     "1.1e-14"
+    ],
+    "d=6 k=2 theta=1.1000": [
+     -6.424736,
+     "2.6e-13"
+    ],
+    "d=6 k=2 theta=1.2566": [
+     -76.013156,
+     "5.7e-14"
+    ],
+    "d=6 k=2 theta=2.5000": [
+     0.003435,
+     "1.1e-10"
+    ]
+   }
+  },
+  "10 controls fire": {
+   "ok": true,
+   "detail": {
+    "the unsigned support of the Legendre law (d = 3) is not exact on SG^3_2": true,
+    "one flipped sign of the Legendre law (d = 3) is not exact on SG^3_2": true,
+    "the wave without (-1)^(x_0) (d = 3, theta = 1.1) is not exact on SG^3_2": true,
+    "a sum of two waves (d = 4, theta = 0.7 and 1.3) is not exact on SG^4_2": true,
+    "(not a control) in d = 3 the sum of two waves is the wave at y^2 = 2 + g(4)/g(2), and exact": true,
+    "(-1)^(x_0) sign(E) on five places (not a wave) is not exact on SG^4_2": true,
+    "at theta = pi/4 (a root of y^2 - 2) the corner relation of SG^3_2 vanishes": true
+   }
+  },
+  "lambda_legendre": {
+   "d=2 k=1": "1",
+   "d=2 k=2": "-1",
+   "d=2 k=3": "-4",
+   "d=2 k=4": "13",
+   "d=2 k=5": "85",
+   "d=2 k=6": "-634",
+   "d=2 k=7": "-7492",
+   "d=3 k=1": "1",
+   "d=3 k=2": "1",
+   "d=3 k=3": "-128",
+   "d=3 k=4": "-187",
+   "d=3 k=5": "124990",
+   "d=4 k=1": "1",
+   "d=4 k=2": "1",
+   "d=4 k=3": "65536",
+   "d=5 k=1": "1",
+   "d=5 k=2": "-1",
+   "d=6 k=1": "1",
+   "d=6 k=2": "-1",
+   "d=7 k=2": "1"
+  },
+  "lambda_polynomials": {
+   "d=2 k=2": [
+    0,
+    0,
+    -2,
+    0,
+    1
+   ],
+   "d=2 k=3": [
+    0,
+    0,
+    0,
+    0,
+    -8,
+    0,
+    8,
+    0,
+    -5,
+    0,
+    1
+   ],
+   "d=2 k=4": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    64,
+    0,
+    -112,
+    0,
+    108,
+    0,
+    -72,
+    0,
+    33,
+    0,
+    -9,
+    0,
+    1
+   ],
+   "d=2 k=5": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1024,
+    0,
+    -2816,
+    0,
+    4032,
+    0,
+    -3968,
+    0,
+    3016,
+    0,
+    -1838,
+    0,
+    892,
+    0,
+    -331,
+    0,
+    87,
+    0,
+    -14,
+    0,
+    1
+   ],
+   "d=3 k=2": [
+    0,
+    0,
+    0,
+    -8,
+    0,
+    12,
+    0,
+    -6,
+    0,
+    1
+   ],
+   "d=3 k=3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -128,
+    0,
+    1920,
+    0,
+    -4464,
+    0,
+    5384,
+    0,
+    -4068,
+    0,
+    2031,
+    0,
+    -674,
+    0,
+    144,
+    0,
+    -18,
+    0,
+    1
+   ],
+   "d=3 k=4": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -131072,
+    0,
+    2793472,
+    0,
+    -17022720,
+    0,
+    56145216,
+    0,
+    -121927216,
+    0,
+    191259144,
+    0,
+    -228294788,
+    0,
+    214054914,
+    0,
+    -160825044,
+    0,
+    97998292,
+    0,
+    -48735006,
+    0,
+    19808415,
+    0,
+    -6559776,
+    0,
+    1755696,
+    0,
+    -374418,
+    0,
+    62189,
+    0,
+    -7758,
+    0,
+    684,
+    0,
+    -38,
+    0,
+    1
+   ],
+   "d=4 k=2": [
+    0,
+    0,
+    0,
+    0,
+    64,
+    0,
+    -192,
+    0,
+    240,
+    0,
+    -160,
+    0,
+    60,
+    0,
+    -12,
+    0,
+    1
+   ],
+   "d=4 k=3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    786432,
+    0,
+    -5767168,
+    0,
+    34111488,
+    0,
+    -134774784,
+    0,
+    371200000,
+    0,
+    -761794560,
+    0,
+    1218909696,
+    0,
+    -1565288448,
+    0,
+    1643824320,
+    0,
+    -1428859200,
+    0,
+    1035524976,
+    0,
+    -627990672,
+    0,
+    318899025,
+    0,
+    -135324178,
+    0,
+    47758965,
+    0,
+    -13908960,
+    0,
+    3303914,
+    0,
+    -629364,
+    0,
+    93786,
+    0,
+    -10528,
+    0,
+    837,
+    0,
+    -42,
+    0,
+    1
+   ],
+   "d=5 k=2": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1024,
+    0,
+    -5120,
+    0,
+    11520,
+    0,
+    -15360,
+    0,
+    13440,
+    0,
+    -8064,
+    0,
+    3360,
+    0,
+    -960,
+    0,
+    180,
+    0,
+    -20,
+    0,
+    1
+   ],
+   "d=6 k=2": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -32768,
+    0,
+    245760,
+    0,
+    -860160,
+    0,
+    1863680,
+    0,
+    -2795520,
+    0,
+    3075072,
+    0,
+    -2562560,
+    0,
+    1647360,
+    0,
+    -823680,
+    0,
+    320320,
+    0,
+    -96096,
+    0,
+    21840,
+    0,
+    -3640,
+    0,
+    420,
+    0,
+    -30,
+    0,
+    1
+   ]
+  },
+  "ok": true,
+  "seconds": 17.3
+ }
+}

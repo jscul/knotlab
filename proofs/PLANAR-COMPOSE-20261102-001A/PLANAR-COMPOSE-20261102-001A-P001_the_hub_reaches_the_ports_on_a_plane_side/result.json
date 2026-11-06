@@ -1,0 +1,69 @@
+{
+ "artifact_id": "PLANAR-COMPOSE-20261102-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/result.json": "passed",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/result.json": "passed",
+     "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 on 30 plane knot spaces (the six planar census spaces and ticket A's 24 of HANDLE-EMERGENCE), at every removal, the hub's tie class contains every point on the removed line's three faces": {
+   "info": {
+    "and equals that set": 321,
+    "hub tie class contains every point on the removed line's faces": 325,
+    "removals": 325
+   },
+   "pass": true
+  },
+  "2 the access lemma splits plane from non-planar: on the 30 plane spaces every pinning of the closing line's pattern by the hub and a near point has the hub tied to a non-odd port (i) or forming a near knot with the two non-odd ports whose excluded pattern is one step from the pinned one (ii); on the Fano plane and census 58 every pinning fails both": {
+   "info": {
+    "non-planar": {
+     "Fano plane": {
+      "(i') hub tied to the odd port": 168
+     },
+     "census 58": {
+      "(i') hub tied to the odd port": 120,
+      "(ii') two-port knot, excluded pattern two steps from the pinned one": 48
+     }
+    },
+    "plane spaces": {
+     "(i) hub tied to a non-odd port": 3280,
+     "(ii) two-port knot, excluded pattern one step from the pinned one": 1280
+    }
+   },
+   "pass": true
+  },
+  "3 the routes, knot by knot, at six-pattern removals: on the six planar census spaces and the six 10-point grown spaces, spliced (lines 0 and 1) into K4^(3), census 6, the Fano plane and census 58, every pinned-and-separated three-point crossing knot through the hub is produced by the route of the lemma: in case (i) the near knot {h, a, y'} and the far knot {y0, y', c} eliminate to it; in case (ii) the near knot {h, y, y'} and the far knot {y, y', c} give the crossing knot {h, y, c}, which eliminates against the near knot {h, a, y} to it": {
+   "info": {
+    "(i) route verified": 954,
+    "(ii) route verified": 1188,
+    "at 4-pattern removals (outside the lemma)": 8981,
+    "at 4-pattern removals (outside the lemma): generated": 8981,
+    "of which generated": 2142,
+    "pinned-and-separated three-point crossing knots at six-pattern removals": 2142
+   },
+   "pass": true
+  },
+  "4 the premise holds further: on the Fano plane and census 58 spliced (lines 0 and 1) into every census space and into the eight 10-point plane spaces, every new knot is a pinned-and-separated three-point knot through the hub": {
+   "info": {
+    "new knots": 1884,
+    "pinned-and-separated three-point knots through the hub": 1884
+   },
+   "pass": true
+  }
+ },
+ "claim": "The hub reaches the ports on a plane side. Glue a knot space along a simple 3-edge cut, remove a near line M, and suppose the interface has six patterns. (1) Tie class (proved): on a plane near side with Kasteleyn signs the hub's tie class contains every point on M's three faces. The solutions are perfect matchings of lines to faces, two of which differ by alternating cycles that flip exactly the points they enclose and never enter M's faces (325 removals on 30 plane spaces; equal at 321). (2) Route lemma (proved, any near side): suppose the hub and a near point a pin the closing pattern to t, and either (i) the hub is tied to a port other than t's odd port, or (ii) the hub and t's two other ports form a near knot whose excluded pattern, at the pinning hub value, differs from t in one of those ports. Then every three-point crossing knot {h, a, c} with c separating t is generated, whatever the far side, because the far knot through the two non-odd ports is automatic. (3) Access lemma (checked): on the 30 plane spaces all 4560 pinnings are of type (i) or (ii); on the Fano plane and census 58 all 336 are of neither type. (4) Hence on these 30 plane near sides no pinned-and-separated three-point knot is new at a six-pattern removal, for any far side; the routes are confirmed knot by knot (2142 knots). (5) Every new knot found (1884 more, from the two non-planar near sides glued to census and 10-point plane far sides) is a pinned-and-separated three-point knot through the hub. Open: the access lemma for every plane space, that every new knot has this form, and the four-pattern removals (no creation found).",
+ "kind": "proof",
+ "proof": "PLANAR-COMPOSE-20261102-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PLANAR-COMPOSE-20261102-001A"
+}

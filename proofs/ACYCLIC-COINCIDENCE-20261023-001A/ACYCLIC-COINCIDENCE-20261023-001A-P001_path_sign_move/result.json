@@ -1,0 +1,158 @@
+{
+  "artifact_id": "ACYCLIC-COINCIDENCE-20261023-001A-P001",
+  "checks": {
+    "Corollary 3 on the 48 residual skeletons of L(3,1,3,1)": {
+      "c * A equals the recorded count": 96,
+      "different Tutte polynomials": 48,
+      "equal characteristic polynomials": 48,
+      "isomorphic without a flip (control)": 0,
+      "one flip gives isomorphic frame matroids": 48,
+      "parallel elements merged": 960,
+      "skeletons": 48,
+      "without gauges c * A differs (control)": 48
+    },
+    "Theorem 2 on random signed graphs": {
+      "T(2,0) unchanged": 300,
+      "Tutte polynomial changed": 149,
+      "brute force agrees at 3 and 5": 271,
+      "brute-force colourings checked": 271,
+      "cases": 300,
+      "characteristic polynomial unchanged": 300,
+      "chromatic polynomial unchanged": 300,
+      "closed form chi(G) = chi(H) ((lam-1)^k - (-1)^k) / lam": 300,
+      "zero-free colourings at 2 and 4 unchanged and equal to the closed form": 271
+    }
+  },
+  "claim": "In a signed graph, let a path of k edges run from a to b (a != b) through vertices met by nothing else, and let a and b be joined elsewhere by a positive and a negative link. Flipping the sign of one path edge leaves the chromatic polynomial, which equals chi(rest) ((lambda - 1)^k - (-1)^k) / lambda, the zero-free chromatic polynomial, the characteristic polynomial of the frame matroid, T(x, 0) and so the number of acyclic orientations unchanged, while the Tutte polynomial can change. Each of the 48 skeletons behind the six residual twist relations of TWIST-MAP-20261023-001B-E001 on L(3,1,3,1) is explained by one such flip followed by an isomorphism of frame matroids, so every exact twist relation left by walls and symmetries on the four fresh genus-2 surfaces holds skeleton by skeleton through isomorphic reduced pieces, with this move on 48 skeletons of six relations.",
+  "controls": {
+    "flip through a vertex of degree 3 changes chi (cases of 300)": 136,
+    "flip with one sign between the ends changes chi (cases of 300)": 159
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "ACYCLIC-COINCIDENCE-20261023-001A-P001",
+  "relations": [
+    {
+      "counts": [
+        434952,
+        434952
+      ],
+      "label": "e[0,0,1,1]|e[0,1,-1,0]",
+      "skeletons": 101,
+      "skeletons without matched shrunken graphs": 10,
+      "twists": [
+        "0111",
+        "1111"
+      ]
+    },
+    {
+      "counts": [
+        203328,
+        203328
+      ],
+      "label": "e[0,0,1,1]|e[0,1,0,0][0,0,1,1]",
+      "skeletons": 60,
+      "skeletons without matched shrunken graphs": 4,
+      "twists": [
+        "0011",
+        "1011"
+      ]
+    },
+    {
+      "counts": [
+        434952,
+        434952
+      ],
+      "label": "e[0,0,1,1]|e[0,1,1,0]",
+      "skeletons": 101,
+      "skeletons without matched shrunken graphs": 10,
+      "twists": [
+        "0111",
+        "1111"
+      ]
+    },
+    {
+      "counts": [
+        434952,
+        434952
+      ],
+      "label": "e[1,0,0,-1]|e[1,1,0,0]",
+      "skeletons": 101,
+      "skeletons without matched shrunken graphs": 10,
+      "twists": [
+        "1101",
+        "1111"
+      ]
+    },
+    {
+      "counts": [
+        434952,
+        434952
+      ],
+      "label": "e[1,0,0,1]|e[1,1,0,0]",
+      "skeletons": 101,
+      "skeletons without matched shrunken graphs": 10,
+      "twists": [
+        "1101",
+        "1111"
+      ]
+    },
+    {
+      "counts": [
+        203328,
+        203328
+      ],
+      "label": "e[1,1,0,0]|e[1,1,0,0][0,0,0,1]",
+      "skeletons": 60,
+      "skeletons without matched shrunken graphs": 4,
+      "twists": [
+        "1100",
+        "1110"
+      ]
+    }
+  ],
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "path_sign_move_proved": true,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "residual_relations_explained": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "ACYCLIC-COINCIDENCE-20261023-001A"
+}

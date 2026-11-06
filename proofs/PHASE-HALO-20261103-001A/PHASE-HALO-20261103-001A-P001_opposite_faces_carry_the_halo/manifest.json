@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PHASE-HALO-20261103-001A-P001",
+  "canonical_id": "PHASE-HALO-20261103-001A-P001",
+  "kind": "proof",
+  "ticket": "PHASE-HALO-20261103-001A",
+  "proof": "PHASE-HALO-20261103-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Opposite faces carry the halo",
+  "status": "Proved",
+  "claim": "Opposite faces carry the halo. (1) The claiming lemma (proved): in a point split, a port is the odd point of its line exactly when that line takes the single skip of the face opposite the port across the line, so no other line of that face skips into it; otherwise exactly one other line does. Checked on 5,544 (split, port line, solution) triples. (2) The opposite-face law (computation, Fano plane as handle, validated pipeline). On ladders, thick tubes (duals of subdivided bipyramids), a grid, random grown spaces and a ladder arm spliced onto a grid, at 126 attachment points, every halo line beyond distance 3 lies on one of the three faces opposite the attachment point. In 124 of the 126 it is exactly those faces' far lines. So the halo's reach is set by the size of the faces opposite the handle, not by the dimer phase as such. A ladder reaches its full length because its opposite face is a whole cycle; a grid reaches distance 3 because its faces have at most three corners; a thick tube reaches around its polar face only when the handle sits beside it. (3) Census 58 as handle: the pipeline equals exact creation in all 976 small cases. The halo beyond distance 3 lies on the attachment point's own or opposite faces at all 24 points, but on the ladder arm of the mixed space (5 points) it also uses the point's own big face, so the opposite faces alone do not suffice for every handle.",
+  "dependencies": [
+    "HALO-FORCING-20261103-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation",
+    "finite-instance-classification"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "exact-proof"
+    ]
+  },
+  "failure_conditions": [
+    "A solution of a point split violating the claiming lemma.",
+    "An attachment point whose halo beyond distance 3 contains a line on no face opposite the point.",
+    "A case with census 58 as handle where the pipeline and exact creation disagree."
+  ],
+  "lineage": {
+    "home_scope": "PHASE-HALO-20261103-001",
+    "epic_path": [
+      "PHASE-HALO-20261103-001"
+    ],
+    "parents": [
+      "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/manifest.json",
+      "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/result.json",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/manifest.json",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/result.json",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/manifest.json": "958e0e0d8b28b7b36465539703a4f383dd3c8f244b3062075295c5eb7beb41a8",
+    "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/result.json": "f27d68a7f7ae4e170aba473ddce56bdc71a1d9bf814aacc2d07e154c82c8f6c6",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json": "fb45da2586ce3357994f7b9f239a2c42aed97bc28e8b9e30b10eefcd8e11a82b",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json": "5dcf25a769fd199fd996a7426c10be3cae8908bdd0cb85fc2022fc1ad24ad212",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py": "570c7a63a090648e999df5b319c74b8eb3ff0b7fd63725dd6d710c4c0a0ae2f4",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/manifest.json": "d01da83bf1cbde10ceef602e457b3079c1993923e46f464da8e576508985bcaf",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/result.json": "ce464cda3db3feda2a74eca307be1df38251991f7b7300be1d7248f3338f5449",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1"
+  },
+  "paths": {
+    "manifest": "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json",
+    "identity": "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/identity.json",
+    "directory": "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo",
+    "proof": "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/proof.md",
+    "result": "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/result.json",
+    "check": "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "opposite_face_law_computed": true
+  },
+  "foundation_claim_scope": "Fano plane (and census 58) attached at a point of ladders, thick tubes, grids, random grown spaces and a ladder arm spliced onto a grid; removals inside the handle; four census far sides.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03.",
+    "status": "claiming lemma proved; the opposite-face law computed exhaustively at the stated attachment points with the validated pipeline; no human or external review",
+    "novelty": "New here."
+  }
+}

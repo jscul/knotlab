@@ -1,0 +1,54 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CLASS4-LOCALITY-20261028-001A-E001",
+ "ticket": "CLASS4-LOCALITY-20261028-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "Scoping in this epic (scoping/README.md). The relabeling found by CLASS4-PAIRS-20261028-001B-E001 was traced to the solver: the particular solution at layer 3 contains an arbitrary multiple of each slot-2 class colouring. Measuring each slot-2 coordinate intrinsically, as (colour of reading strand - colour of base strand) divided by the class colouring at the reading strand, made the global and assembled local layer-4 systems exactly equal in 18 of 18 configurations (six shapes, three configuration types) for each of the three algebras, while the raw constant parts differed in most. Special configurations with all vertex states parallel, where slot-1 data survive off the diagonal and the B0 twist is active, gave 12 of 12 exact equalities for free class 4 on (1, 1). Edges that are not clean modulo gamma_4 broke the comparison. This contract tests exact intrinsic locality with fresh seeds, the shape K4 and a fourth configuration type, with two non-clean edges as controls.",
+ "question": "For zero-jump gadget knots over the three d = 5 class-4 algebras whose only failing clean-edge condition is (K), and fixed layer-<=2 data on the solution variety: written in intrinsic layer-3 coordinates, is the layer-4 system of the graph gadget exactly equal to the system assembled from single-edge gadgets?",
+ "public_inputs": {
+  "algebras": "free graded Lie algebras of class 4 (cd_lib.free_graded) on generator characters (1, 1), (0, 1, 1) and (1, 1, 1) at d = 5, p = 11; slots (1, 1, 2); controls on (0, 1, 2) with slots (1, 2, 3) and on (1, 2) with slots (2, 1, 3)",
+  "summands": "pf_lib.summand_types (amphichiral 3-braids at the slot root pairs)",
+  "gadget": "pf_lib.Gadget (zero-jump blocks, dedicated vertex copies, cable_d([A12, A23]) insertions)",
+  "graphs": "P3 (0-1-2), an edge (0, 2) over an isolated vertex 1, the star K_{1,3}, the triangle, the path with edges (0, 2), (1, 2), the 4-cycle, K4; configurations: all vertex states equal, all random, alternating, all states nonzero multiples of one vector (parallel) with slot-1 data preferred nonzero; controls on the first five shapes in the first three configuration types",
+  "variety points": "c4_lib.Case.variety_point (asserted to solve every layer-2/3 private equation of its edge); for parallel configurations up to 60 draws are taken until the slot-1 layer-1 data are nonzero",
+  "measurement": "c4_lib.affine_system on the layer-3 free data; Phi from l4_lib.phi_vector (the solver's particular solution at layer-3 data zero); local system assembled from single-edge gadgets with and without private data, each converted to its own intrinsic coordinates; equality over F_11"
+ },
+ "predictions": {
+  "P1": "every configuration lies on the variety (the layer-2/3 private equations of every edge hold in the graph gadget) and every layer-4 system, global and single-edge, is affine in the layer-3 data (verified at 3 random points each)",
+  "P2": "the linear parts agree: A_global = A_local in every configuration",
+  "P3": "in intrinsic layer-3 coordinates the constant parts agree exactly: b_global - A_global Phi_global = b_local (each single-edge system corrected by its own Phi) in every configuration",
+  "P4": "for each algebra the raw constant parts (model coordinates) differ in at least one configuration, so the relabeling is real",
+  "P5": "for each algebra, in at least one parallel configuration some off-diagonal edge carries nonzero slot-1 data, so the B0 twist regime is exercised"
+ },
+ "controls": {
+  "machinery (any failure makes the run invalid)": "the variety-point assertion; class colourings vanish on base strands and not on reading strands (build_check.py)",
+  "negative (a match makes the run invalid)": "XA: free class 4 on (0, 1, 2), edge (1, 2), and XB: free class 4 on (1, 2), edge (2, 1), both failing (B0) and (V3) as well as (K) modulo gamma_4, on P3, the skipping edge, the star, the triangle and the reversed path in three configuration types: among configurations on the variety, linear parts or intrinsic constant parts must differ in at least one; a control with no configuration on the variety also makes the run invalid"
+ },
+ "decision_rule": "Invalid if a machinery check fails or a negative control matches. Supported if P1-P5 hold for all three algebras. Refuted otherwise, naming every failed algebra and prediction; neither predictions nor construction change after this contract.",
+ "resource_budget": {
+  "wall_seconds": 43200,
+  "memory_mib": 16384,
+  "threads": 1
+ },
+ "stop_rule": "Run run.py once (after build_check.py); no adaptive extension.",
+ "seeds": "numpy default_rng(20261029) in run.py (scoping used seeds 1, 2, 3 and 7)",
+ "environment": "workspace .venv python (numpy); c4_lib.py (CLASS4-PAIRS-20261028-001B-E001) and through it pf_lib.py, cd_lib.py, gd.py, mlib.py and cp_lib.py imported read-only",
+ "red_team_r0": [
+  "Graphs have at most 4 vertices and 6 edges; exact locality on all graphs is what this run supports, not a theorem.",
+  "The three algebras share alpha = beta = 1 at d = 5; other characters are not probed.",
+  "Prediction and measurement share the gadget model; the non-clean controls are the discriminators, and the comparison is exact equality, which a random error would break.",
+  "Vertex states and private data are sampled, not enumerated; the parallel configurations target the regime where the B0 twist is active.",
+  "Phi is computed from the same solver whose choice it removes, at layer-3 data zero; intrinsic coordinates are defined only for blocks whose class colouring vanishes on the base strand."
+ ],
+ "nonclaims": [
+  "No proof of locality and no hardness claim here.",
+  "No claim for algebras or orders other than the three tested at d = 5."
+ ],
+ "forbidden_inputs": [
+  "Measured systems as inputs to predictions",
+  "Scoping outputs as inputs to predictions"
+ ],
+ "outputs": "artifacts/CLASS4-LOCALITY-20261028-001A/CLASS4-LOCALITY-20261028-001A-E001_class_4_gadget_equations_are_exactly_local_in_intrinsic_coordinates/result.json, rows.json and run_log.txt"
+}

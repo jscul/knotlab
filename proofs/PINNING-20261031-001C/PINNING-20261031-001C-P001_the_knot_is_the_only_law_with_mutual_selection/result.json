@@ -1,0 +1,89 @@
+{
+ "artifact_id": "PINNING-20261031-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "info": {
+    "mismatched": {},
+    "parents": 15
+   },
+   "pass": true
+  },
+  "1 every upstream proof is Proved and every upstream check passed (scouting lanes Complete)": {
+   "info": {
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json": "Proved",
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json": "passed",
+    "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json": "Proved",
+    "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json": "passed",
+    "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/manifest.json": "Proved",
+    "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/result.json": "passed",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json": "Proved",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json": "passed",
+    "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/manifest.json": "Proved",
+    "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/result.json": "passed",
+    "research/MUTUAL-SELECTION-20261031-001A/manifest.json": "Complete",
+    "research/MUTUAL-SELECTION-20261031-001B/manifest.json": "Complete",
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "Complete"
+   },
+   "pass": true
+  },
+  "2 the knot's failures are recognisable: on every signing of every cubic system with n <= 6, the signed not-all-equal system fails iff |det| of its signed incidence matrix equals the number of perfect matchings (the signing is Pfaffian)": {
+   "info": {
+    "agree": 1380864,
+    "failing signings": 2176,
+    "signings": 1380864
+   },
+   "pass": true
+  },
+  "3 the classification of the five three-place knot classes: only not-all-equal has mutual selection": {
+   "info": {
+    "Fibonacci (no-lone)": {
+     "evidence": "A Theorem 4; MUTUAL-SELECTION-20261031-001C",
+     "failures recognisable": "no unless P = NP (coNP-complete)",
+     "mutual selection": "no",
+     "own count #P-hard in general": true,
+     "plain systems can fail": false,
+     "signed systems can fail": true
+    },
+    "clause": {
+     "evidence": "A Proposition 6",
+     "failures recognisable": "vacuous (never fails)",
+     "mutual selection": "no (no failing systems; Tovey)",
+     "own count #P-hard in general": true,
+     "plain systems can fail": false,
+     "signed systems can fail": false
+    },
+    "not-all-equal": {
+     "evidence": "check 2; KNOT-COUPLING-20261031-001; Fan-Cai; Dagum-Luby",
+     "failures recognisable": "yes (Pfaffian signings; Seymour, Robertson-Seymour-Thomas)",
+     "mutual selection": "yes: the failing systems make the knot's law (0) and the dimer law ((-2)^n |det|) easy",
+     "own count #P-hard in general": true,
+     "plain systems can fail": true,
+     "signed systems can fail": true
+    },
+    "parity": {
+     "evidence": "A Lemma 2, Proposition 5; MUTUAL-SELECTION-20261031-001B",
+     "failures recognisable": "yes (linear algebra)",
+     "mutual selection": "no (affine: its whole family is polynomial everywhere)",
+     "own count #P-hard in general": false,
+     "plain systems can fail": false,
+     "signed systems can fail": true
+    },
+    "x or (y != z)": {
+     "evidence": "B",
+     "failures recognisable": "no unless P = NP (coNP-complete)",
+     "mutual selection": "no",
+     "own count #P-hard in general": true,
+     "plain systems can fail": false,
+     "signed systems can fail": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Call a three-place knot R mutually selecting on cubic systems when (M1) the connected cubic systems on which R fails form a non-empty class recognisable in polynomial time, and (M2) counting R-solutions is #P-hard on general cubic systems, so that the class makes easy what is hard elsewhere. Assuming P != NP, among all 34 three-place knot relations (five classes) exactly the not-all-equal class is mutually selecting: parity fails recognisably but is affine (its counts are polynomial everywhere); the clause never fails on cubic systems (Tovey); the Fibonacci law and x or (y != z) pin a value, so their failures are coNP-complete to recognise; not-all-equal fails exactly on Pfaffian signings (recognisable; checked on every signing with n <= 6: failure iff |det| = #PM) and its failing systems also make the dimer law easy (KNOT-COUPLING-20261031-001). On plain cubic systems the conclusion is unconditional: not-all-equal is the only knot that can fail at all.",
+ "kind": "proof",
+ "proof": "PINNING-20261031-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PINNING-20261031-001C"
+}

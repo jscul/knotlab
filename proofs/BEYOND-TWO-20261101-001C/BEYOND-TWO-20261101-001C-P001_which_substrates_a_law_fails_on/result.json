@@ -1,0 +1,183 @@
+{
+ "artifact_id": "BEYOND-TWO-20261101-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json": "Proved",
+     "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json": "passed",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "passed",
+     "proofs/NATIVE-PATHS-20261101-001C/NATIVE-PATHS-20261101-001C-P001_knot_meets_knot_only_pairwise/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001C/NATIVE-PATHS-20261101-001C-P001_knot_meets_knot_only_pairwise/result.json": "passed",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 the knot on all 60 connected cubic substrates (up to 8 points): it fails under some signing exactly on the Pfaffian ones (a signing with |det| = number of perfect matchings, agreeing with the census); there exactly one switching class of signings fails and its failure is global (removing any line leaves it colourable); on the others every signing class is colourable": {
+   "info": {
+    "summary": {
+     "Pfaffian": 8,
+     "Z3 corank 1": 24,
+     "even number of perfect matchings": 38,
+     "n = 3": 1,
+     "n = 4": 1,
+     "n = 5": 2,
+     "n = 6": 5,
+     "n = 7": 13,
+     "n = 8": 38
+    }
+   },
+   "pass": true
+  },
+  "2 parity: it fails (for some right-hand side) exactly on the substrates with an even number of perfect matchings, and no failure on any substrate is global (every failing right-hand side survives the removal of some line)": {
+   "info": {
+    "global failures found": 0,
+    "substrates": 60,
+    "with failures": 38
+   },
+   "pass": true
+  },
+  "3 Z3 (x + y + z = c): it fails on every substrate (corank at least 1, as all lines sum to zero mod 3); every tested failure is global on corank-1 substrates and local on the others (all right-hand sides up to 6 points, 300 random ones above)": {
+   "info": {
+    "corank distribution": {
+     "1": 24,
+     "2": 27,
+     "3": 9
+    },
+    "failures tested": 15855,
+    "global among them": 5173
+   },
+   "pass": true
+  },
+  "5 blurred Z3 is easy in return: on every corank-1 substrate with up to 7 points, with a failing right-hand side, removing any line leaves exactly 3 solutions over Z3, and the blurred count (brute force over four values) equals their weighted sum": {
+   "info": {
+    "corank-1 substrates (up to 7 points)": 10,
+    "line removals checked": 63
+   },
+   "pass": true
+  },
+  "6 summary by size: substrates, Pfaffian ones (the knot's failing substrates), ones with an even number of perfect matchings (parity's), and ones of Z3-corank 1 (where Z3 and blurred Z3 fail globally)": {
+   "info": {
+    "3": {
+     "Pfaffian": 0,
+     "Z3 corank 1": 0,
+     "even perfect matchings": 1,
+     "substrates": 1
+    },
+    "4": {
+     "Pfaffian": 1,
+     "Z3 corank 1": 1,
+     "even perfect matchings": 0,
+     "substrates": 1
+    },
+    "5": {
+     "Pfaffian": 0,
+     "Z3 corank 1": 1,
+     "even perfect matchings": 1,
+     "substrates": 2
+    },
+    "6": {
+     "Pfaffian": 1,
+     "Z3 corank 1": 2,
+     "even perfect matchings": 4,
+     "substrates": 5
+    },
+    "7": {
+     "Pfaffian": 2,
+     "Z3 corank 1": 6,
+     "even perfect matchings": 9,
+     "substrates": 13
+    },
+    "8": {
+     "Pfaffian": 4,
+     "Z3 corank 1": 14,
+     "even perfect matchings": 23,
+     "substrates": 38
+    }
+   },
+   "pass": true
+  },
+  "7 rigidity: on every corank-1 substrate (failing right-hand side), removing any line leaves Z3 (and so blurred Z3) exactly three solutions and every circuit a tie of two variables, never a knot; the knot's selected spaces are not rigid in general: on the Fano plane every line removal leaves 10 colourings and a knot among the circuits, though on some Pfaffian substrates only ties remain": {
+   "info": {
+    "Pfaffian substrates (the knot)": [
+     {
+      "colourings after removing a line": [
+       4
+      ],
+      "line removals keeping a knot": "0 of 4",
+      "plain Pfaffian": false,
+      "points": 4
+     },
+     {
+      "colourings after removing a line": [
+       6
+      ],
+      "line removals keeping a knot": "6 of 6",
+      "plain Pfaffian": false,
+      "points": 6
+     },
+     {
+      "colourings after removing a line": [
+       8
+      ],
+      "line removals keeping a knot": "3 of 7",
+      "plain Pfaffian": false,
+      "points": 7
+     },
+     {
+      "colourings after removing a line": [
+       10
+      ],
+      "line removals keeping a knot": "7 of 7",
+      "plain Pfaffian": true,
+      "points": 7
+     },
+     {
+      "colourings after removing a line": [
+       8
+      ],
+      "line removals keeping a knot": "8 of 8",
+      "plain Pfaffian": false,
+      "points": 8
+     },
+     {
+      "colourings after removing a line": [
+       10
+      ],
+      "line removals keeping a knot": "8 of 8",
+      "plain Pfaffian": false,
+      "points": 8
+     },
+     {
+      "colourings after removing a line": [
+       8
+      ],
+      "line removals keeping a knot": "0 of 8",
+      "plain Pfaffian": false,
+      "points": 8
+     },
+     {
+      "colourings after removing a line": [
+       12
+      ],
+      "line removals keeping a knot": "8 of 8",
+      "plain Pfaffian": false,
+      "points": 8
+     }
+    ],
+    "Z3: line removals on corank-1 substrates, circuits all ties": 175
+   },
+   "pass": true
+  }
+ },
+ "claim": "Which substrates a law fails on, and whether globally. On a connected cubic substrate (a 3-regular 3-uniform system), with signs: (1) the knot (not-all-equal) fails under some signing exactly when the substrate is Pfaffian, and every failure is global: removing any line leaves it colourable (Seymour's bound); (2) parity fails exactly when the substrate has an even number of perfect matchings (det = perm mod 2), and no failure is ever global, since a dependency using every line would put each point in three of them, an odd number; blurred parity fails exactly as parity does; (3) Z3-linear x + y + z = c fails on every substrate, because the sum of all lines vanishes (3 = 0 mod 3), and its failures are all global when the substrate's Z3-corank is 1 and all local otherwise; blurred Z3 fails exactly as Z3 does. Checked on all 60 connected cubic substrates with up to 8 points: Pfaffian by a signing with |det| = perm (agreeing with the census), the knot's failures minimal, parity's never, Z3's minimal exactly at corank 1. (4) So blurred Z3 on corank-1 substrates both selects and composes: its failures are global and recognisable, removing a line leaves exactly three solutions so its count is easy there (checked against brute force), its count is #P-complete in general, and it composes like cycles: the first law that does both, at four values. Its selection is linear (the whole space cancels, 3 = 0 mod 3); the knot's is sign-nonsingular (nothing cancels). (5) Rigidity: on blurred Z3's selected spaces, removing a line leaves one degree of freedom, so every circuit is a tie of two variables and no knot survives (every corank-1 substrate, every line); the knot's selected spaces are not rigid in general (on the Fano plane every line removal leaves 10 colourings and a knot), though on some Pfaffian substrates only ties remain. The four-value bridge selects only rigid, pairwise spaces.",
+ "kind": "proof",
+ "proof": "BEYOND-TWO-20261101-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "BEYOND-TWO-20261101-001C"
+}

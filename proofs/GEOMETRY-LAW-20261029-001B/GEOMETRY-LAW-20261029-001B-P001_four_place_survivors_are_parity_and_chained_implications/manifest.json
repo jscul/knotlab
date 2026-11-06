@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GEOMETRY-LAW-20261029-001B-P001",
+  "canonical_id": "GEOMETRY-LAW-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "GEOMETRY-LAW-20261029-001B",
+  "proof": "GEOMETRY-LAW-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Four places: only parity and a chained implication survive, and no orienting knot does",
+  "status": "Proved",
+  "claim": "Four-bit knots are the 742 relations on four bits in which every three coordinates are unconstrained, other than the full cube; up to coordinate order they form 106 classes. Native gadgets with four legs are connected and loopless, with every internal variable in exactly two distinct copies of one knot. Theorem 1 (exhaustive over gadgets of two and three copies): exactly three classes are rebuilt, namely the even parity class (by every gadget), the odd parity class (exactly by the gadgets with an odd number of copies) and the implication between the parities of two complementary pairs, {x : (x_i + x_j, x_k + x_l) != (1, 0)} over GF(2) (exactly by the chains: copies in a path, consecutive copies sharing a pair, two legs at each end copy); every other class gives the full relation or a knot excluding strictly fewer tuples. Proposition 2: chains of every length rebuild the implication class, so its self-similar towers are chains. Proposition 3: 96 relations in 6 classes have their coordinate symmetry group inside the rotations of a cyclic order, so they orient a vertex; none is rebuilt. Random gadgets of four copies agree with Theorem 1.",
+  "dependencies": [
+    "GEOMETRY-LAW-20261029-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A class other than the two parity classes and the chained implication rebuilt by a native gadget of two or three copies, or one of these three not rebuilt where stated.",
+    "A non-affine class whose gadget output is a knot excluding at least as many tuples, other than the implication class rebuilding itself.",
+    "A chain of some length that does not rebuild the implication class.",
+    "An orienting class rebuilt, or an orientation count other than 96 relations in 6 classes."
+  ],
+  "lineage": {
+    "home_scope": "GEOMETRY-LAW-20261029-001",
+    "epic_path": [
+      "GEOMETRY-LAW-20261029-001"
+    ],
+    "parents": [
+      "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json",
+      "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json": "011edccb8f58cf1c4c9d424c7e91336bb2028b67ab738d22180bf7b0ea21c45c",
+    "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json": "a3a77a4ad331ee970fa5a3fcc30021a26ef0e1d220dbdbc35a0da75718616cb0"
+  },
+  "paths": {
+    "manifest": "proofs/GEOMETRY-LAW-20261029-001B/GEOMETRY-LAW-20261029-001B-P001_four_place_survivors_are_parity_and_chained_implications/manifest.json",
+    "identity": "proofs/GEOMETRY-LAW-20261029-001B/GEOMETRY-LAW-20261029-001B-P001_four_place_survivors_are_parity_and_chained_implications/identity.json",
+    "directory": "proofs/GEOMETRY-LAW-20261029-001B/GEOMETRY-LAW-20261029-001B-P001_four_place_survivors_are_parity_and_chained_implications",
+    "proof": "proofs/GEOMETRY-LAW-20261029-001B/GEOMETRY-LAW-20261029-001B-P001_four_place_survivors_are_parity_and_chained_implications/proof.md",
+    "result": "proofs/GEOMETRY-LAW-20261029-001B/GEOMETRY-LAW-20261029-001B-P001_four_place_survivors_are_parity_and_chained_implications/result.json",
+    "check": "proofs/GEOMETRY-LAW-20261029-001B/GEOMETRY-LAW-20261029-001B-P001_four_place_survivors_are_parity_and_chained_implications/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_patterns_of_patterns_four_places_survivors_shown": false
+  },
+  "foundation_claim_scope": "Set-level relations on four bits that pass K1-K3 (742 relations, 106 classes); native gadgets with four legs, connected, loopless, every internal variable in two distinct copies; exhaustive over gadgets of two and three copies (all shapes, all placements), random for four copies; chains of every length by proof.",
+  "validation": {
+    "status": "checked: 742 four-bit knots in 106 classes; 96 orienting relations in 6 classes; exhaustive census of native four-leg gadgets with 2 and 3 copies (4 shapes, every placement): exactly the even parity class (all shapes), the odd parity class (three copies) and the implication between pair parities (the two chains) are rebuilt, every output co-independent, every other non-affine output excluding fewer tuples; chains of 2 to 7 copies rebuild the implication; 300 random gadgets of 4 copies rebuild only the even parity class; no orienting class rebuilt; controls fire (self-gluing rebuilds 18 more classes, all-equal is rebuilt, the bigon turns the odd parity class into the even one). Gadgets of four or more copies are sampled, not exhaustive; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

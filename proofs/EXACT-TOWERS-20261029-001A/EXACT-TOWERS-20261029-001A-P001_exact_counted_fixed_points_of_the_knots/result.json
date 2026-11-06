@@ -1,0 +1,9595 @@
+{
+ "schema_version": 1,
+ "artifact_id": "EXACT-TOWERS-20261029-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "ok": true,
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 knots, classes and their symmetries": {
+   "ok": true,
+   "detail": {
+    "knots": 34,
+    "classes": 16,
+    "transitive on allowed tuples": [
+     "not-all-equal",
+     "parity (even tuples allowed)",
+     "parity (odd tuples allowed)",
+     "twisted not-all-equal"
+    ],
+    "by class": {
+     "((0, 0, 0),)": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       3,
+       3
+      ]
+     },
+     "x or (y != z)": {
+      "symmetries": 4,
+      "orbit sizes on allowed tuples": [
+       2,
+       2,
+       2
+      ]
+     },
+     "three excluded {000, 011, 101}": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       1,
+       3
+      ]
+     },
+     "parity (odd tuples allowed)": {
+      "symmetries": 24,
+      "orbit sizes on allowed tuples": [
+       4
+      ]
+     },
+     "not-all-equal": {
+      "symmetries": 12,
+      "orbit sizes on allowed tuples": [
+       6
+      ]
+     },
+     "((0, 0, 1),)": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       3,
+       3
+      ]
+     },
+     "((0, 0, 1), (0, 1, 0))": {
+      "symmetries": 4,
+      "orbit sizes on allowed tuples": [
+       2,
+       2,
+       2
+      ]
+     },
+     "((0, 0, 1), (0, 1, 0), (1, 0, 0))": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       1,
+       3
+      ]
+     },
+     "parity (even tuples allowed)": {
+      "symmetries": 24,
+      "orbit sizes on allowed tuples": [
+       4
+      ]
+     },
+     "three excluded {001, 010, 111}": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       1,
+       3
+      ]
+     },
+     "twisted not-all-equal": {
+      "symmetries": 12,
+      "orbit sizes on allowed tuples": [
+       6
+      ]
+     },
+     "not x or (y != z)": {
+      "symmetries": 4,
+      "orbit sizes on allowed tuples": [
+       2,
+       2,
+       2
+      ]
+     },
+     "((0, 1, 1),)": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       3,
+       3
+      ]
+     },
+     "((0, 1, 1), (1, 0, 1))": {
+      "symmetries": 4,
+      "orbit sizes on allowed tuples": [
+       2,
+       2,
+       2
+      ]
+     },
+     "((0, 1, 1), (1, 0, 1), (1, 1, 0))": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       1,
+       3
+      ]
+     },
+     "((1, 1, 1),)": {
+      "symmetries": 6,
+      "orbit sizes on allowed tuples": [
+       1,
+       3,
+       3
+      ]
+     }
+    }
+   }
+  },
+  "2 enumeration complete": {
+   "ok": true,
+   "detail": {
+    "(fast, full, equal) by copies": {
+     "3": [
+      3,
+      3,
+      true
+     ],
+     "4": [
+      11,
+      11,
+      true
+     ],
+     "5": [
+      104,
+      104,
+      true
+     ]
+    },
+    "size-first ordering at four copies finds": 7
+   }
+  },
+  "3 census of exact counted fixed points (3 to 6 copies)": {
+   "ok": true,
+   "detail": {
+    "shapes": {
+     "3": 3,
+     "4": 11,
+     "5": 104,
+     "6": 1065
+    },
+    "factor formula holds for every exact gadget": true,
+    "smallest exact size": {
+     "x or (y != z)": null,
+     "three excluded {000, 011, 101}": 5,
+     "parity (odd tuples allowed)": 3,
+     "parity (even tuples allowed)": 3,
+     "three excluded {001, 010, 111}": 5,
+     "twisted not-all-equal": 4,
+     "not x or (y != z)": null
+    },
+    "by class and size": {
+     "x or (y != z)": {
+      "4": {
+       "rebuilding shapes": 1,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "5": {
+       "rebuilding shapes": 8,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "6": {
+       "rebuilding shapes": 77,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      }
+     },
+     "three excluded {000, 011, 101}": {
+      "4": {
+       "rebuilding shapes": 1,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "5": {
+       "rebuilding shapes": 10,
+       "exact shapes": 3,
+       "exact gadgets": 42,
+       "irredundant exact shapes": 3,
+       "irredundant exact gadgets": 42,
+       "pendant-free exact shapes": 1,
+       "pendant-free exact gadgets": 6,
+       "factors (irredundant)": {
+        "1": 12,
+        "2": 12,
+        "4": 18
+       },
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "6": {
+       "rebuilding shapes": 93,
+       "exact shapes": 54,
+       "exact gadgets": 986,
+       "irredundant exact shapes": 54,
+       "irredundant exact gadgets": 920,
+       "pendant-free exact shapes": 23,
+       "pendant-free exact gadgets": 258,
+       "factors (irredundant)": {
+        "1": 450,
+        "2": 292,
+        "3": 78,
+        "4": 82,
+        "5": 18
+       },
+       "single-scale (factor, distance)": {
+        "(1, 2)": 10,
+        "(2, 2)": 27,
+        "(4, 2)": 22
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(1, 2)": 4,
+        "(2, 2)": 2
+       }
+      }
+     },
+     "parity (odd tuples allowed)": {
+      "3": {
+       "rebuilding shapes": 2,
+       "exact shapes": 2,
+       "exact gadgets": 2,
+       "irredundant exact shapes": 2,
+       "irredundant exact gadgets": 2,
+       "pendant-free exact shapes": 2,
+       "pendant-free exact gadgets": 2,
+       "factors (irredundant)": {
+        "2": 2
+       },
+       "single-scale (factor, distance)": {
+        "(2, 2)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(2, 2)": 1
+       }
+      },
+      "4": {
+       "rebuilding shapes": 2,
+       "exact shapes": 2,
+       "exact gadgets": 2,
+       "irredundant exact shapes": 1,
+       "irredundant exact gadgets": 1,
+       "pendant-free exact shapes": 1,
+       "pendant-free exact gadgets": 1,
+       "factors (irredundant)": {
+        "1": 1
+       },
+       "single-scale (factor, distance)": {
+        "(1, 2)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(1, 2)": 1
+       }
+      },
+      "5": {
+       "rebuilding shapes": 30,
+       "exact shapes": 30,
+       "exact gadgets": 30,
+       "irredundant exact shapes": 22,
+       "irredundant exact gadgets": 22,
+       "pendant-free exact shapes": 13,
+       "pendant-free exact gadgets": 13,
+       "factors (irredundant)": {
+        "1": 3,
+        "2": 10,
+        "4": 9
+       },
+       "single-scale (factor, distance)": {
+        "(2, 2)": 1,
+        "(4, 3)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(2, 2)": 1,
+        "(4, 3)": 1
+       }
+      },
+      "6": {
+       "rebuilding shapes": 186,
+       "exact shapes": 186,
+       "exact gadgets": 186,
+       "irredundant exact shapes": 116,
+       "irredundant exact gadgets": 116,
+       "pendant-free exact shapes": 71,
+       "pendant-free exact gadgets": 71,
+       "factors (irredundant)": {
+        "1": 38,
+        "2": 73,
+        "4": 5
+       },
+       "single-scale (factor, distance)": {
+        "(1, 2)": 7,
+        "(2, 2)": 7,
+        "(2, 3)": 3,
+        "(4, 2)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(1, 2)": 6,
+        "(2, 2)": 1,
+        "(2, 3)": 3
+       }
+      }
+     },
+     "parity (even tuples allowed)": {
+      "3": {
+       "rebuilding shapes": 2,
+       "exact shapes": 2,
+       "exact gadgets": 2,
+       "irredundant exact shapes": 2,
+       "irredundant exact gadgets": 2,
+       "pendant-free exact shapes": 2,
+       "pendant-free exact gadgets": 2,
+       "factors (irredundant)": {
+        "2": 2
+       },
+       "single-scale (factor, distance)": {
+        "(2, 2)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(2, 2)": 1
+       }
+      },
+      "4": {
+       "rebuilding shapes": 2,
+       "exact shapes": 2,
+       "exact gadgets": 2,
+       "irredundant exact shapes": 1,
+       "irredundant exact gadgets": 1,
+       "pendant-free exact shapes": 1,
+       "pendant-free exact gadgets": 1,
+       "factors (irredundant)": {
+        "1": 1
+       },
+       "single-scale (factor, distance)": {
+        "(1, 2)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(1, 2)": 1
+       }
+      },
+      "5": {
+       "rebuilding shapes": 30,
+       "exact shapes": 30,
+       "exact gadgets": 30,
+       "irredundant exact shapes": 22,
+       "irredundant exact gadgets": 22,
+       "pendant-free exact shapes": 13,
+       "pendant-free exact gadgets": 13,
+       "factors (irredundant)": {
+        "1": 3,
+        "2": 10,
+        "4": 9
+       },
+       "single-scale (factor, distance)": {
+        "(2, 2)": 1,
+        "(4, 3)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(2, 2)": 1,
+        "(4, 3)": 1
+       }
+      },
+      "6": {
+       "rebuilding shapes": 186,
+       "exact shapes": 186,
+       "exact gadgets": 186,
+       "irredundant exact shapes": 116,
+       "irredundant exact gadgets": 116,
+       "pendant-free exact shapes": 71,
+       "pendant-free exact gadgets": 71,
+       "factors (irredundant)": {
+        "1": 38,
+        "2": 73,
+        "4": 5
+       },
+       "single-scale (factor, distance)": {
+        "(1, 2)": 7,
+        "(2, 2)": 7,
+        "(2, 3)": 3,
+        "(4, 2)": 1
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(1, 2)": 6,
+        "(2, 2)": 1,
+        "(2, 3)": 3
+       }
+      }
+     },
+     "three excluded {001, 010, 111}": {
+      "4": {
+       "rebuilding shapes": 1,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "5": {
+       "rebuilding shapes": 10,
+       "exact shapes": 3,
+       "exact gadgets": 42,
+       "irredundant exact shapes": 3,
+       "irredundant exact gadgets": 42,
+       "pendant-free exact shapes": 1,
+       "pendant-free exact gadgets": 6,
+       "factors (irredundant)": {
+        "1": 12,
+        "2": 12,
+        "4": 18
+       },
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "6": {
+       "rebuilding shapes": 93,
+       "exact shapes": 54,
+       "exact gadgets": 986,
+       "irredundant exact shapes": 54,
+       "irredundant exact gadgets": 920,
+       "pendant-free exact shapes": 23,
+       "pendant-free exact gadgets": 258,
+       "factors (irredundant)": {
+        "1": 450,
+        "2": 292,
+        "3": 78,
+        "4": 82,
+        "5": 18
+       },
+       "single-scale (factor, distance)": {
+        "(1, 2)": 10,
+        "(2, 2)": 27,
+        "(4, 2)": 22
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(1, 2)": 4,
+        "(2, 2)": 2
+       }
+      }
+     },
+     "twisted not-all-equal": {
+      "4": {
+       "rebuilding shapes": 2,
+       "exact shapes": 2,
+       "exact gadgets": 12,
+       "irredundant exact shapes": 2,
+       "irredundant exact gadgets": 12,
+       "pendant-free exact shapes": 1,
+       "pendant-free exact gadgets": 6,
+       "factors (irredundant)": {
+        "2": 12
+       },
+       "single-scale (factor, distance)": {
+        "(2, 2)": 6
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(2, 2)": 6
+       }
+      },
+      "5": {
+       "rebuilding shapes": 16,
+       "exact shapes": 11,
+       "exact gadgets": 114,
+       "irredundant exact shapes": 10,
+       "irredundant exact gadgets": 90,
+       "pendant-free exact shapes": 2,
+       "pendant-free exact gadgets": 24,
+       "factors (irredundant)": {
+        "1": 36,
+        "2": 36,
+        "3": 18
+       },
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "6": {
+       "rebuilding shapes": 179,
+       "exact shapes": 118,
+       "exact gadgets": 2601,
+       "irredundant exact shapes": 115,
+       "irredundant exact gadgets": 2031,
+       "pendant-free exact shapes": 29,
+       "pendant-free exact gadgets": 405,
+       "factors (irredundant)": {
+        "1": 330,
+        "2": 864,
+        "3": 270,
+        "4": 456,
+        "5": 75,
+        "6": 36
+       },
+       "single-scale (factor, distance)": {
+        "(2, 2)": 60,
+        "(4, 2)": 72
+       },
+       "single-scale pendant-free (factor, distance)": {
+        "(2, 2)": 36
+       }
+      }
+     },
+     "not x or (y != z)": {
+      "4": {
+       "rebuilding shapes": 1,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "5": {
+       "rebuilding shapes": 8,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      },
+      "6": {
+       "rebuilding shapes": 77,
+       "exact shapes": 0,
+       "exact gadgets": 0,
+       "irredundant exact shapes": 0,
+       "irredundant exact gadgets": 0,
+       "pendant-free exact shapes": 0,
+       "pendant-free exact gadgets": 0,
+       "factors (irredundant)": {},
+       "single-scale (factor, distance)": {},
+       "single-scale pendant-free (factor, distance)": {}
+      }
+     }
+    }
+   }
+  },
+  "4 linear mechanism (parity)": {
+   "ok": true,
+   "detail": {
+    "rebuilding": 440,
+    "exact": 440,
+    "affine": 440,
+    "factor = |S|/4, a power of two": 440
+   }
+  },
+  "5 single-scale irredundant exact gadgets": {
+   "ok": true,
+   "detail": {
+    "mechanism counts": {
+     "parity (even tuples allowed): linear": 22,
+     "parity (odd tuples allowed): linear": 22,
+     "three excluded {000, 011, 101}: none of these": 2,
+     "three excluded {000, 011, 101}: pendant": 53,
+     "three excluded {000, 011, 101}: tied pair": 4,
+     "three excluded {001, 010, 111}: none of these": 2,
+     "three excluded {001, 010, 111}: pendant": 53,
+     "three excluded {001, 010, 111}: tied pair": 4,
+     "twisted not-all-equal: pendant": 96,
+     "twisted not-all-equal: tied pair": 36,
+     "twisted not-all-equal: transitive automorphisms": 6
+    },
+    "pendant-free (copies, distance, factor, dimension, mechanism) by class": {
+     "parity (odd tuples allowed)": [
+      [
+       3,
+       2,
+       2,
+       1.584963,
+       "linear"
+      ],
+      [
+       4,
+       2,
+       1,
+       2.0,
+       "linear"
+      ],
+      [
+       5,
+       2,
+       2,
+       2.321928,
+       "linear"
+      ],
+      [
+       5,
+       3,
+       4,
+       1.464974,
+       "linear"
+      ],
+      [
+       6,
+       2,
+       1,
+       2.584963,
+       "linear"
+      ],
+      [
+       6,
+       2,
+       2,
+       2.584963,
+       "linear"
+      ],
+      [
+       6,
+       3,
+       2,
+       1.63093,
+       "linear"
+      ]
+     ],
+     "parity (even tuples allowed)": [
+      [
+       3,
+       2,
+       2,
+       1.584963,
+       "linear"
+      ],
+      [
+       4,
+       2,
+       1,
+       2.0,
+       "linear"
+      ],
+      [
+       5,
+       2,
+       2,
+       2.321928,
+       "linear"
+      ],
+      [
+       5,
+       3,
+       4,
+       1.464974,
+       "linear"
+      ],
+      [
+       6,
+       2,
+       1,
+       2.584963,
+       "linear"
+      ],
+      [
+       6,
+       2,
+       2,
+       2.584963,
+       "linear"
+      ],
+      [
+       6,
+       3,
+       2,
+       1.63093,
+       "linear"
+      ]
+     ],
+     "twisted not-all-equal": [
+      [
+       4,
+       2,
+       2,
+       2.0,
+       "transitive automorphisms"
+      ],
+      [
+       6,
+       2,
+       2,
+       2.584963,
+       "tied pair"
+      ]
+     ],
+     "three excluded {000, 011, 101}": [
+      [
+       6,
+       2,
+       1,
+       2.584963,
+       "tied pair"
+      ],
+      [
+       6,
+       2,
+       2,
+       2.584963,
+       "none of these"
+      ]
+     ],
+     "three excluded {001, 010, 111}": [
+      [
+       6,
+       2,
+       1,
+       2.584963,
+       "tied pair"
+      ],
+      [
+       6,
+       2,
+       2,
+       2.584963,
+       "none of these"
+      ]
+     ]
+    }
+   }
+  },
+  "6 mechanisms of all irredundant exact gadgets of the classes other than parity": {
+   "ok": true,
+   "detail": {
+    "counts (first applicable of: pendant, frozen hidden variable, tied pair, transitive automorphisms)": {
+     "three excluded {000, 011, 101}: frozen hidden variable": 213,
+     "three excluded {000, 011, 101}: none of these": 2,
+     "three excluded {000, 011, 101}: pendant": 698,
+     "three excluded {000, 011, 101}: tied pair": 49,
+     "three excluded {001, 010, 111}: frozen hidden variable": 213,
+     "three excluded {001, 010, 111}: none of these": 2,
+     "three excluded {001, 010, 111}: pendant": 698,
+     "three excluded {001, 010, 111}: tied pair": 49,
+     "twisted not-all-equal: none of these": 18,
+     "twisted not-all-equal: pendant": 1698,
+     "twisted not-all-equal: tied pair": 411,
+     "twisted not-all-equal: transitive automorphisms": 6
+    },
+    "irredundant exact gadgets of these classes": 4057,
+    "none of these": 22,
+    "none of these, by (class, copies, shape, factor, leg distances, automorphisms, orbit sizes)": {
+     "('three excluded {000, 011, 101}', 6, 'ade,bdf,cef,deg,efh,fgh->abc', 2, (2, 2, 2), 1, (1, 1, 1, 1, 1))": 2,
+     "('three excluded {001, 010, 111}', 6, 'ade,bdf,cef,deg,efh,fgh->abc', 2, (2, 2, 2), 1, (1, 1, 1, 1, 1))": 2,
+     "('twisted not-all-equal', 6, 'ade,bdf,ceg,dfh,efg,efh->abc', 3, (2, 2, 3), 2, (2, 2, 2))": 9,
+     "('twisted not-all-equal', 6, 'ade,bdf,ceg,dfh,egh,fgh->abc', 3, (2, 2, 3), 4, (2, 4))": 9
+    }
+   }
+  },
+  "6b x or (y != z): the two tuples far from both excluded tuples": {
+   "ok": true,
+   "detail": {
+    "rebuilding gadgets": 1120,
+    "far tuples at least every near tuple": 1112,
+    "far sum above near sum, per tuple": 1120
+   }
+  },
+  "7 leg-copy lemma": {
+   "ok": true,
+   "detail": {
+    "gadgets": 458,
+    "leg copies leaving exactly c": 458,
+    "all copies leaving exactly c": 54
+   }
+  },
+  "8 not-all-equal at seven copies (punctured Fano gadget)": {
+   "ok": true,
+   "detail": {
+    "counts": {
+     "(0, 0, 0)": 0,
+     "(0, 0, 1)": 5,
+     "(0, 1, 0)": 5,
+     "(0, 1, 1)": 5,
+     "(1, 0, 0)": 5,
+     "(1, 0, 1)": 5,
+     "(1, 1, 0)": 5,
+     "(1, 1, 1)": 0
+    },
+    "leg distances": [
+     3,
+     3,
+     3
+    ],
+    "dimension log 7 / log 3": 1.771244
+   }
+  },
+  "9 controls": {
+   "ok": true,
+   "detail": {
+    "x or (y != z), four copies, counts on its relation": [
+     2,
+     2,
+     2,
+     2,
+     5,
+     5
+    ],
+    "doubled copy flagged redundant, counts unchanged": true,
+    "brute force agrees with contraction": "2836/2836"
+   }
+  }
+ },
+ "single_scale_irredundant_exact_gadgets": [
+  {
+   "copies": 3,
+   "shape": "ade,bdf,cef->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 1.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 3,
+   "shape": "ade,bdf,cef->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 1.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "transitive automorphisms",
+   "parity": false
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "transitive automorphisms",
+   "parity": false
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "transitive automorphisms",
+   "parity": false
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "transitive automorphisms",
+   "parity": false
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "transitive automorphisms",
+   "parity": false
+  },
+  {
+   "copies": 4,
+   "shape": "ade,bdf,cef,def->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.0,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "transitive automorphisms",
+   "parity": false
+  },
+  {
+   "copies": 5,
+   "shape": "ade,bdf,cdg,deh,fgh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.321928,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 5,
+   "shape": "ade,bdf,cdg,deh,fgh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.321928,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 5,
+   "shape": "ade,bfg,chi,dfh,egi->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 4,
+   "distance": 3,
+   "dimension": 1.464974,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 5,
+   "shape": "ade,bfg,chi,dfh,egi->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 4,
+   "distance": 3,
+   "dimension": 1.464974,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cdg,deh,efg,fgh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cdg,deh,efg,fgh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cdg,deh,dfg,fgh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cdg,deh,dfg,fgh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cdg,def,deh,fgh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cdg,def,deh,fgh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,fgh->abc",
+   "class": "three excluded {000, 011, 101}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "none of these",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,fgh->abc",
+   "class": "three excluded {000, 011, 101}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "none of these",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,fgh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,fgh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,fgh->abc",
+   "class": "three excluded {001, 010, 111}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "none of these",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,fgh->abc",
+   "class": "three excluded {001, 010, 111}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": false,
+   "mechanism": "none of these",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,egh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efh,egh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,efg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,dgh,egi,fhi->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,dgh,egi,fhi->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,dgh,efg,efh->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,dgh,efg,efh->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": true,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {000, 011, 101}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {000, 011, 101}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {000, 011, 101}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {000, 011, 101}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {001, 010, 111}",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {001, 010, 111}",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {001, 010, 111}",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "three excluded {001, 010, 111}",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 1,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,def,deg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bdf,cef,deg,dfg,efg->abc",
+   "class": "twisted not-all-equal",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 2,
+   "dimension": 2.584963,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "tied pair",
+   "parity": false
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bfg,chi,def,egh,ghi->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 3,
+   "dimension": 1.63093,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bfg,chi,def,egh,ghi->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 3,
+   "dimension": 1.63093,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bfg,chi,def,ehi,ghi->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 3,
+   "dimension": 1.63093,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bfg,chi,def,ehi,ghi->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 3,
+   "dimension": 1.63093,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bfg,chi,dfh,egi,ghi->abc",
+   "class": "parity (odd tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 3,
+   "dimension": 1.63093,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  },
+  {
+   "copies": 6,
+   "shape": "ade,bfg,chi,dfh,egi,ghi->abc",
+   "class": "parity (even tuples allowed)",
+   "placements": [
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ],
+   "factor": 2,
+   "distance": 3,
+   "dimension": 1.63093,
+   "pendant": false,
+   "frozen hidden": false,
+   "tied pair": true,
+   "mechanism": "linear",
+   "parity": true
+  }
+ ],
+ "seconds": 516.2
+}

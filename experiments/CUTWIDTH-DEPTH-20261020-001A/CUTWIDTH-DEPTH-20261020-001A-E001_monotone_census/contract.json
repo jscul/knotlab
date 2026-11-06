@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "CUTWIDTH-DEPTH-20261020-001A-E001",
+  "ticket": "CUTWIDTH-DEPTH-20261020-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a sweep that also removes vertices beat a monotone one, and is the toggle width (hence the depth of a charge hole over fields that cannot compute in the charge group) exactly cutwidth + 1 on graphs of maximum degree at most 3?",
+  "definitions": {
+    "toggle path": "a sequence of vertex sets from the empty set to V, each obtained from the previous by adding or removing one vertex",
+    "toggle width tgw": "the least k such that some toggle path has every step's delta(U) union star(v) of size at most k (U the set before the step, v the toggled vertex)",
+    "monotone toggle width": "the same with additions only",
+    "cutwidth cw": "the least over vertex orderings of the largest number of edges leaving a prefix",
+    "cut game value": "the least over toggle paths of the largest cut |delta(U)| among the visited sets",
+    "depth certificate": "for the parity network with charge 1 at vertex 0: the sweep refutation of DEEP-HOLES-20261020-001B along a cutwidth-optimal ordering at level cw + 1, verified by substitution; and at level cw, no toggle path of cost at most cw reaches V (the Fourier construction is consistent), with 100 random equations of the level-cw system checked on it"
+  },
+  "public_inputs": {
+    "cubic": "all connected cubic graphs on 4, 6, 8 and 10 vertices (1, 2, 5, 19) by exhaustive generation; on 12 vertices by sampling uniform random labelled cubic graphs (configuration model, seed 20261020) until 85 isomorphism classes are found, the published count (OEIS A002851), then 20,000 further samples that must add none",
+    "small": "all connected graphs on 3 to 6 vertices (2, 6, 21, 112) by exhaustive generation up to isomorphism",
+    "sampled": "200 random connected 4-regular graphs on each of 8, 10 and 12 vertices; 200 random connected graphs on each of 8, 9 and 10 vertices with edge probability 0.4 (seed 20261020)"
+  },
+  "forbidden_inputs": [
+    "predicted widths as inputs to the width computations"
+  ],
+  "predictions": {
+    "P1": "every roster graph of maximum degree at most 3 with at least 3 vertices has tgw = monotone tgw = cw + 1",
+    "P2": "every roster graph with at least 3 vertices has cw + 1 <= tgw <= monotone tgw <= cw + floor(maxdegree/2)",
+    "P3": "every roster graph has cut game value = cw (removals never help the cut game)",
+    "P4": "every roster graph has tgw = monotone tgw (removals never help the toggle game), whatever its degree",
+    "P5": "on every 12-vertex cubic graph the sweep refutes the parity network at level cw + 1, and at level cw the Fourier construction is consistent and passes its spot checks: depth = cw + 1"
+  },
+  "primary_observable": "per graph: n, maximum degree, cw, tgw, monotone tgw, cut game value; per 12-vertex cubic graph: the depth certificates",
+  "cheapest_meaningful_control": "(1) The 12-vertex sampler, run on 10 vertices, must find exactly the 19 classes found by exhaustive generation. (2) The single edge (2 vertices) must have tgw = cw, showing the 3-vertex condition is live in the code. (3) P1 with cw or cw + 2 in place of cw + 1 must fail somewhere. (4) The sweep certificate with one step removed must fail.",
+  "independent_check": "check_result.py recomputes every width by separate algorithms (threshold search for the games, memoized recursion for cutwidth), confirms the 12-vertex classes are pairwise non-isomorphic by canonical forms and number 85, recounts the small graphs, and re-verifies the depth certificates",
+  "decision_or_followup_rule": "A signal is P1-P5 holding on every case. If P1 fails, record the counterexample and stop ticket B as stated. If only P4 fails on a graph of degree 4 or more, ticket B proceeds (its theorem covers degree at most 3) and the failure is reported as a finding about higher degree.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "cubic graphs on 4-10 vertices, then the 12-vertex sampler with its 10-vertex control",
+  "stop_rule": "Stop after the declared roster or the budget; stop early only on a generator, solver or control failure.",
+  "notes": [
+    "The proof outline behind P1-P3 (peak elimination; the monotonicity lemma of Fomin and Thilikos, Discrete Applied Mathematics 131 (2003), Lemma 1, after Bienstock and Seymour; the monotone bound cw + floor(d/2)) was worked out before this freeze and is the subject of ticket B. P4 for degree 4 and above has no proof."
+  ],
+  "nonclaims": [
+    "Finite enumeration on the declared roster; general statements belong to ticket B.",
+    "The completeness of the 12-vertex cubic roster rests on the published count 85.",
+    "No claim about other relaxations, native structure, distance or physics."
+  ]
+}

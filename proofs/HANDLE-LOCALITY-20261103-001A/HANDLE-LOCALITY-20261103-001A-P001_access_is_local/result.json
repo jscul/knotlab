@@ -1,0 +1,65 @@
+{
+ "artifact_id": "HANDLE-LOCALITY-20261103-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json": "Proved",
+     "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json": "passed",
+     "proofs/PLANAR-THEOREM-20261102-001C/PLANAR-THEOREM-20261102-001C-P001_every_plane_pinning_has_access/manifest.json": "Proved",
+     "proofs/PLANAR-THEOREM-20261102-001C/PLANAR-THEOREM-20261102-001C-P001_every_plane_pinning_has_access/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 point splits are plane matching systems with access: on 26 plane knot spaces with Kasteleyn signs (census, grown, prisms; to 14 points), splitting any point into three ports, one per line through it, leaves as many faces as lines, all odd; and every pinning of a six-pattern line by two untied points (ports included) is of type (i) or (ii) relative to its first point": {
+   "info": {
+    "pinnings: point as p, point as a, type (i)": 96,
+    "pinnings: point as p, point as a, type (ii)": 180288,
+    "pinnings: point as p, port as a, type (i)": 288,
+    "pinnings: point as p, port as a, type (ii)": 38160,
+    "pinnings: port as p, point as a, type (ii)": 38448,
+    "pinnings: port as p, port as a, type (ii)": 3612,
+    "plane spaces with Kasteleyn signs (n + 2 faces, all odd)": 28,
+    "point splits": 301,
+    "point splits: as many faces as lines, all odd (a plane matching system)": 301
+   },
+   "pass": true
+  },
+  "2 the interface lemma: on 14 splices (the Fano plane and census 58 against three grown plane spaces, both ways round, and census 6 against a grown plane space, both ways), at every removal, the solutions restricted to a plane piece are exactly those of its closure minus the removed line (removal inside the piece), or of the closure minus the gluing line, or the point split (removal outside)": {
+   "info": {
+    "H1 piece, removal inside: H1 minus the removed line (equal)": 72,
+    "H1 piece, removal outside: H1 minus the gluing line (equal)": 61,
+    "H2 piece, removal inside: H2 minus the removed line (ports read as the split point) (equal)": 80,
+    "H2 piece, removal outside: the point split (equal)": 35,
+    "H2 piece, removal outside: the point split cut to 4 port patterns (equal)": 18
+   },
+   "pass": true
+  },
+  "3 access is local: on the same splices, at every removal, every pinning of a six-pattern line of a plane piece by two points of that piece is of type (i) or (ii) relative to its first point; pinnings by points outside the piece are recorded": {
+   "info": {
+    "plane piece, removal inside the piece, both points in the piece: type (i)": 2496,
+    "plane piece, removal inside the piece, both points in the piece: type (ii)": 12204,
+    "plane piece, removal inside the piece, both points outside: type (i)": 48,
+    "plane piece, removal inside the piece, both points outside: type (ii)": 212,
+    "plane piece, removal inside the piece, one point outside: type (i)": 854,
+    "plane piece, removal inside the piece, one point outside: type (ii)": 2446,
+    "plane piece, removal outside the piece, both points in the piece: type (i)": 570,
+    "plane piece, removal outside the piece, both points in the piece: type (ii)": 16326,
+    "plane piece, removal outside the piece, both points outside: type (i')": 192,
+    "plane piece, removal outside the piece, both points outside: type (ii)": 92,
+    "plane piece, removal outside the piece, both points outside: type (iv)": 336,
+    "plane piece, removal outside the piece, one point outside: type (i)": 274,
+    "plane piece, removal outside the piece, one point outside: type (ii)": 5454
+   },
+   "pass": true
+  }
+ },
+ "claim": "Access is local: plane pieces keep it. (1) Plane matching systems: a plane signed system with as many lines as odd faces has, up to complement, exactly the perfect matchings of lines to odd faces as solutions; its heights are L-natural convex, and the access lemma of PLANAR-THEOREM A and C holds on it for every pinning. A plane knot space with Kasteleyn signs split at a point into three ports is one: the three faces at the point merge into one odd face, leaving n faces for n lines. (2) The interface lemma: splice H1 minus a line li with H2 split at a point, and remove any line M. H1 minus li forces li's points to an all-equal pair, so it acts on the cut as the point; H2 split excludes exactly the patterns that read the point consistently, so it acts as li. Hence the solutions restricted to H1's piece are those of H1 minus M or H1 minus li, and those restricted to H2's piece are H2 minus M, the point split, the point split with two ports merged, or H2 with the point re-signed. Each is a plane matching system when the closure is plane. (3) So every pinning of a six-pattern line of a plane piece by two points of that piece has access, wherever the removed line is. Checked: 301 point splits of 26 plane spaces, all matching systems, with 260,892 pinnings all of type (i) or (ii); on 14 splices the predicted restriction at all 266 piece-removal pairs, and 31,596 pinnings from inside a plane piece, all with access. Computed, not proved: 9,028 pinnings with one point outside the piece all have access; pinnings by two outside points fail only when the removal is outside too (528 of 620).",
+ "kind": "proof",
+ "proof": "HANDLE-LOCALITY-20261103-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HANDLE-LOCALITY-20261103-001A"
+}

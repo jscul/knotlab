@@ -1,0 +1,131 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SPIN-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 7,
+    "mismatched": {}
+   }
+  },
+  "1 base pieces: Heawood, doubled square and planar braces are Kasteleyn on every minimal map": {
+   "ok": true,
+   "detail": {
+    "Heawood graph, trivial signing: maps by (face lengths, Kasteleyn, three distinct faces)": {
+     "(((6, 7),), True, True)": 16
+    },
+    "doubled square: planar maps, and whether every one is Kasteleyn with three distinct faces, by number of negated classes": {
+     "planar maps": 4,
+     "0": [
+      false
+     ],
+     "1": [
+      true
+     ],
+     "2": [
+      false
+     ],
+     "3": [
+      true
+     ],
+     "4": [
+      false
+     ]
+    },
+    "planar braces with their Kasteleyn signings": {
+     "cube": {
+      "planar maps": 2,
+      "all Kasteleyn with three distinct faces": true
+     },
+     "hexagonal prism": {
+      "planar maps": 2,
+      "all Kasteleyn with three distinct faces": true
+     },
+     "truncated octahedron": {
+      "planar maps": 2,
+      "all Kasteleyn with three distinct faces": true
+     }
+    }
+   }
+  },
+  "2 splice lemma: every tight cut crossed by three faces, three distinct faces everywhere, every face of length 2 mod 4": {
+   "ok": true,
+   "detail": {
+    "13-point splice": {
+     "genus": 2,
+     "tight cuts": 1,
+     "maps checked": 128,
+     "maps by (faces 2 mod 4, three distinct faces, each cut crossed by three faces using two of its edges)": {
+      "(True, True, True)": 128
+     }
+    },
+    "19-point composition": {
+     "genus": 3,
+     "tight cuts": 2,
+     "maps checked": 256,
+     "maps by (faces 2 mod 4, three distinct faces, each cut crossed by three faces using two of its edges)": {
+      "(True, True, True)": 256
+     }
+    },
+    "21-point 3-cycle of blocks": {
+     "genus": 3,
+     "tight cuts": 12,
+     "maps checked": 64,
+     "maps by (faces 2 mod 4, three distinct faces, each cut crossed by three faces using two of its edges)": {
+      "(True, True, True)": 64
+     }
+    },
+    "22-point tripod": {
+     "genus": 3,
+     "tight cuts": 12,
+     "maps checked": 64,
+     "maps by (faces 2 mod 4, three distinct faces, each cut crossed by three faces using two of its edges)": {
+      "(True, True, True)": 64
+     }
+    }
+   }
+  },
+  "3 the Fano space: Arf 0 for every matching, matchings split 8, 8, 8 over the three even classes": {
+   "ok": true,
+   "detail": {
+    "maps by (ill-defined evaluations, Arf over all 24 matchings, q on differences, class sizes, classes = zeros of q)": {
+     "(0, (0,), (0,), (8, 8, 8), True)": 16
+    }
+   }
+  },
+  "4 the 13-point space: Arf 0, the form vanishes on all matching differences, 9 of the 10 even classes realized": {
+   "ok": true,
+   "detail": {
+    "maps by (Arf, q on differences, classes realized, zeros of q, realized inside zeros, ill-defined evaluations)": {
+     "(0, (0,), 9, 10, True, 0)": 128
+    }
+   }
+  },
+  "5 on every Heawood map the classes of single nice cycles span H_1": {
+   "ok": true,
+   "detail": {
+    "rank of the classes of single nice cycles, by map": {
+     "2": 16
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "the face condition is not automatic: some non-minimal maps of the Heawood graph have a face of length 0 mod 4": true,
+    "fraction of 200 random non-minimal maps failing it": 0.195,
+    "one flipped sign breaks the face condition and makes the form ill-defined": true,
+    "the three other Kasteleyn classes of a Heawood map include exactly one odd spin structure": true,
+    "Arf invariants of the three twisted classes": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  "ok": true,
+  "seconds": 12.1
+ }
+}

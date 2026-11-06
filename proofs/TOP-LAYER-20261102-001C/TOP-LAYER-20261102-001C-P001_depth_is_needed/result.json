@@ -1,0 +1,59 @@
+{
+ "artifact_id": "TOP-LAYER-20261102-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/manifest.json": "Proved",
+     "proofs/TOP-LAYER-20261102-001A/TOP-LAYER-20261102-001A-P001_three_value_laws_are_rigid/result.json": "passed",
+     "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/manifest.json": "Proved",
+     "proofs/TOP-LAYER-20261102-001B/TOP-LAYER-20261102-001B-P001_group_laws_keep_their_top_rigid/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 on 26 random Mal'tsev algebras on four values (20 with a congruence {0,1}|{2,3} and an affine quotient, 6 unrestricted), every three-place knot (all subuniverses of A^3 enumerated): each fork relation is a congruence of the range, its quotient is abelian, and the knot is a union of fork classes": {
+   "info": {
+    "algebras": 26,
+    "forks checked": 4554,
+    "knots": 1518
+   },
+   "pass": true
+  },
+  "2 random systems of three-place knots on cubic substrates (up to 7 points, both readings) and four-place knots on 4-regular substrates (5 and 6 points) for every algebra of check 1: every global failure leaves solutions saturated by the derived congruences of the ambient ranges, and where every abelian section is simple every global failure is rigid": {
+   "info": {
+    "algebras with every abelian section simple": 26,
+    "global failures, simple sections": 98,
+    "rigid, simple sections": 98
+   },
+   "pass": true
+  },
+  "2b systems with declared domains (every point carries one subalgebra and every line carries a knot whose ranges are its points' domains), on cubic substrates and on 4-regular substrates with 5 and 6 points, for every algebra of check 1 whose abelian sections are all simple: every global failure is rigid and saturated": {
+   "info": {
+    "global failures": 475,
+    "rigid": 475,
+    "systems": 2979
+   },
+   "pass": true
+  },
+  "3 controls. Z4 has a two-layer abelian section (itself), and RIGID-SELECTION B's example keeps knots after every removal, so the hypothesis is needed. The T2(F2)-module has a two-layer section too, yet every global failure of its knot systems on random regular substrates is rigid (none on cubic ones): depth is necessary, not sufficient": {
+   "info": {
+    "T2(F2)": {
+     "global failures": 195,
+     "of which on cubic substrates": 0,
+     "rigid": 195
+    },
+    "Z4 example: removals keeping a knot (of 6)": 6,
+    "Z4 has a non-simple abelian section": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Depth is needed: simple abelian sections force rigid selection. In every Mal'tsev law, composing like cycles or not: (1) a knot H inside R_1 x ... x R_k (k >= 3, every (k-1)-projection full) is a union of classes of its fork congruences rho_i, and every quotient R_i/rho_i is abelian (commutator theory); (2) for a knot system with declared domains (every point carries one subalgebra D_v and every line carries a knot whose ranges are its points' domains), the solutions, and the solutions after any line is removed, are pulled back from one linear system over the abelianizations D_v/[1,1]; (3) if every abelian section of the algebra is simple, every global failure of such a system on a substrate is rigid: the failing part is one square linear system over the division ring End(S) of one simple module S, so after any removal it leaves one line, and only ties. Corollaries: every Mal'tsev law on at most three values, every non-affine Mal'tsev law on four values, and every group law that composes like cycles with abelian sections of prime order (squarefree order). Systems whose lines confine a point further than its domain are not covered by the proof; every one of them met in the checks of this ticket and of tickets A and B was rigid. Depth is necessary but not sufficient: the module F2^2 over the upper-triangular ring T2(F2) has two layers yet is rigid on every regular substrate, because its knots read the top as plain parity and an even line then forces the top's free direction onto every variable. Checked on random Mal'tsev algebras on four values (all three-place knots enumerated, forks abelian, systems with declared and with mixed domains), with Z4 and the T2(F2)-module as controls.",
+ "kind": "proof",
+ "proof": "TOP-LAYER-20261102-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TOP-LAYER-20261102-001C"
+}

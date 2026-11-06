@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-SURVIVORS-20261029-001A-P001",
+  "canonical_id": "HUB-SURVIVORS-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "HUB-SURVIVORS-20261029-001A",
+  "proof": "HUB-SURVIVORS-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Hub survivors: which knot classes are rebuilt by hub gadgets of their own copies",
+  "status": "Proved",
+  "claim": "The 34 relations on three bits with every two coordinates unconstrained, other than the full cube, form 16 classes up to coordinate order. A hub gadget joins copies of one relation (any placements) with three legs in one copy each, hidden variables in at least two distinct copies, no variable twice in a copy, connected. Theorem 1: copies sharing one triple of variables intersect their placements; from twisted not-all-equal this reaches an equality on two coordinates, and from x or (y != z) and the three-excluded classes it reaches parity, while x or (y = z), not-all-equal and the no-lone-value classes reach neither. Theorem 2 (exhaustive over gadgets of at most six copies): the classes rebuilt are exactly the two parity classes, the two three-excluded classes with a symmetry of order two, twisted not-all-equal and the two x or (y != z) classes (smallest gadgets: three copies for parity, four for the others). Theorem 3: the two monotone atoms (excluding only 000, or only 111) are never rebuilt, at any size. Not-all-equal is rebuilt at seven copies (ticket B), so the census bounds, not decides, the remaining classes.",
+  "dependencies": [
+    "GEOMETRY-LAW-20261029-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A class rebuilt by a hub gadget of at most six copies other than those listed, or a listed class not rebuilt at its stated size.",
+    "A hub gadget with at least two copies rebuilding a monotone atom.",
+    "Parallel intersections of a class reaching parity or a two-coordinate equality other than as stated."
+  ],
+  "lineage": {
+    "home_scope": "HUB-SURVIVORS-20261029-001",
+    "epic_path": [
+      "HUB-SURVIVORS-20261029-001"
+    ],
+    "parents": [
+      "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json",
+      "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json": "011edccb8f58cf1c4c9d424c7e91336bb2028b67ab738d22180bf7b0ea21c45c",
+    "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json": "a3a77a4ad331ee970fa5a3fcc30021a26ef0e1d220dbdbc35a0da75718616cb0"
+  },
+  "paths": {
+    "manifest": "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/manifest.json",
+    "identity": "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/identity.json",
+    "directory": "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies",
+    "proof": "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/proof.md",
+    "result": "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/result.json",
+    "check": "proofs/HUB-SURVIVORS-20261029-001A/HUB-SURVIVORS-20261029-001A-P001_hub_survivors_are_rebuilt_by_parallel_copies/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "hub_survivors_census_shown": false
+  },
+  "foundation_claim_scope": "Set-level relations on three bits that pass K1-K3, in 16 classes up to coordinate order; hub gadgets as stated, exhaustive over three to six copies with every placement; the monotone-atom statement for every size; the remaining classes are bounded, not decided, since not-all-equal is rebuilt at seven copies.",
+  "validation": {
+    "status": "checked: 34 knots in 16 classes; intersection closures of every class (parity reached by x or (y != z) and the three-excluded classes, an equality by twisted not-all-equal, neither by the others); the fast enumeration equals a full canonical enumeration at 3, 4, 5 copies (3, 11, 104 shapes) and a size-first ordering misses shapes (control); exhaustive census of hub gadgets with 3 to 6 copies (1183 shapes, every placement): exactly seven classes rebuilt (parity from three copies, five others from four), the other nine not; monotone atoms never rebuilt (every copy holds a hidden variable); without hubs only parity is rebuilt; all-equal is rebuilt (control). The census bounds the nine classes, not decides them (not-all-equal is rebuilt at seven copies, ticket B); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

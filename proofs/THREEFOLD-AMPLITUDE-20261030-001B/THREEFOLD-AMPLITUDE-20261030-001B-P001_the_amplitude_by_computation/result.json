@@ -1,0 +1,869 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-AMPLITUDE-20261030-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 10,
+    "mismatched": {}
+   }
+  },
+  "1 the census: not colourable, one amplitude shared with the transpose, the product of the brace amplitudes": {
+   "ok": true,
+   "detail": {
+    "untwisted": {
+     "classes per n": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 2,
+      "7": 8,
+      "8": 12,
+      "9": 36,
+      "10": 97
+     },
+     "classes": 160,
+     "amplitude distribution": {
+      "1": 119,
+      "2": 32,
+      "3": 4,
+      "5": 5
+     },
+     "brace kinds met": {
+      "theta": 1,
+      "doubled square": 158,
+      "planar": 36,
+      "heawood": 5
+     },
+     "failures": []
+    },
+    "twisted": {
+     "classes per n": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 3,
+      "5": 7,
+      "6": 19,
+      "7": 54,
+      "8": 166,
+      "9": 515,
+      "10": 1726
+     },
+     "classes": 2492,
+     "amplitude distribution": {
+      "1": 1698,
+      "2": 697,
+      "3": 61,
+      "4": 8,
+      "5": 27,
+      "6": 1
+     },
+     "brace kinds met": {
+      "doubled square": 2492,
+      "planar": 766,
+      "heawood": 27,
+      "other": 1
+     },
+     "failures": []
+    }
+   }
+  },
+  "2 every space up to 22 points: the law exact at every corner with lambda(0) = (-1)^(n-1) 5^atoms; twisted classes": {
+   "ok": true,
+   "detail": {
+    "untwisted": {
+     "Fano (7)": {
+      "corner lines": 7,
+      "exact at all": true,
+      "lambda(0)": [
+       5
+      ],
+      "Fano atoms": 1
+     },
+     "13-point class 0": {
+      "corner lines": 13,
+      "exact at all": true,
+      "lambda(0)": [
+       25
+      ],
+      "Fano atoms": 2
+     },
+     "19-point class 0": {
+      "corner lines": 19,
+      "exact at all": true,
+      "lambda(0)": [
+       125
+      ],
+      "Fano atoms": 3
+     },
+     "19-point class 1": {
+      "corner lines": 19,
+      "exact at all": true,
+      "lambda(0)": [
+       125
+      ],
+      "Fano atoms": 3
+     },
+     "19-point class 2": {
+      "corner lines": 19,
+      "exact at all": true,
+      "lambda(0)": [
+       125
+      ],
+      "Fano atoms": 3
+     },
+     "19-point class 3": {
+      "corner lines": 19,
+      "exact at all": true,
+      "lambda(0)": [
+       125
+      ],
+      "Fano atoms": 3
+     },
+     "21-point class 0": {
+      "corner lines": 21,
+      "exact at all": true,
+      "lambda(0)": [
+       125
+      ],
+      "Fano atoms": 3
+     },
+     "22-point class 0": {
+      "corner lines": 22,
+      "exact at all": true,
+      "lambda(0)": [
+       -125
+      ],
+      "Fano atoms": 3
+     }
+    },
+    "twisted": {
+     "14-point class 0": {
+      "amplitudes": [
+       25
+      ],
+      "transposed": [
+       25
+      ],
+      "product": 25,
+      "braces": {
+       "heawood": 2,
+       "doubled square": 1
+      }
+     },
+     "15-point class 0": {
+      "amplitudes": [
+       25
+      ],
+      "transposed": [
+       25
+      ],
+      "product": 25,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 2
+      }
+     },
+     "18-point class 0": {
+      "amplitudes": [
+       50
+      ],
+      "transposed": [
+       50
+      ],
+      "product": 50,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 2,
+       "planar": 1
+      }
+     },
+     "20-point class 0": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 1": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 2": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 3": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 4": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 5": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 6": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 7": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 8": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 9": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 1
+      }
+     },
+     "20-point class 10": {
+      "amplitudes": [
+       75
+      ],
+      "transposed": [
+       75
+      ],
+      "product": 75,
+      "braces": {
+       "planar": 1,
+       "heawood": 2,
+       "doubled square": 2
+      }
+     },
+     "21-point class 0": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "heawood": 3,
+       "doubled square": 2
+      }
+     },
+     "21-point class 1": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 3
+      }
+     },
+     "21-point class 2": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 3
+      }
+     },
+     "21-point class 3": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 3
+      }
+     },
+     "21-point class 4": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 3
+      }
+     },
+     "21-point class 5": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 3
+      }
+     },
+     "21-point class 6": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 2,
+       "heawood": 3
+      }
+     },
+     "22-point class 0": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 3,
+       "heawood": 3
+      }
+     },
+     "22-point class 1": {
+      "amplitudes": [
+       125
+      ],
+      "transposed": [
+       125
+      ],
+      "product": 125,
+      "braces": {
+       "doubled square": 3,
+       "heawood": 3
+      }
+     },
+     "22-point class 2": {
+      "amplitudes": [
+       150
+      ],
+      "transposed": [
+       150
+      ],
+      "product": 150,
+      "braces": {
+       "other": 1,
+       "heawood": 2,
+       "doubled square": 2
+      }
+     }
+    }
+   }
+  },
+  "3 planar glue: spanning trees of maps, hypertrees of hypermaps, arborescence numbers": {
+   "ok": true,
+   "detail": {
+    "omnitruncations": {
+     "triangle": {
+      "lines": 6,
+      "amplitudes": [
+       3
+      ],
+      "arborescence numbers": [
+       3,
+       3,
+       3
+      ],
+      "spanning trees of the map": 3,
+      "Tutte matchings": [
+       3
+      ]
+     },
+     "4-cycle": {
+      "lines": 8,
+      "amplitudes": [
+       4
+      ],
+      "arborescence numbers": [
+       4,
+       4,
+       4
+      ],
+      "spanning trees of the map": 4,
+      "Tutte matchings": [
+       4
+      ]
+     },
+     "5-cycle": {
+      "lines": 10,
+      "amplitudes": [
+       5
+      ],
+      "arborescence numbers": [
+       5,
+       5,
+       5
+      ],
+      "spanning trees of the map": 5,
+      "Tutte matchings": [
+       5
+      ]
+     },
+     "K4": {
+      "lines": 12,
+      "amplitudes": [
+       16
+      ],
+      "arborescence numbers": [
+       16,
+       16,
+       16
+      ],
+      "spanning trees of the map": 16,
+      "Tutte matchings": [
+       16
+      ]
+     },
+     "cube": {
+      "lines": 24,
+      "amplitudes": [
+       384
+      ],
+      "arborescence numbers": [
+       384,
+       384,
+       384
+      ],
+      "spanning trees of the map": 384
+     },
+     "octahedron": {
+      "lines": 24,
+      "amplitudes": [
+       384
+      ],
+      "arborescence numbers": [
+       384,
+       384,
+       384
+      ],
+      "spanning trees of the map": 384
+     },
+     "triangular prism": {
+      "lines": 18,
+      "amplitudes": [
+       75
+      ],
+      "arborescence numbers": [
+       75,
+       75,
+       75
+      ],
+      "spanning trees of the map": 75
+     },
+     "square pyramid": {
+      "lines": 16,
+      "amplitudes": [
+       45
+      ],
+      "arborescence numbers": [
+       45,
+       45,
+       45
+      ],
+      "spanning trees of the map": 45
+     },
+     "W6": {
+      "lines": 20,
+      "amplitudes": [
+       121
+      ],
+      "arborescence numbers": [
+       121,
+       121,
+       121
+      ],
+      "spanning trees of the map": 121
+     },
+     "W7": {
+      "lines": 24,
+      "amplitudes": [
+       320
+      ],
+      "arborescence numbers": [
+       320,
+       320,
+       320
+      ],
+      "spanning trees of the map": 320
+     },
+     "K2,3": {
+      "lines": 12,
+      "amplitudes": [
+       12
+      ],
+      "arborescence numbers": [
+       12,
+       12,
+       12
+      ],
+      "spanning trees of the map": 12,
+      "Tutte matchings": [
+       12
+      ]
+     },
+     "pentagonal prism": {
+      "lines": 30,
+      "amplitudes": [
+       1805
+      ],
+      "arborescence numbers": [
+       1805,
+       1805,
+       1805
+      ],
+      "spanning trees of the map": 1805
+     },
+     "dodecahedron": {
+      "lines": 60,
+      "amplitudes": [
+       5184000
+      ],
+      "arborescence numbers": [
+       5184000,
+       5184000,
+       5184000
+      ],
+      "spanning trees of the map": 5184000
+     }
+    },
+    "hypermaps": {
+     "K2,3": {
+      "lines": 6,
+      "amplitudes": [
+       3
+      ],
+      "arborescence numbers": [
+       3,
+       3,
+       3
+      ],
+      "hypertrees (both hypergraphs)": [
+       3,
+       3
+      ],
+      "spanning trees of the hypermap": 12
+     },
+     "K2,4": {
+      "lines": 8,
+      "amplitudes": [
+       4
+      ],
+      "arborescence numbers": [
+       4,
+       4,
+       4
+      ],
+      "hypertrees (both hypergraphs)": [
+       4,
+       4
+      ],
+      "spanning trees of the hypermap": 32
+     },
+     "6-cycle": {
+      "lines": 6,
+      "amplitudes": [
+       3
+      ],
+      "arborescence numbers": [
+       3,
+       3,
+       3
+      ],
+      "hypertrees (both hypergraphs)": [
+       3,
+       3
+      ],
+      "spanning trees of the hypermap": 6
+     },
+     "cube": {
+      "lines": 12,
+      "amplitudes": [
+       16
+      ],
+      "arborescence numbers": [
+       16,
+       16,
+       16
+      ],
+      "hypertrees (both hypergraphs)": [
+       16,
+       16
+      ],
+      "spanning trees of the hypermap": 384
+     },
+     "hexagonal prism": {
+      "lines": 18,
+      "amplitudes": [
+       96
+      ],
+      "arborescence numbers": [
+       96,
+       96,
+       96
+      ],
+      "hypertrees (both hypergraphs)": [
+       96,
+       96
+      ],
+      "spanning trees of the hypermap": 8100
+     },
+     "3x4 grid": {
+      "lines": 17,
+      "amplitudes": [
+       56
+      ],
+      "arborescence numbers": [
+       56,
+       56,
+       56
+      ],
+      "hypertrees (both hypergraphs)": [
+       56,
+       56
+      ],
+      "spanning trees of the hypermap": 2415
+     }
+    }
+   }
+  },
+  "4 trisums: Pfaffian braces with one amplitude shared with the transpose; the amplitude depends on the gluing": {
+   "ok": true,
+   "detail": {
+    "trisums of prisms": {
+     "(2, 2, 2)": {
+      "000": 6,
+      "001": 6,
+      "010": 6,
+      "011": 6
+     },
+     "(2, 2, 3)": {
+      "000": 9,
+      "001": 9,
+      "010": 9,
+      "011": 9
+     },
+     "(2, 3, 3)": {
+      "000": 13,
+      "001": 14,
+      "010": 14,
+      "011": 13
+     },
+     "(3, 3, 3)": {
+      "000": 18,
+      "001": 21,
+      "010": 21,
+      "011": 21
+     },
+     "(2, 2, 4)": {
+      "000": 12,
+      "001": 12,
+      "010": 12,
+      "011": 12
+     },
+     "(2, 3, 4)": {
+      "000": 17,
+      "001": 19,
+      "010": 19,
+      "011": 17
+     },
+     "(3, 3, 4)": {
+      "000": 23,
+      "001": 29,
+      "010": 28,
+      "011": 28
+     },
+     "(2, 4, 4)": {
+      "000": 22,
+      "001": 26,
+      "010": 26,
+      "011": 22
+     },
+     "(4, 4, 4)": {
+      "000": 36,
+      "001": 52,
+      "010": 52,
+      "011": 52
+     },
+     "(2, 2, 5)": {
+      "000": 15,
+      "001": 15,
+      "010": 15,
+      "011": 15
+     },
+     "(2, 3, 5)": {
+      "000": 21,
+      "001": 24,
+      "010": 24,
+      "011": 21
+     }
+    },
+    "nested": {
+     "trisum(2, 2, 2) with prisms (2, 2)": {
+      "points": 12,
+      "braces": 1,
+      "amplitude": [
+       18
+      ]
+     },
+     "trisum(2, 2, 2) with prisms (2, 2) (flip)": {
+      "points": 12,
+      "braces": 1,
+      "amplitude": [
+       18
+      ]
+     },
+     "trisum(2, 2, 2) with prisms (2, 3)": {
+      "points": 14,
+      "braces": 1,
+      "amplitude": [
+       27
+      ]
+     },
+     "trisum(2, 2, 2) with prisms (2, 3) (flip)": {
+      "points": 14,
+      "braces": 1,
+      "amplitude": [
+       27
+      ]
+     },
+     "trisum(2, 2, 3) with prisms (2, 2)": {
+      "points": 14,
+      "braces": 1,
+      "amplitude": [
+       27
+      ]
+     },
+     "trisum(2, 2, 3) with prisms (2, 2) (flip)": {
+      "points": 14,
+      "braces": 1,
+      "amplitude": [
+       27
+      ]
+     }
+    }
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "hypertrees are not spanning trees: K2,3 has 3 hypertrees and 12 spanning trees": true,
+    "an omnitruncation without its Kasteleyn signs is colourable": true,
+    "the trisum (2, 3, 3) has different amplitudes for two gluings, so the pieces' amplitudes do not determine it": true,
+    "the census has twisted classes that are colourable without their twist (the twist matters)": true
+   }
+  },
+  "ok": true,
+  "seconds": 335.4
+ }
+}

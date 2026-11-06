@@ -1,0 +1,342 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SPACES-20261030-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 6,
+    "mismatched": {}
+   }
+  },
+  "1 non-colourable cubic triple systems exist only on 7 and 13 points (n <= 13); twisted ones on none": {
+   "ok": true,
+   "detail": {
+    "untwisted": {
+     "3": [
+      "UNSAT",
+      0.0
+     ],
+     "4": [
+      "UNSAT",
+      0.0
+     ],
+     "5": [
+      "UNSAT",
+      0.0
+     ],
+     "6": [
+      "UNSAT",
+      0.0
+     ],
+     "7": [
+      "SAT",
+      0.0
+     ],
+     "8": [
+      "UNSAT",
+      0.0
+     ],
+     "9": [
+      "UNSAT",
+      0.1
+     ],
+     "10": [
+      "UNSAT",
+      0.4
+     ],
+     "11": [
+      "UNSAT",
+      1.7
+     ],
+     "12": [
+      "UNSAT",
+      11.7
+     ],
+     "13": [
+      "SAT",
+      31.3
+     ]
+    },
+    "twisted": {
+     "3": [
+      "UNSAT",
+      0.0
+     ],
+     "4": [
+      "UNSAT",
+      0.0
+     ],
+     "5": [
+      "UNSAT",
+      0.0
+     ],
+     "6": [
+      "UNSAT",
+      0.0
+     ],
+     "7": [
+      "UNSAT",
+      0.0
+     ],
+     "8": [
+      "UNSAT",
+      0.0
+     ],
+     "9": [
+      "UNSAT",
+      0.1
+     ],
+     "10": [
+      "UNSAT",
+      0.4
+     ],
+     "11": [
+      "UNSAT",
+      2.1
+     ],
+     "12": [
+      "UNSAT",
+      12.3
+     ],
+     "13": [
+      "UNSAT",
+      110.5
+     ]
+    }
+   }
+  },
+  "2 the answers replay with a second solver and without symmetry breaking": {
+   "ok": true,
+   "detail": {
+    "Glucose 4 with symmetry breaking": {
+     "un 3": [
+      "UNSAT",
+      0.0
+     ],
+     "un 4": [
+      "UNSAT",
+      0.0
+     ],
+     "un 5": [
+      "UNSAT",
+      0.0
+     ],
+     "un 6": [
+      "UNSAT",
+      0.0
+     ],
+     "un 7": [
+      "SAT",
+      0.0
+     ],
+     "un 8": [
+      "UNSAT",
+      0.0
+     ],
+     "un 9": [
+      "UNSAT",
+      0.1
+     ],
+     "un 10": [
+      "UNSAT",
+      0.3
+     ],
+     "un 11": [
+      "UNSAT",
+      2.6
+     ],
+     "un 12": [
+      "UNSAT",
+      21.6
+     ],
+     "tw 3": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 4": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 5": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 6": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 7": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 8": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 9": [
+      "UNSAT",
+      0.1
+     ],
+     "tw 10": [
+      "UNSAT",
+      0.3
+     ],
+     "tw 11": [
+      "UNSAT",
+      2.3
+     ],
+     "tw 12": [
+      "UNSAT",
+      24.4
+     ]
+    },
+    "CaDiCaL without symmetry breaking": {
+     "un 3": [
+      "UNSAT",
+      0.0
+     ],
+     "un 4": [
+      "UNSAT",
+      0.0
+     ],
+     "un 5": [
+      "UNSAT",
+      0.0
+     ],
+     "un 6": [
+      "UNSAT",
+      0.0
+     ],
+     "un 7": [
+      "SAT",
+      0.0
+     ],
+     "un 8": [
+      "UNSAT",
+      0.9
+     ],
+     "un 9": [
+      "UNSAT",
+      143.4
+     ],
+     "tw 3": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 4": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 5": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 6": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 7": [
+      "UNSAT",
+      0.0
+     ],
+     "tw 8": [
+      "UNSAT",
+      1.1
+     ],
+     "tw 9": [
+      "UNSAT",
+      290.7
+     ]
+    }
+   }
+  },
+  "3 on 7 and 13 points the non-colourable cubic triple system is unique: the Fano plane and the Fano splice": {
+   "ok": true,
+   "detail": {
+    "n = 7: symmetry-broken solutions, isomorphism classes": [
+     1,
+     1
+    ],
+    "n = 13: symmetry-broken solutions, isomorphism classes": [
+     16,
+     1
+    ],
+    "n = 7 class is the Fano plane": true,
+    "n = 13 class is the point splice; point splice ~ line splice": [
+     true,
+     true
+    ]
+   }
+  },
+  "4 every corner line of the 13-point system gives knot-exact three-fold gadgets": {
+   "ok": true,
+   "detail": {
+    "automorphisms of the 13-point system": 96,
+    "line orbits": [
+     4,
+     3,
+     6
+    ],
+    "lambda(0) per corner-line orbit (6 placements)": {
+     "orbit of line 0 (size 4)": [
+      25
+     ],
+     "orbit of line 4 (size 3)": [
+      25
+     ],
+     "orbit of line 7 (size 6)": [
+      25
+     ]
+    }
+   }
+  },
+  "5 phase-pure gadgets up to six triangles: no locks, none exact at the knot": {
+   "ok": true,
+   "detail": {
+    "n=1": {
+     "phase-pure gadgets": 1,
+     "with a lock": 0,
+     "exact at the knot (n > 1)": 0
+    },
+    "n=2": {
+     "phase-pure gadgets": 0,
+     "with a lock": 0,
+     "exact at the knot (n > 1)": 0
+    },
+    "n=3": {
+     "phase-pure gadgets": 2,
+     "with a lock": 0,
+     "exact at the knot (n > 1)": 0
+    },
+    "n=4": {
+     "phase-pure gadgets": 24,
+     "with a lock": 0,
+     "exact at the knot (n > 1)": 0
+    },
+    "n=5": {
+     "phase-pure gadgets": 256,
+     "with a lock": 0,
+     "exact at the knot (n > 1)": 0
+    },
+    "n=6": {
+     "phase-pure gadgets": 3248,
+     "with a lock": 0,
+     "exact at the knot (n > 1)": 0
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "without the non-colourability clauses the encoding is satisfiable at n = 8": true,
+    "without the non-colourability clauses the encoding is satisfiable at n = 9": true,
+    "the encoding finds the Fano plane at n = 7 with the twist removed but not with it": true,
+    "a 2-colourable cubic system's dual gadget is not exact": true
+   }
+  },
+  "ok": true,
+  "seconds": 868.3
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "artifact_id": "TWIST-COUNT-20261030-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 11,
+    "mismatched": {}
+   }
+  },
+  "1 the junction formula per slice, with incidence signs as leg flips": {
+   "ok": true,
+   "detail": {
+    "random tensors and signs agreeing": "300/300"
+   }
+  },
+  "2 no line wire: a junction confined to one host parity class pins z1; no junction of pages is a crossover": {
+   "ok": true,
+   "detail": {
+    "random nonnegative junctions": {
+     "slices confined to one host parity class": 2448,
+     "with two values of z1": 0
+    },
+    "cube and 6-prism pages, all pairs and signs": {
+     "junctions": 13120,
+     "crossovers": 0
+    }
+   }
+  },
+  "3 soft crossings: twisted truncated-octahedron pages give crossover-type junctions off the matchgate class with every straight entry nonzero; none is an exact crossover": {
+   "ok": true,
+   "detail": {
+    "cube": {
+     "crossover-type, zero double entry": 64
+    },
+    "6-prism": {
+     "crossover-type, zero double entry": 256
+    },
+    "8-prism": {
+     "crossover-type, zero double entry": 1024
+    },
+    "truncated octahedron": {
+     "crossover-type, zero double entry": 15808,
+     "crossover-type, nonzero double entry, off the matchgate class": 256,
+     "  of which rank 1 (independent soft wires)": 0,
+     "  of which exact crossovers": 0
+    },
+    "Omni(K2,3)": {
+     "crossover-type, zero double entry": 16896
+    },
+    "first soft crossing": {
+     "pages": "truncated octahedron",
+     "page classes": [
+      336,
+      "1561"
+     ],
+     "signs (c1, c3)": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "straight entries (0000, 0101, 1010, 1111), exact": [
+      40000,
+      -1112,
+      3336,
+      -192
+     ],
+     "turning entries, exact": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "MGI, exact": -11389632
+    }
+   }
+  },
+  "4 controls fire": {
+   "ok": true,
+   "detail": {
+    "a junction with a signed branch (negative entries) is an exact crossover": true,
+    "the square's points can carry a wire: W vanishes off x0 = x2 with both colours of c0 alive": true
+   }
+  },
+  "ok": true,
+  "seconds": 5.6
+ }
+}

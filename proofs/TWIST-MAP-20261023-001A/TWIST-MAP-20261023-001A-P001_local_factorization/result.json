@@ -1,0 +1,124 @@
+{
+  "artifact_id": "TWIST-MAP-20261023-001A-P001",
+  "checks": {
+    "Corollary 3 on odd clusters with small skeletons": {
+      "c * A equal": 4,
+      "label kept": 4,
+      "odd clusters": 4,
+      "shrunken graph and clusters unchanged up to switching": 4
+    },
+    "L(2,1,2,1): symmetries and walls on all (twist, label) counts": {
+      "automorphisms": 8,
+      "hold": 1600,
+      "symmetry relations": 1600,
+      "wall relations": 236,
+      "wall relations hold": 236
+    },
+    "Lemma W on random clusters (L(2,2,2,2), L(3,1,2,2), L(3,2,2,2))": {
+      "boundary classes span the radical": 338,
+      "clusters": 338,
+      "corner edges form a cocycle of class PD": 338
+    },
+    "Remark 5: vertex degrees of the tilings (all faces are squares)": {
+      "(2, 1, 2, 1)": [
+        4,
+        12
+      ],
+      "(2, 1, 2, 3)": [
+        4,
+        12
+      ],
+      "(2, 1, 3, 2)": [
+        4,
+        12
+      ],
+      "(2, 2, 2, 2)": [
+        4,
+        12
+      ],
+      "(2, 2, 2, 3)": [
+        4,
+        12
+      ],
+      "(2, 2, 3, 1)": [
+        4,
+        12
+      ],
+      "(2, 3, 2, 2)": [
+        4,
+        12
+      ],
+      "(3, 1, 2, 2)": [
+        4,
+        12
+      ],
+      "(3, 1, 3, 1)": [
+        4,
+        12
+      ]
+    },
+    "Theorem 1 and reductions on L(2,1,2,1), sampled (twist, skeleton) pairs": {
+      "A = A after parallel reduction": 120,
+      "A = T(2,0) of the contraction": 120,
+      "c = T(0,2) of the frame matroid": 120,
+      "c = c after series reduction": 120,
+      "count = c * A": 120,
+      "pairs": 120
+    }
+  },
+  "claim": "On every closed orientable surface with a cellularly embedded graph, the number of orientations whose cyclic edges are exactly a given skeleton factorizes, in a given twist, as c times A: c counts the orientations of the skeleton in which every skeleton edge is cyclic, and depends only on each twisted cluster up to switching; A counts the acyclic orientations of the cover of the graph with every cluster shrunk to a point, where an odd cluster has a single node, so twists on edges at it do not enter. Parallel edges of the shrunken graph and series edges of a cluster can be merged without changing the factors. Hence two twists whose series-reduced clusters and parallel-reduced shrunken graphs are isomorphic up to switching give equal counts, skeleton by skeleton. The boundary circles of a cluster's neighbourhood span exactly the radical of its lattice, so every twist in the mod-2 span of the duals of the radicals of a label's odd clusters preserves that label's count (the wall group, extending the lone-loop wall to clusters of any rank); automorphisms of the tiling act on twists and labels; and on the L-shaped genus-2 tilings planar duality relates no two counts of one surface.",
+  "controls": {
+    "a twist outside the wall group changes some nonzero count": 600,
+    "parallel-reducing a cluster changes c": 91,
+    "series-reducing the shrunken graph changes A": 16,
+    "shrunken graph without the even clusters' gauge breaks the factorization": 58
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "TWIST-MAP-20261023-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "completeness_of_local_relations_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "local_factorization_proved": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "wall_group_proved": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TWIST-MAP-20261023-001A"
+}

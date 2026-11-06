@@ -1,0 +1,83 @@
+{
+ "1_hypotheses": {
+  "UT3(F4) x| C3 (Lemma 6, q = 4)": {
+   "Q": 64,
+   "B = 1 + v": "16",
+   "Q > 2 (GJ Theorem 1 applies)": true,
+   "B_o(Q, 3)": 20.812,
+   "least Delta with B > B_o (GSVY Theorem 2)": 4
+  },
+  "Heisenberg patterns 1, 3, p = 7": {
+   "Q": 343,
+   "B = 1 + v": "49",
+   "Q > 2 (GJ Theorem 1 applies)": true,
+   "B_o(Q, 3)": 56.8979,
+   "least Delta with B > B_o (GSVY Theorem 2)": 4
+  },
+  "Heisenberg patterns 1, 3, p = 13": {
+   "Q": 2197,
+   "B = 1 + v": "169",
+   "Q > 2 (GJ Theorem 1 applies)": true,
+   "B_o(Q, 3)": 182.9467,
+   "least Delta with B > B_o (GSVY Theorem 2)": 4
+  },
+  "Heisenberg patterns 2, 4, p = 5": {
+   "Q": 25,
+   "B = 1 + v": "5",
+   "Q > 2 (GJ Theorem 1 applies)": true,
+   "B_o(Q, 3)": 12.2048,
+   "least Delta with B > B_o (GSVY Theorem 2)": 5
+  },
+  "Heisenberg patterns 2, 4, p = 13": {
+   "Q": 169,
+   "B = 1 + v": "13",
+   "Q > 2 (GJ Theorem 1 applies)": true,
+   "B_o(Q, 3)": 36.9645,
+   "least Delta with B > B_o (GSVY Theorem 2)": 5
+  },
+  "S4 links (Theorem 2 of BOUNDED-H1-20261025-001A)": {
+   "Q": 12,
+   "B = 1 + v": "3/2",
+   "Q > 2 (GJ Theorem 1 applies)": true,
+   "B_o(Q, 3)": 8.1701,
+   "least Delta with B > B_o (GSVY Theorem 2)": 14
+  },
+  "control: ferromagnetic Ising": {
+   "Q": 2,
+   "B = 1 + v": "16",
+   "Q > 2 (GJ Theorem 1 applies)": false,
+   "B_o(Q, 3)": null,
+   "least Delta with B > B_o (GSVY Theorem 2)": null
+  }
+ },
+ "2_inverse_sector_excess": {
+  "pattern 3, p = 7: (Q, v) = (343, 48)": {
+   "path P_2": "42.98",
+   "cycle C_2": "300.2",
+   "path P_4": "7.942e+04",
+   "cycle C_4": "3.168e+06",
+   "path P_8": "2.711e+11",
+   "cycle C_8": "1.165e+13",
+   "path P_16": "3.16e+24",
+   "cycle C_16": "1.358e+26",
+   "path P_32": "4.293e+50",
+   "cycle C_32": "1.845e+52",
+   "per matched edge, Q(1+v)/(Q+v)": "42.98"
+  },
+  "patterns 2, 4, p = 5: (Q, v) = (25, 4)": {
+   "path P_2": "4.31",
+   "cycle C_2": "12.76",
+   "path P_4": "80.08",
+   "cycle C_4": "342.2",
+   "path P_8": "2.764e+04",
+   "cycle C_8": "1.192e+05",
+   "path P_16": "3.294e+09",
+   "cycle C_16": "1.42e+10",
+   "path P_32": "4.676e+19",
+   "cycle C_32": "2.016e+20",
+   "per matched edge, Q(1+v)/(Q+v)": "4.31"
+  },
+  "digon, p = 7: 1 + Q^2 (1+v)^2 / Z (compare heis_sectors.json: 301.234)": "301.234",
+  "triangle, p = 5 patterns 2, 4: 1 + Q^3 (1+v)^3 / Z (compare 76.3375)": "76.3375"
+ }
+}

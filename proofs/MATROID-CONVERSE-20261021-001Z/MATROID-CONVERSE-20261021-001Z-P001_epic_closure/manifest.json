@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "MATROID-CONVERSE-20261021-001Z-P001",
+  "canonical_id": "MATROID-CONVERSE-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "MATROID-CONVERSE-20261021-001Z",
+  "proof": "MATROID-CONVERSE-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the matroid-converse epic",
+  "status": "Proved",
+  "claim": "Ledger closing MATROID-CONVERSE-20261021-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "MATROID-CONVERSE-20261021-001A",
+    "MATROID-CONVERSE-20261021-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract, manifest or result changes, the contract is not Frozen, the experiment's signal differs from its recorded value (true), or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A supported, B proved)."
+  ],
+  "lineage": {
+    "home_scope": "MATROID-CONVERSE-20261021-001",
+    "epic_path": [
+      "MATROID-CONVERSE-20261021-001"
+    ],
+    "parents": [
+      "experiments/MATROID-CONVERSE-20261021-001A/MATROID-CONVERSE-20261021-001A-E001_matroid_census/contract.json",
+      "artifacts/MATROID-CONVERSE-20261021-001A/MATROID-CONVERSE-20261021-001A-E001_matroid_census/result.json",
+      "proofs/MATROID-CONVERSE-20261021-001B/MATROID-CONVERSE-20261021-001B-P001_top_quotients/manifest.json",
+      "proofs/MATROID-CONVERSE-20261021-001B/MATROID-CONVERSE-20261021-001B-P001_top_quotients/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "experiments/MATROID-CONVERSE-20261021-001A/MATROID-CONVERSE-20261021-001A-E001_matroid_census/contract.json": "59369d36e3fbfe8c6b3d4e97054bbf719ea94ba67dc3ba408e54bdeb67b45a19",
+    "artifacts/MATROID-CONVERSE-20261021-001A/MATROID-CONVERSE-20261021-001A-E001_matroid_census/result.json": "856dfca612415869632851f643dee57ce7aa9bd4c2f64b23d28d9f6b5636ad9a",
+    "proofs/MATROID-CONVERSE-20261021-001B/MATROID-CONVERSE-20261021-001B-P001_top_quotients/manifest.json": "ca37e54a7476f5ccb833a4b0db0a31248923ccba04d519d5bb7f54fbd31a3cec",
+    "proofs/MATROID-CONVERSE-20261021-001B/MATROID-CONVERSE-20261021-001B-P001_top_quotients/result.json": "a8e440bbba0b2077a00f9f8ded773f096ac867a74c990d1ae281a5c90f9b9288"
+  },
+  "paths": {
+    "manifest": "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/MATROID-CONVERSE-20261021-001Z/MATROID-CONVERSE-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the frozen census contract and its signalling result and to the Proved proof and its passed result; decision note present; tickets supported and proved; no human or external review",
+    "level": "V0 ledger check: bound digests, frozen contract, recorded experiment signal, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

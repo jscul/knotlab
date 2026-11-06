@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SL23-BOUNDED-20261025-001A-P001",
+  "canonical_id": "SL23-BOUNDED-20261025-001A-P001",
+  "kind": "proof",
+  "ticket": "SL23-BOUNDED-20261025-001A",
+  "proof": "SL23-BOUNDED-20261025-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "SL(2,3) counting is polynomial with bounded homology",
+  "status": "Proved",
+  "claim": "Target: let G be a finite group with a central elementary abelian 2-subgroup A of rank m, a normal subgroup N containing A with N/A elementary abelian, and G/N nilpotent. For a finite presentation P = <X | R> let E be the exponent-sum matrix mod 2 and k the dimension of its left kernel (k = dim H^2 of the presentation complex with F2 coefficients). Then |Hom(P, G)| = |Hom(P, A)| times the sum over homomorphisms psi: P -> G/N of the number of points v of the affine space of twisted lifts of psi to G/A (solutions of linear equations over F2) at which the lifting obstruction vanishes. With generator lifts s(psi(x)) n~(v_x), the A-valued sign of every relator is a polynomial of degree at most 2 in the F2-coordinates of v (the central extension A -> N -> N/A has a bilinear cocycle, conjugation by coset representatives adds quadratic corrections, inverses add squares), and a lift exists exactly when the vector of signs lies in the image of E, that is, when m k quadratic forms vanish; Gauss sums over F2 count these zeros. Hence for fixed G and a fixed bound on dim H^1(P; F_p) for the primes p dividing |G/N| and on k, |Hom(P, G)| is computable in polynomial time. Balanced presentations of closed orientable 3-manifold groups (Heegaard diagrams, integral surgery on knot diagrams) with bounded first homology satisfy the bounds. SL(2,3) satisfies the hypotheses with A = {I, -I}, N = Q8, G/N = Z3, but is not abelian-by-nilpotent; so with bounded homology the polynomial side strictly contains the abelian-by-nilpotent groups, and with S4 hard the line is not abelian-by-nilpotent.",
+  "dependencies": [
+    "BOUNDED-H1-20261025-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A presentation on which the algorithm and brute-force enumeration disagree.",
+    "A relator sign that is not a polynomial of degree at most 2 in the lift coordinates, or a Gauss-sum evaluation that disagrees with brute force.",
+    "A failure of the structural claims: SL(2,3) has A = {I,-I} central, N = Q8 with N/A elementary abelian and G/N = Z3, and no abelian normal subgroup with nilpotent quotient.",
+    "A control that cannot fail: dropping the obstruction must overcount on some closed manifold, and S4 must admit no such structure."
+  ],
+  "lineage": {
+    "home_scope": "SL23-BOUNDED-20261025-001",
+    "epic_path": [
+      "SL23-BOUNDED-20261025-001"
+    ],
+    "parents": [
+      "proofs/BOUNDED-H1-20261025-001B/BOUNDED-H1-20261025-001B-P001_metabelian_targets_stay_polynomial/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BOUNDED-H1-20261025-001B/BOUNDED-H1-20261025-001B-P001_metabelian_targets_stay_polynomial/manifest.json": "9b34db536b4cf7980bbf6fb23bd7d1a21469b4af325d40a737ce9949aefea7fc"
+  },
+  "paths": {
+    "manifest": "proofs/SL23-BOUNDED-20261025-001A/SL23-BOUNDED-20261025-001A-P001_sl23_counting_is_polynomial_with_bounded_homology/manifest.json",
+    "identity": "proofs/SL23-BOUNDED-20261025-001A/SL23-BOUNDED-20261025-001A-P001_sl23_counting_is_polynomial_with_bounded_homology/identity.json",
+    "directory": "proofs/SL23-BOUNDED-20261025-001A/SL23-BOUNDED-20261025-001A-P001_sl23_counting_is_polynomial_with_bounded_homology",
+    "proof": "proofs/SL23-BOUNDED-20261025-001A/SL23-BOUNDED-20261025-001A-P001_sl23_counting_is_polynomial_with_bounded_homology/proof.md",
+    "result": "proofs/SL23-BOUNDED-20261025-001A/SL23-BOUNDED-20261025-001A-P001_sl23_counting_is_polynomial_with_bounded_homology/result.json",
+    "check": "proofs/SL23-BOUNDED-20261025-001A/SL23-BOUNDED-20261025-001A-P001_sl23_counting_is_polynomial_with_bounded_homology/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "sl23_bounded_homology_polynomial_shown": false
+  },
+  "foundation_claim_scope": "Finite presentations, with polynomial time when the mod-p first homology (p dividing |G/N|) and the mod-2 second homology of the presentation complex are bounded; this covers balanced presentations of closed orientable 3-manifold groups with bounded first homology. Cited, not proved: polynomial-time Gauss sums of quadratic forms over F2 (standard; Samperton-Weiss Lemma 3.1.2), and the enumeration of maps to a nilpotent quotient (BOUNDED-H1-20261025-001B). Not covered: central layers with nontrivial action or of odd exponent, and higher nilpotency class in N. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof (cited: polynomial-time Gauss sums of quadratic polynomials over F2, the affine lifting and nilpotent-quotient steps of BOUNDED-H1-20261025-001B, conversion of triangulations to balanced presentations); check.py (standard library, about 1 s) verifies the structure of SL(2,3) (normal subgroups 1, 2, 8, 24; not abelian-by-nilpotent; Fitting height 2) and that S4 admits no such structure, Gauss sums against brute force on 400 random quadratics, the algorithm against brute force on 240 cases (four groups: SL(2,3), Q8, D8, Z2 x SL(2,3); 35 integral surgeries on five knots and 25 random presentations each) with the degree-2 property of every relator sign tested at random points, a scale run up to lift spaces of dimension 26, and controls (dropping the obstruction overcounts where H^2(M;F2) is nonzero). No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

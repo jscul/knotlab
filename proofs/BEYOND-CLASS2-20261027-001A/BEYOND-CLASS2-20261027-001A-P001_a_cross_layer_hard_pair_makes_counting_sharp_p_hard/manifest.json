@@ -1,0 +1,114 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BEYOND-CLASS2-20261027-001A-P001",
+  "canonical_id": "BEYOND-CLASS2-20261027-001A-P001",
+  "kind": "proof",
+  "ticket": "BEYOND-CLASS2-20261027-001A",
+  "proof": "BEYOND-CLASS2-20261027-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A cross-layer hard pair makes counting #P-hard although the class-2 quotient is easy",
+  "status": "Proved",
+  "claim": "for p >= 5, r | p - 1 and a graded Lie algebra L1 + L2 + L3 over F_p of class at most 3 with a coprime split C_r action (a group of exponent p through the Lazard correspondence), homomorphisms over a character are layered crossed homomorphisms f1 + f2 + f3 with d f2 = -(1/2) f1 u f1 and d f3 = -R(f1, f2), R = (1/2)(f1 u f2 + f2 u f1) + (1/12) C(f1); the count depends only on cohomology classes, and on manifolds with H1 = Z/r the trivial-character parts drop out. For the free class-3 group on x (trivial character) and y (character alpha, alpha^2 != 1), on every such manifold and in every sector the count is |Z1(F_alpha^k)| times the Heisenberg (alpha, alpha) count, so counting maps from pi1 of r-surgeries on knots to it is #P-hard (CLASSK-DICHOTOMY-20261026-001C), although its class-2 quotient has no hard pair and is polynomial with bounded homology (COPRIME-CLASS2-20261026-001C).",
+  "dependencies": [
+    "CLASSK-DICHOTOMY-20261026-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A BCH group that fails associativity, exponent p or equivariance on sampled elements.",
+    "A knot surgery and sector on which the layered direct lifting count (cocycles, then the affine layer-2 and layer-3 systems by the group law) differs from the class-dependent formula.",
+    "A knot surgery and sector on which the cross-layer group's count differs from |Z1(F_alpha^k)| times the Heisenberg (alpha, alpha) count.",
+    "A cross-layer group whose class-2 quotient has a hard pair, or a Heisenberg (alpha, alpha) sector-1 weight that is constant on its gadget model.",
+    "A control that cannot fail: with alpha^2 = 1 the cross-layer count must be independent of the cup products."
+  ],
+  "lineage": {
+    "home_scope": "BEYOND-CLASS2-20261027-001",
+    "epic_path": [
+      "BEYOND-CLASS2-20261027-001"
+    ],
+    "parents": [
+      "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/result.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/result.json",
+      "proofs/CLASSK-DICHOTOMY-20261026-001Z/CLASSK-DICHOTOMY-20261026-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json": "544822680bc1cdaecad825054e722c303afdff947c4a0544a753672b8f0b924a",
+    "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/result.json": "1078d80ee1d07efd257d860c335ba10e24c6137df919b3f7cbef09a224aa0b8b",
+    "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/manifest.json": "c81fd7b466460090a82ab3a39d6465d95ceeb59daab2aeedd67abc76751baf0f",
+    "proofs/CLASSK-DICHOTOMY-20261026-001C/CLASSK-DICHOTOMY-20261026-001C-P001_with_a_hard_pair_class_k_counting_is_sharp_p_hard_the_dichotomy/result.json": "eaa1b53eb187899ccc2b6d28f42da49a4e4cdf34b1728abfc503b1e4d9377a4f",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json": "d374186cfa5b0fda8e0a672d62e8a1605e05693c07cba01576a681871365e049",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json": "9903c01f0e540c6feea0ff9e05d5cd16c39bed7a8eac968d685c14bb4bd0b419",
+    "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/manifest.json": "89e52c06980ff147b9a3d6f1f63a33525b51b6d1b7a85b2e30542509d7c096e4",
+    "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/result.json": "d18a83b184cd0813d13a0bd0651020fd2739ebb853d9102dc68f15c2c0ef83b9",
+    "proofs/CLASSK-DICHOTOMY-20261026-001Z/CLASSK-DICHOTOMY-20261026-001Z-P001_epic_closure/manifest.json": "dd1eaf223fe6a31a1206018b4c2ec346d37956b524841435268fbfca0203d689"
+  },
+  "paths": {
+    "manifest": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/manifest.json",
+    "identity": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/identity.json",
+    "directory": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard",
+    "proof": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/proof.md",
+    "result": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/result.json",
+    "check": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/check.py",
+    "library": "proofs/BEYOND-CLASS2-20261027-001A/BEYOND-CLASS2-20261027-001A-P001_a_cross_layer_hard_pair_makes_counting_sharp_p_hard/bc_lib.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "cross_layer_hard_pair_sharp_p_hard_shown": false
+  },
+  "foundation_claim_scope": "p >= 5 (Lazard correspondence for class 3), r | p - 1, graded class-3 Lie algebras; hardness on r-surgeries of knots with H1 = Z/r. Cited, not reproved: the Lazard correspondence and the BCH formula to degree 3; CLASSK-DICHOTOMY-20261026-001A and C (sector partition functions, anchor isolation, Bulatov-Grohe); COPRIME-CLASS2-20261026-001B (Heisenberg count) and C (polynomial side for the quotient). Knot groups, p-torsion in H1 and non-graded Lie algebras are not covered. No P versus NP claim.",
+  "validation": {
+    "status": "checked: BCH group axioms on random samples for five algebras; the layered direct count against the class-dependent formula with shift invariance on five surgery cases in every sector; the cross-layer count equal to |Z1(F_alpha^k)| times the Heisenberg (alpha, alpha) count in 161 sector comparisons on 37 knot-surgery rows at five (p, r, alpha); hard-pair structure; anchor recovery on the gadget model; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-27."
+  }
+}

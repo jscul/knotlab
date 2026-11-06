@@ -1,0 +1,285 @@
+{
+  "artifact_id": "EMERGENCE-BITS-20261021-001A-P001",
+  "checks": {
+    "additivity": {
+      "passed": 25,
+      "trials": 25
+    },
+    "theorem_1_zero_set": {
+      "2": {
+        "agrees_with_majority_closure": 15,
+        "relations": 15,
+        "zero_emergence": 15
+      },
+      "3": {
+        "agrees_with_majority_closure": 255,
+        "relations": 255,
+        "zero_emergence": 165
+      },
+      "4": {
+        "agrees_with_majority_closure": 65535,
+        "relations": 65535,
+        "zero_emergence": 4169
+      }
+    },
+    "theorem_2_knots": {
+      "by_size": {
+        "3": {
+          "complements_of_independent_sets": 34,
+          "formula_holds": true,
+          "knots_by_definition": 34,
+          "max_emergence": 1.0,
+          "one_bit_knots_are_parity": true,
+          "same_sets": true
+        },
+        "4": {
+          "complements_of_independent_sets": 742,
+          "formula_holds": true,
+          "knots_by_definition": 742,
+          "max_emergence": 1.0,
+          "one_bit_knots_are_parity": true,
+          "same_sets": true
+        }
+      },
+      "independent_sets_of_5_cube": 254475,
+      "one_clause_emergence": 0.19264507794239583
+    },
+    "theorem_3_statistical": {
+      "I_between_0_and_E": 255,
+      "I_of_other_knots_by_excluded_count": {
+        "1": [
+          0.078473
+        ],
+        "2": [
+          0.251629
+        ],
+        "3": [
+          0.536413
+        ],
+        "4": [
+          1.0
+        ]
+      },
+      "circuit_criterion_agrees": 255,
+      "clause_I_from_equation": 0.0784728110382944,
+      "clause_I_from_fitting": 0.0784728110382944,
+      "closure_is_R_or_cube": 255,
+      "least_sets": 225,
+      "least_sets_with_positive_E": 60,
+      "one_parity_knots_have_positive_I": true,
+      "relations": 255,
+      "sampled_4_bit_knots": 40,
+      "sampled_4_bit_knots_that_are_least_sets": 0,
+      "silent_knots_excluded_points": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "zero_I_equals_least_set": 255
+    },
+    "theorem_4_logical_capacity": {
+      "CAN_values": {
+        "10": 6,
+        "11": 7,
+        "15": 7,
+        "16": 8,
+        "2": 4,
+        "3": 4,
+        "35": 8,
+        "36": 9,
+        "4": 5,
+        "5": 6
+      },
+      "central_binomial_growth": true,
+      "exhaustive": {
+        "2": {
+          "formula": 0.0,
+          "max_E": 0.0,
+          "maximizers": 15,
+          "maximizers_are_minimum_covering_arrays": false
+        },
+        "3": {
+          "formula": 1.0,
+          "max_E": 1.0,
+          "maximizers": 2,
+          "maximizers_are_minimum_covering_arrays": true
+        },
+        "4": {
+          "formula": 1.6780719051126378,
+          "max_E": 1.6780719051126378,
+          "maximizers": 16,
+          "maximizers_are_minimum_covering_arrays": true
+        }
+      },
+      "five_bits": {
+        "bound": 2.415037499278844,
+        "max_E_over_at_most_5_points": 2.0000000000000004
+      },
+      "inequality_failures_6_to_5000": [],
+      "six_row_array_reaches_bound_for_5_to_10": true
+    },
+    "theorem_5_statistical_capacity": {
+      "four_bit_bound": 1.6780719051126378,
+      "four_bit_max_I_all_pairs_free": 1.461743660544638,
+      "four_bit_sample": 60,
+      "four_bit_sample_bound_holds": 60,
+      "seven_bits": {
+        "E_of_simplex_code": 4.0,
+        "I_of_simplex_code_from_uniform_pairs": 4.0,
+        "all_linear": true,
+        "all_uniform_on_pairs": true,
+        "cosets": 480,
+        "distance_4_cliques": 30
+      },
+      "three_bit_bound_holds": true
+    },
+    "theorem_6_affine_capacity": {
+      "exhaustive": {
+        "2": {
+          "formula": 0,
+          "max_codimension_with_pairs_free": 0,
+          "subspaces": 5
+        },
+        "3": {
+          "formula": 1,
+          "max_codimension_with_pairs_free": 1,
+          "subspaces": 16
+        },
+        "4": {
+          "formula": 1,
+          "max_codimension_with_pairs_free": 1,
+          "subspaces": 67
+        },
+        "5": {
+          "formula": 2,
+          "max_codimension_with_pairs_free": 2,
+          "subspaces": 374
+        },
+        "6": {
+          "formula": 3,
+          "max_codimension_with_pairs_free": 3,
+          "subspaces": 2825
+        }
+      },
+      "punctured_simplex_reaches_it": {
+        "10": true,
+        "11": true,
+        "12": true,
+        "13": true,
+        "14": true,
+        "15": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": true
+      }
+    }
+  },
+  "claim": "For a nonempty relation R on n bits, with pair closure pc(R) (points whose every two-coordinate projection occurs in R): (1) the logical emergence E(R) = log2|pc(R)| - log2|R| is zero exactly when R is majority-closed, that is, definable by clauses of at most two literals; (2) a knot on N bits is the complement of a nonempty independent set Z of the N-cube and has E = -log2(1 - |Z|/2^N) <= 1, with equality only for the two parity relations (34, 742 and 254,474 knots on 3, 4 and 5 bits); (3) the statistical emergence I(R), the divergence of the uniform distribution on R from the pairwise exponential family, satisfies 0 <= I <= E and vanishes exactly on least sets of pairwise energies, so the four not-all-equal relations are the only knots with I = 0; (4) the largest E on n bits is n - log2 CAN(2,n,2), attained by minimum covering arrays; (5) I <= min(n, |R| - 1) - log2|R| <= n - log2(n+1), with equality exactly for orthogonal arrays of strength two with n + 1 runs (Hadamard designs), which on seven bits are the 480 cosets of the Fano simplex codes; (6) affine relations have I = E <= n - ceil(log2(n+1)); E and I add over products.",
+  "controls": {
+    "a_non_affine_uniform_8_set_on_7_bits": "rejected",
+    "every_knot_hides_one_bit": "rejected",
+    "four_rows_cover_all_pairs_of_four_columns": "rejected",
+    "parity_is_a_least_set_of_a_pairwise_energy": "rejected",
+    "statistical_zero_only_on_two_literal_relations": "rejected"
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "EMERGENCE-BITS-20261021-001A-P001",
+  "safe_conclusions": {
+    "affine_capacity_proved": true,
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "emergence_zero_set_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "knot_emergence_formula_proved": true,
+    "logical_capacity_proved": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "statistical_capacity_proved": true,
+    "statistical_zero_set_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "EMERGENCE-BITS-20261021-001A"
+}

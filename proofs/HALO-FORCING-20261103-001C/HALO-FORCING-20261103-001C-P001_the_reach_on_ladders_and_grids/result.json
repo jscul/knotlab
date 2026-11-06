@@ -1,0 +1,82 @@
+{
+ "artifact_id": "HALO-FORCING-20261103-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/result.json": "passed",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the pipeline: on the Fano plane spliced into two points of each of five grown plane spaces (10 to 14 points), the splice built with the twist chosen by theory equals glue_lib.splice, and creation decided by the route criterion over handle pairs, with every transfer computed by heights, equals exact creation (new crossing knots up to three points, join method) in every case": {
+   "info": {
+    "cases (removal, gluing line, far side)": 2784,
+    "cases where the pipeline equals exact creation: creates": 364,
+    "cases where the pipeline equals exact creation: no new knot": 2420,
+    "spaces whose fast splice equals glue_lib.splice": 10
+   },
+   "pass": true
+  },
+  "2 ladders: with the Fano plane attached at a point of the prism over a 2k-cycle (k = 5 to 40, up to 80 points) and the removal inside it, the halo reaches the farthest gluing line of the ladder; at every distance with four gluing lines exactly two create; the far sides the Fano plane and census 58 create only at the three lines through the cut": {
+   "info": {
+    "ladder of 10 points: reach 5 of maximal distance 5; creating lines 7 of 10": 1,
+    "ladder of 16 points: reach 9 of maximal distance 9; creating lines 10 of 16": 1,
+    "ladder of 24 points: reach 13 of maximal distance 13; creating lines 14 of 24": 1,
+    "ladder of 32 points: reach 17 of maximal distance 17; creating lines 18 of 32": 1,
+    "ladder of 40 points: reach 21 of maximal distance 21; creating lines 22 of 40": 1,
+    "ladder of 50 points: reach 25 of maximal distance 25; creating lines 27 of 50": 1,
+    "ladder of 60 points: reach 31 of maximal distance 31; creating lines 32 of 60": 1,
+    "ladder of 80 points: reach 41 of maximal distance 41; creating lines 42 of 80": 1
+   },
+   "pass": true
+  },
+  "3 grids: with the Fano plane attached at a point of the duals of the octahedron subdivided once, twice and three times (16, 64 and 256 points; four attachment points on the 64-point grid) and the removal inside it, the halo reaches exactly distance 3": {
+   "info": {
+    "grid of 16 points, attached at 0: reach 3 of maximal distance 7; creating lines 6 of 16": 1,
+    "grid of 256 points, attached at 0: reach 3 of maximal distance 29; creating lines 8 of 256": 1,
+    "grid of 64 points, attached at 0: reach 3 of maximal distance 13; creating lines 8 of 64": 1,
+    "grid of 64 points, attached at 17: reach 3 of maximal distance 13; creating lines 9 of 64": 1,
+    "grid of 64 points, attached at 40: reach 3 of maximal distance 15; creating lines 8 of 64": 1,
+    "grid of 64 points, attached at 5: reach 3 of maximal distance 13; creating lines 9 of 64": 1
+   },
+   "pass": true
+  },
+  "4 the forcing profile: on the 40-point ladder, fixing the split point's three copies leaves every gluing line at distance 3 or more with exactly two patterns (an edge), however far; on the 64- and 256-point grids, every gluing line at distance 7 or more has the full transfer (all 36 pairs), so it is independent of the split point": {
+   "info": {
+    "grid of 256 points: gluing lines at distance 1 with a restricted transfer": 3,
+    "grid of 256 points: gluing lines at distance 3 with a restricted transfer": 8,
+    "grid of 256 points: gluing lines at distance 5 with a restricted transfer": 12,
+    "grid of 256 points: gluing lines at distance >= 7 with the full transfer (independent of the split point)": 233,
+    "grid of 64 points: gluing lines at distance 1 with a restricted transfer": 3,
+    "grid of 64 points: gluing lines at distance 3 with a restricted transfer": 8,
+    "grid of 64 points: gluing lines at distance 5 with a restricted transfer": 12,
+    "grid of 64 points: gluing lines at distance >= 7 with the full transfer (independent of the split point)": 41,
+    "ladder of 40 points: gluing lines whose patterns, with the split point's copies fixed, are at least 1": 3,
+    "ladder of 40 points: gluing lines whose patterns, with the split point's copies fixed, are at least 2": 37
+   },
+   "pass": true
+  },
+  "5 random grown plane spaces (20, 30 and 40 points; recorded): reaches between the ladder and the grid": {
+   "info": {
+    "grown 20 points: maximal distance": 7,
+    "grown 20 points: reach": 5,
+    "grown 30 points: maximal distance": 9,
+    "grown 30 points: reach": 7,
+    "grown 40 points: maximal distance": 9,
+    "grown 40 points: reach": 7
+   },
+   "pass": true
+  }
+ },
+ "claim": "The reach on ladders and grids (computation with a validated pipeline). With the Fano plane attached at a point of a plane piece and the removal inside it, creation at each plane gluing line was decided by ticket A's route criterion over pairs of handle points, with every transfer computed by heights (ticket B). On small spaces this pipeline equals exact creation in all 2,784 cases, and the fast splice equals glue_lib.splice in all 10 spaces. Ladders (prisms over 2k-cycles, 10 to 80 points): the halo reaches the farthest gluing line at every size (reach 5 to 41, growing linearly), with exactly two of the four gluing lines creating at each distance. Only the far sides K4^(3) and census 6 create beyond the lines through the cut. Grids (duals of the octahedron subdivided once to three times, 16 to 256 points, several attachment points): the reach is exactly 3. The forcing profile explains the split. On the ladder, fixing the split point's three copies leaves every gluing line at distance 3 or more with exactly two patterns. On the grids, every gluing line at distance 7 or more has the full transfer (all 36 pairs), so it is exactly independent of the split point. Random grown spaces (20 to 40 points) reach 5 to 7.",
+ "kind": "proof",
+ "proof": "HALO-FORCING-20261103-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HALO-FORCING-20261103-001C"
+}

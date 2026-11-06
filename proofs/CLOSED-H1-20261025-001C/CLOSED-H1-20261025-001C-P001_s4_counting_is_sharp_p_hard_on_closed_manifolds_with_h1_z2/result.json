@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "artifact_id": "CLOSED-H1-20261025-001C-P001",
+  "status": "Proved",
+  "checks": {
+    "1_conventions": {
+      "rows": {
+        "S3_2(3_1): 58 (binary octahedral)": true,
+        "S3_-2(3_1): 58": true,
+        "S3_6(3_1): 90 (L(2,1) # L(3,2))": true,
+        "S3_1(3_1): 1 (homology sphere)": true,
+        "H1(S3_p(K)) = Z/p (Smith form) for 3_1, 4_1, 8_18 and p = 2, 4": true,
+        "control: H1 of 0-surgery is Z": true
+      },
+      "ok": true
+    },
+    "3_identities": {
+      "trefoil fixed-meridian numbers (t, c with 1, c with c^2)": [
+        5,
+        1,
+        4
+      ],
+      "rows": {
+        "3_1": {
+          "T": 30,
+          "C2": 58,
+          "C4": 40,
+          "C2(K # 3_1)": 202,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 30,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 24
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 30,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 6
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "4_1": {
+          "T": 6,
+          "C2": 10,
+          "C4": 16,
+          "C2(K # 3_1)": 58,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 6,
+            "double transposition": 3
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 6,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 6
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "5_2": {
+          "T": 6,
+          "C2": 10,
+          "C4": 16,
+          "C2(K # 3_1)": 58,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 6,
+            "double transposition": 3
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 6,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 6
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "6_1": {
+          "T": 30,
+          "C2": 58,
+          "C4": 40,
+          "C2(K # 3_1)": 202,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 30,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 24
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 30,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 6
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "8_18": {
+          "T": 102,
+          "C2": 202,
+          "C4": 112,
+          "C2(K # 3_1)": 634,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 102,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 96
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 102,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 6
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "8_19": {
+          "T": 54,
+          "C2": 58,
+          "C4": 112,
+          "C2(K # 3_1)": 490,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 54,
+            "double transposition": 3
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 54,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 54
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "P(3,3,3)": {
+          "T": 126,
+          "C2": 202,
+          "C4": 184,
+          "C2(K # 3_1)": 922,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 126,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 72
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 126,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 54
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "D(edge^(3))": {
+          "T": 30,
+          "C2": 58,
+          "C4": 40,
+          "C2(K # 3_1)": 202,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 30,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 24
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 30,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 6
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "D(path^(3))": {
+          "T": 150,
+          "C2": 202,
+          "C4": 256,
+          "C2(K # 3_1)": 1210,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 150,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 48
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 150,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 102
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "D(C3^(3))": {
+          "T": 126,
+          "C2": 202,
+          "C4": 184,
+          "C2(K # 3_1)": 922,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 126,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 72
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 126,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 54
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "D(triangle+pendant^(3))": {
+          "T": 630,
+          "C2": 922,
+          "C4": 976,
+          "C2(K # 3_1)": 4810,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 630,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 288
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 630,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 342
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "gadget knot D((edge[S(e,P(e,S(e,e)))])^(3))": {
+          "T": 630,
+          "C2": 922,
+          "C4": 976,
+          "C2(K # 3_1)": 4810,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 630,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 288
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 630,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 342
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        },
+        "3_1 # 8_18": {
+          "T": 510,
+          "C2": 634,
+          "C4": 904,
+          "C2(K # 3_1)": 4234,
+          "split p=2": {
+            "identity": 1,
+            "transposition": 510,
+            "double transposition": 3,
+            "4-cycle, longitude c^2": 120
+          },
+          "split p=4": {
+            "identity": 1,
+            "transposition": 510,
+            "double transposition": 3,
+            "4-cycle, longitude 1": 390
+          },
+          "C2 + C4 = 8 + 3T": true,
+          "3 C2 + C2(K#3_1) = 16 + 12T": true,
+          "bookkeeping": true,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "4_controls": {
+      "rows": {
+        "dropping the 4-cycle terms breaks C2 + C4 = 8 + 3T": true,
+        "blackboard longitude breaks the identity": true,
+        "virtual knot breaks C2 + C4 = 8 + 3T": true
+      },
+      "ok": true
+    },
+    "ok": true,
+    "seconds": 0.4
+  }
+}

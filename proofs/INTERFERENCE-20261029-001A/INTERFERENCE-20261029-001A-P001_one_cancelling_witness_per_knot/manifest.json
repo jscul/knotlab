@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "INTERFERENCE-20261029-001A-P001",
+  "canonical_id": "INTERFERENCE-20261029-001A-P001",
+  "kind": "proof",
+  "ticket": "INTERFERENCE-20261029-001A",
+  "proof": "INTERFERENCE-20261029-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Interference across the two/three boundary: one cancelling witness per knot",
+  "status": "Proved",
+  "claim": "Gadgets are sums over hidden bits of products of real functions of at most two variables. Theorem 1: with nonnegative values the support is the existential projection of the factor supports, hence majority-closed and never a knot, with any number of hidden bits. Theorem 2: with no hidden bits the support is never a knot, whatever the signs. Theorem 3: a clause of any width is 1 - prod(1 - literal), a signed gadget with one hidden bit, so a CNF with m clauses is a signed gadget with m hidden bits (the inclusion-exclusion identity both 2026 ETH refutations start from), and a relation excluding z tuples needs at most z. Theorem 4: each of the 16 classes of three-bit knots is exactly a signed gadget with one hidden bit and no fewer; the indicator has real tensor rank 2 for 14 classes (Cayley hyperdeterminant 1 for atoms, 4 for pairs at distance two and parity, 5 for three-excluded), while not-all-equal and twisted not-all-equal (hyperdeterminant -3, real rank 3) need one pairwise sign first; every decomposition has a negative entry, and the three-excluded and not-all-equal decompositions involve the golden ratio. Parity of n bits is one hidden bit with Hadamard edges.",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001E"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A nonnegative gadget of binary factors whose support is a knot.",
+    "A knot that is the support of a product of binary functions.",
+    "A three-bit knot class without an exact signed one-hidden-bit realization, or one with a signed zero-hidden-bit realization."
+  ],
+  "lineage": {
+    "home_scope": "INTERFERENCE-20261029-001",
+    "epic_path": [
+      "INTERFERENCE-20261029-001"
+    ],
+    "parents": [
+      "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json",
+      "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json": "10b44105465401c686a5b6c58944163462b1e348c626c948507e4421ef618af5",
+    "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/result.json": "df2f00b56b6562fc6a02e1445b15e0832ea46173457e2bb681cf8e91fecd7303"
+  },
+  "paths": {
+    "manifest": "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/manifest.json",
+    "identity": "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/identity.json",
+    "directory": "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot",
+    "proof": "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/proof.md",
+    "result": "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/result.json",
+    "check": "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "interference_witness_census_shown": true
+  },
+  "foundation_claim_scope": "Set-level relations on bits; signed sums are a declared second reading of allowed states (a state is allowed when its signed witness sum is nonzero), tested beside the canonical existential reading, not a change to K1-K3.",
+  "validation": {
+    "status": "checked: 34 knots in 16 classes; 20,000 random nonnegative gadgets (support = projection, majority-closed, no knot); all 16^3 binary support triples (no knot); every clause of width 1-8 with all signs, 300 random 3-CNFs and all 256 three-bit relations against their one-bit-per-clause or per-excluded-tuple gadgets; exact sympy rank-2 decompositions for all 16 classes (two after a pairwise sign) verified symbolically on every input, each with a negative entry; parity of n <= 10 bits from one hidden bit; controls fire (perturbed decomposition, unscaled not-all-equal has no real rank-2 decomposition, absolute values enlarge every support, a 2-CNF relation is no knot); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "Theorems 1-3 classical or elementary (Baker-Pixley, Schaefer; inclusion-exclusion; holographic transforms); Theorem 4 census: no overlap found (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

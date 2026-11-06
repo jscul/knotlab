@@ -1,0 +1,44 @@
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/control_parity_even.cnf)" --loops x y --contact z --json
+  control_parity_even: 4 clauses; allowed 4/8; K1 True, K2 True, K3 True, knot True; 2-CNF definable False; min width 3
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/control_tie_x_eq_y.cnf)" --loops x y --contact z --json
+  control_tie_x_eq_y: 4 clauses; allowed 4/8; K1 True, K2 False, K3 True, knot False; 2-CNF definable True; min width 2
+  note: with the contact z forgotten, x=0, y=1 is still excluded, so the loops are tied without it
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/control_xor_of_fixed_value.cnf)" --loops A B --contact c --json
+  control_xor_of_fixed_value: 6 clauses; allowed 2/8; K1 True, K2 False, K3 True, knot False; 2-CNF definable True; min width 2
+  note: with A forgotten, B=0, c=0 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/control_atom_xyz_eq_0.cnf)" --loops x y --contact z --json
+  control_atom_xyz_eq_0: 1 clauses; allowed 7/8; K1 True, K2 True, K3 True, knot True; 2-CNF definable False; min width 3
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_det_F2.cnf)" --loops u1 u2 u3 v1 v2 v3 w1 w2 --contact w3 --json
+  bits_det_F2: 168 clauses; allowed 344/512; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 8
+  note: with u1 forgotten, u2=0, u3=1, v1=0, v2=1, v3=0, w1=1, w2=0, w3=0 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_kernel_det_F2.cnf)" --loops a1 a2 a3 b1 b2 --contact b3 --json
+  bits_kernel_det_F2: 42 clauses; allowed 22/64; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 3
+  note: with a1 forgotten, a2=0, a3=1, b1=0, b2=1, b3=0 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_det2_minor.cnf)" --loops x1 x2 y1 --contact y2 --json
+  bits_det2_minor: 6 clauses; allowed 10/16; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 3
+  note: with x1 forgotten, x2=1, y1=1, y2=0 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_dot_zero.cnf)" --loops a1 a2 b1 --contact b2 --json
+  bits_dot_zero: 6 clauses; allowed 10/16; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 3
+  note: with a1 forgotten, a2=1, b1=0, b2=1 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_dot_times_c.cnf)" --loops a1 a2 b1 b2 --contact c --json
+  bits_dot_times_c: 6 clauses; allowed 26/32; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 4
+  note: with a1 forgotten, a2=1, b1=0, b2=1, c=1 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_atom_of_parities.cnf)" --loops a1 a2 b1 b2 c1 --contact c2 --json
+  bits_atom_of_parities: 8 clauses; allowed 56/64; K1 True, K2 True, K3 True, knot True; 2-CNF definable False; min width 6
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_graph_det.cnf)" --loops u1 u2 u3 v1 v2 v3 w1 w2 w3 --contact s --json
+  bits_graph_det: 512 clauses; allowed 512/1024; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 10
+  note: with u1 forgotten, u2=0, u3=0, v1=0, v2=0, v3=0, w1=0, w2=0, w3=0, s=1 is still excluded, so a binding survives without that loop
+
+$ PYTHONPATH=tools python3 -B -m knotlab check --cnf "$(cat research/NEXT-DIRECTION-SCAN-20261026-001C/relations/bits_signed_atom_graph.cnf)" --loops x y z --contact s --json
+  bits_signed_atom_graph: 8 clauses; allowed 8/16; K1 True, K2 False, K3 True, knot False; 2-CNF definable False; min width 4
+  note: with x forgotten, y=0, z=0, s=1 is still excluded, so a binding survives without that loop

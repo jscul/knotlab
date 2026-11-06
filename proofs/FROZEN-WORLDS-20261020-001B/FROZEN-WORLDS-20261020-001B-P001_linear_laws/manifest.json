@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "artifact_id": "FROZEN-WORLDS-20261020-001B-P001",
+  "canonical_id": "FROZEN-WORLDS-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "FROZEN-WORLDS-20261020-001B",
+  "proof": "FROZEN-WORLDS-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A linear law is frozen everywhere or nowhere",
+  "status": "Proved",
+  "claim": "For a locally finite GF(2)-linear law: (1) a parity is changed by a finite change at one solution exactly when at every solution, exactly when some finitely supported homogeneous solution changes it, so nativity does not depend on the world and a linear law is frozen everywhere or has the same finite moves everywhere; (2) a finite set of at least three variables carries a K1-K3 knot exactly when it is a minimal support of a fixed parity, and the knot is native under the source-aware reading exactly when every variable lies in the support of a finite move, so a frozen law has knots but no native knot; (3) a shift-invariant law on Z^d with n variable types has finitely supported homogeneous solutions exactly when its polynomial matrix has rank below n, exactly when its solution space has positive topological entropy. On Z^2, Tseitin and the gauge law have native loops and native knots, while Ledrappier's law and the combined Tseitin-gauge law are frozen and have knots but no native knot.",
+  "dependencies": [
+    "HOLES-AT-INFINITY-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "On a declared law the generic rank deficit disagrees with the existence of finite moves in a box.",
+    "A rank-deficient law shows no growing finite-move lower bound on box entropy, or a full-rank law shows a finite move or a non-decreasing upper bound per site.",
+    "knotlab rejects a minimal fixed support or accepts a non-minimal one, or native knots differ from the stated pattern (all for Tseitin and gauge, none for Ledrappier and the combined law).",
+    "A linear law's flippable window variables differ between two worlds.",
+    "A control (rank at a point where entries vanish, nativity from boundary-supported solutions, world-independence on a non-linear law) is accepted.",
+    "The GF(2^31) modulus fails the irreducibility test."
+  ],
+  "lineage": {
+    "home_scope": "FROZEN-WORLDS-20261020-001",
+    "epic_path": [
+      "FROZEN-WORLDS-20261020-001"
+    ],
+    "parents": [
+      "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/manifest.json": "c16316301866d65baf64b23c9f3e808e1ffa5dbe58bae359ececfc50ae0ad98c",
+    "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json": "878d29c742324d764cd3e51550e75657f23d06462f1d8213505cc3b663f702ab"
+  },
+  "paths": {
+    "manifest": "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json",
+    "identity": "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/identity.json",
+    "directory": "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws",
+    "proof": "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/proof.md",
+    "result": "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/result.json",
+    "check": "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "linear_nativity_world_independent_proved": true,
+    "linear_knots_are_minimal_fixed_supports_proved": true,
+    "native_loops_iff_rank_deficit_iff_positive_entropy_proved": true,
+    "native_loops_question_decided": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Which linear laws admit finite changes of their solutions, and how K1-K3 knots relate to them. No native recurrence, composed topology, path, metric, space or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies the GF(2^31) modulus, computes generic ranks, finite moves in boxes of radius 3 and 4 and box-entropy bounds for eleven laws on Z^2, enumerates every parity of the 3x3 window for five laws with knotlab verdicts on minimal and non-minimal fixed supports and nativity, and solves world-independence at two worlds per law; three controls rejected; no human or external review",
+    "level": "V1 prose proof with executable checks; cites Schmidt (1995), Kitchens-Schmidt, Lind-Schmidt (1999), Lind-Schmidt-Ward (1990), Ledrappier (1978) and HOLES-AT-INFINITY-20261020-001C-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. Statements 1 and 3 are classical in substance (finitely supported homoclinic points, ranks over the Laurent ring, entropy of algebraic Z^d-actions) and 2 is the standard description of minimal dual codewords. The delta is the reading: under the source-aware reading linear laws split into those whose knots are native at every world and frozen laws whose knots never are, invisible to the source-blind reading; and two laws with native loops can combine into a frozen one.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

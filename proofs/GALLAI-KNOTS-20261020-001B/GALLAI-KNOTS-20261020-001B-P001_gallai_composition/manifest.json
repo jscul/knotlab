@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "artifact_id": "GALLAI-KNOTS-20261020-001B-P001",
+  "canonical_id": "GALLAI-KNOTS-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "GALLAI-KNOTS-20261020-001B",
+  "proof": "GALLAI-KNOTS-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Degree-q witness networks carry a knot exactly when they are Gallai trees",
+  "status": "Proved",
+  "claim": "For q >= 2 colours and a finite connected witness graph W of maximum degree at most q, each witness carrying q - deg(v) pendant leaves, the leaf relation (witnesses hidden) passes K1-K3 exactly when W is a Gallai tree with at least one leaf; K2 and K3 hold for every W, and a non-Gallai W imposes no constraint at all. Gluing two witness networks at a vertex joins their excluded leaf colourings through a unique hidden split of the glued vertex's colours; the excluded colourings are the block colour-set systems (Kostochka-Stiebitz-Wirth), and their number is q! times a product of block masses, q!((q-1)!)^(k-1) for any tree on k witnesses. On the d-regular tree with p* = 0 (d = q for every q >= 3, and below the freezing thresholds) every such knot is native at almost every broadcast world; at d = q the rainbow world freezes them all. Two knots sharing a visible vertex form a common hub, not a knot.",
+  "dependencies": [
+    "GALLAI-KNOTS-20261020-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A witness network of maximum degree at most q with a leaf is found whose leaf relation is a K1-K3 knot but which is not a Gallai tree, or a Gallai tree whose relation is not a knot.",
+    "A leaf relation within the hypothesis fails K2 or K3.",
+    "The gluing law fails on a glued pair, or a bad assignment of a glued graph has more than one valid split.",
+    "On a Gallai tree the bad assignments differ from the block colour-set systems, or the excluded count differs from q! times the product of block masses.",
+    "The monomial identity for the branch-freezing polynomial at d = q fails, or a rainbow ball has a second extension of its boundary.",
+    "A control (knot iff tree, knot iff bipartite, knot iff every block complete, Lemma 1 without a strict vertex, a glued vertex never split) is accepted."
+  ],
+  "lineage": {
+    "home_scope": "GALLAI-KNOTS-20261020-001",
+    "epic_path": [
+      "GALLAI-KNOTS-20261020-001"
+    ],
+    "parents": [
+      "proofs/FREEZING-KNOTS-20261020-001Z/FREEZING-KNOTS-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/manifest.json",
+      "experiments/GALLAI-KNOTS-20261020-001A/GALLAI-KNOTS-20261020-001A-E001_witness_census/contract.json",
+      "artifacts/GALLAI-KNOTS-20261020-001A/GALLAI-KNOTS-20261020-001A-E001_witness_census/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FREEZING-KNOTS-20261020-001Z/FREEZING-KNOTS-20261020-001Z-P001_epic_closure/manifest.json": "192f0a749f6f58337077d10bcb01bcc7e7a5fc35c605d1797c678a20607bc460",
+    "proofs/FREEZING-KNOTS-20261020-001B/FREEZING-KNOTS-20261020-001B-P001_tree_freezing/manifest.json": "7c5a76d9446eb2ae438ffbb2dea055f66ef9be1b2f1d5e4099f069a9d55399e5",
+    "experiments/GALLAI-KNOTS-20261020-001A/GALLAI-KNOTS-20261020-001A-E001_witness_census/contract.json": "0ae9bff74c6fc178cdb42499358af80f97ba7bc4558644ed9dd90c79fa52add9",
+    "artifacts/GALLAI-KNOTS-20261020-001A/GALLAI-KNOTS-20261020-001A-E001_witness_census/result.json": "be40396403cb560f899070bf0e3e3309755916573887d83352d68cb3987a6144"
+  },
+  "paths": {
+    "manifest": "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/manifest.json",
+    "identity": "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/identity.json",
+    "directory": "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition",
+    "proof": "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/proof.md",
+    "result": "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/result.json",
+    "check": "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "degree_q_witness_knots_iff_gallai_tree_proved": true,
+    "knot_types_by_block_proved": true,
+    "composition_by_gluing_proved": true,
+    "bipartite_substrates_need_tree_witnesses_proved": false,
+    "native_on_regular_tree_proved": true,
+    "witnesses_above_degree_q_classified": false,
+    "excluded_mass_multiplicative_proved": true,
+    "shared_visible_vertex_is_hub_proved": true,
+    "bipartite_witness_networks_knot_iff_tree_proved": true
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Which hidden witness networks of the q-colouring law compose star knots into larger K1-K3 knots. No native recurrence, composed topology in the protected sense, path, metric, space or physical claim.",
+  "validation": {
+    "status": "checked: prose proof, self-contained except Brooks' theorem (cited in Lemma 4); check.py enumerates the connected graphs on at most 6 vertices up to isomorphism (A001349) and checks Lemmas 2-4, Corollary 2 and Theorems 3-4 exhaustively on them for q = 2, 3, 4, then Lemma 1, Lemma 3's construction, Lemma 4, the gluing law with uniqueness of the split, Theorem 3 and Theorem 4 on random larger graphs, the monomial identity exactly, the rainbow balls and the hub relation; five controls rejected; agrees with GALLAI-KNOTS-20261020-001A-E001; no human or external review",
+    "level": "V1 prose proof with exhaustive small-case and randomized checks; cites Brooks (1941), Gallai (1963), Borodin (1977), Erdos-Rubin-Taylor (1979), Kostochka-Stiebitz-Wirth (1996), Cranston-Rabern (arXiv 1403.0479) and FREEZING-KNOTS-20261020-001B-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. Degree-choosability of non-Gallai graphs (Borodin; Erdos-Rubin-Taylor) and the block decomposition of bad assignments (Kostochka-Stiebitz-Wirth) are classical, and the proofs here follow the standard method. The delta is the knot reading (K2 and K3 automatic, so the knot test reduces to degree-choosability), the gluing law read as knot composition, the multiplicative excluded mass (not found stated; immediate from the decomposition), nativity on regular trees and the hub remark.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

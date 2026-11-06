@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_id": "TWIST-MAP-20261023-001B-E001",
+  "ticket": "TWIST-MAP-20261023-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "LOOP-SHIELD-20261023-001C-P001 proved the wall on every closed surface and LOOP-SHIELD-20261023-001A-E001 found the genus-2 dual pairs exact. Scratch scoping on the two surfaces L(2,2,2,2) and L(3,1,2,2), with labels by full cyclic structure: every equality predicted by walls (duals of the radicals of odd clusters' lattices) and by the automorphisms of the tiling holds exactly, but 4 and 37 further same-event equalities with counts of at least 1000 are not predicted (for example 69120 = 69120 for three even loops h1, h2, h2 - h1 under the twists dual to h1 and h2). A bounded mechanism search on those 37: every one holds separately for each skeleton (set of cyclic edges); the count of a skeleton factorizes into the number of orientations of the skeleton in which every skeleton edge is cyclic times the number of acyclic orientations of the graph with each cluster shrunk to a point; and on every skeleton the two twists are related by isomorphisms (up to switching) of the series-reduced clusters and of the parallel-reduced shrunken graph. No skeleton called explained had unequal counts. These two surfaces are excluded from the decision.",
+  "question": "On fresh genus-2 square-tiled surfaces, do walls and the automorphisms of the tiling explain every exact equality between the counts of one event under two twists, and if not, does the local mechanism (skeleton by skeleton, isomorphic series-reduced clusters and parallel-reduced shrunken graphs) explain every one that is left?",
+  "public_inputs": {
+    "model": "all orientations of the square lattice on an L-shaped genus-2 surface L(A, B, C, D): a bottom block of (A + B) x C cells and a top block of A x D cells over columns 0..A-1, opposite sides glued by translation; each orientation is labelled in the 16 twists",
+    "F_check": "L(2, 1, 2, 1) (16 edges) in full, for the checker's own enumeration; L(2, 2, 2, 2) in full, as the control of the halving",
+    "F_seen": "L(2, 2, 2, 2) (24 edges) and L(3, 1, 2, 2) (28 edges): the scoping surfaces, analysed and reported but excluded from the decision",
+    "F_fresh": "L(2, 1, 2, 3) (24 edges), L(2, 1, 3, 2) (26 edges), L(2, 2, 3, 1), L(2, 3, 2, 2) and L(2, 2, 2, 3) (28 edges), L(3, 1, 3, 1) (30 edges)"
+  },
+  "definitions": "Edges carry homology coordinates (signed crossings with the core curves h1, h2, v1, v2); a closed walk's coordinates are J x for its class x in the basis (h1, h2, v1, v2). Twist alpha in {0,1}^4 is the class sum alpha_i b_i mod 2; its value on an edge is alpha.o_e mod 2. Cyclic edges are the edges on directed cycles of the twisted double cover; a cluster is a connected component of the cyclic edges; the skeleton is the set of cyclic edges. The label of an orientation in a twist lists, for each cluster with a nonzero period lattice, its parity under the twist and its lattice in Hermite normal form. The closure joins (twist, label) pairs related by a wall (adding to the twist an element of the mod-2 span of the duals of the radicals, under the intersection form, of the odd clusters' lattices) or by an automorphism of the tiling (cell maps with constant derivative in the dihedral group, acting on twists and labels). An unexplained equality is a pair of twists with the same label, equal counts of at least 1000, in different closure classes. For a skeleton and a twist: the shrunken graph has a point for each cluster (odd or even, by the twist's parity on it) and the other edges, each with its twist in the even clusters' own gauges; edges at odd points carry no twist; parallel edges are reduced to the set of their twists and self-loops to a node attribute. Each cluster is series-reduced (vertices of degree 2 suppressed, twists added) and kept as a twisted multigraph. Two twists are related on a skeleton when (outside) the reduced shrunken graphs are isomorphic by the identity or by an isomorphism preserving point types, up to switching, and (inside) the series-reduced clusters correspond by a type-preserving bijection with isomorphisms up to switching (or have equal twist classes). The relation search stops after 100000 isomorphisms (undecided).",
+  "predictions": {
+    "P1_predicted_equalities": "theorem-predicted (ticket A): every closure class carries one count, on every surface",
+    "P2_walls_incomplete": "scoping-predicted: on some fresh surface an unexplained equality holds skeleton by skeleton over at least two skeletons, so walls and automorphisms do not explain every relation",
+    "P3_local_mechanism": "scoping-predicted: on every fresh surface, every unexplained equality holds skeleton by skeleton and the two twists are related on every one of its skeletons",
+    "reported": "per surface: the number of labels, closure classes, automorphisms and unexplained equalities; for each unexplained equality its label, twists, count, number of skeletons and the tally of relations (outside/inside); the same for the seen surfaces; the wall and unequal control pairs; the factorization samples"
+  },
+  "controls": "per twist, the label counts sum to 2^E and the swap-invariance flag agrees with the odd clusters; the half enumeration of L(2, 2, 2, 2) equals its full enumeration; per-skeleton counts sum to the label counts; for up to 20 wall pairs per surface (largest counts) the counts are equal on every skeleton and the identity relates every checked skeleton (up to 300); soundness: no skeleton related by the mechanism has unequal counts, on any checked skeleton of any pair (unexplained, wall, and up to 20 same-label pairs with unequal counts, up to 300 skeletons each); factorization: on up to 30 related skeletons per surface with at most 14 skeleton edges and at most 14 reduced shrunken edges, the count equals c * A by brute force and related twists have equal A; the independent checker enumerates L(2, 1, 2, 1) itself and recomputes closure, unexplained equalities, skeleton sums and a sample of relations with its own code",
+  "decision_rule": "If a control fails, the run is invalid. Refuted if P1 fails. Supported if P1 holds, P2 holds and P3 holds. Partially supported if P1 holds and P2 or P3 fails; every P3 failure is reported with its count, skeletons and relations, and is not attributed to coincidence without evidence.",
+  "resource_budget": {"wall_seconds": 10800, "memory_mib": 8192, "max_edges": 30, "threads": 20},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster. Rows are written as they finish.",
+  "seeds": "none: the enumeration is exhaustive and deterministic",
+  "environment": "CPython 3 standard library for orchestration and analysis; labels.c and skel.c compiled at run time with gcc -O2; 20 worker threads each running one subprocess on a range of bit masks",
+  "red_team_r0": [
+    "Exactness: the counts are exhaustive, so there is no statistical threshold.",
+    "P1 follows from the theorems of ticket A; here it tests the code, the homology coordinates and the automorphism action.",
+    "Look-elsewhere: each surface has hundreds of labels and 120 twist pairs per label, so equal counts can occur by chance. The threshold 1000 removes small counts; P2 needs at least two skeletons agreeing separately; P3 asks for a reason on every skeleton, so a coincidence shows up as a P3 failure rather than as support.",
+    "The mechanism was found on the seen surfaces; the decision uses only fresh ones.",
+    "The reductions (series for clusters, parallel for the shrunken graph) and switching are exact symmetries of the two factors (ticket A), so they cannot produce a false explanation; the soundness control guards against code errors.",
+    "An undecided relation search counts as unexplained.",
+    "Halving uses an exact symmetry: reversing every arrow is a global sheet swap and keeps labels and skeletons; its control is the full enumeration of L(2, 2, 2, 2).",
+    "Planar duality is not in the closure: on these surfaces the dual graph has a 12-sided face, so duality relates counts on two different graphs and none within one surface (ticket A)."
+  ],
+  "nonclaims": [
+    "Exact counts on small genus-2 surfaces; P3 is a finding about them, not a theorem about all surfaces.",
+    "Equalities below 1000 and equalities between different labels are not tested.",
+    "Lattices and surfaces are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected counts as inputs to the enumeration",
+    "Results from the seen surfaces as inputs to the decision"
+  ]
+}

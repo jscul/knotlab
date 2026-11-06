@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FOUR-PREFER-20261101-001A-P001",
+  "canonical_id": "FOUR-PREFER-20261101-001A-P001",
+  "kind": "proof",
+  "ticket": "FOUR-PREFER-20261101-001A",
+  "proof": "FOUR-PREFER-20261101-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Every four-place knot",
+  "status": "Proved",
+  "claim": "The four-place knots are exactly the relations whose excluded states form a non-empty independent set of the 4-cube (a three-place projection is full iff no two excluded states differ in one place): 742 relations in 20 classes under flips and permutations, 4 value-free (FOUR-PLACE A) and 16 preferring a value. Only parity is Schaefer-tractable. Only the clause (one excluded state) has a forcing value at every place; it never fails on 4-regular 4-uniform systems, because a perfect matching of lines to points (Hall) lets each line's matched point take a forcing value (Tovey's argument).",
+  "dependencies": [
+    "FOUR-PLACE-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A four-place knot whose excluded set is not independent, or a class count other than 20.",
+    "A non-parity class closed under a Schaefer polymorphism.",
+    "A signed clause system on a 4-regular 4-uniform system without a solution."
+  ],
+  "lineage": {
+    "home_scope": "FOUR-PREFER-20261101-001",
+    "epic_path": [
+      "FOUR-PREFER-20261101-001"
+    ],
+    "parents": [
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py": "72a12e521ab7a616cecad61aac31c17ac7477878545e5cfdcc608eeac4e5ad68",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "5d89c5ac8100c1eb2a5e68492fa9dbd9d05251b08348db7a5bbd597c4428f8c9",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json": "935ad7f6b75a0793a3a2d2df4a46037ea347966d53f9f1cf9d72a47fed6d4d90",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/manifest.json",
+    "identity": "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/identity.json",
+    "directory": "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot",
+    "proof": "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/proof.md",
+    "result": "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/result.json",
+    "check": "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "four_place_full_catalogue_shown": true
+  },
+  "foundation_claim_scope": "A classification of four-place relations and one satisfiability theorem; no counting claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: the catalogue by brute force; Schaefer polymorphisms; forcing places; the matching construction on random clause systems and exhaustive small systems; no human or external review",
+    "novelty": "Schaefer (1978) and Tovey (1984) are classical; the 20-class census of four-place knots is elementary and was found in no source checked."
+  }
+}

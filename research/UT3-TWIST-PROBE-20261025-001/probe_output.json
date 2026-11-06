@@ -1,0 +1,679 @@
+{
+  "group facts": {
+    "hard": {
+      "order": 192,
+      "|Z(G)|": 1,
+      "|G'|": 64,
+      "G' abelian": false,
+      "[G,G'] = G'": true
+    },
+    "easy": {
+      "order": 192,
+      "|Z(G)|": 1,
+      "|G'|": 16,
+      "G' abelian": true,
+      "[G,G'] = G'": true
+    }
+  },
+  "section independence": {
+    "(3_1)^#1": {
+      "default section": [
+        0,
+        2,
+        2
+      ],
+      "section z = x*y": [
+        0,
+        2,
+        2
+      ],
+      "totals equal": true
+    },
+    "(3_1)^#2": {
+      "default section": [
+        0,
+        4,
+        4
+      ],
+      "section z = x*y": [
+        0,
+        4,
+        4
+      ],
+      "totals equal": true
+    }
+  },
+  "manifolds": {
+    "hard, S3_3((4_1)^#1)": {
+      "generators": 4,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 8,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 256,
+          "count contribution": 4096
+        },
+        "psi(meridian) = 2": {
+          "D": 8,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 256,
+          "count contribution": 4096
+        }
+      },
+      "|Hom(pi1, G)|": 8193,
+      "brute force": 8193
+    },
+    "hard, S3_3((4_1)^#2)": {
+      "generators": 8,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 12,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 4096,
+          "count contribution": 262144
+        },
+        "psi(meridian) = 2": {
+          "D": 12,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 4096,
+          "count contribution": 262144
+        }
+      },
+      "|Hom(pi1, G)|": 524289,
+      "brute force": 524289
+    },
+    "hard, S3_3((4_1)^#3)": {
+      "generators": 12,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 16,
+          "ambient H2": 8,
+          "Z1(A)": 8,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 65536,
+          "count contribution": 16777216
+        },
+        "psi(meridian) = 2": {
+          "D": 16,
+          "ambient H2": 8,
+          "Z1(A)": 8,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 65536,
+          "count contribution": 16777216
+        }
+      },
+      "|Hom(pi1, G)|": 33554433
+    },
+    "hard, S3_3((3_1)^#1)": {
+      "generators": 3,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 8,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 2,
+          "quadratic span": 2,
+          "o(0) = 0": true,
+          "liftable": 112,
+          "count contribution": 1792
+        },
+        "psi(meridian) = 2": {
+          "D": 8,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 2,
+          "quadratic span": 2,
+          "o(0) = 0": true,
+          "liftable": 112,
+          "count contribution": 1792
+        }
+      },
+      "|Hom(pi1, G)|": 3585,
+      "brute force": 3585
+    },
+    "hard, S3_3((3_1)^#2)": {
+      "generators": 6,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 12,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 4,
+          "quadratic span": 4,
+          "o(0) = 0": true,
+          "liftable": 784,
+          "count contribution": 50176
+        },
+        "psi(meridian) = 2": {
+          "D": 12,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 4,
+          "quadratic span": 4,
+          "o(0) = 0": true,
+          "liftable": 784,
+          "count contribution": 50176
+        }
+      },
+      "|Hom(pi1, G)|": 100353,
+      "brute force": 100353
+    },
+    "hard, S3_3((3_1)^#3)": {
+      "generators": 9,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 16,
+          "ambient H2": 8,
+          "Z1(A)": 8,
+          "span": 6,
+          "quadratic span": 6,
+          "o(0) = 0": true,
+          "liftable": 5488,
+          "count contribution": 1404928
+        },
+        "psi(meridian) = 2": {
+          "D": 16,
+          "ambient H2": 8,
+          "Z1(A)": 8,
+          "span": 6,
+          "quadratic span": 6,
+          "o(0) = 0": true,
+          "liftable": 5488,
+          "count contribution": 1404928
+        }
+      },
+      "|Hom(pi1, G)|": 2809857
+    },
+    "hard, S3_3((3_1)^#4)": {
+      "generators": 12,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 20,
+          "ambient H2": 10,
+          "Z1(A)": 10,
+          "span": 8,
+          "quadratic span": 8,
+          "o(0) = 0": true,
+          "liftable": 38416,
+          "count contribution": 39337984
+        },
+        "psi(meridian) = 2": {
+          "D": 20,
+          "ambient H2": 10,
+          "Z1(A)": 10,
+          "span": 8,
+          "quadratic span": 8,
+          "o(0) = 0": true,
+          "liftable": 38416,
+          "count contribution": 39337984
+        }
+      },
+      "|Hom(pi1, G)|": 78675969
+    },
+    "hard, S3_3((8_18)^#1)": {
+      "generators": 8,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 12,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 2,
+          "quadratic span": 2,
+          "o(0) = 0": true,
+          "liftable": 1792,
+          "count contribution": 114688
+        },
+        "psi(meridian) = 2": {
+          "D": 12,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 2,
+          "quadratic span": 2,
+          "o(0) = 0": true,
+          "liftable": 1792,
+          "count contribution": 114688
+        }
+      },
+      "|Hom(pi1, G)|": 229377
+    },
+    "hard, S3_3((8_18)^#2)": {
+      "generators": 16,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 20,
+          "ambient H2": 10,
+          "Z1(A)": 10,
+          "span": 4,
+          "quadratic span": 4,
+          "o(0) = 0": true,
+          "liftable": 200704,
+          "count contribution": 205520896
+        },
+        "psi(meridian) = 2": {
+          "D": 20,
+          "ambient H2": 10,
+          "Z1(A)": 10,
+          "span": 4,
+          "quadratic span": 4,
+          "o(0) = 0": true,
+          "liftable": 200704,
+          "count contribution": 205520896
+        }
+      },
+      "|Hom(pi1, G)|": 411041793
+    },
+    "hard, S3_3((8_18)^#3)": {
+      "generators": 24,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 28,
+          "ambient H2": 14,
+          "Z1(A)": 14,
+          "span": 6,
+          "quadratic span": 6,
+          "o(0) = 0": true,
+          "liftable": 22478848,
+          "count contribution": 368293445632
+        },
+        "psi(meridian) = 2": {
+          "D": 28,
+          "ambient H2": 14,
+          "Z1(A)": 14,
+          "span": 6,
+          "quadratic span": 6,
+          "o(0) = 0": true,
+          "liftable": 22478848,
+          "count contribution": 368293445632
+        }
+      },
+      "|Hom(pi1, G)|": 736586891265
+    },
+    "easy, S3_3((3_1)^#1)": {
+      "generators": 3,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 4,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 16,
+          "count contribution": 256
+        },
+        "psi(meridian) = 2": {
+          "D": 4,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 16,
+          "count contribution": 256
+        }
+      },
+      "|Hom(pi1, G)|": 513,
+      "brute force": 513
+    },
+    "easy, S3_3((3_1)^#2)": {
+      "generators": 6,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 6,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 64,
+          "count contribution": 4096
+        },
+        "psi(meridian) = 2": {
+          "D": 6,
+          "ambient H2": 6,
+          "Z1(A)": 6,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 64,
+          "count contribution": 4096
+        }
+      },
+      "|Hom(pi1, G)|": 8193,
+      "brute force": 8193
+    },
+    "easy, S3_3((3_1)^#3)": {
+      "generators": 9,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 8,
+          "ambient H2": 8,
+          "Z1(A)": 8,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 256,
+          "count contribution": 65536
+        },
+        "psi(meridian) = 2": {
+          "D": 8,
+          "ambient H2": 8,
+          "Z1(A)": 8,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 256,
+          "count contribution": 65536
+        }
+      },
+      "|Hom(pi1, G)|": 131073
+    },
+    "hard, S3_3(D(C3^(3)))": {
+      "generators": 9,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 8,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 256,
+          "count contribution": 4096
+        },
+        "psi(meridian) = 2": {
+          "D": 8,
+          "ambient H2": 4,
+          "Z1(A)": 4,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 256,
+          "count contribution": 4096
+        }
+      },
+      "|Hom(pi1, G)|": 8193
+    },
+    "hard, S3_3(D(C5^(3)))": {
+      "generators": 15,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 4,
+          "ambient H2": 2,
+          "Z1(A)": 2,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 16,
+          "count contribution": 64
+        },
+        "psi(meridian) = 2": {
+          "D": 4,
+          "ambient H2": 2,
+          "Z1(A)": 2,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 16,
+          "count contribution": 64
+        }
+      },
+      "|Hom(pi1, G)|": 129
+    },
+    "hard, S3_3(D(C7^(3)))": {
+      "generators": 21,
+      "H1 invariants": [
+        3
+      ],
+      "per character": {
+        "psi(meridian) = 0": {
+          "D": 0,
+          "ambient H2": 0,
+          "Z1(A)": 0,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 1,
+          "count contribution": 1
+        },
+        "psi(meridian) = 1": {
+          "D": 4,
+          "ambient H2": 2,
+          "Z1(A)": 2,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 16,
+          "count contribution": 64
+        },
+        "psi(meridian) = 2": {
+          "D": 4,
+          "ambient H2": 2,
+          "Z1(A)": 2,
+          "span": 0,
+          "quadratic span": 0,
+          "o(0) = 0": true,
+          "liftable": 16,
+          "count contribution": 64
+        }
+      },
+      "|Hom(pi1, G)|": 129
+    }
+  },
+  "seconds": 1.8
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BPHP-RES-PARITY-AUDIT-20261019-001A-E001",
+  "kind": "supplementary_control",
+  "added_after_frozen_run": true,
+  "why": "The frozen control renamed the main theorem and changed 32768 to 1 in its statement only; it was rejected at line 41 (the proof's own constant no longer matched) and a later theorem failed on the renamed identifier. This supplementary control changes 32768 to 1 everywhere in a copy of claims/BitPHPExponential.lean, so a rejection must come from the mathematics.",
+  "command": "sed 's/32768/1/g' claims/BitPHPExponential.lean > .lake/audit_controls/AllConstantsOne.lean && lake env lean .lake/audit_controls/AllConstantsOne.lean",
+  "exit": 1,
+  "first_error": ".lake/audit_controls/AllConstantsOne.lean:125:8: error: linarith failed to find a contradiction",
+  "reading": "The room lemma and the opening of the main proof still elaborate; the proof fails at line 125 (linarith), the inequality (2n)(2x) <= k^2 that needs x = n/(32768 l^2). The constant is load-bearing exactly where the bound's strength is set.",
+  "output": "supplementary_all_constants_one.txt"
+}

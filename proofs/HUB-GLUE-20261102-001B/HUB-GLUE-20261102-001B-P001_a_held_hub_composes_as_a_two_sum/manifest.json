@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-GLUE-20261102-001B-P001",
+  "canonical_id": "HUB-GLUE-20261102-001B-P001",
+  "kind": "proof",
+  "ticket": "HUB-GLUE-20261102-001B",
+  "proof": "HUB-GLUE-20261102-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Through a held hub, emergence composes as a 2-sum",
+  "status": "Proved",
+  "claim": "Through a held hub, emergence composes as a 2-sum. Let a knot space have a simple 3-edge cut with point side P (ports p1, p2, p3) and line side Q, and remove a line M that does not lie in P. (1) The hub holds: on every remaining solution the ports take two complementary all-equal patterns, so they carry one binary value h. (2) The solutions are the join of their P-part and their (Q plus ports)-part along h, and both parts are closed under complementing every value, which flips h; so for every set X of non-port variables the two halves of its projection (h = 0, h = 1) have equal size. (3) Hence a set X u Y, with X in P minus the ports and Y in Q both nonempty, is a circuit of the solutions exactly when X u {p} is a circuit of the P-part and Y u {p} a circuit of the other part, for a port p (any port, since they are tied); and no circuit meeting both P's interior and Q contains a port. The crossing knots are the 2-sum of the two sides' circuits through the hub, ties included: cycle-like composition at the hub that selection leaves. (4) Without complement symmetry this fails: two circuits through a bit, each deficient at one value only, eliminate to a free set. Checked by brute force on every splice of two census knot spaces up to 13 points (one line and point each), at every removal off the point side: the crossing circuits equal the predicted 2-sum exactly.",
+  "dependencies": [
+    "HUB-GLUE-20261102-001A"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A removal off the point side after which the ports of a simple 3-edge cut are not tied.",
+    "A crossing circuit of a held hub that is not the 2-sum of circuits through the hub on the two sides, or such a 2-sum that is not a circuit."
+  ],
+  "lineage": {
+    "home_scope": "HUB-GLUE-20261102-001",
+    "epic_path": [
+      "HUB-GLUE-20261102-001"
+    ],
+    "parents": [
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json": "58c6c8436f278d9f239671c3635c60580ce94b05fd7c37c9c46a619b3b7571bc",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json": "b42a8ed8611d03d5818076269f6ce5cf320f7a99d25a273efa6bd8f6aafb3cdc",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c"
+  },
+  "paths": {
+    "manifest": "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/manifest.json",
+    "identity": "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/identity.json",
+    "directory": "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum",
+    "proof": "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/proof.md",
+    "result": "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/result.json",
+    "check": "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "held_hub_two_sum_proved": true
+  },
+  "foundation_claim_scope": "Signed knot systems on knot spaces with a simple 3-edge cut, after removing one line off the point side.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: every splice of two census knot spaces up to 13 points at every removal off the point side, by brute force; a synthetic control; no human or external review",
+    "novelty": "The 2-sum of matroids is classical; the relational 2-sum through a complement-symmetric hub, and its reading as composition at selection's hubs, are new here."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RIGID-SELECTION-20261101-001B-P001",
+  "canonical_id": "RIGID-SELECTION-20261101-001B-P001",
+  "kind": "proof",
+  "ticket": "RIGID-SELECTION-20261101-001B",
+  "proof": "RIGID-SELECTION-20261101-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Global failures that keep a knot",
+  "status": "Proved",
+  "claim": "Global failures that keep a knot. (1) Signed Z4 at four places (x +- y +- z +- w = c mod 4) fails globally on the 6-point 4-regular substrate whose lines are the complements of the edges of a hexagon, and removing any one of its 6 lines leaves 8 solutions with knots of three variables. (2) Signed Z4 at three places fails globally on a 9-point cubic substrate, and removing one of its lines leaves 8 solutions with knots; on all 73 connected cubic substrates with at most 8 points (the 60 census incidence graphs read both ways), under every signing class, its global failures are rigid, so 9 points is the minimum for a cubic signed Z4 space that keeps a knot. (3) Unit-weighted Z8, Z9, Z25 and Z27 laws fail globally and keep a knot on many census substrates. (4) Every removal found that keeps a knot has a non-cyclic solution group, as ticket A requires. So composing like cycles does not force rigid selection: the coset laws of Z_(p^k), k >= 2, which compose like cycles (KNOT-CIRCUITS Theorem 1), have globally failing spaces that keep emergence inside. Checked by brute force over Z4^6 and Z4^9 for the two signed examples, exhaustively over signing classes on the census, and by sampling for the unit-weighted laws.",
+  "dependencies": [
+    "RIGID-SELECTION-20261101-001A",
+    "MUTUAL-SELECTION-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "finite-validation",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "Either signed Z4 example not failing globally, or losing every knot after the stated line removals, under brute force.",
+    "A non-rigid global failure with a cyclic solution group."
+  ],
+  "lineage": {
+    "home_scope": "RIGID-SELECTION-20261101-001",
+    "epic_path": [
+      "RIGID-SELECTION-20261101-001"
+    ],
+    "parents": [
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/result.json",
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json",
+      "research/MUTUAL-SELECTION-20261031-001C/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/manifest.json": "45ae09864fb7f087905d82c1888b9204baaf186eb264de18b540fc2d405fe49f",
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/result.json": "2a5928a6a2a3017af738116698d2fc25b01a5cc740dfe21ea923da36afe4921e",
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py": "5777f4e3efed6ea9454a742156b2a54b9dacc443631586276c1f8ad6516258ca",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07",
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "dce42dbefe8c23386bf8b7567ff010e427dcc0acd1685bb15e50b0b2da51ca15"
+  },
+  "paths": {
+    "manifest": "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json",
+    "identity": "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/identity.json",
+    "directory": "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot",
+    "proof": "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/proof.md",
+    "result": "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json",
+    "check": "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "nonrigid_failures_shown": true
+  },
+  "foundation_claim_scope": "Existence of non-rigid global failures for Z_(p^k) coset laws; census statistics are sampled for unit weights.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: two signed Z4 examples by brute force; signed Z4 exhaustively over signing classes on 60 cubic substrates; sampled unit weights over four rings on the census; no human or external review",
+    "novelty": "The examples and the census are new here; no source checked states non-rigid global failures."
+  }
+}

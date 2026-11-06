@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLANAR-THEOREM-20261102-001B-P001",
+  "canonical_id": "PLANAR-THEOREM-20261102-001B-P001",
+  "kind": "proof",
+  "ticket": "PLANAR-THEOREM-20261102-001B",
+  "proof": "PLANAR-THEOREM-20261102-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Knots separated by one port are 2-sums",
+  "status": "Proved",
+  "claim": "Crossing knots separated by one port are 2-sums, for any near side. Glue two knot spaces along a simple 3-edge cut with ports X and remove any near line. Let K be a crossing knot with near part U and far part V, and let one of its excluded patterns (u, v) be separated by a single port y: every port pattern compatible with u has y = b, and every one compatible with v has y = not b. Then y lies outside K, U + y and V + y are circuits, and K is their elimination through y. If y is tied to a point of K, that point is alone on its side, the circuit on that side is the tie, and K is tie-equivalent to the other circuit, which is one-sided. Otherwise both circuits are one-sided knots, and the elimination is a class-level step of the closure. Either way K is generated, never new. The proof uses only the join lemma, complement symmetry and minimality. Checked on splices of six census near sides (four plane, two non-planar) and two 10-point plane near sides into four far sides, at every near removal: 33,556 separated crossing knots, all as stated.",
+  "dependencies": [
+    "PLANAR-THEOREM-20261102-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A crossing knot with an excluded pattern separated by a single port y whose near part with y, or far part with y, is not a circuit, or for which y lies in the knot."
+  ],
+  "lineage": {
+    "home_scope": "PLANAR-THEOREM-20261102-001",
+    "epic_path": [
+      "PLANAR-THEOREM-20261102-001"
+    ],
+    "parents": [
+      "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json",
+      "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json": "636b899b6a14b0336e59c7b0a791cc68320ff44c0cfcc808e57e3c22aaf5be63",
+    "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json": "f74a2de1cadc7af13e1a01edcddb093a9a1cb5efd6a1c9cf58e78515aaaed19b",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1"
+  },
+  "paths": {
+    "manifest": "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/manifest.json",
+    "identity": "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/identity.json",
+    "directory": "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums",
+    "proof": "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/proof.md",
+    "result": "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/result.json",
+    "check": "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "one_port_two_sum_proved": true
+  },
+  "foundation_claim_scope": "Knot spaces glued along one simple 3-edge cut, any removal on the near side, eliminations up to ties.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "proved for any near side; checked on plane and non-planar splices; no human or external review",
+    "novelty": "New here; the argument uses only complement symmetry and minimality."
+  }
+}

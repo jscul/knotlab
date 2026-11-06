@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_id": "INTERFERENCE-20261029-001C-E001",
+  "ticket": "INTERFERENCE-20261029-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Do the decisive finite cancellation identities of the two October 2026 refutations of the Exponential Time Hypothesis hold when reimplemented independently from the papers' statements: (1) Anthropic's eight-square identity (eq. 12) and the factorization costs of its two terms; (2) the grouped pieces A_i of Anthropic's Lemma 2 for t = 1, 2 blocks of three bits, summing to 2^t [x=v][y=u] with ranks within 2^(t+3(t-i)+6i) by rows and 2^(t+6(t-i)+3i) by columns; (3) the pieces A_s of Anthropic's Theorem B (eqs. 47, 48, 53; matrix entries of operators on Q[t_1, t_2, ...]) for 1, 2 and 3 bits, summing to h! [x=v][y=u] with ranks within the stated row and column counts R_s^row = sum_i p(s+i), R_s^col = sum_i p(2h-s-i); (4) the swap-matrix construction A = V f(W) of OpenAI's proof as simplified by Kintali (Section 3 of the simplified proof): A fixes every tensor-basis vector with j in the interpolation window, rank(I - A) equals the number of exceptional basis vectors with nonzero correction, every nonzero entry of A disagrees at fewer than R nodes, and the replacement forms P_u restore the original coordinate at T = 0 and are local up to measurements at every node, at small parameters?",
+  "public_inputs": {
+    "anthropic_paper": "hexagon:2610.00577v1 (PDF retrieved 2026-10-29 from hexagonmath.org), statements of eq. (12), Lemma 2, eqs. (17)-(21), (47), (48), (53)-(55), Lemmas 9-10, Theorem B",
+    "kintali_paper": "S. Kintali, 'A simplified proof of ETH is false', 26 October 2026 (shivakintali.github.io/papers/ETH.pdf), Section 3: B = ([r] x [r])^Q, V, W, f, A, Lemmas 3.2-3.3, eq. (3.5)",
+    "parameters": "eight-square: all 4096 settings; Lemma 2: t in {1, 2}; Theorem B: lambda in {1, 2, 3} (h = 2, 4, 6); swap matrices: (r, Q, R) in {(2, 4, 2), (2, 5, 2), (3, 3, 2), (2, 6, 3)}"
+  },
+  "forbidden_inputs": "The authors' code, Lean files or any intermediate numbers from the papers other than the stated formulas; the replay must recompute everything from the definitions.",
+  "primary_observable": "For each of the four cores: pass or fail of the identity on every input in range, and the measured ranks against the stated bounds.",
+  "cheapest_control": "One deliberately wrong input per core must fail: a flipped entry of the sign table, swapped row and column costs in Lemma 2, the sign (-1)^i dropped from Q_s, and an interpolation polynomial of degree R instead of R - 1.",
+  "resource_ceiling": "One CPU, standard numpy; at most two hours wall-clock for the largest case (Theorem B at three bits).",
+  "first_executable_signal": "Theorem B sum identity at one and two bits (prototype run on 2026-10-29: holds).",
+  "stop_rule": "Stop after the four cores and their controls are run once in range; record any discrepancy with the papers as a finding, without repairing the papers' statements.",
+  "nonclaims": [
+    "A finite replay at small parameters is not a proof of either paper's main theorem, and checks neither the asymptotic accounting nor the Lean formalizations.",
+    "The swap-matrix check uses parameters below the papers' size conditions; it tests the algebraic lemmas, not the parameter choices."
+  ]
+}

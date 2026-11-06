@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FOUR-PLACE-20261031-001B-P001",
+  "canonical_id": "FOUR-PLACE-20261031-001B-P001",
+  "kind": "proof",
+  "ticket": "FOUR-PLACE-20261031-001B",
+  "proof": "FOUR-PLACE-20261031-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Value-free not-all-equal never fails on k-regular systems for k >= 4",
+  "status": "Proved",
+  "claim": "For every k >= 4, signed not-all-equal never fails on k-regular k-uniform systems (any signs on incidences). (i) Signed Seymour lemma: if a signed system is not-all-equal-unsatisfiable and minimal, then it has at least as many lines as points, and with equality every real matrix with its signed incidence pattern is nonsingular (sign-nonsingular): otherwise a nonzero real kernel vector colours its support by sign, satisfying every line it meets, and minimality colours the rest. (ii) In a k-regular k-uniform system a minimal failing subsystem has as many lines as points and full degrees, so it is a union of components. (iii) Its incidence pattern is not sign-nonsingular: with a perfect matching as diagonal its digraph has in- and out-degree k - 1 >= 3, every weak component of a regular digraph is strong, and Thomassen (1992) proved such digraphs even (an even-weight cycle under every 0/1 weighting). At k = 3 the digraph has degree 2 and the failures are exactly the knot's Pfaffian spaces. Checked: k = 4, every 4-regular 4-uniform system with n <= 7 and every signing satisfiable; no such incidence graph has a sign-nonsingular signing; not-all-equal pieces with up to five internal points accept only not-all-equal relations or everything.",
+  "dependencies": [
+    "FOUR-PLACE-20261031-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A signed k-regular k-uniform system (k >= 4) with no not-all-equal solution.",
+    "A 4-regular bipartite graph with a sign-nonsingular signing.",
+    "A minimal failing signed system with fewer lines than points."
+  ],
+  "lineage": {
+    "home_scope": "FOUR-PLACE-20261031-001",
+    "epic_path": [
+      "FOUR-PLACE-20261031-001"
+    ],
+    "parents": [
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json",
+      "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py",
+      "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json",
+      "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/manifest.json": "5d89c5ac8100c1eb2a5e68492fa9dbd9d05251b08348db7a5bbd597c4428f8c9",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/result.json": "935ad7f6b75a0793a3a2d2df4a46037ea347966d53f9f1cf9d72a47fed6d4d90",
+    "proofs/FOUR-PLACE-20261031-001A/FOUR-PLACE-20261031-001A-P001_the_value_free_four_place_knots/four_lib.py": "72a12e521ab7a616cecad61aac31c17ac7477878545e5cfdcc608eeac4e5ad68",
+    "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json": "2ecad4a95dd2f0aa95a8bc52e77900e481959930dcf00f361c18f29263347849",
+    "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json": "565be492e94c7304d3c0b9e4af58d7c240bda142398cc3f58b44fab768d95306"
+  },
+  "paths": {
+    "manifest": "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/manifest.json",
+    "identity": "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/identity.json",
+    "directory": "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places",
+    "proof": "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/proof.md",
+    "result": "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/result.json",
+    "check": "proofs/FOUR-PLACE-20261031-001B/FOUR-PLACE-20261031-001B-P001_value_free_not_all_equal_never_fails_at_four_places/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "signed_nae_regular_never_fails_shown": true
+  },
+  "foundation_claim_scope": "A satisfiability theorem for one value-free law on regular systems; inherits Thomassen's even-digraph theorem.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31.",
+    "status": "checked: exhaustive satisfiability over every signing of every 4-regular 4-uniform system with n <= 7; no sign-nonsingular signing of their incidence graphs; digraph degrees; the lemma's cubic instance (PINNING C: failing iff Pfaffian, 1,380,864 signings); rigidity of small pieces; no human or external review",
+    "novelty": "The plain case is Thomassen (1992) (k >= 4; Alon-Bregman for k >= 8). The signed case follows from Thomassen's even-digraph theorem by Seymour's (1974) linear-algebra argument; no explicit statement was found in the sources checked (moderate folklore risk)."
+  }
+}

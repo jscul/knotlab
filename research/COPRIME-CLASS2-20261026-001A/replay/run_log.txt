@@ -1,0 +1,69 @@
+group classes [1, 3, 12, 12, 12, 12, 12, 64, 64]
+claim1 3_1      brute=3585  d=1 N=7  claimed=3585  agree(all chiralities, +-3)=True
+claim1 4_1      brute=8193  d=1 N=16  claimed=8193  agree(all chiralities, +-3)=True
+claim1 5_2      brute=129  d=0 N=1  claimed=129  agree(all chiralities, +-3)=True
+claim1 8_18     brute=229377  d=2 N=112  claimed=229377  agree(all chiralities, +-3)=True
+claim1 3_1#3_1  brute=100353  d=2 N=49  claimed=100353  agree(all chiralities, +-3)=True
+claim1 done in 4.4s
+claim2 k= 1 d=1 T==0:True N=16 brute=8193 ok=True
+claim2 k= 2 d=2 T==0:True N=256 brute=524289 ok=True
+claim2 k= 3 d=3 T==0:True N=4096 brute=33554433 ok=True
+claim2 k= 4 d=4 T==0:True N=65536  ok=True
+claim2 k= 5 d=5 T==0:True N=1048576  ok=True
+claim2 k= 6 d=6 T==0:True N=16777216  ok=True
+claim2 k= 7 d=7 T==0:True   ok=True
+claim2 k= 8 d=8 T==0:True   ok=True
+claim2 k= 9 d=9 T==0:True   ok=True
+claim2 k=10 d=10 T==0:True   ok=True
+claim2 done in 19.2s
+claim3 (4_1)^#9 [(6, 1), (14, 5), (22, 9)] d=9 N=45162496 claimed=45162496 ok=True | steering: N_pred=45162496 ok=True
+claim3 (4_1)^#9 [(13, 1), (21, 5), (29, 9)] d=9 N=45162496 claimed=45162496 ok=True | steering: N_pred=45162496 ok=True
+claim3 (4_1)^#6 [(6, 1), (10, 3)] d=6 N=326656 claimed=326656 ok=True | steering: N_pred=326656 ok=True
+claim3 done in 10.4s
+claim4 nontrivial single insertions: {5: [(6, 1), (7, 1), (13, 1), (14, 1)], 6: [(6, 1), (7, 1), (10, 3), (11, 3), (13, 1), (14, 1), (17, 3), (18, 3)], 7: [(6, 1), (7, 1), (10, 3), (11, 3), (13, 1), (14, 1), (14, 5), (15, 5), (17, 3), (18, 3), (21, 5), (22, 5)]}
+claim4 stated convention (chirality +1, w^2, x_{q+2}x_{q+1}x_q): {'a_single': {'configs': 376, 'nontrivial': 24, 'ok': 376}, 'b_interacting': {'configs': 368, 'nontrivial': 356, 'ok': 368}, 'c_random': {'configs': 150, 'nontrivial': 27, 'ok': 150}} failures: 0
+claim4   nontrivial a_single k=5 m=1 d=5 N=80896 x 4
+claim4   nontrivial a_single k=6 m=1 d=6 N=1294336 x 8
+claim4   nontrivial a_single k=7 m=1 d=7 N=20709376 x 12
+claim4   nontrivial b_interacting k=5 m=2 d=5 N=80896 x 4
+claim4   nontrivial b_interacting k=5 m=3 d=5 N=80896 x 4
+claim4   nontrivial b_interacting k=6 m=2 d=6 N=1294336 x 8
+claim4   nontrivial b_interacting k=6 m=2 d=6 N=326656 x 7
+claim4   nontrivial b_interacting k=6 m=2 d=6 N=99856 x 8
+claim4   nontrivial b_interacting k=6 m=3 d=6 N=1294336 x 24
+claim4   nontrivial b_interacting k=6 m=3 d=6 N=99856 x 32
+claim4   nontrivial b_interacting k=7 m=2 d=7 N=1597696 x 28
+claim4   nontrivial b_interacting k=7 m=2 d=7 N=20709376 x 12
+claim4   nontrivial b_interacting k=7 m=2 d=7 N=5226496 x 19
+claim4   nontrivial b_interacting k=7 m=3 d=7 N=1597696 x 92
+claim4   nontrivial b_interacting k=7 m=3 d=7 N=20709376 x 58
+claim4   nontrivial b_interacting k=7 m=3 d=7 N=388096 x 16
+claim4   nontrivial b_interacting k=7 m=3 d=7 N=630016 x 44
+claim4   nontrivial c_random k=5 m=2 d=5 N=80896 x 8
+claim4   nontrivial c_random k=5 m=3 d=5 N=80896 x 6
+claim4   nontrivial c_random k=6 m=2 d=6 N=1294336 x 4
+claim4   nontrivial c_random k=6 m=3 d=6 N=1294336 x 9
+claim4 variant (120 configs from b) k_mu=1 chirality=+1 order=right_to_left {'configs': 120, 'nontrivial': 116, 'ok': 120}
+claim4 variant (120 configs from b) k_mu=2 chirality=+1 order=right_to_left {'configs': 120, 'nontrivial': 116, 'ok': 120}
+claim4 variant (120 configs from b) k_mu=1 chirality=+1 order=left_to_right {'configs': 120, 'nontrivial': 120, 'ok': 0}
+claim4 variant (120 configs from b) k_mu=1 chirality=-1 order=right_to_left {'configs': 120, 'nontrivial': 120, 'ok': 0}
+claim4 variant (120 configs from b) k_mu=1 chirality=-1 order=left_to_right {'configs': 120, 'nontrivial': 116, 'ok': 120}
+claim4 example {'k': 5, 'specs': [(6, 1), (13, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(6, 1), (14, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(7, 1), (13, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(7, 1), (14, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(6, 1), (7, 1), (13, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(6, 1), (7, 1), (14, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(6, 1), (13, 1), (14, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 5, 'specs': [(7, 1), (13, 1), (14, 1)], 'd': 5, 'N_direct': 80896, 'N_predicted': 80896}
+claim4 example {'k': 6, 'specs': [(6, 1), (11, 3)], 'd': 6, 'N_direct': 326656, 'N_predicted': 326656}
+claim4 example {'k': 6, 'specs': [(6, 1), (13, 1)], 'd': 6, 'N_direct': 1294336, 'N_predicted': 1294336}
+claim4 done in 66.8s
+claim5 K2                 count=5056  4^(2m-n)Z(64,15)=5056  naive=5056 ok=True
+claim5 P3                 count=1597696  4^(2m-n)Z(64,15)=1597696  naive=1597696 ok=True
+claim5 K3                 count=45162496  4^(2m-n)Z(64,15)=45162496  naive=None ok=True
+claim5 double edge        count=326656  4^(2m-n)Z(64,15)=326656  naive=326656 ok=True
+claim5 two disjoint edges count=25563136  4^(2m-n)Z(64,15)=25563136  naive=None ok=True
+claim5 star K1,3          count=504871936  4^(2m-n)Z(64,15)=504871936  naive=None ok=True
+claim5 done in 18.1s
+total 119.1s

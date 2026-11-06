@@ -1,0 +1,109 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LINE-DETECTOR-20261023-001B-P001",
+  "canonical_id": "LINE-DETECTOR-20261023-001B-P001",
+  "kind": "proof",
+  "ticket": "LINE-DETECTOR-20261023-001B",
+  "proof": "LINE-DETECTOR-20261023-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Two-literal contradictions are all or nothing in direction; three-place ones can be selective",
+  "status": "Proved",
+  "claim": "In every two-literal tiling world on a triangular torus, with or without coins shared between clauses, the classes along which a configuration contradicts are none, the multiples of one primitive class, or every class odd relative to the fitting twist: the doubly allowed tiling makes the parity of every closed implication walk the relative twist of its class. Hence a lone line is a pure line there, and the dual-pair failures of shared-coin worlds are failures of the line event itself. Three-place tiling worlds break the trichotomy: certified configurations contradict along some odd classes and not others, 12 of the 30 three-place placements do so on every torus computed, and a lone line can contradict along classes the lone event never checks; lines pure among eight classes still differ across dual pairs.",
+  "dependencies": [
+    "LINE-DETECTOR-20261023-001A",
+    "TRIPLE-SHIELD-20261023-001B",
+    "TRIPLE-TWIST-20261023-001A",
+    "LOOP-SHIELD-20261023-001C"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A two-literal tiling world with a configuration that contradicts along some but not all odd classes and along more than one class.",
+    "A claimed three-place counterexample whose pattern is not certified both ways.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "LINE-DETECTOR-20261023-001",
+    "epic_path": [
+      "LINE-DETECTOR-20261023-001"
+    ],
+    "parents": [
+      "proofs/TRIPLE-SHIELD-20261023-001B/TRIPLE-SHIELD-20261023-001B-P001_lone_lines/manifest.json",
+      "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/manifest.json",
+      "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/manifest.json",
+      "experiments/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/contract.json",
+      "artifacts/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TRIPLE-SHIELD-20261023-001B/TRIPLE-SHIELD-20261023-001B-P001_lone_lines/manifest.json": "8f89c801b51fdbe78adcddda67063c5fff2a7c8c2faa0da55a23f62678b1bc04",
+    "proofs/TRIPLE-TWIST-20261023-001A/TRIPLE-TWIST-20261023-001A-P001_three_place_twists/manifest.json": "ebc612f252ea09cbeb47bc6b922ecdfd7651e32cf60c907d1e7ef0b81ebbcf86",
+    "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/manifest.json": "936941cb161c9bc62042b6561b7a4fad0a8dae05b6786264612c748625abb15a",
+    "experiments/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/contract.json": "8d1d79dd22486ab21b1b4fb70faeffec3639ce4e39f8c12e3e652e362fc22cfc",
+    "artifacts/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/result.json": "fdb2be2d5394b38ac31c756292d717b09fa3f405f8956217563f7c9a19f1e404"
+  },
+  "paths": {
+    "manifest": "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/manifest.json",
+    "identity": "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/identity.json",
+    "directory": "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy",
+    "proof": "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/proof.md",
+    "result": "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/result.json",
+    "check": "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "two_literal_trichotomy_proved": true,
+    "three_place_selectivity_shown": true
+  },
+  "foundation_claim_scope": "Twisted fair worlds on triangular tori with cylinder covers; exact statements and certified finite counterexamples. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) confirms Lemma 1 on all 24 two-literal tiling placements, Lemma 2 on all 32296 fundamental cycles of their clause graphs on 3 x 3, 3 x 4 and 4 x 4, Theorem 3 on 329 contradicting sampled configurations (every cylinder certified by its own two-literal solver), and Proposition 4 on three three-place configurations certified both ways by its own search; two controls rejected. Proposition 5 cites the frozen, independently checked experiment. No human or external review",
+    "level": "V1 prose proof with sampled checks and certified counterexamples",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "artifact_id": "MALTSEV-CONDITIONS-20261021-001B-P001",
+  "checks": {
+    "census_agreement": {
+      "predictions": {
+        "H1": true,
+        "H2": true,
+        "H3": true,
+        "H4": true,
+        "H5": true
+      },
+      "signal": true
+    },
+    "corollary_4_incomparable": {
+      "Z2xZ2_line_congruences_maltsev": true,
+      "Z2xZ2_maltsev": true,
+      "Z2xZ2_sum_zero_alone_has_parity_free_sets": 200,
+      "Z2xZ2_with_lines_fails": true,
+      "Z6_failure_system": [
+        5,
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            4,
+            4,
+            1
+          ]
+        ]
+      ],
+      "Z6_maltsev": true
+    },
+    "theorem_1_K4": {
+      "K4_rectangular": false,
+      "gumm_identities": true,
+      "gumm_polymorphisms": true,
+      "hm_identities": true,
+      "hm_polymorphisms": true
+    },
+    "theorem_2_restriction": {
+      "K4_terms_preserve_the_block": true,
+      "fibre_restrictions_are_polymorphisms": 20,
+      "random_K6_polymorphisms": 20
+    },
+    "theorem_3_K6": {
+      "K6_constrained_sets_equal_Z3": 300,
+      "K6_systems": 300,
+      "all_conjunctions_or_constants": true,
+      "day_chain": false,
+      "hm_chain": false,
+      "quaternary_polymorphisms": 17,
+      "ternary_polymorphisms": 9
+    },
+    "theorem_5_maltsev_on_tops": {
+      "GF(4) lift": true,
+      "K4 (lift)": true,
+      "K4x4 (shadow)": true,
+      "K6 (shadow)": true,
+      "census witnesses (L223, L233)": {
+        "L223": true,
+        "L233": true
+      },
+      "identity shadow: fails modulo every proper E x E": true,
+      "identity shadow: operation preserves the law": true,
+      "pp-definitions": {
+        "GF(4) lift: kernel of g": true,
+        "K4: kernel of g": true,
+        "K4x4: equal first components": true,
+        "K6: equal first components": true
+      }
+    }
+  },
+  "claim": "Composing like cycles is not a classical Mal'tsev condition. (1) K4, the lift of x+y+z=0 over Z3 with the tuple (2,2,2) removed, has explicit Hagemann-Mitschke terms for 3-permutability and Gumm terms for congruence modularity, but no Mal'tsev polymorphism. (2) Restriction lemma: linear identities among a shadow's polymorphisms pass to its fibre clone, and idempotent identities pass to congruence classes. (3) K6, the shadow of the Z3 law on 'not exactly two ones', composes like cycles, yet its polymorphisms generate a variety that is neither congruence modular nor n-permutable for any n, because its fibre clone has only conjunctions and constants. (4) So composing like cycles is incomparable with permutability, n-permutability and modularity; x+y+z=0 over Z6 has a Mal'tsev polymorphism and fails elimination. (5) Every difference law that composes like cycles, every lift of one under the lift theorem's hypotheses, and every shadow of one in which equality of first components is pp-definable has a ternary polymorphism that is Mal'tsev modulo each range's unique maximal pp-definable equivalence. Open: whether every law that composes like cycles has one (Conjecture 6).",
+  "controls": {
+    "composing_like_cycles_implies_modularity": {
+      "rejected": true
+    },
+    "composing_like_cycles_implies_n_permutability": {
+      "rejected": true
+    },
+    "every_law_is_maltsev_on_its_tops": {
+      "neither_knot_maltsev_operations": 0,
+      "rejected": true
+    },
+    "maltsev_implies_composing_like_cycles": {
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "MALTSEV-CONDITIONS-20261021-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "incomparability_with_classical_conditions_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "k4_three_permutable_and_modular_proved": true,
+    "k6_not_modular_not_permutable_proved": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "maltsev_on_tops_conjecture_proved": false,
+    "maltsev_on_tops_for_known_families_proved": true,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "restriction_lemma_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "MALTSEV-CONDITIONS-20261021-001B"
+}

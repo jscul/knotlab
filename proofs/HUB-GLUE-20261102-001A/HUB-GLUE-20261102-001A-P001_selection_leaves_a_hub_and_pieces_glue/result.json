@@ -1,0 +1,90 @@
+{
+ "artifact_id": "HUB-GLUE-20261102-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "passed",
+     "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "Proved",
+     "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 the census holds 8 knot spaces (connected cubic triple systems up to 8 points on which the signed knot fails, for some signing), and every failure is global": {
+   "info": {
+    "all fail globally": true,
+    "census index and points": [
+     [
+      1,
+      4
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      14,
+      7
+     ],
+     [
+      21,
+      7
+     ],
+     [
+      38,
+      8
+     ],
+     [
+      45,
+      8
+     ],
+     [
+      56,
+      8
+     ],
+     [
+      58,
+      8
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "2 in each of the 8 census knot spaces, removing any line leaves its three points tied: under the line's signs they take exactly the two all-equal patterns, so the leftover is a hub": {
+   "info": {
+    "lines checked": 56,
+    "spaces": 8
+   },
+   "pass": true
+  },
+  "3 splicing a census knot space at any line into one at any point (all pairs up to 13 points) gives a knot space for some sign choice of the three new incidences; every such space fails globally, and for the first line and point of each pair its leftovers are hubs too": {
+   "info": {
+    "leftover hubs checked in full": 32,
+    "sign choices (of 8) that keep the failure": {
+     "2": 1216
+    },
+    "splices": 1216
+   },
+   "pass": true
+  },
+  "4 every nontrivial 3-edge cut of the census knot spaces and of their splices up to 10 points (all enumerated) whose three cut edges meet three distinct ports and three distinct slot lines contracts to two knot spaces (the point side closed by a line, the line side closed by a point): such a cut is a splice of two selected spaces along a leftover hub. Cuts where a port or a slot line takes two cut edges have contractions with a repeated point and are counted apart": {
+   "info": {
+    "cuts": 14,
+    "cuts with a doubled port or slot (contraction not simple)": 4,
+    "simple cuts": 10,
+    "simple cuts with both contractions knot spaces": 10,
+    "spaces with a nontrivial 3-edge cut": 9
+   },
+   "pass": true
+  }
+ },
+ "claim": "Selection leaves a hub, and selected spaces glue into knot spaces. (1) In every knot space (a connected cubic triple system with a signing on which the knot fails; every such failure is global), removing a line L leaves solutions in which L's three points carry one value up to L's signs: exactly the two complementary all-equal patterns. The leftover is a hub, and the space minus L, with ports L, is the point side of a 3-edge cut. (2) Splicing a knot space at a line into another at a point (each point of the line joined to one line through the point) gives a knot space for exactly one switching class of signs on the three new incidences (two of the eight choices). (3) Both contractions of a simple 3-edge cut of a knot space (three distinct ports and slot lines) are knot spaces, the point side closed by a line and the line side closed by a point; so every simple cut is a splice of selected spaces along a leftover hub. (4) With THREEFOLD-GRAMMAR, every knot space is assembled by splices from Fano atoms and planar glue (whose pieces may repeat an incidence, the non-simple cuts), with 4-sums for non-planar glue. Checked on the 8 census knot spaces, on all 1216 splices of pairs of census knot spaces up to 13 points at every line and point, and on all nontrivial 3-edge cuts of the census spaces and of their splices up to 10 points.",
+ "kind": "proof",
+ "proof": "HUB-GLUE-20261102-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HUB-GLUE-20261102-001A"
+}

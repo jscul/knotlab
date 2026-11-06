@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "DICHOTOMY-3D-20261025-001A-P001",
+  "canonical_id": "DICHOTOMY-3D-20261025-001A-P001",
+  "kind": "proof",
+  "ticket": "DICHOTOMY-3D-20261025-001A",
+  "proof": "DICHOTOMY-3D-20261025-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Root fillings separate the order-16 collision",
+  "status": "Proved",
+  "claim": "Target: Dehn filling parallel copies of the edge curves of the closed doubles of HARD-3D-20261025-001B along the slopes lambda mu^-p and lambda mu^p multiplies the anyon channel (flux lambda, charge psi in Irr C(lambda)) by rho_p = |sum of psi(tau) over tau in C(lambda) with tau^p = lambda|^2 / psi(1)^2, and parallel copies multiply their channel factors. If a finite group G has an abelian normal subgroup A of prime index p and G acts nontrivially on pA, then with fins interpolated and one doubled root filling per edge the closed count is an exponential polynomial whose bases are (|G|/p)^(2m) p^(2j), and the coefficient of j = 0 is |A[p]|^(2m) |G:pA| |A[p]| (|L'|/|A|)^|V| P(G,q), where L' is the subgroup of G-fixed pairs in pA x Ann(A[p]) and q = |[pA,G]|^2 >= 4. When G acts trivially on pA, fins alone recover (|Z|/|G'|)^|V| P(G,|G:Z||G'|) if |[A,G]| = p, and |A|^|V| P(G,p) from the fluxes outside A if |[A,G]| >= p^2 and p >= 3. Hence counting homomorphisms from closed orientable 3-manifold groups is #P-hard (Turing) for every finite group with an abelian normal subgroup of prime index, except possibly p = 2 with trivial action on 2A and |[A,G]| >= 4; in particular for the dihedral group of order 16 (coefficient 4^m 8 P(G,4)/2^|V|) and every 2-power dihedral, semidihedral and generalized quaternion group of order at least 16 (q = N^2/16 for order 2N). The hardness itself already follows from Galindo's 2026 Turaev-Viro dichotomy; this is an independent elementary route with explicit chromatic coefficients.",
+  "dependencies": [
+    "HARD-3D-20261025-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A thickened count with fins and root fillings on parallel copies that differs from the digon-collapsed product formula, or a configuration count where mirror-label consistency differs from per-edge commutation.",
+    "A closed count, as a function of the number of fins, that is not fitted by the predicted bases (an overdetermined fit that is inconsistent).",
+    "A recovered top coefficient that differs from the stated chromatic identity for any group or graph tested.",
+    "A control is accepted: without root fillings, or with fillings of order coprime to |G|, the order-16 top coefficient equals the identity; or a wrong number of colours is accepted."
+  ],
+  "lineage": {
+    "home_scope": "DICHOTOMY-3D-20261025-001",
+    "epic_path": [
+      "DICHOTOMY-3D-20261025-001"
+    ],
+    "parents": [
+      "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HARD-3D-20261025-001B/HARD-3D-20261025-001B-P001_closed_doubles_count_pairs_of_colourings/manifest.json": "f95e03eec67235463d4f420c673949bf33d021c1fdfda88ef502f6219ec5ed88"
+  },
+  "paths": {
+    "manifest": "proofs/DICHOTOMY-3D-20261025-001A/DICHOTOMY-3D-20261025-001A-P001_root_fillings_separate_the_order_16_collision/manifest.json",
+    "identity": "proofs/DICHOTOMY-3D-20261025-001A/DICHOTOMY-3D-20261025-001A-P001_root_fillings_separate_the_order_16_collision/identity.json",
+    "directory": "proofs/DICHOTOMY-3D-20261025-001A/DICHOTOMY-3D-20261025-001A-P001_root_fillings_separate_the_order_16_collision",
+    "proof": "proofs/DICHOTOMY-3D-20261025-001A/DICHOTOMY-3D-20261025-001A-P001_root_fillings_separate_the_order_16_collision/proof.md",
+    "result": "proofs/DICHOTOMY-3D-20261025-001A/DICHOTOMY-3D-20261025-001A-P001_root_fillings_separate_the_order_16_collision/result.json",
+    "check": "proofs/DICHOTOMY-3D-20261025-001A/DICHOTOMY-3D-20261025-001A-P001_root_fillings_separate_the_order_16_collision/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "index_p_root_filling_hardness_shown": false
+  },
+  "foundation_claim_scope": "Closed orientable 3-manifolds obtained from doubles of fin handlebodies over plane multigraphs by Dehn filling parallel copies of the edge curves; counting homomorphisms into finite groups with an abelian normal subgroup of prime index; Turing reductions by interpolation; hardness of planar colouring (Vertigan) and polynomial-time triangulation cited; hardness for all non-abelian groups already follows from Galindo (2026), cited; instances have first Betti number growing with the graph. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, about 14 s) confirms that mirror-label consistency equals per-edge commutation for S3 and the dihedral group of order 8 on seven graphs, that parallel copies carrying fins and root fillings collapse to the convolution (three thickened cases), exact fits in the number of fins with two extra values each, and the top coefficient of Theorem 1 in exact rationals for ten groups (the order-16 dihedral group on seven graphs; Q16, SD16, the order-32 dihedral group, Z3 x| Z4, Z7 x| Z3, A4, the dihedral group of order 8, the modular group of order 16 and Z3 wr Z3 on four to seven graphs), and four controls (fins alone leave the order-16 coefficient contaminated, 6522 against 6330; a cube-root filling changes nothing; a single filling gives a different coefficient; a wrong number of colours is rejected). No human or external review",
+    "level": "V1 prose proof with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

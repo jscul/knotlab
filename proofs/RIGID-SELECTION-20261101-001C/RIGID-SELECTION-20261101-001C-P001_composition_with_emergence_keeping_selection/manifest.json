@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RIGID-SELECTION-20261101-001C-P001",
+  "canonical_id": "RIGID-SELECTION-20261101-001C-P001",
+  "kind": "proof",
+  "ticket": "RIGID-SELECTION-20261101-001C",
+  "proof": "RIGID-SELECTION-20261101-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A law that composes like cycles and selects spaces that keep a knot",
+  "status": "Proved",
+  "claim": "A law that composes like cycles and selects spaces that keep a knot. Blurred signed Z4 on five values replaces each relation x +- y +- z (+- w) = c of signed Z4 by its preimage under phi, which sends 0 and 1 to 0 and 2, 3, 4 to 1, 2, 3. (1) It composes like cycles: its systems have exactly the constrained sets of their images (BEYOND-TWO B), which are systems of Z4's coset law, and that law composes like cycles (KNOT-CIRCUITS Theorem 1); a Mal'tsev lift of x - y + z preserves it. (2) It fails exactly where its image fails, so its failures are recognised by linear algebra over Z4, and on the two spaces of ticket B it fails globally. (3) It keeps knots inside them: after any line of the 6-point space is removed, and after line 0 of the 9-point cubic space (brute force over 5^6 and 5^9 assignments). (4) Its count matrices have rank 4 while Z4's have rank 1, so it is not strongly balanced and counting it is #P-complete (Dyer-Richerby). (5) After a removal, its count on these spaces is a sum over the 8 solutions of the image, each weighted by 2 to the number of its zeros. (6) By ticket D the knots it keeps are pulled back from lower-layer knots of Z4: each has at most one variable whose image takes all four values, and hides at most one digit. So composing like cycles does not force rigid selection: a law that composes natively, selects globally, counts hard and keeps emergence inside its selected spaces exists at five values, and what it keeps lives below its top layer. At two values the two exclude each other: a law that composes like cycles and has knots is affine (KNOT-CIRCUITS Theorem 2), hence rigid (ticket D), while the knot keeps knots inside its selected spaces (BEYOND-TWO C).",
+  "dependencies": [
+    "RIGID-SELECTION-20261101-001B",
+    "RIGID-SELECTION-20261101-001D",
+    "BEYOND-TWO-20261101-001Z"
+  ],
+  "evidence_modes": [
+    "proof",
+    "construction",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "The blurred law failing other than as signed Z4 on the two spaces, or losing the knots, under brute force.",
+    "A count matrix of the blurred law of rank 1, or a Mal'tsev lift that fails to preserve a relation.",
+    "Circuit elimination failing on a random system of the blurred law."
+  ],
+  "lineage": {
+    "home_scope": "RIGID-SELECTION-20261101-001",
+    "epic_path": [
+      "RIGID-SELECTION-20261101-001"
+    ],
+    "parents": [
+      "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json",
+      "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py",
+      "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json",
+      "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json",
+      "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json",
+      "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "cfa9b1320686064afd57c6bfd7de64e1ed657e60d0c8cca8f85f5794a5f1fc0d",
+    "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "8e3afd228953e814ce5b6ef63f647c68d66a75cd95c0bbad8f4c5446fe91af4e",
+    "proofs/RIGID-SELECTION-20261101-001A/RIGID-SELECTION-20261101-001A-P001_where_selection_is_rigid/zlocal.py": "5777f4e3efed6ea9454a742156b2a54b9dacc443631586276c1f8ad6516258ca",
+    "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json": "e260f828cc1023344baf06af44fe3b4ba6d2eb7b3de9cc6a43dcdd13d9c3a095",
+    "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json": "0c6721995c04fe054c0af8f3d563c708f345d6f249db2e4ada68393be3d8e3c9",
+    "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json": "bf92df57b62ac432a80d3e1de8ef11527e779084beb1d067be4ab53e8dbaf47a",
+    "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json": "7f2de70ff60ab553d7cd33e1516d20528749cdfc158a0362465110e68340c8ea"
+  },
+  "paths": {
+    "manifest": "proofs/RIGID-SELECTION-20261101-001C/RIGID-SELECTION-20261101-001C-P001_composition_with_emergence_keeping_selection/manifest.json",
+    "identity": "proofs/RIGID-SELECTION-20261101-001C/RIGID-SELECTION-20261101-001C-P001_composition_with_emergence_keeping_selection/identity.json",
+    "directory": "proofs/RIGID-SELECTION-20261101-001C/RIGID-SELECTION-20261101-001C-P001_composition_with_emergence_keeping_selection",
+    "proof": "proofs/RIGID-SELECTION-20261101-001C/RIGID-SELECTION-20261101-001C-P001_composition_with_emergence_keeping_selection/proof.md",
+    "result": "proofs/RIGID-SELECTION-20261101-001C/RIGID-SELECTION-20261101-001C-P001_composition_with_emergence_keeping_selection/result.json",
+    "check": "proofs/RIGID-SELECTION-20261101-001C/RIGID-SELECTION-20261101-001C-P001_composition_with_emergence_keeping_selection/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "emergence_keeping_bridge_shown": true
+  },
+  "foundation_claim_scope": "One law on five values with the stated properties on two spaces; no claim about general selected spaces.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: brute force over five values on both spaces; the Mal'tsev lift; count matrices; recognition and circuit elimination on random systems; no human or external review",
+    "novelty": "New here: the first law found that composes like cycles and selects spaces that keep a knot."
+  }
+}

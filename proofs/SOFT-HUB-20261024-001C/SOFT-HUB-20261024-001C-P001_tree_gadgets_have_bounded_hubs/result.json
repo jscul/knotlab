@@ -1,0 +1,92 @@
+{
+  "artifact_id": "SOFT-HUB-20261024-001C-P001",
+  "checks": {
+    "Conjecture 4: evidence": {
+      "axis-terminal cases": 48000,
+      "failures": 0,
+      "random gadgets": 4000,
+      "ticket B annealed gadgets": 336,
+      "ticket B cases with equality": 0,
+      "ticket B failures": 0,
+      "trees among them": 1216
+    },
+    "Corollary 2: tree example": {
+      "F": [
+        11,
+        13,
+        11,
+        8,
+        7,
+        6,
+        12,
+        11
+      ],
+      "hub ratio along 001 is 12/11": true,
+      "is a tree": true
+    },
+    "Proposition 3: cyclic example": {
+      "collision found on axis": "000",
+      "has a cycle": true
+    },
+    "Theorem 1 on tree gadgets": {
+      "arm images injective": true,
+      "arm images on the stated patterns": true,
+      "arm images valid": true,
+      "arm structure as stated": true,
+      "cases": 2967,
+      "inequality holds": true,
+      "linked pairs": 41160,
+      "tree gadgets": 300
+    }
+  },
+  "claim": "For every tree gadget of a non-windable knot, in particular of the six open knots, every axis u and every terminal i: F(u)F(u-bar) <= s_u + F(u + e_i)F(u-bar) + F(u)F(u-bar + e_i), by mapping each linked pair injectively through a one-sided flip of terminal i's arm along the tree route to the first branching knot; so tree gadgets have hub ratio at most 3, and they do exceed 1 (a stored eight-knot tree reaches 12/11). In a gadget with a cycle the arm is not determined: a stored seven-knot gadget with a double edge has two linked pairs with the same image. The inequality for all gadgets is left open as a conjecture, holding on 48,000 random axis-terminal cases and all 336 annealed gadgets of ticket B.",
+  "controls": {
+    "flipping the arm on the full side gives an invalid assignment on some pair": true,
+    "the planted function violates the inequality": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "SOFT-HUB-20261024-001C-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "tree_hub_bound_shown": true,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "SOFT-HUB-20261024-001C"
+}

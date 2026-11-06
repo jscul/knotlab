@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-GLUE-20261102-001A-P001",
+  "canonical_id": "HUB-GLUE-20261102-001A-P001",
+  "kind": "proof",
+  "ticket": "HUB-GLUE-20261102-001A",
+  "proof": "HUB-GLUE-20261102-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Selection leaves a hub, and selected spaces glue into knot spaces",
+  "status": "Proved",
+  "claim": "Selection leaves a hub, and selected spaces glue into knot spaces. (1) In every knot space (a connected cubic triple system with a signing on which the knot fails; every such failure is global), removing a line L leaves solutions in which L's three points carry one value up to L's signs: exactly the two complementary all-equal patterns. The leftover is a hub, and the space minus L, with ports L, is the point side of a 3-edge cut. (2) Splicing a knot space at a line into another at a point (each point of the line joined to one line through the point) gives a knot space for exactly one switching class of signs on the three new incidences (two of the eight choices). (3) Both contractions of a simple 3-edge cut of a knot space (three distinct ports and slot lines) are knot spaces, the point side closed by a line and the line side closed by a point; so every simple cut is a splice of selected spaces along a leftover hub. (4) With THREEFOLD-GRAMMAR, every knot space is assembled by splices from Fano atoms and planar glue (whose pieces may repeat an incidence, the non-simple cuts), with 4-sums for non-planar glue. Checked on the 8 census knot spaces, on all 1216 splices of pairs of census knot spaces up to 13 points at every line and point, and on all nontrivial 3-edge cuts of the census spaces and of their splices up to 10 points.",
+  "dependencies": [
+    "NATIVE-PATHS-20261101-001Z",
+    "THREEFOLD-GRAMMAR-20261030-001Z",
+    "THREEFOLD-SPACES-20261030-001Z"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A knot space in which removing a line leaves its points with more than two patterns, or untied.",
+    "A splice of two knot spaces that fails for no sign choice of the new incidences.",
+    "A nontrivial 3-edge cut of a knot space with a contraction that is not a knot space."
+  ],
+  "lineage": {
+    "home_scope": "HUB-GLUE-20261102-001",
+    "epic_path": [
+      "HUB-GLUE-20261102-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "10cb4f0382fc24672706a5fa64b4964581f782bf4fee1a5187d4ebfb79051826",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "68da26a9c5d6ec418874f008036494e7f66433b4de796c4d67fec6c8a86bc59f",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "b83e1823674625548ab2038389f4c4e10dc6159d6eb57fa5d2ccb4db56e0ddab",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json": "0c0936cfd650698294cae9e108e39378f36904c45196f32a094632002fbc7bde",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json",
+    "identity": "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/identity.json",
+    "directory": "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue",
+    "proof": "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/proof.md",
+    "result": "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json",
+    "check": "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "leftover_hub_and_gluing_shown": true
+  },
+  "foundation_claim_scope": "Signed knot systems on connected cubic triple systems; splices along 3-edge cuts.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: the census knot spaces, splices up to 13 points, 3-edge cuts of the census spaces; no human or external review",
+    "novelty": "Mostly a reading of the block lemma (THREEFOLD-SPACES C), the 3-edge-cut theorem (NATIVE-PATHS A) and the tight-cut decomposition (RST); the selection reading is new here."
+  }
+}

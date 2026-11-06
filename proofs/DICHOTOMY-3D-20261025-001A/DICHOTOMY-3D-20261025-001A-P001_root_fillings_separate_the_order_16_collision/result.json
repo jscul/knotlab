@@ -1,0 +1,719 @@
+{
+  "schema_version": 1,
+  "artifact_id": "DICHOTOMY-3D-20261025-001A-P001",
+  "status": "Proved",
+  "checks": {
+    "parts": {
+      "4_index_p_data": {
+        "data": {
+          "D16": {
+            "order": 16,
+            "p": 2,
+            "|A|": 8,
+            "|pA|": 4,
+            "|A[p]|": 2,
+            "|[pA,G]|": 2,
+            "|[A,G]|": 4,
+            "|Z|": 2,
+            "case": "a"
+          },
+          "Q16": {
+            "order": 16,
+            "p": 2,
+            "|A|": 8,
+            "|pA|": 4,
+            "|A[p]|": 2,
+            "|[pA,G]|": 2,
+            "|[A,G]|": 4,
+            "|Z|": 2,
+            "case": "a"
+          },
+          "SD16": {
+            "order": 16,
+            "p": 2,
+            "|A|": 8,
+            "|pA|": 4,
+            "|A[p]|": 2,
+            "|[pA,G]|": 2,
+            "|[A,G]|": 4,
+            "|Z|": 2,
+            "case": "a"
+          },
+          "D32": {
+            "order": 32,
+            "p": 2,
+            "|A|": 16,
+            "|pA|": 8,
+            "|A[p]|": 2,
+            "|[pA,G]|": 4,
+            "|[A,G]|": 8,
+            "|Z|": 2,
+            "case": "a"
+          },
+          "Dic12 = Z3 x| Z4": {
+            "order": 12,
+            "p": 2,
+            "|A|": 6,
+            "|pA|": 3,
+            "|A[p]|": 2,
+            "|[pA,G]|": 3,
+            "|[A,G]|": 3,
+            "|Z|": 2,
+            "case": "a"
+          },
+          "Z7 x| Z3": {
+            "order": 21,
+            "p": 3,
+            "|A|": 7,
+            "|pA|": 7,
+            "|A[p]|": 1,
+            "|[pA,G]|": 7,
+            "|[A,G]|": 7,
+            "|Z|": 1,
+            "case": "a"
+          },
+          "A4": {
+            "order": 12,
+            "p": 3,
+            "|A|": 4,
+            "|pA|": 4,
+            "|A[p]|": 1,
+            "|[pA,G]|": 4,
+            "|[A,G]|": 4,
+            "|Z|": 1,
+            "case": "a"
+          },
+          "D8": {
+            "order": 8,
+            "p": 2,
+            "|A|": 4,
+            "|pA|": 2,
+            "|A[p]|": 2,
+            "|[pA,G]|": 1,
+            "|[A,G]|": 2,
+            "|Z|": 2,
+            "case": "b1"
+          },
+          "M16": {
+            "order": 16,
+            "p": 2,
+            "|A|": 8,
+            "|pA|": 4,
+            "|A[p]|": 2,
+            "|[pA,G]|": 1,
+            "|[A,G]|": 2,
+            "|Z|": 4,
+            "case": "b1"
+          },
+          "Z3 wr Z3": {
+            "order": 81,
+            "p": 3,
+            "|A|": 27,
+            "|pA|": 1,
+            "|A[p]|": 27,
+            "|[pA,G]|": 1,
+            "|[A,G]|": 9,
+            "|Z|": 3,
+            "case": "b2"
+          }
+        },
+        "ok": true
+      },
+      "1_model": {
+        "consistency_equals_commutation": {
+          "S3 single edge": [
+            36,
+            true
+          ],
+          "S3 path": [
+            216,
+            true
+          ],
+          "S3 C3": [
+            396,
+            true
+          ],
+          "S3 theta3": [
+            396,
+            true
+          ],
+          "S3 C4": [
+            1764,
+            true
+          ],
+          "S3 diamond": [
+            4824,
+            true
+          ],
+          "S3 triangle with pendant": [
+            2376,
+            true
+          ],
+          "D8 single edge": [
+            64,
+            true
+          ],
+          "D8 path": [
+            512,
+            true
+          ],
+          "D8 C3": [
+            1792,
+            true
+          ],
+          "D8 theta3": [
+            1792,
+            true
+          ],
+          "D8 C4": [
+            11264,
+            true
+          ],
+          "D8 diamond": [
+            53248,
+            true
+          ],
+          "D8 triangle with pendant": [
+            14336,
+            true
+          ]
+        },
+        "mixed_digon_collapse": {
+          "S3 path x3": [
+            124416,
+            124416,
+            true
+          ],
+          "D16 single edge x3": [
+            47104,
+            47104,
+            true
+          ],
+          "D8 C3 x2": [
+            12582912,
+            12582912,
+            true
+          ]
+        },
+        "ok": true
+      },
+      "2_3_interpolation": {
+        "rows": {
+          "D16 single edge": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "96",
+            "predicted": "96",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D16 path": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "576",
+            "predicted": "576",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D16 C3": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "1536",
+            "predicted": "1536",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D16 theta3": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "1536",
+            "predicted": "1536",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D16 C4": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "10752",
+            "predicted": "10752",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D16 diamond": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "24576",
+            "predicted": "24576",
+            "bases": 6,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D16 triangle with pendant": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "9216",
+            "predicted": "9216",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Q16 single edge": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "96",
+            "predicted": "96",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Q16 path": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "576",
+            "predicted": "576",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Q16 C3": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "1536",
+            "predicted": "1536",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Q16 theta3": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "1536",
+            "predicted": "1536",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Q16 C4": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "10752",
+            "predicted": "10752",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "SD16 single edge": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "96",
+            "predicted": "96",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "SD16 path": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "576",
+            "predicted": "576",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "SD16 C3": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "1536",
+            "predicted": "1536",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "SD16 theta3": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "1536",
+            "predicted": "1536",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "SD16 C4": {
+            "case": "a",
+            "q": 4,
+            "top coefficient": "10752",
+            "predicted": "10752",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D32 single edge": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "480",
+            "predicted": "480",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D32 path": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "7200",
+            "predicted": "7200",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D32 C3": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "26880",
+            "predicted": "26880",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D32 theta3": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "7680",
+            "predicted": "7680",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D32 C4": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "405120",
+            "predicted": "405120",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Dic12 = Z3 x| Z4 single edge": {
+            "case": "a",
+            "q": 9,
+            "top coefficient": "64",
+            "predicted": "64",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Dic12 = Z3 x| Z4 path": {
+            "case": "a",
+            "q": 9,
+            "top coefficient": "1024/3",
+            "predicted": "1024/3",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Dic12 = Z3 x| Z4 C3": {
+            "case": "a",
+            "q": 9,
+            "top coefficient": "3584/3",
+            "predicted": "3584/3",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Dic12 = Z3 x| Z4 theta3": {
+            "case": "a",
+            "q": 9,
+            "top coefficient": "1024",
+            "predicted": "1024",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Dic12 = Z3 x| Z4 C4": {
+            "case": "a",
+            "q": 9,
+            "top coefficient": "19456/3",
+            "predicted": "19456/3",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Dic12 = Z3 x| Z4 diamond": {
+            "case": "a",
+            "q": 9,
+            "top coefficient": "200704/9",
+            "predicted": "200704/9",
+            "bases": 6,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z7 x| Z3 single edge": {
+            "case": "a",
+            "q": 49,
+            "top coefficient": "144",
+            "predicted": "144",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z7 x| Z3 path": {
+            "case": "a",
+            "q": 49,
+            "top coefficient": "6912/7",
+            "predicted": "6912/7",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z7 x| Z3 C3": {
+            "case": "a",
+            "q": 49,
+            "top coefficient": "6768/7",
+            "predicted": "6768/7",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z7 x| Z3 theta3": {
+            "case": "a",
+            "q": 49,
+            "top coefficient": "144",
+            "predicted": "144",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z7 x| Z3 C4": {
+            "case": "a",
+            "q": 49,
+            "top coefficient": "325008/49",
+            "predicted": "325008/49",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "A4 single edge": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "45",
+            "predicted": "45",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "A4 path": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "675/4",
+            "predicted": "675/4",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "A4 C3": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "315/2",
+            "predicted": "315/2",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "A4 theta3": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "45",
+            "predicted": "45",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "A4 C4": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "9495/16",
+            "predicted": "9495/16",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "A4 diamond": {
+            "case": "a",
+            "q": 16,
+            "top coefficient": "2205/4",
+            "predicted": "2205/4",
+            "bases": 6,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 single edge": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "56",
+            "predicted": "56",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 path": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "392",
+            "predicted": "392",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 C3": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "336",
+            "predicted": "336",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 theta3": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "56",
+            "predicted": "56",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 C4": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "2408",
+            "predicted": "2408",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 diamond": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "2016",
+            "predicted": "2016",
+            "bases": 6,
+            "fit consistent": true,
+            "ok": true
+          },
+          "D8 K4": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "1680",
+            "predicted": "1680",
+            "bases": 7,
+            "fit consistent": true,
+            "ok": true
+          },
+          "M16 single edge": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "224",
+            "predicted": "224",
+            "bases": 2,
+            "fit consistent": true,
+            "ok": true
+          },
+          "M16 path": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "3136",
+            "predicted": "3136",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "M16 C3": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "2688",
+            "predicted": "2688",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "M16 theta3": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "224",
+            "predicted": "224",
+            "bases": 4,
+            "fit consistent": true,
+            "ok": true
+          },
+          "M16 C4": {
+            "case": "b1",
+            "q": 8,
+            "top coefficient": "38528",
+            "predicted": "38528",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z3 wr Z3 single edge": {
+            "case": "b2",
+            "q": 3,
+            "top coefficient": "4374",
+            "predicted": "4374",
+            "bases": 3,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z3 wr Z3 path": {
+            "case": "b2",
+            "q": 3,
+            "top coefficient": "236196",
+            "predicted": "236196",
+            "bases": 5,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z3 wr Z3 C3": {
+            "case": "b2",
+            "q": 3,
+            "top coefficient": "118098",
+            "predicted": "118098",
+            "bases": 7,
+            "fit consistent": true,
+            "ok": true
+          },
+          "Z3 wr Z3 theta3": {
+            "case": "b2",
+            "q": 3,
+            "top coefficient": "4374",
+            "predicted": "4374",
+            "bases": 7,
+            "fit consistent": true,
+            "ok": true
+          }
+        },
+        "ok": true
+      },
+      "5_controls": {
+        "fins only: coefficient of 64^(4k) on C4 vs identity 2 P(G,16)/2^n": [
+          "6522",
+          "6330",
+          true
+        ],
+        "cube-root filling pair gives the same counts as fins only": true,
+        "single root filling: top coefficient vs 2^m times 8 P(G,4)/2^n": [
+          "96",
+          "672",
+          true
+        ],
+        "wrong q = 16 for the order-16 dihedral group rejected": true,
+        "ok": true
+      }
+    },
+    "ok": true,
+    "seconds": 14.0
+  }
+}

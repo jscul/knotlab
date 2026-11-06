@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LINE-DETECTOR-20261023-001A-E001",
+  "ticket": "LINE-DETECTOR-20261023-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "The owner approved the detector epic after TRIPLE-SHIELD-20261023-001 found lone contradiction lines of three-place tiling worlds unequal across dual pairs. A lone line is checked against three cylinders only, and the two twists of a pair leave different odd classes unchecked. Scratch scoping on the 3 x 3 torus (seen): (1) every lone line of placements 54 and 62 also contradicts along an odd class outside the three ((1,-1) in twist 01, (2,-1) in twist 00), certified both ways with PySAT strips and covers; (2) minimal-contradiction purity is not the right notion, since even the orientation world 63 has 5664 configurations whose minimal contradictions all run along (1,0) in one twist against 2028 in the other; (3) over the eight classes below, no two-literal placement (24) ever contradicts along some odd classes and not others, while 12 three-place placements do (54, 62, 109, 110, 111, 125, 147, 151, 155, 159, 203, 215); (4) lines pure among the eight classes still differ for placements 91 (217604 against 172388) and 111 (4248 against 3750), and are absent (0 and 0) for 54 and 62. The engine for extra classes agreed with PySAT certificates on 36 sampled configurations. Nothing was computed on 3 x 4 or 4 x 4 beyond two timing samples.",
+  "question": "Do two-literal tiling worlds always contradict along no class, exactly one class, or every odd class (the trichotomy), while three-place worlds can contradict along some odd classes and not others? Are the lone lines of the most lopsided three-place placements always accompanied by a contradiction along another odd class, and do lines that are pure among eight classes still differ across a dual pair?",
+  "public_inputs": {
+    "model": "as in TRIPLE-SHIELD-20261023-001A-E001: one fair visible bit per triangle of the L x M triangular torus (no shear), hidden values on the vertices, gauged allowed patterns R (bit 0) or their complements (bit 1), twist (alpha, beta) by deck offsets relative to the first corner",
+    "placements": "the 54 TILING placements of artifacts/TRIPLE-TWIST-20261023-001B/TRIPLE-TWIST-20261023-001B-E001_contact_census/rows.jsonl, typed as orientation, diagonal-clause, shared-coin and three as in TRIPLE-SHIELD-20261023-001A-E001",
+    "tori": "3 x 3 (family F_seen, every configuration), 3 x 4 (F_fresh, every configuration) and 4 x 4 (F_fresh, the 19 orbit representatives of TRIPLE-SHIELD-20261023-001A-E001, a sample of 2^22 configurations per twist in 16 streams seeded by the SHA-256 of torus, placement, twist and stream); the 4 x 3 torus repeats 3 x 4 with the axes swapped and is omitted",
+    "twists": "all four classes (alpha, beta)",
+    "classes": "(1,0), (0,1), (1,1), (1,-1), (1,2), (2,1), (1,-2), (2,-1) in deck coordinates",
+    "frozen_inputs": "the fitting twists and the counts of torus contradictions, cylinder contradictions, lone lines and crosses recorded in artifacts/TRIPLE-SHIELD-20261023-001A/TRIPLE-SHIELD-20261023-001A-E001_exact_dual_pairs/rows.jsonl, and the 4 x 4 orbit representatives in its result.json",
+    "program": "spat.c, compiled by run.py"
+  },
+  "definitions": "For a configuration, its pattern is the set of the eight classes along which the cylinder cover has no hidden assignment (the torus has none whenever a cylinder has none). Only classes odd relative to every fitting twist can appear (Theorem 1 of TRIPLE-SHIELD-20261023-001B-P001); call them the odd classes of the twist. A pattern follows the trichotomy when it is empty, a single class, or the set of all odd classes among the eight; otherwise it is selective. A lone line along c is a configuration whose pattern restricted to (1,0), (0,1), (1,1) is exactly c; it is pure among the eight when its whole pattern is exactly c. Dual pairs are as in TRIPLE-SHIELD-20261023-001A-E001: the two twists odd on c relative to every fitting twist.",
+  "predictions": {
+    "P1_even_classes": "theorem-predicted (TRIPLE-SHIELD-20261023-001B-P001, Theorem 1): no pattern contains a class that is even relative to some fitting twist, on any torus",
+    "P2_two_literal_trichotomy": "theorem-predicted (ticket B of this epic, from Lemmas 2 to 4 of TRIPLE-SHIELD-20261023-001B-P001, which do not use independent coins): no orientation, diagonal-clause or shared-coin placement has a selective pattern, on any torus",
+    "P3_three_place_selective": "scoping-predicted: each of the 12 three-place placements selective on 3 x 3 (54, 62, 109, 110, 111, 125, 147, 151, 155, 159, 203, 215) has a selective pattern on 3 x 4",
+    "P4_lone_lines_impure": "scoping-predicted: on 3 x 4, no lone line of placements 54, 147, 62, 110, 155 or 203 is pure among the eight classes",
+    "P5_pure_lines_differ": "scoping-predicted: on 3 x 4, at least one dual pair of placements 91, 94, 111, 125, 159 or 215 has different counts of lines pure among the eight classes",
+    "reported": "per placement, torus and twist: the histogram of patterns and the number of configurations with an assignment; the selective placements and configurations per family and type; for every dual pair the lone counts and the counts of lines pure among the eight"
+  },
+  "controls": "(i) every row covers all 2^(2LM) configurations (3 x 3, 3 x 4) or exactly 2^22 (4 x 4); (ii) on 3 x 3 and 3 x 4, for every placement and twist, the counts of torus contradictions, cylinder contradictions along (1,0), (0,1), (1,1), lone lines and crosses implied by the patterns equal the frozen record of TRIPLE-SHIELD-20261023-001A-E001",
+  "decision_rule": "If a control fails, the result is invalid. Refuted if P1 or P2 fails. Supported if P1 to P5 hold. Partially supported if P1 and P2 hold and any of P3, P4 or P5 fails; the failures are listed.",
+  "resource_budget": {"wall_seconds": 10800, "memory_mib": 4096, "threads": 24},
+  "stop_rule": "Run the three tori in order, writing rows as each torus finishes; then check the controls and decide. No adaptive extension.",
+  "seeds": "3 x 3 and 3 x 4 are enumerated; 4 x 4 streams are seeded by SHA-256 of (torus, placement, twist, stream)",
+  "environment": "CPython 3 standard library and gcc (C99)",
+  "red_team_r0": [
+    "Eight classes are a finite window: a pattern that follows the trichotomy among the eight may be selective among more classes, and a line pure among the eight may contradict along a longer class. Selectivity found among the eight is certain; purity is relative to the eight.",
+    "P1 and P2 are theorem-predicted; a failure would point to a code error or a gap in the proofs.",
+    "The extra classes use windows of up to 14 bits; the program exits rather than truncate a larger window. The checker certifies sampled configurations with an independent solver.",
+    "4 x 4 is sampled: counts there are estimates, and a selective pattern missing from the sample is not evidence of absence.",
+    "The scoping data are the 3 x 3 torus; P3 to P5 are judged on 3 x 4 only.",
+    "The comparison of pure lines across dual pairs uses symmetry only implicitly: an unequal pair cannot be explained by a symmetry, so P5 needs no symmetry test."
+  ],
+  "nonclaims": [
+    "Exact counts on two small tori and a sample on a third; no asymptotic statement.",
+    "No claim about classes outside the eight, other triangulations or other contacts.",
+    "Lattices and twists are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected patterns, counts or verdicts as inputs to the run"
+  ],
+  "outputs": "artifacts/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/rows.jsonl and result.json"
+}

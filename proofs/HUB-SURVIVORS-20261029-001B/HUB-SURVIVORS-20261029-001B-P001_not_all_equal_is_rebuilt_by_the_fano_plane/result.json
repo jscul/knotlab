@@ -1,0 +1,137 @@
+{
+ "schema_version": 1,
+ "artifact_id": "HUB-SURVIVORS-20261029-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "ok": true,
+  "1 Fano plane and its puncture": {
+   "ok": true,
+   "detail": {
+    "lines": [
+     [
+      0,
+      1,
+      3
+     ],
+     [
+      1,
+      2,
+      4
+     ],
+     [
+      2,
+      3,
+      5
+     ],
+     [
+      3,
+      4,
+      6
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      5,
+      6
+     ],
+     [
+      0,
+      2,
+      6
+     ]
+    ],
+    "no 2-colouring": true,
+    "every line deletion 2-colourable": true,
+    "punctured relation is NAE at every point": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "3": true,
+     "4": true,
+     "5": true,
+     "6": true
+    }
+   }
+  },
+  "2 no NAE rebuild with at most six copies": {
+   "ok": true,
+   "detail": {
+    "gadgets evaluated": {
+     "2": 0,
+     "3": 6,
+     "4": 90,
+     "5": 3374,
+     "6": 199340
+    },
+    "rebuilding gadgets": {
+     "2": 0,
+     "3": 0,
+     "4": 0,
+     "5": 0,
+     "6": 0
+    },
+    "seconds": 19
+   }
+  },
+  "3 no NAE wire with at most six copies": {
+   "ok": true,
+   "detail": {
+    "wire gadgets evaluated": {
+     "2": 1,
+     "3": 14,
+     "4": 342,
+     "5": 14908,
+     "6": 1017014
+    },
+    "wires": {
+     "2": 0,
+     "3": 0,
+     "4": 0,
+     "5": 0,
+     "6": 0
+    },
+    "seconds": 114
+   }
+  },
+  "4 every seven-copy NAE rebuild is a punctured Fano plane": {
+   "ok": true,
+   "detail": {
+    "gadgets evaluated": 17610420,
+    "rebuilding gadgets (labelled)": 90,
+    "not Fano": 0,
+    "seconds": 1982
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "punctured Fano of OR is OR": false,
+    "mutated plane 2-colourable": true,
+    "mutated puncture gives NAE": false,
+    "parity wires found at two copies": 1
+   }
+  },
+  "6 counted fixed point": {
+   "ok": true,
+   "detail": {
+    "completions per leg tuple at point 0": {
+     "000": 0,
+     "001": 5,
+     "010": 5,
+     "011": 5,
+     "100": 5,
+     "101": 5,
+     "110": 5,
+     "111": 0
+    },
+    "5 for every NAE tuple at every point": true
+   }
+  }
+ },
+ "seven_copy_search_run": true,
+ "seconds": 1981.5
+}

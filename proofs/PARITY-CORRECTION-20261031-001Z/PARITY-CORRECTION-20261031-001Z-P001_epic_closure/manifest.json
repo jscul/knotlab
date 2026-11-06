@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-CORRECTION-20261031-001Z-P001",
+  "canonical_id": "PARITY-CORRECTION-20261031-001Z-P001",
+  "kind": "proof",
+  "ticket": "PARITY-CORRECTION-20261031-001Z",
+  "proof": "PARITY-CORRECTION-20261031-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the parity correction",
+  "status": "Proved",
+  "claim": "Ledger closing PARITY-CORRECTION-20261031-001: one line per conclusion with its novelty label and evidence (tickets A and B), the supersession record (ticket R), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PARITY-CORRECTION-20261031-001A",
+    "PARITY-CORRECTION-20261031-001B",
+    "PARITY-CORRECTION-20261031-001R"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, a proof is not Proved, or the record is not Complete.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (proved, closed-null)."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-CORRECTION-20261031-001",
+    "epic_path": [
+      "PARITY-CORRECTION-20261031-001"
+    ],
+    "parents": [
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json",
+      "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json",
+      "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/manifest.json",
+      "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/result.json",
+      "research/PARITY-CORRECTION-20261031-001R/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/manifest.json": "71e60d9524306382f0790416a1d531eded2ae19273b080c75fa85e57d8f78374",
+    "proofs/PARITY-CORRECTION-20261031-001A/PARITY-CORRECTION-20261031-001A-P001_parity_coupling_family_is_hard_except_at_six_points/result.json": "f3978b2c6c627a9ff093990b408b5296e3261d6da0eb65d559b4316a93f1f905",
+    "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/manifest.json": "2d9f5a3953fab4dfa63222fbe78eac016631cf107e3176a63a216af2759601d6",
+    "proofs/PARITY-CORRECTION-20261031-001B/PARITY-CORRECTION-20261031-001B-P001_parity_failing_systems_carry_every_hard_instance/result.json": "35dbf1c23eb21088a2f8736dc3ed48cc8c44f8c917ee2c4750f33755feac6b00",
+    "research/PARITY-CORRECTION-20261031-001R/manifest.json": "044c11eac609f0ca596b5c84da0e8c5c17c9130f6846367477c0fed946ffa1b3"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure",
+    "proof": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PARITY-CORRECTION-20261031-001Z/PARITY-CORRECTION-20261031-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B and the record R; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, Complete record, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session on 2026-10-31, at the owner's request relayed by a peer session."
+  }
+}

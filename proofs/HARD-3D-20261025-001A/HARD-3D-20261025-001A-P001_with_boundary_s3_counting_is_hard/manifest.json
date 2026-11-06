@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HARD-3D-20261025-001A-P001",
+  "canonical_id": "HARD-3D-20261025-001A-P001",
+  "kind": "proof",
+  "ticket": "HARD-3D-20261025-001A",
+  "proof": "HARD-3D-20261025-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "With boundary, counting maps into S3 is #P-hard",
+  "status": "Proved",
+  "claim": "For a connected plane multigraph G, the fin handlebody X_G (one handle per vertex and, for each edge, a thickened torus attached along a curve in the class a_u a_v^-1, the curves drawn disjointly from the plane drawing and its mirror image) is a compact orientable 3-manifold with pi1 = <a_u, t_e | [t_e, a_u a_v^-1]>, so its number of homomorphisms into a finite group H is the sum over y in H^V of the product over edges of |C_H(y_u y_v^-1)|. For H = S3, repeating every edge k times gives an exponential polynomial in k with distinct nodes 6^a 3^b 2^c; interpolation from (m+1)(m+2)/2 values recovers the number of labellings with all edge differences rotations, which is 2 P(G,3). Since counting proper 3-colourings of planar graphs is #P-hard (Vertigan, cited), counting homomorphisms from compact orientable 3-manifold groups into S3 is #P-hard under polynomial-time Turing reductions (triangulating the handle description is standard, cited); for the dihedral group of order 8 the same argument recovers 2^|V| P(G,4).",
+  "dependencies": [],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A plane multigraph whose brute-force homomorphism count of the presentation differs from the centralizer formula.",
+    "A plane multigraph where interpolation in k does not return twice the number of proper 3-colourings, or where the interpolation nodes collide.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "HARD-3D-20261025-001",
+    "epic_path": [
+      "HARD-3D-20261025-001"
+    ],
+    "parents": [
+      "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/manifest.json": "0f8f54d8da59a685c0ea94e72fe104329ba2202ff655d0ea2cd6894f7144b374"
+  },
+  "paths": {
+    "manifest": "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/manifest.json",
+    "identity": "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/identity.json",
+    "directory": "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard",
+    "proof": "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/proof.md",
+    "result": "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/result.json",
+    "check": "proofs/HARD-3D-20261025-001A/HARD-3D-20261025-001A-P001_with_boundary_s3_counting_is_hard/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "boundary_s3_hardness_shown": true
+  },
+  "foundation_claim_scope": "Compact orientable 3-manifolds with boundary built from plane multigraphs; counting homomorphisms into S3 (and the dihedral group of order 8); Turing reductions; hardness of planar colouring and polynomial-time triangulation cited. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) compares the centralizer formula with brute-force homomorphism counts of the presentation, recovers 2 P(G,3) by interpolation on seven plane multigraphs (and 2^|V| P(G,4) for the dihedral group of order 8 on four), confirms distinct nodes and an extra value, and runs four controls. No human or external review",
+    "level": "V1 prose proof with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

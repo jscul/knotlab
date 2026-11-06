@@ -1,0 +1,917 @@
+{
+ "machinery": {
+  "V1_braid_knots": {
+   "rows": {
+    "3_1": {
+     "dims (chi = 3, 2, 6, 4, 5)": [
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     "cp_lib": [
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     "ok": true
+    },
+    "4_1": {
+     "dims (chi = 3, 2, 6, 4, 5)": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "cp_lib": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "ok": true
+    },
+    "5_2": {
+     "dims (chi = 3, 2, 6, 4, 5)": [
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "cp_lib": [
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "ok": true
+    },
+    "6_1": {
+     "dims (chi = 3, 2, 6, 4, 5)": [
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     "cp_lib": [
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "V1b_insertion_knots": {
+   "rows": {
+    "[(1, 1)]": {
+     "N_free3": 938791,
+     "expected": 938791,
+     "ok": true
+    },
+    "[(1, 1), (18, 1)]": {
+     "N_free3": 49735,
+     "expected": 49735,
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "V2_chirality": {
+   "rows": {
+    "framing 1": {
+     "A5 maps": 121,
+     "cp_lib": 121,
+     "ok": true
+    },
+    "framing -1": {
+     "A5 maps": 1,
+     "cp_lib": 1,
+     "ok": true
+    }
+   },
+   "ok": true
+  },
+  "V3_borromean": {
+   "link group S3 maps": 138,
+   "T3 S3 maps": 48,
+   "ok": true
+  },
+  "V4_y_graph_link": {
+   "counts": {
+    "free3": 938791,
+    "H12": 18865,
+    "H13": 18865,
+    "H23": 18865
+   },
+   "ok": true
+  },
+  "T2_winding_calibration": {
+   "rows": {
+    "chi 3, j1d-1: chi^1 x unwound": true,
+    "chi 3, j2d-1: chi^2 x unwound": true,
+    "chi 3, j1d1: chi^-1 x unwound": true,
+    "chi 5, j1d-1: chi^1 x unwound": true,
+    "chi 5, j2d-1: chi^2 x unwound": true,
+    "chi 5, j1d1: chi^-1 x unwound": true
+   },
+   "ok": true
+  },
+  "ok": true,
+  "seconds": 28.1
+ },
+ "rows": {
+  "K2 / base only": {
+   "components": 1,
+   "crossings": 19,
+   "generators": 19,
+   "relators": 20,
+   "min_depth_gap": 0.5924,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 1,
+    "6": 1,
+    "4": 1,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 2401,
+     "H12": 343,
+     "H13": 343,
+     "H23": 49
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 2401,
+     "H12": 343,
+     "H13": 343,
+     "H23": 49
+    }
+   },
+   "seconds": 0.0,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 2401,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 2401,
+    "dims": {
+     "3": 2,
+     "2": 1,
+     "6": 1,
+     "4": 1,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true
+   },
+   "ok": true
+  },
+  "K2 / projector": {
+   "components": 7,
+   "crossings": 1761,
+   "generators": 1761,
+   "relators": 1768,
+   "min_depth_gap": 0.0799,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 1,
+    "6": 1,
+    "4": 1,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 133,
+     "H12": 91,
+     "H13": 91,
+     "H23": 13
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 2401,
+     "H12": 343,
+     "H13": 343,
+     "H23": 49
+    }
+   },
+   "seconds": 24.4,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 133,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 2401,
+    "dims": {
+     "3": 2,
+     "2": 1,
+     "6": 1,
+     "4": 1,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true,
+    "leaves pure": true
+   },
+   "leaf purity": {
+    "l0": {
+     "slot character": 3,
+     "functional by character": {
+      "3": [
+       5,
+       1
+      ],
+      "2": [
+       0
+      ],
+      "6": [
+       0
+      ],
+      "4": [
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "y0": {
+     "slot character": 2,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       4
+      ],
+      "6": [
+       0
+      ],
+      "4": [
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "t0": {
+     "slot character": 6,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0
+      ],
+      "6": [
+       2
+      ],
+      "4": [
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    }
+   },
+   "ok": true
+  },
+  "K2 / reversed windings": {
+   "components": 7,
+   "crossings": 1761,
+   "generators": 1761,
+   "relators": 1768,
+   "min_depth_gap": 0.0799,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 1,
+    "6": 1,
+    "4": 1,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 2401,
+     "H12": 343,
+     "H13": 343,
+     "H23": 49
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 133,
+     "H12": 91,
+     "H13": 91,
+     "H23": 13
+    }
+   },
+   "seconds": 24.2,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 2401,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 133,
+    "dims": {
+     "3": 2,
+     "2": 1,
+     "6": 1,
+     "4": 1,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true
+   },
+   "ok": true
+  },
+  "K2 / unprojected leaves": {
+   "components": 7,
+   "crossings": 107,
+   "generators": 107,
+   "relators": 114,
+   "min_depth_gap": 0.0799,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 1,
+    "6": 1,
+    "4": 1,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 133,
+     "H12": 91,
+     "H13": 91,
+     "H23": 13
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 133,
+     "H12": 91,
+     "H13": 91,
+     "H23": 13
+    }
+   },
+   "seconds": 0.0,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 133,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 133,
+    "dims": {
+     "3": 2,
+     "2": 1,
+     "6": 1,
+     "4": 1,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true
+   },
+   "ok": true
+  },
+  "digon / base only": {
+   "components": 1,
+   "crossings": 32,
+   "generators": 32,
+   "relators": 33,
+   "min_depth_gap": 0.5924,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 2,
+    "6": 2,
+    "4": 2,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 117649,
+     "H12": 2401,
+     "H13": 2401,
+     "H23": 2401
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 117649,
+     "H12": 2401,
+     "H13": 2401,
+     "H23": 2401
+    }
+   },
+   "seconds": 0.2,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 117649,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 117649,
+    "dims": {
+     "3": 2,
+     "2": 2,
+     "6": 2,
+     "4": 2,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true
+   },
+   "ok": true
+  },
+  "digon / projector": {
+   "components": 13,
+   "crossings": 4124,
+   "generators": 4124,
+   "relators": 4137,
+   "min_depth_gap": 0.0676,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 2,
+    "6": 2,
+    "4": 2,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 2737,
+     "H12": 385,
+     "H13": 385,
+     "H23": 385
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 117649,
+     "H12": 2401,
+     "H13": 2401,
+     "H23": 2401
+    }
+   },
+   "seconds": 273.4,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 2737,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 117649,
+    "dims": {
+     "3": 2,
+     "2": 2,
+     "6": 2,
+     "4": 2,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true,
+    "leaves pure": true,
+    "ell_1 and ell_2 proportional on V_zeta (balanced)": true,
+    "y_1, y_2 independent; t_1, t_2 independent": true
+   },
+   "leaf purity": {
+    "l0": {
+     "slot character": 3,
+     "functional by character": {
+      "3": [
+       5,
+       1
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "y0": {
+     "slot character": 2,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0,
+       4
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "t0": {
+     "slot character": 6,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       0,
+       2
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "l1": {
+     "slot character": 3,
+     "functional by character": {
+      "3": [
+       5,
+       1
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "y1": {
+     "slot character": 2,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       4,
+       5
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "t1": {
+     "slot character": 6,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       2,
+       5
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    }
+   },
+   "ok": true
+  },
+  "digon / unbalanced band": {
+   "components": 13,
+   "crossings": 4454,
+   "generators": 4454,
+   "relators": 4467,
+   "min_depth_gap": 0.0676,
+   "H1_invariant_factors": [
+    6
+   ],
+   "clasper_only_H1_factors": [],
+   "psi_well_defined": true,
+   "meridian_psi": 1,
+   "dims": {
+    "3": 2,
+    "2": 2,
+    "6": 2,
+    "4": 2,
+    "5": 2
+   },
+   "sectors": {
+    "psi^1 (zeta, zeta^2, zeta^3)": {
+     "free3": 361,
+     "H12": 169,
+     "H13": 169,
+     "H23": 169
+    },
+    "psi^5 (zeta^5, zeta^4, zeta^3)": {
+     "free3": 117649,
+     "H12": 2401,
+     "H13": 2401,
+     "H23": 2401
+    }
+   },
+   "seconds": 369.4,
+   "expected": {
+    "psi^1 (zeta, zeta^2, zeta^3)": 361,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": 117649,
+    "dims": {
+     "3": 2,
+     "2": 2,
+     "6": 2,
+     "4": 2,
+     "5": 2
+    }
+   },
+   "matches": {
+    "H1 = Z/6": true,
+    "clasper-only H1 trivial": true,
+    "psi well defined and onto": true,
+    "dims": true,
+    "psi^1 (zeta, zeta^2, zeta^3)": true,
+    "psi^5 (zeta^5, zeta^4, zeta^3)": true,
+    "leaves pure": true,
+    "ell_1 and ell_2 proportional on V_zeta (balanced)": true,
+    "y_1, y_2 independent; t_1, t_2 independent": true
+   },
+   "leaf purity": {
+    "l0": {
+     "slot character": 3,
+     "functional by character": {
+      "3": [
+       5,
+       1
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "y0": {
+     "slot character": 2,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0,
+       4
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "t0": {
+     "slot character": 6,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       0,
+       2
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "l1": {
+     "slot character": 3,
+     "functional by character": {
+      "3": [
+       4,
+       4
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "y1": {
+     "slot character": 2,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       4,
+       5
+      ],
+      "6": [
+       0,
+       0
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    },
+    "t1": {
+     "slot character": 6,
+     "functional by character": {
+      "3": [
+       0,
+       0
+      ],
+      "2": [
+       0,
+       0
+      ],
+      "6": [
+       2,
+       5
+      ],
+      "4": [
+       0,
+       0
+      ],
+      "5": [
+       0,
+       0
+      ]
+     },
+     "pure": true
+    }
+   },
+   "ok": true
+  }
+ },
+ "verdict": "supported",
+ "seconds": 917.5
+}

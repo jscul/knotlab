@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-GLUE-20261102-001C-P001",
+  "canonical_id": "HUB-GLUE-20261102-001C-P001",
+  "kind": "proof",
+  "ticket": "HUB-GLUE-20261102-001C",
+  "proof": "HUB-GLUE-20261102-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "An opened hub can create emergence that does not compose",
+  "status": "Proved",
+  "claim": "An opened hub can create emergence that does not compose. Across a simple 3-edge cut of a knot space, remove a line M on the point side. (1) The port patterns that remain are exactly the patterns of the closing line L that the closed point piece H_P allows once M is gone: I = proj_L S(H_P - M). (2) I is a complement-closed set of not-all-equal patterns of L, so it has one of three types: one pair (the hub re-ties in a new pattern and still carries one bit), two pairs (one port is released and the other two stay tied), or all three (the hub becomes a knot on its three points). (3) With one pair the 2-sum of ticket B holds unchanged. With two or three pairs it fails: 2-sum candidates that are not knots, crossing knots outside the 2-sums, crossing knots through a port, and in the 13-point Fano splice crossing knots that no chain of eliminations from one-sided knots produces. (4) A released port never lies on the removed line in the splices checked, and when the removed line holds two ports their tie survives, opposite under L's signs (the knot's signs on the 4-cycle through them). Checked on every splice of two census knot spaces up to 13 points at every line and one point: every removal on the point side.",
+  "dependencies": [
+    "HUB-GLUE-20261102-001B"
+  ],
+  "evidence_modes": [
+    "proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A removal on the point side whose port patterns differ from those the closed point piece allows on its closing line.",
+    "An opened interface of one complementary pair where the crossing knots are not the 2-sums.",
+    "A two-pair interface whose released port lies on the removed line."
+  ],
+  "lineage": {
+    "home_scope": "HUB-GLUE-20261102-001",
+    "epic_path": [
+      "HUB-GLUE-20261102-001"
+    ],
+    "parents": [
+      "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/manifest.json",
+      "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/result.json",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/manifest.json": "b796c75471523a92d571fdb5a60c23a74d189b13199e82a22d309ff572a75b40",
+    "proofs/HUB-GLUE-20261102-001B/HUB-GLUE-20261102-001B-P001_a_held_hub_composes_as_a_two_sum/result.json": "60946595481428a1cc9ab3d66401877b6f4feac181d2cc3db1cc79d09afc6599",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c"
+  },
+  "paths": {
+    "manifest": "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/manifest.json",
+    "identity": "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/identity.json",
+    "directory": "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence",
+    "proof": "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/proof.md",
+    "result": "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/result.json",
+    "check": "proofs/HUB-GLUE-20261102-001C/HUB-GLUE-20261102-001C-P001_an_opened_hub_creates_emergence/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "opened_hub_classified": true
+  },
+  "foundation_claim_scope": "Signed knot systems on knot spaces with a simple 3-edge cut, after removing one line on the point side.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "checked: every splice of two census knot spaces up to 13 points at every line and one point, every removal on the point side; generation by eliminations on the 13-point Fano splice; no human or external review",
+    "novelty": "New here."
+  }
+}

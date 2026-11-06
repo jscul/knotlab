@@ -1,0 +1,182 @@
+{
+  "artifact_id": "SC-TORUS-EXACT-20261022-001A-P001",
+  "checks": {
+    "3x3 s=0 twist=(0, 0)": {
+      "cone_types": {
+        "half-plane": 617,
+        "line": 77,
+        "plane": 241,
+        "ray": 620,
+        "sector": 1146,
+        "zero": 299
+      },
+      "cone_violations": 0,
+      "directions": 16,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 3000,
+      "symmetry_violations": 0
+    },
+    "3x3 s=0 twist=(1, 0)": {
+      "cone_types": {
+        "line": 342,
+        "plane": 126,
+        "zero": 132
+      },
+      "cone_violations": 0,
+      "directions": 12,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 600,
+      "symmetry_violations": 0
+    },
+    "3x3 s=0 twist=(1, 1)": {
+      "cone_types": {
+        "line": 76,
+        "plane": 258,
+        "zero": 266
+      },
+      "cone_violations": 0,
+      "directions": 8,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 600,
+      "symmetry_violations": 0
+    },
+    "3x3 s=1 twist=(0, 0)": {
+      "cone_types": {
+        "half-plane": 119,
+        "line": 15,
+        "plane": 96,
+        "ray": 121,
+        "sector": 350,
+        "zero": 99
+      },
+      "cone_violations": 0,
+      "directions": 16,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 800,
+      "symmetry_violations": 0
+    },
+    "3x3 s=1 twist=(1, 1)": {
+      "cone_types": {
+        "line": 102,
+        "plane": 144,
+        "zero": 154
+      },
+      "cone_violations": 0,
+      "directions": 8,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 400,
+      "symmetry_violations": 0
+    },
+    "3x4 s=0 twist=(0, 0)": {
+      "cone_types": {
+        "half-plane": 195,
+        "line": 49,
+        "plane": 64,
+        "ray": 191,
+        "sector": 241,
+        "zero": 60
+      },
+      "cone_violations": 0,
+      "directions": 16,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 800,
+      "symmetry_violations": 0
+    },
+    "4x3 s=0 twist=(1, 0)": {
+      "cone_types": {
+        "line": 308,
+        "plane": 51,
+        "zero": 41
+      },
+      "cone_violations": 0,
+      "directions": 12,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 400,
+      "symmetry_violations": 0
+    },
+    "4x4 s=0 twist=(0, 0)": {
+      "cone_types": {
+        "half-plane": 140,
+        "line": 26,
+        "plane": 79,
+        "ray": 150,
+        "sector": 316,
+        "zero": 89
+      },
+      "cone_violations": 0,
+      "directions": 16,
+      "lemma_violations": 0,
+      "polar_violations": 0,
+      "samples": 800,
+      "symmetry_violations": 0
+    },
+    "law_identities_5x5": {
+      "P_no_horizontal": 0.2143,
+      "P_positive_horizontal": 0.5197,
+      "P_pure_10": 0.4793,
+      "P_pure_vertical_both": 0.2197,
+      "samples": 3000
+    }
+  },
+  "claim": "For any orientation of a square-lattice torus and any primitive period d, exactly one of: a directed closed walk W with det([W], d) < 0, or a dual directed closed walk of class d. Hence the primitive classes of directed closed walks are exactly the primitive periods of a closed convex cone C, and the dual's are exactly those of its polar; under a twist C is {0}, a line or the plane. For the uniform orientation the law of C is invariant under the polar map and the torus symmetries; on square tori P(no horizontal winding) = P(pure vertical directed cycles both ways), P(positive horizontal winding) = 1 - P(pure horizontal directed cycle), and the conjectured 3/4 is equivalent to P(no directed horizontal winding) = 1/4.",
+  "controls": {
+    "opposite_sign_rejected": true,
+    "untwisted_symmetry_rejected": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "SC-TORUS-EXACT-20261022-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "cone_theorem_proved": true,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "directional_duality_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "half_bit_proved": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "three_quarters_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "SC-TORUS-EXACT-20261022-001A"
+}

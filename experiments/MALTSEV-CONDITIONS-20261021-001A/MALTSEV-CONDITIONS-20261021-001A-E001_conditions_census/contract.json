@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "MALTSEV-CONDITIONS-20261021-001A-E001",
+  "ticket": "MALTSEV-CONDITIONS-20261021-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Do laws that compose like cycles generate congruence n-permutable or congruence modular varieties, and do they all have a polymorphism that is Mal'tsev modulo their tops?",
+  "definitions": {
+    "polymorphism, clone": "operations preserving every relation of the law; the law's polymorphism algebra generates the variety whose congruence conditions are tested",
+    "Hagemann-Mitschke terms": "ternary p1..p_{n-1} with p1(x,y,y) = x, p_i(x,x,y) = p_{i+1}(x,y,y), p_{n-1}(x,x,y) = y; they exist exactly when the variety is congruence n-permutable",
+    "Day terms": "4-ary m0..mn with m0 = first projection, mn = fourth projection, m_i(x,y,y,x) = x, m_i(x,x,u,u) = m_{i+1}(x,x,u,u) for even i, m_i(x,y,y,u) = m_{i+1}(x,y,y,u) for odd i; they exist exactly when the variety is congruence modular",
+    "chain": "a sequence of such terms of any length inside a given finite set of operations, decided by exhaustive search over all ternary or 4-ary polymorphisms of a two-element relation",
+    "top": "the quotient of a range by its unique maximal pp-definable equivalence (MATROID-CONVERSE-20261021-001B-P001, Proposition 6)",
+    "Mal'tsev modulo the tops": "a ternary polymorphism F with F(x,y,y) and x in the same top class, F(x,x,y) and y in the same top class, on every range listed for the law",
+    "laws": "L = g^-1(x+y+z=0 over Z3) with g = (0,1,2,2); K4 = L - (2,2,2); L223 = L - (2,2,3); L233 = L - (2,3,3); K6 = (x+y+z=0 over Z3) x (not exactly two ones) with values 2a+b; K4x4 = (x+y+z+w=0 over Z2) x (the same plus 1000) with values 2a+b"
+  },
+  "public_inputs": {
+    "searches": "a generalized-arc-consistency backtracking solver over operation tables, with a 600-second cap per search",
+    "two_element_clones": "all ternary and 4-ary polymorphisms of a two-element relation, enumerated exhaustively, then breadth-first search for Hagemann-Mitschke and Day chains",
+    "restrictions": "K4, L223, L233 restricted to the class {2,3} of 2~3 (bits: all but 000, all but 001, all but 011); K6 restricted to a fibre {a} x {0,1} (not exactly two ones)",
+    "tops": "2~3 for the lifts on the whole domain, with K4 also exact on its pinned range {0,1,3}; first coordinate for K6 and K4x4; the largest proper equivalence among binary projections of systems of at most two copies is recorded and compared",
+    "dressings": "all eight relations K with not-exactly-two-ones contained in K contained in {0,1}^3",
+    "controls": "x+y+z=0 over Z6 and over Z2xZ2 (Mal'tsev laws that do not compose like cycles); the Boolean neither-knot {000,010,011,101,110}; two-element parity"
+  },
+  "forbidden_inputs": [
+    "no witness is entered by hand: every term found is produced by the solver or the exhaustive enumeration"
+  ],
+  "predictions": {
+    "H1": "K4 has Hagemann-Mitschke terms for n = 3 and none for n = 2",
+    "H2": "L223 and L233 have no Hagemann-Mitschke terms for n = 2..6, and their two-element block clones have neither Hagemann-Mitschke nor Day chains",
+    "H3": "the fibre clone of K6 (not exactly two ones) has neither Hagemann-Mitschke nor Day chains, and K6 has no Hagemann-Mitschke terms for n = 2, 3",
+    "H4": "K4 (exact on {0,1,3}), L223, L233, K6 and K4x4 each have a ternary polymorphism Mal'tsev modulo their tops, and the recorded top equivalence is the largest proper derived equivalence",
+    "H5": "among the eight Boolean dressings, the fibre clones split: at least one has both Hagemann-Mitschke and Day chains and at least one has neither"
+  },
+  "primary_observable": "per law: Hagemann-Mitschke search outcome by n, two-element chain outcomes, Mal'tsev-modulo-tops outcome with the witness table, derived equivalences; per dressing: chain outcomes",
+  "cheapest_meaningful_control": "(C1, C2) x+y+z=0 over Z6 and over Z2xZ2 must have a Mal'tsev polymorphism although they do not compose like cycles; (C3) the Boolean neither-knot must have no Mal'tsev polymorphism, and being simple it is then not Mal'tsev on its top; (C4) two-element parity must show both chains",
+  "independent_check": "check_result.py re-verifies every recorded witness table (polymorphism property and identities) by brute force with its own code, re-enumerates the two-element clones and re-decides the chains with its own search, and recomputes the derived equivalences",
+  "decision_or_followup_rule": "A signal is H1-H5 holding and the controls passing. A law composing like cycles with no polymorphism Mal'tsev modulo its tops within the cap is a candidate counterexample to the conjecture and becomes ticket B's subject.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "Scoping on 2026-10-21 (not evidence): hand-built Hagemann-Mitschke terms for K4 verified; the two-element clones of not-exactly-two-ones and all-but-001 had no chains, all-but-000 had both; K6, K4 and L223 had polymorphisms Mal'tsev modulo their tops.",
+  "stop_rule": "Stop after the declared roster or budget; stop early only on a solver or control failure.",
+  "nonclaims": [
+    "Finite searches on the declared laws only; general statements belong to ticket B.",
+    "A term not found within the cap is not a proof that none exists, except where the exhaustive two-element chain search decides it.",
+    "No claim about native structure, distance or physics."
+  ]
+}

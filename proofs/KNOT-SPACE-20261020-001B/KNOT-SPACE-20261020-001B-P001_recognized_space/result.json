@@ -1,0 +1,283 @@
+{
+  "artifact_id": "KNOT-SPACE-20261020-001B-P001",
+  "checks": {
+    "census_agreement": {
+      "A_predictions": {
+        "S1": true,
+        "S2": true,
+        "S3": false,
+        "S4": true,
+        "S5": false
+      },
+      "A_three_connected_recovered": 39,
+      "C_local": {
+        "sparse": {
+          "graphic_or_cographic": 1,
+          "laws": 120,
+          "three_connected": 3
+        },
+        "three of size six": {
+          "graphic_or_cographic": 0,
+          "laws": 120,
+          "three_connected": 10
+        }
+      },
+      "C_local_verdicts_confirmed_by_search": 13,
+      "C_planarity_agreement": 40,
+      "C_predictions": {
+        "T1": true,
+        "T2": false
+      },
+      "C_three_connected_local_laws": 13
+    },
+    "lemma_parity_circuits": {
+      "circuits_are_dual_supports": 40,
+      "cosets": 40
+    },
+    "proposition_2_gauge_and_tseitin_circuits": {
+      "circuits_are_cycles": 56,
+      "laws": 56,
+      "tseitin_circuits_are_bonds": 14,
+      "tseitin_laws": 14
+    },
+    "theorem_3_recovery_and_twists": {
+      "recovered": 30,
+      "three_connected_graphs": 30,
+      "twists": 8,
+      "twists_identical": 8
+    },
+    "theorem_4_spheres": {
+      "K4": {
+        "cells": [
+          4,
+          6,
+          4,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "W6": {
+        "cells": [
+          7,
+          12,
+          7,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "antiprism 5": {
+        "cells": [
+          10,
+          20,
+          12,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "cube": {
+        "cells": [
+          8,
+          12,
+          6,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "local law written on no graph": {
+        "cells": [
+          9,
+          16,
+          9,
+          true,
+          true,
+          true
+        ],
+        "constraints": 8,
+        "constraints_that_are_faces": 5,
+        "sphere": true,
+        "three_connected": true
+      },
+      "octahedron": {
+        "cells": [
+          6,
+          12,
+          8,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "prism 5": {
+        "cells": [
+          10,
+          15,
+          7,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "stacked 0": {
+        "cells": [
+          7,
+          15,
+          10,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "stacked 1": {
+        "cells": [
+          9,
+          21,
+          14,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "stacked 2": {
+        "cells": [
+          6,
+          12,
+          8,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "stacked 3": {
+        "cells": [
+          7,
+          15,
+          10,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "stacked 4": {
+        "cells": [
+          9,
+          21,
+          14,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      },
+      "stacked 5": {
+        "cells": [
+          7,
+          15,
+          10,
+          true,
+          true,
+          true
+        ],
+        "sphere": true
+      }
+    },
+    "theorem_5_recognition": {
+      "F7 reading fails": true,
+      "F7* reading fails": true,
+      "M(K5) and M(K33) readings succeed": true,
+      "M*(K33) reading fails": true,
+      "M*(K5) reading fails": true,
+      "codes": 80,
+      "reading_against_realization_search": {
+        "agree": 40,
+        "graphic": 24,
+        "three_connected_codes": 40
+      },
+      "spanned_by_minimal_supports": 80
+    }
+  },
+  "claim": "(1) Systems with the same allowed states have the same circuits, knots, knot matroid and readings. (2) A parity law's knot matroid is the column matroid M[C] of its direction code C. (3) A gauge law over any group with at least two elements has the cycles of its graph as circuits (knot matroid M(G)); a Tseitin law has the bonds (M*(G)). (4) For a 3-connected graph, the minimal supports of the cut space whose deletion leaves the matroid connected are exactly the vertex stars, so the allowed states determine the graph; two graphs on one edge set have identical allowed states exactly when they are 2-isomorphic (Whitney), so a twist changes the graph but not the states. (5) For a 3-connected planar graph the dual reading returns the face boundaries of its unique embedding, and the read cells form the 2-sphere. (6) For a parity law whose knot matroid M is 3-connected with at least 4 elements, the reading succeeds exactly when M is graphic and then returns the unique graph whose translated gauge states are the law's; the dual reading succeeds exactly when M is cographic; both exactly when the graph is planar; by Tutte, failure is witnessed by an F7, F7*, M*(K5) or M*(K3,3) minor. (7) So within parity laws a space is recognized, not created: it is read from the allowed states alone and present exactly when the knot matroid is graphic; a local law of 8 random constraints on 16 variables, written on no graph, carries a sphere, and almost every balanced random code carries no graph. Cited remark: on a locally finite infinite graph the Tseitin circuits are the minimal finite cuts with a finite side over all solutions, and the finite bonds within one class of finitely different solutions, whose dual (Bruhn and Diestel) has the circles through the ends as circuits.",
+  "controls": {
+    "a_law_written_on_no_graph_carries_none": {
+      "rejected": true,
+      "sphere_law": true
+    },
+    "allowed_states_determine_the_graph_exactly": {
+      "rejected": true,
+      "twists_with_identical_states": 8
+    },
+    "reading_from_all_minimal_supports": {
+      "cube": false,
+      "rejected": true
+    },
+    "reading_needs_no_three_connectivity": {
+      "graph_three_connected": false,
+      "reading_gives_stars": false,
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "KNOT-SPACE-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "gauge_cycle_matroid_proved": true,
+    "infinite_end_duality_cited": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "presentation_invariance_proved": true,
+    "recovery_up_to_twists_proved": true,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "space_recognized_not_created_proved": true,
+    "sphere_recovery_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "KNOT-SPACE-20261020-001B"
+}

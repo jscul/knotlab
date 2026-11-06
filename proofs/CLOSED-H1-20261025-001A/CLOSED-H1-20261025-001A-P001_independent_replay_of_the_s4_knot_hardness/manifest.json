@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLOSED-H1-20261025-001A-P001",
+  "canonical_id": "CLOSED-H1-20261025-001A-P001",
+  "kind": "proof",
+  "ticket": "CLOSED-H1-20261025-001A",
+  "proof": "CLOSED-H1-20261025-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Independent replay of the S4 knot hardness",
+  "status": "Proved",
+  "claim": "Target: a separately written code path, written in the same session (V1 independence, not external review), confirms the finite claims of BOUNDED-H1-20261025-001A, and a line-by-line audit of its written proof finds no gap. Diagrams: the alternating diagram of a plane graph G built from ports and corners alternates, has 1 + dim B(G) components, and has determinant equal to the spanning-tree count of G. Bicycle law: for G with every edge tripled, the number of S4 transposition colourings, enumerated by brute force from the Wirtinger presentation, equals the sum over vertex potentials phi: V -> Z3 of 2^(c(H_phi) + dim B(H_phi)), with dim B computed as the dimension of the intersection of the cycle and cut spaces. Links: with every edge subdivided first, the count equals 2^-n 4^m Z_Potts(G; 12, 1/2). Knots: substituting the gadget S(e,P(e,S(e,e))) and its odd parallel powers keeps the diagram a knot when the host's spanning-tree count is odd, the brute-force counts of the resulting knots equal the gadget prediction, and the Vandermonde interpolation over odd parallel powers recovers P(H, 12).",
+  "dependencies": [
+    "BOUNDED-H1-20261025-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A rebuilt diagram that does not alternate, or whose number of components or determinant disagrees with the graph.",
+    "A brute-force colouring count that differs from the bicycle-law sum, from 2^-n 4^m Z(G;12,1/2) on a subdivided graph, or from the gadget prediction on a substituted graph.",
+    "A substitution predicted to keep a knot that gives a link, or an interpolation that fails to recover P(H,12).",
+    "A gap in the written proof of BOUNDED-H1-20261025-001A."
+  ],
+  "lineage": {
+    "home_scope": "CLOSED-H1-20261025-001",
+    "epic_path": [
+      "CLOSED-H1-20261025-001"
+    ],
+    "parents": [
+      "proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/manifest.json",
+      "proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/manifest.json": "bcbeb115a79dc9e93d9a1bb7e28cdf9d4c6ad98b7754894bbd32640df7f0a727",
+    "proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/result.json": "6c78c3a962f46f381d02524713f8b3675ac3f834b7e34f735b9d463d3783977a"
+  },
+  "paths": {
+    "manifest": "proofs/CLOSED-H1-20261025-001A/CLOSED-H1-20261025-001A-P001_independent_replay_of_the_s4_knot_hardness/manifest.json",
+    "identity": "proofs/CLOSED-H1-20261025-001A/CLOSED-H1-20261025-001A-P001_independent_replay_of_the_s4_knot_hardness/identity.json",
+    "directory": "proofs/CLOSED-H1-20261025-001A/CLOSED-H1-20261025-001A-P001_independent_replay_of_the_s4_knot_hardness",
+    "proof": "proofs/CLOSED-H1-20261025-001A/CLOSED-H1-20261025-001A-P001_independent_replay_of_the_s4_knot_hardness/proof.md",
+    "result": "proofs/CLOSED-H1-20261025-001A/CLOSED-H1-20261025-001A-P001_independent_replay_of_the_s4_knot_hardness/result.json",
+    "check": "proofs/CLOSED-H1-20261025-001A/CLOSED-H1-20261025-001A-P001_independent_replay_of_the_s4_knot_hardness/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "s4_knot_hardness_replayed": false
+  },
+  "foundation_claim_scope": "Replay of BOUNDED-H1-20261025-001A on the tested diagrams and on its written argument, by a code path written in the same session that imports nothing from the producer's check (V1 independence; not external review). The cited theorems (Rosenstiehl-Read, Vertigan) are not re-proved. No P versus NP claim.",
+  "validation": {
+    "status": "checked: line-by-line audit of the written proof of BOUNDED-H1-20261025-001A (no gap found); check.py (standard library, about 9 minutes, imports nothing from the producer's check) rebuilds alternating diagrams from ports and corners and verifies on 19 plane graphs alternation, 1 + dim B components and determinant = spanning-tree count; brute-force S4 transposition colourings of the Wirtinger presentations (layered enumeration over pairings, then transpositions) equal the bicycle-law sum and the twelve-state sum on 16 tripled graphs, 2^-n 4^m Z(G;12,1/2) on 6 subdivided graphs with 1 + beta1 components, the gadget prediction on 4 gadget knots (up to 1,158,510 colourings); the gadget matrix is 68J + 32I - 8N; odd parallel powers give knots, even ones links; the Vandermonde solve recovers P(H,12) for K4, C5 and the diamond; three controls. Same-session V1 independence; no human or external review",
+    "level": "V1 independent replay with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

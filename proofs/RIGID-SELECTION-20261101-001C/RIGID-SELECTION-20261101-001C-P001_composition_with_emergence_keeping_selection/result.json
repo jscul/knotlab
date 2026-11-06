@@ -1,0 +1,314 @@
+{
+ "artifact_id": "RIGID-SELECTION-20261101-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/manifest.json": "Proved",
+     "proofs/BEYOND-TWO-20261101-001B/BEYOND-TWO-20261101-001B-P001_blurring_makes_counts_hard/result.json": "passed",
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001B/RIGID-SELECTION-20261101-001B-P001_global_failures_that_keep_a_knot/result.json": "passed",
+     "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/manifest.json": "Proved",
+     "proofs/RIGID-SELECTION-20261101-001D/RIGID-SELECTION-20261101-001D-P001_selection_spends_the_top_layer/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the Mal'tsev lift of x - y + z (identities, and phi(m(x,y,z)) = phi(x) - phi(y) + phi(z)) preserves all 32 three-place relations of the blurred law; each of the 64 four-place relations is pp-defined from three-place ones, so it is preserved too": {
+   "info": {
+    "Mal'tsev identities": true,
+    "four-place relations pp-defined (of 64)": 64,
+    "lifts x - y + z": true,
+    "three-place relations preserved (of 32)": 32
+   },
+   "pass": true
+  },
+  "2 on the 6-point four-place space of ticket B (brute force over 5^6): the blurred law fails globally, keeps knots after every line is removed, has the image's constrained sets, and counts as 8 weighted image solutions": {
+   "info": {
+    "blurred assignments": 15625,
+    "constrained sets equal the image's": true,
+    "count = sum over image solutions of 2^(number of zeros)": true,
+    "each kept knot has at most one full-range image variable": true,
+    "fails": true,
+    "global": true,
+    "lines whose removal keeps a knot": 6,
+    "removals": [
+     {
+      "blurred solutions": 93,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 0,
+      "number of knots": 6,
+      "weighted image count": 93
+     },
+     {
+      "blurred solutions": 54,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 1,
+      "number of knots": 6,
+      "weighted image count": 54
+     },
+     {
+      "blurred solutions": 16,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 2,
+      "number of knots": 6,
+      "weighted image count": 16
+     },
+     {
+      "blurred solutions": 48,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 3,
+      "number of knots": 6,
+      "weighted image count": 48
+     },
+     {
+      "blurred solutions": 16,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 4,
+      "number of knots": 6,
+      "weighted image count": 16
+     },
+     {
+      "blurred solutions": 22,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        3
+       ],
+       [
+        0,
+        2,
+        4
+       ]
+      ],
+      "line": 5,
+      "number of knots": 6,
+      "weighted image count": 22
+     }
+    ]
+   },
+   "pass": true
+  },
+  "3 on the 9-point cubic space of ticket B (brute force over 5^9): the blurred law fails globally, keeps knots after line 0 is removed, has the image's constrained sets at every removal, and counts as the weighted image solutions": {
+   "info": {
+    "blurred assignments": 1953125,
+    "constrained sets equal the image's": true,
+    "count = sum over image solutions of 2^(number of zeros)": true,
+    "each kept knot has at most one full-range image variable": true,
+    "fails": true,
+    "global": true,
+    "lines whose removal keeps a knot": 1,
+    "removals": [
+     {
+      "blurred solutions": 600,
+      "image solutions": 8,
+      "knots": [
+       [
+        0,
+        3,
+        4
+       ],
+       [
+        0,
+        4,
+        5
+       ],
+       [
+        1,
+        3,
+        4
+       ]
+      ],
+      "line": 0,
+      "number of knots": 10,
+      "weighted image count": 600
+     },
+     {
+      "blurred solutions": 12,
+      "image solutions": 4,
+      "knots": [],
+      "line": 1,
+      "number of knots": 0,
+      "weighted image count": 12
+     },
+     {
+      "blurred solutions": 13,
+      "image solutions": 4,
+      "knots": [],
+      "line": 2,
+      "number of knots": 0,
+      "weighted image count": 13
+     },
+     {
+      "blurred solutions": 12,
+      "image solutions": 4,
+      "knots": [],
+      "line": 3,
+      "number of knots": 0,
+      "weighted image count": 12
+     },
+     {
+      "blurred solutions": 30,
+      "image solutions": 4,
+      "knots": [],
+      "line": 4,
+      "number of knots": 0,
+      "weighted image count": 30
+     },
+     {
+      "blurred solutions": 30,
+      "image solutions": 4,
+      "knots": [],
+      "line": 5,
+      "number of knots": 0,
+      "weighted image count": 30
+     },
+     {
+      "blurred solutions": 27,
+      "image solutions": 8,
+      "knots": [],
+      "line": 6,
+      "number of knots": 0,
+      "weighted image count": 27
+     },
+     {
+      "blurred solutions": 14,
+      "image solutions": 4,
+      "knots": [],
+      "line": 7,
+      "number of knots": 0,
+      "weighted image count": 14
+     },
+     {
+      "blurred solutions": 172,
+      "image solutions": 8,
+      "knots": [],
+      "line": 8,
+      "number of knots": 0,
+      "weighted image count": 172
+     }
+    ]
+   },
+   "pass": true
+  },
+  "4 every three-place relation of the blurred law has a count matrix (pairs against the number of completions) of rank 4, against rank 1 for signed Z4: the blurred law is not strongly balanced, so counting it is #P-complete (Dyer-Richerby)": {
+   "info": {
+    "blurred ranks": {
+     "4": 32
+    },
+    "signed Z4 ranks": {
+     "1": 32
+    }
+   },
+   "pass": true
+  },
+  "5 on 300 random blurred systems: failure is decided by linear algebra over Z4 on the image (agrees with brute force), and circuit elimination holds (for circuits C1, C2 sharing e, (C1 u C2) - e is constrained)": {
+   "info": {
+    "agree (of 300)": 300,
+    "circuit pairs tested": 864,
+    "failing": 116,
+    "violations": 0
+   },
+   "pass": true
+  }
+ },
+ "claim": "A law that composes like cycles and selects spaces that keep a knot. Blurred signed Z4 on five values replaces each relation x +- y +- z (+- w) = c of signed Z4 by its preimage under phi, which sends 0 and 1 to 0 and 2, 3, 4 to 1, 2, 3. (1) It composes like cycles: its systems have exactly the constrained sets of their images (BEYOND-TWO B), which are systems of Z4's coset law, and that law composes like cycles (KNOT-CIRCUITS Theorem 1); a Mal'tsev lift of x - y + z preserves it. (2) It fails exactly where its image fails, so its failures are recognised by linear algebra over Z4, and on the two spaces of ticket B it fails globally. (3) It keeps knots inside them: after any line of the 6-point space is removed, and after line 0 of the 9-point cubic space (brute force over 5^6 and 5^9 assignments). (4) Its count matrices have rank 4 while Z4's have rank 1, so it is not strongly balanced and counting it is #P-complete (Dyer-Richerby). (5) After a removal, its count on these spaces is a sum over the 8 solutions of the image, each weighted by 2 to the number of its zeros. (6) By ticket D the knots it keeps are pulled back from lower-layer knots of Z4: each has at most one variable whose image takes all four values, and hides at most one digit. So composing like cycles does not force rigid selection: a law that composes natively, selects globally, counts hard and keeps emergence inside its selected spaces exists at five values, and what it keeps lives below its top layer. At two values the two exclude each other: a law that composes like cycles and has knots is affine (KNOT-CIRCUITS Theorem 2), hence rigid (ticket D), while the knot keeps knots inside its selected spaces (BEYOND-TWO C).",
+ "kind": "proof",
+ "proof": "RIGID-SELECTION-20261101-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "RIGID-SELECTION-20261101-001C"
+}

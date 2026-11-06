@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "EMERGENCE-BITS-20261021-001B-P001",
+  "canonical_id": "EMERGENCE-BITS-20261021-001B-P001",
+  "kind": "proof",
+  "ticket": "EMERGENCE-BITS-20261021-001B",
+  "proof": "EMERGENCE-BITS-20261021-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "How emergence adds up",
+  "status": "Proved",
+  "claim": "For relations on bits, with logical emergence E: (1) joining two relations with all pairs free at one visible distinction gives E(R) + E(S) - log2(1 + bR bS), bR and bS the mean signs of the shared distinction, so visible parity chains hold one bit per knot; (2) forgetting coordinates never creates emergence from clauses of at most two literals, but the cyclic join of three copies of {000, 011, 101}, a least set of a pairwise energy, projects to parity (E = I = 1); (3) a ring of m >= 3 copies of a link with forgotten joints has E = -log2(1 - ((a+b)^m - (a-b)^m)/2), a and b the shares of identity and swap transfers, and a chain with visible ends has E = -log2(1 - z_m/4); both equal 1 at every length for parity and decay geometrically for every other link; (4) a law whose polymorphisms are all affine defines one-bit parity knots of every even size, while every other law's knots on N distinctions exclude at most N points and hold at most -log2(1 - N/2^N) bits; (5) on a simple graph with a knot link on every edge, hidden joints and visible spokes, E = -log2 Pr[the induced two-literal instance is satisfiable] <= b1 with equality exactly for parity, E is superadditive over edge-disjoint subgraphs (so a frustrating patch makes emergence grow with area), E = 0 for links with a common vacuum and for not-all-equal on bipartite graphs, and on a torus grid with an odd side not-all-equal recolours into uniformly random implications plus monotone seam clauses.",
+  "dependencies": [
+    "EMERGENCE-BITS-20261021-001A",
+    "BASE-THREE-20261021-001B",
+    "KNOT-LOOPS-20261019-001B",
+    "LOOP-HOMOLOGY-20261021-001A",
+    "KNOT-COMPETITION-20261019-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A placement of two three-variable knots where the join formula fails or a pair of the join is constrained.",
+    "A projection of a majority-closed relation with positive emergence, or a gadget that is not a least set or does not project to parity.",
+    "A link whose ring disagrees with the formula, whose transfers are all permutations without being parity, a non-parity link whose chain does not decay, or a set of tables whose semigroup avoids the all-ones table outside the three families.",
+    "A conjunction- or disjunction-closed knot on three or four bits outside the stated shapes or above the bound.",
+    "A (link, graph) case with E above the cycle rank, a non-parity link reaching it, a vacuum link or a bipartite not-all-equal network with positive emergence, or a torus sample where the recoloured network disagrees.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "EMERGENCE-BITS-20261021-001",
+    "epic_path": [
+      "EMERGENCE-BITS-20261021-001"
+    ],
+    "parents": [
+      "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/manifest.json",
+      "proofs/BASE-THREE-20261021-001B/BASE-THREE-20261021-001B-P001_regime_carriers/manifest.json",
+      "proofs/KNOT-LOOPS-20261019-001B/KNOT-LOOPS-20261019-001B-P001_ring_theorem/manifest.json",
+      "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/manifest.json",
+      "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/manifest.json": "6b020eafd729225d16fdb6b06ca4d0ab49f16bf3fc3fdc3e862518ae0f14c751",
+    "proofs/BASE-THREE-20261021-001B/BASE-THREE-20261021-001B-P001_regime_carriers/manifest.json": "46fe3b84a80ae39b11c915d2622689cb5f496b86e1992a3ebd2b7007084b5221",
+    "proofs/KNOT-LOOPS-20261019-001B/KNOT-LOOPS-20261019-001B-P001_ring_theorem/manifest.json": "142e426cefadd223f1477e61254dbf785d2ab4f2144019ba8fea19d20699ce89",
+    "proofs/LOOP-HOMOLOGY-20261021-001A/LOOP-HOMOLOGY-20261021-001A-P001_loop_homology/manifest.json": "e3d905678143ccd861e10874a0393b73e910879d20fbb5682733775eec59464c",
+    "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json": "bf8af759dace62852e5d35c8107432edd2cabdb3a52cfaadedd460bc0c650ff1"
+  },
+  "paths": {
+    "manifest": "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/manifest.json",
+    "identity": "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/identity.json",
+    "directory": "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting",
+    "proof": "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/proof.md",
+    "result": "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/result.json",
+    "check": "proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "visible_join_formula_proved": true,
+    "forgetting_statements_proved": true,
+    "chain_ring_dichotomy_proved": true,
+    "long_knot_dichotomy_proved": true,
+    "network_cycle_rank_bound_proved": true,
+    "torus_recolouring_proved": true
+  },
+  "foundation_claim_scope": "How the emergence of systems of knots on bits adds up under joining, forgetting, chains, rings, laws and networks with hidden joints. No space, no metric, no physics.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies all 10,404 visible joins, forgetting on all 4,169 majority-closed relations on four bits and 271 random pairwise systems, the parity gadget by exact feasibility, rings and chains of all 204 placed three-variable links and all 742 four-variable knots, the semigroup step over all 127 sets of tables, the long-knot shapes on three and four bits, 1,836 (link, graph) network cases plus the Petersen graph, superadditivity examples and 600 torus recolouring samples; six controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and sampled checks; the ring theorem, the full-product dichotomy, Post's lattice via BASE-THREE-20261021-001B-P001, the Galois connection and limited backtracking for two-literal instances are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "known-overlap-found for projections of majority-closed relations and for the ring and chain decay (the ring theorem and the full-product dichotomy, restated in bits); candidate-local-delta for the cycle-rank bound with equality only for parity, superadditivity as emergence accounting, the long-knot dichotomy in laws, the torus recolouring, and the correction that non-parity links can hold many bits in large networks.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

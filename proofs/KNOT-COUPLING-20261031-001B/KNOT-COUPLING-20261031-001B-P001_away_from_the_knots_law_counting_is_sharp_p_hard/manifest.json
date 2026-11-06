@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "KNOT-COUPLING-20261031-001B-P001",
+  "canonical_id": "KNOT-COUPLING-20261031-001B-P001",
+  "kind": "proof",
+  "ticket": "KNOT-COUPLING-20261031-001B",
+  "proof": "KNOT-COUPLING-20261031-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Away from the knot's law, counting on the knot's spaces is #P-hard",
+  "status": "Proved",
+  "claim": "Counting on the knot's spaces (connected non-2-colourable cubic triple systems) with weight lam per monochromatic line is #P-hard under Turing reductions at every coupling lam0 not in {1, -3} at which some atom has alpha + beta != 0 and rho^2 of infinite order: from a plain system G with Pfaffian incidence graph and a Pfaffian negation set O, the knot's spaces G_ij (2i atoms on each incidence off O, 2j + 1 on O) give Q(rho^2i, rho^2j), and bivariate interpolation returns #col(G) (Theorem 4 of PLAIN-COUNT-20261031-001A). With ticket A this covers every real lam0 outside {0, 1, -1, -3}, and the same holds with one line deleted (deficiency one). The excluded couplings are polynomial on knot's spaces: lam = 0 (zero; with one line deleted, Theorem 1 of the note), 1, -1 (a quadratic exponential sum over GF(2)), oo (linear algebra) and -3 ((-2)^n |det|, the dimer coupling). Checked end to end: #col of two planar and one non-planar Pfaffian source recovered exactly from counts of knot's spaces at real, negative and complex couplings, with Fano and splice atoms, and from deficiency-one knot's spaces. Deficiency one at lam = -3 is left open.",
+  "dependencies": [
+    "KNOT-COUPLING-20261031-001A",
+    "PLAIN-COUNT-20261031-001A",
+    "COUNT-NOTE-20261031-001"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A recovered colouring count that differs from the true count, or an oracle instance that is colourable or disconnected.",
+    "A real coupling outside {0, 1, -1, -3} where every atom degenerates (contradicting ticket A).",
+    "A tractable-coupling algorithm that disagrees with the counter."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-COUPLING-20261031-001",
+    "epic_path": [
+      "KNOT-COUPLING-20261031-001"
+    ],
+    "parents": [
+      "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json",
+      "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/manifest.json",
+      "proofs/COUNT-NOTE-20261031-001/COUNT-NOTE-20261031-001-P001_note/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json": "7273b54abdf8a359005e7248494739a52e4daca11840441cda0ab7da49cc0450",
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json": "57d224add083c26cb78cbc829a3385deb8a4a15a6eee98f7095d4ee1ac28591b",
+    "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/manifest.json": "5bd248b9fed4bf20351738b54e67132c74d059bee5b7f8c312c2b439fa4c2e68",
+    "proofs/COUNT-NOTE-20261031-001/COUNT-NOTE-20261031-001-P001_note/manifest.json": "1c57a0cd2013c63a57798ab235bf60125064abac7e70a61f978a869512e3628a"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json",
+    "identity": "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/identity.json",
+    "directory": "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard",
+    "proof": "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/proof.md",
+    "result": "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json",
+    "check": "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "knot_coupling_dichotomy_real_shown": true
+  },
+  "foundation_claim_scope": "A complexity dichotomy for counting on the knot's spaces at real couplings; complex couplings are ticket C.",
+  "validation": {
+    "status": "checked: instances are knot's spaces; the oracle identity against a direct even-subgraph sum; six end-to-end recoveries (three sources, four couplings, two atoms) with an independent counter; deficiency one end to end; the tractable couplings by their algorithms; controls; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "the reduction pattern (gadget plus interpolation from a hard point) is standard; the dichotomy on the knot's spaces and its two singled-out couplings: no overlap found yet (literature check at closure)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31; the end-to-end code shares no code with ticket A."
+  }
+}

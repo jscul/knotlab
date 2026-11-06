@@ -1,0 +1,121 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RELAY-NET-20261104-001A-P001",
+  "canonical_id": "RELAY-NET-20261104-001A-P001",
+  "kind": "proof",
+  "ticket": "RELAY-NET-20261104-001A",
+  "proof": "RELAY-NET-20261104-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Arc signals and repeaters",
+  "status": "Proved",
+  "claim": "Arc signals and repeaters. After a frozen hop an opened handle's relay arrives at the next 3-edge cut as an arc signal: two ports fixed and disagreeing, the third free. (1) The arc lemma: an arc signal on ports a and b freezes a line exactly when the line has a corner on the own arc between a and b. Sufficiency is proved from the reading lemma (both classes bar that arc, and z_a fixes its points); the converse holds on a ladder, a prism, the 16- and 64-point grids, a grown space and a thick tube (160 of 160 on-arc cases frozen, 0 of 3,542 off-arc cases), with 32 junction exceptions on a ladder arm spliced onto a grid. So a station passes an arc signal on exactly when its out-line has a corner on the signal's arc. (2) Repeaters (validated pipeline): along an aligned chain of three strip stations with separated cuts, every ring point's signal leaves every station unchanged (32, 16 or 0 live pins at each cut); along a misaligned chain no live pin survives past the first station. (3) Depth: in 21 chain configurations (strips, 16-point grids and cubes, every out-cut placement), wherever a station's cuts are separated every creation k cuts from the ring passed cut k as a live signal; aligned configurations carry the relay four cuts into the final grid, misaligned ones stop within two; a live signal reaching the final grid creates there in 20 of 44 cases, as creation also needs the claim rule. Where a station's two cuts are three steps apart a line meets both, and a relay can pass a lost signal.",
+  "dependencies": [
+    "STRIP-RELAY-20261103-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "On a generic piece, an arc signal leaving a line with a corner on its arc unfrozen, or freezing a line off its arc.",
+    "On the aligned chain, a ring point whose live pins change from cut to cut; on the misaligned chain, a live pin past the first station.",
+    "A creation k cuts from the ring (k >= 2) without a live signal at cut k."
+  ],
+  "lineage": {
+    "home_scope": "RELAY-NET-20261104-001",
+    "epic_path": [
+      "RELAY-NET-20261104-001"
+    ],
+    "parents": [
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py",
+      "proofs/STRIP-RELAY-20261103-001C/STRIP-RELAY-20261103-001C-P001_rigid_strips_relay_a_handle/manifest.json",
+      "proofs/STRIP-RELAY-20261103-001C/STRIP-RELAY-20261103-001C-P001_rigid_strips_relay_a_handle/result.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json": "f29b57c76d0fe81b8840932311a77204be4b20c62af8b857e722857ae68ab188",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json": "f4482c7572bb99bd43fd8a6e7d3de0b0882246f397cf3ea1fc3befb242cbd1f0",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py": "0748e21df9761fdd6ba98a9ac11dd9e60b19e574bf38ba81ff5ffd8b8f15c6f9",
+    "proofs/STRIP-RELAY-20261103-001C/STRIP-RELAY-20261103-001C-P001_rigid_strips_relay_a_handle/manifest.json": "408cd49e73857f40b31044787ea2959b80a6d366a856fa320cbd1f4e929841ce",
+    "proofs/STRIP-RELAY-20261103-001C/STRIP-RELAY-20261103-001C-P001_rigid_strips_relay_a_handle/result.json": "d2189e9ffe36fc3f562af7acf40bc7c7c2d61077a195c0059f5ffdd1e01fa6aa",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json": "494f9947dd2901c987c9e40297b028776e803ad56b6ae051bc209ac0ab7abfe2",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json": "01ed653b9d0aedcc186c1835a975f6d437946046546eff58baeadf507e285f39",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py": "55bf8bb3096978270faf9728d4baf4e8529419ae751af66c7bb32cb21bb8c98f",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1"
+  },
+  "paths": {
+    "manifest": "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/manifest.json",
+    "identity": "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/identity.json",
+    "directory": "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters",
+    "proof": "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/proof.md",
+    "result": "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/result.json",
+    "check": "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "arc_signals_checked": true
+  },
+  "foundation_claim_scope": "Point splits of ladders, prisms, grids, grown spaces, thick tubes and a ladder arm on a grid; chains grid <- three stations <- ring of strips, grids and cubes with every out-cut placement; the Fano plane as handle; four census far sides.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-04.",
+    "status": "arc lemma: sufficiency proved from the reading lemma, converse computed; signals and depths computed with the validated pipeline; no human or external review",
+    "novelty": "New here."
+  }
+}

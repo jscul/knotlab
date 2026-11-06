@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PATTERN-3D-20261025-001A-P001",
+  "canonical_id": "PATTERN-3D-20261025-001A-P001",
+  "kind": "proof",
+  "ticket": "PATTERN-3D-20261025-001A",
+  "proof": "PATTERN-3D-20261025-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The moves force a groupoid",
+  "status": "Proved",
+  "claim": "For a counting law on ordered triangulations whose triangle rule is the graph of a partial operation on a finite label set: (1) triangles lying in no allowed tetrahedron never enter a move identity, for any triangle rule; (2) the law satisfies the ordered 2-3 and 1-4 identities with positive constants exactly when its remaining triangles are the composable triples of a finite groupoid whose components share the value objects times vertex-group order, and then lambda = 1 and mu is that value; the objects are recovered as the idempotent labels; (3) the normalized count on a closed connected oriented three-manifold is the sum over components of |Hom(pi1(M), G_i)|/|G_i|. So deterministic laws see a three-manifold exactly through the numbers of homomorphisms of its fundamental group into finite groups; by cited group theory, through its finite quotients, so lens spaces of equal order and the pairs of Funar and Hempel are never separated.",
+  "dependencies": [],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A partial operation on at most three labels whose law survives while its reduced triangles are not a groupoid with equal component values, or a groupoid of that kind whose law fails an identity.",
+    "A groupoid with up to eight arrows and equal component values that fails an identity, or whose constants differ from lambda = 1 and mu = objects times group order.",
+    "A sampled ordered triangulation whose groupoid count differs from mu^V times the sum of |Hom(H1(M), G_i)|/|G_i| for abelian vertex groups.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "PATTERN-3D-20261025-001",
+    "epic_path": [
+      "PATTERN-3D-20261025-001"
+    ],
+    "parents": [
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json",
+      "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json": "c726ce5f6bd7ef51a27f6e9972b979fc0b43c7ba8008b2944acbc184a20fd30a",
+    "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json": "9f298e54aae39808118ecd96c19d0e425d1f4402fafd04ef56c063a039a63be6"
+  },
+  "paths": {
+    "manifest": "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/manifest.json",
+    "identity": "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/identity.json",
+    "directory": "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid",
+    "proof": "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/proof.md",
+    "result": "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/result.json",
+    "check": "proofs/PATTERN-3D-20261025-001A/PATTERN-3D-20261025-001A-P001_the_moves_force_a_groupoid/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "moves_force_groupoid_shown": true
+  },
+  "foundation_claim_scope": "Ordered triangulations of closed orientable three-manifolds; pure counting laws whose triangle rule is a partial operation on a finite label set, every size by proof, at most three labels exhaustively by computation. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof for every finite label set; check.py (standard library) tests all 262,227 partial operations on one to three labels (3,902 survivors, every one reducing to a groupoid with lambda = 1 and mu = objects x group order, and the 8 groupoid tables surviving), 26 groupoids with up to eight arrows including S3, D4 and Q8, six controls that must fail, the count formula on 40 sampled ordered triangulations, and the reduction lemma on 361 rules. No human or external review",
+    "level": "V1 prose proof with exhaustive finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-25."
+  }
+}

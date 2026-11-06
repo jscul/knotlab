@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "WALLS-WITH-CHOICES-20261024-001D-P001",
+  "canonical_id": "WALLS-WITH-CHOICES-20261024-001D-P001",
+  "kind": "proof",
+  "ticket": "WALLS-WITH-CHOICES-20261024-001D",
+  "proof": "WALLS-WITH-CHOICES-20261024-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Good walls that repeat themselves",
+  "status": "Proved",
+  "claim": "For placement 159 on the 3 x 4 torus in twist 11, three certified configurations (7860857, 7985754, 6433130) have an assignment along an odd class ((2, 1), (0, 1), (1, 2)) on a cyclic cover of 3, 3 or 5 sheets, while none of the 692, 244 or 374 simple cycles of the wall graph passes the criterion of the wall theorem. So every good closed walk visits a wall state twice; the crossing wall of the cover assignment is one, with class (3, 3), (-3, -3) or (-3, -1), and rebuilds an assignment alone. Simple cycles are an incomplete decider for the honeycomb contacts with a free place.",
+  "dependencies": [
+    "WALLS-WITH-CHOICES-20261024-001A",
+    "WALLS-WITH-CHOICES-20261024-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A witness whose cylinder has no assignment, or one with a simple cycle passing the criterion.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "WALLS-WITH-CHOICES-20261024-001",
+    "epic_path": [
+      "WALLS-WITH-CHOICES-20261024-001"
+    ],
+    "parents": [
+      "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/manifest.json",
+      "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/result.json",
+      "experiments/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/contract.json",
+      "artifacts/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/manifest.json": "7431f1c1d2dd788209e0de45b9e7e5afd6db2024e89c125a44addee682124850",
+    "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/result.json": "9dfdb7e7dab743e130d2729e6bf0ac1b572f9151a8a94246b996d17447b58ae1",
+    "experiments/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/contract.json": "38d19bf7ea919135800c4d3e1e12ca77ed9878538d08079ae35f98db2ea3e89c",
+    "artifacts/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/result.json": "cf29680d6b379939ae00863ad60069931d97fe88cadb07b48ed4cce34d1a4da5"
+  },
+  "paths": {
+    "manifest": "proofs/WALLS-WITH-CHOICES-20261024-001D/WALLS-WITH-CHOICES-20261024-001D-P001_repeating_walls/manifest.json",
+    "identity": "proofs/WALLS-WITH-CHOICES-20261024-001D/WALLS-WITH-CHOICES-20261024-001D-P001_repeating_walls/identity.json",
+    "directory": "proofs/WALLS-WITH-CHOICES-20261024-001D/WALLS-WITH-CHOICES-20261024-001D-P001_repeating_walls",
+    "proof": "proofs/WALLS-WITH-CHOICES-20261024-001D/WALLS-WITH-CHOICES-20261024-001D-P001_repeating_walls/proof.md",
+    "result": "proofs/WALLS-WITH-CHOICES-20261024-001D/WALLS-WITH-CHOICES-20261024-001D-P001_repeating_walls/result.json",
+    "check": "proofs/WALLS-WITH-CHOICES-20261024-001D/WALLS-WITH-CHOICES-20261024-001D-P001_repeating_walls/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "simple_cycles_insufficient_shown": true
+  },
+  "foundation_claim_scope": "Twisted fair worlds on triangular tori with cylinder covers; exact statements and finite computations. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, with the wall graph and cover machinery of WALLS-WITH-CHOICES-20261024-001A-P001) certifies the three cover assignments clause by clause, traces each crossing wall, verifies its moves, the criterion and its repeated states, rebuilds an assignment from the walk alone, and enumerates every simple cycle without a cap; one control. No human or external review",
+    "level": "V1 prose proof with certified finite witnesses",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

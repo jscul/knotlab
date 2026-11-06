@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SPACE-SELECTION-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 the pencil through the knot and its sector form": {
+   "ok": true,
+   "detail": {
+    "q = sin3t/sint = 1 + 2cos2t": true,
+    "(-1)^a sin(theta E)/sin(theta) = K + q M and its sector form, all eight states": true,
+    "(-1)^a cos(theta E)/cos(theta) = (-1)^a NAE + p (-1)^a [a=b=c], p = 2cos2t - 1": true,
+    "sine_q = -(s_a s_b s_c) cosine_(-q)": true,
+    "sine_q = -(s_b s_c) plain_(-q)": true,
+    "q = 0 is signed NAE (-1)^a (E|3)": true
+   }
+  },
+  "2 flip parity is automatic; the cosine wave needs an odd number of triangles": {
+   "ok": true,
+   "detail": {
+    "gadget counts n = 1..4": [
+     1,
+     0,
+     30,
+     1293
+    ],
+    "gadget count n = 5": 73326,
+    "sum of base incidences = n - 1 and n + N_odd odd (all gadgets n <= 5)": true,
+    "standing wave corner relation flip-invariant (n = 3, 4)": true,
+    "cosine corner relation has flip parity (-1)^n (n = 3, 4)": true,
+    "cosine wave exact on n = 4 gadgets (generic or at integer p)": 0
+   }
+  },
+  "3 exactness is the vanishing of the six mixed sector sums": {
+   "ok": true,
+   "detail": {
+    "det of the eight sector functions": "(zeta - 1)**12*(zeta + 1)**12*(zeta**2 + 1)**12/zeta**24",
+    "vanishes exactly when zeta^4 = 1": true,
+    "generic exactness <=> six mixed sector sums vanish identically (all gadgets n <= 4)": true,
+    "Z(+++) = zeta^(3n-3) + lower terms, and Z(-eps) = -Z(eps)": true,
+    "lambda monic of degree n - 1 on the generic-exact gadgets": [
+     true,
+     187
+    ]
+   }
+  },
+  "4 locking and balanced cancellation suffice; neither is necessary": {
+   "ok": true,
+   "detail": {
+    "locked or balanced => exact (all gadgets n <= 4)": true,
+    "locked at pi/k => exact at q = 1 + 2cos(2pi/k) where lambda != 0": true,
+    "generic-exact by mechanism": {
+     "n=1 lock": 1,
+     "n=3 lock": 14,
+     "n=4 balanced": 80,
+     "n=4 lock": 92
+    },
+    "Sierpinski gadget: mechanism, lambda": [
+     "lock",
+     "generic",
+     [
+      -1,
+      0,
+      1
+     ]
+    ],
+    "twin gadget (A,B,v3)(v4,v5,C)(v3,v4,v6)(v4,v5,v6): mechanism, exact, flip parity odd": [
+     "balanced",
+     "generic",
+     true
+    ],
+    "6-triangle gadget (linear False): mixed sums vanish, generic exact, mechanism": [
+     true,
+     "generic",
+     "algebraic"
+    ],
+    "7-triangle gadget (linear True): mixed sums vanish, generic exact, mechanism": [
+     true,
+     "generic",
+     "algebraic"
+    ]
+   }
+  },
+  "5 exact gadgets compose under substitution (lambda multiplies)": {
+   "ok": true,
+   "detail": {
+    "SG o_0 twin": [
+     6,
+     "generic",
+     true
+    ],
+    "SG o_2 twin": [
+     6,
+     "generic",
+     true
+    ],
+    "twin o_3 SG": [
+     6,
+     "generic",
+     true
+    ],
+    "twin o_1 SG": [
+     6,
+     "generic",
+     true
+    ],
+    "level-2 Sierpinski gadget: triangles, kind, lambda = (q^2-1)^4": [
+     9,
+     "generic",
+     true
+    ]
+   }
+  },
+  "6 interference: a nonnegative NAE law needs at least 7 triangles, the signed knot 3": {
+   "ok": true,
+   "detail": {
+    "every 3-graph with <= 9 edges on <= 6 vertices is 2-colourable": true,
+    "7-edge non-2-colourable 3-graphs on 7 vertices, by degree sequence": {
+     "(3, 3, 3, 3, 3, 3, 3)": 30
+    },
+    "plain NAE exact on gadgets with n = 3, 4": 0,
+    "signed NAE on the Sierpinski gadget: exact, lambda(0)": [
+     true,
+     -1
+    ]
+   }
+  },
+  "7 tadpoles keep exactness and corner growth: growth exponents are unbounded": {
+   "ok": true,
+   "detail": {
+    "h(s_p) constant, h(q)": [
+     true,
+     "(q - 1)*(q + 1)*(q**2 + 3)"
+    ],
+    "SG with 1 Pasch tadpole(s): triangles, linear, kind, lambda = lambda_SG h^1, growth, exponent": [
+     7,
+     true,
+     "generic",
+     true,
+     2.0,
+     2.8074
+    ],
+    "SG with 2 Pasch tadpole(s): triangles, linear, kind, lambda = lambda_SG h^2, growth, exponent": [
+     11,
+     true,
+     "generic",
+     true,
+     2.0,
+     3.4594
+    ]
+   }
+  },
+  "8 at the knot angle a three-fold contact acts on the sectors as the NAE knot": {
+   "ok": true,
+   "detail": {
+    "three triangles, odd base count: f = -i sqrt3 s1 s2 s3 NAE(s1, s2, s3)": true,
+    "two triangles, odd base count: f = 0 iff the sectors differ": true,
+    "even base count at pi/3 never vanishes (degree <= 5)": true,
+    "generic angle: odd S never a zero (degree <= 5)": true
+   }
+  },
+  "9 controls fire": {
+   "ok": true,
+   "detail": {
+    "a non-exact 3-gadget has a nonzero mixed sector sum": true,
+    "the eight sector functions are dependent at zeta = i": true,
+    "a perturbed law is not exact on the Sierpinski gadget": true,
+    "object and int64 summation agree on the twin gadget": true
+   }
+  },
+  "ok": true,
+  "seconds": 17.2
+ }
+}

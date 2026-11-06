@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-SPACE-20261020-001A-E001",
+  "ticket": "KNOT-SPACE-20261020-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "From allowed states alone, does a law's knot matroid recover the graph (or sphere) the law is written on, how ambiguously, and do local laws written on no graph carry graphs?",
+  "definitions": {
+    "allowed states": "the solution set of a presentation; for a parity law a coset s0 + C of a binary code C; only C (or its dual) is passed to the reading",
+    "knot matroid": "the matroid whose circuits are a system's minimal constrained sets (knots and ties); for a coset of C it is the column matroid of C, whose cocircuits are the minimal supports of C and whose circuits are the minimal supports of the dual code",
+    "graph reading of a code D": "vertices are the minimal supports of D whose deletion leaves the matroid of D connected; each variable joins the vertices containing it; the reading succeeds when every variable lies in exactly two vertices and the cut space of the resulting graph equals D",
+    "gauge law": "edge variables, one parity constraint per cycle of a cycle basis; allowed code = cut space; read D = allowed code",
+    "Tseitin law": "edge variables, one parity constraint per vertex with consistent charges; allowed code = cycle space; read D = dual of the allowed code",
+    "scrambled presentation": "the defining constraints replaced by random invertible recombinations plus redundant random sums",
+    "sphere reading": "for a planar law, faces are read from the dual code; the reading is a sphere when every edge lies in exactly two faces and V - E + F = 2",
+    "graphic / cographic": "the graph reading of the allowed code, respectively of its dual, succeeds; for 3-connected matroids this test is complete (Tutte)"
+  },
+  "public_inputs": {
+    "recovery": "K4, K5, K6, wheels W4-W9, prisms on 3-6 sides, the cube, the octahedron, K3,3, K3,4, the Petersen graph, the 3x3 torus grid and 12 random 3-connected cubic graphs on 8-12 vertices; gauge and Tseitin laws; 3 scrambled presentations each",
+    "flips": "4 two-connected graphs with a 2-separation and their Whitney twists",
+    "spheres": "the 3-connected planar graphs of the recovery roster plus antiprisms and random planar triangulations on 6-9 vertices; non-planar controls K5, K3,3, K3,4, Petersen, the torus grid",
+    "nonbinary": "gauge laws over Z3 and S3 on K4, the prism, W5 and K5",
+    "local laws": "120 random parity laws on 10, 12 and 14 variables with every variable in exactly three constraints of size 3 or 4; Ledrappier's law x(i,j)+x(i+1,j)+x(i,j+1)=0 on 3x3 and 4x4 tori; positive control: 60 random laws with every variable in exactly two constraints"
+  },
+  "forbidden_inputs": [
+    "the reading never sees the presentation's graph or constraint rows, only the allowed code"
+  ],
+  "predictions": {
+    "S1": "every 3-connected graph in the roster is recovered exactly (vertex stars) from the allowed states of its gauge law and of its Tseitin law, under every scrambled presentation",
+    "S2": "each graph and its Whitney twist have identical allowed states while their vertex stars differ",
+    "S3": "for every 3-connected planar graph the dual reading succeeds and the cells form a sphere; for every 3-connected non-planar graph it fails",
+    "S4": "gauge laws over Z3 and S3 have the cycles of the graph as their circuits",
+    "S5": "among random local laws with every variable in three constraints whose knot matroid is 3-connected, at most 5 percent are graphic or cographic; Ledrappier's law on the tested tori is neither; every law with every variable in two constraints is cographic"
+  },
+  "primary_observable": "per law: dimension of the allowed code, 3-connectivity, success of the graph reading of the code and of its dual, recovered vertices and faces",
+  "cheapest_meaningful_control": "(C1) reading vertices from all minimal supports, not only non-separating ones, must fail on some 3-connected graph; (C2) 'allowed states determine the graph exactly' must be rejected by the Whitney twists; (C3) reading vertices off the presentation's own constraint rows must fail under scrambling",
+  "independent_check": "check_result.py recomputes allowed states by brute-force enumeration where small, minimal supports and connectivity by rank-based separator search, re-verifies every recovered graph and face set, the twists, the non-binary circuits and the local-law counts",
+  "decision_or_followup_rule": "A signal is S1-S5 holding. A recovery failure on a 3-connected graph stops ticket B until understood; local laws graphic well above chance become the subject of B.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "KNOT-CIRCUITS-20261020-001B-P001 Readings: Tseitin circuits equal bonds and gauge circuits equal cycles on seven small graphs",
+  "stop_rule": "Stop after the declared roster or budget; stop early only on a solver or control failure.",
+  "nonclaims": [
+    "Finite enumeration on the declared laws only; general statements belong to ticket B.",
+    "Graphicness is tested completely only for 3-connected matroids; others are reported as inconclusive.",
+    "No claim about native structure, distance, physical space or dimension beyond the combinatorial cell counts."
+  ]
+}

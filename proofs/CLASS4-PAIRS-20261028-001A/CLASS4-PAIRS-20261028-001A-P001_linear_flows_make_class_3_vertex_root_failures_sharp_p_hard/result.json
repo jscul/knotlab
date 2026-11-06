@@ -1,0 +1,352 @@
+{
+ "schema_version": 1,
+ "artifact_id": "CLASS4-PAIRS-20261028-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "1 census (16 vertex-root algebras; 12 with linear-flow edges; 8 new)": {
+   "ok": true,
+   "detail": {
+    "fail only (V3)": 16,
+    "linear-flow edges": [
+     {
+      "d": 5,
+      "chars": [
+       1,
+       1,
+       4
+      ],
+      "edge": [
+       5,
+       [
+        1,
+        1
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 6,
+      "chars": [
+       0,
+       1,
+       2
+      ],
+      "edge": [
+       6,
+       [
+        1,
+        2
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 6,
+      "chars": [
+       1,
+       2,
+       2
+      ],
+      "edge": [
+       6,
+       [
+        1,
+        2
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 7,
+      "chars": [
+       1,
+       1,
+       4
+      ],
+      "edge": [
+       7,
+       [
+        1,
+        1
+       ]
+      ],
+      "also Theorem 6": true
+     },
+     {
+      "d": 7,
+      "chars": [
+       1,
+       1,
+       6
+      ],
+      "edge": [
+       7,
+       [
+        1,
+        1
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 9,
+      "chars": [
+       1,
+       1,
+       8
+      ],
+      "edge": [
+       9,
+       [
+        1,
+        1
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 9,
+      "chars": [
+       1,
+       2,
+       3
+      ],
+      "edge": [
+       9,
+       [
+        1,
+        3
+       ]
+      ],
+      "also Theorem 6": true
+     },
+     {
+      "d": 10,
+      "chars": [
+       1,
+       4,
+       6
+      ],
+      "edge": [
+       5,
+       [
+        1,
+        1
+       ]
+      ],
+      "also Theorem 6": true
+     },
+     {
+      "d": 10,
+      "chars": [
+       2,
+       2,
+       8
+      ],
+      "edge": [
+       5,
+       [
+        2,
+        2
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 12,
+      "chars": [
+       0,
+       2,
+       4
+      ],
+      "edge": [
+       12,
+       [
+        2,
+        4
+       ]
+      ],
+      "also Theorem 6": false
+     },
+     {
+      "d": 12,
+      "chars": [
+       2,
+       3,
+       4
+      ],
+      "edge": [
+       12,
+       [
+        2,
+        4
+       ]
+      ],
+      "also Theorem 6": true
+     },
+     {
+      "d": 12,
+      "chars": [
+       2,
+       4,
+       4
+      ],
+      "edge": [
+       12,
+       [
+        2,
+        4
+       ]
+      ],
+      "also Theorem 6": false
+     }
+    ],
+    "new beyond Theorem 6": [
+     [
+      5,
+      [
+       1,
+       1,
+       4
+      ]
+     ],
+     [
+      6,
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      6,
+      [
+       1,
+       2,
+       2
+      ]
+     ],
+     [
+      7,
+      [
+       1,
+       1,
+       6
+      ]
+     ],
+     [
+      9,
+      [
+       1,
+       1,
+       8
+      ]
+     ],
+     [
+      10,
+      [
+       2,
+       2,
+       8
+      ]
+     ],
+     [
+      12,
+      [
+       0,
+       2,
+       4
+      ]
+     ],
+     [
+      12,
+      [
+       2,
+       4,
+       4
+      ]
+     ]
+    ]
+   }
+  },
+  "2 linear structure on free class 3 on (1, 1, 4), d = 5 (Theorem 6's off-diagonal condition fails)": {
+   "ok": true,
+   "detail": {
+    "off-diagonal flows nonzero somewhere": true,
+    "per pair [name, solutions, conserved, subspaces, linear, Fourier >= 0, min Fourier, nonzero flows]": [
+     [
+      "diagonal",
+      14641,
+      true,
+      true,
+      true,
+      true,
+      1331.0,
+      12100
+     ],
+     [
+      "random",
+      11,
+      true,
+      true,
+      true,
+      true,
+      11.0,
+      0
+     ],
+     [
+      "random",
+      11,
+      true,
+      true,
+      true,
+      true,
+      11.0,
+      0
+     ],
+     [
+      "pair-failing (0, D)",
+      1331,
+      true,
+      true,
+      true,
+      true,
+      121.0,
+      1100
+     ]
+    ]
+   }
+  },
+  "3 control: dual slot with bracketing layer-1 data (free class 3 on (1, 2, 3), slots (1, 1, 2)): private equations not homogeneous-affine in slot-2 data, while they are for (1, 1, 4)": {
+   "ok": true,
+   "detail": {
+    "control (1, 2, 3)": [
+     {
+      "pair": "diagonal",
+      "slot-1 solutions": 121,
+      "samples not homogeneous-affine in slot-2 data": 7
+     },
+     {
+      "pair": "random",
+      "slot-1 solutions": 121,
+      "samples not homogeneous-affine in slot-2 data": 8
+     }
+    ],
+    "check-2 algebra (1, 1, 4)": [
+     {
+      "pair": "diagonal",
+      "slot-1 solutions": 1331,
+      "samples not homogeneous-affine in slot-2 data": 0
+     },
+     {
+      "pair": "random",
+      "slot-1 solutions": 11,
+      "samples not homogeneous-affine in slot-2 data": 0
+     }
+    ]
+   }
+  },
+  "all_ok": true
+ },
+ "seconds": 615.3
+}

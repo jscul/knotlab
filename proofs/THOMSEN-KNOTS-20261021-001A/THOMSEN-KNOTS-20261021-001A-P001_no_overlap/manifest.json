@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THOMSEN-KNOTS-20261021-001A-P001",
+  "canonical_id": "THOMSEN-KNOTS-20261021-001A-P001",
+  "kind": "proof",
+  "ticket": "THOMSEN-KNOTS-20261021-001A",
+  "proof": "THOMSEN-KNOTS-20261021-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "No knot overlaps: Thomsen's configuration and the 3-net of Q8",
+  "status": "Proved",
+  "claim": "(1) Doubling (the selector case of Lemma 2 of MALTSEV-CONVERSE-20261020-001B-P001): a relation whose variables Z + {t, t'} form a circuit, with Z nonempty, and which allows t' = t at every value of Z violates elimination once two copies share t and t'. (2) In a law that composes like cycles no circuit overlaps modulo the tops: elimination applied to two copies of an overlapping knot that share all but one variable yields such a relation. So every circuit's top image is a Latin hypercube of the tops, which proves the Latin conjecture of KNOT-IMAGES-20261021-001B-P001, and a law composes like cycles exactly when proper pp-definable equivalences on its ranges make every circuit functional at each variable. (3) In the 3-net law of a Latin square, Thomsen's configuration, with or without one column visible, allows every tuple with two equal rows; it is full exactly when Thomsen's closure condition holds, and otherwise one of its two forms is a knot that overlaps at every variable. So the 3-net law composes like cycles exactly when the square is isotopic to an abelian p-group; a group's 3-net law does so exactly for abelian p-groups. (4) For Q8 the configuration is the commuting-differences relation. Its top image modulo +-1, omega(c1 + c2, c1 + c3) = 0, is not preserved by x + y + z, a three-tuple replacement for the 416-equation certificate, and the system T(x1, x2, x3) & T(x1, x2, x3') violates elimination. So the 3-net law of Q8 does not compose like cycles, and Conjecture 7 of CYCLE-TOPS-20261021-001B-P001 is not refuted by it.",
+  "dependencies": [
+    "KNOT-IMAGES-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A relation satisfying the hypothesis of (1) has a doubled system that satisfies elimination.",
+    "A law that composes like cycles has a circuit that overlaps modulo its tops.",
+    "Thomsen's configuration of a Latin square omits a tuple with two equal rows, is full while Thomsen's condition fails, or is not full while it holds.",
+    "A square violating Thomsen's condition has a doubled configuration that satisfies elimination, or a square isotopic to an abelian p-group has a 3-net law that fails elimination.",
+    "The Q8 configuration differs from the commuting-differences relation, its top image is closed under x + y + z, or the doubled system satisfies elimination.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "THOMSEN-KNOTS-20261021-001",
+    "epic_path": [
+      "THOMSEN-KNOTS-20261021-001"
+    ],
+    "parents": [
+      "proofs/KNOT-IMAGES-20261021-001Z/KNOT-IMAGES-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/manifest.json",
+      "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json",
+      "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json",
+      "proofs/MALTSEV-CONVERSE-20261020-001B/MALTSEV-CONVERSE-20261020-001B-P001_converse/manifest.json",
+      "artifacts/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/raw_rows.jsonl"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-IMAGES-20261021-001Z/KNOT-IMAGES-20261021-001Z-P001_epic_closure/manifest.json": "4a9c4b71525a90226e2d441a47e2daeba27b75b4cf403240ff2f177a9958895c",
+    "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/manifest.json": "3d9b0947b799174431f1c895eee84c9cf7b2ce751ff7e22fe586b1c256a2e184",
+    "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json": "f62ce6ce9fb7d1c3fba07391bede51bdb302a93cf3b7ffe9e44f9a04bdd63f17",
+    "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json": "015b24e9beb2935496b16ffe7b82b53b86aa029a9815e04e7f24d06b32b99f1e",
+    "proofs/MALTSEV-CONVERSE-20261020-001B/MALTSEV-CONVERSE-20261020-001B-P001_converse/manifest.json": "d1f1fd0d891913129604a5984c0962e07b3b9ad53e5143b8d0e9f1df2acfb7f1",
+    "artifacts/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/raw_rows.jsonl": "d19a6ff9b7c9b586b98ad4ce5ba78d89f6c4965b2ff65a763878fba77dfc2b79"
+  },
+  "paths": {
+    "manifest": "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/manifest.json",
+    "identity": "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/identity.json",
+    "directory": "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap",
+    "proof": "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/proof.md",
+    "result": "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/result.json",
+    "check": "proofs/THOMSEN-KNOTS-20261021-001A/THOMSEN-KNOTS-20261021-001A-P001_no_overlap/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "no_overlap_theorem_proved": true,
+    "latin_conjecture_proved": true,
+    "latin_characterization_proved": true,
+    "thomsen_3net_classification_proved": true,
+    "q8_3net_fails_proved": true,
+    "conjecture_7_proved": false
+  },
+  "foundation_claim_scope": "Which laws compose like cycles: no overlapping circuits, Latin circuits modulo the tops, and the 3-net laws of Latin squares. No native recurrence, composed topology in the protected sense, path, metric distance or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py replays Theorem 2's construction at all 1,372 overlapping variables of 400 random knots and on the census's overlapping laws, verifies Theorem 4 on 790 Latin squares (all of orders 2 to 4, 180 random of orders 5 to 7, the 20 census squares) and 17 groups, building and verifying every doubled system by brute force, and verifies Proposition 5 for Q8 with the hidden columns enumerated; four controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and randomized checks; Thomsen's closure theorem, Theorems 1 and 4 of KNOT-IMAGES-20261021-001B-P001 and Lemma 2 of MALTSEV-CONVERSE-20261020-001B-P001 are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta: Theorem 2 (no circuit of a law composing like cycles overlaps, proving the Latin conjecture), Corollary 3, the 3-net classification and the Q8 failure are new to the program; Lemma 1 is the selector case of MALTSEV-CONVERSE-20261020-001B-P001 Lemma 2; Theorem 4 rests on Thomsen's classical closure theorem and the images proof's Theorem 4; an expert in matroids or constraint languages would find Theorem 2's derivation quickly.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

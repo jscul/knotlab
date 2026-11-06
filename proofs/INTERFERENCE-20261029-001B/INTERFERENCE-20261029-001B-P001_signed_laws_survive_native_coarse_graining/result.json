@@ -1,0 +1,1420 @@
+{
+ "schema_version": 1,
+ "artifact_id": "INTERFERENCE-20261029-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 knots, classes and native gadget shapes": {
+   "ok": true,
+   "detail": {
+    "knots": 34,
+    "classes": 16,
+    "shapes": {
+     "3": 2,
+     "5": 9
+    }
+   }
+  },
+  "2 unsigned baseline: only parity is rebuilt by native gadgets of three and five copies": {
+   "ok": true,
+   "detail": {
+    "3": [
+     "parity excl 000 011 101 110",
+     "parity excl 001 010 100 111"
+    ],
+    "5": [
+     "parity excl 000 011 101 110",
+     "parity excl 001 010 100 111"
+    ]
+   }
+  },
+  "3 signed census over native gadgets of three and five copies": {
+   "ok": true,
+   "detail": {
+    "classes rebuilt with some signs": 14,
+    "classes with an exact signed fixed point": 12,
+    "classes exact on the native triangle": [
+     "two excluded at distance two excl 101 110",
+     "two excluded at distance two excl 100 111",
+     "not-all-equal type excl 011 100",
+     "three excluded excl 010 100 111",
+     "two excluded at distance two excl 010 100",
+     "parity excl 001 010 100 111",
+     "not-all-equal type excl 000 111",
+     "two excluded at distance two excl 000 110",
+     "three excluded excl 000 101 110",
+     "parity excl 000 011 101 110"
+    ],
+    "classes never rebuilt": [
+     "three excluded excl 011 101 110",
+     "three excluded excl 001 010 100"
+    ],
+    "classes rebuilt but never exact": [
+     "atom excl 111",
+     "atom excl 000"
+    ]
+   }
+  },
+  "4 towers: every exact signed fixed point (legs relabelled) keeps its law, up to a factor, at levels 1-4": {
+   "ok": true,
+   "detail": {
+    "exact cases iterated": 7108,
+    "failures": 0
+   }
+  },
+  "5 wires: signed identity wires by cancellation; unsigned only for parity; double-edge exact cases contract to an invertible matrix": {
+   "ok": true,
+   "detail": {
+    "classes with an unsigned wire": [
+     "parity excl 001 010 100 111",
+     "parity excl 000 011 101 110"
+    ],
+    "signed laws with a wire, by class": {
+     "two excluded at distance two excl 101 110": 16,
+     "two excluded at distance two excl 100 111": 16,
+     "not-all-equal type excl 011 100": 24,
+     "two excluded at distance two excl 010 100": 16,
+     "parity excl 001 010 100 111": 8,
+     "not-all-equal type excl 000 111": 24,
+     "two excluded at distance two excl 000 110": 16,
+     "parity excl 000 011 101 110": 8
+    },
+    "double-edge exact cases checked": 19872,
+    "contracted double edge": {
+     "multiple of a signed permutation": 19840,
+     "other invertible (three excluded)": 32
+    }
+   }
+  },
+  "6 native triangle and not-all-equal: every signed not-all-equal-type law with positive hyperdeterminant is exact on the triangle": {
+   "ok": true,
+   "detail": {
+    "('not-all-equal type excl 000 111', -1, False)": 2,
+    "('not-all-equal type excl 000 111', -1, True)": 6,
+    "('not-all-equal type excl 000 111', 1, True)": 24,
+    "('not-all-equal type excl 011 100', -1, False)": 4,
+    "('not-all-equal type excl 011 100', -1, True)": 4,
+    "('not-all-equal type excl 011 100', 1, True)": 24
+   }
+  },
+  "7 shared boundary: among signed cyclic laws only parity is exact on the tetrahedron, octahedron and icosahedron": {
+   "ok": true,
+   "detail": {
+    "laws tested": 22,
+    "exact kinds": [
+     "parity"
+    ],
+    "non-parity per-face factors": [
+     [
+      [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        1,
+        0
+       ]
+      ],
+      [
+       1,
+       1,
+       1
+      ],
+      {
+       "tetrahedron": 1.645604,
+       "octahedron": 1.646799,
+       "icosahedron": 1.651109
+      }
+     ],
+     [
+      [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        1,
+        0
+       ]
+      ],
+      [
+       1,
+       1,
+       -1
+      ],
+      {
+       "tetrahedron": 1.645604,
+       "octahedron": 1.646799,
+       "icosahedron": 1.651109
+      }
+     ],
+     [
+      [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        1,
+        0
+       ]
+      ],
+      [
+       1,
+       -1,
+       1
+      ],
+      {
+       "tetrahedron": -1.189207,
+       "octahedron": 1.646799,
+       "icosahedron": 1.400637
+      }
+     ],
+     [
+      [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        1,
+        0,
+        1
+       ],
+       [
+        1,
+        1,
+        0
+       ]
+      ],
+      [
+       1,
+       -1,
+       -1
+      ],
+      {
+       "tetrahedron": -1.189207,
+       "octahedron": 1.646799,
+       "icosahedron": 1.400637
+      }
+     ],
+     [
+      [
+       [
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      [
+       1,
+       1,
+       1
+      ],
+      {
+       "tetrahedron": 1.645604,
+       "octahedron": 1.646799,
+       "icosahedron": 1.651109
+      }
+     ],
+     [
+      [
+       [
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        1,
+        0
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      [
+       1,
+       1,
+       -1
+      ],
+      {
+       "tetrahedron": -1.189207,
+       "octahedron": 1.646799,
+       "icosahedron": 1.400637
+      }
+     ]
+    ]
+   }
+  },
+  "parity with the pairwise-gauge sign (-1)^(x1 x2): exact under the shared-boundary substitution": true,
+  "8 controls fire": {
+   "ok": true,
+   "detail": {
+    "einsum equals brute force on 40 random signed gadgets": true,
+    "the not-all-equal triangle law (-1 on 110) is exact with factor 3 (explicit formula, brute force)": true,
+    "flipping one more sign breaks exactness": true,
+    "parity with weight 2 on 000 is not exact under the shared-boundary substitution": true
+   }
+  },
+  "census summary": [
+   {
+    "class": "atom excl 111",
+    "sign patterns": 64,
+    "rebuilt patterns m=3": 48,
+    "exact patterns m=3": 0,
+    "exact shapes m=3": [],
+    "factors m=3": [],
+    "exact on the native triangle": 0,
+    "rebuilt patterns m=5": 60,
+    "exact patterns m=5": 0,
+    "exact shapes m=5": [],
+    "factors m=5": []
+   },
+   {
+    "class": "atom excl 110",
+    "sign patterns": 64,
+    "rebuilt patterns m=3": 62,
+    "exact patterns m=3": 28,
+    "exact shapes m=3": [
+     0
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 0,
+    "rebuilt patterns m=5": 62,
+    "exact patterns m=5": 46,
+    "exact shapes m=5": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     11.0,
+     12.0,
+     13.0,
+     14.0,
+     15.0,
+     19.0,
+     20.0
+    ]
+   },
+   {
+    "class": "two excluded at distance two excl 101 110",
+    "sign patterns": 32,
+    "rebuilt patterns m=3": 30,
+    "exact patterns m=3": 24,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 20,
+    "rebuilt patterns m=5": 30,
+    "exact patterns m=5": 24,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     14.0
+    ]
+   },
+   {
+    "class": "two excluded at distance two excl 100 111",
+    "sign patterns": 32,
+    "rebuilt patterns m=3": 30,
+    "exact patterns m=3": 24,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 16,
+    "rebuilt patterns m=5": 30,
+    "exact patterns m=5": 26,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     14.0
+    ]
+   },
+   {
+    "class": "atom excl 100",
+    "sign patterns": 64,
+    "rebuilt patterns m=3": 62,
+    "exact patterns m=3": 28,
+    "exact shapes m=3": [
+     0
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 0,
+    "rebuilt patterns m=5": 62,
+    "exact patterns m=5": 46,
+    "exact shapes m=5": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     11.0,
+     12.0,
+     13.0,
+     14.0,
+     15.0,
+     19.0,
+     20.0
+    ]
+   },
+   {
+    "class": "three excluded excl 011 101 110",
+    "sign patterns": 16,
+    "rebuilt patterns m=3": 0,
+    "exact patterns m=3": 0,
+    "exact shapes m=3": [],
+    "factors m=3": [],
+    "exact on the native triangle": 0,
+    "rebuilt patterns m=5": 0,
+    "exact patterns m=5": 0,
+    "exact shapes m=5": [],
+    "factors m=5": []
+   },
+   {
+    "class": "not-all-equal type excl 011 100",
+    "sign patterns": 32,
+    "rebuilt patterns m=3": 30,
+    "exact patterns m=3": 30,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     1.0,
+     2.0,
+     3.0
+    ],
+    "exact on the native triangle": 28,
+    "rebuilt patterns m=5": 30,
+    "exact patterns m=5": 30,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     12.0,
+     13.0
+    ]
+   },
+   {
+    "class": "three excluded excl 010 100 111",
+    "sign patterns": 16,
+    "rebuilt patterns m=3": 12,
+    "exact patterns m=3": 6,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     2.0
+    ],
+    "exact on the native triangle": 4,
+    "rebuilt patterns m=5": 14,
+    "exact patterns m=5": 14,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     4.0,
+     5.0,
+     6.0
+    ]
+   },
+   {
+    "class": "two excluded at distance two excl 010 100",
+    "sign patterns": 32,
+    "rebuilt patterns m=3": 30,
+    "exact patterns m=3": 24,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 20,
+    "rebuilt patterns m=5": 30,
+    "exact patterns m=5": 24,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     14.0
+    ]
+   },
+   {
+    "class": "parity excl 001 010 100 111",
+    "sign patterns": 8,
+    "rebuilt patterns m=3": 8,
+    "exact patterns m=3": 8,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     2.0
+    ],
+    "exact on the native triangle": 7,
+    "rebuilt patterns m=5": 8,
+    "exact patterns m=5": 8,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     4.0
+    ]
+   },
+   {
+    "class": "three excluded excl 001 010 100",
+    "sign patterns": 16,
+    "rebuilt patterns m=3": 0,
+    "exact patterns m=3": 0,
+    "exact shapes m=3": [],
+    "factors m=3": [],
+    "exact on the native triangle": 0,
+    "rebuilt patterns m=5": 0,
+    "exact patterns m=5": 0,
+    "exact shapes m=5": [],
+    "factors m=5": []
+   },
+   {
+    "class": "not-all-equal type excl 000 111",
+    "sign patterns": 32,
+    "rebuilt patterns m=3": 30,
+    "exact patterns m=3": 30,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 30,
+    "rebuilt patterns m=5": 30,
+    "exact patterns m=5": 30,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     3.0,
+     5.0,
+     7.0,
+     9.0,
+     13.0
+    ]
+   },
+   {
+    "class": "atom excl 000",
+    "sign patterns": 64,
+    "rebuilt patterns m=3": 48,
+    "exact patterns m=3": 0,
+    "exact shapes m=3": [],
+    "factors m=3": [],
+    "exact on the native triangle": 0,
+    "rebuilt patterns m=5": 60,
+    "exact patterns m=5": 0,
+    "exact shapes m=5": [],
+    "factors m=5": []
+   },
+   {
+    "class": "two excluded at distance two excl 000 110",
+    "sign patterns": 32,
+    "rebuilt patterns m=3": 30,
+    "exact patterns m=3": 24,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     1.0,
+     3.0
+    ],
+    "exact on the native triangle": 16,
+    "rebuilt patterns m=5": 30,
+    "exact patterns m=5": 26,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     14.0
+    ]
+   },
+   {
+    "class": "three excluded excl 000 101 110",
+    "sign patterns": 16,
+    "rebuilt patterns m=3": 12,
+    "exact patterns m=3": 6,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     2.0
+    ],
+    "exact on the native triangle": 4,
+    "rebuilt patterns m=5": 14,
+    "exact patterns m=5": 14,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     1.0,
+     2.0,
+     4.0,
+     5.0,
+     6.0
+    ]
+   },
+   {
+    "class": "parity excl 000 011 101 110",
+    "sign patterns": 8,
+    "rebuilt patterns m=3": 8,
+    "exact patterns m=3": 8,
+    "exact shapes m=3": [
+     0,
+     1
+    ],
+    "factors m=3": [
+     2.0
+    ],
+    "exact on the native triangle": 7,
+    "rebuilt patterns m=5": 8,
+    "exact patterns m=5": 8,
+    "exact shapes m=5": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "factors m=5": [
+     4.0
+    ]
+   }
+  ],
+  "shared boundary": [
+   {
+    "knot": "parity",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1
+    ],
+    "exact": true,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 1.0,
+     "icosahedron": 1.0
+    }
+   },
+   {
+    "knot": "parity",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1
+    ],
+    "exact": true,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 1.0,
+     "icosahedron": 1.0
+    }
+   },
+   {
+    "knot": "parity",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1
+    ],
+    "exact": true,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 1.0,
+     "icosahedron": 1.0
+    }
+   },
+   {
+    "knot": "parity",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1
+    ],
+    "exact": true,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 1.0,
+     "icosahedron": 1.0
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.645604,
+     "octahedron": 1.646799,
+     "icosahedron": 1.651109
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.645604,
+     "octahedron": 1.646799,
+     "icosahedron": 1.651109
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": -1.189207,
+     "octahedron": 1.646799,
+     "icosahedron": 1.400637
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": -1.189207,
+     "octahedron": 1.646799,
+     "icosahedron": 1.400637
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.645604,
+     "octahedron": 1.646799,
+     "icosahedron": 1.651109
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": -1.189207,
+     "octahedron": 1.646799,
+     "icosahedron": 1.400637
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": -1.189207,
+     "octahedron": 1.646799,
+     "icosahedron": 1.400637
+    }
+   },
+   {
+    "knot": "three excluded",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.645604,
+     "octahedron": 1.646799,
+     "icosahedron": 1.651109
+    }
+   },
+   {
+    "knot": "not-all-equal type",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.316074,
+     "octahedron": 1.681793,
+     "icosahedron": 1.512126
+    }
+   },
+   {
+    "knot": "not-all-equal type",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.316074,
+     "octahedron": 1.681793,
+     "icosahedron": 1.512126
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 2.356144,
+     "octahedron": 2.35229,
+     "icosahedron": 2.351162
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 2.356144,
+     "octahedron": 2.35229,
+     "icosahedron": 2.351162
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 937.405405,
+     "icosahedron": null
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 937.405405,
+     "icosahedron": null
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 2.356144,
+     "octahedron": 2.35229,
+     "icosahedron": 2.351162
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 937.405405,
+     "icosahedron": null
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 1.0,
+     "octahedron": 937.405405,
+     "icosahedron": null
+    }
+   },
+   {
+    "knot": "atom",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "orbit signs": [
+     1,
+     -1,
+     -1
+    ],
+    "exact": false,
+    "per-face factors": {
+     "tetrahedron": 2.356144,
+     "octahedron": 2.35229,
+     "icosahedron": 2.351162
+    }
+   }
+  ],
+  "ok": true,
+  "seconds": 270.7
+ }
+}

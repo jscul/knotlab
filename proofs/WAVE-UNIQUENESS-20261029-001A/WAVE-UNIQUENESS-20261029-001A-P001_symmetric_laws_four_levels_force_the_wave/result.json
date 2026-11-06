@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "artifact_id": "WAVE-UNIQUENESS-20261029-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 5,
+    "mismatched": {}
+   }
+  },
+  "1 level 2: R_2 = sum P_ji P_ki G_jk u_i v_j v_k for every two-sector law": {
+   "ok": true,
+   "detail": {
+    "symbolic identity in eight vector entries": true
+   }
+  },
+  "2 the sector formulas R_k = Z_k(1) u1 v1 v1 + Z_k(2) u2 v2 v2 (k = 3, 4, 5) equal the exact corner relations": {
+   "ok": true,
+   "detail": {
+    "point-level pairs": 12
+   }
+  },
+  "3 level 3: the resultant is (p-q)^m (p^2+1)(q^2+1)(pq-1) K with K irreducible, symmetric, of degree 10": {
+   "ok": true,
+   "detail": {
+    "factors (degree, multiplicity)": [
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      10,
+      1
+     ]
+    ],
+    "K symmetric": true,
+    "K irreducible over Q": true,
+    "has p*q - 1": true,
+    "has p**2 + 1 and q**2 + 1": true
+   }
+  },
+  "4 the wave line (r = -p) is the standing waves and passes levels 2-3; the cosine wave (r = +p) fails level 3; the special chart gives equality": {
+   "ok": true,
+   "detail": {
+    "r = -p solves L2 and L3 identically": true,
+    "r = +p solves L2 but not L3": true,
+    "law at r = -p is proportional to (-1)^a U_(E-1)(y/2), y^2 = (1+p)^2/p": true,
+    "special chart solutions": "[{B_: -A_}]",
+    "special chart law is equality": true
+   }
+  },
+  "5 level 4: K meets the level-4 condition with a common ratio at exactly the 32 roots of the degree-32 factor": {
+   "ok": true,
+   "detail": {
+    "res(L2, L4) factors (degree, multiplicity)": [
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      22,
+      1
+     ]
+    ],
+    "res_q(K, K4) factors (degree in p, multiplicity)": [
+     [
+      1,
+      "6"
+     ],
+     [
+      2,
+      32
+     ],
+     [
+      32,
+      1
+     ],
+     [
+      36,
+      1
+     ]
+    ],
+    "points with a common ratio: degree-32 factor": 32,
+    "degree-36 factor": 0,
+    "K on p + q = 0": [
+     "p",
+     "p**2 + 1"
+    ],
+    "gcd(K(0, q), K4(0, q)) (the factor p: only q = 0, degenerate)": "q**2"
+   }
+  },
+  "6 the 16 sporadic laws pass levels 2-4 and fail level 5": {
+   "ok": true,
+   "detail": {
+    "min relative level-5 sector residual (80 digits)": 0.16027534406515523,
+    "min level-5 error (double precision)": 0.06760053929657711,
+    "max level-2..4 error": 3.369284621494949e-15,
+    "distinct laws among the 32 points": 16
+   }
+  },
+  "7 tangent pencils: level 2 a curve, level 3 only p in {0, 1, +-i}; p = +-i has R = 0, p = 1 is (-1)^a E, p = 0 and the other chart frozen": {
+   "ok": true,
+   "detail": {
+    "saturated level-2 ideal": [
+     "a0 + a1*p - b1",
+     "a1*p**2 + a1 + b1*p",
+     "b0 + b1*p"
+    ],
+    "gcd of the level-3 minors on the curve": "4*p*(p - 1)*(p**2 + 1)**7",
+    "second chart, saturated level-2 ideal": [
+     "a0",
+     "a1 - b0",
+     "b1"
+    ],
+    "curve parametrization solves it": true,
+    "p = +-i: R_2 = 0": true,
+    "p = 1 is (-1)^a E": true,
+    "p = 0 is [a=0][b=c=0] + [a=1][b!=c]": true,
+    "other chart: only [a=0][b!=c] + [a=b=c=1]": true
+   }
+  },
+  "8 rank one in the base corner: R_k = u_a (Q^k) times a scalar (k = 2, 3); hence Q^2 = cQ: products and u(a)[b = c]": {
+   "ok": true,
+   "detail": {
+    "identity holds for k = 2, 3": true
+   }
+  },
+  "9 the final classes are exact at every level 2 to 8 (exact integers)": {
+   "ok": true,
+   "detail": {
+    "wave y = 3": true,
+    "wave y = 2 ((-1)^a E)": true,
+    "wave y = 1 (signed NAE)": true,
+    "equality": true,
+    "product u = (1, 2), v = (1, -3)": true,
+    "u(a)[b = c], u = (1, 2)": true,
+    "frozen [a=0][b!=c] + [a=b=c=1]": true,
+    "frozen [a=0][b=c=0] + [a=1][b!=c]": true
+   }
+  },
+  "10 among the final classes only signed not-all-equal is a knot": {
+   "ok": true,
+   "detail": {
+    "wave y = 3": false,
+    "wave y = 2 ((-1)^a E)": false,
+    "wave y = 1 (signed NAE)": true,
+    "equality": false,
+    "product u = (1, 2), v = (1, -3)": false,
+    "u(a)[b = c], u = (1, 2)": false,
+    "frozen [a=0][b!=c] + [a=b=c=1]": false,
+    "frozen [a=0][b=c=0] + [a=1][b!=c]": false
+   }
+  },
+  "11 controls fire": {
+   "ok": true,
+   "detail": {
+    "the cosine wave (r = +p) is exact at level 2 but not 3": true,
+    "a law on K is exact at levels 2-3 and not at 4": true,
+    "a random law fails level 2": true
+   }
+  },
+  "ok": true,
+  "seconds": 16.3
+ },
+ "K": "4*p**6*q**4 + p**6*q**3 + 2*p**6*q**2 + p**6*q + 8*p**5*q**5 - p**5*q**4 + 18*p**5*q**3 + 6*p**5*q + p**5 + 4*p**4*q**6 - p**4*q**5 + 24*p**4*q**4 - p**4*q**3 + 20*p**4*q**2 + 2*p**4 + p**3*q**6 + 18*p**3*q**5 - p**3*q**4 + 44*p**3*q**3 - p**3*q**2 + 18*p**3*q + p**3 + 2*p**2*q**6 + 20*p**2*q**4 - p**2*q**3 + 24*p**2*q**2 - p**2*q + 4*p**2 + p*q**6 + 6*p*q**5 + 18*p*q**3 - p*q**2 + 8*p*q + q**5 + 2*q**4 + q**3 + 4*q**2"
+}

@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\NAE}{\mathrm{NAE}}
+\newcommand{\EQ}{\mathrm{EQ}}
+\title{Native selection on regular systems:\\ which constraint law recognises its own failures, and why three places}
+\author{Prespatial Labs, contact-first program (draft; not externally reviewed)}
+\date{1 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A Boolean law on $k$-regular $k$-uniform systems (every line has $k$ points, every point lies on $k$ lines, incidences may carry signs)
+is \emph{mutually selecting} when the systems on which it fails form a non-empty class recognisable in polynomial time, while counting
+its solutions is \#P-hard in general. We show:
+(1) on the systems where not-all-equal fails, counting with a weight $\lambda$ per monochromatic line is polynomial exactly at
+$\lambda\in\{0,1,-1,-3,\infty\}$ and \#P-hard at every other complex $\lambda$;
+(2) unless NP-complete problems are polynomial, not-all-equal is the only three-place law with mutual selection, because every other
+three-place law that can fail can pin a value;
+(3) parity's failures are recognisable but local: its weighted family is \#P-hard except at six couplings, also on its failing systems;
+(4) at four places, signed not-all-equal never fails, and every four-place law that fails builds equality and is NP-complete, so a
+mutually selecting four-place law would have to lie in one of five weak classes, none of which failed in any search;
+(5) the spaces on which not-all-equal fails compose only through hubs: across every small cut a knot meets an equality, and a failing
+composition joining two knots directly is a parity one.
+All results are proved in the cited repository records; a replay reruns every cited check, and the headline numbers are recomputed by
+separately written code.
+\end{abstract}
+
+\section{Setting}
+
+A \emph{system} $H$ is a finite set of points and a list of lines, each a $k$-tuple of distinct points; $H$ is \emph{$k$-regular} when every
+point lies on exactly $k$ lines (so there are as many lines as points). A \emph{signing} marks some incidences; a colouring
+$c$ of the points makes the point $p$ \emph{seen} on the line $\ell$ as $c(p)$, complemented when the incidence is marked. A \emph{law}
+is a relation $R\subseteq\{0,1\}^k$ applied to seen values; its \emph{signed class} is its orbit under flips and permutations of the $k$
+places. A law \emph{fails} on $H$ when no colouring satisfies every line.
+
+A relation is a \emph{knot} (the contact-first program's test K1--K3) when it is neither empty nor full and every $(k-1)$-place projection
+is full. For $k=3$ there are $34$ knots in $5$ classes; for $k=4$ there are $742$ in $20$ classes (Section~\ref{sec:four}).
+
+\begin{definition}[mutual selection]
+A law is \emph{mutually selecting} on $k$-regular systems when
+(M1) its failing systems form a non-empty class recognisable in polynomial time, and
+(M2) counting its solutions is \#P-hard on general $k$-regular systems.
+\end{definition}
+
+A failing class is \emph{local} when a failure can be certified by a bounded piece that survives being grafted into any host; it is
+\emph{global} otherwise. We write \emph{knot's space} for a connected cubic ($k=3$) system on which not-all-equal ($\NAE$) fails.
+
+\section{The knot's coupling on its spaces}\label{sec:coupling}
+
+Weigh each monochromatic line by $\lambda$: $M(H;\lambda)=\sum_c\lambda^{\#\{\text{monochromatic lines}\}}$.
+
+\begin{theorem}[\texttt{KNOT-COUPLING-20261031-001}]\label{thm:coupling}
+On the knot's spaces, computing $M(H;\lambda)$ is polynomial at $\lambda\in\{0,1,-1,-3,\infty\}$ and \#P-hard (Turing) at every other
+complex $\lambda$. At $\lambda=0$ the count is $0$; at $\lambda=-3$ it is $(-2)^n\,|\det|$ of the incidence matrix (the \emph{dimer law},
+a permanent on general systems).
+\end{theorem}
+
+The mechanism: a knot's space with one incidence removed (an \emph{atom}) is an exact negation at $\lambda=0$ and shifts the coupling at
+every other $\lambda$; chains of atoms interpolate hard Pfaffian systems into knot's spaces, and torsion points on the curve of two atom
+ratios (Beukers--Smyth) close the complex case. The recognition of the failing class is classical: a connected cubic system fails $\NAE$
+exactly when its incidence matrix is sign-nonsingular (Seymour; Robertson--Seymour--Thomas), checked directly on all
+$1{,}380{,}864$ signings of the cubic systems with $n\le 6$ (\texttt{PINNING-20261031-001C}).
+
+\section{Three places}\label{sec:three}
+
+\begin{theorem}[\texttt{PINNING-20261031-001A}]\label{thm:five}
+The $34$ three-place knots form five classes under flips and permutations: parity ($2$ relations), the no-lone (Fibonacci) law ($8$),
+not-all-equal ($4$), $x\vee(y\neq z)$ ($12$) and the clause ($8$). Only not-all-equal excludes both constant colourings, and only signed
+not-all-equal is unchanged by flipping every colour; such a law can never pin a value.
+\end{theorem}
+
+\begin{theorem}[pinning; \texttt{PINNING-20261031-001A}]\label{thm:pinning}
+A law with a pinning piece, a relation that becomes an equality or disequality once one point is pinned, and an absorbing piece is as
+hard on cubic systems as with unbounded occurrences.
+\end{theorem}
+
+One skeleton of four internal points and five lines pins the Fibonacci law, $x\vee(y\neq z)$ and parity. So the Fibonacci law and
+$x\vee(y\neq z)$ are NP-complete on cubic systems (\texttt{MUTUAL-SELECTION-20261031-001}, \texttt{PINNING-20261031-001B}); the
+failures of $x\vee(y\neq z)$ are absent on small systems but exist (an explicit system of $25$ lines). The clause never fails (Tovey).
+
+\begin{theorem}[uniqueness; \texttt{PINNING-20261031-001C}]\label{thm:unique}
+Unless NP-complete problems are polynomial, not-all-equal is the only three-place knot that is mutually selecting on cubic systems; on
+plain systems this holds unconditionally. Its failing systems also make the dimer law easy (Theorem~\ref{thm:coupling}).
+\end{theorem}
+
+\section{Parity: recognisable but local failures}\label{sec:parity}
+
+Parity's decision and count are linear algebra ($2^{n-r}$ solutions or none), so parity fails (M2). Its weighted family
+$M(H,b;\lambda)=\sum_c\lambda^{\#\{\text{lines missing their parity}\}}$ is a different matter.
+
+\begin{remark}[a corrected claim]
+An earlier record (\texttt{MUTUAL-SELECTION-20261031-001B}) claimed that this family is polynomial everywhere, because the line weight
+$[1,\lambda,1,\lambda]$ becomes a generalized equality under the Hadamard basis change. The basis change also turns each point's
+equality into a parity check, so the transformed count is a code weight enumerator,
+$M=\sum_{s\in\ker N}(-1)^{b\cdot s}(1+\lambda)^{n-|s|}(1-\lambda)^{|s|}$; Fan and Cai's Theorem 2.2 makes $[1,a,1,a]$ \#P-hard for
+real $a>0$, $a\neq1$. The claim and its uses are withdrawn (\texttt{PARITY-CORRECTION-20261031-001}); every conclusion that used it as a
+reason stands with a corrected reason.
+\end{remark}
+
+\begin{theorem}[\texttt{PARITY-CORRECTION-20261031-001A}]\label{thm:parity}
+Replacing each line $\{x,y,z\}$ by $\{x,u,v\},\{y,u,v\},\{z,u,v\}$ (the theta substitution, Fan--Cai's gadget $G_4$) gives
+$M_{\mathrm{par}}(\theta H;\lambda)=(2\lambda(1+\lambda))^n\,M_{\NAE}(H;\lambda+1/\lambda-1)$. Hence counting parity's coupling on
+connected simple cubic systems is polynomial at $\lambda\in\{0,1,-1,i,-i,\infty\}$ and \#P-hard at every other complex $\lambda$.
+\end{theorem}
+
+For example $M_{\mathrm{par}}(\theta\,\mathrm{Fano};2)=10912465152$. In the knot's even-form variable the substitution squares parity's
+Hadamard ratio: $u=((\lambda-1)/(\lambda+1))^2$.
+
+\begin{theorem}[\texttt{PARITY-CORRECTION-20261031-001B}]\label{thm:parityfail}
+For every complex $\lambda\notin\{0,1,-1\}$, counting parity's coupling on connected simple cubic systems reduces with two oracle calls to
+counting it on systems where parity fails: an eight-line piece carries a certificate of failure that survives splicing into any host, and
+its transfer matrix has $\det G=-16\lambda^2(\lambda-1)^6(\lambda+1)^6$, so $M(H)=(\operatorname{tr}G\,M(H_1)-M(H_2))/\det G$.
+\end{theorem}
+
+So parity's failing class makes no member of its family easy: its failures are local. The knot's are global (the whole space is
+sign-nonsingular), and a graft that kept the knot's failure would make perfect matchings of cubic bipartite graphs easy (Dagum--Luby).
+
+\section{Four places}\label{sec:four}
+
+\begin{theorem}[\texttt{FOUR-PLACE-20261031-001B}]\label{thm:thomassen}
+For every $k\ge4$, signed not-all-equal never fails on $k$-regular $k$-uniform systems.
+\end{theorem}
+\begin{proof}[Outline]
+If a signed system is not-all-equal-unsatisfiable and minimal, it has at least as many lines as points, and with equality its signed
+incidence pattern is sign-nonsingular (Seymour's argument: a real kernel vector colours its support by sign). In a $k$-regular system a
+minimal failure is therefore a square union of components. With a perfect matching on the diagonal its digraph has in- and out-degree
+$k-1\ge3$, so it is even (Thomassen 1992) and the pattern is not sign-nonsingular.
+\end{proof}
+
+At $k=3$ the digraph has degree $2$, may avoid even cycles, and the failures are the knot's spaces: Thomassen's threshold is the step from
+three places to four.
+
+\begin{theorem}[\texttt{FOUR-PREFER-20261101-001A}, \texttt{FOUR-PLACE-20261031-001A}]\label{thm:catalogue}
+A four-place relation is a knot iff its excluded states form a non-empty independent set of the $4$-cube. There are $742$ four-place knots
+in $20$ classes; $30$ are value-free (unchanged by complementing every place), in $4$ classes; only parity is Schaefer-tractable; the
+clause (one excluded state) never fails on $4$-regular systems (Tovey's matching argument).
+\end{theorem}
+
+\begin{theorem}[\texttt{FOUR-PLACE-20261031-001C}, \texttt{FOUR-PREFER-20261101-001B}]\label{thm:links}
+Twelve four-place knot classes build a link, a piece whose accepted relation forces two ports equal and leaves two free: two value-free
+classes directly, one value-preferring class directly, and nine value-preferring classes through a core of three points on four lines
+that realizes the value-free twelve-state class, whose link piece is then lifted line by line. With a regularization for link pieces of any
+size, each of these classes is NP-complete on $4$-regular $4$-uniform systems (checked end to end on $160$ and $240$ instances).
+\end{theorem}
+
+\begin{corollary}[\texttt{FOUR-PREFER-20261101-001D}]\label{cor:four}
+Unless NP-complete problems are polynomial, a mutually selecting four-place knot would have to lie in one of five weak classes, which
+prefer a value and exclude two or three states. None of them failed in any search: an exact counterexample-guided search proves that no
+failing signing exists on every system it decided, and hill-climbing keeps dozens to hundreds of solutions at $n=10,12,14$.
+\end{corollary}
+
+\section{Composition: knots meet through hubs}\label{sec:compose}
+
+\begin{lemma}[complementarity; \texttt{KNOT-COMPOSE-20261101-001A}]\label{lem:comp}
+A relation on $k$ channels whose $(k-1)$-place projections are full has at least $2^{k-1}$ states, with equality only for a parity coset.
+\end{lemma}
+\begin{proof}
+Every assignment of $k-1$ channels extends, so there are at least $2^{k-1}$ states; with exactly that many, each extends once, no two
+states differ in one channel, and an independent half of the connected bipartite $k$-cube is a colour class.
+\end{proof}
+
+\begin{theorem}[\texttt{KNOT-COMPOSE-20261101-001A}]\label{thm:hubs}
+Every $3$-edge cut of a cubic incidence graph has a point side (three ports) and a line side (three slots). Across every nontrivial
+$3$-edge cut of a knot's space the line side accepts exactly $\NAE$ and the point side exactly $\EQ$ (the point lemma of
+\texttt{THREEFOLD-AMPLITUDE-20261030-001A}): the parts meet as a knot against a hub. Two sides that both accept knots fail together only
+as complementary parity cosets; double cuts of knot's spaces accept twelve-state knots, which never fail together. So the knot's spaces
+compose only through hubs, and a hub-free failing composition is a parity one. The transpose exchanges knot sides and hub sides.
+\end{theorem}
+
+\section{Discussion}
+
+Mutual selection needs a law that fails and yet stays rigid. At three places the knot is that law: it cannot pin, its pieces build no
+equality, and its failures are the global, recognisable Pfaffian spaces, on which a second hard count (the dimer law) becomes a determinant.
+At four places the rigid value-free law never fails (Thomassen's threshold), and every law that fails builds equality. Parity's failures
+are recognisable but local, and select nothing. The knot's spaces compose through hubs; only parity composes directly.
+
+\paragraph{Open.} Whether the five weak four-place classes ever fail; arities five and above beyond not-all-equal; native paths and
+separation through network hubs.
+
+\paragraph{Provenance.} Classical ingredients: Schaefer (1978), Tovey (1984), Seymour (1974), Thomassen (1992),
+Robertson--Seymour--Thomas (1999), Kasteleyn, Dagum--Luby (1992), Beukers--Smyth, Dalmau--Ford (2003), Fan--Cai (2020),
+Cai--Fan--Liu (2021). The coupling dichotomy on the knot's spaces, the uniqueness statement, the four-place catalogue and links, and the
+hub theorem were found in no source checked; the parity hardness for real $\lambda>0$ is Fan--Cai's, and the signed form of
+Theorem~\ref{thm:thomassen} follows from Thomassen's theorem by Seymour's argument (moderate folklore risk).
+
+\begin{thebibliography}{99}
+\bibitem{fancai} A.~Z.~Fan and J.-Y.~Cai, Dichotomy result on 3-regular bipartite non-negative functions, arXiv:2011.09110 (2020).
+\bibitem{cfl} J.-Y.~Cai, A.~Z.~Fan and Y.~Liu, Bipartite 3-regular counting problems with mixed signs, arXiv:2110.01173 (2021).
+\bibitem{schaefer} T.~J.~Schaefer, The complexity of satisfiability problems, STOC (1978).
+\bibitem{tovey} C.~A.~Tovey, A simplified NP-complete satisfiability problem, Discrete Appl. Math. 8 (1984).
+\bibitem{seymour} P.~D.~Seymour, On the two-colouring of hypergraphs, Quart. J. Math. 25 (1974).
+\bibitem{thomassen} C.~Thomassen, The even cycle problem for directed graphs, J. Amer. Math. Soc. 5 (1992).
+\bibitem{rst} N.~Robertson, P.~D.~Seymour and R.~Thomas, Permanents, Pfaffian orientations, and even directed circuits, Ann. Math. 150 (1999).
+\bibitem{dl} P.~Dagum and M.~Luby, Approximating the permanent of graphs with large factors, Theoret. Comput. Sci. 102 (1992).
+\bibitem{df} V.~Dalmau and D.~Ford, Generalized satisfiability with limited occurrences per variable, MFCS (2003).
+\end{thebibliography}
+\end{document}

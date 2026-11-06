@@ -1,0 +1,134 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BRACE-TREE-20261105-001B-P001",
+  "canonical_id": "BRACE-TREE-20261105-001B-P001",
+  "kind": "proof",
+  "ticket": "BRACE-TREE-20261105-001B",
+  "proof": "BRACE-TREE-20261105-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The brace dictionary",
+  "status": "Proved",
+  "claim": "The brace dictionary: for every ordered pair of lines in 50 spaces (the 32 three-fold spaces up to 22 points and 18 trees of Fano atoms), the native relation against the pair's place in the tight-cut decomposition. The prediction fixed in advance, one relation per place, is refuted as stated: 31 of 82 atom-atom places carry more than one relation (1,360 of 14,534 pairs), and 6 of 16 glue-glue places. But every mixed atom-atom place has plane glue between the two atoms. Where the atoms are the same, adjacent, or joined through atoms only (21 places, 10,074 pairs), the relation is a function of the place. Within an atom, lines are mutual. An emitter's lines are mutual with a downstream receiver's cut lines, and its intact lines create one way at them, along chains of atoms too. Atoms emitting into a common atom are mutual. Two receivers of a common atom meet through their cut lines, and their intact lines are silent. Lines of plane pieces and doubled squares never create at each other (306 of 306 pairs) unless a non-Fano handle lies between. All 50 cuts between two atoms are read in their direction. Fixed here for ticket C, the source rule (keep a block of mutual creation when one of its lines is blind to everything its other lines are blind to) counts the Heawood braces, and the genus, on all 47 spaces without a non-Fano brace, where the plain block count manages 42; it fails on the three spaces with census 58 or the trisum brace.",
+  "dependencies": [
+    "BRACE-TREE-20261105-001A"
+  ],
+  "evidence_modes": [
+    "finite-validation",
+    "finite-instance-classification"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "finite-validation"
+    ]
+  },
+  "failure_conditions": [
+    "A place in the tight-cut decomposition (same brace with given roles, or two braces with given arrows, kinds in between and roles) holding two atom lines, or two glue lines, whose native relation is not the same in every space and pair.",
+    "Recorded without a prediction: pairs of an atom line and a glue line, whose relation depends on the glue's faces."
+  ],
+  "lineage": {
+    "home_scope": "BRACE-TREE-20261105-001",
+    "epic_path": [
+      "BRACE-TREE-20261105-001"
+    ],
+    "parents": [
+      "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/manifest.json",
+      "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/result.json",
+      "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/brace_lib.py",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/relay_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py",
+      "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py",
+      "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py",
+      "proofs/NATIVE-GENUS-20261104-001B/NATIVE-GENUS-20261104-001B-P001_counting_and_locating_handles/check.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/manifest.json": "cca533ab860f3fc913e5b281704d14f5f2cce59116eb40b4f4a04ac4bae13e6f",
+    "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/result.json": "117ff7d8d307e33077cc4cfde4b53f068c8448d5fe80ffc2b49dcd7e9e691acd",
+    "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/brace_lib.py": "ff8807db2548e40092eac174d2e6207d4344a8a66b0dbf098d24fa03c4b39e56",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py": "55bf8bb3096978270faf9728d4baf4e8529419ae751af66c7bb32cb21bb8c98f",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py": "570c7a63a090648e999df5b319c74b8eb3ff0b7fd63725dd6d710c4c0a0ae2f4",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/RELAY-NET-20261104-001A/RELAY-NET-20261104-001A-P001_arc_signals_and_repeaters/relay_lib.py": "60a2da2a544d6797f29ad08b2bae4df3b0ee1ed375363522210150eef55d6764",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1",
+    "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/strip_lib.py": "0748e21df9761fdd6ba98a9ac11dd9e60b19e574bf38ba81ff5ffd8b8f15c6f9",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py": "0789a72111c3cb32fb4e29806061d95b94ea6facc87a83ade345ca8e5fbf4ed7",
+    "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py": "dcf9c39ae6da209d6915b658c0c199f79530e281da1f438b6418259dedd6b388",
+    "proofs/NATIVE-GENUS-20261104-001B/NATIVE-GENUS-20261104-001B-P001_counting_and_locating_handles/check.py": "78375d5aa96c258ff0f24c5c4edefb30bf103b88d95a291d0c76333ba45c8dd2",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py": "b128dbc6be5a114d6d978b718a738a04d5393b4ae1fe5567d6bc119d2b16a7ba",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json",
+    "identity": "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/identity.json",
+    "directory": "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary",
+    "proof": "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/proof.md",
+    "result": "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json",
+    "check": "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "brace_dictionary_checked": true
+  },
+  "foundation_claim_scope": "Frozen before evaluation. Every ordered pair of lines in the 32 three-fold spaces up to 22 points and in 18 designs: Fano atoms on the Fano plane (one to three atoms at points and lines, chains, stars), on census 58 and on the prism over an 8-cycle. Exact creation.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-05.",
+    "status": "exact computation; no human or external review",
+    "novelty": "New here."
+  }
+}

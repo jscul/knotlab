@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SOFT-HUB-20261024-001C-P001",
+  "canonical_id": "SOFT-HUB-20261024-001C-P001",
+  "kind": "proof",
+  "ticket": "SOFT-HUB-20261024-001C",
+  "proof": "SOFT-HUB-20261024-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Tree gadgets of the open knots have bounded hubs",
+  "status": "Proved",
+  "claim": "For every tree gadget of a non-windable knot, in particular of the six open knots, every axis u and every terminal i: F(u)F(u-bar) <= s_u + F(u + e_i)F(u-bar) + F(u)F(u-bar + e_i), by mapping each linked pair injectively through a one-sided flip of terminal i's arm along the tree route to the first branching knot; so tree gadgets have hub ratio at most 3, and they do exceed 1 (a stored eight-knot tree reaches 12/11). In a gadget with a cycle the arm is not determined: a stored seven-knot gadget with a double edge has two linked pairs with the same image. The inequality for all gadgets is left open as a conjecture, holding on 48,000 random axis-terminal cases and all 336 annealed gadgets of ticket B.",
+  "dependencies": [
+    "SOFT-HUB-20261024-001B"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A tree gadget, axis and terminal where the arm map is invalid or not injective, or the inequality fails.",
+    "The stored tree gadget does not exceed hub ratio 1, or the stored cyclic gadget has no collision.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "SOFT-HUB-20261024-001",
+    "epic_path": [
+      "SOFT-HUB-20261024-001"
+    ],
+    "parents": [
+      "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/manifest.json",
+      "experiments/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/contract.json",
+      "artifacts/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/result.json",
+      "artifacts/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/rows.jsonl"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/manifest.json": "9c570505d021ade21d948de329722564f1a4c4fd6b265d2aea24fce533b8c7c4",
+    "experiments/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/contract.json": "26a5c59dd8ee5899a072937b312c8cf013fc12a9705f456f786594cb633ed5fc",
+    "artifacts/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/result.json": "c67d62076f55b3c99285d8e9ec493d05c52328de22a62f5afbedcbb6ffc7dd5f",
+    "artifacts/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/rows.jsonl": "557c9913919f0ba81a53872ccbab7944701bf38ed8496d60febf7d5123b78e7b"
+  },
+  "paths": {
+    "manifest": "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/manifest.json",
+    "identity": "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/identity.json",
+    "directory": "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs",
+    "proof": "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/proof.md",
+    "result": "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/result.json",
+    "check": "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "tree_hub_bound_shown": true
+  },
+  "foundation_claim_scope": "Finite gadgets of the open knots; trees proved, cyclic gadgets left open with evidence. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) verifies the arm map on 300 random tree gadgets (41,160 linked pairs: structure, validity, patterns, injectivity, inequality), the stored tree example (12/11), the stored cyclic collision, and the inequality on 4,000 random gadgets and ticket B's 336 annealed gadgets; two controls. No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

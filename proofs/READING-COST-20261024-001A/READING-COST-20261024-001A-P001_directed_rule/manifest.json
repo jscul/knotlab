@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "READING-COST-20261024-001A-P001",
+  "canonical_id": "READING-COST-20261024-001A-P001",
+  "kind": "proof",
+  "ticket": "READING-COST-20261024-001A",
+  "proof": "READING-COST-20261024-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A polynomial rule for directed walls with choices",
+  "status": "Proved",
+  "claim": "For the six directed placements (allowed places {0, 2}: 54, 62, 110, 147, 155, 203), whether an odd class contradicts is decidable in time polynomial in L M and the bit length of the class. Walls are monotone paths whose moves are allowed one at a time; good walls are those strictly above or strictly below their copy, and they are closed under pointwise maximum and minimum; Aubry's ordered maximum and a split at a repeated square yield a good wall that is simple on the type-preserving cover, so simple cycles of the wall graph suffice on every torus; for each period up to the size of that cover a max-closed constraint problem, decided by arc consistency, finds a good wall. Among the twelve bending placements only the four honeycomb ones with a free place (111, 125, 159, 215) lack a known polynomial rule.",
+  "dependencies": [
+    "WALLS-WITH-CHOICES-20261024-001A",
+    "WALLS-WITH-CHOICES-20261024-001B",
+    "DIRECTIONAL-RIGIDITY-20261023-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A configuration where the decider and the ground truth (simple cycles on 3 x 3 and 3 x 4, the own solver on covers and strips on larger tori) disagree.",
+    "A wall reduced by the ordered maximum and the split that stops being valid or good, or that ends with a repeated square of the type-preserving cover.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "READING-COST-20261024-001",
+    "epic_path": [
+      "READING-COST-20261024-001"
+    ],
+    "parents": [
+      "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/manifest.json",
+      "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/result.json",
+      "experiments/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/contract.json",
+      "artifacts/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/result.json",
+      "experiments/DIRECTIONAL-RIGIDITY-20261023-001A/DIRECTIONAL-RIGIDITY-20261023-001A-E001_rigidity/contract.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/manifest.json": "7431f1c1d2dd788209e0de45b9e7e5afd6db2024e89c125a44addee682124850",
+    "proofs/WALLS-WITH-CHOICES-20261024-001A/WALLS-WITH-CHOICES-20261024-001A-P001_wall_theorem/result.json": "9dfdb7e7dab743e130d2729e6bf0ac1b572f9151a8a94246b996d17447b58ae1",
+    "experiments/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/contract.json": "38d19bf7ea919135800c4d3e1e12ca77ed9878538d08079ae35f98db2ea3e89c",
+    "artifacts/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/result.json": "cf29680d6b379939ae00863ad60069931d97fe88cadb07b48ed4cce34d1a4da5",
+    "experiments/DIRECTIONAL-RIGIDITY-20261023-001A/DIRECTIONAL-RIGIDITY-20261023-001A-E001_rigidity/contract.json": "25e3a410503b9c720c5826e924810aa98a539a7806e04cf67d14546444a50174"
+  },
+  "paths": {
+    "manifest": "proofs/READING-COST-20261024-001A/READING-COST-20261024-001A-P001_directed_rule/manifest.json",
+    "identity": "proofs/READING-COST-20261024-001A/READING-COST-20261024-001A-P001_directed_rule/identity.json",
+    "directory": "proofs/READING-COST-20261024-001A/READING-COST-20261024-001A-P001_directed_rule",
+    "proof": "proofs/READING-COST-20261024-001A/READING-COST-20261024-001A-P001_directed_rule/proof.md",
+    "result": "proofs/READING-COST-20261024-001A/READING-COST-20261024-001A-P001_directed_rule/result.json",
+    "check": "proofs/READING-COST-20261024-001A/READING-COST-20261024-001A-P001_directed_rule/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "directed_rule_polynomial_shown": true,
+    "directed_simple_cycles_suffice_shown": true
+  },
+  "foundation_claim_scope": "Twisted fair worlds on triangular tori with cylinder covers; exact statements and finite computations. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, with the wall graph and own solver of WALLS-WITH-CHOICES-20261024-001A-P001) verifies the directed structure on 360 configurations, shortens 245 random and five listed crossing walls to good walls simple on the type-preserving cover, and finds the decider equal to the ground truth on 1432 classes on 3 x 3 to 4 x 5; three controls. No human or external review",
+    "level": "V1 prose proof with computational checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

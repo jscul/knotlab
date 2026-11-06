@@ -1,0 +1,148 @@
+{
+  "artifact_id": "NATIVE-COUNTING-20261024-001A-P001",
+  "checks": {
+    "count formulas": {
+      "closed-form agrees": 366,
+      "decompositions with orthonormal vectors": {
+        "[0, 1, 3]": true,
+        "[0, 2, 3]": true,
+        "[0, 2]": true,
+        "[1, 3]": true
+      },
+      "formula agrees": 366,
+      "networks": 366
+    },
+    "gluing criterion": {
+      "agrees with Fibonacci gate or [a, 0, 0, b]": 625,
+      "four-leg symmetry agrees with the equation": 625,
+      "knots satisfying it (allowed numbers of ones)": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "symmetric signatures tested": 625
+    },
+    "tractable families": {
+      "knots": 34,
+      "knots in no family": 30,
+      "knots in some family": 4,
+      "those knots (excluded tuples, families)": [
+        [
+          [
+            "001",
+            "010",
+            "100",
+            "111"
+          ],
+          [
+            "orthogonal generalized equality",
+            "S affine"
+          ]
+        ],
+        [
+          [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          [
+            "orthogonal generalized equality",
+            "S affine"
+          ]
+        ],
+        [
+          [
+            "011",
+            "101",
+            "110"
+          ],
+          [
+            "orthogonal generalized equality"
+          ]
+        ],
+        [
+          [
+            "001",
+            "010",
+            "100"
+          ],
+          [
+            "orthogonal generalized equality"
+          ]
+        ]
+      ]
+    }
+  },
+  "claim": "A symmetric three-place signature glues topologically with counts exactly when f0 f2 + f1 f3 = f1^2 + f2^2, that is when it is a generalized Fibonacci gate or of the form [a, 0, 0, b]; among the 34 knots exactly the four topological knots qualify. Each is a sum of two cubes of orthonormal vectors, so every native network with pins and unpinned legs counts by the closed formula sum_j lambda_j^n prod_legs u_j (2^g for parity, Verlinde dimensions for the Fibonacci knot) in polynomial time. The other 30 knots lie in none of the tractable families of Backens's Holant dichotomy with pins, so counting their native networks is #P-hard given that cited theorem: emergence is countable exactly when it is topological.",
+  "controls": {
+    "K applied to a generalized equality is accepted": true,
+    "K applied to a weight-at-most-one function is accepted": true,
+    "a point mass is local affine": true,
+    "a product is accepted": true,
+    "a random complex tensor is rejected by every test": true,
+    "a rotated generalized equality is accepted": true,
+    "a transformed affine function is accepted": true,
+    "a wrong count formula disagrees with brute force": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "NATIVE-COUNTING-20261024-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "countable_exactly_when_topological_shown": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "NATIVE-COUNTING-20261024-001A"
+}

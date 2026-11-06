@@ -1,0 +1,130 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "STRIP-RELAY-20261103-001A-P001",
+  "canonical_id": "STRIP-RELAY-20261103-001A-P001",
+  "kind": "proof",
+  "ticket": "STRIP-RELAY-20261103-001A",
+  "proof": "STRIP-RELAY-20261103-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Heights and reduction",
+  "status": "Proved",
+  "claim": "Heights and reduction. (1) The heights lemma (proved). In the split at the attachment point the merged face takes one skip, on the arc fixed by the port class, so the class fixes the ports' height differences exactly; the heights with those port values are the integer solutions of a difference system, closed under rounded midpoints, so each point's height ranges over an interval of integers and its value is fixed exactly when its height is. So a port pattern freezes exactly the points whose height difference to the ports cannot vary. Checked: 102 of 102 port patterns fix the ports' heights, 488 of 488 frozen (point, pattern) pairs have a fixed height difference, and 4,752 of 4,752 (line, pattern) pairs agree with the transfer, on a ladder, a grid, a grown space, a thick tube and a ladder arm spliced onto a grid. (2) The reduction lemma (proved for the transfer and the pipeline). Across a 3-edge cut, a side holding neither the attachment point nor the gluing line acts as the vertex it lost, so replacing it by that vertex leaves the transfer and the pipeline's creation unchanged, with the handle's ports on corresponding lines. Checked at every attachment point of two rings spliced onto the 64-point grid and four small junctions: 253,536 (line, removal, far side) cases with no disagreement; exactly (join method) on the 21-point junction, 1,080 cases. (3) So the faces-around-the-point law holds in the reduced space: all 554 creating far lines on the point's side lie on a face around it there, including the 28 off those faces in the spliced space, the junction counterexample of FACE-CLAIM-20261103-001C. A ring point sees the closed prism, where the ring's far face is its opposite face.",
+  "dependencies": [
+    "FACE-CLAIM-20261103-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A port pattern that does not fix the ports' height differences, or a frozen point whose height difference to the ports varies.",
+    "A line whose transfer shows at most two patterns without two frozen points, or the converse.",
+    "A gluing line on the attachment point's side of a 3-edge cut where creation differs between the spliced and the reduced space.",
+    "A creating far line on the point's side off the faces around the point in the reduced space."
+  ],
+  "lineage": {
+    "home_scope": "STRIP-RELAY-20261103-001",
+    "epic_path": [
+      "STRIP-RELAY-20261103-001"
+    ],
+    "parents": [
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py",
+      "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/manifest.json",
+      "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/result.json",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json",
+      "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json",
+      "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json",
+      "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json": "494f9947dd2901c987c9e40297b028776e803ad56b6ae051bc209ac0ab7abfe2",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json": "01ed653b9d0aedcc186c1835a975f6d437946046546eff58baeadf507e285f39",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py": "55bf8bb3096978270faf9728d4baf4e8529419ae751af66c7bb32cb21bb8c98f",
+    "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/manifest.json": "1091b3ef7beda095dddfedaafe8ea6d69b17d7ebd37ac2f7a9f117b4fd843607",
+    "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/result.json": "3f93bd87e3d00ce8f8967c5811b061de596415cd27e4eecfe2110f1fa81061fb",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json": "fb45da2586ce3357994f7b9f239a2c42aed97bc28e8b9e30b10eefcd8e11a82b",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json": "5dcf25a769fd199fd996a7426c10be3cae8908bdd0cb85fc2022fc1ad24ad212",
+    "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/transfer_lib.py": "570c7a63a090648e999df5b319c74b8eb3ff0b7fd63725dd6d710c4c0a0ae2f4",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "e8b7c28499893abe82eb07589a5463adc20417d4a5d1f851a7df6862acf08d4e",
+    "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "26efbb2ef81bed4787f3943d212dbf794f9d7dde159980a96ea32874c4eba23d",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json": "636b899b6a14b0336e59c7b0a791cc68320ff44c0cfcc808e57e3c22aaf5be63",
+    "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json": "f74a2de1cadc7af13e1a01edcddb093a9a1cb5efd6a1c9cf58e78515aaaed19b",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1"
+  },
+  "paths": {
+    "manifest": "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json",
+    "identity": "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/identity.json",
+    "directory": "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction",
+    "proof": "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/proof.md",
+    "result": "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json",
+    "check": "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "heights_and_reduction_checked": true
+  },
+  "foundation_claim_scope": "Point splits of ladders, grids, grown spaces, thick tubes and rings spliced onto grids; the Fano plane as handle; four census far sides; exact creation on a 21-point junction.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03.",
+    "status": "heights lemma proved and checked; reduction lemma proved and checked with the pipeline and, on a small junction, with exact creation; no human or external review",
+    "novelty": "New here; L-natural convexity of difference-constraint sets and the interface lemma are prior."
+  }
+}

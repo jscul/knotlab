@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EMERGENCE-BITS-20261021-001C-E001",
+  "ticket": "EMERGENCE-BITS-20261021-001C",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "Disposable scoping probes on 2026-10-21, not evidence. With not-all-equal on every edge, square tori a x a with a odd gave E = 0.88, 0.82, 0.83, 0.86, 0.84 at a = 5, 9, 13, 17, 25, and a x 2a gave 1.10, 1.12, 1.13, 1.12, 1.17 (6,000 samples each). Honeycomb tori fell from 0.042 to 0 by 12 x 13; triangular tori rose from 3.6 to about 11 bits from 3 x 3 to 6 x 6. EMERGENCE-BITS-20261021-001B-P001 proves that bipartite networks hold 0, that a frustrating patch makes emergence grow with area, and that odd tori recolour into random implications plus seam clauses. The open question is size dependence.",
+  "question": "Put a not-all-equal relation NAE(h_u, x_e, h_v) on every edge of a torus grid, with hidden joints h at the vertices and uniformly random visible spokes x on the edges. How does the emergence E = -log2 P[the spokes extend to the joints] depend on the size of the torus at fixed shape? Is it a size-independent positive amount on square-lattice tori with an odd side, while it vanishes on honeycomb tori with an odd side and grows with the area on triangular tori?",
+  "public_inputs": {
+    "square_odd": "a x a square-lattice torus, a in {9, 13, 17, 25, 33, 41} (both sides odd), 8,000 samples each",
+    "square_odd_by_even": "a x 2a square-lattice torus, a in {9, 13, 17, 25, 33} (one odd side, shape 1:2), 8,000 samples each",
+    "honeycomb_odd": "brick-wall honeycomb torus a x (a+1), a in {4, 8, 12, 16, 24} (odd rows of length a+1), 6,000 samples each",
+    "triangular": "triangular-lattice torus a x a, a in {3, 4, 5}, 20,000 samples each",
+    "square_even_control": "a x a square-lattice torus, a in {8, 16, 32} (bipartite), 2,000 samples each",
+    "parity_control": "parity links on the 3 x 3 and 5 x 5 square tori, 500 samples each"
+  },
+  "definitions": "Spokes are independent fair bits, one per edge. A sample is consistent when some assignment of the joints satisfies NAE on every edge; E = -log2 of the consistent fraction, with standard error by the delta method. Locally bipartite: the graph with the wrap-around edges of its odd sides removed is bipartite. Two solvers judge every square-torus sample: limited backtracking on the original relations, and strongly connected components on the recoloured form (tau = h xor ((i + j) mod 2): random implications on ordinary edges, monotone two-literal clauses on wrap-around edges joining equal colours), built directly from the spokes without the not-all-equal tables.",
+  "primary_observable": "E per (family, size) with its standard error, and the least-squares slope of E against log2(a) for each square family",
+  "predictions": {
+    "H_scale": "For square_odd and for square_odd_by_even separately: the weighted least-squares slope of E against log2(a) has absolute value at most 0.04 bits per doubling, and every E exceeds 0.3 bits.",
+    "H_aspect": "The mean E of square_odd_by_even exceeds the mean E of square_odd by at least 0.1 bits (secondary).",
+    "H_vanish": "honeycomb_odd: E at a = 24 is below 0.01 bits, and the family's E never rises by more than 3 standard errors from one size to the next.",
+    "H_extensive": "triangular: E rises strictly with a, and E per vertex at a = 5 is at least half of E per vertex at a = 3.",
+    "controls": "square_even_control is consistent in every sample; the two solvers agree on every square-torus sample; on parity_control the solver agrees with the cycle-sum criterion on every sample; every square_odd and honeycomb torus is locally bipartite and not bipartite; triangular tori are not locally bipartite."
+  },
+  "decision_rule": "If any control fails, the run is invalid and no hypothesis is decided. Otherwise H_scale is supported when both square families meet its slope and floor conditions; refuted when either family's slope exceeds 0.04 in absolute value by more than three standard errors; inconclusive otherwise. H_vanish and H_extensive are decided by their stated conditions. The ticket is supported when H_scale is supported and H_vanish and H_extensive hold; refuted when H_scale is refuted; closed null otherwise. H_aspect is reported without affecting the verdict.",
+  "resource_budget": {
+    "wall_seconds": 3600,
+    "memory_mib": 2048,
+    "max_vertices": 2178
+  },
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster.",
+  "seeds": "random.Random(f'{family}-{a}-{b}') per row; the parity control uses random.Random('parity-{a}')",
+  "red_team_r0": [
+    "Identifiability: E is a property of the declared torus and the uniform spoke measure; the estimate's only error is sampling, reported per row.",
+    "Leakage: no labels or expected values enter the producer; the predictions are evaluated only in result fields.",
+    "Solver error: every square-torus sample is judged by two independently written solvers on two independently built instances; any disagreement invalidates the run.",
+    "Finite size: sizes span a factor of 4.6 in side length; a slow drift below 0.04 bits per doubling would pass, so the nonclaims exclude any statement about the infinite limit.",
+    "Shape: the two square families differ in topology (two odd sides versus one) and are never pooled.",
+    "Multiplicity: one primary hypothesis decided on two families with a fixed threshold; the secondary hypothesis does not change the verdict."
+  ],
+  "nonclaims": [
+    "Monte Carlo estimates on finite tori up to 41 x 41 and 33 x 66; no statement about the infinite limit and no proof of scale invariance.",
+    "The lattices are declared by the experimenter; this concerns emergence on given surfaces, not a constructed space.",
+    "Any link to critical percolation is an interpretation, not tested here."
+  ],
+  "forbidden_inputs": [
+    "the expected verdicts or scoping values as inputs to the producer",
+    "any coordinate or metric in the consistency computation beyond the declared graph"
+  ]
+}

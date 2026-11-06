@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "artifact_id": "HARD-3D-20261025-001A-P001",
+  "status": "Proved",
+  "checks": {
+    "part1_brute_force_vs_formula": {
+      "cases": {
+        "triangle": {
+          "S3 brute": 6156,
+          "S3 formula": 6156
+        },
+        "triangle with a doubled edge": {
+          "S3 brute": 23868,
+          "S3 formula": 23868
+        },
+        "path P4": {
+          "S3 brute": 34992,
+          "S3 formula": 34992
+        },
+        "triangle, order-8 dihedral": {
+          "brute": 65536,
+          "formula": 65536
+        }
+      },
+      "all equal": true
+    },
+    "part2_interpolation": {
+      "cases": {
+        "triangle": {
+          "edges": 3,
+          "all-rotation count": "12",
+          "2 P(G,3)": 12,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true,
+          "order-8 dihedral: no-central-edge count": "192",
+          "2^|V| P(G,4)": 192,
+          "order-8 dihedral match": true
+        },
+        "square": {
+          "edges": 4,
+          "all-rotation count": "36",
+          "2 P(G,3)": 36,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true,
+          "order-8 dihedral: no-central-edge count": "1344",
+          "2^|V| P(G,4)": 1344,
+          "order-8 dihedral match": true
+        },
+        "K4": {
+          "edges": 6,
+          "all-rotation count": "0",
+          "2 P(G,3)": 0,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true
+        },
+        "diamond": {
+          "edges": 5,
+          "all-rotation count": "12",
+          "2 P(G,3)": 12,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true,
+          "order-8 dihedral: no-central-edge count": "768",
+          "2^|V| P(G,4)": 768,
+          "order-8 dihedral match": true
+        },
+        "wheel W4": {
+          "edges": 8,
+          "all-rotation count": "12",
+          "2 P(G,3)": 12,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true
+        },
+        "triangle with a doubled edge": {
+          "edges": 4,
+          "all-rotation count": "12",
+          "2 P(G,3)": 12,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true
+        },
+        "path P4": {
+          "edges": 3,
+          "all-rotation count": "48",
+          "2 P(G,3)": 48,
+          "nodes distinct": true,
+          "extra value reproduced": true,
+          "match": true,
+          "order-8 dihedral: no-central-edge count": "1728",
+          "2^|V| P(G,4)": 1728,
+          "order-8 dihedral match": true
+        }
+      },
+      "all match": true
+    },
+    "controls": {
+      "results": {
+        "abelian Z6 does not see colourings": true,
+        "wrong target P(G,3) rejected": true,
+        "wrong target 2 P(G,4) rejected": true,
+        "collision of nodes detected for values 2, 4, 8": true
+      },
+      "all pass": true
+    },
+    "all_checks_pass": true
+  }
+}

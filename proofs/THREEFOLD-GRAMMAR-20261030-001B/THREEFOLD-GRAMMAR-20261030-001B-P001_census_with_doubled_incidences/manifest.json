@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-GRAMMAR-20261030-001B-P001",
+  "canonical_id": "THREEFOLD-GRAMMAR-20261030-001B-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-GRAMMAR-20261030-001B",
+  "proof": "THREEFOLD-GRAMMAR-20261030-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Census with doubled incidences",
+  "status": "Proved",
+  "claim": "Census with doubled incidences. (1) A SAT census, with sound and replayed symmetry breaking, of the connected cubic multi-systems (n points, n lines, a point may repeat on a line) that are not 2-colourable, for n <= 10: 1, 0, 1, 1, 2, 2, 8, 12, 36, 97 isomorphism classes, and with one twisted incidence 0, 1, 1, 3, 7, 19, 54, 166, 515, 1726. On every class non-colourability coincides with sign-nonsingularity (twisted: with the twist; every twisted class is 2-colourable without it), every brace of the tight-cut decomposition is a Heawood graph, a doubled square, a planar brace or a non-planar Pfaffian brace (once: the trisum of three cubes, in a twisted 10-point class, which decorates to a linear minimal 35-point system that keeps it), every leaf is a Heawood graph or a doubled square, no Heawood leaf contains the twisted incidence, and the only class with distinct points per line is the Fano plane. (2) Contraction and decoration: replacing points by Fano blocks and lines by dual blocks keeps (twisted) non-colourability, and by the Fano-leaf theorem every connected 3-regular triple system with distinct points per line that is not 2-colourable, other than the Fano plane, arises from a census core by at least two such replacements covering its repeated incidences. Hence the systems with at most 22 points have exactly 7, 13, 19, 21 or 22 points, with 1, 1, 4, 1, 1 isomorphism classes, all linear and minimal; with one twisted incidence exactly 14, 15, 18, 20, 21 or 22 points, with 1, 1, 1, 11, 7, 3 classes. (3) Independent SAT on systems with distinct points per line: none at 14 points, and the only twisted one at 14 points is T14, which is not a brace.",
+  "dependencies": [
+    "THREEFOLD-GRAMMAR-20261030-001A",
+    "THREEFOLD-SPACES-20261030-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "theorem"
+    ]
+  },
+  "failure_conditions": [
+    "A census class that is 2-colourable or not sign-nonsingular, or whose decomposition has a brace other than a Heawood graph, doubled square, planar brace or Pfaffian non-planar brace, or a leaf other than a Heawood graph or doubled square.",
+    "A class lost or gained when the symmetry breaking is removed.",
+    "A decoration of a census core that is 2-colourable, a size up to 22 points outside the stated lists, or different class counts.",
+    "SAT finding an untwisted system with distinct points per line at 14 points, or a twisted class at 14 points other than T14."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-GRAMMAR-20261030-001",
+    "epic_path": [
+      "THREEFOLD-GRAMMAR-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/sat_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "b83e1823674625548ab2038389f4c4e10dc6159d6eb57fa5d2ccb4db56e0ddab",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json": "0c0936cfd650698294cae9e108e39378f36904c45196f32a094632002fbc7bde",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/manifest.json": "fcf3c7016c86c9c2476564f14156a3bbc45fdc424fdc098c05d93524dd3d0d42",
+    "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/result.json": "eddf64cdcc43aa2a23c45dc4398d65994b2556e2911e0a945a0826f457bef477",
+    "proofs/THREEFOLD-SPACES-20261030-001B/THREEFOLD-SPACES-20261030-001B-P001_exhaustive_classification_of_small_three_fold_spaces/sat_lib.py": "e3f236be90c2278dd32c97e70d2542398817020100b39a8e94b20c4698fd3383"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/manifest.json",
+    "identity": "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/identity.json",
+    "directory": "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences",
+    "proof": "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/proof.md",
+    "result": "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/result.json",
+    "check": "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_grammar_census_shown": true
+  },
+  "foundation_claim_scope": "Connected cubic multi-systems with at most 10 points (untwisted and with one twisted incidence); connected 3-regular triple systems with distinct points per line and at most 22 points, via the Fano-leaf theorem of ticket A. External input: Seymour 1974 (a minimal non-2-colourable hypergraph has at least as many edges as vertices), used for connectivity and minimality.",
+  "validation": {
+    "status": "checked: census n <= 10 untwisted and twisted with every class tested (brute-force colouring, SNS, decomposition); census without symmetry breaking replayed for small n with a second solver; all decorations of census cores up to 22 points tested by SAT and classified; independent SAT at 14 points (untwisted UNSAT, twisted enumerated); controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "no overlap found (candidate local delta) for the census of multi-systems, the contraction to cores, and the size spectrum up to 22 points; consistent with THREEFOLD-SPACES-20261030-001B (sizes 7 and 13 up to 13 points)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

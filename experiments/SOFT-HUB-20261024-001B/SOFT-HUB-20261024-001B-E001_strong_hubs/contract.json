@@ -1,0 +1,50 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SOFT-HUB-20261024-001B-E001",
+ "ticket": "SOFT-HUB-20261024-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "SOFT-HUB-20261024-001A-P001 reduces strong hubs to linked pairs, which are open only for the six open knots. Scoping before this contract, disclosed: hill climbing and annealing on the axis 000 only, up to 30 knots and 24 seeds per size, found open-knot hub ratios up to 1.21 (1.09 at 6 to 9 knots, 1.17 at 10, 1.20 at 12, 1.21 at 14, at most 1.20 beyond), not-all-equal 1.16 to 1.33 and the no-lone-1 knot exactly 1. On 20,000 random open-knot gadgets with up to 12 knots, the 3,685 axes violating the split inequality all had hub ratio at most 1. On 343 small gadgets, linked pairs on the axis 000 never exceeded the square of the largest off-axis value (largest ratio 1.0). Triangles, dressings and hubs of hubs built from the 12 best hubs did not exceed the best ratio. Fresh: annealing on all four axes, sizes up to 40, 48 seeds per size; 100,000 random gadgets with up to 16 knots; linked pairs on all four axes of 3,000 small gadgets; wires from two-leg gadgets in the compositions.",
+ "question": "Can gadgets of an open knot make a strong hub? In particular: does any exceed hub ratio the square root of 3 on some axis, does a violation of the split inequality ever come with hub ratio above 1 on the same axis, do linked pairs stay at most the square of the largest off-axis value, and does composing the best hubs amplify the ratio?",
+ "public_inputs": {
+  "knot": "the open knot excluding 000, 011 and 101; the other five are relabellings or complements, and the hub ratio over all four axes is invariant under both",
+  "gadgets": "connected native networks of the knot with pins, free legs (summed) and three terminals, self-loops allowed, as in SOFT-HUB-20261024-001A-P001; F(x) counts consistent assignments with terminal values x, computed exactly",
+  "annealing": "sizes 8, 12, 16, 20, 24, 32 and 40 knots; 48 seeds per size; 30,000 moves (swap two slots, change a pin or free leg, open or close an edge, permute the places of a knot); objective: the largest over the four axes of log(min(F(u), F(u-bar)) / largest off-axis value)",
+  "sampling": "100,000 random gadgets with 1 to 16 knots",
+  "pairs": "3,000 random gadgets with 1 to 7 knots and at most 15 unpinned variables; for every axis with F(u)F(u-bar) at most 6,000, every pair is classified as separated or linked by its difference components",
+  "compositions": "the 12 gadgets with the best hub ratio from the annealing: triangles of three (all leg orders), each dressed on its legs by two-leg wires obtained by closing one leg of a best gadget or of a single knot with a pin or free leg, and hubs of hubs closed by a best gadget"
+ },
+ "definitions": "Axis {u, u-bar}; split products s_u = sum_i F(u + e_i) F(u-bar + e_i); hub ratio rho_u = min(F(u), F(u-bar)) / max over x off the axis of F(x); M_u the largest off-axis value; link_u the number of linked pairs (one difference component contains all three terminals).",
+ "predictions": {
+  "P1_bounded_ratio": "fresh at scale: no open-knot gadget found by annealing or sampling has rho_u above the square root of 3 on any axis",
+  "P2_dichotomy": "fresh at scale: no open-knot gadget, annealed or sampled, has an axis with F(u)F(u-bar) > s_u and rho_u > 1",
+  "P3_linked_pairs": "fresh at scale: on every small open-knot gadget and every axis checked, link_u <= M_u^2",
+  "P4_no_amplification": "no composition exceeds the largest hub ratio among the 12 gadgets it is built from",
+  "reported": "best hub ratio by size and seed counts above 1, 1.2 and 1.5; the best gadgets; the largest link_u / M_u^2; the number of axes violating the split inequality"
+ },
+ "controls": "(i) no-lone-1 knot: annealing at sizes 8 and 16 (24 seeds) and 20,000 random gadgets never exceed rho_u = 1 (SOFT-HUB-20261024-001A-P001, Theorem 5); (ii) not-all-equal: annealing at sizes 3, 8 and 16 (24 seeds) reaches rho_u >= 4/3, and neither its annealed nor 20,000 random gadgets violate F(u)F(u-bar) <= s_u (Theorem 4, given McQuillan); (iii) the dichotomy test flags the planted function F = [2, 1, 0, 0, 0, 0, 1, 2] on the axis 000; (iv) on the small gadgets, separated + linked = F(u)F(u-bar) and separated <= s_u on every axis (Lemma 2)",
+ "decision_rule": "If a control fails, the result is invalid. Supported if P1, P2, P3 and P4 all hold. Refuted otherwise, naming the predictions that failed.",
+ "resource_budget": {
+  "wall_seconds": 7200,
+  "memory_mib": 8192,
+  "threads": 24
+ },
+ "stop_rule": "Run controls, then every part once, writing rows as they finish; decide when all parts are in. No adaptive extension.",
+ "seeds": "annealing: 1000 * size + seed index, plus 500000 for controls; sampling: 20261025; pairs: 20261026; compositions are deterministic",
+ "environment": "the workspace .venv Python with numpy for annealing, sampling and compositions; the pair classification uses the standard library",
+ "red_team_r0": [
+  "A search cannot prove a bound: P1 and P2 holding is evidence for a conjecture, not a theorem. A better search or larger gadgets could still find strong hubs.",
+  "The annealer weakens at large sizes (scoping: it failed to find the no-lone-1 knot's ratio 1 above 14 knots), so the large-size rows are weak evidence.",
+  "P3 is checked only on small gadgets where pairs can be enumerated.",
+  "Hub ratio is a proxy: hardness through hubs needs amplification to near-exact hubs, and a bounded ratio rules out only that route."
+ ],
+ "nonclaims": [
+  "No approximation scheme or hardness result for the open knots.",
+  "No proof of a hub-ratio bound."
+ ],
+ "forbidden_inputs": [
+  "Expected ratios as inputs"
+ ],
+ "outputs": "artifacts/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/rows.jsonl, controls.json and result.json"
+}

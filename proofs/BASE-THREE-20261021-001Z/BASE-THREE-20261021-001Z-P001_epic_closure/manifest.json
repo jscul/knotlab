@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "BASE-THREE-20261021-001Z-P001",
+  "canonical_id": "BASE-THREE-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "BASE-THREE-20261021-001Z",
+  "proof": "BASE-THREE-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the base-three epic",
+  "status": "Proved",
+  "claim": "Ledger closing BASE-THREE-20261021-001: one line per conclusion with its novelty label and evidence, the challenged assumptions, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "BASE-THREE-20261021-001A",
+    "BASE-THREE-20261021-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved or its checks did not pass.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A and B proved)."
+  ],
+  "lineage": {
+    "home_scope": "BASE-THREE-20261021-001",
+    "epic_path": [
+      "BASE-THREE-20261021-001"
+    ],
+    "parents": [
+      "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/manifest.json",
+      "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/result.json",
+      "proofs/BASE-THREE-20261021-001B/BASE-THREE-20261021-001B-P001_regime_carriers/manifest.json",
+      "proofs/BASE-THREE-20261021-001B/BASE-THREE-20261021-001B-P001_regime_carriers/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/manifest.json": "aa555d56fbfa143fd766cd9abd39cc13770ebbbb1827d10c46b04fe1fcf1b41d",
+    "proofs/BASE-THREE-20261021-001A/BASE-THREE-20261021-001A-P001_three_regimes/result.json": "de91e04b3e5d2e98acd116a341b60a1a122b9118357956f999ea61f546a4387a",
+    "proofs/BASE-THREE-20261021-001B/BASE-THREE-20261021-001B-P001_regime_carriers/manifest.json": "46fe3b84a80ae39b11c915d2622689cb5f496b86e1992a3ebd2b7007084b5221",
+    "proofs/BASE-THREE-20261021-001B/BASE-THREE-20261021-001B-P001_regime_carriers/result.json": "15db07353b5fc162509aad39352840c783ab07bfd8043a23df86b4a3cf0e5075"
+  },
+  "paths": {
+    "manifest": "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/BASE-THREE-20261021-001Z/BASE-THREE-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the two Proved proofs and their passed results; decision note present; tickets proved; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

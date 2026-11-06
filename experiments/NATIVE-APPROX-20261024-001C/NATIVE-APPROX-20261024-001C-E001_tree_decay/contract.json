@@ -1,0 +1,60 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NATIVE-APPROX-20261024-001C-E001",
+ "ticket": "NATIVE-APPROX-20261024-001C",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "NATIVE-APPROX-20261024-001A-P001 leaves six knots without an efficient counting algorithm, and NATIVE-APPROX-20261024-001B-P001 identifies them as twisted Fibonacci knots. Scoping before this contract, disclosed: one probe printed all 34 knots on 20 random native trees per depth, without pins, with all leaves 0, all 1 or all free. The largest spread of the root marginal was 0.38 to 0.50 at depth 4, 0.0018 to 0.007 at depth 8 and at most 0.0002 at depth 12 for the six open knots; 0.0056, 0 and 0 for the clause excluding 000; 0.029, 0.0002 and 0 for the knot excluding 000 and 110; 0.25, 0.0006 and 0 for the knot excluding 011 and 101; and it stayed at 1.0, 0.618 and 0.5 for not-all-equal, the no-lone-value knots and parity. Worst-case envelopes over all leaf boundaries, depths 6 and 10, and trees with internal pins are fresh.",
+ "question": "On random native trees, does the worst-case influence of the leaf boundary on the root edge decay with depth for the six twisted Fibonacci knots, as it does for windable knots without forcing?",
+ "public_inputs": {
+  "knots": "the six open knots (excluded 000,011,101; 000,011,110; 000,101,110; 001,010,111; 001,100,111; 010,100,111); controls that decay: the clause excluding 000, the knot excluding 000 and 110, the knot excluding 011 and 101; controls that persist: both parity knots, both no-lone-value knots, and not-all-equal",
+  "trees": "a native tree of depth L: knots sit at levels 0 to L - 1; every knot has one parent edge in a uniformly chosen place and two child places; each child place is a pin (uniform value) with probability q, otherwise it holds a knot of the next level, or a boundary leaf with an arbitrary value if the next level is L; the root knot's parent edge is the root edge",
+  "depths": [
+   4,
+   6,
+   8,
+   10,
+   12,
+   14,
+   16
+  ],
+  "pin_probability": [
+   0.0,
+   0.2
+  ],
+  "trees_per_setting": 100,
+  "measure": "width W = max minus min over all leaf boundary assignments of P(root edge = 1), computed exactly by propagating intervals of the ratio Z(edge = 1)/Z(edge = 0) and evaluating each knot at the corners of its children's intervals"
+ },
+ "definitions": "A knot's recursion is a Mobius map in each child ratio when the other is fixed, so over a box of child ratios its extremes are at corners; K2 guarantees a positive count at every corner.",
+ "predictions": {
+  "P1_open_knots_decay": "fresh: for each of the six open knots and each pin probability, the median width over the 100 trees at depth 12 is below 0.001 and at most 0.01 times the median width at depth 4",
+  "P2_windable_controls_decay": "fresh: the same holds for the three decaying controls",
+  "P3_persistence_controls": "control of the measure: at pin probability 0, the median width at depth 12 is at least 0.5 for both parity knots, both no-lone-value knots and not-all-equal",
+  "reported": "per knot, pin probability and depth (4 to 16): median, mean and maximum width, and the number of trees with at least one boundary leaf; fitted decay per level of the median width. The predictions use depths 4 and 12 only; depths 14 and 16 are reported to show the rate beyond them."
+ },
+ "controls": "(i) on 50 random trees of depth at most 3 per knot, interval propagation equals brute-force enumeration of all leaf boundary assignments (minimum and maximum of the root marginal); (ii) P3",
+ "decision_rule": "If control (i) fails, or P3 fails, the result is invalid. Refuted if P1 fails for some open knot: its boundary influence does not fall below the thresholds by depth 12. Supported if P1 and P2 hold. Inconclusive if P1 holds and P2 fails.",
+ "resource_budget": {
+  "wall_seconds": 3600,
+  "memory_mib": 2048,
+  "threads": 1
+ },
+ "stop_rule": "Run controls, then every setting once, writing rows as they finish; decide when all settings are in. No adaptive extension.",
+ "seeds": "sha256 digests of knot, pin probability, depth and tree index (run.py); controls use seed 20261024",
+ "environment": "CPython 3, standard library only",
+ "red_team_r0": [
+  "Decay on random trees is evidence for correlation decay, not a proof of strong spatial mixing on every graph; adversarial slot assignments and long chains of pinned knots (wires, which transmit without loss) are not sampled systematically.",
+  "Persistence would not imply hardness of approximation: not-all-equal persists by forcing and still has an approximation scheme.",
+  "Depth 12 limits the observable rate; slow but exponential decay could miss the thresholds.",
+  "The scoping probe used restricted boundaries on trees without pins, so part of P1 at pin probability 0 is partly seen."
+ ],
+ "nonclaims": [
+  "No approximation algorithm or hardness result for the open knots.",
+  "No statement about networks with cycles beyond what trees suggest."
+ ],
+ "forbidden_inputs": [
+  "Expected widths as inputs"
+ ],
+ "outputs": "artifacts/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/rows.jsonl, controls.json and result.json"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FOUR-PREFER-20261101-001B-P001",
+  "canonical_id": "FOUR-PREFER-20261101-001B-P001",
+  "kind": "proof",
+  "ticket": "FOUR-PREFER-20261101-001B",
+  "proof": "FOUR-PREFER-20261101-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Every failing class builds a link",
+  "status": "Proved",
+  "claim": "Every four-place knot class that fails on small 4-regular systems builds a link, so it is NP-complete on 4-regular 4-uniform systems and its failures are coNP-complete to recognise. Classes 1, 2 and 5 have five-point link pieces; classes 4, 6, 7, 8, 9, 10 and 12 each have a three-point piece (three internal points on four lines, one port per line) accepting a relation of the twelve class, so replacing each line of the twelve class's link piece by such a piece (lifting) gives a link piece. A regularization for link pieces of any size (equality cycles of copies, free ports filling spares and absorbers) then maps every signed instance to a 4-regular 4-uniform system with the same satisfiability, and Schaefer's theorem applies. Checked: the realizations by enumeration, every lifted link's accepted relation by SAT, and the regularization end to end against a SAT solver for every class.",
+  "dependencies": [
+    "FOUR-PREFER-20261101-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A lifted piece whose accepted relation is not a link with free ports on different lines.",
+    "A regularized system that is not 4-regular or simple, or differs in satisfiability from its source.",
+    "A failing class with no realization of the twelve class and no direct link."
+  ],
+  "lineage": {
+    "home_scope": "FOUR-PREFER-20261101-001",
+    "epic_path": [
+      "FOUR-PREFER-20261101-001"
+    ],
+    "parents": [
+      "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/manifest.json",
+      "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/result.json",
+      "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/prefer_lib.py",
+      "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/manifest.json",
+      "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/manifest.json": "23d6542011d00fdc9650b71ae9d40e593103322dae80c993ece69791ef53e905",
+    "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/result.json": "262e1b5ae2ecfd94b23d87340994e7cd8442f2189e85a2484ef85b82f3912763",
+    "proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/prefer_lib.py": "39186e2c482fbac7a8e3fbbf1fd9351d02db4a7ff9bf51ed2f3bb9604d134132",
+    "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/manifest.json": "80aad424e075342e2984ee33d0095515c3cc9f4fc8ff30027dcc904b88edd513",
+    "proofs/FOUR-PLACE-20261031-001C/FOUR-PLACE-20261031-001C-P001_the_other_value_free_laws_build_equality/result.json": "7fe81f4e95705b622f7d6f3c1041135b6384d13e4998f4e0fd49597b4b77cec0"
+  },
+  "paths": {
+    "manifest": "proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link/manifest.json",
+    "identity": "proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link/identity.json",
+    "directory": "proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link",
+    "proof": "proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link/proof.md",
+    "result": "proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link/result.json",
+    "check": "proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "four_place_failing_classes_hard_shown": true
+  },
+  "foundation_claim_scope": "Decision complexity of ten value-preferring classes on regular systems; no counting claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: realizations and link pieces by enumeration, lifted links by SAT, the regularization end to end; no human or external review",
+    "novelty": "Gadget composition and bounded-occurrence regularization are classical techniques; the pieces are explicit and new."
+  }
+}

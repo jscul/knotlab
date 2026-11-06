@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HUB-DIMENSION-20261024-001B-P001",
+  "canonical_id": "HUB-DIMENSION-20261024-001B-P001",
+  "kind": "proof",
+  "ticket": "HUB-DIMENSION-20261024-001B",
+  "proof": "HUB-DIMENSION-20261024-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The Fibonacci rule needs a negative weight in three dimensions",
+  "status": "Proved",
+  "claim": "With labels on edges, the Fibonacci rule on triangles and real Turaev-Viro-form weights with full support (per tau edge, per triangle with two or three tau edges, per admissible tetrahedron class, per vertex), the 2-3 and 1-4 identities force d t2 t3 W9 = 1, W8 = W9 t3/t2, W4^2 = W9 t3/t2^2, d^2 = d + 1 and W10 = -(W9 t2)^2 < 0: the all-tau tetrahedron carries a negative weight, so no non-negative weighting, in particular no count of hidden witnesses, makes the Fibonacci rule a three-manifold invariant in this form. An exact solution exists in Q(sqrt 5) (d = phi, W10 = -1/phi^2, vertex weight (5 - sqrt 5)/10), and unweighted counts fail.",
+  "dependencies": [
+    "HUB-DIMENSION-20261024-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "One of the identities used in the derivation is absent from the generated move identities.",
+    "A real full-support solution with a non-negative all-tau tetrahedron weight.",
+    "The stated exact solution fails an identity.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "HUB-DIMENSION-20261024-001",
+    "epic_path": [
+      "HUB-DIMENSION-20261024-001"
+    ],
+    "parents": [
+      "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HUB-DIMENSION-20261024-001A/HUB-DIMENSION-20261024-001A-P001_bits_see_mod2_cohomology/manifest.json": "9f298e54aae39808118ecd96c19d0e425d1f4402fafd04ef56c063a039a63be6"
+  },
+  "paths": {
+    "manifest": "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/manifest.json",
+    "identity": "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/identity.json",
+    "directory": "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign",
+    "proof": "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/proof.md",
+    "result": "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/result.json",
+    "check": "proofs/HUB-DIMENSION-20261024-001B/HUB-DIMENSION-20261024-001B-P001_fibonacci_needs_a_sign/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "fibonacci_sign_shown": true
+  },
+  "foundation_claim_scope": "Polynomial identities of weighted state sums on triangulations; classical quantum topology cited as background. No physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library, exact polynomial and Q(sqrt 5) arithmetic) confirms the five identities used among the 19 generated, the derivation on 200 random rational points, the exact solution and the failure of unweighted counts; three controls. No human or external review",
+    "level": "V1 prose proof with exact algebraic checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

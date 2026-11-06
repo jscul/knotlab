@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "artifact_id": "KNOT-COMPETITION-20261019-001Z-P001",
+  "canonical_id": "KNOT-COMPETITION-20261019-001Z-P001",
+  "kind": "proof",
+  "ticket": "KNOT-COMPETITION-20261019-001Z",
+  "proof": "KNOT-COMPETITION-20261019-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the competition epic",
+  "status": "Proved",
+  "claim": "Ledger closing KNOT-COMPETITION-20261019-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "KNOT-COMPETITION-20261019-001A",
+    "KNOT-COMPETITION-20261019-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "cnf-arity"
+  ],
+  "evidence_modes": [
+    "audit"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound proof manifest, experiment contract or experiment result changes, or the proof is not Proved.",
+    "A bound experiment result did not pass its frozen checks.",
+    "The decision note is missing.",
+    "A ticket of the epic lacks a terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-COMPETITION-20261019-001",
+    "epic_path": [
+      "KNOT-COMPETITION-20261019-001"
+    ],
+    "parents": [
+      "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json": "bf8af759dace62852e5d35c8107432edd2cabdb3a52cfaadedd460bc0c650ff1",
+    "experiments/KNOT-COMPETITION-20261019-001B/KNOT-COMPETITION-20261019-001B-E001_near_and_far_census/contract.json": "b041d37809d642c43d8d8083258347d7faa3eb1d19910fc54e62cc16964cac79",
+    "experiments/KNOT-COMPETITION-20261019-001B/KNOT-COMPETITION-20261019-001B-E002_growing_separation/contract.json": "9586f36080b85ef51b41f5c9d9a8f818559896910132da33c1e055ead613a1d4",
+    "artifacts/KNOT-COMPETITION-20261019-001B/KNOT-COMPETITION-20261019-001B-E001_near_and_far_census/result.json": "e0b56a5d476aad977f7c2de96cc87cf3bb0e517c39ece59fa8e00786ca4f47ed",
+    "artifacts/KNOT-COMPETITION-20261019-001B/KNOT-COMPETITION-20261019-001B-E002_growing_separation/result.json": "68de8263393086d221c0ea5466ac83811cc4a7a2d56cd8acfd15288d3bcddd4b"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-COMPETITION-20261019-001Z/KNOT-COMPETITION-20261019-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/KNOT-COMPETITION-20261019-001Z/KNOT-COMPETITION-20261019-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/KNOT-COMPETITION-20261019-001Z/KNOT-COMPETITION-20261019-001Z-P001_epic_closure",
+    "proof": "proofs/KNOT-COMPETITION-20261019-001Z/KNOT-COMPETITION-20261019-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/KNOT-COMPETITION-20261019-001Z/KNOT-COMPETITION-20261019-001Z-P001_epic_closure/result.json",
+    "check": "proofs/KNOT-COMPETITION-20261019-001Z/KNOT-COMPETITION-20261019-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": true,
+    "three_cnf_boundary_proved": true,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": true,
+    "two_cnf_three_cnf_knot_boundary_proved": true,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "competition_reading_defined": true,
+    "three_variable_least_set_knots_are_not_all_equal": true,
+    "no_least_set_knot_on_four_or_more_variables": true,
+    "every_three_variable_relation_by_gadgets_with_hidden_variables": true,
+    "readings_agree_when_satisfiable": true,
+    "strict_pairwise_rules_never_allow_a_knot": true,
+    "competition_needs_equal_weights_for_the_triangle_knot": true,
+    "question_10_decided": false
+  },
+  "thesis_alignment": {
+    "protected_thesis": "native-3-cnf-positive-native-2-cnf-negative",
+    "two_cnf_native_emergence": "proved_absent",
+    "three_cnf_native_emergence": "proved_present",
+    "two_cnf_irreducible_joint_contact": "proved_absent",
+    "two_cnf_loop_erasure_contact_loss": "proved_absent",
+    "three_cnf_irreducible_joint_contact": "proved_present",
+    "three_cnf_loop_erasure_contact_loss": "proved_present",
+    "two_cnf_atomic_logical_topology": "proved_absent",
+    "three_cnf_atomic_logical_topology": "proved_present",
+    "irreducible_joint_contact_checked": true,
+    "loop_erasure_contact_loss_checked": true,
+    "encoding_firewall_checked": true,
+    "bare_semantics_only_is_terminal": false,
+    "thesis_status": "supported",
+    "scope": "Inherited from KNOT-COMPETITION-20261019-001A-P001 and KNOT-COMPETITION-20261019-001B-E002 under the forgetting reading of K1-K3, for both readings of a frustrated system; this closure makes no new claim."
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to its Proved proof and passed experiment results; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, passed experiment results, decision note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "known-overlap-found for conclusions 1 and 4; candidate-local-delta for conclusion 2; textbook for conclusion 3; no-overlap-found for conclusions 5 and 6.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-19."
+  }
+}

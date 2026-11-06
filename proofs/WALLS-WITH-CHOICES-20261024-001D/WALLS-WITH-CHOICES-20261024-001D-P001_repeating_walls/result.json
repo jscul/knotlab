@@ -1,0 +1,187 @@
+{
+  "artifact_id": "WALLS-WITH-CHOICES-20261024-001D-P001",
+  "checks": {
+    "control configuration": {
+      "class": [
+        1,
+        1
+      ],
+      "class of the walk": [
+        -1,
+        2
+      ],
+      "closed walk length": 18,
+      "configuration": 30817,
+      "cover sheets": 3,
+      "det(c, e)": 3,
+      "enumeration capped": false,
+      "moves valid": true,
+      "odd": true,
+      "passes the criterion": true,
+      "placement": 147,
+      "rebuilt from the walk alone": true,
+      "simple cycles": 2,
+      "simple cycles crossing the cylinder": 2,
+      "simple cycles passing the criterion": 2,
+      "torus": "3x3",
+      "torus triangles visited twice": 4,
+      "twist": "01",
+      "values of |det(c, e)| among them": [
+        3
+      ],
+      "wall states visited twice": 0
+    },
+    "witnesses": [
+      {
+        "class": [
+          2,
+          1
+        ],
+        "class of the walk": [
+          3,
+          3
+        ],
+        "closed walk length": 46,
+        "configuration": 7860857,
+        "cover sheets": 3,
+        "det(c, e)": 3,
+        "enumeration capped": false,
+        "moves valid": true,
+        "odd": true,
+        "passes the criterion": true,
+        "placement": 159,
+        "rebuilt from the walk alone": true,
+        "simple cycles": 692,
+        "simple cycles crossing the cylinder": 516,
+        "simple cycles passing the criterion": 0,
+        "torus": "3x4",
+        "torus triangles visited twice": 15,
+        "twist": "11",
+        "values of |det(c, e)| among them": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "wall states visited twice": 7
+      },
+      {
+        "class": [
+          0,
+          1
+        ],
+        "class of the walk": [
+          -3,
+          -3
+        ],
+        "closed walk length": 44,
+        "configuration": 7985754,
+        "cover sheets": 3,
+        "det(c, e)": 3,
+        "enumeration capped": false,
+        "moves valid": true,
+        "odd": true,
+        "passes the criterion": true,
+        "placement": 159,
+        "rebuilt from the walk alone": true,
+        "simple cycles": 244,
+        "simple cycles crossing the cylinder": 198,
+        "simple cycles passing the criterion": 0,
+        "torus": "3x4",
+        "torus triangles visited twice": 16,
+        "twist": "11",
+        "values of |det(c, e)| among them": [
+          1,
+          2,
+          3
+        ],
+        "wall states visited twice": 2
+      },
+      {
+        "class": [
+          1,
+          2
+        ],
+        "class of the walk": [
+          -3,
+          -1
+        ],
+        "closed walk length": 38,
+        "configuration": 6433130,
+        "cover sheets": 5,
+        "det(c, e)": 5,
+        "enumeration capped": false,
+        "moves valid": true,
+        "odd": true,
+        "passes the criterion": true,
+        "placement": 159,
+        "rebuilt from the walk alone": true,
+        "simple cycles": 374,
+        "simple cycles crossing the cylinder": 306,
+        "simple cycles passing the criterion": 0,
+        "torus": "3x4",
+        "torus triangles visited twice": 13,
+        "twist": "11",
+        "values of |det(c, e)| among them": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "wall states visited twice": 2
+      }
+    ]
+  },
+  "claim": "For placement 159 on the 3 x 4 torus in twist 11, three certified configurations (7860857, 7985754, 6433130) have an assignment along an odd class ((2, 1), (0, 1), (1, 2)) on a cyclic cover of 3, 3 or 5 sheets, while none of the 692, 244 or 374 simple cycles of the wall graph passes the criterion of the wall theorem. So every good closed walk visits a wall state twice; the crossing wall of the cover assignment is one, with class (3, 3), (-3, -3) or (-3, -1), and rebuilds an assignment alone. Simple cycles are an incomplete decider for the honeycomb contacts with a free place.",
+  "controls": {
+    "147: the crossing wall visits no wall state twice": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "WALLS-WITH-CHOICES-20261024-001D-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "simple_cycles_insufficient_shown": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "WALLS-WITH-CHOICES-20261024-001D"
+}

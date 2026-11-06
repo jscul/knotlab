@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "INTERFERENCE-20261029-001B-P001",
+  "canonical_id": "INTERFERENCE-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "INTERFERENCE-20261029-001B",
+  "proof": "INTERFERENCE-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Signed patterns of patterns: signed laws survive native coarse-graining",
+  "status": "Proved",
+  "claim": "Signed three-bit laws (weights plus or minus one whose support is a knot) under native gadgets of their own copies (every hidden variable in exactly two distinct copies, three legs). Theorem 1: an exact signed fixed point, legs relabelled, multiplies any network's signed sum by its factor per copy and keeps its law at every level of its tower. Lemma 2: two copies sharing two variables contract to a multiple of the identity exactly when a flattening has orthogonal rows of equal norm; unsigned, only parity; every exact fixed point of the three-copy shape with a doubled edge contracts that edge to an invertible matrix (19,840 signed wires and 32 shears among 19,872 cases). Theorem 3 (exhaustive over native gadgets of three and five copies, every shape, placement and sign pattern): without signs only the two parity classes are rebuilt (GEOMETRY-LAW-20261029-001A); with signs 14 of the 16 classes are rebuilt and 12 have exact signed fixed points, 10 of them on the native triangle (Sierpinski gasket); the two Fibonacci fusion knots (no lone one, no lone zero) are never rebuilt and the symmetric atoms (or, nand) are rebuilt but never exact. Proposition 4: signed not-all-equal with -1 on 110 is exact on the native triangle with factor 3, and every signed not-all-equal-type law with positive Cayley hyperdeterminant is exact there (sufficient, not necessary). Proposition 5: under the shared-boundary (triangular-lattice) substitution, signed laws constant on rotation orbits of the seven cyclic knots (22 laws) are exact on the tetrahedron, octahedron and icosahedron only for parity.",
+  "dependencies": [
+    "GEOMETRY-LAW-20261029-001A",
+    "EXACT-TOWERS-20261029-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The unsigned baseline disagrees with GEOMETRY-LAW-20261029-001A (only parity rebuilt).",
+    "A reported exact signed fixed point whose leg function is not a nonzero multiple of a placement of the law.",
+    "A tower of an exact signed fixed point whose level-two or level-three law differs from the law."
+  ],
+  "lineage": {
+    "home_scope": "INTERFERENCE-20261029-001",
+    "epic_path": [
+      "INTERFERENCE-20261029-001"
+    ],
+    "parents": [
+      "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json",
+      "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json",
+      "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json",
+      "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/manifest.json": "011edccb8f58cf1c4c9d424c7e91336bb2028b67ab738d22180bf7b0ea21c45c",
+    "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json": "eeec92bbfc5beadfa9645e3da52df559e242bf062c42fa8ffdd67237f84026ac",
+    "proofs/GEOMETRY-LAW-20261029-001A/GEOMETRY-LAW-20261029-001A-P001_only_parity_is_rebuilt_by_native_gadgets_of_its_copies/result.json": "a3a77a4ad331ee970fa5a3fcc30021a26ef0e1d220dbdbc35a0da75718616cb0",
+    "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json": "1c189b23f00a9ff7e3e59bf91a72cf87a085176215cf79aa7bf5f503b525a9e8"
+  },
+  "paths": {
+    "manifest": "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json",
+    "identity": "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/identity.json",
+    "directory": "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining",
+    "proof": "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/proof.md",
+    "result": "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json",
+    "check": "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "signed_native_census_shown": true
+  },
+  "foundation_claim_scope": "Signed three-bit laws (weights in {-1,0,1} with a knot as support) under native gadgets of three and five copies, every shape and placement; supports read as allowed states under the interference reading (allowed when the signed witness sum is nonzero), beside the canonical existential reading; shared-boundary test on three closed surfaces for laws constant on rotation orbits.",
+  "validation": {
+    "status": "checked: 34 knots in 16 classes; shapes (2 at three copies, 9 at five); unsigned baseline equals GEOMETRY-LAW (only parity); exhaustive signed census over every shape, placement and sign pattern at three and five copies; 7,108 exact cases iterated to level 4; wires (unsigned only parity) and 19,872 doubled-edge contractions (all invertible); not-all-equal triangle table against the hyperdeterminant; 22 cyclic signed laws contracted exactly on three spheres and their subdivisions; controls fire (40 brute-force gadgets, the explicit not-all-equal triangle, one more sign breaks it, parity with weight 2 on 000 is not exact); three checker failures found and fixed during the work (recorded in the decision note); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "Theorem 1 and Lemma 2 elementary; Theorem 3 and Propositions 4-5: no overlap found (candidate local delta)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

@@ -381,8 +381,9 @@ becomes the degree of a refutation.
 carry it to where it shows. Holes made by loops of witnesses (section 8) are
 shallow, and local reasoning sees them. Holes made by charges are as deep as
 the graph's layout is wide, unless the reasoning computes in the charge's own
-group. We have related results for other proof systems, with tree layouts in
-place of linear ones; they are not yet published here.
+group. Related results for other proof systems, with tree layouts in place of
+linear ones, are in the full record: see "Holes, depth and Tseitin proof
+complexity" in [RESULTS.md](RESULTS.md).
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab depth

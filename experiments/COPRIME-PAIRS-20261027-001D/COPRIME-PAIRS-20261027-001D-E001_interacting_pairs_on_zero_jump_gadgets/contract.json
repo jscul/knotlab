@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COPRIME-PAIRS-20261027-001D-E001",
+ "ticket": "COPRIME-PAIRS-20261027-001D",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "COPRIME-PAIRS-20261027-001C decided pair failures whose higher layers avoid the gadget characters and left 176 of 850 census algebras interacting. Scoping (scoping/README.md) found that zero-jump gadget knots make the pinned count of the interacting algebra free class 3 on (1, 1) at d = 5 an edge-local integer partition function whose edge count is maximal on the diagonal (Brunnian insertion) and strictly smaller across a pair-failing difference, so the edge matrix has rank at least two. This contract tests the same structure on five algebras, against two controls.",
+ "question": "For interacting pair failures satisfying the clean-edge conditions, on zero-jump gadgets at slope d/p: is the edge count F maximal on the diagonal and strictly smaller (but positive) across a pair-failing difference; do vertex-dual pairings vanish on every solution; are the equations of one edge independent of non-neighbouring data on the solution set of the other edges (path P3)?",
+ "public_inputs": {
+  "algebras": "free graded Lie algebras (cd_lib.free_graded): A1 class 3 on (1, 1) at d = 5, p = 11; A2 class 3 on (1, 2) at d = 5, p = 11; A3 class 4 on x (0), y (1) at d = 5, p = 11; A4 class 3 on (1, 2, 2) at d = 4, p = 5; A5 class 3 on (1, 2) at d = 4, p = 5",
+  "slots": "(theta_0, theta_1, theta_2) = (1, 1, 2), (1, 2, 3), (1, 1, 2), (2, 1, 3), (2, 1, 3); control X2 (1, 1, 1)",
+  "summands": "pf_lib.summand_types: amphichiral 3-braids of gd.AMPH whose root characters are exactly {+-theta} at odd order (8_9 at +-1 and 4_1 at +-2 for p = 11, d = 5), (k,1)-cables of T(2,p) at even order 2k (root set R(theta))",
+  "gadget": "pf_lib.build_gadget: zero-jump blocks (first and last strands exact copies of the base value; reading strand separated at every root character; dedicated stabilization copies), vertex blocks then per edge (d-1) unknot blocks + slot-1 block, (d-1) unknot blocks + slot-2 block; per edge one insertion of cable_d([A12, A23]) on bundles (d-1 copies of u, 1 copy of v), (d-1 base strands, slot-1 reading strand), (d-1 base strands, slot-2 reading strand); graphs K2 and the path 0-1-2",
+  "measurement": "pf_lib.Gadget.evaluate on cd_lib.CyclicBraidModel at slope d/p: free data = coefficients of block class colourings below the top layer; equations = pairings <residual, J_t^T s> with block dual colourings, layer by layer; edge count F(sigma_u, sigma_v) = number of private configurations solving every private equation (exhaustive)"
+ },
+ "predictions": {
+  "R1": "F(sigma, sigma) = F_max = p^(private variables) for every sampled vertex state sigma, with every vertex-dual pairing zero",
+  "R2": "1 <= F(0, D) < F_max and 1 <= F(D, 0) < F_max for every sampled D in the theta_0 layer-1 component, vertex pairings zero",
+  "R3": "every vertex-dual pairing vanishes on every solution for random vertex pairs",
+  "R4": "on the path P3: for each configuration (sigma_1, sigma_2, pi_1) and each sampled sigma_0, the set of e0 private solutions equals the K2 solution set at (sigma_0, sigma_1); the e1 private equation values take one value over all of them; vertex pairings vanish; e0 solutions exist",
+  "R5": "hence F_max^4 - (F(0, D) F(D, 0))^2 > 0 for every sampled D (the edge matrix F F^T has rank at least two)"
+ },
+ "controls": {
+  "machinery (any failure makes the run invalid)": "M1 zero-jump blocks: base and end colour 0, reading strand nonzero, copies equal to it, at every root character; M2 insertions leave every cocycle space unchanged (dimension = 1 + number of blocks with a class); M3 on random data, all equations vanish exactly when every layer is solvable",
+  "negative (a match makes the run invalid)": "X1: A1 on the cumulative design (reading strands = last strands) -- R4 locality must fail in some configuration; X2: A1 with the dual slot block of type +-1 (8_9) instead of +-2, so that no block carries duals at +-2 -- the edge count must equal F_max at (0, D) for every sampled D (no deficit)"
+ },
+ "decision_rule": "Invalid if a machinery check fails or a negative control matches. Supported if R1-R5 hold for A1-A5. Refuted otherwise, naming every failed case; neither predictions nor construction change after this contract.",
+ "resource_budget": {
+  "wall_seconds": 14400,
+  "memory_mib": 16384,
+  "threads": 1
+ },
+ "stop_rule": "Run run.py once (after build_check.py); no adaptive extension.",
+ "seeds": "numpy default_rng(20261027) in run.py",
+ "environment": "workspace .venv python (numpy); cd_lib.py (COPRIME-DICHOTOMY-20261027-001A-P001), gd.py (COPRIME-DICHOTOMY-20261027-001B-E002), mlib.py (TRIPLE-SYSTEM-20261027-001B-E001) and cp_lib.py (COPRIME-CLASS2-20261026-001B-P001) imported read-only",
+ "red_team_r0": [
+  "Sampled vertex states and configurations test the structure at random points, not every point; edge counts are exhaustive over private data.",
+  "Locality is tested on one graph shape (a path of two edges); couplings through longer chains or cycles are argued, not measured.",
+  "Prediction and measurement share the gadget model; the controls (cumulative design, an excluded algebra) are the discriminators.",
+  "Scoping found vanishing vertex pairings on single-edge solutions also for free class 4 on (1, 1) at d = 5, which the clean-edge conditions exclude; the conditions may be conservative, so that algebra is not used as a control."
+ ],
+ "nonclaims": [
+  "No hardness proof here (ticket COPRIME-PAIRS-20261027-001E).",
+  "No claim for the 126 census algebras outside the conditions."
+ ],
+ "forbidden_inputs": [
+  "Measured counts as inputs to predictions"
+ ],
+ "outputs": "artifacts/COPRIME-PAIRS-20261027-001D/COPRIME-PAIRS-20261027-001D-E001_interacting_pairs_on_zero_jump_gadgets/result.json, rows.json and run_log.txt"
+}

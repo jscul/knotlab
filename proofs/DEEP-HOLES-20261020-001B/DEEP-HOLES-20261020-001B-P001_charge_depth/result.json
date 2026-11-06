@@ -1,0 +1,238 @@
+{
+  "artifact_id": "DEEP-HOLES-20261020-001B-P001",
+  "checks": {
+    "controls": {
+      "K4|Z2|single: Fourier construction at the toggle width fails": true,
+      "K4|Z2|single: charge sum over the wrong characteristic fails": true,
+      "K4|Z2|single: sweep with a step removed fails": true,
+      "K4|Z3|single: Fourier construction at the toggle width fails": true,
+      "K4|Z3|single: charge sum over the wrong characteristic fails": true,
+      "K4|Z3|single: sweep with a step removed fails": true
+    },
+    "cubic_graphs_on_10_vertices": {
+      "fourier_consistent_below_and_spot_checked": true,
+      "fourier_inconsistent_at_toggle_width": true,
+      "graphs": 19,
+      "graphs_where_depth_exceeds_line_graph_treewidth_plus_one": [
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "full_solution_below_toggle_width_verified": true,
+          "line_graph_treewidth": 4,
+          "toggle_width": 6
+        }
+      ],
+      "sweep_refutes_at_toggle_width": true,
+      "toggle_width_equals_cutwidth_plus_one": true,
+      "toggle_width_equals_monotone": true,
+      "toggle_widths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7
+      ]
+    },
+    "holes": {
+      "boolean_knots": 34,
+      "boolean_rank_is_excluded_minus_one": true,
+      "sum_mod_3_ranks": {
+        "F2": 10,
+        "F3": 10,
+        "F5": 10,
+        "Q": 10
+      }
+    },
+    "levels_by_treewidth": {
+      "3": [
+        5,
+        6
+      ],
+      "4": [
+        6
+      ]
+    },
+    "not_a_function_of_treewidth": true,
+    "tally": {
+      "charge_sum_refutations": 30,
+      "fourier_solutions": 90,
+      "sweep_refutations": 30
+    },
+    "toggle_widths": {
+      "K33|Z2|random": 6,
+      "K33|Z2|single": 6,
+      "K33|Z2|three": 6,
+      "K33|Z3|single": 6,
+      "K33|Z3|three": 6,
+      "K4|Z2|random": 5,
+      "K4|Z2|single": 5,
+      "K4|Z2|three": 5,
+      "K4|Z3|single": 5,
+      "K4|Z3|three": 5,
+      "cube|Z2|random": 6,
+      "cube|Z2|single": 6,
+      "cube|Z2|three": 6,
+      "cubic8_t1|Z2|random": 6,
+      "cubic8_t1|Z2|single": 6,
+      "cubic8_t1|Z2|three": 6,
+      "cubic8_t2|Z2|random": 5,
+      "cubic8_t2|Z2|single": 5,
+      "cubic8_t2|Z2|three": 5,
+      "cubic8_t4|Z2|random": 5,
+      "cubic8_t4|Z2|single": 5,
+      "cubic8_t4|Z2|three": 5,
+      "prism|Z2|random": 5,
+      "prism|Z2|single": 5,
+      "prism|Z2|three": 5,
+      "prism|Z3|single": 5,
+      "prism|Z3|three": 5,
+      "wagner|Z2|random": 6,
+      "wagner|Z2|single": 6,
+      "wagner|Z2|three": 6
+    }
+  },
+  "claim": "For a Z_p charge network on a connected graph (knots at the vertices asking out-flow minus in-flow to equal the charge; distinctions on the edges) with nonzero total charge: (1) a knot on three Boolean distinctions is a hole at its own scope in the complex of partial solutions with rank |E| - 1, so every non-atom knot is one and the plain hole criterion certifies only level 2 on parity, sum-mod-3 and not-all-equal networks; (2) over a ring of characteristic p, and over Z, the affine relaxation refutes the network at the size of a star (3 on cubic graphs); (3) over any field in which p is invertible, the least refuting level is the toggle width tgw(G), whatever the charges: a sweep certificate with integer coefficients refutes at tgw(G) over every ring, and a closed-form Fourier solution exists one level below; (4) on connected cubic graphs with at least 4 vertices the monotone toggle width equals cutwidth + 1. Observed on all 27 connected cubic graphs with 4 to 10 vertices: the toggle width equals the monotone one, so the depth is cutwidth + 1 there.",
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "DEEP-HOLES-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "arc_consistency_and_basic_lp_accept_every_network_proved": false,
+    "atomic_logical_topology_formed": false,
+    "basic_relaxation_orbit_ideal_criterion_proved": false,
+    "candidate_package_persistence_proved": false,
+    "competition_needs_equal_weights_for_the_triangle_knot": false,
+    "competition_reading_defined": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "every_complex_is_a_nerve_kernel_checked": false,
+    "every_three_variable_relation_by_gadgets_with_hidden_variables": false,
+    "extended_path_metric_distance_formed": false,
+    "free_contact_binds_nothing_kernel_checked": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "knot_among_k_loops_needs_k_plus_one_values_kernel_checked": false,
+    "knots_among_loops_are_atoms_kernel_checked": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "loop_rule_kernel_checked": false,
+    "matched_rings_refute_at_star_size_proved": true,
+    "memory_lengths_kernel_checked": false,
+    "minimal_contact_distance_formed": false,
+    "monotone_toggle_width_is_cutwidth_plus_one_on_cubic_graphs_proved": true,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "no_least_set_knot_on_four_or_more_variables": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "permutations_iff_parity_kernel_checked": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "pinned_basic_relaxation_decides_proved": false,
+    "plain_hole_bound_stuck_at_two_proved": true,
+    "question_10_decided": false,
+    "readings_agree_when_satisfiable": false,
+    "ring_exclusion_kernel_checked": false,
+    "ring_knot_or_free_kernel_checked": false,
+    "separation_formed": false,
+    "shape_is_nerve_kernel_checked": false,
+    "shared_identity_witnessed": false,
+    "strict_pairwise_rules_never_allow_a_knot": false,
+    "three_cnf_boundary_proved": false,
+    "three_variable_least_set_knots_are_not_all_equal": false,
+    "three_witness_relaxation_refutes_over_every_ring_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false,
+    "unmatched_field_depth_is_toggle_width_proved": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "DEEP-HOLES-20261020-001B"
+}

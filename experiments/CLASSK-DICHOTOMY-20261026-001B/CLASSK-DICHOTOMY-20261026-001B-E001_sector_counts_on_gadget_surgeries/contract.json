@@ -1,0 +1,67 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CLASSK-DICHOTOMY-20261026-001B-E001",
+ "ticket": "CLASSK-DICHOTOMY-20261026-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "earned_by": "CLASSK-DICHOTOMY-20261026-001A (Theorem A, proved) predicts, for any class-(K) group and any gadget manifold, every sector count from the gadget model alone; PATTERN1-CHECKPOINT-20261026-001 built pattern 1 at p = 7, r = 6 end to end. This experiment tests the realization step of ticket C (the construction of COPRIME-CLASS2-20261026-001D section 3 produces gadget manifolds) for all three slot patterns, at two (p, r), with groups that are not Heisenberg (two nonconstant sectors; commutators involving the trivial character), every sector, and the knot exteriors (the u-pairing structure used for the knot-group corollary). Scoping before this contract, disclosed (scripts and logs in scoping/): every fixture was built and its diagram constructed (crossings and depth gaps only, geom.log); the machinery controls below were run and pass (validate.log; the p = 5 winding test was given a taller gap after its fourth test copy sat at the bottom of a gap sized for one leaf); the full pipeline was run on P1-K2 for the checkpoint group in sectors 1 and 5 only, reproducing the published 133 and 2401 and dimensions (pipeline_regression.log); the u-pairing of single twist-knot exteriors was computed with cp_lib (upair.py) to fix CALIBRATION. No other fixture cohomology or count was computed before this contract.",
+ "question": "Do the explicit surgeries of the projector construction, for the three slot patterns (P1 {zeta, zeta^2, zeta^3}; P2 {zeta, zeta, zeta^4}; P3 {zeta^2, zeta^2, zeta^2} at p = 7, r = 6; P2 {2, 2, 4} at p = 5, r = 4) on K2, the digon and K2 + K2, have exactly the twisted cohomology and cup products of the gadget model, as measured by the kernel count of every sector psi^k for several class-(K) groups, on the closed r-surgery and on the knot exterior?",
+ "public_inputs": {
+  "fixtures": "ck_specs.FIXTURES: P1-K2, P1-digon, P1-K2+K2, P2-K2, P2-digon, P3-K2, P3-digon (p = 7, r = 6, zeta = 3) and P2-K2 at p=5 (p = 5, r = 4, zeta = 2); summand knots 3_1 (roots zeta^{+-1} at p = 7), 6_1 (zeta^{+-2} at p = 7; 2, 3 at p = 5), 5_2 (zeta^3 at p = 7), 4_1 (-1 at p = 5)",
+  "construction": "as in PATTERN1-CHECKPOINT-20261026-001-E001 (eigenprojector combs with literal multiplicities r^-1 chi^-j mod p, bands winding j times in direction -1, balanced band sums above the diagram for x_u - x_v, disk-framed leaves, each Y-graph as surgery on its six-component link), with the slot characters and summand knots of each pattern; vertex summands first, then the edge summands",
+  "groups": "ck_specs.GROUPS: class-(K) groups given by B exponents and one A coordinate per listed commutator (beta(e_i, e_i2) = 1, not alternated): at (7, 6) free class 2 on (3, 2, 6); two hard sectors (3, 2, 6, 4, 5) with [e5, e4] seen by psi^5; trivial-character commutators (1, 3, 2, 6); free class 2 on (3, 3, 4); pattern 2 with a trivial character; free class 2 on three coordinates of character 2; Heisenberg (2, 2); pattern 3 with a trivial character; at (5, 4) Heisenberg (2, 2), Heisenberg (2, 4), free class 2 on (2, 2, 4), and with a trivial character. Six fixture-group pairs of pattern 3 are excluded by size (ck_specs.EXCLUDE), decided from model sizes only",
+  "counts": "sector-k kernel count N_k = #{x = (x_i), x_i in H^1(chi_i^k) : [beta_*(x u x)] = 0 in H^2}, from the measured cup-product classes (Heisenberg evaluation of relators, reduced modulo the twisted Fox image), closed surgery and knot exterior (knot framing relator dropped; trivial character included); trivial-character targets skipped (H^2 = 0)",
+  "code": {
+   "ck_core.py": "99814bf8b1ccb427837ae4f28b66c5622fdc7770d998a4a978fb44d98078c164",
+   "ck_build.py": "1ff56e0ea959cb31b1e7992dd15a631fabafe479770bf6f5a8a3f7ec0ddf291a",
+   "ck_fixtures.py": "81c556308411c5c64e1f7b8ea68712a6b955617c5055c7600dd760b52de96db1",
+   "ck_specs.py": "5c03828abd5d36e1041aff321604d4a8480b32667122590ad2b1f9d2b416ed03",
+   "predict.py": "c5b5bcabf610f02e5fc58d267124404dcbae4eddf2e42b40f7f63aa8c9437749",
+   "validate.py": "2b816a1cec5e50840823a25e57b17b717cd2e311a5116192c4617756794053cf",
+   "run.py": "f7310055926aaebc79ce664bfb3f12393b2990352fd194b2f17ec5d088654028"
+  },
+  "predictions file": {
+   "predictions.json": "ef136c66b5c4415e619a546ec7cd1a1902b0484e5d1895a6ad0720df82fd14fc"
+  },
+  "imported read-only": {
+   "cp_lib.py (COPRIME-CLASS2-20261026-001B-P001)": "98092137d7cf7b1a5ec1edd5274f986fdef86808ee02014f5ded82d7e2a51b3c",
+   "ck_lib.py (CLASSK-DICHOTOMY-20261026-001A-P001)": "27fd893c236c9c988c6c1bae49175889baa89f1c1f1286c8e5cd8808e8474e2a",
+   "check.py (CLASSK-DICHOTOMY-20261026-001A-P001, for V8)": "8f9e5e460e54f9a23a1e106c57a237fc3adb2698500d5baadc1715a7296c1c0a"
+  }
+ },
+ "predictions": {
+  "Q1_manifolds": "every closed surgery has H1 = Z/r with psi well defined and onto; clasper-only surgery trivial; dims of H^1 per character as the gadget model (predictions.json dims_closed), and the knot exterior has the same plus H^1(X; F_p) = F_p",
+  "Q2_purity": "on the K2 fixtures every leaf functional is nonzero exactly on its slot character",
+  "Q3_closed_counts": "every closed sector count equals predictions.json (free factor x template count of Theorem A); headline values: P1-K2 two hard sectors psi^1 45619 and psi^5 218491; P1-K2+K2 free class 2 psi^1 17689 = 133^2; P2-K2 free class 2 on (3, 3, 4) psi^1 19159; P3-digon Heisenberg psi^1 46101601; P2-K2 at p = 5 Heisenberg (2, 4) psi^1 145",
+  "Q4_knot_counts": "every knot-exterior sector count equals predictions.json (gadget model extended by u and the u-pairing calibrated on single twist knots); headline values: P1-K2 trivial-character commutators psi^1 211 and psi^5 2695 (closed 133 and 2401)",
+  "Q5_checkpoint": "P1-K2 with the checkpoint group gives 133 (psi^1) and 2401 (psi^5)"
+ },
+ "controls": {
+  "machinery (validate.py, rerun first; any failure makes the run invalid)": "V1 dims equal cp_lib's on 3_1, 4_1, 5_2, 6_1 at (7, 6) and (5, 4); V3 138 and 48 S3 maps (Borromean rings); V7 the counting path equals cp_lib's Heisenberg counts per sector on 3_1 and 6_1 surgeries; V8 the counting path times |Z1(A)| |B1(B)| equals direct lifting counts (ticket A) for two non-Heisenberg groups; V6 the u-pairing of single twist-knot exteriors equals CALIBRATION; T2 at (5, 4): winding direction -1 gives chi^j (j = 1, 2) and direction +1 gives chi^-1"
+ },
+ "decision_rule": "Invalid if a machinery control fails or a built manifold fails H1 = Z/r or the psi check. Supported if Q1-Q5 hold. Refuted otherwise, naming every failed item; a mismatch is diagnosed, and neither the predictions nor the construction are changed after this contract.",
+ "resource_budget": {
+  "wall_seconds": 14400,
+  "memory_mib": 16384,
+  "threads": 1
+ },
+ "stop_rule": "Run validate.py, then every fixture once; no adaptive extension.",
+ "seeds": "deterministic (no randomness)",
+ "environment": "workspace .venv python (numpy); cp_lib.py, ck_lib.py and ticket A's check.py imported read-only",
+ "red_team_r0": [
+  "Eight small fixtures at two (p, r) test the construction, not every graph; the realization for all graphs rests on the proof in COPRIME-CLASS2-20261026-001D section 3.",
+  "The Y-graph surgery is computed through its six-component link, validated in the checkpoint against the braid insertion, not reproved.",
+  "Predictions and measurements share the bilinear counter of ticket A (count_bilinear_zeros) but not their inputs: predictions use the gadget model and template counts, measurements use cup products computed from the diagrams; V7 and V8 check the measurement path against independent counts.",
+  "The knot predictions use a calibration measured on single twist knots (pre-registered), so they test the block-diagonal and move-invariant structure of the u-pairing, not its values.",
+  "Six pattern-3 fixture-group pairs are excluded by size; pattern 3 is tested with Heisenberg (2, 2), the trivial-character variant and groups of other patterns."
+ ],
+ "nonclaims": [
+  "No proof of the dichotomy here (ticket C); no claim for p = 2, extension fields or untested graphs.",
+  "Knot-exterior counts are sector kernel counts; the totals follow by the stated constants."
+ ],
+ "forbidden_inputs": [
+  "Predicted counts as inputs to the construction or the measurement code"
+ ],
+ "outputs": "artifacts/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/result.json, rows.json and one surgery description per fixture"
+}

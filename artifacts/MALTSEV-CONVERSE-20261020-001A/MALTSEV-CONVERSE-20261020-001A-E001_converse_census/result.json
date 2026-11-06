@@ -1,0 +1,104 @@
+{
+  "controls": {
+    "C1_colouring_has_knot_failure": true,
+    "C2_no_failure_implies_maltsev_rejected": true,
+    "C3_all_knots_rectangular_rejected": true
+  },
+  "evidence_stage": "exploratory",
+  "experiment_id": "MALTSEV-CONVERSE-20261020-001A-E001",
+  "predictions": {
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "M4": true
+  },
+  "signal": true,
+  "summary": {
+    "binary": {
+      "any_failure": 384,
+      "knot_failure": 30,
+      "maltsev": 114,
+      "relations": 510,
+      "with_knots": 30
+    },
+    "disjoint_unions": [
+      {
+        "domain": 4,
+        "knot_failure_within_parity": false,
+        "knots_found": 1,
+        "maltsev": false,
+        "mixed_systems_knot_failures": 0,
+        "name": "parity beside implication",
+        "tie_failure_within_other": true
+      },
+      {
+        "domain": 5,
+        "knot_failure_within_parity": false,
+        "knots_found": 1,
+        "maltsev": false,
+        "mixed_systems_knot_failures": 0,
+        "name": "parity beside an isolated value",
+        "tie_failure_within_other": false
+      }
+    ],
+    "non_maltsev_with_knots_without_knot_failure": 0,
+    "non_maltsev_without_any_failure": 17,
+    "nonrectangular_knots": {
+      "neither": 0,
+      "pairwise_meeting": 142,
+      "selector": 0,
+      "total": 142
+    },
+    "structured": {
+      "conservative": {
+        "any_failure": 32,
+        "knot_failure": 0,
+        "maltsev": 62,
+        "nonrectangular_knots": 0,
+        "relations": 94,
+        "with_knots": 0
+      },
+      "idempotent": {
+        "any_failure": 0,
+        "knot_failure": 0,
+        "maltsev": 47,
+        "nonrectangular_knots": 0,
+        "relations": 47,
+        "with_knots": 0
+      },
+      "majority": {
+        "any_failure": 52,
+        "knot_failure": 0,
+        "maltsev": 42,
+        "nonrectangular_knots": 0,
+        "relations": 95,
+        "with_knots": 0
+      },
+      "maltsev": {
+        "any_failure": 0,
+        "knot_failure": 0,
+        "maltsev": 81,
+        "nonrectangular_knots": 0,
+        "relations": 81,
+        "with_knots": 0
+      },
+      "rock-paper-scissors": {
+        "any_failure": 10,
+        "knot_failure": 0,
+        "maltsev": 9,
+        "nonrectangular_knots": 0,
+        "relations": 19,
+        "with_knots": 0
+      },
+      "semilattice": {
+        "any_failure": 102,
+        "knot_failure": 4,
+        "maltsev": 74,
+        "nonrectangular_knots": 18,
+        "relations": 180,
+        "with_knots": 4
+      }
+    }
+  },
+  "wall_seconds": 48.4
+}

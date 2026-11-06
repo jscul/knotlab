@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COPRIME-PAIRS-20261027-001F-P001",
+  "canonical_id": "COPRIME-PAIRS-20261027-001F-P001",
+  "kind": "proof",
+  "ticket": "COPRIME-PAIRS-20261027-001F",
+  "proof": "COPRIME-PAIRS-20261027-001F-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Conserved vertex flows keep class-3 vertex-root pair failures #P-hard",
+  "status": "Proved",
+  "claim": "p >= 5, r | p - 1, n graded with a grading-preserving C_r action, d | r, m = m_d of class at most 3. A flow edge is a hard pair of m/gamma_3 satisfying every condition of Theorem 5 of COPRIME-PAIRS-20261027-001E except (V3), together with (F0) no layer-2 vertex data, (F1) injectivity of the deficit maps y -> [D, y] at R_2 and y -> [y, D] at R_1 for every nonzero vertex difference D, and (F2) no vertex-root component in the brackets of the leaves' layer-1 and determined layer-2 parts. If a flow edge exists, counting |Hom(pi_1 S^3_(d/p)(K), G)| is #P-hard. Proof: on the layer-2 variety the vertex equations are a flow conserved at every vertex (bundle identity); Fourier duality turns the count into a spin system on vertex states and potentials; the flow vanishes off the diagonal by (F1) and is bilinear on the diagonal by (F2), so the dual edge weights are non-negative integers; the Brunnian rank witness and subdivision give EVAL(M) for a non-negative M of rank at least two. Decides 8 of the 121 census algebras left open by Theorem 5.",
+  "dependencies": [
+    "COPRIME-PAIRS-20261027-001E"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A vertex equation pair whose endpoint contributions are not exact negatives on a solution, for the stated example.",
+    "A nonzero flow on an off-diagonal solution, or an off-diagonal solution with nonzero private layer-1 data, for the stated example.",
+    "A diagonal flow that is not bilinear in (layer 1 of one slot) x (layer 2 of the other), or a non-positive Fourier value N(mu).",
+    "A flow census other than 16 algebras failing only (V3), of which exactly the 8 listed satisfy (F0)-(F2)."
+  ],
+  "lineage": {
+    "home_scope": "COPRIME-PAIRS-20261027-001",
+    "epic_path": [
+      "COPRIME-PAIRS-20261027-001"
+    ],
+    "parents": [
+      "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/manifest.json",
+      "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/result.json",
+      "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json",
+      "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/manifest.json": "3b72223b23bb7afa7a0964c0084ea11fb0221980179630f38155a9c0b74dbe5c",
+    "proofs/COPRIME-PAIRS-20261027-001C/COPRIME-PAIRS-20261027-001C-P001_pair_failures_reduce_to_the_ideal_of_nonzero_characters_and_transfer_through_inert_layers/result.json": "54b14a855eaa165a54e790aef5a6bd91073e8eef7677209f203fd6e59d806c2f",
+    "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/manifest.json": "9c3f7e976d8dfd0613bb68ac21293f1a34edb8efee2d5c2fd021c137888c5cf1",
+    "proofs/COPRIME-PAIRS-20261027-001E/COPRIME-PAIRS-20261027-001E-P001_interacting_pair_failures_with_a_clean_edge_are_sharp_p_hard/result.json": "bfa556e265b89cde5dcd605fd0ad0ff0c5d39b8e543f5b2fc24642e8301181bd"
+  },
+  "paths": {
+    "manifest": "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/manifest.json",
+    "identity": "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/identity.json",
+    "directory": "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard",
+    "proof": "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/proof.md",
+    "result": "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/result.json",
+    "check": "proofs/COPRIME-PAIRS-20261027-001F/COPRIME-PAIRS-20261027-001F-P001_conserved_vertex_flows_keep_vertex_root_failures_sharp_p_hard/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "coprime_flow_edge_hardness_shown": false
+  },
+  "foundation_claim_scope": "p >= 5, r | p - 1, graded nilpotent Lie algebras whose ideal m_d has class at most 3, grading-preserving C_r action; manifolds S^3_(d/p)(K). Cited: Theorems 4-5 and lemmas of COPRIME-PAIRS-20261027-001E, the bundle identity of COPRIME-PAIRS-20261027-001A, Lemma I, Bulatov-Grohe via Cai-Chen-Lu. Not covered: the other 8 vertex-root algebras (F0 or F1 fails), class 4, the other open mechanisms. r counts the characters of the action, not Boolean variables. No P versus NP claim.",
+  "validation": {
+    "status": "checked: 16 open interacting census algebras fail only (V3) and the flow conditions (F0)-(F2) hold for 8, listed; on free class 3 on (1,1,2) at d = 5, p = 11 the endpoint vertex equations are exact negatives on all diagonal samples and on sampled off-diagonal solutions, the flow vanishes on every sampled off-diagonal solution, and the diagonal flow is exactly bilinear (interpolation validated on fresh points) with every Fourier value N(mu) a positive integer; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-27."
+  }
+}

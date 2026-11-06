@@ -1,0 +1,8655 @@
+{
+ "schema_version": 1,
+ "artifact_id": "COPRIME-PAIRS-20261027-001C-P001",
+ "status": "Proved",
+ "checks": {
+  "1 reduction to m_d (counts)": {
+   "ok": true,
+   "detail": {
+    "algebra": "free class 3 on x (0), y (1), d = 4, p = 5",
+    "dim n": 5,
+    "dim m": 4,
+    "class of m": 2,
+    "rows": [
+     {
+      "knot": "C_2 of T(2,5)",
+      "active characters": [
+       1,
+       3
+      ],
+      "G": 78125,
+      "exp(m) x| C_d": 78125,
+      "equal": true
+     },
+     {
+      "knot": "4_1",
+      "active characters": [
+       2
+      ],
+      "G": 3125,
+      "exp(m) x| C_d": 3125,
+      "equal": true
+     },
+     {
+      "knot": "5_2",
+      "active characters": [],
+      "G": 625,
+      "exp(m) x| C_d": 625,
+      "equal": true
+     },
+     {
+      "knot": "3_1",
+      "active characters": [],
+      "G": 625,
+      "exp(m) x| C_d": 625,
+      "equal": true
+     }
+    ]
+   }
+  },
+  "2 inert lifting (counts, with an interacting control)": {
+   "ok": true,
+   "detail": [
+    {
+     "p": 7,
+     "d": 3,
+     "knot": "6_3",
+     "active": [
+      1,
+      2
+     ],
+     "kernel characters": {
+      "0": 2
+     },
+     "inert": true,
+     "G": 117649,
+     "G/K": 117649,
+     "matches p^(nonzero kernel dim)": true
+    },
+    {
+     "p": 7,
+     "d": 3,
+     "knot": "6_1",
+     "active": [
+      1,
+      2
+     ],
+     "kernel characters": {
+      "0": 2
+     },
+     "inert": true,
+     "G": 117649,
+     "G/K": 117649,
+     "matches p^(nonzero kernel dim)": true
+    },
+    {
+     "p": 7,
+     "d": 3,
+     "knot": "3_1",
+     "active": [],
+     "kernel characters": {
+      "0": 2
+     },
+     "inert": true,
+     "G": 343,
+     "G/K": 343,
+     "matches p^(nonzero kernel dim)": true
+    },
+    {
+     "p": 5,
+     "d": 4,
+     "knot": "T(2,5)",
+     "active": [
+      2
+     ],
+     "kernel characters": {
+      "3": 2
+     },
+     "inert": true,
+     "G": 15625,
+     "G/K": 625,
+     "matches p^(nonzero kernel dim)": true
+    },
+    {
+     "p": 5,
+     "d": 4,
+     "knot": "5_2",
+     "active": [],
+     "kernel characters": {
+      "3": 2
+     },
+     "inert": true,
+     "G": 3125,
+     "G/K": 125,
+     "matches p^(nonzero kernel dim)": true
+    },
+    {
+     "p": 5,
+     "d": 4,
+     "knot": "C_2 of T(2,5)",
+     "active": [
+      1,
+      3
+     ],
+     "kernel characters": {
+      "3": 2
+     },
+     "inert": false,
+     "G": 1953125,
+     "G/K": 3125,
+     "matches p^(nonzero kernel dim)": false
+    }
+   ]
+  },
+  "3 Corollary 4": {
+   "ok": true,
+   "detail": {
+    "cross-layer group, d=3": true,
+    "cross-layer group, d=4": true,
+    "cross-layer group, d=5": true,
+    "cross-layer group, d=6": true,
+    "cross-layer group, d=7": true,
+    "cross-layer group, d=8": true,
+    "cross-layer group, d=9": true,
+    "free class 3 on (1,1), d=3": {
+     "gamma_3 characters": [
+      0
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 3 on (1,1), d=4": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": false,
+     "predicted": false
+    },
+    "free class 3 on (1,1), d=5": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": false,
+     "predicted": false
+    },
+    "free class 3 on (1,1), d=6": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 3 on (1,1), d=7": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 3 on (1,1), d=8": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 3 on (1,1), d=9": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 3 on (1,1), d=10": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 3 on (1,1), d=12": {
+     "gamma_3 characters": [
+      3
+     ],
+     "inert (i)": true,
+     "predicted": true
+    },
+    "free class 4 on (1,-1), d=5": {
+     "(ii) through gamma_4": true,
+     "no (i) through gamma_3": true
+    },
+    "free class 4 on (1,-1), d=7": {
+     "(ii) through gamma_4": true,
+     "no (i) through gamma_3": true
+    },
+    "three-generator example, d=4": {
+     "criterion at 2": true,
+     "P2_4 fails": true,
+     "class of m": 2
+    }
+   }
+  },
+  "4 census": {
+   "ok": true,
+   "detail": {
+    "algebras": 850,
+    "counts": {
+     "residual, decided here": 153,
+     "residual, interacting": 176,
+     "triple theorem at a divisor": 511,
+     "criterion at every order": 10
+    },
+    "first interacting": [
+     [
+      3,
+      [
+       1,
+       1
+      ],
+      4
+     ],
+     [
+      3,
+      [
+       1,
+       2
+      ],
+      4
+     ],
+     [
+      3,
+      [
+       0,
+       1,
+       1
+      ],
+      4
+     ],
+     [
+      3,
+      [
+       0,
+       1,
+       2
+      ],
+      3
+     ],
+     [
+      3,
+      [
+       0,
+       1,
+       2
+      ],
+      4
+     ],
+     [
+      3,
+      [
+       1,
+       1,
+       1
+      ],
+      4
+     ],
+     [
+      3,
+      [
+       1,
+       1,
+       2
+      ],
+      3
+     ],
+     [
+      3,
+      [
+       1,
+       1,
+       2
+      ],
+      4
+     ],
+     [
+      4,
+      [
+       1,
+       2
+      ],
+      3
+     ],
+     [
+      4,
+      [
+       0,
+       1,
+       2
+      ],
+      3
+     ],
+     [
+      4,
+      [
+       1,
+       2,
+       2
+      ],
+      3
+     ],
+     [
+      5,
+      [
+       0,
+       1
+      ],
+      4
+     ]
+    ]
+   }
+  },
+  "all_ok": true
+ },
+ "census": [
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 3,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 4,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 5,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    3
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    0,
+    3
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    0,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    0,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    2,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    3,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 6,
+   "generator characters": [
+    3,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 7,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    4
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    0,
+    4
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    0,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    0,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    4,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    5,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    5,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    2,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    4,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 8,
+   "generator characters": [
+    4,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    3
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    0,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    0,
+    3
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    0,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    3,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    4,
+    7
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    4,
+    7
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 9,
+   "generator characters": [
+    3,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    5
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    5,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    5,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    0,
+    5
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    0,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    1,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    5,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    0,
+    5,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    1,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    2,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    3,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    4,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    5,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    6,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    6,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    8,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    1,
+    8,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    4,
+    5
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    4,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    5,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    5,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    5,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    2,
+    5,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    5,
+    5,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 10,
+   "generator characters": [
+    5,
+    5,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    6
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    10
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    4
+   ],
+   "class": 4,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    6
+   ],
+   "class": 3,
+   "status": "criterion at every order"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    0,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    10
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    1,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    2,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    3,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    0,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    1
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    1,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    10
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    2,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    3,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    5
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    5
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    10
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    4,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    5,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    7
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    7
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    10
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    11
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    6,
+    11
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    7,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    7,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    7,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    7,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8,
+    10
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    8,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    9,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    9,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    9,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    9,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    10,
+    10
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    1,
+    10,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    2
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    3
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    2,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    10
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    3,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    4,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6,
+    8
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6,
+    10
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    6,
+    10
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    8,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    2,
+    8,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    3
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    3
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    4
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    3,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    4,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    6,
+    9
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    3,
+    6,
+    9
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4,
+    4
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4,
+    4
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4,
+    6
+   ],
+   "class": 3,
+   "status": "residual, decided here"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    4,
+    8
+   ],
+   "class": 4,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    6,
+    8
+   ],
+   "class": 3,
+   "status": "residual, interacting"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    4,
+    6,
+    8
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    6,
+    6,
+    6
+   ],
+   "class": 3,
+   "status": "triple theorem at a divisor"
+  },
+  {
+   "d": 12,
+   "generator characters": [
+    6,
+    6,
+    6
+   ],
+   "class": 4,
+   "status": "triple theorem at a divisor"
+  }
+ ],
+ "seconds": 204.7
+}

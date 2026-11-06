@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SOFT-CROSS-20261031-001C-P001",
+  "canonical_id": "SOFT-CROSS-20261031-001C-P001",
+  "kind": "proof",
+  "ticket": "SOFT-CROSS-20261031-001C",
+  "proof": "SOFT-CROSS-20261031-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "End to end: formulas counted through certified Pfaffian instances",
+  "status": "Proved",
+  "claim": "End to end, Theorem 4 of ticket B runs: for two positive NAE-3SAT formulas whose graphs G_k are non-planar with a one-crossing drawing, (a, a, b) with 2 solutions and (b, a, c)(c, b, c) with 4, the count is recovered exactly from the counts of instances built by ticket A at the crossing (k-snakes with k_S = 1, 3, 5, 7) over D + 1 values of k. Every one of the 44 instances is certified Pfaffian (planar pieces, glued Kasteleyn signing non-colourable), is non-planar, and has three twisted branches at every junction with no good root; the four counts per k give 9 #col(G_k), equal to the direct count.",
+  "dependencies": [
+    "SOFT-CROSS-20261031-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A formula whose count is not recovered through the Pfaffian instances.",
+    "An instance that fails its Pfaffian certificate, is planar, or has a junction with an untwisted branch.",
+    "A recovered 9 #col(G_k) that differs from the direct count."
+  ],
+  "lineage": {
+    "home_scope": "SOFT-CROSS-20261031-001",
+    "epic_path": [
+      "SOFT-CROSS-20261031-001"
+    ],
+    "parents": [
+      "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/manifest.json",
+      "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/result.json",
+      "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/hard_lib.py",
+      "proofs/SOFT-CROSS-20261031-001A/SOFT-CROSS-20261031-001A-P001_a_soft_crossing_interpolates_to_a_sharp_one/cross_lib.py",
+      "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/amplitude_lib.py",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/computation_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/manifest.json": "32a5778087bde3711471a6b0700d729524f12aad4948ce197d397ab7d3683124",
+    "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/result.json": "11b7a11a328129557e1e9ba159c4657c1f415c7bd7be6e901c85658d0a8ce800",
+    "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/hard_lib.py": "1f576f0f3d97725816a732d36b569f1481adaf32dc327f75448e669de3df0953",
+    "proofs/SOFT-CROSS-20261031-001A/SOFT-CROSS-20261031-001A-P001_a_soft_crossing_interpolates_to_a_sharp_one/cross_lib.py": "b6d551d2bfedbbd37b581195c8022a6612a0e4af7958b11f6ee1df09282cb696",
+    "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py": "81263473004bc8e55e5851d658f53d81a2aae79bc1fe9b9cc1a1a22cb82e1753",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/amplitude_lib.py": "32f35f6db38b39cb7b1a078c521c06e3ea4d1511a9314765ffedfa0dd93c33b2",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/computation_lib.py": "0ea7887ef7be1decee2180bcd826aff167fb240f6dd5826c4f46eafbae30d621"
+  },
+  "paths": {
+    "manifest": "proofs/SOFT-CROSS-20261031-001C/SOFT-CROSS-20261031-001C-P001_end_to_end_through_certified_pfaffian_instances/manifest.json",
+    "identity": "proofs/SOFT-CROSS-20261031-001C/SOFT-CROSS-20261031-001C-P001_end_to_end_through_certified_pfaffian_instances/identity.json",
+    "directory": "proofs/SOFT-CROSS-20261031-001C/SOFT-CROSS-20261031-001C-P001_end_to_end_through_certified_pfaffian_instances",
+    "proof": "proofs/SOFT-CROSS-20261031-001C/SOFT-CROSS-20261031-001C-P001_end_to_end_through_certified_pfaffian_instances/proof.md",
+    "result": "proofs/SOFT-CROSS-20261031-001C/SOFT-CROSS-20261031-001C-P001_end_to_end_through_certified_pfaffian_instances/result.json",
+    "check": "proofs/SOFT-CROSS-20261031-001C/SOFT-CROSS-20261031-001C-P001_end_to_end_through_certified_pfaffian_instances/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "end_to_end_shown": true
+  },
+  "foundation_claim_scope": "A finite run of the composed reduction on two formulas; it adds no general claim to tickets A and B.",
+  "validation": {
+    "status": "checked: 44 certified instances, two formulas recovered exactly, controls; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "a finite check of ticket B's Theorem 4; no external comparison needed",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31."
+  }
+}

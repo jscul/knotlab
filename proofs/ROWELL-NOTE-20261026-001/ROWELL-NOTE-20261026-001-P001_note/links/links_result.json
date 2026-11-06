@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "interpreter": "workspace .venv",
+  "seconds": 166.4,
+  "rows": [
+    {
+      "script": "test_fact2",
+      "args": [],
+      "checks": "sector method against brute force; the sector formula 3^(1+d+e-r)",
+      "exit_code": 0,
+      "last_lines": [
+        "T(2,6)             H=24 formula=24 OK",
+        "Borromean          H=138 formula=138 OK",
+        "T(3,3)             H=66 formula=66 OK",
+        "chain3             H=66 formula=66 OK",
+        "trefoil+meridian   H=30 formula=30 OK",
+        "topological formula 3*3^(d+e-r) verified sector-by-sector on 400 random links (3-6 strands)"
+      ],
+      "seconds": 0.8
+    },
+    {
+      "script": "test_fact2_stats",
+      "args": [],
+      "checks": "how often d, e and r are nonzero in the sector formula",
+      "exit_code": 0,
+      "last_lines": [
+        "{'sectors': 6258, 'd>0': 3715, 'e>0': 4645, 'r>0': 388, 'r>0 and d>0': 388, 'fail': 0}"
+      ],
+      "seconds": 0.7
+    },
+    {
+      "script": "test_cable",
+      "args": [],
+      "checks": "Lemma A: parallel cables",
+      "exit_code": 0,
+      "last_lines": [
+        "chain3     copies=[2, 3, 2] framing=[0, 1, -2] direct=16728 formula(+)=16728 formula(-)=16728",
+        "chain3     copies=[2, 3, 2] framing=[0, 3, 0] direct=18132 formula(+)=18132 formula(-)=18132",
+        "chain3     copies=[1, 2, 2] framing=[3, 3, 3] direct=840 formula(+)=840 formula(-)=840",
+        "cabling formula matches (convention +1): [60, 60]  (convention -1): [60, 51]",
+        "trefoil formula verified in 36 cases",
+        "trefoil-then-2-cable formula verified in 18 cases"
+      ],
+      "seconds": 1.1
+    },
+    {
+      "script": "test_surgery",
+      "args": [],
+      "checks": "Lemmas B and C: local knots; closed counts from cable counts",
+      "exit_code": 0,
+      "last_lines": [
+        "trefoil+meridian f=(0,0)                   interpolated=1 direct=1 known=None H(L^(k)),k=1..=[30, 324, 4788, 94212]... OK",
+        "trefoil+meridian f=(6,1)                   interpolated=1 direct=1 known=None H(L^(k)),k=1..=[30, 372, 5556, 104196]... OK",
+        "Borromean f=(0,0,0) = T^3 (48)             interpolated=48 direct=48 known=48 levels 1-2 direct=[138, 18144] formula=[138, 18144] OK",
+        "chain3 f=(0,0,0)                           interpolated=6 direct=6 known=None levels 1-2 direct=[66, 4728] formula=[66, 4728] OK",
+        "Borromean f=(1,1,1)                        interpolated=1 direct=1 known=None levels 1-2 direct=[138, 5100] formula=[138, 5100] OK",
+        "ALL OK"
+      ],
+      "seconds": 17.4
+    },
+    {
+      "script": "potts_reduction",
+      "args": [],
+      "checks": "Theorem: Potts(3, y = 2) from H_L(S3), five graphs end to end",
+      "exit_code": 0,
+      "last_lines": [
+        "  C4 (square): j=4 strands=60 crossings=1256 components=12 H=8073443604812915250",
+        "  C4 (square): j=5 strands=72 crossings=1464 components=12 H=49112341953742714516434",
+        "  C4 (square): j=6 strands=84 crossings=1672 components=12 H=314122681033450886707134642",
+        "  C4 (square): j=7 strands=96 crossings=1880 components=12 H=2043473957612099945267367834450",
+        "  C4 (square): j=8 strands=108 crossings=2088 components=12 H=13369164617671895669208322799522610",
+        "C4 (square): B_0 (from link counts) = 1692738   9^m Z(Gamma;3,2) = 1692738   Z = 258 OK (13s)"
+      ],
+      "seconds": 19.2
+    },
+    {
+      "script": "colouring_reduction",
+      "args": [
+        "P3 (path)",
+        "K3 (triangle)"
+      ],
+      "checks": "proper 3-colourings from H_L(S3)",
+      "exit_code": 0,
+      "last_lines": [
+        "P3 (path): P(Gamma,3) recovered from link counts = 12, direct = 12 OK (1s)",
+        "  K3 (triangle): k=1 (y=1) B_0=729  Z from links=27  Z direct=27",
+        "  K3 (triangle): k=2 (y=2) B_0=48114  Z from links=66  Z direct=66",
+        "  K3 (triangle): k=3 (y=4) B_0=5314410  Z from links=270  Z direct=270",
+        "  K3 (triangle): k=4 (y=8) B_0=896009526  Z from links=1686  Z direct=1686",
+        "K3 (triangle): P(Gamma,3) recovered from link counts = 6, direct = 6 OK (120s)"
+      ],
+      "seconds": 121.2
+    },
+    {
+      "script": "dihedral_check",
+      "args": [
+        "5"
+      ],
+      "checks": "the same reduction for D_5",
+      "exit_code": 0,
+      "last_lines": [
+        "D_5: sector method == brute force on 40 random braids",
+        "D_5 K2: B_0 from link counts = 750, p^(2m) Z(Gamma;p,2) = 750 OK",
+        "D_5 P3: B_0 from link counts = 112500, p^(2m) Z(Gamma;p,2) = 112500 OK",
+        "D_5 K3: B_0 from link counts = 3437500, p^(2m) Z(Gamma;p,2) = 3437500 OK"
+      ],
+      "seconds": 1.5
+    },
+    {
+      "script": "dihedral_check",
+      "args": [
+        "7"
+      ],
+      "checks": "the same reduction for D_7",
+      "exit_code": 0,
+      "last_lines": [
+        "D_7: sector method == brute force on 40 random braids",
+        "D_7 K2: B_0 from link counts = 2744, p^(2m) Z(Gamma;p,2) = 2744 OK",
+        "D_7 P3: B_0 from link counts = 1075648, p^(2m) Z(Gamma;p,2) = 1075648 OK",
+        "D_7 K3: B_0 from link counts = 60942182, p^(2m) Z(Gamma;p,2) = 60942182 OK"
+      ],
+      "seconds": 1.6
+    },
+    {
+      "script": "nilpotent_aside",
+      "args": [],
+      "checks": "aside: D4 and Q8 link counts depend only on linking numbers",
+      "exit_code": 0,
+      "last_lines": [
+        "D4 : H_L = 4^c sum_S 4^{-cutrank(S)} verified on 60 random links",
+        "Q8 : H_L = 4^c sum_S 4^{-cutrank(S)} verified on 60 random links"
+      ],
+      "seconds": 0.5
+    },
+    {
+      "script": "independent_spot_check",
+      "args": [],
+      "checks": "separate brute force of L(0), L(1) for K2 and the linking matrix of L_Gamma",
+      "exit_code": 0,
+      "last_lines": [
+        "L_Gamma for K2: strands 3 linking matrix",
+        " [[ 0  0  1]",
+        " [ 0  0 -1]",
+        " [ 1 -1  0]]",
+        "L(0): strands 4, crossings 12, brute force 228, sector method 228, equal True",
+        "L(1): strands 8, crossings 66, brute force 1188, sector method 1188, equal True"
+      ],
+      "seconds": 2.5
+    }
+  ]
+}

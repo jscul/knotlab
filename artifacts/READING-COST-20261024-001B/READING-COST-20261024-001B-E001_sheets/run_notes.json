@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "READING-COST-20261024-001B-E001",
+  "invocations": [
+    {
+      "started": "2026-10-24T14:00:48-07:00",
+      "wall_seconds": 4859.0,
+      "outcome": "all 384 chunks written to rows.jsonl; summarize() then raised KeyError because a chunk tally omits zero counts (no misjudged class for the directed placements); result.json was not written"
+    },
+    {
+      "started": "2026-10-24T15:22-07:00",
+      "wall_seconds": 0.0,
+      "outcome": "after summarize() was changed to record absent counts as zero (no change to data, sampling, truth procedure or decision rule), run.py found every chunk done and wrote result.json"
+    }
+  ],
+  "budget": "4859 s of the 7200 s budget, 24 threads",
+  "independent_check": "check_result.py reproduced the table and summary and re-verified all 213 misjudged entries"
+}

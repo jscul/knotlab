@@ -1,0 +1,214 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SURFACES-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 the permutation table at a 3-edge cut": {
+   "ok": true,
+   "detail": {
+    "connected-sum inequality D(tau, pi, r, r^-1) <= 0 (72 cases)": true,
+    "max D >= 0 whenever tau or pi is a 3-cycle": true,
+    "max D >= -4, equality only at (id, id)": true,
+    "max D = -2 only when both transitions fix an edge": true,
+    "two 3-cycles: max D = 0 iff pi = tau^-1, else 2": true,
+    "max D distribution": [
+     [
+      -4,
+      1
+     ],
+     [
+      -2,
+      9
+     ],
+     [
+      0,
+      24
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   }
+  },
+  "2 the face-tracing identity 2(g - g1 - g2) = D": {
+   "ok": true,
+   "detail": {
+    "tested": 1200,
+    "failures": 0
+   }
+  },
+  "3 the Heawood graph: genus 1, rigid, a unique chiral torus map whose dual is K7 with two Fano colour classes": {
+   "ok": true,
+   "detail": {
+    "girth": 6,
+    "genus": 1,
+    "genus after deleting a vertex (every vertex)": [
+     1
+    ],
+    "torus rotation systems": 16,
+    "orbits under automorphisms and mirroring": 1,
+    "automorphisms; images of one map without mirroring (8 = chiral)": [
+     336,
+     8
+    ],
+    "face lengths": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "every two faces share exactly one edge (dual K7)": true,
+    "faces around points form a Fano plane; faces around lines form a Fano plane": [
+     true,
+     true
+    ]
+   }
+  },
+  "4 Heawood atoms add exactly one handle to any graph; without rigidity additivity fails (K3,3)": {
+   "ok": true,
+   "detail": {
+    "K3,3": {
+     "genus(R)": 1,
+     "genus of the two splices": [
+      2,
+      2
+     ]
+    },
+    "Petersen": {
+     "genus(R)": 1,
+     "genus of the two splices": [
+      2,
+      2
+     ]
+    },
+    "cube": {
+     "genus(R)": 0,
+     "genus of the two splices": [
+      1,
+      1
+     ]
+    },
+    "Heawood": {
+     "genus(R)": 1,
+     "genus of the two splices": [
+      2,
+      2
+     ]
+    },
+    "Moebius-Kantor": {
+     "genus(R)": 1,
+     "genus of the two splices": [
+      2,
+      2
+     ]
+    },
+    "Pappus": {
+     "genus(R)": 1,
+     "genus of the two splices": [
+      2,
+      2
+     ]
+    },
+    "Desargues": {
+     "genus(R)": 2,
+     "genus of the two splices": [
+      3,
+      3
+     ]
+    },
+    "K3,3 spliced with K3,3 (genus 1 each): genus": 1,
+    "K3,3 minus a vertex: genus": 0
+   }
+  },
+  "5 every minimum-genus embedding of the 13-point space is a connected sum of two Heawood maps (128 = 16 * 16 / 2)": {
+   "ok": true,
+   "detail": {
+    "minimum-genus rotation systems": 128,
+    "standard connected sums with Heawood maps on both sides": 128,
+    "face profiles": {
+     "(6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10)": 128
+    }
+   }
+  },
+  "6 genus = number of Heawood braces on the examples; trisum glue keeps its genus under vertex deletion": {
+   "ok": true,
+   "detail": {
+    "Fano (7)": {
+     "braces": {
+      "heawood": 1
+     },
+     "genus": 1,
+     "seconds": 0.0
+    },
+    "Fano splice (13)": {
+     "braces": {
+      "heawood": 2
+     },
+     "genus": 2,
+     "seconds": 0.0
+    },
+    "Fano composition (19)": {
+     "braces": {
+      "heawood": 3
+     },
+     "genus": 3,
+     "seconds": 0.3
+    },
+    "3-cycle of blocks (21)": {
+     "braces": {
+      "heawood": 3,
+      "doubled square": 2
+     },
+     "genus": 3,
+     "seconds": 0.3
+    },
+    "tripod core (22)": {
+     "braces": {
+      "heawood": 3,
+      "doubled square": 3
+     },
+     "genus": 3,
+     "seconds": 0.5
+    },
+    "twisted cube (43)": {
+     "braces": {
+      "heawood": 6,
+      "doubled square": 3,
+      "planar": 1
+     },
+     "genus": 6,
+     "seconds": 11.2
+    },
+    "trisum of three cubes: genus, genus after deleting a vertex": [
+     1,
+     [
+      1
+     ]
+    ],
+    "doubled square: planar rotation systems (of 16)": 4
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "a random rotation system of the 13-point space has genus at least 2": true,
+    "the mirror of a minimum-genus embedding is minimum-genus and changes every rotation": true,
+    "additivity fails without rigidity (K3,3 spliced with K3,3 has genus 1, not 2)": true,
+    "a planar graph (the cube) has genus 0 by SAT": true
+   }
+  },
+  "ok": true,
+  "seconds": 15.2
+ }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 3,
+  "artifact_id": "KNOT-COMPETITION-20261019-001A-P001",
+  "canonical_id": "KNOT-COMPETITION-20261019-001A-P001",
+  "kind": "proof",
+  "ticket": "KNOT-COMPETITION-20261019-001A",
+  "proof": "KNOT-COMPETITION-20261019-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which knots competing rules on pairs can make",
+  "status": "Proved",
+  "claim": "Read a system of rules by competition when its allowed states are those that break the fewest rules, and strictly when they break none. For energies that are sums of terms on at most two of m Boolean variables: on three variables a knot (constrained as a whole, unconstrained after forgetting any one variable) is a least set exactly when it is a not-all-equal relation, excluding a state and its opposite; these four knots are the frustrated triangles. On four or more variables no knot is a least set. With hidden variables, ten 2-clauses per excluded state make every relation on three variables with an allowed state, every knot among them, the projection of a least set. The two readings agree whenever some state breaks no rule, and under the strict reading rules on pairs never allow exactly a knot on three or more variables. Doubling one preference of the frustrated triangle removes its knot.",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001E"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "cnf-arity"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel",
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "Some knot on four variables is the exact minimizer set of a function that is a sum of terms on at most two variables.",
+    "On three variables, the knots that are such minimizer sets are not exactly the four not-all-equal relations.",
+    "The gadget projection differs from some relation on three variables with an allowed state.",
+    "A satisfiable system of rules has minimum-violation states different from its satisfying states.",
+    "The Lean kernel fails to compile with Lean 4.32.2 or depends on an axiom other than propext, Classical.choice and Quot.sound.",
+    "A check in check.py accepts its deliberately wrong input."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-COMPETITION-20261019-001",
+    "epic_path": [
+      "KNOT-COMPETITION-20261019-001"
+    ],
+    "parents": [
+      "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json": "10b44105465401c686a5b6c58944163462b1e348c626c948507e4421ef618af5"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/manifest.json",
+    "identity": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/identity.json",
+    "directory": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs",
+    "proof": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/proof.md",
+    "result": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/result.json",
+    "check": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/check.py",
+    "kernel": "proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/CompetitionKernel.lean"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": true,
+    "three_cnf_boundary_proved": true,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": true,
+    "two_cnf_three_cnf_knot_boundary_proved": true,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "competition_reading_defined": true,
+    "three_variable_least_set_knots_are_not_all_equal": true,
+    "no_least_set_knot_on_four_or_more_variables": true,
+    "every_three_variable_relation_by_gadgets_with_hidden_variables": true,
+    "readings_agree_when_satisfiable": true,
+    "strict_pairwise_rules_never_allow_a_knot": true,
+    "competition_needs_equal_weights_for_the_triangle_knot": true,
+    "question_10_decided": false
+  },
+  "thesis_alignment": {
+    "protected_thesis": "native-3-cnf-positive-native-2-cnf-negative",
+    "two_cnf_native_emergence": "proved_absent",
+    "three_cnf_native_emergence": "proved_present",
+    "two_cnf_irreducible_joint_contact": "proved_absent",
+    "two_cnf_loop_erasure_contact_loss": "proved_absent",
+    "three_cnf_irreducible_joint_contact": "proved_present",
+    "three_cnf_loop_erasure_contact_loss": "proved_present",
+    "two_cnf_atomic_logical_topology": "proved_absent",
+    "three_cnf_atomic_logical_topology": "proved_present",
+    "irreducible_joint_contact_checked": true,
+    "loop_erasure_contact_loss_checked": true,
+    "encoding_firewall_checked": true,
+    "bare_semantics_only_is_terminal": false,
+    "thesis_status": "supported",
+    "scope": "Both readings of a system of rules on pairs. Strict: no knot is ever allowed (majority closure, and here a direct argument without hidden variables). Competition: only the four not-all-equal knots on three variables, none on four or more; with hidden variables every knot. Which reading the foundation adopts is open question 10."
+  },
+  "foundation_claim_scope": "Which knot relations arise as minimum-violation sets of rules on pairs, under the forgetting reading of K1-K3, for both readings of a frustrated system. No native recurrence, composed topology, path, metric, complexity or physical claim.",
+  "validation": {
+    "status": "checked: Lean kernel accepted, check.py passed with every control rejecting its wrong input; no human or external review",
+    "level": "V2 trusted kernel: Lean 4.32.2 checks the slice lemma, the obstruction on four or more variables for every m, the three-variable classification, the strict-reading obstruction, the agreement of the readings, the gadget projection for every relation on three variables, and the triangle facts. V1: check.py decides least-set feasibility exactly (Moebius coefficients, Fourier-Motzkin over the rationals) for all 34 knots on three variables and all 742 on four, independently of tools/knotlab and of the Lean source.",
+    "external_review": false,
+    "trusted_kernel": true,
+    "novelty": "known-overlap-found: minimizer sets of quadratic pseudo-Boolean functions are the facial sets of the binary pairwise model (faces of the correlation or cut polytope; Geiger, Meek and Sturmfels 2006; Kahle 2010; Rauh, Kahle and Ay 2011), and the three-variable case is the circuit criterion for its single circuit; the hidden-variable case is the MAX 2-SAT gadget of Garey, Johnson and Stockmeyer (1976). The delta is the statement for knots of every size (none on four or more variables), not found stated in a bounded search, and its formal check.",
+    "independence": "Written and checked in one session by Claude at the repository owner's request on 2026-10-19; no human or external review."
+  }
+}

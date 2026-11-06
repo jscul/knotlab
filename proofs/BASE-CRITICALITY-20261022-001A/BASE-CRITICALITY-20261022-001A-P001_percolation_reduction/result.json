@@ -1,0 +1,189 @@
+{
+  "artifact_id": "BASE-CRITICALITY-20261022-001A-P001",
+  "checks": {
+    "theorem_1_recolouring": {
+      "C5": {
+        "agree": 96,
+        "cases": 96,
+        "edge_colourings": 15,
+        "edge_form_pairs_distinct": 15
+      },
+      "K4": {
+        "agree": 192,
+        "cases": 192,
+        "edge_colourings": 18,
+        "edge_form_pairs_distinct": 18
+      },
+      "prism": {
+        "agree": 1536,
+        "cases": 1536,
+        "edge_colourings": 27,
+        "edge_form_pairs_distinct": 27
+      },
+      "torus 3x2 with a double edge": {
+        "agree": 24576,
+        "cases": 24576,
+        "edge_colourings": 39,
+        "edge_form_pairs_distinct": 39
+      },
+      "torus 3x3": {
+        "agree": 786432,
+        "cases": 786432,
+        "edge_colourings": 54,
+        "edge_form_pairs_distinct": 54
+      }
+    },
+    "theorem_2_exploration_coupling": {
+      "decorated": {
+        "4-cycle, parallel triples": {
+          "laws_equal": true,
+          "oriented_edges": 12
+        },
+        "triangle, parallel pairs": {
+          "laws_equal": true,
+          "oriented_edges": 6
+        },
+        "triangle, series of three": {
+          "laws_equal": true,
+          "oriented_edges": 9
+        },
+        "triangle, series of three pairs": {
+          "laws_equal": true,
+          "oriented_edges": 18
+        }
+      },
+      "gadgets": {
+        "[1, 1, 1]": {
+          "formula": "1/8",
+          "traversal": "1/8",
+          "traversal_matches": true,
+          "two_way": "0",
+          "two_way_matches": true
+        },
+        "[2, 2, 2]": {
+          "formula": "27/64",
+          "traversal": "27/64",
+          "traversal_matches": true,
+          "two_way": "1/8",
+          "two_way_matches": true
+        },
+        "[2]": {
+          "formula": "3/4",
+          "traversal": "3/4",
+          "traversal_matches": true,
+          "two_way": "1/2",
+          "two_way_matches": true
+        },
+        "[3]": {
+          "formula": "7/8",
+          "traversal": "7/8",
+          "traversal_matches": true,
+          "two_way": "3/4",
+          "two_way_matches": true
+        }
+      },
+      "plain": {
+        "K4": {
+          "configurations": 64,
+          "distinct_sets": 8,
+          "laws_equal": true
+        },
+        "cylinder 3x2 from the bottom": {
+          "configurations": 1024,
+          "distinct_sets": 11,
+          "laws_equal": true
+        },
+        "grid 2x3": {
+          "configurations": 128,
+          "distinct_sets": 19,
+          "laws_equal": true
+        }
+      }
+    },
+    "theorem_3_blocking": {
+      "3x2": {
+        "blocked and consistent": 3200,
+        "blocked one way": 3200,
+        "inconsistent": 342,
+        "patterns": 4096,
+        "two-way": 896,
+        "two-way consistent": 554
+      },
+      "3x4": {
+        "blocked and consistent": 70906,
+        "blocked one way": 70906,
+        "inconsistent": 70797,
+        "patterns": 200000,
+        "two-way": 129094,
+        "two-way consistent": 58297
+      },
+      "5x2": {
+        "blocked and consistent": 1004672,
+        "blocked one way": 1004672,
+        "inconsistent": 16806,
+        "patterns": 1048576,
+        "two-way": 43904,
+        "two-way consistent": 27098
+      }
+    },
+    "theorem_4_regimes": "argued-in-prose from cited percolation theorems (exponential decay below threshold, Russo-Seymour-Welsh at 1/2, supercritical arms and merging); not computed here; the experiment BASE-CRITICALITY-20261022-001B-E001 tests the regimes empirically"
+  },
+  "claim": "For not-all-equal constraints NAE(h_u, x_e, h_v) with uniformly random visible spokes x on a finite multigraph: (1) for any two-colouring g, tau = h xor g makes them equivalent to uniformly random implications on bichromatic edges and uniformly random monotone two-literal clauses on monochromatic (seam) edges; (2) in a uniformly random orientation the set reachable from any vertex set has the law of its bond-percolation cluster at p = 1/2, and with independently oriented gadgets at the gadget's traversal probability (series of blocks of k_i parallel edges: product of 1 - 2^-k_i); (3) if the seam joins disjoint sides T and B and no directed path runs from B to T (or from T to B), the world is consistent, so inconsistency needs crossings both ways and P(consistent) >= 1 - P_perc(B connected to T), while worlds crossed both ways can be consistent; (4) on tori of fixed shape cut along one seam: emergence tends to 0 exponentially when the traversal probability is below the lattice's bond threshold (honeycomb; series gadgets), stays bounded on the square lattice with plain edges (Russo-Seymour-Welsh), and tends to infinity on the square lattice with k >= 3 parallel edges, whose two-way gadgets percolate. The lower bound at the critical point is open.",
+  "controls": {
+    "consistency_test_accepts_an_unsatisfiable_seam": "rejected",
+    "reach_set_has_the_law_of_percolation_at_two_fifths": "rejected",
+    "recolouring_with_the_spoke_coloured_tail": "rejected",
+    "two_way_crossing_never_consistent": "rejected"
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "BASE-CRITICALITY-20261022-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "blocking_theorem_proved": true,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "critical_upper_bound_proved": true,
+    "exploration_coupling_proved": true,
+    "extended_path_metric_distance_formed": false,
+    "general_recolouring_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "subcritical_vanishing_proved": true,
+    "supercritical_divergence_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "BASE-CRITICALITY-20261022-001A"
+}

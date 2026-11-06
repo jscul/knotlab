@@ -1,0 +1,109 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLANAR-THEOREM-20261102-001A-P001",
+  "canonical_id": "PLANAR-THEOREM-20261102-001A-P001",
+  "kind": "proof",
+  "ticket": "PLANAR-THEOREM-20261102-001A",
+  "proof": "PLANAR-THEOREM-20261102-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The access lemma, by discrete convexity",
+  "status": "Proved",
+  "claim": "The access lemma is a theorem. Let H be a plane knot space with Kasteleyn signs, M a removed line, and L a gluing line with six port patterns. (1) Potentials: fix a reference matching and integrate, across each edge of the line-face incidence graph, the difference between a matching and the reference, from the hole of M's faces (potential 0). This gives one integer potential per matching on every point. The potentials are exactly the integer solutions of difference constraints, hence closed under rounded midpoints (L-natural convex), and a point's value relative to the hub is the parity of its potential. (2) Staircase: the two non-odd ports of each state of L differ in potential by one value on that state and by the neighbouring value off it. If a port is tied to the hub, its potential is constant and the other two ports take one point per state, forming a chain with that port's state in the middle. (3) The access lemma, by rounded midpoints of a pinning point with points of the other states: (i) if the hub is tied to a port, no pinning by the hub and a near point selects the pattern whose odd port is that port; (ii) if the hub is tied to no port, the non-odd ports' common potential is constant off the pinned state, so the hub and those two ports form a near knot excluding a pattern one step from the pinned one. With the route lemma of PLANAR-COMPOSE A, no pinned-and-separated three-point knot through the hub is ever new at a six-pattern removal on a plane near side, whatever the far side. Checked: potentials and staircase on 30 plane spaces (325 removals, 4464 states, 877 tied chains); the lemma's conclusion on 42 plane spaces (9020 pinnings).",
+  "dependencies": [
+    "PLANAR-COMPOSE-20261102-001Z",
+    "HANDLE-EMERGENCE-20261102-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A plane removal whose integrated heights are inconsistent, or whose potentials are not closed under rounded midpoints.",
+    "A point whose value relative to the hub differs from the parity of its potential.",
+    "A gluing line whose states violate the staircase.",
+    "A pinning on a plane space of neither type (i) nor type (ii)."
+  ],
+  "lineage": {
+    "home_scope": "PLANAR-THEOREM-20261102-001",
+    "epic_path": [
+      "PLANAR-THEOREM-20261102-001"
+    ],
+    "parents": [
+      "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/manifest.json",
+      "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/result.json",
+      "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/check.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/manifest.json": "a6ea8ac39420df40a8b12530bef27cd12620e3d756564d04695b42c443b6b6ca",
+    "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/result.json": "fbc83510da9295a9f06e47e4d1050e3498aebc4c8721e1972dfb893bb3b4666f",
+    "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/check.py": "ee2f40e09575b73cdb309e188fc7ddc8b3a18c9dde84138bcc9125776c918670",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json": "66ed78f548b97b11da91081b7c6d197ee038d30a7f159514e5a7c470762c43a4",
+    "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json": "61fe972294b32ab67e4f58dbb8c0e03d86cbb9b501ee8767c09b17118fc203ce"
+  },
+  "paths": {
+    "manifest": "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/manifest.json",
+    "identity": "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/identity.json",
+    "directory": "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity",
+    "proof": "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/proof.md",
+    "result": "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/result.json",
+    "check": "proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "access_lemma_proved": true
+  },
+  "foundation_claim_scope": "Plane knot spaces with Kasteleyn signs, one line removed, a gluing line with six port patterns.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-02.",
+    "status": "proved, with each ingredient checked on 30 plane spaces and the conclusion on 42; no human or external review",
+    "novelty": "New here; L-natural convexity and plane matching heights are classical (Murota; Thurston, Propp)."
+  }
+}

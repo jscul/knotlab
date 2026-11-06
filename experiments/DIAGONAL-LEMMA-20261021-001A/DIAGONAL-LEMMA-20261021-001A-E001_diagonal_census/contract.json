@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "DIAGONAL-LEMMA-20261021-001A-E001",
+  "ticket": "DIAGONAL-LEMMA-20261021-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Where does the diagonal lemma hold? Which non-rectangular knots yield a failure between knots in their own law, by which construction, and do the shadow products found in scoping really show no failure?",
+  "definitions": {
+    "constrained set, circuit, knot, failure": "as in KNOT-CIRCUITS-20261020-001A-E001: relative to each variable's range in the system's allowed states; a failure between knots has both circuits of size at least 3",
+    "rectangular": "a knot is rectangular at variable e when its fibres over e are pairwise equal or disjoint, and rectangular when it is so at every variable",
+    "direct case": "a variable e and a set T of at most k-2 other variables such that, for each assignment of T, the fibres over e pairwise meet (T empty: meeting fibres; T nonempty: a selector set); two copies sharing T and e then fail elimination at e",
+    "fibre-distance construction": "at variable e, compose the knot with k steps of the fibre-sharing relation on e's range; it applies when, for some k, the composed fibres pairwise meet while some composed fibre is not the whole range",
+    "diagonal derivation": "K'(x0, x1, x2) = exists h: K(x0, x0, h) and K(x1, x2, h), for each of the six orderings of a 3-variable knot's variables; it resolves the knot when K' is a knot with a direct case",
+    "positional system": "copies of the knot on m variables per position, each copy taking one variable from each position, always including the base copy; no variable is used in two positions",
+    "shadow product": "M x K where M is a law whose systems all have full ranges and that composes like cycles, h is a surjection with h(M) contained in K, and values are pairs"
+  },
+  "public_inputs": {
+    "random_3_variable": "for q in 3, 4, 5, 6: relations on {0..q-1}^3 keeping each tuple with probability p, p uniform in [0.25, 0.97] per relation, kept when they are non-rectangular knots; sampled until 40 knots with no direct case are found or 600 seconds pass per q",
+    "random_4_variable": "for q in 2 and 3: relations on {0..q-1}^4 with p uniform in [0.4, 0.97], kept when non-rectangular knots; until 25 knots with no direct case or 600 seconds per q",
+    "group_actions": "K(u, g, c): c = g(u), for S3 on 3 points, the dihedral group of order 8 on the 4 corners of a square, A4 on 4 points, AGL(1,5) on 5 points, and the regular action of Z3 (control)",
+    "shadows": "M = x+y+z=0 over Z3 with h a random surjection onto 2 values (three products) or the identity (one product), and M = x+y+z+w=0 over Z2 with h the identity (two products); the inner relation is h(M) plus 0 to 2 random extra tuples, kept when the product is a non-rectangular knot",
+    "lifted": "3-variable knots K on 4 and 5 values with g(K) = (x+y+z=0 over Z3) for g = (0,1,2,2) and g = (0,1,2,2,2), (0,1,1,2,2): each Z3 tuple keeps a random nonempty set of its lifts; 40 non-rectangular knots per domain size",
+    "searches": "positional systems with m = 2 and at most 5 copies (3 variables) or 4 copies (4 variables), exhaustively; for group actions also m = 3 (sampled, 400 systems, at most 7 copies); for shadows and unresolved lifted knots, random systems with identifications on at most 6 variables (1500 per shadow, 2000 per lifted knot)"
+  },
+  "forbidden_inputs": [
+    "no classification label chooses which systems are searched",
+    "shadow products are decided by brute force over the product's own allowed states, not through their factors"
+  ],
+  "predictions": {
+    "L1": "every non-rectangular random 3-variable knot on 3, 4, 5 and 6 values is resolved by a direct case, the fibre-distance construction, the diagonal derivation, or a positional system with at most 5 copies",
+    "L2": "positional methods alone (direct case, fibre distance, positional system) resolve every such knot, so no cross-position identification is needed for random knots",
+    "L3": "every non-rectangular random 4-variable knot on 2 and 3 values is resolved by a direct case, the fibre-distance construction, or a positional system with at most 4 copies",
+    "L4": "every non-regular group-action knot in the roster is non-rectangular, has no direct case, and has a failure in a searched positional system; the regular action of Z3 shows none",
+    "L5": "every shadow product is a non-rectangular knot, and in every sampled system its constrained sets are exactly those of M and no two circuits fail elimination; its inner factor alone fails in some sampled system",
+    "L6": "every non-rectangular lifted knot on 4 and 5 values has a failure found by the methods above or by the random search, so no counterexample appears below 6 values in these families"
+  },
+  "primary_observable": "per knot: rectangularity, direct case, fibre-distance applicability, diagonal resolution, positional witness (copies and failing circuits), random-search witness; per shadow: systems sampled, systems whose constrained sets equal M's, failures in the product and in the inner factor",
+  "cheapest_meaningful_control": "(C1) the Boolean knot {000, 010, 011, 101, 110} must be resolved by the diagonal derivation; (C2) the regular action of Z3, a difference law, must show no failure; (C3) 'the inner factor of a shadow composes like cycles by itself' must be rejected; (C4) 'every non-rectangular knot has a direct case' must be rejected",
+  "independent_check": "check_result.py rebuilds every recorded resolution witness from its definition with its own solver and circuit routine (positional systems, derived knots and their two-copy joins, fibre-distance compositions), recomputes rectangularity and direct cases, and re-decides a subsample of shadow systems by brute force",
+  "decision_or_followup_rule": "A signal is L1-L6 holding. A random or lifted knot with no failure found becomes a candidate for ticket B; a shadow system with a failure refutes the shadow theorem and reopens the local converse; L4 failing on a non-regular action is a candidate, not a counterexample, since the search is finite.",
+  "resource_budget": {
+    "wall_seconds": 5400,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "Scoping on 2026-10-21 (not evidence): every random knot with no direct case on 3-5 values was resolved by a positional system with 3 or 4 copies; a product of x+y+z=0 over Z3 with its image on {0,1} had M's constrained sets and no failure in 218574 random systems; group-action knots for S3 needed 6 copies on 3 variables per position.",
+  "stop_rule": "Stop after the declared roster or budget; stop early only on a solver or control failure.",
+  "nonclaims": [
+    "Finite searches on the declared families only; general statements belong to ticket B.",
+    "A failure not found within the searched systems is not a proof that none exists.",
+    "No claim about native structure, distance or physics."
+  ]
+}

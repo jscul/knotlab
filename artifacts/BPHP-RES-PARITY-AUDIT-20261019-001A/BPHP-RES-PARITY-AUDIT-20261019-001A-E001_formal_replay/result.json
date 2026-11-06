@@ -1,0 +1,129 @@
+{
+  "all_reported_axioms_standard": true,
+  "axiom_reports": {
+    "MathResearch.PolynomialCalculus.generic_CNF_density_bound_simple": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MathResearch.PolynomialCalculus.generic_CNF_subspace_criterion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MathResearch.PolynomialCalculus.no_separated_subspace_of_complementary_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MathResearch.bitPHP_exponential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MathResearch.bitPHP_exponential_base_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MathResearch.bitPHP_superpolynomial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MathResearch.generic_affine_subspace_consequence": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "checkout_commit": "8904bf09a5376f48a00d1c25d079bf0c6441502a",
+  "checkout_matches_pin": true,
+  "checkout_tracked_changes": "",
+  "control_mutated_rejected": true,
+  "control_sorry_detected": true,
+  "experiment_id": "BPHP-RES-PARITY-AUDIT-20261019-001A-E001",
+  "main_theorem_elaborated_type": "\u2200 \u2113 \u2265 32,\n  \u2200 {S : \u2115}\n    (C :\n      Fin S \u2192 MathResearch.PolynomialCalculus.FiniteParityClause (MathResearch.PolynomialCalculus.BitVar (2 ^ \u2113 + 1) \u2113))\n    (_dag :\n      MathResearch.PolynomialCalculus.AffineDAG (MathResearch.PolynomialCalculus.usualBitPHPInitials (2 ^ \u2113 + 1) \u2113) C)\n    (finish : Fin S), C finish = \u2205 \u2192 Real.exp (\u2191(2 ^ \u2113) / (32768 * \u2191\u2113 ^ 2)) < \u2191S",
+  "mutation_applied": true,
+  "schema_version": 1,
+  "status": "passed",
+  "steps": [
+    {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit": 0,
+      "label": "lean_version",
+      "seconds": 37.9,
+      "tail": "Lean (version 4.34.0-rc2, x86_64-unknown-linux-gnu, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)\ninfo: Version 4.2.4 of elan is available! Use `elan self update` to update.\ninfo: downloading https://releases.lean-lang.org/lean4/v4.34.0-rc2/lean-4.34.0-rc2-linux.tar.zst\ninfo: installing /home/jscul/.elan/toolchains/leanprover--lean4---v4.34.0-rc2\n"
+    },
+    {
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get",
+        "claims/BitPHPPreprintRevision1.lean"
+      ],
+      "exit": 0,
+      "label": "cache_get",
+      "seconds": 94.5,
+      "tail": "Current branch: HEAD\nUsing cache from origin: (some leanprover-community/mathlib4)\nAttempting to download 1 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master\nAttempting to download 1 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4\nDecompressed 0 file(s)\nNo cache files to decompress\ninfo: mathlib: cloning https://github.com/leanprover-community/mathlib4.git\ninfo: mathlib: checking out revision '67248ba34806c60bf24b5e99f0f09946ffc465c9'\ninfo: plausible: cloning https://github.com/leanprover-community/plausible\ninfo: plausible: checking out revision 'd9598f07b1bc701f1e3aae163d2681c1fd978793'\ninfo: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient\ninfo: LeanSearchClient: checking out revision 'ba67e212be1197b84c1f1f6299488a10a3002713'\ninfo: importGraph: cloning https://github.com/leanprover-community/import-graph\ninfo: importGraph: checking out revision '610be2844dd41d56bb3612f4de36c735690d40b8'\ninfo: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4\ninfo: proofwidgets: checking out revision 'a8acbfd87375ff4abe14ce09db5b7664d383bc7f'\ninfo: aesop: cloning https://github.com/leanprover-community/aesop\ninfo: aesop: checking out revision '18889deb9e83ea7420ef51c160d6f88552e744e3'\ninfo: Qq: cloning https://github.com/leanprover-community/quote4\ninfo: Qq: checking out revision '507746ab8f4b643ccdacb2ec4cdb5853fa9f8ab3'\ninfo: batteries: cloning https://github.com/leanprover-community/batteries\ninfo: batteries: checking out revision '3b4ce082a2051785ac99f899a50c55d43b6d9c28'\ninfo: Cli: cloning https://github.com/leanprover/lean4-cli\ninfo: Cli: checking out revision 'ab3a82db9fea14cf0fd7f5a2de650f4b534640af'\n\u2714 [1/5] Built Cache.Cli (182ms)\n\u2714 [2/5] Built Cache.Lean (197ms)\n\u2714 [8/28] Built Cache.Cli:c.o (79ms)\n\u2714 [9/28] Built Cache.Lean:c.o (92ms)\n\u2714 [10/28] Built Cache.Env (174ms)\n\u2714 [11/28] Built Cache.Env:c.o (83ms)\n\u2714 [12/28] Built Cache.Infra (211ms)\n\u2714 [13/28] Built Cache.Infra:c.o (116ms)\n\u2714 [14/28] Built Cache.IO (713ms)\n\u2714 [15/28] Built Cache.Hashing (394ms)\n\u2714 [16/28] Built Cache.Hashing:c.o (260ms)\n\u2714 [17/28] Built Cache.IO:c.o (879ms)\n\u2714 [18/28] Built Cache.Requests (1.1s)\n\u2714 [19/28] Built Cache.Marker (298ms)\n\u2714 [20/28] Built Cache.Marker:c.o (69ms)\n\u2714 [21/28] Built Cache.Query (345ms)\n\u2714 [22/28] Built Cache.Query:c.o (168ms)\n\u2714 [23/28] Built Cache.Warning (337ms)\n\u2714 [24/28] Built Cache.Warning:c.o (146ms)\n\u2714 [25/28] Built Cache.Main (632ms)\n\u2714 [26/28] Built Cache.Requests:c.o (1.7s)\n\u2714 [27/28] Built Cache.Main:c.o (552ms)\n\u2714 [28/28] Built cache:exe (373ms)\n\nDownloaded: 0 file(s) [attempted 1/1 = 100%, 41 KB/s], Decompressed: 0\nDownloaded: 0 file(s) [attempted 1/1 = 100%, 41 KB/s], Decompressed: 0\n\nDownloaded: 0 file(s) [attempted 1/1 = 100%, 70 KB/s], Decompressed: 0\nDownloaded: 0 file(s) [attempted 1/1 = 100%, 70 KB/s], Decompressed: 0\nWarning: some files were not found in the cache.\nThis usually means that your local checkout of mathlib4 has diverged from upstream.\n\n  * If you push your commits to a PR to the mathlib4 repository\n    (use a draft PR if it is not ready for review),\n    then CI will build the oleans and they will be available later.\n  * If you have already opened a PR, this may mean\n    the CI build has failed part-way through building.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "verify.py",
+        "--target",
+        "claims/BitPHPPreprintRevision1.lean",
+        "--out",
+        "/home/jscul/p-vs-np-contact-first/artifacts/BPHP-RES-PARITY-AUDIT-20261019-001A/BPHP-RES-PARITY-AUDIT-20261019-001A-E001_formal_replay/verification.txt"
+      ],
+      "exit": 0,
+      "label": "verify",
+      "seconds": 444.1,
+      "tail": "         (\u2200 p \u2208 U, p.totalDegree \u2264 k) \u2192\n                          (\u2200 f \u2208 U,\n                              MathResearch.PolynomialCalculus.Derives old (k * (max (2 * h + w) (4 * h + 1) + 1)) f \u2192\n                                f = 0) \u2192\n                            Module.finrank (ZMod 2) \u21a5U \u2264\n                              (3 * S + Fintype.card J) * (Fintype.card \u03c3 - (h * (k + 1) + 1) + k).choose k\n'MathResearch.PolynomialCalculus.generic_CNF_subspace_criterion' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n@MathResearch.PolynomialCalculus.generic_CNF_density_bound_simple : \u2200 {\u03c3 J : Type} [inst : Fintype \u03c3]\n  [inst_1 : Fintype J] {S : \u2115} (I : Set (MathResearch.PolynomialCalculus.FiniteParityClause \u03c3))\n  (C : Fin S \u2192 MathResearch.PolynomialCalculus.FiniteParityClause \u03c3)\n  (dag : MathResearch.PolynomialCalculus.AffineDAG I C) (finish : Fin S),\n  C finish = \u2205 \u2192\n    \u2200 (A : J \u2192 MathResearch.PolynomialCalculus.FiniteParityClause \u03c3) (w : \u2115),\n      (\u2200 (j : J), Finset.card (A j) \u2264 w) \u2192\n        (\u2200 D \u2208 I, \u2203 j, MathResearch.clauseEntails (A j) D) \u2192\n          \u2200 (old : Set (MathResearch.PolynomialCalculus.Poly (ZMod 2) \u03c3)),\n            MathResearch.PolynomialCalculus.booleanBase \u2286 old \u2192\n              (\u2200 (j : J), MathResearch.PolynomialCalculus.clauseFalsityPolynomial (A j) \u2208 old) \u2192\n                \u2200 (h k : \u2115),\n                  1 \u2264 h \u2192\n                    1 \u2264 k \u2192\n                      h * (k + 1) + 1 \u2264 Fintype.card \u03c3 \u2192\n                        \u2200 (U : Submodule (ZMod 2) (MvPolynomial \u03c3 (ZMod 2))),\n                          (\u2200 p \u2208 U, p.totalDegree \u2264 k) \u2192\n                            (\u2200 f \u2208 U,\n                                MathResearch.PolynomialCalculus.Derives old (k * (max (2 * h + w) (4 * h + 1) + 1)) f \u2192\n                                  f = 0) \u2192\n                              \u2191(Module.finrank (ZMod 2) \u21a5U) \u2264\n                                \u2191(3 * S + Fintype.card J) * \u2191((Fintype.card \u03c3 + k).choose k) *\n                                  Real.exp (-(\u2191h * \u2191k ^ 2) / (\u2191(Fintype.card \u03c3) + \u2191k))\n'MathResearch.PolynomialCalculus.generic_CNF_density_bound_simple' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n@MathResearch.generic_affine_subspace_consequence : \u2200 {\u03c3 \u03ba : Type} [inst : Fintype \u03c3] [inst_1 : Fintype \u03ba]\n  {\u03b9 : \u03ba \u2192 Type} [inst_2 : (b : \u03ba) \u2192 Fintype (\u03b9 b)] (g : (b : \u03ba) \u2192 \u03b9 b \u2192 MathResearch.AffineInputMap \u03c3) (h k D : \u2115),\n  1 \u2264 h \u2192\n    1 \u2264 k \u2192\n      2 * h + 1 \u2264 D \u2192\n        \u2200 (F : Set (MvPolynomial \u03c3 (ZMod 2))),\n          MathResearch.PolynomialCalculus.booleanBase \u2286 F \u2192\n            \u2200 (U : Submodule (ZMod 2) (MvPolynomial \u03c3 (ZMod 2))),\n              (\u2200 p \u2208 U, p.totalDegree \u2264 k) \u2192\n                MathResearch.PolynomialCalculus.Derives\n                    (MathResearch.ensFamilySystem (fun b i => MathResearch.finiteAffinePolynomial (g b i)) h F) D 1 \u2192\n                  Module.finrank (ZMod 2) \u21a5U \u2264\n                    Module.finrank (ZMod 2) \u21a5(U \u2293 MathResearch.PolynomialCalculus.pcSpace F (k * (D + 1))) +\n                      \u2211 b, (Fintype.card \u03c3 - MathResearch.affineInputRank (g \u2191b) + k).choose k\n'MathResearch.generic_affine_subspace_consequence' depends on axioms: [propext, Classical.choice, Quot.sound]\n@MathResearch.PolynomialCalculus.no_separated_subspace_of_complementary_pair : \u2200 {K : Type u_1} {V : Type u_2}\n  [inst : Field K] {F : Set (MathResearch.PolynomialCalculus.Poly K V)} (L : MathResearch.PolynomialCalculus.Poly K V),\n  MvPolynomial.totalDegree L \u2264 1 \u2192\n    L \u2208 F \u2192\n      1 - L \u2208 F \u2192\n        \u2200 (k B : \u2115),\n          1 \u2264 B \u2192\n            k \u2264 B \u2192\n              \u2200 (U : Submodule K (MathResearch.PolynomialCalculus.Poly K V)),\n                (\u2200 p \u2208 U, MvPolynomial.totalDegree p \u2264 k) \u2192\n                  (\u2200 f \u2208 U, MathResearch.PolynomialCalculus.Derives F B f \u2192 f = 0) \u2192 U = \u22a5\n'MathResearch.PolynomialCalculus.no_separated_subspace_of_complementary_pair' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nPASS: 1 proof files; 0 interface files (definitions, not claim-completion status); 7 audited declarations.\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "claims.BitPHPPreprintRevision1"
+      ],
+      "exit": 0,
+      "label": "leanchecker_fresh",
+      "seconds": 206.0,
+      "tail": ""
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "/home/jscul/external-audits/bit-php-check/formalization/.lake/audit_controls/SorryControl.lean"
+      ],
+      "exit": 0,
+      "label": "control_sorry",
+      "seconds": 1.5,
+      "tail": "/home/jscul/external-audits/bit-php-check/formalization/.lake/audit_controls/SorryControl.lean:2:8: warning: declaration uses `sorry`\n'auditSorryControl' depends on axioms: [sorryAx]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "/home/jscul/external-audits/bit-php-check/formalization/.lake/audit_controls/MutatedExponential.lean"
+      ],
+      "exit": 1,
+      "label": "control_mutated_bound",
+      "seconds": 8.3,
+      "tail": "/home/jscul/external-audits/bit-php-check/formalization/.lake/audit_controls/MutatedExponential.lean:41:47: error: Application type mismatch: The argument\n  hnot\nhas type\n  \u00acReal.exp (\u2191(2 ^ \u2113) / (1 * \u2191\u2113 ^ 2)) < \u2191S\nbut is expected to have type\n  \u00acReal.exp x < \u2191S\nin the application\n  le_of_not_gt hnot\n/home/jscul/external-audits/bit-php-check/formalization/.lake/audit_controls/MutatedExponential.lean:157:28: error(lean.unknownIdentifier): Unknown identifier `bitPHP_exponential`\n/home/jscul/external-audits/bit-php-check/formalization/.lake/audit_controls/MutatedExponential.lean:155:51: error: unsolved goals\n\u2113 : \u2115\nh\u2113 : \u2113 \u2265 32\nS : \u2115\nC : Fin S \u2192 FiniteParityClause (BitVar (2 ^ \u2113 + 1) \u2113)\ndag : AffineDAG (usualBitPHPInitials (2 ^ \u2113 + 1) \u2113) C\nfinish : Fin S\nhempty : C finish = \u2205\n\u22a2 2 ^ (\u2191(2 ^ \u2113) / (32768 * \u2191\u2113 ^ 2)) < \u2191S\n"
+    }
+  ],
+  "ticket": "BPHP-RES-PARITY-AUDIT-20261019-001A",
+  "toolchain_pin": "leanprover/lean4:v4.34.0-rc2",
+  "verify_pass_line": "PASS: 1 proof files; 0 interface files (definitions, not claim-completion status); 7 audited declarations."
+}

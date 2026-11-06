@@ -1,0 +1,131 @@
+{
+  "artifact_id": "TWIST-3D-20261025-001A-P001",
+  "checks": {
+    "census": {
+      "each expected law passes every identity by direct evaluation": true,
+      "every solution is one of the seven": true,
+      "expected (seven laws within the compatible labellings)": 354,
+      "solutions by type": {
+        "all 0": 128,
+        "all 1": 128,
+        "all equal": 64,
+        "even cocycles": 16,
+        "even or odd": 1,
+        "free": 1,
+        "odd cocycles": 16
+      },
+      "solutions equal the expected laws": true,
+      "solutions, one rule for both orientations": 354,
+      "solutions, two rules": 354,
+      "the two orientations always agree": true
+    },
+    "sampled triangulations": {
+      "counts equal the cocycle formulas": true,
+      "homology types": [
+        [
+          0,
+          []
+        ],
+        [
+          0,
+          [
+            2
+          ]
+        ],
+        [
+          0,
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          0,
+          [
+            3
+          ]
+        ],
+        [
+          0,
+          [
+            4
+          ]
+        ],
+        [
+          0,
+          [
+            5
+          ]
+        ],
+        [
+          0,
+          [
+            7
+          ]
+        ],
+        [
+          0,
+          [
+            8
+          ]
+        ],
+        [
+          1,
+          []
+        ]
+      ],
+      "sampled triangulations": 60
+    }
+  },
+  "claim": "On ordered triangulations, a counting law with one bit per edge, any of the 255 triangle rules read in vertex order and any tetrahedron rules for the two orientations satisfies the ordered 2-3 and 1-4 identities with some constants exactly when both tetrahedron rules equal one of the seven symmetric laws (all 0, all 1, all equal, even cocycles, odd cocycles, even or odd, free) contained in the labellings compatible with the triangle rule: 354 laws, none using an asymmetric part of its rule or orientation. So invariant counts are 1, 2, |H1(M; Z2)|/2 or |H1(M; Z2)|, and each twisted Fibonacci knot carries only one constant law and one cocycle law.",
+  "controls": {
+    "a sample with H_1 of even order has |H^1(M; Z2)| = 2": true,
+    "the full twisted rule fails some identity": true,
+    "without the 1-4 identities the search admits rules outside the seven": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "TWIST-3D-20261025-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "twists_add_nothing_shown": true,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TWIST-3D-20261025-001A"
+}

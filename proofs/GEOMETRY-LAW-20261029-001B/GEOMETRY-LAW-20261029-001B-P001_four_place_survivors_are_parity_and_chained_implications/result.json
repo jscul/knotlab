@@ -1,0 +1,183 @@
+{
+ "schema_version": 1,
+ "artifact_id": "GEOMETRY-LAW-20261029-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "ok": true,
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 2,
+    "mismatched": {}
+   }
+  },
+  "1 knots, classes, orientation": {
+   "ok": true,
+   "detail": {
+    "knots": 742,
+    "classes": 106,
+    "stabilizer sizes": {
+     "1": 48,
+     "2": 420,
+     "4": 126,
+     "6": 112,
+     "8": 24,
+     "24": 12
+    },
+    "orienting relations": 96,
+    "orienting classes": 6,
+    "orienting stabilizer sizes": {
+     "2": 48,
+     "1": 48
+    }
+   }
+  },
+  "2 exhaustive census (2 and 3 copies)": {
+   "ok": true,
+   "detail": {
+    "shapes": {
+     "2": 1,
+     "3": 3
+    },
+    "chain shapes": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "rebuilt classes": 3,
+    "even parity rebuilt by": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "odd parity rebuilt by": [
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "implication rebuilt by": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "implication": {
+     "excluded": 4,
+     "stabilizer": 4,
+     "affine": false,
+     "pairwise between pair parities": [
+      [
+       0,
+       1
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    },
+    "outputs not co-independent": 0,
+    "non-decreasing arrows": []
+   }
+  },
+  "3 chains of 2 to 7 copies rebuild the implication": {
+   "ok": true,
+   "detail": {
+    "2": [
+     true,
+     true,
+     true
+    ],
+    "3": [
+     true,
+     true,
+     true
+    ],
+    "4": [
+     true,
+     true,
+     true
+    ],
+    "5": [
+     true,
+     true,
+     true
+    ],
+    "6": [
+     true,
+     true,
+     true
+    ],
+    "7": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  "4 random gadgets of 4 copies": {
+   "ok": true,
+   "detail": {
+    "rebuilt classes": [
+     {
+      "excluded": 8,
+      "stabilizer": 24,
+      "affine": true,
+      "pairwise between pair parities": null
+     }
+    ],
+    "implication only on chains": "not met"
+   }
+  },
+  "5 no orienting class is rebuilt": {
+   "ok": true,
+   "detail": {
+    "orienting classes rebuilt": 0
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "classes rebuilt only with self-gluing": 18,
+    "all-equal rebuilt by every native shape": true,
+    "bigon of the odd class gives the even class": true
+   }
+  }
+ },
+ "seconds": 15.5
+}

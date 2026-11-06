@@ -1,0 +1,104 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COPRIME-PAIRS-20261027-001A-P001",
+  "canonical_id": "COPRIME-PAIRS-20261027-001A-P001",
+  "kind": "proof",
+  "ticket": "COPRIME-PAIRS-20261027-001A",
+  "proof": "COPRIME-PAIRS-20261027-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Triple failures at every sector order: the corrected and expanded hardness proof",
+  "status": "Proved",
+  "claim": "Successor of COPRIME-DICHOTOMY-20261027-001C-P001 (frozen). p >= 5, r | p - 1, n graded of class at most 4 with a grading-preserving C_r action, d | r. If (P2_d) holds (so the parity map theta_d is an automorphism compatible with the action; the action itself need not factor through C2) and (P3_d) fails, counting |Hom(pi_1 S^3_(d/p)(K), G)| over knot diagrams is #P-hard. Corrections: the literal Fox matrix of the closure relators is t^-1 (Bur_t - I), with the column space of I - Bur_t; the cable homomorphism uses the integer abelianization exponent; the edge weight is used with its actual coefficients. Expansions: canonical pinned coordinates on which the amphichiral symmetry acts linearly (odd layer-2 parts are cocycles, even parts are unique, odd layer-3 parts do not reach odd layer-4 obstructions); reading strands nonzero at every root character with a basis proof for both summand families (cable colourings are bundle constants; two-partition lemma plus conjugation for amphichiral summands).",
+  "dependencies": [
+    "COPRIME-DICHOTOMY-20261027-001Z"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A braid on which the literal Fox closure rows differ from t^-1 (Bur_t - I), or a cable (k,1) of T(2,p) whose fixed colourings at some t with t^k = -1 are not exactly the bundle constants.",
+    "A pinned map built with the integer exponent that fails a relator, or a cable summand with theta' of order greater than two on which some datum fails to lift.",
+    "A pair-quotient algebra in which an odd layer-2 defect, an odd-by-odd layer-4 bracket of odd character, or an unbalanced odd triple bracket is nonzero.",
+    "A summand braid for which no strand pair separates the classes at every root character, or an edge-weight count with the actual coefficients that fails 0 < f(0, s*) < f(0)."
+  ],
+  "lineage": {
+    "home_scope": "COPRIME-PAIRS-20261027-001",
+    "epic_path": [
+      "COPRIME-PAIRS-20261027-001"
+    ],
+    "parents": [
+      "proofs/COPRIME-DICHOTOMY-20261027-001Z/COPRIME-DICHOTOMY-20261027-001Z-P001_epic_closure/manifest.json",
+      "proofs/COPRIME-DICHOTOMY-20261027-001C/COPRIME-DICHOTOMY-20261027-001C-P001_a_triple_failure_under_the_pair_condition_makes_counting_sharp_p_hard_at_every_sector_order/manifest.json",
+      "proofs/COPRIME-DICHOTOMY-20261027-001C/COPRIME-DICHOTOMY-20261027-001C-P001_a_triple_failure_under_the_pair_condition_makes_counting_sharp_p_hard_at_every_sector_order/result.json",
+      "proofs/COPRIME-DICHOTOMY-20261027-001A/COPRIME-DICHOTOMY-20261027-001A-P001_pairs_and_triples_of_nontrivial_characters_the_polynomial_side_for_every_cyclic_action/manifest.json",
+      "experiments/COPRIME-DICHOTOMY-20261027-001B/COPRIME-DICHOTOMY-20261027-001B-E002_base_terms_and_steering_at_higher_characters_rerun/contract.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/COPRIME-DICHOTOMY-20261027-001Z/COPRIME-DICHOTOMY-20261027-001Z-P001_epic_closure/manifest.json": "bb77fece155a32a32f894d036682628a94a8c8f4a1c28e1dcbeea8864aeb4241",
+    "proofs/COPRIME-DICHOTOMY-20261027-001C/COPRIME-DICHOTOMY-20261027-001C-P001_a_triple_failure_under_the_pair_condition_makes_counting_sharp_p_hard_at_every_sector_order/manifest.json": "c521a20a3e3a9cf601721456c927ec30e061a67bb0bf7b038d807925ecc748d6",
+    "proofs/COPRIME-DICHOTOMY-20261027-001C/COPRIME-DICHOTOMY-20261027-001C-P001_a_triple_failure_under_the_pair_condition_makes_counting_sharp_p_hard_at_every_sector_order/result.json": "6cca95a7995f6658dadfebd1f6a19bfa9b9a9d78b35b1f6dce8923d3a55ddc82",
+    "proofs/COPRIME-DICHOTOMY-20261027-001A/COPRIME-DICHOTOMY-20261027-001A-P001_pairs_and_triples_of_nontrivial_characters_the_polynomial_side_for_every_cyclic_action/manifest.json": "3d2369bc3d4aef4ff0a2e5a6b60218c57c70f0695f395a00ae0ab26785a39e38",
+    "experiments/COPRIME-DICHOTOMY-20261027-001B/COPRIME-DICHOTOMY-20261027-001B-E002_base_terms_and_steering_at_higher_characters_rerun/contract.json": "f9ffb883ec0c6eafba0994f3436a3b49270dfb3fd777c3ee34a850f8b88d2b95"
+  },
+  "paths": {
+    "manifest": "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/manifest.json",
+    "identity": "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/identity.json",
+    "directory": "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded",
+    "proof": "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/proof.md",
+    "result": "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/result.json",
+    "check": "proofs/COPRIME-PAIRS-20261027-001A/COPRIME-PAIRS-20261027-001A-P001_triple_failures_at_every_sector_order_corrected_and_expanded/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "coprime_triple_hardness_corrected_shown": false
+  },
+  "foundation_claim_scope": "p >= 5, r | p - 1, graded nilpotent Lie algebras of class at most 4 with a grading-preserving C_r action; manifolds S^3_(d/p)(K) (H1 = Z/d). Cited with precise references in proof.md: Lazard; Schur-Zassenhaus; Schubert's classification and invertibility of two-bridge knots; the satellite decomposition; Lefschetz duality with local coefficients; universal coefficients over F_p[t, 1/t]; Squier's unitarity (here verified directly); Bulatov-Grohe via Cai-Chen-Lu; Lemma I. Not covered: pair failures in classes 3 and 4, classes at least 5, non-graded algebras, p = 2, 3, knot exteriors. r counts the characters of the action, not Boolean variables. No P versus NP claim.",
+  "validation": {
+    "status": "checked: literal Fox closure rows equal t^-1 (Bur_t - I) at 240 characters of random braids; Squier form and reversed Artin identity replayed; on eight pair quotients only balanced triple shapes and no parity violations, and on five knot models (chiral and amphichiral, class-4 algebras) odd layer-2 residuals vanish and odd layer-4 residuals do not depend on odd layer-3 cocycles while even ones do; Bur_t(delta_k) characteristic polynomials (258 cases); fixed colourings of (k,1)-cables are bundle constants at t^k = -1 (eight (p,k)); the integer-exponent map with theta' of order 6 satisfies the T(2,13) relators; data lift on cables at eight (p,d,k) for four algebras; two-partition lemma exhaustive for n <= 6 and 120 conjugated amphichiral representatives separated; exact edge counts with a direct exponential sum including kappa; three gadget replications including a conjugated figure-eight; the independent AI review of the predecessor (Codex, V2 finite checks) is recorded; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-27."
+  }
+}

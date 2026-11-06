@@ -1,5 +1,10 @@
 # Findings
 
+These eleven findings are the ones we packaged for outside readers. Each comes
+with Lean proofs, a self-contained note or exhaustive checks that run from this
+repository. Every other result is in [RESULTS.md](RESULTS.md), dated and linked
+to its proofs as recorded.
+
 Each finding is something we proved and checked ourselves. It is one of three
 kinds:
 
@@ -43,7 +48,7 @@ come from, so that later corrections can be traced.
 | 10 | `ROWELL-NOTE-20261026-001` and the records listed in the note's evidence section |
 | 11 | `AFFINE-SUBSPACE-EROSION-001` |
 
-## What counts as established here
+## What counts as packaged here
 
 A finding enters this list only when all of these hold:
 
@@ -51,6 +56,7 @@ A finding enters this list only when all of these hold:
 2. Its numbers can be rechecked by a script in this repository.
 3. We looked for prior statements, and the finding states what we found.
 
-Results still being written up stay out. That includes our degree bounds for
-Tseitin formulas in other proof systems, and the spaces the not-all-equal knot
-builds. Corrections are listed in [HISTORY.md](HISTORY.md).
+The other results in [RESULTS.md](RESULTS.md) have proofs and checks in the
+full record, written in the program's own language. They include our degree
+and size bounds for Tseitin formulas in other proof systems, and the spaces the
+not-all-equal knot builds. Corrections are listed in [HISTORY.md](HISTORY.md).

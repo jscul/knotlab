@@ -1,0 +1,22 @@
+machinery ok: True 6.2
+Traceback (most recent call last):
+  File "/home/jscul/p-vs-np-contact-first/experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/run.py", line 123, in <module>
+    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "out"))
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/run.py", line 64, in main
+    knot = cohomology_data(comps, spec, knot_group=True)
+  File "/home/jscul/p-vs-np-contact-first/experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/ck_fixtures.py", line 178, in cohomology_data
+    H[e] = cohomology(U, rels, D.psi, chi)[0]
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/ck_core.py", line 461, in cohomology
+    Z = nullspace_mod(fox_matrix(ngen, rels, psi, chi, p), ngen, p)
+  File "/home/jscul/p-vs-np-contact-first/experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/ck_core.py", line 404, in nullspace_mod
+    Rr, piv = rref_mod(M, p)
+              ~~~~~~~~^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/ck_core.py", line 391, in rref_mod
+    rows = np.nonzero(A[:, c])[0]
+           ~~~~~~~~~~^^^^^^^^^
+  File "/home/jscul/p-vs-np-contact-first/.venv/lib/python3.13/site-packages/numpy/_core/fromnumeric.py", line 2014, in _nonzero_dispatcher
+    def _nonzero_dispatcher(a):
+    
+KeyboardInterrupt

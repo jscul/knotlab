@@ -1,0 +1,104 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-SHIELD-20261023-001C-P001",
+  "canonical_id": "LOOP-SHIELD-20261023-001C-P001",
+  "kind": "proof",
+  "ticket": "LOOP-SHIELD-20261023-001C",
+  "proof": "LOOP-SHIELD-20261023-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The wall on closed surfaces, and which twists a seam can carry",
+  "status": "Proved",
+  "claim": "On every closed orientable surface with a cellularly embedded graph, for every primitive class c and twist q odd on c, an explicit involution maps the orientations whose twisted strong components wind along c and nothing else in twist q onto those in twist q + PD(c), keeping every directed cycle up to a relabelling of sheets; so the two line probabilities are equal under fair orientations. The seams next to a vertex set P (mod-2 cocycles on the edges with one end in P) carry exactly the duals of the classes of curves in the open star of P minus the graph on P; for square tilings that open star retracts onto the graph on P plus a diagonal across each square with exactly two opposite corners in P, so next to a lone odd loop with no such square a seam carries only 0 or PD(c). In three dimensions the same duality involves closed surfaces, and a set whose open star lies in a solid torus carries no seam class. An earlier statement of the seam lemma with the graph on P in place of the open star was false and is corrected.",
+  "dependencies": [
+    "ODD-LOOP-20261023-001B",
+    "NAE-INVARIANT-20261022-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "An orientation in a line event of a genus-2 surface whose moved digraph has different arcs on directed cycles, whose image is not in the partner line event, or whose image does not map back.",
+    "A seam next to a random vertex set whose class is not dual to a class carried by the open star of the set.",
+    "A loop confined to a tube of the 5 x 5 x 5 torus with a nonzero seam class.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-SHIELD-20261023-001",
+    "epic_path": [
+      "LOOP-SHIELD-20261023-001"
+    ],
+    "parents": [
+      "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/manifest.json",
+      "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/ODD-LOOP-20261023-001B/ODD-LOOP-20261023-001B-P001_wall_involution/manifest.json": "b968d3e90bd6015578de43f4479d178e2263950995f8680af560713645193476",
+    "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json": "3dc17f4ab6171f5d61989a43816aca233d401ef04fc8746e7f623e67ce47e0bc"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/manifest.json",
+    "identity": "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/identity.json",
+    "directory": "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall",
+    "proof": "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/proof.md",
+    "result": "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/result.json",
+    "check": "proofs/LOOP-SHIELD-20261023-001C/LOOP-SHIELD-20261023-001C-P001_surface_wall/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "surface_wall_theorem_proved": true,
+    "seam_duality_proved": true,
+    "specificity_of_shielding_proved": false
+  },
+  "foundation_claim_scope": "Twisted double covers of uniform random orientations on closed orientable surfaces and closed 3-manifolds with cell structures; an exact identity and duality statements about seams. Lattices and surfaces are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py examines 425 distinct orientations from random walks with restarts inside line events of genus-2 L-shaped surfaces (L(2,2,2,2): classes h2 and v2; L(3,1,2,2): class v1) and verifies on every one the wall lemma, that the image lies in the partner line event, that the involution returns, and that the wall realizes PD(c); every seam next to those loops carried only 0 and PD(c). On 300 random vertex sets of L(3,2,2,2) every seam class is dual to a class carried by the open star (graph on P plus diagonals); on 104 of them the graph alone misses some. On 200 loops in a 2 x 2 tube of the 5 x 5 x 5 torus only the zero seam class occurs. Four controls rejected. No human or external review",
+    "level": "V1 prose proof with sampled checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

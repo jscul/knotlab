@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "artifact_id": "DEEP-HOLES-20261020-001Z-P001",
+  "canonical_id": "DEEP-HOLES-20261020-001Z-P001",
+  "kind": "proof",
+  "ticket": "DEEP-HOLES-20261020-001Z",
+  "proof": "DEEP-HOLES-20261020-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the deep-holes epic",
+  "status": "Proved",
+  "claim": "Ledger closing DEEP-HOLES-20261020-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "DEEP-HOLES-20261020-001A",
+    "DEEP-HOLES-20261020-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, contract or result changes, a proof is not Proved, the contract is not Frozen, or a bound result has an unexpected status.",
+    "The decision note is missing.",
+    "A ticket of the epic lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "DEEP-HOLES-20261020-001",
+    "epic_path": [
+      "DEEP-HOLES-20261020-001"
+    ],
+    "parents": [
+      "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/manifest.json": "5c8f6f8482e873b329129b070cea775d7fbbd3b785a925123397d0d4670da4d1",
+    "proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/result.json": "310721419e2689043755c5a83499d33605b1bf6723f1bb1c0a8d5e2e6f19d53d",
+    "experiments/DEEP-HOLES-20261020-001A/DEEP-HOLES-20261020-001A-E001_charge_census/contract.json": "b06e4dc3e35998240c20974f2ce4686bfc4809a6714e6b67348cf7c5b6f3666d",
+    "artifacts/DEEP-HOLES-20261020-001A/DEEP-HOLES-20261020-001A-E001_charge_census/result.json": "08427b5eed9d77e10ac90008651d972e8acdf8907439bf30ec63d5b256e2a74a"
+  },
+  "paths": {
+    "manifest": "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure",
+    "proof": "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/result.json",
+    "check": "proofs/DEEP-HOLES-20261020-001Z/DEEP-HOLES-20261020-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "competition_reading_defined": false,
+    "three_variable_least_set_knots_are_not_all_equal": false,
+    "no_least_set_knot_on_four_or_more_variables": false,
+    "every_three_variable_relation_by_gadgets_with_hidden_variables": false,
+    "readings_agree_when_satisfiable": false,
+    "strict_pairwise_rules_never_allow_a_knot": false,
+    "competition_needs_equal_weights_for_the_triangle_knot": false,
+    "question_10_decided": false,
+    "ring_exclusion_kernel_checked": false,
+    "ring_knot_or_free_kernel_checked": false,
+    "permutations_iff_parity_kernel_checked": false,
+    "memory_lengths_kernel_checked": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to its Proved proof, Frozen contract and results with their recorded statuses; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, Frozen contract, result statuses, decision note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-20."
+  }
+}

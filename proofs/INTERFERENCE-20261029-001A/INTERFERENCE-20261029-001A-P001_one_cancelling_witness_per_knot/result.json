@@ -1,0 +1,906 @@
+{
+ "schema_version": 1,
+ "artifact_id": "INTERFERENCE-20261029-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 2,
+    "mismatched": {}
+   }
+  },
+  "1 the 34 three-bit knots in 16 classes": {
+   "ok": true,
+   "detail": {
+    "knots": 34,
+    "classes": 16
+   }
+  },
+  "2 Theorem 1: nonnegative gadgets have majority-closed supports, never a knot": {
+   "ok": true,
+   "detail": {
+    "random gadgets": 20000,
+    "support != projection": 0,
+    "knot supports": 0,
+    "not majority-closed": 0
+   }
+  },
+  "3 Theorem 2: a product of binary functions (any signs) never has a knot as support": {
+   "ok": true,
+   "detail": {
+    "triples of binary supports": 4096,
+    "knot supports": 0
+   }
+  },
+  "4 Theorem 3: one hidden bit per clause (inclusion-exclusion); one per excluded tuple": {
+   "ok": true,
+   "detail": {
+    "clauses checked (width 1-8, all signs)": 510,
+    "clause mismatches": 0,
+    "random 3-CNFs": 300,
+    "CNF mismatches": 0,
+    "relations on three bits": 256,
+    "relation mismatches": 0
+   }
+  },
+  "5 Theorem 4: every three-bit knot class has an exact signed gadget with one hidden bit": {
+   "ok": true,
+   "detail": {
+    "classes": 16,
+    "exact": 16,
+    "indicator of real rank 2 (hyperdeterminant > 0)": 14,
+    "need a pairwise sign": [
+     [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ]
+    ],
+    "every decomposition has a negative entry": true
+   }
+  },
+  "6 parity of n bits from one hidden bit and Hadamard edges (n = 1..10)": {
+   "ok": true,
+   "detail": {
+    "mismatches": "0"
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "perturbed decomposition rejected": true,
+    "unscaled not-all-equal has no real rank-2 decomposition": true,
+    "absolute values give a support strictly larger than the knot (all 16)": true,
+    "a 2-CNF relation is rejected by the knot test": true
+   }
+  },
+  "census": [
+   {
+    "class": "atom",
+    "excluded": [
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "hyperdeterminant of indicator": 1,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 1,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "0",
+       "1"
+      ],
+      [
+       "0",
+       "-1"
+      ],
+      [
+       "0",
+       "1"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "atom",
+    "excluded": [
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 1,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 1,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "0",
+       "1"
+      ],
+      [
+       "0",
+       "-1"
+      ],
+      [
+       "1",
+       "0"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "two excluded at distance two",
+    "excluded": [
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 4,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 4,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "0",
+       "1"
+      ],
+      [
+       "1/2",
+       "-1/2"
+      ],
+      [
+       "1",
+       "-1"
+      ]
+     ],
+     [
+      [
+       "2",
+       "1"
+      ],
+      [
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "two excluded at distance two",
+    "excluded": [
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "hyperdeterminant of indicator": 4,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 4,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "0",
+       "1"
+      ],
+      [
+       "-1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "-1"
+      ]
+     ],
+     [
+      [
+       "2",
+       "1"
+      ],
+      [
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "atom",
+    "excluded": [
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 1,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 1,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "0",
+       "1"
+      ],
+      [
+       "-1",
+       "0"
+      ],
+      [
+       "1",
+       "0"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "three excluded",
+    "excluded": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 5,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 5,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "1/2 + sqrt(5)/2",
+       "1"
+      ],
+      [
+       "sqrt(5)/10 + 1/2",
+       "sqrt(5)/5"
+      ],
+      [
+       "1",
+       "-1/2 + sqrt(5)/2"
+      ]
+     ],
+     [
+      [
+       "1/2 - sqrt(5)/2",
+       "1"
+      ],
+      [
+       "1/2 - sqrt(5)/10",
+       "-sqrt(5)/5"
+      ],
+      [
+       "1",
+       "-sqrt(5)/2 - 1/2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "not-all-equal type",
+    "excluded": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": -3,
+    "pairwise sign needed": true,
+    "hyperdeterminant used": 5,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "sqrt(5)/2 + 3/2",
+       "1"
+      ],
+      [
+       "sqrt(5)/5",
+       "1/2 - sqrt(5)/10"
+      ],
+      [
+       "1",
+       "-1/2 + sqrt(5)/2"
+      ]
+     ],
+     [
+      [
+       "3/2 - sqrt(5)/2",
+       "1"
+      ],
+      [
+       "-sqrt(5)/5",
+       "sqrt(5)/10 + 1/2"
+      ],
+      [
+       "1",
+       "-sqrt(5)/2 - 1/2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "three excluded",
+    "excluded": [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "hyperdeterminant of indicator": 5,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 5,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "1/2 - sqrt(5)/2",
+       "1"
+      ],
+      [
+       "-sqrt(5)/5",
+       "sqrt(5)/10 + 1/2"
+      ],
+      [
+       "1",
+       "1/2 - sqrt(5)/2"
+      ]
+     ],
+     [
+      [
+       "1/2 + sqrt(5)/2",
+       "1"
+      ],
+      [
+       "sqrt(5)/5",
+       "1/2 - sqrt(5)/10"
+      ],
+      [
+       "1",
+       "1/2 + sqrt(5)/2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "two excluded at distance two",
+    "excluded": [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 4,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 4,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "-1",
+       "1"
+      ],
+      [
+       "-1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "0"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "parity",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "hyperdeterminant of indicator": 4,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 4,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "-1",
+       "1"
+      ],
+      [
+       "-1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "-1"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "three excluded",
+    "excluded": [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 5,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 5,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "-sqrt(5)/2 - 1/2",
+       "1"
+      ],
+      [
+       "-sqrt(5)/5",
+       "1/2 - sqrt(5)/10"
+      ],
+      [
+       "1",
+       "1/2 - sqrt(5)/2"
+      ]
+     ],
+     [
+      [
+       "-1/2 + sqrt(5)/2",
+       "1"
+      ],
+      [
+       "sqrt(5)/5",
+       "sqrt(5)/10 + 1/2"
+      ],
+      [
+       "1",
+       "1/2 + sqrt(5)/2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "not-all-equal type",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ],
+    "hyperdeterminant of indicator": -3,
+    "pairwise sign needed": true,
+    "hyperdeterminant used": 5,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "3/2 - sqrt(5)/2",
+       "1"
+      ],
+      [
+       "1/2 + 3*sqrt(5)/10",
+       "sqrt(5)/10 + 1/2"
+      ],
+      [
+       "1",
+       "-1/2 + sqrt(5)/2"
+      ]
+     ],
+     [
+      [
+       "sqrt(5)/2 + 3/2",
+       "1"
+      ],
+      [
+       "1/2 - 3*sqrt(5)/10",
+       "1/2 - sqrt(5)/10"
+      ],
+      [
+       "1",
+       "-sqrt(5)/2 - 1/2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "atom",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 1,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 1,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "1",
+       "0"
+      ],
+      [
+       "-1",
+       "0"
+      ],
+      [
+       "1",
+       "0"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "two excluded at distance two",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 4,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 4,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "-1",
+       "1"
+      ],
+      [
+       "1/2",
+       "-1/2"
+      ],
+      [
+       "1",
+       "0"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "three excluded",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 5,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 5,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "1/2 - sqrt(5)/2",
+       "1"
+      ],
+      [
+       "sqrt(5)/10 + 1/2",
+       "-sqrt(5)/5"
+      ],
+      [
+       "1",
+       "1/2 - sqrt(5)/2"
+      ]
+     ],
+     [
+      [
+       "1/2 + sqrt(5)/2",
+       "1"
+      ],
+      [
+       "1/2 - sqrt(5)/10",
+       "sqrt(5)/5"
+      ],
+      [
+       "1",
+       "1/2 + sqrt(5)/2"
+      ]
+     ]
+    ]
+   },
+   {
+    "class": "parity",
+    "excluded": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ]
+    ],
+    "hyperdeterminant of indicator": 4,
+    "pairwise sign needed": false,
+    "hyperdeterminant used": 4,
+    "exact one-hidden-bit gadget": true,
+    "decomposition": [
+     [
+      [
+       "-1",
+       "1"
+      ],
+      [
+       "1/2",
+       "-1/2"
+      ],
+      [
+       "1",
+       "-1"
+      ]
+     ],
+     [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    ]
+   }
+  ],
+  "ok": true,
+  "seconds": 4.5
+ }
+}

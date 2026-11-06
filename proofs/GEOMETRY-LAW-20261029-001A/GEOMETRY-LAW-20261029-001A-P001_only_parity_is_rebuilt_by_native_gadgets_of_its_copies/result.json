@@ -1,0 +1,182 @@
+{
+ "schema_version": 1,
+ "artifact_id": "GEOMETRY-LAW-20261029-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "ok": true,
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 4,
+    "mismatched": {}
+   }
+  },
+  "1 knots and types": {
+   "ok": true,
+   "detail": {
+    "knots": 34,
+    "types": {
+     "no wire face": 12,
+     "two excluded at distance two": 12,
+     "three excluded": 8,
+     "parity": 2
+    },
+    "strong values as stated": true
+   }
+  },
+  "2 symmetry and orientation": {
+   "ok": true,
+   "detail": {
+    "three-bit stabilizer sizes": {
+     "6": 7,
+     "2": 27
+    },
+    "every three-bit stabilizer has a transposition": true,
+    "three-bit knots that orient a vertex": 0,
+    "four-bit knots": 742,
+    "four-bit stabilizer sizes": {
+     "1": 48,
+     "2": 420,
+     "4": 126,
+     "6": 112,
+     "8": 24,
+     "24": 12
+    },
+    "four-bit knots that orient a vertex": 96,
+    "of which trivial symmetry": 48
+   }
+  },
+  "3 exhaustive census (3 and 5 copies)": {
+   "ok": true,
+   "detail": {
+    "gadget shapes": {
+     "3": 2,
+     "5": 9
+    },
+    "parity rebuilt by every gadget": true,
+    "non-parity rebuilt": [],
+    "bounds hold": true,
+    "largest excluded count attained": {
+     "no wire face, legs on distinct copies": 0,
+     "no wire face, a copy with two legs": 0,
+     "three excluded, legs on distinct copies": 1,
+     "three excluded, a copy with two legs": 2,
+     "two excluded at distance two, legs on distinct copies": 1,
+     "two excluded at distance two, a copy with two legs": 0
+    },
+    "flow arrows decrease excluded count": true,
+    "flow": {
+     "0": [],
+     "1": [
+      0
+     ],
+     "2": [
+      0,
+      7,
+      31,
+      32
+     ],
+     "4": [
+      0,
+      7,
+      31,
+      32
+     ],
+     "5": [
+      0
+     ],
+     "6": [
+      0,
+      7,
+      31,
+      32
+     ],
+     "7": [
+      0
+     ],
+     "8": [],
+     "9": [],
+     "10": [],
+     "11": [],
+     "13": [
+      19,
+      28,
+      29,
+      33
+     ],
+     "14": [],
+     "15": [
+      19,
+      28,
+      29,
+      33
+     ],
+     "16": [],
+     "17": [
+      33
+     ],
+     "18": [],
+     "19": [],
+     "20": [
+      19,
+      28,
+      29,
+      33
+     ],
+     "21": [],
+     "22": [
+      33
+     ],
+     "23": [],
+     "24": [],
+     "25": [],
+     "26": [],
+     "27": [],
+     "28": [],
+     "29": [
+      33
+     ],
+     "30": [],
+     "31": [],
+     "32": [],
+     "33": []
+    },
+    "longest chain of constrained levels": 3
+   }
+  },
+  "4 cactus, odd wire cycles, legs beyond bridges": {
+   "ok": true,
+   "detail": {
+    "excluded tuples examined": 798,
+    "violations": []
+   }
+  },
+  "5 random gadgets of 7, 9 and 11 copies": {
+   "ok": true,
+   "detail": {
+    "evaluations": 6120,
+    "violations": [],
+    "largest excluded count seen": {
+     "no wire face": 0,
+     "two excluded at distance two": 0,
+     "three excluded": 1
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "self-gluing rebuilds a non-parity knot": [
+     6,
+     7,
+     20,
+     29
+    ],
+    "all-equal rebuilt by native gadgets (shapes of 3 copies)": 2,
+    "mutated bound 'at most one for three excluded' violated": true
+   }
+  }
+ },
+ "seconds": 25.8,
+ "orienting four-bit knots": 96
+}

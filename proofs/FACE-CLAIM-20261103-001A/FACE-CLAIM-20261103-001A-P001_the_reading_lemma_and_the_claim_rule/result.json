@@ -1,0 +1,67 @@
+{
+ "artifact_id": "FACE-CLAIM-20261103-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001A/HALO-FORCING-20261103-001A-P001_the_route_criterion/result.json": "passed",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001B/HALO-FORCING-20261103-001B-P001_heights_compute_the_transfer/result.json": "passed",
+     "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/manifest.json": "Proved",
+     "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/result.json": "passed",
+     "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json": "Proved",
+     "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/result.json": "passed",
+     "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json": "Proved",
+     "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the reading lemma: in every solution of every point split of the planar census, two 10-point grown spaces and a ladder, every face receives one skip, the port pattern is never the all-agree pattern given by the arc constants or its complement, the merged face's skip lies on the arc opposite the odd port, that port's line takes its far corner, and the arc identity holds; for each port pattern, every line other than the odd port's own line has the two points of its corner on a barred face fixed": {
+   "info": {
+    "(port pattern, corner on a barred face) pairs": 2052,
+    "(split, solution) pairs": 2148,
+    "pairs obeying the lemma (one skip per face, the merged face's skip on the arc opposite the odd port, that port's line on its far corner, the arc identity)": 2148,
+    "pairs whose two corner points are fixed by the port pattern": 2052
+   },
+   "pass": true
+  },
+  "2 the claim lemma: a line claims an own arc only in the class of the third port, from one port pattern per claimed value; it claims the face opposite a port only outside that port's class, from at most two port patterns per value, which then agree on the other two ports and differ at that port": {
+   "info": {
+    "opposite-face corners claimed in some solution": 318,
+    "opposite-face corners whose claim avoids the class of the port and comes from at most two port patterns per value, sharing the other two ports": 318,
+    "opposite-face corners with a value claimed from two port patterns": 318,
+    "own-arc corners claimed in some solution": 114,
+    "own-arc corners whose claim needs the third port's class and one port pattern per value": 114
+   },
+   "pass": true
+  },
+  "3 the claim rule against exact creation: on two 10-point grown spaces with the Fano plane and census 58 (two removed lines) attached at two points, at every removal and gluing line, the rule agrees with exact creation (some far side) whenever it applies; where a pair squeezes the line in another form, the cases are listed": {
+   "info": {
+    "(handle, attachment point, removal, gluing line) cases": 728,
+    "cases: rule False, exact creation False": 544,
+    "cases: rule True, exact creation True": 144,
+    "cases: rule other, exact creation True": 40
+   },
+   "pass": true
+  },
+  "4 the claim rule against the pipeline: with the same three handles on thick tubes, a grid, two random grown spaces and a ladder arm spliced onto a grid (every attachment point of the last), the rule agrees with the pipeline at every gluing line beyond distance 3, and at every nearer line where it applies; the nearer lines squeezed in another form are counted": {
+   "info": {
+    "far: rule False, pipeline False": 24726,
+    "far: rule True, pipeline True": 1908,
+    "near: rule False, pipeline False": 749,
+    "near: rule True, pipeline True": 2269,
+    "near: rule other, pipeline True": 585
+   },
+   "pass": true
+  }
+ },
+ "claim": "The reading lemma and the claim rule. (1) The reading lemma (proved). Split a plane knot space at the attachment point: the three faces at the point merge into one face whose boundary is three arcs, one per pair of ports. Along an arc the ports' raw values differ by an arc constant plus the number of skips on it, and the three constants add to 1. So the 'all agree' pattern, which would need a skip on every arc, never occurs, and every port pattern has an odd port k with the merged face's single skip on the arc opposite k. Hence the own arc between ports i and j is barred (carries no skip) exactly when i and j disagree; whenever they agree, the face opposite the third port is claimed by that port's line; and every line of a barred face, other than its claimer, has the two points of its corner there fixed by the port pattern. (2) The claim lemma (proved). A line claims an own arc only in the class of the third port, from one port pattern per claimed value; it claims the face opposite port k only outside class k, from at most two port patterns per value, which agree on the other two ports and differ at k. (3) The claim rule. When a pair of handle points freezes a gluing line (two patterns, two points fixed) and one point of the pair alone excludes the line's claim at either fixed value, the candidate knot has a route and is generated (proved from the route lemma). When each point allows both claims the knot is new: computed with no disagreement against exact creation (728 cases on two 10-point grown spaces with the Fano plane and census 58) and against the pipeline (26,634 lines beyond distance 3 and 3,018 nearer lines on thick tubes, a grid, grown spaces and every point of a ladder arm spliced onto a grid). Nearer lines squeezed in another form (one pattern, or two with one point fixed) are outside the rule; all of them create.",
+ "kind": "proof",
+ "proof": "FACE-CLAIM-20261103-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FACE-CLAIM-20261103-001A"
+}

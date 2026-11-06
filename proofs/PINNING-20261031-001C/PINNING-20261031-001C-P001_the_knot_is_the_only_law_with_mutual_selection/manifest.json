@@ -1,0 +1,127 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINNING-20261031-001C-P001",
+  "canonical_id": "PINNING-20261031-001C-P001",
+  "kind": "proof",
+  "ticket": "PINNING-20261031-001C",
+  "proof": "PINNING-20261031-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The knot is the only three-place law with mutual selection",
+  "status": "Proved",
+  "claim": "Call a three-place knot R mutually selecting on cubic systems when (M1) the connected cubic systems on which R fails form a non-empty class recognisable in polynomial time, and (M2) counting R-solutions is #P-hard on general cubic systems, so that the class makes easy what is hard elsewhere. Assuming P != NP, among all 34 three-place knot relations (five classes) exactly the not-all-equal class is mutually selecting: parity fails recognisably but is affine (its counts are polynomial everywhere); the clause never fails on cubic systems (Tovey); the Fibonacci law and x or (y != z) pin a value, so their failures are coNP-complete to recognise; not-all-equal fails exactly on Pfaffian signings (recognisable; checked on every signing with n <= 6: failure iff |det| = #PM) and its failing systems also make the dimer law easy (KNOT-COUPLING-20261031-001). On plain cubic systems the conclusion is unconditional: not-all-equal is the only knot that can fail at all.",
+  "dependencies": [
+    "PINNING-20261031-001A",
+    "PINNING-20261031-001B",
+    "KNOT-COUPLING-20261031-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "An upstream proof or check that is not Proved or passed.",
+    "A signing of a small cubic system whose not-all-equal failure disagrees with the Pfaffian test.",
+    "A three-place knot class missing from the table, or a second class with mutual selection."
+  ],
+  "lineage": {
+    "home_scope": "PINNING-20261031-001",
+    "epic_path": [
+      "PINNING-20261031-001"
+    ],
+    "parents": [
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json",
+      "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/pin_lib.py",
+      "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/manifest.json",
+      "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/result.json",
+      "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json",
+      "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json",
+      "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/result.json",
+      "research/MUTUAL-SELECTION-20261031-001A/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001B/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001C/manifest.json",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/manifest.json": "1ff4c941d6b0da079e7f8cc81fa3b7f56e0b55b34b44fb8cb7137b3404301a73",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/result.json": "de7599c4aa49df6b39bbd8258153bc3dd33ebcd660633c77e05e492045b54076",
+    "proofs/PINNING-20261031-001A/PINNING-20261031-001A-P001_five_knots_and_the_pinning_theorem/pin_lib.py": "3d319e1775b3f8647b60928544a665831f10b4e5ddc170c77ed1f1a7ce62bf92",
+    "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/manifest.json": "6b3f1a9f9097d7e659263f44d20ceb8188f4e373e7961c4ca996f6b848c82792",
+    "proofs/PINNING-20261031-001B/PINNING-20261031-001B-P001_x_or_y_neq_z_pins/result.json": "1b3f9c0b90af0d261973c7eee31d2804774ff0915fc87c041087cd789b153295",
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json": "7273b54abdf8a359005e7248494739a52e4daca11840441cda0ab7da49cc0450",
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json": "57d224add083c26cb78cbc829a3385deb8a4a15a6eee98f7095d4ee1ac28591b",
+    "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json": "3e27518733884eb32e10a1ae7972beed9fee540cf3de5f09b70bd76dfb814dbe",
+    "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json": "2f18c256eba9b877329625cbecc8deeb971e5e69392660b3a7e36b4a57004eb7",
+    "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/manifest.json": "6145c2fecd97d2bd576bb8e5d0d513c841d68cc55504b491d1f1b88aff548f3f",
+    "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/result.json": "be17fc665757e80eea66dc2e40b28ebe435417e20cfea6c3799f73df6ba8810c",
+    "research/MUTUAL-SELECTION-20261031-001A/manifest.json": "63720d09d5f4df5e62dcc5fbe6994626e05e49b0906396c3bf45877f4a504068",
+    "research/MUTUAL-SELECTION-20261031-001B/manifest.json": "00780b4bcefba1e2d98732ecb2c9e4e133710a5beebec4cad931e4b730f0fb5e",
+    "research/MUTUAL-SELECTION-20261031-001C/manifest.json": "dce42dbefe8c23386bf8b7567ff010e427dcc0acd1685bb15e50b0b2da51ca15",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/manifest.json",
+    "identity": "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/identity.json",
+    "directory": "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection",
+    "proof": "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/proof.md",
+    "result": "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/result.json",
+    "check": "proofs/PINNING-20261031-001C/PINNING-20261031-001C-P001_the_knot_is_the_only_law_with_mutual_selection/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "knot_unique_mutual_selection_shown": true
+  },
+  "foundation_claim_scope": "A uniqueness theorem for the knot among three-place laws, conditional on P != NP on signed systems and unconditional on plain ones.",
+  "validation": {
+    "status": "checked: upstream proofs and checks; the knot's recognition mechanism on every signing with n <= 6; the classification table against tickets A and B; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "assembled from classical results (Schaefer, Tovey, Seymour, Robertson-Seymour-Thomas, Kasteleyn, Fan-Cai, Dagum-Luby) and this program's tickets; the statement and the notion of mutual selection: no overlap found yet",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31."
+  }
+}

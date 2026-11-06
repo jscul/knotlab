@@ -1,0 +1,323 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SIGNED-3D-20261029-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 3,
+    "mismatched": {}
+   }
+  },
+  "1 the 10,880 identities equal those of TWIST-3D-20261025-001A (full triangle rule, both orientations)": {
+   "ok": true,
+   "detail": {
+    "identities": 10880,
+    "by kind": {
+     "2-3": 10240,
+     "1-4": 640
+    },
+    "identical to TWIST-3D generator": true
+   }
+  },
+  "2 factors: nonzero laws exist exactly for (1,1), (1,2), (2,16), their negatives, and mu = 0": {
+   "ok": true,
+   "detail": {
+    "feasible (lambda, mu)": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      -1
+     ],
+     [
+      -1,
+      -2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      16
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      -16
+     ]
+    ],
+    "clauses": 2466069,
+    "negating a law negates both factors": true
+   }
+  },
+  "3 supports are exactly the seven counting supports, the same for both orientations": {
+   "ok": true,
+   "detail": {
+    "(1, 1)": [
+     "all 0",
+     "all 1",
+     "all equal"
+    ],
+    "(1, 2)": [
+     "even cocycles",
+     "even or odd",
+     "odd cocycles"
+    ],
+    "(2, 16)": [
+     "free"
+    ]
+   }
+  },
+  "4 twelve classes up to face gauge: the counting laws, the twisted Dijkgraaf-Witten law, its translate and the mixed laws": {
+   "ok": true,
+   "detail": {
+    "all 0": {
+     "sign patterns": 1,
+     "face-gauge orbits": 1,
+     "orbit sizes": [
+      1
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "untwisted"
+     ]
+    },
+    "all 1": {
+     "sign patterns": 1,
+     "face-gauge orbits": 1,
+     "orbit sizes": [
+      1
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "untwisted"
+     ]
+    },
+    "all equal": {
+     "sign patterns": 1,
+     "face-gauge orbits": 1,
+     "orbit sizes": [
+      1
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "untwisted"
+     ]
+    },
+    "even cocycles": {
+     "sign patterns": 8,
+     "face-gauge orbits": 2,
+     "orbit sizes": [
+      4,
+      4
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "twisted",
+      "untwisted"
+     ]
+    },
+    "odd cocycles": {
+     "sign patterns": 8,
+     "face-gauge orbits": 2,
+     "orbit sizes": [
+      4,
+      4
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "twisted",
+      "untwisted"
+     ]
+    },
+    "even or odd": {
+     "sign patterns": 64,
+     "face-gauge orbits": 4,
+     "orbit sizes": [
+      16,
+      16,
+      16,
+      16
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "twisted on both",
+      "twisted on even",
+      "twisted on odd",
+      "untwisted"
+     ]
+    },
+    "free": {
+     "sign patterns": 64,
+     "face-gauge orbits": 1,
+     "orbit sizes": [
+      64
+     ],
+     "same for both orientations": true,
+     "orbits identified": [
+      "untwisted"
+     ]
+    }
+   }
+  },
+  "5 the twelve representatives pass every identity by direct evaluation; random face gauges keep them passing": {
+   "ok": true,
+   "detail": {
+    "direct evaluation": {
+     "all 0: untwisted": true,
+     "all 1: untwisted": true,
+     "all equal: untwisted": true,
+     "free: untwisted": true,
+     "even cocycles: untwisted": true,
+     "even cocycles: twisted": true,
+     "odd cocycles: untwisted": true,
+     "odd cocycles: twisted": true,
+     "even or odd: untwisted": true,
+     "even or odd: twisted on even": true,
+     "even or odd: twisted on odd": true,
+     "even or odd: twisted on both": true
+    },
+    "random face gauges (3 per law)": true
+   }
+  },
+  "6 only the untwisted classes have a member invariant under the vertex permutations (the twist needs the order)": {
+   "ok": true,
+   "detail": {
+    "all 0: untwisted": true,
+    "all 1: untwisted": true,
+    "all equal: untwisted": true,
+    "free: untwisted": true,
+    "even cocycles: untwisted": true,
+    "even cocycles: twisted": false,
+    "odd cocycles: untwisted": true,
+    "odd cocycles: twisted": false,
+    "even or odd: untwisted": true,
+    "even or odd: twisted on even": false,
+    "even or odd: twisted on odd": false,
+    "even or odd: twisted on both": false
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "the twisted law with one more sign flipped fails an identity": true,
+    "the twist on the free support fails for every factor pair": true,
+    "the encoding rejects that flipped pattern": true,
+    "the 2-3 identities alone admit supports outside the seven": true,
+    "laws with mu = 0 exist (excluded: the state sum vanishes after any 1-4 move)": true
+   }
+  },
+  "classes": {
+   "all 0: untwisted": {
+    "support size": 1,
+    "factors": [
+     1,
+     1
+    ]
+   },
+   "all 1: untwisted": {
+    "support size": 1,
+    "factors": [
+     1,
+     1
+    ]
+   },
+   "all equal: untwisted": {
+    "support size": 2,
+    "factors": [
+     1,
+     1
+    ]
+   },
+   "free: untwisted": {
+    "support size": 64,
+    "factors": [
+     2,
+     16
+    ]
+   },
+   "even cocycles: untwisted": {
+    "support size": 8,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "even cocycles: twisted": {
+    "support size": 8,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "odd cocycles: untwisted": {
+    "support size": 8,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "odd cocycles: twisted": {
+    "support size": 8,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "even or odd: untwisted": {
+    "support size": 16,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "even or odd: twisted on even": {
+    "support size": 16,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "even or odd: twisted on odd": {
+    "support size": 16,
+    "factors": [
+     1,
+     2
+    ]
+   },
+   "even or odd: twisted on both": {
+    "support size": 16,
+    "factors": [
+     1,
+     2
+    ]
+   }
+  },
+  "ok": true,
+  "seconds": 41.4
+ }
+}

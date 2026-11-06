@@ -1,0 +1,114 @@
+{
+  "schema_version": 3,
+  "artifact_id": "KNOT-CIRCUITS-20261020-001B-P001",
+  "canonical_id": "KNOT-CIRCUITS-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "KNOT-CIRCUITS-20261020-001B",
+  "proof": "KNOT-CIRCUITS-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Knots compose like cycles exactly in difference laws whose distinctions do not split",
+  "status": "Proved",
+  "claim": "A system's knots and ties are its minimal constrained variable sets, constrained meaning that not every combination of the variables' possible values occurs; two circuits sharing e compose like cycles when their union without e stays constrained, and then the circuits form a matroid whose independent sets are the unconstrained sets. (1) A law with a Mal'tsev polymorphism composes like cycles exactly when every subalgebra of its polymorphism algebra with at least two elements has a unique maximal congruence; so affine laws over finite fields do, and the coset law of a finite group does exactly when every subgroup has a unique maximal normal subgroup (Z_{p^k}, S3 and D_p do; Z6, Z2xZ2, A4, D4, Q8, Dic3 do not). (2) A Boolean law composes like cycles exactly when it is affine, and composes its knots like cycles exactly when it is affine or bijunctive (bijunctive laws have no knots), via Post's lattice and explicit hubs. (3) Two knots sharing only e form a hub exactly when every e-fibre of one meets every e-fibre of the other; colouring stars, Horn clauses and OR3 are hubs, parity never. (4) Tseitin knots are bonds and gauge knots are cycles; laws with an isolated reflexive value tie every linked pair.",
+  "dependencies": [
+    "KNOT-CIRCUITS-20261020-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A system over a Mal'tsev law whose subalgebras all have a unique maximal congruence fails circuit elimination, or the construction does not fail where some subalgebra has two maximal congruences.",
+    "A failure in a Mal'tsev system does not yield two proper congruences of the shared variable's range whose composition is total.",
+    "A group's verdict differs from 'every subgroup has a unique maximal normal subgroup', or an affine field law fails.",
+    "An affine Boolean system fails, a bijunctive system has a knot, a listed hub relation lies outside its stated co-clone or does not fail, or a census row disagrees with Theorem 2.",
+    "The fibre criterion disagrees with a computed hub verdict, or Tseitin circuits differ from bonds or gauge circuits from cycles.",
+    "A control ('Mal'tsev suffices', 'whole-algebra congruences suffice', 'tie and knot verdicts coincide', 'hub iff a singleton fibre', 'self-complementary suffices') is accepted."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-CIRCUITS-20261020-001",
+    "epic_path": [
+      "KNOT-CIRCUITS-20261020-001"
+    ],
+    "parents": [
+      "proofs/GALLAI-KNOTS-20261020-001Z/GALLAI-KNOTS-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/manifest.json",
+      "experiments/KNOT-CIRCUITS-20261020-001A/KNOT-CIRCUITS-20261020-001A-E001_elimination_census/contract.json",
+      "artifacts/KNOT-CIRCUITS-20261020-001A/KNOT-CIRCUITS-20261020-001A-E001_elimination_census/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/GALLAI-KNOTS-20261020-001Z/GALLAI-KNOTS-20261020-001Z-P001_epic_closure/manifest.json": "9c5390661e465490099e771a3a2837d28192d11d3e68449c376ad41f2fe33543",
+    "proofs/GALLAI-KNOTS-20261020-001B/GALLAI-KNOTS-20261020-001B-P001_gallai_composition/manifest.json": "6defce656d2cfbec2438d82f0bae70f26548e5378df9593125a85d39ac8adb60",
+    "experiments/KNOT-CIRCUITS-20261020-001A/KNOT-CIRCUITS-20261020-001A-E001_elimination_census/contract.json": "de7bacdae0fd15d2be838692a40ea32f9595473069885e993e45e463d3da4e27",
+    "artifacts/KNOT-CIRCUITS-20261020-001A/KNOT-CIRCUITS-20261020-001A-E001_elimination_census/result.json": "99c09e848a30b71207509b10314fb91c2ed76649319158d7c9ae174f5de990f8"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json",
+    "identity": "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/identity.json",
+    "directory": "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition",
+    "proof": "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/proof.md",
+    "result": "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/result.json",
+    "check": "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "knots_are_circuits_proved": true,
+    "maltsev_elimination_characterized": true,
+    "group_coset_criterion_proved": true,
+    "boolean_elimination_classified": true,
+    "boolean_knot_elimination_classified": true,
+    "hub_criterion_proved": true,
+    "tseitin_bonds_gauge_cycles_proved": true,
+    "non_maltsev_knot_composition_classified": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Which laws let two knots that share a distinction leave a constraint among their other variables (circuit elimination). No native recurrence, composed topology in the protected sense, path, metric, space or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; Theorem 2 uses Post's lattice (cited); check.py tests Lemma 1 on 400 random relations, rectangularity on 3,360 relations, Theorem 1 on 14 Mal'tsev algebras (no failure where the condition holds, the construction where it fails, and the proof's two congruences extracted from all 10 failures found), the group criterion on 20 groups of order at most 12, GF(4) and GF(5), the Boolean clone memberships and nine hubs, bijunctive and affine systems, explicit pp-formulas for the eight negation-twists of 1-in-3, agreement with all 268 Boolean census rows, the fibre criterion on 474 knot pairs, Tseitin bonds and gauge cycles on seven graphs, and the isolated-value laws; five controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and randomized checks; cites Post (1941), Boehler-Creignou-Reith-Vollmer (2003), Bulatov-Dalmau (2006), Fleischer's lemma, Baker-Pixley, Simonis-Ashikhmin (1998) and KNOT-CIRCUITS-20261020-001A-E001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta. Rectangularity of Mal'tsev relations, Fleischer's lemma, Post's lattice and binary matroids of linear codes are classical. Not found stated: circuit elimination of range-relative dependencies characterized by unique maximal congruences of subalgebras, its group form, and the knot-level Boolean classification; the proofs are short, so folklore risk is moderate.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

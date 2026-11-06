@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PHASE-HALO-20261103-001Z-P001",
+  "canonical_id": "PHASE-HALO-20261103-001Z-P001",
+  "kind": "proof",
+  "ticket": "PHASE-HALO-20261103-001Z",
+  "proof": "PHASE-HALO-20261103-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the phase-halo epic",
+  "status": "Proved",
+  "claim": "Ledger closing PHASE-HALO-20261103-001: one line per conclusion with its novelty label and evidence (tickets A and B), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PHASE-HALO-20261103-001A",
+    "PHASE-HALO-20261103-001B"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PHASE-HALO-20261103-001",
+    "epic_path": [
+      "PHASE-HALO-20261103-001"
+    ],
+    "parents": [
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/result.json",
+      "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json",
+      "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json": "dedcfb1db3da2936e8fac5d7e9996ea6342e66a69ab1a4628dfca84232bcdbcc",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/result.json": "43e40eac2a5b536bf60f3f7fcd8dc8ca91881a12e995147b6583f91acb81e600",
+    "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json": "26779753c89703f1d61df6c466416183348de5070badfe51714a4e0b5763128d",
+    "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json": "0b6ac5369c0b5d0dbd717a81ba33199fe696f0815a98b11eb8c726c0d4f88424"
+  },
+  "paths": {
+    "manifest": "proofs/PHASE-HALO-20261103-001Z/PHASE-HALO-20261103-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PHASE-HALO-20261103-001Z/PHASE-HALO-20261103-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/PHASE-HALO-20261103-001Z/PHASE-HALO-20261103-001Z-P001_epic_closure",
+    "proof": "proofs/PHASE-HALO-20261103-001Z/PHASE-HALO-20261103-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PHASE-HALO-20261103-001Z/PHASE-HALO-20261103-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PHASE-HALO-20261103-001Z/PHASE-HALO-20261103-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "opposite_face_law_computed": false,
+    "ladder_and_grid_laws_proved": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03."
+  }
+}

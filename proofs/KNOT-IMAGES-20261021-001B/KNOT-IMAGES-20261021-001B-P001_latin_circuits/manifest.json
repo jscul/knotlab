@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "KNOT-IMAGES-20261021-001B-P001",
+  "canonical_id": "KNOT-IMAGES-20261021-001B-P001",
+  "kind": "proof",
+  "ticket": "KNOT-IMAGES-20261021-001B",
+  "proof": "KNOT-IMAGES-20261021-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Latin circuits, Reidemeister, and the 3-nets that compose like cycles",
+  "status": "Proved",
+  "claim": "(1) If each range carries a proper pp-definable equivalence modulo which every circuit of every system is functional at each of its variables, the law composes like cycles; so a law composes like cycles with no overlapping circuit exactly when every circuit is a Latin hypercube modulo the tops (the Latin conjecture says overlapping never occurs). (2) For a Latin square, the relation of a 2x2 subsquare's entries is functional exactly when Reidemeister's condition holds, that is exactly for group isotopes. (3) The 3-net law of a finite abelian group composes like cycles exactly when the group is a p-group (its polymorphisms are the End(G)-affine maps, and a unique maximal proper fully invariant subgroup exists exactly for p-groups), and its systems then carry GF(p)-representable matroids. (4) If the elements with u^m = 1 generate a group without exhausting it (or two such sets do), its 3-net law does not compose like cycles: S3, D4, Z6. (5) No ternary polymorphism of the 3-net law of Q8 is a Mal'tsev operation modulo +-1 (an explicit 416-equation certificate); since census A found no failure for that law, either it fails in larger systems or Conjecture 7 of CYCLE-TOPS-20261021-001B-P001 is false.",
+  "dependencies": [
+    "KNOT-IMAGES-20261021-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A law satisfying the hypothesis of (1) has a system whose circuits fail elimination.",
+    "A Latin square whose 2x2-subsquare relation is functional fails Reidemeister's condition or is not a group isotope, or the reverse.",
+    "A finite abelian p-group's 3-net law fails elimination, or a non-p-group's composes like cycles, or a polymorphism is not End(G)-affine.",
+    "A group as in (4) has a 3-net law that composes like cycles.",
+    "A ternary polymorphism of the Q8 3-net law is Mal'tsev modulo +-1, or the certificate's unknowns do not cancel.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "KNOT-IMAGES-20261021-001",
+    "epic_path": [
+      "KNOT-IMAGES-20261021-001"
+    ],
+    "parents": [
+      "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json",
+      "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json",
+      "experiments/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/contract.json",
+      "artifacts/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/result.json",
+      "artifacts/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/raw_rows.jsonl"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CYCLE-TOPS-20261021-001Z/CYCLE-TOPS-20261021-001Z-P001_epic_closure/manifest.json": "7c63d6b667dfd455fcd4f04095db21cd898d2d4ab6fa5be41076c09fd904bd47",
+    "proofs/CYCLE-TOPS-20261021-001B/CYCLE-TOPS-20261021-001B-P001_decided_on_tops/manifest.json": "f62ce6ce9fb7d1c3fba07391bede51bdb302a93cf3b7ffe9e44f9a04bdd63f17",
+    "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json": "015b24e9beb2935496b16ffe7b82b53b86aa029a9815e04e7f24d06b32b99f1e",
+    "experiments/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/contract.json": "0d1b3adc5ddc1e1beefd5d1e222b62197a01e50d05edb17d14e40cf00b191411",
+    "artifacts/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/result.json": "1b3a61fbe965d28529c069d54c349cc93b8d9e8d47249911a9f7f7d712535901",
+    "artifacts/KNOT-IMAGES-20261021-001A/KNOT-IMAGES-20261021-001A-E001_latin_census/raw_rows.jsonl": "d19a6ff9b7c9b586b98ad4ce5ba78d89f6c4965b2ff65a763878fba77dfc2b79"
+  },
+  "paths": {
+    "manifest": "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/manifest.json",
+    "identity": "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/identity.json",
+    "directory": "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits",
+    "proof": "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/proof.md",
+    "result": "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/result.json",
+    "check": "proofs/KNOT-IMAGES-20261021-001B/KNOT-IMAGES-20261021-001B-P001_latin_circuits/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "latin_circuits_compose_like_cycles_proved": true,
+    "reidemeister_link_proved": true,
+    "abelian_3net_classification_proved": true,
+    "small_element_obstruction_proved": true,
+    "latin_conjecture_proved": false,
+    "q8_not_maltsev_on_tops_proved": true
+  },
+  "foundation_claim_scope": "Which laws compose like cycles: Latin circuits modulo the tops, and 3-net laws of Latin squares. No native recurrence, composed topology in the protected sense, path, metric distance or physical claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies Theorem 1's excluded value on all 8,202 circuit pairs of 1,200 fresh systems over the census survivors, Theorem 3 on 669 Latin squares (all of orders 3 and 4), Theorem 4's classification on 23 abelian groups of order 2 to 16, its polymorphism counts and the census tops, the gadget relations of Proposition 5 for S3, D4, Z6 and Q8, and Proposition 6's certificate with an independently built Q8; four controls rejected; no human or external review",
+    "level": "V1 prose proof with exhaustive and randomized checks; the Reidemeister closure theorem and the circuits proof's Theorem 1 are cited; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta: Theorem 1, the abelian 3-net classification, the small-element obstruction and the Q8 separation are new to the program; Theorem 3 restates the classical Reidemeister closure theorem for circuits; Theorem 4 combines the circuits proof's Theorem 1 with a standard description of polymorphisms and of fully invariant subgroups, and an expert in Mal'tsev constraints would derive it quickly.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-21."
+  }
+}

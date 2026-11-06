@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "documentation",
+  "canonical_id": "FOUR-PREFER-20261101-001C",
+  "ticket": "FOUR-PREFER-20261101-001C",
+  "status": "Complete",
+  "scope_kind": "ticket",
+  "claim": "Documentation with exact computation, no theorem. The five four-place knot classes that prefer a value and exclude only two or three states (13-17) never failed on any 4-regular 4-uniform system examined: counterexample-guided SAT proves that no failing signing exists on every system it decided (all simple systems with n <= 7 and one with n = 8 for class 17; n <= 7 for 16; n <= 6 for 13 and 15; n = 5 for 14), and hill-climbing over signings keeps at least 2 solutions at n <= 9 and dozens to hundreds at n = 10, 12, 14, growing with n. A counting bound (n >= 16/|E|) makes failures impossible below n = 8 for 16 and 17 and below n = 6 for 13-15. A never-fails theorem is open.",
+  "paths": {
+    "report": "research/FOUR-PREFER-20261101-001C/report.md"
+  },
+  "sha256": {
+    "research/FOUR-PREFER-20261101-001C/climb_large.log": "4c6dfcc3107e6f22391d4113726a693d8d22ef90618210443a0e25e82008265f",
+    "research/FOUR-PREFER-20261101-001C/climb_large.py": "83e0965c3863470afcd7b8f692135db7eee6ea61d42ebc73cadaa2be116cc23d",
+    "research/FOUR-PREFER-20261101-001C/climb_small.log": "c1c7336e24c46eb5c0e18f477566902984a7363b902ca545501f0524465eb9a6",
+    "research/FOUR-PREFER-20261101-001C/climb_small.py": "ad731303dec1ce74a5115fa47e54642b78c46be3d5db373b96f0a84f59f75e35",
+    "research/FOUR-PREFER-20261101-001C/exact_search.log": "24d702310571f362628cb9e0c769ab0ac8940bf6e7e8a65eb2655e015851ca7a",
+    "research/FOUR-PREFER-20261101-001C/exact_search.py": "a218669fe268f02c00fce09c436c250155bb79a5fa1300b9a7b75ab8aa6a2aaf",
+    "research/FOUR-PREFER-20261101-001C/report.md": "0054d9c415cb80bb533b0f5a3690ce664107f7bce98f2707fc4a7a5082039945"
+  },
+  "conclusion": "The five weak classes never failed in any search; whether they can fail at all is open."
+}

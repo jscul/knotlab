@@ -1,0 +1,243 @@
+{
+  "artifact_id": "CONTACT-CENSUS-20261022-001A-P001",
+  "checks": {
+    "pinson": {
+      "predictions": {
+        "both odd, rows 3/5 of columns (r = 3/5)": {
+          "E_bits": 1.789801876,
+          "P_all_contractible": 0.262947112,
+          "P_consistent": 0.28921176,
+          "P_cross": 0.262947112,
+          "P_winding_0_1": 0.40109917,
+          "P_winding_1_0": 0.04613573,
+          "P_winding_1_1": 0.013131759,
+          "sum_over_topologies": 1.0
+        },
+        "rows 3k odd, columns 2k (r = 3/2)": {
+          "E_bits": 0.677388093,
+          "P_all_contractible": 0.279762155,
+          "P_consistent": 0.625296309,
+          "P_cross": 0.279762155,
+          "P_winding_0_1": 0.063181717,
+          "P_winding_1_0": 0.34553163,
+          "P_winding_1_1": 0.015642476,
+          "sum_over_topologies": 1.0
+        },
+        "rows odd, columns twice as many (r = 1/2)": {
+          "E_bits": 1.985200554,
+          "P_all_contractible": 0.226871558,
+          "P_consistent": 0.252577748,
+          "P_cross": 0.226871558,
+          "P_winding_0_1": 0.503035898,
+          "P_winding_1_0": 0.02494948,
+          "P_winding_1_1": 0.008755354,
+          "sum_over_topologies": 1.0
+        },
+        "rows twice the odd columns (r = 2)": {
+          "E_bits": 1.985200554,
+          "P_all_contractible": 0.226871558,
+          "P_consistent": 0.252577748,
+          "P_cross": 0.226871558,
+          "P_winding_0_1": 0.02494948,
+          "P_winding_1_0": 0.503035898,
+          "P_winding_1_1": 0.008755354,
+          "sum_over_topologies": 1.0
+        },
+        "square, both sides odd (r = 1)": {
+          "E_bits": 1.508460306,
+          "P_all_contractible": 0.309526275,
+          "P_consistent": 0.351486137,
+          "P_cross": 0.309526275,
+          "P_winding_0_1": 0.169415435,
+          "P_winding_1_0": 0.169415435,
+          "P_winding_1_1": 0.020979929,
+          "sum_over_topologies": 1.0
+        }
+      },
+      "reference": {
+        "P_all_contractible_r1": 0.309526275,
+        "P_winding_1_0_r1": 0.169415435,
+        "newman_ziff_1_minus_Re": 0.309526275,
+        "newman_ziff_R1": 0.169415435
+      }
+    },
+    "theorem_1_classes": {
+      "classes": {
+        "A1+A2": 12,
+        "A1+I": 24,
+        "A1+J": 24,
+        "A1+L": 48,
+        "I+J": 12,
+        "I+S": 12,
+        "J+L": 24,
+        "J+S": 12,
+        "L+S": 24,
+        "L+U": 12
+      },
+      "consistent_patterns_on_3x2_torus_per_class": {
+        "A1+A2": [
+          3754
+        ],
+        "A1+I": [
+          4096
+        ],
+        "A1+J": [
+          4096
+        ],
+        "A1+L": [
+          4096
+        ],
+        "I+J": [
+          4096
+        ],
+        "I+S": [
+          32
+        ],
+        "J+L": [
+          4096
+        ],
+        "J+S": [
+          2650
+        ],
+        "L+S": [
+          628
+        ],
+        "L+U": [
+          4096
+        ]
+      },
+      "knots": 34,
+      "placements": 204
+    },
+    "theorem_2_vacuum_classes": {
+      "A1+I": true,
+      "A1+J": true,
+      "A1+L": true,
+      "I+J": true,
+      "J+L": true,
+      "L+U": true
+    },
+    "theorem_3_4_patches": {
+      "critical_classes_on_even_4x4_torus_always_consistent": {
+        "A1+A2": true,
+        "J+S": true
+      },
+      "parity_on_3x3_torus": {
+        "consistent": 256,
+        "cycle_rank": 10,
+        "patterns": 262144
+      },
+      "smallest_frustrating_grid": {
+        "A1+A2": null,
+        "A1+I": null,
+        "A1+J": null,
+        "A1+L": null,
+        "I+J": null,
+        "I+S": [
+          2,
+          2,
+          8,
+          16
+        ],
+        "J+L": null,
+        "J+S": null,
+        "L+S": [
+          2,
+          3,
+          8,
+          128
+        ],
+        "L+U": null
+      }
+    },
+    "theorem_5_bipartite_percolation": {
+      "3x3": {
+        "bipartite equals no odd topology": 262144,
+        "consistent equals bipartite": 262144,
+        "has wrapping cluster": 186684,
+        "inconsistent": 179016,
+        "patterns": 262144
+      },
+      "3x4": {
+        "bipartite equals no odd topology": 20000,
+        "consistent equals bipartite": 20000,
+        "has wrapping cluster": 14436,
+        "inconsistent": 12343,
+        "patterns": 20000
+      },
+      "5x5": {
+        "bipartite equals no odd topology": 20000,
+        "consistent equals bipartite": 20000,
+        "has wrapping cluster": 13980,
+        "inconsistent": 13150,
+        "patterns": 20000
+      },
+      "5x6": {
+        "bipartite equals no odd topology": 20000,
+        "consistent equals bipartite": 20000,
+        "has wrapping cluster": 14137,
+        "inconsistent": 11722,
+        "patterns": 20000
+      }
+    },
+    "theorem_6_bounds": "argued-in-prose: crossing bounds and positive correlation give a cross cluster and a fully contractible configuration each with probability bounded below at fixed shape"
+  },
+  "claim": "With the same placed three-variable contact C(h_u, x_e, h_v) on every edge of a square-lattice torus (east and north), hidden joints and fair visible spokes: (1) the 204 placements of the 34 three-variable knots form 10 classes with equal consistency laws under spoke swap, joint-value swap and reversal; (2) six classes have a vacuum and hold nothing; parity holds the cycle rank and swap-or-order is frustrated by a 2 x 3 domino (8 of 128 patterns), so both grow with the area; not-all-equal and 'x or (h != h')' are consistent on every bipartite graph and hold only global emergence; (3) 'x or (h != h')' is consistent exactly when its h != h' edges, Bernoulli(1/2) percolation, are bipartite, that is when no cluster has a cross topology or winds in a class of odd length; its emergence is bounded away from 0 and from infinity at fixed shape (crossing bounds and positive correlation); Pinson's conformal formula predicts its limit, 1.508460 bits on square tori with both sides odd and 1.985201 bits on 1:2 tori with one odd side.",
+  "controls": {
+    "consistency_ignores_winding_parity": "rejected",
+    "not_all_equal_frustrated_by_a_face": "rejected",
+    "pinson_sums_to_one_without_the_cross_term": "rejected",
+    "swap_or_order_has_a_vacuum": "rejected"
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "CONTACT-CENSUS-20261022-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "bipartite_percolation_reduction_proved": true,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "extensive_classes_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "patch_free_classes_proved": true,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "ten_classes_proved": true,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_bounds_or_not_equal_proved": true,
+    "two_sided_essential_candidate": false,
+    "vacuum_zero_proved": true
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "CONTACT-CENSUS-20261022-001A"
+}

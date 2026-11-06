@@ -1,0 +1,140 @@
+{
+  "artifact_id": "FREEZING-KNOTS-20261020-001B-P001",
+  "checks": {
+    "formula_matches_experiment_tree_table": {
+      "agree": 21,
+      "rows": 21
+    },
+    "nativity_jump": {
+      "3": {
+        "at": 0.0004313063615449138,
+        "below": 1.0,
+        "p_star_at": 0.8988064748140507
+      },
+      "4": {
+        "at": 0.00022399372037361321,
+        "below": 1.0,
+        "p_star_at": 0.8549875170071982
+      },
+      "5": {
+        "at": 1.3919963076387452e-05,
+        "below": 0.9999999999999978,
+        "p_star_at": 0.8764917468446479
+      }
+    },
+    "star_relation": {
+      "3": {
+        "every_tuple_extends": true,
+        "knot": true,
+        "tuples": 21
+      },
+      "4": {
+        "every_tuple_extends": true,
+        "knot": true,
+        "tuples": 232
+      },
+      "5": {
+        "every_tuple_extends": true,
+        "knot": true,
+        "tuples": 3005
+      }
+    },
+    "thresholds": {
+      "3": {
+        "below_certificate": true,
+        "below_certified_at": 5,
+        "monotone_in_d_on_grid": true,
+        "star_nativity_bound_at_threshold": 0.001061208,
+        "threshold": 6,
+        "witness_at_threshold": "449/500",
+        "witness_float": 0.898
+      },
+      "4": {
+        "below_certificate": true,
+        "below_certified_at": 9,
+        "monotone_in_d_on_grid": true,
+        "star_nativity_bound_at_threshold": 0.000454371856,
+        "threshold": 10,
+        "witness_at_threshold": "427/500",
+        "witness_float": 0.854
+      },
+      "5": {
+        "below_certificate": true,
+        "below_certified_at": 14,
+        "monotone_in_d_on_grid": true,
+        "star_nativity_bound_at_threshold": 2.9316250624e-05,
+        "threshold": 15,
+        "witness_at_threshold": "219/250",
+        "witness_float": 0.876
+      }
+    }
+  },
+  "claim": "On the d-regular tree with the broadcast q-colouring (the uniform colouring of finite subtrees, and the local limit of planted colourings of random d-regular graphs): (1) a vertex is frozen (no finite change recolours it) exactly when every other colour is carried by a neighbour frozen within its own branch, and a branch root is frozen with probability p*, the largest fixed point of the coverage polynomial Phi; (2) for d >= q the relation on q neighbours of a vertex over all colourings is 'not all q colours used', a K1-K3 knot at every degree; (3) under the source-aware reading the knot is native with probability (1 - p*)^q (1 - zeta) + (1 - mu)^q zeta, equal to 1 exactly when p* = 0; (4) p* = 0 for d < 6, 10, 15 (q = 3, 4, 5), certified by exact Bernstein bounds, and p* >= 449/500, 427/500, 219/250 at and beyond those degrees, where nativity is below 0.0011, 0.00046, 0.00003. So star knots stop being native exactly and discontinuously at the freezing threshold, while the source-blind knot exists at every degree; as a threshold, native-knot density restates freezing.",
+  "controls": {
+    "all_q_colour_tuples_added_breaks_k1": {
+      "rejected": true
+    },
+    "one_degree_lower_has_no_witness": {
+      "3": true,
+      "4": true,
+      "5": true,
+      "rejected": true
+    },
+    "threshold_degree_not_certified_unfrozen": {
+      "3": true,
+      "4": true,
+      "5": true,
+      "rejected": true
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "FREEZING-KNOTS-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "frozen_branch_recursion_proved": true,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "random_graph_statement_proved": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "star_nativity_formula_proved": true,
+    "star_relation_knot_at_every_degree_proved": true,
+    "three_cnf_boundary_proved": false,
+    "thresholds_certified_exactly": true,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "FREEZING-KNOTS-20261020-001B"
+}

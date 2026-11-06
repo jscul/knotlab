@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "artifact_id": "PC-SIZE-GRID-20261020-001Z-P001",
+  "canonical_id": "PC-SIZE-GRID-20261020-001Z-P001",
+  "kind": "proof",
+  "ticket": "PC-SIZE-GRID-20261020-001Z",
+  "proof": "PC-SIZE-GRID-20261020-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the grid size epic",
+  "status": "Proved",
+  "claim": "Ledger closing PC-SIZE-GRID-20261020-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PC-SIZE-GRID-20261020-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "polynomial-calculus-size",
+    "tseitin-formulas"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or the proof is not Proved.",
+    "The decision note is missing.",
+    "The proof ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PC-SIZE-GRID-20261020-001",
+    "epic_path": [
+      "PC-SIZE-GRID-20261020-001"
+    ],
+    "parents": [
+      "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/manifest.json": "23f67726587bd69c7ad22f2b110b5980a7dea89fb0168bc51d16327be84c94c0",
+    "proofs/PC-SIZE-GRID-20261020-001B/PC-SIZE-GRID-20261020-001B-P001_grid_size/result.json": "12f7810fb8cc61657ce6929ab0a7b47394dbb826baf53dfa24f2807300019649"
+  },
+  "paths": {
+    "manifest": "proofs/PC-SIZE-GRID-20261020-001Z/PC-SIZE-GRID-20261020-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PC-SIZE-GRID-20261020-001Z/PC-SIZE-GRID-20261020-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/PC-SIZE-GRID-20261020-001Z/PC-SIZE-GRID-20261020-001Z-P001_epic_closure",
+    "proof": "proofs/PC-SIZE-GRID-20261020-001Z/PC-SIZE-GRID-20261020-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PC-SIZE-GRID-20261020-001Z/PC-SIZE-GRID-20261020-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PC-SIZE-GRID-20261020-001Z/PC-SIZE-GRID-20261020-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to its Proved proof and result; decision note present; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, result status, decision note present, terminal ticket class.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-20."
+  }
+}

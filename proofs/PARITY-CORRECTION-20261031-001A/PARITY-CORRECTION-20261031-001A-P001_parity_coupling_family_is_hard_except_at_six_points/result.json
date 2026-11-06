@@ -1,0 +1,166 @@
+{
+ "artifact_id": "PARITY-CORRECTION-20261031-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "info": {
+    "mismatched": {},
+    "parents": 9
+   },
+   "pass": true
+  },
+  "1 upstream proofs are Proved and their checks passed; the corrected record (lane B) states the claim withdrawn here": {
+   "info": {
+    "statuses": {
+     "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/manifest.json": "Proved",
+     "proofs/KNOT-COUPLING-20261031-001B/KNOT-COUPLING-20261031-001B-P001_away_from_the_knots_law_counting_is_sharp_p_hard/result.json": "passed",
+     "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/manifest.json": "Proved",
+     "proofs/KNOT-COUPLING-20261031-001C/KNOT-COUPLING-20261031-001C-P001_the_complex_couplings/result.json": "passed",
+     "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/manifest.json": "Proved",
+     "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/result.json": "Proved",
+     "research/MUTUAL-SELECTION-20261031-001B/manifest.json": "Complete"
+    },
+    "withdrawn sentence (lane B manifest)": "its whole coupling family [1, lam, 1, lam] is a generalized equality (affine) for every lam"
+   },
+   "pass": true
+  },
+  "2a the Hadamard change of basis makes each line a generalized equality but each point an even-parity check, not an equality": {
+   "info": {
+    "lane B's error": "it transformed the lines only; with the points transformed too the count is a code weight enumerator, not a product of generalized equalities",
+    "line [1, lam, 1, lam] becomes": {
+     "000": "4*lam + 4",
+     "111": "4 - 4*lam",
+     "others": 0
+    },
+    "point equality becomes (inverse transform)": {
+     "even weight": "1/4",
+     "odd weight": 0
+    }
+   },
+   "pass": true
+  },
+  "2b on every census graph (60, n <= 8) with four signings each, the count is the coset and the dual weight enumerator: M = 2^(n-r) sum_{d in b+D} lam^|d| = sum_{s in ker N} (-1)^(b.s) (1+lam)^(n-|s|) (1-lam)^|s|": {
+   "info": {
+    "mismatches": [],
+    "systems x signings": 240
+   },
+   "pass": true
+  },
+  "2c the one-sided transform's prediction (proportional to (1+lam)^n + (1-lam)^n) is wrong on every census graph": {
+   "info": {
+    "Fano": {
+     "lane B's implicit": "(1+lam)^7 + (1-lam)^7",
+     "true": "(1+lam)^7 + 7 (1+lam)^3 (1-lam)^4"
+    },
+    "graphs": 60,
+    "graphs where the true count is not proportional to the two-term prediction": 60
+   },
+   "pass": true
+  },
+  "3a Fan-Cai Theorem 2.2 (nonnegative [x0, x1, x2, x3] with (=3)): for lam >= 0, [1, lam, 1, lam] is tractable only at lam = 1 (degenerate) and lam = 0 (case 3, affine); #P-hard for every real lam > 0, lam != 1": {
+   "info": {
+    "case 2 (x1 = x2 = 0)": "never",
+    "case 3": "lam = 0 only",
+    "degenerate at": [
+     "-1",
+     "1"
+    ],
+    "source": "arXiv 2011.09110, Theorem 2.2 (PDF p. 5) and Lemma 4.2 case 3 (PDF p. 8)"
+   },
+   "pass": true
+  },
+  "3b their gadget G4 is the theta substitution read on one line, with signature [2+2a^3, 2a+2a^2, 2a+2a^2, 2+2a^3]; Lemma 4.1's parameter a' = a/(a^2 - a + 1) is 0 or 1 only at a = 0 or 1": {
+   "info": {
+    "a'": "lam/(lam**2 - lam + 1)",
+    "shape": "squares = the three new lines {x_i, u, v}; circles = the two new points u, v",
+    "signature": [
+     "2*lam**3 + 2",
+     "2*lam**2 + 2*lam",
+     "2*lam**2 + 2*lam",
+     "2*lam**3 + 2"
+    ]
+   },
+   "pass": true
+  },
+  "4a per line: sum over the two new points of the three parity weights = 2 lam (1+lam) times lam' on a monochromatic line, 1 otherwise, with lam' = lam + 1/lam - 1; in the knot's even-form variable u = (lam'-1)/(lam'+3) = ((lam-1)/(lam+1))^2": {
+   "info": {
+    "lam'": "lam + 1/lam - 1 = (lam^2 - lam + 1)/lam",
+    "u(lam')": "((lam - 1)/(lam + 1))^2, the square of parity's Hadamard ratio"
+   },
+   "pass": true
+  },
+  "4b theta maps every census graph, and the knot's spaces Fano and the 13-point splice, to a connected simple cubic system without repeated lines; the two knot's spaces fail not-all-equal": {
+   "info": {
+    "bad": [],
+    "census graphs": 60,
+    "splice lines": 13
+   },
+   "pass": true
+  },
+  "4c theta identity M_par(theta H; lam) = (2 lam (1+lam))^n M_nae(H; lam + 1/lam - 1), exact, on all census graphs with n <= 7, Fano and the splice, at four real and two complex couplings": {
+   "info": {
+    "Fano sample M_par(theta Fano; lam)": {
+     "1/3": "7155415515136/10460353203",
+     "2": "10912465152"
+    },
+    "evaluations": 144,
+    "failures": [],
+    "method": "left side by variable elimination on theta H (up to 39 points); right side by brute force on H"
+   },
+   "pass": true
+  },
+  "5 the six easy points: lam = 0 and oo (2^(n-r) or 0, Gaussian elimination), 1 (2^n), -1 (0), and +-i (affine: [1, i, 1, i] = i^(x+y+z) (-1)^(xy+xz+yz); evaluated by a polynomial Gauss sum over a basis of ker N), checked on every census graph with four signings, and the Gauss sum on 300 random quadratic forms": {
+   "info": {
+    "affine form of [1, +-i, 1, +-i]": true,
+    "failures": [],
+    "random forms failing": 0,
+    "systems x signings": 240
+   },
+   "pass": true
+  },
+  "6 case analysis: lam' = lam + 1/lam - 1 is an easy point of the knot's coupling ({1, -1, -3, oo}) or 0 exactly when lam is in {1}, {i, -i}, {-1}, {0, oo} or {e^(+-i pi/3)}; the factor 2 lam (1+lam) vanishes only at 0, -1. So: lam' outside {0, 1, -1, -3, oo} -> #P-hard by KNOT-COUPLING (knot's spaces); lam = e^(+-i pi/3) -> lam' = 0, #P-hard by PLAIN-COUNT A (2-colourings); the rest are the six easy points": {
+   "info": {
+    "2 lam (1+lam) = 0 at": [
+     "-1",
+     "0"
+    ],
+    "easy points": [
+     "0",
+     "1",
+     "-1",
+     "i",
+     "-i",
+     "oo"
+    ],
+    "solutions": {
+     "2-colourings (lam' = 0)": [
+      "1/2 + sqrt(3)*I/2",
+      "1/2 - sqrt(3)*I/2"
+     ],
+     "dimer (lam' = -3)": [
+      "-1"
+     ],
+     "lam' = -1 (easy for the knot)": [
+      "-I",
+      "I"
+     ],
+     "trivial (lam' = 1)": [
+      "1"
+     ]
+    }
+   },
+   "pass": true
+  },
+  "7 controls: the theta identity fails with lam' = lam (Fano, lam = 2); the one-sided transform fails (check 2c)": {
+   "info": {
+    "theta with lam' = lam holds": false
+   },
+   "pass": true
+  }
+ },
+ "claim": "Correction of MUTUAL-SELECTION-20261031-001 lane B. Parity's coupling family on cubic systems, M(H, b; lam) = sum over colourings of lam^(number of lines whose parity misses its right-hand side), is not polynomial everywhere. (i) The error: the Hadamard basis change turns each line's [1, lam, 1, lam] into a generalized equality but each point's equality into even parity, so the transformed count is the weight enumerator of the code of line sets covering every point evenly, M = sum over s in ker N of (-1)^(b.s) (1 + lam)^(n - |s|) (1 - lam)^|s| = 2^(n - r) sum over d in b + D of lam^|d|. (ii) Fan and Cai (2020, Theorem 2.2) apply: for real lam > 0, lam != 1, [1, lam, 1, lam] lies in none of their tractable cases, so the count is #P-hard on cubic bipartite graphs; their gadget G4 is the theta substitution. (iii) Theta substitution: replacing each line {x, y, z} by {x, u, v}, {y, u, v}, {z, u, v} with two new points gives M_par(theta H; lam) = (2 lam (1 + lam))^n M_nae(H; lam + 1/lam - 1), where M_nae weighs each monochromatic line by its argument; in the knot's even-form variable, u = ((lam - 1)/(lam + 1))^2. (iv) Dichotomy: with the knot's coupling dichotomy (KNOT-COUPLING-20261031-001) and #P-hardness of counting 2-colourings (PLAIN-COUNT-20261031-001A), counting parity's coupling on connected cubic systems with simple incidence graphs and no repeated lines is polynomial at lam in {0, 1, -1, i, -i, oo} and #P-hard (Turing) at every other complex lam.",
+ "kind": "proof",
+ "proof": "PARITY-CORRECTION-20261031-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PARITY-CORRECTION-20261031-001A"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-SURFACES-20261030-001A-P001",
+  "canonical_id": "THREEFOLD-SURFACES-20261030-001A-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-SURFACES-20261030-001A",
+  "proof": "THREEFOLD-SURFACES-20261030-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Fano atoms are handles",
+  "status": "Proved",
+  "claim": "(1) Splice lemma: if a graph A has a vertex x of degree three with genus(A - x) = genus(A), then splicing A at x into any connected graph R at a vertex of degree three, along any bijection of the three edges, has genus genus(A) + genus(R). The proof is a face-tracing identity at the 3-edge cut (genus(G) = genus(G1) + genus(G2) + D/2, with D read off three permutations in S3) together with the fact that a face turning back across a cut edge costs that side a handle. Without the hypothesis additivity fails: K3,3 spliced with K3,3 has genus 1. (2) Genus formula: the Heawood graph satisfies the hypothesis at every vertex and planar pieces add no genus, so the incidence graph of a connected 3-regular triple system with distinct points per line that is not 2-colourable has genus equal to its number of Heawood braces (Fano atoms) when every other brace is planar, and in general the sum of its braces' genera when every non-planar brace satisfies the hypothesis (the trisum of three cubes does). (3) Minimal maps: if both sides of a 3-edge splice satisfy the hypothesis, the minimum-genus rotation systems of the splice are exactly the compatible pairs of minimum-genus rotation systems of the sides, half of all pairs. In a three-fold space with planar glue both sides of every tight cut satisfy it, so every minimum-genus embedding is a connected sum of Heawood maps (one per Fano atom) and planar maps of the glue, and their number is the product over braces divided by 2 per tight cut (16, 128, 1024 for one, two, three atoms without glue). (4) The Fano plane's space is the Heawood map, unique up to symmetry and chiral; its dual is K7 on the torus, whose 14 triangles are the 7 points and the 7 lines of the Fano plane, each class forming a Fano plane on the 7 faces.",
+  "dependencies": [
+    "THREEFOLD-GRAMMAR-20261030-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A rotation system violating the face-tracing identity, or an entry of the permutation table contrary to the proof.",
+    "A splice of the Heawood graph whose genus differs from genus(R) + 1, or a three-fold space with planar glue whose genus differs from its number of Heawood braces.",
+    "A minimum-genus embedding of a three-fold space with planar glue that is not a connected sum of Heawood maps and planar maps, or a count of minimum-genus rotation systems different from the formula.",
+    "A second torus map of the Heawood graph up to symmetry, or a dual that is not K7 with two Fano colour classes."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-SURFACES-20261030-001",
+    "epic_path": [
+      "THREEFOLD-SURFACES-20261030-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "b83e1823674625548ab2038389f4c4e10dc6159d6eb57fa5d2ccb4db56e0ddab",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json": "0c0936cfd650698294cae9e108e39378f36904c45196f32a094632002fbc7bde",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/manifest.json",
+    "identity": "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/identity.json",
+    "directory": "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles",
+    "proof": "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/proof.md",
+    "result": "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/result.json",
+    "check": "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_surfaces_shown": true
+  },
+  "foundation_claim_scope": "Orientable genus and minimum-genus rotation systems of splices of graphs along three edges and of incidence graphs of three-fold spaces; the knot reading through the duality of SPACE-SELECTION-20261030-001C. Non-orientable genus and embeddings above the minimum genus are not treated.",
+  "validation": {
+    "status": "checked: permutation table exhaustive; face-tracing identity on 1200 random cases; Heawood genus, rigidity, torus maps, orbit, chirality and dual; splice lemma on seven graphs and two bijections, K3,3 failure; all 128 minimum-genus embeddings of the 13-point space standard; genus formula on six spaces up to the 43-point twisted cube; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "classical inputs: Euler's formula for rotation systems, minor monotonicity of genus, Battle-Harary-Kodama-Youngs (disconnected graphs); the face-permutation calculus is in the spirit of Stahl's permutation-partition pairs; the Heawood map and K7 on the torus are classical. No overlap found (candidate local delta) in a bounded search for the splice lemma with the vertex-deletion hypothesis, the genus formula and the classification of minimum-genus embeddings of three-fold spaces",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

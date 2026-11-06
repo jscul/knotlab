@@ -1,0 +1,89 @@
+{
+ "artifact_id": "PLANAR-COMPOSE-20261102-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/manifest.json": "Proved",
+     "proofs/PLANAR-COMPOSE-20261102-001A/PLANAR-COMPOSE-20261102-001A-P001_the_hub_reaches_the_ports_on_a_plane_side/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the Fano plane has 16 torus embeddings and census 58 has 36; on each, the knot's signs satisfy the face condition, two homology classes of face-even sign twists exist, and the knot fails on none of the three twisted sectors": {
+   "info": {
+    "Fano plane": {
+     "faces [6, 6, 6, 6, 6, 6, 6]": 16,
+     "knot's signs satisfy the face condition": 16,
+     "torus embeddings": 16,
+     "twisted sectors on which the knot still fails": 0
+    },
+    "census 58": {
+     "faces [4, 4, 4, 6, 6, 6, 6, 12]": 12,
+     "faces [4, 4, 6, 6, 6, 6, 8, 8]": 24,
+     "knot's signs satisfy the face condition": 36,
+     "torus embeddings": 36,
+     "twisted sectors on which the knot still fails": 0
+    }
+   },
+   "pass": true
+  },
+  "2 cutting the handle open along the two curves the elimination first finds removes all creation on some embeddings and not on others (e.g. Fano > census 6: all 16; Fano > Fano: 8 of 16), while most crossing knots survive the cut": {
+   "info": {
+    "first embedding": {
+     "crossing knots at creating removals, cut open": 4177,
+     "crossing knots at creating removals, true": 4344
+    },
+    "per splice": {
+     "Fano plane > census 14: embeddings leaving new knots": 8,
+     "Fano plane > census 14: embeddings whose cut removes all creation": 8,
+     "Fano plane > census 21: embeddings leaving new knots": 8,
+     "Fano plane > census 21: embeddings whose cut removes all creation": 8,
+     "Fano plane > census 38: embeddings leaving new knots": 0,
+     "Fano plane > census 38: embeddings whose cut removes all creation": 16,
+     "Fano plane > census 45: embeddings leaving new knots": 4,
+     "Fano plane > census 45: embeddings whose cut removes all creation": 12,
+     "Fano plane > census 58: embeddings leaving new knots": 8,
+     "Fano plane > census 58: embeddings whose cut removes all creation": 8,
+     "Fano plane > census 6: embeddings leaving new knots": 0,
+     "Fano plane > census 6: embeddings whose cut removes all creation": 16,
+     "census 58 > census 1: embeddings leaving new knots": 0,
+     "census 58 > census 1: embeddings whose cut removes all creation": 36,
+     "census 58 > census 21: embeddings leaving new knots": 12,
+     "census 58 > census 21: embeddings whose cut removes all creation": 24,
+     "census 58 > census 6: embeddings leaving new knots": 8,
+     "census 58 > census 6: embeddings whose cut removes all creation": 28
+    }
+   },
+   "pass": true
+  },
+  "3 the cut position matters: on the Fano > Fano splice, for each of four torus embeddings, 20 cuts along other curves in the same two homology classes (the twists changed by point and line switchings) split between removing all creation and leaving new knots": {
+   "info": {
+    "cuts leaving new knots": 55,
+    "cuts removing all creation": 25,
+    "embeddings tried": 4,
+    "embeddings where some cut positions remove creation and others do not": 4
+   },
+   "pass": true
+  },
+  "4 dropping one parity (a cylinder left) changes creation without removing it everywhere; the control (the union with one near point flipped) never removes creation: at every creating removal of the Fano splices every such union still creates": {
+   "info": {
+    "creating removals": 26,
+    "new knots with one parity dropped (a)": 17,
+    "new knots with one parity dropped (a+b)": 9,
+    "new knots with one parity dropped (b)": 23,
+    "point-flip unions": 104,
+    "point-flip unions still creating": 104,
+    "true new knots": 240
+   },
+   "pass": true
+  }
+ },
+ "claim": "Cutting a handle open. The Fano plane has 16 torus embeddings (7 hexagons each) and census 58 has 36. On each, the knot's signs satisfy the face condition, and twisting the signs along a non-contractible cut curve keeps every face condition but leaves a system on which the knot no longer fails. Uniting the near side's solutions over the four homology sectors forgets both homology parities: the handle cut open. (1) This removes all creation on some embeddings and not on others (Fano plane into census 6 and 38: 16 of 16; into census 14, 21 and 58: 8 of 16; into census 45: 12 of 16; census 58 into K4^(3): 36 of 36, into census 6: 28 of 36, into the Fano plane: 24 of 36), while most crossing knots survive. (2) The outcome depends on where the cut curves run, not only on their homology classes: on the Fano > Fano splice, 20 cuts per embedding in the same classes split 25 to 55 between removing all creation and not, on each of four embeddings. (3) Dropping one parity, which leaves a cylinder, cuts the 240 new knots at the Fano splices' creating removals to 17, 23 or 9. Uniting with one near point flipped (the control) never removes creation (104 of 104). So the homology parities carry most of a handle's creation, but forgetting them is not canonical in point values, and the reading that a handle creates exactly what its homology parities add fails as stated.",
+ "kind": "proof",
+ "proof": "PLANAR-COMPOSE-20261102-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PLANAR-COMPOSE-20261102-001B"
+}

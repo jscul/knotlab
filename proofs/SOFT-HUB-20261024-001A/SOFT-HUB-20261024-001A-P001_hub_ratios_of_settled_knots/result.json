@@ -1,0 +1,93 @@
+{
+  "artifact_id": "SOFT-HUB-20261024-001A-P001",
+  "checks": {
+    "Lemmas 2 and 3": {
+      "F(u)F(u-bar) = separated + linked": true,
+      "every linked pair branches at antipodal local tuples": true,
+      "exchange valid and injective, terminals on split patterns": true,
+      "gadget-axis cases": 1898,
+      "linked pairs": 80129,
+      "pairs": 439439,
+      "parity gadgets with linked pairs": 0,
+      "separated <= split products": true
+    },
+    "Proposition 6": {
+      "each is N[c] + {c-bar} for exactly one c": true,
+      "every one-slot exchange at {c, c-bar} fails": true,
+      "in the six, every allowed pair at distance two has an excluded intermediate": true,
+      "knots allowing an antipodal pair": 32,
+      "non-windable knots": 8,
+      "only allowed antipodal pair is {c, c-bar}": true,
+      "the six open knots have non-constant c, the no-lone knots constant c": true
+    },
+    "Theorem 1": {
+      "equality supports": 0,
+      "gadgets": 476,
+      "largest excluded set of a co-independent relation on three bits": 4,
+      "supports co-independent": 476,
+      "supports excluding at most four": 476
+    },
+    "Theorem 4 (consistency)": {
+      "F(u)F(u-bar) <= s_u": 1450,
+      "windable gadget-axis cases": 1450
+    },
+    "Theorem 5": {
+      "constant on support, hub ratio <= 1 on every axis": 28,
+      "hub ratio <= 1 on every axis": 28,
+      "no-lone gadgets": 28,
+      "parity gadgets": 28,
+      "recurrence holds": 28
+    }
+  },
+  "claim": "No native gadget of any knot is an exact hub: supports are co-independent and exclude at most four of eight terminal values. For every gadget and axis u, exchanging the difference component of terminal 1 maps the pairs that do not link all three terminals injectively onto split patterns, so F(u)F(u-bar) is at most the split products plus the linked pairs, and every linked pair branches at a knot with antipodal local tuples. Parity gadgets have no linked pairs and hub ratio at most 1; no-lone gadgets obey the Fibonacci recurrence and have hub ratio at most 1; windable gadgets have hub ratio at most the square root of 3 given McQuillan. The eight non-windable knots are a closed neighbourhood plus the antipode of its centre, rigid for exchanges, so for the six open knots only linked pairs through knots that are empty on one side and full on the other can push the ratio above the square root of 3.",
+  "controls": {
+    "a hub (one variable in three knots) gives the equality on three legs, and its support is rejected": true,
+    "exchanging only terminal 1's own edge gives an invalid configuration on some pair": true,
+    "the open knot violates the split inequality on the axis 110": true
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "SOFT-HUB-20261024-001A-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "settled_hub_ratios_shown": true,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "SOFT-HUB-20261024-001A"
+}

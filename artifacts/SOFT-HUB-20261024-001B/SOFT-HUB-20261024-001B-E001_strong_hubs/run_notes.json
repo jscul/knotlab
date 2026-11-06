@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SOFT-HUB-20261024-001B-E001",
+  "invocations": [
+    {
+      "started": "2026-10-25T00:04:53-07:00",
+      "wall_seconds": 560.0,
+      "outcome": "controls.py passed; run.py wrote 467 rows (336 annealing, 100 sampling, 30 pairs, 1 composition) and result.json (verdict supported) in 405 s; check_result.py reproduced the table, summary and verdict, re-evaluated all 336 annealed gadgets with an independent dictionary-based evaluator, and replayed 5 chunks"
+    }
+  ],
+  "budget": "about 560 s of the 7200 s budget, 24 threads",
+  "independent_check": "check_result.py passed",
+  "post_hoc_note": "The best ratio, 65/53 = 1.2264, was reached on two different axes by gadgets of 16 to 32 knots; ticket C examines a bound."
+}

@@ -1,0 +1,195 @@
+{
+  "artifact_id": "LINE-DETECTOR-20261023-001B-P001",
+  "checks": {
+    "Lemma 1": {
+      "edge clauses of one type": 24,
+      "equal to the conjunction of their two-literal clauses": 24,
+      "two-literal tiling placements": 24
+    },
+    "Lemma 2": {
+      "fundamental cycles": 32296,
+      "placement-torus pairs": 72,
+      "value change equals the relative twist": 32296
+    },
+    "Proposition 4": [
+      {
+        "configuration": 91,
+        "contradicts along": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "has assignments along (odd)": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "placement": 54,
+        "selective": true,
+        "torus": "3x3",
+        "twist": "01",
+        "undetermined": []
+      },
+      {
+        "configuration": 27,
+        "contradicts along": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "has assignments along (odd)": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "placement": 62,
+        "selective": true,
+        "torus": "3x3",
+        "twist": "01",
+        "undetermined": []
+      },
+      {
+        "configuration": 681,
+        "contradicts along": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "has assignments along (odd)": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "placement": 111,
+        "selective": true,
+        "torus": "3x3",
+        "twist": "00",
+        "undetermined": []
+      }
+    ],
+    "Theorem 3 on sampled configurations": {
+      "all odd classes (rank two)": 323,
+      "cause matches": 329,
+      "configurations": 576,
+      "contradicting": 329,
+      "none of the eight": 0,
+      "one class": 6,
+      "patterns follow the trichotomy": 329,
+      "undetermined": 0
+    }
+  },
+  "claim": "In every two-literal tiling world on a triangular torus, with or without coins shared between clauses, the classes along which a configuration contradicts are none, the multiples of one primitive class, or every class odd relative to the fitting twist: the doubly allowed tiling makes the parity of every closed implication walk the relative twist of its class. Hence a lone line is a pure line there, and the dual-pair failures of shared-coin worlds are failures of the line event itself. Three-place tiling worlds break the trichotomy: certified configurations contradict along some odd classes and not others, 12 of the 30 three-place placements do so on every torus computed, and a lone line can contradict along classes the lone event never checks; lines pure among eight classes still differ across dual pairs.",
+  "controls": {
+    "local two-literal placements with clashing edge types": 47,
+    "of them with an odd contractible closed walk": 47,
+    "three-place tiling placements that are conjunctions of two-literal clauses (must be 0)": 0
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "LINE-DETECTOR-20261023-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "three_place_selectivity_shown": true,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_literal_trichotomy_proved": true,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "LINE-DETECTOR-20261023-001B"
+}

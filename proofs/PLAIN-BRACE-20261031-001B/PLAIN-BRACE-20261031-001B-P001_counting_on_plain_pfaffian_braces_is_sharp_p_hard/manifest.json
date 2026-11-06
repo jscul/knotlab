@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLAIN-BRACE-20261031-001B-P001",
+  "canonical_id": "PLAIN-BRACE-20261031-001B-P001",
+  "kind": "proof",
+  "ticket": "PLAIN-BRACE-20261031-001B",
+  "proof": "PLAIN-BRACE-20261031-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Counting on plain Pfaffian braces is #P-hard",
+  "status": "Proved",
+  "claim": "Counting proper 2-colourings of 3-regular 3-uniform hypergraphs whose incidence graphs are Pfaffian braces is #P-hard under polynomial-time Turing reductions. A hard plain cubic source is drawn with its vertices in distinct faces of a prism frame and every crossing replaced by a ladder site of plain cube junctions (ticket A). A bond lemma (the planarized drawing has only trivial bonds of size at most 3), ladder sites, and a cube junction lemma make the instance cyclically 4-edge-connected, hence a brace by Hall's condition; it is Pfaffian by the trisum certificate. With every site restored the count is #col(source) #col(frame). With Valiant's planar algorithm and the Heawood graph: among plain Pfaffian braces, the planar ones count in polynomial time, the knot's atom trivially, and the class is #P-hard.",
+  "dependencies": [
+    "PLAIN-BRACE-20261031-001A",
+    "SOFT-CROSS-20261031-001B"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A woven host that is not cyclically 4-edge-connected, or a woven instance that is not certified Pfaffian.",
+    "A ladder site or cube junction with a subset containing a cycle and fewer than four boundary edges.",
+    "A single-site interpolation inside a woven instance that misses the count with that site restored."
+  ],
+  "lineage": {
+    "home_scope": "PLAIN-BRACE-20261031-001",
+    "epic_path": [
+      "PLAIN-BRACE-20261031-001"
+    ],
+    "parents": [
+      "proofs/PLAIN-BRACE-20261031-001A/PLAIN-BRACE-20261031-001A-P001_a_plain_crossing_inside_braces/manifest.json",
+      "proofs/PLAIN-BRACE-20261031-001A/PLAIN-BRACE-20261031-001A-P001_a_plain_crossing_inside_braces/result.json",
+      "proofs/PLAIN-BRACE-20261031-001A/PLAIN-BRACE-20261031-001A-P001_a_plain_crossing_inside_braces/brace_lib.py",
+      "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/manifest.json",
+      "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/plain_lib.py",
+      "proofs/PLAIN-COUNT-20261031-001B/PLAIN-COUNT-20261031-001B-P001_plain_pages_are_always_twisted/page_lib.py",
+      "proofs/SOFT-CROSS-20261031-001A/SOFT-CROSS-20261031-001A-P001_a_soft_crossing_interpolates_to_a_sharp_one/cross_lib.py",
+      "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/amplitude_lib.py",
+      "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/computation_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PLAIN-BRACE-20261031-001A/PLAIN-BRACE-20261031-001A-P001_a_plain_crossing_inside_braces/manifest.json": "5373aaba85b23df80b1c8c7737e42c5f9e5c09bb58c2b2754d38f88353d64242",
+    "proofs/PLAIN-BRACE-20261031-001A/PLAIN-BRACE-20261031-001A-P001_a_plain_crossing_inside_braces/result.json": "77f71e98cf4e7c9080048a70d50562da7e4613ea4fa0d140b1dfe461ab3a9c9d",
+    "proofs/PLAIN-BRACE-20261031-001A/PLAIN-BRACE-20261031-001A-P001_a_plain_crossing_inside_braces/brace_lib.py": "7ef57dfb87accdfdd30fa5245b0c143b7a3a48d07be8736b8c7fb64d5dc67bf5",
+    "proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/manifest.json": "32a5778087bde3711471a6b0700d729524f12aad4948ce197d397ab7d3683124",
+    "proofs/PLAIN-COUNT-20261031-001A/PLAIN-COUNT-20261031-001A-P001_signs_interpolate_away/plain_lib.py": "e44bac308b0a5fcf3fe5d8681ab03cd2e730c3a408e30845b512e785f664ab4d",
+    "proofs/PLAIN-COUNT-20261031-001B/PLAIN-COUNT-20261031-001B-P001_plain_pages_are_always_twisted/page_lib.py": "fbb6c284e8b480540b8199c06066f644761e71bb496b897a9fdbdb0fd1a8d229",
+    "proofs/SOFT-CROSS-20261031-001A/SOFT-CROSS-20261031-001A-P001_a_soft_crossing_interpolates_to_a_sharp_one/cross_lib.py": "b6d551d2bfedbbd37b581195c8022a6612a0e4af7958b11f6ee1df09282cb696",
+    "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py": "81263473004bc8e55e5851d658f53d81a2aae79bc1fe9b9cc1a1a22cb82e1753",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/amplitude_lib.py": "32f35f6db38b39cb7b1a078c521c06e3ea4d1511a9314765ffedfa0dd93c33b2",
+    "proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/computation_lib.py": "0ea7887ef7be1decee2180bcd826aff167fb240f6dd5826c4f46eafbae30d621"
+  },
+  "paths": {
+    "manifest": "proofs/PLAIN-BRACE-20261031-001B/PLAIN-BRACE-20261031-001B-P001_counting_on_plain_pfaffian_braces_is_sharp_p_hard/manifest.json",
+    "identity": "proofs/PLAIN-BRACE-20261031-001B/PLAIN-BRACE-20261031-001B-P001_counting_on_plain_pfaffian_braces_is_sharp_p_hard/identity.json",
+    "directory": "proofs/PLAIN-BRACE-20261031-001B/PLAIN-BRACE-20261031-001B-P001_counting_on_plain_pfaffian_braces_is_sharp_p_hard",
+    "proof": "proofs/PLAIN-BRACE-20261031-001B/PLAIN-BRACE-20261031-001B-P001_counting_on_plain_pfaffian_braces_is_sharp_p_hard/proof.md",
+    "result": "proofs/PLAIN-BRACE-20261031-001B/PLAIN-BRACE-20261031-001B-P001_counting_on_plain_pfaffian_braces_is_sharp_p_hard/result.json",
+    "check": "proofs/PLAIN-BRACE-20261031-001B/PLAIN-BRACE-20261031-001B-P001_counting_on_plain_pfaffian_braces_is_sharp_p_hard/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "plain_brace_hardness_shown": true
+  },
+  "foundation_claim_scope": "Hardness of counting on plain Pfaffian braces, by Turing reduction; the polynomial islands among them are planarity and the Heawood graph.",
+  "validation": {
+    "status": "checked: woven instances of non-brace sources (hosts cyclically 4-edge-connected, instances certified Pfaffian, direct brace test on a small one); exhaustive cut checks of sites and the cube junction; single-site interpolation inside woven instances; frame counts; controls; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "source hardness: Fan-Cai 2020 and SOFT-CROSS B (replay); braces and Pfaffian graphs as classes are classical (Robertson-Seymour-Thomas, McCuaig); hardness on plain Pfaffian braces, the weaving lemma and the cube junction lemma: no overlap found (candidate local delta, folklore risk moderate)",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-31."
+  }
+}

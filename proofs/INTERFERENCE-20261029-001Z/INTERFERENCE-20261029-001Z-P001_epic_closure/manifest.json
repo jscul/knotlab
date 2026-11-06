@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "INTERFERENCE-20261029-001Z-P001",
+  "canonical_id": "INTERFERENCE-20261029-001Z-P001",
+  "kind": "proof",
+  "ticket": "INTERFERENCE-20261029-001Z",
+  "proof": "INTERFERENCE-20261029-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the interference epic",
+  "status": "Proved",
+  "claim": "Ledger closing INTERFERENCE-20261029-001: one line per conclusion with its novelty label and evidence (tickets A, B and C), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "INTERFERENCE-20261029-001A",
+    "INTERFERENCE-20261029-001B",
+    "INTERFERENCE-20261029-001C"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, contract or result changes, a proof is not Proved, or the experiment result does not pass.",
+    "The decision note or the decision request is missing.",
+    "A ticket lacks its terminal status class (proved, proved, supported)."
+  ],
+  "lineage": {
+    "home_scope": "INTERFERENCE-20261029-001",
+    "epic_path": [
+      "INTERFERENCE-20261029-001"
+    ],
+    "parents": [
+      "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/manifest.json",
+      "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/result.json",
+      "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json",
+      "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json",
+      "experiments/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/contract.json",
+      "artifacts/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/manifest.json": "01ed42f5c4fa4fa343cc6556dd4b9288d57ed49e5e3edb2fe6312ca733b4e6b5",
+    "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/result.json": "71ae94993de67283b61f3b3eecb0b6e8e6e2bfcc27e0e1f5b0a3576b68f7d1f1",
+    "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/manifest.json": "5b58aed5c2c3f929d3a29c38347ca89efd958a3817bed8fd57fc3ed6498678e3",
+    "proofs/INTERFERENCE-20261029-001B/INTERFERENCE-20261029-001B-P001_signed_laws_survive_native_coarse_graining/result.json": "cb16c95e8c0376e399151cd65d751e2fe2aebf101c8034426ae02e6c84b78e1e",
+    "experiments/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/contract.json": "a0be1ed75a5f0d97abd5fac43bf4a9d9a386df96d72599b38d07b7a4709b4309",
+    "artifacts/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/result.json": "57a9445c3326db071dde6f08470e038c9433f1b5e6ea177f94ea13a9656d63b1"
+  },
+  "paths": {
+    "manifest": "proofs/INTERFERENCE-20261029-001Z/INTERFERENCE-20261029-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/INTERFERENCE-20261029-001Z/INTERFERENCE-20261029-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/INTERFERENCE-20261029-001Z/INTERFERENCE-20261029-001Z-P001_epic_closure",
+    "proof": "proofs/INTERFERENCE-20261029-001Z/INTERFERENCE-20261029-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/INTERFERENCE-20261029-001Z/INTERFERENCE-20261029-001Z-P001_epic_closure/result.json",
+    "check": "proofs/INTERFERENCE-20261029-001Z/INTERFERENCE-20261029-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B, the Frozen exploratory contract and passing result of C; decision note and decision request present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, passing experiment result, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

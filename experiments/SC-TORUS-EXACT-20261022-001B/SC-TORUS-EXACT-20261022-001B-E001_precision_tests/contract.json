@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SC-TORUS-EXACT-20261022-001B-E001",
+  "ticket": "SC-TORUS-EXACT-20261022-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "Disposable scoping on 2026-10-22, not evidence. On exact squares with the twist imposed along x, P(consistent) was 0.7153, 0.7122, 0.7090, 0.7091 at sides 32, 64, 128, 256 (100,000-400,000 samples; 1/sqrt 2 = 0.70711); the not-all-equal square pairs gave E_inf = 0.4993 +- 0.0011 earlier (NAE-INVARIANT-20261022-001B-E001). Untwisted squares gave P(no horizontal wrapping) 0.2452, 0.2462, 0.2475, 0.2505 (Newman, Grassberger and Ziff: 0.24999 +- 0.00007). On common random numbers the second difference of P(contractible) over the twist sectors was +0.0047, +0.0021, +0.0024 (+- 0.0010) on squares of side 32, 64, 128, within 0.001 of zero on 2:1, 3:1 and 4:1 rectangles, and -0.009, -0.038, -0.133 on squares sheared by 1/8, 1/4, 1/2. Directed horizontal winding on 64 x 64: positive only 0.231, negative only 0.231, both 0.287, neither 0.249. Twisted-long inconsistency fell with exponent about 0.20 (beta/nu = 0.19635). SC-TORUS-EXACT-20261022-001A-P001 proves the cone theorem: 3/4 means P(no directed horizontal winding) = 1/4.",
+  "question": "At roughly five times the earlier precision: is P(consistent) on square tori twisted along one axis exactly 1/sqrt 2 (half a bit)? Is the untwisted one-direction wrapping exactly 3/4? Is P(all strong components contractible) additive over the two axis twists on rectangular tori? Does inconsistency with the twist along the long direction decay with the strong-component exponent beta/nu? What do other twisted shapes give?",
+  "public_inputs": {
+    "model": "uniform random orientation of the square-lattice torus with periods (Lh,0) and (s,Lv); a twist (px,py) is imposed on the double cover and the swap reverses arcs; topology of the projected cyclic edges (contractible, cross, winding class); 'consistent' means no cluster with an odd cycle under the twist",
+    "F_half": "twist (1,0) on L x L: L = 64 and 128 with 7,000,000 samples, 256 with 3,200,000, 512 with 1,100,000",
+    "F_34": "untwisted L x L: L = 64 and 128 with 6,000,000, 256 with 3,300,000, 512 with 1,400,000",
+    "F_add": "the four twist sectors on common random numbers: 64 x 64 and 128 x 128 with 2,200,000, 256 x 256 with 800,000, 128 x 64 with 1,000,000",
+    "F_dir": "untwisted 64 x 64 (400,000) and 128 x 128 (200,000): directed horizontal and vertical winding of both signs; 16 x 16 (20,000) for the replay",
+    "F_long": "twist (1,0) along the long side: (128,64,0) 1,000,000; (192,64,0) 1,500,000; (256,64,0) 3,000,000",
+    "F_short": "twist (1,0) along the short side: (64,128,0), (64,192,0), (64,256,0), 400,000 each",
+    "F_scan": "twist (1,1) on 256 x 256; twists (1,0), (0,1), (1,1) on the sheared square (128,128,64); twist (1,0) on 256 x 128 and 128 x 256; twist (1,1) on 256 x 128; 400,000 each",
+    "F_small": "twist (1,0) and untwisted on 16 x 16, 20,000 each, for the independent replay"
+  },
+  "definitions": "Symmetrized estimators: for a twisted sector, P(consistent) = 1/2 + (P(even winding) - P(odd winding))/2 and P(contractible) = (P(contractible) + P(cross))/2, both exact in law by the duality; for untwisted squares, one-direction wrapping = (P(H) + P(V))/2 by symmetry. E = -log2 P(consistent). D = P00 - P10 - P01 + P11 for P(contractible), with the symmetrized form in twisted sectors, per sample on common random numbers. Standard errors from the per-sample variance of each estimator.",
+  "predictions": {
+    "candidate_half_bit": "fit E_L = E_inf + c/L by weighted least squares over the F_half sizes; accepted when |E_inf - 1/2| <= 3 sigma; decisively rejected when > 5 sigma",
+    "candidate_three_quarters": "fit W_L = W_inf + c/L over the F_34 sizes (W = symmetrized one-direction wrapping); accepted when |W_inf - 3/4| <= 3 sigma; decisively rejected when > 5 sigma",
+    "candidate_additivity": "fit D_L = D_inf + c/L over the three F_add squares; accepted when |D_inf| <= 3 sigma and |D(128 x 64)| <= 3 sigma",
+    "candidate_beta_nu": "fit ln(1 - P_consistent) linearly in the aspect k over F_long; x = -slope/(2 pi); accepted when |x - 0.19635| <= 3 sigma + 0.005",
+    "reported": "the short-side twisted exponent, the directed winding law, the scan values, and fits with an added 1/L^2 term",
+    "controls": "every twisted row has zero disagreements between the swap-invariant strong-component test and the odd-cluster test and |contractible - cross| <= 4 sqrt(contractible + cross); for twisted rectangles P(no H) + P(no V) and 1 - P(lines in classes with both coordinates nonzero) agree within 4 standard errors; P(no horizontal winding) from the directed test agrees with the undirected value at the same side within 4 standard errors"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Primary: the two exact-looking values. Supported when the half bit and 3/4 are both accepted; refuted when either is decisively rejected; closed null otherwise. The additivity and beta/nu candidates are accepted or rejected by their rules and do not change the primary verdict.",
+  "resource_budget": {"wall_seconds": 10800, "memory_mib": 4096, "max_vertices": 262144, "threads": 24},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster.",
+  "seeds": "per job chunk: the integer formed by the first 15 hex digits of sha256('family|label|chunk')",
+  "environment": "CPython 3 standard library for orchestration and analysis; simx.c compiled at run time with gcc -O2; 24 worker threads each running one subprocess",
+  "red_team_r0": [
+    "Finite size: all three candidates are extrapolated with a pre-registered 1/L fit; a fit with 1/L^2 is reported as a robustness check, not a decision.",
+    "Estimator bias: the symmetrized estimators rest on proved identities (duality in twisted sectors; square symmetry), and the raw estimators are recorded beside them.",
+    "Leakage: candidate values enter only the analysis.",
+    "Multiplicity: two primary and two secondary candidates with fixed rules; scan values are descriptive.",
+    "Imposed twists: on even squares the twist is imposed rather than forced by parity; the scaling limit depends only on the torus and the twist class, which the not-all-equal squares of the previous epic share."
+  ],
+  "nonclaims": [
+    "Monte Carlo estimates on finite tori; acceptance of a candidate supports and does not prove an exact value.",
+    "No formula for strongly-connected percolation is claimed.",
+    "Lattices are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Scoping, published or candidate values as inputs to the simulation"
+  ]
+}

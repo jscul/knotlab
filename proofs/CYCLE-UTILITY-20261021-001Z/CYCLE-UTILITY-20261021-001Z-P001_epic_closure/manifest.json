@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "artifact_id": "CYCLE-UTILITY-20261021-001Z-P001",
+  "canonical_id": "CYCLE-UTILITY-20261021-001Z-P001",
+  "kind": "proof",
+  "ticket": "CYCLE-UTILITY-20261021-001Z",
+  "proof": "CYCLE-UTILITY-20261021-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the novelty-and-utility epic",
+  "status": "Proved",
+  "claim": "Ledger closing CYCLE-UTILITY-20261021-001: one line per conclusion with its novelty label and evidence, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "CYCLE-UTILITY-20261021-001A"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or the proof is not Proved or its checks did not pass.",
+    "The decision note or the novelty scan is missing.",
+    "The ticket lacks its terminal status class (A proved)."
+  ],
+  "lineage": {
+    "home_scope": "CYCLE-UTILITY-20261021-001",
+    "epic_path": [
+      "CYCLE-UTILITY-20261021-001"
+    ],
+    "parents": [
+      "proofs/CYCLE-UTILITY-20261021-001A/CYCLE-UTILITY-20261021-001A-P001_utility/manifest.json",
+      "proofs/CYCLE-UTILITY-20261021-001A/CYCLE-UTILITY-20261021-001A-P001_utility/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CYCLE-UTILITY-20261021-001A/CYCLE-UTILITY-20261021-001A-P001_utility/manifest.json": "0d1d96d60c9d3c126ad54f1a9db4e4c2357a9694a99d632101193fe0a3c4612f",
+    "proofs/CYCLE-UTILITY-20261021-001A/CYCLE-UTILITY-20261021-001A-P001_utility/result.json": "8cc4be508364b176983d83ee5b7f1dbe8ee12b20391a94a304b6d0c6805b7030"
+  },
+  "paths": {
+    "manifest": "proofs/CYCLE-UTILITY-20261021-001Z/CYCLE-UTILITY-20261021-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/CYCLE-UTILITY-20261021-001Z/CYCLE-UTILITY-20261021-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/CYCLE-UTILITY-20261021-001Z/CYCLE-UTILITY-20261021-001Z-P001_epic_closure",
+    "proof": "proofs/CYCLE-UTILITY-20261021-001Z/CYCLE-UTILITY-20261021-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/CYCLE-UTILITY-20261021-001Z/CYCLE-UTILITY-20261021-001Z-P001_epic_closure/result.json",
+    "check": "proofs/CYCLE-UTILITY-20261021-001Z/CYCLE-UTILITY-20261021-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proof and its passed result; decision note and novelty scan present; ticket proved; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, result status, notes present, terminal ticket class.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written in one session by Claude at the repository owner's request on 2026-10-21."
+  }
+}

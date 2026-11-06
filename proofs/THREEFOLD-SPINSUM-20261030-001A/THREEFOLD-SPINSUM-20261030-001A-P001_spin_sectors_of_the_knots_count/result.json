@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-SPINSUM-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 10,
+    "mismatched": {}
+   }
+  },
+  "1 the spin sum recovers #col(H) = 0 and #col(H - L) on every map and contact": {
+   "ok": true,
+   "detail": {
+    "Fano": {
+     "genus": 1,
+     "maps": 16,
+     "contacts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "#col(H)": 0,
+     "#col(H - L)": {
+      "0": 10,
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 10,
+      "5": 10,
+      "6": 10
+     },
+     "identities checked": 128,
+     "identities holding": 128
+    },
+    "13-point": {
+     "genus": 2,
+     "maps": 4,
+     "contacts": [
+      0,
+      7
+     ],
+     "#col(H)": 0,
+     "#col(H - L)": {
+      "0": 50,
+      "7": 50
+     },
+     "identities checked": 12,
+     "identities holding": 12
+    }
+   }
+  },
+  "3 Fano sectors: 8, 8, 8 | 24 closed and 16, 16, 16 | 28 opened; the even ones are the knot's own": {
+   "ok": true,
+   "detail": {
+    "(Arf, knot-induced, N(B), N(B - L)) over all maps and contacts": {
+     "((0, True, 8, 16), (0, True, 8, 16), (0, True, 8, 16), (1, False, 24, 28))": 112
+    }
+   }
+  },
+  "2 every nonzero Kasteleyn twist is 2-colourable; the knot's class is not": {
+   "ok": true,
+   "detail": {
+    "Fano": {
+     "(class, Kasteleyn, 2-colourable)": {
+      "(\"knot's class\", True, False)": 16,
+      "('nonzero twist', True, True)": 48
+     }
+    },
+    "13-point": {
+     "(class, Kasteleyn, 2-colourable)": {
+      "(\"knot's class\", True, False)": 4,
+      "('nonzero twist', True, True)": 60
+     }
+    }
+   }
+  },
+  "4 genus 2: sector matrices have rank 4, so sectors do not factor over handles, though the amplitude does (25 = 5 x 5)": {
+   "ok": true,
+   "detail": {
+    "(matrix, classes on side 1, on side 2, rank), by map": {
+     "('closed', 4, 4, 4)": 4,
+     "('contact 0 opened', 4, 4, 4)": 4,
+     "('contact 7 opened', 4, 4, 4)": 4
+    },
+    "amplitude of the 13-point space at both contacts": {
+     "0": 25,
+     "7": 25
+    }
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "at another coupling (x = 1/2) the even and odd sectors do not balance": true,
+    "the coordinate dot product in place of the intersection form mislabels the knot's spin structures": true
+   }
+  },
+  "ok": true,
+  "seconds": 1.5
+ }
+}

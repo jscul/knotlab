@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "artifact_id": "SL23-BOUNDED-20261025-001A-P001",
+  "status": "Proved",
+  "checks": {
+    "1_structure": {
+      "|SL(2,3)|": 24,
+      "centre": 2,
+      "normal subgroup orders": [
+        1,
+        2,
+        8,
+        24
+      ],
+      "abelian normal subgroups with nilpotent quotient": [],
+      "Q8 nilpotent and SL(2,3)/Q8 nilpotent (Fitting height 2)": true,
+      "S4: normal elementary abelian 2-subgroups with nilpotent quotient (A = 1)": [],
+      "structures (|G|, m, dim N/A, |G/N|)": {
+        "SL(2,3)": [
+          24,
+          1,
+          2,
+          3
+        ],
+        "Q8": [
+          8,
+          1,
+          2,
+          1
+        ],
+        "D8": [
+          8,
+          1,
+          2,
+          1
+        ],
+        "Z2 x SL(2,3)": [
+          48,
+          2,
+          2,
+          3
+        ]
+      },
+      "ok": true
+    },
+    "2_gauss_sums": {
+      "random quadratic polynomials": 400,
+      "ok": true
+    },
+    "3_algorithm_vs_brute_force": {
+      "rows": {
+        "SL(2,3) 3_1 p=0": [
+          24,
+          24
+        ],
+        "SL(2,3) 3_1 p=1": [
+          1,
+          1
+        ],
+        "SL(2,3) 3_1 p=2": [
+          2,
+          2
+        ],
+        "SL(2,3) 3_1 p=3": [
+          33,
+          33
+        ],
+        "SL(2,3) 3_1 p=4": [
+          8,
+          8
+        ],
+        "SL(2,3) 3_1 p=6": [
+          18,
+          18
+        ],
+        "SL(2,3) 3_1 p=-6": [
+          18,
+          18
+        ],
+        "SL(2,3) 4_1 p=0": [
+          24,
+          24
+        ],
+        "SL(2,3) 4_1 p=1": [
+          1,
+          1
+        ],
+        "SL(2,3) 4_1 p=2": [
+          2,
+          2
+        ],
+        "SL(2,3) 4_1 p=3": [
+          33,
+          33
+        ],
+        "SL(2,3) 4_1 p=4": [
+          8,
+          8
+        ],
+        "SL(2,3) 4_1 p=6": [
+          18,
+          18
+        ],
+        "SL(2,3) 4_1 p=-6": [
+          18,
+          18
+        ],
+        "SL(2,3) 8_18 p=0": [
+          72,
+          72
+        ],
+        "SL(2,3) 8_18 p=1": [
+          1,
+          1
+        ],
+        "SL(2,3) 8_18 p=2": [
+          2,
+          2
+        ],
+        "SL(2,3) 8_18 p=3": [
+          129,
+          129
+        ],
+        "SL(2,3) 8_18 p=4": [
+          8,
+          8
+        ],
+        "SL(2,3) 8_18 p=6": [
+          66,
+          66
+        ],
+        "SL(2,3) 8_18 p=-6": [
+          66,
+          66
+        ],
+        "SL(2,3) 4_1 # 4_1 p=0": [
+          168,
+          168
+        ],
+        "SL(2,3) 4_1 # 4_1 p=1": [
+          1,
+          1
+        ],
+        "SL(2,3) 4_1 # 4_1 p=2": [
+          2,
+          2
+        ],
+        "SL(2,3) 4_1 # 4_1 p=3": [
+          129,
+          129
+        ],
+        "SL(2,3) 4_1 # 4_1 p=4": [
+          8,
+          8
+        ],
+        "SL(2,3) 4_1 # 4_1 p=6": [
+          162,
+          162
+        ],
+        "SL(2,3) 4_1 # 4_1 p=-6": [
+          162,
+          162
+        ],
+        "SL(2,3) 10_124 p=0": [
+          24,
+          24
+        ],
+        "SL(2,3) 10_124 p=1": [
+          1,
+          1
+        ],
+        "SL(2,3) 10_124 p=2": [
+          2,
+          2
+        ],
+        "SL(2,3) 10_124 p=3": [
+          9,
+          9
+        ],
+        "SL(2,3) 10_124 p=4": [
+          8,
+          8
+        ],
+        "SL(2,3) 10_124 p=6": [
+          18,
+          18
+        ],
+        "SL(2,3) 10_124 p=-6": [
+          18,
+          18
+        ],
+        "SL(2,3): surgeries agreeing": 35,
+        "SL(2,3): random presentations agreeing (of 25)": 25,
+        "Q8: surgeries agreeing": 35,
+        "Q8: random presentations agreeing (of 25)": 25,
+        "D8: surgeries agreeing": 35,
+        "D8: random presentations agreeing (of 25)": 25,
+        "Z2 x SL(2,3): surgeries agreeing": 35,
+        "Z2 x SL(2,3): random presentations agreeing (of 25)": 25
+      },
+      "ok": true
+    },
+    "4_scale": {
+      "rows": {
+        "(4_1)^1, p = 6": {
+          "generators": 4,
+          "lift-space dimensions": [
+            2,
+            4,
+            4
+          ],
+          "count": 18,
+          "brute force": 18,
+          "seconds": 0.0
+        },
+        "(4_1)^2, p = 6": {
+          "generators": 8,
+          "lift-space dimensions": [
+            2,
+            6,
+            6
+          ],
+          "count": 162,
+          "brute force": 162,
+          "seconds": 0.0
+        },
+        "(4_1)^3, p = 6": {
+          "generators": 12,
+          "lift-space dimensions": [
+            2,
+            8,
+            8
+          ],
+          "count": 450,
+          "brute force": 450,
+          "seconds": 0.0
+        },
+        "(4_1)^6, p = 6": {
+          "generators": 24,
+          "lift-space dimensions": [
+            2,
+            14,
+            14
+          ],
+          "count": 33282,
+          "brute force": null,
+          "seconds": 0.03
+        },
+        "(4_1)^9, p = 6": {
+          "generators": 36,
+          "lift-space dimensions": [
+            2,
+            20,
+            20
+          ],
+          "count": 2093058,
+          "brute force": null,
+          "seconds": 0.11
+        },
+        "(4_1)^12, p = 6": {
+          "generators": 48,
+          "lift-space dimensions": [
+            2,
+            26,
+            26
+          ],
+          "count": 134250498,
+          "brute force": null,
+          "seconds": 0.29
+        }
+      },
+      "ok": true
+    },
+    "5_controls": {
+      "rows": {
+        "dropping the obstruction overcounts on S3_2(3_1)": true,
+        "dropping the obstruction overcounts on S3_6(4_1 # 4_1)": true,
+        "no obstruction when H^2(M; F2) = 0 (S3_3(8_18)): dropping it changes nothing": true
+      },
+      "ok": true
+    },
+    "ok": true,
+    "seconds": 0.8
+  }
+}

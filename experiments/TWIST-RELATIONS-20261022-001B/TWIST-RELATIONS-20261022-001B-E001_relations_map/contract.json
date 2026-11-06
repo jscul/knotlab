@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_id": "TWIST-RELATIONS-20261022-001B-E001",
+  "ticket": "TWIST-RELATIONS-20261022-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "Disposable scoping on 2026-10-22, not evidence. Exhaustive enumeration of the 3 x 3, 4 x 3, 3 x 4 and 5 x 3 tori (and 3 x 3, 4 x 3, 3 x 4 sheared) found that the probability that a twisted sector's cone is the line through a class c is identical, as an exact count, for the two twists odd on c (for example 19200 = 19200 and 232320 = 232320 on the 4 x 3 torus with shear 1), and that the odd horizontal line of the twist odd on w1 and even on w2 has the same count at every shear (19200 at shears 0, 1, 2 of 4 x 3). Monte Carlo with 48-96 million samples on eleven further tori (5 x 4, 6 x 4, 5 x 5, 6 x 5, 8 x 6, 4 x 6, 16 x 16, 24 x 24, 32 x 32, 24 x 16 and two sheared) found every per-class difference within 2.3 standard errors of zero, at the level of a few parts in a million. The second difference D of P(contractible) over the twist sectors was +0.0021, +0.0008, +0.0012 on 64 x 64, 96 x 64 and 128 x 64 (+-0.001), and P00 + P01 - P10 - P11 was +0.0031 on the 45-degree rotated square 64 x 32 with shear 32, where the axis-basis D was -0.273. TWIST-RELATIONS-20261022-001A-P001 proves the exact harmonic structure and that none of these is an identity on the 3 x 3 torus except the odd-line counts.",
+  "question": "Is the odd-line identity exact on new tori: does the probability that a twisted sector's strong components wind along an odd class c, and nothing else, take the same value for the two twists odd on c? Is the odd horizontal line of the twist odd on w1 and even on w2 independent of the shear? Does the second difference of P(contractible) vanish on rectangles of aspect 3/2, 2 and 3, and in the orthogonal basis of the 45-degree rotated square? What is the harmonic content of the sector differences under shear?",
+  "public_inputs": {
+    "model": "uniform random orientation of the square-lattice torus with periods (Lh, 0) and (s, Lv); every orientation is classified in the four twist sectors (0,0), (1,0), (0,1), (1,1) on common random numbers; per sector the projected cyclic edges are contractible, cross, or wind in a class; the joint type pattern (contractible, cross, or winding class mod 2, per sector) is recorded",
+    "F_exact": "3 x 3 with shears 0 and 1, 2,000,000 each, for comparison with the exact fractions of TWIST-RELATIONS-20261022-001A-P001",
+    "F_odd": "7 x 5, 8 x 8, 10 x 6, 12 x 8 shear 3, 9 x 7 shear 2 (30,000,000 each), 12 x 12 and 16 x 10 shear 5 (20,000,000 each), 24 x 24 (4,000,000)",
+    "F_shear": "12 x 8 with shears 0, 2, 4, 6, 30,000,000 each",
+    "F_rect": "aspect 3/2: 48 x 32 (1,200,000) and 96 x 64 (600,000); aspect 2: 64 x 32 and 128 x 64; aspect 3: 96 x 32 and 192 x 64 (same counts)",
+    "F_conf": "the 45-degree rotated square: 64 x 32 shear 32 (1,200,000) and 128 x 64 shear 64 (600,000)",
+    "F_harm": "64 x 64 with shears 0, 8, 16, 24, 32 (600,000 each) and 128 x 64 with shears 0, 16, 32, 48, 64 (300,000 each)"
+  },
+  "definitions": "Sector (a, b) is the twist with value a on w1 = (Lh, 0) and b on w2 = (s, Lv). Types per sector: 0 contractible, 1 cross, 2/3/4 a winding whose class is (1,0)/(0,1)/(1,1) mod 2; in sector (1,0) types 2 and 4 are odd, in (0,1) types 3 and 4, in (1,1) types 2 and 3. Odd-line differences per sample: [type in sector (1,0) = 2] - [type in sector (1,1) = 2]; [type in (0,1) = 3] - [type in (1,1) = 3]; [type in (1,0) = 4] - [type in (0,1) = 4]. D = I00 - I10 - I01 + I11 with I the contractible indicators; on the rotated square the orthogonal basis is (w2, w1 - w2), where additivity reads I00 + I01 - I10 - I11. Means and standard errors from the per-sample values over the joint pattern.",
+  "predictions": {
+    "candidate_odd_line": "for every F_odd torus and each of the three odd-line differences, z = mean / sigma; accepted when every |z| <= 4; decisively rejected when any |z| > 6",
+    "candidate_shear_independence": "on 12 x 8, the probability that sector (1,0) winds only in class (1,0) is the same at shears 2, 4, 6 as at shear 0: accepted when every |z| <= 4; decisively rejected when any |z| > 6",
+    "candidate_rectangle_additivity": "for each aspect, D_inf = 2 D(large) - D(small); accepted when every |D_inf| <= 3 sigma",
+    "candidate_rotated_square": "the orthogonal-basis second difference, extrapolated the same way, within 3 sigma of zero; the axis-basis second difference at the larger size is reported and expected more than 10 sigma from zero",
+    "reported": "the harmonic content of E = P00 - P01, O = P10 - P11, U = P00 + P01, G = P10 + P11 and D under shear; on rectangles odd10 + odd01 - odd11 beside twice the diagonal odd lines, and the residual of the consistency relation",
+    "controls": "in every twisted sector zero disagreements between the swap-invariant strong-component test and the odd-cluster test, and |contractible - cross| <= 4 sqrt(contractible + cross); the untwisted sector is never flagged; joint pattern totals equal the samples; the independent checker compares the F_exact rows with the exact 3 x 3 fractions"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Primary: the odd-line identity and the shear independence. Supported when both are accepted; refuted when either is decisively rejected; closed null otherwise. The rectangle and rotated-square candidates are accepted or rejected by their rules and do not change the primary verdict.",
+  "resource_budget": {"wall_seconds": 3600, "memory_mib": 4096, "max_vertices": 24576, "threads": 24},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster. Rows are written as they finish.",
+  "seeds": "per job chunk: the integer formed by the first 15 hex digits of sha256('family|label|chunk')",
+  "environment": "CPython 3 standard library for orchestration and analysis; simt.c compiled at run time with gcc -O2; 24 worker threads each running one subprocess",
+  "red_team_r0": [
+    "Multiplicity: 24 odd-line tests and 3 shear tests; |z| <= 4 per test keeps the chance of a false rejection under one in a hundred if the identity is exact.",
+    "Power: at 30 million samples a per-class difference is resolved to about 2e-5, under 1% of the line probabilities on the small tori.",
+    "Leakage: candidate values enter only the analysis; the F_odd tori differ from the scoping tori except 24 x 24, which is rerun with new seeds.",
+    "Finite size: the additivity candidates are extrapolated linearly in 1/L from two sizes; the odd-line identity is tested at finite size, where it is conjectured exact.",
+    "Estimator: all statistics are per-sample on common random numbers, so differences carry their own correlated variance."
+  ],
+  "nonclaims": [
+    "Monte Carlo estimates on finite tori; acceptance supports and does not prove the odd-line identity.",
+    "No formula for strongly-connected percolation is claimed.",
+    "Lattices are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Scoping, exact or candidate values as inputs to the simulation"
+  ]
+}

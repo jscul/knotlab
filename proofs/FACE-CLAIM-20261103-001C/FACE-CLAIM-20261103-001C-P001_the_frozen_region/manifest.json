@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FACE-CLAIM-20261103-001C-P001",
+  "canonical_id": "FACE-CLAIM-20261103-001C-P001",
+  "kind": "proof",
+  "ticket": "FACE-CLAIM-20261103-001C",
+  "proof": "FACE-CLAIM-20261103-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The frozen region",
+  "status": "Proved",
+  "claim": "The frozen region. (1) Creation needs a frozen line (proved): a candidate knot needs a pair of handle points to leave the gluing line two patterns with two points fixed, so some port pattern in its pin freezes the line; by the reading lemma every line with a corner on a face barred by the pattern's class is frozen (266 cases on ladders, a grid, a thick tube and two grown spaces; 2,740 on a ladder arm spliced onto a grid). (2) Two-sided unit propagation from the class's seeds never fixes two points of an unfrozen line. On the generic pieces it finds every frozen line beyond distance 3, and all of them lie on the faces around the attachment point. On the arm-on-grid piece it misses 184 frozen (line, pattern) cases at 8 of 95 points, where a global rigidity freezes the arm's far long face. (3) Claim types: on the generic pieces frozen own-arc lines claim from one port pattern per value (140 cases) and frozen opposite-face lines from two (126); on the arm-on-grid piece the frozen lines off the faces around the point are rigid, with no claim (108 cases), except at one point, where they claim from two patterns per value (26 cases). (4) At exactly that point each of three handles (the Fano plane, census 58 minus line 0 or line 6) creates beyond distance 3 off the faces around the attachment point, along the arm's far long face (13 lines, pipeline). On a 21-point ladder arm spliced onto a 16-point grid with the Fano plane at three points, exact creation agrees with the pipeline in all 1,512 cases and creates beyond distance 3 off the faces around the point (12 instances). So the law proposed by PHASE-HALO-20261103-001A, that the halo beyond distance 3 lies on the faces around the attachment point, is false; the halo lies on frozen lines whose claims survive the handle's single points.",
+  "dependencies": [
+    "FACE-CLAIM-20261103-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation",
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A frozen far line found by unit propagation that the transfer shows unfrozen.",
+    "A generic plane piece (ladder, grid, tube, grown space) with a frozen far line that unit propagation misses.",
+    "A claim type other than one pattern on own arcs or two on opposite faces on the generic pieces.",
+    "No creation off the faces around the point at the junction point, or a disagreement with exact creation on the small junction piece."
+  ],
+  "lineage": {
+    "home_scope": "FACE-CLAIM-20261103-001",
+    "epic_path": [
+      "FACE-CLAIM-20261103-001"
+    ],
+    "parents": [
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json",
+      "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json",
+      "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py",
+      "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json": "494f9947dd2901c987c9e40297b028776e803ad56b6ae051bc209ac0ab7abfe2",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json": "01ed653b9d0aedcc186c1835a975f6d437946046546eff58baeadf507e285f39",
+    "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/claim_lib.py": "55bf8bb3096978270faf9728d4baf4e8529419ae751af66c7bb32cb21bb8c98f",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/manifest.json": "dedcfb1db3da2936e8fac5d7e9996ea6342e66a69ab1a4628dfca84232bcdbcc",
+    "proofs/PHASE-HALO-20261103-001A/PHASE-HALO-20261103-001A-P001_opposite_faces_carry_the_halo/families_lib.py": "c808efcd0017adbfb82e554b05b27a7c7582a9e4dcba75fcb65367a91a7a0c5a",
+    "proofs/HALO-FORCING-20261103-001C/HALO-FORCING-20261103-001C-P001_the_reach_on_ladders_and_grids/halo_pipeline.py": "486b8abfb30ca6cfd2760dd24993458dce45403e001c1802e1c6a8679abb8599",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1"
+  },
+  "paths": {
+    "manifest": "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/manifest.json",
+    "identity": "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/identity.json",
+    "directory": "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region",
+    "proof": "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/proof.md",
+    "result": "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/result.json",
+    "check": "proofs/FACE-CLAIM-20261103-001C/FACE-CLAIM-20261103-001C-P001_the_frozen_region/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "frozen_region_computed": true
+  },
+  "foundation_claim_scope": "Point splits of ladders, grids, thick tubes, grown spaces and ladder arms spliced onto grids; the Fano plane and census 58 as handles.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-03.",
+    "status": "frozen-region bound proved; unit propagation, claim types and the junction counterexample computed; the small junction checked against exact creation; no human or external review",
+    "novelty": "New here; the PHASE-HALO law 'the faces around the attachment point' is refuted at a junction point."
+  }
+}

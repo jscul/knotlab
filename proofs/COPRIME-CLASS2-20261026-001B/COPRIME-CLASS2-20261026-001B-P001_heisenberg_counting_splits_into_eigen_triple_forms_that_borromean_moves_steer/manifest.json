@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COPRIME-CLASS2-20261026-001B-P001",
+  "canonical_id": "COPRIME-CLASS2-20261026-001B-P001",
+  "kind": "proof",
+  "ticket": "COPRIME-CLASS2-20261026-001B",
+  "proof": "COPRIME-CLASS2-20261026-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Heisenberg counting splits into eigen-triple forms that Borromean moves steer",
+  "status": "Proved",
+  "claim": "Let q = p^k, r | q - 1, a, b r-th roots of unity in F_q, and G = H(F_q) x| C_r with the generator acting by (x, y, z) -> (a x, b y, a b z). For a closed oriented 3-manifold M and psi: pi1 M -> C_r: (a) the maps over psi number |Z^1(F_ab)| |B^1(F_a)| |B^1(F_b)| N_psi with N_psi = #{(u, v) in V_a x V_b : u cup v = 0}; (b) by duality N_psi is the kernel count of the trilinear form T(u, v, w) = <u cup v cup w, [M]> on V_a x V_b x V_g, g = (ab)^-1; (c) Y-surgery along a Y-graph whose leaves lie in ker psi keeps H1 and every V_chi and changes every eigen-component (chi1, chi2, chi3) of the triple product by eps sum over permutations of sgn times the leaf functionals (lifting Massuyeau's Lemma 3.2 to the r-fold cover; the factor r of the lifts cancels against the transfer); (d) over prime fields, pure leaves supported on single eigenspaces exist, so the realizable changes on (a, b, g) are exactly the trilinear forms alternating in every pair of slots with equal characters, and only components that are permutations of (a, b, g) change. This is the finite-cover, F_q analogue of Moussard's rational equivariant formula.",
+  "dependencies": [
+    "COPRIME-CLASS2-20261026-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A case where the counting formula disagrees with brute-force enumeration.",
+    "A Borromean insertion whose obstruction kernels differ, for some first argument, from the prediction of the steering law in any coincidence pattern or for any character.",
+    "A group where conjugation by the generator is not the stated automorphism.",
+    "A control that cannot fail: the reversed leaf product must mismatch."
+  ],
+  "lineage": {
+    "home_scope": "COPRIME-CLASS2-20261026-001",
+    "epic_path": [
+      "COPRIME-CLASS2-20261026-001"
+    ],
+    "parents": [
+      "research/COPRIME-CLASS2-20261026-001A/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "research/COPRIME-CLASS2-20261026-001A/manifest.json": "a7d1bdaab50b73b76491504ab4fa3ba1360220812f4ca0b4f4a545f92ddf53d3"
+  },
+  "paths": {
+    "manifest": "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json",
+    "identity": "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/identity.json",
+    "directory": "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer",
+    "proof": "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/proof.md",
+    "result": "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json",
+    "check": "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "eigen_triple_steering_shown": false
+  },
+  "foundation_claim_scope": "Parts (a)-(c) for every q with r | q - 1; part (d) over prime fields (the F4 case is TRIPLE-PRODUCT-20261026-001C). Cited, not proved: Massuyeau's Lemma 3.2 (Z/n coefficients), Matveev's theorem that Y-surgery preserves H1, Poincare duality with local coefficients, Moussard 2017 as the precursor. Checked on braid closures with Borromean insertions on bundles of r adjacent strands. No complexity claim; no P versus NP claim.",
+  "validation": {
+    "status": "checked: group facts for five groups, the count against brute force in twelve cases (including r = 6 and rp-surgeries), the steering law in all four coincidence patterns and five character pairs with exact kernel comparisons and a failing control; the steering law was independently replayed in COPRIME-CLASS2-20261026-001A; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-26."
+  }
+}

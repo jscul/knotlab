@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "EXACT-TOWERS-20261029-001B-P001",
+  "canonical_id": "EXACT-TOWERS-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "EXACT-TOWERS-20261029-001B",
+  "proof": "EXACT-TOWERS-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The minimal exact towers: the Sierpinski gasket, the slit triangle, and the Fano tower",
+  "status": "Proved",
+  "claim": "Let G be a single-scale exact gadget of a three-bit knot (m copies, h hidden variables, factor c, legs on three distinct copies pairwise at distance s), and T_k its tower: k times, every copy is replaced by a copy of G aligned to its constraint, with fresh hidden variables. Theorem 1: T_k has m^k copies and 3 + h(m^k - 1)/(m - 1) variables; its corner relation is the knot, with c^((m^k - 1)/(m - 1)) extensions per allowed tuple, so the corner law of a uniform solution is the same at every level; distances between variables of T_(k-1) scale by s, so the corners are at distance s^k, and if every variable of G is within s of each leg and every copy of G holds a variable within s - 1 of each leg, the ball of radius s^j around a corner holds exactly 3 + h(m^j - 1)/(m - 1) variables (growth exponent log m / log s); T_k has a tree decomposition of width h + 2 and every sub-tower is cut off by its three corners. Theorem 2: with weight r on excluded tuples, each excluded leg tuple of an exact gadget with legs on distinct copies gets weight at least 3c r + O(r^2) against c + O(r) for allowed ones, so the hard law repels softening. Theorem 3: the parity triangle, (m, h, s, c) = (3, 3, 2, 2), the twisted not-all-equal punctured tetrahedron (4, 3, 2, 2) and the not-all-equal punctured Fano plane (7, 6, 3, 5) have growth exponents log2 3, 2 and log3 7 and softened maps r(r^2 + 3)/(3r^2 + 1), 4r/(1 + r)^2 and r(r^6 + 7r^3 + 21r + 35)/(r^6 + r^5 + 2r^4 + 9r^3 + 20r^2 + 26r + 5), each with multiplier m at r = 0 and r < r' < 1 on (0, 1), so every softened tower flows to the free law; at the hard law two corners share 0 bits (parity) or 5/3 - log2 3 bits (the other two) at every distance s^k.",
+  "dependencies": [
+    "EXACT-TOWERS-20261029-001A",
+    "HUB-SURVIVORS-20261029-001B"
+  ],
+  "evidence_modes": [
+    "uniform-family-theorem",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A tower level whose copy or variable count, corner distances, eccentricities or ball sizes differ from Theorem 1.",
+    "A level whose corner counts differ from c^((m^k - 1)/(m - 1)) on an allowed tuple or are nonzero on an excluded one.",
+    "A copy outside the bag of its parent node, a variable whose bags are not a subtree, or a node whose three corners do not cut off what it introduced.",
+    "A softened weight polynomial or factorization differing from Theorem 3, a multiplier other than m, or an excluded tuple with fewer than 3c one-violation extensions."
+  ],
+  "lineage": {
+    "home_scope": "EXACT-TOWERS-20261029-001",
+    "epic_path": [
+      "EXACT-TOWERS-20261029-001"
+    ],
+    "parents": [
+      "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json",
+      "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json",
+      "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/manifest.json",
+      "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/manifest.json": "eeec92bbfc5beadfa9645e3da52df559e242bf062c42fa8ffdd67237f84026ac",
+    "proofs/EXACT-TOWERS-20261029-001A/EXACT-TOWERS-20261029-001A-P001_exact_counted_fixed_points_of_the_knots/result.json": "1c189b23f00a9ff7e3e59bf91a72cf87a085176215cf79aa7bf5f503b525a9e8",
+    "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/manifest.json": "ce09536b2c762c504d155c9af6d6f9f6f2a70676cf400b4c2f7dd68a26deeb87",
+    "proofs/HUB-SURVIVORS-20261029-001B/HUB-SURVIVORS-20261029-001B-P001_not_all_equal_is_rebuilt_by_the_fano_plane/result.json": "05cb91a755e5916699be8440448a33633c2f19b396586f1443fd436dc669b96b"
+  },
+  "paths": {
+    "manifest": "proofs/EXACT-TOWERS-20261029-001B/EXACT-TOWERS-20261029-001B-P001_the_minimal_exact_towers/manifest.json",
+    "identity": "proofs/EXACT-TOWERS-20261029-001B/EXACT-TOWERS-20261029-001B-P001_the_minimal_exact_towers/identity.json",
+    "directory": "proofs/EXACT-TOWERS-20261029-001B/EXACT-TOWERS-20261029-001B-P001_the_minimal_exact_towers",
+    "proof": "proofs/EXACT-TOWERS-20261029-001B/EXACT-TOWERS-20261029-001B-P001_the_minimal_exact_towers/proof.md",
+    "result": "proofs/EXACT-TOWERS-20261029-001B/EXACT-TOWERS-20261029-001B-P001_the_minimal_exact_towers/result.json",
+    "check": "proofs/EXACT-TOWERS-20261029-001B/EXACT-TOWERS-20261029-001B-P001_the_minimal_exact_towers/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "minimal_exact_towers_shown": false
+  },
+  "foundation_claim_scope": "The three smallest single-scale exact gadgets of parity, twisted not-all-equal and not-all-equal (from EXACT-TOWERS-20261029-001A and HUB-SURVIVORS-20261029-001B) and the towers they generate by substitution with private hidden variables; Theorem 1 for every single-scale exact gadget, Theorem 2 for every exact gadget with legs on distinct copies. Checked to levels 6, 5 and 4 (exact counts to 4, 3 and 3). Counts are a branch-internal measure; growth exponents are graph volume growth, not manifold dimension.",
+  "validation": {
+    "status": "checked: the three gadgets (knot relations, uniform counts, legs on distinct copies at one distance, the two distance conditions); towers to levels 6, 5 and 4 with copies, variables, corner distances, eccentricities and ball sizes as stated; exact corner counts by variable elimination to levels 4, 3 and 3 (up to 5^57 per allowed tuple); hierarchy tree decompositions of width h + 2 and three-corner cuts at every node; softened weight polynomials, factorizations, sampled positivity and multipliers 3, 4, 7; controls fire (a drifting non-exact rebuild, the shared-midpoint grid not cut off, a mutated Fano gadget not exact); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

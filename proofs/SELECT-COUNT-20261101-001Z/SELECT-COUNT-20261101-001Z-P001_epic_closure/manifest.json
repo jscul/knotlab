@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SELECT-COUNT-20261101-001Z-P001",
+  "canonical_id": "SELECT-COUNT-20261101-001Z-P001",
+  "kind": "proof",
+  "ticket": "SELECT-COUNT-20261101-001Z",
+  "proof": "SELECT-COUNT-20261101-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the selection-versus-composition and counted-length epic",
+  "status": "Proved",
+  "claim": "Ledger closing SELECT-COUNT-20261101-001: one line per conclusion with its novelty label and evidence (tickets A and B), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "SELECT-COUNT-20261101-001A",
+    "SELECT-COUNT-20261101-001B"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "SELECT-COUNT-20261101-001",
+    "epic_path": [
+      "SELECT-COUNT-20261101-001"
+    ],
+    "parents": [
+      "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/manifest.json",
+      "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/result.json",
+      "proofs/SELECT-COUNT-20261101-001B/SELECT-COUNT-20261101-001B-P001_counted_length_is_a_measure/manifest.json",
+      "proofs/SELECT-COUNT-20261101-001B/SELECT-COUNT-20261101-001B-P001_counted_length_is_a_measure/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/manifest.json": "4f527d63f55835e5281ad163c1ed7cdf720e9f4c086f9d88a8f31b337eb7bbce",
+    "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/result.json": "7ce6056fdf7b64a5a92084b66b3ec9fabd058c6c1599e3bfb2913e929348e41f",
+    "proofs/SELECT-COUNT-20261101-001B/SELECT-COUNT-20261101-001B-P001_counted_length_is_a_measure/manifest.json": "80a9a527c99b4583bef4b2693329374bb307adf28650caffb92fcda7a213ccd1",
+    "proofs/SELECT-COUNT-20261101-001B/SELECT-COUNT-20261101-001B-P001_counted_length_is_a_measure/result.json": "ce1d7ff8e780efec77751993aff9947f262648fc842bccde9b714c2ed2879805"
+  },
+  "paths": {
+    "manifest": "proofs/SELECT-COUNT-20261101-001Z/SELECT-COUNT-20261101-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/SELECT-COUNT-20261101-001Z/SELECT-COUNT-20261101-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/SELECT-COUNT-20261101-001Z/SELECT-COUNT-20261101-001Z-P001_epic_closure",
+    "proof": "proofs/SELECT-COUNT-20261101-001Z/SELECT-COUNT-20261101-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/SELECT-COUNT-20261101-001Z/SELECT-COUNT-20261101-001Z-P001_epic_closure/result.json",
+    "check": "proofs/SELECT-COUNT-20261101-001Z/SELECT-COUNT-20261101-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01."
+  }
+}

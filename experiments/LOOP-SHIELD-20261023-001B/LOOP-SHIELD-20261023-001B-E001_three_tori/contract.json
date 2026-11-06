@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LOOP-SHIELD-20261023-001B-E001",
+  "ticket": "LOOP-SHIELD-20261023-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "ODD-LOOP-20261023-001B-P001 proved the odd-loop identity on tori by a wall that runs along the loop; in three dimensions a loop cannot separate, so no wall exists unless the loop's projection fills a surface. Scratch scoping with the same counter: lone odd lines on the cubic 3-torus are absent at 2 x 2 x 2 and about one per million per twist and class at 3 x 3 x 3, while on thin 3-tori two layers thick, lines along a short direction occur at about 1e-4 and the four twists odd on such a class already differ by several standard errors at 3 to 4 million samples (for example 123, 216, 150, 286 at 3 x 2 x 2).",
+  "question": "On thin 3-tori two layers thick, where lone odd lines along a short direction are common, do the twists odd on a class give different probabilities of a lone odd line along it, so that no twist is shielded, as predicted where the loop cannot separate? On the cubic 3 x 3 x 3 torus, the same as far as rarity allows.",
+  "public_inputs": {
+    "model": "uniform random orientations of the cubic lattice on Lx x Ly x Lz 3-tori; every sample is classified in all eight twists q in {0,1}^3, a twist acting on an edge by q.offset mod 2",
+    "F_check": "the 3 x 3 torus at shear 0, exhaustive, for comparison with TWIST-RELATIONS-20261022-001A-P001; the 2 x 2 x 2 3-torus, exhaustive; the first 40000 masks of 3 x 2 x 2, exhaustive, for the checker's own replay",
+    "F_thin": "3 x 2 x 2 with 1e9 samples; 3 x 3 x 2, 4 x 3 x 2 and 4 x 4 x 2 with 5e8 samples each",
+    "F_cubic": "3 x 3 x 3 with 1.5e9 samples (secondary)"
+  },
+  "definitions": "A lone odd line of class c in twist q: every period of the cyclic edges lies on the line through c, some period is nonzero, and q.c is odd. For two twists a, b odd on c, z = (n_a - n_b) / sqrt(N (p_a + p_b - 2 p_ab - (p_a - p_b)^2)), where p_ab is the frequency of samples with a lone line of class c in both twists (counted by the counter). Two twists are symmetric for c when an axis permutation preserving the side lengths fixes c and maps one to the other; reflections fix every twist mod 2. A class is decision-bearing on a row when its lone lines, summed over the twists odd on it, number at least 1000.",
+  "predictions": {
+    "H1_no_shielding": "on every F_thin row, every comparison between two twists odd on a decision-bearing class that are not symmetric has |z| > 5",
+    "secondary_cubic": "on 3 x 3 x 3 the same comparisons are reported; a |z| > 5 for some non-symmetric pair supports H1 there",
+    "reported": "every lone-line count per twist and class, joint counts, contractible and rank-2 counts, and the 2 x 2 x 2 counts (scoping found no lone lines there)",
+    "controls": "per twist, contractible + rank-2 + lines = number of samples; in twisted sectors a swap-invariant strong component exists exactly when some period is odd under the twist, and never in the untwisted sector; on decision-bearing classes every comparison forced by a symmetry, within a class or between classes, has |z| < 4; the independent checker reproduces the 3 x 3 torus row from TWIST-RELATIONS-20261022-001A-P001 and the 3 x 2 x 2 slice by its own classification"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Supported if every non-symmetric comparison on decision-bearing F_thin classes has |z| > 5. Refuted if some such comparison has |z| < 2 with a relative standard error below 2% (an equality the mechanism does not explain). Mixed otherwise, reported comparison by comparison. Inconclusive if no F_thin class is decision-bearing.",
+  "resource_budget": {"wall_seconds": 5400, "memory_mib": 8192, "max_vertices": 32, "threads": 24},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster. Rows are written as they finish.",
+  "seeds": "chunk i of a Monte Carlo row with label L uses the first 8 bytes of sha256('loop-shield/L/i') as a big-endian integer; 192 chunks per row",
+  "environment": "CPython 3 standard library for orchestration and analysis; lineev.c compiled at run time with gcc -O2; 24 worker threads each running one subprocess per chunk",
+  "red_team_r0": [
+    "A wall can still exist in particular configurations: when the loop's projection fills a whole slice of a thin torus, that slice separates and the configuration is shielded. This shrinks differences but cancels them in law only if nearly every configuration fills a slice; the effect is strongest on 3 x 2 x 2, whose slices have four vertices.",
+    "Common samples: all twists are classified on the same orientations, so differences use the exact variance with the recorded joint counts rather than an independence approximation.",
+    "Multiple comparisons: about thirty decision-bearing comparisons; the 5-sigma threshold controls false 'differs' calls, and 'equal' requires both |z| < 2 and a resolution better than 2%.",
+    "Rarity: lone lines on the cubic 3 x 3 x 3 torus are about one per million per twist and class, so that row is secondary."
+  ],
+  "nonclaims": [
+    "Monte Carlo on finite 3-tori; a difference shows that no identity holds on that torus, not a theorem for all 3-tori.",
+    "Lattices are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected counts as inputs to the sampling"
+  ]
+}

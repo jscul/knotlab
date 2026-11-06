@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "experiment_id": "NAE-INVARIANT-20261022-001B-E001",
+  "ticket": "NAE-INVARIANT-20261022-001B",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "Disposable scoping on 2026-10-22, not evidence. Twisted square tori with both sides odd gave P(contractible) = P(cross) = 0.407 at sides 17-129 and emergence 0.844 bits; odd windings 0.029-0.036 (rising slowly), even windings 0.150. Square tori with one odd side gave pair-averaged emergence 0.4919, 0.4944, 0.4949 at sides 65, 129, 257 (a candidate of one half bit). Long cylinders with an odd circumference of 65 gave 0.58 bits per unit aspect (exponent 0.064, near 1/16). The Pinson-Arguin Coulomb-gas family with free coupling and parity-dependent winding weights fitted with chi-square about 6e4 for 52 degrees of freedom. The largest strongly connected cluster scaled with dimension 1.80, and out-plus-in arms with exponent 0.198 over radii 16-1024. NAE-INVARIANT-20261022-001A-P001 proves the reduction to strong components, the exact duality of twisted tori and the consistency identity.",
+  "question": "How does not-all-equal's critical emergence depend on the torus (aspect ratio, which sides are odd, shear, rotation, long cylinders)? Is it given by the Pinson-Arguin Coulomb-gas family, by a simple exact value (one half bit on square tori with one odd side), or by the long-cylinder exponent 1/16? Is the bulk the strongly-connected percolation class measured by Newman, Grassberger and Ziff?",
+  "public_inputs": {
+    "tori": "Z^2 modulo the periods (Lh, 0) and (s, Lv); every edge carries a fair spoke; 'twisted' means the not-all-equal literal graph (the swap-reversed orientation of the double cover); 'untwisted' means a uniformly random orientation of the torus itself.",
+    "F_sq11": "square, both sides odd: (33,33,0) 400000, (65,65,0) 400000, (129,129,0) 200000 samples",
+    "F_r53": "both sides odd, ratio 5:3: (21,35,0), (39,65,0), (75,125,0), 400000 each",
+    "F_r3": "both sides odd, ratio 3: (11,33,0), (21,63,0), (43,129,0), 400000 each",
+    "F_sq10": "square, one side odd, bracketing the square: (65,64,0), (65,66,0), (129,128,0), (129,130,0) 1000000 each; (257,256,0), (257,258,0) 400000 each",
+    "F_r2s": "one side odd and short, ratio 2: (33,66,0), (65,130,0) 400000, (129,258,0) 200000",
+    "F_r2l": "one side odd and long, ratio 1/2: (65,32,0), (129,64,0) 400000, (257,128,0) 200000",
+    "F_r4s": "one side odd and short, ratio 4: (17,68,0), (33,132,0), (65,260,0), 400000 each",
+    "F_r4l": "one side odd and long, ratio 1/4: (65,16,0), (129,32,0), (257,64,0), 400000 each",
+    "F_sh11": "sheared square, both periods odd: (65,65,32), (129,129,64), 400000 each",
+    "F_sh10": "sheared square, one period odd: (65,65,33), (129,129,65), 400000 each",
+    "F_rot": "rotated squares, both periods odd: periods k(2,1), k(-1,2) as (5k,k,2k) for k in {13, 25}; periods k(3,2), k(-2,3) as (13k,k,8k) for k in {5, 9}; 400000 each",
+    "F_cyl": "long cylinders, odd circumference: (65,260,0), (65,390,0), (65,520,0), (33,132,0), (33,198,0), (33,264,0), 400000 each",
+    "F_mass": "twisted squares, both odd, largest projected cyclic cluster: (65,65,0) 40000, (129,129,0) 20000, (257,257,0) 10000, (513,513,0) 5000",
+    "F_untwisted": "untwisted squares: (128,128,0) 200000, (256,256,0) 100000, (17,17,0) 20000",
+    "F_arms": "uniform random orientation of the 2049 x 2049 box: radii of the out-set, in-set and strong component of the centre, 240000 samples",
+    "F_box": "uniform random orientation of the 512 x 512 box, free boundary: fraction of cyclic edges among the edges of the central half, 1000 samples",
+    "F_small": "twisted (9,9,0) and (9,8,0), 40000 each, for the independent replay",
+    "controls": "twisted (64,64,0) 4000 and (128,64,0) 2000 samples (bipartite: always consistent); on every twisted row the strong-component and odd-cluster tests agree, and the contractible and cross counts agree within 4 standard errors"
+  },
+  "definitions": "E = -log2 of the consistent fraction, with a delta-method standard error. Topology of the projected cyclic edges: contractible, cross, or winding in a primitive class (a, b) of the periods. Wrapping (untwisted): either = not contractible; horizontally = cross or a winding class with a != 0; both = cross or a winding class with a != 0 and b != 0. Pair average for F_sq10: the mean of E over (L, L-1) and (L, L+1). Mass: mean size of the largest projected cyclic cluster. Arms: P(radius >= R) for the out-set, the in-set, both (the smaller radius) and the strong component.",
+  "predictions": {
+    "ngz_values": {"fractal_dimension": 1.8035, "beta_over_nu": 0.19635, "wrap_either": 0.86117, "wrap_one_direction": 0.75001, "wrap_both": 0.63867},
+    "H_shape": "for every scan family (F_sq11, F_r53, F_r3, F_r2s, F_r2l, F_r4s, F_r4l, F_sh11, F_sh10, and the F_sq10 pair averages), |E(largest) - E(second largest)| <= 3 sigma + 0.02 bits",
+    "H_rotation": "for each rotation, the weighted mean E of its two sizes lies within 3 sigma + 0.02 bits of E(129,129,0)",
+    "H_family": "the Pinson-Arguin family (coupling gs in [0.5, 1]; non-contractible loop parameters e_odd, e_even in [0, 1] for odd and even classes; P(contractible) = P(cross) = Zhat(gs, 1)/2 up to normalisation) fitted to P(contractible) and the classes (1,0), (0,1), (1,1), (1,-1) on the largest size of F_sq11, F_r53, F_r3, F_r2s, F_r2l, F_r4s, F_r4l, F_sh11, F_sh10 and both largest F_sq10 tori, with binomial errors (floor 1e-5 on the probability), has chi-square per degree of freedom >= 10 at its best fit (grid then Nelder-Mead)",
+    "H_class": "(a) the slope of log mass against log side between 257 and 513 lies within 3 sigma + 0.02 of 1.8035; (b) the untwisted 256 x 256 wrapping fractions lie within 3 sigma + 0.01 of the three published values; (c) the out-plus-in arm exponent (least squares of log P(both >= R) on log R over R = 16, 32, ..., 512) differs from 5/24 by more than 3 sigma; (d) the central cyclic fraction lies within 0.005 of 1/2",
+    "candidate_half_bit": "fit the F_sq10 pair averages as E_inf + c/L (weighted least squares over L = 65, 129, 257); the candidate E_inf = 1/2 is accepted when |E_inf - 1/2| <= 3 sigma, rejected otherwise",
+    "candidate_sixteenth": "fit E linearly in the aspect k over (65,260), (65,390), (65,520); x = slope * ln 2 / (2 pi); the candidate x = 1/16 is accepted when |x - 1/16| <= 3 sigma + 0.001, rejected otherwise",
+    "candidate_arms_equal_cluster": "the out-plus-in arm exponent equals beta/nu = 0.19635 within 3 sigma + 0.005: accepted or rejected",
+    "controls": "every twisted row has zero disagreements between the two tests and |contractible - cross| <= 4 sqrt(contractible + cross); bipartite tori are consistent in every sample"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Supported when H_shape, H_rotation, H_family and H_class all hold. Refuted when the family fits (chi-square per degree of freedom < 3), or the dimension lies outside 1.8035 +- 0.05, or an untwisted wrapping fraction is off by more than 0.03, or some family drifts by more than 5 sigma + 0.05 bits. Closed null otherwise. The three candidate tests are reported with either outcome and do not change the verdict.",
+  "resource_budget": {"wall_seconds": 7200, "memory_mib": 4096, "max_vertices": 263169, "threads": 24},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster.",
+  "seeds": "per job: the integer formed by the first 15 hex digits of sha256('family|label|chunk'); arms: the same with the chunk index",
+  "environment": "CPython 3 standard library for orchestration and analysis; sim.c compiled at run time with gcc -O2; 24 worker threads each running one subprocess",
+  "red_team_r0": [
+    "Identifiability: the proved reduction makes consistency exactly an event of the projected cyclic edges; two tests judge every twisted sample and must agree.",
+    "Leakage: published and candidate values enter only the analysis, never the simulation.",
+    "Finite size: two or three sizes per family; drifts are reported; the half-bit and 1/16 candidates use pre-registered extrapolations.",
+    "Multiplicity: one family test, one class test, two scale tests and three candidate tests, with fixed rules.",
+    "Model breadth: the Coulomb-gas family has three free parameters, more than its percolation special case; rejection is therefore meaningful."
+  ],
+  "nonclaims": [
+    "Monte Carlo estimates on finite tori; agreement or disagreement with a formula supports or disfavours it and proves nothing.",
+    "No formula for strongly-connected percolation on tori is claimed.",
+    "Lattices are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Scoping values, published values or candidate values as inputs to the simulation"
+  ]
+}

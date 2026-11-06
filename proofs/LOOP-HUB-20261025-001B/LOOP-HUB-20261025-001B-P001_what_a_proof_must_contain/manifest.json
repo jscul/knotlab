@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-HUB-20261025-001B-P001",
+  "canonical_id": "LOOP-HUB-20261025-001B-P001",
+  "kind": "proof",
+  "ticket": "LOOP-HUB-20261025-001B",
+  "proof": "LOOP-HUB-20261025-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "What a proof of the arm inequality must contain",
+  "status": "Proved",
+  "claim": "For a gadget of a non-windable knot and a linked difference pattern d, the configurations compatible with d inject into those compatible with d xor arm(d), so the arm inequality holds whenever d -> d xor arm(d) is injective, as on trees. For any function on three bits, the arm inequality for the axes u and u + e_i together is equivalent to |minor| <= agree + cross in the table of terminal i against terminals j, k, and to 2F(u)F(u-bar) <= G(A)G(Abar) + the j and k split products, with G (terminal i free) positive on every pattern of a native gadget by co-independence. Explicit gadgets of two or three knots satisfy the arm inequality but fail the bound per partner solution, per image pattern, for one-sided path-flip matchings, and without the agreeing terms, so any proof for gadgets with cycles must be global.",
+  "dependencies": [
+    "LOOP-HUB-20261025-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "exact-obstruction-or-countermodel",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A linked difference pattern whose compatible configurations do not inject as stated.",
+    "A tree gadget on which d -> d xor arm(d) is not injective.",
+    "The symmetric forms are not equivalent to the arm inequality, or G vanishes on some pattern.",
+    "A stored witness does not fail its strengthening, or violates the arm inequality.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-HUB-20261025-001",
+    "epic_path": [
+      "LOOP-HUB-20261025-001"
+    ],
+    "parents": [
+      "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/manifest.json",
+      "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/manifest.json",
+      "experiments/LOOP-HUB-20261025-001A/LOOP-HUB-20261025-001A-E001_arm_violations/contract.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/manifest.json": "9c570505d021ade21d948de329722564f1a4c4fd6b265d2aea24fce533b8c7c4",
+    "proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/manifest.json": "615b57a41534b427073e807666a4477aeff0ce4682e8dcf8b9e6e64b3dd7ca2f",
+    "experiments/LOOP-HUB-20261025-001A/LOOP-HUB-20261025-001A-E001_arm_violations/contract.json": "ef5a14e6c32f6183c0e5bcee1c25e50d6e401a6158ef4e4a16c690edde0ace20"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-HUB-20261025-001B/LOOP-HUB-20261025-001B-P001_what_a_proof_must_contain/manifest.json",
+    "identity": "proofs/LOOP-HUB-20261025-001B/LOOP-HUB-20261025-001B-P001_what_a_proof_must_contain/identity.json",
+    "directory": "proofs/LOOP-HUB-20261025-001B/LOOP-HUB-20261025-001B-P001_what_a_proof_must_contain",
+    "proof": "proofs/LOOP-HUB-20261025-001B/LOOP-HUB-20261025-001B-P001_what_a_proof_must_contain/proof.md",
+    "result": "proofs/LOOP-HUB-20261025-001B/LOOP-HUB-20261025-001B-P001_what_a_proof_must_contain/result.json",
+    "check": "proofs/LOOP-HUB-20261025-001B/LOOP-HUB-20261025-001B-P001_what_a_proof_must_contain/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "arm_proof_requirements_shown": true
+  },
+  "foundation_claim_scope": "Finite gadgets of the open knots; structural statements and explicit witnesses; the arm inequality for gadgets with cycles stays open. No P versus NP claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py (standard library) verifies Lemma 1 on 15,582 linked patterns of 300 gadgets (184 trees), the identities of Proposition 2 on 20,000 random functions and positivity of G on 2,000 gadgets, and the four witnesses exactly; three controls. No human or external review",
+    "level": "V1 prose proof with finite checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-24."
+  }
+}

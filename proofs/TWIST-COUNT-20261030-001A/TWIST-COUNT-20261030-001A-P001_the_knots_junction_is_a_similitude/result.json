@@ -1,0 +1,218 @@
+{
+ "schema_version": 1,
+ "artifact_id": "TWIST-COUNT-20261030-001A-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 14,
+    "mismatched": {}
+   }
+  },
+  "1 the Hadamard form under any signing; one flipped incidence gives #col(H - L)": {
+   "ok": true,
+   "detail": {
+    "Hadamard form": {
+     "cube": {
+      "even subgraphs": 32,
+      "random signings agreeing": "8/8"
+     },
+     "6-prism": {
+      "even subgraphs": 128,
+      "random signings agreeing": "8/8"
+     },
+     "trisum of three cubes": {
+      "even subgraphs": 512,
+      "random signings agreeing": "8/8"
+     }
+    },
+    "one flip": {
+     "trisum of three cubes": {
+      "Kasteleyn signing colourable": false,
+      "incidences where #col(flipped) = #col(H - L)": "24/24"
+     },
+     "6-prism": {
+      "Kasteleyn signing colourable": false,
+      "incidences where #col(flipped) = #col(H - L)": "18/18"
+     }
+    }
+   }
+  },
+  "2 pages: every sign class even and matchgate in the Hadamard basis; untwisted exactly when the split form holds": {
+   "ok": true,
+   "detail": {
+    "cube": {
+     "(even, matchgate, untwisted, split form) -> classes": {
+      "(True, True, False, False)": 4,
+      "(True, True, True, True)": 4
+     }
+    },
+    "6-prism": {
+     "(even, matchgate, untwisted, split form) -> classes": {
+      "(True, True, False, False)": 28,
+      "(True, True, True, True)": 4
+     }
+    },
+    "8-prism": {
+     "(even, matchgate, untwisted, split form) -> classes": {
+      "(True, True, False, False)": 124,
+      "(True, True, True, True)": 4
+     }
+    },
+    "truncated octahedron": {
+     "(even, matchgate, untwisted, split form) -> classes": {
+      "(True, True, False, False)": 2044,
+      "(True, True, True, True)": 4
+     }
+    },
+    "Omni(K2,3)": {
+     "(even, matchgate, untwisted, split form) -> classes": {
+      "(True, True, False, False)": 2044,
+      "(True, True, True, True)": 4
+     }
+    }
+   }
+  },
+  "3 the similitude MGI(W) = +-(alpha^2 + alpha beta + beta^2) MGI(F), for every pattern and sign choice": {
+   "ok": true,
+   "detail": {
+    "symbolic (pattern, leg signs) -> multiplier": {
+     "(0, 0, 0, 1) 00": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 0, 1) 01": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 0, 1) 10": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 0, 1) 11": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 1, 0) 00": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 1, 0) 01": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 1, 0) 10": "alpha**2 + alpha*beta + beta**2",
+     "(0, 0, 1, 0) 11": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 0, 0) 00": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 0, 0) 01": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 0, 0) 10": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 0, 0) 11": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 1, 1) 00": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 1, 1) 01": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 1, 1) 10": "alpha**2 + alpha*beta + beta**2",
+     "(0, 1, 1, 1) 11": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 0, 0) 00": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 0, 0) 01": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 0, 0) 10": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 0, 0) 11": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 1, 1) 00": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 1, 1) 01": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 1, 1) 10": "alpha**2 + alpha*beta + beta**2",
+     "(1, 0, 1, 1) 11": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 0, 1) 00": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 0, 1) 01": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 0, 1) 10": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 0, 1) 11": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 1, 0) 00": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 1, 0) 01": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 1, 0) 10": "alpha**2 + alpha*beta + beta**2",
+     "(1, 1, 1, 0) 11": "alpha**2 + alpha*beta + beta**2"
+    },
+    "random sign choices": {
+     "sign choices with MGI(W) = (-1)^(host and R signs) N MGI(F)": "64/64"
+    },
+    "split forms are even matchgate signatures (all patterns, leg signs)": true
+   }
+  },
+  "4 junctions of two twisted pages leave the matchgate class; with one untwisted page they never do": {
+   "ok": true,
+   "detail": {
+    "cube x cube": {
+     "(kind, matchgate) -> junctions": {
+      "('both twisted', False)": 18,
+      "('both twisted', True)": 12,
+      "('one untwisted', True)": 78
+     },
+     "exclusive crossings": 8
+    },
+    "cube x 6-prism": {
+     "(kind, matchgate) -> junctions": {
+      "('both twisted', False)": 144,
+      "('both twisted', True)": 192,
+      "('one untwisted', True)": 432
+     },
+     "exclusive crossings": 0
+    },
+    "6-prism x 6-prism": {
+     "(kind, matchgate) -> junctions": {
+      "('both twisted', False)": 468,
+      "('both twisted', True)": 750,
+      "('one untwisted', True)": 366
+     },
+     "exclusive crossings": 48
+    },
+    "generic matchgate pages": {
+     "MGI of the junction identically zero": false,
+     "terms": 72
+    }
+   }
+  },
+  "5 junction networks: exact counts; a good root exists iff no square has three twisted branches, and then all junctions are matchgates": {
+   "ok": true,
+   "detail": {
+    "trisum (2, 3, 4)": {
+     "vertices": 28,
+     "planar leaves": 3,
+     "signings": {
+      "Kasteleyn / unbranched / all junctions matchgate": 1,
+      "global / branched / some junction off": 1,
+      "global / unbranched / all junctions matchgate": 2,
+      "local / unbranched / all junctions matchgate": 3,
+      "two leaves / unbranched / all junctions matchgate": 3
+     },
+     "failures": []
+    },
+    "nested (3, 3, 2) | (2, 3)": {
+     "vertices": 36,
+     "planar leaves": 5,
+     "signings": {
+      "Kasteleyn / unbranched / all junctions matchgate": 1,
+      "global / branched / all junctions matchgate": 1,
+      "global / branched / some junction off": 2,
+      "local / unbranched / all junctions matchgate": 3,
+      "two leaves / unbranched / all junctions matchgate": 3
+     },
+     "failures": []
+    },
+    "depth-3 chain": {
+     "vertices": 44,
+     "planar leaves": 7,
+     "signings": {
+      "Kasteleyn / unbranched / all junctions matchgate": 1,
+      "global / branched / some junction off": 3,
+      "local / unbranched / all junctions matchgate": 3,
+      "two leaves / unbranched / all junctions matchgate": 3
+     },
+     "failures": []
+    },
+    "star": {
+     "vertices": 48,
+     "planar leaves": 7,
+     "signings": {
+      "Kasteleyn / unbranched / all junctions matchgate": 1,
+      "global / branched / all junctions matchgate": 1,
+      "global / branched / some junction off": 1,
+      "global / unbranched / all junctions matchgate": 1,
+      "local / unbranched / all junctions matchgate": 3,
+      "two leaves / unbranched / all junctions matchgate": 3
+     },
+     "failures": []
+    }
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "the similitude's sign depends on the host and other-branch incidence signs (both signs occur)": true,
+    "(alpha + beta)^2 is not the multiplier (2, 1: 7 against 9)": true,
+    "no twisted page has the split form": true,
+    "some branched signing has a junction off the matchgate class": true
+   }
+  },
+  "ok": true,
+  "seconds": 4.1
+ }
+}

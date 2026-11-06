@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "artifact_id": "PLAIN-BRACE-20261031-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 10,
+    "mismatched": {}
+   }
+  },
+  "1 Hall's condition on examples: cyclically 4-edge-connected planar cubic bipartite graphs are braces; a cyclic 3-cut is not": {
+   "ok": true,
+   "detail": {
+    "4-prism": {
+     "vertices": 8,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "6-prism": {
+     "vertices": 12,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "8-prism": {
+     "vertices": 16,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "10-prism": {
+     "vertices": 20,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "12-prism": {
+     "vertices": 24,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "flags of K4": {
+     "vertices": 24,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "flags of triangular prism": {
+     "vertices": 36,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "flags of square pyramid": {
+     "vertices": 32,
+     "cyclically 4-edge-connected": true,
+     "brace": true
+    },
+    "two cubes minus a vertex, joined by three edges": {
+     "bipartite cubic": true,
+     "cyclically 4-edge-connected": false,
+     "brace": false
+    }
+   }
+  },
+  "2 the pieces: sites are ladders, sets with a cycle have >= 4 boundary edges (sites, cube junction); glued examples are braces": {
+   "ok": true,
+   "detail": {
+    "site with 1 junctions": {
+     "vertices": 6,
+     "ladder with 3k rungs": true,
+     "fewest boundary edges of a set with a cycle": 4
+    },
+    "site with 2 junctions": {
+     "vertices": 12,
+     "ladder with 3k rungs": true,
+     "fewest boundary edges of a set with a cycle": 4
+    },
+    "site with 3 junctions": {
+     "vertices": 18,
+     "ladder with 3k rungs": true,
+     "fewest boundary edges of a set with a cycle": 4
+    },
+    "cube junction (square edges deleted, host edges as ports)": {
+     "2-edge-connected": true,
+     "fewest boundary edges of a set with a cycle": 4
+    },
+    "a square replaced by the cube junction gives a brace": {
+     "4-prism": true,
+     "6-prism": true,
+     "flags of K4": true
+    }
+   }
+  },
+  "3 weaving: hosts planar and cyclically 4-edge-connected, instances plain and certified Pfaffian": {
+   "ok": true,
+   "detail": {
+    "source is a brace": {
+     "two halves (2-edge cut)": false,
+     "K3,3": true,
+     "Heawood": true
+    },
+    "two halves (2-edge cut) in prism 12, seed 0": {
+     "crossings": 48,
+     "vertices": 708,
+     "signs": 0,
+     "host planar": true,
+     "host cyclically 4-edge-connected": true,
+     "certified Pfaffian": true
+    },
+    "two halves (2-edge cut) in prism 12, seed 1": {
+     "crossings": 64,
+     "vertices": 932,
+     "signs": 0,
+     "host planar": true,
+     "host cyclically 4-edge-connected": true,
+     "certified Pfaffian": true
+    },
+    "two halves (2-edge cut) in truncated octahedron, seed 2": {
+     "crossings": 58,
+     "vertices": 848,
+     "signs": 0,
+     "host planar": true,
+     "host cyclically 4-edge-connected": true,
+     "certified Pfaffian": true
+    },
+    "K3,3 in prism 6, seed 6": {
+     "crossings": 14,
+     "vertices": 214,
+     "signs": 0,
+     "host planar": true,
+     "host cyclically 4-edge-connected": true,
+     "certified Pfaffian": true,
+     "brace (direct test)": true
+    },
+    "Heawood in prism 14, seed 0": {
+     "crossings": 74,
+     "vertices": 1078,
+     "signs": 0,
+     "host planar": true,
+     "host cyclically 4-edge-connected": true,
+     "certified Pfaffian": true
+    }
+   }
+  },
+  "4 single-site interpolation inside woven instances recovers the count with that site restored": {
+   "ok": true,
+   "detail": {
+    "two halves (2-edge cut) in prism 12, site 0": {
+     "recovered": "72614221015678074820152830276166872385127405916744000210556092640",
+     "count with the site restored": 72614221015678074820152830276166872385127405916744000210556092640
+    },
+    "two halves (2-edge cut) in prism 12, site 24": {
+     "recovered": "72815346699537822437692606636660050709297945412309368104956510016",
+     "count with the site restored": 72815346699537822437692606636660050709297945412309368104956510016
+    },
+    "K3,3 in prism 6, site 0": {
+     "recovered": "4367238533419033332",
+     "count with the site restored": 4367238533419033332
+    },
+    "K3,3 in prism 6, site 7": {
+     "recovered": "4017722889015119510",
+     "count with the site restored": 4017722889015119510
+    }
+   }
+  },
+  "5 the frame factor: plain prisms colourable; with every site restored the count factors": {
+   "ok": true,
+   "detail": {
+    "#col of the plain prism C_2n x K2": {
+     "4": 6,
+     "6": 20,
+     "8": 46,
+     "10": 122,
+     "12": 324,
+     "14": 842,
+     "16": 2206,
+     "18": 5780,
+     "20": 15126
+    },
+    "every site restored = #col(source) #col(frame)": [
+     8424,
+     8424
+    ]
+   }
+  },
+  "6 controls fire": {
+   "ok": true,
+   "detail": {
+    "without a frame the 2-edge cut survives (host not cyclically 4-edge-connected)": true,
+    "... and the instance is not a brace": true,
+    "an even number of junctions at one site leaves the host non-planar": true,
+    "crossings without a frame": 21
+   }
+  },
+  "ok": true,
+  "seconds": 50.3
+ }
+}

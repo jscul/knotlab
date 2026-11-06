@@ -1,0 +1,516 @@
+{
+  "artifact_id": "FROZEN-WORLDS-20261020-001B-P001",
+  "checks": {
+    "field_irreducible": true,
+    "theorem_1_world_independence": {
+      "Ledrappier": {
+        "flippable": 0,
+        "same_at_two_worlds": true
+      },
+      "Tseitin": {
+        "flippable": 18,
+        "same_at_two_worlds": true
+      },
+      "Tseitin and gauge together": {
+        "flippable": 0,
+        "same_at_two_worlds": true
+      },
+      "gauge (plaquette)": {
+        "flippable": 18,
+        "same_at_two_worlds": true
+      },
+      "gauge with a shifted copy": {
+        "flippable": 18,
+        "same_at_two_worlds": true
+      }
+    },
+    "theorem_2_knots": {
+      "Ledrappier": {
+        "knotlab_checked": 12,
+        "knotlab_rejected_minimal": 0,
+        "minimal_fixed_supports": 12,
+        "native_knots": 0,
+        "native_variables": 0,
+        "non_minimal_called_knots": 0,
+        "non_minimal_checked": 3,
+        "open_variables": 9,
+        "smallest": 3,
+        "stable": true,
+        "window_variables": 9
+      },
+      "Tseitin": {
+        "knotlab_checked": 13,
+        "knotlab_rejected_minimal": 0,
+        "minimal_fixed_supports": 13,
+        "native_knots": 13,
+        "native_variables": 18,
+        "non_minimal_called_knots": 0,
+        "non_minimal_checked": 2,
+        "open_variables": 18,
+        "smallest": 4,
+        "stable": true,
+        "window_variables": 18
+      },
+      "Tseitin and gauge together": {
+        "knotlab_checked": 40,
+        "knotlab_rejected_minimal": 0,
+        "minimal_fixed_supports": 97,
+        "native_knots": 0,
+        "native_variables": 0,
+        "non_minimal_called_knots": 0,
+        "non_minimal_checked": 10,
+        "open_variables": 18,
+        "smallest": 4,
+        "stable": true,
+        "window_variables": 18
+      },
+      "gauge (plaquette)": {
+        "knotlab_checked": 13,
+        "knotlab_rejected_minimal": 0,
+        "minimal_fixed_supports": 13,
+        "native_knots": 13,
+        "native_variables": 18,
+        "non_minimal_called_knots": 0,
+        "non_minimal_checked": 2,
+        "open_variables": 18,
+        "smallest": 4,
+        "stable": true,
+        "window_variables": 18
+      },
+      "gauge with a shifted copy": {
+        "knotlab_checked": 13,
+        "knotlab_rejected_minimal": 0,
+        "minimal_fixed_supports": 13,
+        "native_knots": 13,
+        "native_variables": 18,
+        "non_minimal_called_knots": 0,
+        "non_minimal_checked": 2,
+        "open_variables": 18,
+        "smallest": 4,
+        "stable": true,
+        "window_variables": 18
+      }
+    },
+    "theorem_3_laws": [
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 16,
+            "upper": 34,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 36,
+            "upper": 62,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 64,
+            "upper": 98,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 16,
+          "4": 36
+        },
+        "generic_rank": 1,
+        "law": "Tseitin",
+        "moves_iff_deficit": true,
+        "rank_deficit": true,
+        "types": 2
+      },
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 16,
+            "upper": 34,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 36,
+            "upper": 62,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 64,
+            "upper": 98,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 16,
+          "4": 36
+        },
+        "generic_rank": 1,
+        "law": "gauge (plaquette)",
+        "moves_iff_deficit": true,
+        "rank_deficit": true,
+        "types": 2
+      },
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 0,
+            "upper": 9,
+            "variables": 25
+          },
+          {
+            "box_radius": 3,
+            "lower": 0,
+            "upper": 13,
+            "variables": 49
+          },
+          {
+            "box_radius": 4,
+            "lower": 0,
+            "upper": 17,
+            "variables": 81
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 0,
+          "4": 0
+        },
+        "generic_rank": 1,
+        "law": "Ledrappier",
+        "moves_iff_deficit": true,
+        "rank_deficit": false,
+        "types": 1
+      },
+      {
+        "constraints": 2,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 0,
+            "upper": 18,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 0,
+            "upper": 26,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 0,
+            "upper": 34,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 0,
+          "4": 0
+        },
+        "generic_rank": 2,
+        "law": "Tseitin and gauge together",
+        "moves_iff_deficit": true,
+        "rank_deficit": false,
+        "types": 2
+      },
+      {
+        "constraints": 2,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 16,
+            "upper": 34,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 36,
+            "upper": 62,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 64,
+            "upper": 98,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 16,
+          "4": 36
+        },
+        "generic_rank": 1,
+        "law": "gauge with a shifted copy",
+        "moves_iff_deficit": true,
+        "rank_deficit": true,
+        "types": 2
+      },
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 0,
+            "upper": 13,
+            "variables": 25
+          },
+          {
+            "box_radius": 3,
+            "lower": 0,
+            "upper": 19,
+            "variables": 49
+          },
+          {
+            "box_radius": 4,
+            "lower": 0,
+            "upper": 25,
+            "variables": 81
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 0,
+          "4": 0
+        },
+        "generic_rank": 1,
+        "law": "random law 0 (1 types, 1 constraints)",
+        "moves_iff_deficit": true,
+        "rank_deficit": false,
+        "types": 1
+      },
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 0,
+            "upper": 13,
+            "variables": 25
+          },
+          {
+            "box_radius": 3,
+            "lower": 0,
+            "upper": 19,
+            "variables": 49
+          },
+          {
+            "box_radius": 4,
+            "lower": 0,
+            "upper": 25,
+            "variables": 81
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 0,
+          "4": 0
+        },
+        "generic_rank": 1,
+        "law": "random law 1 (1 types, 1 constraints)",
+        "moves_iff_deficit": true,
+        "rank_deficit": false,
+        "types": 1
+      },
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 15,
+            "upper": 35,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 35,
+            "upper": 63,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 63,
+            "upper": 99,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 15,
+          "4": 35
+        },
+        "generic_rank": 1,
+        "law": "random law 2 (2 types, 1 constraints)",
+        "moves_iff_deficit": true,
+        "rank_deficit": true,
+        "types": 2
+      },
+      {
+        "constraints": 1,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 16,
+            "upper": 34,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 36,
+            "upper": 62,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 64,
+            "upper": 98,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 16,
+          "4": 36
+        },
+        "generic_rank": 1,
+        "law": "random law 3 (2 types, 1 constraints)",
+        "moves_iff_deficit": true,
+        "rank_deficit": true,
+        "types": 2
+      },
+      {
+        "constraints": 2,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 0,
+            "upper": 18,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 0,
+            "upper": 24,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 0,
+            "upper": 30,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 0,
+          "4": 0
+        },
+        "generic_rank": 2,
+        "law": "random law 4 (2 types, 2 constraints)",
+        "moves_iff_deficit": true,
+        "rank_deficit": false,
+        "types": 2
+      },
+      {
+        "constraints": 2,
+        "entropy": [
+          {
+            "box_radius": 2,
+            "lower": 0,
+            "upper": 10,
+            "variables": 50
+          },
+          {
+            "box_radius": 3,
+            "lower": 0,
+            "upper": 14,
+            "variables": 98
+          },
+          {
+            "box_radius": 4,
+            "lower": 0,
+            "upper": 18,
+            "variables": 162
+          }
+        ],
+        "finite_moves_by_radius": {
+          "3": 0,
+          "4": 0
+        },
+        "generic_rank": 2,
+        "law": "random law 5 (2 types, 2 constraints)",
+        "moves_iff_deficit": true,
+        "rank_deficit": false,
+        "types": 2
+      }
+    ]
+  },
+  "claim": "For a locally finite GF(2)-linear law: (1) a parity is changed by a finite change at one solution exactly when at every solution, exactly when some finitely supported homogeneous solution changes it, so nativity does not depend on the world and a linear law is frozen everywhere or has the same finite moves everywhere; (2) a finite set of at least three variables carries a K1-K3 knot exactly when it is a minimal support of a fixed parity, and the knot is native under the source-aware reading exactly when every variable lies in the support of a finite move, so a frozen law has knots but no native knot; (3) a shift-invariant law on Z^d with n variable types has finitely supported homogeneous solutions exactly when its polynomial matrix has rank below n, exactly when its solution space has positive topological entropy. On Z^2, Tseitin and the gauge law have native loops and native knots, while Ledrappier's law and the combined Tseitin-gauge law are frozen and have knots but no native knot.",
+  "controls": {
+    "nativity_from_boundary_supported_solutions": {
+      "law": "Ledrappier",
+      "native_knots": 12,
+      "rejected": true
+    },
+    "rank_at_a_point_where_entries_vanish": {
+      "law": "Tseitin and gauge together",
+      "rank": 0,
+      "rejected": true
+    },
+    "world_independence_on_a_non_linear_law": {
+      "flat_world_flippable": true,
+      "plane_world_flippable": false,
+      "rejected": true,
+      "same_at_two_worlds": false
+    }
+  },
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "failures": [],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "proof": "FROZEN-WORLDS-20261020-001B-P001",
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "linear_knots_are_minimal_fixed_supports_proved": true,
+    "linear_nativity_world_independent_proved": true,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_loops_iff_rank_deficit_iff_positive_entropy_proved": true,
+    "native_loops_question_decided": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "FROZEN-WORLDS-20261020-001B"
+}

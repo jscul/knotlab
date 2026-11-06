@@ -1,0 +1,199 @@
+[21s] cubic graphs on 4-10 vertices: 27
+[22s] sampler control on 10 vertices: 19 classes after 215 draws, 0 more after 5000; all match exhaustive classes: True
+[30s] 12 vertices: 85 classes after 1591 draws; 0 new in 20000 more
+[33s] depth certificates on 12-vertex cubic graphs done
+[33s] connected graphs on 3 vertices: 2
+[33s] connected graphs on 4 vertices: 6
+[33s] connected graphs on 5 vertices: 21
+[35s] connected graphs on 6 vertices: 112
+[41s] sampled graphs done
+{
+ "predictions": {
+  "P1": true,
+  "P2": true,
+  "P3": true,
+  "P4": true,
+  "P5": true
+ },
+ "controls": {
+  "sampler_recovers_the_19_on_10_vertices": true,
+  "no_new_class_on_12_vertices_after_reaching_85": true,
+  "single_edge_has_tgw_equal_to_cw": true,
+  "cw_in_place_of_cw_plus_one_fails": true,
+  "cw_plus_two_in_place_of_cw_plus_one_fails": true,
+  "sweep_with_a_step_removed_fails": true
+ },
+ "counts": {
+  "graphs": 1453,
+  "max_degree_at_most_3": 174,
+  "cubic_12": 85,
+  "draws_to_reach_85": 1591,
+  "families": {
+   "cubic": 112,
+   "small": 141,
+   "4-regular": 600,
+   "gnp": 600
+  }
+ },
+ "gaps": [
+  {
+   "family": "4-regular",
+   "max_degree": 4,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 600
+  },
+  {
+   "family": "cubic",
+   "max_degree": 3,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 112
+  },
+  {
+   "family": "gnp",
+   "max_degree": 2,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 1
+  },
+  {
+   "family": "gnp",
+   "max_degree": 3,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 14
+  },
+  {
+   "family": "gnp",
+   "max_degree": 4,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 33
+  },
+  {
+   "family": "gnp",
+   "max_degree": 4,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 94
+  },
+  {
+   "family": "gnp",
+   "max_degree": 5,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 20
+  },
+  {
+   "family": "gnp",
+   "max_degree": 5,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 217
+  },
+  {
+   "family": "gnp",
+   "max_degree": 6,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 1
+  },
+  {
+   "family": "gnp",
+   "max_degree": 6,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 105
+  },
+  {
+   "family": "gnp",
+   "max_degree": 6,
+   "monotone_minus_cw": 3,
+   "toggle_minus_cw": 3,
+   "graphs": 59
+  },
+  {
+   "family": "gnp",
+   "max_degree": 7,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 1
+  },
+  {
+   "family": "gnp",
+   "max_degree": 7,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 21
+  },
+  {
+   "family": "gnp",
+   "max_degree": 7,
+   "monotone_minus_cw": 3,
+   "toggle_minus_cw": 3,
+   "graphs": 28
+  },
+  {
+   "family": "gnp",
+   "max_degree": 8,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 2
+  },
+  {
+   "family": "gnp",
+   "max_degree": 8,
+   "monotone_minus_cw": 3,
+   "toggle_minus_cw": 3,
+   "graphs": 4
+  },
+  {
+   "family": "small",
+   "max_degree": 2,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 8
+  },
+  {
+   "family": "small",
+   "max_degree": 3,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 39
+  },
+  {
+   "family": "small",
+   "max_degree": 4,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 18
+  },
+  {
+   "family": "small",
+   "max_degree": 4,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 42
+  },
+  {
+   "family": "small",
+   "max_degree": 5,
+   "monotone_minus_cw": 1,
+   "toggle_minus_cw": 1,
+   "graphs": 6
+  },
+  {
+   "family": "small",
+   "max_degree": 5,
+   "monotone_minus_cw": 2,
+   "toggle_minus_cw": 2,
+   "graphs": 28
+  }
+ ]
+}
+signal
+
+real	0m40.785s
+user	0m40.757s
+sys	0m0.020s

@@ -1,0 +1,98 @@
+{
+ "artifact_id": "STRIP-RELAY-20261103-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/manifest.json": "Proved",
+     "proofs/PHASE-HALO-20261103-001B/PHASE-HALO-20261103-001B-P001_the_ladder_and_grid_laws/result.json": "passed",
+     "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/manifest.json": "Proved",
+     "proofs/STRIP-RELAY-20261103-001A/STRIP-RELAY-20261103-001A-P001_heights_and_reduction/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the rings: on rings over 16- to 64-cycles spliced onto the 64-point grid, exactly one attachment point creates beyond distance 3 off the faces around it; it is one of the ring's three cut points, and it creates at k - 3 ring lines": {
+   "info": {
+    "ring over a 16-cycle": {
+     "far lines it creates at off those faces": 5,
+     "k - 3": 5,
+     "points": 79,
+     "points creating off the faces around them": 1,
+     "that point is a cut point": true
+    },
+    "ring over a 24-cycle": {
+     "far lines it creates at off those faces": 9,
+     "k - 3": 9,
+     "points": 87,
+     "points creating off the faces around them": 1,
+     "that point is a cut point": true
+    },
+    "ring over a 32-cycle": {
+     "far lines it creates at off those faces": 13,
+     "k - 3": 13,
+     "points": 95,
+     "points creating off the faces around them": 1,
+     "that point is a cut point": true
+    },
+    "ring over a 48-cycle": {
+     "far lines it creates at off those faces": 21,
+     "k - 3": 21,
+     "points": 111,
+     "points creating off the faces around them": 1,
+     "that point is a cut point": true
+    },
+    "ring over a 64-cycle": {
+     "far lines it creates at off those faces": 29,
+     "k - 3": 29,
+     "points": 127,
+     "points creating off the faces around them": 1,
+     "that point is a cut point": true
+    }
+   },
+   "pass": true
+  },
+  "2 the closed prism: the creating point is the one whose removed line, in the closed prism, has its far corner on the long face opposite it; attached there (ports on corresponding lines), the closed prism's far halo is exactly the far lines of that face (k - 3) and contains the ring's creating lines; so from the cut point the ring shows the ladder's halo": {
+   "info": {
+    "prism over a 16-cycle": {
+     "far halo lines from the corresponding point": 5,
+     "far lines on the opposite long face": 5,
+     "the removed line runs through the point with its far corner on the opposite long face": true,
+     "the ring's off-face creating lines inside the prism's halo": true
+    },
+    "prism over a 24-cycle": {
+     "far halo lines from the corresponding point": 9,
+     "far lines on the opposite long face": 9,
+     "the removed line runs through the point with its far corner on the opposite long face": true,
+     "the ring's off-face creating lines inside the prism's halo": true
+    },
+    "prism over a 32-cycle": {
+     "far halo lines from the corresponding point": 13,
+     "far lines on the opposite long face": 13,
+     "the removed line runs through the point with its far corner on the opposite long face": true,
+     "the ring's off-face creating lines inside the prism's halo": true
+    },
+    "prism over a 48-cycle": {
+     "far halo lines from the corresponding point": 21,
+     "far lines on the opposite long face": 21,
+     "the removed line runs through the point with its far corner on the opposite long face": true,
+     "the ring's off-face creating lines inside the prism's halo": true
+    },
+    "prism over a 64-cycle": {
+     "far halo lines from the corresponding point": 29,
+     "far lines on the opposite long face": 29,
+     "the removed line runs through the point with its far corner on the opposite long face": true,
+     "the ring's off-face creating lines inside the prism's halo": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Pendant rings. A ring (the prism over a 2k-cycle minus one line) spliced onto a grid through one 3-edge cut. (1) The ring law (proved given the reduction lemma, the ladder law and the route criterion): with an opened Fano handle attached at the middle point of the removed line, every ring line sees the closed prism, since the grid acts as the removed line; there the removed line is the point's line whose far corner lies on the long face opposite it, so the far halo on the ring is exactly the far part of that face, k - 3 lines running the whole length of the ring. (2) Checked with the validated pipeline on rings over 16- to 64-cycles spliced onto the 64-point grid: at every attachment point, exactly one point creates beyond distance 3 off the faces around it in the spliced space; it is that cut point, and it creates at k - 3 ring lines (5, 9, 13, 21, 29); in the closed prism its far halo is exactly the far lines of the opposite long face and contains them.",
+ "kind": "proof",
+ "proof": "STRIP-RELAY-20261103-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "STRIP-RELAY-20261103-001B"
+}

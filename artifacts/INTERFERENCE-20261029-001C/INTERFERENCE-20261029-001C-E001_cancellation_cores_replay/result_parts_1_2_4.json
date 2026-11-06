@@ -1,0 +1,173 @@
+{
+ "experiment_id": "INTERFERENCE-20261029-001C-E001",
+ "parts": {
+  "1 eight-square identity": {
+   "settings": 4096,
+   "violations": 0,
+   "costs (log2 rank)": {
+    "crossing 2[x=v][y=u]": {
+     "rows bits": 6.0,
+     "columns bits": 6.0
+    },
+    "row choice": {
+     "rows bits": 3.0,
+     "columns bits": 6.0
+    },
+    "column choice": {
+     "rows bits": 6.0,
+     "columns bits": 3.0
+    }
+   },
+   "sign table is a Hadamard matrix": true,
+   "knotlab check": {
+    "parity hyperedge x+y+u+v=0 (one bit)": {
+     "is_knot": true,
+     "binding": true,
+     "loss_on_erasure": true,
+     "coexistence": true,
+     "minimum_width": 4
+    },
+    "two equalities x=v, y=u": {
+     "is_knot": false,
+     "binding": true,
+     "loss_on_erasure": false,
+     "coexistence": true,
+     "minimum_width": 2
+    }
+   },
+   "control: one flipped sign-table entry, violations": 28,
+   "pass": true
+  },
+  "2 Lemma 2 grouped pieces": {
+   "t=1": {
+    "sum = 2^t [x=v][y=u]": true,
+    "pieces": [
+     {
+      "i": 0,
+      "rank rows": 8,
+      "bound rows 2^": 4,
+      "rank columns": 64,
+      "bound columns 2^": 7,
+      "within": true
+     },
+     {
+      "i": 1,
+      "rank rows": 64,
+      "bound rows 2^": 7,
+      "rank columns": 8,
+      "bound columns 2^": 4,
+      "within": true
+     }
+    ],
+    "seconds": 0.0
+   },
+   "t=2": {
+    "sum = 2^t [x=v][y=u]": true,
+    "pieces": [
+     {
+      "i": 0,
+      "rank rows": 64,
+      "bound rows 2^": 8,
+      "rank columns": 4096,
+      "bound columns 2^": 14,
+      "within": true
+     },
+     {
+      "i": 1,
+      "rank rows": 960,
+      "bound rows 2^": 11,
+      "rank columns": 960,
+      "bound columns 2^": 11,
+      "within": true
+     },
+     {
+      "i": 2,
+      "rank rows": 4096,
+      "bound rows 2^": 14,
+      "rank columns": 64,
+      "bound columns 2^": 8,
+      "within": true
+     }
+    ],
+    "seconds": 147.7
+   },
+   "control: rows and columns costs swapped (t=2) violates a bound": true,
+   "pass": true
+  },
+  "4 swap-matrix construction": {
+   "(r,Q,R)=(2,4,2)": {
+    "r": 2,
+    "Q": 4,
+    "R": 2,
+    "degree": 1,
+    "D": 256,
+    "window": [
+     1,
+     2
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 94,
+    "with nonzero correction": 94,
+    "rank(I - A)": 94,
+    "max disagreements of a nonzero entry": 1,
+    "pass": true
+   },
+   "(r,Q,R)=(2,5,2)": {
+    "r": 2,
+    "Q": 5,
+    "R": 2,
+    "degree": 1,
+    "D": 1024,
+    "window": [
+     1,
+     2
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 349,
+    "with nonzero correction": 349,
+    "rank(I - A)": 349,
+    "max disagreements of a nonzero entry": 1,
+    "pass": true
+   },
+   "(r,Q,R)=(3,3,2)": {
+    "r": 3,
+    "Q": 3,
+    "R": 2,
+    "degree": 1,
+    "D": 729,
+    "window": [
+     1,
+     2
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 243,
+    "with nonzero correction": 243,
+    "rank(I - A)": 243,
+    "max disagreements of a nonzero entry": 1,
+    "pass": true
+   },
+   "(r,Q,R)=(2,6,3)": {
+    "r": 2,
+    "Q": 6,
+    "R": 3,
+    "degree": 2,
+    "D": 4096,
+    "window": [
+     1,
+     2,
+     3
+    ],
+    "A fixes every basis vector with j in the window": true,
+    "exceptional basis vectors": 883,
+    "with nonzero correction": 883,
+    "rank(I - A)": 883,
+    "max disagreements of a nonzero entry": 2,
+    "pass": true
+   },
+   "control: degree R instead of R-1 exceeds the disagreement bound": true,
+   "pass": true
+  }
+ },
+ "all pass": true,
+ "seconds": 363.8
+}

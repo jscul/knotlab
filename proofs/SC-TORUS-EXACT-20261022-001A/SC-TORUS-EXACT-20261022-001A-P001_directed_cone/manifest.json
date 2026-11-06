@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SC-TORUS-EXACT-20261022-001A-P001",
+  "canonical_id": "SC-TORUS-EXACT-20261022-001A-P001",
+  "kind": "proof",
+  "ticket": "SC-TORUS-EXACT-20261022-001A",
+  "proof": "SC-TORUS-EXACT-20261022-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The directed cone of a random orientation on a torus",
+  "status": "Proved",
+  "claim": "For any orientation of a square-lattice torus and any primitive period d, exactly one of: a directed closed walk W with det([W], d) < 0, or a dual directed closed walk of class d. Hence the primitive classes of directed closed walks are exactly the primitive periods of a closed convex cone C, and the dual's are exactly those of its polar; under a twist C is {0}, a line or the plane. For the uniform orientation the law of C is invariant under the polar map and the torus symmetries; on square tori P(no horizontal winding) = P(pure vertical directed cycles both ways), P(positive horizontal winding) = 1 - P(pure horizontal directed cycle), and the conjectured 3/4 is equivalent to P(no directed horizontal winding) = 1/4.",
+  "dependencies": [
+    "NAE-INVARIANT-20261022-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "An orientation and primitive period with both or neither of: a negative-pairing directed closed walk, a dual directed closed walk of that class.",
+    "Realized primitive classes that are not the primitive periods of a convex cone, or dual classes that are not those of the polar.",
+    "A twisted orientation whose realized classes are not symmetric under negation.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "SC-TORUS-EXACT-20261022-001",
+    "epic_path": [
+      "SC-TORUS-EXACT-20261022-001"
+    ],
+    "parents": [
+      "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json": "3dc17f4ab6171f5d61989a43816aca233d401ef04fc8746e7f623e67ce47e0bc"
+  },
+  "paths": {
+    "manifest": "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/manifest.json",
+    "identity": "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/identity.json",
+    "directory": "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone",
+    "proof": "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/proof.md",
+    "result": "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/result.json",
+    "check": "proofs/SC-TORUS-EXACT-20261022-001A/SC-TORUS-EXACT-20261022-001A-P001_directed_cone/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "directional_duality_proved": true,
+    "cone_theorem_proved": true,
+    "three_quarters_proved": false,
+    "half_bit_proved": false
+  },
+  "foundation_claim_scope": "Directed homology of orientations of square-lattice tori and its laws under uniform and twisted random orientations. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies on 9,800 sampled orientations of eight small tori (untwisted 3 x 3, 3 x 4, 4 x 4 and sheared 3 x 3; twisted 3 x 3 with twists (1,0) and (1,1), 4 x 3, sheared 3 x 3) that exactly one of Bellman-Ford negative pairing and a dual walk of class d holds for every primitive period |d| <= 2, that realized classes are the primitive periods of a cone and the dual's of its polar, that twisted cones are {0}, a line or the plane with symmetric classes, polar invariance of the law of cone types, and the two square-torus identities on 5 x 5 by sampling; two controls rejected; searches are confined to a box of the universal cover; no human or external review",
+    "level": "V1 prose proof with exhaustive and sampled checks",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per theorem in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-22."
+  }
+}

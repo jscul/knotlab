@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-PATHS-20261101-001A-P001",
+  "canonical_id": "NATIVE-PATHS-20261101-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-PATHS-20261101-001A",
+  "proof": "NATIVE-PATHS-20261101-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Two kinds of interface: parity across 2-edge cuts, knot against hub across 3-edge cuts",
+  "status": "Proved",
+  "claim": "The knot's spaces have two kinds of interface. Let H be a knot's space (connected cubic system on which not-all-equal fails) and consider a nontrivial cut of its incidence graph (two shores of more than one vertex, every removed edge joining them). (1) Balance: 3(p - l) = a - b gives, for 2 edges, one port and one slot on each shore, and for 3 edges a point side with all three ports and a line side with all three slots. (2) Across every nontrivial 2-edge cut one shore accepts exactly equality and the other exactly disequality on the two channels (non-empty, disjoint, complement-closed), so the shores meet as complementary two-place parity and neither acts as a hub. (3) Across every nontrivial 3-edge cut the point side accepts exactly one antipodal pair {v, v-bar} and the line side exactly its complement (the atom lemma excludes four-state sides and two two-state sides; a signed point closing the line side, with the signed Seymour bound, excludes a two-state line side); exchanging colours on the channels where v is 1 gives equality (a hub) against not-all-equal (the knot). This corrects KNOT-COMPOSE-20261101-001A: its 'compose only through hubs' (Theorem 4(3)) fails wherever a knot's space has a nontrivial 2-edge cut (odd cycles of Fano blocks, the twisted cube, splices containing them), and its 'exactly equality and not-all-equal' (Theorem 4(1)) holds only up to that exchange; its statement that hub-free failure is parity stands. Computed on ten knot's spaces: 40 nontrivial 2-edge cuts (none in splice trees, k(k-1)/2 in a cycle of k blocks, 3 in the twisted cube) and 48 nontrivial 3-edge cuts in five spaces (21 twisted, all in cyclic spaces).",
+  "dependencies": [
+    "KNOT-COMPOSE-20261101-001Z",
+    "KNOT-COUPLING-20261031-001Z",
+    "THREEFOLD-SPACES-20261030-001Z"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A nontrivial 2-edge cut of a cubic incidence graph with unbalanced sides.",
+    "A nontrivial 2-edge cut of a knot's space whose sides are not equality and disequality.",
+    "A nontrivial 3-edge cut of a knot's space whose point side is not one antipodal pair or whose line side is not its complement."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-PATHS-20261101-001",
+    "epic_path": [
+      "NATIVE-PATHS-20261101-001"
+    ],
+    "parents": [
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/cycles_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json",
+      "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json",
+      "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json",
+      "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/cycles_lib.py": "9e91329642a51e6e434a1a6f846cd9aa41b68547be1c832b8b56ebbd1b46e785",
+    "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json": "07f5a91dd9bbcd4256ff0839442ee84ddc92ef9c7e5fe6683f57dfbf9b1306f2",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "b83e1823674625548ab2038389f4c4e10dc6159d6eb57fa5d2ccb4db56e0ddab",
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json": "7273b54abdf8a359005e7248494739a52e4daca11840441cda0ab7da49cc0450",
+    "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json": "57d224add083c26cb78cbc829a3385deb8a4a15a6eee98f7095d4ee1ac28591b",
+    "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json": "224ff5bcd6938a9d2839464e288dbbae31e55fdfd3f17d610f86da2346de5c48",
+    "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json": "753943d1d7b6106753c38843117971e2a7f04a5719f3f85a29147a9de0f3c647"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json",
+    "identity": "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/identity.json",
+    "directory": "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface",
+    "proof": "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/proof.md",
+    "result": "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json",
+    "check": "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "two_interfaces_shown": true
+  },
+  "foundation_claim_scope": "A structural theorem on the interfaces of the knot's spaces; no counting claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-01.",
+    "status": "checked: balance and side relations at every nontrivial 2-edge cut of ten knot's spaces; the atom at both edges of each; side relations at every nontrivial 3-edge cut of five spaces; a colourable control; general proofs in proof.md; no human or external review",
+    "novelty": "The atom lemma (KNOT-COUPLING A), the point lemma (THREEFOLD-AMPLITUDE) and the cycles of Fano blocks (THREEFOLD-SPACES C) are ours; the two-interface statement and the correction are new here."
+  }
+}

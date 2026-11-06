@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "artifact_id": "GENERAL-SIZE-20261020-001B-P001",
+  "canonical_id": "GENERAL-SIZE-20261020-001B-P001",
+  "kind": "proof",
+  "ticket": "GENERAL-SIZE-20261020-001B",
+  "proof": "GENERAL-SIZE-20261020-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Tseitin size on all graphs: an immersion transfer, a polynomial-exponent bound, and a reduction that meets an obstruction",
+  "status": "Proved",
+  "claim": "(1) If a connected graph H is weakly immersed in a connected graph G of maximum degree Delta (edges to edge-disjoint paths, crossings allowed), then for every odd charge on G there is an odd charge on H such that the resolution and PCR size of Tseitin on H is at most 2^O(Delta) times that on G. (2) Every connected graph of treewidth t needs resolution and PCR (characteristic other than 2) size 2^Omega(t^(1/9)/polylog t), from walls (CELL-SIZE-20261020-001) and the Chuzhoy-Tan grid-minor theorem. (3) If every graph of maximum degree 3 and treewidth t has a topological minor of treewidth at least t/polylog t that is cellular (a cell system with bounded parameters and few exceptional edges) or compact (at most treewidth times polylog vertices), then resolution and PCR need size 2^Omega(t/polylog t) for Tseitin on every graph; asking only for immersions does not weaken this hypothesis. (4) On wall networks G(K,w,b), whose bundles reverse blocks of b ports and permute ports inside each block, every topological minor H has tw(H) <= C sqrt(m(|V(H)| + mwb)); with an expander skeleton (treewidth lower bound sketched) a compact minor keeping the treewidth up to a factor lambda forces w <= C lambda^2 b, so the compact case fails at b = sqrt(w). The hypothesis of (3) is not proved.",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "resolution-size",
+    "polynomial-calculus-size",
+    "tseitin-formulas",
+    "graph-immersions"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "inherited-consequence"
+    ]
+  },
+  "failure_conditions": [
+    "On a checked instance the immersion paths are not edge-disjoint, the parity correction fails, the split constraints do not imply the original, or the renamed formula is not equivalent to H's Tseitin formula with odd charge.",
+    "Ordered bundles fail to give a cell system with U empty, L = 6 and detours of length at most 20 on a checked instance.",
+    "The routed ladder minor is not a simple cubic topological minor, or its spectral gap under uniform bundles falls below 0.03, on a checked instance.",
+    "A published statement of immersion monotonicity for Tseitin, of the reduction, or of the wall-network obstruction is found (novelty only)."
+  ],
+  "lineage": {
+    "home_scope": "GENERAL-SIZE-20261020-001",
+    "epic_path": [
+      "GENERAL-SIZE-20261020-001"
+    ],
+    "parents": [
+      "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json",
+      "proofs/CELL-SIZE-20261020-001Z/CELL-SIZE-20261020-001Z-P001_epic_closure/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CELL-SIZE-20261020-001B/CELL-SIZE-20261020-001B-P001_cell_theorem/manifest.json": "14315a305e22b245c25ae8c7b9db6cf8db2bdfc21b22b5ccbbb58d2ad780f720",
+    "proofs/CELL-SIZE-20261020-001Z/CELL-SIZE-20261020-001Z-P001_epic_closure/manifest.json": "bfa4ebb1a3a404b098ede4deda2d9e5a724e4faa07980f4fadf7319791b719b9"
+  },
+  "paths": {
+    "manifest": "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/manifest.json",
+    "identity": "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/identity.json",
+    "directory": "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions",
+    "proof": "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/proof.md",
+    "result": "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/result.json",
+    "check": "proofs/GENERAL-SIZE-20261020-001B/GENERAL-SIZE-20261020-001B-P001_immersions/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "immersion_monotonicity_proved": true,
+    "all_graphs_polynomial_exponent_bound_proved": true,
+    "conditional_reduction_proved": true,
+    "general_resolution_open_problem_resolved": false,
+    "wall_network_surface_bound_proved": true,
+    "wall_network_treewidth_lower_bound_proved": false,
+    "cellular_or_compact_conjecture_proved": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Proof-complexity size bounds for Tseitin formulas; no contact-first claim.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies every step of the immersion transfer on K33 and the Petersen graph immersed in grids (exhaustive split implication, renaming equivalence on 300 random assignments), cell systems of ordered wall networks, an explicit vertex-disjoint routing of the ladder minor with Lanczos spectral gaps, and shortest cycles through scrambled bundles; Proposition 5(iii) is a sketch; no human or external review",
+    "level": "V1 prose proof with executable checks; cites the Chuzhoy-Tan grid-minor theorem (JCTB 2021), the Chekuri-Chuzhoy degree-3 treewidth sparsifier (SODA 2015), the Gilbert-Hutchinson-Tarjan genus separator theorem (1984), the Ben-Sasson-Wigderson and Impagliazzo-Pudlak-Sgall size relations, and CELL-SIZE-20261020-001B-P001 and PC-DEGREE-20261020-001B-P001; no trusted kernel.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "A targeted search on 2026-10-20 found regular resolution 2^Omega(tw) for all graphs up to a polynomial factor (Itsykson-Riazanov-Smirnov 2022; earlier Itsykson-Riazanov-Sagunov-Smirnov and de Colnet-Mengel), bounded-depth Frege 2^(tw^Omega(1/d)) (Galesi et al.), and the Chekuri-Chuzhoy sparsifier with O(k^4) vertices (k^2 best possible); it found no immersion or vertex-identification transfer for Tseitin and no PCR bound for all graphs in terms of treewidth. The reduction and the wall networks were not searched for separately.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-20."
+  }
+}

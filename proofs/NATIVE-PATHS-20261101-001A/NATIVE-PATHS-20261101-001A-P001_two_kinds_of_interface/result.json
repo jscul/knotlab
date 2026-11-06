@@ -1,0 +1,147 @@
+{
+ "artifact_id": "NATIVE-PATHS-20261101-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json": "Proved",
+     "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json": "passed",
+     "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/manifest.json": "Proved",
+     "proofs/KNOT-COUPLING-20261031-001A/KNOT-COUPLING-20261031-001A-P001_the_knots_atom_on_an_edge/result.json": "passed",
+     "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001C/THREEFOLD-SPACES-20261030-001C-P001_odd_cycles_of_fano_planes/manifest.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 ten knot's spaces: Fano, splice chains of 2-4 Fano planes, a star of 4, cycles of 3, 5 and 7 Fano blocks, the twisted cube (43 points) and the 3-cycle spliced into Fano; all connected, cubic, not 2-colourable": {
+   "info": {
+    "3-cycle spliced into Fano": 27,
+    "Fano": 7,
+    "chain of 2": 13,
+    "chain of 3": 19,
+    "chain of 4": 25,
+    "cycle of 3 blocks": 21,
+    "cycle of 5 blocks": 35,
+    "cycle of 7 blocks": 49,
+    "star of 4": 25,
+    "twisted cube": 43
+   },
+   "pass": true
+  },
+  "2 balance: every nontrivial 2-edge cut of the ten spaces has, on each side, as many points as lines, one port point and one slot (3(p - l) = a - b with a + b = 2)": {
+   "info": {
+    "nontrivial 2-edge cuts": {
+     "3-cycle spliced into Fano": 3,
+     "Fano": 0,
+     "chain of 2": 0,
+     "chain of 3": 0,
+     "chain of 4": 0,
+     "cycle of 3 blocks": 3,
+     "cycle of 5 blocks": 10,
+     "cycle of 7 blocks": 21,
+     "star of 4": 0,
+     "twisted cube": 3
+    }
+   },
+   "pass": true
+  },
+  "3 at every nontrivial 2-edge cut of a knot's space one side accepts exactly equality and the other exactly disequality on (port colour, slot value), and cutting either edge alone leaves an exact negation (the atom lemma): complementary two-place parity, no hub": {
+   "info": {
+    "cuts by shore sizes": {
+     "3-cycle spliced into Fano": {
+      "sizes 14/40": 2,
+      "sizes 26/28": 1
+     },
+     "Fano": {},
+     "chain of 2": {},
+     "chain of 3": {},
+     "chain of 4": {},
+     "cycle of 3 blocks": {
+      "sizes 14/28": 3
+     },
+     "cycle of 5 blocks": {
+      "sizes 14/56": 5,
+      "sizes 28/42": 5
+     },
+     "cycle of 7 blocks": {
+      "sizes 14/84": 7,
+      "sizes 28/70": 7,
+      "sizes 42/56": 7
+     },
+     "star of 4": {},
+     "twisted cube": {
+      "sizes 14/72": 3
+     }
+    }
+   },
+   "pass": true
+  },
+  "4 across every nontrivial 3-edge cut the point side accepts one antipodal pair {v, v-bar} (equality up to signs on the channels: a hub) and the line side exactly its complement (not-all-equal up to signs: the knot); v = 000 in splice trees, twisted in cyclic spaces, so KNOT-COMPOSE's 'exactly equality and not-all-equal' holds only up to signs": {
+   "info": {
+    "3-cycle spliced into Fano": {
+     "nontrivial 3-edge cuts": 13,
+     "plain (v = 000)": 7,
+     "twisted (v != 000)": 6
+    },
+    "chain of 3": {
+     "nontrivial 3-edge cuts": 2,
+     "plain (v = 000)": 2
+    },
+    "cycle of 3 blocks": {
+     "nontrivial 3-edge cuts": 12,
+     "plain (v = 000)": 6,
+     "twisted (v != 000)": 6
+    },
+    "star of 4": {
+     "nontrivial 3-edge cuts": 3,
+     "plain (v = 000)": 3
+    },
+    "twisted cube": {
+     "nontrivial 3-edge cuts": 18,
+     "plain (v = 000)": 9,
+     "twisted (v != 000)": 9
+    }
+   },
+   "pass": true
+  },
+  "5 splice trees have no nontrivial 2-edge cut (3-edge-connected); a cycle of k blocks has k(k-1)/2 (every pair of junctions); the twisted cube has 3; so the knot's spaces with cycles compose without hubs, which corrects KNOT-COMPOSE's 'only through hubs'": {
+   "info": {
+    "nontrivial 2-edge cuts": {
+     "3-cycle spliced into Fano": 3,
+     "Fano": 0,
+     "chain of 2": 0,
+     "chain of 3": 0,
+     "chain of 4": 0,
+     "cycle of 3 blocks": 3,
+     "cycle of 5 blocks": 10,
+     "cycle of 7 blocks": 21,
+     "star of 4": 0,
+     "twisted cube": 3
+    }
+   },
+   "pass": true
+  },
+  "6 control: in a colourable cubic system with a 2-edge cut (two K4^(3) joined crosswise) the sides are not both two-place parity, so the parity interface is a property of the knot's spaces": {
+   "info": {
+    "2-edge cuts": 1,
+    "degrees ok": true,
+    "side relation sizes": [
+     [
+      4,
+      4
+     ]
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "The knot's spaces have two kinds of interface. Let H be a knot's space (connected cubic system on which not-all-equal fails) and consider a nontrivial cut of its incidence graph (two shores of more than one vertex, every removed edge joining them). (1) Balance: 3(p - l) = a - b gives, for 2 edges, one port and one slot on each shore, and for 3 edges a point side with all three ports and a line side with all three slots. (2) Across every nontrivial 2-edge cut one shore accepts exactly equality and the other exactly disequality on the two channels (non-empty, disjoint, complement-closed), so the shores meet as complementary two-place parity and neither acts as a hub. (3) Across every nontrivial 3-edge cut the point side accepts exactly one antipodal pair {v, v-bar} and the line side exactly its complement (the atom lemma excludes four-state sides and two two-state sides; a signed point closing the line side, with the signed Seymour bound, excludes a two-state line side); exchanging colours on the channels where v is 1 gives equality (a hub) against not-all-equal (the knot). This corrects KNOT-COMPOSE-20261101-001A: its 'compose only through hubs' (Theorem 4(3)) fails wherever a knot's space has a nontrivial 2-edge cut (odd cycles of Fano blocks, the twisted cube, splices containing them), and its 'exactly equality and not-all-equal' (Theorem 4(1)) holds only up to that exchange; its statement that hub-free failure is parity stands. Computed on ten knot's spaces: 40 nontrivial 2-edge cuts (none in splice trees, k(k-1)/2 in a cycle of k blocks, 3 in the twisted cube) and 48 nontrivial 3-edge cuts in five spaces (21 twisted, all in cyclic spaces).",
+ "kind": "proof",
+ "proof": "NATIVE-PATHS-20261101-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "NATIVE-PATHS-20261101-001A"
+}

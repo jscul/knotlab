@@ -1,0 +1,45 @@
+{
+ "artifact_id": "HUB-GLUE-20261102-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/manifest.json": "Proved",
+     "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 every splice of two census knot spaces up to 13 points (at their first line and point), at every removal off the point side: the three ports are tied (two joint values for every pair), and the solutions are closed under complementing every value": {
+   "info": {
+    "removals off the point side": 200
+   },
+   "pass": true
+  },
+  "2 at every such removal, the circuits meeting both the point side's interior and the line side are exactly the 2-sums (K1 - p) u (K2 - p) of a circuit through the hub on each side, ties included, and none contains a port (all circuits on spaces up to 11 points, circuits up to 7 elements on 12 and 13)": {
+   "info": {
+    "2-sums predicted": 2300,
+    "crossing circuits": 2300,
+    "crossing circuits that contain a port": 0,
+    "mismatches": [],
+    "removals off the point side": 200
+   },
+   "pass": true
+  },
+  "3 the control: joining two OR circuits along a bit (each deficient at one value of the bit only) eliminates to a free set, while joining two knot circuits (not-all-equal, deficient at both values) eliminates to a constrained one: complement symmetry is what makes the held hub compose": {
+   "info": {
+    "OR elimination is free": true,
+    "OR is a circuit through the bit": true,
+    "knot elimination is constrained": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "Through a held hub, emergence composes as a 2-sum. Let a knot space have a simple 3-edge cut with point side P (ports p1, p2, p3) and line side Q, and remove a line M that does not lie in P. (1) The hub holds: on every remaining solution the ports take two complementary all-equal patterns, so they carry one binary value h. (2) The solutions are the join of their P-part and their (Q plus ports)-part along h, and both parts are closed under complementing every value, which flips h; so for every set X of non-port variables the two halves of its projection (h = 0, h = 1) have equal size. (3) Hence a set X u Y, with X in P minus the ports and Y in Q both nonempty, is a circuit of the solutions exactly when X u {p} is a circuit of the P-part and Y u {p} a circuit of the other part, for a port p (any port, since they are tied); and no circuit meeting both P's interior and Q contains a port. The crossing knots are the 2-sum of the two sides' circuits through the hub, ties included: cycle-like composition at the hub that selection leaves. (4) Without complement symmetry this fails: two circuits through a bit, each deficient at one value only, eliminate to a free set. Checked by brute force on every splice of two census knot spaces up to 13 points (one line and point each), at every removal off the point side: the crossing circuits equal the predicted 2-sum exactly.",
+ "kind": "proof",
+ "proof": "HUB-GLUE-20261102-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "HUB-GLUE-20261102-001B"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "LINE-DETECTOR-20261023-001Z-P001",
+  "canonical_id": "LINE-DETECTOR-20261023-001Z-P001",
+  "kind": "proof",
+  "ticket": "LINE-DETECTOR-20261023-001Z",
+  "proof": "LINE-DETECTOR-20261023-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the line-detector epic",
+  "status": "Proved",
+  "claim": "Ledger closing LINE-DETECTOR-20261023-001: one line per conclusion with its novelty label and evidence, the challenged assumptions, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "LINE-DETECTOR-20261023-001A",
+    "LINE-DETECTOR-20261023-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, result or contract changes, the proof is not Proved or its check did not pass, or the experiment's recorded verdict is not partially supported under its frozen contract.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A refuted: a scoping prediction failed; B proved)."
+  ],
+  "lineage": {
+    "home_scope": "LINE-DETECTOR-20261023-001",
+    "epic_path": [
+      "LINE-DETECTOR-20261023-001"
+    ],
+    "parents": [
+      "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/manifest.json",
+      "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/result.json",
+      "experiments/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/contract.json",
+      "artifacts/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/manifest.json": "26c88ef9b1da2878e1be07e2b6cbc230acdb955df73d3aca768828aab8f7d053",
+    "proofs/LINE-DETECTOR-20261023-001B/LINE-DETECTOR-20261023-001B-P001_trichotomy/result.json": "397bab05e231254d24e304fb4a217314dbd16edc045bd3910136af9bae96b04c",
+    "experiments/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/contract.json": "8d1d79dd22486ab21b1b4fb70faeffec3639ce4e39f8c12e3e652e362fc22cfc",
+    "artifacts/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/result.json": "fdb2be2d5394b38ac31c756292d717b09fa3f405f8956217563f7c9a19f1e404"
+  },
+  "paths": {
+    "manifest": "proofs/LINE-DETECTOR-20261023-001Z/LINE-DETECTOR-20261023-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/LINE-DETECTOR-20261023-001Z/LINE-DETECTOR-20261023-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/LINE-DETECTOR-20261023-001Z/LINE-DETECTOR-20261023-001Z-P001_epic_closure",
+    "proof": "proofs/LINE-DETECTOR-20261023-001Z/LINE-DETECTOR-20261023-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/LINE-DETECTOR-20261023-001Z/LINE-DETECTOR-20261023-001Z-P001_epic_closure/result.json",
+    "check": "proofs/LINE-DETECTOR-20261023-001Z/LINE-DETECTOR-20261023-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proof and its passed result and to the frozen contract and the experiment's partially supported result; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proof, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-23."
+  }
+}

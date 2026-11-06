@@ -1,0 +1,360 @@
+{
+ "schema_version": 1,
+ "artifact_id": "THREEFOLD-AMPLITUDE-20261030-001C-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 5,
+    "mismatched": {}
+   }
+  },
+  "1 summing out a vertex at the half-angle leaves sqrt(3) times not-all-equal": {
+   "ok": true,
+   "detail": {
+    "m = 1": {
+     "sum_s exp(i pi s m/6)": "sqrt(3)",
+     "sum_s s exp(i pi s m/6)": "I"
+    },
+    "m = -1": {
+     "sum_s exp(i pi s m/6)": "sqrt(3)",
+     "sum_s s exp(i pi s m/6)": "-I"
+    },
+    "m = 3": {
+     "sum_s exp(i pi s m/6)": "0",
+     "sum_s s exp(i pi s m/6)": "2*I"
+    },
+    "m = -3": {
+     "sum_s exp(i pi s m/6)": "0",
+     "sum_s s exp(i pi s m/6)": "-2*I"
+    }
+   }
+  },
+  "2 the two-way count holds at every line and #col(H) = #col(HT)": {
+   "ok": true,
+   "detail": {
+    "systems": 400,
+    "not colourable": 142,
+    "repeated incidences": 384,
+    "failures": 0,
+    "colourable": 258
+   }
+  },
+  "3 the Ising sums equal sqrt(3)^n #col(H) and i sqrt(3)^(n-1) (#col(H) + 6 N_H(L))": {
+   "ok": true,
+   "detail": [
+    {
+     "system": "Fano plane",
+     "points": 7,
+     "#col": 0,
+     "sum Omega": "0",
+     "inserted sum": "1620*I",
+     "as predicted": true
+    },
+    {
+     "system": "doubled square, one class negated",
+     "points": 2,
+     "#col": 0,
+     "sum Omega": "0",
+     "inserted sum": "12*sqrt(3)*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 0",
+     "points": 4,
+     "#col": 2,
+     "sum Omega": "18",
+     "inserted sum": "42*sqrt(3)*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 1",
+     "points": 5,
+     "#col": 4,
+     "sum Omega": "36*sqrt(3)",
+     "inserted sum": "36*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 2",
+     "points": 4,
+     "#col": 0,
+     "sum Omega": "0",
+     "inserted sum": "0",
+     "as predicted": true
+    },
+    {
+     "system": "random 3",
+     "points": 3,
+     "#col": 2,
+     "sum Omega": "6*sqrt(3)",
+     "inserted sum": "6*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 4",
+     "points": 4,
+     "#col": 0,
+     "sum Omega": "0",
+     "inserted sum": "0",
+     "as predicted": true
+    },
+    {
+     "system": "random 5",
+     "points": 4,
+     "#col": 0,
+     "sum Omega": "0",
+     "inserted sum": "36*sqrt(3)*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 6",
+     "points": 3,
+     "#col": 2,
+     "sum Omega": "6*sqrt(3)",
+     "inserted sum": "6*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 7",
+     "points": 5,
+     "#col": 6,
+     "sum Omega": "54*sqrt(3)",
+     "inserted sum": "270*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 8",
+     "points": 5,
+     "#col": 2,
+     "sum Omega": "18*sqrt(3)",
+     "inserted sum": "234*I",
+     "as predicted": true
+    },
+    {
+     "system": "random 9",
+     "points": 5,
+     "#col": 2,
+     "sum Omega": "18*sqrt(3)",
+     "inserted sum": "126*I",
+     "as predicted": true
+    }
+   ]
+  },
+  "4 one amplitude at every line, equal to the transpose's at every point": {
+   "ok": true,
+   "detail": {
+    "Fano (7)": {
+     "amplitudes at lines": [
+      5
+     ],
+     "transposed, at points": [
+      5
+     ]
+    },
+    "Fano splice (13)": {
+     "amplitudes at lines": [
+      25
+     ],
+     "transposed, at points": [
+      25
+     ]
+    },
+    "Fano composition (19)": {
+     "amplitudes at lines": [
+      125
+     ],
+     "transposed, at points": [
+      125
+     ]
+    },
+    "3-cycle of blocks (21)": {
+     "amplitudes at lines": [
+      125
+     ],
+     "transposed, at points": [
+      125
+     ]
+    },
+    "tripod (22)": {
+     "amplitudes at lines": [
+      125
+     ],
+     "transposed, at points": [
+      125
+     ]
+    },
+    "twisted cube (43)": {
+     "amplitudes at lines": [
+      31250
+     ],
+     "transposed, at points": [
+      31250
+     ]
+    },
+    "3-cycle core": {
+     "amplitudes at lines": [
+      1
+     ],
+     "transposed, at points": [
+      1
+     ]
+    },
+    "doubled square, one class negated": {
+     "amplitudes at lines": [
+      1
+     ],
+     "transposed, at points": [
+      1
+     ]
+    },
+    "cube core, Kasteleyn": {
+     "amplitudes at lines": [
+      2
+     ],
+     "transposed, at points": [
+      2
+     ]
+    },
+    "35-point trisum core, one twist": {
+     "amplitudes at lines": [
+      6
+     ],
+     "transposed, at points": [
+      6
+     ]
+    },
+    "trisum of prisms (2, 3, 3)": {
+     "amplitudes at lines": [
+      13
+     ],
+     "transposed, at points": [
+      13
+     ]
+    },
+    "trisum of prisms (2, 3, 3) glued with a flip": {
+     "amplitudes at lines": [
+      14
+     ],
+     "transposed, at points": [
+      14
+     ]
+    },
+    "trisum of prisms (3, 3, 4) glued with a flip": {
+     "amplitudes at lines": [
+      29
+     ],
+     "transposed, at points": [
+      29
+     ]
+    },
+    "trisum of prisms (4, 4, 4)": {
+     "amplitudes at lines": [
+      36
+     ],
+     "transposed, at points": [
+      36
+     ]
+    }
+   }
+  },
+  "5 not colourable <=> sign-nonsingular, and then minimally so": {
+   "ok": true,
+   "detail": {
+    "connected systems": 233,
+    "not colourable": 24,
+    "dictionary fails": 0,
+    "not colourable but a line deletion is not colourable": 0
+   }
+  },
+  "6 the law on spaces with trisum glue; Tutte matchings the same for white and black outer triangles": {
+   "ok": true,
+   "detail": {
+    "space with trisum glue (2, 2, 3)": {
+     "points": 62,
+     "braces": {
+      "heawood": 8,
+      "doubled square": 4,
+      "other": 1
+     },
+     "product": 3515625,
+     "law at two corners (exact, lambda(0))": [
+      [
+       true,
+       [
+        -3515625
+       ]
+      ],
+      [
+       true,
+       [
+        -3515625
+       ]
+      ]
+     ]
+    },
+    "space with trisum glue (2, 3, 3) (flip)": {
+     "points": 90,
+     "braces": {
+      "heawood": 12,
+      "doubled square": 6,
+      "other": 1
+     },
+     "product": 3417968750,
+     "law at two corners (exact, lambda(0))": [
+      [
+       true,
+       [
+        -3417968750
+       ]
+      ],
+      [
+       true,
+       [
+        -3417968750
+       ]
+      ]
+     ]
+    },
+    "Tutte matchings of planar braces": {
+     "cube": {
+      "outer white triangles": [
+       2
+      ],
+      "outer black triangles": [
+       2
+      ]
+     },
+     "hexagonal prism": {
+      "outer white triangles": [
+       3
+      ],
+      "outer black triangles": [
+       3
+      ]
+     },
+     "truncated octahedron": {
+      "outer white triangles": [
+       16
+      ],
+      "outer black triangles": [
+       16
+      ]
+     }
+    }
+   }
+  },
+  "7 controls fire": {
+   "ok": true,
+   "detail": {
+    "a colourable connected cubic system has different counts at different lines (8, 11, 13)": true,
+    "there the extra terms #col(H) and R(L) are nonzero, and the two-way count still holds": true,
+    "a disconnected non-colourable system has two amplitudes (connectivity is needed)": true,
+    "at the knot's own angle pi/3 summing out gives 1 and -2, not a constraint": true
+   }
+  },
+  "ok": true,
+  "seconds": 11.9
+ }
+}

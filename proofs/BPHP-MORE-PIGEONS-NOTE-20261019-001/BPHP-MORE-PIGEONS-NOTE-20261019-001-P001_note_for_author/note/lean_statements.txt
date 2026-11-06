@@ -1,0 +1,33 @@
+/-- A graph on `v` vertices: a symmetric adjacency relation without loops. -/
+structure Graph (v : ℕ) where
+  Adj : Fin v → Fin v → Prop
+  symm : ∀ {u w : Fin v}, Adj u w → Adj w u
+  loopless : ∀ u : Fin v, ¬ Adj u u
+
+/-- The bit encoding of colouring `G` with the `2^ℓ` labels: for every edge `u < w` and
+every label `z`, the clause "`u` and `w` do not both carry `z`". -/
+def bitColouringInitials {v : ℕ} (G : Graph v) (ℓ : ℕ) :
+    Set (FiniteParityClause (BitVar v ℓ)) :=
+  {C | ∃ u w : Fin v, u < w ∧ G.Adj u w ∧ ∃ z : BitLabel ℓ, C = usualCNFClause u w z}
+
+/-- Every refutation of bit-PHP with `m` pigeons and `2^ℓ` holes is long, for every `m` in the range. -/
+theorem bitPHP_more_pigeons : ∀ ℓ ≥ 32, ∀ m : ℕ, 2^ℓ + 1 ≤ m → 8192*m*ℓ^2*(2*ℓ+5) ≤ (2^ℓ)^2 →
+    ∀ {S : ℕ} (C : Fin S → FiniteParityClause (BitVar m ℓ))
+    (_dag : AffineDAG (usualBitPHPInitials m ℓ) C) (finish : Fin S), C finish = ∅ →
+    Real.exp ((((2^ℓ:ℕ):ℝ))^2/(8192*(m:ℝ)*(ℓ:ℝ)^2)) < (S:ℝ)
+
+/-- The transfer keeps the number of lines and the empty final line. -/
+theorem colouring_refutation_transfer {v m ℓ S : ℕ} (G : Graph v) (f : Fin v → Fin m)
+    (hf : ∀ u w, G.Adj u w → f u ≠ f w) (C : Fin S → FiniteParityClause (BitVar v ℓ))
+    (_dag : AffineDAG (bitColouringInitials G ℓ) C) (finish : Fin S) (hempty : C finish = ∅) :
+    ∃ (C' : Fin S → FiniteParityClause (BitVar m ℓ)) (_ : AffineDAG (usualBitPHPInitials m ℓ) C'),
+      C' finish = ∅
+
+/-- Every refutation of the bit encoding of `2^ℓ`-colouring `G` is long, whenever `G` has a
+proper colouring with a number of classes `m` in the range of `bitPHP_more_pigeons`. -/
+theorem bitColouring_more_pigeons : ∀ ℓ ≥ 32, ∀ {v : ℕ} (G : Graph v) (m : ℕ)
+    (f : Fin v → Fin m), (∀ u w, G.Adj u w → f u ≠ f w) →
+    2^ℓ + 1 ≤ m → 8192*m*ℓ^2*(2*ℓ+5) ≤ (2^ℓ)^2 →
+    ∀ {S : ℕ} (C : Fin S → FiniteParityClause (BitVar v ℓ))
+    (_dag : AffineDAG (bitColouringInitials G ℓ) C) (finish : Fin S), C finish = ∅ →
+    Real.exp ((((2^ℓ:ℕ):ℝ))^2/(8192*(m:ℝ)*(ℓ:ℝ)^2)) < (S:ℝ)

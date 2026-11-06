@@ -1,0 +1,44 @@
+HM K4 n=2: none (0.0s)
+HM K4 n=3: found (0.3s)
+HM L223 n=2: none (0.0s)
+HM L223 n=3: none (0.0s)
+HM L223 n=4: none (0.1s)
+HM L223 n=5: none (0.1s)
+HM L223 n=6: none (0.2s)
+HM L233 n=2: none (0.0s)
+HM L233 n=3: none (0.0s)
+HM L233 n=4: none (0.1s)
+HM L233 n=5: none (0.1s)
+HM L233 n=6: none (0.1s)
+chains K4 block (all but 000): {'ternary_polymorphisms': 38, 'quaternary_polymorphisms': 944, 'hm_chain': True, 'day_chain': True}
+chains L223 block (all but 001): {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}
+chains L233 block (all but 011): {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}
+chains K6 fibre (not exactly two ones): {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}
+chains parity (control): {'ternary_polymorphisms': 8, 'quaternary_polymorphisms': 16, 'hm_chain': True, 'day_chain': True}
+HM K6 n=2: none
+HM K6 n=3: none
+Mal'tsev on tops K4: {'found': True, 'status': 'found', 'derived_proper_equivalences': 1, 'largest_is_top': True, 'seconds': 0.5}
+Mal'tsev on tops L223: {'found': True, 'status': 'found', 'derived_proper_equivalences': 2, 'largest_is_top': True, 'seconds': 0.5}
+Mal'tsev on tops L233: {'found': True, 'status': 'found', 'derived_proper_equivalences': 2, 'largest_is_top': True, 'seconds': 0.5}
+Mal'tsev on tops K6: {'found': True, 'status': 'found', 'derived_proper_equivalences': 2, 'largest_is_top': True, 'seconds': 4.8}
+Mal'tsev on tops K4x4: {'found': True, 'status': 'found', 'derived_proper_equivalences': 2, 'largest_is_top': True, 'seconds': 183.2}
+dressings: {'000': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '100': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '010': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '110': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '001': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '101': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '011': {'ternary_polymorphisms': 9, 'quaternary_polymorphisms': 17, 'hm_chain': False, 'day_chain': False}, '111': {'ternary_polymorphisms': 256, 'quaternary_polymorphisms': 65536, 'hm_chain': True, 'day_chain': True}}
+controls (Mal'tsev): {'Z6': 'found', 'Z2xZ2': 'found', 'Boolean neither-knot': 'none'}
+{
+ "predictions": {
+  "H1": true,
+  "H2": true,
+  "H3": true,
+  "H4": true,
+  "H5": true
+ },
+ "controls": {
+  "C1_Z6_maltsev": true,
+  "C2_Z2xZ2_maltsev": true,
+  "C3_neither_knot_not_maltsev": true,
+  "C4_parity_chains": true
+ },
+ "signal": true,
+ "seconds": 473.1
+}
+exit 0

@@ -1,0 +1,131 @@
+{
+ "artifact_id": "FACE-CLAIM-20261103-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/manifest.json": "Proved",
+     "proofs/FACE-CLAIM-20261103-001A/FACE-CLAIM-20261103-001A-P001_the_reading_lemma_and_the_claim_rule/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the spaces: up to isomorphism, 24 non-planar knot spaces (the census's two and the splices of the Fano plane with planar census spaces, both ways), each failing and minimally so; on the ladder the bottom port's opposite face and the other ports' own arc are the two long faces": {
+   "info": {
+    "ladder: corners of the face opposite the bottom port, and of the own arc between the other two": [
+     10,
+     10
+    ],
+    "spaces with 10 points": 2,
+    "spaces with 12 points": 2,
+    "spaces with 13 points": 6,
+    "spaces with 14 points": 12,
+    "spaces with 7 points": 1,
+    "spaces with 8 points": 1
+   },
+   "pass": true
+  },
+  "2 the census: on the ladder, every far halo line lies on the bottom face (the bottom port's opposite face) or the top face (the own arc of the other two ports); the faces used depend only on which port is at the bottom; nine signatures occur": {
+   "info": {
+    "(handle, port order) cases": 1830,
+    "handles (space, removed line)": 305,
+    "signatures by construction and part of the removed line": {
+     "a planar space minus a line spliced into the Fano plane, Fano": {
+      "OW OW OW": 44
+     },
+     "a planar space minus a line spliced into the Fano plane, cut": {
+      "O- OW OW": 33
+     },
+     "a planar space minus a line spliced into the Fano plane, glue": {
+      "-- -- --": 68
+     },
+     "census 21, atom": {
+      "O- O- O-": 7
+     },
+     "census 58, atom": {
+      "O- O- O-": 2,
+      "O- O- OW": 6
+     },
+     "the Fano plane minus a line spliced into a planar space, Fano": {
+      "O- O- O-": 66
+     },
+     "the Fano plane minus a line spliced into a planar space, cut": {
+      "-- -- --": 1,
+      "-- -- O-": 32
+     },
+     "the Fano plane minus a line spliced into a planar space, glue": {
+      "-- -- --": 24,
+      "-- -- -W": 5,
+      "-- -- O-": 1,
+      "-- -W -W": 10,
+      "-W -W -W": 6
+     }
+    },
+    "signatures: one entry per bottom port, O = opposite face used, W = own arc used": {
+     "-- -- --": 93,
+     "-- -- -W": 5,
+     "-- -- O-": 33,
+     "-- -W -W": 10,
+     "-W -W -W": 6,
+     "O- O- O-": 75,
+     "O- O- OW": 6,
+     "O- OW OW": 33,
+     "OW OW OW": 44
+    }
+   },
+   "pass": true
+  },
+  "3 the claim rule and its port form agree with the pipeline on every handle, port order and face": {
+   "info": {
+    "opposite face: claim rule False, pipeline False": 816,
+    "opposite face: claim rule True, pipeline True": 1014,
+    "opposite face: port form False, pipeline False": 816,
+    "opposite face: port form True, pipeline True": 1014,
+    "own face: claim rule False, pipeline False": 1336,
+    "own face: claim rule True, pipeline True": 494,
+    "own face: port form False, pipeline False": 1336,
+    "own face: port form True, pipeline True": 494
+   },
+   "pass": true
+  },
+  "4 the Fano plane: every removal meets the removed line at one port a; pairs that pin one allowed pattern pin a class-a pattern; every single pin excludes exactly one allowed pattern of each other class, on different values of those two ports, and at most one of class a. So a single pin always kills one claim of each own arc at a (one pattern each), and never a whole claim of the face opposite a (two patterns sharing the other two ports)": {
+   "info": {
+    "... of the class of the port the removal meets": 336,
+    "pairs pinning one allowed pattern": 336,
+    "single pins": 336,
+    "single pins excluding one pattern of each other class (and at most one of the met port's), on different values of those two ports": 336
+   },
+   "pass": true
+  },
+  "5 census 58: its lines (5, 7, 3) and (7, 0, 3) share two points; the own arc is used exactly when the bottom port is one of their third points 0 and 5, and the opposite face always": {
+   "info": {
+    "(line, order) cases": 48,
+    "cases with the own arc used exactly when the bottom port is 0 or 5": 48,
+    "the two lines": [
+     [
+      5,
+      7,
+      3
+     ],
+     [
+      7,
+      0,
+      3
+     ]
+    ],
+    "their third points": [
+     0,
+     5
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "The census of handles. Up to isomorphism there are 24 non-planar knot spaces among the census's two (the Fano plane and census 58) and the splices of the Fano plane with the planar census spaces, both ways; minus each line they give 305 handles, each attached at a ladder in all six orders of its ports (1,830 cases, validated pipeline). (1) Every far halo line lies on the face opposite the port joined to the ladder's third line (the bottom port) or on the own arc of the other two ports; which faces are used depends only on the bottom port. Nine signatures occur (one entry per bottom port): no face 93, opposite at every port 75, both at every port 44, opposite at one port 33, opposite at one and both at two 33, own at two 10, opposite at every port and own at one 6, own at every port 6, own at one 5. Where the removed line sits largely decides it: lines inside a Fano atom read like the Fano plane, the intact Fano lines of a planar space spliced into the Fano plane read both faces at every port, glue lines mostly read nothing. (2) The claim rule of ticket A and its form in the handle's ports alone agree with the pipeline on all 3,660 (case, face) pairs: the opposite face of port c is used exactly when some removal and pair of handle points pin one class-c pattern while each point alone keeps both disagreeing values of the other two ports; the own arc of the other two is used exactly when a pair pins patterns of their classes with one of them fixed while each point alone keeps both class-c patterns. (3) The Fano plane (proved, with a finite check): every removal meets the removed line at one port a; pairs that pin one pattern pin a class-a pattern (336 of 336), and every single pin excludes exactly one pattern of each other class, on different values of those two ports, and at most one of class a (336 of 336). So it never uses an own arc (by the route direction of the claim rule) and uses the opposite face at every port (computed). (4) Census 58 uses the own arc exactly when the bottom port is 0 or 5, the third points of its two lines sharing the points 3 and 7 (48 of 48).",
+ "kind": "proof",
+ "proof": "FACE-CLAIM-20261103-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FACE-CLAIM-20261103-001B"
+}

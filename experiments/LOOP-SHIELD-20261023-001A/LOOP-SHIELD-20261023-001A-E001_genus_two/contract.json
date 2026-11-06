@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LOOP-SHIELD-20261023-001A-E001",
+  "ticket": "LOOP-SHIELD-20261023-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "ODD-LOOP-20261023-001B-P001 proved the odd-loop identity on every torus by a wall involution whose seam can carry only the twist dual to the loop. Scratch scoping with the same counting code: on the 24-edge symmetric L-shaped genus-2 surface the eight twists odd on each class with lone odd lines split into the four predicted equal pairs with four different values (3264, 3168, 4544, 4416); on a 28-edge asymmetric surface the pairs are equal with values 0, 8320 and 9600. The counting code reproduces the exact 3 x 3 torus counts of TWIST-RELATIONS-20261022-001A-P001.",
+  "question": "On genus-2 square-tiled surfaces, for every class c with lone odd lines, do the twists a and a + c (adding the twist dual to c) give exactly the same number of orientations whose strong components wind along c and nothing else, while the other twists odd on c give different numbers?",
+  "public_inputs": {
+    "model": "all orientations of the square lattice on an L-shaped genus-2 surface L(A, B, C, D): a bottom block of (A + B) x C cells and a top block of A x D cells over columns 0..A-1, opposite sides glued by translation; each orientation is classified in the 16 twists",
+    "F_check": "the 3 x 3 torus at shear 0 in its four twists, for comparison with TWIST-RELATIONS-20261022-001A-P001; L(2, 1, 2, 1) (16 edges) in full, for the checker's own enumeration; L(2, 2, 2, 2) in full, as the control of the halving",
+    "F_small": "L(2, 2, 2, 2) and L(2, 1, 2, 3): 24 edges",
+    "F_mid": "L(2, 1, 3, 2): 26 edges; L(3, 1, 2, 2), L(2, 2, 3, 1) and L(2, 3, 2, 2): 28 edges",
+    "F_large": "L(3, 2, 2, 2) and L(2, 2, 2, 4): 32 edges"
+  },
+  "definitions": "Homology coordinates of an edge are its signed crossings with the core curves h1 (row 0), h2 (the top row of the top block), v1 (column 0) and v2 (column A); a closed walk g has coordinates (h1.g, h2.g, v1.g, v2.g) = J x, where x are its coordinates in the basis (h1, h2, v1, v2) and J is the unimodular intersection matrix. Twist alpha in {0,1}^4 is the class a = sum alpha_i b_i mod 2 acting by intersection: an edge's twist is alpha.o_e mod 2. A line event for the class c (coordinates J x) in twist alpha: every period of the cyclic edges lies on the line through c and some period is nonzero. alpha is odd on c when alpha.(J x) is odd. Its dual partner is alpha + x mod 2, the twist with the class c added.",
+  "predictions": {
+    "P1_dual_pairs": "theorem-predicted (ticket C): for every surface, every class c with lone odd lines and every twist a odd on c, the counts of a and a + c are exactly equal",
+    "P2_specificity": "mechanism-predicted: for every such class, the counts of the twists odd on c are not all equal (the four dual-pair values are not all the same), because no seam next to the loop can carry another twist",
+    "reported": "every count per twist and class in core-curve coordinates, the even-twist line counts, and the contractible and rank-2 counts",
+    "controls": "per twist, contractible + rank-2 + lines = number of orientations; in twisted sectors a swap-invariant strong component exists exactly when some period is odd under the twist, and the untwisted sector never has one; the half enumeration of L(2, 2, 2, 2) equals its full enumeration; the independent checker reproduces the torus row from TWIST-RELATIONS-20261022-001A-P001 and L(2, 1, 2, 1) by its own enumeration"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Refuted if any dual pair differs (a failure of P1). Supported if P1 holds and, for every class with lone odd lines, the counts of the twists odd on it are not all equal. Partially supported if P1 holds and some class with lone odd lines has all its twists odd on c equal.",
+  "resource_budget": {"wall_seconds": 5400, "memory_mib": 4096, "max_edges": 32, "threads": 24},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster. Rows are written as they finish.",
+  "seeds": "none: the enumeration is exhaustive and deterministic",
+  "environment": "CPython 3 standard library for orchestration and analysis; lineev.c compiled at run time with gcc -O2; 24 worker threads each running one subprocess on a range of bit masks",
+  "red_team_r0": [
+    "Exactness: the counts are exhaustive, so there is no statistical threshold.",
+    "P1 is a consequence of the surface theorem of ticket C; here it also tests the code and the homology coordinates, and a failure would signal an error in one of them.",
+    "P2 could hold by symmetry rather than mechanism, or fail by symmetry: the reflections of an L-shaped table act as plus or minus one on each core curve and the hyperelliptic involution as minus one, so they fix every twist mod 2 and force no equality among the twists odd on a fixed class. The diagonal reflection of a symmetric table exchanges the h and v classes and is used by the checker as a consistency test.",
+    "Halving uses an exact symmetry: reversing every arrow is a global sheet swap of the double cover and keeps every classification. Its control is the full enumeration of L(2, 2, 2, 2).",
+    "Small surfaces: only short cylinders carry lone odd lines at these sizes, and coincidences between unrelated counts are possible; they would show up as equal pair values and are reported."
+  ],
+  "nonclaims": [
+    "Exact counts on eight small genus-2 surfaces; P2 is a finding about them, not a theorem about all surfaces.",
+    "Lattices and surfaces are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected counts as inputs to the enumeration"
+  ]
+}

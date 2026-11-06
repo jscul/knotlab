@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "artifact_id": "NAE-INVARIANT-20261022-001Z-P001",
+  "canonical_id": "NAE-INVARIANT-20261022-001Z-P001",
+  "kind": "proof",
+  "ticket": "NAE-INVARIANT-20261022-001Z",
+  "proof": "NAE-INVARIANT-20261022-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the not-all-equal invariant epic",
+  "status": "Proved",
+  "claim": "Ledger closing NAE-INVARIANT-20261022-001: one line per conclusion with its novelty label and evidence, the challenged assumptions, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "NAE-INVARIANT-20261022-001A",
+    "NAE-INVARIANT-20261022-001B"
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, result or contract changes, the proof is not Proved or its checks did not pass, or the experiment is not supported under its frozen contract.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class (A proved, B supported)."
+  ],
+  "lineage": {
+    "home_scope": "NAE-INVARIANT-20261022-001",
+    "epic_path": [
+      "NAE-INVARIANT-20261022-001"
+    ],
+    "parents": [
+      "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json",
+      "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/result.json",
+      "experiments/NAE-INVARIANT-20261022-001B/NAE-INVARIANT-20261022-001B-E001_shape_scan/contract.json",
+      "artifacts/NAE-INVARIANT-20261022-001B/NAE-INVARIANT-20261022-001B-E001_shape_scan/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json": "3dc17f4ab6171f5d61989a43816aca233d401ef04fc8746e7f623e67ce47e0bc",
+    "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/result.json": "4fc1aa6e29caa596939aa7fcce4d11c71328173478a46bbb009f9a445dc7a9e0",
+    "experiments/NAE-INVARIANT-20261022-001B/NAE-INVARIANT-20261022-001B-E001_shape_scan/contract.json": "3e7f6e7b57ae82799b118e9eafcd0913cd83b6dde3639414351aa9e53b3fa721",
+    "artifacts/NAE-INVARIANT-20261022-001B/NAE-INVARIANT-20261022-001B-E001_shape_scan/result.json": "3c333fb21b18cade2f44d53113ab351af95585f375d200922915826a19acce4b"
+  },
+  "paths": {
+    "manifest": "proofs/NAE-INVARIANT-20261022-001Z/NAE-INVARIANT-20261022-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/NAE-INVARIANT-20261022-001Z/NAE-INVARIANT-20261022-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/NAE-INVARIANT-20261022-001Z/NAE-INVARIANT-20261022-001Z-P001_epic_closure",
+    "proof": "proofs/NAE-INVARIANT-20261022-001Z/NAE-INVARIANT-20261022-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/NAE-INVARIANT-20261022-001Z/NAE-INVARIANT-20261022-001Z-P001_epic_closure/result.json",
+    "check": "proofs/NAE-INVARIANT-20261022-001Z/NAE-INVARIANT-20261022-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proof and its passed result and to the frozen contract and supported result of the experiment; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, result status, note present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-22."
+  }
+}

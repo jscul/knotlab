@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLASSK-DICHOTOMY-20261026-001A-P001",
+  "canonical_id": "CLASSK-DICHOTOMY-20261026-001A-P001",
+  "kind": "proof",
+  "ticket": "CLASSK-DICHOTOMY-20261026-001A",
+  "proof": "CLASSK-DICHOTOMY-20261026-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Class-(K) counts on gadget surgeries are positive sums of sector partition functions",
+  "status": "Proved",
+  "claim": "for p odd, r | p - 1 and G = N x| C_r of class (K), on an r-surgery M whose triple product vanishes except on the permutations of one character triple S of product 1, where it is the gadget tensor of a multigraph Gamma (pattern {a, b, c} distinct: sum over edges of (x_u - x_v) (x) y_e (x) t_e; {s, s, s^-2}, s^3 != 1: sum of ((x_u - x_v) ^ p_e) (x) w_e; {s, s, s}, s^3 = 1: sum of (x_u - x_v) ^ p_e ^ q_e), |Hom(pi1 M, G)| = sum over k in Z/r of c_k lambda_k^n mu_k^m Z_{W_k}(Gamma), where c_k > 0, lambda_k, mu_k are powers of p computed from dimensions, and Z_{W_k} is the partition function of the positive, symmetric, translation-invariant weight W_k(xi, eta) = |K2(xi)| |K3(xi)| p^{-rank(eta o k23 on K2(xi) x K3(xi))} on U_k = B1 + A23*, built from the commutator pairings (k12, k13, k23) of the group with the action raised to the k-th power on the slot eigenspaces; W_k is constant exactly when its three pairings vanish, and a hard pair makes W_1 nonconstant, so the matrix [W_1(x - y)] has rank at least two.",
+  "dependencies": [
+    "COPRIME-CLASS2-20261026-001B",
+    "COPRIME-CLASS2-20261026-001C"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A random class-(K) group, pattern, sector and multigraph on which the direct count of the obstruction kernel from the abstract cohomology data differs from the template count or from the partition-function formula.",
+    "A weight W_k that is not symmetric, not positive, or constant while one of its pairings is nonzero, or nonconstant while all vanish.",
+    "A hard pair whose sector-1 weight matrix has rank one.",
+    "A small surgery and class-(K) group (not Heisenberg) on which the cohomological count formula differs from an independent count of lifts (cocycles to G/A, then the affine lifting system).",
+    "A disjoint union on which a sector term fails to be the product of the terms of its parts.",
+    "A control that cannot fail: with all pairings removed the weights must be constant."
+  ],
+  "lineage": {
+    "home_scope": "CLASSK-DICHOTOMY-20261026-001",
+    "epic_path": [
+      "CLASSK-DICHOTOMY-20261026-001"
+    ],
+    "parents": [
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json",
+      "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/manifest.json",
+      "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/manifest.json": "d374186cfa5b0fda8e0a672d62e8a1605e05693c07cba01576a681871365e049",
+    "proofs/COPRIME-CLASS2-20261026-001B/COPRIME-CLASS2-20261026-001B-P001_heisenberg_counting_splits_into_eigen_triple_forms_that_borromean_moves_steer/result.json": "9903c01f0e540c6feea0ff9e05d5cd16c39bed7a8eac968d685c14bb4bd0b419",
+    "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/manifest.json": "89e52c06980ff147b9a3d6f1f63a33525b51b6d1b7a85b2e30542509d7c096e4",
+    "proofs/COPRIME-CLASS2-20261026-001C/COPRIME-CLASS2-20261026-001C-P001_without_a_hard_pair_counting_is_polynomial_with_bounded_homology/result.json": "d18a83b184cd0813d13a0bd0651020fd2739ebb853d9102dc68f15c2c0ef83b9"
+  },
+  "paths": {
+    "manifest": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/manifest.json",
+    "identity": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/identity.json",
+    "directory": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions",
+    "proof": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/proof.md",
+    "result": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/result.json",
+    "check": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/check.py",
+    "library": "proofs/CLASSK-DICHOTOMY-20261026-001A/CLASSK-DICHOTOMY-20261026-001A-P001_gadget_counts_are_positive_sums_of_sector_partition_functions/ck_lib.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "classk_sector_partition_functions_shown": false
+  },
+  "foundation_claim_scope": "Odd p with r | p - 1; manifolds whose triple product is a gadget tensor (realized in ticket C through COPRIME-CLASS2-20261026-001D section 3). Cited, not reproved: the count formula and graded components of COPRIME-CLASS2-20261026-001C sections 1-3, Poincare duality with local coefficients as in COPRIME-CLASS2-20261026-001B. No complexity claim in this ticket; no P versus NP claim.",
+  "validation": {
+    "status": "checked: the count formula against independent lifting counts (cocycles to G/A, then the affine lifting system by the group law) on 11 surgeries for four non-Heisenberg class-(K) groups, in every sector, also with kappa/2; on gadget models 1274 group-pattern-sector-graph cases where the direct obstruction count, the template count and the partition function agree (122 with nonconstant weights, all three patterns, sector 1 and others), 7 known values from the checkpoint and from COPRIME-CLASS2-20261026-001D, 170 hard pairs, 213 ranks, 934 negative controls, disjoint unions and the assembled formula; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-26."
+  }
+}

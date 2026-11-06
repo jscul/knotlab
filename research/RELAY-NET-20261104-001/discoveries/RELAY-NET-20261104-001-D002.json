@@ -1,0 +1,35 @@
+{
+  "schema_version": 3,
+  "id": "RELAY-NET-20261104-001-D002",
+  "scope_id": "RELAY-NET-20261104-001",
+  "title": "Relays broadcast through hubs and never run upstream",
+  "subject": "Branching, direction and exactness of relays in networks of plane pieces",
+  "conclusion": "A hub receiving an opened handle's relay copies it into every receiver its frozen region reaches, so one handle is read in several grids at once, and no relay ever creates upstream of the handle's piece. Stations with adjacent cut vertices are bypassed without loss; on three small networks exact creation confirms the broadcast, a three-cut chain and a two-cut relay.",
+  "authority_class": "proof",
+  "significance": [
+    "robust_experimental_decision",
+    "exact_obstruction"
+  ],
+  "status": "active",
+  "superseded_by": null,
+  "curated_at": "2026-11-04",
+  "epic_closure": {
+    "ticket_id": "RELAY-NET-20261104-001Z",
+    "artifact_id": "RELAY-NET-20261104-001Z-P001",
+    "manifest_path": "proofs/RELAY-NET-20261104-001Z/RELAY-NET-20261104-001Z-P001_epic_closure/manifest.json",
+    "manifest_sha256": "6b96fcd8369d37e96ca982be8f595f34c6844a25df7de770c32ef3a9e4163e63",
+    "report_path": "proofs/RELAY-NET-20261104-001Z/RELAY-NET-20261104-001Z-P001_epic_closure/proof.md",
+    "dependency_graph_sha256": "c44d3b57a7a587eab089578f3bfa4ff083e29b05685dff9c3a56942d15a43b2e"
+  },
+  "evidence": [
+    {
+      "artifact_id": "RELAY-NET-20261104-001B-P001",
+      "kind": "proof",
+      "ticket_id": "RELAY-NET-20261104-001B",
+      "authority_path": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/manifest.json",
+      "authority_sha256": "cf551d2feea2b4a65a7eb0882d41b6f630cff40304882799a879c798cc3aafe0",
+      "explanation_path": "proofs/RELAY-NET-20261104-001B/RELAY-NET-20261104-001B-P001_broadcast_depth_and_bypasses/proof.md",
+      "explanation_sha256": "bb95dc386fba438936b834f016102fdf1957c364eeba64edd43f190f7faa5e72"
+    }
+  ]
+}

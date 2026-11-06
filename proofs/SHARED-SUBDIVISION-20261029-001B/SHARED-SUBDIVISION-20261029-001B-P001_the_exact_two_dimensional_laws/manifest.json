@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SHARED-SUBDIVISION-20261029-001B-P001",
+  "canonical_id": "SHARED-SUBDIVISION-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "SHARED-SUBDIVISION-20261029-001B",
+  "proof": "SHARED-SUBDIVISION-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The exact two-dimensional laws: Newman-Moore, Baxter-Wu, and line collapse",
+  "status": "Proved",
+  "claim": "On the triangular lattice (up triangles ((i,j),(i+1,j),(i,j+1)), down triangles ((i+1,j),(i,j+1),(i+1,j+1)), colour class (i - j) mod 3), with shared subdivision by k as in SHARED-SUBDIVISION-20261029-001A. Theorem 1 (parity b on up triangles, the Newman-Moore model): solutions on the L-torus are the rows fixed by the L-th power of x -> (1 + S)x + b; for L = 2m the restriction to the coarse sites is onto the coarse solutions with exactly N(m) extensions each and N(2m) = N(m)^2, because (1 + S)^2 = 1 + S^2 over the two-element field; not exact at scale 3 (tori of side 9 and 12); two solutions on the plane differing in finitely many sites are equal. Theorem 2 (parity b on all triangles, Baxter-Wu ground states): opposite vertices of two triangles sharing an edge are equal, so solutions are constant on colour classes (four patterns when 3 divides L, the constant b otherwise); exact at scale 2 with one extension each (2 permutes the classes), not at scale 3; rigid on the plane. Theorem 3 (twisted not-all-equal, the six exact placement pairs, one orbit under the lattice symmetries and complement): walls persist from row to row, so on every torus the solutions are exactly the 2^L configurations constant along one lattice direction; exact at every scale k dividing L with 2^(L - L/k) extensions; no projection onto a triangle is a knot (two of its vertices are equal); not rigid on the plane (half-lines). Proposition 4 (computation): the twelve exact three-excluded pairs have exactly the Baxter-Wu solution sets of one parity on the tori of side 2 to 11, and no patch of radius at most 3 excludes their extra tuple. Corollary 5: every exact rule of ticket A is certified, on the tori of side 2 to 11, to have the solution set of one of these families, and its projection onto a triangle is a knot only in the two parity families.",
+  "dependencies": [
+    "SHARED-SUBDIVISION-20261029-001A"
+  ],
+  "evidence_modes": [
+    "uniform-family-theorem",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A torus of side 2 to 12 on which a family's certified solution set (predicted configurations all satisfying the rule, count equal to the transfer-matrix count) fails.",
+    "A Newman-Moore torus of even side up to 12 where restriction is not onto with N(m) extensions, or a scale-3 torus (side 9 or 12) where it is exact.",
+    "A Baxter-Wu or line-collapse exactness count different from one, respectively 2^(L - L/k), on the stated tori.",
+    "An exact rule of ticket A outside the three families on some torus of side 2 to 11, or a line-constant rule with a triangle projection that is a knot."
+  ],
+  "lineage": {
+    "home_scope": "SHARED-SUBDIVISION-20261029-001",
+    "epic_path": [
+      "SHARED-SUBDIVISION-20261029-001"
+    ],
+    "parents": [
+      "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json",
+      "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/manifest.json": "2bb0f66e2f0e06a7f2f2caeb5fd72f80266169e82841868efe8aacf3355319bb",
+    "proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/result.json": "c9320bdd38dd588456335ee9b99f9681c220299ec0b9fb0dcbe77c4d3fb7e733"
+  },
+  "paths": {
+    "manifest": "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/manifest.json",
+    "identity": "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/identity.json",
+    "directory": "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws",
+    "proof": "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/proof.md",
+    "result": "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/result.json",
+    "check": "proofs/SHARED-SUBDIVISION-20261029-001B/SHARED-SUBDIVISION-20261029-001B-P001_the_exact_two_dimensional_laws/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "exact_two_dimensional_laws_shown": false
+  },
+  "foundation_claim_scope": "The exact rules of SHARED-SUBDIVISION-20261029-001A (copies of one knot class on the triangular lattice, shared subdivision by 2 and 3). Theorems 1 to 3 hold for every torus and on the plane as stated; Proposition 4 and Corollary 5 are certified on tori of side 2 to 11 only. Nativeness uses the canonical source-aware reading (adopted 2026-10-20).",
+  "validation": {
+    "status": "checked: Newman-Moore counts L = 1..12 (automaton and transfer matrix agree), N(2m) = N(m)^2, scale-2 restriction onto with N(m) extensions for even L up to 12, scale 3 not exact (L = 9, 12); Baxter-Wu opposite-vertex lemma, certified solution sets L = 2..12, exact at scale 2 with one extension, not at scale 3; line collapse: one orbit, walls persist, certified 2^L line-constant solution sets L = 2..12, exact at scales 2 and 3 with 2^(L - L/k) extensions, no triangle projection a knot, half-lines in a box; three-excluded rules certified equal to Baxter-Wu sets L = 2..11, extra tuple extends to patches of radius 1 to 3; every exact rule of ticket A in one family; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per result in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

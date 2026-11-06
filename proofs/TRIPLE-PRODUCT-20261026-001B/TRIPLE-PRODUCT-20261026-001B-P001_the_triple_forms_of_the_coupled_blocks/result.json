@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "artifact_id": "TRIPLE-PRODUCT-20261026-001B-P001",
+  "status": "Proved",
+  "checks": {
+    "n = 6": {
+      "dim V": 4,
+      "symmetric": true,
+      "singletons": 1,
+      "block d": 3,
+      "rank D (Bockstein part)": 2,
+      "nonzero alternating entries (this basis)": 1,
+      "block count": 244,
+      "corank distribution": {
+        "0": 24,
+        "1": 39,
+        "3": 1
+      },
+      "total N = block count x 7^singletons": 1708,
+      "ok": true,
+      "seconds": 0.0
+    },
+    "n = 9": {
+      "dim V": 7,
+      "symmetric": true,
+      "singletons": 2,
+      "block d": 5,
+      "rank D (Bockstein part)": 4,
+      "nonzero alternating entries (this basis)": 10,
+      "block count": 8176,
+      "corank distribution": {
+        "0": 360,
+        "1": 498,
+        "2": 120,
+        "3": 45,
+        "5": 1
+      },
+      "total N = block count x 7^singletons": 400624,
+      "ok": true,
+      "seconds": 0.7
+    },
+    "n = 12": {
+      "dim V": 10,
+      "symmetric": true,
+      "singletons": 3,
+      "block d": 7,
+      "rank D (Bockstein part)": 6,
+      "nonzero alternating entries (this basis)": 35,
+      "block count": 367684,
+      "corank distribution": {
+        "0": 4368,
+        "1": 6765,
+        "2": 3360,
+        "3": 1470,
+        "4": 336,
+        "5": 84,
+        "7": 1
+      },
+      "total N = block count x 7^singletons": 126115612,
+      "ok": true,
+      "seconds": 74.4
+    },
+    "alternating part matters": {
+      "d = 3, alternating coefficient s -> count": {
+        "0": 784,
+        "1": 244,
+        "2": 244,
+        "3": 244
+      },
+      "d = 5, no alternating part": 5476,
+      "d = 5, eight random alternating parts": [
+        5476,
+        6016
+      ],
+      "ok": true
+    },
+    "ok": true,
+    "seconds": 75.3
+  }
+}

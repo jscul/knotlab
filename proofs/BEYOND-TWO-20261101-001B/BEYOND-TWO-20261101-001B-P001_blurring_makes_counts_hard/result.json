@@ -1,0 +1,212 @@
+{
+ "artifact_id": "BEYOND-TWO-20261101-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BEYOND-TWO-20261101-001A/BEYOND-TWO-20261101-001A-P001_the_known_cycle_composing_laws_count_easily/manifest.json": "Proved",
+     "proofs/BEYOND-TWO-20261101-001A/BEYOND-TWO-20261101-001A-P001_the_known_cycle_composing_laws_count_easily/result.json": "passed",
+     "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/manifest.json": "Proved",
+     "proofs/KNOT-CIRCUITS-20261020-001B/KNOT-CIRCUITS-20261020-001B-P001_circuit_composition/result.json": "passed",
+     "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/manifest.json": "Proved",
+     "proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P001_selection_and_cycle_like_composition_exclude_each_other/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the blurring lemma on 240 random systems: the blurred system fails exactly when its image does, has exactly the image's constrained sets (so the same circuits), and has as many solutions as the image's solutions weighted by preimage sizes": {
+   "info": {
+    "Z3, 0 doubled (4 values)": {
+     "failing": 42,
+     "solvable": 78
+    },
+    "parity, 0 doubled (3 values)": {
+     "failing": 27,
+     "solvable": 93
+    }
+   },
+   "pass": true
+  },
+  "2 every Mal'tsev operation on three values has at most one nontrivial congruence, so every subalgebra has a unique maximal congruence and every Mal'tsev law on three values composes like cycles (Theorem 1); of the 1020 non-simple ones exactly the 48 with an affine quotient preserve blurred parity": {
+   "info": {
+    "Mal'tsev operations on {0,1,2}": 531441,
+    "affine (x - y + z over Z3)": 1,
+    "affine among the simple": 1,
+    "non-simple preserving blurred parity": 48,
+    "non-simple with an affine (minority) quotient": 48,
+    "these two sets coincide on every partition": true,
+    "with exactly one (blocks 2+1)": 1020,
+    "with no nontrivial congruence (simple)": 530421,
+    "with two or more": 0
+   },
+   "pass": true
+  },
+  "3 blurred signed parity on three values (0 doubled): a Mal'tsev lift preserves it; its relations are knots; it fails (R_0 and R_1 on one triple), recognisably (Gaussian elimination on the image agrees with brute force); its count matrices have rank 2 while parity's have rank 1, so it is not strongly balanced and its count is #P-complete (Dyer-Richerby); circuit elimination holds on random systems": {
+   "info": {
+    "Mal'tsev lift is Mal'tsev and preserves every relation": true,
+    "a failing system: R_0(x,y,z) and R_1(x,y,z)": true,
+    "circuit elimination on random systems: pairs tested, violations": [
+     87,
+     0
+    ],
+    "count matrices (z counted)": {
+     "0": [
+      [
+       2,
+       2,
+       1
+      ],
+      [
+       2,
+       2,
+       1
+      ],
+      [
+       1,
+       1,
+       2
+      ]
+     ],
+     "1": [
+      [
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       1,
+       2
+      ],
+      [
+       2,
+       2,
+       1
+      ]
+     ]
+    },
+    "every relation is a knot": true,
+    "recognition by Gaussian elimination agrees with brute force": "150/150 (29 failing)",
+    "their ranks": {
+     "0": 2,
+     "1": 2
+    },
+    "unblurred count matrices' ranks (control)": {
+     "0": 1,
+     "1": 1
+    }
+   },
+   "pass": true
+  },
+  "4 blurred signed Z3 on four values (0 doubled): the same in every respect (count matrices of rank 3 against Z3's rank 1)": {
+   "info": {
+    "Mal'tsev lift is Mal'tsev and preserves every relation": true,
+    "a failing system: R_0(x,y,z) and R_1(x,y,z)": true,
+    "circuit elimination on random systems: pairs tested, violations": [
+     1000,
+     0
+    ],
+    "count matrices (z counted)": {
+     "0": [
+      [
+       2,
+       2,
+       1,
+       1
+      ],
+      [
+       2,
+       2,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       1,
+       2,
+       1
+      ]
+     ],
+     "1": [
+      [
+       1,
+       1,
+       2,
+       1
+      ],
+      [
+       1,
+       1,
+       2,
+       1
+      ],
+      [
+       2,
+       2,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       2
+      ]
+     ],
+     "2": [
+      [
+       1,
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       1,
+       2,
+       1
+      ],
+      [
+       2,
+       2,
+       1,
+       1
+      ]
+     ]
+    },
+    "every relation is a knot": true,
+    "recognition by Gaussian elimination agrees with brute force": "150/150 (55 failing)",
+    "their ranks": {
+     "0": 3,
+     "1": 3,
+     "2": 3
+    },
+    "unblurred count matrices' ranks (control)": {
+     "0": 1,
+     "1": 1,
+     "2": 1
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Blurring makes counts hard and keeps failures and composition. (1) For a law on D and a surjection phi from D' onto D, the blurred law (each relation replaced by its preimage) has the same failing systems and the same circuits (range-relative constrained sets), so it composes like cycles exactly when the law does, and its count weights each solution of the image system by the sizes of its values' preimages. (2) Every Mal'tsev law on three values composes like cycles: a three-element Mal'tsev algebra has at most one nontrivial congruence (two would make it a product of two two-element algebras), which is KNOT-CIRCUITS Theorem 1's condition; all 531441 Mal'tsev operations on {0,1,2} were checked (530421 simple, one of them affine; 1020 with one congruence of blocks 2+1). (3) Blurred signed parity on three values (0 doubled; the preimages of even and odd parity) is Mal'tsev (exactly the 48 non-simple operations whose quotient is affine preserve it), composes like cycles, has knots, fails recognisably (Gaussian elimination on its image), and its count is #P-complete: the count matrix of its relation has rank 2, so it is not strongly balanced (Dyer-Richerby). So it has mutual selection in PINNING C's sense and composes like cycles: SELECT-COUNT A's exclusion holds exactly on two values. (4) Blurred signed Z3 on four values (0 doubled) is the same in every respect. Checked: the blurring lemma on random systems (failures, circuits, counts), the enumeration, the knots, recognition against brute force, the count matrices, and circuit elimination on random small systems of both blurred laws.",
+ "kind": "proof",
+ "proof": "BEYOND-TWO-20261101-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "BEYOND-TWO-20261101-001B"
+}

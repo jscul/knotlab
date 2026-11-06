@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KNOT-COMPETITION-20261019-001B-E001",
+  "ticket": "KNOT-COMPETITION-20261019-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "For uniform rules, under the strict reading (states that break no rule) and the competition reading (states that break the fewest, each rule instance weighted one), which shapes have near and far: pairs of distinctions at different separations? Does separation follow the rule's own layout?",
+  "public_inputs": {
+    "circulant_pairwise": "n in 4..10 variables on Z_n; for each offset d in 1..floor(n/2) a preference absent, agree or differ; each unordered pair {i, i+d} one rule instance; every nonempty choice",
+    "circulant_three_place": "n in 5..9; for each 0 < a < b < n and each type NAE, EVEN (x+y+z even), ODD, OR3 (x or y or z), ATOM (not x or not y or z), one rule instance on (i, i+a, i+b) for every i",
+    "lattice_controls": "triangular-lattice 'neighbours differ' on 3x3 and 4x4 tori; square-lattice 'neighbours differ' on a 4x4 torus; for the triangular tori, the strict NAE-on-every-elementary-triangle rule for comparison",
+    "symmetric_controls": "complete graph with every pair agree, or every pair differ, n in 4..9",
+    "readings": [
+      "strict",
+      "competition"
+    ]
+  },
+  "forbidden_inputs": [
+    "any coordinate, metric or distance as an input to the shape computation",
+    "the expected verdict as an input to the producer",
+    "tools/knotlab in the producer (the checker uses it as an independent path)"
+  ],
+  "definitions": {
+    "shape": "the free sets of the allowed states: sets of variables whose every assignment occurs",
+    "circuit": "a minimal set that is not free; a tie has size 2 and a bond size 3 or more",
+    "separation": "for a pair of variables, the size of the smallest circuit of size at least 2 containing both; none if there is no such circuit",
+    "near_and_far": "at least two distinct finite separation values among pairs",
+    "layout_steps": "path length between two variables in the graph joining variables that share a rule instance; an experimenter's comparator, not a constructed space",
+    "follows_layout": "near and far holds and separation never decreases as layout steps increase"
+  },
+  "primary_observable": "per rule and reading: near_and_far, the separation values by layout steps, and follows_layout",
+  "cheapest_meaningful_control": "The frustrated ring (n odd, offset 1, differ only) must allow nothing under the strict reading and, under competition, have every triple as a bond with constant separation 3; strict pairwise rules must have no bond (flag shapes); the readings must coincide on every rule some state satisfies; complete-graph rules must have constant separation by symmetry.",
+  "predictions": {
+    "theorem_checks": "strict pairwise rules have no bonds; the readings agree whenever some state breaks no rule",
+    "pilot_informed": "the frustrated ring flattens its layout: every triple a bond, separation constant 3 (pilot on 2026-10-19 for n = 3..6)",
+    "symmetry": "complete-graph rules have constant separation",
+    "open": "whether any pairwise rule has near and far under competition, and whether separation then follows the layout"
+  },
+  "decision_or_followup_rule": "Signal: a circulant pairwise rule with near and far under competition (impossible under the strict reading). A signal earns a fresh confirmatory identity at larger n. Near and far only on lattice controls is reported as copying a triangulated layout. No near and far for any pairwise rule meets the epic stop rule.",
+  "resource_budget": {
+    "wall_seconds": 1800,
+    "memory_mib": 2048,
+    "max_variables": 16
+  },
+  "first_executable_signal": "the frustrated 5-ring under both readings, then the full roster",
+  "stop_rule": "Stop immediately if a theorem check fails (strict pairwise bond, or readings that disagree on a satisfiable rule); otherwise stop after the frozen roster.",
+  "nonclaims": [
+    "Finite enumeration on the declared roster only; no asymptotic or dimensional claim.",
+    "Separation counts the variables in the smallest constrained set with free parts; it is not a distance or a metric, and layout steps are a comparator chosen by the experimenter.",
+    "No physical, complexity or native-space conclusion."
+  ]
+}

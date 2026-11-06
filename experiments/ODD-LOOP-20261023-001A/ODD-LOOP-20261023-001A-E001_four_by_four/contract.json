@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "ODD-LOOP-20261023-001A-E001",
+  "ticket": "ODD-LOOP-20261023-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "earned_by": "TWIST-RELATIONS-20261022-001B-E001 accepted the odd-loop identity on 8 tori from 7 x 5 to 24 x 24 (24 tests, max |z| 2.63) and refuted its stronger shear-independent form on 12 x 8; exhaustive scratch counts on 3 x 3, 4 x 3, 3 x 4 and 5 x 3 found it exact. On the unsheared small tori no line in a class with both coordinates odd is odd in a twisted sector; on 4 x 3 with shear 1 such lines occur (256 orientations in each of the two sectors odd on (1, -1)) and agree. The 4 x 4 torus is the next size at which exhaustive enumeration is feasible (2^32 orientations per shear, about 17 minutes on 24 workers).",
+  "question": "Is the odd-loop identity exact on every torus up to 4 x 4 at every shear: for each primitive class c, do the two twisted sectors that are odd on c have exactly the same number of orientations whose cone is the line through c?",
+  "public_inputs": {
+    "model": "all orientations of the square-lattice torus with periods (Lh, 0) and (s, Lv), each classified in the four twist sectors (0,0), (1,0), (0,1), (1,1); a sector's projected cyclic edges are contractible, cross, or wind in a primitive class",
+    "F_check": "3 x 3 with shears 0 and 1, for comparison with the exact counts of TWIST-RELATIONS-20261022-001A-P001",
+    "F_small": "4 x 3 with shears 0, 1, 2 and 3 x 4 with shears 0, 1",
+    "F_five": "5 x 3 with shears 0, 1, 2",
+    "F_four": "4 x 4 with shears 0, 1, 2 (shear 3 is the mirror image of shear 1)"
+  },
+  "definitions": "For a primitive class c (a >= 0 normalisation) and the two nonzero twists p with p(c) odd, compare the counts of orientations whose sector-p cone is the line through c. Counts are exact integers.",
+  "predictions": {
+    "candidate_identity": "every comparison on every torus is an exact equality",
+    "reported": "the per-class counts, the contractible and cross counts per sector, and the classes that occur",
+    "controls": "per sector, contractible + cross + windings = number of orientations; in every twisted sector the swap-invariant strong-component test and the odd-cluster test never disagree, and the contractible and cross counts are exactly equal (a theorem); the untwisted sector is never flagged; the independent checker matches the 3 x 3 rows to the exact counts of TWIST-RELATIONS-20261022-001A-P001"
+  },
+  "decision_rule": "If a control fails, the run is invalid. Supported when every comparison is equal; refuted when any comparison differs.",
+  "resource_budget": {"wall_seconds": 6000, "memory_mib": 2048, "max_vertices": 32, "threads": 24},
+  "stop_rule": "Stop immediately if a control fails; otherwise stop after the frozen roster. Rows are written as they finish.",
+  "seeds": "none: the enumeration is exhaustive and deterministic",
+  "environment": "CPython 3 standard library for orchestration and analysis; enumx.c compiled at run time with gcc -O2; 24 worker threads each running one subprocess on a range of bit masks",
+  "red_team_r0": [
+    "Exactness: an exhaustive count either equals or differs, so there is no statistical threshold.",
+    "Coverage: the identity is tested class by class, including classes with both coordinates odd if any occur.",
+    "Implementation: the exact duality of contractible and cross counts in twisted sectors is a theorem, so any implementation error in the double cover would very likely break it; the 3 x 3 rows are matched to an independent Python enumeration.",
+    "Scope: a finite roster of small tori; equality supports and does not prove the identity in general."
+  ],
+  "nonclaims": [
+    "Exact counts on finite tori; agreement supports and does not prove the identity for larger tori.",
+    "Lattices are declared; nothing is said about space or physics."
+  ],
+  "forbidden_inputs": [
+    "Expected counts as inputs to the enumeration"
+  ]
+}

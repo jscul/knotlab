@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NAE-INVARIANT-20261022-001A-P001",
+  "canonical_id": "NAE-INVARIANT-20261022-001A-P001",
+  "kind": "proof",
+  "ticket": "NAE-INVARIANT-20261022-001A",
+  "proof": "NAE-INVARIANT-20261022-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Strong components decide not-all-equal",
+  "status": "Proved",
+  "claim": "With fair visible spokes, a not-all-equal world on a non-bipartite graph is the uniformly random orientation of the bipartite double cover that the deck swap reverses; it is inconsistent exactly when some strongly connected component is swap-invariant, equivalently when the projected cyclic edges form a cluster with an odd cycle (on a torus: a cross cluster or an odd winding). In the plane, primal and dual cyclic edges are complementary; on a twisted torus the complementarity is exact, so P(all contractible) = P(cross), consistency is P(contractible) + P(even windings), and emergence lies between -log2(1 - P(contractible)) and -log2 P(contractible).",
+  "dependencies": [
+    "CONTACT-CENSUS-20261022-001A",
+    "BASE-CRITICALITY-20261022-001A"
+  ],
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "failure_conditions": [
+    "A spoke pattern whose consistency differs from the absence of a swap-invariant strongly connected component.",
+    "A pattern where the swap-invariant test differs from the odd-cluster test on the projected cyclic edges, or a cross cluster whose homology image is not the whole period lattice.",
+    "A plane-graph orientation with an edge cyclic in both or in neither of the primal and dual orientations.",
+    "A twisted-torus pattern whose primal and dual cyclic edges are not complementary, or no untwisted orientation where they fail to be.",
+    "On a twisted torus, unequal counts of all-contractible and cross configurations, or consistency differing from contractible plus even windings.",
+    "A control is accepted."
+  ],
+  "lineage": {
+    "home_scope": "NAE-INVARIANT-20261022-001",
+    "epic_path": [
+      "NAE-INVARIANT-20261022-001"
+    ],
+    "parents": [
+      "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/manifest.json",
+      "proofs/BASE-CRITICALITY-20261022-001A/BASE-CRITICALITY-20261022-001A-P001_percolation_reduction/manifest.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CONTACT-CENSUS-20261022-001A/CONTACT-CENSUS-20261022-001A-P001_contact_census/manifest.json": "c8de62f643f50a17c7ff879215384e512e807b5d5eba4bc523fa5780d91b0969",
+    "proofs/BASE-CRITICALITY-20261022-001A/BASE-CRITICALITY-20261022-001A-P001_percolation_reduction/manifest.json": "bd8867ed3f554cf83478fa3ae077af6aa8f8dcc17a37ec87ce1c2790ffa4d3e7"
+  },
+  "paths": {
+    "manifest": "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/manifest.json",
+    "identity": "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/identity.json",
+    "directory": "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components",
+    "proof": "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/proof.md",
+    "result": "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/result.json",
+    "check": "proofs/NAE-INVARIANT-20261022-001A/NAE-INVARIANT-20261022-001A-P001_strong_components/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_loops_question_decided": false,
+    "double_cover_reduction_proved": true,
+    "cyclic_edge_criterion_proved": true,
+    "planar_complementarity_proved": true,
+    "twisted_exact_duality_proved": true,
+    "lower_bound_proved": false
+  },
+  "foundation_claim_scope": "Consistency of fair not-all-equal worlds on finite graphs and square-lattice tori, through the strong components of random orientations. Lattices are declared; no space or physics is claimed.",
+  "validation": {
+    "status": "checked: prose proof; check.py verifies on all 262,144 patterns of two 3 x 3 twisted tori that exact consistency (subcube marking) equals the strong-component test, two-colouring of cyclic clusters and the homology classification, that every cross cluster carries the whole period lattice, that primal and dual cyclic edges are complementary, the trichotomy, equal contractible and cross counts and consistency = contractible + even windings; the same on 6,800 sampled patterns of five larger twisted tori with an independent propagation solver; plane complementarity on all orientations of two grids; doubly cyclic edges in untwisted 3 x 3 orientations; three controls rejected; the trichotomy is argued in prose and verified exhaustively only on 3 x 3; no human or external review",
+    "level": "V1 prose proof with exhaustive and sampled checks; the torus trichotomy is a proof sketch with exhaustive verification on 3 x 3 tori",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per theorem in proof.md",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-22."
+  }
+}

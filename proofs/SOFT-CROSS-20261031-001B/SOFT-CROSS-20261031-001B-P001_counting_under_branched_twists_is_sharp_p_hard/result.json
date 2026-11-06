@@ -1,0 +1,218 @@
+{
+ "schema_version": 1,
+ "artifact_id": "SOFT-CROSS-20261031-001B-P001",
+ "status": "Proved",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 8,
+    "mismatched": {}
+   }
+  },
+  "1 merge paths act by 2 (3M)^k = 2 (9^k P+ + (-3)^k P-) on the actual graph": {
+   "ok": true,
+   "detail": {
+    "transfer matrices": {
+     "1": [
+      [
+       "6",
+       "12"
+      ],
+      [
+       "12",
+       "6"
+      ]
+     ],
+     "2": [
+      [
+       "90",
+       "72"
+      ],
+      [
+       "72",
+       "90"
+      ]
+     ],
+     "3": [
+      [
+       "702",
+       "756"
+      ],
+      [
+       "756",
+       "702"
+      ]
+     ],
+     "4": [
+      [
+       "6642",
+       "6480"
+      ],
+      [
+       "6480",
+       "6642"
+      ]
+     ],
+     "5": [
+      [
+       "58806",
+       "59292"
+      ],
+      [
+       "59292",
+       "58806"
+      ]
+     ]
+    }
+   }
+  },
+  "2 the absorber is free (factor 2) and each of its three lines acts by 3M": {
+   "ok": true,
+   "detail": {
+    "boundary patterns": 64,
+    "mismatches": []
+   }
+  },
+  "3 the reduction: counts follow 2^(D/3) 9^(kD) p((-1/3)^k); D + 1 of them recover p and #formula = p(1)": {
+   "ok": true,
+   "detail": {
+    "F1": {
+     "D": 6,
+     "k": [
+      2,
+      9
+     ],
+     "largest graph (vertices)": 544,
+     "form at every k": true,
+     "coefficients recovered": true,
+     "recovered": "4",
+     "p(1)": "4",
+     "#formula": 4
+    },
+    "F2": {
+     "D": 9,
+     "k": [
+      2,
+      12
+     ],
+     "largest graph (vertices)": 1086,
+     "form at every k": true,
+     "coefficients recovered": true,
+     "recovered": "6",
+     "p(1)": "6",
+     "#formula": 6
+    },
+    "F3": {
+     "D": 12,
+     "k": [
+      2,
+      15
+     ],
+     "largest graph (vertices)": 1808,
+     "form at every k": true,
+     "coefficients recovered": true,
+     "recovered": "6",
+     "p(1)": "6",
+     "#formula": 6
+    },
+    "F4 (unsatisfiable)": {
+     "D": 3,
+     "k": [
+      2,
+      6
+     ],
+     "largest graph (vertices)": 182,
+     "form at every k": true,
+     "coefficients recovered": true,
+     "recovered": "0",
+     "p(1)": "0",
+     "#formula": 0
+    },
+    "F5 (single occurrences)": {
+     "D": 3,
+     "k": [
+      2,
+      6
+     ],
+     "largest graph (vertices)": 182,
+     "form at every k": true,
+     "coefficients recovered": true,
+     "recovered": "6",
+     "p(1)": "6",
+     "#formula": 6
+    },
+    "F6": {
+     "D": 15,
+     "k": [
+      2,
+      18
+     ],
+     "largest graph (vertices)": 2710,
+     "form at every k": true,
+     "coefficients recovered": true,
+     "recovered": "6",
+     "p(1)": "6",
+     "#formula": 6
+    }
+   }
+  },
+  "4 the composition: G_k are unsigned cubic bipartite; A's snakes with two or more junctions have branched twists": {
+   "ok": true,
+   "detail": {
+    "G_k": {
+     "F1": "unsigned connected cubic bipartite, 10kD + 2D/3 vertices (k = 2, 5)",
+     "F2": "unsigned connected cubic bipartite, 10kD + 2D/3 vertices (k = 2, 5)",
+     "F3": "unsigned connected cubic bipartite, 10kD + 2D/3 vertices (k = 2, 5)",
+     "F4 (unsatisfiable)": "unsigned connected cubic bipartite, 10kD + 2D/3 vertices (k = 2, 5)",
+     "F5 (single occurrences)": "unsigned connected cubic bipartite, 10kD + 2D/3 vertices (k = 2, 5)",
+     "F6": "unsigned connected cubic bipartite, 10kD + 2D/3 vertices (k = 2, 5)"
+    },
+    "A's instances": {
+     "1": {
+      "junctions": 1,
+      "twisted branches per junction": [
+       3
+      ],
+      "good root": null
+     },
+     "3": {
+      "junctions": 3,
+      "twisted branches per junction": [
+       3,
+       3,
+       3
+      ],
+      "good root": null
+     },
+     "5": {
+      "junctions": 5,
+      "twisted branches per junction": [
+       3,
+       3,
+       3,
+       3,
+       3
+      ],
+      "good root": null
+     }
+    }
+   }
+  },
+  "5 controls fire": {
+   "ok": true,
+   "detail": {
+    "F1: D counts leave #formula undetermined": true,
+    "F1: the error terms of p are nonzero": true,
+    "F1: absorbers without caps keep the form but recover a wrong number": true,
+    "F1: recovered without caps": "1/19683",
+    "F3: D counts leave #formula undetermined": true,
+    "F3: the error terms of p are nonzero": true,
+    "F3: absorbers without caps keep the form but recover a wrong number": true,
+    "F3: recovered without caps": "1/387420489"
+   }
+  },
+  "ok": true,
+  "seconds": 5.0
+ }
+}

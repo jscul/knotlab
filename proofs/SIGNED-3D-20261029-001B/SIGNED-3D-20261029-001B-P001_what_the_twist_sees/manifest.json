@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SIGNED-3D-20261029-001B-P001",
+  "canonical_id": "SIGNED-3D-20261029-001B-P001",
+  "kind": "proof",
+  "ticket": "SIGNED-3D-20261029-001B",
+  "proof": "SIGNED-3D-20261029-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "What the twist sees of a three-manifold",
+  "status": "Proved",
+  "claim": "For the twelve signed one-bit edge laws of SIGNED-3D-20261029-001A on a closed orientable three-manifold M (ordered triangulation, normalization c (lambda^3/mu)^V lambda^(-T)), the counting laws give 1, 1, 2, h/2, h/2, h, 1 with h = |H^1(M; Z/2)|, and the twisted laws give D(M)/2, D(M)/2, (D(M) + h)/2 (twice) and D(M), where D(M) is the sum over a in H^1(M; Z/2) of (-1)^<a^3, [M]> (the twisted exponent sum_t x01 x12 x23 is the cup cube). The cubic form a -> a^3 is linear (Wu), so D(M) is h or 0; it equals 2 lk(beta a, beta a) mod 2, so D(M) = 0 exactly when the linking form takes the value 1/2 on an element of order 2 (cyclic H_1 = Z/n: D = 0 iff n = 2 mod 4). The twist is not a function of homology: RP^3 # RP^3 (D = 0) and S^3/Q_8 (D = 4) share H_1 = (Z/2)^2, and sampled triangulations with H_1 = (Z/2)^2 take both values while every counting law agrees. So signs and order let one bit per edge see exactly one bit beyond |H^1(M; Z/2)|.",
+  "dependencies": [
+    "SIGNED-3D-20261029-001A",
+    "TWIST-3D-20261025-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A sampled triangulation where a twisted state sum differs from D(M)/2 computed through the Bockstein.",
+    "A cocycle where the triple cup product and the Bockstein formula for a^3 disagree, or a pair of classes where a -> a^3 is not additive.",
+    "A sampled manifold with cyclic first homology Z/n whose twisted value contradicts the rule n = 2 mod 4."
+  ],
+  "lineage": {
+    "home_scope": "SIGNED-3D-20261029-001",
+    "epic_path": [
+      "SIGNED-3D-20261029-001"
+    ],
+    "parents": [
+      "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/manifest.json",
+      "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/result.json",
+      "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/signed3d_lib.py",
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json",
+      "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/check.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/manifest.json": "a5d82553b75d2d035f78ff12c8138a232250bc2c79bce516dfc3c8643f7410f7",
+    "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/result.json": "a0f964967ee9425dfc748a232fa56299b56263672569ecdae5715b83f399bc73",
+    "proofs/SIGNED-3D-20261029-001A/SIGNED-3D-20261029-001A-P001_one_twist_and_nothing_else/signed3d_lib.py": "3c9124d680915635baf813ed236deaae1775acdeb04497647af8b077480e122e",
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/manifest.json": "c726ce5f6bd7ef51a27f6e9972b979fc0b43c7ba8008b2944acbc184a20fd30a",
+    "proofs/TWIST-3D-20261025-001A/TWIST-3D-20261025-001A-P001_twists_add_nothing_to_counting/check.py": "e57e72a3f782f2e5ec733e6d14903900117eb98709698e4dd0d4e61fee526538"
+  },
+  "paths": {
+    "manifest": "proofs/SIGNED-3D-20261029-001B/SIGNED-3D-20261029-001B-P001_what_the_twist_sees/manifest.json",
+    "identity": "proofs/SIGNED-3D-20261029-001B/SIGNED-3D-20261029-001B-P001_what_the_twist_sees/identity.json",
+    "directory": "proofs/SIGNED-3D-20261029-001B/SIGNED-3D-20261029-001B-P001_what_the_twist_sees",
+    "proof": "proofs/SIGNED-3D-20261029-001B/SIGNED-3D-20261029-001B-P001_what_the_twist_sees/proof.md",
+    "result": "proofs/SIGNED-3D-20261029-001B/SIGNED-3D-20261029-001B-P001_what_the_twist_sees/result.json",
+    "check": "proofs/SIGNED-3D-20261029-001B/SIGNED-3D-20261029-001B-P001_what_the_twist_sees/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "signed_three_manifold_census_shown": false
+  },
+  "foundation_claim_scope": "The invariants of closed orientable three-manifolds defined by the signed one-bit edge laws of SIGNED-3D-20261029-001A, and what they detect.",
+  "validation": {
+    "status": "checked on 76 sampled ordered triangulations (nine homology types): triple cup product equals the Bockstein formula on every cocycle; linearity on every pair of classes; the twelve normalized state sums against the formulas; the cyclic linking-form rule; the (Z/2)^2 dichotomy with equal counting values; controls fire; proofs in proof.md (classical background cited); no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "classical throughout (twisted Z/2 Dijkgraaf-Witten, Wu, linking forms); local content: the identification of the census laws, checked",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-29."
+  }
+}

@@ -1,0 +1,362 @@
+{
+ "artifact_id": "BRACE-TREE-20261105-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the dictionary: places in the tight-cut decomposition against native relations, over every ordered pair of lines (the prediction, one relation per place for atom-atom and glue-glue pairs, is refuted where noted)": {
+   "info": {
+    "census classes": 32,
+    "designs": 18,
+    "places with more than one relation (atom-atom and glue-glue)": {
+     "('apart', 'doubled square', 'doubled square', '<>', ('glue',), 'cut line', 'cut line')": {
+      "backward": 2,
+      "forward": 2,
+      "mutual": 2,
+      "silent": 10
+     },
+     "('apart', 'doubled square', 'other', '<', (), 'cut line', 'emitter')": {
+      "forward": 14,
+      "mutual": 6,
+      "silent": 4
+     },
+     "('apart', 'heawood', 'heawood', '<<', ('glue',), 'cut line', 'emitter')": {
+      "forward": 6,
+      "mutual": 66
+     },
+     "('apart', 'heawood', 'heawood', '<<', ('glue',), 'intact', 'emitter')": {
+      "forward": 72,
+      "mutual": 24
+     },
+     "('apart', 'heawood', 'heawood', '<<<', ('glue', 'glue'), 'cut line', 'emitter')": {
+      "forward": 6,
+      "mutual": 12
+     },
+     "('apart', 'heawood', 'heawood', '<<<>', ('atom', 'glue', 'glue'), 'cut line', 'cut line')": {
+      "backward": 2,
+      "forward": 2,
+      "mutual": 4,
+      "silent": 1
+     },
+     "('apart', 'heawood', 'heawood', '<<<>', ('atom', 'glue', 'glue'), 'cut line', 'intact')": {
+      "forward": 4,
+      "mutual": 8
+     },
+     "('apart', 'heawood', 'heawood', '<<<>', ('atom', 'glue', 'glue'), 'intact', 'cut line')": {
+      "backward": 4,
+      "mutual": 8
+     },
+     "('apart', 'heawood', 'heawood', '<<<>', ('glue', 'glue', 'glue'), 'cut line', 'cut line')": {
+      "backward": 4,
+      "forward": 4,
+      "mutual": 8,
+      "silent": 2
+     },
+     "('apart', 'heawood', 'heawood', '<<<>', ('glue', 'glue', 'glue'), 'cut line', 'intact')": {
+      "forward": 8,
+      "mutual": 16
+     },
+     "('apart', 'heawood', 'heawood', '<<<>', ('glue', 'glue', 'glue'), 'intact', 'cut line')": {
+      "backward": 8,
+      "mutual": 16
+     },
+     "('apart', 'heawood', 'heawood', '<<>', ('glue', 'glue'), 'cut line', 'cut line')": {
+      "backward": 14,
+      "forward": 12,
+      "mutual": 28,
+      "silent": 6
+     },
+     "('apart', 'heawood', 'heawood', '<<>', ('glue', 'glue'), 'cut line', 'intact')": {
+      "forward": 24,
+      "mutual": 56
+     },
+     "('apart', 'heawood', 'heawood', '<<>', ('glue', 'glue'), 'intact', 'cut line')": {
+      "backward": 28,
+      "mutual": 56
+     },
+     "('apart', 'heawood', 'heawood', '<>', ('glue',), 'cut line', 'cut line')": {
+      "backward": 4,
+      "forward": 4,
+      "mutual": 8,
+      "silent": 2
+     },
+     "('apart', 'heawood', 'heawood', '<>', ('glue',), 'cut line', 'intact')": {
+      "forward": 8,
+      "mutual": 16
+     },
+     "('apart', 'heawood', 'heawood', '<>', ('glue',), 'intact', 'cut line')": {
+      "backward": 8,
+      "mutual": 16
+     },
+     "('apart', 'heawood', 'heawood', '<><', ('glue', 'glue'), 'cut line', 'emitter')": {
+      "forward": 36,
+      "mutual": 66
+     },
+     "('apart', 'heawood', 'heawood', '<>>', ('glue', 'glue'), 'cut line', 'cut line')": {
+      "backward": 12,
+      "forward": 14,
+      "mutual": 28,
+      "silent": 6
+     },
+     "('apart', 'heawood', 'heawood', '<>>', ('glue', 'glue'), 'cut line', 'intact')": {
+      "forward": 28,
+      "mutual": 56
+     },
+     "('apart', 'heawood', 'heawood', '<>>', ('glue', 'glue'), 'intact', 'cut line')": {
+      "backward": 24,
+      "mutual": 56
+     },
+     "('apart', 'heawood', 'heawood', '<>><', ('glue', 'glue', 'glue'), 'cut line', 'emitter')": {
+      "forward": 12,
+      "mutual": 24
+     },
+     "('apart', 'heawood', 'heawood', '<>>>', ('glue', 'glue', 'atom'), 'cut line', 'cut line')": {
+      "backward": 2,
+      "forward": 2,
+      "mutual": 4,
+      "silent": 1
+     },
+     "('apart', 'heawood', 'heawood', '<>>>', ('glue', 'glue', 'atom'), 'cut line', 'intact')": {
+      "forward": 4,
+      "mutual": 8
+     },
+     "('apart', 'heawood', 'heawood', '<>>>', ('glue', 'glue', 'atom'), 'intact', 'cut line')": {
+      "backward": 4,
+      "mutual": 8
+     },
+     "('apart', 'heawood', 'heawood', '<>>>', ('glue', 'glue', 'glue'), 'cut line', 'cut line')": {
+      "backward": 4,
+      "forward": 4,
+      "mutual": 8,
+      "silent": 2
+     },
+     "('apart', 'heawood', 'heawood', '<>>>', ('glue', 'glue', 'glue'), 'cut line', 'intact')": {
+      "forward": 8,
+      "mutual": 16
+     },
+     "('apart', 'heawood', 'heawood', '<>>>', ('glue', 'glue', 'glue'), 'intact', 'cut line')": {
+      "backward": 8,
+      "mutual": 16
+     },
+     "('apart', 'heawood', 'heawood', '><<>', ('glue', 'glue', 'glue'), 'emitter', 'cut line')": {
+      "backward": 12,
+      "mutual": 24
+     },
+     "('apart', 'heawood', 'heawood', '><>', ('glue', 'glue'), 'emitter', 'cut line')": {
+      "backward": 36,
+      "mutual": 66
+     },
+     "('apart', 'heawood', 'heawood', '>>', ('glue',), 'emitter', 'cut line')": {
+      "backward": 6,
+      "mutual": 66
+     },
+     "('apart', 'heawood', 'heawood', '>>', ('glue',), 'emitter', 'intact')": {
+      "backward": 72,
+      "mutual": 24
+     },
+     "('apart', 'heawood', 'heawood', '>>>', ('glue', 'glue'), 'emitter', 'cut line')": {
+      "backward": 6,
+      "mutual": 12
+     },
+     "('apart', 'other', 'doubled square', '>', (), 'emitter', 'cut line')": {
+      "backward": 14,
+      "mutual": 6,
+      "silent": 4
+     },
+     "('same', 'other', 'cut line', 'intact', '')": {
+      "forward": 6,
+      "mutual": 6,
+      "silent": 3
+     },
+     "('same', 'other', 'intact', 'cut line', '')": {
+      "backward": 6,
+      "mutual": 6,
+      "silent": 3
+     },
+     "('same', 'other', 'intact', 'intact', '')": {
+      "backward": 24,
+      "forward": 24,
+      "mutual": 32,
+      "silent": 12
+     }
+    },
+    "spaces": 50,
+    "summary": {
+     "atom-atom": {
+      "pairs": 14534,
+      "pairs in such places": 13174,
+      "places": 82,
+      "places with one relation": 51
+     },
+     "atom-glue": {
+      "pairs": 3018,
+      "pairs in such places": 838,
+      "places": 70,
+      "places with one relation": 32
+     },
+     "glue-glue": {
+      "pairs": 490,
+      "pairs in such places": 304,
+      "places": 16,
+      "places with one relation": 10
+     }
+    }
+   },
+   "pass": true
+  },
+  "2 where the tree decides: every place whose two atoms are the same, adjacent, or joined through atoms only has one native relation; through plane glue (doubled squares, plane pieces) the relation can depend on more than the tree": {
+   "info": {
+    "atom-atom places with only atoms between (or adjacent, or the same atom)": {
+     "pairs": 10074,
+     "pairs in such places": 10074,
+     "places": 21,
+     "with one relation": 21
+    },
+    "atom-atom places with plane glue between": {
+     "pairs": 4460,
+     "pairs in such places": 3268,
+     "places": 69,
+     "with one relation": 36
+    },
+    "the rules (kind, arrows, role of a, role of b, relation): pairs": {
+     "apart | < | cut line | emitter | mutual": 840,
+     "apart | < | intact | emitter | forward": 1100,
+     "apart | << | cut line | emitter | mutual": 162,
+     "apart | << | intact | emitter | forward": 204,
+     "apart | <<< | cut line | emitter | mutual": 36,
+     "apart | <<< | intact | emitter | forward": 48,
+     "apart | <> | cut line | cut line | mutual": 54,
+     "apart | <> | cut line | intact | backward": 72,
+     "apart | <> | intact | cut line | forward": 72,
+     "apart | <> | intact | intact | silent": 96,
+     "apart | > | emitter | cut line | mutual": 840,
+     "apart | > | emitter | intact | backward": 1100,
+     "apart | >< | emitter | emitter | mutual": 432,
+     "apart | >> | emitter | cut line | mutual": 162,
+     "apart | >> | emitter | intact | backward": 204,
+     "apart | >>> | emitter | cut line | mutual": 36,
+     "apart | >>> | emitter | intact | backward": 48,
+     "same |  | cut line | cut line | mutual": 476,
+     "same |  | cut line | intact | mutual": 713,
+     "same |  | intact | cut line | mutual": 713,
+     "same |  | intact | intact | mutual": 2666
+    }
+   },
+   "pass": true
+  },
+  "3 glue is silent: lines of plane pieces and doubled squares never create at each other, unless a non-Fano handle lies between": {
+   "info": {
+    "plane glue only: silent": 306,
+    "through a non-Fano handle: backward": 2,
+    "through a non-Fano handle: forward": 2,
+    "through a non-Fano handle: mutual": 2,
+    "through a non-Fano handle: silent": 2
+   },
+   "pass": true
+  },
+  "4 every cut between two atoms is read in its direction: creation runs one way, from the receiver's intact lines to the emitter's lines": {
+   "info": {
+    "one way, from the receiver's intact lines to the emitter": 50
+   },
+   "pass": true
+  },
+  "5 the source rule (fixed here, to be tested in ticket C): kept blocks of mutual creation count the Heawood braces, and the genus, on every space here without a non-Fano brace": {
+   "info": {
+    "(label, genus, Heawood braces, blocks, kept blocks) where blocks differ from kept": [
+     [
+      "Fano plane + X, W at two points",
+      3,
+      3,
+      4,
+      3
+     ],
+     [
+      "Fano plane + Y at a line, Z at a point of Y",
+      3,
+      3,
+      4,
+      3
+     ],
+     [
+      "Fano plane + X, W, U at three points",
+      4,
+      4,
+      7,
+      4
+     ],
+     [
+      "census 58 + Y at a line",
+      2,
+      1,
+      6,
+      4
+     ],
+     [
+      "untwisted 19-point class 0",
+      3,
+      3,
+      4,
+      3
+     ],
+     [
+      "twisted 21-point class 1",
+      3,
+      3,
+      4,
+      3
+     ],
+     [
+      "twisted 22-point class 2",
+      3,
+      2,
+      10,
+      8
+     ]
+    ],
+    "of them, all blocks = genus": 42,
+    "of them, kept blocks = Heawood braces = genus": 47,
+    "spaces with a non-Fano brace (label, genus, Heawood, other, blocks, kept)": [
+     [
+      "census 58 + X at a point",
+      2,
+      1,
+      1,
+      6,
+      6
+     ],
+     [
+      "census 58 + Y at a line",
+      2,
+      1,
+      1,
+      6,
+      4
+     ],
+     [
+      "twisted 22-point class 2",
+      3,
+      2,
+      1,
+      10,
+      8
+     ]
+    ],
+    "spaces without a non-Fano brace": 47
+   },
+   "pass": true
+  }
+ },
+ "claim": "The brace dictionary: for every ordered pair of lines in 50 spaces (the 32 three-fold spaces up to 22 points and 18 trees of Fano atoms), the native relation against the pair's place in the tight-cut decomposition. The prediction fixed in advance, one relation per place, is refuted as stated: 31 of 82 atom-atom places carry more than one relation (1,360 of 14,534 pairs), and 6 of 16 glue-glue places. But every mixed atom-atom place has plane glue between the two atoms. Where the atoms are the same, adjacent, or joined through atoms only (21 places, 10,074 pairs), the relation is a function of the place. Within an atom, lines are mutual. An emitter's lines are mutual with a downstream receiver's cut lines, and its intact lines create one way at them, along chains of atoms too. Atoms emitting into a common atom are mutual. Two receivers of a common atom meet through their cut lines, and their intact lines are silent. Lines of plane pieces and doubled squares never create at each other (306 of 306 pairs) unless a non-Fano handle lies between. All 50 cuts between two atoms are read in their direction. Fixed here for ticket C, the source rule (keep a block of mutual creation when one of its lines is blind to everything its other lines are blind to) counts the Heawood braces, and the genus, on all 47 spaces without a non-Fano brace, where the plain block count manages 42; it fails on the three spaces with census 58 or the trisum brace.",
+ "kind": "proof",
+ "proof": "BRACE-TREE-20261105-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "BRACE-TREE-20261105-001B"
+}

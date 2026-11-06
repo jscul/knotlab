@@ -1,0 +1,325 @@
+{
+ "artifact_id": "FOUR-PREFER-20261101-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; ticket A passed": {
+   "info": {
+    "mismatched": {},
+    "parents": 5
+   },
+   "pass": true
+  },
+  "1 the twelve class's link piece (FOUR-PLACE C): five internal points, six lines, accepted relation (port 7 = port 8) x {0,1}^2 on ports 5, 6 (recomputed by brute force)": {
+   "info": {
+    "lines": [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      2,
+      4
+     ],
+     [
+      0,
+      1,
+      2,
+      5
+     ],
+     [
+      0,
+      1,
+      3,
+      4
+     ],
+     [
+      2,
+      3,
+      4,
+      6
+     ],
+     [
+      3,
+      4,
+      7,
+      8
+     ]
+    ],
+    "relations": [
+     "1111100110011111",
+     "1111100110011111",
+     "1111100110011111",
+     "1001111111111001",
+     "1111100110011111",
+     "1001111111111001"
+    ]
+   },
+   "pass": true
+  },
+  "2 each of classes 2, 4, 5, 6, 7, 8, 9, 10, 12 has a three-point piece (three internal points on four lines, one port per line) accepting a relation of the twelve class": {
+   "info": {
+    "class 10": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111111001111001",
+      "1111111001111001",
+      "1001011111101111",
+      "1001011111101111"
+     ]
+    },
+    "class 12": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111100101101111",
+      "1111100101101111",
+      "1001111111110110",
+      "1001111111110110"
+     ]
+    },
+    "class 2": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111100110010110",
+      "1111100110010110",
+      "1001111101101001",
+      "1001111101101001"
+     ]
+    },
+    "class 4": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111111001101001",
+      "1111111001101001",
+      "1001011101111011",
+      "1001011101111011"
+     ]
+    },
+    "class 5": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111100110011110",
+      "1111100110011110",
+      "1001111111101001",
+      "1001111111101001"
+     ]
+    },
+    "class 6": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1110100101111110",
+      "1110100101111110",
+      "1011110111010110",
+      "1011110111010110"
+     ]
+    },
+    "class 7": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111111110010110",
+      "1111111110010110",
+      "1001011011111111",
+      "1001011011111111"
+     ]
+    },
+    "class 8": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111111011101001",
+      "1111111011101001",
+      "1001011101111111",
+      "1001011101111111"
+     ]
+    },
+    "class 9": {
+     "accepted": "1111100110011111",
+     "relations on the three-point piece (line order)": [
+      "1111111010010111",
+      "1111111010010111",
+      "1001011111111110",
+      "1001011111111110"
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 lifting: replacing each line of the twelve link piece by an adapted three-point piece gives, for each of these classes, a piece with 23 internal points and 24 distinct lines whose accepted relation (by SAT) is (port a = port b) x {0,1}^2, free ports on different lines": {
+   "info": {
+    "class 10": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 12": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 2": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 4": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 5": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 6": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 7": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 8": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    },
+    "class 9": {
+     "accepted relation is the link": true,
+     "internal points": 23,
+     "lines": 24
+    }
+   },
+   "pass": true
+  },
+  "4 class 1 (which realizes no link class with three points) has a direct link piece with five internal points and six distinct lines (seeded search; accepted relation recomputed by brute force)": {
+   "info": {
+    "found after trials": 243,
+    "free ports": [
+     5,
+     6
+    ],
+    "lines": [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      2,
+      4
+     ],
+     [
+      0,
+      1,
+      2,
+      5
+     ],
+     [
+      0,
+      1,
+      3,
+      4
+     ],
+     [
+      2,
+      3,
+      4,
+      6
+     ],
+     [
+      3,
+      4,
+      7,
+      8
+     ]
+    ],
+    "link": "port 7 != port 8",
+    "relations": [
+     "0110100111010110",
+     "1001011001111001",
+     "0110110110010110",
+     "1001011001101101",
+     "0111100110010110",
+     "1011011001101001"
+    ]
+   },
+   "pass": true
+  },
+  "5 regularization end to end for all ten classes (24 random instances each): every result is a simple 4-regular 4-uniform system over the same class with the same satisfiability (SAT solver on both); every class has at least three satisfiable and three unsatisfiable instances": {
+   "info": {
+    "failures": [],
+    "tallies": {
+     "class 1": {
+      "satisfiable": 3,
+      "unsatisfiable": 21
+     },
+     "class 10": {
+      "satisfiable": 17,
+      "unsatisfiable": 7
+     },
+     "class 12": {
+      "satisfiable": 15,
+      "unsatisfiable": 9
+     },
+     "class 2": {
+      "satisfiable": 3,
+      "unsatisfiable": 21
+     },
+     "class 4": {
+      "satisfiable": 12,
+      "unsatisfiable": 12
+     },
+     "class 5": {
+      "satisfiable": 7,
+      "unsatisfiable": 17
+     },
+     "class 6": {
+      "satisfiable": 8,
+      "unsatisfiable": 16
+     },
+     "class 7": {
+      "satisfiable": 13,
+      "unsatisfiable": 11
+     },
+     "class 8": {
+      "satisfiable": 10,
+      "unsatisfiable": 14
+     },
+     "class 9": {
+      "satisfiable": 13,
+      "unsatisfiable": 11
+     }
+    }
+   },
+   "pass": true
+  },
+  "6 none of the ten classes is closed under a Schaefer polymorphism (ticket A), so each is NP-complete with unbounded occurrences, and by the regularization NP-complete on 4-regular systems": {
+   "info": {
+    "class 1": [],
+    "class 10": [],
+    "class 12": [],
+    "class 2": [],
+    "class 4": [],
+    "class 5": [],
+    "class 6": [],
+    "class 7": [],
+    "class 8": [],
+    "class 9": []
+   },
+   "pass": true
+  }
+ },
+ "claim": "Every four-place knot class that fails on small 4-regular systems builds a link, so it is NP-complete on 4-regular 4-uniform systems and its failures are coNP-complete to recognise. Classes 1, 2 and 5 have five-point link pieces; classes 4, 6, 7, 8, 9, 10 and 12 each have a three-point piece (three internal points on four lines, one port per line) accepting a relation of the twelve class, so replacing each line of the twelve class's link piece by such a piece (lifting) gives a link piece. A regularization for link pieces of any size (equality cycles of copies, free ports filling spares and absorbers) then maps every signed instance to a 4-regular 4-uniform system with the same satisfiability, and Schaefer's theorem applies. Checked: the realizations by enumeration, every lifted link's accepted relation by SAT, and the regularization end to end against a SAT solver for every class.",
+ "kind": "proof",
+ "proof": "FOUR-PREFER-20261101-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FOUR-PREFER-20261101-001B"
+}

@@ -1,0 +1,81 @@
+L-{}: no failure in 6000 systems; knot ranges [[0, 1, 2, 3]]; Mal'tsev knot/all found/found; hidden 0; ties 18331/18331; knots functional 5613/5613; certified {'0,1,2,3': True}
+L-{222}: no failure in 6000 systems; knot ranges [[0, 1, 2, 3], [0, 1, 3]]; Mal'tsev knot/all found/found; hidden 0; ties 18160/18160; knots functional 6028/6028; certified {'0,1,3': True, '0,1,2,3': True}
+L-{223}: no failure in 6000 systems; knot ranges [[0, 1, 2, 3]]; Mal'tsev knot/all found/found; hidden 0; ties 17591/17591; knots functional 6079/6079; certified {'0,1,2,3': True}
+L-{222,223}: failure after 7 systems
+L-{222,233}: failure after 69 systems
+L-{222,333}: failure after 12 systems
+L-{223,232}: no failure in 6000 systems; knot ranges [[0, 1, 2, 3]]; Mal'tsev knot/all found/found; hidden 0; ties 17912/17912; knots functional 5987/5987; certified {'0,1,2,3': True}
+L-{223,233}: failure after 1 systems
+L-{223,332}: failure after 137 systems
+L-{222,223,232}: failure after 1 systems
+L-{222,223,233}: failure after 4 systems
+L-{222,223,332}: failure after 3 systems
+L-{222,223,333}: failure after 1 systems
+L-{222,233,323}: failure after 81 systems
+L-{223,232,233}: failure after 3 systems
+L-{223,232,322}: no failure in 6000 systems; knot ranges [[0, 1, 2, 3]]; Mal'tsev knot/all found/found; hidden 0; ties 17860/17860; knots functional 5725/5725; certified {'0,1,2,3': True}
+L-{223,232,323}: failure after 1 systems
+L-{222,223,232,233}: failure after 1 systems
+L-{222,223,232,322}: failure after 2 systems
+L-{222,223,232,323}: failure after 2 systems
+L-{222,223,232,333}: failure after 9 systems
+L-{222,223,233,323}: failure after 1 systems
+L-{222,223,233,332}: failure after 4 systems
+L-{222,223,233,333}: failure after 25 systems
+L-{222,223,332,333}: failure after 20 systems
+L-{222,233,323,332}: failure after 9 systems
+L-{223,232,233,322}: failure after 2 systems
+L-{223,232,233,323}: failure after 1 systems
+L-{223,232,323,332}: failure after 11 systems
+L-{222,223,232,233,322}: failure after 3 systems
+L-{222,223,232,233,323}: failure after 18 systems
+L-{222,223,232,233,333}: failure after 24 systems
+L-{222,223,232,322,333}: failure after 5 systems
+L-{222,223,232,323,332}: failure after 35 systems
+L-{222,223,232,323,333}: failure after 11 systems
+L-{222,223,233,323,332}: failure after 17 systems
+L-{223,232,233,322,323}: failure after 5 systems
+L-{222,223,232,233,322,323}: failure after 14 systems
+L-{222,223,232,233,322,333}: failure after 4 systems
+L-{222,223,232,233,323,332}: failure after 7 systems
+L-{222,223,232,233,323,333}: failure after 4 systems
+L-{222,223,232,323,332,333}: failure after 25 systems
+L-{223,232,233,322,323,332}: failure after 4 systems
+L-{222,223,232,233,322,323,332}: failure after 34 systems
+L-{222,223,232,233,322,323,333}: failure after 15 systems
+L-{222,223,232,233,322,323,332,333}: failure after 7 systems
+K6 lift at 0: no failure in 1000 systems; knot ranges [[0, 1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]]; Mal'tsev knot/all found/found; hidden 0; ties 2715/2715; knots functional 350/350; certified {'0,1,2,3,4,5,6': True, '1,2,3,4,5,6': True}
+K6 lift at 1: no failure in 1000 systems; knot ranges [[0, 1, 2, 3, 4, 5, 6], [0, 2, 3, 4, 5, 6]]; Mal'tsev knot/all found/found; hidden 0; ties 2739/2739; knots functional 319/319; certified {'0,2,3,4,5,6': True, '0,1,2,3,4,5,6': True}
+parity + J: no failure in 856 systems; knot ranges [[0, 1]]; Mal'tsev knot/all found/none; hidden 0; ties 710/710; knots functional 134/134; certified {'2,3,4': True, '2,3': True, '0,1,2,3,4': True, '0,1': True}
+K4 + Z3: no failure in 386 systems; knot ranges [[0, 1, 2, 3], [0, 1, 3], [4, 5, 6]]; Mal'tsev knot/all found/none; hidden 0; ties 589/589; knots functional 164/164; certified {'4,5,6': True, '0,1,3': True, '0,1,2,3': True, '0,1,2,3,4,5,6': True}
+Z6: failure after 21 systems
+neither-knot: failure after 11 systems
+parity: no failure in 2000 systems; knot ranges [[0, 1]]; Mal'tsev knot/all found/found; hidden 0; ties 1086/1086; knots functional 954/954; certified {'0,1': True}
+Z3: no failure in 2000 systems; knot ranges [[0, 1, 2]]; Mal'tsev knot/all found/found; hidden 0; ties 5609/5609; knots functional 1153/1153; certified {'0,1,2': True}
+{
+ "block_survivors": [
+  "L-{222}",
+  "L-{223,232,322}",
+  "L-{223,232}",
+  "L-{223}",
+  "L-{}"
+ ],
+ "controls": {
+  "C1_Z6": true,
+  "C2_neither_knot_fails": true,
+  "C3_parity_Z3": true,
+  "C4_union_tops": true
+ },
+ "experiment": "CYCLE-TOPS-20261021-001A-E001",
+ "laws": 54,
+ "predictions": {
+  "H1": true,
+  "H2": true,
+  "H3": true,
+  "H4": true,
+  "H5": true,
+  "H6": true
+ },
+ "seconds": 139.6,
+ "signal": true
+}

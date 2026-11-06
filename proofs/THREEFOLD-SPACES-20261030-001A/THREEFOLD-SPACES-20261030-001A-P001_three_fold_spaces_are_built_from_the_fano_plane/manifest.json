@@ -1,0 +1,109 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREEFOLD-SPACES-20261030-001A-P001",
+  "canonical_id": "THREEFOLD-SPACES-20261030-001A-P001",
+  "kind": "proof",
+  "ticket": "THREEFOLD-SPACES-20261030-001A",
+  "proof": "THREEFOLD-SPACES-20261030-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The knot's three-fold spaces are built from the Fano plane",
+  "status": "Proved",
+  "claim": "For a connected cubic triple system H (n points, n lines of three points, every point on three lines, lines may repeat): (1) H is not 2-colourable iff it is minimally not 2-colourable iff its incidence matrix is sign-nonsingular (|det| = per > 0) iff every nice cycle of its incidence graph has length 2 mod 4 iff the 2-in 2-out digraph of any perfect matching has no even directed cycle (Seymour's linear-algebra argument; Bassett-Maybee-Quirk). (2) Nontrivial tight cuts of the incidence graph are 3-edge cuts whose two contractions are again cubic; perfect-matching signs factorize across the cut, so H is not 2-colourable iff both pieces are sign-nonsingular up to one common twist (one complemented incidence at the contracted vertex), and an untwisted non-colourable piece acts as a single point or line. (3) Hence Fano compositions (point and line splices; every n = 7 + 6k) are not 2-colourable, and by the duality of SPACE-SELECTION-20261030-001C the knot has three-fold spaces with 7 + 6k triangles for every k, obtained by substituting Fano gadgets into triangles or contacts (lambda(0) = 5^(k+1) on the checked ones). (4) Every non-colourable H is a Fano composition if no cubic brace has a sign-nonsingular signing with exactly one negative edge; McCuaig's theorem (F7 is the only strongly 2-connected digraph without even dicycles) settles the untwisted brace case, and the one-twist case is proved for the Heawood graph and for planar cubic braces (at least six nice 4-faces against at most two fixed by one edge). (5) The premise that the Fano plane is the only non-colourable cubic triple system is false: the 13-point Fano splice is linear and not 2-colourable. (6) A gadget all of whose contacts are two-fold phase locks or three-fold contacts of odd base count has no locks: the base and non-base slot counts force it, so the planned mixed gluings do not exist.",
+  "dependencies": [
+    "SPACE-SELECTION-20261030-001C",
+    "SPACE-SELECTION-20261030-001A"
+  ],
+  "evidence_modes": [
+    "construction",
+    "obstruction",
+    "proxy-control"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A connected cubic triple system on which the stated equivalences disagree.",
+    "A splice whose matching signs do not factorize, or a Fano composition that is 2-colourable.",
+    "A dual gadget of a Fano composition that is not exact at the knot.",
+    "A single negated incidence making the Heawood graph sign-nonsingular.",
+    "A gadget of locks and odd three-fold contacts that contains a lock."
+  ],
+  "lineage": {
+    "home_scope": "THREEFOLD-SPACES-20261030-001",
+    "epic_path": [
+      "THREEFOLD-SPACES-20261030-001"
+    ],
+    "parents": [
+      "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/manifest.json",
+      "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/result.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/manifest.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/result.json",
+      "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/manifest.json": "b66da6ad62e762adb3177017f4cc3dd8a27585e28cbc9f7d56f85af1b6f0a2ec",
+    "proofs/SPACE-SELECTION-20261030-001C/SPACE-SELECTION-20261030-001C-P001_three_fold_contacts_and_the_fano_gadget/result.json": "01edac6c88d0f1605787c11c3220128b6a806756b9b22c37d43066cafff629b1",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/manifest.json": "6c21a6b6b8c48ac64e7c6a5dc5524140b6fb6d6ba4a8c2a2cabc37b5ec40058a",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/result.json": "ca6571643442c03642551c7585e660310e06f36b0f21a75e4eea229425e3ee41",
+    "proofs/SPACE-SELECTION-20261030-001A/SPACE-SELECTION-20261030-001A-P001_the_gadget_criterion/gadget_lib.py": "b876a6a2d4b198b2e68eb99b3b9185809ebf3614d4ea6ad2e949b491aa8ac97b"
+  },
+  "paths": {
+    "manifest": "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+    "identity": "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/identity.json",
+    "directory": "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane",
+    "proof": "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/proof.md",
+    "result": "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+    "check": "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "threefold_spaces_reduced": true
+  },
+  "foundation_claim_scope": "Cubic 3-uniform hypergraphs (triple systems), their incidence matrices and digraphs; the three-fold odd gadgets of SPACE-SELECTION and the signed not-all-equal knot at the knot angle. The general classification is conditional on the stated one-twist lemma.",
+  "validation": {
+    "status": "checked: equivalences on Fano compositions and 300 random cubic systems; matching-sign factorization on two splices; compositions with 7 to 49 points non-colourable; dual gadgets with 7, 13, 19 triangles exact at the knot; one-twist lemma on the Heawood graph and two planar examples; mixed-gluing identity on all gadgets with n <= 5; controls fire; no human or external review",
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "classical inputs: Seymour 1974 (linear-algebra argument), Bassett-Maybee-Quirk (sign-nonsingularity and even cycles), tight cuts (Lovasz), Robertson-Seymour-Thomas 1999, McCuaig 2000; no overlap found (candidate local delta) for the sign-twist splice calculus and the reduction in this setting, and for the reading as the knot's three-fold spaces",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-10-30."
+  }
+}

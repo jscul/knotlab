@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 7 November 2026: published entirely from the research workspace
+
+- Everything in this repository now comes from our research workspace,
+  which is the single source of truth for it and for jscul.dev. The pages,
+  notes, Lean files, knot laboratory, tests and data inputs are written there
+  and published with the records.
+- The publisher moved into the workspace, so scripts/publish.py is removed
+  here. [data/published.json](data/published.json) records the digest of
+  every published file. A file edited here directly makes the next
+  publication stop and report it instead of overwriting it, and
+  `tests/test_records.py` reports it too.
+
 ## 7 November 2026: publication at epic closure
 
 - Publication now runs from the workspace's epic-closure command, in place
@@ -18,7 +30,7 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 ## 6 November 2026: automatic publication, and the tickets
 
 - New epics are now published here automatically when they close in our
-  research workspace. [scripts/publish.py](scripts/publish.py) copies their
+  research workspace. [scripts/publish.py](https://github.com/jscul/knotlab/blob/ac8eb7c/scripts/publish.py) copies their
   committed records and tickets and the documents in docs/, rebuilds the
   generated files, runs the tests and pushes, then updates jscul.dev.
 - [tickets/](tickets/) holds the tickets of every published folder and epic,

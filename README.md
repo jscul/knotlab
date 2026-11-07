@@ -81,7 +81,7 @@ hours.
 | [RANKING.md](RANKING.md) | The results ranked in five tiers by significance to the theory |
 | [tickets](tickets/) | The ticket that set each piece of work: objective, stop rule and outcome |
 | [data](data/) | The inputs of the generated files (lines of work, ranking tiers, notes, pending qualifications) and the results as JSON |
-| [scripts](scripts/) | `build.py` regenerates RESULTS.md, RANKING.md and data/; `publish.py` publishes new epics from our research workspace |
+| [scripts](scripts/) | `build.py` regenerates RESULTS.md, RANKING.md and the JSON in data/ |
 | [docs](docs/) | The working perspective: the knot intuition, the foundational thesis, the foundation's classical sources, and the program's vocabulary |
 | [proofs](proofs/) | Every proof since 19 October 2026: `proof.md`, `check.py`, frozen results and manifests |
 | [experiments](experiments/), [artifacts](artifacts/) | Frozen experiment contracts and their outputs |
@@ -109,24 +109,33 @@ history.
 
 ## How this repository is updated
 
-- **Records, automatically.** The command that closes an epic in our
-  research workspace runs [scripts/publish.py](scripts/publish.py). It copies
-  the epic's committed proofs, experiments, working notes and tickets byte for
-  byte, refreshes the documents in docs/, rebuilds the generated files with
-  [scripts/build.py](scripts/build.py), runs the tests and pushes. Work that
+Everything here is published from our research workspace, which is the source
+of truth for this repository and for [jscul.dev](https://jscul.dev).
+
+- **Records, automatically.** The command that closes an epic in the
+  workspace publishes the epic's committed proofs, experiments, working notes
+  and tickets byte for byte, and refreshes the documents in docs/. Work that
   has not been committed is never copied.
+- **Pages, code and data, from the workspace too.** INTUITIONS.md, THEORY.md,
+  FINDINGS.md, this README, the notes, the Lean files, the knot laboratory,
+  the tests, and the inputs in data/ (lines of work, ranking tiers, notes and
+  pending qualifications) are written in the workspace and published with the
+  records. [data/published.json](data/published.json) records what was last
+  published. A file edited here directly is reported, not overwritten, until
+  the change is made in the workspace.
+- **Generated here.** [scripts/build.py](scripts/build.py) rebuilds
+  RESULTS.md, RANKING.md and the JSON in data/ from the records, and the tests
+  run before every push. If a later result supersedes or qualifies a record
+  that a THEORY.md claim cites, `tests/test_curation.py` fails until the claim
+  says so.
 - **The site follows.** A GitHub Actions workflow in the site's repository
-  copies what [jscul.dev](https://jscul.dev) shows from here, checks and
-  builds it, and pushes. publish.py starts it after each publication, and it
-  also runs every six hours.
-- **Curated pages, by hand.** INTUITIONS.md, THEORY.md, FINDINGS.md and the
-  ranking tiers in [data/tiers.json](data/tiers.json) are written by hand. If
-  a later result supersedes or qualifies a record that a THEORY.md claim
-  cites, `tests/test_curation.py` fails until the claim says so.
+  copies what jscul.dev shows from here, checks and builds it, and pushes. It
+  starts after each publication, and also runs every six hours.
 - **Corrections.** A pending qualification is entered once, in
   [data/qualifications.json](data/qualifications.json). It then appears in
   RESULTS.md, on jscul.dev and in the checks of THEORY.md. Corrections are
-  recorded in [HISTORY.md](HISTORY.md).
+  recorded in [HISTORY.md](HISTORY.md), and are welcome as
+  [issues](https://github.com/jscul/knotlab/issues).
 
 ## What this does not claim
 

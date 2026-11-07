@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**198 current results** and 5 superseded ones, from 142 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**201 current results** and 5 superseded ones, from 143 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 8 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 64 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 67 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 142 epics with their closures
+- [Epics](#epics): all 143 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -494,6 +494,15 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A Fano atom acts as one** (`ATOM-ONE-20261107-001-D002`).
   In every knot space, whether a removal in a Fano atom creates at a line of another Fano atom does not depend on which of its lines went; far side by far side this is proved except at a receiving atom's cut lines with a six-pattern port relation, and on Fano trees without exception. On 277 computed spaces every such line receives exactly its closed verdict (154,165 pairs), the exception included.
   [proof P001](proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/proof.md), [proof P001](proofs/ATOM-ONE-20261107-001C/ATOM-ONE-20261107-001C-P001_the_exception_saved_and_fresh/proof.md), [epic closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Census 6 depends on how it is glued** (`GENUS-READ-20261107-001-D001`).
+  The creation test glues a far side's split-point lines to the gluing line's points in their listed order; the split point's signed stabilizer realizes every permutation for K4^(3), the Fano plane and census 58 but only two for census 6, which therefore has three gluings and changed with the order in 8,046 of 11,552 sampled pairs. Whether creation occurs and the other three far sides never depend on the order.
+  [proof P001](proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/proof.md), [epic closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Natively a Fano atom is homogeneous** (`GENUS-READ-20261107-001-D002`).
+  In every Fano tree every ordered pair of lines of a Fano atom gets one native far-side vector (no K4^(3), census 6 at one gluing of three, the Fano plane, census 58), and every atom acts as one natively, so FAR-READ's split step, given native vectors, cuts every atom of six or seven lines (none of 23 Fano trees read). The native reading of Fano trees is the yes/no twin rule.
+  [proof P001](proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/proof.md), [epic closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Native far sides separate atoms through glue, rows at atom lines do not** (`GENUS-READ-20261107-001-D003`).
+  Through K4^(3), the Fano plane and census 58 alone every Fano atom acts as one (1,065 of 1,065), and all 372 yes/no twins across atoms in 39 spaces are told apart, 114 only through their rows at glue lines. Twins on these native rows at atom lines read 234 of 277 spaces, merging atoms where they meet one plane piece.
+  [proof P001](proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/proof.md), [epic closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · Without ends, bond distance is a ruler that reads the lattice's dimension** (`LOGIC-AXIS-20261107-001-D001`).
   If a law's finitely supported moves are dense (no ends), every knot is chained at the moves' range, so bond distance grows linearly with separation and its balls recover the lattice's dimension from allowed states alone, with taxicab distance on the gauge plane and exactly t-s+1 along the atom thread. Per-variable nativity is not enough: Ledrappier's law plus a free field is native in every variable yet has knots joining points 2^k apart.
   [proof P001](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
@@ -851,6 +860,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | The sphere's count written out, and stronger proof systems (`COUNT-NOTE-20261107-001`) | [closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-NOTE-20261107-001/) |
 | 2026-11-07 | The knot's count in TFNP: PPADS-complete one-sided, PPAD-complete two-sided (`COUNT-TFNP-20261107-001`) | [closure](proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-TFNP-20261107-001/) |
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
+| 2026-11-07 | Reading the genus natively (`GENUS-READ-20261107-001`) | [closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-READ-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |

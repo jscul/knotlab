@@ -1,0 +1,118 @@
+{
+ "artifact_id": "GENUS-READ-20261107-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (both sets of maps); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/result.json": "passed",
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/manifest.json": "Proved",
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 every Fano atom acts as one on the gluing-free far sides (277 spaces)": {
+   "info": {
+    "Fano atoms": 1065,
+    "atoms acting as one on the gluing-free far sides": 1065,
+    "spaces": 277
+   },
+   "pass": true
+  },
+  "2 every pair of lines of two different atoms that are twins of the yes/no creation relation is told apart by the gluing-free far sides; where the difference lies": {
+   "info": {
+    "... told apart by the gluing-free far sides": 372,
+    "... where: between them, rows at atom lines, rows at other lines, columns from atom lines, columns from other lines": 114,
+    "... where: rows at atom lines, rows at other lines": 15,
+    "... where: rows at atom lines, rows at other lines, columns from atom lines": 1,
+    "... where: rows at atom lines, rows at other lines, columns from atom lines, columns from other lines": 29,
+    "... where: rows at atom lines, rows at other lines, columns from other lines": 99,
+    "... where: rows at other lines": 112,
+    "... where: rows at other lines, columns from atom lines": 2,
+    "spaces with lines of two atoms that are yes/no twins": 39,
+    "such pairs": 372
+   },
+   "pass": true
+  },
+  "3 native twin rules: twins on the gluing-free rows at atom lines read most spaces but merge atoms where they meet one plane piece; adding columns splits atoms": {
+   "info": {
+    "all": {
+     "rule: gluing-free rows and columns on atom lines": 11,
+     "rule: gluing-free rows on atom lines": 234,
+     "rule: gluing-free rows on atom lines, failures merging atoms": 38,
+     "rule: gluing-free rows on atom lines, failures splitting or dropping": 5,
+     "rule: yes/no two-stage (GLUE-READ C)": 219,
+     "spaces": 277,
+     "spaces with lines of two atoms that are yes/no twins": 39
+    },
+    "by kind": {
+     "fresh census, Fano trees": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 3,
+      "rule: yes/no two-stage (GLUE-READ C)": 3,
+      "spaces": 3
+     },
+     "fresh census, with plane glue": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 25,
+      "rule: yes/no two-stage (GLUE-READ C)": 25,
+      "spaces": 25
+     },
+     "fresh plane, with plane glue": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 33,
+      "rule: gluing-free rows on atom lines, failures merging atoms": 24,
+      "rule: gluing-free rows on atom lines, failures splitting or dropping": 1,
+      "rule: yes/no two-stage (GLUE-READ C)": 23,
+      "spaces": 58,
+      "spaces with lines of two atoms that are yes/no twins": 24
+     },
+     "saved census, Fano trees": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 17,
+      "rule: yes/no two-stage (GLUE-READ C)": 17,
+      "spaces": 17
+     },
+     "saved census, with a non-planar non-Heawood brace": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 1,
+      "rule: yes/no two-stage (GLUE-READ C)": 1,
+      "spaces": 1
+     },
+     "saved census, with plane glue": {
+      "rule: gluing-free rows and columns on atom lines": 11,
+      "rule: gluing-free rows on atom lines": 93,
+      "rule: yes/no two-stage (GLUE-READ C)": 93,
+      "spaces": 93
+     },
+     "saved random, Fano trees": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 3,
+      "rule: yes/no two-stage (GLUE-READ C)": 3,
+      "spaces": 3
+     },
+     "saved random, with plane glue": {
+      "rule: gluing-free rows and columns on atom lines": 0,
+      "rule: gluing-free rows on atom lines": 59,
+      "rule: gluing-free rows on atom lines, failures merging atoms": 14,
+      "rule: gluing-free rows on atom lines, failures splitting or dropping": 4,
+      "rule: yes/no two-stage (GLUE-READ C)": 54,
+      "spaces": 77,
+      "spaces with lines of two atoms that are yes/no twins": 15
+     }
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Native far sides through plane glue (computed on the 191 saved and 86 fresh maps, reading only K4^(3), the Fano plane and census 58, which ticket A shows do not depend on gluing). Every Fano atom acts as one on these far sides (1,065 of 1,065). All 372 pairs of lines of different atoms that are twins of the yes/no creation relation (39 spaces) are told apart by them; for 114 of these pairs the only difference lies in their rows at lines outside the atoms, where lines of one atom can differ too. Twins on the gluing-free rows at atom lines read the atoms of 234 of the 277 spaces (the yes/no two-stage rule: 219), merging atoms in 38 and splitting or dropping one in 5; twins on rows and columns read only 11, because an atom's lines differ in what they receive.",
+ "kind": "proof",
+ "proof": "GENUS-READ-20261107-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "GENUS-READ-20261107-001C"
+}

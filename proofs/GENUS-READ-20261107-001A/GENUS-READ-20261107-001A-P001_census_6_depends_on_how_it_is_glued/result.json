@@ -1,0 +1,93 @@
+{
+ "artifact_id": "GENUS-READ-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the far sides' symmetry at the split point: the stabilizer realizes all six permutations of its three lines for K4^(3), the Fano plane and census 58, and only two for census 6, which has three inequivalent gluings": {
+   "info": {
+    "K4^(3)": {
+     "orbit of the split point": 4,
+     "permutations of the split point's lines realized": 6,
+     "point orbits": [
+      4
+     ],
+     "points": 4,
+     "signed automorphisms": 24
+    },
+    "census 58": {
+     "orbit of the split point": 2,
+     "permutations of the split point's lines realized": 6,
+     "point orbits": [
+      2,
+      6
+     ],
+     "points": 8,
+     "signed automorphisms": 24
+    },
+    "census 6": {
+     "orbit of the split point": 6,
+     "permutations of the split point's lines realized": 2,
+     "point orbits": [
+      6
+     ],
+     "points": 6,
+     "signed automorphisms": 12
+    },
+    "the Fano plane": {
+     "orbit of the split point": 7,
+     "permutations of the split point's lines realized": 6,
+     "point orbits": [
+      7
+     ],
+     "points": 7,
+     "signed automorphisms": 168
+    }
+   },
+   "pass": true
+  },
+  "2 computed, on every third saved space and every fourth removal: the stored order reproduces the stored maps; K4^(3), the Fano plane, census 58 and creation itself are the same at every order of the gluing line's points; census 6 is not": {
+   "info": {
+    "(removal, gluing line) pairs": 12626,
+    "K4^(3): the same at every order": 11552,
+    "census 58: the same at every order": 11552,
+    "census 6 creates at 0 of 6 orders": 1967,
+    "census 6 creates at 2 of 6 orders": 8046,
+    "census 6 creates at 6 of 6 orders": 1539,
+    "census 6: the same at every order": 3506,
+    "creation: the same at every order": 11552,
+    "degenerate": 1074,
+    "non-degenerate": 11552,
+    "spaces": 64,
+    "stored order reproduces the stored map": 12626,
+    "the Fano plane: the same at every order": 11552
+   },
+   "pass": true
+  },
+  "3 the Fano plane alone: at its stored orders census 6 creates at 14 of the 42 ordered pairs (BRACE-TREE A); natively every pair is the same, census 6 creating at two of the six orders (one gluing of three)": {
+   "info": {
+    "census 6 at the stored order": 14,
+    "native vector (False, 2, True, True)": 42,
+    "ordered pairs": 42
+   },
+   "pass": true
+  }
+ },
+ "claim": "Census 6 depends on how it is glued (proved by exhaustive symmetry computation; measured). The creation test splits each far side at a point and glues the i-th line through it to the i-th listed point of the gluing line. The signed symmetries fixing that point permute its three lines in all six ways for K4^(3), the Fano plane and census 58, so their verdicts do not depend on that order; for census 6 only two, so it has three inequivalent gluings. Measured on every third saved space (11,552 non-degenerate pairs): K4^(3), the Fano plane, census 58 and whether creation occurs never change with the order; census 6 changes in 8,046 pairs, creating at none, exactly one or all three of its gluings. In the Fano plane alone census 6 creates at 14 of the 42 ordered pairs in the stored orders, but natively at one gluing of three at every pair. Census 58 is split at a point of its two-point orbit. The native repair counts census 6's gluings that create.",
+ "kind": "proof",
+ "proof": "GENUS-READ-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "GENUS-READ-20261107-001A"
+}

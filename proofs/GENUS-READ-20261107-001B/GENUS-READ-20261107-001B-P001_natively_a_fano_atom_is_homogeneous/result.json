@@ -1,0 +1,97 @@
+{
+ "artifact_id": "GENUS-READ-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/manifest.json": "Proved",
+     "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/result.json": "passed",
+     "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/manifest.json": "Proved",
+     "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/result.json": "passed",
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/manifest.json": "Proved",
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the composition is exact: on built Fano trees (stars, two levels, two cuts meeting), the native vectors it gives inside the centre atom equal those of the exact creation map at every order of every gluing line (computed once from relabeled masks and once from six separate verdicts, which agree)": {
+   "info": {
+    "designs": 12,
+    "mismatches": 0,
+    "ordered pairs": 420,
+    "relabeled masks against six verdicts, mismatches": 0
+   },
+   "pass": true
+  },
+  "2 the states closed Fano-tree sides can show: from the leaves, hanging children until nothing new appears, the union is reached in finitely many rounds": {
+   "info": {
+    "leaf (singles, pairs)": {
+     "L": [
+      3,
+      6
+     ],
+     "P": [
+      1,
+      1
+     ]
+    },
+    "rounds": 3,
+    "union (singles, pairs)": {
+     "L": [
+      4,
+      32
+     ],
+     "P": [
+      2,
+      5
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 native homogeneity: for every configuration of a Fano atom (253, up to collineations), with a leaf behind every cut and with the union of all reachable states behind every cut, every ordered pair of its lines gets the native vector (no K4^(3), census 6 at two of the six orders, the Fano plane, census 58)": {
+   "info": {
+    "ceiling native vector": 2990,
+    "configurations": 253,
+    "floor = ceiling": 2990,
+    "floor native vector": 2990,
+    "ordered pairs": 2990
+   },
+   "pass": true
+  },
+  "4 computed, on every saved and fresh Fano-tree space: inside every atom every ordered pair carries the native vector, every atom acts as one natively; the yes/no two-stage rule reads every space, while the frozen far-side rule, given native vectors, cuts atoms": {
+   "info": {
+    "... spaces where it cuts an atom of six or seven lines": 23,
+    "... with the native vector (no K4^(3), census 6 at two of six orders, Fano, census 58)": 3376,
+    "atoms": 102,
+    "atoms acting as one natively": 102,
+    "atoms of six or seven lines": 88,
+    "ordered pairs inside atoms": 3376,
+    "spaces": 23,
+    "the frozen far-side rule reads them with native vectors": 0,
+    "the frozen far-side rule reads them with stored census 6": 23,
+    "yes/no two-stage rule reads the atoms": 23
+   },
+   "pass": true
+  },
+  "5 ATOM-ONE B's bound at every order of the gluing line (masks relabeled; one slot order with all 15 port relations): deep points of the removal's side and mixed pairs never change creation, change far sides only in the exception, and with a free port relation change nothing at any order, so on Fano trees every atom acts as one natively": {
+   "info": {
+    "cases": 980,
+    "creation changed at some order": 0,
+    "far sides changed at some order: the exception": 84,
+    "free port relation: cases": 91,
+    "free port relation: unchanged at every order": 91
+   },
+   "pass": true
+  }
+ },
+ "claim": "Natively a Fano atom is homogeneous (proved for every Fano tree by an exhaustive finite check on top of ATOM-ONE A). Composing an atom with the deep relations its closed sides show is exact (12 built trees, 420 ordered pairs, every gluing order). The states closed Fano-tree sides can show are generated from the leaves, and their union is reached in three rounds. For all 253 configurations of a Fano atom, with a leaf behind every cut and with that union behind every cut, every ordered pair of its lines gets one native vector: no K4^(3), census 6 at one of its three gluings, the Fano plane, census 58 (2,990 of 2,990 pairs); every real side lies between, so the vector is forced. ATOM-ONE B's bound holds at every order of the gluing line (with a free port relation deep points change nothing at any order), so on Fano trees every atom also acts as one natively from outside. Hence every subset of an atom acts as one natively, and FAR-READ B's split step, given native vectors, cuts atoms: on the 23 saved and fresh Fano-tree spaces (102 atoms; 3,376 of 3,376 ordered pairs inside atoms native; every atom acting as one natively) the frozen rule reads all 23 with census 6 in its stored order and none natively, while the yes/no two-stage rule reads all 23. On Fano trees the native reading is the twin rule, proved by CHAIN-TRANSFER C under its condition N; the far sides add nothing inside atoms.",
+ "kind": "proof",
+ "proof": "GENUS-READ-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "GENUS-READ-20261107-001B"
+}

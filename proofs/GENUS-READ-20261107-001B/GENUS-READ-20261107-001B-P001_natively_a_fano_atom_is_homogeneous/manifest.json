@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GENUS-READ-20261107-001B-P001",
+  "canonical_id": "GENUS-READ-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "GENUS-READ-20261107-001B",
+  "proof": "GENUS-READ-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Natively a Fano atom is homogeneous",
+  "status": "Proved",
+  "claim": "Natively a Fano atom is homogeneous (proved for every Fano tree by an exhaustive finite check on top of ATOM-ONE A). Composing an atom with the deep relations its closed sides show is exact (12 built trees, 420 ordered pairs, every gluing order). The states closed Fano-tree sides can show are generated from the leaves, and their union is reached in three rounds. For all 253 configurations of a Fano atom, with a leaf behind every cut and with that union behind every cut, every ordered pair of its lines gets one native vector: no K4^(3), census 6 at one of its three gluings, the Fano plane, census 58 (2,990 of 2,990 pairs); every real side lies between, so the vector is forced. ATOM-ONE B's bound holds at every order of the gluing line (with a free port relation deep points change nothing at any order), so on Fano trees every atom also acts as one natively from outside. Hence every subset of an atom acts as one natively, and FAR-READ B's split step, given native vectors, cuts atoms: on the 23 saved and fresh Fano-tree spaces (102 atoms; 3,376 of 3,376 ordered pairs inside atoms native; every atom acting as one natively) the frozen rule reads all 23 with census 6 in its stored order and none natively, while the yes/no two-stage rule reads all 23. On Fano trees the native reading is the twin rule, proved by CHAIN-TRANSFER C under its condition N; the far sides add nothing inside atoms.",
+  "dependencies": [
+    "GENUS-READ-20261107-001A",
+    "ATOM-ONE-20261107-001A",
+    "CHAIN-TRANSFER-20261106-001C"
+  ],
+  "evidence_modes": [
+    "exact-computation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A configuration of a Fano atom in a Fano tree with two ordered pairs of lines carrying different native vectors.",
+    "A disagreement between the composition model and an exact creation map.",
+    "A Fano-tree space whose atoms the yes/no two-stage rule does not return."
+  ],
+  "lineage": {
+    "home_scope": "GENUS-READ-20261107-001",
+    "epic_path": [
+      "GENUS-READ-20261107-001"
+    ],
+    "parents": [
+      "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/manifest.json",
+      "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/result.json",
+      "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/gluing_lib.py",
+      "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/manifest.json",
+      "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/result.json",
+      "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/atom_lib.py",
+      "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/manifest.json",
+      "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/result.json",
+      "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/bound_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/manifest.json",
+      "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/result.json",
+      "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/rule_lib.py",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz",
+      "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/manifest.json": "43debaa7925579ea165bfbccf199e9ecf3684701aaec1547006df8f627d7770d",
+    "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/result.json": "aee0a112151b8830152755dd7c0397b936a62aa2fbc1c255172f27b83be91b4b",
+    "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/gluing_lib.py": "cb36c91c64ba1bb4535b5f58f1f5421475c46e6cbc3386f43e64278bf2e3f807",
+    "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/manifest.json": "844c94b33e1b70f743a211f2fa6070a0cea0081866aed338833b463889b58640",
+    "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/result.json": "4ae2fc3b043014f4495b71fe85c5578f27449b1bf2a4888dc5a1d7ecc01bf131",
+    "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/atom_lib.py": "18eea653dcfd0427ef41add5116f22160f5bb2c0c4682831623f4736cde352f6",
+    "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/manifest.json": "ccd354afd272344253c70b0abdc59f98a7ac3cceed7e4809362e4050929e4ec7",
+    "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/result.json": "3b0aae567ce43d84e5eb703e87038b07a48ef6b798cf253466a1e33146ee9538",
+    "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/bound_lib.py": "5bc9f97307fb54fdb68daddc282e3276fea5ac41f9d79ddbb668c8a50bdf9681",
+    "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/manifest.json": "fffe9356078829c5ef36d1dcef6669b60275eeca65563bb6d9ec61e49e18ae6e",
+    "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/result.json": "04cfcf4ee4a8f54b7fa5f9cdf8fef9e858b567cf2cb04d12590b095016214e88",
+    "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/rule_lib.py": "390daa83c4182aa1bf347d8fa8dada530564cb30cc37e8edeeb9e87166e4ff4a",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py": "fb87b642fc0d5779e4e4e0cbd8b852ba1032253b3ad0ff4d43f4a79bd66b2496",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py": "1f128469a7465b7b97ecbf7526a04145f49f36ee949602051a28e46b11c11e27",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py": "44d2a6f206c59138e1af3b852731c50e172310b7b010750f919f1d2d2496d56d",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py": "99b1e350243a998ac2bfc7ef9b6fc5ecd8c6724a404f83b562c60c2032b20677",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py": "cbfdd06e35b2ced652eb80c4fa066f0e972a51191021175f519673ab3211a5c0",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py": "799502c7c3524ec5375bc07ef0a3a1d2eb1cda3c19fde264a8f2cea801cf69a5",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721"
+  },
+  "paths": {
+    "manifest": "proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/manifest.json",
+    "identity": "proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/identity.json",
+    "directory": "proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous",
+    "proof": "proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/proof.md",
+    "result": "proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/result.json",
+    "check": "proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "native_homogeneity_proved": true
+  },
+  "foundation_claim_scope": "Every Fano atom of every Fano tree; the saved and fresh Fano-tree spaces as a computed check.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "proved by an exhaustive finite check on top of ATOM-ONE A; no human or external review",
+    "novelty": "New here: native homogeneity, and its consequence for FAR-READ B's split step."
+  }
+}

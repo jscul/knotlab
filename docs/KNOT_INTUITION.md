@@ -3038,6 +3038,34 @@ So network holes come in two kinds:
    - **Next (recommended, awaiting the owner).** Reading with the far sides (2/3): on the 191 saved maps, look for a rule that separates
      atoms meeting one plane piece without splitting atoms.
      - **The alternatives.** Glue relations from faces (1/3); non-Fano handles (1/3).
+
+   **2026-11-06: do handles govern counting hardness?** (`HANDLE-COUNT-20261106-001`).
+   - **The genus half is classical.** Counting colourings (with any signs and any weight per monochromatic line) is an even-subgraph sum
+     on the incidence graph. On a surface of genus g that takes 4^g determinants (Galluccio–Loebl, Tesler, Cimasoni). So counting is
+     fixed-parameter tractable in the genus and never hard at bounded genus. Nothing new is claimed here.
+   - **The knot's handles cost nothing (proved).** A Fano atom meets the rest of a space through three edges, and every even tensor on
+     three edges is a planar gadget: the first matchgate identity lives at four. So any number of atoms can be counted through.
+   - **The glue's handles can cost (proved).** Where three planar pieces meet at a square (a Robertson–Seymour–Thomas junction), the
+     junction can leave the planar class. Each such junction costs at most a factor 2 on the piece it hangs from, so counting takes
+     time 2^(junctions) times a polynomial. At the knot's law only squares with three twisted sides, or above them, cost.
+   - **On the knot's own spaces, atoms pay for the junctions (proved).** Every end piece of the glue needs an odd number of signs on a
+     square away from its junction. A plain space has no signs to spend: its signs come only from twisted sides of its tight cuts, and
+     those end in atoms. So junctions + planar glue pieces ≤ atoms − 2. The trisum of three cubes with three atoms (29 points) attains it.
+   - **So on the knot's spaces counting is fixed-parameter tractable in the number of atoms** (time 2^atoms times a polynomial), and
+     polynomial at any number of atoms when the glue is planar. The knot's hard couplings need unboundedly many atoms.
+   - **Off the knot's spaces, signs pay instead.** With signs, or on colourable plain Pfaffian braces, counting is #P-hard with no atom.
+   - **Computed.** On 257 spaces (the census to 26 points, 80 random spaces with plane glue, larger ones and 28 with trisum glue)
+     the bound holds and 771 exact counts agree two ways. Evaluations grow with junctions, never with atoms.
+   - **Reading.**
+     - Hardness lives in handles, but not in the knot's: in the glue's junctions.
+     - The knot can twist its glue only by spending atoms. Three ports are free; four ports can cost; at the knot's law, three twisted
+       sides at a square are what costs.
+     - The planar half of the owner's hypothesis holds. Pfaffian glue is not tractable by itself; on the knot's spaces it is paid for.
+   - **Provenance.** Genus: classical. Small separations and matchgate splitting: classical techniques. The junction bound and its
+     sharpness: no source found.
+   - **Next (recommended, awaiting the owner).** Native reading of junction handles (2/3): do exact creation maps read the glue's junctions
+     and the atoms that pay for them? Start on the 29-point space and the edge-atom chains.
+     - **The alternatives.** A hardness bound in the number of atoms (1/3); reading with the far sides (2/3, still pending).
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GLUE-READ-20261106-001B",
+    "HANDLE-COUNT-20261106-001A",
+    "THREEFOLD-SPINSUM-20261030-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HANDLE-COUNT-20261106-001B-P001"
+  },
+  "id": "HANDLE-COUNT-20261106-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exact computation. On the census and random three-fold spaces (GLUE-READ B's 191 spaces plus freshly built spaces whose glue is a Robertson-Seymour-Thomas trisum brace, decorated into plain spaces), tabulate atoms, signed incidences, brace kinds, junctions J and the bound of ticket A; compute weighted counts at hard couplings (lambda = 2 and a non-real lambda) and colouring counts under random signings both by an independent elimination counter and by ticket A's decomposition (tight cuts, trisum trees, junctions split when they fail the matchgate identity), and record by number of atoms how many junctions leave the matchgate class and how many planar evaluations the decomposition needs. Controls: a wrong junction split, a mis-signed piece, and the bound on a signed system with its signs ignored.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HANDLE-COUNT-20261106-001"
+  },
+  "parent": "HANDLE-COUNT-20261106-001",
+  "schema_version": 1,
+  "status": "Proved by HANDLE-COUNT-20261106-001B-P001 (exact computation): on 257 three-fold spaces (census to 26 points, 80 random with plane glue, 6 larger, 28 fresh with trisum glue) the junction bound J + p <= a + s - 2 holds wherever it applies (equality on the 13-point splice, twisted classes and the 29-point space); all 771 counts at lam = 2, lam = 1+i and colourings under random signings agree between the decomposition and an independent elimination; at most one junction per piece leaves the matchgate class, so cost follows junctions, never atoms",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Counts by number of atoms"
+}

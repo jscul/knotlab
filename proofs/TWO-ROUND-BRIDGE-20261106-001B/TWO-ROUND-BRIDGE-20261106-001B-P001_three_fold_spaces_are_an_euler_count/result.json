@@ -1,0 +1,622 @@
+{
+ "artifact_id": "TWO-ROUND-BRIDGE-20261106-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json": "passed",
+     "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "Proved",
+     "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "Proved",
+     "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/manifest.json": "Proved",
+     "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the Fano pieces: a block ties its ports, a dual block passes exactly a line's six patterns, T14 minus its root line passes not x0 = x1 = x2; each port relation is derived by resolution of small width (the constant cost of contracting a piece)": {
+   "info": {
+    "Fano block (minus a line)": {
+     "Davis-Putnam over the hidden points: clauses produced": 32,
+     "as expected": true,
+     "clauses left on the ports define the port relation": true,
+     "largest width": 4,
+     "points": 7,
+     "port patterns": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    "T14 minus its root line": {
+     "Davis-Putnam over the hidden points: clauses produced": 80,
+     "as expected": true,
+     "clauses left on the ports define the port relation": true,
+     "largest width": 4,
+     "points": 14,
+     "port patterns": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ]
+    },
+    "dual block (split at a point)": {
+     "Davis-Putnam over the hidden points: clauses produced": 40,
+     "as expected": true,
+     "clauses left on the ports define the port relation": true,
+     "largest width": 5,
+     "points": 10,
+     "port patterns": [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ]
+    }
+   },
+   "pass": true
+  },
+  "2 the Euler count: on every plane family member with Kasteleyn signs, every face carries an agreeing corner under every assignment, a line has one agreeing corner if satisfied and three if not, corners partition by lines and by faces, and faces exceed lines by two; flipping one sign breaks exactly the two faces through it (the check can fail)": {
+   "info": {
+    "control: octahedron k=3 with one sign flipped": {
+     "faces failing": 2
+    },
+    "ladder growth to 10 points, seed 0": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 10
+    },
+    "ladder growth to 10 points, seed 1": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 4,
+     "points": 10
+    },
+    "ladder growth to 10 points, seed 2": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 4,
+     "points": 10
+    },
+    "ladder growth to 14 points, seed 0": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 5,
+     "points": 14
+    },
+    "ladder growth to 14 points, seed 1": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 6,
+     "points": 14
+    },
+    "ladder growth to 14 points, seed 2": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 5,
+     "points": 14
+    },
+    "ladder growth to 20 points, seed 0": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 5,
+     "points": 20
+    },
+    "ladder growth to 20 points, seed 1": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 7,
+     "points": 20
+    },
+    "ladder growth to 20 points, seed 2": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 6,
+     "points": 20
+    },
+    "ladder growth to 30 points, seed 0": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 7,
+     "points": 30
+    },
+    "ladder growth to 30 points, seed 1": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 10,
+     "points": 30
+    },
+    "ladder growth to 30 points, seed 2": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 7,
+     "points": 30
+    },
+    "ladder growth to 40 points, seed 0": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 8,
+     "points": 40
+    },
+    "ladder growth to 40 points, seed 1": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 12,
+     "points": 40
+    },
+    "ladder growth to 40 points, seed 2": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 7,
+     "points": 40
+    },
+    "octahedron k=10": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 400
+    },
+    "octahedron k=2": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 16
+    },
+    "octahedron k=3": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 36
+    },
+    "octahedron k=4": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 64
+    },
+    "octahedron k=5": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 100
+    },
+    "octahedron k=6": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 144
+    },
+    "octahedron k=7": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 196
+    },
+    "octahedron k=8": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 256
+    },
+    "octahedron k=9": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 324
+    },
+    "prism over the 10-cycle": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 5,
+     "points": 10
+    },
+    "prism over the 12-cycle": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 6,
+     "points": 12
+    },
+    "prism over the 14-cycle": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 7,
+     "points": 14
+    },
+    "prism over the 4-cycle": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 2,
+     "points": 4
+    },
+    "prism over the 6-cycle": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 6
+    },
+    "prism over the 8-cycle": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 4,
+     "points": 8
+    },
+    "truncated octahedron": {
+     "certificate": true,
+     "faces minus lines": 2,
+     "most points on a face": 3,
+     "points": 12
+    }
+   },
+   "pass": true
+  },
+  "3 the corner map: assignments modulo complement correspond one to one to the corner sets of odd degree at every line and every face (the solutions of a parity system on the line-face graph); dimensions agree on every member, exhaustively on those with at most 20 points": {
+   "info": {
+    "ladder growth to 10 points, seed 0": {
+     "connected": true,
+     "corner graph edges": 30,
+     "corner graph vertices": 22,
+     "dimension of assignments modulo complement": 9,
+     "dimension of odd-degree corner sets": 9,
+     "exhaustive: distinct images": 512,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 512
+    },
+    "ladder growth to 10 points, seed 1": {
+     "connected": true,
+     "corner graph edges": 30,
+     "corner graph vertices": 22,
+     "dimension of assignments modulo complement": 9,
+     "dimension of odd-degree corner sets": 9,
+     "exhaustive: distinct images": 512,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 512
+    },
+    "ladder growth to 10 points, seed 2": {
+     "connected": true,
+     "corner graph edges": 30,
+     "corner graph vertices": 22,
+     "dimension of assignments modulo complement": 9,
+     "dimension of odd-degree corner sets": 9,
+     "exhaustive: distinct images": 512,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 512
+    },
+    "ladder growth to 14 points, seed 0": {
+     "connected": true,
+     "corner graph edges": 42,
+     "corner graph vertices": 30,
+     "dimension of assignments modulo complement": 13,
+     "dimension of odd-degree corner sets": 13,
+     "exhaustive: distinct images": 8192,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 8192
+    },
+    "ladder growth to 14 points, seed 1": {
+     "connected": true,
+     "corner graph edges": 42,
+     "corner graph vertices": 30,
+     "dimension of assignments modulo complement": 13,
+     "dimension of odd-degree corner sets": 13,
+     "exhaustive: distinct images": 8192,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 8192
+    },
+    "ladder growth to 14 points, seed 2": {
+     "connected": true,
+     "corner graph edges": 42,
+     "corner graph vertices": 30,
+     "dimension of assignments modulo complement": 13,
+     "dimension of odd-degree corner sets": 13,
+     "exhaustive: distinct images": 8192,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 8192
+    },
+    "ladder growth to 20 points, seed 0": {
+     "connected": true,
+     "corner graph edges": 60,
+     "corner graph vertices": 42,
+     "dimension of assignments modulo complement": 19,
+     "dimension of odd-degree corner sets": 19,
+     "exhaustive: distinct images": 524288,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 524288
+    },
+    "ladder growth to 20 points, seed 1": {
+     "connected": true,
+     "corner graph edges": 60,
+     "corner graph vertices": 42,
+     "dimension of assignments modulo complement": 19,
+     "dimension of odd-degree corner sets": 19,
+     "exhaustive: distinct images": 524288,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 524288
+    },
+    "ladder growth to 20 points, seed 2": {
+     "connected": true,
+     "corner graph edges": 60,
+     "corner graph vertices": 42,
+     "dimension of assignments modulo complement": 19,
+     "dimension of odd-degree corner sets": 19,
+     "exhaustive: distinct images": 524288,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 524288
+    },
+    "octahedron k=10": {
+     "connected": true,
+     "corner graph edges": 1200,
+     "corner graph vertices": 802,
+     "dimension of assignments modulo complement": 399,
+     "dimension of odd-degree corner sets": 399
+    },
+    "octahedron k=2": {
+     "connected": true,
+     "corner graph edges": 48,
+     "corner graph vertices": 34,
+     "dimension of assignments modulo complement": 15,
+     "dimension of odd-degree corner sets": 15,
+     "exhaustive: distinct images": 32768,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 32768
+    },
+    "prism over the 10-cycle": {
+     "connected": true,
+     "corner graph edges": 30,
+     "corner graph vertices": 22,
+     "dimension of assignments modulo complement": 9,
+     "dimension of odd-degree corner sets": 9,
+     "exhaustive: distinct images": 512,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 512
+    },
+    "prism over the 12-cycle": {
+     "connected": true,
+     "corner graph edges": 36,
+     "corner graph vertices": 26,
+     "dimension of assignments modulo complement": 11,
+     "dimension of odd-degree corner sets": 11,
+     "exhaustive: distinct images": 2048,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 2048
+    },
+    "prism over the 14-cycle": {
+     "connected": true,
+     "corner graph edges": 42,
+     "corner graph vertices": 30,
+     "dimension of assignments modulo complement": 13,
+     "dimension of odd-degree corner sets": 13,
+     "exhaustive: distinct images": 8192,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 8192
+    },
+    "prism over the 4-cycle": {
+     "connected": true,
+     "corner graph edges": 12,
+     "corner graph vertices": 10,
+     "dimension of assignments modulo complement": 3,
+     "dimension of odd-degree corner sets": 3,
+     "exhaustive: distinct images": 8,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 8
+    },
+    "prism over the 6-cycle": {
+     "connected": true,
+     "corner graph edges": 18,
+     "corner graph vertices": 14,
+     "dimension of assignments modulo complement": 5,
+     "dimension of odd-degree corner sets": 5,
+     "exhaustive: distinct images": 32,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 32
+    },
+    "prism over the 8-cycle": {
+     "connected": true,
+     "corner graph edges": 24,
+     "corner graph vertices": 18,
+     "dimension of assignments modulo complement": 7,
+     "dimension of odd-degree corner sets": 7,
+     "exhaustive: distinct images": 128,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 128
+    },
+    "truncated octahedron": {
+     "connected": true,
+     "corner graph edges": 36,
+     "corner graph vertices": 26,
+     "dimension of assignments modulo complement": 11,
+     "dimension of odd-degree corner sets": 11,
+     "exhaustive: distinct images": 2048,
+     "exhaustive: every image has odd degree everywhere": true,
+     "exhaustive: odd-degree corner sets": 2048
+    }
+   },
+   "pass": true
+  },
+  "4 Sherali-Adams: the level-3 relaxation restricted to local distributions on the lines and on the faces' point sets (consistent pair marginals) is infeasible on every family member whose faces carry at most three points and at most 40 points; restricted to the lines alone it is feasible on every member where some face's points lie in no line, so there the faces are what refutes (the check can fail); on the cube, K4^(3), every face lies in a line and the lines already refute": {
+   "info": {
+    "_controls where faces add point sets": 5,
+    "ladder growth to 10 points, seed 0": {
+     "lines only": "feasible",
+     "some face's points lie in no line": true,
+     "with faces": "infeasible"
+    },
+    "octahedron k=2": {
+     "lines only": "feasible",
+     "some face's points lie in no line": true,
+     "with faces": "infeasible"
+    },
+    "octahedron k=3": {
+     "lines only": "feasible",
+     "some face's points lie in no line": true,
+     "with faces": "infeasible"
+    },
+    "prism over the 4-cycle": {
+     "lines only": "infeasible",
+     "some face's points lie in no line": false,
+     "with faces": "infeasible"
+    },
+    "prism over the 6-cycle": {
+     "lines only": "feasible",
+     "some face's points lie in no line": true,
+     "with faces": "infeasible"
+    },
+    "truncated octahedron": {
+     "lines only": "feasible",
+     "some face's points lie in no line": true,
+     "with faces": "infeasible"
+    }
+   },
+   "pass": true
+  },
+  "5 decorating the octahedral family (T14 pieces at negated incidences) gives cubic triple systems that are not 2-colourable: unsigned three-fold spaces whose plane core is the octahedral glue, a single brace (its dual triangulation has no separating triangle), so their handle tree is a star of T14 pieces around one brace": {
+   "info": {
+    "octahedron k=2": {
+     "2-colourable": false,
+     "cubic": true,
+     "negated incidences decorated": 8,
+     "separating triangles of the glue's dual (0 = the glue is a brace)": 0,
+     "solver conflicts (CaDiCaL 1.5.3)": 208,
+     "three-fold points": 107
+    },
+    "octahedron k=3": {
+     "2-colourable": false,
+     "cubic": true,
+     "negated incidences decorated": 12,
+     "separating triangles of the glue's dual (0 = the glue is a brace)": 0,
+     "solver conflicts (CaDiCaL 1.5.3)": 539,
+     "three-fold points": 179
+    },
+    "octahedron k=4": {
+     "2-colourable": false,
+     "cubic": true,
+     "negated incidences decorated": 16,
+     "separating triangles of the glue's dual (0 = the glue is a brace)": 0,
+     "solver conflicts (CaDiCaL 1.5.3)": 5031,
+     "three-fold points": 259
+    },
+    "octahedron k=5": {
+     "2-colourable": false,
+     "cubic": true,
+     "negated incidences decorated": 20,
+     "separating triangles of the glue's dual (0 = the glue is a brace)": 0,
+     "solver conflicts (CaDiCaL 1.5.3)": 37757,
+     "three-fold points": 347
+    },
+    "octahedron k=6": {
+     "2-colourable": false,
+     "cubic": true,
+     "negated incidences decorated": 24,
+     "separating triangles of the glue's dual (0 = the glue is a brace)": 0,
+     "solver conflicts (CaDiCaL 1.5.3)": 1812645,
+     "three-fold points": 443
+    },
+    "separating triangles of the k-frequency octahedron, k = 1..8": {
+     "1": 0,
+     "2": 0,
+     "3": 0,
+     "4": 0,
+     "5": 0,
+     "6": 0,
+     "7": 0,
+     "8": 0
+    }
+   },
+   "pass": true
+  },
+  "6 resolution measurements (evidence, not proof): Davis-Putnam refutations of the signed octahedral spaces (upper bounds on size and width), the primal treewidth bound of the octahedral family (linear in k, so treewidth dynamic programming gives size 2^O(k) = 2^O(sqrt n)), and solver conflicts growing by a factor of at least five per step in k": {
+   "info": {
+    "Davis-Putnam refutations along a minimum-degree order (regular resolution; size and width are upper bounds)": {
+     "k=2 (16 points)": {
+      "clauses produced": 263,
+      "largest width": 7,
+      "refuted": true
+     },
+     "k=3 (36 points)": {
+      "clauses produced": 4477,
+      "largest width": 12,
+      "refuted": true
+     },
+     "k=4 (64 points)": {
+      "clauses produced": 123547,
+      "largest width": 18,
+      "refuted": true
+     }
+    },
+    "ratios of successive conflict counts": [
+     9.8,
+     10.0,
+     14.5,
+     23.0
+    ],
+    "solver conflicts on the signed octahedral family (CaDiCaL 1.5.3)": {
+     "k=2 (16 points)": 36,
+     "k=3 (36 points)": 354,
+     "k=4 (64 points)": 3530,
+     "k=5 (100 points)": 51332,
+     "k=6 (144 points)": 1182667
+    },
+    "treewidth upper bound of the primal graph (min-fill)": {
+     "k=10 (400 points)": 57,
+     "k=2 (16 points)": 8,
+     "k=3 (36 points)": 12,
+     "k=4 (64 points)": 18,
+     "k=5 (100 points)": 24,
+     "k=6 (144 points)": 30,
+     "k=7 (196 points)": 36,
+     "k=8 (256 points)": 44,
+     "k=9 (324 points)": 49
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Three-fold spaces are an Euler count. Resolution refutations compose over the handle tree at constant cost per Fano piece (Davis-Putnam derivations of the pieces' port relations, width at most 5), so every three-fold space costs at most its core plus O(number of pieces). On a plane core with Kasteleyn signs the contradiction is Euler's count: a satisfied line has exactly one agreeing corner, every face at least one, and there are two more faces than lines; assignments modulo complement are exactly the parity solutions on the line-face graph, and not-all-equal asks degree one at every line. Hence Sherali-Adams of level max(3, d) refutes every plane signed space whose faces carry at most d points (level 3 on the octahedral family) and constant level refutes its decorations, while resolution gets the treewidth bound n^O(1) 2^O(sqrt n) for every three-fold space. On the octahedral family, a single brace for every k, solver costs grow by factors of 7 to 50 per step in k; a resolution lower bound 2^Omega(sqrt n) is conjectured, not proved.",
+ "kind": "proof",
+ "proof": "TWO-ROUND-BRIDGE-20261106-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TWO-ROUND-BRIDGE-20261106-001B"
+}

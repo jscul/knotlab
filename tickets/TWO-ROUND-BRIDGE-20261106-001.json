@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PENDANT-LINE-20261106-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "TWO-ROUND-BRIDGE-20261106-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request (a new root epic in the complexity program, taking up the 2/3 alternative left by PENDANT-LINE-20261106-001): decide what PENDANT-LINE-20261106-001A's two-round rule (the elimination closure reaches every crossing knot within two rounds through the gluing line) means in standard proof-complexity terms. (1) Translate the closure into a standard system on the CNF/NAE encoding (resolution, Res(+), bounded-depth Frege) and state exactly what 'depth two through a cut' bounds: rounds, width, depth. (2) Test whether it composes over the tight-cut (handle) tree into a global upper bound for refuting three-fold spaces. (3) Compare with the late-October Tseitin results (NS/PC degree = cutwidth / carving width; size 2^Theta(tw)) and the closest literature, stating provenance and folklore risk. Standalone value: the nearest known work is interpolation through small separators and treewidth-based resolution upper bounds; the delta sought is an exact identification of native creation with a resolution width threshold, and the global proof complexity of minimally non-2-colourable cubic triple systems (SNS incidence matrices). Discovery over write-ups. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TWO-ROUND-BRIDGE-20261106-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-06: successful. The knot closure is width-3 resolution and creation is width 4: at a gluing line the closure's crossing knots are exactly the width-3 resolution consequences of the one-sided implicates on at most three variables (depth one or two, resolving only on the line's variables), and every new knot needs width exactly 4 (proved exhaustively). Refutations compose over the handle tree at constant cost per Fano piece, but no global resolution bound follows: on a plane core the contradiction is Euler's count (two more faces than lines), which Sherali-Adams refutes at level 3, while resolution gets only n^O(1) 2^O(sqrt n) and solver costs on the octahedral family grow exponentially in sqrt n. Three-fold spaces are the integer counterpart of Tseitin's parity. Next: is the sphere's Euler count hard for resolution? (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop at a proved statement, a counterexample, or a reduction to known results for each of (1) and (2), with (3) recorded with its provenance and folklore risk.",
+  "title": "The two-round rule as a proof-complexity bridge"
+}

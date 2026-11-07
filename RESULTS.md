@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**178 current results** and 5 superseded ones, from 131 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**182 current results** and 5 superseded ones, from 133 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -20,17 +20,17 @@ How to read an entry:
 ## Lines of work
 
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 11 results
-- [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 9 results
+- [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 11 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 5 results
-- [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 30 results
+- [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 57 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 131 epics with their closures
+- [Epics](#epics): all 133 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -101,6 +101,12 @@ How deep a hidden bit is: degree and size of refutations of charge networks.
 - **2026-10-20 · Hole-faithful refutations of Tseitin formulas need 2^Omega(treewidth); Urquhart's conjecture is the open problem** (`URQUHART-TSEITIN-20261020-001-D001`).
   Refutations of Tseitin formulas that never forget a variable at the region where the hole must lie need size 2^Omega(treewidth), because the hole of a random critical assignment stays uniform there and regions fragment size-biased; Davis-Putnam refutations are of this kind. A smaller refutation must re-read variables and forget at the hole's region, and Urquhart's conjecture is equivalent to the open 2^Omega(tw) problem at bounded degree.
   [proof P001](proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/proof.md), [epic closure](proofs/URQUHART-TSEITIN-20261020-001Z/URQUHART-TSEITIN-20261020-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · The knot closure is width-3 resolution, and creation is width 4** (`TWO-ROUND-BRIDGE-20261106-001-D001`).
+  At a gluing line, the crossing knots the elimination closure reaches are exactly the width-3 resolution consequences of the one-sided implicates on at most three variables, derived in depth one or two by resolving only on the line's variables. Every new crossing knot is implied by the same implicates and needs width exactly four, so native creation is the step from width three to width four at a three-variable cut.
+  [proof P001](proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/proof.md), [epic closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Three-fold spaces are an Euler count: easy for Sherali-Adams, only treewidth-bounded for resolution** (`TWO-ROUND-BRIDGE-20261106-001-D002`).
+  Refutations of three-fold spaces compose over the handle tree at constant cost per Fano piece, and on a plane core the contradiction is Euler's count of two more faces than lines, which Sherali-Adams of level three refutes. Resolution gets only the treewidth bound 2^O(sqrt n), and solver costs on the octahedral family grow exponentially in sqrt n, so the two-round rule does not compose into a global resolution bound.
+  [proof P001](proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/proof.md), [epic closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md)
 
 ## Composing like cycles: the algebra of knots
 
@@ -263,6 +269,12 @@ The spaces where the not-all-equal knot closes up: Fano atoms, handles, amplitud
 - **2026-11-01 · Every failing four-place law builds equality** (`FOUR-PREFER-20261101-001-D001`).
   Of the 20 classes of four-place knots, every class that fails on small 4-regular systems builds a link (directly or by lifting a three-point core that realizes the twelve class) and is NP-complete on 4-regular systems, while parity's count is polynomial and the clause and not-all-equal never fail. So, unless NP-complete problems are polynomial, a mutually selecting four-place knot would have to be one of five weak classes, none of which failed in any search.
   [proof P001](proofs/FOUR-PREFER-20261101-001B/FOUR-PREFER-20261101-001B-P001_every_failing_class_builds_a_link/proof.md), [proof P001](proofs/FOUR-PREFER-20261101-001D/FOUR-PREFER-20261101-001D-P001_mutual_selection_at_four_places/proof.md), [proof P001](proofs/FOUR-PREFER-20261101-001A/FOUR-PREFER-20261101-001A-P001_every_four_place_knot/proof.md), [epic closure](proofs/FOUR-PREFER-20261101-001Z/FOUR-PREFER-20261101-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · On the knot's spaces, junctions are paid for by atoms** (`HANDLE-COUNT-20261106-001-D001`).
+  For every simple Pfaffian cubic bipartite graph other than the Heawood graph and every Pfaffian signing sigma, its Robertson-Seymour-Thomas junctions J, planar braces p and Heawood braces a satisfy J + p <= a + |sigma| - 2, attained by the trisum of three cubes with three edge atoms. So on hypergraphs not 2-colourable without signs every weighted colouring count takes time poly(n) 2^(a-2), while on Pfaffian systems in general counting is #P-hard with no Heawood brace.
+  [proof P001](proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/proof.md), [epic closure](proofs/HANDLE-COUNT-20261106-001Z/HANDLE-COUNT-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Three ports are free; junctions cost a factor two** (`HANDLE-COUNT-20261106-001-D002`).
+  For 3-regular 3-uniform hypergraphs with Pfaffian incidence graphs, any signs and any weight per monochromatic edge, three-edge tight cuts cost nothing and each 4-sum junction violating the matchgate identity costs at most a factor two at its piece. For 2-colourings only junctions at or above squares with three twisted branches violate it, so counting takes time poly(n) 2^b, between the polynomial unbranched case and the #P-hard branched one.
+  [proof P001](proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/proof.md), [epic closure](proofs/HANDLE-COUNT-20261106-001Z/HANDLE-COUNT-20261106-001Z-P001_epic_closure/proof.md)
 
 ## Native creation, genus and selection
 
@@ -782,5 +794,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-05 | The two-bit screening lemma (`TWO-BIT-SCREEN-20261105-001`) | [closure](proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-SCREEN-20261105-001/) |
 | 2026-11-06 | The touching rule at every distance (`CHAIN-TRANSFER-20261106-001`) | [closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-TRANSFER-20261106-001/) |
 | 2026-11-06 | Reading through plane glue (`GLUE-READ-20261106-001`) | [closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/GLUE-READ-20261106-001/) |
+| 2026-11-06 | Do handles govern counting hardness? (`HANDLE-COUNT-20261106-001`) | [closure](proofs/HANDLE-COUNT-20261106-001Z/HANDLE-COUNT-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/HANDLE-COUNT-20261106-001/) |
 | 2026-11-06 | The pendant-line statement (`PENDANT-LINE-20261106-001`) | [closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/PENDANT-LINE-20261106-001/) |
+| 2026-11-06 | The two-round rule as a proof-complexity bridge (`TWO-ROUND-BRIDGE-20261106-001`) | [closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-ROUND-BRIDGE-20261106-001/) |
 

@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-COUPLING-20261031-001B",
+    "PLAIN-BRACE-20261031-001B",
+    "PLAIN-COUNT-20261031-001B",
+    "SEYMOUR-COUNT-20261030-001B",
+    "SOFT-CROSS-20261031-001B",
+    "THREEFOLD-AMPLITUDE-20261030-001A",
+    "THREEFOLD-AMPLITUDE-20261030-001C",
+    "THREEFOLD-GRAMMAR-20261030-001A",
+    "TWIST-COUNT-20261030-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HANDLE-COUNT-20261106-001A-P001"
+  },
+  "id": "HANDLE-COUNT-20261106-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof. (1) For a Pfaffian cubic bipartite graph, every signing and every coupling lambda, the weighted 2-colouring count is computed with Sum over trisum pieces of 8*2^c(piece) planar matchgate (FKT) evaluations plus polynomial work, where c(piece) is the number of the piece's child junctions whose tensor fails the matchgate identity: tight 3-edge cuts are free (even ternary tensors are matchgates) and a junction leaves the class at most once per host by splitting it into two matchgates; hence time poly(n)*2^J with J the number of Robertson-Seymour-Thomas junctions, and poly(n)*2^b for lambda = 0 with b the number of junctions with three twisted branches. (2) In every three-fold space, junctions are paid for by atoms: J <= #atoms + s - 2 (s = signed incidences; s = 0 for plain spaces), because every end piece of a trisum tree has a square face away from its junction, which needs a negation, and in a plain space negations exist only at contracted twisted sides. (3) Corollaries: on plain three-fold spaces every count in the family is computable in time poly(n)*2^(#atoms); off the knot's spaces signs pay for junctions and counting is #P-hard with no atoms at all (PLAIN-BRACE, SOFT-CROSS). State the classical genus theorem (4^g Pfaffians) as background with exact sources.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HANDLE-COUNT-20261106-001"
+  },
+  "parent": "HANDLE-COUNT-20261106-001",
+  "schema_version": 1,
+  "status": "Proved by HANDLE-COUNT-20261106-001A-P001: three-edge tight cuts (Fano atoms) cost nothing and each Robertson-Seymour-Thomas junction whose tensor violates the matchgate identity costs a factor 2 at its piece (time poly(n) 2^J for every signing and coupling on Pfaffian incidence graphs; at the knot's law only squares with three twisted branches cost); for every simple Pfaffian cubic bipartite graph other than Heawood and every Pfaffian signing sigma, J + p <= a + |sigma| - 2, attained by the trisum of three cubes with three edge atoms; so every count on a plain three-fold space takes poly(n) 2^(a-2) (polynomial with planar glue), while off the knot's plain spaces counting is #P-hard with no atom; FPT in genus is classical (cited)",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Which handles cost: tight cuts are free, junctions are paid for by atoms"
+}

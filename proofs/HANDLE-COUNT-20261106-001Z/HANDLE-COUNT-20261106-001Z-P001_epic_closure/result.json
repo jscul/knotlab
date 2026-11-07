@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "HANDLE-COUNT-20261106-001Z-P001",
+ "kind": "proof",
+ "ticket": "HANDLE-COUNT-20261106-001Z",
+ "proof": "HANDLE-COUNT-20261106-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing HANDLE-COUNT-20261106-001: one line per conclusion with its novelty label and evidence (tickets A and B), and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/manifest.json": "Proved",
+   "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/result.json": "passed",
+   "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/manifest.json": "Proved",
+   "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "a wrong digest is rejected": true,
+  "a missing note is detected": true
+ },
+ "failures": []
+}

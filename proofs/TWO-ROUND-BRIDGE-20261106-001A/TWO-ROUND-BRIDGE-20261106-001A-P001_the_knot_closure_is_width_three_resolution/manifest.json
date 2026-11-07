@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TWO-ROUND-BRIDGE-20261106-001A-P001",
+  "canonical_id": "TWO-ROUND-BRIDGE-20261106-001A-P001",
+  "kind": "proof",
+  "ticket": "TWO-ROUND-BRIDGE-20261106-001A",
+  "proof": "TWO-ROUND-BRIDGE-20261106-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The knot closure is width-3 resolution",
+  "status": "Proved",
+  "claim": "The knot closure is width-3 resolution, and creation is width 4. At a gluing line (any near side showing the line's six patterns, the four census far sides): two knots sharing two variables have width-3 resolvents exactly when their forbidden patterns relate the shared variables differently, and the resolvents are then knots; the crossing knots the elimination closure reaches are exactly the crossing knots that resolution of width 3 derives from the one-sided implicates on at most three variables, each in depth one ({c, x, y}) or two ({c, x, w}, {c, c', x}), resolving only on the gluing line's variables and along a linear chain from one far knot through at most two near knots; every new crossing knot is still implied by those implicates and is derived from them in width exactly four, depth two, again resolving only on gluing-line variables. The rule's literal pairs step is usually not a resolution step (in 1,645,912 of 1,685,232 local instances every literal pairs step is sign-incompatible), but another depth-two route always is. Proved from the elimination lemma, PENDANT-LINE-20261106-001A and exhaustive checks of the local data.",
+  "dependencies": [
+    "PENDANT-LINE-20261106-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "Two knots sharing two variables whose width-3 resolvents exist without sign-compatibility, or are not the implied knots.",
+    "A crossing knot reached by the two-round rule that width-3 resolution from the one-sided implicates on its variables and the gluing line does not derive, or the converse.",
+    "A new crossing knot not implied by the one-sided implicates on at most three variables, or derivable from them in width 3, or not in width 4."
+  ],
+  "lineage": {
+    "home_scope": "TWO-ROUND-BRIDGE-20261106-001",
+    "epic_path": [
+      "TWO-ROUND-BRIDGE-20261106-001"
+    ],
+    "parents": [
+      "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/result.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py",
+      "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/manifest.json": "acb61d15007af84690e09e533c52805ae878898308f4237d50b15131295e106c",
+    "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/result.json": "d179fa894b8a3871d0fb194fc9110b95ea433381a35a1831960ce65ec1f63900",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "506601817a95f7b77743b7a2bf78286095257ed8df1ee7954c50824ae08e8464",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "3be6062ee3f3466dd3cb8ac31c5912ca71c3b384ea5363894c3755ed696650cd",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py": "799502c7c3524ec5375bc07ef0a3a1d2eb1cda3c19fde264a8f2cea801cf69a5",
+    "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py": "402465fa2b12961a94b1a0cc9d0d12c704a556f2da0e3ec6bb2faa354d1f3512"
+  },
+  "paths": {
+    "manifest": "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/manifest.json",
+    "identity": "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/identity.json",
+    "proof": "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/proof.md",
+    "result": "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/result.json",
+    "check": "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/check.py",
+    "directory": "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every complement-closed near relation on the gluing line's three points and up to three further classes showing the line's six patterns, against every far point, pair and triple of the four census far sides, as in PENDANT-LINE-20261106-001A.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06.",
+    "status": "elimination lemma and translation proved by hand from PENDANT-LINE-20261106-001A; local data verified exhaustively; no human or external review",
+    "novelty": "known-with-delta: interpolation through a three-variable interface and bounded-width resolution as local consistency are classical; new here are the exact identification of the knot closure with width-3 resolution and of creation with the width-4 crossing implicates"
+  }
+}

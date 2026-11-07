@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TWO-ROUND-BRIDGE-20261106-001B-P001",
+  "canonical_id": "TWO-ROUND-BRIDGE-20261106-001B-P001",
+  "kind": "proof",
+  "ticket": "TWO-ROUND-BRIDGE-20261106-001B",
+  "proof": "TWO-ROUND-BRIDGE-20261106-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Three-fold spaces are an Euler count",
+  "status": "Proved",
+  "claim": "Three-fold spaces are an Euler count. Resolution refutations compose over the handle tree at constant cost per Fano piece (Davis-Putnam derivations of the pieces' port relations, width at most 5), so every three-fold space costs at most its core plus O(number of pieces). On a plane core with Kasteleyn signs the contradiction is Euler's count: a satisfied line has exactly one agreeing corner, every face at least one, and there are two more faces than lines; assignments modulo complement are exactly the parity solutions on the line-face graph, and not-all-equal asks degree one at every line. Hence Sherali-Adams of level max(3, d) refutes every plane signed space whose faces carry at most d points (level 3 on the octahedral family) and constant level refutes its decorations, while resolution gets the treewidth bound n^O(1) 2^O(sqrt n) for every three-fold space. On the octahedral family, a single brace for every k, solver costs grow by factors of 7 to 50 per step in k; a resolution lower bound 2^Omega(sqrt n) is conjectured, not proved.",
+  "dependencies": [
+    "TWO-ROUND-BRIDGE-20261106-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A Fano piece whose port relation is not derivable by resolution in the stated width.",
+    "A Kasteleyn-signed plane space with a face that can carry no agreeing corner, or with faces minus lines other than two.",
+    "A plane space whose restricted Sherali-Adams relaxation on lines and faces is feasible."
+  ],
+  "lineage": {
+    "home_scope": "TWO-ROUND-BRIDGE-20261106-001",
+    "epic_path": [
+      "TWO-ROUND-BRIDGE-20261106-001"
+    ],
+    "parents": [
+      "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/manifest.json",
+      "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/result.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/manifest.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py",
+      "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/manifest.json": "680c1b0b0ee8d27e3c54d3c690a5a2200c6112c241f9c0dd512e333319fe0c89",
+    "proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/result.json": "d06d4aaad50b26d105643fe10226c6b10d5651cb76d505610da261448ff730dc",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/manifest.json": "4438d410ca0ec668cce8870f3fda5dd4ff90a791c37ed4826d3d1871900bd493",
+    "proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-20261102-001A-P001_a_planar_removed_side_creates_nothing/planar_lib.py": "f356dec27daabe269633e6dd9e1a66274d8330efcff21018862ca95318459f7c",
+    "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/manifest.json": "66ed78f548b97b11da91081b7c6d197ee038d30a7f159514e5a7c470762c43a4",
+    "proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/result.json": "61fe972294b32ab67e4f58dbb8c0e03d86cbb9b501ee8767c09b17118fc203ce",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/manifest.json": "b83e1823674625548ab2038389f4c4e10dc6159d6eb57fa5d2ccb4db56e0ddab",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/result.json": "0c0936cfd650698294cae9e108e39378f36904c45196f32a094632002fbc7bde",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f"
+  },
+  "paths": {
+    "manifest": "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/manifest.json",
+    "identity": "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/identity.json",
+    "proof": "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/proof.md",
+    "result": "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/result.json",
+    "check": "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/check.py",
+    "directory": "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Fano pieces (block, dual block, T14), Kasteleyn-signed plane knot spaces of the octahedral (Goldberg-Coxeter) family, ladder growth, prisms and the truncated octahedron, and their decorations into three-fold spaces.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06.",
+    "status": "theorems proved by hand; finite claims and measurements checked; no human or external review",
+    "novelty": "known-with-delta: planar max-cut duality (Barahona-Mahjoub), Kasteleyn, and the mutilated chessboard are the nearest known results; the delta is the reading of three-fold spaces as an Euler count with its proof-complexity consequences."
+  }
+}

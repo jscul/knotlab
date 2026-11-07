@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWO-ROUND-BRIDGE-20261106-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TWO-ROUND-BRIDGE-20261106-001B-P001"
+  },
+  "id": "TWO-ROUND-BRIDGE-20261106-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Test whether cut-local derivations compose over the tight-cut (handle) tree into a global upper bound for refuting three-fold spaces (non-2-colourable cubic triple systems) and signed planar knot spaces: prove the composition lemma along three-port cuts, identify what remains after contracting Fano atoms, and decide whether resolution width or size is bounded globally, by a proof, a counterexample family with growing width, or a reduction to known results.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TWO-ROUND-BRIDGE-20261106-001"
+  },
+  "parent": "TWO-ROUND-BRIDGE-20261106-001",
+  "schema_version": 1,
+  "status": "Proved by TWO-ROUND-BRIDGE-20261106-001B-P001: three-fold spaces are an Euler count. Refutations compose over the handle tree at constant cost per Fano piece (Davis-Putnam: width at most 5, at most 80 clauses); on a plane Kasteleyn core the contradiction is Euler's count (one agreeing corner per satisfied line, at least one per face, two more faces than lines), and assignments modulo complement are the parity solutions on the line-face graph; Sherali-Adams of level max(3, d) refutes plane signed spaces with at most d points per face (level 3 on the octahedral family; constant level on its three-fold decorations); every three-fold space has resolution refutations of size n^O(1) 2^O(sqrt n). On the octahedral family (one brace for every k) solver costs grow 7 to 50 times per step in k; a resolution lower bound 2^Omega(sqrt n) is conjectured, not proved",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Composition over the handle tree and the global cost"
+}

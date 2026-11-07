@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261031-001",
+    "GLUE-READ-20261106-001Z",
+    "KNOT-COUPLING-20261031-001Z",
+    "THREEFOLD-GRAMMAR-20261030-001Z",
+    "THREEFOLD-SURFACES-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "HANDLE-COUNT-20261106-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request (new question, 2026-11-06): do handles govern counting hardness? Background: plain Pfaffian triple systems are #P-hard to count (PLAIN-COUNT, PLAIN-BRACE); #col(H - L) is polynomial on every three-fold space (SEYMOUR-COUNT); the knot's amplitude is +-5^atoms times Tutte numbers of the planar glue (THREEFOLD-AMPLITUDE); native creation reads the Fano-atom (handle) tree (BRACE-TREE to GLUE-READ). Hypothesis: planar/Pfaffian glue is tractable and hardness lives in the handles. Decide whether these counts are fixed-parameter tractable in the number of Fano atoms (genus), or hard already at bounded genus. Start from the classical precedent (perfect matchings on genus-g graphs by 4^g Pfaffians: Galluccio-Loebl, Tesler) and state its provenance first; compute counts by number of atoms on the census and random spaces; look for a genus-parameterized algorithm or a hardness reduction at fixed genus. Standalone value relative to the nearest known work: the classical genus theorems parameterize by the surface; the question here is which handles of the knot's own spaces (Fano atoms versus glue junctions) carry hardness. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HANDLE-COUNT-20261106-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-06: successful. Counting colourings of the knot's spaces (any signs, any weight per monochromatic line) is fixed-parameter tractable in the genus by classical theorems (4^g Pfaffians: Galluccio-Loebl, Tesler, Cimasoni), so never hard at bounded genus. New: Fano atoms cost nothing (three-edge cuts are matchgates); hardness enters only at Robertson-Seymour-Thomas junctions, each costing a factor 2 (time poly 2^J; at the knot's law poly 2^b, b = squares with three twisted branches); and every Pfaffian graph obeys J + p <= a + |sigma| - 2, sharp at a 29-point space, so on the knot's plain spaces counting is FPT in the number of atoms (poly 2^(a-2), polynomial with planar glue), while with signs, or on colourable plain Pfaffian braces, it is #P-hard with no atom. 257 spaces and 771 exact counts agree. Next: Continue (2/3), native reading of junction handles",
+  "status_class": "complete",
+  "stop_rule": "Stop when fixed-parameter tractability in the number of Fano atoms (or genus) is proved, refuted by a reduction, or reduced to a known theorem, with the provenance of every part stated.",
+  "title": "Do handles govern counting hardness?"
+}

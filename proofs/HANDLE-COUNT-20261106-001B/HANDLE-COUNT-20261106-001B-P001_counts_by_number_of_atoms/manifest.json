@@ -1,0 +1,122 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HANDLE-COUNT-20261106-001B-P001",
+  "canonical_id": "HANDLE-COUNT-20261106-001B-P001",
+  "kind": "proof",
+  "ticket": "HANDLE-COUNT-20261106-001B",
+  "proof": "HANDLE-COUNT-20261106-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Counts by number of atoms",
+  "status": "Proved",
+  "claim": "Counts by number of atoms. On 257 three-fold spaces (the census up to 26 points, GLUE-READ B's 80 random spaces with plane glue, six larger spaces and 28 fresh spaces with trisum glue), ticket A's bound J + p <= a + s - 2 holds on every space it covers (the Fano plane is excluded), with equality on the 13-point splice, on twisted classes, and on the 29-point plain space with trisum glue; all 771 weighted counts (lam = 2, lam = 1+i, and colourings under random signings) agree between ticket A's decomposition and an independent elimination; at most one junction per piece violates the matchgate identity, and evaluations grow with the junctions, never with the number of atoms. The trisum braces' genera are 1 or 2 for one to three junctions.",
+  "dependencies": [
+    "GLUE-READ-20261106-001B",
+    "HANDLE-COUNT-20261106-001A",
+    "THREEFOLD-SPINSUM-20261030-001A"
+  ],
+  "evidence_modes": [
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "exact-computation"
+    ]
+  },
+  "failure_conditions": [
+    "A space where J + p > a + s - 2 (s the fewest signs in its switching class).",
+    "A count where the decomposition and the independent elimination disagree.",
+    "A piece evaluated other than 2^(violating junctions) times."
+  ],
+  "lineage": {
+    "home_scope": "HANDLE-COUNT-20261106-001",
+    "epic_path": [
+      "HANDLE-COUNT-20261106-001"
+    ],
+    "parents": [
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/manifest.json",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/result.json",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/junction_lib.py",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/manifest.json",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz",
+      "proofs/THREEFOLD-SPINSUM-20261030-001A/THREEFOLD-SPINSUM-20261030-001A-P001_spin_sectors_of_the_knots_count/manifest.json",
+      "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/SEYMOUR-COUNT-20261030-001B/SEYMOUR-COUNT-20261030-001B-P001_polynomial_counting_on_seymours_cubic_bound/seymour_lib.py",
+      "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/manifest.json": "8e56bce6327a5a49884f6420140f1040ddf0226bb77656e0f15b4c8b723dec20",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/result.json": "4bcd85d2631e65cdbf801591887d6e766d24dc02e56bcc82110f5bd52fc7ad42",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/junction_lib.py": "f7c03c80ee784b086f684a5a4b7e22c0a81050760d250cf811f14286af17c0f9",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py": "4f2ed0842d316c96985bc9fea2ffb68c2e7465f02e8cfabf39b63d2725abb730",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/manifest.json": "56c72f0529f8e9cc332b469172f814a20cd25d6faa6f513f3569c8f848b7cc46",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "proofs/THREEFOLD-SPINSUM-20261030-001A/THREEFOLD-SPINSUM-20261030-001A-P001_spin_sectors_of_the_knots_count/manifest.json": "b03d043d8ebe5e10bc47cf89681d1447eacb2bdcf380cd9e0bf6ab1620b3b64b",
+    "proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/surface_lib.py": "0789a72111c3cb32fb4e29806061d95b94ea6facc87a83ade345ca8e5fbf4ed7",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001B/THREEFOLD-GRAMMAR-20261030-001B-P001_census_with_doubled_incidences/census_lib.py": "b128dbc6be5a114d6d978b718a738a04d5393b4ae1fe5567d6bc119d2b16a7ba",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/SEYMOUR-COUNT-20261030-001B/SEYMOUR-COUNT-20261030-001B-P001_polynomial_counting_on_seymours_cubic_bound/seymour_lib.py": "ba48169ea61af2ff03a976bcec47961adf8de44f196e235c0ae4064fb50409ae",
+    "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py": "81263473004bc8e55e5851d658f53d81a2aae79bc1fe9b9cc1a1a22cb82e1753",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/manifest.json",
+    "identity": "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/identity.json",
+    "directory": "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms",
+    "proof": "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/proof.md",
+    "result": "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/result.json",
+    "check": "proofs/HANDLE-COUNT-20261106-001B/HANDLE-COUNT-20261106-001B-P001_counts_by_number_of_atoms/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "counts_by_atoms_checked": true
+  },
+  "foundation_claim_scope": "The stated finite families only: census classes up to 26 points, GLUE-READ B's 80 random spaces, six larger spaces and fresh decorated trisum spaces of at most 60 points.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06; counts compared with an independent elimination over point colours.",
+    "status": "checked: 257 spaces, 771 counts, bound on 256 spaces, controls fire; no human or external review",
+    "novelty": "finite validation of ticket A; no external claim"
+  }
+}

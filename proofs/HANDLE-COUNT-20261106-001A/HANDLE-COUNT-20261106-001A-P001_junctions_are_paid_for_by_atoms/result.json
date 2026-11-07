@@ -1,0 +1,1247 @@
+{
+ "schema_version": 1,
+ "artifact_id": "HANDLE-COUNT-20261106-001A-P001",
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash": {
+   "ok": true,
+   "detail": {
+    "parents": 22,
+    "mismatched": {}
+   }
+  },
+  "1 Lemma 1: the Hadamard form at every coupling and signing (symbolic)": {
+   "ok": true,
+   "detail": {
+    "line": "w_lam(x xor s) -> (-1)^(s.y) [2lam+6, 0, 2lam-2, 0], all 8 sign patterns",
+    "points": "equality on d legs -> 2 EVEN_d, d = 1..4",
+    "u": "ratio (lam-1)/(lam+3); lam = 0 gives -1/3 (the knot's law), lam = -3 a pole (the dimer law)"
+   }
+  },
+  "2 Lemma 2: every even ternary signature [f000, f011, f101, f110] with nonzero f011, f101, f110 is the perfect-matching signature of a planar K4-with-centre gadget (symbolic); degenerate cases are classical (Valiant; Cai-Gorenstein)": {
+   "ok": true,
+   "detail": {
+    "gadget": {
+     "(0, 0, 0)": "f000",
+     "(0, 0, 1)": "0",
+     "(0, 1, 0)": "0",
+     "(0, 1, 1)": "u1",
+     "(1, 0, 0)": "0",
+     "(1, 0, 1)": "u2",
+     "(1, 1, 0)": "u3",
+     "(1, 1, 1)": "0"
+    }
+   }
+  },
+  "3 Lemma 3: every even 4-ary tensor is the sum of two matchgate signatures": {
+   "ok": true,
+   "detail": {
+    "symbolic": "for each of the 8 entries as anchor, solving MGI for the complementary entry gives MGI(M) = 0 identically",
+    "random": "4000 random even tensors (integer and Gaussian, about 30% zero entries): M + C = hat, MGI(M) = MGI(C) = 0, C one entry"
+   }
+  },
+  "4 Theorem 1: brace-and-junction evaluation = direct count (12 trisum braces x 2 signings x 4 couplings; 3 plain spaces x 3 couplings), each piece evaluated 2^(violating junctions) times, ternary tensors even": {
+   "ok": true,
+   "detail": {
+    "trisum braces": [
+     {
+      "seed": 1,
+      "points": 28,
+      "junctions": 2,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "67906401440",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "87965/512",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "1439306704",
+         "-47252400"
+        ],
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "random 0": {
+        "count": "87052",
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       },
+       "random 2": {
+        "count": "149614937076",
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "-253677157/524288",
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "431924324",
+         "319589112"
+        ],
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 2,
+      "points": 38,
+      "junctions": 3,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "598396487603200",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "20670815425/1048576",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-1292872000608",
+         "1666341758168"
+        ],
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random 0": {
+        "count": "12680792",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random 2": {
+        "count": "1959392803868032",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "44523501980587/268435456",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "-483114428640",
+         "-78842215548"
+        ],
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 3,
+      "points": 24,
+      "junctions": 1,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "1824544800",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "77575/256",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "40902736",
+         "-64317072"
+        ],
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random 0": {
+        "count": "7352",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random 2": {
+        "count": "2832002888",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "-4152139/8192",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "40039212",
+         "-21765800"
+        ],
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 4,
+      "points": 22,
+      "junctions": 2,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "369855000",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "-563125/2048",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "3231644",
+         "-12648388"
+        ],
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "random 0": {
+        "count": "8868",
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random 2": {
+        "count": "700868700",
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "-40523725/32768",
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "4306952",
+         "-4056684"
+        ],
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 5,
+      "points": 40,
+      "junctions": 3,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "3194822617978640",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "8623039945/1048576",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-10129735970192",
+         "5175923520616"
+        ],
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random 0": {
+        "count": "21533034",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random 2": {
+        "count": "10915124822023698",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "47117137160563/268435456",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "-2015191122358",
+         "-1253491899844"
+        ],
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 6,
+      "points": 10,
+      "junctions": 1,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "8200",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "-25/2",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-1036",
+         "1220"
+        ],
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random 0": {
+        "count": "84",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random 2": {
+        "count": "10800",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "4025/128",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "-966",
+         "702"
+        ],
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 7,
+      "points": 20,
+      "junctions": 2,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "66791168",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "35113/256",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-481672",
+         "-2680528"
+        ],
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "random 0": {
+        "count": "3606",
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random 2": {
+        "count": "88672686",
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "1644571/4096",
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "425650",
+         "-1883580"
+        ],
+        "violating junctions": 2,
+        "hosted": 2,
+        "evaluations": 7,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 8,
+      "points": 48,
+      "junctions": 3,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "4260454198694574096",
+        "violating junctions": 1,
+        "hosted": 3,
+        "evaluations": 8,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "796571524711/16777216",
+        "violating junctions": 1,
+        "hosted": 3,
+        "evaluations": 8,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-1443834466256368",
+         "-3911962439147944"
+        ],
+        "violating junctions": 1,
+        "hosted": 3,
+        "evaluations": 8,
+        "ok": true
+       },
+       "random 0": {
+        "count": "80803110",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random 2": {
+        "count": "11561096441196666234",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "73023710841023/536870912",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "757716719338360",
+         "-978108303798910"
+        ],
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 9,
+      "points": 20,
+      "junctions": 1,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "53483872",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "779/32",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-978640",
+         "-3444048"
+        ],
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random 0": {
+        "count": "1290",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random 2": {
+        "count": "83551842",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "-39379/2048",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "148222",
+         "-2107404"
+        ],
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 10,
+      "points": 30,
+      "junctions": 2,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "440027431784",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "1493357/2048",
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "5338134716",
+         "2325615276"
+        ],
+        "violating junctions": 0,
+        "hosted": 2,
+        "evaluations": 5,
+        "ok": true
+       },
+       "random 0": {
+        "count": "264060",
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       },
+       "random 2": {
+        "count": "1002523446328",
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "8985677651/2097152",
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "731301038",
+         "1941537206"
+        ],
+        "violating junctions": 1,
+        "hosted": 2,
+        "evaluations": 6,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 11,
+      "points": 40,
+      "junctions": 3,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "3433327497793280",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "4671457435/262144",
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-8920279375104",
+         "4591056403840"
+        ],
+        "violating junctions": 0,
+        "hosted": 3,
+        "evaluations": 7,
+        "ok": true
+       },
+       "random 0": {
+        "count": "10111284",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random 2": {
+        "count": "7122603354300960",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "-6410970874805/67108864",
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "-3939987591894",
+         "-1735397819202"
+        ],
+        "violating junctions": 2,
+        "hosted": 3,
+        "evaluations": 9,
+        "ok": true
+       }
+      }
+     },
+     {
+      "seed": 12,
+      "points": 18,
+      "junctions": 1,
+      "lam": {
+       "Kasteleyn 0": {
+        "count": "0",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn 2": {
+        "count": "9180040",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn -1/2": {
+        "count": "365/32",
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "Kasteleyn (1+1i)": {
+        "count": [
+         "-503244",
+         "-592444"
+        ],
+        "violating junctions": 0,
+        "hosted": 1,
+        "evaluations": 3,
+        "ok": true
+       },
+       "random 0": {
+        "count": "1760",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random 2": {
+        "count": "18274544",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random -1/2": {
+        "count": "-1140757/8192",
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       },
+       "random (1+1i)": {
+        "count": [
+         "-57204",
+         "-311840"
+        ],
+        "violating junctions": 1,
+        "hosted": 1,
+        "evaluations": 4,
+        "ok": true
+       }
+      }
+     }
+    ],
+    "plain spaces": [
+     {
+      "space": "CORE35 decorated (THREEFOLD-SURFACES B, 35 points)",
+      "points": 35,
+      "lam": {
+       "0": {
+        "count": "0",
+        "braces": {
+         "heawood": 4,
+         "doubled square": 3,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 0,
+        "ok": true
+       },
+       "2": {
+        "count": "180982187891224",
+        "braces": {
+         "heawood": 4,
+         "doubled square": 3,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 4,
+        "ok": true
+       },
+       "(1+1i)": {
+        "count": [
+         "20104257984",
+         "58228811496"
+        ],
+        "braces": {
+         "heawood": 4,
+         "doubled square": 3,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 4,
+        "ok": true
+       }
+      }
+     },
+     {
+      "space": "trisum brace seed 1 decorated",
+      "points": 118,
+      "lam": {
+       "0": {
+        "count": "0",
+        "braces": {
+         "heawood": 16,
+         "doubled square": 8,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 0,
+        "ok": true
+       },
+       "2": {
+        "count": "1196208354986024539528081531304235466025349153496",
+        "braces": {
+         "heawood": 16,
+         "doubled square": 8,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 4,
+        "ok": true
+       },
+       "(1+1i)": {
+        "count": [
+         "2179397587734614793480924071573019592",
+         "130595122857783418056275813246419288"
+        ],
+        "braces": {
+         "heawood": 16,
+         "doubled square": 8,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 4,
+        "ok": true
+       }
+      }
+     },
+     {
+      "space": "trisum brace seed 4 decorated",
+      "points": 167,
+      "lam": {
+       "0": {
+        "count": "0",
+        "braces": {
+         "heawood": 23,
+         "doubled square": 11,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 0,
+        "ok": true
+       },
+       "2": {
+        "count": "113910796119270375958964558410677649366080786542769150643206519000356",
+        "braces": {
+         "heawood": 23,
+         "doubled square": 11,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 4,
+        "ok": true
+       },
+       "(1+1i)": {
+        "count": [
+         "-1313936216565475884938193780531285593520838211725630",
+         "-2234925307058594679837492083948637954405539055761342"
+        ],
+        "braces": {
+         "heawood": 23,
+         "doubled square": 11,
+         "other": 1
+        },
+        "junctions": [
+         1
+        ],
+        "violating": 4,
+        "ok": true
+       }
+      }
+     }
+    ]
+   }
+  },
+  "5 Corollary 1 (lam = 0): from the root of TWIST-COUNT Lemma 5 a junction violates MGI only at or above a square with three twisted branches": {
+   "ok": true,
+   "detail": {
+    "signings": 48,
+    "violations": 50,
+    "at or above a branched square": 50,
+    "unexplained": 0,
+    "counts equal": 48
+   }
+  },
+  "6 Theorem 2: end-piece lemma, >= 6 squares per planar piece, Pfaffian classes of plain spaces live on contracted vertices, J + p <= a + |sigma| - 2": {
+   "ok": true,
+   "detail": {
+    "end pieces and planar pieces": {
+     "end pieces": 48,
+     "with a far face 0 mod 4": 48,
+     "far face odd under 6 Pfaffian signings each": 48,
+     "planar pieces": 60,
+     "pieces with >= 6 squares": 60
+    },
+    "J + p <= a + |sigma| - 2": [
+     {
+      "system": "trisum brace seed 1",
+      "a": 0,
+      "p": 0,
+      "J": 2,
+      "|sigma|": 31,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 2",
+      "a": 0,
+      "p": 0,
+      "J": 3,
+      "|sigma|": 41,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 3",
+      "a": 0,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 24,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 4",
+      "a": 0,
+      "p": 0,
+      "J": 2,
+      "|sigma|": 22,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 5",
+      "a": 0,
+      "p": 0,
+      "J": 3,
+      "|sigma|": 34,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 6",
+      "a": 0,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 10,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 7",
+      "a": 0,
+      "p": 0,
+      "J": 2,
+      "|sigma|": 20,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 8",
+      "a": 0,
+      "p": 0,
+      "J": 3,
+      "|sigma|": 41,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 9",
+      "a": 0,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 19,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 10",
+      "a": 0,
+      "p": 0,
+      "J": 2,
+      "|sigma|": 26,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 11",
+      "a": 0,
+      "p": 0,
+      "J": 3,
+      "|sigma|": 43,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 12",
+      "a": 0,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 15,
+      "holds": true
+     },
+     {
+      "system": "CORE35 decorated (THREEFOLD-SURFACES B, 35 points)",
+      "a": 4,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 0,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 1 decorated",
+      "a": 16,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 0,
+      "holds": true
+     },
+     {
+      "system": "trisum brace seed 4 decorated",
+      "a": 23,
+      "p": 0,
+      "J": 1,
+      "|sigma|": 0,
+      "holds": true
+     }
+    ],
+    "plain spaces: braces": [
+     {
+      "space": "CORE35 decorated (THREEFOLD-SURFACES B, 35 points)",
+      "brace": "other",
+      "junctions": 1,
+      "contracted": 3,
+      "class on contracted vertices": true,
+      "contracted >= need": true,
+      "end pieces meet a contracted vertex": true
+     },
+     {
+      "space": "trisum brace seed 1 decorated",
+      "brace": "other",
+      "junctions": 1,
+      "contracted": 10,
+      "class on contracted vertices": true,
+      "contracted >= need": true,
+      "end pieces meet a contracted vertex": true
+     },
+     {
+      "space": "trisum brace seed 4 decorated",
+      "brace": "other",
+      "junctions": 1,
+      "contracted": 15,
+      "class on contracted vertices": true,
+      "contracted >= need": true,
+      "end pieces meet a contracted vertex": true
+     }
+    ]
+   }
+  },
+  "6b sharpness: a Fano atom on each sign of a fewest-sign Pfaffian signing gives a plain three-fold space with a = fewest signs; for the trisum of three cubes J + p = a - 2 exactly": {
+   "ok": true,
+   "detail": [
+    {
+     "glue": "trisum of three cubes",
+     "junctions": 1,
+     "fewest signs": 3,
+     "space points": 29,
+     "not colourable": true,
+     "a": 3,
+     "p": 0,
+     "J": 1,
+     "J + p = a - 2": true
+    },
+    {
+     "glue": "cube trisums, seed 1",
+     "junctions": 2,
+     "fewest signs": 5,
+     "space points": 47,
+     "not colourable": true,
+     "a": 5,
+     "p": 0,
+     "J": 2,
+     "J + p = a - 2": false
+    },
+    {
+     "glue": "cube trisums, seed 2",
+     "junctions": 3,
+     "fewest signs": 6,
+     "space points": 58,
+     "not colourable": true,
+     "a": 6,
+     "p": 0,
+     "J": 3,
+     "J + p = a - 2": false
+    }
+   ]
+  },
+  "7 controls: a wrong split, mis-ordered tensors, ignored signs and a non-Pfaffian signing are all caught": {
+   "ok": true,
+   "detail": {
+    "wrong split sign leaves MGI != 0": true,
+    "mis-ordered contracted tensors change the count": true,
+    "signs ignored: J + p <= a - 2 fails on a signed trisum brace": true,
+    "one extra negation on a far face makes it even (not Pfaffian)": true,
+    "... and the system becomes colourable": true
+   }
+  }
+ },
+ "seconds": 1183.9
+}

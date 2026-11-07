@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261107-001Z",
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "COUNT-TFNP-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes let's continue on', approving COUNT-NOTE-20261107-001's recommendation (i), PPAD versus PPADS): classify the knot sphere's count in the decision-tree TFNP classes. Show that one-sided 2D grid Sperner is PPADS^dt-hard (Chen-Deng's planar uncrossing keeps every sink and every orientation), so that finding a violated line of the octahedral knot sphere is PPADS^dt-complete (with FLAT-STATES-20261107-001B's reduction and COUNT-NOTE-20261107-001B's unary Sherali-Adams certificate), hence outside PPA^dt and PPAD^dt (Beame-Cook-Edmonds-Impagliazzo-Pitassi 1998): no low-degree F2 or unary Nullstellensatz refutation exists although unary Sherali-Adams refutes it at degree 3. Show that the two-sided count (a violated line or a monochromatic face) is PPAD^dt-complete. Serves the complexity program's objective, the complexity of the knot's spaces; standalone value relative to the nearest known work: a natural planar PPADS-complete problem in the black-box world, extending positive Sperner (dimension >= 3, Beame et al.) and Sperner on surfaces of non-zero genus (Friedl-Ivanyos-Santha-Verhoeven 2006) to the plane and the sphere.",
+  "ownership": {
+    "root": true,
+    "scope_id": "COUNT-TFNP-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: the knot sphere's count is PPADS^dt-complete and outside PPAD^dt, PPA^dt and PLS^dt; the two-sided count (violated line or monochromatic face) is PPAD^dt-complete. One-sided grid Sperner is PPADS^dt-complete by Chen-Deng's orientation-keeping uncrossing (A); composed with FLAT-STATES-20261107-001B's map and COUNT-NOTE-20261107-001B's unary Sherali-Adams certificate, and with Beame et al.'s separations and the Nullstellensatz and resolution characterizations, the count has no low-degree F2 or unary Nullstellensatz refutation (B). Recommendation: Research directions, (i) the count on non-orientable and higher-genus knot spaces (2/3); (ii) return to question 9 (owner's call).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the planar one-sided Sperner hardness is proved with its construction checked on random instances, and the count's classification (one-sided PPADS^dt-complete, two-sided PPAD^dt-complete) is proved or a gap is named.",
+  "title": "The knot's count in TFNP: PPADS-complete one-sided, PPAD-complete two-sided"
+}

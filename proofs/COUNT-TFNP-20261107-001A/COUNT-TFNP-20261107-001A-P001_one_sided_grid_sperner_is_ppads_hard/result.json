@@ -1,0 +1,115 @@
+{
+ "artifact_id": "COUNT-TFNP-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 every pointer structure on 3 nodes (consistent ones and each with one pointer changed): fully labelled triangles occur exactly at the ports of the drawn graph's sinks (positive) and non-standard sources (negative), never on the fixed boundary's wrong colour, and every positive one maps back to a SINK solution": {
+   "info": {
+    "crossings resolved": 78,
+    "failures": [],
+    "instances": 520
+   },
+   "pass": true
+  },
+  "2 random instances on 4..7 nodes (paths, cycles, inconsistent pointers, edges into the standard source): the same; every local picture of the layout occurs: the three possible crossing types (horizontal east against vertical north, horizontal west against vertical north or south; east against south cannot occur) and every port type (isolated, sink, source, through)": {
+   "info": {
+    "crossing types (horizontal, vertical)": [
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     [
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       1
+      ]
+     ]
+    ],
+    "crossings resolved": 132,
+    "failures": [],
+    "grid side m by number of nodes": {
+     "4": 336,
+     "5": 468,
+     "6": 624,
+     "7": 804
+    },
+    "instances": 36,
+    "m / N^2": {
+     "4": 21.0,
+     "5": 18.7,
+     "6": 17.3,
+     "7": 16.4
+    },
+    "port types (in, out)": [
+     [
+      false,
+      false
+     ],
+     [
+      false,
+      true
+     ],
+     [
+      true,
+      false
+     ],
+     [
+      true,
+      true
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "3 locality: when one pointer changes, every vertex whose colour changes lies within distance r + 2 of the drawing of an edge whose presence changed (so each colour is a function of O(1) pointers: decision trees of depth O(log N))": {
+   "info": {
+    "changed vertices far from the changed edges": 0,
+    "instance pairs": 10
+   },
+   "pass": true
+  },
+  "4 controls: the instance passes, and dropping the uncrossing, shrinking the turn radius to 2, or putting lane 2 on the left each make the check fail": {
+   "info": {
+    "base instance passes": true,
+    "lane 2 on the left: rejected": true,
+    "no uncrossing: rejected": true,
+    "turn radius 2: rejected": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "SINK (in a directed graph of in- and out-degree at most 1 with a standard source, find a sink; Beame et al.'s PPADS-complete problem) reduces to one-sided 2D Sperner on the side-m triangular grid with FLAT-STATES-20261107-001B's fixed boundary (find a fully labelled small triangle oriented like the boundary), with m = O(N^2) for N nodes and decision trees of depth O(log N). Every potential edge is drawn as a fixed rectilinear route; each crossing of two present routes is resolved by turning each incoming arm into the adjacent outgoing arm of the other, which keeps every in- and out-degree; each present path is a two-lane tube (colour 1 on the path, 2 on its right) on a background of 0, the standard source's tube entering through the boundary's door. Fully labelled triangles then occur exactly at tube ends: positively oriented at sinks, negatively at non-standard sources. Hence one-sided grid Sperner is PPADS^dt-complete, and the same construction makes two-sided grid Sperner PPAD^dt-complete.",
+ "kind": "proof",
+ "proof": "COUNT-TFNP-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "COUNT-TFNP-20261107-001A"
+}

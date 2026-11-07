@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COUNT-TFNP-20261107-001A-P001",
+  "canonical_id": "COUNT-TFNP-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "COUNT-TFNP-20261107-001A",
+  "proof": "COUNT-TFNP-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "One-sided grid Sperner is PPADS-hard in the decision-tree world",
+  "status": "Proved",
+  "claim": "SINK (in a directed graph of in- and out-degree at most 1 with a standard source, find a sink; Beame et al.'s PPADS-complete problem) reduces to one-sided 2D Sperner on the side-m triangular grid with FLAT-STATES-20261107-001B's fixed boundary (find a fully labelled small triangle oriented like the boundary), with m = O(N^2) for N nodes and decision trees of depth O(log N). Every potential edge is drawn as a fixed rectilinear route; each crossing of two present routes is resolved by turning each incoming arm into the adjacent outgoing arm of the other, which keeps every in- and out-degree; each present path is a two-lane tube (colour 1 on the path, 2 on its right) on a background of 0, the standard source's tube entering through the boundary's door. Fully labelled triangles then occur exactly at tube ends: positively oriented at sinks, negatively at non-standard sources. Hence one-sided grid Sperner is PPADS^dt-complete, and the same construction makes two-sided grid Sperner PPAD^dt-complete.",
+  "dependencies": [
+    "COUNT-NOTE-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A fully labelled triangle away from a tube end, or one at a tube end with the wrong orientation.",
+    "A tube colour clashing with the fixed boundary, or a positive triangle that maps back to no SINK solution.",
+    "A colour depending on pointers other than those of edges drawn near it (the reduction would not be shallow).",
+    "A control (no uncrossing, turn radius 2, mirrored lanes) that the check fails to reject."
+  ],
+  "lineage": {
+    "home_scope": "COUNT-TFNP-20261107-001",
+    "epic_path": [
+      "COUNT-TFNP-20261107-001"
+    ],
+    "parents": [
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/window_lib.py",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/window_lib.py": "c04a237f43b695cdfd115e0be059fa8a11bdef8f2f4ca705a58bcf56f8c07207",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "94a048cfe6159b4de6b36487da85c20c5b422c97f7a7a1dd0f4783ee0e960971",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "ca62f89c55bb4c742357bc2dc84c133f34ab3400df8e274ff8ede8272a6882ef"
+  },
+  "paths": {
+    "manifest": "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json",
+    "identity": "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/identity.json",
+    "proof": "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/proof.md",
+    "check": "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/check.py",
+    "result": "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json",
+    "directory": "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every SINK instance (by the proof); checked on every pointer structure on 3 nodes with each single pointer change, and on random instances on 4..7 nodes.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, with the construction checked exhaustively on 3 nodes and on random instances, a locality check and three negative controls; no human or external review",
+    "novelty": "known-with-delta: positive Sperner is PPADS-complete in dimension 3 and above (Beame-Cook-Edmonds-Impagliazzo-Pitassi 1998) and on surfaces of non-zero genus (Friedl-Ivanyos-Santha-Verhoeven 2006), and 2D Sperner is PPAD-complete (Chen-Deng 2006/2009). The delta: the planar one-sided case, because Chen-Deng's uncrossing keeps orientations, written for the decision-tree model with FLAT-STATES-20261107-001B's boundary."
+  }
+}

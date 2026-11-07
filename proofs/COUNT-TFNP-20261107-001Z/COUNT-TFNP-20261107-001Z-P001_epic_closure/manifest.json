@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COUNT-TFNP-20261107-001Z-P001",
+  "canonical_id": "COUNT-TFNP-20261107-001Z-P001",
+  "kind": "proof",
+  "ticket": "COUNT-TFNP-20261107-001Z",
+  "proof": "COUNT-TFNP-20261107-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the knot's TFNP epic",
+  "status": "Proved",
+  "claim": "Ledger closing COUNT-TFNP-20261107-001: one line per conclusion with its status, novelty and evidence (tickets A and B, both proved), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "COUNT-TFNP-20261107-001A",
+    "COUNT-TFNP-20261107-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "COUNT-TFNP-20261107-001",
+    "epic_path": [
+      "COUNT-TFNP-20261107-001"
+    ],
+    "parents": [
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json": "38750733a88ce278be7f9aed233df05dbcaf7c81303efb7635ebae4edf20cab6",
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json": "5f15abcecb52f8a3c5a61f52bfa65440e4095b07964b3b9eb267647c55420151",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json": "13df23640a58dd4f8f4e0b7d54387fb0291ec137aaf224ce4f313e259572a42b",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json": "5438fd34edcb811be15d7e3660806f379166ecfff1c7798f67d94d9ae8f9f72d"
+  },
+  "paths": {
+    "manifest": "proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/result.json",
+    "check": "proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "The conclusions of tickets A and B as recorded in their proofs; no new scope.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "Ledger; no new claim.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07."
+  }
+}

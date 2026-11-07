@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261107-001Z",
+    "COUNT-TFNP-20261107-001A",
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COUNT-TFNP-20261107-001B-P001"
+  },
+  "id": "COUNT-TFNP-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Compose A with FLAT-STATES-20261107-001B's depth-2 reduction (one-sided Sperner_m to the knot sphere K_{2m+4}) and COUNT-NOTE-20261107-001B's degree-3 unary Sherali-Adams certificate: finding a violated line of K_k is PPADS^dt-complete, so by Beame et al. (PPADS^dt not in PPA^dt) and the Nullstellensatz characterizations (PPA^dt = F2-Nullstellensatz, Goos et al. 2019; PPAD^dt = unary Nullstellensatz, Goos et al. 2022) it has no polylogarithmic-degree F2 or unary Nullstellensatz refutation. Show the two-sided count (violated line or monochromatic face) is PPAD^dt-complete: its degree-3 unary Nullstellensatz refutation is the corner identity with face clauses as axioms, and FLAT-STATES-20261107-001B's map sends clockwise fully labelled triangles, and only those, to monochromatic faces (checked).",
+  "ownership": {
+    "root": false,
+    "scope_id": "COUNT-TFNP-20261107-001"
+  },
+  "parent": "COUNT-TFNP-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (COUNT-TFNP-20261107-001B-P001): finding a violated line of the octahedral knot sphere is PPADS^dt-complete, and finding a violated line or a monochromatic face is PPAD^dt-complete. Hardness composes A (SINK to one-sided grid Sperner), a cyclic colour shift by -m and FLAT-STATES-20261107-001B's map, which sends clockwise fully labelled triangles exactly to monochromatic faces (checked on 160 colourings); membership is the degree-3 unary Sherali-Adams certificate, and for the two-sided count the same identity as a Nullstellensatz refutation with multipliers +-1. Hence (Beame et al.; PPA^dt = F2-NS, PPAD^dt = unary NS, PLS^dt = resolution width) the count has no polylog-degree F2 or unary Nullstellensatz refutation and is not in PLS^dt.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The knot's count is PPADS-complete; the two-sided count is PPAD-complete"
+}

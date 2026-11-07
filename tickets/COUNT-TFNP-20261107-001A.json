@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COUNT-TFNP-20261107-001A-P001"
+  },
+  "id": "COUNT-TFNP-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Reduce SINK (Beame et al.'s PPADS-complete problem: in a directed graph of in- and out-degree at most 1 with a standard source, find a sink) to one-sided 2D Sperner on the triangular grid with FLAT-STATES-20261107-001B's fixed boundary, by decision trees of logarithmic depth: draw every potential edge as a fixed rectilinear path (Chen-Deng's grid embedding), resolve each crossing by re-pairing each incoming arm with an adjacent outgoing arm (which keeps every in- and out-degree, hence every source and sink), and colour each present path as a two-lane tube on a background of 0, the standard source's tube leaving through the boundary's door. Prove that fully labelled triangles occur exactly at tube ends, positively oriented at sinks and negatively at non-standard sources. Check the construction on random instances, with a negative control.",
+  "ownership": {
+    "root": false,
+    "scope_id": "COUNT-TFNP-20261107-001"
+  },
+  "parent": "COUNT-TFNP-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (COUNT-TFNP-20261107-001A-P001): SINK on N nodes reduces to one-sided 2D grid Sperner (side m = O(N^2), FLAT-STATES-20261107-001B's boundary) by decision trees of depth O(log N): Chen-Deng's planar layout, each crossing resolved by re-pairing arms (keeps every in- and out-degree), each path a two-lane tube on background 0, the standard source entering through the boundary's door; fully labelled triangles sit exactly at tube ends, positive at sinks and negative at non-standard sources (checked on all 520 three-node instances and 36 random ones, with locality and three controls). So one-sided grid Sperner is PPADS^dt-complete and two-sided grid Sperner PPAD^dt-complete.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "One-sided grid Sperner is PPADS-hard in the decision-tree world"
+}

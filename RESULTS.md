@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**197 current results** and 5 superseded ones, from 141 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**198 current results** and 5 superseded ones, from 142 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 11 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 7 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 8 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 64 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
@@ -30,7 +30,7 @@ How to read an entry:
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 141 epics with their closures
+- [Epics](#epics): all 142 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -198,6 +198,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-07 · The sphere's count is in PPADS: a degree-3 Sherali-Adams refutation with coefficients +-1** (`COUNT-NOTE-20261107-001-D002`).
   The lines' clause falsifiers minus the faces' monochromatic conjunctions sum to exactly 1, a degree-3 Sherali-Adams refutation with 4n - 8 terms and coefficients +-1, so by the unary Sherali-Adams characterization of PPADS^dt (Goos, Hollender, Jain, Maystre, Pires, Robere, Tao) finding a violated line is in PPADS^dt, between one-sided 2D Sperner and PPADS. Cutting-planes and XOR-reasoning solvers do no better than CDCL on it, and whether short cutting-planes or Res(xor) proofs exist is open.
   [proof P001](proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/proof.md), [epic closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The knot sphere's count is PPADS-complete, and its orientation is what keeps it out of PPAD** (`COUNT-TFNP-20261107-001-D001`).
+  Finding a violated line of the octahedral knot sphere is PPADS^dt-complete and lies outside PPAD^dt, PPA^dt and PLS^dt, so its not-all-equal formula has no polylogarithmic-degree Nullstellensatz refutation over F2 or in unary form although unary Sherali-Adams refutes it at degree 3. Counting monochromatic faces as solutions too, the count becomes PPAD^dt-complete, so the knot's orientation alone separates the two classes.
+  [proof P001](proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/proof.md), [proof P001](proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/proof.md), [epic closure](proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -846,6 +849,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-06 | The two-round rule as a proof-complexity bridge (`TWO-ROUND-BRIDGE-20261106-001`) | [closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-ROUND-BRIDGE-20261106-001/) |
 | 2026-11-07 | Why a Fano atom acts as one (`ATOM-ONE-20261107-001`) | [closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-ONE-20261107-001/) |
 | 2026-11-07 | The sphere's count written out, and stronger proof systems (`COUNT-NOTE-20261107-001`) | [closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-NOTE-20261107-001/) |
+| 2026-11-07 | The knot's count in TFNP: PPADS-complete one-sided, PPAD-complete two-sided (`COUNT-TFNP-20261107-001`) | [closure](proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-TFNP-20261107-001/) |
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |

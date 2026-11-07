@@ -1,0 +1,132 @@
+{
+ "artifact_id": "COUNT-TFNP-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/manifest.json": "Proved",
+     "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/result.json": "passed",
+     "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/manifest.json": "Proved",
+     "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/result.json": "passed",
+     "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json": "Proved",
+     "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 for m = 3..12 the reduction's fixed boundary is the canonical Sperner boundary with every colour shifted by -m (mod 3); a cyclic shift keeps fully labelled triangles and their orientations, so COUNT-TFNP-20261107-001A's instances compose with it": {
+   "info": {
+    "shift by m": {
+     "3": 0,
+     "4": 2,
+     "5": 1,
+     "6": 0,
+     "7": 2,
+     "8": 1,
+     "9": 0,
+     "10": 2,
+     "11": 1,
+     "12": 0
+    }
+   },
+   "pass": true
+  },
+  "2 FLAT-STATES-20261107-001B's map on random Sperner colourings (half seeded with clockwise triangles): violated lines lie inside counterclockwise fully labelled triangles, monochromatic faces inside clockwise ones, every fully labelled triangle holds one, and the count identity holds": {
+   "info": {
+    "m=4": {
+     "clockwise ones": 29,
+     "colourings": 40,
+     "every fully labelled triangle holds one": true,
+     "fully labelled triangles": 98,
+     "monochromatic faces": 29,
+     "monochromatic faces inside clockwise triangles": true,
+     "violated lines": 69,
+     "violated lines inside counterclockwise triangles": true,
+     "violated lines minus monochromatic faces = 1": true
+    },
+    "m=5": {
+     "clockwise ones": 51,
+     "colourings": 40,
+     "every fully labelled triangle holds one": true,
+     "fully labelled triangles": 142,
+     "monochromatic faces": 51,
+     "monochromatic faces inside clockwise triangles": true,
+     "violated lines": 91,
+     "violated lines inside counterclockwise triangles": true,
+     "violated lines minus monochromatic faces = 1": true
+    },
+    "m=6": {
+     "clockwise ones": 104,
+     "colourings": 40,
+     "every fully labelled triangle holds one": true,
+     "fully labelled triangles": 248,
+     "monochromatic faces": 104,
+     "monochromatic faces inside clockwise triangles": true,
+     "violated lines": 144,
+     "violated lines inside counterclockwise triangles": true,
+     "violated lines minus monochromatic faces = 1": true
+    },
+    "m=7": {
+     "clockwise ones": 156,
+     "colourings": 40,
+     "every fully labelled triangle holds one": true,
+     "fully labelled triangles": 352,
+     "monochromatic faces": 156,
+     "monochromatic faces inside clockwise triangles": true,
+     "violated lines": 196,
+     "violated lines inside counterclockwise triangles": true,
+     "violated lines minus monochromatic faces = 1": true
+    }
+   },
+   "pass": true
+  },
+  "3 the two-sided count (the line clauses together with the clauses 'face f is not monochromatic') has a Nullstellensatz refutation of degree 3 with constant multipliers +1 and -1: sum of line-clause falsifiers minus sum of face-clause falsifiers is 1, checked symbolically on K_2..K_6": {
+   "info": {
+    "k=2": {
+     "face clauses' falsifiers (-1)": 24,
+     "line clauses' falsifiers (+1)": 32,
+     "sum is the constant 1": true
+    },
+    "k=3": {
+     "face clauses' falsifiers (-1)": 64,
+     "line clauses' falsifiers (+1)": 72,
+     "sum is the constant 1": true
+    },
+    "k=4": {
+     "face clauses' falsifiers (-1)": 120,
+     "line clauses' falsifiers (+1)": 128,
+     "sum is the constant 1": true
+    },
+    "k=5": {
+     "face clauses' falsifiers (-1)": 192,
+     "line clauses' falsifiers (+1)": 200,
+     "sum is the constant 1": true
+    },
+    "k=6": {
+     "face clauses' falsifiers (-1)": 280,
+     "line clauses' falsifiers (+1)": 288,
+     "sum is the constant 1": true
+    }
+   },
+   "pass": true
+  },
+  "4 controls: a seeded clockwise triangle holds no violated line (the one-sided count does not see it), auditing an image against a changed colouring is rejected, and the identity fails without one face clause": {
+   "info": {
+    "auditing against a colouring changed at a vertex of a fully labelled triangle is rejected": true,
+    "no violated line inside a clockwise triangle": true,
+    "seeded colouring has a clockwise triangle": true,
+    "the identity without one face clause is not 1": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "In the decision-tree model, finding a violated clause of the octahedral knot sphere's not-all-equal formula NAE(K_k) is PPADS^dt-complete, and finding a violated clause of NAE(K_k) together with the clauses forbidding monochromatic three-point faces is PPAD^dt-complete. Hardness composes COUNT-TFNP-20261107-001A (SINK to one-sided grid Sperner), a cyclic colour shift by -m (checked: it turns the canonical boundary into the one FLAT-STATES-20261107-001B's map expects) and that map (depth 2), which sends counterclockwise fully labelled triangles to violated lines and clockwise ones exactly to monochromatic faces (checked). Membership: the degree-3 unary Sherali-Adams certificate of COUNT-NOTE-20261107-001B, and for the two-sided count the same corner identity read as a Nullstellensatz refutation with multipliers +1 and -1. Hence, by Beame-Cook-Edmonds-Impagliazzo-Pitassi (PPADS^dt not in PPA^dt) and the characterizations PPA^dt = F2-Nullstellensatz, PPAD^dt = unary Nullstellensatz and PLS^dt = resolution width, NAE(K_k) has no polylogarithmic-degree Nullstellensatz refutation over F2 or in unary form, and the count is not in PLS^dt (its resolution width is Omega(sqrt n)).",
+ "kind": "proof",
+ "proof": "COUNT-TFNP-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "COUNT-TFNP-20261107-001B"
+}

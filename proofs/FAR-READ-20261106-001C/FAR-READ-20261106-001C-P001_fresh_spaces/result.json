@@ -1,0 +1,134 @@
+{
+ "artifact_id": "FAR-READ-20261106-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (ticket B's frozen rule included); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json": "passed",
+     "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the fresh spaces, fixed before any map was computed (within the cost cap), and their exact creation maps (maps.json.gz)": {
+   "info": {
+    "Fano atoms": {
+     "fresh census": [
+      4,
+      6
+     ],
+     "fresh plane": [
+      2,
+      5
+     ]
+    },
+    "beyond the cost cap": [
+     "plane of 12 points + 5 atoms (seed 7034)",
+     "plane of 12 points + 5 atoms (seed 7036)",
+     "twisted 26-point class 44 + 3 atoms (seed 8001)",
+     "twisted 26-point class 30 + 3 atoms (seed 8004)",
+     "twisted 24-point class 2 + 3 atoms (seed 8005)",
+     "twisted 26-point class 61 + 3 atoms (seed 8006)",
+     "twisted 24-point class 6 + 3 atoms (seed 8012)",
+     "untwisted 25-point class 10 + 3 atoms (seed 8013)",
+     "twisted 26-point class 6 + 3 atoms (seed 8017)",
+     "twisted 26-point class 64 + 3 atoms (seed 8027)",
+     "twisted 26-point class 46 + 3 atoms (seed 8029)",
+     "twisted 26-point class 69 + 3 atoms (seed 8031)",
+     "twisted 26-point class 13 + 3 atoms (seed 8035)",
+     "twisted 26-point class 33 + 3 atoms (seed 8037)"
+    ],
+    "cost cap (solutions of the space minus its first line)": 60000,
+    "largest kept": 56250,
+    "maps": "172 sampled rows recomputed, all equal",
+    "maps.json.gz sha256": "bfdfe91d17ca5fdb894abfeb65da117c1f8187f61896b8ad345972ad85979b69",
+    "points": {
+     "fresh census": [
+      30,
+      41
+     ],
+     "fresh plane": [
+      18,
+      40
+     ]
+    },
+    "spaces": {
+     "fresh census: knot spaces (no solutions)": 28,
+     "fresh census: spaces": 28,
+     "fresh plane: knot spaces (no solutions)": 58,
+     "fresh plane: spaces": 58
+    }
+   },
+   "pass": true
+  },
+  "2 ticket B's frozen rule on the fresh spaces, against GLUE-READ C's two-stage rule and the source rule": {
+   "info": {
+    "all": {
+     "Fano atoms": 334,
+     "GLUE-READ C's two-stage rule reads the atoms": 51,
+     "atoms acting as one from outside": 334,
+     "lines of two atoms indistinguishable by whether creation occurs": 24,
+     "lines of two atoms indistinguishable far side by far side": 0,
+     "source rule counts the atoms": 68,
+     "spaces": 86,
+     "the frozen rule counts them": 86,
+     "the frozen rule reads the atoms": 86
+    },
+    "by kind": {
+     "fresh census, Fano trees": {
+      "Fano atoms": 17,
+      "GLUE-READ C's two-stage rule reads the atoms": 3,
+      "atoms acting as one from outside": 17,
+      "lines of two atoms indistinguishable by whether creation occurs": 0,
+      "lines of two atoms indistinguishable far side by far side": 0,
+      "source rule counts the atoms": 3,
+      "spaces": 3,
+      "the frozen rule counts them": 3,
+      "the frozen rule reads the atoms": 3
+     },
+     "fresh census, with plane glue": {
+      "Fano atoms": 129,
+      "GLUE-READ C's two-stage rule reads the atoms": 25,
+      "atoms acting as one from outside": 129,
+      "lines of two atoms indistinguishable by whether creation occurs": 0,
+      "lines of two atoms indistinguishable far side by far side": 0,
+      "source rule counts the atoms": 25,
+      "spaces": 25,
+      "the frozen rule counts them": 25,
+      "the frozen rule reads the atoms": 25
+     },
+     "fresh plane, with plane glue": {
+      "Fano atoms": 188,
+      "GLUE-READ C's two-stage rule reads the atoms": 23,
+      "atoms acting as one from outside": 188,
+      "lines of two atoms indistinguishable by whether creation occurs": 24,
+      "lines of two atoms indistinguishable far side by far side": 0,
+      "source rule counts the atoms": 40,
+      "spaces": 58,
+      "the frozen rule counts them": 58,
+      "the frozen rule reads the atoms": 58
+     }
+    }
+   },
+   "pass": true
+  },
+  "3 the far sides on the fresh spaces: no two lines of different atoms are indistinguishable far side by far side, while whether creation occurs fails to separate some; every Fano atom acts as one from outside": {
+   "info": {
+    "Fano atoms": 334,
+    "atoms acting as one from outside": 334,
+    "lines of two atoms indistinguishable by whether creation occurs": 24,
+    "lines of two atoms indistinguishable far side by far side": 0
+   },
+   "pass": true
+  }
+ },
+ "claim": "Fresh spaces (computed exactly on spaces fixed in advance; ticket B's rule frozen and bound by hash). Of 100 candidates fixed by seeds before any map was computed (60 random plane spaces of 6 to 12 points with two to five Fano atoms hung mostly on the plane; 40 census spaces with plane glue and one to three more atoms), the 86 within a cost cap fixed before any map was stored or verdict seen (58 plane, 28 census; 18 to 41 points; 334 Fano atoms) have exact creation maps. Ticket B's frozen rule returns exactly the Fano atoms of all 86, and so counts them; GLUE-READ C's two-stage rule reads 51 (23 of the 58 plane spaces) and the source rule counts 68. In 24 plane spaces two lines of different atoms are indistinguishable to whether creation occurs, in none far side by far side, and every one of the 334 atoms acts as one from outside. The cap kept only one of the 13 census candidates with three more atoms.",
+ "kind": "proof",
+ "proof": "FAR-READ-20261106-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FAR-READ-20261106-001C"
+}

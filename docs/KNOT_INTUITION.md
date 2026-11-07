@@ -3035,7 +3035,7 @@ So network holes come in two kinds:
      - A rule using the far sides.
      - The relation a plane piece presents, derived from its faces.
      - Non-Fano handles.
-   - **Next (recommended, awaiting the owner).** Reading with the far sides (2/3): on the 191 saved maps, look for a rule that separates
+   - **Next (taken).** Reading with the far sides (2/3): on the 191 saved maps, look for a rule that separates
      atoms meeting one plane piece without splitting atoms.
      - **The alternatives.** Glue relations from faces (1/3); non-Fano handles (1/3).
 
@@ -3066,6 +3066,73 @@ So network holes come in two kinds:
    - **Next (recommended, awaiting the owner).** Native reading of junction handles (2/3): do exact creation maps read the glue's junctions
      and the atoms that pay for them? Start on the 29-point space and the edge-atom chains.
      - **The alternatives.** A hardness bound in the number of atoms (1/3); reading with the far sides (2/3, still pending).
+
+   **2026-11-06: reading with the far sides** (`FAR-READ-20261106-001`).
+   - **The far sides nest (computed, 191 spaces).** The Fano plane and census 58 create at the same pairs. K4^(3) creates only where
+     census 6 does, and census 6 creates without the Fano plane only at glue lines. So at an atom line creation has one of four
+     strengths.
+   - **A Fano atom acts as one from outside (computed, 1,065 of 1,065 atoms).** Whichever of its lines is removed, every atom line
+     outside it receives the same far-side vector. Its lines differ only on glue lines and in what they receive.
+   - **A rule reads the atoms.**
+     - **The rule.** Twins; twins among atom lines; a split into the finest parts of three or more lines that act as one; reattachment
+       of single port lines through the Fano plane.
+     - **Development.** It returns exactly the Fano atoms of all 191 saved spaces, and every step is needed.
+     - **Fresh test.** Frozen, it reads all 86 fresh spaces within a cost cap fixed in advance (334 atoms). That includes the 24 fresh
+       spaces where whether creation occurs cannot tell atoms apart. The two-stage rule reads 51 of the 86, the source rule counts 68.
+     - **Not proved.** Neither the rule nor "acts as one" is a theorem.
+   - **Reading.**
+     - **A handle is one thing from outside.** Its parts are not separately visible to the rest of the space, so an atom is atomic in a
+       precise sense.
+     - **Why the yes/no relation failed.** A plane piece hides which atom a removal came from. Which far side completes the creation
+       does not.
+     - **A known shape.** Acting as one is a one-sided module, as in Gallai's modular decomposition and the clans of 2-structures.
+       Reading handles as the finest such modules of the creation map is new.
+   - **Provenance.** Modules are classical. No source was found for the far-side structure, the rule or its fresh test.
+   - **What is left.**
+     - A proof that atoms act as one.
+     - Non-Fano handles. HANDLE-COUNT's junction handles, where counting hardness on these spaces lives, are such handles.
+     - The cost cap's gaps: census spaces with three more atoms, and the largest plane spaces.
+   - **Next (taken).** Prove that a Fano atom acts as one from outside (2/3).
+     - **The easy case.** A scratch probe found that in 576 of the 731 saved atoms, removing any line leaves every port pattern
+       allowed, so the rest of the space cannot tell which line went.
+     - **The hard case.** The other 155 have five to twelve ports and need the receiving-cut law.
+     - **The alternatives.** Non-Fano handles through the receiving-cut law (1/3); glue relations from faces (1/3).
+
+   **2026-11-07: why a Fano atom acts as one** (`ATOM-ONE-20261107-001`).
+   - **Every Fano atom, with its closed sides, is the Fano plane (proved).**
+     - **Sides.** A closed side acts as its lost element up to signs (KNOT-COMPOSE A, as corrected by NATIVE-PATHS A).
+     - **Signs.** Of the 256 signed Fano planes, only the plain one is a knot.
+   - **A Fano atom with a line removed is transparent (proved).** With any one of its lines removed, it sends the free relation through
+     every one of its cuts. So the rest of the space sees the same port relation whichever line went.
+     - **The knot is needed.** With arbitrary relations on its other cuts, this holds only for atoms with at most one line-type cut.
+   - **Atoms see only the port relation (proved).**
+     - **Creation.** Deep points of a removal's side never decide whether a Fano atom's line receives creation, even paired with deep
+       points behind the atom's other elements.
+     - **Far sides.** They add census 6 or K4^(3) only at a receiving atom's cut lines whose port relation has six patterns.
+     - **Pass-through.** A free relation passes through a closed atom unchanged.
+   - **So a Fano atom acts as one.**
+     - **Proved.** For creation in every knot space; far side by far side outside that one place; and without exception on Fano trees.
+     - **Computed.** On 277 spaces, saved and fresh, every Fano atom's line receives exactly its closed verdict at all 154,165 pairs. The
+       exception occurs at 1,325 receiving cuts and adds nothing. These predictions were written before the run.
+   - **Bounding cannot show more.** Deep points behind an atom's own other elements could add creation (56 of 980 abstract cases). No real
+     space ever does.
+   - **Reading.**
+     - **A handle is all or nothing from outside.** With all its lines, it constrains each cut as one lost element. With any one line gone,
+       it constrains nothing any cut can see.
+     - **Where this comes from.** The knot itself: the plain Fano plane is the only signed Fano knot, and any missing line frees every
+       other element.
+     - **Atoms are blind to depth.** That is now a theorem for creation and, outside one finite place, for far sides.
+     - **Doctrine.** No space is assumed.
+   - **Provenance.** The Fano plane as the smallest critical non-2-colourable triple system, and the brace decomposition, are classical.
+     No statement of the signed classification, transparency or the corollary was found.
+   - **What is left.**
+     - A proof of the exception.
+     - That no atom splits into smaller parts acting as one.
+     - Handles that are not Fano atoms.
+   - **Next (recommended, awaiting the owner).** The genus reading on Fano trees (2/3). Prove that FAR-READ B's rule returns exactly the
+     Fano atoms of every Fano tree, then add plane glue.
+     - **The alternatives.** Whether junction handles act as one (2/3); a proof of the exception (1/3).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

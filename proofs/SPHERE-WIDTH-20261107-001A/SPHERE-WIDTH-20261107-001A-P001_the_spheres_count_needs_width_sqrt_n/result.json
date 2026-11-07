@@ -1,0 +1,115 @@
+{
+ "artifact_id": "SPHERE-WIDTH-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 window criterion on the sphere: pebbled colours (from random label states) admit a label state with the vortex at z exactly when the sheet system has no negative cycle (solver comparison), and the largest solution under the pebbles' upper bounds is a valid single-defect state": {
+   "info": {
+    "k=4": {
+     "(pebbled colours, vortex) pairs": 72,
+     "criterion agrees with the solver": 72,
+     "feasible cases realized as a state with exactly one violated line, at the vortex, matching every pebble": "57 of 57",
+     "infeasible": 15
+    },
+    "k=5": {
+     "(pebbled colours, vortex) pairs": 72,
+     "criterion agrees with the solver": 72,
+     "feasible cases realized as a state with exactly one violated line, at the vortex, matching every pebble": "44 of 44",
+     "infeasible": 28
+    },
+    "k=6": {
+     "(pebbled colours, vortex) pairs": 72,
+     "criterion agrees with the solver": 72,
+     "feasible cases realized as a state with exactly one violated line, at the vortex, matching every pebble": "64 of 64",
+     "infeasible": 8
+    }
+   },
+   "pass": true
+  },
+  "2 obstruction certificates: whenever pebbled colours admit the vortex at z but not at z', the negative cycle of the sheet system closes into a walk of length L <= 3r - 6 + H through its r pebbles (H its label holonomy), and the walk separates z from z' or passes through z": {
+   "info": {
+    "k=5": {
+     "largest L / r": 4.67,
+     "negative cycle with L <= 3r - 6 + H": 63,
+     "obstructions found (feasible at z, not at z')": 63,
+     "of which through z": 0,
+     "walk separates z from z' (holonomy differs by a nonzero multiple of 6) or passes through z": 63
+    },
+    "k=6": {
+     "largest L / r": 5.5,
+     "negative cycle with L <= 3r - 6 + H": 74,
+     "obstructions found (feasible at z, not at z')": 74,
+     "of which through z": 1,
+     "walk separates z from z' (holonomy differs by a nonzero multiple of 6) or passes through z": 74
+    },
+    "k=7": {
+     "largest L / r": 4.29,
+     "negative cycle with L <= 3r - 6 + H": 53,
+     "obstructions found (feasible at z, not at z')": 53,
+     "of which through z": 0,
+     "walk separates z from z' (holonomy differs by a nonzero multiple of 6) or passes through z": 53
+    }
+   },
+   "pass": true
+  },
+  "3 the pebble game, simulated (an illustration, not a proof): Duplicator answering from label states whose vortex sits where the pebble density is lowest survives a chaser and a ring-building Spoiler with up to 12 pebbles on K_6 and K_8": {
+   "info": {
+    "k=6, M=12": {
+     "chaser: Duplicator survives 30 placements": true,
+     "chaser: vortex moves": 30,
+     "ring builder: Duplicator survives": true,
+     "ring builder: vortex moves": 5
+    },
+    "k=6, M=4": {
+     "chaser: Duplicator survives 30 placements": true,
+     "chaser: vortex moves": 30,
+     "ring builder: Duplicator survives": true,
+     "ring builder: vortex moves": 4
+    },
+    "k=6, M=8": {
+     "chaser: Duplicator survives 30 placements": true,
+     "chaser: vortex moves": 30,
+     "ring builder: Duplicator survives": true,
+     "ring builder: vortex moves": 4
+    },
+    "k=8, M=12": {
+     "chaser: Duplicator survives 30 placements": true,
+     "chaser: vortex moves": 30,
+     "ring builder: Duplicator survives": true,
+     "ring builder: vortex moves": 6
+    },
+    "k=8, M=4": {
+     "chaser: Duplicator survives 30 placements": true,
+     "chaser: vortex moves": 30,
+     "ring builder: Duplicator survives": true,
+     "ring builder: vortex moves": 4
+    },
+    "k=8, M=8": {
+     "chaser: Duplicator survives 30 placements": true,
+     "chaser: vortex moves": 30,
+     "ring builder: Duplicator survives": true,
+     "ring builder: vortex moves": 4
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The sphere's count needs resolution width Theta(sqrt n). Every resolution refutation of the not-all-equal formula of the octahedral knot sphere K_k (n = 4k^2 points) has width at least c*k - 1 for an absolute constant c > 0, and width O(k) suffices. Duplicator answers from label states whose vortex lies outside the density-bad set of the pebbles (points x with at least s/C pebbles within distance s for some s). By the exact window criterion, an obstruction to moving the vortex is a negative cycle of a sheet system on the pebbles; it closes into a walk of length at most a constant times its number of pebbles that separates the two positions or passes through the old one, so one of them is density-bad, and a Vitali covering bounds the bad set by O(pebbles^2) points.",
+ "kind": "proof",
+ "proof": "SPHERE-WIDTH-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SPHERE-WIDTH-20261107-001A"
+}

@@ -293,6 +293,18 @@
    "tier": 3
   },
   {
+   "id": "SPHERE-COUNT-20261106-001-D001",
+   "line": "depth",
+   "date": "2026-11-06",
+   "title": "The violated line can be pinned: frozen states block the Tseitin-style width proof",
+   "statement": "In the octahedral knot spaces the violated line is a vortex of a height function, and frozen states pin it: no change within distance 3 moves it to a given adjacent line, in the bulk and in whole-sphere states of K_8, though random states always move. So the Tseitin-style resolution width proof cannot be applied state by state, and width Omega(sqrt n) reduces to a pursuit lemma for flat label states.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/SPHERE-COUNT-20261106-001A/SPHERE-COUNT-20261106-001A-P001_the_violated_line_can_be_pinned/proof.md",
+   "tier": null
+  },
+  {
    "id": "TWO-ROUND-BRIDGE-20261106-001-D001",
    "line": "depth",
    "date": "2026-11-06",
@@ -314,6 +326,66 @@
    "superseded_by": null,
    "issue": null,
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/proof.md",
+   "tier": null
+  },
+  {
+   "id": "FLAT-STATES-20261107-001-D001",
+   "line": "depth",
+   "date": "2026-11-07",
+   "title": "Flat states exist on the whole knot sphere: each corner twists labels by -1",
+   "statement": "Sublattice-and-sign frames on the octahedral knot sphere are flat except at the six corners, each of which twists labels by exactly -1. So for every point z and every six disjoint cuts from z to the corners, one constant label developed over the cut sphere violates exactly one line, through z, and the vortex moves by local re-routing.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/proof.md",
+   "tier": null
+  },
+  {
+   "id": "FLAT-STATES-20261107-001-D002",
+   "line": "depth",
+   "date": "2026-11-07",
+   "title": "The knot sphere contains Sperner's lemma",
+   "statement": "One-sided 2D Sperner reduces to finding a violated line of the knot sphere by depth-2 decision trees, the violated lines falling exactly in the boundary-oriented full triangles, with the six corners as Sperner's boundary. So query and resolution-width bounds for grid Sperner transfer, and the sphere's width question becomes Sperner's, reduced to an open winding-control lemma.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/proof.md",
+   "tier": null
+  },
+  {
+   "id": "SPHERE-SIZE-20261107-001-D001",
+   "line": "depth",
+   "date": "2026-11-07",
+   "title": "The sphere's count needs resolution size 2^Theta(sqrt n)",
+   "statement": "Every resolution refutation of the octahedral knot sphere needs size 2^Theta(sqrt n). Random islands fixed to constant labels kill wide clauses, yet the restricted formula still needs width Omega(sqrt n) because islands add no slack to obstructions.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/proof.md",
+   "tier": null
+  },
+  {
+   "id": "SPHERE-WIDTH-20261107-001-D001",
+   "line": "depth",
+   "date": "2026-11-07",
+   "title": "The sphere's count needs resolution width Theta(sqrt n)",
+   "statement": "Every resolution refutation of the octahedral knot sphere needs width Theta(sqrt n). Duplicator keeps the vortex where pebbles are sparse, since any obstruction is a closed walk with a bounded number of steps per pebble, so pebbles trap only an area quadratic in their number.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/proof.md",
+   "tier": null
+  },
+  {
+   "id": "SPHERE-WIDTH-20261107-001-D002",
+   "line": "depth",
+   "date": "2026-11-07",
+   "title": "Grid Sperner needs resolution width Theta(m)",
+   "statement": "Grid Sperner with a fixed boundary needs resolution width Theta(m), and so does Itsykson et al.'s Sperner CSP, for which only tree-like size was known. Walks through the free boundary stay near it, so a full triangle kept deep inside meets only short pebble walks.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/proof.md",
    "tier": null
   },
   {
@@ -1541,6 +1613,30 @@
    "tier": null
   },
   {
+   "id": "FAR-READ-20261106-001-D001",
+   "line": "creation",
+   "date": "2026-11-06",
+   "title": "A Fano atom acts as one from outside",
+   "statement": "In all 277 spaces computed (191 saved, 86 fresh; 1,065 Fano atoms), every atom line outside a Fano atom receives the same far-side vector from each of the atom's lines, though the atom's lines differ on glue lines and in what they receive. On the saved maps the far sides nest: the Fano plane and census 58 create at the same pairs, K4^(3) only where census 6 does, and census 6 without the Fano plane only at glue lines.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/proof.md",
+   "tier": null
+  },
+  {
+   "id": "FAR-READ-20261106-001-D002",
+   "line": "creation",
+   "date": "2026-11-06",
+   "title": "Which far side creates reads the atoms through plane glue",
+   "statement": "A four-step rule on the creation map (twins; twins among atom lines; a split into the finest parts of three or more lines that act as one far side by far side; reattachment of single port lines) returns exactly the Fano atoms of all 191 saved spaces and, frozen, of all 86 fresh ones, including the 39 where no rule using only whether creation occurs can. On the fresh spaces GLUE-READ C's two-stage rule reads 51, the source rule 68.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/proof.md",
+   "tier": null
+  },
+  {
    "id": "GLUE-READ-20261106-001-D001",
    "line": "creation",
    "date": "2026-11-06",
@@ -1610,6 +1706,30 @@
    "superseded_by": null,
    "issue": null,
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/proof.md",
+   "tier": null
+  },
+  {
+   "id": "ATOM-ONE-20261107-001-D001",
+   "line": "creation",
+   "date": "2026-11-07",
+   "title": "A Fano atom with a line removed is transparent",
+   "statement": "In every knot space, a Fano atom with any one of its lines removed sends the free relation through each of its cuts, so what it changes there does not depend on which line went. The proof joins the project's cut theorem (closed sides act as their lost elements, up to signs), the fact that the plain Fano plane is the only signed Fano knot, and an exhaustive freeness check.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/proof.md",
+   "tier": null
+  },
+  {
+   "id": "ATOM-ONE-20261107-001-D002",
+   "line": "creation",
+   "date": "2026-11-07",
+   "title": "A Fano atom acts as one",
+   "statement": "In every knot space, whether a removal in a Fano atom creates at a line of another Fano atom does not depend on which of its lines went; far side by far side this is proved except at a receiving atom's cut lines with a six-pattern port relation, and on Fano trees without exception. On 277 computed spaces every such line receives exactly its closed verdict (154,165 pairs), the exception included.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/proof.md",
    "tier": null
   },
   {

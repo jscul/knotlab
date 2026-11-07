@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FLAT-STATES-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FLAT-STATES-20261107-001B-P001"
+  },
+  "id": "FLAT-STATES-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Characterize when pebbled colours admit a label state with the vortex at a given point (lifted labels as integer difference constraints, so feasibility fails only along short pinned links between pebbles), and use it to give Duplicator a winning strategy in the existential c*k-pebble game on K_k that keeps the vortex in the giant region, which gives resolution width Omega(k) = Omega(sqrt n) by Atserias-Dalmau; or exhibit a configuration that traps the vortex with few pebbles.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FLAT-STATES-20261107-001"
+  },
+  "parent": "FLAT-STATES-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (FLAT-STATES-20261107-001B-P001): the knot sphere contains Sperner's lemma. Doubling a 2D Sperner colouring into Z6 labels (2c at vertices, halfway at midpoints) inside a triangular region of K_k (k >= 2m + 4), with a fixed flat state outside whose cut star crosses the region's boundary in three adjacent pairs, gives an assignment whose violated lines lie exactly inside the fully labelled triangles oriented like the boundary (each holds one or more; opposite ones hold none). Each point reads at most two Sperner colours, so one-sided 2D Sperner reduces to finding a violated line by depth-2 decision trees, and query and resolution-width lower bounds transfer (checked: local lemma exhaustive; m = 3..6, 3,759 colourings). For Sperner states, pebbled colours admit a given full triangle iff a difference system on pebble sheets has no negative cycle (1,411 of 1,411 solver comparisons). The pursuit lemma itself stays open: the width bound for K_k is reduced to Sperner's resolution width, which needs a winding-control lemma; no trapping configuration was found.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The pursuit lemma"
+}

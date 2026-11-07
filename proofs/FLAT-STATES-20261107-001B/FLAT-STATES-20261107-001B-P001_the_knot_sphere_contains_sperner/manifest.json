@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FLAT-STATES-20261107-001B-P001",
+  "canonical_id": "FLAT-STATES-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "FLAT-STATES-20261107-001B",
+  "proof": "FLAT-STATES-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The knot sphere contains Sperner's lemma",
+  "status": "Proved",
+  "claim": "The knot sphere contains Sperner's lemma. For m >= 3 and k >= 2m + 4 there is a map from colourings of the side-m triangular grid with a fixed Sperner boundary (corners 0, 1, 2; each side takes its far corner's colour after its first vertex) to assignments of the octahedral knot sphere K_k, each point's colour reading at most two Sperner colours, such that the violated lines of the image lie exactly inside the fully labelled triangles oriented like the boundary: each such triangle holds at least one, oppositely oriented ones hold none. So the one-sided (positive) 2D Sperner problem reduces to finding a violated line, by decision trees of depth at most two, and any query or resolution-width lower bound for it transfers to K_k. Moreover, for Sperner states, pebbled colours admit a state whose only full triangle is a given T iff an integer difference system on pebble sheets has no negative cycle; an obstruction between two positions needs a closed walk through pebbles that separates them with free-segment excess sum (len - 2) at most |forced winding| + 3|winding| + 2.",
+  "dependencies": [
+    "FLAT-STATES-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A coarse triangle colouring that is not fully labelled with the boundary's orientation but contains a violated fine line, or a positively oriented one containing none.",
+    "A Sperner colouring whose image violates a line outside R, on its boundary, or inside a triangle that is not fully labelled with the boundary's orientation.",
+    "A point of K_k whose image colour depends on more than two Sperner colours.",
+    "A pebbled colouring and triangle on which the difference-system criterion and the solver disagree."
+  ],
+  "lineage": {
+    "home_scope": "FLAT-STATES-20261107-001",
+    "epic_path": [
+      "FLAT-STATES-20261107-001"
+    ],
+    "parents": [
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "e0f61bd599521eb52588a1bc36732f64fe80eee23ee9f7a1c1c8606cac324fca",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "6094393c4899b93849fabbffa2aef8ac5c3e1ed87569885ac990cfbb25dbc8e4",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py": "f19711315cb24b03296259fc5e27faab9d5a99246119a1e52e2738bb7dfb672c"
+  },
+  "paths": {
+    "manifest": "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json",
+    "identity": "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/identity.json",
+    "proof": "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/proof.md",
+    "check": "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/check.py",
+    "result": "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json",
+    "directory": "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Sperner grids of side 3..6 inside K_{2m+4} (exhaustive for side <= 5, 3000 random colourings at side 6); the local lemma exhaustively in the bulk lattice; the window criterion on grids of side 5..7.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "the reduction and local lemma by hand plus exhaustive or sampled computation; the window criterion by the standard difference-constraint argument plus solver comparison; no human or external review",
+    "novelty": "new as far as found: Sperner's lemma, its PPAD reading and its query and tree-like resolution bounds are classical (Crescenzi-Silvestri; Itsykson-Malova-Oparin-Sokolov 2014); the delta is that the knot's Euler count on the sphere contains the one-sided 2D Sperner problem by a depth-two decision-tree reduction, with the six corner disclinations playing the Sperner boundary."
+  }
+}

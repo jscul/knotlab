@@ -1,0 +1,60 @@
+{
+ "artifact_id": "ATOM-ONE-20261107-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (both sets of exact maps included); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/manifest.json": "Proved",
+     "proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/result.json": "passed",
+     "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 saved spaces: at every removal and line of a Fano atom not holding it, the exact far-side vector equals the verdict of the atom's real side with the removal's side replaced by its port relation, and equals the atom's own verdict": {
+   "info": {
+    "(removal, atom line) pairs": 99864,
+    "... exception lines (a receiver's cut line, six patterns)": 1782,
+    "... exception lines where B's own verdict lacks census 6 or K4^(3) (room to add)": 1193,
+    "... exception lines where the real removal's side adds a far side to B's own verdict": 0,
+    "exact = B's own verdict, creation": 99864,
+    "exact = B's own verdict, far side by far side": 99864,
+    "exact = the real side of B with R, far side by far side": 99864,
+    "receiving cuts where the relation has six patterns (removal, cut)": 599,
+    "spaces": 191
+   },
+   "pass": true
+  },
+  "2 fresh spaces: at every removal and line of a Fano atom not holding it, the exact far-side vector equals the verdict of the atom's real side with the removal's side replaced by its port relation, and equals the atom's own verdict": {
+   "info": {
+    "(removal, atom line) pairs": 54301,
+    "... exception lines (a receiver's cut line, six patterns)": 2141,
+    "... exception lines where B's own verdict lacks census 6 or K4^(3) (room to add)": 1432,
+    "... exception lines where the real removal's side adds a far side to B's own verdict": 0,
+    "exact = B's own verdict, creation": 54301,
+    "exact = B's own verdict, far side by far side": 54301,
+    "exact = the real side of B with R, far side by far side": 54301,
+    "receiving cuts where the relation has six patterns (removal, cut)": 726,
+    "spaces": 86
+   },
+   "pass": true
+  },
+  "3 the exception: at every receiving cut whose relation has six patterns, at the cut lines, the real removal's side adds no far side to the atom's own verdict": {
+   "info": {
+    "... exception lines (a receiver's cut line, six patterns)": 3923,
+    "... exception lines where B's own verdict lacks census 6 or K4^(3) (room to add)": 2625,
+    "... exception lines where the real removal's side adds a far side to B's own verdict": 0,
+    "receiving cuts where the relation has six patterns (removal, cut)": 1325
+   },
+   "pass": true
+  }
+ },
+ "claim": "The exception, saved and fresh (computed exactly; predictions written before the run). On the 191 saved spaces and FAR-READ C's 86 fresh spaces, at all 154,165 pairs of a removal and a line of a Fano atom not holding it (99,864 saved, 54,301 fresh), the exact far-side vector equals the atom's own closed verdict for the port relation of its facing cut, and equals the verdict of the atom's real side with the removal's side replaced by that relation. Receiving cuts whose relation has six patterns occur 1,325 times (599 saved, 726 fresh), with 3,923 cut lines, 2,625 of them with room for census 6 or K4^(3) to be added; the real removal's side adds a far side at none. So in every computed space a Fano atom acts as one far side by far side, and its lines see nothing of the rest of the space but the port relation of their facing cut: neither the deep points the proof could not bound in the exception nor those behind the atom's own other elements ever change it.",
+ "kind": "proof",
+ "proof": "ATOM-ONE-20261107-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "ATOM-ONE-20261107-001C"
+}

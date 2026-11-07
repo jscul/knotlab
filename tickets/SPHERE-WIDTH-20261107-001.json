@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "SPHERE-WIDTH-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue.', approving FLAT-STATES-20261107-001's recommendation): prove resolution width Theta(sqrt n) for the knot's sphere and a width bound for grid Sperner, or locate the obstruction. Route: Duplicator keeps a label state whose vortex avoids every closed walk through pebbles that could pin it; the window criterion shows such walks are short relative to their pebbles, so a covering argument bounds the trapped area by O(pebbles^2). Test whether the same argument works on the Sperner disk, whose fixed boundary is free for Spoiler.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SPHERE-WIDTH-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: the sphere's count needs resolution width Theta(sqrt n) (every refutation of the octahedral knot sphere K_k has width >= c*k - 1; O(k) suffices), and grid Sperner needs width Theta(m) (so does Itsykson et al.'s Sperner CSP). Duplicator keeps the vortex where pebbles are sparse: by the exact window criterion every obstruction is a closed walk with a bounded number of steps per pebble, so pebbles trap only O(pebbles^2) area; on the disk, walks through the free boundary stay near it. The winding-control lemma named by FLAT-STATES was not needed. Size stays open. Next: resolution size via Dantchev-Riis tiling games with random label states per zone (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when width Omega(sqrt n) for the knot sphere is proved or refuted by a trapping configuration, and the grid-Sperner width is proved, reduced to a named lemma, or shown to need a different argument.",
+  "title": "Resolution width of the sphere's count and of grid Sperner"
+}

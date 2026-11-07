@@ -1,0 +1,120 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "FAR-READ-20261106-001C-P001",
+  "canonical_id": "FAR-READ-20261106-001C-P001",
+  "kind": "proof",
+  "ticket": "FAR-READ-20261106-001C",
+  "proof": "FAR-READ-20261106-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Fresh spaces",
+  "status": "Proved",
+  "claim": "Fresh spaces (computed exactly on spaces fixed in advance; ticket B's rule frozen and bound by hash). Of 100 candidates fixed by seeds before any map was computed (60 random plane spaces of 6 to 12 points with two to five Fano atoms hung mostly on the plane; 40 census spaces with plane glue and one to three more atoms), the 86 within a cost cap fixed before any map was stored or verdict seen (58 plane, 28 census; 18 to 41 points; 334 Fano atoms) have exact creation maps. Ticket B's frozen rule returns exactly the Fano atoms of all 86, and so counts them; GLUE-READ C's two-stage rule reads 51 (23 of the 58 plane spaces) and the source rule counts 68. In 24 plane spaces two lines of different atoms are indistinguishable to whether creation occurs, in none far side by far side, and every one of the 334 atoms acts as one from outside. The cap kept only one of the 13 census candidates with three more atoms.",
+  "dependencies": [
+    "FAR-READ-20261106-001B"
+  ],
+  "evidence_modes": [
+    "exact-computation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "computed-classification",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A fresh space, generated from the seeds fixed in this ticket, whose atoms ticket B's frozen rule does not return exactly.",
+    "A fresh space with two lines of different atoms that no far side tells apart."
+  ],
+  "lineage": {
+    "home_scope": "FAR-READ-20261106-001",
+    "epic_path": [
+      "FAR-READ-20261106-001"
+    ],
+    "parents": [
+      "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/manifest.json",
+      "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/result.json",
+      "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/rule_lib.py",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz",
+      "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/manifest.json": "61fd6471cccf42440ba707bf2dc67e5ea4ca076c75343677df668bbf480796af",
+    "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/result.json": "6c3f49e1a43a7d51e25adb4b9decf40b46b35eeaec306e07f3210db0eaf89232",
+    "proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/rule_lib.py": "390daa83c4182aa1bf347d8fa8dada530564cb30cc37e8edeeb9e87166e4ff4a",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json": "7c6f7de1b6589428d620931c259adce8f687c2d79ebce36218da202dfa4c9eb6",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json": "faa0917874c755d49d46d9e76669718c744602d38528d1b93f7c8e61817a3813",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py": "cbfdd06e35b2ced652eb80c4fa066f0e972a51191021175f519673ab3211a5c0",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py": "fb87b642fc0d5779e4e4e0cbd8b852ba1032253b3ad0ff4d43f4a79bd66b2496",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py": "1f128469a7465b7b97ecbf7526a04145f49f36ee949602051a28e46b11c11e27",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py": "44d2a6f206c59138e1af3b852731c50e172310b7b010750f919f1d2d2496d56d",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py": "99b1e350243a998ac2bfc7ef9b6fc5ecd8c6724a404f83b562c60c2032b20677"
+  },
+  "paths": {
+    "manifest": "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/manifest.json",
+    "identity": "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/identity.json",
+    "directory": "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces",
+    "proof": "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/proof.md",
+    "result": "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/result.json",
+    "check": "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "far_side_rule_confirmed": true
+  },
+  "foundation_claim_scope": "Fresh random three-fold spaces with plane glue generated from seeds fixed before any map was computed, kept within a cost cap fixed before any map was stored or verdict seen (86 of 100 candidates), with exact creation maps.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06.",
+    "status": "computed exactly on spaces fixed in advance, with the rule frozen in ticket B; no human or external review",
+    "novelty": "New here."
+  }
+}

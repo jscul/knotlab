@@ -1,0 +1,177 @@
+{
+ "artifact_id": "FLAT-STATES-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 local lemma (bulk lattice, exhaustive): inside a coarse triangle of the doubled grid, with labels 2c at Sperner vertices and midpoint labels between, no fine line is violated unless the triangle is fully labelled counterclockwise, and then at least one is; a clockwise full triangle holds none (it holds a full face instead)": {
+   "info": {
+    "down, phase 0": {
+     "negative full": [
+      0
+     ],
+     "not full": [
+      0
+     ],
+     "positive full": [
+      1
+     ]
+    },
+    "down, phase 1": {
+     "negative full": [
+      0
+     ],
+     "not full": [
+      0
+     ],
+     "positive full": [
+      1
+     ]
+    },
+    "down, phase 2": {
+     "negative full": [
+      0
+     ],
+     "not full": [
+      0
+     ],
+     "positive full": [
+      1
+     ]
+    },
+    "up, phase 0": {
+     "negative full": [
+      0
+     ],
+     "not full": [
+      0
+     ],
+     "positive full": [
+      1
+     ]
+    },
+    "up, phase 1": {
+     "negative full": [
+      0
+     ],
+     "not full": [
+      0
+     ],
+     "positive full": [
+      1
+     ]
+    },
+    "up, phase 2": {
+     "negative full": [
+      0
+     ],
+     "not full": [
+      0
+     ],
+     "positive full": [
+      1
+     ]
+    }
+   },
+   "pass": true
+  },
+  "2 the reduction (m = 3..6, k = 2m + 4): for every tested Sperner colouring of the side-m grid with the fixed boundary, the image assignment of K_k violates lines exactly inside the fully labelled triangles oriented like the boundary (every such triangle holds one or more, the opposite ones none; the net count is 1), and each point's colour reads at most two Sperner colours": {
+   "info": {
+    "m=3, k=10": {
+     "Sperner colourings (exhaustive if <= 3000)": 3,
+     "Sperner colours read per point (at most)": 2,
+     "boundary corner colours": [
+      0,
+      1,
+      2
+     ],
+     "colourings whose violated lines lie exactly inside the full triangles oriented like the boundary": 3,
+     "full triangles oriented like the boundary": 3,
+     "net orientation in the listing used": [
+      1
+     ],
+     "oppositely oriented full triangles (no violated line)": 0
+    },
+    "m=4, k=12": {
+     "Sperner colourings (exhaustive if <= 3000)": 27,
+     "Sperner colours read per point (at most)": 2,
+     "boundary corner colours": [
+      2,
+      0,
+      1
+     ],
+     "colourings whose violated lines lie exactly inside the full triangles oriented like the boundary": 27,
+     "full triangles oriented like the boundary": 39,
+     "net orientation in the listing used": [
+      1
+     ],
+     "oppositely oriented full triangles (no violated line)": 12
+    },
+    "m=5, k=14": {
+     "Sperner colourings (exhaustive if <= 3000)": 729,
+     "Sperner colours read per point (at most)": 2,
+     "boundary corner colours": [
+      1,
+      2,
+      0
+     ],
+     "colourings whose violated lines lie exactly inside the full triangles oriented like the boundary": 729,
+     "full triangles oriented like the boundary": 1539,
+     "net orientation in the listing used": [
+      1
+     ],
+     "oppositely oriented full triangles (no violated line)": 810
+    },
+    "m=6, k=16": {
+     "Sperner colourings (exhaustive if <= 3000)": 3000,
+     "Sperner colours read per point (at most)": 2,
+     "boundary corner colours": [
+      0,
+      1,
+      2
+     ],
+     "colourings whose violated lines lie exactly inside the full triangles oriented like the boundary": 3000,
+     "full triangles oriented like the boundary": 9046,
+     "net orientation in the listing used": [
+      1
+     ],
+     "oppositely oriented full triangles (no violated line)": 6046
+    }
+   },
+   "pass": true
+  },
+  "3 the window criterion: for random pebbled colourings (taken from random one-full-triangle states, boundary pebbled) and every triangle T avoiding the pebbles, the integer difference system on pebble sheets has no negative cycle exactly when a solver finds a state with T as the only full triangle, counterclockwise": {
+   "info": {
+    "m=5": {
+     "(pebble set, triangle) pairs": 309,
+     "criterion agrees with the solver": 309,
+     "infeasible (solver)": 224
+    },
+    "m=6": {
+     "(pebble set, triangle) pairs": 406,
+     "criterion agrees with the solver": 406,
+     "infeasible (solver)": 305
+    },
+    "m=7": {
+     "(pebble set, triangle) pairs": 696,
+     "criterion agrees with the solver": 696,
+     "infeasible (solver)": 437
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The knot sphere contains Sperner's lemma. For m >= 3 and k >= 2m + 4 there is a map from colourings of the side-m triangular grid with a fixed Sperner boundary (corners 0, 1, 2; each side takes its far corner's colour after its first vertex) to assignments of the octahedral knot sphere K_k, each point's colour reading at most two Sperner colours, such that the violated lines of the image lie exactly inside the fully labelled triangles oriented like the boundary: each such triangle holds at least one, oppositely oriented ones hold none. So the one-sided (positive) 2D Sperner problem reduces to finding a violated line, by decision trees of depth at most two, and any query or resolution-width lower bound for it transfers to K_k. Moreover, for Sperner states, pebbled colours admit a state whose only full triangle is a given T iff an integer difference system on pebble sheets has no negative cycle; an obstruction between two positions needs a closed walk through pebbles that separates them with free-segment excess sum (len - 2) at most |forced winding| + 3|winding| + 2.",
+ "kind": "proof",
+ "proof": "FLAT-STATES-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FLAT-STATES-20261107-001B"
+}

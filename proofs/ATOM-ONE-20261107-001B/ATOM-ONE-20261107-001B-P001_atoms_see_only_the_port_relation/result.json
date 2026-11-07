@@ -1,0 +1,59 @@
+{
+ "artifact_id": "ATOM-ONE-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/manifest.json": "Proved",
+     "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 a free relation passes through a closed Fano atom: with any one element opened (a line removed, or a point split into free copies), every other element's three variables are free": {
+   "info": {
+    "opened line, other element a line: free": 42,
+    "opened line, other element a point: free": 49,
+    "opened point, other element a line: free": 49,
+    "opened point, other element a point: free": 42
+   },
+   "pass": true
+  },
+  "2 the bound with every deep point of the removal's side, alone or paired with any deep point behind another element, for every port relation, closed atom and line (all 8,190 letters): creation is B's own; far sides change only at a receiving atom's cut lines when R is one of six relations, exactly as in GLUE-READ A's bound": {
+   "info": {
+    "cases": 5880,
+    "creation unchanged by every deep relation of the removal's side and every mixed pair": 5880,
+    "degenerate: b shows fewer than six patterns": 2310,
+    "far sides added, R = 000/001/010/101/110/111": 84,
+    "far sides added, R = 000/001/011/100/110/111": 84,
+    "far sides added, R = 000/010/011/100/101/111": 84,
+    "far sides added, R = 001/010/101/110": 84,
+    "far sides added, R = 001/011/100/110": 84,
+    "far sides added, R = 010/011/100/101": 84,
+    "far sides added: receiver's cut line, R among the six": 504,
+    "mixed pairs add no far side beyond GLUE-READ A's bound": 5880
+   },
+   "pass": true
+  },
+  "3 deep points behind B's other elements, with every relation their sides' exact relations allow, can add creation (at intact lines with a free or not-all-equal port relation): the closed atom's verdict is not forced by bounding them, though these points do not depend on which line of the facing atom was removed": {
+   "info": {
+    "cases (one slot order)": 980,
+    "creation changed by deep points behind B's other elements: R = free, intact line": 28,
+    "creation changed by deep points behind B's other elements: R = not all equal, intact line": 28,
+    "far sides changed by deep points behind B's other elements": 728
+   },
+   "pass": true
+  }
+ },
+ "claim": "Atoms see only the port relation (proved for every knot space by an exhaustive finite check extending GLUE-READ A's). Let B be a Fano atom, C its cut facing a removal and R the port relation there; by ticket A, B with its closed sides is the Fano plane minus C's element, up to flips. Feeding at once every deep point of the removal's side and every mixed pair of such a point with a deep point behind another element of B never changes whether creation occurs at a line of B (5,880 of 5,880 non-degenerate cases, all 8,190 letters); far sides change only at a receiving atom's cut lines when R is one of six relations (504 cases), as with the removal's side alone. A free relation passes through a closed Fano atom (182 of 182). Hence acts-as-one holds for whether creation occurs, for every Fano atom of every knot space; far side by far side it holds except at a receiving atom's cut lines whose relation has six patterns, and without exception whenever only Fano atoms lie between, so on every Fano tree. Deep points behind B's own other elements are not bounded this way: with every relation their sides allow they can add creation at intact lines when R is free or not-all-equal (56 of 980 cases, one slot order), though they do not depend on the removed line.",
+ "kind": "proof",
+ "proof": "ATOM-ONE-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "ATOM-ONE-20261107-001B"
+}

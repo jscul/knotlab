@@ -1,0 +1,64 @@
+{
+ "artifact_id": "FAR-READ-20261106-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (GLUE-READ B's exact maps included); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 how the far sides create together, over all 191 maps: the Fano plane and census 58 create at exactly the same pairs; K4^(3) creates only where census 6 does; census 6 creates without the Fano plane only at glue lines; so at an atom line creation is one of four strengths (none; the Fano plane and census 58; with census 6; with all four)": {
+   "info": {
+    "census 6 without the Fano plane": {
+     "vector at a gluing atom line": {},
+     "vector at a gluing glue line": {
+      "Kc..": 712
+     }
+    },
+    "vectors": {
+     "vector at a gluing atom line": {
+      "-": 964,
+      "....": 18543,
+      "..FC": 69573,
+      ".cFC": 17915,
+      "KcFC": 16689
+     },
+     "vector at a gluing glue line": {
+      "-": 10751,
+      "....": 4607,
+      "..FC": 1430,
+      ".cFC": 784,
+      "Kc..": 712,
+      "KcFC": 452
+     }
+    }
+   },
+   "pass": true
+  },
+  "2 every Fano atom acts as one from outside: every atom line outside it receives the same far-side vector from each of its lines; on glue lines and in what it receives, an atom's lines differ": {
+   "info": {
+    "act as one on atom lines outside": 731,
+    "act as one on glue lines": 452,
+    "count": 731,
+    "seen alike by every atom line outside (columns)": 247
+   },
+   "pass": true
+  }
+ },
+ "claim": "The far-side map (computed on the 191 exact creation maps of GLUE-READ B: 111 census spaces and 80 random spaces with plane glue). The Fano plane and census 58 create at exactly the same pairs; K4^(3) creates only where census 6 does; and census 6 creates without the Fano plane only when the gluing line is a glue line. So at an atom line creation is one of four strengths: none, by the Fano plane and census 58, with census 6 too, or with all four. Every Fano atom acts as one from outside: every atom line outside it receives the same far-side vector from each of its lines (731 of 731 atoms), although its lines differ in what they do to glue lines and in what they receive.",
+ "kind": "proof",
+ "proof": "FAR-READ-20261106-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FAR-READ-20261106-001A"
+}

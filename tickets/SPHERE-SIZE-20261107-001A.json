@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-WIDTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SPHERE-SIZE-20261107-001A-P001"
+  },
+  "id": "SPHERE-SIZE-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that for every packing of islands (balls of radius s, pairwise at distance >= 17, away from the corners) with constant labels, the restricted knot-sphere formula still needs resolution width c(s)*k: island points add no budget to obstructions, hops between islands cost at least one unit, so certificate walks stay O(s^3) per Spoiler pebble and the density argument applies. Check the island terms and feasibility on concrete packings.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SPHERE-SIZE-20261107-001"
+  },
+  "parent": "SPHERE-SIZE-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (SPHERE-SIZE-20261107-001A-P001): islands keep the count hard. For any packing of radius-s islands, pairwise >= 17 apart and away from the corners, each fixed to a constant label, the restricted knot-sphere formula still needs resolution width c(s)*k - 1. With island points as permanent pebbles, terms within an island are >= 0 and terms between islands >= floor((dist - 11)/6) >= 1, so every negative term of a certificate touches a Spoiler pebble, certificates have length O(s^3) per Spoiler pebble, and the density argument survives. Checks: 50/50 free vortex positions feasible under maximal packings; 47 certificates obey the term bounds; at separation 17 no negative term away from a Spoiler pebble.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Islands keep the count hard"
+}

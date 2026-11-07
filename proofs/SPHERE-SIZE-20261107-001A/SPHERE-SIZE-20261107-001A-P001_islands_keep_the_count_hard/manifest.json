@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPHERE-SIZE-20261107-001A-P001",
+  "canonical_id": "SPHERE-SIZE-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "SPHERE-SIZE-20261107-001A",
+  "proof": "SPHERE-SIZE-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Islands keep the count hard",
+  "status": "Proved",
+  "claim": "Islands keep the count hard. Restrict the knot-sphere formula of K_k by any island packing: balls of radius s, pairwise at distance at least 17 and away from the corners, each fixed to one constant label in a frame over the island. The restricted formula still needs resolution width at least c(s)*k - 1. With the island points as permanent pebbles in the window criterion, terms within an island are nonnegative and terms between islands are at least floor((dist - 11)/6), hence >= 1; so every negative term of an obstruction certificate touches a Spoiler pebble, the certificate walk has length O(s^3) per Spoiler pebble, and the density argument of SPHERE-WIDTH-20261107-001A goes through with the vortex in the free region.",
+  "dependencies": [
+    "SPHERE-WIDTH-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A packing with separation >= 17 and a free vortex position admitting no compatible label state.",
+    "A certificate with a negative same-island term, a between-island term below floor((dist - 11)/6), or (at separation >= 17) a negative term touching no Spoiler pebble.",
+    "A gap in the hand proof (inherited sketches: winding bound, isoperimetry)."
+  ],
+  "lineage": {
+    "home_scope": "SPHERE-SIZE-20261107-001",
+    "epic_path": [
+      "SPHERE-SIZE-20261107-001"
+    ],
+    "parents": [
+      "proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/width_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/manifest.json": "81216cd014d9fbea2eb7de4e2533be0b3ddc2e7323e2883c1f5e70c4222aac68",
+    "proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/result.json": "448ac4a4afc006c5a1c98e85a7df3f1e3d408e6a19093f6c93b418799b129ff1",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json": "28454007b876da69896339a77ffac6aeacc0566c9a8ce66992e3404c4722134c",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json": "024c0e6da6dcce7055ac6835ceade148821cda0eb860f55acf45af34fe845bde",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/width_lib.py": "7fb863372b6d4ba0859b76946993ba5c49cd72d323ea7ec3bef601e163732e20"
+  },
+  "paths": {
+    "manifest": "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/manifest.json",
+    "identity": "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/identity.json",
+    "proof": "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/proof.md",
+    "check": "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/check.py",
+    "result": "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/result.json",
+    "directory": "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every k and every packing with separation >= 17 (by the proof); feasibility checked on K_14, K_18, K_26; certificates on K_14, K_18 (separation 6) and K_30 (separation 17).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "the lemma by hand on top of SPHERE-WIDTH-20261107-001A; island terms, feasibility and certificates checked by computation; no human or external review",
+    "novelty": "new as far as found: the Dantchev-Riis local-randomization paradigm, with fixed constant-label islands as permanent pebbles that add no budget to the obstruction."
+  }
+}

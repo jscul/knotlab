@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-WIDTH-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SPHERE-WIDTH-20261107-001B-P001"
+  },
+  "id": "SPHERE-WIDTH-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Decide whether the sphere argument gives resolution width Omega(m) for grid Sperner with a fixed boundary: boundary arcs cost Spoiler nothing, so test whether pebbles far away (a rotating chain) can trap the vortex through a long boundary-paid chord, and either prove the width bound or name what the disk needs beyond the sphere argument.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SPHERE-WIDTH-20261107-001"
+  },
+  "parent": "SPHERE-WIDTH-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (SPHERE-WIDTH-20261107-001B-P001): grid Sperner needs resolution width Theta(m). With the fixed three-sided boundary (one- or two-sided clauses), every refutation of the side-m grid has width at least c*m - 1, and O(m) suffices. Boundary lemma: negative terms of a certificate come only from single edges touching a Spoiler pebble or one of finitely many boundary features, so walks through the boundary stay within O(w) of it and cannot separate two deep triangles; pure Spoiler walks are short, and the sphere's density argument applies. Corollaries: Itsykson et al.'s Sperner CSP needs width Omega(n) (only tree-like size was known), and through FLAT-STATES-20261107-001B's reduction the knot sphere gets width Omega(k) a second time. Checks: 54 certificates on m = 10, 12 with local negative terms and separation; chains on m = 18 block only within distance 3 or fit no state at all.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Grid Sperner on the disk"
+}

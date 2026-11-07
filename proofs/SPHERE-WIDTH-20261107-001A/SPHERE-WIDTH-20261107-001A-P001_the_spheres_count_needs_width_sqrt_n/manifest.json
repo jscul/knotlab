@@ -1,0 +1,108 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPHERE-WIDTH-20261107-001A-P001",
+  "canonical_id": "SPHERE-WIDTH-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "SPHERE-WIDTH-20261107-001A",
+  "proof": "SPHERE-WIDTH-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The sphere's count needs resolution width Theta(sqrt n)",
+  "status": "Proved",
+  "claim": "The sphere's count needs resolution width Theta(sqrt n). Every resolution refutation of the not-all-equal formula of the octahedral knot sphere K_k (n = 4k^2 points) has width at least c*k - 1 for an absolute constant c > 0, and width O(k) suffices. Duplicator answers from label states whose vortex lies outside the density-bad set of the pebbles (points x with at least s/C pebbles within distance s for some s). By the exact window criterion, an obstruction to moving the vortex is a negative cycle of a sheet system on the pebbles; it closes into a walk of length at most a constant times its number of pebbles that separates the two positions or passes through the old one, so one of them is density-bad, and a Vitali covering bounds the bad set by O(pebbles^2) points.",
+  "dependencies": [
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A pebbled colouring and vortex on which the sheet criterion and the solver disagree, or a feasible case whose realization is not a single-defect state at the vortex matching the pebbles.",
+    "An obstruction certificate violating L <= 3r - 6 + H, or one that neither separates the two positions nor passes through the old one.",
+    "A Spoiler with at most c*k pebbles that traps the vortex against the density strategy (the simulated game is an illustration only).",
+    "A gap in the hand proof: the window criterion, the winding bound for shortest segments, the isoperimetric lemma or the covering argument."
+  ],
+  "lineage": {
+    "home_scope": "SPHERE-WIDTH-20261107-001",
+    "epic_path": [
+      "SPHERE-WIDTH-20261107-001"
+    ],
+    "parents": [
+      "proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/manifest.json": "c3121ea27095fcf397fe7f52ab78692853baf03e7b6301e067d84cbe51ac8ec6",
+    "proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/result.json": "7ad216e6e0de6badf3e10570a9bb888006f5be8eb5166b9c56f2adc43c4e5eb6",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "e0f61bd599521eb52588a1bc36732f64fe80eee23ee9f7a1c1c8606cac324fca",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "6094393c4899b93849fabbffa2aef8ac5c3e1ed87569885ac990cfbb25dbc8e4",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py": "f19711315cb24b03296259fc5e27faab9d5a99246119a1e52e2738bb7dfb672c",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "94a048cfe6159b4de6b36487da85c20c5b422c97f7a7a1dd0f4783ee0e960971",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "ca62f89c55bb4c742357bc2dc84c133f34ab3400df8e274ff8ede8272a6882ef"
+  },
+  "paths": {
+    "manifest": "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json",
+    "identity": "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/identity.json",
+    "proof": "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/proof.md",
+    "check": "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/check.py",
+    "result": "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json",
+    "directory": "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot spheres K_k for every k (by the proof); the window criterion and certificates checked for k = 4..7; the game simulated for k = 6, 8 with up to 12 pebbles.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "the theorem by hand (window criterion, certificate length bound, density covering, Atserias-Dalmau); computational checks of the criterion, of the certificates and of a simulated game; no human or external review",
+    "novelty": "new as far as found for these formulas: resolution width bounds for grid formulas (Tseitin, mutilated chessboard, Sperner tree-like) use expansion or tiling games; the delta is a density argument for a height principle with a vortex, where obstructions are closed walks with at most a constant number of steps per pebble."
+  }
+}

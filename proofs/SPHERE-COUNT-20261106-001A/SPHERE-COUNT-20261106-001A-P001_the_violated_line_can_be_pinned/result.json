@@ -1,0 +1,174 @@
+{
+ "artifact_id": "SPHERE-COUNT-20261106-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/manifest.json": "Proved",
+     "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/result.json": "passed",
+     "proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 in the bulk, for both classes of adjacent line and every radius r <= 3, the two-level search finds a colouring of the ball of radius r+1 in which every triangle is not-all-equal except M, and from which no recolouring within radius r makes the adjacent line the only violated one": {
+   "info": {
+    "U(1,-1), r=0": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 1
+    },
+    "U(1,-1), r=1": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 1
+    },
+    "U(1,-1), r=2": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 6
+    },
+    "U(1,-1), r=3": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 20
+    },
+    "U(1,0), r=0": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 2
+    },
+    "U(1,0), r=1": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 5
+    },
+    "U(1,0), r=2": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 7
+    },
+    "U(1,0), r=3": {
+     "blocking configuration found": true,
+     "locally valid and blocked": true,
+     "search iterations": 27
+    }
+   },
+   "pass": true
+  },
+  "2 the blocking configuration for U(1,0) at r=3 (concentric alternating rings around the violated line): within radius 2 the violated line reaches only some of its six adjacent lines": {
+   "info": {
+    "blocked directions": [
+     "U(1,0)",
+     "U(0,1)",
+     "U(0,-1)",
+     "U(-1,1)"
+    ],
+    "configuration rows": [
+     "         1 1 1 1 1 0 . . . . .",
+     "        1 0 0 0 0 1 1 . . . .",
+     "       1 0 1 1 1 0 0 1 . . .",
+     "      1 0 1 0 0 1 1 0 1 . .",
+     "     1 0 1 0 1 0 0 1 0 1 .",
+     "    1 0 1 0 1 1 1 0 1 0 1",
+     "   . 0 1 0 1 0 0 0 1 0 1",
+     "  . . 0 1 0 1 1 1 1 0 1",
+     " . . . 0 1 0 0 0 0 0 1",
+     ". . . . 0 1 1 1 1 1 1"
+    ],
+    "reach at r = 0, 1, 2": {
+     "U(-1,0)": [
+      true,
+      true,
+      true
+     ],
+     "U(-1,1)": [
+      false,
+      false,
+      false
+     ],
+     "U(0,-1)": [
+      false,
+      false,
+      false
+     ],
+     "U(0,1)": [
+      false,
+      false,
+      false
+     ],
+     "U(1,-1)": [
+      true,
+      true,
+      true
+     ],
+     "U(1,0)": [
+      false,
+      false,
+      false
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 on the octahedral knot space K_8 (256 points), for the line farthest from the corners and each of its six adjacent lines, there is a whole-sphere state violating only that line from which the violated line cannot move to the adjacent line by changing points within distance r, for r = 2 and r = 3": {
+   "info": {
+    "r=2": {
+     "adjacent lines": 6,
+     "adjacent lines with a blocking whole-sphere state": 6,
+     "search iterations": {
+      "19": 7,
+      "20": 10,
+      "33": 12,
+      "36": 9,
+      "52": 32,
+      "54": 3
+     },
+     "violated line": 34
+    },
+    "r=3": {
+     "adjacent lines": 6,
+     "adjacent lines with a blocking whole-sphere state": 6,
+     "search iterations": {
+      "19": 74,
+      "20": 14,
+      "33": 39,
+      "36": 33,
+      "52": 17,
+      "54": 49
+     },
+     "violated line": 34
+    }
+   },
+   "pass": true
+  },
+  "4 from 25 random states of K_8 (random solver phases), every adjacent line is reached, at the least radius shown": {
+   "info": {
+    "least radius: count": {
+     "0": 99,
+     "1": 39,
+     "2": 11
+    }
+   },
+   "pass": true
+  },
+  "5 label states: labels on a triangle within two consecutive values always give a not-all-equal colouring (three consecutive values can fail: the control); a point whose six neighbours carry 0..5 in cyclic order is a vortex: whatever its colour, exactly one of its six triangles is monochromatic, a line when the labels increase counterclockwise and a face when they decrease, so violated lines and full faces are the vortices and antivortices of the labels": {
+   "info": {
+    "clockwise labels: always a face": true,
+    "counterclockwise labels: always a line": true,
+    "three consecutive values, monochromatic cases (control)": 36,
+    "two consecutive values always not-all-equal": true,
+    "vortex: exactly one monochromatic triangle in all 24 cases": true
+   },
+   "pass": true
+  }
+ },
+ "claim": "The violated line can be pinned. For the octahedral knot spaces, an assignment violating one line is, in the bulk, a ground state of the triangular antiferromagnet with one defect triangle, and the violated line cannot always be moved locally: for both classes of adjacent line and every radius r <= 3 there are locally valid states (frozen cones of concentric alternating rings) from which no recolouring within radius r moves it there, and on K_8 every adjacent line of the central line has a whole-sphere state blocking the move at radius 2 and 3; random states always move (149 of 149 within radius 2). In label states (colourings by a 1-Lipschitz Z6 height through six sublattice patterns) every triangle is not-all-equal except at vortices, and a vortex's single monochromatic triangle is a line when its labels increase counterclockwise and a face when they decrease. So the Tseitin template for resolution width cannot be applied state by state; width Omega(sqrt n) reduces to a flat-state pursuit lemma for label states, which is open.",
+ "kind": "proof",
+ "proof": "SPHERE-COUNT-20261106-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SPHERE-COUNT-20261106-001A"
+}

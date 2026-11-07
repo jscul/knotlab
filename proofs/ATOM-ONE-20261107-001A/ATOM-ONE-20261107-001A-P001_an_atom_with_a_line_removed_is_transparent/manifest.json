@@ -1,0 +1,134 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ATOM-ONE-20261107-001A-P001",
+  "canonical_id": "ATOM-ONE-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "ATOM-ONE-20261107-001A",
+  "proof": "ATOM-ONE-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A Fano atom with a line removed is transparent",
+  "status": "Proved",
+  "claim": "A Fano atom with a line removed is transparent (proved for every knot space, a connected cubic system with no not-all-equal colouring). Every closed side of an atom's cut accepts exactly one antipodal pair (a point side) or the six other patterns (a line side), by KNOT-COMPOSE A as corrected by NATIVE-PATHS A, so the atom with its closed sides is a signed Fano plane with no colouring; of the 256 sign classes of the Fano plane exactly one, the plain plane, has none. In the Fano plane, removing any line together with any other element leaves that element's three variables free (91 of 91). Hence an atom with any one of its lines removed sends the free relation through every one of its cuts, the same relation whichever line is removed. The knot is needed: with arbitrary relations on an atom's other cuts this holds for every atom with at most one line-type cut, but for only 209 of 1,609 (configuration, cut) pairs with more. Computed on the 191 saved spaces: all 1,014 closed sides are as stated, and 6,058 of 6,058 (atom, cut, removed line) send the free relation.",
+  "dependencies": [
+    "FAR-READ-20261106-001A",
+    "GLUE-READ-20261106-001A",
+    "KNOT-COMPOSE-20261101-001A",
+    "NATIVE-PATHS-20261101-001A"
+  ],
+  "evidence_modes": [
+    "exact-computation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A sign class of the Fano plane other than the plain one with no not-all-equal colouring.",
+    "An element and a line of the Fano plane whose removal leaves the element's variables constrained.",
+    "A saved space with a closed side that is not one antipodal pair or the six other patterns, or an atom with a line removed that sends a constrained relation through one of its cuts."
+  ],
+  "lineage": {
+    "home_scope": "ATOM-ONE-20261107-001",
+    "epic_path": [
+      "ATOM-ONE-20261107-001"
+    ],
+    "parents": [
+      "proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/manifest.json",
+      "proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/result.json",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json",
+      "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json",
+      "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json",
+      "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz",
+      "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/manifest.json": "164973fd36c139127e1b6fa71d1aee37c36b6fa23b1d754f2c44569a0d597ee8",
+    "proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/result.json": "904cc39b9dea6ef3d28bf5881e902430db17edee949c949f491048d0b2970786",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json": "7c6f7de1b6589428d620931c259adce8f687c2d79ebce36218da202dfa4c9eb6",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json": "faa0917874c755d49d46d9e76669718c744602d38528d1b93f7c8e61817a3813",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "cc03aae6d40f293f73ae1823f8627046a1352ab61100dc1cb3f6b0e0194fcfc5",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "9761645e029511ffeeaa4f5014004703e1ca6975895cd02b85087c5184c16a91",
+    "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json": "224ff5bcd6938a9d2839464e288dbbae31e55fdfd3f17d610f86da2346de5c48",
+    "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json": "753943d1d7b6106753c38843117971e2a7f04a5719f3f85a29147a9de0f3c647",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "10cb4f0382fc24672706a5fa64b4964581f782bf4fee1a5187d4ebfb79051826",
+    "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "68da26a9c5d6ec418874f008036494e7f66433b4de796c4d67fec6c8a86bc59f",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py": "fb87b642fc0d5779e4e4e0cbd8b852ba1032253b3ad0ff4d43f4a79bd66b2496",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py": "1f128469a7465b7b97ecbf7526a04145f49f36ee949602051a28e46b11c11e27",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py": "44d2a6f206c59138e1af3b852731c50e172310b7b010750f919f1d2d2496d56d",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py": "99b1e350243a998ac2bfc7ef9b6fc5ecd8c6724a404f83b562c60c2032b20677",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py": "cbfdd06e35b2ced652eb80c4fa066f0e972a51191021175f519673ab3211a5c0"
+  },
+  "paths": {
+    "manifest": "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/manifest.json",
+    "identity": "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/identity.json",
+    "directory": "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent",
+    "proof": "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/proof.md",
+    "result": "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/result.json",
+    "check": "proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "atom_transparency_proved": true
+  },
+  "foundation_claim_scope": "Every Fano atom of every knot space (connected cubic system with no not-all-equal colouring); the saved spaces of GLUE-READ B as a computed confirmation.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "proved by an exhaustive finite check on top of KNOT-COMPOSE A's cut theorem as corrected by NATIVE-PATHS A; no human or external review",
+    "novelty": "New here: the theorem and the classification of signed Fano knots; the cut theorem is the project's."
+  }
+}

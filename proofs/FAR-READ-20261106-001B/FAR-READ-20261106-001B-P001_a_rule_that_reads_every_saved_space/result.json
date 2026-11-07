@@ -1,0 +1,88 @@
+{
+ "artifact_id": "FAR-READ-20261106-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (GLUE-READ B's exact maps included); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the rule returns exactly the Fano atoms of all 191 saved spaces, and so counts them": {
+   "info": {
+    "by kind": {
+     "census, Fano trees": {
+      "1-2 two-stage twins": 17,
+      "1-3 + split by parts acting as one": 17,
+      "1-4 with reattachment through whether creation occurs": 17,
+      "Fano atoms": 67,
+      "spaces": 17,
+      "the rule (1-4, reattachment through the Fano plane)": 17,
+      "the rule with parts of two lines allowed": 16,
+      "the rule's count = number of Fano atoms": 17
+     },
+     "census, with a non-planar non-Heawood brace": {
+      "1-2 two-stage twins": 1,
+      "1-3 + split by parts acting as one": 1,
+      "1-4 with reattachment through whether creation occurs": 1,
+      "Fano atoms": 2,
+      "spaces": 1,
+      "the rule (1-4, reattachment through the Fano plane)": 1,
+      "the rule with parts of two lines allowed": 1,
+      "the rule's count = number of Fano atoms": 1
+     },
+     "census, with plane glue": {
+      "1-2 two-stage twins": 93,
+      "1-3 + split by parts acting as one": 93,
+      "1-4 with reattachment through whether creation occurs": 93,
+      "Fano atoms": 333,
+      "spaces": 93,
+      "the rule (1-4, reattachment through the Fano plane)": 93,
+      "the rule with parts of two lines allowed": 92,
+      "the rule's count = number of Fano atoms": 93
+     },
+     "random, Fano trees": {
+      "1-2 two-stage twins": 3,
+      "1-3 + split by parts acting as one": 3,
+      "1-4 with reattachment through whether creation occurs": 3,
+      "Fano atoms": 18,
+      "spaces": 3,
+      "the rule (1-4, reattachment through the Fano plane)": 3,
+      "the rule with parts of two lines allowed": 2,
+      "the rule's count = number of Fano atoms": 3
+     },
+     "random, with plane glue": {
+      "1-2 two-stage twins": 54,
+      "1-3 + split by parts acting as one": 71,
+      "1-4 with reattachment through whether creation occurs": 74,
+      "Fano atoms": 311,
+      "spaces": 77,
+      "the rule (1-4, reattachment through the Fano plane)": 77,
+      "the rule with parts of two lines allowed": 77,
+      "the rule's count = number of Fano atoms": 77
+     }
+    }
+   },
+   "pass": true
+  },
+  "2 every step is needed: each refinement reads more spaces than the one before; allowing parts of two lines breaks atoms": {
+   "info": {
+    "1-2 two-stage twins": 168,
+    "1-3 + split by parts acting as one": 185,
+    "1-4 with reattachment through whether creation occurs": 188,
+    "the rule (1-4, reattachment through the Fano plane)": 191,
+    "the rule with parts of two lines allowed": 188
+   },
+   "pass": true
+  }
+ },
+ "claim": "A rule that reads every saved space (computed on the 191 exact maps of GLUE-READ B; frozen here for ticket C). From the creation map alone: (1) twins, lines that create at each other and at the same other lines, pick out the atom lines, those in twin classes of two or more; (2) twins compared on atom lines give candidate classes; (3) a candidate of six or more lines that is partitioned into two or more sets of three or more lines, each acting as one (every atom line outside it receiving the same far-side vector from each of its lines), is split into the finest such partition, again and again; (4) a line left single by step 1 joins the one class of three or more lines with which it creates both ways through the Fano plane, when that class acts as one and the line sends every atom line outside it the class's far-side vector. On all 191 saved spaces (111 census, 80 random with plane glue) the classes are exactly the Fano atoms, so their number is the number of Fano atoms, the genus wherever every handle is a Fano atom. Every step is needed: the first two read 168 spaces, the split 185, reattachment through whether creation occurs 188, the rule 191; allowing parts of two lines breaks three.",
+ "kind": "proof",
+ "proof": "FAR-READ-20261106-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "FAR-READ-20261106-001B"
+}

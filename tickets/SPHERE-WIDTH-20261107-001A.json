@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SPHERE-WIDTH-20261107-001A-P001"
+  },
+  "id": "SPHERE-WIDTH-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that every resolution refutation of the octahedral knot sphere K_k has width at least c*k: Duplicator answers from label states whose vortex lies outside the density-bad set of the pebbles; the label-state window criterion turns any obstruction to moving the vortex into a closed walk through pebbles of length at most 15 per pebble, and a Vitali covering bounds the bad set by O(pebbles^2). Check the window criterion against a solver and simulate the pebble game.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SPHERE-WIDTH-20261107-001"
+  },
+  "parent": "SPHERE-WIDTH-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (SPHERE-WIDTH-20261107-001A-P001): the sphere's count needs resolution width Theta(sqrt n). Every refutation of the octahedral knot sphere K_k has width at least c*k - 1, and O(k) suffices. Duplicator answers from label states whose vortex avoids the density-bad set of the pebbles (points with at least s/C pebbles within distance s); by the exact window criterion an obstruction is a negative cycle of a sheet system, closing into a walk of length at most 27 per pebble that separates the two positions or passes through the old one, so a position must be bad, and a Vitali covering bounds the bad set by O(pebbles^2). Checks: criterion = solver 216/216; 190 certificates satisfy L <= 3r - 6 + H and separate (max L/r 5.5); a simulated game survives with up to 12 pebbles on K_6, K_8. Winding bound and isoperimetric constant by sketch.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The sphere's count needs width Theta(sqrt n)"
+}

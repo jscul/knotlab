@@ -1,0 +1,92 @@
+{
+ "artifact_id": "SPHERE-SIZE-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/manifest.json": "Proved",
+     "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the hard-core packing keeps islands at least the separation apart, and each point's coverage probability is at least sum_c eps (1 - eps)^(|B(c, 2s + d_sep)| - 1) (Monte Carlo, within 4 standard deviations; the formula counts every nearby point as a competitor, so it is a lower bound, exact when all of them may propose)": {
+   "info": {
+    "k=16, s=1, separation 6, eps=1/217": {
+     "coverage per point": [
+      {
+       "Monte Carlo": 0.0155,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.0119
+      },
+      {
+       "Monte Carlo": 0.0205,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.0119
+      },
+      {
+       "Monte Carlo": 0.0185,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.012
+      },
+      {
+       "Monte Carlo": 0.017,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.012
+      }
+     ],
+     "packings": 2000,
+     "smallest separation seen": 7
+    },
+    "k=20, s=2, separation 6, eps=1/331": {
+     "coverage per point": [
+      {
+       "Monte Carlo": 0.0233,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.0212
+      },
+      {
+       "Monte Carlo": 0.0293,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.0212
+      },
+      {
+       "Monte Carlo": 0.0273,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.0213
+      },
+      {
+       "Monte Carlo": 0.0267,
+       "at least the bound, within 4 sd": true,
+       "formula (lower bound)": 0.0212
+      }
+     ],
+     "packings": 1500,
+     "smallest separation seen": 7
+    }
+   },
+   "pass": true
+  },
+  "2 the constants at the proof's parameters (s = 1, separation 17): coverage probability, literal probability, independence distance and the resulting size exponent, S >= 2^(alpha (c(1) k - 1 - N_c)) with alpha > 0 absolute": {
+   "info": {
+    "coverage lower bound p": 0.002258,
+    "independence distance": 40,
+    "island radius s": 1,
+    "literal satisfied with probability at least": 0.001129,
+    "points per independence ball V": 4921,
+    "proposal probability eps": "1/1141",
+    "separation": 17,
+    "size bound": "S >= 2^(3.31e-07 (c(1) k - 1 - N_c))",
+    "survival exponent per wide-clause literal (bits)": "3.31e-07"
+   },
+   "pass": true
+  }
+ },
+ "claim": "The sphere's count needs resolution size 2^Theta(sqrt n). There is an absolute constant c > 0 such that every resolution refutation of the not-all-equal formula of the octahedral knot sphere K_k (n = 4k^2 points) has size at least 2^(c k); size n^O(1) 2^O(sqrt n) suffices. Proof: a random hard-core island packing (radius 1, separation 17, uniform labels) fixes every point away from the corners with probability at least 7/(eM), M = 1141, with independence beyond distance 40; so every clause with W literals survives with probability at most (1 - q)^((W - N_c)/V); a refutation of size below 2^(alpha (c(1) k - 1 - N_c)) would leave a refutation of width below c(1) k - 1 of a restricted formula, contradicting SPHERE-SIZE-20261107-001A. Corollary (sketch): grid Sperner and Itsykson et al.'s Sperner CSP need size 2^Omega(m) in general resolution.",
+ "kind": "proof",
+ "proof": "SPHERE-SIZE-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SPHERE-SIZE-20261107-001B"
+}

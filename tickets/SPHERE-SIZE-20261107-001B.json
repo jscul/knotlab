@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-SIZE-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SPHERE-SIZE-20261107-001B-P001"
+  },
+  "id": "SPHERE-SIZE-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Combine a random hard-core island packing (constant coverage probability per point, finite-range independence, uniform labels) with ticket A by the random-restriction argument: a refutation of size 2^(o(k)) would leave a refutation of width o(k) of some restricted formula. Derive size 2^Theta(sqrt n) for the knot sphere, 2^Theta(m) for grid Sperner and for Itsykson et al.'s CSP; check the packing's properties numerically.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SPHERE-SIZE-20261107-001"
+  },
+  "parent": "SPHERE-SIZE-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (SPHERE-SIZE-20261107-001B-P001): the sphere's count needs resolution size 2^Theta(sqrt n). Every refutation of the octahedral knot sphere K_k has size at least 2^(c k) for an absolute c > 0 (size n^O(1) 2^O(sqrt n) suffices). A random hard-core island packing (radius 1, separation 17, uniform labels) fixes each point away from the corners with probability >= 7/(e*1141), with independence beyond distance 40; wide clauses die, so a refutation of size 2^o(k) would leave one of width o(k) for a restricted formula, contradicting the island lemma. Constants tiny (alpha ~ 3.3e-7 bits per literal) but absolute. Corollary (sketch): grid Sperner and Itsykson et al.'s Sperner CSP need size 2^Omega(m) in general resolution. Checks: packing separation and coverage (Monte Carlo >= the formula) on K_16, K_20.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The sphere's count needs resolution size 2^Theta(sqrt n)"
+}

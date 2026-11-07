@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-COUNT-20261106-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "FLAT-STATES-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Could you do both of these?', approving SPHERE-COUNT-20261106-001's recommendation and its alternative): (1) build label (flat) states on the whole octahedral knot sphere K_k, which needs structures at the six corners where the lattice's three-colour structure is twisted; (2) prove the flat-state pursuit lemma (re-routing the vortex's six strings through the free region; the giant-component Duplicator), which would give resolution width Omega(k) = Omega(sqrt n), or locate the obstruction; (3) search the literature for planar height-function, matching or flow principles with known resolution bounds and test whether any gives the bound by reduction.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FLAT-STATES-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: both requests done. Flat states exist on the whole sphere (each corner twists labels by -1; one constant label developed over a sphere cut along six paths from z to the corners violates exactly one line, through z; local vortex steps). The literature has no ready-made reduction (dimer and matching bounds use edge variables), but the knot sphere contains one-sided 2D Sperner by a depth-2 decision-tree reduction, with the corners as Sperner's boundary, so Sperner's query and width bounds transfer; an exact window criterion locates obstructions. Width Omega(sqrt n) reduces to Sperner's resolution width (not found in the literature), i.e. to an open winding-control lemma. Next: the resolution width of 2D Sperner (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the width bound is proved, refuted by a configuration that traps the vortex with few pebbles, or reduced to a named lemma with its evidence; record the literature verdict (a reduction, or none, with the nearest known results).",
+  "title": "Flat states and the width of the sphere's count"
+}

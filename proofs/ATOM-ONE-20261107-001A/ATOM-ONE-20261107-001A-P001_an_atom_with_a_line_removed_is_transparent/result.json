@@ -1,0 +1,76 @@
+{
+ "artifact_id": "ATOM-ONE-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/result.json": "passed",
+     "proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "passed",
+     "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/manifest.json": "Proved",
+     "proofs/KNOT-COMPOSE-20261101-001A/KNOT-COMPOSE-20261101-001A-P001_knots_spaces_compose_only_through_hubs/result.json": "passed",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/manifest.json": "Proved",
+     "proofs/NATIVE-PATHS-20261101-001A/NATIVE-PATHS-20261101-001A-P001_two_kinds_of_interface/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the signed Fano planes: up to flipping points and lines there are 256 sign classes, and exactly one has no not-all-equal colouring, the plain Fano plane": {
+   "info": {
+    "gauge group": 8192,
+    "knot classes": 1,
+    "sign classes": 256,
+    "the knot class is the plain plane": true
+   },
+   "pass": true
+  },
+  "2 freeness: in the Fano plane, removing any line together with any other element leaves that element's three variables free": {
+   "info": {
+    "by the other element's kind": {
+     "other element a line: free": 42,
+     "other element a point: free": 49
+    },
+    "cases": 91
+   },
+   "pass": true
+  },
+  "3 the knot is needed: with arbitrary relations on an atom's other cuts, the relation sent is the same whichever line is removed for every atom with at most one line-type cut, but not in general": {
+   "info": {
+    "0 line-type cuts: configurations x outgoing cuts": 35,
+    "0 line-type cuts: invariant for every relation on the other cuts": 35,
+    "1 line-type cuts: configurations x outgoing cuts": 99,
+    "1 line-type cuts: invariant for every relation on the other cuts": 99,
+    "2 or more line-type cuts: configurations x outgoing cuts": 1609,
+    "2 or more line-type cuts: invariant for every relation on the other cuts": 209,
+    "configurations": 253
+   },
+   "pass": true
+  },
+  "4 computed, on the 191 saved spaces: every closed side at a Fano atom's cut accepts one antipodal pair (a point side) or the six other patterns (a line side), and every atom with a line removed sends the free relation through each of its cuts": {
+   "info": {
+    "(atom, cut)": 1014,
+    "(atom, cut, removed line)": 6058,
+    "... the relation sent is free": 6058,
+    "... the same relation whichever line is removed": 1014,
+    "closed sides": 1014,
+    "closed sides: line side, 3 ports": 594,
+    "closed sides: line side, 3 ports, as the theorem says": 594,
+    "closed sides: point side, 2 ports": 46,
+    "closed sides: point side, 2 ports, as the theorem says": 46,
+    "closed sides: point side, 3 ports": 374,
+    "closed sides: point side, 3 ports, as the theorem says": 374
+   },
+   "pass": true
+  }
+ },
+ "claim": "A Fano atom with a line removed is transparent (proved for every knot space, a connected cubic system with no not-all-equal colouring). Every closed side of an atom's cut accepts exactly one antipodal pair (a point side) or the six other patterns (a line side), by KNOT-COMPOSE A as corrected by NATIVE-PATHS A, so the atom with its closed sides is a signed Fano plane with no colouring; of the 256 sign classes of the Fano plane exactly one, the plain plane, has none. In the Fano plane, removing any line together with any other element leaves that element's three variables free (91 of 91). Hence an atom with any one of its lines removed sends the free relation through every one of its cuts, the same relation whichever line is removed. The knot is needed: with arbitrary relations on an atom's other cuts this holds for every atom with at most one line-type cut, but for only 209 of 1,609 (configuration, cut) pairs with more. Computed on the 191 saved spaces: all 1,014 closed sides are as stated, and 6,058 of 6,058 (atom, cut, removed line) send the free relation.",
+ "kind": "proof",
+ "proof": "ATOM-ONE-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "ATOM-ONE-20261107-001A"
+}

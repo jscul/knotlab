@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWO-ROUND-BRIDGE-20261106-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "SPHERE-COUNT-20261106-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes let's continue.', approving TWO-ROUND-BRIDGE-20261106-001's recommendation): decide whether the sphere's Euler count is hard for resolution. On the octahedral three-fold spaces (Goldberg-Coxeter duals of the k-frequency octahedron, Kasteleyn-signed and decorated, n = Theta(k^2)), first prove resolution width Omega(k) = Omega(sqrt n) from a mobility lemma for the violated line (the vortex of the triangular-antiferromagnet height function), then attempt the size bound 2^Omega(sqrt n), or locate the obstruction. Standalone value: the nearest known results are width lower bounds for Tseitin formulas through pebble games and the mutilated-chessboard size bounds on square grids (Dantchev-Riis, Alekhnovich); no lower bound for the knot's spaces or for planar counting principles off square grids is known. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SPHERE-COUNT-20261106-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-06: inconclusive on the question, with an exact obstruction. The planned width proof fails at its first step: unlike Tseitin's charge, the violated line is a vortex of a height function and frozen states pin it (blocking configurations in the bulk at every radius up to 3; whole-sphere blocking states on K_8 for each adjacent line at radius 2 and 3; random states always move). Label states (1-Lipschitz Z6 heights) give the flat class: every triangle not-all-equal except at vortices, a counterclockwise vortex exactly a violated line. Width Omega(sqrt n) reduces to the flat-state pursuit lemma (open); size not attempted. Next: the flat-state pursuit lemma (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the width bound is proved, refuted by a configuration from which the violated line cannot move, or reduced to a named lemma with its evidence; then when the size bound is proved, reduced, or obstructed.",
+  "title": "Is the sphere's Euler count hard for resolution?"
+}

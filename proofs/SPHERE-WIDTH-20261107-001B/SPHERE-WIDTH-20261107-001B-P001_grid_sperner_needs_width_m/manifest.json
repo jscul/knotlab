@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPHERE-WIDTH-20261107-001B-P001",
+  "canonical_id": "SPHERE-WIDTH-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "SPHERE-WIDTH-20261107-001B",
+  "proof": "SPHERE-WIDTH-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Grid Sperner needs resolution width Theta(m)",
+  "status": "Proved",
+  "claim": "Grid Sperner needs resolution width Theta(m). For 2D Sperner on the side-m triangular grid with the fixed boundary of FLAT-STATES-20261107-001B (one-sided or two-sided), every resolution refutation has width at least c*m - 1 for an absolute constant c > 0, and O(m) suffices. Duplicator keeps the full triangle at distance at least C*w from the boundary (w the pebble budget) and outside the density-bad set. Boundary lemma: in a negative cycle of the window criterion, negative terms come only from single edges between pebbles that touch a Spoiler pebble or one of finitely many boundary features, so a certificate walk through boundary pebbles stays within distance O(w) of the boundary and cannot separate two deep triangles; walks avoiding the boundary have length O(pebbles), and the density argument of SPHERE-WIDTH-20261107-001A applies.",
+  "dependencies": [
+    "SPHERE-WIDTH-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A certificate with a negative term at a segment of distance > 1, or at one touching neither a Spoiler pebble nor a boundary feature, or whose positive terms exceed the negative count minus one.",
+    "A certificate walk that neither separates the two triangles nor meets the old one, or a boundary-free walk longer than 2r - 3 + |H|.",
+    "A consistent pebble set that blocks a triangle far from every pebble and from the boundary.",
+    "A gap in the hand proof (boundary lemma, winding bound, planar isoperimetry)."
+  ],
+  "lineage": {
+    "home_scope": "SPHERE-WIDTH-20261107-001",
+    "epic_path": [
+      "SPHERE-WIDTH-20261107-001"
+    ],
+    "parents": [
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/window_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json": "28454007b876da69896339a77ffac6aeacc0566c9a8ce66992e3404c4722134c",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json": "024c0e6da6dcce7055ac6835ceade148821cda0eb860f55acf45af34fe845bde",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/window_lib.py": "c04a237f43b695cdfd115e0be059fa8a11bdef8f2f4ca705a58bcf56f8c07207"
+  },
+  "paths": {
+    "manifest": "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/manifest.json",
+    "identity": "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/identity.json",
+    "proof": "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/proof.md",
+    "check": "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/check.py",
+    "result": "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/result.json",
+    "directory": "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The side-m Sperner grid with the fixed three-sided boundary, every m (by the proof); certificates checked for m = 10, 12; locality for m = 18.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "the theorem by hand from SPHERE-WIDTH-20261107-001A's argument plus the boundary lemma; certificate structure and locality checked by computation; no human or external review",
+    "novelty": "new as far as found: Sperner's tree-like resolution size and query complexity are known (Itsykson-Malova-Oparin-Sokolov; Crescenzi-Silvestri); a general-resolution width bound for grid Sperner was not found."
+  }
+}

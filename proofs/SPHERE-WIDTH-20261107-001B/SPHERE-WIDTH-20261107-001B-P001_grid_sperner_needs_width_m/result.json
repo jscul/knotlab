@@ -1,0 +1,86 @@
+{
+ "artifact_id": "SPHERE-WIDTH-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json": "Proved",
+     "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 certificates on the Sperner disk: every obstruction's negative terms come from segments of length at most 4 that touch a Spoiler pebble or a boundary feature (a colour change, or a chord near the foot of the trivializing ray), its walk separates the two triangles, and walks avoiding the boundary satisfy length <= 2r - 3 + |H|": {
+   "info": {
+    "m=10": {
+     "certificates (feasible at the state's triangle, not at T)": 17,
+     "deepest vertex of those walks": 3,
+     "largest length / pebbles (pure walks)": 0.0,
+     "negative terms only at segments of length <= 4 that touch a Spoiler pebble or a boundary feature (a colour change, or a chord near the foot of the ray)": 17,
+     "of which length <= 2r - 3 + |H|": 0,
+     "pure Spoiler walks": 0,
+     "through boundary pebbles": 17,
+     "walk winds differently around the two triangles (or meets the old one)": 17
+    },
+    "m=12": {
+     "certificates (feasible at the state's triangle, not at T)": 37,
+     "deepest vertex of those walks": 3,
+     "largest length / pebbles (pure walks)": 2.0,
+     "negative terms only at segments of length <= 4 that touch a Spoiler pebble or a boundary feature (a colour change, or a chord near the foot of the ray)": 37,
+     "of which length <= 2r - 3 + |H|": 7,
+     "pure Spoiler walks": 7,
+     "through boundary pebbles": 30,
+     "walk winds differently around the two triangles (or meets the old one)": 37
+    }
+   },
+   "pass": true
+  },
+  "2 locality on the disk (m = 18): a chain of 12 pebbles whose colours advance omega times blocks only triangles within distance 3 of it for omega <= 4, and for omega >= 5 its colours fit no single-full-triangle state at all, so consistent answers never produce it": {
+   "info": {
+    "chain of 12, net winding 0": {
+     "blocked": 0,
+     "blocked at distance >= 4 from the chain": 0,
+     "feasible": 178
+    },
+    "chain of 12, net winding 1": {
+     "blocked": 1,
+     "blocked at distance >= 4 from the chain": 0,
+     "feasible": 177
+    },
+    "chain of 12, net winding 2": {
+     "blocked": 35,
+     "blocked at distance >= 4 from the chain": 0,
+     "feasible": 143
+    },
+    "chain of 12, net winding 3": {
+     "blocked": 35,
+     "blocked at distance >= 4 from the chain": 0,
+     "feasible": 143
+    },
+    "chain of 12, net winding 4": {
+     "blocked": 36,
+     "blocked at distance >= 4 from the chain": 0,
+     "feasible": 142
+    },
+    "chain of 12, net winding 5": {
+     "blocked": 178,
+     "blocked at distance >= 4 from the chain": 81,
+     "feasible": 0
+    },
+    "chain of 12, net winding 6": {
+     "blocked": 178,
+     "blocked at distance >= 4 from the chain": 81,
+     "feasible": 0
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Grid Sperner needs resolution width Theta(m). For 2D Sperner on the side-m triangular grid with the fixed boundary of FLAT-STATES-20261107-001B (one-sided or two-sided), every resolution refutation has width at least c*m - 1 for an absolute constant c > 0, and O(m) suffices. Duplicator keeps the full triangle at distance at least C*w from the boundary (w the pebble budget) and outside the density-bad set. Boundary lemma: in a negative cycle of the window criterion, negative terms come only from single edges between pebbles that touch a Spoiler pebble or one of finitely many boundary features, so a certificate walk through boundary pebbles stays within distance O(w) of the boundary and cannot separate two deep triangles; walks avoiding the boundary have length O(pebbles), and the density argument of SPHERE-WIDTH-20261107-001A applies.",
+ "kind": "proof",
+ "proof": "SPHERE-WIDTH-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SPHERE-WIDTH-20261107-001B"
+}

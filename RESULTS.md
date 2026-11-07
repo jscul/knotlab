@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**182 current results** and 5 superseded ones, from 133 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**192 current results** and 5 superseded ones, from 139 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -20,17 +20,17 @@ How to read an entry:
 ## Lines of work
 
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 11 results
-- [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 11 results
+- [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 5 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 57 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 61 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 133 epics with their closures
+- [Epics](#epics): all 139 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -101,12 +101,30 @@ How deep a hidden bit is: degree and size of refutations of charge networks, and
 - **2026-10-20 · Hole-faithful refutations of Tseitin formulas need 2^Omega(treewidth); Urquhart's conjecture is the open problem** (`URQUHART-TSEITIN-20261020-001-D001`).
   Refutations of Tseitin formulas that never forget a variable at the region where the hole must lie need size 2^Omega(treewidth), because the hole of a random critical assignment stays uniform there and regions fragment size-biased; Davis-Putnam refutations are of this kind. A smaller refutation must re-read variables and forget at the hole's region, and Urquhart's conjecture is equivalent to the open 2^Omega(tw) problem at bounded degree.
   [proof P001](proofs/URQUHART-TSEITIN-20261020-001B/URQUHART-TSEITIN-20261020-001B-P001_hole_faithful/proof.md), [epic closure](proofs/URQUHART-TSEITIN-20261020-001Z/URQUHART-TSEITIN-20261020-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · The violated line can be pinned: frozen states block the Tseitin-style width proof** (`SPHERE-COUNT-20261106-001-D001`).
+  In the octahedral knot spaces the violated line is a vortex of a height function, and frozen states pin it: no change within distance 3 moves it to a given adjacent line, in the bulk and in whole-sphere states of K_8, though random states always move. So the Tseitin-style resolution width proof cannot be applied state by state, and width Omega(sqrt n) reduces to a pursuit lemma for flat label states.
+  [proof P001](proofs/SPHERE-COUNT-20261106-001A/SPHERE-COUNT-20261106-001A-P001_the_violated_line_can_be_pinned/proof.md), [epic closure](proofs/SPHERE-COUNT-20261106-001Z/SPHERE-COUNT-20261106-001Z-P001_epic_closure/proof.md)
 - **2026-11-06 · The knot closure is width-3 resolution, and creation is width 4** (`TWO-ROUND-BRIDGE-20261106-001-D001`).
   At a gluing line, the crossing knots the elimination closure reaches are exactly the width-3 resolution consequences of the one-sided implicates on at most three variables, derived in depth one or two by resolving only on the line's variables. Every new crossing knot is implied by the same implicates and needs width exactly four, so native creation is the step from width three to width four at a three-variable cut.
   [proof P001](proofs/TWO-ROUND-BRIDGE-20261106-001A/TWO-ROUND-BRIDGE-20261106-001A-P001_the_knot_closure_is_width_three_resolution/proof.md), [epic closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md)
 - **2026-11-06 · Three-fold spaces are an Euler count: easy for Sherali-Adams, only treewidth-bounded for resolution** (`TWO-ROUND-BRIDGE-20261106-001-D002`).
   Refutations of three-fold spaces compose over the handle tree at constant cost per Fano piece, and on a plane core the contradiction is Euler's count of two more faces than lines, which Sherali-Adams of level three refutes. Resolution gets only the treewidth bound 2^O(sqrt n), and solver costs on the octahedral family grow exponentially in sqrt n, so the two-round rule does not compose into a global resolution bound.
   [proof P001](proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/proof.md), [epic closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Flat states exist on the whole knot sphere: each corner twists labels by -1** (`FLAT-STATES-20261107-001-D001`).
+  Sublattice-and-sign frames on the octahedral knot sphere are flat except at the six corners, each of which twists labels by exactly -1. So for every point z and every six disjoint cuts from z to the corners, one constant label developed over the cut sphere violates exactly one line, through z, and the vortex moves by local re-routing.
+  [proof P001](proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/proof.md), [epic closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The knot sphere contains Sperner's lemma** (`FLAT-STATES-20261107-001-D002`).
+  One-sided 2D Sperner reduces to finding a violated line of the knot sphere by depth-2 decision trees, the violated lines falling exactly in the boundary-oriented full triangles, with the six corners as Sperner's boundary. So query and resolution-width bounds for grid Sperner transfer, and the sphere's width question becomes Sperner's, reduced to an open winding-control lemma.
+  [proof P001](proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/proof.md), [epic closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The sphere's count needs resolution size 2^Theta(sqrt n)** (`SPHERE-SIZE-20261107-001-D001`).
+  Every resolution refutation of the octahedral knot sphere needs size 2^Theta(sqrt n). Random islands fixed to constant labels kill wide clauses, yet the restricted formula still needs width Omega(sqrt n) because islands add no slack to obstructions.
+  [proof P001](proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/proof.md), [proof P001](proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/proof.md), [epic closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The sphere's count needs resolution width Theta(sqrt n)** (`SPHERE-WIDTH-20261107-001-D001`).
+  Every resolution refutation of the octahedral knot sphere needs width Theta(sqrt n). Duplicator keeps the vortex where pebbles are sparse, since any obstruction is a closed walk with a bounded number of steps per pebble, so pebbles trap only an area quadratic in their number.
+  [proof P001](proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/proof.md), [epic closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Grid Sperner needs resolution width Theta(m)** (`SPHERE-WIDTH-20261107-001-D002`).
+  Grid Sperner with a fixed boundary needs resolution width Theta(m), and so does Itsykson et al.'s Sperner CSP, for which only tree-like size was known. Walks through the free boundary stay near it, so a full triangle kept deep inside meets only short pebble walks.
+  [proof P001](proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/proof.md), [epic closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Composing like cycles: the algebra of knots
 
@@ -437,6 +455,12 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-06 · Native creation reads the directed tree of Fano trees** (`CHAIN-TRANSFER-20261106-001-D003`).
   In every Fano tree whose atoms have at most four cuts, the atoms are exactly the classes of lines that create at each other and at the same other lines, and the atoms creating at a proper subset of an atom's lines are those beyond one of its receiving cuts, which gives every cut with its direction (proved). Through plane glue the rule does not extend as stated.
   [proof P001](proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/proof.md), [epic closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · A Fano atom acts as one from outside** (`FAR-READ-20261106-001-D001`).
+  In all 277 spaces computed (191 saved, 86 fresh; 1,065 Fano atoms), every atom line outside a Fano atom receives the same far-side vector from each of the atom's lines, though the atom's lines differ on glue lines and in what they receive. On the saved maps the far sides nest: the Fano plane and census 58 create at the same pairs, K4^(3) only where census 6 does, and census 6 without the Fano plane only at glue lines.
+  [proof P001](proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/proof.md), [proof P001](proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/proof.md), [epic closure](proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Which far side creates reads the atoms through plane glue** (`FAR-READ-20261106-001-D002`).
+  A four-step rule on the creation map (twins; twins among atom lines; a split into the finest parts of three or more lines that act as one far side by far side; reattachment of single port lines) returns exactly the Fano atoms of all 191 saved spaces and, frozen, of all 86 fresh ones, including the 39 where no rule using only whether creation occurs can. On the fresh spaces GLUE-READ C's two-stage rule reads 51, the source rule 68.
+  [proof P001](proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/proof.md), [proof P001](proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/proof.md), [epic closure](proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/proof.md)
 - **2026-11-06 · Creation at an atom is decided by its cut** (`GLUE-READ-20261106-001-D001`).
   For a Fano atom with its other elements present, whether a removal beyond one of its cuts creates at a line of it depends only on the patterns the removal's side allows on that cut's three ports: an emitter's lines receive iff the ports may be equal; a receiver's cut line iff the other two are not forced equal, its intact line iff the side tells the ports apart. Proved exhaustively over every port relation and deeper relation.
   [proof P001](proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/proof.md), [epic closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md)
@@ -455,6 +479,12 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-06 · In Fano trees the dictionary up to distance two is one touching rule** (`PENDANT-LINE-20261106-001-D003`).
   In spaces built from Fano atoms alone, a line creates at another exactly when it does in the chain of their atoms, and between atoms at most two apart exactly when the receiving line touches its atom's cut toward the removal. So native creation keeps each atom whole and reads every cut in its direction, and only a transfer along longer chains remains before the source rule is a theorem.
   [proof P001](proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/proof.md), [epic closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A Fano atom with a line removed is transparent** (`ATOM-ONE-20261107-001-D001`).
+  In every knot space, a Fano atom with any one of its lines removed sends the free relation through each of its cuts, so what it changes there does not depend on which line went. The proof joins the project's cut theorem (closed sides act as their lost elements, up to signs), the fact that the plain Fano plane is the only signed Fano knot, and an exhaustive freeness check.
+  [proof P001](proofs/ATOM-ONE-20261107-001A/ATOM-ONE-20261107-001A-P001_an_atom_with_a_line_removed_is_transparent/proof.md), [epic closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A Fano atom acts as one** (`ATOM-ONE-20261107-001-D002`).
+  In every knot space, whether a removal in a Fano atom creates at a line of another Fano atom does not depend on which of its lines went; far side by far side this is proved except at a receiving atom's cut lines with a six-pattern port relation, and on Fano trees without exception. On 277 computed spaces every such line receives exactly its closed verdict (154,165 pairs), the exception included.
+  [proof P001](proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/proof.md), [proof P001](proofs/ATOM-ONE-20261107-001C/ATOM-ONE-20261107-001C-P001_the_exception_saved_and_fresh/proof.md), [epic closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs and gaskets
 
@@ -793,8 +823,14 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-05 | A native reading of the brace tree (`BRACE-TREE-20261105-001`) | [closure](proofs/BRACE-TREE-20261105-001Z/BRACE-TREE-20261105-001Z-P001_epic_closure/proof.md) | [folder](research/BRACE-TREE-20261105-001/) |
 | 2026-11-05 | The two-bit screening lemma (`TWO-BIT-SCREEN-20261105-001`) | [closure](proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-SCREEN-20261105-001/) |
 | 2026-11-06 | The touching rule at every distance (`CHAIN-TRANSFER-20261106-001`) | [closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-TRANSFER-20261106-001/) |
+| 2026-11-06 | Reading with the far sides (`FAR-READ-20261106-001`) | [closure](proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/FAR-READ-20261106-001/) |
 | 2026-11-06 | Reading through plane glue (`GLUE-READ-20261106-001`) | [closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/GLUE-READ-20261106-001/) |
 | 2026-11-06 | Do handles govern counting hardness? (`HANDLE-COUNT-20261106-001`) | [closure](proofs/HANDLE-COUNT-20261106-001Z/HANDLE-COUNT-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/HANDLE-COUNT-20261106-001/) |
 | 2026-11-06 | The pendant-line statement (`PENDANT-LINE-20261106-001`) | [closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/PENDANT-LINE-20261106-001/) |
+| 2026-11-06 | Is the sphere's Euler count hard for resolution? (`SPHERE-COUNT-20261106-001`) | [closure](proofs/SPHERE-COUNT-20261106-001Z/SPHERE-COUNT-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-COUNT-20261106-001/) |
 | 2026-11-06 | The two-round rule as a proof-complexity bridge (`TWO-ROUND-BRIDGE-20261106-001`) | [closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-ROUND-BRIDGE-20261106-001/) |
+| 2026-11-07 | Why a Fano atom acts as one (`ATOM-ONE-20261107-001`) | [closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-ONE-20261107-001/) |
+| 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
+| 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
+| 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
 

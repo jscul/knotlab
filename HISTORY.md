@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 7 November 2026: publication at epic closure
+
+- Publication now runs from the workspace's epic-closure command, in place
+  of a commit hook that was never installed. scripts/install_hook.py is
+  removed.
+- jscul.dev follows through a GitHub Actions workflow in its own
+  repository. publish.py starts it after each publication, and it also runs
+  every six hours.
+- In data/lines.json, the far-side and acts-as-one epics are placed under
+  native creation, and the four epics on the sphere's count under depth and
+  proof complexity.
+
 ## 6 November 2026: automatic publication, and the tickets
 
 - New epics are now published here automatically when they close in our

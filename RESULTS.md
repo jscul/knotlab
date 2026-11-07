@@ -72,7 +72,7 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 
 ## Holes, depth and Tseitin proof complexity
 
-How deep a hidden bit is: degree and size of refutations of charge networks.
+How deep a hidden bit is: degree and size of refutations of charge networks, and of the spaces the knot builds.
 
 - **2026-10-20 · Tseitin formulas need size 2^Omega(treewidth) on planar and minor-free graphs** (`CELL-SIZE-20261020-001-D001`).
   If every edge outside a bounded set lies on a short cycle with short detours avoiding it, Tseitin formulas need size 2^Omega(treewidth) in resolution and in polynomial calculus with or without twin variables over characteristic other than 2. This covers plane graphs with short faces and d-dimensional grids, and through wall topological minors every graph excluding a fixed minor, planar graphs included (resolution and PCR).

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Publish the research workspace's committed record here, then update jscul.dev.
+"""Publish the research workspace's committed record here, then start the jscul.dev sync.
 
-Usage: python3 scripts/publish.py --workspace DIR [--site DIR] [--no-push] [--no-site]
+Usage: python3 scripts/publish.py --workspace DIR [--no-push] [--sync-site]
 
-The workspace's post-commit hook (scripts/install_hook.py) runs this in the background, so every
-closed epic is published without anyone asking; it can also be run by hand. Each step is skipped when
-there is nothing to do:
+The workspace's epic-closure command (scripts/commit_epic.py, through scripts/publish_records.py)
+runs this after every closed epic, so each one is published without anyone asking; it can also be
+run by hand. Each step is skipped when there is nothing to do:
 
 1. Copy from the workspace's HEAD every dated folder in proofs/, experiments/, artifacts/ and
    research/ from 19 October 2026 on, the tickets of those folders and their epics, and the four
@@ -15,24 +15,24 @@ there is nothing to do:
    run and undoes its changes; a failing curation test is reported, because only a person can update
    a THEORY.md card.
 4. Commit and push this repository.
-5. Sync the site from this repository (npm run sync:knotlab), check it (lint, build, deploy:check and
-   HTTP checks), commit and push. Cloudflare deploys the push.
+5. Start the sync-knotlab workflow of jscul/jscul-dev, which copies what the site shows from this
+   repository, checks it (lint, build, deploy:check and HTTP checks) and pushes; Cloudflare deploys
+   the push. The workflow also runs every six hours, so a missed start only delays the site.
+   --sync-site starts it even when nothing new was published here, for instance after a hand edit
+   to THEORY.md.
 
 Each run appends to .git/publish.log and writes .git/publish-status.json. Runs never overlap: a run
 that finds another in progress leaves a flag, and the running one goes round again.
 """
 import argparse
 import fcntl
-import html
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
 import time
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -56,9 +56,8 @@ EMAIL = re.compile(rb"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za
 ALLOWED_EMAIL = re.compile(rb"noreply|@example\.(?:com|org)$")
 RECORD_TESTS = ("tests.test_records", "tests.test_theory", "tests.test_knotlab")
 CURATION_TESTS = ("tests.test_curation",)
-SITE_PATHS = ("src/content", "public/notes")
-LIVE_PAGE = "https://jscul.dev/proofs"
-USER_AGENT = "knotlab-publish/1.0 (+https://github.com/jscul/knotlab)"  # Cloudflare refuses Python's default
+SITE_REPO = "jscul/jscul-dev"
+SITE_WORKFLOW = "sync-knotlab.yml"
 
 
 class Stop(Exception):
@@ -76,12 +75,11 @@ def log(message):
         handle.write(line + "\n")
 
 
-def run(cmd, cwd, env=None, timeout=1800, check=True, binary=False):
+def run(cmd, cwd, env=None, timeout=1800, check=True):
     result = subprocess.run(cmd, cwd=cwd, env={**os.environ, **(env or {})}, capture_output=True,
-                            text=not binary, timeout=timeout)
+                            text=True, timeout=timeout)
     if check and result.returncode != 0:
-        output = result.stdout + result.stderr if not binary else b""
-        tail = "\n".join(str(output).strip().splitlines()[-25:])
+        tail = "\n".join((result.stdout + result.stderr).strip().splitlines()[-25:])
         raise Stop(f"{' '.join(cmd[:4])} failed in {cwd}:\n{tail}")
     return result
 
@@ -204,7 +202,7 @@ def new_epics(folders):
 
 
 def publish_records(ws, push_enabled):
-    """Steps 1 to 4. Returns this repository's commit and the epics newly published."""
+    """Steps 1 to 4. Returns the epics newly published, or None when this repository already held everything."""
     ensure_ready(K, "knotlab")
     commit = git(ws, "rev-parse", "HEAD").stdout.strip()
     folders, tickets, docs = workspace_paths(ws, commit)
@@ -212,99 +210,61 @@ def publish_records(ws, push_enabled):
     with tempfile.TemporaryDirectory(prefix="knotlab-publish-") as tmp:
         extract(ws, commit, [*folders, *tickets, *docs], Path(tmp))
         changed = mirror(Path(tmp), folders, [*tickets, *docs])
-    if not changed:
+    if changed:
+        try:
+            problems = screen(changed)
+            if problems:
+                raise Stop("refusing to publish:\n" + "\n".join(problems[:20]))
+            build = run([sys.executable, "-B", "scripts/build.py"], cwd=K)
+            for line in build.stdout.splitlines():
+                if line.startswith("placement:"):
+                    log(line)
+            run([sys.executable, "-B", "-m", "unittest", *RECORD_TESTS], cwd=K)
+        except Stop:
+            undo(K, MANAGED)
+            raise
+        git(K, "add", "--all", "--", *MANAGED)
+    if not changed or git(K, "diff", "--cached", "--quiet", check=False).returncode == 0:
         log(f"knotlab already holds workspace {commit[:9]}")
-        return git(K, "rev-parse", "HEAD").stdout.strip(), []
-    try:
-        problems = screen(changed)
-        if problems:
-            raise Stop("refusing to publish:\n" + "\n".join(problems[:20]))
-        build = run([sys.executable, "-B", "scripts/build.py"], cwd=K)
-        for line in build.stdout.splitlines():
-            if line.startswith("placement:"):
-                log(line)
-        run([sys.executable, "-B", "-m", "unittest", *RECORD_TESTS], cwd=K)
-    except Stop:
-        undo(K, MANAGED)
-        raise
+        return None
     curation = run([sys.executable, "-B", "-m", "unittest", *CURATION_TESTS], cwd=K, check=False)
     if curation.returncode != 0:
         log("curation check failed: a THEORY.md card cites a record that is now superseded or qualified; "
             "it needs a person to update it\n" + "\n".join((curation.stdout + curation.stderr).strip().splitlines()[-12:]))
-    git(K, "add", "--all", "--", *MANAGED)
-    if git(K, "diff", "--cached", "--quiet", check=False).returncode == 0:
-        log(f"knotlab already holds workspace {commit[:9]}")
-        return git(K, "rev-parse", "HEAD").stdout.strip(), []
     subject = f"Publish {', '.join(fresh)}" if fresh else "Update the published record"
     body = (f"Copied from the research workspace at commit {commit[:9]}: {len(changed)} files changed.\n"
             "Published automatically by scripts/publish.py.")
     git(K, "commit", "--quiet", "-m", subject, "-m", body)
     if push_enabled:
         push(K, "knotlab")
-    head = git(K, "rev-parse", "HEAD").stdout.strip()
-    log(f"knotlab {head[:9]}: {subject} ({len(changed)} files)")
-    return head, fresh
+    log(f"knotlab {git(K, 'rev-parse', 'HEAD').stdout.strip()[:9]}: {subject} ({len(changed)} files)")
+    return fresh
 
 
-def site_step(site, knotlab_commit, push_enabled):
-    """Step 5. Returns the site's new commit, or None when the site already matches."""
-    ensure_ready(site, "jscul-dev")
-    npm = {"KNOTLAB_DIR": str(K)}
-    run(["npm", "run", "--silent", "sync:knotlab", "--", "--from", str(K), "--commit", knotlab_commit], cwd=site, env=npm)
-    if not git(site, "status", "--porcelain").stdout.strip():
-        log("jscul.dev already matches knotlab")
-        return None
+def start_site_sync():
+    """Step 5: start the site's sync workflow. Its six-hourly schedule covers a start that fails."""
     try:
-        for script in ("check:intuitions", "check:theory", "lint", "build", "deploy:check", "check:http"):
-            run(["npm", "run", "--silent", script], cwd=site, env=npm, timeout=1800)
-    except Stop:
-        undo(site, SITE_PATHS)
-        raise
-    git(site, "add", "--all", "--", *SITE_PATHS)
-    git(site, "commit", "--quiet", "-m", f"Sync knotlab {knotlab_commit[:7]}",
-        "-m", "Synced automatically by knotlab's scripts/publish.py after lint, build, deploy:check and HTTP checks.")
-    if push_enabled:
-        push(site, "jscul-dev")
-    head = git(site, "rev-parse", "HEAD").stdout.strip()
-    log(f"jscul-dev {head[:9]}: synced knotlab {knotlab_commit[:9]}")
-    return head
-
-
-def wait_until_live(titles, minutes=10):
-    """Poll the live proofs page until it lists the newest titles; Cloudflare usually takes a minute or two."""
-    deadline = time.time() + minutes * 60
-    while time.time() < deadline:
-        try:
-            request = urllib.request.Request(LIVE_PAGE, headers={"User-Agent": USER_AGENT})
-            page = urllib.request.urlopen(request, timeout=30).read().decode("utf-8", "replace")
-            if all(title in page for title in titles):
-                return True
-        except OSError:
-            pass
-        time.sleep(30)
-    return False
-
-
-def newest_titles(epics):
-    titles = []
-    for epic in epics:
-        for path in sorted((K / "research" / epic / "discoveries").glob("*.json")):
-            titles.append(html.escape(json.loads(path.read_text())["title"]))
-    return titles[:3]
+        result = run(["gh", "workflow", "run", SITE_WORKFLOW, "--repo", SITE_REPO, "--ref", "main"], cwd=K,
+                     check=False, timeout=120)
+    except (OSError, subprocess.TimeoutExpired) as error:
+        result = None
+        reason = str(error)
+    else:
+        reason = (result.stdout + result.stderr).strip().splitlines()[-1:] if result.returncode else ""
+    if result is not None and result.returncode == 0:
+        log(f"started {SITE_REPO}'s {SITE_WORKFLOW}")
+        return "started"
+    log(f"could not start {SITE_REPO}'s {SITE_WORKFLOW} ({reason}); its six-hourly run will sync the site")
+    return "not started"
 
 
 def publish_once(args):
     status = {"started": now(), "workspace": str(args.workspace)}
     try:
-        knotlab_commit, fresh = publish_records(args.workspace, not args.no_push)
-        status.update(knotlab=knotlab_commit, published=fresh)
-        if not args.no_site:
-            site_commit = site_step(args.site, knotlab_commit, not args.no_push)
-            status["site"] = site_commit
-            if site_commit and not args.no_push:
-                live = wait_until_live(newest_titles(fresh)) if fresh else True
-                status["live"] = live
-                log("jscul.dev is live" if live else "jscul.dev has not shown the new results yet")
+        fresh = publish_records(args.workspace, not args.no_push)
+        status.update(knotlab=git(K, "rev-parse", "HEAD").stdout.strip(), published=fresh or [])
+        if not args.no_push and (fresh is not None or args.sync_site):
+            status["site"] = start_site_sync()
         status["result"] = "ok"
     except (Stop, subprocess.TimeoutExpired, OSError) as error:
         status.update(result="failed", error=str(error))
@@ -317,11 +277,10 @@ def publish_once(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--workspace", type=Path, required=True, help="the research workspace's checkout")
-    parser.add_argument("--site", type=Path, default=K.parent / "jscul-dev", help="jscul-dev's checkout")
-    parser.add_argument("--no-push", action="store_true", help="commit locally but push nothing")
-    parser.add_argument("--no-site", action="store_true", help="publish this repository only")
+    parser.add_argument("--no-push", action="store_true", help="commit here but push nothing and start no sync")
+    parser.add_argument("--sync-site", action="store_true", help="start the site sync even if nothing new was published")
     args = parser.parse_args()
-    args.workspace, args.site = args.workspace.resolve(), args.site.resolve()
+    args.workspace = args.workspace.resolve()
     with LOCK.open("w") as lock:
         try:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)

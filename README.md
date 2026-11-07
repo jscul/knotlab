@@ -109,13 +109,16 @@ history.
 
 ## How this repository is updated
 
-- **Records, automatically.** When an epic closes in our research workspace,
-  a commit hook runs [scripts/publish.py](scripts/publish.py). It copies the
-  epic's committed proofs, experiments, working notes and tickets byte for
+- **Records, automatically.** The command that closes an epic in our
+  research workspace runs [scripts/publish.py](scripts/publish.py). It copies
+  the epic's committed proofs, experiments, working notes and tickets byte for
   byte, refreshes the documents in docs/, rebuilds the generated files with
-  [scripts/build.py](scripts/build.py), runs the tests and pushes. It then
-  updates [jscul.dev](https://jscul.dev). Work that has not been committed is
-  never copied.
+  [scripts/build.py](scripts/build.py), runs the tests and pushes. Work that
+  has not been committed is never copied.
+- **The site follows.** A GitHub Actions workflow in the site's repository
+  copies what [jscul.dev](https://jscul.dev) shows from here, checks and
+  builds it, and pushes. publish.py starts it after each publication, and it
+  also runs every six hours.
 - **Curated pages, by hand.** INTUITIONS.md, THEORY.md, FINDINGS.md and the
   ranking tiers in [data/tiers.json](data/tiers.json) are written by hand. If
   a later result supersedes or qualifies a record that a THEORY.md claim

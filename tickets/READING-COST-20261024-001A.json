@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DIRECTIONAL-RIGIDITY-20261023-001A",
+    "WALLS-WITH-CHOICES-20261024-001A",
+    "WALLS-WITH-CHOICES-20261024-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "READING-COST-20261024-001A-P001"
+  },
+  "id": "READING-COST-20261024-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that for the four directed contacts with a free place (155, 110, 203, 62) a class can be read in polynomial time: reduce their walls to monotone paths whose moves are allowed independently, show that walls avoiding their own copies are closed under pointwise minimum and maximum, and give a decider, or record the obstruction met. Check the decider against simple cycles, which are exact for these contacts on 3 x 3 and 3 x 4.",
+  "ownership": {
+    "root": false,
+    "scope_id": "READING-COST-20261024-001"
+  },
+  "parent": "READING-COST-20261024-001",
+  "schema_version": 1,
+  "status": "Proved by READING-COST-20261024-001A-P001 (V1 prose proof, standard-library check passed). For the six directed placements (54, 62, 110, 147, 155, 203) a class is read in polynomial time: walls are monotone paths with moves allowed one at a time, good walls are closed under pointwise maximum and minimum, an ordered good wall simple on the type-preserving cover always exists (so simple cycles suffice on every torus), and arc consistency on a max-closed problem decides each period. Only the four honeycomb placements with a free place (111, 125, 159, 215) remain without a polynomial rule among the bending placements.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "A polynomial rule for directed walls with choices"
+}

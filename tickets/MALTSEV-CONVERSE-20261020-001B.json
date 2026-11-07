@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "MALTSEV-CONVERSE-20261020-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "MALTSEV-CONVERSE-20261020-001B-P001"
+  },
+  "id": "MALTSEV-CONVERSE-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) the naive converse fails, by the disjoint unions (knots composing like cycles, no Mal'tsev polymorphism), at the knot level on four elements and at every level on five; (2) a knot with a selector variable (one whose every value leaves pairwise-meeting fibres over the shared variable) yields a failure between knots, so in a law whose knots compose like cycles no knot has a selector; (3) the local converse for Boolean laws: every knot of a Boolean law composing knots like cycles is rectangular; (4) whatever general form of the local converse the census supports, or the counterexample it finds.",
+  "ownership": {
+    "root": false,
+    "scope_id": "MALTSEV-CONVERSE-20261020-001"
+  },
+  "parent": "MALTSEV-CONVERSE-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by MALTSEV-CONVERSE-20261020-001B-P001 (prose; exhaustive and randomized checks). The naive converse is false: parity on {0,1} beside x<=y on {2,3} composes knots like cycles, and parity beside an isolated-value relation on {2,3,4} composes all circuits like cycles, with no Mal'tsev polymorphism in either. A knot whose fibres pairwise meet at a variable, or that has a selector, forms a hub with its copy. In a law composing knots like cycles every knot on one two-element range is a single parity. If every knot is rectangular, knots compose like cycles exactly when no two knots meeting at a variable induce partitions composing to the total relation, with no Mal'tsev operation needed; so the converse reduces to rectangularity of knots. Correction found here: NAE has a selector and needs no twisted construction. Open: whether composing knots like cycles forces rectangular knots; every tested 3-variable knot over 2, 3 and 4 values gives a hub directly or through the diagonal derivation exists h: K(x0,x0,h) and K(x1,x2,h).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: what composing knots like cycles forces"
+}

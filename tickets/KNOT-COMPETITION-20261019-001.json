@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "Ticket A proves in Lean which knots competing pairwise rules make (four on three variables, none on four or more, every knot with hidden variables) and how the two readings relate. Ticket B reports, under both readings and by exact enumeration over a frozen family of uniform rules, which shapes have near and far. The decision note records the literature comparison and novelty labels.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "KNOT-COMPETITION-20261019-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serve open questions 10 (competition) and 9 (space from a law) in docs/KNOT_INTUITION.md. When rules cannot all hold, test both readings of what a system allows instead of choosing one: the strict reading (the states that break no rule) and the competition reading (the states that break the fewest). Establish exactly which knots competing pairwise rules can make, with and without hidden variables, and test whether either reading gives a shape with near and far under a uniform rule. Standalone value relative to known work: on three variables the classification is the facet structure of the cut polytope (triangle inequalities) and the hidden-variable case is the MAX-2-SAT gadget of Garey, Johnson and Stockmeyer (1976); the value is the statement for knots of every size, its formal check, and an exact test of whether competition yields separation that strict logic cannot.",
+  "ownership": {
+    "root": true,
+    "scope_id": "KNOT-COMPETITION-20261019-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-19: both readings of open question 10 mapped. Competition makes exactly the not-all-equal triangle knots from pairs, none on four or more variables (proof A, Lean); the strict reading makes none; near and far under competition is inherited from a layout, growing only on a triangulated layout counted per triangle, where competition equals strict not-all-equal knots (experiments B-E001, B-E002). Question 10 stays the owner's decision.",
+  "status_class": "complete",
+  "stop_rule": "Stop and write up if ticket B finds no uniform pairwise rule whose competition shape has near and far, since the strict reading can never give pairwise rules a bond; open a confirmatory follow-up only for a pattern that the exploratory census finds.",
+  "title": "Knots from competition: both readings of question 10"
+}

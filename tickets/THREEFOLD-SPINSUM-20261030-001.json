@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "THREEFOLD-SPIN-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "THREEFOLD-SPINSUM-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('Yes, let's continue.'), taking the recommendation of THREEFOLD-SPIN-20261030-001: the knot's amplitude is an Ising count at half the knot's angle on its triangle-contact graph, and on a surface such a count is a signed sum over spin structures; does 5 per handle come from the even spin structures alone, with the odd one cancelling? Scoping before activation (not evidence): on the Fano torus every spin sector contributes; in units where the signed sum gives the colouring counts, the closed space has sectors 8, 8, 8 (even) and 24 (odd), which balance (non-colourability), and the space with one contact opened has 16, 16, 16 and 28, giving 2 x 5 = (3 x 16 - 28)/2; the same on all 16 maps and 7 contacts; on the 13-point space the 4 x 4 sector matrices indexed by the two handles' spin structures have full rank, so sectors do not factor over handles; every nonzero cohomology twist of the knot's signs is 2-colourable. Question (A): prove the spin-sum formula and the balance, the uniqueness of the knot's non-colourable sign class, and record the sector values and the failure of factorization exactly. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "THREEFOLD-SPINSUM-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: answered no; the knot's colouring counts are Arf-signed spin sums, its contradiction is a balance of even and odd sectors (8,8,8|24 on the Fano torus), its sign class the only non-colourable Kasteleyn class; the amplitude takes contributions from every sector (16,16,16|28) and sectors do not factor over handles; recommendation Continue: where counting near-critical instances becomes hard (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the question is answered (it is answered negatively unless the sectors of the opened space localize on even spin structures) with the sector values established exactly, and the decision note records the recommendation.",
+  "title": "The knot's amplitude as a spin sum"
+}

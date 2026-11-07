@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-MAP-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "ACYCLIC-COINCIDENCE-20261023-001A-P001"
+  },
+  "id": "ACYCLIC-COINCIDENCE-20261023-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "From the 48 skeletons of L(3,1,3,1) whose shrunken signed graphs have equal acyclic counts without isomorphism, find a move on signed graphs that keeps the number of acyclic orientations and explains them, and prove it; or show by a bounded search over moves and chromatic polynomials that no such move exists among those tested.",
+  "ownership": {
+    "root": false,
+    "scope_id": "ACYCLIC-COINCIDENCE-20261023-001"
+  },
+  "parent": "ACYCLIC-COINCIDENCE-20261023-001",
+  "schema_version": 1,
+  "status": "Proved by ACYCLIC-COINCIDENCE-20261023-001A-P001 (V1 prose proof; standard-library check of 300 random signed graphs and of all 48 residual skeletons; four controls rejected). The path-sign move: flipping the sign of a path through degree-2 vertices whose ends are joined by links of both signs keeps the chromatic polynomial (chi(rest) times ((lambda-1)^k - (-1)^k)/lambda), the zero-free one, T(x,0) and so the acyclic count, while the Tutte polynomial can change. One such flip plus a frame-matroid isomorphism explains each of the 48 skeletons behind the six residual relations of TWIST-MAP on L(3,1,3,1), so the genus-2 twist map has no unexplained residue. Folklore risk high (a gluing along a doubled edge in Zaslavsky's framework).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: the identity behind equal acyclic counts, or a one-off"
+}

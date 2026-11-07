@@ -1,0 +1,31 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SELECT-COUNT-20261101-001Z",
+    "KNOT-CIRCUITS-20261020-001Z",
+    "PINNING-20261031-001Z",
+    "THREEFOLD-SPACES-20261030-001Z",
+    "NATIVE-PATHS-20261101-001Z",
+    "MUTUAL-SELECTION-20261031-001Z",
+    "PARITY-CORRECTION-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "BEYOND-TWO-20261101-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, please continue', approving SELECT-COUNT-20261101-001's recommendation): look for a law on three or four values that is Mal'tsev, composes like cycles and is hard to count, so that it both selects and composes, which no Boolean law with a knot can do. First check the known cycle-composing laws (group cosets and fields) for easy counting; then test laws on three values (every Mal'tsev algebra there) and blurred laws (a value doubled) for cycle-like composition, recognisable failures and hard counts; then ask whether their failures select spaces as the knot's do, globally and on a structural class of substrates, by a census of the connected cubic substrates. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BEYOND-TWO-20261101-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-01: beyond two values selection and cycle-like composition can coexist. The known cycle-composing laws are coset laws and count easily; blurring (a doubled value) keeps a law's failures and circuits but makes its count #P-complete, so blurred parity (three values) and blurred Z3 (four values) compose like cycles and select in PINNING C's sense, and every Mal'tsev law on three values composes like cycles. On cubic substrates the knot fails on Pfaffian ones, always globally; parity on those with even perfect matchings, never globally; Z3 everywhere, globally at corank 1. Blurred Z3 on corank-1 substrates selects in the knot's full sense and composes like cycles, a bridge at four values, but its selected spaces are rigid (only ties) while the knot's can keep a knot; next: does cycle-like composition force rigid selection (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the known cycle-composing laws are classified for counting, a law beyond two values that composes like cycles and counts hard is found or excluded on the bounded domains, and its failures are compared with the knot's on the substrate census; record a merely formal bridge as such rather than broadening it.",
+  "title": "Selection and composition beyond two values"
+}

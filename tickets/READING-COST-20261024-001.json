@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "WALLS-WITH-CHOICES-20261024-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "READING-COST-20261024-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "WALLS-WITH-CHOICES-20261024-001 proved that an odd class of a three-place tiling contact with a constant frame has an assignment exactly when a periodic wall crosses its cylinder without meeting its own copies, and found that for the four honeycomb contacts with a free place (111, 125, 159, 215) such walls must sometimes repeat a state, so simple-cycle search misjudges them. Straight walls and walls without choices already have polynomial rules. Decide whether reading a class stays polynomial when walls have choices: give a polynomial decider for the four directed contacts with a free place (155, 110, 203, 62) or an obstruction to one, and measure how many cover sheets the honeycomb contacts with a free place need as the torus grows.",
+  "ownership": {
+    "root": true,
+    "scope_id": "READING-COST-20261024-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-24: the cost of reading a direction. For the six directed placements a class is read in polynomial time: walls are monotone paths with moves allowed one at a time, good walls form a lattice, Aubry's ordered maximum and a split give a good wall simple on the type-preserving cover (so simple cycles suffice on every torus), and max-closed constraints decide each period. Cover sheets do not measure difficulty. For the four honeycomb placements with a free place (111, 125, 159, 215), the only bending placements left without a polynomial rule, simple cycles keep misjudging classes on 4 x 4 and 4 x 5. Recommendation: Continue with honeycomb walls, hard or easy (2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "",
+  "title": "The cost of reading a direction"
+}

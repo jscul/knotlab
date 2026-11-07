@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "The note states each theorem precisely with its hypotheses, gives a proof or a proof outline with exact pointers to the repository proofs, separates proved, computed and cited facts, credits the known parts (Fan-Cai, Valiant, Seymour, Robertson-Seymour-Thomas, McCuaig, Kasteleyn), and every number it quotes is reproduced by replay.py from fresh runs of the cited checks; the headline numbers are also reproduced by independent.py in fresh code.",
+  "completion_gate": "",
+  "dependencies": [
+    "SEYMOUR-COUNT-20261030-001Z",
+    "TWIST-COUNT-20261030-001Z",
+    "SOFT-CROSS-20261031-001Z",
+    "PLAIN-COUNT-20261031-001Z",
+    "PLAIN-BRACE-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COUNT-NOTE-20261031-001-P001",
+    "program": "complexity"
+  },
+  "id": "COUNT-NOTE-20261031-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes let's continue', approving the conversion recommended by PLAIN-BRACE-20261031-001), write one self-contained note on the counting arc of five epics, with an external-review package. Content: counting the proper 2-colourings of 3-regular 3-uniform hypergraphs (#P-hard in general, Fan-Cai 2020; polynomial on planar incidence graphs, Valiant) on Pfaffian incidence graphs. (A) On every non-2-colourable connected one, #col(H - L) is polynomial (Berman determinants over Robertson-Seymour-Thomas trisum trees; the trisum law). (B) Under signings, counting stays polynomial unless a trisum square has three twisted branches (the junction similitude, multiplier alpha^2 + alpha beta + beta^2). (C) Under signings it is #P-hard (soft crossings sharpened by interpolation, lattice primes 5, 139, 3). (D) Without signs it is still #P-hard (signs interpolate away); plain planar pages are always twisted; the Fano plane is the only non-2-colourable one with a brace incidence graph. (E) Even on plain Pfaffian braces it is #P-hard (cube-junction ladders, weaving). The package adds a claims-and-evidence table with novelty and folklore risk, a replay driver rerunning every cited check in a temporary copy, an independent replay in fresh code of the headline numbers, and questions for a reviewer. Nothing is sent; sharing is the owner's decision.",
+  "ownership": {
+    "root": true,
+    "scope_id": "COUNT-NOTE-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Proved by COUNT-NOTE-20261031-001-P001: a self-contained 10-page note with replay and review package on counting 2-colourings of 3-regular 3-uniform hypergraphs with Pfaffian incidence graphs: polynomial on every non-2-colourable one (#col(H - L)), polynomial under unbranched twists, #P-hard under signings, without signs, and on Pfaffian braces. replay.py reruns the eleven cited checks (all agree; two hash-order details compared by stated equivalence), independent.py recomputes the headline numbers in fresh code, check.py ties all 33 quoted numbers. No expert review; nothing sent, which is the owner's decision.",
+  "status_class": "proved",
+  "stop_rule": "Stop if a cited check fails on replay, if a published statement of the polynomial count on non-2-colourable 3-regular hypergraphs or of the hardness on Pfaffian incidence graphs is found (then rewrite the note as a comparison), or if a theorem cannot be stated without an unproved step.",
+  "title": "A note: counting 2-colourings of 3-regular hypergraphs on Pfaffian incidence graphs"
+}

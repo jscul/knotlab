@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CLASSK-DICHOTOMY-20261026-001B",
+    "COPRIME-CLASS2-20261026-001C",
+    "COPRIME-CLASS2-20261026-001D"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CLASSK-DICHOTOMY-20261026-001C-P001"
+  },
+  "id": "CLASSK-DICHOTOMY-20261026-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that for p odd, r | p - 1 and G of class (K) with a hard pair, counting homomorphisms from pi1 of r-surgeries on knots (H1 = Z/r) to G is #P-hard under polynomial-time Turing reductions: anchor-graph isolation of sector 1 by a Vandermonde solve over disjoint unions, Bulatov-Grohe for the positive rank-at-least-two weight matrix, and the explicit construction for each pattern; with COPRIME-CLASS2-20261026-001C this is a dichotomy for closed 3-manifolds with bounded first homology (refined for bounds below r). Decide the extension to knot groups when commutators involve the trivial character.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CLASSK-DICHOTOMY-20261026-001"
+  },
+  "parent": "CLASSK-DICHOTOMY-20261026-001",
+  "schema_version": 1,
+  "status": "Proved by CLASSK-DICHOTOMY-20261026-001C-P001: for p odd, r | p - 1 and G = N x| C_r of class (K) with a hard pair, counting homomorphisms from pi1 of r-surgeries on knots (H1 = Z/r) to G is #P-hard under polynomial-time Turing reductions (at most r oracle calls per value of a fixed Bulatov-Grohe partition function): the construction of COPRIME-CLASS2-20261026-001D section 3 realizes the gadget manifolds of all three slot patterns (supported end to end by CLASSK-DICHOTOMY-20261026-001B), the count is a positive sum of multiplicative sector partition functions (CLASSK-DICHOTOMY-20261026-001A), an anchor graph and a Vandermonde solve over disjoint unions isolate the hard sector, and Bulatov-Grohe applies to its positive weight matrix of rank at least two. With COPRIME-CLASS2-20261026-001C: a dichotomy for closed 3-manifolds with |H1| <= C (polynomial iff no subgroup G_d, d | r, d <= C, has a hard pair) and for knot groups, including commutators with the trivial character (the u-pairing is move-invariant and block-diagonal, so the knot count is a positive sum of multiplicative (k, beta) terms). Rowell's Conjecture 3.2(b) fails for every such G unless every #P function is polynomial-time computable.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "With a hard pair, class-(K) counting is #P-hard with H1 = Z/r: the dichotomy"
+}

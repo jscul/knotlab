@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "The pseudo-expectation theorem, the degree corollary and the size theorem are proved in prose; check.py verifies the pseudo-expectation exactly (ideal constraints for three encodings, Sherali-Adams nonnegativity, moment-matrix positivity by exact LDL) at degree cvw-1 on declared graphs, including restricted ones, with a broken-tangle control.",
+  "completion_gate": "",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z",
+    "GENERAL-SIZE-20261020-001Z",
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SOS-SIZE-20261020-001B-P001"
+  },
+  "id": "SOS-SIZE-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) a tangle of order k of the cut function gives a pseudo-expectation for Tseitin up to degree k-1 that defeats Sherali-Adams and sum-of-squares refutations in the clause, standard binomial and balanced binomial encodings, with or without twin variables; hence SoS and SA degree are at least the carving width, and SoS degree is at most cvw + 4 when cvw >= 2 Delta (Berkholz's simulation and PC-DEGREE). (2) On graphs with a cell system, SoS and SA size is 2^Omega(tangle order), so 2^Theta(tw) on grids, d-dimensional grids, plane graphs with short faces and walls. Check the pseudo-expectation exactly on declared instances, including restricted ones.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SOS-SIZE-20261020-001"
+  },
+  "parent": "SOS-SIZE-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by SOS-SIZE-20261020-001B-P001 (prose, with cited tangle duality, Berkholz's SoS simulation of PC, Atserias-Dalmau): a tangle of order k gives a pseudo-expectation for Tseitin up to degree k-1 that defeats Sherali-Adams and sum-of-squares (clause and standard encodings; balanced when every degree is below k, needed by a hub example); SoS degree is between cvw and cvw+4 when cvw >= 2 Delta - 2, SA degree between cvw and floor(3 cvw/2)+1; with cell restrictions, SoS and SA size is 2^Theta(tw) on grids, d-dimensional grids, plane short-face graphs and walls; with twin variables also 2^Omega_H(tw) on minor-free graphs and 2^Omega(tw^(1/9)/polylog) on all graphs. Checks pass on 15 graphs with exact positivity certificates.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if any check of the pseudo-expectation fails on a declared instance.",
+  "title": "Proof: tangles give SoS and Sherali-Adams pseudo-expectations; size on graphs with cell systems"
+}

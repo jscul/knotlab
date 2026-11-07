@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves the characterization and its consequences; every census case agrees with the characterization or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "FREEZING-KNOTS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "GALLAI-KNOTS-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition; 'composition across networks without groups remains open') under the source-aware reading. Chosen by the bounded direction scan recorded in the decision note, against 'space from native moves' (question 9), whose discriminator came out negative: for linear laws finite moves either vanish or grow like the substrate, so a static law can remove space but not create it. Background, not re-proved: degree-list colouring and Gallai trees (Gallai 1963; Borodin 1977; Erdos-Rubin-Taylor 1979). Standalone value: the first composition law for knots of a law that is not group-like. A witness network is a connected graph W of hidden vertices, each with exactly q neighbours once pendant leaves (the knot's variables) are added; the composite relation is the projection of proper q-colourings onto the leaves. A (exploratory census) computes the composite for every small connected W (q = 3 and 4) and compares it with the prediction that it passes K1-K3 exactly when W is a Gallai tree (every block a complete graph or an odd cycle), recording the knot types and cases outside the hypothesis. B proves the characterization, the knot types (trees give 'not all distinct'-type stars, cliques and odd cycles give 'not all equal'), that knots compose by gluing witness networks at a vertex exactly when no non-Gallai block is created, and the consequences for lattices (on bipartite substrates witness networks must be trees) and for nativity on the q-regular tree.",
+  "ownership": {
+    "root": true,
+    "scope_id": "GALLAI-KNOTS-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-20. In the q-colouring law, hidden witness networks with q neighbours per witness give their leaves a K1-K3 knot exactly when they are Gallai trees (K2, K3 automatic; classical degree-choosability read as a knot theorem); gluing fuses knots with multiplicative excluded mass; a shared visible vertex is a hub; native on regular trees wherever p* = 0. Census A (supported), proof B (proved), ledger Z. Recommendation: Research directions (knots as circuits, 1/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if the census contradicts the characterization within its hypothesis, or if prior work states the knot characterization.",
+  "title": "Colouring knots compose along Gallai trees"
+}

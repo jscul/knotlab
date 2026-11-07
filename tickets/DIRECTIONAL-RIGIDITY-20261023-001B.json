@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DIRECTIONAL-RIGIDITY-20261023-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "DIRECTIONAL-RIGIDITY-20261023-001B-P001"
+  },
+  "id": "DIRECTIONAL-RIGIDITY-20261023-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove a criterion that separates directionally rigid contacts from selective ones, algebraic or structural, as far as the counts of ticket A support it, with certified counterexamples where it fails.",
+  "ownership": {
+    "root": false,
+    "scope_id": "DIRECTIONAL-RIGIDITY-20261023-001"
+  },
+  "parent": "DIRECTIONAL-RIGIDITY-20261023-001",
+  "schema_version": 1,
+  "status": "Proved by DIRECTIONAL-RIGIDITY-20261023-001B-P001 (V1 prose proof, standard-library check passed). The 30 three-place tiling contacts fall into four kinds: h/v stripes (127, 223), diagonal stripes (91, 94, 123, 167, 173, 183, 191, 239), straight walls (45, 61, 101, 103, 135, 149, 157, 199) and bending walls (the 12 selective). Polymorphisms do not decide rigidity: all three-place contacts have only projections (plus constants when the constants are doubly allowed), and renaming places changes the kind in five of the twelve renaming classes. Diagonal stripes confine contradictions to the diagonal class and h/v stripes forbid them (Theorem 2). Straight walls contradict along all odd classes or none, all odd for every configuration when the relative twist is odd on the diagonal class, with exactly 2^(2LM) - (2^(2l) - 2)^g configurations contradicting nowhere otherwise (Theorem 3). The twelve bending contacts are selective (certified on 3 x 3). For the four with no free place an odd class contradicts exactly when every valid wall cycle with a transverse class has an overlap in Z c + Z e (Theorem 7), and the condition is sufficient for all twelve (Remark 8). Proposition 6 cites the frozen experiment.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: what makes a contact rigid"
+}

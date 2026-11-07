@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GEOMETRY-LAW-20261029-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HUB-SURVIVORS-20261029-001A-P001"
+  },
+  "id": "HUB-SURVIVORS-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: the 34 relations on three bits with every two coordinates unconstrained, other than the full cube, form 16 classes up to coordinate order. A hub gadget joins copies of one relation, each placed in any coordinate order, letting a hidden variable lie in any number (at least two) of distinct copies, with three legs each in exactly one copy and the copies connected; its relation is the projection onto the legs. Determine which classes are rebuilt (some gadget gives a placement of the same relation) by gadgets of up to six copies, give explicit rebuilding gadgets, explain the mechanism (copies sharing the same variables intersect their constraints, which gluing with every variable in at most two copies cannot do), and prove for all sizes that the classes containing the all-zero or all-one tuple in a monotone way (the two symmetric atoms) are never rebuilt. Nearest known result: GEOMETRY-LAW-20261029-001A (without hubs only parity is rebuilt); pp-definability and Holant clones (what gadgets define). Classification: no overlap found (candidate local delta).",
+  "ownership": {
+    "root": false,
+    "scope_id": "HUB-SURVIVORS-20261029-001"
+  },
+  "parent": "HUB-SURVIVORS-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by HUB-SURVIVORS-20261029-001A-P001 (V1, prose plus exhaustive census): with hubs, copies sharing all their variables intersect, which reaches parity for x or (y != z) and the three-excluded classes and an equality for twisted not-all-equal; among hub gadgets of at most six copies exactly seven of the 16 classes are rebuilt (parity from three copies; x or (y != z), the three-excluded classes and twisted not-all-equal from four); the monotone atoms are never rebuilt at any size. The other nine classes are bounded, not decided (not-all-equal is rebuilt at seven copies).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Hub survivors: which knot classes are rebuilt by hub gadgets of their own copies"
+}

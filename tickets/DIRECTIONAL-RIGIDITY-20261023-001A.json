@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LINE-DETECTOR-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "DIRECTIONAL-RIGIDITY-20261023-001A-E001",
+    "contract_path": "experiments/DIRECTIONAL-RIGIDITY-20261023-001A/DIRECTIONAL-RIGIDITY-20261023-001A-E001_rigidity/contract.json"
+  },
+  "id": "DIRECTIONAL-RIGIDITY-20261023-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Record, for every configuration of all 54 tiling placements on the 3 x 3 and 3 x 4 tori and a sample on 4 x 4, which of sixteen classes the configuration contradicts along, and decide which three-place placements stay rigid.",
+  "ownership": {
+    "root": false,
+    "scope_id": "DIRECTIONAL-RIGIDITY-20261023-001"
+  },
+  "parent": "DIRECTIONAL-RIGIDITY-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: supported under its frozen rule. DIRECTIONAL-RIGIDITY-20261023-001A-E001 records, for every configuration of the 54 tiling placements on the 3 x 3 (16 classes) and 3 x 4 (13 classes) triangular tori and for sampled configurations of the 19 orbit representatives on 4 x 4 (2^22 per twist, 12 classes), 4 x 5 (2^22 per twist, 9 classes) and 5 x 5 (2^20 per twist, 6 classes), which listed classes each configuration contradicts along. The run took 26225 s against a declared budget of 14400 s and was not changed. Controls pass: totals; on 3 x 3 and 3 x 4 the implied torus, cylinder, lone and cross counts equal the frozen record of TRIPLE-SHIELD-20261023-001A-E001; on 3 x 3 the two programs agree. P1: no even class contradicts. P2: no two-literal placement is selective. P3: the one-dimensional placements contradict only along the diagonal class. P4: every nonzero pattern of a saturated placement is every odd class, with the counts of DIRECTIONAL-RIGIDITY-20261023-001B-P001 Theorem 3 (23816 of 262144 on 3 x 3, 2 of 16777216 on 3 x 4). P5: the never-contradicting placements never contradict. P6: the selective representatives 54, 62, 109 and 111 are selective on 4 x 5 and 5 x 5. P7: every three-place placement with single lines and global contradictions is selective, on every torus (26 pairs). The independent checker found no problems and certified 664 configurations with its own PySAT encoding, none undetermined, 80 selective.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: rigidity with sixteen classes"
+}

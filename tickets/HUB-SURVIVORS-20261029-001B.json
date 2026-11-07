@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HUB-SURVIVORS-20261029-001B-P001"
+  },
+  "id": "HUB-SURVIVORS-20261029-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: let NAE be the relation on three bits excluding 000 and 111. Place copies of NAE on the seven lines of the Fano plane, with one point replaced by three distinct free variables, one on each line through it: the projection onto those three variables is NAE. Claim: every hub gadget of NAE copies (legs in one copy each, hidden variables in at least two copies, no variable twice in a copy, connected) whose relation is NAE has at least seven copies, and with exactly seven it is the punctured Fano plane. Proof route: merging legs on distinct copies gives a 3-uniform hypergraph without property B, so at least seven edges with equality only for the Fano plane (m(3) = 7, unique extremal hypergraph); two legs on one copy force the rest of the gadget to be an equality wire of NAE copies, excluded below the needed size by exhaustive search. Nearest known result: property B (Erdos), m(3) = 7 with the Fano plane the only example (as stated in arXiv 2303.03803); no punctured-Fano NAE gadget found in a bounded search. Classification: candidate local delta (classical ingredients).",
+  "ownership": {
+    "root": false,
+    "scope_id": "HUB-SURVIVORS-20261029-001"
+  },
+  "parent": "HUB-SURVIVORS-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by HUB-SURVIVORS-20261029-001B-P001 (V1, prose plus exhaustive searches): not-all-equal is rebuilt by its copies on the lines of the Fano plane with one point split into the three legs; every rebuilding hub gadget has at least seven copies, and at seven it is the punctured Fano plane (property B, m(3) = 7; also confirmed by an exhaustive search of all 17,610,420 seven-copy gadgets); the gadget gives each NAE tuple exactly 5 completions, so NAE is an exact counted fixed point of the Fano substitution.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Not-all-equal is rebuilt by its copies on the Fano plane, and no smaller gadget does it"
+}

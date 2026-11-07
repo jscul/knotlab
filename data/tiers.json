@@ -1,0 +1,277 @@
+{
+ "about": "The owner's ranking of the proved results in five tiers (2026-11-05), the source of RANKING.md and the tier labels on the site. Each item names proof tickets, whole epics or single records.",
+ "intro": "Ranked by significance to the theory. The ranking covers proved results since the knot test was adopted on 2026-10-19, grouped by epic family, and weighs three things: whether the canon rests on the result; whether it answers a core question (what emergence is, space from a law, or where hardness enters); and whether the program's own perspective did the work. Computed results and conjectures are left out. Provenance is noted where it matters.",
+ "tiers": [
+  {
+   "number": 1,
+   "name": "What the theory stands on",
+   "description": "",
+   "items": [
+    {
+     "title": "The knot test itself",
+     "text": "K1–K3, with erasure read as forgetting. Everything else is stated in its terms. The core is classical (Schaefer; Baker–Pixley); the reading is ours.",
+     "tickets": [
+      "KNOT-FOUNDATION-20261019-001A",
+      "KNOT-FOUNDATION-20261019-001E"
+     ],
+     "lean": true
+    },
+    {
+     "title": "How much a knot hides",
+     "text": "Two-literal laws hide nothing, a knot hides at most one bit, and only parity hides a full bit. This is the quantitative form of “the boundary between two and three is emergence”, and the canon now states it.",
+     "tickets": [
+      "EMERGENCE-BITS-20261021-001A",
+      "EMERGENCE-BITS-20261021-001B",
+      "BASE-THREE-20261021-001A",
+      "BASE-THREE-20261021-001B"
+     ]
+    },
+    {
+     "title": "Where openness comes from",
+     "text": "On infinite systems a knot can be opened by a loop or by an end, and K1–K3 cannot tell which; the law decides. This forced the adopted source-aware reading.",
+     "tickets": [
+      "HOLES-AT-INFINITY-20261020-001B",
+      "HOLES-AT-INFINITY-20261020-001C"
+     ]
+    },
+    {
+     "title": "Pairs make no topology",
+     "text": "Two-place rules never make a knot under the strict reading. Under least violation they make only the not-all-equal triangle. This underwrites “2-clauses are logic, not topology” and maps both readings of the competition question.",
+     "tickets": [
+      "KNOT-COMPETITION-20261019-001A"
+     ],
+     "lean": true
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "name": "The main bridges",
+   "description": "",
+   "items": [
+    {
+     "title": "The knot builds its own surfaces",
+     "text": "The knot's spaces are built from Fano atoms and plane glue, and genus equals the number of Fano atoms. This is the strongest proved answer so far to the question of space from a law. The tools are classical (tight cuts, Pfaffian signings).",
+     "tickets": [
+      "THREEFOLD-SURFACES-20261030-001A",
+      "THREEFOLD-GRAMMAR-20261030-001A",
+      "THREEFOLD-SPACES-20261030-001A",
+      "THREEFOLD-SPACES-20261030-001C"
+     ]
+    },
+    {
+     "title": "Where hardness enters",
+     "text": "The half rule: every native contradiction is a parity system, so native networks are solved in polynomial time. NP-hardness needs a hub as well as a knot. This is the program's sharpest complexity statement; its classical neighbour is Tovey (1984).",
+     "tickets": [
+      "NATIVE-HARDNESS-20261024-001B",
+      "NATIVE-HARDNESS-20261024-001C"
+     ]
+    },
+    {
+     "title": "The first native network",
+     "text": "Pairs of knots that compose like cycles pass every gate of the canon's contact-network definition, and routes compose. The bond distance (one less than the smallest circuit) comes after the routes, not before.",
+     "tickets": [
+      "NATIVE-NETWORK-20261021-001A",
+      "NATIVE-NETWORK-20261021-001B"
+     ]
+    },
+    {
+     "title": "How knots compose",
+     "text": "Cycle-like composition is characterized for Mal'tsev laws (in the Boolean case, exactly the affine laws), with the top lemma and the proof of Conjecture 7. This answers the composition question structurally.",
+     "epics": [
+      "KNOT-CIRCUITS-20261020-001",
+      "MALTSEV-CONVERSE-20261020-001",
+      "CYCLE-TOPS-20261021-001",
+      "KNOT-IMAGES-20261021-001",
+      "THOMSEN-KNOTS-20261021-001",
+      "AFFINE-TOPS-20261021-001"
+     ]
+    },
+    {
+     "title": "Space is recognized, not created",
+     "text": "Allowed states carry a graph exactly when the knot matroid is graphic, and a sphere when it is also cographic. The mathematics is classical (Tutte, Whitney), but this verdict set the agenda for the question of space from a law.",
+     "tickets": [
+      "KNOT-SPACE-20261020-001B"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "name": "Strong results with a thematic or partial link",
+   "description": "",
+   "items": [
+    {
+     "title": "Tseitin proof complexity",
+     "text": "Hole depth is a layout width, with degree and size bounds in Nullstellensatz, polynomial calculus, sums of squares and resolution, and Urquhart's conjecture reduced to a treewidth bound. This is externally the most publishable cluster. The random-hole argument came from the holes view; some degree results risk being folklore.",
+     "epics": [
+      "DEEP-HOLES-20261020-001",
+      "CUTWIDTH-DEPTH-20261020-001",
+      "PC-DEGREE-20261020-001",
+      "PC-SIZE-GRID-20261020-001",
+      "CELL-SIZE-20261020-001",
+      "GENERAL-SIZE-20261020-001",
+      "SOS-SIZE-20261020-001",
+      "URQUHART-TSEITIN-20261020-001"
+     ],
+     "notes": [
+      {
+       "label": "Note (PDF)",
+       "href": "/notes/tseitin-nullstellensatz-degree.pdf"
+      }
+     ]
+    },
+    {
+     "title": "Counting maps into groups on 3-manifolds",
+     "text": "S₄ knot colourings are #P-hard, Rowell's conjecture fails, and coprime class-2 groups split into easy and hard. Hardness means a genuinely three-way, Borromean interaction, but the knot test cannot see the hard pair. Some parts turned out to be known (Galindo 2026, Livingston 1995).",
+     "epics": [
+      "BOUNDED-H1-20261025-001",
+      "CLOSED-H1-20261025-001",
+      "CORRECTIONS-20261026-001",
+      "COPRIME-CLASS2-20261026-001",
+      "CLASSK-DICHOTOMY-20261026-001",
+      "BEYOND-CLASS2-20261027-001",
+      "TRIPLE-SYSTEM-20261027-001",
+      "COPRIME-DICHOTOMY-20261027-001",
+      "COPRIME-PAIRS-20261027-001",
+      "CLASS4-PAIRS-20261028-001",
+      "DICHOTOMY-3D-20261025-001"
+     ],
+     "exclude": [
+      "CLASS4-PAIRS-20261028-001-D002"
+     ],
+     "notes": [
+      {
+       "label": "Note (PDF)",
+       "href": "/notes/knot-group-counting.pdf"
+      }
+     ]
+    },
+    {
+     "title": "Which knots remember a loop",
+     "text": "Only group-like knots do, and each loop keeps one class.",
+     "tickets": [
+      "KNOT-LOOPS-20261019-001B",
+      "HOLES-COHOMOLOGY-20261019-001B"
+     ],
+     "lean": true
+    },
+    {
+     "title": "Counting what emerges",
+     "text": "Emergence is countable exactly when it is topological. This rests on external dichotomies (Backens, McQuillan).",
+     "epics": [
+      "NATIVE-COUNTING-20261024-001",
+      "NATIVE-APPROX-20261024-001"
+     ]
+    },
+    {
+     "title": "Space from a law",
+     "text": "Gluing without hubs builds surfaces. It partly overlaps known work (Verlinde).",
+     "epics": [
+      "SURFACE-GLUING-20261024-001"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "name": "Lemmas under the current arc",
+   "description": "Each is technical alone; together they are what can turn “native creation reads the handle tree” into a theorem.",
+   "items": [
+    {
+     "title": "The access lemma and the one-port 2-sum lemma",
+     "text": "",
+     "records": [
+      "PLANAR-THEOREM-20261102-001-D001",
+      "PLANAR-THEOREM-20261102-001-D002"
+     ]
+    },
+    {
+     "title": "The skip model",
+     "text": "",
+     "tickets": [
+      "HANDLE-EMERGENCE-20261102-001C"
+     ]
+    },
+    {
+     "title": "One-bit screening",
+     "text": "",
+     "tickets": [
+      "HANDLE-LOCALITY-20261103-001B"
+     ]
+    },
+    {
+     "title": "Atoms attached at a line are blocks",
+     "text": "",
+     "tickets": [
+      "BRACE-TREE-20261105-001A"
+     ]
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "name": "Local proofs, kept visible",
+   "description": "",
+   "items": [
+    {
+     "title": "Criticality and the contact census",
+     "text": "",
+     "epics": [
+      "BASE-CRITICALITY-20261022-001",
+      "CONTACT-CENSUS-20261022-001",
+      "NAE-INVARIANT-20261022-001",
+      "SC-TORUS-EXACT-20261022-001"
+     ]
+    },
+    {
+     "title": "The torus and twist chain",
+     "text": "",
+     "epics": [
+      "TWIST-RELATIONS-20261022-001",
+      "ODD-LOOP-20261023-001",
+      "LOOP-SHIELD-20261023-001",
+      "TRIPLE-SHIELD-20261023-001",
+      "TRIPLE-TWIST-20261023-001",
+      "TWIST-MAP-20261023-001",
+      "ACYCLIC-COINCIDENCE-20261023-001",
+      "LINE-DETECTOR-20261023-001",
+      "DIRECTIONAL-RIGIDITY-20261023-001",
+      "WALLS-WITH-CHOICES-20261024-001",
+      "READING-COST-20261024-001"
+     ]
+    },
+    {
+     "title": "Signed gaskets and standing waves",
+     "text": "",
+     "epics": [
+      "SIGNED-GASKETS-20261029-001",
+      "SIMPLEX-GASKETS-20261029-001",
+      "WAVE-UNIQUENESS-20261029-001"
+     ]
+    },
+    {
+     "title": "Gallai knots",
+     "text": "",
+     "epics": [
+      "GALLAI-KNOTS-20261020-001"
+     ]
+    },
+    {
+     "title": "The bounds on imitating a hub",
+     "text": "",
+     "epics": [
+      "SOFT-HUB-20261024-001"
+     ]
+    },
+    {
+     "title": "The pinning classes",
+     "text": "",
+     "epics": [
+      "PINNING-20261031-001"
+     ]
+    }
+   ]
+  }
+ ]
+}

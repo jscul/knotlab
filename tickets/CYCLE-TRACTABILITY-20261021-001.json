@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A proves the lift theorem with checks that recompute the free sets of random systems against the component partition, verify the homomorphic equivalences, and confirm that the cores are not Taylor.",
+  "completion_gate": "",
+  "dependencies": [
+    "CYCLE-UTILITY-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "CYCLE-TRACTABILITY-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after CYCLE-UTILITY-20261021-001, which proved that a law that still composes like cycles with all constants added has a polynomial-time constraint problem, showed that constants can destroy composing like cycles, and left open whether composing like cycles alone implies tractability. The owner approved one bounded round to settle the core question: prove that the core of a law composing like cycles still composes like cycles, refute it, or find such a law with a non-Taylor core; otherwise close with the partial results and the exact remaining gap, without re-sharpening the question. Scoping found that tops can hide any constraint problem: lifting a structure H to (Z_q x domain of H) with all first coordinates in each atom equal gives a law whose systems have the partition matroid of their components, while the lift is homomorphically equivalent to H. A proves this, which settles the question negatively, and records the rigid-core case as the positive remainder.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CYCLE-TRACTABILITY-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. Settled negatively within one bounded round: the equal-top lift of any finite structure composes like cycles (its free sets are the partial transversals of the components) and is homomorphically equivalent to the structure, so the core of a law composing like cycles need not compose like cycles (K3) and such laws can have non-Taylor cores (K3, not-all-equal) and NP-complete constraint problems; the shifted lift is a core with the same property, so being a core does not help. Without constants, composing like cycles does not imply polynomial time unless P = NP; with constants, or for a core with no nontrivial automorphism, it does, and both hypotheses are needed. Correction of the previous closure: cycle-like composition, with constants, certifies tractability; the program's NP-hard examples all lack it (x <= y is tractable and also fails). Next: the holes connection (2/3), with the contact, network and distance questions queued.",
+  "status_class": "complete",
+  "stop_rule": "Stop after A; one bounded round. If the core question were not settled, close with the partial results and the exact remaining gap.",
+  "title": "Does composing like cycles imply polynomial time?"
+}

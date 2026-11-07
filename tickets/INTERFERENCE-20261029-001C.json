@@ -1,0 +1,24 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "INTERFERENCE-20261029-001C-E001",
+    "contract_path": "experiments/INTERFERENCE-20261029-001C/INTERFERENCE-20261029-001C-E001_cancellation_cores_replay/contract.json"
+  },
+  "id": "INTERFERENCE-20261029-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: independent finite replay of the decisive cancellation identities of the two 2026 refutations of the Exponential Time Hypothesis. (1) The eight-square identity 2[x=v][y=u] = [x+y+u+v=0](s(x,y)s(v,u)+s(x,u)s(v,y)) over 3-bit strings, its two terms' factorization costs across the two partitions, and the grouped pieces A_i of Anthropic's Lemma 2 for t = 1, 2 blocks with their costs t+3(t-i)+6i and t+6(t-i)+3i; (2) the pieces of Anthropic's Theorem B (matrix entries of operators on the polynomial ring Q[t_1, t_2, ...], partition-numbered strings) for 1, 2 and 3 bits: they sum to h![x=v][y=u] and factor through the stated numbers of rows and columns; (3) the swap-matrix construction of OpenAI's proof as simplified by Kintali (A = V f(W)): rank(I - A) equals the number of exceptional tensor-basis vectors and every nonzero entry of A disagrees at fewer than R nodes, at small parameters; (4) controls that must fail (a perturbed sign table, a wrong grouping, a wrong interpolation set). Nearest known result: the claims themselves (OpenAI preprint of 25 October 2026; hexagon:2610.00577v1; Kintali's simplified proof of 26 October 2026); Hurwitz (1898) for the eight-square identity. Classification: replay of known (unreviewed) claims; an experiment, not a theorem.",
+  "ownership": {
+    "root": false,
+    "scope_id": "INTERFERENCE-20261029-001"
+  },
+  "parent": "INTERFERENCE-20261029-001",
+  "schema_version": 1,
+  "status": "Closed: supported by INTERFERENCE-20261029-001C-E001 (exploratory replay, frozen envelope, not promotable): the finite cancellation cores of both 2026 ETH refutations recompute exactly from the papers' statements at small sizes, with every control failing as it should: Anthropic's eight-square identity (0 of 4096 violations; crossing 6 bits, each term 3 on its cheap cut; the octonion sign table is a Hadamard matrix of order 8; knotlab: the parity hyperedge is a knot, the two equalities are not), the grouped pieces of its Lemma 2 at t = 1, 2, the partition pieces of its Theorem B at 1, 2 and 3 bits (sum h![x=v][y=u], ranks within the stated counts; costlier than the plain crossing at these sizes, as the asymptotic statement allows), and the swap-matrix lemmas of OpenAI's construction (via Kintali) at four small parameter sets. No discrepancy; not a check of the asymptotics or the Lean files.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "The cancellation cores of the two ETH refutations, replayed"
+}

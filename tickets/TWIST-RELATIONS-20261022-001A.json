@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SC-TORUS-EXACT-20261022-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TWIST-RELATIONS-20261022-001A-P001"
+  },
+  "id": "TWIST-RELATIONS-20261022-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove for every orientation of a square-lattice torus with periods (Lh, 0) and (s, Lv): (1) basis covariance: relabeling the basis by a shear of Lh or by the mirror permutes the four twist sectors pathwise; (2) hence E = P00 - P01, U = P00 + P01 and G = P10 + P11 are even and Lh-periodic in s while O = P10 - P11 is even and Lh-antiperiodic, so over a period 2Lh the first three carry only whole harmonics and O only half-integer ones; O(Lh/2) = 0; the second difference is E - O, and E + O after a shear by Lh; (3) the half-shear obstruction: additivity at half shear holds exactly when P00 = P01; (4) for twisted sectors consistency = 1 - contractible - odd winding, so the consistency relation is equivalent to D = odd10 + odd01 - odd11; (5) none of the measured relations is a finite-size identity (exact counts on small tori).",
+  "ownership": {
+    "root": false,
+    "scope_id": "TWIST-RELATIONS-20261022-001"
+  },
+  "parent": "TWIST-RELATIONS-20261022-001",
+  "schema_version": 1,
+  "status": "Proved by TWIST-RELATIONS-20261022-001A-P001 (V1 prose proof; pathwise covariance checked on 1,150 sampled orientations of six tori, exhaustive 3 x 3 counts at shears 0 and 1). Shearing a square-lattice torus by its width relabels the twist sectors (a, b) -> (a, a + b), and the mirror maps shear s to -s once the seam is moved by a gauge transformation, for every orientation. So for P_ab = P(all strong components contractible): E = P00 - P01, P00 + P01 and P10 + P11 are even and periodic in the shear, with whole harmonics only; O = P10 - P11 is antiperiodic, with half-integer harmonics only; O = 0 at half shear. The second difference is E - O, so additivity at half shear needs P00 = P01. In twisted sectors P(consistent) = 1 - P(contractible) - P(odd winding), so the consistency relation is equivalent to D = odd10 + odd01 - odd11. On 3 x 3 none of the large-size relations is exact (D = 2581/32768). Conjecture, verified on small tori: the odd-line probability of a class is the same for both twists that are odd on it.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: the harmonic structure of the twist sectors"
+}

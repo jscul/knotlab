@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-HARDNESS-20261024-001B",
+    "SURFACE-GLUING-20261024-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GEOMETRY-LAW-20261029-001A-P001"
+  },
+  "id": "GEOMETRY-LAW-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: let K be a relation on three bits in which every two coordinates are unconstrained, other than the full cube (the complement of a nonempty independent set of the 3-cube; the 34 knots). A native gadget of copies of K is a connected network of m >= 2 copies, each placed with any order of its coordinates, in which variables are identified in pairs between distinct copies and three variables stay free (the legs); its relation is the projection onto the legs. Claims: (a) for the two parity knots every such gadget gives back K; (b) for every other knot every such gadget excludes strictly fewer leg tuples than K (none for the atoms and not-all-equal type, at most one when K excludes two tuples, at most two when it excludes three), so K is never rebuilt and repeated substitution reaches the full relation within three levels; (c) no three-bit knot's coordinate symmetry group lies within the rotations of a cyclic order, so placements never orient a vertex, while some four-bit knots do. Nearest known result: SURFACE-GLUING-20261024-001B (co-independence, exact gluing, no parity of dimension three or more without hubs) and NATIVE-HARDNESS-20261024-001B (unsatisfiable hub-free networks without parity knots are cacti of odd wire cycles), which (b) applies; Higuchi and Mezard 2009 (decimation flows produce linear constraints); Feder 2001 and Holant clones (what two-occurrence gadgets define). Classification: no overlap found in a bounded scan of four queries (candidate local delta).",
+  "ownership": {
+    "root": false,
+    "scope_id": "GEOMETRY-LAW-20261029-001"
+  },
+  "parent": "GEOMETRY-LAW-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by GEOMETRY-LAW-20261029-001A-P001 (V1 prose proof, standard-library check passed): among three-bit knots only the two parity knots are rebuilt by native gadgets of their own copies (by every gadget); every other knot's gadgets exclude fewer leg tuples (none without a wire face, at most one for two excluded at distance two and then only on the triangle, at most two for three excluded), so towers of patterns of patterns reach the full relation within three levels; no three-bit knot orients a vertex, 96 of 742 four-bit knots do.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Patterns of patterns at three places: only parity is rebuilt"
+}

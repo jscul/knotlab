@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "HANDLE-EMERGENCE-20261102-001Z",
+    "SPLICE-TREE-20261102-001Z",
+    "MUTUAL-SELECTION-20261031-001Z",
+    "THREEFOLD-SPIN-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "PLANAR-COMPOSE-20261102-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, continue.', approving HANDLE-EMERGENCE-20261102-001's recommendation): planar glue only composes. Prove from the matching picture that a plane removed side never creates, starting from a single-port lemma: a pinning of the gluing line's pattern by the hub and a near point passes through one port. Check the lemma on plane spaces first; then test on Fano splices whether creation disappears when the handle is cut open along non-contractible cycles. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PLANAR-COMPOSE-20261102-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-02: reduced, not finished. Proved: on a plane side the hub is tied to every point on the removed line's faces, and a pinning whose hub reaches the ports (tied to a non-odd port, or in a two-port near knot one step from the pinned pattern) gives every pinned-and-separated three-point knot an elimination route for any far side. Checked: that access lemma holds for 8020 plane pinnings up to 20 points and fails for every pinning of the Fano plane and census 58. Cutting a handle open removes creation only for some cut positions, so the homology reading fails as stated. Open: the access lemma and the premise in general; next: finish the planar theorem (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when planar non-creation is proved, or the single-port lemma fails on a plane space, or what remains of the proof is stated as an explicit open step; and when the handle cut has been measured with a control, with every computation checked.",
+  "title": "Planar glue only composes"
+}

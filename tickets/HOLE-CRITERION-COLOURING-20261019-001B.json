@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BPHP-RES-PARITY-AUDIT-20261019-001B",
+    "HOLE-CRITERION-COLOURING-20261019-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HOLE-CRITERION-COLOURING-20261019-001B-P001"
+  },
+  "id": "HOLE-CRITERION-COLOURING-20261019-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove in Lean, against Braun's formal development at the commit replayed by BPHP-RES-PARITY-AUDIT-20261019-001A and audited by -001B: (1) every DAG-like Res(\u2295) refutation of the bit pigeonhole principle with m pigeons and n = 2^l holes, for every m with n+1 <= m and 8192 m l^2 (2l+5) <= n^2, has more than exp(n^2/(8192 m l^2)) lines; (2) for every graph G on v vertices and every proper colouring of G with m classes, a refutation of the bit encoding of 2^l-colouring G maps line by line to a refutation of the bit pigeonhole principle with m pigeons of the same size, so (1) bounds bit-colouring for every graph whose chromatic number lies in that range. Ticket A found that holes in the partial-colouring shapes carry no graph-specific information (B_hole equals the universal floor on the whole roster), while the chessboard holes behind Braun's moments do not depend on the number of pigeons; this ticket turns the second fact into a theorem. Include witnesses against vacuity (the range of m is nonempty, the clause sets are unsatisfiable when m > 2^l or G has no 2^l-colouring, and the complete graph's bit-colouring is exactly bit-PHP) and controls that the kernel rejects altered statements.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HOLE-CRITERION-COLOURING-20261019-001"
+  },
+  "parent": "HOLE-CRITERION-COLOURING-20261019-001",
+  "schema_version": 1,
+  "status": "Proved by HOLE-CRITERION-COLOURING-20261019-001B-P001 (Lean, against Braun's replayed development): for l >= 32 and every m with 2^l < m and 8192 m l^2 (2l+5) <= 4^l, every DAG-like Res(\u2295) refutation of bit-PHP with m pigeons and 2^l holes has more than exp(4^l/(8192 m l^2)) lines; a proper colouring with m classes maps every refutation of the bit encoding of 2^l-colouring a graph, line by line, to one of bit-PHP with m pigeons, so the bound holds for every graph whose chromatic number is in that range. Witnesses against vacuity compiled; four controls rejected. Corollary level: Braun's last step with the number of pigeons kept general, plus the standard substitution.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Braun's bound for more pigeons, and bit-colouring through a proper colouring"
+}

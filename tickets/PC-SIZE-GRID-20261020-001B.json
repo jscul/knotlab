@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The size lower bound 2^Omega(min(a,b)) for PC and PCR refutations of Tseitin on a x b grids over characteristic other than 2 is proved in prose, with exhaustive and sampled checks of the cut lemma, the isoperimetric lemma, the kill probabilities and a degree sanity check; controls show both conditions of the cut lemma are needed.",
+  "completion_gate": "",
+  "dependencies": [
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PC-SIZE-GRID-20261020-001B-P001"
+  },
+  "id": "PC-SIZE-GRID-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove the size lower bound by separated-face restrictions (cuts keep a fifth, by planar duality), an explicit balanced-cut tangle in the restricted grid, the tangle lemma of PC-DEGREE-20261020-001B, and constant kill probability with bounded-range independence; check the structural lemmas exhaustively on small grids and the kill probabilities by exact computation and sampling.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PC-SIZE-GRID-20261020-001"
+  },
+  "parent": "PC-SIZE-GRID-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by PC-SIZE-GRID-20261020-001B-P001 (prose): every PC (0/1 basis) or PCR refutation of the Tseitin formula of the a x b grid over a field of characteristic other than 2 has size 2^(gamma min(a,b) - O(1)), gamma about 1e-6; size 2^O(min(a,b)) poly(ab) suffices, so the bound is tight up to the constant. Method: restrictions deleting non-corner faces at pairwise L-infinity distance >= 3 keep a fifth of every cut (planar duality; sharp), giving an explicit tangle in the connected restricted grid and, by the tangle lemma of PC-DEGREE-20261020-001B, degree about min(a,b)/30; each literal dies with probability 0.0075 with bounded-range independence. Checks exhaustive on small grids and sampled on larger ones; controls show both conditions of the cut lemma are needed. Not found stated after a targeted search; general graphs remain open.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if any structural lemma fails on a checked instance.",
+  "title": "Proof: PC and PCR size of grid Tseitin is 2^Omega(min(a,b))"
+}

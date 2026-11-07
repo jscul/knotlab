@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "B proves the equivalence of Urquhart's conjecture with 2^Omega(tw) for general resolution on bounded-degree Tseitin formulas, the cases it settles, the read-2 barrier for branching-program arguments, and a 2^Omega(tw) lower bound for hole-faithful refutations, with executable checks on declared instances (faithfulness of Davis-Putnam and carving refutations, exact hole posteriors along every walk, passing probabilities, and a non-faithful control).",
+  "completion_gate": "",
+  "dependencies": [
+    "SOS-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "URQUHART-TSEITIN-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Bounded attempt at the size analogue of graph-searching monotonicity for Tseitin formulas, which is Urquhart's conjecture (regular resolution polynomially simulates resolution on Tseitin formulas; open, listed by Itsykson-Riazanov-Smirnov 2022; the width version is Galesi-Talebanfard-Toran's monotone cops-robber game). (1) Record that for bounded degree the conjecture is equivalent to general resolution 2^Omega(tw)/poly(n), and that it holds on graphs with cell systems, bounded-degree minor-free graphs and linear-treewidth families. (2) Record why branching-program arguments cannot reach it (read-2 BPs compute satisfiable Tseitin in polynomial size). (3) From the hole picture: a fixed random critical assignment walking down a refutation keeps its hole uniform on the clause's region as long as the refutation never forgets a variable touching that region (hole-faithful); the region then fragments size-biased, so every walk meets a clause with a balanced region, which is falsified with probability 2^-Omega(tw). Prove the 2^Omega(tw) bound for hole-faithful refutations (Davis-Putnam and carving refutations are hole-faithful) and check the posterior claims exactly, with a non-faithful control.",
+  "ownership": {
+    "root": true,
+    "scope_id": "URQUHART-TSEITIN-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: the size version of graph-searching monotonicity is Urquhart's conjecture (open). Proved: at bounded degree it is equivalent to general resolution 2^Omega(tw)/poly(n), so it holds on graphs with cell systems, minor-free graphs, linear-treewidth families and compact families; read-2 branching programs compute satisfiable Tseitin formulas in size 2m+2, so branching-program arguments stop at regular resolution; hole-faithful refutations (never forgetting at the hole's region) need 2^Omega(tw) and include Davis-Putnam refutations. A smaller refutation must re-read and forget at the hole's region; one such step biases the hole's posterior on every checked graph. Recommendation: continue by converting the Tseitin results into one note, deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if a hole-faithful refutation violates posterior uniformity on a checked instance, or if prior work stating the hole-faithful bound is found.",
+  "title": "Re-querying and proof size: Urquhart's conjecture through the hole picture"
+}

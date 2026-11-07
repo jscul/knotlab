@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen exploratory census runs within budget; the independent check recomputes every classification with its own methods, rebuilds and verifies every failure witness, and replicates the group verdicts from its own presentations.",
+  "completion_gate": "",
+  "dependencies": [
+    "GALLAI-KNOTS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-CIRCUITS-20261020-001A-E001"
+  },
+  "id": "KNOT-CIRCUITS-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory code-analysis census of circuit elimination. A set of variables is constrained when not every combination of their possible values occurs; circuits are minimal constrained sets; knots are circuits of size at least 3. (1) Every Boolean relation of arity 2 or 3: decide affine (closed under x+y+z) and bijunctive (closed under majority); search pp-definable systems (two or three copies over at most five variables, some hidden) for a failure of elimination, and hub patterns over small knots (sharing one or two variables) for a failure between knots. Predictions: a failure exactly for the non-affine relations; a failure between knots exactly for relations that are neither affine nor bijunctive. (2) Every binary relation on three elements: decide whether a Mal'tsev polymorphism exists and search systems and binary pp-closures for a failure. Prediction: no failure for Mal'tsev relations; a failure for every other relation except those with an isolated reflexive value, whose systems tie every linked pair. (3) Coset laws of Z2, Z3, Z4, Z5, Z8, Z9, Z2xZ2, Z6, S3, A4, D4, Q8 and Dic3, and the GF(4)-linear law. Prediction: a failure exactly when some subgroup has two maximal normal subgroups; none for GF(4). Controls: 'self-complementary laws compose like cycles' (NAE), 'a Mal'tsev polymorphism suffices' (Z2xZ2), 'a group law composes like cycles exactly when the group is abelian' (S3, Z2xZ2). An independent checker re-verifies every witness and classification.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-CIRCUITS-20261020-001"
+  },
+  "parent": "KNOT-CIRCUITS-20261020-001",
+  "schema_version": 1,
+  "status": "Obstructed on P2 by search depth; P1, P3 and P4 hold (KNOT-CIRCUITS-20261020-001A-E001, exploratory; the independent check recomputed every classification with its own methods, rebuilt and verified all 208 Boolean system witnesses, 80 knot-hub witnesses and 384 three-element witnesses, and replicated the group verdicts from its own presentations). Boolean, 268 relations of arity 2 and 3: a failure of circuit elimination for exactly the 208 non-affine relations (P1). Failures between knots for 80 of the 88 relations that are neither affine nor bijunctive and for no other; the remaining eight, the negation-twists of 1-in-3, gave no knot at all within the searched systems, so the frozen signal is false; their knots need deeper definitions and are constructed in ticket B. Three elements, 510 binary relations: no failure among the 114 with a Mal'tsev polymorphism; a failure for 384 of the other 396, and none for the 12 with an isolated reflexive value (P3). Groups: a failure exactly where some subgroup has two maximal normal subgroups (Z6, Z2xZ2, A4 through V4, D4, Q8, Dic3 through Z6); none for Z2, Z3, Z4, Z5, Z8, Z9, S3 or the GF(4)-linear law (P4). Controls rejected 'self-complementary suffices' (NAE), 'Mal'tsev suffices' (Z2xZ2) and 'abelian criterion' (S3, Z2xZ2); with the whole domain as every variable's alternatives, the A4, D4 and Dic3 constructions show no failure.",
+  "status_class": "obstructed",
+  "stop_rule": "Stop after the declared roster; stop early on a solver or control failure.",
+  "title": "Census: circuit elimination across Boolean, three-element and group laws"
+}

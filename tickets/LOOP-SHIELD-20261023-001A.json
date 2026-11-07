@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "ODD-LOOP-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOOP-SHIELD-20261023-001A-E001",
+    "contract_path": "experiments/LOOP-SHIELD-20261023-001A/LOOP-SHIELD-20261023-001A-E001_genus_two/contract.json"
+  },
+  "id": "LOOP-SHIELD-20261023-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exhaustive enumeration of every orientation of genus-2 square-tiled (L-shaped) surfaces with 24 to 32 edges, classified in all 16 twists. For every class c with lone odd lines, compare the counts of the twists a and a + c (predicted equal by the surface theorem) and of the other twists odd on c (predicted not all equal, since no wall can carry them).",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOOP-SHIELD-20261023-001"
+  },
+  "parent": "LOOP-SHIELD-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: supported by LOOP-SHIELD-20261023-001A-E001 (exhaustive enumeration, frozen contract, 11 rows: eight genus-2 L-shaped surfaces with 16 to 32 edges, a full and a halved 24-edge row, and a torus check; 3152 s within the 5400 s budget). Controls pass: totals, the swap-invariance test, the untwisted sector, and the halved enumeration equals the full one on L(2,2,2,2). On all 17 tested classes with lone odd loops (15 distinct, including the diagonal classes (-1, 1, 0, 0) and (0, 0, 1, -1)), the twists a and a + c give exactly equal counts, and the four dual-pair values are never all equal: for example 14828576, 16731552, 28669504 and 34589248 for the class h2 on L(2,2,2,4), and 2957952, 3139776, 3295744 and 3496128 for v2 on L(3,2,2,2). Only the dual twist is shielded. The independent checker reproduces the torus row, enumerates L(2,1,2,1) by its own construction, confirms the diagonal reflection of L(2,2,2,2) exactly, and replays L(3,1,2,2) by other code (worst 3.63 sigma).",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: genus-2 surfaces"
+}

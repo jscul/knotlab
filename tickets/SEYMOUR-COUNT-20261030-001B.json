@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SEYMOUR-COUNT-20261030-001A",
+    "THREEFOLD-AMPLITUDE-20261030-001B",
+    "THREEFOLD-GRAMMAR-20261030-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SEYMOUR-COUNT-20261030-001B-P001"
+  },
+  "id": "SEYMOUR-COUNT-20261030-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: for every three-fold space H (a connected cubic system that is not 2-colourable, so on Seymour's bound) and every line L, the number of colourings of H - L is computable in polynomial time: (1) it is twice the product of the brace amplitudes (THREEFOLD-AMPLITUDE A and C); (2) a planar brace's amplitude and leaning splits are counts of Tutte matchings, absolute values of weighted Berman determinants (sign coherence); (3) a non-planar Pfaffian brace other than the Heawood graph is a trisum tree of planar braces (Robertson-Seymour-Thomas), found in polynomial time; (4) bottom-up, every planar piece is one weighted determinant in which each child pair acts as row weights (ticket A); implement and confirm against direct counts on nested trisums and spaces with trisum glue. Nearest known result: Berman 1980; Tutte; Robertson-Seymour-Thomas 1999; Fisher-Kasteleyn-Temperley; Szeider 2004. Classification: to be decided.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SEYMOUR-COUNT-20261030-001"
+  },
+  "parent": "SEYMOUR-COUNT-20261030-001",
+  "schema_version": 1,
+  "status": "Proved: #col(H - L) is computable in polynomial time on every three-fold space without any signing: braces by tight cuts, planar braces by Berman determinants, other braces by their trisum tree (Robertson-Seymour-Thomas trisectors), each branch's leaning split one weighted row-restricted determinant of its planar leaf (two per leaf), closed by the trisum law",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Polynomial counting on Seymour's cubic bound"
+}

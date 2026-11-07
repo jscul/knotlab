@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NAE-INVARIANT-20261022-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SC-TORUS-EXACT-20261022-001A-P001"
+  },
+  "id": "SC-TORUS-EXACT-20261022-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove for any orientation of a square-lattice torus: (1) for every primitive period d, exactly one of: a directed closed walk W with det([W], d) < 0, or a dual directed closed walk of class exactly d; (2) the primitive classes of directed closed walks are exactly the primitive periods of a closed convex cone C, and those of the dual are exactly the primitive periods of its polar; (3) under a twist the cone is {0}, a line or the plane, recovering the exact duality; (4) for the uniform orientation the law of C is invariant under the polar map and the torus symmetries, so on square tori P(no horizontal winding) = P(pure vertical directed cycles both ways) and P(positive horizontal winding) = 1 - P(pure horizontal directed cycle); Newman, Grassberger and Ziff's 3/4 is equivalent to P(no directed horizontal winding) = 1/4. Check by independent negative-cycle detection and bounded cover searches on small tori.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SC-TORUS-EXACT-20261022-001"
+  },
+  "parent": "SC-TORUS-EXACT-20261022-001",
+  "schema_version": 1,
+  "status": "Proved by SC-TORUS-EXACT-20261022-001A-P001 (V1 prose proof with sampled checks on eight small untwisted and twisted tori): for any orientation of a square-lattice torus and primitive period d, exactly one of a directed closed walk with negative pairing against d or a dual directed closed walk of class d; hence directed classes are the primitive periods of a convex cone C and the dual's those of its polar (cone types {0}, ray, line, sector, half-plane, plane); under a twist C is {0}, a line or the plane. For the uniform orientation the law of C is polar-invariant, so on square tori P(no horizontal winding) = P(pure vertical cycles both ways) and P(positive horizontal winding) = 1 - P(pure (1,0) cycle) >= 1/2; the conjectured 3/4 is equivalent to P(no directed horizontal winding) = 1/4. The derivation attempt fixes the meaning of 3/4 and of half a bit but not their values.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: the directed cone of a random orientation on a torus"
+}

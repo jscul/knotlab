@@ -1,0 +1,27 @@
+{
+ "acceptance_gate": "",
+ "completion_gate": "",
+ "dependencies": [
+  "KNOT-COMPOSE-20261101-001Z",
+  "KNOT-COUPLING-20261031-001Z",
+  "THREEFOLD-SPACES-20261030-001Z"
+ ],
+ "dependency_text": "",
+ "fields": {
+  "accepted_artifact_id": "NATIVE-PATHS-20261101-001A-P001"
+ },
+ "id": "NATIVE-PATHS-20261101-001A",
+ "kind": "ticket",
+ "legacy": {},
+ "objective": "Proof. (i) Every nontrivial 2-edge cut of a cubic incidence graph is balanced: each side has as many points as lines, one port point and one slot line. (ii) In a knot's space, cutting either edge of a 2-edge cut leaves an atom, an exact negation (KNOT-COUPLING A), so the two sides act as permutations of {0,1} whose composite is a negation: one side is equality, the other disequality, complementary two-place parity. (iii) Across every nontrivial 3-edge cut the sides are not-all-equal and equality (KNOT-COMPOSE A). So the knot's spaces compose through hubs across 3-edge cuts and without hubs, by parity, across 2-edge cuts; odd cycles of Fano blocks and the twisted cube have 2-edge cuts. This corrects KNOT-COMPOSE's headline.",
+ "ownership": {
+  "root": false,
+  "scope_id": "NATIVE-PATHS-20261101-001"
+ },
+ "parent": "NATIVE-PATHS-20261101-001",
+ "schema_version": 1,
+ "status": "Proved by NATIVE-PATHS-20261101-001A-P001: across every nontrivial 2-edge cut of a knot's space one shore accepts exactly equality and the other exactly disequality (complementary two-place parity, no hub); across every nontrivial 3-edge cut the point side accepts exactly one antipodal pair {v, v-bar} and the line side its complement (equality against not-all-equal up to an exchange of colours on some channels); corrects KNOT-COMPOSE-20261101-001A ('compose only through hubs' fails at 2-edge cuts, present in odd cycles of Fano blocks and the twisted cube; 'exactly' holds only up to signs); 40 two-edge and 48 three-edge cuts checked on ten spaces",
+ "status_class": "proved",
+ "stop_rule": "",
+ "title": "Two kinds of interface: parity across 2-edge cuts, knot against hub across 3-edge cuts"
+}

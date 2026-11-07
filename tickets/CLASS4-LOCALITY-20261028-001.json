@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CLASS4-PAIRS-20261028-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "CLASS4-LOCALITY-20261028-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-28 ('Let's continue with proving L4'), taking the recommendation of CLASS4-PAIRS-20261028-001: prove hypothesis (L4) of its Theorem 7. It serves the complexity program's coprime counting dichotomy (counting homomorphisms from 3-manifold groups into nilpotent-by-cyclic groups N x| C_r, r | p - 1, graded): six class-4 census algebras are #P-hard if (L4) holds, and the twenty other (K)-only algebras need it too. (L4) says that for zero-jump gadget knots whose edge is clean modulo gamma_4, the layer-4 obstruction, affine in the layer-3 data for fixed lower data, has the same linear part as the system assembled from single-edge gadgets and a constant part differing by an element of its image (the indeterminacy of a Massey-type obstruction), so counts are local. Standalone value relative to the nearest known work: Krushkal's additivity of Milnor's mu-bar invariants under band sums modulo indeterminacy applies to links separated by spheres; the gadget's vertex blocks are shared, so no separating sphere exists. Questions: what exactly the junction twists are and where they are absorbed (first on the star K_{1,3}); whether an absorption lemma holds for every edge clean modulo gamma_4 or needs a character condition; a proof of (L4) on all graphs, or a counterexample. Assumptions as before: p >= 5, class at most 4, H1(M; F_p) = 0, bounded sectors, S^3_(d/p)(K) surgeries. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CLASS4-LOCALITY-20261028-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: class-4 gadget locality. Lemma R: the apparent relabeling is the linear solver's choice of layer-3 particular solution, and (L4) follows from exact equality of global and local systems in intrinsic coordinates (L4'). The frozen experiment is invalid under its own rule (negative control XB matched; P5 failed for (0,1,1)), though all 84 main configurations showed exact intrinsic equality. No proof; three routes stop at precise points. Six census algebras stay conditional. Next: full pivot back to the core program, taken (GEOMETRY-LAW-20261029-001). Owner-requested todo: ROWELL-NOTE-SHARING-20261028-001 (blocked on the owner).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (L4) is proved for the edges clean modulo gamma_4 (or for a stated subclass covering the six census algebras), or refuted by a counterexample configuration, or reduced to a precise obstruction that a tested idea does not remove; record negative results.",
+  "title": "Class-4 gadget locality modulo indeterminacy"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-COUNT-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "SOFT-CROSS-20261031-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-31 ('Yes, please continue.'), taking the recommendation of TWIST-COUNT-20261030-001: sharpen the soft crossing (a junction of two twisted truncated-octahedron pages, straight entries (40000, -1112, 3336, -192), zero turning entries) by repetition and interpolation, and reduce from a #P-hard problem, so that counting colourings of cubic bipartite Pfaffian graphs under sign classes with branched twists is #P-hard. Scoping before activation (not evidence): the cube minus an edge, unsigned, is a dead cap (its count is 3 whatever its two attachments see); k junctions in series with capped plumbing are crossover-type for k = 1..5 with straight entries multiplied by a fixed vector per junction; with one host line on each wire between junctions the multipliers are (360000, 3336, -10008, -192) = (2^6 3^2 5^4, 2^3 3 139, -2^3 3^2 139, -2^6 3), whose prime valuations separate every count vector (the lattice condition); planar paths of k host lines have Hadamard signature [3^k, 0, (-1)^k], so equalities (merges) interpolate on planar hosts; #Positive-NAE-3SAT is #P-complete (Creignou-Hermann 1996, NAE not affine). Questions: (A) prove that the soft crossing interpolates to an exact crossover and demonstrate it by recovering counts of K3,3 systems from Pfaffian instances only; (B) prove #P-hardness by reduction from #Positive-NAE-3SAT with merges and crossings, and demonstrate it end to end on a small instance. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SOFT-CROSS-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: the soft crossing sharpens inside Pfaffian graphs (universality), counting colourings of cubic bipartite Pfaffian graphs under signings is #P-hard with branched twists while the knot's class and unbranched twists count in polynomial time (source known: Fan-Cai 2020, replayed), and the composition runs end to end. Next: counting on Pfaffian triple systems without signs (2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop when A and B are proved and confirmed end to end, and the decision note records the recommendation.",
+  "title": "Soft crossings to hardness"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BASE-CRITICALITY-20261022-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BASE-CRITICALITY-20261022-001B-E001",
+    "contract_path": "experiments/BASE-CRITICALITY-20261022-001B/BASE-CRITICALITY-20261022-001B-E001_shape_and_mechanism/contract.json"
+  },
+  "id": "BASE-CRITICALITY-20261022-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Confirmatory Monte Carlo test of not-all-equal worlds on torus grids with hidden joints and fair visible spokes. Hypotheses: emergence is size-independent at four exact aspect ratios and at a fixed shear, and increases with the aspect ratio; rotated square and 1:2 tori match axis-aligned ones; the chance of no directed up-crossing equals the percolation non-crossing chance; gadgets with effective parameter below 1/2 make emergence vanish and above 1/2 make it grow; cubic 3-tori make it grow. Controls: bipartite tori are always consistent, and two independent solvers agree on every square-torus sample.",
+  "ownership": {
+    "root": false,
+    "scope_id": "BASE-CRITICALITY-20261022-001"
+  },
+  "parent": "BASE-CRITICALITY-20261022-001",
+  "schema_version": 1,
+  "status": "Closed: supported by BASE-CRITICALITY-20261022-001B-E001 (confirmatory Monte Carlo, frozen contract; all controls pass; two independent solvers agree on every square-torus sample; independent replay agrees). Not-all-equal worlds with fair visible spokes: emergence depends on shape, not size: means 0.23, 0.72, 1.16, 2.31 bits at exact aspect ratios 2/3, 4/3, 2, 4 over sides 9-45 (drifts at most 0.028 bits per doubling; the 4/3 drift is about 3 sigma); rotated squares match axis-aligned ones (difference 0.001 +- 0.011 bits) and rotated 1:2 tori match (difference -0.024 +- 0.017); a sheared family is flat; the chance of no directed up-crossing equals the percolation non-crossing chance (|z| <= 2.2). Gadgets with traversal probability 1/8 or 27/64 drive emergence to 0; 3/4, 7/8 and 0.67 drive it past 8-14 bits; cubic 3-tori grow from 1.2 to beyond 16.6 bits. Given two-way crossings about 18-41% of worlds stay consistent at every size; wide tori grow by about 0.575 bits per unit aspect ratio.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: shape, rotation and the percolation mechanism"
+}

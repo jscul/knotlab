@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PLAIN-BRACE-20261031-001A",
+    "SOFT-CROSS-20261031-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PLAIN-BRACE-20261031-001B-P001"
+  },
+  "id": "PLAIN-BRACE-20261031-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: (1) Hall: a cubic bipartite graph that is cyclically 4-edge-connected is a brace; (2) weaving lemma: if a connected cubic bipartite source is drawn with its vertices in distinct faces of a cyclically 4-edge-connected planar cubic bipartite frame, edges in general position, then the planarized host with a ladder site at every crossing is cyclically 4-edge-connected; (3) cube junction lemma: gluing two cubes onto a 4-cycle of a cyclically 4-edge-connected cubic graph (square edges deleted) keeps it cyclically 4-edge-connected; (4) Theorem: counting proper 2-colourings of 3-regular 3-uniform hypergraphs whose incidence graphs are Pfaffian braces is #P-hard (Turing), with prism frames and cube pages; the woven count is #col(source) #col(frame); (5) with Valiant's planar algorithm and the Heawood graph: planar plain braces count in polynomial time, the knot's atom trivially, and the class in general is #P-hard. Checks: woven instances of a non-brace source are cyclically 4-edge-connected hosts and certified Pfaffian; small woven instances pass the direct brace test; single-site interpolation inside a woven instance recovers the count with that site uncrossed; ladder sites and cube junctions verified by exhaustive cut checks on small cases; control: the source drawn without a frame keeps its 2-edge cut. Nearest known result: Fan-Cai 2020 (hardness on general graphs); none for braces found.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PLAIN-BRACE-20261031-001"
+  },
+  "parent": "PLAIN-BRACE-20261031-001",
+  "schema_version": 1,
+  "status": "Proved: counting 2-colourings of 3-regular 3-uniform hypergraphs with Pfaffian brace incidence graphs is #P-hard (Turing): a hard source woven into a prism frame with ladder sites of plain cube junctions; bond, weaving and cube junction lemmas give cyclic 4-edge-connectivity, Hall gives a brace. Among plain Pfaffian braces planarity and the knot's atom are the polynomial cases found; the class is hard.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Counting on plain Pfaffian braces is #P-hard"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SIGNED-SUBDIVISION-20261029-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIGNED-SUBDIVISION-20261029-001C-E001",
+    "contract_path": "experiments/SIGNED-SUBDIVISION-20261029-001C/SIGNED-SUBDIVISION-20261029-001C-E001_real_weight_search/contract.json"
+  },
+  "id": "SIGNED-SUBDIVISION-20261029-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: for every rule shape of SHARED-SUBDIVISION-20261029-001A and every sign class (sign patterns modulo the sign gauge of SIGNED-SUBDIVISION-20261029-001A), search the gauge slice of real magnitudes (free magnitudes between 1/100 and 100, the others fixed to 1) for weightings whose fine-extension sums are proportional to the coarse weights on the coarse 2-torus, at scale 2 and at scale 3 (a necessary condition for exactness); record the minimal normalized residual per shape and sign class; refine every candidate (residual below 1e-8) on the coarse 2- and 3-tori jointly and confirm or refute it on coarse side 4 at scale 2. The shapes settled by SIGNED-SUBDIVISION-20261029-001B are run as controls: shapes it excludes must not reach a candidate, and the exact sign classes of the affine shapes must reach residual zero from random starts. Nearest known result: SIGNED-SUBDIVISION-20261029-001A and B; the scoping search of this epic (pre-activation, not evidence). Classification: experiment; evidence only, no theorem.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIGNED-SUBDIVISION-20261029-001"
+  },
+  "parent": "SIGNED-SUBDIVISION-20261029-001",
+  "schema_version": 1,
+  "status": "Closed-null: SIGNED-SUBDIVISION-20261029-001C-E001 (confirmatory, frozen contract) ran once (75 minutes, four workers) over all 122 shapes, both scales and 944 sign classes. P1 held (no open shape confirmed; at scale 2 no open shape even reached a 2-torus candidate, best residual 9.2e-5 over 592 classes), P3 and P4 held and the cheapest control fired, but P2 failed: the joint 2- and 3-torus stage missed 2 of the 28 exact plus-minus-one classes at scale 2 (frozen three-excluded laws; the per-equation residual saturates away from the exact point), so by the decision rule the P1 conclusion is not drawn. Post hoc (exploratory, post_hoc.json): the single open candidate (an S1 atom at scale 3) is a degenerate total-cancellation point on the 2-torus that fails on the 3-torus; the missed classes are exact at the plus-minus-one point. A first launch with six workers (the contract allows four) was stopped within seconds and wrote nothing.",
+  "status_class": "closed-null",
+  "stop_rule": "",
+  "title": "Real weights under shared subdivision: search on the open shapes"
+}

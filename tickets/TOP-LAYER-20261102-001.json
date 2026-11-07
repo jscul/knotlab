@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BEYOND-TWO-20261101-001Z",
+    "KNOT-CIRCUITS-20261020-001Z",
+    "MUTUAL-SELECTION-20261031-001Z",
+    "RIGID-SELECTION-20261101-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "TOP-LAYER-20261102-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue on with this', approving RIGID-SELECTION-20261101-001's recommendation): does every law that composes like cycles keep the top layer of its selected spaces rigid? First test the non-abelian groups that compose like cycles up to order 24 and the 1020 non-simple Mal'tsev laws on three values, then attempt a proof. Find where the top-layer statement holds, whether it fails in general, and the form in which it is true. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TOP-LAYER-20261102-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-02: not as phrased, but in the form that matters. Every law on three values that composes like cycles is rigid; group laws keep their top rigid; in every Mal'tsev law simple abelian sections force rigid selection, so keeping emergence needs a two-layer section (at least four values). A simple five-value law containing Z4 composes like cycles and keeps knots in its top, so the global top is the wrong layer; the rigid layer is each section's top (proved for one chain ring). The knot keeps emergence on two values in its only layer. Ticket B corrected to declared domains; next: what selection leaves and how pieces glue (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the tested families are settled by proof or exhaustive check, and the general statement is either proved, refuted by a verified counterexample, or reduced to a precisely stated open case.",
+  "title": "Does every law that composes like cycles keep its top layer rigid?"
+}

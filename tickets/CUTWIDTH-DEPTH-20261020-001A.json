@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DEEP-HOLES-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CUTWIDTH-DEPTH-20261020-001A-E001"
+  },
+  "id": "CUTWIDTH-DEPTH-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory census with frozen predictions P1-P5: on all 85 connected cubic graphs with 12 vertices (and the 27 with 4-10), all connected graphs with at most 6 vertices, and sampled 4-regular and random graphs, compare the toggle width, its monotone version, cutwidth, and the cut game with removals; verify on the 12-vertex cubic graphs, at certificate level, that charge networks are refuted at cutwidth + 1 and not below.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CUTWIDTH-DEPTH-20261020-001"
+  },
+  "parent": "CUTWIDTH-DEPTH-20261020-001",
+  "schema_version": 1,
+  "status": "Closed: supported by CUTWIDTH-DEPTH-20261020-001A-E001 (exploratory; frozen predictions P1-P5 all hold; controls pass; the independent check recomputed every width and re-verified the depth certificates). On 1,453 graphs (all 112 connected cubic graphs with 4-12 vertices, the 85 on 12 vertices reached by sampling at the published count; all 141 connected graphs with 3-6 vertices; 1,200 sampled graphs of degree up to 8): degree <= 3 always gives toggle width = monotone toggle width = cutwidth + 1; every graph satisfies cutwidth + 1 <= toggle width <= cutwidth + floor(maxdegree/2), with gaps of 2 and 3 above degree 3; removals never help, in the cut game or the toggle game; on all 85 twelve-vertex cubic graphs the parity network's depth is cutwidth + 1 at certificate level.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Monotone sweeps: an exact census"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "A proves the double-cover reduction, the cyclic-edge characterisation, planar Minty complementarity and the exact duality of twisted tori, with exhaustive and sampled checks; B runs a frozen confirmatory scan of the shape function with pre-registered candidate formulas and controls against published values.",
+  "completion_gate": "",
+  "dependencies": [
+    "CONTACT-CENSUS-20261022-001Z",
+    "BASE-CRITICALITY-20261022-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "NAE-INVARIANT-20261022-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved the recommended continuation of CONTACT-CENSUS-20261022-001: scan not-all-equal's scale-free emergence over aspect ratios, both odd-side patterns and sheared tori; look for an exact reduction (two-way directed crossings in random orientations, something like the percolation backbone) or a matching formula; stop if nothing fits within the measured precision; take the lower bound as a side result only if the simple certificates make it cheap. Scoping found an exact reduction: with fair spokes the two-literal residual of a not-all-equal world is a uniformly random orientation of the bipartite double cover that the deck swap reverses, so the world is inconsistent exactly when some strongly connected component is swap-invariant, equivalently when the cyclic edges (edges on directed cycles) projected to the torus form a cluster with an odd cycle. Planar Minty duality makes primal and dual cyclic edges complementary; on twisted tori the twist forbids crossing primal and dual directed winding cycles, so the duality is exact and P(all contractible) = P(cross) on every shape (verified by exact enumeration on 3 x 3 tori). Strong components of a fair random orientation are the random diode model at its threshold, a known universality class (de Noronha et al. 2018; Newman, Grassberger and Ziff 2026; fractal dimension 1.8035). The Pinson-Arguin Coulomb-gas family with free coupling and parity-dependent winding weights fails (chi-square about 6e4 for 52 degrees of freedom). A proves the reduction and the exact duality; B is the frozen scan with pre-registered identification tests.",
+  "ownership": {
+    "root": true,
+    "scope_id": "NAE-INVARIANT-20261022-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-22. With fair spokes a not-all-equal world is the random orientation of its bipartite double cover that the deck swap reverses, inconsistent exactly when a strongly connected component is swap-invariant, equivalently when its cyclic edges form a cross cluster or an odd winding (proved). Plane cyclic edges are complementary to dual cyclic edges (Minty); on twisted tori the complementarity is exact, so P(contractible) = P(cross), consistency = contractible + even windings, and emergence lies between -log2(1-P0) and -log2 P0; the lower bound reduces to a crossing estimate and stays open. Confirmatory: the bulk is strongly-connected percolation (dimension 1.80, untwisted wrapping 0.862/0.750/0.638 as published, two-way arm exponent 0.197 = beta/nu, not 5/24, not backbone); emergence is scale-free on 13 shape families (0.846 bits on squares with both sides odd); the Pinson-Arguin Coulomb-gas family is rejected (chi-square 1330 per degree of freedom); half a bit on squares with one odd side is accepted (0.4993 +- 0.0011); 1/16 for long cylinders is rejected (0.0645). Next (owner's choice): exact torus values (2/3), banking (1/3), or the lower bound (1/3).",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. If no pre-registered candidate fits within the measured precision, record the measured shape function and stop; do not start a theory of strongly-connected percolation in this epic.",
+  "title": "Not-all-equal's critical invariant: strong components on twisted tori"
+}

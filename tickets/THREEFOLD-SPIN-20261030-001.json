@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "THREEFOLD-AMPLITUDE-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "THREEFOLD-SPIN-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('Yes, let's continue.'), taking the recommendation of THREEFOLD-AMPLITUDE-20261030-001: do the knot's own (trivial) signs satisfy Kasteleyn's face condition on every minimal map of every three-fold space, so that each space carries a spin structure on its surface, and what is its Arf invariant per Fano atom? Scoping before activation (not evidence): on all 16 maps of the Fano space and all 128 of the 13-point space, and on sampled maps of the 19-, 21-, 22-, 35- and 43-point spaces, every face has length 2 mod 4; the Cimasoni-Reshetikhin quadratic form of the knot's signing is well defined, vanishes on every difference of perfect matchings and has Arf invariant 0; on the Heawood torus the 24 perfect matchings fall 8, 8, 8 into the three classes where the form vanishes, so the matchings see exactly the three even spin structures; spaces with h Fano atoms realize exactly 3^h classes (9 at 13 points, 27 at 19, 21 and 22); trisum glue pieces with their Pfaffian signings are Kasteleyn on all their minimal (torus) maps, also with Arf 0. Questions: (A) prove that Kasteleyn faces survive splicing, hence the knot's signs are Kasteleyn on every minimal map of every space with planar glue (every face of length 2 mod 4), and that the induced spin structures are even (Arf 0), independent of the matching, additive over atoms, and even on every Fano handle; (B) confirm by computation, including trisum glue and the Kasteleyn determinants. Intuitions targeted: the law equipping the space it builds with structure; the two/three boundary. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "THREEFOLD-SPIN-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: the knot's signs are Kasteleyn on every minimal map (every face of length 2 mod 4, proved for planar glue); its spin structures are even on every handle (3^h of them; on the Fano torus the three even ones, 8 matchings each); odd only on non-minimal maps of genus 3 and up; recommendation Continue: the knot's amplitude as a spin sum (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) the face condition is proved for planar glue (or a counterexample is found); (ii) the Arf invariant and the realized spin structures are identified; (iii) the computations confirm them, including trisum glue; (iv) the decision note records the recommendation.",
+  "title": "The knot's spin structure"
+}

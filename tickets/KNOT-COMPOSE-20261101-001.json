@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FOUR-PLACE-20261031-001Z",
+    "THREEFOLD-AMPLITUDE-20261030-001Z",
+    "THREEFOLD-SPACES-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "KNOT-COMPOSE-20261101-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Can we do all 3?', option (c) of FOUR-PLACE-20261031-001's recommendation): do the knot's selected spaces (the non-2-colourable cubic systems) compose into native networks? Using the point lemma and tight-cut factorization (THREEFOLD-AMPLITUDE), determine how the parts of a knot's space meet across cuts: whether a composition can join knot to knot, or must pass through a hub (equality fan-out); what a hub-free failing composition can be; and how the composition reads against the contact-first native-network gate. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "KNOT-COMPOSE-20261101-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-01: the knot's selected spaces compose natively, but only through hubs. Every 3-edge cut of a cubic incidence graph is balanced; across every nontrivial 3-edge cut of a knot's space the line side is exactly the knot (not-all-equal) and the point side exactly a hub (equality), by the point lemma; two sides that both accept knots fail together only as complementary parity cosets, so a hub-free failing composition is a parity one (control: parity does fail hub-free); double cuts of knot's spaces give twelve-class knots that never fail together; the transpose exchanges knot and hub sides. Against the native-network gate this is a native network of knots with network hubs (in scope by the owner's decision), not a hub-free contact network. Recommendation: Continue as approved (the note)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the interface across every small cut of a knot's space is classified (knot side, hub side, or neither) with proof, the hub-free failing compositions are characterized, and the gate reading is recorded; a hub-free composition of knot's spaces would be recorded as a finding.",
+  "title": "Composition of the knot's spaces: knots meet through hubs"
+}

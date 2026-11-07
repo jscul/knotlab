@@ -1,0 +1,24 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOOP-HUB-20261025-001A-E001",
+    "contract_path": "experiments/LOOP-HUB-20261025-001A/LOOP-HUB-20261025-001A-E001_arm_violations/contract.json"
+  },
+  "id": "LOOP-HUB-20261025-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Frozen-contract experiment: anneal gadgets of an open knot to maximize the ratio of the two sides of the arm inequality, at sizes 4 to 40 with cycle-rich and pin-rich generators; test structured families (chains of double edges, gadgets with every non-terminal slot paired); count linked pairs exactly on small gadgets and test the split bounds by the side that is empty at the first branching knot; report how often the natural strengthenings fail.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOOP-HUB-20261025-001"
+  },
+  "parent": "LOOP-HUB-20261025-001",
+  "schema_version": 1,
+  "status": "Closed: supported under its frozen rule. LOOP-HUB-20261025-001A-E001 annealed 384 gadgets of an open knot at 4 to 40 knots to maximize the ratio of the two sides of the arm inequality, and tested chains of double edges (lengths 1 to 12) and fully paired cores (3 to 15 knots): no violation anywhere, with equality reached in every run up to 16 knots. On 2,000 small gadgets (21,660 axis-terminal cases, 371,328 linked pairs) the split bounds by the empty side at the first branching knot always held, while the bound per partner solution failed 107 times, per image pattern 656 times and the minor inequality 828 times. Controls passed and the independent re-check reproduced the verdict.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Searching for violations of the arm inequality on gadgets with loops"
+}

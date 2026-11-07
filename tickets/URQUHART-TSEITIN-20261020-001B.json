@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "The equivalence, settled cases, read-2 barrier and hole-faithful lower bound are proved in prose; check.py verifies validity, faithfulness and exact hole posteriors of carving and Davis-Putnam refutations on declared graphs, with a non-faithful control and read-2 programs.",
+  "completion_gate": "",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z",
+    "GENERAL-SIZE-20261020-001Z",
+    "SOS-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "URQUHART-TSEITIN-20261020-001B-P001"
+  },
+  "id": "URQUHART-TSEITIN-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) for bounded degree, Urquhart's conjecture on a family is equivalent to general resolution 2^Omega(tw)/poly(n) on it, and it holds on graphs with cell systems, bounded-degree minor-free graphs, linear-treewidth families and families with compact topological minors; (2) read-2 branching programs compute satisfiable Tseitin formulas in polynomial size, so branching-program arguments stop at regular resolution; (3) every hole-faithful refutation (no step forgets a variable touching the region where the hole must lie) of a 2-edge-connected graph with an edge-well-linked set of size w has at least (1-4eps) 2^(eps w/2) clauses, so 2^Omega(tw); Davis-Putnam and carving refutations are hole-faithful. Check exactly on small graphs: validity and faithfulness of the refutations, hole posteriors along every walk, passing probabilities against 2^-fd, and a non-faithful control.",
+  "ownership": {
+    "root": false,
+    "scope_id": "URQUHART-TSEITIN-20261020-001"
+  },
+  "parent": "URQUHART-TSEITIN-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by URQUHART-TSEITIN-20261020-001B-P001 (prose with checks): for bounded degree Urquhart's conjecture is equivalent to general resolution 2^Omega(tw)/poly(n), so it holds on graphs with cell systems, bounded-degree minor-free graphs, linear-treewidth families and families with compact topological minors; read-2 branching programs of size 2m+2 compute satisfiable Tseitin formulas (the branching-program route stops at regular resolution); hole-faithful refutations need 2^Omega(tw) (random critical assignment: the hole stays uniform on the clause's region, regions fragment size-biased, balanced regions are rarely falsified); Davis-Putnam refutations are regular and hole-faithful. A smaller refutation must re-read and forget at the hole's region; one such step biases the hole's posterior on every checked graph. The conjecture is not resolved.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if a faithful refutation fails a posterior check on a declared instance.",
+  "title": "Proof: Urquhart's conjecture equals the open problem; hole-faithful refutations need 2^Omega(tw)"
+}

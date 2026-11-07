@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "INTERFERENCE-20261029-001Z",
+    "SIGNED-SUBDIVISION-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SIGNED-GASKETS-20261029-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-29 ('Yes, please continue'), taking the recommendation of SIGNED-SUBDIVISION-20261029-001. Setting: the level-k Sierpinski gasket SG_k is the k(k+1)/2 up triangles of a triangle cut into k^2, with copies of one three-bit law on every up triangle (corners a = (i, j), b = (i+1, j), c = (i, j+1)) glued at shared vertices; its corner relation R_k sums every vertex except the three corners. A law is exact on SG_k when R_k = lambda_k w with lambda_k nonzero; substituting SG_k for every copy level after level then builds a finitely ramified self-similar space of similarity dimension log(k(k+1)/2)/log k, which tends to 2. Scoping (not evidence) found signed not-all-equal, w = (-1)^((a xor b)(a xor c)) - [a = b = c], exact for k = 1 to 21 (exact integers to 17, residues to 21), and a proof route: w = (-1)^a ((a+b+c)|3), a standing wave of two Eisenstein phases whose sectors lock along the gasket's edges. Questions: (A) prove exactness for every k with lambda_k nonzero, for the one-parameter family of laws sharing the mechanism, and record what the towers are; (B) decide every signed three-bit law on SG_k for small k and prove the infinite families among the exact ones. Standalone value: SHARED-SUBDIVISION-20261029-001 and SIGNED-SUBDIVISION-20261029-001 showed that no non-affine knot reproduces itself under shared subdivision of the plane, with counts, signs or real weights, while INTERFERENCE-20261029-001B found signed not-all-equal exact on the native triangle (k = 2). A proof for every k would show that one non-affine knot builds exactly self-similar spaces of every dimension below 2, while the plane stays out of reach. Intuitions targeted: space from logic without a drawn space; everything relational (harmonies as cancelling phases); the two/three boundary. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SIGNED-GASKETS-20261029-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: a knot builds exactly self-similar space of every dimension below 2. A (proved for every k): signed not-all-equal, (-1)^a ((a+b+c)|3), a standing wave of two Eisenstein phases, reproduces itself exactly on every level-k Sierpinski gasket (dimension log(k(k+1)/2)/log k), with factor congruent to (-1)^floor(k/2) mod 3, never zero; the real family (-1)^a sin(theta E)/sin(theta) shares the identity and only its knot member is a knot. B: of 1,168 signed laws, 68 are exact on some gasket to level 12; 26 lie in families proved for every k (rotations, relabelings, a period-4 twisted variant, parity at powers of 2), 42 are single-level coincidences. Next (awaiting the owner): the standing-wave law in every dimension (3/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) exactness of signed not-all-equal on SG_k is proved for every k >= 1 with lambda_k nonzero, or a level where it fails is found and explained; (ii) every signed three-bit law (1,168 rules up to a global sign) is decided on SG_k for k = 1 to 10, and the infinite families among the exact ones are proved or stated as conjectures with their evidence; (iii) the decision note records the recommendation. Record negative results.",
+  "title": "Signed not-all-equal on every level-k Sierpinski gasket"
+}

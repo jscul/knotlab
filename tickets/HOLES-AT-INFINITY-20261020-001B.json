@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "Theorems 1-4 and Propositions 2 and 5 are proved in prose; check.py verifies the classification against exact projections on nine infinite graphs, knot verdicts at vertices, fold pairs and one-edge modifications, and the tangle moments, with seven controls rejected.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z",
+    "SOS-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HOLES-AT-INFINITY-20261020-001B-P001"
+  },
+  "id": "HOLES-AT-INFINITY-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "On connected, locally finite, infinite graphs, taking the classical end and cycle-space theory as background, prove: (1) a parity of finitely many edge variables of a Tseitin system is open exactly when a finite cycle meets it oddly (loop-supplied) or it is the parity of a finite cut with infinitely many vertices on both sides (end-supplied), and only end-supplied ones are unchanged by every finite change between solutions; (2) a vertex relation is a K1-K3 knot exactly when its incident edges are open, so the 3-regular tree has a knot at every vertex although it has no cycle, while a finite tree has none; (3) the source is invisible to K1-K3 and undecided by every finite ball: adding one edge outside the ball keeps the ball's projection and turns an end-supplied parity into a loop-supplied one; (4) on a one-ended graph the Haar measure on solutions has exactly the moments of the tangle pseudo-expectation of SOS-SIZE-20261020-001B-P001, with finite sides as small sides; (5) Tseitin on a computable binary tree with no computable path has no computable solution. Check on truncations with GF(2) projections, knotlab and mutation tests.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HOLES-AT-INFINITY-20261020-001"
+  },
+  "parent": "HOLES-AT-INFINITY-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by HOLES-AT-INFINITY-20261020-001B-P001 (prose with checks): on connected, locally finite, infinite graphs an open parity of a Tseitin system is either loop-supplied (a finite circuit meets it oddly) or end-supplied (a finite cut with infinitely many vertices on both sides, unchanged by every finite change); a vertex relation is a K1-K3 knot exactly when its edges are open, so the 3-regular tree carries a knot at every vertex with all openness supplied by ends, while a finite tree carries none; one edge added outside any finite ball turns an end-supplied parity loop-supplied without changing the ball's projection, so no finite part and no K1-K3 verdict decides the source; for each end, the uniform measure on solutions whose hole went there has the moments of the SOS-SIZE tangle pseudo-expectation; a computable tree has a satisfiable system with no computable solution. Classical core: Diestel-Kuhn, Bruhn-Stein, Berger-Bruhn.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if a classification, knot verdict, projection or moment check fails on a declared instance.",
+  "title": "Proof: ends supply open distinctions that the knot test cannot tell from loops"
+}

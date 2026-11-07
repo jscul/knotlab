@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "Verify the group facts and the homology promise for every input; distinguish ambient twisted H^2 from the span of actual obstruction classes; check section independence; include the easy-action control.",
+  "completion_gate": "A probe note with measured versus proved statements, reproducible from a script, and a next decision.",
+  "dependencies": [],
+  "dependency_text": "Frozen checks of SL23-BOUNDED-20261025-001A, CLOSED-H1-20261025-001B and CLOSED-H1-20261025-001C are imported read-only for diagrams, presentations, Smith forms, Gauss sums and brute force; no claim is activated.",
+  "fields": {
+    "evidence_mode": "documentation",
+    "manifest_path": "research/UT3-TWIST-PROBE-20261025-001/manifest.json",
+    "program": "complexity",
+    "report_path": "research/UT3-TWIST-PROBE-20261025-001/probe.md"
+  },
+  "id": "UT3-TWIST-PROBE-20261025-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Bounded probe, authorized by the owner through Codex: for G = UT3(F4) x| <h> with h acting by (x,y,z) -> (w^2 x, w^2 y, w z), measure whether the effective lifting obstruction through the twisted centre A = F4 grows on closed 3-manifolds with bounded first homology (integral surgeries S3_3(K)), against the easy action (w x, y, w z) as control.",
+  "ownership": {
+    "root": true,
+    "scope_id": "UT3-TWIST-PROBE-20261025-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Closed by the probe note research/UT3-TWIST-PROBE-20261025-001/probe.md (documentation, bounded pass): for UT3(F4) x| C3 with action (w^2 x, w^2 y, w z), on integral surgeries S3_3(K) with first homology Z/3 the span of the twisted obstruction classes grows as 2k on (3_1)^#k and (8_18)^#k, section-independently, but block-diagonally (connected sums), so counts factorize (|Hom| = 1 + 128*28^k for the trefoil family); it is 0 on (4_1)^#k, tripled cycles and the easy-action control. The obstruction is the twisted cup product c_x u c_y; the count is a rank-sum over twisted cup products. No hardness signal; the missing test is a family with non-block twisted cup products.",
+  "status_class": "closed-null",
+  "stop_rule": "One bounded pass; report at the first checkpoint without renewing into a hardness or classification program.",
+  "title": "Twisted lifting obstruction of UT3(F4) x| C3"
+}

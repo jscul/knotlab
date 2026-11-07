@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SOFT-HUB-20261024-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SOFT-HUB-20261024-001B-E001",
+    "contract_path": "experiments/SOFT-HUB-20261024-001B/SOFT-HUB-20261024-001B-E001_strong_hubs/contract.json"
+  },
+  "id": "SOFT-HUB-20261024-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Frozen-contract experiment: annealing and random sampling of native gadgets of an open knot at sizes beyond the scoping, exact decomposition of diagonal pairs on small gadgets, and compositions of the best hubs; test whether any gadget exceeds hub ratio the square root of 3, whether a windability violation ever comes with ratio above 1 on the same axis, whether linked pairs stay below the square of the largest off-diagonal value, and whether composition amplifies; Fibonacci and not-all-equal gadgets as controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SOFT-HUB-20261024-001"
+  },
+  "parent": "SOFT-HUB-20261024-001",
+  "schema_version": 1,
+  "status": "Closed: supported under its frozen rule. SOFT-HUB-20261024-001B-E001 annealed gadgets of an open knot on all four axes at 8 to 40 knots (48 seeds each), sampled 100,000 random gadgets and classified every pair of 3,000 small gadgets. The best hub ratio was 65/53 = 1.2264, reached on two axes and below the square root of 3; the 13,915 sampled axes violating the split inequality all had ratio at most 1; linked pairs never exceeded the square of the largest off-axis value (12,000 axis cases, largest ratio 1.0); triangles, dressings and hubs of hubs of the 12 best hubs did not exceed them. Controls passed (no-lone-1 never above 1, not-all-equal reaches 4/3 and never violates) and the independent re-check reproduced the verdict.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Searching for strong hubs among the open knots"
+}

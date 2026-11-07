@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TRIPLE-PRODUCT-20261026-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_mode": "documentation",
+    "manifest_path": "research/COPRIME-CLASS2-20261026-001A/manifest.json",
+    "report_path": "research/COPRIME-CLASS2-20261026-001A/review.md"
+  },
+  "id": "COPRIME-CLASS2-20261026-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Review TRIPLE-PRODUCT-20261026-001C (Borromean steering) and 001D (hardness) independently: check every cited statement against its source (Massuyeau's Lemma 3.2, Matveev, Habiro's clasper moves, Jaeger-Vertigan-Welsh), look for gaps in the lifting argument, the band normalization, the knot-surgery corollary and the reduction, replay the key counts with code written independently of tp_lib.py, and run a last prior-art pass in TQFT phrasing (Dijkgraaf-Witten, Turaev-Viro, rational homology spheres, solvable targets). Documentation; it gates the rest of the epic.",
+  "ownership": {
+    "root": false,
+    "scope_id": "COPRIME-CLASS2-20261026-001"
+  },
+  "parent": "COPRIME-CLASS2-20261026-001",
+  "schema_version": 1,
+  "status": "Closed by the review note research/COPRIME-CLASS2-20261026-001A/review.md (documentation): three independent fresh-context passes (a mathematical referee reading the primary sources with its own code and 87 extra insertion cases, a from-scratch computational replay that reproduced every number and 894 new steering configurations, and a prior-art pass in TQFT phrasing) found no blocking gap in TRIPLE-PRODUCT-20261026-001C and 001D; two repairs (the explicit knot construction; a novelty sentence: bounded H1 is not enough, rather than a refutation of the twisted Samperton-Weiss question) and nine clarifications are recorded and carried into this epic's B and D; Moussard 2017 is the rational, infinite-cyclic precursor of the steering formula; Rowell's Conjecture 3.2(b) is contradicted by the S4 knot hardness unless every #P function is polynomial-time computable.",
+  "status_class": "closed-null",
+  "stop_rule": "",
+  "title": "Independent review of the twisted-triple-product proofs"
+}

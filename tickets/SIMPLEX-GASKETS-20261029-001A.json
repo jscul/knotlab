@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SIGNED-GASKETS-20261029-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIMPLEX-GASKETS-20261029-001A-P001"
+  },
+  "id": "SIMPLEX-GASKETS-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: on the level-k Sierpinski d-simplex SG^d_k (copies of a (d+1)-bit law on the up simplices {v, v+e_1, ..., v+e_d}, |v| <= k-1, base corner first; every vertex but the d+1 corners summed), prove for the standing wave w_theta = (-1)^(x_0) sin(theta E)/sin(theta), E = sum of (-1)^(x_i): (1) for every d >= 1, k >= 1 and theta with sin(theta) nonzero, the corner relation is lambda(theta) w_theta (phase sectors locked along the d edges from the base corner, odd global flip); (2) lambda is a monic polynomial with integer coefficients in y = 2 cos(theta), of degree d(#T - 1) and that parity, with lambda(2) = 2^N (N summed vertices), because the limit law 1 + sum_i s_0 s_i reproduces itself with factor 2^N (its only even edge sets are the empty set and the d axis paths); at level 2, lambda = y^d (y^2 - 2)^(d(d-1)/2); (3) hence lambda vanishes at finitely many angles, never at theta = j pi/q with q an odd prime power (y is congruent to plus or minus 2 modulo the prime above q), and the Legendre law (-1)^(x_0) (E|3) has lambda congruent to (-1)^N modulo 3; (4) for d >= 2 and sin(2 theta) nonzero, the support of w_theta is a knot (K1-K3) exactly when it excludes some weight: always for odd d, and for even d exactly at theta = j pi/q in lowest terms with q odd and q <= d + 1; (5) towers of every level in every dimension, similarity dimension log C(k+d-1, d)/log k. Nearest known result: SIGNED-GASKETS-20261029-001A (d = 2); higher-dimensional Sierpinski gaskets (Hilfer-Blumen); Chebyshev polynomials and cyclotomic integers. Classification: to be decided after the literature check.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIMPLEX-GASKETS-20261029-001"
+  },
+  "parent": "SIMPLEX-GASKETS-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by SIMPLEX-GASKETS-20261029-001A-P001 (V1, proof for every d and k, exact checks up to d = 7): the standing wave (-1)^(x_0) sin(theta E)/sin(theta) reproduces itself on every level-k Sierpinski d-simplex, with factor a monic integer polynomial in 2 cos(theta) of degree d(#T-1) equal to 2^N at theta = 0 (level 2: y^d (y^2-2)^(d(d-1)/2)); never zero at odd prime-power angles; the Legendre law is an exact knot in every dimension d >= 2, and in odd dimensions the whole family is knots. Knots therefore build exact finitely ramified towers of similarity dimension increasing to d in every dimension.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The standing wave reproduces itself on every Sierpinski simplex"
+}

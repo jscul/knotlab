@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "A frozen experiment contract fixes the two fixtures (the graph K2 and the digon) built by the projector construction of COPRIME-CLASS2-20261026-001D section 3 at p = 7, r = 6 with the free class-2 group on three generators (characters zeta, zeta^2, zeta^3, zeta = 3), the predictions N_psi = 133 and 2737 from NEXT-DIRECTION-SCAN-20261026-001A, the homology, character, purity and basing checks, and the controls, before the fixtures are run.",
+  "completion_gate": "",
+  "dependencies": [
+    "COPRIME-CLASS2-20261026-001Z",
+    "NEXT-DIRECTION-SCAN-20261026-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PATTERN1-CHECKPOINT-20261026-001-E001",
+    "contract_path": "experiments/PATTERN1-CHECKPOINT-20261026-001/PATTERN1-CHECKPOINT-20261026-001-E001_projector_fixtures/contract.json",
+    "program": "complexity"
+  },
+  "id": "PATTERN1-CHECKPOINT-20261026-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At the owner's instruction (relayed by a peer session: try the p = 7, r = 6 construction for the class-(K) result, check the predicted counts 133 and 2737, and stop to report), build the two fixtures of the pattern-1 construction of COPRIME-CLASS2-20261026-001D section 3 as actual surgeries: base knots are connected sums of trefoils, 6_1 and 5_2 (twist knots whose roots mod 7 are zeta^(+-1), zeta^(+-2), zeta^3), leaves are eigenprojector band sums of copies of a two-arc band loop with bands winding j times around a meridian, x_u - x_v is a balanced band sum, every leaf carries its disk framing, and each Y-graph is realized as surgery on its six-component link (leaves 0-framed, Borromean rings 0-framed, Hopf clasps along edges routed above the diagram), together with +6 surgery on the base knot. On the resulting closed manifolds verify H1 = Z/6 and the onto meridian character, compute the twisted cohomology and the actual lifting obstruction of the free class-2 group on three generators, and compare the kernel counts N_psi with 133 and 2737. Stop and report at this checkpoint; the class-(K) dichotomy itself is not pursued here.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PATTERN1-CHECKPOINT-20261026-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Closed: supported under its frozen rule. PATTERN1-CHECKPOINT-20261026-001-E001 built the two fixtures of the pattern-1 projector construction (COPRIME-CLASS2-20261026-001D section 3) at p = 7, r = 6 as explicit surgeries: base knots 3_1 # 3_1 # 6_1 # 5_2 (K2) and 3_1 # 3_1 # 6_1 # 6_1 # 5_2 # 5_2 (digon) with +6 surgery, eigenprojector leaves of 21, 28 and 21 band-summed copies with bands winding j times around a meridian, balanced band sums for x_u - x_v, disk-framed leaves, and each Y-graph as surgery on its six-component link (1,761 and 4,124 crossings). Both manifolds have H1 = Z/6 with the meridian character onto, every leaf is pure in its slot character, and the actual lifting obstruction of the free class-2 group on three generators gives N_psi = 133 (K2) and 2737 (digon), as predicted, while the psi^5 sector keeps its base values 2401 and 117649. Controls: bases alone 2401 and 117649; an unbalanced band 361; reversed windings move the change to psi^5 (2401, 133); unprojected leaves change both sectors (133, 133); machinery controls (cp_lib dimensions, lane A's 938791 and 49735, chirality, Borromean rings, Y-graph link versus braid insertion, winding calibration) all pass. Checkpoint only: the uniform class-(K) theorem is not attempted.",
+  "status_class": "supported",
+  "stop_rule": "Run each fixture and control once after the contract is frozen; a mismatch is diagnosed and reported at this checkpoint, never resolved by changing the prediction or the construction contract.",
+  "title": "Pattern-1 projector construction checkpoint (p = 7, r = 6): N_psi for K2 and the digon"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "THREEFOLD-SURFACES-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "THREEFOLD-AMPLITUDE-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('Yes, let's continue on that.'), taking the recommendation of THREEFOLD-SURFACES-20261030-001: prove that the knot's exactness factor lambda(0) on a three-fold space is 5 per handle times a factor from the planar glue, and identify that factor. Scoping before activation (not evidence): from the duality of SPACE-SELECTION-20261030-001C, lambda(0) = (-1)^(n-1) A(H), where A(H) counts the 2-colourings of the space minus its corner line with that line fixed (confirmed from the law's corner relation on every space up to 22 points, including the sign -125 at 22); A is independent of the corner on all 2,652 census cores; it multiplies over tight cuts: 5 per Fano atom (either orientation), 1 per doubled square, 6 for the trisum of three cubes, and for a planar glue brace the number of perfect matchings of its contacts (less the corner) to its faces (less the corner's three), which is a Tutte matching of the dual trinity and hence Tutte's tree-trinity number (= Kalman's hypertree count; the number of spanning trees of M when the glue is the omnitruncation of a map M), as computed on 25 glue graphs. Questions: (A) prove the amplitude identity, a point lemma, the factorization over tight cuts, the brace amplitudes (5, 1, Tutte's number) and the corollaries (|lambda(0)| = 5^genus when the glue is doubled squares; in general 5 per Fano atom times Tutte's number per planar brace); (B) confirm by computation: lambda(0) from the law on gadgets, corner independence on the census, the factorization on large spaces, Tutte's number on omnitruncations and hypermaps by arborescence counts, and the trisum factor. Intuitions targeted: the law measuring the space it builds; the two/three boundary. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "THREEFOLD-AMPLITUDE-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: lambda(0) = (-1)^(n-1) 5^(Fano atoms) times Tutte's tree-trinity number per planar glue piece (times non-planar glue amplitudes); every non-colourable cubic system has one amplitude, shared with its transpose; recommendation Continue: the knot's spin structure (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) lambda(0) is proved to factor over tight cuts with the brace factors identified (or a counterexample found); (ii) the planar glue factor is identified with a classical invariant; (iii) the computations confirm the formula; (iv) the decision note records the recommendation.",
+  "title": "The knot's amplitude on its surface"
+}

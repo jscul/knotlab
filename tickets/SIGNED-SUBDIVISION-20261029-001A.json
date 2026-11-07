@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "INTERFERENCE-20261029-001B",
+    "SHARED-SUBDIVISION-20261029-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIGNED-SUBDIVISION-20261029-001A-P001"
+  },
+  "id": "SIGNED-SUBDIVISION-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: on the triangular-lattice torus, put a three-bit law with weights plus or minus one on its allowed tuples (support a knot) on every up triangle (S2, 34 knots) or on every triangle with one placement for up and one for down triangles (S1, 88 placement pairs, independent signs). Cut every triangle into k^2 with shared new vertices. Decide, for every rule shape and every sign pattern, whether the signed sum over fine extensions of each coarse assignment is a constant multiple of the coarse weight (exact) or has the same support (support-exact, the interference reading of allowed states), at scale 2 on coarse tori of side 2, 3 and 4 and at scale 3 on coarse tori of side 2 and 3, by exact modular arithmetic; characterize the survivors (affine support, the signs as a quadratic form). Nearest known result: SHARED-SUBDIVISION-20261029-001A (counted weights: 22 of 122 rules exact at scale 2, 6 at scale 3, all affine); INTERFERENCE-20261029-001B (signed laws survive native coarse-graining, not shared subdivision); stabilizer states (quadratic phases on affine supports). Classification: no overlap found (candidate local delta).",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIGNED-SUBDIVISION-20261029-001"
+  },
+  "parent": "SIGNED-SUBDIVISION-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by SIGNED-SUBDIVISION-20261029-001A-P001 (V1, exact computation on 944 gauge orbits): weights plus or minus one create no new exact or support-exact shape under shared subdivision; at scale 2 every sign pattern of the 22 counted-exact shapes keeps its allowed states but only 28 of 80 orbits keep their weights (the unsigned law always); at scale 3 six of eight orbits of each twisted not-all-equal pair are exact; the planned 'every sign pattern stays exact' is refuted.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Signed laws under shared subdivision: the plus-minus-one census"
+}

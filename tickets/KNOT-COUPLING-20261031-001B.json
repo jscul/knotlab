@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261031-001",
+    "KNOT-COUPLING-20261031-001A",
+    "PLAIN-COUNT-20261031-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-COUPLING-20261031-001B-P001"
+  },
+  "id": "KNOT-COUPLING-20261031-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof. Theorem: at every coupling u where some atom has alpha + beta != 0 and rho^2 of infinite multiplicative order, computing Z(H; u) for connected non-2-colourable cubic triple systems H is #P-hard under Turing reductions. Reduction from Theorem 4 of PLAIN-COUNT-20261031-001A: take a Pfaffian signing of the source, put odd atom chains on its negated incidences and even chains elsewhere (every such system is a knot's space by ticket A), and recover the source's colouring count by bivariate interpolation. Corollaries: every real u outside {-1/3, 0, 1, -1} (using a second atom at the Fano atom's accidental points); the same with one line deleted (deficiency one), where u = -1/3 is polynomial by Theorem 1 of the note; the tractable side (u = 0 trivial, u = 1 linear algebra over GF(2), u = -1 quadratic phases, u = -1/3 zero). End-to-end check: recover the colouring counts of small plain Pfaffian systems from Z of decorated knot's spaces, computed by an independent elimination counter, at u = 1/4 and at a non-real u.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-COUPLING-20261031-001"
+  },
+  "parent": "KNOT-COUPLING-20261031-001",
+  "schema_version": 1,
+  "status": "Proved by KNOT-COUPLING-20261031-001B-P001: counting on the knot's spaces (non-2-colourable cubic triple systems) with weight lam per monochromatic line is #P-hard at every real lam outside {0, 1, -1, -3}, and wherever some atom has a finite nonzero ratio of infinite order (chains of atoms on a Pfaffian negation set reduce the hard Pfaffian systems of PLAIN-COUNT A to knot's spaces; bivariate interpolation); polynomial at lam = 0, 1, -1, oo, -3 (dimer: (-2)^n |det|); same with one line deleted except lam = -3 (open); end to end on three sources (one non-planar), four couplings (one complex), two atoms, and deficiency one",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Away from the knot's law, counting on the knot's spaces is #P-hard"
+}

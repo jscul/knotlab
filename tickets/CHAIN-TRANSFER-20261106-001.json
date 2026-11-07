@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PENDANT-LINE-20261106-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "CHAIN-TRANSFER-20261106-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue.', approving PENDANT-LINE-20261106-001's recommendation): prove the touching rule at every distance in Fano trees, starting from the two-round rule: show that an atom between a removal and the gluing line passes along only finitely much, or find an inductive step from three atoms to four checked on all four-atom gluings; then state what the result decides for reading the handle tree from creation, the source rule included. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CHAIN-TRANSFER-20261106-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-06: successful. The touching rule holds at every distance in Fano trees: a chain carries one of 47 profiles from cut to cut (none new after three atoms), every profile leaves the ports free, and the receiving atom alone decides creation (12,894 of 12,894 verdicts). BRACE-TREE's source rule holds on every Fano tree of at most five atoms but fails at six (exact creation maps confirm it). A short rule replaces it: twins (lines creating at each other and at the same other lines) are the atoms, and receivers' footprints give every cut with its direction, in every Fano tree whose atoms have at most four cuts. Through plane glue the rule does not extend as stated (computed). Next: reading through plane glue (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the touching rule is proved at every distance, refuted at a first distance, or reduced to a finite check that is then run; and when its consequences for reading the handle tree are stated with their exact proof status.",
+  "title": "The touching rule at every distance"
+}

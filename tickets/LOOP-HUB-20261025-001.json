@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "LOOP-HUB-20261025-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "SOFT-HUB-20261024-001 proved that tree gadgets of the six open knots satisfy the arm inequality F(u)F(u-bar) <= s_u + F(u + e_i)F(u-bar) + F(u)F(u-bar + e_i), hence hub ratio at most 3, and left gadgets with cycles as a conjecture after an explicit collision of the rerouting map. Decide that conjecture: search adversarially for violations on gadgets with loops, and attempt a proof. Hypothesis under test: the inequality holds for every gadget, so native emergence cannot imitate a hub even approximately; any proof must be global, because the natural strengthenings (per partner solution, per image pattern, one-sided path flips) fail. Nearest known work: McQuillan's winding, Jerrum and Sinclair's canonical paths, Weitz's self-avoiding walk trees. Standalone value: whether emergence without reuse can copy a bit to three places.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LOOP-HUB-20261025-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-25: hubs with loops. The arm inequality, and with it hub ratio at most 3, survived adversarial search on gadgets with loops up to 40 knots (no violation, equality common), and both of its halves held on every small gadget. It is not proved: rerouting is injective for each fixed difference pattern, but explicit two- and three-knot gadgets break every local strengthening, so a proof must be global. Next: full pivot to twists in three dimensions (2/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "",
+  "title": "Hubs with loops"
+}

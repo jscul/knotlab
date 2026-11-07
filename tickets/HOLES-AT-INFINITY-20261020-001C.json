@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "Theorems 1, 2 and 5 and Propositions 3 and 4 are proved in prose; check.py verifies the linear classification on the Tseitin and Ledrappier grids, the triangle knot, two-literal triples, rigid legs, the implication chain, colouring patches, the frozen plane and the ladder's circle, with six controls rejected.",
+  "completion_gate": "",
+  "dependencies": [
+    "HOLES-AT-INFINITY-20261020-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HOLES-AT-INFINITY-20261020-001C-P001"
+  },
+  "id": "HOLES-AT-INFINITY-20261020-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "For a locally finite system of finite constraints over finite domains, call a function of finitely many variables rigid when solutions differing in finitely many variables agree on it. Prove: the rigid functions form a Boolean algebra whose Stone space (the ends of the system) is a quotient of the solution space; for Tseitin systems it is the space of end-flux measures of B; every relation among finitely many variables forms at a finite stage; no three variables of a 2-CNF system form a K1-K3 knot; a dense class of the finite-change relation makes the ends a point. Separate rigid readable distinctions from rigid unreadable trends (invariant but not continuous): the switch of an implication chain and the tilt of a 3-colouring of the square grid, whose classes are dense.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HOLES-AT-INFINITY-20261020-001"
+  },
+  "parent": "HOLES-AT-INFINITY-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by HOLES-AT-INFINITY-20261020-001C-P001 (prose with checks): the readable invariants of the finite-change relation of a locally finite constraint system form a Boolean algebra whose Stone space (the system's ends) is a quotient of its solutions; for GF(2)-linear systems the ends are the solutions modulo the closure of the finitely supported homogeneous solutions and every open parity is loop-supplied or end-supplied; on the same grid Tseitin's law has only loop-supplied openness while Ledrappier's law has no finite loop at all, so every triangle is a parity knot whose openness is all supplied by ends; relations among finitely many variables form at finite stages, rigidity does not; no two-literal system has a knot among its variables; trends that no readable function sees separate solutions of implication chains, grid 3-colourings (height slope; flat class dense, plane frozen) and the one-way ladder (a circle through the end).",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if a classification, knot verdict, patch or freezing check fails on a declared instance.",
+  "title": "Proof: the ends of a constraint system; things at infinity versus trends"
+}

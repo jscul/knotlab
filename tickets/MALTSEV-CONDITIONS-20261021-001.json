@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves the claims it makes about K4, the shadow K6 and the restriction lemmas; every census case agrees with the predictions or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "MATROID-CONVERSE-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "MALTSEV-CONDITIONS-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after MATROID-CONVERSE-20261021-001, which recommended deciding whether laws that compose like cycles satisfy the classical Mal'tsev conditions: congruence n-permutability (Hagemann-Mitschke terms) and congruence modularity (Day or Gumm terms). Scoping found that the lift K4 is 3-permutable without a Mal'tsev operation, while the shadow K6 = (x+y+z=0 over Z3) x (not exactly two ones) restricts, fibre by fibre, to the clone of conjunctions and constants, so it is neither modular nor n-permutable, although it composes like cycles. A (exploratory census): Hagemann-Mitschke searches for K4 and the non-constant block removals of the lift; exhaustive Hagemann-Mitschke and Day chains in the two-element clones those laws restrict to; a polymorphism that is Mal'tsev modulo the tops for every tested law that composes like cycles; the eight Boolean dressings of the shadow; controls. B proves that K4 is 3-permutable, a restriction lemma for shadows and congruence classes, that K6 is neither modular nor n-permutable, that composing like cycles is incomparable with these conditions, that every known law composing like cycles is Mal'tsev on its tops, and states the conjecture that this is forced.",
+  "ownership": {
+    "root": true,
+    "scope_id": "MALTSEV-CONDITIONS-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. Composing like cycles is not a classical Mal'tsev condition: the lift K4 is congruence 3-permutable and modular (explicit Hagemann-Mitschke and Gumm terms) without a Mal'tsev polymorphism, while the shadow K6 composes like cycles yet is neither congruence modular nor n-permutable for any n (a restriction lemma sends its linear identities to a fibre clone of conjunctions and constants), and Z6 is Mal'tsev but fails. So the top lemma cannot go through modularity. What the examples share is a polymorphism Mal'tsev modulo the tops, proved for difference laws, their lifts, and their shadows with pp-definable equality of first components, and found by search for L-(2,2,3) and L-(2,3,3). Census A's control text wrongly called x+y+z=0 over Z2xZ2 failing; alone it composes like cycles. Open: Conjecture 6, every law that composes like cycles is Mal'tsev on its tops. Next (owner's decision): a census of the closest laws outside the proved families, then a proof attempt through rectangularity modulo the tops (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if a law that composes like cycles is found with no polymorphism Mal'tsev modulo its tops, which would refute the conjecture and become the subject.",
+  "title": "Mal'tsev conditions of laws whose knots compose like cycles"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "ODD-LOOP-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOOP-SHIELD-20261023-001B-E001",
+    "contract_path": "experiments/LOOP-SHIELD-20261023-001B/LOOP-SHIELD-20261023-001B-E001_three_tori/contract.json"
+  },
+  "id": "LOOP-SHIELD-20261023-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Confirmatory Monte Carlo on thin 3-tori (two layers thick) and the cubic 3 x 3 x 3 torus, with the exact 2 x 2 x 2 count: for each class with lone odd lines, do the four twists odd on it give different probabilities, as predicted where a loop cannot separate and no wall exists?",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOOP-SHIELD-20261023-001"
+  },
+  "parent": "LOOP-SHIELD-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: supported by LOOP-SHIELD-20261023-001B-E001 (confirmatory Monte Carlo, frozen contract, 8 rows, 3475 s within the 5400 s budget). Controls pass: totals, the swap-invariance test, the untwisted sector, and every comparison forced by a symmetry of the box, within a class (z = 0.69 and 0.54 on the square thin tori) or between classes (max |z| 2.39). On thin 3-tori two layers thick, all 28 comparisons between twists odd on a decision-bearing class that no symmetry relates differ by more than 5 standard errors (smallest 6.9): no twist is shielded where a loop cannot separate. For the vertical class the four twists give 41493, 77432, 49165, 91283 lone loops on 3 x 2 x 2 (1e9 samples) and 8563, 9640, 9566, 10539 on 4 x 4 x 2 (5e8); the smallest differences are across the smaller slice, where a loop's open star can occasionally fill a slice. Secondary: on the cubic 3 x 3 x 3 torus (1.5e9 samples, about 5300 lone loops per class) all 15 unrelated comparisons also differ (|z| 7.4 to 19.6), while symmetric pairs agree. Lone loops are absent on 2 x 2 x 2. The independent checker reproduces the 3 x 3 torus row from TWIST-RELATIONS-20261022-001A-P001 and the 3 x 2 x 2 slice by its own classification.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: thin and cubic 3-tori"
+}

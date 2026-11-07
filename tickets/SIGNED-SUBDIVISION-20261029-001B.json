@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SIGNED-SUBDIVISION-20261029-001A",
+    "SHARED-SUBDIVISION-20261029-001A",
+    "SHARED-SUBDIVISION-20261029-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIGNED-SUBDIVISION-20261029-001B-P001"
+  },
+  "id": "SIGNED-SUBDIVISION-20261029-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: the 122 rule shapes of SHARED-SUBDIVISION-20261029-001A with arbitrary nonzero real weights on the knot's tuples, under shared subdivision at scale 2 and 3; exactness as in SIGNED-SUBDIVISION-20261029-001A (F = c W on the tested coarse tori), support-exactness as the interference reading. Prove: (1) positivity: with positive weights F and W have the supports of the counted rule, so only the counted support-exact shapes (22 at scale 2, 6 at scale 3) can be exact; (2) a sign-parity obstruction: when every fine extension of a coarse-forbidden assignment uses each tuple the same number of times mod 2, F is nonzero there for every real weighting; census of the shapes it excludes (scale 2: coarse sides 2 and 3; scale 3: side 2), of what the per-sign-class refinement adds, and of the shapes left open; (3) the real exact weightings of the 22 shapes with affine solution sets, in a gauge slice over every sign class, at scale 2 on coarse sides 2 to 6 and at scale 3 on sides 2 to 4, using the explicit solution sets of SHARED-SUBDIVISION-20261029-001B checked against exact counts; (4) exact algebra for the one-parameter cyclic families (parity, not-all-equal) and for the symmetric slices (weights constant on Hamming classes) of the open symmetric atoms on the coarse 2-torus. The real-weight search over the shapes left open moves to SIGNED-SUBDIVISION-20261029-001C (an experiment), because a search cannot discharge a theorem. Nearest known result: SHARED-SUBDIVISION-20261029-001A and B (counted); SIGNED-SUBDIVISION-20261029-001A (signs); positivity of transfer matrices; stabilizer (quadratic-phase) states; exact decimation in two dimensions (rare). Classification: no overlap found (candidate local delta).",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIGNED-SUBDIVISION-20261029-001"
+  },
+  "parent": "SIGNED-SUBDIVISION-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by SIGNED-SUBDIVISION-20261029-001B-P001 (V1, exact computation): with real weights, positive weights add nothing (counted supports); a sign-parity obstruction excludes 54 of the 100 non-affine shapes at scale 2 and 34 at scale 3 for every real weighting; on the 22 affine shapes the exact real weightings are the gauge images of the exact plus-minus-one classes (scale 2 sides 2-6, scale 3 sides 2-4), with spurious exact weights on smaller tori (2^(1/9), golden ratio, reciprocal tribonacci) removed by larger ones; open: 46 dense shapes at scale 2, 82 at scale 3 (ticket C).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Real weights under shared subdivision"
+}

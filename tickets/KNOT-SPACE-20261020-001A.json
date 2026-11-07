@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen exploratory census runs within budget; the independent check recomputes allowed states, readings, spheres, twists, non-binary circuits and local-law verdicts with its own methods.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-CIRCUITS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-SPACE-20261020-001A-E001"
+  },
+  "id": "KNOT-SPACE-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory code-analysis census. From allowed states only (a solution coset, never the presentation's graph): compute the knot matroid; take as vertices the cocircuits whose deletion leaves a connected matroid; join two vertices by each variable they share. Roster: random 3-connected graphs, wheels, complete graphs, prisms and the Petersen graph, for gauge and Tseitin laws presented through random invertible and redundant recombinations of their constraints, over GF(2), Z3 (gauge) and S3 (gauge); 3-connected planar graphs (polyhedra, random), recovering faces as the circuits whose contraction leaves a connected matroid and checking each edge lies in two faces and V - E + F = 2; 2-connected graphs with a 2-separation and their Whitney flips; local laws not written on a graph (random binary laws with every variable in three constraints, and translation-invariant laws on small tori including Ledrappier's), testing whether the knot matroid is graphic or cographic. Predictions: exact recovery on every 3-connected graph; identical allowed states for a graph and its flips; spheres exactly for the planar ones; graphic or cographic knot matroids for at most a few percent of the local laws not written on a graph. An independent checker recomputes every matroid by its own linear algebra and re-verifies every recovery and test.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-SPACE-20261020-001"
+  },
+  "parent": "KNOT-SPACE-20261020-001",
+  "schema_version": 1,
+  "status": "Obstructed on S3 and S5 by census design; S1, S2 and S4 hold (KNOT-SPACE-20261020-001A-E001, exploratory; the independent check recomputed allowed states from vertex potentials, every reading, sphere, twist, non-binary circuit set and local-law verdict). From allowed states alone, all 39 three-connected roster graphs were recovered exactly (vertex stars) from both their gauge and their Tseitin laws under three scrambled presentations each (S1); four Whitney twists left the allowed states identical while changing the vertex stars (S2); gauge laws over Z3 and S3 have the cycles as circuits (S4). S3 failed because the producer labelled every random cubic graph non-planar without testing: the dual reading succeeded on 21 of 21 labelled-planar graphs, failed on all 12 genuinely non-planar ones, and succeeded on 6 random cubic graphs that a rotation-system search shows are planar. S5 failed because its design was degenerate: none of the 120 random laws with every variable in three constraints of size 3 or 4 had a 3-connected knot matroid (too few solutions), so the obstruction test was vacuous, and Ledrappier's law was trivial on the 4x4 torus and graphic only degenerately (rank 2, not 3-connected) on the 3x3 torus. The corrected tests run as ticket KNOT-SPACE-20261020-001C. Controls held: reading from all cocircuits fails, twists keep allowed states, rows of a scrambled presentation are not vertices.",
+  "status_class": "obstructed",
+  "stop_rule": "Stop after the declared roster; stop early on a solver or control failure.",
+  "title": "Census: graphs, spheres and flips read from knot matroids"
+}

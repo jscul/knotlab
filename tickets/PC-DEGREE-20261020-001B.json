@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The four claims are proved in prose, with executable checks of the closure model, the geometric lemmas and the carving construction; the lower bound is conditional only on the cited duality theorem.",
+  "completion_gate": "",
+  "dependencies": [
+    "TSEITIN-NS-DEGREE-NOTE-20261020-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PC-DEGREE-20261020-001B-P001"
+  },
+  "id": "PC-DEGREE-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) the reduced PC closure of a binomial Tseitin system is the signed relation closure (translations within degree, transitivity); (2) a tangle of order 2d+1 of the cut function forbids a degree-d refutation, so with Robertson-Seymour duality PC >= ceil(cvw/2); (3) a carving of width w gives a refutation of degree floor(w/2)+1, since relations below 2d are mobile; (4) the standard encodings and conventions, within one. Executable checks of each construction on declared instances.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PC-DEGREE-20261020-001"
+  },
+  "parent": "PC-DEGREE-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by PC-DEGREE-20261020-001B-P001 (prose; lower bound uses the cited tangle duality): for a connected graph with an odd charge, over any field of characteristic other than 2, the reduced polynomial calculus degree of the balanced binomial Tseitin system lies between ceil(cvw/2) and floor(cvw/2) + 1 (exact for odd carving width); the standard binomial and clause encodings have reduced degree max(maxdegree, that), and the standard convention adds at most one. Method: the PC closure of a binomial system is a closure of signed relations labelled by vertex sets; a tangle of order 2d+1 keeps every label on its small side; a carving moves relations at half their cut. Executable checks on declared instances; the census agrees on 1,253 graphs.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if any step fails on a declared instance.",
+  "title": "Proof: polynomial calculus degree of Tseitin is half the carving width, up to one"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FACE-CLAIM-20261103-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "STRIP-RELAY-20261103-001A-P001"
+  },
+  "id": "STRIP-RELAY-20261103-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof and computation. (1) The heights lemma: given the port class, the merged face's single skip lies on a known arc, so the ports' heights are fixed; the heights consistent with the class are closed under rounded midpoints, so a point is frozen exactly when its height difference to the ports cannot vary. (2) The reduction lemma: across a 3-edge cut, a side holding neither the attachment point nor the gluing line acts as the point or line it replaced, so collapsing it leaves the transfer and creation unchanged; the faces-around-the-point law then holds in the reduced space, which explains the junction counterexample of FACE-CLAIM-20261103-001C. Check both on ladders, grids, grown spaces, tubes and ladder arms spliced onto grids.",
+  "ownership": {
+    "root": false,
+    "scope_id": "STRIP-RELAY-20261103-001"
+  },
+  "parent": "STRIP-RELAY-20261103-001",
+  "schema_version": 1,
+  "status": "Proved by STRIP-RELAY-20261103-001A-P001: the port class fixes the ports' heights (the merged face's skip lies on a known arc), and heights with fixed port values are closed under rounded midpoints, so a port pattern freezes exactly the points whose height difference to the ports cannot vary (488 of 488 frozen cases). Across a 3-edge cut, a side holding neither the attachment point nor the gluing line acts as the vertex it lost, so collapsing it leaves the transfer and creation unchanged (253,536 pipeline cases; 1,080 exact cases); in the reduced space every creating far line lies on a face around the point, which explains the junction counterexample of FACE-CLAIM-20261103-001C",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Heights and reduction"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves the statements it makes about single relations and difference laws; every census case agrees with the predictions or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "DIAGONAL-LEMMA-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "MATROID-CONVERSE-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after DIAGONAL-LEMMA-20261021-001, which showed that composing knots like cycles sees only which sets are constrained. The matroid-level converse asks whether every law whose knots compose like cycles has, system by system, the constrained sets of a difference law. A literature scan (Seymour 1992: the Vamos matroid is not a secret-sharing matroid; Matus 1999 on partition representations; Simonis-Ashikhmin 1998 on almost affine codes; Abbe-Spirkl on entropic matroids) concerns uniform representations, while constrained sets relative to ranges are weaker: every downset is the free-set family of one relation. A (exploratory census): the Vamos matroid as the free sets of a support relation and of a union of two GF(7) codes, and failures in their laws; the top-quotient prediction for random laws of subgroups over Z4, Z9, S3, D5 and AGL(1,5); and single-tuple perturbations of x+y+z=0 over Z3 and of its lift. B proves universality for single relations, a top lemma for Mal'tsev algebras with unique maximal congruences, and that laws of groups or fields whose knots compose like cycles carry only direct sums of matroids representable over finite fields, so the Vamos matroid never appears in them or in their shadows, lifts and disjoint unions; it states the converse that remains open.",
+  "ownership": {
+    "root": true,
+    "scope_id": "MATROID-CONVERSE-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. Single relations carry any matroid as free sets, the Vamos matroid included (support relation; union of two GF(7) codes), but their laws fail. A top lemma (subdirect products of Mal'tsev algebras with unique maximal congruences are full iff their image in the simple tops is full) shows that group laws composing like cycles carry only direct sums of one GF(p)-representable matroid per prime plus parallel classes, and field laws only F-representable ones; so the Vamos, non-Pappus and Fano/non-Fano 2-sum matroids never occur there or in shadows, lifts and disjoint unions. Every law composing like cycles has tops (unique maximal pp-definable equivalences) without a difference operation. The census supported every prediction: 750 group systems matched their tops, and the 8 surviving perturbations near Z3 were dressed. Open: the converse for laws without a difference operation. Census A (supported), proof B (proved), ledger Z. Recommendation: Continue with Mal'tsev conditions of such laws (2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if a law found to compose like cycles carries a free-set matroid outside direct sums of finite-field-representable matroids, which would refute the converse and become the subject.",
+  "title": "The matroid-level converse: which matroids can a law whose knots compose like cycles carry?"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "WAVE-UNIQUENESS-20261029-001Z",
+    "SIMPLEX-GASKETS-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SPACE-SELECTION-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('Yes, let's continue'), taking the recommendation of WAVE-UNIQUENESS-20261029-001. The previous epics fixed the Sierpinski gluing and classified the laws it admits; this epic fixes the law (the standing wave, and signed not-all-equal in particular) and asks which gluings it admits. Setting: a gadget is a finite set of triangles (vertices in roles a, b, c) glued at shared vertices, with corners A, B, C each in exactly one triangle, in roles a, b, c respectively; inner vertices lie in at least two triangles; the gadget is connected. Its corner relation sums every inner vertex; the law is exact on it when the corner relation is a nonzero multiple of the law; an exact gadget builds a tower by substituting itself into its own triangles. Scoping (not evidence): the flip parity of the sector expansion is odd for every such gadget; exactness reduces to the vanishing of the six corner sums with mixed corner sectors; locking frames suffice but are not necessary, since four-triangle gadgets exact by cancellation exist. Questions: (A) prove the criterion and its sufficient mechanisms, and whether a knot can build towers of every growth exponent; (B) classify all gadgets with at most five triangles. Intuitions targeted: space from logic without a drawn space (the law selecting its gluings); everything relational. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SPACE-SELECTION-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-30: the harmony selects gluings by interference (six signed sums; locking plus odd parity refuted), with no single space and no selected growth exponent; census of all gadgets to five triangles; nonnegative not-all-equal laws need seven triangles (sharp), the signed knot three; three-fold contacts are knots on phases and their seven-triangle spaces are the Fano gadgets. Ticket A's Theorem 5 corrected by C. Recommendation: Continue with the knot's three-fold spaces (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) the exactness criterion for gadgets is proved with its sufficient mechanisms and the growth question is settled; (ii) every gadget with at most five triangles is classified for generic angles and for signed not-all-equal; (iii) the decision note records the recommendation. Record negative results.",
+  "title": "Which spaces the harmony builds"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs the frozen exploratory contract with an independent check; B proves the tree statements with exact certificates for the thresholds; finite measurements agree with the tree values within the declared tolerance or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "FREEZING-KNOTS-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open questions 1 and 4 of docs/KNOT_INTUITION.md under the source-aware reading adopted on 2026-10-20 (docs/FOUNDATIONAL_THESIS.md, 'Source condition for infinite systems'): do star knots stop being native at the freezing threshold of random colourings? A star knot is the relation 'not all q colours used' on q neighbours of a vertex; it is native at a colouring when each of those neighbours can be recoloured by a change of finitely many vertices. Background, not re-proved: frozen variables and the frozen-field (hard-field) recursion for colourings of random regular graphs (Zdeborova-Krzakala 2007; Semerjian 2008), freezing thresholds (Molloy), and local convergence of planted models to the broadcast colouring of the regular tree. Standalone value: the knot reading of freezing. A (exploratory experiment) measures, at planted q-colourings of random d-regular graphs, the fractions of vertices and of star knots that a change inside a radius-L ball can recolour, against exact tree values, for q = 3 (d = 3..7) and q = 4 (d = 9..11), and at small n whether the star relation over all colourings of the graph is still a K1-K3 knot. B proves on the d-regular tree with the broadcast colouring the frozen-branch recursion, that the star relation is a K1-K3 knot at every degree, an exact formula for the probability that it is native, which is 1 exactly when the branch-freezing probability is 0, and the thresholds d_f(3) = 6, d_f(4) = 10, d_f(5) = 15 with exact certificates.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FREEZING-KNOTS-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: star knots stop being native exactly at the freezing threshold. Proved on the d-regular tree with the broadcast colouring (local limit of planted colourings): the star relation 'not all q colours used' is a K1-K3 knot at every degree, and under the source-aware reading it is native with probability (1 - p*)^q (1 - zeta) + (1 - mu)^q zeta, which is 1 below the freezing threshold (d = 6, 10, 15 for q = 3, 4, 5; certified exactly) and below 0.0011, 0.00046, 0.00003 at and beyond it, a discontinuous drop. Exploratory experiment: planted random regular graphs match the tree's frozen and native fractions at every measured radius; in small graphs the source-blind relation collapses with the colouring count from degree 5. As a threshold, native-knot density restates freezing (the stop condition). Recommendation: research directions (space from native moves, question 9; or composition of native knots, question 3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if planted graphs disagree with the tree values beyond tolerance without a finite-size explanation, or if prior work states the star-nativity result. Per the 2026-10-20 recommendation, stop this line if native-knot density merely restates frozen-variable density.",
+  "title": "Native knots at the freezing threshold of random colourings"
+}

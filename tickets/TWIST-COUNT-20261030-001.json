@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SEYMOUR-COUNT-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "TWIST-COUNT-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('Yes, please continue.'), taking the recommendation of SEYMOUR-COUNT-20261030-001: keep a three-fold space's incidence graph (a cubic bipartite Pfaffian graph) and change its signs away from the knot's own (Pfaffian) class, so that the system becomes colourable; is the number of colourings still polynomial for every sign class (the ease lives in the graph), or #P-hard for some family (the knot's own impossibility is the boundary)? One sign flip changes nothing (the count equals the one-line-removed count). Scoping before activation (not evidence): in the Hadamard basis every branch's boundary tensor at a trisum square is even and a planar branch gives a matchgate signature (4-ary matchgate identity in cyclic order), for every signing; for a branch that is not twisted (some square pattern makes it Pfaffian) the junction acts on the other closed branch's tensor as a similitude of the matchgate identity with multiplier +-256 (alpha^2 + alpha beta + beta^2), checked symbolically; two twisted closed branches at one square give junctions that violate the identity (cube, 6- and 8-prism pages); no junction of two realizable twisted pages (cube, prisms, truncated octahedron, Omni(K2,3); about 23 million pairs and sign choices) is crossover-type with a nonzero double entry, though generic matchgate pages allow it. Questions: (A) prove the similitude and that counting is polynomial for every sign class with no square whose three branches are all twisted, and that branched junctions leave the matchgate class; (B) decide whether branched twists can simulate a crossover and so make counting #P-hard. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TWIST-COUNT-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: counting stays polynomial under every sign class whose twists do not branch (the knot's junction is a similitude of the matchgate identity at the knot's angle, A); a junction never crosses wires sharply but can softly (B); hardness of branched twists open. Next: soft crossings to hardness (3/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when A is proved and confirmed against direct counts, B is decided (a hardness theorem, or a proved obstruction to its route), and the decision note records the recommendation.",
+  "title": "Counting one twist off the bound"
+}

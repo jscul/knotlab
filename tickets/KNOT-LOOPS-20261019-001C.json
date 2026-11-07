@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-LOOPS-20261019-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-LOOPS-20261019-001C-E001"
+  },
+  "id": "KNOT-LOOPS-20261019-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory exact computation beyond simple rings. (a) Networks: place a three-variable knot link on every edge of small graphs with several loops (K4, K_{2,3}, the triangular prism, the 3x3 grid, K_{3,3}), with witnesses at the vertices; forget the witnesses and compare the composite's bonds with the graph's cycles. Does any link that is not parity remember a loop there? (b) Many-valued knots: for three-valued links whose tables are permutations, compare an abelian family (w' = w + m mod 3) with one that does not commute (w' = t_m(w), t_m the three transpositions). Measure the bits each ring keeps and whether reordering its links changes the composite. (c) Sampled three-valued knots of every kind: measure the bits remembered by rings as their length grows, to see whether only all-permutation links keep a constant amount.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-LOOPS-20261019-001"
+  },
+  "parent": "KNOT-LOOPS-20261019-001",
+  "schema_version": 1,
+  "status": "Closed: supported by KNOT-LOOPS-20261019-001C-E001 (exploratory; controls pass; independent recomputation agrees). Networks: on the 4-cycle, K4, K_{2,3}, the prism, the 3x3 grid and K_{3,3}, parity remembers exactly one bit per independent loop (1, 3, 2, 4, 4, 4); the holonomy rule is exact on patterns whose transfers are all permutations. Other knots remember at most 0.85 bits and only on K4, the prism and the grid; post hoc, part of that memory is not explained by any odd cycle of permutation edges (2-SAT-style implication frustration, absent where edges cannot chain into directed paths). Many-valued: Z3 links keep log2 3 bits at every length and ignore order; S3 links keep log2 3/2 bits and depend on the order of the loop from length 3; transposition links keep log2 3 bits at even lengths, none at odd. Sampled three-valued knots without permutation transfers fall below 0.001 bits by length 7.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Beyond rings: networks and many-valued knots"
+}

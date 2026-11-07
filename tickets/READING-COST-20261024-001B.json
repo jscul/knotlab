@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DIRECTIONAL-RIGIDITY-20261023-001A",
+    "WALLS-WITH-CHOICES-20261024-001A",
+    "WALLS-WITH-CHOICES-20261024-001D"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "READING-COST-20261024-001B-E001",
+    "contract_path": "experiments/READING-COST-20261024-001B/READING-COST-20261024-001B-E001_sheets/contract.json"
+  },
+  "id": "READING-COST-20261024-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "For the four honeycomb contacts with a free place, with the four directed ones as controls, measure on the 3 x 4, 4 x 4 and 4 x 5 tori how many sheets a cyclic cover needs before an odd class with an assignment shows one, and how often simple cycles misjudge a class; test whether these grow with the torus.",
+  "ownership": {
+    "root": false,
+    "scope_id": "READING-COST-20261024-001"
+  },
+  "parent": "READING-COST-20261024-001",
+  "schema_version": 1,
+  "status": "Closed: supported under its frozen rule. READING-COST-20261024-001B-E001 sampled 2.04 million configurations on 4 x 4 and 4 x 5 (1.68 million of the honeycomb placements) and decided every class that simple cycles call contradicting with PySAT; no case undetermined. Directed placements with a free place: 0 misjudged among 1.85 million such verdicts (theorem-predicted control). Honeycomb placements with a free place: misjudged shares 0.51 to 0.57% on 4 x 4 (3 x 4: 0.229%) and 0.32% pooled on 4 x 5 (27 of 8422; two placements below the 3 x 4 share individually), misjudged classes needing 2 to 10 cover sheets. All controls passed; 4859 s of 7200 s; summarize() fixed for absent zero counts after the run (run_notes.json).",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Cover sheets for walls with choices"
+}

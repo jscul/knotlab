@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261031-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-COUPLING-20261031-001A-P001"
+  },
+  "id": "KNOT-COUPLING-20261031-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof. For a cubic triple system H and an incidence e0 = (p0, l0), the atom H<e0> replaces an incidence (p, l) of another system by p in l0 and p0 in l. Show: its edge function is [[alpha, beta], [beta, alpha]] with alpha = Z(H)/2 and beta = Z(H with e0 negated)/2; in the even-subgraph (Hadamard) form a chain of k atoms multiplies the paths through the edge by rho^k, rho = (alpha - beta)/(alpha + beta), and scales the rest by (alpha + beta)^k. At the knot's coupling u = -1/3 a non-colourable H gives alpha = 0 and beta != 0, so an atom is an exact negation, and a decorated system is non-colourable iff the signing given by its odd chains is Pfaffian (the note's dictionary). Compute rho(u) exactly for the Fano atom and every incidence orbit of the two 13-point Fano splices; their values at u in {-1/3, 0, 1, -1}; the real points where alpha, beta or alpha +- beta vanish; and whether the ratios are multiplicatively independent. Discriminator: rho is not constant (else the route fails).",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-COUPLING-20261031-001"
+  },
+  "parent": "KNOT-COUPLING-20261031-001",
+  "schema_version": 1,
+  "status": "Proved by KNOT-COUPLING-20261031-001A-P001: a knot's space minus one incidence (an atom) acts on an edge by [[alpha, beta], [beta, alpha]] (alpha = M(H)/2, beta = M(H^e0)/2); chains multiply through-paths by rho^k; at the knot's law lam = 0 an atom is an exact negation, so odd chains on a Pfaffian negation set give knot's spaces; exact ratios for the Fano atom and the three splice classes (rho = -1 at lam = 0, degenerate at lam = +-1, oo; rho = 2 at the dimer coupling lam = -3); real degeneracies covered; ratios independent; at lam = -3 the count is (-2)^n #PM, a determinant on knot's spaces; corrects the scan's lane B (its junctions also satisfy the identity at u = oo)",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The knot's atom on an edge"
+}

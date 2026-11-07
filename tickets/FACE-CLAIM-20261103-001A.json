@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PHASE-HALO-20261103-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FACE-CLAIM-20261103-001A-P001"
+  },
+  "id": "FACE-CLAIM-20261103-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof and computation. In the point split at the attachment point, the merged face takes one skip, on the arc opposite the port that is odd in the removed line's sense; so the point's own arc between ports a and b is barred exactly when a and b disagree, and whenever a and b agree the face opposite port c is claimed by c's line, and a barred face fixes two points of each of its lines. The claim rule: an opened handle creates at a gluing line exactly when a pair of handle points forces the line to two patterns with two points fixed and neither point alone excludes the line's claim of the face at either fixed value. Prove the reading lemma and the route direction of the claim rule, test its converse against exact creation, and prove the asymmetry: an own arc's claim at a given value comes from one port pattern, an opposite face's from two.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FACE-CLAIM-20261103-001"
+  },
+  "parent": "FACE-CLAIM-20261103-001",
+  "schema_version": 1,
+  "status": "Proved by FACE-CLAIM-20261103-001A-P001: in the point split at the attachment point, the merged face's single skip lies on the arc opposite the port that is odd relative to the all-agree pattern given by the arc constants, so the own arc between two ports is barred exactly when they disagree and, whenever they agree, the face opposite the third port is claimed by its line; barred faces fix two points of each of their lines (reading lemma). A line claims an own arc from one port pattern per value and an opposite face from at most two, which share the other two ports (claim lemma). Claim rule: a pair of handle points creates at a frozen line exactly when each of its points alone still allows the line's claim at either fixed value; the route direction is proved, the converse computed against exact creation (728 cases) and the pipeline (26,634 far lines), with no disagreement",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The reading lemma and the claim rule"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "B proves that PC and PCR refutations of Tseitin on the a x b grid over a field of characteristic other than 2 have size 2^Omega(min(a,b)), with executable checks of the structural lemmas, or records the step that fails.",
+  "completion_gate": "",
+  "dependencies": [
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "PC-SIZE-GRID-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Follows PC-DEGREE-20261020-001 (polynomial calculus degree of Tseitin is governed by carving width). Question: the size of polynomial calculus (PC) and PC with twin variables (PCR) refutations of Tseitin formulas on plain a x b grids in the 0/1 basis, over fields of characteristic other than 2. The size-degree relation of Impagliazzo, Pudlak and Sgall gives nothing here (degree ~ min(a,b), too small against the number of variables). Literature check (2026-10-20): resolution on grids is covered by bounded-depth Frege lower bounds (Hastad; Hastad and Risse); PC/PCR results on grids are for the XOR-substituted grid (Beck, Nordstrom and Tang 2013) and for space; no exponential PC/PCR size lower bound for plain grid Tseitin was found. Plan: random restrictions that delete well-separated faces keep every cut at a fifth of its size (planar duality), so the restricted formula is Tseitin on a connected grid with holes whose balanced cuts give an explicit tangle; the tangle lemma of PC-DEGREE-20261020-001B bounds its degree; constant kill probability per edge with bounded-range independence turns the degree bound into size 2^Omega(min(a,b)), tight up to the constant.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PC-SIZE-GRID-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: over any field of characteristic other than 2, every PC (0/1 basis) or PCR refutation of the Tseitin formula of the a x b grid has size 2^Omega(min(a,b)), tight up to the constant, hence resolution needs 2^Omega(min(a,b)) too (B). Method: random restrictions deleting well-separated faces keep a fifth of every cut (planar duality), so the restricted formula keeps an explicit tangle and, by the tangle lemma of PC-DEGREE-20261020-001, degree Omega(min(a,b)); constant kill probability turns degree into size. General bounded-degree graphs remain open.",
+  "status_class": "complete",
+  "stop_rule": "Stop if the bound is found already published, or if a structural lemma fails on a checked instance.",
+  "title": "Polynomial calculus size of Tseitin formulas on grids"
+}

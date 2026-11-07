@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SL23-BOUNDED-20261025-001",
+    "TRIPLE-PRODUCT-20261026-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "COPRIME-CLASS2-20261026-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "TRIPLE-PRODUCT-20261026-001 showed that UT3(F4) x| C3 is #P-hard on 3-manifolds with H1 = Z/3 because its twisted obstruction is a three-way (cubic) form whose alternating part Borromean moves steer freely, while SL(2,3) (untwisted, pairwise) is polynomial. First, an independent review of that epic's realization and hardness proofs and a last prior-art pass in TQFT phrasing. Then test the conjecture it suggests for G = N x| C_r with N a p-group of class 2 and p not dividing r: with bounded first homology, counting homomorphisms is #P-hard exactly when the commutator pairing is nonzero on two eigencharacters chi, chi' with chi, chi' and chi chi' all nontrivial, and polynomial otherwise. Standalone value: a dichotomy-type statement for bounded homology, where the literature lists solvable targets as open.",
+  "ownership": {
+    "root": true,
+    "scope_id": "COPRIME-CLASS2-20261026-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-26: coprime class-2-by-cyclic groups with bounded homology. An independent review (three fresh-context passes) found no blocking gap in the twisted-triple-product hardness; its repairs (explicit construction, corrected novelty wording, Moussard 2017 as the steering precursor) are carried out here. For G = H(F_p) x| C_r (p odd, r | p - 1) acting by (a x, b y, a b z), counting maps from 3-manifold groups with bounded first homology is polynomial when a = 1, b = 1 or ab = 1 (in general: coprime class-2 groups without a hard pair) and #P-hard otherwise, already on r-surgeries of knots and on knot groups: the eigen-triple obstruction is steered by Borromean moves and four Potts gadgets cover the coincidence patterns. Consequently Rowell's 2009 Conjecture 3.2(b) (exact polynomial counting on link groups for solvable targets) fails for these groups and for S4 unless every #P function is polynomial-time computable. Open: general class-2 groups, extension fields, approximate counting. Next: Continue as result conversion (a short note), 3/3; execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop if the review finds a gap in TRIPLE-PRODUCT-20261026-001C or D that is not repaired, or if a small group contradicts the conjectured criterion (a hard pair with a polynomial count, or no hard pair with a growing obstruction that encodes a hard count).",
+  "title": "Which coprime class-2-by-cyclic groups are hard with bounded homology?"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SIGNED-GASKETS-20261029-001Z",
+    "SIMPLEX-GASKETS-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "WAVE-UNIQUENESS-20261029-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-29 ('Yes, continue'), taking the recommendation of SIGNED-3D-20261029-001. Setting: the level-k Sierpinski gaskets SG_k of SIGNED-GASKETS-20261029-001 with copies of one three-bit law w (complex weights) on the up triangles; w is exact at level k when its corner relation is a nonzero multiple of w. Question: is reproduction at consecutive levels forced to be a standing wave? (A) For laws symmetric in the two non-base corners (six weights), classify the laws exact at levels 2 and 3, then 2 to 4, then 2 to 5, by the two-sector decomposition, Groebner bases, resultants and high-precision root isolation; (B) extend to general three-bit laws (eight weights): reduce by the symmetries of the gasket and classify the remaining branches. Scoping (not evidence): generic symmetric laws split into two sectors; level 2 forces biorthogonality; levels 2 and 3 leave the standing waves and an extra curve of degree 10; level 4 leaves 16 complex sporadic laws; level 5 only the waves, besides products and frozen laws. Intuitions targeted: everything relational (harmonies as cancelling phases); space from logic (which laws a self-similar gluing selects). No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "WAVE-UNIQUENESS-20261029-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: among knots the standing wave is forced, and four gasket levels are needed to see it. A: a law symmetric in its two non-base corners is exact at levels 2 to 5 iff it is a standing wave (any complex angle, with limits), a product, u(a)[b = c] or one of two frozen laws; levels 2-3 admit an irreducible curve of degree 10 (real points) and levels 2-4 sixteen complex laws, all failing the next level. B: general laws in the generic and rank-one strata add the implication laws e0 v y + Jv Jy e1 (one-way implication supports), which build every gasket like a chain; the only knots that persist are the rotations of signed not-all-equal; the W-type stratum is open. Next (awaiting the owner): which spaces the harmony builds (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) the laws symmetric in the non-base corners that are exact at levels 2 to 5 are classified, with the intermediate sets for levels 2-3 and 2-4 described; (ii) general three-bit laws are reduced to these or their remaining branches classified at the same levels, or a precise obstruction to doing so is recorded; (iii) the decision note records the recommendation. Record negative results.",
+  "title": "Is the standing wave forced?"
+}

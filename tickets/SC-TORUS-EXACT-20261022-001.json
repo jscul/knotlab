@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A proves the directional duality lemma and the cone theorem for untwisted and twisted sectors, with exhaustive and sampled checks; B runs a frozen confirmatory test of the half bit, the 3/4 and the sector additivity at roughly five times the earlier precision, plus a shape scan.",
+  "completion_gate": "",
+  "dependencies": [
+    "NAE-INVARIANT-20261022-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "SC-TORUS-EXACT-20261022-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved the recommended continuation of NAE-INVARIANT-20261022-001: test half a bit (P = 1/sqrt 2, twisted square tori with one odd side) and Newman, Grassberger and Ziff's 3/4 (untwisted one-direction wrapping) at five times the precision, scan other twisted shapes, and make one attempt to derive them from the duality identities. Scoping: a twisted model can be imposed with any twist on any torus, so the half bit can be measured on exact squares; P(consistent) there runs 0.7153, 0.7122, 0.7090, 0.7091 at sides 32-256. The directed homology of a random orientation is a convex cone whose polar is the dual's (proof sketch), which turns 3/4 into P(no directed horizontal winding) = 1/4; the measured joint law of positive and negative horizontal winding is not two fair coins. Across twist sectors, P(all strong components contractible) is nearly additive on rectangular tori (second difference within 0.001 at aspect 2-4, 0.002 on squares) but not on sheared ones. A proves the cone theorem and its identities; B is a frozen precision test with pre-registered candidates.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SC-TORUS-EXACT-20261022-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-22. For any orientation of a square-lattice torus, directed closed walks realize exactly the primitive periods of a closed convex cone, and the rotated dual realizes exactly those of its polar (proved; a Farkas-type duality with moderate-high folklore risk). On square tori the uniform law is polar-invariant, so the conjectured 3/4 wrapping means no directed closed walk winds horizontally with probability 1/4. A confirmatory run refutes half a bit on squares twisted along one axis: E_inf = 0.49627 +- 0.00028, so P(consistent) tends to 0.7089, not 1/sqrt 2. The previous epic's acceptance came from its raw estimator; its rows give 0.4973 +- 0.0006 when symmetrized. 3/4 survives at 0.75041 +- 0.00019 (2.2 sigma), unexplained: duality fixes meanings, not values, and 3/4 fails at finite size. Secondary: the twist sectors add up on rectangles; long twisted tori decay with beta/nu. Recommendation: Full pivot to a bounded search over the lower bound, space from a law and dynamics (interest 1/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. Stop when the precision tests are decided; a candidate that fails is recorded as such. Do not build a full theory of strongly-connected percolation here.",
+  "title": "Exact torus values of strongly-connected percolation"
+}

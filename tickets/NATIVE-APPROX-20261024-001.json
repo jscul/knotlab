@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "NATIVE-APPROX-20261024-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Exact counting of native networks is #P-hard for the 30 knots that do not see only the surface (NATIVE-COUNTING-20261024-001). Ask whether emergence is easy to approximate. Hypothesis under test: the knot axiom K2 makes every knot strictly terraced, so McQuillan's winding theorem gives a fully polynomial randomized approximation scheme for every windable knot; with exact counting for the topological knots, only the knots excluding three tuples outside the symmetric pair remain, and for them test whether hub-free gadgets can approximate a hub, which would make approximate counting hard. Nearest known work: McQuillan, approximating Holant problems by winding (2013); Huang, Lu and Zhang, canonical paths (2016); Bubley and Dyer, sink-free orientations; Dyer, Goldberg and Jerrum, the approximation trichotomy for Boolean counting problems; Sly and Sun, hardness beyond uniqueness. Standalone value: which native laws make emergence approximately countable, and the structure of the knots left open.",
+  "ownership": {
+    "root": true,
+    "scope_id": "NATIVE-APPROX-20261024-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-24: approximate counting of native emergence. K2 is McQuillan's terraced condition, and the 26 windable knots (at most two excluded tuples, or parity) have approximation schemes given his theorem, so with the four topological knots 28 of 34 are settled; 24 knots are hard to count exactly and easy to approximate. The six left open are the Fibonacci knot with one or two negated places: they escape winding, Fibonacci holography and weighted Fibonacci gates, and they freeze native trees (as do not-all-equal and parity), which refuted the predicted tree decay. Next: can native emergence simulate a hub (2/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "",
+  "title": "Approximate counting of native emergence"
+}

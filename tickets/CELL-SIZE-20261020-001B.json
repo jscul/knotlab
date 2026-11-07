@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "The cell theorem and its corollaries are proved in prose, with executable checks of the cell conditions, detour systems, retention, kill probabilities and the topological-minor transfer.",
+  "completion_gate": "",
+  "dependencies": [
+    "PC-DEGREE-20261020-001Z",
+    "PC-SIZE-GRID-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CELL-SIZE-20261020-001B-P001"
+  },
+  "id": "CELL-SIZE-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove the cell theorem (detour lemma, tangle transfer, degree via the tangle lemma, kill probabilities with bounded-range independence) and its corollaries: plane graphs with short faces pairwise sharing at most one edge, d-dimensional grids, walls, transfer to topological minors by restriction and renaming, and graphs excluding a fixed minor. Check the cell conditions, explicit detour systems and congestion, retention, kill probabilities and the transfer on declared instances.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CELL-SIZE-20261020-001"
+  },
+  "parent": "CELL-SIZE-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by CELL-SIZE-20261020-001B-P001 (prose, with cited duality and grid-minor theorems): if every edge outside a bounded exceptional set lies on a short cycle with short detours avoiding it, restrictions setting well-separated cycles keep every cut within a factor L+1 (detour lemma), the tangle survives at a 1/(L+1) fraction, and PC/PCR/resolution size of Tseitin is 2^Omega(tangle order). Corollaries: 2-connected plane graphs whose faces pairwise share at most one edge with short inner faces; d-dimensional grids 2^Omega(k^(d-1)); walls; restriction plus renaming to a wall topological minor gives 2^Omega_H(tw) for every graph excluding a fixed minor H (planar included), tight for bounded degree. Checks on declared instances pass; general graphs remain open.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if a lemma fails on a checked instance.",
+  "title": "Proof: Tseitin size from cell systems, with planar and minor-free corollaries"
+}

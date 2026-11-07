@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPACE-SELECTION-20261030-001A",
+    "SPACE-SELECTION-20261030-001C"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "THREEFOLD-SPACES-20261030-001A-P001"
+  },
+  "id": "THREEFOLD-SPACES-20261030-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: for a connected 3-uniform 3-regular hypergraph H (lines may repeat) with incidence matrix A and bipartite incidence graph B(H), prove (1) the dictionary: H is not 2-colourable iff it is minimally not 2-colourable iff A is sign-nonsingular (|det A| = per A > 0) iff every nice cycle of B(H) has length 2 mod 4 iff the 2-in 2-out digraph D(H, M) of a perfect matching M has no even directed cycle; (2) a splice calculus: nontrivial tight cuts of B(H) are 3-edge cuts whose contractions are again cubic, perfect-matching signs factorize across them, so the two pieces are sign-nonsingular up to one common twist at the contracted vertex, and untwisted non-colourable pieces act as single points or lines; (3) Fano compositions (point and line splices, towers) are not 2-colourable, so by the duality of SPACE-SELECTION-20261030-001C the knot has three-fold spaces with 7 + 6k triangles for every k, realized by substituting Fano gadgets into triangles or contacts; (4) every non-colourable H is a Fano composition provided no cubic brace has a sign-nonsingular signing with exactly one negative edge (brace case by McCuaig 2000), with this lemma proved for planar braces and the Heawood graph; (5) the premise of the recommendation (only the Fano plane) is false; (6) mixed gluings: a gluing whose contacts are all two-fold locks or three-fold knots has no locks. Nearest known result: Seymour 1974; Robertson-Seymour-Thomas 1999; McCuaig 2000; SPACE-SELECTION-20261030-001C. Classification: to be decided.",
+  "ownership": {
+    "root": false,
+    "scope_id": "THREEFOLD-SPACES-20261030-001"
+  },
+  "parent": "THREEFOLD-SPACES-20261030-001",
+  "schema_version": 1,
+  "status": "Proved by THREEFOLD-SPACES-20261030-001A-P001 (V1): dictionary (not 2-colourable = minimal = sign-nonsingular = no even dicycle), splice calculus with sign twists, Fano compositions give three-fold knot spaces with 7 + 6k triangles, the 'only Fano' premise refuted, no gadget of locks and odd three-fold contacts has a lock. Erratum: Theorem 4 (reduction to Fano compositions) is false as stated, its induction overlooks contractions that repeat a point in a line; corrected in THREEFOLD-SPACES-20261030-001C.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The knot's three-fold spaces are built from the Fano plane"
+}

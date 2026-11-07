@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "THREEFOLD-SPINSUM-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "SEYMOUR-COUNT-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('Yes, let's continue.'), taking the recommendation of THREEFOLD-SPINSUM-20261030-001: the knot's three-fold spaces are the cubic systems on Seymour's bound for minimally non-2-colourable hypergraphs; is the count of colourings with one line removed polynomial-time on every such system, including non-planar glue, and does it become hard off the bound? Literature check (2026-10-30): satisfiability is fixed-parameter tractable in maximum deficiency and minimally unsatisfiable formulas of fixed deficiency are recognizable in polynomial time (Szeider 2004; Fleischner-Kullmann-Szeider 2002); no counting result found for deficiency or for critical hypergraphs. Scoping before activation (not evidence): brace genus is unbounded (nested trisums reach genus 2), so bounded-genus Pfaffians do not suffice; but a non-colourable piece meeting a trisum square has a boundary tensor with only two numbers, its leaning split (alpha, beta), and every tested trisum satisfies a(T) = rho1 rho2 rho3 - alpha1 alpha2 alpha3 - beta1 beta2 beta3 (30 random trisums of prisms and truncated octahedra); a planar piece's split is a count of Tutte matchings with one row restricted, and children act as row weights, so a nested trisum's split is one weighted determinant (7 nested cases agree with direct counts). Questions: (A) prove the trisum law; (B) prove that the count is polynomial on every three-fold space by weighted Berman determinants over the trisum tree, implement it and confirm it. The hard side is out of scope here. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SEYMOUR-COUNT-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: the easy side holds. Trisum law (A) and polynomial counting on every three-fold space by weighted Berman determinants over Robertson-Seymour-Thomas trisum trees (B). Next: counting one twist off the bound (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the trisum law is proved, the polynomial algorithm is proved and confirmed against direct counts, and the decision note records the recommendation (the hard side included).",
+  "title": "Where counting near-critical instances becomes hard"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-3D-20261025-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIGNED-3D-20261029-001A-P001"
+  },
+  "id": "SIGNED-3D-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: in the setting of TWIST-3D-20261025-001A (ordered triangulations of closed orientable three-manifolds, one bit per edge, ordered 2-3 and 1-4 moves), let a law give each labelling of the six ordered edges of a tetrahedron a weight W_s in {-1, 0, 1}, s the tetrahedron's orientation. Prove by exhaustive search that the laws satisfying every move identity (new-side signed sum equal to lambda or mu times the old side, for every boundary labelling) are exactly: (1) up to the global sign (which sends (lambda, mu) to (-lambda, -mu)), factors (1, 1), (1, 2) or (2, 16); (2) supports equal to one of the seven counting laws of TWIST-3D-20261025-001A, the same for both orientations; (3) up to the face gauge (a sign per face labelling, which cancels between the two tetrahedra at each face), twelve classes: the seven counting laws, the twisted Dijkgraaf-Witten law (-1)^(x_01 x_12 x_23) on even cocycles, its translate on odd cocycles, and the three nontrivial twisted combinations on even-or-odd; all orientation-independent; (4) no twisted class has a member invariant under the symmetric group of the tetrahedron, so without the vertex order signs add nothing. Nearest known result: TWIST-3D-20261025-001A (counting laws); Dijkgraaf-Witten (1990) and Wakui (1992) for the twisted Z/2 state sum. Classification: to be decided after the literature check.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIGNED-3D-20261029-001"
+  },
+  "parent": "SIGNED-3D-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by SIGNED-3D-20261029-001A-P001 (V1, exhaustive SAT census): signed one-bit edge laws on ordered triangulations, weights in {-1, 0, 1}, invariant under the ordered 2-3 and 1-4 moves (mu nonzero), are up to global sign and face gauge exactly twelve: the seven counting laws, the twisted Dijkgraaf-Witten law (-1)^(x01 x12 x23) on even cocycles, its translate on odd cocycles, and three mixed twisted laws; supports are always counting supports, so interference adds a phase, never a relation; the twist needs the vertex order (no symmetric member).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Signed bit laws on ordered triangulations: one twist and nothing else"
+}

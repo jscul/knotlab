@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SL23-BOUNDED-20261025-001",
+    "UT3-INTERACT-PROBE-20261026-001",
+    "UT3-TWIST-PROBE-20261025-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "TRIPLE-PRODUCT-20261026-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "UT3(F4) x| C3 (action (w^2 x, w^2 y, w z)) has Fitting height 2. Its lifting obstruction on a closed 3-manifold M with H1(M) = Z/3 is the twisted cup product a u b in H^2(M; F4_w) (UT3-TWIST-PROBE-20261025-001, UT3-INTERACT-PROBE-20261026-001). By Poincare duality, a pair (a, b) lifts exactly when the twisted triple product T(a, b, c) = <a u b u c, [M]> vanishes for every c, so counting maps is a statistic of one symmetric trilinear form: three-way interaction, where the untwisted SL(2,3) obstruction was pairwise. Decide whether this makes counting #P-hard with bounded homology: prove the reformulation, identify the coupled blocks found by the last probe, test whether insertions at chosen positions steer T to prescribed forms, and if so look for a reduction. Standalone value: whether the bounded-homology line is the Fitting height or the twisting (degree) of the obstruction.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TRIPLE-PRODUCT-20261026-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-26: the twisted triple product makes counting hard. For G = UT3(F4) x| C3 (Fitting height 2), counting homomorphisms from pi1 of a closed 3-manifold with H1 = Z/3 is a statistic of one symmetric cubic form, the twisted triple product T on H^1(M; F4_{w^2}); Borromean (Y-) moves with leaves in the kernel of the character keep H1 and add any alternating form to T; and the alternating form sum over edges of (x_u + x_v) ^ p_e ^ s_e has kernel count proportional to the 64-state Potts partition function, the Tutte polynomial at (79/15, 16). So counting maps to G is #P-hard on 3-surgeries of knots, while SL(2,3) (untwisted, pairwise) is polynomial: with bounded homology the line is not the Fitting height but pairwise versus three-way (twisted) obstructions. The coupled blocks are a corank-one twisted Bockstein part plus a free alternating part. Next: Continue (independent review, then coprime class-2-by-cyclic groups, 3/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop and record 'interacting but countable' if every realizable form has a closed-form count; if insertions steer T to arbitrary sparse forms, look for a reduction from a #P-hard count, and stop if none survives a brute-force check.",
+  "title": "Does the twisted triple product make counting hard?"
+}

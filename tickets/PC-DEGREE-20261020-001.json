@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "The census decides the sandwich ceil(cvw/2) <= PC <= floor(cvw/2)+1 on its roster under frozen predictions, and B proves it (lower bound conditional only on the cited Robertson-Seymour duality) with executable checks, or a counterexample is recorded.",
+  "completion_gate": "",
+  "dependencies": [
+    "CUTWIDTH-DEPTH-20261020-001Z",
+    "TSEITIN-NS-DEGREE-NOTE-20261020-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "PC-DEGREE-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Follows TSEITIN-NS-DEGREE-NOTE-20261020-001 (Nullstellensatz degree of Tseitin = toggle width; in the +-1 encoding after reduction, exactly cutwidth). Question: the exact polynomial calculus (PC) degree of Tseitin formulas outside characteristic 2. Pilot (recorded in A's contract): in the reduced +-1 convention a PC derivation from binomial axioms is a closure of signed relations y_A ~ +-y_B, each labelled by a vertex set U with A xor B = cut(U); a relation can sit at half its cut, and composing two relations needs a common center within the degree of three cuts. Hypothesis: PC degree is governed by tree layouts at half size, ceil(cvw/2) <= PC <= floor(cvw/2) + 1 for the balanced binomial encoding (cvw = carving width), and max(maxdegree, that) for the standard encodings, the standard (unreduced) convention at most one higher. A: frozen census of exact PC degrees by signed closure against exact carving width. B: proof (closure model; lower bound from tangles via Robertson-Seymour duality; upper bound from carvings). Z: closure.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PC-DEGREE-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: over any field of characteristic other than 2, the polynomial calculus degree of the Tseitin system of a connected graph with an odd charge lies between ceil(cvw/2) and floor(cvw/2)+1 for the balanced binomial encoding (exact when the carving width cvw is odd), is max(maxdegree, that) for the standard binomial and clause encodings, and the standard convention adds at most one (B; lower bound via tangles and the Robertson-Seymour duality, upper bound via carvings). The census (A) confirms all five frozen predictions on 1,253 graphs; even-width graphs split 191/628 between the two values. Nullstellensatz follows linear layouts (cutwidth), polynomial calculus tree layouts at half size.",
+  "status_class": "complete",
+  "stop_rule": "Stop and record a counterexample if any roster graph violates the sandwich. Do not pursue the exact rule for even carving width beyond recording data and a necessary condition.",
+  "title": "Polynomial calculus degree of Tseitin formulas: half the carving width?"
+}

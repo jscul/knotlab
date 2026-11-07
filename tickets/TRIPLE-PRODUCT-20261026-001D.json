@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TRIPLE-PRODUCT-20261026-001A",
+    "TRIPLE-PRODUCT-20261026-001C"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TRIPLE-PRODUCT-20261026-001D-P001"
+  },
+  "id": "TRIPLE-PRODUCT-20261026-001D",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Reduce the Tutte polynomial of a planar graph at a point on the hyperbola (x-1)(y-1) = 64 to |Hom(pi1 M, G)| for 3-surgeries M on knots built from connected sums of figure-eight knots by Borromean insertions: the alternating form sum over edges uv of (x_u + x_v) ^ p_e ^ q_e has kernel count N proportional to T_G(79/15, 16). Conclude #P-hardness (Turing) on closed 3-manifolds with H1 = Z/3, and check the gadget formula and an end-to-end instance by exact computation.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TRIPLE-PRODUCT-20261026-001"
+  },
+  "parent": "TRIPLE-PRODUCT-20261026-001",
+  "schema_version": 1,
+  "status": "Proved by TRIPLE-PRODUCT-20261026-001D-P001: counting homomorphisms from pi1 of 3-surgeries on knots (all with H1 = Z/3) to UT3(F4) x| C3, a group of Fitting height 2, is #P-hard under Turing reductions. Gadget: the alternating form sum over edges of (x_u + x_v) ^ p_e ^ s_e has kernel count 4^{2m-n} Z(64, 15), a Potts partition function equal to 64^k 15^{n-k} T(79/15, 16), #P-hard by Jaeger-Vertigan-Welsh; it is realized from figure-eight connected sums by one Borromean move per edge (TRIPLE-PRODUCT-20261026-001C). Checked by brute force and on four end-to-end knots.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Counting maps to UT3(F4) x| C3 is #P-hard with H1 = Z/3"
+}

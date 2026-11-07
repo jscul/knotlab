@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves the counterexamples and the positive constructions it states; every census case agrees with the predictions or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "MALTSEV-CONVERSE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "DIAGONAL-LEMMA-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after MALTSEV-CONVERSE-20261020-001, which reduced the converse of the difference-law theorem to a local converse (in a law whose knots compose like cycles, every knot is rectangular) and recommended the diagonal lemma: every non-rectangular 3-variable knot with neither a meeting variable nor a selector has a diagonal derivation exists h: K(x0, x0, h) and K(x1, x2, h) that has one. Scoping on 2026-10-21 found that the lemma and the local converse both fail: the product of a difference law whose systems all have full ranges with a non-rectangular factor that it dominates (a shadow) has the difference law's constrained sets in every system. A (exploratory census) maps where the lemma holds: random 3-variable knots on 3 to 6 values (direct cases, a fibre-distance construction, the diagonal derivation, and systems without cross-position identification), random 4-variable knots, group-action knots, random shadows, and small domains for counterexamples. B proves the shadow theorem with counterexamples on 6 values (3 variables) and 4 values (4 variables), proves the fibre-distance construction, and states what composing knots like cycles still forces.",
+  "ownership": {
+    "root": true,
+    "scope_id": "DIAGONAL-LEMMA-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. The diagonal lemma and the local converse are false: K4 = (x+y+z=0 mod 3 on {0,1,2,3}, reading 3 as 2) minus (2,2,2) is a non-rectangular 3-variable knot with no direct case whose law composes all circuits like cycles, because in every system it has the constrained sets of x+y+z=0 over Z3 (lift theorem); products with a dominating difference law do the same (shadow theorem). Composition sees only which sets are constrained; it still forces no direct case and disconnected or dense fibre graphs (fibre-distance construction). The lemma holds for every random knot tested; two values admit no counterexample, three are open. Census A (refuted on candidates, all resolved), proof B (proved), ledger Z. Recommendation: Continue with the matroid-level converse (2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if a shadow system shows a failure between circuits, which would reopen the local converse.",
+  "title": "The diagonal lemma: does composing knots like cycles force rectangular knots?"
+}

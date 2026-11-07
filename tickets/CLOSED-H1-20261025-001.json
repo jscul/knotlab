@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "CLOSED-H1-20261025-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "BOUNDED-H1-20261025-001 proved that counting homomorphisms from knot groups to S4 that send meridians to transpositions is #P-hard, and that abelian-by-nilpotent targets stay polynomial on closed 3-manifolds with bounded first homology; the closed case for S4 was left open. Integral surgery on a knot gives a closed manifold whose S4 count mixes the transposition colourings with 4-cycle colourings according to their longitudes. First replay the knot hardness independently (fresh diagrams, brute-force colourings), then control the peripheral data: transposition longitudes are forced trivial by the lift to GL(2,3), and half-lives-half-dies for the twisted lifting cohomology should make transposition and 4-cycle colourings equinumerous over every S3 colouring. Then two surgeries recover the transposition count. Standalone value: equal colouring counts for the two connected quandles of order 6 (conjectured by Clark, Elhamdadi, Hou, Saito and Yeatman), and hardness for a solvable group on closed manifolds with first homology Z/2.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CLOSED-H1-20261025-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-25: S4 counting on closed manifolds with bounded first homology. Counting homomorphisms to S4 is #P-hard on closed orientable 3-manifolds with first homology Z/2, given by integral surgery on knot diagrams, while metabelian targets stay polynomial there. The route: an independent replay confirmed the knot hardness; a transposition colouring of a knot has trivial longitude (its lift to GL(2,3) would make the commuting meridian and longitude anticommute); half-lives-half-dies for the twisted lifting cohomology makes transposition and 4-cycle lifts equinumerous over every S3 colouring, which proves the 2013 conjecture that the connected quandles C[6,1] and C[6,2] colour every knot equally; then C2 + C4 = 8 + 3T and 3 C2(K) + C2(K # 3_1) = 16 + 12T recover the transposition count from two closed manifolds. Next: SL(2,3) with bounded homology (2/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop if the independent replay finds a defect in the knot hardness, or if transposition and 4-cycle colourings are not equinumerous on the hard knots, so that surgery counts do not isolate the transposition count.",
+  "title": "S4 counting on closed manifolds with bounded first homology"
+}

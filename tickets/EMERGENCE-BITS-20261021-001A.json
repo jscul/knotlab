@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BASE-THREE-20261021-001A",
+    "KNOT-COMPETITION-20261019-001A",
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "EMERGENCE-BITS-20261021-001A-P001"
+  },
+  "id": "EMERGENCE-BITS-20261021-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove for relations on bits: the logical emergence E(R) = log2|pair closure| - log2|R| is zero exactly for relations definable by two-literal clauses; a knot on N bits is the complement of a nonempty independent set Z of the N-cube and holds E = -log2(1 - |Z|/2^N) <= 1, with equality only for parity; the statistical emergence I(R), the divergence of the uniform distribution on R from the pairwise exponential family, satisfies 0 <= I <= E and vanishes exactly on least sets of pairwise energies, so the only statistically silent knots are the four not-all-equal triangles; E is at most n - log2 CAN(2,n,2) on n bits, attained by minimum covering arrays; I is at most n - log2(n+1), attained exactly by orthogonal arrays from Hadamard matrices (on seven bits, the 480 cosets of the Fano simplex codes); affine relations reach n - ceil(log2(n+1)). Check exhaustively on at most four bits.",
+  "ownership": {
+    "root": false,
+    "scope_id": "EMERGENCE-BITS-20261021-001"
+  },
+  "parent": "EMERGENCE-BITS-20261021-001",
+  "schema_version": 1,
+  "status": "Proved by EMERGENCE-BITS-20261021-001A-P001 (V1 prose proof with exhaustive and exact checks; majority closure, facial sets of exponential families, covering arrays and Hadamard designs cited). Logical emergence E = log2|pair closure| - log2|R| is zero exactly for relations definable by clauses of at most two literals; a knot on N bits is the complement of a nonempty independent set Z of the N-cube with E = -log2(1 - |Z|/2^N) <= 1, one bit only for parity, log2(8/7) for one clause. Statistical emergence I (divergence of the uniform distribution from the pairwise family) satisfies 0 <= I <= E and vanishes exactly on least sets of pairwise energies (225 of 255 three-bit relations), so the not-all-equal triangles are the only silent knots. Capacities on n bits: E up to n - log2 CAN(2,n,2) (minimum covering arrays); I up to n - log2(n+1), exactly for Hadamard designs (on seven bits the 480 Fano simplex cosets); affine relations I = E <= n - ceil(log2(n+1)).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: measuring emergence in bits"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FACE-CLAIM-20261103-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FACE-CLAIM-20261103-001C-P001"
+  },
+  "id": "FACE-CLAIM-20261103-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Computation and proof. Creation needs the gluing line frozen (two points fixed) by a pinned port pattern, so the halo lies in the frozen region of the port classes. Prove that the faces around the attachment point are frozen (reading lemma), test whether two-sided unit propagation from the class seeds finds the whole frozen region, and record where it does not: on a ladder arm spliced onto a grid, at junction points the frozen region runs along the arm's far long face, which is not a face around the point, and at one point an opened handle creates there, contradicting the law 'the faces around the attachment point' proposed by PHASE-HALO-20261103-001A. Check the claim rule at every point of that space.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FACE-CLAIM-20261103-001"
+  },
+  "parent": "FACE-CLAIM-20261103-001",
+  "schema_version": 1,
+  "status": "Proved by FACE-CLAIM-20261103-001C-P001: creation needs a frozen line, and every line of a face barred by the class is frozen; two-sided unit propagation from the class's seeds finds the whole frozen region on generic pieces (all on the faces around the point) but misses a global rigidity at 8 junction points of a ladder arm spliced onto a grid, whose off-face frozen lines are rigid except at one point with two-pattern claims. There every one of three handles creates off the faces around the point (13 lines), and exact creation confirms off-face creation on a 21-point junction (12 instances, 1,512 cases agreeing): the PHASE-HALO law of the faces around the point is false; the halo lies on frozen lines whose claims survive the handle's single points",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The frozen region"
+}

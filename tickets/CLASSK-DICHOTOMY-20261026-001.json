@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COPRIME-CLASS2-20261026-001Z",
+    "NEXT-DIRECTION-SCAN-20261026-001Z",
+    "PATTERN1-CHECKPOINT-20261026-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "CLASSK-DICHOTOMY-20261026-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Prove, for an odd prime p and r | p - 1, that counting homomorphisms from fundamental groups of closed orientable 3-manifolds with bounded first homology to a group G = N x| C_r of class (K) (COPRIME-CLASS2-20261026-001C) is #P-hard exactly when G has a hard pair, the polynomial side being COPRIME-CLASS2-20261026-001C. Route: on the gadget surgeries of COPRIME-CLASS2-20261026-001D section 3 (pattern 1 validated at p = 7, r = 6 by PATTERN1-CHECKPOINT-20261026-001) the count is a positive sum over the meridian characters psi^k of multiplicative partition functions whose sector-1 weight matrix is positive, with rank at least two when a hard pair is present; an anchor graph and a Vandermonde solve isolate that sector, and Bulatov-Grohe gives hardness. Also decide whether the argument extends to knot groups when some commutator component involves the trivial character. Requested by the owner (relayed by a peer session) after the checkpoint, with no time limit.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CLASSK-DICHOTOMY-20261026-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-27: a dichotomy for counting maps to class-(K) groups (coprime class-2-by-cyclic, p odd, r | p - 1). On the gadget surgeries every count is a positive sum over the meridian characters of multiplicative partition functions whose weights are nonconstant exactly with a hard pair (A, proved); the projector construction realizes all three slot patterns, 108 comparisons on 8 surgeries at two primes (B, supported); an anchor graph and a Vandermonde solve over disjoint unions isolate the hard sector and Bulatov-Grohe gives #P-hardness on r-surgeries of knots, so with COPRIME-CLASS2-20261026-001C counting is polynomial iff no subgroup G_d (d | r, d <= |H1| bound) has a hard pair, and the same dichotomy holds for knot groups including trivial-character commutators (C, proved). Rowell's Conjecture 3.2(b) fails for every class-(K) group with a hard pair unless every #P function is polynomial-time computable. Gaps: p = 2, extension fields, groups beyond class (K), approximate counting, no external review. Recommendation: Continue beyond class 2 (a cross-layer hard pair; a four-way Massey interaction), 2/3. Decision: research/CLASSK-DICHOTOMY-20261026-001/dichotomy.md.",
+  "status_class": "complete",
+  "stop_rule": "Stop when the hardness theorem and the dichotomy are proved with checks and the end-to-end experiment has run under its frozen contract, or when an obligation fails with a counterexample or an unrepaired gap; report the precise remaining gaps either way.",
+  "title": "A dichotomy for counting maps to class-(K) groups with bounded first homology (p odd, r | p - 1)"
+}

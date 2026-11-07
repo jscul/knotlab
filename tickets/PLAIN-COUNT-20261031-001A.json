@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SOFT-CROSS-20261031-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PLAIN-COUNT-20261031-001A-P001"
+  },
+  "id": "PLAIN-COUNT-20261031-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: (1) a long edge with k capped pairs acts by 9^k (P+ + t P-), t = (-1/3)^k, so the count of a system whose L negated incidences are replaced by long edges is 9^(kL) times a polynomial of degree at most L in t, whose value at t = -1 is the signed count and at t = 1 the count with the signs dropped; (2) long edges and their caps inside planar pieces keep SOFT-CROSS A's Pfaffian certificate; (3) switching inside the pages leaves the soft crossing with 6 negations; (4) Theorem: counting proper 2-colourings of 3-regular 3-uniform hypergraphs whose incidence graphs are Pfaffian is #P-hard under Turing reductions (composition with SOFT-CROSS B, Theorem 4); (5) demonstration: 9 #col(K3,3) recovered from plain Pfaffian instances only (k_S = 1, 3, 5, 7, with L = 6 k_S long edges and L + 1 lengths each), plain instances certified at small lengths, signed host edges handled the same way. Controls: t = 1 gives the plain count; L counts leave the value at t = -1 undetermined. Nearest known result: Fan-Cai 2020 (hard on general graphs, planar case in FP); on Pfaffian graphs none found.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PLAIN-COUNT-20261031-001"
+  },
+  "parent": "PLAIN-COUNT-20261031-001",
+  "schema_version": 1,
+  "status": "Proved: counting 2-colourings of 3-regular 3-uniform hypergraphs with Pfaffian incidence graphs is #P-hard (Turing); a long edge read at t = -1 is a negation, certificates survive, and 9 #col(K3,3) = 54 is recovered from 100 plain Pfaffian counts (largest 18504 vertices).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Signs interpolate away: plain Pfaffian triple systems are #P-hard to count"
+}

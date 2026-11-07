@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EMERGENCE-BITS-20261021-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BASE-CRITICALITY-20261022-001A-P001"
+  },
+  "id": "BASE-CRITICALITY-20261022-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) on any finite graph with any two-colouring g, not-all-equal constraints with uniformly random visible spokes are equivalent, through tau = h xor g, to uniformly random implications on bichromatic edges and uniformly random monotone two-literal clauses on monochromatic (seam) edges; (2) in a uniformly random orientation the set reachable from any vertex set has the law of its bond-percolation cluster at p = 1/2, and with series-parallel gadgets at the gadget's traversal probability; (3) if the seam's two sides are disjoint and no directed path joins them in one direction, the world is consistent, so inconsistency needs directed crossings both ways and the consistency chance is at least the chance that percolation does not cross the cut surface; (4) hence emergence tends to 0 when the effective parameter is below the lattice threshold, stays bounded on square tori of fixed shape at p = 1/2 (Russo-Seymour-Welsh), and tends to infinity when bidirectional gadgets percolate. Check exhaustively on small graphs.",
+  "ownership": {
+    "root": false,
+    "scope_id": "BASE-CRITICALITY-20261022-001"
+  },
+  "parent": "BASE-CRITICALITY-20261022-001",
+  "schema_version": 1,
+  "status": "Proved by BASE-CRITICALITY-20261022-001A-P001 (V1 prose proof; Theorems 1-3 checked exhaustively on small graphs, Theorem 4 argued from cited percolation theorems). Recoloured by any two-colouring, not-all-equal worlds with fair visible spokes become uniformly random implications plus monotone seam clauses; reach in a uniformly random orientation has exactly the law of bond percolation at 1/2 (with gadgets, at their traversal probability; Grimmett's coupling); a world with no directed crossing of its cut surface in one direction is consistent, so inconsistency needs crossings both ways, though two-way worlds are often consistent (62% on the 5 x 2 torus). Hence emergence at scale vanishes below the lattice threshold (honeycomb, series gadgets), stays bounded on the square lattice at 1/2 (Russo-Seymour-Welsh), and diverges when two-way gadgets percolate (k >= 3 parallel edges). The lower bound at criticality is open.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: fair distinctions make percolation"
+}

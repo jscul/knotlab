@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen exploratory census runs within budget; the independent check re-decides planarity with its own search and recomputes every reading and local verdict.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-SPACE-20261020-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-SPACE-20261020-001C-E001"
+  },
+  "id": "KNOT-SPACE-20261020-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Bounded continuation of KNOT-SPACE-20261020-001A-E001, whose S3 and S5 failed by design. Exploratory census: (1) for every three-connected graph of a fresh roster (the named graphs and 24 new random cubic graphs on 8-12 vertices), decide planarity by a rotation-system search independent of matroids and compare with the dual reading of the gauge law's allowed states; (2) local parity laws written on no graph whose knot matroids can be three-connected: every variable in exactly three constraints of size six (12, 14 and 16 variables) and random sparse laws with half as many constraints as variables of sizes three to five; record three-connectivity and whether the knot matroid is graphic or cographic; (3) Ledrappier's law on tori up to 8x8, recording the dimension of its allowed states. Predictions: the dual reading succeeds exactly on the planar graphs; among three-connected local laws at most 5 percent are graphic or cographic. An independent checker recomputes planarity, readings and local verdicts.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-SPACE-20261020-001"
+  },
+  "parent": "KNOT-SPACE-20261020-001",
+  "schema_version": 1,
+  "status": "Refuted on T2; T1 holds (KNOT-SPACE-20261020-001C-E001, exploratory; the independent check re-decided planarity with its own rotation-system search and recomputed every reading and all 240 local verdicts). T1: on all 40 three-connected graphs whose planarity search terminated (25 planar), the dual reading of the gauge law's allowed states succeeded exactly on the planar ones; the search accepted the known planar graphs and rejected K5, K3,3 and Petersen, and 10 disguised graph laws were recovered. T2 (at most 5 percent of three-connected local laws graphic or cographic, with at least 20 three-connected laws) is refuted: only 13 of 240 local laws written on no graph had three-connected knot matroids (10 with every variable in three constraints of size six, 3 sparse), and one of them, a sparse law of eight constraints on 16 variables, is both graphic and cographic, so its allowed states alone define a sphere (9 vertices, 16 edges, 9 faces); 1 of 13 is 7.7 percent. Ledrappier's allowed states on tori up to 8x8 have dimension at most 6 (0 on the 4x4, 5x5 and 8x8 tori), so its knot matroids are degenerate.",
+  "status_class": "refuted",
+  "stop_rule": "Stop after the declared roster or budget.",
+  "title": "Census continuation: planarity by embeddings and non-degenerate local laws"
+}

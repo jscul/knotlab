@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BOUNDED-H1-20261025-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BOUNDED-H1-20261025-001B-P001"
+  },
+  "id": "BOUNDED-H1-20261025-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof: if a finite group G has an abelian normal subgroup N with G/N nilpotent (in particular every metabelian group), then for a finitely presented group whose first homology with coefficients in F_p has bounded dimension for every prime p dividing |G/N| (closed 3-manifolds with bounded |H1|, knot groups with meridians sent to a fixed class), the number of homomorphisms into G is computable in polynomial time: the maps into G/N are boundedly many and enumerable level by level, and the lifts of each form an affine space over the twisted 1-cocycles, counted by linear algebra; contrast with S4, whose maps into S3 can be exponentially many with H1 = Z. Standard-library check against brute force on random presentations.",
+  "ownership": {
+    "root": false,
+    "scope_id": "BOUNDED-H1-20261025-001"
+  },
+  "parent": "BOUNDED-H1-20261025-001",
+  "schema_version": 1,
+  "status": "Proved by BOUNDED-H1-20261025-001B-P001: if a finite group has an abelian normal subgroup N with nilpotent quotient Q (every metabelian group), counting homomorphisms from a finitely presented group with bounded mod-p first homology (p dividing |Q|), optionally with one generator sent into a fixed class, is polynomial: at most |Q|^d maps to Q, enumerated by F_p lifting, and the lifts through N counted by linear algebra over N; this covers closed 3-manifolds with bounded |H1| and knot groups with a meridian class, and contrasts with S4, which has no such decomposition and is #P-hard on knots (BOUNDED-H1-20261025-001A).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Metabelian targets stay polynomial with bounded homology"
+}

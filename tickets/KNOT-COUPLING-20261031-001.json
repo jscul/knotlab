@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NEXT-DIRECTION-SCAN-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "KNOT-COUPLING-20261031-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue', approving the recommendation of NEXT-DIRECTION-SCAN-20261031-001), decide the complexity of counting on the knot's spaces (connected non-2-colourable cubic triple systems) at every three-body coupling u: a line weighs 1 + 3u when its three points agree and 1 - u otherwise, and u = -1/3 is not-all-equal, the knot's law. Conjecture from the scan: polynomial exactly at u in {-1/3, 0, 1, -1} and #P-hard elsewhere, with and without one deleted line (at u = -1/3 the deficiency-one count is Theorem 1 of the counting note). Route: a knot's space minus one incidence, used as an edge gadget (an atom), is an exact negation at the knot's coupling and multiplies through-paths by a ratio rho(u) elsewhere; chains of atoms with interpolation reduce the hard plain Pfaffian systems of PLAIN-COUNT-20261031-001A to the knot's spaces. The scan's crossing-from-deep-junctions route is the fallback. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "KNOT-COUPLING-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-31: the coupling dichotomy on the knot's spaces (non-2-colourable cubic triple systems): counting with weight lam per monochromatic line is polynomial exactly at lam in {0, 1, -1, -3, oo} and #P-hard at every other complex lam. Mechanism: a knot's space minus one incidence (an atom) is an exact negation at the knot's law and shifts the coupling elsewhere, so chains of atoms reduce the hard Pfaffian systems to knot's spaces (A, B); torsion points on the curve of two atom ratios close the complex case (C). The two non-affine easy laws are the knot's law (count 0) and the dimer law lam = -3 ((-2)^n |det|). Deficiency one: the same except lam = -3 (open). Corrects the scan's lane B (u = oo). Next (awaiting the owner): Research directions (2/3), mutual selection across the knot catalogue",
+  "status_class": "complete",
+  "stop_rule": "Stop when the dichotomy is proved for real couplings, with an end-to-end check, and the complex couplings are either settled or reduced to a stated residual set; or when a tractable coupling or a gadget failure obstructs the route.",
+  "title": "The knot's coupling: counting on the knot's spaces away from the knot's law"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EMERGENCE-BITS-20261021-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "EMERGENCE-BITS-20261021-001C-E001",
+    "contract_path": "experiments/EMERGENCE-BITS-20261021-001C/EMERGENCE-BITS-20261021-001C-E001_surface_emergence/contract.json"
+  },
+  "id": "EMERGENCE-BITS-20261021-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Confirmatory Monte Carlo test. Put a not-all-equal knot on every edge of a torus grid, with uniformly random visible spokes and hidden joints, and measure emergence E = -log2 P[consistent] as the torus grows at fixed shape. Hypotheses: on square-lattice tori with an odd side E stays at a positive constant set by the aspect ratio; on honeycomb tori with an odd side E tends to 0; on triangular tori E grows with the area; on bipartite tori E = 0. Controls: bipartite tori (exact zero), parity on small tori (exact cycle rank), and an independent sampler that uses the recoloured form.",
+  "ownership": {
+    "root": false,
+    "scope_id": "EMERGENCE-BITS-20261021-001"
+  },
+  "parent": "EMERGENCE-BITS-20261021-001",
+  "schema_version": 1,
+  "status": "Closed: supported by EMERGENCE-BITS-20261021-001C-E001 (confirmatory Monte Carlo, frozen contract; all controls pass; two independent solvers agree on every square-torus sample; independent replay agrees). Not-all-equal links on every edge of a torus grid, hidden joints, fair visible spokes: on square tori with both sides odd, E = 0.83, 0.85, 0.81, 0.84, 0.82, 0.85 bits at sides 9 to 41 (slope 0.003 +- 0.008 per doubling); on 1:2 tori with one odd side, E = 1.15, 1.17, 1.16, 1.17, 1.10 at sides 9 to 33 (slope -0.017 +- 0.012); honeycomb tori with an odd side fall to 0 by 12 x 13; triangular tori grow with the area (about 0.40 bits per vertex); bipartite tori hold 0. Emergence held only by the global odd cycles of a square torus is size-independent in the tested range; no claim about the infinite limit.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: not-all-equal worlds on surfaces at scale"
+}

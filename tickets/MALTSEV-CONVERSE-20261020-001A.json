@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen exploratory census runs within budget; the independent check recomputes Mal'tsev flags with its own search, rebuilds every knot and failure witness, and re-verifies the disjoint unions.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-CIRCUITS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "MALTSEV-CONVERSE-20261020-001A-E001"
+  },
+  "id": "MALTSEV-CONVERSE-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory code-analysis census. Laws: relations over {0,1,2} generated (as subalgebras of A^2 and A^3) by random tuples under Mal'tsev, majority, semilattice, rock-paper-scissors, conservative and random idempotent operations; every binary relation over {0,1,2}; and the disjoint unions parity on {0,1} beside implication on {2,3} and beside an isolated-value relation on {2,3,4}. For each law: whether a Mal'tsev polymorphism exists (exact search), failures of circuit elimination between knots and between any circuits in bounded systems (copies, knot hubs sharing one or two variables, binary pp-closure), the knots found, and whether each is rectangular at every variable. Predictions: no Mal'tsev law fails; in every law without a failure between knots every knot found is rectangular; the disjoint unions have knots, no Mal'tsev polymorphism, and no failure of the stated kind. An independent checker re-verifies every witness and classification.",
+  "ownership": {
+    "root": false,
+    "scope_id": "MALTSEV-CONVERSE-20261020-001"
+  },
+  "parent": "MALTSEV-CONVERSE-20261020-001",
+  "schema_version": 1,
+  "status": "Closed: supported by MALTSEV-CONVERSE-20261020-001A-E001 (exploratory; frozen predictions M1-M4 hold; the independent check agreed on all 1,026 Mal'tsev flags, rebuilt all 142 knots, verified 34 hub and 580 tie witnesses, and re-verified the disjoint unions). No law with a Mal'tsev polymorphism failed (M1). Every law found to have knots (34: 30 binary relations over three elements and 4 semilattice-generated relations) is non-Mal'tsev and has a hub between knots, and every one of its 142 knots is non-rectangular with all fibres meeting at some variable (M4); so M2 (laws without a failure between knots have only rectangular knots) holds vacuously here: no sampled law without such a failure had a knot. The naive converse fails (M3): parity on {0,1} beside x<=y on {2,3} has knots, no Mal'tsev polymorphism and no failure between knots (only between ties), and parity beside an isolated-value relation on {2,3,4} has knots, no Mal'tsev polymorphism and no failure at all in the searched systems. Controls held: colouring has a hub between knots, 17 non-Mal'tsev relations have no failure (isolated values), and non-rectangular knots exist.",
+  "status_class": "supported",
+  "stop_rule": "Stop after the declared roster; stop early on a solver or control failure.",
+  "title": "Census: the converse of the difference-law theorem on structured laws"
+}

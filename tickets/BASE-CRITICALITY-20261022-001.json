@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A proves the recolouring on any graph, the exploration coupling with gadgets, the blocking theorem and the three regimes, with exhaustive checks on small graphs; B runs a frozen confirmatory test of shape dependence, rotation and shear invariance, the coupling, the decorated-lattice mechanism and three dimensions.",
+  "completion_gate": "",
+  "dependencies": [
+    "EMERGENCE-BITS-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "BASE-CRITICALITY-20261022-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved the recommended continuation of EMERGENCE-BITS-20261021-001: does the size-independent emergence of not-all-equal worlds on square tori depend only on shape (more aspect ratios, sheared tori), how does it compare with Grimmett's randomly oriented lattice, what happens in three dimensions, and can it be proved bounded away from 0 and from infinity. It serves open question 9 (space from a law) and the emergence-at-scale result. Scoping found: (1) after recolouring, fair visible spokes orient the hidden implications uniformly at random, and the forward reach of any set then has exactly the law of a bond-percolation cluster at p = 1/2 (the coupling behind Grimmett's model); measured up-crossing chances matched percolation (0.895 against 0.894); (2) every inconsistent sample had directed crossings both ways, yet given such crossings about 30% stay consistent at every size; (3) emergence depends on shape (0.10, 0.50, 1.12, 2.3 bits at aspect ratios 0.5, 1, 2, 4) and not on size, and rotated tori match axis-aligned ones (0.83-0.87 against 0.83-0.86 bits); (4) gadgets that move the effective percolation parameter below 1/2 make it vanish, above 1/2 make it explode, and cubic 3-tori explode. A proves the reduction and the regimes: an upper bound at 1/2 on the square lattice by RSW, vanishing below threshold, divergence when bidirectional gadgets percolate. B tests shape, rotation, shear, the coupling, the mechanism and three dimensions in a confirmatory experiment. The lower bound at criticality is the open target.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BASE-CRITICALITY-20261022-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-22. Fair visible distinctions orient the hidden pair-world of a not-all-equal world by coin flips, and reach through coin-flipped implications is bond percolation at exactly 1/2 (Grimmett's coupling); inconsistency needs directed crossings both ways, though 18-41% of such worlds stay consistent. Emergence at scale vanishes below the lattice threshold (honeycomb, series contacts), stays bounded on the square lattice at 1/2 (Russo-Seymour-Welsh), and diverges above it (dense contacts, cubic 3-tori beyond 16.6 bits). On square tori it depends only on shape: 0.23, 0.72, 1.16, 2.31 bits at aspect ratios 2/3, 4/3, 2, 4 over sides 9-45, rotation-invariant and stable under shear (confirmatory). The square lattice is critical because self-duality puts its threshold exactly at the fairness 1/2. Open: the lower bound at criticality. Next (owner's choice): which three-literal contacts are critical (2/3), the lower bound, or banking.",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. If emergence drifts with size at fixed shape, or rotated tori disagree, record it and stop; do not extend to other value domains or dynamics in this epic.",
+  "title": "Criticality at the base: fair distinctions make percolation"
+}

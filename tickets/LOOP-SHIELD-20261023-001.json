@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A decides by exhaustive enumeration under a frozen contract, with an independent checker, whether on genus-2 square-tiled surfaces the line counts of the twists a and a + c agree exactly and whether the other twists odd on c differ; B decides under a frozen Monte Carlo contract whether the twists odd on a class differ on thin 3-tori; C proves the surface theorem and the seam lemmas.",
+  "completion_gate": "",
+  "dependencies": [
+    "ODD-LOOP-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "LOOP-SHIELD-20261023-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved the recommended continuation of ODD-LOOP-20261023-001: test where the loop shields the twist. The odd-loop identity is proved on every torus by a wall involution that slides the second twist's seam onto the upper boundary of the odd loop. A wall can only carry the twist dual to the loop (the twist that counts crossings with c), so the mechanism predicts: on a closed surface of genus 2, an exact identity between the twists a and a + PD(c) only, with the other twists odd on c generally different; on a 3-torus, where a loop cannot separate, no identity. Scoping (scratch, not evidence): on 24- and 28-edge genus-2 square-tiled surfaces every predicted pair is exactly equal and the other twists differ; on cubic 3-tori lone lines are about 1e-6 at 3 x 3 x 3 and absent at 2 x 2 x 2, while on thin 3-tori two layers thick, lines along the short direction occur at about 1e-4 and the four twists odd on it differ by several standard errors. A: exhaustive counts on genus-2 surfaces. B: Monte Carlo on thin and cubic 3-tori. C: the proof on closed orientable surfaces, with the lemma that a seam next to the loop carries only the dual twist, and its counterpart in three dimensions.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LOOP-SHIELD-20261023-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-23. Proved: on every closed orientable surface, the wall involution pairs the line events of the twists q and q + PD(c) and keeps every directed cycle, so a lone odd loop along c is blind to exactly the twist dual to it; seams next to the loop carry only that twist (Lefschetz duality), and in three dimensions no wall exists around a loop. Exact on genus 2: on eight L-shaped surfaces every one of 15 classes with lone odd loops has equal dual pairs and unequal pair values, so only the dual twist is shielded. Three dimensions: on thin and cubic 3-tori every comparison between twists not related by symmetry differs (43 of 43 beyond 5 standard errors). A first, graph-only version of the seam lemma was false and is corrected. Recommendation: Full pivot to the three-literal side (bounded direction search, then one exhaustive test); interest 1/3; deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. Stop if a predicted genus-2 pair differs (that would contradict the proof and signal an error), or when A, B and C are complete. If lone lines on 3-tori are too rare to resolve at the planned sizes, report that and do not extend the roster.",
+  "title": "Where the loop shields the twist"
+}

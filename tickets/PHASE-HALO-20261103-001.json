@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "HALO-FORCING-20261103-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "PHASE-HALO-20261103-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Please continue.', approving HALO-FORCING-20261103-001's recommendation): creation and dimer phases. Build plane pieces mixing frozen and liquid parts (ladder arms on grids, thick tubes), test whether the halo of an opened handle is exactly the frozen region joined to the handle, and prove the ladder and grid laws. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PHASE-HALO-20261103-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-03: successful, with a corrected question. The halo of an opened handle is not the frozen region as such: a port is odd on its line exactly when that line takes the single skip of the face opposite the port (claiming lemma, proved), and with the Fano plane as handle every halo line beyond distance 3 lies on a face opposite the attachment point (126 of 126 points on ladders, thick tubes, a grid, random spaces and a ladder arm on a grid), so the reach is set by the size of the faces around the handle; census 58 also uses its own long face. The ladder law is proved for every prism (period-2 transfer matrix, given the route criterion) and the grid law certified exactly (far lines have the full transfer). Next: which faces a handle uses (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the halo is compared with the frozen region on mixed pieces and the ladder and grid laws are proved or reduced to a stated remainder, every computation independently checked.",
+  "title": "Creation and dimer phases"
+}

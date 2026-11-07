@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CLASSK-DICHOTOMY-20261026-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "BEYOND-CLASS2-20261027-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Test whether the hard-pair criterion of CLASSK-DICHOTOMY-20261026-001 extends past class 2, for G = N x| C_r with N of class 3 and exponent p (p >= 5, r | p - 1, coprime split action). Two discriminators: (1) a class-3 group whose class-2 quotient has no hard pair but whose bracket between layers one and two joins nontrivial characters with nontrivial product (expected #P-hard by reduction to the Heisenberg count, so the criterion must live in the associated graded); (2) a group with no hard pair in any layer whose layer-3 obstruction is a twisted triple Massey product, a four-way interaction among characters alpha, alpha^-1, alpha^-1, alpha (hard means the boundary is 'three or more', easy means graded hard pairs suffice). Approved by the owner on 2026-10-27 ('Yes, let's continue') after the class-(K) dichotomy.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BEYOND-CLASS2-20261027-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: both discriminators past class 2 are hard. A cross-layer hard pair in the associated graded makes counting #P-hard (A). A four-way twisted Massey interaction does too where no pair can be hard: U4(F_p) x| <diag(1,-1,1,-1)> on 2-surgeries of knots, p >= 5 (C, realization supported by B). So the line past class 2 is not three-way pairs. Next (r = 2 dichotomy in every class, 2/3) awaits the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop when both discriminators are decided (each by a proof of #P-hardness, a proof of a polynomial algorithm, or a substantive obstruction to the route), and report the resulting criterion and its precise gaps.",
+  "title": "Counting maps to coprime p-group-by-cyclic groups past class 2: cross-layer pairs and four-way Massey interactions"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EXACT-TOWERS-20261029-001A",
+    "GEOMETRY-LAW-20261029-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "INTERFERENCE-20261029-001B-P001"
+  },
+  "id": "INTERFERENCE-20261029-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: a signed three-bit law is a function from {0,1}^3 to {-1,0,1} whose support is a knot. A native gadget joins copies of it (each copy in any coordinate order), every hidden variable shared by exactly two distinct copies and three legs in one copy each; its leg function is the sum over hidden variables of the product of the copies. Classify, exhaustively over native gadgets of three and five copies and every placement, the laws whose leg function has the knot (in some coordinate order) as support, and those whose leg function is a nonzero multiple of the law itself (exact signed fixed points), against the counted baseline of GEOMETRY-LAW-20261029-001A (only parity is rebuilt). Prove that an exact signed fixed point keeps its law at every level of its tower, give the mechanisms (an identity wire by cancellation; the native triangle), the criterion for not-all-equal on the triangle (Cayley's hyperdeterminant), and test the shared-boundary (triangular-lattice) substitution on the tetrahedron, octahedron and icosahedron for signed laws constant on rotation orbits. Nearest known result: GEOMETRY-LAW-20261029-001A and EXACT-TOWERS-20261029-001A (counted laws); exact renormalization on hierarchical and fractal lattices with real or complex weights (Derrida, De Seze and Itzykson 1983; Gefen, Mandelbrot and Aharony 1980); holographic gadgets (Valiant 2008). Classification: no overlap found (candidate local delta).",
+  "ownership": {
+    "root": false,
+    "scope_id": "INTERFERENCE-20261029-001"
+  },
+  "parent": "INTERFERENCE-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by INTERFERENCE-20261029-001B-P001 (V1, prose plus exhaustive census): where counting rebuilds only parity, signed three-bit laws (weights plus or minus one) are rebuilt for 14 of the 16 knot classes and reproduced exactly for 12 by native gadgets of three and five copies of themselves; 10 are exact on the native triangle, so the Sierpinski gasket carries signed not-all-equal (-1 on 110, factor 3) at every level; exact fixed points keep their law at every tower level; signs supply identity wires by cancellation; the Fibonacci knots are never rebuilt and or/nand never exactly; the shared-boundary substitution keeps only parity for signed cyclic laws on three spheres.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Signed patterns of patterns: which signed three-bit laws their own native copies reproduce"
+}

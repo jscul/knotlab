@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-3D-20261025-001Z",
+    "HUB-DIMENSION-20261024-001Z",
+    "INTERFERENCE-20261029-001Z",
+    "SIMPLEX-GASKETS-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SIGNED-3D-20261029-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-29 ('Yes, let's continue'), taking the recommendation of SIMPLEX-GASKETS-20261029-001. Setting: ordered triangulations of closed orientable three-manifolds and the ordered 2-3 and 1-4 moves of TWIST-3D-20261025-001A; a law puts one bit on each edge and gives every tetrahedron labelling a weight in {-1, 0, 1}, possibly depending on the tetrahedron's orientation; it is invariant when, for every labelling of a move's boundary edges, the signed sum over the new side equals a fixed factor (lambda for 2-3, mu for 1-4) times the old side. Questions: (A) classify all such signed laws (exhaustively, up to the face gauge and the global sign) and decide whether anything beyond the seven counting laws and the twisted Dijkgraaf-Witten law appears; (B) what the signed laws see of a three-manifold: their normalized state sums on sampled triangulations, compared with mod-2 cohomology and the linking form. Scoping (not evidence): the feasible factors are those of counting; the supports are the seven counting supports; the cocycle supports carry exactly one twisted class each. Standalone value: answers whether interference lets one bit per edge see more of a three-manifold than its mod-2 first cohomology, the gap named by HUB-DIMENSION-20261024-001, TWIST-3D-20261025-001 and PATTERN-3D-20261025-001. Intuitions targeted: space from logic without a drawn space; everything relational (phases); the two/three boundary through positivity. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SIGNED-3D-20261029-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: interference adds one phase and one bit in three dimensions. A (exhaustive SAT census): signed one-bit edge laws with weights in {-1, 0, 1} invariant under the ordered 2-3 and 1-4 moves (mu nonzero) have counting factors and counting supports, and up to global sign and face gauge are twelve: the seven counting laws, the twisted Dijkgraaf-Witten law (-1)^(x01 x12 x23) on even cocycles, its odd translate and three mixed laws; no twisted law is symmetric, so the twist needs the vertex order. B: the twisted laws compute the Gauss sum of the linear cubic form a -> a^3 on H^1(M; Z/2), i.e. whether the linking form gives 1/2 on an element of order 2; this separates RP^3 # RP^3 from S^3/Q_8, which counting cannot. Next (awaiting the owner): uniqueness of the standing wave (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) every signed ordered law with one bit per edge and weights in {-1, 0, 1} is classified up to the face gauge and the global sign; (ii) the invariants of the classes are identified and checked on sampled triangulations against mod-2 cohomology and the linking form; (iii) the decision note records the recommendation. Record negative results.",
+  "title": "Interference in three dimensions"
+}

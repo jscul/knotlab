@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPLICE-TREE-20261102-001Z",
+    "HUB-GLUE-20261102-001Z",
+    "THREEFOLD-SURFACES-20261030-001Z",
+    "THREEFOLD-SPACES-20261030-001Z",
+    "MUTUAL-SELECTION-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "HANDLE-EMERGENCE-20261102-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Let's keep going!', approving SPLICE-TREE-20261102-001's recommendation): emergence needs a handle. At an opened cut of a knot space, does new emergence need both a knot on the hub (six port patterns) and a non-planar removed side, so that planar glue only composes? First test planar knot spaces beyond the census as removed sides (one new knot refutes it); then find how handles create and try to prove the planar case. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HANDLE-EMERGENCE-20261102-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-02: yes, as far as tested. No planar removed side creates (24 planar spaces beyond the census and the planar census, 2172 removals); created knots are three-point knots through the removed line's hub, pinning all three ports jointly. Proved: on a plane knot space with Kasteleyn signs the knot fails by counting faces against lines, and after a removal its solutions are perfect matchings of lines to faces; a line meeting the removed line shares a face with it and has at most four patterns; genus g removes 2g faces and adds 2g homology parities. Open: a proof of planar non-creation; next: planar glue only composes (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when a planar removed side creates a new knot (refuted), or the planar statement is proved, or the creation mechanism is characterized and what remains of the proof is stated as an explicit open step, with every computation independently checked.",
+  "title": "Emergence needs a handle"
+}

@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-COMPOSE-20261101-001Z",
+    "KNOT-COUPLING-20261031-001Z",
+    "THREEFOLD-SPACES-20261030-001Z",
+    "SELECTION-NOTE-20261101-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "NATIVE-PATHS-20261101-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes continue', approving the recommendation of SELECTION-NOTE-20261101-001 and KNOT-COMPOSE-20261101-001): test whether the knot's spaces carry native paths and native separation, the next rungs after composed topology. First discriminator: is a path through the knot's spaces fixed by the law or chosen by an observer? Classify the cuts at which the law factorizes (2-edge and 3-edge), build the routes they support, test native separation by interventions, and say whether any route carries a magnitude (extended distance). Correct KNOT-COMPOSE-20261101-001 where its claim that the knot's spaces compose only through hubs fails (2-edge cuts compose by parity). No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "NATIVE-PATHS-20261101-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-01: routes between the parts of a knot's space are fixed by the space but are not native paths. Across 2-edge cuts the parts meet as complementary two-place parity (no hub); across 3-edge cuts a knot meets a hub up to signs (an antipodal pair against its complement); knot meets knot only pairwise (a knot's space stays non-colourable under a twist exactly when the twist is a cocycle, so both sides of a cut accept knots only for two edges). Routes carry their length mod 2 or nothing, separate when both are cut, and count 5 per unit; KNOT-COMPOSE's 'compose only through hubs' withdrawn and recorded (the note needs an erratum); next: Full pivot to selection versus composition (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when every small interface of the knot's spaces is classified, the routes and separations they support are built or shown observer-dependent, and the extended-distance question is answered for these routes; record corrections to earlier records rather than broadening any claim.",
+  "title": "Native paths and separation in the knot's spaces"
+}

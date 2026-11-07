@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "Ticket A replays the pinned formal verification with an exact record of the toolchain, axioms and fresh kernel replay. Ticket B states, for each formal definition the main theorem depends on, whether it matches the paper and the standard Res(\u2295) system, with Lean witnesses against vacuity where practical.",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "BPHP-RES-PARITY-AUDIT-20261019-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Independently check Braun's claim (arXiv 2609.23015, 19 September 2026) that every DAG-like Res(\u2295) refutation of the bit pigeonhole principle with n+1 pigeons and n = 2^l holes has more than exp(n/(32768 l^2)) nodes, for l >= 32. The claim is formalized in Lean 4 with standard axioms, but by the author's own statement the fidelity of the formal definitions to the standard proof system is unreviewed. Replay the formal verification at the pinned commit, then audit whether the formal objects (linear clauses, the inference rules, DAG-like refutations and their size, and the BPHP clause set) mean what the paper says, with sanity witnesses that rule out vacuity. Standalone value relative to known work: superpolynomial lower bounds were previously known only for tree-like, regular or bounded-depth Res(\u2295); an independent check either supports a landmark result or locates a gap, and decides whether the repository's depth-restricted Res(\u2295) line (the ECCC TR26-007 counterexample) remains live.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BPHP-RES-PARITY-AUDIT-20261019-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-19: Braun's claimed exponential lower bound for the bit pigeonhole principle in unrestricted DAG-like Res(\u2295) (arXiv:2609.23015) replays from source with standard axioms and a fresh kernel check (A), and its formal statement is faithful to standard Res(\u2295) and BPHP and not vacuous (B). No gap found; prose proof and novelty not assessed.",
+  "status_class": "complete",
+  "stop_rule": "Stop when every definition the main theorem depends on is classified faithful, stronger, weaker or mismatched with evidence, or when a mismatch is found that makes the theorem vacuous or weaker than claimed and is characterized exactly.",
+  "title": "Independent audit of the claimed exponential BPHP lower bound for unrestricted Res(\u2295)"
+}

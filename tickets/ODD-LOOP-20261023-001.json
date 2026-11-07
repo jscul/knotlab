@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A decides the odd-loop identity exactly on the 4 x 4 torus at shears 0, 1 and 2 by exhaustive enumeration under a frozen contract with an independent checker; B records one bounded proof attempt: a proof, a partial proof with its exact scope, or the obstruction met.",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-RELATIONS-20261022-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "ODD-LOOP-20261023-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved the recommended continuation of TWIST-RELATIONS-20261022-001: prove the odd-loop identity. For a primitive class c of a square-lattice torus and the two twists p, p' odd on c, the probability that the twisted sector's strong components wind along c and nothing else is conjectured to be the same for p and p'. It is exact on every torus enumerated so far (3 x 3, 4 x 3, 3 x 4, 5 x 3 at every shear) and was accepted at about 1e-5 on 8 new tori; its stronger shear-independent form was refuted. Scoping (not evidence): moving the second twist's seam by a gauge transformation to a row whose crossing arrows leave a source layer and enter a sink layer leaves the strong components unchanged; on tori of height 3 every configuration has exactly one such row, which gives an exact bijection, but from height 4 on straight rows can fail and good seams need not avoid cyclic edges, so a general proof needs more. A: the exact count on the 4 x 4 torus at shears 0, 1, 2. B: one bounded proof attempt.",
+  "ownership": {
+    "root": true,
+    "scope_id": "ODD-LOOP-20261023-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-23. Proved: the odd-loop identity holds on every square-lattice torus, at every shear and for every primitive class c. The two twists odd on c give the same probability that the strong components wind along c and nothing else. The proof is an explicit involution: it slides the second twist's seam onto the upper boundary of the odd loop, with bit flips on edges entered from the free side, and changes no directed cycle. Exact at 4 x 4 by separate code: 126 equal comparisons on 13 tori, while shear independence fails exactly there (39168000 against 39085056). Straight inert bands give only a partial involution, broken by a stored 4 x 4 orientation. The identity needs fair orientations. Recommendation: Continue, test where the loop shields the twist (genus 2 and the 3-torus); interest 2/3; deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. Stop if the 4 x 4 count breaks the identity, or when one proof attempt has produced a proof, a partial proof with its exact scope, or a named obstruction.",
+  "title": "The odd-loop identity"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "Theorems 1-4 are proved in prose; check.py verifies the star knot, frozen and flexible worlds on Z^2 and the tree, exact tree patches and the hard-core law, with three controls rejected.",
+  "completion_gate": "",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FROZEN-WORLDS-20261020-001C-P001"
+  },
+  "id": "FROZEN-WORLDS-20261020-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) proper 3-colourings of Z^2 and of the 3-regular tree have frozen worlds (no change of finitely many vertices; every finite region determined by its complement) and flexible worlds (every vertex changed by some finite change), the flexible ones forming a dense open set; (2) for three vertices of Z^2 pairwise at distance 2 the projection of all proper 3-colourings is exactly 'not all three distinct', which passes K1-K3, and this knot is native at a world exactly when its three vertices are flexible there, so it is native on a dense open set and at no frozen world; (3) the hard-core law (independent sets) is flexible at every world. Check by enumeration with K1-K3 for finite domains, frozenness of plane colourings on boxes and of tree colourings on finite subtrees, single-site flexibility, and mutations.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FROZEN-WORLDS-20261020-001"
+  },
+  "parent": "FROZEN-WORLDS-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by FROZEN-WORLDS-20261020-001C-P001 (prose with checks): proper 3-colourings of Z^2 and of the 3-regular tree have frozen worlds (plane colourings; tree colourings whose children carry both other colours), where every finite region is determined by the rest, and flexible worlds (the bipartition colourings' classes) that are dense, so flexibility of any finite vertex set holds on a dense open set of worlds excluding frozen ones; three neighbours of a vertex carry exactly 'not all three colours distinct', a K1-K3 knot native exactly where they are flexible; the hard-core law is flexible at every world but has no knot among its variables. Under the source-aware reading native knots depend on the world for colourings; native loops are necessary but not sufficient.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if a projection, frozenness, flexibility, patch or hard-core check fails on a declared instance.",
+  "title": "Proof: colourings have frozen and flexible worlds"
+}

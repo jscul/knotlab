@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HOLE-CRITERION-COLOURING-20261019-001A-E001"
+  },
+  "id": "HOLE-CRITERION-COLOURING-20261019-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory exact enumeration. (a) For every graph G on s = 2..5 vertices and N = 2..2s+1 colours, compute the reduced GF(2) homology of the complex of partial proper colourings Ind(G \u25a1 K_N), in particular dimension s-2, and find where it vanishes. (b) For a frozen roster of non-N-colourable graphs, compute the largest B such that every vertex set S with 2 <= |S| <= B has no hole in dimension |S|-2, and the exact Nullstellensatz degree of the functional N-colouring system over GF(2) by solving the moment equations. The criterion predicts Nullstellensatz degree greater than B.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HOLE-CRITERION-COLOURING-20261019-001"
+  },
+  "parent": "HOLE-CRITERION-COLOURING-20261019-001",
+  "schema_version": 1,
+  "status": "Closed: supported by HOLE-CRITERION-COLOURING-20261019-001A-E001 under its frozen rule, with a caveat. For all 51 graphs on 2 to 5 vertices the partial-colouring shape has no hole in dimension s-2 once N >= 2s-1, and only the complete graphs need that many colours. On all 13 roster graphs the Nullstellensatz degree over GF(2) exceeds B_hole, by exactly one on 10 and by two on 3. But B_hole equals the universal floor floor((N+1)/2) on every roster graph, so the holes carried no graph-specific information; with 3 colours every non-3-colourable graph has B_hole = 2, since an induced three-vertex path or a triangle has a hole. An independent recomputation agrees on every value.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Holes of partial-colouring shapes and the degree of colouring refutations"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FACE-CLAIM-20261103-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "STRIP-RELAY-20261103-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue.', approving FACE-CLAIM-20261103-001's recommendation): the frozen region by heights, and rigid strips. Prove that a port pattern freezes exactly the points whose height difference to the ports cannot vary, explain the junction extension of the frozen region, and test with plane pieces carrying long rigid strips whether the halo of an opened handle follows them. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "STRIP-RELAY-20261103-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-03: successful. A port pattern freezes exactly the points whose height difference to the ports cannot vary (the class fixes the ports' heights; midpoint convexity). Across a 3-edge cut an untouched side collapses to the vertex it lost without changing creation, so the halo again lies on the faces around the attachment point in the collapsed space; this explains the FACE-CLAIM junction, where a ring saw itself as the closed prism and carried the full ladder halo. Rigid strips relay an opened handle's halo into a second liquid body, from every distance and at the same lines for every length, exactly on small dumbbells; liquid connectors screen it within three steps; relays are directed, entering only a side split at a point. Next: relay networks (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the frozen-region lemma is proved or refuted, the junction is explained, and the strip test is decided on rigid and liquid connectors, every computation independently checked.",
+  "title": "The frozen region by heights, and rigid strips"
+}

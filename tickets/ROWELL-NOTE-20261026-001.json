@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "The note states each theorem precisely with its hypotheses (including the onto character for pure leaves and hypotheses (K) for the easy side), gives a proof or a proof outline with exact pointers to the repository proofs, keeps the tested and untested parts of the construction apart, and every number it quotes is reproduced by replay.py from fresh runs of the cited checks.",
+  "completion_gate": "",
+  "dependencies": [
+    "BOUNDED-H1-20261025-001Z",
+    "CLOSED-H1-20261025-001Z",
+    "COPRIME-CLASS2-20261026-001Z",
+    "CORRECTIONS-20261026-001Z",
+    "SL23-BOUNDED-20261025-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "ROWELL-NOTE-20261026-001-P001",
+    "program": "complexity"
+  },
+  "id": "ROWELL-NOTE-20261026-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's do that'), write a short note, 'Counting homomorphisms from knot groups to solvable groups can be #P-hard', with an external-review package. Content: Rowell's Conjecture 3.2(b) (2009) asks for polynomial exact counting of |Hom(link group, G)| for every finite solvable G; it fails unless every #P function is computable in polynomial time, already on knots, for S4 and its double covers (bicycle law, Potts(12, 1/2), knot gadgets; |Hom| = 4 + R + 2T), for UT3(F4) x| C3 (knot-group count = 3-surgery count + 63), and for the Heisenberg-by-cyclic groups H(F_p) x| C_r with a hard pair of eigencharacters, with the polynomial converse under hypotheses (K). Incorporate the follow-up review's qualifications (onto character for pure leaves; (K) for the easy side; the testing boundary). The package adds a claims-and-evidence table, replay instructions, a replay driver that reruns the cited checks in a temporary copy, and questions for a reviewer. Nothing is sent; sharing is the owner's decision.",
+  "ownership": {
+    "root": true,
+    "scope_id": "ROWELL-NOTE-20261026-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Proved by ROWELL-NOTE-20261026-001-P001: a self-contained 14-page note with replay and review package on Rowell's Conjecture 3.2(b). On links, counting maps to the dihedral groups D_n (n odd, including S3) is #P-hard (new here: local torus knots and 2-cables give the Potts model), while boundedly many components keep metabelian targets polynomial. On knots, where metabelian targets are easy, counting is #P-hard for S4 (the smallest such group), GL(2,3) and 2O, for UT3(F4) x| C3 (knot-group count = 3-surgery count + 63; approximation #BIS-hard), and for H(F_p) x| C_r exactly with a hard pair. replay.py reruns the ten cited checks (identical results), links/run_all.py the ten link checks, and check.py ties every quoted number. No expert review; nothing sent, which is the owner's decision.",
+  "status_class": "proved",
+  "stop_rule": "Stop if a cited check fails on replay, if a published statement of the same hardness for a solvable group on knots or links is found (then rewrite the note as a comparison), or if a theorem cannot be stated without an unproved step.",
+  "title": "A note: counting homomorphisms from knot groups to solvable groups can be #P-hard (Rowell's Conjecture 3.2(b))"
+}

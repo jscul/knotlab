@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DIRECTIONAL-RIGIDITY-20261023-001A",
+    "WALLS-WITH-CHOICES-20261024-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "WALLS-WITH-CHOICES-20261024-001B-E001",
+    "contract_path": "experiments/WALLS-WITH-CHOICES-20261024-001B/WALLS-WITH-CHOICES-20261024-001B-E001_simple_cycles/contract.json"
+  },
+  "id": "WALLS-WITH-CHOICES-20261024-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Frozen exhaustive test: for the twelve bending contacts on the 3 x 3 torus, every configuration and twist and 16 classes, compare the pattern predicted by simple cycles of the wall graph with the frozen histograms of DIRECTIONAL-RIGIDITY-20261023-001A-E001, and on 3 x 4 with configurations sampled per twist against the producer's program.",
+  "ownership": {
+    "root": false,
+    "scope_id": "WALLS-WITH-CHOICES-20261024-001"
+  },
+  "parent": "WALLS-WITH-CHOICES-20261024-001",
+  "schema_version": 1,
+  "status": "Closed: refuted under its frozen rule. WALLS-WITH-CHOICES-20261024-001B-E001 compared, for every configuration and twist of the twelve bending placements on the 3 x 3 torus (16 classes) and the 3 x 4 torus (13 classes), the contradiction pattern predicted by simple cycles of the wall graph with the frozen histograms of DIRECTIONAL-RIGIDITY-20261023-001A-E001 (9119 s within a budget of 10800 s). Controls pass: totals, the twelve certified selective patterns, the first-visit-only misreading, and the four placements without choices on 3 x 3. P1 holds: on 3 x 3 every histogram matches. P2 fails: on 3 x 4 the eight placements with directed walls or without a free place match exactly, but for 111, 125, 159 and 215 a few configurations per twist differ (240, 744 or 4656 of 16777216), always because simple cycles predict a contradiction that the true pattern does not have; by WALLS-WITH-CHOICES-20261024-001A-P001 the good periodic walls there repeat a wall state. The independent checker reproduced the verdict with no problems and matched the engine, its own Python and PySAT certificates on 444 sampled configurations.",
+  "status_class": "refuted",
+  "stop_rule": "",
+  "title": "Do simple wall cycles suffice on small tori?"
+}

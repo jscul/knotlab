@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The ring theorem is proved in Lean with standard axioms and agrees with an exact census of rings of three- and four-variable knots; the exploration beyond rings reports, for networks and many-valued knots, which tables keep a loop constrained, as exact counts on the declared cases.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "KNOT-LOOPS-20261019-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Test which knots remember a loop. Join copies of a knot (K1-K3, forgetting reading) into a ring: each copy passes one witness distinction to the next, and the last passes one back to the first. Then forget the witnesses and ask whether the composite on the remaining distinctions is still constrained. A scratch probe on 2026-10-19 found that parity rings compose into one knot at every length tried, while not-all-equal rings dissolve. Over all 34 three-variable knots in all six placements, only the two parity knots keep every loop (12 of 204 placements); 36 placements remember only that a ring has odd length; 156 dissolve. A transfer-table argument predicts this. For each value of its other distinctions, a copy passes the witness through a 2x2 yes/no table, and a ring excludes a pattern exactly when every table along it is a permutation and an odd number of them swap. The epic proves that ring theorem in Lean (B), checks it against an exact census of rings of three- and four-variable knots (A), and explores beyond rings (C). There it asks whether networks with several loops let other knots remember a loop, and whether many-valued knots with group-valued tables remember more than one bit and, when the tables do not commute, the order of the loop. This bears on open questions 3 (composition through witnesses) and 9 (space from a law) in docs/KNOT_INTUITION.md.",
+  "ownership": {
+    "root": true,
+    "scope_id": "KNOT-LOOPS-20261019-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-19: rings of knots joined through witness distinctions exclude a pattern exactly when every transfer along it is a permutation and an odd number swap, so they compose into a knot or nothing (Lean, B); only parity keeps one full bit at every length, and a parity network remembers one bit per independent loop, while other knots' memory fades with loop length or needs implication chains in branched networks (A, C). The census's frozen prediction P3 was refuted and corrected. Many-valued group links keep constant memory, and non-commuting ones remember the order of the loop.",
+  "status_class": "complete",
+  "stop_rule": "Stop and write up after A and B if the ring theorem holds as predicted and C finds nothing beyond permutation (group-like) tables. Continue past C only if it finds loop memory from tables that are not permutations, or order memory from tables that do not commute, worth a proof.",
+  "title": "Which knots remember a loop: rings and networks of knots joined through witnesses"
+}

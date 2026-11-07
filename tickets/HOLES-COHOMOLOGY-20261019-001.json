@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "Part 1 is proved (Lean for loops, bouquets, shapes, free contact and the size bound; prose for general networks) and part 2 in prose with exact certificates, and both agree with an exact census on the declared networks, contacts and rings; novelty against Lichter and Pago (2024), Zhuk (2025), Nakajima and Zivny (2022), O Conghaile (2022) and Abramsky, Mansfield and Barbosa (2011) is stated.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-LOOPS-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "HOLES-COHOMOLOGY-20261019-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Two parts, following KNOT-LOOPS-20261019-001 (only group-like contact remembers a loop). (1) What a network of permutation contact remembers. With witnesses at the vertices and a permutation of the witness values on each edge, the network allows a pattern exactly when the loops' holonomies share a fixed point. If the contact acts freely (parity, addition mod q), loops constrain independently, and the composite is the vanishing of a class in H^1 of the network. If it does not, loops can bind: with one selector per loop, the shape of the loop constraints is the nerve of the holonomies' fixed-point sets, so every shape occurs, and a knot whose parts are loops appears where three or more fixed-point sets meet pairwise but not all together. (2) Where local reasoning fails. Linear local-to-global reasoning over a ring R that looks at two witnesses at a time (the basic affine relaxation; over Z this is AIP) should accept an impossible network exactly when R can write 1 as a combination of the holonomy group's orbit sizes. Any relaxation that looks at three witnesses at a time, or pins one witness value, should refute every impossible network over every ring. The smallest integer-fooling case is a tie between two loops with orbits of sizes 2 and 3: the coprime arithmetic of Lichter and Pago's counterexample (arXiv:2407.09097) in its simplest form, without its robustness to higher levels. The epic tests both parts with an exact census (A), proves part 1 in Lean with prose for general networks (B), proves part 2 in prose with exact certificates (C), and reads the results in terms of knots and holes.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HOLES-COHOMOLOGY-20261019-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-19: a network of permutation contact allows a pattern exactly when its holonomy group has a common fixed point; free contact keeps one H^1 class per loop and never binds loops, while contact with fixed points binds them into atoms whose shape is the nerve of the fixed-point sets (every complex occurs; a knot among k loops needs k+1 values) (Lean, B). The holes of permutation networks are shallow: only unpinned two-witness linear reasoning misses them, exactly when the coefficient ring can write 1 from the holonomy-orbit sizes; the coprime tie (01),(234) is the smallest integer blind spot (C). All six frozen census predictions hold (A).",
+  "status_class": "complete",
+  "stop_rule": "Stop and write up after the census if a frozen prediction fails in a way the theory cannot absorb; otherwise prove both parts and stop. Do not extend to \u00d3 Conghaile's full cohomological k-consistency algorithm in this epic.",
+  "title": "Holes as cohomology: what contact networks remember, and where local reasoning fails"
+}

@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-COUPLING-20261031-001Z",
+    "MUTUAL-SELECTION-20261031-001Z",
+    "PLAIN-COUNT-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PARITY-CORRECTION-20261031-001A-P001"
+  },
+  "id": "PARITY-CORRECTION-20261031-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof. (i) The error: under the Hadamard basis change the points' equalities become even parity, so the transformed count is a coset weight enumerator, M(H, b; lam) = 2^(n - r) sum over d in b + D of lam^|d|, not a product of generalized equalities. (ii) Fan and Cai's Theorem 2.2 applies: [1, lam, 1, lam] with lam > 0, lam != 1 is in none of its exceptional cases, and their ternary gadget G4 is the theta substitution. (iii) Theta substitution: replacing each line by three lines through two new points gives M_par(theta H; lam) = (2 lam (1 + lam))^n M_nae(H; lam + 1/lam - 1). (iv) Dichotomy: with KNOT-COUPLING-20261031-001 and PLAIN-COUNT-20261031-001, counting parity's coupling on connected simple cubic systems is polynomial at lam in {0, 1, -1, i, -i, oo} and #P-hard at every other complex lam.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PARITY-CORRECTION-20261031-001"
+  },
+  "parent": "PARITY-CORRECTION-20261031-001",
+  "schema_version": 1,
+  "status": "Proved by PARITY-CORRECTION-20261031-001A-P001 (corrects MUTUAL-SELECTION-20261031-001B): parity's coupling M(H, b; lam) is a coset weight enumerator, not a product of generalized equalities (the Hadamard change makes the points parity checks); Fan-Cai Theorem 2.2 makes [1, lam, 1, lam] #P-hard for real lam > 0, lam != 1; the theta substitution (their gadget G4) gives M_par(theta H; lam) = (2 lam (1 + lam))^n M_nae(H; lam + 1/lam - 1); with KNOT-COUPLING and PLAIN-COUNT A, counting parity's coupling on connected simple cubic systems is polynomial exactly at lam in {0, 1, -1, i, -i, oo} and #P-hard at every other complex lam",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Parity's coupling family is #P-hard except at six points"
+}

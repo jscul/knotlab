@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "THREEFOLD-AMPLITUDE-20261030-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "THREEFOLD-AMPLITUDE-20261030-001C-P001"
+  },
+  "id": "THREEFOLD-AMPLITUDE-20261030-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: (1) two-way count: for every cubic signed system H (n points, n lines, a point may repeat on a line, repeated incidences equally signed) with transpose HT and every line L, #col(H) + 6 N_H(L) = 2 sum_p M[L,p] N_HT(p) + R(L), where N_H(L) counts the colourings proper exactly off L, M is the incidence matrix with multiplicity and R(L) sums, over the colourings of HT and the incidences (L, p), +1 or -1 as the incidence agrees with the majority at p; in particular #col(H) = #col(HT). The proof sums an Ising weight on the incidence graph with couplings +-i pi/6 (half the knot's angle) and one inserted factor, first over the lines and then over the points. (2) Theorem: if H is connected and not colourable, A(H, L) = A(HT, p) for every line L and point p, so the amplitude is one number a(H) = a(HT) (maximum principle on 3 A(H, L) = sum_p M[L,p] A(HT, p)). (3) Signed dictionary: a connected cubic signed system is not colourable iff its signing is Pfaffian, and then it is minimally not colourable, so a(H) > 0. (4) Hence every brace with a Pfaffian signing has one positive amplitude; A(H, L) is the product of the brace amplitudes for every connected non-colourable cubic signed system; the knot's exactness factor is lambda(0) = (-1)^(n-1) times that product on every three-fold space; and on a planar brace the number of Tutte matchings is the same for every outer triangle of either colour. Nearest known result: Valiant's Holant theorem (holographic transformations); Seymour 1974; Tutte 1948; ticket A. Classification: to be decided.",
+  "ownership": {
+    "root": false,
+    "scope_id": "THREEFOLD-AMPLITUDE-20261030-001"
+  },
+  "parent": "THREEFOLD-AMPLITUDE-20261030-001",
+  "schema_version": 1,
+  "status": "Proved: every connected non-colourable cubic signed system has one amplitude, shared with its transpose (two-way count of an Ising weight at half the knot's angle, then a maximum principle); signed dictionary; product formula and lambda(0) for every three-fold space",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "One amplitude for every non-colourable cubic system"
+}

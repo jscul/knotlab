@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CYCLE-UTILITY-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CYCLE-TRACTABILITY-20261021-001A-P001"
+  },
+  "id": "CYCLE-TRACTABILITY-20261021-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) for every finite structure H and q >= 2, the equal-top lift of H (domain Z_q x H, each relation of H with all first coordinates of an atom equal) composes like cycles, because in every system the free sets are exactly the sets with at most one visible variable in each component; (2) the lift is homomorphically equivalent to H, so its core is the core of H; hence the core of a law composing like cycles need not compose like cycles (K3), laws composing like cycles can have non-Taylor cores (K3, not-all-equal) and NP-complete constraint problems, and composing like cycles does not imply tractability unless P = NP; (3) the positive remainder: a core with no nontrivial automorphism that composes like cycles has a polynomial-time constraint problem.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CYCLE-TRACTABILITY-20261021-001"
+  },
+  "parent": "CYCLE-TRACTABILITY-20261021-001",
+  "schema_version": 1,
+  "status": "Proved by CYCLE-TRACTABILITY-20261021-001A-P001 (V1 prose proof with randomized and exhaustive checks; the CSP dichotomy, the Siggers characterization and the utility proof cited). The equal-top lift of any finite structure H composes like cycles, with the partition matroid of components as its free sets, and is homomorphically equivalent to H: so the core of a law composing like cycles need not compose like cycles (K3), and such laws can have non-Taylor cores (K3, not-all-equal) and NP-complete constraint problems. The shifted lift is moreover a core when H is, with H's constraint problem, so being a core does not help. A law composing like cycles that is a core with no nontrivial automorphism pp-defines its constants and is tractable; both hypotheses are needed. Composing like cycles does not imply polynomial time unless P = NP; with constants it does.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: tops can hide any constraint problem"
+}

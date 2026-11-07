@@ -1,0 +1,27 @@
+{
+ "acceptance_gate": "",
+ "completion_gate": "",
+ "dependencies": [
+  "FOUR-PREFER-20261101-001Z",
+  "KNOT-CIRCUITS-20261020-001Z",
+  "PINNING-20261031-001Z"
+ ],
+ "dependency_text": "",
+ "fields": {
+  "accepted_artifact_id": "SELECT-COUNT-20261101-001A-P001"
+ },
+ "id": "SELECT-COUNT-20261101-001A",
+ "kind": "ticket",
+ "legacy": {},
+ "objective": "Proof. (1) Each of the five weak four-place classes (13-17 of FOUR-PREFER) contains a knot with a forcing place, directly (13, 16, 17) or after identifying two places (14, 15 become signed three-place clauses); two copies sharing a forcing place form a hub (KNOT-CIRCUITS Proposition 3), so none composes its knots like cycles; they are neither affine nor bijunctive (KNOT-CIRCUITS Theorem 2). (2) For every Boolean law, plain or signed and of any arity: if its knots compose like cycles it is affine or has no knots, so its solution count is polynomial and it has no mutual selection (PINNING C's definition). Selection and cycle-like composition exclude each other. Checked: knots, forcing places, hubs, closure tests, controls (parity composes like cycles and has no forcing place).",
+ "ownership": {
+  "root": false,
+  "scope_id": "SELECT-COUNT-20261101-001"
+ },
+ "parent": "SELECT-COUNT-20261101-001",
+ "schema_version": 1,
+ "status": "Proved by SELECT-COUNT-20261101-001A-P001: every relation of the five weak four-place classes (13-17) yields a knot with a forcing place (directly for 13, 16, 17; by identifying two places for 14 and 15, with opposite signs for 6 relations of class 15), and two copies sharing it form a hub, so none composes its knots like cycles; a law with a knot whose knots compose like cycles is affine (KNOT-CIRCUITS Theorem 2; bijunctive laws have no knot), so its count is 2^(n-r) or 0 and it has no mutual selection: selection and cycle-like composition exclude each other for every law with a knot (a knot-free law such as signed two-clauses can select, below three places)",
+ "status_class": "proved",
+ "stop_rule": "",
+ "title": "Selection and cycle-like composition exclude each other"
+}

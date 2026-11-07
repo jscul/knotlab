@@ -3,6 +3,27 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 6 November 2026: automatic publication, and the tickets
+
+- New epics are now published here automatically when they close in our
+  research workspace. [scripts/publish.py](scripts/publish.py) copies their
+  committed records and tickets and the documents in docs/, rebuilds the
+  generated files, runs the tests and pushes, then updates jscul.dev.
+- [tickets/](tickets/) holds the tickets of every published folder and epic,
+  566 so far, so the archived epic-closure checks can run here.
+- The generated files come from [scripts/build.py](scripts/build.py) and
+  [data/](data/): the lines of work, the ranking tiers, the notes and the
+  pending qualifications, each now entered once. The build reproduced the
+  earlier RESULTS.md and RANKING.md exactly, apart from one new sentence in
+  RESULTS.md saying that new epics appear automatically.
+- [tests/test_records.py](tests/test_records.py) checks that the generated
+  files are current and that every link and ticket is there.
+  [tests/test_curation.py](tests/test_curation.py) fails when a THEORY.md
+  claim cites a superseded or qualified record without saying so. GitHub
+  Actions runs the tests on every push.
+- [requirements.txt](requirements.txt) lists the libraries some archived
+  checks need.
+
 ## 6 November 2026: the theory page, and four more epics
 
 - [THEORY.md](THEORY.md) states the program's thesis and its main claims: 60

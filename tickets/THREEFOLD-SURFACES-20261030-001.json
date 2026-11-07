@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "THREEFOLD-GRAMMAR-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "THREEFOLD-SURFACES-20261030-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-30 ('I recommend the surfaces of three-fold spaces (2/3). Does each space define a closed surface whose genus equals its number of Fano atoms? ... A yes would be the first place the knot builds a canonical topological object rather than a combinatorial class.'), taking the recommendation of THREEFOLD-GRAMMAR-20261030-001. Scoping before activation (not evidence): orientable genus is not additive over 3-edge cuts in general (K3,3 spliced with K3,3 has genus 1); SAT gives genus equal to the number of Heawood braces on all eight three-fold spaces up to 22 points; a face-tracing argument suggests a splice lemma (a piece whose genus survives the deletion of its splice vertex adds exactly its genus); the Heawood graph has 16 torus rotation systems forming one orbit under symmetries and mirroring; the 13- and 19-point spaces have exactly 16^h/2^(h-1) minimum-genus rotation systems. Questions: (A) prove the splice lemma, the genus formula (genus = number of Fano atoms when the glue is planar, plus the genus of non-planar glue that keeps its genus under vertex deletion), and the structure of minimum-genus embeddings (connected sums of Heawood maps and planar maps); the Fano space is the Heawood map, whose dual is the 7-vertex triangulation of the torus with the gadget's triangles and contacts as its two colour classes; (B) exact genera and minimum-genus embeddings by SAT on the small spaces and on larger ones (Fano compositions, cycles of blocks, the twisted cube, the 35-point space with non-planar glue), splice-lemma tests and the K3,3 counterexample. Intuitions targeted: space from logic without a drawn space (a canonical surface determined by the knot's own space); the two/three boundary. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "THREEFOLD-SURFACES-20261030-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: yes, each Fano atom is a handle. The incidence graph of a three-fold space with planar glue has genus equal to its number of Fano atoms (splice lemma: a piece that keeps its genus under deletion of its splice vertex adds exactly its genus; fails for K3,3); every minimal map is a connected sum of the chiral Heawood map (the 7-vertex torus) and planar maps; SAT confirms to 180 vertices. Recommendation: Continue (fresh epic), the knot's amplitude on its surface (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) the splice lemma and the genus formula are proved, or a counterexample is found and classified; (ii) the structure of minimum-genus embeddings is proved or its gap stated; (iii) SAT confirms the formula on the stated spaces; (iv) the decision note records the recommendation.",
+  "title": "The surfaces of three-fold spaces"
+}

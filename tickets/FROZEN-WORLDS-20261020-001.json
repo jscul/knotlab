@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "B and C are proved in prose with checkers on declared laws and worlds: ranks, finite moves and box entropies computed exactly over GF(2) or by exhaustive enumeration agree with the statements; knot verdicts come from K1-K3 on computed projections (knotlab for Boolean variables); every check is shown able to fail by a mutation.",
+  "completion_gate": "",
+  "dependencies": [
+    "HOLES-AT-INFINITY-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "FROZEN-WORLDS-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open questions 1 (which structures count as native loops) and 4 (loops as processes) of docs/KNOT_INTUITION.md, and maps what the source-aware reading in research/HOLES-AT-INFINITY-20261020-001/canonical_correction_request.md adds: a distinction is native at a solution (a world) when some change of finitely many variables flips it. Background, not re-proved: homoclinic points and entropy of algebraic Z^d-actions (Schmidt; Lind-Schmidt-Ward), frozen proper colourings and height functions, frozen variables in random colourings (Zdeborova-Krzakala; Molloy). Standalone value beyond them, read through K1-K3: B proves that for a linear law nativity is the same at every world, so a linear law is frozen everywhere or has the same finite moves everywhere; that a shift-invariant linear law on Z^d has native loops exactly when its matrix has a rank deficit, equivalently positive entropy; and that its K1-K3 knots are its minimal fixed parities, native exactly when inside the supports of finite moves (Tseitin and the gauge law have native knots, Ledrappier and the combined Tseitin-gauge law have none). C proves that a non-linear law can be world-relative: proper 3-colourings of Z^2 and of the 3-regular tree have frozen worlds, where every finite region is determined by its complement, and flexible worlds forming a dense open set; three vertices of Z^2 pairwise at distance 2 carry a K1-K3 knot (not all three colours distinct) that is native on that dense open set and not at frozen worlds; the hard-core law is native at every world.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FROZEN-WORLDS-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: under the source-aware reading, emergence depends on the law and on the world. Proved: for GF(2)-linear laws nativity is world-independent, knots are the minimal fixed parities and are native exactly inside the supports of finite moves, and on Z^d native loops exist exactly when the law's matrix has a rank deficit, equivalently positive entropy (Tseitin and gauge native; Ledrappier and Tseitin-plus-gauge frozen); proper 3-colourings of the grid and the 3-regular tree have frozen worlds and dense open flexible worlds, and the star knot 'not all three colours distinct' is native exactly in flexible worlds; the hard-core law has native loops everywhere and no knot. The open decision (research/HOLES-AT-INFINITY-20261020-001/canonical_correction_request.md) remains the owner's; this epic recommends the source-aware reading. Recommendation: continue with native knots at the freezing threshold of random colourings, deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after C. Stop earlier if a stated delta is found in prior work, or if the world-relative example fails (a frozen world admits a finite change, or the flexible worlds are not dense).",
+  "title": "Frozen worlds: native loops by law and by world"
+}

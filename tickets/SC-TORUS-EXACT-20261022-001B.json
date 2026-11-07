@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SC-TORUS-EXACT-20261022-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SC-TORUS-EXACT-20261022-001B-E001",
+    "contract_path": "experiments/SC-TORUS-EXACT-20261022-001B/SC-TORUS-EXACT-20261022-001B-E001_precision_tests/contract.json"
+  },
+  "id": "SC-TORUS-EXACT-20261022-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Confirmatory Monte Carlo of strongly-connected percolation on square-lattice tori with imposed twists: P(consistent) on twisted squares (candidate 1/sqrt 2), the untwisted one-direction wrapping (candidate 3/4), the second difference of P(contractible) across twist sectors on squares and rectangles (candidate 0), the joint law of directed horizontal winding, and a scan of twisted shapes, at roughly five times the earlier precision with symmetrized estimators.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SC-TORUS-EXACT-20261022-001"
+  },
+  "parent": "SC-TORUS-EXACT-20261022-001",
+  "schema_version": 1,
+  "status": "Closed: refuted by SC-TORUS-EXACT-20261022-001B-E001 (confirmatory Monte Carlo, frozen contract, 30 rows). Wall time was 19130 s against a declared budget of 10800 s. A first launch was stopped at the 2-hour limit on background commands before it wrote any output, and was rerun unchanged with the same seeds. Controls pass: the strong-component and odd-cluster tests agree on every sample; contractible and cross counts agree on every twisted torus; the rectangle identity of the cone theorem holds; directed and undirected horizontal wrapping agree. The independent checker recomputes every decision and replays three 16 x 16 tori by other methods. Half a bit is decisively rejected. On x-twisted squares of side 64-512, E = 0.4915, 0.4938, 0.4950, 0.4961, extrapolating to E_inf = 0.49627 +- 0.00028 (13 sigma below 1/2; 0.4967 +- 0.0006 with a 1/L^2 term). So P(consistent) tends to 0.7089, not 1/sqrt 2. The previous epic's rows, re-estimated with the same symmetrized estimator, give 0.4973 +- 0.0006; its acceptance came from the noisier raw estimator. The untwisted one-direction wrapping 3/4 is accepted: W_inf = 0.75041 +- 0.00019 (2.2 sigma; 0.75007 +- 0.00039 with a 1/L^2 term). Secondary candidates, both accepted: the second difference of P(contractible) over the twist sectors vanishes (0.0008 +- 0.0005 on squares, 0.00002 +- 0.00034 on the 2:1 rectangle); inconsistency on tori twisted along the long side decays with exponent 0.1965 +- 0.0004 (beta/nu = 0.19635). Reported: short-side twist exponent 0.0655 +- 0.0002; directed horizontal winding on 128 x 128: neither 0.248, positive only 0.232, negative only 0.230, both 0.290; the square with both twists 0.8476 bits; the half-sheared square 0.648 bits (mirror pair equal) and 0.491 bits; 2:1 tori twisted along the long side 0.1256 bits, along the short side 1.158 bits.",
+  "status_class": "refuted",
+  "stop_rule": "",
+  "title": "Experiment: precision tests of the exact-looking torus values"
+}

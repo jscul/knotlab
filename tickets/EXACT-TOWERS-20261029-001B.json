@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EXACT-TOWERS-20261029-001A",
+    "HUB-SURVIVORS-20261029-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "EXACT-TOWERS-20261029-001B-P001"
+  },
+  "id": "EXACT-TOWERS-20261029-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: substituting a single-scale exact gadget (m copies, h hidden variables, legs pairwise at distance s, factor c) for every copy, level after level, gives a tower T_k. Prove for every such gadget: T_k has m^k copies and 3 + h(m^k - 1)/(m - 1) variables; its relation on the three corners is exactly the knot, with c^((m^k - 1)/(m - 1)) completions per allowed tuple, so the corner law is the same at every level; the corners are pairwise at distance s^k and the ball of radius s^j around a corner holds exactly the variables of T_j, so the volume growth exponent is log m / log s; T_k has a tree decomposition of width h + 2 and every sub-tower is cut off by its three corners (finitely ramified); and softening (weight r on excluded tuples) is unstable: every exact gadget with legs on distinct copies multiplies small r by at least 3 per level. Instantiate for the parity triangle (3 copies, s = 2, c = 2, dimension log2 3), twisted not-all-equal on the punctured tetrahedron (4, 2, 2, dimension 2) and not-all-equal on the punctured Fano plane (7, 3, 5, dimension log3 7), with their exact softened maps. Nearest known result: the Sierpinski gasket (dimension log2 3); exact renormalization on finitely ramified fractals and their lack of order above zero temperature (Gefen, Mandelbrot, Aharony 1980); bounded treewidth of post-critically finite self-similar graphs. Classification: known-with-delta (the fractals and the zero-temperature-only order are classical; the delta is that the laws select their towers by exact self-reproduction).",
+  "ownership": {
+    "root": false,
+    "scope_id": "EXACT-TOWERS-20261029-001"
+  },
+  "parent": "EXACT-TOWERS-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by EXACT-TOWERS-20261029-001B-P001 (V1, prose plus exact computation): a single-scale exact gadget (m copies, h hidden, legs at distance s, factor c) builds a tower whose corner law is the knot with c^((m^k - 1)/(m - 1)) completions per allowed tuple at every level, corners at distance s^k, balls of radius s^j holding 3 + h(m^j - 1)/(m - 1) variables (growth exponent log m / log s), a tree decomposition of width h + 2 and three-corner cuts at every scale (finitely ramified). Softening repels: at least threefold per level. The minimal towers: the Sierpinski gasket of parity (log2 3), the slit triangle of twisted not-all-equal (2), the Fano tower of not-all-equal (log3 7), with exact softened maps of multiplier 3, 4 and 7, each flowing to the free law.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The minimal exact towers: Sierpinski gasket, tetrahedral, and Fano"
+}

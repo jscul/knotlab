@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINNING-20261031-001Z",
+    "PARITY-CORRECTION-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "FOUR-PLACE-20261031-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue with this', approving the recommendation of PINNING-20261031-001; resumed after PARITY-CORRECTION-20261031-001): is three the only arity with a mutually selecting law? Classify the value-free (complement-invariant) four-place knots on signed 4-regular 4-uniform systems by failures, recognisability and counting, with the correction's two guards (no one-sided transforms; test whether failures are local). Prove what can be proved: which classes never fail, which build equality and are NP-complete on 4-regular systems, and whether any is mutually selecting. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FOUR-PLACE-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-31: three is the only arity with mutual selection among laws with no preferred value. The value-free four-place knots are 30 relations in four classes, none of which can pin (A). Signed not-all-equal never fails on k-regular k-uniform systems for every k >= 4: a minimal failure would be square and sign-nonsingular, but its digraph has in- and out-degree >= 3 and is even (Thomassen 1992) (B). Not-exactly-two and twelve build equality without constants and are NP-complete on 4-regular systems (C). Parity's count is polynomial. So no value-free four-place knot is mutually selecting unless NP-complete problems are polynomial (D); at three places the knot fails exactly on its Pfaffian spaces. Thomassen's degree threshold is the two/three boundary for selection. Recommendation: Research directions (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when every value-free four-place knot class is shown never to fail, to have coNP-complete failures, or to have a polynomial count (then no four-place value-free law is mutually selecting), or when one has non-empty recognisable failures with a #P-hard count (then three is not special).",
+  "title": "Value-free laws on four places: is three the only arity with mutual selection?"
+}

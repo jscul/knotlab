@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GALLAI-KNOTS-20261020-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GALLAI-KNOTS-20261020-001B-P001"
+  },
+  "id": "GALLAI-KNOTS-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove for the q-colouring law: (1) if every witness has exactly q neighbours (witnesses plus pendant leaves) and the witness graph W is connected, the leaf relation passes K1-K3 exactly when W is a Gallai tree; (2) the excluded patterns are the leaf colourings that induce a bad degree-list assignment, so a single clique K_q or odd cycle (q = 3) gives 'not all equal' and a single star gives 'not all distinct'; (3) knots compose by gluing witness networks at a vertex exactly when the glued network is still a Gallai tree, and an even cycle anywhere dissolves the knot (every pattern extends); (4) on a bipartite substrate (the square grid) degree-q witness networks carry knots exactly when they are trees, and on the q-regular tree every finite full subtree carries one, native at almost every broadcast world under the source-aware reading.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GALLAI-KNOTS-20261020-001"
+  },
+  "parent": "GALLAI-KNOTS-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by GALLAI-KNOTS-20261020-001B-P001 (prose; exhaustive and randomized checks): for q colours and a connected witness graph W of maximum degree at most q, each witness carrying q - deg(v) pendant leaves, the leaf relation passes K1-K3 exactly when W is a Gallai tree with a leaf; K2 and K3 hold for every W, and a non-Gallai W imposes nothing. Gluing at a vertex joins excluded colourings through a unique hidden split; excluded colourings are block colour-set systems, counted by q! times a product of block masses (q!((q-1)!)^(k-1) for trees). Native at almost every broadcast world of the d-regular tree when p* = 0 (d = q for q >= 3); the rainbow world at d = q freezes every knot. A shared visible vertex is a hub. Corrections to the objective: (3) holds for a block that is neither complete nor an odd cycle (an even-cycle block), not for an even cycle anywhere (K4 contains C4 and is a knot); (4) the square-grid reading is not proved, because boundary vertices of a substrate with cycles interact; only 'a bipartite witness network carries a knot exactly when it is a tree' is proved. Classical core: Borodin, Erdos-Rubin-Taylor, Kostochka-Stiebitz-Wirth; the knot reading and the mass law are the delta.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: degree-q witness networks carry a knot exactly when they are Gallai trees"
+}

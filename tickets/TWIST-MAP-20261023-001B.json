@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LOOP-SHIELD-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TWIST-MAP-20261023-001B-E001",
+    "contract_path": "experiments/TWIST-MAP-20261023-001B/TWIST-MAP-20261023-001B-E001_genus_two_map/contract.json"
+  },
+  "id": "TWIST-MAP-20261023-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exhaustive enumeration of every orientation of genus-2 L-shaped surfaces, each labelled in all 16 twists by its full cyclic structure (the lattice and parity of every cluster); test that every equality predicted by walls and symmetries holds, and decide on fresh surfaces whether any exact equality between the counts of one event under two twists escapes them.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TWIST-MAP-20261023-001"
+  },
+  "parent": "TWIST-MAP-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: partially supported under its frozen rule; its strongest prediction, P3, is refuted. TWIST-MAP-20261023-001B-E001 (exhaustive labelled counts of eight genus-2 L-shaped surfaces with 16 to 30 edges, per-skeleton counts and shrunken-graph tests; 3232 s; a first launch was killed by the session's background limit after six rows and relaunched unchanged). Controls pass: totals, swap-invariance, halving, skeleton sums, wall pairs related by the identity on every skeleton, soundness on 59,248 skeletons, factorization on 240. P1 holds: every equality predicted by walls and automorphisms is exact. P2 holds: walls and symmetries leave 31 exact equalities (counts of at least 1000) unexplained on the four independent fresh surfaces (L(2,2,3,1) and L(2,2,2,3) proved to be turned copies of L(3,1,2,2) and L(2,3,2,2)). All hold skeleton by skeleton; 25 of 31 are explained by matching pieces (isomorphic series-reduced clusters and parallel-reduced shrunken graphs up to switching), but 6 on L(3,1,3,1) are not: on 48 of their skeletons the shrunken graphs have equal acyclic counts without being isomorphic or Tutte-equivalent. The independent checker reproduced closures, unexplained lists and 824 relations.",
+  "status_class": "refuted",
+  "stop_rule": "",
+  "title": "Experiment: the map of twist relations on genus 2"
+}

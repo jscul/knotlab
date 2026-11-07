@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BOUNDED-H1-20261025-001A",
+    "BOUNDED-H1-20261025-001B",
+    "CLOSED-H1-20261025-001A",
+    "CLOSED-H1-20261025-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CLOSED-H1-20261025-001C-P001"
+  },
+  "id": "CLOSED-H1-20261025-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof: for every knot K, with T(K) the number of transposition colourings, |Hom(pi1 S3_2(K), S4)| + |Hom(pi1 S3_4(K), S4)| = 8 + 3 T(K) and 3 |Hom(pi1 S3_2(K), S4)| + |Hom(pi1 S3_2(K # trefoil), S4)| = 16 + 12 T(K), using the peripheral identities of the B ticket and the meridian-class bookkeeping of integral surgery. With BOUNDED-H1-20261025-001A, counting homomorphisms to S4 is #P-hard (Turing, two queries per knot) for closed orientable 3-manifolds with first homology Z/2 given by integral surgery on knot diagrams, while abelian-by-nilpotent targets are polynomial there (BOUNDED-H1-20261025-001B). Standard-library checks by brute force over all S4 homomorphisms of the closed manifold groups.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CLOSED-H1-20261025-001"
+  },
+  "parent": "CLOSED-H1-20261025-001",
+  "schema_version": 1,
+  "status": "Proved by CLOSED-H1-20261025-001C-P001: for every knot, with T the number of S4 transposition colourings, |Hom(pi1 S3_2(K), S4)| + |Hom(pi1 S3_4(K), S4)| = 8 + 3T and 3|Hom(pi1 S3_2(K), S4)| + |Hom(pi1 S3_2(K # 3_1), S4)| = 16 + 12T, because surgery keeps 1 + 3 + T + (4-cycle colourings with the matching longitude) and the 4-cycle colourings number T (CLOSED-H1-20261025-001B); with BOUNDED-H1-20261025-001A, counting homomorphisms to S4 is #P-hard (Turing, two queries per knot) on closed orientable 3-manifolds with first homology Z/2 given by integral surgery, where metabelian targets are polynomial (BOUNDED-H1-20261025-001B).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "S4 counting is #P-hard on closed manifolds with first homology Z/2"
+}

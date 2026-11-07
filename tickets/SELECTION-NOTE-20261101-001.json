@@ -1,0 +1,31 @@
+{
+  "acceptance_gate": "The note states each theorem with its hypotheses, separates proved, computed and cited facts, credits the known parts (Schaefer, Tovey, Seymour, Thomassen, Robertson-Seymour-Thomas, Kasteleyn, Fan-Cai, Cai-Fan-Liu, Dagum-Luby, Beukers-Smyth, Dalmau-Ford), records the parity correction, and every number it quotes is reproduced by replay.py from fresh runs of the cited checks; headline numbers are also reproduced by independent.py in fresh code.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-COUPLING-20261031-001Z",
+    "PINNING-20261031-001Z",
+    "PARITY-CORRECTION-20261031-001Z",
+    "FOUR-PLACE-20261031-001Z",
+    "FOUR-PREFER-20261101-001Z",
+    "KNOT-COMPOSE-20261101-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SELECTION-NOTE-20261101-001-P001",
+    "program": "foundations"
+  },
+  "id": "SELECTION-NOTE-20261101-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At the owner's request ('Can we do all 3?', option (a) of FOUR-PLACE-20261031-001's recommendation), write one self-contained note on the selection arc of six epics, with a review package: (1) the knot's coupling on its spaces is easy exactly at the knot's law, the dimer law and the trivial couplings; (2) among three-place laws only not-all-equal is mutually selecting (failures recognisable, count hard), by pinning; (3) parity's failures are recognisable but local, and its weighted family is hard except at six points, also on its failing systems (the corrected analysis); (4) at four places no law is mutually selecting except possibly five weak classes: signed not-all-equal never fails for k >= 4 (Seymour, Thomassen), and every class that fails builds equality; (5) the knot's spaces compose only through hubs, and hub-free failing composition is parity. Package: a replay driver rerunning every cited check in a temporary copy, an independent recomputation of headline numbers in fresh code, a check tying every quoted number, and reviewer questions. Nothing is sent.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SELECTION-NOTE-20261101-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Proved by SELECTION-NOTE-20261101-001-P001: a self-contained 5-page note with replay and review package on native selection: the knot's coupling on its spaces is easy exactly at lam in {0, 1, -1, -3, oo}; not-all-equal is the only three-place law with mutual selection unless NP-complete problems are polynomial; parity's failures are recognisable but local, its weighted family #P-hard except at six points also on its failing systems (the corrected analysis recorded); at four places signed not-all-equal never fails and every failing class builds equality, leaving five weak classes; the knot's spaces compose only through hubs. replay.py reruns all sixteen cited checks (all equal to their frozen results), independent.py recomputes nine claims in fresh code, check.py ties seventeen quotations. No expert review; nothing sent, which is the owner's decision.",
+  "status_class": "proved",
+  "stop_rule": "Stop when the note compiles, the replay and the independent recomputation agree, and every quoted number is tied; stop and record a finding if a cited check fails on replay.",
+  "title": "A note: native selection, and why three places"
+}

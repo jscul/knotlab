@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A proves that every odd cluster shields the twists dual to its boundary classes (the wall group) and that surface automorphisms act on twist sectors; B decides by exhaustive enumeration under a frozen contract, with an independent checker, whether walls and symmetries explain every exact equality between the counts of one event under two twists on genus-2 square-tiled surfaces.",
+  "completion_gate": "",
+  "dependencies": [
+    "LOOP-SHIELD-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "TWIST-MAP-20261023-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner asked for the complete map of exact twist relations on genus 2: do lattice symmetry, planar duality and walls explain every exact relation between twists? An event is the full cyclic structure of a twisted sector up to the lattice of each cluster and its parity. Planar duality maps a genus-2 square tiling to a different graph (its dual has a 12-sided face), so it predicts no relation inside one surface; the predicted relations are the wall group of each event (the duals of the boundary classes of its odd clusters, which span the radical of each cluster's lattice) and the surface's automorphisms. Scoping (scratch, not evidence): on two surfaces every predicted equality holds exactly, but further exact equalities appear that neither explains, for example 69120 = 69120 for three even horizontal loops under the twists dual to h1 and h2, and wall moves along even loops account for only part of one such event. A: the wall group and the symmetry action, proved. B: the exhaustive map on genus-2 surfaces, with fresh surfaces deciding completeness.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TWIST-MAP-20261023-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-23. Answer: no. Walls (now proved for clusters of any rank: the duals of the radicals of the odd clusters' lattices), the tiling's automorphisms and planar duality (which relates no two counts within a genus-2 tiling) do not explain every exact twist relation: on four independent fresh genus-2 surfaces they leave 31 exact equalities (counts of at least 1000) unexplained. Proved: the count of orientations with a given skeleton factorizes into a cyclic piece and the acyclic orientations of the graph with clusters shrunk to points (T(0,2) and T(2,0) of frame matroids), so a twist reaches a count only through these two pieces. Measured (frozen experiment, partially supported): every unexplained equality holds skeleton by skeleton; 25 of 31 are isomorphisms of the reduced pieces, often by symmetries the surface lacks; 6 on L(3,1,3,1) are not (equal acyclic counts of non-isomorphic pieces). Recommendation: Continue at three places with the dual-pair identity for three-place line contradictions; interest 2/3; deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. Stop when A is proved and B has decided completeness under its frozen rule; do not hunt for the extra mechanism beyond one bounded attempt, which is recorded with its result.",
+  "title": "The complete map of twist relations on genus 2"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "A proves the ten classes and their regimes with exhaustive checks, the percolation reduction of 'x or (h != h')' with winding classification on small tori, and its two-sided bounds; B runs a frozen confirmatory test of the census and of Pinson's prediction on several shapes.",
+  "completion_gate": "",
+  "dependencies": [
+    "BASE-CRITICALITY-20261022-001Z",
+    "EMERGENCE-BITS-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "CONTACT-CENSUS-20261022-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved the recommended continuation of BASE-CRITICALITY-20261022-001: a census of the placed three-variable contacts on square tori with odd sides, with an exact test of 'x or (h != h')' against Pinson's winding formula. It serves open question 9 and the critical-emergence result. Scoping found: the 204 placements of the 34 three-variable knots fall into 10 classes under spoke swap, joint-value swap and reversal; 6 classes have a vacuum and hold nothing; parity is frustrated by one face and swap-or-order by a 2 x 3 domino, so both are extensive; not-all-equal and 'x or (h != h')' have no frustrating patch and are global only. 'x or (h != h')' is consistent exactly when its h != h' edges, Bernoulli percolation at 1/2, contain no odd cycle, that is no cross cluster and no cluster winding in an odd class; Pinson's conformal formula then predicts 1.50846 bits on square tori with both sides odd and 1.98520 on 1:2 tori, and simulations gave 1.52-1.55 and 1.97-2.02. A proves the census, the reduction and two-sided bounds for 'x or (h != h')'; B measures the census and tests the conformal prediction on several shapes.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CONTACT-CENSUS-20261022-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-22. On square-lattice tori with one contact per edge, hidden joints and a fair visible spoke, the 204 placements of the 34 three-variable knots form 10 classes: six have a vacuum and hold nothing; parity and swap-or-order frustrate locally and grow with the area; exactly two, not-all-equal and 'x or (h != h')', hold a scale-free amount set by shape. 'x or (h != h')' is consistent exactly when its disequality edges, bond percolation at 1/2, are bipartite, so its emergence is bounded on both sides, and Pinson's conformal winding formula (cited, not proved) predicts its limit: 1.5085 bits predicted vs 1.512 +- 0.014 measured on square tori with odd sides, and agreement within about 1.5 standard errors on six shapes (confirmatory). Not-all-equal is flat at 0.835 bits on square tori; its invariant and lower bound are open. Next (owner's choice): not-all-equal's invariant (2/3), banking (1/3), or the lower bound (1/3).",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. If the conformal prediction fails at the largest sizes, record the discrepancy and stop; do not extend to other lattices or value domains in this epic.",
+  "title": "Which three-literal contacts are critical? A census at the base"
+}

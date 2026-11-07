@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-APPROX-20261024-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "NATIVE-APPROX-20261024-001C-E001",
+    "contract_path": "experiments/NATIVE-APPROX-20261024-001C/NATIVE-APPROX-20261024-001C-E001_tree_decay/contract.json"
+  },
+  "id": "NATIVE-APPROX-20261024-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Frozen-contract experiment: on random native trees with random slot assignments and random internal pins, measure exactly, by interval propagation over all leaf boundary conditions, how the worst-case influence of the boundary on the root edge decays with depth, for the six open knots against windable, forcing and parity controls; test whether the open knots show exponential decay, evidence for a correlation-decay approximation scheme.",
+  "ownership": {
+    "root": false,
+    "scope_id": "NATIVE-APPROX-20261024-001"
+  },
+  "parent": "NATIVE-APPROX-20261024-001",
+  "schema_version": 1,
+  "status": "Closed: refuted under its frozen rule. NATIVE-APPROX-20261024-001C-E001 computed exact worst-case boundary envelopes on 100 random native trees per knot, pin probability and depth (4 to 16). Without pins all six open knots kept width 1 on every tree at every depth: the boundary can force the root edge either way, as for not-all-equal, parity and the no-lone-value knots. With pin probability 0.2 their median width fell by about 0.43 per level but was 0.0014 to 0.0025 at depth 12, above the 0.001 threshold. Controls passed: interval propagation matched brute force on 700 trees, and the decaying controls fell by 0.23 to 0.30 per level. The independent re-check reproduced the verdict.",
+  "status_class": "refuted",
+  "stop_rule": "",
+  "title": "Correlation decay for the open knots on native trees"
+}

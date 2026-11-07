@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CLASSK-DICHOTOMY-20261026-001A",
+    "COPRIME-CLASS2-20261026-001D",
+    "PATTERN1-CHECKPOINT-20261026-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CLASSK-DICHOTOMY-20261026-001B-E001",
+    "contract_path": "experiments/CLASSK-DICHOTOMY-20261026-001B/CLASSK-DICHOTOMY-20261026-001B-E001_sector_counts_on_gadget_surgeries/contract.json",
+    "report_path": "research/CLASSK-DICHOTOMY-20261026-001B/report.md"
+  },
+  "id": "CLASSK-DICHOTOMY-20261026-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Under a frozen contract, build gadget surgeries by the projector construction (COPRIME-CLASS2-20261026-001D section 3) for all three character multiset patterns (and a disjoint union), compute the actual twisted cup products and obstruction classes, and compare the per-sector counts for several class-(K) groups (including groups with two non-constant sectors and with commutators involving the trivial character) with the sector partition-function predictions of ticket A; also knot-group counts against predictions calibrated on single twist knots.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CLASSK-DICHOTOMY-20261026-001"
+  },
+  "parent": "CLASSK-DICHOTOMY-20261026-001",
+  "schema_version": 1,
+  "status": "Closed: supported under its frozen rule. Experiment CLASSK-DICHOTOMY-20261026-001B-E001 built eight gadget surgeries by the projector construction (patterns {a, b, c}, {s, s, s^-2}, {s, s, s} on K2, the digon and K2 + K2 at p = 7, r = 6, and pattern 2 at p = 5, r = 4; 589 to 5,324 crossings): every surgery has H1 = Z/r with psi onto, dimensions as the gadget model, pure leaves, and all 108 group-fixture comparisons of sector kernel counts (every sector, closed surgery and knot exterior, twelve class-(K) groups including two hard sectors and trivial-character commutators) equal the frozen predictions of CLASSK-DICHOTOMY-20261026-001A and its u-extended knot model; the checkpoint values 133 and 2401 are reproduced; machinery controls pass. Two runs killed by session restarts are kept as logs; the unchanged relaunch finished in 3,058 s. Report: research/CLASSK-DICHOTOMY-20261026-001B/report.md.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: sector counts on explicit gadget surgeries for all three patterns"
+}

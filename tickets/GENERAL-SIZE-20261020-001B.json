@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The immersion lemma, the unconditional bound and the conditional reduction are proved, with the immersion construction checked on non-planar graphs immersed in grids.",
+  "completion_gate": "",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GENERAL-SIZE-20261020-001B-P001"
+  },
+  "id": "GENERAL-SIZE-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove (1) Tseitin refutation size in resolution and PCR is monotone under weak immersions of bounded-degree graphs, up to an additive poly(n) 2^O(Delta); (2) every graph of treewidth t needs PCR and resolution size 2^Omega(t^(1/9)/polylog t); (3) if every bounded-degree graph of treewidth t immerses a bounded-degree expander or cellular graph of treewidth t/polylog t, then 2^Omega(t/polylog t) for all bounded-degree graphs. Check the immersion construction on non-planar graphs immersed in grids.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GENERAL-SIZE-20261020-001"
+  },
+  "parent": "GENERAL-SIZE-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by GENERAL-SIZE-20261020-001B-P001 (prose, with cited grid-minor, degree-3 sparsifier and genus-separator theorems): Tseitin resolution/PCR size is monotone under weak immersions up to a 2^O(Delta) factor; every graph needs resolution and PCR size 2^Omega(tw^(1/9)/polylog tw); the open problem reduces to finding a cellular or compact topological minor in every subcubic graph, where immersions add nothing; on block-scrambled wall networks compact minors provably fail (genus-crossing separator bound, treewidth lower bound sketched) and cells exist only at scale sqrt(b), a candidate counterexample to the reduction's hypothesis. Checks pass; the general case remains open.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if the immersion construction fails on a checked instance.",
+  "title": "Proof: immersion monotonicity, an unconditional bound for all graphs, and a reduction of the open problem"
+}

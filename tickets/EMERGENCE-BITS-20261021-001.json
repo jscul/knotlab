@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "A proves the zero sets, the knot formula, the statistical bound and the three capacities with exhaustive checks on at most four bits and explicit maximizers; B proves the join formula, the long-knot dichotomy, the network bound with its equality case and the torus recolouring with exhaustive checks on small graphs; C runs a frozen confirmatory test of size-independence on square tori with honeycomb, triangular and bipartite controls.",
+  "completion_gate": "",
+  "dependencies": [
+    "BASE-THREE-20261021-001Z",
+    "KNOT-COMPETITION-20261019-001Z",
+    "KNOT-LOOPS-20261019-001Z",
+    "LOOP-HOMOLOGY-20261021-001Z",
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "EMERGENCE-BITS-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner chose option 1 after the base-three epic: measure in bits how much a relation's whole hides from all its pairs (zero exactly for relations definable by two-literal clauses, one bit for parity, log2(8/7) bits for one three-literal clause), then ask how emergence adds up as three-literal contacts build chains, rings and networks, and how much n distinctions can hold. It serves open questions 3 (composition; composition across networks without groups was open) and 9 (space from a law) and the synergy reading of knots in docs/KNOT_INTUITION.md. Scoping found: (1) a statistical twin of the measure, the divergence of the uniform distribution from the pairwise exponential family, vanishes exactly on least sets of pairwise energies, so the not-all-equal knots are the only statistically silent knots; (2) capacities: n - log2 CAN(2,n,2) bits logically (minimum covering arrays) and at most n - log2(n+1) statistically, attained exactly by Hadamard designs (the Fano plane's parity network on seven distinctions); (3) a network of three-variable knots with hidden joints holds at most one bit per independent cycle, exactly for parity, while some other links hold a constant fraction per cycle; (4) on tori woven from not-all-equal knots, emergence grows with size on the triangular lattice, vanishes on the honeycomb, and stays near 0.84 bits at every size on the square lattice. A proves the measures and capacities, B the accounting for joins, long knots, chains, rings and networks, and C tests size-independence on surfaces in a confirmatory experiment.",
+  "ownership": {
+    "root": true,
+    "scope_id": "EMERGENCE-BITS-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. The bits a relation hides from its pairs vanish exactly for two-literal relations; one clause hides log2(8/7), one knot at most one bit (only parity), while n distinctions can hide n - log2 CAN(2,n,2) logically and n - log2(n+1) statistically (Hadamard designs; the Fano parity networks on seven bits). The statistical twin vanishes exactly on least sets of pairwise energies, so the not-all-equal triangle is the only silent knot. Parity alone carries emergence along chains and rings; laws without memory have only vanishing long contacts; networks with hidden joints hold at most one bit per independent cycle, exactly for parity, superadditively over frustrating patches. Not-all-equal tori: extensive on the triangular lattice, vanishing on the honeycomb, about 0.83 bits at every tested size on square tori with odd sides (confirmatory). Next (owner's choice): criticality at the base (2/3), worlds from loops and contacts, or banking.",
+  "status_class": "complete",
+  "stop_rule": "One bounded epic. If the network bound or size-independence fails, record the counterexample and the corrected statement; do not extend to other value domains or to dynamics in this epic.",
+  "title": "Emergence in bits: how much a whole hides from its pairs"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "INTERFERENCE-20261029-001Z",
+    "SHARED-SUBDIVISION-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SIGNED-SUBDIVISION-20261029-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-29 ('Yes, let's continue'), taking the recommendation of INTERFERENCE-20261029-001: interference on genuine two-dimensional space. Setting of SHARED-SUBDIVISION-20261029-001: on the triangular-lattice torus put copies of one three-bit law on every up triangle (S2) or on every triangle, with one placement for up and one for down triangles (S1); cut every triangle into k^2 with the new vertices shared between neighbours (scale k), so that the fine lattice is the same lattice and the coarse sites are the fine sites (k i, k j). With counts, exactness keeps a knot only through affine laws (22 of 122 rules at scale 2, 6 at scale 3), and not-all-equal never reproduces itself. Here the law carries weights: a function from the knot's tuples to the nonzero reals, signs allowed, under the interference reading adopted on 2026-10-29 (a state is allowed when its signed witness sum is nonzero). A weighted rule is exact at scale k when, for every coarse assignment, the signed sum over fine extensions equals one constant times the coarse weight; it is support-exact when the two have the same support. Questions: (A) with weights plus or minus one, which of the 122 rule shapes and their sign patterns are exact or support-exact at scale 2 and scale 3, and does any non-affine support survive; (B) with arbitrary real weights, does any non-affine knot become exact, searched on the coarse 2-torus (a cheap filter that reproduces the counted census exactly) and confirmed on larger tori, with exact algebra for the one-parameter cyclic families; (C) what the survivors share (expected: affine supports with quadratic-form signs, the stabilizer-type laws). Standalone value relative to the nearest known work: SHARED-SUBDIVISION-20261029-001 decided the counted case; exact real-space renormalization on two-dimensional lattices is rare, and negative or complex weights appear in renormalization through Yang-Lee zeros and stabilizer (quadratic-phase) states, but no classification of which signed or real three-bit laws reproduce themselves under shared subdivision was found. A non-affine survivor would be the program's first two-dimensional space built by a law; a proof or exhaustive evidence that exactness stays affine even with interference would join the program's parity-only results into one statement about genuine space. Intuitions targeted: space from logic without a drawn space; everything relational (interference); the two/three boundary. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SIGNED-SUBDIVISION-20261029-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: interference does not build genuine two-dimensional space under shared subdivision of the triangular lattice. A (proved, 944 gauge orbits): weights plus or minus one add no exact or support-exact shape; signs sort the 22 affine exact shapes into weight-exact and support-only classes. B (proved): positive weights add nothing; a sign-parity obstruction excludes 54 of the 100 non-affine shapes at scale 2 (34 at scale 3) for every real weighting; the affine shapes' exact real weightings are gauge copies of the plus-minus-one exact laws, with spurious exact weights on small tori (2^(1/9), golden ratio, reciprocal tribonacci). C (closed null): the search found no exact weighting on the 46 densest shapes but failed its power check. Next (awaiting the owner): signed not-all-equal on the level-k Sierpinski gaskets (scoping: exact for k = 2 to 11), 3/3.",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) every rule shape and every plus-minus-one sign pattern is decided for exactness and support-exactness at scale 2 (coarse sides 2, 3, 4) and scale 3 (coarse sides 2 and 3), with the survivors characterized; (ii) the real-weight search has covered every rule shape on the coarse 2-torus with recorded residuals, any candidate has been confirmed or refuted on larger tori, and the one-parameter cyclic families are settled by exact algebra; (iii) the decision note states whether interference builds a non-affine exact law on genuine two-dimensional space, with the recommendation. Record negative results.",
+  "title": "Interference on genuine two-dimensional space: signed and real laws under shared subdivision"
+}

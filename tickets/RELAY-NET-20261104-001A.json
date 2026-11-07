@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "STRIP-RELAY-20261103-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "RELAY-NET-20261104-001A-P001"
+  },
+  "id": "RELAY-NET-20261104-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof and computation. After a frozen hop a relay arrives at the next cut as an arc signal: two ports fixed and disagreeing, the third free. The arc lemma: an arc signal freezes exactly the lines with a corner on the own arc between its two fixed ports (sufficiency from the reading lemma; the converse computed on generic pieces). So a station passes an arc signal on without loss exactly when its out-line has a corner on that arc. Measure the signal at every cut of aligned and misaligned chains exactly (everything downstream collapsed to the cut line), and the depth relays reach in chains of strips, grids and cubes with every out-cut placement.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RELAY-NET-20261104-001"
+  },
+  "parent": "RELAY-NET-20261104-001",
+  "schema_version": 1,
+  "status": "Proved by RELAY-NET-20261104-001A-P001: an arc signal (two ports fixed and disagreeing) freezes exactly the lines with a corner on the own arc between its fixed ports (sufficiency from the reading lemma; converse computed on generic pieces, 160 of 160 and 0 of 3,542), so a station passes it on exactly when its out-line lies on that arc; aligned chains repeat it losslessly from cut to cut and carry relays four cuts deep, misaligned ones lose it at the first station; at separated cuts every creation k cuts away passed cut k as a live signal",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Arc signals and repeaters"
+}

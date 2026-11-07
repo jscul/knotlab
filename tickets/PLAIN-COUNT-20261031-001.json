@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SOFT-CROSS-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "PLAIN-COUNT-20261031-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-31 ('Yes let's continue'), taking the recommendation of SOFT-CROSS-20261031-001: remove the signs from the hardness of counting on the knot's graphs, and classify plain (unsigned) Pfaffian triple systems by how their own Pfaffian class twists. Scoping before activation (not evidence): (i) on the K3,3 instance of SOFT-CROSS A with one junction, replacing its 11 negated edges by unsigned long edges and interpolating 12 plain counts at t = -1 returns the signed count 354996 exactly, and the plain instances (to 720 vertices) are certified Pfaffian, non-planar, with three twisted branches; (ii) switching inside the pages leaves the junction with 6 negations (2 + 4) instead of 11; (iii) every plain page among 85 (page, square) pairs from planar braces is twisted, matching a face test, and Euler's formula explains it (at least six square faces, at most five meet the junction square); (iv) no pair of plain pages (50 distinct page tensors), even with signs on the junction legs, gives a soft crossing with nonzero double entry, so signs inside the pages are needed and interpolation must remove them. Questions: (A) prove that counting 2-colourings of 3-regular 3-uniform hypergraphs with Pfaffian incidence graphs is #P-hard, and run K3,3 end to end through plain Pfaffian instances only; (B) prove that plain planar pages are always twisted, hence that every trisum square of a plain Pfaffian brace has three twisted branches and that the Fano plane is the only non-2-colourable plain system whose incidence graph is a brace; check against the census. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PLAIN-COUNT-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete: plain triple systems with Pfaffian incidence graphs are #P-hard to count (signs interpolate away; K3,3 from 100 plain counts); every plain planar page is twisted (Euler), so plain trisum braces branch their twists at every square, and the Fano plane is the only plain non-colourable brace. Next: counting on plain braces (2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop when A and B are proved with their checks and the decision note records the recommendation.",
+  "title": "Counting the knot's graphs without signs"
+}

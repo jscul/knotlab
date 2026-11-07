@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COPRIME-CLASS2-20261026-001B",
+    "COPRIME-CLASS2-20261026-001C"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CLASSK-DICHOTOMY-20261026-001A-P001"
+  },
+  "id": "CLASSK-DICHOTOMY-20261026-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "For p odd, r | p - 1 and G of class (K), prove that on the r-surgeries whose triple product is a gadget tensor of one of the three character multiset patterns ({a, b, c} distinct, {s, s, s^-2} with s^3 != 1, {s, s, s} with s^3 = 1; zero on all other components), the number of homomorphisms to G is a sum over k in Z/r of c_k lambda_k^n mu_k^m Z_{W_k}(Gamma), with c_k > 0 constants and Z_{W_k} the partition function of a positive, symmetric, translation-invariant weight W_k built from the regraded commutator pairing of N x| C_r with the action raised to the k-th power; W_k is constant unless one of its three pairings is nonzero, and a hard pair makes W_1 nonconstant. Check against direct enumeration for random class-(K) groups, all patterns, all sectors and multigraphs with parallel edges, and the count formula against independent lifting counts on small surgeries.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CLASSK-DICHOTOMY-20261026-001"
+  },
+  "parent": "CLASSK-DICHOTOMY-20261026-001",
+  "schema_version": 1,
+  "status": "Proved by CLASSK-DICHOTOMY-20261026-001A-P001: for p odd, r | p - 1 and any class-(K) group G, on an r-surgery whose triple product is the gadget tensor of a multigraph for a slot triple of one of the three patterns ({a, b, c}, {s, s, s^-2}, {s, s, s}), |Hom(pi1 M, G)| = sum over k in Z/r of c_k lambda_k^n mu_k^m Z_{W_k}(Gamma): sector k is sector 1 of the group with the action raised to the k-th power, the slot conditions reduce to edge and vertex conditions, and a Fourier step gives a positive even weight W_k(xi, eta) = |K2| |K3| p^-rank on U = B1 + A23*; W_k is constant exactly when its three pairings vanish (rank one, else rank at least two), a hard pair makes W_1 nonconstant, no hard pair makes every W_k constant, and each term is multiplicative over disjoint unions. Checked: count formula against independent lifting counts on 11 surgeries; 1274 gadget cases three ways (122 nonconstant), 7 known values, 170 hard pairs, 934 negative controls.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Class-(K) counts on gadget surgeries are positive sums of sector partition functions"
+}

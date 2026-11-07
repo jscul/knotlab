@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "HUB-GLUE-20261102-001Z",
+    "MUTUAL-SELECTION-20261031-001Z",
+    "THREEFOLD-GRAMMAR-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SPLICE-TREE-20261102-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue', approving HUB-GLUE-20261102-001's recommendation): emergence along the tree of cuts. In a knot space glued from several pieces, are the knots kept after any removal iterated 2-sums at held cuts, with new emergence only at the cuts the removal opens? Test on chains and trees of three and four pieces; find which cuts a removal opens, what stays fixed, and whether opened cuts interact. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SPLICE-TREE-20261102-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-02: yes, as posed. A removal holds the cuts pointing toward it and opens those pointing away; the knots crossing only held cuts are exactly iterated 2-sums through held hubs of knots crossing no cut, so new emergence lives only across opened cuts. But the opened cuts form one zone: new knots are carried across them and created jointly (three or four points), and no hub-level feature (touching hubs, a shared port on the removed line, the removed line's hub) decides this; chains of K4^(3) pieces create nothing; next: emergence needs a handle (3/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the tree decomposition is proved or refuted on chains and trees of up to four pieces, and the interaction of opened cuts is measured, with every computation independently checked.",
+  "title": "Emergence along the splice tree"
+}

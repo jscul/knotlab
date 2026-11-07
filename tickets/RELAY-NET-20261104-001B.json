@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "RELAY-NET-20261104-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "RELAY-NET-20261104-001B-P001"
+  },
+  "id": "RELAY-NET-20261104-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Computation and exact checks. Hubs: one opened handle relayed into several grids at once. Direction: no creation upstream in any network. Bypasses: stations whose two cut vertices are adjacent relay without loss, as the second cut returns an edge to the previous piece. Exact creation (join method) on small networks: a hub with two receivers, an aligned chain three cuts deep, and a two-cut relay.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RELAY-NET-20261104-001"
+  },
+  "parent": "RELAY-NET-20261104-001",
+  "schema_version": 1,
+  "status": "Proved by RELAY-NET-20261104-001B-P001 (computation; exact on three small networks): a hub receiving an opened handle's relay copies it into several receivers at once; no relay creates upstream of the handle's piece in chains of strips, cubes, grids and thick tubes; stations with adjacent cut vertices are bypassed without loss; exact creation confirms a broadcast, a three-cut chain and a two-cut relay",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Broadcast, depth and bypasses"
+}

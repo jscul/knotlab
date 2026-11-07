@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-RELATIONS-20261022-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "ODD-LOOP-20261023-001A-E001",
+    "contract_path": "experiments/ODD-LOOP-20261023-001A/ODD-LOOP-20261023-001A-E001_four_by_four/contract.json"
+  },
+  "id": "ODD-LOOP-20261023-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exhaustive enumeration of all 2^32 orientations of the 4 x 4 torus at shears 0, 1 and 2, classified in the four twist sectors; for every primitive class c, compare the number of orientations whose twisted cone is the line through c in the two sectors odd on c. Exact equality for every class and shear supports the identity at this size; any difference refutes it.",
+  "ownership": {
+    "root": false,
+    "scope_id": "ODD-LOOP-20261023-001"
+  },
+  "parent": "ODD-LOOP-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: supported by ODD-LOOP-20261023-001A-E001 (exhaustive enumeration, frozen contract, 13 tori, 4012 s within the 6000 s budget). Controls pass on every torus: per sector the counts add up to all orientations, the strong-component and odd-cluster tests never disagree, contractible and cross counts are equal in every twisted sector, and the untwisted sector is never flagged. The odd-loop identity holds exactly in all 126 comparisons: every primitive class on 3 x 3, 4 x 3, 3 x 4, 5 x 3 and 4 x 4 at every shear, including the diagonal classes where they occur (1024 = 1024 for (1, 1) and (1, -1) on 4 x 4 shear 0; 82944 = 82944 at shear 1; 2109312 = 2109312 at shear 2). The independent checker matches the 3 x 3 rows to TWIST-RELATIONS-20261022-001A-P001, confirms the rotation and mirror symmetries exactly, and replays 4 x 4 shear 1 on 300000 orientations by other code (worst 2.52 sigma). The shear-independent form already fails at 4 x 4: the horizontal line has 39168000 orientations at shears 0 and 1 and 39085056 at shear 2.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: the exact count on the 4 x 4 torus"
+}

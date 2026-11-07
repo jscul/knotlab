@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z",
+    "GEOMETRY-LAW-20261029-001Z",
+    "EXACT-TOWERS-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "INTERFERENCE-20261029-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Requested by the owner on 2026-10-29 after reading about the two October 2026 refutations of the Exponential Time Hypothesis (OpenAI, 'The Exponential Time Hypothesis is False', 25 October 2026; Anthropic, 'A 2^{o(n)} time algorithm for 3-SAT', hexagon:2610.00577): 'Let's see if we can use anything from their proof to further our local research. This should be comprehensive.' Both algorithms count satisfying assignments of k-CNFs exactly in time 2^{O(n/sqrt(log n))} on sparse inputs, and both get their speed from cancellation: clause indicators written as 1 - prod(1 - literal), sums whose intermediate terms are signed and count nothing, a low-degree polynomial matching (-1)^j on the bulk of a binomial (OpenAI), and the octonion eight-square identity rewriting two crossing equality tests as a four-place parity times signs (Anthropic). The contact-first program has so far worked only with allowed states and nonnegative witness counts, and three earlier epics recommended 'signed witnesses' without taking it up (HUB-DIMENSION, NATIVE-COUNTING, TWIST-3D). This epic inventories every technique of both proofs against the program's open questions (in the decision note) and tests the transfers that can change a conclusion, at three levels: (A) definability, whether cancelling witnesses move the two/three boundary (open question 2, witnesses); (B) patterns of patterns, whether signed laws survive native coarse-graining, where GEOMETRY-LAW-20261029-001 proved that under counting only parity does (open question 9); (C) cost, an independent finite replay of the cancellation cores of both refutations (the eight-square identity and its grouped pieces, the partition pieces behind the sqrt(log n) rate, and the swap-matrix construction), with the positivity barrier that explains why nonnegative rewritings cannot help. Standalone value relative to the nearest known work: the classical facts behind (A) (Schaefer 1978 majority closure; holographic transformations, Valiant 2008; real rank of 2x2x2 tensors and Cayley's hyperdeterminant) and the renormalization background of (B) (exact real-space renormalization on hierarchical and fractal lattices, including complex weights) do not classify which three-bit knots are reproduced with signs by their own native copies, nor how many cancelling witnesses each knot needs; (C) is an independent check of two unreviewed external claims at their decisive finite steps. Intuitions targeted: the two/three boundary; everything relational (harmonies as cancellation); growth of emergent information across scales; space from logic without a drawn space. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "INTERFERENCE-20261029-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: interference, after the two 2026 ETH refutations. A: the program's two/three boundary is a boundary of positivity; with nonnegative weights no sum over hidden bits of two-variable factors has a knot as support, while with signs every three-bit knot is exactly one hidden bit away from pairs and a 3-CNF is one hidden bit per clause (the inclusion-exclusion form the refutations start from). B: where counting rebuilds only parity, signed laws of 14 of 16 classes are rebuilt and 12 reproduced exactly by native gadgets of three and five copies, 10 on the native triangle (Sierpinski gasket; signed not-all-equal with factor 3); signs supply identity wires; the Fibonacci knots are never rebuilt; the shared-boundary substitution stays parity-only for signed cyclic laws. C: the finite cancellation cores of both refutations replay exactly (exploratory). Next: interference on genuine two-dimensional space (2/3), deferred to the owner with the decision request on the interference reading.",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) the two/three boundary under cancelling witnesses is settled for three-bit knots with the minimum number of witnesses per class; (ii) native gadgets of at most five copies are classified for signed laws with plus-minus-one weights, exactly and by support, against the counted baseline, with the mechanisms and towers of the smallest exact gadgets, and the shared-boundary substitution is tested on the first closed surfaces; (iii) the finite cancellation cores of both refutations are replayed independently or a discrepancy is recorded; (iv) the decision note maps every technique of both proofs to the program with a verdict, and records the recommendation. Record negative results."
+}

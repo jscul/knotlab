@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves its claims with checks; every census case agrees with the predictions or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "MALTSEV-CONDITIONS-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "CYCLE-TOPS-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after MALTSEV-CONDITIONS-20261021-001, which recommended testing its Conjecture 6 (every law that composes like cycles is Mal'tsev on its tops) and the hidden-circuit question on the closest laws outside the proved families, then a proof attempt through rectangularity modulo the tops. Scoping found two things. (1) Conjecture 6 as stated is false: the law of MALTSEV-CONVERSE-20261020-001B-P001, Proposition 1 (parity beside the isolated-value relation J), composes like cycles, but its whole-domain top is equality and J has no Mal'tsev operation; the natural repair restricts the condition to ranges of variables that lie in knots. (2) A parallel-copy argument appears to prove the top lemma for every law that composes like cycles. A (exploratory census): block removals of the Z3 lift, lifts of the shadow K6, two disjoint unions and controls; it tests elimination, hidden circuits, the top images of ties and knots, and Mal'tsev operations modulo the tops on knot ranges and on all ranges. B proves that reflexive relations lie below the top, the top lemma, that tie top images are bijections, that knot top images are functional or overlapping at each variable, the refutation of Conjecture 6 and its repair for disjoint unions.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CYCLE-TOPS-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. In every law that composes like cycles, every system has exactly the circuits of its image modulo the tops, because each variable and its blurred copy are parallel in one system; so no circuit hides below the tops, and the top-lemma form of MATROID-CONVERSE-20261021-001B-P001 Conjecture 5 is proved without any difference operation. Reflexive pp-definable relations lie below the top, tie top images are bijections, and knot top images are functional or overlapping at each variable. Conjecture 6 of MALTSEV-CONDITIONS-20261021-001B-P001 is false (parity beside J; K4 beside Z3: the whole-domain top is equality); restricted to knot ranges it passes to disjoint unions and holds in every census law. Of 46 block-removal classes exactly five compose like cycles in the census, two of them new. Next (owner's decision): prove knot top images functional, then test group-like Latin structure (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if a law that composes like cycles is found with no polymorphism Mal'tsev modulo the tops on the ranges of its knot variables; that counterexample to the repaired conjecture would become the subject.",
+  "title": "Tops of laws whose knots compose like cycles"
+}

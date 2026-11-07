@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "The note states and proves the theorem self-containedly, the replay verifies both bounds and the direct degree on the declared graphs, and the note's numbers match the replay.",
+  "completion_gate": "",
+  "dependencies": [
+    "DEEP-HOLES-20261020-001Z",
+    "CUTWIDTH-DEPTH-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TSEITIN-NS-DEGREE-NOTE-20261020-001-P001",
+    "program": "proof-complexity"
+  },
+  "id": "TSEITIN-NS-DEGREE-NOTE-20261020-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Convert the results of DEEP-HOLES-20261020-001 and CUTWIDTH-DEPTH-20261020-001 into a self-contained note for proof-complexity readers, with a standalone replay script. Main statement: for a connected graph G with an odd charge and the standard Tseitin CNF (one clause per falsifying assignment of each vertex), the Nullstellensatz degree over a field of characteristic 2 is the maximum degree, and over any other field it is the toggle width of G, which lies between cutwidth(G) + 1 and cutwidth(G) + floor(maxdegree/2) and equals cutwidth(G) + 1 when the maximum degree is at most 3. New step: the duality between degree-d Nullstellensatz designs and level-d affine pseudo-distributions for this encoding, with a remark on the vertex-polynomial encoding. The replay checks both bounds in Nullstellensatz terms (an explicit refutation verified as a polynomial identity over the integers; an explicit design verified against every axiom multiple) and recomputes the degree by direct elimination. A targeted literature search found no prior statement of the exact degree; sharing the note is the owner's decision.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TSEITIN-NS-DEGREE-NOTE-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Proved by TSEITIN-NS-DEGREE-NOTE-20261020-001-P001: a 7-page self-contained note proves that the Nullstellensatz degree of the Tseitin formula of a connected graph, written clause by clause, is the maximum degree in characteristic 2 and the toggle width in every other characteristic, hence cutwidth + 1 at maximum degree three; the new step is the duality between refutations and pseudo-distributions. In the +-1 encoding the degree is exactly cutwidth when measured after reduction. replay.py (standard library) verifies both certificates and the degrees on ten cubic graphs, and check.py ties every number in the note to it. Not found stated after a targeted search; no expert review; nothing sent, which is the owner's decision.",
+  "status_class": "proved",
+  "stop_rule": "Stop if the duality step fails on any declared graph, or if a published statement of the exact degree is found.",
+  "title": "A checkable note: the Nullstellensatz degree of Tseitin formulas is the toggle width (cutwidth + 1 at degree three)"
+}

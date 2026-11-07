@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "DICHOTOMY-3D-20261025-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "HARD-3D-20261025-001 proved counting homomorphisms from closed 3-manifold groups #P-hard for S3, most dihedral groups, Q8 and A4, and left the dihedral group of order 16 open because two growth rates of its edge factors collide (256 x 16 = 64^2). Ask whether a second gadget separates the collision, and how far the method reaches toward the full dichotomy: is the count #P-hard for every finite non-abelian group? Tools: Dehn fillings of parallel copies of the edge curves (p-th root fillings, whose factors vanish on fluxes with no p-th root), anyon sectors of the quantum double whose target is a chromatic polynomial, and extraction by faces of the polytope of gadget growth rates. First discriminator: the order-16 dihedral group. Standalone value: the second open case named by Samperton and Weiss, and a map of which finite groups the method proves hard.",
+  "ownership": {
+    "root": true,
+    "scope_id": "DICHOTOMY-3D-20261025-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-25: toward the full dichotomy for counting in three dimensions. Dehn-filling parallel copies of the edge curves by square roots kills the reflection channels of the order-16 dihedral group, so interpolation recovers 4^m 8 P(G,4)/2^|V|; an index-p theorem gives explicit chromatic coefficients for every group with an abelian normal subgroup of prime index except one 2-group case. A bounded literature check found that the full dichotomy (#P-hard exactly for non-abelian groups) already follows from Galindo's 2026 Turaev-Viro dichotomy, which also predates HARD-3D-20261025-001's novelty claims. Next: full pivot to bounded first homology (2/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop if a second gadget does not separate the order-16 collision, or if a bounded literature check shows the question already answered.",
+  "title": "Toward the full dichotomy for counting in three dimensions"
+}

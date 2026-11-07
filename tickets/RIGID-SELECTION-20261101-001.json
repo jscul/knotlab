@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BEYOND-TWO-20261101-001Z",
+    "KNOT-CIRCUITS-20261020-001Z",
+    "MUTUAL-SELECTION-20261031-001Z",
+    "PINNING-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "RIGID-SELECTION-20261101-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue', approving BEYOND-TWO-20261101-001's recommendation): does composing like cycles force rigid selection? Test the remaining cycle-composing laws (coset laws of Z4, Z_(p^k), S3, D_p; the simple Mal'tsev laws on three values) for global failures on regular substrates that keep a knot after a line is removed, and prove rigidity where it holds. If a non-rigid global failure exists, build from it (by blurring) a law that composes like cycles, selects globally, counts hard and keeps a knot inside its selected spaces. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RIGID-SELECTION-20261101-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-01: composing like cycles does not force rigid selection, but selection spends the top layer. Over fields every global failure is rigid (corank 1), as are blurred laws, S3 and D_p; over Z_(p^k) with k >= 2 global failures keep knots (signed Z4 on a 6-point 4-regular substrate after every removal; at three places from 9 points). Over any finite chain ring a global failure leaves, after any removal, solutions whose top layer is one line, so kept knots have at most one full-range variable and hide at most k - 1 digits. Blurred signed Z4 on five values composes like cycles, selects globally, counts #P-complete and keeps knots below its top layer; at two values composing like cycles forces rigidity while the knot keeps knots; next: the top layer for every law that composes like cycles (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when rigidity is proved for the families where it holds and a non-rigid global failure is either exhibited (verified independently) or excluded on the bounded families; record the bridge only with its verified properties.",
+  "title": "Does composing like cycles force rigid selection?"
+}

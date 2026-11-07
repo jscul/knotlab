@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "B proves the immersion lemma, the unconditional bound and the conditional reduction, with executable checks of the immersion construction on declared instances.",
+  "completion_gate": "",
+  "dependencies": [
+    "CELL-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "GENERAL-SIZE-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Follows CELL-SIZE-20261020-001 (2^Omega(tw) on cellular and minor-free graphs). Bounded idea search on the open problem (general resolution, and PCR, size 2^Omega(tw) for Tseitin on every bounded-degree graph). Plan: (1) show Tseitin hardness is monotone under weak immersions (edge-disjoint path embeddings, crossings allowed) for resolution and PCR, by restriction, vertex splitting (a weakening) and renaming; (2) unconditional bound for all graphs from walls and the polynomial grid-minor theorem (Chuzhoy-Tan), 2^Omega(tw^(1/9)/polylog tw), new for PCR; (3) reduce the open problem to a graph question: does every bounded-degree graph of treewidth t immerse a bounded-degree expander (or a cellular graph) of treewidth t/polylog t? (4) record what is known toward it and what blocks it. Stop once the reduction and the unconditional bound are proved and the obstacle is recorded; do not attempt the graph conjecture itself in this epic.",
+  "ownership": {
+    "root": true,
+    "scope_id": "GENERAL-SIZE-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: bounded idea search on 2^Omega(tw) for Tseitin on all graphs. Proved: resolution and PCR size transfers along weak immersions at a 2^O(Delta) factor; every graph needs 2^Omega(tw^(1/9)/polylog tw) (new for PCR as far as we know); the open problem reduces, up to polylog factors, to every subcubic graph having a cellular or compact topological minor of nearly full treewidth, and immersions add nothing there. Obstruction: on walls joined by block-scrambled bundles along an expander, compact minors provably fail (treewidth lower bound sketched) and cells exist only at scale sqrt(b), a candidate counterexample. Correction: Dantchev-Riis (FOCS 2001) already proved resolution 2^Omega(n) on the n x n grid. Recommendation: research directions (Dantchev-Riis beyond grids; or convert the PC-degree and PCR-size results), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after the reduction, the unconditional bound and the obstacle record; stop earlier if the immersion lemma fails on a checked instance.",
+  "title": "Tseitin size on all bounded-degree graphs: immersions and the barrier"
+}

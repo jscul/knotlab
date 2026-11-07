@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DIAGONAL-LEMMA-20261021-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "DIAGONAL-LEMMA-20261021-001B-P001"
+  },
+  "id": "DIAGONAL-LEMMA-20261021-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) the shadow theorem: if a law M composes like cycles and every system of M has full ranges, and h is a surjection with h(M) contained in K, then in every system the product M x K has exactly M's constrained sets, so it composes like cycles; (2) the lift theorem: if M contains every constant tuple, composes like cycles, and each identification of its variables leaving two or more distinct variables is constrained, then doubling one value a and removing the single tuple (a, ..., a) leaves M's constrained sets in every system; (3) counterexamples to the local converse and the diagonal lemma: a non-rectangular 3-variable knot on 4 values (x+y+z=0 over Z3 with 2 doubled and (2,2,2) removed), product knots on 6 values (3 variables) and 4 values (4 variables), and a multi-sorted Boolean product; (4) the fibre-distance construction: a knot whose fibres at a variable are connected and at distance at least 2, or at distance 1 with a fibre of eccentricity at least 2, yields a failure; (5) what composing knots like cycles still forces, and the census candidates resolved.",
+  "ownership": {
+    "root": false,
+    "scope_id": "DIAGONAL-LEMMA-20261021-001"
+  },
+  "parent": "DIAGONAL-LEMMA-20261021-001",
+  "schema_version": 1,
+  "status": "Proved by DIAGONAL-LEMMA-20261021-001B-P001 (V1 prose proof with randomized checks). The local converse and the diagonal lemma are false. Shadows: if every system over a law M has full ranges and h(M) is contained in K for a surjection h, the product M x K has exactly M's constrained sets in every system. Lifts: if M contains the constants and has no free identifications, doubling a value a and removing (a, ..., a) keeps M's constrained sets. So K4 = (x+y+z=0 mod 3 on {0,1,2,3} with 3 read as 2) minus (2,2,2) is a non-rectangular 3-variable knot on 4 values with no direct case whose law composes all circuits like cycles; products give knots on 6 values (3 variables) and 4 values (4 variables). Positive: a knot whose fibre graph at a variable is connected with fibres at distance at least 2 (or 1 with eccentricity at least 2) yields a failure, so in a law composing knots like cycles each fibre graph is disconnected or dense. Two values admit no counterexample; three values are open. The census candidates were resolved: other lifted blocks and the dihedral action fail with larger systems.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: shadows refute the local converse"
+}

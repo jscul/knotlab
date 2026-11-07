@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A proves its claims with checks that rebuild every failing system and verify its circuits and free sets by brute force; every control is rejected.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-IMAGES-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "THOMSEN-KNOTS-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after KNOT-IMAGES-20261021-001, which proved that Latin circuits compose like cycles, left the Latin conjecture (no overlapping circuit) open, and showed that the 3-net law of the quaternion group Q8 has no polymorphism Mal'tsev modulo its top, so that either that law fails in large systems or Conjecture 7 of CYCLE-TOPS-20261021-001B-P001 is false. The owner approved deciding whether that 3-net composes like cycles: build the relation behind the certificate, test elimination and the Latin property on systems built from it, then attempt a proof through the Latin-circuits theorem. Scoping found that the relation is Thomsen's configuration (for groups: x2^-1 x1 and x3^-1 x1 commute), whose top image over Q8 is not affine; that it is a knot that allows x2 = x1 for every x3, so its fibres overlap; and that two copies sharing two variables fail elimination. The same doubling applies to every overlapping knot. A proves that no circuit of a law composing like cycles overlaps (the Latin conjecture), so composing like cycles is exactly having Latin circuits modulo the tops; that the 3-net of Q8 fails; and that the 3-net law of a Latin square composes like cycles exactly for isotopes of abelian p-groups.",
+  "ownership": {
+    "root": true,
+    "scope_id": "THOMSEN-KNOTS-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. The 3-net law of Q8 does not compose like cycles: Thomsen's configuration (for groups, x2^-1 x1 and x3^-1 x1 commute) is a knot that allows x2 = x1, two copies sharing x1 and x2 violate elimination in a 16-variable system, and its top image omega(c1 + c2, c1 + c3) = 0 is the non-affine relation behind the 416-equation certificate. More generally no circuit of a law composing like cycles overlaps modulo the tops (the Latin conjecture holds), so a law composes like cycles exactly when its circuits are Latin hypercubes modulo proper pp-definable equivalences; a Latin square's 3-net law does so exactly when the square is isotopic to an abelian p-group, and every non-abelian group fails. Conjecture 7 of CYCLE-TOPS-20261021-001B-P001 (Mal'tsev on knot tops) survives, open. Next (owner's decision): Mal'tsev structure on the tops, starting from three-variable circuits as abelian p-group isotopes (3/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop after A. Stop earlier if a law composing like cycles in every checked system is found with an overlapping circuit modulo certified tops; that law would refute the doubling argument and become the subject.",
+  "title": "Does the 3-net of Q8 compose like cycles?"
+}

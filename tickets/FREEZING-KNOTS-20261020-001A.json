@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen exploratory contract runs within budget; the independent check recomputes tree values exactly, estimates star nativity on explicit trees, re-solves stored balls and re-proves every unrealizable triple.",
+  "completion_gate": "",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FREEZING-KNOTS-20261020-001A-E001"
+  },
+  "id": "FREEZING-KNOTS-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory code-analysis experiment. At planted q-colourings of random d-regular graphs (q = 3: d = 3..7; q = 4: d = 9..11), measure the fraction of vertices, and of star knots on q neighbours of a vertex, that a change inside a radius-L ball can recolour, for small L on tree-like balls, and compare with exact values of the frozen-branch recursion on the d-regular tree. At small n (q = 3), test whether the star relation over all colourings of the graph is still the K1-K3 knot 'not all three colours distinct'. Controls: the ball computation agrees with exhaustive search; a wrong tree formula (d - 1 neighbours) is rejected; every realizable pattern carries a verified colouring.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FREEZING-KNOTS-20261020-001"
+  },
+  "parent": "FREEZING-KNOTS-20261020-001",
+  "schema_version": 1,
+  "status": "Closed: supported by FREEZING-KNOTS-20261020-001A-E001 (exploratory; frozen predictions P1-P4 all hold; controls pass; the independent check re-solved 840 balls, verified 2829 witness colourings and re-proved 3651 unrealizable triples). At planted colourings of random regular graphs (q = 3, d = 3..7, n = 240000; q = 4, d = 9..11, n = 60000), the fractions of vertices frozen at radius L and of star knots native at radius L match the exact tree values within about 0.01 at every measured radius. On the tree, star knots are native almost surely below d_f(3) = 6, d_f(4) = 10, d_f(5) = 15 and almost never at or above (nativity drops from 1 to below 0.001, discontinuously). In planted graphs with n <= 36 the star relation over all colourings is the K1-K3 knot for 96-100% of stars at d = 3 and 83-100% at d = 4, but for 0-4% at d = 5 and none at d >= 6: there the graphs have only 6 to 102 colourings, so the source-blind knot collapses with the global count of colourings, one degree before local freezing.",
+  "status_class": "supported",
+  "stop_rule": "Stop after the declared roster; stop early on a generator, solver or control failure.",
+  "title": "Experiment: native vertices and star knots at planted colourings of random regular graphs"
+}

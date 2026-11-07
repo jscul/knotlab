@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TRIPLE-TWIST-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TRIPLE-SHIELD-20261023-001A-E001",
+    "contract_path": "experiments/TRIPLE-SHIELD-20261023-001A/TRIPLE-SHIELD-20261023-001A-E001_exact_dual_pairs/contract.json"
+  },
+  "id": "TRIPLE-SHIELD-20261023-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Enumerate every configuration of the visible bits on triangular tori of sides 3 and 4, for the tiling placements, in all four twists; count the worlds that contradict on the torus and on each cylinder cover (lines along a class), and decide whether the two twists that differ by the dual of a class give exactly equal counts, separately for three-place and two-literal placements.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TRIPLE-SHIELD-20261023-001"
+  },
+  "parent": "TRIPLE-SHIELD-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: supported by TRIPLE-SHIELD-20261023-001A-E001 (frozen contract; every visible-bit configuration of the 54 tiling placements on the 3 x 3 (seen), 3 x 4 and 4 x 3 triangular tori and of 19 orbit representatives on 4 x 4, in all four twists, with cylinder covers along (1,0), (0,1) and (1,1); 6349 s; a first launch was killed by a machine reboot during 4 x 4 and relaunched unchanged, reproducing the first three tori byte for byte). Controls pass: totals, torus agreement across three sweeps, and placement 63 equal to the square-lattice orientation model in every class and twist. P1 holds: no contradiction in a fitting twist, and cylinders contradict only along classes odd relative to every fitting twist. P2 holds: all 19 nonzero orientation dual pairs are equal (39168000 = 39168000 on 4 x 4). P3 and P4 hold: on the fresh tori every nonzero dual pair not related by a symmetry map is unequal, 66 three-place and 32 shared-coin pairs, often lopsided (640592 vs 4736 on 4 x 4); 4 x 3 turned out to repeat 3 x 4 with the axes swapped (216 of 216 rows), so the independent fresh evidence is 3 x 4 and 4 x 4. The independent checker certified 1617 configurations both ways, recomputed 216 exact torus counts and verified 452 symmetry flags with explicit maps.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Experiment: exact dual pairs on the smallest tori"
+}

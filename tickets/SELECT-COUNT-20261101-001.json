@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-PATHS-20261101-001Z",
+    "KNOT-CIRCUITS-20261020-001Z",
+    "FOUR-PREFER-20261101-001Z",
+    "PINNING-20261031-001Z",
+    "THREEFOLD-AMPLITUDE-20261030-001Z",
+    "THREEFOLD-SURFACES-20261030-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SELECT-COUNT-20261101-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's test the 5 weak four-place laws, I would also like for you to do counted length as a measure', approving NATIVE-PATHS-20261101-001's recommendation and its alternative): (A) selection versus composition: test the five weak four-place classes of FOUR-PREFER-20261101-001 (13-17, the only candidates for mutual selection besides the knot) for cycle-like composition of their knots, with explicit witnesses, and decide whether any Boolean law both selects its spaces and composes its knots like cycles; (B) counted length as a measure: count the witnesses that the relations quantify away on the knot's spaces and test whether the counts form an additive, law-intrinsic measure over the decomposition into parts (uniform on accepted channel values, multiplicative across every cut), what it measures (handles and glue), whether it is independent of the routes' relations, and how it reads against the program's definitions of path, route and extended distance. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SELECT-COUNT-20261101-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-01: selection and cycle-like composition exclude each other for every Boolean law with a knot (the five weak four-place classes each yield a forcing-place knot whose copies form a hub; a law whose knots compose like cycles is affine, so its count is easy and it has no mutual selection); counted length is a measure on the knot's spaces (each side of every 2- or 3-edge cut has one count on its accepted channel values and the counts multiply to the amplitude: log 5 per Fano block plus glue, independent of the routes' relations, unchanged by transposition), a law-intrinsic measure on substrate routes, not a native distance; next: values beyond two (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when each weak class has an explicit witness for or against cycle-like composition and the general question is decided, and when counted length is either shown to be an additive measure on the decomposition with its values and its relation to the routes' relations established, or obstructed; record any failure honestly rather than broadening a claim.",
+  "title": "Selection versus composition, and counted length"
+}

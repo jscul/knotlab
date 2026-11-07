@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BPHP-RES-PARITY-AUDIT-20261019-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BPHP-RES-PARITY-AUDIT-20261019-001B-P001"
+  },
+  "id": "BPHP-RES-PARITY-AUDIT-20261019-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "For each formal definition that MathResearch.bitPHP_exponential depends on (linear clauses over F2, the two inference rules, what counts as a refutation, DAG-like reuse and node count, the BPHP clause set and the parameters), decide whether it matches the paper's equations (1.1) and (1.2) and the standard Res(\u2295) system of Itsykson and Sokolov. Classify each as faithful, stronger, weaker or mismatched, and back the classification with Lean witnesses against vacuity where practical: that refutations can reuse earlier nodes, that the standard rules are instances of the formal ones, and that the formal BPHP clause set is the standard one and is unsatisfiable.",
+  "ownership": {
+    "root": false,
+    "scope_id": "BPHP-RES-PARITY-AUDIT-20261019-001"
+  },
+  "parent": "BPHP-RES-PARITY-AUDIT-20261019-001",
+  "schema_version": 1,
+  "status": "Proved by BPHP-RES-PARITY-AUDIT-20261019-001B-P001: the formal statement of Braun's bound is faithful to the paper's (1.1) and (1.2) and contains standard DAG-like Res(\u2295) (any sound inference from at most two lines, unrestricted reuse, size counts every line); the formal clause set is unsatisfiable for every l and the formal system refutes l = 1 (Lean witnesses, standard axioms, both controls rejected).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Definitional fidelity of the formal main theorem"
+}

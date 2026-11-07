@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves the Mal'tsev characterization and the Boolean classification; every census case agrees with the predictions or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "GALLAI-KNOTS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "KNOT-CIRCUITS-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after GALLAI-KNOTS-20261020-001 found that colouring knots compose only by fusion and that a shared visible variable is a common hub. A system's knots are its minimal constrained variable sets of size at least 3 (Fact 2), where a set is constrained when not every combination of its variables' possible values occurs (each variable's open alternatives are the values it can take). Two knots compose like cycles when, for each distinction e they share, their union without e is still constrained: circuit elimination, under which the knots, ties and fixed points of every system are the circuits of a matroid. Question: which laws compose like cycles? A (exploratory census) tests elimination in pp-definable systems over every Boolean relation of arity at most 3, every binary relation on three elements, and the coset laws of small groups, against the predictions that a Boolean law composes like cycles exactly when it is affine (knots alone: affine or bijunctive) and a law with a Mal'tsev polymorphism exactly when every subalgebra of its polymorphism algebra has one maximal congruence. B proves the Mal'tsev characterization through rectangularity, the Boolean classification through Post's lattice and explicit hubs, and the readings: Tseitin knots are bonds, gauge knots are cycles, colouring knots form hubs. Background, not re-proved: Post's lattice (Post 1941; Boehler-Creignou-Reith-Vollmer 2003), rectangularity of Mal'tsev relations, the circuit axioms of matroids.",
+  "ownership": {
+    "root": true,
+    "scope_id": "KNOT-CIRCUITS-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-20. Knots and ties are a system's minimal constrained sets; two knots sharing a distinction compose like cycles when their union without it stays constrained (circuit elimination, a matroid). A law with a Mal'tsev polymorphism composes like cycles exactly when every subalgebra of its polymorphism algebra has a unique maximal congruence (no distinction splits into two independent coarse-grainings); fields do, and group coset laws do exactly when every subgroup has a unique maximal normal subgroup (S3 yes, Z2xZ2, A4, Z6 no). Boolean laws compose like cycles exactly when affine, and compose knots like cycles exactly when affine or bijunctive (Post's lattice). Two knots sharing only e hub exactly when their e-fibres all meet. Census A obstructed on one prediction by search depth (P1, P3, P4 hold), proof B proved, ledger Z. Recommendation: Research directions (space from knot matroids, 2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if the census finds a failure in a Mal'tsev law satisfying the congruence condition or no failure in a non-affine Boolean relation, or if prior work states the characterization.",
+  "title": "Knots as circuits: which laws compose knots like cycles"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-LOOPS-20261019-001B-P001"
+  },
+  "id": "KNOT-LOOPS-20261019-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove in Lean, for links that are knots (forgetting reading) with one witness in, one witness out and any number of middle distinctions: (1) each transfer table of a knot link is a permutation (identity or swap) or misses at most one pair; (2) a ring excludes a middle pattern exactly when every transfer along it is a permutation and an odd number of them swap; (3) two middle patterns that differ in one middle distinction are never both excluded, so a ring composes into a knot or into nothing; (4) a knot link has only permutation transfers exactly when it is a parity relation; (5) a ring of k >= 1 copies of one link excludes some pattern exactly when the link has a swap table and either k is odd or the link also has an identity table. Statement (5) replaces the census prediction P3, which ticket A refuted. Include controls that the kernel rejects altered statements.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-LOOPS-20261019-001"
+  },
+  "parent": "KNOT-LOOPS-20261019-001",
+  "schema_version": 1,
+  "status": "Proved by KNOT-LOOPS-20261019-001B-P001 (Lean 4.32.2, standard axioms, four controls rejected): every transfer of a knot link is a permutation or misses at most one pair; a ring excludes a middle pattern exactly when every transfer is a permutation and an odd number of them swap; patterns differing in one middle distinction are never both excluded, so a ring composes into a knot or into nothing; a knot link has only permutation transfers exactly when it is parity; a ring of k copies of one link excludes some pattern exactly when the link has a swap transfer and k is odd or it also has an identity transfer. Excluded count ((S+I)^k-(I-S)^k)/2: only parity keeps one full bit at every length.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The ring theorem"
+}

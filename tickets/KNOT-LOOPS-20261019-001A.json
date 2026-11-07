@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-LOOPS-20261019-001A-E001"
+  },
+  "id": "KNOT-LOOPS-20261019-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory exact census. Take every Boolean knot on three variables (34) and on four variables (742), under the forgetting reading, and every placement of an ordered witness pair (witness in, witness out) among its variables. Compose rings of k copies (k = 1..8 for three-variable knots, 1..6 for four-variable knots); in a ring each copy passes its witness out to the next copy's witness in, and the witnesses are then forgotten. Also compose chains of k = 1..4 copies, keeping the end witnesses, and mixed rings that alternate two placements of three-variable knots. Classify each composite as free, knot, small constraint, contradiction or other. Compare its excluded set with the transfer-table prediction, compute the holes of composites on at most eight variables, and check knot verdicts independently with knotlab.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-LOOPS-20261019-001"
+  },
+  "parent": "KNOT-LOOPS-20261019-001",
+  "schema_version": 1,
+  "status": "Closed: refuted as frozen by KNOT-LOOPS-20261019-001A-E001. P3 (a placement keeps every ring constrained exactly when it is parity) fails: 1,224 of 8,904 four-variable placements keep a constraint at every length, against 24 parity placements. P1, P2 (exact excluded sets: all transfers permutations with an odd number of swaps), P4 (12/36/156 for three variables) and P5 hold on all 9,108 ring placements, 82,824 mixed rings and 816 chains; the brute-force recount and knotlab agree. Post hoc, on the same data: rings stay constrained at every length exactly when the link has both a swap and an identity table; the excluded count is ((S+I)^k - (I-S)^k)/2; only parity keeps half the patterns, one full bit, at every length.",
+  "status_class": "refuted",
+  "stop_rule": "",
+  "title": "Rings of knots: an exact census"
+}

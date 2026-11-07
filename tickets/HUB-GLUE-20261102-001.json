@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-PATHS-20261101-001Z",
+    "THREEFOLD-GRAMMAR-20261030-001Z",
+    "THREEFOLD-SPACES-20261030-001Z",
+    "TOP-LAYER-20261102-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "HUB-GLUE-20261102-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, continue', approving TOP-LAYER-20261102-001's recommendation): what selection leaves, and how pieces glue. Removing a line from a knot's space ties the line's points into a hub, and the knot's spaces are glued from pieces along such lines. Test whether gluing selected spaces along their leftover hubs builds the knot's spaces natively, and whether the emergence each piece keeps survives across the glue. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HUB-GLUE-20261102-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-02: yes on both counts. Removing a line from a knot's space ties its points into a hub, the point side of the 3-edge cuts along which knot spaces are spliced from Fano atoms and planar glue. After a removal off a cut's point side the hub holds one bit and, by the knot's complement symmetry, the crossing knots are exactly the 2-sums of circuits through the hub on each side: cycle-like composition at the hubs selection leaves. A removal on the point side opens the hub (one pair, a released port, or a knot on the hub) and creates crossing emergence that no composition explains; next: emergence along the splice tree (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the gluing is settled (which spaces it builds), and the fate of kept knots across a glue is proved or refuted for held and for opened hubs, with every computation independently checked.",
+  "title": "What selection leaves, and how pieces glue"
+}

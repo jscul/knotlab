@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "The note's theorems are exactly the Lean statements of the drop-in file; the drop-in compiles against Braun's build with standard axioms and is shown to apply unchanged at his newest commit; the note's numbers are recomputed by the checker; the replay summary matches the audit's recorded results.",
+  "completion_gate": "",
+  "dependencies": [
+    "BPHP-RES-PARITY-AUDIT-20261019-001Z",
+    "HOLE-CRITERION-COLOURING-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BPHP-MORE-PIGEONS-NOTE-20261019-001-P001",
+    "program": "proof-complexity"
+  },
+  "id": "BPHP-MORE-PIGEONS-NOTE-20261019-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Turn HOLE-CRITERION-COLOURING-20261019-001B-P001 into material that Kamil Braun, or another reader of his Res(\u2295) preprint (arXiv:2609.23015), can check without this repository: a short self-contained note stating and proving the extension of his bound to bit PHP with up to about n^2/(16384 l^3) pigeons and to bit-colouring through a proper colouring; a drop-in Lean file that compiles inside his repository; and a one-page summary of the independent replay and definitional audit (BPHP-RES-PARITY-AUDIT-20261019-001), which answers two open items in his publication FEEDBACK.md. A 2026-10-19 check found no statement of the extension in his repository's newest commit (25239211), in arXiv:2609.23015v1, or in the depth-restricted work of Byramji and Impagliazzo or of Efremenko, Garlik and Itsykson. Sending anything is the owner's decision; this ticket only prepares it.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BPHP-MORE-PIGEONS-NOTE-20261019-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Proved by BPHP-MORE-PIGEONS-NOTE-20261019-001-P001: the drop-in Lean file (B-P001's proof with a reader-facing header) builds in Braun's claims folder with standard axioms and carries over unchanged to his newest commit 25239211; the 4-page note quotes exactly its statements and recomputes its numbers; the one-page replay summary matches the records of BPHP-RES-PARITY-AUDIT-20261019-001. A presentation of earlier results, no new mathematics; nothing sent, which is the owner's decision.",
+  "status_class": "proved",
+  "stop_rule": "Stop when the note, the drop-in file and the replay summary pass their checker, or earlier if the extension is found already stated, in which case record the overlap and prepare only the replay summary.",
+  "title": "A checkable note for Braun: bit PHP with more pigeons, bit-colouring, and an independent replay"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "MUTUAL-SELECTION-20261031-001Z",
+    "PINNING-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "PARITY-CORRECTION-20261031-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request, relayed by a peer session on 2026-10-31: correct the parity analysis of MUTUAL-SELECTION-20261031-001 lane B. Its claim that parity's whole coupling family [1, lam, 1, lam] is a generalized equality, affine and polynomial on every graph is false: the Hadamard basis change also turns the points' equalities into parity, and Fan and Cai (2020, Theorem 2.2) prove [1, a, 1, a] #P-hard for a > 0, a != 1. Verify that theorem's applicability; classify parity's family on cubic systems; reassess mutual selection on parity's failing systems, keeping apart parity's decision and count, its weighted family, and tractability restricted to the failing systems; supersede every dependent statement in decision notes, summaries and exposition while preserving the evidence history; state what survives, what is withdrawn, and whether the four-place continuation keeps a justified target. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PARITY-CORRECTION-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-31: at the owner's request relayed by a peer session, the parity analysis of MUTUAL-SELECTION-20261031-001B is corrected. Its claim that parity's coupling family [1, lam, 1, lam] is polynomial everywhere is false (the Hadamard change makes the points parity checks; Fan-Cai Theorem 2.2 applies). Through the theta substitution, M_par(theta H; lam) = (2 lam (1 + lam))^n M_nae(H; lam + 1/lam - 1), the knot's coupling dichotomy gives: counting parity's coupling on connected simple cubic systems is polynomial exactly at lam in {0, 1, -1, i, -i, oo} and #P-hard at every other complex lam (A), also on the systems where parity fails, since certificates survive grafting (B). The scan's verdict on parity and the uniqueness theorem (PINNING C) stand with corrected reasons; 17 dependent statements are marked (R). Reading: failures that select are global (the knot's Pfaffian spaces), parity's are local. Recommendation: Continue (2/3), the value-free four-place scan with two guards",
+  "status_class": "complete",
+  "stop_rule": "Stop when parity's family and its failing class are classified with proof or citation and every dependent statement is corrected or explicitly superseded with evidence; record any residual gap as open rather than broadening a claim.",
+  "title": "Parity's weighted family is hard: correcting the mutual-selection records"
+}

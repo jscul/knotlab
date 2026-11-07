@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SEYMOUR-COUNT-20261030-001A",
+    "SEYMOUR-COUNT-20261030-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TWIST-COUNT-20261030-001A-P001"
+  },
+  "id": "TWIST-COUNT-20261030-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: for a connected cubic bipartite Pfaffian graph B with any signing, #col = (3/2)^n times the signed even-subgraph sum at x^2 = -1/3; in the Hadamard basis points are EVEN3, lines [3,0,-1,0] and negations Z, so every branch tensor at a trisum square is even and every planar branch gives a matchgate signature. (1) A closed branch is untwisted (some pattern on its square makes it Pfaffian) iff its tensor has the support-lemma form, and twistedness is inherited by larger branches. (2) Similitude: for an untwisted closed branch with split (alpha, beta), the junction maps every even 4-ary tensor F of the other closed branch to a tensor W with MGI(W) = +-(alpha^2 + alpha beta + beta^2) MGI(F) (Hadamard basis, exact junction). (3) If no square of the trisum tree has all three branches twisted, #col(B, sigma) is computable in polynomial time (matchgate computations on planar leaves, Valiant/FKT). (4) Two twisted closed branches can give junctions outside the matchgate class. Nearest known result: Valiant's holographic algorithms and matchgate identities (Cai-Gorenstein), SEYMOUR-COUNT A and B. Classification: to be decided.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TWIST-COUNT-20261030-001"
+  },
+  "parent": "TWIST-COUNT-20261030-001",
+  "schema_version": 1,
+  "status": "Proved: for an untwisted closed branch with split (alpha, beta) the trisum junction is a similitude of the matchgate identity with multiplier +-(alpha^2 + alpha beta + beta^2) = |alpha + beta e^(i pi/3)|^2; if no square has three twisted branches a good root exists and counting is polynomial (matchgates, FKT); junctions of two twisted pages can leave the matchgate class",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The knot's junction is a similitude: unbranched twists count in polynomial time"
+}

@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "BOUNDED-H1-20261025-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "DICHOTOMY-3D-20261025-001 found that counting homomorphisms from closed 3-manifold groups is #P-hard exactly for non-abelian groups once homology may grow (Galindo 2026). Ask where the line falls when the first homology is bounded. Metabelian targets reduce to a bounded number of twisted-cohomology computations and should stay polynomial; S4 is the first group whose count sums over exponentially many maps into S3 even with bounded H1. First discriminator: counting homomorphisms from knot groups (H1 = Z) to S4 that send meridians to transpositions, through the alternating diagrams of plane graphs with tripled edges, whose 3-colourings are free. Standalone value: the first solvable target whose colouring counts on knots are #P-hard, and the bounded-homology side of the dichotomy.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BOUNDED-H1-20261025-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-25: counting with bounded first homology. With bounded homology the hardness line moves up one level: every group with an abelian normal subgroup and nilpotent quotient (all metabelian groups) stays polynomial, while counting homomorphisms from knot groups (H1 = Z) to S4 that send meridians to transpositions is #P-hard. The mechanism: on alternating diagrams of plane graphs with tripled edges the S3 colourings are free vertex potentials and the S4 lifts follow the left-right cycles of the monochromatic subgraph (bicycle law), a twelve-state model equal to the 12-state Potts model at v = 1/2 for subdivided graphs (links, one query) and reaching the planar chromatic polynomial at 12 through knot-keeping gadgets (knots). Closed manifolds with bounded first homology remain open. Next: closed manifolds via surgery (2/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop if S4 knot colourings reduce to linear algebra, or if no gadget family keeps the diagram a knot while making the count hard.",
+  "title": "Counting with bounded first homology"
+}

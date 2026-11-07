@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "B and C are proved in prose with checkers on declared truncations: projections computed by GF(2) elimination or exhaustive enumeration agree with the predicted classification; knot verdicts come from knotlab's K1-K3 check; every check is shown able to fail by a mutation; controls (closed truncations, two and four ends, one-ended graphs, implication chains) behave as predicted.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001Z",
+    "SOS-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "HOLES-AT-INFINITY-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open questions 1 (which structures count as native loops) and 7 (limits) of docs/KNOT_INTUITION.md. On an infinite, connected, locally finite graph every Tseitin system is satisfiable: the hole drains to an end. Background, not re-proved: ends and the Freudenthal compactification; the topological cycle space as the edge sets meeting every finite cut evenly (Diestel-Kuhn 2004) and its characterization by vertex and end parities (Bruhn-Stein 2007, Berger-Bruhn 2011). Standalone value beyond them: read through the canonical K1-K3 test, ends are a second source of open distinctions besides finite loops. B proves that a vertex relation is a knot exactly when its edges are open, so the 3-regular tree has a knot at every vertex although it has no loop; that whether a distinction is loop-supplied or end-supplied is invisible to K1-K3 and undecided by every finite ball; that on a one-ended graph the uniform measure on solutions is the tangle pseudo-expectation of SOS-SIZE-20261020-001B-P001 with the end as the tangle; and that some computable systems have no computable solution. C defines the ends of any locally finite constraint system (distinctions readable on finitely many variables that only infinite changes alter), proves their basic structure (a Stone space; every relation among them forms at a finite stage; none among the variables of a 2-CNF; patching removes them), and separates them from rigid but unreadable trends (implication chains, 3-colourings of the grid). Both readings of the canonical test, source-blind and source-aware, are mapped for the owner.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HOLES-AT-INFINITY-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: in infinite constraint systems an open distinction is supplied either by a finite loop or by the system's ends. Proved: on infinite graphs every Tseitin system is satisfiable and each open parity is loop-supplied or end-supplied (classical cycle-space theory restated); the 3-regular tree carries a K1-K3 knot at every vertex with no loop; no finite part and no K1-K3 verdict decides the source; an end is a tangle of every order whose pseudo-expectation is a genuine measure; the ends of any locally finite system are the Stone space of its readable finite-change invariants, and for linear laws loops and ends are relative to the law (on the square grid Tseitin's law has only loops, Ledrappier's only ends); relations form at finite stages; trends are invisible to the knot test. Open decision for the owner: whether ends count as native loops (canonical_correction_request.md). Recommendation: continue with rigidity beyond groups after that decision, deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after C. Stop earlier, and close as a classical reading, if a stated delta is found in prior work or if C finds nothing beyond parity.",
+  "title": "Holes at infinity: ends as a second source of open distinctions"
+}

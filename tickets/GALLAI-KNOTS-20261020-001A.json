@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen exploratory census runs within budget; the independent check rebuilds every relation as a union over proper colourings, re-derives blocks by brute force and recounts graphs against OEIS A001349.",
+  "completion_gate": "",
+  "dependencies": [
+    "FREEZING-KNOTS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GALLAI-KNOTS-20261020-001A-E001"
+  },
+  "id": "GALLAI-KNOTS-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory code-analysis census. For q = 3 and 4 and every connected graph W on at most 6 vertices with maximum degree at most q (and at most 9 leaves for q = 3, 7 for q = 4), attach q - deg(v) pendant leaves to each vertex, compute the projection of proper q-colourings onto the leaves, and test K1-K3 against the prediction 'knot exactly when W is a Gallai tree'. Record which patterns are excluded (all-equal, star-type, mixed), and, as observations outside the hypothesis, witness networks with a vertex of degree above q. Controls: even cycles give no knot; a test that wrongly counts even cycles as Gallai blocks is rejected; an independent solver recomputes every relation.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GALLAI-KNOTS-20261020-001"
+  },
+  "parent": "GALLAI-KNOTS-20261020-001",
+  "schema_version": 1,
+  "status": "Closed: supported by GALLAI-KNOTS-20261020-001A-E001 (exploratory; frozen predictions P1-P4 all hold; controls pass; the independent check rebuilt all 156 relations as unions over proper colourings, re-derived every block decomposition by brute force and recounted the 143 connected graphs on at most 6 vertices against OEIS A001349). For q = 3 (46 witness networks within the hypothesis) and q = 4 (37), the composite relation on the pendant leaves passes K1-K3 for exactly the Gallai trees (22 and 5), and every leaf colouring extends for every other network; single cliques K_q and (q = 3) odd cycles exclude exactly the all-equal patterns, a single star exactly the patterns using all colours. Outside the hypothesis (a witness of degree q + 1) 9 and 1 networks still give knots, including one with an even cycle.",
+  "status_class": "supported",
+  "stop_rule": "Stop after the declared roster; stop early on a solver or control failure.",
+  "title": "Census: composite colouring relations over every small witness network"
+}

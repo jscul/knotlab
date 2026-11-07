@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A runs a frozen exploratory census with an independent check; B proves the recovery, flip, sphere and recognition statements; every census case agrees with the predictions or the disagreement is reported.",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-CIRCUITS-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "KNOT-SPACE-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 9 of docs/KNOT_INTUITION.md (space from a law) after KNOT-CIRCUITS-20261020-001 showed that the knots of a difference law whose distinctions do not split are the circuits of a matroid computed from allowed states alone. By Whitney's 2-isomorphism theorem a 3-connected graph is determined by its cycle matroid, and its vertex stars are the cocircuits whose deletion leaves a connected matroid, so a law whose knot matroid is graphic carries a graph intrinsically. A (exploratory census): recovers graphs from gauge and Tseitin laws under scrambled presentations; recovers vertices, edges and faces of 3-connected planar graphs and checks they form spheres; exhibits Whitney flips that leave the allowed states unchanged; tests whether local laws not written on a graph (random sparse parity laws, translation-invariant laws on tori such as Ledrappier's) have graphic or cographic knot matroids; checks gauge laws over Z3 and S3. B proves: knot matroids depend only on allowed states; gauge laws over any group have the cycle matroid and Tseitin's has the bond matroid; a law determines its 3-connected graph and no more than its 2-isomorphism class; a 3-connected planar graph's law determines its sphere; a binary law carries a graph exactly when its knot matroid has no F7, F7*, M*(K5) or M*(K3,3) minor (Tutte), so a static law recognizes space rather than creating it; and, citing Bruhn and Diestel, Tseitin's knots on a locally finite graph form the finite-bond matroid, whose dual circuits are the topological circles through the ends. Background, not re-proved: Whitney (1933), Tutte (1958, 1963), Bruhn-Diestel (2006).",
+  "ownership": {
+    "root": true,
+    "scope_id": "KNOT-SPACE-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-20. A law's allowed states carry a graph exactly when its knot matroid is graphic, and a sphere when it is also cographic: gauge laws over any group have their graph's cycles as circuits and Tseitin laws the bonds; the cocircuits whose deletion leaves the matroid connected are the vertex stars of a 3-connected graph, so the allowed states determine it exactly, and only up to Whitney twists below 3-connectivity; Tutte's minors decide presence. So space is recognized, not created: a random local law written on no graph carries a sphere, and almost every balanced code carries none. All classical (Whitney, Tutte); on infinite graphs the Tseitin knot matroid depends on the reading (cited, Bruhn-Diestel). Census A (obstructed), continuation C (refuted on T2), proof B (proved), ledger Z. Recommendation: Full pivot to the diagonal lemma (2/3), deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if recovery fails on a 3-connected graph, or if local laws not written on a graph show graphic or cographic knot matroids well above chance, which would become the subject.",
+  "title": "Space from knot matroids: what a law's allowed states say about its space"
+}

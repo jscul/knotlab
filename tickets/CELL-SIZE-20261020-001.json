@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "B proves the cell theorem and its corollaries, with executable checks of the cell conditions, explicit detour systems and their congestion, retention, kill probabilities and the transfer to topological minors, or records the step that fails.",
+  "completion_gate": "",
+  "dependencies": [
+    "PC-SIZE-GRID-20261020-001Z",
+    "PC-DEGREE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "CELL-SIZE-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Follows PC-SIZE-GRID-20261020-001 (PC and PCR size of grid Tseitin is 2^Theta(min side)). Generalize the grid argument without planarity: if every edge outside a bounded exceptional set lies on a short cycle (a cell) with short detours avoiding that cycle, then restrictions that set well-separated cells keep every cut within a constant factor (detour lemma), the restricted graph keeps a tangle of proportional order, and PC/PCR/resolution size is 2^Omega(treewidth). Corollaries: 2-connected plane graphs whose faces pairwise share at most one edge and whose inner faces are short (3-connected planar graphs with short faces); d-dimensional grids; walls; and, through restriction plus renaming to a wall topological minor and the linear grid-minor theorems, every graph excluding a fixed minor, planar graphs included (PCR and resolution). Literature check 2026-10-20: regular resolution is 2^Theta(tw) for all graphs (Itsykson et al.); for general resolution and PCR no planar, minor-free or higher-dimensional-grid bound of this form was found.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CELL-SIZE-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: Tseitin formulas need size 2^Omega(tw) in PC/PCR (characteristic other than 2) and resolution on every graph with a cell system (short cycles with short detours), hence on plane graphs with short faces pairwise sharing at most one edge and on d-dimensional grids; restriction plus renaming to a wall topological minor extends 2^Omega_H(tw) to every graph excluding a fixed minor, planar included (PCR and resolution), tight for bounded degree. General graphs remain open.",
+  "status_class": "complete",
+  "stop_rule": "Stop if a published statement is found, or if a lemma fails on a checked instance.",
+  "title": "Tseitin size from cells: planar, minor-free and grid-like graphs"
+}

@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "HOLES-AT-INFINITY-20261020-001Z",
+    "KNOT-SPACE-20261020-001A",
+    "KNOT-SPACE-20261020-001C"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "KNOT-SPACE-20261020-001B-P001"
+  },
+  "id": "KNOT-SPACE-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) the knot matroid of a law depends only on its allowed states; (2) a gauge law over any group with at least two elements has the cycle matroid of its graph, and a Tseitin law (GF(2)) the bond matroid; (3) for a 3-connected simple graph the allowed states determine the graph (vertex stars are the cocircuits whose deletion leaves a connected matroid), and 2-isomorphic graphs have identical allowed states, so a law knows its graph exactly up to Whitney flips; (4) for a 3-connected planar graph the allowed states determine the sphere (faces are the circuits whose contraction leaves a connected matroid), and a 3-connected knot matroid that is both graphic and cographic always comes from a planar graph; (5) a binary law carries a graph in this sense exactly when its knot matroid is graphic, equivalently when it is presentation-equivalent to a gauge law, equivalently (Tutte) when it has no F7, F7*, M*(K5) or M*(K3,3) minor; (6) citing Bruhn and Diestel, Tseitin's knots on a locally finite graph form the finite-bond matroid, whose dual circuits are the topological circles through the ends.",
+  "ownership": {
+    "root": false,
+    "scope_id": "KNOT-SPACE-20261020-001"
+  },
+  "parent": "KNOT-SPACE-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by KNOT-SPACE-20261020-001B-P001 (V1 prose proof with randomized and exhaustive checks; classical theorems of Whitney and Tutte cited). A parity law's knot matroid is the column matroid of its direction code; a gauge law over any group with at least two elements has its graph's cycles as circuits and a Tseitin law its bonds. For a 3-connected graph the cocircuits whose deletion leaves the matroid connected are exactly the vertex stars, so the allowed states determine the graph; 2-isomorphic graphs have identical states, so twists are invisible. For a 3-connected planar graph the dual reading returns the faces of its unique embedding and the cells form a sphere. For a 3-connected knot matroid the reading succeeds exactly when it is graphic (Tutte's minors witness failure), so a space is recognized from allowed states, not created by the presentation: a random local law written on no graph carries a sphere, and almost every balanced code carries none. Cited remark: on locally finite infinite graphs the Tseitin circuits are the minimal finite cuts with a finite side over all solutions and the finite bonds within one class of finitely different solutions, dual (Bruhn-Diestel) to the circles through the ends.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: a law recognizes its space rather than creating it"
+}

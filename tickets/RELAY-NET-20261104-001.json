@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "STRIP-RELAY-20261103-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "RELAY-NET-20261104-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes continue.', approving STRIP-RELAY-20261103-001's recommendation): relay networks. Branch and chain rigid strips through small pieces; test whether one handle's halo reaches several grids, how far relays travel through chains of pieces, what decides it, and whether directed channels compose into native paths. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RELAY-NET-20261104-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-04: successful. Relays travel as wires: after a frozen hop an opened handle's relay is an arc signal (two ports fixed and disagreeing), which freezes exactly the lines on the own arc between them (sufficiency proved, converse computed), so a station passes it on exactly when its out-line lies on that arc; aligned chains repeat it without loss and carry relays four cuts deep, misaligned ones stop it. Hubs broadcast a relay into several receivers, relays never run upstream, adjacent cut vertices are bypassed, and small networks confirm all three kinds of relay exactly. Next: a native reading of genus (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when branching and chaining are decided for rigid channels, the rule deciding how far a relay travels is stated and checked, and the main cases are confirmed by exact creation on small networks.",
+  "title": "Relay networks"
+}

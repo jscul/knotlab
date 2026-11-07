@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BPHP-RES-PARITY-AUDIT-20261019-001A-E001"
+  },
+  "id": "BPHP-RES-PARITY-AUDIT-20261019-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Replay Braun's formal verification exactly as published: check out commit 8904bf09 of https://github.com/kbr-/math-research, build with the pinned Lean 4.34.0-rc2 and Mathlib, run verify.py on claims/BitPHPPreprintRevision1.lean, and replay the aggregate module with leanchecker --fresh. Record the toolchain, the axiom report of every declaration the aggregate lists, and any sorry, custom axiom or unsafe declaration. A clean replay establishes only that the formal statements follow from the formal definitions.",
+  "ownership": {
+    "root": false,
+    "scope_id": "BPHP-RES-PARITY-AUDIT-20261019-001"
+  },
+  "parent": "BPHP-RES-PARITY-AUDIT-20261019-001",
+  "schema_version": 1,
+  "status": "Closed: supported by BPHP-RES-PARITY-AUDIT-20261019-001A-E001. At commit 8904bf09 the project builds from source (Mathlib compiled locally, warnings as errors); verify.py passes on all 7 declarations the paper cites, each depending only on propext, Classical.choice and Quot.sound; leanchecker --fresh replays the aggregate cleanly; a sorry probe is reported and the main proof is rejected with its constant changed.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Independent replay of the pinned Lean formalization"
+}

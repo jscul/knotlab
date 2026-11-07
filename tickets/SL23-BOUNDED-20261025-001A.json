@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BOUNDED-H1-20261025-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SL23-BOUNDED-20261025-001A-P001"
+  },
+  "id": "SL23-BOUNDED-20261025-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof: let G be a finite group with a central elementary abelian 2-subgroup A and a normal subgroup N containing A with N/A elementary abelian and G/N nilpotent; SL(2,3) qualifies with A = {I, -I}, N = Q8 and G/N = Z3, although it is not abelian-by-nilpotent. For a finite presentation P, the maps P -> G are counted by enumerating the maps to G/N (boundedly many with bounded mod-p first homology), solving the twisted affine lifting problem through N/A by linear algebra, and counting the lifts through A whose obstruction vanishes: the obstruction is a quadratic function of the twisted cocycle with values in a space of dimension m times dim H^2 of the presentation complex, so Gauss sums count its zeros. For balanced presentations of closed 3-manifold groups with bounded first homology this is polynomial time. Standard-library checks against brute force.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SL23-BOUNDED-20261025-001"
+  },
+  "parent": "SL23-BOUNDED-20261025-001",
+  "schema_version": 1,
+  "status": "Proved by SL23-BOUNDED-20261025-001A-P001: for G with a central elementary abelian 2-subgroup A, a normal N containing A with N/A elementary abelian and G/N nilpotent, |Hom(P, G)| is |Hom(P, A)| times a sum over maps to G/N of the zeros, on the affine space of twisted lifts to G/A, of a quadratic obstruction with values in a space of dimension m times dim H^2 of the presentation complex, counted by Gauss sums; polynomial for balanced presentations (closed 3-manifolds) with bounded first homology. SL(2,3) satisfies the hypotheses but is not abelian-by-nilpotent, so the bounded-homology line is not abelian-by-nilpotent (SL(2,3) Fitting height 2 polynomial, S4 Fitting height 3 hard). Checked against brute force on 240 cases over four groups.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "SL(2,3) counting is polynomial with bounded homology"
+}

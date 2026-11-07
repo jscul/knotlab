@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BASE-THREE-20261021-001B",
+    "EMERGENCE-BITS-20261021-001A",
+    "KNOT-COMPETITION-20261019-001A",
+    "KNOT-LOOPS-20261019-001B",
+    "LOOP-HOMOLOGY-20261021-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "EMERGENCE-BITS-20261021-001B-P001"
+  },
+  "id": "EMERGENCE-BITS-20261021-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: joining two knots at one visible distinction adds their emergence up to -log2(1 + b b'), with b and b' their leanings at the shared distinction; forgetting never creates emergence from two-literal clauses but can from triples, even from a statistically silent one; chains and rings of a three-variable link keep exactly one bit at every length for parity and lose it exponentially otherwise; in a law whose polymorphisms are all affine there are one-bit knots of unbounded size, while in every other law a knot on N distinctions holds at most -log2(1 - N/2^N) bits; on a simple graph with a three-variable knot link on every edge, hidden joints and visible spokes, emergence is -log2 of the chance that the induced two-literal instance on the joints is satisfiable, is at most the cycle rank b1, equals b1 exactly for parity, and is 0 for links with a common vacuum and for not-all-equal links on bipartite graphs; on a torus grid with an odd side, not-all-equal links recolour into uniformly random implications plus a seam of monotone clauses. Check on all three-variable links and small graphs.",
+  "ownership": {
+    "root": false,
+    "scope_id": "EMERGENCE-BITS-20261021-001"
+  },
+  "parent": "EMERGENCE-BITS-20261021-001",
+  "schema_version": 1,
+  "status": "Proved by EMERGENCE-BITS-20261021-001B-P001 (V1 prose proof with exhaustive and sampled checks; ring theorem, full-product dichotomy, Post's lattice and the Galois connection cited). Visible joins add emergence up to -log2(1 + b b') from the leanings of the shared distinction (10,404 placements); forgetting never creates emergence from two-literal clauses, but a statistically silent triple's cyclic gadget projects to parity. Rings and chains with forgotten joints hold exactly one bit at every length for parity and decay geometrically otherwise (slowest factor 0.805). Laws with all polymorphisms affine have one-bit knots of every even size; in every other law a knot on N distinctions excludes at most N points. Networks with hidden joints hold at most one bit per independent cycle, exactly for parity; emergence is superadditive over edge-disjoint patches, zero for vacuum links (144 of 204) and for not-all-equal on bipartite graphs; not-all-equal on odd tori recolours into random implications plus seam clauses.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: how emergence adds up"
+}

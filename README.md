@@ -14,11 +14,13 @@ The repository has two layers:
   [FINDINGS.md](FINDINGS.md) lists eleven findings we packaged for outside
   readers, each with Lean proofs, a note or exhaustive checks that run here.
 - **The full record.** [RESULTS.md](RESULTS.md) lists, with dates, every result
-  recorded since the knot test K1–K3 became canonical on 19 October 2026: 178
-  current results and 5 superseded ones. They are stated in the program's own
-  language and linked to their proofs, experiments and working notes, which
-  are published as recorded. The documents that define the working
-  perspective are in [docs/](docs/).
+  recorded since the knot test K1–K3 became canonical on 19 October 2026:
+  <!-- counts -->178 current results and 5 superseded ones<!-- /counts -->.
+  They are stated in the program's own language and linked to their proofs,
+  experiments and working notes, which are published as recorded, together
+  with the [tickets](tickets/) that set each piece of work. New epics are
+  published automatically when they close. The documents that define the
+  working perspective are in [docs/](docs/).
 
 ## The idea in five lines
 
@@ -44,6 +46,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 PYTHONPATH=tools python3 -m knotlab check --cnf "~A ~B c" --loops A B --contact c
 python3 -m unittest tests.test_knotlab          # 80 tests, a few seconds
 python3 -m unittest tests.test_theory           # THEORY.md: labels, evidence and links
+python3 -m unittest tests.test_records tests.test_curation  # the record is complete and current
 
 # the Lean proofs: core Lean 4, toolchain pinned in lean/lean-toolchain
 cd lean && python3 check.py && cd ..
@@ -59,7 +62,8 @@ cd lean && python3 check.py && cd ..
 
 Each `check.py` recomputes its proof's facts, runs controls that must fail,
 and compares the outcome with the frozen `result.json` beside it. Some checks
-need numpy, sympy, networkx, python-sat or a Lean toolchain, and a few run for
+need the libraries in [requirements.txt](requirements.txt)
+(`pip install -r requirements.txt`) or a Lean toolchain, and a few run for
 hours.
 
 ## Contents
@@ -75,6 +79,9 @@ hours.
 | [notes](notes/) | Three self-contained notes with PDFs, sources and check scripts |
 | [RESULTS.md](RESULTS.md) | Every result since 19 October 2026, dated, grouped by line of work, with links |
 | [RANKING.md](RANKING.md) | The results ranked in five tiers by significance to the theory |
+| [tickets](tickets/) | The ticket that set each piece of work: objective, stop rule and outcome |
+| [data](data/) | The inputs of the generated files (lines of work, ranking tiers, notes, pending qualifications) and the results as JSON |
+| [scripts](scripts/) | `build.py` regenerates RESULTS.md, RANKING.md and data/; `publish.py` publishes new epics from our research workspace |
 | [docs](docs/) | The working perspective: the knot intuition, the foundational thesis, the foundation's classical sources, and the program's vocabulary |
 | [proofs](proofs/) | Every proof since 19 October 2026: `proof.md`, `check.py`, frozen results and manifests |
 | [experiments](experiments/), [artifacts](artifacts/) | Frozen experiment contracts and their outputs |
@@ -99,6 +106,24 @@ Corrections and prior statements we missed are welcome as
 [GitHub issues](https://github.com/jscul/knotlab/issues). Corrections
 are recorded in [HISTORY.md](HISTORY.md), and earlier versions stay in the
 history.
+
+## How this repository is updated
+
+- **Records, automatically.** When an epic closes in our research workspace,
+  a commit hook runs [scripts/publish.py](scripts/publish.py). It copies the
+  epic's committed proofs, experiments, working notes and tickets byte for
+  byte, refreshes the documents in docs/, rebuilds the generated files with
+  [scripts/build.py](scripts/build.py), runs the tests and pushes. It then
+  updates [jscul.dev](https://jscul.dev). Work that has not been committed is
+  never copied.
+- **Curated pages, by hand.** INTUITIONS.md, THEORY.md, FINDINGS.md and the
+  ranking tiers in [data/tiers.json](data/tiers.json) are written by hand. If
+  a later result supersedes or qualifies a record that a THEORY.md claim
+  cites, `tests/test_curation.py` fails until the claim says so.
+- **Corrections.** A pending qualification is entered once, in
+  [data/qualifications.json](data/qualifications.json). It then appears in
+  RESULTS.md, on jscul.dev and in the checks of THEORY.md. Corrections are
+  recorded in [HISTORY.md](HISTORY.md).
 
 ## What this does not claim
 

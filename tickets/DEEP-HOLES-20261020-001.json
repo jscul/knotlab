@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The plain hole criterion's bound and the refuting levels over F2, F3, F5, Q and Z are computed exactly on the declared cubic graphs and charge placements; the toggle-width statement is proved, or refuted by the census, with certificates; novelty against the Tseitin proof-complexity literature is stated.",
+  "completion_gate": "",
+  "dependencies": [
+    "HOLES-COHOMOLOGY-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "DEEP-HOLES-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Follows HOLES-COHOMOLOGY-20261019-001, which found the holes of permutation networks shallow. Put knots on the vertices of cubic graphs, with distinctions on the edges: parity knots (Z2-Tseitin), sum-mod-3 knots (Z3-Tseitin) and not-all-equal knots. A charge network is impossible when its total charge is nonzero, a class in reduced H_0 of the graph, dual to the loop classes of the previous epic. Questions: (1) Does the program's plain hole criterion predict how many distinctions local reasoning must hold at once to refute such a network? A hand argument says no: any knot excluding two or more states is a hole at its own scope, so the criterion is stuck at level 2. (2) What does govern the depth? Conjecture: over a ring that can compute in the charge group (F2 for parity, F3 for sum mod 3, and Z) the depth is 3; over any ring where the group's order is invertible (Q, F3 or F5 for parity) the depth is the toggle width of the graph: the least k such that some sequence of vertex sets from the empty set to all vertices, toggling one vertex at a time, keeps each step's current cut together with the toggled vertex's edges within k edges. It does not depend on where the charges sit, and it is not a function of treewidth. An exact census tests both (A); a proof with certificates follows (B).",
+  "ownership": {
+    "root": true,
+    "scope_id": "DEEP-HOLES-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: the program's plain hole criterion cannot measure depth, because every knot that excludes two or more states is a hole at its own scope (B). An impossible charge network (knots at the vertices, distinctions on the edges, nonzero total charge) is refuted at the size of one knot by rings that compute in the charge group, and exactly at the graph's toggle width by every other field, whatever the charges (proved with verified certificates, B; census A, all six frozen predictions hold). On cubic graphs up to 10 vertices the depth is cutwidth + 1, not a function of treewidth.",
+  "status_class": "complete",
+  "stop_rule": "Stop and write up if the census shows the refuting level over Q is a function of treewidth alone on the roster, or if the toggle-width prediction fails in a way the theory cannot absorb. Do not extend to OR-combinations of charge networks (Lichter and Pago) or to Nullstellensatz degree in this epic.",
+  "title": "Deep holes: how far local reasoning must look to see a network's charge"
+}

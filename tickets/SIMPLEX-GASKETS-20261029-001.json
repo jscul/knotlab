@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "HUB-DIMENSION-20261024-001Z",
+    "SIGNED-GASKETS-20261029-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SIMPLEX-GASKETS-20261029-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Continuation authorized by the owner on 2026-10-29 ('Yes, let's continue'), taking the recommendation of SIGNED-GASKETS-20261029-001. Setting: the level-k Sierpinski d-simplex SG^d_k is the C(k+d-1, d) up simplices {v, v+e_1, ..., v+e_d} (|v| <= k-1) of a d-simplex cut into k^d, with copies of one (d+1)-bit law on every up simplex (base corner v first), glued at shared vertices; its corner relation sums every vertex but the d+1 corners; exactness and towers as in SIGNED-GASKETS-20261029-001, with similarity dimension log C(k+d-1, d)/log k, which tends to d. The standing wave is w_theta = (-1)^(x_0) sin(theta E)/sin(theta), E the sum of (-1)^(x_i) over the d+1 places. Scoping (not evidence): the sector proof of SIGNED-GASKETS-20261029-001A does not use the dimension; modulo 3 the Legendre law (-1)^(x_0) (E|3) reduces to 1 + sum_i s_0 s_i and the gasket to plus or minus the law; the law is exact on Sierpinski simplices of dimensions 3 to 6 at the levels tested, and at theta = pi/5 in dimension 4 it is signed five-place not-all-equal with golden-ratio weights. Questions: (A) prove exactness in every dimension and level, the nonvanishing of the factor (for all angles outside a countable set, and for every theta = pi/q with q an odd prime power by reduction modulo the prime above q), and which members are knots; (B) which signed laws symmetric in the non-base corners reproduce themselves on Sierpinski tetrahedra (and four-simplices), and at which exceptional angles the wave fails. Standalone value: knots that build exactly self-similar spaces of every dimension below d, in every d, against the program's finding that bits see three-manifolds only through parity under Pachner moves (HUB-DIMENSION-20261024-001). Intuitions targeted: space from logic without a drawn space; everything relational (harmonies); growth of emergent information across scales. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SIMPLEX-GASKETS-20261029-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-29: a knot builds exactly self-similar space in every dimension. A (proved for every d and k): the standing wave (-1)^(x_0) sin(theta E)/sin(theta) reproduces itself on every level-k Sierpinski d-simplex, with factor a monic integer polynomial in 2 cos(theta) of degree d(#T-1), equal to 2^N at theta = 0 and never zero at odd prime-power angles; the Legendre law is an exact knot in every d >= 2, and in odd d the whole family is; towers of dimension log C(k+d-1, d)/log k rising to d. B: the cosine wave reproduces itself iff the number of simplices is odd and otherwise becomes the sine wave (the period-4 family of the plane); pi/4 fails exactly at even levels; parity at powers of 2 in every d; censuses in d = 3, 4: the knots exact at every computed level are standing waves; rational exceptional angles only pi/2 and pi/4. Next (awaiting the owner): interference in three dimensions (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when (i) exactness of the standing wave on every level-k Sierpinski d-simplex is proved for every d and k, with nonvanishing proved outside a countable set of angles and at every theta = pi/q (q an odd prime power), and the knot members identified; (ii) the signed laws symmetric in the non-base corners are decided on Sierpinski tetrahedra of levels 2 to 5 (and four-simplices of levels 2 and 3), and the exceptional angles of the wave located for small levels in dimensions 2 and 3; (iii) the decision note records the recommendation. Record negative results.",
+  "title": "The standing-wave law in every dimension"
+}

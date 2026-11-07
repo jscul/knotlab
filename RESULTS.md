@@ -7,7 +7,8 @@ support it. The documents that define the working perspective are in [docs/](doc
 
 **178 current results** and 5 superseded ones, from 131 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
-direction of the repository owner. Where a statement awaits a qualification, the entry says so.
+direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
+automatically when they close.
 
 How to read an entry:
 

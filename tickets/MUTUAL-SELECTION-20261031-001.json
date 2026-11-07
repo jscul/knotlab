@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-COUPLING-20261031-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "MUTUAL-SELECTION-20261031-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue', approving the recommendation of KNOT-COUPLING-20261031-001), run a bounded scan over the symmetric three-place laws and decide whether mutual selection is special to the knot. A law selects its spaces when its unsolvable connected cubic systems form a non-empty class recognisable in polynomial time; the spaces select back when they make the law, and few others, easy to count (for not-all-equal: the knot's law and the dimer law). Laws: the seven symmetric knots (not-all-equal {1,2}; parity {0,2}, {1,3}; the Fibonacci no-lone laws {0,2,3}, {0,1,3}, which with parity are the topological knots; the clauses {1,2,3}, {0,1,2}) and the non-knots exactly-one {1} and exactly-two {2}, on plain and signed cubic systems. Lanes are bounded scouting passes (documentation). No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "MUTUAL-SELECTION-20261031-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-31: a bounded scan of mutual selection over the symmetric three-place laws, every lane replayed with identical outputs. Only the knot (not-all-equal) has it: on plain cubic systems it is the only knot that can fail; with signs, parity fails recognisably but its whole family is affine, clauses never fail (Tovey), the Fibonacci (no-lone) laws are NP-complete to decide (a five-line gadget pins a value, a pinned line is an equality, fan-out, Schaefer), exactly-one is NP-complete (Gonzalez). Reason: the knot is the only three-place knot with no preferred value, so it cannot pin; its gadgets reach only nothing, everything and itself (k <= 5). Next (awaiting the owner): pinning across all three-place knots (3/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when every law is classified on plain and signed cubic systems (recognisable or not, with evidence or a citation) or left with a stated open question, and the decision note says whether mutual selection is special to the knot.",
+  "title": "Mutual selection: is the knot the only law whose spaces select it back?"
+}

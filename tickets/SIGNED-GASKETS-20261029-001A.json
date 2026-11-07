@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "INTERFERENCE-20261029-001B",
+    "SIGNED-SUBDIVISION-20261029-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIGNED-GASKETS-20261029-001A-P001"
+  },
+  "id": "SIGNED-GASKETS-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: on the level-k Sierpinski gasket SG_k (copies of a three-bit law w on the k(k+1)/2 up triangles of a k-subdivided triangle, corners a = (i, j), b = (i+1, j), c = (i, j+1), shared vertices summed except the three corners), prove: (1) signed not-all-equal w(a,b,c) = (-1)^((a xor b)(a xor c)) - [a = b = c] equals (-1)^a ((a+b+c)|3) and (-1)^a sin(pi E/3)/sin(pi/3) with E the sum of (-1)^x over the tuple; (2) for every k >= 1 its corner relation is lambda_k w, by splitting each copy into two phase sectors, showing that the edge chains of the gasket lock the sectors of the three corner triangles, and that flipping all sectors is odd; the same for the family w_theta = (-1)^a sin(theta E)/sin(theta), of which signed not-all-equal is the only member with a knot as support; (3) lambda_k is an integer congruent to (-1)^floor(k/2) modulo 3, so nonzero, by reducing the law to 1 + s_a s_b + s_a s_c modulo 3 and counting even edge sets; (4) consequences: an exact tower of every level k, similarity dimension log(k(k+1)/2)/log k, and the knot check of the corner relation. Nearest known result: INTERFERENCE-20261029-001B (k = 2); EXACT-TOWERS-20261029-001B (towers); Sierpinski gaskets of level k and their dimensions (classical); Ising and Potts models on Sierpinski gaskets (exact decimation on finitely ramified fractals, classical); Legendre symbol and Eisenstein integers. Classification: to be decided after the literature check.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIGNED-GASKETS-20261029-001"
+  },
+  "parent": "SIGNED-GASKETS-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by SIGNED-GASKETS-20261029-001A-P001 (V1, proof for every k plus exact checks to k = 14, residues to k = 21): signed not-all-equal, (-1)^a ((a+b+c)|3), reproduces itself exactly on every level-k Sierpinski gasket with factor lambda_k congruent to (-1)^floor(k/2) mod 3 (never zero), by phase sectors locked along the gasket's edges and an odd global flip; the family (-1)^a sin(theta E)/sin(theta) shares the identity, and only its knot member has a knot support. Signed not-all-equal therefore builds exact towers of every dimension log(k(k+1)/2)/log k below 2.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Signed not-all-equal reproduces itself on every level-k gasket"
+}

@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "BOUNDED-H1-20261025-001A-P001"
+  },
+  "id": "BOUNDED-H1-20261025-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof: for the alternating diagram of a plane graph with every edge tripled, the 3-colourings are all vertex potentials and the number of transposition lifts over a potential is 2 to the number of components of the alternating link of the monochromatic subgraph (bicycle law); hence the number of S4 colourings sending meridians to transpositions is a 12-state spin model. With every edge subdivided it equals 2^-n 4^m times the Potts partition function at q = 12, v = 1/2, so counting these colourings of link diagrams is #P-hard by a single query. For knots: two-terminal series-parallel gadgets of tripled edges act through the algebra spanned by J, I and an involution N; gadgets whose spanning trees and terminal-separating 2-forests are both odd keep the diagram a knot (the spanning-tree count of the plane graph stays odd); doubling the edges outside a spanning tree makes any planar graph's spanning-tree count odd without changing its chromatic polynomial; interpolation over odd parallel multiplicities recovers P(H,12). So counting S4 colourings of knot diagrams that send meridians to transpositions is #P-hard (Turing). Standard-library checks.",
+  "ownership": {
+    "root": false,
+    "scope_id": "BOUNDED-H1-20261025-001"
+  },
+  "parent": "BOUNDED-H1-20261025-001",
+  "schema_version": 1,
+  "status": "Proved by BOUNDED-H1-20261025-001A-P001: on the alternating diagram of a plane graph with tripled edges the S3 transposition colourings are the vertex potentials and the S4 transposition lifts over a potential number 2^(c(H)+dim B(H)), H the monochromatic subgraph (bicycle law), so the count is a 12-state model with edge matrix J - 2N; with edges subdivided it equals 2^-n 4^m Z_Potts(G;12,1/2), so counting S4 transposition colourings of link diagrams is #P-hard with one query; series-parallel gadgets with odd tree and separating-forest counts keep the diagram a knot, and with tree-count parity fixed by doubling non-tree edges, interpolation recovers P(H,12); so counting homomorphisms from knot groups to S4 sending meridians to transpositions is #P-hard (Turing), the first solvable group with this property; closed manifolds with bounded first homology are left open.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "S4 colourings of knots are #P-hard"
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TRIPLE-SHIELD-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LINE-DETECTOR-20261023-001A-E001",
+    "contract_path": "experiments/LINE-DETECTOR-20261023-001A/LINE-DETECTOR-20261023-001A-E001_contradiction_patterns/contract.json"
+  },
+  "id": "LINE-DETECTOR-20261023-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Classify every contradicting configuration of chosen three-place, shared-coin and orientation placements on the 3 x 3 torus by the lattices of all its minimal contradictions, and every lone line on 3 x 4 and 4 x 4 by the cylinders along further classes; decide whether pure lines (all contradictions along the line's class) have equal counts in the two twists of a dual pair.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LINE-DETECTOR-20261023-001"
+  },
+  "parent": "LINE-DETECTOR-20261023-001",
+  "schema_version": 1,
+  "status": "Closed: partially supported under its frozen rule; its scoping prediction P4 is refuted, while P1, P2, P3 and P5 hold. LINE-DETECTOR-20261023-001A-E001 records, for every configuration of the 54 tiling placements on the 3 x 3 and 3 x 4 triangular tori and for 2^22 sampled configurations per twist of the 19 orbit representatives on 4 x 4, which of eight classes the configuration contradicts along (3135 s). Controls pass: totals, and on 3 x 3 and 3 x 4 the implied torus, cylinder, lone and cross counts equal the frozen record of TRIPLE-SHIELD-20261023-001A-E001 for every placement and twist. P1: no even class ever contradicts. P2: no two-literal placement ever contradicts along some odd classes and not others (the trichotomy). P3: the same 12 three-place placements (four orbits) are selective on 3 x 3 and 3 x 4 (17712440 selective configurations on 3 x 4), and their 4 x 4 representatives in the sample. P5: lines pure among the eight classes still differ across dual pairs on 3 x 4 (placement 111: 395160 against 547584). P4 fails: on 3 x 4 a few lone lines of the 54 and 62 families are pure among the eight (6 of 20586 and 1176 of 788304, in one twist only). The independent checker certified 660 configurations along all eight classes with its own solver, none undetermined.",
+  "status_class": "refuted",
+  "stop_rule": "",
+  "title": "Experiment: pure lines against lone lines on the smallest tori"
+}

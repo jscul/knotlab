@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BASE-CRITICALITY-20261022-001A",
+    "CONTACT-CENSUS-20261022-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "NAE-INVARIANT-20261022-001A-P001"
+  },
+  "id": "NAE-INVARIANT-20261022-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) with fair spokes, a not-all-equal world on a non-bipartite graph is the uniformly random orientation of the bipartite double cover that the deck swap reverses, and it is inconsistent exactly when some strongly connected component is swap-invariant; (2) strongly connected components are the clusters of cyclic edges, so on a torus the world is inconsistent exactly when the projected cyclic edges form a cluster with a cross topology or an odd winding, a cross cluster always containing an odd cycle; (3) in the plane, primal and dual cyclic edges are complementary (Minty), so on self-dual plane graphs an edge is cyclic with probability 1/2; (4) on a torus with a nonzero twist, primal and dual directed winding cycles cannot cross, so the complementarity is exact, while without a twist it fails; (5) consequently P(all contractible) = P(cross) on every twisted square-lattice torus, consistency is P(contractible) + P(even windings), and the open lower bound reduces to bounding P(contractible) below. Check exhaustively on small graphs and tori and by sampling.",
+  "ownership": {
+    "root": false,
+    "scope_id": "NAE-INVARIANT-20261022-001"
+  },
+  "parent": "NAE-INVARIANT-20261022-001",
+  "schema_version": 1,
+  "status": "Proved by NAE-INVARIANT-20261022-001A-P001 (V1 prose proof with exhaustive checks on two 3 x 3 twisted tori and sampled checks on five larger ones; the torus trichotomy is a proof sketch verified exhaustively on 3 x 3): fair not-all-equal is a swap-reversed random orientation of the bipartite double cover, inconsistent exactly when a strong component is swap-invariant, equivalently when the projected cyclic edges have a cross cluster or an odd winding; plane cyclic edges are complementary to dual cyclic edges (Minty); on twisted tori the complementarity is exact (the twist forbids crossing primal and dual winding cycles) and fails untwisted; hence P(contractible) = P(cross), consistency = contractible + even windings, and emergence lies between -log2(1-P0) and -log2 P0. The lower bound reduces to a crossing estimate for strongly-connected percolation and stays open.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Proof: strong components decide not-all-equal"
+}

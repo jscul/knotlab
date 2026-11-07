@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "The decision note records the literature check. Ticket A reports, by exact enumeration, the hole profile of partial-colouring complexes for every graph on at most five vertices and the relation between that profile and the Nullstellensatz degree for a frozen roster of non-colourable graphs.",
+  "completion_gate": "",
+  "dependencies": [
+    "BPHP-RES-PARITY-AUDIT-20261019-001Z",
+    "KNOT-FOUNDATION-20261019-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "HOLE-CRITERION-COLOURING-20261019-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Test whether holes in the shape of what a colouring formula's pairwise rules allow predict its proof complexity. Braun's exponential Res(\u2295) bound for the bit pigeonhole principle (audited in BPHP-RES-PARITY-AUDIT-20261019-001) extends low-degree 'moments' on partial matchings by filling cycles in the chessboard complex, which is exactly the shape (free-set complex) of the pigeonhole's pairwise rules; the pigeonhole principle is colouring the complete graph. For an arbitrary graph G and N colours the same argument needs the complex of partial proper colourings, Ind(G[S] \u25a1 K_N), to have no hole in dimension |S|-2 on every small vertex set S. Measure, by exact computation, (a) when those holes vanish and (b) whether the vanishing predicts the Nullstellensatz degree of colouring refutations; then decide whether a proof of the criterion and a bit-colouring generalization of Braun's Theorem 9.1 are worth attempting. Standalone value relative to known work: polynomial-calculus degree lower bounds for colouring are known by reductions and expansion (Lauria and Nordstr\u00f6m 2017; Conneryd, de Rezende, Nordstr\u00f6m, Pang and Risse 2023), and Res(\u2295) lower bounds for colouring beyond the complete graph are unknown; a homological criterion would be a new route to both.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HOLE-CRITERION-COLOURING-20261019-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-19: holes in partial-colouring shapes bound the Nullstellensatz degree of colouring refutations from below on every tested graph but carry no graph-specific information (B_hole equals the universal floor; with 3 colours it is always 2), so the plain hole criterion is exhausted for colouring (A). Braun's Res(\u2295) bound extends, in Lean, to bit PHP with m pigeons for 2^l < m with 8192 m l^2 (2l+5) <= 4^l, and through any proper colouring to bit-colouring of every graph with chromatic number in that range; bit-colouring is therefore not a second family for his Theorem 9.1 (B).",
+  "status_class": "complete",
+  "stop_rule": "Stop and write up if the hole criterion fails to predict the Nullstellensatz degree on the roster (a graph refuted at a degree where every relevant hole vanishes), or if holes do not vanish for some graph once N >= 2s-1; continue to a proof and the bit-colouring question only if both hold.",
+  "title": "Holes in the shape of partial colourings: from Braun's bit-PHP bound toward graph colouring"
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DEEP-HOLES-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CUTWIDTH-DEPTH-20261020-001B-P001"
+  },
+  "id": "CUTWIDTH-DEPTH-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) peak elimination: every toggle path of cost k on a connected graph with at least 3 vertices can be rearranged into one whose visited cuts are all at most k - 1; (2) by the monotonicity lemma for submodular functions (Fomin and Thilikos 2003, after Bienstock and Seymour), restated with proof, cutwidth is at most k - 1, so toggle width >= cutwidth + 1; (3) a monotone step costs at most cutwidth + floor(degree/2), so on graphs of maximum degree at most 3 toggle width = monotone toggle width = cutwidth + 1; (4) with DEEP-HOLES-20261020-001B, the depth of an impossible Z_p charge network over a field where p is invertible is exactly cutwidth + 1 on such graphs. Check each lemma by executable constructions on the census graphs.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CUTWIDTH-DEPTH-20261020-001"
+  },
+  "parent": "CUTWIDTH-DEPTH-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by CUTWIDTH-DEPTH-20261020-001B-P001 (prose; constructions run on 4,359 toggle paths over the 1,453 census graphs; three controls rejected; the census agrees). Peak elimination turns a toggle path of cost k into one whose visited cuts stay at most k - 1, and the monotonicity lemma of Fomin and Thilikos (2003, Lemma 1, after Bienstock and Seymour) turns that into an ordering: toggle width >= cutwidth + 1 on every connected graph with at least 3 vertices. A monotone sweep costs at most cutwidth + floor(maxdegree/2). So on graphs of maximum degree at most 3 the toggle width, its monotone version and cutwidth + 1 coincide, and with DEEP-HOLES-20261020-001B an impossible charge network on a cubic graph is refuted over any field that cannot compute in its group exactly at cutwidth + 1.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Toggle width is cutwidth plus one on graphs of degree at most three"
+}

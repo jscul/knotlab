@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The frozen census computes every declared quantity on the declared roster and reports each prediction and control.",
+  "completion_gate": "",
+  "dependencies": [
+    "CUTWIDTH-DEPTH-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PC-DEGREE-20261020-001A-E001"
+  },
+  "id": "PC-DEGREE-20261020-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Frozen census. Exact PC degree by signed closure on monomials in three settings (balanced binomial, reduced; standard binomial, reduced; clause polynomials, standard convention) on the CUTWIDTH-DEPTH-20261020-001A roster (exhaustive families, and sampled graphs with at most 18 edges), plus named graphs where half the carving width exceeds the maximum degree; exact carving width by subset dynamic programming; frozen predictions on the sandwich, the standard encodings, charge placement and controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PC-DEGREE-20261020-001"
+  },
+  "parent": "PC-DEGREE-20261020-001",
+  "schema_version": 1,
+  "status": "Closed: supported by PC-DEGREE-20261020-001A-E001 (confirmatory; frozen predictions P1-P5 all hold on 1,253 graphs, including 300 held-out graphs and named graphs K44, K45, K55, K6, K7, the 3x4 grid, Heawood, Moebius-Kantor and Q4; even-width graphs split 191 at cvw/2 and 628 at cvw/2 + 1; the even-charge control never refutes; the independent check recomputed carving width on 1,250 graphs and the degrees by plain linear algebra over F3 in 3,308 cases with no mismatch). Part of the roster replicates a pilot recorded in the contract.",
+  "status_class": "supported",
+  "stop_rule": "Stop after the roster or the budget; stop early only on a generator, closure or control failure.",
+  "title": "Census: exact polynomial calculus degree of Tseitin against carving width"
+}

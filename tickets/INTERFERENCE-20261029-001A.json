@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "KNOT-FOUNDATION-20261019-001E"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "INTERFERENCE-20261029-001A-P001"
+  },
+  "id": "INTERFERENCE-20261029-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Standard statement: consider functions on {0,1}^n written as sums over hidden Boolean variables of products of real-valued functions of at most two variables (hidden or visible). With nonnegative values the support of such a sum is primitive-positive definable from binary relations, hence majority-closed, so no relation constrained as a whole but free on every proper subset of coordinates (a knot) is a support, with any number of hidden variables. With signed values: (1) zero hidden variables never give a knot; (2) a clause of any width is a difference of two products of one-variable functions, so a k-CNF with m clauses is such a signed sum with m hidden bits (the inclusion-exclusion identity both 2026 ETH refutations start from), and a relation excluding z tuples needs at most z; (3) for each of the 16 classes of three-bit knots, the minimum number of hidden bits in an exact signed realization, decided through real tensor rank and Cayley's hyperdeterminant. Nearest known result: Schaefer (1978) and the program's KNOT-FOUNDATION-20261019-001E (no 2-CNF with witnesses defines a knot); holographic transformations (Valiant 2008; Cai and Lu); real rank of 2x2x2 tensors (de Silva and Lim 2008). Classification: known with delta (the dichotomy is classical in pieces; the per-class census is a candidate local delta).",
+  "ownership": {
+    "root": false,
+    "scope_id": "INTERFERENCE-20261029-001"
+  },
+  "parent": "INTERFERENCE-20261029-001",
+  "schema_version": 1,
+  "status": "Proved by INTERFERENCE-20261029-001A-P001 (V1, prose plus exhaustive and symbolic checks): with nonnegative weights, sums over hidden bits of products of two-variable functions have majority-closed supports and never give a knot; with signed weights zero hidden bits never give a knot, one hidden bit per clause gives any CNF (inclusion-exclusion, the first step of both 2026 ETH refutations), and every one of the 16 classes of three-bit knots is exactly a signed gadget with one hidden bit (real tensor rank 2; not-all-equal and twisted not-all-equal after one pairwise sign; golden ratio in the three-excluded and not-all-equal decompositions). The two/three boundary is a boundary of positivity.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Interference across the two/three boundary: cancelling witnesses and three-bit knots"
+}

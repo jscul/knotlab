@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "SL23-BOUNDED-20261025-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "With bounded first homology, counting homomorphisms from 3-manifold groups is polynomial for abelian-by-nilpotent targets (BOUNDED-H1-20261025-001B) and #P-hard for S4 (BOUNDED-H1-20261025-001A, CLOSED-H1-20261025-001C). SL(2,3) is the smallest group that is not abelian-by-nilpotent but has Fitting height 2, so it decides whether the line is abelian-by-nilpotent. It is a central extension by Z/2 of A4: its maps are A4 maps (affine twisted lifts) whose lifting obstruction, a class in the bounded group H^2(M; F2), should be a quadratic function of the twisted cocycle, so Gauss sums would count them. Test both sides: the double covers of S4 (GL(2,3), binary octahedral) should stay hard. Standalone value: where the bounded-homology line falls between Fitting heights 2 and 3.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SL23-BOUNDED-20261025-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-25: SL(2,3) with bounded first homology. SL(2,3) is polynomial on closed 3-manifolds with bounded first homology: its maps are A4 maps (an affine space of twisted cocycles over boundedly many maps to Z3) whose lift through the centre is obstructed by a quadratic function with values in the bounded group H^2(M; F2), and Gauss sums count the zeros; the same holds for every group with a central (Z/2)^m layer over an elementary abelian 2-layer over a nilpotent quotient. SL(2,3) is not abelian-by-nilpotent, so the bounded-homology line is not abelian-by-nilpotent: Fitting height 2 (SL(2,3)) is polynomial while Fitting height 3 (S4, and its double covers on knots) is #P-hard. Open: twisted central layers and cubic obstructions inside Fitting height 2, and closed hardness for the double covers. Next: UT3(F4) x| Z3 (2/3); execution deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop if the SL(2,3) lifting obstruction is not quadratic in the twisted cocycle or its target is not bounded, or if a hardness gadget for SL(2,3) appears.",
+  "title": "SL(2,3) with bounded first homology"
+}

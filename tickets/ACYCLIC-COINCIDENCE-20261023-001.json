@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "A either proves an identity that explains the six residual twist relations of L(3,1,3,1) (equal numbers of acyclic orientations of non-isomorphic shrunken signed graphs), or shows by a bounded search that no move of the tested kinds explains them, so that they are a one-off coincidence at these sizes.",
+  "completion_gate": "",
+  "dependencies": [
+    "TWIST-MAP-20261023-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "ACYCLIC-COINCIDENCE-20261023-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The owner approved a short side route with a strict stop rule. TWIST-MAP-20261023-001 left six exact twist relations on L(3,1,3,1) unexplained: on 48 skeletons the shrunken signed graphs of the two twists have the same number of acyclic orientations (for example 54 and 54) although their frame matroids are neither isomorphic nor Tutte-equivalent. The number of acyclic orientations of a signed graph is a chromatic-polynomial value (Zaslavsky), so the coincidence may have a textbook explanation. Find the identity, or show it is a one-off.",
+  "ownership": {
+    "root": true,
+    "scope_id": "ACYCLIC-COINCIDENCE-20261023-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-23. Identity found, so the stop rule is met. Proved: flipping the sign of a path through degree-2 vertices whose ends are also joined by links of both signs keeps the chromatic polynomial (that of the rest times ((lambda-1)^k - (-1)^k)/lambda), the zero-free one and the number of acyclic orientations, but not the Tutte polynomial. One such flip explains each of the 48 residual skeletons on L(3,1,3,1), so every exact twist relation found on the genus-2 surfaces holds skeleton by skeleton and the twist map has no unexplained residue. A first hypothesis (parallel copies) was false. Folklore risk high. Recommendation: Full pivot back to the main route, the dual-pair test for three-place lines (TRIPLE-SHIELD-20261023-001, running); interest 2/3.",
+  "status_class": "complete",
+  "stop_rule": "Strict: one bounded search. Stop as soon as an identity is proved or the search shows the coincidence is not explained by any tested move; no successor search inside this epic.",
+  "title": "Equal acyclic counts without isomorphism"
+}

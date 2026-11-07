@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "evidence_mode": "documentation",
+    "manifest_path": "research/NEXT-DIRECTION-SCAN-20261026-001B/manifest.json",
+    "report_path": "research/NEXT-DIRECTION-SCAN-20261026-001B/report.md"
+  },
+  "id": "NEXT-DIRECTION-SCAN-20261026-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Scout whether approximating |Hom(knot or link group, G)| is hard for the solvable groups already shown exactly #P-hard (S4, UT3(F4) x| C3, Heisenberg-by-cyclic with a hard pair): are the reductions approximation-preserving into ferromagnetic Potts (#BIS-hardness, Goldberg-Jerrum), or is there evidence for an FPRAS (Rowell's Conjecture 3.2(a))? Bounded documentation pass.",
+  "ownership": {
+    "root": false,
+    "scope_id": "NEXT-DIRECTION-SCAN-20261026-001"
+  },
+  "parent": "NEXT-DIRECTION-SCAN-20261026-001",
+  "schema_version": 1,
+  "status": "Closed by the scouting report research/NEXT-DIRECTION-SCAN-20261026-001B/report.md (documentation): for UT3(F4) x| C3 the exact reduction also preserves approximation, so approximating knot-group counts is #BIS-hard (Goldberg-Jerrum, Q = 64), now Proposition 15 of the Rowell note; for the Heisenberg groups the pure-leaf recipe is exact but not approximation-preserving (the psi^-1 sector stays maximal; a two-sided repair is sketched for r in {3, 4}); for S4 no verdict (interpolation; planar ferromagnetic Potts; series-parallel gadgets never penalize equal states). Replayed: all seven scripts reproduce. Interest 1/3; no standalone epic; optional S4 tangle scan.",
+  "status_class": "closed-null",
+  "stop_rule": "",
+  "title": "Lane B: approximate counting (Rowell's part a)"
+}

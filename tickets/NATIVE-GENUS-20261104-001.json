@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "RELAY-NET-20261104-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "NATIVE-GENUS-20261104-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue investigating.', approving RELAY-NET-20261104-001's recommendation): a native reading of genus. Build spaces with several Fano atoms in plane glue, joined by wires and liquid regions. Ask whether the creation map over all removals splits into one halo per atom, so that it counts the handles and locates them, and whether wires that carry one atom's halo into another's region blur the count. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "NATIVE-GENUS-20261104-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-04: successful. The creation map splits by atom: whether a removal creates at a gluing line depends only on the atoms holding the two lines (proved for atoms attached at a point, checked exactly for atoms attached at a line), so each removal's halo is its own atom's. Native selection counts and locates handles that plane glue separates: the lines outside a largest creation-free set fall into one piece per atom (416 of 420 separated spaces, exact, fixed in advance), while touching atoms merge and the count reads Fano atoms (10 of the 32 small three-fold spaces; exploratory blocks of mutual creation, 29). Wires land one atom's halo on another's cut without changing the count. Next: a native reading of the brace tree (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when the splitting of the creation map by atom is proved or refuted, when it is decided on the tested families whether a statistic of the creation map alone counts and locates the handles (with SAT genus as ground truth), and when the effect of wires on that count is settled.",
+  "title": "A native reading of genus"
+}

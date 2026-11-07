@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "Theorems 1-4 are proved in prose with exact threshold certificates in check.py; calibrated on finite planted graphs by the experiment.",
+  "completion_gate": "",
+  "dependencies": [
+    "FREEZING-KNOTS-20261020-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FREEZING-KNOTS-20261020-001B-P001"
+  },
+  "id": "FREEZING-KNOTS-20261020-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "On the d-regular tree with the broadcast q-colouring (the local limit of planted colourings of random d-regular graphs) prove: (1) a vertex is frozen exactly when every other colour is carried by a neighbour frozen within its own branch, and a branch freezes its root with probability p*, the largest fixed point of the coverage polynomial; (2) for d >= q the relation on q neighbours of a vertex over all colourings is the K1-K3 knot 'not all q colours used'; (3) that knot is native with probability (1 - p*)^q (1 - zeta) + (1 - mu)^q zeta, with explicit zeta and mu, which equals 1 exactly when p* = 0; (4) d_f(3) = 6, d_f(4) = 10 and d_f(5) = 15, certified exactly (Bernstein bounds below the threshold, a rational witness at it), with p* jumping to about 0.9 and nativity dropping below 10^-3 at the threshold.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FREEZING-KNOTS-20261020-001"
+  },
+  "parent": "FREEZING-KNOTS-20261020-001",
+  "schema_version": 1,
+  "status": "Proved by FREEZING-KNOTS-20261020-001B-P001 (prose with exact certificates): on the d-regular tree with the broadcast q-colouring, a vertex is frozen exactly when every other colour is carried by a neighbour frozen within its branch, and branches freeze with probability p*, the largest fixed point of the coverage polynomial; the star relation 'not all q colours used' on q neighbours is a K1-K3 knot at every degree; it is native with probability (1 - p*)^q (1 - zeta) + (1 - mu)^q zeta, equal to 1 exactly when p* = 0; p* = 0 below d = 6, 10, 15 (q = 3, 4, 5) and p* >= 0.898, 0.854, 0.876 at and beyond, where nativity is below 0.0011, 0.00046, 0.00003. Star knots stop being native exactly and discontinuously at the freezing threshold; the source-blind knot persists at every degree; as a threshold, native-knot density restates freezing. Classical recursion; the knot reading is the program's.",
+  "status_class": "proved",
+  "stop_rule": "Stop and record the gap if a certificate or the formula check fails.",
+  "title": "Proof: star knots stop being native at the freezing threshold of the tree"
+}

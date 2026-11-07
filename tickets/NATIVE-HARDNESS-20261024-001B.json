@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-HARDNESS-20261024-001A",
+    "SURFACE-GLUING-20261024-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "NATIVE-HARDNESS-20261024-001B-P001"
+  },
+  "id": "NATIVE-HARDNESS-20261024-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Using the hub-free parity gadgets of SURFACE-GLUING-20261024-001B, decide which knots have hub-free networks that are hard for resolution, and whether the rest have hub-free networks refutable in bounded width.",
+  "ownership": {
+    "root": false,
+    "scope_id": "NATIVE-HARDNESS-20261024-001"
+  },
+  "parent": "NATIVE-HARDNESS-20261024-001",
+  "schema_version": 1,
+  "status": "Proved by NATIVE-HARDNESS-20261024-001B-P001 (V1 prose proof with standard-library check; size corollary conditional on Ben-Sasson and Wigderson). In an unsatisfiable native network every surrounded knot is parity, with the rest allowing the complementary class (a non-parity knot allows five of eight states, the rest at least four). So without parity knots native contradictions are cacti of odd wire cycles, refuted with derived clauses of at most two literals in linear size, while every native contradiction needs width at least the balanced edge boundary: native networks are hard for resolution exactly with parity.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Resolution hardness without hubs"
+}

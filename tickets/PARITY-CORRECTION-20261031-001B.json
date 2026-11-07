@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PARITY-CORRECTION-20261031-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PARITY-CORRECTION-20261031-001B-P001"
+  },
+  "id": "PARITY-CORRECTION-20261031-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof. (i) Splice lemma: if a signed piece has a parity certificate (lines covering every point evenly, with an odd number of negations) that avoids a line m, then splicing any host at an incidence of m gives a parity-unsolvable system. (ii) Two calls: with G the piece's 2x2 transfer matrix and H_k the host with one incidence replaced by a chain of k pieces, M(H) = (tr G M(H_1) - M(H_2)) / det G by Cayley-Hamilton. (iii) An eight-line piece without repeated lines has det G = -16 lam^2 (lam - 1)^6 (lam + 1)^6. So for every complex lam outside {0, 1, -1}, parity's coupling on connected simple parity-unsolvable systems is as hard as on all connected simple systems, and parity's failing class makes no member of its family easy.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PARITY-CORRECTION-20261031-001"
+  },
+  "parent": "PARITY-CORRECTION-20261031-001",
+  "schema_version": 1,
+  "status": "Proved by PARITY-CORRECTION-20261031-001B-P001: a parity certificate avoiding the port line survives splicing into any host, so chains of an eight-line piece (det G = -16 lam^2 (lam - 1)^6 (lam + 1)^6) make the host count (tr G M(H_1) - M(H_2)) / det G from two parity-unsolvable systems; for every lam outside {0, 1, -1, i, -i, oo}, parity's coupling is #P-hard on connected simple systems where parity fails, so its failing class makes no member of its family easy (the knot's failures, global, do not transplant: 54/54 observed)",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Parity's failing systems carry every hard instance"
+}

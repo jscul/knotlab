@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "The novelty scan is recorded with its query families and verdict; A proves its claims with checks that rebuild the code, the failing system, the counting matrices and the controls.",
+  "completion_gate": "",
+  "dependencies": [
+    "AFFINE-TOPS-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "CYCLE-UTILITY-20261021-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Serves open question 3 of docs/KNOT_INTUITION.md (composition) after AFFINE-TOPS-20261021-001, which proved that a law composes like cycles exactly when it is affine modulo the tops (Conjecture 7 of CYCLE-TOPS-20261021-001B-P001) and that such laws carry exactly the direct sums of matroids representable over finite fields. The owner approved a bounded literature check of novelty and, if no prior statement is found, an attempt to understand the result's utility. The scan (recorded in research/CYCLE-UTILITY-20261021-001/novelty_scan.md) found no statement of the characterization; its nearest relatives are almost affine codes and entropic matroids, ideal secret sharing, strong rectangularity in counting CSP, Herrmann's theorem, Zaslavsky's biased expansions and model-theoretic geometries. Scoping found three uses: the characterization detects non-linearity of codes (the Simonis-Ashikhmin non-Pappus almost affine code generates a three-copy system that fails elimination); a law that keeps composing like cycles with all constants added has a polynomial-time constraint problem; and counting is not covered (the lifted Z3 law composes like cycles but is not balanced). A proves these with checks.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CYCLE-UTILITY-20261021-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-10-21. Novelty: a bounded scan (about twenty queries, seven families) found no statement of the composition characterization (no-overlap-in-bounded-search, not a priority claim); its steps are classical and its nearest relatives are single-code results on almost affine codes and entropic matroids. Utility: a composition test for linearity of codes (the Simonis-Ashikhmin non-Pappus code has uniform fibres but its law fails elimination in a three-copy system); a law that still composes like cycles with all constants added is Taylor and so has a polynomial-time constraint problem; counting is not covered (the lifted Z3 law and K4 compose like cycles yet are #P-complete to count); and constants can destroy composing like cycles (parity beside J, K4), so general tractability is open. Next (owner's decision): does composing like cycles alone imply polynomial time, through cores (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop after A. Stop earlier if the scan finds the characterization stated in the literature; then record the reference and close without utility claims beyond it.",
+  "title": "Novelty and utility of the composition characterization"
+}

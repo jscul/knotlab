@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "B proves that tangles give Sherali-Adams and sum-of-squares pseudo-expectations for Tseitin up to the tangle order on every graph, and that SoS and Sherali-Adams size is 2^Omega(tangle order) on graphs with cell systems, with executable checks of the pseudo-expectation (ideal constraints for three encodings, Sherali-Adams nonnegativity, exact moment-matrix positivity) on declared instances.",
+  "completion_gate": "",
+  "dependencies": [
+    "GENERAL-SIZE-20261020-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "proof-complexity"
+  },
+  "id": "SOS-SIZE-20261020-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Follows GENERAL-SIZE-20261020-001 and the Dantchev-Riis reading (no SoS or Sherali-Adams size bound for Tseitin beyond expanders was found). (1) For every connected graph, a tangle of order k of the cut function gives a pseudo-expectation for Tseitin up to degree k-1 (E[y_delta(U)] = s_U on the small side, 0 off the cut space): local distributions give Sherali-Adams, rank-one blocks give sum-of-squares. So SoS and Sherali-Adams degree are at least the carving width; with Berkholz's simulation of polynomial calculus (degree 2d) and PC-DEGREE, SoS degree is the carving width up to an additive constant. (2) Cell restrictions (CELL-SIZE) plus this degree bound give SoS and Sherali-Adams size 2^Omega(tangle order) on graphs with cell systems: grids, d-dimensional grids, plane graphs with short faces, walls. Check the pseudo-expectation on declared instances.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SOS-SIZE-20261020-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete on 2026-10-20: tangles give Sherali-Adams and sum-of-squares pseudo-expectations for Tseitin formulas on every graph, so SoS degree is the carving width up to 4 (Berkholz's simulation of PC gives the upper bound) and SA degree lies between cvw and floor(3cvw/2)+1; with the cell restriction, SoS and SA size is 2^Theta(tw) on grids, d-dimensional grids, plane graphs with short faces and walls, and with twin variables 2^Omega_H(tw) on minor-free graphs and 2^Omega(tw^(1/9)/polylog) on all graphs. The balanced encoding needs every degree below the tangle order (hub control). Recommendation: continue by converting the Tseitin results into one self-contained note, deferred to the owner.",
+  "status_class": "complete",
+  "stop_rule": "Stop after B. Stop earlier if the pseudo-expectation fails an ideal constraint, nonnegativity or positivity on a checked instance, or if prior work stating these bounds is found.",
+  "title": "Sum-of-squares and Sherali-Adams on Tseitin formulas beyond expanders"
+}

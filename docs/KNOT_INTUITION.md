@@ -3200,6 +3200,34 @@ So network holes come in two kinds:
      procedure. Does its stable partition ever merge lines of two atoms?
      - **The alternatives.** Junction handles natively (2/3); a native audit of earlier far-side records (1/3).
 
+   **2026-11-07: growth at open ends** (`OPEN-END-GROWTH-20261107-001`).
+   - **The question.** Let a uniform rule act only where the relation shows an open end, a distinction held by one knot, with no
+     chosen shape. What space does it grow?
+   - **A local rule grows the number line (proved).** Grow only at knots that hold two or more open ends. From one knot this grows
+     exactly the two-way thread, whatever choices are made: every unit keeps one open loop, and bond distance counts the loops
+     between two points, plus one. The axis goes off to infinity in both directions, grown from a single knot by a rule that reads
+     only open ends.
+   - **Closing open ends freezes or collapses space (proved; census exploratory).**
+     - **Bond distance is a boundary.** It is the least boundary of a two-sided region, counting seams and the open ends held inside.
+     - **Sealing freezes.** A region with no open ends behind one seam pins that seam, and no knot crosses it. Closing the nearest open
+       ends sealed space into frozen cells: no knot for 370 of 374 pairs.
+     - **Short boundaries collapse.** Every two-sided boundary is a knot. Closing that avoids pins and ties left a strip whose bond
+       distance never exceeds 5, at any length.
+     - **No closing at all branches.** Random sprouting, and closing at the flat face size, gave small worlds. No rule grew a plane.
+   - **The Cartesian plane is a product (proved; exact formula conjectured).** In the product law of two laws, whose allowed states
+     are grids with every column and row allowed, a knot of each axis joined at a corner is a knot. So bond distance is at most
+     δx + δy − 1. The product of two threads has no ends, so it is a ruler: taxicab distance, bond balls of order r^2, dimension two
+     read from the allowed states. Exactly δx + δy − 1 holds on 855 checked pairs.
+   - **Reading.** The line grows; the plane is the product of lines. Space holds together through open ends kept inside, as on the
+     line, or through long seams, as on a lattice. Growth that consumes its open ends freezes or collapses. Taxicab distance is not
+     round; whether logic can make round balls is open.
+   - **Provenance.** Bonds and bridges are classical (Whitney; Oxley). Product codes and their duals are classical (Elias;
+     MacWilliams–Sloane). No source was found for the growth rules' classification, the L-shaped knots or the exact formula.
+   - **Next (recommended, awaiting the owner).** Circles from logic (2/3): can bond balls become round? Map the large-scale shape of
+     bond distance in periodic laws without ends, where polygons are expected, and in random local laws, where roundness could
+     appear only as a trend.
+     - **The alternatives.** Dimension under products of k lines (1/3); a proof of the exact taxicab formula (1/3).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

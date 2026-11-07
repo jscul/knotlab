@@ -1,0 +1,142 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOGIC-AXIS-20261107-001D-P001",
+ "kind": "proof",
+ "ticket": "LOGIC-AXIS-20261107-001D",
+ "proof": "LOGIC-AXIS-20261107-001D-P001",
+ "status": "passed",
+ "claim": "Open ends make a tower stretch. In a hub-free parity law (knot graph: knots as vertices of degree 3, shared distinctions as edges, distinctions held by one knot as edges to an unconstrained outside vertex), substituting a connected gadget for a knot keeps the old knot as an implied check exactly when the gadget adds no open end; then the step is a conservative extension (implied checks among old distinctions unchanged), so in a tower without open ends the original distinctions stay a knot at bond distance 2 at every level and each gains new bond-2 neighbours at every level (collapse; the 2026-10-20 refinement is such a gadget). When the knot graph is a tree, the bond distance between two open ends is the number of knots on the path between them plus one, so the star tower has bond distance 3^k + 1 between its original legs.",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json": "Proved",
+     "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/result.json": "passed",
+     "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json": "passed"
+    }
+   }
+  },
+  "1 criterion: one substitution keeps the old knot iff no open end (4 named + 300 random gadgets; control: weaker rule)": {
+   "pass": true,
+   "info": {
+    "gadgets": 304,
+    "by number of open ends": {
+     "0": {
+      "kept": 67,
+      "dissolved": 0
+     },
+     "3": {
+      "kept": 0,
+      "dissolved": 66
+     },
+     "2": {
+      "kept": 0,
+      "dissolved": 112
+     },
+     "1": {
+      "kept": 0,
+      "dissolved": 59
+     }
+    },
+    "violations": [],
+    "control: 'kept iff at most one open end' is refuted": true
+   }
+  },
+  "2 conservative steps without open ends: implied checks among old distinctions unchanged (control: G1 loses the legs' check)": {
+   "pass": true,
+   "info": {
+    "gadgets without open ends": 26,
+    "random old subsets compared across a step": 1560,
+    "differences": 0,
+    "control: with open ends (G1) the legs' check is lost": true
+   }
+  },
+  "3 collapse of the G0 tower: corners stay a knot, bond-2 neighbours grow (control: G1 tower)": {
+   "pass": true,
+   "info": {
+    "G0 levels": [
+     {
+      "level": 0,
+      "legs a,b,c still a knot": true,
+      "bond-2 neighbours of a": 2
+     },
+     {
+      "level": 1,
+      "legs a,b,c still a knot": true,
+      "bond-2 neighbours of a": 4
+     },
+     {
+      "level": 2,
+      "legs a,b,c still a knot": true,
+      "bond-2 neighbours of a": 6
+     },
+     {
+      "level": 3,
+      "legs a,b,c still a knot": true,
+      "bond-2 neighbours of a": 8
+     },
+     {
+      "level": 4,
+      "legs a,b,c still a knot": true,
+      "bond-2 neighbours of a": 10
+     }
+    ],
+    "neighbours grow by at least 2 per level": true,
+    "control: in the G1 tower the legs are not a knot": true
+   }
+  },
+  "4 trees: bond distance = path knots + 1 (150 random trees; star tower 3^k + 1; control: prism)": {
+   "pass": true,
+   "info": {
+    "random cubic trees tested": 150,
+    "mismatches": [],
+    "star tower": [
+     {
+      "level": 0,
+      "knots on the a-b path": 1,
+      "3^k": 1,
+      "path cut is a knot of 3^k + 2 distinctions": true,
+      "exhaustive bond distance": 2
+     },
+     {
+      "level": 1,
+      "knots on the a-b path": 3,
+      "3^k": 3,
+      "path cut is a knot of 3^k + 2 distinctions": true,
+      "exhaustive bond distance": 4
+     },
+     {
+      "level": 2,
+      "knots on the a-b path": 9,
+      "3^k": 9,
+      "path cut is a knot of 3^k + 2 distinctions": true,
+      "exhaustive bond distance": 10
+     },
+     {
+      "level": 3,
+      "knots on the a-b path": 27,
+      "3^k": 27,
+      "path cut is a knot of 3^k + 2 distinctions": true
+     },
+     {
+      "level": 4,
+      "knots on the a-b path": 81,
+      "3^k": 81,
+      "path cut is a knot of 3^k + 2 distinctions": true
+     },
+     {
+      "level": 5,
+      "knots on the a-b path": 243,
+      "3^k": 243,
+      "path cut is a knot of 3^k + 2 distinctions": true
+     }
+    ],
+    "control: prism level 1, shortest path gives 5 but the bond distance is 4": true
+   }
+  }
+ },
+ "failures": []
+}

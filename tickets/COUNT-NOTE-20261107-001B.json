@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-SIZE-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COUNT-NOTE-20261107-001B-P001"
+  },
+  "id": "COUNT-NOTE-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove the explicit degree-3 Sherali-Adams refutation from the corner identity (sum over lines of monochromatic indicators minus sum over faces = 1), note that its coefficients are unary (so the count is in PPADS by Goos et al.), and measure how a cutting-planes solver (Exact) and an XOR-reasoning solver (CryptoMiniSat with Gaussian elimination) scale on the knot spheres against plain CDCL.",
+  "ownership": {
+    "root": false,
+    "scope_id": "COUNT-NOTE-20261107-001"
+  },
+  "parent": "COUNT-NOTE-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (COUNT-NOTE-20261107-001B-P001): the sphere's count has a unary Sherali-Adams refutation of degree 3. Sum over lines of the two clause falsifiers minus sum over the n - 4 three-point faces of two complementary conjunctions equals 1 (4n - 8 terms, coefficients +-1; checked on K_2..K_8), so finding a violated line is in PPADS^dt (Goos et al.), between one-sided 2D Sperner and PPADS. Experiment: cutting-planes (Exact) and XOR-reasoning (CryptoMiniSat) solvers do no better than CDCL on K_2..K_7.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The count among proof systems"
+}

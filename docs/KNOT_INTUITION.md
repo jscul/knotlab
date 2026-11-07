@@ -3133,6 +3133,47 @@ So network holes come in two kinds:
      Fano atoms of every Fano tree, then add plane glue.
      - **The alternatives.** Whether junction handles act as one (2/3); a proof of the exception (1/3).
 
+   **2026-11-07: the axis built from logic** (`LOGIC-AXIS-20261107-001`).
+   - **The owner's picture.** A number line or Cartesian plane whose axes are themselves infinite structures of logic, measured in
+     logic. The measure used is bond distance: the least knot through two distinctions, minus one, read from allowed states alone.
+   - **Without ends, bond distance is a ruler (proved).**
+     - **Chained knots.** If far-apart parts of a law are independent, every knot is chained, so bond distance grows at least
+       linearly with separation. Parity laws whose finite moves are dense (laws without ends) have this property.
+     - **The number line.** On the atom thread w(t−1) ∧ L(t) → w(t), the bond distance between w_s and w_t is exactly t − s + 1: one
+       unit per loop. A chain of two-place ties has no knot, so it has no spacing.
+     - **The plane.** Tseitin's and the gauge law read the lattice's dimension from their allowed states: bond balls grow like r^d. On
+       the plane the ruler is taxicab, 2d + 1 to 2d + 7: an x-count plus a y-count, never the diagonal.
+     - **One bit per site freezes.** A parity law with one distinction per site is free or has no finite moves. A native parity plane
+       needs a distinction per lattice direction.
+     - **Native in every variable is not enough.** Take Ledrappier's law on x, z free and y = x + z. Every variable is flipped by a
+       finite move, yet a six-variable knot joins points 2^k apart for every k. A correction request asks whether a native knot must
+       also be natively bound.
+     - **Growth never stretches.** A conservative extension never increases bond distance. A system that keeps its old allowed states
+       grows only at its edges.
+   - **The frozen axis is measured in signed bits (proved; equality conjectured).**
+     - **Infinite bond balls.** In Ledrappier's law the three-place knots are exactly the Frobenius triangles.
+     - **The bound.** Along each lattice line, bond distance is at most 1 + w(n), the signed-binary digit count of the separation, and
+       it is 2 exactly at powers of two.
+     - **Equality** is checked in windows: n <= 128, and all 168 vectors of [−6, 6]^2.
+   - **With nothing drawn, towers stretch only through open ends.**
+     - **Proved (hub-free gadgets).** Replacing every knot by a gadget keeps the old knot exactly when the gadget adds no open end, a
+       distinction held by one knot. Every step is then conservative, and the original distinctions stay at bond distance 2 forever.
+       The 2026-10-20 refinement is such a gadget, which is why it could not grow space.
+     - **Measured (exploratory).** Gadgets with open ends stretch the ruler by a fixed factor per level: 3^k + 1 for the star and the
+       hexagon, 3·4^(k−1) + 1 for the prism. Their growth dimensions, log(copies)/log(stretch), are 1.26, 1.63 and 1.29.
+     - **Trees (proved).** On tree-shaped knot graphs, bond distance is the number of knots on the path plus one.
+   - **Reading.**
+     - **Where logic measures.** Logic measures space faithfully exactly where nothing is opened by infinity.
+     - **Where space expands.** Space expands between existing distinctions exactly where growth adds open ends. The growth of
+       emergent information and the growth of space meet there.
+     - **What is still chosen.** The dimension comes with the chosen gadget, like a drawing. No tested law selects its own.
+   - **Provenance.** Strong irreducibility and dense homoclinic groups (Lind–Schmidt) underlie the ruler. Ledrappier's non-mixing
+     shapes and Masser's unit equations in characteristic p underlie the frozen axis. Wolfram measures dimension by ball growth in
+     drawn hypergraphs. No source was found for the bond-distance reading, the signed-binary construction or the open-end criterion.
+   - **Next (recommended, awaiting the owner).** Growth at open ends (2/3). Let a uniform rule act only where the relation shows an
+     open end, with no chosen gadget shape, and measure the growth exponent of bond balls.
+     - **The alternatives.** The signed-binary lower bound (1/3); the logical Cartesian product of two threads (1/3).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

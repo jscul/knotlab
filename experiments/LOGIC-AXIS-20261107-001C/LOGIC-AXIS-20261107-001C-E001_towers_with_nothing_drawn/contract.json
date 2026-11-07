@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LOGIC-AXIS-20261107-001C-E001",
+  "ticket": "LOGIC-AXIS-20261107-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "When every three-place parity knot of a relation is replaced, level after level, by a fixed symmetric gadget of three-place parity knots on its three distinctions and fresh ones, with nothing drawn, does the bond distance between the original distinctions stretch, and what growth dimension (log copies / log stretch) results? Which gadgets keep the old knot, so that the ruler cannot stretch?",
+  "public_inputs": {
+    "seed": "One parity knot a+b+c=0 on three open distinctions; no coordinates, lattice, neighbour list or target dimension.",
+    "law": "A substitution rule: each explicit three-place parity knot is replaced by a copy of a gadget whose three external legs are its three distinctions. Gadgets are symmetric under all permutations of the legs, so no orientation is chosen. Census: G0 corner triangle (the 2026-10-20 parity refinement, no new loops), G1 star with a dangling loop at each corner knot, G2 hexagon with a dangling loop on each edge knot, G4 prism with a dangling loop at each corner knot (all hub-free: every fresh distinction lies in at most two knots), and G6 corner triangle plus middle knot (hubs, no loops).",
+    "admitted_maps": "Bijections of distinction identities; the legs' assignment is immaterial by the gadget's symmetry.",
+    "scope": "Bond distance (NATIVE-NETWORK-20261021-001) between two original distinctions at each level; knots per level; whether the old knot survives; three-place knots not among the explicit ones; open bits per level; bond-ball profile at one level."
+  },
+  "forbidden_inputs": [
+    "A lattice, embedding, coordinates or target dimension supplied to the law",
+    "Graph distance used in place of bond distance as the observable (it may be reported only beside it)",
+    "A choice of gadget made after seeing its dimension, or dropping a gadget from the declared census"
+  ],
+  "primary_observable": "delta_k(a,b) = least size of a knot containing the original distinctions a and b at level k, minus one, for k = 0..K; stretch delta_k/delta_(k-1); copies per level; dimension estimate log(copies)/log(stretch).",
+  "cheapest_meaningful_control": "G0 (no new loops) must keep the old knot: delta_k(a,b) = 2 at every level. For hub-free gadgets the knots are the bonds of the knot graph (knots as vertices, shared distinctions as edges, legs and loops as edges to an unconstrained outside vertex), so exact bond distance is a minimum connected cut, computed by a mixed-integer program; it is cross-checked against an exhaustive circuit search on the allowed states at levels where that search is feasible, and the program is rerun without its connectivity constraint as a control that must return a different, disconnected answer.",
+  "resource_budget": {"wall_minutes": 40, "memory_mib": 2048, "max_level": 5, "max_vertices": 8000},
+  "first_executable_signal": "delta_1(a,b) and the old-knot test for G0 and G1.",
+  "decision_or_followup_rule": "If gadgets without new loops keep the old knot and gadgets with loops stretch by a level-independent factor, record the dimension estimates as exploratory and state the loop criterion for a proof. If a gadget with loops does not stretch, or one without loops does, record it as a counterexample to the criterion.",
+  "stop_rule": "Stop at the declared census and levels; do not search for a gadget of dimension 2 after seeing the results.",
+  "nonclaims": [
+    "Exploratory and non-promotable: finite levels do not prove a limit dimension.",
+    "The gadget is a choice, like a drawing; the law does not select it, and no space is created by a law that selects itself.",
+    "Bond distance is the program's extended bond distance; no metric geometry, coordinates or physical space is claimed."
+  ],
+  "feasibility_disclosure": "Before this envelope, scratch runs (not evidence) confirmed: Ledrappier's law has knots of 3 points at every power-of-two separation; hub-free gadget sums equal the old knot plus the gadget's dangling loops."
+}

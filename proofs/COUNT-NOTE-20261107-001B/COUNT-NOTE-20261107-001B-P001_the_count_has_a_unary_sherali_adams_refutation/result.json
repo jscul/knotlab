@@ -1,0 +1,258 @@
+{
+ "artifact_id": "COUNT-NOTE-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "passed",
+     "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json": "passed",
+     "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the certificate: sum over lines of the two clause falsifiers minus sum over three-point faces of two complementary conjunctions is the constant polynomial 1, exactly, for K_2..K_8; coefficients +1 and -1; three literals per term": {
+   "info": {
+    "k=2": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 12
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 16,
+     "literals per term": [
+      3
+     ],
+     "points": 16,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 56,
+     "three-point faces give two complementary conjunctions": true
+    },
+    "k=3": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 32
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 36,
+     "literals per term": [
+      3
+     ],
+     "points": 36,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 136,
+     "three-point faces give two complementary conjunctions": true
+    },
+    "k=4": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 60
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 64,
+     "literals per term": [
+      3
+     ],
+     "points": 64,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 248,
+     "three-point faces give two complementary conjunctions": true
+    },
+    "k=5": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 96
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 100,
+     "literals per term": [
+      3
+     ],
+     "points": 100,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 392,
+     "three-point faces give two complementary conjunctions": true
+    },
+    "k=6": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 140
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 144,
+     "literals per term": [
+      3
+     ],
+     "points": 144,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 568,
+     "three-point faces give two complementary conjunctions": true
+    },
+    "k=7": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 192
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 196,
+     "literals per term": [
+      3
+     ],
+     "points": 196,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 776,
+     "three-point faces give two complementary conjunctions": true
+    },
+    "k=8": {
+     "coefficients": [
+      -1,
+      1
+     ],
+     "corner faces sum to 1": true,
+     "faces by number of points": {
+      "2": 6,
+      "3": 252
+     },
+     "faces minus lines": 2,
+     "line identities hold": true,
+     "lines": 256,
+     "literals per term": [
+      3
+     ],
+     "points": 256,
+     "positive terms are exactly the clauses' falsifying conjunctions": true,
+     "sum of the terms is the constant 1": true,
+     "terms": 1016,
+     "three-point faces give two complementary conjunctions": true
+    }
+   },
+   "pass": true
+  },
+  "2 brute force on K_2 (2^16 assignments): violated clauses minus monochromatic three-point faces is 1 at every assignment": {
+   "info": {
+    "assignments": 65536,
+    "first failure": null
+   },
+   "pass": true
+  },
+  "3 solver record (experiment, read from solvers/solver_runs.json): no solver refutes beyond small k within its limit": {
+   "info": {
+    "limits": {
+     "CaDiCaL (CDCL)": "600 s per instance (k = 7 was stopped at 2476 s because the solver did not honour the interrupt)",
+     "CryptoMiniSat (XOR)": "600 s per instance",
+     "Exact (cutting planes)": "600 s per instance"
+    },
+    "table": {
+     "CaDiCaL (CDCL)": {
+      "conflicts by k": {
+       "2": 36,
+       "3": 354,
+       "4": 3530,
+       "5": 51332,
+       "6": 1182667,
+       "7": null
+      },
+      "first k not refuted": 7,
+      "largest k refuted within the limit": 6,
+      "seconds by k": {
+       "2": 0.0,
+       "3": 0.0,
+       "4": 0.02,
+       "5": 0.32,
+       "6": 17.97,
+       "7": 2476
+      }
+     },
+     "CryptoMiniSat (XOR)": {
+      "conflicts by k": {
+       "2": null,
+       "3": null,
+       "4": null,
+       "5": null,
+       "6": null,
+       "7": null
+      },
+      "first k not refuted": 7,
+      "largest k refuted within the limit": 6,
+      "seconds by k": {
+       "2": 0.01,
+       "3": 0.02,
+       "4": 0.13,
+       "5": 4.16,
+       "6": 107.51,
+       "7": 609.71
+      }
+     },
+     "Exact (cutting planes)": {
+      "conflicts by k": {
+       "2": 40,
+       "3": 657,
+       "4": 7893,
+       "5": 143408,
+       "6": 28998866
+      },
+      "first k not refuted": 6,
+      "largest k refuted within the limit": 5,
+      "seconds by k": {
+       "2": 0.0,
+       "3": 0.0,
+       "4": 0.09,
+       "5": 2.5,
+       "6": 600.45
+      }
+     }
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "For the octahedral knot sphere K_k (n = 4k^2 points), the sum over lines of the two clause-falsifying conjunctions minus the sum over the n - 4 three-point faces of two complementary conjunctions is the constant polynomial 1. This is a Sherali-Adams refutation of the not-all-equal formula of degree 3 with 4n - 8 terms, all coefficients +1 or -1, so by Goos-Hollender-Jain-Maystre-Pires-Robere-Tao (unary Sherali-Adams captures PPADS^dt) finding a violated line is in PPADS^dt; with FLAT-STATES-20261107-001B it lies between one-sided 2D Sperner and PPADS. Solver record (experiment): a cutting-planes solver (Exact) and an XOR-reasoning solver (CryptoMiniSat) scale no better than plain CDCL (CaDiCaL) on K_2..K_7.",
+ "kind": "proof",
+ "proof": "COUNT-NOTE-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "COUNT-NOTE-20261107-001B"
+}

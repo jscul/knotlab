@@ -617,6 +617,30 @@
    "tier": 5
   },
   {
+   "id": "COUNT-NOTE-20261107-001-D001",
+   "line": "native",
+   "date": "2026-11-07",
+   "title": "Grid Sperner and the knot sphere need exponential resolution size, with every lemma proved",
+   "statement": "Every resolution refutation of the knot sphere needs width Theta(sqrt n) and size 2^Theta(sqrt n), now with every lemma proved through single-step vortex moves, straight cuts giving d >= (dist - 19)/2, and a row count. Grid Sperner with its fixed boundary, and the Itsykson-Malova-Oparin-Sokolov Sperner CSP, need width Omega(m) and size 2^Omega(m), because with three straight cuts the fixed boundary is a flat state.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/proof.md",
+   "tier": null
+  },
+  {
+   "id": "COUNT-NOTE-20261107-001-D002",
+   "line": "native",
+   "date": "2026-11-07",
+   "title": "The sphere's count is in PPADS: a degree-3 Sherali-Adams refutation with coefficients +-1",
+   "statement": "The lines' clause falsifiers minus the faces' monochromatic conjunctions sum to exactly 1, a degree-3 Sherali-Adams refutation with 4n - 8 terms and coefficients +-1, so by the unary Sherali-Adams characterization of PPADS^dt (Goos, Hollender, Jain, Maystre, Pires, Robere, Tao) finding a violated line is in PPADS^dt, between one-sided 2D Sperner and PPADS. Cutting-planes and XOR-reasoning solvers do no better than CDCL on it, and whether short cutting-planes or Res(xor) proofs exist is open.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/proof.md",
+   "tier": null
+  },
+  {
    "id": "SEYMOUR-COUNT-20261030-001-D001",
    "line": "threefold",
    "date": "2026-10-30",
@@ -1730,6 +1754,42 @@
    "superseded_by": null,
    "issue": null,
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/proof.md",
+   "tier": null
+  },
+  {
+   "id": "LOGIC-AXIS-20261107-001-D001",
+   "line": "creation",
+   "date": "2026-11-07",
+   "title": "Without ends, bond distance is a ruler that reads the lattice's dimension",
+   "statement": "If a law's finitely supported moves are dense (no ends), every knot is chained at the moves' range, so bond distance grows linearly with separation and its balls recover the lattice's dimension from allowed states alone, with taxicab distance on the gauge plane and exactly t-s+1 along the atom thread. Per-variable nativity is not enough: Ledrappier's law plus a free field is native in every variable yet has knots joining points 2^k apart.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md",
+   "tier": null
+  },
+  {
+   "id": "LOGIC-AXIS-20261107-001-D002",
+   "line": "creation",
+   "date": "2026-11-07",
+   "title": "Ledrappier's frozen plane measures distance in signed bits",
+   "statement": "In Ledrappier's law the three-place knots are exactly the Frobenius triangles, so every point has bond-distance-2 neighbours at every power-of-two separation and every bond ball is infinite. Along each lattice line the bond distance between points n apart is at most 1 + w(n), the weight of n's non-adjacent form, and equals 2 exactly at powers of two.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/proof.md",
+   "tier": null
+  },
+  {
+   "id": "LOGIC-AXIS-20261107-001-D003",
+   "line": "creation",
+   "date": "2026-11-07",
+   "title": "Open ends make a substitution tower stretch",
+   "statement": "A hub-free parity substitution keeps the replaced knot exactly when its gadget adds no open end, and then every step is conservative, so the original distinctions stay at bond distance 2 forever; this is why the 2026-10-20 refinement cannot grow space. On tree-shaped knot graphs bond distance equals the path's knot count plus one, so the star tower stretches as 3^k + 1.",
+   "status": "active",
+   "superseded_by": null,
+   "issue": null,
+   "href": "https://github.com/jscul/knotlab/blob/main/proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md",
    "tier": null
   },
   {

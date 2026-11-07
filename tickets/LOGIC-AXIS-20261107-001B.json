@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001Z",
+    "HOLES-AT-INFINITY-20261020-001Z",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOGIC-AXIS-20261107-001B-P001"
+  },
+  "id": "LOGIC-AXIS-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "In Ledrappier's law x(i,j)+x(i+1,j)+x(i,j+1)=0 on Z^2 (frozen: no finite moves), knots are the circuits of the points (a,b) -> X^a (1+X)^b over F2. Prove: (1) the size-3 knots are exactly the Frobenius triangles {c, c+2^e e1, c+2^e e2} (Mason-Stothers in characteristic 2), so every distinction has bond-2 neighbours at every power-of-two separation in three directions and every bond ball is infinite; (2) for every n >= 1 there is a knot of size 2 + w(n) through (0,0) and (n,0), w(n) the weight of n's non-adjacent (signed-binary) form, proved a circuit by distinct (1+X)-adic valuations; so bond distance along the axis is at most 1 + w(n) = O(log n); (3) the lower bound: prove that every knot through (0,0) and (n,0) has at least 2 + w(n) points, or verify it exhaustively in bounded windows and state it as a conjecture, with the two-dimensional form (signed powers of two along the three lattice directions).",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOGIC-AXIS-20261107-001"
+  },
+  "parent": "LOGIC-AXIS-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (LOGIC-AXIS-20261107-001B-P001): the frozen axis. In Ledrappier's law the three-place knots are exactly the Frobenius triangles {c, c+2^e e1, c+2^e e2}, so every point is at bond distance 2 from six points at every power-of-two separation and bond balls are infinite; signed-binary hops give a knot of 2+w(n) points through (0,0),(n,0) (minimal by (1+X)-adic valuations), so bond distance along each lattice line is at most 1+w(n) = O(log n) and is 2 exactly at powers of two. Conjecture (windows only): equality, and 1+|v|_D in the plane; 168/168 plane vectors and n <= 128 agree.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The frozen axis: Ledrappier's law measures distance in signed bits"
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COUNT-NOTE-20261107-001B-P001",
+  "canonical_id": "COUNT-NOTE-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "COUNT-NOTE-20261107-001B",
+  "proof": "COUNT-NOTE-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The sphere's count has a unary Sherali-Adams refutation of degree 3",
+  "status": "Proved",
+  "claim": "For the octahedral knot sphere K_k (n = 4k^2 points), the sum over lines of the two clause-falsifying conjunctions minus the sum over the n - 4 three-point faces of two complementary conjunctions is the constant polynomial 1. This is a Sherali-Adams refutation of the not-all-equal formula of degree 3 with 4n - 8 terms, all coefficients +1 or -1, so by Goos-Hollender-Jain-Maystre-Pires-Robere-Tao (unary Sherali-Adams captures PPADS^dt) finding a violated line is in PPADS^dt; with FLAT-STATES-20261107-001B it lies between one-sided 2D Sperner and PPADS. Solver record (experiment): a cutting-planes solver (Exact) and an XOR-reasoning solver (CryptoMiniSat) scale no better than plain CDCL (CaDiCaL) on K_2..K_7.",
+  "dependencies": [
+    "SPHERE-SIZE-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A line or face identity that fails, or a sum of terms different from the constant 1 on some K_k.",
+    "A positive term that is not a falsifying conjunction of a clause of the formula, or a coefficient other than +1 or -1.",
+    "A misreading of the Goos et al. characterization (it requires polylog-width formulas, polylog degree and quasipolynomial size)."
+  ],
+  "lineage": {
+    "home_scope": "COUNT-NOTE-20261107-001",
+    "epic_path": [
+      "COUNT-NOTE-20261107-001"
+    ],
+    "parents": [
+      "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/count_lib.py",
+      "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/result.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json",
+      "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/count_lib.py": "55a90d4a3cbf9b62ba83e8eca889b17f17d7ee563954d2db6813ad57b0103a13",
+    "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/result.json": "24cfe9ffaee122ae72ba1e7bc7d4e463de0090ee2f5f48b9e620a469cd58dcb4",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "ca62f89c55bb4c742357bc2dc84c133f34ab3400df8e274ff8ede8272a6882ef",
+    "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json": "159a7eb8ffdbb8a4565180bbc7b5ce99c9592d572793387cd2cddd754e086223"
+  },
+  "paths": {
+    "manifest": "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/manifest.json",
+    "identity": "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/identity.json",
+    "proof": "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/proof.md",
+    "check": "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/check.py",
+    "result": "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/result.json",
+    "directory": "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot spheres K_k for every k (by the proof; the identity checked on K_2..K_8). Solver behaviour recorded on K_2..K_7 only.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "the identity by hand, symbolically checked on K_2..K_8 and by brute force on K_2; the PPADS placement by citation; the solver record is experiment evidence; no human or external review",
+    "novelty": "known-with-delta: the Euler count is known upstream (Sherali-Adams level 3); the unary coefficient bound and hence PPADS^dt membership for these formulas, and the solver record, are new as far as found."
+  }
+}

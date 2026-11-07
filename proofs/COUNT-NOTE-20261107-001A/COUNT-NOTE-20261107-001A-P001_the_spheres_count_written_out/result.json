@@ -1,0 +1,186 @@
+{
+ "artifact_id": "COUNT-NOTE-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "passed",
+     "proofs/SPHERE-COUNT-20261106-001A/SPHERE-COUNT-20261106-001A-P001_the_violated_line_can_be_pinned/result.json": "passed",
+     "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/result.json": "passed",
+     "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json": "passed",
+     "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json": "passed",
+     "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 local lemma (exact): six rays from a lattice point, within 22 degrees (near corners) and 11 degrees (far corners) of the ideal directions, meet pairwise disjoint faces within radius 5; at most 18 points can head one ray's crossing and tail another's, all within lattice distance 3": {
+   "info": {
+    "bound on |X0| (sum over ordered pairs of the largest set)": 18,
+    "intervals per ray": [
+     7,
+     12,
+     6,
+     12,
+     6,
+     12
+    ],
+    "largest lattice distance of such a point": 3,
+    "pairs of intervals sharing a face": 0,
+    "points that can head one arc's crossing and tail another's": 18
+   },
+   "pass": true
+  },
+  "2 directions: over every core vortex (radius k/6) the arcs deviate from the ideal directions by at most 22 degrees (near corners) and 11 degrees (far corners), so the local lemma applies": {
+   "info": {
+    "k=36": {
+     "core vortices": 127,
+     "largest deviation, far corners": 8.83,
+     "largest deviation, near corners": 17.6
+    },
+    "k=48": {
+     "core vortices": 217,
+     "largest deviation, far corners": 8.67,
+     "largest deviation, near corners": 17.22
+    }
+   },
+   "pass": true
+  },
+  "3 straight cut systems: for every core vortex of K_12..K_36 the six straight arcs are disjoint paths of faces, the flat state violates exactly one line, through z, and X0 has at most 18 points, within distance 3 of z": {
+   "info": {
+    "k=12": {
+     "core vortices": 19,
+     "failures": 0,
+     "farthest X0 point from z": 2,
+     "largest |X0|": 7
+    },
+    "k=18": {
+     "core vortices": 37,
+     "failures": 0,
+     "farthest X0 point from z": 2,
+     "largest |X0|": 7
+    },
+    "k=24": {
+     "core vortices": 61,
+     "failures": 0,
+     "farthest X0 point from z": 2,
+     "largest |X0|": 7
+    },
+    "k=30": {
+     "core vortices": 91,
+     "failures": 0,
+     "farthest X0 point from z": 2,
+     "largest |X0|": 7
+    },
+    "k=36": {
+     "core vortices": 127,
+     "failures": 0,
+     "farthest X0 point from z": 2,
+     "largest |X0|": 7
+    }
+   },
+   "pass": true
+  },
+  "4 distance lemma: d_z(x, y) >= (dist(x, y) - 19)/2 for sampled vortices and sources on K_24 and K_36": {
+   "info": {
+    "k=24": {
+     "least d - (dist - 19)/2": 8.5,
+     "sources each": 3,
+     "vortices": 12
+    },
+    "k=36": {
+     "least d - (dist - 19)/2": 9.0,
+     "sources each": 3,
+     "vortices": 12
+    }
+   },
+   "pass": true
+  },
+  "5 single steps on K_30: every blocked step to a neighbour has a certificate whose walk passes through the old vortex, with sum d <= 3r - 6 and every pebble of the cycle within 25r of the old vortex": {
+   "info": {
+    "blocked": 11,
+    "budget sum d <= 3r - 6": 11,
+    "largest dist(y, pebble)/r": 1.0,
+    "steps": 63,
+    "through the old vortex": 11
+   },
+   "pass": true
+  },
+  "6 islands on K_48 and K_60 (radius 1, separation 45, vortex at distance >= 7): same-island terms >= 0 (d + lambda_p - lambda_q >= 0), between-island terms >= 1, window starts in [-3, 6], and the islands alone admit a state": {
+   "info": {
+    "islands": {
+     "k=48": 3,
+     "k=60": 5
+    },
+    "islands alone admit a state": 4,
+    "least between-island term": 7,
+    "least same-island d + lambda_p - lambda_q": 1,
+    "vortex positions tested": 4,
+    "window starts range": [
+     -2,
+     5
+    ]
+   },
+   "pass": true
+  },
+  "7 local lemma for grid Sperner (exact): three rays from a down-triangle's centroid within 20 degrees of 90, 210, 330 meet disjoint faces beyond the vortex triangle within radius 5, and at most 3 points can head one ray's crossing and tail another's": {
+   "info": {
+    "bound on |X0|": 3,
+    "intervals per ray": [
+     21,
+     28,
+     22
+    ],
+    "pairs of intervals sharing a face": 0,
+    "points that can head one arc's crossing and tail another's": 3,
+    "vortex triangle points down": true
+   },
+   "pass": true
+  },
+  "8 grid Sperner on m = 24, 36, 48: for every core down-triangle the three straight arcs give a flat boundary (one window start) and a flat state whose only full triangle is the vortex, |X0| <= 3, d >= (dist - 4)/2, and every term between boundary points or between a boundary point and an adjacent island point (start -1, 0 or 1) is >= 0": {
+   "info": {
+    "m=24": {
+     "core vortex triangles": 54,
+     "failures": 0,
+     "largest |X0|": 3,
+     "least boundary or boundary-island term": 0,
+     "least distance-lemma slack": 1.5
+    },
+    "m=36": {
+     "core vortex triangles": 129,
+     "failures": 0,
+     "largest |X0|": 3,
+     "least boundary or boundary-island term": 0,
+     "least distance-lemma slack": 1.5
+    },
+    "m=48": {
+     "core vortex triangles": 225,
+     "failures": 0,
+     "largest |X0|": 3,
+     "least boundary or boundary-island term": 0,
+     "least distance-lemma slack": 1.5
+    }
+   },
+   "pass": true
+  },
+  "9 constants of the size bound (s = 1, separation 45): balls of G are no larger than flat ones (radius 20 near every corner of K_48), coverage >= 7/(eM), literal probability q = p0/2, independence beyond distance 96, alpha = -log2(1 - q)/|B(96)| > 0": {
+   "info": {
+    "M = |B(47)|": 6769,
+    "alpha (bits per literal)": "9.82e-09",
+    "coverage lower bound p0": "0.00038",
+    "largest ball of radius 20 near the corners of K_48 (flat: 1261)": 1261,
+    "q": "0.00019",
+    "|B(96)|": 27937
+   },
+   "pass": true
+  }
+ },
+ "claim": "Every resolution refutation of the not-all-equal formula of the octahedral knot sphere K_k (n = 4k^2 points) has width at least c1 k and size at least 2^(c2 k), for absolute constants c1, c2 > 0; width O(k) and size n^O(1) 2^O(sqrt n) suffice. Grid Sperner with the fixed one-door-per-side boundary needs width Omega(m) and size 2^Omega(m). Every lemma is proved: label states and the window criterion; single-step certificates through the old vortex (gauge equivalence off two adjacent points); straight cut systems (six straight arcs from a vortex near the centre of one octant; an exact local lemma near the vortex) with at most 18 junctions of zero-weight steps, giving d_z(x, y) >= (dist(x, y) - 19)/2; the density bad set with a Vitali covering; one large free component by counting lattice rows (replacing the isoperimetric sketch); islands (radius 1, separation 45) whose terms are >= 0 inside an island and >= 1 between islands; a hard-core random packing; for grid Sperner, three straight arcs to the doors make the fixed boundary flat, so boundary terms are >= 0 and certificates through a deep vortex never reach the boundary.",
+ "kind": "proof",
+ "proof": "COUNT-NOTE-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "COUNT-NOTE-20261107-001A"
+}

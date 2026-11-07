@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOGIC-AXIS-20261107-001C-E001",
+    "contract_path": "experiments/LOGIC-AXIS-20261107-001C/LOGIC-AXIS-20261107-001C-E001_towers_with_nothing_drawn/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "LOGIC-AXIS-20261107-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment. Replace every three-place parity knot of a relation by a fixed gadget of three-place parity knots on its three distinctions and fresh ones, with no lattice, coordinates or neighbour lists, and iterate. For a bounded census of small gadgets measure: whether the old knot survives (conservative), whether unplanned three-place knots appear, the bond distance between the original distinctions at each level (the stretch), the number of knots per level, the growth dimension log(copies)/log(stretch), bond-ball growth at the last level, and the open bits added per level. Controls: the 2026-10-20 parity refinement (Sierpinski corners, predicted conservative with no stretch), a declared gauge torus (dimension 2 from bond balls) and a declared Ledrappier triangle (bond-2 ball growing with size).",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOGIC-AXIS-20261107-001"
+  },
+  "parent": "LOGIC-AXIS-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, LOGIC-AXIS-20261107-001C-E001): with nothing drawn, substitution towers of parity knots split by open ends. Gadgets adding no open ends (G0 = the 2026-10-20 refinement; G6 with hubs) keep the old knot, so the original corners stay at bond distance 2 at every level (collapse). Gadgets adding open ends (dangling loops) dissolve it and stretch the ruler by a fixed factor: bond distance 3^k+1 (star G1, hexagon G2) and 3*4^(k-1)+1 (prism G4), dimension estimates log4/log3=1.26, log6/log3=1.63, log6/log4=1.29. Exact minimum connected cut cross-checked by exhaustive search; non-promotable.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Towers with nothing drawn: does a substitution law stretch its own ruler?"
+}

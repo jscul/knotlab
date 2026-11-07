@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**192 current results** and 5 superseded ones, from 139 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**197 current results** and 5 superseded ones, from 141 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,15 +22,15 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 11 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 5 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 7 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 61 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 64 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 139 epics with their closures
+- [Epics](#epics): all 141 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -192,6 +192,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-10-25 · Native emergence cannot imitate a hub exactly, and on trees not approximately** (`SOFT-HUB-20261024-001-D001`).
   No native gadget of any knot is an exact hub, and pairs of solutions that do not link all three terminals reroute onto off-diagonal values, which bounds the hub ratio of windable gadgets by the square root of 3 (given McQuillan) and of parity and no-lone gadgets by 1. For the six open knots, tree gadgets are proved to have hub ratio at most 3; gadgets with cycles remain a conjecture.
   [proof P001](proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/proof.md), [proof P001](proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/proof.md), [epic closure](proofs/SOFT-HUB-20261024-001Z/SOFT-HUB-20261024-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Grid Sperner and the knot sphere need exponential resolution size, with every lemma proved** (`COUNT-NOTE-20261107-001-D001`).
+  Every resolution refutation of the knot sphere needs width Theta(sqrt n) and size 2^Theta(sqrt n), now with every lemma proved through single-step vortex moves, straight cuts giving d >= (dist - 19)/2, and a row count. Grid Sperner with its fixed boundary, and the Itsykson-Malova-Oparin-Sokolov Sperner CSP, need width Omega(m) and size 2^Omega(m), because with three straight cuts the fixed boundary is a flat state.
+  [proof P001](proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/proof.md), [epic closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The sphere's count is in PPADS: a degree-3 Sherali-Adams refutation with coefficients +-1** (`COUNT-NOTE-20261107-001-D002`).
+  The lines' clause falsifiers minus the faces' monochromatic conjunctions sum to exactly 1, a degree-3 Sherali-Adams refutation with 4n - 8 terms and coefficients +-1, so by the unary Sherali-Adams characterization of PPADS^dt (Goos, Hollender, Jain, Maystre, Pires, Robere, Tao) finding a violated line is in PPADS^dt, between one-sided 2D Sperner and PPADS. Cutting-planes and XOR-reasoning solvers do no better than CDCL on it, and whether short cutting-planes or Res(xor) proofs exist is open.
+  [proof P001](proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/proof.md), [epic closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -485,6 +491,15 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A Fano atom acts as one** (`ATOM-ONE-20261107-001-D002`).
   In every knot space, whether a removal in a Fano atom creates at a line of another Fano atom does not depend on which of its lines went; far side by far side this is proved except at a receiving atom's cut lines with a six-pattern port relation, and on Fano trees without exception. On 277 computed spaces every such line receives exactly its closed verdict (154,165 pairs), the exception included.
   [proof P001](proofs/ATOM-ONE-20261107-001B/ATOM-ONE-20261107-001B-P001_atoms_see_only_the_port_relation/proof.md), [proof P001](proofs/ATOM-ONE-20261107-001C/ATOM-ONE-20261107-001C-P001_the_exception_saved_and_fresh/proof.md), [epic closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Without ends, bond distance is a ruler that reads the lattice's dimension** (`LOGIC-AXIS-20261107-001-D001`).
+  If a law's finitely supported moves are dense (no ends), every knot is chained at the moves' range, so bond distance grows linearly with separation and its balls recover the lattice's dimension from allowed states alone, with taxicab distance on the gauge plane and exactly t-s+1 along the atom thread. Per-variable nativity is not enough: Ledrappier's law plus a free field is native in every variable yet has knots joining points 2^k apart.
+  [proof P001](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Ledrappier's frozen plane measures distance in signed bits** (`LOGIC-AXIS-20261107-001-D002`).
+  In Ledrappier's law the three-place knots are exactly the Frobenius triangles, so every point has bond-distance-2 neighbours at every power-of-two separation and every bond ball is infinite. Along each lattice line the bond distance between points n apart is at most 1 + w(n), the weight of n's non-adjacent form, and equals 2 exactly at powers of two.
+  [proof P001](proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Open ends make a substitution tower stretch** (`LOGIC-AXIS-20261107-001-D003`).
+  A hub-free parity substitution keeps the replaced knot exactly when its gadget adds no open end, and then every step is conservative, so the original distinctions stay at bond distance 2 forever; this is why the 2026-10-20 refinement cannot grow space. On tree-shaped knot graphs bond distance equals the path's knot count plus one, so the star tower stretches as 3^k + 1.
+  [proof P001](proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs and gaskets
 
@@ -830,7 +845,9 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-06 | Is the sphere's Euler count hard for resolution? (`SPHERE-COUNT-20261106-001`) | [closure](proofs/SPHERE-COUNT-20261106-001Z/SPHERE-COUNT-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-COUNT-20261106-001/) |
 | 2026-11-06 | The two-round rule as a proof-complexity bridge (`TWO-ROUND-BRIDGE-20261106-001`) | [closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-ROUND-BRIDGE-20261106-001/) |
 | 2026-11-07 | Why a Fano atom acts as one (`ATOM-ONE-20261107-001`) | [closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-ONE-20261107-001/) |
+| 2026-11-07 | The sphere's count written out, and stronger proof systems (`COUNT-NOTE-20261107-001`) | [closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-NOTE-20261107-001/) |
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
+| 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
 

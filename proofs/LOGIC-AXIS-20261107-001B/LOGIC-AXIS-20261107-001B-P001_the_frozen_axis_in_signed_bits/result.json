@@ -1,0 +1,78 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOGIC-AXIS-20261107-001B-P001",
+ "kind": "proof",
+ "ticket": "LOGIC-AXIS-20261107-001B",
+ "proof": "LOGIC-AXIS-20261107-001B-P001",
+ "status": "passed",
+ "claim": "The frozen axis. In Ledrappier's law x(i,j)+x(i+1,j)+x(i,j+1)=0 on Z^2 (no finite moves), a set of sites is an implied check exactly when the sum of X^a(1+X)^b over it vanishes in F2(X); there are no one- or two-point checks, so every vanishing set of at most five points is a knot. (1) The three-point knots are exactly the Frobenius triangles {c, c+2^e e1, c+2^e e2} (Mason-Stothers in characteristic 2 with Frobenius descent), so every point has bond distance 2 to six points at every power-of-two separation and every bond ball of radius >= 2 is infinite. (2) For every signed-binary representation n = sum of k terms +-2^e with distinct exponents, the hop set (one Frobenius triangle per hop) is a knot of k+2 points through (0,0) and (n,0), minimal by (1+X)-adic valuations; with the non-adjacent form, bond distance along each lattice line is at most 1 + w(n) <= (log2 n)/2 + 5/2, and equals 2 exactly at powers of two. (3) Not proved, a conjecture with finite evidence: bond distance = 1 + w(n), and in the plane 1 + |v|_D (signed powers of two along e1, e2, e1-e2); no smaller knot exists for n <= 128 (sizes <= 4) or for n = 43, 45, 51, 53 (size 5) inside stated windows, and the plane formula holds for all 168 vectors of [-6,6]^2 (exactly for |v|_D <= 3). Not every four-point knot is two triangles sharing a point: {(0,0),(3,0),(0,3),(1,1)} is a knot.",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/result.json": "passed",
+     "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json": "Proved",
+     "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/result.json": "passed",
+     "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json": "Proved",
+     "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json": "passed"
+    }
+   }
+  },
+  "1 model: on a side-24 patch, X^a(1+X)^b vanishing = implied check of the patch law (control: another law)": {
+   "pass": true,
+   "info": {
+    "random sets (and placed triangles) tested on the side-24 patch": 3000,
+    "implied checks among them": 911,
+    "disagreements with X^a(1+X)^b": 0,
+    "control: another three-point law does not imply the Frobenius triangle": true
+   }
+  },
+  "2 three-point knots through the origin in [-32,32]^2 are exactly the Frobenius triangles (control)": {
+   "pass": true,
+   "info": {
+    "three-point knots through the origin in [-32,32]^2": 18,
+    "all are Frobenius triangles": true,
+    "equal to the expected list": true,
+    "bond-2 neighbours of the origin in the window": 36,
+    "control: {(0,0),(1,0),(0,2)} is not a check": true
+   }
+  },
+  "3 hop knots: size 2+w(n), n <= 2048, all three lattice lines (control: drop an apex)": {
+   "pass": true,
+   "info": {
+    "n = 1..2048: hop knot is a knot of size 2 + w(n)": true,
+    "n = 1..256: its images on the other two lattice lines are knots": true,
+    "k = 0..20: {(0,0),(2^k,0),(0,2^k)} is a knot": true,
+    "control: the hop set for 43 without its last apex does not vanish": true
+   }
+  },
+  "4 lower bound inside windows: none smaller than 2+w(n) for n <= 128 (sizes <= 4) and n = 43, 45, 51, 53 (size 5)": {
+   "pass": true,
+   "info": {
+    "n = 1..128, window [-8,n+8]x[-(n+8),2n+8]: knots smaller than 2+w(n) (sizes <= 4)": [],
+    "n = 43, 45, 51, 53 (w = 4), window [-8,n+8]x[-(n+8),2n+8]: knots of size 5": {
+     "43": null,
+     "45": null,
+     "51": null,
+     "53": null
+    },
+    "control: the searches find the 4-point knot for n=3 and a 5-point knot for n=11": true
+   }
+  },
+  "5 plane: smallest knot through 0 and v is 2+|v|_D in [-6,6]^2 (|v|_D <= 3; > 4 points at 4) (control: shifted norm)": {
+   "pass": true,
+   "info": {
+    "vectors in [-6,6]^2": 168,
+    "smallest knot size = 2 + |v|_D (|v|_D <= 3), or none below 5 points (|v|_D = 4)": 168,
+    "disagreements": [],
+    "control: the shifted norm |v|_D + 1 is rejected at (3,0)": true
+   }
+  }
+ },
+ "failures": []
+}

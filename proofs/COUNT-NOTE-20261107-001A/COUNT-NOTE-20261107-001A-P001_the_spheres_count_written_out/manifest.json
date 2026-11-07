@@ -1,0 +1,117 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COUNT-NOTE-20261107-001A-P001",
+  "canonical_id": "COUNT-NOTE-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "COUNT-NOTE-20261107-001A",
+  "proof": "COUNT-NOTE-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The sphere's count needs resolution width Theta(sqrt n) and size 2^Theta(sqrt n): the proof written out",
+  "status": "Proved",
+  "claim": "Every resolution refutation of the not-all-equal formula of the octahedral knot sphere K_k (n = 4k^2 points) has width at least c1 k and size at least 2^(c2 k), for absolute constants c1, c2 > 0; width O(k) and size n^O(1) 2^O(sqrt n) suffice. Grid Sperner with the fixed one-door-per-side boundary needs width Omega(m) and size 2^Omega(m). Every lemma is proved: label states and the window criterion; single-step certificates through the old vortex (gauge equivalence off two adjacent points); straight cut systems (six straight arcs from a vortex near the centre of one octant; an exact local lemma near the vortex) with at most 18 junctions of zero-weight steps, giving d_z(x, y) >= (dist(x, y) - 19)/2; the density bad set with a Vitali covering; one large free component by counting lattice rows (replacing the isoperimetric sketch); islands (radius 1, separation 45) whose terms are >= 0 inside an island and >= 1 between islands; a hard-core random packing; for grid Sperner, three straight arcs to the doors make the fixed boundary flat, so boundary terms are >= 0 and certificates through a deep vortex never reach the boundary.",
+  "dependencies": [
+    "SPHERE-SIZE-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A core vortex whose straight arcs meet, or whose flat state violates a line away from z, or more than 18 zero-weight junctions.",
+    "A pair of sources violating d_z(x, y) >= (dist(x, y) - 19)/2.",
+    "A blocked single step whose certificate avoids the old vortex, or a gap in the gauge-equivalence argument.",
+    "A gap in the row-counting argument for one large free component, or in the island term bounds.",
+    "For grid Sperner: a boundary that is not flat in the three-arc gauge, or a negative boundary or boundary-island term."
+  ],
+  "lineage": {
+    "home_scope": "COUNT-NOTE-20261107-001",
+    "epic_path": [
+      "COUNT-NOTE-20261107-001"
+    ],
+    "parents": [
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/width_lib.py",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json",
+      "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/result.json",
+      "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/result.json",
+      "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/window_lib.py",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json",
+      "proofs/SPHERE-COUNT-20261106-001A/SPHERE-COUNT-20261106-001A-P001_the_violated_line_can_be_pinned/result.json",
+      "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/count_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/width_lib.py": "7fb863372b6d4ba0859b76946993ba5c49cd72d323ea7ec3bef601e163732e20",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json": "024c0e6da6dcce7055ac6835ceade148821cda0eb860f55acf45af34fe845bde",
+    "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/result.json": "38a80e4f1ab6a038e98467a44d59ba58fbb2febdcc3a59486ef0e5d43d0d30e5",
+    "proofs/SPHERE-SIZE-20261107-001A/SPHERE-SIZE-20261107-001A-P001_islands_keep_the_count_hard/result.json": "051f6f44c5847a700c00f5ea24e3abe6aa85d9b1d61eb0119228023d9d070da1",
+    "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json": "159a7eb8ffdbb8a4565180bbc7b5ce99c9592d572793387cd2cddd754e086223",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py": "f19711315cb24b03296259fc5e27faab9d5a99246119a1e52e2738bb7dfb672c",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "6094393c4899b93849fabbffa2aef8ac5c3e1ed87569885ac990cfbb25dbc8e4",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/window_lib.py": "c04a237f43b695cdfd115e0be059fa8a11bdef8f2f4ca705a58bcf56f8c07207",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "ca62f89c55bb4c742357bc2dc84c133f34ab3400df8e274ff8ede8272a6882ef",
+    "proofs/SPHERE-COUNT-20261106-001A/SPHERE-COUNT-20261106-001A-P001_the_violated_line_can_be_pinned/result.json": "2629ea109b6bc9ef66a39fc1360bbca99757d2462a0205d58fcdda6108f05644",
+    "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/count_lib.py": "55a90d4a3cbf9b62ba83e8eca889b17f17d7ee563954d2db6813ad57b0103a13"
+  },
+  "paths": {
+    "manifest": "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/manifest.json",
+    "identity": "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/identity.json",
+    "proof": "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/proof.md",
+    "check": "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/check.py",
+    "result": "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/result.json",
+    "directory": "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot spheres K_k for every k (by the proof; the local lemmas decided exactly for all k; cut systems checked on every core vortex of K_12..K_36, islands on K_48, single steps on K_30) and grid Sperner for every m (cuts checked on m = 24, 36, 48).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "every lemma by hand; the two local lemmas decided exactly by computation over all critical angles; the remaining lemmas confirmed on finite instances; no human or external review",
+    "novelty": "new as far as found: resolution width and size bounds for these formulas and for grid Sperner in general resolution (only tree-like size was known for 2D Sperner); the method is the Atserias-Dalmau game with Dantchev-Riis local randomization, and its new ingredients are single-step vortex moves, straight cut systems and island terms."
+  }
+}

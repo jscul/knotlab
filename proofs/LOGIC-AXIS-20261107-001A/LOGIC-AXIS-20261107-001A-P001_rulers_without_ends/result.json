@@ -1,0 +1,154 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOGIC-AXIS-20261107-001A-P001",
+ "kind": "proof",
+ "ticket": "LOGIC-AXIS-20261107-001A",
+ "proof": "LOGIC-AXIS-20261107-001A-P001",
+ "status": "passed",
+ "claim": "Rulers without ends. (1) If a law on Z^d splits at range D (finite sets more than D apart have independent projections), every knot is D-chained, so bond distance >= sup separation / D and a bond ball of radius r has at most |T|(2Dr+1)^d variables. (2) A parity law whose finite moves are dense (a law without ends) splits at the diameter of a generating set of its finite moves. (3) Tseitin's law on Z^D has d_inf <= bond distance <= (2D-2)(d+1)+1, and the gauge law on Z^2 has 2d+1 <= bond distance <= 2d+7 (d = graph distance), so bond balls grow like r^D: the lattice's dimension is read from allowed states alone, and on the plane the ruler is taxicab. On the atom thread w(t-1) & L(t) -> w(t), the bond distance between witnesses w_s, w_t is exactly t-s+1, and every knot through them contains the loops between. (4) A parity law with one distinction per site is free or has no finite moves. (5) With Ledrappier's law on x, z free and y = x+z, every variable is flipped by a finite move, yet y and z at 0, 2^k e1 and 2^k e2 form a knot for every k: per-variable nativity does not give a ruler. (6) Conservative extensions never increase bond distance.",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/result.json": "passed",
+     "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json": "Proved",
+     "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/result.json": "passed",
+     "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json": "Proved",
+     "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json": "passed",
+     "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json": "Proved"
+    }
+   }
+  },
+  "1 splitting: random far-apart sets in gauge/Tseitin boxes project as products (control: Ledrappier)": {
+   "pass": true,
+   "info": {
+    "gauge 8x8": "300 random pairs of sets more than 1 apart: joint projection = product",
+    "tseitin 8x8": "300 random pairs of sets more than 1 apart: joint projection = product",
+    "tseitin 4x4x4": "300 random pairs of sets more than 1 apart: joint projection = product",
+    "control: Ledrappier corners (0,0) | (4,0),(0,4) are not a product": true
+   }
+  },
+  "2 chaining: every knot (size <= 8) through a central edge of gauge/Tseitin 6x6 is 1-chained (control: Frobenius triangle)": {
+   "pass": true,
+   "info": {
+    "gauge 6x6": {
+     "knots through the central edge (size <= 8)": 35,
+     "not 1-chained": 0
+    },
+    "tseitin 6x6": {
+     "knots through the central edge (size <= 8)": 267,
+     "not 1-chained": 0
+    },
+    "control: Frobenius triangle {(0,0),(4,0),(0,4)} of Ledrappier is a knot and not 1-chained": true
+   }
+  },
+  "3 gauge plane: 2d+1 <= bond distance <= 2d+7, knot search = shortest cycle (control: Ledrappier pair)": {
+   "pass": true,
+   "info": {
+    "7x7: knot search vs shortest cycle through both edges": "45 pairs, 0 disagreements",
+    "41x41: observed bond distance - 2d": {
+     "1": 11,
+     "3": 372,
+     "5": 9
+    },
+    "41x41: violations of 2d+1 <= delta <= 2d+7": 0,
+    "control: Ledrappier (0,0)-(8,0) bond distance 2 violates the lower bound": true
+   }
+  },
+  "4 Tseitin Z^3 box: the cut of a shortest vertex path is a knot through e and f with 4d+6 edges (control: two separated vertices)": {
+   "pass": true,
+   "info": {
+    "random interior pairs": 80,
+    "violations": 0,
+    "path cuts that are knots of exactly 4d+6 edges": 80,
+    "control: the cut of two separated vertices is not a knot": true
+   }
+  },
+  "5 atom thread: bond distance between witnesses = loops between them + 1 (control: equality chain has no knot)": {
+   "pass": true,
+   "info": {
+    "w0-w1": {
+     "bond distance": 2,
+     "loops between": 1,
+     "knots": 1,
+     "every knot contains the loops between": true
+    },
+    "w0-w2": {
+     "bond distance": 3,
+     "loops between": 2,
+     "knots": 1,
+     "every knot contains the loops between": true
+    },
+    "w1-w3": {
+     "bond distance": 3,
+     "loops between": 2,
+     "knots": 1,
+     "every knot contains the loops between": true
+    },
+    "w0-w4": {
+     "bond distance": 5,
+     "loops between": 4,
+     "knots": 1,
+     "every knot contains the loops between": true
+    },
+    "w1-w5": {
+     "bond distance": 5,
+     "loops between": 4,
+     "knots": 1,
+     "every knot contains the loops between": true
+    },
+    "w0-w5": {
+     "bond distance": 6,
+     "loops between": 5,
+     "knots": 1,
+     "every knot contains the loops between": true
+    },
+    "control: equality chain of 6 has knots": 0
+   }
+  },
+  "6 one distinction per site: no finite moves (control: gauge vertex flip)": {
+   "pass": true,
+   "info": {
+    "random nonzero 3x3 checks": 40,
+    "all injective on the 5x5 window": true,
+    "control: gauge vertex flip is a nonzero finite allowed state": true
+   }
+  },
+  "7 product law: natively open six-variable knot is a long-range shortcut (control: five of six)": {
+   "pass": true,
+   "info": {
+    "k=1": {
+     "six-set is a knot": true,
+     "each variable flipped by a finite move": true,
+     "bond distance y(0,0)-y(2^k,0) <= 5": true
+    },
+    "k=2": {
+     "six-set is a knot": true,
+     "each variable flipped by a finite move": true,
+     "bond distance y(0,0)-y(2^k,0) <= 5": true
+    },
+    "k=3": {
+     "six-set is a knot": true,
+     "each variable flipped by a finite move": true,
+     "bond distance y(0,0)-y(2^k,0) <= 5": true
+    },
+    "(1+X+Y)^(2^k) = 1+X^(2^k)+Y^(2^k) for k=1..6": true,
+    "control: five of the six are not a knot": true
+   }
+  },
+  "8 conservative refinement keeps the old knot (control: a tie destroys it)": {
+   "pass": true,
+   "info": {
+    "refinements": 6,
+    "old knot kept, bond distance a-b stays 2": true,
+    "control: adding the tie a=b destroys the old knot": true
+   }
+  }
+ },
+ "failures": []
+}

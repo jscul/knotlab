@@ -1,0 +1,114 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOGIC-AXIS-20261107-001A-P001",
+  "canonical_id": "LOGIC-AXIS-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "LOGIC-AXIS-20261107-001A",
+  "proof": "LOGIC-AXIS-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Rulers: without ends, bond distance grows linearly",
+  "status": "Proved",
+  "claim": "Rulers without ends. (1) If a law on Z^d splits at range D (finite sets more than D apart have independent projections), every knot is D-chained, so bond distance >= sup separation / D and a bond ball of radius r has at most |T|(2Dr+1)^d variables. (2) A parity law whose finite moves are dense (a law without ends) splits at the diameter of a generating set of its finite moves. (3) Tseitin's law on Z^D has d_inf <= bond distance <= (2D-2)(d+1)+1, and the gauge law on Z^2 has 2d+1 <= bond distance <= 2d+7 (d = graph distance), so bond balls grow like r^D: the lattice's dimension is read from allowed states alone, and on the plane the ruler is taxicab. On the atom thread w(t-1) & L(t) -> w(t), the bond distance between witnesses w_s, w_t is exactly t-s+1, and every knot through them contains the loops between. (4) A parity law with one distinction per site is free or has no finite moves. (5) With Ledrappier's law on x, z free and y = x+z, every variable is flipped by a finite move, yet y and z at 0, 2^k e1 and 2^k e2 form a knot for every k: per-variable nativity does not give a ruler. (6) Conservative extensions never increase bond distance.",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001Z",
+    "HOLES-AT-INFINITY-20261020-001Z",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A knot of a splitting law that is not D-chained, or a bond ball leaving the sup-norm ball of radius Dr.",
+    "A parity law with dense finite moves and two finite sets more than D apart whose joint projection is not the product of their projections.",
+    "A gauge or Tseitin bond distance outside the stated bounds, or a thread bond distance different from the number of loops between the witnesses.",
+    "A nonzero finitely supported allowed state of a nontrivial one-type parity law.",
+    "The six-variable set of the product law failing K1-K3, or a variable of it that no finite move flips.",
+    "A knot of a law that stops being a knot under a conservative extension."
+  ],
+  "lineage": {
+    "home_scope": "LOGIC-AXIS-20261107-001",
+    "epic_path": [
+      "LOGIC-AXIS-20261107-001"
+    ],
+    "parents": [
+      "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/result.json",
+      "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json",
+      "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/manifest.json",
+      "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/result.json",
+      "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json",
+      "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/manifest.json": "346c1c957ec83f2988b84c38b0106de37dc2a7ace044bee8d7629fc30ff8c2c0",
+    "proofs/FROZEN-WORLDS-20261020-001Z/FROZEN-WORLDS-20261020-001Z-P001_epic_closure/result.json": "6d46a1a5c077f4d047e6b9010950badba92c43aa67bc7040984b77f4c0c82343",
+    "proofs/FROZEN-WORLDS-20261020-001B/FROZEN-WORLDS-20261020-001B-P001_linear_laws/manifest.json": "9f66fed64307a5e9b8ca5a8a0b69a5413826bc257dd2c5ef9fca158523676e54",
+    "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/manifest.json": "c16316301866d65baf64b23c9f3e808e1ffa5dbe58bae359ececfc50ae0ad98c",
+    "proofs/HOLES-AT-INFINITY-20261020-001Z/HOLES-AT-INFINITY-20261020-001Z-P001_epic_closure/result.json": "b76741f86111e8c4b8dfb582ce94ad7bc5ecb4c60f240dedd31135c6baedb753",
+    "proofs/HOLES-AT-INFINITY-20261020-001C/HOLES-AT-INFINITY-20261020-001C-P001_logical_ends/manifest.json": "878d29c742324d764cd3e51550e75657f23d06462f1d8213505cc3b663f702ab",
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "79d4141c67f0e6f1467e2b98a3661cbe5dfaefcfdc1542c7f3c5ce9b29a589c7",
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json": "d73f0ac17574a9d2466c09cfa98391cba527e1de4ff55969e849509035cd74bc",
+    "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json": "621a63ca2336e1a8478a794c9b0c775b6f27f346a5b8cf85b8f4abbaaaa2a035"
+  },
+  "paths": {
+    "manifest": "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json",
+    "identity": "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/identity.json",
+    "proof": "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md",
+    "check": "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/check.py",
+    "result": "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/result.json",
+    "directory": "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Laws on Z^d with finitely many distinctions per site (and finite boxes of them); bond distance as defined in NATIVE-NETWORK-20261021-001. Uniform statements by proof; finite checks on 8x8, 6x6, 7x7, 41x41, 4^3 and 7^3 boxes, thread windows of 5 loops, 39 random one-type laws, and Ledrappier patches up to side 8.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "prose proofs; check.py runs nine checks, each with a rejected control; the knot search was cross-checked against an independent min-cost-flow shortest cycle; no human or external review",
+    "novelty": "known-overlap-found: items 1-2 are a finite-set form of strong irreducibility and of dense homoclinic groups giving specification (Lind-Schmidt 1999; Lind-Schmidt-Verbitskiy 2013), and item 4 is the integral-domain argument behind Ledrappier's example; the delta is the consequence for minimal implied constraints (bond distance as a ruler whose growth gives the lattice's dimension), the exact thread distance, and item 5 on the source-aware reading."
+  }
+}

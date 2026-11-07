@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOGIC-AXIS-20261107-001D-P001",
+  "canonical_id": "LOGIC-AXIS-20261107-001D-P001",
+  "kind": "proof",
+  "ticket": "LOGIC-AXIS-20261107-001D",
+  "proof": "LOGIC-AXIS-20261107-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Open ends make a tower stretch",
+  "status": "Proved",
+  "claim": "Open ends make a tower stretch. In a hub-free parity law (knot graph: knots as vertices of degree 3, shared distinctions as edges, distinctions held by one knot as edges to an unconstrained outside vertex), substituting a connected gadget for a knot keeps the old knot as an implied check exactly when the gadget adds no open end; then the step is a conservative extension (implied checks among old distinctions unchanged), so in a tower without open ends the original distinctions stay a knot at bond distance 2 at every level and each gains new bond-2 neighbours at every level (collapse; the 2026-10-20 refinement is such a gadget). When the knot graph is a tree, the bond distance between two open ends is the number of knots on the path between them plus one, so the star tower has bond distance 3^k + 1 between its original legs.",
+  "dependencies": [
+    "LOGIC-AXIS-20261107-001A",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A connected hub-free gadget with an open end whose substitution keeps the old knot, or one without open ends that loses it.",
+    "A gadget without open ends whose substitution changes an implied check among old distinctions.",
+    "A cubic tree in which some pair of open ends has bond distance different from the path's knot count plus one."
+  ],
+  "lineage": {
+    "home_scope": "LOGIC-AXIS-20261107-001",
+    "epic_path": [
+      "LOGIC-AXIS-20261107-001"
+    ],
+    "parents": [
+      "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json",
+      "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/result.json",
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json": "df7b2df5577d9ba4018a922c4dbc8f0844b2eac7bf0dff1c77f33808b630f0a6",
+    "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/result.json": "2ccda44701a9005020bce12f532b872933f11e008c513213c96d774947f96f38",
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "79d4141c67f0e6f1467e2b98a3661cbe5dfaefcfdc1542c7f3c5ce9b29a589c7",
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/result.json": "d73f0ac17574a9d2466c09cfa98391cba527e1de4ff55969e849509035cd74bc"
+  },
+  "paths": {
+    "manifest": "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/manifest.json",
+    "identity": "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/identity.json",
+    "proof": "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md",
+    "check": "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/check.py",
+    "result": "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/result.json",
+    "directory": "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Finite hub-free parity laws and their substitution towers; bond distance as in NATIVE-NETWORK-20261021-001.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "prose proofs; check.py runs four checks with rejected controls (304 gadgets, 1,560 conservativity comparisons, the G0 tower to level 4, 150 random trees by exhaustive search, the star tower to level 5); no human or external review",
+    "novelty": "known-overlap-found: cut/cycle duality for Tseitin systems and subtree edge counts are classical; the delta is the reading (a substitution keeps its old knot exactly when it adds no open end, so the ruler stretches only through open ends) and the exact tree-tower bond distance."
+  }
+}

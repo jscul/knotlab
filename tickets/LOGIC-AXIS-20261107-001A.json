@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FROZEN-WORLDS-20261020-001Z",
+    "HOLES-AT-INFINITY-20261020-001Z",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOGIC-AXIS-20261107-001A-P001"
+  },
+  "id": "LOGIC-AXIS-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) if a law splits at range D (any two finite sets of distinctions more than D apart are independent), every knot is D-chained, so bond distance >= separation/D and bond balls are finite with polynomial growth; (2) a parity law on Z^d whose finite moves are dense splits at the diameter of a generating set of its finite moves; (3) gauge and Tseitin laws on Z^d have bond distance 2 x taxicab + O(1), so their bond balls grow like r^d (the lattice's dimension, read from allowed states alone), and the atom thread on Z has bond distance equal to separation; (4) with one distinction per site a parity law on Z^d is free or has no finite moves at all; (5) every variable of a knot can be natively open while the knot is still a long-range shortcut (Ledrappier plus a free field), so the per-variable source-aware test does not give a ruler; (6) a conservative extension never increases bond distance. Check each on finite tori and patches with a control that fails.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOGIC-AXIS-20261107-001"
+  },
+  "parent": "LOGIC-AXIS-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (LOGIC-AXIS-20261107-001A-P001): rulers without ends. Splitting at range D makes every knot D-chained, so bond distance >= separation/D; parity laws with dense finite moves split; Tseitin on Z^D and gauge on Z^2 have bond distance comparable to graph distance (2d+1..2d+7 on the plane, taxicab), so bond balls grow like r^D; the atom thread has bond distance t-s+1 between witnesses; one-bit parity laws have no finite moves; a law native in every variable (Ledrappier plus a free field) still has long-range knots; conservative extensions never stretch. Nine checks with rejected controls.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Rulers: without ends, bond distance grows linearly"
+}

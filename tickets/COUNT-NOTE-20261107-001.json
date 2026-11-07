@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-SIZE-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "COUNT-NOTE-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Could you do both a and b?', approving SPHERE-SIZE-20261107-001's two directions): (a) write one self-contained note proving resolution width Theta(sqrt n) and size 2^Theta(sqrt n) for the knot's sphere with every lemma written out, including the previously sketched winding bound, the isoperimetric step and the grid-Sperner boundary islands, plus a final literature check; (b) place the count among stronger proof systems: an explicit Sherali-Adams certificate (and whether it is unary, the PPADS question), and cutting-planes and parity-resolution solver tests.",
+  "ownership": {
+    "root": true,
+    "scope_id": "COUNT-NOTE-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: (a) the sphere's count written out with every lemma proved: width Theta(sqrt n) and size 2^Theta(sqrt n), the sketched winding bound and isoperimetric step replaced by single-step vortex moves, straight cut systems (d >= (dist - 19)/2, exact local lemma) and a lattice-row count; grid Sperner and Itsykson et al.'s CSP need width Omega(m) and size 2^Omega(m) (the fixed boundary is flat in the three-arc gauge); final literature check found no general-resolution bound for 2D Sperner (A). (b) The count has a degree-3 Sherali-Adams refutation with coefficients +-1, so it is in PPADS^dt; cutting-planes and XOR-reasoning solvers do no better than CDCL (B). Recommendation: Research directions, (i) the unary Nullstellensatz degree, PPAD vs PPADS (2/3); (ii) a short cutting-planes refutation (1/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the note proves every lemma or names the gap it finds, and the count's standing in Sherali-Adams, cutting planes and parity resolution is recorded with its evidence class.",
+  "title": "The sphere's count written out, and stronger proof systems"
+}

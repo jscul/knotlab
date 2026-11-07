@@ -1,0 +1,35 @@
+{
+ "about": "Outputs of the scripts in this directory, run on 2026-11-07 on the instances exported by export_spheres.py (count_lib.signed_space(octa_dual(k)), k = 2..8). Each run stops at the first instance not refuted within the limit. Experiment evidence, not proof.",
+ "limits": {"Exact (cutting planes)": "600 s per instance", "CryptoMiniSat (XOR)": "600 s per instance", "CaDiCaL (CDCL)": "600 s per instance (k = 7 was stopped at 2476 s because the solver did not honour the interrupt)"},
+ "versions": {"Exact": "2.2.1 (pip package exact)", "pycryptosat": "5.17.0", "python-sat": "1.9.dev15 (CaDiCaL 1.5.3)"},
+ "encodings": {
+  "Exact (cutting planes)": "one pseudo-Boolean constraint per line: 1 <= y_a + y_b + y_c <= 2 over the line's literals",
+  "CryptoMiniSat (XOR)": "a parity variable e = x_a xor x_b per pair of points in a line (native XOR constraint) and, per line, the clause 'pair (a,b) or pair (b,c) disagrees' over those parity variables",
+  "CaDiCaL (CDCL)": "the formula's own clauses (two per line)"
+ },
+ "runs": {
+  "Exact (cutting planes)": {
+   "2": {"result": "UNSAT", "seconds": 0.0, "conflicts": 40},
+   "3": {"result": "UNSAT", "seconds": 0.0, "conflicts": 657},
+   "4": {"result": "UNSAT", "seconds": 0.09, "conflicts": 7893},
+   "5": {"result": "UNSAT", "seconds": 2.5, "conflicts": 143408},
+   "6": {"result": "TIMEOUT", "seconds": 600.45, "conflicts": 28998866}
+  },
+  "CryptoMiniSat (XOR)": {
+   "2": {"result": "UNSAT", "seconds": 0.01},
+   "3": {"result": "UNSAT", "seconds": 0.02},
+   "4": {"result": "UNSAT", "seconds": 0.13},
+   "5": {"result": "UNSAT", "seconds": 4.16},
+   "6": {"result": "UNSAT", "seconds": 107.51},
+   "7": {"result": "TIMEOUT", "seconds": 609.71}
+  },
+  "CaDiCaL (CDCL)": {
+   "2": {"result": "UNSAT", "seconds": 0.0, "conflicts": 36},
+   "3": {"result": "UNSAT", "seconds": 0.0, "conflicts": 354},
+   "4": {"result": "UNSAT", "seconds": 0.02, "conflicts": 3530},
+   "5": {"result": "UNSAT", "seconds": 0.32, "conflicts": 51332},
+   "6": {"result": "UNSAT", "seconds": 17.97, "conflicts": 1182667},
+   "7": {"result": "TIMEOUT", "seconds": 2476}
+  }
+ }
+}

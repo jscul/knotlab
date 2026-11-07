@@ -58,6 +58,7 @@ RECORD_TESTS = ("tests.test_records", "tests.test_theory", "tests.test_knotlab")
 CURATION_TESTS = ("tests.test_curation",)
 SITE_PATHS = ("src/content", "public/notes")
 LIVE_PAGE = "https://jscul.dev/proofs"
+USER_AGENT = "knotlab-publish/1.0 (+https://github.com/jscul/knotlab)"  # Cloudflare refuses Python's default
 
 
 class Stop(Exception):
@@ -241,7 +242,7 @@ def publish_records(ws, push_enabled):
     if push_enabled:
         push(K, "knotlab")
     head = git(K, "rev-parse", "HEAD").stdout.strip()
-    log(f"knotlab {head[:9]}: {subject.lower()} ({len(changed)} files)")
+    log(f"knotlab {head[:9]}: {subject} ({len(changed)} files)")
     return head, fresh
 
 
@@ -274,7 +275,8 @@ def wait_until_live(titles, minutes=10):
     deadline = time.time() + minutes * 60
     while time.time() < deadline:
         try:
-            page = urllib.request.urlopen(LIVE_PAGE, timeout=30).read().decode("utf-8", "replace")
+            request = urllib.request.Request(LIVE_PAGE, headers={"User-Agent": USER_AGENT})
+            page = urllib.request.urlopen(request, timeout=30).read().decode("utf-8", "replace")
             if all(title in page for title in titles):
                 return True
         except OSError:

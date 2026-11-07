@@ -1,0 +1,119 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "REFINE-READ-20261107-001B-P001",
+  "canonical_id": "REFINE-READ-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "REFINE-READ-20261107-001B",
+  "proof": "REFINE-READ-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Uniform rules on the native map",
+  "status": "Proved",
+  "claim": "Uniform rules on the native map (computed exactly on the 191 saved and 86 fresh maps). Five uniform canonical rules read the atoms of: yes/no two-stage twins 219 of 277 spaces; native row twins 234; maximal twin cliques 234, since the native twin relation is an equivalence in every space; native twins vetoed by pair refinement 234, since twinship is preserved by refinement and the veto never fires; native twins compatible at glue lines 234. Where the native twins fail they merge atoms (38 spaces), in 32 of them joining two whole atoms by complete twinship. A regularity: two lines of one atom that are native row twins never both create at a glue line with different order-free vectors (17,494 of 17,494 pairs), while across atoms 530 of 1,572 such pairs do, too few to separate every merge.",
+  "dependencies": [
+    "REFINE-READ-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-computation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "computed-classification",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A measured rule whose count differs from the stated one, or a pair of lines of one atom that create at a common glue line with different order-free vectors."
+  ],
+  "lineage": {
+    "home_scope": "REFINE-READ-20261107-001",
+    "epic_path": [
+      "REFINE-READ-20261107-001"
+    ],
+    "parents": [
+      "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/manifest.json",
+      "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/result.json",
+      "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/refine_lib.py",
+      "proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/native_glue_lib.py",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz",
+      "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py",
+      "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py",
+      "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/maps.json.gz"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/manifest.json": "c6a4eccae0cf28f2fce80cc1c60906ca5ed0d353adfc21c93c0c1afbd870ca8f",
+    "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/result.json": "dc9ee59dda5eb44e0434870e1bde0a29332df4cc98db45ee4bf82d2b82c3d2ca",
+    "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/refine_lib.py": "527c7ede1a47050fe7e7dbdc4a5a1a44f901b68260332c545142a129b03f3a8e",
+    "proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/native_glue_lib.py": "a0c63ca0f26ce67c310f59ddbb2c92c3fe0c84fa567b193ef95ba2aa0931a6b1",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py": "fb87b642fc0d5779e4e4e0cbd8b852ba1032253b3ad0ff4d43f4a79bd66b2496",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/plane_glue_lib.py": "1f128469a7465b7b97ecbf7526a04145f49f36ee949602051a28e46b11c11e27",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/atoms_lib.py": "44d2a6f206c59138e1af3b852731c50e172310b7b010750f919f1d2d2496d56d",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/read_lib.py": "99b1e350243a998ac2bfc7ef9b6fc5ecd8c6724a404f83b562c60c2032b20677",
+    "proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/far_lib.py": "cbfdd06e35b2ced652eb80c4fa066f0e972a51191021175f519673ab3211a5c0",
+    "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/maps.json.gz": "bfdfe91d17ca5fdb894abfeb65da117c1f8187f61896b8ad345972ad85979b69"
+  },
+  "paths": {
+    "manifest": "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/manifest.json",
+    "identity": "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/identity.json",
+    "directory": "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map",
+    "proof": "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/proof.md",
+    "result": "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/result.json",
+    "check": "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "uniform_rules_measured": true
+  },
+  "foundation_claim_scope": "The 191 saved and 86 fresh spaces, through the order-free far sides.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "computed exactly on the stated maps; no human or external review",
+    "novelty": "New here."
+  }
+}

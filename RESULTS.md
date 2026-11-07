@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**204 current results** and 5 superseded ones, from 144 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**206 current results** and 5 superseded ones, from 145 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 8 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 70 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 72 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 144 epics with their closures
+- [Epics](#epics): all 145 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -523,6 +523,12 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · The logical Cartesian plane is a taxicab plane** (`OPEN-END-GROWTH-20261107-001-D003`).
   In the product law of two parity laws, a knot of each axis joined at a corner is a knot, so bond distance is at most the sum of the axis distances minus one. The product of two two-way threads has no ends, so its bond distance is within constants of taxicab distance and its bond balls grow quadratically: a plane of dimension two built from two lines.
   [proof P001](proofs/OPEN-END-GROWTH-20261107-001C/OPEN-END-GROWTH-20261107-001C-P001_the_logical_cartesian_plane/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Native creation fixes the atoms of every computed space** (`REFINE-READ-20261107-001-D001`).
+  On 191 saved and 86 fresh spaces, pair refinement (folklore 2-WL) of the native creation map, read through the order-free far sides, never puts a pair within a Fano atom and a pair across two atoms in one class, so every symmetry of the map preserves the atoms and they are definable in three-variable counting logic in each space. On whether creation occurs alone it mixes them in 42 spaces.
+  [proof P001](proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · No uniform native rule tried reads every space** (`REFINE-READ-20261107-001-D002`).
+  Yes/no two-stage twins read 219 of 277 spaces and native row twins, their maximal cliques, their refinement veto and their glue-compatible version 234 each, failing only by merging atoms that meet one plane piece (32 of 38 by complete twinship). Native-twin lines of one atom never create at a common glue line in different ways (17,494 of 17,494), while 530 of 1,572 cross-atom twin pairs do.
+  [proof P001](proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs and gaskets
 
@@ -874,6 +880,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Reading the genus natively (`GENUS-READ-20261107-001`) | [closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-READ-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
 | 2026-11-07 | Growth at open ends: what a law grows with nothing drawn (`OPEN-END-GROWTH-20261107-001`) | [closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/OPEN-END-GROWTH-20261107-001/) |
+| 2026-11-07 | Colour refinement on the native creation map (`REFINE-READ-20261107-001`) | [closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/REFINE-READ-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
 

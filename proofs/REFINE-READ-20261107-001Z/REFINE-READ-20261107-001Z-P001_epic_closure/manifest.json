@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "REFINE-READ-20261107-001Z-P001",
+  "canonical_id": "REFINE-READ-20261107-001Z-P001",
+  "kind": "proof",
+  "ticket": "REFINE-READ-20261107-001Z",
+  "proof": "REFINE-READ-20261107-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the refinement epic",
+  "status": "Proved",
+  "claim": "Ledger closing REFINE-READ-20261107-001: one line per conclusion with its proof status, novelty and evidence (tickets A and B), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "REFINE-READ-20261107-001A",
+    "REFINE-READ-20261107-001B"
+  ],
+  "evidence_modes": [
+    "obstruction"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "REFINE-READ-20261107-001",
+    "epic_path": [
+      "REFINE-READ-20261107-001"
+    ],
+    "parents": [
+      "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/manifest.json",
+      "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/result.json",
+      "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/manifest.json",
+      "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/result.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/manifest.json": "c6a4eccae0cf28f2fce80cc1c60906ca5ed0d353adfc21c93c0c1afbd870ca8f",
+    "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/result.json": "dc9ee59dda5eb44e0434870e1bde0a29332df4cc98db45ee4bf82d2b82c3d2ca",
+    "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/manifest.json": "c05c9dee74d1fa9840695056301a183a8409f3a43144031591530e46f86a1f60",
+    "proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/result.json": "012f712745694bbb320cab31dce6a5b1a365b55c8124776f3319352322add06b"
+  },
+  "paths": {
+    "manifest": "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/identity.json",
+    "directory": "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure",
+    "proof": "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/result.json",
+    "check": "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "atoms_canonical_in_computed_spaces": false,
+    "uniform_rules_measured": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "status": "checked: ledger bound to the Proved proofs A and B; decision note present; tickets terminal; no human or external review",
+    "level": "V0 ledger check: bound digests, Proved proofs, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "per line in the ledger; the reading is the project's.",
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07."
+  }
+}

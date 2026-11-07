@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GENUS-READ-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "REFINE-READ-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue.', approving GENUS-READ-20261107-001's recommendation): run colour refinement on the native creation map (lines as vertices, order-free far-side vectors as colours) and test whether it merges lines of different Fano atoms; settle whether the native map determines the atoms at all (a symmetry obstruction or not), and how far uniform canonical rules read them. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "REFINE-READ-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: successful. Colour refinement on the native creation map merges atoms only where symmetry forces it (87 of 277 spaces, 14 of 23 Fano trees); pair refinement never mixes pairs within and across atoms (277 of 277), so native creation fixes the atoms of every computed space (definable in C^3 per space), while on yes/no creation alone it mixes in 42. No uniform rule tried reads every space: yes/no twins 219, native twins and three refinements of them 234, failing only by merging atoms that meet one plane piece. Next: native creation at junction handles (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when it is settled, on the saved and fresh spaces, whether the native creation map determines the atoms (no automorphism obstruction) and the best uniform canonical rules are measured, or a native obstruction is found.",
+  "title": "Colour refinement on the native creation map"
+}

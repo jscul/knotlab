@@ -1,0 +1,94 @@
+{
+ "artifact_id": "REFINE-READ-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (both sets of maps); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/manifest.json": "Proved",
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/result.json": "passed",
+     "proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/manifest.json": "Proved",
+     "proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/result.json": "passed",
+     "proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 colour refinement on the native map puts lines of two different atoms in one class in many spaces, Fano trees included": {
+   "info": {
+    "all": 87,
+    "by kind": {
+     "fresh, Fano trees": {
+      "colour refinement: spaces where a class holds lines of two atoms": 1,
+      "spaces": 3
+     },
+     "fresh, with plane glue": {
+      "colour refinement: spaces where a class holds lines of two atoms": 13,
+      "spaces": 83
+     },
+     "saved, Fano trees": {
+      "colour refinement: spaces where a class holds lines of two atoms": 13,
+      "spaces": 20
+     },
+     "saved, with a non-planar non-Heawood brace": {
+      "colour refinement: spaces where a class holds lines of two atoms": 0,
+      "spaces": 1
+     },
+     "saved, with plane glue": {
+      "colour refinement: spaces where a class holds lines of two atoms": 60,
+      "spaces": 170
+     }
+    }
+   },
+   "pass": true
+  },
+  "2 pair refinement on the native map never puts a pair within an atom and a pair across atoms in one class: in every space the atom partition is a union of stable pair classes, so every automorphism of the map preserves it": {
+   "info": {
+    "spaces": 277,
+    "spaces mixing": 0
+   },
+   "pass": true
+  },
+  "3 control: on the yes/no creation relation alone, pair refinement mixes them, at least wherever lines of two atoms are yes/no twins (GLUE-READ C's obstruction)": {
+   "info": {
+    "by kind": {
+     "fresh, Fano trees": {
+      "pair refinement on the yes/no map: spaces where a pair class holds pairs within and across atoms": 0,
+      "spaces": 3,
+      "spaces with yes/no twins across atoms": 0
+     },
+     "fresh, with plane glue": {
+      "pair refinement on the yes/no map: spaces where a pair class holds pairs within and across atoms": 25,
+      "spaces": 83,
+      "spaces with yes/no twins across atoms": 24
+     },
+     "saved, Fano trees": {
+      "pair refinement on the yes/no map: spaces where a pair class holds pairs within and across atoms": 0,
+      "spaces": 20,
+      "spaces with yes/no twins across atoms": 0
+     },
+     "saved, with a non-planar non-Heawood brace": {
+      "pair refinement on the yes/no map: spaces where a pair class holds pairs within and across atoms": 0,
+      "spaces": 1,
+      "spaces with yes/no twins across atoms": 0
+     },
+     "saved, with plane glue": {
+      "pair refinement on the yes/no map: spaces where a pair class holds pairs within and across atoms": 17,
+      "spaces": 170,
+      "spaces with yes/no twins across atoms": 15
+     }
+    },
+    "spaces mixing on the yes/no map": 42,
+    "spaces with yes/no twins across atoms": 39
+   },
+   "pass": true
+  }
+ },
+ "claim": "Pair refinement determines the atoms (computed exactly on the 191 saved and 86 fresh maps, through the order-free far sides). Colour refinement (1-WL) on the native creation map puts lines of two different atoms in one class in 87 of 277 spaces, 14 of the 23 Fano trees among them; a canonical colouring cannot separate lines that a symmetry exchanges, so this is no obstruction. Pair refinement (folklore 2-WL, atomic types in both directions) never puts a pair within an atom and a pair across two atoms in one class, in all 277 spaces: the atom partition is a union of stable pair classes, so every automorphism of the native creation map maps atoms to atoms, and in each space 'same atom' is definable in three-variable counting logic. As a control, on the yes/no creation relation alone pair refinement mixes them in 42 spaces, including all 39 where lines of two atoms are yes/no twins (GLUE-READ C's obstruction).",
+ "kind": "proof",
+ "proof": "REFINE-READ-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "REFINE-READ-20261107-001A"
+}

@@ -1,0 +1,106 @@
+{
+ "artifact_id": "REFINE-READ-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/manifest.json": "Proved",
+     "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 uniform rules: none reads every space; the native twin relation is an equivalence in every space, so components and maximal cliques agree; vetoing by pair refinement changes nothing, since twinship is preserved by refinement": {
+   "info": {
+    "all": {
+     "maximal twin cliques": {
+      "fails merging atoms": 38,
+      "reads": 234
+     },
+     "native row twins (GENUS-READ C)": {
+      "fails merging atoms": 38,
+      "reads": 234
+     },
+     "native row twins compatible at glue lines": {
+      "fails merging atoms": 38,
+      "reads": 234
+     },
+     "native row twins vetoed by pair refinement": {
+      "fails merging atoms": 38,
+      "reads": 234
+     },
+     "yes/no two-stage (GLUE-READ C)": {
+      "fails merging atoms": 53,
+      "reads": 219
+     }
+    },
+    "by kind": {
+     "fresh, Fano trees": {
+      "rule reads the atoms: maximal twin cliques": 3,
+      "rule reads the atoms: native row twins (GENUS-READ C)": 3,
+      "rule reads the atoms: native row twins compatible at glue lines": 3,
+      "rule reads the atoms: native row twins vetoed by pair refinement": 3,
+      "rule reads the atoms: yes/no two-stage (GLUE-READ C)": 3,
+      "spaces": 3
+     },
+     "fresh, with plane glue": {
+      "rule reads the atoms: maximal twin cliques": 58,
+      "rule reads the atoms: native row twins (GENUS-READ C)": 58,
+      "rule reads the atoms: native row twins compatible at glue lines": 58,
+      "rule reads the atoms: native row twins vetoed by pair refinement": 58,
+      "rule reads the atoms: yes/no two-stage (GLUE-READ C)": 48,
+      "spaces": 83
+     },
+     "saved, Fano trees": {
+      "rule reads the atoms: maximal twin cliques": 20,
+      "rule reads the atoms: native row twins (GENUS-READ C)": 20,
+      "rule reads the atoms: native row twins compatible at glue lines": 20,
+      "rule reads the atoms: native row twins vetoed by pair refinement": 20,
+      "rule reads the atoms: yes/no two-stage (GLUE-READ C)": 20,
+      "spaces": 20
+     },
+     "saved, with a non-planar non-Heawood brace": {
+      "rule reads the atoms: maximal twin cliques": 1,
+      "rule reads the atoms: native row twins (GENUS-READ C)": 1,
+      "rule reads the atoms: native row twins compatible at glue lines": 1,
+      "rule reads the atoms: native row twins vetoed by pair refinement": 1,
+      "rule reads the atoms: yes/no two-stage (GLUE-READ C)": 1,
+      "spaces": 1
+     },
+     "saved, with plane glue": {
+      "rule reads the atoms: maximal twin cliques": 152,
+      "rule reads the atoms: native row twins (GENUS-READ C)": 152,
+      "rule reads the atoms: native row twins compatible at glue lines": 152,
+      "rule reads the atoms: native row twins vetoed by pair refinement": 152,
+      "rule reads the atoms: yes/no two-stage (GLUE-READ C)": 147,
+      "spaces": 170
+     }
+    }
+   },
+   "pass": true
+  },
+  "2 where the native twins merge atoms, most often two whole atoms are joined by complete twinship (every line of one a native row twin of every line of the other); in the rest the merged class holds parts of atoms": {
+   "info": {
+    "spaces joined by complete twinship": 32,
+    "spaces where the native twins merge atoms": 38
+   },
+   "pass": true
+  },
+  "3 the glue-compatibility regularity: two lines of one atom that are native row twins never both create at a glue line with different order-free vectors; across atoms such pairs occur, but not for every merged pair": {
+   "info": {
+    "... compatible at glue lines, across atoms": 1042,
+    "... compatible at glue lines, within an atom": 17494,
+    "native row twins across atoms": 1572,
+    "native row twins within an atom": 17494
+   },
+   "pass": true
+  }
+ },
+ "claim": "Uniform rules on the native map (computed exactly on the 191 saved and 86 fresh maps). Five uniform canonical rules read the atoms of: yes/no two-stage twins 219 of 277 spaces; native row twins 234; maximal twin cliques 234, since the native twin relation is an equivalence in every space; native twins vetoed by pair refinement 234, since twinship is preserved by refinement and the veto never fires; native twins compatible at glue lines 234. Where the native twins fail they merge atoms (38 spaces), in 32 of them joining two whole atoms by complete twinship. A regularity: two lines of one atom that are native row twins never both create at a glue line with different order-free vectors (17,494 of 17,494 pairs), while across atoms 530 of 1,572 such pairs do, too few to separate every merge.",
+ "kind": "proof",
+ "proof": "REFINE-READ-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "REFINE-READ-20261107-001B"
+}

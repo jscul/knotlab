@@ -1,0 +1,251 @@
+{
+ "artifact_id": "PENDANT-LINE-20261106-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "passed",
+     "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/manifest.json": "Proved",
+     "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/result.json": "passed",
+     "proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 the literal frame: for every sign pattern of the gluing line, the far side the creation map splices in (the first twist showing the line's six patterns) is, after complementing the line's points to zero signs, the same relation, or the same with every far point complemented, which changes no constrained set": {
+   "info": {
+    "K4^(3)": {
+     "giving it with every far point complemented": 4,
+     "sign patterns giving the same relation": 4
+    },
+    "census 58": {
+     "giving it with every far point complemented": 4,
+     "sign patterns giving the same relation": 4
+    },
+    "census 6": {
+     "giving it with every far point complemented": 4,
+     "sign patterns giving the same relation": 4
+    },
+    "the Fano plane": {
+     "giving it with every far point complemented": 4,
+     "sign patterns giving the same relation": 4
+    }
+   },
+   "pass": true
+  },
+  "2 the far sides: every far point is free of the gluing line or excludes a subcube of its patterns for each value; none is tied to the line": {
+   "info": {
+    "K4^(3)": {
+     "far classes": 3,
+     "far points": 3,
+     "kinds": {
+      "2 excluded patterns per value": 3
+     }
+    },
+    "census 58": {
+     "far classes": 7,
+     "far points": 7,
+     "kinds": {
+      "0 excluded patterns per value": 1,
+      "1 excluded patterns per value": 6
+     }
+    },
+    "census 6": {
+     "far classes": 5,
+     "far points": 5,
+     "kinds": {
+      "1 excluded patterns per value": 1,
+      "2 excluded patterns per value": 4
+     }
+    },
+    "the Fano plane": {
+     "far classes": 6,
+     "far points": 6,
+     "kinds": {
+      "1 excluded patterns per value": 6
+     }
+    }
+   },
+   "pass": true
+  },
+  "3 exhaustive local verification: on every non-degenerate local configuration (every near relation on the gluing line and up to three further classes, against every far class, pair and triple of the four far sides), no elimination of any kind produces a crossing knot outside the two-round rule; the rule equals the longer switch rule; and switching off any part of it produces violations (the check is not vacuous)": {
+   "info": {
+    "by shape": {
+     "K4^(3), 1 near classes, 3 far": {
+      "crossing knots": 90,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 21,
+      "reached": 90,
+      "relations": 27,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 0,
+      "violations with 'round 1' switched off": 144,
+      "violations with 'two far' switched off": 18
+     },
+     "K4^(3), 2 near classes, 2 far": {
+      "crossing knots": 32652,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 9135,
+      "reached": 31692,
+      "relations": 10125,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 2592,
+      "violations with 'round 1' switched off": 44640,
+      "violations with 'two far' switched off": 2676
+     },
+     "K4^(3), 3 near classes, 1 far": {
+      "crossing knots": 38042028,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 49514913,
+      "reached": 36843372,
+      "relations": 49744125,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 1472328,
+      "violations with 'round 1' switched off": 43352712,
+      "violations with 'two far' switched off": 0
+     },
+     "census 58, 1 near classes, 3 far": {
+      "crossing knots": 720,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 735,
+      "reached": 360,
+      "relations": 945,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 0,
+      "violations with 'round 1' switched off": 360,
+      "violations with 'two far' switched off": 0
+     },
+     "census 58, 2 near classes, 2 far": {
+      "crossing knots": 38016,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 63945,
+      "reached": 21312,
+      "relations": 70875,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 576,
+      "violations with 'round 1' switched off": 21024,
+      "violations with 'two far' switched off": 0
+     },
+     "census 58, 3 near classes, 1 far": {
+      "crossing knots": 6141672,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 115534797,
+      "reached": 3579336,
+      "relations": 116069625,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 67104,
+      "violations with 'round 1' switched off": 3545784,
+      "violations with 'two far' switched off": 0
+     },
+     "census 6, 1 near classes, 3 far": {
+      "crossing knots": 798,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 210,
+      "reached": 774,
+      "relations": 270,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 0,
+      "violations with 'round 1' switched off": 1176,
+      "violations with 'two far' switched off": 198
+     },
+     "census 6, 2 near classes, 2 far": {
+      "crossing knots": 93188,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 30450,
+      "reached": 88772,
+      "relations": 33750,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 7328,
+      "violations with 'round 1' switched off": 121376,
+      "violations with 'two far' switched off": 10980
+     },
+     "census 6, 3 near classes, 1 far": {
+      "crossing knots": 51746316,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 82524855,
+      "reached": 49721052,
+      "relations": 82906875,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 1974288,
+      "violations with 'round 1' switched off": 58394580,
+      "violations with 'two far' switched off": 0
+     },
+     "the Fano plane, 1 near classes, 3 far": {
+      "crossing knots": 480,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 420,
+      "reached": 240,
+      "relations": 540,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 0,
+      "violations with 'round 1' switched off": 240,
+      "violations with 'two far' switched off": 0
+     },
+     "the Fano plane, 2 near classes, 2 far": {
+      "crossing knots": 31680,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 45675,
+      "reached": 17760,
+      "relations": 50625,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 480,
+      "violations with 'round 1' switched off": 17520,
+      "violations with 'two far' switched off": 0
+     },
+     "the Fano plane, 3 near classes, 1 far": {
+      "crossing knots": 6141672,
+      "faces where the two-round and switch rules differ": 0,
+      "non-degenerate": 99029826,
+      "reached": 3579336,
+      "relations": 99488250,
+      "violations of the two-round rule": 0,
+      "violations with 'pairs' switched off": 67104,
+      "violations with 'round 1' switched off": 3545784,
+      "violations with 'two far' switched off": 0
+     }
+    },
+    "totals": {
+     "crossing knots": 102269312,
+     "faces where the two-round and switch rules differ": 0,
+     "non-degenerate": 346754982,
+     "reached": 93884096,
+     "relations": 348376032,
+     "violations of the two-round rule": 0,
+     "violations with 'pairs' switched off": 3591800,
+     "violations with 'round 1' switched off": 109045340,
+     "violations with 'two far' switched off": 13872
+    }
+   },
+   "pass": true
+  },
+  "4 the local engine on real splices: projecting census and random near sides onto the gluing line, three near classes and one or two far classes, its knots and reached knots are the closure's": {
+   "info": {
+    "crossing knots": 3492,
+    "knot status agrees": 59304,
+    "reached status agrees": 3492,
+    "triples": 59304
+   },
+   "pass": true
+  },
+  "5 on census and random near sides at every gluing line and far side: the two-round rule reaches exactly the closure's crossing knots, and so does elimination through the gluing line's points alone": {
+   "info": {
+    "crossing classes": 201655,
+    "generated by the closure": 184074,
+    "generated through the gluing line alone": 184074,
+    "the two-round rule agrees": 201655
+   },
+   "pass": true
+  }
+ },
+ "claim": "Creation is decided at the gluing line, in two rounds. For every near side (any complement-closed set of assignments showing the gluing line's six patterns, in particular every space minus a removal) and each of the four census far sides, the crossing knots of up to three points that the elimination closure reaches are exactly these: in round one, a knot {c, x, y} (c far, x near off the line, y on the line) for which some z on the line makes {c, y, z} a far knot and {x, y, z} a near knot; in round two, a knot {c, x, w} for which x and w share a round-one point y, and a knot {c, c', x} for which some y on the line gives two of {c, c', y} (a far knot), {c, x, y} and {c', x, y} (round one). So a crossing knot is new exactly when its near and far parts fail to meet this way through the gluing line, and elimination through the line's points alone reaches everything. Proved: the rule's steps are closure steps, and every closure step stays inside the rule on every local configuration (every near relation on the line and up to three further classes against every far class, pair and triple), checked exhaustively.",
+ "kind": "proof",
+ "proof": "PENDANT-LINE-20261106-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "PENDANT-LINE-20261106-001A"
+}

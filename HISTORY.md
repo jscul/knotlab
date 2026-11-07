@@ -3,6 +3,28 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 6 November 2026: the theory page, and four more epics
+
+- [THEORY.md](THEORY.md) states the program's thesis and its main claims: 60
+  claims in nine sections, each with one label (premise, proved, checked,
+  conjecture, reading or open), its date and links to its evidence. The
+  pending qualifications appear on the claims they affect:
+  `KNOT-COMPOSE-20261101-001-D001`, `PHASE-HALO-20261103-001-D001` with
+  `FACE-CLAIM-20261103-001-D003`, counted length
+  (`SELECT-COUNT-20261101-001-D002`), and the selection note's erratum.
+  [tests/test_theory.py](tests/test_theory.py) checks its labels, evidence and
+  links.
+- [RESULTS.md](RESULTS.md) adds the four epics recorded on 5 and 6 November,
+  after the full record: `TWO-BIT-SCREEN-20261105-001`,
+  `PENDANT-LINE-20261106-001`, `CHAIN-TRANSFER-20261106-001` and
+  `GLUE-READ-20261106-001`. Their [proofs/](proofs/) and
+  [research/](research/) folders are copied byte for byte from our workspace.
+  The record now holds 178 current results and 5 superseded ones from 131
+  epics.
+- [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md) now matches our workspace,
+  with the entries for those epics and a note that the brace-tree source rule
+  fails at six atoms.
+
 ## 6 November 2026: review clarifications in the knot-group counting note
 
 [The note](notes/knot-group-counting/) now covers the three points an

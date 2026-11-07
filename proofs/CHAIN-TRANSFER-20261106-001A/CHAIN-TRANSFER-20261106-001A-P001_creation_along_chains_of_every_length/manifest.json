@@ -1,0 +1,131 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CHAIN-TRANSFER-20261106-001A-P001",
+  "canonical_id": "CHAIN-TRANSFER-20261106-001A-P001",
+  "kind": "proof",
+  "ticket": "CHAIN-TRANSFER-20261106-001A",
+  "proof": "CHAIN-TRANSFER-20261106-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Creation along chains of every length",
+  "status": "Proved",
+  "claim": "The touching rule at every distance. In every Fano tree (a space built from Fano atoms alone by the creation map's splices), for the creation map (knots of up to three points, the four census far sides), a line a creates at a line b of another atom exactly when b touches its atom's cut toward a's atom: its atom emits at that cut, or b passes through the point its atom lost there. With the block lemma, the creation relation of every Fano tree is fixed by its tree. Proved: by PENDANT-LINE C the relation is that of the chain of their atoms; by PENDANT-LINE A creation at b is decided by the near side's relations on b's points and up to two further points; along a chain these are carried by the prefix's profile at each cut (its relations on the cut's three ports and up to two further points), a function of the previous profile and the next splice; closing under every splice reaches exactly 47 profiles, none new after three atoms; and on each of them, for every last atom and line, the two-round rule creates exactly when the line touches the last cut (12,894 of 12,894). Every profile leaves the three ports free, and the last atom alone decides creation.",
+  "dependencies": [
+    "PENDANT-LINE-20261106-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A chain of Fano atoms, a removal in its first atom and a line of its last atom where creation differs from the touching rule.",
+    "A profile reached by some splice that the closure computation missed, or a step of the reduction from the chain to its profiles that fails on a built chain.",
+    "A built chain where the automaton's verdict differs from the creation map, far side by far side."
+  ],
+  "lineage": {
+    "home_scope": "CHAIN-TRANSFER-20261106-001",
+    "epic_path": [
+      "CHAIN-TRANSFER-20261106-001"
+    ],
+    "parents": [
+      "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/result.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json",
+      "proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/result.json",
+      "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/manifest.json",
+      "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py",
+      "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py",
+      "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py",
+      "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/chain_lib.py",
+      "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/dict_lib.py",
+      "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/brace_lib.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/manifest.json": "acb61d15007af84690e09e533c52805ae878898308f4237d50b15131295e106c",
+    "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/result.json": "d179fa894b8a3871d0fb194fc9110b95ea433381a35a1831960ce65ec1f63900",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "506601817a95f7b77743b7a2bf78286095257ed8df1ee7954c50824ae08e8464",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "3be6062ee3f3466dd3cb8ac31c5912ca71c3b384ea5363894c3755ed696650cd",
+    "proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/manifest.json": "ef2f17cccdfe196cfab1238f65453b8423f9f385cf727e86f9c5bac27de776f0",
+    "proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/result.json": "a42da856f862de4967928aed7011748ef830aff63af532ca785bd9e9a9d42d27",
+    "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/manifest.json": "3fc7a9145cb45fc0aba505a414d45195b9c91a09f5ea53a30f3790fe02249ca6",
+    "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/result.json": "378b3f3bebd8249b7692628f24de8f4c0bcd05bd665438213432f5d6cfd42e4a",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1",
+    "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py": "dcf9c39ae6da209d6915b658c0c199f79530e281da1f438b6418259dedd6b388",
+    "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py": "402465fa2b12961a94b1a0cc9d0d12c704a556f2da0e3ec6bb2faa354d1f3512",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py": "799502c7c3524ec5375bc07ef0a3a1d2eb1cda3c19fde264a8f2cea801cf69a5",
+    "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/chain_lib.py": "e1b821f53158e5d92f2df616018896004969d8a9b2d183a764c99de474cd3715",
+    "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/dict_lib.py": "f76f2e554eb0541b8742897f37e2a1f31095be6ecf4104d062506de94f56b881",
+    "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/brace_lib.py": "ff8807db2548e40092eac174d2e6207d4344a8a66b0dbf098d24fa03c4b39e56",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json",
+    "identity": "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/identity.json",
+    "directory": "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length",
+    "proof": "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/proof.md",
+    "result": "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json",
+    "check": "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "touching_rule_every_distance_checked": true
+  },
+  "foundation_claim_scope": "Chains of Fano atoms of every length (the closures of the atoms on a tree path, glued at the path's cuts), every removal in the first atom and every line of the last, for the creation map's four census far sides and knots of up to three points; through PENDANT-LINE C, every pair of lines in different atoms of a Fano tree.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06.",
+    "status": "reduction proved by hand from PENDANT-LINE A and C; the finite closure and the verdicts computed exhaustively; the automaton validated against the creation map on built chains; no human or external review",
+    "novelty": "New here."
+  }
+}

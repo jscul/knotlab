@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PENDANT-LINE-20261106-001A-P001",
+  "canonical_id": "PENDANT-LINE-20261106-001A-P001",
+  "kind": "proof",
+  "ticket": "PENDANT-LINE-20261106-001A",
+  "proof": "PENDANT-LINE-20261106-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Creation is decided at the gluing line",
+  "status": "Proved",
+  "claim": "Creation is decided at the gluing line, in two rounds. For every near side (any complement-closed set of assignments showing the gluing line's six patterns, in particular every space minus a removal) and each of the four census far sides, the crossing knots of up to three points that the elimination closure reaches are exactly these: in round one, a knot {c, x, y} (c far, x near off the line, y on the line) for which some z on the line makes {c, y, z} a far knot and {x, y, z} a near knot; in round two, a knot {c, x, w} for which x and w share a round-one point y, and a knot {c, c', x} for which some y on the line gives two of {c, c', y} (a far knot), {c, x, y} and {c', x, y} (round one). So a crossing knot is new exactly when its near and far parts fail to meet this way through the gluing line, and elimination through the line's points alone reaches everything. Proved: the rule's steps are closure steps, and every closure step stays inside the rule on every local configuration (every near relation on the line and up to three further classes against every far class, pair and triple), checked exhaustively.",
+  "dependencies": [
+    "TWO-BIT-SCREEN-20261105-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A local configuration (the gluing line, up to three further near classes, and far classes of a census far side) in which some elimination through a class off the gluing line produces a crossing knot that the two-level rule does not reach.",
+    "A splice in which the two-level rule and the elimination closure disagree on a crossing knot.",
+    "A step of the reduction from the closure to local configurations that fails on an instance."
+  ],
+  "lineage": {
+    "home_scope": "PENDANT-LINE-20261106-001",
+    "epic_path": [
+      "PENDANT-LINE-20261106-001"
+    ],
+    "parents": [
+      "proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/manifest.json",
+      "proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/result.json",
+      "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/manifest.json",
+      "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/manifest.json",
+      "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py",
+      "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py",
+      "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/manifest.json": "5a5e2925d56a8b8c46200cbbf21c42e82b698115e022c072f3e70cc005722545",
+    "proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/result.json": "34008d9a16153e1449b46a3b49412ee2aebbe182dc3d335236d47392fa95551b",
+    "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/manifest.json": "50c660fca8ee1bf4eda005a121cfe9e0d958d54f874aec48e9d8168105ff9fdc",
+    "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/result.json": "56bbefd6fd22a394a49580d2b7f42df43a4235d53bf0ede96bc185544ea66322",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "a185efe753f500980c65e3e80872d2cc52cf6cfd2ec4cf6b732ad42f2cca7ca5",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "2273beae421a889086a6f53a7f39dca6befd8ae3751ca8ee75e8b60f6e18a7d0",
+    "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/manifest.json": "a0d07008367cf979029a9b68b66ea74a5d9ca59d87399cc4691b183bb61aa6d5",
+    "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/result.json": "c52100aafcab4619e1df14e53c5b8fd7498dc8277297d45844ac2fa7295e0d18",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1",
+    "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py": "dcf9c39ae6da209d6915b658c0c199f79530e281da1f438b6418259dedd6b388",
+    "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py": "402465fa2b12961a94b1a0cc9d0d12c704a556f2da0e3ec6bb2faa354d1f3512",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json",
+    "identity": "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/identity.json",
+    "directory": "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line",
+    "proof": "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/proof.md",
+    "result": "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json",
+    "check": "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": true
+  },
+  "foundation_claim_scope": "Every complement-closed near relation on the gluing line's three points and up to three further classes showing the line's six patterns, against every far point, pair and triple of the four census far sides (K4^(3), census 6, the Fano plane, census 58); and, for comparison, census and random near sides.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06.",
+    "status": "reduction to local configurations proved by hand; local configurations verified exhaustively; no human or external review",
+    "novelty": "New here."
+  }
+}

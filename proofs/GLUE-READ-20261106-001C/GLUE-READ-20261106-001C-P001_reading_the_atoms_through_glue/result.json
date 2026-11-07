@@ -1,0 +1,168 @@
+{
+ "artifact_id": "GLUE-READ-20261106-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash (ticket B's exact maps included); upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "passed",
+     "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 on Fano trees the two-stage rule is CHAIN-TRANSFER C's twin rule: every line is an atom line and the classes agree": {
+   "info": {
+    "Fano trees": 20,
+    "agree": 20
+   },
+   "pass": true
+  },
+  "2 the two-stage rule reads the atoms of every one of BRACE-TREE C's 111 fresh spaces and of most random spaces with plane glue; the only lines it adds to an atom are doubled-square lines; the plain twin rule and the source rule each miscount somewhere": {
+   "info": {
+    "by kind": {
+     "census, Fano trees": {
+      "... extra lines in its classes are doubled-square lines": 17,
+      "Fano atoms": 67,
+      "plain twin rule reads the atoms": 17,
+      "source rule counts the atoms": 17,
+      "spaces": 17,
+      "twins far side by far side read the atoms": 0,
+      "two lines of different atoms indistinguishable by whether creation occurs": 0,
+      "two lines of different atoms indistinguishable far side by far side": 0,
+      "two-stage rule reads the atoms": 17
+     },
+     "census, with a non-planar non-Heawood brace": {
+      "... extra lines in its classes are doubled-square lines": 1,
+      "Fano atoms": 2,
+      "plain twin rule reads the atoms": 1,
+      "source rule counts the atoms": 0,
+      "spaces": 1,
+      "twins far side by far side read the atoms": 0,
+      "two lines of different atoms indistinguishable by whether creation occurs": 0,
+      "two lines of different atoms indistinguishable far side by far side": 0,
+      "two-stage rule reads the atoms": 1
+     },
+     "census, with plane glue": {
+      "... extra lines in its classes are doubled-square lines": 93,
+      "Fano atoms": 333,
+      "plain twin rule reads the atoms": 83,
+      "source rule counts the atoms": 93,
+      "spaces": 93,
+      "twins far side by far side read the atoms": 0,
+      "two lines of different atoms indistinguishable by whether creation occurs": 0,
+      "two lines of different atoms indistinguishable far side by far side": 0,
+      "two-stage rule reads the atoms": 93
+     },
+     "random, Fano trees": {
+      "... extra lines in its classes are doubled-square lines": 3,
+      "Fano atoms": 18,
+      "plain twin rule reads the atoms": 3,
+      "source rule counts the atoms": 3,
+      "spaces": 3,
+      "twins far side by far side read the atoms": 0,
+      "two lines of different atoms indistinguishable by whether creation occurs": 0,
+      "two lines of different atoms indistinguishable far side by far side": 0,
+      "two-stage rule reads the atoms": 3
+     },
+     "random, with plane glue": {
+      "... extra lines in its classes are doubled-square lines": 77,
+      "Fano atoms": 311,
+      "fails: drops or splits an atom; distinguishable": 4,
+      "fails: merges atoms meeting one planar brace; distinguishable": 4,
+      "fails: merges atoms meeting one planar brace; indistinguishable": 15,
+      "plain twin rule reads the atoms": 36,
+      "source rule counts the atoms": 67,
+      "spaces": 77,
+      "twins far side by far side read the atoms": 0,
+      "two lines of different atoms indistinguishable by whether creation occurs": 15,
+      "two lines of different atoms indistinguishable far side by far side": 0,
+      "two-stage rule reads the atoms": 54
+     }
+    },
+    "two-stage rule (read, spaces)": {
+     "census, Fano trees": [
+      17,
+      17
+     ],
+     "census, with a non-planar non-Heawood brace": [
+      1,
+      1
+     ],
+     "census, with plane glue": [
+      93,
+      93
+     ],
+     "random, Fano trees": [
+      3,
+      3
+     ],
+     "random, with plane glue": [
+      54,
+      77
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 where it fails, the rule merges atoms that meet one planar brace or drops a line of an atom; in most failing spaces two lines of different atoms are creation twins both ways, so no rule that reads only whether creation occurs can return the atoms there; no census space has such lines": {
+   "info": {
+    "failures": {
+     "fails: drops or splits an atom; distinguishable": 4,
+     "fails: merges atoms meeting one planar brace; distinguishable": 4,
+     "fails: merges atoms meeting one planar brace; indistinguishable": 15
+    },
+    "spaces with indistinguishable lines of different atoms": {
+     "census, Fano trees": 0,
+     "census, with a non-planar non-Heawood brace": 0,
+     "census, with plane glue": 0,
+     "random, Fano trees": 0,
+     "random, with plane glue": 15
+    }
+   },
+   "pass": true
+  },
+  "4 which far side creates separates every two lines of different atoms in every space, but varies inside atoms too: twins far side by far side do not read the atoms, even on Fano trees": {
+   "info": {
+    "spaces with indistinguishable lines of different atoms, far side by far side": {
+     "census, Fano trees": 0,
+     "census, with a non-planar non-Heawood brace": 0,
+     "census, with plane glue": 0,
+     "random, Fano trees": 0,
+     "random, with plane glue": 0
+    },
+    "twins far side by far side read the atoms (read, spaces)": {
+     "census, Fano trees": [
+      0,
+      17
+     ],
+     "census, with a non-planar non-Heawood brace": [
+      0,
+      1
+     ],
+     "census, with plane glue": [
+      0,
+      93
+     ],
+     "random, Fano trees": [
+      0,
+      3
+     ],
+     "random, with plane glue": [
+      0,
+      77
+     ]
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Reading the atoms through glue. The two-stage twin rule (twins first pick out the atom lines, the lines in twin classes of two or more; then twins compared on atom lines alone give the atoms) is CHAIN-TRANSFER C's rule on every Fano tree, so it reads the atoms of every Fano tree whose atoms have at most four cuts (proved). Computed with exact creation maps: it reads the atoms of every one of BRACE-TREE C's 111 fresh spaces and of most random spaces with plane glue, adding to an atom only doubled-square lines; where it fails it merges atoms that meet one planar brace or drops a line of an atom. In most failing spaces, two lines of different atoms create at each other and at, and from, exactly the same lines: exchanging them is a symmetry of the yes/no creation relation, so no rule that reads only whether creation occurs can return the atoms there. Which far side creates separates every two lines of different atoms in all 191 spaces, but it varies inside atoms too, so twins far side by far side do not read the atoms even on Fano trees; reading every three-fold space needs a rule that uses which far side creates.",
+ "kind": "proof",
+ "proof": "GLUE-READ-20261106-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "GLUE-READ-20261106-001C"
+}

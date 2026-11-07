@@ -1,0 +1,136 @@
+{
+ "artifact_id": "GLUE-READ-20261106-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/manifest.json": "Proved",
+     "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the spaces and their exact creation maps: BRACE-TREE C's 111 fresh spaces and 80 random spaces with plane glue (Fano atoms hung on random plane spaces or on census spaces), all knot spaces; every map computed from all solutions by the two-round rule and stored in maps.json.gz": {
+   "info": {
+    "Fano atoms": {
+     "census": [
+      2,
+      4
+     ],
+     "random": [
+      2,
+      6
+     ]
+    },
+    "maps stored identically": true,
+    "maps.json.gz sha256": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "points": {
+     "census": [
+      19,
+      26
+     ],
+     "random": [
+      18,
+      38
+     ]
+    },
+    "spaces": {
+     "census, Fano trees": 17,
+     "census, with a non-planar non-Heawood brace": 1,
+     "census, with plane glue": 93,
+     "census: no solutions (knot spaces)": 111,
+     "random, Fano trees": 3,
+     "random, with plane glue": 77,
+     "random: no solutions (knot spaces)": 80
+    }
+   },
+   "pass": true
+  },
+  "2 creation through glue: wherever only atoms lie between, the removal's side leaves the facing cut free; the touching rule holds at every pair whose side is free, and fails only where glue constrains the ports (excluding a pattern pair or tying two ports, a doubled square sometimes making two ports one point)": {
+   "info": {
+    "by kind, source, what lies between and the side's relation": {
+     "Fano trees; removal in an atom; atoms only between; free": {
+      "pairs": 11114,
+      "touching rule holds": 11114
+     },
+     "with a non-planar non-Heawood brace; removal in an atom; glue between; free": {
+      "pairs": 84,
+      "touching rule holds": 84
+     },
+     "with a non-planar non-Heawood brace; removal in glue; glue between; free": {
+      "pairs": 70,
+      "touching rule holds": 70
+     },
+     "with a non-planar non-Heawood brace; removal in glue; glue between; one pattern pair excluded": {
+      "pairs": 21,
+      "touching rule holds": 9
+     },
+     "with plane glue; removal in an atom; atoms only between; free": {
+      "pairs": 25900,
+      "touching rule holds": 25900
+     },
+     "with plane glue; removal in an atom; glue between; free": {
+      "pairs": 39557,
+      "touching rule holds": 39557
+     },
+     "with plane glue; removal in an atom; glue between; one pattern pair excluded": {
+      "pairs": 2304,
+      "touching rule holds": 987
+     },
+     "with plane glue; removal in an atom; glue between; two ports tied (one point), the third free": {
+      "pairs": 4602,
+      "touching rule holds": 1326
+     },
+     "with plane glue; removal in an atom; glue between; two ports tied, the third free": {
+      "pairs": 1015,
+      "touching rule holds": 290
+     },
+     "with plane glue; removal in glue; glue between; free": {
+      "pairs": 12039,
+      "touching rule holds": 12039
+     },
+     "with plane glue; removal in glue; glue between; one pattern pair excluded": {
+      "pairs": 1826,
+      "touching rule holds": 786
+     },
+     "with plane glue; removal in glue; glue between; two ports tied (one point), the third free": {
+      "pairs": 1199,
+      "touching rule holds": 345
+     },
+     "with plane glue; removal in glue; glue between; two ports tied, the third free": {
+      "pairs": 133,
+      "touching rule holds": 38
+     }
+    },
+    "failures, all at constrained sides": 7319
+   },
+   "pass": true
+  },
+  "3 the twin rule's two disturbances: every glue line that joins an atom's twin class is a doubled-square line meeting the atom's cuts at two or more ports (a point that is a port of two cuts counting for each); every atom that splits emits a line into a planar brace and splits into its lines through each point of that line, and its classes' out-sets differ only on glue lines": {
+   "info": {
+    "atoms": {
+     "one twin class": 667,
+     "split into 3 classes": 64
+    },
+    "glue lines": {
+     "doubled square / meeting the atom's cuts at two or more ports / does not join": 20,
+     "doubled square / meeting the atom's cuts at two or more ports / joins the atom's twin class": 218,
+     "other / meeting the atom's cuts at two or more ports / does not join": 1,
+     "planar / meeting the atom's cuts at two or more ports / does not join": 85
+    },
+    "splits": {
+     "the classes are its lines through each point of a line it emits into a planar brace": 64,
+     "the classes' out-sets differ only on glue lines": 64
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "What plane glue does (computed). On BRACE-TREE C's 111 fresh spaces and 80 random spaces with plane glue (Fano atoms hung on random plane spaces or on census spaces), with exact creation maps: wherever only Fano atoms lie between a removal and an atom, the removal's side leaves the facing cut's ports free and the touching rule holds; through glue the side is free, excludes one pattern pair, or ties two ports (a doubled square can make two ports one point), and the touching rule holds at every pair whose side is free, failing only where glue constrains the ports, as ticket A's law explains. The twin rule's two disturbances are local: every glue line that joins an atom's twin class is a doubled-square line meeting the atom's cuts at two or more ports (a point that is a port of two cuts counting for each), and every atom that splits emits a line into a planar brace and splits into its lines through each point of that line, the classes' out-sets differing only on glue lines.",
+ "kind": "proof",
+ "proof": "GLUE-READ-20261106-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "GLUE-READ-20261106-001B"
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CHAIN-TRANSFER-20261106-001B-P001",
+  "canonical_id": "CHAIN-TRANSFER-20261106-001B-P001",
+  "kind": "proof",
+  "ticket": "CHAIN-TRANSFER-20261106-001B",
+  "proof": "CHAIN-TRANSFER-20261106-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The source rule on larger trees",
+  "status": "Proved",
+  "claim": "The source rule on larger trees. With creation on Fano trees fixed by ticket A, BRACE-TREE B's source rule (within each piece of the creative part, keep a maximal block of mutual creation when one of its lines is blind to every line any other is blind to) keeps exactly one block per atom on every Fano tree of at most five atoms (every splice sequence up to choices that leave creation unchanged: 2 + 52 + 1,976 + 98,800 trees, for the first maximum quiet part and for every one), and fails at six atoms: when a receiver takes cuts from two emitters that each feed a further receiver, and emits the line through the two points those cuts took, no line of the receiver is blind to both loads, its block has no source, and the rule keeps 5 blocks for 6 atoms, for every maximum quiet part. The exact creation map of that tree (every solution, the two-round rule on the real near sides) equals ticket A's relation at all 1,332 pairs and gives the same count. Three loaded cuts at non-collinear points fail the same way at seven atoms; collinear points, a kept connecting line or a missing load restore the rule; random trees with branching atoms fail increasingly often, paths never. So the source rule is refuted as a theorem; BRACE-TREE's evidence (at most four atoms) stands.",
+  "dependencies": [
+    "CHAIN-TRANSFER-20261106-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation",
+    "exact-computation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "counterexample-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A Fano tree claimed to defeat the source rule on which the exact creation map gives kept blocks equal to the atoms.",
+    "A Fano tree of at most five atoms on which the source rule miscounts, against the claim that none does."
+  ],
+  "lineage": {
+    "home_scope": "CHAIN-TRANSFER-20261106-001",
+    "epic_path": [
+      "CHAIN-TRANSFER-20261106-001"
+    ],
+    "parents": [
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json",
+      "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json",
+      "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/manifest.json",
+      "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/result.json",
+      "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py",
+      "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py",
+      "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py",
+      "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py",
+      "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py",
+      "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/chain_lib.py",
+      "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/dict_lib.py",
+      "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/brace_lib.py",
+      "research/MUTUAL-SELECTION-20261031-001C/census.json"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "383c3eeb341795e8a70c34e6c56ca581132a7a40982ceca0d7e21ccf06d6f537",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "a55def06f935b3665f4670a66e0081d6cf8c98e7c25d9909bbf9fdf1609d32b1",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json": "ef5ad5db392c30dd0676610a8cc06304a5e6d63570bb480e71dc6113522cc116",
+    "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json": "4cb4ddee452a4878c67e05bd771c3ff7b54aef42fa714a2b841f93b95eb4ce5c",
+    "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/manifest.json": "a7b0d0b8ba7d15d02f384e7a7076c97798112bb09b66d5240a083cd2434e4615",
+    "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/result.json": "1548bffc746260e3edbf7f05d1c45ea209a106623f31c56e48cc1456326d4c48",
+    "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/join_lib.py": "e338bd87189fda0ce200f37ec3ff24413c50276494e7cddfe15f656f7d302721",
+    "proofs/HUB-GLUE-20261102-001A/HUB-GLUE-20261102-001A-P001_selection_leaves_a_hub_and_pieces_glue/glue_lib.py": "f93dda554753a32c5bb0785724e66424135e92d1c2ff555c039dc1f7fb1def6c",
+    "proofs/SPLICE-TREE-20261102-001C/SPLICE-TREE-20261102-001C-P001_opened_cuts_interact/elim_lib.py": "f0830be6cf984d67a351d1373021fb2fdded9ed3e7b8688d9a6fff311ba9b4b1",
+    "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/genus_lib.py": "dcf9c39ae6da209d6915b658c0c199f79530e281da1f438b6418259dedd6b388",
+    "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/screen_lib.py": "402465fa2b12961a94b1a0cc9d0d12c704a556f2da0e3ec6bb2faa354d1f3512",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py": "799502c7c3524ec5375bc07ef0a3a1d2eb1cda3c19fde264a8f2cea801cf69a5",
+    "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/chain_lib.py": "e1b821f53158e5d92f2df616018896004969d8a9b2d183a764c99de474cd3715",
+    "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/dict_lib.py": "f76f2e554eb0541b8742897f37e2a1f31095be6ecf4104d062506de94f56b881",
+    "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/brace_lib.py": "ff8807db2548e40092eac174d2e6207d4344a8a66b0dbf098d24fa03c4b39e56",
+    "research/MUTUAL-SELECTION-20261031-001C/census.json": "cab1518f4f3aaaca505d7ccc86254ccf05e99b6eb0894d79c97ccffc241a8f07"
+  },
+  "paths": {
+    "manifest": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/manifest.json",
+    "identity": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/identity.json",
+    "directory": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees",
+    "proof": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/proof.md",
+    "result": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/result.json",
+    "check": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "source_rule_tested": true
+  },
+  "foundation_claim_scope": "The source rule of BRACE-TREE B on Fano trees: every tree of at most five atoms up to the choices that leave creation unchanged, random trees of up to fifteen atoms, and the explicit counterexamples, whose creation maps are computed exactly.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-06.",
+    "status": "evaluation through ticket A's theorem; counterexamples confirmed by exact computation; no human or external review",
+    "novelty": "New here."
+  }
+}

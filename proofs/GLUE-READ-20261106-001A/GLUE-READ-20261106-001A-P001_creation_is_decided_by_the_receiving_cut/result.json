@@ -1,0 +1,285 @@
+{
+ "artifact_id": "GLUE-READ-20261106-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 deeper points never decide: for every port relation (15) and every closed last atom (its lost element, port permutation and line), creation with every compatible deeper relation at once equals creation from the atom alone; deeper relations only add far sides at lines already receiving": {
+   "info": {
+    "far sides added": 504,
+    "last atoms": 8190,
+    "pairs per port relation": [
+     5,
+     5,
+     5,
+     5,
+     44,
+     44,
+     44,
+     44,
+     44,
+     44,
+     518,
+     518,
+     518,
+     518,
+     6959
+    ],
+    "singles per port relation": [
+     2,
+     2,
+     2,
+     2,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     14,
+     14,
+     14,
+     14,
+     41
+    ],
+    "unchanged": 8190
+   },
+   "pass": true
+  },
+  "2 the native statement: an emitting atom's lines receive exactly when the removal's side allows its three ports to be equal; a receiving atom's cut line receives exactly when the side does not force the other two ports equal, and its intact line exactly when the side tells the ports apart (its relation is not invariant under permuting them)": {
+   "info": {
+    "holds": 8190,
+    "table": {
+     "000/001/010/101/110/111; cut line": {
+      "receives": 126
+     },
+     "000/001/010/101/110/111; emitter's line": {
+      "receives": 252
+     },
+     "000/001/010/101/110/111; intact line": {
+      "receives": 168
+     },
+     "000/001/011/100/110/111; cut line": {
+      "receives": 126
+     },
+     "000/001/011/100/110/111; emitter's line": {
+      "receives": 252
+     },
+     "000/001/011/100/110/111; intact line": {
+      "receives": 168
+     },
+     "000/001/110/111; cut line": {
+      "receives": 84,
+      "silent": 42
+     },
+     "000/001/110/111; emitter's line": {
+      "receives": 252
+     },
+     "000/001/110/111; intact line": {
+      "receives": 168
+     },
+     "000/010/011/100/101/111; cut line": {
+      "receives": 126
+     },
+     "000/010/011/100/101/111; emitter's line": {
+      "receives": 252
+     },
+     "000/010/011/100/101/111; intact line": {
+      "receives": 168
+     },
+     "000/010/101/111; cut line": {
+      "receives": 84,
+      "silent": 42
+     },
+     "000/010/101/111; emitter's line": {
+      "receives": 252
+     },
+     "000/010/101/111; intact line": {
+      "receives": 168
+     },
+     "000/011/100/111; cut line": {
+      "receives": 84,
+      "silent": 42
+     },
+     "000/011/100/111; emitter's line": {
+      "receives": 252
+     },
+     "000/011/100/111; intact line": {
+      "receives": 168
+     },
+     "001/010/101/110; cut line": {
+      "receives": 126
+     },
+     "001/010/101/110; emitter's line": {
+      "silent": 252
+     },
+     "001/010/101/110; intact line": {
+      "receives": 168
+     },
+     "001/011/100/110; cut line": {
+      "receives": 126
+     },
+     "001/011/100/110; emitter's line": {
+      "silent": 252
+     },
+     "001/011/100/110; intact line": {
+      "receives": 168
+     },
+     "001/110; cut line": {
+      "receives": 84,
+      "silent": 42
+     },
+     "001/110; emitter's line": {
+      "silent": 252
+     },
+     "001/110; intact line": {
+      "receives": 168
+     },
+     "010/011/100/101; cut line": {
+      "receives": 126
+     },
+     "010/011/100/101; emitter's line": {
+      "silent": 252
+     },
+     "010/011/100/101; intact line": {
+      "receives": 168
+     },
+     "010/101; cut line": {
+      "receives": 84,
+      "silent": 42
+     },
+     "010/101; emitter's line": {
+      "silent": 252
+     },
+     "010/101; intact line": {
+      "receives": 168
+     },
+     "011/100; cut line": {
+      "receives": 84,
+      "silent": 42
+     },
+     "011/100; emitter's line": {
+      "silent": 252
+     },
+     "011/100; intact line": {
+      "receives": 168
+     },
+     "all equal; cut line": {
+      "silent": 126
+     },
+     "all equal; emitter's line": {
+      "receives": 252
+     },
+     "all equal; intact line": {
+      "silent": 168
+     },
+     "free; cut line": {
+      "receives": 126
+     },
+     "free; emitter's line": {
+      "receives": 252
+     },
+     "free; intact line": {
+      "silent": 168
+     },
+     "not all equal; cut line": {
+      "receives": 126
+     },
+     "not all equal; emitter's line": {
+      "silent": 252
+     },
+     "not all equal; intact line": {
+      "silent": 168
+     }
+    }
+   },
+   "pass": true
+  },
+  "3 free ports give the touching rule": {
+   "info": {
+    "letters with free ports": 546
+   },
+   "pass": true
+  },
+  "4 computed, on BRACE-TREE C's 111 fresh spaces (exact creation maps): for every removal anywhere and every line of a Fano atom not holding it, replacing the removal's side of the facing cut by the relation it shows on the shared points leaves creation unchanged": {
+   "info": {
+    "Fano trees; removal in an atom; atoms only between; 8 patterns on 3 shared points": {
+     "creation unchanged": 7706,
+     "pairs": 7706
+    },
+    "with a non-planar non-Heawood brace; removal in an atom; glue between; 8 patterns on 3 shared points": {
+     "creation unchanged": 84,
+     "pairs": 84
+    },
+    "with a non-planar non-Heawood brace; removal in glue; glue between; 6 patterns on 3 shared points": {
+     "creation unchanged": 21,
+     "pairs": 21
+    },
+    "with a non-planar non-Heawood brace; removal in glue; glue between; 8 patterns on 3 shared points": {
+     "creation unchanged": 70,
+     "pairs": 70
+    },
+    "with plane glue; removal in an atom; atoms only between; 8 patterns on 3 shared points": {
+     "creation unchanged": 11564,
+     "pairs": 11564
+    },
+    "with plane glue; removal in an atom; glue between; 4 patterns on 2 shared points": {
+     "creation unchanged": 2786,
+     "pairs": 2786
+    },
+    "with plane glue; removal in an atom; glue between; 4 patterns on 3 shared points": {
+     "creation unchanged": 763,
+     "pairs": 763
+    },
+    "with plane glue; removal in an atom; glue between; 6 patterns on 3 shared points": {
+     "creation unchanged": 519,
+     "pairs": 519
+    },
+    "with plane glue; removal in an atom; glue between; 8 patterns on 3 shared points": {
+     "creation unchanged": 17592,
+     "pairs": 17592
+    },
+    "with plane glue; removal in glue; glue between; 4 patterns on 2 shared points": {
+     "creation unchanged": 864,
+     "pairs": 864
+    },
+    "with plane glue; removal in glue; glue between; 4 patterns on 3 shared points": {
+     "creation unchanged": 112,
+     "pairs": 112
+    },
+    "with plane glue; removal in glue; glue between; 6 patterns on 3 shared points": {
+     "creation unchanged": 373,
+     "pairs": 373
+    },
+    "with plane glue; removal in glue; glue between; 8 patterns on 3 shared points": {
+     "creation unchanged": 5096,
+     "pairs": 5096
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Creation is decided by the receiving cut. Let B be a Fano atom with its other elements present, meeting the rest of a space at one cut beyond which lies a removal, and let R be the relation (on literals) that the removal's side shows on that cut's three ports. For the creation map (knots of up to three points, the four census far sides), whether the removal creates at a line of B depends only on R: if B emits at that cut, every line of B receives exactly when R allows the three ports to be equal; if B receives there, a cut line receives exactly when R does not force the other two ports equal, and an intact line exactly when R tells the ports apart (is not invariant under permuting them). Deeper points never decide; they only add far sides at lines already receiving. Free ports give the touching rule. Proved by feeding every deeper relation compatible with each of the 15 port relations at once, for every closed last atom (8,190 cases). Computed on BRACE-TREE C's 111 fresh spaces: for every removal and every line of an atom not holding it, the removal's side acts only through the relation it shows on the facing cut.",
+ "kind": "proof",
+ "proof": "GLUE-READ-20261106-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "GLUE-READ-20261106-001A"
+}

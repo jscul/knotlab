@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**166 current results** and 5 superseded ones, from 127 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**178 current results** and 5 superseded ones, from 131 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so.
 
@@ -23,13 +23,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 5 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 30 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 45 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 57 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 127 epics with their closures
+- [Epics](#epics): all 131 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -406,6 +406,42 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-05 · Native creation reads the genus of every fresh three-fold space up to 26 points** (`BRACE-TREE-20261105-001-D003`).
   On 111 fresh spaces (every three-fold class of 23 to 26 points and new trees of atoms), all 32,016 pairs at the dictionary's places and all 163 cuts between atoms behaved as predicted, and the source rule counted the Heawood braces, and the genus, on all 110 spaces without a non-Fano brace. The glue rule was refuted: across a Fano atom, glue lines can create (12 pairs, one class).
   [proof P001](proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/proof.md), [epic closure](proofs/BRACE-TREE-20261105-001Z/BRACE-TREE-20261105-001Z-P001_epic_closure/proof.md)
+- **2026-11-05 · An intact Fano side never removes creation, and whether it adds any reduces to one pendant line** (`TWO-BIT-SCREEN-20261105-001-D001`).
+  Replacing a line by an intact Fano side never removes creation: the new knots off the side are those of the closed space, and generated knots through it have generated port shadows (proved through a tetrahedron form of the closure). That it never adds creation follows from the statement that one new point on one new line never does, which held on 117,344 cases but is not proved.
+  [proof P001](proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/proof.md), [epic closure](proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/proof.md)
+- **2026-11-05 · A hidden point may hang on one new line; two lines can create** (`TWO-BIT-SCREEN-20261105-001-D002`).
+  No hidden point whose exclusion sets are subcubes of the six port patterns changed creation (19 of 27 one-point profiles), while a point on two or three new lines through the line's points, such as the ports' majority, creates where the space without it does not. Every knot-space side tried, including every three-fold space up to 22 points split at a point, has only subcube points.
+  [proof P001](proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/proof.md), [epic closure](proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/proof.md)
+- **2026-11-05 · In Fano trees every atom is a block, and a line receives creation exactly where it touches the cut toward it** (`TWO-BIT-SCREEN-20261105-001-D003`).
+  In spaces built from Fano atoms alone, creation in the chain of atoms between two lines implies creation in the whole space, so every atom is a block and every line that touches its atom's cut toward a removal at most two atoms away receives creation from it. On every chain computed, that touching is also necessary: the dictionary is one rule, with non-creation still resting on the pendant-line statement.
+  [proof P001](proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/proof.md), [epic closure](proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · The touching rule holds at every distance in Fano trees** (`CHAIN-TRANSFER-20261106-001-D001`).
+  In every space built from Fano atoms alone, a line receives creation from a removal in another atom, at any distance, exactly when it touches its atom's cut facing the removal; with the block lemma, creation there is fixed by the tree. Proved by carrying finitely many profiles along chains: 47 occur, each leaves the cut's ports free, and on each the receiving atom alone decides (12,894 verdicts checked).
+  [proof P001](proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/proof.md), [epic closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · The source rule fails at six atoms** (`CHAIN-TRANSFER-20261106-001-D002`).
+  BRACE-TREE's source rule keeps one block per atom on every Fano tree of at most five atoms, but fails at six: a receiver that takes two cuts from emitters feeding further receivers, and emits the line through those cuts' points, has no line blind to both loads, so its block has no source. Exact creation maps of six- and seven-atom counterexamples confirm the failure.
+  [proof P001](proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/proof.md), [epic closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Native creation reads the directed tree of Fano trees** (`CHAIN-TRANSFER-20261106-001-D003`).
+  In every Fano tree whose atoms have at most four cuts, the atoms are exactly the classes of lines that create at each other and at the same other lines, and the atoms creating at a proper subset of an atom's lines are those beyond one of its receiving cuts, which gives every cut with its direction (proved). Through plane glue the rule does not extend as stated.
+  [proof P001](proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/proof.md), [epic closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Creation at an atom is decided by its cut** (`GLUE-READ-20261106-001-D001`).
+  For a Fano atom with its other elements present, whether a removal beyond one of its cuts creates at a line of it depends only on the patterns the removal's side allows on that cut's three ports: an emitter's lines receive iff the ports may be equal; a receiver's cut line iff the other two are not forced equal, its intact line iff the side tells the ports apart. Proved exhaustively over every port relation and deeper relation.
+  [proof P001](proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/proof.md), [epic closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · What plane glue does to creation is local** (`GLUE-READ-20261106-001-D002`).
+  On 191 spaces with exact creation maps, the touching rule holds wherever the removal's side leaves the cut free and fails only where glue constrains it; a glue line joining an atom's twin class is always a doubled-square line meeting two or more of its ports, and an atom splits only by the points of a line it emits into a planar brace. Planar lines see which port a removal entered by, while atom lines do not.
+  [proof P001](proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/proof.md), [epic closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Whether creation occurs cannot read every three-fold space** (`GLUE-READ-20261106-001-D003`).
+  A two-stage twin rule reads the atoms of every Fano tree with at most four cuts per atom (proved), of all 111 census spaces and of 57 of 80 random spaces with plane glue. In 15 random spaces, lines of two atoms meeting one planar brace are twins of the yes/no creation relation, so no rule reading only whether creation occurs returns the atoms there, though which far side creates separates every such pair.
+  [proof P001](proofs/GLUE-READ-20261106-001C/GLUE-READ-20261106-001C-P001_reading_the_atoms_through_glue/proof.md), [epic closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · Creation is decided at the gluing line, in two rounds** (`PENDANT-LINE-20261106-001-D001`).
+  For every near side and the four far sides of the creation map, the closure reaches exactly the crossing knots whose near and far parts meet through the gluing line: a near knot and a far knot on the same pair of line points (round one), or two round-one knots sharing a point (round two). Proved by reducing the closure to local configurations and checking all 348,376,032 of them.
+  [proof P001](proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/proof.md), [epic closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · One new line never adds creation, which completes the two-bit screening lemma** (`PENDANT-LINE-20261106-001-D002`).
+  Adding one point on one new not-all-equal line through two points of a near side never adds creation, whatever its signs, and with the no-loss half creation is unchanged. So an intact Fano side standing in for a line acts as that line for creation (proved from the two-round rule, all 347,149,320 local configurations checked).
+  [proof P001](proofs/PENDANT-LINE-20261106-001B/PENDANT-LINE-20261106-001B-P001_one_new_line_never_adds_creation/proof.md), [epic closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md)
+- **2026-11-06 · In Fano trees the dictionary up to distance two is one touching rule** (`PENDANT-LINE-20261106-001-D003`).
+  In spaces built from Fano atoms alone, a line creates at another exactly when it does in the chain of their atoms, and between atoms at most two apart exactly when the receiving line touches its atom's cut toward the removal. So native creation keeps each atom whole and reads every cut in its direction, and only a transfer along longer chains remains before the source rule is a theorem.
+  [proof P001](proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/proof.md), [epic closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs and gaskets
 
@@ -742,4 +778,8 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-04 | A native reading of genus (`NATIVE-GENUS-20261104-001`) | [closure](proofs/NATIVE-GENUS-20261104-001Z/NATIVE-GENUS-20261104-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GENUS-20261104-001/) |
 | 2026-11-04 | Relay networks (`RELAY-NET-20261104-001`) | [closure](proofs/RELAY-NET-20261104-001Z/RELAY-NET-20261104-001Z-P001_epic_closure/proof.md) | [folder](research/RELAY-NET-20261104-001/) |
 | 2026-11-05 | A native reading of the brace tree (`BRACE-TREE-20261105-001`) | [closure](proofs/BRACE-TREE-20261105-001Z/BRACE-TREE-20261105-001Z-P001_epic_closure/proof.md) | [folder](research/BRACE-TREE-20261105-001/) |
+| 2026-11-05 | The two-bit screening lemma (`TWO-BIT-SCREEN-20261105-001`) | [closure](proofs/TWO-BIT-SCREEN-20261105-001Z/TWO-BIT-SCREEN-20261105-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-SCREEN-20261105-001/) |
+| 2026-11-06 | The touching rule at every distance (`CHAIN-TRANSFER-20261106-001`) | [closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-TRANSFER-20261106-001/) |
+| 2026-11-06 | Reading through plane glue (`GLUE-READ-20261106-001`) | [closure](proofs/GLUE-READ-20261106-001Z/GLUE-READ-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/GLUE-READ-20261106-001/) |
+| 2026-11-06 | The pendant-line statement (`PENDANT-LINE-20261106-001`) | [closure](proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/PENDANT-LINE-20261106-001/) |
 

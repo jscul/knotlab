@@ -1,0 +1,397 @@
+{
+ "artifact_id": "TWO-BIT-SCREEN-20261105-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json": "passed",
+     "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/manifest.json": "Proved",
+     "proofs/TWO-BIT-SCREEN-20261105-001A/TWO-BIT-SCREEN-20261105-001A-P001_hidden_points_and_the_two_bit_screening_lemma/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 every gluing of two Fano atoms at one cut (7 base points x 7 atom lines x 6 port permutations) is a knot space for exactly two twists of the cut, and they differ by complementing the atom, so the chains below cover every gluing up to complementing points": {
+   "info": {
+    "twists giving knot spaces": {
+     "((0, 0, 0), (1, 1, 1))": 294
+    }
+   },
+   "pass": true
+  },
+  "2 two atoms at one cut, all 294 gluings: every place has one relation, the same as in BRACE-TREE's dictionary": {
+   "info": {
+    "ordered pairs": 45864,
+    "place: (relation here, relation in BRACE-TREE)": {
+     "atoms 1 apart, arrows <: cut line to emitter": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 1 apart, arrows <: intact to emitter": [
+      [
+       "forward"
+      ],
+      [
+       "forward"
+      ]
+     ],
+     "atoms 1 apart, arrows >: emitter to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 1 apart, arrows >: emitter to intact": [
+      [
+       "backward"
+      ],
+      [
+       "backward"
+      ]
+     ],
+     "same atom: cut line to cut line (same cut)": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: cut line to intact": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: intact to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: intact to intact": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 three atoms in a chain, all 576 gluings (four kinds of element pairs on the middle atom, two removed elements on each end atom, every pair of port permutations): every place has one relation, the same as in BRACE-TREE's dictionary": {
+   "info": {
+    "ordered pairs": 196992,
+    "place: (relation here, relation in BRACE-TREE)": {
+     "atoms 1 apart, arrows <: cut line to emitter": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 1 apart, arrows <: intact to emitter": [
+      [
+       "forward"
+      ],
+      [
+       "forward"
+      ]
+     ],
+     "atoms 1 apart, arrows >: emitter to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 1 apart, arrows >: emitter to intact": [
+      [
+       "backward"
+      ],
+      [
+       "backward"
+      ]
+     ],
+     "atoms 2 apart, arrows <<: cut line to emitter": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 2 apart, arrows <<: intact to emitter": [
+      [
+       "forward"
+      ],
+      [
+       "forward"
+      ]
+     ],
+     "atoms 2 apart, arrows <>: cut line to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 2 apart, arrows <>: cut line to intact": [
+      [
+       "backward"
+      ],
+      [
+       "backward"
+      ]
+     ],
+     "atoms 2 apart, arrows <>: intact to cut line": [
+      [
+       "forward"
+      ],
+      [
+       "forward"
+      ]
+     ],
+     "atoms 2 apart, arrows <>: intact to intact": [
+      [
+       "silent"
+      ],
+      [
+       "silent"
+      ]
+     ],
+     "atoms 2 apart, arrows ><: emitter to emitter": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 2 apart, arrows >>: emitter to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 2 apart, arrows >>: emitter to intact": [
+      [
+       "backward"
+      ],
+      [
+       "backward"
+      ]
+     ],
+     "same atom: cut line to cut line (different cuts)": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: cut line to cut line (same cut)": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: cut line to intact": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: intact to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "same atom: intact to intact": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ]
+    }
+   },
+   "pass": true
+  },
+  "4 four spaces built from Fano atoms alone (25 points): at every pair of lines in atoms at most two apart, the creation the chain shows is present (the contraction theorem), lines of one atom are mutual (the block lemma), and the relations equal the chain's in every pair (the non-creating entries too, as the lifting conjecture predicts)": {
+   "info": {
+    "creation the chain shows is present": 2148,
+    "pairs": 2148,
+    "relation equal to the chain's": 2148,
+    "same-atom pairs": 530,
+    "same-atom pairs mutual": 530
+   },
+   "pass": true
+  },
+  "5 four atoms in a path (computed, every direction of the three cuts, two port permutations): at distance three every place has one relation, and it agrees with BRACE-TREE's dictionary where the dictionary has that place": {
+   "info": {
+    "distance-three places: (relation here, relation in BRACE-TREE)": {
+     "atoms 3 apart, arrows <<<: cut line to emitter": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 3 apart, arrows <<<: intact to emitter": [
+      [
+       "forward"
+      ],
+      [
+       "forward"
+      ]
+     ],
+     "atoms 3 apart, arrows <<>: cut line to cut line": [
+      [
+       "mutual"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <<>: cut line to intact": [
+      [
+       "backward"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <<>: intact to cut line": [
+      [
+       "forward"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <<>: intact to intact": [
+      [
+       "silent"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <><: cut line to emitter": [
+      [
+       "mutual"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <><: intact to emitter": [
+      [
+       "forward"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <>>: cut line to cut line": [
+      [
+       "mutual"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <>>: cut line to intact": [
+      [
+       "backward"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <>>: intact to cut line": [
+      [
+       "forward"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows <>>: intact to intact": [
+      [
+       "silent"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows ><<: emitter to emitter": [
+      [
+       "mutual"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows ><>: emitter to cut line": [
+      [
+       "mutual"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows ><>: emitter to intact": [
+      [
+       "backward"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows >><: emitter to emitter": [
+      [
+       "mutual"
+      ],
+      null
+     ],
+     "atoms 3 apart, arrows >>>: emitter to cut line": [
+      [
+       "mutual"
+      ],
+      [
+       "mutual"
+      ]
+     ],
+     "atoms 3 apart, arrows >>>: emitter to intact": [
+      [
+       "backward"
+      ],
+      [
+       "backward"
+      ]
+     ]
+    },
+    "spaces": 16
+   },
+   "pass": true
+  },
+  "6 the touching rule: in every chain computed (distances one to three), a removal in one atom creates at a line of another atom exactly when that line touches its atom's cut toward the first atom (it lies on the receiving cut, or its atom emits there); the removed line's own role never matters; lines of one atom are mutual": {
+   "info": {
+    "four-atom paths: agree": 36,
+    "three atoms: agree": 18,
+    "two atoms: agree": 8
+   },
+   "pass": true
+  }
+ },
+ "claim": "What the screening lemmas give the brace dictionary, in Fano trees (spaces built from Fano atoms alone). (1) Contraction theorem: if one line creates at another in the chain of their atoms (the closures of the atoms on the tree path between them, glued at its cuts), it does so in the whole space; the converse holds when every atom off the path emits toward it. (2) Block lemma: every line of a Fano atom creates at every other line of it. (3) The touching rule: in every gluing of two atoms (294) and of three atoms in a chain (576), and on four-atom paths, a removal in one atom creates at a line of another exactly when that line touches its atom's cut toward the first (it lies on the receiving cut, or its atom emits there), whatever the removed line's role; this is BRACE-TREE's dictionary in one rule. So in every Fano tree a removal creates at every line of another atom at most two apart that touches the cut toward it. Non-creation at lines that do not touch holds in every chain and in four 25-point trees, and in general follows from ticket A's pendant-line statement; distance three is computed. The source rule stays computed, now resting on that statement and on a transfer along chains.",
+ "kind": "proof",
+ "proof": "TWO-BIT-SCREEN-20261105-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TWO-BIT-SCREEN-20261105-001B"
+}

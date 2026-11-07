@@ -1,0 +1,34 @@
+{
+  "schema_version": 3,
+  "id": "CHAIN-TRANSFER-20261106-001-D002",
+  "scope_id": "CHAIN-TRANSFER-20261106-001",
+  "title": "The source rule fails at six atoms",
+  "subject": "Whether BRACE-TREE's source rule counts the atoms of every Fano tree",
+  "conclusion": "BRACE-TREE's source rule keeps one block per atom on every Fano tree of at most five atoms, but fails at six: a receiver that takes two cuts from emitters feeding further receivers, and emits the line through those cuts' points, has no line blind to both loads, so its block has no source. Exact creation maps of six- and seven-atom counterexamples confirm the failure.",
+  "authority_class": "proof",
+  "significance": [
+    "exact_obstruction"
+  ],
+  "status": "active",
+  "superseded_by": null,
+  "curated_at": "2026-11-06",
+  "epic_closure": {
+    "ticket_id": "CHAIN-TRANSFER-20261106-001Z",
+    "artifact_id": "CHAIN-TRANSFER-20261106-001Z-P001",
+    "manifest_path": "proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/manifest.json",
+    "manifest_sha256": "a02fb08443b8a00be899808cd55529ff4805643b54250df22d4e5f30389b65a8",
+    "report_path": "proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md",
+    "dependency_graph_sha256": "acb6b8a39c97f70e71dbfab86a3c0005efced04176037aa3b7232c035b04bee5"
+  },
+  "evidence": [
+    {
+      "artifact_id": "CHAIN-TRANSFER-20261106-001B-P001",
+      "kind": "proof",
+      "ticket_id": "CHAIN-TRANSFER-20261106-001B",
+      "authority_path": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/manifest.json",
+      "authority_sha256": "fba9a9a5ccc620c35b3e6906ce8d26997fb350e4797a8a18794d9227f79f7a6e",
+      "explanation_path": "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/proof.md",
+      "explanation_sha256": "93a261748ea528da290bffb13941c3d512c427798776c4d8f0cde27b07a7e0b3"
+    }
+  ]
+}

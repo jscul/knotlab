@@ -1,0 +1,264 @@
+{
+ "artifact_id": "TWO-BIT-SCREEN-20261105-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001A/BRACE-TREE-20261105-001A-P001_creation_inside_an_atom_and_across_a_cut/result.json": "passed",
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json": "passed",
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/result.json": "passed",
+     "proofs/BRACE-TREE-20261105-001Z/BRACE-TREE-20261105-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001Z/BRACE-TREE-20261105-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/manifest.json": "Proved",
+     "proofs/HANDLE-EMERGENCE-20261102-001B/HANDLE-EMERGENCE-20261102-001B-P001_how_a_handle_creates/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001A/HANDLE-LOCALITY-20261103-001A-P001_access_is_local/result.json": "passed",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/manifest.json": "Proved",
+     "proofs/HANDLE-LOCALITY-20261103-001B/HANDLE-LOCALITY-20261103-001B-P001_where_creation_happens/result.json": "passed",
+     "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/manifest.json": "Proved",
+     "proofs/NATIVE-GENUS-20261104-001A/NATIVE-GENUS-20261104-001A-P001_the_creation_map_splits_by_atom/result.json": "passed",
+     "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/manifest.json": "Proved",
+     "proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the closure behind creation is the tetrahedron rule: on every census near side, removal, gluing line and far side, the elimination closure equals the least set of class triples, containing the non-crossing knots, in which every four classes with two triples in the set have all their knot triples in it": {
+   "info": {
+    "classes in the closure": 25021,
+    "equal": 512,
+    "splices": 512
+   },
+   "pass": true
+  },
+  "2 the Fano side (exhaustive, all seven split points): it shows the six non-constant port patterns; each hidden point is forced exactly on the two patterns whose odd port lies on its cut line, to their majority, and is free on the other four; each value pair of two hidden points excludes a subcube of the patterns, or (only for the two points of one cut line) that line's antipodal class, or nothing": {
+   "info": {
+    "pair exclusion types (value pairs)": {
+     "antipodal class, points on one cut line": 42,
+     "subcube of 2, other pairs": 168,
+     "subcube of 3, other pairs": 168,
+     "subcube of 3, points on one cut line": 42
+    }
+   },
+   "pass": true
+  },
+  "3 the no-loss theorem for Fano sides, checked on every census near side at every line and port permutation and on larger near sides: the new knots off the side are those of the closed space; every generated crossing knot through a hidden class has all its port shadows generated; no crossing class meets two hidden classes": {
+   "info": {
+    "... generated": 189540,
+    "... new": 10882,
+    "... with at least one port shadow": 200422,
+    "...... with every shadow generated": 189540,
+    "...... with every shadow new": 10882,
+    "cases": 28288,
+    "closed space creates": 12299,
+    "creation equal": 28288,
+    "crossing knots through one hidden class": 200422,
+    "new knots off the side equal": 28288
+   },
+   "pass": true
+  },
+  "3b the lifting half for Fano sides (computed, not proved): creation is unchanged in every case, and every new crossing knot through a hidden class has all its port shadows new": {
+   "info": {
+    "cases": 28288,
+    "creation equal": 28288,
+    "new through a hidden class": 10882,
+    "with every shadow new": 10882
+   },
+   "pass": true
+  },
+  "3c other receiving sides (census 58, 14 and 38 split at a point; computed): the new knots off the side and creation are unchanged": {
+   "info": {
+    "... generated": 49036,
+    "... new": 8056,
+    "... with at least one port shadow": 57092,
+    "...... with every shadow generated": 49036,
+    "...... with every shadow new": 8056,
+    "cases": 3360,
+    "closed space creates": 1710,
+    "creation equal": 3360,
+    "crossing classes through two hidden classes": 10591,
+    "crossing knots through one hidden class": 57092,
+    "new knots off the side equal": 3360
+   },
+   "pass": true
+  },
+  "4 pendant lines (one new point on one new line through two near points, any signs): the new knots off the point never change (proved, the same closure argument), and creation never changes (computed)": {
+   "info": {
+    "census near sides (every pendant line)": {
+     "cases": 39744,
+     "closed side creates": 19656,
+     "creation equal": 39744,
+     "new knots off the point equal": 39744,
+     "new knots through the point": 4232
+    },
+    "larger near sides (sampled)": {
+     "cases": 13200,
+     "closed side creates": 3186,
+     "creation equal": 13200,
+     "new knots off the point equal": 13200,
+     "new knots through the point": 400
+    },
+    "random near sides": {
+     "cases": 64400,
+     "closed side creates": 16402,
+     "creation equal": 64400,
+     "new knots off the point equal": 64400,
+     "new knots through the point": 741
+    }
+   },
+   "pass": true
+  },
+  "5 one hidden point on a line's three points, all 27 profiles (free, majority or minority on each antipodal class), on four bases at two lines: creation changes exactly for the 8 profiles whose exclusion sets are not subcubes (a majority or minority of the ports, or a copy of one port that is free on that port's own class); the new knots off the point never change": {
+   "info": {
+    "creation changes (cases), by profile": {
+     "free/free/free": 0,
+     "free/free/majority": 0,
+     "free/free/minority": 0,
+     "free/majority/free": 0,
+     "free/majority/majority": 43,
+     "free/majority/minority": 0,
+     "free/minority/free": 0,
+     "free/minority/majority": 0,
+     "free/minority/minority": 43,
+     "majority/free/free": 0,
+     "majority/free/majority": 47,
+     "majority/free/minority": 0,
+     "majority/majority/free": 37,
+     "majority/majority/majority": 127,
+     "majority/majority/minority": 0,
+     "majority/minority/free": 0,
+     "majority/minority/majority": 0,
+     "majority/minority/minority": 0,
+     "minority/free/free": 0,
+     "minority/free/majority": 0,
+     "minority/free/minority": 47,
+     "minority/majority/free": 0,
+     "minority/majority/majority": 0,
+     "minority/majority/minority": 0,
+     "minority/minority/free": 37,
+     "minority/minority/majority": 0,
+     "minority/minority/minority": 127
+    },
+    "profiles with subcube exclusions": 19
+   },
+   "pass": true
+  },
+  "5b two hidden points whose single points have subcube exclusions, up to symmetry, on census 58 and census 38: some still change creation, but none whose value pairs exclude only subcubes or antipodal classes (the Fano side's kinds); the new knots off the points never change": {
+   "info": {
+    "by pair condition": {
+     "pairs exclude only subcubes or antipodal classes: keeps creation": 196,
+     "some pair excludes other sets: changes creation": 215,
+     "some pair excludes other sets: keeps creation": 369
+    },
+    "gadgets (base, changes creation)": {
+     "census 38, changes": 126,
+     "census 38, keeps": 264,
+     "census 58, changes": 89,
+     "census 58, keeps": 301
+    }
+   },
+   "pass": true
+  },
+  "6 lifting is not local: every generated crossing knot through a hidden Fano point is derived inside the knot, the ports and the gluing line; but some new ones are not derived there even when every other knot there is seeded": {
+   "info": {
+    "generated, derived inside the knot, the ports and the gluing line": 11384,
+    "new, derived inside the knot, the ports and the gluing line": 128,
+    "new, not derived there": 320
+   },
+   "pass": true
+  },
+  "6b lifting is not a consequence of the knots alone: with every knot off a pendant point, and every knot through it without a far point, seeded, the closure still misses some crossing knots through the point; every such miss occurs where the side without the point creates": {
+   "info": {
+    "census near sides: ... where the side without the point creates": 40,
+    "census near sides: crossing knots through the point": 14208,
+    "census near sides: missed even with every other knot seeded": 40,
+    "random near sides: ... where the side without the point creates": 2,
+    "random near sides: crossing knots through the point": 17506,
+    "random near sides: missed even with every other knot seeded": 2
+   },
+   "pass": true
+  },
+  "6c the twin statement is false: when one assignment to two classes forces two others, the two knots it makes need not share their status (so lifting must use more than the shadows' membership)": {
+   "info": {
+    "... with different statuses": 434,
+    "twin pairs": 67702
+   },
+   "pass": true
+  },
+  "7 the gluing line suffices (computed): eliminating only through classes of the gluing line's points generates every crossing class the full closure generates": {
+   "info": {
+    "crossing classes": 11447,
+    "generated": 9225,
+    "generated through the gluing line alone": 9225
+   },
+   "pass": true
+  },
+  "8 every knot space tried, split at any point (the census, prisms, and every three-fold space up to 22 points), shows the six patterns and gives every hidden point subcube exclusion sets: none encodes a majority or a parity of its ports": {
+   "info": {
+    "census 1": {
+     "subcube of 2": 24
+    },
+    "census 14": {
+     "empty": 12,
+     "subcube of 1": 6,
+     "subcube of 2": 66
+    },
+    "census 21": {
+     "subcube of 1": 84
+    },
+    "census 38": {
+     "subcube of 1": 32,
+     "subcube of 2": 80
+    },
+    "census 45": {
+     "empty": 16,
+     "subcube of 1": 24,
+     "subcube of 2": 72
+    },
+    "census 56": {
+     "empty": 16,
+     "subcube of 2": 84,
+     "subcube of 3": 12
+    },
+    "census 58": {
+     "empty": 28,
+     "subcube of 1": 48,
+     "subcube of 2": 36
+    },
+    "census 6": {
+     "subcube of 1": 12,
+     "subcube of 2": 48
+    },
+    "prism over a 10-cycle": {
+     "subcube of 1": 60,
+     "subcube of 2": 120
+    },
+    "prism over a 6-cycle": {
+     "subcube of 1": 12,
+     "subcube of 2": 48
+    },
+    "prism over a 8-cycle": {
+     "subcube of 1": 32,
+     "subcube of 2": 80
+    },
+    "three-fold spaces up to 22 points": {
+     "empty": 10854,
+     "subcube of 1": 11544,
+     "subcube of 2": 204,
+     "subcube of 3": 702
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The two-bit screening lemma: its no-loss half proved, the rest reduced to one statement. (1) The elimination closure behind creation is a tetrahedron rule: the least set of class triples containing the non-crossing knots in which every four classes with two triples in the set have all their knot triples in it. (2) No-loss theorem: let an intact side split from the Fano plane at a point be attached at a line L0. At every removal and gluing line off the side, and for every far side, the new knots of up to three points that avoid the side are exactly those of the space with L0 restored, a generated knot through a hidden point has generated port shadows, and no crossing knot meets two hidden classes; so the side never removes creation. The same holds for one new point on one new line through two near points (a pendant line). (3) That the side never adds creation follows from the pendant-line statement that a pendant line never adds creation, which holds on 117,344 cases (and the side's lemma itself on 28,288) but is neither local nor a consequence of the knots alone; it is stated as a conjecture. (4) The bound is sharp: a point on two or three new lines through a line's points (8 of the 27 one-point profiles, majorities and parity copies of the ports) can add creation, and no knot-space side tried (the census, prisms, every three-fold space up to 22 points) has such a point.",
+ "kind": "proof",
+ "proof": "TWO-BIT-SCREEN-20261105-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TWO-BIT-SCREEN-20261105-001A"
+}

@@ -9,11 +9,12 @@ paths and spaces, without assuming a space to start from.
 The repository has two layers:
 
 - **The introduction.** [INTUITIONS.md](INTUITIONS.md) states the program's
-  intuitions plainly. [FINDINGS.md](FINDINGS.md) lists eleven findings we
-  packaged for outside readers, each with Lean proofs, a note or exhaustive
-  checks that run here.
+  intuitions plainly. [THEORY.md](THEORY.md) states the thesis and the main
+  claims, each labelled by how it is supported and linked to its evidence.
+  [FINDINGS.md](FINDINGS.md) lists eleven findings we packaged for outside
+  readers, each with Lean proofs, a note or exhaustive checks that run here.
 - **The full record.** [RESULTS.md](RESULTS.md) lists, with dates, every result
-  recorded since the knot test K1–K3 became canonical on 19 October 2026: 166
+  recorded since the knot test K1–K3 became canonical on 19 October 2026: 178
   current results and 5 superseded ones. They are stated in the program's own
   language and linked to their proofs, experiments and working notes, which
   are published as recorded. The documents that define the working
@@ -31,6 +32,7 @@ The repository has two layers:
   network as wide as the network's layout.
 
 Read [INTUITIONS.md](INTUITIONS.md) for the picture,
+[THEORY.md](THEORY.md) for the thesis and its main claims,
 [FINDINGS.md](FINDINGS.md) for the packaged findings, and
 [RESULTS.md](RESULTS.md) for everything, by line of work and date.
 
@@ -41,6 +43,7 @@ Read [INTUITIONS.md](INTUITIONS.md) for the picture,
 PYTHONPATH=tools python3 -m knotlab demo
 PYTHONPATH=tools python3 -m knotlab check --cnf "~A ~B c" --loops A B --contact c
 python3 -m unittest tests.test_knotlab          # 80 tests, a few seconds
+python3 -m unittest tests.test_theory           # THEORY.md: labels, evidence and links
 
 # the Lean proofs: core Lean 4, toolchain pinned in lean/lean-toolchain
 cd lean && python3 check.py && cd ..
@@ -64,9 +67,10 @@ hours.
 | Path | What it is |
 | --- | --- |
 | [INTUITIONS.md](INTUITIONS.md) | The intuitions, each labelled as proved, checked, classical or reading |
+| [THEORY.md](THEORY.md) | The thesis and the main claims, each labelled premise, proved, checked, conjecture, reading or open, with links to the evidence |
 | [FINDINGS.md](FINDINGS.md) | The findings, their kind (new result, new proof, new reading) and their status |
 | [tools/knotlab](tools/knotlab/) | Tools that test the knot definition on any finite system of constraints |
-| [tests](tests/) | Exhaustive checks of the finite facts the intuitions rely on |
+| [tests](tests/) | Exhaustive checks of the finite facts the intuitions rely on, and a check of THEORY.md's labels and links |
 | [lean](lean/) | Five kernel-checked proofs: the knot test, competing pairs, the ring theorem, loop nerves |
 | [notes](notes/) | Three self-contained notes with PDFs, sources and check scripts |
 | [RESULTS.md](RESULTS.md) | Every result since 19 October 2026, dated, grouped by line of work, with links |

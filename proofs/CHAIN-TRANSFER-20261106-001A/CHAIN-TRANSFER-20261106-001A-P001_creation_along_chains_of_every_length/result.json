@@ -1,0 +1,130 @@
+{
+ "artifact_id": "CHAIN-TRANSFER-20261106-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "passed",
+     "proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001C/PENDANT-LINE-20261106-001C-P001_what_one_line_completes/result.json": "passed",
+     "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001Z/PENDANT-LINE-20261106-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/manifest.json": "Proved",
+     "proofs/TWO-BIT-SCREEN-20261105-001B/TWO-BIT-SCREEN-20261105-001B-P001_what_screening_gives_the_brace_dictionary/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the reduction at the gluing line: on every two-atom chain (294 gluings), at every removal and every gluing line, creation computed from the near side's relations on the line and up to two further points (PENDANT-LINE A's two-round rule) equals the creation map far side by far side": {
+   "info": {
+    "equal, far side by far side": 45864,
+    "pairs": 45864
+   },
+   "pass": true
+  },
+  "2 the automaton on built chains: random chains of two, three and four atoms built by the creation map's own splices; at every line of the last atom the automaton's verdict equals the creation map far side by far side; at every cut the prefix (the atoms before it, minus the removal) shows every pattern on the points it shares with the rest, so its ports are free; the tree distance is the chain's": {
+   "info": {
+    "... of them sharing two points (the third port lies only on the removed line)": 74,
+    "chains of 2 atoms": 80,
+    "chains of 3 atoms": 80,
+    "chains of 4 atoms": 80,
+    "cuts": 480,
+    "cuts where the prefix shows every pattern on the points it shares with the rest": 480,
+    "equal, far side by far side": 1557,
+    "lines of the last atom": 1557,
+    "solutions equal to SAT model enumeration": 240,
+    "touching rule holds": 1557,
+    "tree distance equals the chain's": 240
+   },
+   "pass": true
+  },
+  "3 the whole relation on random Fano trees (12 of three atoms, 8 of four, any shape): the exact creation map equals the block lemma with the touching rule at every pair of lines": {
+   "info": {
+    "equal to the theorem": 8904,
+    "lines showing fewer than six patterns": 0,
+    "pairs in different atoms": 6610,
+    "pairs in one atom": 2294
+   },
+   "pass": true
+  },
+  "4 the reachable profiles: starting from every removal and first element, closing under every splice (every element, every lost element of the new atom, every port permutation) reaches a fixed point; every profile leaves the three ports free (all eight patterns)": {
+   "info": {
+    "by kind of the next splice": {
+     "line": 25,
+     "point": 22
+    },
+    "initial profiles": 3,
+    "new profiles at each further atom": [
+     13,
+     24,
+     7,
+     0
+    ],
+    "pairs per profile": {
+     "3": 1,
+     "5": 1,
+     "6": 3,
+     "7": 3,
+     "8": 2,
+     "9": 4,
+     "10": 3,
+     "11": 5,
+     "12": 2,
+     "13": 3,
+     "14": 1,
+     "15": 3,
+     "16": 1,
+     "17": 1,
+     "18": 2,
+     "19": 3,
+     "20": 3,
+     "21": 3,
+     "22": 1,
+     "23": 2
+    },
+    "port relations": {
+     "8": 47
+    },
+    "profiles": 47,
+    "singles per profile": {
+     "1": 14,
+     "2": 8,
+     "3": 18,
+     "4": 7
+    }
+   },
+   "pass": true
+  },
+  "5 the touching rule at every distance: on every reachable profile, for every last atom (lost element and port permutation) and every line of it, creation by the two-round rule holds exactly when the line touches the last cut; the last atom alone, with free ports and no point behind the cut, gives the same verdict": {
+   "info": {
+    "by role and far side": {
+     "cut line; far sides creating: K4^(3), census 6, the Fano plane, census 58": 3150,
+     "emitter's line; far sides creating: census 6, the Fano plane, census 58": 1848,
+     "emitter's line; far sides creating: the Fano plane, census 58": 3696,
+     "intact line; far sides creating: none": 4200
+    },
+    "last atom alone": 12894,
+    "last letters": 12894,
+    "touching rule holds": 12894
+   },
+   "pass": true
+  },
+  "6 controls: the check is not vacuous; each simpler rule disagrees with the verdicts somewhere": {
+   "info": {
+    "last letters": 12894,
+    "mutation: every line receives, agrees": 8694,
+    "mutation: only cut lines receive, agrees": 7350,
+    "mutation: only emitters' lines receive, agrees": 9744
+   },
+   "pass": true
+  }
+ },
+ "claim": "The touching rule at every distance. In every Fano tree (a space built from Fano atoms alone by the creation map's splices), for the creation map (knots of up to three points, the four census far sides), a line a creates at a line b of another atom exactly when b touches its atom's cut toward a's atom: its atom emits at that cut, or b passes through the point its atom lost there. With the block lemma, the creation relation of every Fano tree is fixed by its tree. Proved: by PENDANT-LINE C the relation is that of the chain of their atoms; by PENDANT-LINE A creation at b is decided by the near side's relations on b's points and up to two further points; along a chain these are carried by the prefix's profile at each cut (its relations on the cut's three ports and up to two further points), a function of the previous profile and the next splice; closing under every splice reaches exactly 47 profiles, none new after three atoms; and on each of them, for every last atom and line, the two-round rule creates exactly when the line touches the last cut (12,894 of 12,894). Every profile leaves the three ports free, and the last atom alone decides creation.",
+ "kind": "proof",
+ "proof": "CHAIN-TRANSFER-20261106-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "CHAIN-TRANSFER-20261106-001A"
+}

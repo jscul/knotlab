@@ -1,0 +1,181 @@
+{
+ "artifact_id": "CHAIN-TRANSFER-20261106-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001B/BRACE-TREE-20261105-001B-P001_the_brace_dictionary/result.json": "passed",
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 every Fano tree of at most five atoms (every splice sequence, up to choices that leave creation unchanged): the source rule keeps exactly one block per atom, for the first maximum quiet part and for every one; the relation read from the build equals the one read from the tight-cut decomposition on every 25th tree": {
+   "info": {
+    "... bookkeeping relation equal and braces = atoms": 4036,
+    "every creative part one piece": 100830,
+    "every quiet part: kept blocks = atoms": 100830,
+    "first quiet part: kept blocks = atoms": 100830,
+    "trees of 2 atoms": 2,
+    "trees of 3 atoms": 52,
+    "trees of 4 atoms": 1976,
+    "trees of 5 atoms": 98800,
+    "validated against the tight-cut decomposition": 4036
+   },
+   "pass": true
+  },
+  "2 counterexamples: the source rule keeps one block too few on the six-atom tree and on the seven-atom tree with non-collinear points, for every maximum quiet part; removing the emitted line, a load, or making the points collinear restores it": {
+   "info": {
+    "seven atoms: three loaded cuts at collinear points": {
+     "atoms": 7,
+     "kept (first quiet part)": 7,
+     "kept over every quiet part": {
+      "7": 160
+     },
+     "quiet parts": 160
+    },
+    "seven atoms: three loaded cuts at non-collinear points": {
+     "atoms": 7,
+     "kept (first quiet part)": 6,
+     "kept over every quiet part": {
+      "6": 64
+     },
+     "quiet parts": 64
+    },
+    "six atoms: a receiver with two loaded cuts, emitting the line through their points": {
+     "atoms": 6,
+     "kept (first quiet part)": 5,
+     "kept over every quiet part": {
+      "5": 96
+     },
+     "quiet parts": 96
+    },
+    "the same with one load (five atoms)": {
+     "atoms": 5,
+     "kept (first quiet part)": 5,
+     "kept over every quiet part": {
+      "5": 32
+     },
+     "quiet parts": 32
+    },
+    "the same without that line (five atoms)": {
+     "atoms": 5,
+     "kept (first quiet part)": 5,
+     "kept over every quiet part": {
+      "5": 32
+     },
+     "quiet parts": 32
+    }
+   },
+   "pass": true
+  },
+  "3 exact confirmation: the creation maps of the two counterexamples, computed from every solution by the two-round rule on the real near sides (no contraction, no automaton), equal the theorem's relation at every pair, and the source rule on them miscounts": {
+   "info": {
+    "seven atoms, non-collinear": {
+     "equal to the theorem": 1806,
+     "over every quiet part": {
+      "6": 64
+     },
+     "pairs": 1806,
+     "points": 43,
+     "solutions per removal": [
+      156250
+     ],
+     "source rule on the exact map (first quiet part)": 6
+    },
+    "six atoms": {
+     "equal to the theorem": 1332,
+     "over every quiet part": {
+      "5": 96
+     },
+     "pairs": 1332,
+     "points": 37,
+     "solutions per removal": [
+      31250
+     ],
+     "source rule on the exact map (first quiet part)": 5
+    }
+   },
+   "pass": true
+  },
+  "4 random trees of six to twelve atoms: the source rule miscounts on some trees with branching atoms, never on paths": {
+   "info": {
+    "10 atoms, paths": {
+     "first quiet part miscounts": 0,
+     "some quiet part miscounts": 0,
+     "trees": 200
+    },
+    "10 atoms, random trees": {
+     "first quiet part miscounts": 9,
+     "some quiet part miscounts": 9,
+     "trees": 200
+    },
+    "12 atoms, paths": {
+     "first quiet part miscounts": 0,
+     "some quiet part miscounts": 0,
+     "trees": 200
+    },
+    "12 atoms, random trees": {
+     "first quiet part miscounts": 19,
+     "some quiet part miscounts": 19,
+     "trees": 200
+    },
+    "6 atoms, paths": {
+     "first quiet part miscounts": 0,
+     "some quiet part miscounts": 0,
+     "trees": 200
+    },
+    "6 atoms, random trees": {
+     "first quiet part miscounts": 0,
+     "some quiet part miscounts": 0,
+     "trees": 200
+    },
+    "7 atoms, paths": {
+     "first quiet part miscounts": 0,
+     "some quiet part miscounts": 0,
+     "trees": 200
+    },
+    "7 atoms, random trees": {
+     "first quiet part miscounts": 2,
+     "some quiet part miscounts": 2,
+     "trees": 200
+    },
+    "8 atoms, paths": {
+     "first quiet part miscounts": 0,
+     "some quiet part miscounts": 0,
+     "trees": 200
+    },
+    "8 atoms, random trees": {
+     "first quiet part miscounts": 7,
+     "some quiet part miscounts": 7,
+     "trees": 200
+    }
+   },
+   "pass": true
+  },
+  "5 the mechanism on the six-atom tree: a line of the receiver is blind to a load's intact lines exactly when it passes through the point that load's cut took; the only line through both points is the one the receiver emits, so no line of the receiver is blind to all the others are blind to, and its block has no source": {
+   "info": {
+    "receiver's lines: loads blind to, line": {
+     "('A4',) (0, 6, 2)": 1,
+     "('A4',) (4, 0, 5)": 1,
+     "('A5',) (1, 2, 5)": 1,
+     "('A5',) (4, 6, 1)": 1,
+     "() (3, 2, 4)": 1,
+     "() (6, 3, 5)": 1
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "The source rule on larger trees. With creation on Fano trees fixed by ticket A, BRACE-TREE B's source rule (within each piece of the creative part, keep a maximal block of mutual creation when one of its lines is blind to every line any other is blind to) keeps exactly one block per atom on every Fano tree of at most five atoms (every splice sequence up to choices that leave creation unchanged: 2 + 52 + 1,976 + 98,800 trees, for the first maximum quiet part and for every one), and fails at six atoms: when a receiver takes cuts from two emitters that each feed a further receiver, and emits the line through the two points those cuts took, no line of the receiver is blind to both loads, its block has no source, and the rule keeps 5 blocks for 6 atoms, for every maximum quiet part. The exact creation map of that tree (every solution, the two-round rule on the real near sides) equals ticket A's relation at all 1,332 pairs and gives the same count. Three loaded cuts at non-collinear points fail the same way at seven atoms; collinear points, a kept connecting line or a missing load restore the rule; random trees with branching atoms fail increasingly often, paths never. So the source rule is refuted as a theorem; BRACE-TREE's evidence (at most four atoms) stands.",
+ "kind": "proof",
+ "proof": "CHAIN-TRANSFER-20261106-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "CHAIN-TRANSFER-20261106-001B"
+}

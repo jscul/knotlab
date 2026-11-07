@@ -1,0 +1,157 @@
+{
+ "artifact_id": "CHAIN-TRANSFER-20261106-001C-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/manifest.json": "Proved",
+     "proofs/BRACE-TREE-20261105-001C/BRACE-TREE-20261105-001C-P001_reading_the_tree_back_on_fresh_spaces/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "passed",
+     "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 every Fano tree of at most five atoms: condition N holds, and the rule recovers the atoms (as twin classes) and every cut with its direction (from the receivers' footprints)": {
+   "info": {
+    "at most four cuts at every atom": 100830,
+    "atoms recovered": 100830,
+    "condition N": 100830,
+    "directed tree recovered": 100830,
+    "footprints uniform": 100830,
+    "trees": 100830
+   },
+   "pass": true
+  },
+  "2 random trees of six to thirty atoms (random lost elements and permutations; some with many atoms hanging from two): wherever condition N holds the rule recovers the directed tree": {
+   "info": {
+    "12 atoms, loaded atoms": {
+     "N, tree recovered": 164,
+     "condition N": 164,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "12 atoms, random": {
+     "N, tree recovered": 200,
+     "condition N": 200,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "20 atoms, loaded atoms": {
+     "N, tree recovered": 2,
+     "condition N": 2,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "20 atoms, random": {
+     "N, tree recovered": 199,
+     "condition N": 199,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "30 atoms, loaded atoms": {
+     "N, tree recovered": 0,
+     "condition N": 0,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "30 atoms, random": {
+     "N, tree recovered": 185,
+     "condition N": 185,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "6 atoms, loaded atoms": {
+     "N, tree recovered": 200,
+     "condition N": 200,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "6 atoms, random": {
+     "N, tree recovered": 200,
+     "condition N": 200,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "8 atoms, loaded atoms": {
+     "N, tree recovered": 200,
+     "condition N": 200,
+     "not N, tree recovered": 0,
+     "trees": 200
+    },
+    "8 atoms, random": {
+     "N, tree recovered": 200,
+     "condition N": 200,
+     "not N, tree recovered": 0,
+     "trees": 200
+    }
+   },
+   "pass": true
+  },
+  "3 on the exact creation map of ticket B's six-atom counterexample (where the source rule fails) the rule recovers the atoms and the directed tree": {
+   "info": {
+    "atoms recovered": true,
+    "directed tree recovered": true,
+    "points": 37
+   },
+   "pass": true
+  },
+  "4 where condition N fails the rule loses the tree: an atom with no lines is invisible, and a receiving cut whose footprint is all of its atom's lines, or equals another's, is not read": {
+   "info": {
+    "a lost point whose four lines off it are all lost": {
+     "atoms": 6,
+     "atoms recovered": false,
+     "condition N": false,
+     "directed tree recovered": false
+    },
+    "an atom with every line lost (seven receivers on the base's lines)": {
+     "atoms": 8,
+     "atoms recovered": true,
+     "condition N": false,
+     "directed tree recovered": false
+    },
+    "two lost points with the same surviving lines": {
+     "atoms": 7,
+     "atoms recovered": false,
+     "condition N": false,
+     "directed tree recovered": false
+    }
+   },
+   "pass": true
+  },
+  "5 computed, on BRACE-TREE C's 111 fresh spaces (exact creation maps): in every Fano tree each atom is exactly one twin class; through plane glue the rule does not extend as stated, since a glue line can join an atom's class and an atom can split; no twin class ever mixes two atoms": {
+   "info": {
+    "Fano tree": {
+     "atoms": 67,
+     "atoms in no class of two or more lines": 0,
+     "exact atom": 67,
+     "spaces": 17
+    },
+    "with a non-planar non-Heawood brace": {
+     "atoms": 2,
+     "atoms in no class of two or more lines": 0,
+     "exact atom": 2,
+     "spaces": 1
+    },
+    "with plane glue": {
+     "atom plus 1 glue line": 155,
+     "atoms": 333,
+     "atoms in no class of two or more lines": 0,
+     "exact atom": 168,
+     "part of an atom (2 of its lines)": 30,
+     "spaces": 93
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "Reading the tree from creation. In every Fano tree satisfying condition N (every atom keeps a line, and its surviving lines through the points it lost at receiving cuts form distinct proper subsets of its lines; true whenever every atom has at most four cuts), the atoms are exactly the twin classes of creation (two lines that create at each other and at the same other lines); for each atom X, the other atoms whose lines create at the same proper subset of X's lines are exactly those beyond one cut where X receives, so every cut is read once, from its receiver, with its far side; and these splits give the tree, each cut running from the far side's atom next to the receiver into the receiver. So native creation recovers the directed handle tree of every such Fano tree. Proved by hand from ticket A and the block lemma; checked on every Fano tree of at most five atoms, on random trees of up to thirty atoms wherever N holds, and on the exact creation map of ticket B's six-atom counterexample to the source rule; where N fails the rule loses the tree. Computed on BRACE-TREE C's 111 fresh spaces with exact creation maps: in every Fano tree each atom is exactly one twin class; through plane glue the rule does not extend as stated, since a glue line can join an atom's class (155 atoms) and an atom can split into three twin pairs (10 atoms), though no twin class ever mixes two atoms.",
+ "kind": "proof",
+ "proof": "CHAIN-TRANSFER-20261106-001C-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "CHAIN-TRANSFER-20261106-001C"
+}

@@ -2888,6 +2888,8 @@ So network holes come in two kinds:
      - **The count.** The rule equals the number of Fano atoms, and the genus, on all 157 spaces without a non-Fano brace. 110 of them are
        fresh: every three-fold class of 23 to 26 points.
      - **The plain block count** fails 32 of them, wherever atoms hang from a common atom.
+     - **Later (CHAIN-TRANSFER-20261106-001).** On Fano trees the rule holds up to five atoms and fails at six; twins and footprints
+       replace it there.
    - **Refuted along the way.**
      - **Determinism through plane glue.**
      - **Silent glue across an atom.** In one class, a Fano atom relays creation from a plane piece to a doubled square.
@@ -2899,10 +2901,143 @@ So network holes come in two kinds:
        not a direction in space.
    - **Provenance.** Tight cuts (Lovász) and genus = Fano atoms (THREEFOLD-SURFACES) are known. New here: the dictionary, native cut
      directions, the source rule and its fresh test.
-   - **Next (recommended, awaiting the owner).** A two-bit screening lemma (2/3).
+   - **Next (taken).** A two-bit screening lemma (2/3).
      - **The plan.** Prove that a side attached at a line acts as that line for creation, not just for solutions. That would complete
        the splitting lemma and should give the block lemma for atoms at a point and the one-way rule.
      - **The alternatives.** What native creation sees of non-Fano handles (2/3); the source rule beyond 26 points (1/3).
+
+   **2026-11-05: the two-bit screening lemma** (`TWO-BIT-SCREEN-20261105-001`).
+   - **The closure is a bootstrap.** New knots are crossing triples that the rule "four classes with two derived knot triples derive
+     all their knot triples" cannot reach from the non-crossing ones (proved equal to the elimination closure).
+   - **No loss (proved).** An intact Fano side attached at a line never removes creation.
+     - **Off the side.** Its new knots off the side are exactly those of the space with the line restored.
+     - **Through the side.** A generated knot through a hidden point has generated port shadows, and no crossing knot meets two hidden
+       classes.
+     - **Pendant lines.** The same holds for one new point on one new line through two near points.
+   - **One statement left.** That the side never adds creation follows from the pendant-line statement: one new point on one new line
+     never adds creation.
+     - **Evidence.** It held on 117,344 cases, random systems included.
+     - **Not proved, and not easy.** It is not local, and it is not a consequence of the knots alone.
+   - **One line is the limit.**
+     - **Two or three lines create.** A point on two or three new lines through a line's points, such as the ports' majority, creates
+       where the space without it does not.
+     - **Subcube points never did.** No point whose exclusions are subcubes changed creation.
+     - **Knot-space sides.** Every knot-space side tried, including every three-fold space up to 22 points, has only subcube points.
+   - **In Fano trees (spaces built from Fano atoms alone).**
+     - **Contraction (proved).** Creation in the chain of atoms between two lines implies creation in the whole space.
+     - **Blocks (proved).** So every atom is a block of mutual creation.
+     - **The touching rule.** The brace dictionary between atoms collapses to one rule: a removal creates at a line of another atom
+       exactly when that line touches its atom's cut toward the removal. The removed line's role never matters.
+       - **Checked.** On every chain of two (294) and three (576) atoms, and on four-atom paths.
+       - **Proved half.** Its creating half holds in every Fano tree at distances one and two.
+     - **Still computed.** Non-creation at lines that do not touch, and atoms three or more apart.
+   - **Reading.**
+     - **Two bits made precise.** A side is screened when everything it hides is one-line information: each hidden Fano point, seen
+       alone, hangs on one line through two ports.
+     - **The tree, read locally.** A line is seen from a direction exactly when it touches the cut facing that direction. An emitting
+       atom presents all its lines to the cut, and a receiving atom only its three cut lines. That is how creation reads a cut's
+       direction.
+     - **Doctrine.** Hidden points are witnesses quantified away. Quantifying a Fano side's witnesses away loses no emergence; whether
+       it adds none is the open statement.
+   - **Provenance.** Bootstrap closures and principal matroid extensions are classical analogues, neither found stating these results.
+     New here: the tetrahedron form, the no-loss theorem, the pendant reduction and its sharpness, the contraction theorem, and the
+     proofs of the block lemma and nearby creations.
+   - **Next (taken).** Prove the pendant-line statement (2/3), starting from the computed fact that
+     eliminating through the gluing line's points suffices.
+     - **The alternative.** The bridge to proof complexity (2/3), still the leading alternative for the next arc.
+
+   **2026-11-06: the pendant-line statement** (`PENDANT-LINE-20261106-001`).
+   - **Creation is decided at the gluing line, in two rounds (proved).** The closure reaches exactly the crossing knots whose near and
+     far parts meet through the gluing line.
+     - **Round one.** A near knot and a far knot sit on the same pair of the line's points.
+     - **Round two.** Two round-one knots share a point.
+     - **New knots** are the crossing constraints the parts carry together that pass through no pair of the line's points.
+     - **Proof.** The closure was reduced to local configurations, and all 348,376,032 were checked.
+   - **One new line never adds creation (proved).** A new point on one new line through two points, whatever its signs, leaves creation
+     unchanged.
+     - **Proof.** From the two-round rule, with all 347,149,320 local configurations checked.
+     - **Sharpness.** A point on two or three such lines can create (TWO-BIT-SCREEN), so one line is the exact limit.
+   - **Completed.**
+     - **The two-bit screening lemma.** An intact Fano side acts as its line for creation, as it does for solutions.
+     - **The splitting lemma** for atoms attached at points and at lines.
+     - **In Fano trees.** A line creates at another exactly when it does in the chain of their atoms.
+     - **The touching rule up to distance two.** A line receives creation from another atom at most two away exactly when it touches
+       its atom's cut toward it. So native creation provably keeps each atom whole and reads every cut in its direction.
+   - **Reading.**
+     - **Where emergence is selected.** Native selection picks out emergence exactly where the parts fail to meet at the gluing line.
+     - **"Two bits", made exact.** One line of hidden information is safe and two are not.
+     - **Doctrine.** Directions are which side of a cut lost a point, and touching is incidence. No space is assumed.
+   - **Provenance.** Reducing a closure to finitely many local configurations is a standard verification route; no statement of these
+     results was found.
+   - **What is left.** For the source rule to become a theorem, a transfer along chains of four or more atoms. Distance three held on
+     the 16 four-atom paths computed.
+   - **Next (taken).** A transfer along chains (2/3): prove the touching rule at every distance in Fano trees.
+     - **The alternative.** The bridge to proof complexity (2/3).
+
+   **2026-11-06: the touching rule at every distance** (`CHAIN-TRANSFER-20261106-001`).
+   - **The touching rule holds at every distance (proved).** In every space built from Fano atoms alone, a line receives creation from a
+     removal in another atom exactly when it touches its atom's cut facing the removal, however far away the removal is.
+     - **Proof.** A chain of atoms carries only a finite profile from one cut to the next. There are 47 profiles, none new after three
+       atoms, and each was checked with every last atom (12,894 verdicts).
+     - **What the profiles show.** A removal leaves the ports of every cut beyond it free. So the receiving atom alone decides
+       creation.
+   - **The source rule fails (proved).**
+     - **Where it holds.** It counts the atoms of every Fano tree of at most five atoms.
+     - **Where it fails.** At six atoms: a receiver that takes two loaded cuts and emits the line through their points has no source.
+       Exact creation maps confirm it.
+   - **A short rule reads the tree (proved).**
+     - **Atoms.** Lines that create at each other and at the same other lines form one atom.
+     - **Cuts.** Atoms that create at a proper subset of an atom's lines lie beyond one of its receiving cuts.
+     - **What it reads.** The atoms and the directed tree of every Fano tree whose atoms have at most four cuts.
+     - **Not yet through plane glue.** On the census of 23 to 26 points, a glue line can join an atom's class and an atom can split into
+       three pairs.
+   - **Reading.**
+     - **Openness travels; direction is read at the receiver.** A removal opens every cut beyond it. A line feels it only if it touches
+       its own atom's cut facing it.
+     - **A handle is a set of lines seen together.** Its lines create at each other and are created at by the same lines elsewhere.
+     - **The tree is read from its receivers.** Every cut has one receiver, whose lines through the lost point name the cut.
+     - **Doctrine.** Twins and footprints are relations among lines. No space is assumed.
+   - **Provenance.** Finite-state transfer along bounded interfaces, and Buneman's theorem that splits determine a tree, are classical.
+     No statement of these results was found.
+   - **What is left.** Plane glue, non-Fano handles, heavily loaded atoms, and other far sides.
+   - **Next (taken).** Reading through plane glue (2/3): add plane pieces to the profile automaton and look for
+     one rule that reads the genus of every three-fold space.
+     - **The alternatives.** Non-Fano handles (1/3); the bridge to proof complexity (2/3).
+
+   **2026-11-06: reading through plane glue** (`GLUE-READ-20261106-001`).
+   - **Creation at an atom is decided by its cut (proved).** Whether a removal creates at a line of a Fano atom depends only on the
+     patterns the removal's side allows on the atom's cut facing it: three ports' worth.
+     - **An emitter.** Its lines receive exactly when the ports may be equal.
+     - **A receiver.** A cut line receives exactly when the other two ports are not forced equal. An intact line receives exactly when
+       the side tells the ports apart.
+     - **Proof.** Every port relation was checked against every deeper relation at once (8,190 cases). The census agrees at all 47,550
+       pairs.
+   - **What glue does (computed, 191 spaces).**
+     - **Through atoms.** The cut is always free, so the touching rule holds.
+     - **Through glue.** Glue can exclude a pattern pair or tie two ports, and the touching rule fails exactly there.
+     - **Its two disturbances are local.** A doubled-square line through two of an atom's ports joins it. An atom emitting into a plane
+       piece splits by its ports, because plane lines see where a removal entered and atom lines do not.
+   - **Reading the atoms.**
+     - **Where it works.** A two-stage twin rule reads every Fano tree with at most four cuts per atom (proved), every census space and
+       57 of 80 random glued spaces.
+     - **Where it stops.** In 15 random spaces, lines of atoms meeting one plane piece are indistinguishable by whether creation occurs,
+       so no such rule can read them.
+     - **What survives.** Which far side creates still separates them.
+   - **Reading.**
+     - **A cut is an atom's whole window.**
+     - **Atoms are blind to depth; plane glue is not.**
+     - **Handles on one plane.** Several handles on one plane can look alike to whether creation occurs. Only how it occurs, which far
+       side completes it, keeps them apart.
+     - **Doctrine.** Cuts, ports and far sides are relations among lines. No space is assumed.
+   - **Provenance.** Bounding an OR over local configurations, and invariance under automorphisms, are standard. No statement of these
+     results was found.
+   - **What is left.**
+     - A rule using the far sides.
+     - The relation a plane piece presents, derived from its faces.
+     - Non-Fano handles.
+   - **Next (recommended, awaiting the owner).** Reading with the far sides (2/3): on the 191 saved maps, look for a rule that separates
+     atoms meeting one plane piece without splitting atoms.
+     - **The alternatives.** Glue relations from faces (1/3); non-Fano handles (1/3).
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

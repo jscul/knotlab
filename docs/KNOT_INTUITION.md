@@ -3196,7 +3196,7 @@ So network holes come in two kinds:
    - **Corrections.** `FAR-READ-20261106-001-D002` and the census-6 sentence of `FAR-READ-20261106-001-D001` carry pending qualifications.
    - **Provenance.** Invariance of a gadget's verdict under its symmetries is standard. No statement of the gluing classification or of
      native homogeneity was found.
-   - **Next (recommended, awaiting the owner).** Colour refinement on the native creation map (2/3). It is a canonical, representation-free
+   - **Next (taken).** Colour refinement on the native creation map (2/3). It is a canonical, representation-free
      procedure. Does its stable partition ever merge lines of two atoms?
      - **The alternatives.** Junction handles natively (2/3); a native audit of earlier far-side records (1/3).
 
@@ -3227,6 +3227,34 @@ So network holes come in two kinds:
      bond distance in periodic laws without ends, where polygons are expected, and in random local laws, where roundness could
      appear only as a trend.
      - **The alternatives.** Dimension under products of k lines (1/3); a proof of the exact taxicab formula (1/3).
+
+   **2026-11-07: colour refinement on the native creation map** (`REFINE-READ-20261107-001`).
+   - **The planned test was the wrong one.** Colour refinement (1-WL) must give the same colour to lines that a symmetry exchanges, and
+     symmetric spaces exchange whole atoms. It merges lines of two atoms in 87 of 277 spaces, 14 of the 23 Fano trees among them, though
+     the twin rule reads every Fano tree.
+   - **Native creation fixes the atoms (computed, 277 of 277 spaces).**
+     - **The test.** Pair refinement (folklore 2-WL), on the order-free far sides, never puts a pair within an atom and a pair across two
+       atoms in one class.
+     - **So** every symmetry of the native creation map maps atoms to atoms, and "same atom" is definable in three-variable counting
+       logic in each space.
+     - **What does it.** Whether creation occurs alone mixes them in 42 spaces: the far sides break exactly the symmetries that hid the
+       handles.
+   - **No uniform rule tried reads every space (computed).**
+     - **The counts.** Yes/no twins read 219; native row twins and three refinements of them 234 each.
+     - **Where they fail.** Atoms meeting one plane piece merge, in 32 of 38 cases as complete twins.
+     - **A regularity.** Twin lines of one atom differ at the glue only by whether they create, never by how. Across atoms 530 of 1,572
+       twin pairs differ by how.
+   - **Reading.**
+     - **Native emergence does not hide topology** in any computed space. The handles are determined by native relations; a uniform
+       reading is what remains.
+     - **In logical terms,** the atoms are definable space by space. Whether one formula serves all spaces is a question of uniform
+       definability.
+     - **Doctrine.** Everything is invariant under relabeling lines and re-listing their points.
+   - **Provenance.** Weisfeiler–Leman refinement and its equivalence with counting logic (Cai, Fürer, Immerman) are classical. The
+     application and the regularity are new here.
+   - **Next (recommended, awaiting the owner).** Native creation at junction handles (2/3). On HANDLE-COUNT's trisum spaces, does pair
+     refinement show that the native creation map fixes the junctions, where counting hardness lives?
+     - **The alternatives.** Uniform definability of the atoms (1/3); a native audit of earlier far-side records (1/3).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

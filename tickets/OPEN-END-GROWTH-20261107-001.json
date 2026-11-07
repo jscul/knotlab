@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LOGIC-AXIS-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "OPEN-END-GROWTH-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, continue.', approving LOGIC-AXIS-20261107-001's recommendation): let a uniform rule act only where the relation shows an open end (a distinction held by one knot), with no chosen gadget shape, and measure how bond balls grow. Serves question 9 (space from a law). Standalone value relative to the nearest known work: random recursive trees, Eden growth, causal dynamical triangulations and hypergraph rewriting grow drawn graphs and measure graph distance; here the growth rule reads only allowed states and the distance is bond distance, so freezing and shortcuts created by the logic itself are visible. A: an exploratory census of five rules (random sprouting; growth at knots holding two open ends; greedy nearest closing; nearest closing that never creates a pin or tie; flat-face closing) with exact bond distances. B: bond distance is the least boundary of a region (seams plus open ends inside), so a sealed region behind one seam freezes off, a long region with a short boundary is a shortcut, and the two-open-ends rule grows exactly the two-way thread, a ruler. C (added after the census showed no growth rule grows a plane): the Cartesian product of two grown number lines is a plane whose bond distance is the taxicab sum of the axis distances.",
+  "ownership": {
+    "root": true,
+    "scope_id": "OPEN-END-GROWTH-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: growth at open ends. A native rule grows the logical number line: growing only at knots that hold two open ends grows exactly the two-way thread (proved), a ruler of dimension one. Local closing rules freeze, collapse or branch (census of five rules, exact bond distances): closing every open end seals cells behind pinned seams, closing without pins or ties leaves a strip whose bond distance stays at most 5, random and flat-face growth give small worlds. Bond distance is the least two-sided boundary, counting seams and open ends held inside (proved). The Cartesian plane is the product of two grown lines: L-shaped knots give bond distance <= dx + dy - 1 and the thread product has no ends, so it is a taxicab plane of dimension two (proved; exact formula conjectured, 855 pairs). Next: Continue (2/3), circles from logic.",
+  "status_class": "complete",
+  "stop_rule": "Stop when the five declared rules are classified (ruler, collapse, decoupled cells, small world, or unresolved) with exact bond distances at the sizes the contract allows, and B is proved or obstructed; do not tune a rule toward dimension 2 after seeing results.",
+  "title": "Growth at open ends: what a law grows with nothing drawn"
+}

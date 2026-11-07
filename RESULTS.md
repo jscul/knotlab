@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**201 current results** and 5 superseded ones, from 143 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**204 current results** and 5 superseded ones, from 144 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 8 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 67 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 70 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 143 epics with their closures
+- [Epics](#epics): all 144 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -466,9 +466,11 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
   [proof P001](proofs/CHAIN-TRANSFER-20261106-001C/CHAIN-TRANSFER-20261106-001C-P001_reading_the_tree_from_creation/proof.md), [epic closure](proofs/CHAIN-TRANSFER-20261106-001Z/CHAIN-TRANSFER-20261106-001Z-P001_epic_closure/proof.md)
 - **2026-11-06 · A Fano atom acts as one from outside** (`FAR-READ-20261106-001-D001`).
   In all 277 spaces computed (191 saved, 86 fresh; 1,065 Fano atoms), every atom line outside a Fano atom receives the same far-side vector from each of the atom's lines, though the atom's lines differ on glue lines and in what they receive. On the saved maps the far sides nest: the Fano plane and census 58 create at the same pairs, K4^(3) only where census 6 does, and census 6 without the Fano plane only at glue lines.
+  *Qualification pending: the second sentence, on census 6, holds only in the order in which each gluing line's points are written; that atoms act as one holds natively (see GENUS-READ-20261107-001).*
   [proof P001](proofs/FAR-READ-20261106-001A/FAR-READ-20261106-001A-P001_the_far_side_map/proof.md), [proof P001](proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/proof.md), [epic closure](proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/proof.md)
 - **2026-11-06 · Which far side creates reads the atoms through plane glue** (`FAR-READ-20261106-001-D002`).
   A four-step rule on the creation map (twins; twins among atom lines; a split into the finest parts of three or more lines that act as one far side by far side; reattachment of single port lines) returns exactly the Fano atoms of all 191 saved spaces and, frozen, of all 86 fresh ones, including the 39 where no rule using only whether creation occurs can. On the fresh spaces GLUE-READ C's two-stage rule reads 51, the source rule 68.
+  *Qualification pending: the rule reads these spaces only with census 6 glued in the order in which each line's points are written; with census 6 counted over its three gluings, its split step cuts every atom of six or seven lines (see GENUS-READ-20261107-001).*
   [proof P001](proofs/FAR-READ-20261106-001B/FAR-READ-20261106-001B-P001_a_rule_that_reads_every_saved_space/proof.md), [proof P001](proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/proof.md), [epic closure](proofs/FAR-READ-20261106-001Z/FAR-READ-20261106-001Z-P001_epic_closure/proof.md)
 - **2026-11-06 · Creation at an atom is decided by its cut** (`GLUE-READ-20261106-001-D001`).
   For a Fano atom with its other elements present, whether a removal beyond one of its cuts creates at a line of it depends only on the patterns the removal's side allows on that cut's three ports: an emitter's lines receive iff the ports may be equal; a receiver's cut line iff the other two are not forced equal, its intact line iff the side tells the ports apart. Proved exhaustively over every port relation and deeper relation.
@@ -512,6 +514,15 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · Open ends make a substitution tower stretch** (`LOGIC-AXIS-20261107-001-D003`).
   A hub-free parity substitution keeps the replaced knot exactly when its gadget adds no open end, and then every step is conservative, so the original distinctions stay at bond distance 2 forever; this is why the 2026-10-20 refinement cannot grow space. On tree-shaped knot graphs bond distance equals the path's knot count plus one, so the star tower stretches as 3^k + 1.
   [proof P001](proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A local rule grows the logical number line** (`OPEN-END-GROWTH-20261107-001-D001`).
+  Starting from one parity knot, growing only at knots that hold two or more open ends grows exactly the two-way thread, a path of knots each keeping one open loop, whatever choices are made. Its bond distance counts the knots between two points plus one, so a rule that reads nothing but open ends grows a ruler of dimension one in both directions.
+  [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Closing open ends seals or collapses space** (`OPEN-END-GROWTH-20261107-001-D002`).
+  In hub-free parity laws bond distance is the least two-sided boundary, counting seams and open ends held inside, so every such boundary is a knot. A region without open ends behind one seam pins it and no knot crosses, and a long region with a short boundary keeps bond distance bounded; closing rules therefore freeze space into cells or collapse it.
+  [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The logical Cartesian plane is a taxicab plane** (`OPEN-END-GROWTH-20261107-001-D003`).
+  In the product law of two parity laws, a knot of each axis joined at a corner is a knot, so bond distance is at most the sum of the axis distances minus one. The product of two two-way threads has no ends, so its bond distance is within constants of taxicab distance and its bond balls grow quadratically: a plane of dimension two built from two lines.
+  [proof P001](proofs/OPEN-END-GROWTH-20261107-001C/OPEN-END-GROWTH-20261107-001C-P001_the_logical_cartesian_plane/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs and gaskets
 
@@ -862,6 +873,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
 | 2026-11-07 | Reading the genus natively (`GENUS-READ-20261107-001`) | [closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-READ-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
+| 2026-11-07 | Growth at open ends: what a law grows with nothing drawn (`OPEN-END-GROWTH-20261107-001`) | [closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/OPEN-END-GROWTH-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
 

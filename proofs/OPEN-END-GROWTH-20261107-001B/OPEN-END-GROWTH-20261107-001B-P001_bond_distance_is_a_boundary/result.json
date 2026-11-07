@@ -1,0 +1,100 @@
+{
+ "schema_version": 3,
+ "artifact_id": "OPEN-END-GROWTH-20261107-001B-P001",
+ "kind": "proof",
+ "ticket": "OPEN-END-GROWTH-20261107-001B",
+ "proof": "OPEN-END-GROWTH-20261107-001B-P001",
+ "status": "passed",
+ "claim": "Bond distance is a boundary. In a hub-free parity law (knots as vertices of a graph with an unconstrained outside vertex; seams as edges, open ends as edges to the outside): (1) the bond distance between two distinctions is the least boundary, counting seams and the open ends held inside, of a connected set of knots whose outside is connected and which has both on its boundary, minus one; (2) a set of knots holding no open end and joined to the rest by one seam pins that seam and splits the allowed states, so no knot crosses it: closing every open end of a region seals it off; two seams tie but do not decouple; (3) every such two-sided boundary of at least three distinctions is a knot, so a long region with a short boundary is a shortcut and closed strips collapse; (4) growing only at knots that hold two or more open ends grows exactly the two-way thread, whose bond distance is the number of knots on the path plus one: a native logical number line.",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/manifest.json": "Proved",
+     "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/result.json": "passed"
+    }
+   }
+  },
+  "1 bond distance = least two-sided boundary (exhaustive on random grown graphs; control: one-sided)": {
+   "pass": true,
+   "info": {
+    "random pairs in random grown knot graphs (4-9 knots)": 240,
+    "mismatches": [],
+    "control: dropping the outside-connectivity condition changes the value": 38
+   }
+  },
+  "2 one seam pins and decouples (random sealed clusters; control: two seams still cross)": {
+   "pass": true,
+   "info": {
+    "random sealed clusters with one seam": 31,
+    "failures": [],
+    "control: with two seams the seams are tied, yet a knot crosses": true
+   }
+  },
+  "3 short boundaries are shortcuts (random regions; three-seam strip; control: the thread)": {
+   "pass": true,
+   "info": {
+    "random regions with both sides connected": 46,
+    "boundaries that are not knots": 0,
+    "three-seam strip of 31 beads (regions of >= 2 beads)": [
+     {
+      "cross-sections": [
+       1,
+       3
+      ],
+      "region boundary is a knot of 6": true,
+      "bond distance between them (exhaustive, <= 6 places)": 3
+     },
+     {
+      "cross-sections": [
+       0,
+       5
+      ],
+      "region boundary is a knot of 6": true,
+      "bond distance between them (exhaustive, <= 6 places)": 3
+     },
+     {
+      "cross-sections": [
+       0,
+       12
+      ],
+      "region boundary is a knot of 6": true,
+      "bond distance between them (exhaustive, <= 6 places)": 3
+     },
+     {
+      "cross-sections": [
+       3,
+       20
+      ],
+      "region boundary is a knot of 6": true,
+      "bond distance between them (exhaustive, <= 6 places)": 3
+     },
+     {
+      "cross-sections": [
+       0,
+       29
+      ],
+      "region boundary is a knot of 6": true,
+      "bond distance between them (exhaustive, <= 6 places)": 3
+     }
+    ],
+    "control: on the thread, links 8 apart are at bond distance >= 8": true
+   }
+  },
+  "4 the two-open-ends rule grows the two-way thread (control: random sprouting)": {
+   "pass": true,
+   "info": {
+    "runs (n = 2..12, 40, 120, 300; three seeds)": 42,
+    "not a two-way thread": [],
+    "bond distance != path knots + 1 (exhaustive, n <= 10)": [],
+    "whole-path cut not a knot of n + 2 (n = 11..120)": [],
+    "control: random sprouting has a knot joined to three knots": true
+   }
+  }
+ },
+ "failures": []
+}

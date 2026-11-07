@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "OPEN-END-GROWTH-20261107-001A-E001",
+  "ticket": "OPEN-END-GROWTH-20261107-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Starting from one parity knot with three open ends, which uniform growth rules acting only at open ends grow a space whose bond distance is a ruler with a definite growth dimension, and which collapse (bounded bond distance), fall apart into frozen cells (pinned seams, infinite bond distance) or grow a small world (logarithmic bond distance)?",
+  "public_inputs": {
+    "seed": "One three-place parity knot a+b+c=0 whose three distinctions are open ends (held by one knot). No lattice, coordinates, neighbour list or target dimension.",
+    "laws": "Hub-free parity laws: every knot is a three-place parity check, every distinction lies in at most two knots. Moves: sprout at an open end e of knot v (a new knot holding e and two fresh open ends); close two open ends e, f of distinct knots (a new knot holding e, f and one fresh open end).",
+    "rules": {
+      "R1": "Sprout at a uniformly random open end.",
+      "R2": "Sprout at an open end of a uniformly random knot holding two or more open ends.",
+      "R3": "If some pair of open ends on distinct knots has local bond distance <= 6, close a uniformly random pair of least local bond distance; otherwise R1.",
+      "R4": "As R3, but skip any closing after which some distinction is pinned (a one-distinction implied check) or two are tied (a two-distinction implied check); if no closing qualifies, R1.",
+      "R5": "Sprout as R1; then repeatedly close a uniformly random pair at local bond distance exactly 6 (the flat face size of three-place knots) that creates no pin or tie, until none qualifies."
+    },
+    "local bond distance": "The least |cut(U)| - 1 over connected sets U of at most 6 knots containing both open ends' knots, counting seams and open ends of U; it is what a local rule can see. It is never used as the observable.",
+    "sampling": "Uniform random choices with seeds 1-3 per rule; this is a declared branch-local sampling law, not a claim of typicality beyond it."
+  },
+  "forbidden_inputs": [
+    "Any lattice, embedding, coordinates or target dimension given to a rule",
+    "Graph distance reported as the observable (it may be reported beside bond distance)",
+    "Tuning a rule's threshold toward dimension 2 after seeing results, or dropping a declared rule"
+  ],
+  "primary_observable": "Exact bond distance (least bond of the knot graph with an outside vertex: a minimum cut with both sides connected, of size >= 3; infinite when no such bond exists) from a seed distinction to distinctions at increasing graph distance, and its growth with size; pinned and tied counts; open ends and cycle rank against size.",
+  "cheapest_meaningful_control": "R2 must grow the two-way thread (a path of knots, one open end per inner knot) with bond distance = graph distance + 2 exactly; R1 must give bond distance = knots on the tree path + 1. The bond-distance program is rerun without its outside-connectivity constraint on R3 as a control that must report finite values where the constrained program reports none.",
+  "resource_budget": {"wall_minutes": 60, "memory_mib": 4096, "max_knots": {"R1": 1000, "R2": 1000, "R3": 300, "R4": 300, "R5": 300}},
+  "first_executable_signal": "Bond distances from the seed on R2 and R3 at 200 knots.",
+  "decision_or_followup_rule": "Classify each rule as ruler (bond distance grows without bound and balls grow polynomially), collapse (bond distance bounded), decoupled (pinned seams with infinite bond distance across), small world (bond distance logarithmic, balls exponential) or unresolved. A rule classified as a ruler of dimension 2 would be a positive result to confirm on fresh seeds; otherwise record the classification and state the boundary principle for proof in ticket B.",
+  "stop_rule": "Stop at the declared rules, seeds and sizes; do not add rules aimed at dimension 2 after seeing results.",
+  "nonclaims": [
+    "Exploratory and non-promotable; finite sizes do not prove limits.",
+    "The rules are declared, not derived; a law that selects its own rule is not claimed.",
+    "Bond distance is the program's extended bond distance; no coordinates, metric geometry or physical space is claimed."
+  ],
+  "feasibility_disclosure": "Scratch probes before this envelope (not evidence): R1 grew a tree (open ends = knots + 2); R2 grew a path with bond distance graph distance + 2 at 60 knots; greedy closing kept two open ends and left 74 pinned seams at 300 knots; guarded closing kept 3-5 open ends with bond distance 4 out to graph distance 36 at 150 knots; flat closing kept cycles and a growing frontier, with seed eccentricity 25 at 241 knots."
+}

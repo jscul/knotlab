@@ -3129,7 +3129,7 @@ So network holes come in two kinds:
      - A proof of the exception.
      - That no atom splits into smaller parts acting as one.
      - Handles that are not Fano atoms.
-   - **Next (recommended, awaiting the owner).** The genus reading on Fano trees (2/3). Prove that FAR-READ B's rule returns exactly the
+   - **Next (taken).** The genus reading on Fano trees (2/3). Prove that FAR-READ B's rule returns exactly the
      Fano atoms of every Fano tree, then add plane glue.
      - **The alternatives.** Whether junction handles act as one (2/3); a proof of the exception (1/3).
 
@@ -3173,6 +3173,32 @@ So network holes come in two kinds:
    - **Next (recommended, awaiting the owner).** Growth at open ends (2/3). Let a uniform rule act only where the relation shows an
      open end, with no chosen gadget shape, and measure the growth exponent of bond balls.
      - **The alternatives.** The signed-binary lower bound (1/3); the logical Cartesian product of two threads (1/3).
+
+   **2026-11-07: reading the genus natively** (`GENUS-READ-20261107-001`).
+   - **Census 6 depends on how it is glued (proved).**
+     - **How the test glues.** It joins a far side's split-point lines to the gluing line's points in the order they are written.
+     - **Order-free.** K4^(3), the Fano plane and census 58 have the symmetry that makes the order irrelevant.
+     - **Census 6.** It has three inequivalent gluings, and its verdict changed with the order in 8,046 of 11,552 sampled pairs.
+     - **Creation.** Whether creation occurs never depends on the order.
+   - **Natively a Fano atom is homogeneous (proved).** Count census 6 over its gluings. Then in every Fano tree every ordered pair of
+     lines of an atom gets the same far-side vector: no K4^(3), census 6 at one gluing of three, the Fano plane, census 58. Whatever hangs
+     behind its cuts forces it.
+   - **So FAR-READ's split step was not native.** Given native vectors, it cuts every atom of six or seven lines: none of 23 Fano trees
+     read, against all 23 in the written order. The native reading of Fano trees is the yes/no twin rule, already a theorem.
+   - **Through plane glue (computed).**
+     - **The information is native.** The order-free far sides tell apart all 372 pairs of atoms that whether creation occurs cannot.
+     - **Where it sits.** For 114 pairs it lies only in what the two lines do to glue lines.
+     - **The best rule so far.** Native row twins read 234 of 277 spaces.
+   - **Reading.**
+     - **A handle is one thing inside and out.** All its lines are alike to each other, and it acts as one from outside.
+     - **The structure the split relied on** was how census 6's lines were written down.
+     - **Doctrine.** No space, and no listing order, is assumed.
+   - **Corrections.** `FAR-READ-20261106-001-D002` and the census-6 sentence of `FAR-READ-20261106-001-D001` carry pending qualifications.
+   - **Provenance.** Invariance of a gadget's verdict under its symmetries is standard. No statement of the gluing classification or of
+     native homogeneity was found.
+   - **Next (recommended, awaiting the owner).** Colour refinement on the native creation map (2/3). It is a canonical, representation-free
+     procedure. Does its stable partition ever merge lines of two atoms?
+     - **The alternatives.** Junction handles natively (2/3); a native audit of earlier far-side records (1/3).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

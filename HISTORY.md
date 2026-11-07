@@ -3,6 +3,23 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 7 November 2026: census 6 depends on how it is glued
+
+- The creation test glues each census far side to a gluing line in the order
+  in which the line's points are written. K4^(3), the Fano plane and census 58
+  give the same verdict in every order. Census 6 does not: only two of the six
+  orders are equivalent under its symmetries, and its verdict changed with the
+  order in 8,046 of 11,552 sampled pairs ([proof](proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/proof.md)).
+- Counting census 6 over its three gluings, every ordered pair of lines of a
+  Fano atom in a Fano tree gets the same far-side vector ([proof](proofs/GENUS-READ-20261107-001B/GENUS-READ-20261107-001B-P001_natively_a_fano_atom_is_homogeneous/proof.md)). The
+  four-step rule of FAR-READ-20261106-001-D002 then cuts every atom of six or
+  seven lines, so its reading of every computed space depended on how lines
+  were written. That record, and the sentence of FAR-READ-20261106-001-D001
+  about census 6, now carry pending qualifications.
+- Unchanged: every statement about whether creation occurs, and what K4^(3),
+  the Fano plane and census 58 show. They still separate atoms where whether
+  creation occurs cannot ([measurement](proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/proof.md)).
+
 ## 7 November 2026: published entirely from the research workspace
 
 - Everything in this repository now comes from our research workspace,

@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "OPEN-END-GROWTH-20261107-001B-P001",
+  "canonical_id": "OPEN-END-GROWTH-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "OPEN-END-GROWTH-20261107-001B",
+  "proof": "OPEN-END-GROWTH-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Bond distance is a boundary",
+  "status": "Proved",
+  "claim": "Bond distance is a boundary. In a hub-free parity law (knots as vertices of a graph with an unconstrained outside vertex; seams as edges, open ends as edges to the outside): (1) the bond distance between two distinctions is the least boundary, counting seams and the open ends held inside, of a connected set of knots whose outside is connected and which has both on its boundary, minus one; (2) a set of knots holding no open end and joined to the rest by one seam pins that seam and splits the allowed states, so no knot crosses it: closing every open end of a region seals it off; two seams tie but do not decouple; (3) every such two-sided boundary of at least three distinctions is a knot, so a long region with a short boundary is a shortcut and closed strips collapse; (4) growing only at knots that hold two or more open ends grows exactly the two-way thread, whose bond distance is the number of knots on the path plus one: a native logical number line.",
+  "dependencies": [
+    "LOGIC-AXIS-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A pair whose least knot differs from the least boundary of a connected region with connected outside containing both on its boundary.",
+    "A one-seam region without open ends whose seam is not pinned, or a knot crossing it.",
+    "A connected region with connected outside and boundary of size >= 3 whose boundary is not a knot.",
+    "A run of the two-open-ends rule that is not a path with one open end per inner knot, or whose bond distances differ from path knots + 1."
+  ],
+  "lineage": {
+    "home_scope": "OPEN-END-GROWTH-20261107-001",
+    "epic_path": [
+      "OPEN-END-GROWTH-20261107-001"
+    ],
+    "parents": [
+      "proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/manifest.json",
+      "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/manifest.json": "8b3ada631edb0b12953f1f6c9ae075709c09340d2223ff0ce8c54efcc627e8cf",
+    "proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/result.json": "7a594460a9d69735aedfdf88ac21a4fdf2b885f5b7b35cedcc9e2472a56771e4",
+    "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/manifest.json": "4a9a349e4c08ed4f3b706c7cbd049bd3836db6dce7f133ddf67ab661fcee2ec6",
+    "proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/result.json": "e5a700124bed091adb58afc97ea4203f2d52df72f0c09ff3921fb1749e4bc90e"
+  },
+  "paths": {
+    "manifest": "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/manifest.json",
+    "identity": "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/identity.json",
+    "proof": "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md",
+    "check": "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/check.py",
+    "result": "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/result.json",
+    "directory": "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Finite hub-free parity laws and the two-open-ends growth rule; bond distance as in NATIVE-NETWORK-20261021-001.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "prose proofs; check.py runs five checks with rejected controls (240 exhaustive pairs, 31 sealed clusters, 46 regions and a 31-bead strip, 42 runs of the rule); no human or external review",
+    "novelty": "known-overlap-found: bonds as circuits of the cocycle matroid and bridge arguments are classical (Whitney; Oxley); the delta is the reading for growth at open ends (sealing freezes, short boundaries collapse, the two-open-ends rule grows the number line)."
+  }
+}

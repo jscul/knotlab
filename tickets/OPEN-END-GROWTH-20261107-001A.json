@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LOGIC-AXIS-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "OPEN-END-GROWTH-20261107-001A-E001",
+    "contract_path": "experiments/OPEN-END-GROWTH-20261107-001A/OPEN-END-GROWTH-20261107-001A-E001_growth_rules_census/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "OPEN-END-GROWTH-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment. From one parity knot, grow hub-free parity laws by five uniform rules that act only at open ends: R1 sprout at a uniformly random open end; R2 sprout at a knot holding two or more open ends; R3 close the nearest pair of open ends by bond distance, else sprout; R4 as R3 but never make a closing that creates a pinned or tied distinction; R5 sprout at a random open end, then close pairs at bond distance exactly 6 (the flat face size for three-place knots) without pins or ties. Measure exact bond distance (minimum connected cut) from a seed distinction outward, bond-ball growth, pinned links, open ends and cycle rank against size, and classify each rule as ruler, collapse, decoupled cells, small world or unresolved.",
+  "ownership": {
+    "root": false,
+    "scope_id": "OPEN-END-GROWTH-20261107-001"
+  },
+  "parent": "OPEN-END-GROWTH-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, OPEN-END-GROWTH-20261107-001A-E001): five uniform rules acting only at open ends, exact bond distances. Growing at knots holding two open ends gives the two-way thread, a ruler of dimension one (slope 1.00; balls 4 per unit radius). Random sprouting gives a tree (small world). Greedy closing seals cells (74 pinned seams; no knot for 370 of 374 pairs). Closing that never creates a pin or tie gives a closed strip whose bond distance stays at most 5 (collapse). Flat-face closing gives a small world (largest bond distance 11 at 300 knots). No rule grew a plane. The frozen R2 offset control was mis-specified (seam source; offsets 1 or 2) and is recorded as failed as written; exactness is proved in ticket B.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "A census of growth rules at open ends"
+}

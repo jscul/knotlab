@@ -3301,6 +3301,36 @@ So network holes come in two kinds:
      tiling, whose tiles turn through the irrational angle arctan(1/2). Is its law's circle exactly round?
      - **The alternatives.** The spectrum of rational π among periodic laws (1/3); the exact taxicab formula (1/3).
 
+   **2026-11-07: uniform laws and the spheres they can close into** (`UNIFORM-SPHERES-20261107-001`).
+   - **The setting.** A law of lines and co-lines builds its own closed surface, with nothing drawn: points, lines (triples) and
+     co-lines (cycles), each pair of a line's points lying in exactly one co-line.
+     - **The count reads it.** The knot's count (`COUNT-SURFACES-20261107-001`) reads that surface's Euler characteristic.
+       - It forces a violated line only on a sphere whose co-lines all close under the signs.
+       - Negative curvature forces an over-agreeing face instead, and finding it is PPADS-complete, as finding the sphere's violated
+         line is (`COUNT-ANTIVORTEX-20261107-001`).
+   - **Uniform laws close into few spheres (proved).**
+     - **The formula.** With every point alike, of co-line sizes (d1, d2, d3), χ = n(1/d1 + 1/d2 + 1/d3 − 1).
+     - **The spheres.** A sphere arises only as an antiprism (2,2,d) or a snub polyhedron of 12, 24 or 60 points; each is realized by a
+       law on a group (dihedral, A4, S4, A5).
+     - **Otherwise.** The laws are flat, (3,3,3), (2,4,4), (2,3,6), or hyperbolic, such as the Klein quartic's law on PSL(2,7).
+   - **Uniform signs never force the contradiction (proved).**
+     - **Why.** Positive curvature sits on digons, two lines sharing two points. Under uniform signs every digon stays open, so the count
+       never forces a line to fail on any uniform law.
+     - **With non-uniform signs.** Signs that close the digons make the knot fail only on those small spheres or on antiprisms, which
+       are chains solved by binary search.
+   - **Computed.**
+     - **Uniform signs.** The knot is satisfiable on every tested uniform law, and on all circulant laws with n ≤ 48 except the Fano
+       plane. The Fano plane's contradiction is not the count's.
+     - **The knot sphere** has exactly two kinds of points.
+   - **Reading.** A law that treats every place alike can grow flat space without end, and negatively curved space, but not a large
+     sphere. The knot's deep contradiction marks where a law stops treating places alike: two kinds of points and a sign defect at each
+     of six digons.
+   - **Provenance.** Vertex-transitive and Cayley maps and the spherical list (antiprisms, snub polyhedra) are classical. The reading of a
+     law as a self-built surface, and the bound on uniform contradictions, are new here.
+   - **Next (recommended, awaiting the owner).** Two kinds of points (2/3): which such laws close into large spheres, and can a local
+     growth rule place the six digons itself, so that a law grows its own sphere and with it the knot's contradiction?
+     - **The alternative.** Large uniform contradictions beyond the Fano plane (1/3).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

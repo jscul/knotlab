@@ -1,0 +1,24 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-PATH-20261108-001A",
+    "RECUR-PATH-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "RECUR-PROOF-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that the 64 two-apart families of RECUR-PATH-20261108-001A (rule 60 or 102 on each ring, contacts two apart, each contact reading the neighbours that read it back on its outer sides) keep every contact persistent and compose at recurring lags at every ring size s >= 4, with the composing lags given by binomial coefficients mod 2, and never at every lag.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RECUR-PROOF-20261108-001"
+  },
+  "parent": "RECUR-PROOF-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (by hand; finite claims checked): for every ring size s >= 4, the 64 two-apart families with rule 60 or 102 on each ring keep every contact persistent, and the last contact binds the end rings exactly at the lags T with C(T - 3, m) odd (m = 2, s - 2 or 2s - 6 after mirroring the rule-102 rings), a periodic set of density 2^(-ones in m) by Lucas' theorem: composition at recurring lags at every ring size, at every lag at none. Rule 102 is covered by mirror symmetry; the rule-90 families are not.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "One-sided additive paths compose at recurring lags at every ring size"
+}

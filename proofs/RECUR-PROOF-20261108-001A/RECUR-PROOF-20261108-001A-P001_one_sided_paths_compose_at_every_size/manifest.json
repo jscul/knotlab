@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RECUR-PROOF-20261108-001A-P001",
+  "canonical_id": "RECUR-PROOF-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "RECUR-PROOF-20261108-001A",
+  "proof": "RECUR-PROOF-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "One-sided additive paths compose at recurring lags at every ring size",
+  "status": "Proved",
+  "claim": "Paths of four rings A, B, C, D of s >= 4 cells, each ring on rule 60 or 102, the middle rings' contacts two apart (c2 at cell k1 of B, c3 at cell k2 of C, k1, k2 in {2, s - 2}), each contact self-blind and adding the cells it reads: c1 its partners on A and B (the neighbour that reads it back), c2 both neighbours on B and its partner on C, c3 both neighbours on C and its partner on D. After mirroring every rule-102 ring, with m = k1' + k2' - 2: (1) every contact binds both its rings at every lag T >= 1; (2) c3 binds D at every lag and A exactly at the lags T >= 3 at which C(T - 3, m) is odd; (3) by Lucas' theorem these lags are periodic with period 2^(bit length of m) and density 2^(-number of ones in m), so each of the 64 families composes at recurring lags with every contact persistent at every ring size, and at every lag from the light cone on at none.",
+  "dependencies": [
+    "NATIVE-PATH-20261108-001A",
+    "RECUR-PATH-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A family, ring size or lag at which a contact misses one of its rings, or c3's binding of A differs from the parity of C(T - 3, m).",
+    "A family of the 64 that is not a mirror image of a rule-60 family with the stated laws."
+  ],
+  "lineage": {
+    "home_scope": "RECUR-PROOF-20261108-001",
+    "epic_path": [
+      "RECUR-PROOF-20261108-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json",
+      "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/result.json",
+      "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py",
+      "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/contract.json",
+      "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/recur_lib.py",
+      "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run.py",
+      "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run/result.json",
+      "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run/families.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json": "e7cffd75ad4f645142fd5121e778571058ddaee3afe3d19ec6e7c00418160f8c",
+    "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/result.json": "7c91f9a33d12a639e9934646ecf224ae89defba2212e939985e185c9f48fdf16",
+    "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py": "52ce36a513db4fef263abc91d3b852430334e65fac0e146d6d37e8ddd0b060be",
+    "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/contract.json": "5b9c2ab5577601f6485e4b02ab697ede2aa694892b1ef7b670d8e746e5e7d509",
+    "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/recur_lib.py": "85b4c7dff81c603b36ffa7d0b98e745997ab6e1acb79fd044be43fa8c9a90694",
+    "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run.py": "40fd83858eec32e67cfd1317210adb68d54dd5d6643ece1df987b896d5025f78",
+    "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run/result.json": "89374601085dcbd932ab376478a62c2dde0e2b98ca9457f69b86d034b5a4ade9",
+    "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run/families.json": "e5bcf7effc9c66024a9fc718648477777886238e157d547b795bb7155969a0fe"
+  },
+  "paths": {
+    "manifest": "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json",
+    "identity": "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/identity.json",
+    "proof": "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/proof.md",
+    "result": "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/result.json",
+    "check": "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/check.py",
+    "directory": "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Linear paths of the stated form, under the readings of A34 and A37; two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: Pascal's triangle mod 2 and Lucas' theorem applied to paths of contacts"
+  }
+}

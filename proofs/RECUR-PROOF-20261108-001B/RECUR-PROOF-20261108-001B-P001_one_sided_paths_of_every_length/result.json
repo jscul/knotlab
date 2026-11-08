@@ -1,0 +1,65 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream statuses": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json": "Proved",
+     "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json": "Proved"
+    }
+   }
+  },
+  "1 the theorem's predictions at every lag through the eventual cycle, rule 60 everywhere, n = 3 to 10, sizes 4 to 16, every choice of positions": {
+   "pass": true,
+   "info": {
+    "paths": 6630,
+    "lags": 744430,
+    "mismatches": 0
+   }
+  },
+  "2 the same on 400 random paths with rule 60 or 102 on each ring, n = 3 to 8, against the mirrored positions": {
+   "pass": true,
+   "info": {
+    "paths": 400,
+    "lags": 34484,
+    "mismatches": 0
+   }
+  },
+  "3 full state spaces: n = 3 at sizes 4 and 5, n = 5 at size 4: every lag no, recurring with every contact persistent yes": {
+   "pass": true,
+   "info": {
+    "paths": 5,
+    "readings": [
+     [
+      false,
+      true,
+      true
+     ],
+     [
+      false,
+      true,
+      true
+     ],
+     [
+      false,
+      true,
+      true
+     ],
+     [
+      false,
+      true,
+      true
+     ],
+     [
+      false,
+      true,
+      true
+     ]
+    ]
+   }
+  }
+ },
+ "seconds": 0.4
+}

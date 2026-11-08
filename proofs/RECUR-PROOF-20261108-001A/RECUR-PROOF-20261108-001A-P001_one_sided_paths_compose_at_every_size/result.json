@@ -1,0 +1,53 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream statuses": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json": "Proved",
+     "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/contract.json": "Frozen"
+    }
+   }
+  },
+  "1 the 64 families are the mirror images of the four rule-60 families, with the stated laws, and are exactly E002's 64 distinct two-apart families with every contact persistent at every size": {
+   "pass": true,
+   "info": {
+    "theorem's families": 64,
+    "E002's": 64,
+    "equal": true,
+    "mirror checks": 64
+   }
+  },
+  "2 Lemma 1 on 2,000 random three-cell loops with random inputs: c(T) = n(0) + n'(0) + u(T - 1)": {
+   "pass": true,
+   "info": {
+    "loops": 2000,
+    "agree": 2000
+   }
+  },
+  "3 the theorem's predictions (every contact binds both rings, c3 binds D at every lag and A exactly when C(T - 3, m) is odd) at every lag through the eventual cycle, all 64 families, ring sizes 4 to 40": {
+   "pass": true,
+   "info": {
+    "lags": 228864,
+    "mismatches": 0
+   }
+  },
+  "4 the last contact's composing share equals 2^(-w), w the number of ones in m, all 64 families, sizes 4 to 40": {
+   "pass": true,
+   "info": {
+    "families": 64,
+    "agree": 64
+   }
+  },
+  "5 full state spaces at ring sizes 4 and 5 (13 and 17 bits), all 64 families: every lag no, recurring with every contact persistent yes, binding there yes": {
+   "pass": true,
+   "info": {
+    "paths": 128,
+    "agree": 128
+   }
+  }
+ },
+ "seconds": 1.3
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**243 current results** and 5 superseded ones, from 179 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**243 current results** and 5 superseded ones, from 180 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 179 epics with their closures
+- [Epics](#epics): all 180 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1027,6 +1027,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |
+| 2026-11-08 | Closed loops of rings across time (`LOOP-RINGS-20261108-001`) | [closure](proofs/LOOP-RINGS-20261108-001Z/LOOP-RINGS-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-RINGS-20261108-001/) |
 | 2026-11-08 | Native paths across time: none in three restricted families (`NATIVE-PATH-20261108-001`) | [closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-PATH-20261108-001/) |
 | 2026-11-08 | Does one hidden bit per tile force the pinwheel? (`ONE-BIT-20261108-001`) | [closure](proofs/ONE-BIT-20261108-001Z/ONE-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/ONE-BIT-20261108-001/) |
 | 2026-11-08 | Native paths that survive growth (`PATH-GROWTH-20261108-001`) | [closure](proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PATH-GROWTH-20261108-001/) |

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LOOP-RINGS-20261108-001A-E001",
+  "ticket": "LOOP-RINGS-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a closed loop of rings, in which influence returns to its source, keep every contact binding both of its rings at every lag?",
+  "public_inputs": {
+    "library": "net_lib.py of SEPARATE-20261108-001A (sha256 e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351): the network's linear map; run.py's contact_persists().",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Loops of three rings (contacts at every position k from 2 to s - 2 on each ring) and four rings (k = 2 or s - 2), every ring on rule 60 and of s = 4 to 10 cells; contact c_i at cell k_i of R_i and cell 0 of R_(i+1); every law that reads the left neighbour on the first ring (12, or 6 for both) and any of 12, 10, 6 on the second: 295,056 loops.",
+    "exactness": "Exact by row sequences: a contact persists when it binds both rings at every lag until its row repeats; undecided past 1,000,000 lags."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping loops"
+  ],
+  "primary_observable": "The number of loops in which every contact persists; the first lag at which some contact misses one of its rings.",
+  "cheapest_meaningful_control": "net_lib agrees with path_lib on paths and with its own full-state-space reading (SEPARATE-20261108-001A, check 1); in the run, any persistent loop is rechecked on its full state space at the smallest size.",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The verdict counts.",
+  "decision_or_followup_rule": "H1, frozen: some closed loop keeps every contact persistent. If it holds, verify, characterise and prove. If not, record the first lags at which contacts miss, and seek a proof of the obstruction for the declared loops.",
+  "stop_rule": "Stop when every loop of the family has its verdict.",
+  "nonclaims": [
+    "Exploratory and non-promotable: these loops only.",
+    "Two-time knots only (A30).",
+    "Rule 60 rings only; by mirror symmetry this covers rule 102 rings with mirrored laws and positions."
+  ],
+  "feasibility_disclosure": "Before freezing: SEPARATE-20261108-001's results had been read. An exploratory probe of loops of 3, 4 and 5 rings with the single law (6, 10) at every contact, sizes 4 to 10 and positions 2 or s - 2, found every one losing persistence (in the 3-ring loop at size 4, at lag 7). run.py --pilot timed 2,000 random loops at 0.1 s and printed no verdicts."
+}

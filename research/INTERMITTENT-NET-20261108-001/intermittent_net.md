@@ -50,6 +50,12 @@ user unit `intermittent-net-s1`, 286 s; `stress_result.json`, `stress_rows.json`
 | Native intermittent composition needs an affine rule (B) | 5/7/5 and 5/8/5: 2,816 chains, 132 undecided | pass: 112 compose at recurring lags (62 with affine rules, 50 with nonlinear ones); the 24 whose composing lags are singled out all run affine rules (15, 170, 90, 105, 150) |
 | The control: linear chains compose at their arrival lags (A) | the same chains | pass |
 
+## Correction (2026-11-08)
+
+Logged in `docs/CORRECTIONS.md` as a narrowing. The answer and the closure said that persistent composition "remains absent". That
+held for the uniform chains tested, one rule and one law throughout. `AFFINE-WIRE-20261108-001` found it in 2,376 affine chains that
+mix rules and laws.
+
 ## Literature and provenance
 
 - **Sources.** Eventual periodicity of finite dynamics. Additive cellular automata on rings (Martin, Odlyzko and Wolfram 1984) for
@@ -84,7 +90,7 @@ Carried from earlier epics:
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — is intermittent composition native | **Status:** Partially successful | Native exactly on affine substrates; never on nonlinear ones |
-| Local direction — networks of processes | Research directions | Persistent composition is absent and native intermittent composition is affine only |
+| Local direction — networks of processes | Research directions | Persistent composition is absent in uniform chains (narrowed: see the correction) and native intermittent composition is affine only |
 | Broader exploration — G5 with G1 | Known alternatives | Direction 2, a middle ring that carries without cancelling; affine pulse laws |
 | Long-term goal — G5 Dynamics (question 4) | Capability gained | A native network across time exists, intermittently, on affine substrates |
 

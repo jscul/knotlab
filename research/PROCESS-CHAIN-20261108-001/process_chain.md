@@ -58,6 +58,13 @@ One size past the census, with the contacts moved off the opposite point of the 
 | No persistent chain composes (B), chains to 5/6/5 with opposite contacts | 4/5/4 and 5/7/5 (contacts 2 and 3, and 3 and 4, apart each way) and 5/8/5 (opposite): 4,224 chains | pass: 198 chains keep both contacts and none composes; no chain binds its ends at every lag from d + 1 on |
 | The light cone (A), to 5/6/5 | the same chains | pass: no binding claimed before d + 1 |
 
+## Correction (2026-11-08)
+
+Logged in `docs/CORRECTIONS.md` as a narrowing. The answer said "At the sizes tested, two contacts that each persist across time
+never compose", and the long-term verdict said that persistence and composition "did not coexist in elementary chains". Both hold
+for this census's family, one rule on all three rings and one law at both contacts. `AFFINE-WIRE-20261108-001` found 2,376 affine
+chains that mix rules and laws in which both contacts persist and the chain composes at every lag from d + 1 on.
+
 ## Literature and provenance
 
 - **Sources.** Light cones of cellular automata on graphs. Boolean automata double-cycles (Demongeot, Noual, Sené and coauthors)

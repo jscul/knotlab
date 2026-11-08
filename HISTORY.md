@@ -3,6 +3,24 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: persistent contacts do compose across time
+
+- PROCESS-CHAIN-20261108-001 said that, at the sizes tested, two contacts
+  that each persist across time never compose, and INTERMITTENT-NET-20261108-001
+  said that persistent composition remains absent. Both were measured on chains
+  with one rule on all three rings and one law at both contacts.
+- AFFINE-WIRE-20261108-001 searched affine chains that mix rules and laws and
+  found 2,376 in which both contacts persist and the far contact binds the end
+  rings at every lag once the far ring can reach it, 430 of them through the
+  middle ring's own cells. The smallest runs rule 150 on rings of 3, 5 and 3
+  cells. The constructions are verified on their full state spaces.
+- The two decision notes,
+  [two contacts across time](research/PROCESS-CHAIN-20261108-001/process_chain.md)
+  and [intermittent networks](research/INTERMITTENT-NET-20261108-001/intermittent_net.md),
+  carry correction sections.
+- Unchanged: every count of both censuses, and the result that intermittent
+  composition is native only on affine substrates.
+
 ## 8 November 2026: those crystals are brick rows
 
 - The entry below calls the 16 new planes rectangle grids. Their rows (or

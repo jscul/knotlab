@@ -1446,7 +1446,9 @@ So network holes come in two kinds:
      binds its ends through the middle ring, the contact-network gate read across time (Payoff 3/3, Concreteness 2/3). The
      alternatives are why some rules persist, and saturation ([decision note](../research/SHARED-CONTACT-20261108-001/shared_contact.md)).
 
-   **2026-11-08: two persistent contacts do not compose across time** (`PROCESS-CHAIN-20261108-001`).
+   **2026-11-08: in uniform chains, two persistent contacts do not compose across time** (`PROCESS-CHAIN-20261108-001`).
+   - **Narrowed (2026-11-08).** The census ran one rule on all three rings and one law at both contacts. Chains that mix rules
+     and laws do compose persistently (two entries below; `docs/CORRECTIONS.md`).
    - **The question.** Three rings in a chain: ring A and ring B share a contact c1, and ring B and ring C share a contact c2, d
      cells apart on ring B. Can both contacts persist, and does the chain then bind its ends, c2 needing the pasts of both A and C at
      every lag once A's past can reach it? This is the contact-network gate's composition, read across time.
@@ -1456,7 +1458,7 @@ So network holes come in two kinds:
      - **The light cone.** In a shared chain the far ring reaches the far contact only from lag d + 1, after crossing the middle
        ring.
      - **The linear case.** Linear chains bind along the supports of their M^T rows.
-   - **Persistent contacts do not compose (exploratory).**
+   - **Persistent contacts do not compose in uniform chains (exploratory).**
      - **The census.** Of 5,632 chains, each exact at every lag, both contacts persist in 182. In none of them does a contact bind
        the end rings at every lag from d + 1 on.
      - **One size past.** With the contacts moved off the opposite point of the middle ring, 198 more chains keep both contacts and
@@ -1466,7 +1468,7 @@ So network holes come in two kinds:
    - **Composition comes and goes (exploratory, post hoc).** 195 chains bind their ends at some lags of their eventual cycle, 154
      of them with both contacts binding at those lags. These are mostly shift rules (15, 170) and linear ones (60, 90, 105, 150),
      which carry a contact's past round the middle ring in pulses. None of them keeps both contacts at every lag.
-   - **Reading.** At these sizes persistence and composition did not coexist. A native network across time is at best intermittent
+   - **Reading.** In these uniform chains persistence and composition did not coexist. A native network across time is at best intermittent
      here, against the static native networks of laws that compose like cycles (`NATIVE-NETWORK-20261021-001`).
    - **Provenance.** Elementary arguments and light cones; Boolean automata double-cycles share one node, and a chain shares two.
      New as far as found: the census of chains by persistence and composition.
@@ -1490,17 +1492,43 @@ So network holes come in two kinds:
      happens, because the other cells can override an end that has arrived. Twenty rule-law pairs compose at every tested size, and
      one size past the same pattern holds (24 of 112, all affine).
    - **Reading.**
-     - **For the gate.** The contact gate asks for persistence, so A34's strict reading stands, and persistent composition across
-       time remains absent.
+     - **For the gate.** The contact gate asks for persistence, so A34's strict reading stands. Persistent composition was absent
+       in the uniform chains tested, and chains that mix rules and laws have it (next entry; narrowed 2026-11-08).
      - **What exists instead.** A weaker network: native, intermittent, and only where the substrate is affine.
      - **The recurring answer.** This is the program's recurring family: towers of patterns keep only parity, and static networks
        compose for affine laws.
    - **Provenance.** Eventual periodicity of finite dynamics; additive automata on rings (Martin, Odlyzko and Wolfram 1984). New as
      far as found: the census of intermittent composition by nativeness.
-   - **Next (research directions).** A middle ring that carries without cancelling, now searched among affine chains through their
-     polynomials (Payoff 3/3, Concreteness 2/3), and the pulse law of affine chains (Payoff 2/3, Concreteness 2/3). Stop the process
-     line if arrival sets of affine chains always have gaps
+   - **Next (taken).** A middle ring that carries without cancelling, searched among affine chains (next entry; Payoff 3/3,
+     Concreteness 2/3). The alternative was the pulse law of affine chains
      ([decision note](../research/INTERMITTENT-NET-20261108-001/intermittent_net.md)).
+
+   **2026-11-08: a persistent native network across time** (`AFFINE-WIRE-20261108-001`).
+   - **The question.** Among affine chains, each ring with its own rule and each contact with its own law, can both contacts persist
+     while the far contact binds the end rings at every lag from d + 1 on? The coordinator's stop condition was forced gaps.
+   - **A finite question (proved).** In an affine chain a contact's value at lag T is the parity of the first-row cells in its row of
+     M^T. So persistence and composition are decided exactly by iterating two row vectors until they repeat.
+   - **It exists (exploratory, verified).**
+     - **The search.** Of 9,216,000 affine chains, 2,376 keep both contacts persistent and compose at every lag from d + 1 on, and in
+       380 of them both contacts bind the end rings.
+     - **Through the middle ring.** In 430 the contacts are two or three cells apart, so the middle ring carries c1's past across
+       its own cells.
+     - **The smallest.** Rule 150 on all three rings, 3/5/3 cells, contacts two apart. Each contact reads both of its middle-ring
+       neighbours and one neighbour of its end ring. From lag 3 on, c2 holds one fixed parity of cells from all three rings and both
+       contacts' first values: a single knot at every lag. It is verified on the full state space, by the generic enumerator, and
+       by knotlab check.
+     - **One size past.** With a middle ring of 8 cells, 80 chains in 40 of the 337 composing families still compose.
+   - **Reading.**
+     - **The gate across time.** Two complete contacts between processes coexist, each binds its two rings at every lag, and they
+       compose by the substrate's own law, with constants changing nothing. Transport is partial and restrictions are untested.
+     - **Why the earlier chains failed.** They were uniform. The constructions mix laws, a contact reading its middle ring on both
+       sides and its end ring on one, and many mix rules.
+     - **The recurring family.** Again it is the affine one.
+   - **Provenance.** Linear recurring sequences over GF(2); additive automata on rings. New as far as found: persistent composition
+     of two contacts across time.
+   - **Next (selected).** Native paths across time: chains of four rings and three contacts built from the composing families, with
+     the gate's restrictions and transports (Payoff 3/3, Concreteness 2/3). The alternatives are the pulse law, nonlinear persistent
+     composition, and learning a rule from its knots ([decision note](../research/AFFINE-WIRE-20261108-001/affine_wire.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

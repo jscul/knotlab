@@ -1,0 +1,131 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SWITCH-READ-20261108-001A-P001",
+  "canonical_id": "SWITCH-READ-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "SWITCH-READ-20261108-001A",
+  "proof": "SWITCH-READ-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Placements in one switching class",
+  "status": "Proved",
+  "claim": "Placements in one switching class (computed exactly). HANDLE-COUNT A's generator, run under hash seeds 0 to 23, gives each of TRISUM-READ's 17 glues one glue whose Pfaffian and minimal signings all lie in one switching class, and gives 11 of the glues two or three placements of their atoms that are not isomorphic as spaces, 25 in all. On the five glues whose alternative placement is mapped here (38 to 56 points), the native creation maps of the two placements agree exactly on the block of glue lines, so creation between glue lines sees only the switching class; but the whole maps are never isomorphic, neither with the glue's lines fixed nor under any bijection. The difference lies in atom removals: removing a line of an atom creates differently at glue lines, so native creation reads where the atoms sit, while removing a glue line creates at the atom lines with the same multiset of vectors in both placements. TRISUM-READ's frozen statements P1 to P7 hold on all five alternative placements. The other placements, 56 to 60 points, are left to a follow-up.",
+  "dependencies": [
+    "TRISUM-READ-20261107-001A",
+    "TRISUM-READ-20261107-001B",
+    "TRISUM-READ-20261107-001C"
+  ],
+  "evidence_modes": [
+    "exact-computation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "computed-classification",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A glue whose regenerated placements leave one switching class or differ from the recorded classes, an alternative map whose recomputed rows differ, or a pair of placements whose glue block differs or whose whole maps are isomorphic."
+  ],
+  "lineage": {
+    "home_scope": "SWITCH-READ-20261108-001",
+    "epic_path": [
+      "SWITCH-READ-20261108-001"
+    ],
+    "parents": [
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/manifest.json",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/result.json",
+      "proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/manifest.json",
+      "proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/result.json",
+      "proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/spaces.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/maps.json.gz",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/map_lib.py",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/maps.json.gz",
+      "proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/order_lib.py",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "ff9e5bf86c44bdaf421cfbad010b95207fd29e8694ade4c9a23ea051ffaf3a86",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "3f340fdfcc78df5fb2954d917dfaa10756d2d29c28f0945a0b13942063eb2400",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/manifest.json": "b204d922aea2d98006ff8b1ee414243ee62cd9dd20fd8fe55bc938acebb201b0",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/result.json": "5b62b862dc650f7544b1390f96caeb9b350e11fcdb7287a6e0986a91c4579151",
+    "proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/manifest.json": "1cad75710371661639d017a0cdde622339bfbcae14e2bca61651fc5e77306673",
+    "proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/result.json": "81fde9b33c5baef8e4bc7fa074e2b52e8536e6074278072e08965b11c42908e2",
+    "proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/manifest.json": "eef8c277daca8da0172d33a56a34acfa7cb1c0fecdc5757ab291ff96566b81b4",
+    "proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/result.json": "bd62de6e58a965e367deda2d7c3aece5655da312b752ed0661dc32957126c184",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py": "48f7a7031af09356645f8683f1aa2bcf68acadb66e419420f8b7ce34ed29af74",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py": "52c98b08a276d0b751e574a4711b54ef6b1882230ad71441794996889f3fe66f",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/spaces.json": "2c40b635691c5e49b25a370a3f5c568a4fbb542c212a6e439994386a37c432f0",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/maps.json.gz": "f9bea3bcd62e94e669557549abb89dca6068e1c136cf9580c91a7ff194c0ead3",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/map_lib.py": "87186e6769bd2ca1e1da89cd939affae2679f848f0d44176dd61e6d95093182f",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/maps.json.gz": "62f4bef93519670a7b3283ad2208e19f6ce373e2164cf3982cd878a37f04c6d3",
+    "proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/order_lib.py": "d04ab894f07f1d59c171f3703551bc5877943b02d32d10762c2c37a13d34ff32",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py": "4f2ed0842d316c96985bc9fea2ffb68c2e7465f02e8cfabf39b63d2725abb730",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82"
+  },
+  "paths": {
+    "manifest": "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/manifest.json",
+    "identity": "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/identity.json",
+    "directory": "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class",
+    "proof": "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/proof.md",
+    "result": "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/result.json",
+    "check": "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "switching_class_placements_compared": true
+  },
+  "foundation_claim_scope": "The placements that HANDLE-COUNT A's generator gives TRISUM-READ's 17 glues under hash seeds 0 to 23.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead under the repository owner's standing mandate on 2026-11-08.",
+    "status": "computed exactly on the stated maps; no human or external review",
+    "novelty": "New here."
+  }
+}

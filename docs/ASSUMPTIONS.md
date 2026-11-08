@@ -75,11 +75,13 @@ evidence: results and their status come from the records each entry links.
 | [A18](#a18--the-fano-plane-is-the-knots-only-three-fold-space) | The Fano plane is the knot's only three-fold space | working premise | Overturned |
 | [A19](#a19--a-gadgets-verdict-does-not-depend-on-how-its-points-are-listed) | A gadget's verdict does not depend on how its points are listed | working premise | Overturned |
 | [A20](#a20--a-learning-point-is-a-localized-dissonance) | A learning point is a localized dissonance | reading | Assumed |
-| [A21](#a21--learning-changes-the-law-not-the-state) | Learning changes the law, not the state | reading | Assumed |
+| [A21](#a21--learning-changes-the-law-not-the-state) | Learning changes the law, not the state | reading | Confirmed |
 | [A22](#a22--many-points-at-once-means-no-scheduler) | Many points at once means no scheduler | reading | Assumed |
 | [A23](#a23--a-laws-local-view-is-its-rooted-code) | A law's local view is its rooted code | measure | Assumed |
 | [A24](#a24--the-pinwheel-laws-allowed-states-fix-its-planar-map) | The pinwheel law's allowed states fix its planar map | working premise | Assumed |
 | [A25](#a25--a-local-law-without-hidden-states-cannot-force-roundness) | A local law without hidden states cannot force roundness | working premise | Assumed |
+| [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Assumed |
+| [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 
 ## Entries
 
@@ -458,11 +460,17 @@ evidence: results and their status come from the records each entry links.
   update law. The parked direction's first step decides between them: on the octahedral knot spheres, change one sign at a time
   and check whether the forced dissonance moves as its index predicts.
 - **History.**
+  - 2026-11-07 · The first step ran in `RESIGN-STEER-20261107-001`. The forced dissonance moves exactly as its index predicts:
+    one sign change at the violated line splits its index 2 into two even faces of index 1, every such law is satisfiable, and
+    the halves rejoin into a violated line anywhere ([steering by re-signing](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
+    The point stays localized, a line or two faces. The persistence reading was not tested, and the count of states consistent
+    with the law turned out to rank the halves' positions, a second, entropic notion of the strength the owner's words name. Kept
+    as Assumed.
   - 2026-11-07 · Added from the readings recorded with the owner's learning picture; none is a result.
 
 ### A21 · Learning changes the law, not the state
 
-**Assumed** · 2026-11-07 · reading
+**Confirmed** · 2026-11-07 · reading
 
 - **Statement.** In the learning picture, orienting the logic means choosing signs, a change of the law rather than of the state.
   Rationalization removes dissonance by changing the law, with a sign or an added witness, rather than the state.
@@ -474,6 +482,13 @@ evidence: results and their status come from the records each entry links.
   settles. The steering direction's first check, whether one re-signing moves the forced violated line out of the states once
   two even faces appear, tests the premise of this reading.
 - **History.**
+  - 2026-11-07 · Confirmed on the sphere, with its boundary drawn, by `RESIGN-STEER-20261107-001`. The premise is proved: on
+    every simplicial knot sphere one re-signing at the violated line leaves a satisfiable law with two even faces. The boundary:
+    on the sphere a re-signing that keeps the even faces where they are is a change of state in disguise (a gauge), and a closed
+    walk of re-signings equals a block change of state. So the part of learning that is not a change of state is exactly where
+    the law's even faces sit ([steering by re-signing](../research/RESIGN-STEER-20261107-001/resign_steer.md)). Off the sphere,
+    signings with the same even faces also differ by a homology class, which no change of state reaches; that is not yet
+    studied.
   - 2026-11-07 · Added from the readings recorded with the owner's learning picture.
 
 ### A22 · Many points at once means no scheduler
@@ -546,3 +561,39 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-07 · Challenged in the plane by `PINWHEEL-ATLAS-20261107-001`: no tested periodic plane obeys the pinwheel's law;
     left open.
   - 2026-11-07 · Proved for closed spheres by `SPHERE-GROWTH-20261107-001`.
+
+### A26 · A learner acts only at dissonance while the state holds still
+
+**Assumed** · 2026-11-07 · scope
+
+- **Statement.** In the steering results a learning step changes one sign, and only on a side of a violated line or on a side
+  with an end at an even face, where dissonance can be seen. The state does not change while the law is learned. A target, when
+  there is one, is supplied from outside as a graph distance on the triangulation.
+- **Why.** `RESIGN-STEER-20261107-001` took it by default, to separate what changing the law can do from what changing the state
+  can do. It is the cleanest reading of "learning orients the logic", and it matches the owner's word for the process,
+  rationalization: the belief changes and the behaviour does not.
+- **Rests on it.** That epic's theorem that re-signing alone carries the dissonance from any line to any line with the state fixed,
+  and its local rule, which reached 2,399 of 2,400 targets
+  ([steering by re-signing](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
+- **Challenge.** The alternatives let the state relax by its own local moves between learning steps, or let the learner change any
+  sign. The cheapest test runs the same local rule while the state takes one improving step after each sign change, and asks
+  whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
+  as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
+- **History.**
+  - 2026-11-07 · Added by `RESIGN-STEER-20261107-001`.
+
+### A27 · A law is weighed by how many states it allows
+
+**Assumed** · 2026-11-07 · measure
+
+- **Statement.** When laws are compared, as in the force between the two halves of a rationalized dissonance or in a learner that
+  keeps the most possibilities open, each law is weighed by the number of states that satisfy it, every state counting once.
+- **Why.** `RESIGN-STEER-20261107-001` took it by default. It is the uniform measure on allowed states, the one the canonical
+  reading of allowed states (A3, A8) suggests, and it makes the weights exact counts of perfect matchings.
+- **Rests on it.** That epic's finding that the halves repel, the corners attract, and a learner that keeps the most states parks
+  the halves on corners ([steering by re-signing](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
+- **Challenge.** The alternatives weigh states by their dissonance at a temperature, or count only the states reachable by local
+  moves. The cheapest test recomputes the force with each state weighted by a power of its number of over-agreeing faces, or with
+  the states of one local-move component only, and checks whether the halves still repel and the corners still attract.
+- **History.**
+  - 2026-11-07 · Added by `RESIGN-STEER-20261107-001`.

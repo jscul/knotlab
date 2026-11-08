@@ -1238,6 +1238,44 @@ So network holes come in two kinds:
      fills every loop.
 4. **Dynamics.** Are loops better modeled as processes whose outputs over time
    are the data, and does the static definition survive that change?
+
+   **2026-11-07: steering the knot sphere's dissonance by re-signing** (`RESIGN-STEER-20261107-001`).
+   - **The question.** The owner pictures learning as a point with a strength like charge moving through a learned network of knots,
+     the learning orienting the logic to guide it to a resolution. On a Kasteleyn-signed knot sphere no change of state removes the
+     dissonance: some line is always violated. Take that forced dissonance as the point and learning as changing signs. Can
+     learning move it, and where to?
+   - **Rationalization never fails (proved).** Violated lines minus over-agreement plus half the number of even faces is 1 in every
+     state and law. One sign change at the violated line splits the point into two even faces, the law's own marks, and on every
+     simplicial sphere every law with two even faces, wherever they sit, has consistent states (Euler's formula and Hall's
+     theorem). With four or more even faces every state over-agrees somewhere: rationalizing too much makes the opposite
+     dissonance.
+   - **The unlearned law prefers no place (proved).** Every line is the violated line of exactly 2 N(T) least-dissonance states,
+     with N(T)² = det(B Bᵀ) / (n0 n1 + n1 n2 + n2 n0), B the line–vertex matrix and n_i the sizes of the vertex 3-colouring's
+     classes: 54 on K_2, 24,576 on K_3, 163,840,000 on K_4.
+   - **Learning alone steers (proved).** With the state held fixed, sign changes made only at the violated line or at an even face
+     carry the point from any line to any line, never holding more than the forced unit. On the sphere a closed walk of sign
+     changes equals a block change of state, so what learning adds to behaviour is exactly where the even faces sit. In dimer
+     language the point is a trimer, the even faces are monomers, and the walk is the worm algorithm of dimer models, carried by the
+     signs.
+   - **Measured on the octahedral spheres (exploratory).**
+     - **A local rule suffices.** A rule that sees only the lines at one even face and the distance to the target, and never steps
+       straight back, reached 2,399 of 2,400 targets on K_2–K_8 and K_10, and 300 of 300 on K_12.
+     - **The halves repel and the corners attract.** The number of consistent states is least when the two even faces touch and
+       grows like a power near 1/2 of their separation (fitted 0.46 on K_12, 0.49 on K_16, 0.51 on K_20), as for two unit holes in
+       lozenge tilings.
+     - **Corners are where the halves rest.** A learner that moves the even faces to keep the most states parked both on corners
+       in all 150 runs on K_3–K_10.
+   - **Reading.** For the owner's picture: rationalization moves the point into the law as two half-charges, learning carries
+     them, and rejoining puts the point where it is wanted. The count of consistent states adds a strength of a second kind,
+     stability: the halves are least stable when they touch and settle on the corners, where the curvature that forced the
+     dissonance sits.
+   - **Provenance.** Known: Kasteleyn's theorem, Hall's theorem, Heawood's colouring theorem, monomer correlations (Fisher and
+     Stephenson), worm algorithms for dimers (Sandvik and Moessner), Ciucu's electrostatics of holes in lozenge tilings. Not found:
+     the uniform count over lines and its closed form.
+   - **Next (awaiting the owner's go-ahead).** Learning in handles: off the sphere, signings with the same even faces differ by a
+     homology class that no change of state reaches, so a learning walk around a handle could remove a dissonance that the class
+     forces, with no mark left in the law (Payoff 2/3, Concreteness 2/3). The alternatives: many points at once, and layers
+     through naming knots ([decision note](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

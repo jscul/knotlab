@@ -79,7 +79,7 @@ evidence: results and their status come from the records each entry links.
 | [A22](#a22--many-points-at-once-means-no-scheduler) | Many points at once means no scheduler | reading | Assumed |
 | [A23](#a23--a-laws-local-view-is-its-rooted-code) | A law's local view is its rooted code | measure | Assumed |
 | [A24](#a24--the-pinwheel-laws-allowed-states-fix-its-planar-map) | The pinwheel law's allowed states fix its planar map | working premise | Assumed |
-| [A25](#a25--a-local-law-without-hidden-states-cannot-force-roundness) | A local law without hidden states cannot force roundness | working premise | Assumed |
+| [A25](#a25--a-local-law-without-hidden-states-cannot-force-roundness) | A local law without hidden states cannot force roundness | working premise | Confirmed |
 | [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Assumed |
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
@@ -87,6 +87,7 @@ evidence: results and their status come from the records each entry links.
 | [A30](#a30--a-processs-memory-is-read-from-its-two-time-knots) | A process's memory is read from its two-time knots | scope | Assumed |
 | [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Under challenge |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
+| [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
 
 ## Entries
 
@@ -564,7 +565,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A25 · A local law without hidden states cannot force roundness
 
-**Assumed** · 2026-11-07 · working premise
+**Confirmed** · 2026-11-08 · working premise
 
 - **Statement.** A uniform local law with no hidden states cannot force its spaces to be round: whatever such a law allows on a
   round space, it also allows on some space that is not round.
@@ -573,12 +574,17 @@ evidence: results and their status come from the records each entry links.
   sphere line's readings carried it over to space in general.
 - **Rests on it.** The reading that roundness costs hidden information, one witness bit per incidence on the spheres, and with
   A13 the reading that a round space is laid out only with hidden bits.
-- **Challenge.** The pinwheel atlas epic tested it in the plane. The pinwheel's own radius-2 law is a finite list of 1,168 forms
-  that reads every label from the unlabelled map, and none of 96,474 tested periodic configurations obeys it, even at radius 1
-  ([pinwheel atlas](../research/PINWHEEL-ATLAS-20261107-001/pinwheel_atlas.md)). So in the plane it is untested rather than
-  false. A proof that every map with only the pinwheel's forms is a pinwheel tiling would overturn it there, given A24, and a
-  plane that is not round but obeys the law, perhaps one built from the pinwheel's own vertex stars, would support it.
+- **Challenge.** The pinwheel tested it in the plane, and it held. The pinwheel's own radius-2 law is a finite list of 1,168 forms
+  that reads every label from the unlabelled map, and none of 96,474 periodic configurations obeys it uncut
+  ([pinwheel atlas](../research/PINWHEEL-ATLAS-20261107-001/pinwheel_atlas.md)). But a crystal cut by the pinwheel's own
+  subdivision does: the rhombus lattice cut once obeys the collar law, and for every radius a further cut obeys the pinwheel's
+  undecorated radius-r law, so no such law forces roundness
+  ([collar plane](../research/COLLAR-PLANE-20261108-001/collar_plane.md)). It would be reopened by a uniform local law without
+  hidden states, in the plane or on a surface, whose allowed spaces are all round.
 - **History.**
+  - 2026-11-08 · Confirmed in the plane for the pinwheel by `COLLAR-PLANE-20261108-001`: a periodic plane obeys its undecorated
+    local law at every radius. The atlas epic's reading that the plane might need no hidden bit is corrected
+    (`docs/CORRECTIONS.md`).
   - 2026-11-07 · Bears on it: `GROWTH-LAW-20261107-001B`. The pinwheel's collar law, one tile around each tile with no hidden
     states, admits collar-legal patches of 500 tiles that are not pinwheel patches, built by forced-first growth. They are finite
     and break the radius-2 law, so this is left open.
@@ -635,9 +641,12 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The dead-end counts and sizes of `GROWTH-LAW-20261107-001B` and `GROWTH-LAW-20261107-001C`, and the reading
   that label-free growth leaves the pinwheel at once.
 - **Challenge.** A deeper lookahead could get stuck later or less often. Ticket C's stronger arm adds the radius-2 atlas. Dworkin
-  and Shieh (1995) prove that every aperiodic protoset of the plane has deceptions of all orders, so a stronger rule can change
-  when growth fails, but not whether some order fails. The cheapest test is two moves of lookahead on ticket B's seeds.
+  and Shieh (1995) prove that every aperiodic protoset of the plane has deceptions of all orders, but the pinwheel's collar and
+  radius-2 laws are not aperiodic: a periodic plane obeys both (`COLLAR-PLANE-20261108-001`). So that theorem does not settle
+  whether some growth order of these laws fails. The cheapest test is two moves of lookahead on ticket B's seeds.
 - **History.**
+  - 2026-11-08 · Challenge reworded after `COLLAR-PLANE-20261108-001`: it had said that by Dworkin and Shieh a stronger rule can
+    change when growth fails but not whether some order fails, which needs an aperiodic law (`docs/CORRECTIONS.md`).
   - 2026-11-07 · Added by `GROWTH-LAW-20261107-001`.
 
 ### A29 · Where an atom sits within its switching class does not matter
@@ -721,3 +730,23 @@ evidence: results and their status come from the records each entry links.
   the census of ticket B with "some knot meets both rings" and compares the classes.
 - **History.**
   - 2026-11-08 · Added by `PROCESS-CONTACT-20261108-001`.
+
+### A33 · A local law is read up to congruence
+
+**Assumed** · 2026-11-08 · reading
+
+- **Statement.** A local law of tiles lists its allowed neighbourhoods up to congruence: a neighbourhood is written in its central
+  tile's own frame, so rotations and reflections are free, and no absolute direction belongs to the law. The pinwheel's collar law
+  (108 collars) and its radius-r laws are read this way, and the theorem that no undecorated local law of the pinwheel forces
+  aperiodicity is stated for such laws.
+- **Why.** The program's laws are not written on a space in advance, so they carry no frame. `PINWHEEL-ATLAS-20261107-001` took it
+  by default for its collars (its rooted codes, A23, are congruence-free anyway), and `COLLAR-PLANE-20261108-001` stated its
+  theorem under it ([collar plane](../research/COLLAR-PLANE-20261108-001/collar_plane.md)).
+- **Rests on it.** The atlas's finite counts (193 collars, 108 complete, 1,168 forms), the growth engine's law, and the reading that
+  the plane needs hidden information for roundness.
+- **Challenge.** A law that also records directions against a fixed frame sees the pinwheel's tiles in infinitely many directions,
+  so no finite law of that kind holds the pinwheel at all, and the question changes rather than its answer. A milder alternative
+  records handedness only: in the pinwheel every complete collar occurs with both handednesses, so the cheapest test is to recount
+  the census with handedness kept and check that nothing changes.
+- **History.**
+  - 2026-11-08 · Added by `COLLAR-PLANE-20261108-001`.

@@ -88,6 +88,21 @@ reuses the tickets' own code. The 1,500-tile oracle finished after the epic's co
 | The radius-2 law gets stuck too (C; bfs and random) | The forced-first order, seeds 1..10, where the collar law alone let 4 runs wander 500 tiles off the pinwheel | pass: 10 of 10 dead-ended, within 124 to 309 tiles, with no interior dart off the radius-2 atlas; the four wandering seeds now stop at 124 to 309 tiles (`stress_test_c_partial.jsonl`) |
 | Few real bits (C; oracle to 1,000 tiles) | The oracle to 1,500 tiles, bfs seeds 1..3 (run after the epic's commit, under the owner's rule of 2026-11-08 that long stress tests do not block progress) | pass: all three reached 1,500 tiles inside the pinwheel; from 1,000 to 1,500 tiles the real bits after the seed stayed at 8.3 and 7.2 for seeds 1 and 2 and rose from 6.2 to 7.2 for seed 3 (one more free choice, at 1,167 tiles), while the apparent bits rose by 16 to 29 (`stress_test_c.json`) |
 
+## Correction (2026-11-08)
+
+Logged in `docs/CORRECTIONS.md` as a narrowing, after publication, when `COLLAR-PLANE-20261108-001` found a periodic plane that obeys
+the collar law. As first published, ticket B's status and conclusion 8 of the closure called the dead ends "consistent with Dworkin
+and Shieh (1995)", and "Next steps" said the local direction "is exhausted in the sense of Dworkin and Shieh", so that a stronger
+local law "changes when growth fails, not whether some order fails".
+- **What is true.** Dworkin and Shieh's theorem is about aperiodic sets of tiles. Neither the collar law nor the radius-2 law is one:
+  the rhombus lattice (four tiles around a common right angle, translated) obeys the collar law after one cut and the radius-2 law
+  after two ([collar plane](../COLLAR-PLANE-20261108-001/collar_plane.md)). So the theorem says nothing about whether some growth
+  order of these laws must fail, and the dead ends measured here are facts about coin growth, not consequences of aperiodicity.
+- **"A harmony is what grows in every order"** stays true as stated: a law whose growth never gets stuck in any order has a periodic
+  tiling. The pinwheel's undecorated laws have one, so the reading does not set them apart.
+- **What stands.** Every measurement of tickets B and C: all 70 coin runs left the pinwheel, the first wrong move is always a coin,
+  the oracle's real and apparent bits, and the radius-2 arm's 40 dead ends. Ticket A is unaffected.
+
 ## Literature and provenance
 
 - **Ticket A.**

@@ -1319,6 +1319,9 @@ So network holes come in two kinds:
      - **Harmonies.** Every aperiodic law of the plane has deceptions of all orders (Dworkin and Shieh 1995). Periodic laws have
        polygonal circles (`LOGIC-CIRCLE-20261107-001`). So a law whose growth never gets stuck, in any order, has a polygonal circle,
        a harmony, among its spaces.
+     - **Corrected 2026-11-08 (narrowing).** The pinwheel's collar and radius-2 laws are not aperiodic: a periodic plane obeys both
+       (`COLLAR-PLANE-20261108-001`, under question 9). So Dworkin and Shieh do not explain their dead ends, which are measured facts
+       about coin growth (`docs/CORRECTIONS.md`).
      - **Shapes that do not close.** The owner said on 2026-11-08 that our minds are shapes that do not close, continuous with the
        shapes they touch. Euler's count gives a formal side. A world grown by sprouting stays a tree. One grown by disc moves stays
        a disc until its last triangle. Closing a ring or a handle takes a move that joins the world to itself.
@@ -1327,8 +1330,8 @@ So network holes come in two kinds:
      Socolar 1988). New as far as found: their reading under K1–K3, and the pinwheel's outward growth.
    - **Next (taken).** Knots across time (next entry): read Ledrappier's law as the space-time law of the cellular automaton rule
      60, then find the knots across time of rules 90 and 150, of one nonlinear rule and of Conway's Life (Payoff 2/3, Concreteness
-     2/3). The alternatives are the collar law off the pinwheel, one hierarchy bit per level, and every accretion law
-     ([decision note](../research/GROWTH-LAW-20261107-001/growth_law.md)).
+     2/3). The alternatives are the collar law off the pinwheel (taken by `COLLAR-PLANE-20261108-001`, under question 9), one
+     hierarchy bit per level, and every accretion law ([decision note](../research/GROWTH-LAW-20261107-001/growth_law.md)).
 
    **2026-11-08: knots across time are minimal decisive sets** (`TIME-KNOTS-20261107-001`).
    - **The question.** Question 4's other half, backlog B7: when states change under a local dynamics, which knots join a cell's
@@ -3742,6 +3745,9 @@ So network holes come in two kinds:
    - **Reading.**
      - **Unlike the sphere.** On the sphere, a law without hidden states cannot tell a round sphere from a tube
        (`SPHERE-GROWTH-20261107-001`). In the plane, the pinwheel's own law rejects every tested non-round plane outright.
+     - **Corrected 2026-11-08 (narrowing).** The contrast does not hold. Cut once, one of the tested planes, the rhombus lattice,
+       obeys the collar law, and cut twice the radius-2 law; no undecorated local law of the pinwheel forces roundness
+       (`COLLAR-PLANE-20261108-001`, next entry; `docs/CORRECTIONS.md`).
      - **Why.** Its vertices are mostly T-junctions at long-leg midpoints, which crystalline arrangements of the same triangle do not
        make in the allowed combinations.
      - **The shared question.** For regrowth, roundness costs no hidden information beyond the patch's shape at radius 2. Whether the
@@ -3752,9 +3758,39 @@ So network holes come in two kinds:
      - **Not found.** The atlas, the readability theorem and the periodic test.
    - **Next (held, at the owner's request to wrap up current lines).**
      - **Forcing.** Whether the undecorated law forces aperiodicity: a torus search over the law's own vertex stars (Payoff 2/3,
-       Concreteness 2/3).
+       Concreteness 2/3). Answered by `COLLAR-PLANE-20261108-001`: it does not, at any radius.
      - **Growth.** Outward growth in every growth order (Payoff 2/3, Concreteness 1/3).
      - **The boundary.** Radius 2 at the boundary as a theorem (Payoff 1/3, Concreteness 3/3).
+
+   **2026-11-08: a periodic plane obeys the pinwheel's local laws** (`COLLAR-PLANE-20261108-001`).
+   - **The question.** Outward growth by the pinwheel's collar law (one tile around each tile) left the pinwheel. Does a periodic
+     plane obey that law? If none did, the plane would need no hidden information for roundness, unlike the sphere.
+   - **A crystal passes (proved).**
+     - **The witness.** Four tiles around a common right angle make a rhombus. Tile the plane with these rhombi by translation and
+       cut once: every tile's collar is one of the pinwheel's 108, with 20 tiles in each period.
+     - **Every radius.** The cut keeps the law, and each further cut hides the crystal's seams one level deeper. So for every radius
+       a periodic plane obeys the pinwheel's undecorated law of that radius: the 1,168-form radius-2 law after two cuts, the
+       radius-3 law after three (stress test).
+     - **So.** No undecorated local law of the pinwheel forces aperiodicity, or roundness: the crystal's circles are polygons
+       (`LOGIC-CIRCLE-20261107-001`). Radin's decorations are hidden information.
+   - **One level is forced (proved).** Each collar names its tile's parent, and touching siblings agree, so every plane that obeys
+     the collar law is the cut of a plane of larger triangles. Their collars obey a weaker level-one law: 1,264 collars, 54 of them
+     the pinwheel's. The crystal escapes there: it is the cut of the rhombus lattice, whose collar passes the level-one law.
+   - **The census (exploratory).** Of the atlas epic's periodic planes, cut one to three times, only the rhombus lattice passes after
+     one cut; six brick-row planes join after two. Growth's off-pinwheel patches compose once, and their defect is one level up.
+   - **Reading.**
+     - **The plane is like the sphere.** On the sphere a law without hidden states cannot tell a round sphere from a capped tube; in
+       the plane the pinwheel's own laws, without decorations, cannot tell the pinwheel from a crystal. Roundness costs hidden
+       information in both (A25, confirmed for the pinwheel).
+     - **Growth.** The collar law is not an aperiodic set, so the deceptions theorem of Dworkin and Shieh does not explain growth's
+       dead ends (a correction to the growth-law entry under question 4).
+   - **Provenance.** Known: decorated matching rules (Radin 1994; Mozes; Goodman-Strauss 1998), the question of undecorated local
+     rules (Levitov 1988), recognizability (Solomyak 1998), and cutting a crystal to defeat local rules as a method. Not found: the
+     pinwheel's witness and conclusion, the forced first level and the level-one law.
+   - **Next (awaiting a go-ahead).** The price of roundness in the plane: how many hidden bits per tile make a local law force the
+     pinwheel. First step: label each tile with its child index and test whether the labelled collar law forces two levels
+     (Payoff 2/3, Concreteness 1/3). The alternatives are a note for outside readers, the collar law's other planes, and the least
+     period ([decision note](../research/COLLAR-PLANE-20261108-001/collar_plane.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

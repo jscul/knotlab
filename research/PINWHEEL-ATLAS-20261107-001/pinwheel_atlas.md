@@ -39,6 +39,20 @@ Epic `PINWHEEL-ATLAS-20261107-001` (program topology), 2026-11-07.
   the law forces roundness outright is open: no periodic plane passed, but none built from the pinwheel's own vertex stars was
   searched.
 
+## Correction (2026-11-08)
+
+Logged in `docs/CORRECTIONS.md` as a narrowing, after publication. As first published, "Answer" said "The law is selective. No
+tested periodic plane comes close" and, unlike the sphere, "the pinwheel's own law rejects every tested non-round plane outright";
+"Reading" said "the pinwheel's plane may need no hidden bit at all".
+- **What is true.** One of the tested planes, the isosceles shape tiled by half-turns (the rhombus lattice: four tiles around a
+  common right angle, translated), obeys the collar law after one cut and the 1,168-form radius-2 law of ticket A after two. For
+  every radius, a further cut of it obeys the pinwheel's undecorated radius-r law. So no undecorated local law of the pinwheel
+  forces aperiodicity or roundness, and the plane, like the sphere, needs hidden information
+  ([collar plane](../COLLAR-PLANE-20261108-001/collar_plane.md)).
+- **Why the test missed it.** It took each crystal as it is, and a crystal's seams can be hidden under the pinwheel's own cut.
+- **What stands.** Ticket A's theorem (the finite law reads every label), ticket D's boundary measurement, and ticket B's
+  measurement: none of its 96,474 planes obeys the law uncut.
+
 ## Literature and provenance
 
 - **Ticket A.**

@@ -3,6 +3,24 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: the pinwheel's undecorated law does not force roundness
+
+- The pinwheel atlas epic found that none of 96,474 periodic planes obeys
+  the pinwheel's own law, and read this as the plane perhaps needing no
+  hidden information for roundness, unlike the sphere. One of those planes,
+  the lattice of rhombi that four tiles make around a common right angle,
+  obeys the collar law once cut by Conway's cut, and the 1,168-form
+  radius-2 law once cut twice. For every radius a further cut obeys the
+  pinwheel's undecorated law of that radius, so no such law forces
+  roundness ([collar plane](research/COLLAR-PLANE-20261108-001/collar_plane.md)).
+- The growth-as-a-law epic cited Dworkin and Shieh's theorem on aperiodic
+  sets for the dead ends of the pinwheel's outward growth. The collar law
+  and the radius-2 law are not aperiodic, so the theorem does not explain
+  them; the dead ends themselves stand.
+- Both decision notes carry a correction section. Unchanged: the atlas's
+  finite law and its label theorem, every growth measurement, and every
+  record's conclusion.
+
 ## 8 November 2026: native creation does see where atoms sit
 
 - TRISUM-READ-20261107-001-D002 is titled "Native creation cannot see where an

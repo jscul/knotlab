@@ -93,8 +93,8 @@ The radius-3 atlas also gives one size past for `PINWHEEL-ATLAS-20261107-001A`: 
     periodic planes, so its dead ends say nothing about aperiodicity.
 - **Taken by default.**
   - **Congruence.** A local law is read up to congruence: rotations and reflections are free, as in the program's laws, which carry
-    no frame.
-  - **The census.** It used the atlas epic's own families of periodic planes. Both are recorded in the register as A31.
+    no frame. Recorded in the register as A33.
+  - **The census.** It used the atlas epic's own families of periodic planes, a scope stated in ticket C's contract.
 
 ## Corrections
 
@@ -132,8 +132,8 @@ Carried from earlier epics:
 
 **Corrections:** two narrowings (the deceptions reading of `GROWTH-LAW-20261107-001`; the atlas reading of
 `PINWHEEL-ATLAS-20261107-001`), logged in `docs/CORRECTIONS.md`. **Goals:** a G1 checkpoint (obstruction learned); no goal
-change. **Assumptions:** A25 Confirmed in the plane for the pinwheel; history lines for A28 and the atlas entries; A31 added (local
-laws read up to congruence, the census's families).
+change. **Assumptions:** A25 Confirmed in the plane for the pinwheel; A28's challenge reworded (Dworkin and Shieh need an aperiodic
+law); A33 added (a local law is read up to congruence).
 
 - **What is left open.** How much hidden information forces roundness in the plane: Radin's decorations suffice, none is too little.
   Whether a collar-legal plane has fewer than 20 tiles per period, and which non-periodic planes besides the pinwheel obey the

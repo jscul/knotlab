@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PINWHEEL-NATIVE-20261107-001B-E001",
+  "ticket": "PINWHEEL-NATIVE-20261107-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can the finite rule of ticket A read its labels from the pinwheel law itself? Does the law determine its planar map, and is each distinction's label a function of its unlabelled neighbourhood of bounded radius?",
+  "public_inputs": {
+    "patches": "The level-k pinwheel patch (Conway's cut applied k times to one triangle), exact integer coordinates, used only to build the reference structure.",
+    "whitney_step": "The patch's vertex graph G (tile corners; boundary segments as edges) with one extra vertex joined to every boundary vertex; vertex connectivity at levels 2, 3, 4 and 5. Three-connectivity means the law's allowed states (the cycle matroid of G for the tile law, its dual for the corner law) determine the planar map up to mirror image (Whitney).",
+    "oriented_label": "For a dart u -> v of an interior distinction: (the left tile's side type and interval along it, the right tile's side type and interval, whether the two sides run the same way). These carry ticket A's distinction labels and each knot's side assignment and handedness.",
+    "rooted_code": "Breadth-first traversal from u starting at v in the counterclockwise rotation order, numbering vertices in order of discovery, recording each discovered vertex's degree and its neighbours' numbers in rotation order from its parent, out to graph distance r (neighbours of the outermost vertices recorded as known numbers or unknown). No labels, coordinates or angles enter the code beyond the rotation order.",
+    "darts_tested": "Darts whose ends are farther than r + 1 from the patch boundary (graph distance).",
+    "radii": [1, 2, 3, 4, 5, 6, 7, 8],
+    "levels": [5, 6, 7]
+  },
+  "forbidden_inputs": [
+    "Coordinates, lengths or angles in the rooted code",
+    "Changing the label definition or the radii after seeing results",
+    "Dropping darts that conflict"
+  ],
+  "primary_observable": "For each level and radius: the number of tested darts, of distinct rooted codes, and of codes that occur with two or more different oriented labels (conflicts). The least radius with no conflict at every tested level.",
+  "cheapest_meaningful_control": "At the least conflict-free radius, two labellings that are not local must show conflicts: the true labels permuted at random among the tested darts (fixed seed), and the side of the patch's incentre (left or right of a vertical line) on which the dart's midpoint lies. A test that passes these is not read.",
+  "resource_budget": {"wall_minutes": 60, "memory_mib": 8192},
+  "first_executable_signal": "Conflicts at radius 1 and 2 at level 5.",
+  "decision_or_followup_rule": "Readable at radius r* if r* <= 8 is conflict-free at levels 5, 6 and 7 and both controls conflict at r*; then the rule reads its labels from the law within radius r* on these patches. Not readable within radius 8 otherwise. Whitney step holds if the connectivity is 3 at every tested level.",
+  "stop_rule": "Stop at the declared levels, radii and controls.",
+  "nonclaims": [
+    "Exploratory and non-promotable: a conflict-free radius on finite patches is evidence, not a proof that it holds on every pinwheel tiling.",
+    "The rotation order is taken from the drawing; Whitney's theorem gives it from the law up to a global mirror image, which is not re-derived here.",
+    "No physical space or continuum is claimed."
+  ],
+  "feasibility_disclosure": "Scratch probes before this envelope (not evidence): vertex connectivity 3 at levels 2-4; at radius 1, 8 and 9 conflicting codes (of 196 and 198) at levels 5 and 6; at radius 2, no conflict at levels 5 and 6 (1,019 codes over 5,162 darts; 1,158 codes over 40,104 darts)."
+}

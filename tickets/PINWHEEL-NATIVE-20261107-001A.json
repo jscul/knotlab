@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINWHEEL-ROUND-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PINWHEEL-NATIVE-20261107-001A-P001"
+  },
+  "id": "PINWHEEL-NATIVE-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Construct and prove: Conway's pinwheel cut, written as a rule on the tile law (tiles are parity knots over their boundary segments; segments are distinctions shared by two tiles), with each distinction labelled by its two tiles' side types and its place along those sides and each knot by its handedness and which of its distinctions form each side, and no coordinates. Each knot splits into five, each distinction into the pieces its label prescribes, and five new distinctions appear inside each knot. Show the set of labels is finite and closed under the rule, and that the rule regrows the geometric pinwheel law exactly at every level (locality plus induction), checked at levels 1-7 against the geometric construction. Consequence: the round circle of PINWHEEL-ROUND-20261107-001 belongs to a law grown by a finite symbolic rule.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PINWHEEL-NATIVE-20261107-001"
+  },
+  "parent": "PINWHEEL-NATIVE-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (PINWHEEL-NATIVE-20261107-001A-P001): a finite rule on knots regrows the pinwheel law with nothing drawn. Labelling each distinction by its two knots' side types, its interval along them and whether they run the same way, only eleven labels occur (eight inside: a -> g e d e g, b -> h c c, c -> b b, d -> a, e -> b, f -> b, g -> a, h -> b; three on the boundary), each knot splits into five with handedness chi*(-1,-1,1,1,-1) and five new inside distinctions f, g, c, a, h, and this table regrows the pinwheel's tile law exactly at every level (locality and induction; identical to the geometric construction at levels 0-7, 133,883 distinctions). The only T-junctions are at midpoints of long legs.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "A finite rule on knots regrows the pinwheel law"
+}

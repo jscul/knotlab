@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINWHEEL-ROUND-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "PINWHEEL-NATIVE-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes, let's continue.', approving PINWHEEL-ROUND-20261107-001's recommendation): grow the pinwheel law with nothing drawn. Write Conway's pinwheel cut as a rule on knots and their shared distinctions, with labels but no coordinates, and check that it regrows the same law exactly. Then ask whether the rule needs labels at all, or can read them from the law itself. Serves question 9 (space from a law). Standalone value relative to the nearest known work: finite combinatorial descriptions of substitution tilings by collared tiles (Anderson-Putnam complexes; Barge, Diamond, Hunton and Sadun computed the pinwheel's cohomology this way; the pinwheel does not force its border) and recognizability; combinatorial substitutions realizing geometric ones are a young topic. Here the rule acts on a parity law (tiles are knots, boundary segments are distinctions), and the question is whether the round circle of PINWHEEL-ROUND is derived with nothing drawn. A: a finite alphabet of distinction labels, closed under the rule, regrows the pinwheel law exactly at every level (finite closure plus locality), checked against the geometric construction at levels 1-7. B: exploratory: whether the law's allowed states determine its planar map (Whitney: 3-connectivity) and whether each label is a function of the unlabeled neighbourhood of bounded radius.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PINWHEEL-NATIVE-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: the pinwheel grown with nothing drawn. A finite local rule on the law alone grows the pinwheel law whose circle is round: every knot splits into five, every distinction splits by an eleven-label table (a -> g e d e g, b -> h c c, c -> b b, d -> a, e -> b, f -> b, g -> a, h -> b; five new inside distinctions per knot), regrowing the law exactly at every level (proved; identical to the geometry at levels 0-7); the only T-junctions are at midpoints of long legs. The law determines its map (3-connected, Whitney) and its labels within radius 2 (no conflict among up to 235,394 darts at levels 5-7; controls conflict). No coordinate, length or angle enters the rule. Next: Continue, a round plane grown at its open ends.",
+  "status_class": "complete",
+  "stop_rule": "Stop when the finite rule is closed and verified (or obstructed by a label set that keeps growing), and the readability test has its declared radii recorded; do not add labels or radii after seeing results.",
+  "title": "The pinwheel grown with nothing drawn"
+}

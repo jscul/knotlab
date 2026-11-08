@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINWHEEL-NATIVE-20261107-001Z-P001",
+  "canonical_id": "PINWHEEL-NATIVE-20261107-001Z-P001",
+  "kind": "proof",
+  "ticket": "PINWHEEL-NATIVE-20261107-001Z",
+  "proof": "PINWHEEL-NATIVE-20261107-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the pinwheel-native epic",
+  "status": "Proved",
+  "claim": "Closure ledger of PINWHEEL-NATIVE-20261107-001; it makes no new claim. Each conclusion is carried by the cited evidence: ticket A (a proof) and ticket B (an exploratory experiment).",
+  "dependencies": [
+    "PINWHEEL-NATIVE-20261107-001A",
+    "PINWHEEL-NATIVE-20261107-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound artifact digest changes, the proof is not Proved, its result has not passed, the experiment contract is not frozen, or a ticket lacks its terminal class."
+  ],
+  "lineage": {
+    "home_scope": "PINWHEEL-NATIVE-20261107-001",
+    "epic_path": [
+      "PINWHEEL-NATIVE-20261107-001"
+    ],
+    "parents": [
+      "experiments/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/contract.json",
+      "artifacts/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/run/result.json",
+      "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/manifest.json",
+      "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/contract.json": "f4717400e6fe549d1e3f25b22f9b3aadd7d528c7e815cefc97eb72c6e8028dc4",
+    "artifacts/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/run/result.json": "dd2f9adf0bdb59c6f61a749a6093abbd16d7ba5220d15273918492d19b5c6b74",
+    "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/manifest.json": "60eb0d382af06b659fec37ce5c32e01fd252dabd1df3a1c15f9a14686ec99297",
+    "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/result.json": "cb25f6fa9046b4864304d2ffd5b9cbc93321e1d625b87858f2bfc4dd11c42813"
+  },
+  "paths": {
+    "manifest": "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/proof.md",
+    "check": "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/check.py",
+    "result": "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/result.json",
+    "directory": "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Closure ledger only; every claim is carried by the cited evidence.",
+  "validation": {
+    "level": "V0 ledger check: bound digests, Proved proof, passed result, frozen experiment contract, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "checked: ledger bound to one Proved proof and one frozen exploratory experiment; decision note present; no human or external review",
+    "novelty": "per line in the ledger; the reading is the project's."
+  }
+}

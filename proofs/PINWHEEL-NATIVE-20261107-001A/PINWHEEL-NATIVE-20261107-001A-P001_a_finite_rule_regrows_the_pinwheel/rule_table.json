@@ -1,0 +1,196 @@
+{
+ "distinction_labels": {
+  "d": {
+   "sides": [
+    "L[0,1/2]",
+    "L[0,1/2]"
+   ],
+   "same_direction": false
+  },
+  "f": {
+   "sides": [
+    "L[0,1/2]",
+    "S[0,1]"
+   ],
+   "same_direction": false
+  },
+  "b": {
+   "sides": [
+    "H[0,1]",
+    "H[0,1]"
+   ],
+   "same_direction": true
+  },
+  "y": {
+   "sides": [
+    "L[0,1]"
+   ],
+   "same_direction": null
+  },
+  "c": {
+   "sides": [
+    "L[0,1]",
+    "L[0,1]"
+   ],
+   "same_direction": true
+  },
+  "z": {
+   "sides": [
+    "S[0,1]"
+   ],
+   "same_direction": null
+  },
+  "g": {
+   "sides": [
+    "L[1/2,1]",
+    "S[0,1]"
+   ],
+   "same_direction": true
+  },
+  "a": {
+   "sides": [
+    "H[0,1]",
+    "H[0,1]"
+   ],
+   "same_direction": false
+  },
+  "x": {
+   "sides": [
+    "H[0,1]"
+   ],
+   "same_direction": null
+  },
+  "h": {
+   "sides": [
+    "S[0,1]",
+    "S[0,1]"
+   ],
+   "same_direction": true
+  },
+  "e": {
+   "sides": [
+    "L[0,1/2]",
+    "L[1/2,1]"
+   ],
+   "same_direction": true
+  }
+ },
+ "distinction_rule": {
+  "d": [
+   "a"
+  ],
+  "f": [
+   "b"
+  ],
+  "b": [
+   "h",
+   "c",
+   "c"
+  ],
+  "y": [
+   "x",
+   "x"
+  ],
+  "c": [
+   "b",
+   "b"
+  ],
+  "z": [
+   "x"
+  ],
+  "g": [
+   "a"
+  ],
+  "a": [
+   "g",
+   "e",
+   "d",
+   "e",
+   "g"
+  ],
+  "x": [
+   "z",
+   "y",
+   "y"
+  ],
+  "h": [
+   "b"
+  ],
+  "e": [
+   "b"
+  ]
+ },
+ "knot_rule": {
+  "children_handedness_times_parent": [
+   -1,
+   -1,
+   1,
+   1,
+   -1
+  ],
+  "inside_distinctions": [
+   {
+    "between": [
+     "child 1 side L",
+     "child 3 side S"
+    ],
+    "label": "f"
+   },
+   {
+    "between": [
+     "child 1 side L",
+     "child 2 side S"
+    ],
+    "label": "g"
+   },
+   {
+    "between": [
+     "child 2 side L",
+     "child 3 side L"
+    ],
+    "label": "c"
+   },
+   {
+    "between": [
+     "child 3 side H",
+     "child 4 side H"
+    ],
+    "label": "a"
+   },
+   {
+    "between": [
+     "child 4 side S",
+     "child 5 side S"
+    ],
+    "label": "h"
+   }
+  ],
+  "sides_of_children": {
+   "child 1": {
+    "S": "parent H, first fifth (reversed)",
+    "L": "inside H-F1, F1-O",
+    "H": "parent S (reversed)"
+   },
+   "child 2": {
+    "S": "inside F1-O",
+    "L": "inside F1-M",
+    "H": "parent L, first half"
+   },
+   "child 3": {
+    "S": "inside H-F1",
+    "L": "inside F1-M",
+    "H": "inside H-M"
+   },
+   "child 4": {
+    "S": "inside F2-M",
+    "L": "parent H, middle two fifths (reversed)",
+    "H": "inside H-M"
+   },
+   "child 5": {
+    "S": "inside F2-M",
+    "L": "parent H, last two fifths",
+    "H": "parent L, second half"
+   }
+  }
+ }
+}

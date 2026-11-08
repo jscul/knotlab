@@ -1,0 +1,105 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PINWHEEL-NATIVE-20261107-001A-P001",
+ "kind": "proof",
+ "ticket": "PINWHEEL-NATIVE-20261107-001A",
+ "proof": "PINWHEEL-NATIVE-20261107-001A-P001",
+ "status": "passed",
+ "claim": "Conway's pinwheel cut, written as a rule R on the tile law (tiles are parity knots over their boundary segments; segments are distinctions), needs no coordinates. Label each distinction by its two knots' side types, its interval along each side and whether the sides run the same way, and each knot by its handedness and the order of its distinctions along its sides. Then only eleven labels occur (eight inside: a -> g e d e g, b -> h c c, c -> b b, d -> a, e -> b, f -> b, g -> a, h -> b; three on the boundary: x -> z y y, y -> x x, z -> x), each knot splits into five with handedness chi*(-1,-1,1,1,-1) and five new inside distinctions labelled f, g, c, a, h, and R regrows the pinwheel's tile law exactly at every level (locality and induction; finite closure). The only T-junctions are at midpoints of long legs.",
+ "checks": {
+  "regrows_levels_0_to_7": true,
+  "alphabet_closed_and_finite": true,
+  "splitting_depends_only_on_label": true
+ },
+ "failures": [],
+ "details": {
+  "regrowth": [
+   {
+    "level": 0,
+    "knots": 1,
+    "distinctions": 3,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 1,
+    "knots": 5,
+    "distinctions": 11,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 2,
+    "knots": 25,
+    "distinctions": 49,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 3,
+    "knots": 125,
+    "distinctions": 227,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 4,
+    "knots": 625,
+    "distinctions": 1101,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 5,
+    "knots": 3125,
+    "distinctions": 5411,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 6,
+    "knots": 15625,
+    "distinctions": 26873,
+    "identical": true,
+    "hands_identical": true
+   },
+   {
+    "level": 7,
+    "knots": 78125,
+    "distinctions": 133883,
+    "identical": true,
+    "hands_identical": true
+   }
+  ],
+  "alphabet_size": 11,
+  "closure_rounds": 2,
+  "census_level_7": {
+   "a": 21297,
+   "b": 17578,
+   "c": 22617,
+   "d": 4254,
+   "e": 8508,
+   "f": 15625,
+   "g": 24133,
+   "h": 19121,
+   "x": 375,
+   "y": 250,
+   "z": 125
+  },
+  "controls": {
+   "child side direction flipped": {
+    "rejected": true
+   },
+   "handedness pattern changed": {
+    "rejected": true
+   },
+   "hypotenuse cut at 1/5 and 2/5": {
+    "rejected": true
+   },
+   "alignment ignored": {
+    "rejected": true
+   }
+  },
+  "runtime_seconds": 5.4
+ }
+}

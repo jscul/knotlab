@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINWHEEL-NATIVE-20261107-001A-P001",
+  "canonical_id": "PINWHEEL-NATIVE-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "PINWHEEL-NATIVE-20261107-001A",
+  "proof": "PINWHEEL-NATIVE-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A finite rule on knots regrows the pinwheel law",
+  "status": "Proved",
+  "claim": "Conway's pinwheel cut, written as a rule R on the tile law (tiles are parity knots over their boundary segments; segments are distinctions), needs no coordinates. Label each distinction by its two knots' side types, its interval along each side and whether the sides run the same way, and each knot by its handedness and the order of its distinctions along its sides. Then only eleven labels occur (eight inside: a -> g e d e g, b -> h c c, c -> b b, d -> a, e -> b, f -> b, g -> a, h -> b; three on the boundary: x -> z y y, y -> x x, z -> x), each knot splits into five with handedness chi*(-1,-1,1,1,-1) and five new inside distinctions labelled f, g, c, a, h, and R regrows the pinwheel's tile law exactly at every level (locality and induction; finite closure). The only T-junctions are at midpoints of long legs.",
+  "dependencies": [
+    "PINWHEEL-ROUND-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A level at which the symbolic rule's incidences (tile, side, exact interval, alignment) or handedness differ from the geometric pinwheel's.",
+    "A label produced by the rule that is not in the closed alphabet."
+  ],
+  "lineage": {
+    "home_scope": "PINWHEEL-NATIVE-20261107-001",
+    "epic_path": [
+      "PINWHEEL-NATIVE-20261107-001"
+    ],
+    "parents": [
+      "proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/manifest.json": "2efd55b9b216ae624c3c85fa162d1f07390a83ee9f87f6bdcbb08913556d7bce",
+    "proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/result.json": "c21f5406108dbb05250b8161af6e6a55f53bdc9d19d8d4d2034a1d1e9f877255",
+    "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/manifest.json": "43de85ffeba57e092332fcac26f548359d927f027948eb3da54167ab8c1078c9"
+  },
+  "paths": {
+    "manifest": "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/manifest.json",
+    "identity": "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/identity.json",
+    "proof": "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/proof.md",
+    "check": "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/check.py",
+    "result": "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/result.json",
+    "directory": "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The pinwheel's tile law on the level-k patch of one triangle, every k (closure and locality); checked at levels 0-7.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "locality and induction by hand; check.py (5 s) verifies identical incidences and handedness with the geometric pinwheel at levels 0-7 (133,883 distinctions at level 7), closure at eleven labels and geometric locality at level 6, with four rejected controls; no human or external review",
+    "novelty": "known-overlap-found: substitution tilings with finite local complexity have finite combinatorial descriptions (collared tiles, Anderson-Putnam complexes; for the pinwheel, Barge-Diamond-Hunton-Sadun 2010 and Frettloh-Whitehead-Whittaker 2014). The delta is an explicit 11-label rule on the knots and distinctions of the parity law, verified exactly, and the census of its distinctions."
+  }
+}

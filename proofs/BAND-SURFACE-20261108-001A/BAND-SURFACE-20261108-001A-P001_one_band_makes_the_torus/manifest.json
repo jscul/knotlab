@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BAND-SURFACE-20261108-001A-P001",
+  "canonical_id": "BAND-SURFACE-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "BAND-SURFACE-20261108-001A",
+  "proof": "BAND-SURFACE-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "One band makes the torus",
+  "status": "Proved",
+  "claim": "For equally spaced networks of rule-60 rings with law (12,12) contacts: (1) every n x m torus with n >= 3, m >= 2 (or n = 2, m >= 3) has a half-turn at every contact exchanging its rings, so every contact persists at every lag; (2) inserting one band into a loop of n >= 3 rings, each new ring joined to its partner by two contacts, one on each side, gives the n x 2 torus, and further bands give the n x m tori: from a loop, the band law makes the torus at its first step and keeps every contact persistent at every stage.",
+  "dependencies": [
+    "GROW-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An n x m torus with n >= 3, m >= 2 that is not balanced.",
+    "A stage of the band sequence from a loop that is not balanced."
+  ],
+  "lineage": {
+    "home_scope": "BAND-SURFACE-20261108-001",
+    "epic_path": [
+      "BAND-SURFACE-20261108-001"
+    ],
+    "parents": [
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json",
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/grow_lib.py",
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/proof.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json": "71121891197b547cc36d05bbb54e247377ad2e6d645671eaa91d8345f02ffee7",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/grow_lib.py": "7dcd377da641727744cb00956f40c88f5614ae2e4fd6908d5d790117d7be1f78",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/proof.md": "5c1f16d6f18ab9574017bd1389897dbb1f9fbe1df7893ab5314cce68c622c6c7"
+  },
+  "paths": {
+    "manifest": "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/manifest.json",
+    "identity": "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/identity.json",
+    "proof": "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/proof.md",
+    "result": "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/result.json",
+    "check": "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/check.py",
+    "directory": "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Equally spaced networks of rule-60 rings with law (12,12) contacts; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: the half-turns of the rectangular tori; the delta is that one band inserted into a loop of persistent contacts closes a handle with every contact still persistent"
+  }
+}

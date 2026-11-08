@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BAND-SURFACE-20261108-001B-E001",
+  "ticket": "BAND-SURFACE-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Which surfaces can a first band on a loop of rings make while every contact stays persistent?",
+  "public_inputs": {
+    "library": "band_lib.py of BAND-SURFACE-20261108-001A (sha256 3061f2917a74f1510b929c85341e2ed1abe991d547c0fb549e180351d2ccc8ea), on GROW-NET-20261108-001A's grow_lib.",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "Every rotation system of a loop of n rings plus one band of n rings: single rungs for n = 3 to 8, double rungs for n = 3 and 4.",
+    "exactness": "Exact: return counts are followed until the next vector lies in the span of the earlier ones; no lag cutoff."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping rotation systems"
+  ],
+  "primary_observable": "The balanced rotation systems by genus, face sizes and whether a flip fixes every contact.",
+  "cheapest_meaningful_control": "BAND-SURFACE-20261108-001A's checks (the n x 2 torus is balanced) and GROW-NET-20261108-001A's exact test.",
+  "resource_budget": {
+    "wall_minutes": 15,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "The counts by loop size.",
+  "decision_or_followup_rule": "H1, frozen: balanced first bands lie on the sphere only for single rungs at n = 4 (the cube). H2, frozen: with double rungs some balanced first band is the torus. If both hold, the first band's surface is mostly not a sphere, and which higher surfaces bands can grow is the next question.",
+  "stop_rule": "Stop when every rotation system of the family has its verdict.",
+  "nonclaims": [
+    "Exploratory: one band, these loop sizes.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing, a scratch run of the same family up to n = 7 (single) and n = 4 (double) gave exactly these patterns, so H1 and H2 are not blind predictions; n = 8 single rungs is new. run.py --pilot timed n = 3 and printed no verdicts."
+}

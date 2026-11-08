@@ -1781,6 +1781,23 @@ So network holes come in two kinds:
      cancellation inside the square, of Lucas' kind.
    - **Next (parked).** The proof, after the growth epic, which the coordinator switched to at the owner's interest
      ([decision note](../research/FULL-REACH-20261108-001/full_reach.md)).
+
+   **2026-11-08: growing a network of rings from a law** (`GROW-NET-20261108-001`).
+   - **The question.** Can a network of rings grow by a local rule while every contact stays persistent at every stage?
+   - **Bands and blocks grow (proved).** Every n × m torus of rings with sides at least 3 has a half-turn at every contact that
+     exchanges its two rings, so every contact persists. Inserting a whole band of rings round the torus, or splitting every ring into a
+     block, keeps every contact persistent at every stage.
+   - **Single rings do not (proved).** A new ring attached by one contact returns to it at once; by two contacts not side by side on
+     one ring, it leaves one unpaired return; as a bubble on a corner p → q, it deletes that corner, and the network stays balanced only
+     if no contact is reached from q and reaches p.
+   - **In practice none can be added (exploratory, exact).** Of 795,042 single-ring attachments to 16 balanced seeds, none keeps every
+     contact persistent beyond the smallest seeds of four rings; truncating or rectifying the Platonic networks loses persistence too.
+   - **Reading.** The unit of growth is a band: a single ring is a defect whose returns go unpaired. Networks with a flip at every contact
+     exist at every size only on the torus, so the flip criterion carries growth only on a flat surface. The law fills a torus it is
+     given; making the surface is the open part.
+   - **Next (research directions).** Make the surface by growing whole bands (Payoff 3/3, Concreteness 1/3), or the ready proofs of full
+     reach and of which lattices compose everywhere (Payoff 2/3, Concreteness 3/3)
+     ([decision note](../research/GROW-NET-20261108-001/grow_net.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

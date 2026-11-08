@@ -69,13 +69,11 @@ their glues. The maps are `stress_test_m1_maps.json.gz`, made as `stress_test_m1
 
 - **Verdict: passed.** Every conclusion of ticket A holds one size past. Seed 11's second placement is a second symmetric placement,
   the case that the narrowed reading of `TRISUM-READ-20261107-001-D002` already allows.
-- **Rerun pending.** These numbers come from the first comparison run and from the script's two quick checks (the spaces against the
-  generator; the glue block against the signed glue). The script's full rerun, which also recomputes one row of each new map, is
-  running (`docs/LONG_RUNNING.md`, SWITCH-READ-M2) and writes `stress_test_m1.json`.
+- **Rerun passed.** The script's full rerun, which also recomputes the last row of each new map, reproduces every number above
+  (`stress_test_m1.json`; `docs/LONG_RUNNING.md`, SWITCH-READ-M2).
 
 ## Pending
 
-- **The stress test's full rerun** (SWITCH-READ-M2), above.
 - **Still open from earlier epics.** `JUNCTION-READ-20261106-001`, left open by an interrupted session, asks the question TRISUM-READ
   answered; qualifying `FAR-READ-20261106-001-D002` and the second sentence of D001; qualifying `PHASE-HALO-20261103-001-D001` and
   `FACE-CLAIM-20261103-001-D003`; the SELECTION-NOTE erratum; superseding `KNOT-COMPOSE-20261101-001-D001`; whether counted length
@@ -95,8 +93,7 @@ atom sits within its switching class; it can, except where a symmetry of the glu
 **Goals:** G4 checkpoint (capability gained); backlog B5 marked taken.
 **Assumptions:** A29 overturned: an atom's place within its switching class matters for native creation, though not for the glue block
 or for TRISUM-READ's statements.
-**Stress test:** passed one size past (17 pairs, 38 to 60 points; folded in 2026-11-08); the script's full rerun is pending
-(SWITCH-READ-M2).
+**Stress test:** passed one size past (17 pairs, 38 to 60 points; folded in 2026-11-08, and the script's full rerun passed).
 
 **Next step:** Continue — selected: #1
 

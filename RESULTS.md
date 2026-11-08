@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**250 current results** and 5 superseded ones, from 187 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**250 current results** and 5 superseded ones, from 188 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 187 epics with their closures
+- [Epics](#epics): all 188 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1047,6 +1047,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
 | 2026-11-08 | Does creation between glue lines always single out the contradictory class? (`CONTRA-READ-20261108-001`) | [closure](proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CONTRA-READ-20261108-001/) |
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
+| 2026-11-08 | Full reach on the cut-open torus (`FULL-REACH-20261108-001`) | [closure](proofs/FULL-REACH-20261108-001Z/FULL-REACH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/FULL-REACH-20261108-001/) |
 | 2026-11-08 | Genus read by rings of cuts (`GENUS-CUT-20261108-001`) | [closure](proofs/GENUS-CUT-20261108-001Z/GENUS-CUT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-CUT-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FULL-REACH-20261108-001A-E001",
+  "ticket": "FULL-REACH-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the n x n torus of rings cut open by a ring of cuts round it in each direction, for which n does every uncut contact need every ring?",
+  "public_inputs": {
+    "library": "lattice_lib.py of LATTICE-NET-20261108-001A (sha256 665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42).",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Sides n = 3 to 48, spacing g = 2 (the needs relation does not depend on the spacing: LATTICE-NET-20261108-001A, Theorem 1), every uncut contact.",
+    "exactness": "Exact, with no lag cutoff: row c of A^k is followed until the next row lies in the span of the earlier ones, stopping early once every ring is covered."
+  },
+  "forbidden_inputs": [
+    "Changing the sides after seeing results",
+    "Dropping contacts"
+  ],
+  "primary_observable": "The sides at which some uncut contact misses a ring.",
+  "cheapest_meaningful_control": "GENUS-CUT-20261108-001A's check 4 (sides 3 to 17 by the full reach computation, and its check 6 against rows of M^T at side 5 and 8).",
+  "resource_budget": {
+    "wall_minutes": 15,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The list of failing sides.",
+  "decision_or_followup_rule": "H1, frozen: the failing sides are exactly 8, 16 and 32. If it holds, the conjecture 'full reach unless n is a power of two of at least 8' is supported to side 48 and its proof is the next step; a failing side outside the powers of two is the first counterexample.",
+  "stop_rule": "Stop when every side from 3 to 48 has its verdict.",
+  "nonclaims": [
+    "Exploratory: sides 3 to 48 only; no proof.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing: the same computation in a scratch run gave exactly the failing sides 8, 16 and 32 on sides 3 to 48, and GENUS-CUT-20261108-001A's check 4 had found 8 and 16 on sides 3 to 17. So H1 is not a blind prediction. run.py --pilot timed sides 3 to 12 and printed no verdicts."
+}

@@ -52,8 +52,12 @@ Epic `PINWHEEL-NATIVE-20261107-001` (program topology), 2026-11-07.
 - **What it does.** The rule reads only which distinctions share knots, nearby, and splits them. What it grows is a law whose own
   distance is round at large scale.
 - **The two kinds of picture.** The drawing becomes one possible picture of the law, not an ingredient.
-- **The owner's continuing ratio.** It lives in the law's combinatorics, in how often each of the eight kinds of distinction recurs
-  as the rule repeats, not in a drawn angle.
+- **The owner's continuing ratio is not in the counts.** The eight kinds recur in fixed rational proportions, per knot: a 3/11,
+  b 5/22, c 16/55, d 3/55, e 6/55, f 1/5, g 17/55, h 27/110.
+  - **What the table does carry.** The only irrational number it shows is its growth rate √5, the factor by which each
+    distinction's pieces multiply per level: the length scale, not the angle.
+  - **Where the angle shows.** The angle appears only when the law is drawn. What the law itself shows of it is its round circle.
+  - **Correction.** This bullet replaces a first version that placed the continuing ratio in these proportions; they are rational.
 
 ## Workspace assumption challenged
 

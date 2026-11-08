@@ -3398,8 +3398,11 @@ So network holes come in two kinds:
      - **The rule.** Split every knot into five, read each distinction's kind nearby, and split it by an eleven-letter table. That
        rule grows a law whose own distance is round.
      - **No geometry.** No coordinate, length or angle enters.
-     - **Where the angle went.** The irrational angle appears only if the grown law is drawn in the plane. The continuing ratio lives
-       in how often the eight kinds of distinction recur.
+     - **Where the angle went.** The irrational angle appears only if the grown law is drawn in the plane.
+       - **Not in the counts.** The eight kinds recur in rational proportions, per knot: a 3/11, b 5/22, c 16/55, d 3/55, e 6/55,
+         f 1/5, g 17/55, h 27/110.
+       - **The only irrational number.** The table's growth rate √5, which is the length scale.
+       - **What the law shows of the angle** is its round circle.
    - **Provenance.**
      - **Classical.** Finite combinatorial descriptions of substitution tilings (collared tiles, Anderson–Putnam complexes; for the
        pinwheel, Barge–Diamond–Hunton–Sadun and Frettlöh–Whitehead–Whittaker) and Whitney's theorems.

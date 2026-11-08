@@ -3554,9 +3554,26 @@ So network holes come in two kinds:
      - **The junction epic's hidden atom** is a placement that a symmetry of the glue moves, so even the atom removals cannot tell its
        two places apart. Its record's title said more than that, and is narrowed.
    - **Provenance.** Switching classes of signed graphs (Zaslavsky) are classical. The comparison and the split are new here.
-   - **Next (recommended).** Prove that creation between glue lines depends only on the switching class (Payoff 2/3, Concreteness 2/3):
-     an intact atom acts as one negation, switching complements points, and the creation test should not see complementing.
+   - **Next (taken as `SWITCH-PROOF-20261108-001`).** Prove that creation between glue lines depends only on the switching class
+     (Payoff 2/3, Concreteness 2/3): an intact atom acts as one negation, switching complements points, and the creation test should
+     not see complementing.
      - **The alternatives.** The glue block against Pfaffian counting (2/3, 1/3); folding in the nine remaining placements (running).
+
+   **2026-11-08: a theorem on what native creation sees of a signing** (`SWITCH-PROOF-20261108-001`).
+   - **Proved.** For every cubic glue, every two signings in one switching class, and every two glue lines, removing one and gluing at
+     the other gives the same native creation verdict in the two plain edge-atom spaces, for each far side.
+   - **Why.**
+     - **An intact atom only negates its incidence.** Its own lines force its three root points to the negation of its glue point.
+       Its four inner points stay free enough, as an exhaustive check over its 256 assignments shows, that they belong to no knot the
+       two-round rule uses.
+     - **So creation between glue lines is the signed glue's own creation map.** That held on all 3,500 computed entries.
+     - **Switching only complements points,** and complementing points changes no constrained set.
+   - **Reading.** Through the glue, native creation reads a signing's switching class, for a bipartite glue the parity of its signs
+     around every cycle. Through the atoms it reads where the signs sit. The first is the data Pfaffian counting uses on these spaces.
+   - **Provenance.** Switching classes and balance (Zaslavsky) are classical; the theorem is new here.
+   - **Next (recommended, started).** Does the glue block tell every switching class apart (Payoff 2/3, Concreteness 3/3)? The
+     smallest glue's 512 classes are computing.
+     - **The alternative.** The glue block against Pfaffian counting (2/3, 1/3).
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

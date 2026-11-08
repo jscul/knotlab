@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: which way the two-bit census points
+
+- The preliminary record of TWO-BIT-20261108-001 said in its summaries that the
+  products of one-bit decorations "escape the known crystals" in 97.7% of the
+  classes and that 3,241 "escape every crystal tried". The census means the
+  reverse: a known crystal gets through 136,415 of the 139,656 classes, which
+  therefore fail, and no crystal tried gets through the other 3,241.
+- Unchanged: every count and the stop rule.
+- The [decision note](research/TWO-BIT-20261108-001/two_bit.md) and the closure
+  ledger now say "lets a crystal through" and "no crystal gets through".
+
 ## 8 November 2026: the recurring-lag census counted families twice over
 
 - RECUR-PATH-20261108-001 reported 452 families of paths that compose at

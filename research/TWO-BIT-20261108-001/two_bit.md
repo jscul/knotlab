@@ -9,21 +9,21 @@ test on 12 surviving products runs in the background as TWO-BIT-B1 and is folded
   one hidden bit per tile, placed by a decorated substitution, never forces the pinwheel (`CRYSTAL-UP-20261108-001`). Can two?
 - **The family.** Products of two one-bit decorations: a tile carries a pair of bits, and each bit is passed to the children by its
   own one-bit decoration. A product is one kind of two-bit decoration; the others are not tested here.
-- **Stop rule, frozen at the start.** If every product escapes a crystal in hand, no product forces the pinwheel and the line pauses.
-  If some escape none, one bounded forcing test runs on them, and the line pauses after it whatever it shows.
+- **Stop rule, frozen at the start.** If a crystal in hand gets through every product, no product forces the pinwheel and the line
+  pauses. If some products let none through, one bounded forcing test runs on them, and the line pauses after it whatever it shows.
 
 ## Conclusions
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Most products escape.** Of the 139,656 product classes (all ordered pairs up to exchanging the factors and relabelling either), 136,415 admit a crystal in hand with a periodic two-bit labelling: first on a domino-torus plane for 88,961, on a mixed-orientation crystal of `CRYSTAL-UP-20261108-001A` for 47,454. Each such escape is a crystal at every radius. | exploratory experiment | A |
-| 2 | **3,241 escape none of the crystals in hand.** For 646 of them the two factors admit no common crystal, so no listed crystal can carry both bits; for the other 2,595 the factors share crystals but no joint labelling obeys the product's law on them. 321 distinct one-bit decorations occur as factors; 69 survivors have the last one-bit decoration, 10101 / 00110, or its relabelling as a factor. | exploratory experiment | A |
+| 1 | **Most products let a crystal through.** Of the 139,656 product classes (all ordered pairs up to exchanging the factors and relabelling either), 136,415 admit a crystal in hand with a periodic two-bit labelling: first on a domino-torus plane for 88,961, on a mixed-orientation crystal of `CRYSTAL-UP-20261108-001A` for 47,454. Each such escape is a crystal at every radius. | exploratory experiment | A |
+| 2 | **3,241 let none of the crystals in hand through.** For 646 of them the two factors admit no common crystal, so no listed crystal can carry both bits; for the other 2,595 the factors share crystals but no joint labelling obeys the product's law on them. 321 distinct one-bit decorations occur as factors; 69 survivors have the last one-bit decoration, 10101 / 00110, or its relabelling as a factor. | exploratory experiment | A |
 | 3 | **Stress test pending:** the stop rule's forcing test on 12 survivors drawn at random (forced parent labels, arc consistency on the product's level-one collars, torus searches from what is left). | exploratory experiment | B1, pending |
 
 ## Answer (preliminary)
 
-Two bits per tile, as products of one-bit decorations, escape the known crystals in 97.7% of the classes, and 3,241 classes are
-left that no crystal in hand admits. Whether any of them forces the pinwheel is open; the forcing test on a sample will say whether
+Two bits per tile, as products of one-bit decorations, let a known crystal through in 97.7% of the classes, and 3,241 classes are
+left that no crystal in hand gets through. Whether any of them forces the pinwheel is open; the forcing test on a sample will say whether
 local consistency removes their off-law parents or leaves them, as it did for one bit.
 
 ## Reading
@@ -39,8 +39,8 @@ local consistency removes their off-law parents or leaves them, as it did for on
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| One bit per tile never forces the pinwheel (`CRYSTAL-UP-20261108-001`) | Two bits, as products, against the same crystals (A) | 3,241 product classes escape every crystal tried |
-| The 3,241 escape the crystals in hand | Forced parents, arc consistency and torus searches on 12 of them (B1) | Stress test pending |
+| One bit per tile never forces the pinwheel (`CRYSTAL-UP-20261108-001`) | Two bits, as products, against the same crystals (A) | 3,241 product classes let no crystal tried through |
+| No crystal in hand gets through the 3,241 | Forced parents, arc consistency and torus searches on 12 of them (B1) | Stress test pending |
 
 ## Literature and provenance
 
@@ -70,7 +70,7 @@ Carried from earlier epics:
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — two bits per tile as products | **Status:** Inconclusive | 3,241 classes escape every crystal tried; forcing test pending |
+| This attempt — two bits per tile as products | **Status:** Inconclusive | No crystal tried gets through 3,241 classes; forcing test pending |
 | Local direction — decorated substitutions on the pinwheel | Paused by the frozen stop rule | Resumes only on the forcing test's say |
 | Broader exploration — G1 lines | Known alternatives | Edge labels (A35); hub chains; dimension three |
 | Long-term goal — G1 Space from a law (question 9) | No demonstrated advance | The price of roundness stays above one bit, and two is open |
@@ -81,6 +81,6 @@ Carried from earlier epics:
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | The survivors one level further (resume B8) | 2/3 — Substantial | 2/3 — Testable | The 3,241 at two more levels and on larger tori, then the forcing route on the rest → a product no crystal escapes and whose off-law parents die, or none | Alternative · deferred |
+| 1 | The survivors one level further (resume B8) | 2/3 — Substantial | 2/3 — Testable | The 3,241 at two more levels and on larger tori, then the forcing route on the rest → a product no crystal gets through and whose off-law parents die, or none | Alternative · deferred |
 | 2 | Edge labels, as in Radin's rules (A35's challenge) | 2/3 — Substantial | 1/3 — Stated | An edge substitution with one bit per edge against the crystals in hand → one that excludes them all, or none | Alternative · deferred |
 | 3 | Hub chains in two dimensions | 1/3 — Incremental | 2/3 — Testable | A plane of gated knots: chain balls' growth and circle shape → a hub shape, or the grid drawn in | Alternative · deferred |

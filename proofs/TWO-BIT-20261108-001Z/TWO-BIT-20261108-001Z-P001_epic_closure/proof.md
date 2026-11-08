@@ -16,7 +16,7 @@ Ticket `TWO-BIT-20261108-001Z`, 2026-11-08.
 
 ## Answer
 
-Most products of one-bit decorations escape the known crystals; 3,241 classes are left that none admits, and whether any forces the
+Most products of one-bit decorations let a known crystal through; 3,241 classes are left that none gets through, and whether any forces the
 pinwheel is open.
 
 ## Pending the owner

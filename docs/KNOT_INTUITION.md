@@ -4317,7 +4317,7 @@ So network holes come in two kinds:
      each passed to the children by its own one-bit decoration.
    - **Most fail (exploratory).** Of the 139,656 classes of products, 136,415 let a known crystal through with a periodic two-bit
      labelling, so they fail at every radius.
-   - **3,241 escape every crystal tried.** In 646 the two bits want different crystals; in 2,595 they share crystals but cannot be
+   - **No crystal tried gets through 3,241.** In 646 the two bits want different crystals; in 2,595 they share crystals but cannot be
      laid on them together. A second bit can thus shut out every crystal found so far, which one bit never could.
    - **Reading.** These are candidates, not results: the last one-bit decoration also resisted every crystal tried until a new
      kind turned up one level up. The stop rule, frozen at the start, runs one bounded forcing test on 12 of them (pending) and

@@ -1,0 +1,33 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOOP-ANY-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "LOOP-ANY-20261108-001Z",
+ "proof": "LOOP-ANY-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing LOOP-ANY-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, proved; ticket B, an exploratory census), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/manifest.json": "Proved",
+   "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/result.json": "passed",
+   "experiments/LOOP-ANY-20261108-001B/LOOP-ANY-20261108-001B-E001_loops_of_five_to_eight/contract.json": "Frozen",
+   "artifacts/LOOP-ANY-20261108-001B/LOOP-ANY-20261108-001B-E001_loops_of_five_to_eight/run/result.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "experiments_frozen_exploratory": true,
+  "experiment_b_findings": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

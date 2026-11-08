@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-ANY-20261108-001A-P001",
+  "canonical_id": "LOOP-ANY-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "LOOP-ANY-20261108-001A",
+  "proof": "LOOP-ANY-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Balance cancels the feedback in loops of any length",
+  "status": "Proved",
+  "claim": "In a loop of r >= 2 rule-60 rings of s cells, contact c_i at cell k_i of R_i and cell 0 of R_(i+1), 2 <= k_i <= s - 2, each contact reading the ends of the two chains arriving at it (law 12, 12) or also its partners (6, 6): (1) C = S + KC over GF(2) with K = z(A + cA^-1), A the weighted cyclic shift A_(i,i-1) = a^(f_i), a = z/(1+z), c = a^(s-2); (2) if k_0 + ... + k_(r-1) = rs/2 every diagonal entry of (I - K)^-1 is 1; (3) then, when no law-(6,6) contact c_j has k_j = s - 2 or k_(j+1) = 2, every contact binds both its rings at every lag at every ring size, the antipodal loops (k_i = s/2) for every r and even s; (4) (I - K)^-1 is a finite sum exactly when r is a power of two and the loop is balanced, with K^(r/2) = 0.",
+  "dependencies": [
+    "LOOP-PROOF-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A balanced loop, a ring size and a lag at which a chain-end witness has coefficient 0.",
+    "A balanced loop of 2^p rings with M^(r/2) != 0, or a loop of another number of rings with M nilpotent."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-ANY-20261108-001",
+    "epic_path": [
+      "LOOP-ANY-20261108-001"
+    ],
+    "parents": [
+      "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/manifest.json",
+      "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/proof.md",
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py",
+      "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/run.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/manifest.json": "1be7b8b17123fc3d959d4b7464c02b8403a867629801b2938df6effe4e1d59dc",
+    "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/proof.md": "3dd4073b1e325bd0de5a8f1f87f72ac9484f43ad7d69b75ba064905c6175b2fa",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/run.py": "d69f8adacc193071af0a5d266ab193b90cbafd6c564d8f159ed134c50023db03"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/manifest.json",
+    "identity": "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/identity.json",
+    "proof": "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/proof.md",
+    "result": "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/result.json",
+    "check": "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/check.py",
+    "directory": "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Linear loops of rule-60 rings with the stated laws, any number of rings; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: the feedback is A + cA^-1 because going back and forth across any ring costs a^(s-2); balance makes every return cancel"
+  }
+}

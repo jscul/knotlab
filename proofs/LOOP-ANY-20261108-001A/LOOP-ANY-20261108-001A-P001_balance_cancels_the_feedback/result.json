@@ -1,0 +1,51 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream statuses": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/manifest.json": "Proved"
+    }
+   }
+  },
+  "1 Theorem 3's witnesses at every lag to 300, balanced loops of 2 to 8 rings at sizes 4 to 20 (random balanced and antipodal positions)": {
+   "pass": true,
+   "info": {
+    "loops": 1203,
+    "failures": 0
+   }
+  },
+  "2 the antipodal loops of 2 to 10 rings at every even size from 4 to 16": {
+   "pass": true,
+   "info": {
+    "loops": 63,
+    "failures": 0
+   }
+  },
+  "3 Theorem 4 by exact rational functions over GF(2): M^(r/2) = 0 for balanced loops of 2, 4 and 8 rings; M^n != 0 up to n = 2r for balanced loops of 3, 5, 6 and 7 rings and an unbalanced one of 4": {
+   "pass": true,
+   "info": {
+    "first power that vanishes (None: none up to 2r)": {
+     "balanced, 2 rings": 1,
+     "balanced, 4 rings": 2,
+     "balanced, 8 rings": 4,
+     "balanced, 3 rings": null,
+     "balanced, 5 rings": null,
+     "balanced, 6 rings": null,
+     "balanced, 7 rings": null,
+     "unbalanced, 4 rings": null
+    }
+   }
+  },
+  "4 full state spaces: balanced loops of 2, 3, 4 and 5 rings at size 4 keep every contact persistent": {
+   "pass": true,
+   "info": {
+    "loops": 4,
+    "persistent": 4
+   }
+  }
+ },
+ "seconds": 1.4
+}

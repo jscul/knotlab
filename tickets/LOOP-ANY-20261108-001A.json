@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LOOP-PROOF-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "LOOP-ANY-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: in a loop of r rule-60 rings with contacts reading their left neighbours (or both neighbours, under the no-overlap condition) on both rings, the feedback matrix is K = z(A + cA^-1) with A a weighted cyclic shift and c = a^(s-2); when the positions sum to rs/2, every diagonal entry of (I - K)^-1 is 1, so every contact binds both its rings at every lag at every ring size; and the feedback is a finite sum exactly when r is a power of two.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOOP-ANY-20261108-001"
+  },
+  "parent": "LOOP-ANY-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (by hand; finite claims checked): in a loop of r rule-60 rings the feedback is K = z(A + cA^-1) with A a weighted cyclic shift and c = a^(s-2); when the positions sum to rs/2 every diagonal entry of (I - K)^-1 is 1, so every contact binds both its rings at every lag at every ring size, for every r (the antipodal loops for every r and even s); the feedback is a finite sum exactly when r is a power of two and the loop is balanced.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Balance cancels the feedback in loops of any length"
+}

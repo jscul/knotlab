@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LOOP-ANY-20261108-001B-E001",
+  "ticket": "LOOP-ANY-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "In loops of five to eight rule-60 rings with law (12, 12), does every balanced loop (positions summing to rs/2) keep every contact binding both its rings, and which unbalanced loops do too?",
+  "public_inputs": {
+    "library": "net_lib.py of SEPARATE-20261108-001A (sha256 e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351); LOOP-RINGS-20261108-001A-E001's loop_net.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "r = 5 to 8 rings of s = 4 to 16 cells, contact positions from {2, floor(s/2), ceil(s/2), s - 2}, one loop per rotation class: 65,472 loops.",
+    "exactness": "Rows of M^T exactly to lag 400: a contact misses a ring at the first lag its row meets none of the ring's cells. Persistence beyond lag 400 is not decided here; for balanced loops it is LOOP-ANY-20261108-001A's theorem."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping loops"
+  ],
+  "primary_observable": "Balanced loops that miss a ring or whose witnesses fail (H1 predicts none); unbalanced loops that persist to lag 400.",
+  "cheapest_meaningful_control": "net_lib agrees with path_lib and with its full-state-space reading (SEPARATE-20261108-001A, check 1); the four-ring case is LOOP-PROOF-20261108-001A, checked to size 30.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The totals.",
+  "decision_or_followup_rule": "H1, frozen: every balanced loop keeps its chain-end witnesses to lag 400. If it holds, it supports the theorem at r = 5 to 8; if any balanced loop fails, the theorem's proof is wrong and is withdrawn.",
+  "stop_rule": "Stop when every loop of the family has its verdict to lag 400.",
+  "nonclaims": [
+    "Exploratory: lags to 400, these positions only.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing: a probe of random positions in loops of 3 and 5 to 8 rings at sizes 4 to 12 found all 1,294 balanced loops persisting to lag 300 and some unbalanced ones persisting too. run.py --pilot timed 300 random loops at 1.3 s and printed no verdicts."
+}

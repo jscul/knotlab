@@ -3981,8 +3981,21 @@ So network holes come in two kinds:
      pinwheel, the plane's price of roundness is one bit per tile, as the sphere's is one bit per incidence.
    - **A note** for outside readers, "The pinwheel tilings have no undecorated local rules", is in knotlab's notes with an
      independent replay.
-   - **Next (awaiting a go-ahead).** The last decoration: deeper crystals, then a forcing test that follows the geometry alone
-     (Payoff 2/3, Concreteness 2/3) ([decision note](../research/ONE-BIT-20261108-001/one_bit.md)).
+   - **Next (taken).** The last decoration (next entry) ([decision note](../research/ONE-BIT-20261108-001/one_bit.md)).
+
+   **2026-11-08: the last one-bit decoration** (`LAST-BIT-20261108-001`).
+   - **The question.** Does s(0) = 1 0 1 0 1, s(1) = 0 0 1 1 0 force the pinwheel? It is the only one-bit decoration no crystal has
+     escaped, and its parent labels are forced.
+   - **No deeper domino crystals (exploratory).** In the whole domino-torus family no collar needs exactly three cuts to become a
+     pinwheel collar: its crystals are legal after one or two cuts or never. So that family is exhausted for this decoration.
+   - **The forcing proof stalls (proved).** If every parent collar were a pinwheel collar, a level-by-level argument would prove the
+     plane is a pinwheel tiling. But 153 labelled parent collars that are not pinwheel collars survive a joint consistency test and
+     exhaustive extension two tiles out at the parent level, and most survive three.
+   - **Reading.** The question is still open, now with a sharp shape: either some plane obeys the law while its parents break the
+     collar law, probably a crystal outside the domino family, or those defects die further out and one bit per tile forces the
+     pinwheel.
+   - **Next (awaiting a go-ahead).** A crystal built from the surviving parent collars, searched on tori one level up (Payoff 2/3,
+     Concreteness 2/3) ([decision note](../research/LAST-BIT-20261108-001/last_bit.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

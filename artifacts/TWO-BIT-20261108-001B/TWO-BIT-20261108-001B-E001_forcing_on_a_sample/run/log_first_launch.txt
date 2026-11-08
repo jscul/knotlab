@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/home/jscul/p-vs-np-contact-first/experiments/TWO-BIT-20261108-001B/TWO-BIT-20261108-001B-E001_forcing_on_a_sample/run.py", line 143, in <module>
+    main()
+    ~~~~^^
+  File "/home/jscul/p-vs-np-contact-first/experiments/TWO-BIT-20261108-001B/TWO-BIT-20261108-001B-E001_forcing_on_a_sample/run.py", line 93, in main
+    F.setup(8)
+    ~~~~~~~^^^
+  File "/home/jscul/p-vs-np-contact-first/proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/forcing_lib.py", line 45, in setup
+    G["sup"] = dict(pool.map(RB.supports_of, range(len(sets))))
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 774, in get
+    raise self._value
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 540, in _handle_tasks
+    put(task)
+    ~~~^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.13/multiprocessing/reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle <function supports_of at 0x76e85d053420>: it's not the same object as round_price_b_check.supports_of

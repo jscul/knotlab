@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "TWO-BIT-20261108-001B-E001",
+  "ticket": "TWO-BIT-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On a random sample of the products of one-bit decorations that escaped no listed crystal, does the forcing route start (parent labels forced, off-law parent collars removed by local consistency), or do off-law collars remain, and does a torus search from them find a crystal?",
+  "public_inputs": {
+    "sample": "12 of the 3,241 surviving product classes of TWO-BIT-20261108-001A-E001 (its result.json), drawn by Python's random.sample with seed 1 from the sorted list.",
+    "parents": "For each sampled product, the number of core collars of the level-one law in which the central tile's five children can carry a label vector that is no s(a), by SAT with labels as two-bit words (forcing4.parents_free).",
+    "level-one collars": "The product's labelled level-one collars, from pairs of its factors' (forcing4.Q_product), kept when every child collar's labels lie in the product's law.",
+    "arc consistency": "Support-count arc consistency on them (forcing4.arc_consistency), the first stage of ONE-BIT-20261108-001A's joint test; the survivors split into labelled keys of the law, pinwheel collars with other labels, and non-pinwheel collars.",
+    "torus search": "For the first three sampled products in sample order with off-law collars left, up to 20 of them as seeds (non-pinwheel collars first, then the others, each group in the order of random.Random(1).shuffle), by CRYSTAL-UP-20261108-001A-E002's search unchanged except at most 100 lattices per seed, with the arc-consistent collars as the law; a completed torus is a crystal when its cut admits a periodic two-bit labelling obeying the product's law on the torus's own lattice."
+  },
+  "forbidden_inputs": [
+    "Changing the sample, the tests, the seeds or the budgets after seeing results"
+  ],
+  "primary_observable": "For each sampled product: whether its parents are forced and how many off-law level-one collars survive arc consistency; for the searched ones, any crystal found.",
+  "secondary_observables": "Law and level-one collar counts; torus outcomes.",
+  "cheapest_meaningful_control": "The pipeline was run before freezing on one survivor (00001/00010 x 00111/10100): parents forced; 313,440 level-one collars, 2,644 left by arc consistency (964 in the law, 1,620 keys with other labels, 60 non-keys); the law's own keys survive. The torus search's control is CRYSTAL-UP-20261108-001A-E002's (it recovers the rhombus lattice for the constant decoration).",
+  "resource_budget": {
+    "wall_minutes": 120,
+    "memory_mib": 32768,
+    "workers": 8
+  },
+  "first_executable_signal": "The per-product rows.",
+  "decision_or_followup_rule": "The epic's frozen stop rule: the line pauses after this test, whatever it shows. A crystal found makes that product escape; a sampled product whose off-law collars all die would make the forcing route start for it and would be reported as the line's next candidate.",
+  "stop_rule": "Stop at the declared sample, tests, seeds and budgets.",
+  "nonclaims": [
+    "Exploratory and non-promotable: a sample of 12, local consistency only (not the joint radius-2 test), and torus searches bounded in seeds, lattices and steps.",
+    "Off-law collars surviving local consistency do not show that a product escapes; no crystal found does not show that it forces the pinwheel."
+  ],
+  "feasibility_disclosure": "Before freezing, on one survivor: the setup took about 4 minutes, the product's law 3 seconds, parent forcing 13 seconds, its level-one collars 6 seconds and arc consistency 322 seconds; a first attempt that enumerated four-label collars directly did not finish in 20 minutes and was replaced by building them from the factors'."
+}

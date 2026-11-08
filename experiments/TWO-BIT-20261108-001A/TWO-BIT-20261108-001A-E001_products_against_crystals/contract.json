@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "TWO-BIT-20261108-001A-E001",
+  "ticket": "TWO-BIT-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does every product of two one-bit decorations of the pinwheel (a pair of bits per tile, each passed to the children by its own one-bit decoration) admit one of the crystals in hand: a periodic two-bit labelling of the crystal's cut obeying the product's labelled law? The products that admit none are the candidates for two bits forcing the pinwheel.",
+  "public_inputs": {
+    "products": "All 1,048,576 ordered pairs of one-bit decorations, taken up to exchanging the factors and relabelling either factor (s~(b) = 1 - s(1 - b)); a product's law is ROUND-PRICE-20261108-001A's decor_lib labelled closure with the four labels 2a + b.",
+    "crystals": "The 11 domino-torus planes legal within two cuts (ONE-BIT-20261108-001B's kept planes, the rhombus lattice and brick rows among them) at their first legal cut j and at j + 1, and the 26 mixed-orientation crystals of CRYSTAL-UP-20261108-001A (CRYSTAL-UP-20261108-001B's crystal.json) at one and two cuts; tori of index 1 or 2 over each plane's lattice. A test is a plane, a number of cuts and a torus.",
+    "one-bit table": "For each of the 1,024 one-bit decorations, the tests its law admits (decor_lib.periodic), levels tried in order on each plane and torus, admission at one level giving the next (ROUND-PRICE-20261108-001A, Lemma 2).",
+    "product test": "For each product class, the tests both factors admit, cheapest first (tiles per period times 5^cuts times torus index); each a SAT model of a periodic labelling with two variables per tile obeying the product's law. The first admitted test is the product's escape; a product with none is a survivor. No other test can admit a product: its labels project to an escape of each factor."
+  },
+  "forbidden_inputs": [
+    "Changing the crystals, levels, tori or the product test after seeing results",
+    "Dropping products that survive"
+  ],
+  "primary_observable": "The number of product classes that escape no listed crystal (the survivors), and which they are.",
+  "secondary_observables": "The one-bit table (which tests each one-bit decoration admits); the escapes by crystal family; the number of tests tried per product.",
+  "cheapest_meaningful_control": "Positive: every one-bit decoration admits some listed test (each of the 1,024 is known to escape a crystal in the list: the domino planes for 1,022, the mixed crystals for the last two); every product with the constant decoration 00000 / 11111 escapes. A run whose controls fail is not read.",
+  "resource_budget": {
+    "wall_minutes": 180,
+    "memory_mib": 16384,
+    "workers": 12
+  },
+  "first_executable_signal": "The one-bit table and its control.",
+  "decision_or_followup_rule": "The epic's frozen stop rule: if every product class escapes a listed crystal, no product of one-bit decorations forces the pinwheel (each escape is a crystal at every radius, by the radius lemma) and the line pauses; if some escape none, one bounded forcing test runs on them (ticket B) and the line pauses after it.",
+  "stop_rule": "Stop at the declared products, crystals, levels and tori.",
+  "nonclaims": [
+    "Exploratory: a survivor escapes none of the listed crystals, which does not show that it forces the pinwheel.",
+    "Two-bit decorations that are not products are not tested."
+  ],
+  "feasibility_disclosure": "Before freezing: a product's four-label law takes milliseconds once the skeleton is built (1,240 to 2,132 labelled collars on three samples); 64 one-bit laws with tests at one and two cuts on the 8-tile mixed crystal took 0.4 seconds. A probe of this run on its first 3,000 product classes (without the level shortcut in the one-bit table) was started before freezing; its timing is reported in this run's interpretation."
+}

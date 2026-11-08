@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CRYSTAL-UP-20261108-001Z",
+    "BOND-CHAIN-20261108-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "TWO-BIT-20261108-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Backlog B8 of the goals doc (G1, question 9; A35), started on 2026-11-08 at the coordinator's go-ahead: can two hidden bits per tile, placed by a decorated substitution, force the pinwheel, when one bit never does (CRYSTAL-UP-20261108-001)? Start with products of two one-bit decorations: a tile's label is a pair of bits, each passed to the children by its own one-bit decoration. First search (ticket A, exploratory): every product, up to exchanging the factors and relabelling either, against the crystals in hand: the 11 domino-torus planes legal within two cuts (the rhombus lattice and brick rows among them) at their first admitted levels, and the 26 mixed-orientation crystals of CRYSTAL-UP-20261108-001A at one and two cuts, on tori of index 1 or 2. A product is tried on a crystal only where both factors admit it there: the labels of an escaping product project to an escape of each factor. Stop rule, frozen now: if every product escapes a listed crystal, no product of one-bit decorations forces the pinwheel, and the line pauses with non-product two-bit decorations deferred; if some products escape none, one bounded forcing test runs on them (ticket B: forced parent labels and the joint consistency test on their law, then a torus search from their surviving parent collars), and the line pauses after it whatever it shows.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TWO-BIT-20261108-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-08 (preliminary record; stress test pending): of the 139,656 classes of products of two one-bit decorations of the pinwheel, 136,415 admit a crystal in hand with a periodic two-bit labelling (88,961 first on a domino-torus plane, 47,454 on a mixed-orientation crystal) and 3,241 admit none of the 296 tests (646 with no crystal both factors admit, 2,595 with no joint labelling). Under the frozen stop rule the bounded forcing test on 12 survivors runs as the registered stress test TWO-BIT-B1 and the line then pauses.",
+  "status_class": "complete",
+  "stop_rule": "Pause after ticket A if every product escapes a listed crystal; otherwise after ticket B's one bounded forcing test, whatever it shows. Any census over ten minutes runs in the background, registered, with preliminary results committed first.",
+  "title": "Two bits per tile: products of one-bit decorations"
+}

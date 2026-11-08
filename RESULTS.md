@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**250 current results** and 5 superseded ones, from 188 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**250 current results** and 5 superseded ones, from 189 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 188 epics with their closures
+- [Epics](#epics): all 189 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1070,4 +1070,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Does creation between glue lines tell every switching class apart? (`SWITCH-COMPLETE-20261108-001`) | [closure](proofs/SWITCH-COMPLETE-20261108-001Z/SWITCH-COMPLETE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-COMPLETE-20261108-001/) |
 | 2026-11-08 | Prove that creation between glue lines sees only the switching class (`SWITCH-PROOF-20261108-001`) | [closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-PROOF-20261108-001/) |
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |
+| 2026-11-08 | Two bits per tile: products of one-bit decorations (`TWO-BIT-20261108-001`) | [closure](proofs/TWO-BIT-20261108-001Z/TWO-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-20261108-001/) |
 

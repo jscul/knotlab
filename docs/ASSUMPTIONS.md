@@ -85,7 +85,7 @@ evidence: results and their status come from the records each entry links.
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
 | [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Overturned |
 | [A30](#a30--a-processs-memory-is-read-from-its-two-time-knots) | A process's memory is read from its two-time knots | scope | Assumed |
-| [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Under challenge |
+| [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Confirmed |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
 
@@ -698,7 +698,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A31 · A shared contact combines its two rings' proposals
 
-**Under challenge** · 2026-11-08 · scope
+**Confirmed** · 2026-11-08 · scope
 
 - **Statement.** When the contact is a cell of both rings, its update is a two-input law applied to the two values that the rings'
   own rules would give it: c(t + 1) = g(f_A(a_{m−1}, c, a_1), f_B(b_{n−1}, c, b_1)). Results on shared contacts are stated for this
@@ -713,6 +713,10 @@ evidence: results and their status come from the records each entry links.
   rings read it. The cheapest test is the same census with the laws u(a_{m−1}, a_1) + v(b_{n−1}, b_1). If they persist much more
   often, the rarity belongs to this family and not to shared identity; if not, the reading stands.
 - **History.**
+  - 2026-11-08 · Confirmed by `SHARED-CONTACT-20261108-001`. Self-blind parities persist only a few points more often than proposal
+    parities on the same rings (6.4% against 4.5%), with the same growth in ring size, so the reading stands. The rarity itself was
+    largely a small-ring effect: on rings of 8 and 9 cells a fifth to a quarter of both families persist
+    ([which shared contacts persist](../research/SHARED-CONTACT-20261108-001/shared_contact.md)).
   - 2026-11-08 · Added by `PROCESS-CONTACT-20261108-001`, and put under challenge the same day by `SHARED-CONTACT-20261108-001`.
 
 ### A32 · Two-sided essentiality across time is binding

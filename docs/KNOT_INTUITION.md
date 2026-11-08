@@ -1412,10 +1412,39 @@ So network holes come in two kinds:
      (Martin, Odlyzko and Wolfram 1984). Nearest to the shared model: Boolean automata double-cycles, two cycles sharing one
      automaton, which have exponentially fewer attractors than isolated cycles (Demongeot, Melliti, Noual, Regnault and Sené). New
      as far as found: the reading of the contact gate across time, and the census of shared contacts by binding.
-   - **Next (selected).** Shared contacts that do not read themselves: contact laws that combine their four ring neighbours without
-     their own value, so that the contact is part of both loops without feeding its past to itself (Payoff 2/3, Concreteness 3/3).
-     The alternatives are shared binding as rings grow, the whole-law reading of two rings (A30), and learning a rule from its knots
-     ([decision note](../research/PROCESS-CONTACT-20261108-001/process_contact.md)).
+   - **Next (taken).** Shared contacts that do not read themselves, with shared binding as rings grow (next entry): contact laws
+     that combine their four ring neighbours without their own value, so that the contact is part of both loops without feeding its
+     past to itself (Payoff 2/3, Concreteness 3/3). The alternatives are the whole-law reading of two rings (A30) and learning a rule
+     from its knots ([decision note](../research/PROCESS-CONTACT-20261108-001/process_contact.md)).
+
+   **2026-11-08: on larger rings a fifth to a quarter of shared contacts persist** (`SHARED-CONTACT-20261108-001`).
+   - **The question.** The previous entry found persistent shared contacts rare on rings of up to 5 + 6 cells. Does a contact that
+     does not read its own value persist more often, and is the rarity a property of small rings?
+   - **The first step is decided exactly (proved).**
+     - **Proposals.** A contact that combines its rings' proposals binds both at lag 1 exactly when it combines by a parity and
+       neither rule is canalizing at its centre.
+     - **Self-blind contacts.** A contact that both rings read but that does not read itself binds at lag 1 exactly when its 4 × 4
+       table has no constant row or column. So its parities u(a_{m−1}, a_1) + v(b_{n−1}, b_1) bind exactly when u and v are
+       nonconstant.
+     - **The linear case.** With linear rings and an affine contact, binding at lag T is the contact's row of M^T meeting both rings.
+   - **Not reading itself barely helps (exploratory).** Self-blind parities persist in 6.4% of 68,992 configurations, against 4.5%
+     for proposal parities on the same rings. They do so on 157 rule-size pairs, against 22. The contact's past still returns to it
+     two steps later, through the ring cells that read it, and rules canalizing in a neighbour input then rarely persist (1.1%).
+   - **Persistence grows with the rings (exploratory).** From 3 + 4 to 8 + 9 cells, exact where the dynamics repeats within 4,096
+     lags, the fraction binding at every lag rises from 1.1% to 20.5% for proposal parities and from 3.6% to 26.0% for self-blind
+     ones. The growth slows at the largest sizes, and a run at 9 + 10 cells is under way.
+   - **Reading.**
+     - **The rarity was a small-ring effect.** On rings of 8 and 9 cells, a fifth to a quarter of parity contacts shared by identity
+       bind both rings at every lag.
+     - **The whole gate across time.** Such a contact is a cell of both loops, shared by identity and essential to both
+       recurrences. It is two-sided essential, lost when either ring is erased, a knot through its future, and persistent. So the
+       full contact gate can pass across time.
+     - **Why small rings fail.** Small rings return the contact's influence to it at once and lose their own first rows.
+   - **Provenance.** Canalizing functions (Kauffman 1969); Boolean automata double-cycles (Demongeot, Noual, Sené and coauthors). New
+     as far as found: the census by binding and its growth with ring size.
+   - **Next (selected).** Two contacts across time: three rings in a chain sharing two contacts, and whether the chain binds its ends
+     through the middle ring, the contact-network gate read across time (Payoff 3/3, Concreteness 2/3). The alternatives are why some
+     rules persist, and saturation ([decision note](../research/SHARED-CONTACT-20261108-001/shared_contact.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

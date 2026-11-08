@@ -1682,8 +1682,24 @@ So network holes come in two kinds:
    - **Sizes.** 54 families of four-ring loops persist at every size from 4 to 16, all with mixed positions; no three-ring family does.
    - **Reading.** The first closed routes of contacts across time. The path proofs relied on influence flowing one way; here it returns,
      and there is no proof for every size yet.
-   - **Next (awaiting a go-ahead).** Prove the four-ring loops persist at every size, by generating functions over GF(2) (Payoff 3/3,
-     Concreteness 2/3) ([decision note](../research/LOOP-RINGS-20261108-001/loop_rings.md)).
+   - **Next (taken).** Prove the four-ring loops persist at every size (next entry)
+     ([decision note](../research/LOOP-RINGS-20261108-001/loop_rings.md)).
+
+   **2026-11-08: balanced loops persist at every size** (`LOOP-PROOF-20261108-001`).
+   - **Feedback cancels (proved).** Over GF(2), with a = z/(1 + z), each contact's generating function is its own first values plus
+     z a^(f) times the contact before it plus z a^(b) times the contact after it. Substituting once, the contact's own term always
+     cancels, and the opposite contact's term cancels exactly when the positions sum to 2s: two contacts at cell 2 and two at cell
+     s − 2. Then every contact has a closed form, with no feedback left.
+   - **Persistence at every size (proved).** In a balanced loop whose partner reads do not overlap the chain ends, every contact binds
+     both of its rings at every lag at every ring size, through the ends of the two chains it reads.
+   - **Influence returns (proved).** Each contact needs the two rings it does not touch where C(T − 2, m) is odd for m in an interval
+     of chain lengths: recurring lags.
+   - **Where it stops.** It covers 16 of the 54 families. Overlapping partners (26 families) and one-partner contacts (12) persist
+     without its witnesses, and unbalanced loops keep their feedback: none is persistent at sizes 5 to 30.
+   - **Reading.** The two ways round the loop to the opposite contact cancel when their chain lengths agree, so balance is a property
+     of the whole loop. The first closed routes of contacts across time that hold at every size, by proof.
+   - **Next (awaiting a go-ahead).** Balanced loops of any number of rings (Payoff 3/3, Concreteness 2/3)
+     ([decision note](../research/LOOP-PROOF-20261108-001/loop_proof.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

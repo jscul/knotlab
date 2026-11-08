@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LATTICE-NET-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "GENUS-CUT-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for every network of rule-60 rings with law (12,12) contacts: after any set of contacts is cut, the pieces read from which contacts need which rings are exactly the pieces of the ring graph with the cut contacts removed; hence, on the surface of genus g the positions define, a family of rings of cuts (cycles of the dual graph) keeps the network in one piece exactly when it is independent in the surface's homology mod 2, so the most that keep one piece is 2g, two per handle, and one more separates. Check on square tori, regular genus-2 networks from GL(2,3) (every contact persistent), double covers of the torus lattice and a genus-6 network; record, as computation, when every uncut contact still needs every ring.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GENUS-CUT-20261108-001"
+  },
+  "parent": "GENUS-CUT-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (by hand; finite claims checked exactly): in every network of rule-60 rings with law (12,12) contacts, after any set of contacts is cut the pieces read from which uncut contacts need which rings are exactly the components of the ring graph without the cut contacts; so a set of rings of cuts keeps the network in one piece exactly when it is independent in the homology mod 2 of the surface the positions define, at most 2g keep one piece, some 2g do, and more separate: two per handle. The torus cut round both ways stays in one piece and a third ring separates; the genus-2 regular network of 16 rings with three contacts each (GL(2,3)) has every contact persistent at every lag.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Two rings of cuts per handle keep one piece"
+}

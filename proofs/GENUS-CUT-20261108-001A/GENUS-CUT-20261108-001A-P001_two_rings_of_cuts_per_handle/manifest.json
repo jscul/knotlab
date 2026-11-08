@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GENUS-CUT-20261108-001A-P001",
+  "canonical_id": "GENUS-CUT-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "GENUS-CUT-20261108-001A",
+  "proof": "GENUS-CUT-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Two rings of cuts per handle keep one piece",
+  "status": "Proved",
+  "claim": "For every network of rule-60 rings with law (12,12) contacts (positions embed the ring graph G cellularly in a closed orientable surface S of genus g): (1) after any set C of contacts is cut, the pieces read from which uncut contacts need which rings are exactly the components of G - C (every uncut contact needs both its rings from lag 1; needs follow walks of uncut contacts); (2) C leaves the network in one piece exactly when the cycle space of the cut contacts' dual edges injects into H1(S; Z2), so at most 2g independent rings of cuts keep one piece, some 2g do (tree-cotree), and more separate: two per handle; (3) on the torus a ring of cuts round it in each direction keeps one piece and a third separates; the genus-2 regular network of 16 rings with three contacts each (GL(2,3)) has every contact persistent at every lag at every size.",
+  "dependencies": [
+    "LATTICE-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A cut set whose native pieces differ from the components of the ring graph without the cut contacts.",
+    "A network and a cut carrying more than 2g independent rings of cuts that stays in one piece, or a tree-cotree system of 2g that separates."
+  ],
+  "lineage": {
+    "home_scope": "GENUS-CUT-20261108-001",
+    "epic_path": [
+      "GENUS-CUT-20261108-001"
+    ],
+    "parents": [
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json",
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json": "9ba1f3e50d4015eed6677f40bf3dc74c93024d7cb6b69c4ab49656176704643a",
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py": "665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md": "fc8fecf29b89ba6e2037ebb626d38a4b8b4603c7f6a6e57cb0c620067c53d76d"
+  },
+  "paths": {
+    "manifest": "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/manifest.json",
+    "identity": "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/identity.json",
+    "proof": "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/proof.md",
+    "result": "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/result.json",
+    "check": "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/check.py",
+    "directory": "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Networks of rule-60 rings with law (12,12) contacts on closed orientable surfaces; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: the classical bound on curves that leave a surface graph connected (2g), read natively through which contacts need which rings after freezing contacts"
+  }
+}

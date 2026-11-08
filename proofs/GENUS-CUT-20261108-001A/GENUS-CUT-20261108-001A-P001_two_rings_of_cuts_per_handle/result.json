@@ -1,0 +1,116 @@
+{
+ "ticket": "GENUS-CUT-20261108-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "LATTICE-NET-20261108-001A manifest": "9ba1f3e50d4015eed6677f40bf3dc74c93024d7cb6b69c4ab49656176704643a",
+    "lattice_lib": "665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42"
+   }
+  },
+  "1_networks_and_their_surfaces": {
+   "pass": true,
+   "info": {
+    "square torus 3": 1,
+    "square torus 4": 1,
+    "square torus 5": 1,
+    "square torus 6": 1,
+    "square torus 7": 1,
+    "square torus 8": 1,
+    "genus-2 network of 16 rings, three contacts each": 2,
+    "genus-2 network of 6 rings, eight contacts each": 2,
+    "genus-6 network of 6 rings": 6,
+    "genus-6 network of 8 rings": 6,
+    "double cover of the 3 x 3 torus, slit 1": 2,
+    "double cover of the 4 x 4 torus, slit 2": 2,
+    "double cover of the 5 x 5 torus, slit 2": 2,
+    "double cover of the 6 x 6 torus, slit 1": 2
+   }
+  },
+  "2_native_pieces_are_the_cut_surface_pieces": {
+   "pass": true,
+   "info": {
+    "cut sets": 504,
+    "mismatches": 0
+   }
+  },
+  "3_two_rings_of_cuts_per_handle": {
+   "pass": true,
+   "info": {
+    "most rings of cuts keeping one piece, by genus": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      6,
+      12
+     ]
+    ],
+    "families checked": 784
+   }
+  },
+  "4_torus_cut_both_ways": {
+   "pass": true,
+   "info": {
+    "uncut contacts still needing every ring (computed)": {
+     "3": "12 of 12",
+     "4": "24 of 24",
+     "5": "40 of 40",
+     "6": "60 of 60",
+     "7": "84 of 84",
+     "8": "108 of 112",
+     "9": "144 of 144",
+     "10": "180 of 180",
+     "11": "220 of 220",
+     "12": "264 of 264",
+     "13": "312 of 312",
+     "14": "364 of 364",
+     "15": "420 of 420",
+     "16": "468 of 480",
+     "17": "544 of 544"
+    },
+    "sides where some uncut contact misses a ring": [
+     8,
+     16
+    ]
+   }
+  },
+  "6_cells_exact": {
+   "pass": true,
+   "info": {
+    "5 x 5 torus cut both ways": true,
+    "8 x 8 torus cut both ways": true,
+    "16-ring genus-2 network, tree-cotree cuts": true,
+    "double cover of the 4 x 4 torus, tree-cotree cuts": true
+   }
+  },
+  "5_genus_2_networks_persist": {
+   "pass": true,
+   "info": {
+    "16 rings, three contacts each": {
+     "genus": 2,
+     "faces": 6,
+     "flips at every contact": true,
+     "contacts with an odd return count": 0,
+     "contacts needing every ring": "24 of 24",
+     "witnesses hold at every lag (exact)": true
+    },
+    "6 rings, eight contacts each": {
+     "genus": 2,
+     "faces": 16,
+     "flips at every contact": true,
+     "contacts with an odd return count": 0,
+     "contacts needing every ring": "24 of 24",
+     "witnesses hold at every lag (exact)": true
+    }
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 10.4
+}

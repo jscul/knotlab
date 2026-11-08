@@ -3372,10 +3372,42 @@ So network holes come in two kinds:
      - **Classical.** Radin's unique ergodicity, rotational symmetry and matching rules; Radin and Sadun's edge-length result;
        isotropy arguments (Vahidi-Asl–Wierman).
      - **Not found.** The bond-distance version, the two-ingredient contrast and the logarithmic orientation count.
-   - **Next (recommended, awaiting the owner).** The pinwheel grown with nothing drawn (Payoff 2/3, Concreteness 2/3). Write the
+   - **Next (taken).** The pinwheel grown with nothing drawn (Payoff 2/3, Concreteness 2/3). Write the
      substitution as a rule on knots and their shared distinctions, with labels but no coordinates. Does it regrow the pinwheel's
      law exactly?
      - **The alternatives.** The spectrum of rational π among periodic laws; a proved rate for the rounding.
+
+   **2026-11-07: the pinwheel grown with nothing drawn** (`PINWHEEL-NATIVE-20261107-001`).
+   - **The question.** Can the pinwheel's rule be stated with no coordinates, no lengths and no angles? Does it need labels from
+     outside?
+   - **An eleven-label table regrows the law (proved).**
+     - **The labels.** Label each distinction by its two knots' side types, where it sits along them, and whether they run the same
+       way. Only eleven labels ever occur, eight inside and three on the boundary.
+     - **The table.** Every knot splits into five. Every distinction splits as a → g e d e g, b → h c c, c → b b, d → a, e → b,
+       f → b, g → a, h → b. Five new distinctions, f, g, c, a, h, appear inside each knot.
+     - **Exact.** The law is regrown exactly at every level, identical to the geometry at levels 0–7.
+   - **Eight kinds of distinction (proved).**
+     - **Whole sides.** Hypotenuse against hypotenuse, either way round; long leg against long leg; short leg against short leg.
+     - **Half sides.** Half a long leg against a short leg, or against another half.
+     - **So** the only T-junctions are at midpoints of long legs.
+   - **The law carries its own labels (measured).**
+     - **The map.** The law's graph is 3-connected, so its allowed states determine its planar map up to mirror image (Whitney).
+     - **The labels.** Every distinction's label is read from its unlabelled neighbourhood of radius 2: no conflict among up to
+       235,394 darts at levels 5–7. Shuffled and non-local labellings conflict.
+   - **Reading.**
+     - **The rule.** Split every knot into five, read each distinction's kind nearby, and split it by an eleven-letter table. That
+       rule grows a law whose own distance is round.
+     - **No geometry.** No coordinate, length or angle enters.
+     - **Where the angle went.** The irrational angle appears only if the grown law is drawn in the plane. The continuing ratio lives
+       in how often the eight kinds of distinction recur.
+   - **Provenance.**
+     - **Classical.** Finite combinatorial descriptions of substitution tilings (collared tiles, Anderson–Putnam complexes; for the
+       pinwheel, Barge–Diamond–Hunton–Sadun and Frettlöh–Whitehead–Whittaker) and Whitney's theorems.
+     - **Not found.** The eleven-label rule on knots, the census and the radius-2 readability.
+   - **Next (recommended, awaiting the owner).** A round plane grown at its open ends (Payoff 3/3, Concreteness 2/3), starting with
+     atlas growth. From one knot, add knots only where every nearby distinction keeps a radius-2 neighbourhood of the pinwheel's
+     atlas. Does growth reach dead ends, or grow pinwheel patches outward as the number line grew?
+     - **The alternatives.** Prove radius 2 for every pinwheel tiling; the spectrum of rational π among periodic laws.
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

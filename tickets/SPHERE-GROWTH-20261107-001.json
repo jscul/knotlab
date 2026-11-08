@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "UNIFORM-FANO-20261107-001Z",
+    "UNIFORM-SPHERES-20261107-001Z",
+    "COUNT-SURFACES-20261107-001Z",
+    "SPHERE-WIDTH-20261107-001Z",
+    "SPHERE-SIZE-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "SPHERE-GROWTH-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('then continue on to i', UNIFORM-FANO-20261107-001's recommendation, rated Payoff 3/3 - Barrier, Concreteness 1/3 - Stated): the scoping step for laws with two kinds of points. Can a local law place the six digon co-lines of a sphere itself, so that a law grows its own sphere and with it the knot's contradiction? Make 'local law' precise (bounded radius, with or without hidden states on incidences) and decide what such a law can force: closure, the contradiction (the count on a Kasteleyn sphere), and roundness, which the contradiction's hardness needs (width Theta(sqrt n) on the octahedral spheres, bounded on long tubes). Serves question 9 (a law that lays out its own space, nothing drawn).",
+  "ownership": {
+    "root": true,
+    "scope_id": "SPHERE-GROWTH-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: a local law without hidden states cannot force a round sphere (if it allows the octahedral knot sphere K_m it allows long capped tubes, whose contradictions resolution refutes in width O(m)); with one hidden bit per incidence (straight seams between digons) a law's spheres are exactly the K_m, each with one marking, so it lays out its own round sphere and a contradiction needing width Theta(sqrt n) and size 2^Theta(sqrt n); a growth law without branching grows at most one closed surface. Recommendation: Continue, awaiting the owner: grow K_m by a local process (Payoff 2/3 Substantial, Concreteness 2/3 Testable).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the scoping question is made precise and answered for laws with and without hidden states, by proof, or an obstruction to the proof is found and explained.",
+  "title": "One hidden bit per incidence lets a law grow its own round sphere"
+}

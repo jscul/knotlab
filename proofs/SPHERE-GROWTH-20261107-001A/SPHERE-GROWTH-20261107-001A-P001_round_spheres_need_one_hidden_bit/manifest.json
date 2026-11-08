@@ -1,0 +1,120 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPHERE-GROWTH-20261107-001A-P001",
+  "canonical_id": "SPHERE-GROWTH-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "SPHERE-GROWTH-20261107-001A",
+  "proof": "SPHERE-GROWTH-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Round spheres need one hidden bit per incidence",
+  "status": "Proved",
+  "claim": "Knot spaces of the two-kind law (every co-line has two or three points). (1) Every closed sphere of the law has exactly six digons, and with the local Kasteleyn sign rule (the signs at a co-line of d points have parity d + 1) its knot contradicts itself. (2) Tube lemma: for r >= 1, m >= 2r + 1 and L >= 2r + 1, every radius-r ball of the capped tube T(m, L, tau) is a radius-r ball of the octahedral sphere K_m, so a law of radius r without hidden states that allows K_m allows every such tube; the tube's knot still contradicts itself but is refuted by resolution in width O(m) at every length L. (3) Seam law: with one hidden bit per incidence and two rules at co-lines (S1: all four incidences of a digon are seams; S2: a co-line of three points has no seam or exactly one opposite pair), a closed two-kind sphere has a marking if and only if it is K_m for some m, and K_m has exactly one marking (its octahedron's edges). So the law's spheres are exactly the octahedral knot spheres, at every size, and each one's knot needs resolution width Theta(sqrt n) and size 2^Theta(sqrt n). (4) A growth law without branching grows at most one closed surface from a seed.",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "SPHERE-WIDTH-20261107-001Z",
+    "SPHERE-SIZE-20261107-001Z",
+    "UNIFORM-SPHERES-20261107-001Z",
+    "UNIFORM-FANO-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A closed two-kind sphere other than a K_m that has a seam marking, or a K_m with a second marking.",
+    "A radius-r ball of a tube T(m, L, tau) with m >= 2r + 1 and L >= 2r + 1 that does not occur in K_m.",
+    "A tube whose Kasteleyn knot needs resolution width that grows with its length.",
+    "A misreading of the width and size bounds of SPHERE-WIDTH-20261107-001A and SPHERE-SIZE-20261107-001B, which are stated for the Kasteleyn-signed octahedral sphere up to gauge."
+  ],
+  "lineage": {
+    "home_scope": "SPHERE-GROWTH-20261107-001",
+    "epic_path": [
+      "SPHERE-GROWTH-20261107-001"
+    ],
+    "parents": [
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json",
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json",
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json",
+      "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json",
+      "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/manifest.json",
+      "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json",
+      "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/manifest.json",
+      "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/result.json",
+      "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/manifest.json",
+      "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json": "c0b4f2ecd6d98b400af0be2882f17e3a13cc7607e8ea656d73920f3bae6a580c",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json": "dd1304e1eef14eb345b170da210e5253abc6bf5c7708b6342b91a78187853a6b",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py": "49cc570c49a8617e5de070be79bae06ba995c7ce25894ad263022522d0ea8943",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/manifest.json": "28454007b876da69896339a77ffac6aeacc0566c9a8ce66992e3404c4722134c",
+    "proofs/SPHERE-WIDTH-20261107-001A/SPHERE-WIDTH-20261107-001A-P001_the_spheres_count_needs_width_sqrt_n/result.json": "024c0e6da6dcce7055ac6835ceade148821cda0eb860f55acf45af34fe845bde",
+    "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/manifest.json": "3807e10432ab6f91c62b069cb9642023ac57b1301d568070e8446369dc65d1d7",
+    "proofs/SPHERE-SIZE-20261107-001B/SPHERE-SIZE-20261107-001B-P001_the_spheres_count_needs_size_2_sqrt_n/result.json": "159a7eb8ffdbb8a4565180bbc7b5ce99c9592d572793387cd2cddd754e086223",
+    "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/manifest.json": "08ac1d9467e9c1b7c2593f95f753460b969dd77bdc5218462783a363699b6bf8",
+    "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/result.json": "bfd437190fcfab10c86a51de6fbca07b6f0e95bdafc2636e54f019fa30008d53",
+    "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/manifest.json": "dd2906e8582a58d1dec168dc63a597405675423e10ffe40034a86957d6cea395",
+    "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/result.json": "2beb5fd5303a90c79da664bf8b8c22117e4b0e4f372759fe57c05449ca3937c4"
+  },
+  "paths": {
+    "manifest": "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json",
+    "identity": "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/identity.json",
+    "proof": "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/proof.md",
+    "check": "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/check.py",
+    "result": "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json",
+    "directory": "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every closed sphere of the two-kind law, by proof. Checked by computation on K_m (m <= 8), every tube T(m, L, tau) with m <= 4, L <= m + 3 and every twist, and 60 randomly grown spheres; the tube lemma for radius r <= 3.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, with the finite claims checked by computation with controls; no human or external review",
+    "novelty": "new as far as found; folklore risk moderate. Local views and locally checkable proofs (Goos-Suomela 2011), decorated matching rules (Goodman-Strauss 1998) and flat cone spheres (Thurston 1998) are classical; the seam law's characterization of the octahedral knot spheres, and what it means for the knot's hardness, are new as far as found."
+  }
+}

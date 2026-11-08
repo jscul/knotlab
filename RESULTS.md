@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**217 current results** and 5 superseded ones, from 152 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**218 current results** and 5 superseded ones, from 153 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 68 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 69 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 31 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 152 epics with their closures
+- [Epics](#epics): all 153 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -520,6 +520,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · No uniform native rule tried reads every space** (`REFINE-READ-20261107-001-D002`).
   Yes/no two-stage twins read 219 of 277 spaces and native row twins, their maximal cliques, their refinement veto and their glue-compatible version 234 each, failing only by merging atoms that meet one plane piece (32 of 38 by complete twinship). Native-twin lines of one atom never create at a common glue line in different ways (17,494 of 17,494), while 530 of 1,572 cross-atom twin pairs do.
   [proof P001](proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · One hidden bit per incidence lets a law lay out its own round sphere** (`SPHERE-GROWTH-20261107-001-D001`).
+  A local law without hidden states cannot force a round sphere: if it allows the octahedral knot sphere, it allows long capped tubes, whose knot contradictions resolution refutes in bounded width. With one hidden bit per incidence, marking straight seams between digons, a law's spheres are exactly the octahedral knot spheres at every size, so it lays out its own round sphere and a contradiction needing width Theta(sqrt n).
+  [proof P001](proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/proof.md), [epic closure](proofs/SPHERE-GROWTH-20261107-001Z/SPHERE-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · The Fano plane is the only uniform law that contradicts itself** (`UNIFORM-FANO-20261107-001-D001`).
   A simple cubic triple system whose symmetries are transitive on its points and on its lines has a brace for its incidence graph, so by Seymour's dictionary and McCuaig's theorem the Fano plane is its only non-2-colourable case. Since non-constant uniform signs are satisfied by the all-zero assignment, the Fano plane is the only uniform knot law that contradicts itself.
   [proof P001](proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/proof.md), [epic closure](proofs/UNIFORM-FANO-20261107-001Z/UNIFORM-FANO-20261107-001Z-P001_epic_closure/proof.md)
@@ -919,6 +922,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | The pinwheel grown with nothing drawn (`PINWHEEL-NATIVE-20261107-001`) | [closure](proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/PINWHEEL-NATIVE-20261107-001/) |
 | 2026-11-07 | Round without coins: the pinwheel law (`PINWHEEL-ROUND-20261107-001`) | [closure](proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/PINWHEEL-ROUND-20261107-001/) |
 | 2026-11-07 | Colour refinement on the native creation map (`REFINE-READ-20261107-001`) | [closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/REFINE-READ-20261107-001/) |
+| 2026-11-07 | One hidden bit per incidence lets a law grow its own round sphere (`SPHERE-GROWTH-20261107-001`) | [closure](proofs/SPHERE-GROWTH-20261107-001Z/SPHERE-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-GROWTH-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
 | 2026-11-07 | The Fano plane is the only uniform law that contradicts itself (`UNIFORM-FANO-20261107-001`) | [closure](proofs/UNIFORM-FANO-20261107-001Z/UNIFORM-FANO-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-FANO-20261107-001/) |

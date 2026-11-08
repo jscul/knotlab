@@ -94,6 +94,7 @@ evidence: results and their status come from the records each entry links.
 | [A37](#a37--a-path-composes-at-the-recurring-lags-its-dynamics-fixes) | A path composes at the recurring lags its dynamics fixes | reading | Assumed |
 | [A38](#a38--a-contact-is-cut-by-freezing-it) | A contact is cut by freezing it | scope | Assumed |
 | [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
+| [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Under challenge |
 
 ## Entries
 
@@ -921,3 +922,36 @@ evidence: results and their status come from the records each entry links.
   gated knots against the grid it is drawn on.
 - **History.**
   - 2026-11-08 · Added by `BOND-CHAIN-20261108-001`, replacing A12.
+
+### A40 · Counted length is a native magnitude
+
+**Under challenge** · 2026-11-08 · measure
+
+- **Statement.** The number of contacts along a route, equivalently the lags the substrate takes to carry influence along it, is a
+  magnitude the substrate reads, and so may serve as a length across time. In a network of rule-60 rings whose law-(12, 12) contacts
+  are g cells apart, a route of L contacts from a ring to a contact, isolated by freezing every contact off it (A38), makes the far
+  contact first need the ring at lag g·L + 1, and these lags add when two routes are joined at a shared contact.
+- **Why.** The owner ruled on 2026-11-08, answering the question the process line had put since the lattice epic, whether counted
+  length can count as a native magnitude: "I think yes, length can count as magnitude. We should be willing to explore things like
+  this without getting my approval first." Until then first lags were used only as lags
+  ([lattice of rings](../research/LATTICE-NET-20261108-001/lattice_net.md),
+  [genus by cuts](../research/GENUS-CUT-20261108-001/genus_cut.md)).
+- **Rests on it.** `DISTANCE-20261108-001`, distance across time (G5): every length or distance it forms from first lags, routes and
+  cuts, and whatever is later built on them, such as dimension or roundness read across time.
+- **Challenge.** The alternative counts nothing: a count of lags or contacts is the observer's, and only orders, coincidences and
+  separations are native. The frozen test of `DISTANCE-20261108-001A` was pre-registered on 2026-11-08 before it ran (sha256 of its
+  contract c7818ce53ded426b, of run.py 7e109b3b76c426e2, of distance_lib.py ad7c26626e04edfe). It reads routes at the cell level on
+  square tori of side 5, 6 and 7, triangular tori of side 4 and 5, honeycomb tori of side 3, 4 and 5, the genus-2 networks of GL(2,3),
+  the genus-3 networks of PSL(2,7) (the Klein quartic map and its dual) and the five Platonic networks, with contacts 2, 3 and 4
+  cells apart: three random shortest and three random chordless routes of each length L = 1 to 10 (seed 20261108), each from a ring
+  holding only its first contact, with every contact off the route frozen.
+  - **Confirmed**, if (a) every route's far contact first needs its ring at lag g·L + 1; (b) at every inner contact the first lags of
+    the two halves, each isolated on its own, add up to the whole's ((t_P − 1) + (t_Q − 1) = t − 1); and (c) with consecutive
+    contacts 2 to 5 cells apart at random, on the square torus of side 5 and the genus-2 network of 16 rings, the first lag is 1 plus
+    the cells the route carries influence through.
+  - **Overturned**, if (a) or (b) fails for any route: the lag would then not be a length the substrate reads.
+  - **Confirmed for equally spaced networks only**, and reworded to say so, if only (c) fails.
+- **History.**
+  - 2026-11-08 · Put under challenge by `DISTANCE-20261108-001`, whose test was frozen and pre-registered before it ran (under
+    Challenge).
+  - 2026-11-08 · Added at the owner's ruling that counted length can count as magnitude.

@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINWHEEL-ROUND-20261107-001A-P001",
+  "canonical_id": "PINWHEEL-ROUND-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "PINWHEEL-ROUND-20261107-001A",
+  "proof": "PINWHEEL-ROUND-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Isotropy makes logical circles round: the pinwheel law",
+  "status": "Proved",
+  "claim": "Isotropy makes logical circles round. (1) Isotropy principle: if a compact space of plane tilings with finite local complexity up to rigid motions is invariant under rotations and uniquely ergodic under translations, then for any rigid-motion-covariant metric on edges with c|x - y| - C <= D <= C|x - y| + C, D(e(0), e(nu))/n tends, for almost every tiling and every direction u, to one constant mu > 0. (2) Conditional on Radin's theorems (unique ergodicity under translations, complete rotational symmetry, recognizability), the bond distances of the pinwheel's parity laws (knots at tile corners; knots on tiles) satisfy (1): their circles are exactly round, a distance that counts distinctions and uses no lengths. (3) The same 1:2 triangle cut frame-consistently into the same five copies keeps one frame (four orientations); the 1:1 right triangle halved by its altitude gives the periodic tetrakis triangulation, whose parity laws have polygonal circles, an octagon with pi = 10/3 (knots at corners) and a square with pi = 4 (knots on tiles); roundness needs both an irrational angle (arctan(1/2), by Niven) and children of both handednesses. (4) A disc of radius R in a pinwheel tiling meets O(log R) tile orientations, so the roundness is exact only as a large-scale trend.",
+  "dependencies": [
+    "LOGIC-CIRCLE-20261107-001Z",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A rotation-invariant, uniquely ergodic tiling space with linear bounds whose covariant bond distance has two different limits in two directions.",
+    "A pinwheel tiling level at which the number of tile orientations does not grow, or a consistent-cut level with more than one frame.",
+    "An even level of the 1:1 substitution that is not the checkerboard-diagonal (tetrakis) triangulation."
+  ],
+  "lineage": {
+    "home_scope": "PINWHEEL-ROUND-20261107-001",
+    "epic_path": [
+      "PINWHEEL-ROUND-20261107-001"
+    ],
+    "parents": [
+      "proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/manifest.json": "82597928fe78e8aa6e1dc405bc6a8c767e1babab0c0cfa093f10140f227b6ad0",
+    "proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/result.json": "d2a69b03693219bcb48a913d107f92da2f9bbf0d3005cba98333271bb2d2f212",
+    "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/manifest.json": "8f47df074b7d0d64243b5fa497af4fb7c8f0acf1443ca86f19fd66e34a0719e8",
+    "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json": "621a63ca2336e1a8478a794c9b0c775b6f27f346a5b8cf85b8f4abbaaaa2a035"
+  },
+  "paths": {
+    "manifest": "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/manifest.json",
+    "identity": "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/identity.json",
+    "proof": "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/proof.md",
+    "check": "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/check.py",
+    "result": "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/result.json",
+    "directory": "proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Tiling spaces with finite local complexity up to rigid motions (item 1); the Conway-Radin pinwheel (items 2 and 4); the frame-consistent cut of the 1:2 triangle and the 1:1 triangle's substitution (item 3).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "prose proofs of Theorem 1, Corollary 2 and Propositions 3-4, conditional on Radin's cited theorems; check.py (57 s) verifies the substitutions in integer arithmetic, orientation counts per level, handedness, the 1:1 pattern at levels 2-14, the vertex-cycle lemma at 2137 vertices, the bounds on 40 exact least cycles and the orientations in discs, with four rejected controls; no human or external review",
+    "novelty": "known-overlap-found: Radin and Sadun (1996) proved that shortest edge paths in pinwheel tilings, measured by Euclidean length, have length R + o(R); Radin (1993, 1994) proved unique ergodicity under translations and complete rotational symmetry; isotropy arguments for random tessellations are classical (Vahidi-Asl and Wierman). The delta is that bond distance, a count of distinctions with no lengths, is round, by an isotropy principle that covers every rigid-motion-covariant law, with the frame-consistent and 1:1 cuts as controls and the O(log R) orientation count."
+  }
+}

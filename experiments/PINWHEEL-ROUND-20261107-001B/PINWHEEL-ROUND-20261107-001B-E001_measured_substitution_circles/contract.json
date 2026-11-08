@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PINWHEEL-ROUND-20261107-001B-E001",
+  "ticket": "PINWHEEL-ROUND-20261107-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Do the parity laws on the pinwheel tiling round off at large radius, while the same five triangles cut frame-consistently and the 1:1 triangle's substitution keep non-round circles? How fast does the pinwheel's circle round off?",
+  "public_inputs": {
+    "tilings": {
+      "pinwheel": "Conway's cut of the right triangle with legs 1:2 (altitude; median of the larger piece to the midpoint of the long leg; each isosceles half cut along its axis), k levels from one triangle, exact integer coordinates.",
+      "consistent": "The same triangle and the same five copies of scale 1/sqrt 5, cut frame-consistently (altitude; midpoint subdivision of the larger piece): all tiles share one frame.",
+      "isosceles": "The right triangle with legs 1:1 halved by its altitude, k levels (even k): the tetrakis triangulation."
+    },
+    "laws": {
+      "corner": "A parity knot at each tile corner (every vertex of the tiling's plane graph), a variable on each boundary segment between consecutive vertices; bonds are cycles of the tile adjacency graph.",
+      "tile": "A parity knot on each tile over its boundary segments; bonds are cycles of the vertex graph."
+    },
+    "bond distance": "Least cycle through the two variables' edges in the bond graph, minus one: exact two-unit minimum-cost flow with unit vertex capacities.",
+    "geometry": "Lengths in units of a tile's short leg. Sources: the variable nearest to the incentre of the top triangle plus offsets (0, 0), (3.1, 1.7), (-2.3, 2.9). Targets: the variable nearest to source + R (cos theta_j, sin theta_j), theta_j = 2 pi j / 24. N_j = bond distance / Euclidean distance.",
+    "sizes": {"pinwheel and consistent": "k = 7 (78,125 tiles) for R = 8, 16, 32, 64 with 3 sources; k = 8 (390,625 tiles) for R = 128 with 1 source", "isosceles": "k = 16 (65,536 tiles) for R = 8, 16, 32, 64 with 3 sources; k = 18 (262,144 tiles) for R = 128 with 1 source"}
+  },
+  "forbidden_inputs": [
+    "Changing tilings, laws, radii, sources or directions after seeing results",
+    "Smoothing or fitting the radial profiles before computing anisotropy and harmonics",
+    "Reporting a length-weighted path metric in place of bond distance"
+  ],
+  "primary_observable": "For each tiling, law and radius: the mean radial profile over sources; its anisotropy A = max N_j / min N_j; the relative amplitudes |c_2|, |c_4|, |c_6|, |c_8| / c_0 of its discrete Fourier harmonics. Also the number of distinct tile orientations within distance R of the first source.",
+  "cheapest_meaningful_control": "The isosceles laws are periodic with exact polygons (ticket A): the tile law's square has anisotropy sqrt 2 = 1.4142 and the corner law's octagon sqrt 5 / 2 = 1.1180. Their measured anisotropy at R >= 32 must lie within 0.05 of these values, or the pipeline is not read.",
+  "resource_budget": {"wall_minutes": 180, "memory_mib": 12288},
+  "first_executable_signal": "Isosceles and pinwheel anisotropy at R = 8.",
+  "decision_or_followup_rule": "For each pinwheel or consistent law: rounding if A decreases at each doubling from R = 32 to R = 128 and A(128) <= 1.06; stalled if |A(128) - A(64)| <= 0.02 and A(128) > 1.08; otherwise unresolved. A pinwheel law classified as stalled would contradict ticket A's theorem at accessible radii and is reported as such.",
+  "stop_rule": "Stop at the declared tilings, laws, radii and sources; no added tilings aimed at roundness after seeing results.",
+  "nonclaims": [
+    "Exploratory and non-promotable; finite radii do not prove limit shapes.",
+    "The pinwheel's roundness is proved in ticket A; this experiment measures how fast it appears, and what the controls do.",
+    "No physical space or continuum is claimed."
+  ],
+  "feasibility_disclosure": "Scratch probes before this envelope (not evidence; one source, 24 directions): at k = 6 (15,625 tiles) the pinwheel corner law had anisotropy 1.36, 1.21, 1.08 at R = 8, 16, 32 and the tile law 1.52, 1.33, 1.15; the consistent cut 1.50, 1.22, 1.17 and 1.51, 1.25, 1.17; the isosceles (k = 14) corner law 1.06, 1.11, 1.10 and tile law 1.33, 1.37, 1.39. Pinwheel orientations grow by four per level (8 at k = 2, 28 at k = 7); the consistent cut keeps four."
+}

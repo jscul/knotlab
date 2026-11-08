@@ -1,0 +1,161 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PINWHEEL-ROUND-20261107-001A-P001",
+ "kind": "proof",
+ "ticket": "PINWHEEL-ROUND-20261107-001A",
+ "proof": "PINWHEEL-ROUND-20261107-001A-P001",
+ "status": "passed",
+ "claim": "Isotropy makes logical circles round. (1) Isotropy principle: if a compact space of plane tilings with finite local complexity up to rigid motions is invariant under rotations and uniquely ergodic under translations, then for any rigid-motion-covariant metric on edges with c|x - y| - C <= D <= C|x - y| + C, D(e(0), e(nu))/n tends, for almost every tiling and every direction u, to one constant mu > 0. (2) Conditional on Radin's theorems (unique ergodicity under translations, complete rotational symmetry, recognizability), the bond distances of the pinwheel's parity laws (knots at tile corners; knots on tiles) satisfy (1): their circles are exactly round, a distance that counts distinctions and uses no lengths. (3) The same 1:2 triangle cut frame-consistently into the same five copies keeps one frame (four orientations); the 1:1 right triangle halved by its altitude gives the periodic tetrakis triangulation, whose parity laws have polygonal circles, an octagon with pi = 10/3 (knots at corners) and a square with pi = 4 (knots on tiles); roundness needs both an irrational angle (arctan(1/2), by Niven) and children of both handednesses. (4) A disc of radius R in a pinwheel tiling meets O(log R) tile orientations, so the roundness is exact only as a large-scale trend.",
+ "checks": {
+  "substitutions": true,
+  "orientations_per_level": true,
+  "handedness": true,
+  "isosceles_is_tetrakis": true,
+  "vertex_cycle_lemma": true,
+  "bond_distance_bounds": true,
+  "orientations_in_balls": true
+ },
+ "failures": [],
+ "details": {
+  "substitutions": [
+   {
+    "rule": "pinwheel",
+    "levels": [
+     1,
+     6
+    ],
+    "congruent_and_cover_area": true
+   },
+   {
+    "rule": "consistent",
+    "levels": [
+     1,
+     6
+    ],
+    "congruent_and_cover_area": true
+   },
+   {
+    "rule": "isosceles",
+    "levels": [
+     2,
+     14
+    ],
+    "congruent_and_cover_area": true
+   }
+  ],
+  "orientations_per_level": {
+   "pinwheel": {
+    "1": 3,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "7": 28
+   },
+   "consistent": {
+    "1": 3,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4
+   },
+   "isosceles": {
+    "2": 3,
+    "4": 4,
+    "6": 4,
+    "8": 4,
+    "10": 4,
+    "12": 4,
+    "14": 4
+   }
+  },
+  "handedness": {
+   "parent": 1,
+   "pinwheel_children": {
+    "-1": 3,
+    "1": 2
+   },
+   "consistent_children": {
+    "-1": 5
+   }
+  },
+  "isosceles_is_tetrakis": {
+   "2": true,
+   "4": true,
+   "6": true,
+   "8": true,
+   "10": true,
+   "12": true,
+   "14": true
+  },
+  "vertex_cycle_lemma": {
+   "interior_vertices": 2137,
+   "failures": 0,
+   "max_degree": 8
+  },
+  "bond_distance_bounds": {
+   "pairs": 40,
+   "max_degree": 8,
+   "min_delta_minus_lower": 1,
+   "max_delta_minus_upper": 0
+  },
+  "orientations_in_balls": {
+   "pinwheel": {
+    "2": 7,
+    "4": 11,
+    "8": 13,
+    "16": 19,
+    "32": 20,
+    "64": 24,
+    "100": 28
+   },
+   "consistent": {
+    "2": 4,
+    "4": 4,
+    "8": 4,
+    "16": 4,
+    "32": 4,
+    "64": 4,
+    "100": 4
+   }
+  },
+  "controls": {
+   "consistent_cut_has_no_orientation_growth": {
+    "rejected": true,
+    "detail": {
+     "2": 4,
+     "3": 4,
+     "4": 4,
+     "5": 4,
+     "6": 4
+    }
+   },
+   "mutated_pinwheel_cut": {
+    "rejected": true,
+    "detail": false
+   },
+   "isosceles_parity_flipped": {
+    "rejected": true,
+    "detail": "parity flipped"
+   },
+   "vertex_cycles_with_a_missing_tile": {
+    "rejected": true,
+    "detail": {
+     "interior_vertices": 407,
+     "failures": 3,
+     "max_degree": 8
+    }
+   }
+  },
+  "theorem_flags": {
+   "isotropy_principle": "argued-in-prose (Theorem 1)",
+   "pinwheel_round": "argued-in-prose (Corollary 2), conditional on Radin's cited theorems",
+   "isosceles_periodic": "argued-in-prose (Proposition 3) and checked at levels 2-14",
+   "log_orientations": "argued-in-prose (Proposition 4) and checked in balls up to radius 100"
+  },
+  "runtime_seconds": 3.7
+ }
+}

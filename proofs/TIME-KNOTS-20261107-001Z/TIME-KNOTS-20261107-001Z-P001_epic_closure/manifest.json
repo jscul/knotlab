@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TIME-KNOTS-20261107-001Z-P001",
+  "canonical_id": "TIME-KNOTS-20261107-001Z-P001",
+  "kind": "proof",
+  "ticket": "TIME-KNOTS-20261107-001Z",
+  "proof": "TIME-KNOTS-20261107-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of knots across time",
+  "status": "Proved",
+  "claim": "Ledger closing TIME-KNOTS-20261107-001: one line per conclusion with its status, novelty and evidence (ticket A, proved; ticket B, exploratory experiment), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "TIME-KNOTS-20261107-001A",
+    "TIME-KNOTS-20261107-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, contract or run output changes, or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "TIME-KNOTS-20261107-001",
+    "epic_path": [
+      "TIME-KNOTS-20261107-001"
+    ],
+    "parents": [
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json",
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/result.json",
+      "experiments/TIME-KNOTS-20261107-001B/TIME-KNOTS-20261107-001B-E001_elementary_census/contract.json",
+      "artifacts/TIME-KNOTS-20261107-001B/TIME-KNOTS-20261107-001B-E001_elementary_census/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json": "834b223da178d1328f4c40087ac1ae0444417c2380d5b89e5fc4ed26c2c7e637",
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/result.json": "454bd5c436db53317e74df6620577e53f6cb508783e6604d418fcb9e32a58527",
+    "experiments/TIME-KNOTS-20261107-001B/TIME-KNOTS-20261107-001B-E001_elementary_census/contract.json": "1a07bbaac20f55f87454d0380aa116a14f88a996d8f611fb2d9b1638adf724af",
+    "artifacts/TIME-KNOTS-20261107-001B/TIME-KNOTS-20261107-001B-E001_elementary_census/run/result.json": "194196765ec318e7f5c7124a0eb5b256b4ddb32e087e3b8ddc44d7367cc51373"
+  },
+  "paths": {
+    "manifest": "proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/result.json",
+    "check": "proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's two tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

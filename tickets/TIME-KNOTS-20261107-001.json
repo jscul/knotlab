@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001Z",
+    "LOGIC-AXIS-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "TIME-KNOTS-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Backlog B7 of docs/RESEARCH_GOALS.md, knots across time (G5, question 4 of docs/KNOT_INTUITION.md: are loops better modeled as processes whose outputs over time are the data, and does the static definition survive?), the selected next step of GROWTH-LAW-20261107-001, which answered the growth half: a growth order adds a beginning, never a knot of the world. Here the states themselves change under a local dynamics. Write the dynamics as its space-time law, whose allowed states are the trajectories, and read it with K1-K3: which knots join a cell's future to its past, how large they are as the time gap grows, and which processes remember their past only pairwise (ties) and which bind it in knots. Characterize the knots of a cell's future by proof; treat linear rules exactly (Ledrappier's law is the space-time law of rule 60, LOGIC-AXIS-20261107-001B); census the 88 elementary cellular automata and Conway's Life, which the owner suggested on 2026-11-08 as the picture of emergence. Standalone value against known work: prime implicants and certificate complexity of Boolean functions, Lucas's theorem and Frobenius for linear automata, and Wolfram's classes are classical; their reading as knots across time under K1-K3 was not found.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TIME-KNOTS-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-08: written as its space-time law, a process is a static law on its trajectories, and its knots joining a future cell to the first row are exactly the minimally decisive sets of two or more past cells (a single deciding cell gives a tie); a future value is knot-free, its memory only pairwise, exactly when it is a single AND or OR of literals; a linear rule keeps one knot per lag, |supp p| + 1 places at every power of two, and Ledrappier's least knot leaves the light cone at T = 7; Life's step binds a cell to four neighbours at a time and never to itself; of the 88 elementary automata to lag 6, 15 are knot-free, 8 keep one knot per lag, and the traffic rule 184's knots are all C(2T + 1, T + 1) sets of T + 1 cells. Next: knots between processes (G5), started under the standing mandate.",
+  "status_class": "complete",
+  "stop_rule": "Stop when the knots joining a cell's future to its past are characterized by proof, the linear rules are settled exactly, and the census of the elementary automata (to a declared lag) and of Life (at the lags that fit) is done, or an obstruction is found and explained.",
+  "title": "Knots across time: a process's memory is its minimal decisive sets"
+}

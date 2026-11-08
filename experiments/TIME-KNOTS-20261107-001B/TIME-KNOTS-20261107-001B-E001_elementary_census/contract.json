@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "TIME-KNOTS-20261107-001B-E001",
+  "ticket": "TIME-KNOTS-20261107-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Which elementary cellular automata bind a cell's future to its past in knots (minimal decisive sets of two or more cells, by TIME-KNOTS-20261107-001A's Theorem 1), and how do those knots behave as the lag T grows?",
+  "public_inputs": {
+    "library": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/time_knots_lib.py (sha256 377ef3af728ae6a1d047a5df3d46edca1c607d91802719afe5cd005e7981f1c1): t_step_map, knots_across_time, classes.",
+    "rules": "The 88 classes of elementary rules under reflection and complement, each by its least member.",
+    "lags": "T = 1 to 6 (the T-step map on 2T + 1 cells, at most 13).",
+    "measures": "For each rule and lag: whether the map is constant; the number of knots and of ties; the knot sizes (cells + 1); whether the cell's own past value (cell 0) lies in a knot; the least knot through it; whether the map is a single term or clause.",
+    "classes of behaviour": "knot-free at every lag (only ties or constant); exactly one knot at every lag; knots at every lag whose number grows with T; anything else, listed."
+  },
+  "forbidden_inputs": [
+    "Changing rules, lags or measures after seeing results",
+    "Dropping rules"
+  ],
+  "primary_observable": "The partition of the 88 rules into the declared classes of behaviour over T = 1..6, with each rule's knot counts and least knot sizes.",
+  "cheapest_meaningful_control": "Linear rules 60, 90 and 150 must show exactly one knot at every lag, of the size Theorem 3 gives; rule 128 (AND) and rule 254 (OR) must be knot-free with 2T + 1 ties; every knot-free map must be a term or a clause (Theorem 2). A census that fails these is not read.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "The controls.",
+  "decision_or_followup_rule": "Report the partition. If some rule is knot-free at small lags but not at larger ones, list it with the first lag that has a knot. If the least knot through the cell's own past grows like T + 2 for all non-linear rules with knots, record that as the pattern; otherwise list the exceptions.",
+  "stop_rule": "Stop at T = 6 for all 88 rules.",
+  "nonclaims": [
+    "Exploratory and non-promotable: lags up to 6 only.",
+    "Two-time knots only: knots through intermediate rows are not counted here.",
+    "No claim about Wolfram's classes beyond the comparison stated."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket A's library was written and checked (its check.py), including rules 60, 90, 150, 128, 254, 30, 110 and 184 at T = 1 to 5 while sizing (rule 30: 2, 2, 9, 22, 36 knots; rule 110: 3, 4, 9, 18, 31; rule 184: 3, 10, 35, 126, 462). The decisive-set table takes under a second per rule at 13 cells. No full census was run."
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001A",
+    "LOGIC-AXIS-20261107-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TIME-KNOTS-20261107-001A-P001"
+  },
+  "id": "TIME-KNOTS-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for a deterministic local dynamics written as its space-time law (allowed states: the trajectories): (1) the knots (K1-K3) that contain a cell's value after T steps and otherwise only cells of the initial row are exactly the sets S + {y} where S is a minimal decisive set of the T-step map F_T (some setting of S fixes F_T, and no smaller set fixes it in any way) with |S| >= 2; a decisive single cell gives a tie, not a knot; (2) a T-step map has no knot exactly when every decisive set contains a decisive single cell, as for AND and OR of literals; (3) for linear rules (polynomial p over GF(2)) the space-time law is a linear code whose knots are its minimal dual words; at lag T the future cell's only two-time knot is the support of p^T plus the cell, so at lags 2^k (Frobenius) it has |supp p| + 1 places for every k (rule 60: Ledrappier's Frobenius triangles), while intermediate rows give smaller knots at other lags. Check every finite claim by computation with controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TIME-KNOTS-20261107-001"
+  },
+  "parent": "TIME-KNOTS-20261107-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08: written as its space-time law, a process's knots joining a cell's future value to its past are exactly its minimal decisive sets of two or more cells (some setting fixes the future value, no smaller set decides it); a future value has no knot exactly when it is a single AND or OR of literals, so pairwise memory is exactly the terms and clauses; a linear rule has one two-time knot per lag, the support of p^T plus the cell, with |supp p| + 1 places at every power of two, and smaller knots through intermediate rows (2 + w(T) in rule 102's light cone, T <= 6); in Life a cell's next value is knotted only to sets of four neighbours, never to its own present.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Knots across time are minimal decisive sets"
+}

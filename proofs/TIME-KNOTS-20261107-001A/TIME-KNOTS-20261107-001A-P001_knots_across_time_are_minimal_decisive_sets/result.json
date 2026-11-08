@@ -1,0 +1,403 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/manifest.json": "Proved",
+     "proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/result.json": "passed",
+     "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json": "Proved",
+     "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json": "passed"
+    }
+   }
+  },
+  "1 Theorem 1: on all 88 elementary rules at T = 1, 2 and on 300 random functions of 5 and 6 inputs, the knots of the graph of the map are exactly the minimally decisive sets with two or more cells, plus the output; control: all decisive sets overcount": {
+   "pass": true,
+   "info": {
+    "maps tested": 476,
+    "mismatches": 0,
+    "control differs": true
+   }
+  },
+  "2 Theorem 2: every nonconstant Boolean function of 2, 3 and 4 inputs has no knot exactly when it is a single AND or OR of literals; every term and clause of 5 inputs is knot-free; 300 random 5-input functions agree": {
+   "pass": true,
+   "info": {
+    "[n, nonconstant functions, knot-free, agreeing]": [
+     [
+      2,
+      14,
+      12,
+      14
+     ],
+     [
+      3,
+      254,
+      46,
+      254
+     ],
+     [
+      4,
+      65534,
+      152,
+      65534
+     ]
+    ],
+    "5-input terms and clauses": 484,
+    "random 5-input": 300
+   }
+  },
+  "3 Theorem 3: linear and affine rules (60, 102, 90, 150 and the complements 105, 195), T = 1..6: exactly one two-time knot per lag, the support of p^T plus the cell, with |supp p| + 1 places at T = 1, 2, 4; Lucas: rule 60's support at lag T has 2^popcount(T) cells (T <= 32)": {
+   "pass": true,
+   "info": {
+    "[rule, T, knot sizes, ok]": [
+     [
+      60,
+      1,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      60,
+      2,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      60,
+      3,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      60,
+      4,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      60,
+      5,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      60,
+      6,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      102,
+      1,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      102,
+      2,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      102,
+      3,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      102,
+      4,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      102,
+      5,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      102,
+      6,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      90,
+      1,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      90,
+      2,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      90,
+      3,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      90,
+      4,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      90,
+      5,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      90,
+      6,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      150,
+      1,
+      [
+       4
+      ],
+      true
+     ],
+     [
+      150,
+      2,
+      [
+       4
+      ],
+      true
+     ],
+     [
+      150,
+      3,
+      [
+       6
+      ],
+      true
+     ],
+     [
+      150,
+      4,
+      [
+       4
+      ],
+      true
+     ],
+     [
+      150,
+      5,
+      [
+       10
+      ],
+      true
+     ],
+     [
+      150,
+      6,
+      [
+       6
+      ],
+      true
+     ],
+     [
+      105,
+      1,
+      [
+       4
+      ],
+      true
+     ],
+     [
+      105,
+      2,
+      [
+       4
+      ],
+      true
+     ],
+     [
+      105,
+      3,
+      [
+       6
+      ],
+      true
+     ],
+     [
+      105,
+      4,
+      [
+       4
+      ],
+      true
+     ],
+     [
+      105,
+      5,
+      [
+       10
+      ],
+      true
+     ],
+     [
+      105,
+      6,
+      [
+       6
+      ],
+      true
+     ],
+     [
+      195,
+      1,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      195,
+      2,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      195,
+      3,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      195,
+      4,
+      [
+       3
+      ],
+      true
+     ],
+     [
+      195,
+      5,
+      [
+       5
+      ],
+      true
+     ],
+     [
+      195,
+      6,
+      [
+       5
+      ],
+      true
+     ]
+    ],
+    "lucas": true
+   }
+  },
+  "4 intermediate rows (rule 102, Ledrappier's law): within the past light cone, the least knot through a cell and its value T steps on has 2 + w(T) places for T = 1..6, w the non-adjacent-form weight; the two-time knot alone has 2^popcount(T) + 1": {
+   "pass": true,
+   "info": {
+    "[T, least knot in the light cone, 2 + w(T), two-time knot]": [
+     [
+      1,
+      3,
+      3,
+      3
+     ],
+     [
+      2,
+      3,
+      3,
+      3
+     ],
+     [
+      3,
+      4,
+      4,
+      5
+     ],
+     [
+      4,
+      3,
+      3,
+      3
+     ],
+     [
+      5,
+      4,
+      4,
+      5
+     ],
+     [
+      6,
+      4,
+      4,
+      5
+     ]
+    ]
+   }
+  },
+  "5 Conway's Life, one step: the knots across time are the 70 sets of four neighbours with the cell's next value (four live neighbours decide by overcrowding); no ties; the cell's own present value lies in no knot": {
+   "pass": true,
+   "info": {
+    "knots": 70,
+    "sizes": {
+     "5": 70
+    },
+    "ties": 0,
+    "centre in a knot": false
+   }
+  }
+ },
+ "seconds": 15.8
+}

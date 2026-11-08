@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TIME-KNOTS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TIME-KNOTS-20261107-001B-E001",
+    "contract_path": "experiments/TIME-KNOTS-20261107-001B/TIME-KNOTS-20261107-001B-E001_elementary_census/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "TIME-KNOTS-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory census: for each of the 88 elementary cellular automata up to reflection and complement, and lags T = 1 to 6, compute the T-step map of one cell on the 2T + 1 cells of its past light cone and its minimal decisive sets, so its knots across time (size at least two) and its ties (single cells): how many, their sizes, whether the cell's own past value lies in a knot, and the least knot through it. Classify the rules by how their knots across time behave as T grows (none, bounded, growing). Do the same for Conway's Life at T = 1 (and T = 2 if it fits). Controls: linear rules must show exactly one knot per lag, the support of p^T plus the cell; AND and OR rules must show ties only.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TIME-KNOTS-20261107-001"
+  },
+  "parent": "TIME-KNOTS-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, TIME-KNOTS-20261107-001B-E001): of the 88 elementary automata over lags 1 to 6, 15 are knot-free at every lag (memory only pairwise: constants, identity, shifts, negation, single ANDs such as 128, 136, 160), 8 keep exactly one knot per lag (the linear and affine 60, 90, 105, 150, whose knot is the support of p^T plus the cell, and 42, 76, 138, 200 with one three-place knot), 49 have knot counts growing at every lag, and 16 behave otherwise (rules 1, 3, 5 alternate knot-free and knotted lags; rule 30 has 2, 2, 9, 22, 36, 100 knots). The traffic rule 184's knots at lag T are exactly all C(2T+1, T+1) sets of T + 1 light-cone cells (to T = 6); majority (232) keeps a three-place knot at every lag. The cell's own past lies in a knot at every lag for 52 rules; knots across time do not follow Wolfram's classes.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Which automata bind their past in knots"
+}

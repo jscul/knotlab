@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TIME-KNOTS-20261107-001A-P001",
+  "canonical_id": "TIME-KNOTS-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "TIME-KNOTS-20261107-001A",
+  "proof": "TIME-KNOTS-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Knots across time are minimal decisive sets",
+  "status": "Proved",
+  "claim": "A deterministic local dynamics written as its space-time law (allowed states: the trajectories), read with K1-K3. (1) The knots made of one cell's value after T steps and first-row cells are exactly S + {y} for the minimally decisive sets S of the T-step map (some setting of S fixes it, no proper subset is decisive) with at least two cells; a decisive single cell gives a tie. (2) A nonconstant Boolean function has no such knot exactly when it is a single conjunction or a single disjunction of literals: a process knows its past only pairwise exactly there. (3) For a linear rule with polynomial p the only two-time knot at lag T is the support of p^T plus the cell, with |supp p| + 1 places at every lag 2^k (Frobenius) and 2^popcount(T) + 1 for rule 60 (Lucas); intermediate rows give smaller knots, 2 + w(T) places in rule 102's light cone for T <= 6 (Ledrappier's law, w the non-adjacent-form weight). (4) In Conway's Life the knots joining a cell's next value to the present are the 70 sets of four neighbours; the cell's own present value is in none.",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001A",
+    "LOGIC-AXIS-20261107-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A knot of a T-step map's graph that is not a minimally decisive set plus the output, or the converse.",
+    "A nonconstant function with no knot in its graph that is not a single AND or OR of literals, or a term or clause with a knot.",
+    "A linear rule with more than one two-time knot at some lag."
+  ],
+  "lineage": {
+    "home_scope": "TIME-KNOTS-20261107-001",
+    "epic_path": [
+      "TIME-KNOTS-20261107-001"
+    ],
+    "parents": [
+      "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/growth_law_lib.py",
+      "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json",
+      "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json",
+      "proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/manifest.json",
+      "proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/manifest.json": "8e9326e09593ec712fee9c95e17c80f07bc457a7aefded187aff2b33c39875b2",
+    "proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/result.json": "4678ba76a1c645691d149b03c2562c6828f6a915712d1c4a12f8a5dcd0de17ac",
+    "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json": "ecec297171c5651d4de0fa9615b0c8add1ba07fe2b99cf4471fe88b8b047c23b",
+    "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json": "764429acd903b0a0371c7327d8e193517b38c97d272308e1357dfb1296f4ab73",
+    "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/growth_law_lib.py": "9007dadfc1bc73fea625884c3654b97b547291d7262e79f94fe98916137c860b"
+  },
+  "paths": {
+    "manifest": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json",
+    "identity": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/identity.json",
+    "proof": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/proof.md",
+    "check": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/check.py",
+    "result": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/result.json",
+    "directory": "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Theorems 1-3 by proof; Proposition 4 by exhaustion over nine cells. Computed: all 88 elementary rules at T = 1, 2 and 300 random functions of 5 and 6 inputs against the generic enumerator; every nonconstant function of up to 4 inputs, all terms and clauses of 5 and 300 random 5-input functions; six linear and affine rules to T = 6 and Lucas to T = 32; rule 102's light cone to T = 6; Life's step.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "by hand, with the finite claims checked by computation with controls; no human or external review",
+    "novelty": "known-with-delta: implicants and certificates of Boolean functions (Buhrman and de Wolf 2002), Lucas's theorem and Frobenius for linear automata, Ledrappier's shift and its Frobenius triangles are classical; new as far as found is the reading under K1-K3: a process's knots across time are the minimal decisive sets of its future values, pairwise memory is exactly the single ANDs and ORs, and linear processes keep a fixed-size knot with their past at every power of two."
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**218 current results** and 5 superseded ones, from 153 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**219 current results** and 5 superseded ones, from 154 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 69 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 70 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 31 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 153 epics with their closures
+- [Epics](#epics): all 154 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -514,6 +514,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · Native far sides separate atoms through glue, rows at atom lines do not** (`GENUS-READ-20261107-001-D003`).
   Through K4^(3), the Fano plane and census 58 alone every Fano atom acts as one (1,065 of 1,065), and all 372 yes/no twins across atoms in 39 spaces are told apart, 114 only through their rows at glue lines. Twins on these native rows at atom lines read 234 of 277 spaces, merging atoms where they meet one plane piece.
   [proof P001](proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/proof.md), [epic closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A growing law needs a shared coin: refinement shares it, accretion must carry it** (`GROW-COIN-20261107-001-D001`).
+  Growth keeps a knot sphere round without a witness only by refinement, which scales an already round seed and never places a corner. Accretion must place corners, and when each turn is decided by a label-free local rule it also closes lopsided spheres, so making the four equator corners agree needs a bit carried by the process, a hidden witness under the canonical test.
+  [proof P001](proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/proof.md), [epic closure](proofs/GROW-COIN-20261107-001Z/GROW-COIN-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · Native creation fixes the atoms of every computed space** (`REFINE-READ-20261107-001-D001`).
   On 191 saved and 86 fresh spaces, pair refinement (folklore 2-WL) of the native creation map, read through the order-free far sides, never puts a pair within a Fano atom and a pair across two atoms in one class, so every symmetry of the map preserves the atoms and they are definable in three-variable counting logic in each space. On whether creation occurs alone it mixes them in 42 spaces.
   [proof P001](proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
@@ -917,6 +920,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | The knot's count in TFNP: PPADS-complete one-sided, PPAD-complete two-sided (`COUNT-TFNP-20261107-001`) | [closure](proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-TFNP-20261107-001/) |
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
 | 2026-11-07 | Reading the genus natively (`GENUS-READ-20261107-001`) | [closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-READ-20261107-001/) |
+| 2026-11-07 | A growing law needs a shared coin: refinement shares it, accretion must carry it (`GROW-COIN-20261107-001`) | [closure](proofs/GROW-COIN-20261107-001Z/GROW-COIN-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-COIN-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
 | 2026-11-07 | Circles from logic: polygons, coins and roundness (`LOGIC-CIRCLE-20261107-001`) | [closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-CIRCLE-20261107-001/) |
 | 2026-11-07 | Growth at open ends: what a law grows with nothing drawn (`OPEN-END-GROWTH-20261107-001`) | [closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/OPEN-END-GROWTH-20261107-001/) |

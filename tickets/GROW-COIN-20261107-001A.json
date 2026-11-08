@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SPHERE-GROWTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROW-COIN-20261107-001A-P001"
+  },
+  "id": "GROW-COIN-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) subdividing every triangle of K_m into j^2 gives K_{jm} (j = 2, 3); a refinement step is all-or-nothing in every order, because a split edge forces both its triangles to split; it maps a tube to a tube, so it keeps the seed's shape and never places a corner; (2) in ring accretion around a corner (each ring vertex completed to degree 6, or a convex turn made a corner), making the four turns of ring m corners gives exactly K_m, and K_m arises only that way; (3) with each turn decided on its own, ring accretion also closes into non-round two-kind spheres (exhaustive enumeration and random coins); (4) in single-strip accretion a turn's radius-w decision window is the same in every lap, so a label-free rule decides the four equator turns alike only by chance; one bit kept for one lap makes it exact, but that bit is history the process supplies, a hidden witness under the canonical test; (5) the window law of one order, run in random orders, closes only small round spheres or sticks. Check by computation with controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROW-COIN-20261107-001"
+  },
+  "parent": "GROW-COIN-20261107-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-07: refinement (subdividing every triangle) maps K_m to K_jm, is all-or-nothing in every order and keeps the seed's shape, so it never places a corner; ring accretion gives K_m exactly when the four turns of one ring become corners, and with turns decided one at a time it also closes lopsided spheres (38 distinct closures up to 100 triangles, 3 round; 12 of 400 random-coin runs non-round, up to 646 triangles); in single-strip accretion a turn's decision window is the same in every lap (w <= 5), so tying the four corners needs a carried bit, a hidden witness under the canonical test.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Refinement shares its coin, accretion must carry it"
+}

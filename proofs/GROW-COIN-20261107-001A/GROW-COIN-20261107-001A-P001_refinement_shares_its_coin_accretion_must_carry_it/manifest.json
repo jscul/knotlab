@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-COIN-20261107-001A-P001",
+  "canonical_id": "GROW-COIN-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-COIN-20261107-001A",
+  "proof": "GROW-COIN-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Refinement shares its coin, accretion must carry it",
+  "status": "Proved",
+  "claim": "Two-kind knot spheres (co-lines of two or three points); K_m the octahedral knot sphere. (1) Refinement: subdividing every triangle of K_m into j^2 gives K_{jm} (j = 2, 3); a refinement step is all-or-nothing in every order, since a split edge forces both its triangles to split; it maps a capped tube to a capped tube, so it keeps the seed's shape and never places a corner. (2) Ring accretion around a corner (each ring vertex completed to degree 6, or a convex turn made a corner): making the four turns of ring m corners gives exactly K_m, and K_m arises only that way. (3) With each turn decided on its own, ring accretion also closes into non-round two-kind spheres. (4) In single-strip accretion the radius-w window at which a turn is decided is the same in every lap of ring at least w + 1, so a label-free rule cannot tie the four equator turns together; one bit kept for one lap does, but that bit is history supplied by the process, a hidden witness under the canonical test. (5) The window law of one order, run in random orders, closes only small round spheres or is stuck.",
+  "dependencies": [
+    "SPHERE-GROWTH-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A subdivision of K_m that is not K_{jm}, or a partial refinement that is a closed two-kind surface.",
+    "A ring-accretion choice pattern other than the four turns of one ring that closes into some K_m.",
+    "No closed non-round sphere from independent turn decisions.",
+    "Two laps of single-strip accretion in which the decision windows at a turn differ (for ring at least w + 1)."
+  ],
+  "lineage": {
+    "home_scope": "GROW-COIN-20261107-001",
+    "epic_path": [
+      "GROW-COIN-20261107-001"
+    ],
+    "parents": [
+      "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json",
+      "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json",
+      "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/seam_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json": "2cb402fe7beb0cb2e9db0399de4aa7b290e6853036855a496ad8b42b8e630f82",
+    "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json": "44067f86812cd8b746db0cc171c9a9a6be70116b1e2e8aa00585a10daf45264f",
+    "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/seam_lib.py": "da80a87dd20efbc35c35df84b8ce60550b2820c5e1c4e94d06310d9829f2a513"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/manifest.json",
+    "identity": "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/identity.json",
+    "proof": "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/proof.md",
+    "check": "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/check.py",
+    "result": "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/result.json",
+    "directory": "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Refinement by proof, checked for m <= 4, j = 2, 3, and on two tubes. Ring accretion: uniform choices for m <= 6; every choice pattern up to 100 triangles; 400 random-coin runs. Single-strip decision windows for w <= 5 and m from w + 2 to w + 5. The window law: radius 5, from K_1..K_10, 200 random-order runs.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, with the finite claims checked by computation with controls; no human or external review",
+    "novelty": "known-with-delta: decorated versus undecorated local rules (Levitov 1988; Mozes 1989; Goodman-Strauss 1998; sofic versus finite-type), local growth rules that stall without non-local information (Onoda, Steinhardt, DiVincenzo and Socolar 1988), local-rule capsid assembly with conformational states (Berger, Shor et al. 1994) and tile complexity in algorithmic self-assembly are classical; the refinement/accretion contrast for the knot spheres and the census of lopsided closures are new as far as found."
+  }
+}

@@ -1,0 +1,54 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream statuses": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/contract.json": "Frozen",
+     "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/manifest.json": "Proved",
+     "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json": "Proved"
+    }
+   }
+  },
+  "1 Theorem 2's witnesses at every lag to 300 (balanced loops, laws (12,12) or (6,6) under condition W, sizes 5 to 30; laws (12,12) from 4)": {
+   "pass": true,
+   "info": {
+    "lags": 516672,
+    "failures": 0
+   }
+  },
+  "2 Theorem 3's lags for every contact and far ring, laws (12,12), balanced loops, sizes 5 to 30": {
+   "pass": true,
+   "info": {
+    "lags": 186576,
+    "mismatches": 0
+   }
+  },
+  "3 no unbalanced loop with law (12,12) is persistent, sizes 5 to 30 (each loses persistence or stays undecided within 10^6 lags)": {
+   "pass": true,
+   "info": {
+    "loops": 260,
+    "losing persistence": 236,
+    "undecided": 24,
+    "persistent": 0
+   }
+  },
+  "4 full state spaces: balanced loops with law (12,12) at sizes 4 and 5 keep every contact persistent": {
+   "pass": true,
+   "info": {
+    "loops": 7,
+    "persistent": 7
+   }
+  },
+  "5 of LOOP-RINGS-20261108-001's 54 families persisting at sizes 4 to 16, 16 satisfy Theorem 2's hypotheses at size 9": {
+   "pass": true,
+   "info": {
+    "families": 54,
+    "covered": 16
+   }
+  }
+ },
+ "seconds": 204.6
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-PROOF-20261108-001A-P001",
+  "canonical_id": "LOOP-PROOF-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "LOOP-PROOF-20261108-001A",
+  "proof": "LOOP-PROOF-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Feedback cancels in balanced loops",
+  "status": "Proved",
+  "claim": "In a loop of four rule-60 rings of s cells with contact c_i at cell k_i of R_i and cell 0 of R_(i+1), k_i in {2, s - 2}, each contact reading its left neighbours (law 12, 12) or both neighbours (6, 6) on both rings: (1) over GF(2), C_i = S_i + z a^(f_i) C_(i-1) + z a^(b_(i+1)) C_(i+1) with a = z/(1+z), and after substitution the C_i term always cancels and the C_(i+2) term cancels exactly when k_0 + k_1 + k_2 + k_3 = 2s, giving C_i = S_i + z a^(f_i) S_(i-1) + z a^(b_(i+1)) S_(i+1); (2) in a balanced loop where no law-(6,6) contact c_j has k_j = s - 2 or k_(j+1) = 2, every contact binds both its rings at every lag at every size, through the ends of the chains it reads (from s = 4 with law (12,12) everywhere); (3) with law (12,12), c_i needs R_(i-1) and R_(i+2) exactly at the lags where C(T - 2, m) is odd for some m in [f_i, f_i + f_(i-1) - 1], respectively [b_(i+1), b_(i+1) + b_(i+2) - 1].",
+  "dependencies": [
+    "LOOP-RINGS-20261108-001A",
+    "SEPARATE-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A balanced loop under condition W, a size and a lag at which a predicted witness has coefficient 0.",
+    "A far-ring lag that differs from the binomial prediction."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-PROOF-20261108-001",
+    "epic_path": [
+      "LOOP-PROOF-20261108-001"
+    ],
+    "parents": [
+      "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/contract.json",
+      "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/run.py",
+      "artifacts/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/run/loops.json",
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/manifest.json",
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py",
+      "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json",
+      "research/LOOP-RINGS-20261108-001/characterise.py"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/contract.json": "96b052485acb02388d0d45471b1e4835b4f6ca1bad567876991f3515990ec679",
+    "experiments/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/run.py": "d69f8adacc193071af0a5d266ab193b90cbafd6c564d8f159ed134c50023db03",
+    "artifacts/LOOP-RINGS-20261108-001A/LOOP-RINGS-20261108-001A-E001_closed_loops/run/loops.json": "08aedc15ae7de59db1234efbc4d4ceae7c8bab2d827c918b8bc2ac4f980e2ffb",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/manifest.json": "c76f49c722e4307bee4ef63769630b01ff7dde444962a057c2cb10c3fc288b67",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json": "c02f5600462da6807a78056d65d376710944b337636d54eab8743b9d463e97fd",
+    "research/LOOP-RINGS-20261108-001/characterise.py": "6575a613f306740c7e8dd1dc94e58bcbca6ab110e0d31896c7b53e45bca1d44d"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/manifest.json",
+    "identity": "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/identity.json",
+    "proof": "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/proof.md",
+    "result": "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/result.json",
+    "check": "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/check.py",
+    "directory": "proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Linear loops of four rule-60 rings with the stated laws; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: generating functions over GF(2); the delta is the pairwise cancellation of the loop's feedback under balance"
+  }
+}

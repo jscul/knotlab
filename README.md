@@ -115,10 +115,10 @@ history.
 Everything here is published from our research workspace, which is the source
 of truth for this repository and for [jscul.dev](https://jscul.dev).
 
-- **Records, automatically.** The command that closes an epic in the
-  workspace publishes the epic's committed proofs, experiments, working notes
-  and tickets byte for byte, and refreshes the documents in docs/. Work that
-  has not been committed is never copied.
+- **Records, automatically.** Every commit in the workspace publishes itself
+  here shortly after it is made: an epic's committed proofs, experiments,
+  working notes and tickets byte for byte, and the documents in docs/. Work
+  that has not been committed is never copied.
 - **Pages, code and data, from the workspace too.** INTUITIONS.md, THEORY.md,
   FINDINGS.md, this README, the notes, the Lean files, the knot laboratory,
   the tests, and the inputs in data/ (lines of work, ranking tiers, notes and

@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: every workspace commit publishes itself
+
+- Publication now starts from a commit hook in the research workspace, so
+  every commit there, not only an epic's closure, is published here shortly
+  after it is made, with no step left to whoever made it. Runs queue one at a
+  time, and a run stopped midway is cleaned up by the next.
+- A run that would change only the workspace commit named in
+  [data/published.json](data/published.json) no longer makes a commit here.
+- jscul.dev's sync, when its push loses a race with another push to the
+  site, now syncs again on top of the new site instead of failing.
+
 ## 8 November 2026: general-resolution bounds for Sperner's lemma were known
 
 - SPHERE-WIDTH-20261107-001-D002 said that for Itsykson, Malova, Oparin and

@@ -82,13 +82,14 @@ advance); B8's products part taken. **Assumptions:** none added.
 - **The sharpest candidate.** 01101/10001 x 10001/00010: arc consistency removes all its non-pinwheel parents, leaving only 209
   pinwheel collars with labels the law does not list.
 
-**Next step:** Research directions — selected: #1
+**Next step:** Research directions — No next action selected. The coordinator parked all three on 2026-11-08 (backlog B15 to B17):
+the stop rule resumes this line only on a sharper target, and the thread cap was reached.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | The forcing route on the label-only survivor | 2/3 — Substantial | 2/3 — Testable | 01101/10001 x 10001/00010: the joint test and exhaustive extension on its 209 off-law pinwheel collars → all die (the first step of a proof that two bits force the pinwheel) or some survive | Selected · awaiting go-ahead |
-| 2 | Edge labels, as in Radin's rules (A35's challenge) | 2/3 — Substantial | 1/3 — Stated | An edge substitution with one bit per edge against the crystals in hand → one that excludes them all, or none | Alternative · deferred |
-| 3 | Hub chains in two dimensions (A39's challenge) | 1/3 — Incremental | 2/3 — Testable | A plane of gated knots: chain balls' growth and circle shape → a hub shape, or the grid drawn in | Alternative · deferred |
+| 1 | The forcing route on the label-only survivor | 2/3 — Substantial | 2/3 — Testable | 01101/10001 x 10001/00010: the joint test and exhaustive extension on its 209 off-law pinwheel collars → all die (the first step of a proof that two bits force the pinwheel) or some survive | Alternative · deferred (B15) |
+| 2 | Edge labels, as in Radin's rules (A35's challenge) | 2/3 — Substantial | 1/3 — Stated | An edge substitution with one bit per edge against the crystals in hand → one that excludes them all, or none | Alternative · deferred (B16) |
+| 3 | Hub chains in two dimensions (A39's challenge) | 1/3 — Incremental | 2/3 — Testable | A plane of gated knots: chain balls' growth and circle shape → a hub shape, or the grid drawn in | Alternative · deferred (B17) |
 
 1. **The label-only survivor.**
    - **Payoff 2.** If its 209 off-law pinwheel collars die under the joint test and extension, the first step of a forcing proof holds
@@ -96,6 +97,6 @@ advance); B8's products part taken. **Assumptions:** none added.
    - **Concreteness 2.** The vectorized arc consistency, the joint test and the extension test exist; the joint test and extension
      need the four-label law, a small change.
    - **Uncertainty.** Label defects need not die: for one bit, the off-law pinwheel collars survived as long as the others did.
-   - **Status.** Bound: one epic. Not started: it resumes a line the stop rule paused, so the coordinator decides.
+   - **Status.** Parked as B15 on 2026-11-08: the coordinator judged it not the sharper target the stop rule asks for.
 2. **Edge labels.** Tests whether the count depends on where the bits sit; the edge substitution must be defined first.
 3. **Hub chains.** A hub network has a natural count, but the grid it lives on is drawn, so the payoff is small.

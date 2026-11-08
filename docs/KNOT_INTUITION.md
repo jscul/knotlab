@@ -4364,8 +4364,8 @@ So network holes come in two kinds:
      only label defects: no non-pinwheel parent survives.
    - **Reading.** These are candidates, not results: the last one-bit decoration also resisted every crystal tried until a new
      kind turned up one level up. The stop rule, frozen at the start, pauses the line here.
-   - **Next (proposed).** The forcing route on the product that keeps only label defects, 01101/10001 x 10001/00010
-     ([decision note](../research/TWO-BIT-20261108-001/two_bit.md)).
+   - **Next (parked).** The forcing route on the product that keeps only label defects, 01101/10001 x 10001/00010, with edge
+     labels and hub chains, all in the backlog ([decision note](../research/TWO-BIT-20261108-001/two_bit.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

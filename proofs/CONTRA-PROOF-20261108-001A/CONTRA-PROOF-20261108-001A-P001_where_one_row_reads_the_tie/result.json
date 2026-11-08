@@ -1,0 +1,361 @@
+{
+ "artifact_id": "CONTRA-PROOF-20261108-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/manifest.json": "Proved",
+     "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/result.json": "passed",
+     "proofs/CONTRA-READ-20261108-001B/CONTRA-READ-20261108-001B-P001_the_contradictory_block_on_the_12_line_glues/manifest.json": "Proved",
+     "proofs/CONTRA-READ-20261108-001B/CONTRA-READ-20261108-001B-P001_the_contradictory_block_on_the_12_line_glues/result.json": "passed",
+     "proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "passed",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the random glues: drawn again as the run CONTRA-PROOF-R1 drew them (connected cubic glues of 8, 9 and 10 lines, the first 10, 6 and 3 with a class without solutions), they are the stored 19; each has exactly one class without solutions; 8 have an incidence graph of connectivity 2, 11 of connectivity 3": {
+   "info": {
+    "connectivity": [
+     2,
+     3,
+     3,
+     2,
+     2,
+     2,
+     3,
+     2,
+     2,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     2,
+     2,
+     3
+    ],
+    "draws": [
+     {
+      "drawn": 3000,
+      "lines": 8,
+      "with a class without solutions": 94
+     },
+     {
+      "drawn": 1500,
+      "lines": 9,
+      "with a class without solutions": 18
+     },
+     {
+      "drawn": 800,
+      "lines": 10,
+      "with a class without solutions": 3
+     }
+    ]
+   },
+   "pass": true
+  },
+  "2 where one row reads the tie: for every glue and line a, one row of creation fails to tell the classes of the glue without a that tie a's points from those that do not exactly when a lies in a two-vertex cut of the incidence graph (16 lines, on the 8 glues of connectivity 2), and at those lines nothing creates anywhere in the tied class's row or the rows colliding with it: every gluing is degenerate or adds no new knot": {
+   "info": {
+    "failing lines per glue": {
+     "0": [
+      1,
+      7
+     ],
+     "1": [],
+     "2": [],
+     "3": [
+      3,
+      4
+     ],
+     "4": [
+      1,
+      6
+     ],
+     "5": [
+      2,
+      4
+     ],
+     "6": [],
+     "7": [
+      2,
+      3
+     ],
+     "8": [
+      5,
+      7
+     ],
+     "9": [],
+     "10": [],
+     "11": [],
+     "12": [],
+     "13": [],
+     "14": [],
+     "15": [],
+     "16": [
+      1,
+      3
+     ],
+     "17": [
+      0,
+      9
+     ],
+     "18": []
+    },
+    "lines in a two-vertex cut, with the partner line": {
+     "0": {
+      "1": 7,
+      "7": 1
+     },
+     "1": {},
+     "2": {},
+     "3": {
+      "3": 4,
+      "4": 3
+     },
+     "4": {
+      "1": 6,
+      "6": 1
+     },
+     "5": {
+      "2": 4,
+      "4": 2
+     },
+     "6": {},
+     "7": {
+      "2": 3,
+      "3": 2
+     },
+     "8": {
+      "5": 7,
+      "7": 5
+     },
+     "9": {},
+     "10": {},
+     "11": {},
+     "12": {},
+     "13": {},
+     "14": {},
+     "15": {},
+     "16": {
+      "1": 3,
+      "3": 1
+     },
+     "17": {
+      "0": 9,
+      "9": 0
+     },
+     "18": {}
+    },
+    "rows computed": 39424
+   },
+   "pass": true
+  },
+  "3 the cuts: each two-vertex cut through a failing line is a pair of lines; each of its two sides has one more point than lines (counting incidences: the cut lines meet each side in three points together), and one side is always K4^(3) without a line, three lines on four points through one common point": {
+   "info": {
+    "sides of each cut (points, lines, K4^(3) without a line)": [
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       6,
+       5,
+       false
+      ],
+      [
+       4,
+       3,
+       true
+      ]
+     ],
+     [
+      [
+       4,
+       3,
+       true
+      ],
+      [
+       6,
+       5,
+       false
+      ]
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "4 K4^(3) under the tie is not a general lemma: in the row of every tied class, on the 19 random glues and on six of the seven trisum glues, the K4^(3) far side creates at no line meeting the removed line in exactly one point; on the 12-line trisum glue of seed 1 it does, for 8 of its 12 removed lines. All seven trisum glues have incidence graphs of connectivity 3": {
+   "info": {
+    "trisum glues": {
+     "1": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [
+       0,
+       2,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11
+      ],
+      "tied at every line": true
+     },
+     "192": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [],
+      "tied at every line": true
+     },
+     "240": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [],
+      "tied at every line": true
+     },
+     "246": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [],
+      "tied at every line": true
+     },
+     "3": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [],
+      "tied at every line": true
+     },
+     "300": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [],
+      "tied at every line": true
+     },
+     "6": {
+      "connectivity": 3,
+      "removed lines where K4^(3) creates at a line meeting them once": [],
+      "tied at every line": true
+     }
+    }
+   },
+   "pass": true
+  },
+  "5 that silence plus the degenerate entries is not how a row reads the tie in general: on a glue of connectivity 3 where every row reads it, some classes without the tie are told apart from the tied one only by other entries": {
+   "info": {
+    "classes told apart only by other entries, per glue": {
+     "0": 2,
+     "1": 0,
+     "2": 0,
+     "3": 2,
+     "4": 2,
+     "5": 2,
+     "6": 0,
+     "7": 2,
+     "8": 2,
+     "9": 0,
+     "10": 0,
+     "11": 0,
+     "12": 0,
+     "13": 0,
+     "14": 0,
+     "15": 0,
+     "16": 2,
+     "17": 2,
+     "18": 270
+    }
+   },
+   "pass": true
+  },
+  "6 the local lemma: over all 27 complement-closed relations on a gluing line's three literals and one further near point, no single point makes K4^(3) create, and a relation is degenerate exactly when the point is tied to a point of the gluing line, so points tied to the removed line's points are never witnesses at a line through one of them": {
+   "info": {
+    "creating, per far side (K4^(3), census 6, Fano, census 58)": [
+     0,
+     4,
+     8,
+     8
+    ],
+    "degenerate": 6,
+    "relations": 27
+   },
+   "pass": true
+  }
+ },
+ "claim": "On 19 random connected cubic glues of 8 to 10 lines that have a class without solutions (one each), one row of creation between glue lines tells the classes of the glue without a line that tie the removed line's points from those that do not exactly at the lines lying in no two-vertex cut of the incidence graph: it fails at all 16 lines lying in one (two on each of the 8 glues of connectivity 2), where nothing creates anywhere in the tied row or the row colliding with it, and nowhere on the 11 glues of connectivity 3. Each such cut is a pair of lines whose sides each have one more point than lines, one of them K4^(3) without a line. Under the tie, the K4^(3) far side creates at no line meeting the removed line in exactly one point on these 19 glues and on six of the seven trisum glues, but on the 12-line trisum glue of seed 1 it does, for 8 of its 12 removed lines; and that silence with the degenerate entries does not tell every class apart on every 3-connected glue. No single near point makes K4^(3) create, and a one-point local relation is degenerate exactly when its point is tied to the gluing line.",
+ "kind": "proof",
+ "proof": "CONTRA-PROOF-20261108-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "CONTRA-PROOF-20261108-001A"
+}

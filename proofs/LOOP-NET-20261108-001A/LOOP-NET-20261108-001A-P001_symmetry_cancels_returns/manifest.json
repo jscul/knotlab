@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-NET-20261108-001A-P001",
+  "canonical_id": "LOOP-NET-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "LOOP-NET-20261108-001A",
+  "proof": "LOOP-NET-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Symmetry cancels returns in networks of loops; a shared ring with more contacts does not",
+  "status": "Proved",
+  "claim": "In a network of rule-60 rings joined by contacts with law (12, 12), every ring with at least two contacts and consecutive contacts at least two cells apart: (1) a contact c keeps its two chain-end witnesses at every lag exactly when D_cc = 1, D = (I + K)^-1 for the weighted contact graph (corner weights z a^l, a = z/(1+z)), i.e. when its returns cancel, and then binds both rings at every lag; (2) the positions embed the ring graph in an oriented surface whose rings and faces are the contact graph's closed routes, and in a uniform network (equally spaced, or on the sphere with every ring and face of one density) D_cc = 1 iff every count of returns to c is even; (3) an automorphism fixing c and exchanging its out-arcs cancels its returns, so every orientably regular map built as a uniform network (loops, two rings sharing m contacts, the Platonic networks, square, triangular and honeycomb lattices of rings on a torus) keeps every contact persistent at every lag at every size; (4) a contact joining a ring of two contacts to a ring of three or more, with no two-contact face, has exactly one return of length 2, so in a uniform network its witnesses lapse, first at lag 2(density) + 1; figure-eights and chords across loops have such contacts.",
+  "dependencies": [
+    "LOOP-ANY-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A network and contact with D_cc = 1 whose chain-end witness has coefficient 0 at some lag, or D_cc != 1 with no lapse at val(D_cc - 1) + 1.",
+    "A regular uniform network with a contact whose return counts are not all even or that misses a ring at some lag.",
+    "A contact meeting Theorem 4's hypothesis with N_2 != 1."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-NET-20261108-001",
+    "epic_path": [
+      "LOOP-NET-20261108-001"
+    ],
+    "parents": [
+      "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/manifest.json",
+      "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/proof.md",
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/manifest.json": "1769c3992f761240d2edd5d42a509d44347102fbb5f9eaeb2f60eae93915da53",
+    "proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/proof.md": "8aa58f3ab0e9d1e733c7ac2232ed438643fe4c32da8a3dccd56c5a583c068ada",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json",
+    "identity": "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/identity.json",
+    "proof": "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md",
+    "result": "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/result.json",
+    "check": "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/check.py",
+    "directory": "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Linear networks of rule-60 rings with law (12, 12) contacts; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: persistence across time is the cancellation of returns in the directed medial graph of the embedding the positions define; edge-reversing map symmetries cancel them, and a ring of two contacts meeting a larger ring leaves one return of length 2 unpaired"
+  }
+}

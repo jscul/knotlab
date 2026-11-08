@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**246 current results** and 5 superseded ones, from 183 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**247 current results** and 5 superseded ones, from 184 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 23 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 24 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 183 epics with their closures
+- [Epics](#epics): all 184 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -79,6 +79,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · Balanced loops of any number of rings persist at every size** (`LOOP-ANY-20261108-001-D001`).
   In a loop of r rule-60 rings the feedback is z(A + cA^-1), A a weighted cyclic shift, and when the contacts' positions sum to rs/2 every return to a contact cancels, so every contact binds both its rings at every lag at every ring size. The feedback is a finite sum exactly when r is a power of two.
   [proof P001](proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/proof.md), [epic closure](proofs/LOOP-ANY-20261108-001Z/LOOP-ANY-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Symmetric networks of loops persist at every size; where a loop meets a shared ring they cannot** (`LOOP-NET-20261108-001-D001`).
+  In a network of rule-60 rings joined by left-reading contacts, a contact keeps its two chain-end witnesses at every lag exactly when the returns to it in the contact graph cancel. The positions embed the ring graph in a surface whose rings and faces are the contact graph's closed routes, and in a uniform network the returns cancel exactly when every count of returns is even. A symmetry that fixes a contact and exchanges its rings cancels them, so loops, two rings sharing any number of contacts, the five Platonic networks and square, triangular and honeycomb lattices of rings on a torus keep every contact persistent at every lag at every size. Where a ring of two contacts meets a ring of more, one return of length 2 is unpaired and the witnesses lapse, as in every figure-eight and chord across a loop.
+  [proof P001](proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md), [epic closure](proofs/LOOP-NET-20261108-001Z/LOOP-NET-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Balanced loops of rings persist at every size** (`LOOP-PROOF-20261108-001-D001`).
   In loops of four rule-60 rings whose contacts read chain ends, the feedback returning round the loop cancels exactly when the contacts' positions sum to 2s, so each contact has a closed form over GF(2). Under a no-overlap condition every contact then binds both its rings at every lag at every ring size.
   [proof P001](proofs/LOOP-PROOF-20261108-001A/LOOP-PROOF-20261108-001A-P001_feedback_cancels_in_balanced_loops/proof.md), [epic closure](proofs/LOOP-PROOF-20261108-001Z/LOOP-PROOF-20261108-001Z-P001_epic_closure/proof.md)
@@ -1037,6 +1040,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |
 | 2026-11-08 | Balanced loops of any number of rings (`LOOP-ANY-20261108-001`) | [closure](proofs/LOOP-ANY-20261108-001Z/LOOP-ANY-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-ANY-20261108-001/) |
+| 2026-11-08 | Networks of loops (`LOOP-NET-20261108-001`) | [closure](proofs/LOOP-NET-20261108-001Z/LOOP-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-NET-20261108-001/) |
 | 2026-11-08 | Balanced loops of rings persist at every size (`LOOP-PROOF-20261108-001`) | [closure](proofs/LOOP-PROOF-20261108-001Z/LOOP-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-PROOF-20261108-001/) |
 | 2026-11-08 | Closed loops of rings across time (`LOOP-RINGS-20261108-001`) | [closure](proofs/LOOP-RINGS-20261108-001Z/LOOP-RINGS-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-RINGS-20261108-001/) |
 | 2026-11-08 | Native paths across time: none in three restricted families (`NATIVE-PATH-20261108-001`) | [closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-PATH-20261108-001/) |

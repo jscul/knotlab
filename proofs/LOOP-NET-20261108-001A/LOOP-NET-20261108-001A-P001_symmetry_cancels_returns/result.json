@@ -1,0 +1,271 @@
+{
+ "ticket": "LOOP-NET-20261108-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "LOOP-ANY-20261108-001A manifest": "1769c3992f761240d2edd5d42a509d44347102fbb5f9eaeb2f60eae93915da53",
+    "net_lib": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351"
+   }
+  },
+  "1_criterion_random_networks": {
+   "pass": true,
+   "info": {
+    "networks": 400,
+    "contacts": 1901,
+    "contacts with D_cc = 1": 272,
+    "first failure": []
+   }
+  },
+  "2_surfaces": {
+   "pass": true,
+   "info": {
+    "networks": 28,
+    "genus": {
+     "loop of 2 rings": 0,
+     "loop of 3 rings": 0,
+     "loop of 4 rings": 0,
+     "loop of 5 rings": 0,
+     "loop of 6 rings": 0,
+     "loop of 7 rings": 0,
+     "loop of 8 rings": 0,
+     "two rings sharing 2 contacts": 0,
+     "two rings sharing 3 contacts": 0,
+     "two rings sharing 4 contacts": 0,
+     "two rings sharing 5 contacts": 0,
+     "two rings sharing 6 contacts": 0,
+     "tetrahedron": 0,
+     "cube": 0,
+     "octahedron": 0,
+     "dodecahedron": 0,
+     "icosahedron": 0,
+     "square torus 3": 1,
+     "square torus 4": 1,
+     "square torus 5": 1,
+     "square torus 6": 1,
+     "triangular torus 3": 1,
+     "triangular torus 4": 1,
+     "triangular torus 5": 1,
+     "honeycomb torus 2": 1,
+     "honeycomb torus 3": 1,
+     "honeycomb torus 4": 1,
+     "honeycomb torus 5": 1
+    }
+   }
+  },
+  "3_uniform_spaced_returns_even_iff_cancel": {
+   "pass": true,
+   "info": {
+    "networks": 400,
+    "contacts": 1981,
+    "contacts with D_cc = 1": 890
+   }
+  },
+  "4_sphere_equal_densities": {
+   "pass": true,
+   "info": {
+    "networks": 2974,
+    "agree": 2974,
+    "balanced": 79
+   }
+  },
+  "5_regular_networks_persist": {
+   "pass": true,
+   "info": {
+    "networks": 84,
+    "with exact D": 34,
+    "families": [
+     "cube",
+     "dodecahedron",
+     "honeycomb torus 2",
+     "honeycomb torus 3",
+     "honeycomb torus 4",
+     "honeycomb torus 5",
+     "icosahedron",
+     "loop of 2 rings",
+     "loop of 3 rings",
+     "loop of 4 rings",
+     "loop of 5 rings",
+     "loop of 6 rings",
+     "loop of 7 rings",
+     "loop of 8 rings",
+     "octahedron",
+     "square torus 3",
+     "square torus 4",
+     "square torus 5",
+     "square torus 6",
+     "tetrahedron",
+     "triangular torus 3",
+     "triangular torus 4",
+     "triangular torus 5",
+     "two rings sharing 2 contacts",
+     "two rings sharing 3 contacts",
+     "two rings sharing 4 contacts",
+     "two rings sharing 5 contacts",
+     "two rings sharing 6 contacts"
+    ],
+    "failures": []
+   }
+  },
+  "6_obstruction_where_loops_meet": {
+   "pass": true,
+   "info": {
+    "networks": 264,
+    "meeting contacts": 1136,
+    "networks losing persistence by lag 300": 254,
+    "all lose persistence": false
+   }
+  },
+  "7_two_short_loops_degenerate": {
+   "pass": true,
+   "info": {
+    "arcs mod 2": 4,
+    "nilpotent": true
+   }
+  },
+  "9_wide_spacing_computed": {
+   "pass": true,
+   "info": {
+    "spacings at which all eight miss a ring by lag 600": [
+     2,
+     3,
+     4,
+     8,
+     16
+    ],
+    "outcomes": {
+     "figure-eight 3,3 separate at 2": "misses a ring at lag 5",
+     "figure-eight 3,3 separate at 3": "misses a ring at lag 7",
+     "figure-eight 3,3 separate at 4": "misses a ring at lag 10",
+     "figure-eight 3,3 separate at 5": "misses a ring at lag 21",
+     "figure-eight 3,3 separate at 6": "misses a ring first at lag 630",
+     "figure-eight 3,3 separate at 7": "misses a ring first at lag 1143",
+     "figure-eight 3,3 separate at 8": "misses a ring at lag 18",
+     "figure-eight 3,3 separate at 9": "misses a ring at lag 73",
+     "figure-eight 3,3 separate at 10": "persistent to lag 600, not followed",
+     "figure-eight 3,3 separate at 11": "persistent to lag 600, not followed",
+     "figure-eight 3,3 separate at 12": "persistent to lag 600, not followed",
+     "figure-eight 3,3 separate at 13": "persistent to lag 600, not followed",
+     "figure-eight 3,3 separate at 14": "persistent to lag 600, not followed",
+     "figure-eight 3,3 separate at 15": "persistent to lag 600, not followed",
+     "figure-eight 3,3 separate at 16": "misses a ring at lag 34",
+     "figure-eight 3,3 interleaved at 2": "misses a ring at lag 6",
+     "figure-eight 3,3 interleaved at 3": "misses a ring at lag 7",
+     "figure-eight 3,3 interleaved at 4": "misses a ring at lag 10",
+     "figure-eight 3,3 interleaved at 5": "persistent at every lag",
+     "figure-eight 3,3 interleaved at 6": "misses a ring at lag 50",
+     "figure-eight 3,3 interleaved at 7": "persistent at every lag",
+     "figure-eight 3,3 interleaved at 8": "misses a ring at lag 18",
+     "figure-eight 3,3 interleaved at 9": "persistent at every lag",
+     "figure-eight 3,3 interleaved at 10": "persistent to lag 600, not followed",
+     "figure-eight 3,3 interleaved at 11": "persistent to lag 600, not followed",
+     "figure-eight 3,3 interleaved at 12": "persistent to lag 600, not followed",
+     "figure-eight 3,3 interleaved at 13": "persistent to lag 600, not followed",
+     "figure-eight 3,3 interleaved at 14": "persistent to lag 600, not followed",
+     "figure-eight 3,3 interleaved at 15": "persistent to lag 600, not followed",
+     "figure-eight 3,3 interleaved at 16": "misses a ring at lag 34",
+     "figure-eight 2,3 separate at 2": "misses a ring at lag 5",
+     "figure-eight 2,3 separate at 3": "misses a ring at lag 7",
+     "figure-eight 2,3 separate at 4": "misses a ring at lag 10",
+     "figure-eight 2,3 separate at 5": "misses a ring at lag 42",
+     "figure-eight 2,3 separate at 6": "misses a ring at lag 567",
+     "figure-eight 2,3 separate at 7": "misses a ring at lag 85",
+     "figure-eight 2,3 separate at 8": "misses a ring at lag 18",
+     "figure-eight 2,3 separate at 9": "misses a ring at lag 73",
+     "figure-eight 2,3 separate at 10": "persistent to lag 600, not followed",
+     "figure-eight 2,3 separate at 11": "persistent to lag 600, not followed",
+     "figure-eight 2,3 separate at 12": "misses a ring at lag 290",
+     "figure-eight 2,3 separate at 13": "persistent to lag 600, not followed",
+     "figure-eight 2,3 separate at 14": "persistent to lag 600, not followed",
+     "figure-eight 2,3 separate at 15": "persistent to lag 600, not followed",
+     "figure-eight 2,3 separate at 16": "misses a ring at lag 34",
+     "figure-eight 4,4 separate at 2": "misses a ring at lag 6",
+     "figure-eight 4,4 separate at 3": "misses a ring at lag 7",
+     "figure-eight 4,4 separate at 4": "misses a ring at lag 10",
+     "figure-eight 4,4 separate at 5": "persistent at every lag",
+     "figure-eight 4,4 separate at 6": "persistent at every lag",
+     "figure-eight 4,4 separate at 7": "persistent at every lag",
+     "figure-eight 4,4 separate at 8": "misses a ring at lag 18",
+     "figure-eight 4,4 separate at 9": "persistent at every lag",
+     "figure-eight 4,4 separate at 10": "persistent to lag 600, not followed",
+     "figure-eight 4,4 separate at 11": "persistent to lag 600, not followed",
+     "figure-eight 4,4 separate at 12": "persistent to lag 600, not followed",
+     "figure-eight 4,4 separate at 13": "persistent to lag 600, not followed",
+     "figure-eight 4,4 separate at 14": "persistent to lag 600, not followed",
+     "figure-eight 4,4 separate at 15": "persistent to lag 600, not followed",
+     "figure-eight 4,4 separate at 16": "misses a ring at lag 34",
+     "chord 1,1,2 at 2": "misses a ring at lag 5",
+     "chord 1,1,2 at 3": "misses a ring at lag 7",
+     "chord 1,1,2 at 4": "misses a ring at lag 10",
+     "chord 1,1,2 at 5": "persistent at every lag",
+     "chord 1,1,2 at 6": "persistent at every lag",
+     "chord 1,1,2 at 7": "persistent at every lag",
+     "chord 1,1,2 at 8": "misses a ring at lag 18",
+     "chord 1,1,2 at 9": "persistent at every lag",
+     "chord 1,1,2 at 10": "persistent to lag 600, not followed",
+     "chord 1,1,2 at 11": "persistent to lag 600, not followed",
+     "chord 1,1,2 at 12": "persistent to lag 600, not followed",
+     "chord 1,1,2 at 13": "persistent to lag 600, not followed",
+     "chord 1,1,2 at 14": "persistent to lag 600, not followed",
+     "chord 1,1,2 at 15": "persistent to lag 600, not followed",
+     "chord 1,1,2 at 16": "misses a ring at lag 34",
+     "chord 1,2,2 at 2": "misses a ring at lag 5",
+     "chord 1,2,2 at 3": "misses a ring at lag 7",
+     "chord 1,2,2 at 4": "misses a ring at lag 10",
+     "chord 1,2,2 at 5": "persistent at every lag",
+     "chord 1,2,2 at 6": "persistent at every lag",
+     "chord 1,2,2 at 7": "persistent at every lag",
+     "chord 1,2,2 at 8": "misses a ring at lag 18",
+     "chord 1,2,2 at 9": "persistent at every lag",
+     "chord 1,2,2 at 10": "persistent to lag 600, not followed",
+     "chord 1,2,2 at 11": "persistent to lag 600, not followed",
+     "chord 1,2,2 at 12": "persistent to lag 600, not followed",
+     "chord 1,2,2 at 13": "persistent to lag 600, not followed",
+     "chord 1,2,2 at 14": "persistent to lag 600, not followed",
+     "chord 1,2,2 at 15": "persistent to lag 600, not followed",
+     "chord 1,2,2 at 16": "misses a ring at lag 34",
+     "theta 2,2,2 at 2": "misses a ring at lag 6",
+     "theta 2,2,2 at 3": "misses a ring at lag 7",
+     "theta 2,2,2 at 4": "misses a ring at lag 10",
+     "theta 2,2,2 at 5": "misses a ring at lag 21",
+     "theta 2,2,2 at 6": "misses a ring first at lag 630",
+     "theta 2,2,2 at 7": "misses a ring first at lag 1143",
+     "theta 2,2,2 at 8": "misses a ring at lag 18",
+     "theta 2,2,2 at 9": "misses a ring at lag 73",
+     "theta 2,2,2 at 10": "persistent to lag 600, not followed",
+     "theta 2,2,2 at 11": "persistent to lag 600, not followed",
+     "theta 2,2,2 at 12": "persistent to lag 600, not followed",
+     "theta 2,2,2 at 13": "persistent to lag 600, not followed",
+     "theta 2,2,2 at 14": "persistent to lag 600, not followed",
+     "theta 2,2,2 at 15": "persistent to lag 600, not followed",
+     "theta 2,2,2 at 16": "misses a ring at lag 34",
+     "chord 1,1,3 at 2": "misses a ring at lag 6",
+     "chord 1,1,3 at 3": "misses a ring at lag 7",
+     "chord 1,1,3 at 4": "misses a ring at lag 10",
+     "chord 1,1,3 at 5": "misses a ring at lag 21",
+     "chord 1,1,3 at 6": "misses a ring first at lag 818",
+     "chord 1,1,3 at 7": "misses a ring at lag 231",
+     "chord 1,1,3 at 8": "misses a ring at lag 18",
+     "chord 1,1,3 at 9": "misses a ring at lag 73",
+     "chord 1,1,3 at 10": "persistent to lag 600, not followed",
+     "chord 1,1,3 at 11": "persistent to lag 600, not followed",
+     "chord 1,1,3 at 12": "persistent to lag 600, not followed",
+     "chord 1,1,3 at 13": "persistent to lag 600, not followed",
+     "chord 1,1,3 at 14": "persistent to lag 600, not followed",
+     "chord 1,1,3 at 15": "persistent to lag 600, not followed",
+     "chord 1,1,3 at 16": "misses a ring at lag 34"
+    }
+   }
+  },
+  "8_full_state_spaces": {
+   "pass": true,
+   "info": {
+    "two rings sharing three contacts": true,
+    "tetrahedron": true,
+    "figure-eight 3,3": true
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 3.2
+}

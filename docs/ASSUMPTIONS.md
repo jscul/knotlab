@@ -88,7 +88,7 @@ evidence: results and their status come from the records each entry links.
 | [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Confirmed |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
-| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Assumed |
+| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Confirmed |
 
 ## Entries
 
@@ -758,7 +758,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A34 · A chain composes when its far contact binds its ends at every lag
 
-**Assumed** · 2026-11-08 · reading
+**Confirmed** · 2026-11-08 · reading
 
 - **Statement.** Two contacts between processes, c1 joining rings A and B and c2 joining rings B and C, compose when c2 binds the
   end rings A and C at every lag from the first lag at which ring A can reach it, d + 1 for contacts d cells apart on ring B. That
@@ -773,4 +773,9 @@ evidence: results and their status come from the records each entry links.
   composition at recurring lags follows a native law, such as a period fixed by the middle ring. A law would favour the
   alternative; a pattern that depends on the observer's choice of lags would keep this reading.
 - **History.**
+  - 2026-11-08 · Confirmed by `INTERMITTENT-NET-20261108-001`. Composition at recurring lags is persistent composition of a strobed
+    chain, whose phase only the chain could fix. The chain fixes it in 92 of 244 intermittently composing chains, every one with an
+    affine rule, and never with a nonlinear rule. The contact gate asks for persistence, which intermittent composition fails, so
+    this reading is kept for the gate. The native intermittent network on affine substrates is recorded beside it
+    ([intermittent networks](../research/INTERMITTENT-NET-20261108-001/intermittent_net.md)).
   - 2026-11-08 · Added by `PROCESS-CHAIN-20261108-001`.

@@ -1470,10 +1470,37 @@ So network holes come in two kinds:
      here, against the static native networks of laws that compose like cycles (`NATIVE-NETWORK-20261021-001`).
    - **Provenance.** Elementary arguments and light cones; Boolean automata double-cycles share one node, and a chain shares two.
      New as far as found: the census of chains by persistence and composition.
-   - **Next (research directions).** Intermittent networks, composition at recurring lags (A34's alternative; Payoff 2/3,
-     Concreteness 3/3), and a middle ring that carries a contact's past without mixing or cancelling it (Payoff 3/3, Concreteness
-     1/3). Stop the process line if neither finds a native composition law
-     ([decision note](../research/PROCESS-CHAIN-20261108-001/process_chain.md)).
+   - **Next (taken).** Intermittent networks, composition at recurring lags (next entry; A34's alternative; Payoff 2/3,
+     Concreteness 3/3). The fallback was a middle ring that carries a contact's past without mixing or cancelling it (Payoff 3/3,
+     Concreteness 1/3) ([decision note](../research/PROCESS-CHAIN-20261108-001/process_chain.md)).
+
+   **2026-11-08: a native network across time exists only intermittently, on affine substrates** (`INTERMITTENT-NET-20261108-001`).
+   - **The question.** 195 chains of the previous entry compose at some lags of their eventual cycle but not at all of them. Is that
+     native? The chain itself would have to single out its composing lags, so that no observer supplies them, and the composition
+     would have to survive transport to other ring sizes.
+   - **What intermittence is (proved).**
+     - **A strobed chain.** A chain's composing lags recur with the period of its T-step maps. So the chain observed at one residue
+       of that period composes at every observed lag or at none, and the phase is the only input the chain does not fix.
+     - **Linear chains.** They compose exactly when the far contact depends on both end rings, so their composing lags are the
+       arrival lags of both ends' influence.
+     - **Every chain.** Composition always needs that arrival.
+   - **Native only on affine substrates (exploratory).** Of 7,040 chains, 244 compose at recurring lags. In 92 the chain singles out
+     its composing lags: composition exactly where both ends' influence arrives, with both contacts binding there. Every one of the
+     92 runs an affine rule, the shifts 15 and 170 or the additive rules 60, 90, 105 and 150. With a nonlinear rule this never
+     happens, because the other cells can override an end that has arrived. Twenty rule-law pairs compose at every tested size, and
+     one size past the same pattern holds (24 of 112, all affine).
+   - **Reading.**
+     - **For the gate.** The contact gate asks for persistence, so A34's strict reading stands, and persistent composition across
+       time remains absent.
+     - **What exists instead.** A weaker network: native, intermittent, and only where the substrate is affine.
+     - **The recurring answer.** This is the program's recurring family: towers of patterns keep only parity, and static networks
+       compose for affine laws.
+   - **Provenance.** Eventual periodicity of finite dynamics; additive automata on rings (Martin, Odlyzko and Wolfram 1984). New as
+     far as found: the census of intermittent composition by nativeness.
+   - **Next (research directions).** A middle ring that carries without cancelling, now searched among affine chains through their
+     polynomials (Payoff 3/3, Concreteness 2/3), and the pulse law of affine chains (Payoff 2/3, Concreteness 2/3). Stop the process
+     line if arrival sets of affine chains always have gaps
+     ([decision note](../research/INTERMITTENT-NET-20261108-001/intermittent_net.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

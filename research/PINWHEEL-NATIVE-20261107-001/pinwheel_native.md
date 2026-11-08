@@ -29,8 +29,10 @@ Epic `PINWHEEL-NATIVE-20261107-001` (program topology), 2026-11-07.
 - **On the doubt.**
   - **The labels are not extra.** On every tested patch they are written in the law itself, readable within radius 2.
   - **Proved and measured.** The regrowth is proved; the readability is measured on patches to level 7.
-- **Where the irrational angle went.** It is nowhere in the rule. It appears only if the grown law is drawn self-similarly in the
-  plane.
+- **Where the irrational angle went.** It is nowhere in the rule, but the law carries it at large scale. Kenyon and Stephenson prove
+  that the combinatorics alone recover the triangles: drawn conformally, which fixes the picture up to similarity, clusters of tiles
+  converge in shape to the 1:2:√5 triangles (see the literature section).
+  - **Correction (2026-11-08).** A first version said the angle appears only if the grown law is drawn self-similarly in the plane.
 
 ## Literature and provenance
 
@@ -38,8 +40,16 @@ Epic `PINWHEEL-NATIVE-20261107-001` (program topology), 2026-11-07.
   - **Sources.** Collared tiles and Anderson–Putnam complexes give finite combinatorial descriptions of substitution tilings. For the
     pinwheel, which does not force its border: Barge, Diamond, Hunton and Sadun (2010); Frettlöh, Whitehead and Whittaker (2014),
     whose complex has 138 edges.
-  - **Folklore risk.** Moderate for the eleven-label rule and the census: they say what is known in substance, in the program's
-    terms.
+  - **Nearest known result (found after closure).** Kenyon and Stephenson, "Shape convergence for aggregate tiles in conformal
+    tilings" (Proc. Amer. Math. Soc. 147, 2019; arXiv:1703.04371), take the pinwheel as their running example.
+    - **The rule.** Each tile becomes a combinatorial polygon with four designated corners, the fourth at the midpoint of the long
+      leg, and Conway's cut becomes a combinatorial subdivision rule with no coordinates.
+    - **The geometry returns.** In the conformal tilings drawn from the subdivided combinatorics, aggregate tiles converge in shape
+      to the Euclidean tiles. In their words, "the combinatorics of the pinwheel knows about √5".
+  - **Folklore risk.** High for the rule and the census: a coordinate-free pinwheel rule with four-cornered tiles is published, and
+    four corners per tile is the census's point that T-junctions sit only at long-leg midpoints. What remains is the rule's form on
+    a parity law's knots and distinctions, the explicit eleven-label alphabet and its exact check.
+    - **Correction (2026-11-08).** This replaces a first rating of moderate, made before this source was found.
 - **Ticket B.**
   - **Sources.** Whitney's theorems (a 3-connected graph is determined by its cycle matroid and has a unique planar embedding). Local
     recognizability of substitution tilings is classical in the geometric setting.
@@ -56,8 +66,12 @@ Epic `PINWHEEL-NATIVE-20261107-001` (program topology), 2026-11-07.
   b 5/22, c 16/55, d 3/55, e 6/55, f 1/5, g 17/55, h 27/110.
   - **What the table does carry.** The only irrational number it shows is its growth rate √5, the factor by which each
     distinction's pieces multiply per level: the length scale, not the angle.
-  - **Where the angle shows.** The angle appears only when the law is drawn. What the law itself shows of it is its round circle.
+  - **Where the angle shows.** Not in the table or the counts, but in the law's large-scale shape: by Kenyon and Stephenson's
+    theorem, the combinatorics alone recover the 1:2:√5 triangles in the limit. So the owner's continuing ratio is in the law as a
+    limit, as its round circle is, and in no finite part of it.
   - **Correction.** This bullet replaces a first version that placed the continuing ratio in these proportions; they are rational.
+  - **Second correction (2026-11-08).** "Where the angle shows" first said that the angle appears only when the law is drawn. The
+    conformal drawing that recovers it is fixed by the combinatorics up to similarity.
 
 ## Workspace assumption challenged
 
@@ -71,8 +85,41 @@ Since the epic opened:
 - **Substantive.** Two evidence families changed conclusions: A (proof) and B (exploratory experiment).
 - **Administrative.** This note and the closure.
 
+## Correction record (2026-11-08)
+
+Written after closure, when a later prior-work check found Kenyon and Stephenson (2019).
+- **What was claimed.**
+  - The eleven-label rule and its census of T-junctions were not found in prior work (folklore risk moderate).
+  - The pinwheel's irrational angle "appears only if the grown law is drawn".
+- **What was wrong.** Kenyon and Stephenson (Proc. Amer. Math. Soc. 147, 2019; arXiv:1703.04371) take the pinwheel as the running
+  example of a coordinate-free subdivision rule.
+  - **Their tiles.** Each tile has four designated corners, the fourth at the long leg's midpoint, which is the census's main point.
+  - **Their theorem.** The combinatorics alone give the geometry back: aggregate tiles of the conformal tilings converge in shape to
+    the Euclidean triangles.
+- **Why it was missed.**
+  - **The search.** The prior-work check covered tiling spaces (collared tiles, Anderson–Putnam complexes, cohomology) and one general
+    query on whether combinatorics determines geometry. It did not reach conformal tilings, where that question is asked directly.
+  - **The reading.** From "the angle is in neither the table nor the counts" it concluded "the angle is only in a drawing". It did
+    not ask whether the combinatorics fix a drawing of their own.
+- **What it changes.**
+  - **Novelty.** Ticket A's novelty narrows to the rule's form on a parity law's knots and distinctions, the explicit eleven-label
+    alphabet and its exact check. Whether to qualify the discovery record is listed under "Pending the owner".
+  - **The angle.** The reading of where it lives reverses: it is a limit property of the law, like the round circle.
+- **What it does not change.**
+  - **The results.** Every proved or measured result stands: exact regrowth at levels 0–7, the census, the Whitney step and the
+    radius-2 reading. The radius-2 reading is still not found in prior work.
+  - **The answer.** The pinwheel law can be grown with nothing drawn. The cited theorem supports this: the rule needs no geometry,
+    and the geometry comes back from it.
+- **Block or not.** Not a block. It corrects a novelty claim and an interpretation, not the theory under test. It favours question
+  9's "derived, not put in": a finite combinatorial rule fixes the irrational angle in the limit.
+- **Lesson.** For "does the combinatorics determine X?", search conformal tilings (Bowers and Stephenson; Kenyon and Stephenson) and
+  finite subdivision rules (Cannon, Floyd and Parry), not only tiling-space topology. Before saying "only in a drawing", ask
+  whether the combinatorics fix a canonical drawing.
+
 ## Pending the owner
 
+- **From this epic (2026-11-08).** Whether to qualify `PINWHEEL-NATIVE-20261107-001-D001` (significance `first_construction`):
+  its rule is known in substance from Kenyon and Stephenson (2019); its form on knots and distinctions is not.
 - **Carried from `LOGIC-AXIS-20261107-001`.** Whether a native knot must also be natively bound
   (`research/LOGIC-AXIS-20261107-001/canonical_correction_request.md`).
 - **Carried from earlier epics.**

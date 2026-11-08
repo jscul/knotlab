@@ -3398,15 +3398,21 @@ So network holes come in two kinds:
      - **The rule.** Split every knot into five, read each distinction's kind nearby, and split it by an eleven-letter table. That
        rule grows a law whose own distance is round.
      - **No geometry.** No coordinate, length or angle enters.
-     - **Where the angle went.** The irrational angle appears only if the grown law is drawn in the plane.
+     - **Where the angle went.** Into the law's large-scale shape, not into any finite part of it.
        - **Not in the counts.** The eight kinds recur in rational proportions, per knot: a 3/11, b 5/22, c 16/55, d 3/55, e 6/55,
          f 1/5, g 17/55, h 27/110.
        - **The only irrational number.** The table's growth rate √5, which is the length scale.
-       - **What the law shows of the angle** is its round circle.
+       - **In the limit.** The combinatorics alone recover the triangles (Kenyon and Stephenson). Drawn conformally, which fixes
+         the picture up to similarity, clusters of tiles converge in shape to the 1:2:√5 triangles. So the angle, like the round
+         circle, is a limit property of the law.
+       - **Corrected 2026-11-08.** This bullet first said that the angle appears only if the grown law is drawn in the plane.
    - **Provenance.**
+     - **Known in substance.** A coordinate-free pinwheel rule with four-cornered tiles, the fourth corner at the long leg's
+       midpoint, and the return of its geometry: Kenyon and Stephenson (Proc. Amer. Math. Soc. 147, 2019).
      - **Classical.** Finite combinatorial descriptions of substitution tilings (collared tiles, Anderson–Putnam complexes; for the
        pinwheel, Barge–Diamond–Hunton–Sadun and Frettlöh–Whitehead–Whittaker) and Whitney's theorems.
-     - **Not found.** The eleven-label rule on knots, the census and the radius-2 readability.
+     - **Not found.** The radius-2 readability, and the rule's form on knots and distinctions.
+     - **Corrected 2026-11-08.** The rule and the census were first listed as not found.
    - **Next (recommended, awaiting the owner).** A round plane grown at its open ends (Payoff 3/3, Concreteness 2/3), starting with
      atlas growth. From one knot, add knots only where every nearby distinction keeps a radius-2 neighbourhood of the pinwheel's
      atlas. Does growth reach dead ends, or grow pinwheel patches outward as the number line grew?

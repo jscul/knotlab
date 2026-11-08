@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "COUNT-TFNP-20261107-001Z",
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "COUNT-ANTIVORTEX-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Please do both', approving COUNT-SURFACES-20261107-001's recommendation (i)): decide whether the search problem that the count forces on negatively curved knot spaces - find a face with excess agreements, total on every Kasteleyn space of genus at least 2 - is PPADS-complete, by mirroring FLAT-STATES-20261107-001B's Sperner embedding with the opposite orientation on a natural genus-2 family: the double of a holed lattice torus, whose six degree-8 vertices mirror the knot sphere's six corners. Serves the complexity program and the intuition 'hardness at three places' (whether the count's class depends on the sign of the curvature).",
+  "ownership": {
+    "root": true,
+    "scope_id": "COUNT-ANTIVORTEX-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: on the genus-2 double of a holed lattice torus (six degree-8 vertices, the mirror of the knot sphere's corners) with Kasteleyn signs, the developed frame carries one antivortex and satisfies every line; with FLAT-STATES-B's Sperner map mirrored, finding an over-agreeing face is PPADS^dt-complete and finding a violated line or an over-agreeing face PPAD^dt-complete. Curvature chooses which constraint fails, not its class. Recommendation: Full pivot to question 9 via UNIFORM-SPHERES-20261107-001 (2/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the face problem on the genus-2 family is proved PPADS^dt-complete (and the two-sided problem PPAD^dt-complete), or an obstruction to the mirrored embedding is found and explained.",
+  "title": "Negative curvature's count: finding the over-agreeing face on genus 2"
+}

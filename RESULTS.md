@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**211 current results** and 5 superseded ones, from 147 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**212 current results** and 5 superseded ones, from 148 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 11 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 10 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 66 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 28 results
@@ -30,7 +30,7 @@ How to read an entry:
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 147 epics with their closures
+- [Epics](#epics): all 148 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -192,6 +192,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-10-25 · Native emergence cannot imitate a hub exactly, and on trees not approximately** (`SOFT-HUB-20261024-001-D001`).
   No native gadget of any knot is an exact hub, and pairs of solutions that do not link all three terminals reroute onto off-diagonal values, which bounds the hub ratio of windable gadgets by the square root of 3 (given McQuillan) and of parity and no-lone gadgets by 1. For the six open knots, tree gadgets are proved to have hub ratio at most 3; gadgets with cycles remain a conjecture.
   [proof P001](proofs/SOFT-HUB-20261024-001A/SOFT-HUB-20261024-001A-P001_hub_ratios_of_settled_knots/proof.md), [proof P001](proofs/SOFT-HUB-20261024-001C/SOFT-HUB-20261024-001C-P001_tree_gadgets_have_bounded_hubs/proof.md), [epic closure](proofs/SOFT-HUB-20261024-001Z/SOFT-HUB-20261024-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Negative curvature forces an antivortex, and finding it is PPADS-complete** (`COUNT-ANTIVORTEX-20261107-001-D001`).
+  On the genus-2 double of a holed lattice torus with Kasteleyn signs, the count forces some face to over-agree, and finding such a face is PPADS^dt-complete while finding a violated line or an over-agreeing face is PPAD^dt-complete. A frame developed across the six degree-8 faces carries one antivortex and leaves every line satisfied, and the mirrored Sperner map puts over-agreeing faces exactly in clockwise fully labelled triangles.
+  [proof P001](proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex/proof.md), [epic closure](proofs/COUNT-ANTIVORTEX-20261107-001Z/COUNT-ANTIVORTEX-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · Grid Sperner and the knot sphere need exponential resolution size, with every lemma proved** (`COUNT-NOTE-20261107-001-D001`).
   Every resolution refutation of the knot sphere needs width Theta(sqrt n) and size 2^Theta(sqrt n), now with every lemma proved through single-step vortex moves, straight cuts giving d >= (dist - 19)/2, and a row count. Grid Sperner with its fixed boundary, and the Itsykson-Malova-Oparin-Sokolov Sperner CSP, need width Omega(m) and size 2^Omega(m), because with three straight cuts the fixed boundary is a flat state.
   [proof P001](proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/proof.md), [epic closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md)
@@ -889,6 +892,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-06 | Is the sphere's Euler count hard for resolution? (`SPHERE-COUNT-20261106-001`) | [closure](proofs/SPHERE-COUNT-20261106-001Z/SPHERE-COUNT-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-COUNT-20261106-001/) |
 | 2026-11-06 | The two-round rule as a proof-complexity bridge (`TWO-ROUND-BRIDGE-20261106-001`) | [closure](proofs/TWO-ROUND-BRIDGE-20261106-001Z/TWO-ROUND-BRIDGE-20261106-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-ROUND-BRIDGE-20261106-001/) |
 | 2026-11-07 | Why a Fano atom acts as one (`ATOM-ONE-20261107-001`) | [closure](proofs/ATOM-ONE-20261107-001Z/ATOM-ONE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-ONE-20261107-001/) |
+| 2026-11-07 | Negative curvature's count: finding the over-agreeing face on genus 2 (`COUNT-ANTIVORTEX-20261107-001`) | [closure](proofs/COUNT-ANTIVORTEX-20261107-001Z/COUNT-ANTIVORTEX-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-ANTIVORTEX-20261107-001/) |
 | 2026-11-07 | The sphere's count written out, and stronger proof systems (`COUNT-NOTE-20261107-001`) | [closure](proofs/COUNT-NOTE-20261107-001Z/COUNT-NOTE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-NOTE-20261107-001/) |
 | 2026-11-07 | The knot's count on surfaces: does the Euler characteristic decide it? (`COUNT-SURFACES-20261107-001`) | [closure](proofs/COUNT-SURFACES-20261107-001Z/COUNT-SURFACES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SURFACES-20261107-001/) |
 | 2026-11-07 | The knot's count in TFNP: PPADS-complete one-sided, PPAD-complete two-sided (`COUNT-TFNP-20261107-001`) | [closure](proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-TFNP-20261107-001/) |

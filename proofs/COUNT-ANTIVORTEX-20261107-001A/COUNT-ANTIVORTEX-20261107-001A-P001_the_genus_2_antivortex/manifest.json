@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COUNT-ANTIVORTEX-20261107-001A-P001",
+  "canonical_id": "COUNT-ANTIVORTEX-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "COUNT-ANTIVORTEX-20261107-001A",
+  "proof": "COUNT-ANTIVORTEX-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The genus-2 antivortex: finding the over-agreeing face is PPADS-complete",
+  "status": "Proved",
+  "claim": "Let G_a be the double of the holed lattice torus T(3a Z^2) along a hexagonal hole: a closed orientable genus-2 surface whose incidence graph has six four-corner faces (the hexagon's corners, degree 8) and three-corner faces elsewhere, with the Kasteleyn signs of COUNT-SURFACES-20261107-001A. (1) The frames of FLAT-STATES-20261107-001A are flat around three-corner faces and turn by label +1 around each four-corner face, the mirror of the knot sphere's -1. (2) For exactly one of the 16 Kasteleyn classes the handle loops are flat; cutting along six disjoint chart-confined paths from a point z to the four-corner faces and developing one frame gives an assignment with no violated line and exactly one over-agreeing face, at z. (3) Placing FLAT-STATES-20261107-001B's Sperner map in a region around z, the region's boundary is the canonical Sperner boundary with colours 1 and 2 swapped, and over-agreeing faces sit exactly one in each clockwise fully labelled triangle, violated lines exactly one in each counterclockwise one. (4) Hence finding an over-agreeing face of the knot on G_a, a total problem since over-agreement minus violated lines is 1, is PPADS^dt-complete, and finding a violated line or an over-agreeing face is PPAD^dt-complete, while the knot's lines alone are satisfiable.",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "COUNT-TFNP-20261107-001Z",
+    "FLAT-STATES-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A face of the double with holonomy other than trivial (three corners) or label +1 (four corners).",
+    "No Kasteleyn class, or more than one, developing consistently over the confined star.",
+    "A developed state with a violated line, or with over-agreement away from z or at more than one face.",
+    "A region boundary other than the swapped canonical boundary, or a defect outside the fully labelled triangles of the stated orientation.",
+    "A misreading of the cited reductions or characterizations (one-sided Sperner PPADS^dt-complete; unary Sherali-Adams and Nullstellensatz)."
+  ],
+  "lineage": {
+    "home_scope": "COUNT-ANTIVORTEX-20261107-001",
+    "epic_path": [
+      "COUNT-ANTIVORTEX-20261107-001"
+    ],
+    "parents": [
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json",
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json",
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py",
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/sperner_lib.py",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json": "c0b4f2ecd6d98b400af0be2882f17e3a13cc7607e8ea656d73920f3bae6a580c",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json": "dd1304e1eef14eb345b170da210e5253abc6bf5c7708b6342b91a78187853a6b",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py": "49cc570c49a8617e5de070be79bae06ba995c7ce25894ad263022522d0ea8943",
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json": "38750733a88ce278be7f9aed233df05dbcaf7c81303efb7635ebae4edf20cab6",
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json": "5f15abcecb52f8a3c5a61f52bfa65440e4095b07964b3b9eb267647c55420151",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json": "13df23640a58dd4f8f4e0b7d54387fb0291ec137aaf224ce4f313e259572a42b",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json": "5438fd34edcb811be15d7e3660806f379166ecfff1c7798f67d94d9ae8f9f72d",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py": "f19711315cb24b03296259fc5e27faab9d5a99246119a1e52e2738bb7dfb672c",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "e0f61bd599521eb52588a1bc36732f64fe80eee23ee9f7a1c1c8606cac324fca",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "6094393c4899b93849fabbffa2aef8ac5c3e1ed87569885ac990cfbb25dbc8e4",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/sperner_lib.py": "102a9b6c3a66605dedb3c33dba785a13a0ba7c1ec8a45fae47245ee413ff70fa",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "94a048cfe6159b4de6b36487da85c20c5b422c97f7a7a1dd0f4783ee0e960971",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "ca62f89c55bb4c742357bc2dc84c133f34ab3400df8e274ff8ede8272a6882ef"
+  },
+  "paths": {
+    "manifest": "proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex/manifest.json",
+    "identity": "proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex/identity.json",
+    "proof": "proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex/proof.md",
+    "check": "proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex/check.py",
+    "result": "proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex/result.json",
+    "directory": "proofs/COUNT-ANTIVORTEX-20261107-001A/COUNT-ANTIVORTEX-20261107-001A-P001_the_genus_2_antivortex"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The family G_a with a hexagonal hole of side 3 and the region of side 2m (m >= 3) placed as in check.py, for every m by the proof; the construction is computed for m = 3..8 and the defect correspondence checked on 80 colourings for m = 3..7.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, composing proved reductions with new local facts checked by computation with controls; no human or external review",
+    "novelty": "new as far as found: the PPADS^dt-completeness of the over-agreeing-face problem on a negatively curved knot space and the genus-2 antivortex flat state; the method mirrors FLAT-STATES-20261107-001B and COUNT-TFNP-20261107-001B."
+  }
+}

@@ -1,0 +1,233 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json": "Proved",
+     "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json": "passed",
+     "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json": "Proved",
+     "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/result.json": "passed",
+     "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json": "Proved",
+     "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "passed"
+    }
+   }
+  },
+  "1 the doubles of the holed tori T(3a) are closed orientable surfaces of genus 2 whose faces have three corners except six with four (the hexagon's corners, degree 8)": {
+   "pass": true,
+   "info": {
+    "(a, h), n, chi, face sizes": [
+     [
+      [
+       3,
+       1
+      ],
+      156,
+      -2,
+      {
+       "3": 148,
+       "4": 6
+      },
+      true
+     ],
+     [
+      [
+       4,
+       2
+      ],
+      264,
+      -2,
+      {
+       "3": 256,
+       "4": 6
+      },
+      true
+     ],
+     [
+      [
+       6,
+       3
+      ],
+      594,
+      -2,
+      {
+       "3": 586,
+       "4": 6
+      },
+      true
+     ],
+     [
+      [
+       10,
+       3
+      ],
+      1746,
+      -2,
+      {
+       "3": 1738,
+       "4": 6
+      },
+      true
+     ],
+     [
+      [
+       12,
+       4
+      ],
+      2496,
+      -2,
+      {
+       "3": 2488,
+       "4": 6
+      },
+      true
+     ]
+    ]
+   }
+  },
+  "2 in every sign class the frames are flat around three-corner faces and turn by label +1 around each degree-8 face (sublattice -1, complement), the mirror of the sphere corners' -1": {
+   "pass": true,
+   "info": {
+    "(corners, holonomy): count": {
+     "(3, (0, 0, 0))": 31904,
+     "(4, (2, 1, 1))": 192
+    }
+   }
+  },
+  "3 local lemma: in a common frame a triangle on three sublattices with labels within two consecutive values is never monochromatic (48 cases)": {
+   "pass": true,
+   "info": {}
+  },
+  "4 of the 16 Kasteleyn classes exactly one develops consistently over the surface cut along a chart-confined star; its state violates no line and over-agrees at exactly one face, at z, for either colour of z (so the knot's lines are satisfiable)": {
+   "pass": true,
+   "info": {
+    "(m, a, consistent class, (z colour, violated, over-agreeing, at z))": [
+     [
+      3,
+      10,
+      [
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      [
+       [
+        0,
+        0,
+        1,
+        true
+       ],
+       [
+        1,
+        0,
+        1,
+        true
+       ]
+      ]
+     ],
+     [
+      5,
+      11,
+      [
+       [
+        0,
+        0,
+        0,
+        0
+       ]
+      ],
+      [
+       [
+        0,
+        0,
+        1,
+        true
+       ],
+       [
+        1,
+        0,
+        1,
+        true
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  "5 for m = 3..7 the region's boundary is the canonical Sperner boundary with colours 1 and 2 swapped; on 80 colourings the violated lines sit exactly one in each counterclockwise fully labelled triangle and the over-agreeing faces exactly one in each clockwise one, nothing outside the region, and every point reads at most two Sperner colours": {
+   "pass": true,
+   "info": {
+    "(m, n, full triangles, ok)": [
+     [
+      3,
+      1746,
+      {
+       "ccw": 0,
+       "cw": 16
+      },
+      true
+     ],
+     [
+      4,
+      1746,
+      {
+       "ccw": 7,
+       "cw": 23
+      },
+      true
+     ],
+     [
+      5,
+      2124,
+      {
+       "ccw": 15,
+       "cw": 31
+      },
+      true
+     ],
+     [
+      6,
+      2538,
+      {
+       "ccw": 34,
+       "cw": 50
+      },
+      true
+     ],
+     [
+      7,
+      2538,
+      {
+       "ccw": 60,
+       "cw": 76
+      },
+      true
+     ]
+    ]
+   }
+  },
+  "6 the count: over-agreement minus violated lines is 1 under every tested assignment, so an over-agreeing face always exists and the face problem is total": {
+   "pass": true,
+   "info": {
+    "assignments": 40
+   }
+  },
+  "7 controls: each check can fail": {
+   "pass": true,
+   "info": {
+    "a torus with L not in L3 (25 x 25): no class develops (the handles turn the sublattice)": true,
+    "counting violated lines against clockwise triangles fails": true,
+    "the unswapped canonical boundary (0, 1, 2) differs from the region's": true
+   }
+  }
+ }
+}

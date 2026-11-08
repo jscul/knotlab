@@ -4010,9 +4010,18 @@ So network holes come in two kinds:
      previous entry's reading is narrowed accordingly.
    - **Provenance.** Two-vertex cuts and connectivity are classical; the counterexamples, the refined conjecture and the lemma are new
      here.
-   - **Next (recommended).** Why two-vertex cuts hide the tie (Payoff 2/3, Concreteness 2/3): the side K4^(3) without a line, hanging
-     from one point once a cut line is removed, under its eight cycle signings.
+   - **Next (taken as `CUT-HIDE-20261108-001`).** Why two-vertex cuts hide the tie (Payoff 2/3, Concreteness 2/3): the side K4^(3)
+     without a line, hanging from one point once a cut line is removed, under its eight cycle signings.
      - **The alternatives.** The refined conjecture for 3-connected glues (2/3, 1/3); random 3-connected glues one size past (1/3, 3/3).
+
+   **2026-11-08: why two-vertex cuts hide the contradiction** (`CUT-HIDE-20261108-001`).
+   - **Proved.** At a two-line cut whose side meeting the removed line once is K4^(3) without a line, the contradictory class and the
+     class with one sign of the other cut line changed have the same row of creation, and only the first ties the removed line's points.
+   - **Why.** That side has one rigid switching class of its eight, and the contradiction must use it. One sign on the other cut line
+     then decides whether the side is coupled to the rest or free, and creation is blind to it: the side's lines are degenerate either
+     way, and its points add nothing the cut line's third point does not (six local lemmas, exhaustive).
+   - **Reading.** The obstruction found by CONTRA-PROOF is structural: native creation cannot read the contradiction across such a cut.
+   - **Next.** Work paused at the owner's request (2026-11-08). Open: a proof for 3-connected glues; the six-point hanging sides.
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

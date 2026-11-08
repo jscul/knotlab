@@ -22,7 +22,7 @@ Epic `COLLAR-PLANE-20261108-001` (program topology), 2026-11-08.
 | 2 | **And every radius.** The cut keeps collar-legality. After k cuts, every patch of tile radius r of a collar-legal plane lies in the cut of one pinwheel collar once (r + 1)√5 · 5^(−k/2) is below the least collar width, 0.447 for legs 1 and 2. So for every r a periodic plane obeys the pinwheel's undecorated radius-r law. The twice-cut lattice, 100 tiles per period, obeys the 1,168-form radius-2 atlas; the three-times-cut one obeys the radius-3 atlas (stress test). No undecorated local law of the pinwheel forces aperiodicity. | proved; radius 2 and 3 computed | A, stress test |
 | 3 | **The collar law forces one level of composition.** Each collar names its tile's parent, and in a collar-legal plane touching siblings name the same one. Of 956 compatible sibling pairs, 888 agree, and each of the other 68 leaves a tile with no consistent completion. So every collar-legal plane is the cut of a plane of √5-larger triangles whose collars lie in a level-one law L1: 1,264 collars per handedness, 54 of them pinwheel keys. Only 156 (54 keys, 102 others) survive arc consistency. The rhombus lattice's collar is one of the 102, so composition stops there. | proved (exact computation) | B |
 | 4 | **The patches that left the pinwheel.** Growth's four off-pinwheel patches compose once with no conflicting parent. Their defect sits one level up, in 45 non-key collars of L1. They show no period of their own: away from the defect they look like the pinwheel. | proved (B); measured | B |
-| 5 | **The census.** Of the periodic planes `PINWHEEL-ATLAS-20261107-001B` rejected uncut, cut one to three times: after one cut only the rhombus lattice obeys the collar law, in four presentations (checkerboard grids, the two isosceles shapes tiled by half-turns, eight domino tilings of the 2 × 4 and 4 × 2 tori). After two cuts six brick-row planes and 16 more domino tilings join. The plain rectangle lattice, the kite and both parallelograms fail at every cut tried. The larger tori after one cut are pending. | exploratory experiment | C |
+| 5 | **The census.** Of the periodic planes `PINWHEEL-ATLAS-20261107-001B` rejected uncut, cut one to three times: on the small families, after one cut only the rhombus lattice obeys the collar law, in four presentations (checkerboard grids, the two isosceles shapes tiled by half-turns, eight domino tilings of the 2 × 4 and 4 × 2 tori). After two cuts six brick-row planes and 16 more domino tilings join. The plain rectangle lattice, the kite and both parallelograms fail at every cut tried. On the 4 × 4 torus (folded in later), 16 rectangle grids with diagonals of period 4 also pass after one cut, beside 8 more presentations of the rhombus lattice. | exploratory experiment | C |
 
 ## Answer
 
@@ -42,7 +42,7 @@ Epic `COLLAR-PLANE-20261108-001` (program topology), 2026-11-08.
   information in the plane too, and A25 holds here: confirmed for the pinwheel at every radius.
 - **What hides the crystal.** A cut is self-similar. Cutting a crystal k times buries its seams under k levels of pinwheel-like
   structure, so any fixed window sees only pinwheel forms once k is large enough. The rhombus lattice is special only in being
-  legal after a single cut.
+  legal after a single cut, and it is not alone in that: rectangle grids with diagonals of period 4 are too.
 - **Why growth still got stuck.** The collar law is not an aperiodic set, so Dworkin and Shieh's theorem on deceptions does not
   explain the dead ends of outward growth. Those dead ends are measured facts about coin growth, not consequences of aperiodicity
   (correction below).
@@ -57,7 +57,7 @@ One size past each computed claim (`stress_test_radius3.py` here, with its outpu
 | Claim | One size past | Result |
 | --- | --- | --- |
 | The twice-cut rhombus lattice R_2 obeys the radius-2 dart atlas (A; 4,048 darts) | The radius-3 atlas, computed as the atlas proof computed radius 2 (five cuts of each complete collar, no dart near the edge: 3,530 codes, each with one label); R_2, R_3 and R_4 against it | pass: R_3 (30,288 darts) and R_4 (58,396) obey it; R_2 does not (1,200 of 8,908 darts), as expected one radius past; the rectangle lattice cut three times fails (6,828 of 12,498) |
-| Only the rhombus lattice passes after one cut (C; small tori) | The 2 × 6, 6 × 2 and 4 × 4 tori after one cut (95,232 planes) | **pending**: running in the background (`collar-plane-c1`, `docs/LONG_RUNNING.md`); folded in by a follow-up commit |
+| Only the rhombus lattice passes after one cut (C; small tori) | The 2 × 6, 6 × 2 and 4 × 4 tori after one cut (95,232 planes; `collar-plane-c1`, folded in 2026-11-08) | **fails as stated**: 24 pass, all on the 4 × 4 torus; 8 are the rhombus lattice and 16 are rectangle grids with diagonals of period 4, two collars each, both in L1's core. Logged as a correction (not a block) |
 
 The radius-3 atlas also gives one size past for `PINWHEEL-ATLAS-20261107-001A`: at radius 3, too, every code carries one label.
 

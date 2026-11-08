@@ -3878,8 +3878,10 @@ So network holes come in two kinds:
    - **One level is forced (proved).** Each collar names its tile's parent, and touching siblings agree, so every plane that obeys
      the collar law is the cut of a plane of larger triangles. Their collars obey a weaker level-one law: 1,264 collars, 54 of them
      the pinwheel's. The crystal escapes there: it is the cut of the rhombus lattice, whose collar passes the level-one law.
-   - **The census (exploratory).** Of the atlas epic's periodic planes, cut one to three times, only the rhombus lattice passes after
-     one cut; six brick-row planes join after two. Growth's off-pinwheel patches compose once, and their defect is one level up.
+   - **The census (exploratory).** Of the atlas epic's periodic planes, cut one to three times, the rhombus lattice and, on the 4 × 4
+     torus, 16 rectangle grids with diagonals of period 4 pass after one cut; six brick-row planes join after two. Growth's
+     off-pinwheel patches compose once, and their defect is one level up. (Corrected 2026-11-08: first published as "only the
+     rhombus lattice passes after one cut", before the larger tori were run.)
    - **Reading.**
      - **The plane is like the sphere.** On the sphere a law without hidden states cannot tell a round sphere from a capped tube; in
        the plane the pinwheel's own laws, without decorations, cannot tell the pinwheel from a crystal. Roundness costs hidden

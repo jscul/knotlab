@@ -35,10 +35,19 @@ centroid of T_5's big triangle, about eight tile sizes from its edge, and the ru
 - **Everything else fails** after three cuts (F1, F2, F4) or two (F3): the plain rectangle lattice, the kite, both parallelograms and
   the rectangle shape among them.
 
-## Pending
+## Background part (folded in 2026-11-08)
 
-The background part, F3's 2 x 6, 6 x 2 and 4 x 4 tori after one cut (95,232 planes), runs as `collar-plane-c1` and is listed in
-`docs/LONG_RUNNING.md`. Its result will be folded in by a follow-up commit.
+F3's 2 x 6, 6 x 2 and 4 x 4 tori after one cut (`collar-plane-c1`, `big1_result.json`, `big1_rows.jsonl`, `big1_log.txt`; 95,232
+planes, controls held):
+- **24 pass, all on the 4 x 4 torus**; none of the 12,800 tilings of the 2 x 6 torus, or of the 6 x 2 torus, passes.
+- **8 are the rhombus lattice** again: uncut, a single collar, the rhombus lattice's.
+- **16 are not.** They are rectangle grids, every domino parallel, with diagonals of period 4 along a row. Uncut, each has two
+  collars, eight tiles each, and both lie in the arc-consistent core of ticket B's level-one law. After one cut they use exactly the
+  rhombus lattice's 10 keys. So the rhombus lattice is not the only plane that obeys the collar law after one cut (checked after the
+  run, as for the main part).
+- **A correction.** The main part's summary, "after one cut, only the rhombus lattice", was carried into the knot intuition doc and
+  the goals doc without the pending tori; it is narrowed there and logged in `docs/CORRECTIONS.md` (not a block: the theory gains
+  witnesses).
 
 ## Reading
 

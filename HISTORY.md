@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: more than one crystal passes after one cut
+
+- The collar-plane epic's entry in the knot intuition doc said that of the
+  atlas epic's periodic planes only the rhombus lattice obeys the collar law
+  after one cut. The census's larger tori, run afterwards, found 16 rectangle
+  grids with diagonals of period 4 that do too
+  ([interpretation](artifacts/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/run/interpretation.md)).
+- Unchanged: the theorem (one periodic plane suffices, and every radius
+  fails) and every count of the census's main part.
+
 ## 8 November 2026: the pinwheel's undecorated law does not force roundness
 
 - The pinwheel atlas epic found that none of 96,474 periodic planes obeys

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "COUNT-TFNP-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "UNIFORM-SPHERES-20261107-001A-P001"
+  },
+  "id": "UNIFORM-SPHERES-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that a law of lines and co-lines in which every point has the same co-line sizes (d1, d2, d3) builds a closed surface with Euler characteristic n(1/d1 + 1/d2 + 1/d3 - 1), so it closes into a sphere only for (2,2,d) with n = 2d, (2,3,3) with n = 12, (2,3,4) with n = 24 and (2,3,5) with n = 60; realize these by Cayley laws on dihedral groups, A4, S4 and A5 (the antiprisms and the snub polyhedra); show the knot fails on each with its unique sign class but that the (2,2,d) laws are cyclic chains (a violated line found in O(log n) queries), so no uniform law grows a deep contradiction; contrast with the knot sphere's two kinds of points; and sample flat (torus) and hyperbolic uniform laws, where the knot's lines are coherent. Check by computation with controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "UNIFORM-SPHERES-20261107-001"
+  },
+  "parent": "UNIFORM-SPHERES-20261107-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-07: a law of lines and co-lines builds its own closed surface; Cayley laws C(G; x, y) are such laws of type (|x|, |y|, |xy|); a law with one kind of point has chi = n(1/d1 + 1/d2 + 1/d3 - 1), so it closes into a sphere only as an antiprism (2,2,d) or a snub polyhedron (n = 12, 24, 60); with uniform signs the count never forces the knot's lines on any uniform law; Kasteleyn signs, never uniform on spheres, make the knot fail only on those small spheres or antiprism chains (FP^dt); computed: uniform signs leave the knot satisfiable on every tested uniform law and all circulant laws n <= 48 except the Fano plane; the knot sphere has two kinds of points.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Uniform knot laws: snub polyhedra, antiprisms and flat worlds"
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "UNIFORM-SPHERES-20261107-001A-P001",
+  "canonical_id": "UNIFORM-SPHERES-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "UNIFORM-SPHERES-20261107-001A",
+  "proof": "UNIFORM-SPHERES-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Uniform laws never force the knot's contradiction",
+  "status": "Proved",
+  "claim": "A law of lines and co-lines, in which each corner of a line lies in exactly one co-line and each point's link alternates lines and co-lines in one cycle, builds its own closed surface. (1) The Cayley law C(G; x, y) - points G, lines {g, gx, gxy}, co-lines the cosets of <x>, <y>, <(xy)^-1> - is always such a law, orientable, with every point of co-line sizes (|x|, |y|, |xy|). (2) If every point of a law has co-line sizes (d1, d2, d3), then chi = n(1/d1 + 1/d2 + 1/d3 - 1), so the law closes into a sphere only for (2,2,d) with n = 2d, (2,3,3) with n = 12, (2,3,4) with n = 24 and (2,3,5) with n = 60 - the antiprisms and the snub polyhedra, realized on dihedral groups, A4, S4 and A5. (3) With uniform signs (every line the same pattern) every even co-line is an even face, so chi - |D| <= n(sum over odd sizes of 1/d - 1) <= 0: the count never forces the knot's lines to fail on any uniform law, and on uniform spheres it forces over-agreement instead. (4) With Kasteleyn signs, which are not uniform on spheres, the knot fails on every uniform sphere, but only on at most 60 points or on an antiprism, a cyclic chain on which binary search finds a violated line with O(log n) queries. (5) Computed: with uniform signs the knot is satisfiable on every tested uniform law and on every circulant law with n <= 48 except the Fano plane; the knot sphere K_k has exactly two kinds of points.",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "COUNT-TFNP-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A Cayley law that is not a closed orientable surface, or whose Euler characteristic differs from the formula.",
+    "A spherical type other than (2,2,d), (2,3,3), (2,3,4), (2,3,5).",
+    "A uniform signing under which the count forces a line to fail, or an even co-line that is not an even face.",
+    "A uniform sphere whose knot is satisfiable under Kasteleyn signs, or an antiprism law that is not a cyclic chain of width 1.",
+    "A tested uniform law with uniform signs whose knot is unsatisfiable, other than the Fano plane."
+  ],
+  "lineage": {
+    "home_scope": "UNIFORM-SPHERES-20261107-001",
+    "epic_path": [
+      "UNIFORM-SPHERES-20261107-001"
+    ],
+    "parents": [
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json",
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json",
+      "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json": "c0b4f2ecd6d98b400af0be2882f17e3a13cc7607e8ea656d73920f3bae6a580c",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json": "dd1304e1eef14eb345b170da210e5253abc6bf5c7708b6342b91a78187853a6b",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py": "49cc570c49a8617e5de070be79bae06ba995c7ce25894ad263022522d0ea8943",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json": "13df23640a58dd4f8f4e0b7d54387fb0291ec137aaf224ce4f313e259572a42b",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json": "5438fd34edcb811be15d7e3660806f379166ecfff1c7798f67d94d9ae8f9f72d"
+  },
+  "paths": {
+    "manifest": "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/manifest.json",
+    "identity": "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/identity.json",
+    "proof": "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/proof.md",
+    "check": "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/check.py",
+    "result": "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/result.json",
+    "directory": "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "(1)-(4) for every finite group and every law of one point type, by proof; computed on V4, D_3..D_12, A4, S4, A5, wallpaper quotients of types (3,3,3), (2,4,4), (2,3,6), PSL(2,7) and all circulant laws with n <= 48; the knot sphere's point types for k = 2..6.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand; finite claims checked by computation with controls; no human or external review",
+    "novelty": "known-with-delta: the curvature formula and the spherical list are the classical classification of vertex-transitive maps (the antiprisms and snub polyhedra; Cayley maps of (2,3,n) triangle-group quotients); new as far as found: the reading of a knot law with its co-lines as a self-built surface, the theorem that uniform signs never let the count force the knot's lines, and the bound on the depth of uniform contradictions."
+  }
+}

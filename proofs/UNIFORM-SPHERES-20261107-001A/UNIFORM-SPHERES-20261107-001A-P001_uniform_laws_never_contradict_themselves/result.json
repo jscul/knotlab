@@ -1,0 +1,659 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json": "Proved",
+     "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json": "passed",
+     "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json": "Proved",
+     "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/result.json": "passed"
+    }
+   }
+  },
+  "1 every Cayley law C(G; x, y) is a closed orientable surface built from its own lines and co-lines; every point has co-line sizes (|x|, |y|, |xy|) and chi = n(1/d1 + 1/d2 + 1/d3 - 1)": {
+   "pass": true,
+   "info": {
+    "(law, type, n, chi)": [
+     [
+      "V4",
+      [
+       2,
+       2,
+       2
+      ],
+      4,
+      2
+     ],
+     [
+      "D3",
+      [
+       2,
+       2,
+       3
+      ],
+      6,
+      2
+     ],
+     [
+      "D4",
+      [
+       2,
+       2,
+       4
+      ],
+      8,
+      2
+     ],
+     [
+      "D5",
+      [
+       2,
+       2,
+       5
+      ],
+      10,
+      2
+     ],
+     [
+      "D6",
+      [
+       2,
+       2,
+       6
+      ],
+      12,
+      2
+     ],
+     [
+      "D8",
+      [
+       2,
+       2,
+       8
+      ],
+      16,
+      2
+     ],
+     [
+      "D12",
+      [
+       2,
+       2,
+       12
+      ],
+      24,
+      2
+     ],
+     [
+      "A4",
+      [
+       2,
+       3,
+       3
+      ],
+      12,
+      2
+     ],
+     [
+      "S4",
+      [
+       2,
+       3,
+       4
+      ],
+      24,
+      2
+     ],
+     [
+      "A5",
+      [
+       2,
+       3,
+       5
+      ],
+      60,
+      2
+     ],
+     [
+      "(3, 3, 3)/Z3^2",
+      [
+       3,
+       3,
+       3
+      ],
+      27,
+      0
+     ],
+     [
+      "(3, 3, 3)/Z4^2",
+      [
+       3,
+       3,
+       3
+      ],
+      48,
+      0
+     ],
+     [
+      "(2, 4, 4)/Z3^2",
+      [
+       2,
+       4,
+       4
+      ],
+      36,
+      0
+     ],
+     [
+      "(2, 4, 4)/Z4^2",
+      [
+       2,
+       4,
+       4
+      ],
+      64,
+      0
+     ],
+     [
+      "(2, 3, 6)/Z3^2",
+      [
+       2,
+       3,
+       6
+      ],
+      18,
+      0
+     ],
+     [
+      "(2, 3, 6)/Z4^2",
+      [
+       2,
+       3,
+       6
+      ],
+      96,
+      0
+     ],
+     [
+      "PSL(2,7)",
+      [
+       2,
+       3,
+       7
+      ],
+      168,
+      -4
+     ],
+     [
+      "Z7 (Fano)",
+      [
+       7,
+       7,
+       7
+      ],
+      7,
+      -4
+     ]
+    ]
+   }
+  },
+  "2 the types with 1/d1 + 1/d2 + 1/d3 > 1 (d >= 2, up to 60) are exactly (2,2,d) with n = 2d and (2,3,3), (2,3,4), (2,3,5) with n = 12, 24, 60; all are realized above (V4, dihedral groups, A4, S4, A5)": {
+   "pass": true,
+   "info": {
+    "spherical types": 62,
+    "non-dihedral": [
+     [
+      2,
+      3,
+      3
+     ],
+     [
+      2,
+      3,
+      4
+     ],
+     [
+      2,
+      3,
+      5
+     ]
+    ]
+   }
+  },
+  "3 with uniform signs every even co-line is an even face, so chi - |D| <= n(sum of 1/d over odd sizes - 1) <= 0: the count never forces a line to fail on any uniform law, and on every uniform sphere it forces over-agreement instead": {
+   "pass": true,
+   "info": {
+    "(law, forced side over the 8 uniform patterns)": [
+     [
+      "V4",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "D3",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "D4",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "D5",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "D6",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "D8",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "D12",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "A4",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "S4",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "A5",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "(3, 3, 3)/Z3^2",
+      [
+       "faces",
+       "none"
+      ]
+     ],
+     [
+      "(3, 3, 3)/Z4^2",
+      [
+       "faces",
+       "none"
+      ]
+     ],
+     [
+      "(2, 4, 4)/Z3^2",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "(2, 4, 4)/Z4^2",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "(2, 3, 6)/Z3^2",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "(2, 3, 6)/Z4^2",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "PSL(2,7)",
+      [
+       "faces"
+      ]
+     ],
+     [
+      "Z7 (Fano)",
+      [
+       "faces"
+      ]
+     ]
+    ]
+   }
+  },
+  "4 with uniform signs the knot is satisfiable on every law above except the Fano plane (Z7, lines {g, g+1, g+3}, all signs equal), and among all circulant laws with n <= 48 the Fano plane is the only unsatisfiable one": {
+   "pass": true,
+   "info": {
+    "(law, satisfiable uniform patterns of 8)": [
+     [
+      "V4",
+      8
+     ],
+     [
+      "D3",
+      8
+     ],
+     [
+      "D4",
+      8
+     ],
+     [
+      "D5",
+      8
+     ],
+     [
+      "D6",
+      8
+     ],
+     [
+      "D8",
+      8
+     ],
+     [
+      "D12",
+      8
+     ],
+     [
+      "A4",
+      8
+     ],
+     [
+      "S4",
+      8
+     ],
+     [
+      "A5",
+      8
+     ],
+     [
+      "(3, 3, 3)/Z3^2",
+      8
+     ],
+     [
+      "(3, 3, 3)/Z4^2",
+      8
+     ],
+     [
+      "(2, 4, 4)/Z3^2",
+      8
+     ],
+     [
+      "(2, 4, 4)/Z4^2",
+      8
+     ],
+     [
+      "(2, 3, 6)/Z3^2",
+      8
+     ],
+     [
+      "(2, 3, 6)/Z4^2",
+      8
+     ],
+     [
+      "PSL(2,7)",
+      8
+     ],
+     [
+      "Z7 (Fano)",
+      6
+     ]
+    ],
+    "circulant laws": 327,
+    "unsatisfiable": [
+     [
+      7,
+      [
+       0,
+       1,
+       3
+      ],
+      [
+       0,
+       0,
+       0
+      ]
+     ],
+     [
+      7,
+      [
+       0,
+       1,
+       3
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ]
+    ]
+   }
+  },
+  "5 with Kasteleyn signs (no even face) the knot is unsatisfiable on every uniform sphere and satisfiable in every tested class of the flat and hyperbolic laws; on spheres no uniform pattern is Kasteleyn": {
+   "pass": true,
+   "info": {
+    "(law, chi, satisfiable classes, a uniform pattern is Kasteleyn)": [
+     [
+      "V4",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "D3",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "D4",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "D5",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "D6",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "D8",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "D12",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "A4",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "S4",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "A5",
+      2,
+      "0/1",
+      false
+     ],
+     [
+      "(3, 3, 3)/Z3^2",
+      0,
+      "4/4",
+      true
+     ],
+     [
+      "(3, 3, 3)/Z4^2",
+      0,
+      "4/4",
+      true
+     ],
+     [
+      "(2, 4, 4)/Z3^2",
+      0,
+      "4/4",
+      false
+     ],
+     [
+      "(2, 4, 4)/Z4^2",
+      0,
+      "4/4",
+      false
+     ],
+     [
+      "(2, 3, 6)/Z3^2",
+      0,
+      "4/4",
+      false
+     ],
+     [
+      "(2, 3, 6)/Z4^2",
+      0,
+      "4/4",
+      false
+     ],
+     [
+      "PSL(2,7)",
+      -4,
+      "4/4",
+      false
+     ]
+    ]
+   }
+  },
+  "6 the antiprism laws C(D_d) are cyclic chains of width 1; with Kasteleyn signs binary search finds a violated line with at most 2 log2 d + 8 queries (FP^dt)": {
+   "pass": true,
+   "info": {
+    "(d, n, width, most queries)": [
+     [
+      3,
+      6,
+      1,
+      6
+     ],
+     [
+      5,
+      10,
+      1,
+      8
+     ],
+     [
+      8,
+      16,
+      1,
+      8
+     ],
+     [
+      16,
+      32,
+      1,
+      10
+     ],
+     [
+      64,
+      128,
+      1,
+      14
+     ],
+     [
+      256,
+      512,
+      1,
+      18
+     ]
+    ]
+   }
+  },
+  "7 the knot sphere K_k has exactly two kinds of points, (3,3,3) and (2,3,3) (the twelve points at its six digons): one kind more than any uniform law, and its contradiction is PPADS-complete (COUNT-TFNP-20261107-001B)": {
+   "pass": true,
+   "info": {
+    "(k, n, point types)": [
+     [
+      2,
+      16,
+      {
+       "(2, 3, 3)": 12,
+       "(3, 3, 3)": 4
+      }
+     ],
+     [
+      3,
+      36,
+      {
+       "(2, 3, 3)": 12,
+       "(3, 3, 3)": 24
+      }
+     ],
+     [
+      4,
+      64,
+      {
+       "(2, 3, 3)": 12,
+       "(3, 3, 3)": 52
+      }
+     ],
+     [
+      5,
+      100,
+      {
+       "(2, 3, 3)": 12,
+       "(3, 3, 3)": 88
+      }
+     ],
+     [
+      6,
+      144,
+      {
+       "(2, 3, 3)": 12,
+       "(3, 3, 3)": 132
+      }
+     ]
+    ]
+   }
+  },
+  "8 controls: each check can fail": {
+   "pass": true,
+   "info": {
+    "a law whose line meets its points in the wrong slots is not a surface": true,
+    "on a uniform sphere the count with chi replaced by chi + 2 fails": true,
+    "blocks by the image of 0 alone give width > 1": true
+   }
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "COUNT-TFNP-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "UNIFORM-SPHERES-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Please do both', approving COUNT-SURFACES-20261107-001's recommendation (ii), question 9: low-dimensional shape from a uniform local law, nothing drawn): a law of lines and co-lines on points, in which each pair of a line's points lies in exactly one co-line, builds its own closed surface with no drawing, and the knot's count then reads that surface's Euler characteristic. Decide which uniform laws (every point alike) close into spheres, whether the count forces the knot's contradiction on them, and how deep that contradiction can be; contrast with laws that have two kinds of points, such as the knot sphere.",
+  "ownership": {
+    "root": true,
+    "scope_id": "UNIFORM-SPHERES-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: a law of lines and co-lines builds its own closed surface; with one kind of point its Euler characteristic is n(1/d1 + 1/d2 + 1/d3 - 1), so it closes into a sphere only as an antiprism or a snub polyhedron (n <= 60); with uniform signs the knot's count never forces a line to fail on any uniform law, and Kasteleyn signs (never uniform on spheres) make it fail only on those small spheres or antiprism chains (FP^dt). Computed: uniform signs leave the knot satisfiable on every tested uniform law and all circulant laws n <= 48 except the Fano plane; the knot sphere has two kinds of points. Recommendation: Research directions, (i) laws with two kinds of points and a growth rule placing the six digon defects (2/3); (ii) large uniform contradictions beyond the Fano plane (1/3).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the uniform laws that close into spheres are classified, the knot's satisfiability on each is settled, the depth of their contradictions is bounded or shown unbounded, and the flat and hyperbolic uniform laws are sampled.",
+  "title": "Uniform laws and the spheres they can close into"
+}

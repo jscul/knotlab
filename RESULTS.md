@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**212 current results** and 5 superseded ones, from 148 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**213 current results** and 5 superseded ones, from 149 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 66 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 67 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 28 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 148 epics with their closures
+- [Epics](#epics): all 149 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -520,6 +520,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · No uniform native rule tried reads every space** (`REFINE-READ-20261107-001-D002`).
   Yes/no two-stage twins read 219 of 277 spaces and native row twins, their maximal cliques, their refinement veto and their glue-compatible version 234 each, failing only by merging atoms that meet one plane piece (32 of 38 by complete twinship). Native-twin lines of one atom never create at a common glue line in different ways (17,494 of 17,494), while 530 of 1,572 cross-atom twin pairs do.
   [proof P001](proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A uniform law can grow flat space but not the knot's contradiction** (`UNIFORM-SPHERES-20261107-001-D001`).
+  A law of lines and co-lines builds its own closed surface; with one kind of point it closes into a sphere only as an antiprism or a snub polyhedron of at most 60 points. With uniform signs the count never forces the knot's lines on any uniform law, and Kasteleyn signs make the knot fail only on those small spheres or antiprism chains solvable in O(log n) queries, so a deep contradiction needs a second kind of point.
+  [proof P001](proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/proof.md), [epic closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -904,4 +907,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Colour refinement on the native creation map (`REFINE-READ-20261107-001`) | [closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/REFINE-READ-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
+| 2026-11-07 | Uniform laws and the spheres they can close into (`UNIFORM-SPHERES-20261107-001`) | [closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-SPHERES-20261107-001/) |
 

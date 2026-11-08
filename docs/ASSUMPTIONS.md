@@ -94,7 +94,8 @@ evidence: results and their status come from the records each entry links.
 | [A37](#a37--a-path-composes-at-the-recurring-lags-its-dynamics-fixes) | A path composes at the recurring lags its dynamics fixes | reading | Assumed |
 | [A38](#a38--a-contact-is-cut-by-freezing-it) | A contact is cut by freezing it | scope | Assumed |
 | [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
-| [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Under challenge |
+| [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Confirmed |
+| [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Assumed |
 
 ## Entries
 
@@ -880,6 +881,10 @@ evidence: results and their status come from the records each entry links.
   every cycle at every size. The cheapest test proves or refutes, for the rule-60 family, that the composing share stays positive at
   every ring size.
 - **History.**
+  - 2026-11-08 · Bears on it: `DISTANCE-20261108-001` proved that in any network of rule-60 rings a route isolated by freezing, with no
+    arcs among its contacts but its hops, composes under this reading at every size: every route contact persists, and the far contact
+    needs the near ring exactly when C(T − L − 1, s + m) is odd, s the route's own cells and m below the near corner's own cells
+    ([distance across time](../research/DISTANCE-20261108-001/distance.md)).
   - 2026-11-08 · Bears on it: `RECUR-PROOF-20261108-001` proved that the two-apart paths with rule 60 or 102 compose under this reading
     at every ring size and length, the far contact needing the first ring exactly when one binomial coefficient is odd; their
     composing share is 2^(−w), positive at every size
@@ -895,11 +900,15 @@ evidence: results and their status come from the records each entry links.
 - **Why.** `SEPARATE-20261108-001` took it by default. Freezing is the simplest declared contact intervention that stops every route
   through the contact, and it leaves every other cell's law unchanged
   ([native separation across time](../research/SEPARATE-20261108-001/separate.md)).
-- **Rests on it.** The epic's theorems that a cut separates a proved path and that a cycle of four rings needs one cut per route.
+- **Rests on it.** The epic's theorems that a cut separates a proved path and that a cycle of four rings needs one cut per route;
+  the readings of separation, genus and distance across time built on them since (A41).
 - **Challenge.** Cut instead by erasing the contact, forgetting it as the knot test erases a loop, or by letting it read only one of
   its rings. The cheapest test reruns the epic's checks with a one-sided cut; a route that survives it would show that what counts as
   a cut changes which sets are separated.
 - **History.**
+  - 2026-11-08 · Bears on it: `DISTANCE-20261108-001` reads distance across time through freezing (A41): the earliest need any freeze
+    allows and the most disjoint cuts are graph distances on every network
+    ([distance across time](../research/DISTANCE-20261108-001/distance.md)).
   - 2026-11-08 · Added by `SEPARATE-20261108-001`.
 
 ### A39 · Space is spaced by knots that compose
@@ -925,7 +934,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A40 · Counted length is a native magnitude
 
-**Under challenge** · 2026-11-08 · measure
+**Confirmed** · 2026-11-08 · measure
 
 - **Statement.** The number of contacts along a route, equivalently the lags the substrate takes to carry influence along it, is a
   magnitude the substrate reads, and so may serve as a length across time. In a network of rule-60 rings whose law-(12, 12) contacts
@@ -936,8 +945,9 @@ evidence: results and their status come from the records each entry links.
   this without getting my approval first." Until then first lags were used only as lags
   ([lattice of rings](../research/LATTICE-NET-20261108-001/lattice_net.md),
   [genus by cuts](../research/GENUS-CUT-20261108-001/genus_cut.md)).
-- **Rests on it.** `DISTANCE-20261108-001`, distance across time (G5): every length or distance it forms from first lags, routes and
-  cuts, and whatever is later built on them, such as dimension or roundness read across time.
+- **Rests on it.** `DISTANCE-20261108-001`, distance across time (G5): its time length (the earliest need any freeze allows) and its
+  cut lengths, and whatever is later built on them, such as dimension or roundness read across time
+  ([distance across time](../research/DISTANCE-20261108-001/distance.md)).
 - **Challenge.** The alternative counts nothing: a count of lags or contacts is the observer's, and only orders, coincidences and
   separations are native. The frozen test of `DISTANCE-20261108-001A` was pre-registered on 2026-11-08 before it ran (sha256 of its
   contract c7818ce53ded426b, of run.py 7e109b3b76c426e2, of distance_lib.py ad7c26626e04edfe). It reads routes at the cell level on
@@ -952,6 +962,33 @@ evidence: results and their status come from the records each entry links.
   - **Overturned**, if (a) or (b) fails for any route: the lag would then not be a length the substrate reads.
   - **Confirmed for equally spaced networks only**, and reworded to say so, if only (c) fails.
 - **History.**
+  - 2026-11-08 · Confirmed by `DISTANCE-20261108-001`'s frozen test, run once after its pre-registration in 510ff23fc: (a) all 2,250
+    routes made the far contact first need the near ring at lag g·L + 1, (b) all 7,285 splits added, and (c) all 372 routes at unequal
+    spacing gave 1 plus the cells carried. Its ticket B proves the law for every network of rule-60 rings with law-(12, 12) contacts.
+    Confirmed for stated reasons: counted contacts and counted lags are one reading where contacts are equally spaced, and the
+    substrate's own count is cells ([distance across time](../research/DISTANCE-20261108-001/distance.md)).
   - 2026-11-08 · Put under challenge by `DISTANCE-20261108-001`, whose test was frozen and pre-registered before it ran (under
     Challenge).
   - 2026-11-08 · Added at the owner's ruling that counted length can count as magnitude.
+
+### A41 · Distance across time is read through freezes
+
+**Assumed** · 2026-11-08 · reading
+
+- **Statement.** Distance across time is read with freezing (A38): as the cut length, the most pairwise disjoint freeze sets that
+  leave two rings in different native pieces, and as the time length, the earliest lag at which any freeze makes a contact need a
+  ring. It is not read as the plain first need of the unfrozen network.
+- **Why.** `DISTANCE-20261108-001` took it by default. The freeze readings are graph distances on every network, by proof: the cut
+  length is the ring graph's distance, and the time length is 1 plus the fewest cells of a route, a directed metric. The plain first
+  need is the same light cone filtered by the parity of the number of shortest routes: late or absent where routes pair up, and it
+  breaks the triangle inequality ([distance across time](../research/DISTANCE-20261108-001/distance.md)).
+- **Rests on it.** The answer of `DISTANCE-20261108-001`, that distance across time is native and equals graph distance, and whatever
+  is built on these lengths, such as balls, dimension or roundness read across time.
+- **Challenge.** Read distance without intervening. On every Platonic, genus-2 and genus-3 network tested every contact needs every
+  ring exactly at the time length, while on tori of side 5 and more it does not, and with unequal spacing the plain first need meets
+  the cell length for 98% to 100% of pairs but contacts stop persisting. The cheapest test finds where the plain first need is on time
+  for every pair among orientably regular maps from small groups. A family of persistent networks where it is, or a native
+  observable that counts routes rather than their parity, would make freezing unnecessary there; finding none would confirm this
+  reading.
+- **History.**
+  - 2026-11-08 · Added by `DISTANCE-20261108-001`.

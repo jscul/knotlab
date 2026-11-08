@@ -1821,6 +1821,26 @@ So network holes come in two kinds:
      genus-2 first bands have no flips, and their balance breaks under any further band; the torus keeps a half-turn at every contact.
    - **Next (research directions).** The ready proofs of full reach on the cut-open torus (Payoff 2/3, Concreteness 3/3) and of which
      lattices compose everywhere ([decision note](../research/GENUS-BAND-20261108-001/genus_band.md)).
+
+   **2026-11-08: distance across time** (`DISTANCE-20261108-001`).
+   - **The question.** With counted length ruled a native magnitude by the owner (A40), does a network of persistent contacts read a
+     distance across time, and does it match graph distance on the lattices?
+   - **Counted length is read (frozen test, proved).** Freezing every contact off a route of L contacts makes the far contact first
+     need the near ring at lag g·L + 1, g the spacing, and these lags add when routes are joined; at unequal spacing the lag counts
+     cells. A40's test, pre-registered before it ran, passed on all 2,250 routes.
+   - **Two exact lengths (proved).** The most disjoint cuts that leave two rings in different native pieces is the ring graph's
+     distance, on every network. The earliest need any freeze allows is g·δ + 1, δ the contact graph's directed distance: a time of
+     flight, directed because influence goes one way round every ring. Between a contact and its translate δ is m/2 times the ring
+     graph's distance (m contacts per ring), and on the square lattice the ring graph's distance is ⌈δ/2⌉.
+   - **The plain first need is a parity-filtered cone (proved; counts computed).** Without freezing, a contact first needs a ring at δ
+     exactly when an odd number of shortest routes arrive: on the square torus, for contacts of one kind at offset (a, b), when
+     a AND b = 0; on the plane it never comes at a third of the offsets. It breaks the triangle inequality, so it is not a metric.
+   - **Reading.** Adjacency, native paths, separation, genus and now distance are read in one substrate across time. Distance is read
+     through freezes (A41): the symmetry that keeps contacts persistent is the one that makes shortest routes cancel. The networks are
+     given, not grown. No lag cutoff was used.
+   - **Next (research directions).** Distance without freezing (Payoff 2/3, Concreteness 3/3), selected and awaiting the coordinator;
+     full reach on honeycomb tori, which appears to hold exactly when 3 divides the side (computed to side 13)
+     ([decision note](../research/DISTANCE-20261108-001/distance.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

@@ -58,6 +58,12 @@ was then checked by ticket B's own script. It overturned the reading the smalles
 up to symmetry, before anything was published. The S1 run computed both 10-line glues, seeds 6 and 36, which are isomorphic, and got
 the same statistics on both; it also reproduced ticket A's 512 blocks class by class.
 
+## Correction (2026-11-08)
+
+- **The count of 12-line glues.** The next step and ticket B's limits said "the four 12-line glues"; TRISUM-READ has five (seeds
+  1, 192, 240, 246 and 300), and `CONTRA-READ-20261108-001` tested all five. Only the count changes; the closed ticket note and the
+  ledger keep their wording (`docs/CORRECTIONS.md`).
+
 ## Pending
 
 - **Still open from earlier epics.** As listed in SWITCH-READ's ledger.
@@ -80,7 +86,7 @@ the same statistics on both; it also reproduced ticket A's 512 blocks class by c
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Does creation always single out the contradictory class? | 2/3 — Substantial | 2/3 — Testable | The four 12-line glues, pruned to classes matching the Pfaffian rows → a sharing class, or a proof attempt | Selected |
+| 1 | Does creation always single out the contradictory class? | 2/3 — Substantial | 2/3 — Testable | The five 12-line glues (corrected from "four", 2026-11-08), pruned to classes matching the Pfaffian rows → a sharing class, or a proof attempt | Selected · done (`CONTRA-READ-20261108-001`) |
 | 2 | Where nothing creates | 1/3 — Incremental | 3/3 — Ready | Compare the 190 empty classes with the rest → a characterization | Alternative · deferred |
 | 3 | What of counting creation carries | 2/3 — Substantial | 1/3 — Stated | Pose which counts a block could fix → a test | Alternative · deferred |
 

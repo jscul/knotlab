@@ -3881,9 +3881,30 @@ So network holes come in two kinds:
      - **The stress test mattered.** The smallest glue suggested near-completeness up to symmetry; one size past overturned that before
        it was published.
    - **Provenance.** Switching classes and the action of automorphisms on them are classical (Zaslavsky); the computations are new here.
-   - **Next (recommended).** Does creation always single out the contradictory class (Payoff 2/3, Concreteness 2/3)? Test the four
-     12-line glues, following only the classes whose rows match the Pfaffian class's.
+   - **Next (taken as `CONTRA-READ-20261108-001`).** Does creation always single out the contradictory class (Payoff 2/3,
+     Concreteness 2/3)? Test the five 12-line glues (corrected from "four", 2026-11-08), following only the classes whose rows
+     match the Pfaffian class's.
      - **The alternatives.** Where nothing creates (1/3, 3/3); what of counting creation carries (2/3, 1/3).
+
+   **2026-11-08: native creation reads the contradiction** (`CONTRA-READ-20261108-001`).
+   - **The question.** Creation between glue lines does not tell switching classes apart, but on two glues it told the contradictory
+     class, the one whose plain spaces are three-fold, from all others. Does it always?
+   - **Yes, on every trisum glue of 8 to 12 lines (computed, seven glues).**
+     - **One contradictory class.** On each glue exactly one switching class has no solution: the Pfaffian class.
+     - **One row is enough.** For every line a of every one of these glues, creation with a removed, at the other lines, already
+       tells the contradictory class's restriction from every other class of the glue without a.
+   - **Why.**
+     - **The removed line stays tied.** Every assignment the glue without a allows must break line a, so a's three points are tied
+       there. No other class ties them, since that would give a second contradictory class.
+     - **Creation reads the tie.** A line sharing two points with a cannot then show all six patterns, so gluing there is
+       degenerate. At lines that share two points with no other line, the degenerate gluings alone single the class out; elsewhere
+       the knots that far sides add finish it.
+   - **Reading.** Native creation reads where the contradiction lives: with any one line removed, creation at the other lines tells
+     whether restoring it closes a contradiction. With the entry above, it reads the contradiction but not the count.
+   - **Provenance.** Switching classes (Zaslavsky) and Pfaffian orientations (Kasteleyn) are classical; the recognition and its
+     mechanism are new here.
+   - **Next (recommended).** Prove that one row reads the removed line's tie (Payoff 2/3, Concreteness 2/3).
+     - **The alternatives.** Why there is one contradictory class (2/3, 1/3); the 14-line glues (1/3, 3/3).
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

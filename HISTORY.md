@@ -3,6 +3,23 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: the pinwheel's coordinate-free rule was already known
+
+- Kenyon and Stephenson's "Shape convergence for aggregate tiles in conformal
+  tilings" (Proc. Amer. Math. Soc. 147, 2019) already gives the pinwheel a
+  coordinate-free subdivision rule. Each tile there has four designated
+  corners, the fourth at the midpoint of the long leg. They also prove that
+  the geometry returns from the combinatorics alone: in the conformal tilings,
+  clusters of tiles converge in shape to the Euclidean triangles ([decision note](research/PINWHEEL-NATIVE-20261107-001/pinwheel_native.md)).
+- PINWHEEL-NATIVE-20261107-001-D001 now carries a pending qualification. The
+  rule and its census of T-junctions are known in substance; new are the
+  rule's form on knots and distinctions, its eleven-label alphabet and its
+  exact check. The note's reading of the irrational angle was also corrected:
+  the angle is a limit property of the law, not only of a drawing.
+- Unchanged: the exact regrowth at levels 0–7, the census, the Whitney step,
+  and the reading of labels within radius 2, which was not found in prior
+  work.
+
 ## 7 November 2026: census 6 depends on how it is glued
 
 - The creation test glues each census far side to a gluing line in the order

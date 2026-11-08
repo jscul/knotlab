@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SHARED-CONTACT-20261108-001A-P001",
+  "canonical_id": "SHARED-CONTACT-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "SHARED-CONTACT-20261108-001A",
+  "proof": "SHARED-CONTACT-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "When a shared contact binds at the first step",
+  "status": "Proved",
+  "claim": "Two rings of at least three cells share one contact cell, each non-contact cell updating by its ring's elementary rule, so both rings read the contact; binding is read as in PROCESS-CONTACT-20261108-001A. (1) A contact that combines the rings' proposals, c(t + 1) = g(f_A(a_{m-1}, c, a_1), f_B(b_{n-1}, c, b_1)), binds both rings at lag 1 exactly when g is XOR or XNOR and neither rule is canalizing at its centre (f(., 0, .) and f(., 1, .) both nonconstant). (2) A self-blind contact, c(t + 1) = h(a_{m-1}, a_1, b_{n-1}, b_1), binds at lag 1 exactly when no setting of one ring's pair makes h constant in the other's; its parities u(a_{m-1}, a_1) + v(b_{n-1}, b_1) bind at lag 1 exactly when u and v are nonconstant. (3) With linear or affine rules and an affine contact law the shared system is affine, and the contact binds at lag T exactly when its row of M^T meets both rings.",
+  "dependencies": [
+    "PROCESS-CONTACT-20261108-001A",
+    "TIME-KNOTS-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A proposal-combining contact whose lag-1 verdict differs from the criterion.",
+    "A self-blind law binding at lag 1 with a constant row or column, or the converse.",
+    "A linear system whose binding differs from its M^T row."
+  ],
+  "lineage": {
+    "home_scope": "SHARED-CONTACT-20261108-001",
+    "epic_path": [
+      "SHARED-CONTACT-20261108-001"
+    ],
+    "parents": [
+      "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/manifest.json",
+      "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/result.json",
+      "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/process_contact_lib.py",
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json",
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/time_knots_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/manifest.json": "6b067d7c48802e98b3e94271821249e947b482cd5d1d1117fb1891a1b5a66d37",
+    "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/result.json": "87bfed1c0c611a7fc4b677ce5724435736044bd578b82e8a25943e0a64439797",
+    "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/process_contact_lib.py": "7ca3c87b03e38a7207e86283f8531650f51c79a0782362012da7266601c04a57",
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json": "834b223da178d1328f4c40087ac1ae0444417c2380d5b89e5fc4ed26c2c7e637",
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/time_knots_lib.py": "377ef3af728ae6a1d047a5df3d46edca1c607d91802719afe5cd005e7981f1c1"
+  },
+  "paths": {
+    "manifest": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/manifest.json",
+    "identity": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/identity.json",
+    "proof": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/proof.md",
+    "check": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/check.py",
+    "result": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/result.json",
+    "directory": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Knots of a finite space-time law of two rings sharing a contact; no physical time or dynamics.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session under the owner's standing research mandate, 2026-11-08.",
+    "status": "proved by hand; finite claims checked by check.py (result.json passed)",
+    "novelty": "known-with-delta: elementary arguments from canalizing functions (Kauffman 1969); the shared-node setting is that of Boolean automata double-cycles (Demongeot, Noual, Sene and coauthors); new as far as found is the reading of the contact gate across time"
+  }
+}

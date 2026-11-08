@@ -1,0 +1,51 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/manifest.json": "Proved",
+     "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/result.json": "passed",
+     "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json": "Proved"
+    }
+   }
+  },
+  "1 Theorem 1: a contact combining the rings' proposals binds at lag 1 exactly when its combiner is XOR or XNOR and neither rule is canalizing at its centre (all 7,744 ordered pairs of rule classes, all 16 combiners, rings of 3 + 3, 3 + 4 and 4 + 5 cells); the reshaping test agrees with process_contact_lib.binds": {
+   "pass": true,
+   "info": {
+    "maps": 371712,
+    "mismatches": 0,
+    "rule classes not canalizing at their centre": 65
+   }
+  },
+  "2 Theorem 2: of all 65,536 self-blind contact laws (rings of 3 + 4 cells), exactly those with no constant row and no constant column bind at lag 1; the parities u + v bind exactly when u and v are nonconstant (196 of 256); the verdict is the same under 300 random ring-rule pairs": {
+   "pass": true,
+   "info": {
+    "laws": 65536,
+    "mismatches": 0,
+    "binding at lag 1": 22874,
+    "parities binding": 196,
+    "random rules agree": true
+   }
+  },
+  "3 Theorem 3: for the 16 linear and affine rules (with partners 150 and 90), both contact families with affine laws, rings of 3 + 4 and 4 + 5 cells and T = 1..12, the shared system is affine and the contact binds at lag T exactly when its row of M^T meets both rings": {
+   "pass": true,
+   "info": {
+    "maps": 43776,
+    "mismatches": 0,
+    "systems not affine": 0
+   }
+  },
+  "4 the state map and the direct simulation of the self-blind contact agree for 6 lags, and the reshaping test agrees with the minimally decisive sets, on 400 random configurations": {
+   "pass": true,
+   "info": {
+    "trials": 400,
+    "dynamics agree": 400,
+    "binding agrees with the decisive sets": 400
+   }
+  }
+ },
+ "seconds": 174.9
+}

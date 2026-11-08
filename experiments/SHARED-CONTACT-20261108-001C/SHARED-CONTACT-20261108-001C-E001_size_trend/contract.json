@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SHARED-CONTACT-20261108-001C-E001",
+  "ticket": "SHARED-CONTACT-20261108-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does persistent binding of a shared contact become more common as the rings grow? For both contact families, on the 88 rule classes with both rings alike at sizes (m, m + 1) for m = 3 to 8, what fraction of configurations binds both rings at every lag?",
+  "public_inputs": {
+    "library": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/shared_contact_lib.py (sha256 c20b47e6c0d8e368735545ef9cddd0f2511087babee3cfa98a3278008dba7cc5): selfblind_state_map, parity_table, fast_binds, classify; process_contact_lib.shared_state_maps.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "configurations": "Proposals: the two parity combiners. Self-blind: the parities u(a_{m-1}, a_1) + u(b_{n-1}, b_1) with the same nonconstant u on both sides (14 laws). The 88 classes, both rings alike, sizes (3, 4) to (8, 9): 8,448 configurations.",
+    "exactness": "Maps are told apart by 16-byte digests and a repeated digest is confirmed by recomputing the earlier map, so a decided verdict is exact at every lag; a configuration whose map has not repeated within 4,096 lags is undecided."
+  },
+  "forbidden_inputs": [
+    "Changing rules, sizes, laws, cap or classes after seeing results",
+    "Dropping configurations"
+  ],
+  "primary_observable": "For each family and size: the fraction of configurations binding at every lag, the number of rules with a persistent law, and the same fraction without the frozen rings (rules 51 and 204); the rules persistent at every size.",
+  "cheapest_meaningful_control": "Configurations shared with PROCESS-CONTACT-20261108-001B and SHARED-CONTACT-20261108-001B must get the same classes; every self-blind configuration must bind at lag 1 (ticket A's Theorem 2).",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The controls.",
+  "decision_or_followup_rule": "H1, frozen: in each family the fraction binding at every lag is larger at 8 + 9 than at 3 + 4, and at least 0.25 at 8 + 9. If it holds, persistent shared binding becomes common on large rings and the rarity is a small-size effect; if the fraction stays below 0.25, the rarity stands to these sizes. Report the trend either way, with the undecided counts.",
+  "stop_rule": "Stop when every declared configuration has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: sizes to 8 + 9 only.",
+    "Two-time knots of the contact only (A30).",
+    "Both rings alike only."
+  ],
+  "feasibility_disclosure": "Before freezing: run.py --pilot timed four configurations at 8 + 9 (65,536 states) at 0.04 to 2.7 s, with 17 to 1,521 lags to the repeat; it prints no verdicts. Ticket B's census (sizes to 5 + 6) had been run and read: self-blind persistence was 3.3, 6.9, 5.0 and 10.5 percent at 3 + 4, 4 + 4, 4 + 5 and 5 + 6."
+}

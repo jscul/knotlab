@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SHARED-CONTACT-20261108-001B-E001",
+  "ticket": "SHARED-CONTACT-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "A contact that is a cell of two rings and combines their proposals binds both rings at every lag in only 44 of 128,128 configurations, and at lag 1 it fails exactly when its own past fixes a proposal (ticket A's Theorem 1). Does a self-blind contact, a cell of both rings whose update u(a_{m-1}, a_1) + v(b_{n-1}, b_1) does not read itself, bind both rings at every lag more often on the same rings?",
+  "public_inputs": {
+    "library": "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/shared_contact_lib.py (sha256 c20b47e6c0d8e368735545ef9cddd0f2511087babee3cfa98a3278008dba7cc5), on proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/process_contact_lib.py (sha256 7ca3c87b03e38a7207e86283f8531650f51c79a0782362012da7266601c04a57): selfblind_state_map, selfblind_maps, parity_table, fast_binds, lags_capped, classify, affine_contact_row.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "configurations": "Both rings alike: the 88 rule classes at sizes (m, n) = (3, 4), (4, 4), (4, 5) and (5, 6), the sizes of PROCESS-CONTACT-20261108-001B; every self-blind parity u + v with u and v among the 14 nonconstant two-input laws (196 laws): 68,992 configurations.",
+    "exactness": "The joint dynamics is iterated until its T-step map repeats, which makes the verdict exact at every lag; a configuration whose map has not repeated within 4,096 lags is reported as undecided.",
+    "classes of behaviour": "as in PROCESS-CONTACT-20261108-001B, plus undecided.",
+    "comparison": "The proposal parities (XOR and XNOR) on the same rings, read from artifacts/PROCESS-CONTACT-20261108-001B/PROCESS-CONTACT-20261108-001B-E001_figure_eight_census/run/rows.json (sha256 f6d36e2ae00d50955c4a381b7bc21127f1a33d7404aa1525b3747049aca5fb05)."
+  },
+  "forbidden_inputs": [
+    "Changing rules, sizes, laws, cap or classes after seeing results",
+    "Dropping configurations"
+  ],
+  "primary_observable": "The fraction of self-blind configurations binding at every lag, against the fraction of proposal-parity configurations on the same rings; the (rule, size) pairs with some persistent law in each family; the class partition by size.",
+  "cheapest_meaningful_control": "Every configuration must bind at lag 1 (ticket A's Theorem 2); for linear and affine rules with affine u and v the first lag without binding must follow the contact's row of M^T (Theorem 3); on 300 sampled rows the direct simulation with process_contact_lib.binds must give the same first failure to lag 8. A census that fails these is not read.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The controls.",
+  "decision_or_followup_rule": "H1, frozen: self-blind parities bind at every lag in at least twice the fraction of proposal parities on the same rings. If H1 holds, the rarity of persistent shared contacts belongs to the contact reading its own past (A31's family), not to shared identity, and A31's reading is narrowed; if not, the rarity stands for shared identity at these sizes. Report the pairs persistent in one family and not the other.",
+  "stop_rule": "Stop when every declared configuration has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: the declared sizes only.",
+    "Two-time knots of the contact only (A30).",
+    "Self-blind parities only, not every self-blind law."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket A's library and check were written and run (all checks passed). run.py --pilot timed five configurations (rules 30, 110, 184 and 90 at 5 + 6, and 54 at 3 + 4) at 0.001 to 0.04 s, with 6 to 657 lags to the repeat; it prints no verdicts. No census was run."
+}

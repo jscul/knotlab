@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SHARED-CONTACT-20261108-001Z-P001",
+  "canonical_id": "SHARED-CONTACT-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "SHARED-CONTACT-20261108-001Z",
+  "proof": "SHARED-CONTACT-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of which shared contacts persist",
+  "status": "Proved",
+  "claim": "Ledger closing SHARED-CONTACT-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, proved; tickets B and C, exploratory experiments), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "SHARED-CONTACT-20261108-001A",
+    "SHARED-CONTACT-20261108-001B",
+    "SHARED-CONTACT-20261108-001C"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, contract or run output changes, or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "SHARED-CONTACT-20261108-001",
+    "epic_path": [
+      "SHARED-CONTACT-20261108-001"
+    ],
+    "parents": [
+      "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/manifest.json",
+      "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/result.json",
+      "experiments/SHARED-CONTACT-20261108-001B/SHARED-CONTACT-20261108-001B-E001_self_blind_census/contract.json",
+      "artifacts/SHARED-CONTACT-20261108-001B/SHARED-CONTACT-20261108-001B-E001_self_blind_census/run/result.json",
+      "experiments/SHARED-CONTACT-20261108-001C/SHARED-CONTACT-20261108-001C-E001_size_trend/contract.json",
+      "artifacts/SHARED-CONTACT-20261108-001C/SHARED-CONTACT-20261108-001C-E001_size_trend/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/manifest.json": "08c8380a62b09285aff78bc0fcf0195bdfb40a0ac7c5d84ce3f609ea3299a022",
+    "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/result.json": "d42494a13e9637cc6a20d93c3c8b39e78afb9018d12ad4441351d2c61b984dcb",
+    "experiments/SHARED-CONTACT-20261108-001B/SHARED-CONTACT-20261108-001B-E001_self_blind_census/contract.json": "efb3ad4686b8312650910d16fdff7dbc1019aa596cfc5d24b670b1cb5b10e84e",
+    "artifacts/SHARED-CONTACT-20261108-001B/SHARED-CONTACT-20261108-001B-E001_self_blind_census/run/result.json": "e027327c008d6ed09a9ba90a5ff17b321ac45e5787f1a9a7aa8b382279c824e9",
+    "experiments/SHARED-CONTACT-20261108-001C/SHARED-CONTACT-20261108-001C-E001_size_trend/contract.json": "b9e2cc60694d991d9a62937694088da1f79d7bbdae1409d7ef7afefdc1d0e08e",
+    "artifacts/SHARED-CONTACT-20261108-001C/SHARED-CONTACT-20261108-001C-E001_size_trend/run/result.json": "25ac21cfe20813dc537dd8362f5f0b60602be5aeb11bff926f5f9d17d992696f"
+  },
+  "paths": {
+    "manifest": "proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's three tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session under the owner's standing research mandate, 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PROCESS-CONTACT-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SHARED-CONTACT-20261108-001A-P001"
+  },
+  "id": "SHARED-CONTACT-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for two rings sharing one contact cell (each non-contact cell updates by its ring's elementary rule, both rings read the contact) and read with K1-K3 as in PROCESS-CONTACT-20261108-001A: (1) a contact that combines the rings' proposals, c(t+1) = g(f_A(a_{m-1}, c, a_1), f_B(b_{n-1}, c, b_1)), binds both rings at lag 1 exactly when g is XOR or XNOR and neither rule is canalizing at its centre; (2) a self-blind contact, c(t+1) = h(a_{m-1}, a_1, b_{n-1}, b_1), binds at lag 1 exactly when no setting of one ring's pair makes h constant in the other's, so the self-blind parities u(a_{m-1}, a_1) + v(b_{n-1}, b_1) bind at lag 1 exactly when u and v are nonconstant; (3) for linear or affine rules with a parity contact the shared system is affine, and the contact binds at lag T exactly when its row of M^T meets both rings. Check exhaustively on small rings against direct simulation and the minimally decisive sets.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SHARED-CONTACT-20261108-001"
+  },
+  "parent": "SHARED-CONTACT-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08: a proposal-combining shared contact binds at lag 1 exactly when its combiner is a parity and neither rule is canalizing at its centre; a self-blind contact h(a_{m-1}, a_1, b_{n-1}, b_1) binds at lag 1 exactly when h has no constant row or column (22,874 of 65,536 laws; parities u + v exactly when u, v nonconstant); linear systems bind at lag T exactly when the contact's row of M^T meets both rings. Checked exhaustively by check.py.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "When a shared contact binds at the first step"
+}

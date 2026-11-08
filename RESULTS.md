@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**231 current results** and 5 superseded ones, from 163 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**232 current results** and 5 superseded ones, from 164 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 13 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 14 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 163 epics with their closures
+- [Epics](#epics): all 164 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -73,6 +73,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · A contact binds two processes exactly when it is a parity of two remembering contact cells** (`PROCESS-CONTACT-20261108-001-D001`).
   Two rings, each running an elementary cellular automaton, and one contact cell that reads one cell of each and feeds nothing back, written as one space-time law. The contact binds both rings at lag T, every minimally decisive set of its value c(T) meeting both, exactly when neither ring's first row with the contact's own first value decides c(T), which is also exactly when forgetting either ring leaves c(T) free: the contact gate's two-sided essentiality and loss under erasure, read across time. The contact sees each ring only through the histories that ring can show at its contact cell. A memoryless contact binds exactly when it is XOR or XNOR of two contact cells that still depend on their first rows, its knots joining one decisive set of each ring, and a contact with memory binds at lag 1 exactly when it is one of the four parities. Between linear rings the parity contact binds at every lag exactly when neither ring polynomial is nilpotent modulo X^m - 1, which fails only for rules 0 and 255, and for 60, 102 and 90 and their negations on rings of 2^k cells.
   [proof P001](proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/proof.md), [epic closure](proofs/PROCESS-CONTACT-20261108-001Z/PROCESS-CONTACT-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · When a contact shared by two processes binds them at the first step** (`SHARED-CONTACT-20261108-001-D001`).
+  Two rings of at least three cells share one contact cell that both rings read. A contact that combines the two rings' proposals binds both rings at lag 1, every minimally decisive set of c(1) meeting both rings' own cells, exactly when its combiner is XOR or XNOR and neither ring rule is canalizing at its centre; otherwise either the canalizing ring decides alone or the contact's own first value fixes a proposal. A self-blind contact h(a_{m-1}, a_1, b_{n-1}, b_1), which both rings read but which does not read itself, binds at lag 1 exactly when its 4 x 4 table has no constant row and no constant column (22,874 of the 65,536 laws), so its parities u(a_{m-1}, a_1) + v(b_{n-1}, b_1) bind exactly when u and v are nonconstant. With linear or affine rings and an affine contact law the shared system is affine, and the contact binds at lag T exactly when the support of its row of M^T meets both rings.
+  [proof P001](proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/proof.md), [epic closure](proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Knots across time are minimal decisive sets; pairwise memory is exactly the single ANDs and ORs** (`TIME-KNOTS-20261107-001-D001`).
   Written as its space-time law, a deterministic process is a static law on its trajectories, and its knots joining a cell's value after T steps to the first row are exactly that value with the minimally decisive sets of two or more past cells: the sets that, set suitably, fix the future value while no smaller set does. A single deciding cell gives a tie. A nonconstant future value has no knot across time exactly when it is a single conjunction or disjunction of literals, so a process remembers its past only pairwise exactly then. A linear rule with polynomial p has one two-time knot per lag, the support of p^T plus the cell, with |supp p| + 1 places at every lag 2^k; through intermediate rows Ledrappier's law gives 2 + w(T) inside the light cone for T <= 6, and the least knot leaves the light cone at T = 7. In one step of Life the knots are the 70 sets of four neighbours, and the cell's own present is in none.
   *Qualification pending: the third sentence holds for knots joining a future value to the first row. Through intermediate rows a process whose every future value is an AND can still knot two times: rule 128 never shows 1 0 1 after a step, so x(1, 1) and x(2, 4) on force x(1, 2) on, and rules 136 and 160 do the same (see the correction in the TIME-KNOTS-20261107-001 decision note).*
@@ -986,5 +989,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Uniform laws and the spheres they can close into (`UNIFORM-SPHERES-20261107-001`) | [closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-SPHERES-20261107-001/) |
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
 | 2026-11-08 | Knots between processes: a contact binds two processes exactly when it is a parity, and sharing it costs persistence (`PROCESS-CONTACT-20261108-001`) | [closure](proofs/PROCESS-CONTACT-20261108-001Z/PROCESS-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CONTACT-20261108-001/) |
+| 2026-11-08 | Which shared contacts persist: a fifth to a quarter on larger rings (`SHARED-CONTACT-20261108-001`) | [closure](proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SHARED-CONTACT-20261108-001/) |
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |
 

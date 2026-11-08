@@ -1,0 +1,96 @@
+{
+ "experiment": "SHARED-CONTACT-20261108-001B-E001",
+ "configurations": 68992,
+ "controls": {
+  "linear and affine rules with affine u, v follow the M^T row": true,
+  "every configuration binds at lag 1 (Theorem 2)": true,
+  "direct simulation and process_contact_lib.binds agree on 300 sampled rows to lag 8": true
+ },
+ "controls_ok": true,
+ "classes": {
+  "binding decays": 49132,
+  "binds at every lag": 4428,
+  "binds at recurring lags only": 13628,
+  "binds from some lag on": 1656,
+  "undecided": 148
+ },
+ "classes by size": {
+  "3 + 4": {
+   "binding decays": 13816,
+   "binds at recurring lags only": 2788,
+   "binds at every lag": 572,
+   "binds from some lag on": 72
+  },
+  "4 + 4": {
+   "binding decays": 12494,
+   "binds at recurring lags only": 3110,
+   "binds at every lag": 1196,
+   "binds from some lag on": 448
+  },
+  "4 + 5": {
+   "binding decays": 12216,
+   "binds at recurring lags only": 3672,
+   "binds from some lag on": 498,
+   "binds at every lag": 854,
+   "undecided": 8
+  },
+  "5 + 6": {
+   "binding decays": 10606,
+   "binds at recurring lags only": 4058,
+   "binds at every lag": 1806,
+   "binds from some lag on": 638,
+   "undecided": 140
+  }
+ },
+ "self-blind configurations binding at every lag": 4428,
+ "fraction binding at every lag: self-blind parities": 0.06418,
+ "fraction binding at every lag: proposal parities on the same rings (PROCESS-CONTACT-20261108-001B)": 0.04545,
+ "H1 (self-blind at least twice the proposal fraction)": false,
+ "(rule, size) pairs with some persistent law: self-blind": 157,
+ "(rule, size) pairs with some persistent law: proposals": 22,
+ "pairs persistent under proposals but under no self-blind law": [
+  [
+   94,
+   5,
+   6
+  ]
+ ],
+ "rules with a persistent self-blind law at every size": [
+  12,
+  25,
+  51,
+  54,
+  60,
+  76,
+  108,
+  126,
+  140,
+  200,
+  204,
+  232
+ ],
+ "persistent self-blind laws per rule (top 20)": {
+  "51": 784,
+  "204": 784,
+  "200": 264,
+  "76": 240,
+  "232": 204,
+  "108": 180,
+  "77": 172,
+  "23": 164,
+  "12": 126,
+  "178": 116,
+  "19": 106,
+  "60": 96,
+  "126": 88,
+  "140": 64,
+  "54": 60,
+  "105": 48,
+  "150": 48,
+  "156": 48,
+  "22": 42,
+  "44": 42
+ },
+ "undecided within the cap": 148,
+ "seconds": 11.2
+}

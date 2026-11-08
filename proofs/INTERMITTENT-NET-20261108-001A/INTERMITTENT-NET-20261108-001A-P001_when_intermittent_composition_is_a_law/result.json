@@ -1,0 +1,41 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json": "Proved",
+     "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json": "passed"
+    }
+   }
+  },
+  "1 Theorem 1: on 264 random chains (every rule class three times), the verdicts at a random cycle lag T recur at T + P, T + 2P and T + 3P when the T-step maps are recomputed from scratch, so a strobed chain composes at every observed lag or at none": {
+   "pass": true,
+   "info": {
+    "chains": 264,
+    "decided": 263,
+    "agree": 263
+   }
+  },
+  "2 Theorem 2: for the 16 linear and affine rules with affine contact laws (both families) at the four census sizes, at every lag up to the repeat, composition holds exactly when c2 depends on both end rings": {
+   "pass": true,
+   "info": {
+    "chains": 512,
+    "decided": 512,
+    "lags": 6016,
+    "agree": 6016
+   }
+  },
+  "3 Theorem 3: in all 2,816 chains of 3/4/3 and 4/4/4 cells, at every lag computed, composition implies that c2 depends on both end rings": {
+   "pass": true,
+   "info": {
+    "chains": 2816,
+    "lags": 75114,
+    "holding": 75114
+   }
+  }
+ },
+ "seconds": 9.1
+}

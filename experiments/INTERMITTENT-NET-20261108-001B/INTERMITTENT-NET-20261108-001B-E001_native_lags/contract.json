@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "INTERMITTENT-NET-20261108-001B-E001",
+  "ticket": "INTERMITTENT-NET-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "In chains of three rings that compose at some lags of their eventual cycle but not at all, are the composing lags singled out by the chain itself, so that intermittent composition is native rather than a phase chosen by an observer?",
+  "public_inputs": {
+    "library": "proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/intermittent_lib.py (sha256 53ef4d7c14f82253e20bd78c76eb9d0b6dc6140f16d2eb0391850e96facd376d): profile, cycle; on PROCESS-CHAIN-20261108-001A's chain_lib.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "configurations": "All three rings on one rule (the 88 classes), the same law at both contacts (the two proposal parities and the 14 self-blind parities with u = v), sizes (3, 4, 3), (4, 4, 4), (4, 5, 4), (4, 6, 4) and (5, 6, 5), the contacts k = mB // 2 apart on ring B: 7,040 chains. Exact over the eventual cycle; chains not repeating within 4,096 lags are undecided.",
+    "measures": "Over the eventual cycle: the lags where the chain composes (c2 binds A and C), where c2 depends on both end rings (arrival), and where both contacts bind their own pairs."
+  },
+  "forbidden_inputs": [
+    "Changing rules, sizes, laws, cap or measures after seeing results",
+    "Dropping configurations"
+  ],
+  "primary_observable": "Among the chains composing at some cycle lag: how many satisfy H1 and H2, so that their composing lags are singled out by the chain, and how many rule-law groups compose at every decided size (H3).",
+  "cheapest_meaningful_control": "Linear and affine chains with affine laws must satisfy the arrival law (ticket A's Theorem 2). A census that fails it is not read.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control.",
+  "decision_or_followup_rule": "Three frozen hypotheses, over the chains composing at some cycle lag. H1 (arrival): the composing cycle lags are exactly the lags where c2 depends on both end rings. H2 (coexistence): both contacts bind at every composing cycle lag. H3 (transport): a rule and law that compose at one size compose at every size where the chain is decided. If all three hold, intermittent composition is native here: its lags are fixed by arrival, it coexists with both contacts, and it survives transport across sizes. Otherwise report each failure and which part is not native. The stress test repeats the measures at (5, 7, 5) and (5, 8, 5).",
+  "stop_rule": "Stop when every declared chain has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: the declared chains only.",
+    "Two-time knots only (A30).",
+    "Transport is tested only across the declared sizes."
+  ],
+  "feasibility_disclosure": "Before freezing: PROCESS-CHAIN-20261108-001B's census and its post hoc measure had been read (195 chains composing at recurring lags at four of these sizes, 154 with both contacts binding at those lags). Ticket A's check, which profiles chains with the same library, ran in under a minute. This census was not run."
+}

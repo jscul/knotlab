@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PLAIN-TIME-20261108-001A-E001",
+  "ticket": "PLAIN-TIME-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "For which networks of persistent contacts (equally spaced rule-60 rings with law (12, 12) contacts) is the plain first need always on time, kappa(r, c) = delta(r, c) for every ring r and contact c? Among orientably regular maps, tori of every shape and loops, which are on time, and does the answer follow the uniqueness of shortest routes or the map's curvature?",
+  "public_inputs": {
+    "library": "plain_lib.py in this folder, on distance_lib.py of DISTANCE-20261108-001A (sha256 ad7c26626e04edfe80cb6872fd2be92f2ae9d5b25e462c85872a5f7ab4bbe1dd) and the libraries under it.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Orientably regular maps from the groups A4, S4, SL(2,3), GL(2,3), PSL(2,5), PGL(2,5), SL(2,5), S5, PSL(2,7), PGL(2,7), SL(2,7), A6, GL(2,5), S6, PSL(2,11), PGL(2,11), PSL(2,13), PGL(2,13), PSL(2,17), A7, PSL(2,19), PSL(2,23), PSL(2,29) and the dihedral groups of order 6 to 60: every pair of an involution y (one per conjugacy class) and an element x of order at least 2 with <x, y> = G and y not in <x>, one x per orbit of y's centraliser; maps with identical readings merged and counted. Tori {4,4}_(b,c) of index b^2 + c^2 from 3 to 400, {3,6}_(b,c) and {6,3}_(b,c) of index b^2 + bc + c^2 from 3 to 300 and to 200 (b >= 1, 0 <= c <= b). Loops of 2 to 60 rings and two rings sharing 2 to 60 contacts. Every ring g cells with contacts equally spaced (the readings do not depend on g: DISTANCE-20261108-001B, Theorem 4).",
+    "reading": "For one target contact (the rotations of a regular map act transitively on contacts, checked on the pilot's maps): the directed distance and the number of shortest routes from every contact, by breadth-first search, and the least odd walk length, by rows mod 2 until their span closes (exact). A ring is on time for the target when an odd number of shortest routes arrive from one of its contacts at its distance, late when its least odd walk length is larger, never when it has none. A map is on time when every ring is."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypotheses after seeing results",
+    "Dropping maps"
+  ],
+  "primary_observable": "For every map: its type (m contacts per ring, f per face), genus, rings, the contact graph's diameter, the length of its shortest pair of distinct shortest routes with common ends, the first distance with an even route count, and the numbers of rings late and never (and of contacts, for the contact-to-contact reading).",
+  "cheapest_meaningful_control": "DISTANCE-20261108-001B's check 5 (the cone and its parity on 21 networks) and the pilot: the group construction agrees with distance_lib.regular_map read through loopnet_lib on every map of A4 and S4, and every target contact gives the same readings on tori of index at most 13, loops and two rings sharing up to 8 contacts.",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The summary by family and genus, and the two hypothesis lists.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1 (unique routes): a map is on time exactly when its shortest routes are unique up to its diameter; counterexamples are listed. H2 (curvature): every map of genus 0 and every map of genus at least 2 is on time, and tori are on time only at small sizes. If H2 holds, the criterion to prove is curvature; if a map of genus at least 2 fails, the first such (fewest rings) is the regular map that fails, and the ring that fails and its route counts are examined for the reason. If H1 holds, the criterion is uniqueness of shortest routes.",
+  "stop_rule": "Stop when every map of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only.",
+    "Regular maps, tori and loops only; irregular networks of persistent contacts are not sampled.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing: DISTANCE-20261108-001 had found every ring-contact pair on time on the five Platonic networks, the genus-2 maps of GL(2,3) of types {3,8} and {8,3} and the genus-3 maps of PSL(2,7) of types {7,3} and {3,7}, and late or never pairs on square tori of side 5 to 8, triangular tori of side 5 to 7 and honeycomb tori of side 4 to 6, the triangular torus of side 4 and the honeycomb torus of side 3 being on time; the coordinator reported loops of 5 and 6 rings on time. The pilot computed, without printing, the readings of the maps of A4 and S4, tori of index at most 13 and loops up to 8, to check the construction, and timed one map of PSL(2,17) and one of PSL(2,19) (verdicts not printed)."
+}

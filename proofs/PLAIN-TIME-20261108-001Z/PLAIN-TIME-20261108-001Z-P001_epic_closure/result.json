@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PLAIN-TIME-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "PLAIN-TIME-20261108-001Z",
+ "proof": "PLAIN-TIME-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing PLAIN-TIME-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, the map census, supported; ticket B, proved), and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/contract.json": "Frozen",
+   "artifacts/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/run/result.json": "run output",
+   "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json": "Proved",
+   "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

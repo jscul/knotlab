@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLAIN-TIME-20261108-001Z-P001",
+  "canonical_id": "PLAIN-TIME-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "PLAIN-TIME-20261108-001Z",
+  "proof": "PLAIN-TIME-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of distance without freezing",
+  "status": "Proved",
+  "claim": "Ledger closing PLAIN-TIME-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, the map census, supported; ticket B, proved), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PLAIN-TIME-20261108-001A",
+    "PLAIN-TIME-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PLAIN-TIME-20261108-001",
+    "epic_path": [
+      "PLAIN-TIME-20261108-001"
+    ],
+    "parents": [
+      "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/contract.json",
+      "artifacts/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/run/result.json",
+      "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json",
+      "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/contract.json": "df868cf441b9df94ab09ae37fae0463ca6525590dbb5741ab504e41dbdb085c1",
+    "artifacts/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/run/result.json": "345676c4a4227bb88deed62b6ce7f8df0cb8e45d879136d642629605f7236309",
+    "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json": "603257295514c890d7114b2b0866127cb84b1efcee560a64d987b1173a173936",
+    "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/result.json": "45cff5bad4a59a0e415ecb67eeac0c2570b5aba603c1be75fe1ebe0d80be0819"
+  },
+  "paths": {
+    "manifest": "proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's ticket; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

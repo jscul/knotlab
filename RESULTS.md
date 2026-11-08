@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**255 current results** and 5 superseded ones, from 195 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**256 current results** and 5 superseded ones, from 196 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 29 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 30 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 195 epics with their closures
+- [Epics](#epics): all 196 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -103,6 +103,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · A path of contacts across time has a light cone, and on affine substrates every verdict is two row sequences per contact** (`NATIVE-PATH-20261108-001-D001`).
   In a path of rings joined by shared contacts, the last contact cannot depend on the first ring before the lag one past the summed distances between the contacts of each middle ring, so the ends are bound only from then. For linear or affine rules and affine laws, a contact binds two rings at lag T exactly when its row of M^T meets both, so iterating rows until they repeat decides every verdict.
   [proof P001](proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/proof.md), [epic closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Only the sphere reads distance plainly: the plain first need fails on every flat torus but 26 and beyond a horizon on curved tilings** (`PLAIN-TIME-20261108-001-D001`).
+  Without freezing, every loop of rings, pair of rings and Platonic network reads distance at every size, while flat and hyperbolic tilings hide it beyond a horizon set by ring and face sizes, so exactly 26 tori read it. The smallest regular map that fails, a 13-ring twisted square torus, reads it in its mirror image, so no criterion by type, genus, curvature or size decides finite maps.
+  [proof P001](proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/proof.md), [epic closure](proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Listening contacts never compose, and a shared chain carries the far ring only after crossing the middle ring** (`PROCESS-CHAIN-20261108-001-D001`).
   In a chain of three rings, listening contacts, which read their rings and feed nothing back, never let the far contact depend on the far ring, so composition needs a contact the middle ring reads. With shared contacts the far contact cannot depend on the first ring before lag d + 1, d the contacts' distance on the middle ring, and with linear or affine rules a contact binds two rings exactly when its row of M^T meets both.
   [proof P001](proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/proof.md), [epic closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md)
@@ -1081,6 +1084,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Does one hidden bit per tile force the pinwheel? (`ONE-BIT-20261108-001`) | [closure](proofs/ONE-BIT-20261108-001Z/ONE-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/ONE-BIT-20261108-001/) |
 | 2026-11-08 | Native paths that survive growth (`PATH-GROWTH-20261108-001`) | [closure](proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PATH-GROWTH-20261108-001/) |
 | 2026-11-08 | Paths through mixed middle rings (`PATH-HYBRID-20261108-001`) | [closure](proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PATH-HYBRID-20261108-001/) |
+| 2026-11-08 | Distance without freezing (`PLAIN-TIME-20261108-001`) | [closure](proofs/PLAIN-TIME-20261108-001Z/PLAIN-TIME-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PLAIN-TIME-20261108-001/) |
 | 2026-11-08 | Two contacts across time: persistent contacts do not compose (`PROCESS-CHAIN-20261108-001`) | [closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CHAIN-20261108-001/) |
 | 2026-11-08 | Knots between processes: a contact binds two processes exactly when it is a parity, and sharing it costs persistence (`PROCESS-CONTACT-20261108-001`) | [closure](proofs/PROCESS-CONTACT-20261108-001Z/PROCESS-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CONTACT-20261108-001/) |
 | 2026-11-08 | Composition at recurring lags across sizes (`RECUR-PATH-20261108-001`) | [closure](proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/RECUR-PATH-20261108-001/) |

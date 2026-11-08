@@ -1,0 +1,1334 @@
+{
+ "ticket": "PLAIN-TIME-20261108-001B",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/contract.json": "df868cf441b9df94ab09ae37fae0463ca6525590dbb5741ab504e41dbdb085c1",
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/run.py": "12e29ced1dd83607598bae32b077d1cfa22a70737e2f97ef9498672bd2f562c5",
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json": "cfa8fa26d7df3f5e629fb573d241bac4589e378535bd24aee4d061df6406c45d"
+   }
+  },
+  "1 the sphere: loops of 2 to 200 rings and two rings sharing 2 to 200 contacts, and every spherical map of A4, S4 and A5, are on time": {
+   "pass": true,
+   "info": {
+    "loops and pairs late": [],
+    "spherical group maps": {
+     "A 4 (3,3)": true,
+     "S 4 (3,4)": true,
+     "S 4 (4,3)": true,
+     "PSL(2,p) 5 (3,5)": true,
+     "PSL(2,p) 5 (5,3)": true
+    }
+   }
+  },
+  "2 the square plane: the first late ring is at distance 4, its only closest contact reached by 2 shortest routes": {
+   "pass": true,
+   "info": {
+    "first late rings (distance, contacts (distance, routes), ring)": [
+     [
+      4,
+      [
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        6,
+        3
+       ],
+       [
+        7,
+        6
+       ]
+      ],
+      [
+       2,
+       40
+      ]
+     ],
+     [
+      4,
+      [
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        6,
+        3
+       ],
+       [
+        7,
+        6
+       ]
+      ],
+      [
+       40,
+       1
+      ]
+     ],
+     [
+      5,
+      [
+       [
+        5,
+        2
+       ],
+       [
+        6,
+        3
+       ],
+       [
+        7,
+        3
+       ],
+       [
+        8,
+        6
+       ]
+      ],
+      [
+       2,
+       2
+      ]
+     ],
+     [
+      5,
+      [
+       [
+        5,
+        2
+       ],
+       [
+        6,
+        3
+       ],
+       [
+        7,
+        3
+       ],
+       [
+        8,
+        6
+       ]
+      ],
+      [
+       40,
+       39
+      ]
+     ]
+    ],
+    "triangular plane first late": [
+     [
+      6,
+      [
+       [
+        6,
+        2
+       ],
+       [
+        7,
+        3
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        9,
+        3
+       ],
+       [
+        10,
+        6
+       ]
+      ],
+      [
+       30,
+       1
+      ]
+     ],
+     [
+      6,
+      [
+       [
+        6,
+        2
+       ],
+       [
+        7,
+        3
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        9,
+        3
+       ],
+       [
+        10,
+        6
+       ]
+      ],
+      [
+       33,
+       30
+      ]
+     ]
+    ],
+    "honeycomb plane first late": [
+     [
+      5,
+      [
+       [
+        5,
+        2
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        7,
+        3
+       ]
+      ],
+      [
+       [
+        -28,
+        29
+       ],
+       0
+      ]
+     ],
+     [
+      5,
+      [
+       [
+        5,
+        2
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        7,
+        3
+       ]
+      ],
+      [
+       [
+        30,
+        0
+       ],
+       1
+      ]
+     ]
+    ]
+   }
+  },
+  "3 computed: first late distance of the covers, two primes each; the flat covers repeat check 2, spherical ones have none": {
+   "pass": true,
+   "info": {
+    "(3,3)": {
+     "radius": 8,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 6
+    },
+    "(3,4)": {
+     "radius": 8,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 12
+    },
+    "(4,3)": {
+     "radius": 8,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 12
+    },
+    "(3,5)": {
+     "radius": 10,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 30
+    },
+    "(5,3)": {
+     "radius": 10,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 30
+    },
+    "(4,4)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 4,
+     "ball contacts": 157
+    },
+    "(6,3)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 6,
+     "ball contacts": 157
+    },
+    "(3,6)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 5,
+     "ball contacts": 157
+    },
+    "(3,7)": {
+     "radius": 16,
+     "primes agree": true,
+     "first late": 13,
+     "ball contacts": 1463
+    },
+    "(7,3)": {
+     "radius": 17,
+     "primes agree": true,
+     "first late": 14,
+     "ball contacts": 1985
+    },
+    "(3,8)": {
+     "radius": 18,
+     "primes agree": true,
+     "first late": 15,
+     "ball contacts": 6421
+    },
+    "(8,3)": {
+     "radius": 19,
+     "primes agree": true,
+     "first late": 16,
+     "ball contacts": 9341
+    },
+    "(3,9)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 7,
+     "ball contacts": 825
+    },
+    "(9,3)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 8,
+     "ball contacts": 825
+    },
+    "(3,10)": {
+     "radius": 21,
+     "primes agree": true,
+     "first late": 19,
+     "ball contacts": 49963
+    },
+    "(10,3)": {
+     "radius": 22,
+     "primes agree": true,
+     "first late": 20,
+     "ball contacts": 77273
+    },
+    "(3,11)": {
+     "radius": 23,
+     "primes agree": true,
+     "first late": 21,
+     "ball contacts": 152545
+    },
+    "(11,3)": {
+     "radius": 24,
+     "primes agree": true,
+     "first late": 22,
+     "ball contacts": 239385
+    },
+    "(3,12)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 9,
+     "ball contacts": 1113
+    },
+    "(12,3)": {
+     "radius": 13,
+     "primes agree": true,
+     "first late": 10,
+     "ball contacts": 1765
+    },
+    "(4,5)": {
+     "radius": 16,
+     "primes agree": true,
+     "first late": 13,
+     "ball contacts": 6631
+    },
+    "(5,4)": {
+     "radius": 16,
+     "primes agree": true,
+     "first late": 13,
+     "ball contacts": 6631
+    },
+    "(4,6)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 9,
+     "ball contacts": 2257
+    },
+    "(6,4)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": 9,
+     "ball contacts": 2257
+    },
+    "(4,7)": {
+     "radius": 21,
+     "primes agree": true,
+     "first late": 19,
+     "ball contacts": 464689
+    },
+    "(7,4)": {
+     "radius": 21,
+     "primes agree": true,
+     "first late": 19,
+     "ball contacts": 464689
+    },
+    "(4,8)": {
+     "radius": 10,
+     "primes agree": true,
+     "first late": 7,
+     "ball contacts": 1053
+    },
+    "(8,4)": {
+     "radius": 11,
+     "primes agree": true,
+     "first late": 7,
+     "ball contacts": 1879
+    },
+    "(5,5)": {
+     "radius": 9,
+     "primes agree": true,
+     "first late": 5,
+     "ball contacts": 505
+    },
+    "(6,6)": {
+     "radius": 9,
+     "primes agree": true,
+     "first late": 6,
+     "ball contacts": 799
+    },
+    "(8,8)": {
+     "radius": 10,
+     "primes agree": true,
+     "first late": 8,
+     "ball contacts": 1959
+    },
+    "(4,10)": {
+     "radius": 14,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 12879
+    },
+    "(10,4)": {
+     "radius": 14,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 12879
+    },
+    "(6,8)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 6901
+    },
+    "(8,6)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 6901
+    },
+    "(6,9)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 7121
+    },
+    "(9,6)": {
+     "radius": 12,
+     "primes agree": true,
+     "first late": null,
+     "ball contacts": 7121
+    },
+    "(5,6)": {
+     "radius": 22,
+     "primes agree": true,
+     "first late": 21,
+     "ball contacts": 1824683
+    },
+    "(6,5)": {
+     "radius": 22,
+     "primes agree": true,
+     "first late": 21,
+     "ball contacts": 1824683
+    }
+   }
+  },
+  "4 every torus: the systole lemma's tori (index at least 72, 81 and 43) are all late; the on-time tori, both chiralities": {
+   "pass": true,
+   "info": {
+    "tori read": {
+     "square": 312,
+     "triangular": 178,
+     "honeycomb": 122
+    },
+    "on time": {
+     "square": [
+      {
+       "lattice": [
+        2,
+        0,
+        2
+       ],
+       "vector": [
+        -2,
+        0
+       ],
+       "index": 4,
+       "rings": 4
+      },
+      {
+       "lattice": [
+        5,
+        2,
+        1
+       ],
+       "vector": [
+        -2,
+        -1
+       ],
+       "index": 5,
+       "rings": 5
+      },
+      {
+       "lattice": [
+        5,
+        3,
+        1
+       ],
+       "vector": [
+        -2,
+        1
+       ],
+       "index": 5,
+       "rings": 5
+      },
+      {
+       "lattice": [
+        4,
+        2,
+        2
+       ],
+       "vector": [
+        -2,
+        -2
+       ],
+       "index": 8,
+       "rings": 8
+      },
+      {
+       "lattice": [
+        3,
+        0,
+        3
+       ],
+       "vector": [
+        -3,
+        0
+       ],
+       "index": 9,
+       "rings": 9
+      },
+      {
+       "lattice": [
+        10,
+        3,
+        1
+       ],
+       "vector": [
+        -3,
+        -1
+       ],
+       "index": 10,
+       "rings": 10
+      },
+      {
+       "lattice": [
+        10,
+        7,
+        1
+       ],
+       "vector": [
+        -3,
+        1
+       ],
+       "index": 10,
+       "rings": 10
+      },
+      {
+       "lattice": [
+        13,
+        8,
+        1
+       ],
+       "vector": [
+        -3,
+        -2
+       ],
+       "index": 13,
+       "rings": 13
+      },
+      {
+       "lattice": [
+        17,
+        13,
+        1
+       ],
+       "vector": [
+        -4,
+        1
+       ],
+       "index": 17,
+       "rings": 17
+      }
+     ],
+     "triangular": [
+      {
+       "lattice": [
+        3,
+        2,
+        1
+       ],
+       "vector": [
+        -2,
+        -1
+       ],
+       "index": 3,
+       "rings": 3
+      },
+      {
+       "lattice": [
+        2,
+        0,
+        2
+       ],
+       "vector": [
+        -2,
+        -2
+       ],
+       "index": 4,
+       "rings": 4
+      },
+      {
+       "lattice": [
+        7,
+        5,
+        1
+       ],
+       "vector": [
+        -3,
+        -2
+       ],
+       "index": 7,
+       "rings": 7
+      },
+      {
+       "lattice": [
+        7,
+        3,
+        1
+       ],
+       "vector": [
+        -3,
+        -1
+       ],
+       "index": 7,
+       "rings": 7
+      },
+      {
+       "lattice": [
+        3,
+        0,
+        3
+       ],
+       "vector": [
+        -3,
+        -3
+       ],
+       "index": 9,
+       "rings": 9
+      },
+      {
+       "lattice": [
+        6,
+        4,
+        2
+       ],
+       "vector": [
+        -4,
+        -2
+       ],
+       "index": 12,
+       "rings": 12
+      },
+      {
+       "lattice": [
+        13,
+        10,
+        1
+       ],
+       "vector": [
+        -4,
+        -3
+       ],
+       "index": 13,
+       "rings": 13
+      },
+      {
+       "lattice": [
+        13,
+        4,
+        1
+       ],
+       "vector": [
+        -4,
+        -1
+       ],
+       "index": 13,
+       "rings": 13
+      },
+      {
+       "lattice": [
+        4,
+        0,
+        4
+       ],
+       "vector": [
+        -4,
+        -4
+       ],
+       "index": 16,
+       "rings": 16
+      },
+      {
+       "lattice": [
+        19,
+        12,
+        1
+       ],
+       "vector": [
+        -5,
+        -2
+       ],
+       "index": 19,
+       "rings": 19
+      },
+      {
+       "lattice": [
+        21,
+        17,
+        1
+       ],
+       "vector": [
+        -5,
+        -4
+       ],
+       "index": 21,
+       "rings": 21
+      }
+     ],
+     "honeycomb": [
+      {
+       "lattice": [
+        1,
+        0,
+        1
+       ],
+       "vector": [
+        -1,
+        0
+       ],
+       "index": 1,
+       "rings": 2
+      },
+      {
+       "lattice": [
+        3,
+        1,
+        1
+       ],
+       "vector": [
+        -2,
+        1
+       ],
+       "index": 3,
+       "rings": 6
+      },
+      {
+       "lattice": [
+        2,
+        0,
+        2
+       ],
+       "vector": [
+        -2,
+        0
+       ],
+       "index": 4,
+       "rings": 8
+      },
+      {
+       "lattice": [
+        7,
+        4,
+        1
+       ],
+       "vector": [
+        -3,
+        1
+       ],
+       "index": 7,
+       "rings": 14
+      },
+      {
+       "lattice": [
+        7,
+        2,
+        1
+       ],
+       "vector": [
+        -3,
+        2
+       ],
+       "index": 7,
+       "rings": 14
+      },
+      {
+       "lattice": [
+        3,
+        0,
+        3
+       ],
+       "vector": [
+        -3,
+        0
+       ],
+       "index": 9,
+       "rings": 18
+      }
+     ]
+    },
+    "lemma tori on time": []
+   }
+  },
+  "5 computed: the cover's first late ring comes at tau + 1 (tau + 2 when faces are triangles and rings larger), tau = L - L/m - L/f + 1 with L = lcm(m, f); a cover with none to its radius has law at least the radius": {
+   "pass": true,
+   "info": {
+    "(4,4)": {
+     "first late": 4,
+     "radius": 12,
+     "tau": 3,
+     "law": 4,
+     "agrees": true
+    },
+    "(6,3)": {
+     "first late": 6,
+     "radius": 12,
+     "tau": 4,
+     "law": 6,
+     "agrees": true
+    },
+    "(3,6)": {
+     "first late": 5,
+     "radius": 12,
+     "tau": 4,
+     "law": 5,
+     "agrees": true
+    },
+    "(3,7)": {
+     "first late": 13,
+     "radius": 16,
+     "tau": 12,
+     "law": 13,
+     "agrees": true
+    },
+    "(7,3)": {
+     "first late": 14,
+     "radius": 17,
+     "tau": 12,
+     "law": 14,
+     "agrees": true
+    },
+    "(3,8)": {
+     "first late": 15,
+     "radius": 18,
+     "tau": 14,
+     "law": 15,
+     "agrees": true
+    },
+    "(8,3)": {
+     "first late": 16,
+     "radius": 19,
+     "tau": 14,
+     "law": 16,
+     "agrees": true
+    },
+    "(3,9)": {
+     "first late": 7,
+     "radius": 12,
+     "tau": 6,
+     "law": 7,
+     "agrees": true
+    },
+    "(9,3)": {
+     "first late": 8,
+     "radius": 12,
+     "tau": 6,
+     "law": 8,
+     "agrees": true
+    },
+    "(3,10)": {
+     "first late": 19,
+     "radius": 21,
+     "tau": 18,
+     "law": 19,
+     "agrees": true
+    },
+    "(10,3)": {
+     "first late": 20,
+     "radius": 22,
+     "tau": 18,
+     "law": 20,
+     "agrees": true
+    },
+    "(3,11)": {
+     "first late": 21,
+     "radius": 23,
+     "tau": 20,
+     "law": 21,
+     "agrees": true
+    },
+    "(11,3)": {
+     "first late": 22,
+     "radius": 24,
+     "tau": 20,
+     "law": 22,
+     "agrees": true
+    },
+    "(3,12)": {
+     "first late": 9,
+     "radius": 12,
+     "tau": 8,
+     "law": 9,
+     "agrees": true
+    },
+    "(12,3)": {
+     "first late": 10,
+     "radius": 13,
+     "tau": 8,
+     "law": 10,
+     "agrees": true
+    },
+    "(4,5)": {
+     "first late": 13,
+     "radius": 16,
+     "tau": 12,
+     "law": 13,
+     "agrees": true
+    },
+    "(5,4)": {
+     "first late": 13,
+     "radius": 16,
+     "tau": 12,
+     "law": 13,
+     "agrees": true
+    },
+    "(4,6)": {
+     "first late": 9,
+     "radius": 12,
+     "tau": 8,
+     "law": 9,
+     "agrees": true
+    },
+    "(6,4)": {
+     "first late": 9,
+     "radius": 12,
+     "tau": 8,
+     "law": 9,
+     "agrees": true
+    },
+    "(4,7)": {
+     "first late": 19,
+     "radius": 21,
+     "tau": 18,
+     "law": 19,
+     "agrees": true
+    },
+    "(7,4)": {
+     "first late": 19,
+     "radius": 21,
+     "tau": 18,
+     "law": 19,
+     "agrees": true
+    },
+    "(4,8)": {
+     "first late": 7,
+     "radius": 10,
+     "tau": 6,
+     "law": 7,
+     "agrees": true
+    },
+    "(8,4)": {
+     "first late": 7,
+     "radius": 11,
+     "tau": 6,
+     "law": 7,
+     "agrees": true
+    },
+    "(5,5)": {
+     "first late": 5,
+     "radius": 9,
+     "tau": 4,
+     "law": 5,
+     "agrees": true
+    },
+    "(6,6)": {
+     "first late": 6,
+     "radius": 9,
+     "tau": 5,
+     "law": 6,
+     "agrees": true
+    },
+    "(8,8)": {
+     "first late": 8,
+     "radius": 10,
+     "tau": 7,
+     "law": 8,
+     "agrees": true
+    },
+    "(4,10)": {
+     "first late": null,
+     "radius": 14,
+     "tau": 14,
+     "law": 15,
+     "agrees": true
+    },
+    "(10,4)": {
+     "first late": null,
+     "radius": 14,
+     "tau": 14,
+     "law": 15,
+     "agrees": true
+    },
+    "(6,8)": {
+     "first late": null,
+     "radius": 12,
+     "tau": 18,
+     "law": 19,
+     "agrees": true
+    },
+    "(8,6)": {
+     "first late": null,
+     "radius": 12,
+     "tau": 18,
+     "law": 19,
+     "agrees": true
+    },
+    "(6,9)": {
+     "first late": null,
+     "radius": 12,
+     "tau": 14,
+     "law": 15,
+     "agrees": true
+    },
+    "(9,6)": {
+     "first late": null,
+     "radius": 12,
+     "tau": 14,
+     "law": 15,
+     "agrees": true
+    },
+    "(5,6)": {
+     "first late": 21,
+     "radius": 22,
+     "tau": 20,
+     "law": 21,
+     "agrees": true
+    },
+    "(6,5)": {
+     "first late": 21,
+     "radius": 22,
+     "tau": 20,
+     "law": 21,
+     "agrees": true
+    }
+   }
+  },
+  "6 the twisted square torus {4,4}_(2,3), 13 rings, has one late ring per contact at delta 4 (first need at kappa 5, lag 5g + 1, cell level); its mirror image {4,4}_(3,2) is on time": {
+   "pass": true,
+   "info": {
+    "(2,3), g = 2": {
+     "rings": 13,
+     "contacts": 26,
+     "late pairs": 26,
+     "cell mismatches": 0,
+     "late": {
+      "delta 4, kappa 5, lag 11": 26
+     }
+    },
+    "(2,3), g = 3": {
+     "rings": 13,
+     "contacts": 26,
+     "late pairs": 26,
+     "cell mismatches": 0,
+     "late": {
+      "delta 4, kappa 5, lag 16": 26
+     }
+    },
+    "(3,2), g = 2": {
+     "rings": 13,
+     "contacts": 26,
+     "late pairs": 0,
+     "cell mismatches": 0,
+     "late": {}
+    },
+    "(3,2), g = 3": {
+     "rings": 13,
+     "contacts": 26,
+     "late pairs": 0,
+     "cell mismatches": 0,
+     "late": {}
+    }
+   }
+  },
+  "7 computed: in the cover the first contact with two shortest routes comes at tau = L - L/m - L/f + 1": {
+   "pass": true,
+   "info": {
+    "(4,4)": {
+     "tau": 3,
+     "first tie (two primes)": [
+      [
+       3,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       3,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(6,3)": {
+     "tau": 4,
+     "first tie (two primes)": [
+      [
+       4,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       4,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(3,6)": {
+     "tau": 4,
+     "first tie (two primes)": [
+      [
+       4,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       4,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(7,3)": {
+     "tau": 12,
+     "first tie (two primes)": [
+      [
+       12,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       12,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(3,7)": {
+     "tau": 12,
+     "first tie (two primes)": [
+      [
+       12,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       12,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(6,4)": {
+     "tau": 8,
+     "first tie (two primes)": [
+      [
+       8,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       8,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(4,6)": {
+     "tau": 8,
+     "first tie (two primes)": [
+      [
+       8,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       8,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(5,5)": {
+     "tau": 4,
+     "first tie (two primes)": [
+      [
+       4,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       4,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(8,4)": {
+     "tau": 6,
+     "first tie (two primes)": [
+      [
+       6,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       6,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    },
+    "(4,5)": {
+     "tau": 12,
+     "first tie (two primes)": [
+      [
+       12,
+       [
+        2,
+        2
+       ]
+      ],
+      [
+       12,
+       [
+        2,
+        2
+       ]
+      ]
+     ],
+     "agrees": true
+    }
+   }
+  }
+ },
+ "status": "passed"
+}

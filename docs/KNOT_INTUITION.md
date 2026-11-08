@@ -3987,11 +3987,32 @@ So network holes come in two kinds:
        degenerate. At lines that share two points with no other line, the degenerate gluings alone single the class out; elsewhere
        the knots that far sides add finish it.
    - **Reading.** Native creation reads where the contradiction lives: with any one line removed, creation at the other lines tells
-     whether restoring it closes a contradiction. With the entry above, it reads the contradiction but not the count.
+     whether restoring it closes a contradiction. With the entry above, it reads the contradiction but not the count. (Narrowed
+     2026-11-08: on glues whose incidence graph is 3-connected; at lines in a two-vertex cut one row can fail, as the next entry
+     shows.)
    - **Provenance.** Switching classes (Zaslavsky) and Pfaffian orientations (Kasteleyn) are classical; the recognition and its
      mechanism are new here.
-   - **Next (recommended).** Prove that one row reads the removed line's tie (Payoff 2/3, Concreteness 2/3).
+   - **Next (taken as `CONTRA-PROOF-20261108-001`).** Prove that one row reads the removed line's tie (Payoff 2/3, Concreteness
+     2/3).
      - **The alternatives.** Why there is one contradictory class (2/3, 1/3); the 14-line glues (1/3, 3/3).
+
+   **2026-11-08: where one row reads the contradiction** (`CONTRA-PROOF-20261108-001`).
+   - **The question.** On the trisum glues one row of creation reads the removed line's tie. Is that so on every glue, and why?
+   - **Not on every glue (computed, 19 random cubic glues of 8 to 10 lines with a class without solutions).**
+     - **Where it fails.** Exactly at the lines lying in a two-vertex cut of the glue's incidence graph: 16 lines, two on each of the
+       8 glues with such cuts. Removing one of the two cut lines leaves a rigid side, K4^(3) without a line, and nothing creates
+       anywhere in the row, in the contradictory class or in another.
+     - **Where it holds.** On every 3-connected glue tested: the 11 random ones and the seven trisum glues.
+     - **No local shortcut.** Under the tie, the K4^(3) far side stays silent at lines meeting the removed line once on 25 of the 26
+       glues, but not on a 12-line trisum glue where one row still reads the tie. No single near point makes K4^(3) create, and points
+       tied to the removed line are never witnesses (an exhaustive local lemma).
+   - **Reading.** Native creation reads the contradiction where the glue cannot be cut at two places; a two-vertex cut hides it. The
+     previous entry's reading is narrowed accordingly.
+   - **Provenance.** Two-vertex cuts and connectivity are classical; the counterexamples, the refined conjecture and the lemma are new
+     here.
+   - **Next (recommended).** Why two-vertex cuts hide the tie (Payoff 2/3, Concreteness 2/3): the side K4^(3) without a line, hanging
+     from one point once a cut line is removed, under its eight cycle signings.
+     - **The alternatives.** The refined conjecture for 3-connected glues (2/3, 1/3); random 3-connected glues one size past (1/3, 3/3).
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

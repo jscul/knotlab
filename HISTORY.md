@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: one row reads the contradiction only away from two-vertex cuts
+
+- The knot intuition entry for CONTRA-READ-20261108-001 read its result as
+  "native creation reads where the contradiction lives", without naming the
+  trisum glues it was computed on. On random cubic glues with a class without
+  solutions, one row fails to read the removed line's tie at every line lying in
+  a two-vertex cut of the incidence graph
+  ([decision note](research/CONTRA-PROOF-20261108-001/contra_proof.md)).
+- The reading is narrowed to 3-connected glues, where it held on all 18 tested.
+- Unchanged: every result of CONTRA-READ-20261108-001.
+
 ## 8 November 2026: which way the two-bit census points
 
 - The preliminary record of TWO-BIT-20261108-001 said in its summaries that the

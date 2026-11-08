@@ -55,6 +55,12 @@ every glue, only the contradictory class's restriction has its row (`stress_test
 summarized by `stress_test_p2_summary.py`; the run's log is `stress_test_p2.log`). Ticket B's pruned check agrees: after the first
 line only the four classes over that restriction remain.
 
+## Correction (2026-11-08)
+
+- **The reading's family.** The first sentence of the reading above holds on 3-connected glues. `CONTRA-PROOF-20261108-001` found
+  random cubic glues with a two-vertex cut where one row cannot read the removed line's tie (`docs/CORRECTIONS.md`). Every result
+  of this epic concerns trisum glues, which are 3-connected, and stands.
+
 ## Pending
 
 - **Still open from earlier epics.** As listed in SWITCH-READ's ledger.

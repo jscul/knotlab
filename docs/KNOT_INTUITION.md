@@ -3596,11 +3596,14 @@ So network holes come in two kinds:
    - **Placements come for free.** HANDLE-COUNT's generator picks its minimal signing by walking sets, so different hash seeds give 11
      of the 17 trisum glues two or three placements of their atoms: one glue and one switching class, but spaces that are not
      isomorphic.
-   - **No for the whole map, yes between glue lines (computed, five pairs, 38 to 56 points).**
+   - **No for the whole map, yes between glue lines (computed: five pairs, 38 to 56 points; one size past, all 17 pairs on 11 glues, to
+     60 points).**
      - **Between glue lines** native creation is the same in both placements, entry by entry.
      - **Removing a line of an atom** creates differently at glue lines, so the whole native maps are never isomorphic, with the glue
        held fixed or not.
-     - **The junction reading transfers.** The junction epic's seven frozen statements hold on all five other placements.
+     - **The junction reading transfers.** The junction epic's seven frozen statements hold on all five other placements, and on
+       eight of the nine in the stress test. On the ninth, seed 11's second placement, a symmetry of the glue moves an atom, as in
+       the junction epic's seed 5.
    - **Reading.**
      - **Native creation splits in two.** Between glue lines it sees only the switching class, which is also what Pfaffian counting
        sees. Through its atoms it reads where they sit.
@@ -3612,7 +3615,8 @@ So network holes come in two kinds:
    - **Next (taken as `SWITCH-PROOF-20261108-001`).** Prove that creation between glue lines depends only on the switching class
      (Payoff 2/3, Concreteness 2/3): an intact atom acts as one negation, switching complements points, and the creation test should
      not see complementing.
-     - **The alternatives.** The glue block against Pfaffian counting (2/3, 1/3); folding in the nine remaining placements (running).
+     - **The alternatives.** The glue block against Pfaffian counting (2/3, 1/3); folding in the nine remaining placements (done:
+       the stress test passed).
 
    **2026-11-08: a theorem on what native creation sees of a signing** (`SWITCH-PROOF-20261108-001`).
    - **Proved.** For every cubic glue, every two signings in one switching class, and every two glue lines, removing one and gluing at

@@ -37,8 +37,8 @@ Epic `SWITCH-PROOF-20261108-001` (program topology), 2026-11-08.
 
 ## Pending
 
-- **SWITCH-READ's nine remaining placements** are still mapping (`docs/LONG_RUNNING.md`, SWITCH-READ-M1); the theorem now predicts the
-  glue-block half of that check.
+- **SWITCH-READ's nine remaining placements** were folded in on 2026-11-08 (SWITCH-READ's stress test): as the theorem predicts, the
+  glue block of each equals the signed glue's own map, 1,936 entries, and every pair of placements has the same glue block.
 - **Still open from earlier epics.** As listed in SWITCH-READ's ledger.
 
 ## Next steps
@@ -60,10 +60,10 @@ Epic `SWITCH-PROOF-20261108-001` (program topology), 2026-11-08.
 | --- | --- | --- | --- | --- | --- |
 | 1 | Does the glue block tell every switching class apart? | 2/3 — Substantial | 3/3 — Ready | All 512 classes of the smallest glue → distinct blocks or a collision | Selected · started |
 | 2 | Glue block against Pfaffian counting | 2/3 — Substantial | 1/3 — Stated | Pose what "carries the same information" means → a test | Alternative · deferred |
-| 3 | Fold in SWITCH-READ's nine placements | 1/3 — Incremental | 3/3 — Ready | Running → fold the comparisons in | Alternative · started |
+| 3 | Fold in SWITCH-READ's nine placements | 1/3 — Incremental | 3/3 — Ready | Running → fold the comparisons in | Alternative · done |
 
 1. **A complete invariant?** If the glue block separates every switching class, native creation between glue lines reads exactly the
    cycle parities of the signing, a clean description of what emergence sees in the glue; if not, the collisions say which parities it
    misses. The question is exact and cheap: the smallest glue has 512 classes, already computing in the background.
 2. **Counting.** Both now live on switching classes; how they compare is not yet a precise question.
-3. **The nine placements.** Running in the background since 07:40 UTC.
+3. **The nine placements.** Running in the background since 07:40 UTC. (Folded in on 2026-11-08, as predicted.)

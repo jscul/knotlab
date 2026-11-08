@@ -20,6 +20,7 @@ Epic `SWITCH-READ-20261108-001` (program topology), 2026-11-08.
 | 3 | **Yes for the glue block.** In all five pairs, removing a glue line and gluing at a glue line gives the same vector in both placements, entry by entry. | computed | A |
 | 4 | **The difference is in atom removals.** Removing a glue line creates at the atom lines with the same multiset of vectors in both placements; removing a line of an atom creates differently at glue lines. | computed | A |
 | 5 | **TRISUM-READ's reading transfers.** Its frozen statements P1 to P7 hold on all five alternative placements. | computed | A |
+| 6 | **One size past (stress test).** With the nine other placements (56 to 60 points), all 17 pairs on 11 glues behave as in conclusions 2 to 4. P1 to P7 hold on 13 of the 14 alternative placements; on seed 11's second, P1 fails through a symmetry of the glue that moves an atom, as on TRISUM-READ's seed 5. | computed | stress test |
 
 ## Answer
 
@@ -49,10 +50,32 @@ Epic `SWITCH-READ-20261108-001` (program topology), 2026-11-08.
 - **New here.** The comparison, and the split of native creation into a part that sees the switching class and a part that sees the
   placement.
 
+## Stress test
+
+One size past ticket A's five pairs: the nine other placements HANDLE-COUNT A's generator gives (seeds 11, 34, 46, 96, 282 and 288; 56
+to 60 points), mapped exactly in the background (`docs/LONG_RUNNING.md`, SWITCH-READ-M1) and compared with every other placement of
+their glues. The maps are `stress_test_m1_maps.json.gz`, made as `stress_test_m1_map.py` makes them; the comparison is
+`stress_test_m1.py`.
+
+| Check | Result |
+| --- | --- |
+| Pairs of placements of one glue | 17, on 11 glues, 38 to 60 points |
+| Glue block identical | 17 of 17 |
+| Whole maps isomorphic, glue lines fixed or under any bijection | 0 of 17 |
+| Difference only from atom removals | 17 of 17: removing a glue line creates at the atom lines alike, and in every pair some glue line's column from atom removals changes |
+| Glue block against the signed glue's own map (SWITCH-PROOF's corollary) | the 9 new placements, 1,936 entries, all equal |
+| TRISUM-READ's P1 to P7 on the 14 alternative placements | hold on 13; on seed 11's second placement (hash seed 3) P1 fails: loaded line 8 and unloaded line 9 share a diagonal class |
+| Seed 11's failure | a symmetry, as in seed 5: exchanging lines 1 and 3, 8 and 9, 10 and 11 preserves the native map and fixes every atom line, and the one skeleton automorphism inducing it keeps the switching class and moves the atoms' places |
+
+- **Verdict: passed.** Every conclusion of ticket A holds one size past. Seed 11's second placement is a second symmetric placement,
+  the case that the narrowed reading of `TRISUM-READ-20261107-001-D002` already allows.
+- **Rerun pending.** These numbers come from the first comparison run and from the script's two quick checks (the spaces against the
+  generator; the glue block against the signed glue). The script's full rerun, which also recomputes one row of each new map, is
+  running (`docs/LONG_RUNNING.md`, SWITCH-READ-M2) and writes `stress_test_m1.json`.
+
 ## Pending
 
-- **The other placements.** Nine more, 56 to 60 points, are mapping in the background (`docs/LONG_RUNNING.md`, SWITCH-READ-M1) and
-  will be folded in by a follow-up commit.
+- **The stress test's full rerun** (SWITCH-READ-M2), above.
 - **Still open from earlier epics.** `JUNCTION-READ-20261106-001`, left open by an interrupted session, asks the question TRISUM-READ
   answered; qualifying `FAR-READ-20261106-001-D002` and the second sentence of D001; qualifying `PHASE-HALO-20261103-001-D001` and
   `FACE-CLAIM-20261103-001-D003`; the SELECTION-NOTE erratum; superseding `KNOT-COMPOSE-20261101-001-D001`; whether counted length
@@ -72,19 +95,21 @@ atom sits within its switching class; it can, except where a symmetry of the glu
 **Goals:** G4 checkpoint (capability gained); backlog B5 marked taken.
 **Assumptions:** A29 overturned: an atom's place within its switching class matters for native creation, though not for the glue block
 or for TRISUM-READ's statements.
-**Stress test:** the nine remaining placements (56 to 60 points) are pending in the long-running index.
+**Stress test:** passed one size past (17 pairs, 38 to 60 points; folded in 2026-11-08); the script's full rerun is pending
+(SWITCH-READ-M2).
 
 **Next step:** Continue — selected: #1
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Prove the glue block depends only on the class | 2/3 — Substantial | 2/3 — Testable | Atoms as negations plus switching as complement → a proof or a gap | Selected · awaiting go-ahead |
+| 1 | Prove the glue block depends only on the class | 2/3 — Substantial | 2/3 — Testable | Atoms as negations plus switching as complement → a proof or a gap | Selected · done (`SWITCH-PROOF-20261108-001`) |
 | 2 | Glue block against Pfaffian counts | 2/3 — Substantial | 1/3 — Stated | Compare the glue block's classes with counting's data → a match or a split | Alternative · deferred |
-| 3 | Fold in the nine remaining placements | 1/3 — Incremental | 3/3 — Ready | Running → fold the comparisons in | Alternative · started |
+| 3 | Fold in the nine remaining placements | 1/3 — Incremental | 3/3 — Ready | Running → fold the comparisons in | Alternative · done (stress test) |
 
 1. **A proof.** It would turn a computed split into a theorem about what native creation sees, the strongest statement this line can
    make about G4; the route is concrete (an intact atom acts as one negation, switching complements points, the creation test ignores
    complementing), and the main uncertainty is whether the test's far sides are invariant under complementing a gluing line's points.
 2. **Counting.** If the glue block carries the same information as the Pfaffian count, native creation and counting would see a signing
    alike, a bridge from G4 to G3; the comparison is not yet posed precisely.
-3. **The remaining placements.** They extend the computed range, and are already running in the background.
+3. **The remaining placements.** They extend the computed range, and are already running in the background. (Folded in on
+   2026-11-08: the stress test above.)

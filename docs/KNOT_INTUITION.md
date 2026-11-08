@@ -3297,7 +3297,7 @@ So network holes come in two kinds:
      - **Classical.** Velocity polygons (Fritz; Kotani–Sunada; Eon), Gołąb's bound, self-circumferences of regular polygons (Martini
        and coauthors), Niven, de Bruijn, Seppäläinen's chains, Vahidi-Asl and Wierman's isotropy and the Brownian map.
      - **Not found.** The bond-distance reductions, the rational π of periodic laws, the exact table and the coin law's corners.
-   - **Next (recommended, awaiting the owner).** Round without coins: the pinwheel law (2/3). Local matching rules force the pinwheel
+   - **Next (taken).** Round without coins: the pinwheel law (2/3). Local matching rules force the pinwheel
      tiling, whose tiles turn through the irrational angle arctan(1/2). Is its law's circle exactly round?
      - **The alternatives.** The spectrum of rational π among periodic laws (1/3); the exact taxicab formula (1/3).
 
@@ -3330,6 +3330,39 @@ So network holes come in two kinds:
    - **Next (recommended, awaiting the owner).** Two kinds of points (2/3): which such laws close into large spheres, and can a local
      growth rule place the six digons itself, so that a law grows its own sphere and with it the knot's contradiction?
      - **The alternative.** Large uniform contradictions beyond the Fano plane (1/3).
+
+   **2026-11-07: round without coins** (`PINWHEEL-ROUND-20261107-001`).
+   - **The question.** Can a law with no coins, and no Poisson points, have a round circle?
+   - **Already known (Radin–Sadun 1996).** In Conway and Radin's pinwheel tiling, the shortest path along tile edges between points R
+     apart has Euclidean length R + o(R). Open was the program's own distance, which counts distinctions and uses no lengths.
+   - **The pinwheel's laws are round (proved, citing Radin).**
+     - **The principle.** If a space of tilings is rotation-invariant and uniquely ergodic under translations, every covariant bond
+       distance grows at one rate in every direction.
+     - **Both laws.** So the parity laws with knots at pinwheel tile corners, or on pinwheel tiles, have exactly round circles.
+   - **Roundness needs two ingredients (proved; measured).**
+     - **The rule.** It cuts a right triangle into copies of itself.
+     - **Legs 1:1.** The angle π/4 is a rational part of a turn. The result is the periodic tetrakis triangulation, whose circles are an
+       octagon (π = 10/3) and a square (π = 4).
+     - **Legs 1:2, cut frame-consistently.** It has the irrational angle arctan(1/2), but all tiles keep one frame, and its measured
+       circle keeps a growing four-fold component.
+     - **The pinwheel cut.** It has both the irrational angle and mirror-image siblings, which make descendants turn against each other.
+   - **Round only as a trend (proved; measured).**
+     - **Orientations.** A disc of radius R meets O(log R) orientations: 28 at R = 128.
+     - **Anisotropy.** The corner law's falls from 1.106 to 1.030 between R = 8 and 128.
+   - **Reading.**
+     - **One rule, two outcomes.** It makes a harmony or a continuing ratio depending only on the triangle: 1:1 closes into a periodic
+       polygon world; 1:2 continues and becomes round.
+     - **Perfect circles are trends.** The circle is round only in the limit, gaining directions logarithmically.
+     - **Intrinsic.** Bond distance depends only on which distinctions share knots, so the law's own distance is large-scale Euclidean.
+       The drawing is used to prove it, not to state it.
+   - **Provenance.**
+     - **Classical.** Radin's unique ergodicity, rotational symmetry and matching rules; Radin and Sadun's edge-length result;
+       isotropy arguments (Vahidi-Asl–Wierman).
+     - **Not found.** The bond-distance version, the two-ingredient contrast and the logarithmic orientation count.
+   - **Next (recommended, awaiting the owner).** The pinwheel grown with nothing drawn (Payoff 2/3, Concreteness 2/3). Write the
+     substitution as a rule on knots and their shared distinctions, with labels but no coordinates. Does it regrow the pinwheel's
+     law exactly?
+     - **The alternatives.** The spectrum of rational π among periodic laws; a proved rate for the rounding.
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

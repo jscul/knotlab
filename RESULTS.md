@@ -24,8 +24,8 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 69 results
-- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 28 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 67 results
+- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 30 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
@@ -514,12 +514,6 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · Native far sides separate atoms through glue, rows at atom lines do not** (`GENUS-READ-20261107-001-D003`).
   Through K4^(3), the Fano plane and census 58 alone every Fano atom acts as one (1,065 of 1,065), and all 372 yes/no twins across atoms in 39 spaces are told apart, 114 only through their rows at glue lines. Twins on these native rows at atom lines read 234 of 277 spaces, merging atoms where they meet one plane piece.
   [proof P001](proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/proof.md), [epic closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · A law with no coins has a round circle** (`PINWHEEL-ROUND-20261107-001-D001`).
-  On Conway and Radin's pinwheel tiling, the parity laws with knots at tile corners or on tiles have bond distances, counts of distinctions with no lengths, that grow at the same rate in every direction: exactly round circles with no chance involved. The proof is an isotropy principle: a rotation-invariant tiling space uniquely ergodic under translations makes every covariant bond distance round.
-  [proof P001](proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/proof.md), [epic closure](proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Roundness needs an irrational turn and mirror pairs** (`PINWHEEL-ROUND-20261107-001-D002`).
-  Cutting a right triangle into copies of itself gives a round logical circle only when its angle is an irrational part of a turn and siblings come in both handednesses: legs 1:1 give the periodic tetrakis triangulation with polygonal circles (pi = 10/3 and 4), and the 1:2 triangle cut frame-consistently keeps one frame. Even the pinwheel is round only as a trend, meeting O(log R) orientations within radius R.
-  [proof P001](proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/proof.md), [epic closure](proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · Native creation fixes the atoms of every computed space** (`REFINE-READ-20261107-001-D001`).
   On 191 saved and 86 fresh spaces, pair refinement (folklore 2-WL) of the native creation map, read through the order-free far sides, never puts a pair within a Fano atom and a pair across two atoms in one class, so every symmetry of the map preserves the atoms and they are definable in three-variable counting logic in each space. On whether creation occurs alone it mixes them in 42 spaces.
   [proof P001](proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
@@ -618,6 +612,12 @@ Which local laws survive the moves of a space, with and without signs, the self-
 - **2026-11-07 · The logical Cartesian plane is a taxicab plane** (`OPEN-END-GROWTH-20261107-001-D003`).
   In the product law of two parity laws, a knot of each axis joined at a corner is a knot, so bond distance is at most the sum of the axis distances minus one. The product of two two-way threads has no ends, so its bond distance is within constants of taxicab distance and its bond balls grow quadratically: a plane of dimension two built from two lines.
   [proof P001](proofs/OPEN-END-GROWTH-20261107-001C/OPEN-END-GROWTH-20261107-001C-P001_the_logical_cartesian_plane/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A law with no coins has a round circle** (`PINWHEEL-ROUND-20261107-001-D001`).
+  On Conway and Radin's pinwheel tiling, the parity laws with knots at tile corners or on tiles have bond distances, counts of distinctions with no lengths, that grow at the same rate in every direction: exactly round circles with no chance involved. The proof is an isotropy principle: a rotation-invariant tiling space uniquely ergodic under translations makes every covariant bond distance round.
+  [proof P001](proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/proof.md), [epic closure](proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Roundness needs an irrational turn and mirror pairs** (`PINWHEEL-ROUND-20261107-001-D002`).
+  Cutting a right triangle into copies of itself gives a round logical circle only when its angle is an irrational part of a turn and siblings come in both handednesses: legs 1:1 give the periodic tetrakis triangulation with polygonal circles (pi = 10/3 and 4), and the 1:2 triangle cut frame-consistently keeps one frame. Even the pinwheel is round only as a trend, meeting O(log R) orientations within radius R.
+  [proof P001](proofs/PINWHEEL-ROUND-20261107-001A/PINWHEEL-ROUND-20261107-001A-P001_isotropy_makes_circles_round/proof.md), [epic closure](proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Tori, twists and direction
 

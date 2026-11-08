@@ -771,12 +771,22 @@ evidence: results and their status come from the records each entry links.
   composed binding, matching the persistence asked of each contact
   ([two contacts across time](../research/PROCESS-CHAIN-20261108-001/process_chain.md)).
 - **Rests on it.** The epic's finding that no chain with both contacts persistent composes, one size past included.
-- **Challenge.** The alternative reads composition at recurring lags. The epic's post hoc measure already shows the readings
-  differ: 195 chains bind their ends at some lags of their eventual cycle, 154 of them with both contacts binding at those lags,
-  while none composes at every lag. Under the alternative a network across time exists intermittently. The test is whether
-  composition at recurring lags follows a native law, such as a period fixed by the middle ring. A law would favour the
-  alternative; a pattern that depends on the observer's choice of lags would keep this reading.
+- **Challenge.** The alternative reads composition at the recurring lags the system itself fixes: the far contact binds the end
+  rings at some lag of its eventual cycle, and so at lags recurring with its period. In linear chains and paths composition is
+  arrival, so those lags are fixed by the dynamics, not by an observer. `RECUR-PATH-20261108-001` tests the alternative by
+  transport, pre-registered on 2026-11-08 before it ran. It uses the growth families of `PATH-GROWTH-20261108-001`: one linear rule
+  per ring and every law, four rings growing from 3 to 9 cells (or 4 to 9, contacts two apart), or paths from 4 to 9 rings.
+  - **Overturned**, if some family composes at recurring lags with every contact persistent at every size of its schedule. The
+    recurring reading then replaces this one, as a new entry, since under this reading no family composes at two sizes.
+  - **Confirmed**, kept for the gate, if such families exist only with contacts that bind at the composing lags but not at every
+    lag. The recurring reading would then transport only by giving up the persistence the contact gate asks of each contact.
+  - **Confirmed**, also, if no family composes at recurring lags at every size. Composition across time is then tied to sizes under
+    both readings.
+  - **Back to Assumed**, if the best candidate families meet a recurring reading at every decided size but some sizes stay
+    undecided.
 - **History.**
+  - 2026-11-08 · Challenge pre-registered by `RECUR-PATH-20261108-001` before its census ran: the outcomes and what each means for
+    this entry are under Challenge above. The entry stays under challenge until the epic closes.
   - 2026-11-08 · Put under challenge by `PATH-GROWTH-20261108-001`, as its stop rule set out. Under this reading no family of paths
     with one linear rule per ring composes at more than one size: native paths sit at isolated shapes, and none survives one more
     cell or one more ring. Composition at recurring lags, with the phase fixed by the chain, held at every tested size for three-ring

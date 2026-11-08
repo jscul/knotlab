@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-PATH-20261108-001A-P001",
+  "canonical_id": "NATIVE-PATH-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-PATH-20261108-001A",
+  "proof": "NATIVE-PATH-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Paths across time reduce to row sequences",
+  "status": "Proved",
+  "claim": "Paths of n rings R_0 .. R_(n-1) joined by n - 1 shared contacts, contact c_(i+1) joining R_i and R_(i+1), each ring its own elementary rule and each contact its own law. (1) Contact c_j does not depend on ring R_0's first row before lag d_1 + .. + d_(j-1) + 1, d_i the distance between the two contacts of middle ring R_i; so the last contact can bind the end rings only from lag d_1 + .. + d_(n-2) + 1. (2) For linear or affine rules and affine laws, a contact binds two rings at lag T exactly when the support of its row of M^T meets both; persistence of every contact, and binding of the end rings at the last contact from the light cone on, are decided exactly by iterating the contacts' row vectors until they repeat, a complete proof for each finite path.",
+  "dependencies": [
+    "AFFINE-WIRE-20261108-001A",
+    "PROCESS-CHAIN-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A path whose last contact depends on R_0 before the light-cone lag.",
+    "An affine path whose row-sequence verdicts differ from its full-state-space verdicts."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-PATH-20261108-001",
+    "epic_path": [
+      "NATIVE-PATH-20261108-001"
+    ],
+    "parents": [
+      "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/manifest.json",
+      "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/result.json",
+      "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/wire_lib.py",
+      "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json",
+      "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/manifest.json": "a10445db6d34ddbbb7760d4dfb0a5e33cf883aae061448422cf6fb1eb1ca8837",
+    "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/result.json": "3f5dee70c29862e3a496e002912837183e69f8976e8a0169f7dbba9b1162dd11",
+    "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/wire_lib.py": "b8bdcc70359ada7ce5be8c102ce6bfe18354b9a1e473acd88c53b7cd62d40532",
+    "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json": "8dfa5ff54b27b25523d8b6513611f3044e280c1d5b2badbee2b86bba58935792",
+    "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json": "2703484076ea04e6cdfba31ac5027c35bea0e1df16f3a9f675044f407f5e751b"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json",
+    "identity": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/identity.json",
+    "proof": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/proof.md",
+    "check": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/check.py",
+    "result": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/result.json",
+    "directory": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Knots of finite space-time laws of paths of rings and contacts; no physical time or dynamics.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session under the owner's standing research mandate, 2026-11-08.",
+    "status": "proved by hand; finite claims checked by check.py (result.json passed)",
+    "novelty": "known-with-delta: elementary (light cones on graphs; AFFINE-WIRE-20261108-001A extended to n rings)"
+  }
+}

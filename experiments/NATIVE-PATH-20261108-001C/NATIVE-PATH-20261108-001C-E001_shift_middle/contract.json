@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "NATIVE-PATH-20261108-001C-E001",
+  "ticket": "NATIVE-PATH-20261108-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Ticket B found no native path in its two families, and the loss happens across the second middle ring. Is there a native path when the second middle ring is a shift, which carries a contact's past without mixing it?",
+  "public_inputs": {
+    "library": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py (sha256 52ce36a513db4fef263abc91d3b852430334e65fac0e146d6d37e8ddd0b060be); ticket B's run.py (sha256 21d4b62b938c3320008a83ba0986690a52650720e50c9cef8419f54af1a2d8f5) for the laws and the full-state-space check.",
+    "carriers": "artifacts/AFFINE-WIRE-20261108-001B/AFFINE-WIRE-20261108-001B-E001_affine_search/run/positives.json (sha256 6e5f0e3804b3390214b0c75495c3ba5beb909d32044b0015149ce809fbb15c3e): the 430 carrying chains.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Each carrying chain (rings A, B, C with contacts c1, c2) becomes a path A, B, C', D: the second middle ring C' is a shift (rule 170 or 240) of 4 to 6 cells with its two contacts at least two apart; c2 keeps its law's ring-B part and reads C' by x, y or x + y (a proposal law is kept as it is); the end ring D runs 90, 150, 60, 102, 204, 170 or 240 on 3 to 5 cells; c3 takes every law: 3,059,280 paths.",
+    "exactness": "Every verdict is exact by ticket A's reduction."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping paths"
+  ],
+  "primary_observable": "The number of native paths, and of paths with all three contacts persistent; the rules and laws of the native ones.",
+  "cheapest_meaningful_control": "The smallest native paths with at most 15 first-row cells, if any, must agree on their full state spaces.",
+  "resource_budget": {
+    "wall_minutes": 45,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control, or a count of zero.",
+  "decision_or_followup_rule": "H1, frozen: some native path exists in this family. If it holds, verify the smallest and report a native path across time. If not, the absence is recorded for this family, with the shift's behaviour as the obstruction to examine.",
+  "stop_rule": "Stop when every path of the family has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: this family only.",
+    "Two-time knots only (A30).",
+    "Paths of four rings only."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket B's results had been read (no native path in its two families; the loss across the second middle ring). run.py --pilot timed 2,000 random paths of this family at 9.1 s and printed no verdicts; the full run is expected to take about 14 minutes and is registered in docs/LONG_RUNNING.md."
+}

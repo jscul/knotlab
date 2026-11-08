@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**237 current results** and 5 superseded ones, from 170 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**238 current results** and 5 superseded ones, from 171 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 17 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 18 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 170 epics with their closures
+- [Epics](#epics): all 171 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -76,6 +76,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · Intermittent composition across time is a strobed chain's composition, and in linear chains it is arrival** (`INTERMITTENT-NET-20261108-001-D001`).
   For a chain of three rings joined by two shared contacts, the lags at which the far contact binds the two end rings recur with the period P of the chain's T-step maps; the chain observed only at the lags of one residue modulo P composes at every observed lag or at none, so intermittent composition is persistent composition of a strobed chain whose phase is the only input the chain does not fix, an input the doctrine forbids an observer to supply unless the chain singles the phase out. For linear or affine rules with affine contact laws, the chain composes exactly at the lags where its far contact depends on both end rings, so the composing lags are the arrival lags of both ends' influence; in any chain, composition implies that dependence.
   [proof P001](proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/proof.md), [epic closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · A path of contacts across time has a light cone, and on affine substrates every verdict is two row sequences per contact** (`NATIVE-PATH-20261108-001-D001`).
+  In a path of n rings joined by n - 1 shared contacts, the last contact cannot depend on the first ring's first row before lag d_1 + .. + d_(n-2) + 1, the distances between the two contacts of each middle ring plus one, so the ends of a path can be bound only from that lag. For linear or affine rules and affine contact laws, a contact binds two rings at lag T exactly when the support of its row of M^T meets both, and the persistence of every contact and the binding of the end rings are decided exactly by iterating the contacts' row vectors until they repeat.
+  [proof P001](proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/proof.md), [epic closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Listening contacts never compose, and a shared chain carries the far ring only after crossing the middle ring** (`PROCESS-CHAIN-20261108-001-D001`).
   Three rings in a chain, A and B joined by contact c1 and B and C by contact c2, written as one space-time law; a contact binds two rings when every minimally decisive set of its value meets both rings' own first-row cells. With listening contacts, which read their rings and feed nothing back, the far contact never depends on the far ring, so the chain never binds its ends: composition across time needs a contact that the middle ring reads, the contact gate's shared identity. With shared contacts, c2 does not depend on ring A's first row before lag d + 1, d the distance between the contacts on ring B, so the ends can be bound only from that lag. With linear or affine rules and affine contact laws, a contact binds two rings exactly when the support of its row of M^T meets both.
   [proof P001](proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/proof.md), [epic closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md)
@@ -1006,6 +1009,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A middle ring that carries without cancelling: persistent composition on affine chains (`AFFINE-WIRE-20261108-001`) | [closure](proofs/AFFINE-WIRE-20261108-001Z/AFFINE-WIRE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/AFFINE-WIRE-20261108-001/) |
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
+| 2026-11-08 | Native paths across time: none in three restricted families (`NATIVE-PATH-20261108-001`) | [closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-PATH-20261108-001/) |
 | 2026-11-08 | Does one hidden bit per tile force the pinwheel? (`ONE-BIT-20261108-001`) | [closure](proofs/ONE-BIT-20261108-001Z/ONE-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/ONE-BIT-20261108-001/) |
 | 2026-11-08 | Two contacts across time: persistent contacts do not compose (`PROCESS-CHAIN-20261108-001`) | [closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CHAIN-20261108-001/) |
 | 2026-11-08 | Knots between processes: a contact binds two processes exactly when it is a parity, and sharing it costs persistence (`PROCESS-CONTACT-20261108-001`) | [closure](proofs/PROCESS-CONTACT-20261108-001Z/PROCESS-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CONTACT-20261108-001/) |

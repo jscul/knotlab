@@ -1,0 +1,48 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/manifest.json": "Proved",
+     "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/result.json": "passed",
+     "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json": "Proved",
+     "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json": "passed"
+    }
+   }
+  },
+  "1 on 3,000 random three-ring chains the path reduction gives AFFINE-WIRE-20261108-001A's verdicts": {
+   "pass": true,
+   "info": {
+    "chains": 3000,
+    "mismatches": 0
+   }
+  },
+  "2 for 300 random four-ring paths with linear rules and laws, the matrix rows equal the path's linear map read off its full state space": {
+   "pass": true,
+   "info": {
+    "paths": 300,
+    "mismatches": 0
+   }
+  },
+  "3 on 800 random affine four-ring paths, the row-sequence verdicts (each contact persists, the ends bound at the last and at the first contact from the light cone on, the last contact binding every ring) equal the full-state-space verdicts": {
+   "pass": true,
+   "info": {
+    "paths": 800,
+    "decided": 800,
+    "agree": 800,
+    "native paths among them": 0
+   }
+  },
+  "4 on 400 random four-ring paths with arbitrary elementary rules, the last contact never depends on ring R_0 before lag d_1 + d_2 + 1": {
+   "pass": true,
+   "info": {
+    "paths": 400,
+    "early dependences": 0
+   }
+  }
+ },
+ "seconds": 7.4
+}

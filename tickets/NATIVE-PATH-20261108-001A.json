@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "AFFINE-WIRE-20261108-001A",
+    "PROCESS-CHAIN-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "NATIVE-PATH-20261108-001A-P001"
+  },
+  "id": "NATIVE-PATH-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for paths of n rings joined by n - 1 shared contacts (ring R_i and R_(i+1) sharing contact c_(i+1), each ring its own elementary rule, each contact its own law): (1) contact c_j cannot depend on ring R_0's first row before lag d_1 + ... + d_(j-1) + 1, d_i the distance between the two contacts of middle ring R_i, so the ends of a path can be bound only from that lag; (2) for linear or affine rules and affine laws a contact binds two rings at lag T exactly when the support of its row of M^T meets both, and persistence of every contact and binding of the end rings are decided exactly by iterating the contacts' row vectors until they repeat. Check against the full state space on small paths.",
+  "ownership": {
+    "root": false,
+    "scope_id": "NATIVE-PATH-20261108-001"
+  },
+  "parent": "NATIVE-PATH-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08: in a path of rings the last contact cannot depend on the first ring before lag d_1 + .. + d_(n-2) + 1; for affine paths every verdict is decided exactly by the contacts' row sequences of M^T; checked against full state spaces.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Paths across time reduce to row sequences"
+}

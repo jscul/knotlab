@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**252 current results** and 5 superseded ones, from 192 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**253 current results** and 5 superseded ones, from 193 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 28 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 29 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 192 epics with their closures
+- [Epics](#epics): all 193 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -76,6 +76,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · One band makes the torus from a loop of rings** (`BAND-SURFACE-20261108-001-D001`).
   Inserting one band into a loop of n equally spaced rule-60 rings, each new ring joined to its partner by two contacts, one on each side, gives the n x 2 torus; every n x m torus with n >= 3 and m >= 2 has a half-turn at every contact exchanging its rings, so the loop, the n x 2 torus and every later torus keep every contact persistent at every lag. A uniform local law, insert a band, makes the torus from a loop at its first step with every stage balanced.
   [proof P001](proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/proof.md), [epic closure](proofs/BAND-SURFACE-20261108-001Z/BAND-SURFACE-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Distance across time is native: the cut length is the ring graph's distance, the time length the contact graph's directed distance** (`DISTANCE-20261108-001-D001`).
+  In networks of rule-60 rings, a route isolated by freezing makes its far contact first need the near ring at lag g L + 1, additively, so counted length is native (A40); the earliest need any freeze allows is g delta + 1, delta the directed contact-graph distance, and the most disjoint cuts separating two rings is their ring-graph distance. Without freezing, the first need is that light cone filtered by the parity of shortest routes, not a metric.
+  [proof P001](proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/proof.md), [epic closure](proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · A network of rings reads its genus: two rings of cuts per handle keep one piece** (`GENUS-CUT-20261108-001-D001`).
   In any network of rule-60 rings with law (12,12) contacts, after any contacts are cut, the pieces read from which uncut contacts need which rings are exactly the components of the ring graph without the cut contacts. So a family of rings of cuts keeps the network in one piece exactly when it is independent in the homology mod 2 of the surface the positions define: at most two per handle keep one piece, some two per handle do, and one more always separates. The torus cut round both ways stays in one piece; the regular genus-2 network of 16 rings with three contacts each keeps every contact persistent and reads its genus the same way.
   [proof P001](proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/proof.md), [epic closure](proofs/GENUS-CUT-20261108-001Z/GENUS-CUT-20261108-001Z-P001_epic_closure/proof.md)
@@ -1054,6 +1057,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
 | 2026-11-08 | Does creation between glue lines always single out the contradictory class? (`CONTRA-READ-20261108-001`) | [closure](proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CONTRA-READ-20261108-001/) |
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
+| 2026-11-08 | Distance across time (`DISTANCE-20261108-001`) | [closure](proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/DISTANCE-20261108-001/) |
 | 2026-11-08 | Full reach on the cut-open torus (`FULL-REACH-20261108-001`) | [closure](proofs/FULL-REACH-20261108-001Z/FULL-REACH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/FULL-REACH-20261108-001/) |
 | 2026-11-08 | Higher genus by bands (`GENUS-BAND-20261108-001`) | [closure](proofs/GENUS-BAND-20261108-001Z/GENUS-BAND-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-BAND-20261108-001/) |
 | 2026-11-08 | Genus read by rings of cuts (`GENUS-CUT-20261108-001`) | [closure](proofs/GENUS-CUT-20261108-001Z/GENUS-CUT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-CUT-20261108-001/) |

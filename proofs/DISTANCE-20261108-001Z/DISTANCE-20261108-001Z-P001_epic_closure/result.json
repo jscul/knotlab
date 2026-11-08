@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DISTANCE-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "DISTANCE-20261108-001Z",
+ "proof": "DISTANCE-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing DISTANCE-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, the frozen test of A40, supported; ticket B, proved), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/DISTANCE-20261108-001A/DISTANCE-20261108-001A-E001_isolated_routes/contract.json": "Frozen",
+   "artifacts/DISTANCE-20261108-001A/DISTANCE-20261108-001A-E001_isolated_routes/run/result.json": "run output",
+   "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json": "Proved",
+   "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

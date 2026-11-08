@@ -1,0 +1,897 @@
+{
+ "ticket": "DISTANCE-20261108-001B",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "files": 6,
+    "mismatched": []
+   }
+  },
+  "1 isolated induced routes: the need set is the Lucas set, every route contact keeps its witnesses": {
+   "pass": true,
+   "info": {
+    "routes": 502,
+    "failures": 0,
+    "networks": 7,
+    "spacings": "2, 3, 4 and unequal (2 to 9)"
+   }
+  },
+  "2 the earliest need any freeze allows is 1 + the least cells of a route (g d + 1 at equal spacing); unaided at g k + 1": {
+   "pass": true,
+   "info": {
+    "pairs": 18052,
+    "failures": 0
+   }
+  },
+  "3 the most disjoint cuts that leave two rings in different native pieces is the ring graph's distance (layer cuts)": {
+   "pass": true,
+   "info": {
+    "ring pairs": 1938,
+    "layer cuts": 5164,
+    "failures": 0
+   }
+  },
+  "4 the most disjoint sets that block a ring from a contact for good is the directed distance (layers of the contact graph)": {
+   "pass": true,
+   "info": {
+    "pairs": 2308,
+    "layer cuts read at the cell level (exact)": 1304,
+    "failures": 0
+   }
+  },
+  "5 cone: the plain first need is never before the directed distance, and on time exactly when an odd number of shortest routes arrive": {
+   "pass": true,
+   "info": {
+    "square torus 5": {
+     "on time": 1050,
+     "later": 200,
+     "never": 0
+    },
+    "square torus 6": {
+     "on time": 2016,
+     "later": 288,
+     "never": 288
+    },
+    "square torus 7": {
+     "on time": 3234,
+     "later": 1568,
+     "never": 0
+    },
+    "square torus 8": {
+     "on time": 4608,
+     "later": 512,
+     "never": 3072
+    },
+    "triangular torus 4": {
+     "on time": 768,
+     "later": 0,
+     "never": 0
+    },
+    "triangular torus 5": {
+     "on time": 1575,
+     "later": 300,
+     "never": 0
+    },
+    "triangular torus 6": {
+     "on time": 3240,
+     "later": 648,
+     "never": 0
+    },
+    "triangular torus 7": {
+     "on time": 6321,
+     "later": 882,
+     "never": 0
+    },
+    "honeycomb torus 3": {
+     "on time": 486,
+     "later": 0,
+     "never": 0
+    },
+    "honeycomb torus 4": {
+     "on time": 1248,
+     "later": 0,
+     "never": 288
+    },
+    "honeycomb torus 5": {
+     "on time": 2850,
+     "later": 450,
+     "never": 450
+    },
+    "honeycomb torus 6": {
+     "on time": 6480,
+     "later": 1296,
+     "never": 0
+    },
+    "tetrahedron": {
+     "on time": 24,
+     "later": 0,
+     "never": 0
+    },
+    "cube": {
+     "on time": 96,
+     "later": 0,
+     "never": 0
+    },
+    "octahedron": {
+     "on time": 72,
+     "later": 0,
+     "never": 0
+    },
+    "dodecahedron": {
+     "on time": 600,
+     "later": 0,
+     "never": 0
+    },
+    "icosahedron": {
+     "on time": 360,
+     "later": 0,
+     "never": 0
+    },
+    "genus 2, 16 rings of three contacts (GL(2,3))": {
+     "on time": 384,
+     "later": 0,
+     "never": 0
+    },
+    "genus 2, 6 rings of eight contacts (GL(2,3))": {
+     "on time": 144,
+     "later": 0,
+     "never": 0
+    },
+    "genus 3, 56 rings of three contacts (Klein quartic, PSL(2,7))": {
+     "on time": 4704,
+     "later": 0,
+     "never": 0
+    },
+    "genus 3, 24 rings of seven contacts (PSL(2,7))": {
+     "on time": 2016,
+     "later": 0,
+     "never": 0
+    }
+   }
+  },
+  "6 square torus: closed forms of the directed distance, D = ceil(d / 2) for every ring and contact, Lucas for one kind": {
+   "pass": true,
+   "info": {
+    "sides": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "closed-form mismatches": 0,
+    "D mismatches": 0,
+    "same-kind pairs": 177834,
+    "Lucas mismatches": 0
+   }
+  },
+  "7 the plane: a contact's need on another of its kind at offset (a, b) never comes exactly when v2(a) = v2(b); k(2a, 2b) = 2k(a, b)": {
+   "pass": true,
+   "info": {
+    "window": "|a|, |b| <= 31, powers of L to 63",
+    "points": 3969,
+    "never reached": 1364,
+    "share never": 0.3437,
+    "mismatches with v2(a) = v2(b)": 0,
+    "doubling k(2a, 2b) = 2 k(a, b) checked on": 621,
+    "doubling failures": 0
+   }
+  },
+  "8 translates: the directed distance from a contact to its translate is m/2 times the ring graph's distance": {
+   "pass": true,
+   "info": {
+    "pairs": 121928,
+    "failures": 0,
+    "tori": [
+     "square 5",
+     "square 6",
+     "square 7",
+     "square 8",
+     "square 9",
+     "square 10",
+     "triangular 4",
+     "triangular 5",
+     "triangular 6",
+     "triangular 7",
+     "triangular 8",
+     "triangular 9",
+     "honeycomb 3",
+     "honeycomb 4",
+     "honeycomb 5",
+     "honeycomb 6",
+     "honeycomb 7",
+     "honeycomb 8"
+    ]
+   }
+  },
+  "9 computed: triangular tori D = ceil(d / 3) (sides 4 to 10); honeycomb tori ceil(3D/2) - 1 <= d <= ceil(3D/2) (sides 3 to 9)": {
+   "pass": true,
+   "info": {
+    "genus 2, 16 rings of three contacts (GL(2,3))": [
+     [
+      [
+       0,
+       0
+      ],
+      48
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      48
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      48
+     ],
+     [
+      [
+       2,
+       2
+      ],
+      48
+     ],
+     [
+      [
+       2,
+       3
+      ],
+      96
+     ],
+     [
+      [
+       2,
+       4
+      ],
+      48
+     ],
+     [
+      [
+       3,
+       3
+      ],
+      48
+     ]
+    ],
+    "genus 2, 6 rings of eight contacts (GL(2,3))": [
+     [
+      [
+       0,
+       0
+      ],
+      48
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      48
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      48
+     ]
+    ],
+    "genus 3, 56 rings of three contacts (Klein quartic, PSL(2,7))": [
+     [
+      [
+       0,
+       0
+      ],
+      168
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      168
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      168
+     ],
+     [
+      [
+       2,
+       2
+      ],
+      168
+     ],
+     [
+      [
+       2,
+       3
+      ],
+      336
+     ],
+     [
+      [
+       2,
+       4
+      ],
+      168
+     ],
+     [
+      [
+       3,
+       3
+      ],
+      168
+     ],
+     [
+      [
+       3,
+       4
+      ],
+      504
+     ],
+     [
+      [
+       3,
+       5
+      ],
+      504
+     ],
+     [
+      [
+       4,
+       5
+      ],
+      504
+     ],
+     [
+      [
+       4,
+       6
+      ],
+      672
+     ],
+     [
+      [
+       4,
+       7
+      ],
+      168
+     ],
+     [
+      [
+       5,
+       6
+      ],
+      336
+     ],
+     [
+      [
+       5,
+       7
+      ],
+      504
+     ],
+     [
+      [
+       5,
+       8
+      ],
+      168
+     ]
+    ],
+    "genus 3, 24 rings of seven contacts (PSL(2,7))": [
+     [
+      [
+       0,
+       0
+      ],
+      168
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      168
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      168
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      336
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      168
+     ],
+     [
+      [
+       2,
+       4
+      ],
+      336
+     ],
+     [
+      [
+       2,
+       5
+      ],
+      336
+     ],
+     [
+      [
+       2,
+       6
+      ],
+      336
+     ]
+    ],
+    "tetrahedron": [
+     [
+      [
+       0,
+       0
+      ],
+      12
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      12
+     ]
+    ],
+    "cube": [
+     [
+      [
+       0,
+       0
+      ],
+      24
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      24
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      24
+     ],
+     [
+      [
+       2,
+       3
+      ],
+      24
+     ]
+    ],
+    "octahedron": [
+     [
+      [
+       0,
+       0
+      ],
+      24
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      24
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      24
+     ]
+    ],
+    "dodecahedron": [
+     [
+      [
+       0,
+       0
+      ],
+      60
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      60
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      60
+     ],
+     [
+      [
+       2,
+       2
+      ],
+      60
+     ],
+     [
+      [
+       2,
+       3
+      ],
+      120
+     ],
+     [
+      [
+       3,
+       4
+      ],
+      120
+     ],
+     [
+      [
+       3,
+       5
+      ],
+      60
+     ],
+     [
+      [
+       4,
+       6
+      ],
+      60
+     ]
+    ],
+    "icosahedron": [
+     [
+      [
+       0,
+       0
+      ],
+      60
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      60
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      60
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      60
+     ],
+     [
+      [
+       2,
+       4
+      ],
+      60
+     ],
+     [
+      [
+       2,
+       5
+      ],
+      60
+     ]
+    ]
+   }
+  },
+  "10 computed: the plain first need is not a metric; the directed distance is a directed metric": {
+   "pass": true,
+   "info": [
+    {
+     "network": "square torus 5",
+     "contact to contact: triangle violations": "20000 of 61250",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 600,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "2600 of 15625",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "2200 of 15625",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "square torus 6",
+     "contact to contact: triangle violations": "48096 of 109512",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 2016,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "7848 of 44100",
+     "ring to ring: pairs never needed": 36,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "7848 of 46656",
+     "contact needing ring: pairs never": 288
+    },
+    {
+     "network": "square torus 7",
+     "contact to contact: triangle violations": "166208 of 551250",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 2744,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "19208 of 117649",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "16464 of 117649",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "triangular torus 4",
+     "contact to contact: triangle violations": "13632 of 30000",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 1344,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "672 of 4096",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "672 of 4096",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "triangular torus 5",
+     "contact to contact: triangle violations": "62550 of 165675",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 3300,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "2400 of 15625",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "2400 of 15625",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "honeycomb torus 3",
+     "contact to contact: triangle violations": "3024 of 11907",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 432,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "864 of 5832",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "864 of 5832",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "honeycomb torus 4",
+     "contact to contact: triangle violations": "13632 of 30000",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 1344,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "4320 of 30752",
+     "ring to ring: pairs never needed": 32,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "3936 of 32768",
+     "contact needing ring: pairs never": 288
+    },
+    {
+     "network": "honeycomb torus 5",
+     "contact to contact: triangle violations": "62550 of 165675",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 3300,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "16950 of 120050",
+     "ring to ring: pairs never needed": 50,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "14250 of 125000",
+     "contact needing ring: pairs never": 450
+    },
+    {
+     "network": "honeycomb torus 7",
+     "contact to contact: triangle violations": "484806 of 1746507",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 12936,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "87318 of 922082",
+     "ring to ring: pairs never needed": 98,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "86142 of 941192",
+     "contact needing ring: pairs never": 882
+    },
+    {
+     "network": "honeycomb torus 9",
+     "contact to contact: triangle violations": "2010582 of 10412307",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 35964,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "490860 of 4251528",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "344088 of 4251528",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "tetrahedron",
+     "contact to contact: triangle violations": "24 of 54",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 24,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 1,
+     "ring to ring: triangle violations": "0 of 64",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "0 of 64",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "cube",
+     "contact to contact: triangle violations": "120 of 1452",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 48,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 1,
+     "ring to ring: triangle violations": "96 of 512",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "96 of 512",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "octahedron",
+     "contact to contact: triangle violations": "120 of 1452",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 48,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 1,
+     "ring to ring: triangle violations": "24 of 216",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "24 of 216",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "dodecahedron",
+     "contact to contact: triangle violations": "840 of 25230",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 360,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 1,
+     "ring to ring: triangle violations": "1140 of 8000",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "1140 of 8000",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "icosahedron",
+     "contact to contact: triangle violations": "840 of 25230",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 360,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 1,
+     "ring to ring: triangle violations": "240 of 1728",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "240 of 1728",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "genus 2, 16 rings of three contacts (GL(2,3))",
+     "contact to contact: triangle violations": "528 of 12696",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 288,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "528 of 4096",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "528 of 4096",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "genus 2, 6 rings of eight contacts (GL(2,3))",
+     "contact to contact: triangle violations": "528 of 12696",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 288,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "24 of 216",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "24 of 216",
+     "contact needing ring: pairs never": 0
+    },
+    {
+     "network": "genus 3, 56 rings of three contacts (Klein quartic, PSL(2,7))",
+     "contact to contact: triangle violations": "30912 of 551124",
+     "contact to contact: ordered pairs with K(a, b) != K(b, a)": 4704,
+     "directed distance: triangle violations": 0,
+     "directed distance: largest |d(a, b) - d(b, a)|": 2,
+     "ring to ring: triangle violations": "13272 of 175616",
+     "ring to ring: pairs never needed": 0,
+     "directed distance, ring to ring (least over their contacts): triangle violations": "13272 of 175616",
+     "contact needing ring: pairs never": 0
+    }
+   ]
+  },
+  "11 computed: unequal spacing (2 to 9 cells): the plain first need mostly meets 1 + the least cells, and witnesses lapse": {
+   "pass": true,
+   "info": [
+    {
+     "network": "square torus 5",
+     "replicate": 0,
+     "first need at 1 + least cells": 1227,
+     "later": 23,
+     "none by lag 300": 0,
+     "contacts losing a witness by lag 300": 50,
+     "contacts missing a ring by lag 300": 5,
+     "contacts": 50
+    },
+    {
+     "network": "square torus 5",
+     "replicate": 1,
+     "first need at 1 + least cells": 1232,
+     "later": 18,
+     "none by lag 300": 0,
+     "contacts losing a witness by lag 300": 50,
+     "contacts missing a ring by lag 300": 8,
+     "contacts": 50
+    },
+    {
+     "network": "square torus 5",
+     "replicate": 2,
+     "first need at 1 + least cells": 1246,
+     "later": 4,
+     "none by lag 300": 0,
+     "contacts losing a witness by lag 300": 50,
+     "contacts missing a ring by lag 300": 10,
+     "contacts": 50
+    },
+    {
+     "network": "genus 2, 16 rings of three contacts (GL(2,3))",
+     "replicate": 0,
+     "first need at 1 + least cells": 384,
+     "later": 0,
+     "none by lag 300": 0,
+     "contacts losing a witness by lag 300": 24,
+     "contacts missing a ring by lag 300": 2,
+     "contacts": 24
+    },
+    {
+     "network": "genus 2, 16 rings of three contacts (GL(2,3))",
+     "replicate": 1,
+     "first need at 1 + least cells": 383,
+     "later": 1,
+     "none by lag 300": 0,
+     "contacts losing a witness by lag 300": 24,
+     "contacts missing a ring by lag 300": 7,
+     "contacts": 24
+    },
+    {
+     "network": "genus 2, 16 rings of three contacts (GL(2,3))",
+     "replicate": 2,
+     "first need at 1 + least cells": 383,
+     "later": 1,
+     "none by lag 300": 0,
+     "contacts losing a witness by lag 300": 24,
+     "contacts missing a ring by lag 300": 9,
+     "contacts": 24
+    }
+   ]
+  }
+ },
+ "status": "passed"
+}

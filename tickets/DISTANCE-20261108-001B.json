@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DISTANCE-20261108-001A",
+    "GENUS-CUT-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "DISTANCE-20261108-001B-P001",
+    "terminal_artifact": "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json"
+  },
+  "id": "DISTANCE-20261108-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for every network of rule-60 rings with law (12,12) contacts: the earliest lag at which freezing can make a contact need a ring is g d + 1, with d the contact graph's directed distance; the most pairwise disjoint freeze sets that block every route equals d; an isolated chordless route's need set is given by binomial coefficients and its first lag adds under concatenation; the plain first need in the full network equals d exactly when an odd number of shortest routes arrive, and is not a metric. Relate d to the ring graph's distance on the square, triangular and honeycomb lattices; count, as computation, the plain first need's agreement with d and its triangle-inequality failures.",
+  "ownership": {
+    "root": false,
+    "scope_id": "DISTANCE-20261108-001"
+  },
+  "parent": "DISTANCE-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (by hand; finite claims checked exactly, checks 9 to 11 computed): in every network of rule-60 rings with law (12,12) contacts, an isolated chordless route makes its far contact first need the near ring at 1 plus the cells it carries (g L + 1), additively, and an induced one composes at the Lucas lags C(T - L - 1, own cells + m) with every contact persistent; the earliest need any freeze allows is 1 + lambda, g delta + 1, delta the contact graph's directed distance, a directed metric; the most disjoint cuts separating two rings into native pieces is the ring graph's distance D, and the most disjoint sets blocking a contact from a ring for good is delta; the plain first need is the cone filtered by the parity of shortest routes (on time iff an odd number arrive), not a metric. On the square torus D = ceil(delta/2) for every ring and contact and Lucas decides contacts of one kind; on the plane offsets with v2(a) = v2(b) are never needed (density 1/3); between a contact and its translate delta = (m/2) D on square, triangular and honeycomb tori. Computed: D = ceil(delta/3) on triangular tori, a band on honeycomb tori, triangle-inequality counts.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Distance across time is native as a cone"
+}

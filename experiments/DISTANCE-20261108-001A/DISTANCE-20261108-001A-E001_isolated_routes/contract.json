@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "DISTANCE-20261108-001A-E001",
+  "ticket": "DISTANCE-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does the substrate read counted length (A40)? Along a route of L contacts isolated by freezing every contact off it, is the first lag at which the far contact needs the near ring g L + 1, with g fixed by the spacing and independent of L, and do first lags add under concatenation at a shared contact?",
+  "public_inputs": {
+    "library": "distance_lib.py in this folder, on genus_lib.py of GENUS-CUT-20261108-001A (sha256 916d2bf8ab95c44a1dad99a7deeb123baa5a933854133d46b7d251268b43b809), lattice_lib.py of LATTICE-NET-20261108-001A (sha256 665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42), loopnet_lib.py of LOOP-NET-20261108-001A (sha256 1adbc514bf5aaf3b23af55229a9b9d1a7795f3a0f9a3312bf2f86cf75920197b) and net_lib.py of SEPARATE-20261108-001A (sha256 e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351).",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Rule-60 rings with law-(12, 12) contacts. The roster: square tori of side 5, 6 and 7; triangular tori of side 4 and 5; honeycomb tori of side 3, 4 and 5; the genus-2 networks of GL(2,3) (16 rings of three contacts, 6 rings of eight); the genus-3 networks of PSL(2,7) (the Klein quartic map, 56 rings of three contacts, and its dual, 24 rings of seven); the five Platonic networks. Contacts equally spaced g = 2, 3 and 4 cells apart. For L = 1 to 10, three random shortest routes of L arcs and three random chordless routes of L arcs (seed 20261108, drawn per network and spacing), each from a ring X that holds its first contact and no other, each hop along exactly one corner, no arc c_i -> c_j with j > i + 1.",
+    "unequal_corners": "On the square torus of side 5 and the genus-2 network of 16 rings, four replicates with consecutive contacts 2 to 5 cells apart at random (seeded), routes drawn as above.",
+    "reading": "Every contact off the route frozen (A38, c <- c); the first lag at which the last contact's value depends on X's own first-row cells, read from rows of M^T (net_lib), to twice the predicted lag plus 8."
+  },
+  "forbidden_inputs": [
+    "Changing the roster, spacings, lengths, seed or pass criteria after seeing results",
+    "Dropping routes or splits other than the declared skip (the ring a half starts from holds a later contact of the route)"
+  ],
+  "primary_observable": "For every route, its first lag t; for every inner contact c_i, the first lags t_P and t_Q of the two halves, the second from the ring Y of c_i that the next hop leaves; with unequal corners, t against 1 plus the cells the route carries influence through.",
+  "cheapest_meaningful_control": "The theory: a chordless route isolated by freezing carries exactly one walk of L arcs and none shorter, so by LOOP-NET-20261108-001A, Theorem 1, its far contact first needs X at the route's cell count plus 1 (LATTICE-NET-20261108-001A, Theorem 1, at equal spacing). The test reads it from the cells, not from walks.",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The totals and the three pass flags.",
+  "decision_or_followup_rule": "Frozen. (a) Affinity: t = g L + 1 for every route. (b) Additivity: (t_P - 1) + (t_Q - 1) = t - 1 at every split. (c) Cells: with unequal corners t = 1 + the cells the route carries influence through. A40 is Confirmed if (a), (b) and (c) all pass; Overturned if (a) or (b) fails for any route; Reworded (counted length in contacts only where contacts are equally spaced, the native count being cells otherwise) if only (c) fails.",
+  "stop_rule": "Stop when every network, spacing and length of the roster has its routes read.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only. The proof for every network is DISTANCE-20261108-001B's.",
+    "Isolated routes only: the plain first need in the full network is another reading (DISTANCE-20261108-001B).",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing: the roster was built and its genus and parallel corners counted (none); run.py --pilot sampled routes on a loop of six rings, off the roster, and printed no verdicts. A scratch computation of walk counts (not of cells) had compared the plain first need with the contact graph's distance on smaller lattices; no isolated route was read at the cell level before the freeze."
+}

@@ -1,0 +1,95 @@
+{
+ "check 9 one size past": {
+  "pass": true,
+  "triangular D = ceil(delta/3), sides 11 and 12": true,
+  "honeycomb band, sides 10 and 11": true
+ },
+ "check 10 one size past: rings each ring never needs, honeycomb tori": [
+  {
+   "side": 6,
+   "rings": 72,
+   "pairs never": 0,
+   "rings by how many rings they never need": []
+  },
+  {
+   "side": 8,
+   "rings": 128,
+   "pairs never": 1664,
+   "rings by how many rings they never need": [
+    [
+     13,
+     128
+    ]
+   ]
+  },
+  {
+   "side": 10,
+   "rings": 200,
+   "pairs never": 2600,
+   "rings by how many rings they never need": [
+    [
+     13,
+     200
+    ]
+   ]
+  },
+  {
+   "side": 11,
+   "rings": 242,
+   "pairs never": 242,
+   "rings by how many rings they never need": [
+    [
+     1,
+     242
+    ]
+   ]
+  },
+  {
+   "side": 12,
+   "rings": 288,
+   "pairs never": 0,
+   "rings by how many rings they never need": []
+  },
+  {
+   "side": 13,
+   "rings": 338,
+   "pairs never": 338,
+   "rings by how many rings they never need": [
+    [
+     1,
+     338
+    ]
+   ]
+  }
+ ],
+ "check 8 one size past": {
+  "pass": true,
+  "pairs": 194360,
+  "failures": 0
+ },
+ "check 6 one size past": {
+  "pass": true,
+  "sides": [
+   14,
+   15
+  ],
+  "same-kind pairs": 178082
+ },
+ "A40 frozen test one length and one spacing past": {
+  "pass": true,
+  "runs": [
+   {
+    "network": "square torus 8",
+    "g": 5,
+    "routes": 12,
+    "affine": 12
+   },
+   {
+    "network": "genus 3, 56 rings of three contacts (Klein quartic, PSL(2,7))",
+    "g": 5,
+    "routes": 6,
+    "affine": 6
+   }
+  ]
+ }
+}

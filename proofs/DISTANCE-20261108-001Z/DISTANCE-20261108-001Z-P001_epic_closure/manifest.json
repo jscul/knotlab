@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "DISTANCE-20261108-001Z-P001",
+  "canonical_id": "DISTANCE-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "DISTANCE-20261108-001Z",
+  "proof": "DISTANCE-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of distance across time",
+  "status": "Proved",
+  "claim": "Ledger closing DISTANCE-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, the frozen test of A40, supported; ticket B, proved), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "DISTANCE-20261108-001A",
+    "DISTANCE-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "DISTANCE-20261108-001",
+    "epic_path": [
+      "DISTANCE-20261108-001"
+    ],
+    "parents": [
+      "experiments/DISTANCE-20261108-001A/DISTANCE-20261108-001A-E001_isolated_routes/contract.json",
+      "artifacts/DISTANCE-20261108-001A/DISTANCE-20261108-001A-E001_isolated_routes/run/result.json",
+      "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json",
+      "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/DISTANCE-20261108-001A/DISTANCE-20261108-001A-E001_isolated_routes/contract.json": "c7818ce53ded426b0d79a11940e93bc1e8842f7dbf2a823dbfc26feb8e3ecaae",
+    "artifacts/DISTANCE-20261108-001A/DISTANCE-20261108-001A-E001_isolated_routes/run/result.json": "db8be18f4011ea8fa1b4ad664a621bca624d18162bf1c1cce8688e24b2930365",
+    "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json": "cfa8fa26d7df3f5e629fb573d241bac4589e378535bd24aee4d061df6406c45d",
+    "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/result.json": "9395425ce2572bf295af1c47e38247473ea1104a59235e329b27cdf9d34d3c32"
+  },
+  "paths": {
+    "manifest": "proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's ticket; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

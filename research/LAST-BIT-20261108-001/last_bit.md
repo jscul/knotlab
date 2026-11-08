@@ -29,6 +29,10 @@ tiles out at the level of the plane.
 - **Two ways it can end.** Either some plane obeys the law while its parents break the collar law somewhere, and the decoration fails
   (most likely through a crystal outside the domino family, whose seams survive one cut more), or the off-pinwheel parents die at a
   distance larger than three, and a longer version of this argument proves that one bit per tile forces the pinwheel.
+  - *Corrected 2026-11-08.* The second way needs the 50 pinwheel collars with off-law labels to die as well: a parent tiling built
+    from them obeys only the undecorated collar law, so the argument does not repeat. The same holds for the route stated in
+    `LAST-BIT-20261108-001B`'s proof ("if the parents' collars were always pinwheel collars"). See `docs/CORRECTIONS.md`
+    (Not a block); `CRYSTAL-UP-20261108-001` tests both kinds.
 - **The domino family is closed.** Its crystals are legal after one or two cuts or never, so a new escape needs another family:
   larger tori, or tilings not built from 1 × 2 rectangles.
 

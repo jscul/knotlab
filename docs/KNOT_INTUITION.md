@@ -3988,11 +3988,13 @@ So network holes come in two kinds:
      escaped, and its parent labels are forced.
    - **No deeper domino crystals (exploratory).** In the whole domino-torus family no collar needs exactly three cuts to become a
      pinwheel collar: its crystals are legal after one or two cuts or never. So that family is exhausted for this decoration.
-   - **The forcing proof stalls (proved).** If every parent collar were a pinwheel collar, a level-by-level argument would prove the
+   - **The forcing proof stalls (proved).** If every labelled parent collar obeyed the law, a level-by-level argument would prove the
      plane is a pinwheel tiling. But 153 labelled parent collars that are not pinwheel collars survive a joint consistency test and
-     exhaustive extension two tiles out at the parent level, and most survive three.
-   - **Reading.** The question is still open, now with a sharp shape: either some plane obeys the law while its parents break the
-     collar law, probably a crystal outside the domino family, or those defects die further out and one bit per tile forces the
+     exhaustive extension two tiles out at the parent level, and most survive three; 50 pinwheel collars with labels the law does
+     not list survive the joint test and were not tested further (corrected 2026-11-08: the entry first asked only for pinwheel
+     collars).
+   - **Reading.** The question is still open, now with a sharp shape: either some plane obeys the law while its parents break it,
+     probably a crystal outside the domino family, or all those off-law parents die further out and one bit per tile forces the
      pinwheel.
    - **Next (awaiting a go-ahead).** A crystal built from the surviving parent collars, searched on tori one level up (Payoff 2/3,
      Concreteness 2/3) ([decision note](../research/LAST-BIT-20261108-001/last_bit.md)).

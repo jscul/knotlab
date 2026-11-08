@@ -3,6 +3,19 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: the last decoration's forcing route needs every off-law parent to die
+
+- LAST-BIT-20261108-001 said that if every parent collar of a plane obeying
+  the last one-bit decoration's law (10101 / 00110) were a pinwheel collar, a
+  level-by-level argument would prove that the plane is a pinwheel tiling.
+  Pinwheel collars are not enough: the argument repeats one level up only if
+  the parents' labelled collars obey the law, so the 50 surviving pinwheel
+  collars with labels the law does not list have to die as well.
+- Unchanged: every computed count, and the conclusion that the route stalls
+  at its first step.
+- The [decision note](research/LAST-BIT-20261108-001/last_bit.md) carries a
+  correction note; CRYSTAL-UP-20261108-001 tests both kinds of off-law parent.
+
 ## 8 November 2026: persistent contacts do compose across time
 
 - PROCESS-CHAIN-20261108-001 said that, at the sizes tested, two contacts

@@ -6,7 +6,11 @@
     "PATH-GROWTH-20261108-001A"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "accepted_artifact_id": "RECUR-PATH-20261108-001A-E002",
+    "artifact_path": "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E001_recurring_lags",
+    "contract_path": "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/contract.json"
+  },
   "id": "RECUR-PATH-20261108-001A",
   "kind": "ticket",
   "legacy": {},
@@ -17,7 +21,7 @@
   },
   "parent": "RECUR-PATH-20261108-001",
   "schema_version": 1,
-  "status": "Supported 2026-11-08 (exploratory): A34 overturned by the pre-registered rule. In E002 (E001's every-lag control failed on a bug in that check; E002 fixes it and passes), 452 families compose at recurring lags with every contact persistent at every size of their schedule (256 with contacts two apart on rings of 4 to 9 cells, rules 60 and 102; 196 in paths of 4 to 9 rings), while none composes at every lag at two sizes; all 452 verified independently and on full state spaces at the smallest sizes.",
+  "status": "Closed: supported 2026-11-08 (exploratory): A34 overturned by the pre-registered rule. In E002 (E001's every-lag control failed on a bug in that check; E002 fixes it and passes), 452 families compose at recurring lags with every contact persistent at every size of their schedule (256 with contacts two apart on rings of 4 to 9 cells, rules 60 and 102; 196 in paths of 4 to 9 rings), while none composes at every lag at two sizes; all 452 verified independently and on full state spaces at the smallest sizes.",
   "status_class": "supported",
   "stop_rule": "",
   "title": "Recurring-lag composition across sizes"

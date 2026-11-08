@@ -1,0 +1,24 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "INTERMITTENT-NET-20261108-001A",
+    "PATH-GROWTH-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "RECUR-PATH-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "A frozen exploratory census on PATH-GROWTH-20261108-001's growth families: for each path, whether every contact persists, the share of its last contact's eventual cycle at which it binds the end rings, and whether every contact binds its own rings at those lags; full counts at the two smallest sizes of each schedule, and every family meeting a criterion at both followed through the larger sizes.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RECUR-PATH-20261108-001"
+  },
+  "parent": "RECUR-PATH-20261108-001",
+  "schema_version": 1,
+  "status": "Supported 2026-11-08 (exploratory): A34 overturned by the pre-registered rule. In E002 (E001's every-lag control failed on a bug in that check; E002 fixes it and passes), 452 families compose at recurring lags with every contact persistent at every size of their schedule (256 with contacts two apart on rings of 4 to 9 cells, rules 60 and 102; 196 in paths of 4 to 9 rings), while none composes at every lag at two sizes; all 452 verified independently and on full state spaces at the smallest sizes.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Recurring-lag composition across sizes"
+}

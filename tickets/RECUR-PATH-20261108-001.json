@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "RECUR-PATH-20261108-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Challenge A34 (a chain composes when its far contact binds its ends at every lag), as PATH-GROWTH-20261108-001's stop rule set out and the coordinator relayed on 2026-11-08 (G5 with G1). The alternative reads composition at the recurring lags the path itself fixes: the far contact binds the end rings at some lag of its eventual cycle, so at lags recurring with the path's period. The discriminator is transport: on PATH-GROWTH's growth families (one linear rule per ring, every law; four rings growing from 3 to 9 cells, or paths from 4 to 9 rings), is there a family that composes at recurring lags at every size, with every contact persistent, or with every contact binding at the composing lags as in INTERMITTENT-NET-20261108-001? The meaning of each outcome for A34 is pre-registered in docs/ASSUMPTIONS.md and in the contract before the census runs.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RECUR-PATH-20261108-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-08: A34 overturned by the pre-registered rule. 452 families of paths compose at recurring lags with every contact persistent at every size of their schedule (rings of 4 to 9 cells, rules 60 and 102; paths of 4 to 9 rings), while none composes at every lag at two sizes; verified independently and on full state spaces. A37 replaces A34; one correction logged; recommendation Continue (prove recurring composition at every size).",
+  "status_class": "complete",
+  "stop_rule": "Stop when every family of the full levels has its verdicts and every family meeting either recurring-lag criterion at both full sizes of its schedule has been followed until it fails or reaches the largest size; then set A34's status by the pre-registered rule.",
+  "title": "Composition at recurring lags across sizes"
+}

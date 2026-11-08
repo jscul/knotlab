@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RECUR-PATH-20261108-001Z-P001",
+  "canonical_id": "RECUR-PATH-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "RECUR-PATH-20261108-001Z",
+  "proof": "RECUR-PATH-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of composition at recurring lags across sizes",
+  "status": "Proved",
+  "claim": "Ledger closing RECUR-PATH-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, exploratory experiments E001 and E002), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "RECUR-PATH-20261108-001A"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract or run output changes.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "RECUR-PATH-20261108-001",
+    "epic_path": [
+      "RECUR-PATH-20261108-001"
+    ],
+    "parents": [
+      "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E001_recurring_lags/contract.json",
+      "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E001_recurring_lags/run/result.json",
+      "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/contract.json",
+      "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E001_recurring_lags/contract.json": "6b089e4ac125b75b0efbf090513f46bf023bb2018581f211f765874707afd431",
+    "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E001_recurring_lags/run/result.json": "680fb439396d6a470791a6c0986ed7e0b42b95b5522e69adba0806a3167e5cfb",
+    "experiments/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/contract.json": "5b9c2ab5577601f6485e4b02ab697ede2aa694892b1ef7b670d8e746e5e7d509",
+    "artifacts/RECUR-PATH-20261108-001A/RECUR-PATH-20261108-001A-E002_recurring_lags_fixed/run/result.json": "89374601085dcbd932ab376478a62c2dde0e2b98ca9457f69b86d034b5a4ade9"
+  },
+  "paths": {
+    "manifest": "proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's ticket; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**238 current results** and 5 superseded ones, from 174 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**238 current results** and 5 superseded ones, from 175 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 174 epics with their closures
+- [Epics](#epics): all 175 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1016,6 +1016,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Paths through mixed middle rings (`PATH-HYBRID-20261108-001`) | [closure](proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PATH-HYBRID-20261108-001/) |
 | 2026-11-08 | Two contacts across time: persistent contacts do not compose (`PROCESS-CHAIN-20261108-001`) | [closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CHAIN-20261108-001/) |
 | 2026-11-08 | Knots between processes: a contact binds two processes exactly when it is a parity, and sharing it costs persistence (`PROCESS-CONTACT-20261108-001`) | [closure](proofs/PROCESS-CONTACT-20261108-001Z/PROCESS-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CONTACT-20261108-001/) |
+| 2026-11-08 | Composition at recurring lags across sizes (`RECUR-PATH-20261108-001`) | [closure](proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/RECUR-PATH-20261108-001/) |
 | 2026-11-08 | The price of roundness in the plane (`ROUND-PRICE-20261108-001`) | [closure](proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/ROUND-PRICE-20261108-001/) |
 | 2026-11-08 | Which shared contacts persist: a fifth to a quarter on larger rings (`SHARED-CONTACT-20261108-001`) | [closure](proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SHARED-CONTACT-20261108-001/) |
 | 2026-11-08 | Prove that creation between glue lines sees only the switching class (`SWITCH-PROOF-20261108-001`) | [closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-PROOF-20261108-001/) |

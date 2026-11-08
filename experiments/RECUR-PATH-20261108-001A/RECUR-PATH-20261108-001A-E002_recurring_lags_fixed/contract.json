@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "RECUR-PATH-20261108-001A-E002",
+  "ticket": "RECUR-PATH-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "A34 under challenge: is there a family of paths, one linear rule per ring and every law fixed, that composes at recurring lags (its last contact binding the end rings at some lag of its eventual cycle) at every size of PATH-GROWTH-20261108-001's growth schedules, with every contact persistent, or with every contact binding at the composing lags?",
+  "public_inputs": {
+    "library": "recur_lib.py in this folder, E001's with the every-lag reading fixed (sha256 85b4c7dff81c603b36ffa7d0b98e745997ab6e1acb79fd044be43fa8c9a90694): analyze() with three readings, every lag (A34), recurring with every contact persistent, and recurring with every contact binding at the composing lags; on PATH-GROWTH-20261108-001A's growth_lib.py (sha256 e0a377996ea598231c07dfb551bfa6594ae72b7a2c3ecb74d02a29c72dda6d19) and NATIVE-PATH-20261108-001A's path_lib.py.",
+    "run": "run.py in this folder (E001's, writing to E002's folder), 16 worker processes.",
+    "family": "PATH-GROWTH-20261108-001A's growth families: every linear rule on each ring and every law at each contact; schedules antipodal (four rings of 3 to 9 cells), two apart (4 to 9 cells) and longer (4 to 9 rings, end rings of 3 cells and middle rings of 5). Stage 1, full levels: every path at four rings of 3 cells (16,384,000), four rings of 4 cells (4,096,000) and four rings in the longer schedule (1,024,000). Stage 2: every family meeting the weakest recurring reading (or undecided) at the smallest size of its schedule followed through the larger sizes until neither recurring reading holds.",
+    "exactness": "Every verdict is exact by the row-sequence reduction; a row sequence that does not repeat within 200,000 lags, or a joint cycle over 1,000,000 lags, is undecided and reported as such."
+  },
+  "forbidden_inputs": [
+    "Changing the families, schedules or readings after seeing results",
+    "Dropping families",
+    "Counting undecided as meeting a reading",
+    "Changing the pre-registered meaning of the outcomes for A34"
+  ],
+  "primary_observable": "Per schedule, the number of families meeting each recurring reading at every size; the full levels' counts of each reading.",
+  "cheapest_meaningful_control": "The every-lag counts of the full levels reproduce PATH-GROWTH-20261108-001A (0 at three and four cells, 8 in the longer schedule at four rings), and ten small paths meeting a recurring reading agree on their full state spaces. Before freezing, the every-lag reading agreed with growth_lib.native on 1,500 random paths and the 16 known native paths, and the recurring-binding-there reading with a direct lag-by-lag check on 1,360 random paths.",
+  "resource_budget": {
+    "wall_minutes": 180,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The full levels' counts and the control.",
+  "decision_or_followup_rule": "Pre-registered in docs/ASSUMPTIONS.md (A34, Challenge) on 2026-11-08 before the run: Overturned if some family composes at recurring lags with every contact persistent at every size of its schedule (the recurring reading then replaces A34 as a new entry); Confirmed, kept for the gate, if such families exist only with contacts binding at the composing lags and not at every lag; Confirmed also if no family composes at recurring lags at every size (composition across time tied to sizes under both readings); back to Assumed if the best candidates meet a recurring reading at every decided size with some sizes undecided.",
+  "stop_rule": "Stop when every path of the full levels has its readings and every followed family has failed both recurring readings or reached the largest size.",
+  "nonclaims": [
+    "Exploratory and non-promotable: these families and schedules only.",
+    "Two-time knots only (A30).",
+    "Linear rules and laws only."
+  ],
+  "feasibility_disclosure": "Before freezing: E001's results had been read, the failed control included. E001 took 226 s. The fix was checked against growth_lib.native on the persistent paths among 400,000 random paths at three cells (no mismatch).",
+  "amendment": "E001 ran under this contract's definitions and its control failed: its every-lag reading checked only the lags from the light cone to the end of the first cycle, an empty range when the cycle ends before the light cone, so it counted such persistent paths as composing at every lag (200, 144 and 140 at the full levels, against PATH-GROWTH-20261108-001A's 0, 0 and 8). E002 fixes that check and changes nothing else: the families, the readings and the pre-registered meaning of the outcomes for A34 are E001's. The two recurring readings do not use the faulty check."
+}

@@ -1713,8 +1713,30 @@ So network holes come in two kinds:
      unbalanced ones: balance is sufficient, not necessary.
    - **Reading.** Closed routes of contacts of every length now hold at every size, by proof, which completes the cycle side of
      composed topology across time for these loops. The powers of two are characteristic 2 at work, where squaring is linear.
-   - **Next (research directions).** Networks of loops, rings with three or more contacts (Payoff 3/3, Concreteness 2/3), or why
-     unbalanced loops persist (Payoff 2/3, Concreteness 2/3) ([decision note](../research/LOOP-ANY-20261108-001/loop_any.md)).
+   - **Next (taken).** Networks of loops, rings with three or more contacts (next entry)
+     ([decision note](../research/LOOP-ANY-20261108-001/loop_any.md)).
+
+   **2026-11-08: networks of loops** (`LOOP-NET-20261108-001`).
+   - **The question.** Give one ring of a loop a third contact, so that two loops share it. Can every contact still bind both of its
+     rings at every lag, and what does balance mean now?
+   - **The criterion (proved).** A contact keeps the two cells it reads last at every lag exactly when the influence returning to it,
+     summed over every closed walk through the network's contacts, cancels.
+   - **Positions make a surface (proved).** The order of the contacts round each ring embeds the network in a surface: walks that keep
+     to one ring go round rings, and walks that change ring at every contact go round faces. Balance becomes a density, every ring and
+     every face carrying the same number of cells per contact. Then a contact's returns cancel exactly when the number of returns of
+     each length is even.
+   - **Symmetric networks persist (proved).** A symmetry that fixes a contact and exchanges its two rings pairs its returns. So two
+     rings sharing three contacts, the five Platonic networks, and square, triangular and honeycomb lattices of rings on a torus keep
+     every contact persistent at every lag at every size.
+   - **Where a loop meets a larger ring, they cannot (proved).** At a contact joining a two-contact ring to a ring of three or more,
+     the short return across the two-contact ring has no partner. Figure-eights and chords, the go-ahead's construction, have such
+     contacts. With every ring of one size, none of 170,502 placements cancels its returns some other way (exploratory), and none of
+     the equally spaced ones tested persists at every size (computed).
+   - **Reading.** Loops can share rings when no ring is special: every contact must look the same from both of its rings. The
+     lattices of rings are the first two-dimensional arrangements of contacts that all persist across time at every size, by proof.
+     The lattice is given, not grown from a law.
+   - **Next (awaiting a go-ahead).** Composition and separation across a lattice of rings (Payoff 3/3, Concreteness 2/3)
+     ([decision note](../research/LOOP-NET-20261108-001/loop_net.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

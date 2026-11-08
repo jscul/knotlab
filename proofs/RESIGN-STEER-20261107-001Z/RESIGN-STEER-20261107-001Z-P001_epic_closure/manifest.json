@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RESIGN-STEER-20261107-001Z-P001",
+  "canonical_id": "RESIGN-STEER-20261107-001Z-P001",
+  "kind": "proof",
+  "ticket": "RESIGN-STEER-20261107-001Z",
+  "proof": "RESIGN-STEER-20261107-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of steering by re-signing",
+  "status": "Proved",
+  "claim": "Closure ledger of RESIGN-STEER-20261107-001; it makes no new claim. Each conclusion is carried by the cited evidence: ticket A (a proof) and ticket B (an exploratory experiment).",
+  "dependencies": [
+    "RESIGN-STEER-20261107-001A",
+    "RESIGN-STEER-20261107-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "inherited-consequence",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, contract or result changes, or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "RESIGN-STEER-20261107-001",
+    "epic_path": [
+      "RESIGN-STEER-20261107-001"
+    ],
+    "parents": [
+      "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/manifest.json",
+      "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/result.json",
+      "experiments/RESIGN-STEER-20261107-001B/RESIGN-STEER-20261107-001B-E001_local_rules_and_the_force_between_halves/contract.json",
+      "artifacts/RESIGN-STEER-20261107-001B/RESIGN-STEER-20261107-001B-E001_local_rules_and_the_force_between_halves/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/manifest.json": "ca1ad24faa5446f6b174aad31f86d2047cf2bf17cdb9b74a27ae9581c9ed3743",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/result.json": "09ed9683240f1b80c27003fafcdb81710bb7d9cbc1b01cdb8719595a6230e7e6",
+    "experiments/RESIGN-STEER-20261107-001B/RESIGN-STEER-20261107-001B-E001_local_rules_and_the_force_between_halves/contract.json": "3e0f860b8c4345c6d50fd5661e22d88deb6af4bea8c0b729beb359b05e57bf1d",
+    "artifacts/RESIGN-STEER-20261107-001B/RESIGN-STEER-20261107-001B-E001_local_rules_and_the_force_between_halves/run/result.json": "6c869dfee86674ed861df60ba17b024229e357cb7e4cab0faba321c8a06b5b18"
+  },
+  "paths": {
+    "manifest": "proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/result.json",
+    "check": "proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "Ledger only; the claims and their scope are those of tickets A and B.",
+  "validation": {
+    "level": "V0 ledger check: bound digests, Proved proof, frozen contract with its run output, notes present, terminal ticket classes.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "checked: ledger bound to the Proved proof A and the frozen exploratory experiment B; decision note present; tickets terminal; no human or external review",
+    "novelty": "not applicable: no new claim"
+  }
+}

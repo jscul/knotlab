@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-SURFACES-20261107-001Z",
+    "FLAT-STATES-20261107-001Z",
+    "SPHERE-GROWTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "RESIGN-STEER-20261107-001A-P001"
+  },
+  "id": "RESIGN-STEER-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, on Kasteleyn-signed knot spheres (two-coloured triangulations of the sphere): (1) the bookkeeping: violated lines minus over-agreement plus half the number of even faces is 1 in every state and law, so one re-signing moves at most one unit between state and law; (2) on simplicial spheres every law with exactly two even faces, wherever they sit, is satisfiable (Euler's formula and Hall's theorem with COUNT-SURFACES-20261107-001A theorem 4), so the first re-signing always moves the dissonance out of the states and every line is the violated line of some flat state; (3) every line is the violated line of exactly as many flat states, N(T) with N(T)^2 = det(B B^T)/e2(n0, n1, n2), and two even faces of different colours never allow fewer consistent states than two adjacent ones (Kasteleyn's theorem, the 3-colouring kernel and Cauchy-Binet); (4) with the state held fixed, re-signings made only at the violated line or at an even face carry the dissonance from any line to any line through configurations holding only the forced unit, and a closed learning walk equals a block change of state. Check on the octahedral spheres K_2-K_6, tubes, grown spheres and branched double covers, with controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RESIGN-STEER-20261107-001"
+  },
+  "parent": "RESIGN-STEER-20261107-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-07: on Kasteleyn knot spheres violated lines minus over-agreement plus half the even faces is 1 in every state and law; on simplicial spheres every law with two even faces is satisfiable wherever they sit, so one sign change at the violated line always moves the dissonance into the law and every line is the violated line of a flat state; every line is the violated line of exactly 2 N(T) flat states, N(T)^2 = det(B B^T)/e2(colour classes), and differently coloured even faces allow at least N(T) matchings; with the state fixed, sign changes made only at the dissonance carry it from any line to any line through configurations holding only the forced unit, and a closed walk is a block change of state. Checked on K_2-K_8, tubes, grown spheres and branched double covers.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Re-signing splits the forced dissonance and carries it anywhere"
+}

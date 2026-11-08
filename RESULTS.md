@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**221 current results** and 5 superseded ones, from 156 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**223 current results** and 5 superseded ones, from 157 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,8 +29,9 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
+- [Other results](#other-results): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 156 epics with their closures
+- [Epics](#epics): all 157 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -769,6 +770,17 @@ Checks and extensions of Braun's formal Res(⊕) lower bound.
   For l >= 32, every DAG-like Res(⊕) refutation of bit PHP with 2^l holes and m pigeons, for 2^l < m with 8192 m l^2 (2l+5) <= 4^l, has more than exp(4^l/(8192 m l^2)) lines, checked in Lean against Braun's replayed development. A proper colouring with m classes turns every bit-colouring refutation into one of bit PHP with m pigeons of the same size, so the bound covers every graph whose chromatic number lies in that range.
   [proof P001](proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/proof.md), [epic closure](proofs/HOLE-CRITERION-COLOURING-20261019-001Z/HOLE-CRITERION-COLOURING-20261019-001Z-P001_epic_closure/proof.md)
 
+## Other results
+
+Results not yet placed in a line of work.
+
+- **2026-11-07 · Re-signing moves the knot sphere's forced dissonance into the law and carries it anywhere** (`RESIGN-STEER-20261107-001-D001`).
+  On every simplicial knot sphere with Kasteleyn signs, every law with exactly two even faces is satisfiable wherever they sit, so one sign change at the violated line always moves the forced dissonance out of the states and into the law. With the state held fixed, sign changes made only at the violated line or at an even face carry the dissonance from any line to any line, and a closed walk of them equals a block change of state.
+  [proof P001](proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/proof.md), [epic closure](proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Every line of a knot sphere carries the forced dissonance equally often** (`RESIGN-STEER-20261107-001-D002`).
+  On every simplicial two-coloured sphere triangulation with Kasteleyn signs, each line is the only violated line of exactly 2N(T) states with no over-agreeing face, where N(T)^2 = det(BB^T)/(n0n1 + n1n2 + n2n0) for the line-vertex matrix B and the class sizes n_i of the vertex 3-colouring. Two even faces of different colours never allow fewer consistent states than two adjacent ones.
+  [proof P001](proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/proof.md), [epic closure](proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/proof.md)
+
 ## Notes
 
 Self-contained write-ups. The first three are also in [notes/](notes/) with standalone checks.
@@ -937,6 +949,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | The pinwheel grown with nothing drawn (`PINWHEEL-NATIVE-20261107-001`) | [closure](proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/PINWHEEL-NATIVE-20261107-001/) |
 | 2026-11-07 | Round without coins: the pinwheel law (`PINWHEEL-ROUND-20261107-001`) | [closure](proofs/PINWHEEL-ROUND-20261107-001Z/PINWHEEL-ROUND-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/PINWHEEL-ROUND-20261107-001/) |
 | 2026-11-07 | Colour refinement on the native creation map (`REFINE-READ-20261107-001`) | [closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/REFINE-READ-20261107-001/) |
+| 2026-11-07 | Steering the knot sphere's dissonance by re-signing (`RESIGN-STEER-20261107-001`) | [closure](proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/RESIGN-STEER-20261107-001/) |
 | 2026-11-07 | One hidden bit per incidence lets a law grow its own round sphere (`SPHERE-GROWTH-20261107-001`) | [closure](proofs/SPHERE-GROWTH-20261107-001Z/SPHERE-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-GROWTH-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |

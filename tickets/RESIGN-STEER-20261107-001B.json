@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "RESIGN-STEER-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "RESIGN-STEER-20261107-001B-E001",
+    "contract_path": "experiments/RESIGN-STEER-20261107-001B/RESIGN-STEER-20261107-001B-E001_local_rules_and_the_force_between_halves/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "RESIGN-STEER-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment on the octahedral knot spheres: (1) can a rule that sees only an even face's lines and a distance-to-target signal carry the even face to every target face, keeping the state consistent (strict descent, descent with sideways moves, no immediate reversal, and a random walk as baseline)? (2) how does the number of states consistent with a law with even faces u and v depend on their distance and on the six corners, and does it grow like a two-dimensional Coulomb potential of two equal charges (exponent near 1/2, as for holes in lozenge tilings)? (3) where does a learner that moves the even faces to maximize the number of consistent states park them? Controls: the random walk, a wrong target signal, and the all-plus minor (a constant) as the no-force comparator.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RESIGN-STEER-20261107-001"
+  },
+  "parent": "RESIGN-STEER-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, RESIGN-STEER-20261107-001B-E001): on the octahedral knot spheres a rule that sees only the lines at one even face and the distance to the target, and never steps straight back, reached 2,399 of 2,400 targets on K_2-K_8 and K_10 (the one miss reached with ten times the budget; strict descent stalls, a random walk slows with size, a decoy signal fails). The count of states consistent with a law is least when its two even faces touch and grows like distance^(1/2) (fitted 0.46 on K_12, 0.49 on K_16): the halves repel like equal two-dimensional charges, and the corners attract them. A learner that moves the even faces to keep the most states stopped with both on corners in all 144 runs on K_3-K_8. Stress test one size past: 300 of 300 on K_12, slope 0.51 on K_20, six more ascents on K_9 and K_10 ending on corners.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Local steering rules and the force between the two halves"
+}

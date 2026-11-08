@@ -1,0 +1,697 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/manifest.json": "Proved",
+     "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/result.json": "passed",
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "Proved",
+     "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "passed",
+     "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json": "Proved",
+     "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json": "passed"
+    }
+   }
+  },
+  "1 bookkeeping: violated lines - E + |D|/2 = 1 for random laws and states; one re-signing moves at most one unit; with four even faces satisfying states over-agree": {
+   "pass": true,
+   "info": {
+    "[sphere, failures, re-signings that moved a unit]": [
+     [
+      "K_2",
+      0,
+      10
+     ],
+     [
+      "K_3",
+      0,
+      12
+     ],
+     [
+      "K_4",
+      0,
+      8
+     ],
+     [
+      "tube(2, 5, 1)",
+      0,
+      6
+     ],
+     [
+      "tube(3, 7, 2)",
+      0,
+      10
+     ],
+     [
+      "grown62",
+      0,
+      10
+     ],
+     [
+      "grown232",
+      0,
+      12
+     ],
+     [
+      "grown64",
+      0,
+      9
+     ],
+     [
+      "cover(K_2; 2 corners)",
+      0,
+      12
+     ],
+     [
+      "cover(K_2; corner+regular)",
+      0,
+      9
+     ],
+     [
+      "cover(K_3; 2 corners)",
+      0,
+      10
+     ],
+     [
+      "cover(K_3; corner+regular)",
+      0,
+      11
+     ]
+    ],
+    "E of satisfying states with |D| = 4 on K_3": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "2 every law with exactly two even faces is satisfiable, wherever they sit (all pairs; SAT agrees; satisfying assignments = 2 x matchings)": {
+   "pass": true,
+   "info": {
+    "[sphere, points, girth >= 6, pairs, unsatisfiable pairs]": [
+     [
+      "K_2",
+      16,
+      true,
+      153,
+      0
+     ],
+     [
+      "K_3",
+      36,
+      true,
+      703,
+      0
+     ],
+     [
+      "K_4",
+      64,
+      true,
+      2145,
+      0
+     ],
+     [
+      "K_5",
+      100,
+      true,
+      5151,
+      0
+     ],
+     [
+      "K_6",
+      144,
+      true,
+      10585,
+      0
+     ],
+     [
+      "tube(2, 5, 1)",
+      34,
+      true,
+      630,
+      0
+     ],
+     [
+      "tube(3, 7, 2)",
+      72,
+      true,
+      2701,
+      0
+     ],
+     [
+      "grown62",
+      31,
+      true,
+      528,
+      0
+     ],
+     [
+      "grown232",
+      116,
+      true,
+      6903,
+      0
+     ],
+     [
+      "grown64",
+      32,
+      true,
+      561,
+      0
+     ],
+     [
+      "cover(K_2; 2 corners)",
+      32,
+      true,
+      561,
+      0
+     ],
+     [
+      "cover(K_2; corner+regular)",
+      32,
+      false,
+      561,
+      0
+     ],
+     [
+      "cover(K_3; 2 corners)",
+      72,
+      true,
+      2701,
+      0
+     ],
+     [
+      "cover(K_3; corner+regular)",
+      72,
+      true,
+      2701,
+      0
+     ]
+    ],
+    "K_2 all pairs SAT": true,
+    "K_3 40 pairs SAT": true,
+    "[u, v, brute count, 2 #PM] on K_2": [
+     [
+      2,
+      5,
+      144,
+      144
+     ],
+     [
+      13,
+      16,
+      144,
+      144
+     ],
+     [
+      3,
+      13,
+      108,
+      108
+     ],
+     [
+      7,
+      10,
+      108,
+      108
+     ],
+     [
+      14,
+      16,
+      108,
+      108
+     ],
+     [
+      14,
+      15,
+      108,
+      108
+     ],
+     [
+      2,
+      17,
+      144,
+      144
+     ],
+     [
+      7,
+      14,
+      108,
+      108
+     ],
+     [
+      4,
+      13,
+      144,
+      144
+     ],
+     [
+      10,
+      14,
+      108,
+      108
+     ],
+     [
+      14,
+      17,
+      144,
+      144
+     ],
+     [
+      6,
+      17,
+      168,
+      168
+     ],
+     [
+      2,
+      11,
+      144,
+      144
+     ],
+     [
+      5,
+      7,
+      108,
+      108
+     ],
+     [
+      3,
+      15,
+      108,
+      108
+     ],
+     [
+      8,
+      16,
+      108,
+      108
+     ],
+     [
+      1,
+      17,
+      144,
+      144
+     ],
+     [
+      7,
+      15,
+      108,
+      108
+     ],
+     [
+      2,
+      14,
+      196,
+      196
+     ],
+     [
+      4,
+      10,
+      144,
+      144
+     ]
+    ]
+   }
+  },
+  "3 on K_2..K_6 every line is the only violated line of some flat state (one violated line, no over-agreement)": {
+   "pass": true,
+   "info": {
+    "[sphere, lines, all built]": [
+     [
+      "K_2",
+      16
+     ],
+     [
+      "K_3",
+      36
+     ],
+     [
+      "K_4",
+      64
+     ],
+     [
+      "K_5",
+      100
+     ],
+     [
+      "K_6",
+      144
+     ]
+    ]
+   }
+  },
+  "4 every line is the violated line of equally many flat states, 2 N(T) with N(T)^2 = det(B B^T)/e2(colour classes); the kernel is the 3-colourings; all-plus minors are N on differently coloured pairs and 0 on equal colours; #PM >= N on differently coloured pairs": {
+   "pass": true,
+   "info": {
+    "[sphere, n, colour classes, N(T), spread of log counts over lines, |closed form - count|, kernel = 3-colourings, minors, lower bound]": [
+     [
+      "K_2",
+      16,
+      [
+       6,
+       6,
+       6
+      ],
+      54,
+      1.3322676295501878e-15,
+      0.0,
+      true,
+      true,
+      true
+     ],
+     [
+      "K_3",
+      36,
+      [
+       12,
+       12,
+       14
+      ],
+      24576,
+      5.329070518200751e-15,
+      0.0,
+      true,
+      true,
+      true
+     ],
+     [
+      "K_4",
+      64,
+      [
+       22,
+       22,
+       22
+      ],
+      163840000,
+      1.0658141036401503e-14,
+      1.4210854715202004e-14,
+      true,
+      true,
+      true
+     ],
+     [
+      "K_5",
+      100,
+      [
+       34,
+       34,
+       34
+      ],
+      15284826363950,
+      3.197442310920451e-14,
+      1.0658141036401503e-14,
+      true,
+      true,
+      true
+     ],
+     [
+      "K_6",
+      144,
+      [
+       48,
+       48,
+       50
+      ],
+      "1.956182e+19",
+      5.684341886080802e-14,
+      0.0,
+      true,
+      true,
+      true
+     ],
+     [
+      "tube(2, 5, 1)",
+      34,
+      [
+       12,
+       12,
+       12
+      ],
+      11664,
+      3.552713678800501e-15,
+      0.0,
+      true,
+      true,
+      true
+     ],
+     [
+      "tube(3, 7, 2)",
+      72,
+      [
+       25,
+       25,
+       24
+      ],
+      1853489024,
+      4.618527782440651e-14,
+      1.0658141036401503e-14,
+      true,
+      true,
+      true
+     ],
+     [
+      "grown62",
+      31,
+      [
+       11,
+       11,
+       11
+      ],
+      4536,
+      3.552713678800501e-15,
+      1.7763568394002505e-15,
+      true,
+      true,
+      true
+     ],
+     [
+      "grown232",
+      116,
+      [
+       40,
+       39,
+       39
+      ],
+      "1.894246e+15",
+      4.973799150320701e-14,
+      2.1316282072803006e-14,
+      true,
+      true,
+      true
+     ],
+     [
+      "grown64",
+      32,
+      [
+       12,
+       11,
+       11
+      ],
+      6048,
+      3.552713678800501e-15,
+      1.7763568394002505e-15,
+      true,
+      true,
+      true
+     ],
+     [
+      "cover(K_2; 2 corners)",
+      32,
+      [
+       11,
+       11,
+       12
+      ],
+      4860,
+      1.7763568394002505e-15,
+      0.0,
+      true,
+      true,
+      true
+     ],
+     [
+      "cover(K_3; 2 corners)",
+      72,
+      [
+       24,
+       24,
+       26
+      ],
+      1350303744,
+      1.7763568394002505e-14,
+      3.552713678800501e-15,
+      true,
+      true,
+      true
+     ],
+     [
+      "cover(K_3; corner+regular)",
+      72,
+      [
+       24,
+       24,
+       26
+      ],
+      830472192,
+      1.7763568394002505e-14,
+      3.552713678800501e-15,
+      true,
+      true,
+      true
+     ]
+    ],
+    "K_2 flat states per line by brute force": [
+     108
+    ]
+   }
+  },
+  "5 re-signings at the dissonance carry it from any line to any line with the state fixed; every intermediate configuration is (1 violated line, E 0, no even face) or (none, E 0, two even faces); the closed walk is a block change of state": {
+   "pass": true,
+   "info": {
+    "[sphere, start/target pairs, (viol, E, |D|) seen, max re-signings, mean, block-change check]": [
+     [
+      "K_2",
+      256,
+      [
+       [
+        0,
+        0,
+        2
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      12,
+      7.0,
+      true
+     ],
+     [
+      "K_3",
+      1296,
+      [
+       [
+        0,
+        0,
+        2
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      18,
+      10.0,
+      true
+     ],
+     [
+      "K_4",
+      150,
+      [
+       [
+        0,
+        0,
+        2
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      20,
+      12.5,
+      true
+     ],
+     [
+      "K_5",
+      150,
+      [
+       [
+        0,
+        0,
+        2
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      24,
+      14.9,
+      true
+     ],
+     [
+      "K_6",
+      150,
+      [
+       [
+        0,
+        0,
+        2
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      28,
+      17.0,
+      true
+     ]
+    ]
+   }
+  },
+  "6 controls: each check can fail": {
+   "pass": true,
+   "info": {
+    "Kasteleyn law unsatisfiable (K_2..K_4)": true,
+    "counts over all pairs from one face are not uniform on K_4 (log spread)": 0.8918859684762346,
+    "a re-signing away from the dissonance leaves the allowed configurations": true,
+    "far differently coloured pair: all-plus minor below the count (log gap)": 0.9560153745240214
+   }
+  },
+  "7 one size past (K_7, K_8): every single re-signing and 300 random pairs satisfiable; uniformity over all lines and the closed form; 30 steering runs each": {
+   "pass": true,
+   "info": {
+    "[sphere, n, unsatisfiable single re-signings, unsatisfiable random pairs, spread, |closed form - count|, N, steering runs reached]": [
+     [
+      "K_7",
+      196,
+      0,
+      0,
+      7.815970093361102e-14,
+      0.0,
+      "3.398777e+26",
+      30
+     ],
+     [
+      "K_8",
+      256,
+      0,
+      0,
+      1.8474111129762605e-13,
+      2.842170943040401e-14,
+      "7.965370e+34",
+      30
+     ]
+    ]
+   }
+  }
+ }
+}

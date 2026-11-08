@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "experiment_id": "RESIGN-STEER-20261107-001B-E001",
+  "ticket": "RESIGN-STEER-20261107-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the octahedral knot spheres K_m, after one sign change splits the forced dissonance into two even faces (RESIGN-STEER-20261107-001A): (1) can a rule that sees only the lines at one even face and a target signal carry that even face to a chosen target face, with each step one sign change at the even face that keeps the state consistent? (2) how does the number of states consistent with a law whose even faces are u and v depend on where u and v sit (their separation, the six corners), and does it grow like the potential of two equal two-dimensional charges (exponent near 1/2 in the separation, as for holes in lozenge tilings)? (3) where does a learner that moves one even face at a time to the neighbouring face with the most consistent states stop?",
+  "public_inputs": {
+    "spheres": "surface_lib.octahedral_sphere(m) through RESIGN-STEER-20261107-001A's steer_lib.Sphere; K_2..K_8 and K_10 for the rules, K_4, K_6, K_8 for the landscape, K_12 and K_16 for the exponent, K_3..K_8 for the ascent.",
+    "start": "A perfect matching of H minus two faces a, b of a random line (computed with shuffled edges), read as the agreeing corners of a consistent state (RESIGN-STEER-20261107-001A theorem 2): the configuration right after the split. The even face nearer the target is carried; the other stays.",
+    "clean_move": "At the carried even face h, each line i at h agrees at exactly one face w = match[i]; the move changes the sign of i's side joining h and w, so match[i] = h and the even face moves to w (never onto the other even face). This is RESIGN-STEER-20261107-001A lemma 4.2.",
+    "target_signal": "Graph distance in the triangulation's 1-skeleton from a face to the target face, supplied by the experimenter (an observer's measure, not a native distance).",
+    "rules": {
+      "strict": "take a clean move to a strictly nearer face (random among the nearest); stop when none exists",
+      "sideways": "take the clean move to the nearest face even if it is not nearer (random ties)",
+      "no_reversal": "as sideways, but never straight back to the face just left unless it is the only move",
+      "random": "a uniformly random clean move, with no target signal (baseline)",
+      "decoy": "no_reversal steered toward a random decoy face, scored on the true target (control: the signal must matter)"
+    },
+    "budget_steps": "40 m clean moves; success when the carried even face reaches the target",
+    "trials": "300 start/target pairs per sphere for the rules (seed 20261107), targets uniform over faces other than the even faces",
+    "count": "log of the number of perfect matchings of H - {u, v}, steer_lib.count_pm (Kasteleyn determinant), minus log N(T), N(T) from RESIGN-STEER-20261107-001A theorem 3",
+    "landscape_sources": "u = a corner (m, 0, 0), an edge midpoint (m/2, m - m/2, 0) and an octant centre (m/3, m/3, m - 2 m/3), with every other face as v",
+    "exponent": "u = the octant centre; v sampled 3 per graph distance d (d <= m) among faces at least m/3 from every corner; least-squares slope of log count / N against log d over d in [2, m/2]",
+    "ascent": "from the split at a random line, repeatedly move one even face to the adjacent face (one sign change at it) that most increases the count; stop at a local maximum; 30 runs on K_3..K_6, 12 on K_7 and K_8"
+  },
+  "forbidden_inputs": [
+    "Changing the rules, budgets, spheres, sources or seeds after seeing results",
+    "Dropping trials that fail or runs that stall",
+    "Any information about the target beyond the declared distance signal"
+  ],
+  "primary_observable": "(1) Success rate of each rule on each sphere, and the ratio of steps to the start distance over successes. (2) The mean of log count / N by graph distance from each source, where the minimum and maximum sit, and the counts at the corners. (3) The fitted slope on K_12 and K_16. (4) Where each ascent stops: both even faces on corners or not, antipodal corners or not.",
+  "cheapest_meaningful_control": "The random rule (no target signal) and the decoy rule for (1); the all-plus minor, which is the constant N for every pair of different colours (theorem 3), as the no-force comparator for (2); the share of corner pairs among all pairs as the chance level for (4).",
+  "resource_budget": {"wall_minutes": 150, "memory_mib": 8192},
+  "first_executable_signal": "The rules' success rates on K_4.",
+  "decision_or_followup_rule": "If no_reversal reaches at least 95% of targets on every sphere within the budget, record that a rule seeing only one even face's lines and the distance signal suffices on these spheres. Rerun every no_reversal failure with ten times the budget and record whether it was slow or stuck. If the K_16 slope is within 0.1 of 1/2, record the force as Coulomb-like with the strength of two unit charges; otherwise record the slope. If every ascent stops with both even faces on corners, record the corners as the attractors of a learner that keeps the most states.",
+  "stop_rule": "Stop at the declared spheres, trials and runs.",
+  "nonclaims": [
+    "Exploratory: finite spheres and samples; no Coulomb law or attraction theorem is proved.",
+    "The target signal and every distance here are observer-supplied graph distances on the triangulation, not native distances.",
+    "No claim about minds, learning in general or physical charge; the words follow the owner's picture as read in the assumptions register (A20, A21)."
+  ],
+  "feasibility_disclosure": "Before freezing, pilot runs in a scratch directory saw: the strict, sideways and no-reversal rules on K_2-K_6 and K_8 (300 trials each: strict 14-45%, sideways 62-94%, no-reversal 98-100% within 40 m steps); the landscape from these three sources on K_4, K_6 and K_8; a binned fit on K_12 (slope 0.53 over d = 2..6); and 30 ascents each on K_3-K_6, all ending on two corners. The frozen runs repeat these with fixed seeds and a faster matching-based simulator, and add K_10 for the rules, K_16 for the slope and K_7 and K_8 for the ascent, none of which was run before freezing, plus the random and decoy controls."
+}

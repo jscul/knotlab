@@ -1,0 +1,98 @@
+{
+ "rules": {
+  "sphere": "K_12",
+  "budget": 480,
+  "strict": {
+   "reached": 31,
+   "of": 300
+  },
+  "sideways": {
+   "reached": 247,
+   "of": 300
+  },
+  "no_reversal": {
+   "reached": 300,
+   "of": 300
+  },
+  "no_reversal failures reached with 10x budget": [],
+  "random": {
+   "reached": 84,
+   "of": 300
+  },
+  "decoy": {
+   "reached": 15,
+   "of": 300
+  }
+ },
+ "exponent": {
+  "sphere": "K_20",
+  "source": [
+   6,
+   6,
+   8
+  ],
+  "fit range": [
+   2,
+   10
+  ],
+  "slope": 0.5074,
+  "mean log(count / N) by distance": {
+   "1": 0.0,
+   "2": 0.252,
+   "3": 0.4802,
+   "4": 0.657,
+   "5": 0.7612,
+   "6": 0.842,
+   "7": 0.9021,
+   "8": 0.9532,
+   "9": 1.0739,
+   "10": 1.0598,
+   "11": 1.1177,
+   "12": 1.1688,
+   "13": 1.2003,
+   "14": 1.221,
+   "15": 1.2459,
+   "16": 1.2806,
+   "17": 1.2947,
+   "18": 1.3058,
+   "19": 1.3349,
+   "20": 1.3558
+  }
+ },
+ "ascent": [
+  {
+   "sphere": "K_9",
+   "runs": 4,
+   "endpoints": {
+    "two corners, antipodal": 1,
+    "two corners, not antipodal": 3
+   },
+   "final log(count / N)": [
+    1.6285,
+    1.7984
+   ],
+   "largest log(count / N) over corner pairs": 1.7984,
+   "mean steps": 14.2,
+   "chance that a random pair is two corners": 0.00028
+  },
+  {
+   "sphere": "K_10",
+   "runs": 2,
+   "endpoints": {
+    "two corners, not antipodal": 2
+   },
+   "final log(count / N)": [
+    1.7076
+   ],
+   "largest log(count / N) over corner pairs": 1.8781,
+   "mean steps": 14.0,
+   "chance that a random pair is two corners": 0.00019
+  }
+ ],
+ "passes": {
+  "no_reversal reaches >= 95% on K_12": true,
+  "K_20 slope within 0.1 of 1/2": true,
+  "every ascent on K_9 and K_10 stops on two corners": true
+ },
+ "seconds": 308.7
+}

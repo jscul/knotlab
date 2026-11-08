@@ -1526,9 +1526,32 @@ So network holes come in two kinds:
      - **The recurring family.** Again it is the affine one.
    - **Provenance.** Linear recurring sequences over GF(2); additive automata on rings. New as far as found: persistent composition
      of two contacts across time.
-   - **Next (selected).** Native paths across time: chains of four rings and three contacts built from the composing families, with
-     the gate's restrictions and transports (Payoff 3/3, Concreteness 2/3). The alternatives are the pulse law, nonlinear persistent
-     composition, and learning a rule from its knots ([decision note](../research/AFFINE-WIRE-20261108-001/affine_wire.md)).
+   - **Next (taken).** Native paths across time (next entry): chains of four rings and three contacts built from the composing
+     families (Payoff 3/3, Concreteness 2/3). The alternatives, the pulse law, nonlinear persistent composition and learning a rule
+     from its knots, are parked as backlog B8 to B10 ([decision note](../research/AFFINE-WIRE-20261108-001/affine_wire.md)).
+
+   **2026-11-08: no native path in three restricted families** (`NATIVE-PATH-20261108-001`).
+   - **The question.** A path of four rings A, B, C and D joined by three shared contacts is native when every contact binds its own
+     two rings at every lag and the last contact binds the end rings at every lag once the first ring can reach it: the first
+     composed topology across time.
+   - **What a path can carry (proved).** The last contact cannot depend on the first ring before the sum of the middle rings'
+     contact distances, plus one. Affine paths reduce to row sequences, as chains do.
+   - **None found (exploratory).**
+     - **Rule 150 everywhere, with every law.** 900,000 paths, none native.
+     - **The carrying chains extended by one ring.** 96,840 paths, none native.
+     - **The middle contact carries, the second middle ring loses it.** 762 of these paths keep all three contacts persistent. The
+       middle contact carries the first ring at every lag in 302 of them, and the loss happens across the second middle ring.
+     - **A shift as the second middle ring.** It carries without cancelling, but none of 3,059,280 such paths even keeps all three
+       contacts. The shift uses up its own first row within one turn.
+   - **Reading.**
+     - **A tension.** A middle ring between two contacts must keep its own first row and carry the first ring's influence. The
+       additive rules keep the first row but cancel the influence; the shift carries it but forgets its own row. No tested ring does
+       both, a candidate obstruction, not a theorem.
+     - **Families named.** The absence is for these three families only, as the correction of the same day asks.
+   - **Provenance.** Light cones on graphs; linear recurring sequences over GF(2). New as far as found: the searches.
+   - **Next (research directions).** A broad sweep of mixed four-ring paths (Payoff 2/3, Concreteness 3/3), then a middle ring
+     designed to remember and transmit (Payoff 3/3, Concreteness 1/3). Pause the process line if both fail. A wider run of rule 150
+     everywhere is pending ([decision note](../research/NATIVE-PATH-20261108-001/native_path.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

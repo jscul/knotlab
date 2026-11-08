@@ -56,6 +56,14 @@ Logged in `docs/CORRECTIONS.md` as a narrowing. The answer and the closure said 
 held for the uniform chains tested, one rule and one law throughout. `AFFINE-WIRE-20261108-001` found it in 2,376 affine chains that
 mix rules and laws.
 
+## Correction (2026-11-08, A34 overturned)
+
+Logged in `docs/CORRECTIONS.md` as not a block. The reading and the workspace-assumptions section kept A34 for the gate because the
+gate "asks for persistence, which intermittent composition fails". The gate asks persistence of every contact and composition that
+survives the admitted transports. `RECUR-PATH-20261108-001` found 452 families of paths with every contact persistent that compose
+at recurring lags at every size tested, while under A34 none composes at two sizes. A34 was overturned by that challenge's
+pre-registered rule and replaced by A37.
+
 ## Literature and provenance
 
 - **Sources.** Eventual periodicity of finite dynamics. Additive cellular automata on rings (Martin, Odlyzko and Wolfram 1984) for

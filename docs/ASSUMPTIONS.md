@@ -88,9 +88,10 @@ evidence: results and their status come from the records each entry links.
 | [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Confirmed |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
-| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Under challenge |
+| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Overturned |
 | [A35](#a35--hidden-information-is-counted-as-labels-a-decorated-substitution-sets) | Hidden information is counted as labels a decorated substitution sets | measure | Assumed |
 | [A36](#a36--a-law-declared-cell-by-cell-is-a-native-substrate) | A law declared cell by cell is a native substrate | scope | Assumed |
+| [A37](#a37--a-path-composes-at-the-recurring-lags-its-dynamics-fixes) | A path composes at the recurring lags its dynamics fixes | reading | Assumed |
 
 ## Entries
 
@@ -762,7 +763,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A34 · A chain composes when its far contact binds its ends at every lag
 
-**Under challenge** · 2026-11-08 · reading
+**Overturned** · 2026-11-08 · reading
 
 - **Statement.** Two contacts between processes, c1 joining rings A and B and c2 joining rings B and C, compose when c2 binds the
   end rings A and C at every lag from the first lag at which ring A can reach it, d + 1 for contacts d cells apart on ring B. That
@@ -785,6 +786,13 @@ evidence: results and their status come from the records each entry links.
   - **Back to Assumed**, if the best candidate families meet a recurring reading at every decided size but some sizes stay
     undecided.
 - **History.**
+  - 2026-11-08 · Overturned by `RECUR-PATH-20261108-001`, by the rule pre-registered above. 452 families of paths compose at
+    recurring lags with every contact persistent at every size of their schedule: 256 with contacts two apart on rings of 4 to 9
+    cells, every ring on rule 60 or 102, and 196 growing from 4 to 9 rings. Under this reading no family composes at two sizes. All
+    452 are verified by an independent computation at every size and on their full state spaces at the two smallest. Replaced by
+    A37. Of what rested on it, `PROCESS-CHAIN-20261108-001`'s finding stands under both readings, since its uniform chains never
+    composed at recurring lags with both contacts persistent either
+    ([composition at recurring lags](../research/RECUR-PATH-20261108-001/recur_path.md)).
   - 2026-11-08 · Challenge pre-registered by `RECUR-PATH-20261108-001` before its census ran: the outcomes and what each means for
     this entry are under Challenge above. The entry stays under challenge until the epic closes.
   - 2026-11-08 · Put under challenge by `PATH-GROWTH-20261108-001`, as its stop rule set out. Under this reading no family of paths
@@ -840,3 +848,20 @@ evidence: results and their status come from the records each entry links.
   the hybrid paths depend on drawing the law cell by cell.
 - **History.**
   - 2026-11-08 · Added by `PATH-HYBRID-20261108-001`.
+
+### A37 · A path composes at the recurring lags its dynamics fixes
+
+**Assumed** · 2026-11-08 · reading
+
+- **Statement.** A chain or path of processes composes when every contact binds its own two rings at every lag and the far contact
+  binds the end rings at some lag of its eventual cycle, and so at the lags recurring with its period. In a linear path those lags are
+  the lags at which both ends' influence arrives, fixed by the dynamics.
+- **Why.** `RECUR-PATH-20261108-001` overturned A34 by its pre-registered rule, and this reading replaces it. Under it, composition
+  across time survives every growth tested; under A34 it survives none
+  ([composition at recurring lags](../research/RECUR-PATH-20261108-001/recur_path.md)).
+- **Rests on it.** The 452 families of `RECUR-PATH-20261108-001` as native networks across time that transport.
+- **Challenge.** Ask more of the composing lags: that a knot of the path itself reads them, or that they make up a fixed share of
+  every cycle at every size. The cheapest test proves or refutes, for the rule-60 family, that the composing share stays positive at
+  every ring size.
+- **History.**
+  - 2026-11-08 · Added by `RECUR-PATH-20261108-001`, replacing A34.

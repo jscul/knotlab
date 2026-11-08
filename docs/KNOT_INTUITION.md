@@ -1494,6 +1494,8 @@ So network holes come in two kinds:
    - **Reading.**
      - **For the gate.** The contact gate asks for persistence, so A34's strict reading stands. Persistent composition was absent
        in the uniform chains tested, and chains that mix rules and laws have it (next entry; narrowed 2026-11-08).
+       - *Corrected on 2026-11-08 (`RECUR-PATH-20261108-001`, four entries below).* The gate asks persistence of contacts, not
+         composition at every lag. A34 was overturned: with every contact persistent, composition at recurring lags transports.
      - **What exists instead.** A weaker network: native, intermittent, and only where the substrate is affine.
      - **The recurring answer.** This is the program's recurring family: towers of patterns keep only parity, and static networks
        compose for affine laws.
@@ -1604,12 +1606,37 @@ So network holes come in two kinds:
    - **Reading.**
      - **A34 under challenge.** Under the every-lag reading, composition across time exists only at isolated sizes and never
        transports. Composition at recurring lags, with the phase fixed by the chain, held at every tested size for three-ring chains
-       (`INTERMITTENT-NET-20261108-001`), so the alternative reading is the one to test.
+       (`INTERMITTENT-NET-20261108-001`), so the alternative reading is the one to test. (It was, and A34 was overturned: next entry.)
      - **The gate.** The paths pass each contact gate and compose natively, but fail the gate's transport clause.
      - **Corrections.** Two earlier readings are narrowed (`docs/CORRECTIONS.md`).
    - **Provenance.** Linear recurring sequences over GF(2); additive automata on rings. New as far as found: the census by size.
-   - **Next (research directions).** Challenge A34 with composition at recurring lags across sizes (Payoff 3/3, Concreteness 3/3).
-     Native separation is in backlog B12 ([decision note](../research/PATH-GROWTH-20261108-001/path_growth.md)).
+   - **Next (taken).** Challenge A34 with composition at recurring lags across sizes (next entry). Native separation is in backlog
+     B12 ([decision note](../research/PATH-GROWTH-20261108-001/path_growth.md)).
+
+   **2026-11-08: composition across time transports at recurring lags; A34 overturned** (`RECUR-PATH-20261108-001`).
+   - **The challenge.** A34 read composition as the far contact binding both ends at every lag. The alternative reads it at the
+     recurring lags the path's own dynamics fixes, with every contact persistent. What each outcome would mean for A34 was recorded in
+     the register before the census ran.
+   - **The census (exploratory, exact).** On the growth families (one linear rule per ring, every law), 452 families compose at
+     recurring lags with every contact persistent at every size:
+     - **Rings growing.** 256 with contacts two apart on rings of 4 to 9 cells, every ring on rule 60 or 102, the one-sided additive
+       rules.
+     - **Paths growing.** 196 from 4 to 9 rings, with frozen or rule-90 end rings and middle rings on 90, 60 or 102.
+     - **Against A34.** Under the every-lag reading, no family composes at two sizes.
+     - **Verified.** An independent computation agrees for all 452 at every size, and the full state spaces at the two smallest. The
+       far contact composes at 12.5% to 62.5% of its cycle.
+   - **A slip caught.** The first run's every-lag control failed on a bug in that check. The rerun fixes it, changes nothing else and
+     passes.
+   - **Reading.**
+     - **A34 overturned, A37 in its place.** A path composes at the recurring lags its dynamics fixes, with every contact persistent.
+       Under that reading these families are native networks across time that survive every growth tested.
+     - **What A34 did.** It read the gate's persistence of contacts as persistence of composition. One earlier reading that rested on
+       it is corrected (`docs/CORRECTIONS.md`).
+     - **The recurring family.** Again affine.
+   - **Provenance.** Linear recurring sequences over GF(2); strobed composition (`INTERMITTENT-NET-20261108-001A`). New as far as
+     found.
+   - **Next (awaiting a go-ahead).** A proof that the rule-60 family composes this way at every ring size (Payoff 3/3, Concreteness
+     2/3); then the gate's restrictions ([decision note](../research/RECUR-PATH-20261108-001/recur_path.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

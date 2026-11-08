@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: intermittent composition can pass the gate
+
+- INTERMITTENT-NET-20261108-001 kept the strict reading of composition across
+  time, A34 (the far contact binds both ends at every lag), because "the
+  contact gate asks for persistence, which intermittent composition fails".
+- The gate asks every contact to persist and the composition to survive the
+  admitted transports; it does not ask for binding at every lag.
+  RECUR-PATH-20261108-001 found 452 families of paths whose contacts all
+  persist and which compose at recurring lags, fixed by their own dynamics, at
+  every size tested, while under A34 none composes at two sizes. A34 was
+  overturned by that challenge's pre-registered rule and replaced by A37.
+- The [decision note](research/INTERMITTENT-NET-20261108-001/intermittent_net.md)
+  carries a correction section. Unchanged: every count of INTERMITTENT-NET.
+
 ## 8 November 2026: native paths with one rule per ring sit at more shapes
 
 - NATIVE-PATH-20261108-001 found no native path with rule 150 on all four

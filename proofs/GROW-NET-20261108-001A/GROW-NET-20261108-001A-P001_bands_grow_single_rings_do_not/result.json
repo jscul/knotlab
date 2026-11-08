@@ -1,0 +1,87 @@
+{
+ "ticket": "GROW-NET-20261108-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "GENUS-CUT-20261108-001A manifest": "1a4e62c47587f50eb1de77e7371ca1b4d5a5224536724de5993452683310444f",
+    "genus_lib": "916d2bf8ab95c44a1dad99a7deeb123baa5a933854133d46b7d251268b43b809"
+   }
+  },
+  "1_seeds_balanced": {
+   "pass": true,
+   "info": {
+    "seeds": [
+     "loop of 3 rings",
+     "loop of 4 rings",
+     "loop of 5 rings",
+     "two rings sharing 3 contacts",
+     "two rings sharing 4 contacts",
+     "tetrahedron",
+     "cube",
+     "octahedron",
+     "square torus 3",
+     "genus-2 network of 16 rings"
+    ]
+   }
+  },
+  "2_rectangular_tori_flip_and_persist": {
+   "pass": true,
+   "info": {
+    "tori": 60
+   }
+  },
+  "3_growth_by_bands_and_blocks": {
+   "pass": true,
+   "info": {
+    "bands": "19 stages balanced",
+    "blocks": "7 stages balanced"
+   }
+  },
+  "4_one_contact_returns_at_once": {
+   "pass": true,
+   "info": {
+    "attachments": 182
+   }
+  },
+  "5_two_contacts_unpaired_return": {
+   "pass": true,
+   "info": {
+    "non-bubble attachments": 2588,
+    "bubbles set apart": 305
+   }
+  },
+  "6_bubble_criterion": {
+   "pass": true,
+   "info": {
+    "bubbles": 182,
+    "bubbles keeping every contact persistent": 0
+   }
+  },
+  "7_sherman_morrison_exact": {
+   "pass": true,
+   "info": {
+    "bubbles": 6
+   }
+  },
+  "8_cells_exact": {
+   "pass": true,
+   "info": {
+    "loop of 4 rings, bubble: first lapse": [
+     5
+    ],
+    "tetrahedron, bubble: first lapse": [
+     7
+    ],
+    "tetrahedron, two: first lapse": [
+     5
+    ],
+    "square torus 3, two: first lapse": [
+     5
+    ]
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 0.3
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**250 current results** and 5 superseded ones, from 189 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**251 current results** and 5 superseded ones, from 190 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 26 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 27 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 189 epics with their closures
+- [Epics](#epics): all 190 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -76,6 +76,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · A network of rings reads its genus: two rings of cuts per handle keep one piece** (`GENUS-CUT-20261108-001-D001`).
   In any network of rule-60 rings with law (12,12) contacts, after any contacts are cut, the pieces read from which uncut contacts need which rings are exactly the components of the ring graph without the cut contacts. So a family of rings of cuts keeps the network in one piece exactly when it is independent in the homology mod 2 of the surface the positions define: at most two per handle keep one piece, some two per handle do, and one more always separates. The torus cut round both ways stays in one piece; the regular genus-2 network of 16 rings with three contacts each keeps every contact persistent and reads its genus the same way.
   [proof P001](proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/proof.md), [epic closure](proofs/GENUS-CUT-20261108-001Z/GENUS-CUT-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Lattices of rings grow by bands, not by single rings** (`GROW-NET-20261108-001-D001`).
+  Every n x m torus of equally spaced rule-60 rings (n, m >= 3) has a half-turn at every contact exchanging its two rings, so every contact persists at every lag, and growth by inserting whole bands of rings round the torus or by splitting every ring into blocks keeps every contact persistent at every stage. Attaching a single new ring breaks persistence: by one contact (a return of length 1), by two contacts not side by side on one ring (an unpaired return of length 2), and as a bubble on a corner p -> q exactly when some contact is reached from q and reaches p.
+  [proof P001](proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/proof.md), [epic closure](proofs/GROW-NET-20261108-001Z/GROW-NET-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Intermittent composition across time is a strobed chain's composition, and in linear chains it is arrival** (`INTERMITTENT-NET-20261108-001-D001`).
   For a chain of three rings joined by two shared contacts, the lags at which the far contact binds the two end rings recur with the period P of the chain's T-step maps; the chain observed only at the lags of one residue modulo P composes at every observed lag or at none, so intermittent composition is persistent composition of a strobed chain whose phase is the only input the chain does not fix, an input the doctrine forbids an observer to supply unless the chain singles the phase out. For linear or affine rules with affine contact laws, the chain composes exactly at the lags where its far contact depends on both end rings, so the composing lags are the arrival lags of both ends' influence; in any chain, composition implies that dependence.
   [proof P001](proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/proof.md), [epic closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md)
@@ -1049,6 +1052,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
 | 2026-11-08 | Full reach on the cut-open torus (`FULL-REACH-20261108-001`) | [closure](proofs/FULL-REACH-20261108-001Z/FULL-REACH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/FULL-REACH-20261108-001/) |
 | 2026-11-08 | Genus read by rings of cuts (`GENUS-CUT-20261108-001`) | [closure](proofs/GENUS-CUT-20261108-001Z/GENUS-CUT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-CUT-20261108-001/) |
+| 2026-11-08 | Grow a network of rings from a law (`GROW-NET-20261108-001`) | [closure](proofs/GROW-NET-20261108-001Z/GROW-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-NET-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |
 | 2026-11-08 | Composition and separation across a lattice of rings (`LATTICE-NET-20261108-001`) | [closure](proofs/LATTICE-NET-20261108-001Z/LATTICE-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-NET-20261108-001/) |

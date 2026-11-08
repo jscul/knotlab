@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROW-NET-20261108-001B-E001",
+  "ticket": "GROW-NET-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a balanced network of rings grow by one ring at a time and keep every contact persistent, and do the uniform refinements of the Platonic networks keep it?",
+  "public_inputs": {
+    "library": "grow_lib.py of GROW-NET-20261108-001A (sha256 7dcd377da641727744cb00956f40c88f5614ae2e4fd6908d5d790117d7be1f78).",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Seeds: loops of 3 to 6 rings, two rings sharing 3 to 5 contacts, the five Platonic networks, the 3 x 3 and 4 x 4 square tori, the genus-2 network of 16 rings from GL(2,3). Every attachment of one new ring by m = 1, 2, 3 contacts, and m = 4 on seeds of at most 8 rings. The truncations and rectifications of the five Platonic networks.",
+    "exactness": "Exact: return counts are read by following A^k e_c until the next vector lies in the span of the earlier ones; no lag cutoff."
+  },
+  "forbidden_inputs": [
+    "Changing the seeds or contact counts after seeing results",
+    "Dropping attachments"
+  ],
+  "primary_observable": "Attachments after which every contact keeps even return counts, by seed and number of contacts; the refinements' verdicts.",
+  "cheapest_meaningful_control": "grow_lib's exact test agrees with loopnet_lib.odd_returns on 1,276 random attachments (scratch), and GROW-NET-20261108-001A proves the one- and two-contact cases.",
+  "resource_budget": {
+    "wall_minutes": 20,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The counts by seed.",
+  "decision_or_followup_rule": "H1, frozen: no attachment by 1 or 2 contacts keeps every contact persistent, and none by 3 or 4 on a seed of more than 4 rings. H2, frozen: every truncation and rectification of a Platonic network loses persistence except the rectified tetrahedron (the octahedron). If both hold they support the obstruction to growing one ring at a time and to refining the sphere; a counterexample is recorded as a growth step that works.",
+  "stop_rule": "Stop when every attachment and refinement of the family has its verdict.",
+  "nonclaims": [
+    "Exploratory: one growth step from these seeds only.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing, a scratch run of the same attachments (m = 4 capped at 20,001 per seed) found persistence kept only from the loop of 3 rings, two rings sharing 3 contacts and the tetrahedron, and the refinements as in H2. So H1 and H2 are not blind predictions. run.py --pilot timed one seed and printed no verdicts."
+}

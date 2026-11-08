@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GENUS-CUT-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "GROW-NET-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: every n x m torus of rings (n, m >= 3, equally spaced law-(12,12) contacts) has a half-turn fixing each contact and exchanging its rings, so every contact persists at every lag; hence growth by inserting a band of rings round the torus, or by splitting every ring into a k x l block, keeps every contact persistent at every stage. Attaching a single new ring by one contact gives a return of length 1; by two contacts that are not consecutive on one ring, an unpaired return of length 2; and as a bubble (two consecutive contacts on one ring) it deletes that ring's corner, which by the Sherman-Morrison formula breaks persistence at its tail whenever its head reaches its tail.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROW-NET-20261108-001"
+  },
+  "parent": "GROW-NET-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (by hand; finite claims checked exactly): every n x m torus of equally spaced rings (n, m >= 3) has a half-turn at every contact, so every contact persists and growth by inserting bands or splitting every ring into blocks keeps every contact persistent at every stage; attaching one new ring breaks persistence by one contact (a return of length 1), by two contacts not forming a bubble (an unpaired return of length 2), and as a bubble on p -> q exactly when some old contact is reached from q and reaches p (D'_cc = 1 + w D_cq D_pc / (1 + w D_pq)).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Bands grow, single rings do not"
+}

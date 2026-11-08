@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-NET-20261108-001A-P001",
+  "canonical_id": "GROW-NET-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-NET-20261108-001A",
+  "proof": "GROW-NET-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Bands grow, single rings do not",
+  "status": "Proved",
+  "claim": "For equally spaced networks of rule-60 rings with law (12,12) contacts: (1) every n x m torus of rings (n, m >= 3) has a half-turn fixing each contact and exchanging its rings, so every contact persists at every lag, and growth by inserting bands round the torus or by splitting every ring into k x l blocks keeps every contact persistent at every stage; (2) attaching one new ring to a balanced network breaks persistence: by one contact (a return of length 1), by two contacts not forming a bubble (one unpaired return of length 2), and as a bubble on the corner p -> q exactly when some old contact is reached from q and reaches p, since then D'_cc = 1 + w D_cq D_pc / (1 + w D_pq) (Sherman-Morrison).",
+  "dependencies": [
+    "GENUS-CUT-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An n x m torus (n, m >= 3) with a contact that does not persist.",
+    "A one-contact or non-bubble two-contact attachment to a balanced network that stays balanced; a bubble whose balance differs from the criterion."
+  ],
+  "lineage": {
+    "home_scope": "GROW-NET-20261108-001",
+    "epic_path": [
+      "GROW-NET-20261108-001"
+    ],
+    "parents": [
+      "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/manifest.json",
+      "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/genus_lib.py",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/manifest.json": "1a4e62c47587f50eb1de77e7371ca1b4d5a5224536724de5993452683310444f",
+    "proofs/GENUS-CUT-20261108-001A/GENUS-CUT-20261108-001A-P001_two_rings_of_cuts_per_handle/genus_lib.py": "916d2bf8ab95c44a1dad99a7deeb123baa5a933854133d46b7d251268b43b809",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md": "fc8fecf29b89ba6e2037ebb626d38a4b8b4603c7f6a6e57cb0c620067c53d76d"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json",
+    "identity": "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/identity.json",
+    "proof": "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/proof.md",
+    "result": "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/result.json",
+    "check": "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/check.py",
+    "directory": "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Equally spaced networks of rule-60 rings with law (12,12) contacts; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: half-turn symmetry of rectangular tori and the Sherman-Morrison update, read as growth laws for networks of persistent contacts"
+  }
+}

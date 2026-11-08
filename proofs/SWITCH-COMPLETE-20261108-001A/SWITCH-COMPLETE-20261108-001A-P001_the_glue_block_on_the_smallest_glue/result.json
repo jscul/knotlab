@@ -1,0 +1,270 @@
+{
+ "artifact_id": "SWITCH-COMPLETE-20261108-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json": "passed",
+     "proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/result.json": "passed",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the glue: TRISUM-READ's seed 3 from HANDLE-COUNT A's generator has 8 lines and 8 points, its incidence graph is connected and cubic with cycle rank 9, so its signings fall into 512 switching classes; a class is read off as its parities on the fundamental cycles of a spanning tree, and the representative with signs only off the tree has the given parities": {
+   "info": {
+    "classes": 512,
+    "glue": [
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      0,
+      5,
+      7
+     ],
+     [
+      0,
+      2,
+      3
+     ],
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      1,
+      4,
+      5
+     ],
+     [
+      4,
+      3,
+      5
+     ],
+     [
+      1,
+      7,
+      6
+     ],
+     [
+      6,
+      7,
+      3
+     ]
+    ],
+    "off-tree incidences": [
+     [
+      2,
+      0
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      7,
+      6
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "2 the blocks: by SWITCH-PROOF's theorem on the glue without line a, row a depends only on the signing's class there, so each row is computed once per such class (the glue without a line has cycle rank 7, 128 classes); recomputed directly from the representative and from a randomly switched signing of 16 random classes, all 256 rows agree": {
+   "info": {
+    "agreeing": 256,
+    "distinct values of each row (of 128 classes)": [
+     55,
+     57,
+     55,
+     57,
+     55,
+     55,
+     55,
+     55
+    ],
+    "rows computed": 1024,
+    "rows recomputed directly": 256
+   },
+   "pass": true
+  },
+  "3 the glue's symmetries: its incidence graph has 48 automorphisms, 24 keeping lines and points and acting faithfully on the lines, 24 exchanging them; the blocks are equivariant under the first 24, which have 42 orbits on the classes": {
+   "info": {
+    "automorphisms": 48,
+    "exchanging lines and points": 24,
+    "keeping lines": 24,
+    "orbit sizes": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      6,
+      12
+     ],
+     [
+      12,
+      16
+     ],
+     [
+      24,
+      10
+     ]
+    ],
+    "orbits": 42
+   },
+   "pass": true
+  },
+  "4 the collisions: 448 distinct blocks on the 512 classes; every collision lies inside one orbit except one, which is the union of the two orbits of the signings X = {(4,4),(5,4),(6,6),(6,7),(7,3)} and Y = {(4,5),(5,4),(6,6),(6,7),(7,3)}, six classes each, whose signed glues have 40 and 34 solutions; so the blocks take 41 values on the 42 orbits; no automorphism of the incidence graph, those exchanging lines and points included, takes one orbit to the other": {
+   "info": {
+    "blocks up to symmetry": 41,
+    "distinct blocks": 448,
+    "entries of the shared block": [
+     [
+      "[false, false, false]",
+      44
+     ],
+     [
+      "[true, false, false]",
+      12
+     ]
+    ],
+    "group sizes": [
+     [
+      1,
+      395
+     ],
+     [
+      2,
+      51
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      12,
+      1
+     ]
+    ],
+    "groups across orbits": [
+     [
+      242,
+      244,
+      250,
+      252,
+      302,
+      316,
+      334,
+      346,
+      430,
+      436,
+      462,
+      466
+     ]
+    ],
+    "solutions": {
+     "X": 40,
+     "Y": 34
+    }
+   },
+   "pass": true
+  },
+  "5 on the plain spaces themselves: the edge-atom spaces of X and Y (43 points each), with their own engine, have identical blocks of glue lines, equal to the signed glue's; their solution counts are 5^5 x 40 and 5^5 x 34": {
+   "info": {
+    "lines and solutions": [
+     [
+      43,
+      125000
+     ],
+     [
+      43,
+      106250
+     ]
+    ]
+   },
+   "pass": true
+  },
+  "6 the Pfaffian class: the generator's signing lies in the only class whose signed glue has no solution, and no other class has its block": {
+   "info": {
+    "Pfaffian signing": [
+     [
+      2,
+      0
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      7,
+      7
+     ]
+    ],
+    "classes without solutions": 1,
+    "its block": [
+     [
+      "[false, false, false]",
+      2
+     ],
+     [
+      "[false, true, true]",
+      24
+     ],
+     [
+      "[true, true, true]",
+      12
+     ],
+     [
+      "null",
+      18
+     ]
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "On the smallest trisum glue (TRISUM-READ's seed 3: 8 lines, 8 points, cycle rank 9), the signed glue's creation map, which by SWITCH-PROOF-20261108-001A is the block of glue lines of every plain edge-atom space with that signing, takes 448 values on the 512 switching classes. It is equivariant under the glue's 24 automorphisms, and of their 42 orbits on the classes it separates all but one pair of orbits of six classes each, those of the signings {(4,4),(5,4),(6,6),(6,7),(7,3)} and {(4,5),(5,4),(6,6),(6,7),(7,3)}, which differ by moving one sign along line 4: their signed glues have 40 and 34 solutions, no automorphism of the incidence graph (those exchanging lines and points included) takes one to the other, and their plain spaces have identical glue blocks. The Pfaffian class is the only class without solutions, and no other class has its block. Each row depends only on the signing's class on the glue without its line, and takes 55 or 57 values on that glue's 128 classes.",
+ "kind": "proof",
+ "proof": "SWITCH-COMPLETE-20261108-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SWITCH-COMPLETE-20261108-001A"
+}

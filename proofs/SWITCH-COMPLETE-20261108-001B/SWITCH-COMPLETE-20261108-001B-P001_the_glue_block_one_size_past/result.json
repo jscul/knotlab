@@ -1,0 +1,271 @@
+{
+ "artifact_id": "SWITCH-COMPLETE-20261108-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SWITCH-COMPLETE-20261108-001A/SWITCH-COMPLETE-20261108-001A-P001_the_glue_block_on_the_smallest_glue/manifest.json": "Proved",
+     "proofs/SWITCH-COMPLETE-20261108-001A/SWITCH-COMPLETE-20261108-001A-P001_the_glue_block_on_the_smallest_glue/result.json": "passed",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json": "passed",
+     "proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the glue one size past: TRISUM-READ's two 10-line glues, seeds 6 and 36, are isomorphic, so there is one; it has 10 lines and 10 points, and its incidence graph is connected and cubic with cycle rank 11, so its signings fall into 2,048 switching classes, read off as parities on fundamental cycles": {
+   "info": {
+    "classes": 2048,
+    "glue": [
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      1,
+      6,
+      8
+     ],
+     [
+      2,
+      7,
+      9
+     ],
+     [
+      1,
+      2,
+      3
+     ],
+     [
+      6,
+      0,
+      4
+     ],
+     [
+      3,
+      5,
+      7
+     ],
+     [
+      5,
+      6,
+      4
+     ],
+     [
+      5,
+      7,
+      4
+     ],
+     [
+      8,
+      3,
+      9
+     ],
+     [
+      8,
+      0,
+      9
+     ]
+    ],
+    "lines": {
+     "3": 8,
+     "6": 10,
+     "36": 10
+    },
+    "seed 36 isomorphic": true
+   },
+   "pass": true
+  },
+  "2 the blocks, row by row as in ticket A (the glue without a line has cycle rank 9, 512 classes); recomputed directly from the representative and from a randomly switched signing of 16 random classes, all 320 rows agree": {
+   "info": {
+    "agreeing": 320,
+    "distinct values of each row (of 512 classes)": [
+     141,
+     119,
+     119,
+     141,
+     124,
+     124,
+     141,
+     141,
+     141,
+     141
+    ],
+    "rows computed": 5120,
+    "rows recomputed directly": 320
+   },
+   "pass": true
+  },
+  "3 the glue's symmetries: 4 automorphisms keep lines and points, acting faithfully on the lines; the blocks are equivariant under them, and they have 576 orbits on the classes": {
+   "info": {
+    "automorphisms keeping lines and points": 4,
+    "orbits": 576
+   },
+   "pass": true
+  },
+  "4 the collisions: 1,526 distinct blocks on the 2,048 classes, and 429 on the 576 orbits up to symmetry; 92 of the 98 groups of classes sharing a block span several orbits, and 76 mix solution counts; the largest, 190 classes, is exactly the classes where nothing creates at any entry, from 66 orbits, with 60 to 110 solutions": {
+   "info": {
+    "blocks up to symmetry": 429,
+    "classes where nothing creates": 190,
+    "distinct blocks": 1526,
+    "group sizes": [
+     [
+      1,
+      1428
+     ],
+     [
+      2,
+      50
+     ],
+     [
+      3,
+      20
+     ],
+     [
+      4,
+      14
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      16,
+      1
+     ],
+     [
+      48,
+      2
+     ],
+     [
+      190,
+      1
+     ]
+    ],
+    "groups across orbits": 92,
+    "groups mixing solution counts": 76,
+    "their orbits": 66,
+    "their solution counts (min, max)": [
+     60,
+     110
+    ]
+   },
+   "pass": true
+  },
+  "5 a cross-orbit pair on its plain spaces: the first pair of classes from two orbits sharing a block has signed glues with different solution counts, and its two plain edge-atom spaces, with their own engine, have identical blocks of glue lines, equal to the signed glue's": {
+   "info": {
+    "signings": [
+     [
+      [
+       3,
+       1
+      ],
+      [
+       6,
+       5
+      ]
+     ],
+     [
+      [
+       3,
+       1
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       4
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       7,
+       4
+      ]
+     ]
+    ],
+    "solutions": [
+     62,
+     60
+    ]
+   },
+   "pass": true
+  },
+  "6 census 6 does not separate them: with all four far sides, census 6 under each of the six orders of each gluing line's points, ticket A's pair on the smallest glue and the pair of check 5 still have identical creation between glue lines": {
+   "info": {
+    "10-line pair identical": true,
+    "smallest glue pair identical": true
+   },
+   "pass": true
+  },
+  "7 the Pfaffian class: the generator's signing lies in the only class whose signed glue has no solution, and no other class has its block": {
+   "info": {
+    "Pfaffian signing": [
+     [
+      0,
+      2
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      9,
+      9
+     ]
+    ],
+    "classes without solutions": 1,
+    "its block": [
+     [
+      "[false, false, false]",
+      6
+     ],
+     [
+      "[false, true, true]",
+      30
+     ],
+     [
+      "[true, true, true]",
+      26
+     ],
+     [
+      "null",
+      28
+     ]
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "One size past ticket A, on the 10-line trisum glue (TRISUM-READ's seeds 6 and 36, which give isomorphic glues; cycle rank 11), the signed glue's creation map takes 1,526 values on the 2,048 switching classes and 429 on their 576 orbits under the glue's 4 automorphisms; 92 of the 98 groups of classes sharing a block span several orbits and 76 mix solution counts. The largest group is exactly the 190 classes at which no far side creates at any entry, from 66 orbits, with 60 to 110 solutions. A pair of classes from two orbits with different solution counts has identical glue blocks on its plain edge-atom spaces, and adding census 6 under every order of the gluing line separates neither that pair nor ticket A's pair. The Pfaffian class is again the only class without solutions, and no other class has its block.",
+ "kind": "proof",
+ "proof": "SWITCH-COMPLETE-20261108-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SWITCH-COMPLETE-20261108-001B"
+}

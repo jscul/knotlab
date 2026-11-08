@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-LAW-20261107-001B-E001",
+  "ticket": "GROWTH-LAW-20261107-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Run as label-free outward growth from one tile, does the pinwheel's own collar law grow the plane in every declared order without dead ends, how often is a move forced, and are the grown patches pinwheel patches? This takes up PINWHEEL-ATLAS-20261107-001C (retired as backlog) beside GROW-COIN-20261107-001, where label-free accretion of knot spheres keeps the roundness witness.",
+  "public_inputs": {
+    "law": "The 108 complete collar keys of proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas (Theorem 2), recomputed by its atlas_lib.py (sha256 e0b22c79c4428ccdae63b76a9d6d88dc190e9a0dfc549f0b5fdb7c21a293915f): a tile with every tile touching it, in the tile's own affine frame, with its handedness.",
+    "atlas": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas.json (sha256 64df11fa4c5ca7f735be4e13ddb79cfcea7ad34bb6a1e010279fd4c0af41f945): the 1,168 radius-2 rooted codes, for the radius-2 check of grown patches.",
+    "engine": "growth_engine.py and legality.py in this directory. A move completes one incomplete tile's collar with one complete key of its handedness; it is legal when the tiles it adds overlap no placed tile and every tile touching them stays consistent (some complete key contains its collar and its missing tiles overlap nothing). A dead end is an incomplete tile with no legal move. Coins: a legal move chosen uniformly at random when there are several. Nothing is remembered beyond the placed tiles.",
+    "orders": {
+      "bfs": "complete the oldest incomplete tile",
+      "random": "complete a uniformly random incomplete tile",
+      "finger": "complete the newest incomplete tile (depth first: a long finger)",
+      "forced": "complete the oldest incomplete tile that has exactly one legal move (or none); when no tile is forced, the oldest incomplete tile, by a coin"
+    },
+    "runs": "From the seed tile of handedness +1 (the law has mirror pairs, so the other seed gives mirror runs): bfs, random and finger 20 runs each, forced 10 runs, random seeds 1..20, each until the patch has 500 tiles or a dead end.",
+    "legality": "For each run's final patch: (a) atlas check: every dart farther than 3 from the patch's boundary has its radius-2 code in atlas.json; (b) embedding: climb the hierarchy from the seed (legality.py), up to level 8; found means the patch occurs in a pinwheel tiling. For a dead end, the same two tests on the patch at the dead end."
+  },
+  "forbidden_inputs": [
+    "Labels, levels or positions in the hierarchy during growth",
+    "Changing orders, run counts, the size, the coin or the legality rule after seeing results",
+    "Dropping runs that dead-end"
+  ],
+  "primary_observable": "For each order: the number of runs that reach 500 tiles without a dead end, and for each dead end the patch size at which it occurred.",
+  "secondary_observables": "Moves, forced moves, choices and the number of options per choice; the complete radius (tile-graph distance from the seed to the nearest incomplete tile, minus one); the atlas check and the embedding of each final or dead-end patch.",
+  "cheapest_meaningful_control": "Positive: growth that follows a genuine pinwheel patch (T_5 in the frame of its central tile) in the bfs, random and finger orders to 500 tiles is never rejected, with the move cache checked against fresh computation in one run; genuine balls of tile radius 4, 6 and 8 pass the atlas check and embed. Negative: flipping a rectangle of two tiles in a genuine ball (the other diagonal) makes the patch inconsistent, fails the atlas check, and fails the embedding when the seed's collar is unchanged. A test that rejects a genuine continuation or accepts a flip is not read.",
+  "resource_budget": {
+    "wall_minutes": 240,
+    "memory_mib": 8192,
+    "workers": 20
+  },
+  "first_executable_signal": "The replay control.",
+  "decision_or_followup_rule": "If every run of every order reaches 500 tiles with no dead end and every final patch embeds, record that the collar law grew the pinwheel from one tile in every declared order with no dead end and only pinwheel patches (evidence, not a theorem). If dead ends occur, report their frequency per order and whether the patch had already left the pinwheel's patches (a deception: a collar-legal patch that no longer embeds). If a final patch reaches 500 tiles but does not embed, record a collar-legal non-pinwheel patch (evidence that the collar law does not force the pinwheel at that size).",
+  "stop_rule": "Stop at the declared orders, runs and size.",
+  "nonclaims": [
+    "Exploratory and non-promotable: runs are finite, so runs without dead ends do not show that no order dead-ends, and dead ends in a finite run do not show that the law cannot be grown in some other order.",
+    "The law used is the collar law (radius one in tiles, with exact shapes in the tile's frame); the radius-2 dart atlas is used only to check the grown patches.",
+    "No physical growth process or quasicrystal is modelled."
+  ],
+  "feasibility_disclosure": "Before freezing: the engine and the legality tests were written and checked on genuine patches only. T_4 in its central tile's frame has all 625 tiles consistent and 472 complete. Growth that follows T_5 to 150 tiles in the bfs order, with the cache checked, made 35 moves, none rejected (23 forced and 12 choices along the genuine path). The seed has 54 legal moves, and a boundary tile's legal moves take about 0.3 s. Genuine balls of tile radius 2 to 8 (up to 626 tiles) embed, at levels 1 to 4, and pass the atlas check (up to 720 darts). Eight flipped rectangles in a radius-6 ball are all inconsistent and fail the atlas check (102 to 169 bad darts, all within distance 2 of the flip), and the four whose seed collar was unchanged fail the embedding at level 1. No growth run with coins was made."
+}

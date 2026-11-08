@@ -1,0 +1,731 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/manifest.json": "Proved",
+     "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/result.json": "passed",
+     "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/manifest.json": "Proved",
+     "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/result.json": "passed",
+     "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json": "Proved",
+     "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json": "passed"
+    }
+   }
+  },
+  "1 the open-end rule's runs to n knots (n = 2..7): 2^(n-1) birth orders; their seam bits are the n monotone sequences, each with exactly one knot without a parent": {
+   "pass": true,
+   "info": {
+    "[n, birth orders, seam-bit histories, ok]": [
+     [
+      2,
+      2,
+      2,
+      true
+     ],
+     [
+      3,
+      4,
+      3,
+      true
+     ],
+     [
+      4,
+      8,
+      4,
+      true
+     ],
+     [
+      5,
+      16,
+      5,
+      true
+     ],
+     [
+      6,
+      32,
+      6,
+      true
+     ],
+     [
+      7,
+      64,
+      7,
+      true
+     ]
+    ]
+   }
+  },
+  "2 Theorem 1, fixed substrate: the joint law of the open-end rule's history (seam bits n <= 5, pair bits n <= 4) and the thread's states is a product; every knot is a bond of the thread; the history alone is 2-CNF with no knot": {
+   "pass": true,
+   "info": {
+    "[history bits, n, variables, rows, knots by kind, ok]": [
+     [
+      "seam",
+      2,
+      6,
+      16,
+      {
+       "state": 3
+      },
+      true
+     ],
+     [
+      "seam",
+      3,
+      9,
+      48,
+      {
+       "state": 6
+      },
+      true
+     ],
+     [
+      "seam",
+      4,
+      12,
+      128,
+      {
+       "state": 10
+      },
+      true
+     ],
+     [
+      "seam",
+      5,
+      15,
+      320,
+      {
+       "state": 15
+      },
+      true
+     ],
+     [
+      "pair",
+      2,
+      6,
+      16,
+      {
+       "state": 3
+      },
+      true
+     ],
+     [
+      "pair",
+      3,
+      10,
+      64,
+      {
+       "state": 6
+      },
+      true
+     ],
+     [
+      "pair",
+      4,
+      15,
+      256,
+      {
+       "state": 10
+      },
+      true
+     ]
+    ]
+   }
+  },
+  "3 control: a rule that reads a state (an inner knot grows right when its own open end is 1, left when 0) gives knots joining the order to the states": {
+   "pass": true,
+   "info": {
+    "[n, knots, crossing knots, examples]": [
+     [
+      4,
+      46,
+      24,
+      [
+       [
+        "h_s0",
+        "s0",
+        "s1"
+       ],
+       [
+        "h_s0",
+        "s0",
+        "s2"
+       ]
+      ]
+     ],
+     [
+      5,
+      97,
+      48,
+      [
+       [
+        "h_s0",
+        "s0",
+        "s1"
+       ],
+       [
+        "h_s0",
+        "s0",
+        "s2"
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  "4 Theorem 1, substrates that vary (sites -2..1, seed at 0): with forgotten variables free no knot meets the order and the states; the history meets them only as 'site grown -> its bond holds' (presence literals); in every fixed substrate all knots are bonds; control: absent pair bits set to 0 carry existence and knot with the states": {
+   "pass": true,
+   "info": {
+    "forgotten pair bits free": {
+     "knots by kind": {
+      "state": 1,
+      "existence,order": 1,
+      "existence,state": 12
+     },
+     "history-internal": [
+      [
+       "e_m2",
+       "e_p1",
+       "h_m1p1",
+       "h_m2p1"
+      ]
+     ],
+     "each fixed substrate": {
+      "(0, 0, 0)": [
+       [
+        "state"
+       ]
+      ],
+      "(0, 0, 1)": [
+       [
+        "state"
+       ]
+      ],
+      "(0, 1, 0)": [
+       [
+        "state"
+       ]
+      ],
+      "(0, 1, 1)": [
+       [
+        "state"
+       ]
+      ],
+      "(1, 1, 0)": [
+       [
+        "state"
+       ]
+      ],
+      "(1, 1, 1)": [
+       [
+        "state"
+       ]
+      ]
+     }
+    },
+    "control, absent pair bits set to 0": {
+     "knots by kind": {
+      "state": 1,
+      "existence,state": 12,
+      "order,state": 14,
+      "existence,order,state": 1
+     },
+     "example": [
+      [
+       "h_m2p1",
+       "x_m25",
+       "x_m15",
+       "u_m2"
+      ],
+      [
+       "h_m1p1",
+       "x_m15",
+       "x_m05",
+       "u_m1"
+      ]
+     ]
+    }
+   }
+  },
+  "5 Theorem 2: 'at most one parent' is 2-CNF with no knot; on a ring it allows only the two cyclic orientations, the beginning is NAE over every seam (a knot, knotlab agrees) and the two contradict; on a thread it gives exactly one beginning; the knots of 'time has no loop' are exactly the world's cycles (enumerated) and every cycle's shadow is NAE; three events' order is NAE_3, four events' has the 7 cycles of K4 as knots; controls: a cycle plus an edge, NAE with the wrong flip": {
+   "pass": true,
+   "info": {
+    "rings [n, local, beginning, ok]": [
+     [
+      3,
+      2,
+      6,
+      true
+     ],
+     [
+      4,
+      2,
+      14,
+      true
+     ],
+     [
+      5,
+      2,
+      30,
+      true
+     ],
+     [
+      6,
+      2,
+      62,
+      true
+     ],
+     [
+      7,
+      2,
+      126,
+      true
+     ],
+     [
+      8,
+      2,
+      254,
+      true
+     ],
+     [
+      9,
+      2,
+      510,
+      true
+     ],
+     [
+      10,
+      2,
+      1022,
+      true
+     ]
+    ],
+    "threads [n, local, ok]": [
+     [
+      3,
+      3,
+      true
+     ],
+     [
+      4,
+      4,
+      true
+     ],
+     [
+      5,
+      5,
+      true
+     ],
+     [
+      6,
+      6,
+      true
+     ],
+     [
+      7,
+      7,
+      true
+     ],
+     [
+      8,
+      8,
+      true
+     ],
+     [
+      9,
+      9,
+      true
+     ],
+     [
+      10,
+      10,
+      true
+     ]
+    ],
+    "graphs [name, edges, acyclic orientations, cycles, chordless, knots == cycles, ok]": [
+     [
+      "K4",
+      6,
+      24,
+      7,
+      4,
+      true,
+      true
+     ],
+     [
+      "prism",
+      9,
+      204,
+      14,
+      5,
+      true,
+      true
+     ],
+     [
+      "K3,3",
+      9,
+      230,
+      15,
+      9,
+      true,
+      true
+     ],
+     [
+      "cube",
+      12,
+      1862,
+      28,
+      10,
+      true,
+      true
+     ],
+     [
+      "Petersen",
+      15,
+      16680,
+      57,
+      22,
+      null,
+      true
+     ]
+    ],
+    "linear orders": true,
+    "control (wrong flip differs)": true
+   }
+  },
+  "6 Theorem 3, Euler's count: one dimension (200 runs per rule): knots minus seams = 1 - closing moves, the open-end rule grows only threads; two dimensions: K_m (m <= 5) grows with one beginning, one end and no closing move (chi 2), and random disc growth never sticks (30 runs each); flat tori need closing moves (chi 0) and disc growth always sticks; controls fail": {
+   "pass": true,
+   "info": {
+    "one dimension": {
+     "open-end": {
+      "runs": 200,
+      "identity failures": 0,
+      "closing moves": 0,
+      "threads": 200,
+      "control: closes counted as sprouts, failures": 0
+     },
+     "sprout": {
+      "runs": 200,
+      "identity failures": 0,
+      "closing moves": 0,
+      "threads": 19,
+      "control: closes counted as sprouts, failures": 0
+     },
+     "close": {
+      "runs": 200,
+      "identity failures": 0,
+      "closing moves": 968,
+      "threads": 16,
+      "control: closes counted as sprouts, failures": 176
+     }
+    },
+    "two dimensions [surface, triangles, step kinds, total, disc growth stuck or left, ok]": [
+     [
+      "K_1",
+      8,
+      {
+       "first": 1,
+       "add": 3,
+       "cap": 3,
+       "end": 1
+      },
+      2,
+      0,
+      true
+     ],
+     [
+      "K_2",
+      32,
+      {
+       "first": 1,
+       "add": 15,
+       "cap": 15,
+       "end": 1
+      },
+      2,
+      0,
+      true
+     ],
+     [
+      "K_3",
+      72,
+      {
+       "first": 1,
+       "add": 35,
+       "cap": 35,
+       "end": 1
+      },
+      2,
+      0,
+      true
+     ],
+     [
+      "K_4",
+      128,
+      {
+       "first": 1,
+       "add": 63,
+       "cap": 63,
+       "end": 1
+      },
+      2,
+      0,
+      true
+     ],
+     [
+      "K_5",
+      200,
+      {
+       "first": 1,
+       "add": 99,
+       "cap": 99,
+       "end": 1
+      },
+      2,
+      0,
+      true
+     ],
+     [
+      "torus 3x3",
+      18,
+      {
+       "first": 1,
+       "add": 6,
+       "pinch": 3,
+       "cap": 6,
+       "end": 2
+      },
+      0,
+      [
+       10,
+       11
+      ],
+      true
+     ],
+     [
+      "torus 4x4",
+      32,
+      {
+       "first": 1,
+       "add": 13,
+       "cap": 9,
+       "pinch": 5,
+       "end": 4
+      },
+      0,
+      [
+       14,
+       16
+      ],
+      true
+     ],
+     [
+      "torus 6x6",
+      72,
+      {
+       "first": 1,
+       "add": 33,
+       "cap": 27,
+       "pinch": 6,
+       "end": 5
+      },
+      0,
+      [
+       22,
+       27
+      ],
+      true
+     ],
+     [
+      "torus 4x6",
+      48,
+      {
+       "first": 1,
+       "add": 21,
+       "cap": 15,
+       "pinch": 6,
+       "end": 5
+      },
+      0,
+      [
+       18,
+       20
+      ],
+      true
+     ],
+     [
+      "torus 8x8",
+      128,
+      {
+       "first": 1,
+       "add": 61,
+       "cap": 51,
+       "pinch": 8,
+       "end": 7
+      },
+      0,
+      [
+       30,
+       35
+      ],
+      true
+     ]
+    ],
+    "control (pinches counted as adds)": 4
+   }
+  },
+  "7 Theorem 4, pumping (radius 1): every random law with k = 2 or 3 labels that allows a thread at Theorem 4's bound or longer allows the ring built by the proof (windows checked); the counter control (labels 0..K-1, distance from a seed) allows threads up to 2K - 1 and no ring, so excluding rings costs labels that grow with the length": {
+   "pass": true,
+   "info": {
+    "random laws": {
+     "k=2 (bound 29, 3000 laws)": {
+      "laws with a thread": 2416,
+      "laws with a thread at the bound or longer": 2197,
+      "pumped ring valid": 2197,
+      "misglued rings tried": 1792,
+      "threads but no ring": 132,
+      "longest thread with no ring": 6
+     },
+     "k=2 control: misglued rings rejected": 729,
+     "k=3 (bound 86, 600 laws)": {
+      "laws with a thread": 568,
+      "threads but no ring": 5,
+      "longest thread with no ring": 6,
+      "laws with a thread at the bound or longer": 556,
+      "pumped ring valid": 556,
+      "misglued rings tried": 523
+     },
+     "k=3 control: misglued rings rejected": 213
+    },
+    "counter [K, longest thread, rings]": [
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      3,
+      5,
+      0
+     ],
+     [
+      4,
+      7,
+      0
+     ],
+     [
+      5,
+      9,
+      0
+     ],
+     [
+      6,
+      11,
+      0
+     ],
+     [
+      7,
+      13,
+      0
+     ],
+     [
+      8,
+      15,
+      0
+     ],
+     [
+      9,
+      17,
+      0
+     ],
+     [
+      10,
+      19,
+      0
+     ],
+     [
+      11,
+      21,
+      0
+     ],
+     [
+      12,
+      23,
+      0
+     ]
+    ]
+   }
+  },
+  "8 Proposition 5: every flat torus (triangular lattice, p x q) is a two-kind surface whose co-lines all have three points, faces two-coloured, no digon; so the seam law's S1 is empty and the unmarked marking meets S2: the seam law allows every flat torus, and only growth's beginning (Theorem 3) or an aperiodic law excludes them": {
+   "pass": true,
+   "info": {
+    "[p, q, triangles, co-line degrees, two-coloured, ok]": [
+     [
+      3,
+      3,
+      18,
+      [
+       6
+      ],
+      true,
+      true
+     ],
+     [
+      3,
+      6,
+      36,
+      [
+       6
+      ],
+      true,
+      true
+     ],
+     [
+      4,
+      4,
+      32,
+      [
+       6
+      ],
+      true,
+      true
+     ],
+     [
+      6,
+      6,
+      72,
+      [
+       6
+      ],
+      true,
+      true
+     ],
+     [
+      5,
+      7,
+      70,
+      [
+       6
+      ],
+      true,
+      true
+     ],
+     [
+      8,
+      8,
+      128,
+      [
+       6
+      ],
+      true,
+      true
+     ]
+    ]
+   }
+  }
+ },
+ "seconds": 40.4
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROWTH-LAW-20261107-001A-P001",
+  "canonical_id": "GROWTH-LAW-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "GROWTH-LAW-20261107-001A",
+  "proof": "GROWTH-LAW-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A beginning is a knot: a growth history under the knot test",
+  "status": "Proved",
+  "claim": "Growth written as a law with its history as variables, read under K1-K3. (1) For a rule that reads only the law, the joint law of history and states on a fixed world is a product, so no knot joins the order to the states; when worlds vary, with absent things free and constraints accumulating, every knot that contains an order variable contains an existence variable, the knots on states alone are the seed's, and existence enters as a presence literal (if this site grew, its knot holds, itself a knot). (2) The local history, at most one parent per knot, is 2-CNF and holds no knot; the knots of 'time has no loop' (the acyclic orientations of the world's knot graph) are exactly its cycles, each the not-all-equal relation on its seams; on a ring the beginning is one NAE knot over every seam and contradicts the local history; on a tree the local history gives exactly one beginning; three events' order is NAE_3. (3) Euler's count: along any growth order the steps' changes sum to chi (one dimension: beginnings minus closings; two: first + ends - pinches), so sprouting builds only trees, disc moves only discs and spheres, and rings and handles need closing steps. (4) A radius-r law with k hidden labels that allows a thread of n >= (2r+1)k^(2r+1) + 2r + 3 knots allows a ring, while the open-end rule never grows one, so a beginning does in one dimension what no bounded witness does (about log n bits per knot); in two dimensions a law excludes flat tori exactly when its flat configurations are aperiodic, and the seam law allows every flat torus.",
+  "dependencies": [
+    "GROW-COIN-20261107-001A",
+    "OPEN-END-GROWTH-20261107-001B",
+    "SPHERE-GROWTH-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A knot of a joint law (growth history and states, forgotten variables free, constraints accumulating) that meets an order variable and a state variable and no existence variable.",
+    "A knot of the acyclic-orientation relation of a graph that is not a cycle, or a cycle of length at least three that is not a knot.",
+    "A growth history whose step changes do not sum to the world's Euler characteristic.",
+    "A radius-r law with k labels that allows a thread longer than the pumping bound and no ring."
+  ],
+  "lineage": {
+    "home_scope": "GROWTH-LAW-20261107-001",
+    "epic_path": [
+      "GROWTH-LAW-20261107-001"
+    ],
+    "parents": [
+      "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/growth_lib.py",
+      "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/manifest.json",
+      "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/result.json",
+      "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/manifest.json",
+      "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/result.json",
+      "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json",
+      "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/manifest.json": "502e2e479d09eb2bf16e7561478ee69558582f457299c717fc02cfa7c0adb07a",
+    "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/result.json": "9fee167e4045159f8bfee3b657c1c1e4141b5305d6125076ae1185053d887a19",
+    "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/manifest.json": "94dd318d8ccfcd1b2a50123ad9030fee1c38c4bba971feeb1835000a6c1c45f9",
+    "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/result.json": "ca5117883d0f6a3a87ffd63bcb0592c1346b0f3a8d3765313617b1e0846c8d40",
+    "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/growth_lib.py": "82fb436b339cb9565e419d77e4ad72a4a46abd38105fd203aab5f486681c1efb",
+    "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/manifest.json": "2cb402fe7beb0cb2e9db0399de4aa7b290e6853036855a496ad8b42b8e630f82",
+    "proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/result.json": "44067f86812cd8b746db0cc171c9a9a6be70116b1e2e8aa00585a10daf45264f"
+  },
+  "paths": {
+    "manifest": "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json",
+    "identity": "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/identity.json",
+    "proof": "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/proof.md",
+    "check": "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/check.py",
+    "result": "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json",
+    "directory": "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Theorems 1-4 and Proposition 5 by proof. Computed: joint laws on threads (seam bits n <= 5, pair bits n <= 4), sites -2..1 with existence and pair bits, a state-reading control (n = 4, 5); rings and threads n = 3..10; acyclic orientations of K4, the prism, K3,3, the cube (knots enumerated) and the Petersen graph; linear orders of 3 and 4 events; 600 one-dimensional runs; K_m (m <= 5) and flat tori up to 8 x 8; 3,600 random radius-1 laws (k = 2, 3) and the counter control (K <= 12).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, with the finite claims checked by computation with controls; no human or external review",
+    "novelty": "known-with-delta: products of relations, the topes of graphic oriented matroids (Bjorner, Las Vergnas, Sturmfels, White and Ziegler 1993), the weak Morse equality of discrete Morse theory (Forman 1998), shellability of 2-spheres (Steinitz; Bruggesser-Mani 1971), periodic points of one-dimensional shifts, proof-labeling schemes (Korman, Kutten and Peleg 2010; Goos and Suomela 2016) and aperiodic tilings (Berger 1966; Robinson 1971; Socolar and Taylor 2011) are classical; new as far as found is the reading under the canonical knot test: a history's local part is pairwise and its global part (time without a loop) is a knot on every cycle, dual to the states' knots on cuts, applied to the open-end rule and the knot spheres."
+  }
+}

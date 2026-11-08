@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-LAW-20261107-001C-E001",
+  "ticket": "GROWTH-LAW-20261107-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Ticket B's label-free outward growth of the pinwheel left the pinwheel's patches in every coin run. Where does it leave them, how much information would growth need to stay inside, and does a stronger local law (the radius-2 atlas on top of the collar law) do better?",
+  "public_inputs": {
+    "engine": "Ticket B's growth_engine.py (sha256 05ae95f9b878d1cccb3ad9ba0519c5a5ebb08dbf3879cb57ea4bb3ba887a3457) and legality.py (sha256 992076ff9a9bf956a64e152a8372da989e4d7605dba5b435154829f0b9c8c674), unchanged; shared_coin.py here repeats the engine's growth loop move for move with the same random draws, adding hooks.",
+    "ticket B's runs": "artifacts/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/run/rows.jsonl: the 70 coin runs (bfs, random and finger 20 each, forced 10, seeds 1..20, size 500).",
+    "arms": {
+      "trace": "Replay each of ticket B's coin runs with its own seed and order; after every move test whether the patch embeds (legality.py). At the first move after which it does not, record the move, whether it was forced, its options and, replaying again to just before it, which options leave a pinwheel patch; and the moves from it to the run's end.",
+      "oracle": "Grow in the bfs order (10 runs, seeds 1..10) and the random order (5 runs, seeds 1..5) to 1,000 tiles, choosing at each choice uniformly among the options that leave a pinwheel patch (forced moves are taken as they are). Record at each choice the number of options and of legal ones, and the totals of log2 of each.",
+      "stronger law": "Coin growth as in ticket B, bfs and random orders, 20 runs each, seeds 1..20, to 500 tiles, under the collar law plus the radius-2 atlas: a move is legal only if, after it, every dart farther than 3 from the patch's boundary has its radius-2 code among the atlas's 1,168."
+    }
+  },
+  "forbidden_inputs": [
+    "Changing arms, run counts, sizes, seeds or the legality test after seeing results",
+    "Dropping runs"
+  ],
+  "primary_observable": "Trace: for every run, the first move that leaves the pinwheel's patches, and whether it was a forced move or a choice. Oracle: whether any run dead-ends, and the cumulative bits of legal options against those of all options as the patch grows. Stronger law: per order, the runs that reach 500 tiles without a dead end and whether their patches embed.",
+  "cheapest_meaningful_control": "Every trace reproduces its ticket B run (outcome, tiles, moves). A legal patch keeps a legal move at every tile (ticket B's replay control), so an oracle run that dead-ends, or a forced move that leaves the pinwheel's patches, would be an engine error, and the run is not read. A growth that follows a genuine pinwheel patch (T_6) under the stronger law is never rejected (one bfs run to 500 tiles).",
+  "resource_budget": {
+    "wall_minutes": 300,
+    "memory_mib": 12288,
+    "workers": 20
+  },
+  "first_executable_signal": "The traces reproducing ticket B's runs.",
+  "decision_or_followup_rule": "Trace: if every first illegal move is a choice, record that the patch leaves the pinwheel at a coin and how many options that coin had legal. Oracle: if the bits of legal options grow far more slowly than those of all options, record that growth needs few hidden bits that local coins cannot share (the shared coin of GROW-COIN-20261107-001); if they grow alike, record no such gap. Stronger law: if its runs still dead-end or leave the pinwheel, record that the radius-2 law does no better, as Dworkin and Shieh (1995) predict for every aperiodic law; if most reach 500 tiles inside the pinwheel's patches, record that the collar law's deceptions come from its weakness.",
+  "stop_rule": "Stop at the declared arms, runs and sizes.",
+  "nonclaims": [
+    "Exploratory and non-promotable: finite runs and sizes.",
+    "The oracle uses the embedding test, which reads the whole patch; it measures information, it is not a growth law.",
+    "No physical growth process is modelled."
+  ],
+  "feasibility_disclosure": "Before freezing: shared_coin.py was written and parsed; under the stronger law, growth that follows a genuine patch (T_6) in the bfs order reached 200 tiles in 43 moves (32 forced, 11 choices) with no rejection, in 18 s; the embedding test takes about 10 s on 1,100 tiles and 25 s on 2,200. No trace, oracle or stronger-law coin run was made. Ticket B's results were known when this contract was written: every coin run left the pinwheel's patches."
+}

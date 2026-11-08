@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001B",
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROWTH-LAW-20261107-001C-E001",
+    "contract_path": "experiments/GROWTH-LAW-20261107-001C/GROWTH-LAW-20261107-001C-E001_shared_coin/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "GROWTH-LAW-20261107-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment after ticket B, whose label-free outward growth of the pinwheel dead-ended in every run: where do the dead ends come from, and how much information does growth really need? (1) Replay ticket B's coin runs exactly and test after every move whether the patch is still a pinwheel patch (embedding, as in B): find the first move that leaves the pinwheel's patches, whether it was a forced move or a choice, how many of that choice's options were legal, and how many moves later the dead end appeared. (2) Grow with an oracle that keeps only the legal options at each choice (a uniformly random legal one), to declared sizes: record the collar-legal and the legal options at every choice, and compare the bits the oracle supplies (the sum of log2 of the legal options) with the bits local choices seem to offer (the sum of log2 of all options) as the patch grows. Interpret beside GROW-COIN-20261107-001's shared coin: whether the plane's growth needs few hidden bits that must be shared across the growing boundary.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROWTH-LAW-20261107-001"
+  },
+  "parent": "GROWTH-LAW-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, GROWTH-LAW-20261107-001C-E001): replaying ticket B's 70 coin runs exactly, the first move that left the pinwheel's patches was always a choice, never a forced move, at move 2 to 73 (median 6), and at it exactly one option was legal in 59 of 70 runs (1 of 2 in 35); the error was carried 0 to 145 moves before the run ended, its dead tile 1 to 19 tiles away (median 3). An oracle keeping only legal options grew 1,000 tiles in all 15 runs, never stuck: after the seed's 54-way choice, 693 of its 775 choices had a single legal option, and it supplied 4.0 to 9.6 bits against 45.7 to 88.1 bits of apparent choice, so coins stay inside the pinwheel to 1,000 tiles with probability 2^-41 to 2^-82. The collar law plus the radius-2 atlas dead-ended in 40 of 40 runs (35 at exactly the collar law's size, 5 sooner, none later). Growth needs a few hierarchy bits shared across the growing boundary, which local coins cannot share.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "The pinwheel's growth needs a shared coin: few real bits, many apparent ones"
+}

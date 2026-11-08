@@ -1,0 +1,172 @@
+{
+ "checks": {
+  "1 knots of acyclic orientations are exactly the cycles: K5, the Petersen graph (enumerated), the Wagner graph; a doubled seam is a tie": {
+   "pass": true,
+   "info": [
+    [
+     "K5",
+     10,
+     120,
+     37,
+     37,
+     true
+    ],
+    [
+     "Petersen",
+     15,
+     16680,
+     57,
+     57,
+     true
+    ],
+    [
+     "Wagner",
+     12,
+     1920,
+     29,
+     29,
+     true
+    ],
+    [
+     "triangle with a doubled seam (minimal constrained sets)",
+     [
+      [
+       "e0",
+       "e1"
+      ],
+      [
+       "e0",
+       "e2",
+       "e3"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ],
+     true
+    ]
+   ]
+  },
+  "2 Theorem 4 one size past: k = 4 labels at radius 1 (300 random laws, bound 197)": {
+   "pass": true,
+   "info": {
+    "laws with a thread at the bound or longer": 298,
+    "pumped ring valid": 298
+   }
+  },
+  "3 Theorem 1(b) on larger worlds (sites -2..2 and -3..2): with absent pair bits free, the shadow on the order and state variables is exactly Full x (the seed's law), so no knot meets the order without existence; set to 0, it is not": {
+   "pass": true,
+   "info": [
+    [
+     -2,
+     1,
+     "free",
+     14,
+     2656,
+     true
+    ],
+    [
+     -2,
+     1,
+     "zero",
+     14,
+     800,
+     false
+    ],
+    [
+     -2,
+     2,
+     "free",
+     19,
+     48512,
+     true
+    ],
+    [
+     -2,
+     2,
+     "zero",
+     19,
+     4224,
+     false
+    ],
+    [
+     -3,
+     2,
+     "free",
+     24,
+     818432,
+     true
+    ],
+    [
+     -3,
+     2,
+     "zero",
+     24,
+     19712,
+     false
+    ]
+   ]
+  },
+  "4 K_m for m = 6, 7: one beginning and one end; random disc growth never sticks (30 runs each)": {
+   "pass": true,
+   "info": [
+    [
+     6,
+     288,
+     {
+      "first": 1,
+      "add": 143,
+      "cap": 143,
+      "end": 1
+     },
+     2,
+     0
+    ],
+    [
+     7,
+     392,
+     {
+      "first": 1,
+      "add": 195,
+      "cap": 195,
+      "end": 1
+     },
+     2,
+     0
+    ]
+   ]
+  },
+  "5 rings n = 11..14: local history two cyclic orientations; the beginning is NAE_n and a knot": {
+   "pass": true,
+   "info": [
+    [
+     11,
+     2,
+     2046,
+     true
+    ],
+    [
+     12,
+     2,
+     4094,
+     true
+    ],
+    [
+     13,
+     2,
+     8190,
+     true
+    ],
+    [
+     14,
+     2,
+     16382,
+     true
+    ]
+   ]
+  }
+ },
+ "seconds": 75.9
+}

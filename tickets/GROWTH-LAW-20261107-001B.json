@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROWTH-LAW-20261107-001B-E001",
+    "contract_path": "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "GROWTH-LAW-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment, taking up PINWHEEL-ATLAS-20261107-001C (retired as backlog): grow the pinwheel plane outward from one tile with no labels, the growing patch the only memory. A move completes one tile's collar (the tile and every tile touching it) with one of the 108 complete collars of PINWHEEL-ATLAS-20261107-001A, and is legal only if every tile's collar still extends to a complete one. Run declared growth orders (breadth-first, random, a long finger, forced moves first) with coins at choices, to a declared size; measure forced moves, choices and dead ends, and test every grown patch against the pinwheel's own patches (does it occur in some pinwheel tiling?). Interpret beside GROW-COIN-20261107-001: whether label-free outward growth, in every order, realizes the pinwheel's law in the plane.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROWTH-LAW-20261107-001"
+  },
+  "parent": "GROWTH-LAW-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, GROWTH-LAW-20261107-001B-E001): run as label-free outward growth from one tile with coins at its choices, the pinwheel's own collar law (the 108 complete collars of PINWHEEL-ATLAS-20261107-001A) left the pinwheel's patches in all 70 runs and every declared order: bfs, random and finger growth dead-ended in 20 of 20 runs each (within 18 to 304 tiles), forced-first growth in 6 of 10, and the 4 forced runs that reached 500 tiles are collar-legal patches that are not pinwheel patches, breaking the radius-2 atlas at 32 to 120 interior darts. Growth that follows a genuine pinwheel patch reached 500 tiles in every order with no rejection, and even there a third of the moves had several legal options. Consistent with Dworkin and Shieh (1995): every aperiodic protoset of the plane has deceptions of all orders.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "The pinwheel grown outward by its own law leaves the pinwheel at once"
+}

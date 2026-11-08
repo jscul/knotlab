@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LOGIC-CIRCLE-20261107-001C-E001",
+  "ticket": "LOGIC-CIRCLE-20261107-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Measured with exact bond distances, which random planar parity laws have round circles at large scale, which keep a lattice-shaped circle, and which are not planes at all?",
+  "public_inputs": {
+    "bond distance": "For two variables e, f of a planar parity law with plane dual H (cycles of H are the law's bonds), the least size of a cycle of H through the dual edges e*, f*, minus one; computed exactly as a two-unit minimum-cost flow with unit vertex capacities.",
+    "laws": {
+      "square": "Control. Parity law on the square grid (four-place knots); H = the square grid. Predicted circle: the diamond, radial profile N(theta) = 2(|cos theta| + |sin theta|).",
+      "honeycomb": "Control. Parity law on the honeycomb (three-place knots); H = the triangular grid of unit spacing. Predicted circle: a regular hexagon, anisotropy 2/sqrt(3).",
+      "split-1/2, split-1/4": "Ticket B's random split law: Z^2 with one diagonal per unit square, NE with probability p in {1/2, 1/4}; H = this graph. Predicted radial profile N(theta) = 2 c_p(cos theta, sin theta) (ticket B).",
+      "voronoi": "Parity law on the Voronoi tessellation of a Poisson process of intensity 1 in a square window (three-place knots); H = the Delaunay graph. Predicted: round (anisotropy tending to 1).",
+      "quadrangulation": "Parity law on the dual of a uniform random quadrangulation with n faces (four-place knots; Cori-Vauquelin-Schaeffer bijection); H = the quadrangulation. Literature prediction: distances grow like n^(1/4) (Brownian map, dimension 4)."
+    },
+    "directions": "24 equally spaced directions theta_k = 2 pi k / 24. For each source variable e0 near the window centre and each direction, the target is the variable nearest to e0 + R (cos theta_k, sin theta_k); N_k = delta(e0, f_k) / |x_f - x_e0| in Euclidean units of the drawing used to place targets.",
+    "sizes": {"square": [10, 20, 40], "honeycomb": [10, 20, 40], "split-1/2": [20, 40, 80], "split-1/4": [20, 40, 80], "voronoi": [10, 20, 40, 60], "quadrangulation n": [1000, 4000, 16000, 64000]},
+    "sampling": "4 independent sources (random laws: 4 independent environments) per law and radius; quadrangulation: 8 maps x 8 uniformly random pairs of variables per n, pairs without a common bond (no cycle) are counted and skipped. Seeds fixed in run.py."
+  },
+  "forbidden_inputs": [
+    "Changing the declared laws, radii, sizes or directions after seeing results",
+    "Reporting graph distance in place of bond distance as the observable",
+    "Smoothing or fitting the radial profiles before computing anisotropy"
+  ],
+  "primary_observable": "For each law and radius: the mean radial profile N_k over sources, its anisotropy A = max_k N_k / min_k N_k and the largest relative deviation from the predicted profile where one is declared. For the quadrangulation law: mean bond distance against n and the least-squares slope of log(mean bond distance) against log n over the declared sizes.",
+  "cheapest_meaningful_control": "The square and honeycomb laws must reproduce their exact polygons: anisotropy within 0.05 of sqrt(2) and 2/sqrt(3) at R = 40, deviation from the predicted profile below 0.1. A pipeline that fails these is not read.",
+  "resource_budget": {"wall_minutes": 60, "memory_mib": 8192},
+  "first_executable_signal": "Square and honeycomb profiles at R = 10.",
+  "decision_or_followup_rule": "Voronoi: round if the anisotropy decreases with R and is below 1.06 at R = 60; otherwise unresolved. Split laws: lattice-shaped curved if the anisotropy stays near the predicted value (1.207 at p = 1/2) and the profile deviation decreases with R; contradicts ticket B if the deviation grows. Quadrangulation: not a plane if the log-log slope is at most 0.35 (a plane gives 0.5, the Brownian map 0.25); unresolved between 0.35 and 0.45.",
+  "stop_rule": "Stop at the declared laws, radii and sizes; no added laws aimed at roundness after seeing results.",
+  "nonclaims": [
+    "Exploratory and non-promotable; finite radii do not prove limit shapes.",
+    "The Voronoi law's roundness comes from the isotropy of its Poisson input, which is drawn in the Euclidean plane; it is not derived from logic alone.",
+    "No physical space, metric geometry beyond bond distance, or continuum is claimed."
+  ],
+  "feasibility_disclosure": "Scratch probes before this envelope (not evidence): Voronoi law anisotropy over 24 directions 1.30 at R = 20 and 1.12 at R = 40 (one source each); quadrangulation law mean bond distance 13.1, 19.9, 30.8, 54.7 at n = 500, 2000, 8000, 32000 from 18 pairs each (noisy; 31 to 56 pairs per size had no common bond); ticket B's split-law bond distances exceeded twice the dual distance by 0 to 5 at n up to 80."
+}

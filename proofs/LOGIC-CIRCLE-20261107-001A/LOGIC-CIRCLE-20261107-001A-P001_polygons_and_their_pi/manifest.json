@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOGIC-CIRCLE-20261107-001A-P001",
+  "canonical_id": "LOGIC-CIRCLE-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "LOGIC-CIRCLE-20261107-001A",
+  "proof": "LOGIC-CIRCLE-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Polygons: the circle of a periodic or line-arrangement law and its pi",
+  "status": "Proved",
+  "claim": "Circles of periodic and line-arrangement parity laws are polygons. (1) For the parity law on a doubly periodic plane graph G (one parity knot per vertex, variables on edges; G 3-edge-connected, G and its dual G* locally finite, G* 2-connected), |bond distance - 2||x||_P| <= C, where P is the velocity polygon of G* (convex hull of displacement/length over cycles of G*/Z^2): the circle is half P, a centrally symmetric polygon with rational vertices in lattice coordinates, and its Golab pi (half the self-perimeter) is rational and lies in [3, 4]. (2) By Niven's theorem the only affinely regular circles of periodic laws are parallelograms (pi = 4) and hexagons (pi = 3); no periodic law has an elliptic circle. (3) For the law with a four-place parity knot at each crossing of a simple arrangement of lines in k >= 2 directions with unit normals n_j, densities rho_j and bounded discrepancy, 2 sep(s, t) + 3 <= bond distance <= 2 sep(s, t) + C (2 sep + 1 on one line), sep counting the lines strictly separating s and t; so bond distance = 2 sum_j rho_j |<x, n_j>| + O(1) and the circle is half the polar of the zonotope sum_j rho_j [-n_j, n_j]. n equiangular equally dense families give a regular 2n-gon with pi = 2n sin(pi/2n) (n odd) or 2n tan(pi/2n) (n even), Archimedes' inscribed and circumscribed values, irrational for n >= 4 and tending to the Euclidean pi; such an arrangement is doubly periodic only for n = 2, 3; the Penrose pentagrid law has pi = 5/phi. (4) Computed exactly: the 19 distinct laws on the 11 Archimedean and 11 Laves tilings have pi in {3, 10/3, 16/5, 7/2, 11/3, 4}.",
+  "dependencies": [
+    "OPEN-END-GROWTH-20261107-001Z",
+    "NATIVE-NETWORK-20261021-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A doubly periodic law whose bond distance minus twice the graph distance of the dual grows without bound.",
+    "A periodic law whose circle polygon has a vertex with an irrational lattice coordinate, or whose pi is irrational.",
+    "A segment pair of a line-arrangement law whose bond distance is below 2 sep + 3 (2 sep + 1 on one line) or exceeds it by an amount growing with distance."
+  ],
+  "lineage": {
+    "home_scope": "LOGIC-CIRCLE-20261107-001",
+    "epic_path": [
+      "LOGIC-CIRCLE-20261107-001"
+    ],
+    "parents": [
+      "proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/result.json",
+      "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json",
+      "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/manifest.json": "fae70c1a5965e39bcc5ac403a2a00fd49c3b3f0fc6a310cd09d11a848432f67d",
+    "proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/result.json": "772031f25bc9a46af26a753298619bc16834e48945efb92a59176752f588d05f",
+    "proofs/NATIVE-NETWORK-20261021-001Z/NATIVE-NETWORK-20261021-001Z-P001_epic_closure/manifest.json": "79d4141c67f0e6f1467e2b98a3661cbe5dfaefcfdc1542c7f3c5ce9b29a589c7",
+    "proofs/NATIVE-NETWORK-20261021-001B/NATIVE-NETWORK-20261021-001B-P001_native_adjacency/manifest.json": "621a63ca2336e1a8478a794c9b0c775b6f27f346a5b8cf85b8f4abbaaaa2a035"
+  },
+  "paths": {
+    "manifest": "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/manifest.json",
+    "identity": "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/identity.json",
+    "proof": "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md",
+    "check": "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/check.py",
+    "result": "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/result.json",
+    "directory": "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Doubly periodic plane graphs with locally finite 2-connected duals (Theorem 1, Corollary 2); simple line arrangements with finitely many directions, positive densities and bounded discrepancy (Theorem 3, Corollary 4); the 19 laws on the 11 Archimedean and 11 Laves tilings computed exactly.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "prose proofs of Theorems 1 and 3 and Corollaries 2 and 4; check.py (18 s) verifies the 22-row exact table, Karp support functions, exact bond distances on patches (excess 0.1 to 8.7 out to 2||x|| = 242), line arrangements (n = 2, 3, 4, 5, 7 and a Penrose pentagrid) and regular-polygon pi, with four rejected controls; no human or external review",
+    "novelty": "known-overlap-found: velocity polygons of periodic graphs (Fritz 2013; Kotani-Sunada; Eon), Golab's theorem, self-perimeters of regular polygons (Martini et al.), partial cubes of line arrangements; the delta is the reduction of bond distance to dual graph distance and to separating lines, the rationality of pi for periodic laws with Niven's corollary, and the exact table."
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**208 current results** and 5 superseded ones, from 146 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**211 current results** and 5 superseded ones, from 147 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,13 +24,13 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 10 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 72 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 75 results
 - [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 146 epics with their closures
+- [Epics](#epics): all 147 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -520,6 +520,15 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · Open ends make a substitution tower stretch** (`LOGIC-AXIS-20261107-001-D003`).
   A hub-free parity substitution keeps the replaced knot exactly when its gadget adds no open end, and then every step is conservative, so the original distinctions stay at bond distance 2 forever; this is why the 2026-10-20 refinement cannot grow space. On tree-shaped knot graphs bond distance equals the path's knot count plus one, so the star tower stretches as 3^k + 1.
   [proof P001](proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Periodic logic makes polygons with rational pi** (`LOGIC-CIRCLE-20261107-001-D001`).
+  For a parity law on a doubly periodic plane graph, bond distance is twice the graph distance of the plane dual up to a constant, so its circle is half the dual's velocity polygon, with rational vertices and a rational pi (half its perimeter measured with its own distance). By Niven's theorem its only regular circles are the hexagon (pi = 3) and the parallelogram (pi = 4), and no periodic law has a round circle.
+  [proof P001](proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Laws on lines reach the circle only as a limit** (`LOGIC-CIRCLE-20261107-001-D002`).
+  With a four-place parity knot at each crossing of a line arrangement, bond distance is twice the number of lines separating two segments, plus a bounded amount. With n equally spaced, equally dense directions the circle is a regular 2n-gon whose pi is Archimedes' inscribed or circumscribed value, 2n sin(pi/2n) or 2n tan(pi/2n): irrational from n = 4 on, periodic only for n = 2, 3, and 5/phi for the Penrose pentagrid.
+  [proof P001](proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Coins bend logical circles; only isotropy makes them round** (`LOGIC-CIRCLE-20261107-001-D003`).
+  When coins split each four-place knot of the square parity law into two three-place knots, distance in the plane dual is exactly the coordinate sum minus the longest strictly increasing chain of matching squares and bond distance is twice it at large scale, so the circle is a square with elliptic corners, quarter circles for fair coins (pi = 3.44120), whose flat lattice sides persist. A parity law on a Poisson-Voronoi tessellation, with no preferred direction, is exactly round.
+  [proof P001](proofs/LOGIC-CIRCLE-20261107-001B/LOGIC-CIRCLE-20261107-001B-P001_curved_circles_from_coins/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · A local rule grows the logical number line** (`OPEN-END-GROWTH-20261107-001-D001`).
   Starting from one parity knot, growing only at knots that hold two or more open ends grows exactly the two-way thread, a path of knots each keeping one open loop, whatever choices are made. Its bond distance counts the knots between two points plus one, so a rule that reads nothing but open ends grows a ruler of dimension one in both directions.
   [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
@@ -886,6 +895,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
 | 2026-11-07 | Reading the genus natively (`GENUS-READ-20261107-001`) | [closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-READ-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
+| 2026-11-07 | Circles from logic: polygons, coins and roundness (`LOGIC-CIRCLE-20261107-001`) | [closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-CIRCLE-20261107-001/) |
 | 2026-11-07 | Growth at open ends: what a law grows with nothing drawn (`OPEN-END-GROWTH-20261107-001`) | [closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/OPEN-END-GROWTH-20261107-001/) |
 | 2026-11-07 | Colour refinement on the native creation map (`REFINE-READ-20261107-001`) | [closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/REFINE-READ-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |

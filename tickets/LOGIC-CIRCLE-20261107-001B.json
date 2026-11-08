@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-NETWORK-20261021-001Z",
+    "OPEN-END-GROWTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOGIC-CIRCLE-20261107-001B-P001"
+  },
+  "id": "LOGIC-CIRCLE-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) in the plane graph Z^2 with one diagonal in each unit square, NE with probability p independently and NW otherwise, the graph distance between u <= w is dx + dy minus the longest strictly increasing chain of NE squares in the box [u, w] (and symmetrically for NW), exactly; (2) with Seppalainen's law of large numbers for strictly increasing chains in a Bernoulli lattice (Ann. Appl. Probab. 1997, cited), the bond distance of the dual law (each knot of the square law split into two three-place knots by the coin) divided by n converges in probability to twice |x| + |y| - g_p'(|x|, |y|); so the circle is a square with elliptic corners, circular when p = 1/2, between the hexagon (p = 0 or 1) and the square; compute its pi; (3) the parity law on a Poisson-Voronoi tessellation (all knots three-place) has an exactly round circle, by subadditivity of bond distance, ergodicity and isotropy. Check (1) against breadth-first search and (2) against exact minimum cycles on samples.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOGIC-CIRCLE-20261107-001"
+  },
+  "parent": "LOGIC-CIRCLE-20261107-001",
+  "schema_version": 1,
+  "status": "Proved (LOGIC-CIRCLE-20261107-001B-P001), conditional on cited published theorems: coins bend circles. In Z^2 with one random diagonal per square, graph distance is |dx| + |dy| minus the longest strictly increasing chain of correctly oriented squares (exact); with Seppalainen's law of large numbers, the bond distance of the dual law (the square law with each knot split into two three-place knots by a coin) is 2 c_p n + o(n): the circle is a square with elliptic corners, circular for fair coins, pi = 3.44120 at p = 1/2 and 3 (hexagon) at p = 0 or 1. The parity law on a Poisson-Voronoi tessellation (all knots three-place) has an exactly round circle (Kingman, isotropy).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Curved circles from coins: the random split law and the isotropic law"
+}

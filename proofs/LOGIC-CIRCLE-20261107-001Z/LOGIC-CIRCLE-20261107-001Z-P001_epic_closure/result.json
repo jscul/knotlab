@@ -1,0 +1,36 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOGIC-CIRCLE-20261107-001Z-P001",
+ "kind": "proof",
+ "ticket": "LOGIC-CIRCLE-20261107-001Z",
+ "proof": "LOGIC-CIRCLE-20261107-001Z-P001",
+ "status": "Proved",
+ "claim": "Closure ledger of LOGIC-CIRCLE-20261107-001; it makes no new claim. Each conclusion is carried by the cited evidence: tickets A and B (proofs) and ticket C (an exploratory experiment).",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/LOGIC-CIRCLE-20261107-001C/LOGIC-CIRCLE-20261107-001C-E001_measured_circles/contract.json": "Frozen",
+   "artifacts/LOGIC-CIRCLE-20261107-001C/LOGIC-CIRCLE-20261107-001C-E001_measured_circles/run/result.json": "run output",
+   "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/manifest.json": "Proved",
+   "proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/result.json": "passed",
+   "proofs/LOGIC-CIRCLE-20261107-001B/LOGIC-CIRCLE-20261107-001B-P001_curved_circles_from_coins/manifest.json": "Proved",
+   "proofs/LOGIC-CIRCLE-20261107-001B/LOGIC-CIRCLE-20261107-001B-P001_curved_circles_from_coins/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "experiment_frozen_exploratory": true,
+  "experiment_output_present": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "proved",
+   "C": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "OPEN-END-GROWTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LOGIC-CIRCLE-20261107-001C-E001",
+    "contract_path": "experiments/LOGIC-CIRCLE-20261107-001C/LOGIC-CIRCLE-20261107-001C-E001_measured_circles/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "LOGIC-CIRCLE-20261107-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment. With exact bond distances (minimum cycles through two edges of the dual), measure the circles of: the random split law at p = 1/2 and p = 1/4 at growing radius against ticket B's predicted shapes and pi; the Poisson-Voronoi law (anisotropy and estimated pi against radius); the uniform random planar law (the dual of a uniform random quadrangulation, all knots four-place), where the typical bond distance should grow like n^(1/4) (Brownian map, dimension 4) rather than n^(1/2). Controls through the same pipeline: the square law (pi = 4) and the honeycomb law (pi = 3).",
+  "ownership": {
+    "root": false,
+    "scope_id": "LOGIC-CIRCLE-20261107-001"
+  },
+  "parent": "LOGIC-CIRCLE-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, LOGIC-CIRCLE-20261107-001C-E001): measured circles of random laws with exact bond distances. Controls reproduce their polygons (square anisotropy 1.400 vs sqrt 2, honeycomb 1.149 vs 2/sqrt 3 at R = 40). Split laws approach ticket B's curved squares (deviation 0.16 -> 0.08 at p = 1/2, 0.18 -> 0.06 at p = 1/4). The Poisson-Voronoi law rounds (anisotropy 1.15, 1.10, 1.07, 1.05 at R = 10, 20, 40, 60). The uniform random quadrangulation law is not a plane: bond distance grows like n^0.28 (Brownian map n^0.25; a plane n^0.5).",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Measured circles of random laws"
+}

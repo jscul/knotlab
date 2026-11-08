@@ -1,0 +1,1349 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOGIC-CIRCLE-20261107-001A-P001",
+ "kind": "proof",
+ "ticket": "LOGIC-CIRCLE-20261107-001A",
+ "proof": "LOGIC-CIRCLE-20261107-001A-P001",
+ "status": "passed",
+ "claim": "Circles of periodic and line-arrangement parity laws are polygons. (1) For the parity law on a doubly periodic plane graph G (one parity knot per vertex, variables on edges; G 3-edge-connected, G and its dual G* locally finite, G* 2-connected), |bond distance - 2||x||_P| <= C, where P is the velocity polygon of G* (convex hull of displacement/length over cycles of G*/Z^2): the circle is half P, a centrally symmetric polygon with rational vertices in lattice coordinates, and its Golab pi (half the self-perimeter) is rational and lies in [3, 4]. (2) By Niven's theorem the only affinely regular circles of periodic laws are parallelograms (pi = 4) and hexagons (pi = 3); no periodic law has an elliptic circle. (3) For the law with a four-place parity knot at each crossing of a simple arrangement of lines in k >= 2 directions with unit normals n_j, densities rho_j and bounded discrepancy, 2 sep(s, t) + 3 <= bond distance <= 2 sep(s, t) + C (2 sep + 1 on one line), sep counting the lines strictly separating s and t; so bond distance = 2 sum_j rho_j |<x, n_j>| + O(1) and the circle is half the polar of the zonotope sum_j rho_j [-n_j, n_j]. n equiangular equally dense families give a regular 2n-gon with pi = 2n sin(pi/2n) (n odd) or 2n tan(pi/2n) (n even), Archimedes' inscribed and circumscribed values, irrational for n >= 4 and tending to the Euclidean pi; such an arrangement is doubly periodic only for n = 2, 3; the Penrose pentagrid law has pi = 5/phi. (4) Computed exactly: the 19 distinct laws on the 11 Archimedean and 11 Laves tilings have pi in {3, 10/3, 16/5, 7/2, 11/3, 4}.",
+ "checks": {
+  "structure": true,
+  "exact_table": true,
+  "karp_support": true,
+  "bond_distances": true,
+  "far_bond_distances": true,
+  "line_arrangements": true,
+  "regular_polygons": true
+ },
+ "failures": [],
+ "details": {
+  "structure": [
+   {
+    "tiling": "4.4.4.4 (square)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     4
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.3.3.3.3.3 (triangular)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "6.6.6 (honeycomb)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     6
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.6.3.6 (kagome)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3,
+     6
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.12.12 (truncated hexagonal)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3,
+     12
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "4.8.8 (truncated square)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     4,
+     8
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "4.6.12 (truncated trihexagonal)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     4,
+     6,
+     12
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.4.6.4 (rhombitrihexagonal)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3,
+     4,
+     6
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.3.4.3.4 (snub square)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3,
+     4
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.3.3.4.4 (elongated triangular)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3,
+     4
+    ],
+    "dual_degrees_ok": true
+   },
+   {
+    "tiling": "3.3.3.3.6 (snub hexagonal)",
+    "vertex_configuration_ok": true,
+    "dual_degrees": [
+     3,
+     6
+    ],
+    "dual_degrees_ok": true
+   }
+  ],
+  "table": [
+   {
+    "law": "A 4.4.4.4",
+    "knot_sizes": [
+     4
+    ],
+    "sides": 4,
+    "pi": "4",
+    "pi_float": 4.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 4.4.4.4",
+    "knot_sizes": [
+     4
+    ],
+    "sides": 4,
+    "pi": "4",
+    "pi_float": 4.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.3.3.3",
+    "knot_sizes": [
+     6
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.3.3.3.3.3",
+    "knot_sizes": [
+     3
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ],
+     [
+      "1",
+      "-1"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1"
+     ],
+     [
+      "-1",
+      "1"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 6.6.6",
+    "knot_sizes": [
+     3
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ],
+     [
+      "1",
+      "-1"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1"
+     ],
+     [
+      "-1",
+      "1"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 6.6.6",
+    "knot_sizes": [
+     6
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.6.3.6",
+    "knot_sizes": [
+     4
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.6.3.6",
+    "knot_sizes": [
+     3,
+     6
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.12.12",
+    "knot_sizes": [
+     3
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ],
+     [
+      "1",
+      "-1"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1"
+     ],
+     [
+      "-1",
+      "1"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.12.12",
+    "knot_sizes": [
+     3,
+     12
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/4",
+      "0"
+     ],
+     [
+      "0",
+      "-1/4"
+     ],
+     [
+      "1/4",
+      "-1/4"
+     ],
+     [
+      "1/4",
+      "0"
+     ],
+     [
+      "0",
+      "1/4"
+     ],
+     [
+      "-1/4",
+      "1/4"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 4.8.8",
+    "knot_sizes": [
+     3
+    ],
+    "sides": 4,
+    "pi": "4",
+    "pi_float": 4.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 4.8.8",
+    "knot_sizes": [
+     4,
+     8
+    ],
+    "sides": 8,
+    "pi": "10/3",
+    "pi_float": 3.3333333333333335,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/3",
+      "0"
+     ],
+     [
+      "-1/4",
+      "-1/4"
+     ],
+     [
+      "0",
+      "-1/3"
+     ],
+     [
+      "1/4",
+      "-1/4"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "1/4",
+      "1/4"
+     ],
+     [
+      "0",
+      "1/3"
+     ],
+     [
+      "-1/4",
+      "1/4"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 4.6.12",
+    "knot_sizes": [
+     3
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 4.6.12",
+    "knot_sizes": [
+     4,
+     6,
+     12
+    ],
+    "sides": 12,
+    "pi": "16/5",
+    "pi_float": 3.2,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/5",
+      "1/10"
+     ],
+     [
+      "-1/6",
+      "0"
+     ],
+     [
+      "-1/10",
+      "-1/10"
+     ],
+     [
+      "0",
+      "-1/6"
+     ],
+     [
+      "1/10",
+      "-1/5"
+     ],
+     [
+      "1/6",
+      "-1/6"
+     ],
+     [
+      "1/5",
+      "-1/10"
+     ],
+     [
+      "1/6",
+      "0"
+     ],
+     [
+      "1/10",
+      "1/10"
+     ],
+     [
+      "0",
+      "1/6"
+     ],
+     [
+      "-1/10",
+      "1/5"
+     ],
+     [
+      "-1/6",
+      "1/6"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.4.6.4",
+    "knot_sizes": [
+     4
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.4.6.4",
+    "knot_sizes": [
+     3,
+     4,
+     6
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/3",
+      "0"
+     ],
+     [
+      "0",
+      "-1/3"
+     ],
+     [
+      "1/3",
+      "-1/3"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "0",
+      "1/3"
+     ],
+     [
+      "-1/3",
+      "1/3"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.3.4.3.4",
+    "knot_sizes": [
+     5
+    ],
+    "sides": 8,
+    "pi": "10/3",
+    "pi_float": 3.3333333333333335,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/3",
+      "0"
+     ],
+     [
+      "-1/4",
+      "-1/4"
+     ],
+     [
+      "0",
+      "-1/3"
+     ],
+     [
+      "1/4",
+      "-1/4"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "1/4",
+      "1/4"
+     ],
+     [
+      "0",
+      "1/3"
+     ],
+     [
+      "-1/4",
+      "1/4"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.3.4.3.4",
+    "knot_sizes": [
+     3,
+     4
+    ],
+    "sides": 8,
+    "pi": "10/3",
+    "pi_float": 3.3333333333333335,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/2",
+      "0"
+     ],
+     [
+      "-1/3",
+      "-1/3"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/3",
+      "-1/3"
+     ],
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "1/3",
+      "1/3"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/3",
+      "1/3"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.4.4",
+    "knot_sizes": [
+     5
+    ],
+    "sides": 6,
+    "pi": "11/3",
+    "pi_float": 3.6666666666666665,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1/3"
+     ],
+     [
+      "1/3",
+      "-1/3"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1/3"
+     ],
+     [
+      "-1/3",
+      "1/3"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.3.3.4.4",
+    "knot_sizes": [
+     3,
+     4
+    ],
+    "sides": 6,
+    "pi": "7/2",
+    "pi_float": 3.5,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "-1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "1/2"
+     ],
+     [
+      "-1/2",
+      "1/2"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.3.6",
+    "knot_sizes": [
+     5
+    ],
+    "sides": 6,
+    "pi": "3",
+    "pi_float": 3.0,
+    "circle_polygon_lattice_coords": [
+     [
+      "-1/3",
+      "0"
+     ],
+     [
+      "0",
+      "-1/3"
+     ],
+     [
+      "1/3",
+      "-1/3"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "0",
+      "1/3"
+     ],
+     [
+      "-1/3",
+      "1/3"
+     ]
+    ],
+    "ok": true
+   },
+   {
+    "law": "L 3.3.3.3.6",
+    "knot_sizes": [
+     3,
+     6
+    ],
+    "sides": 12,
+    "pi": "16/5",
+    "pi_float": 3.2,
+    "circle_polygon_lattice_coords": [
+     [
+      "-2/5",
+      "1/5"
+     ],
+     [
+      "-1/3",
+      "0"
+     ],
+     [
+      "-1/5",
+      "-1/5"
+     ],
+     [
+      "0",
+      "-1/3"
+     ],
+     [
+      "1/5",
+      "-2/5"
+     ],
+     [
+      "1/3",
+      "-1/3"
+     ],
+     [
+      "2/5",
+      "-1/5"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "1/5",
+      "1/5"
+     ],
+     [
+      "0",
+      "1/3"
+     ],
+     [
+      "-1/5",
+      "2/5"
+     ],
+     [
+      "-1/3",
+      "1/3"
+     ]
+    ],
+    "ok": true
+   }
+  ],
+  "karp_support_max_error": 2.220446049250313e-16,
+  "bond_distances_radius_9": [
+   {
+    "law": "A 4.4.4.4",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 3.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 4.4.4.4",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 3.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.3.3.3",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 5.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.3.3.3.3.3",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 2.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 6.6.6",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 1.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 6.6.6",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 5.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.6.3.6",
+    "pairs": 40,
+    "excess_min": 0.333,
+    "excess_max": 4.333,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.6.3.6",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 3.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.12.12",
+    "pairs": 40,
+    "excess_min": 1.333,
+    "excess_max": 3.667,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.12.12",
+    "pairs": 40,
+    "excess_min": 1.691,
+    "excess_max": 8.619,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 4.8.8",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 2.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 4.8.8",
+    "pairs": 40,
+    "excess_min": 0.657,
+    "excess_max": 4.828,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 4.6.12",
+    "pairs": 40,
+    "excess_min": 0.667,
+    "excess_max": 3.667,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 4.6.12",
+    "pairs": 40,
+    "excess_min": 0.107,
+    "excess_max": 5.715,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.4.6.4",
+    "pairs": 40,
+    "excess_min": 1.0,
+    "excess_max": 5.667,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.4.6.4",
+    "pairs": 40,
+    "excess_min": 0.536,
+    "excess_max": 2.366,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.3.4.3.4",
+    "pairs": 40,
+    "excess_min": 0.423,
+    "excess_max": 3.711,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.3.4.3.4",
+    "pairs": 40,
+    "excess_min": 0.634,
+    "excess_max": 2.0,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.4.4",
+    "pairs": 40,
+    "excess_min": 1.057,
+    "excess_max": 4.887,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.3.3.4.4",
+    "pairs": 40,
+    "excess_min": 0.608,
+    "excess_max": 2.072,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.3.6",
+    "pairs": 40,
+    "excess_min": 2.571,
+    "excess_max": 6.143,
+    "lower_bound_holds": true,
+    "ok": true
+   },
+   {
+    "law": "L 3.3.3.3.6",
+    "pairs": 40,
+    "excess_min": 0.429,
+    "excess_max": 2.0,
+    "lower_bound_holds": true,
+    "ok": true
+   }
+  ],
+  "bond_distances_far_radius_18": [
+   {
+    "law": "L 3.12.12",
+    "pairs": 30,
+    "min_two_norm": 36.62,
+    "max_two_norm": 202.31,
+    "excess_min": 1.691,
+    "excess_max": 8.691,
+    "ok": true
+   },
+   {
+    "law": "L 4.6.12",
+    "pairs": 30,
+    "min_two_norm": 57.09,
+    "max_two_norm": 242.71,
+    "excess_min": 0.285,
+    "excess_max": 4.333,
+    "ok": true
+   },
+   {
+    "law": "A 3.3.3.3.6",
+    "pairs": 30,
+    "min_two_norm": 39.14,
+    "max_two_norm": 152.86,
+    "excess_min": 2.0,
+    "excess_max": 5.571,
+    "ok": true
+   }
+  ],
+  "line_arrangements": [
+   {
+    "families": 2,
+    "pairs": 60,
+    "delta_minus_2sep_plus_3_min": 0,
+    "max": 2,
+    "delta_minus_2sum_abs_max": 3.0,
+    "ok": true
+   },
+   {
+    "families": 3,
+    "pairs": 60,
+    "delta_minus_2sep_plus_3_min": 0,
+    "max": 4,
+    "delta_minus_2sum_abs_max": 3.267,
+    "ok": true
+   },
+   {
+    "families": 4,
+    "pairs": 60,
+    "delta_minus_2sep_plus_3_min": 0,
+    "max": 4,
+    "delta_minus_2sum_abs_max": 4.337,
+    "ok": true
+   },
+   {
+    "families": 5,
+    "pairs": 60,
+    "delta_minus_2sep_plus_3_min": 0,
+    "max": 4,
+    "delta_minus_2sum_abs_max": 4.325,
+    "ok": true
+   },
+   {
+    "families": 7,
+    "pairs": 60,
+    "delta_minus_2sep_plus_3_min": 0,
+    "max": 4,
+    "delta_minus_2sum_abs_max": 7.33,
+    "ok": true
+   },
+   {
+    "families": "5 (Penrose pentagrid, offsets sum 1)",
+    "pairs": 60,
+    "delta_minus_2sep_plus_3_min": 0,
+    "max": 2,
+    "delta_minus_2sum_abs_max": 5.695,
+    "ok": true
+   }
+  ],
+  "regular_polygons": [
+   {
+    "n_families": 2,
+    "sides": 4,
+    "pi": 4.0,
+    "formula": "2n tan(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 3,
+    "sides": 6,
+    "pi": 3.0,
+    "formula": "2n sin(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 4,
+    "sides": 8,
+    "pi": 3.313708498985,
+    "formula": "2n tan(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 5,
+    "sides": 10,
+    "pi": 3.090169943749,
+    "formula": "2n sin(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 6,
+    "sides": 12,
+    "pi": 3.215390309173,
+    "formula": "2n tan(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 7,
+    "sides": 14,
+    "pi": 3.115293075388,
+    "formula": "2n sin(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 8,
+    "sides": 16,
+    "pi": 3.182597878075,
+    "formula": "2n tan(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 9,
+    "sides": 18,
+    "pi": 3.125667198005,
+    "formula": "2n sin(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 10,
+    "sides": 20,
+    "pi": 3.167688806491,
+    "formula": "2n tan(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 11,
+    "sides": 22,
+    "pi": 3.130926442012,
+    "formula": "2n sin(pi/2n)",
+    "ok": true
+   },
+   {
+    "n_families": 12,
+    "sides": 24,
+    "pi": 3.159659942098,
+    "formula": "2n tan(pi/2n)",
+    "ok": true
+   }
+  ],
+  "penrose_pi": 3.090169943749474,
+  "controls": {
+   "wrong_dual_polygon": {
+    "rejected": true,
+    "detail": [
+     -47.0,
+     -15.0
+    ]
+   },
+   "factor_one_for_two": {
+    "rejected": true,
+    "detail": 25
+   },
+   "cycle_enumeration_without_loops": {
+    "rejected": true,
+    "detail": 0
+   },
+   "perturbed_snub_square": {
+    "rejected": true,
+    "detail": 4
+   }
+  },
+  "checks": {
+   "structure": true,
+   "exact_table": true,
+   "karp_support": true,
+   "bond_distances": true,
+   "far_bond_distances": true,
+   "line_arrangements": true,
+   "regular_polygons": true
+  },
+  "all_checks_pass": true,
+  "all_controls_rejected": true,
+  "theorem_flags": {
+   "periodic_circle_is_rational_polygon": "argued-in-prose (Theorem 1); computed for 22 laws",
+   "pi_rational_for_periodic_laws": "argued-in-prose (Corollary 2); computed for 22 laws",
+   "line_arrangement_bond_distance": "argued-in-prose (Theorem 3); sampled for n = 2, 3, 4, 5, 7 and the Penrose pentagrid"
+  },
+  "runtime_seconds": 18.1
+ }
+}

@@ -68,7 +68,7 @@ evidence: results and their status come from the records each entry links.
 | [A11](#a11--hubs-are-a-declared-substrate-never-contact) | Hubs are a declared substrate, never contact | scope | Assumed |
 | [A12](#a12--bond-distance-is-a-laws-own-spacing) | Bond distance is a law's own spacing | measure | Assumed |
 | [A13](#a13--witness-variables-are-part-of-a-law-not-a-drawing) | Witness variables are part of a law, not a drawing | reading | Assumed |
-| [A14](#a14--a-growing-laws-history-is-a-hidden-witness) | A growing law's history is a hidden witness | reading | Assumed |
+| [A14](#a14--a-growing-laws-history-is-a-hidden-witness) | A growing law's history is a hidden witness | reading | Confirmed |
 | [A15](#a15--every-coherent-alternative-is-co-real) | Every coherent alternative is co-real | interpretation | Assumed |
 | [A16](#a16--pairs-cannot-make-a-knot-three-places-can) | Pairs cannot make a knot; three places can | premise | Confirmed |
 | [A17](#a17--erasure-is-absence) | Erasure is absence | reading | Overturned |
@@ -82,6 +82,7 @@ evidence: results and their status come from the records each entry links.
 | [A25](#a25--a-local-law-without-hidden-states-cannot-force-roundness) | A local law without hidden states cannot force roundness | working premise | Assumed |
 | [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Assumed |
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
+| [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
 
 ## Entries
 
@@ -168,6 +169,9 @@ evidence: results and their status come from the records each entry links.
   processes. Write a growth process as one law on space and time, and ask whether it has knots that no static law has and
   whether its order can be a variable of the law rather than an input.
 - **History.**
+  - 2026-11-07 · Its growth clause tested by `GROWTH-LAW-20261107-001A`. A growth order written as variables of the law never
+    knots with the world's states, and existence enters as the presence literal this premise prescribes. A rule that reads a
+    state does knot the order to the states, which is the input it forbids. The status is unchanged, since this is a premise.
   - 2026-10-19 · Adopted with K1–K3 as the canonical test.
 
 ### A5 · A loop is anything that leaves a distinction open
@@ -204,6 +208,9 @@ evidence: results and their status come from the records each entry links.
   readings exclude the common hub and every 2-CNF pattern, so a challenge needs a question whose answer changes between them.
   The knot laboratory keeps both readings.
 - **History.**
+  - 2026-11-07 · Used by `GROWTH-LAW-20261107-001A`. With the variables of absent sites and pairs forgotten, no knot joins a
+    growth order to the world's states. Setting them to 0 instead makes order bits carry existence, and they then knot with the
+    states.
   - 2026-10-19 · Chosen by the owner, replacing the absence reading adopted earlier the same day (A17).
 
 ### A7 · Witnesses are existential
@@ -339,7 +346,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A14 · A growing law's history is a hidden witness
 
-**Assumed** · 2026-11-07 · reading
+**Confirmed** · 2026-11-07 · reading
 
 - **Statement.** A growth result belongs to the law only if it holds in every growth order. Information that a growth process
   keeps from earlier steps, such as a bit carried for one lap, is a hidden witness of the world and is counted as one.
@@ -348,12 +355,22 @@ evidence: results and their status come from the records each entry links.
   four equator corners together, so growth lays out a new round sphere only with a witness, just as a finished sphere is checked
   round only with one ([grow coin](../research/GROW-COIN-20261107-001/grow_coin.md)).
 - **Rests on it.** "Growth does not remove the witness" (`GROW-COIN-20261107-001`), and with it the reading that a law lays out
-  a new round sphere only with hidden information.
-- **Challenge.** If a growth process written as one law on space and time can make its order a variable of the law (A4's
-  challenge), a bit carried for one lap might be part of the law's own dynamics rather than an added witness. A sharper first
-  test is a theorem for every accretion law that holds in every order; the grow-coin epic's evidence is against a law that needs
-  no carried bit.
+  a new round sphere only with hidden information; "a beginning is a knot" and the reading of what growth adds
+  ([growth as a law](../research/GROWTH-LAW-20261107-001/growth_law.md)).
+- **Challenge.** Settled by `GROWTH-LAW-20261107-001`, which wrote growth histories into the law as variables and read them
+  under K1–K3 ([proof](../proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/proof.md)).
+  - **The order adds no knot.** It never knots with the world's states. Existence enters only as a presence literal.
+  - **The history's parts.** Its local part (which neighbour came first) is pairwise and holds no knot. Its global part, time
+    without a loop, is a knot on every cycle of the world, so a beginning is a knot.
+  - **What is left to carry.** What a kept history adds beyond bounded local information is only whether a world has a
+    beginning.
+  - **The plane.** There label-free growth by the pinwheel's own law left the pinwheel at once
+    ([pinwheel growth](../artifacts/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/run/interpretation.md)).
+  - **For whom.** Confirmed for rules that read only the law, with absent things forgotten. A rule that reads a state is not a
+    law in this sense, and fixing absent variables instead of forgetting them lets order bits carry existence.
 - **History.**
+  - 2026-11-07 · Confirmed by `GROWTH-LAW-20261107-001` (tickets A to C), for the reasons above.
+  - 2026-11-07 · Under challenge: backlog B1, growth as a law, taken up as `GROWTH-LAW-20261107-001`.
   - 2026-11-07 · Added when the register was started; first applied by `GROW-COIN-20261107-001`.
 
 ### A15 · Every coherent alternative is co-real
@@ -558,6 +575,9 @@ evidence: results and their status come from the records each entry links.
   false. A proof that every map with only the pinwheel's forms is a pinwheel tiling would overturn it there, given A24, and a
   plane that is not round but obeys the law, perhaps one built from the pinwheel's own vertex stars, would support it.
 - **History.**
+  - 2026-11-07 · Bears on it: `GROWTH-LAW-20261107-001B`. The pinwheel's collar law, one tile around each tile with no hidden
+    states, admits collar-legal patches of 500 tiles that are not pinwheel patches, built by forced-first growth. They are finite
+    and break the radius-2 law, so this is left open.
   - 2026-11-07 · Challenged in the plane by `PINWHEEL-ATLAS-20261107-001`: no tested periodic plane obeys the pinwheel's law;
     left open.
   - 2026-11-07 · Proved for closed spheres by `SPHERE-GROWTH-20261107-001`.
@@ -597,3 +617,21 @@ evidence: results and their status come from the records each entry links.
   the states of one local-move component only, and checks whether the halves still repel and the corners still attract.
 - **History.**
   - 2026-11-07 · Added by `RESIGN-STEER-20261107-001`.
+
+### A28 · Outward growth is judged by its law's local consistency
+
+**Assumed** · 2026-11-07 · scope
+
+- **Statement.** A growth move is legal when the tiles it adds overlap no placed tile and leave every tile they touch with a
+  collar that still extends to one of the law's complete collars, without overlap. This is one step of lookahead. A dead end is a
+  tile with no legal move. Growth results for the pinwheel are stated under this rule, or under it plus the radius-2 atlas.
+- **Why.** `GROWTH-LAW-20261107-001` took it by default. It is the weakest rule that a local process can apply and that never
+  rejects a genuine continuation: growth that follows a genuine pinwheel patch is never rejected
+  ([pinwheel growth](../artifacts/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/run/interpretation.md)).
+- **Rests on it.** The dead-end counts and sizes of `GROWTH-LAW-20261107-001B` and `GROWTH-LAW-20261107-001C`, and the reading
+  that label-free growth leaves the pinwheel at once.
+- **Challenge.** A deeper lookahead could get stuck later or less often. Ticket C's stronger arm adds the radius-2 atlas. Dworkin
+  and Shieh (1995) prove that every aperiodic protoset of the plane has deceptions of all orders, so a stronger rule can change
+  when growth fails, but not whether some order fails. The cheapest test is two moves of lookahead on ticket B's seeds.
+- **History.**
+  - 2026-11-07 · Added by `GROWTH-LAW-20261107-001`.

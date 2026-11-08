@@ -1276,6 +1276,59 @@ So network holes come in two kinds:
      homology class that no change of state reaches, so a learning walk around a handle could remove a dissonance that the class
      forces, with no mark left in the law (Payoff 2/3, Concreteness 2/3). The alternatives: many points at once, and layers
      through naming knots ([decision note](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
+
+   **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
+   - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
+     No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.
+   - **The order never knots with the world (proved).**
+     - **A fixed world.** For a rule that reads only the law, the history and the states of a fixed world form a product.
+     - **Worlds that vary.** With absent things forgotten, every knot that contains an order variable also contains an existence
+       variable. Existence enters as a presence literal: "if this site grew, its knot holds" is itself a knot.
+     - **The control.** A rule that reads a state does knot the order to the states. That is the input the canonical test
+       forbids.
+   - **A beginning is a knot (proved).**
+     - **The local part is pairwise.** Which neighbour came first: "at most one parent" is a 2-CNF and holds no knot.
+     - **The global part is not.** Time without a loop has exactly the world's cycles as its knots, each the not-all-equal relation
+       on its seams. On a ring the beginning is one knot binding every seam, constrained as a whole and free in every part.
+     - **Rings need a closing.** The beginning knot contradicts the pairwise part on a ring, so a ring needs a closing move.
+     - **Duality.** The states knot along cuts and the history along cycles, the circuits of two dual matroids.
+   - **Euler's count (proved).** A history's beginnings and ends, less its closing moves, give the world's Euler characteristic. So
+     the open-end rule grows only threads, disc moves grow only discs and spheres, and handles need closings.
+   - **What the beginning buys (proved).**
+     - **One dimension.** No law with bounded hidden labels tells a long thread from a ring (pumping). So the beginning does what no
+       bounded witness does: the number line's ends come from its beginning. A static law would need about log n bits per knot.
+     - **Two dimensions.** A law with arbitrarily large flat regions excludes the flat tori only if none of its flat
+       configurations is periodic. The seam law allows all of them.
+     - **Spheres.** The beginning is free, since every two-sphere can be grown by disc moves.
+   - **The plane (exploratory).** The pinwheel was grown outward from one tile by its own label-free collar law, with coins at its
+     choices.
+     - **Every coin run left the pinwheel.** In all 70 runs of four orders it left the pinwheel's own patches. Of these, 66 got
+       stuck within 304 tiles, and 4 forced-first runs reached 500 tiles of collar-legal patches that are not pinwheel patches.
+     - **Genuine continuations pass.** A genuine continuation is never rejected.
+     - **The first wrong move is always a coin.** In 70 of 70 runs it was a choice, never a forced move. Usually only 1 of its
+       2 or 3 options was right.
+     - **An oracle needs few bits.** An oracle that keeps the right option grew 1,000 tiles from the seed's 54-way choice with
+       4 to 10 further real bits, against 46 to 88 bits of apparent choice.
+     - **A stronger law does not help.** The radius-2 law got stuck in 40 of 40 runs too.
+   - **Reading.**
+     - **Question 4.** A process written as a law is a static law on its history, so the static definition survives the change.
+       What growth adds is a beginning, which is a knot, and never a knot of the world.
+     - **What grows natively.** In one dimension the beginning grows the number line in every order. Round spaces need more: on
+       spheres a carried bit (`GROW-COIN-20261107-001`), in the plane a few bits of hierarchy shared across the whole growing
+       boundary, which independent local coins cannot share.
+     - **Harmonies.** Every aperiodic law of the plane has deceptions of all orders (Dworkin and Shieh 1995). Periodic laws have
+       polygonal circles (`LOGIC-CIRCLE-20261107-001`). So a law whose growth never gets stuck, in any order, has a polygonal circle,
+       a harmony, among its spaces.
+     - **Shapes that do not close.** The owner said on 2026-11-08 that our minds are shapes that do not close, continuous with the
+       shapes they touch. Euler's count gives a formal side. A world grown by sprouting stays a tree. One grown by disc moves stays
+       a disc until its last triangle. Closing a ring or a handle takes a move that joins the world to itself.
+   - **Provenance.** Classical: products, the topes of graphic oriented matroids, discrete Morse theory, shellability, pumping,
+     proof-labeling schemes, aperiodic tile sets, and deceptions (Dworkin and Shieh 1995; Onoda, Steinhardt, DiVincenzo and
+     Socolar 1988). New as far as found: their reading under K1–K3, and the pinwheel's outward growth.
+   - **Next (awaiting the owner's go-ahead).** Knots across time: read Ledrappier's law as the space-time law of the cellular
+     automaton rule 60, then find the knots across time of rules 90 and 150, of one nonlinear rule and of Conway's Life (Payoff 2/3,
+     Concreteness 2/3). The alternatives are the collar law off the pinwheel, one hierarchy bit per level, and every accretion law
+     ([decision note](../research/GROWTH-LAW-20261107-001/growth_law.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

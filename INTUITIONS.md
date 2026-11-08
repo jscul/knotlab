@@ -79,20 +79,21 @@ binds two loops.
 
 ### 1.1 Distinctions and states
 
-Everything in this guide is built from one material, the **distinction**: two
-alternatives of which exactly one holds. A distinction is one bit, and its two
-alternatives are written 0 and 1. Nothing else is assumed. There is no space,
-no order and no number beyond the two values.
+**Distinctions.** Everything in this guide is built from one material, the
+distinction: two alternatives of which exactly one holds. A distinction is one
+bit, and its two alternatives are written 0 and 1. Nothing else is assumed.
+There is no space, no order and no number beyond the two values.
 
-A **variable** names a distinction. The guide writes the distinctions that
-loops bring (lesson 1.4) as capital letters, such as A and B, the contact
-between loops as c, helper variables called witnesses (lesson 1.6) as w, and
-any other variables as x, y and z. The letters are only names, and renaming
-them changes nothing.
+**Variables.** A variable names a distinction. The guide writes the
+distinctions that loops bring (lesson 1.4) as capital letters, such as A and B,
+the contact between loops as c, helper variables called witnesses (lesson 1.6)
+as w, and any other variables as x, y and z. The letters are only names, and
+renaming them changes nothing.
 
-A **joint state**, or just a state, gives every variable a value. A state is
-written as its values in a fixed order, so with the order A, B, c the string
-110 means A = 1, B = 1 and c = 0. Three variables have eight joint states:
+**Joint states.** A joint state, or just a state, gives every variable a value.
+A state is written as its values in a fixed order, so with the order A, B, c
+the string 110 means A = 1, B = 1 and c = 0. Three variables have eight joint
+states:
 
 ```text
 000  001  010  011  100  101  110  111
@@ -100,9 +101,9 @@ written as its values in a fixed order, so with the order A, B, c the string
 
 Each new variable doubles the count, so n variables have 2^n joint states.
 
-It helps to draw the eight states as the corners of a cube, with one direction
-for each variable: A runs from left to right, B from front to back, and c from
-bottom to top.
+**The cube of states.** It helps to draw the eight states as the corners of a
+cube, with one direction for each variable: A runs from left to right, B from
+front to back, and c from bottom to top.
 
 ```text
           011 ─────── 111
@@ -121,13 +122,13 @@ variables sit.
 
 ### 1.2 Rules and what they allow
 
-A **rule**, or constraint, rules out some joint states. A **system** of rules
-allows exactly the states that break none of its rules. The guide reads a
-system only through the set of states it allows, which is called its
-**relation**. Two systems that allow the same states are the same relation,
+**Rules and relations.** A rule, or constraint, rules out some joint states. A
+**system** of rules allows exactly the states that break none of its rules. The
+guide reads a system only through the set of states it allows, which is called
+its **relation**. Two systems that allow the same states are the same relation,
 however differently they are written.
 
-Rules are written with these symbols:
+**Symbols.** Rules are written with these symbols:
 
 | Written | Read aloud | Rules out |
 | --- | --- | --- |
@@ -140,26 +141,27 @@ Rules are written with these symbols:
 | A ⊕ B ⊕ c = 0 | parity: an even number of A, B and c are 1 (⊕ is addition mod 2) | the four states with an odd number of 1s |
 | not-all-equal(A, B, c) | the three are not all the same | 000 and 111 |
 
-The arrow needs a warning, because it causes most misreadings. A → B is the
+**A warning about the arrow.** The arrow causes most misreadings. A → B is the
 logician's "if A, then B", and it rules out one case only: A = 1 with B = 0. It
 says nothing when A = 0. It is not a step in time, a cause or a computation.
 
-A **clause** is an "or" of letters, each of which may be negated, such as
-¬A ∨ ¬B ∨ c. Each letter in a clause is a **literal**, and the number of
-literals is the clause's **width**. A clause rules out exactly one assignment
-of its own variables, the one that makes every literal false: ¬A ∨ ¬B ∨ c rules
-out A = 1, B = 1, c = 0 and allows the other seven states. A list of clauses
-that must all hold is a **CNF**, and a CNF whose clauses have at most two
-literals each is a **2-CNF** (at most three: a 3-CNF). Every relation can be
-written as a CNF, with one clause of full width for each excluded state. On
-the knotlab command line, `~` stands for ¬, spaces separate the literals of a
-clause, and semicolons separate clauses, so (¬A ∨ c) ∧ (¬B ∨ c) is typed
-`~A c; ~B c`.
+**Clauses and CNFs.** A clause is an "or" of letters, each of which may be
+negated, such as ¬A ∨ ¬B ∨ c. Each letter in a clause is a **literal**, and the
+number of literals is the clause's **width**. A clause rules out exactly one
+assignment of its own variables, the one that makes every literal false: ¬A ∨
+¬B ∨ c rules out A = 1, B = 1, c = 0 and allows the other seven states. A list
+of clauses that must all hold is a **CNF**, and a CNF whose clauses have at
+most two literals each is a **2-CNF** (at most three: a 3-CNF). Every relation
+can be written as a CNF, with one clause of full width for each excluded state.
+On the knotlab command line, `~` stands for ¬, spaces separate the literals of
+a clause, and semicolons separate clauses, so (¬A ∨ c) ∧ (¬B ∨ c) is typed `~A
+c; ~B c`.
 
-Two words carry the rest of the guide. A set of variables is **free**, or
-**unconstrained**, when every combination of their values occurs in some
-allowed state. Otherwise it is **constrained**. Take A ≠ B, with a third
-variable c that no rule mentions. It allows 010, 011, 100 and 101, and:
+**Free and constrained.** Two words carry the rest of the guide. A set of
+variables is **free**, or **unconstrained**, when every combination of their
+values occurs in some allowed state. Otherwise it is **constrained**. Take A ≠
+B, with a third variable c that no rule mentions. It allows 010, 011, 100 and
+101, and:
 
 - A alone is free, since A = 0 and A = 1 both occur;
 - the pair A, B is constrained, since 00 and 11 never occur;
@@ -225,10 +227,10 @@ nothing here is a claim about biology.
 
 ### 1.4 The picture
 
-The program starts from a picture of lines, loops and what lies between loops.
-Each part of the picture is a statement about small systems of rules like those
-of lesson 1.2, so it can be checked state by state. With states written in the
-order x, y, z:
+**Lines and loops, state by state.** The program starts from a picture of
+lines, loops and what lies between loops. Each part of the picture is a
+statement about small systems of rules like those of lesson 1.2, so it can be
+checked state by state. With states written in the order x, y, z:
 
 - the chain x → y, y → z allows 000, 001, 011 and 111: once a variable is 1,
   every later one is 1, so the chain only orders its members;
@@ -252,17 +254,18 @@ The picture itself:
 - **A loop is a logical structure, not a spatial one.** What it brings to a
   binding is an *open distinction*: a bit it leaves free.
 
-The open strings of the first point are a comparison with rope: a tangle in a
-string with free ends can always be slid off an end, so only closed loops stay
-knotted. From here on a loop takes part only through its open distinction.
-Two loops bring two distinctions, written A and B, and the place where they
-are bound is one more variable, the **contact** c. The next lesson reads the
-smallest rule that binds them.
+**From loops to A, B and c.** The open strings of the first point are a
+comparison with rope: a tangle in a string with free ends can always be slid
+off an end, so only closed loops stay knotted. From here on a loop takes part
+only through its open distinction. Two loops bring two distinctions, written A
+and B, and the place where they are bound is one more variable, the **contact**
+c. The next lesson reads the smallest rule that binds them.
 
 ### 1.5 Reading A, B → c
 
-The smallest rule that binds two loops at a contact is called the **atom**. It
-is written in several ways, and they all say the same thing:
+**Ways of writing it.** The smallest rule that binds two loops at a contact is
+called the **atom**. It is written in several ways, and they all say the same
+thing:
 
 | Written | Read aloud |
 | --- | --- |
@@ -301,7 +304,7 @@ Each piece of the notation, in turn:
   not B", or "if B and not c, then not A". All three rule out the same state,
   110. The knot test of lesson 2.1 treats the three variables alike.
 
-Why it binds: check the three pairs, with "free" as in lesson 1.2.
+**Why it binds.** Check the three pairs, with "free" as in lesson 1.2.
 
 - A and B take all four combinations of values, since c = 1 completes each of
   them to an allowed state.
@@ -328,12 +331,13 @@ exist, c must exist too, and nothing is required otherwise.
 
 ### 1.6 Forgetting a variable
 
-The knot test looks at what remains when a variable is ignored, so it needs an
-exact way of ignoring one. **Forgetting** a variable keeps a state of the other
-variables whenever at least one value of the forgotten variable completes it
-to an allowed state. It does not set the variable to 0 or to 1; it lets the
-variable take whichever value suits. What remains is the system's
-**projection** onto the other variables, also called its **shadow** on them.
+**What forgetting does.** The knot test looks at what remains when a variable
+is ignored, so it needs an exact way of ignoring one. **Forgetting** a variable
+keeps a state of the other variables whenever at least one value of the
+forgotten variable completes it to an allowed state. It does not set the
+variable to 0 or to 1; it lets the variable take whichever value suits. What
+remains is the system's **projection** onto the other variables, also called
+its **shadow** on them.
 
 - Forget c in the atom. Each of the four states of A and B is completed by
   c = 1, so the shadow on A and B allows all four: the pair is free.
@@ -361,17 +365,18 @@ knot on three variables.
 
 ### 2.1 The knot test
 
-Read a system of constraints as the set of joint states it allows. Auxiliary
-"witness" variables may appear, and are quantified away. Nothing outside the
-constraints, such as an executor or a scheduler, may supply an input. A
-verdict depends only on the allowed states, never on how the constraints are
-written.
+**The setting.** Read a system of constraints as the set of joint states it
+allows. Auxiliary "witness" variables may appear, and are quantified away.
+Nothing outside the constraints, such as an executor or a scheduler, may supply
+an input. A verdict depends only on the allowed states, never on how the
+constraints are written.
 
 Each loop contributes an open distinction. The contact is one more variable,
 `c`. **Erasing a loop forgets it**: its variable is no longer constrained by
 anything.
 
-A relation over the loops' distinctions and the contact is a **knot** when:
+**The test.** A relation over the loops' distinctions and the contact is a
+**knot** when:
 
 - **K1, binding:** it is constrained as a whole;
 - **K2, loss on erasure:** forgetting any one variable, a loop's or the
@@ -381,6 +386,8 @@ A relation over the loops' distinctions and the contact is a **knot** when:
 In short: **constrained as a whole, unconstrained in every part**, like
 Borromean rings. Forgetting the contact must free the loops too, so loops tied
 directly to each other do not count.
+
+**Knots and non-knots.** Six relations against the test:
 
 | Relation | Knot? | Why |
 | --- | --- | --- |
@@ -402,18 +409,20 @@ binding survives each erasure. *Proved (Lean):* `ForgettingKernel.lean`
 
 ### 2.2 Knots on the cube
 
-The cube of lesson 1.1 turns the knot test on three variables into a picture.
-Mark the states a relation excludes. A pair of variables, say A and B, is
-constrained exactly when some combination of their values never occurs, and
-that happens exactly when both completions of the combination are excluded:
-the state with c = 0 and the state with c = 1. Those two states differ only in
-c, so they are neighbours. The same holds for every pair, so:
+**Free pairs on the cube.** The cube of lesson 1.1 turns the knot test on three
+variables into a picture. Mark the states a relation excludes. A pair of
+variables, say A and B, is constrained exactly when some combination of their
+values never occurs, and that happens exactly when both completions of the
+combination are excluded: the state with c = 0 and the state with c = 1. Those
+two states differ only in c, so they are neighbours. The same holds for every
+pair, so:
 
 **Every pair is free exactly when no two excluded states are neighbours.**
 
-On three variables, forgetting one variable leaves a pair. So a relation on
-three variables is a knot exactly when it excludes at least one state (K1) and
-no two of its excluded states are neighbours (K2).
+**Which relations are knots.** On three variables, forgetting one variable
+leaves a pair. So a relation on three variables is a knot exactly when it
+excludes at least one state (K1) and no two of its excluded states are
+neighbours (K2).
 
 - The atom excludes the single corner 110, so it is a knot.
 - Parity A ⊕ B ⊕ c = 0 excludes the four corners with an odd number of 1s:
@@ -424,10 +433,10 @@ no two of its excluded states are neighbours (K2).
 - The common hub excludes 010, 100 and 110, and 110 is a neighbour of both of
   the others, so it is not a knot.
 
-A set of corners with no two of them neighbours is called an **independent
-set** of the cube. The knots on three variables are therefore the nonempty
-independent sets of excluded states. Two excluded corners of a knot never
-differ in just one variable: they differ in two, which is called Hamming
+**Independent sets.** A set of corners with no two of them neighbours is called
+an independent set of the cube. The knots on three variables are therefore the
+nonempty independent sets of excluded states. Two excluded corners of a knot
+never differ in just one variable: they differ in two, which is called Hamming
 distance two (as 110 and 000 do), or they are opposite. The next lesson counts
 these knots: there are 34, in five shapes.
 
@@ -437,11 +446,11 @@ these knots: there are 34, in five shapes.
 information that no part holds. That information can be measured, and it is
 small: a knot hides at most one bit.
 
-The measure counts possibilities. A knot's pairs are all free, so together
-they rule nothing out and leave all 8 states possible. The whole allows fewer.
-If it allows M of the 8 states, it holds log₂(8/M) bits that no pair holds:
-the atom allows 7 states and holds log₂(8/7) ≈ 0.193 bits, and parity allows 4
-and holds log₂(8/4) = 1 bit.
+**How it is measured.** The measure counts possibilities. A knot's pairs are
+all free, so together they rule nothing out and leave all 8 states possible.
+The whole allows fewer. If it allows M of the 8 states, it holds log₂(8/M) bits
+that no pair holds: the atom allows 7 states and holds log₂(8/7) ≈ 0.193 bits,
+and parity allows 4 and holds log₂(8/4) = 1 bit.
 
 - **Two loops and a contact have exactly 34 knots, in five shapes.** *Checked*
   against all 256 relations on three variables:
@@ -489,15 +498,15 @@ as a shape, and finds the knots among the shape's holes.
 
 ### 3.1 Two-place rules and the majority vote
 
-A **two-place rule** mentions two variables, and every two-place rule can be
-written as a 2-CNF: A → B is ¬A ∨ B, A = B is (¬A ∨ B) ∧ (A ∨ ¬B), and A ≠ B is
-(A ∨ B) ∧ (¬A ∨ ¬B). One test separates what two-place rules can say from
-what they cannot, and the test is a vote.
+**Two-place rules.** A two-place rule mentions two variables, and every
+two-place rule can be written as a 2-CNF: A → B is ¬A ∨ B, A = B is (¬A ∨ B) ∧
+(A ∨ ¬B), and A ≠ B is (A ∨ B) ∧ (¬A ∨ ¬B). One test separates what two-place
+rules can say from what they cannot, and the test is a vote.
 
-The **majority** of three states is the state that takes, in each variable,
-the value that at least two of the three take. The majority of 010, 100 and
-111 is 110: A is 0, 1 and 1, so 1; B is 1, 0 and 1, so 1; and c is 0, 0 and 1,
-so 0.
+**The vote.** The majority of three states is the state that takes, in each
+variable, the value that at least two of the three take. The majority of 010,
+100 and 111 is 110: A is 0, 1 and 1, so 1; B is 1, 0 and 1, so 1; and c is 0, 0
+and 1, so 0.
 
 - **A 2-CNF is closed under majority**: whenever it allows three states, it
   allows their majority. *Classical* (Schaefer 1978), and the reason is short.
@@ -560,23 +569,23 @@ addresses that question.
 
 ### 3.3 The shape of a system
 
-Lesson 1.2 asked whether one set of variables is free. Asking it of every set
-at once gives a picture, the system's **shape**:
+**Shapes.** Lesson 1.2 asked whether one set of variables is free. Asking it of
+every set at once gives a picture, the system's **shape**:
 
 - each free variable is a point;
 - each free pair is an edge between two points;
 - each free triple is a filled triangle;
 - each free set of four is a filled tetrahedron, and so on.
 
-Every part of a free set is free, since each combination of values on the
-part extends to a combination on the whole set, and that one occurs. So every
-side of a filled triangle is drawn too. A collection of sets that contains
-every part of each of its sets is called a **simplicial complex**, and a
-system's shape is one. Topology studies such shapes, and in particular their
-**holes**: a loop of free sets with nothing free filling it, or in higher
-dimensions a hollow sphere of them.
+**Simplicial complexes and holes.** Every part of a free set is free, since
+each combination of values on the part extends to a combination on the whole
+set, and that one occurs. So every side of a filled triangle is drawn too. A
+collection of sets that contains every part of each of its sets is called a
+**simplicial complex**, and a system's shape is one. Topology studies such
+shapes, and in particular their **holes**: a loop of free sets with nothing
+free filling it, or in higher dimensions a hollow sphere of them.
 
-On three variables:
+**Three examples.** On three variables:
 
 - with no rule at all, every set is free, and the shape is a filled triangle;
 - under the atom, the three pairs are free but the triple is not, so the shape
@@ -585,20 +594,21 @@ On three variables:
 - under A ≠ B, with c unused, the edge between A and B is missing, so the
   shape is two edges meeting at c, with no hole.
 
-Two terms from topology appear in the next lesson. A shape is a **flag**
-shape when every set whose pairs are all edges is filled in, so that its pairs
-decide all of it. Two systems on separate variables, set side by side, have
-the **join** of their shapes as their shape: a set is free when its part in
-each system is free. The join of two circles is a three-dimensional sphere
-(*Classical*).
+**Flags and joins.** Two terms from topology appear in the next lesson. A shape
+is a **flag** shape when every set whose pairs are all edges is filled in, so
+that its pairs decide all of it. Two systems on separate variables, set side by
+side, have the **join** of their shapes as their shape: a set is free when its
+part in each system is free. The join of two circles is a three-dimensional
+sphere (*Classical*).
 
 ### 3.4 Holes and knots
 
-The two words are easy to confuse. A system's **shape** is built from what it
-leaves free: each free distinction is a point, each pair that takes all four
-combinations is an edge, each free triple is a filled triangle, and so on. A
-**hole** is any gap in that shape. A **knot** is the smallest kind of hole: a
-set whose every part is free, but which is not free itself.
+**Hole or knot.** The two words are easy to confuse. A system's **shape** is
+built from what it leaves free: each free distinction is a point, each pair
+that takes all four combinations is an edge, each free triple is a filled
+triangle, and so on. A **hole** is any gap in that shape. A **knot** is the
+smallest kind of hole: a set whose every part is free, but which is not free
+itself.
 
 ```text
 a knot: an empty triangle            a hole made by ties: a square
@@ -668,12 +678,12 @@ uses for the difference.
 
 ### 4.2 Requirement and choice
 
-This lesson reads 1 as "exists" and 0 as "does not exist". A **world** is then
-the set of things that exist in an allowed state: the variables that are 1.
-A world is **minimal** when no other allowed world lies inside it, and
-**least** when it lies inside every allowed world. Requirements are written as
-**Horn clauses**, clauses with at most one un-negated letter, such as
-¬A ∨ ¬B ∨ c.
+**Worlds.** This lesson reads 1 as "exists" and 0 as "does not exist". A
+**world** is then the set of things that exist in an allowed state: the
+variables that are 1. A world is **minimal** when no other allowed world lies
+inside it, and **least** when it lies inside every allowed world. Requirements
+are written as **Horn clauses**, clauses with at most one un-negated letter,
+such as ¬A ∨ ¬B ∨ c.
 
 - **A requirement** says what must exist when other things do: `A ∧ B → c`.
   A system of requirements has exactly one least world, and propagation finds
@@ -707,12 +717,12 @@ select. It neither proves nor refutes that stance.
 
 ### 4.3 Knots from competing pairs
 
-Two-place rules can be combined in two ways. Under **conjunction** every rule
-must hold, and, as lesson 3.2 shows, pairs then never make a knot. Under
-**competition** the rules are preferences, and the allowed states are those
-that break the fewest. A state's **energy** counts the preferences it breaks,
-possibly with weights, so under competition the allowed states are those of
-least energy.
+**Conjunction and competition.** Two-place rules can be combined in two ways.
+Under **conjunction** every rule must hold, and, as lesson 3.2 shows, pairs
+then never make a knot. Under **competition** the rules are preferences, and
+the allowed states are those that break the fewest. A state's **energy** counts
+the preferences it breaks, possibly with weights, so under competition the
+allowed states are those of least energy.
 
 **The intuition.** Ask three distinctions to differ pairwise. Around the
 triangle the differences cannot all hold, so the preferences are
@@ -760,14 +770,14 @@ only that the rules are not pairwise rules that must all hold.
 
 ### 4.4 Which knots remember a loop
 
-A **ring** of knots is built from copies of one knot. Each copy has its own
-distinction x and two witnesses, one shared with the copy before it and one
-with the copy after it, and the last copy shares a witness with the first.
-Take parity copies, x ⊕ w_in ⊕ w_out = 0: a copy passes the incoming witness on
-unchanged when its x is 0, and flipped when its x is 1. Around the ring the
-witness has to come back to itself, so the number of flips is even. With the
-witnesses forgotten, the ring allows exactly the patterns of x's with an even
-number of 1s, which is one parity knot on all of them.
+**Rings of knots.** A ring of knots is built from copies of one knot. Each copy
+has its own distinction x and two witnesses, one shared with the copy before it
+and one with the copy after it, and the last copy shares a witness with the
+first. Take parity copies, x ⊕ w_in ⊕ w_out = 0: a copy passes the incoming
+witness on unchanged when its x is 0, and flipped when its x is 1. Around the
+ring the witness has to come back to itself, so the number of flips is even.
+With the witnesses forgotten, the ring allows exactly the patterns of x's with
+an even number of 1s, which is one parity knot on all of them.
 
 **The intuition.** Join copies of a knot into a ring, each passing a witness
 to the next and the last passing back to the first. Then forget the
@@ -798,16 +808,16 @@ PYTHONPATH=tools python3 -m knotlab rings
 
 ### 4.5 What networks of loops remember
 
-Networks extend this. Put a witness at each vertex of a graph, and let each
-edge carry **permutation contact**: a permutation of the witness values takes
-the witness at one end to the witness at the other. A ring is the case of a
-single cycle. Composing the permutations around a closed walk
-gives the walk's **holonomy**, and a value that a permutation leaves unchanged
-is one of its **fixed points**. A loop can also be given a selector, so that
-it either passes the witness unchanged or applies its holonomy, and a set of
-loops is switched on together when all their selectors can be on at once. The
-**nerve** of a family of sets is the shape with one point for each set and a
-face for each group of sets that share an element.
+**From rings to networks.** Networks extend this. Put a witness at each vertex
+of a graph, and let each edge carry **permutation contact**: a permutation of
+the witness values takes the witness at one end to the witness at the other. A
+ring is the case of a single cycle. Composing the permutations around a closed
+walk gives the walk's **holonomy**, and a value that a permutation leaves
+unchanged is one of its **fixed points**. A loop can also be given a selector,
+so that it either passes the witness unchanged or applies its holonomy, and a
+set of loops is switched on together when all their selectors can be on at
+once. The **nerve** of a family of sets is the shape with one point for each
+set and a face for each group of sets that share an element.
 
 *Proved (Lean):* `LoopNerve.lean`.
 
@@ -850,12 +860,12 @@ once to see that nothing is allowed.
 
 ### 5.1 Proving that nothing is allowed
 
-When a system allows no state at all, a **refutation** is a proof of that
-fact: a sequence of steps, each of them following from the rules, that ends in
-a contradiction. Proof systems differ in what one step may do, and the cost
-that matters here is how much a single step must hold at once.
+**Refutations.** When a system allows no state at all, a refutation is a proof
+of that fact: a sequence of steps, each of them following from the rules, that
+ends in a contradiction. Proof systems differ in what one step may do, and the
+cost that matters here is how much a single step must hold at once.
 
-Algebra gives the proof system used in the next lesson.
+**Proofs by algebra.** Algebra gives the proof system that the next lesson uses.
 
 - **Rules become equations.** Each variable x obeys x·x = x, so its only
   values are 0 and 1. A clause becomes a product that is 0 exactly when the
@@ -890,11 +900,11 @@ boundary of the best sweep.
 These networks are Tseitin formulas, and "how much an observer must hold"
 becomes the degree of a refutation.
 
-Three terms about graphs appear below. Lay a graph's vertices out in a row:
-each gap in the row is crossed by some edges, the layout's width is the most
-edges crossing one gap, and the **cutwidth** is the least width of any layout.
-The **maximum degree** is the most edges at one vertex. The **±1 encoding**
-writes each bit as +1 or −1 instead of 0 or 1.
+**Graph terms.** Three terms about graphs appear below. Lay a graph's vertices
+out in a row: each gap in the row is crossed by some edges, the layout's width
+is the most edges crossing one gap, and the **cutwidth** is the least width of
+any layout. The **maximum degree** is the most edges at one vertex. The **±1
+encoding** writes each bit as +1 or −1 instead of 0 or 1.
 
 - **Reasoning mod 2 sees the hole at once.** Summing every vertex's equation
   counts each edge twice, so a refutation of the size of one knot exists.
@@ -934,8 +944,8 @@ Deciding whether a network of knots allows any world can be easy while
 counting its worlds is hard. Two notes in this repository locate where
 counting turns hard.
 
-The words used for counting follow lesson 4.1. A world here is an allowed
-state, as in lesson 4.2.
+**Counting words.** The words used for counting follow lesson 4.1. A world here
+is an allowed state, as in lesson 4.2.
 
 - **#P** ("sharp P") is the class of counting questions whose objects are easy
   to check, such as how many states a CNF allows, or how many perfect
@@ -955,24 +965,25 @@ state, as in lesson 4.2.
 
 ### 6.2 The worlds of not-all-equal knots
 
-A **hypergraph** has points and edges, where an edge may contain any number of
-points. In a **3-uniform** hypergraph every edge has three points, and in a
-**3-regular** one every point lies in three edges. A proper **2-colouring**
-colours each point black or white so that no edge has all three points the
-same colour, which is the not-all-equal rule on every edge. The **incidence
-graph** has a vertex for each point and one for each edge, and joins each point
-to the edges that contain it. The note also signs some incidences: at a
-signed incidence, the edge sees the point's colour reversed. A twist, roughly,
-is where the signs differ from a Pfaffian signing, and the note defines when
-twists branch.
+**Hypergraphs and colourings.** A hypergraph has points and edges, where an
+edge may contain any number of points. In a **3-uniform** hypergraph every edge
+has three points, and in a **3-regular** one every point lies in three edges. A
+proper **2-colouring** colours each point black or white so that no edge has
+all three points the same colour, which is the not-all-equal rule on every
+edge. The **incidence graph** has a vertex for each point and one for each
+edge, and joins each point to the edges that contain it. The note also signs
+some incidences: at a signed incidence, the edge sees the point's colour
+reversed. A twist, roughly, is where the signs differ from a Pfaffian signing,
+and the note defines when twists branch.
 
-A 3-regular 3-uniform hypergraph is a network of not-all-equal knots in which
-every distinction sits in exactly three knots. Its proper 2-colourings are the
-network's worlds. Networks with no world at all are where these knots close up
-on themselves, and the program calls them three-fold spaces. Counting is
-#P-hard in general (Fan and Cai) and easy when the incidence graph is planar
-(Valiant). The note studies the class in between, Pfaffian incidence graphs,
-which contains every network with no world. *Proved (note):*
+**What the note proves.** A 3-regular 3-uniform hypergraph is a network of
+not-all-equal knots in which every distinction sits in exactly three knots. Its
+proper 2-colourings are the network's worlds. Networks with no world at all are
+where these knots close up on themselves, and the program calls them three-fold
+spaces. Counting is #P-hard in general (Fan and Cai) and easy when the
+incidence graph is planar (Valiant). The note studies the class in between,
+Pfaffian incidence graphs, which contains every network with no world. *Proved
+(note):*
 
 - remove any one knot from a connected network with no world, and the worlds
   of what is left can be counted in polynomial time;
@@ -980,41 +991,41 @@ which contains every network with no world. *Proved (note):*
 - counting becomes #P-hard once twists branch. It stays #P-hard without any
   signs, and even when the incidence graph is a Pfaffian brace.
 
-See [notes/pfaffian-hypergraph-colourings](notes/pfaffian-hypergraph-colourings/).
+See
+[notes/pfaffian-hypergraph-colourings](notes/pfaffian-hypergraph-colourings/).
 
 ### 6.3 Patterns in three dimensions
 
-A **3-manifold** is a space that looks like ordinary three-dimensional space
-near each of its points, such as the space around a knotted rope. Its
-**fundamental group** records its loops: two loops count as the same when one
-can be slid into the other, and two loops combine by running one after the
-other. A **homomorphism** from the fundamental group to a finite group labels
-every loop with an element of the group so that running two loops one after
-the other multiplies their labels. For the space around a knot drawn as a
-diagram, such a labelling is a colouring of the diagram's arcs that obeys one
-rule at each crossing. A group is **solvable** when it is built in finitely
-many layers from commutative groups. S₃ is the group of the six permutations
-of three things, and S₄ that of the 24 permutations of four. A group's Fitting
+**Spaces and their groups.** A 3-manifold is a space that looks like ordinary
+three-dimensional space near each of its points, such as the space around a
+knotted rope. Its **fundamental group** records its loops: two loops count as
+the same when one can be slid into the other, and two loops combine by running
+one after the other. A **homomorphism** from the fundamental group to a finite
+group labels every loop with an element of the group so that running two loops
+one after the other multiplies their labels. For the space around a knot drawn
+as a diagram, such a labelling is a colouring of the diagram's arcs that obeys
+one rule at each crossing. A group is **solvable** when it is built in finitely
+many layers from commutative groups. S₃ is the group of the six permutations of
+three things, and S₄ that of the 24 permutations of four. A group's Fitting
 height counts its layers of a particular kind, the nilpotent ones, which are
-the groups closest to commutative; Heisenberg groups are the simplest
-nilpotent groups that are not commutative. A **link** is several closed loops
-of rope, possibly tangled with one another, and a knot is a link with one
-loop.
+the groups closest to commutative; Heisenberg groups are the simplest nilpotent
+groups that are not commutative. A **link** is several closed loops of rope,
+possibly tangled with one another, and a knot is a link with one loop.
 
-When the laws counted are group laws on a 3-manifold, counting worlds means
-counting homomorphisms from its fundamental group to a finite group. Rowell
-conjectured in 2009 that this count is computable in polynomial time for
-solvable groups. *Proved (note):* unless every #P function is computable in
-polynomial time, the conjecture fails. On links it fails already for S₃. On
-knots it fails for S₄, the smallest group for which it can, and for some
-groups of Fitting height two. For Heisenberg-type groups the note proves an
-exact dividing line.
-See [notes/knot-group-counting](notes/knot-group-counting/).
+**What the note proves.** When the laws counted are group laws on a 3-manifold,
+counting worlds means counting homomorphisms from its fundamental group to a
+finite group. Rowell conjectured in 2009 that this count is computable in
+polynomial time for solvable groups. *Proved (note):* unless every #P function
+is computable in polynomial time, the conjecture fails. On links it fails
+already for S₃. On knots it fails for S₄, the smallest group for which it can,
+and for some groups of Fitting height two. For Heisenberg-type groups the note
+proves an exact dividing line. See
+[notes/knot-group-counting](notes/knot-group-counting/).
 
-Two more terms appear in the reading below. Surgery on a link cuts out a thin
-tube around it and glues the tube back differently, which makes a new
-3-manifold. A character of a commutative group maps it to the complex numbers
-of absolute value 1, preserving multiplication.
+**Surgery and characters.** Two more terms appear in the reading below. Surgery
+on a link cuts out a thin tube around it and glues the tube back differently,
+which makes a new 3-manifold. A character of a commutative group maps it to the
+complex numbers of absolute value 1, preserving multiplication.
 
 **Reading.** In the Heisenberg families, hardness appears exactly when the
 twisted obstruction joins three nontrivial characters at once, which

@@ -19,6 +19,9 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   definitions of the terms they use.
 - Two former chapters are now two lessons each: "Which knots remember a loop"
   (rings, then networks) and "Counting what emerges" (one lesson per note).
+- Every part of a lesson now opens with a bold lead, as most already did, so
+  that jscul.dev's contents page can list each lesson's subsections and link
+  to them.
 - Unchanged: every claim, label, proof reference and command. Cross-references
   are renumbered, and the links from [THEORY.md](THEORY.md),
   [FINDINGS.md](FINDINGS.md), [lean/](lean/), the notes and

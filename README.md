@@ -13,6 +13,8 @@ The repository has two layers:
   claims, each labelled by how it is supported and linked to its evidence.
   [FINDINGS.md](FINDINGS.md) lists eleven findings we packaged for outside
   readers, each with Lean proofs, a note or exhaustive checks that run here.
+  [docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md) lists what the program assumes
+  but could challenge, each with its status and what rests on it.
 - **The full record.** [RESULTS.md](RESULTS.md) lists, with dates, every result
   recorded since the knot test K1–K3 became canonical on 19 October 2026:
   <!-- counts -->221 current results and 5 superseded ones<!-- /counts -->.
@@ -46,6 +48,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 PYTHONPATH=tools python3 -m knotlab check --cnf "~A ~B c" --loops A B --contact c
 python3 -m unittest tests.test_knotlab          # 80 tests, a few seconds
 python3 -m unittest tests.test_theory           # THEORY.md: labels, evidence and links
+python3 -m unittest tests.test_assumptions      # docs/ASSUMPTIONS.md: statuses, entries and links
 python3 -m unittest tests.test_records tests.test_curation  # the record is complete and current
 
 # the Lean proofs: core Lean 4, toolchain pinned in lean/lean-toolchain
@@ -74,7 +77,7 @@ hours.
 | [THEORY.md](THEORY.md) | The thesis and the main claims, each labelled premise, proved, checked, conjecture, reading or open, with links to the evidence |
 | [FINDINGS.md](FINDINGS.md) | The findings, their kind (new result, new proof, new reading) and their status |
 | [tools/knotlab](tools/knotlab/) | Tools that test the knot definition on any finite system of constraints |
-| [tests](tests/) | Exhaustive checks of the finite facts the intuitions rely on, and a check of THEORY.md's labels and links |
+| [tests](tests/) | Exhaustive checks of the finite facts the intuitions rely on, and checks of the labels and links of THEORY.md and the register of assumptions |
 | [lean](lean/) | Five kernel-checked proofs: the knot test, competing pairs, the ring theorem, loop nerves |
 | [notes](notes/) | Three self-contained notes with PDFs, sources and check scripts |
 | [RESULTS.md](RESULTS.md) | Every result since 19 October 2026, dated, grouped by line of work, with links |
@@ -82,7 +85,7 @@ hours.
 | [tickets](tickets/) | The ticket that set each piece of work: objective, stop rule and outcome |
 | [data](data/) | The inputs of the generated files (lines of work, ranking tiers, notes, pending qualifications) and the results as JSON |
 | [scripts](scripts/) | `build.py` regenerates RESULTS.md, RANKING.md and the JSON in data/ |
-| [docs](docs/) | The working perspective: the knot intuition, the foundational thesis, the foundation's classical sources, and the program's vocabulary |
+| [docs](docs/) | The working perspective: the knot intuition, the foundational thesis, the foundation's classical sources, the program's vocabulary, and the register of assumptions |
 | [proofs](proofs/) | Every proof since 19 October 2026: `proof.md`, `check.py`, frozen results and manifests |
 | [experiments](experiments/), [artifacts](artifacts/) | Frozen experiment contracts and their outputs |
 | [research](research/) | Working notes, decision notes and discovery records for each epic |

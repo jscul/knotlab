@@ -1,6 +1,6 @@
 # Does a native knot need a native binding?
 
-Status: open
+Status: resolved (2026-11-07): recorded by the repository owner as an assumption rather than decided; option (B) is assumed, as assumption A1 of docs/ASSUMPTIONS.md, open to challenge, and the canonical text is unchanged
 Raised: 2026-11-07
 Commitment: The source-aware reading for infinite systems (AGENTS.md, canonical knot test paragraph; docs/FOUNDATIONAL_THESIS.md, "Source condition for infinite systems"): "A knot is native at a solution only when each of its variables is flipped there by some change of finitely many variables."
 Decision: Whether a native knot on an infinite system must also be natively bound (a knot of the closure of its solution's finitely-different solutions), or whether claims about distance or locality should only state whether the law has ends, because per-variable nativity does not control where a knot's binding comes from
@@ -64,3 +64,16 @@ the owner prefers not to change the definition.
   - Knots whose binding passes through frozen witnesses would be relabelled.
 
 The canonical documents are not edited by this request.
+
+## Resolution
+
+On 2026-11-07 the owner answered this request with a new practice: "For these, let's have some global skill of 'assumptions'.
+These are things that we're assuming, but that can be challenged. We can have epics dedicated to challenging assumptions."
+
+- **What is assumed.** Option (B): a knot that is native in every variable is also assumed natively bound. It is assumption A1 of
+  the [register of assumptions](../../docs/ASSUMPTIONS.md), which says why it is held, what rests on it and how it could be
+  challenged.
+- **What changes.** Each knot claim on an infinite system records whether the knot is natively bound, beside its K1–K3 verdict and
+  its source label, and claims of distance, locality or spacing use natively bound knots.
+- **What does not change.** The canonical text of the source condition (AGENTS.md; docs/FOUNDATIONAL_THESIS.md) and every earlier
+  source label. Writing (B) into the canonical text would take a further decision of the owner's.

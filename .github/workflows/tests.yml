@@ -15,5 +15,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: The knot laboratory, the theory page and the published record
-        run: python -m unittest tests.test_knotlab tests.test_theory tests.test_records tests.test_curation
+      - name: The knot laboratory, the theory page, the assumptions and the published record
+        run: python -m unittest tests.test_knotlab tests.test_theory tests.test_assumptions tests.test_records tests.test_curation

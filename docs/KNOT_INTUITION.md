@@ -1191,6 +1191,12 @@ So network holes come in two kinds:
    - Both verdicts are recorded for every infinite-system claim, so the
      choice can be reopened
      ([request](../research/HOLES-AT-INFINITY-20261020-001/canonical_correction_request.md)).
+   - **Natively bound, assumed on 2026-11-07.** A knot native in every
+     variable is also assumed natively bound: a knot of the closure of its
+     solution's finitely-different solutions. The owner recorded this as an
+     assumption rather than a decision, and it can be challenged (A1 of the
+     [register of assumptions](ASSUMPTIONS.md);
+     [request](../research/LOGIC-AXIS-20261107-001/canonical_correction_request.md)).
 2. **Witnesses.** Make "information outside a loop about its interior"
    precise, for example output signatures such as 00/11 versus 01/10, and say
    which witnesses may take part in further bindings.
@@ -3147,7 +3153,8 @@ So network holes come in two kinds:
        needs a distinction per lattice direction.
      - **Native in every variable is not enough.** Take Ledrappier's law on x, z free and y = x + z. Every variable is flipped by a
        finite move, yet a six-variable knot joins points 2^k apart for every k. A correction request asks whether a native knot must
-       also be natively bound.
+       also be natively bound. On 2026-11-07 the owner recorded the answer as an assumption: yes, open to challenge (A1 of the
+       [register of assumptions](ASSUMPTIONS.md)).
      - **Growth never stretches.** A conservative extension never increases bond distance. A system that keeps its old allowed states
        grows only at its edges.
    - **The frozen axis is measured in signed bits (proved; equality conjectured).**

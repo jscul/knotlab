@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: native creation does see where atoms sit
+
+- TRISUM-READ-20261107-001-D002 is titled "Native creation cannot see where an
+  atom sits within its switching class". Its evidence is one space, seed 5,
+  where a symmetry of the glue moves an atom and the native map cannot tell
+  the two places apart. In general native creation does see where an atom
+  sits. For five glues with two placements of their atoms in one switching
+  class, removing a line of an atom creates differently at glue lines, so the
+  whole native maps differ; only creation between glue lines is the same
+  ([switch read](research/SWITCH-READ-20261108-001/switch_read.md)).
+- The record now carries a pending qualification.
+- Unchanged: the record's conclusion about seed 5, the junction reading
+  (TRISUM-READ-20261107-001-D001) and every frozen statement, which also hold
+  on the five other placements.
+
 ## 8 November 2026: knots across time, narrowed to the first row
 
 - TIME-KNOTS-20261107-001-D001 and its decision note said that a process

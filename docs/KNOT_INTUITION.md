@@ -3429,11 +3429,33 @@ So network holes come in two kinds:
      change. Each space used here is reproduced at its seed under a recorded hash seed.
    - **Provenance.** Trisums and trisectors (Robertson, Seymour and Thomas), switching classes (Zaslavsky) and refinement (Weisfeiler
      and Leman; Cai, Fürer and Immerman) are classical. The signature, the held-out test and the hidden symmetry are new here.
-   - **Next (recommended; parked as backlog B5 of the goals doc, at the owner's request to wrap up).** Does native creation see the
-     signing only through its switching class (Payoff 2/3, Concreteness 2/3)? Map a second placement of one space in the same class and
-     compare.
+   - **Next (taken as `SWITCH-READ-20261108-001`).** Does native creation see the signing only through its switching class (Payoff
+     2/3, Concreteness 2/3)? Map a second placement of one space in the same class and compare.
      - **The alternatives.** A proof of the junction signature (2/3, 1/3); one uniform native reading of atoms and junctions
        (1/3, 3/3).
+
+   **2026-11-08: what native creation sees of a signing** (`SWITCH-READ-20261108-001`).
+   - **The question.** In the junction epic one frozen statement failed because native creation could not tell two places of an atom
+     apart, places related by switching the glue's signing. Does native creation see a signing only through its switching class?
+   - **Placements come for free.** HANDLE-COUNT's generator picks its minimal signing by walking sets, so different hash seeds give 11
+     of the 17 trisum glues two or three placements of their atoms: one glue and one switching class, but spaces that are not
+     isomorphic.
+   - **No for the whole map, yes between glue lines (computed, five pairs, 38 to 56 points).**
+     - **Between glue lines** native creation is the same in both placements, entry by entry.
+     - **Removing a line of an atom** creates differently at glue lines, so the whole native maps are never isomorphic, with the glue
+       held fixed or not.
+     - **The junction reading transfers.** The junction epic's seven frozen statements hold on all five other placements.
+   - **Reading.**
+     - **Native creation splits in two.** Between glue lines it sees only the switching class, which is also what Pfaffian counting
+       sees. Through its atoms it reads where they sit.
+     - **Why, as read from earlier results.** An intact atom acts on the glue as one negated incidence, and switching only complements
+       points. Removing a line of an atom frees its incidence, and which incidence is freed is the placement. Not yet proved.
+     - **The junction epic's hidden atom** is a placement that a symmetry of the glue moves, so even the atom removals cannot tell its
+       two places apart. Its record's title said more than that, and is narrowed.
+   - **Provenance.** Switching classes of signed graphs (Zaslavsky) are classical. The comparison and the split are new here.
+   - **Next (recommended).** Prove that creation between glue lines depends only on the switching class (Payoff 2/3, Concreteness 2/3):
+     an intact atom acts as one negation, switching complements points, and the creation test should not see complementing.
+     - **The alternatives.** The glue block against Pfaffian counting (2/3, 1/3); folding in the nine remaining placements (running).
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

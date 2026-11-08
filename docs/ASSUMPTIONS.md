@@ -83,7 +83,7 @@ evidence: results and their status come from the records each entry links.
 | [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Assumed |
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
-| [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Assumed |
+| [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Overturned |
 | [A30](#a30--a-processs-memory-is-read-from-its-two-time-knots) | A process's memory is read from its two-time knots | scope | Assumed |
 
 ## Entries
@@ -640,7 +640,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A29 · Where an atom sits within its switching class does not matter
 
-**Assumed** · 2026-11-07 · scope
+**Overturned** · 2026-11-08 · scope
 
 - **Statement.** A plain edge-atom space is studied through one placement of its atoms: a Fano atom on each signed incidence of
   one minimal signing of its glue. Results computed on that placement are taken to hold for every placement in the same switching
@@ -651,12 +651,14 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The fresh trisum spaces of `HANDLE-COUNT-20261106-001B` (three to six of its 257 per-space rows change under
   other hash seeds; its stated totals do not), and the eighteen spaces of `TRISUM-READ-20261107-001`, each reproduced at its seed
   only under a recorded hash seed.
-- **Challenge.** Compute the native creation map of two placements in one switching class and compare them line by line on the
-  glue. Equal maps would support it, and with it the conjecture that native creation sees a signing only through its switching
-  class. A difference would make each placement its own space for native creation. One instance is in its
-  favour: in seed 5 the native map cannot tell two placements apart
-  ([trisum read](../research/TRISUM-READ-20261107-001/trisum_read.md)).
+- **Challenge.** Overturned by `SWITCH-READ-20261108-001`. For five glues with two placements in one switching class, the native
+  maps agree exactly between glue lines, but removing a line of an atom creates differently at glue lines, so the whole maps are never
+  isomorphic: for native creation each placement is its own space. What replaced it: creation between glue lines depends only on the
+  switching class (computed, five pairs), and the results that rested on it stand, since the junction epic's seven statements hold
+  on all five other placements and HANDLE-COUNT B's stated totals reproduce
+  ([switch read](../research/SWITCH-READ-20261108-001/switch_read.md)).
 - **History.**
+  - 2026-11-08 · Overturned (`SWITCH-READ-20261108-001`); the results resting on it rechecked and standing.
   - 2026-11-07 · Added by `TRISUM-READ-20261107-001`.
 
 ### A30 · A process's memory is read from its two-time knots

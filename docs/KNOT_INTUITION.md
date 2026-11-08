@@ -1770,9 +1770,17 @@ So network holes come in two kinds:
      except 8 and 16. No census was used, and no lag cutoff.
    - **Reading.** Adjacency, native paths, separation and the genus of the contacts' surface are now read in one substrate across
      time. What remains of the order, distance, waits on the owner.
-   - **Next (research directions, or a pause until the owner rules on distance).** Grow a network of rings from a law (Payoff 3/3,
-     Concreteness 1/3), or full reach on the cut-open torus (Payoff 2/3, Concreteness 3/3)
-     ([decision note](../research/GENUS-CUT-20261108-001/genus_cut.md)).
+   - **Next (taken).** Full reach on the cut-open torus, recorded as a preliminary result (next entry), then growing a network of rings
+     from a law ([decision note](../research/GENUS-CUT-20261108-001/genus_cut.md)).
+
+   **2026-11-08: full reach on the cut-open torus, preliminary** (`FULL-REACH-20261108-001`).
+   - **Only powers of two fail, to side 48 (exploratory, exact).** After a ring of cuts round the n × n torus in each direction, every
+     uncut contact needs every ring on every side from 3 to 48 except 8, 16 and 32, where n − 4 contacts each never need the three rings
+     of one corner. No lag cutoff was used.
+   - **Reading.** Cutting the torus open removes the cancellation of the two ways round; what remains at the powers of two is a
+     cancellation inside the square, of Lucas' kind.
+   - **Next (parked).** The proof, after the growth epic, which the coordinator switched to at the owner's interest
+     ([decision note](../research/FULL-REACH-20261108-001/full_reach.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

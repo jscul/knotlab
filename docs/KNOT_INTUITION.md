@@ -3464,10 +3464,42 @@ So network holes come in two kinds:
        pinwheel, Barge–Diamond–Hunton–Sadun and Frettlöh–Whitehead–Whittaker) and Whitney's theorems.
      - **Not found.** The radius-2 readability, and the rule's form on knots and distinctions.
      - **Corrected 2026-11-08.** The rule and the census were first listed as not found.
-   - **Next (recommended, awaiting the owner).** A round plane grown at its open ends (Payoff 3/3, Concreteness 2/3), starting with
+   - **Next (taken in part by `PINWHEEL-ATLAS-20261107-001`: the atlas and the periodic check; outward growth held).** A round
+     plane grown at its open ends (Payoff 3/3, Concreteness 2/3), starting with
      atlas growth. From one knot, add knots only where every nearby distinction keeps a radius-2 neighbourhood of the pinwheel's
      atlas. Does growth reach dead ends, or grow pinwheel patches outward as the number line grew?
      - **The alternatives.** Prove radius 2 for every pinwheel tiling; the spectrum of rational π among periodic laws.
+
+   **2026-11-07: the pinwheel's own law** (`PINWHEEL-ATLAS-20261107-001`).
+   - **The question.** What is the pinwheel's own local law? Does it force a round plane, and can regrowth drop its labels? This is
+     the plane's side of the question shared with the sphere line: how much hidden information does roundness cost?
+   - **A finite law that reads itself (proved).**
+     - **The closure.** Take each tile with every tile touching it. Over all pinwheel patches these form 193 kinds, closed under the
+       cut; 108 are complete.
+     - **The atlas.** On every pinwheel tiling, the radius-2 neighbourhoods of darts take exactly 1,168 forms, and each fixes its
+       edge's label. At radius 1 there are 198 forms, 9 of them ambiguous.
+     - **So regrowth reads only the map.** The eleven-label rule can run on the bare map: inside by theorem, and at the boundary of
+       the growing patch at radius 2 on levels 4–7 (measured).
+   - **Periodic planes fail (measured).**
+     - **The test.** None of 96,474 periodic configurations obeys the law, even at radius 1: rectangle grids, brick rows, every
+       domino tiling of small tori with every diagonal choice, and the six two-tile shapes tiled by half-turns.
+     - **The frame-consistent cut** fails too. It is neither periodic nor round.
+   - **Reading.**
+     - **Unlike the sphere.** On the sphere, a law without hidden states cannot tell a round sphere from a tube
+       (`SPHERE-GROWTH-20261107-001`). In the plane, the pinwheel's own law rejects every tested non-round plane outright.
+     - **Why.** Its vertices are mostly T-junctions at long-leg midpoints, which crystalline arrangements of the same triangle do not
+       make in the allowed combinations.
+     - **The shared question.** For regrowth, roundness costs no hidden information beyond the patch's shape at radius 2. Whether the
+       law forces roundness is open.
+   - **Provenance.**
+     - **Known.** Collared tiles (Anderson–Putnam); the combinatorial rule (Kenyon–Stephenson); undecorated local rules (Levitov,
+       Socolar); decorated matching rules (Mozes, Goodman-Strauss, and Radin for the pinwheel).
+     - **Not found.** The atlas, the readability theorem and the periodic test.
+   - **Next (held, at the owner's request to wrap up current lines).**
+     - **Forcing.** Whether the undecorated law forces aperiodicity: a torus search over the law's own vertex stars (Payoff 2/3,
+       Concreteness 2/3).
+     - **Growth.** Outward growth in every growth order (Payoff 2/3, Concreteness 1/3).
+     - **The boundary.** Radius 2 at the boundary as a theorem (Payoff 1/3, Concreteness 3/3).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

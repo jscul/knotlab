@@ -24,8 +24,8 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 71 results
-- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 31 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 70 results
+- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 32 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
@@ -517,9 +517,6 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A growing law needs a shared coin: refinement shares it, accretion must carry it** (`GROW-COIN-20261107-001-D001`).
   Growth keeps a knot sphere round without a witness only by refinement, which scales an already round seed and never places a corner. Accretion must place corners, and when each turn is decided by a label-free local rule it also closes lopsided spheres, so making the four equator corners agree needs a bit carried by the process, a hidden witness under the canonical test.
   [proof P001](proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/proof.md), [epic closure](proofs/GROW-COIN-20261107-001Z/GROW-COIN-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · The pinwheel's radius-2 law reads its own labels** (`PINWHEEL-ATLAS-20261107-001-D001`).
-  On every pinwheel tiling, the radius-2 neighbourhoods of darts in the unlabelled planar map take exactly 1,168 forms, each fixing its edge's oriented label (side types, intervals, direction), so the labels that drive the eleven-label regrowth rule are read from the bare map within radius 2. The proof closes the 193 collared tiles under the cut and cuts each of the 108 complete ones four times; at radius 1 there are 198 forms, 9 of them ambiguous.
-  [proof P001](proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/proof.md), [epic closure](proofs/PINWHEEL-ATLAS-20261107-001Z/PINWHEEL-ATLAS-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · Native creation fixes the atoms of every computed space** (`REFINE-READ-20261107-001-D001`).
   On 191 saved and 86 fresh spaces, pair refinement (folklore 2-WL) of the native creation map, read through the order-free far sides, never puts a pair within a Fano atom and a pair across two atoms in one class, so every symmetry of the map preserves the atoms and they are definable in three-variable counting logic in each space. On whether creation occurs alone it mixes them in 42 spaces.
   [proof P001](proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
@@ -624,6 +621,9 @@ Which local laws survive the moves of a space, with and without signs, the self-
 - **2026-11-07 · The logical Cartesian plane is a taxicab plane** (`OPEN-END-GROWTH-20261107-001-D003`).
   In the product law of two parity laws, a knot of each axis joined at a corner is a knot, so bond distance is at most the sum of the axis distances minus one. The product of two two-way threads has no ends, so its bond distance is within constants of taxicab distance and its bond balls grow quadratically: a plane of dimension two built from two lines.
   [proof P001](proofs/OPEN-END-GROWTH-20261107-001C/OPEN-END-GROWTH-20261107-001C-P001_the_logical_cartesian_plane/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The pinwheel's radius-2 law reads its own labels** (`PINWHEEL-ATLAS-20261107-001-D001`).
+  On every pinwheel tiling, the radius-2 neighbourhoods of darts in the unlabelled planar map take exactly 1,168 forms, each fixing its edge's oriented label (side types, intervals, direction), so the labels that drive the eleven-label regrowth rule are read from the bare map within radius 2. The proof closes the 193 collared tiles under the cut and cuts each of the 108 complete ones four times; at radius 1 there are 198 forms, 9 of them ambiguous.
+  [proof P001](proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/proof.md), [epic closure](proofs/PINWHEEL-ATLAS-20261107-001Z/PINWHEEL-ATLAS-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · A finite rule on knots grows the pinwheel law** (`PINWHEEL-NATIVE-20261107-001-D001`).
   Label each distinction of the pinwheel's parity law by its two knots' side types, its place along them and whether they run the same way: only eleven labels occur, and a fixed table (every knot into five, every distinction into the pieces its label names, five new distinctions per knot) regrows the law exactly at every level. No coordinate or angle enters the rule, and the only T-junctions are at midpoints of long legs.
   *Qualification pending: the rule is known in substance. Kenyon and Stephenson (Proc. Amer. Math. Soc. 147, 2019) give the pinwheel a coordinate-free subdivision rule with four-cornered tiles, the fourth corner at the long leg's midpoint. New here are the rule's form on a parity law's knots and distinctions, its eleven-label alphabet and its exact check (see the PINWHEEL-NATIVE-20261107-001 decision note).*

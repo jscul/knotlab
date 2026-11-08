@@ -105,3 +105,30 @@ wait for the next session.
 3. **Ring law.** Payoff 1: a sharpening; Concreteness 3: the covers are in hand.
 
 **Recommendation.** Research directions, none selected: the epic answered its question and the owner asked to stop for today.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 17:53 UTC and copied here verbatim.
+
+Distance without freezing is closed and published. Only the sphere reads distance without freezing at every size.
+- **Sphere (proved):** every network there gets the plain first need on time at every size. That covers loops of rings, pairs of rings sharing contacts, and the Platonic networks.
+- **Tori (complete list):** exactly 26 tori are on time. Large tori are proved to inherit the plane's failure, and the 612 smaller ones were all read exactly.
+- **First failing map:** a twisted square torus with 13 rings. Its mirror image is on time. Rule 60 runs one way round each ring, so no rule by type, genus, curvature or size can decide finite maps.
+- **Infinite tilings (computed):** with rings of m and faces of f, the first tie between shortest routes comes at lcm(m,f) − lcm/m − lcm/f + 1. This held on all 39 tilings read. Why no tie comes earlier is still unproved.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: distance without freezing | Successful | Full answer on the sphere and on tori; the first failing map and its reason |
+| Local direction: the plain first need | Research directions | Proving the tie law, and the law for rings, are open; higher-genus maps have no rule (141 of 706 on time) |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B18–B20; growing a network from a law |
+| Long-term goal: G5 Dynamics | Capability gained | We know which networks read their own distance without freezing: the sphere, and small networks below a horizon |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Prove no tie comes earlier | 2/3 | 2/3 | Count corners on the disc two tied routes enclose → proof, or a tiling with an earlier tie |
+| 2 | Which finite maps rescue late rings | 2/3 | 2/3 | Compare mirror pairs ring by ring → the wrap-around rule, or none |
+| 3 | The law for rings | 1/3 | 3/3 | Read the first late rings in tilings with triangular faces → proved, or a counterexample |
+
+**Corrections:** none to published claims. An unpublished progress note had named a 20-ring map as the first failure, and the 13-ring torus replaces it. **Goals:** a G5 checkpoint (capability gained); G5 paused for today. **Assumptions:** A41 (distance is read through freezes) was challenged and confirmed: freezing and the plain reading agree only on the sphere.
+
+Commits on main: 802b129fa (the epic), 033f7c02a (register, goals, intuition page), acb932379 (backlog). All three directions are deferred, and I've stopped for today as you asked. Nothing is left running.

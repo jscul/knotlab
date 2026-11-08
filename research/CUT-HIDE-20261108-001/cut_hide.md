@@ -72,3 +72,28 @@ Epic `CUT-HIDE-20261108-001` (program topology), 2026-11-08.
 2. **The extension** is concrete but incremental.
 3. **Another goal.** What native creation sees of a signing is now well mapped: the switching class (proved), not the count, the
    contradiction on 3-connected glues (computed), and a proved obstruction at two-vertex cuts. A fresh goal may pay more.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 17:49 UTC and copied here verbatim.
+
+Final report before the pause. CUT-HIDE is proved, closed and published (83563d6e2). The CONTRA-PROOF-S1 row is marked signed off, and I'm not starting anything new.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: why two-vertex cuts hide the contradiction | **Status:** Successful | Proved for hanging sides that are K4 minus a line; confirmed at all 16 failing lines |
+| Local direction: what native creation sees of a signing | Unresolved | The 3-connected conjecture has no proof route yet |
+| Broader exploration: reading contradiction in other families | Unmapped | Only cubic glues of 8 to 14 lines are tested |
+| Long-term goal: G4, emergence lives in handles | Obstruction learned | There's now a proved place where native creation can't read the contradiction |
+
+**The theorem:** at such a cut, the contradictory class and the class with one sign of the other cut line flipped have identical rows, and only the first ties the removed line. The hanging side has exactly one rigid class out of 8, and the contradiction is forced to use it. **Corrections:** none. **Goals:** G4 checkpoint. **Assumptions:** none.
+
+**Next step:** Research directions (paused).
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Prove the 3-connected conjecture | 2/3 | 1/3 | Paused |
+| 2 | Extend the theorem to the two six-point sides | 1/3 | 2/3 | Paused |
+| 3 | Move to another goal | 2/3 | 2/3 | Paused |
+
+**On your question:** this line is now well mapped. Native creation sees a signing's switching class (proved), but not the count. It reads the contradiction on every 3-connected glue tested (23), and provably can't across these cuts. The one remaining prize, a proof for 3-connected glues, has no route yet, so tomorrow I'd lean toward #3 unless a new idea for #1 turns up.

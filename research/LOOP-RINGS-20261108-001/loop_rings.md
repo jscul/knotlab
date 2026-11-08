@@ -105,3 +105,35 @@ Since the epic opened:
 
 **Recommendation.** Continue with direction 1. If no single-cell witness exists, look for a union of cells forced by the balance of
 positions, and stop with the size where the families first fail if they do.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 13:32 UTC and copied here verbatim.
+
+Closed loops of rings across time exist (epic e1c088e2f, shared docs f3941b70f, published).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: closed loops of rings | Successful | 2,707 of 295,056 loops keep every contact persistent while influence returns; each verdict exact |
+| Local direction: composed topology across time | Continue | Next is a proof for every size, the path theorem with feedback added |
+| Broader exploration: G5 with G1 | Known alternatives | The rule-90 mechanism (B13); restrictions (B14); distance, once you rule on counted length |
+| Long-term goal: G5 (question 4) | Capability gained | The first closed routes of contacts across time exist |
+
+- **What works:** each contact reads the chains from both neighbouring contacts, one on each ring, so every ring carries a circuit through its two contacts. The smallest is three rings of four cells.
+- **Influence returns:** in 2,659 of the persistent loops, every contact needs the rings it doesn't touch, at recurring lags (never at every lag).
+- **Sizes:** 54 families of four-ring loops persist at every size from 4 to 16, all with mixed positions (half the rings at cell 2, half at s−2). No three-ring family keeps it across sizes.
+- **Verified:** all 31 at size 4 on full state spaces.
+- **Not yet proved for every size:** the path proofs relied on influence flowing one way; here it comes back.
+
+Next step: Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Prove the four-ring loops persist at every size | 3/3 | 2/3 | Generating functions over GF(2): chains as powers of z/(1+z), the loop as a circulant system → a theorem for every size, or the size where it fails | Awaiting go-ahead |
+| 2 | The rule-90 mechanism (B13) | 2/3 | 2/3 | Parked | Backlog |
+| 3 | The gate's restrictions (B14) | 2/3 | 3/3 | Parked | Backlog |
+| 4 | Distance across time | 3/3 | 1/3 | Waits on your counted-length ruling | Deferred |
+
+**Corrections:** none. **Goals:** G5 checkpoint, capability gained. **Assumptions:** none added.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/LOOP-RINGS-20261108-001/loop_rings.md)

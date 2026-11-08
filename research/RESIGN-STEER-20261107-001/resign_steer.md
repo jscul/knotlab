@@ -144,3 +144,36 @@ A27 added.
 4. **The force as a theorem.** It would turn conclusion 6 into a statement with proof, a refinement of a known electrostatic
    picture (Ciucu) on a closed polyhedral surface.
 5. **A note.** It would make theorem 3, the one result with no overlap found, independently reviewable.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 06:08 UTC and copied here verbatim.
+
+B2 is done and published as epic RESIGN-STEER-20261107-001, and everything the backlog entry asked is now answered.
+
+- **Rationalizing always works.** One sign change at the knot sphere's forced dissonance moves it out of the state and into the law, as two even faces that can sit anywhere. This is proved for every simplicial sphere.
+- **Learning steers it.** With the state held fixed, sign changes made only where the dissonance sits carry it to any line.
+- **The untrained law has no favourite line.** Every line carries the dissonance in exactly as many least-dissonance states. I found no prior work for this count or its closed form.
+
+In your terms, the point is the forced dissonance and its strength is an index no change of state can alter. Rationalizing splits it into two half-charges in the law. A local rule steering one half reached 2,399 of 2,400 targets. The two halves push each other away like equal charges, with the state count growing as distance^0.5. A learner that keeps the most states parked both halves on the sphere's corners in all 150 runs.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — steering the forced dissonance by re-signing (B2) | **Status:** Successful | Re-signing always moves it into the law and carries it anywhere |
+| Local direction — steering on the knot sphere | Practically exhausted | Everything asked is settled; the force is fitted, not proved |
+| Broader exploration — G15's open parts | Known alternatives | Handles (B6), many points (B3), layers |
+| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | Point, strength, rationalizing and steering now have proved forms |
+
+**Corrections:** none. **Goals:** G15 checkpoint, capability gained; B2 marked taken, B3 updated, B6 parked. **Assumptions:** A21 confirmed on the sphere: a sign change that leaves the even faces in place is a change of state in disguise. Two entries added: A26 (the learner acts only at the dissonance while the state holds still) and A27 (a law is weighed by how many states it allows). A20 gets a history line.
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Learning in handles (B6) | 2/3 — Substantial | 2/3 — Testable | Winding walks on the Fano and thin even tori → every dissonance forced by the sign class removed, or one that can't be | Selected · awaiting go-ahead |
+| 2 | Many points at once (B3) | 2/3 — Substantial | 2/3 — Testable | Two pairs of halves updated in every order → order-free, or a scheduler is needed | Alternative · deferred |
+| 3 | Layers through a naming knot | 2/3 — Substantial | 1/3 — Stated | A two-level network joined by a parity knot → a point crosses levels, or can't | Alternative · deferred |
+| 4 | The force as a theorem | 1/3 — Incremental | 2/3 — Testable | Two-hole asymptotics → exponent 1/2 proved, or a gap | Alternative · deferred |
+| 5 | A note on the uniform count | 1/3 — Incremental | 3/3 — Ready | The count theorem with a replay → a short note | Alternative · deferred |
+
+B6 asks whether learning can hold something no change of state can. On the sphere it can't, but on a torus a walk around a handle changes the sign class. I've parked it under your wrap-up request; say go and I'll start it.

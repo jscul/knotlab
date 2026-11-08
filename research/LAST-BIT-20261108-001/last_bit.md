@@ -104,3 +104,30 @@ Carried from earlier epics:
 2. **Distance 4.** It would show whether the defects die; it is ready but slow (hours in the background).
 3. **Pause.** The program's G1 question has its main answer from this line already: roundness in the plane costs non-local hidden
    information, and one bit per tile almost never suffices.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 10:59 UTC and copied here verbatim.
+
+**Result: the last one-bit decoration (10101/00110) is still open, and both tools have hit their limit.** Neither finds a crystal that gets past it, and neither proves it forces the pinwheel. [Decision note](https://github.com/jscul/knotlab/blob/main/research/LAST-BIT-20261108-001/last_bit.md).
+- **Deeper crystals:** none. Across all 96,416 domino-torus planes, every collar type becomes a pinwheel collar after one or two cuts or never by three, so this family has no crystals that need exactly three cuts.
+- **Forcing on geometry alone:** stalls at the first step. Parent labels are forced, but 153 parent collars that aren't pinwheel collars survive extension two tiles out at the parent level, and 15 of 16 sampled survive three.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: settle the last decoration | **Status:** Inconclusive | No crystal found; forcing proof stalls |
+| Local direction: one-bit decorated laws | Unresolved | One open case; both tools at their limit |
+| Broader exploration: G1 lines | Known alternatives | Two bits (B8); edge labels |
+| Long-term goal: G1 Space from a law | No demonstrated advance | The open case stays open |
+
+**Corrections:** none. **Goals:** G1 checkpoint. **Assumptions:** none added. Both long runs are folded in.
+
+**Next step:** Research directions, selected: #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Build a crystal directly from the surviving parent collars (torus search one level up) | 2/3 | 2/3 | Selected, awaiting go-ahead |
+| 2 | Extension to distance 4 on all survivors (hours, in the background) | 1/3 | 3/3 | Alternative |
+| 3 | Pause the one-bit line | 1/3 | 3/3 | Alternative |
+
+#3 is a reasonable choice: the main G1 answer from this line already holds. In the plane, roundness costs hidden information that no bounded window of the tiling holds, and one bit per tile almost never suffices.

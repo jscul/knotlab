@@ -100,3 +100,31 @@ the stop rule resumes this line only on a sharper target, and the thread cap was
    - **Status.** Parked as B15 on 2026-11-08: the coordinator judged it not the sharper target the stop rule asks for.
 2. **Edge labels.** Tests whether the count depends on where the bits sit; the edge substitution must be defined first.
 3. **Hub chains.** A hub network has a natural count, but the grid it lives on is drawn, so the payoff is small.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 17:03 UTC and copied here verbatim.
+
+Two bits per tile is closed and published (318f38a99). The line now pauses under its frozen stop rule.
+
+- **Census:** a known crystal gets through 136,415 of the 139,656 product classes, so those fail. No crystal we tried gets through the other 3,241.
+- **Forcing test on 12 of the 3,241:** every parent's labels are forced, but local consistency leaves off-law parents in all 12, and the bounded torus searches found no crystal. One product, 01101/10001 × 10001/00010, has only label defects left; no geometric defects survive.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: two bits as products | **Status:** Inconclusive | 3,241 classes shut out every crystal tried; forcing stalls on a sample |
+| Local direction: pinwheel decorations | Paused (stop rule) | resumes only on a sharper target |
+| Broader: G1 lines | Known alternatives | edge labels, hub chains |
+| G1 Space from a law | No demonstrated advance | the price of roundness stays above one bit; two is open |
+
+**Corrections:** one, not a block (the summaries used "escape" backwards, 716140ec5). **Goals:** G1 checkpoint added. **Assumptions:** none added.
+
+**Next step:** Research directions, selected #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Forcing route on the label-only survivor (joint test and extension on its 209 off-law collars) | 2/3 | 2/3 | Selected · awaiting go-ahead |
+| 2 | Edge labels, as in Radin's rules (A35) | 2/3 | 1/3 | Deferred |
+| 3 | Hub chains in two dimensions (A39) | 1/3 | 2/3 | Deferred |
+
+Operational note: the first forcing-test runs used about 59 GB and were killed by the out-of-memory killer, probably causing the earlier session restart. Heavy jobs now run under a 16 GB cap, and the final run stayed under 1 GB.

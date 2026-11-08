@@ -105,3 +105,35 @@ gained). **Assumptions:** none added.
 
 **Recommendation.** Continue with direction 1. If no balance condition makes the feedback cancel for five rings, record that loops
 of more than four rings need a different argument and pause the line for the owner's ruling on distance.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 14:11 UTC and copied here verbatim.
+
+The four-ring loop proof is done and published (epic 5a702b939, shared docs 408a1ce86). In a balanced loop, the influence coming back round cancels in pairs, mod 2, so every contact keeps both of its rings at every lag, at every ring size. Balanced means two contacts at cell 2 and two at cell s−2.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the four-ring loops at every size | Successful | Proved for balanced loops; where it stops is recorded |
+| Local direction: composed topology across time | Continue | Next are loops of more rings, where the two ways round no longer meet at one opposite contact |
+| Broader exploration: G5 with G1 | Known alternatives | The 38 families outside the proof; the rule-90 mechanism (B13); restrictions (B14); distance, once you rule |
+| Long-term goal: G5 (question 4) | Capability gained | Closed routes of contacts across time hold at every size, by proof, when balanced |
+
+- **Why it works:** going round the loop to the opposite contact, the two ways have chain lengths that agree exactly when the loop is balanced. The two contributions are then the same power of z/(1+z) and cancel mod 2. So balance is a property of the whole loop, which is why every family that held across sizes mixed its positions.
+- **Influence still returns:** each contact needs the two rings it doesn't touch at lags where a binomial coefficient is odd.
+- **Checked:** 516,672 lags at sizes 4 to 30, plus full state spaces.
+- **Where it stops:** the proof covers 16 of the 54 families. In 26, a contact's partner is also the end of a chain another contact reads. In 12, a contact reads only one partner and feeds back into itself. Those still persist computationally, but this argument doesn't track them. Unbalanced loops keep their feedback, and none of them persists.
+- **One claim narrowed:** the checklist first said unbalanced loops "fail at every size". In fact 236 of 260 fail and 24, at sizes 25 to 29, stayed undecided. None persists. It was fixed before anything was recorded.
+
+Next step: Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Balanced loops of any number of rings | 3/3 | 2/3 | Find when feedback cancels in an r-ring loop; check r = 5 to 8 at sizes 4 to 16 → a theorem for every r, or the first r with no persistent balanced loop | Awaiting go-ahead |
+| 2 | The 38 families outside the proof | 2/3 | 2/3 | Track the union of witness cells → a proof, or a size where they fail | Alternative |
+| 3 | The rule-90 mechanism (B13) | 2/3 | 2/3 | Parked | Backlog |
+| 4 | Distance across time | 3/3 | 1/3 | Waits on your counted-length ruling | Deferred |
+
+**Corrections:** none logged. **Goals:** G5 checkpoint, capability gained. **Assumptions:** none added.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/LOOP-PROOF-20261108-001/loop_proof.md)

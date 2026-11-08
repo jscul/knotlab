@@ -118,3 +118,28 @@ no goal change. **Assumptions:** A35 added; a history line on A25 (hidden inform
 3. **A note.**
    - **Payoff 1.** It makes both epics checkable by outside readers.
    - **Concreteness 3.** Everything is in hand.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 09:46 UTC and copied here verbatim.
+
+**Result: roundness in the plane needs hidden information that no bounded window of the tiling holds, and one hidden bit per tile usually isn't enough.** Labels that are read from the tiling never help, because the cut crystals still pass. Of the 1,024 ways a decorated substitution can place one bit per tile, 1,008 still let a periodic plane through at every radius. In the other 16 the bit already pins down every parent's label, but my consistency test can't yet say whether any of them forces the pinwheel. Published: [decision note](https://github.com/jscul/knotlab/blob/main/research/ROUND-PRICE-20261108-001/round_price.md).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: one hidden bit per tile | **Status:** Partially successful | 1,008 of 1,024 fail; 16 open |
+| Local direction: one-bit decorated laws | Continue | 16 candidates, parent labels forced |
+| Broader exploration: G1 lines | Known alternatives | Edge labels, spheres, growth |
+| Long-term goal: G1 Space from a law | Capability gained | The plane's price of roundness has a lower bound and has been tested at one bit |
+
+**Corrections:** two, both not-a-block and logged. Folding in the larger-tori census found 16 more crystals that pass after one cut, so "only the rhombus lattice" was narrowed. A follow-up wording fix: those 16 are brick rows, not grids. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A35 added (hidden information is counted as labels a decorated substitution sets).
+
+**Next step:** Continue, selected: #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Settle the 16: a joint consistency test, then search for an escaping crystal | 2/3 | 2/3 | Selected, awaiting go-ahead |
+| 2 | Two bits per tile, sampled | 1/3 | 1/3 | Alternative |
+| 3 | A note for outside readers covering both epics | 1/3 | 3/3 | Alternative |
+
+If one of the 16 does force the pinwheel, the plane's price would be one bit per tile, matching the sphere's one bit per incidence.

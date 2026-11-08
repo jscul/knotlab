@@ -91,3 +91,31 @@ Epic `CONTRA-PROOF-20261108-001` (program topology), 2026-11-08.
    the classes that silence and degeneracy leave.
 3. **More glues.** Larger random 3-connected glues could break the refined conjecture; a class without solutions is rare among
    them (3 of 800 at 10 lines), so the draw is slow but ready.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 17:14 UTC and copied here verbatim.
+
+CONTRA-PROOF is closed and published (4d8caff8f). The general statement turned out to be false, so the proof attempt became a refinement.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: prove that one row reads the removed line's tie | **Status:** Partially successful | False in general; refined to 3-connected glues, with a proved local lemma |
+| Local direction: what native creation sees of a signing | Continue | The cut boundary is concrete and testable |
+| Broader exploration: reading contradiction in other families | Unmapped | Only cubic glues of 8 to 14 lines tested |
+| Long-term goal: G4, emergence lives in handles | Obstruction learned | Creation can't read the contradiction across a two-vertex cut |
+
+- **What I found:** on 19 random glues, one row fails to read the tie exactly at the 16 lines that lie in a two-vertex cut. Every such cut has a rigid side: K4 minus a line. The reading holds on all 18 glues without such cuts, the trisum glues included.
+- **Corrections (2, published):**
+  - **Narrowing:** CONTRA-READ's reading in the intuition doc didn't name its family. It's now limited to 3-connected glues.
+  - **Not a block:** I reported to you that K4 stays silent under the tie on 26 glues, but I had checked only 21. It fails on a 12-line trisum glue.
+- **Goals:** G4 checkpoint, obstruction learned. **Assumptions:** none.
+- **Stress test:** the 14-line trisum glues are running in the background. Three of five pass so far.
+
+**Next step:** Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Why two-vertex cuts hide the tie | 2/3 | 2/3 | Analyse the K4-minus-a-line side under its 8 cycle signings → a rigidity lemma, or a cut whose row reads | Selected |
+| 2 | Prove the refined conjecture for 3-connected glues | 2/3 | 1/3 | Find which entries separate the tied class where K4 creates → a lemma | Deferred |
+| 3 | Larger random 3-connected glues | 1/3 | 3/3 | Draw glues of 11 and 12 lines → a failure, or more support | Deferred |

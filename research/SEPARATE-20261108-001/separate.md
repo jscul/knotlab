@@ -114,3 +114,40 @@ Since the epic opened:
 
 **Recommendation.** Continue with direction 1, and put the counted-length question to the owner through the coordinator, since it
 gates distance, the order's next step.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 13:24 UTC and copied here verbatim.
+
+Native separation across time is proved and published (epic ceb1a1315, shared docs 224b7a0c5).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: native separation across time | Successful | A cut separates a proved path at every lag; a cycle of four rings needs one cut per route |
+| Local direction: composed topology across time | Continue | Next are closed loops, where influence returns to where it started |
+| Broader exploration: G5 with G1 | Known alternatives | The rule-90 mechanism (B13); the gate's restrictions (B14); distance, once you rule on counted length |
+| Long-term goal: G5 (question 4) | Capability gained | Adjacency, native paths and separation now all exist across time in one substrate |
+
+- **Paths:** freeze any one contact and the far contact never needs the first ring again, while every other contact keeps persisting. A contact's dependence is the parity of the chains of reads leading to a cell, and the cut removes them all.
+- **Cycles:** four rings in a cycle with two routes from R0 to R2. One cut removes just its own route's lags; one cut on each route separates them. The smallest separating cut equals the number of routes (Menger).
+- **The laws decide the routes:** orient the same four contacts round the cycle and a single cut separates.
+- **Checked:** 1,686 paths, 636 cycles and 272 full-state-space readings, with no failures.
+
+Next step: Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Closed loops of rings across time | 3/3 | 2/3 | Make the first contact also read the chain coming back from the last, so influence circles to its source; test persistence at sizes 4 to 12, then prove it or find where it fails | Awaiting go-ahead |
+| 2 | The rule-90 mechanism (B13) | 2/3 | 2/3 | Parked | Backlog |
+| 3 | The gate's restrictions under A37 (B14) | 2/3 | 3/3 | Parked | Backlog |
+| 4 | Distance across time | 3/3 | 1/3 | Waits on your ruling on counted length as a native magnitude | Deferred |
+
+**Corrections:** none for this epic.
+**Goals:** G5 checkpoint, capability gained.
+**Assumptions:** A38 added: a contact is cut by freezing it.
+
+**Decision for you:** distance is the program's next step after separation. It needs your ruling on whether counted length (contacts or lags along a route) counts as a native magnitude. That question has been pending for a while.
+
+**My mistake, already fixed:** I staged the whole assumptions file and swept in another thread's unfinished edits. Both threads also took the number A38, so the register briefly had two A38s and publishing failed. That thread renumbered its entry to A39 (8e745d63d), and publishing works again. From now on I'll stage only my own changes.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/SEPARATE-20261108-001/separate.md)

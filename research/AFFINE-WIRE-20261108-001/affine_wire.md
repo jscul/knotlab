@@ -119,3 +119,30 @@ Carried from earlier epics:
 2. **The pulse law.** Carried.
 3. **Nonlinear persistent composition.** No method yet beyond search.
 4. **Learning a rule from its knots.** Carried.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 09:53 UTC and copied here verbatim.
+
+A positive result: a persistent native network across time exists. Your stop condition, forced gaps, is not met. I searched 9.2 million affine chains, letting each ring have its own rule and each contact its own law. In 2,376 of them both contacts persist and the far contact needs both end rings' pasts at every lag once they can reach it. In 430 the middle ring carries the signal across its own cells. The smallest is rule 150 on rings of 3, 5 and 3 cells, verified on its full state space and with knotlab. [Decision note](https://github.com/jscul/knotlab/blob/main/research/AFFINE-WIRE-20261108-001/affine_wire.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Successful | Persistent composition found and verified |
+| Local direction | Continue | Paths of more contacts, and the gate's restrictions, are open |
+| G5 Dynamics (question 4) | Capability gained | A persistent native network across time, on affine substrates |
+
+**Next step:** Continue, with #1 selected.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Native paths across time: four rings, three contacts | 3/3 | 2/3 | Selected, not started |
+| 2 | The pulse law of affine chains | 2/3 | 2/3 | Deferred |
+| 3 | Persistent composition on nonlinear substrates | 2/3 | 1/3 | Deferred |
+| 4 | Learning a rule from its knots (G16) | 2/3 | 1/3 | Deferred |
+
+**Corrections:** one, a Narrowing. My two earlier epics said persistent contacts "never compose" and that persistent composition "remains absent". That was true only for chains with one rule and one law throughout, and mixed chains do compose ([history](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** a G5 checkpoint.
+**Assumptions:** none changed.
+
+Say if you want me to start native paths.

@@ -128,3 +128,28 @@ Carried from earlier epics:
    - **Concreteness 1.** No method yet.
 3. **Saturation.** SHARED-CONTACT-S1 found the growth levelling off at 9 + 10 cells.
 4. **Learning a rule from its knots.** Carried.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 08:41 UTC and copied here verbatim.
+
+Which shared contacts persist is closed and published. It reverses the previous epic's headline. A contact that is a cell of both rings looked rare to persist because the rings were small. From rings of 3 + 4 cells to 8 + 9 the share that binds both rings at every lag rises from 1% to 20%, and to 26% when the contact ignores its own value. So the full contact gate can pass across time with the contact inside both loops. [Decision note](https://github.com/jscul/knotlab/blob/main/research/SHARED-CONTACT-20261108-001/shared_contact.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Successful | First step decided exactly; persistence grows with ring size |
+| Local direction | Continue | One contact passes the gate; composing two is the open step |
+| G5 Dynamics (question 4) | Capability gained | The full contact gate passes across time |
+
+**Next step:** Continue, with #1 starting.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Two contacts across time: three rings in a chain | 3/3 | 2/3 | Starting |
+| 2 | Why some rules persist | 2/3 | 1/3 | Deferred |
+| 3 | Does persistence saturate? | 1/3 | 3/3 | Running in the background (9 + 10 cells) |
+| 4 | Learning a rule from its knots (G16) | 2/3 | 1/3 | Deferred |
+
+**Corrections:** none in this epic. Separately, the collar-plane thread narrowed my growth-as-a-law epic: Dworkin and Shieh's theorem doesn't explain the pinwheel's dead ends, because its local laws aren't aperiodic.
+**Goals:** a G5 checkpoint.
+**Assumptions:** A31 (a shared contact combines its rings' proposals) is now confirmed.

@@ -98,3 +98,38 @@ question 9's "grow" is a growth rule whose closed outputs are exactly the K_m.
 3. **GC(k, l).** Payoff 1: the chiral octahedra are a refinement. Concreteness 2: the slope's period suggests a counter with O(k + l)
    states.
 4. **Write-up.** Payoff 1: it makes the result reviewable without changing it. Concreteness 3: everything is in hand.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 02:06 UTC and copied here verbatim.
+
+**Step (i) is done and published.** A local law can place the six digons itself, but only with hidden information.
+
+- **Without hidden states it can't.** Every small neighbourhood of a long capped tube already occurs in the round knot sphere K_m. So any law that allows K_m also allows the tubes, and their contradictions are easy: resolution width stays at 4m + 1 however long the tube gets.
+- **With one hidden bit per incidence it can.** The bit marks straight "seams": all four incidences of a digon are seams, and a co-line of three points has none or one opposite pair. Then the law's spheres are exactly the K_m, at every size, each with a single marking. So every one of them carries the hard contradiction (width Θ(√n), size 2^Θ(√n)). The proof is that the seams cut any such sphere into eight equal flat triangles forming an octahedron.
+- **What's still open is growth.** A growth rule without branching grows at most one surface, so only the size is left free. A local process that actually builds K_m isn't constructed yet.
+
+Everything is in the [decision note](https://github.com/jscul/knotlab/blob/main/research/SPHERE-GROWTH-20261107-001/sphere_growth.md) and the [proof](https://github.com/jscul/knotlab/blob/main/proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/proof.md). The commits are 4fb88a838 for the epic and 3cecf9bf2 for the intuition entry, and the 9 checks pass and reproduce. I also wrote the memory note UNIFORM-FANO was missing.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — can a local law place the six digons itself? | **Status:** Successful | Not without hidden states; with one bit, exactly the round knot spheres |
+| Local direction — laws that lay out their own sphere | Continue | The growth half is open |
+| Broader exploration — question 9's space line | Known alternatives | Self-built surfaces, rulers, open-end growth, circles, pinwheel |
+| Long-term goal — question 9 and hardness at three places | Capability gained | One hidden bit lays out the round sphere and its hard contradiction |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Grow K_m by a local process | 2/3 — Substantial | 2/3 — Testable | Ring-by-ring growth from a digon, seams as signals → closes into K_m at every size, or a synchronization obstruction | Selected · awaiting go-ahead |
+| 2 | Seams as a native knot | 2/3 — Substantial | 1/3 — Stated | Write S1 and S2 as relations, run K1–K3 → a verdict | Alternative · deferred |
+| 3 | Goldberg–Coxeter octahedra | 1/3 — Incremental | 2/3 — Testable | Slanted seams with O(k + l) states → a law per family, or an obstruction | Alternative · deferred |
+| 4 | Write up the round-sphere results | 1/3 — Incremental | 3/3 — Ready | A short note with a replay → reviewed note | Alternative · deferred |
+
+1. Growing K_m would finish question 9's "a law that grows its own sphere", whose law half is now proved. The target is precise, and the obstacle is named: twelve seams must reach the same length. Rings around a digon stay squares out to distance m, which might keep them in step. The main uncertainty is whether that needs unbounded state, the way growing squares by self-assembly does.
+2. This would tie laying out space back to the foundation, but its variables and relation aren't fixed yet.
+3. This extends the result to the chiral octahedra, a refinement.
+4. This makes the result reviewable without changing it.
+
+Say go and I'll start #1 as a fresh epic.

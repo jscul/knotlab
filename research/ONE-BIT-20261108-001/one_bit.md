@@ -109,3 +109,28 @@ Concreteness 1/3); no goal change. **Assumptions:** none added; A35 relied on.
    - **Status.** Bound: one epic. Not started: the coordinator decides.
 2. **Two bits.** The coordinator sent it to the backlog (B8 in `docs/RESEARCH_GOALS.md`).
 3. **Edge labels.** It tests A35's measure, the way Radin's rules count.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 10:14 UTC and copied here verbatim.
+
+**Result: one hidden bit per tile, placed by a decorated substitution, fails to force the pinwheel in 1,022 of 1,024 cases. Exactly one decoration survives everything tried: s(0) = 10101, s(1) = 00110 (and the same with the labels swapped).** The joint consistency test is sound but settled none of the 16. A crystal search over all 96,416 domino-torus planes found a mixed 4×4 tiling, legal after two cuts, that lets 14 of them through. The outside-readers note is out too: [The pinwheel tilings have no undecorated local rules](https://github.com/jscul/knotlab/tree/main/notes/pinwheel-local-rules) (5 pages, with an independent replay). [Decision note](https://github.com/jscul/knotlab/blob/main/research/ONE-BIT-20261108-001/one_bit.md).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: settle the sixteen | **Status:** Partially successful | 14 fail; 1 (2 with relabelling) open |
+| Local direction: one-bit decorated laws | Continue | A single candidate remains |
+| Broader exploration: G1 lines | Known alternatives | Two bits (backlog B8); edge labels |
+| Long-term goal: G1 Space from a law | Capability gained | For decorated substitutions, roundness in the plane costs at least one bit per tile; the one remaining one-bit candidate is untested |
+
+**Corrections:** none. **Goals:** G1 checkpoint; backlog B8 (two bits per tile, Payoff 1/3, Concreteness 1/3) parked as asked. **Assumptions:** none added; history line on A35.
+
+**Next step:** Continue, selected: #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | The last decoration: deeper crystals, then a forcing test on geometry alone | 2/3 | 2/3 | Selected, awaiting go-ahead |
+| 2 | Two bits per tile (B8) | 1/3 | 1/3 | Alternative |
+| 3 | Edge labels, as in Radin's rules | 1/3 | 1/3 | Alternative |
+
+If that last decoration does force the pinwheel, one bit per tile is the plane's price of roundness.

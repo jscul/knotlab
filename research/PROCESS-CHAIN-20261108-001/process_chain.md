@@ -139,3 +139,30 @@ that composes, not a continuation of the census.
 **Recommendation.** Research directions. Directions 1 and 2 are bounded searches. Stop the process line after them if neither finds a
 native composition law, and reassess G5 against the owner's question 4, which the line has answered for one process and for one
 contact.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 09:08 UTC and copied here verbatim.
+
+Two contacts across time is closed and published, and it's a negative result. I chained three rings A–B–C with two shared contacts. In none of the 182 chains where both contacts persist does the chain bind its two end rings at every lag. One size larger, with the contacts placed off-centre, none of 198 does either. Some chains do bind their ends, but only at recurring lags (195 chains), and those always lose a contact's persistence. Persistence and composition didn't coexist. [Decision note](https://github.com/jscul/knotlab/blob/main/research/PROCESS-CHAIN-20261108-001/process_chain.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Negative evidence | No persistent chain composes, one size past included |
+| Local direction | Research directions | Composition is only intermittent here |
+| G5 Dynamics (question 4) | Obstruction learned | Across time, persistence and composition did not coexist |
+
+**Next step:** Research directions.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Intermittent networks: is composition at recurring lags a native law? | 2/3 | 3/3 | Deferred |
+| 2 | A middle ring that carries a contact's past without cancelling it | 3/3 | 1/3 | Deferred |
+| 3 | Why some rules persist | 2/3 | 1/3 | Deferred |
+| 4 | Learning a rule from its knots (G16) | 2/3 | 1/3 | Deferred |
+
+**Corrections:** none.
+**Goals:** a G5 checkpoint (obstruction learned); G5 is now idle.
+**Assumptions:** A34 added: a chain composes when its far contact binds the ends at every lag. Its alternative, recurring lags, is already measured.
+
+The 9 + 10 saturation run is folded in: persistence levels off at about 22% and 27%. I've paused the line here. Say if you'd like me to run direction 1 or 2, or stop the process line.

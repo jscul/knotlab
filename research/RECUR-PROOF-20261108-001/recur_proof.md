@@ -121,3 +121,36 @@ added; a history line on A37.
 
 **Recommendation.** Continue. Direction 1 is backlog B12, which the coordinator holds for its own thread; hand it the proved
 families with the formula. If this thread continues on its own, take direction 3, then direction 2.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 13:13 UTC and copied here verbatim.
+
+The proof landed. Epic cb5d34f0b and shared docs 81aefd4fe are published. Paths whose rings run rule 60 or 102, with contacts two apart, compose at recurring lags with every contact persistent, at every ring size and every length.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a proof for every ring size | Successful | Proved for all 64 two-apart families at every ring size s ≥ 4 and every length; rule 102 by mirror symmetry |
+| Local direction: networks across time | Continue | A family that is proved to survive growth is in hand, so separation can be built on it |
+| Broader exploration: G5 with G1 | Known alternatives | The rule-90 families' mechanism; the gate's restrictions; nonlinear paths (B10) |
+| Long-term goal: G5 (question 4) | Capability gained | Native networks across time of every length and ring size exist, by proof, under A37 |
+
+- **Why it works.** Each contact reads two neighbours that read only it and themselves. Their sum never changes, so the contact depends on both of them at every lag.
+- **Where composition happens.** The far contact needs the first ring exactly when C(T−3, m) is odd, with m = 2, s−2 or 2s−6. With n rings the condition is C(T−(n−1), e) odd. By Lucas' theorem that's a recurring set of lags, never all of them.
+- **Checked:** 1,007,778 lags against exact row sequences (sizes 4 to 40, lengths 3 to 10), and full state spaces at the smallest sizes.
+- **Not covered:** the rule-90 families. Their contacts lack the two read-back neighbours, and their shares, like 1/3, aren't powers of two. They still hold computationally out to 20 rings.
+
+Next step: Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Native separation and cycles of rings on the proved families (B12) | 3/3 | 3/3 | Cut a contact and use the formula to show the far contact stops needing the first ring; then close four rings into a cycle | For its own thread |
+| 2 | Why the rule-90 families compose at recurring lags | 2/3 | 2/3 | Read their rows mod x^5 − 1 and explain the share 1/3 | Alternative |
+| 3 | The gate's restrictions under A37 | 2/3 | 3/3 | Restrict the proved families and recheck | Alternative |
+| 4 | Nonlinear paths at recurring lags (B10) | 2/3 | 1/3 | Parked | Backlog |
+
+**Corrections:** one, not a block. The recurring-lag census listed each two-apart family four times. The right counts are 64 (not 256), 260 in all (not 452), and 4,096 (not 16,384) with contacts binding only at composing lags. Every verdict and the overturn of A34 stand ([knotlab HISTORY](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** G5 checkpoint, capability gained.
+**Assumptions:** none added; A37 gets a history line for the proof. A34's register entry records the pre-registered rule it was overturned by. The every-lag control slip is in RECUR-PATH's verification section.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/RECUR-PROOF-20261108-001/recur_proof.md)

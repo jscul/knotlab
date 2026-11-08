@@ -96,3 +96,34 @@ Since the epic opened:
 4. **Dynamics-driven growth.** Open-ended.
 
 **Recommendation.** Research directions, leaning to direction 1, the coordinator's ready fallback.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 17:04 UTC and copied here verbatim.
+
+**Higher genus by bands hit the wall: the second band is where every band fails for genus 2, and "one band per handle" does not extend.** These are exact census results, not theorems. Epic and docs are committed and published (ee7bda38b, a517094f0).
+
+- **The genus-2 starting points.** The 20 balanced genus-2 first bands on loops of 5 are exactly those with 2 or 3 "twisted" columns (both rings of the column reversed). None of them has the half-turn symmetry.
+- **Second bands fail.** I tried 770,520 second bands in four families: subdivide every rung by a new loop, stack a loop by single rungs, stack by double rungs, join to both rows. None keeps any genus-2 base balanced.
+- **No second handle on the torus.** On the n×2 tori (n = 3 to 5) I tried 1,974,904 second bands. The only balanced one is the torus band rule, which keeps genus 1. Every way of joining a band twice on the 3×2 torus fails, all 1,728,000 of them.
+- **Reading.** One band makes the torus, and later bands only grow it. The genus-2 first bands are balanced by an accident of parity that any further band breaks, while the torus keeps a half-turn at every contact. No lag cutoffs; only the families named above are covered.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: higher genus by bands | Successful (stop rule's second outcome) | Every second band fails for genus 2; none adds a handle |
+| Local direction: growth from a law | Pivot within the line | Bands make and grow only the torus; higher genus needs other moves |
+| Broader exploration: G1 with G5 | Known alternatives | Full-reach proof (ready); which lattices compose (ready); band pairs as handles |
+| Long-term goal: G1 Space from a law | Obstruction learned | A band law makes the torus, but no higher-genus surface in the families tried |
+
+**Next step:** Research directions, leaning to #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Prove full reach on the cut-open torus | 2/3 | 3/3 | Images of the doubled torus and the powers of two → a proof, or the first failing side | Deferred |
+| 2 | Which lattices compose everywhere | 2/3 | 3/3 | Rectangular, triangular, honeycomb tori → a characterisation or counterexample | Deferred |
+| 3 | Handles glued from two bands at once | 2/3 | 1/3 | Glue a band pair across the n×m torus as a handle → a balanced genus-2 network, or none | Deferred |
+| 4 | Growth chosen by the dynamics | 2/3 | 1/3 | Let a contact's needs pick where the next band goes | Deferred |
+
+**Corrections:** none. **Goals:** G1 checkpoint with G5 (obstruction learned). **Assumptions:** none added.
+
+This is the line's 21st epic today. The band line has reached its wall, so #1, your earlier fallback, is the natural next step, or a pause.

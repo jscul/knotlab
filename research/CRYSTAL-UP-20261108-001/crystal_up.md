@@ -114,3 +114,31 @@ completed under it).
 3. **Edge labels.** Tests whether the count depends on where the bits sit; the edge substitution must be defined first.
 4. **Dimension three.** One-bit laws on triangulations are classified (counting and one twist); beyond them classical answers are
    expected.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 13:09 UTC and copied here verbatim.
+
+The crystal held up, so the one-bit question is settled: **one hidden bit per tile never forces the pinwheel.** All 1,024 one-bit decorations admit a crystal at every radius.
+
+The last decoration (10101 / 00110) falls to 26 periodic parent tilings built from its surviving parent collars. The smallest has 8 tiles per period, half of them turned by twice the pinwheel angle from the other half. A separate check on the note's standalone replay code confirms every crystal and the 14 earlier escapes. The epic is committed and published (5511f9673, 3ca271028).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a crystal for the last decoration | **Status:** Successful | 26 crystals, 8 to 40 tiles |
+| Local direction: one-bit decorations | Practically exhausted | all 1,024 fail |
+| Broader: G1 lines | Known alternatives | two bits, edge labels, A12 |
+| G1 Space from a law | Obstruction learned | one bit per tile is not enough for roundness |
+
+**Corrections:** one, not a block. The last epic's forcing route also needed the 50 off-law pinwheel collars to die. **Goals:** G1 checkpoint added, and backlog B8 (two bits) is re-rated to Payoff 2/3. **Assumptions:** A35 has a new history line, and A12 is now under challenge.
+
+**Next step:** Research directions, selected #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Is bond distance the only native spacing? (A12, backlog B4) | 2/3 | 3/3 | Selected · starting now |
+| 2 | Two bits per tile (B8) | 2/3 | 1/3 | Deferred |
+| 3 | Edge labels, as in Radin's rules (A35) | 2/3 | 1/3 | Deferred |
+| 4 | Dimension three on crystallizations (G2) | 1/3 | 1/3 | Deferred |
+
+I'm starting #1 as `BOND-CHAIN-20261108-001`. Its first step is a short matroid argument on parity laws, then the non-matroidal laws we already have.

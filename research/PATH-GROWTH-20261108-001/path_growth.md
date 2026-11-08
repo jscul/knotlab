@@ -126,3 +126,35 @@ under challenge.
 **Recommendation.** Research directions: take direction 1. If no family composes at recurring lags at every size either, record
 composition across time as tied to sizes under both readings, and reassess G5 against question 4 before opening more of the
 process line.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 12:35 UTC and copied here verbatim.
+
+PATH-GROWTH is closed and published (epic c2f64bcee, shared docs 76b403cda). No native path survives growth, so by the stop rule A34 is now under challenge. Both long runs are folded in, nothing is pending.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: native paths that survive growth | Negative evidence | No family with one rule per ring is native at two sizes; native paths sit at nine isolated shapes |
+| Local direction: paths across time | Research directions | Under A34 composition never transports, so A34 is now under challenge |
+| Broader exploration: G5 with G1 | Known alternatives | Separation and cycles of rings (B12, its own thread); hybrid rings that grow; nonlinear paths |
+| Long-term goal: G5 (question 4) | Obstruction learned | Composed topology across time exists, but only at isolated sizes when composition means every lag |
+
+- **Equal rings have no native path at all.** With all four rings at 3, 4 or 5 cells, none of 36.9 million paths is native. The longer families that are native at four rings all fail at five.
+- **Growth breaks composition, not memory.** Paths whose contacts all persist exist at every size, mostly with short cycles, and none of them composes.
+- **The native paths sit at isolated shapes.** In the map they sit at 3/5/5/3, 5/6/6/5 and 4/7/7/5. With rule 150 on every ring there are five more, such as 6/5/5/6. No family is native at two shapes, and none of the 128 survives one more cell. All are affine again, and the smallest at each new shape is verified on its full state space.
+
+Next step: Research directions, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Challenge A34: composition at recurring lags across sizes | 3/3 | 3/3 | Extend INTERMITTENT-NET's recurring-lag test (phase fixed by the path) to four-ring paths and run it on the growth families → a family composing that way at every size, or none (then composition across time is size-specific under both readings) | Awaiting go-ahead |
+| 2 | Native separation and cycles of rings (B12) | 3/3 | 2/3 | Parked for its own thread; data in `native_paths.json` | Backlog |
+| 3 | Hybrid rings that grow | 2/3 | 2/3 | Hybrid middle rings with a repeating cell pattern, grown with the ring | Alternative |
+| 4 | Why composition sits at these shapes | 2/3 | 1/3 | Relate the shapes to how the rings' polynomials factor over GF(2) | Alternative |
+
+**Corrections:** two. (1) Narrowing: NATIVE-PATH found no native path with rule 150 everywhere up to 5-cell end rings, but its wider run finds 48 at 6-cell end rings. PATH-HYBRID's "single construction with one rule per ring" also holds only for its two shapes. (2) Not a block: PATH-HYBRID's heuristic that big rings fail because their cycles grow long holds only for its own construction ([knotlab HISTORY](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** G5 checkpoint, obstruction learned; the next step is waiting for a go-ahead.
+**Assumptions:** A34 (a chain composes when its far contact binds the ends at every lag) is moved from Confirmed to Under challenge.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/PATH-GROWTH-20261108-001/path_growth.md)

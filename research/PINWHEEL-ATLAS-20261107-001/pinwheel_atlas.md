@@ -140,3 +140,41 @@ widen it.
   belongs to the law only if it holds in every growth order.
 - **#3.** It converts ticket D into a theorem with the method already in hand. The partial collars are the 85 incomplete keys of
   ticket A's closure. It changes little on its own.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 03:23 UTC and copied here verbatim.
+
+**The round-plane epic is closed and published.** knotlab's tests and the jscul.dev sync both passed.
+
+- **The pinwheel's own local rule is a finite list, and it carries its own labels (proved).** On every pinwheel tiling, the region within two steps of an edge takes one of exactly 1,168 forms, and each form fixes that edge's label. So the labels the regrowth rule needs can be read off the bare map. Radius 1 isn't enough: there are 198 forms, and 9 of them are ambiguous.
+- **No periodic plane obeys that rule, not even at radius 1 (measured).** I tested 96,474 periodic tilings by the same triangle: grids, brick rows, every domino pattern on small tori with every choice of diagonal, and six two-triangle shapes. Every one fails, most of them at every single edge. That's the opposite of the sphere line, where a law with no hidden information can't tell a round sphere from a tube. Whether the rule rules out every periodic plane is still open.
+- **Regrowth needs no memory beyond the patch's shape (measured).** In the growing triangle, every label, boundary included, can be read within two steps at levels 4–7.
+
+As you asked, I stopped there. Outward growth one tile at a time is held as backlog, and nothing new is started.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the pinwheel's own law | **Status:** Successful | The rule is finite and fixes its own labels; periodic planes fail it |
+| Local direction: the combinatorial pinwheel rule | Continue later | Whether it forces a non-periodic plane is open |
+| Broader exploration: question 9 lines | Known alternatives | Spheres need a hidden bit; the plane may not |
+| Long-term goal: G1 Space from a law | Capability gained | Regrowth needs no hidden information |
+
+**Corrections:** none new. **Goals:** G1 now shows as idle in the goals list, because the next steps of both its lines (plane and spheres) are on hold.
+
+**Next step:** Continue — No next action selected (held at your request)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Does the rule force a non-periodic plane? | 2/3 — Substantial | 2/3 — Testable | Search small tori built from the rule's own vertex patterns → one found, or none up to a set size | Alternative · deferred |
+| 2 | Grow the plane one tile at a time | 2/3 — Substantial | 1/3 — Stated | Forced moves from one tile, in every growth order → radius 30, or a dead end | Alternative · deferred |
+| 3 | Prove the boundary reading | 1/3 — Incremental | 3/3 — Ready | Same closure on the 85 boundary cases → theorem or conflict | Alternative · deferred |
+
+- **#1** would settle how much hidden information a round plane costs. The method is clear, but the search may be large.
+- **#2** would show whether outward growth can replace the hierarchy. The sphere line found that growth without labels still needs the roundness witness, so this needs design first.
+- **#3** turns the boundary measurement into a theorem with tools already built. It changes little on its own.
+
+- [Decision note](https://github.com/jscul/knotlab/blob/main/research/PINWHEEL-ATLAS-20261107-001/pinwheel_atlas.md)
+- [Proof](https://github.com/jscul/knotlab/tree/main/proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas)
+- [Periodic planes](https://github.com/jscul/knotlab/blob/main/artifacts/PINWHEEL-ATLAS-20261107-001B/PINWHEEL-ATLAS-20261107-001B-E001_periodic_planes_against_the_law/run/interpretation.md)
+- [Boundary reading](https://github.com/jscul/knotlab/blob/main/artifacts/PINWHEEL-ATLAS-20261107-001D/PINWHEEL-ATLAS-20261107-001D-E001_labels_at_the_boundary/run/interpretation.md)

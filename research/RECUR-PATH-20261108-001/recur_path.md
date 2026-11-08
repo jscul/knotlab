@@ -153,3 +153,36 @@ Carried from earlier epics:
 
 **Recommendation.** Continue with direction 1. If the proof stalls on the contacts' feedback, settle for the restrictions
 (direction 3) and hand the families to the separation thread.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 12:56 UTC and copied here verbatim.
+
+A34 is overturned, by the rule pre-registered before the run (epic 0eb8e3cf1, shared docs c40f97323, published). The census found 452 families of paths that compose at every size tested, with every contact persistent at every lag. They compose at recurring lags, which the path's own dynamics fixes. Under A34's every-lag reading, no family composes at even two sizes. A37 replaces A34.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: challenge A34 by transport | Successful | Overturned as pre-registered: 452 families compose at recurring lags at every size, none at every lag |
+| Local direction: paths across time | Continue | Under A37 composition transports; next is a proof for every size, then the gate's restrictions |
+| Broader exploration: G5 with G1 | Known alternatives | Separation and cycles of rings (B12) now has families that transport; nonlinear paths (B10) |
+| Long-term goal: G5 (question 4) | Capability gained | Under A37, native networks across time survive growth |
+
+- **Rings growing:** 256 families on rings of 4 to 9 cells with contacts two apart, every ring on rule 60 or 102 (the one-sided additive rules).
+- **Paths growing:** 196 families from 4 to 9 rings, with frozen or rule-90 end rings.
+- **Verified:** an independent computation agrees for all 452 at every size, and so do the full state spaces at the two smallest sizes (904 of 904). The far contact composes at 12.5% to 62.5% of each cycle.
+- **A slip I caught:** the first run's every-lag control failed because of a bug in that one check. The rerun fixes only that, passes, and gives the same recurring counts.
+
+Next step: Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Prove recurring composition at every size | 3/3 | 2/3 | For rule 60 with contacts two apart, write the rows of M^T by binomial coefficients mod 2 (Lucas) → a theorem for every ring size, or the size where it fails | Awaiting go-ahead |
+| 2 | Separation and cycles of rings on these families (B12) | 3/3 | 2/3 | Parked for its own thread; the families are in this epic's `families.json` | Backlog |
+| 3 | The gate's restrictions under A37 | 2/3 | 3/3 | Restrict the 452 families to admitted subsystems and recheck | Alternative |
+| 4 | Nonlinear paths at recurring lags (B10) | 2/3 | 1/3 | Parked | Backlog |
+
+**Corrections:** one, not a block. INTERMITTENT-NET kept A34 because "the gate asks for persistence". The gate asks every contact to persist and the composition to survive transport; it doesn't ask for binding at every lag ([knotlab HISTORY](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** G5 checkpoint, capability gained.
+**Assumptions:** A34 is overturned. A37 is added: a path composes at the recurring lags its dynamics fixes, with every contact persistent.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/RECUR-PATH-20261108-001/recur_path.md)

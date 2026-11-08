@@ -117,3 +117,35 @@ does not wait on the owner.
 **Recommendation.** Research directions. The process line has run seventeen epics today and has reached the end of the program's order
 short of distance, so this is a natural place to pause until the owner rules on counted length; if it continues, direction 2 is the
 ready one and direction 1 the bigger one.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 16:06 UTC and copied here verbatim.
+
+**Genus by rings of cuts is done: "two per handle" holds as a theorem on every surface, and no surface fails.** Epic and docs are committed and published (5ca001117, 2eaf83771).
+
+- **The native step (proved).** Freeze any set of contacts. The pieces you get by linking rings whenever a contact on one needs the other are exactly the pieces of the cut surface. Each contact needs both of its rings from lag 1, and needs never cross a cut.
+- **Two per handle (proved).** A family of rings of cuts keeps the network in one piece exactly when it is independent in the surface's homology mod 2. So at most 2g keep one piece, some 2g do, and one more always separates. The torus cut round both ways stays in one piece and a third ring separates it. On genus 2, four keep one piece and five never do.
+- **A persistent genus-2 lattice.** The regular 16-ring network with three contacts per ring (from GL(2,3)) keeps every contact persistent at every lag. In the stress test, a 56-ring genus-3 network also persists and has six as its count.
+- **One piece is not full reach (computed).** After cutting the torus both ways, every contact still needs every ring on sides 3 to 20, except 8 and 16.
+- **Exactness.** No census and no lag cutoffs were used.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: genus by rings of cuts | Successful | Two per handle, by proof, on every surface |
+| Local direction: composed topology across time | Research directions | Adjacency, paths, separation and genus all hold; distance waits on John |
+| Broader exploration: G5 with G1 | Known alternatives | Full reach after cuts (powers of two); which lattices compose; growing a network from a law |
+| Long-term goal: G5 Dynamics | Capability gained | A network of persistent contacts reads its surface's genus across time |
+
+**Next step:** Research directions, or a pause.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Grow a network of rings from a law (G1) | 3/3 | 1/3 | Look for a local growth rule that keeps every contact persistent, using the flip criterion → a rule, or the first obstruction | Deferred |
+| 2 | Full reach on the cut-open torus | 2/3 | 3/3 | Prove every contact reaches every ring on the n×n grid unless n is a power of two ≥ 8 | Deferred |
+| 3 | Distance across time | 3/3 | 1/3 | Waits on John's ruling on counted length | Deferred |
+| 4 | Which lattices compose everywhere | 2/3 | 3/3 | Rectangular, triangular, honeycomb tori | Deferred |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained). **Assumptions:** none added.
+
+This line has run seventeen epics today and has reached the end of the program's order short of distance. I recommend pausing here until John rules on counted length; if it continues, #2 is ready to start and #1 is the bigger question.

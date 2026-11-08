@@ -168,3 +168,29 @@ law); A33 added (a local law is read up to congruence).
 4. **The least period.**
    - **Payoff 1.** It would sharpen the witness.
    - **Concreteness 2.** Ticket B reduces it to small periodic planes against a finite law.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 08:41 UTC and copied here verbatim.
+
+**Result: a periodic plane passes the pinwheel's collar law, so no undecorated pinwheel law forces roundness.** The rhombus lattice (four tiles around a shared right angle, tiled by translation) cut once is collar-legal with 20 tiles per period. Each further cut beats one more radius, so every radius fails; the twice-cut plane obeys the 1,168-form atlas. The collar law does force exactly one level of the hierarchy. Published: [decision note](https://github.com/jscul/knotlab/blob/main/research/COLLAR-PLANE-20261108-001/collar_plane.md).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a periodic collar-legal plane | **Status:** Successful | Found one; no radius forces the pinwheel |
+| Local direction: undecorated pinwheel laws | Practically exhausted | Every radius admits a crystal |
+| Broader exploration: G1 lines | Known alternatives | Decorated laws, spheres, growth |
+| Long-term goal: G1 Space from a law | Obstruction learned | Roundness costs hidden information in the plane too |
+
+**Corrections:** two narrowings, both logged and in [knotlab's history](https://github.com/jscul/knotlab/blob/main/HISTORY.md). The growth-law epic's appeal to Dworkin and Shieh doesn't apply, because the collar law isn't aperiodic. The atlas epic's "the plane may need no hidden bit" reading is withdrawn. **Goals:** G1 checkpoint (obstruction learned), no goal change. **Assumptions:** A25 confirmed for the plane, A28's challenge reworded, A33 added (local laws are read up to congruence).
+
+**Next step:** Continue, selected: #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Price of roundness in the plane: fewest hidden bits per tile that force the pinwheel | 2/3 | 1/3 | Selected, awaiting go-ahead |
+| 2 | Short note: the pinwheel has no undecorated local rules | 1/3 | 3/3 | Alternative |
+| 3 | Which other planes obey the collar law | 1/3 | 2/3 | Alternative |
+| 4 | Least period below 20 | 1/3 | 2/3 | Alternative |
+
+One part is still running: the census of the larger tori (95,232 planes). I'll fold it in when it finishes.

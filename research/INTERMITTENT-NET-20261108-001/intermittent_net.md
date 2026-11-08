@@ -130,3 +130,29 @@ what remains are two bounded searches, and the line should stop if neither finds
 
 **Recommendation.** Research directions. Direction 1 is the fallback the coordinator named, now sharpened to affine chains. Stop
 the process line if it finds that arrival sets of affine chains always have gaps.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 09:23 UTC and copied here verbatim.
+
+Intermittent networks is closed and published. Composition at recurring lags is native only on affine substrates. Of 244 chains that compose at some lags, 92 single out those lags themselves: they compose exactly when both ends' influence arrives, and both contacts bind at those lags. Every one of the 92 runs an affine rule (shifts 15 and 170, additive 60, 90, 105 and 150). With a nonlinear rule this never happens, because other cells can override an end that has arrived. One size larger, the result is the same (24 of 112, all affine). [Decision note](https://github.com/jscul/knotlab/blob/main/research/INTERMITTENT-NET-20261108-001/intermittent_net.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Partially successful | Native exactly on affine substrates; never on nonlinear ones |
+| Local direction | Research directions | Persistent composition is still absent |
+| G5 Dynamics (question 4) | Capability gained | A native network across time exists, intermittently, on affine substrates |
+
+**Next step:** Research directions.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | A middle ring that carries without cancelling, searched among affine chains | 3/3 | 2/3 | Deferred |
+| 2 | The pulse law of affine chains | 2/3 | 2/3 | Deferred |
+| 3 | Learning a rule from its knots (G16) | 2/3 | 1/3 | Deferred |
+
+**Corrections:** none.
+**Goals:** a G5 checkpoint.
+**Assumptions:** A34 confirmed for the contact gate, since the gate needs persistence. The native intermittent network is recorded beside it.
+
+GROWTH-LAW-S1 had already been folded in (101fae97a). Direction 1 is your fallback, now narrowed to affine chains. I'll stop the process line if their arrival sets always have gaps.

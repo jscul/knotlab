@@ -106,3 +106,36 @@ to networks of loops and deepening the single loop.
 
 **Recommendation.** Research directions, leaning to direction 1. The process line has run fourteen epics today, so if the coordinator
 prefers to pause it until the owner rules on distance, the single-loop results stand as a complete stage.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 14:22 UTC and copied here verbatim.
+
+Balanced loops of any number of rings are proved to persist at every size (epic 7e32d6ac2, shared docs 144b3b752, published). That meets the stop rule: a theorem for every r.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: loops of any number of rings | Successful | A theorem for every r; the census agrees for r = 5 to 8 |
+| Local direction: composed topology across time | Research directions | Single loops are done; next is a choice between loops that share rings and the unbalanced mechanism |
+| Broader exploration: G5 with G1 | Known alternatives | The rule-90 mechanism (B13); restrictions (B14); distance, once you rule |
+| Long-term goal: G5 (question 4) | Capability gained | Closed routes of contacts of every length hold at every size, by proof |
+
+- **The algebra:** crossing any ring forward and back costs the same, so the loop's feedback is z(A + cA⁻¹), where A is a weighted shift round the loop and c a scalar.
+- **Balance cancels every return:** when the positions sum to r·s/2, every way influence can return to a contact pairs with its mirror image and cancels mod 2. So every contact keeps both rings at every lag, for every number of rings. Loops with every contact halfway round are balanced at every length.
+- **A neat side fact:** the feedback dies out after r/2 steps exactly when r is a power of two. For other lengths it never ends, but its returns still cancel.
+- **Census, 5 to 8 rings at sizes 4 to 16:** all 5,354 balanced loops persist to lag 400. So do 11,322 unbalanced ones, so balance is sufficient, not necessary.
+
+Next step: Research directions.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Networks of loops: rings with three or more contacts | 3/3 | 2/3 | Give one ring a third contact so two loops share it; find the balance condition per loop → persistence at every size, or the obstruction where loops meet | Awaiting go-ahead |
+| 2 | Why unbalanced loops persist | 2/3 | 2/3 | Classify the 11,322 by witness cells; prove the commonest mechanism | Alternative |
+| 3 | The rule-90 mechanism (B13) | 2/3 | 2/3 | Parked | Backlog |
+| 4 | Distance across time | 3/3 | 1/3 | Waits on your counted-length ruling | Deferred |
+
+This line has run fourteen epics today, and the single-loop results stand as a complete stage. Pausing it until you rule on distance would be a reasonable alternative.
+
+**Corrections:** none. **Goals:** G5 checkpoint, capability gained. **Assumptions:** none added.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/LOOP-ANY-20261108-001/loop_any.md)

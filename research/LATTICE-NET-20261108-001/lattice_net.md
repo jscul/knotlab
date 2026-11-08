@@ -120,3 +120,34 @@ mapping the shapes where composition reaches, while distance waits on the owner.
 
 **Recommendation.** Research directions, leaning to direction 1. The process line has run sixteen epics today, so pausing it until the
 owner rules on distance is also reasonable; the lattice results stand as a complete stage.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 15:42 UTC and copied here verbatim.
+
+**The lattice of rings is done, and both outcomes of the stop rule occur.** Epic and docs are committed and published (ac0909bf2, 13081492b).
+
+- **Which contacts and when (proved).** Influence spreads by powers of the four-neighbour sum x + 1/x + y + 1/y over GF(2). A contact needs a ring exactly when an odd number of walks lead from that ring to it. The first such lag is g·k + 1, and the need then recurs.
+- **Odd sides reach everywhere, even sides never the antipode (proved).** On an odd torus every contact needs every ring. On an even torus the two ways round to the ring halfway across cancel, so no contact ever needs it. The smallest such size is 4. On rectangular tori the gap appears only on some shapes (computed), so it comes from symmetry, not from limited reach.
+- **Rings of cuts (proved).** Cutting round any block of rings separates it, which is native separation on odd tori. One ring of cuts round the torus does not separate, because influence goes round the other way, and two rings do. So separation tells a torus from a disc.
+- **Lag cutoffs.** This epic used no census and no cutoff; every reading is exact. The note marks the earlier census-only claims: the lag-300 and lag-400 counts, and the late misses up to lag 154,468.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: lattice of rings | Successful | Theorem for odd sides; composition stops reaching at every even side; cuts separate when they bound |
+| Local direction: composed topology across time | Research directions | Order up to separation holds on the lattice; distance is next and waits on John |
+| Broader exploration: G5 with G1 | Known alternatives | Genus read by cuts; which lattices compose everywhere; B13, B14 |
+| Long-term goal: G5 Dynamics | Capability gained | Native paths and separation across a 2D lattice, and separation that sees the torus's handle |
+
+**Next step:** Research directions, leaning to #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Genus read by rings of cuts | 3/3 | 2/3 | Cut round the torus in both directions together and test whether it stays in one piece; then a genus-2 lattice → the most cuts that keep one piece is 2 per handle, or the first surface where it isn't | Deferred |
+| 2 | Which lattices compose everywhere | 2/3 | 3/3 | Prove the rule behind 4×8 and 6×6 failing while 4×6 doesn't; triangular and honeycomb | Deferred |
+| 3 | Distance across time | 3/3 | 1/3 | Waits on John's ruling on counted length | Deferred |
+| 4 | Rule-90 mechanism (B13) | 2/3 | 2/3 | Parked | Backlog |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained). **Assumptions:** none added.
+
+This is the line's sixteenth epic today, so pausing until John rules on distance is reasonable too.

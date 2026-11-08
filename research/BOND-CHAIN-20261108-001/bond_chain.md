@@ -107,3 +107,31 @@ Carried from earlier epics:
 2. **Edge labels.** Tests whether the count depends on where the bits sit; the edge substitution must be defined first.
 3. **Hub chains.** A hub network has a natural count, but the grid it lives on is drawn, so the payoff is small.
 4. **Dimension three.** One-bit laws on triangulations are classified; beyond them classical answers are expected.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 13:26 UTC and copied here verbatim.
+
+The A12 challenge is closed. **Bond distance holds wherever knots compose, and by the test we froze before running, it is overturned as a universal rule.** No published result changes.
+
+- On parity laws a chain of knots always contains a knot through its two ends (a matroid fact). So chains either add nothing or give back bond distance exactly. Every law we have measured for space is of this kind.
+- On other laws the two measures split only at *gates*: a shared distinction where one value satisfies both knots. Of 1,156 laws made of two glued 3-place knots, exactly the 72 gated ones have no knot through the far ends. For example, a chain of NAND clauses is a line by chain counting but has no bond distance at all. The same clauses with implication signs (our atom thread) are a line for both.
+- The foundation's rule that a shared variable alone is a hub, not a touch, picks bond distance. A39 records that reading and replaces A12.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: challenge A12 | **Status:** Successful | settled by the frozen test |
+| Local direction: measures of spacing | Practically exhausted | chains add nothing or count hubs |
+| Broader: G1 lines | Known alternatives | two bits, edge labels |
+| G1 Space from a law | Capability gained | the ruler now rests on a theorem plus the hub rule |
+
+**Corrections:** none. **Goals:** G1 checkpoint added. **Assumptions:** A12 overturned and A39 added. A parallel thread took A38 at the same time, so I renumbered mine to A39; publication is green again.
+
+**Next step:** Research directions, selected #1
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Two bits per tile, starting with products of one-bit decorations (B8) | 2/3 | 2/3 | Selected · awaiting go-ahead |
+| 2 | Edge labels, as in Radin's rules (A35) | 2/3 | 1/3 | Deferred |
+| 3 | Hub chains in two dimensions | 1/3 | 2/3 | Deferred |
+| 4 | Dimension three on crystallizations (G2) | 1/3 | 1/3 | Deferred |

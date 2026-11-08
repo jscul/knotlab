@@ -121,3 +121,34 @@ Since the epic opened:
 
 **Recommendation.** Continue with direction 1. The process line has run fifteen epics today, so if the coordinator prefers to pause it
 until the owner rules on distance, the network results stand as a complete stage.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 15:13 UTC and copied here verbatim.
+
+**Networks of loops are done: both outcomes of the stop rule happened, in different networks.** Epic and docs are committed and published (8d36edc6b, c7125e779).
+
+- **Balance per loop is a density.** Every ring and every face must carry the same number of cells per contact. A contact keeps its witnesses at every lag exactly when the returns to it cancel.
+- **Symmetric networks persist at every size (proved).** If a symmetry swaps each contact's two rings, the returns pair up and cancel. That covers two rings sharing three contacts, the five Platonic networks, and square, triangular and honeycomb lattices of rings on a torus (the honeycomb has three contacts on every ring).
+- **The construction you named hits the obstruction (proved).** Where a loop's two-contact ring meets the shared ring, the short return across that ring has no partner. A census of 170,502 figure-eights and chords with equal ring sizes found no other way to cancel.
+- **A caveat for censuses.** Some networks that persist to lag 300 or 600 miss a ring much later, as late as lag 154,468, so lag cutoffs don't settle persistence.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: networks of loops | Successful | Symmetric networks persist at every size; returns can't cancel where a two-contact loop meets a shared ring |
+| Local direction: composed topology across time | Continue | Lattices of rings now persist; composition and separation across them come next |
+| Broader exploration: G5 with G1 | Known alternatives | Other cells rescue some chords; even returns without symmetry; B13, B14; distance once John rules |
+| Long-term goal: G5 Dynamics | Capability gained | Networks of loops sharing rings, including torus lattices, persist at every size |
+
+**Next step:** Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Composition and separation across a lattice of rings | 3/3 | 2/3 | On the square torus, find which contacts each contact needs and when, then test whether a ring of cuts separates it → a theorem, or the size where composition stops reaching | Awaiting a go-ahead |
+| 2 | Why other cells rescue some figure-eights and chords | 2/3 | 2/3 | Explain the chord (1,1,2), which persists at most spacings but never at powers of two | Deferred |
+| 3 | Even returns without symmetry | 2/3 | 1/3 | Explain the one six-ring exception and search larger graphs | Deferred |
+| 4 | Distance across time | 3/3 | 1/3 | Waits on John's ruling on counted length | Deferred |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained). **Assumptions:** none added.
+
+This is the line's fifteenth epic today, so pausing until John rules on distance is also reasonable.

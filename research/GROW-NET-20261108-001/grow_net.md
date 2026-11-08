@@ -110,3 +110,35 @@ parked proof of full reach.
 
 **Recommendation.** Research directions. Directions 2 and 3 are ready and bounded; direction 1 is the larger question for G1. The line
 has run nineteen epics today, so a pause is also reasonable.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 16:50 UTC and copied here verbatim.
+
+**Growing a network of rings from a law: both outcomes occur. There is a rule and an obstruction.** Epic and docs are committed and published (828293e96, 757135fa1). Earlier I also committed the cut-open torus result as a preliminary note (bcc368c4f).
+
+- **The rule (proved).** On a torus of rings with equal spacing, a half-turn at every contact swaps its two rings, so every contact persists. Growing by inserting a whole band of rings round the torus keeps every contact persistent at every stage. So does splitting every ring into a k×l block.
+- **The obstruction (proved for 1 or 2 contacts).** Adding one ring at a time breaks persistence:
+  - With one contact, the new ring returns to it at once.
+  - With two contacts not side by side on one ring, it leaves one return unpaired.
+  - As a "bubble" on a corner p→q, it deletes that corner. The network stays balanced exactly when no contact is both reached from q and reaches p.
+- **Census (exact, census-only).** Of 795,042 single-ring attachments to 16 balanced seeds, none keeps every contact persistent beyond the smallest seeds of four rings. Refining the sphere's Platonic networks (truncating or rectifying them) breaks persistence too.
+- **Reading.** Growth has to add whole bands, because a single ring is a defect. Networks with a flip at every contact exist at every size only on the torus. The law fills a torus it is given, but it does not make the surface.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: growth from a law | Successful | A rule (bands/blocks on the torus) and an obstruction (single rings), both proved |
+| Local direction: growth from a law | Research directions | What's open is making the surface itself |
+| Broader exploration: G1 with G5 | Known alternatives | Growth chosen by the dynamics; full-reach proof (parked); which lattices compose |
+| Long-term goal: G1 Space from a law | Capability gained | A uniform local law grows a lattice of persistent contacts at every stage, on the torus |
+
+**Next step:** Research directions.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Make the surface by growing whole bands | 3/3 | 1/3 | Look for band insertions that start from a loop and close a torus, every stage balanced → a sequence, or the step where every band fails | Deferred |
+| 2 | Prove full reach on the cut-open torus | 2/3 | 3/3 | Images of the doubled torus and the powers of two | Deferred |
+| 3 | Which lattices compose everywhere | 2/3 | 3/3 | Rectangular, triangular, honeycomb tori → a characterisation or the first counterexample | Deferred |
+| 4 | Growth chosen by the dynamics | 2/3 | 1/3 | Let a contact's needs pick where the next band goes | Deferred |
+
+**Corrections:** none. **Goals:** G1 checkpoint with G5 (capability gained). **Assumptions:** none added. I saved your ruling (counted length counts as a native magnitude, and questions like that don't wait on you) to project memory. Distance continues in its own thread.

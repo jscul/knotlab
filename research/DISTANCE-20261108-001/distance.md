@@ -141,3 +141,32 @@ test; A41 added (distance across time is read through freezes).
 
 **Recommendation.** Research directions, selected #1, awaiting the coordinator's go-ahead within the thread cap; stop it at a
 criterion or at the first regular map whose plain first need is late.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 17:12 UTC and copied here verbatim.
+
+Distance across time is native, in two exact forms proved on every network, and it's published (DISTANCE-20261108-001):
+- **By cuts:** the most separate freeze sets that split two rings apart equals the graph distance between them.
+- **By time:** freezing every contact off one route makes influence arrive after a lag that counts that route's steps, and no freeze is faster. This length runs one way round the rings, so it isn't symmetric. On the square lattice, half of it rounded up is exactly graph distance.
+- **Without freezing**, the first need is not a distance: it arrives on time only where an odd number of shortest routes arrive.
+
+Your ruling is recorded as A40 and passed a test frozen before it ran.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: distance across time | Successful | Two exact native lengths, proved on every network; A40 confirmed |
+| Local direction: composed topology across time | Research directions | Adjacency, paths, separation, genus and distance are now all read in one substrate |
+| Broader exploration: G5 with G1 | Known alternatives | Growth line; full reach on honeycomb and cut-open tori; B13, B14 |
+| Long-term goal: G5 Dynamics | Capability gained | Persistent networks measure distance across time natively and exactly |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Distance without freezing | 2/3 | 3/3 | Find which regular maps have the plain first need always on time (Platonic, genus 2 and 3 do; tori of side 5 and up don't) → a criterion, or the first map that fails |
+| 2 | Full reach on honeycomb tori | 2/3 | 3/3 | Prove full reach exactly when 3 divides the side → a theorem, or a counterexample |
+| 3 | Distance in a grown network | 3/3 | 1/3 | Once the growth thread has a growing law, read its lengths and ball growth → a dimension across time, or an obstruction |
+| 4 | Triangular and honeycomb bands as theorems | 1/3 | 3/3 | Extend the square-lattice proof → both proved |
+
+**Corrections:** none. **Goals:** a G5 and G1 checkpoint (capability gained). **Assumptions:** A40 added and confirmed by its frozen test (all 2,250 routes, 7,285 joins and 372 unequally spaced routes passed); A41 added (distance is read through freezes, not the plain first need).
+
+Commits on main: 510ff23fc (A40 and its frozen test), 1528e870f (the epic), f33783f87 (register, goals, intuition page). No long-running checks. I recommend #1 next.

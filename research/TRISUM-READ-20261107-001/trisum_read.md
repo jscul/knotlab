@@ -96,3 +96,32 @@ and proofs, not a new reading. The missing bridge to G4 is a theorem: why a junc
    and a 277-space control, but no proof route is written.
 3. **A uniform rule.** Yes/no creation reads the atoms and junctions of every trisum space; whether one rule reads them in the 277
    planar-glue spaces too is REFINE-READ's open question, and repeating it here adds little.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 07:22 UTC and copied here verbatim.
+
+**The junction epic is closed and published.** Native creation reads and counts the junctions with nothing drawn. Once the atoms are set aside, a junction's two lines are the only pair that block each other. That held on 18 of 18 spaces: 7 for training, 10 held out with frozen predictions, and a four-junction stress test. The one failed prediction comes from a hidden symmetry: native creation can't see where an atom sits within its switching class.
+
+Records: [decision note](https://github.com/jscul/knotlab/blob/main/research/TRISUM-READ-20261107-001/trisum_read.md), [discoveries](https://github.com/jscul/knotlab/tree/main/research/TRISUM-READ-20261107-001/discoveries), [assumption A29](https://github.com/jscul/knotlab/blob/main/docs/ASSUMPTIONS.md).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: junctions in the native creation map | **Status:** Successful | Read and counted on 18 of 18 spaces; one frozen sub-statement failed, by a native symmetry |
+| Local direction: reading handles from creation | Practically exhausted | Atoms and junctions both fixed natively |
+| Broader exploration: what creation sees of a signing | Unmapped | One space shows it blind to an atom's place in its switching class |
+| Long-term goal: G4 Emergence lives in handles | Capability gained | Both of HANDLE-COUNT's handles are read natively |
+
+**Corrections:** none.
+**Goals:** G4 checkpoint (capability gained); G4 is now idle; backlog B5 added.
+**Assumptions:** A29 added: an atom's place within its switching class does not change what's measured.
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Does creation see only the switching class? | 2/3 — Substantial | 2/3 — Testable | Map a second placement of one space → maps match or differ | Selected · awaiting go-ahead (backlog B5) |
+| 2 | Prove the junction signature | 2/3 — Substantial | 1/3 — Stated | Derive it on the 29-point space → proof or counterexample | Alternative · deferred |
+| 3 | One uniform native reading | 1/3 — Incremental | 3/3 — Ready | One rule over all 295 spaces → read or fail | Alternative · deferred |
+
+If #1 holds, native creation sees exactly what Pfaffian counting uses, which would link emergence (G4) to hardness (G3). The first map takes about ten minutes. I parked it because you asked to wrap up first.

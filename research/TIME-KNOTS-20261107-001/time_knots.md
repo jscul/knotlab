@@ -162,3 +162,28 @@ from its two-time knots).
 4. **Life at two steps.**
    - **Payoff 1.** It extends the owner's example.
    - **Concreteness 2.** It needs a prime-implicant search over 25 cells.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 07:52 UTC and copied here verbatim.
+
+Knots across time (B7) is closed and published. A process written as its space-time law is just a static law on its trajectories, so the knot test works unchanged. Its knots with its first row are exactly the smallest sets of past cells that decide a future cell. Memory of the first row is only pairwise exactly when each future cell is a single AND or OR. [Decision note](https://github.com/jscul/knotlab/blob/main/research/TIME-KNOTS-20261107-001/time_knots.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Successful | Minimal decisive sets; linear rules keep one knot per power of two; Life's step knots four neighbours, never the cell itself |
+| Local direction | Continue | One process is characterized; joining two is open |
+| G5 Dynamics (question 4) | Capability gained | The static definition survives processes |
+
+**Next step:** Continue, with #1 started.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Knots between processes: two rings joined by a contact cell | 2/3 | 2/3 | Started |
+| 2 | Learning a rule from its knots (G16) | 2/3 | 1/3 | Deferred |
+| 3 | Prove the traffic rule's uniform knots | 1/3 | 3/3 | Deferred |
+| 4 | Life at two steps | 1/3 | 2/3 | Deferred |
+
+**Corrections:** one, a Narrowing, found right after publishing. I had said these processes remember their past "only pairwise". That holds only for knots with the first row. Rule 128 (each cell the AND of three) still forms a knot joining two later times, because it never produces the pattern 1 0 1 ([correction](https://github.com/jscul/knotlab/blob/main/research/TIME-KNOTS-20261107-001/time_knots.md#correction-2026-11-08)).
+**Goals:** a G5 checkpoint; B7 marked taken; G1 marked active for the collar-law thread.
+**Assumptions:** A30 added: a process's memory is read from its two-time knots, and its first test already shows the two readings differ.

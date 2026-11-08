@@ -123,3 +123,30 @@ not a continuation of these families.
 **Recommendation.** Research directions. Run direction 1 as a registered long-running sweep. If it finds no native path, try
 direction 2 once. If that also fails, pause the process line and reassess G5 against question 4, which the line has answered for
 one process, one contact and two contacts.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 10:39 UTC and copied here verbatim.
+
+Native paths is closed and published, with a negative result in the families searched. No four-ring path keeps all three contacts and has its last contact bind both end rings at every lag. I searched about 4.06 million paths: rule 150 everywhere, the 430 carrying chains extended by one ring, and paths whose second middle ring is a shift. The second middle ring has to keep its own starting state and also pass the first ring's influence along. The additive rules keep their state but cancel the influence; the shift passes it along but forgets its own state. [Decision note](https://github.com/jscul/knotlab/blob/main/research/NATIVE-PATH-20261108-001/native_path.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Negative evidence | No native path in three restricted families |
+| Local direction | Research directions | No tested middle ring both remembers and passes the influence on |
+| G5 Dynamics (question 4) | Obstruction learned | Two contacts compose across time; three in a row haven't been found |
+
+**Next step:** Research directions.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Broad sweep of mixed four-ring paths (registered as long-running) | 2/3 | 3/3 | Deferred |
+| 2 | Design a middle ring that remembers and passes the influence on | 3/3 | 1/3 | Deferred |
+| 3 | Pulse law (B8) | 2/3 | 2/3 | Backlog |
+| 4 | Nonlinear persistent composition (B9) | 2/3 | 1/3 | Backlog |
+
+**Corrections:** none.
+**Goals:** a G5 checkpoint; directions 2–4 from last time are now backlog B8–B10.
+**Assumptions:** none changed.
+
+A wider run of rule 150 everywhere is running as NATIVE-PATH-S1 and will be folded in. One slip: commit 7b43dffca picked up another thread's pending row edit in the long-running index. Its content is unchanged, and fe234e970 carries my real edits.

@@ -96,3 +96,33 @@ the ready proof of full reach.
 4. **Dynamics-driven growth.** Open-ended.
 
 **Recommendation.** Research directions, leaning to direction 1 for G1 or direction 2 as the coordinator's ready fallback.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 16:57 UTC and copied here verbatim.
+
+**The band law makes the surface: one band turns a loop of rings into a torus, and every stage stays balanced (proved).** Epic and docs are committed and published (adebd6cba, da0298d19).
+
+- **One step (proved).** Insert a band into a loop of n rings, with each new ring joined to its partner on both sides. That is the n×2 torus. Every n×m torus with n ≥ 3 and m ≥ 2 has a half-turn at every contact, so the loop, the n×2 torus and every later torus keep every contact persistent. The band runs through both faces of the loop at once, which closes a handle.
+- **Where the band sits decides the surface (census, exact).** I checked 1,813,632 placements of a first band. The balanced ones lie on a sphere only once (the cube), on the torus, or on surfaces of genus 2 to 4, most of those with no symmetry at all. No lag cutoff was used anywhere.
+- The wall never came, so I didn't need the full-reach fallback.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: surface from bands | Successful | One band makes the torus from a loop, every stage balanced, by proof |
+| Local direction: growth from a law | Research directions | The torus is made; higher genus by bands is the open next step |
+| Broader exploration: G1 with G5 | Known alternatives | Full-reach proof (ready); which lattices compose (ready); growth chosen by the dynamics |
+| Long-term goal: G1 Space from a law | Capability gained | A uniform local law makes a surface from a loop with every contact persistent |
+
+**Next step:** Research directions.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Higher genus by bands | 3/3 | 2/3 | Add a second band, in every way, to the balanced genus-2 first bands (loops of 5) → a balanced genus-2 network after two bands, or the step where every band fails | Deferred |
+| 2 | Prove full reach on the cut-open torus | 2/3 | 3/3 | Images of the doubled torus and the powers of two | Deferred |
+| 3 | Which lattices compose everywhere | 2/3 | 3/3 | Rectangular, triangular, honeycomb tori | Deferred |
+| 4 | Growth chosen by the dynamics | 2/3 | 1/3 | Let a contact's needs pick where the next band goes | Deferred |
+
+**Corrections:** none. **Goals:** G1 checkpoint with G5 (capability gained). **Assumptions:** none added.
+
+I lean to #1 for G1, or #2 if you'd rather close something ready. This is the line's twentieth epic today, so pausing here is fine too.

@@ -222,3 +222,32 @@ consistency); history lines on A4, A6 and A25.
 5. **Challenge A12.**
    - **Payoff 2.** It is the register's most-used untested measure.
    - **Concreteness 2.** The laws and their code exist (backlog B4).
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 07:15 UTC and copied here verbatim.
+
+**Growth as a law is closed and published.** See the [decision note](https://github.com/jscul/knotlab/blob/main/research/GROWTH-LAW-20261107-001/growth_law.md) and the [proof](https://github.com/jscul/knotlab/blob/main/proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/proof.md).
+
+- **A beginning is a knot (proved).** A growth order never knots with a world's states. Written into the law, its local part (which neighbour came first) is pairwise. Time without a loop is one knot per cycle of the world. In one dimension the beginning does what no bounded static witness can: no bounded law tells a long thread from a ring.
+- **The plane needs a shared coin (measured).** Grown outward by its own label-free law, the pinwheel left its patches in all 70 runs, and the first wrong move is always a coin. An oracle needs only 4 to 10 real bits to reach 1,000 tiles, against 46 to 88 apparent ones. A stronger radius-2 law gets stuck too.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: what a growth order adds | **Status:** Successful | A beginning, which is a knot; never a knot of the world |
+| Local direction: label-free growth of round spaces | Practically exhausted | Spheres need a carried bit; the pinwheel leaves its patches at once |
+| Broader exploration: G5 and G1 lines | Known alternatives | Loops whose states change in time; the collar law's non-pinwheel patches |
+| Long-term goal: G5 Dynamics, with G1 Space from a law | Capability gained (G5); obstruction learned (G1) | The static definition survives growth; round space needs shared hidden bits |
+
+**Corrections:** none. **Goals:** checkpoint for G5 and G1; B1 marked taken; B7 parked. **Assumptions:** A14 confirmed; A28 added (growth judged by local consistency); history lines on A4, A6 and A25.
+
+**Next step:** Continue, selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Knots across time (G5) | 2/3 Substantial | 2/3 Testable | Space-time knots of rules 60, 90, 150, a nonlinear rule and Life → a classification | Selected · started |
+| 2 | The collar law off the pinwheel (G1) | 2/3 Substantial | 2/3 Testable | Periodic search seeded by the non-pinwheel patches → a periodic plane, or none | Alternative · deferred |
+| 3 | One bit per hierarchy level | 1/3 Incremental | 3/3 Ready | Oracle to 4,000 tiles → bits follow levels, or not | Alternative · deferred |
+| 4 | Every accretion law (G1) | 2/3 Substantial | 1/3 Stated | A deception argument for spheres → theorem | Alternative · deferred |
+
+#1 asks the other half of question 4, loops whose states change in time. I'm starting it now, because the coordinator confirmed that wrap-up mode has ended. One stress test, the oracle grown to 1,500 tiles, is still running. It is logged in the new docs/LONG_RUNNING.md, and its result will be folded in when it ends.

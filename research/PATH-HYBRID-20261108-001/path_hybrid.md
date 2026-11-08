@@ -175,3 +175,34 @@ added.
 
 **Recommendation.** Continue with direction 1. If no family stays native at every tested size, record that every-lag binding in
 affine paths is tied to particular sizes, reassess A34 against the intermittent reading, and take direction 2 on the found paths.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 11:47 UTC and copied here verbatim.
+
+PATH-HYBRID is closed and published (epic 11d75f508, shared docs c6ca62c29). Native paths across time exist, but only at particular sizes. Rings A and D share no contact, yet the last contact needs the past of both at every lag. None of the paths survives growth one size past.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: native paths of four rings | Successful | 16 paths with one rule per ring, 1,120 with hybrid middle rings, all verified |
+| Local direction: paths across time | Continue | The paths are tied to their sizes, so transport is the gate's next item |
+| Broader exploration: G5 with G1 | Known alternatives | Separation and cycles of rings; the gate's restrictions; nonlinear paths; backlog B9 to B11 |
+| Long-term goal: G5 (question 4) | Capability gained | The first composed topology of three contacts across time, at particular sizes |
+
+- **The 16 uniform paths are one construction.** The end rings are 3-cell shifts, and each one with its contact is a shift register (x³ + x + 1) that never forgets. The middle rings are 5-cell rule 150, and the middle contact relays along the short arcs.
+- **One size past, they fail.** None of 11,600 bigger versions is native, and none of 512 five-ring versions. The hybrid paths survive one more cell on the far end ring (928 of 1,120), never on the near end. All native paths found have short row cycles (12 lags or fewer). Bigger rings make cycles of thousands of lags, and some phase then misses a ring.
+
+Next step: Continue, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Native paths that survive growth | 3/3 | 2/3 | Families with fixed rules and laws whose rings grow together, searched for one native at every size from 3 to 9 → such a family, or evidence that binding at every lag is tied to sizes (that would put A34 under challenge) | Selected, not started |
+| 2 | Native separation and cycles of rings | 3/3 | 2/3 | Cut a found path's middle contact and prove no route remains; then four rings in a cycle | Alternative |
+| 3 | The gate's restrictions for paths | 2/3 | 2/3 | Restrict the found paths to admitted subsystems and recheck → which stay native | Alternative |
+| 4 | Nonlinear native paths (B10) | 2/3 | 1/3 | Parked | Backlog |
+
+**Corrections:** one, not a block. NATIVE-PATH said additive middle rings cancel the signal, so no ring could both remember and transmit. Rule 150 does both. Those paths actually failed at their rule-150 end rings, whose two cells become equal after one step ([knotlab HISTORY](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** G5 checkpoint, capability gained; the next step is waiting for a go-ahead.
+**Assumptions:** A36 added (a law declared cell by cell counts as a native substrate; the uniform paths don't rest on it), plus a history line on A34.
+
+The NATIVE-PATH wide stress test is still running, and I'll fold it in when it finishes. [Decision note](https://github.com/jscul/knotlab/blob/main/research/PATH-HYBRID-20261108-001/path_hybrid.md)

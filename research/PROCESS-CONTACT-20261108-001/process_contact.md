@@ -149,3 +149,28 @@ Carried from earlier epics:
      does not bind.
    - **Concreteness 2.** Window computations, as in the correction of 2026-11-08.
 4. **Learning a rule from its knots.** Carried, unchanged.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 08:22 UTC and copied here verbatim.
+
+Knots between processes is closed and published. I joined two rings (each a cellular automaton) by one contact cell. A contact that only listens to both rings binds them exactly when it is a parity (XOR) of two ring cells that still remember their start. "Binds" means every set of past cells deciding it touches both rings, which turns out to be the same as being lost when either ring is erased. The binding lasts as long as both rings remember. A contact that is a cell of both rings, as the gate's shared identity asks, feeds them back, and then only 44 of 128,128 configurations stay bound at every lag. [Decision note](https://github.com/jscul/knotlab/blob/main/research/PROCESS-CONTACT-20261108-001/process_contact.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | Successful | Listening contacts: exactly the parities; shared contacts: rarely persistent |
+| Local direction | Continue | Which shared contacts persist is open; persistence grows with ring size |
+| G5 Dynamics (question 4) | Capability gained | The contact gate reads across time, and shared identity costs persistence |
+
+**Next step:** Continue, with #1 started.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Shared contacts that don't read their own value | 2/3 | 3/3 | Started |
+| 2 | Shared binding as rings grow | 2/3 | 3/3 | Folded into #1 |
+| 3 | Whole-law knots between the rings (A30) | 2/3 | 2/3 | Deferred |
+| 4 | Learning a rule from its knots (G16) | 2/3 | 1/3 | Deferred |
+
+**Corrections:** none. The nearest prior work is Boolean automata "double-cycles", two cycles sharing one node, which also lose dynamical variety. It is cited.
+**Goals:** a G5 checkpoint.
+**Assumptions:** A31 added (a shared contact combines its two rings' proposals), now under challenge by #1. A32 added (two-sided essentiality across time means binding).

@@ -75,7 +75,7 @@ Epic `TRISUM-READ-20261107-001` (program topology), 2026-11-07.
 
 **Corrections:** none.
 **Goals:** checkpoint for G4 (capability gained); no goal change. The switching-class conjecture is parked as backlog B5.
-**Assumptions:** A28 added, assumed: an atom's place within its signing's switching class does not change what is measured.
+**Assumptions:** A29 added, assumed: an atom's place within its signing's switching class does not change what is measured.
 
 The local line ends because its question is answered on every computed space; what remains is a uniform rule (open since REFINE-READ)
 and proofs, not a new reading. The missing bridge to G4 is a theorem: why a junction's lines block only each other.

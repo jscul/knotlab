@@ -3351,9 +3351,45 @@ So network holes come in two kinds:
      - **Doctrine.** Everything is invariant under relabeling lines and re-listing their points.
    - **Provenance.** Weisfeiler–Leman refinement and its equivalence with counting logic (Cai, Fürer, Immerman) are classical. The
      application and the regularity are new here.
-   - **Next (recommended, awaiting the owner).** Native creation at junction handles (2/3). On HANDLE-COUNT's trisum spaces, does pair
-     refinement show that the native creation map fixes the junctions, where counting hardness lives?
+   - **Next (taken as `TRISUM-READ-20261107-001`).** Native creation at junction handles (2/3). On HANDLE-COUNT's trisum spaces, does
+     pair refinement show that the native creation map fixes the junctions, where counting hardness lives?
      - **The alternatives.** Uniform definability of the atoms (1/3); a native audit of earlier far-side records (1/3).
+
+   **2026-11-07: junctions in the native creation map** (`TRISUM-READ-20261107-001`).
+   - **The question.** HANDLE-COUNT found that counting cost sits at the glue's junctions, where planar pieces meet along squares, and
+     REFINE-READ that native creation fixes the atoms. Does native creation also fix the junctions, and do junction lines carry a
+     native signature?
+   - **Junctions are read, and counted (computed, 18 of 18 spaces).**
+     - **The spaces.** Plain spaces from HANDLE-COUNT's trisum generator. Seven small ones trained the reading. Ten larger ones (54
+       to 60 points, up to three junctions) were mapped only after seven statements about them had been frozen. One more, with four
+       junctions, was chosen as a stress test before its map was computed.
+     - **Atoms first.** Yes/no creation reads them: no removal blocks an atom's core lines, and each root is created at by exactly
+       its six core lines.
+     - **Then junctions.** With the atoms set aside, a junction's two lines are never degenerate, and each is the only removal that
+       blocks the other. No other pair is like that.
+     - **Pair refinement** of the native map fixes the atoms, the skeleton, the junctions and the leaves.
+   - **A control.** Across REFINE-READ's 277 planar-glue spaces the signature appears once: in design 7, the only one whose glue holds
+     a non-planar brace other than Heawood, at that brace's junction.
+   - **One frozen statement failed, by a symmetry.** In one three-junction space native creation cannot tell which of a cube piece's
+     two lines carries an atom. Its map has a symmetry exchanging them that the space lacks, induced by a symmetry of the glue that
+     keeps the signing's switching class but moves the atom.
+   - **Reading.**
+     - **A junction is a mutual block:** two lines that depend on each other alone. Plane glue never shows it.
+     - **Both of HANDLE-COUNT's handles are native.** The atoms, which counting gets for free, and the junctions, which it pays for,
+       are read from creation alone, with nothing drawn.
+     - **What native creation sees of a signing** may be only its switching class, which is also all that Pfaffian counting uses.
+       That is a conjecture from one space.
+     - **Doctrine.** Everything is invariant under relabeling lines and re-listing their points.
+   - **A side finding.** HANDLE-COUNT's generator depends on Python's hash seed through its Pfaffian signing, so reruns can place the
+     atoms differently. HANDLE-COUNT B's stated totals reproduce under two other hash seeds; three to six of its 257 per-space rows
+     change. Each space used here is reproduced at its seed under a recorded hash seed.
+   - **Provenance.** Trisums and trisectors (Robertson, Seymour and Thomas), switching classes (Zaslavsky) and refinement (Weisfeiler
+     and Leman; Cai, Fürer and Immerman) are classical. The signature, the held-out test and the hidden symmetry are new here.
+   - **Next (recommended; parked as backlog B5 of the goals doc, at the owner's request to wrap up).** Does native creation see the
+     signing only through its switching class (Payoff 2/3, Concreteness 2/3)? Map a second placement of one space in the same class and
+     compare.
+     - **The alternatives.** A proof of the junction signature (2/3, 1/3); one uniform native reading of atoms and junctions
+       (1/3, 3/3).
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

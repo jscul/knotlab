@@ -1752,8 +1752,27 @@ So network holes come in two kinds:
    - **Reading.** Native separation tells a torus from a disc: a ring of cuts that does not bound leaves the lattice in one piece. The
      gap at the antipode is a symmetry, not a range: on rectangular tori it appears only on some shapes (computed). No census was
      used, and no lag cutoff.
-   - **Next (research directions).** Genus read by rings of cuts (Payoff 3/3, Concreteness 2/3), or which lattices compose everywhere
-     (Payoff 2/3, Concreteness 3/3) ([decision note](../research/LATTICE-NET-20261108-001/lattice_net.md)).
+   - **Next (taken).** Genus read by rings of cuts (next entry)
+     ([decision note](../research/LATTICE-NET-20261108-001/lattice_net.md)).
+
+   **2026-11-08: genus read by rings of cuts** (`GENUS-CUT-20261108-001`).
+   - **The question.** Can a network of rings across time count the handles of the surface its contacts make, by how many rings of
+     cuts it survives in one piece?
+   - **The pieces are read exactly (proved).** After any contacts are frozen, the pieces read from which contacts need which rings are
+     the pieces of the ring graph without the cut contacts: every uncut contact needs both of its rings from lag 1, and needs never
+     cross a cut.
+   - **Two per handle (proved).** A family of rings of cuts keeps the network in one piece exactly when it is independent in the
+     surface's homology mod 2. So at most two per handle keep one piece, some two per handle do, and one more always separates. The
+     torus cut round both ways stays in one piece and a third ring separates it; on genus 2, four keep one piece and five never do.
+   - **A persistent genus-2 lattice (proved).** The regular network of 16 rings with three contacts each, its rotations from GL(2,3),
+     keeps every contact persistent at every lag and reads its genus the same way; so does a 56-ring network of genus 3 (stress test).
+   - **One piece is not full reach (computed).** On the torus cut open both ways, every contact still needs every ring on sides 3 to 20
+     except 8 and 16. No census was used, and no lag cutoff.
+   - **Reading.** Adjacency, native paths, separation and the genus of the contacts' surface are now read in one substrate across
+     time. What remains of the order, distance, waits on the owner.
+   - **Next (research directions, or a pause until the owner rules on distance).** Grow a network of rings from a law (Payoff 3/3,
+     Concreteness 1/3), or full reach on the cut-open torus (Payoff 2/3, Concreteness 3/3)
+     ([decision note](../research/GENUS-CUT-20261108-001/genus_cut.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

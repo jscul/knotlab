@@ -1,0 +1,1234 @@
+{
+ "checks": {
+  "every periodic labelling found obeys the law tile by tile": true,
+  "every decoration has a verdict at k = 1": true
+ },
+ "controls": {
+  "relabelling 0 and 1 gives the same verdicts": true,
+  "the constant decorations admit R_1": true,
+  "an empty law is unsatisfiable on a box": true,
+  "a law allowing every labelling is satisfiable on a box": true,
+  "genuine labelled pinwheel collars lie in the law": true
+ },
+ "census": {
+  "setup seconds": 29.5,
+  "collar keys (both seeds), complete": [
+   200,
+   108
+  ],
+  "rhombus cell tiles, collar types": [
+   4,
+   2
+  ],
+  "brick lattice, cell tiles": [
+   [
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   8
+  ],
+  "rhombus verdict patterns (k = 1, 2, 3)": {
+   "k1:admitted": 172,
+   "k1:excluded k2:admitted": 792,
+   "k1:excluded k2:excluded k3:admitted": 30,
+   "k1:excluded k2:excluded k3:excluded": 30
+  },
+  "survivors (excluded at k = 1, 2, 3)": [
+   {
+    "sig": [
+     [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      0,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      0,
+      1,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "admitted",
+      "torus": [
+       1,
+       0,
+       1
+      ],
+      "labelling verified": true
+     }
+    ]
+   },
+   {
+    "sig": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      0
+     ]
+    ],
+    "rhombus k=4": [
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ],
+    "brick": [
+     {
+      "k": 2,
+      "verdict": "excluded"
+     },
+     {
+      "k": 3,
+      "verdict": "excluded"
+     },
+     {
+      "k": 4,
+      "verdict": "excluded"
+     }
+    ]
+   }
+  ],
+  "genuine labelled T_4: interior collars tested, outside the law": {
+   "((0, 1, 1, 1, 0), (1, 1, 1, 0, 1))": [
+    472,
+    0
+   ],
+   "((0, 1, 0, 1, 0), (1, 0, 1, 0, 1))": [
+    472,
+    0
+   ],
+   "((1, 0, 0, 0, 0), (0, 1, 1, 1, 1))": [
+    472,
+    0
+   ]
+  }
+ },
+ "status": "passed",
+ "failures": [],
+ "runtime_seconds": 379.8
+}

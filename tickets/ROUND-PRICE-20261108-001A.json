@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COLLAR-PLANE-20261108-001A",
+    "COLLAR-PLANE-20261108-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "ROUND-PRICE-20261108-001A-P001"
+  },
+  "id": "ROUND-PRICE-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof with exact finite computation. Lemma: a labelling that is a function of a bounded window of the unlabelled pinwheel tiling adds nothing, since the k-fold cut rhombus crystal R_k obeys every labelled law built from such labels once k is large (COLLAR-PLANE-20261108-001A); child indices are such labels (COLLAR-PLANE-20261108-001B). Census: for each of the 1,024 decorated substitutions on two labels (a parent with label a gives its child i the label s(a)_i), compute the labelled collar law (closure of labelled collars from one labelled tile of either handedness) and decide for k = 1, 2, 3 whether R_k admits a labelling obeying it: a periodic labelling found by SAT on tori of index up to 4, or exclusion certified by an unsatisfiable finite box. Labellable at k implies labellable at every larger k. Controls: relabelling the two labels gives the same verdicts; the constant decorations admit the crystal at k = 1; a genuine labelled pinwheel patch satisfies the law.",
+  "ownership": {
+    "root": false,
+    "scope_id": "ROUND-PRICE-20261108-001"
+  },
+  "parent": "ROUND-PRICE-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (ROUND-PRICE-20261108-001A-P001): labels read from a bounded window of the pinwheel never force aperiodicity (the cut rhombus crystal obeys their law at every radius); for decorated substitutions the rule radius does not matter; of the 1,024 one-bit decorated substitutions, 1,006 admit a periodic plane (the rhombus crystal by level 4 or the brick crystal by level 4, periodic labellings checked tile by tile) and 18, nine up to exchanging the labels, exclude both crystals at every level tested (rhombus 1 to 4, brick 2 to 4).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "One hidden bit per tile against the rhombus crystal"
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": 3,
+ "artifact_id": "ROUND-PRICE-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "ROUND-PRICE-20261108-001Z",
+ "proof": "ROUND-PRICE-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Administrative closure ledger of ROUND-PRICE-20261108-001 with no new claim: ticket A (proved) shows that labels read from a bounded window never force the pinwheel, that for decorated substitutions the rule radius does not matter, and that 1,006 of the 1,024 one-bit decorated substitutions admit a periodic plane while 18 exclude both crystals tested; ticket B (proved) shows that for those 18 parent labels are forced but pairwise consistency leaves labelled parent collars outside the law, and that 2 of them admit a third crystal.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json": "Proved",
+   "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/result.json": "passed",
+   "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/manifest.json": "Proved",
+   "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "proof_a_findings": true,
+  "proof_b_findings": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

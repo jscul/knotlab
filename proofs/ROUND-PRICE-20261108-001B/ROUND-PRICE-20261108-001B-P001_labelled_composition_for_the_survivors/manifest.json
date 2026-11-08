@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ROUND-PRICE-20261108-001B-P001",
+  "canonical_id": "ROUND-PRICE-20261108-001B-P001",
+  "kind": "proof",
+  "ticket": "ROUND-PRICE-20261108-001B",
+  "proof": "ROUND-PRICE-20261108-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Labelled composition for the surviving one-bit decorations",
+  "status": "Proved",
+  "claim": "A decoration s forces the pinwheel if (a) in every arc-consistent level-one collar the central tile's children can carry only s(0) or s(1) when their labelled collars lie in s's law, and (b) every labelled level-one collar whose decorated cut is legal and which survives arc consistency is itself in the law: then composition is forced at every level. For each of the nine one-bit decorations (up to exchanging labels) that exclude the rhombus and brick crystals, (a) holds and (b) fails at the pairwise level: 30 to 250 non-key and 50 to 125 key labelled level-one collars outside the law survive. One of the nine, s(0) = 10001, s(1) = 01100, with its relabelling, admits a brick-row crystal with period-4 diagonals after three cuts; the other eight admit none of those 16 crystals within three cuts on tori of index 1 or 2.",
+  "dependencies": [
+    "ROUND-PRICE-20261108-001A",
+    "COLLAR-PLANE-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A labelled key of a decoration's law fails to survive arc consistency.",
+    "The constant decoration, which admits the rhombus crystal, keeps no survivor outside its law.",
+    "A law or its labelled level-one law is not mirror symmetric."
+  ],
+  "lineage": {
+    "home_scope": "ROUND-PRICE-20261108-001",
+    "epic_path": [
+      "ROUND-PRICE-20261108-001"
+    ],
+    "parents": [
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json",
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/result.json",
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/decor_lib.py",
+      "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json",
+      "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/level_one_law.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json": "5491d80378a458fbf114f4ba0919a58c01df4ff031149c9cb81eba405cb7ab6b",
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/result.json": "f7b49d391593202864d18db60a1f69cde082069f78c081d851a9766f0ea0cf7b",
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/decor_lib.py": "d4eaad4c5611731ef204cff6aad546ca93b0796c26cb47b293557d879b0e8d46",
+    "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json": "041cb4f76ad885b512368f3fc5477222d40cba8d5e538ae50466054f214e7a25",
+    "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/level_one_law.json": "38743eb761eca1f56b53db391c9b524ed06f970e1ee1752654dbccd1249ed666"
+  },
+  "paths": {
+    "manifest": "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/manifest.json",
+    "identity": "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/identity.json",
+    "proof": "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/proof.md",
+    "check": "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/check.py",
+    "result": "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json",
+    "directory": "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The nine one-bit decorated substitutions surviving ticket A (and the constant decoration as a control); the arc-consistent core of the level-one law; pairwise (arc) consistency only. Exact computation with a SAT solver.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "the reduction by hand; every finite statement computed exactly with controls; no human or external review",
+    "novelty": "known-with-delta for the route (forced unique composition: Mozes 1989, Goodman-Strauss 1998, Radin 1994); no-overlap-found for the one-bit test on the pinwheel"
+  }
+}

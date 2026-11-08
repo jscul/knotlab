@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ROUND-PRICE-20261108-001Z-P001",
+  "canonical_id": "ROUND-PRICE-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "ROUND-PRICE-20261108-001Z",
+  "proof": "ROUND-PRICE-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the price of roundness in the plane",
+  "status": "Proved",
+  "claim": "Administrative closure ledger of ROUND-PRICE-20261108-001 with no new claim: ticket A (proved) shows that labels read from a bounded window never force the pinwheel, that for decorated substitutions the rule radius does not matter, and that 1,006 of the 1,024 one-bit decorated substitutions admit a periodic plane while 18 exclude both crystals tested; ticket B (proved) shows that for those 18 parent labels are forced but pairwise consistency leaves labelled parent collars outside the law, and that 2 of them admit a third crystal.",
+  "dependencies": [
+    "ROUND-PRICE-20261108-001A",
+    "ROUND-PRICE-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound file no longer matches its digest.",
+    "A proof is not Proved or its check did not pass.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "ROUND-PRICE-20261108-001",
+    "epic_path": [
+      "ROUND-PRICE-20261108-001"
+    ],
+    "parents": [
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json",
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/result.json",
+      "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/manifest.json",
+      "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json": "5491d80378a458fbf114f4ba0919a58c01df4ff031149c9cb81eba405cb7ab6b",
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/result.json": "f7b49d391593202864d18db60a1f69cde082069f78c081d851a9766f0ea0cf7b",
+    "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/manifest.json": "2efd700fda92792335acaec05342f68eb82df83b3aa8e6fc5a90d7718cc61cf9",
+    "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json": "567e3436585e4bb51a5a69ee66f2e7ead892188a348aa03afe55880328f9cc37"
+  },
+  "paths": {
+    "manifest": "proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/proof.md",
+    "check": "proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/check.py",
+    "result": "proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/result.json",
+    "directory": "proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's two tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

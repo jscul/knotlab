@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ROUND-PRICE-20261108-001A-P001",
+  "canonical_id": "ROUND-PRICE-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "ROUND-PRICE-20261108-001A",
+  "proof": "ROUND-PRICE-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "One hidden bit per tile against the pinwheel's crystals",
+  "status": "Proved",
+  "claim": "Hidden labels that are functions of a bounded window of the pinwheel tiling never force aperiodicity: the cut rhombus crystal, labelled by the same function, obeys their labelled law at every radius after enough cuts. For decorated substitutions (a child's label fixed by its parent's label and its child index), a crystal admitted by the labelled collar law is admitted by the law of every radius after more cuts. Of the 1,024 decorated substitutions on two labels, 172 admit the once-cut rhombus crystal R_1, 792 first admit R_2 and 30 first admit R_3 (periodic labellings, checked tile by tile); of the 30 that exclude R_1 to R_3 (unsatisfiable boxes), 4 admit R_4, 8 admit the brick crystal at level 2, 3 or 4, and 18 (nine up to exchanging the labels) exclude R_4 and the brick crystal at levels 2 to 4. So 1,006 one-bit decorations admit a periodic plane at every radius, and 18 exclude both crystals at every level tested.",
+  "dependencies": [
+    "COLLAR-PLANE-20261108-001A",
+    "COLLAR-PLANE-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A periodic labelling reported as obeying a law fails the tile-by-tile check.",
+    "Relabelling the two labels changes a verdict.",
+    "A genuine labelled pinwheel collar lies outside its decoration's law.",
+    "The empty-law or full-law encoding control gives the wrong answer."
+  ],
+  "lineage": {
+    "home_scope": "ROUND-PRICE-20261108-001",
+    "epic_path": [
+      "ROUND-PRICE-20261108-001"
+    ],
+    "parents": [
+      "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json",
+      "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/result.json",
+      "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json",
+      "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json": "a591515f84efa12e482f711997843fa1404640d96983476b239553cb2893768b",
+    "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/result.json": "7eba4a5d7d12feef19740028363dd865c6162149f3340945e4d90bd27aec81cf",
+    "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json": "041cb4f76ad885b512368f3fc5477222d40cba8d5e538ae50466054f214e7a25",
+    "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas_lib.py": "e0b22c79c4428ccdae63b76a9d6d88dc190e9a0dfc549f0b5fdb7c21a293915f"
+  },
+  "paths": {
+    "manifest": "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json",
+    "identity": "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/identity.json",
+    "proof": "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/proof.md",
+    "check": "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/check.py",
+    "result": "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/result.json",
+    "directory": "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Decorated substitutions of the pinwheel with two labels and their labelled collar laws (radius one in tiles); the rhombus crystal at k = 1 to 3 (and 4 for survivors) and the brick crystal at k = 2 to 4; periodic labellings on tori of index 1, 2 and 4 and exclusion on one finite box. Exact computation with a SAT solver.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "lemmas by hand; the census computed exactly with a SAT solver, every admission checked tile by tile, with controls; no human or external review",
+    "novelty": "known-with-delta for Lemma 1 (decorations must carry non-local information is the standard reason local rules need them); no-overlap-found for the one-bit census of the pinwheel (decorated matching rules: Radin 1994, Mozes 1989, Goodman-Strauss 1998, with large alphabets; least aperiodic Wang set: Jeandel and Rao 2021). Folklore risk low for the census."
+  }
+}

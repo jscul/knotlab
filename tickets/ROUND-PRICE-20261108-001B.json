@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COLLAR-PLANE-20261108-001B",
+    "ROUND-PRICE-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "ROUND-PRICE-20261108-001B-P001"
+  },
+  "id": "ROUND-PRICE-20261108-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof with exact finite computation. For each of the nine one-bit decorations (up to exchanging the labels) that exclude both crystals in ticket A, test the route by which a decorated law would force the pinwheel: composition at every level. (1) Every complete collar in the arc-consistent core of COLLAR-PLANE-20261108-001B's level-one law: can the labels of its central tile's five children avoid s(0) and s(1)? If never, parent labels are forced. (2) The labelled level-one law Q(s): labellings of core collars whose decorated cut gives every child a collar of the decoration's law. (3) Arc consistency on Q(s), with labels agreeing on shared tiles. (4) Whether every survivor is a labelled collar of the law itself; if so, composition is forced at every level and the decoration forces the pinwheel. Controls: the genuine labelled pinwheel collars survive, and a decoration that admits a crystal (ticket A) keeps a survivor outside its law.",
+  "ownership": {
+    "root": false,
+    "scope_id": "ROUND-PRICE-20261108-001"
+  },
+  "parent": "ROUND-PRICE-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (ROUND-PRICE-20261108-001B-P001): a decoration forces the pinwheel if parent labels are forced and every surviving labelled level-one collar lies in its law; for the nine one-bit survivors of ticket A parent labels are forced but pairwise consistency leaves labelled level-one collars outside the law, so forcing is not settled; one of the nine (10001, 01100, with its relabelling) admits a period-4 brick crystal after three cuts, leaving sixteen one-bit candidates (eight up to relabelling).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Do the eighteen surviving one-bit decorations force composition?"
+}

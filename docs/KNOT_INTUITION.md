@@ -3331,6 +3331,19 @@ So network holes come in two kinds:
      growth rule place the six digons itself, so that a law grows its own sphere and with it the knot's contradiction?
      - **The alternative.** Large uniform contradictions beyond the Fano plane (1/3).
 
+   **2026-11-07: the only uniform contradiction** (`UNIFORM-FANO-20261107-001`).
+   - **Proved.**
+     - **Sign patterns.** With non-constant uniform signs the all-zero assignment satisfies every line, so only equal signs matter: a
+       plain 2-colouring.
+     - **The brace lemma.** If a law's symmetries are transitive on its points and on its lines, its incidence graph is a brace. Two
+       translates of a smallest tight shore share at most one point, and counting forces a shore too small to hold a line.
+     - **The conclusion.** By Seymour's dictionary and McCuaig's theorem, the Fano plane is the only uniform law whose knot contradicts
+       itself. 439 Cayley laws agree.
+   - **Reading.** Uniform worlds are coherent with one exception, a single handle. Every other contradiction of the knot, its hardness
+     included, needs a law that distinguishes places.
+   - **Next (taken at once, the owner's (i)).** How a law can distinguish places by itself. Rated Payoff 3/3 (Barrier), Concreteness 1/3
+     (Stated), so the first step is scoping.
+
    **2026-11-07: round without coins** (`PINWHEEL-ROUND-20261107-001`).
    - **The question.** Can a law with no coins, and no Poisson points, have a round circle?
    - **Already known (Radin–Sadun 1996).** In Conway and Radin's pinwheel tiling, the shortest path along tile edges between points R

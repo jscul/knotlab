@@ -74,7 +74,7 @@ Epic `GROWTH-LAW-20261107-001` (program topology), 2026-11-07.
 ## Stress test
 
 One size past each computed claim (`stress_test.py`, `stress_test_growth.py` and `stress_test_c.py` here, with their outputs). Each
-reuses the tickets' own code. One part was still running at the commit and is marked pending.
+reuses the tickets' own code. The 1,500-tile oracle finished after the epic's commit and was folded in by a follow-up commit.
 
 | Claim | One size past | Result |
 | --- | --- | --- |
@@ -86,7 +86,7 @@ reuses the tickets' own code. One part was still running at the commit and is ma
 | Every coin run of the collar law leaves the pinwheel (B; seed of handedness +1, seeds 1..20) | The mirror seed (handedness −1), bfs and random, seeds 1..10; 20 more bfs seeds (21..40) | pass: 20 of 20 mirror runs and 20 of 20 new runs dead-ended, within 29 to 398 tiles; no new patch embeds |
 | Four forced runs reached 500 tiles off the pinwheel (B) | The same four continued to 1,000 tiles | 3 of the 4 then dead-ended (at 543, 673 and 979 tiles); one reached 1,005 tiles, still off the pinwheel, with 89 of 1,118 interior darts breaking the radius-2 atlas |
 | The radius-2 law gets stuck too (C; bfs and random) | The forced-first order, seeds 1..10, where the collar law alone let 4 runs wander 500 tiles off the pinwheel | pass: 10 of 10 dead-ended, within 124 to 309 tiles, with no interior dart off the radius-2 atlas; the four wandering seeds now stop at 124 to 309 tiles (`stress_test_c_partial.jsonl`) |
-| Few real bits (C; oracle to 1,000 tiles) | The oracle to 1,500 tiles, bfs seeds 1..3 | **pending**: running detached; its result will be folded in by a follow-up commit (the owner's rule of 2026-11-08: long stress tests do not block progress) |
+| Few real bits (C; oracle to 1,000 tiles) | The oracle to 1,500 tiles, bfs seeds 1..3 (run after the epic's commit, under the owner's rule of 2026-11-08 that long stress tests do not block progress) | pass: all three reached 1,500 tiles inside the pinwheel; from 1,000 to 1,500 tiles the real bits after the seed stayed at 8.3 and 7.2 for seeds 1 and 2 and rose from 6.2 to 7.2 for seed 3 (one more free choice, at 1,167 tiles), while the apparent bits rose by 16 to 29 (`stress_test_c.json`) |
 
 ## Literature and provenance
 

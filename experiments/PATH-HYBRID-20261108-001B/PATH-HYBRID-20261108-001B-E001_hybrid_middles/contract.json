@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PATH-HYBRID-20261108-001B-E001",
+  "ticket": "PATH-HYBRID-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "NATIVE-PATH-20261108-001 found that a second middle ring must both keep its own first row and carry the first ring's influence, and that additive rings do the first while a shift does the second. Does a hybrid second middle ring, some cells shifting, some keeping their state (rule 204), some additive, give a native four-ring path?",
+  "public_inputs": {
+    "library": "experiments/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/hybrid_lib.py (sha256 18643b53edb2043060713c3d618f6c5685941f7cd56d80dacf970e9de6c86eb0), on proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py (sha256 52ce36a513db4fef263abc91d3b852430334e65fac0e146d6d37e8ddd0b060be): linear_matrix, analyze, mixed_state_map for hybrid rings.",
+    "carriers": "artifacts/AFFINE-WIRE-20261108-001B/AFFINE-WIRE-20261108-001B-E001_affine_search/run/positives.json (sha256 6e5f0e3804b3390214b0c75495c3ba5beb909d32044b0015149ce809fbb15c3e): the 20 smallest carrying chains with self-blind laws (both contacts persistent, composing, d >= 2).",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Each of the 20 carriers' first two rings and contacts; its old end ring becomes the second middle ring C, of 4 cells (contacts two apart) or 5 (two or three apart), each non-contact cell with its own rule among 170, 240, 204, 150, 90, 60 and 102; c2 keeps its ring-B reading and reads ring C by x, y or x + y; the end ring D runs 90, 150, 60 or 204 on 3 or 4 cells; c3 takes every self-blind law. In all 3,175,200 paths.",
+    "exactness": "Every verdict is exact by the row-sequence reduction, which holds for hybrid rings since every cell is linear."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping paths"
+  ],
+  "primary_observable": "The number of native paths, the kinds of cells in their hybrid rings, and the smallest verified ones.",
+  "cheapest_meaningful_control": "The ten smallest native paths, if any, must agree on their full state spaces.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control, or a count of zero.",
+  "decision_or_followup_rule": "H1, frozen: some hybrid second middle ring gives a native path. If it holds, verify and characterize: which cells carry and which remember. If not, record the absence for this family.",
+  "stop_rule": "Stop when every path of the family has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: this family only.",
+    "Two-time knots only (A30).",
+    "Hybrid rings are inhomogeneous automata, a wider substrate than one rule per ring."
+  ],
+  "feasibility_disclosure": "Before freezing: hybrid_lib was checked against path_lib on uniform rings and against the full state map on hybrid rings (no mismatch on 500 paths). run.py --pilot timed 2,000 random paths at 2.0 s and printed no verdicts."
+}

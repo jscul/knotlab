@@ -1,0 +1,36 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PATH-HYBRID-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "PATH-HYBRID-20261108-001Z",
+ "proof": "PATH-HYBRID-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing PATH-HYBRID-20261108-001: one line per conclusion with its status, novelty and evidence (tickets A, B and C, exploratory experiments), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/PATH-HYBRID-20261108-001A/PATH-HYBRID-20261108-001A-E001_broad_sweep/contract.json": "Frozen",
+   "artifacts/PATH-HYBRID-20261108-001A/PATH-HYBRID-20261108-001A-E001_broad_sweep/run/result.json": "run output",
+   "experiments/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/contract.json": "Frozen",
+   "artifacts/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/run/result.json": "run output",
+   "experiments/PATH-HYBRID-20261108-001C/PATH-HYBRID-20261108-001C-E001_characterization/contract.json": "Frozen",
+   "artifacts/PATH-HYBRID-20261108-001C/PATH-HYBRID-20261108-001C-E001_characterization/run/result.json": "run output"
+  },
+  "experiments_frozen_exploratory": true,
+  "experiment_a_findings": true,
+  "experiment_b_findings": true,
+  "experiment_c_findings": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "supported",
+   "C": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

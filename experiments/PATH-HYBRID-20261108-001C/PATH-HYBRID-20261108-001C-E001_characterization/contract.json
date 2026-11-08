@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PATH-HYBRID-20261108-001C-E001",
+  "ticket": "PATH-HYBRID-20261108-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "What makes ticket B's native hybrid paths work: is hybridness necessary, does nativeness transport, and which cells remember?",
+  "public_inputs": {
+    "library": "experiments/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/hybrid_lib.py (sha256 18643b53edb2043060713c3d618f6c5685941f7cd56d80dacf970e9de6c86eb0); GROWTH-LAW-20261107-001A's generic enumerator and knotlab check for the canonical check.",
+    "paths": "artifacts/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/run/paths.json (sha256 c647436f3c56b1bb5ca2af503bc68da57e43fafeae8874ef4dfc57e62c0ca0b5): ticket B's paths with all three contacts persistent; its 1,120 native ones are measured.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "measures": "(1) each native path with ring C made uniform under each of the 8 linear rules; (2) ring C grown by one cell on the far side of c3, with the rule of either neighbour, and rings A or D grown by one cell; (3) the ring-C cells whose first rows stay in c3's eventual support; (4) for the smallest native path, the knots of c3's two-time law at lags L to L + 5 by the generic enumerator, and knotlab check on the parity of c3's eventual support."
+  },
+  "forbidden_inputs": [
+    "Changing the measures after seeing results"
+  ],
+  "primary_observable": "How many native paths need hybridness; how often nativeness survives one more cell; the canonical check.",
+  "cheapest_meaningful_control": "The canonical check must find, at every lag from L on, knots through c3(T) that meet all four rings.",
+  "resource_budget": {
+    "wall_minutes": 20,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The canonical check.",
+  "decision_or_followup_rule": "No frozen hypothesis beyond the control: report the measures. If every native path needs hybridness, record that uniform second middle rings did not give native paths here.",
+  "stop_rule": "Stop when the measures are computed.",
+  "nonclaims": [
+    "Exploratory: ticket B's paths only.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket B's result and interpretation had been read. No measure was computed."
+}

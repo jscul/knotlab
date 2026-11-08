@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PATH-HYBRID-20261108-001A-E001",
+  "ticket": "PATH-HYBRID-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Is there a native four-ring path when every ring may run any linear rule and every contact any law, at small sizes?",
+  "public_inputs": {
+    "library": "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py (sha256 52ce36a513db4fef263abc91d3b852430334e65fac0e146d6d37e8ddd0b060be): analyze; NATIVE-PATH-20261108-001B's run.py for the laws and the full-state-space check.",
+    "run": "run.py in this folder, 16 worker processes; long-running, registered in docs/LONG_RUNNING.md as PATH-HYBRID-A1.",
+    "family": "Every linear rule (0, 204, 240, 170, 60, 102, 90, 150) on each of the four rings: 4,096 tuples. Shapes 3/4/4/3 with both middle rings' contacts two apart, and 3/5/5/3 with them two or three apart: 5 shapes. Every law (10) at each of the three contacts: 1,000 triples. In all 20,480,000 paths.",
+    "exactness": "Every verdict is exact by the row-sequence reduction."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping paths"
+  ],
+  "primary_observable": "The number of native paths, and of paths whose three contacts all persist; the rules and laws of the native ones.",
+  "cheapest_meaningful_control": "The ten smallest native paths, if any, must agree on their full state spaces.",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control, or a count of zero.",
+  "decision_or_followup_rule": "H1, frozen: some native path exists in the sweep. If it holds, verify and characterize the smallest. If not, the absence is recorded for this family.",
+  "stop_rule": "Stop when every path of the family has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: this family only.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing: NATIVE-PATH-20261108-001's results had been read (no native path in three restricted families). run.py --pilot timed 2,000 random paths of this family at 1.1 s and printed no verdicts; the full run is expected to take about 12 minutes."
+}

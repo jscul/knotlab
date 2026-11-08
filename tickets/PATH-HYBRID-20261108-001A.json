@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "NATIVE-PATH-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "PATH-HYBRID-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory sweep under a frozen contract, exact by NATIVE-PATH-20261108-001A's reduction, run in the background and registered in docs/LONG_RUNNING.md: every linear rule on each of the four rings (4,096 rule tuples), paths of 3/4/4/3 and 3/5/5/3 cells with the middle rings' contacts at least two apart, and every law at each of the three contacts; count the paths whose contacts all persist and the native paths, and verify the smallest native ones on the full state space.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PATH-HYBRID-20261108-001"
+  },
+  "parent": "PATH-HYBRID-20261108-001",
+  "schema_version": 1,
+  "status": "Supported 2026-11-08 (exploratory; H1 holds): of 20,480,000 four-ring paths with one linear rule per ring and any laws, 17,192 keep all three contacts and 16 are native, all one construction (3-cell shift end rings, 5-cell rule-150 middle rings, c1 and c3 reading both neighbours, c2 relaying along the short arcs); the ten smallest verified on full state spaces. One size past, none of 11,600 larger versions or 512 five-ring versions is native.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "A broad sweep of mixed four-ring paths"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PATH-HYBRID-20261108-001Z-P001",
+  "canonical_id": "PATH-HYBRID-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "PATH-HYBRID-20261108-001Z",
+  "proof": "PATH-HYBRID-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of paths through mixed middle rings",
+  "status": "Proved",
+  "claim": "Ledger closing PATH-HYBRID-20261108-001: one line per conclusion with its status, novelty and evidence (tickets A, B and C, exploratory experiments), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PATH-HYBRID-20261108-001A",
+    "PATH-HYBRID-20261108-001B",
+    "PATH-HYBRID-20261108-001C"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract or run output changes.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PATH-HYBRID-20261108-001",
+    "epic_path": [
+      "PATH-HYBRID-20261108-001"
+    ],
+    "parents": [
+      "experiments/PATH-HYBRID-20261108-001A/PATH-HYBRID-20261108-001A-E001_broad_sweep/contract.json",
+      "artifacts/PATH-HYBRID-20261108-001A/PATH-HYBRID-20261108-001A-E001_broad_sweep/run/result.json",
+      "experiments/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/contract.json",
+      "artifacts/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/run/result.json",
+      "experiments/PATH-HYBRID-20261108-001C/PATH-HYBRID-20261108-001C-E001_characterization/contract.json",
+      "artifacts/PATH-HYBRID-20261108-001C/PATH-HYBRID-20261108-001C-E001_characterization/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/PATH-HYBRID-20261108-001A/PATH-HYBRID-20261108-001A-E001_broad_sweep/contract.json": "953ce9d1bf15da3d32c7eb39f050d3ec91091152949027da5766c23faf8e7555",
+    "artifacts/PATH-HYBRID-20261108-001A/PATH-HYBRID-20261108-001A-E001_broad_sweep/run/result.json": "2ae5c54abfec8b266809e10841584bf6bd868d1b19d074caa8c067bbc16c2761",
+    "experiments/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/contract.json": "f6319318f0bb8a85f32fc5650eb58752d315fe0a10f7795634f389155bfc147b",
+    "artifacts/PATH-HYBRID-20261108-001B/PATH-HYBRID-20261108-001B-E001_hybrid_middles/run/result.json": "27f0a6cca1c2cebf8e253c684051e18542ce6386db6e25d8930cb7def41bd222",
+    "experiments/PATH-HYBRID-20261108-001C/PATH-HYBRID-20261108-001C-E001_characterization/contract.json": "e67fc726e26a55aae7bb4817561cfd5e426e3c90035d727d257c365cd90ac9f4",
+    "artifacts/PATH-HYBRID-20261108-001C/PATH-HYBRID-20261108-001C-E001_characterization/run/result.json": "f990ea3d930d2cdbd5667a3500336bb52c3a11a50843d961147f6e7ed9e58a7e"
+  },
+  "paths": {
+    "manifest": "proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/PATH-HYBRID-20261108-001Z/PATH-HYBRID-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's three tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

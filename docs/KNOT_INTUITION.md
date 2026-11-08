@@ -3390,10 +3390,25 @@ So network holes come in two kinds:
    - **Provenance.** Local growth rules that stall without non-local information (Onoda, Steinhardt, DiVincenzo and Socolar 1988),
      capsids assembled by local rules with conformational states (Berger, Shor et al. 1994), and tile complexity in self-assembly are
      classical. The contrast for the knot spheres is new as far as found.
-   - **Next (recommended; started).** Hardness without roundness: does the knot's contradiction stay hard on spheres whose corners are
-     merely far apart? Grown lopsided spheres have elimination width 1.0 to 1.9 √n, against 2.1 √n on K_m (upper bounds only).
-     Rated Payoff 2/3 (Substantial), Concreteness 2/3 (Testable).
+   - **Next (taken as `HARD-FLAT-20261107-001`).** Hardness without roundness: does the knot's contradiction stay hard on spheres whose
+     corners are merely far apart? Grown lopsided spheres have elimination width 1.0 to 1.9 √n, against 2.1 √n on K_m (upper bounds
+     only). Rated Payoff 2/3 (Substantial), Concreteness 2/3 (Testable).
      - **The alternatives.** A theorem for every accretion law (2/3, 2/3); the fewest hidden bits that single out K_m (1/3, 2/3).
+
+   **2026-11-07: hardness needs a flat disc, not roundness** (`HARD-FLAT-20261107-001`).
+   - **The question.** Does the knot's hard contradiction need the round knot sphere, or only corners kept far apart?
+   - **Proved.**
+     - **Flat states everywhere.** On every two-kind sphere the frames have label holonomy −1 at each of the six corners and are flat
+       elsewhere. So a flat state with one violated line exists, as on the knot sphere.
+     - **The Sperner reduction needs only a flat disc.** Sperner's lemma sits inside any corner-free lattice triangle whose boundary
+       reaches the corners by disjoint cut paths. So the knot needs resolution width at least a constant times the radius of the
+       largest such flat disc, and at most O(√n).
+   - **Computed.** Lopsided spheres grown with local coins have flat discs of radius 0.14 to 0.35 √n, against 0.25 √n on the knot
+     sphere (8 spheres up to 252 points). On a thin tube the largest disc reaches around the band.
+   - **Reading.** Roundness costs a witness, but hardness, as far as resolution width shows, does not. The hard part of the knot's
+     contradiction lives in a flat region far from every corner, where Sperner's lemma sits.
+   - **Next (paused).** The owner asked to wrap up open lines. The sphere line stops here. When it reopens, candidates are whether
+     grown spheres stay fat, and whether resolution size also follows the flat radius.
 
    **2026-11-07: round without coins** (`PINWHEEL-ROUND-20261107-001`).
    - **The question.** Can a law with no coins, and no Poisson points, have a round circle?

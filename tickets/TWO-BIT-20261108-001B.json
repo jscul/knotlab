@@ -17,7 +17,7 @@
   },
   "parent": "TWO-BIT-20261108-001",
   "schema_version": 1,
-  "status": "Retired 2026-11-08 at the preliminary closure: the session restart killed its run during setup, and the coordinator asked to commit the census first, so this forcing test (the same frozen contract, TWO-BIT-20261108-001B-E001) runs as the epic's registered stress test TWO-BIT-B1 and is folded into the decision note when it finishes.",
+  "status": "Retired 2026-11-08 at the preliminary closure into the epic's stress test TWO-BIT-B1 (the same test). Folded in: E001 produced no result (a load-order failure, then two out-of-memory kills at about 59 GB); E002 passed its control and hit its 16 GB cap; E003 (vectorized) found parents forced and off-law parents surviving arc consistency in all 12 sampled survivors, and no crystal in its torus searches.",
   "status_class": "retired",
   "stop_rule": "",
   "title": "One bounded forcing test on the surviving products"

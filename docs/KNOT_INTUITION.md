@@ -4341,17 +4341,20 @@ So network holes come in two kinds:
    - **Next (taken).** Two bits per tile, products of one-bit decorations first (next entry)
      ([decision note](../research/BOND-CHAIN-20261108-001/bond_chain.md)).
 
-   **2026-11-08: two bits per tile, as products** (`TWO-BIT-20261108-001`, preliminary).
+   **2026-11-08: two bits per tile, as products** (`TWO-BIT-20261108-001`).
    - **The question.** One hidden bit per tile never forces the pinwheel. Can two? Start with products: a tile carries two bits,
      each passed to the children by its own one-bit decoration.
    - **Most fail (exploratory).** Of the 139,656 classes of products, 136,415 let a known crystal through with a periodic two-bit
      labelling, so they fail at every radius.
    - **No crystal tried gets through 3,241.** In 646 the two bits want different crystals; in 2,595 they share crystals but cannot be
      laid on them together. A second bit can thus shut out every crystal found so far, which one bit never could.
+   - **The forcing route stalls on a sample (exploratory).** On 12 of them drawn at random, every parent's labels are forced, but
+     local consistency leaves off-law parents in all 12, and bounded torus searches from them found no crystal. One product keeps
+     only label defects: no non-pinwheel parent survives.
    - **Reading.** These are candidates, not results: the last one-bit decoration also resisted every crystal tried until a new
-     kind turned up one level up. The stop rule, frozen at the start, runs one bounded forcing test on 12 of them (pending) and
-     then pauses the line.
-   - **Next (proposed).** None until the forcing test is in ([decision note](../research/TWO-BIT-20261108-001/two_bit.md)).
+     kind turned up one level up. The stop rule, frozen at the start, pauses the line here.
+   - **Next (proposed).** The forcing route on the product that keeps only label defects, 01101/10001 x 10001/00010
+     ([decision note](../research/TWO-BIT-20261108-001/two_bit.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

@@ -1735,8 +1735,25 @@ So network holes come in two kinds:
    - **Reading.** Loops can share rings when no ring is special: every contact must look the same from both of its rings. The
      lattices of rings are the first two-dimensional arrangements of contacts that all persist across time at every size, by proof.
      The lattice is given, not grown from a law.
-   - **Next (awaiting a go-ahead).** Composition and separation across a lattice of rings (Payoff 3/3, Concreteness 2/3)
+   - **Next (taken).** Composition and separation across a lattice of rings (next entry)
      ([decision note](../research/LOOP-NET-20261108-001/loop_net.md)).
+
+   **2026-11-08: composition and separation across a lattice of rings** (`LATTICE-NET-20261108-001`).
+   - **The question.** On a square torus of rings whose contacts all persist, does influence reach every ring, and do rings of cuts
+     separate the torus as closed curves separate a surface?
+   - **Composition is the four-neighbour sum (proved).** Two steps from a contact land on the four neighbouring contacts of its kind,
+     one walk each, so influence spreads by the powers of x + 1/x + y + 1/y over GF(2). A contact needs a ring exactly when an odd
+     number of walks lead from one of the ring's contacts to it, first at lag g·k + 1 and then again and again.
+   - **Odd sides reach everywhere, even sides never the antipode (proved).** On odd tori every contact needs every ring. On even tori
+     the routes round the torus in opposite directions pair up and cancel, so no contact ever needs the ring halfway round both ways.
+   - **Rings of cuts (proved).** Cutting the contacts round any set of rings separates it; on odd tori, where every contact needed
+     every ring, that is a native separation across time. One ring of cuts round the torus does not separate, since influence goes
+     round the other way; two do.
+   - **Reading.** Native separation tells a torus from a disc: a ring of cuts that does not bound leaves the lattice in one piece. The
+     gap at the antipode is a symmetry, not a range: on rectangular tori it appears only on some shapes (computed). No census was
+     used, and no lag cutoff.
+   - **Next (research directions).** Genus read by rings of cuts (Payoff 3/3, Concreteness 2/3), or which lattices compose everywhere
+     (Payoff 2/3, Concreteness 3/3) ([decision note](../research/LATTICE-NET-20261108-001/lattice_net.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

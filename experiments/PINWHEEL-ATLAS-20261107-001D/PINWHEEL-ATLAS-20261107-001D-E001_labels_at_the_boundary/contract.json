@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PINWHEEL-ATLAS-20261107-001D-E001",
+  "ticket": "PINWHEEL-ATLAS-20261107-001D",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can the eleven-label regrowth rule run on the bare growing patch T_k (one triangle cut k times), with the boundary's shape as the only memory? At which radius, if any, is every dart's oriented label (boundary darts and their neighbours included) a function of its unlabelled rooted code, uniformly over levels 4 to 7?",
+  "public_inputs": {
+    "patches": "T_k for k = 4, 5, 6, 7, built in exact integer coordinates (used only for the reference labels and the planar map).",
+    "outer_face": "One outside vertex joined to every boundary vertex, inserted in the outer sector of each boundary vertex's counterclockwise rotation. Codes record it as a leaf of degree -1 and never expand it, so no global count (such as the boundary's length) enters a code.",
+    "code": "PINWHEEL-NATIVE-20261107-001B's rooted code from the dart's tail, with the outside vertex marked as above.",
+    "darts": "Every dart of T_k between two patch vertices, with its oriented label (left and right tile's side and interval, or none on the outside; whether the two sides run the same way).",
+    "radii": [1, 2, 3, 4, 5, 6],
+    "levels": [4, 5, 6, 7]
+  },
+  "forbidden_inputs": [
+    "Coordinates, lengths, angles or the level in the code",
+    "Changing the radii, the levels or the code after seeing results",
+    "Dropping darts that conflict"
+  ],
+  "primary_observable": "For each level and radius: darts, distinct codes, conflicting codes (codes with two or more labels), and how many conflicts sit within r + 1 of the boundary; the same pooled over all four levels; the least radius conflict-free over all levels pooled.",
+  "cheapest_meaningful_control": "At the least conflict-free radius, labels shuffled over the level-6 darts must conflict. A comparison run with the outside vertex removed from every code shows what marking the outer face contributes.",
+  "resource_budget": {"wall_minutes": 60, "memory_mib": 8192},
+  "first_executable_signal": "Conflicts at radius 1 at level 4.",
+  "decision_or_followup_rule": "If some r <= 6 is conflict-free over all levels pooled, the bare patch carries its own labels within radius r, boundary included, and the regrowth rule needs no memory beyond the patch's shape. If every radius up to 6 conflicts, record where the conflicts sit (boundary, corners, interior); a conflict persisting across levels at the corners would mean the growing boundary needs memory the shape does not carry.",
+  "stop_rule": "Stop at the declared levels and radii.",
+  "nonclaims": [
+    "Exploratory: finite levels; a conflict-free radius here is evidence for all levels, not a proof.",
+    "The map, not the law: the step from allowed states to the map is PINWHEEL-NATIVE-20261107-001B's Whitney measurement.",
+    "No physical space or continuum is claimed."
+  ],
+  "feasibility_disclosure": "Before freezing: the outside-vertex insertion was checked structurally at levels 1-3 (one insertion per boundary vertex, between its two boundary neighbours: 6, 14 and 30 boundary vertices). No code or label was compared."
+}

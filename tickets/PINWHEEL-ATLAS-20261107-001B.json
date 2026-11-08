@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PINWHEEL-ATLAS-20261107-001B-E001",
+    "contract_path": "experiments/PINWHEEL-ATLAS-20261107-001B/PINWHEEL-ATLAS-20261107-001B-E001_periodic_planes_against_the_law/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "PINWHEEL-ATLAS-20261107-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment, the planar analogue of SPHERE-GROWTH-20261107-001's tube lemma: test whether a periodic plane has every radius-r rooted code in ticket A's atlas, r = 1 and 2. Candidates declared before running: periodic tilings by 1:2 right triangles (rectangle grids, brick and herringbone patterns of rectangles with every periodic choice of diagonals in small fundamental domains, kite tilings), and an exhaustive search of small tori built from the atlas's own vertex stars. A periodic plane that passes means the undecorated radius-r law cannot force roundness, since periodic laws have polygonal circles (LOGIC-CIRCLE-20261107-001A).",
+  "ownership": {
+    "root": false,
+    "scope_id": "PINWHEEL-ATLAS-20261107-001"
+  },
+  "parent": "PINWHEEL-ATLAS-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, PINWHEEL-ATLAS-20261107-001B-E001): no tested periodic plane obeys the pinwheel's own law, not even at radius 1. Rectangle grids and brick rows with every diagonal pattern of period up to 2 x 2, every domino tiling of the 2x2 to 4x4 tori with every diagonal choice (96,474 configurations in all), the six two-tile shapes tiled by half-turns, and the frame-consistent cut all fail at radius 1, while the pinwheel itself passes and the tetrakis triangulation fails. Unlike the sphere's tube lemma, the local forms of these planes never occur in a pinwheel tiling. Not searched: periodic planes built from the pinwheel's own vertex stars.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Does a periodic plane satisfy the pinwheel's law?"
+}

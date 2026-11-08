@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PINWHEEL-ATLAS-20261107-001A-P001",
+  "canonical_id": "PINWHEEL-ATLAS-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "PINWHEEL-ATLAS-20261107-001A",
+  "proof": "PINWHEEL-ATLAS-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The complete radius-2 atlas of the pinwheel law",
+  "status": "Proved",
+  "claim": "The 1-collared tiles of all pinwheel patches (a tile with every tile touching it, in the tile's own affine frame, with handedness) form a set of 193 keys closed under Conway's cut, generated from one triangle; 108 are complete, in 54 mirror pairs. Cutting a complete collar four times leaves every dart whose tail lies in the central tile's descendants farther than 3 from the edge, so the radius-2 atlas of every pinwheel tiling is computed exactly from the complete collars. It has 1,168 rooted codes, each with exactly one oriented label (PINWHEEL-NATIVE-20261107-001B's), so in every pinwheel tiling each edge's label is a function of the unlabelled planar map within radius 2; at radius 1 there are 198 codes, 9 with two labels. The atlas equals the interior codes of the geometric level-7 patch.",
+  "dependencies": [
+    "PINWHEEL-NATIVE-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The collar search does not close, or a collar's image under the cut is missing from the closed set.",
+    "A dart whose tail lies in a complete collar's descendants is within distance 3 of the edge of the cut collar at the declared j.",
+    "Two different oriented labels share one radius-2 code in the atlas.",
+    "The atlas differs from the radius-2 codes of the geometric level-7 patch."
+  ],
+  "lineage": {
+    "home_scope": "PINWHEEL-ATLAS-20261107-001",
+    "epic_path": [
+      "PINWHEEL-ATLAS-20261107-001"
+    ],
+    "parents": [
+      "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/manifest.json",
+      "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/manifest.json",
+      "experiments/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/contract.json",
+      "artifacts/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PINWHEEL-NATIVE-20261107-001Z/PINWHEEL-NATIVE-20261107-001Z-P001_epic_closure/manifest.json": "b7f716a584021c82848f99c2d518cf77c75ee656c4ceb14122563309b7e11c2e",
+    "proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel/manifest.json": "60eb0d382af06b659fec37ce5c32e01fd252dabd1df3a1c15f9a14686ec99297",
+    "experiments/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/contract.json": "f4717400e6fe549d1e3f25b22f9b3aadd7d528c7e815cefc97eb72c6e8028dc4",
+    "artifacts/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/run/result.json": "dd2f9adf0bdb59c6f61a749a6093abbd16d7ba5220d15273918492d19b5c6b74"
+  },
+  "paths": {
+    "manifest": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/manifest.json",
+    "identity": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/identity.json",
+    "proof": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/proof.md",
+    "check": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/check.py",
+    "result": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/result.json",
+    "directory": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every pinwheel tiling (every finite patch congruent to part of a level-k patch of one triangle); radius-2 codes of the planar map; exact closure and finite computation.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "arguments by hand (touching children have touching parents; legal patches placed inside interior tiles of T_2 of both handednesses); check.py (about 7 minutes) verifies the closure at 193 keys, 108 complete keys in mirror pairs, the edge test at four cuts, 1,168 conflict-free radius-2 codes and 198 radius-1 codes with 9 conflicts, and equality with the independently computed level-7 patch at both radii; controls (two cuts, a search stopped at level 3, shuffled labels) all fail as required; no human or external review",
+    "novelty": "known method: collared tiles closed under substitution (Anderson-Putnam; for the pinwheel, Barge-Diamond-Hunton-Sadun 2010 and Frettloh-Whitehead-Whittaker 2014); the combinatorial pinwheel rule is Kenyon-Stephenson's (2019). The radius-2 atlas and its readability theorem are new as far as found."
+  }
+}

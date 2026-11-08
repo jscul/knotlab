@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PINWHEEL-ATLAS-20261107-001D-E001",
+    "contract_path": "experiments/PINWHEEL-ATLAS-20261107-001D/PINWHEEL-ATLAS-20261107-001D-E001_labels_at_the_boundary/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "PINWHEEL-ATLAS-20261107-001D",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment: can the eleven-label regrowth rule (PINWHEEL-NATIVE-20261107-001A) run on the bare growing patch, the triangle T_k of one tile cut k times, with its boundary's shape as the only memory? In the unlabelled planar map of T_k, with the outer face marked by one outside vertex that the codes record but do not expand, find the least radius r at which every dart's oriented label, at the boundary and next to it included, is a function of its rooted radius-r code, at levels 4 to 7 and r up to 6. Interior darts are settled at radius 2 by ticket A; this ticket measures what the boundary adds. Controls: shuffled labels and a code that does not mark the outer face.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PINWHEEL-ATLAS-20261107-001"
+  },
+  "parent": "PINWHEEL-ATLAS-20261107-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, PINWHEEL-ATLAS-20261107-001D-E001): regrowth needs no labels. In the bare growing patch T_k (levels 4-7, up to 267,766 darts), every dart's oriented label, boundary darts included, is a function of its unlabelled rooted radius-2 code, pooled over all levels (3,227 codes, no conflict; radius 1 has 15 conflicts, all but one next to the boundary); marking the outer face is not even needed at radius 2. So the eleven-label rule runs on the bare patch with its shape as the only memory.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Regrowth with the labels dropped: does the bare patch carry its own labels?"
+}

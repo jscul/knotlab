@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PINWHEEL-ATLAS-20261107-001B-E001",
+  "ticket": "PINWHEEL-ATLAS-20261107-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does a periodic plane satisfy the pinwheel's own radius-r law (ticket A's atlas), for r = 1 and 2? This is the planar analogue of SPHERE-GROWTH-20261107-001's tube lemma: if a periodic plane passes, a law without hidden states cannot force roundness at that radius, because periodic laws have polygonal circles (LOGIC-CIRCLE-20261107-001A).",
+  "public_inputs": {
+    "law": "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas.json: the 1,168 radius-2 rooted codes of all pinwheel tilings; the radius-1 law is their truncation (198 codes).",
+    "pass_rule": "A candidate passes at radius r when every dart farther than r + 1 from the candidate patch's boundary has its radius-r code in the law.",
+    "candidates": {
+      "F1": "Rectangle grids: rows of 2 x 1 rectangles, each cut by one diagonal into two tiles, with every diagonal pattern of period (p, q) in {1, 2} x {1, 2}.",
+      "F2": "Brick rows: the same with odd rows shifted by half a rectangle (T-junctions at long-leg midpoints, as in the pinwheel).",
+      "F3": "Every domino tiling of the 2x2, 2x4, 4x2, 2x6, 6x2 and 4x4 tori (wrapping dominoes included) with every choice of diagonal in every domino.",
+      "F4": "The six shapes made of two tiles sharing a whole side (rectangle, kite, two parallelograms, two isosceles triangles), each tiled by half-turns about its edge midpoints.",
+      "F5": "The frame-consistent cut (PINWHEEL-ROUND-20261107-001: same five copies, all children one handedness), level 5: not periodic, four tile directions, measured not to round."
+    },
+    "controls": "Positive: the pinwheel's level-5 patch must pass at radius 2. Negative: the isosceles right-triangle substitution (periodic tetrakis triangulation), level 8, must fail at radius 1."
+  },
+  "forbidden_inputs": [
+    "Adding, removing or changing candidates, radii or the pass rule after seeing results",
+    "Coordinates, lengths or angles in the codes",
+    "Dropping darts that fail"
+  ],
+  "primary_observable": "For each candidate family and r in {1, 2}: the number of configurations tested and the number that pass.",
+  "cheapest_meaningful_control": "The positive and negative controls above; a test that fails the pinwheel itself or passes the tetrakis triangulation is not read.",
+  "resource_budget": {"wall_minutes": 60, "memory_mib": 8192},
+  "first_executable_signal": "The two controls.",
+  "decision_or_followup_rule": "If any periodic candidate (F1-F4) passes at radius r, the radius-r law admits a periodic plane and cannot force roundness at radius r. If F5 passes at r, it admits a plane that is neither periodic nor round. If no candidate passes at radius 2, record that radius 2 excludes every tested periodic plane (evidence, not a forcing theorem), and say at which radius each family first fails.",
+  "stop_rule": "Stop at the declared candidates and radii.",
+  "nonclaims": [
+    "Exploratory and non-promotable: the tested families are finite; no candidate passing does not prove that the law forces the pinwheel.",
+    "Passing is local: a passing plane is indistinguishable from a pinwheel tiling within radius r, not globally.",
+    "No physical space or continuum is claimed."
+  ],
+  "feasibility_disclosure": "Before freezing: the generators were written and sized (one 16 x 16 domino block builds in about 0.01 s), and the torus enumeration was corrected to include wrapping dominoes (8, 36, 200 and 272 domino tilings of the 2x2, 2x4, 2x6 and 4x4 tori); the 2x8 tori were dropped as too large for the budget. No candidate was evaluated against the law."
+}

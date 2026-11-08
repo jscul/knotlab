@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PATH-GROWTH-20261108-001B-E001",
+  "ticket": "PATH-GROWTH-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Where does growth break a native path: do the contacts stop persisting, or does the last contact stop binding the end rings? And is 3/5/5/3 the only shape near it with native paths?",
+  "public_inputs": {
+    "library": "run.py's funnel() in this folder, on PATH-GROWTH-20261108-001A's growth_lib.py (sha256 e0a377996ea598231c07dfb551bfa6594ae72b7a2c3ecb74d02a29c72dda6d19) and NATIVE-PATH-20261108-001A's path_lib.py.",
+    "run": "run.py in this folder, 16 worker processes; long-running, registered in docs/LONG_RUNNING.md as PATH-GROWTH-B1.",
+    "family": "Part 1: the full levels of PATH-GROWTH-20261108-001A (four rings of 3, 4 or 5 cells with antipodal or two-apart middle contacts; 4 or 5 rings with end rings of 3 and middle rings of 5), 38,912,000 paths. Part 2: four rings with end rings of 3, 4 or 5 cells and both middle rings of m = 4, 5, 6 or 7 cells, contacts at index m // 2 or m - m // 2 of each middle ring, every linear rule on each ring and every law at each contact: 90 shapes, 368,640,000 paths.",
+    "exactness": "Every verdict is exact by the row-sequence reduction; a row sequence that does not repeat within 200,000 lags is undecided and reported as such."
+  },
+  "forbidden_inputs": [
+    "Changing the families after seeing results",
+    "Dropping paths",
+    "Counting undecided as persistent or native"
+  ],
+  "primary_observable": "Per full level: paths, paths with all three contacts persistent, native paths, and the last contact's row period. Per shape of the map: persistent and native paths.",
+  "cheapest_meaningful_control": "The map's 3/5/5/3 shapes must give PATH-HYBRID-20261108-001A's 16 native and 13,464 persistent paths, and 3/4/4/3 its 3,728 persistent and no native path. Before freezing, funnel() agreed with path_lib.analyze on 616 persistent and native paths of that sweep and 3,000 random paths of the map.",
+  "resource_budget": {
+    "wall_minutes": 90,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control.",
+  "decision_or_followup_rule": "Descriptive. If persistence already fails at the larger sizes, growth breaks the contacts themselves; if persistent paths remain but none is native, growth breaks composition. Natives at other shapes of the map would show where nativeness lives; none outside 3/5/5/3 would confirm that it is tied to that shape.",
+  "stop_rule": "Stop when every path of both parts has its verdict.",
+  "nonclaims": [
+    "Exploratory and non-promotable: these families only.",
+    "Two-time knots only (A30).",
+    "Linear rules and laws only."
+  ],
+  "feasibility_disclosure": "Before freezing: PATH-GROWTH-20261108-001A's results had been read (no native path with all four rings of 3, 4 or 5 cells; 8 longer families native at 4 rings and none at 5). run.py --pilot timed 20,000 random map paths at 0.7 s and printed no verdicts; the full run should take about 15 minutes."
+}

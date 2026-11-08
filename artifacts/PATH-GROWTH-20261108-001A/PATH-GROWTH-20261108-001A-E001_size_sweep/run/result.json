@@ -1,0 +1,443 @@
+{
+ "experiment": "PATH-GROWTH-20261108-001A-E001",
+ "full levels": {
+  "antipodal 3": {
+   "paths": 16384000,
+   "not native": 16384000
+  },
+  "antipodal 4": {
+   "paths": 4096000,
+   "not native": 4096000
+  },
+  "antipodal 5": {
+   "paths": 16384000,
+   "not native": 16384000
+  },
+  "longer 4": {
+   "paths": 1024000,
+   "not native": 1023992,
+   "native": 8
+  },
+  "longer 5": {
+   "paths": 1024000,
+   "not native": 1024000
+  }
+ },
+ "overlaps at the full levels": {
+  "native at 3 and 4": 0,
+  "native at 4 and 5": 0,
+  "native at 3, 4 and 5 (antipodal: same variant at 3 and 5)": 0
+ },
+ "schedules": {
+  "antipodal": {
+   "sizes": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "families followed": 0,
+   "native at each size (followed families)": {
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "undecided at each size (followed families)": {
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "families by their longest run of consecutive native sizes": {},
+   "native at every size": 0,
+   "native or undecided at every size": 0,
+   "examples native at every size": [],
+   "examples native or undecided at every size": []
+  },
+  "two apart": {
+   "sizes": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "families followed": 0,
+   "native at each size (followed families)": {
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "undecided at each size (followed families)": {
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "families by their longest run of consecutive native sizes": {},
+   "native at every size": 0,
+   "native or undecided at every size": 0,
+   "examples native at every size": [],
+   "examples native or undecided at every size": []
+  },
+  "longer": {
+   "sizes": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "families followed": 8,
+   "native at each size (followed families)": {
+    "4": 8,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "undecided at each size (followed families)": {
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "families by their longest run of consecutive native sizes": {
+    "1": 8
+   },
+   "native at every size": 0,
+   "native or undecided at every size": 0,
+   "examples native at every size": [],
+   "examples native or undecided at every size": []
+  }
+ },
+ "H1 (some family is native at every size of its schedule)": false,
+ "control: the ten smallest native paths on their full state spaces": [
+  {
+   "path": [
+    [
+     170,
+     150,
+     150,
+     170
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      12,
+      10
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     170,
+     150,
+     150,
+     240
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      12,
+      10
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     240,
+     150,
+     150,
+     170
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      12,
+      10
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     240,
+     150,
+     150,
+     240
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      12,
+      10
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     170,
+     150,
+     150,
+     170
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      10,
+      12
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     170,
+     150,
+     150,
+     240
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      10,
+      12
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     240,
+     150,
+     150,
+     170
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      10,
+      12
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  },
+  {
+   "path": [
+    [
+     240,
+     150,
+     150,
+     240
+    ],
+    [
+     3,
+     5,
+     5,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     [
+      "self-blind",
+      6,
+      6
+     ],
+     [
+      "self-blind",
+      10,
+      12
+     ],
+     [
+      "self-blind",
+      6,
+      6
+     ]
+    ]
+   ],
+   "full state space agrees": true
+  }
+ ],
+ "control passes": true,
+ "seconds": 83.5
+}

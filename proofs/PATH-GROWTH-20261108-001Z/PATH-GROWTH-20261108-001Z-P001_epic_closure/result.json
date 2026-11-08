@@ -1,0 +1,32 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PATH-GROWTH-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "PATH-GROWTH-20261108-001Z",
+ "proof": "PATH-GROWTH-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing PATH-GROWTH-20261108-001: one line per conclusion with its status, novelty and evidence (tickets A and B, exploratory experiments), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/PATH-GROWTH-20261108-001A/PATH-GROWTH-20261108-001A-E001_size_sweep/contract.json": "Frozen",
+   "artifacts/PATH-GROWTH-20261108-001A/PATH-GROWTH-20261108-001A-E001_size_sweep/run/result.json": "run output",
+   "experiments/PATH-GROWTH-20261108-001B/PATH-GROWTH-20261108-001B-E001_where_growth_breaks/contract.json": "Frozen",
+   "artifacts/PATH-GROWTH-20261108-001B/PATH-GROWTH-20261108-001B-E001_where_growth_breaks/run/result.json": "run output"
+  },
+  "experiments_frozen_exploratory": true,
+  "experiment_a_findings": true,
+  "experiment_b_findings": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

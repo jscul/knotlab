@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PATH-GROWTH-20261108-001A-E001",
+  "ticket": "PATH-GROWTH-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Is there a family of paths, each ring's linear rule and each contact's law fixed, that is native at every size of its schedule: four rings growing together from 3 to 9 cells (middle-ring contacts antipodal), from 4 to 9 (contacts two apart), or paths growing from 4 to 9 rings?",
+  "public_inputs": {
+    "library": "growth_lib.py in this folder (sha256 e0a377996ea598231c07dfb551bfa6594ae72b7a2c3ecb74d02a29c72dda6d19): the schedules and native(), a fail-fast form of path_lib.analyze; path_lib.py of NATIVE-PATH-20261108-001A (sha256 52ce36a513db4fef263abc91d3b852430334e65fac0e146d6d37e8ddd0b060be).",
+    "run": "run.py in this folder, 16 worker processes; registered in docs/LONG_RUNNING.md if it runs over ten minutes.",
+    "family": "Every linear rule (0, 204, 240, 170, 60, 102, 90, 150) on each ring and every law (proposals, or self-blind with each side reading the left, the right or both neighbours) at each contact. Schedules: antipodal (four rings of s cells, s = 3 to 9, c2 and c3 at index s // 2 or s - s // 2 of their middle rings, chosen per ring), two apart (s = 4 to 9, index 2 or s - 2), longer (n = 4 to 9 rings, end rings of 3 cells and middle rings of 5 with every middle ring on one rule and one position, 2 or 3, the inner contacts on one law). Full levels: every family at s = 3, 4 and 5 (the two four-ring schedules coincide at 4 and 5) and at n = 4 and 5: 36,864,000 four-ring and 2,048,000 longer paths. Every family native or undecided at a full level is followed through every size of its schedule.",
+    "exactness": "Every verdict is exact by the row-sequence reduction (NATIVE-PATH-20261108-001A, Theorem 2); a row sequence that does not repeat within 200,000 lags is undecided and reported as such."
+  },
+  "forbidden_inputs": [
+    "Changing the families or schedules after seeing results",
+    "Dropping families",
+    "Counting undecided as native"
+  ],
+  "primary_observable": "The number of families native at every size of each schedule; the number native at each size among the followed families; the overlaps of the full levels (native at s and s + 1).",
+  "cheapest_meaningful_control": "growth_lib.native agrees with path_lib.analyze (checked before freezing on 3,000 random paths of the full levels and the 16 known native paths); in the run, the ten smallest native paths of the full levels must agree on their full state spaces.",
+  "resource_budget": {
+    "wall_minutes": 120,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The full levels' counts.",
+  "decision_or_followup_rule": "H1, frozen: some family is native at every size of its schedule. If it holds, verify the family, characterise it and seek a proof for every size. If not, record how nativeness falls off with size as evidence that binding at every lag is tied to particular sizes, which puts A34 under challenge.",
+  "stop_rule": "Stop when every family of the full levels has its verdict and every followed family its verdict at every size.",
+  "nonclaims": [
+    "Exploratory and non-promotable: these families and schedules only.",
+    "Two-time knots only (A30).",
+    "Linear rules and laws only."
+  ],
+  "feasibility_disclosure": "Before freezing: PATH-HYBRID-20261108-001's results had been read (16 native four-ring paths with one rule per ring at 3/5/5/3, none of which survives growth; 1,120 hybrid ones). growth_lib.native was checked against path_lib.analyze on 3,000 random paths (no mismatch) and on the 16 known native paths (all native). run.py --pilot and a timing of 20,000 random paths at each of s = 3, 4 and 5 (25 to 30 microseconds a path) printed no verdict counts; the full levels should take a few minutes on 16 workers, and the following stage depends on how many families are native."
+}

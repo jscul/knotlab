@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PATH-GROWTH-20261108-001Z-P001",
+  "canonical_id": "PATH-GROWTH-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "PATH-GROWTH-20261108-001Z",
+  "proof": "PATH-GROWTH-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of native paths that survive growth",
+  "status": "Proved",
+  "claim": "Ledger closing PATH-GROWTH-20261108-001: one line per conclusion with its status, novelty and evidence (tickets A and B, exploratory experiments), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PATH-GROWTH-20261108-001A",
+    "PATH-GROWTH-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound contract or run output changes.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PATH-GROWTH-20261108-001",
+    "epic_path": [
+      "PATH-GROWTH-20261108-001"
+    ],
+    "parents": [
+      "experiments/PATH-GROWTH-20261108-001A/PATH-GROWTH-20261108-001A-E001_size_sweep/contract.json",
+      "artifacts/PATH-GROWTH-20261108-001A/PATH-GROWTH-20261108-001A-E001_size_sweep/run/result.json",
+      "experiments/PATH-GROWTH-20261108-001B/PATH-GROWTH-20261108-001B-E001_where_growth_breaks/contract.json",
+      "artifacts/PATH-GROWTH-20261108-001B/PATH-GROWTH-20261108-001B-E001_where_growth_breaks/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/PATH-GROWTH-20261108-001A/PATH-GROWTH-20261108-001A-E001_size_sweep/contract.json": "b53a9a012e507971b19fe2563af537453e1f8d476ba0aaa76ba23abc33f4da4b",
+    "artifacts/PATH-GROWTH-20261108-001A/PATH-GROWTH-20261108-001A-E001_size_sweep/run/result.json": "0520f7d3f0f1b4a796f09410f19b0e85633346192e6fbb2424ae743f497d5264",
+    "experiments/PATH-GROWTH-20261108-001B/PATH-GROWTH-20261108-001B-E001_where_growth_breaks/contract.json": "8c049d63f769358fd20aef8e5aab40749ca021b44715c7b35749fe7c575d27ba",
+    "artifacts/PATH-GROWTH-20261108-001B/PATH-GROWTH-20261108-001B-E001_where_growth_breaks/run/result.json": "0f32c040c6f2a590d4e18494e26a883a6248785c1e9670ed6cc8cb04fddd77cf"
+  },
+  "paths": {
+    "manifest": "proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/PATH-GROWTH-20261108-001Z/PATH-GROWTH-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's two tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

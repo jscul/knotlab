@@ -41,7 +41,9 @@ F3's 2 x 6, 6 x 2 and 4 x 4 tori after one cut (`collar-plane-c1`, `big1_result.
 planes, controls held):
 - **24 pass, all on the 4 x 4 torus**; none of the 12,800 tilings of the 2 x 6 torus, or of the 6 x 2 torus, passes.
 - **8 are the rhombus lattice** again: uncut, a single collar, the rhombus lattice's.
-- **16 are not.** They are rectangle grids, every domino parallel, with diagonals of period 4 along a row. Uncut, each has two
+- **16 are not.** They are brick rows (or columns): every domino parallel, alternate rows offset by half a domino, with diagonals of
+  period 4 along a row. (First written as "rectangle grids" in 87e88ee82 and corrected the same day; logged in
+  `docs/CORRECTIONS.md`.) Uncut, each has two
   collars, eight tiles each, and both lie in the arc-consistent core of ticket B's level-one law. After one cut they use exactly the
   rhombus lattice's 10 keys. So the rhombus lattice is not the only plane that obeys the collar law after one cut (checked after the
   run, as for the main part).

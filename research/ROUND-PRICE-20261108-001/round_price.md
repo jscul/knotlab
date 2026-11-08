@@ -64,7 +64,7 @@ One size past each computed claim, in the epic itself.
 ## Workspace assumptions
 
 - **Relied on.** A33 (a local law is read up to congruence) and A25, now confirmed in the plane.
-- **Taken by default.** Hidden information is counted as labels per tile assigned by a decorated substitution (new entry A34). Labels
+- **Taken by default.** Hidden information is counted as labels per tile assigned by a decorated substitution (new entry A35). Labels
   on edges, as in Radin's rules, or labels a child takes from more than its parent, are not counted here.
 
 ## Ratio
@@ -92,7 +92,7 @@ Carried from earlier epics:
 
 **Corrections:** one, from folding in `COLLAR-PLANE-C1` (not a block: more crystals pass after one cut), and a wording fix to it
 (the new crystals are brick rows, not grids), both logged in `docs/CORRECTIONS.md`. **Goals:** a G1 checkpoint (capability gained);
-no goal change. **Assumptions:** A34 added (hidden information counted as labels per tile of a decorated substitution).
+no goal change. **Assumptions:** A35 added; a history line on A25 (hidden information counted as labels per tile of a decorated substitution).
 
 - **What is left open.** Whether any of the sixteen forces the pinwheel.
 - **The missing bridge to G1.** An exact price: a decorated law, with its alphabet counted, that provably forces a round plane.

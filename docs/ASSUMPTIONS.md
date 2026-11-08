@@ -89,6 +89,7 @@ evidence: results and their status come from the records each entry links.
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
 | [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Confirmed |
+| [A35](#a35--hidden-information-is-counted-as-labels-a-decorated-substitution-sets) | Hidden information is counted as labels a decorated substitution sets | measure | Assumed |
 
 ## Entries
 
@@ -583,6 +584,8 @@ evidence: results and their status come from the records each entry links.
   ([collar plane](../research/COLLAR-PLANE-20261108-001/collar_plane.md)). It would be reopened by a uniform local law without
   hidden states, in the plane or on a surface, whose allowed spaces are all round.
 - **History.**
+  - 2026-11-08 · Bears on it: `ROUND-PRICE-20261108-001`. Labels read from a bounded window of the pinwheel never force it either,
+    and one hidden bit per tile, set by a decorated substitution, lets a crystal through in 1,008 of 1,024 cases.
   - 2026-11-08 · Confirmed in the plane for the pinwheel by `COLLAR-PLANE-20261108-001`: a periodic plane obeys its undecorated
     local law at every radius. The atlas epic's reading that the plane might need no hidden bit is corrected
     (`docs/CORRECTIONS.md`).
@@ -779,3 +782,21 @@ evidence: results and their status come from the records each entry links.
     this reading is kept for the gate. The native intermittent network on affine substrates is recorded beside it
     ([intermittent networks](../research/INTERMITTENT-NET-20261108-001/intermittent_net.md)).
   - 2026-11-08 · Added by `PROCESS-CHAIN-20261108-001`.
+
+### A35 · Hidden information is counted as labels a decorated substitution sets
+
+**Assumed** · 2026-11-08 · measure
+
+- **Statement.** The hidden information a local law of the pinwheel spends on roundness is counted as the number of labels per
+  tile, with labels set by a decorated substitution: Conway's cut gives each child a label fixed by its parent's label and its child
+  index, and the law lists the labelled collars of decorated supertiles. One bit per tile means two labels.
+- **Why.** `ROUND-PRICE-20261108-001` took it by default. Every known way to force a substitution tiling (Mozes; Goodman-Strauss;
+  Radin for the pinwheel) decorates the substitution this way, it makes the count finite and exhaustive for small alphabets, and
+  the rule radius then does not matter ([price of roundness](../research/ROUND-PRICE-20261108-001/round_price.md)).
+- **Rests on it.** The census (1,008 of 1,024 one-bit decorations admit a crystal), the sixteen open candidates, and the comparison
+  with the sphere's one hidden bit per incidence.
+- **Challenge.** Count bits on edges instead, as Radin's rules do, or let a child's label depend on its parent's neighbours too.
+  The cheapest test runs the rhombus crystal against one-bit edge labellings of the pinwheel's collars; if some edge bit excludes
+  every crystal that all one-bit tile decorations admit, the measure misplaces the price.
+- **History.**
+  - 2026-11-08 · Added by `ROUND-PRICE-20261108-001`.

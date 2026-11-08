@@ -3,6 +3,12 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: those crystals are brick rows
+
+- The entry below calls the 16 new planes rectangle grids. Their rows (or
+  columns) are offset by half a domino: they are brick rows with diagonals
+  of period 4. The counts are unchanged.
+
 ## 8 November 2026: more than one crystal passes after one cut
 
 - The collar-plane epic's entry in the knot intuition doc said that of the

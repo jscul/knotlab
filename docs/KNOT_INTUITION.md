@@ -3879,7 +3879,7 @@ So network holes come in two kinds:
      the collar law is the cut of a plane of larger triangles. Their collars obey a weaker level-one law: 1,264 collars, 54 of them
      the pinwheel's. The crystal escapes there: it is the cut of the rhombus lattice, whose collar passes the level-one law.
    - **The census (exploratory).** Of the atlas epic's periodic planes, cut one to three times, the rhombus lattice and, on the 4 × 4
-     torus, 16 rectangle grids with diagonals of period 4 pass after one cut; six brick-row planes join after two. Growth's
+     torus, 16 brick-row planes with diagonals of period 4 pass after one cut; six brick-row planes join after two. Growth's
      off-pinwheel patches compose once, and their defect is one level up. (Corrected 2026-11-08: first published as "only the
      rhombus lattice passes after one cut", before the larger tori were run.)
    - **Reading.**
@@ -3891,10 +3891,29 @@ So network holes come in two kinds:
    - **Provenance.** Known: decorated matching rules (Radin 1994; Mozes; Goodman-Strauss 1998), the question of undecorated local
      rules (Levitov 1988), recognizability (Solomyak 1998), and cutting a crystal to defeat local rules as a method. Not found: the
      pinwheel's witness and conclusion, the forced first level and the level-one law.
-   - **Next (awaiting a go-ahead).** The price of roundness in the plane: how many hidden bits per tile make a local law force the
-     pinwheel. First step: label each tile with its child index and test whether the labelled collar law forces two levels
-     (Payoff 2/3, Concreteness 1/3). The alternatives are a note for outside readers, the collar law's other planes, and the least
-     period ([decision note](../research/COLLAR-PLANE-20261108-001/collar_plane.md)).
+   - **Next (taken).** The price of roundness in the plane (next entry). Its first step as written, child indices as labels, was
+     dropped once Lemma 1 there showed that labels read from the tiling add nothing
+     ([decision note](../research/COLLAR-PLANE-20261108-001/collar_plane.md)).
+
+   **2026-11-08: the price of roundness in the plane** (`ROUND-PRICE-20261108-001`).
+   - **The question.** No undecorated law of the pinwheel forces roundness. How much hidden information does? Start with one bit per
+     tile, set the way every known decoration sets it: Conway's cut gives each child a label fixed by its parent's label and its
+     place among the five children.
+   - **Labels read from the tiling add nothing (proved).** If a label is a function of a bounded window, the cut crystal, labelled
+     the same way, obeys the labelled law at every radius. Child indices, and any finite part of a tile's address in the hierarchy,
+     are such labels. A forcing label must carry information no window determines.
+   - **One bit mostly fails (proved, exact census).** Of the 1,024 ways to set one bit, 1,008 still let a crystal through, at every
+     radius: the cut rhombus lattice, the cut brick rows, or brick rows with period-4 diagonals, each with a periodic labelling.
+   - **Sixteen remain (proved, exact).** In these the bit already forces every parent's label. They would force the pinwheel if every
+     labelled parent collar that survives a consistency test obeyed the law again; the pairwise test leaves some that do not, so the
+     question is open.
+   - **Reading.** On spheres one hidden bit per incidence forces roundness. In the plane one bit per tile is not excluded, and for
+     most ways of placing it, it fails. In all sixteen survivors, the corner children (at the parent's corners Q and P) carry the bit
+     that remembers the parent.
+   - **Provenance.** Known: decorated matching rules (Radin 1994; Mozes 1989; Goodman-Strauss 1998), small aperiodic sets (Jeandel
+     and Rao 2021). Not found: the census and the forcing test.
+   - **Next (awaiting a go-ahead).** Settle the sixteen: a joint (radius-2) consistency test, then a search for an escaping crystal
+     (Payoff 2/3, Concreteness 2/3) ([decision note](../research/ROUND-PRICE-20261108-001/round_price.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

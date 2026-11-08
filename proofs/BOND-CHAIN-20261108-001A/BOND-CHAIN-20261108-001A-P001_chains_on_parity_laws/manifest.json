@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BOND-CHAIN-20261108-001A-P001",
+  "canonical_id": "BOND-CHAIN-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "BOND-CHAIN-20261108-001A",
+  "proof": "BOND-CHAIN-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Chains of knots on parity laws",
+  "status": "Proved",
+  "claim": "On a consistent parity law, if two non-parallel distinctions are joined by a chain of knots, some knot inside the chain's union contains both; so chain distance counted in knots is 1 for every such pair (no spacing), and counted in the distinctions of the chain's union it equals bond distance.",
+  "dependencies": [
+    "LOGIC-AXIS-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "Two meeting knots of a tested parity law have non-parallel distinctions, one in each only, with no knot inside their union containing both.",
+    "Two non-parallel distinctions joined by a chain of knots lie on no common knot.",
+    "The control law of two single clauses has a knot through both far ends."
+  ],
+  "lineage": {
+    "home_scope": "BOND-CHAIN-20261108-001",
+    "epic_path": [
+      "BOND-CHAIN-20261108-001"
+    ],
+    "parents": [
+      "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/axis_lib.py",
+      "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/axis_lib.py": "184a76f5b59e89b1fd3edd2702a5088927d10dbffeaa14575928b907499f84e1",
+    "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json": "df7b2df5577d9ba4018a922c4dbc8f0844b2eac7bf0dff1c77f33808b630f0a6"
+  },
+  "paths": {
+    "manifest": "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/manifest.json",
+    "identity": "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/identity.json",
+    "proof": "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/proof.md",
+    "check": "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/check.py",
+    "result": "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/result.json",
+    "directory": "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Consistent parity laws, finite or infinite (knots are finite); the check covers finite windows of the gauge, Tseitin and Ledrappier laws.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session on 2026-11-08, at the coordinator's agreement to start the A12 challenge.",
+    "status": "proved with exhaustive or exact finite checks and a control; no human or external review",
+    "novelty": "known-with-delta: classical matroid connectivity and the pure-literal idea, used as a criterion between two measures"
+  }
+}

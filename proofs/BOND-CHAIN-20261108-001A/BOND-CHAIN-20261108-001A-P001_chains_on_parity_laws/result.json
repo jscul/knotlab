@@ -1,0 +1,78 @@
+{
+ "laws": [
+  {
+   "law": "gauge law, 4 x 4 box",
+   "distinctions": 24,
+   "knots of at most 6": 21,
+   "union lemma: cases tested, failures": [
+    1920,
+    0
+   ],
+   "pairs joined by a chain: tested, with no common knot": [
+    276,
+    0
+   ]
+  },
+  {
+   "law": "gauge law, 3 x 5 box",
+   "distinctions": 22,
+   "knots of at most 6": 18,
+   "union lemma: cases tested, failures": [
+    1332,
+    0
+   ],
+   "pairs joined by a chain: tested, with no common knot": [
+    231,
+    0
+   ]
+  },
+  {
+   "law": "Tseitin, 3 x 4 box",
+   "distinctions": 17,
+   "knots of at most 6": 118,
+   "union lemma: cases tested, failures": [
+    56618,
+    0
+   ],
+   "pairs joined by a chain: tested, with no common knot": [
+    132,
+    0
+   ]
+  },
+  {
+   "law": "Tseitin, 2 x 2 x 2 box",
+   "distinctions": 12,
+   "knots of at most 6": 63,
+   "union lemma: cases tested, failures": [
+    14976,
+    0
+   ],
+   "pairs joined by a chain: tested, with no common knot": [
+    66,
+    0
+   ]
+  },
+  {
+   "law": "Ledrappier triangle, n = 5",
+   "distinctions": 21,
+   "knots of at most 6": 1012,
+   "union lemma: cases tested, failures": [
+    6332943,
+    0
+   ],
+   "pairs joined by a chain: tested, with no common knot": [
+    210,
+    0
+   ]
+  }
+ ],
+ "checks": {
+  "the union lemma holds on every tested pair of meeting knots": true,
+  "every pair joined by a chain of knots lies on a common knot": true
+ },
+ "controls": {
+  "two single clauses sharing a distinction: the knots are the two clauses, none through both far ends": true
+ },
+ "status": "passed",
+ "failures": []
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BOND-CHAIN-20261108-001Z-P001",
+  "canonical_id": "BOND-CHAIN-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "BOND-CHAIN-20261108-001Z",
+  "proof": "BOND-CHAIN-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the bond-chain challenge",
+  "status": "Proved",
+  "claim": "Administrative closure ledger of BOND-CHAIN-20261108-001 with no new claim: ticket A proves that chain measures add nothing to bond distance on parity laws; ticket B proves that off parity laws they part exactly at gates, so A12 is overturned as a universal statement by its frozen test and holds wherever knots compose.",
+  "dependencies": [
+    "BOND-CHAIN-20261108-001A",
+    "BOND-CHAIN-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound file no longer matches its digest.",
+    "A proof is not Proved or its check did not pass.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "BOND-CHAIN-20261108-001",
+    "epic_path": [
+      "BOND-CHAIN-20261108-001"
+    ],
+    "parents": [
+      "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/manifest.json",
+      "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/result.json",
+      "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/manifest.json",
+      "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/manifest.json": "8a7f10e6f8ce4f73630937b33954c008d57b86c1e6326f41f37b2aabdaa9de0f",
+    "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/result.json": "24ff000f602bb0bcac1e86ea05ac328539914bc1e75a4b76a0cb8c4dab4e5b32",
+    "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/manifest.json": "850cdfb0fa63037b00dc7c14be88491b32583f25b7d87642e18cc255362a394b",
+    "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/result.json": "1a8591fd1261ecfdf9920f2caa84584fd95479664a888a899a738953e971a03d"
+  },
+  "paths": {
+    "manifest": "proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure/proof.md",
+    "check": "proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure/check.py",
+    "result": "proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure/result.json",
+    "directory": "proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's two tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

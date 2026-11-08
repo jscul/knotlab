@@ -1,0 +1,57 @@
+{
+ "checks": {
+  "a knot joins the far ends exactly when the gluing is not gated (1,084 of 1,156; 72 gated)": true,
+  "when one does, the least has four distinctions": true,
+  "a knot spans a chain of single clauses exactly when its clauses chain as implications (T = 2, 3, 4)": true,
+  "atom thread: bond distance between w0 and w5 is 6 (T + 1)": true,
+  "NAND thread: its only knots are its five clauses, so no knot joins s0 and s5": true
+ },
+ "controls": {
+  "34 three-place knots in 5 classes (PINNING-20261031-001's count)": true
+ },
+ "census": {
+  "three-place knots, classes and their sizes": [
+   34,
+   5,
+   [
+    2,
+    4,
+    8,
+    8,
+    12
+   ]
+  ],
+  "gluings: (knot through the ends?, gated?)": {
+   "knot through the ends, not gated": 1084,
+   "none through the ends, gated": 72
+  },
+  "gluings with a knot through the ends: size of the least one": {
+   "4": 1084
+  },
+  "three-place knots with a gate (a position and value freeing the other two), by class size": {
+   "12": 12,
+   "8": 8
+  },
+  "chains of single clauses": {
+   "2": {
+    "laws": 64,
+    "a knot spans the chain": 32,
+    "agrees with: every shared distinction read with opposite signs": 64
+   },
+   "3": {
+    "laws": 512,
+    "a knot spans the chain": 128,
+    "agrees with: every shared distinction read with opposite signs": 512
+   },
+   "4": {
+    "laws": 4096,
+    "a knot spans the chain": 512,
+    "agrees with: every shared distinction read with opposite signs": 4096
+   }
+  },
+  "atom thread of 5 clauses: least knot through w0 and w5": 7,
+  "NAND thread of 5 clauses: knots": 5
+ },
+ "status": "passed",
+ "failures": []
+}

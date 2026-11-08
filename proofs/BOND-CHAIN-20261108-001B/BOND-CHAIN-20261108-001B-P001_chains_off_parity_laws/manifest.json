@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BOND-CHAIN-20261108-001B-P001",
+  "canonical_id": "BOND-CHAIN-20261108-001B-P001",
+  "kind": "proof",
+  "ticket": "BOND-CHAIN-20261108-001B",
+  "proof": "BOND-CHAIN-20261108-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Chains of knots off parity laws: they split from bond distance exactly at gates",
+  "status": "Proved",
+  "claim": "Of the 1,156 laws made of two three-place knots sharing one distinction, a knot contains both far ends exactly when the knots do not meet at a gate (a value of the shared distinction satisfying both); then the least such knot has four distinctions, and in the 72 gated laws no knot does. For chains of up to four single clauses, a knot spans the chain exactly when every shared distinction is read with opposite signs by its two clauses. The NAND thread's only knots are its clauses.",
+  "dependencies": [
+    "BOND-CHAIN-20261108-001A",
+    "LOGIC-AXIS-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A gluing of two three-place knots has a knot through its far ends and is gated, or has none and is not gated.",
+    "A chain of single clauses has a spanning knot exactly when some shared distinction is read with equal signs.",
+    "The three-place knots are not 34 in 5 classes (the control)."
+  ],
+  "lineage": {
+    "home_scope": "BOND-CHAIN-20261108-001",
+    "epic_path": [
+      "BOND-CHAIN-20261108-001"
+    ],
+    "parents": [
+      "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json",
+      "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json": "df7b2df5577d9ba4018a922c4dbc8f0844b2eac7bf0dff1c77f33808b630f0a6",
+    "proofs/BOND-CHAIN-20261108-001A/BOND-CHAIN-20261108-001A-P001_chains_on_parity_laws/manifest.json": "8a7f10e6f8ce4f73630937b33954c008d57b86c1e6326f41f37b2aabdaa9de0f"
+  },
+  "paths": {
+    "manifest": "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/manifest.json",
+    "identity": "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/identity.json",
+    "proof": "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/proof.md",
+    "check": "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/check.py",
+    "result": "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws/result.json",
+    "directory": "proofs/BOND-CHAIN-20261108-001B/BOND-CHAIN-20261108-001B-P001_chains_off_parity_laws"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Laws of two three-place knots glued at one distinction, chains of up to four single clauses, and two threads of five clauses; exhaustive.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session on 2026-11-08, at the coordinator's agreement to start the A12 challenge.",
+    "status": "proved with exhaustive or exact finite checks and a control; no human or external review",
+    "novelty": "known-with-delta: classical matroid connectivity and the pure-literal idea, used as a criterion between two measures"
+  }
+}

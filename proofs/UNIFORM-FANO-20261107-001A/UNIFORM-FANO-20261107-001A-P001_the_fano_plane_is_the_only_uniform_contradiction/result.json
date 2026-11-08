@@ -1,0 +1,98 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/manifest.json": "Proved",
+     "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/result.json": "passed",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "Proved",
+     "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "Proved"
+    }
+   }
+  },
+  "1 with non-constant uniform signs the all-zero assignment satisfies every line of every simple Cayley law": {
+   "pass": true,
+   "info": {
+    "laws": 439
+   }
+  },
+  "2 the brace lemma: every simple Cayley law in the census has a brace for its incidence graph (the Cayley digraph of {x, xy} stays strongly connected without the identity)": {
+   "pass": true,
+   "info": {
+    "simple laws": 439,
+    "skipped (a line repeats a point)": 1,
+    "group orders": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     36,
+     48,
+     60,
+     64,
+     72,
+     75,
+     96,
+     100,
+     120,
+     150,
+     168,
+     240,
+     360,
+     720
+    ]
+   }
+  },
+  "3 among them, under equal signs (a plain 2-colouring), the only unsatisfiable laws are the Fano plane (n = 7)": {
+   "pass": true,
+   "info": {
+    "unsatisfiable": [
+     [
+      "Z7(1,2)",
+      7
+     ]
+    ]
+   }
+  },
+  "4 the Fano plane: not 2-colourable, sign-nonsingular (|det| = per = 24), its digraph F7 has no even dicycle, and it has no nontrivial tight cut": {
+   "pass": true,
+   "info": {}
+  },
+  "5 controls: each check can fail": {
+   "pass": true,
+   "info": {
+    "the 13-point Fano splice is not 2-colourable and has a nontrivial tight cut": true,
+    "the brace test says no on the 13-point splice (its digraph is not strongly 2-connected) and yes on the Fano plane": true,
+    "Z7 with lines {g, g+1, g+4} (not a difference set) is 2-colourable": true,
+    "a law with a repeated point fails simplicity": true
+   }
+  }
+ }
+}

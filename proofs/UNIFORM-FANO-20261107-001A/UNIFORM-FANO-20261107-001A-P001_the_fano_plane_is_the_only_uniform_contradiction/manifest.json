@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "UNIFORM-FANO-20261107-001A-P001",
+  "canonical_id": "UNIFORM-FANO-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "UNIFORM-FANO-20261107-001A",
+  "proof": "UNIFORM-FANO-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The Fano plane is the only uniform law that contradicts itself",
+  "status": "Proved",
+  "claim": "(1) With non-constant uniform signs (every line the same pattern on its positions g, gx, gxy) the all-zero assignment satisfies every line of a Cayley law. (2) Brace lemma: if a cubic triple system whose lines have three distinct points has an automorphism group transitive on its points and on its lines, its incidence graph has no nontrivial tight cut; by modularity two translates of a smallest tight shore share at most one point, so every line lies in exactly one translate, and counting then forces a shore of two points and one line, which a line of three points cannot have. (3) Hence, by the dictionary of THREEFOLD-SPACES-20261030-001A (not 2-colourable iff the digraph D(H, M) has no even dicycle) and McCuaig's theorem (the only strongly 2-connected digraph with no even dicycle is F7), such a system is not 2-colourable only if it is the Fano plane. So among uniform laws with uniform signs, the Fano plane is the only one whose knot is unsatisfiable.",
+  "dependencies": [
+    "UNIFORM-SPHERES-20261107-001Z",
+    "THREEFOLD-SPACES-20261030-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A Cayley law with non-constant uniform signs whose all-zero assignment violates a line.",
+    "A point- and line-transitive simple cubic triple system with a nontrivial tight cut.",
+    "A non-2-colourable point- and line-transitive simple cubic triple system other than the Fano plane.",
+    "A misreading of McCuaig's theorem or of the brace / strong 2-connectivity equivalence."
+  ],
+  "lineage": {
+    "home_scope": "UNIFORM-FANO-20261107-001",
+    "epic_path": [
+      "UNIFORM-FANO-20261107-001"
+    ],
+    "parents": [
+      "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/manifest.json",
+      "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/result.json",
+      "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/uniform_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/manifest.json": "08ac1d9467e9c1b7c2593f95f753460b969dd77bdc5218462783a363699b6bf8",
+    "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/result.json": "bfd437190fcfab10c86a51de6fbca07b6f0e95bdafc2636e54f019fa30008d53",
+    "proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/uniform_lib.py": "1fe07f555176d5da368dc7f4bb19e65b2c30e9fe8a7178872663fe9c6edd3723",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/manifest.json": "15b5ef46025f6b932bbcd6143655cbcd945276a4ffff4c404b56aa7b0ab316c0",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/result.json": "7d4aea1e0994189c09c1d9f84db61ad21aed7fde23283db4dddc1ebafc183837",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/manifest.json",
+    "identity": "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/identity.json",
+    "proof": "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/proof.md",
+    "check": "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/check.py",
+    "result": "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/result.json",
+    "directory": "proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every simple cubic triple system with a group of automorphisms transitive on points and on lines (every Cayley law), by proof; checked on a census of Cayley laws: cyclic laws up to 30 points, abelian, dihedral, A4, S4, A5, S5, PSL(2,7), wallpaper quotients and random 2-generated subgroups of S_5..S_7.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, with McCuaig's theorem as a cited input; finite claims checked by computation with controls; no human or external review",
+    "novelty": "known-with-delta: McCuaig's characterization (2000) and Seymour's dictionary are classical; the brace lemma for point- and line-transitive systems and the resulting classification of uniform contradictions are new as far as found (folklore risk moderate: symmetric bipartite graphs are often shown to be braces)."
+  }
+}

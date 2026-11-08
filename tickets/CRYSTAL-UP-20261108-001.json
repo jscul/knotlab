@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LAST-BIT-20261108-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "CRYSTAL-UP-20261108-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The selected next step of LAST-BIT-20261108-001 (G1; A35), started on 2026-11-08 at the coordinator's go-ahead as one bounded attempt: build a crystal for the last one-bit decoration of the pinwheel, s = 10101 / 00110, directly from the labelled parent collars that survive its forcing test. A periodic parent tiling whose labelled collars all lie among the survivors cuts to a periodic plane obeying the decoration's law, so the decoration would fail. Search periodic labelled tilings on tori one level up, with lattices taken from the translations seen in the survivors' own extension patches. In the background, as a registered long-running stress test, extend every surviving non-pinwheel parent collar to tile distance 4. Standalone value against known work: whether one bit per tile, as a decorated substitution, can force the pinwheel was not found in prior work; Radin's rules use far more.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CRYSTAL-UP-20261108-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-08: one hidden bit per tile, placed by a decorated substitution, never forces the pinwheel. The last one-bit decoration, s = 10101 / 00110, falls to crystals built one level up from its surviving parent collars: 26 periodic parent tilings of 8 to 40 tiles per period, half their tiles turned by arctan(4/3) from the other half, whose cuts obey its law (A, exploratory); with certificates for the other seven open classes, every one of the 1,024 one-bit decorations admits a crystal at every radius, checked by independent code (B, proved). A correction to LAST-BIT-20261108-001 (not a block): its forcing route needed every off-law parent collar to die. Next: Research directions, selected bond distance against chain distance (A12).",
+  "status_class": "complete",
+  "stop_rule": "Stop at a crystal for the decoration, or when the declared lattices, seeds and budgets give none; the distance-4 stress test is folded in when it finishes.",
+  "title": "A crystal one level up for the last one-bit decoration"
+}

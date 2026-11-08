@@ -1,0 +1,104 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CRYSTAL-UP-20261108-001B-P001",
+  "canonical_id": "CRYSTAL-UP-20261108-001B-P001",
+  "kind": "proof",
+  "ticket": "CRYSTAL-UP-20261108-001B",
+  "proof": "CRYSTAL-UP-20261108-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Every one-bit decoration of the pinwheel admits a crystal",
+  "status": "Proved",
+  "claim": "Every one of the 1,024 one-bit decorated substitutions of the pinwheel admits a crystal, and so (radius lemma) a periodic plane obeying its law at every radius: one hidden bit per tile, placed by a decorated substitution, never forces the pinwheel. The sixteen decorations ROUND-PRICE-20261108-001's exact census left open are settled by certificates checked with independent code: for 10101 / 00110 and its relabelling 11001 / 01010, 26 periodic parent tilings of 8 to 40 tiles per period, half their tiles turned by arctan(4/3) from the other half, whose cuts obey the law; for the other seven classes, one exported escape each from ONE-BIT-20261108-001B.",
+  "dependencies": [
+    "CRYSTAL-UP-20261108-001A",
+    "ONE-BIT-20261108-001B",
+    "ROUND-PRICE-20261108-001A",
+    "ROUND-PRICE-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A crystal or certificate is not a tiling, or one of its labelled collars lies outside its decoration's law.",
+    "The certificates do not cover exactly the eight classes the exact census left open.",
+    "A control fails: the closure counts, the law's independence of its seed, the smallest crystal obeying the law uncut, or a flipped label keeping its cut legal."
+  ],
+  "lineage": {
+    "home_scope": "CRYSTAL-UP-20261108-001",
+    "epic_path": [
+      "CRYSTAL-UP-20261108-001"
+    ],
+    "parents": [
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json",
+      "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json",
+      "artifacts/ONE-BIT-20261108-001B/ONE-BIT-20261108-001B-E001_escaping_crystals/run/result.json",
+      "artifacts/CRYSTAL-UP-20261108-001A/CRYSTAL-UP-20261108-001A-E002_compatible_periods/run/rows.jsonl",
+      "publication/knotlab/notes/pinwheel-local-rules/replay.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json": "5491d80378a458fbf114f4ba0919a58c01df4ff031149c9cb81eba405cb7ab6b",
+    "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json": "567e3436585e4bb51a5a69ee66f2e7ead892188a348aa03afe55880328f9cc37",
+    "artifacts/ONE-BIT-20261108-001B/ONE-BIT-20261108-001B-E001_escaping_crystals/run/result.json": "fcc69814a1f7ed09e14b8ea53c14554cb90a6326da539f153a6cbd0696f7df3b",
+    "artifacts/CRYSTAL-UP-20261108-001A/CRYSTAL-UP-20261108-001A-E002_compatible_periods/run/rows.jsonl": "924d52110f51e43001741795e4d3c074599fc42c9f1647a212d9b805fdfd6e85",
+    "publication/knotlab/notes/pinwheel-local-rules/replay.py": "39b95db97a9b8a7aff28cb7c1eddab5f5b6c70e8c88b5fb51b03f150b2a15a31"
+  },
+  "paths": {
+    "manifest": "proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/manifest.json",
+    "identity": "proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/identity.json",
+    "proof": "proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/proof.md",
+    "check": "proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/check.py",
+    "result": "proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/result.json",
+    "directory": "proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "One-bit decorated substitutions of the pinwheel (two labels set through Conway's cut), their labelled collar laws, and periodic planes; exact finite certificates, with the radius lemma for every radius. Other measures of hidden information (edge labels, more labels per tile) are not covered.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "check.py imports neither the search (torus_lib, the growth engine) nor the main pipeline (atlas_lib, decor_lib): it rebuilds the collars, their completeness and the labelled law with the knotlab note's standalone replay. Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "certificates checked exactly with controls; no human or external review",
+    "novelty": "no-overlap-found for the census and the crystals; known methods (decorated substitutions, torus search)"
+  }
+}

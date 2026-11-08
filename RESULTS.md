@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**238 current results** and 5 superseded ones, from 175 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**239 current results** and 5 superseded ones, from 176 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 74 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 75 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 36 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 175 epics with their closures
+- [Epics](#epics): all 176 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -567,6 +567,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A uniform law can grow flat space but not the knot's contradiction** (`UNIFORM-SPHERES-20261107-001-D001`).
   A law of lines and co-lines builds its own closed surface; with one kind of point it closes into a sphere only as an antiprism or a snub polyhedron of at most 60 points. With uniform signs the count never forces the knot's lines on any uniform law, and Kasteleyn signs make the knot fail only on those small spheres or antiprism chains solvable in O(log n) queries, so a deep contradiction needs a second kind of point.
   [proof P001](proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/proof.md), [epic closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · One hidden bit per tile never forces the pinwheel** (`CRYSTAL-UP-20261108-001-D001`).
+  Every one of the 1,024 decorated substitutions of the pinwheel on two labels admits a periodic plane obeying its law at every radius. The last falls to crystals built from its surviving parent collars, the smallest with 8 tiles per period, half of them turned by twice the pinwheel angle from the other half.
+  [proof P001](proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/proof.md), [epic closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Creation between glue lines sees only the switching class** (`SWITCH-PROOF-20261108-001-D001`).
   For every cubic glue and every two signings in one switching class, removing a glue line and gluing at another gives the same native creation verdict in the two plain edge-atom spaces, because an intact atom only negates its incidence and switching only complements points. Creation between glue lines is the signed glue's own creation map.
   [proof P001](proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/proof.md), [epic closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md)
@@ -1008,6 +1011,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Uniform laws and the spheres they can close into (`UNIFORM-SPHERES-20261107-001`) | [closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-SPHERES-20261107-001/) |
 | 2026-11-08 | A middle ring that carries without cancelling: persistent composition on affine chains (`AFFINE-WIRE-20261108-001`) | [closure](proofs/AFFINE-WIRE-20261108-001Z/AFFINE-WIRE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/AFFINE-WIRE-20261108-001/) |
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
+| 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |
 | 2026-11-08 | Native paths across time: none in three restricted families (`NATIVE-PATH-20261108-001`) | [closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-PATH-20261108-001/) |

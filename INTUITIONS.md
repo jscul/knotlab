@@ -43,6 +43,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [1.4 The picture](#14-the-picture)
   - [1.5 Reading A, B → c](#15-reading-a-b--c)
   - [1.6 Forgetting a variable](#16-forgetting-a-variable)
+  - [1.7 What a shape is](#17-what-a-shape-is)
 - [Chapter 2. The knot test](#chapter-2-the-knot-test)
   - [2.1 The knot test](#21-the-knot-test)
   - [2.2 Knots on the cube](#22-knots-on-the-cube)
@@ -74,8 +75,8 @@ PYTHONPATH=tools python3 -m knotlab demo
 
 Everything later is built from bits and from rules about them. This chapter
 sets up that vocabulary and its notation, reads the Game of Life as such rules,
-states the picture the program starts from, and reads the smallest rule that
-binds two loops.
+states the picture the program starts from, reads the smallest rule that binds
+two loops, and ends with what the guide means by a shape.
 
 ### 1.1 Distinctions and states
 
@@ -356,6 +357,67 @@ Parity on four variables needs only two three-place rules and one witness w:
 w = x1 ⊕ x2 and w = x3 ⊕ x4. Forgetting w leaves exactly the states with
 x1 ⊕ x2 = x3 ⊕ x4, which is the parity x1 ⊕ x2 ⊕ x3 ⊕ x4 = 0. Lesson 3.2 uses
 the same device to bind any number of loops with three-place rules.
+
+### 1.7 What a shape is
+
+**The word.** In the owner's usage, which this guide adopts, a shape is any
+structure that rules make. In the owner's words (8 November 2026): "things like
+triangles/lines are essentially shapes, and they can run on forever. You can
+have an infinitely large circle, and different infinity size circles as well.
+Same thing with human minds. [W]e're essentially just a logical shape, or a
+pattern that repeats as consciousness in other humans. Our genome is a shape
+just like it."
+
+**Shape or pattern.** "People refer to these as 'patterns'. They are, but it's
+missing the root of it. Saying that these 'emergent structures' are shapes
+allows us to understand them in the context of logic, from which we can create
+shapes. They are rules, and rules within rules." So a shape is a pattern
+together with the rules that make it. A glider is a pattern on Life's board; as
+a shape it is the glider together with the rule that carries it along (lesson
+1.3).
+
+**Rules within rules.** Naming a pattern gives it a new variable, a witness,
+and the naming is itself a three-place rule (lessons 1.6 and 3.2), so rules
+about rules need no new kind of rule. The record also finds a limit. Built from
+one three-place law, towers of patterns of patterns keep only parity: every
+other law reaches the free relation, which constrains nothing, within three
+levels ([GEOMETRY-LAW-20261029-001](research/GEOMETRY-LAW-20261029-001/geometry_from_a_law.md)).
+
+**Shapes that run on forever.** A line has no end, and a circle can be as large
+as you like. The record has a shape of this kind built with nothing drawn: a
+rule that grows only at knots holding two open ends grows the number line from
+a single knot, while a region with no open ends freezes
+([OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
+Circles depend on the law. Laws on periodic layouts make polygons, whose π is a
+rational number, and an exactly round circle came from a random layout with no
+preferred direction ([LOGIC-CIRCLE-20261107-001](research/LOGIC-CIRCLE-20261107-001/logic_circle.md)).
+
+**Every bond is finite.** A shape can run on forever, but each binding in it
+joins finitely many things. No system of clauses binds infinitely many loops
+into one knot, by the compactness theorem, so an infinite thread is a tower of
+finite knots ([THEORY.md](THEORY.md#every-bond-is-finite); lesson 7.2,
+question 3).
+
+**The board and true base reality.** Life's board is drawn before the game
+starts (lesson 1.3). In the owner's words, "we're in a different base reality.
+True base reality, where we start with nothing and have to create the
+pattern." The guide's version is lesson 1.1's: nothing is assumed except
+distinctions, so every shape, space included, has to come from rules (lesson
+7.2, question 1).
+
+**Can the rule be learned?** "This doesn't have to be designed, maybe we can
+learn the shape of the underlying pattern somehow. But that is to be tested."
+That is open: whether a learning rule, shown what a system allows, can find
+rules, and rules within rules, that make it.
+
+**Two senses of the word.** From lesson 3.3 on, the guide also uses "shape" in
+a narrow sense: the sets of variables a system leaves free, drawn as points,
+edges and filled triangles. The narrow shape is one exact view of the broad
+one, which shows the holes and knots inside what a system allows.
+
+**Reading.** Apart from the results it cites, this lesson is the owner's
+reading. Minds, consciousness and genomes are examples of the word, and nothing
+here is a claim about minds or biology.
 
 ## Chapter 2. The knot test
 
@@ -1133,7 +1195,7 @@ remains open.
   and knots are not (lesson 3.1).
 - **Shape.** The simplicial complex of sets of distinctions a system leaves
   free. A **hole** is a gap in it, and a knot is the smallest kind of hole
-  (lesson 3.3).
+  (lesson 3.3). In the broad sense of lesson 1.7, any structure that rules make.
 - **World.** With 1 read as "exists", the set of things that exist in an
   allowed state (lesson 4.2).
 - **Requirement.** A rule saying what must exist when other things do, such as

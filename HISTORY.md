@@ -6,16 +6,18 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 ## 8 November 2026: the intuition guide becomes a textbook
 
 - [INTUITIONS.md](INTUITIONS.md) is now written as a textbook, to be read in
-  order: seven chapters divided into 25 lessons, then the glossary. What
+  order: seven chapters divided into 26 lessons, then the glossary. What
   jscul.dev showed as four parts are now seven chapters, and what it called
   chapters are now lessons.
-- Eleven lessons are new. They teach what the guide used without explaining:
+- Twelve lessons are new. They teach what the guide used without explaining:
   distinctions and joint states; the notation and what makes variables free;
   emergence in the Game of Life, read as a system of rules on a grid drawn in
   advance; how to read the atom A, B → c, the rule that forbids only A and B
   without c; forgetting and witnesses; knots on the cube of states; two-place
   rules and the majority vote; the shape of a system; easy and hard questions;
-  refutations and their degree; and counting worlds. Other lessons gained short
+  refutations and their degree; and counting worlds. A twelfth, "What a shape
+  is", gives the owner's definition of a shape, any structure that rules make,
+  as a reading with the results that bear on it. Other lessons gained short
   definitions of the terms they use.
 - Two former chapters are now two lessons each: "Which knots remember a loop"
   (rings, then networks) and "Counting what emerges" (one lesson per note).

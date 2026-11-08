@@ -1698,8 +1698,23 @@ So network holes come in two kinds:
      without its witnesses, and unbalanced loops keep their feedback: none is persistent at sizes 5 to 30.
    - **Reading.** The two ways round the loop to the opposite contact cancel when their chain lengths agree, so balance is a property
      of the whole loop. The first closed routes of contacts across time that hold at every size, by proof.
-   - **Next (awaiting a go-ahead).** Balanced loops of any number of rings (Payoff 3/3, Concreteness 2/3)
+   - **Next (taken).** Balanced loops of any number of rings (next entry)
      ([decision note](../research/LOOP-PROOF-20261108-001/loop_proof.md)).
+
+   **2026-11-08: balanced loops of any length persist** (`LOOP-ANY-20261108-001`).
+   - **The feedback is a shift (proved).** In a loop of r rings, crossing any ring forward and back costs the same, a^(s−2), so the
+     feedback is z(A + cA^(−1)): A shifts round the loop through the chains, and c is a scalar.
+   - **Balance cancels every return (proved).** When the positions sum to rs/2, every way the influence can return to a contact pairs
+     with its mirror image, C(m, j) with C(m, m − j), and cancels mod 2. So every contact binds both of its rings at every lag, at every
+     ring size, for every number of rings. The antipodal loops, every contact halfway round, are balanced for every length.
+   - **Finite only for powers of two (proved).** The feedback dies out after r/2 steps exactly when r is a power of two and the loop
+     is balanced; for other lengths it never ends, yet its returns still cancel.
+   - **A census agrees (exploratory).** All 5,354 balanced loops of 5 to 8 rings at sizes 4 to 16 persist to lag 400, and so do 11,322
+     unbalanced ones: balance is sufficient, not necessary.
+   - **Reading.** Closed routes of contacts of every length now hold at every size, by proof, which completes the cycle side of
+     composed topology across time for these loops. The powers of two are characteristic 2 at work, where squaring is linear.
+   - **Next (research directions).** Networks of loops, rings with three or more contacts (Payoff 3/3, Concreteness 2/3), or why
+     unbalanced loops persist (Payoff 2/3, Concreteness 2/3) ([decision note](../research/LOOP-ANY-20261108-001/loop_any.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

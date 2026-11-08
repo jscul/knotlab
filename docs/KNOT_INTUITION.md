@@ -3365,10 +3365,35 @@ So network holes come in two kinds:
      surface built from the law alone, nothing drawn).
    - **Provenance.** Local views and locally checkable proofs (Göös–Suomela), decorated matching rules (Goodman-Strauss) and flat cone
      spheres (Thurston) are classical. The seam law's characterization of the knot spheres is new as far as found.
-   - **Next (recommended, awaiting the owner).** Grow K_m by a local process, ring by ring from a digon with the seams as signals. Rated
-     Payoff 2/3 (Substantial), Concreteness 2/3 (Testable).
+   - **Next (taken as `GROW-COIN-20261107-001`).** Grow K_m by a local process, ring by ring from a digon with the seams as signals.
+     Rated Payoff 2/3 (Substantial), Concreteness 2/3 (Testable).
      - **The alternatives.** Seams as a native knot (Payoff 2/3, Concreteness 1/3); other round families, the Goldberg–Coxeter
        octahedra (1/3, 2/3); a write-up (1/3, 3/3).
+     - **Provenance, added.** In the words of symbolic dynamics, the round knot spheres are sofic (one bit) but not of finite type
+       (Mozes 1989; Goodman-Strauss 1998; Fernique–Ollinger 2010).
+
+   **2026-11-07: a growing law needs a shared coin** (`GROW-COIN-20261107-001`).
+   - **The question.** A finished sphere cannot be checked as round without a hidden bit on every incidence. Can a growing law do
+     without it? No scheduler may supply an input, so a result must hold in every growth order.
+   - **Refinement keeps the shape (proved).** Subdividing every triangle of K_m gives K_{2m} or K_{3m}. A split edge forces both its
+     triangles to split, so a step is all-or-nothing in every order. A tube refines to a tube: refinement keeps whatever shape the seed
+     has and never places a corner.
+   - **Accretion must place corners.**
+     - **Proved.** Growing annuli around a corner gives K_m exactly when the four turns of one ring become corners together.
+     - **Computed.** With turns decided one at a time, the growth also closes lopsided spheres: 38 distinct closures up to 100
+       triangles, 3 round, and 12 of 400 random-coin runs non-round, up to 646 triangles.
+     - **Proved, windows computed.** Growing one annulus at a time, a turn is decided at a window that is the same in every lap. So a
+       label-free rule cannot tie the four equator corners together. One bit kept for one lap does, but that bit is history kept by the
+       process: a hidden witness, like the seam bits.
+   - **Reading.** Growth does not remove the witness. A law can grow space that is already round by refining it, with nothing
+     hidden. To lay out a new round sphere it needs a witness, whether the sphere is checked when finished or grown corner by corner.
+   - **Provenance.** Local growth rules that stall without non-local information (Onoda, Steinhardt, DiVincenzo and Socolar 1988),
+     capsids assembled by local rules with conformational states (Berger, Shor et al. 1994), and tile complexity in self-assembly are
+     classical. The contrast for the knot spheres is new as far as found.
+   - **Next (recommended; started).** Hardness without roundness: does the knot's contradiction stay hard on spheres whose corners are
+     merely far apart? Grown lopsided spheres have elimination width 1.0 to 1.9 √n, against 2.1 √n on K_m (upper bounds only).
+     Rated Payoff 2/3 (Substantial), Concreteness 2/3 (Testable).
+     - **The alternatives.** A theorem for every accretion law (2/3, 2/3); the fewest hidden bits that single out K_m (1/3, 2/3).
 
    **2026-11-07: round without coins** (`PINWHEEL-ROUND-20261107-001`).
    - **The question.** Can a law with no coins, and no Poisson points, have a round circle?

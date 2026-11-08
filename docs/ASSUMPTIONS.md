@@ -799,4 +799,6 @@ evidence: results and their status come from the records each entry links.
   The cheapest test runs the rhombus crystal against one-bit edge labellings of the pinwheel's collars; if some edge bit excludes
   every crystal that all one-bit tile decorations admit, the measure misplaces the price.
 - **History.**
+  - 2026-11-08 · Bears on it: `ONE-BIT-20261108-001`. Under this measure one bit per tile fails in 1,022 of 1,024 cases, and one
+    decoration, up to relabelling, is open.
   - 2026-11-08 · Added by `ROUND-PRICE-20261108-001`.

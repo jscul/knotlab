@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**237 current results** and 5 superseded ones, from 170 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**237 current results** and 5 superseded ones, from 170 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -30,7 +30,7 @@ How to read an entry:
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
-- [Notes](#notes): 5 self-contained notes
+- [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 170 epics with their closures
 
 ## Foundations: the knot and its readings
@@ -835,6 +835,7 @@ Self-contained write-ups. The first three are also in [notes/](notes/) with stan
 - **2026-10-31 · Counting 2-colourings of 3-regular hypergraphs with Pfaffian incidence graphs** (`COUNT-NOTE-20261031-001`). [Note folder](proofs/COUNT-NOTE-20261031-001/COUNT-NOTE-20261031-001-P001_note/)
 - **2026-11-01 · Native selection, and why three places** (`SELECTION-NOTE-20261101-001`). [Note folder](proofs/SELECTION-NOTE-20261101-001/SELECTION-NOTE-20261101-001-P001_note/)
   *Erratum pending: abstract item 5, Section 6 and Theorem 12 say the knot's spaces compose only through hubs, which is false at 2-edge cuts (see NATIVE-PATHS-20261101-001).*
+- **2026-11-08 · The pinwheel tilings have no undecorated local rules** (`ONE-BIT-20261108-001C`). [Note folder](proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note/)
 
 ## Epics
 

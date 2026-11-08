@@ -3944,8 +3944,22 @@ So network holes come in two kinds:
      that remembers the parent.
    - **Provenance.** Known: decorated matching rules (Radin 1994; Mozes 1989; Goodman-Strauss 1998), small aperiodic sets (Jeandel
      and Rao 2021). Not found: the census and the forcing test.
-   - **Next (awaiting a go-ahead).** Settle the sixteen: a joint (radius-2) consistency test, then a search for an escaping crystal
-     (Payoff 2/3, Concreteness 2/3) ([decision note](../research/ROUND-PRICE-20261108-001/round_price.md)).
+   - **Next (taken).** Settle the sixteen (next entry) ([decision note](../research/ROUND-PRICE-20261108-001/round_price.md)).
+
+   **2026-11-08: one hidden bit per tile** (`ONE-BIT-20261108-001`).
+   - **The question.** Settle the sixteen one-bit decorations left open: a joint consistency test, which would prove that a
+     decoration forces the pinwheel, then a search for crystals that escape.
+   - **The joint test settles none (proved).** It is sound, but for each decoration it leaves labelled parent collars outside the
+     law, most of them pinwheel collars with labels the decoration never produces.
+   - **Fourteen escape (exploratory).** Among all domino tilings of tori up to 4 × 4, 176 are legal after two cuts. A mixed tiling of
+     the 4 × 4 torus, with dominoes in both directions, admits most of the open decorations with periodic labels after two to four
+     cuts. So one bit per tile, placed this way, lets a crystal through in 1,022 of the 1,024 cases.
+   - **One remains.** s(0) = 1 0 1 0 1, s(1) = 0 0 1 1 0 (and its relabelling) resists every crystal tried. If it forces the
+     pinwheel, the plane's price of roundness is one bit per tile, as the sphere's is one bit per incidence.
+   - **A note** for outside readers, "The pinwheel tilings have no undecorated local rules", is in knotlab's notes with an
+     independent replay.
+   - **Next (awaiting a go-ahead).** The last decoration: deeper crystals, then a forcing test that follows the geometry alone
+     (Payoff 2/3, Concreteness 2/3) ([decision note](../research/ONE-BIT-20261108-001/one_bit.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

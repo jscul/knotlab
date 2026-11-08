@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HARD-FLAT-20261107-001A-P001",
+  "canonical_id": "HARD-FLAT-20261107-001A-P001",
+  "kind": "proof",
+  "ticket": "HARD-FLAT-20261107-001A",
+  "proof": "HARD-FLAT-20261107-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The Sperner reduction needs only a flat disc",
+  "status": "Proved",
+  "claim": "Two-kind knot spheres with local Kasteleyn signs. (1) The frames are flat at three-point faces and have label holonomy -1 at each of the six digons, so the flat states of FLAT-STATES-20261107-001A (one violated line, at the vortex) exist on every two-kind sphere wherever six disjoint cut paths reach the digons. (2) The reduction of one-sided Sperner_m of FLAT-STATES-20261107-001B uses only a corner-free lattice triangle of side 2m and such a flat state outside it, so it holds on every two-kind sphere with that triangle and cut paths from its boundary; with SPHERE-WIDTH-20261107-001B the knot then needs resolution width at least c m. (3) Hence width is at least c' r, for r the radius of the largest flat disc, and at most O(sqrt n) by planar separators: spheres with r of order sqrt(n) need width Theta(sqrt n), round or not. In the sample, grown lopsided spheres have r between 0.14 and 0.35 sqrt(n), against 0.25 sqrt(n) on the octahedral spheres, while a tube's r is bounded by its circumference.",
+  "dependencies": [
+    "GROW-COIN-20261107-001Z",
+    "FLAT-STATES-20261107-001Z",
+    "SPHERE-WIDTH-20261107-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A two-kind sphere with Kasteleyn signs whose digon faces do not all have label holonomy -1, or a three-point face with non-zero holonomy.",
+    "A flat state on a two-kind sphere with other than one violated line, or one away from the vortex.",
+    "A step of the FLAT-STATES-20261107-001B reduction that uses the octahedral geometry beyond a corner-free triangle and a flat state outside it.",
+    "On an octahedral or a grown sphere, a largest flat disc of radius at least 2 whose rim cannot reach the six digons by disjoint cut paths."
+  ],
+  "lineage": {
+    "home_scope": "HARD-FLAT-20261107-001",
+    "epic_path": [
+      "HARD-FLAT-20261107-001"
+    ],
+    "parents": [
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json",
+      "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json",
+      "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/manifest.json",
+      "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/result.json",
+      "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/manifest.json",
+      "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/result.json",
+      "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/growth_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/manifest.json": "e0f61bd599521eb52588a1bc36732f64fe80eee23ee9f7a1c1c8606cac324fca",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/result.json": "6094393c4899b93849fabbffa2aef8ac5c3e1ed87569885ac990cfbb25dbc8e4",
+    "proofs/FLAT-STATES-20261107-001A/FLAT-STATES-20261107-001A-P001_flat_states_exist_on_the_whole_sphere/flat_lib.py": "f19711315cb24b03296259fc5e27faab9d5a99246119a1e52e2738bb7dfb672c",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "94a048cfe6159b4de6b36487da85c20c5b422c97f7a7a1dd0f4783ee0e960971",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/result.json": "ca62f89c55bb4c742357bc2dc84c133f34ab3400df8e274ff8ede8272a6882ef",
+    "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/manifest.json": "cdc94fc3156a2a6f4af7bfea19f20d25fbf163341659bfe7459f1eec90ded9b6",
+    "proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/result.json": "38a80e4f1ab6a038e98467a44d59ba58fbb2febdcc3a59486ef0e5d43d0d30e5",
+    "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/manifest.json": "94dd318d8ccfcd1b2a50123ad9030fee1c38c4bba971feeb1835000a6c1c45f9",
+    "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/result.json": "ca5117883d0f6a3a87ffd63bcb0592c1346b0f3a8d3765313617b1e0846c8d40",
+    "proofs/GROW-COIN-20261107-001A/GROW-COIN-20261107-001A-P001_refinement_shares_its_coin_accretion_must_carry_it/growth_lib.py": "82fb436b339cb9565e419d77e4ad72a4a46abd38105fd203aab5f486681c1efb"
+  },
+  "paths": {
+    "manifest": "proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/manifest.json",
+    "identity": "proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/identity.json",
+    "proof": "proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/proof.md",
+    "check": "proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/check.py",
+    "result": "proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/result.json",
+    "directory": "proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Statements (1) and (2) by proof for every two-kind sphere with the stated cut paths. Checked on K_4..K_10, four capped tubes and eight grown lopsided spheres of 100 to 900 triangles: holonomies, flat states, flat radii, elimination widths and cut paths.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-07.",
+    "status": "by hand, with the finite claims checked by computation with controls; no human or external review",
+    "novelty": "known-with-delta: the flat states, the Sperner reduction and the grid Sperner width bound are FLAT-STATES-20261107-001 and SPHERE-WIDTH-20261107-001; Sperner hardness is classical (Papadimitriou; Crescenzi-Silvestri; Itsykson et al.). New: they need only a flat disc, so hardness follows the largest corner-free disc rather than roundness."
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**220 current results** and 5 superseded ones, from 155 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**221 current results** and 5 superseded ones, from 156 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 11 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 11 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 70 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 32 results
@@ -30,7 +30,7 @@ How to read an entry:
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 155 epics with their closures
+- [Epics](#epics): all 156 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -211,6 +211,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-07 · The knot sphere's count is PPADS-complete, and its orientation is what keeps it out of PPAD** (`COUNT-TFNP-20261107-001-D001`).
   Finding a violated line of the octahedral knot sphere is PPADS^dt-complete and lies outside PPAD^dt, PPA^dt and PLS^dt, so its not-all-equal formula has no polylogarithmic-degree Nullstellensatz refutation over F2 or in unary form although unary Sherali-Adams refutes it at degree 3. Counting monochromatic faces as solutions too, the count becomes PPAD^dt-complete, so the knot's orientation alone separates the two classes.
   [proof P001](proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/proof.md), [proof P001](proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/proof.md), [epic closure](proofs/COUNT-TFNP-20261107-001Z/COUNT-TFNP-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Hardness needs a flat disc, not roundness** (`HARD-FLAT-20261107-001-D001`).
+  On every two-kind knot sphere the flat states and the Sperner reduction need only a corner-free disc whose rim reaches the six corners, so the knot's contradiction needs resolution width at least a constant times that disc's radius and at most O(sqrt n). Hardness therefore follows the largest flat disc, not roundness: spheres with a flat disc of radius order sqrt(n) are hard without any witness.
+  [proof P001](proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/proof.md), [epic closure](proofs/HARD-FLAT-20261107-001Z/HARD-FLAT-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -926,6 +929,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Flat states and the width of the sphere's count (`FLAT-STATES-20261107-001`) | [closure](proofs/FLAT-STATES-20261107-001Z/FLAT-STATES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/FLAT-STATES-20261107-001/) |
 | 2026-11-07 | Reading the genus natively (`GENUS-READ-20261107-001`) | [closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-READ-20261107-001/) |
 | 2026-11-07 | A growing law needs a shared coin: refinement shares it, accretion must carry it (`GROW-COIN-20261107-001`) | [closure](proofs/GROW-COIN-20261107-001Z/GROW-COIN-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-COIN-20261107-001/) |
+| 2026-11-07 | Hardness needs a flat disc, not roundness (`HARD-FLAT-20261107-001`) | [closure](proofs/HARD-FLAT-20261107-001Z/HARD-FLAT-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/HARD-FLAT-20261107-001/) |
 | 2026-11-07 | The axis built from logic: bond distance as a law grows to infinity (`LOGIC-AXIS-20261107-001`) | [closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-AXIS-20261107-001/) |
 | 2026-11-07 | Circles from logic: polygons, coins and roundness (`LOGIC-CIRCLE-20261107-001`) | [closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/LOGIC-CIRCLE-20261107-001/) |
 | 2026-11-07 | Growth at open ends: what a law grows with nothing drawn (`OPEN-END-GROWTH-20261107-001`) | [closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/OPEN-END-GROWTH-20261107-001/) |

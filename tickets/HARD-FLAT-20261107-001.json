@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROW-COIN-20261107-001Z",
+    "FLAT-STATES-20261107-001Z",
+    "SPHERE-WIDTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "complexity"
+  },
+  "id": "HARD-FLAT-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "GROW-COIN-20261107-001's selected next step (hardness without roundness, Payoff 2/3, Concreteness 2/3), run as the last check of the sphere line at the owner's request to wrap up open lines: does the knot's contradiction stay hard on two-kind spheres whose corners are merely far apart? Carry the flat states and the Sperner reduction of FLAT-STATES-20261107-001 from the octahedral sphere to every two-kind sphere, and measure how fat grown lopsided spheres are. Serves G3 (hardness at three places).",
+  "ownership": {
+    "root": true,
+    "scope_id": "HARD-FLAT-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: on every two-kind knot sphere the flat states and the Sperner reduction need only a corner-free disc whose rim reaches the six corners, so the knot needs resolution width at least a constant times that disc's radius and at most O(sqrt n); hardness follows the largest flat disc, not roundness (grown lopsided spheres: flat radius 0.14-0.35 sqrt(n) in the sample). Research directions, no next action selected: the sphere line is paused at the owner's request to wrap up open lines.",
+  "status_class": "complete",
+  "stop_rule": "Stop when the width lower bound is carried to spheres with a large flat region, by proof, or an obstruction is found; no further ticket (owner: wrap up).",
+  "title": "Hardness needs a flat disc, not roundness"
+}

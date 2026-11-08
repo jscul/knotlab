@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FLAT-STATES-20261107-001Z",
+    "GROW-COIN-20261107-001Z",
+    "SPHERE-WIDTH-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HARD-FLAT-20261107-001A-P001"
+  },
+  "id": "HARD-FLAT-20261107-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove: (1) on every two-kind sphere with local Kasteleyn signs the frames are flat except at the six digons, each of label holonomy -1, so a flat state with exactly one violated line exists wherever six disjoint cut paths reach the corners; (2) the reduction of one-sided Sperner_m of FLAT-STATES-20261107-001B applies to any corner-free lattice triangle of side 2m with such cut paths, so with SPHERE-WIDTH-20261107-001B the knot needs resolution width at least c*m; (3) hence width at least c'*r, where r is the radius of the largest flat disc, and at most O(sqrt n): fat spheres need width Theta(sqrt n) whether or not they are round. Check the holonomies and flat states on octahedral spheres, tubes and grown spheres; measure flat radii, elimination widths and the cut paths.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HARD-FLAT-20261107-001"
+  },
+  "parent": "HARD-FLAT-20261107-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-07: on every two-kind sphere the frames are flat at three-point faces with label holonomy -1 at the six digons, so flat states exist wherever cut paths reach the digons; the Sperner reduction then needs only a corner-free lattice triangle and its cut paths, giving resolution width at least c times the flat radius (and at most O(sqrt n)); grown lopsided spheres have flat radius 0.14 to 0.35 sqrt(n) in the sample, against 0.25 sqrt(n) on the octahedral spheres.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The Sperner reduction needs only a flat disc"
+}

@@ -1,0 +1,464 @@
+{
+ "frozen at": "2026-11-07T17:20:41-08:00",
+ "rule": "Ticket B's spaces are the edge-atom trisum spaces costing more than 200,000 solutions with line 0 removed; no map of any of them has been computed. Training spaces (ticket A) cost at most 200,000.",
+ "library sha256 (tr_lib.py)": "48f7a7031af09356645f8683f1aa2bcf68acadb66e419420f8b7ce34ed29af74",
+ "predictions": [
+  "P1 In every test space the canonical atoms ('same atom'), the skeleton lines, the junction lines, the roots, the loaded lines and the square-mate relation are unions of stable classes of pair refinement on the native creation map.",
+  "P2 In every test space the junction lines are a union of colour-refinement classes of yes/no creation.",
+  "P3 In every test space the lines that no removal blocks (every other line creates there, never degenerate) are exactly the atom cores (the six lines of each atom other than its root).",
+  "P4 In every test space each atom is read by yes/no creation alone: its root is the line created at by exactly six removals, all core lines, and those six are the rest of its atom; no other line is.",
+  "P5 In every test space the pairs of lines outside the atoms that are never degenerate at removals outside the atoms, each being the only removal outside the atoms that blocks the other, are exactly the trisectors' line pairs (so the number of junctions is read).",
+  "P6 In every test space every pinned pair of yes/no creation alone (atoms not set aside) is a trisector's line pair.",
+  "P7 In every test space 'same leaf' (the planar pieces at all trisectors; an atom belongs to the leaf of its edge) is a union of stable pair classes of the native creation map."
+ ],
+ "spaces": {
+  "training": [
+   {
+    "seed": 3,
+    "trisums": 1,
+    "points": 29,
+    "lines": 29,
+    "cost (solutions minus line 0)": 1500,
+    "lines sha256": "e8793e55486e9f3c0cbf18d01764a8bb06cfe683c1c967ccde8f6041700f5768",
+    "atoms": 3,
+    "junctions": 1,
+    "junction lines": [
+     1,
+     3
+    ],
+    "junction line pairs": [
+     [
+      1,
+      3
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 6,
+    "trisums": 1,
+    "points": 38,
+    "lines": 38,
+    "cost (solutions minus line 0)": 11250,
+    "lines sha256": "4647e621c201c1d65c185fa1f10d27e3c75e62a20b07728302b271af5754379b",
+    "atoms": 4,
+    "junctions": 1,
+    "junction lines": [
+     1,
+     2
+    ],
+    "junction line pairs": [
+     [
+      1,
+      2
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 36,
+    "trisums": 1,
+    "points": 38,
+    "lines": 38,
+    "cost (solutions minus line 0)": 11250,
+    "lines sha256": "9386a1feb5ae79c11e21e8ee13cd4e11728a6923ce0538cd0badcdba65fab549",
+    "atoms": 4,
+    "junctions": 1,
+    "junction lines": [
+     0,
+     4
+    ],
+    "junction line pairs": [
+     [
+      0,
+      4
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 246,
+    "trisums": 1,
+    "points": 47,
+    "lines": 47,
+    "cost (solutions minus line 0)": 75000,
+    "lines sha256": "f2b41940a903b537bd4c02323620f7ebdc540ca5310b3a5158cd424284a63fa9",
+    "atoms": 5,
+    "junctions": 1,
+    "junction lines": [
+     1,
+     3
+    ],
+    "junction line pairs": [
+     [
+      1,
+      3
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 192,
+    "trisums": 1,
+    "points": 47,
+    "lines": 47,
+    "cost (solutions minus line 0)": 81250,
+    "lines sha256": "5ee03943c031485fffe24946dbcdf5f00e7bbce5d12d0d616b36eae3b18aefa9",
+    "atoms": 5,
+    "junctions": 1,
+    "junction lines": [
+     2,
+     4
+    ],
+    "junction line pairs": [
+     [
+      2,
+      4
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 300,
+    "trisums": 1,
+    "points": 47,
+    "lines": 47,
+    "cost (solutions minus line 0)": 81250,
+    "lines sha256": "7ad961e27815588febaf8b4d2171ee070199da617fd5ade119aaf91876032c34",
+    "atoms": 5,
+    "junctions": 1,
+    "junction lines": [
+     2,
+     4
+    ],
+    "junction line pairs": [
+     [
+      2,
+      4
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 1,
+    "trisums": 2,
+    "points": 47,
+    "lines": 47,
+    "cost (solutions minus line 0)": 112500,
+    "lines sha256": "a46691bd969d1dff1c3544c2e155257b668930229a4ba567321aaddea319b2f0",
+    "atoms": 5,
+    "junctions": 2,
+    "junction lines": [
+     1,
+     3,
+     4,
+     5
+    ],
+    "junction line pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      5
+     ]
+    ],
+    "junction lines carrying an atom": [
+     1
+    ],
+    "junction points carrying an atom": [
+     5
+    ],
+    "leaves": 5
+   }
+  ],
+  "test": [
+   {
+    "seed": 240,
+    "trisums": 1,
+    "points": 54,
+    "lines": 54,
+    "cost (solutions minus line 0)": 437500,
+    "lines sha256": "86fb0d8a13e563a144ed03d59d67d85d413a19bf4776311703f6e07bc8a6ecc8",
+    "atoms": 6,
+    "junctions": 1,
+    "junction lines": [
+     0,
+     1
+    ],
+    "junction line pairs": [
+     [
+      0,
+      1
+     ]
+    ],
+    "junction lines carrying an atom": [
+     1
+    ],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 354,
+    "trisums": 1,
+    "points": 56,
+    "lines": 56,
+    "cost (solutions minus line 0)": 468750,
+    "lines sha256": "fc0898c86d24a45bee0060ef18084cf00093689f47b2aacbb0b83f74bb34334e",
+    "atoms": 6,
+    "junctions": 1,
+    "junction lines": [
+     2,
+     6
+    ],
+    "junction line pairs": [
+     [
+      2,
+      6
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 96,
+    "trisums": 1,
+    "points": 56,
+    "lines": 56,
+    "cost (solutions minus line 0)": 531250,
+    "lines sha256": "4d69ec248d1047d492d91d9090dfc0f1eac6282d9e155eac97718f6819e0eb25",
+    "atoms": 6,
+    "junctions": 1,
+    "junction lines": [
+     2,
+     4
+    ],
+    "junction line pairs": [
+     [
+      2,
+      4
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 288,
+    "trisums": 1,
+    "points": 56,
+    "lines": 56,
+    "cost (solutions minus line 0)": 531250,
+    "lines sha256": "08ff9acbb98681e7ddd7f7e8784b40f02c5337e440b18d1f2b010668149e3c53",
+    "atoms": 6,
+    "junctions": 1,
+    "junction lines": [
+     2,
+     5
+    ],
+    "junction line pairs": [
+     [
+      2,
+      5
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 282,
+    "trisums": 1,
+    "points": 56,
+    "lines": 56,
+    "cost (solutions minus line 0)": 593750,
+    "lines sha256": "b43b6dd0aec5621484424ff41fad67a5bcf6babb0ee7f933fd0330b84043f52f",
+    "atoms": 6,
+    "junctions": 1,
+    "junction lines": [
+     2,
+     3
+    ],
+    "junction line pairs": [
+     [
+      2,
+      3
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 384,
+    "trisums": 1,
+    "points": 56,
+    "lines": 56,
+    "cost (solutions minus line 0)": 593750,
+    "lines sha256": "6f8e3864c81ee54a6369577c81767522929b73bfa79974b0da64ea11cd53cb16",
+    "atoms": 6,
+    "junctions": 1,
+    "junction lines": [
+     0,
+     7
+    ],
+    "junction line pairs": [
+     [
+      0,
+      7
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 3
+   },
+   {
+    "seed": 34,
+    "trisums": 2,
+    "points": 58,
+    "lines": 58,
+    "cost (solutions minus line 0)": 1218750,
+    "lines sha256": "a1420d040016c9c62c5f99cef7c20367dc02d2cd479c2d65e2a9ad9fbe2201cf",
+    "atoms": 6,
+    "junctions": 2,
+    "junction lines": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "junction line pairs": [
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      5
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 5
+   },
+   {
+    "seed": 5,
+    "trisums": 3,
+    "points": 58,
+    "lines": 58,
+    "cost (solutions minus line 0)": 1687500,
+    "lines sha256": "1cf12b2828099c8d8cd4ec3b8d9b21473921f4e133699a47613fc614ee10087b",
+    "atoms": 6,
+    "junctions": 3,
+    "junction lines": [
+     0,
+     1,
+     2,
+     3,
+     10,
+     11
+    ],
+    "junction line pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      10,
+      11
+     ]
+    ],
+    "junction lines carrying an atom": [
+     1
+    ],
+    "junction points carrying an atom": [],
+    "leaves": 7
+   },
+   {
+    "seed": 11,
+    "trisums": 3,
+    "points": 58,
+    "lines": 58,
+    "cost (solutions minus line 0)": 1687500,
+    "lines sha256": "ef48fac2f54b79c4ca2d1c84fdcac71d0b41ebca31dda7012754bb0f0940fd9e",
+    "atoms": 6,
+    "junctions": 3,
+    "junction lines": [
+     1,
+     3,
+     6,
+     7,
+     10,
+     11
+    ],
+    "junction line pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      10,
+      11
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [
+     7
+    ],
+    "leaves": 7
+   },
+   {
+    "seed": 46,
+    "trisums": 2,
+    "points": 60,
+    "lines": 60,
+    "cost (solutions minus line 0)": 1406250,
+    "lines sha256": "6c6d118062889071d25905e4152a0613a8c2cb0ddd32c5b840dcafdc634c06f1",
+    "atoms": 6,
+    "junctions": 2,
+    "junction lines": [
+     1,
+     2,
+     6,
+     7
+    ],
+    "junction line pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "junction lines carrying an atom": [],
+    "junction points carrying an atom": [],
+    "leaves": 5
+   }
+  ]
+ },
+ "training result": "P1 to P7 hold in all seven training spaces (TRISUM-READ A); P5 also fires exactly once in the 277 spaces of REFINE-READ, at the trisector of design 7's one non-planar brace, and P6 never fires there."
+}

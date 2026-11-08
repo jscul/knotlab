@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "REFINE-READ-20261107-001Z",
+    "HANDLE-COUNT-20261106-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "TRISUM-READ-20261107-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's request ('Yes  continue.', approving REFINE-READ-20261107-001's recommendation): on HANDLE-COUNT's trisum-glue spaces (plain spaces with a Fano atom on each signed incidence of a trisum brace, with further seeds of the same generator), compute exact native creation maps and use pair refinement to test whether native creation fixes the junctions (the trisectors of the trisum skeleton), and whether junction lines carry a native signature. No time constraints.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TRISUM-READ-20261107-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-07: successful. Native creation reads the junctions of trisum glue: yes/no creation reads the atoms and, with them set aside, a junction's two lines are the only removals that block each other, so junctions are counted; pair refinement fixes atoms, junctions and leaves (computed on 18 of 18 spaces: seven for training, ten held out with frozen predictions, one four-junction stress test); the signature fires once in REFINE-READ's 277 spaces, at the one non-planar brace. One frozen sub-statement failed (seed 5) by a native symmetry that keeps the signing's switching class and moves an atom. Next, parked as backlog B5: does native creation see a signing only through its switching class (2/3)",
+  "status_class": "complete",
+  "stop_rule": "Stop when, on the stated spaces, pair refinement shows whether native creation fixes the atoms, the skeleton and the junctions, and a junction signature frozen on the small spaces has been tested on the larger ones (found or ruled out).",
+  "title": "Native creation at junction handles"
+}

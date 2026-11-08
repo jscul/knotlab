@@ -1,0 +1,224 @@
+{
+ "artifact_id": "TRISUM-READ-20261107-001B-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; ticket A Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the freeze: ticket A's predictions.json is the frozen file and names tr_lib.py by hash; the stored maps are complete maps of exactly its ten test spaces (lines bound by hash), each recorded as finished after the freeze": {
+   "info": {
+    "engines": {
+     "11": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "240": "tr_lib.exact_row (CHAIN-TRANSFER A's TL.solutions)",
+     "282": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "288": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "34": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "354": "tr_lib.exact_row (CHAIN-TRANSFER A's TL.solutions)",
+     "384": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "46": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "5": "map_lib.exact_row (lean enumeration, CHUNK 2^16)",
+     "96": "map_lib.exact_row (lean enumeration, CHUNK 2^16)"
+    },
+    "finished": {
+     "11": "2026-11-07T19:17:54-08:00",
+     "240": "2026-11-07T17:28:20-08:00",
+     "282": "2026-11-07T18:04:40-08:00",
+     "288": "2026-11-07T17:49:40-08:00",
+     "34": "2026-11-07T18:28:40-08:00",
+     "354": "2026-11-07T17:31:46-08:00",
+     "384": "2026-11-07T18:12:20-08:00",
+     "46": "2026-11-07T19:32:58-08:00",
+     "5": "2026-11-07T18:55:35-08:00",
+     "96": "2026-11-07T17:45:39-08:00"
+    },
+    "frozen at": "2026-11-07T17:20:41-08:00",
+    "maps": 10,
+    "rows": 568
+   },
+   "pass": true
+  },
+  "2 the engines agree: three rows of every test space (row 0 and two seeded at random) recomputed by the lean enumerator and by CHAIN-TRANSFER A's enumerator through tr_lib equal the stored rows, and the two enumerators return the same solution arrays": {
+   "info": {
+    "full equal": 30,
+    "lean equal": 30,
+    "rows": 30,
+    "solutions per row, by space": {
+     "11": [
+      1687500
+     ],
+     "240": [
+      437500
+     ],
+     "282": [
+      593750
+     ],
+     "288": [
+      531250
+     ],
+     "34": [
+      1218750
+     ],
+     "354": [
+      468750
+     ],
+     "384": [
+      593750
+     ],
+     "46": [
+      1406250
+     ],
+     "5": [
+      1687500
+     ],
+     "96": [
+      531250
+     ]
+    }
+   },
+   "pass": true
+  },
+  "3 the frozen statements on the ten test spaces: the outcomes are as reported (failures listed in EXPECTED)": {
+   "info": {
+    "by space": {
+     "11": {
+      "atoms": 6,
+      "junction lines": 6,
+      "junctions": 3,
+      "lines": 58,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 3,
+      "points": 58
+     },
+     "240": {
+      "atoms": 6,
+      "junction lines": 2,
+      "junctions": 1,
+      "lines": 54,
+      "loaded junction lines": 1,
+      "pinned pairs (yes/no alone)": 0,
+      "points": 54
+     },
+     "282": {
+      "atoms": 6,
+      "junction lines": 2,
+      "junctions": 1,
+      "lines": 56,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 1,
+      "points": 56
+     },
+     "288": {
+      "atoms": 6,
+      "junction lines": 2,
+      "junctions": 1,
+      "lines": 56,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 1,
+      "points": 56
+     },
+     "34": {
+      "atoms": 6,
+      "junction lines": 4,
+      "junctions": 2,
+      "lines": 58,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 2,
+      "points": 58
+     },
+     "354": {
+      "atoms": 6,
+      "junction lines": 2,
+      "junctions": 1,
+      "lines": 56,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 1,
+      "points": 56
+     },
+     "384": {
+      "atoms": 6,
+      "junction lines": 2,
+      "junctions": 1,
+      "lines": 56,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 1,
+      "points": 56
+     },
+     "46": {
+      "atoms": 6,
+      "junction lines": 4,
+      "junctions": 2,
+      "lines": 60,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 2,
+      "points": 60
+     },
+     "5": {
+      "atoms": 6,
+      "junction lines": 6,
+      "junctions": 3,
+      "lines": 58,
+      "loaded junction lines": 1,
+      "pinned pairs (yes/no alone)": 2,
+      "points": 58
+     },
+     "96": {
+      "atoms": 6,
+      "junction lines": 2,
+      "junctions": 1,
+      "lines": 56,
+      "loaded junction lines": 0,
+      "pinned pairs (yes/no alone)": 1,
+      "points": 56
+     }
+    },
+    "failing": {
+     "5": [
+      "P1 loaded lines are a union of native diagonal classes"
+     ]
+    }
+   },
+   "pass": true
+  },
+  "4 the failure is a symmetry: in every space where a frozen statement fails, a stored permutation of the lines preserves the order-free vector of every ordered pair, exchanges a loaded line with an unloaded one and fixes every atom line; the skeleton automorphisms inducing it all keep the switching class of the signing (the incidences that carry atoms) and move its places": {
+   "info": {
+    "5": {
+     "a loaded line goes to an unloaded one": true,
+     "automorphism of the native map": true,
+     "each keeps the switching class": true,
+     "each moves the atoms' places": true,
+     "every atom line fixed": true,
+     "inducing skeleton automorphisms": 1,
+     "moved lines": {
+      "2": 3,
+      "3": 2,
+      "8": 9,
+      "9": 8,
+      "10": 11,
+      "11": 10
+     }
+    }
+   },
+   "pass": true
+  },
+  "5 yes/no creation is native: on all 17 maps (ticket A's seven and these ten) census 6 never creates where none of K4^(3), the Fano plane and census 58 does, so whether creation occurs equals creation by the three order-free far sides": {
+   "info": {
+    "census 6 alone": 0,
+    "maps": 17,
+    "non-degenerate entries": 37078
+   },
+   "pass": true
+  }
+ },
+ "claim": "Frozen predictions on larger trisum spaces (computed exactly on the ten larger edge-atom trisum spaces: 54 to 60 points, six atoms, one to three junctions; every map computed after the freeze). Every frozen statement about atoms, junctions and leaves holds in all ten: yes/no creation reads the atoms and, with the atoms set aside, the junctions, whose line pairs are exactly the pairs that block only each other, so one, two or three junctions are counted; pair refinement of the native map fixes the atoms, skeleton lines, junction lines, roots, square-mates and leaves. One frozen sub-statement fails, in one space: in seed 5 (three junctions) the lines that carry an atom are not a union of native classes, because the native map has an automorphism that exchanges the loaded line 9 with the unloaded line 8 of one cube piece and fixes every atom line. Every skeleton symmetry inducing it keeps the switching class of the signing that places the atoms but moves the atoms' places, so no native procedure can tell which of the two lines carries the atom. On all 17 maps census 6 never creates alone, so whether creation occurs is native.",
+ "kind": "proof",
+ "proof": "TRISUM-READ-20261107-001B-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TRISUM-READ-20261107-001B"
+}

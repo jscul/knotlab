@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**224 current results** and 5 superseded ones, from 158 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**226 current results** and 5 superseded ones, from 159 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 70 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 72 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 33 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 158 epics with their closures
+- [Epics](#epics): all 159 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -532,6 +532,12 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · One hidden bit per incidence lets a law lay out its own round sphere** (`SPHERE-GROWTH-20261107-001-D001`).
   A local law without hidden states cannot force a round sphere: if it allows the octahedral knot sphere, it allows long capped tubes, whose knot contradictions resolution refutes in bounded width. With one hidden bit per incidence, marking straight seams between digons, a law's spheres are exactly the octahedral knot spheres at every size, so it lays out its own round sphere and a contradiction needing width Theta(sqrt n).
   [proof P001](proofs/SPHERE-GROWTH-20261107-001A/SPHERE-GROWTH-20261107-001A-P001_round_spheres_need_one_hidden_bit/proof.md), [epic closure](proofs/SPHERE-GROWTH-20261107-001Z/SPHERE-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Native creation reads the junctions of trisum glue** (`TRISUM-READ-20261107-001-D001`).
+  On 18 plain trisum spaces, ten held out with frozen predictions and one with four junctions, yes/no creation reads the atoms and then the junctions: a junction's two lines are the only removals outside the atoms that block each other, so up to four junctions are counted, and pair refinement fixes atoms, junctions and leaves. Across 277 planar-glue spaces the signature appears once, at the one non-planar brace's junction.
+  [proof P001](proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/proof.md), [proof P001](proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/proof.md), [proof P001](proofs/TRISUM-READ-20261107-001C/TRISUM-READ-20261107-001C-P001_one_size_past_four_junctions/proof.md), [epic closure](proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Native creation cannot see where an atom sits within its switching class** (`TRISUM-READ-20261107-001-D002`).
+  In one held-out space with three junctions, the native creation map has a symmetry that exchanges the line carrying an atom with an unloaded line of the same cube piece and fixes every atom line. A symmetry of the glue that keeps the switching class of the signing but moves the atom induces it, so which of the two lines carries that atom is not native.
+  [proof P001](proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/proof.md), [epic closure](proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · The Fano plane is the only uniform law that contradicts itself** (`UNIFORM-FANO-20261107-001-D001`).
   A simple cubic triple system whose symmetries are transitive on its points and on its lines has a brace for its incidence graph, so by Seymour's dictionary and McCuaig's theorem the Fano plane is its only non-2-colourable case. Since non-constant uniform signs are satisfied by the all-zero assignment, the Fano plane is the only uniform knot law that contradicts itself.
   [proof P001](proofs/UNIFORM-FANO-20261107-001A/UNIFORM-FANO-20261107-001A-P001_the_fano_plane_is_the_only_uniform_contradiction/proof.md), [epic closure](proofs/UNIFORM-FANO-20261107-001Z/UNIFORM-FANO-20261107-001Z-P001_epic_closure/proof.md)
@@ -957,6 +963,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | One hidden bit per incidence lets a law grow its own round sphere (`SPHERE-GROWTH-20261107-001`) | [closure](proofs/SPHERE-GROWTH-20261107-001Z/SPHERE-GROWTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-GROWTH-20261107-001/) |
 | 2026-11-07 | Resolution size of the sphere's count (`SPHERE-SIZE-20261107-001`) | [closure](proofs/SPHERE-SIZE-20261107-001Z/SPHERE-SIZE-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-SIZE-20261107-001/) |
 | 2026-11-07 | Resolution width of the sphere's count and of grid Sperner (`SPHERE-WIDTH-20261107-001`) | [closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/SPHERE-WIDTH-20261107-001/) |
+| 2026-11-07 | Native creation at junction handles (`TRISUM-READ-20261107-001`) | [closure](proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/TRISUM-READ-20261107-001/) |
 | 2026-11-07 | The Fano plane is the only uniform law that contradicts itself (`UNIFORM-FANO-20261107-001`) | [closure](proofs/UNIFORM-FANO-20261107-001Z/UNIFORM-FANO-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-FANO-20261107-001/) |
 | 2026-11-07 | Uniform laws and the spheres they can close into (`UNIFORM-SPHERES-20261107-001`) | [closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-SPHERES-20261107-001/) |
 

@@ -1,0 +1,133 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TRISUM-READ-20261107-001B-P001",
+  "canonical_id": "TRISUM-READ-20261107-001B-P001",
+  "kind": "proof",
+  "ticket": "TRISUM-READ-20261107-001B",
+  "proof": "TRISUM-READ-20261107-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Frozen predictions on larger trisum spaces",
+  "status": "Proved",
+  "claim": "Frozen predictions on larger trisum spaces (computed exactly on the ten larger edge-atom trisum spaces: 54 to 60 points, six atoms, one to three junctions; every map computed after the freeze). Every frozen statement about atoms, junctions and leaves holds in all ten: yes/no creation reads the atoms and, with the atoms set aside, the junctions, whose line pairs are exactly the pairs that block only each other, so one, two or three junctions are counted; pair refinement of the native map fixes the atoms, skeleton lines, junction lines, roots, square-mates and leaves. One frozen sub-statement fails, in one space: in seed 5 (three junctions) the lines that carry an atom are not a union of native classes, because the native map has an automorphism that exchanges the loaded line 9 with the unloaded line 8 of one cube piece and fixes every atom line. Every skeleton symmetry inducing it keeps the switching class of the signing that places the atoms but moves the atoms' places, so no native procedure can tell which of the two lines carries the atom. On all 17 maps census 6 never creates alone, so whether creation occurs is native.",
+  "dependencies": [
+    "TRISUM-READ-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-computation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "computed-classification",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A test space whose recomputed rows differ from the stored map, a changed predictions file or library, a reported outcome of P1 to P7 that a fresh run does not reproduce, a stored symmetry witness that is not an automorphism of the native map, or census 6 creating alone somewhere."
+  ],
+  "lineage": {
+    "home_scope": "TRISUM-READ-20261107-001",
+    "epic_path": [
+      "TRISUM-READ-20261107-001"
+    ],
+    "parents": [
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/predictions.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/spaces.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/maps.json.gz",
+      "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/refine_lib.py",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/junction_lib.py",
+      "proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/native_glue_lib.py",
+      "proofs/SEYMOUR-COUNT-20261030-001B/SEYMOUR-COUNT-20261030-001B-P001_polynomial_counting_on_seymours_cubic_bound/seymour_lib.py",
+      "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py",
+      "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py",
+      "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz",
+      "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/maps.json.gz"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "ff9e5bf86c44bdaf421cfbad010b95207fd29e8694ade4c9a23ea051ffaf3a86",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "3f340fdfcc78df5fb2954d917dfaa10756d2d29c28f0945a0b13942063eb2400",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py": "48f7a7031af09356645f8683f1aa2bcf68acadb66e419420f8b7ce34ed29af74",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/predictions.json": "e15fce8fa9d18a219df2b6fa82eaff9ef96d4d0ff3adb7a9839335bfa0b94d29",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/spaces.json": "2c40b635691c5e49b25a370a3f5c568a4fbb542c212a6e439994386a37c432f0",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py": "52c98b08a276d0b751e574a4711b54ef6b1882230ad71441794996889f3fe66f",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/maps.json.gz": "f9bea3bcd62e94e669557549abb89dca6068e1c136cf9580c91a7ff194c0ead3",
+    "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/refine_lib.py": "527c7ede1a47050fe7e7dbdc4a5a1a44f901b68260332c545142a129b03f3a8e",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py": "4f2ed0842d316c96985bc9fea2ffb68c2e7465f02e8cfabf39b63d2725abb730",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/junction_lib.py": "f7c03c80ee784b086f684a5a4b7e22c0a81050760d250cf811f14286af17c0f9",
+    "proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/native_glue_lib.py": "a0c63ca0f26ce67c310f59ddbb2c92c3fe0c84fa567b193ef95ba2aa0931a6b1",
+    "proofs/SEYMOUR-COUNT-20261030-001B/SEYMOUR-COUNT-20261030-001B-P001_polynomial_counting_on_seymours_cubic_bound/seymour_lib.py": "ba48169ea61af2ff03a976bcec47961adf8de44f196e235c0ae4064fb50409ae",
+    "proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/grammar_lib.py": "edc1d36e21d4a1aa4f9fb469bee749839ef5f65088c16873615cc3234dcb446f",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd",
+    "proofs/TWIST-COUNT-20261030-001A/TWIST-COUNT-20261030-001A-P001_the_knots_junction_is_a_similitude/twist_lib.py": "81263473004bc8e55e5851d658f53d81a2aae79bc1fe9b9cc1a1a22cb82e1753",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/GLUE-READ-20261106-001A/GLUE-READ-20261106-001A-P001_creation_is_decided_by_the_receiving_cut/port_lib.py": "fb87b642fc0d5779e4e4e0cbd8b852ba1032253b3ad0ff4d43f4a79bd66b2496",
+    "proofs/GLUE-READ-20261106-001B/GLUE-READ-20261106-001B-P001_what_plane_glue_does/maps.json.gz": "d8ba51b617ea8979d11c5d3a13eb8abf7ced4ed470684f1cc7eb2e16b089877e",
+    "proofs/FAR-READ-20261106-001C/FAR-READ-20261106-001C-P001_fresh_spaces/maps.json.gz": "bfdfe91d17ca5fdb894abfeb65da117c1f8187f61896b8ad345972ad85979b69"
+  },
+  "paths": {
+    "manifest": "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/manifest.json",
+    "identity": "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/identity.json",
+    "directory": "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces",
+    "proof": "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/proof.md",
+    "result": "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/result.json",
+    "check": "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "frozen_predictions_tested": true
+  },
+  "foundation_claim_scope": "The ten larger plain edge-atom trisum spaces (54 to 60 points), fixed and predicted before any of their maps was computed.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude at the repository owner's request on 2026-11-07, begun in one session and finished in a second that took the work over within the project.",
+    "status": "computed exactly on the stated maps; no human or external review",
+    "novelty": "New here."
+  }
+}

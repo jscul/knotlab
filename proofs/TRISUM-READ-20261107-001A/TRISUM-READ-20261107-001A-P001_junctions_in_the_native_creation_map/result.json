@@ -1,0 +1,438 @@
+{
+ "artifact_id": "TRISUM-READ-20261107-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/manifest.json": "Proved",
+     "proofs/GENUS-READ-20261107-001A/GENUS-READ-20261107-001A-P001_census_6_depends_on_how_it_is_glued/result.json": "passed",
+     "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/manifest.json": "Proved",
+     "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/result.json": "passed",
+     "proofs/HANDLE-COUNT-20261106-001Z/HANDLE-COUNT-20261106-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/HANDLE-COUNT-20261106-001Z/HANDLE-COUNT-20261106-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/manifest.json": "Proved",
+     "proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/result.json": "passed",
+     "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/result.json": "Proved"
+    }
+   },
+   "pass": true
+  },
+  "1 the spaces: each of the 17 stored spaces is the generator's edge-atom space at its own seed (1 to 400, at most 60 lines), reproduced up to isomorphism under its recorded hash seed (the generator's Pfaffian signing depends on set order); they are pairwise non-isomorphic, and 7 come from HANDLE-COUNT B's seeds 1 to 40": {
+   "info": {
+    "from seeds 1 to 40": 7,
+    "hash seeds used": [
+     0,
+     1,
+     2,
+     6
+    ],
+    "pairwise non-isomorphic": true,
+    "reproduced": 17,
+    "seeds": [
+     1,
+     3,
+     5,
+     6,
+     11,
+     34,
+     36,
+     46,
+     96,
+     192,
+     240,
+     246,
+     282,
+     288,
+     300,
+     354,
+     384
+    ]
+   },
+   "pass": true
+  },
+  "2 canonical structure: atoms are the 2-edge-cut sides (7 lines, 7 points), contracting them leaves a cubic brace that is neither planar nor Heawood, its trisectors are the trisum tree's squares, and atoms, junction line pairs, leaves, roots, loaded lines and skeleton are unchanged by relabeling lines and points (3 random relabelings each)": {
+   "info": {
+    "1": {
+     "atoms": 5,
+     "junction lines": [
+      1,
+      3,
+      4,
+      5
+     ],
+     "junction lines carrying an atom": [
+      1
+     ],
+     "junctions": 2,
+     "leaves": 5,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 12
+    },
+    "11": {
+     "atoms": 6,
+     "junction lines": [
+      1,
+      3,
+      6,
+      7,
+      10,
+      11
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 3,
+     "leaves": 7,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 16
+    },
+    "192": {
+     "atoms": 5,
+     "junction lines": [
+      2,
+      4
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 12
+    },
+    "240": {
+     "atoms": 6,
+     "junction lines": [
+      0,
+      1
+     ],
+     "junction lines carrying an atom": [
+      1
+     ],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 12
+    },
+    "246": {
+     "atoms": 5,
+     "junction lines": [
+      1,
+      3
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 12
+    },
+    "282": {
+     "atoms": 6,
+     "junction lines": [
+      2,
+      3
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 14
+    },
+    "288": {
+     "atoms": 6,
+     "junction lines": [
+      2,
+      5
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 14
+    },
+    "3": {
+     "atoms": 3,
+     "junction lines": [
+      1,
+      3
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 8
+    },
+    "300": {
+     "atoms": 5,
+     "junction lines": [
+      2,
+      4
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 12
+    },
+    "34": {
+     "atoms": 6,
+     "junction lines": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 2,
+     "leaves": 5,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 16
+    },
+    "354": {
+     "atoms": 6,
+     "junction lines": [
+      2,
+      6
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 14
+    },
+    "36": {
+     "atoms": 4,
+     "junction lines": [
+      0,
+      4
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 10
+    },
+    "384": {
+     "atoms": 6,
+     "junction lines": [
+      0,
+      7
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 14
+    },
+    "46": {
+     "atoms": 6,
+     "junction lines": [
+      1,
+      2,
+      6,
+      7
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 2,
+     "leaves": 5,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 18
+    },
+    "5": {
+     "atoms": 6,
+     "junction lines": [
+      0,
+      1,
+      2,
+      3,
+      10,
+      11
+     ],
+     "junction lines carrying an atom": [
+      1
+     ],
+     "junctions": 3,
+     "leaves": 7,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 16
+    },
+    "6": {
+     "atoms": 4,
+     "junction lines": [
+      1,
+      2
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 10
+    },
+    "96": {
+     "atoms": 6,
+     "junction lines": [
+      2,
+      4
+     ],
+     "junction lines carrying an atom": [],
+     "junctions": 1,
+     "leaves": 3,
+     "relabeling-invariant": true,
+     "skeleton brace": "other",
+     "skeleton lines": 14
+    }
+   },
+   "pass": true
+  },
+  "3 the training maps: every row (293) recomputed by tr_lib.exact_row (one matrix product per pattern) equals the stored map, row 0 of each recomputed by CHAIN-TRANSFER B's exact_row equals it too; the training spaces cost at most 200,000 solutions": {
+   "info": {
+    "costs": {
+     "1": 112500,
+     "3": 1500,
+     "6": 11250,
+     "36": 11250,
+     "192": 81250,
+     "246": 75000,
+     "300": 81250
+    },
+    "original-engine rows equal": 7,
+    "rows": 293,
+    "rows equal": 293
+   },
+   "pass": true
+  },
+  "4 on the seven training spaces every frozen statement P1 to P7 holds": {
+   "info": {
+    "1": {
+     "atoms": 5,
+     "junction lines": 4,
+     "junctions": 2,
+     "lines": 47,
+     "loaded junction lines": 1,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 47
+    },
+    "192": {
+     "atoms": 5,
+     "junction lines": 2,
+     "junctions": 1,
+     "lines": 47,
+     "loaded junction lines": 0,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 47
+    },
+    "246": {
+     "atoms": 5,
+     "junction lines": 2,
+     "junctions": 1,
+     "lines": 47,
+     "loaded junction lines": 0,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 47
+    },
+    "3": {
+     "atoms": 3,
+     "junction lines": 2,
+     "junctions": 1,
+     "lines": 29,
+     "loaded junction lines": 0,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 29
+    },
+    "300": {
+     "atoms": 5,
+     "junction lines": 2,
+     "junctions": 1,
+     "lines": 47,
+     "loaded junction lines": 0,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 47
+    },
+    "36": {
+     "atoms": 4,
+     "junction lines": 2,
+     "junctions": 1,
+     "lines": 38,
+     "loaded junction lines": 0,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 38
+    },
+    "6": {
+     "atoms": 4,
+     "junction lines": 2,
+     "junctions": 1,
+     "lines": 38,
+     "loaded junction lines": 0,
+     "pinned pairs (yes/no alone)": 1,
+     "points": 38
+    }
+   },
+   "pass": true
+  },
+  "5 control on REFINE-READ's 277 spaces (atoms = lines of Heawood braces): a pair pinned apart from the atoms occurs once, in design 7, and is the line pair of the one trisector of its one non-planar brace; no pinned pair of yes/no creation alone occurs; every line no removal blocks is an atom line": {
+   "info": {
+    "lines no removal blocks": 4546,
+    "of them atom lines": 4546,
+    "pinned apart from atoms": [
+     [
+      "design 7",
+      [
+       [
+        3,
+        4
+       ]
+      ],
+      [
+       [
+        3,
+        4
+       ]
+      ]
+     ]
+    ],
+    "pinned pairs (yes/no alone)": 0,
+    "spaces": 277
+   },
+   "pass": true
+  },
+  "6 the freeze: predictions.json is the frozen file, names this library by hash, and lists as ticket B's spaces exactly the ten classes beyond the cost cap (none of whose maps had been computed when it was written)": {
+   "info": {
+    "frozen at": "2026-11-07T17:20:41-08:00",
+    "predictions": 7,
+    "test spaces": [
+     240,
+     354,
+     96,
+     288,
+     282,
+     384,
+     34,
+     5,
+     11,
+     46
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "Junctions in the native creation map (computed exactly on the seven small edge-atom trisum spaces: 29 to 47 points, three to five atoms, one junction each except one space with two). Yes/no creation alone reads the atoms: the lines no removal blocks are exactly the atom cores, and each root is created at by exactly six removals, its own core lines. With the atoms set aside it reads the junctions: a junction's two lines are never degenerate at the remaining removals and each is the only such removal that blocks the other, and no other pair of lines is, so the number of junctions is read too. Pair refinement of the native creation map makes same atom, square-mates and same leaf unions of stable pair classes, and the skeleton lines, junction lines, roots and loaded lines unions of diagonal classes; colour refinement of yes/no creation already separates the junction lines. Control: across REFINE-READ's 277 spaces a pair pinned apart from the atoms occurs once, in design 7, the only one whose glue holds a non-planar brace other than Heawood, at that brace's one trisector; no pair is pinned by yes/no creation alone. The spaces are HANDLE-COUNT A's generator's, each reproduced at its own seed under a recorded hash seed. These seven statements (P1 to P7) were frozen for ticket B's ten larger spaces before any of their maps was computed.",
+ "kind": "proof",
+ "proof": "TRISUM-READ-20261107-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "TRISUM-READ-20261107-001A"
+}

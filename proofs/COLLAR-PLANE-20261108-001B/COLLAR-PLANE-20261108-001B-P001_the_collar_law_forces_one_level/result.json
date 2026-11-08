@@ -1,0 +1,101 @@
+{
+ "checks": {
+  "108 complete keys": true,
+  "every complete key names one child index and one parent": true,
+  "the five children of a triangle touch in a connected graph": true,
+  "every disagreeing compatible sibling pair leaves a tile inconsistent": true,
+  "the counts are mirror symmetric": true,
+  "the rhombus lattice's collar is in L1 and its core, and is not a key": true,
+  "the four patches compose with no conflicting claim": true,
+  "their level-one non-key collars all lie in L1": true
+ },
+ "controls": {
+  "compatibility alone does not force agreement": true,
+  "a genuine sibling pair is consistent": true,
+  "L1 contains every key of handedness +1": true,
+  "every key survives the core": true,
+  "their level-one tiles include non-keys": true
+ },
+ "census": {
+  "sibling pairs (central handedness, outcome)": {
+   "1 agree": 444,
+   "1 disagree": 34,
+   "-1 agree": 444,
+   "-1 disagree": 34
+  },
+  "disagreeing pairs (handedness +1): inconsistent, consistent": [
+   34,
+   0
+  ],
+  "L1: candidate keys per child, consistent assignments, collars (handedness +1)": [
+   [
+    22,
+    7,
+    5,
+    5,
+    20
+   ],
+   124,
+   1264
+  ],
+  "L1: keys, non-keys": [
+   54,
+   1210
+  ],
+  "core: after arc consistency, after the radius-2 test (rounds)": [
+   156,
+   156,
+   1
+  ],
+  "core: keys, non-keys": [
+   54,
+   102
+  ],
+  "forced runs that left the pinwheel": [
+   {
+    "seed": 9,
+    "tiles": 543,
+    "claims": 418,
+    "conflicts": 0,
+    "level-one tiles": 56,
+    "level-one complete collars": 12,
+    "of which not keys": 4,
+    "non-keys outside L1": 0
+   },
+   {
+    "seed": 7,
+    "tiles": 673,
+    "claims": 517,
+    "conflicts": 0,
+    "level-one tiles": 74,
+    "level-one complete collars": 24,
+    "of which not keys": 22,
+    "non-keys outside L1": 0
+   },
+   {
+    "seed": 10,
+    "tiles": 979,
+    "claims": 787,
+    "conflicts": 0,
+    "level-one tiles": 120,
+    "level-one complete collars": 54,
+    "of which not keys": 39,
+    "non-keys outside L1": 0
+   },
+   {
+    "seed": 5,
+    "tiles": 1005,
+    "claims": 828,
+    "conflicts": 0,
+    "level-one tiles": 124,
+    "level-one complete collars": 57,
+    "of which not keys": 7,
+    "non-keys outside L1": 0
+   }
+  ],
+  "distinct level-one non-key collars in them": 45
+ },
+ "status": "passed",
+ "failures": [],
+ "runtime_seconds": 295.6
+}

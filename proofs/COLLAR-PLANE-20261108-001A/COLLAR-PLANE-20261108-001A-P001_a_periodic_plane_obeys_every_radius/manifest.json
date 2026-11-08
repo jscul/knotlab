@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COLLAR-PLANE-20261108-001A-P001",
+  "canonical_id": "COLLAR-PLANE-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "COLLAR-PLANE-20261108-001A",
+  "proof": "COLLAR-PLANE-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A periodic plane obeys every undecorated local law of the pinwheel",
+  "status": "Proved",
+  "claim": "The rhombus lattice (four tiles with legs 1 and 2 around a common right angle make a rhombus with diagonals 2 and 4, translated by Z(1, 2) + Z(1, -2)), cut once by Conway's cut, is a periodic tiling with 20 tiles per period in which every tile's collar (the tile with every tile touching it) is one of the 108 complete collars of pinwheel tilings. The cut maps complete collars to complete collars, and if a tiling's collars are all pinwheel collars, then after k cuts with (r + 1) sqrt(5) 5^(-k/2) below the least collar width (0.447 for legs 1 and 2) every patch of tile radius r is a pinwheel patch. So for every r a periodic tiling obeys the pinwheel's undecorated radius-r law; the 2-fold cut, 100 tiles per period, already obeys the 1,168-form radius-2 dart atlas. No undecorated local law of the pinwheel forces aperiodicity.",
+  "dependencies": [
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A tile of the cut rhombus lattice's fundamental domain has a collar outside the 108 complete pinwheel collars.",
+    "The cut maps some complete pinwheel collar to a collar outside the 108.",
+    "Some complete pinwheel collar has width zero (does not cover a neighbourhood of its central tile).",
+    "An interior dart of the twice-cut rhombus lattice has a radius-2 code outside the 1,168-code atlas.",
+    "A control passes: the uncut lattice, the rectangle lattice cut once or twice, the once-cut lattice against the radius-2 atlas, or the once-cut lattice with one rectangle flipped."
+  ],
+  "lineage": {
+    "home_scope": "COLLAR-PLANE-20261108-001",
+    "epic_path": [
+      "COLLAR-PLANE-20261108-001"
+    ],
+    "parents": [
+      "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/manifest.json",
+      "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas_lib.py",
+      "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/manifest.json": "98f0eaa73cf7dc7ef5985d3bf9995b2cd60c4963bfa8483b91bac29a4a383743",
+    "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas_lib.py": "e0b22c79c4428ccdae63b76a9d6d88dc190e9a0dfc549f0b5fdb7c21a293915f",
+    "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas.json": "64df11fa4c5ca7f735be4e13ddb79cfcea7ad34bb6a1e010279fd4c0af41f945"
+  },
+  "paths": {
+    "manifest": "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json",
+    "identity": "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/identity.json",
+    "proof": "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/proof.md",
+    "check": "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/check.py",
+    "result": "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/result.json",
+    "directory": "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every tiling of the plane by congruent right triangles with legs 1 and 2; pinwheel tilings in Radin's sense; collars (radius one in tiles), patches of any tile radius and the planar map's radius-2 codes. Exact rational computation of one witness (the rhombus lattice cut once and twice), of the cut on the 108 complete collars, and of the radius-2 atlas on the twice-cut witness; floating point only for the collar width, of which only the sign is used.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "arguments by hand (the cut keeps complete collars; a radius-r patch of a deep enough cut lies in the cut of one collar), with the witness, the closure and the radius-2 check computed exactly with controls; no human or external review",
+    "novelty": "known-with-delta for the method (cutting a periodic tiling that obeys a small-radius law to defeat every radius is the standard way local rules fail for substitution tilings; Radin 1994 and Goodman-Strauss 1998 give decorated matching rules; Levitov 1988 frames undecorated local rules); no-overlap-found for the witness and for the conclusion that no undecorated local law of the pinwheel forces aperiodicity (bounded search, 2026-11-08). Folklore risk moderate."
+  }
+}

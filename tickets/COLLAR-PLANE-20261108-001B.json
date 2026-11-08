@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001B",
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COLLAR-PLANE-20261108-001B-P001"
+  },
+  "id": "COLLAR-PLANE-20261108-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof with exact finite computation. Each of the 108 complete collars names its tile's parent (one child index and one parent triangle), and in any plane where every collar is complete and pinwheel, touching siblings name the same parent: of the radius-1-compatible collar pairs at touching siblings, those that disagree leave some tile with no consistent completion. So every collar-legal plane is the cut of a plane of larger triangles whose collars lie in the level-one law L1 (collars whose cut gives every child a pinwheel collar), computed exactly, with its arc-consistent core; the rhombus lattice's collar is in L1 and is not a pinwheel collar. Applied to the four collar-legal patches of GROWTH-LAW-20261107-001B that left the pinwheel: they compose with no conflict, and their defect sits one level up.",
+  "ownership": {
+    "root": false,
+    "scope_id": "COLLAR-PLANE-20261108-001"
+  },
+  "parent": "COLLAR-PLANE-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (COLLAR-PLANE-20261108-001B-P001): each complete pinwheel collar names one parent, and in any collar-legal plane touching siblings name the same one (888 of 956 compatible sibling pairs agree; each of the 68 others leaves a tile inconsistent), so every collar-legal plane is the cut of a plane of larger triangles whose collars lie in the level-one law L1: 1,264 collars per handedness (54 keys, 1,210 others), 156 of them (54 keys, 102 others) surviving arc consistency and a radius-2 test. The rhombus lattice's collar is one of the 102, so composition stops after one level. GROWTH-LAW-20261107-001B's four off-pinwheel patches compose with no conflict; their defect is one level up (45 non-key L1 collars).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The collar law forces one level of composition"
+}

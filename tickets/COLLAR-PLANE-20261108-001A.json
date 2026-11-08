@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PINWHEEL-ATLAS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COLLAR-PLANE-20261108-001A-P001"
+  },
+  "id": "COLLAR-PLANE-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof with an exact finite witness. The rhombus lattice (four tiles around a common right angle form a rhombus with diagonals 2 and 4; the rhombi tile the plane by translations) cut once by Conway's cut is a periodic plane, 20 tiles per period, in which every tile's collar is one of the 108 complete pinwheel collars of PINWHEEL-ATLAS-20261107-001A. Since the cut maps complete collars to complete collars, every further cut is collar-legal too, and the k-fold cut of any collar-legal plane has every patch of tile radius r congruent to a pinwheel patch once 5^(k/2) exceeds (r + 1) times the tile diameter over the least width of a collar; so for every r a periodic plane obeys the pinwheel's undecorated radius-r law, the 1,168-form radius-2 atlas included (checked directly on the 2-fold cut). Controls: the uncut lattice, the rectangle lattice cut once and twice, and the 1-fold cut against the radius-2 atlas must fail.",
+  "ownership": {
+    "root": false,
+    "scope_id": "COLLAR-PLANE-20261108-001"
+  },
+  "parent": "COLLAR-PLANE-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (COLLAR-PLANE-20261108-001A-P001): the rhombus lattice (four tiles around a common right angle, translated by Z(1, 2) + Z(1, -2)) cut once is a periodic plane, 20 tiles per period, whose every collar is one of the 108 complete pinwheel collars; the cut keeps collar-legality, and the k-fold cut of a collar-legal plane has every patch of tile radius r a pinwheel patch once (r + 1) sqrt(5) 5^(-k/2) is below the least collar width (0.447), so for every r a periodic plane obeys the pinwheel's undecorated radius-r law; the twice-cut lattice (100 tiles per period) obeys the 1,168-form radius-2 atlas (4,048 darts). No undecorated local law of the pinwheel forces aperiodicity. Controls (uncut lattice, rectangle lattice cut once and twice, R_1 on the radius-2 atlas, a flipped rectangle) all fail.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "A periodic plane obeys every undecorated local law of the pinwheel"
+}

@@ -1,0 +1,39 @@
+{
+ "schema_version": 3,
+ "artifact_id": "COLLAR-PLANE-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "COLLAR-PLANE-20261108-001Z",
+ "proof": "COLLAR-PLANE-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Administrative closure ledger of COLLAR-PLANE-20261108-001 with no new claim: ticket A (proved) shows that the rhombus lattice cut once is a periodic plane obeying the pinwheel's collar law and that for every radius a periodic plane obeys the pinwheel's undecorated local law; ticket B (proved) shows that the collar law forces one level of composition and computes the level-one law; ticket C (exploratory) finds the rhombus lattice alone among the tested periodic planes after one cut, and brick rows after two.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json": "Proved",
+   "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/result.json": "passed",
+   "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json": "Proved",
+   "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/result.json": "passed",
+   "experiments/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/contract.json": "Frozen",
+   "artifacts/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/run/main_result.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "experiment_frozen_exploratory": true,
+  "proof_a_findings": true,
+  "proof_b_findings": true,
+  "experiment_c_findings": true,
+  "notes_present": true,
+  "stress_test_radius3": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "proved",
+   "C": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

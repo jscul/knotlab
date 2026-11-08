@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "COLLAR-PLANE-20261108-001C-E001",
+  "ticket": "COLLAR-PLANE-20261108-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "PINWHEEL-ATLAS-20261107-001B rejected every periodic plane it tested against the pinwheel's own law, uncut. Once cut one, two or three times by Conway's cut, which of those same planes have every tile's collar among the 108 complete pinwheel collars, and after how many cuts?",
+  "public_inputs": {
+    "law": "The 108 complete collar keys of proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas, recomputed by its atlas_lib.py; the collar test of proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/check.py (a tile with every tile touching it, in the tile's own frame, with its handedness, is one of the 108).",
+    "planes": "The generators of experiments/PINWHEEL-ATLAS-20261107-001B/PINWHEEL-ATLAS-20261107-001B-E001_periodic_planes_against_the_law/run.py, unchanged: F1 rectangle grids and F2 brick rows of 1 x 2 rectangles with every diagonal pattern of period up to 2 x 2 (52 planes); F3 every domino tiling of the 2 x 2, 2 x 4, 4 x 2, 2 x 6, 6 x 2 and 4 x 4 tori with every diagonal choice (96,416 planes); F4 the six two-tile shapes tiled by half-turns (6 planes).",
+    "cuts": "F1, F2 and F4: 1, 2 and 3 cuts. F3: 1 and 2 cuts for the 2 x 2, 2 x 4 and 4 x 2 tori; 1 cut for the 2 x 6, 6 x 2 and 4 x 4 tori, run as a background part (about forty minutes on 22 workers) that is folded in when it finishes. Two cuts of the larger tori (about three hours) are not run.",
+    "test": "A plane passes after k cuts when every tile whose centroid lies in a window holding a whole period has its collar among the 108 complete keys; the collars are computed in the k-fold cut of a patch reaching at least three units beyond the window. Windows: F1 and F2 the box [0, 4) x [0, 4); F3 the torus box [0, m) x [0, n); F4 the box [-15, 15)^2 (tiles scaled by 5)."
+  },
+  "forbidden_inputs": [
+    "Changing the families, the cuts or the window after seeing results",
+    "Dropping planes that fail"
+  ],
+  "primary_observable": "For each family and number of cuts: how many planes pass.",
+  "secondary_observables": "For passing planes: the number of distinct keys used and the number of tiles tested; for F3 at one cut, the passing tilings and diagonals.",
+  "cheapest_meaningful_control": "Positive: the rhombus lattice (F4's isosceles shapes) passes after one cut, as COLLAR-PLANE-20261108-001A proves; a genuine pinwheel patch passes at its interior. Negative: the rectangle lattice (F1's plain grid with one diagonal) fails after one and two cuts, as ticket A's control found. A test that fails the rhombus lattice or passes the rectangle lattice is not read.",
+  "resource_budget": {
+    "wall_minutes": 90,
+    "memory_mib": 16384,
+    "workers": 22
+  },
+  "first_executable_signal": "The controls.",
+  "decision_or_followup_rule": "Report the count per family and cut. A plane that passes after k cuts is a periodic collar-legal plane with k-fold more tiles per period (its further cuts pass too, by ticket A's Lemma 1). If no plane beyond the rhombus lattice passes, record that the rhombus lattice is isolated among these families.",
+  "stop_rule": "Stop at the declared families and cuts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: these families are rectangle-based or two-tile shapes, not every periodic tiling.",
+    "A plane that fails after three cuts may pass after more."
+  ],
+  "feasibility_disclosure": "Before freezing, an exploratory run on F1, F2 and F4 (scratch code, same test) counted 18 passes among the 156 (plane, cut) pairs of F1 and F2, of which only the last 10 were printed (the output was cut to its last 30 lines): brick rows with five diagonal patterns passing after 2 and 3 cuts but not 1. Of F4, the two isosceles shapes (each tiled by half-turns is the rhombus lattice) passed after 1, 2 and 3 cuts, and the four other shapes failed at every cut. F3 was not run."
+}

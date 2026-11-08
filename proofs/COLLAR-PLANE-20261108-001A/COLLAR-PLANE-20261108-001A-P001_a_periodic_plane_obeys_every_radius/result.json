@@ -1,0 +1,58 @@
+{
+ "checks": {
+  "law has 193 keys, 108 complete": true,
+  "the cut maps every complete key to five complete keys": true,
+  "R_1: every collar is a complete pinwheel collar (hash)": true,
+  "R_1: every collar is a complete pinwheel collar (brute force)": true,
+  "R_2: every collar is a complete pinwheel collar (hash)": true,
+  "R_1 is invariant under the lattice Z(1, 2) + Z(1, -2)": true,
+  "R_2: every interior dart's radius-2 code is in the atlas": true,
+  "every complete collar has positive width": true
+ },
+ "controls": {
+  "R uncut has a non-key collar": true,
+  "rectangle lattice cut 1 time(s) has a non-key collar": true,
+  "rectangle lattice cut 2 time(s) has a non-key collar": true,
+  "R_1 breaks the radius-2 atlas": true,
+  "R_1 with one rectangle flipped has a non-key collar": true
+ },
+ "census": {
+  "collar keys": 193,
+  "complete keys": 108,
+  "R_1: fundamental-domain tiles, non-key collars, distinct keys": [
+   20,
+   0,
+   10
+  ],
+  "R_2: fundamental-domain tiles, non-key collars, distinct keys": [
+   100,
+   0,
+   42
+  ],
+  "atlas codes": 1168,
+  "R_2: interior darts tested, outside the radius-2 atlas": [
+   4048,
+   0
+  ],
+  "least collar width w (tile legs 1 and 2)": 0.447214,
+  "k(r): cuts after which every tile-radius-r patch lies in the cut of one collar": {
+   "1": 3,
+   "2": 4,
+   "3": 4,
+   "5": 5,
+   "10": 5,
+   "100": 8
+  },
+  "R_1: interior darts tested, outside the radius-2 atlas": [
+   232,
+   90
+  ],
+  "R_1 with one rectangle flipped: tiles tested, non-key collars": [
+   11,
+   11
+  ]
+ },
+ "status": "passed",
+ "failures": [],
+ "runtime_seconds": 15.5
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001Z",
+    "PINWHEEL-ATLAS-20261107-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "COLLAR-PLANE-20261108-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Direction 2 of GROWTH-LAW-20261107-001's closure report (G1, space from a law; assumption A25 of docs/ASSUMPTIONS.md), taken up on 2026-11-08 at the coordinator's request after the owner asked to run every direction rated Payoff 2/3 and Concreteness 2/3: does the pinwheel's undecorated collar law (the 108 complete collars of PINWHEEL-ATLAS-20261107-001A, a tile with every tile touching it, radius one in tiles) admit a periodic plane? Start from the collar-legal patches on which outward growth left the pinwheel (their translations and how they compose), then search for periodic planes, and stop at a periodic collar-legal plane or at none to a declared size. If one exists, ask what it means at every radius (the atlas's 1,168-form radius-2 law included) and how the collar law's planes are built (forced composition, the law one level up). Standalone value against known work: Radin (1994) forced the pinwheel with decorated matching rules and Goodman-Strauss (1998) gave decorated rules for substitution tilings in general; undecorated local rules in Levitov's sense (1988) for the pinwheel, or a periodic plane obeying its undecorated local laws, were not found.",
+  "ownership": {
+    "root": true,
+    "scope_id": "COLLAR-PLANE-20261108-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-08: a periodic plane obeys the pinwheel's undecorated collar law: four tiles around a common right angle make a rhombus, and the lattice tiling by those rhombi, cut once by Conway's cut, has every collar among the 108 complete pinwheel collars (20 tiles per period). The cut keeps collar-legality and buries the crystal's seams, so for every radius a periodic plane obeys the pinwheel's undecorated radius-r law (the 1,168-form radius-2 atlas after two cuts, the radius-3 atlas after three): no undecorated local law of the pinwheel forces aperiodicity or roundness, and roundness costs hidden information in the plane as on the sphere. The collar law forces one level of composition (each collar names its parent, touching siblings agree) and no more: the crystal is the cut of a plane whose collars lie in the level-one law (1,264 collars per hand, 156 arc-consistent). Narrows GROWTH-LAW's deceptions reading and PINWHEEL-ATLAS's no-hidden-bit reading. Recommendation: Continue with the price of roundness in the plane (G1), Payoff 2/3 Substantial, Concreteness 1/3 Stated, awaiting the coordinator's go-ahead.",
+  "status_class": "complete",
+  "stop_rule": "Stop when a periodic plane obeying the collar law is found and checked exactly, with its consequence at larger radii decided, or when the search finds none to its declared size; an obstruction found instead is recorded and explained.",
+  "title": "A periodic plane obeys the pinwheel's undecorated local laws"
+}

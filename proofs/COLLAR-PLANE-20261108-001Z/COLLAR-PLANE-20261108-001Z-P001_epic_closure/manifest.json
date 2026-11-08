@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COLLAR-PLANE-20261108-001Z-P001",
+  "canonical_id": "COLLAR-PLANE-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "COLLAR-PLANE-20261108-001Z",
+  "proof": "COLLAR-PLANE-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the collar law off the pinwheel",
+  "status": "Proved",
+  "claim": "Administrative closure ledger of COLLAR-PLANE-20261108-001 with no new claim: ticket A (proved) shows that the rhombus lattice cut once is a periodic plane obeying the pinwheel's collar law and that for every radius a periodic plane obeys the pinwheel's undecorated local law; ticket B (proved) shows that the collar law forces one level of composition and computes the level-one law; ticket C (exploratory) finds the rhombus lattice alone among the tested periodic planes after one cut, and brick rows after two.",
+  "dependencies": [
+    "COLLAR-PLANE-20261108-001A",
+    "COLLAR-PLANE-20261108-001B",
+    "COLLAR-PLANE-20261108-001C"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound file no longer matches its digest.",
+    "A proof is not Proved or its check did not pass.",
+    "The experiment contract is not frozen and exploratory, or its run output does not carry the recorded findings.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "COLLAR-PLANE-20261108-001",
+    "epic_path": [
+      "COLLAR-PLANE-20261108-001"
+    ],
+    "parents": [
+      "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json",
+      "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/result.json",
+      "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json",
+      "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/result.json",
+      "experiments/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/contract.json",
+      "artifacts/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/run/main_result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json": "a591515f84efa12e482f711997843fa1404640d96983476b239553cb2893768b",
+    "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/result.json": "7eba4a5d7d12feef19740028363dd865c6162149f3340945e4d90bd27aec81cf",
+    "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json": "041cb4f76ad885b512368f3fc5477222d40cba8d5e538ae50466054f214e7a25",
+    "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/result.json": "6791ba10a420ae1e2053e0081161c6a02627987f5aad367f9c23ca75f1ea71ec",
+    "experiments/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/contract.json": "18cfbf19f1198b4d8df65cb1587e6e5440ef5bd8bc5030b9d2b9c86fe85bd32f",
+    "artifacts/COLLAR-PLANE-20261108-001C/COLLAR-PLANE-20261108-001C-E001_periodic_planes_after_cutting/run/main_result.json": "1c54053c8605973d7a26510b6d50f36e800bc97544de8a060c41721bdfae776d"
+  },
+  "paths": {
+    "manifest": "proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md",
+    "check": "proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/check.py",
+    "result": "proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/result.json",
+    "directory": "proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's three tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

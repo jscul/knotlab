@@ -1,0 +1,106 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COLLAR-PLANE-20261108-001B-P001",
+  "canonical_id": "COLLAR-PLANE-20261108-001B-P001",
+  "kind": "proof",
+  "ticket": "COLLAR-PLANE-20261108-001B",
+  "proof": "COLLAR-PLANE-20261108-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The collar law forces one level of composition",
+  "status": "Proved",
+  "claim": "In every tiling of the plane by right triangles with legs 1 and 2 whose collars are all among the 108 complete pinwheel collars, each tile's collar names its parent (one child index and one parent triangle among its preimages under Conway's cut), and touching siblings name the same parent: of the 956 pairs of compatible collars at touching siblings, the 68 that disagree each leave a tile with no consistent completion. The children of a triangle touch in a connected graph, so the tiles group into parents, and every collar-legal plane is the cut of a plane of triangles sqrt(5) times larger whose collars lie in the level-one law L1: the 1,264 complete collars per handedness (54 pinwheel keys, 1,210 others) whose cut gives every child a pinwheel collar. Only 156 of them (54 keys, 102 others) survive arc consistency and a radius-2 test. The rhombus lattice's collar is one of the 102. The four collar-legal patches on which outward growth left the pinwheel compose with no conflicting claim, and their defect lies one level up, in 45 non-key L1 collars.",
+  "dependencies": [
+    "PINWHEEL-ATLAS-20261107-001A",
+    "GROWTH-LAW-20261107-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A complete pinwheel collar has preimages under the cut with two child indices or two parent positions.",
+    "A pair of compatible collars at touching siblings names two parents and leaves every placed tile consistent.",
+    "The children of a triangle do not touch in a connected graph.",
+    "The level-one enumeration misses a pinwheel key, or a level-one non-key collar of the grown patches lies outside it.",
+    "A conflicting parent claim occurs in one of the four grown patches."
+  ],
+  "lineage": {
+    "home_scope": "COLLAR-PLANE-20261108-001",
+    "epic_path": [
+      "COLLAR-PLANE-20261108-001"
+    ],
+    "parents": [
+      "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/manifest.json",
+      "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas_lib.py",
+      "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/contract.json",
+      "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/growth_engine.py",
+      "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/legality.py",
+      "research/GROWTH-LAW-20261107-001/stress_test_growth.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/manifest.json": "98f0eaa73cf7dc7ef5985d3bf9995b2cd60c4963bfa8483b91bac29a4a383743",
+    "proofs/PINWHEEL-ATLAS-20261107-001A/PINWHEEL-ATLAS-20261107-001A-P001_the_complete_radius_2_atlas/atlas_lib.py": "e0b22c79c4428ccdae63b76a9d6d88dc190e9a0dfc549f0b5fdb7c21a293915f",
+    "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/contract.json": "606dc5f3070793e164e83f27dcd16705bdeeac6fb932d0dd19f542d071e5dcbb",
+    "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/growth_engine.py": "05ae95f9b878d1cccb3ad9ba0519c5a5ebb08dbf3879cb57ea4bb3ba887a3457",
+    "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/legality.py": "992076ff9a9bf956a64e152a8372da989e4d7605dba5b435154829f0b9c8c674",
+    "research/GROWTH-LAW-20261107-001/stress_test_growth.json": "223a0eb19b34fbd2c238612bd236a948fb246e4da7dcfc530082c94c363079e8"
+  },
+  "paths": {
+    "manifest": "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json",
+    "identity": "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/identity.json",
+    "proof": "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/proof.md",
+    "check": "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/check.py",
+    "result": "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/result.json",
+    "directory": "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every tiling of the plane by congruent right triangles with legs 1 and 2 whose collars are complete pinwheel collars; one level of composition; the level-one law enumerated exactly for handedness +1 (the mirror law is the same sets). Arc consistency and the radius-2 test bound which level-one collars can occur in a plane; they do not show that the survivors occur.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's request on 2026-11-08.",
+    "status": "arguments by hand (unique claims plus agreeing siblings give a composition), with every finite case computed exactly with controls; no human or external review",
+    "novelty": "known-with-delta: unique composition (recognizability) is classical for self-similar tilings with finite local complexity (Solomyak 1998) and is the usual route to aperiodicity; here it is forced by the undecorated collar law alone, one level deep, and it stops there (the level-one law is larger than the keys, and the rhombus lattice escapes through it). No-overlap-found for the forced level and the level-one law."
+  }
+}

@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: knots across time, narrowed to the first row
+
+- TIME-KNOTS-20261107-001-D001 and its decision note said that a process
+  remembers its past only pairwise exactly when each future value is a single
+  AND or OR. That holds for the knots joining a future value to the first row,
+  which is what the proof shows. Through intermediate rows it fails. Rule 128,
+  where each cell becomes the AND of three, never shows 1 0 1 after a step, so
+  a cell on at time 1 and a cell on at time 2 can force a third cell on: a knot
+  joining two times. Rules 136 and 160 do the same.
+- The record now carries a pending qualification, and the
+  [decision note](research/TIME-KNOTS-20261107-001/time_knots.md) a
+  correction section with the computation.
+- Unchanged: the three theorems, Life's step and every count of the census.
+
 ## 8 November 2026: the intuition guide becomes a textbook
 
 - [INTUITIONS.md](INTUITIONS.md) is now written as a textbook, to be read in

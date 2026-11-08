@@ -84,6 +84,7 @@ evidence: results and their status come from the records each entry links.
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
 | [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Assumed |
+| [A30](#a30--a-processs-memory-is-read-from-its-two-time-knots) | A process's memory is read from its two-time knots | scope | Assumed |
 
 ## Entries
 
@@ -657,3 +658,27 @@ evidence: results and their status come from the records each entry links.
   ([trisum read](../research/TRISUM-READ-20261107-001/trisum_read.md)).
 - **History.**
   - 2026-11-07 · Added by `TRISUM-READ-20261107-001`.
+
+### A30 · A process's memory is read from its two-time knots
+
+**Assumed** · 2026-11-08 · scope
+
+- **Statement.** What a process remembers of its past is read from its two-time knots: the knots of its space-time law that join one
+  cell's value after T steps to cells of the first row, which are the minimally decisive sets of the T-step map. Knots through
+  intermediate rows, or with several future cells, are set aside, except where they are counted for the linear rules.
+- **Why.** `TIME-KNOTS-20261107-001` took it by default. These knots are characterized exactly (Theorem 1 of its ticket A), each is
+  a knot of the whole space-time law, and they are cheap to count, which made the census of the 88 elementary automata possible
+  ([knots across time](../research/TIME-KNOTS-20261107-001/time_knots.md)).
+- **Rests on it.** The census classes of `TIME-KNOTS-20261107-001B`, the reading that pairwise memory is exactly the single ANDs and
+  ORs, and the first measure of the next epic, knots between processes.
+- **Challenge.** The alternative reads memory from every knot of the space-time law that meets two times, and it finds more.
+  Ledrappier's law has smaller knots through intermediate rows (2 + w(T) places against 2^popcount(T) + 1), and its least knot at
+  T = 7 leaves the light cone through a second future cell. The cheapest test, the census's 15 knot-free rules read on their whole
+  law in small windows, was run the day this entry was added. Rules 128, 136 and 160 knot two times and rule 32 knots one later row,
+  wherever the image forbids a pattern, while the other eleven showed no knot. So the readings differ, and every claim made under
+  this one names the first row. It would be overturned if a question the program asks of processes, such as whether a contact binds
+  two of them, got a different answer under the whole-law reading. The next epic reads both.
+- **History.**
+  - 2026-11-08 · Added by `TIME-KNOTS-20261107-001`. The same day its cheapest test showed that the two readings differ, and the
+    epic's claims were narrowed to the first row
+    ([correction](../research/TIME-KNOTS-20261107-001/time_knots.md#correction-2026-11-08)).

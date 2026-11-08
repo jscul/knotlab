@@ -1325,10 +1325,54 @@ So network holes come in two kinds:
    - **Provenance.** Classical: products, the topes of graphic oriented matroids, discrete Morse theory, shellability, pumping,
      proof-labeling schemes, aperiodic tile sets, and deceptions (Dworkin and Shieh 1995; Onoda, Steinhardt, DiVincenzo and
      Socolar 1988). New as far as found: their reading under K1–K3, and the pinwheel's outward growth.
-   - **Next (awaiting the owner's go-ahead).** Knots across time: read Ledrappier's law as the space-time law of the cellular
-     automaton rule 60, then find the knots across time of rules 90 and 150, of one nonlinear rule and of Conway's Life (Payoff 2/3,
-     Concreteness 2/3). The alternatives are the collar law off the pinwheel, one hierarchy bit per level, and every accretion law
+   - **Next (taken).** Knots across time (next entry): read Ledrappier's law as the space-time law of the cellular automaton rule
+     60, then find the knots across time of rules 90 and 150, of one nonlinear rule and of Conway's Life (Payoff 2/3, Concreteness
+     2/3). The alternatives are the collar law off the pinwheel, one hierarchy bit per level, and every accretion law
      ([decision note](../research/GROWTH-LAW-20261107-001/growth_law.md)).
+
+   **2026-11-08: knots across time are minimal decisive sets** (`TIME-KNOTS-20261107-001`).
+   - **The question.** Question 4's other half, backlog B7: when states change under a local dynamics, which knots join a cell's
+     future to its past, and which processes remember their past only pairwise? A process is read as its space-time law: one
+     variable per cell and time step, the first row free, and every later cell its rule applied to the cells below. The allowed
+     states are the trajectories, and K1–K3 applies unchanged.
+   - **Knots across time are minimal decisive sets (proved).** A set of first-row cells is decisive when some setting of it fixes a
+     cell's value T steps on. The knots joining that value to the first row are exactly the value with a minimally decisive set of
+     two or more cells. A single deciding cell gives a tie.
+   - **Pairwise memory of the first row is a single AND or OR (proved).** A future value has no knot with the first row exactly when
+     it is a single conjunction or disjunction of literals. Every other future value needs several first-row cells together,
+     constrained as a whole and free in every part.
+   - **An AND process still knots its later states (computed; a correction of 2026-11-08).** Rule 128, each cell the AND of three,
+     has no knot with its first row at any lag, but it never shows 1 0 1 after a step. So x(1, 1) and x(2, 4) on force x(1, 2) on, a
+     knot joining two times through an intermediate row. Rules 136 and 160 do the same, and rule 32 knots one later row. The other
+     eleven of the census's fifteen knot-free rules showed no knot in the windows checked.
+   - **Linear processes never forget (proved).** A linear rule with polynomial p has one knot with the first row per lag, the
+     support of p^T plus the cell: |supp p| + 1 places at every power of two (Frobenius), and 2^popcount(T) + 1 for rule 60
+     (Lucas). Through intermediate rows, Ledrappier's law, the space-time law of rule 102, gives 2 + w(T) places inside the light
+     cone for T ≤ 6. At T = 7 the least knot leaves the light cone, through a second cell at the later time.
+   - **Life (proved).** In one step of Conway's Life the knots are the 70 sets of four neighbours with the cell's next value. There
+     are no ties, and the cell's own present value is in no knot.
+   - **A census of the 88 elementary automata (exploratory).** Counting knots with the first row to lag 6: 15 rules are knot-free at
+     every lag, 8 keep exactly one knot per lag (the linear 60, 90, 105 and 150, and 42, 76, 138 and 200), 49 have counts growing
+     at every lag, and 16 do otherwise. The traffic rule 184's knots at lag T are all C(2T + 1, T + 1) sets of T + 1 cells of the
+     light cone, checked to T = 7. The knots do not follow Wolfram's classes: the linear class-3 rules have the simplest knotted
+     memory, and the class-2 traffic rule the most.
+   - **Reading.**
+     - **Question 4.** The static definition survives the change to processes. A process written as a law is a static law on its
+       trajectories, and K1–K3 reads its memory directly. What a process adds over a law of one moment is knots that join different
+       times.
+     - **Two sources of knots across time.** A future cell knots with its first row when several past cells must decide it
+       together. A process also knots its later states when it never produces some pattern, as AND never produces 1 0 1, even when
+       every future cell is decided one past cell at a time.
+     - **Life.** The owner's example of emergence emerges under K1–K3 from crowds: four neighbours at a time decide a cell, and its
+       own present never enters a knot.
+   - **Provenance.** Classical: implicants and certificates of Boolean functions (Buhrman and de Wolf 2002), Lucas's theorem,
+     Frobenius over GF(2), Ledrappier's shift (1978), Wolfram's elementary automata (1983), and the patterns a cellular automaton
+     never produces, its Garden-of-Eden patterns (Moore 1962, Myhill 1963). New as far as found: their reading under K1–K3, the
+     census by knots across time, and the traffic rule's uniform knots.
+   - **Next (started 2026-11-08 under the standing mandate).** Knots between processes: two rings, each running a dynamics, joined
+     by one contact cell, and which contact laws bind both rings' pasts in the contact's future (Payoff 2/3, Concreteness 2/3). The
+     alternatives are learning a rule from its knots (G16), the traffic rule's uniform knots, and Life at two steps
+     ([decision note](../research/TIME-KNOTS-20261107-001/time_knots.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

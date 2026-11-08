@@ -18,17 +18,18 @@ Epic `TIME-KNOTS-20261107-001` (program foundations), 2026-11-08.
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
 | 1 | **Knots across time are minimal decisive sets.** The knots made of a cell's value after T steps and cells of the first row are exactly the sets of past cells that, set suitably, decide the future value while no smaller set decides it, when they have two or more cells. A single deciding cell gives a tie. | proved; computed on 476 maps against the generic enumerator | A |
-| 2 | **Pairwise memory is exactly the single ANDs and ORs.** A future value has no knot across time exactly when it is a single conjunction or disjunction of literals of the past. | proved; computed on every nonconstant function of up to four inputs | A |
+| 2 | **Pairwise memory of the first row is exactly the single ANDs and ORs.** A future value has no knot with the first row exactly when it is a single conjunction or disjunction of literals of it. Such a process can still knot two times through intermediate rows (corrected 2026-11-08; see the correction below). | proved; computed on every nonconstant function of up to four inputs | A |
 | 3 | **Linear processes keep a fixed-size knot with their past at every power of two.** A linear rule with polynomial p has one two-time knot per lag: the support of p^T plus the cell. It has \|supp p\| + 1 places at every lag 2^k (Frobenius), and 2^popcount(T) + 1 for rule 60 (Lucas). Knots through intermediate cells are smaller, down to 2 + w(T) for Ledrappier's law, the space-time law of rule 102. | proved; computed | A |
 | 4 | **Life binds a cell's future only to its neighbours.** In one step of Life the knots are the 70 sets of four neighbours (overcrowding). There are no ties, and the cell's own present value is in no knot. | proved by exhaustion | A |
-| 5 | **A census of the 88 elementary automata to lag 6.** 15 are knot-free at every lag, so their memory is only pairwise. 8 keep exactly one knot per lag: the linear 60, 90, 105 and 150, and 42, 76, 138 and 200. 49 have knot counts growing at every lag, and 16 do otherwise. The traffic rule 184's knots at lag T are all C(2T + 1, T + 1) sets of T + 1 light-cone cells. Majority (232) keeps a three-place knot at every lag. Knots across time do not follow Wolfram's classes. | exploratory experiment | B |
+| 5 | **A census of the 88 elementary automata to lag 6.** 15 are knot-free at every lag, so their memory of the first row is only pairwise; four of them still knot their later states (correction below). 8 keep exactly one knot per lag: the linear 60, 90, 105 and 150, and 42, 76, 138 and 200. 49 have knot counts growing at every lag, and 16 do otherwise. The traffic rule 184's knots at lag T are all C(2T + 1, T + 1) sets of T + 1 light-cone cells. Majority (232) keeps a three-place knot at every lag. Knots across time do not follow Wolfram's classes. | exploratory experiment | B |
 
 ## Answer
 
 - **The static definition survives.** A process written as a law is a static law on its trajectories.
 - **What its knots across time are.** They are the minimal sets of past cells that decide a future cell.
-- **Pairwise memory.** A process knows its past only pairwise, ties and no knot, exactly when each future value is a single AND or
-  OR. This is the program's two/three boundary, read across time.
+- **Pairwise memory.** A process knows its first row only pairwise, ties and no knot, exactly when each future value is a single
+  AND or OR. This is the program's two/three boundary, read across time. Such a process is not knot-free across time: an AND
+  process still knots its later states wherever its image forbids a pattern (correction below).
 - **Knotted memory.**
   - **Linear processes** never forget: at every power of two they keep one knot of fixed size with their past.
   - **Traffic** binds its past most uniformly: every set of T + 1 of its 2T + 1 past cells is a knot.
@@ -40,8 +41,9 @@ Epic `TIME-KNOTS-20261107-001` (program foundations), 2026-11-08.
 - **For question 4.** Loops can be modelled as processes without changing the knot test. The data over time are the trajectory,
   and K1–K3 reads knots across time directly. What a process adds over a static law of one moment is these knots, which join
   different times.
-- **Emergence across time.** A future value that is a single AND or OR is fixed by one past cell at a time, so its memory is only
-  pairwise. Every other future value needs several past cells together, constrained as a whole and free in every part.
+- **Emergence across time.** A future value that is a single AND or OR is fixed by one first-row cell at a time, so its memory of
+  the first row is only pairwise. Every other future value needs several past cells together, constrained as a whole and free in
+  every part. A second source of knots across time is the image: patterns a rule never produces knot its later states together.
 - **Life.** The owner's example of emergence emerges, under K1–K3, from crowds: four neighbours at a time decide a cell, and
   its own present never enters a knot.
 - **The light cone is too small.** In Ledrappier's law the least knot joining a cell to itself seven steps on has four places.
@@ -59,6 +61,25 @@ reuses the tickets' own code.
 | Theorem 2 on all functions of ≤ 4 inputs, terms and clauses of 5 (A) | All terms and clauses of 6 inputs; 300 random 6-input functions | pass: terms and clauses knot-free; all 300 random functions knotted |
 | Rule 102's light cone: least knot 2 + w(T), T ≤ 6 (A) | T = 7, 8 | **the cone is too small at T = 7**: it gives 5, while a window reaching one cell further gives 4 = 2 + w(7). T = 8 passes. The claim, scoped to T ≤ 6, was corrected before publication to say so |
 | The census classes at T ≤ 6 (B) | The census at T = 7 (88 rules, 15 cells) | pass for the knot-free and one-knot classes, and rule 184's knots are again all 6,435 sets of 8 cells; 46 of the 49 growing rules grew again, while rules 7, 33 and 156 levelled off or dropped (12 → 12, 26 → 24, 24 → 23), so "growing" describes lags 1 to 6 only |
+
+## Correction (2026-11-08)
+
+Logged in `docs/CORRECTIONS.md` as a narrowing, after publication. As first published, the answer read "A process knows its past
+only pairwise, ties and no knot, exactly when each future value is a single AND or OR", and conclusion 5 said that the 15 knot-free
+rules' "memory is only pairwise".
+- **What is true.** That holds for the knots joining one future cell to the first row, which Theorem 2 proves and the census counts
+  (A30). Through intermediate rows it fails.
+  - **Rule 128.** Each cell becomes the AND of three, so no future value has a knot with the first row, at any lag. But its image
+    never shows 1 0 1: two cells on at time 1, two apart, force the cell between them on. A cell on at time 2 forces its three cells
+    at time 1 on, so x(1, 1) and x(2, 4) on force x(1, 2) on. That knot joins two times.
+  - **The census's knot-free rules, read on their whole law** (`space_time_knots.py`, `space_time_knots.json`: cones of first-row
+    windows of 7 to 11 cells, T ≤ 3). Rules 128, 136 and 160 have knots joining two times, and rule 32 has knots inside one later
+    row. The other eleven, 0, 2, 4, 8, 10, 12, 15, 34, 51, 170 and 204, show no knot: none at all with a 7-cell window and T = 3,
+    and none of up to five places in the larger windows.
+  - **Windows.** A window's cone is a projection of the whole law, and a set's verdict depends only on the projection on it. So every
+    knot found in a window is a knot of the law, while a window without one shows nothing beyond itself.
+- **What stands.** Theorems 1 to 3, Life's step, every count of the census, and the stress test, which are all statements about the
+  two-time law.
 
 ## Literature and provenance
 
@@ -79,7 +100,8 @@ reuses the tickets' own code.
 
 - **Relied on.** A3 (verdicts from allowed states) and A6 (erasure is forgetting).
 - **Taken by default.** A process's memory is read from its two-time knots: one future cell with the first row (new entry A30).
-  Knots through intermediate rows and with several future cells are counted only for the linear rules.
+  Knots through intermediate rows and with several future cells are counted only for the linear rules. The correction above shows
+  that the two readings differ.
 
 ## Ratio
 
@@ -100,13 +122,14 @@ Carried from earlier epics:
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — what knots a process has across time | **Status:** Successful | Minimal decisive sets; pairwise memory exactly the single ANDs and ORs |
+| This attempt — what knots a process has across time | **Status:** Successful | Minimal decisive sets; pairwise memory of the first row exactly the single ANDs and ORs |
 | Local direction — one process's memory | Continue | Its knots are characterized; joining two processes is the open step |
 | Broader exploration — G5 and G16 lines | Known alternatives | Knots between processes; learning a rule from its knots |
 | Long-term goal — G5 Dynamics (question 4) | Capability gained | The static definition survives processes, and K1–K3 reads their memory |
 
-**Corrections:** none. **Goals:** a G5 checkpoint (capability gained); backlog B7 marked taken. **Assumptions:** A30 added (a
-process's memory is read from its two-time knots).
+**Corrections:** none at closure; one narrowing the same day, after publication (above): pairwise memory is of the first row only.
+**Goals:** a G5 checkpoint (capability gained); backlog B7 marked taken. **Assumptions:** A30 added (a process's memory is read
+from its two-time knots).
 
 - **What the attempt leaves open.** Knots through intermediate rows and with several future cells were counted only for linear
   rules, and Life only at one step.

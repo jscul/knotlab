@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**236 current results** and 5 superseded ones, from 168 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**237 current results** and 5 superseded ones, from 169 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 16 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 17 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 168 epics with their closures
+- [Epics](#epics): all 169 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -70,6 +70,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-10-21 · A knot hides at most one bit from its pairs, and a network at most one bit per cycle, filled only by parity** (`EMERGENCE-BITS-20261021-001-D001`).
   The bits a relation on bits hides from its pairs vanish exactly at two-literal clauses, reach one bit only for parity among knots, reach about n - log2 log2 n on n bits through covering arrays, and the statistical version vanishes only on least sets of pairwise energies, so not-all-equal is the only silent knot. With hidden joints, a network of knots hides at most one bit per independent cycle, exactly for parity, and frustrating patches add up.
   [proof P001](proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/proof.md), [proof P001](proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/proof.md), [epic closure](proofs/EMERGENCE-BITS-20261021-001Z/EMERGENCE-BITS-20261021-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · In affine chains, persistence and composition across time are decided by two row sequences of M^T** (`AFFINE-WIRE-20261108-001-D001`).
+  For chains of three rings with linear or affine rules, each ring its own, and affine contact laws chosen at each contact, the value of contact c at lag T is the parity of the first-row cells in r_T(c) = e_c M^T plus a constant, so c binds two rings at T exactly when r_T(c) meets both, and the chain composes at T exactly when r_T(c2) meets both end rings. Each sequence r_T(c) is eventually periodic, so whether both contacts persist and the chain composes at every lag from the light-cone lag on is decided exactly by iterating the two row vectors until they repeat, and for one finite chain that iteration is a complete proof of its verdicts.
+  [proof P001](proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/proof.md), [epic closure](proofs/AFFINE-WIRE-20261108-001Z/AFFINE-WIRE-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Intermittent composition across time is a strobed chain's composition, and in linear chains it is arrival** (`INTERMITTENT-NET-20261108-001-D001`).
   For a chain of three rings joined by two shared contacts, the lags at which the far contact binds the two end rings recur with the period P of the chain's T-step maps; the chain observed only at the lags of one residue modulo P composes at every observed lag or at none, so intermittent composition is persistent composition of a strobed chain whose phase is the only input the chain does not fix, an input the doctrine forbids an observer to supply unless the chain singles the phase out. For linear or affine rules with affine contact laws, the chain composes exactly at the lags where its far contact depends on both end rings, so the composing lags are the arrival lags of both ends' influence; in any chain, composition implies that dependence.
   [proof P001](proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/proof.md), [epic closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md)
@@ -999,6 +1002,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-07 | Native creation at junction handles (`TRISUM-READ-20261107-001`) | [closure](proofs/TRISUM-READ-20261107-001Z/TRISUM-READ-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/TRISUM-READ-20261107-001/) |
 | 2026-11-07 | The Fano plane is the only uniform law that contradicts itself (`UNIFORM-FANO-20261107-001`) | [closure](proofs/UNIFORM-FANO-20261107-001Z/UNIFORM-FANO-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-FANO-20261107-001/) |
 | 2026-11-07 | Uniform laws and the spheres they can close into (`UNIFORM-SPHERES-20261107-001`) | [closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md) | [folder](research/UNIFORM-SPHERES-20261107-001/) |
+| 2026-11-08 | A middle ring that carries without cancelling: persistent composition on affine chains (`AFFINE-WIRE-20261108-001`) | [closure](proofs/AFFINE-WIRE-20261108-001Z/AFFINE-WIRE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/AFFINE-WIRE-20261108-001/) |
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | Two contacts across time: persistent contacts do not compose (`PROCESS-CHAIN-20261108-001`) | [closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CHAIN-20261108-001/) |

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "AFFINE-WIRE-20261108-001B-E001",
+  "ticket": "AFFINE-WIRE-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Is there an affine chain of three rings in which both contacts persist and the far contact binds the end rings at every lag from d + 1 on, so that the contact-network gate passes across time? Or do the arrival sets of affine chains always have gaps (the coordinator's stop condition for the process line)?",
+  "public_inputs": {
+    "library": "proofs/AFFINE-WIRE-20261108-001A/AFFINE-WIRE-20261108-001A-P001_persistent_composition_is_about_row_sequences/wire_lib.py (sha256 b8bdcc70359ada7ce5be8c102ce6bfe18354b9a1e473acd88c53b7cd62d40532): linear_matrix, row_orbit, analyze, mixed_state_map.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Each ring its own linear rule among 0, 204, 240, 170, 60, 102, 90 and 150 (affine rules differ by constants, which change no verdict): 512 rule triples. Ring sizes mA and mC in 3..5, mB in 3..7, every contact position k in 1..mB-1: 180 size-position combinations. Each contact its own law by its linear part: the proposal parity, or a self-blind sum uX + uY with uX, uY in {x, y, x + y}: 10 laws, 100 pairs. In all 9,216,000 chains.",
+    "exactness": "Every verdict is exact by ticket A's reduction (row sequences iterated until they repeat)."
+  },
+  "forbidden_inputs": [
+    "Changing the family after seeing results",
+    "Dropping chains"
+  ],
+  "primary_observable": "The number of chains in which both contacts persist; among them, how many compose at every lag from d + 1 on, and how many compose at both contacts; the rule triples and laws of the composing ones.",
+  "cheapest_meaningful_control": "The twelve smallest persistently composing chains, if any, must give the same verdicts on their full state spaces. A search whose constructions fail this is not read.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control, or the count of zero.",
+  "decision_or_followup_rule": "H1, frozen: no chain of the family keeps both contacts persistent and composes from d + 1 on (gaps are forced). If H1 holds, the process line closes with forced gaps as its obstruction, as computed on the family, and a proof is sought. If H1 fails, the smallest constructions are verified on the full state space and reported as persistent native networks across time.",
+  "stop_rule": "Stop when every chain of the family has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: the declared family only.",
+    "Two-time knots only (A30).",
+    "Affine chains only: nonlinear chains are covered by earlier censuses."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket A's check ran its reduction on 1,200 random chains of a smaller family against their full state spaces; 12 of them composed at every lag from d + 1 on, and whether any also kept both contacts persistent was not computed. run.py --pilot timed 2,000 random chains of this family at 1.2 s and printed no verdicts."
+}

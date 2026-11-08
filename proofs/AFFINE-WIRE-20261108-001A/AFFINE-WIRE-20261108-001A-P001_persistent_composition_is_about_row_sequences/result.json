@@ -1,0 +1,38 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json": "Proved",
+     "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json": "passed",
+     "proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/manifest.json": "Proved",
+     "proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/result.json": "passed"
+    }
+   }
+  },
+  "1 for 400 random chains with linear rules on the three rings and linear laws (both families, chosen independently at each contact), sizes 3-5/3-6/3-5 and every contact position, the matrix rows equal the chain's own linear map read off its full state space": {
+   "pass": true,
+   "info": {
+    "chains": 400,
+    "mismatches": 0
+   }
+  },
+  "2 on 1,200 random affine chains (sizes 3-4/3-5/3-4), the verdicts read from the row sequences of M^T (c1 persists, c2 persists, c2 composes from d + 1) equal the verdicts from the full state space": {
+   "pass": true,
+   "info": {
+    "chains": 1200,
+    "decided": 1200,
+    "agree": 1200,
+    "positives in the full-state verdicts": {
+     "c1 persists": 32,
+     "c2 persists": 45,
+     "c2 composes": 12
+    }
+   }
+  }
+ },
+ "seconds": 2.8
+}

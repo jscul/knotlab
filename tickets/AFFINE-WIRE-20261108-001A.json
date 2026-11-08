@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "INTERMITTENT-NET-20261108-001A",
+    "PROCESS-CHAIN-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "AFFINE-WIRE-20261108-001A-P001"
+  },
+  "id": "AFFINE-WIRE-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that for chains of three rings with linear or affine rules (each ring its own) and affine contact laws, both contacts persist and the chain composes at every lag from d + 1 on exactly when four sequences of row parts of M^T over GF(2) never vanish (ring A's and ring B's parts of c1's rows for T >= 1, ring B's and ring C's parts of c2's rows for T >= 1, ring A's part of c2's rows for T >= d + 1); that each row sequence is eventually periodic and is decided exactly by iterating the row vector until it repeats; and that for one finite chain this iteration is a complete proof. Check the reduction against the full state space on small chains.",
+  "ownership": {
+    "root": false,
+    "scope_id": "AFFINE-WIRE-20261108-001"
+  },
+  "parent": "AFFINE-WIRE-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08: in affine chains binding and composition are read from the supports r_T(c) = e_c M^T; each row sequence is eventually periodic, so both contacts' persistence and composition from d + 1 on are decided exactly by iterating two row vectors; checked against full state spaces on 1,200 random chains (12 of which compose at every lag from d + 1 on).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Persistent composition in affine chains is a question about row sequences"
+}

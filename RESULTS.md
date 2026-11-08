@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**248 current results** and 5 superseded ones, from 185 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**249 current results** and 5 superseded ones, from 186 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 75 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 76 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 185 epics with their closures
+- [Epics](#epics): all 186 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -588,6 +588,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A uniform law can grow flat space but not the knot's contradiction** (`UNIFORM-SPHERES-20261107-001-D001`).
   A law of lines and co-lines builds its own closed surface; with one kind of point it closes into a sphere only as an antiprism or a snub polyhedron of at most 60 points. With uniform signs the count never forces the knot's lines on any uniform law, and Kasteleyn signs make the knot fail only on those small spheres or antiprism chains solvable in O(log n) queries, so a deep contradiction needs a second kind of point.
   [proof P001](proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/proof.md), [epic closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Creation between glue lines singles out the contradictory class** (`CONTRA-READ-20261108-001-D001`).
+  On every trisum glue of 8 to 12 lines, exactly one switching class has no solution, and creation between glue lines tells it apart from every other class, by a single row on the 8- and 10-line glues. Removing a line leaves its three points tied only in that class, and degenerate gluings read the tie.
+  [proof P001](proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/proof.md), [proof P001](proofs/CONTRA-READ-20261108-001B/CONTRA-READ-20261108-001B-P001_the_contradictory_block_on_the_12_line_glues/proof.md), [epic closure](proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Creation between glue lines does not tell switching classes apart, and sees nothing where nothing creates** (`SWITCH-COMPLETE-20261108-001-D001`).
   On the 8-line trisum glue, creation between glue lines separates the switching classes up to symmetry but one pair, while on the 10-line glue it takes 429 values on 576 orbits and is identical for the 190 classes where nothing creates, whose counts run from 60 to 110. At both sizes the one class whose plain spaces are three-fold has a block of its own.
   [proof P001](proofs/SWITCH-COMPLETE-20261108-001A/SWITCH-COMPLETE-20261108-001A-P001_the_glue_block_on_the_smallest_glue/proof.md), [proof P001](proofs/SWITCH-COMPLETE-20261108-001B/SWITCH-COMPLETE-20261108-001B-P001_the_glue_block_one_size_past/proof.md), [epic closure](proofs/SWITCH-COMPLETE-20261108-001Z/SWITCH-COMPLETE-20261108-001Z-P001_epic_closure/proof.md)
@@ -1039,6 +1042,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A middle ring that carries without cancelling: persistent composition on affine chains (`AFFINE-WIRE-20261108-001`) | [closure](proofs/AFFINE-WIRE-20261108-001Z/AFFINE-WIRE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/AFFINE-WIRE-20261108-001/) |
 | 2026-11-08 | Is bond distance the only native spacing? (`BOND-CHAIN-20261108-001`) | [closure](proofs/BOND-CHAIN-20261108-001Z/BOND-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/BOND-CHAIN-20261108-001/) |
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
+| 2026-11-08 | Does creation between glue lines always single out the contradictory class? (`CONTRA-READ-20261108-001`) | [closure](proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CONTRA-READ-20261108-001/) |
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |

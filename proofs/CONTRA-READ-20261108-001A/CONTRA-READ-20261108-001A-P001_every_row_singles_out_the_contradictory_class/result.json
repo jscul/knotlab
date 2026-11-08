@@ -1,0 +1,101 @@
+{
+ "artifact_id": "CONTRA-READ-20261108-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SWITCH-COMPLETE-20261108-001B/SWITCH-COMPLETE-20261108-001B-P001_the_glue_block_one_size_past/manifest.json": "Proved",
+     "proofs/SWITCH-COMPLETE-20261108-001B/SWITCH-COMPLETE-20261108-001B-P001_the_glue_block_one_size_past/result.json": "passed",
+     "proofs/SWITCH-COMPLETE-20261108-001Z/SWITCH-COMPLETE-20261108-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/SWITCH-COMPLETE-20261108-001Z/SWITCH-COMPLETE-20261108-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json": "passed",
+     "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/result.json": "passed",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the contradictory class: on the 8-line glue (seed 3) and the 10-line glue (seed 6), exactly one switching class of signings has no solution, the class of the generator's Pfaffian signing, whose plain edge-atom spaces are three-fold": {
+   "info": {
+    "3": {
+     "classes": 512,
+     "classes without solutions": 1,
+     "lines": 8
+    },
+    "6": {
+     "classes": 2048,
+     "classes without solutions": 1,
+     "lines": 10
+    }
+   },
+   "pass": true
+  },
+  "2 every single row singles out the contradictory class: for every line a of both glues, among the rows of all switching classes of the glue without a (128 on the 8-line glue, 512 on the 10-line), only the contradictory class's restriction has its row; and in the glue without a, line a's three points are tied (two complementary patterns) for that restriction and for no other class": {
+   "info": {
+    "classes sharing the row, per line": {
+     "3": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "6": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "rows computed": 6144
+   },
+   "pass": true
+  },
+  "3 how the rows read it: in the contradictory class's row at a, every line sharing two points with a is degenerate (two of its points are tied), and at every line that shares two points with no other line, the degenerate entries alone single the class out": {
+   "info": {
+    "lines sharing two points with no other line": {
+     "3": [
+      {
+       "classes whose degenerate entries include its own": 1,
+       "line": 1
+      },
+      {
+       "classes whose degenerate entries include its own": 1,
+       "line": 3
+      }
+     ],
+     "6": [
+      {
+       "classes whose degenerate entries include its own": 1,
+       "line": 1
+      },
+      {
+       "classes whose degenerate entries include its own": 1,
+       "line": 2
+      }
+     ]
+    }
+   },
+   "pass": true
+  }
+ },
+ "claim": "On the 8-line and 10-line trisum glues (TRISUM-READ's seeds 3 and 6; seed 36's glue is isomorphic to seed 6's), exactly one switching class has no solution, the class of the generator's Pfaffian signing, whose plain edge-atom spaces are three-fold, and every single row of creation between glue lines singles it out: for every line a, no other class of the glue without a has the same row a. In the glue without a, line a's three points are tied for that class and for no other. In its row, every line sharing two points with a is degenerate, and at each line that shares two points with no other line the degenerate entries alone single the class out.",
+ "kind": "proof",
+ "proof": "CONTRA-READ-20261108-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "CONTRA-READ-20261108-001A"
+}

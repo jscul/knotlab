@@ -1838,9 +1838,26 @@ So network holes come in two kinds:
    - **Reading.** Adjacency, native paths, separation, genus and now distance are read in one substrate across time. Distance is read
      through freezes (A41): the symmetry that keeps contacts persistent is the one that makes shortest routes cancel. The networks are
      given, not grown. No lag cutoff was used.
-   - **Next (research directions).** Distance without freezing (Payoff 2/3, Concreteness 3/3), selected and awaiting the coordinator;
-     full reach on honeycomb tori, which appears to hold exactly when 3 divides the side (computed to side 13)
+   - **Next (taken).** Distance without freezing (next entry); full reach on honeycomb tori, parked as B18,
+     which appears to hold exactly when 3 divides the side (computed to side 13)
      ([decision note](../research/DISTANCE-20261108-001/distance.md)).
+
+   **2026-11-08: distance without freezing** (`PLAIN-TIME-20261108-001`).
+   - **The question.** For which networks of persistent contacts does the plain first need, with no freezing, always come at the
+     directed distance?
+   - **Only the sphere, at every size (proved).** Every loop of rings, pair of rings sharing contacts and Platonic network reads its
+     distance plainly. The square, triangular and honeycomb planes do not, from distance 4, 6 and 5, and a quotient whose systole is long
+     enough inherits the failure, so exactly 26 tori read it: 9 square, 11 triangular, 6 honeycomb, mirror images apart.
+   - **The first failing map (exact).** The twisted square torus {4,4}_(2,3), 13 rings: each contact has one late ring, at distance 4,
+     first needed at 5. Its mirror image reads every distance plainly, so no rule by type, genus, curvature or size decides finite maps.
+   - **The horizon (computed).** In the tiling with rings of m contacts and faces of f, two shortest routes first tie at
+     τ = L − L/m − L/f + 1, L = lcm(m, f), once round a ring and once round a face, and the first late ring comes one step later (two
+     with triangular faces and larger rings): from 4 on the square lattice to 26 for rings of 13 and triangular faces. Curved networks
+     read their distance plainly much further, but not forever. No lag cutoff was used.
+   - **Reading.** Freezing does real work wherever a network is two-dimensional and not tiny (A41, confirmed). Chirality is native:
+     rule 60 reads leftward, so a network and its mirror image are different substrates.
+   - **Next (research directions, paused for the day).** Prove the tie law's lower bound; find which quotients rescue late rings
+     ([decision note](../research/PLAIN-TIME-20261108-001/plain_time.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

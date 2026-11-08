@@ -95,7 +95,7 @@ evidence: results and their status come from the records each entry links.
 | [A38](#a38--a-contact-is-cut-by-freezing-it) | A contact is cut by freezing it | scope | Assumed |
 | [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
 | [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Confirmed |
-| [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Assumed |
+| [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Confirmed |
 
 ## Entries
 
@@ -973,7 +973,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A41 · Distance across time is read through freezes
 
-**Assumed** · 2026-11-08 · reading
+**Confirmed** · 2026-11-08 · reading
 
 - **Statement.** Distance across time is read with freezing (A38): as the cut length, the most pairwise disjoint freeze sets that
   leave two rings in different native pieces, and as the time length, the earliest lag at which any freeze makes a contact need a
@@ -991,4 +991,10 @@ evidence: results and their status come from the records each entry links.
   observable that counts routes rather than their parity, would make freezing unnecessary there; finding none would confirm this
   reading.
 - **History.**
+  - 2026-11-08 · Confirmed for stated reasons by `PLAIN-TIME-20261108-001`: the plain first need reads distance at every size only on
+    the sphere (every loop of rings, pair of rings sharing contacts and Platonic network, proved). Flat and hyperbolic tilings hide it
+    beyond a horizon set by ring and face sizes, exactly 26 tori read it (proved), and the smallest regular map that fails is a
+    13-ring torus whose mirror image reads it. So freezing is needed wherever a network is two-dimensional and not tiny, and the two
+    readings agree on the sphere ([distance without freezing](../research/PLAIN-TIME-20261108-001/plain_time.md)).
+  - 2026-11-08 · Put under challenge by `PLAIN-TIME-20261108-001`, which took up this entry's cheapest test as its question.
   - 2026-11-08 · Added by `DISTANCE-20261108-001`.

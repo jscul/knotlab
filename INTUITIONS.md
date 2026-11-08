@@ -39,9 +39,10 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Chapter 1. Bits and rules](#chapter-1-bits-and-rules)
   - [1.1 Distinctions and states](#11-distinctions-and-states)
   - [1.2 Rules and what they allow](#12-rules-and-what-they-allow)
-  - [1.3 The picture](#13-the-picture)
-  - [1.4 Reading A, B → c](#14-reading-a-b--c)
-  - [1.5 Forgetting a variable](#15-forgetting-a-variable)
+  - [1.3 Emergence in the Game of Life](#13-emergence-in-the-game-of-life)
+  - [1.4 The picture](#14-the-picture)
+  - [1.5 Reading A, B → c](#15-reading-a-b--c)
+  - [1.6 Forgetting a variable](#16-forgetting-a-variable)
 - [Chapter 2. The knot test](#chapter-2-the-knot-test)
   - [2.1 The knot test](#21-the-knot-test)
   - [2.2 Knots on the cube](#22-knots-on-the-cube)
@@ -72,8 +73,9 @@ PYTHONPATH=tools python3 -m knotlab demo
 ## Chapter 1. Bits and rules
 
 Everything later is built from bits and from rules about them. This chapter
-sets up that vocabulary and its notation, states the picture the program
-starts from, and reads the smallest rule that binds two loops.
+sets up that vocabulary and its notation, reads the Game of Life as such rules,
+states the picture the program starts from, and reads the smallest rule that
+binds two loops.
 
 ### 1.1 Distinctions and states
 
@@ -83,8 +85,8 @@ alternatives are written 0 and 1. Nothing else is assumed. There is no space,
 no order and no number beyond the two values.
 
 A **variable** names a distinction. The guide writes the distinctions that
-loops bring (lesson 1.3) as capital letters, such as A and B, the contact
-between loops as c, helper variables called witnesses (lesson 1.5) as w, and
+loops bring (lesson 1.4) as capital letters, such as A and B, the contact
+between loops as c, helper variables called witnesses (lesson 1.6) as w, and
 any other variables as x, y and z. The letters are only names, and renaming
 them changes nothing.
 
@@ -166,11 +168,66 @@ variable c that no rule mentions. It allows 010, 011, 100 and 101, and:
 Being free is a statement about what can happen together, not about any single
 state.
 
-### 1.3 The picture
+### 1.3 Emergence in the Game of Life
+
+Conway's Game of Life is the best-known picture of emergence: simple rules on a
+grid of cells give patterns that behave like objects. Read with the words of
+lesson 1.2, the whole game is one system of rules. *Classical:* Conway's game,
+published by Gardner in 1970.
+
+- **Cells are distinctions.** Each cell at each step of time is a variable: 1
+  when the cell is alive, 0 when it is dead.
+- **The rule is a rule on ten variables.** A cell is alive at the next step
+  exactly when three of its eight neighbours are alive now, or when it is
+  alive now and two of them are. That links the cell's next value to the
+  present values of the cell and its eight neighbours. It allows 512 of the
+  1,024 states of those ten variables, and like every rule it can be written
+  as a CNF.
+- **A history is an allowed state.** Stack the steps in layers, with one
+  variable for each cell in each layer. Together, the rules of every cell
+  allow exactly the possible histories: the first layer can be anything, and
+  every later layer is forced.
+- **The famous patterns are solutions.** A still life, such as the block, is a
+  state that the rules carry to itself, so it is an allowed state of the rules
+  with the next layer equal to the present one. An oscillator, such as the
+  blinker, comes back to itself after a fixed number of steps (two for the
+  blinker), and a spaceship, such as the glider, comes back moved (one cell
+  diagonally every four steps). Each is an allowed state of the same rules
+  with time closed into a cycle, shifted in the case of a spaceship.
+- **Every rule is local, and what the rules allow is global.** A rule reads
+  only one cell and its neighbours, but neighbouring rules share variables, so
+  a pattern can be forced or ruled out by rules far away, through the rules
+  in between.
+- **Contradictions are objects too.** A lone live cell and an empty board both
+  become an empty board, so two different patterns have the same successor.
+  By the Garden of Eden theorem (Moore 1962; Myhill 1963), some patterns
+  therefore have no predecessor at all, and asking for one gives a system of
+  rules that allows nothing. Chapter 5 shows that such a system still has
+  structure: how much of it a proof must hold at once to see that nothing is
+  allowed.
+
+**The grid is drawn in advance.** Each rule of Life mentions one cell and its
+eight neighbours, and the grid is what decides which cells those are. Logic
+needs no grid. A rule may mention any set of variables, and a variable may
+appear in rules with any others; lesson 3.4 shows that every shape, of any
+dimension, is the shape of some system of rules. So Life shows patterns
+emerging on a space that someone drew. The program asks for more: rules that
+make their own neighbourhoods, so that the space emerges too (lesson 7.2,
+question 1).
+
+**Reading.** Life is a picture of emergence, not the program's first instance
+of it. Its rule cannot be split into two-place rules, even with witnesses
+(lesson 3.1 gives the test), and it is not a knot either (lesson 2.1); its
+patterns also rest on the drawn grid. The lessons that follow look for the
+first thing that a whole allows and no part shows: a binding between two
+loops, which lesson 2.1 calls a knot. The game's name is only a name, and
+nothing here is a claim about biology.
+
+### 1.4 The picture
 
 The program starts from a picture of lines, loops and what lies between loops.
-Each part of the picture is a statement about small systems of the rules just
-introduced, so it can be checked state by state. With states written in the
+Each part of the picture is a statement about small systems of rules like those
+of lesson 1.2, so it can be checked state by state. With states written in the
 order x, y, z:
 
 - the chain x → y, y → z allows 000, 001, 011 and 111: once a variable is 1,
@@ -202,7 +259,7 @@ Two loops bring two distinctions, written A and B, and the place where they
 are bound is one more variable, the **contact** c. The next lesson reads the
 smallest rule that binds them.
 
-### 1.4 Reading A, B → c
+### 1.5 Reading A, B → c
 
 The smallest rule that binds two loops at a contact is called the **atom**. It
 is written in several ways, and they all say the same thing:
@@ -231,7 +288,7 @@ A B c
 
 Each piece of the notation, in turn:
 
-- **A and B** are the open distinctions of the two loops (lesson 1.3), and
+- **A and B** are the open distinctions of the two loops (lesson 1.4), and
   **c** is the contact. The capital letters mark the variables that come from
   loops and the small letter marks the contact, nothing more.
 - **The comma** in A, B → c means "and", as in A ∧ B.
@@ -269,7 +326,7 @@ Two rules look similar but are not the atom:
 Lesson 4.2 reads 1 as "exists". Then A, B → c is a requirement: when A and B
 exist, c must exist too, and nothing is required otherwise.
 
-### 1.5 Forgetting a variable
+### 1.6 Forgetting a variable
 
 The knot test looks at what remains when a variable is ignored, so it needs an
 exact way of ignoring one. **Forgetting** a variable keeps a state of the other
@@ -298,7 +355,7 @@ the same device to bind any number of loops with three-place rules.
 
 ## Chapter 2. The knot test
 
-Lesson 1.4 found a rule that lives in the whole and in no pair. This chapter
+Lesson 1.5 found a rule that lives in the whole and in no pair. This chapter
 turns that into a test, draws the test on the cube of states, and counts every
 knot on three variables.
 
@@ -596,7 +653,7 @@ uses for the difference.
   polynomial time answers form the class **P**, and they count as easy.
 - **Deciding** asks whether a system allows any state at all. For a 2-CNF it
   takes linear time (Aspvall, Plass and Tarjan 1979): each loop of
-  implications forces its members to be equal, as in lesson 1.3, and the
+  implications forces its members to be equal, as in lesson 1.4, and the
   system allows nothing exactly when some loop forces a variable to equal its
   own negation. For a 3-CNF it is **NP-complete** (Cook 1971). An allowed
   state, once found, is easy to check, and every question whose answers are
@@ -1042,17 +1099,20 @@ remains open.
 - **Clause.** An "or" of letters, each possibly negated, such as
   `¬A ∨ ¬B ∨ c`. It rules out one assignment of its own variables, and a list
   of clauses that must all hold is a **CNF** (lesson 1.2).
-- **Loop.** A logical structure that leaves a distinction open (lesson 1.3).
-- **Contact.** The variable through which loops are bound (lesson 1.3).
+- **Emergence.** What a system of rules shows as a whole and none of its rules
+  shows alone, as the Game of Life's patterns do on a grid (lesson 1.3). The
+  program places the first emergence at the first knot.
+- **Loop.** A logical structure that leaves a distinction open (lesson 1.4).
+- **Contact.** The variable through which loops are bound (lesson 1.4).
 - **Atom.** The knot `¬A ∨ ¬B ∨ c`: the smallest bond. It is also written
   A ∧ B → c, or A, B → c, and read "A and B together demand c": it forbids
-  only the state with A and B but not c (lesson 1.4).
+  only the state with A and B but not c (lesson 1.5).
 - **Forgetting.** Ignoring a variable: a state of the others stays allowed when
   some value of the forgotten one completes it. What remains is the
-  **projection**, or **shadow**, on the others (lesson 1.5).
+  **projection**, or **shadow**, on the others (lesson 1.6).
 - **Witness.** An auxiliary variable that reports on something, such as
   whether two loops are bound. Witnesses are quantified away before a verdict
-  (lesson 1.5).
+  (lesson 1.6).
 - **Knot.** A relation that is constrained as a whole and unconstrained in
   every part (lesson 2.1).
 - **Hub.** One variable shared by several separate relations, such as

@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PROCESS-CHAIN-20261108-001Z-P001",
+  "canonical_id": "PROCESS-CHAIN-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "PROCESS-CHAIN-20261108-001Z",
+  "proof": "PROCESS-CHAIN-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of two contacts across time",
+  "status": "Proved",
+  "claim": "Ledger closing PROCESS-CHAIN-20261108-001: one line per conclusion with its status, novelty and evidence (ticket A, proved; ticket B, exploratory experiment), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PROCESS-CHAIN-20261108-001A",
+    "PROCESS-CHAIN-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, contract or run output changes, or the proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PROCESS-CHAIN-20261108-001",
+    "epic_path": [
+      "PROCESS-CHAIN-20261108-001"
+    ],
+    "parents": [
+      "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json",
+      "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json",
+      "experiments/PROCESS-CHAIN-20261108-001B/PROCESS-CHAIN-20261108-001B-E001_chain_census/contract.json",
+      "artifacts/PROCESS-CHAIN-20261108-001B/PROCESS-CHAIN-20261108-001B-E001_chain_census/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/manifest.json": "8dfa5ff54b27b25523d8b6513611f3044e280c1d5b2badbee2b86bba58935792",
+    "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/result.json": "2703484076ea04e6cdfba31ac5027c35bea0e1df16f3a9f675044f407f5e751b",
+    "experiments/PROCESS-CHAIN-20261108-001B/PROCESS-CHAIN-20261108-001B-E001_chain_census/contract.json": "bb1c472f93cace3c24190823f95f319105177c6a784ef96fb8e71db94cc5589c",
+    "artifacts/PROCESS-CHAIN-20261108-001B/PROCESS-CHAIN-20261108-001B-E001_chain_census/run/result.json": "5c9f5bbf99e5c384227ba6560625b34a61c619fa137a5c4b47d7ae26175e4489"
+  },
+  "paths": {
+    "manifest": "proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "gluing_line_rule_checked": false,
+    "pendant_line_checked": false,
+    "consequences_checked": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's two tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session under the owner's standing research mandate, 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

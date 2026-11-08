@@ -1,0 +1,48 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/manifest.json": "Proved",
+     "proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/result.json": "passed"
+    }
+   }
+  },
+  "1 Theorem 1: in chains of listening contacts (rings of 3, 4 and 3 cells, all 88 rule classes, 14 contact laws each, T = 1..6) the far contact never depends on the far ring, so the chain never binds its ends": {
+   "pass": true,
+   "info": {
+    "maps": 7392,
+    "far-ring dependences": 0
+   }
+  },
+  "2 Theorem 2: in shared chains (rings of 3/4/3, 4/6/4 and 5/6/5 cells, contacts opposite on ring B, all 88 classes, three laws), c2 never depends on ring A, nor c1 on ring C, at lags T <= d, d the distance between the contacts on ring B; how often c2 depends on ring A already at lag d + 1 is reported": {
+   "pass": true,
+   "info": {
+    "maps at T <= d": 2112,
+    "dependences before the light cone": 0,
+    "configurations whose c2 depends on ring A at lag d + 1": 694,
+    "of": 792
+   }
+  },
+  "3 Theorem 3: for the 16 linear and affine rules with affine contact laws (both families), chains of 3/4/3 and 4/6/4 cells and T = 1..10, each contact binds each pair of rings exactly when the support of its row of M^T meets both": {
+   "pass": true,
+   "info": {
+    "verdicts": 15360,
+    "mismatches": 0,
+    "systems not affine": 0
+   }
+  },
+  "4 the state map and the direct simulation agree for 6 lags, and the blockwise decisiveness test agrees with process_contact_lib's grouping test, on 300 random chains": {
+   "pass": true,
+   "info": {
+    "trials": 300,
+    "dynamics agree": 300,
+    "tests agree": 300
+   }
+  }
+ },
+ "seconds": 27.3
+}

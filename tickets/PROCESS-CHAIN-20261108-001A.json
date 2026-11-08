@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SHARED-CONTACT-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PROCESS-CHAIN-20261108-001A-P001"
+  },
+  "id": "PROCESS-CHAIN-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for three rings in a chain (A and B joined by contact c1, B and C by contact c2), with binding of two rings at a contact read as every minimally decisive set of the contact's future meeting both rings' own first-row cells: (1) with listening contacts, which read their rings and feed nothing back, c2's future never depends on ring A, so the chain never binds its ends: composition across time needs a contact that the middle ring reads; (2) with shared contacts, c2(T) does not depend on ring A's first row for T <= d, d the distance between the two contacts along ring B, so the ends can be bound only from lag d + 1; (3) for linear or affine rings and affine contacts, a contact binds two rings at lag T exactly when the support of its row of M^T meets both. Check exhaustively on small chains.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PROCESS-CHAIN-20261108-001"
+  },
+  "parent": "PROCESS-CHAIN-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08: listening contacts never compose (the far contact never depends on the far ring); in a shared chain the far ring reaches the far contact only from lag d + 1, d the contacts' distance on the middle ring (reached at d + 1 in 694 of 792 configurations); affine chains bind exactly along the support of the contact's row of M^T.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "What a chain of contacts can carry"
+}

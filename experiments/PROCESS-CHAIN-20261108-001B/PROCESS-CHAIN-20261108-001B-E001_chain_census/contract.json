@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PROCESS-CHAIN-20261108-001B-E001",
+  "ticket": "PROCESS-CHAIN-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "In a chain of three rings joined by two shared contacts, how often does each contact bind its two rings at every lag, how often does the far contact bind the two end rings at every lag from the light-cone lag d + 1 on, and does that composition follow whenever both contacts persist?",
+  "public_inputs": {
+    "library": "proofs/PROCESS-CHAIN-20261108-001A/PROCESS-CHAIN-20261108-001A-P001_what_a_chain_of_contacts_can_carry/chain_lib.py (sha256 47ae9a3c9bb0b8842417ff8e6973af1b20089652eba3ab1b8d5e9eaf0ecad6cd): layout, chain_state_map, binds, ring_distance; on shared_contact_lib and process_contact_lib.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "configurations": "All three rings on one rule (the 88 classes); sizes (mA, mB, mC) = (3, 4, 3), (4, 4, 4), (4, 6, 4) and (5, 6, 5), the contacts opposite on ring B (k = mB // 2); the same law at both contacts: the two proposal parities and the 14 self-blind parities with u = v; 5,632 configurations.",
+    "exactness": "The joint dynamics is iterated until its T-step map repeats (16-byte digests, each repeat confirmed by recomputing the earlier map), so each verdict holds at every lag; a configuration not repeating within 4,096 lags is undecided.",
+    "verdicts": "c1 binds A and B, and c2 binds B and C, at every lag; c1 binds A and C, c2 binds A and C, and c2 binds A, B and C, at every lag from d + 1 on."
+  },
+  "forbidden_inputs": [
+    "Changing rules, sizes, laws, cap or verdicts after seeing results",
+    "Dropping configurations"
+  ],
+  "primary_observable": "The number of configurations in which both contacts persist; among them, how many have the ends bound at c2, and at both contacts, from d + 1 on; how many have the ends bound without both contacts persisting; by size and family.",
+  "cheapest_meaningful_control": "No binding of the ends may be claimed before the light cone (ticket A's Theorem 2): every 'ends bound from d + 1' verdict must hold from exactly d + 1. A census that fails it is not read.",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The control.",
+  "decision_or_followup_rule": "H1, frozen: in every configuration where both contacts persist, both contacts bind the end rings at every lag from d + 1 on (a composition law across time). If H1 holds, report it as computed on the declared chains; if not, list the counterexamples and report the conditional fractions.",
+  "stop_rule": "Stop when every declared configuration has its verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: the declared chains only.",
+    "Two-time knots of the contacts only (A30).",
+    "All three rings on one rule, the same law at both contacts."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket A's library and check were written and run (all checks passed). run.py --pilot timed four configurations (rules 30, 110 and 184 at 5/6/5, rule 90 at 4/6/4) at 0.005 to 12 s; it prints no verdicts. No census was run."
+}

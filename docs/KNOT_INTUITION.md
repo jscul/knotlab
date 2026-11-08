@@ -1795,9 +1795,21 @@ So network holes come in two kinds:
    - **Reading.** The unit of growth is a band: a single ring is a defect whose returns go unpaired. Networks with a flip at every contact
      exist at every size only on the torus, so the flip criterion carries growth only on a flat surface. The law fills a torus it is
      given; making the surface is the open part.
-   - **Next (research directions).** Make the surface by growing whole bands (Payoff 3/3, Concreteness 1/3), or the ready proofs of full
-     reach and of which lattices compose everywhere (Payoff 2/3, Concreteness 3/3)
+   - **Next (taken).** Make the surface by growing whole bands (next entry)
      ([decision note](../research/GROW-NET-20261108-001/grow_net.md)).
+
+   **2026-11-08: one band makes the torus** (`BAND-SURFACE-20261108-001`).
+   - **The question.** Can the band law make the torus from a loop of rings, not only fill a torus it is handed?
+   - **Yes, in one step (proved).** Inserting a band into a loop joins each new ring to its partner on both sides, which is the n × 2
+     torus. Every n × m torus with n ≥ 3 and m ≥ 2 has a half-turn at every contact, so the loop, the n × 2 torus and every later torus
+     keep every contact persistent.
+   - **Where the band sits decides the surface (exploratory, exact).** Of 1,813,632 placements of a first band, the balanced ones lie on
+     a sphere only once (the cube), on the torus, or on surfaces of genus 2 to 4, mostly with no symmetry. No lag cutoff was used.
+   - **Reading.** A band joined to a loop on both sides runs through both of the loop's faces and closes a handle. A uniform local law
+     now makes a surface from a loop with every contact a persistent knot across time at every stage; the rule, not the dynamics, says
+     where the band goes.
+   - **Next (research directions).** Higher genus by bands (Payoff 3/3, Concreteness 2/3), or the ready proof of full reach (Payoff 2/3,
+     Concreteness 3/3) ([decision note](../research/BAND-SURFACE-20261108-001/band_surface.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

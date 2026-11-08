@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GENUS-BAND-20261108-001A-E001",
+  "ticket": "GENUS-BAND-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a second band keep a balanced genus-2 first band balanced, and can a second band add a handle to the two-row torus while every contact stays persistent?",
+  "public_inputs": {
+    "library": "band_lib.py of BAND-SURFACE-20261108-001A (sha256 3061f2917a74f1510b929c85341e2ed1abe991d547c0fb549e180351d2ccc8ea), on GROW-NET-20261108-001A's grow_lib.",
+    "run": "run.py in this folder, 12 worker processes.",
+    "family": "The 20 balanced genus-2 first bands on loops of 5 rings and the n x 2 tori for n = 3 to 5; second bands in the families S1 (every rung subdivided, every way), S2 (stacked by single rungs, every way), S3 (stacked by double rungs: uniform rules; every way on the 3 x 2 torus; plus 100,000 random cases on the 4 x 2 and 5 x 2 tori) and S5 (joined to both rows, old rungs kept: uniform rules and 300,000 random cases), as run.py's docstring states.",
+    "exactness": "Exact: return counts are followed until the next vector lies in the span of the earlier ones; no lag cutoff."
+  },
+  "forbidden_inputs": [
+    "Changing the families after seeing results",
+    "Dropping cases"
+  ],
+  "primary_observable": "Second bands that keep every contact persistent, by family, with their genus.",
+  "cheapest_meaningful_control": "S1 on the n x 2 torus contains the torus band rule, which BAND-SURFACE-20261108-001A proves balanced (the n x 3 torus): it must appear with genus 1.",
+  "resource_budget": {
+    "wall_minutes": 15,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The counts by family.",
+  "decision_or_followup_rule": "H1, frozen: no second band in the families keeps a genus-2 base balanced. H2, frozen: on the n x 2 tori every balanced second band in the families has genus 1. If both hold, the second band is the step where every band fails for genus 2, and 'one band per handle' does not extend within these families.",
+  "stop_rule": "Stop when every case of the families has its verdict.",
+  "nonclaims": [
+    "Exploratory: these families of second bands only; bands not aligned column by column, or of other lengths, are not covered.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing, scratch runs of the same families found no balanced second band on the genus-2 bases and none on the tori except the torus band rule, so H1 and H2 are not blind predictions. run.py --pilot timed one family and printed no verdicts."
+}

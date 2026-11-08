@@ -52,13 +52,13 @@ Epic `CONTRA-PROOF-20261108-001` (program topology), 2026-11-08.
 
 - **Already one family past.** The random glues are CONTRA-READ's reading tested outside the trisum family; that test found the
   counterexamples (`docs/LONG_RUNNING.md`, CONTRA-PROOF-R1, redrawn by ticket A's check).
-- **One size past for the refined conjecture.** The five 14-line trisum glues, 3-connected, every row in full: pending at this commit; the first three glues (seeds 96, 282 and 288) pass, each single row
-  singling out the contradictory class
-  (`docs/LONG_RUNNING.md`, CONTRA-PROOF-S1).
+- **One size past for the refined conjecture.** The five 14-line trisum glues, 3-connected, every row in full: passed. On every line
+  of every glue only the contradictory class's restriction has its row (`stress_test_s1.json`, computed by CONTRA-READ's
+  `stress_test_p2.py` and summarized by its `stress_test_p2_summary.py`; the run's log is `stress_test_s1_log.txt`;
+  `docs/LONG_RUNNING.md`, CONTRA-PROOF-S1). The refined conjecture now holds on all 23 3-connected glues tested.
 
 ## Pending
 
-- **The stress test** above, if still running.
 - **Still open from earlier epics.** As listed in SWITCH-READ's ledger.
 
 ## Next steps
@@ -73,7 +73,7 @@ Epic `CONTRA-PROOF-20261108-001` (program topology), 2026-11-08.
 **Corrections:** CONTRA-READ's reading in the knot intuition doc narrowed to 3-connected glues (Narrowing, too general).
 **Goals:** G4 checkpoint (obstruction learned).
 **Assumptions:** none added or changed.
-**Stress test:** pending in the long-running index (CONTRA-PROOF-S1); three of the five 14-line trisum glues pass so far.
+**Stress test:** passed: every single row singles out the contradictory class on the five 14-line trisum glues (CONTRA-PROOF-S1).
 
 **Next step:** Continue — selected: #1
 

@@ -52,7 +52,7 @@ Epic `CONTRA-READ-20261108-001` (program topology), 2026-11-08.
 One size past ticket A's every-row result, the five 12-line glues were computed in full in the background
 (`docs/LONG_RUNNING.md`, CONTRA-READ-P2): for each line, the rows of all 2,048 classes of the glue without it. On every line of
 every glue, only the contradictory class's restriction has its row (`stress_test_p2.json`, computed by `stress_test_p2.py` and
-summarized by `stress_test_p2_summary.py`; the run's log is `stress_test_p2.log`). Ticket B's pruned check agrees: after the first
+summarized by `stress_test_p2_summary.py`; the run's log is `stress_test_p2_log.txt`). Ticket B's pruned check agrees: after the first
 line only the four classes over that restriction remain.
 
 ## Correction (2026-11-08)

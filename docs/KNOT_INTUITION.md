@@ -4132,8 +4132,28 @@ So network holes come in two kinds:
      The earlier crystals hid their seams in domino tilings; these hide them where two orientations meet, which one cut turns into
      pinwheel collars. A correction rode along: the forcing route of the previous entry needed every off-law parent collar to die,
      not only the non-pinwheel ones (not a block).
-   - **Next (proposed).** Leave the pinwheel for G1's measure itself: is bond distance the only native spacing (a challenge of A12)?
-     Two bits per tile and edge labels stay in the backlog ([decision note](../research/CRYSTAL-UP-20261108-001/crystal_up.md)).
+   - **Next (taken).** G1's measure itself: is bond distance the only native spacing (next entry)? Two bits per tile and edge
+     labels stay in the backlog ([decision note](../research/CRYSTAL-UP-20261108-001/crystal_up.md)).
+
+   **2026-11-08: chains of knots and bond distance** (`BOND-CHAIN-20261108-001`).
+   - **The question.** Bond distance, the least knot through two distinctions minus one, has measured every space since
+     2026-11-07 (A12). Another measure reads only knots: the shortest chain of knots, each sharing a distinction with the next. Do
+     they agree?
+   - **On parity laws they do (proved).** A chain of knots always holds a knot through its two ends, by matroid connectivity. So
+     counted in knots every joined pair is one step apart (no spacing at all), and counted in distinctions a chain gives back bond
+     distance exactly.
+   - **Elsewhere they part exactly at gates (proved, exhaustive).** A gate is a shared distinction one value of which satisfies both
+     knots it joins. Of the 1,156 laws made of two three-place knots sharing a distinction, a knot joins the far ends exactly when
+     the knots do not meet at a gate. A chain of single clauses is spanned by a knot exactly when its clauses chain as implications.
+   - **A law only chains see as a line.** The NAND thread, clauses not(s(t−1) ∧ a(t) ∧ s(t)), has no knot beyond its clauses, so
+     bond distance sees separate clauses where chain distance counts a line. The atom thread, the same clauses with the signs of
+     an implication, is a line for both.
+   - **Reading.** By the test frozen before the run, A12 is overturned as a universal statement. The foundation decides between the
+     measures: two independent relations on A and k and on B and k make k a common hub, not one touch between A and B. At a gate no
+     knot crosses k, and bond distance follows that rule.
+     A39 replaces A12 on those terms, and every law measured for space composes, so no result changes.
+   - **Next (proposed).** Two bits per tile, products of one-bit decorations first (backlog B8)
+     ([decision note](../research/BOND-CHAIN-20261108-001/bond_chain.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

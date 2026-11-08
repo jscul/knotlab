@@ -66,7 +66,7 @@ evidence: results and their status come from the records each entry links.
 | [A9](#a9--native-knots-are-opened-by-finite-changes) | Native knots are opened by finite changes | reading | Assumed |
 | [A10](#a10--the-base-distinction-is-a-bit) | The base distinction is a bit | scope | Assumed |
 | [A11](#a11--hubs-are-a-declared-substrate-never-contact) | Hubs are a declared substrate, never contact | scope | Assumed |
-| [A12](#a12--bond-distance-is-a-laws-own-spacing) | Bond distance is a law's own spacing | measure | Under challenge |
+| [A12](#a12--bond-distance-is-a-laws-own-spacing) | Bond distance is a law's own spacing | measure | Overturned |
 | [A13](#a13--witness-variables-are-part-of-a-law-not-a-drawing) | Witness variables are part of a law, not a drawing | reading | Assumed |
 | [A14](#a14--a-growing-laws-history-is-a-hidden-witness) | A growing law's history is a hidden witness | reading | Confirmed |
 | [A15](#a15--every-coherent-alternative-is-co-real) | Every coherent alternative is co-real | interpretation | Assumed |
@@ -92,6 +92,8 @@ evidence: results and their status come from the records each entry links.
 | [A35](#a35--hidden-information-is-counted-as-labels-a-decorated-substitution-sets) | Hidden information is counted as labels a decorated substitution sets | measure | Assumed |
 | [A36](#a36--a-law-declared-cell-by-cell-is-a-native-substrate) | A law declared cell by cell is a native substrate | scope | Assumed |
 | [A37](#a37--a-path-composes-at-the-recurring-lags-its-dynamics-fixes) | A path composes at the recurring lags its dynamics fixes | reading | Assumed |
+| [A38](#a38--a-contact-is-cut-by-freezing-it) | A contact is cut by freezing it | scope | Assumed |
+| [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
 
 ## Entries
 
@@ -317,7 +319,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A12 · Bond distance is a law's own spacing
 
-**Under challenge** · 2026-11-08 · measure
+**Overturned** · 2026-11-08 · measure
 
 - **Statement.** The spacing a law sets between two distinctions is their bond distance: the size of the least knot through
   both, minus one, read from the allowed states alone. Dimension is read from how fast bond balls grow, and a circle is the
@@ -332,6 +334,12 @@ evidence: results and their status come from the records each entry links.
   one, so the two agree there, but they need not agree elsewhere. A challenge would compare them on the laws already measured
   and ask whether any dimension or circle changes.
 - **History.**
+  - 2026-11-08 · Overturned as a universal statement by the test `BOND-CHAIN-20261108-001` froze before running: in the NAND
+    thread, clauses not(s(t−1) ∧ a(t) ∧ s(t)), chain distance reads a number line and bond distance none, since no knot crosses a
+    gate (a value of a shared distinction that satisfies both knots). It holds wherever knots compose: on every parity law chains
+    counted in knots collapse to one step and counted in distinctions equal bond distance (proved), and every law measured for
+    space so far composes, so nothing under Rests on it changes. Replaced by A39
+    ([bond and chain distance](../research/BOND-CHAIN-20261108-001/bond_chain.md)).
   - 2026-11-08 · Under challenge by `BOND-CHAIN-20261108-001`: chain distance counted in knots and in distinctions, against bond
     distance, on parity laws and on non-matroidal laws.
   - 2026-11-07 · Used as the measure of space from a law (`LOGIC-AXIS-20261107-001`).
@@ -876,3 +884,40 @@ evidence: results and their status come from the records each entry links.
     composing share is 2^(−w), positive at every size
     ([recurring composition at every ring size](../research/RECUR-PROOF-20261108-001/recur_proof.md)).
   - 2026-11-08 · Added by `RECUR-PATH-20261108-001`, replacing A34.
+
+### A38 · A contact is cut by freezing it
+
+**Assumed** · 2026-11-08 · scope
+
+- **Statement.** The intervention that tests native separation across time cuts a contact by freezing it: its law becomes c ← c, so
+  it reads nothing and keeps its first value.
+- **Why.** `SEPARATE-20261108-001` took it by default. Freezing is the simplest declared contact intervention that stops every route
+  through the contact, and it leaves every other cell's law unchanged
+  ([native separation across time](../research/SEPARATE-20261108-001/separate.md)).
+- **Rests on it.** The epic's theorems that a cut separates a proved path and that a cycle of four rings needs one cut per route.
+- **Challenge.** Cut instead by erasing the contact, forgetting it as the knot test erases a loop, or by letting it read only one of
+  its rings. The cheapest test reruns the epic's checks with a one-sided cut; a route that survives it would show that what counts as
+  a cut changes which sets are separated.
+- **History.**
+  - 2026-11-08 · Added by `SEPARATE-20261108-001`.
+
+### A39 · Space is spaced by knots that compose
+
+**Assumed** · 2026-11-08 · reading
+
+- **Statement.** The spacing a law sets between two distinctions is their bond distance, the size of the least knot through both,
+  minus one: distinctions joined only by a chain of knots that meet at gates are not spaced at all. A gate is a shared distinction
+  one value of which satisfies both knots it joins, so that it is a common hub rather than a touch.
+- **Why.** `BOND-CHAIN-20261108-001` overturned A12 as a universal statement and this reading replaces it. Chains of knots and bond
+  distance agree wherever knots compose across their meetings, including every parity law (proved), and part exactly at gates. The
+  foundation's contact rule decides between them: "Two independent A-k and B-k relations make k a common hub, not one touch between
+  A and B; shared variable identity alone is insufficient" (`AGENTS.md`). At a gate no knot crosses k, and bond distance follows
+  that rule
+  ([bond and chain distance](../research/BOND-CHAIN-20261108-001/bond_chain.md)).
+- **Rests on it.** Everything that rested on A12: the number line, the taxicab plane, the circles of periodic and pinwheel laws, and
+  dimension read from ball growth (question 9). All of it was measured where the two measures agree.
+- **Challenge.** Find a law whose gate chains carry structure the program would want to call space that composing knots cannot
+  carry, for example a hub chain in two dimensions whose chain balls are round. The cheapest test measures chain balls on a plane of
+  gated knots against the grid it is drawn on.
+- **History.**
+  - 2026-11-08 · Added by `BOND-CHAIN-20261108-001`, replacing A12.

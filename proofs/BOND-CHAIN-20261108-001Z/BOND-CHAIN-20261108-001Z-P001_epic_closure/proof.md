@@ -16,7 +16,7 @@ Ticket `BOND-CHAIN-20261108-001Z`, 2026-11-08.
 ## Answer
 
 By its frozen test A12 is overturned as a universal statement (the NAND thread); it holds wherever knots compose, which covers
-every law measured for space so far. A38 replaces it.
+every law measured for space so far. A39 replaces it.
 
 ## Pending the owner
 

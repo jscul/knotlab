@@ -1652,8 +1652,25 @@ So network holes come in two kinds:
    - **Reading.** Under A37 these are native networks across time that transport, by proof. The census's counts had repeats and are
      corrected (`docs/CORRECTIONS.md`).
    - **Provenance.** Pascal's triangle mod 2 and Lucas' theorem (Lucas 1878; Martin, Odlyzko and Wolfram 1984). Known-with-delta.
-   - **Next (recommended, awaiting the coordinator).** Native separation and cycles of rings on the proved families (backlog B12, its
-     own thread; Payoff 3/3, Concreteness 3/3) ([decision note](../research/RECUR-PROOF-20261108-001/recur_proof.md)).
+   - **Next (taken).** Native separation and cycles of rings on the proved families (next entry)
+     ([decision note](../research/RECUR-PROOF-20261108-001/recur_proof.md)).
+
+   **2026-11-08: native separation across time** (`SEPARATE-20261108-001`).
+   - **Routes (proved).** A contact's value at lag T depends on a first-row cell exactly when the number of walks of reads of length T
+     between them is odd. Cutting a contact, freezing it so that it reads nothing, removes every walk through it.
+   - **A cut separates a path (proved).** In the proved paths the far contact needs the first ring at the lags where a binomial
+     coefficient is odd. After cutting any one contact it needs the first ring at no lag, and every other contact still binds both of
+     its rings: native separation across time, with reachability before the cut and the walks after it accounting for absence.
+   - **A cycle needs two cuts (proved).** Four rings closed into a cycle with two routes from R_0 to R_2 keep every contact persistent,
+     and R_2's contacts need R_0 at the two routes' binomial lag sets. One cut removes exactly its route's lags; one cut on each route
+     separates. The least separating cut has the size of the number of routes (Menger).
+   - **Routes come from the laws (computed).** Oriented round the cycle instead, every route passes through one contact and one cut
+     separates.
+   - **Reading.** Adjacency, native paths and separation now exist across time in one declared substrate, the program's order up to
+     distance. Distance waits on the owner's pending ruling on counted length. The cut is a choice of intervention (A38, added).
+   - **Provenance.** Menger's theorem (1927); walks counted by matrix powers. Known-with-delta.
+   - **Next (awaiting a go-ahead).** Closed loops of rings, where influence returns to its source (Payoff 3/3, Concreteness 2/3)
+     ([decision note](../research/SEPARATE-20261108-001/separate.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

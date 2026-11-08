@@ -28,7 +28,7 @@ distance reads none. It holds wherever knots compose across their shared distinc
 law the program has measured for space, so no published result changes. What decides between the measures is the foundation's
 own contact rule: "two independent A-k and B-k relations make k a common hub, not one touch between A and B; shared variable
 identity alone is insufficient" (`AGENTS.md`). At a gate one value of the shared distinction satisfies both knots and no knot crosses
-it. Bond distance follows that rule; chain distance does not. A38 replaces A12: spacing is read
+it. Bond distance follows that rule; chain distance does not. A39 replaces A12: spacing is read
 through knots that compose, and a chain through a gate is a hub, not space.
 
 ## Reading
@@ -53,7 +53,7 @@ through knots that compose, and a chain through a gate is a hub, not space.
 
 - **Challenged.** A12: Overturned as a universal statement by its frozen test (the NAND thread); it holds on parity and gate-free
   laws.
-- **Added.** A38, the reading that replaces it: spacing is read through knots that compose (bond distance); a chain through a gate
+- **Added.** A39, the reading that replaces it: spacing is read through knots that compose (bond distance); a chain through a gate
   is a common hub, not space. It rests on the foundation's hub rule.
 - **Rechecked.** Everything under A12's Rests on it was measured on parity laws (the gauge and Tseitin lattices, Ledrappier's axis,
   the periodic and pinwheel parity laws, the product of threads) or on the atom thread, which is gate-free: no claim changes.
@@ -82,7 +82,7 @@ Carried from earlier epics:
 | Long-term goal — G1 Space from a law (question 9) | Capability gained | Its measure now rests on a theorem for parity laws and on the hub rule elsewhere |
 
 **Corrections:** none. **Goals:** a G1 checkpoint (capability gained); B4's A12 part taken and closed; no goal change.
-**Assumptions:** A12 overturned as a universal statement by its frozen test; A38 added (Assumed) in its place.
+**Assumptions:** A12 overturned as a universal statement by its frozen test; A39 added (Assumed) in its place.
 
 - **What is left open.** Whether gate chains, which are hub networks, build shapes of their own worth calling space, and how
   many hidden bits per tile the pinwheel needs.

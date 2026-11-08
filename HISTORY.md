@@ -3,6 +3,38 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: general-resolution bounds for Sperner's lemma were known
+
+- SPHERE-WIDTH-20261107-001-D002 said that for Itsykson, Malova, Oparin and
+  Sokolov's Sperner CSP "only tree-like size was known". An outside
+  prior-work check found Stefan Dantchev's "On the complexity of the Sperner
+  lemma" (CiE 2006, Lecture Notes in Computer Science 3988, 115–124). It
+  reduces the pigeonhole principle to Sperner's lemma and shows that the lemma
+  has no short constant-depth Frege proofs. Resolution is such a system, so
+  superpolynomial general-resolution lower bounds for Sperner formulas date
+  from 2006.
+- The record now carries a pending qualification. New, as far as found, are
+  the tight bounds: width Θ(m), and size 2^Θ(m) from COUNT-NOTE-20261107-001,
+  with their direct proofs.
+- Unchanged: every proof and bound of the sphere and grid-Sperner records.
+
+## 8 November 2026: the knot's amplitude with non-planar glue
+
+- The card "The knot's amplitude and signs" and
+  THREEFOLD-AMPLITUDE-20261030-001-D001 gave the knot's factor on every
+  three-fold space as 5 per Fano atom times Tutte's tree-trinity number per
+  planar piece of glue. That holds when the glue is planar. The proof covers
+  doubled squares, planar pieces and three cubes glued along a square, and the
+  record's own computations show that a non-planar piece contributes an
+  amplitude that depends on how it is glued: 13 or 14 for prisms of sizes 2, 3
+  and 3 ([computation](proofs/THREEFOLD-AMPLITUDE-20261030-001B/THREEFOLD-AMPLITUDE-20261030-001B-P001_the_amplitude_by_computation/proof.md)).
+- The card "Counted length" and SELECT-COUNT-20261101-001-D002 repeated the
+  same formula for the glue's part, so both cards now state the general
+  product, and both records carry pending qualifications.
+- Unchanged: 5 per Fano atom on every three-fold space, the product over the
+  pieces ([one amplitude](proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/proof.md),
+  Corollary 5), and every value computed.
+
 ## 8 November 2026: the pinwheel's coordinate-free rule was already known
 
 - Kenyon and Stephenson's "Shape convergence for aggregate tiles in conformal

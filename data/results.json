@@ -384,7 +384,7 @@
    "statement": "Grid Sperner with a fixed boundary needs resolution width Theta(m), and so does Itsykson et al.'s Sperner CSP, for which only tree-like size was known. Walks through the free boundary stay near it, so a full triangle kept deep inside meets only short pebble walks.",
    "status": "active",
    "superseded_by": null,
-   "issue": null,
+   "issue": "Qualification pending: \"for which only tree-like size was known\" is wrong. Dantchev (On the complexity of the Sperner lemma, CiE 2006, LNCS 3988, 115-124) reduces the pigeonhole principle to Sperner's lemma and shows that it has no short constant-depth Frege proofs, which already gives superpolynomial general-resolution lower bounds for Sperner formulas. New, as far as found, are the tight width Theta(m) and, in COUNT-NOTE-20261107-001, the tight size 2^Theta(m).",
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/proof.md",
    "tier": null
   },
@@ -744,7 +744,7 @@
    "statement": "On every three-fold space the knot's exactness factor is (-1)^(n-1) times a product over the pieces of the space: 5 for each Fano atom (each handle of its surface), 1 for each doubled square, and for each planar piece of glue Tutte's tree-trinity number, the spanning trees of a map for omnitruncation glue. Across a tight cut the count of colourings factors exactly, through a point lemma.",
    "status": "active",
    "superseded_by": null,
-   "issue": null,
+   "issue": "Qualification pending: \"on every three-fold space\" holds when the glue is planar. A non-planar glue piece contributes its own amplitude, which is not Tutte's number and depends on how the piece is glued: 6 for three cubes glued along a square, 13 or 14 for prisms of sizes 2, 3 and 3 (see THREEFOLD-AMPLITUDE-20261030-001B, and Corollary 5 of THREEFOLD-AMPLITUDE-20261030-001C).",
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/proof.md",
    "tier": null
   },
@@ -1200,7 +1200,7 @@
    "statement": "Across every nontrivial 2- or 3-edge cut of a knot's space each side has one count on its accepted channel values and the two counts multiply to the amplitude, so counted length (its logarithm) is additive over the decomposition: log 5 per Fano block plus the glue's tree-trinity logarithm, independent of the routes' relations and unchanged by transposition. It is a law-intrinsic measure on substrate routes, not a native extended distance.",
    "status": "active",
    "superseded_by": null,
-   "issue": "Interpretation pending: whether counted length is a native magnitude has not been decided; read it as a count, not a distance.",
+   "issue": "Interpretation pending: whether counted length is a native magnitude has not been decided; read it as a count, not a distance. Qualification pending: the glue's part is its tree-trinity logarithm only when the glue is planar; a non-planar glue piece adds the logarithm of its own amplitude, which depends on how it is glued (see THREEFOLD-AMPLITUDE-20261030-001B).",
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/SELECT-COUNT-20261101-001B/SELECT-COUNT-20261101-001B-P001_counted_length_is_a_measure/proof.md",
    "tier": null
   },

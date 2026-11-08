@@ -422,9 +422,13 @@ Evidence: [built from the Fano plane](proofs/THREEFOLD-SPACES-20261030-001A/THRE
 **Proved** · 2026-10-30
 
 Up to sign, the factor by which the knot reproduces itself on a three-fold
-space is 5 for each Fano atom times Tutte's tree-trinity number for each planar
-piece of glue. When the glue is planar, every face of a least-genus map has
-length 2 mod 4, so the knot's own signs satisfy Kasteleyn's condition there.
+space is a product over the pieces of the space: 5 for each Fano atom, Tutte's
+tree-trinity number for each planar piece of glue, and, for each non-planar
+piece of glue, that piece's own amplitude, which depends on how the piece is
+glued. When the glue is planar, every face of a least-genus map has length
+2 mod 4, so the knot's own signs satisfy Kasteleyn's condition there.
+
+*Qualification pending: [THREEFOLD-AMPLITUDE-20261030-001-D001](proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/proof.md) and this card's first version gave the factor as 5 per Fano atom times Tutte's number per planar piece on every three-fold space. That holds when the glue is planar. A non-planar piece contributes its own amplitude ([one amplitude](proofs/THREEFOLD-AMPLITUDE-20261030-001C/THREEFOLD-AMPLITUDE-20261030-001C-P001_one_amplitude_for_every_non_colourable_cubic_system/proof.md), Corollary 5): 6 for three cubes glued along a square, and 13 or 14 for prisms of sizes 2, 3 and 3, depending on how they are glued.*
 
 Evidence: [amplitude](proofs/THREEFOLD-AMPLITUDE-20261030-001A/THREEFOLD-AMPLITUDE-20261030-001A-P001_five_per_handle_tuttes_number_per_planar_piece/proof.md), [Kasteleyn signs](proofs/THREEFOLD-SPIN-20261030-001A/THREEFOLD-SPIN-20261030-001A-P001_kasteleyn_faces_and_even_spin_structures/proof.md)
 
@@ -520,10 +524,13 @@ Evidence: [proof](proofs/SELECT-COUNT-20261101-001A/SELECT-COUNT-20261101-001A-P
 Across every nontrivial 2- or 3-edge cut of a knot's space, each side has one
 count, and the two counts multiply to the knot's amplitude. So counted length,
 the logarithm of the count, adds up over the decomposition: log 5 per Fano atom
-plus the glue's tree-trinity logarithm. It is a measure on the routes of a
-substrate, not a native extended distance.
+plus the logarithm of each glue piece's amplitude, which for a planar piece is
+Tutte's tree-trinity number. It is a measure on the routes of a substrate, not
+a native extended distance.
 
 *Interpretation pending: whether counted length is a native magnitude has not been decided; read it as a count, not a distance.*
+
+*Qualification pending: the record gives the glue's part as its tree-trinity logarithm. That holds when the glue is planar; a non-planar glue piece adds the logarithm of its own amplitude, which depends on how it is glued (see THREEFOLD-AMPLITUDE-20261030-001B).*
 
 Evidence: [proof](proofs/SELECT-COUNT-20261101-001B/SELECT-COUNT-20261101-001B-P001_counted_length_is_a_measure/proof.md)
 

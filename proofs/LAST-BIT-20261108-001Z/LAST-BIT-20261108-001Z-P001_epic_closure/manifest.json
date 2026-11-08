@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LAST-BIT-20261108-001Z-P001",
+  "canonical_id": "LAST-BIT-20261108-001Z-P001",
+  "kind": "proof",
+  "ticket": "LAST-BIT-20261108-001Z",
+  "proof": "LAST-BIT-20261108-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the last one-bit decoration",
+  "status": "Proved",
+  "claim": "Administrative closure ledger of LAST-BIT-20261108-001 with no new claim: ticket A (exploratory) finds no domino-torus crystal legal only after three cuts, exhausting that family for s = 10101 / 00110; ticket B (proved) finds parent labels forced but 153 non-pinwheel parent collars surviving extension to distance 2, so the decoration stays open.",
+  "dependencies": [
+    "LAST-BIT-20261108-001A",
+    "LAST-BIT-20261108-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound file no longer matches its digest.",
+    "A proof is not Proved or its check did not pass.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "LAST-BIT-20261108-001",
+    "epic_path": [
+      "LAST-BIT-20261108-001"
+    ],
+    "parents": [
+      "experiments/LAST-BIT-20261108-001A/LAST-BIT-20261108-001A-E001_three_cut_crystals/contract.json",
+      "artifacts/LAST-BIT-20261108-001A/LAST-BIT-20261108-001A-E001_three_cut_crystals/run/result.json",
+      "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/manifest.json",
+      "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/LAST-BIT-20261108-001A/LAST-BIT-20261108-001A-E001_three_cut_crystals/contract.json": "43c3f1df8fcb60b76f018b664f8178592c2948c322de6d35a24af3401cdca071",
+    "artifacts/LAST-BIT-20261108-001A/LAST-BIT-20261108-001A-E001_three_cut_crystals/run/result.json": "7c1c391570dfd040523528ee5498eced1745473a7b722027cc0d98257086a9f0",
+    "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/manifest.json": "2f750be4766288d3455a8aba224bd09bb5f6965d6f8d4d710a03e4a851cf1bde",
+    "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/result.json": "5beb4b21436ad454b01047356c9df4acbaece4d4a4663101632ab65694d529e8"
+  },
+  "paths": {
+    "manifest": "proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md",
+    "check": "proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/check.py",
+    "result": "proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/result.json",
+    "directory": "proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's two tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

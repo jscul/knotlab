@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "ONE-BIT-20261108-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "program": "topology"
+  },
+  "id": "LAST-BIT-20261108-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "The selected next step of ONE-BIT-20261108-001 (G1; A25, A35), started on 2026-11-08 at the coordinator's go-ahead: does the last one-bit decorated substitution of the pinwheel, s(0) = 10101, s(1) = 00110 (with its relabelling), force the pinwheel? It forces every parent's label and excludes every crystal tried, the rhombus lattice, two brick families and the domino-torus planes legal after one or two cuts. First deeper crystals: planes legal only after three cuts, tested with the decoration's labelled law; then a forcing test that follows the geometry alone: whether every plane obeying the labelled law has a collar-legal parent tiling at every level, killing off-pinwheel parent collars by exhaustive extension. Standalone value against known work: decorated matching rules force the pinwheel with large alphabets (Radin 1994; Goodman-Strauss 1998); a one-bit decoration that forces it, or a proof that none does, was not found.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LAST-BIT-20261108-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-08: the last one-bit decoration of the pinwheel, s = 10101 / 00110, is still open. No domino-torus crystal is legal only after three cuts (no collar type needs exactly three), so that family is exhausted for it; its parent labels are forced, but 153 non-pinwheel labelled parent collars survive the joint test and exhaustive extension to tile distance 2 (15 of 16 sampled survive distance 3), so the first step of a forcing proof fails at the depth tested. Recommendation: Research directions, selected: a crystal built from the surviving parent collars (Payoff 2/3, Concreteness 2/3), awaiting the coordinator's go-ahead.",
+  "status_class": "complete",
+  "stop_rule": "Stop when the decoration admits a crystal, or is proved to force the pinwheel, or both the declared crystal search and the declared forcing test leave it undecided.",
+  "title": "The last one-bit decoration of the pinwheel"
+}

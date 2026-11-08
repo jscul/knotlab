@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LAST-BIT-20261108-001B-P001",
+  "canonical_id": "LAST-BIT-20261108-001B-P001",
+  "kind": "proof",
+  "ticket": "LAST-BIT-20261108-001B",
+  "proof": "LAST-BIT-20261108-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A forcing test on geometry alone for the last one-bit decoration",
+  "status": "Proved",
+  "claim": "For the one-bit decoration s = 10101 / 00110 of the pinwheel, parent labels are forced at level 0, but the first step of a proof that it forces the pinwheel fails at the depth tested: of the labelled parent collars surviving the joint consistency test (310 in the law, 50 keys with other labels, 191 non-key), exhaustive extension to tile distance 2 removes 34 non-key collars and then none, leaving 153 non-pinwheel parent collars; on a sample of 16 of them, 15 extend to distance 3.",
+  "dependencies": [
+    "ONE-BIT-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A labelled key of L(s) fails the joint test.",
+    "The constant decoration's rhombus collar, which occurs in a plane, dies in the extension test."
+  ],
+  "lineage": {
+    "home_scope": "LAST-BIT-20261108-001",
+    "epic_path": [
+      "LAST-BIT-20261108-001"
+    ],
+    "parents": [
+      "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/manifest.json",
+      "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/check.py",
+      "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/growth_engine.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/manifest.json": "04d4e8be1f94323174d2fbdf7239a77a8e30d96a6d92267e9af6ee14e9df4f31",
+    "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/check.py": "1f8dc687bbeba6517c8a27d2eb4449b37f6687bf5009d3760038f1180fedd6d0",
+    "experiments/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/growth_engine.py": "05ae95f9b878d1cccb3ad9ba0519c5a5ebb08dbf3879cb57ea4bb3ba887a3457"
+  },
+  "paths": {
+    "manifest": "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/manifest.json",
+    "identity": "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/identity.json",
+    "proof": "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/proof.md",
+    "check": "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/check.py",
+    "result": "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/result.json",
+    "directory": "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "One decoration, s = 10101 / 00110; labelled collars of the core of the level-one law; the joint test and exhaustive extension to tile distance 2 (3 on a sample, with a step budget). Exact computation; a collar that exhausts the budget is kept.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "the soundness lemma by hand; the tests computed exactly (no budget reached) with controls; no human or external review",
+    "novelty": "known-with-delta for the methods (forced composition; exhaustive extension); no-overlap-found for their use on this decoration"
+  }
+}

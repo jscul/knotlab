@@ -1,0 +1,44 @@
+{
+ "checks": {
+  "parents are forced at level 0": true
+ },
+ "controls": {
+  "every labelled key of L(s) survives the joint test": true,
+  "the constant decoration keeps the rhombus collar through extension at distance 2": true
+ },
+ "census": {
+  "setup seconds": 144.3,
+  "parents free at level 0": 0,
+  "S1 after the joint test: in L(s), keys outside L(s), non-keys": [
+   310,
+   50,
+   191
+  ],
+  "extension rounds at distance 2": [
+   {
+    "non-key tested": 191,
+    "died": 34,
+    "budget reached": 0
+   },
+   {
+    "non-key tested": 153,
+    "died": 0,
+    "budget reached": 0
+   }
+  ],
+  "after extension at distance 2: in L(s), keys outside L(s), non-keys": [
+   310,
+   50,
+   153
+  ],
+  "distance 3 on a sample of the final non-keys: extends, dies, budget": [
+   15,
+   1,
+   0
+  ],
+  "the first step of the forcing proof holds (no non-key survivor)": false
+ },
+ "status": "passed",
+ "failures": [],
+ "runtime_seconds": 1491.1
+}

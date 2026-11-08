@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LAST-BIT-20261108-001A-E001",
+  "ticket": "LAST-BIT-20261108-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does a domino-torus crystal that becomes collar-legal only after three cuts admit the last one-bit decoration of the pinwheel, s(0) = 10101, s(1) = 00110: a periodic labelling of one of its cuts obeying the decoration's labelled collar law?",
+  "public_inputs": {
+    "planes": "The 96,416 domino tilings of the 2 x 2 to 4 x 4 tori with every diagonal choice (PINWHEEL-ATLAS-20261107-001B's family F3), with collars computed exactly as in ONE-BIT-20261108-001B's run.py (imported unchanged).",
+    "classes": "A collar type is of class 1 if it lies in the level-one law of COLLAR-PLANE-20261108-001B (level_one_law.json), class 2 if all five children's collars (one geometric cut) are of class 1, class 3 if all five children's collars are of class 1 or 2, and 0 otherwise. A plane is legal after j cuts when all its collar types have class between 1 and j; it is kept when j = 3 and its multiset of collar types is new.",
+    "decoration": "s(0) = 10101, s(1) = 00110, its law by ROUND-PRICE-20261108-001A's decor_lib; its relabelling has the same verdicts (ROUND-PRICE-20261108-001A's control).",
+    "test": "For each kept plane, the k-fold cut for k = 3, 4, 5 is admitted when a periodic labelling on a torus of index 1 or 2 over the plane's lattice obeys the law (decor_lib.periodic); the search stops at the first admitted k."
+  },
+  "forbidden_inputs": [
+    "Changing the family, the classes, the decoration, the levels or the tori after seeing results",
+    "Dropping planes that pass"
+  ],
+  "primary_observable": "Whether some kept plane admits the decoration, with its first admitted level.",
+  "secondary_observables": "The numbers of collar types of each class and of planes legal after three cuts, by torus.",
+  "cheapest_meaningful_control": "Positive: the classes agree with ONE-BIT-20261108-001B's filter on classes 1 and 2 (the same 32 and 176 planes legal within one and two cuts); the decoration 10001 / 01100 is admitted by ONE-BIT-20261108-001B's mixed 4 x 4 plane after three cuts (it was admitted there after two), so the labelled test can say yes. Negative: the plain rectangle lattice gets class 0. A run whose controls fail is not read.",
+  "resource_budget": {
+    "wall_minutes": 180,
+    "memory_mib": 24576,
+    "workers": 16
+  },
+  "first_executable_signal": "The class counts and the controls.",
+  "decision_or_followup_rule": "If a kept plane admits the decoration, it fails: one bit per tile, as a decorated substitution, fails in every case. If none does, the decoration stays open with this family and these levels as its tested range.",
+  "stop_rule": "Stop at the declared family, classes, decoration, levels and tori.",
+  "nonclaims": [
+    "Exploratory and non-promotable: one family of periodic planes and three levels.",
+    "No kept plane admitting the decoration does not show that it forces the pinwheel."
+  ],
+  "feasibility_disclosure": "Before freezing: no run of this search. ONE-BIT-20261108-001B's filter (the same planes, classes 1 and 2) took about ten minutes on 16 workers and kept 11 distinct planes, none of which admits this decoration within two levels past its first legal cut."
+}

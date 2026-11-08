@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**238 current results** and 5 superseded ones, from 171 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**238 current results** and 5 superseded ones, from 172 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 171 epics with their closures
+- [Epics](#epics): all 172 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1009,6 +1009,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A middle ring that carries without cancelling: persistent composition on affine chains (`AFFINE-WIRE-20261108-001`) | [closure](proofs/AFFINE-WIRE-20261108-001Z/AFFINE-WIRE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/AFFINE-WIRE-20261108-001/) |
 | 2026-11-08 | A periodic plane obeys the pinwheel's undecorated local laws (`COLLAR-PLANE-20261108-001`) | [closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/COLLAR-PLANE-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
+| 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |
 | 2026-11-08 | Native paths across time: none in three restricted families (`NATIVE-PATH-20261108-001`) | [closure](proofs/NATIVE-PATH-20261108-001Z/NATIVE-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-PATH-20261108-001/) |
 | 2026-11-08 | Does one hidden bit per tile force the pinwheel? (`ONE-BIT-20261108-001`) | [closure](proofs/ONE-BIT-20261108-001Z/ONE-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/ONE-BIT-20261108-001/) |
 | 2026-11-08 | Two contacts across time: persistent contacts do not compose (`PROCESS-CHAIN-20261108-001`) | [closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CHAIN-20261108-001/) |

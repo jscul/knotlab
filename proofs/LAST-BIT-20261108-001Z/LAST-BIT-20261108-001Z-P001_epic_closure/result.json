@@ -1,0 +1,34 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LAST-BIT-20261108-001Z-P001",
+ "kind": "proof",
+ "ticket": "LAST-BIT-20261108-001Z",
+ "proof": "LAST-BIT-20261108-001Z-P001",
+ "status": "Proved",
+ "claim": "Administrative closure ledger of LAST-BIT-20261108-001 with no new claim: ticket A (exploratory) finds no domino-torus crystal legal only after three cuts, exhausting that family for s = 10101 / 00110; ticket B (proved) finds parent labels forced but 153 non-pinwheel parent collars surviving extension to distance 2, so the decoration stays open.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/LAST-BIT-20261108-001A/LAST-BIT-20261108-001A-E001_three_cut_crystals/contract.json": "Frozen",
+   "artifacts/LAST-BIT-20261108-001A/LAST-BIT-20261108-001A-E001_three_cut_crystals/run/result.json": "run output",
+   "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/manifest.json": "Proved",
+   "proofs/LAST-BIT-20261108-001B/LAST-BIT-20261108-001B-P001_geometry_alone/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "experiment_frozen_exploratory": true,
+  "experiment_a_findings": true,
+  "proof_b_findings": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

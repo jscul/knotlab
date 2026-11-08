@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "ONE-BIT-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LAST-BIT-20261108-001B-P001"
+  },
+  "id": "LAST-BIT-20261108-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Proof with exact finite computation. For s = 10101 / 00110: parent labels are forced at level 0; the labelled parent collars S1 surviving the joint test are split into pinwheel keys and non-key collars; each non-key survivor is tested by exhaustive extension at level one (a patch in which every tile within tile distance 2 of it has a surviving labelled collar), dead collars are removed and the joint test is rerun, to a fixed point. If no non-key collar survives, every plane obeying the decoration's law has a collar-legal parent tiling, the first step of a proof that it forces the pinwheel; if some survive, the route is open at this depth. Controls: the constant decoration keeps the rhombus collar, which occurs in a plane, at every depth tested.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LAST-BIT-20261108-001"
+  },
+  "parent": "LAST-BIT-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08 (LAST-BIT-20261108-001B-P001): for s = 10101 / 00110 parent labels are forced, but 153 non-pinwheel labelled parent collars survive the joint test and exhaustive extension to tile distance 2 (34 removed), and 15 of 16 sampled survive distance 3, so the first step of a forcing proof fails at the depth tested and the decoration stays open.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "A forcing test on geometry alone for the last decoration"
+}

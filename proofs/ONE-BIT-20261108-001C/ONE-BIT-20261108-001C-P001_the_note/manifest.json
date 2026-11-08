@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ONE-BIT-20261108-001C-P001",
+  "canonical_id": "ONE-BIT-20261108-001C-P001",
+  "kind": "proof",
+  "ticket": "ONE-BIT-20261108-001C",
+  "proof": "ONE-BIT-20261108-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A note: the pinwheel tilings have no undecorated local rules",
+  "status": "Proved",
+  "claim": "A self-contained note (LaTeX, 5 pages) for outside readers, with an independent replay: for every radius r a periodic tiling by the pinwheel triangle has all its patches of tile radius r in pinwheel tilings (the rhombus lattice cut once has every collar a pinwheel collar; each further cut defeats a larger radius), so the pinwheel tilings have no undecorated local rules; the collar rule forces one level of composition and no more; labels read from a bounded window never help, and of the 1,024 decorated substitutions on one bit per tile 1,022 admit a periodic plane, one (with its relabelling) being open.",
+  "dependencies": [
+    "COLLAR-PLANE-20261108-001A",
+    "COLLAR-PLANE-20261108-001B",
+    "ROUND-PRICE-20261108-001A"
+  ],
+  "evidence_modes": [
+    "external-presentation",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "inherited-consequence"
+    ]
+  },
+  "failure_conditions": [
+    "A line of the independent replay fails.",
+    "The note here differs from the published copy.",
+    "The note cites a record folder that does not exist."
+  ],
+  "lineage": {
+    "home_scope": "ONE-BIT-20261108-001",
+    "epic_path": [
+      "ONE-BIT-20261108-001"
+    ],
+    "parents": [
+      "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json",
+      "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json",
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COLLAR-PLANE-20261108-001A/COLLAR-PLANE-20261108-001A-P001_a_periodic_plane_obeys_every_radius/manifest.json": "a591515f84efa12e482f711997843fa1404640d96983476b239553cb2893768b",
+    "proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/manifest.json": "041cb4f76ad885b512368f3fc5477222d40cba8d5e538ae50466054f214e7a25",
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/manifest.json": "5491d80378a458fbf114f4ba0919a58c01df4ff031149c9cb81eba405cb7ab6b"
+  },
+  "paths": {
+    "manifest": "proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note/manifest.json",
+    "identity": "proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note/identity.json",
+    "proof": "proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note/proof.md",
+    "check": "proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note/check.py",
+    "result": "proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note/result.json",
+    "directory": "proofs/ONE-BIT-20261108-001C/ONE-BIT-20261108-001C-P001_the_note"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A restatement of proved results for outside readers, with a replay that recomputes the collars and the witness independently; no new claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's request on 2026-11-08; replay.py written separately from the original checks, with a different completeness test.",
+    "status": "a restatement checked by an independent replay; no human or external review",
+    "novelty": "result conversion; the novelty labels are the cited records'"
+  }
+}

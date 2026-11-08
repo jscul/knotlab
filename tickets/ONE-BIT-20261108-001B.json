@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COLLAR-PLANE-20261108-001C",
+    "ONE-BIT-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "ONE-BIT-20261108-001B-E001",
+    "contract_path": "experiments/ONE-BIT-20261108-001B/ONE-BIT-20261108-001B-E001_escaping_crystals/contract.json",
+    "evidence_stage": "exploratory",
+    "promotable": false
+  },
+  "id": "ONE-BIT-20261108-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Exploratory experiment: every domino tiling of the 2 x 2 to 4 x 4 tori with every diagonal choice (the 96,416 periodic planes of PINWHEEL-ATLAS-20261107-001B's family F3), filtered exactly by whether its collars lie in the level-one law (collar-legal after one cut) or cut into it (after two cuts); then, for each distinct passing plane and each of the eight one-bit decorations left open, whether its k-fold cut admits a periodic labelling obeying the decoration's law, for k from the first legal cut to two more. A decoration with an admitted crystal fails.",
+  "ownership": {
+    "root": false,
+    "scope_id": "ONE-BIT-20261108-001"
+  },
+  "parent": "ONE-BIT-20261108-001",
+  "schema_version": 1,
+  "status": "Closed, supported (exploratory, ONE-BIT-20261108-001B-E001): of the 96,416 domino-torus planes, 32 are collar-legal after one cut and 176 after two (11 distinct); a mixed domino tiling of the 4 x 4 torus legal after two cuts, and a variant, admit seven of the eight open one-bit decorations with periodic labellings after two to four cuts; s = 10101 / 00110 (with its relabelling) is admitted by none, so one bit per tile as a decorated substitution fails in 1,022 of 1,024 cases and one decoration up to relabelling stays open.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "A search for crystals that escape the sixteen"
+}

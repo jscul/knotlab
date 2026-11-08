@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ONE-BIT-20261108-001A-P001",
+  "canonical_id": "ONE-BIT-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "ONE-BIT-20261108-001A",
+  "proof": "ONE-BIT-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Joint consistency on the sixteen one-bit candidates",
+  "status": "Proved",
+  "claim": "A labelled parent collar of a tiling obeying a decoration's law passes the joint (radius-2) consistency test, so a decoration whose off-law parent collars all fail it forces the pinwheel. For each of the eight one-bit decorations (up to relabelling) left open by ROUND-PRICE-20261108-001B, the test leaves off-law survivors: 35 to 110 labelled pinwheel keys with labellings outside the law and 13 to 191 non-key collars. No decoration is settled by this route.",
+  "dependencies": [
+    "ROUND-PRICE-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A labelled key of a decoration's law fails the joint test.",
+    "A crystal-admitting decoration keeps no survivor outside its law."
+  ],
+  "lineage": {
+    "home_scope": "ONE-BIT-20261108-001",
+    "epic_path": [
+      "ONE-BIT-20261108-001"
+    ],
+    "parents": [
+      "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/manifest.json",
+      "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json",
+      "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/check.py",
+      "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/decor_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/manifest.json": "2efd700fda92792335acaec05342f68eb82df83b3aa8e6fc5a90d7718cc61cf9",
+    "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/result.json": "567e3436585e4bb51a5a69ee66f2e7ead892188a348aa03afe55880328f9cc37",
+    "proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/check.py": "a640478f8727010037cdfc61478f75e6a26da26ccb51397ec31acde4b7fb6d0c",
+    "proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/decor_lib.py": "d4eaad4c5611731ef204cff6aad546ca93b0796c26cb47b293557d879b0e8d46"
+  },
+  "paths": {
+    "manifest": "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/manifest.json",
+    "identity": "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/identity.json",
+    "proof": "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/proof.md",
+    "check": "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/check.py",
+    "result": "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen/result.json",
+    "directory": "proofs/ONE-BIT-20261108-001A/ONE-BIT-20261108-001A-P001_joint_consistency_on_the_sixteen"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The eight one-bit decorated substitutions (up to relabelling) left open by ROUND-PRICE-20261108-001B and two crystal-admitting controls; labelled collars of the arc-consistent core of the level-one law; joint consistency of a collar's neighbours (radius two). Exact computation with a search budget per collar, a collar that exhausts it being kept.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-08.",
+    "status": "the soundness lemma by hand; the test computed exactly (no collar reached the search budget) with controls; no human or external review",
+    "novelty": "known-with-delta for the method (local consistency in constraint satisfaction); no-overlap-found for its use on the decorated pinwheel"
+  }
+}

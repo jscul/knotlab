@@ -1,0 +1,142 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CUT-HIDE-20261108-001A-P001",
+  "canonical_id": "CUT-HIDE-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "CUT-HIDE-20261108-001A",
+  "proof": "CUT-HIDE-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A hanging side K4^(3) without a line hides the contradiction",
+  "status": "Proved",
+  "claim": "Let H be a connected cubic glue with a switching class without solutions, and a, a' two lines forming a two-vertex cut of its incidence graph, such that that class's restriction to H - a has solutions and the side S meeting a in one point is K4^(3) without a line. Then the class of H - a obtained from the restriction by changing the sign of a' at one of its two points in S has the same row of creation between glue lines, while the restriction ties a's three points and the changed class does not; so one row at a cannot read the tie. Proved from PENDANT-LINE A's locality of creation, a lemma on the side over all 512 signings (one switching class ties its three outer points, every other leaves the two cut points free and the third outer point not a function of them) and six local lemmas on creation's witnesses over all 27 one-point and 3,375 two-point relations; the prediction holds at all 16 failing lines of CONTRA-PROOF's random glues, including the 2 whose hanging side has six points.",
+  "dependencies": [
+    "CONTRA-PROOF-20261108-001A",
+    "CONTRA-READ-20261108-001A",
+    "PENDANT-LINE-20261106-001A",
+    "CHAIN-TRANSFER-20261106-001A",
+    "SWITCH-PROOF-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "A signing of the side outside the rigid class with x0 a function of y and z, or a rigid one without the stated ties; a local relation breaking one of L1 to L6; or a failing line of CONTRA-PROOF's glues where the flipped class has another row or ties the removed line's points."
+  ],
+  "lineage": {
+    "home_scope": "CUT-HIDE-20261108-001",
+    "epic_path": [
+      "CUT-HIDE-20261108-001"
+    ],
+    "parents": [
+      "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/manifest.json",
+      "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/result.json",
+      "proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/manifest.json",
+      "proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/result.json",
+      "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/manifest.json",
+      "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/result.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json",
+      "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json",
+      "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json",
+      "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/glues.json",
+      "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/contra_lib.py",
+      "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/proof_lib.py",
+      "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/sw_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/manifest.json": "53789034cc52e0ec14f9f8fa128c1bafeeef2018791c542cb3cc8aa51d5ac788",
+    "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/result.json": "51a843ae362cbe7bbbee011aea62c0bcf73695fb222724a00419ed179cb30c71",
+    "proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/manifest.json": "479ca30899a2cb19e0a8ea4c2999088c8235cc9cb5dfbd40a41bb5ee48899fda",
+    "proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/result.json": "0c3093e4fb4b0070bc868ea3b3ead7cae1e55e5c017da797bcdb32970302d438",
+    "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/manifest.json": "53e457b25fa8425e84c560bc66626ea68ae84252813ccfe4634be84cc6f4dc68",
+    "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/result.json": "326543a488579b0e2c5458daff5bf0e77f2302eda50ef3b582ae0a2a0b7b17f1",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "506601817a95f7b77743b7a2bf78286095257ed8df1ee7954c50824ae08e8464",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "3be6062ee3f3466dd3cb8ac31c5912ca71c3b384ea5363894c3755ed696650cd",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "383c3eeb341795e8a70c34e6c56ca581132a7a40982ceca0d7e21ccf06d6f537",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "a55def06f935b3665f4670a66e0081d6cf8c98e7c25d9909bbf9fdf1609d32b1",
+    "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json": "c063b8883cd2706796586e686def32739d96fa6677e0c55b4bb3f3c4dd421bbf",
+    "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json": "0f894c10e27cd0c7cc415cb811285fbb9a0233e7feea6c6a2fcd7bb46b1504ac",
+    "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/glues.json": "72aee392ba36825779a23edcd3d066b089bc7eab9fb999035ac214556aa11477",
+    "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/contra_lib.py": "374008e2709f9f8be82cc3cbdf8207fcb9393834c19462c6b55106e5dd9f139d",
+    "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/proof_lib.py": "0338f146e759d216474dbe790cec78da9e50c2863bc3f2176f8defe9a0e11fd7",
+    "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/sw_lib.py": "b32bc2b48198d25d30c2eb33a7cda50e38ba9f6761ce415269b146cd354839aa",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py": "48f7a7031af09356645f8683f1aa2bcf68acadb66e419420f8b7ce34ed29af74",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py": "52c98b08a276d0b751e574a4711b54ef6b1882230ad71441794996889f3fe66f",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py": "799502c7c3524ec5375bc07ef0a3a1d2eb1cda3c19fde264a8f2cea801cf69a5",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py": "4f2ed0842d316c96985bc9fea2ffb68c2e7465f02e8cfabf39b63d2725abb730",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction/manifest.json",
+    "identity": "proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction/identity.json",
+    "directory": "proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction",
+    "proof": "proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction/proof.md",
+    "result": "proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction/result.json",
+    "check": "proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Connected cubic glues with a switching class without solutions, at a two-line cut whose side meeting the removed line once is K4^(3) without a line; creation between glue lines read through the order-free vector of the four census far sides.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead under the repository owner's standing mandate for autonomous research, 2026-11-08.",
+    "status": "proved from PENDANT-LINE A's locality of creation, a finite lemma on the side (512 signings) and six local lemmas (27 one-point and 3,375 two-point relations); the prediction confirmed at 16 failing lines; no human or external review",
+    "novelty": "New here."
+  }
+}

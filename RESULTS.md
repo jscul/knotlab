@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**254 current results** and 5 superseded ones, from 194 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**255 current results** and 5 superseded ones, from 195 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 77 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 78 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 194 epics with their closures
+- [Epics](#epics): all 195 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -606,6 +606,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-08 · Creation between glue lines singles out the contradictory class** (`CONTRA-READ-20261108-001-D001`).
   On every trisum glue of 8 to 12 lines, exactly one switching class has no solution, and creation between glue lines tells it apart from every other class, by a single row on the 8- and 10-line glues. Removing a line leaves its three points tied only in that class, and degenerate gluings read the tie.
   [proof P001](proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/proof.md), [proof P001](proofs/CONTRA-READ-20261108-001B/CONTRA-READ-20261108-001B-P001_the_contradictory_block_on_the_12_line_glues/proof.md), [epic closure](proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · A rigid hanging side hides the contradiction from creation** (`CUT-HIDE-20261108-001-D001`).
+  At a two-line cut whose side meeting the removed line once is K4^(3) without a line, the contradictory class's restriction and the class with one sign of the other cut line changed have the same row of creation, while only the first ties the removed line's points. The side has one rigid switching class, which the contradiction must use.
+  [proof P001](proofs/CUT-HIDE-20261108-001A/CUT-HIDE-20261108-001A-P001_a_hanging_side_hides_the_contradiction/proof.md), [epic closure](proofs/CUT-HIDE-20261108-001Z/CUT-HIDE-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Creation between glue lines does not tell switching classes apart, and sees nothing where nothing creates** (`SWITCH-COMPLETE-20261108-001-D001`).
   On the 8-line trisum glue, creation between glue lines separates the switching classes up to symmetry but one pair, while on the 10-line glue it takes 429 values on 576 orbits and is identical for the 190 classes where nothing creates, whose counts run from 60 to 110. At both sizes the one class whose plain spaces are three-fold has a block of its own.
   [proof P001](proofs/SWITCH-COMPLETE-20261108-001A/SWITCH-COMPLETE-20261108-001A-P001_the_glue_block_on_the_smallest_glue/proof.md), [proof P001](proofs/SWITCH-COMPLETE-20261108-001B/SWITCH-COMPLETE-20261108-001B-P001_the_glue_block_one_size_past/proof.md), [epic closure](proofs/SWITCH-COMPLETE-20261108-001Z/SWITCH-COMPLETE-20261108-001Z-P001_epic_closure/proof.md)
@@ -1061,6 +1064,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Why one row of creation reads the removed line's tie (`CONTRA-PROOF-20261108-001`) | [closure](proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CONTRA-PROOF-20261108-001/) |
 | 2026-11-08 | Does creation between glue lines always single out the contradictory class? (`CONTRA-READ-20261108-001`) | [closure](proofs/CONTRA-READ-20261108-001Z/CONTRA-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CONTRA-READ-20261108-001/) |
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
+| 2026-11-08 | Why two-vertex cuts hide the contradiction (`CUT-HIDE-20261108-001`) | [closure](proofs/CUT-HIDE-20261108-001Z/CUT-HIDE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CUT-HIDE-20261108-001/) |
 | 2026-11-08 | Distance across time (`DISTANCE-20261108-001`) | [closure](proofs/DISTANCE-20261108-001Z/DISTANCE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/DISTANCE-20261108-001/) |
 | 2026-11-08 | Full reach on the cut-open torus (`FULL-REACH-20261108-001`) | [closure](proofs/FULL-REACH-20261108-001Z/FULL-REACH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/FULL-REACH-20261108-001/) |
 | 2026-11-08 | Higher genus by bands (`GENUS-BAND-20261108-001`) | [closure](proofs/GENUS-BAND-20261108-001Z/GENUS-BAND-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/GENUS-BAND-20261108-001/) |

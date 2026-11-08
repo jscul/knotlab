@@ -1,0 +1,368 @@
+{
+ "artifact_id": "CUT-HIDE-20261108-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "passed",
+     "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/manifest.json": "Proved",
+     "proofs/CONTRA-PROOF-20261108-001A/CONTRA-PROOF-20261108-001A-P001_where_one_row_reads_the_tie/result.json": "passed",
+     "proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/CONTRA-PROOF-20261108-001Z/CONTRA-PROOF-20261108-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/manifest.json": "Proved",
+     "proofs/CONTRA-READ-20261108-001A/CONTRA-READ-20261108-001A-P001_every_row_singles_out_the_contradictory_class/result.json": "passed",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "passed",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the side alone: of the 512 signings of K4^(3) without a line (8 switching classes of 64), the 64 of one class make its own lines tie x0, y and z, with y and z showing two patterns and the centre free given the rest; in every other signing y and z show all four pairs and x0 is not a function of them": {
+   "info": {
+    "other signings": 448,
+    "rigid signings": 64
+   },
+   "pass": true
+  },
+  "2 the local lemmas: over all 27 one-point and 3,375 two-point relations on a gluing line, a free point creates nothing, a point free of the rest adds nothing to a pair, a pair independent of the gluing line creates nothing, a tied pair adds nothing, a point tied to the gluing line is degenerate, and complementing a point changes nothing": {
+   "info": {
+    "L1 a free single point creates nothing": true,
+    "L2 a pair with one point free and independent creates no more than the other point alone": true,
+    "L3 a pair independent of the gluing line creates nothing": true,
+    "L4 a pair of tied points creates no more than one of them alone": true,
+    "L5 a point tied to a point of the gluing line is degenerate, alone or in a pair": true,
+    "L6 complementing a near point changes nothing": true,
+    "pairs": 3375,
+    "singles": 27
+   },
+   "pass": true
+  },
+  "3 the theorem's prediction on CONTRA-PROOF's 16 failing lines: in the contradictory class's restriction the hanging side ties x0, y and z and a' ties its third point to them; flipping a''s sign at y decouples the side, keeps every entry of the row and breaks the tie of the removed line's points. 14 of the 16 hanging sides are K4^(3) without a line (the theorem's case); the other 2, with six points, behave the same": {
+   "info": {
+    "failing lines": 16,
+    "hanging sides K4^(3) without a line": 14,
+    "lines": [
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 7,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 0,
+      "hanging side": [
+       1,
+       5,
+       6,
+       7
+      ],
+      "line": 1,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 1,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 0,
+      "hanging side": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "line": 7,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 4,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 3,
+      "hanging side": [
+       0,
+       1,
+       3,
+       4
+      ],
+      "line": 3,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 3,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 3,
+      "hanging side": [
+       2,
+       5,
+       6,
+       7
+      ],
+      "line": 4,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 6,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 4,
+      "hanging side": [
+       3,
+       5,
+       6,
+       7
+      ],
+      "line": 1,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 1,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 4,
+      "hanging side": [
+       0,
+       1,
+       2,
+       4
+      ],
+      "line": 6,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 4,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 5,
+      "hanging side": [
+       0,
+       3,
+       4,
+       5
+      ],
+      "line": 2,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 2,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 5,
+      "hanging side": [
+       1,
+       2,
+       6,
+       7
+      ],
+      "line": 4,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 3,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 7,
+      "hanging side": [
+       2,
+       3,
+       6,
+       7
+      ],
+      "line": 2,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 2,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 7,
+      "hanging side": [
+       0,
+       1,
+       4,
+       5
+      ],
+      "line": 3,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 7,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 8,
+      "hanging side": [
+       0,
+       4,
+       6,
+       7
+      ],
+      "line": 5,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 5,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 8,
+      "hanging side": [
+       1,
+       2,
+       3,
+       5
+      ],
+      "line": 7,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 3,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 16,
+      "hanging side": [
+       1,
+       3,
+       5,
+       7
+      ],
+      "line": 1,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": false,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 1,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 16,
+      "hanging side": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       9
+      ],
+      "line": 3,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": false,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 9,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 17,
+      "hanging side": [
+       1,
+       3,
+       5,
+       6,
+       8,
+       9
+      ],
+      "line": 0,
+      "one class without solutions": true,
+      "side rigid": true
+     },
+     {
+      "K4^(3) without a line": true,
+      "contradictory restriction ties a": true,
+      "coupled across a'": true,
+      "cut partner": 0,
+      "flip: decoupled": true,
+      "flip: same row": true,
+      "flip: ties a": false,
+      "glue": 17,
+      "hanging side": [
+       0,
+       2,
+       4,
+       7
+      ],
+      "line": 9,
+      "one class without solutions": true,
+      "side rigid": true
+     }
+    ]
+   },
+   "pass": true
+  }
+ },
+ "claim": "Let H be a connected cubic glue with a switching class without solutions, and a, a' two lines forming a two-vertex cut of its incidence graph, such that that class's restriction to H - a has solutions and the side S meeting a in one point is K4^(3) without a line. Then the class of H - a obtained from the restriction by changing the sign of a' at one of its two points in S has the same row of creation between glue lines, while the restriction ties a's three points and the changed class does not; so one row at a cannot read the tie. Proved from PENDANT-LINE A's locality of creation, a lemma on the side over all 512 signings (one switching class ties its three outer points, every other leaves the two cut points free and the third outer point not a function of them) and six local lemmas on creation's witnesses over all 27 one-point and 3,375 two-point relations; the prediction holds at all 16 failing lines of CONTRA-PROOF's random glues, including the 2 whose hanging side has six points.",
+ "kind": "proof",
+ "proof": "CUT-HIDE-20261108-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "CUT-HIDE-20261108-001A"
+}

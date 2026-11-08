@@ -49,7 +49,7 @@ run of the first family (rule 150, one size past) is pending.
 | Claim | One size past | Result |
 | --- | --- | --- |
 | The light cone (A), four-ring paths | 300 five-ring paths with arbitrary elementary rules, full state spaces (`stress_quick.json`) | pass: no dependence before the light cone |
-| No native path with rule 150 everywhere (B) | end rings to 6 cells, middle rings to 8: NATIVE-PATH-S1 in `docs/LONG_RUNNING.md` (`stress_wide.json`) | stress test pending |
+| No native path with rule 150 everywhere (B) | end rings to 6 cells, middle rings to 8: NATIVE-PATH-S1 in `docs/LONG_RUNNING.md`, 3,519,000 new paths (`stress_wide.json`) | fails: 48 native paths, at end rings of 6 cells or a middle ring of 8 (a correction, below) |
 
 ## Correction (2026-11-08)
 
@@ -60,6 +60,13 @@ three searches stand, but the diagnosis does not. `PATH-HYBRID-20261108-001A` fo
 three contacts: a 3-cell rule-150 ring's two cells are equal from lag 1 on, and the contact reads their sum
 (`research/PATH-HYBRID-20261108-001/uniform_paths.json`). So rule 150 does both jobs as a middle ring, and the tension is not
 forced. `PATH-HYBRID-20261108-001B` found 1,120 more native paths with hybrid middle rings.
+
+## Correction (2026-11-08, the stress test)
+
+Logged in `docs/CORRECTIONS.md` as a narrowing. The first family, rule 150 on all four rings, has no native path up to end rings of
+5 cells and middle rings of 7. One size past, NATIVE-PATH-S1 finds 48: 16 at 6/5/5/6 and 8 each at 3/8/8/6, 6/8/8/3, 5/8/6/6 and
+6/6/8/5, every one with its last contact binding all four rings. The smallest at each shape is verified on its full state space,
+and none stays native with one more cell (`research/PATH-GROWTH-20261108-001/new_natives.json`).
 
 ## Literature and provenance
 

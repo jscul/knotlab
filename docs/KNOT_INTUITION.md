@@ -1538,6 +1538,8 @@ So network holes come in two kinds:
      contact distances, plus one. Affine paths reduce to row sequences, as chains do.
    - **None found (exploratory).**
      - **Rule 150 everywhere, with every law.** 900,000 paths, none native.
+       - *Corrected on 2026-11-08 (`PATH-GROWTH-20261108-001`, two entries below).* None up to end rings of 5 cells. The wider run
+         NATIVE-PATH-S1 finds 48 native paths with rule 150 on every ring, at end rings of 6 cells or a middle ring of 8.
      - **The carrying chains extended by one ring.** 96,840 paths, none native.
      - **The middle contact carries, the second middle ring loses it.** 762 of these paths keep all three contacts persistent. The
        middle contact carries the first ring at every lag in 302 of them, and the loss happens across the second middle ring.
@@ -1552,13 +1554,14 @@ So network holes come in two kinds:
      - **Families named.** The absence is for these three families only, as the correction of the same day asks.
    - **Provenance.** Light cones on graphs; linear recurring sequences over GF(2). New as far as found: the searches.
    - **Next (both taken).** A broad sweep of mixed four-ring paths, and middle rings that are not uniform within the ring (next
-     entry). A wider run of rule 150 everywhere is pending
+     entry). The wider run of rule 150 everywhere is folded in, with the correction above
      ([decision note](../research/NATIVE-PATH-20261108-001/native_path.md)).
 
    **2026-11-08: native paths across time, at particular sizes** (`PATH-HYBRID-20261108-001`).
    - **The question.** Is there a native path of four rings and three contacts when each ring may run any linear rule, or when the
      second middle ring is hybrid, its cells running different rules?
-   - **One rule per ring (exploratory, verified).** Of 20,480,000 paths, 16 are native, all one construction:
+   - **One rule per ring (exploratory, verified).** Of 20,480,000 paths, 16 are native, all one construction (*corrected on
+     2026-11-08, next entry:* other shapes have other native paths with one rule per ring):
      - **End rings.** 3 cells running a shift. With its contact reading both neighbours, an end ring is a feedback shift register
        with polynomial x³ + x + 1, which never forgets.
      - **Middle rings.** 5 cells running rule 150, their contacts two apart.
@@ -1571,6 +1574,8 @@ So network holes come in two kinds:
      - **The hybrid paths.** They survive one more cell on the far end ring (928 of 1,120), never on the near end.
      - **Why, as a heuristic.** Every native path found has row cycles of at most 12 lags. Larger rings make cycles of hundreds or
        thousands, and some phase then misses a ring.
+       - *Corrected on 2026-11-08 (`PATH-GROWTH-20261108-001`, next entry).* That holds for this construction's larger versions.
+         Persistent paths of other families keep short cycles at every size and still do not compose.
    - **Reading.**
      - **Composed topology across time.** Rings A and D share no contact, yet the last contact needs both their pasts at every lag.
        This is an indirect position through two intermediate processes, at these sizes, with no length or metric.
@@ -1580,8 +1585,31 @@ So network holes come in two kinds:
      - **Inhomogeneous rings.** They count as native under A36 (added), and the existence of native paths does not rest on it.
    - **Provenance.** Shift registers (Golomb); additive automata on rings. The nearest substrate is the xor-cycle chains of Alcolei,
      Perrot and Sené (2015), studied for their asynchronous dynamics. New as far as found: native paths across time.
-   - **Next (awaiting a go-ahead).** Native paths that survive growth (Payoff 3/3, Concreteness 2/3). Native separation and cycles of
-     rings is the alternative ([decision note](../research/PATH-HYBRID-20261108-001/path_hybrid.md)).
+   - **Next (taken).** Native paths that survive growth (next entry). Native separation and cycles of rings went to backlog B12, for
+     its own thread ([decision note](../research/PATH-HYBRID-20261108-001/path_hybrid.md)).
+
+   **2026-11-08: no native path survives growth** (`PATH-GROWTH-20261108-001`).
+   - **The question.** Fix each ring's linear rule and each contact's law and let the path grow, its rings from 3 to 9 cells or its
+     length from 4 to 9 rings. Is some family native at every size?
+   - **None is (exploratory, exact).**
+     - **Equal rings.** With all four rings of 3, 4 or 5 cells, none of 36,864,000 paths is native, under every rule and law.
+     - **Longer paths.** The 8 families native at four rings fail at five.
+   - **Growth breaks composition, not persistence.** Paths whose three contacts persist exist at every size, mostly with row cycles
+     of at most 12 lags, and none of them is native.
+   - **Native paths sit at isolated shapes.**
+     - **The map.** Of 36 combinations of end-ring and middle-ring sizes, native paths occur at 3: 3/5/5/3, 5/6/6/5 (rule 90 end rings,
+       the one-sided additive rules 60 and 102 in the middle) and 4/7/7/5.
+     - **Rule 150 on every ring.** 48 native paths, at end rings of 6 cells or a middle ring of 8 (the NATIVE-PATH-S1 run).
+     - **Isolated.** No family is native at two shapes of the map, and none of the 128 stays native with one more cell.
+   - **Reading.**
+     - **A34 under challenge.** Under the every-lag reading, composition across time exists only at isolated sizes and never
+       transports. Composition at recurring lags, with the phase fixed by the chain, held at every tested size for three-ring chains
+       (`INTERMITTENT-NET-20261108-001`), so the alternative reading is the one to test.
+     - **The gate.** The paths pass each contact gate and compose natively, but fail the gate's transport clause.
+     - **Corrections.** Two earlier readings are narrowed (`docs/CORRECTIONS.md`).
+   - **Provenance.** Linear recurring sequences over GF(2); additive automata on rings. New as far as found: the census by size.
+   - **Next (research directions).** Challenge A34 with composition at recurring lags across sizes (Payoff 3/3, Concreteness 3/3).
+     Native separation is in backlog B12 ([decision note](../research/PATH-GROWTH-20261108-001/path_growth.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

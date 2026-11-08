@@ -88,7 +88,7 @@ evidence: results and their status come from the records each entry links.
 | [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Confirmed |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
-| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Confirmed |
+| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Under challenge |
 | [A35](#a35--hidden-information-is-counted-as-labels-a-decorated-substitution-sets) | Hidden information is counted as labels a decorated substitution sets | measure | Assumed |
 | [A36](#a36--a-law-declared-cell-by-cell-is-a-native-substrate) | A law declared cell by cell is a native substrate | scope | Assumed |
 
@@ -762,7 +762,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A34 · A chain composes when its far contact binds its ends at every lag
 
-**Confirmed** · 2026-11-08 · reading
+**Under challenge** · 2026-11-08 · reading
 
 - **Statement.** Two contacts between processes, c1 joining rings A and B and c2 joining rings B and C, compose when c2 binds the
   end rings A and C at every lag from the first lag at which ring A can reach it, d + 1 for contacts d cells apart on ring B. That
@@ -777,6 +777,12 @@ evidence: results and their status come from the records each entry links.
   composition at recurring lags follows a native law, such as a period fixed by the middle ring. A law would favour the
   alternative; a pattern that depends on the observer's choice of lags would keep this reading.
 - **History.**
+  - 2026-11-08 · Put under challenge by `PATH-GROWTH-20261108-001`, as its stop rule set out. Under this reading no family of paths
+    with one linear rule per ring composes at more than one size: native paths sit at isolated shapes, and none survives one more
+    cell or one more ring. Composition at recurring lags, with the phase fixed by the chain, held at every tested size for three-ring
+    chains (`INTERMITTENT-NET-20261108-001`). The test is whether that reading gives paths that compose at every size; if none does
+    either, this reading is kept and composition across time is tied to sizes under both
+    ([native paths that survive growth](../research/PATH-GROWTH-20261108-001/path_growth.md)).
   - 2026-11-08 · Bears on it: `PATH-HYBRID-20261108-001`. Read for a path's last contact, native paths exist at particular sizes and
     none survives growth one size past. If binding at every lag proves tied to particular sizes, the intermittent reading returns
     as the alternative ([paths through mixed middle rings](../research/PATH-HYBRID-20261108-001/path_hybrid.md)).

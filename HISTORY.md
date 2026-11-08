@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: native paths with one rule per ring sit at more shapes
+
+- NATIVE-PATH-20261108-001 found no native path with rule 150 on all four
+  rings, searching end rings up to 5 cells. Its wider run finds 48, with end
+  rings of 6 cells (6/5/5/6) or a middle ring of 8.
+- PATH-HYBRID-20261108-001 said that with one rule per ring there is a single
+  construction of 16 native paths. That holds for its sweep's two shapes:
+  PATH-GROWTH-20261108-001 finds others at 5/6/6/5 and 4/7/7/5.
+- PATH-HYBRID-20261108-001 also suggested, as a heuristic, that larger rings
+  fail because their cycles grow long. Persistent paths of other families keep
+  short cycles at every size and still do not compose, so the reason is open.
+- Unchanged: every count at the sizes searched, and that no family of native
+  paths survives one more cell
+  ([native paths that survive growth](research/PATH-GROWTH-20261108-001/path_growth.md)).
+
 ## 8 November 2026: an additive middle ring can remember and transmit
 
 - NATIVE-PATH-20261108-001 found no native path of four rings in three

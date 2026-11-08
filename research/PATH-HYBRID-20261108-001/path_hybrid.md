@@ -87,6 +87,14 @@ first ring's influence, and "the additive rules keep the first row but cancel th
 and the same paths with rule 150 on their end rings fail at the end rings (`uniform_paths.json`). Logged in `docs/CORRECTIONS.md`
 as not a block, with a correction section in that epic's decision note.
 
+## Correction (2026-11-08, after PATH-GROWTH-20261108-001)
+
+Logged in `docs/CORRECTIONS.md`.
+- **Narrowing.** The answer's "with one rule per ring there is a single construction of 16 paths" holds for ticket A's two shapes.
+  Native paths with one rule per ring also sit at 5/6/6/5, 4/7/7/5 and, with rule 150 on every ring, at end rings of 6 cells.
+- **Not a block.** The heuristic under "Why sizes matter" holds for the construction's larger versions only. Persistent paths of
+  other families keep short cycles at every size and still do not compose.
+
 ## Literature and provenance
 
 - **Sources.**

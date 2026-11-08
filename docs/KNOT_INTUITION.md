@@ -3327,7 +3327,7 @@ So network holes come in two kinds:
      of six digons.
    - **Provenance.** Vertex-transitive and Cayley maps and the spherical list (antiprisms, snub polyhedra) are classical. The reading of a
      law as a self-built surface, and the bound on uniform contradictions, are new here.
-   - **Next (recommended, awaiting the owner).** Two kinds of points (2/3): which such laws close into large spheres, and can a local
+   - **Next (both taken).** Two kinds of points (2/3): which such laws close into large spheres, and can a local
      growth rule place the six digons itself, so that a law grows its own sphere and with it the knot's contradiction?
      - **The alternative.** Large uniform contradictions beyond the Fano plane (1/3).
 
@@ -3341,8 +3341,34 @@ So network holes come in two kinds:
        itself. 439 Cayley laws agree.
    - **Reading.** Uniform worlds are coherent with one exception, a single handle. Every other contradiction of the knot, its hardness
      included, needs a law that distinguishes places.
-   - **Next (taken at once, the owner's (i)).** How a law can distinguish places by itself. Rated Payoff 3/3 (Barrier), Concreteness 1/3
-     (Stated), so the first step is scoping.
+   - **Next (taken at once, the owner's (i), as `SPHERE-GROWTH-20261107-001`).** How a law can distinguish places by itself. Rated
+     Payoff 3/3 (Barrier), Concreteness 1/3 (Stated), so the first step is scoping.
+
+   **2026-11-07: a law that lays out its own round sphere** (`SPHERE-GROWTH-20261107-001`).
+   - **The question.** Can a local law place the six digons itself, so that a law grows its own sphere and with it the knot's
+     contradiction, with nothing drawn?
+   - **Without hidden states, no (proved).**
+     - **Tubes look round up close.** A law of radius r cannot tell the octahedral knot sphere K_m (m ≥ 2r + 1) from a long capped tube:
+       every ball of the tube already occurs in K_m.
+     - **Tubes are easy.** The tube's knot still contradicts itself, but resolution refutes it in width O(m) at every length. So such a
+       law cannot force the hard contradiction.
+   - **With one hidden bit per incidence, yes (proved).**
+     - **The seam law.** Mark each incidence as a seam or not. All four incidences of a digon are seams, and a co-line of three points
+       has no seam or one opposite pair, so seams run straight.
+     - **What it forces.** The seams cut the sphere into eight equal equilateral triangles forming an octahedron (Gauss–Bonnet on each
+       flat face). So a two-kind sphere has a marking exactly when it is K_m, and K_m has one marking.
+     - **The contradiction.** Every sphere of the law carries a contradiction that needs resolution width Θ(√n) and size 2^Θ(√n).
+   - **Growth.** A growth law without branching grows at most one closed surface, so growing every size needs branching; the seam law
+     leaves only the size free. Random local growth closed 60 spheres in 711 tries, and the only round ones were octahedra.
+   - **Reading.** The seams are straight lines the law draws for itself, a native ruler, and roundness is those rulers closing up into
+     equal triangles. With one witness bit per incidence, quantified away, a uniform local law lays out its own round sphere (a closed
+     surface built from the law alone, nothing drawn).
+   - **Provenance.** Local views and locally checkable proofs (Göös–Suomela), decorated matching rules (Goodman-Strauss) and flat cone
+     spheres (Thurston) are classical. The seam law's characterization of the knot spheres is new as far as found.
+   - **Next (recommended, awaiting the owner).** Grow K_m by a local process, ring by ring from a digon with the seams as signals. Rated
+     Payoff 2/3 (Substantial), Concreteness 2/3 (Testable).
+     - **The alternatives.** Seams as a native knot (Payoff 2/3, Concreteness 1/3); other round families, the Goldberg–Coxeter
+       octahedra (1/3, 2/3); a write-up (1/3, 3/3).
 
    **2026-11-07: round without coins** (`PINWHEEL-ROUND-20261107-001`).
    - **The question.** Can a law with no coins, and no Poisson points, have a round circle?

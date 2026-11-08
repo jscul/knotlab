@@ -86,7 +86,7 @@ is constrained as a whole (K1), forgetting any one variable leaves the rest
 unconstrained (K2), and some state is allowed (K3). John Cullen adopted this
 test, with erasure read as forgetting, on 19 October 2026.
 
-Evidence: [the decision](research/KNOT-FOUNDATION-20261019-001/canonical_correction_request.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#canonical-knot-test), [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [Intuitions §2](INTUITIONS.md#2-the-knot-test)
+Evidence: [the decision](research/KNOT-FOUNDATION-20261019-001/canonical_correction_request.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#canonical-knot-test), [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [Intuitions, lesson 2.1](INTUITIONS.md#21-the-knot-test)
 
 ### A shared variable is not a touch
 
@@ -96,7 +96,7 @@ Two separate attachments A–c and B–c make c a common hub, not one touch
 between A and B. In `(¬A ∨ c) ∧ (¬B ∨ c)`, forget B and A still forces c,
 which fails K2. Shared identity alone never makes a contact.
 
-Evidence: [`ForgettingKernel.lean`](lean/ForgettingKernel.lean) (`hub_not_knot`), [Intuitions §2](INTUITIONS.md#2-the-knot-test)
+Evidence: [`ForgettingKernel.lean`](lean/ForgettingKernel.lean) (`hub_not_knot`), [Intuitions, lesson 2.1](INTUITIONS.md#21-the-knot-test)
 
 ### Three places are the minimum
 
@@ -108,7 +108,7 @@ the smallest clause language that can state a knot. This concerns what can be
 expressed, not how hard anything is to compute. The core is classical
 (Schaefer 1978; Baker and Pixley 1975), and the reading is ours.
 
-Evidence: [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [`ForgettingKernel.lean`](lean/ForgettingKernel.lean), [`KnotKernel.lean`](lean/KnotKernel.lean), [Intuitions §3](INTUITIONS.md#3-pairs-cannot-make-a-knot-three-places-can)
+Evidence: [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [`ForgettingKernel.lean`](lean/ForgettingKernel.lean), [`KnotKernel.lean`](lean/KnotKernel.lean), [Intuitions, lesson 3.2](INTUITIONS.md#32-pairs-cannot-make-a-knot-three-places-can)
 
 ### Openness in an infinite system has a source
 
@@ -159,7 +159,7 @@ their pairs, a knot hides at most one bit, and only parity hides a full bit. A
 network of knots with hidden witnesses hides at most one bit per independent
 cycle, and only parity fills every cycle.
 
-Evidence: [census proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [measures](proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/proof.md), [networks](proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/proof.md), [Intuitions §4](INTUITIONS.md#4-what-a-knot-hides)
+Evidence: [census proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [measures](proofs/EMERGENCE-BITS-20261021-001A/EMERGENCE-BITS-20261021-001A-P001_emergence_measures/proof.md), [networks](proofs/EMERGENCE-BITS-20261021-001B/EMERGENCE-BITS-20261021-001B-P001_emergence_accounting/proof.md), [Intuitions, lesson 2.3](INTUITIONS.md#23-what-a-knot-hides)
 
 ### Pairwise rules make holes but never knots
 
@@ -170,7 +170,7 @@ is a gap in that shape, and a knot is the smallest kind of hole. Two-place
 rules can leave holes, but never a knot. Every simplicial complex is the shape
 of some system, so logic selects no space.
 
-Evidence: [`ForgettingKernel.lean`](lean/ForgettingKernel.lean) (`no_two_cnf_defines_knot`), [`LoopNerve.lean`](lean/LoopNerve.lean) (`every_complex_is_a_nerve`), [proof](proofs/HOLES-COHOMOLOGY-20261019-001B/HOLES-COHOMOLOGY-20261019-001B-P001_loop_nerve/proof.md), [Intuitions §5](INTUITIONS.md#5-holes-and-knots)
+Evidence: [`ForgettingKernel.lean`](lean/ForgettingKernel.lean) (`no_two_cnf_defines_knot`), [`LoopNerve.lean`](lean/LoopNerve.lean) (`every_complex_is_a_nerve`), [proof](proofs/HOLES-COHOMOLOGY-20261019-001B/HOLES-COHOMOLOGY-20261019-001B-P001_loop_nerve/proof.md), [Intuitions, lesson 3.4](INTUITIONS.md#34-holes-and-knots)
 
 ### Requirement and choice are one knot read two ways
 
@@ -181,7 +181,7 @@ Evidence: [`ForgettingKernel.lean`](lean/ForgettingKernel.lean) (`no_two_cnf_def
 and a pure choice under the other, and the other 18 offer choices under both.
 Knots never select: every variable of a knot takes both values.
 
-Evidence: [decision note](research/KNOT-FOUNDATION-20261019-001/choice.md), [tests](tests/test_knotlab.py), [Intuitions §6](INTUITIONS.md#6-requirement-and-choice)
+Evidence: [decision note](research/KNOT-FOUNDATION-20261019-001/choice.md), [tests](tests/test_knotlab.py), [Intuitions, lesson 4.2](INTUITIONS.md#42-requirement-and-choice)
 
 ### Competing pairs make only the not-all-equal triangle
 
@@ -193,7 +193,7 @@ the four not-all-equal knots on three variables and none on four or more. With
 hidden variables they make every knot. Whether least-violation states should
 count as allowed is still open (section 9).
 
-Evidence: [proof](proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/proof.md), [`CompetitionKernel.lean`](lean/CompetitionKernel.lean), [Intuitions §7](INTUITIONS.md#7-knots-from-competing-pairs)
+Evidence: [proof](proofs/KNOT-COMPETITION-20261019-001A/KNOT-COMPETITION-20261019-001A-P001_competing_pairs/proof.md), [`CompetitionKernel.lean`](lean/CompetitionKernel.lean), [Intuitions, lesson 4.3](INTUITIONS.md#43-knots-from-competing-pairs)
 
 ### Which knots remember a loop
 
@@ -206,7 +206,7 @@ length. Free contact records each loop separately. Contact with fixed points
 binds loops instead, always into atoms, and a knot among k loops needs k + 1
 witness values.
 
-Evidence: [ring theorem](proofs/KNOT-LOOPS-20261019-001B/KNOT-LOOPS-20261019-001B-P001_ring_theorem/proof.md), [loop nerves](proofs/HOLES-COHOMOLOGY-20261019-001B/HOLES-COHOMOLOGY-20261019-001B-P001_loop_nerve/proof.md), [`RingKernel.lean`](lean/RingKernel.lean), [`LoopNerve.lean`](lean/LoopNerve.lean), [Intuitions §8](INTUITIONS.md#8-which-knots-remember-a-loop)
+Evidence: [ring theorem](proofs/KNOT-LOOPS-20261019-001B/KNOT-LOOPS-20261019-001B-P001_ring_theorem/proof.md), [loop nerves](proofs/HOLES-COHOMOLOGY-20261019-001B/HOLES-COHOMOLOGY-20261019-001B-P001_loop_nerve/proof.md), [`RingKernel.lean`](lean/RingKernel.lean), [`LoopNerve.lean`](lean/LoopNerve.lean), [Intuitions, lesson 4.4](INTUITIONS.md#44-which-knots-remember-a-loop), [lesson 4.5](INTUITIONS.md#45-what-networks-of-loops-remember)
 
 ### The two/three boundary is a boundary of positivity
 
@@ -229,7 +229,7 @@ such binding. Distinctions are the material and atoms are the bonds. Every
 mechanism that binds two loops, whether a witness chain, a gate or a circuit,
 looks from outside like one of the 34 knots.
 
-Evidence: [Intuitions §3](INTUITIONS.md#3-pairs-cannot-make-a-knot-three-places-can), [the knot intuition](docs/KNOT_INTUITION.md#projection-simulation-and-reality)
+Evidence: [Intuitions, lesson 3.2](INTUITIONS.md#32-pairs-cannot-make-a-knot-three-places-can), [the knot intuition](docs/KNOT_INTUITION.md#projection-simulation-and-reality)
 
 ## 3. Infinite systems
 
@@ -441,7 +441,7 @@ in polynomial time. Counting stays polynomial under twists that do not branch,
 and becomes #P-hard once twists branch, even without signs and even on
 Pfaffian braces.
 
-Evidence: [note](notes/pfaffian-hypergraph-colourings/), [one line removed](proofs/SEYMOUR-COUNT-20261030-001B/SEYMOUR-COUNT-20261030-001B-P001_polynomial_counting_on_seymours_cubic_bound/proof.md), [branched twists](proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/proof.md), [Intuitions §10](INTUITIONS.md#10-counting-what-emerges)
+Evidence: [note](notes/pfaffian-hypergraph-colourings/), [one line removed](proofs/SEYMOUR-COUNT-20261030-001B/SEYMOUR-COUNT-20261030-001B-P001_polynomial_counting_on_seymours_cubic_bound/proof.md), [branched twists](proofs/SOFT-CROSS-20261031-001B/SOFT-CROSS-20261031-001B-P001_counting_under_branched_twists_is_sharp_p_hard/proof.md), [Intuitions, lesson 6.2](INTUITIONS.md#62-the-worlds-of-not-all-equal-knots)
 
 ### Signed knots build self-similar space in every dimension
 
@@ -722,7 +722,7 @@ field of characteristic other than 2, the Nullstellensatz degree of its Tseitin
 formula, written clause by clause, equals the graph's toggle width, which is
 cutwidth + 1 at maximum degree three. Reasoning mod 2 sees the hole at once.
 
-Evidence: [note](notes/tseitin-nullstellensatz-degree/), [toggle width](proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/proof.md), [cutwidth](proofs/CUTWIDTH-DEPTH-20261020-001B/CUTWIDTH-DEPTH-20261020-001B-P001_toggle_cutwidth/proof.md), [Intuitions §9](INTUITIONS.md#9-how-deep-a-hole-is)
+Evidence: [note](notes/tseitin-nullstellensatz-degree/), [toggle width](proofs/DEEP-HOLES-20261020-001B/DEEP-HOLES-20261020-001B-P001_charge_depth/proof.md), [cutwidth](proofs/CUTWIDTH-DEPTH-20261020-001B/CUTWIDTH-DEPTH-20261020-001B-P001_toggle_cutwidth/proof.md), [Intuitions, lesson 5.2](INTUITIONS.md#52-how-deep-a-hole-is)
 
 ### Depth in other proof systems
 
@@ -760,7 +760,7 @@ polynomial time, Rowell's 2009 conjecture fails: on links already for S₃, on
 knots for S₄, and for some groups of Fitting height two. For Heisenberg-type
 groups the note proves an exact dividing line.
 
-Evidence: [note](notes/knot-group-counting/), [S₄](proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/proof.md), [Heisenberg-type groups](proofs/COPRIME-CLASS2-20261026-001Z/COPRIME-CLASS2-20261026-001Z-P001_epic_closure/proof.md), [Intuitions §10](INTUITIONS.md#10-counting-what-emerges)
+Evidence: [note](notes/knot-group-counting/), [S₄](proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/proof.md), [Heisenberg-type groups](proofs/COPRIME-CLASS2-20261026-001Z/COPRIME-CLASS2-20261026-001Z-P001_epic_closure/proof.md), [Intuitions, lesson 6.3](INTUITIONS.md#63-patterns-in-three-dimensions)
 
 ### Hardness as a three-way interaction
 
@@ -773,7 +773,7 @@ it is a statement about counting: the knot test cannot tell hard groups from
 easy ones, since every group law is constrained as a whole and free in every
 pair.
 
-Evidence: [Intuitions §10](INTUITIONS.md#10-counting-what-emerges)
+Evidence: [Intuitions, lesson 6.3](INTUITIONS.md#63-patterns-in-three-dimensions)
 
 ## 9. Open questions
 
@@ -788,7 +788,7 @@ looks like a space of low dimension, with geometry as well as topology? Native
 laws found so far fix topology but neither orientation nor scale, and see three
 dimensions only through hubs.
 
-Evidence: [the knot intuition, question 9](docs/KNOT_INTUITION.md#open-questions), [Intuitions §12](INTUITIONS.md#12-open-questions)
+Evidence: [the knot intuition, question 9](docs/KNOT_INTUITION.md#open-questions), [Intuitions, lesson 7.2](INTUITIONS.md#72-open-questions)
 
 ### Reading every three-fold space
 
@@ -811,7 +811,7 @@ allowed? Both readings are mapped. The strict reading keeps the verdict
 independent of presentation; the competition reading needs a declared measure
 of violation. The decision is John Cullen's.
 
-Evidence: [the knot intuition, question 10](docs/KNOT_INTUITION.md#open-questions), [Intuitions §12](INTUITIONS.md#12-open-questions)
+Evidence: [the knot intuition, question 10](docs/KNOT_INTUITION.md#open-questions), [Intuitions, lesson 7.2](INTUITIONS.md#72-open-questions)
 
 ### Dynamics, limits and witnesses
 

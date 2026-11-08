@@ -77,7 +77,7 @@ the earlier reading, in which a loop's variable is its presence.
   `patterns` runs these checks. Two further functions are checked in the
   tests: co-information, the statistical measure of synergy, and the states
   that break the fewest clauses, which is how competing preferences allow
-  states ([INTUITIONS.md](../../INTUITIONS.md), section 7).
+  states ([INTUITIONS.md](../../INTUITIONS.md#43-knots-from-competing-pairs), lesson 4.3).
 - `choice.py`: whether the base has real alternatives. It covers:
   - the 34 two-loop knots;
   - open variables;

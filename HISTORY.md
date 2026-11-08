@@ -3,6 +3,26 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: the intuition guide becomes a textbook
+
+- [INTUITIONS.md](INTUITIONS.md) is now written as a textbook, to be read in
+  order: seven chapters divided into 24 lessons, then the glossary. What
+  jscul.dev showed as four parts are now seven chapters, and what it called
+  chapters are now lessons.
+- Ten lessons are new. They teach what the guide used without explaining:
+  distinctions and joint states; the notation and what makes variables free;
+  how to read the atom A, B → c, the rule that forbids only A and B without c;
+  forgetting and witnesses; knots on the cube of states; two-place rules and
+  the majority vote; the shape of a system; easy and hard questions;
+  refutations and their degree; and counting worlds. Other lessons gained short
+  definitions of the terms they use.
+- Two former chapters are now two lessons each: "Which knots remember a loop"
+  (rings, then networks) and "Counting what emerges" (one lesson per note).
+- Unchanged: every claim, label, proof reference and command. Cross-references
+  are renumbered, and the links from [THEORY.md](THEORY.md),
+  [FINDINGS.md](FINDINGS.md), [lean/](lean/), the notes and
+  [tools/knotlab](tools/knotlab/) point to the new lesson anchors.
+
 ## 8 November 2026: every workspace commit publishes itself
 
 - Publication now starts from a commit hook in the research workspace, so

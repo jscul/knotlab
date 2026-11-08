@@ -19,7 +19,7 @@ the cutwidth.
 edges along a path, so no small window sees the contradiction. A refutation
 has to carry the charge across a layout of the graph, and the widest boundary
 it must cross is the degree it needs. See
-[INTUITIONS §9](../../INTUITIONS.md#9-how-deep-a-hole-is).
+[INTUITIONS, lesson 5.2](../../INTUITIONS.md#52-how-deep-a-hole-is).
 
 **Checks.** `python3 replay.py` uses only the standard library. On ten graphs,
 including K₃,₃ and the Petersen graph, it:

@@ -29,7 +29,7 @@ twisted obstruction joins three nontrivial characters at once. Borromean
 surgery (three components, pairwise unlinked) supplies that interaction, and
 everything pairwise stays countable. This is a statement about counting, not
 about knots in the program's sense. See
-[INTUITIONS §10](../../INTUITIONS.md#10-counting-what-emerges).
+[INTUITIONS, lesson 6.3](../../INTUITIONS.md#63-patterns-in-three-dimensions).
 
 **Checks.** The [links/](links/) folder checks the link results end to end:
 the sector formula, cables, local knots, the Potts and colouring reductions

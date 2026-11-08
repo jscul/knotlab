@@ -28,7 +28,7 @@ brace.
 **The intuition.** A 2-colouring of such a hypergraph is a world of a network
 of not-all-equal knots, in which every distinction sits in exactly three knots.
 Deciding is easy natively, but counting worlds is a different matter. See
-[INTUITIONS §10](../../INTUITIONS.md#10-counting-what-emerges).
+[INTUITIONS, lesson 6.2](../../INTUITIONS.md#62-the-worlds-of-not-all-equal-knots).
 
 **Checks.** `python3 independent.py` needs numpy, sympy and networkx. It was
 written separately from our research libraries, and it recomputes:

@@ -8,8 +8,9 @@ paths and spaces, without assuming a space to start from.
 
 The repository has two layers:
 
-- **The introduction.** [INTUITIONS.md](INTUITIONS.md) states the program's
-  intuitions plainly. [THEORY.md](THEORY.md) states the thesis and the main
+- **The introduction.** [INTUITIONS.md](INTUITIONS.md) teaches the program's
+  intuitions plainly, as a textbook whose seven chapters start from bits and
+  rules. [THEORY.md](THEORY.md) states the thesis and the main
   claims, each labelled by how it is supported and linked to its evidence.
   [FINDINGS.md](FINDINGS.md) lists eleven findings we packaged for outside
   readers, each with Lean proofs, a note or exhaustive checks that run here.
@@ -73,7 +74,7 @@ hours.
 
 | Path | What it is |
 | --- | --- |
-| [INTUITIONS.md](INTUITIONS.md) | The intuitions, each labelled as proved, checked, classical or reading |
+| [INTUITIONS.md](INTUITIONS.md) | The intuitions, taught in chapters and lessons, each labelled as proved, checked, classical or reading |
 | [THEORY.md](THEORY.md) | The thesis and the main claims, each labelled premise, proved, checked, conjecture, reading or open, with links to the evidence |
 | [FINDINGS.md](FINDINGS.md) | The findings, their kind (new result, new proof, new reading) and their status |
 | [tools/knotlab](tools/knotlab/) | Tools that test the knot definition on any finite system of constraints |

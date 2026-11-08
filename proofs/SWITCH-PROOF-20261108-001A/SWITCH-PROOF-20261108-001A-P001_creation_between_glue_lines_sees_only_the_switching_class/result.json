@@ -1,0 +1,72 @@
+{
+ "artifact_id": "SWITCH-PROOF-20261108-001A-P001",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "Proved",
+     "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "passed",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "Proved",
+     "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "passed",
+     "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/manifest.json": "Proved",
+     "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/result.json": "passed",
+     "proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/manifest.json": "Proved",
+     "proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/result.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "passed",
+     "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/manifest.json": "Proved",
+     "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/result.json": "passed"
+    }
+   },
+   "pass": true
+  },
+  "1 the edge atom, over all 256 assignments of its eight points: its own seven lines force r0 = r1 = r2 = not p, and leave its four inner points five configurations for each value of p, each inner point taking both values for each p, each pair of inner points taking all four pairs, the configurations for p = 1 being those for p = 0 complemented": {
+   "info": {
+    "each inner point takes both values for each p": true,
+    "each pair of inner points takes all four pairs": true,
+    "per value of p": {
+     "0": 5,
+     "1": 5
+    },
+    "r0 = r1 = r2 = not p": true,
+    "solutions": 10,
+    "the inner configurations for p = 1 are those for p = 0 complemented": true
+   },
+   "pass": true
+  },
+  "2 the spaces and switching: every stored and mapped placement is the generator's glue with an atom point in place of the glue point at each incidence of its signing, and each atom meets the rest only at its glue point and at r0 on one glue line; for every pair of mapped placements of one glue, complementing the points of a switching set maps the signed glue's solutions, with any one line removed, onto the other placement's": {
+   "info": {
+    "pairs of placements": 5,
+    "placements checked": 22
+   },
+   "pass": true
+  },
+  "3 the reduction, computed: in every stored and mapped placement the block of glue lines of the plain space's native map equals the signed glue's creation map, entry by entry": {
+   "info": {
+    "differing": 0,
+    "entries": 3500,
+    "placements": 22
+   },
+   "pass": true
+  },
+  "4 the theorem, computed on random switchings: for each of the 17 glues and eight random switching sets, the signed glue's creation map is unchanged (order-free vectors and degeneracy)": {
+   "info": {
+    "all four far sides unchanged": 136,
+    "order-free vectors unchanged": 136,
+    "signs after switching (min, max)": [
+     9,
+     32
+    ],
+    "switchings": 136
+   },
+   "pass": true
+  }
+ },
+ "claim": "Creation between glue lines depends only on the switching class (proved). For every cubic glue H, every two signings S and S' of H in one switching class, and every two lines a and b of H, removing a and gluing at b gives the same result in the plain edge-atom spaces X_S and X_S': both degenerate, or the same verdict for each far side. Proof: an edge atom's own lines force r0 = r1 = r2 = not p and leave its four inner points free enough (checked over all 256 assignments) that no knot used by PENDANT-LINE A's two-round rule contains an inner point; so creation between glue lines is creation in the signed glue (H, S), and switching only complements points, which changes no constrained set. Cross-checked: the glue block equals the signed glue's creation map on 22 placements (3,500 entries), and 136 random switchings of the 17 signed glues change no entry.",
+ "kind": "proof",
+ "proof": "SWITCH-PROOF-20261108-001A-P001",
+ "schema_version": 3,
+ "status": "passed",
+ "ticket": "SWITCH-PROOF-20261108-001A"
+}

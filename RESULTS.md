@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**233 current results** and 5 superseded ones, from 165 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**234 current results** and 5 superseded ones, from 166 research epics, plus 5 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 73 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 74 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 35 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 5 self-contained notes
-- [Epics](#epics): all 165 epics with their closures
+- [Epics](#epics): all 166 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -558,6 +558,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A uniform law can grow flat space but not the knot's contradiction** (`UNIFORM-SPHERES-20261107-001-D001`).
   A law of lines and co-lines builds its own closed surface; with one kind of point it closes into a sphere only as an antiprism or a snub polyhedron of at most 60 points. With uniform signs the count never forces the knot's lines on any uniform law, and Kasteleyn signs make the knot fail only on those small spheres or antiprism chains solvable in O(log n) queries, so a deep contradiction needs a second kind of point.
   [proof P001](proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/proof.md), [epic closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Creation between glue lines sees only the switching class** (`SWITCH-PROOF-20261108-001-D001`).
+  For every cubic glue and every two signings in one switching class, removing a glue line and gluing at another gives the same native creation verdict in the two plain edge-atom spaces, because an intact atom only negates its incidence and switching only complements points. Creation between glue lines is the signed glue's own creation map.
+  [proof P001](proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/proof.md), [epic closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Native creation sees a signing's switching class between glue lines and its placement through the atoms** (`SWITCH-READ-20261108-001-D001`).
   For five trisum glues, each with two placements of its atoms in one switching class, removing a glue line and gluing at a glue line gives the same native vectors in both placements, while removing a line of an atom creates differently at glue lines, so the whole native maps are never isomorphic. TRISUM-READ's frozen statements hold on all five alternative placements.
   [proof P001](proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/proof.md), [epic closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md)
@@ -994,5 +997,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Two contacts across time: persistent contacts do not compose (`PROCESS-CHAIN-20261108-001`) | [closure](proofs/PROCESS-CHAIN-20261108-001Z/PROCESS-CHAIN-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CHAIN-20261108-001/) |
 | 2026-11-08 | Knots between processes: a contact binds two processes exactly when it is a parity, and sharing it costs persistence (`PROCESS-CONTACT-20261108-001`) | [closure](proofs/PROCESS-CONTACT-20261108-001Z/PROCESS-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/PROCESS-CONTACT-20261108-001/) |
 | 2026-11-08 | Which shared contacts persist: a fifth to a quarter on larger rings (`SHARED-CONTACT-20261108-001`) | [closure](proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SHARED-CONTACT-20261108-001/) |
+| 2026-11-08 | Prove that creation between glue lines sees only the switching class (`SWITCH-PROOF-20261108-001`) | [closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-PROOF-20261108-001/) |
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |
 

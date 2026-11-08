@@ -1,0 +1,145 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SWITCH-PROOF-20261108-001A-P001",
+  "canonical_id": "SWITCH-PROOF-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "SWITCH-PROOF-20261108-001A",
+  "proof": "SWITCH-PROOF-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Creation between glue lines depends only on the switching class",
+  "status": "Proved",
+  "claim": "Creation between glue lines depends only on the switching class (proved). For every cubic glue H, every two signings S and S' of H in one switching class, and every two lines a and b of H, removing a and gluing at b gives the same result in the plain edge-atom spaces X_S and X_S': both degenerate, or the same verdict for each far side. Proof: an edge atom's own lines force r0 = r1 = r2 = not p and leave its four inner points free enough (checked over all 256 assignments) that no knot used by PENDANT-LINE A's two-round rule contains an inner point; so creation between glue lines is creation in the signed glue (H, S), and switching only complements points, which changes no constrained set. Cross-checked: the glue block equals the signed glue's creation map on 22 placements (3,500 entries), and 136 random switchings of the 17 signed glues change no entry.",
+  "dependencies": [
+    "PENDANT-LINE-20261106-001A",
+    "CHAIN-TRANSFER-20261106-001A",
+    "SWITCH-READ-20261108-001A",
+    "TRISUM-READ-20261107-001A",
+    "TRISUM-READ-20261107-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "failure_conditions": [
+    "An edge atom whose own lines do not force r0 = r1 = r2 = not p, or leave an inner point or pair of inner points fixed; a placement where an atom meets the glue elsewhere; a switching set whose complement does not map the signed glue's solutions onto the other placement's; or a computed glue block or switched signed glue whose creation map differs."
+  ],
+  "lineage": {
+    "home_scope": "SWITCH-PROOF-20261108-001",
+    "epic_path": [
+      "SWITCH-PROOF-20261108-001"
+    ],
+    "parents": [
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json",
+      "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/manifest.json",
+      "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/result.json",
+      "proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/manifest.json",
+      "proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/result.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/manifest.json",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/result.json",
+      "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py",
+      "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py",
+      "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/maps.json.gz",
+      "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/maps.json.gz",
+      "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/sw_lib.py",
+      "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/placements.json",
+      "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/maps.json.gz",
+      "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py",
+      "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py"
+    ],
+    "pending_dependencies": []
+  },
+  "parent_bindings": {
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/manifest.json": "506601817a95f7b77743b7a2bf78286095257ed8df1ee7954c50824ae08e8464",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/result.json": "3be6062ee3f3466dd3cb8ac31c5912ca71c3b384ea5363894c3755ed696650cd",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/manifest.json": "383c3eeb341795e8a70c34e6c56ca581132a7a40982ceca0d7e21ccf06d6f537",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/result.json": "a55def06f935b3665f4670a66e0081d6cf8c98e7c25d9909bbf9fdf1609d32b1",
+    "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/manifest.json": "baf8f8d15598f6a0e439b52870bd9259b2e1ad26af7485c767487888feb8db43",
+    "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/result.json": "2eb5a34452e051591de0897e34841a3aad57de9da4bc47124d022d716931792b",
+    "proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/manifest.json": "311e60eebc6d1d643557c2ef063bf7741c6b70d84d9862d701bc2a802a6c23a7",
+    "proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/result.json": "32c4a0a5b7f75c2ac446afbf67c72982b9af98f9afaee79c03f3f29ffecb5742",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/manifest.json": "ff9e5bf86c44bdaf421cfbad010b95207fd29e8694ade4c9a23ea051ffaf3a86",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/result.json": "3f340fdfcc78df5fb2954d917dfaa10756d2d29c28f0945a0b13942063eb2400",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/manifest.json": "b204d922aea2d98006ff8b1ee414243ee62cd9dd20fd8fe55bc938acebb201b0",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/result.json": "5b62b862dc650f7544b1390f96caeb9b350e11fcdb7287a6e0986a91c4579151",
+    "proofs/PENDANT-LINE-20261106-001A/PENDANT-LINE-20261106-001A-P001_creation_is_decided_at_the_gluing_line/local_lib.py": "799502c7c3524ec5375bc07ef0a3a1d2eb1cda3c19fde264a8f2cea801cf69a5",
+    "proofs/CHAIN-TRANSFER-20261106-001A/CHAIN-TRANSFER-20261106-001A-P001_creation_along_chains_of_every_length/transfer_lib.py": "ab173988f48d0f0f78cd19b5cc6eb0135ae16131c77ef513097286137f49e0de",
+    "proofs/CHAIN-TRANSFER-20261106-001B/CHAIN-TRANSFER-20261106-001B-P001_the_source_rule_on_larger_trees/tree_lib.py": "85ad0a9fe69c97f45791d9ddedb125eed4d633b6bc4a74f70cc5a8825924dd82",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/tr_lib.py": "48f7a7031af09356645f8683f1aa2bcf68acadb66e419420f8b7ce34ed29af74",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/family_lib.py": "52c98b08a276d0b751e574a4711b54ef6b1882230ad71441794996889f3fe66f",
+    "proofs/TRISUM-READ-20261107-001A/TRISUM-READ-20261107-001A-P001_junctions_in_the_native_creation_map/maps.json.gz": "f9bea3bcd62e94e669557549abb89dca6068e1c136cf9580c91a7ff194c0ead3",
+    "proofs/TRISUM-READ-20261107-001B/TRISUM-READ-20261107-001B-P001_frozen_predictions_on_larger_trisum_spaces/maps.json.gz": "62f4bef93519670a7b3283ad2208e19f6ce373e2164cf3982cd878a37f04c6d3",
+    "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/sw_lib.py": "b32bc2b48198d25d30c2eb33a7cda50e38ba9f6761ce415269b146cd354839aa",
+    "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/placements.json": "701ca343afe0e5e15e3acfa0515719f91b1b0bc65ab619e36aeaf18eeb0ab521",
+    "proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/maps.json.gz": "9889a162388434df4d0652171f59027f32c8264728bcd8cd994947c4819b69d9",
+    "proofs/HANDLE-COUNT-20261106-001A/HANDLE-COUNT-20261106-001A-P001_junctions_are_paid_for_by_atoms/families.py": "4f2ed0842d316c96985bc9fea2ffb68c2e7465f02e8cfabf39b63d2725abb730",
+    "proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/threefold_lib.py": "b5064c9ca4bad508f90796936589dbd6e199dbd99c8bde8dfa97a3cc040ee6cd"
+  },
+  "paths": {
+    "manifest": "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/manifest.json",
+    "identity": "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/identity.json",
+    "directory": "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class",
+    "proof": "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/proof.md",
+    "result": "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/result.json",
+    "check": "proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/check.py"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "glue_creation_depends_only_on_switching_class": true
+  },
+  "foundation_claim_scope": "Every cubic glue and every signing of it: plain edge-atom spaces, glue lines removed and glued at, the four census far sides read through their order-free vector.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead under the repository owner's standing mandate on 2026-11-08.",
+    "status": "proved from PENDANT-LINE A's two-round rule and a finite lemma checked exhaustively; cross-checked on 22 placements and 136 random switchings; no human or external review",
+    "novelty": "New here; switching classes are classical (Zaslavsky)."
+  }
+}

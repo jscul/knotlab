@@ -1547,11 +1547,41 @@ So network holes come in two kinds:
      - **A tension.** A middle ring between two contacts must keep its own first row and carry the first ring's influence. The
        additive rules keep the first row but cancel the influence; the shift carries it but forgets its own row. No tested ring does
        both, a candidate obstruction, not a theorem.
+       - *Corrected on 2026-11-08 (`PATH-HYBRID-20261108-001`, next entry).* Rule 150 does both as a middle ring between shift end
+         rings, and the same paths with rule 150 on their end rings fail at the end rings. The tension is not forced.
      - **Families named.** The absence is for these three families only, as the correction of the same day asks.
    - **Provenance.** Light cones on graphs; linear recurring sequences over GF(2). New as far as found: the searches.
-   - **Next (research directions).** A broad sweep of mixed four-ring paths (Payoff 2/3, Concreteness 3/3), then a middle ring
-     designed to remember and transmit (Payoff 3/3, Concreteness 1/3). Pause the process line if both fail. A wider run of rule 150
-     everywhere is pending ([decision note](../research/NATIVE-PATH-20261108-001/native_path.md)).
+   - **Next (both taken).** A broad sweep of mixed four-ring paths, and middle rings that are not uniform within the ring (next
+     entry). A wider run of rule 150 everywhere is pending
+     ([decision note](../research/NATIVE-PATH-20261108-001/native_path.md)).
+
+   **2026-11-08: native paths across time, at particular sizes** (`PATH-HYBRID-20261108-001`).
+   - **The question.** Is there a native path of four rings and three contacts when each ring may run any linear rule, or when the
+     second middle ring is hybrid, its cells running different rules?
+   - **One rule per ring (exploratory, verified).** Of 20,480,000 paths, 16 are native, all one construction:
+     - **End rings.** 3 cells running a shift. With its contact reading both neighbours, an end ring is a feedback shift register
+       with polynomial x³ + x + 1, which never forgets.
+     - **Middle rings.** 5 cells running rule 150, their contacts two apart.
+     - **The middle contact.** It reads one cell on each middle ring, the one on the short arc toward the other contact: a relay.
+     - **Its knot.** The smallest path's last contact has one knot at every lag from 5 to 10, meeting all four rings, and knotlab
+       confirms it.
+   - **Hybrid middle rings (exploratory, verified).** 1,120 of 3,175,200 paths are native, and each needs its hybrid ring.
+   - **Tied to their sizes (stress test).**
+     - **The uniform construction.** None of its 11,600 larger versions, or of 512 five-ring versions, is native.
+     - **The hybrid paths.** They survive one more cell on the far end ring (928 of 1,120), never on the near end.
+     - **Why, as a heuristic.** Every native path found has row cycles of at most 12 lags. Larger rings make cycles of hundreds or
+       thousands, and some phase then misses a ring.
+   - **Reading.**
+     - **Composed topology across time.** Rings A and D share no contact, yet the last contact needs both their pasts at every lag.
+       This is an indirect position through two intermediate processes, at these sizes, with no length or metric.
+     - **The earlier tension is not forced.** Rule 150 remembers and transmits as a middle ring; NATIVE-PATH's paths failed at their
+       end rings (corrected, `docs/CORRECTIONS.md`).
+     - **The gate's transport clause is open.** The paths compose but do not survive growth.
+     - **Inhomogeneous rings.** They count as native under A36 (added), and the existence of native paths does not rest on it.
+   - **Provenance.** Shift registers (Golomb); additive automata on rings. The nearest substrate is the xor-cycle chains of Alcolei,
+     Perrot and Sené (2015), studied for their asynchronous dynamics. New as far as found: native paths across time.
+   - **Next (awaiting a go-ahead).** Native paths that survive growth (Payoff 3/3, Concreteness 2/3). Native separation and cycles of
+     rings is the alternative ([decision note](../research/PATH-HYBRID-20261108-001/path_hybrid.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

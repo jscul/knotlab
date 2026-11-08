@@ -90,6 +90,7 @@ evidence: results and their status come from the records each entry links.
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
 | [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Confirmed |
 | [A35](#a35--hidden-information-is-counted-as-labels-a-decorated-substitution-sets) | Hidden information is counted as labels a decorated substitution sets | measure | Assumed |
+| [A36](#a36--a-law-declared-cell-by-cell-is-a-native-substrate) | A law declared cell by cell is a native substrate | scope | Assumed |
 
 ## Entries
 
@@ -776,6 +777,9 @@ evidence: results and their status come from the records each entry links.
   composition at recurring lags follows a native law, such as a period fixed by the middle ring. A law would favour the
   alternative; a pattern that depends on the observer's choice of lags would keep this reading.
 - **History.**
+  - 2026-11-08 · Bears on it: `PATH-HYBRID-20261108-001`. Read for a path's last contact, native paths exist at particular sizes and
+    none survives growth one size past. If binding at every lag proves tied to particular sizes, the intermittent reading returns
+    as the alternative ([paths through mixed middle rings](../research/PATH-HYBRID-20261108-001/path_hybrid.md)).
   - 2026-11-08 · Confirmed by `INTERMITTENT-NET-20261108-001`. Composition at recurring lags is persistent composition of a strobed
     chain, whose phase only the chain could fix. The chain fixes it in 92 of 244 intermittently composing chains, every one with an
     affine rule, and never with a nonlinear rule. The contact gate asks for persistence, which intermittent composition fails, so
@@ -802,3 +806,21 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-08 · Bears on it: `ONE-BIT-20261108-001`. Under this measure one bit per tile fails in 1,022 of 1,024 cases, and one
     decoration, up to relabelling, is open.
   - 2026-11-08 · Added by `ROUND-PRICE-20261108-001`.
+
+### A36 · A law declared cell by cell is a native substrate
+
+**Assumed** · 2026-11-08 · scope
+
+- **Statement.** A ring whose cells run different elementary rules, a hybrid ring, is a declared substrate like any other. A path
+  of such rings is judged by the same contact and network gates as a path of uniform rings.
+- **Why.** `PATH-HYBRID-20261108-001` took it by default when it counted ticket B's hybrid paths as native. The canonical knot test
+  reads any declared system of constraints, and a law fixed cell by cell is still fixed in advance, with no input supplied from
+  outside ([paths through mixed middle rings](../research/PATH-HYBRID-20261108-001/path_hybrid.md)).
+- **Rests on it.** The 1,120 native paths with hybrid middle rings and their characterisation. The existence of native paths across
+  time does not rest on it: ticket A's 16 use one rule per ring.
+- **Challenge.** Require one uniform law per ring, as question 9 asks of space, or require the cell types to arise from a uniform
+  law, for instance as a second bit per cell that the dynamics holds fixed. The cheapest test
+  builds the smallest hybrid path's ring C from a uniform law on two bits per cell. If no such emulation keeps the path native,
+  the hybrid paths depend on drawing the law cell by cell.
+- **History.**
+  - 2026-11-08 · Added by `PATH-HYBRID-20261108-001`.

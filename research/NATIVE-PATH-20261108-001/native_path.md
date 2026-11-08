@@ -51,6 +51,16 @@ run of the first family (rule 150, one size past) is pending.
 | The light cone (A), four-ring paths | 300 five-ring paths with arbitrary elementary rules, full state spaces (`stress_quick.json`) | pass: no dependence before the light cone |
 | No native path with rule 150 everywhere (B) | end rings to 6 cells, middle rings to 8: NATIVE-PATH-S1 in `docs/LONG_RUNNING.md` (`stress_wide.json`) | stress test pending |
 
+## Correction (2026-11-08)
+
+Logged in `docs/CORRECTIONS.md` as not a block. The answer and the reading said that the additive rules keep their first row but
+cancel the first ring's influence, so that no tested ring both remembers and transmits, a candidate obstruction. The counts of all
+three searches stand, but the diagnosis does not. `PATH-HYBRID-20261108-001A` found 16 native paths whose middle rings run rule
+150, the first family's additive rule, between shift end rings. The same paths with rule 150 on their end rings keep none of their
+three contacts: a 3-cell rule-150 ring's two cells are equal from lag 1 on, and the contact reads their sum
+(`research/PATH-HYBRID-20261108-001/uniform_paths.json`). So rule 150 does both jobs as a middle ring, and the tension is not
+forced. `PATH-HYBRID-20261108-001B` found 1,120 more native paths with hybrid middle rings.
+
 ## Literature and provenance
 
 - **Sources.** Light cones of automata on graphs, and linear recurring sequences over GF(2).

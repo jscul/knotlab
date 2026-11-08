@@ -3,6 +3,23 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: an additive middle ring can remember and transmit
+
+- NATIVE-PATH-20261108-001 found no native path of four rings in three
+  restricted families. It read this as a tension: a middle ring must keep its
+  own first row and carry the first ring's influence, and "the additive rules
+  keep the first row but cancel the influence", so no tested ring did both.
+- PATH-HYBRID-20261108-001 found 16 native paths whose middle rings run rule
+  150, the additive rule of that epic's first family, between 3-cell shift end
+  rings. The same paths with rule 150 on their end rings keep none of their
+  contacts, because such an end ring's two cells are equal after one step and
+  the contact reads their sum. So rule 150 does both jobs as a middle ring, and
+  the paths had failed at their end rings.
+- The [decision note](research/NATIVE-PATH-20261108-001/native_path.md)
+  carries a correction section. Unchanged: every count of the three searches,
+  the light cone, the affine reduction, and the finding that a shift as the
+  second middle ring keeps no path's contacts.
+
 ## 8 November 2026: the last decoration's forcing route needs every off-law parent to die
 
 - LAST-BIT-20261108-001 said that if every parent collar of a plane obeying

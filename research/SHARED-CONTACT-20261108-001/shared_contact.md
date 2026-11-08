@@ -56,7 +56,7 @@ One size past each computed claim (`stress_test.py` here).
 | Theorem 1 on rings to 4 + 5 cells (A) | 5 + 6 cells: every class with itself and 12 random partners, all 16 combiners | pass: 18,304 maps |
 | Theorem 2, all laws at 3 + 4 cells (A) | 4 + 5 cells, 3,000 random laws and ring rules | pass |
 | Ticket B's comparison at four sizes | ticket C extends it to 8 + 9 for u = v | the self-blind family stays ahead by 2 to 8 points |
-| Ticket C's trend to 8 + 9 cells | 9 + 10 cells (262,144 joint states), both families: SHARED-CONTACT-S1 in `docs/LONG_RUNNING.md` | running; folded in when it finishes |
+| Ticket C's trend to 8 + 9 cells | 9 + 10 cells (262,144 joint states), both families: SHARED-CONTACT-S1 in `docs/LONG_RUNNING.md`, `stress_test_nine.json` | levelling off: 21.6% of proposal parities and 27.0% of self-blind parities bind at every lag (20.5% and 26.0% at 8 + 9), 27 and 51 rules; undecided 13 and 104 of 176 and 1,232; the lag-1 criteria hold on all |
 
 ## Literature and provenance
 
@@ -102,7 +102,7 @@ Carried from earlier epics:
 **Corrections:** none. **Goals:** a G5 checkpoint (capability gained). **Assumptions:** A31 confirmed.
 
 - **What the attempt leaves open.**
-  - Whether the fraction saturates (SHARED-CONTACT-S1 is running).
+  - Whether the fraction saturates: at 9 + 10 cells it rose by about one point in each family (SHARED-CONTACT-S1).
   - Which rules persist, and why.
   - Mixed rings at large sizes.
 - **The missing bridge to the program's composed topology.** Two complete contacts between processes that coexist and compose: a
@@ -114,7 +114,7 @@ Carried from earlier epics:
 | --- | --- | --- | --- | --- | --- |
 | 1 | Two contacts across time (G5, with G1) | 3/3 — Major | 2/3 — Testable | Three rings in a chain sharing two contacts; when both bind at every lag, does the chain bind its ends through the middle ring? → a composition law across time, or its failure | Selected · not started |
 | 2 | Why some rules persist (G5) | 2/3 — Substantial | 1/3 — Stated | Relate persistence to how a rule reads its neighbours (canalization, sensitivity) → a criterion that predicts ticket C's lists | Alternative · deferred |
-| 3 | Does persistence saturate? (G5) | 1/3 — Incremental | 3/3 — Ready | SHARED-CONTACT-S1 at 9 + 10, then 10 + 11 → the trend | Running (S1) |
+| 3 | Does persistence saturate? (G5) | 1/3 — Incremental | 3/3 — Ready | SHARED-CONTACT-S1 at 9 + 10, then 10 + 11 → the trend | S1 done: levelling off near a fifth and a quarter |
 | 4 | Learning a rule from its knots (G16) | 2/3 — Substantial | 1/3 — Stated | Carried from `TIME-KNOTS-20261107-001` | Alternative · deferred |
 
 1. **Two contacts across time.**
@@ -126,5 +126,5 @@ Carried from earlier epics:
 2. **Why some rules persist.**
    - **Payoff 2.** It would explain the census.
    - **Concreteness 1.** No method yet.
-3. **Saturation.** Already running as SHARED-CONTACT-S1.
+3. **Saturation.** SHARED-CONTACT-S1 found the growth levelling off at 9 + 10 cells.
 4. **Learning a rule from its knots.** Carried.

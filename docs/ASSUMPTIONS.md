@@ -88,6 +88,7 @@ evidence: results and their status come from the records each entry links.
 | [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Confirmed |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 | [A33](#a33--a-local-law-is-read-up-to-congruence) | A local law is read up to congruence | reading | Assumed |
+| [A34](#a34--a-chain-composes-when-its-far-contact-binds-its-ends-at-every-lag) | A chain composes when its far contact binds its ends at every lag | reading | Assumed |
 
 ## Entries
 
@@ -754,3 +755,22 @@ evidence: results and their status come from the records each entry links.
   the census with handedness kept and check that nothing changes.
 - **History.**
   - 2026-11-08 · Added by `COLLAR-PLANE-20261108-001`.
+
+### A34 · A chain composes when its far contact binds its ends at every lag
+
+**Assumed** · 2026-11-08 · reading
+
+- **Statement.** Two contacts between processes, c1 joining rings A and B and c2 joining rings B and C, compose when c2 binds the
+  end rings A and C at every lag from the first lag at which ring A can reach it, d + 1 for contacts d cells apart on ring B. That
+  is, every minimally decisive set of c2's value meets both end rings' first-row cells.
+- **Why.** `PROCESS-CHAIN-20261108-001` took it by default. It reads the contact-network gate's composition as persistence of the
+  composed binding, matching the persistence asked of each contact
+  ([two contacts across time](../research/PROCESS-CHAIN-20261108-001/process_chain.md)).
+- **Rests on it.** The epic's finding that no chain with both contacts persistent composes, one size past included.
+- **Challenge.** The alternative reads composition at recurring lags. The epic's post hoc measure already shows the readings
+  differ: 195 chains bind their ends at some lags of their eventual cycle, 154 of them with both contacts binding at those lags,
+  while none composes at every lag. Under the alternative a network across time exists intermittently. The test is whether
+  composition at recurring lags follows a native law, such as a period fixed by the middle ring. A law would favour the
+  alternative; a pattern that depends on the observer's choice of lags would keep this reading.
+- **History.**
+  - 2026-11-08 · Added by `PROCESS-CHAIN-20261108-001`.

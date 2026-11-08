@@ -1432,7 +1432,7 @@ So network holes come in two kinds:
      two steps later, through the ring cells that read it, and rules canalizing in a neighbour input then rarely persist (1.1%).
    - **Persistence grows with the rings (exploratory).** From 3 + 4 to 8 + 9 cells, exact where the dynamics repeats within 4,096
      lags, the fraction binding at every lag rises from 1.1% to 20.5% for proposal parities and from 3.6% to 26.0% for self-blind
-     ones. The growth slows at the largest sizes, and a run at 9 + 10 cells is under way.
+     ones. At 9 + 10 cells it is 21.6% and 27.0%: the growth is levelling off.
    - **Reading.**
      - **The rarity was a small-ring effect.** On rings of 8 and 9 cells, a fifth to a quarter of parity contacts shared by identity
        bind both rings at every lag.
@@ -1442,9 +1442,38 @@ So network holes come in two kinds:
      - **Why small rings fail.** Small rings return the contact's influence to it at once and lose their own first rows.
    - **Provenance.** Canalizing functions (Kauffman 1969); Boolean automata double-cycles (Demongeot, Noual, Sené and coauthors). New
      as far as found: the census by binding and its growth with ring size.
-   - **Next (selected).** Two contacts across time: three rings in a chain sharing two contacts, and whether the chain binds its ends
-     through the middle ring, the contact-network gate read across time (Payoff 3/3, Concreteness 2/3). The alternatives are why some
-     rules persist, and saturation ([decision note](../research/SHARED-CONTACT-20261108-001/shared_contact.md)).
+   - **Next (taken).** Two contacts across time (next entry): three rings in a chain sharing two contacts, and whether the chain
+     binds its ends through the middle ring, the contact-network gate read across time (Payoff 3/3, Concreteness 2/3). The
+     alternatives are why some rules persist, and saturation ([decision note](../research/SHARED-CONTACT-20261108-001/shared_contact.md)).
+
+   **2026-11-08: two persistent contacts do not compose across time** (`PROCESS-CHAIN-20261108-001`).
+   - **The question.** Three rings in a chain: ring A and ring B share a contact c1, and ring B and ring C share a contact c2, d
+     cells apart on ring B. Can both contacts persist, and does the chain then bind its ends, c2 needing the pasts of both A and C at
+     every lag once A's past can reach it? This is the contact-network gate's composition, read across time.
+   - **What a chain can carry (proved).**
+     - **Listening contacts never compose.** A contact that feeds nothing back is read by no one, so the far contact never depends
+       on the far ring. Composition needs shared identity.
+     - **The light cone.** In a shared chain the far ring reaches the far contact only from lag d + 1, after crossing the middle
+       ring.
+     - **The linear case.** Linear chains bind along the supports of their M^T rows.
+   - **Persistent contacts do not compose (exploratory).**
+     - **The census.** Of 5,632 chains, each exact at every lag, both contacts persist in 182. In none of them does a contact bind
+       the end rings at every lag from d + 1 on.
+     - **One size past.** With the contacts moved off the opposite point of the middle ring, 198 more chains keep both contacts and
+       none composes.
+     - **Why.** In the persistent chains the far ring's influence is absent (rings that read no neighbour, blocking, cancellation
+       between the two ways round), fades, or can always be overridden.
+   - **Composition comes and goes (exploratory, post hoc).** 195 chains bind their ends at some lags of their eventual cycle, 154
+     of them with both contacts binding at those lags. These are mostly shift rules (15, 170) and linear ones (60, 90, 105, 150),
+     which carry a contact's past round the middle ring in pulses. None of them keeps both contacts at every lag.
+   - **Reading.** At these sizes persistence and composition did not coexist. A native network across time is at best intermittent
+     here, against the static native networks of laws that compose like cycles (`NATIVE-NETWORK-20261021-001`).
+   - **Provenance.** Elementary arguments and light cones; Boolean automata double-cycles share one node, and a chain shares two.
+     New as far as found: the census of chains by persistence and composition.
+   - **Next (research directions).** Intermittent networks, composition at recurring lags (A34's alternative; Payoff 2/3,
+     Concreteness 3/3), and a middle ring that carries a contact's past without mixing or cancelling it (Payoff 3/3, Concreteness
+     1/3). Stop the process line if neither finds a native composition law
+     ([decision note](../research/PROCESS-CHAIN-20261108-001/process_chain.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

@@ -1669,8 +1669,21 @@ So network holes come in two kinds:
    - **Reading.** Adjacency, native paths and separation now exist across time in one declared substrate, the program's order up to
      distance. Distance waits on the owner's pending ruling on counted length. The cut is a choice of intervention (A38, added).
    - **Provenance.** Menger's theorem (1927); walks counted by matrix powers. Known-with-delta.
-   - **Next (awaiting a go-ahead).** Closed loops of rings, where influence returns to its source (Payoff 3/3, Concreteness 2/3)
+   - **Next (taken).** Closed loops of rings, where influence returns to its source (next entry)
      ([decision note](../research/SEPARATE-20261108-001/separate.md)).
+
+   **2026-11-08: closed loops of rings across time** (`LOOP-RINGS-20261108-001`).
+   - **The question.** Close rings into a loop so that influence goes all the way round and returns to its source. Can every contact
+     still bind both of its rings at every lag?
+   - **Yes (exploratory, exact).** Of 295,056 loops of three and four rule-60 rings, 2,707 keep every contact persistent, and all 31
+     at the smallest size agree on their full state spaces. In them each contact reads the chains from both neighbouring contacts, so
+     every ring carries a circuit through its two contacts.
+   - **Round the loop.** In 2,659 of them every contact needs the rings it does not touch at recurring lags, never at every lag.
+   - **Sizes.** 54 families of four-ring loops persist at every size from 4 to 16, all with mixed positions; no three-ring family does.
+   - **Reading.** The first closed routes of contacts across time. The path proofs relied on influence flowing one way; here it returns,
+     and there is no proof for every size yet.
+   - **Next (awaiting a go-ahead).** Prove the four-ring loops persist at every size, by generating functions over GF(2) (Payoff 3/3,
+     Concreteness 2/3) ([decision note](../research/LOOP-RINGS-20261108-001/loop_rings.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

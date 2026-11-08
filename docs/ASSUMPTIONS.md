@@ -85,6 +85,8 @@ evidence: results and their status come from the records each entry links.
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
 | [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Overturned |
 | [A30](#a30--a-processs-memory-is-read-from-its-two-time-knots) | A process's memory is read from its two-time knots | scope | Assumed |
+| [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Under challenge |
+| [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
 
 ## Entries
 
@@ -684,3 +686,38 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-08 · Added by `TIME-KNOTS-20261107-001`. The same day its cheapest test showed that the two readings differ, and the
     epic's claims were narrowed to the first row
     ([correction](../research/TIME-KNOTS-20261107-001/time_knots.md#correction-2026-11-08)).
+
+### A31 · A shared contact combines its two rings' proposals
+
+**Under challenge** · 2026-11-08 · scope
+
+- **Statement.** When the contact is a cell of both rings, its update is a two-input law applied to the two values that the rings'
+  own rules would give it: c(t + 1) = g(f_A(a_{m−1}, c, a_1), f_B(b_{n−1}, c, b_1)). Results on shared contacts are stated for this
+  family.
+- **Why.** `PROCESS-CONTACT-20261108-001` took it by default. It is the smallest family in which the contact is a cell of each ring
+  under that ring's own rule, and it has only 16 laws, so every one could be run on every rule
+  ([knots between processes](../research/PROCESS-CONTACT-20261108-001/process_contact.md)).
+- **Rests on it.** The census of `PROCESS-CONTACT-20261108-001B` (44 of 128,128 configurations bind at every lag) and the reading
+  that a contact shared by identity rarely persists.
+- **Challenge.** At lag 1 this family fails exactly when a rule is canalizing at its centre, because the contact's own value enters
+  both proposals. A contact that combines its four ring neighbours without reading itself is still a cell of both rings, since both
+  rings read it. The cheapest test is the same census with the laws u(a_{m−1}, a_1) + v(b_{n−1}, b_1). If they persist much more
+  often, the rarity belongs to this family and not to shared identity; if not, the reading stands.
+- **History.**
+  - 2026-11-08 · Added by `PROCESS-CONTACT-20261108-001`, and put under challenge the same day by `SHARED-CONTACT-20261108-001`.
+
+### A32 · Two-sided essentiality across time is binding
+
+**Assumed** · 2026-11-08 · reading
+
+- **Statement.** A contact between two processes is two-sided essential at lag T when every minimally decisive set of its value
+  c(T) over the joint first row meets both processes' cells. It persists when this holds at every lag.
+- **Why.** `PROCESS-CONTACT-20261108-001` took it by default. Its ticket A proves that this is exactly the loss of the contact's
+  knots when either process is forgotten, so two items of the contact gate become one property across time
+  ([which contacts bind](../proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/proof.md)).
+- **Rests on it.** Every binding and persistence count of `PROCESS-CONTACT-20261108-001` and its successors.
+- **Challenge.** Weaker readings would ask only that some knot through c(T) meet both processes, or would read binding from the
+  whole space-time law (A30's alternative), where the contact's history can join the rings as a witness. The cheapest test reruns
+  the census of ticket B with "some knot meets both rings" and compares the classes.
+- **History.**
+  - 2026-11-08 · Added by `PROCESS-CONTACT-20261108-001`.

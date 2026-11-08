@@ -1369,10 +1369,50 @@ So network holes come in two kinds:
      Frobenius over GF(2), Ledrappier's shift (1978), Wolfram's elementary automata (1983), and the patterns a cellular automaton
      never produces, its Garden-of-Eden patterns (Moore 1962, Myhill 1963). New as far as found: their reading under K1–K3, the
      census by knots across time, and the traffic rule's uniform knots.
-   - **Next (started 2026-11-08 under the standing mandate).** Knots between processes: two rings, each running a dynamics, joined
-     by one contact cell, and which contact laws bind both rings' pasts in the contact's future (Payoff 2/3, Concreteness 2/3). The
-     alternatives are learning a rule from its knots (G16), the traffic rule's uniform knots, and Life at two steps
+   - **Next (taken).** Knots between processes (next entry): two rings, each running a dynamics, joined by one contact cell, and
+     which contact laws bind both rings' pasts in the contact's future (Payoff 2/3, Concreteness 2/3). The alternatives are learning
+     a rule from its knots (G16), the traffic rule's uniform knots, and Life at two steps
      ([decision note](../research/TIME-KNOTS-20261107-001/time_knots.md)).
+
+   **2026-11-08: a contact binds two processes exactly when it is a parity, and sharing it costs persistence**
+   (`PROCESS-CONTACT-20261108-001`).
+   - **The question.** The program's first emergence is a knot between two loops through one contact. With loops as processes:
+     two rings, each running an elementary cellular automaton, and one contact cell, all written as one space-time law. The contact
+     *binds both rings* at lag T when every minimally decisive set of its value c(T) over the first row meets both rings.
+   - **Binding is the gate, read across time (proved).** The contact binds both rings exactly when neither ring's first row, with
+     the contact's own first value, decides c(T). That is also exactly when forgetting either ring leaves c(T) free: two-sided
+     essentiality and loss under erasure are one property across time.
+   - **A listening contact binds exactly when it is a parity (proved).** Take a contact that reads one cell of each ring and feeds
+     nothing back.
+     - It binds both rings exactly when it is XOR or XNOR of two contact cells that still depend on their first rows.
+     - Its knots join one decisive set of each ring through the contact: one knot or tie of each process becomes one knot between
+       them.
+     - With memory, binding from the first step still needs one of the four parities a + b, a + b + 1, a + b + c, a + b + c + 1.
+     - The contact sees each ring only through the histories that ring can show at its contact cell.
+   - **It persists while both rings remember (proved).** Between linear rings the parity contact binds at every lag unless a ring
+     polynomial is nilpotent modulo X^m − 1. That happens only for rules 0 and 255, and for rules 60, 102 and 90 and their
+     negations on rings of 2^k cells, the nilpotency known from Martin, Odlyzko and Wolfram (1984). A ring that forgets fixes its
+     contact value, and an XOR of fixed values is a classifier, not a contact.
+   - **Sharing the contact costs persistence (exploratory).** Now let the contact be a cell of both rings, as shared identity asks,
+     combining the two rings' proposals.
+     - **Lag 1 (elementary).** It binds at lag 1 exactly when it combines by a parity and neither rule is canalizing at its centre.
+       Otherwise the contact's own past fixes a proposal.
+     - **Later lags.** Of 128,128 configurations, each exact at every lag, 44 bind at every lag, all parities. Sharing breaks 13,068
+       of the 13,104 bindings that a listening contact keeps forever, and rescues 8: a rule-60 ring of 4 cells forgets alone but
+       not when it shares the contact.
+     - **One size past.** The pattern holds, and persistence grows with ring size: 2 to 13 of 176 parity configurations at the
+       smaller sizes, 21 at 6 + 7 cells.
+   - **Reading.** Read across time the contact gate splits. A listening contact is two-sided, lost under erasure and persistent
+     while both rings remember, but it is part of neither loop. A contact that is part of both loops feeds them back, and its own
+     past and one ring's steering compete with binding. Few contacts pass every item together at these sizes.
+   - **Provenance.** Classical: canalizing functions (Kauffman 1969), composition of certificates, additive automata on rings
+     (Martin, Odlyzko and Wolfram 1984). Nearest to the shared model: Boolean automata double-cycles, two cycles sharing one
+     automaton, which have exponentially fewer attractors than isolated cycles (Demongeot, Melliti, Noual, Regnault and Sené). New
+     as far as found: the reading of the contact gate across time, and the census of shared contacts by binding.
+   - **Next (selected).** Shared contacts that do not read themselves: contact laws that combine their four ring neighbours without
+     their own value, so that the contact is part of both loops without feeding its past to itself (Payoff 2/3, Concreteness 3/3).
+     The alternatives are shared binding as rings grow, the whole-law reading of two rings (A30), and learning a rule from its knots
+     ([decision note](../research/PROCESS-CONTACT-20261108-001/process_contact.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

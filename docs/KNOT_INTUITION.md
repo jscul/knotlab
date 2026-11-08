@@ -3816,9 +3816,35 @@ So network holes come in two kinds:
    - **Reading.** Through the glue, native creation reads a signing's switching class, for a bipartite glue the parity of its signs
      around every cycle. Through the atoms it reads where the signs sit. The first is the data Pfaffian counting uses on these spaces.
    - **Provenance.** Switching classes and balance (Zaslavsky) are classical; the theorem is new here.
-   - **Next (recommended, started).** Does the glue block tell every switching class apart (Payoff 2/3, Concreteness 3/3)? The
-     smallest glue's 512 classes are computing.
+   - **Next (taken as `SWITCH-COMPLETE-20261108-001`).** Does the glue block tell every switching class apart (Payoff 2/3,
+     Concreteness 3/3)? The smallest glue's 512 classes are computing.
      - **The alternative.** The glue block against Pfaffian counting (2/3, 1/3).
+
+   **2026-11-08: does native creation tell signings apart?** (`SWITCH-COMPLETE-20261108-001`).
+   - **The question.** Creation between glue lines depends only on the switching class of the signing. Does it tell every class
+     apart?
+   - **No, and less so as the glue grows (computed, every class of the 8-line and the 10-line trisum glue).**
+     - **The smallest glue, nearly.** Its 512 classes give 448 glue blocks, and up to the glue's 24 symmetries all 42 orbits are told
+       apart but one pair. That pair's signings differ by moving one sign along a line, and their signed glues have 40 and 34
+       solutions.
+     - **One size past, far from it.** The 10-line glue's 2,048 classes give 1,526 blocks, and 429 on its 576 orbits.
+     - **Where nothing creates.** Its largest shared block belongs to the 190 classes at which no far side creates anywhere. They come
+       from 66 orbits and have 60 to 110 solutions.
+     - **Confirmed.** Colliding pairs have identical glue blocks on their plain spaces themselves, and census 6 under every order of
+       the gluing line separates neither.
+     - **The contradictory class stands out.** At both sizes the Pfaffian class, whose plain spaces are three-fold, is the only class
+       without solutions and has a block of its own.
+   - **Reading.**
+     - **Creation sees a signing where it creates.** Through the glue it reads the switching class only as far as creation happens;
+       through the atoms it reads where the signs sit.
+     - **It does not read the count.** Classes with one block differ in their numbers of solutions, the quantity counting computes.
+     - **It does read the contradiction.** On both glues the one class that makes the space contradictory is told apart from all others.
+     - **The stress test mattered.** The smallest glue suggested near-completeness up to symmetry; one size past overturned that before
+       it was published.
+   - **Provenance.** Switching classes and the action of automorphisms on them are classical (Zaslavsky); the computations are new here.
+   - **Next (recommended).** Does creation always single out the contradictory class (Payoff 2/3, Concreteness 2/3)? Test the four
+     12-line glues, following only the classes whose rows match the Pfaffian class's.
+     - **The alternatives.** Where nothing creates (1/3, 3/3); what of counting creation carries (2/3, 1/3).
 
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
    - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in

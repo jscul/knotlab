@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**241 current results** and 5 superseded ones, from 177 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**242 current results** and 5 superseded ones, from 178 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 20 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 21 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 177 epics with their closures
+- [Epics](#epics): all 178 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -91,6 +91,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · One-sided additive paths of every length compose at recurring lags** (`RECUR-PROOF-20261108-001-D002`).
   With n >= 3 rings of s >= 4 cells, rule 60 or 102 on each ring and every middle ring's contacts two apart, every contact persists and the last contact binds the first ring exactly when C(T - (n - 1), e) is odd, e the sum of k_j - 1 after mirroring: composition at recurring lags with every contact persistent at every length and ring size, at every lag never.
   [proof P001](proofs/RECUR-PROOF-20261108-001B/RECUR-PROOF-20261108-001B-P001_one_sided_paths_of_every_length/proof.md), [epic closure](proofs/RECUR-PROOF-20261108-001Z/RECUR-PROOF-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · A cut separates a path across time; a cycle of rings needs one cut per route** (`SEPARATE-20261108-001-D001`).
+  On rings with rule 60 or 102 and contacts two apart, freezing any one contact of a proved path leaves its far contact needing the first ring at no lag while the other contacts persist, a native separation across time. In four rings closed into a cycle with two routes, one cut removes exactly its route's binomial lag set and a cut on each route separates.
+  [proof P001](proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/proof.md), [epic closure](proofs/SEPARATE-20261108-001Z/SEPARATE-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · When a contact shared by two processes binds them at the first step** (`SHARED-CONTACT-20261108-001-D001`).
   Two rings of at least three cells share one contact cell that both rings read. A contact that combines the two rings' proposals binds both rings at lag 1, every minimally decisive set of c(1) meeting both rings' own cells, exactly when its combiner is XOR or XNOR and neither ring rule is canalizing at its centre; otherwise either the canalizing ring decides alone or the contact's own first value fixes a proposal. A self-blind contact h(a_{m-1}, a_1, b_{n-1}, b_1), which both rings read but which does not read itself, binds at lag 1 exactly when its 4 x 4 table has no constant row and no constant column (22,874 of the 65,536 laws), so its parities u(a_{m-1}, a_1) + v(b_{n-1}, b_1) bind exactly when u and v are nonconstant. With linear or affine rings and an affine contact law the shared system is affine, and the contact binds at lag T exactly when the support of its row of M^T meets both rings.
   [proof P001](proofs/SHARED-CONTACT-20261108-001A/SHARED-CONTACT-20261108-001A-P001_when_a_shared_contact_binds_at_the_first_step/proof.md), [epic closure](proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md)
@@ -1029,6 +1032,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Composition at recurring lags across sizes (`RECUR-PATH-20261108-001`) | [closure](proofs/RECUR-PATH-20261108-001Z/RECUR-PATH-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/RECUR-PATH-20261108-001/) |
 | 2026-11-08 | Recurring composition at every ring size (`RECUR-PROOF-20261108-001`) | [closure](proofs/RECUR-PROOF-20261108-001Z/RECUR-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/RECUR-PROOF-20261108-001/) |
 | 2026-11-08 | The price of roundness in the plane (`ROUND-PRICE-20261108-001`) | [closure](proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/ROUND-PRICE-20261108-001/) |
+| 2026-11-08 | Native separation across time (`SEPARATE-20261108-001`) | [closure](proofs/SEPARATE-20261108-001Z/SEPARATE-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SEPARATE-20261108-001/) |
 | 2026-11-08 | Which shared contacts persist: a fifth to a quarter on larger rings (`SHARED-CONTACT-20261108-001`) | [closure](proofs/SHARED-CONTACT-20261108-001Z/SHARED-CONTACT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SHARED-CONTACT-20261108-001/) |
 | 2026-11-08 | Prove that creation between glue lines sees only the switching class (`SWITCH-PROOF-20261108-001`) | [closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-PROOF-20261108-001/) |
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |

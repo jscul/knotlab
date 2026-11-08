@@ -1,0 +1,53 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream statuses": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json": "Proved",
+     "proofs/RECUR-PROOF-20261108-001B/RECUR-PROOF-20261108-001B-P001_one_sided_paths_of_every_length/manifest.json": "Proved",
+     "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json": "Proved"
+    }
+   }
+  },
+  "1 net_lib agrees with path_lib on 500 random linear paths, and its full-state-space reading with its row sequences on a small cycle": {
+   "pass": true,
+   "info": {
+    "paths": 500,
+    "mismatched verdicts": 0,
+    "small-cycle readings agreeing": 8
+   }
+  },
+  "2 Theorem 1 for 3 to 8 rings at ring sizes 4 to 14, every choice of positions, each contact cut, and on 300 random mirrored paths": {
+   "pass": true,
+   "info": {
+    "paths": 1686,
+    "failures": 0
+   }
+  },
+  "3 Theorem 2 at ring sizes 4 to 24, all 16 choices of positions, every cut of one or both route contacts, and on 300 random mirrored cycles": {
+   "pass": true,
+   "info": {
+    "cycles": 636,
+    "failures": 0
+   }
+  },
+  "4 the remark: with the contacts oriented round the cycle, R2 needs R0 only through c01 and cutting c01 separates, sizes 4 to 16": {
+   "pass": true,
+   "info": {
+    "cycles": 208,
+    "failures": 0
+   }
+  },
+  "5 full state spaces: Theorem 1 for three rings at sizes 4 and 5 and four rings at size 4, and Theorem 2 at sizes 4 and 5, every cut": {
+   "pass": true,
+   "info": {
+    "readings": 272,
+    "agree": 272
+   }
+  }
+ },
+ "seconds": 2.9
+}

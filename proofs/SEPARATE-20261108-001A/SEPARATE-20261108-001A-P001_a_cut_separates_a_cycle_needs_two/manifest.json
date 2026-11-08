@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SEPARATE-20261108-001A-P001",
+  "canonical_id": "SEPARATE-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "SEPARATE-20261108-001A",
+  "proof": "SEPARATE-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A cut separates a path; a cycle of rings needs two",
+  "status": "Proved",
+  "claim": "On rings of s >= 4 cells with rule 60 or 102 and contacts two apart, contacts reading their partners (the neighbour that reads them back) and the stated neighbours: (1) in RECUR-PROOF-20261108-001B's paths, the last contact needs R_0 at the lags with C(T - (n - 1), e) odd, and after freezing any one contact it needs R_0 at no lag while every other contact still binds both its rings at every lag, a native separation across time; (2) in four rings closed into a cycle with two routes from R_0 to R_2, every contact persists, R_2's contacts need R_0 exactly when C(T - 2, k1 - 1) or C(T - 2, k3 - 1) is odd, one cut removes exactly its route's lags, and a cut on each route separates R_0 from R_2.",
+  "dependencies": [
+    "RECUR-PROOF-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A cut path whose last contact still needs R_0 at some lag, or whose other contacts stop persisting.",
+    "A cycle where one cut separates, two do not, or a contact's lags differ from the binomial ones."
+  ],
+  "lineage": {
+    "home_scope": "SEPARATE-20261108-001",
+    "epic_path": [
+      "SEPARATE-20261108-001"
+    ],
+    "parents": [
+      "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json",
+      "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/proof.md",
+      "proofs/RECUR-PROOF-20261108-001B/RECUR-PROOF-20261108-001B-P001_one_sided_paths_of_every_length/manifest.json",
+      "proofs/RECUR-PROOF-20261108-001B/RECUR-PROOF-20261108-001B-P001_one_sided_paths_of_every_length/proof.md",
+      "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json",
+      "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/manifest.json": "c02f5600462da6807a78056d65d376710944b337636d54eab8743b9d463e97fd",
+    "proofs/RECUR-PROOF-20261108-001A/RECUR-PROOF-20261108-001A-P001_one_sided_paths_compose_at_every_size/proof.md": "7a931f8a01bfe5b1b9de15c615d42eab2c2dd6fc18d52d36a018c3046771ebb8",
+    "proofs/RECUR-PROOF-20261108-001B/RECUR-PROOF-20261108-001B-P001_one_sided_paths_of_every_length/manifest.json": "927f714c66c37c533d214f13490d977edc05213a9dc4137beb1fea5fa9612048",
+    "proofs/RECUR-PROOF-20261108-001B/RECUR-PROOF-20261108-001B-P001_one_sided_paths_of_every_length/proof.md": "7a7a431dd5105a00db01c6e04aeaf21058dd881df1d79f474bd5bed57b371133",
+    "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/manifest.json": "e7cffd75ad4f645142fd5121e778571058ddaee3afe3d19ec6e7c00418160f8c",
+    "proofs/NATIVE-PATH-20261108-001A/NATIVE-PATH-20261108-001A-P001_paths_reduce_to_row_sequences/path_lib.py": "52ce36a513db4fef263abc91d3b852430334e65fac0e146d6d37e8ddd0b060be"
+  },
+  "paths": {
+    "manifest": "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/manifest.json",
+    "identity": "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/identity.json",
+    "proof": "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/proof.md",
+    "result": "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/result.json",
+    "check": "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/check.py",
+    "directory": "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Linear networks of rings of the stated form; separation is relational and forms no distance; two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: Menger's theorem on the reads graph, with the binomial coefficients of RECUR-PROOF-20261108-001"
+  }
+}

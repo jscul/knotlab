@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**247 current results** and 5 superseded ones, from 184 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**248 current results** and 5 superseded ones, from 185 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 24 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 25 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 184 epics with their closures
+- [Epics](#epics): all 185 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -76,6 +76,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-08 · Intermittent composition across time is a strobed chain's composition, and in linear chains it is arrival** (`INTERMITTENT-NET-20261108-001-D001`).
   For a chain of three rings joined by two shared contacts, the lags at which the far contact binds the two end rings recur with the period P of the chain's T-step maps; the chain observed only at the lags of one residue modulo P composes at every observed lag or at none, so intermittent composition is persistent composition of a strobed chain whose phase is the only input the chain does not fix, an input the doctrine forbids an observer to supply unless the chain singles the phase out. For linear or affine rules with affine contact laws, the chain composes exactly at the lags where its far contact depends on both end rings, so the composing lags are the arrival lags of both ends' influence; in any chain, composition implies that dependence.
   [proof P001](proofs/INTERMITTENT-NET-20261108-001A/INTERMITTENT-NET-20261108-001A-P001_when_intermittent_composition_is_a_law/proof.md), [epic closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · Odd tori of rings compose everywhere, even tori never reach the antipode; rings of cuts separate when they bound** (`LATTICE-NET-20261108-001-D001`).
+  On the n x n square torus of rule-60 rings with equally spaced law-(12,12) contacts, influence between contacts spreads by the powers of L = x + 1/x + y + 1/y = (x + y)(1 + 1/xy) over GF(2): a contact needs a ring exactly when an odd number of walks of some length k lead from one of the ring's contacts to it, first at lag g k + 1 and then at infinitely many lags. On odd tori every contact needs every ring; on even tori no contact ever needs the ring antipodal to it, and when n is a power of two the feedback is finite. Cutting the contacts round any set of rings separates it, a native separation on odd tori; one ring of cuts round the torus does not separate, and two do.
+  [proof P001](proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/proof.md), [epic closure](proofs/LATTICE-NET-20261108-001Z/LATTICE-NET-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Balanced loops of any number of rings persist at every size** (`LOOP-ANY-20261108-001-D001`).
   In a loop of r rule-60 rings the feedback is z(A + cA^-1), A a weighted cyclic shift, and when the contacts' positions sum to rs/2 every return to a contact cancels, so every contact binds both its rings at every lag at every ring size. The feedback is a finite sum exactly when r is a power of two.
   [proof P001](proofs/LOOP-ANY-20261108-001A/LOOP-ANY-20261108-001A-P001_balance_cancels_the_feedback/proof.md), [epic closure](proofs/LOOP-ANY-20261108-001Z/LOOP-ANY-20261108-001Z-P001_epic_closure/proof.md)
@@ -1039,6 +1042,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | A crystal one level up for the last one-bit decoration (`CRYSTAL-UP-20261108-001`) | [closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/CRYSTAL-UP-20261108-001/) |
 | 2026-11-08 | Intermittent networks across time: native only on affine substrates (`INTERMITTENT-NET-20261108-001`) | [closure](proofs/INTERMITTENT-NET-20261108-001Z/INTERMITTENT-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/INTERMITTENT-NET-20261108-001/) |
 | 2026-11-08 | The last one-bit decoration of the pinwheel (`LAST-BIT-20261108-001`) | [closure](proofs/LAST-BIT-20261108-001Z/LAST-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LAST-BIT-20261108-001/) |
+| 2026-11-08 | Composition and separation across a lattice of rings (`LATTICE-NET-20261108-001`) | [closure](proofs/LATTICE-NET-20261108-001Z/LATTICE-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-NET-20261108-001/) |
 | 2026-11-08 | Balanced loops of any number of rings (`LOOP-ANY-20261108-001`) | [closure](proofs/LOOP-ANY-20261108-001Z/LOOP-ANY-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-ANY-20261108-001/) |
 | 2026-11-08 | Networks of loops (`LOOP-NET-20261108-001`) | [closure](proofs/LOOP-NET-20261108-001Z/LOOP-NET-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-NET-20261108-001/) |
 | 2026-11-08 | Balanced loops of rings persist at every size (`LOOP-PROOF-20261108-001`) | [closure](proofs/LOOP-PROOF-20261108-001Z/LOOP-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-PROOF-20261108-001/) |

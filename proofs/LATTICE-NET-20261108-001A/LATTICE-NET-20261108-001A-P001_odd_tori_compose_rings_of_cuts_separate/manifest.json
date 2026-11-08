@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LATTICE-NET-20261108-001A-P001",
+  "canonical_id": "LATTICE-NET-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "LATTICE-NET-20261108-001A",
+  "proof": "LATTICE-NET-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Odd tori compose everywhere, even tori never reach the antipode; rings of cuts separate when they bound",
+  "status": "Proved",
+  "claim": "On the n x n square torus of rule-60 rings of 4g cells with equally spaced law-(12,12) contacts h(p), v(p): (1) F_h = S_h + w(y + 1/x)F_v and F_v = S_v + w(1 + x/y)F_h with w = z a^(g-1), whose product of shifts is L = x + 1/x + y + 1/y = (x + y)(1 + 1/xy); a contact needs a ring exactly when an odd number of contact-graph walks of some length k lead from one of the ring's contacts to it, first at lag g k + 1 and then at infinitely many, eventually periodic lags; (2) for odd n every power of L vanishes on the nonzero diagonal points and L^(2^r - 1) (2^r = 1 mod n) is 1 exactly off the diagonals, so every contact needs every ring; (3) for even n >= 4 every L^k (k >= 1) vanishes at the nonzero diagonal points and at (n/2 - 1, n/2), so h(p) never needs ring p + (n/2, n/2), and for n a power of two L^(n/2) = 0; (4) cutting the contacts on the boundary of any set of rings separates it (native separation on odd tori), one ring of cuts round the torus does not separate (h(0,0) still needs ring (n-1, 0) by one walk of length 2(n-2)), and two do.",
+  "dependencies": [
+    "LOOP-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An odd torus and a contact that never needs some ring.",
+    "An even torus with h(0) needing ring (n/2, n/2), or a power of L nonzero at a nonzero diagonal point or at (n/2 - 1, n/2).",
+    "A bounding cut after which an inside contact needs an outside ring; or, after one ring of cuts round the torus, h(0,0) not needing ring (n-1, 0)."
+  ],
+  "lineage": {
+    "home_scope": "LATTICE-NET-20261108-001",
+    "epic_path": [
+      "LATTICE-NET-20261108-001"
+    ],
+    "parents": [
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py",
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/proof.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md": "fc8fecf29b89ba6e2037ebb626d38a4b8b4603c7f6a6e57cb0c620067c53d76d",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py": "1adbc514bf5aaf3b23af55229a9b9d1a7795f3a0f9a3312bf2f86cf75920197b",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/proof.md": "f84517d36f1c0433c1de81c69d04996d50a040bafa9d651e38d1b71c08145248"
+  },
+  "paths": {
+    "manifest": "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json",
+    "identity": "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/identity.json",
+    "proof": "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/proof.md",
+    "result": "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/result.json",
+    "check": "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/check.py",
+    "directory": "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The square torus of rule-60 rings with equally spaced law-(12,12) contacts; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-08.",
+    "status": "proof by hand; finite claims checked by check.py",
+    "novelty": "known-with-delta: composition across a lattice of rings is the powers of x + 1/x + y + 1/y over GF(2); odd sides reach every ring, even sides never the antipode; rings of cuts separate exactly as closed curves on the torus do in the cases proved"
+  }
+}

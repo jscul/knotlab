@@ -1,0 +1,222 @@
+{
+ "ticket": "LATTICE-NET-20261108-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "LOOP-NET-20261108-001A manifest": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "loopnet_lib": "1adbc514bf5aaf3b23af55229a9b9d1a7795f3a0f9a3312bf2f86cf75920197b"
+   }
+  },
+  "1_contact_graph_is_the_convolution": {
+   "pass": true,
+   "info": {
+    "sides": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  },
+  "2_odd_tori_powers_of_L": {
+   "pass": true,
+   "info": {
+    "sides": [
+     3,
+     5,
+     7,
+     9,
+     11,
+     13,
+     15,
+     17,
+     19,
+     21
+    ],
+    "orders of 2": {
+     "3": 2,
+     "5": 4,
+     "7": 3,
+     "9": 6,
+     "11": 10,
+     "13": 12,
+     "15": 4,
+     "17": 8,
+     "19": 18,
+     "21": 6
+    },
+    "L^(2^r - 1) computed explicitly at": [
+     3,
+     5,
+     7,
+     9,
+     11,
+     13,
+     15,
+     17,
+     21
+    ]
+   }
+  },
+  "3_odd_tori_every_contact_needs_every_ring": {
+   "pass": true,
+   "info": {
+    "sides and contacts checked": {
+     "3": 18,
+     "5": 50,
+     "7": 98,
+     "9": 2,
+     "11": 2,
+     "13": 2
+    }
+   }
+  },
+  "4_even_tori_powers_of_L": {
+   "pass": true,
+   "info": {
+    "sides": [
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20
+    ],
+    "L^(n/2) = 0 at": [
+     4,
+     8,
+     16
+    ]
+   }
+  },
+  "5_even_tori_antipode_never_needed": {
+   "pass": true,
+   "info": {
+    "rings never needed by h(0) and by v(0)": {
+     "4": [
+      4,
+      4
+     ],
+     "6": [
+      4,
+      4
+     ],
+     "8": [
+      24,
+      24
+     ],
+     "10": [
+      4,
+      4
+     ],
+     "12": [
+      24,
+      24
+     ],
+     "14": [
+      4,
+      4
+     ],
+     "16": [
+      112,
+      112
+     ]
+    }
+   }
+  },
+  "6_when_cell_level_exact": {
+   "pass": true,
+   "info": {
+    "(side, spacing): contact-ring pairs": {
+     "3,2": 162,
+     "3,3": 162,
+     "4,2": 384,
+     "4,3": 384,
+     "5,2": 50,
+     "5,3": 50,
+     "6,2": 64,
+     "7,2": 98,
+     "8,2": 80
+    }
+   }
+  },
+  "7_bounding_rings_of_cuts_separate": {
+   "pass": true,
+   "info": {
+    "cuts": 31,
+    "with every inside and outside contact reaching across before the cut": 27,
+    "pre-reach on every odd torus": true
+   }
+  },
+  "8_one_ring_of_cuts_round_the_torus_does_not_separate": {
+   "pass": true,
+   "info": {
+    "sides": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "uncut contacts still needing every ring": {
+     "3": "15 of 15",
+     "4": "24 of 28",
+     "5": "45 of 45",
+     "6": "60 of 66",
+     "7": "91 of 91"
+    }
+   }
+  },
+  "9_two_rings_of_cuts_round_the_torus_separate": {
+   "pass": true,
+   "info": {
+    "sides": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  },
+  "10_cuts_at_cell_level_exact": {
+   "pass": true,
+   "info": {
+    "block 2x2 on 5x5": 42,
+    "one ring of cuts on 5x5": 45,
+    "two rings of cuts on 6x6": 60,
+    "block 2x2 on 4x4": 24
+   }
+  },
+  "11_rectangular_tori_computed": {
+   "pass": true,
+   "info": {
+    "tori with a ring some contact never needs": {
+     "4 x 4": 4,
+     "4 x 8": 4,
+     "4 x 12": 4,
+     "6 x 6": 4,
+     "8 x 8": 24,
+     "8 x 12": 12,
+     "10 x 10": 4
+    },
+    "tori checked": 52
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 0.7
+}

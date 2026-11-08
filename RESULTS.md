@@ -24,8 +24,8 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 10 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 75 results
-- [Space from a law: moves, signs and gaskets](#space-from-a-law-moves-signs-and-gaskets): 19 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 66 results
+- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 28 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
@@ -511,33 +511,6 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · Native far sides separate atoms through glue, rows at atom lines do not** (`GENUS-READ-20261107-001-D003`).
   Through K4^(3), the Fano plane and census 58 alone every Fano atom acts as one (1,065 of 1,065), and all 372 yes/no twins across atoms in 39 spaces are told apart, 114 only through their rows at glue lines. Twins on these native rows at atom lines read 234 of 277 spaces, merging atoms where they meet one plane piece.
   [proof P001](proofs/GENUS-READ-20261107-001C/GENUS-READ-20261107-001C-P001_native_far_sides_through_plane_glue/proof.md), [epic closure](proofs/GENUS-READ-20261107-001Z/GENUS-READ-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Without ends, bond distance is a ruler that reads the lattice's dimension** (`LOGIC-AXIS-20261107-001-D001`).
-  If a law's finitely supported moves are dense (no ends), every knot is chained at the moves' range, so bond distance grows linearly with separation and its balls recover the lattice's dimension from allowed states alone, with taxicab distance on the gauge plane and exactly t-s+1 along the atom thread. Per-variable nativity is not enough: Ledrappier's law plus a free field is native in every variable yet has knots joining points 2^k apart.
-  [proof P001](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Ledrappier's frozen plane measures distance in signed bits** (`LOGIC-AXIS-20261107-001-D002`).
-  In Ledrappier's law the three-place knots are exactly the Frobenius triangles, so every point has bond-distance-2 neighbours at every power-of-two separation and every bond ball is infinite. Along each lattice line the bond distance between points n apart is at most 1 + w(n), the weight of n's non-adjacent form, and equals 2 exactly at powers of two.
-  [proof P001](proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Open ends make a substitution tower stretch** (`LOGIC-AXIS-20261107-001-D003`).
-  A hub-free parity substitution keeps the replaced knot exactly when its gadget adds no open end, and then every step is conservative, so the original distinctions stay at bond distance 2 forever; this is why the 2026-10-20 refinement cannot grow space. On tree-shaped knot graphs bond distance equals the path's knot count plus one, so the star tower stretches as 3^k + 1.
-  [proof P001](proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Periodic logic makes polygons with rational pi** (`LOGIC-CIRCLE-20261107-001-D001`).
-  For a parity law on a doubly periodic plane graph, bond distance is twice the graph distance of the plane dual up to a constant, so its circle is half the dual's velocity polygon, with rational vertices and a rational pi (half its perimeter measured with its own distance). By Niven's theorem its only regular circles are the hexagon (pi = 3) and the parallelogram (pi = 4), and no periodic law has a round circle.
-  [proof P001](proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Laws on lines reach the circle only as a limit** (`LOGIC-CIRCLE-20261107-001-D002`).
-  With a four-place parity knot at each crossing of a line arrangement, bond distance is twice the number of lines separating two segments, plus a bounded amount. With n equally spaced, equally dense directions the circle is a regular 2n-gon whose pi is Archimedes' inscribed or circumscribed value, 2n sin(pi/2n) or 2n tan(pi/2n): irrational from n = 4 on, periodic only for n = 2, 3, and 5/phi for the Penrose pentagrid.
-  [proof P001](proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Coins bend logical circles; only isotropy makes them round** (`LOGIC-CIRCLE-20261107-001-D003`).
-  When coins split each four-place knot of the square parity law into two three-place knots, distance in the plane dual is exactly the coordinate sum minus the longest strictly increasing chain of matching squares and bond distance is twice it at large scale, so the circle is a square with elliptic corners, quarter circles for fair coins (pi = 3.44120), whose flat lattice sides persist. A parity law on a Poisson-Voronoi tessellation, with no preferred direction, is exactly round.
-  [proof P001](proofs/LOGIC-CIRCLE-20261107-001B/LOGIC-CIRCLE-20261107-001B-P001_curved_circles_from_coins/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · A local rule grows the logical number line** (`OPEN-END-GROWTH-20261107-001-D001`).
-  Starting from one parity knot, growing only at knots that hold two or more open ends grows exactly the two-way thread, a path of knots each keeping one open loop, whatever choices are made. Its bond distance counts the knots between two points plus one, so a rule that reads nothing but open ends grows a ruler of dimension one in both directions.
-  [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · Closing open ends seals or collapses space** (`OPEN-END-GROWTH-20261107-001-D002`).
-  In hub-free parity laws bond distance is the least two-sided boundary, counting seams and open ends held inside, so every such boundary is a knot. A region without open ends behind one seam pins it and no knot crosses, and a long region with a short boundary keeps bond distance bounded; closing rules therefore freeze space into cells or collapse it.
-  [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-07 · The logical Cartesian plane is a taxicab plane** (`OPEN-END-GROWTH-20261107-001-D003`).
-  In the product law of two parity laws, a knot of each axis joined at a corner is a knot, so bond distance is at most the sum of the axis distances minus one. The product of two two-way threads has no ends, so its bond distance is within constants of taxicab distance and its bond balls grow quadratically: a plane of dimension two built from two lines.
-  [proof P001](proofs/OPEN-END-GROWTH-20261107-001C/OPEN-END-GROWTH-20261107-001C-P001_the_logical_cartesian_plane/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
 - **2026-11-07 · Native creation fixes the atoms of every computed space** (`REFINE-READ-20261107-001-D001`).
   On 191 saved and 86 fresh spaces, pair refinement (folklore 2-WL) of the native creation map, read through the order-free far sides, never puts a pair within a Fano atom and a pair across two atoms in one class, so every symmetry of the map preserves the atoms and they are definable in three-variable counting logic in each space. On whether creation occurs alone it mixes them in 42 spaces.
   [proof P001](proofs/REFINE-READ-20261107-001A/REFINE-READ-20261107-001A-P001_pair_refinement_determines_the_atoms/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
@@ -545,9 +518,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
   Yes/no two-stage twins read 219 of 277 spaces and native row twins, their maximal cliques, their refinement veto and their glue-compatible version 234 each, failing only by merging atoms that meet one plane piece (32 of 38 by complete twinship). Native-twin lines of one atom never create at a common glue line in different ways (17,494 of 17,494), while 530 of 1,572 cross-atom twin pairs do.
   [proof P001](proofs/REFINE-READ-20261107-001B/REFINE-READ-20261107-001B-P001_uniform_rules_on_the_native_map/proof.md), [epic closure](proofs/REFINE-READ-20261107-001Z/REFINE-READ-20261107-001Z-P001_epic_closure/proof.md)
 
-## Space from a law: moves, signs and gaskets
+## Space from a law: moves, signs, gaskets, rulers and circles
 
-Which local laws survive the moves of a space, with and without signs, and the self-similar spaces a knot builds.
+Which local laws survive the moves of a space, with and without signs, the self-similar spaces a knot builds, and the rulers, planes and circles that bond distance measures.
 
 - **2026-10-24 · Bits see a three-manifold only through mod-2 cohomology** (`HUB-DIMENSION-20261024-001-D001`).
   Native networks of a triangulation see only its dual graph, and among the 32,768 symmetric bit laws on edges only trivial and parity laws survive the 2-3 and 1-4 moves, so bits see a three-manifold only through hubs and then only through its mod-2 first cohomology. The Fibonacci rule, which sees surfaces exactly, needs a negative weight to see three-manifolds, so no count of hidden witnesses realizes it.
@@ -606,6 +579,33 @@ Which local laws survive the moves of a space, with and without signs, and the s
 - **2026-10-29 · Implication laws build every gasket, but no knot except the wave does** (`WAVE-UNIQUENESS-20261029-001-D002`).
   Besides rotations of the symmetric classes, general three-bit laws reproducing themselves on gasket levels 2 to 5 include the implication laws, two-sector laws whose support is a one-way implication; they compose like a chain and build every gasket. In the classified strata the only knots that do so are signed not-all-equal and its rotations.
   [proof P001](proofs/WAVE-UNIQUENESS-20261029-001B/WAVE-UNIQUENESS-20261029-001B-P001_general_laws_rotations_and_implications/proof.md), [epic closure](proofs/WAVE-UNIQUENESS-20261029-001Z/WAVE-UNIQUENESS-20261029-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Without ends, bond distance is a ruler that reads the lattice's dimension** (`LOGIC-AXIS-20261107-001-D001`).
+  If a law's finitely supported moves are dense (no ends), every knot is chained at the moves' range, so bond distance grows linearly with separation and its balls recover the lattice's dimension from allowed states alone, with taxicab distance on the gauge plane and exactly t-s+1 along the atom thread. Per-variable nativity is not enough: Ledrappier's law plus a free field is native in every variable yet has knots joining points 2^k apart.
+  [proof P001](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Ledrappier's frozen plane measures distance in signed bits** (`LOGIC-AXIS-20261107-001-D002`).
+  In Ledrappier's law the three-place knots are exactly the Frobenius triangles, so every point has bond-distance-2 neighbours at every power-of-two separation and every bond ball is infinite. Along each lattice line the bond distance between points n apart is at most 1 + w(n), the weight of n's non-adjacent form, and equals 2 exactly at powers of two.
+  [proof P001](proofs/LOGIC-AXIS-20261107-001B/LOGIC-AXIS-20261107-001B-P001_the_frozen_axis_in_signed_bits/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Open ends make a substitution tower stretch** (`LOGIC-AXIS-20261107-001-D003`).
+  A hub-free parity substitution keeps the replaced knot exactly when its gadget adds no open end, and then every step is conservative, so the original distinctions stay at bond distance 2 forever; this is why the 2026-10-20 refinement cannot grow space. On tree-shaped knot graphs bond distance equals the path's knot count plus one, so the star tower stretches as 3^k + 1.
+  [proof P001](proofs/LOGIC-AXIS-20261107-001D/LOGIC-AXIS-20261107-001D-P001_open_ends_make_a_tower_stretch/proof.md), [epic closure](proofs/LOGIC-AXIS-20261107-001Z/LOGIC-AXIS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Periodic logic makes polygons with rational pi** (`LOGIC-CIRCLE-20261107-001-D001`).
+  For a parity law on a doubly periodic plane graph, bond distance is twice the graph distance of the plane dual up to a constant, so its circle is half the dual's velocity polygon, with rational vertices and a rational pi (half its perimeter measured with its own distance). By Niven's theorem its only regular circles are the hexagon (pi = 3) and the parallelogram (pi = 4), and no periodic law has a round circle.
+  [proof P001](proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Laws on lines reach the circle only as a limit** (`LOGIC-CIRCLE-20261107-001-D002`).
+  With a four-place parity knot at each crossing of a line arrangement, bond distance is twice the number of lines separating two segments, plus a bounded amount. With n equally spaced, equally dense directions the circle is a regular 2n-gon whose pi is Archimedes' inscribed or circumscribed value, 2n sin(pi/2n) or 2n tan(pi/2n): irrational from n = 4 on, periodic only for n = 2, 3, and 5/phi for the Penrose pentagrid.
+  [proof P001](proofs/LOGIC-CIRCLE-20261107-001A/LOGIC-CIRCLE-20261107-001A-P001_polygons_and_their_pi/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Coins bend logical circles; only isotropy makes them round** (`LOGIC-CIRCLE-20261107-001-D003`).
+  When coins split each four-place knot of the square parity law into two three-place knots, distance in the plane dual is exactly the coordinate sum minus the longest strictly increasing chain of matching squares and bond distance is twice it at large scale, so the circle is a square with elliptic corners, quarter circles for fair coins (pi = 3.44120), whose flat lattice sides persist. A parity law on a Poisson-Voronoi tessellation, with no preferred direction, is exactly round.
+  [proof P001](proofs/LOGIC-CIRCLE-20261107-001B/LOGIC-CIRCLE-20261107-001B-P001_curved_circles_from_coins/proof.md), [epic closure](proofs/LOGIC-CIRCLE-20261107-001Z/LOGIC-CIRCLE-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · A local rule grows the logical number line** (`OPEN-END-GROWTH-20261107-001-D001`).
+  Starting from one parity knot, growing only at knots that hold two or more open ends grows exactly the two-way thread, a path of knots each keeping one open loop, whatever choices are made. Its bond distance counts the knots between two points plus one, so a rule that reads nothing but open ends grows a ruler of dimension one in both directions.
+  [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · Closing open ends seals or collapses space** (`OPEN-END-GROWTH-20261107-001-D002`).
+  In hub-free parity laws bond distance is the least two-sided boundary, counting seams and open ends held inside, so every such boundary is a knot. A region without open ends behind one seam pins it and no knot crosses, and a long region with a short boundary keeps bond distance bounded; closing rules therefore freeze space into cells or collapse it.
+  [proof P001](proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-07 · The logical Cartesian plane is a taxicab plane** (`OPEN-END-GROWTH-20261107-001-D003`).
+  In the product law of two parity laws, a knot of each axis joined at a corner is a knot, so bond distance is at most the sum of the axis distances minus one. The product of two two-way threads has no ends, so its bond distance is within constants of taxicab distance and its bond balls grow quadratically: a plane of dimension two built from two lines.
+  [proof P001](proofs/OPEN-END-GROWTH-20261107-001C/OPEN-END-GROWTH-20261107-001C-P001_the_logical_cartesian_plane/proof.md), [epic closure](proofs/OPEN-END-GROWTH-20261107-001Z/OPEN-END-GROWTH-20261107-001Z-P001_epic_closure/proof.md)
 
 ## Tori, twists and direction
 

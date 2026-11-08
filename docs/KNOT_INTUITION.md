@@ -3166,7 +3166,8 @@ So network holes come in two kinds:
      - **Where logic measures.** Logic measures space faithfully exactly where nothing is opened by infinity.
      - **Where space expands.** Space expands between existing distinctions exactly where growth adds open ends. The growth of
        emergent information and the growth of space meet there.
-     - **What is still chosen.** The dimension comes with the chosen gadget, like a drawing. No tested law selects its own.
+     - **What is still put in.** The dimension comes with the gadget, like a drawing. In no tested law is it derived from a rule
+       that does not mention it.
    - **Provenance.** Strong irreducibility and dense homoclinic groups (Lind–Schmidt) underlie the ruler. Ledrappier's non-mixing
      shapes and Masser's unit equations in characteristic p underlie the frozen axis. Wolfram measures dimension by ball growth in
      drawn hypergraphs. No source was found for the bond-distance reading, the signed-binary construction or the open-end criterion.
@@ -3255,6 +3256,50 @@ So network holes come in two kinds:
    - **Next (recommended, awaiting the owner).** Native creation at junction handles (2/3). On HANDLE-COUNT's trisum spaces, does pair
      refinement show that the native creation map fixes the junctions, where counting hardness lives?
      - **The alternatives.** Uniform definability of the atoms (1/3); a native audit of earlier far-side records (1/3).
+
+   **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
+   - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in
+     kind from polygons?
+     - **A circle** is a bond ball.
+     - **Its π** is Gołąb's: half its perimeter measured with its own distance. It is 3.14159… when the circle is round, and between
+       3 and 4 for every plane, with 3 only for hexagons and 4 only for parallelograms.
+   - **Periodic logic makes polygons with rational π (proved).**
+     - **The polygon.** On a doubly periodic plane graph, bond distance is twice the dual's graph distance up to a constant. So the
+       circle is the dual's velocity polygon, with rational vertices, and its π is rational.
+     - **Only two regular circles.** By Niven's theorem, they are the hexagon (π = 3) and the parallelogram (π = 4).
+     - **The table.** The 19 laws on Archimedean and Laves tilings have π in {3, 10/3, 16/5, 7/2, 11/3, 4}.
+   - **Lines approach the circle as Archimedes did (proved).**
+     - **The rule.** With a knot at each crossing of an arrangement of lines, bond distance is twice the number of separating lines,
+       plus a bounded amount.
+     - **Regular polygons.** With n equally spaced directions, the circle is a regular 2n-gon whose π is Archimedes' inscribed or
+       circumscribed value. It is irrational from n = 4 on, and the arrangement is periodic only for n = 2, 3.
+     - **Penrose.** De Bruijn's pentagrid gives 5/φ.
+   - **Coins bend the circle (proved, citing Seppäläinen).**
+     - **The law.** Split each four-place knot of the square law into two three-place knots by a coin.
+     - **The circle.** It becomes a square with elliptic corners, quarter circles for fair coins, with π = 3.44120. Its flat lattice
+       sides never round off.
+     - **No randomness.** All coins one way give the honeycomb law's hexagon.
+   - **Only isotropy rounds it (proved; measured).**
+     - **Round.** A law of three-place knots on a Poisson–Voronoi tessellation has an exactly round circle. Its measured anisotropy
+       is 1.05 at radius 60.
+     - **No plane.** A uniformly random planar law, with nothing drawn, is not a plane at all. Its bond distance grows like n^0.28,
+       near the Brownian map's n^(1/4), dimension 4.
+   - **Reading.**
+     - **Harmonies.** A periodic circle closes after finitely many sides, with a ratio of whole numbers: a harmony. The hexagonal
+       planes, built from three directions, have π = 3: the circumference is exactly three diameters.
+     - **A ratio that continues.** The round circle's π never stops. Logic reaches it only through infinitely many directions, or
+       through chance with no preferred direction.
+     - **Lines are shapes.** Every circle here is assembled from lines: straight segments, and with coins, arcs that are graphs of
+       functions.
+   - **Correction.** The axis entry's "What is still chosen" now reads "What is still put in": no law chooses. The question is whether
+     a dimension is derived or written in.
+   - **Provenance.**
+     - **Classical.** Velocity polygons (Fritz; Kotani–Sunada; Eon), Gołąb's bound, self-circumferences of regular polygons (Martini
+       and coauthors), Niven, de Bruijn, Seppäläinen's chains, Vahidi-Asl and Wierman's isotropy and the Brownian map.
+     - **Not found.** The bond-distance reductions, the rational π of periodic laws, the exact table and the coin law's corners.
+   - **Next (recommended, awaiting the owner).** Round without coins: the pinwheel law (2/3). Local matching rules force the pinwheel
+     tiling, whose tiles turn through the irrational angle arctan(1/2). Is its law's circle exactly round?
+     - **The alternatives.** The spectrum of rational π among periodic laws (1/3); the exact taxicab formula (1/3).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

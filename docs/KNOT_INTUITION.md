@@ -1808,8 +1808,19 @@ So network holes come in two kinds:
    - **Reading.** A band joined to a loop on both sides runs through both of the loop's faces and closes a handle. A uniform local law
      now makes a surface from a loop with every contact a persistent knot across time at every stage; the rule, not the dynamics, says
      where the band goes.
-   - **Next (research directions).** Higher genus by bands (Payoff 3/3, Concreteness 2/3), or the ready proof of full reach (Payoff 2/3,
-     Concreteness 3/3) ([decision note](../research/BAND-SURFACE-20261108-001/band_surface.md)).
+   - **Next (taken).** Higher genus by bands (next entry)
+     ([decision note](../research/BAND-SURFACE-20261108-001/band_surface.md)).
+
+   **2026-11-08: higher genus by bands** (`GENUS-BAND-20261108-001`).
+   - **The question.** Can bands keep growing a surface of genus 2, or add handles one band at a time, with every contact persistent?
+   - **The second band fails (exploratory, exact).** The 20 balanced genus-2 first bands on loops of 5 rings are exactly those with two or
+     three twisted columns. None of 770,520 second bands in four families keeps any of them balanced.
+   - **No second handle (exploratory, exact).** On the n × 2 tori, of 1,974,904 second bands in the same families only the torus band rule
+     keeps every contact persistent, and it keeps genus 1. No lag cutoff was used.
+   - **Reading.** "One band per handle" does not extend: one band makes the torus from a loop and later bands only grow it. The balanced
+     genus-2 first bands have no flips, and their balance breaks under any further band; the torus keeps a half-turn at every contact.
+   - **Next (research directions).** The ready proofs of full reach on the cut-open torus (Payoff 2/3, Concreteness 3/3) and of which
+     lattices compose everywhere ([decision note](../research/GENUS-BAND-20261108-001/genus_band.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

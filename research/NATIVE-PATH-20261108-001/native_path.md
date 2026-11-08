@@ -83,7 +83,7 @@ Carried from earlier epics:
 | --- | --- | --- |
 | This attempt — native paths of four rings | **Status:** Negative evidence | None in three restricted families, about 4.06 million paths |
 | Local direction — paths across time | Research directions | A second middle ring must remember and transmit; no tested ring does both |
-| Broader exploration — G5 with G1 | Known alternatives | A broad sweep of mixed paths; designing the middle ring algebraically; backlog B8–B10 |
+| Broader exploration — G5 with G1 | Known alternatives | A broad sweep of mixed paths; designing the middle ring algebraically; backlog B9–B11 |
 | Long-term goal — G5 Dynamics (question 4) | Obstruction learned | Two contacts compose across time, and paths of three have not been found |
 
 **Corrections:** none. **Goals:** a G5 checkpoint (obstruction learned). **Assumptions:** none added.
@@ -100,8 +100,8 @@ not a continuation of these families.
 | --- | --- | --- | --- | --- | --- |
 | 1 | A broad sweep of mixed four-ring paths (G5, with G1) | 2/3 — Substantial | 3/3 — Ready | Every linear rule on each ring, sizes 3/4/4/3 to 4/5/5/4, all laws, registered as long-running → a native path, or none in the family | Alternative · deferred |
 | 2 | A middle ring designed to remember and transmit (G5) | 3/3 — Major | 1/3 — Stated | From the row algebra: a middle-ring rule and contact laws whose own first row never leaves both contacts while the first ring's part never cancels → a construction, or a proof that the two conflict | Alternative · deferred |
-| 3 | The pulse law of affine chains (backlog B8) | 2/3 — Substantial | 2/3 — Testable | Parked | Backlog |
-| 4 | Persistent composition on nonlinear substrates (backlog B9) | 2/3 — Substantial | 1/3 — Stated | Parked | Backlog |
+| 3 | The pulse law of affine chains (backlog B9) | 2/3 — Substantial | 2/3 — Testable | Parked | Backlog |
+| 4 | Persistent composition on nonlinear substrates (backlog B10) | 2/3 — Substantial | 1/3 — Stated | Parked | Backlog |
 
 **Recommendation.** Research directions. Run direction 1 as a registered long-running sweep. If it finds no native path, try
 direction 2 once. If that also fails, pause the process line and reassess G5 against question 4, which the line has answered for

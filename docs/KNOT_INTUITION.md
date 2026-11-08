@@ -1528,7 +1528,7 @@ So network holes come in two kinds:
      of two contacts across time.
    - **Next (taken).** Native paths across time (next entry): chains of four rings and three contacts built from the composing
      families (Payoff 3/3, Concreteness 2/3). The alternatives, the pulse law, nonlinear persistent composition and learning a rule
-     from its knots, are parked as backlog B8 to B10 ([decision note](../research/AFFINE-WIRE-20261108-001/affine_wire.md)).
+     from its knots, are parked as backlog B9 to B11 ([decision note](../research/AFFINE-WIRE-20261108-001/affine_wire.md)).
 
    **2026-11-08: no native path in three restricted families** (`NATIVE-PATH-20261108-001`).
    - **The question.** A path of four rings A, B, C and D joined by three shared contacts is native when every contact binds its own

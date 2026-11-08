@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PROCESS-CONTACT-20261108-001A-P001",
+  "canonical_id": "PROCESS-CONTACT-20261108-001A-P001",
+  "kind": "proof",
+  "ticket": "PROCESS-CONTACT-20261108-001A",
+  "proof": "PROCESS-CONTACT-20261108-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which listening contacts bind two processes",
+  "status": "Proved",
+  "claim": "Two rings, each running an elementary cellular automaton, and one contact cell that reads one cell of each ring and possibly itself, feeding nothing back, written as one space-time law and read with K1-K3. (1) The contact binds both rings at lag T, meaning every minimally decisive set of its value c(T) over the joint first row meets both rings, exactly when neither ring's first row with the contact's own first value decides c(T), and exactly when forgetting either ring leaves c(T) free over the rest; a binding contact has knots and no ties. (2) The contact sees each ring only through the set of histories that ring can show at its contact cell. (3) A memoryless two-input contact binds both rings at lag T exactly when it is a parity (XOR or XNOR) and both rings' contact cells at lag T - 1 depend on their first rows; its knots are then the unions of the two rings' minimally decisive sets, with c(T). (4) A contact law that may read itself binds both rings at lag 1 exactly when it is one of the four parities a + b, a + b + 1, a + b + c, a + b + c + 1. (5) For linear rings the memoryless parity contact binds at every lag exactly when neither ring polynomial is nilpotent modulo X^m - 1: it stops binding only on rings of 2^k cells running rule 60 or 102 (after 2^k steps) or rule 90 (after 2^(k-1)), or their complements.",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001A",
+    "TIME-KNOTS-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A listening contact that binds both rings while one ring's first row with the contact's first value decides c(T), or the converse.",
+    "A memoryless two-input contact that binds both rings and is not a parity, or a parity of two nonconstant contact cells that does not bind.",
+    "A contact law binding at lag 1 that is not one of the four parities.",
+    "A linear ring whose polynomial is nilpotent modulo X^m - 1 outside rules 60, 102, 90 and their complements on rings of 2^k cells."
+  ],
+  "lineage": {
+    "home_scope": "PROCESS-CONTACT-20261108-001",
+    "epic_path": [
+      "PROCESS-CONTACT-20261108-001"
+    ],
+    "parents": [
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json",
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/result.json",
+      "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/time_knots_lib.py",
+      "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json",
+      "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json",
+      "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/growth_law_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json": "834b223da178d1328f4c40087ac1ae0444417c2380d5b89e5fc4ed26c2c7e637",
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/result.json": "454bd5c436db53317e74df6620577e53f6cb508783e6604d418fcb9e32a58527",
+    "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/time_knots_lib.py": "377ef3af728ae6a1d047a5df3d46edca1c607d91802719afe5cd005e7981f1c1",
+    "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json": "ecec297171c5651d4de0fa9615b0c8add1ba07fe2b99cf4471fe88b8b047c23b",
+    "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json": "764429acd903b0a0371c7327d8e193517b38c97d272308e1357dfb1296f4ab73",
+    "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/growth_law_lib.py": "9007dadfc1bc73fea625884c3654b97b547291d7262e79f94fe98916137c860b"
+  },
+  "paths": {
+    "manifest": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/manifest.json",
+    "identity": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/identity.json",
+    "proof": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/proof.md",
+    "check": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/check.py",
+    "result": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/result.json",
+    "directory": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Knots of a finite space-time law of two rings and a listening contact; no physical time or dynamics.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session under the owner's standing research mandate, 2026-11-08.",
+    "status": "proved by hand; finite claims checked by check.py (result.json passed)",
+    "novelty": "known-with-delta: canalizing functions (Kauffman 1969), composition of certificates, additive automata on rings and the nilpotency of rule 90 on 2^k cells (Martin, Odlyzko and Wolfram 1984); new as far as found is their reading under K1-K3 as the contact gate's two-sided essentiality, loss under erasure and persistence across time"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PROCESS-CONTACT-20261108-001B-E001",
+  "ticket": "PROCESS-CONTACT-20261108-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "When two rings share their contact cell, so that each ring feeds the other through it, which combiners and ring rules make the contact bind both rings (no ring's first row with c(0) decides c(T), ticket A's Theorem 1) at every lag, and how does the feedback change the listening model's answer, where only parities of two remembering rings bind (ticket A's Theorem 3)?",
+  "public_inputs": {
+    "library": "proofs/PROCESS-CONTACT-20261108-001A/PROCESS-CONTACT-20261108-001A-P001_which_contacts_bind_two_processes/process_contact_lib.py (sha256 7ca3c87b03e38a7207e86283f8531650f51c79a0782362012da7266601c04a57): shared_state_maps, shared_maps, shared_sides, binds, binds_by_knots, lags_exactly, at_every_lag.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "model": "Ring A is c, a_1..a_{m-1} and ring B is c, b_1..b_{n-1}, each closed through the shared contact c. A non-contact cell updates by its ring's elementary rule; c(t + 1) = g(f_A(a_{m-1}, c, a_1), f_B(b_{n-1}, c, b_1)) for a two-input combiner g. The joint first row has m + n - 1 cells.",
+    "configurations": "Both rings alike: the 88 rule classes (least members) at sizes (m, n) = (3, 4), (4, 4), (4, 5) and (5, 6). Mixed: every ordered pair of distinct classes at (3, 4). Every one of the 16 two-input combiners.",
+    "exactness": "Each configuration's verdict at every lag is exact: the joint dynamics on 2^(m + n - 1) states is iterated until its T-step map repeats, so the verdicts at lags 1 to the repeat stand for all lags.",
+    "classes of behaviour": "binds at every lag; binds from some lag on; binds at recurring lags only; binding decays (binds at some lag, then never); never binds.",
+    "listening counterpart": "The same rings closed on themselves with a contact that does not feed back, c(t + 1) = g(a_0(t + 1), b_0(t + 1)): by ticket A's Theorem 3 it binds at every lag exactly when g is a parity and each ring's cell 0 is nonconstant at every lag (computed exactly per ring)."
+  },
+  "forbidden_inputs": [
+    "Changing rules, sizes, combiners or classes after seeing results",
+    "Dropping configurations"
+  ],
+  "primary_observable": "The partition of the configurations into the declared classes, per combiner; the configurations whose combiner is not a parity yet bind from some lag on; and, for parity combiners, the two-by-two comparison of 'binds at every lag' with the listening counterpart.",
+  "cheapest_meaningful_control": "For linear and affine rules with a parity combiner the shared system is affine, and its verdict at every computed lag must equal the linear-algebra one (the contact's row of M^T meets both rings); constant and one-input combiners must never bind; lag-1 verdicts must agree with the minimally decisive sets on a sample. A census that fails these is not read.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 8192
+  },
+  "first_executable_signal": "The controls.",
+  "decision_or_followup_rule": "H1, frozen: no configuration with a non-parity combiner binds from some lag on (the listening model's memoryless answer). H2, frozen: with a parity combiner, sharing the contact never breaks a binding that the listening counterpart keeps at every lag. Report each with its counterexamples (rules, sizes, combiner, first binding lag). A non-parity combiner cannot bind at lag 1 (an elementary argument, recorded in the interpretation), so 'binds at every lag' is read only for parities.",
+  "stop_rule": "Stop when every declared configuration has its exact verdicts.",
+  "nonclaims": [
+    "Exploratory and non-promotable: the declared ring sizes only.",
+    "Two-time knots of the contact only (A30): knots of the whole space-time law are not counted.",
+    "No physical time or dynamics."
+  ],
+  "feasibility_disclosure": "Before freezing: ticket A's library and check were written and run in part (checks 0 and 1 passed). run.py --pilot timed five configurations (rules 30, 110, 184 and 90 at (5, 6), and 54 with 30 at (3, 4)) at about 0.01 s each, with 12 to 85 lags to the repeat; it prints no verdicts. No census was run."
+}

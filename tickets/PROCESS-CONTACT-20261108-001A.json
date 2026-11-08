@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROWTH-LAW-20261107-001A",
+    "TIME-KNOTS-20261107-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "PROCESS-CONTACT-20261108-001A-P001"
+  },
+  "id": "PROCESS-CONTACT-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for two rings each running an elementary cellular automaton and one contact cell that reads one cell of each ring (and possibly itself) but feeds nothing back, read with K1-K3 on the space-time law: (1) the contact binds both rings at lag T (every minimally decisive set of its value c(T) over the joint first row meets both rings, equivalently forgetting either ring leaves c(T) free over the rest, the contact gate's two-sided essentiality and loop-erasure loss read across time) exactly when neither ring's first row with the contact's own first value decides c(T); (2) the contact sees each ring only through the set of histories that ring can show at its contact cell; (3) a memoryless two-input contact binds both rings at lag T exactly when it is a parity (XOR or XNOR) and both rings' contact cells at lag T - 1 depend on their first rows, and then its knots are the unions of the rings' minimally decisive sets with c(T); (4) for linear rings the binding persists at every lag exactly when neither ring polynomial is nilpotent modulo X^m - 1, so it ends only on power-of-two rings running rules 60, 102 or 90 (and their complements). Check by exhaustive computation on small rings against the generic K1-K3 enumerator and knotlab check.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PROCESS-CONTACT-20261108-001"
+  },
+  "parent": "PROCESS-CONTACT-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-08: a listening contact binds both rings at lag T (every minimally decisive set of c(T) meets both, equivalently forgetting either ring frees c(T)) exactly when neither ring's first row with c(0) decides it; it sees the rings only through their contact histories; a memoryless two-input contact binds exactly when it is XOR or XNOR of two nonconstant contact cells, its knots the unions of the rings' own; binding at lag 1 needs one of the four parities; linear rings stop binding only when nilpotent (rules 0, 255 everywhere; 60, 102, 90 and negations on 2^k cells). Checked by check.py with the generic enumerator and knotlab check.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Which listening contacts bind two processes"
+}

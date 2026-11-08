@@ -1,0 +1,219 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependency artifacts bound by hash; upstream proofs Proved": {
+   "pass": true,
+   "info": {
+    "mismatched": {},
+    "statuses": {
+     "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/manifest.json": "Proved",
+     "proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/result.json": "passed",
+     "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/manifest.json": "Proved",
+     "proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/result.json": "passed"
+    }
+   }
+  },
+  "1 Theorem 1: on 10 ring rules (both rings alike), rings of 3 + 3 and 3 + 4 cells, all 256 contact laws, T = 1..3, the three readings agree: no ring's first row with c(0) decides c(T); every minimally decisive set meets both rings; forgetting either ring leaves c(T) free over the rest (generic enumerator)": {
+   "pass": true,
+   "info": {
+    "maps": 15360,
+    "mismatches": 0,
+    "binding maps": 710
+   }
+  },
+  "2 Theorem 2: on all 88 rule classes (both rings alike, 3 + 4 cells), all 256 laws and T = 1..6, binding read from the first rows equals binding read from the two rings' sets of contact histories; rule classes with equal history sets at T = 4 are bound by exactly the same laws": {
+   "pass": true,
+   "info": {
+    "maps": 135168,
+    "mismatches": 0,
+    "rule groups with equal histories at T = 4": 5,
+    "groups agree": true
+   }
+  },
+  "3 Theorem 3: a memoryless two-input contact binds both rings at lag T exactly when it is XOR or XNOR and both rings' contact cells at lag T - 1 are nonconstant (all 16 laws, all 88 classes with both rings alike, 3 + 4, 4 + 5 and 5 + 5 cells, T = 1..8; all 7,744 mixed pairs of classes with 5 laws, 3 + 4 cells, T = 1..6); the 14 other laws are canalizing; under XOR the minimally decisive sets are exactly the unions of the rings' own, so no tie": {
+   "pass": true,
+   "info": {
+    "maps (alike)": 33792,
+    "maps (mixed)": 232320,
+    "mismatches": 0,
+    "binding maps (alike)": 3930,
+    "composition maps": 329,
+    "composition mismatches": 0
+   }
+  },
+  "4 Theorem 4: the contact laws that bind both rings at lag 1 are exactly the four parities a + b, a + b + 1, a + b + c, a + b + c + 1 (laws 90, 165, 150, 105); computed, exact at every lag by iterating the 2^8-state dynamics until its maps repeat (3 + 4 cells, both rings alike): non-parity laws that bind at every lag from 2 on": {
+   "pass": true,
+   "info": {
+    "lag-1 binding laws": [
+     90,
+     105,
+     150,
+     165
+    ],
+    "laws binding at every lag >= 2 only, for some rule": 38,
+    "rules per such law": {
+     "18": 29,
+     "22": 14,
+     "26": 31,
+     "33": 31,
+     "37": 27,
+     "41": 12,
+     "54": 3,
+     "73": 2,
+     "74": 1,
+     "78": 1,
+     "82": 33,
+     "88": 1,
+     "91": 44,
+     "92": 1,
+     "94": 1,
+     "121": 12,
+     "122": 27,
+     "123": 31,
+     "133": 9,
+     "141": 1,
+     "146": 4,
+     "151": 4,
+     "161": 44,
+     "164": 1,
+     "167": 33,
+     "172": 1,
+     "173": 1,
+     "181": 31,
+     "182": 14,
+     "183": 29,
+     "197": 1,
+     "201": 3,
+     "202": 1,
+     "216": 1,
+     "218": 9,
+     "228": 1,
+     "229": 1,
+     "233": 2
+    },
+    "laws doing so between negation rings (rule 51)": [
+     74,
+     78,
+     88,
+     92,
+     94,
+     133,
+     141,
+     164,
+     172,
+     173,
+     197,
+     202,
+     216,
+     218,
+     228,
+     229
+    ]
+   }
+  },
+  "5 Theorem 5: for the 16 linear and affine rules, p is nilpotent modulo X^m - 1 exactly for rules 0 and 255 (index 1) and for 60, 102 (index m) and 90 (index m / 2), with their negations, on rings of 2^k cells (m = 3..16 exactly; the radical criterion to m = 128); the memoryless parity contact between two such rings binds at lag T exactly when neither p^(T - 1) vanishes (simulated, rings of 3 to 8 cells)": {
+   "pass": true,
+   "info": {
+    "[rule, ring sizes 3..16 where p is nilpotent]": [
+     [
+      0,
+      [
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     ],
+     [
+      60,
+      [
+       4,
+       8,
+       16
+      ]
+     ],
+     [
+      90,
+      [
+       4,
+       8,
+       16
+      ]
+     ],
+     [
+      102,
+      [
+       4,
+       8,
+       16
+      ]
+     ],
+     [
+      150,
+      []
+     ],
+     [
+      170,
+      []
+     ],
+     [
+      204,
+      []
+     ],
+     [
+      240,
+      []
+     ]
+    ],
+    "radical criterion to 128": true,
+    "polynomials": true,
+    "simulated maps": 4928,
+    "mismatches": 0
+   }
+  },
+  "6 knotlab check, rule-128 rings of 3 cells, T = 2: under the XOR contact {a_0(0), b_1(0), c(2)} is a knot (K1-K3, erasure as forgetting, every other cell a witness), and under the AND contact it is not; the generic enumerator finds exactly 9 knots, each one cell of each ring with c(2)": {
+   "pass": true,
+   "info": {
+    "xor": {
+     "allowed": [
+      "000",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+     ],
+     "is_knot": true,
+     "binding": true,
+     "loss_on_erasure": true,
+     "pairwise_definable": false
+    },
+    "and": {
+     "allowed": [
+      "000",
+      "010",
+      "100",
+      "110",
+      "111"
+     ],
+     "is_knot": false,
+     "binding": true,
+     "loss_on_erasure": false
+    },
+    "generic knots": 9
+   }
+  }
+ },
+ "seconds": 93.1
+}

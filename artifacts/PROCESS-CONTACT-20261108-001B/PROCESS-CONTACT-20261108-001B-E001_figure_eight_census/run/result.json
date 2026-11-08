@@ -1,0 +1,665 @@
+{
+ "experiment": "PROCESS-CONTACT-20261108-001B-E001",
+ "configurations": 128128,
+ "controls": {
+  "linear and affine rules with a parity combiner match the linear algebra at every computed lag": true,
+  "constant and one-input combiners never bind": true,
+  "lag-1 verdicts agree with the minimally decisive sets on a sample": true
+ },
+ "controls_ok": true,
+ "classes by combiner": {
+  "alike | 0": {
+   "never binds": 352
+  },
+  "alike | 1": {
+   "never binds": 352
+  },
+  "alike | and": {
+   "binding decays": 1,
+   "binds at recurring lags only": 2,
+   "binds from some lag on": 2,
+   "never binds": 347
+  },
+  "alike | nand": {
+   "binding decays": 2,
+   "binds at recurring lags only": 9,
+   "binds from some lag on": 3,
+   "never binds": 338
+  },
+  "alike | nor": {
+   "binding decays": 7,
+   "binds at recurring lags only": 17,
+   "binds from some lag on": 5,
+   "never binds": 323
+  },
+  "alike | not p": {
+   "never binds": 352
+  },
+  "alike | not q": {
+   "never binds": 352
+  },
+  "alike | or": {
+   "binding decays": 8,
+   "binds at recurring lags only": 15,
+   "binds from some lag on": 4,
+   "never binds": 325
+  },
+  "alike | p": {
+   "never binds": 352
+  },
+  "alike | p and not q": {
+   "never binds": 352
+  },
+  "alike | p or not q": {
+   "binding decays": 3,
+   "binds at recurring lags only": 6,
+   "binds from some lag on": 1,
+   "never binds": 342
+  },
+  "alike | q": {
+   "never binds": 352
+  },
+  "alike | q and not p": {
+   "binding decays": 1,
+   "never binds": 351
+  },
+  "alike | q or not p": {
+   "binding decays": 2,
+   "binds at recurring lags only": 4,
+   "binds from some lag on": 1,
+   "never binds": 345
+  },
+  "alike | xnor": {
+   "binding decays": 185,
+   "binds at every lag": 16,
+   "binds at recurring lags only": 54,
+   "binds from some lag on": 7,
+   "never binds": 90
+  },
+  "alike | xor": {
+   "binding decays": 184,
+   "binds at every lag": 16,
+   "binds at recurring lags only": 57,
+   "binds from some lag on": 8,
+   "never binds": 87
+  },
+  "mixed | 0": {
+   "never binds": 7656
+  },
+  "mixed | 1": {
+   "never binds": 7656
+  },
+  "mixed | and": {
+   "binding decays": 1,
+   "never binds": 7655
+  },
+  "mixed | nand": {
+   "binding decays": 14,
+   "binds at recurring lags only": 17,
+   "binds from some lag on": 3,
+   "never binds": 7622
+  },
+  "mixed | nor": {
+   "binding decays": 15,
+   "binds at recurring lags only": 62,
+   "binds from some lag on": 7,
+   "never binds": 7572
+  },
+  "mixed | not p": {
+   "never binds": 7656
+  },
+  "mixed | not q": {
+   "never binds": 7656
+  },
+  "mixed | or": {
+   "binding decays": 18,
+   "binds at recurring lags only": 43,
+   "binds from some lag on": 7,
+   "never binds": 7588
+  },
+  "mixed | p": {
+   "never binds": 7656
+  },
+  "mixed | p and not q": {
+   "binding decays": 6,
+   "binds at recurring lags only": 14,
+   "binds from some lag on": 1,
+   "never binds": 7635
+  },
+  "mixed | p or not q": {
+   "binding decays": 24,
+   "binds at recurring lags only": 29,
+   "binds from some lag on": 12,
+   "never binds": 7591
+  },
+  "mixed | q": {
+   "never binds": 7656
+  },
+  "mixed | q and not p": {
+   "binding decays": 5,
+   "binds at recurring lags only": 15,
+   "binds from some lag on": 1,
+   "never binds": 7635
+  },
+  "mixed | q or not p": {
+   "binding decays": 11,
+   "binds at recurring lags only": 28,
+   "binds from some lag on": 6,
+   "never binds": 7611
+  },
+  "mixed | xnor": {
+   "binding decays": 3147,
+   "binds at every lag": 5,
+   "binds at recurring lags only": 1079,
+   "binds from some lag on": 42,
+   "never binds": 3383
+  },
+  "mixed | xor": {
+   "binding decays": 3194,
+   "binds at every lag": 7,
+   "binds at recurring lags only": 1004,
+   "binds from some lag on": 23,
+   "never binds": 3428
+  }
+ },
+ "configurations binding at every lag": 44,
+ "non-parity combiners binding at every lag": [],
+ "non-parity combiners binding from some lag on (or always)": 53,
+ "non-parity examples binding from some lag on": [
+  [
+   9,
+   9,
+   4,
+   4,
+   "or",
+   4
+  ],
+  [
+   27,
+   27,
+   4,
+   4,
+   "nor",
+   7
+  ],
+  [
+   36,
+   36,
+   4,
+   4,
+   "nor",
+   5
+  ],
+  [
+   36,
+   36,
+   4,
+   4,
+   "nand",
+   3
+  ],
+  [
+   41,
+   41,
+   4,
+   4,
+   "or",
+   6
+  ],
+  [
+   44,
+   44,
+   4,
+   4,
+   "nor",
+   5
+  ],
+  [
+   45,
+   45,
+   4,
+   4,
+   "and",
+   4
+  ],
+  [
+   57,
+   57,
+   4,
+   4,
+   "and",
+   3
+  ],
+  [
+   57,
+   57,
+   4,
+   4,
+   "or",
+   3
+  ],
+  [
+   60,
+   60,
+   4,
+   4,
+   "nand",
+   4
+  ],
+  [
+   60,
+   60,
+   4,
+   4,
+   "q or not p",
+   4
+  ],
+  [
+   60,
+   60,
+   4,
+   4,
+   "p or not q",
+   4
+  ],
+  [
+   60,
+   60,
+   4,
+   4,
+   "or",
+   4
+  ],
+  [
+   62,
+   62,
+   4,
+   4,
+   "nand",
+   3
+  ],
+  [
+   172,
+   172,
+   4,
+   4,
+   "nor",
+   6
+  ],
+  [
+   22,
+   22,
+   5,
+   6,
+   "nor",
+   5
+  ],
+  [
+   6,
+   60,
+   3,
+   4,
+   "p or not q",
+   7
+  ],
+  [
+   6,
+   60,
+   3,
+   4,
+   "or",
+   7
+  ],
+  [
+   22,
+   60,
+   3,
+   4,
+   "p or not q",
+   7
+  ],
+  [
+   22,
+   60,
+   3,
+   4,
+   "or",
+   7
+  ],
+  [
+   24,
+   36,
+   3,
+   4,
+   "p or not q",
+   3
+  ],
+  [
+   24,
+   58,
+   3,
+   4,
+   "or",
+   13
+  ],
+  [
+   25,
+   36,
+   3,
+   4,
+   "p or not q",
+   3
+  ],
+  [
+   26,
+   57,
+   3,
+   4,
+   "p or not q",
+   9
+  ],
+  [
+   30,
+   36,
+   3,
+   4,
+   "nor",
+   4
+  ],
+  [
+   30,
+   44,
+   3,
+   4,
+   "nor",
+   5
+  ],
+  [
+   30,
+   60,
+   3,
+   4,
+   "p or not q",
+   4
+  ],
+  [
+   30,
+   60,
+   3,
+   4,
+   "or",
+   4
+  ],
+  [
+   30,
+   154,
+   3,
+   4,
+   "nor",
+   8
+  ],
+  [
+   30,
+   172,
+   3,
+   4,
+   "nor",
+   5
+  ],
+  [
+   40,
+   132,
+   3,
+   4,
+   "nor",
+   3
+  ],
+  [
+   41,
+   26,
+   3,
+   4,
+   "p and not q",
+   8
+  ],
+  [
+   44,
+   27,
+   3,
+   4,
+   "q and not p",
+   10
+  ],
+  [
+   44,
+   37,
+   3,
+   4,
+   "q or not p",
+   6
+  ],
+  [
+   44,
+   74,
+   3,
+   4,
+   "q or not p",
+   7
+  ],
+  [
+   44,
+   138,
+   3,
+   4,
+   "nor",
+   13
+  ],
+  [
+   54,
+   60,
+   3,
+   4,
+   "p or not q",
+   7
+  ],
+  [
+   54,
+   60,
+   3,
+   4,
+   "or",
+   7
+  ],
+  [
+   58,
+   57,
+   3,
+   4,
+   "p or not q",
+   9
+  ],
+  [
+   62,
+   60,
+   3,
+   4,
+   "nand",
+   4
+  ]
+ ],
+ "parity combiners: feedback against the listening counterpart": {
+  "listening binds at every lag, shared binds": 36,
+  "listening binds at every lag, shared fails": 13068,
+  "listening fails at every lag, shared binds": 8,
+  "listening fails at every lag, shared fails": 2904
+ },
+ "examples where feedback changes the verdict": {
+  "listening binds at every lag, shared fails": [
+   [
+    1,
+    1,
+    3,
+    4,
+    "xor",
+    "never binds"
+   ],
+   [
+    1,
+    1,
+    3,
+    4,
+    "xnor",
+    "never binds"
+   ],
+   [
+    2,
+    2,
+    3,
+    4,
+    "xor",
+    "never binds"
+   ],
+   [
+    2,
+    2,
+    3,
+    4,
+    "xnor",
+    "never binds"
+   ],
+   [
+    3,
+    3,
+    3,
+    4,
+    "xor",
+    "never binds"
+   ],
+   [
+    3,
+    3,
+    3,
+    4,
+    "xnor",
+    "never binds"
+   ],
+   [
+    4,
+    4,
+    3,
+    4,
+    "xor",
+    "never binds"
+   ],
+   [
+    4,
+    4,
+    3,
+    4,
+    "xnor",
+    "never binds"
+   ],
+   [
+    5,
+    5,
+    3,
+    4,
+    "xor",
+    "binding decays"
+   ],
+   [
+    5,
+    5,
+    3,
+    4,
+    "xnor",
+    "binding decays"
+   ],
+   [
+    7,
+    7,
+    3,
+    4,
+    "xor",
+    "binding decays"
+   ],
+   [
+    7,
+    7,
+    3,
+    4,
+    "xnor",
+    "binding decays"
+   ]
+  ],
+  "listening fails at every lag, shared binds": [
+   [
+    60,
+    60,
+    3,
+    4,
+    "xor",
+    "binds at every lag"
+   ],
+   [
+    60,
+    60,
+    3,
+    4,
+    "xnor",
+    "binds at every lag"
+   ],
+   [
+    60,
+    60,
+    4,
+    4,
+    "xor",
+    "binds at every lag"
+   ],
+   [
+    60,
+    60,
+    4,
+    4,
+    "xnor",
+    "binds at every lag"
+   ],
+   [
+    105,
+    90,
+    3,
+    4,
+    "xor",
+    "binds at every lag"
+   ],
+   [
+    105,
+    90,
+    3,
+    4,
+    "xnor",
+    "binds at every lag"
+   ],
+   [
+    150,
+    90,
+    3,
+    4,
+    "xor",
+    "binds at every lag"
+   ],
+   [
+    150,
+    90,
+    3,
+    4,
+    "xnor",
+    "binds at every lag"
+   ]
+  ]
+ },
+ "rules (alike) binding at every lag under XOR at every declared size": [],
+ "longest repeat": 3865,
+ "seconds": 6.8
+}

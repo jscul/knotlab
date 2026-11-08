@@ -4081,8 +4081,25 @@ So network holes come in two kinds:
    - **Reading.** The question is still open, now with a sharp shape: either some plane obeys the law while its parents break it,
      probably a crystal outside the domino family, or all those off-law parents die further out and one bit per tile forces the
      pinwheel.
-   - **Next (awaiting a go-ahead).** A crystal built from the surviving parent collars, searched on tori one level up (Payoff 2/3,
-     Concreteness 2/3) ([decision note](../research/LAST-BIT-20261108-001/last_bit.md)).
+   - **Next (taken).** A crystal built from the surviving parent collars (next entry)
+     ([decision note](../research/LAST-BIT-20261108-001/last_bit.md)).
+
+   **2026-11-08: one bit per tile never forces the pinwheel** (`CRYSTAL-UP-20261108-001`).
+   - **The question.** Build a crystal one level up for the last decoration, 10101 / 00110: a periodic parent tiling whose labelled
+     collars all lie among the parent collars that survived every local test, some of them not pinwheel collars.
+   - **It exists (exploratory, then proved).** Growing tori from those collars, on lattices spanned by periods seen in their own
+     patches, completes 26 periodic parent tilings of 8 to 40 tiles per period. In each, half the tiles are turned by arctan(4/3),
+     twice the pinwheel's angle, from the other half. Their collars include some that are not pinwheel collars, and one cut later
+     every labelled collar is the decorated pinwheel's. Independent code checks them, and one escape for each of the other seven
+     open classes.
+   - **So all 1,024 one-bit decorations fail.** Each lets a periodic plane through at every radius: one hidden bit per tile, placed
+     by a decorated substitution, never forces the pinwheel.
+   - **Reading.** The price of roundness in the plane is more than one bit per tile, counted as labels a decorated substitution sets.
+     The earlier crystals hid their seams in domino tilings; these hide them where two orientations meet, which one cut turns into
+     pinwheel collars. A correction rode along: the forcing route of the previous entry needed every off-law parent collar to die,
+     not only the non-pinwheel ones (not a block).
+   - **Next (proposed).** Leave the pinwheel for G1's measure itself: is bond distance the only native spacing (a challenge of A12)?
+     Two bits per tile and edge labels stay in the backlog ([decision note](../research/CRYSTAL-UP-20261108-001/crystal_up.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

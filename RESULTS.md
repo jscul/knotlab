@@ -24,8 +24,8 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 75 results
-- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 36 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 74 results
+- [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 37 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
@@ -567,9 +567,6 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-07 · A uniform law can grow flat space but not the knot's contradiction** (`UNIFORM-SPHERES-20261107-001-D001`).
   A law of lines and co-lines builds its own closed surface; with one kind of point it closes into a sphere only as an antiprism or a snub polyhedron of at most 60 points. With uniform signs the count never forces the knot's lines on any uniform law, and Kasteleyn signs make the knot fail only on those small spheres or antiprism chains solvable in O(log n) queries, so a deep contradiction needs a second kind of point.
   [proof P001](proofs/UNIFORM-SPHERES-20261107-001A/UNIFORM-SPHERES-20261107-001A-P001_uniform_laws_never_contradict_themselves/proof.md), [epic closure](proofs/UNIFORM-SPHERES-20261107-001Z/UNIFORM-SPHERES-20261107-001Z-P001_epic_closure/proof.md)
-- **2026-11-08 · One hidden bit per tile never forces the pinwheel** (`CRYSTAL-UP-20261108-001-D001`).
-  Every one of the 1,024 decorated substitutions of the pinwheel on two labels admits a periodic plane obeying its law at every radius. The last falls to crystals built from its surviving parent collars, the smallest with 8 tiles per period, half of them turned by twice the pinwheel angle from the other half.
-  [proof P001](proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/proof.md), [epic closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · Creation between glue lines sees only the switching class** (`SWITCH-PROOF-20261108-001-D001`).
   For every cubic glue and every two signings in one switching class, removing a glue line and gluing at another gives the same native creation verdict in the two plain edge-atom spaces, because an intact atom only negates its incidence and switching only complements points. Creation between glue lines is the signed glue's own creation map.
   [proof P001](proofs/SWITCH-PROOF-20261108-001A/SWITCH-PROOF-20261108-001A-P001_creation_between_glue_lines_sees_only_the_switching_class/proof.md), [epic closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md)
@@ -687,6 +684,9 @@ Which local laws survive the moves of a space, with and without signs, the self-
 - **2026-11-08 · The pinwheel's collar law forces one level of its hierarchy** (`COLLAR-PLANE-20261108-001-D002`).
   In every tiling whose collars all occur in pinwheel tilings, each collar names its tile's parent and touching siblings agree, so the tiling is the cut of a tiling by larger triangles whose collars lie in a finite level-one law of 1,264 collars per handedness; that law admits the rhombus lattice, so composition is forced one level and no further.
   [proof P001](proofs/COLLAR-PLANE-20261108-001B/COLLAR-PLANE-20261108-001B-P001_the_collar_law_forces_one_level/proof.md), [epic closure](proofs/COLLAR-PLANE-20261108-001Z/COLLAR-PLANE-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-08 · One hidden bit per tile never forces the pinwheel** (`CRYSTAL-UP-20261108-001-D001`).
+  Every one of the 1,024 decorated substitutions of the pinwheel on two labels admits a periodic plane obeying its law at every radius. The last falls to crystals built from its surviving parent collars, the smallest with 8 tiles per period, half of them turned by twice the pinwheel angle from the other half.
+  [proof P001](proofs/CRYSTAL-UP-20261108-001B/CRYSTAL-UP-20261108-001B-P001_every_one_bit_decoration_admits_a_crystal/proof.md), [epic closure](proofs/CRYSTAL-UP-20261108-001Z/CRYSTAL-UP-20261108-001Z-P001_epic_closure/proof.md)
 - **2026-11-08 · One hidden bit per tile rarely forces the pinwheel** (`ROUND-PRICE-20261108-001-D001`).
   Labels read from a bounded window of the pinwheel tiling never force aperiodicity, and of the 1,024 decorated substitutions on two labels 1,008 still admit a periodic plane at every radius, a cut rhombus or brick crystal with a periodic labelling; in the other 16 the bit forces every parent's label, but pairwise consistency leaves labelled parent collars outside the law, so whether one of them forces the pinwheel is open.
   [proof P001](proofs/ROUND-PRICE-20261108-001A/ROUND-PRICE-20261108-001A-P001_one_hidden_bit_against_the_crystal/proof.md), [proof P001](proofs/ROUND-PRICE-20261108-001B/ROUND-PRICE-20261108-001B-P001_labelled_composition_for_the_survivors/proof.md), [epic closure](proofs/ROUND-PRICE-20261108-001Z/ROUND-PRICE-20261108-001Z-P001_epic_closure/proof.md)

@@ -66,7 +66,7 @@ evidence: results and their status come from the records each entry links.
 | [A9](#a9--native-knots-are-opened-by-finite-changes) | Native knots are opened by finite changes | reading | Assumed |
 | [A10](#a10--the-base-distinction-is-a-bit) | The base distinction is a bit | scope | Assumed |
 | [A11](#a11--hubs-are-a-declared-substrate-never-contact) | Hubs are a declared substrate, never contact | scope | Assumed |
-| [A12](#a12--bond-distance-is-a-laws-own-spacing) | Bond distance is a law's own spacing | measure | Assumed |
+| [A12](#a12--bond-distance-is-a-laws-own-spacing) | Bond distance is a law's own spacing | measure | Under challenge |
 | [A13](#a13--witness-variables-are-part-of-a-law-not-a-drawing) | Witness variables are part of a law, not a drawing | reading | Assumed |
 | [A14](#a14--a-growing-laws-history-is-a-hidden-witness) | A growing law's history is a hidden witness | reading | Confirmed |
 | [A15](#a15--every-coherent-alternative-is-co-real) | Every coherent alternative is co-real | interpretation | Assumed |
@@ -317,7 +317,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A12 · Bond distance is a law's own spacing
 
-**Assumed** · 2026-10-21 · measure
+**Under challenge** · 2026-11-08 · measure
 
 - **Statement.** The spacing a law sets between two distinctions is their bond distance: the size of the least knot through
   both, minus one, read from the allowed states alone. Dimension is read from how fast bond balls grow, and a circle is the
@@ -332,6 +332,8 @@ evidence: results and their status come from the records each entry links.
   one, so the two agree there, but they need not agree elsewhere. A challenge would compare them on the laws already measured
   and ask whether any dimension or circle changes.
 - **History.**
+  - 2026-11-08 · Under challenge by `BOND-CHAIN-20261108-001`: chain distance counted in knots and in distinctions, against bond
+    distance, on parity laws and on non-matroidal laws.
   - 2026-11-07 · Used as the measure of space from a law (`LOGIC-AXIS-20261107-001`).
   - 2026-10-21 · Defined from the allowed states of a declared substrate (`NATIVE-NETWORK-20261021-001`).
 
@@ -827,6 +829,8 @@ evidence: results and their status come from the records each entry links.
   The cheapest test runs the rhombus crystal against one-bit edge labellings of the pinwheel's collars; if some edge bit excludes
   every crystal that all one-bit tile decorations admit, the measure misplaces the price.
 - **History.**
+  - 2026-11-08 · Under this count, one bit per tile never forces the pinwheel: all 1,024 one-bit decorations admit a crystal
+    (`CRYSTAL-UP-20261108-001`). The challenge (bits on edges) keeps its interest: whether the count depends on where the bits sit.
   - 2026-11-08 · Bears on it: `ONE-BIT-20261108-001`. Under this measure one bit per tile fails in 1,022 of 1,024 cases, and one
     decoration, up to relabelling, is open.
   - 2026-11-08 · Added by `ROUND-PRICE-20261108-001`.

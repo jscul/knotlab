@@ -788,10 +788,12 @@ evidence: results and their status come from the records each entry links.
   - **Back to Assumed**, if the best candidate families meet a recurring reading at every decided size but some sizes stay
     undecided.
 - **History.**
-  - 2026-11-08 · Overturned by `RECUR-PATH-20261108-001`, by the rule pre-registered above. 452 families of paths compose at
-    recurring lags with every contact persistent at every size of their schedule: 256 with contacts two apart on rings of 4 to 9
-    cells, every ring on rule 60 or 102, and 196 growing from 4 to 9 rings. Under this reading no family composes at two sizes. All
-    452 are verified by an independent computation at every size and on their full state spaces at the two smallest. Replaced by
+  - 2026-11-08 · Counts corrected: the census listed each two-apart family four times. The distinct counts are 64 two-apart
+    families and 260 in all, and `RECUR-PROOF-20261108-001` proved the 64 at every ring size and length. The outcome stands.
+  - 2026-11-08 · Overturned by `RECUR-PATH-20261108-001`, by the rule pre-registered above. 260 families of paths (first counted as
+    452) compose at recurring lags with every contact persistent at every size of their schedule: 64 with contacts two apart on rings
+    of 4 to 9 cells, every ring on rule 60 or 102, and 196 growing from 4 to 9 rings. Under this reading no family composes at two
+    sizes. All are verified by an independent computation at every size and on their full state spaces at the two smallest. Replaced by
     A37. Of what rested on it, `PROCESS-CHAIN-20261108-001`'s finding stands under both readings, since its uniform chains never
     composed at recurring lags with both contacts persistent either
     ([composition at recurring lags](../research/RECUR-PATH-20261108-001/recur_path.md)).
@@ -863,9 +865,14 @@ evidence: results and their status come from the records each entry links.
 - **Why.** `RECUR-PATH-20261108-001` overturned A34 by its pre-registered rule, and this reading replaces it. Under it, composition
   across time survives every growth tested; under A34 it survives none
   ([composition at recurring lags](../research/RECUR-PATH-20261108-001/recur_path.md)).
-- **Rests on it.** The 452 families of `RECUR-PATH-20261108-001` as native networks across time that transport.
+- **Rests on it.** The 260 families of `RECUR-PATH-20261108-001` as native networks across time that transport, 64 of them proved at
+  every ring size and length (`RECUR-PROOF-20261108-001`).
 - **Challenge.** Ask more of the composing lags: that a knot of the path itself reads them, or that they make up a fixed share of
   every cycle at every size. The cheapest test proves or refutes, for the rule-60 family, that the composing share stays positive at
   every ring size.
 - **History.**
+  - 2026-11-08 · Bears on it: `RECUR-PROOF-20261108-001` proved that the two-apart paths with rule 60 or 102 compose under this reading
+    at every ring size and length, the far contact needing the first ring exactly when one binomial coefficient is odd; their
+    composing share is 2^(−w), positive at every size
+    ([recurring composition at every ring size](../research/RECUR-PROOF-20261108-001/recur_proof.md)).
   - 2026-11-08 · Added by `RECUR-PATH-20261108-001`, replacing A34.

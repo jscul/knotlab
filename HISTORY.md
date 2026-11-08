@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 8 November 2026: the recurring-lag census counted families twice over
+
+- RECUR-PATH-20261108-001 reported 452 families of paths that compose at
+  recurring lags with every contact persistent at every size, 256 of them with
+  contacts two apart. Each two-apart family had been listed four times, so the
+  counts are 64 two-apart families and 260 in all, and 4,096 (not 16,384) with
+  contacts binding at the composing lags.
+- Unchanged: every verdict, and the overturn of A34, which needs one family.
+  RECUR-PROOF-20261108-001 then proved the 64 at every ring size and length
+  ([decision note](research/RECUR-PATH-20261108-001/recur_path.md)).
+
 ## 8 November 2026: intermittent composition can pass the gate
 
 - INTERMITTENT-NET-20261108-001 kept the strict reading of composition across
@@ -10,7 +21,7 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   contact gate asks for persistence, which intermittent composition fails".
 - The gate asks every contact to persist and the composition to survive the
   admitted transports; it does not ask for binding at every lag.
-  RECUR-PATH-20261108-001 found 452 families of paths whose contacts all
+  RECUR-PATH-20261108-001 found 260 families of paths whose contacts all
   persist and which compose at recurring lags, fixed by their own dynamics, at
   every size tested, while under A34 none composes at two sizes. A34 was
   overturned by that challenge's pre-registered rule and replaced by A37.

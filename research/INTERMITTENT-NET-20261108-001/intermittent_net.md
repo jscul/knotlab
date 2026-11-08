@@ -60,7 +60,7 @@ mix rules and laws.
 
 Logged in `docs/CORRECTIONS.md` as not a block. The reading and the workspace-assumptions section kept A34 for the gate because the
 gate "asks for persistence, which intermittent composition fails". The gate asks persistence of every contact and composition that
-survives the admitted transports. `RECUR-PATH-20261108-001` found 452 families of paths with every contact persistent that compose
+survives the admitted transports. `RECUR-PATH-20261108-001` found 260 families (first counted as 452) of paths with every contact persistent that compose
 at recurring lags at every size tested, while under A34 none composes at two sizes. A34 was overturned by that challenge's
 pre-registered rule and replaced by A37.
 

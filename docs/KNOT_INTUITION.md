@@ -1617,13 +1617,13 @@ So network holes come in two kinds:
    - **The challenge.** A34 read composition as the far contact binding both ends at every lag. The alternative reads it at the
      recurring lags the path's own dynamics fixes, with every contact persistent. What each outcome would mean for A34 was recorded in
      the register before the census ran.
-   - **The census (exploratory, exact).** On the growth families (one linear rule per ring, every law), 452 families compose at
-     recurring lags with every contact persistent at every size:
-     - **Rings growing.** 256 with contacts two apart on rings of 4 to 9 cells, every ring on rule 60 or 102, the one-sided additive
+   - **The census (exploratory, exact).** On the growth families (one linear rule per ring, every law), 260 families compose at
+     recurring lags with every contact persistent at every size (counts corrected on 2026-11-08: the census had listed each two-apart family four times):
+     - **Rings growing.** 64 with contacts two apart on rings of 4 to 9 cells, every ring on rule 60 or 102, the one-sided additive
        rules.
      - **Paths growing.** 196 from 4 to 9 rings, with frozen or rule-90 end rings and middle rings on 90, 60 or 102.
      - **Against A34.** Under the every-lag reading, no family composes at two sizes.
-     - **Verified.** An independent computation agrees for all 452 at every size, and the full state spaces at the two smallest. The
+     - **Verified.** An independent computation agrees for all of them at every size, and the full state spaces at the two smallest. The
        far contact composes at 12.5% to 62.5% of its cycle.
    - **A slip caught.** The first run's every-lag control failed on a bug in that check. The rerun fixes it, changes nothing else and
      passes.
@@ -1635,8 +1635,25 @@ So network holes come in two kinds:
      - **The recurring family.** Again affine.
    - **Provenance.** Linear recurring sequences over GF(2); strobed composition (`INTERMITTENT-NET-20261108-001A`). New as far as
      found.
-   - **Next (awaiting a go-ahead).** A proof that the rule-60 family composes this way at every ring size (Payoff 3/3, Concreteness
-     2/3); then the gate's restrictions ([decision note](../research/RECUR-PATH-20261108-001/recur_path.md)).
+   - **Next (taken).** A proof that the rule-60 family composes this way at every ring size (next entry)
+     ([decision note](../research/RECUR-PATH-20261108-001/recur_path.md)).
+
+   **2026-11-08: proved, at every ring size and every length** (`RECUR-PROOF-20261108-001`).
+   - **A contact and its partners (proved).** If a contact reads two cells that each read only it and themselves, their sum never
+     changes, so the contact depends on both of their first values at every lag. Each contact of these paths is such a loop.
+   - **The theorem (proved).** In paths whose rings run rule 60 or 102 with contacts two apart, every contact binds both its rings at
+     every lag, at every ring size s ≥ 4. The far contact needs the first ring exactly at the lags where C(T − 3, m) is odd, with m
+     equal to 2, s − 2 or 2s − 6: a recurring set of density 2^(−w), w the number of ones in m (Lucas). So composition at recurring
+     lags holds at every ring size, and composition at every lag at none.
+   - **Every length (proved).** With n rings the far contact needs the first ring exactly when C(T − (n − 1), e) is odd, e summing
+     k_j − 1 over the middle rings.
+   - **Scope.** Rule 102 is covered by mirror symmetry. The rule-90 families are not: their contacts mostly lack two partners, and
+     their composing shares, such as 1/3, are not powers of two.
+   - **Reading.** Under A37 these are native networks across time that transport, by proof. The census's counts had repeats and are
+     corrected (`docs/CORRECTIONS.md`).
+   - **Provenance.** Pascal's triangle mod 2 and Lucas' theorem (Lucas 1878; Martin, Odlyzko and Wolfram 1984). Known-with-delta.
+   - **Next (recommended, awaiting the coordinator).** Native separation and cycles of rings on the proved families (backlog B12, its
+     own thread; Payoff 3/3, Concreteness 3/3) ([decision note](../research/RECUR-PROOF-20261108-001/recur_proof.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

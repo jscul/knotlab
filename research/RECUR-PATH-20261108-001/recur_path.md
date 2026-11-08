@@ -40,10 +40,10 @@ Recorded in `docs/ASSUMPTIONS.md` (A34, Challenge) and in the contract before th
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Composition at recurring lags transports.** 452 families compose at recurring lags with every contact persistent at every size of their schedule. 256 have contacts two apart on rings of 4 to 9 cells, with rule 60 or 102 on every ring. 196 grow from 4 to 9 rings, with frozen (204) or rule-90 end rings and middle rings on 90, 60 or 102. No undecided case. | exploratory census (E002), exact | A |
+| 1 | **Composition at recurring lags transports.** 260 families (452 as first counted) compose at recurring lags with every contact persistent at every size of their schedule. 64 (first counted as 256) have contacts two apart on rings of 4 to 9 cells, with rule 60 or 102 on every ring. 196 grow from 4 to 9 rings, with frozen (204) or rule-90 end rings and middle rings on 90, 60 or 102. No undecided case. | exploratory census (E002), exact | A |
 | 2 | **Under A34 nothing transports.** In the same census no family composes at every lag at two sizes, as `PATH-GROWTH-20261108-001` found. | exploratory, exact | A |
-| 3 | **The weaker reading transports more.** With every contact binding at the composing lags but not necessarily at every lag, 16,384 families compose at every size with contacts two apart, 1,016 in the longer schedule and 748 with antipodal contacts. | exploratory, exact | A |
-| 4 | **The 452 are verified.** An independent computation by path_lib agrees for all 452 at every size. The full state spaces agree at the two smallest sizes (904 of 904 paths) and for eight families at the third (21 bits). The last contact composes at 12.5% to 62.5% of its cycle, of period 4 to 24. | computed (`verify_recurring.json`) | A |
+| 3 | **The weaker reading transports more.** With every contact binding at the composing lags but not necessarily at every lag, 4,096 families (first counted as 16,384) compose at every size with contacts two apart, 1,016 in the longer schedule and 748 with antipodal contacts. | exploratory, exact | A |
+| 4 | **The 260 are verified.** An independent computation by path_lib agrees for all of them at every size. The full state spaces agree at the two smallest sizes (every path, each family counted once or more) and for eight families at the third (21 bits). The last contact composes at 12.5% to 62.5% of its cycle, of period 4 to 24. | computed (`verify_recurring.json`) | A |
 
 ## Answer
 
@@ -55,7 +55,7 @@ reads it, it survives none. The recurring reading replaces A34 as A37.
 
 **Interpretation, not a theorem.**
 - **For the network gate.** Two complete contacts form a native network when they compose by a substrate-native law and keep
-  composing under the admitted transports. Under A37 the 452 families do both:
+  composing under the admitted transports. Under A37 the 260 families do both:
   - every contact persists;
   - the composing lags are fixed by the path's own dynamics;
   - composition survives every growth tested.
@@ -72,10 +72,18 @@ reads it, it survives none. The recurring reading replaces A34 as A37.
 
 | Claim | Check | Result |
 | --- | --- | --- |
-| 452 families compose at recurring lags with persistent contacts at every size (A) | independent row sequences (path_lib) at every size; full state spaces at the two smallest sizes and, for eight families, the third | pass: 452 of 452; 904 of 904; 8 of 8 |
+| 260 families compose at recurring lags with persistent contacts at every size (A) | independent row sequences (path_lib) at every size; full state spaces at the two smallest sizes and, for eight families, the third | pass: all of them (counted 452 and 904 with repeats); 8 of 8 |
 | The census's every-lag reading (A) | its control against `PATH-GROWTH-20261108-001A` | E001 failed (a bug that skipped cycle lags before the light cone); E002, with the fix and nothing else changed, passes |
 
 The schedules stop at 9 cells and 9 rings, the declared one size past the full levels. A proof for every size is the next step.
+
+## Correction (2026-11-08, the count)
+
+Logged in `docs/CORRECTIONS.md` as not a block. The census listed each two-apart family four times: at four cells all four labels of
+its positions give the same path, and each copy was followed under all four labels. The distinct counts are 64 two-apart families with
+every contact persistent at every size (first counted as 256), 260 in all (452), and 4,096 with contacts binding at the composing
+lags (16,384). The antipodal and longer counts were right. The outcome for A34 does not change. `RECUR-PROOF-20261108-001` then proved
+the 64 two-apart families at every ring size.
 
 ## Literature and provenance
 
@@ -109,7 +117,7 @@ Carried from earlier epics:
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — challenge A34 by transport | **Status:** Successful | A34 overturned as pre-registered: 452 families compose at recurring lags at every size, none at every lag |
+| This attempt — challenge A34 by transport | **Status:** Successful | A34 overturned as pre-registered: 260 families compose at recurring lags at every size, none at every lag |
 | Local direction — paths across time | Continue | Under A37 composition transports; a proof for every size and the gate's restrictions are next |
 | Broader exploration — G5 with G1 | Known alternatives | Native separation and cycles of rings (B12), now with families that transport; nonlinear paths (B10) |
 | Long-term goal — G5 Dynamics (question 4) | Capability gained | Under A37, native networks across time survive growth |
@@ -130,7 +138,7 @@ Carried from earlier epics:
 | --- | --- | --- | --- | --- | --- |
 | 1 | Prove recurring composition at every size (G5, with G1) | 3/3 — Major | 2/3 — Testable | For rule 60 on every ring with contacts two apart, write M^T by binomial coefficients mod 2 (Lucas) and show that every contact's row meets its rings at every lag and the last contact's meets the ends at a fixed share of each cycle → a theorem for every ring size, or the size where it fails | Selected · not started |
 | 2 | Native separation and cycles of rings on families that transport (backlog B12) | 3/3 — Major | 2/3 — Testable | Parked for its own thread; the 452 families are in this epic's `families.json` | Backlog |
-| 3 | The gate's restrictions under A37 (G5) | 2/3 — Substantial | 3/3 — Ready | Restrict the 452 families to admitted subsystems and recheck every reading → which restrictions keep composition | Alternative · deferred |
+| 3 | The gate's restrictions under A37 (G5) | 2/3 — Substantial | 3/3 — Ready | Restrict the 260 families to admitted subsystems and recheck every reading → which restrictions keep composition | Alternative · deferred |
 | 4 | Nonlinear paths at recurring lags (backlog B10) | 2/3 — Substantial | 1/3 — Stated | Parked | Backlog |
 
 1. **Prove it at every size.**
@@ -140,7 +148,7 @@ Carried from earlier epics:
      open part.
    - **Uncertainty.** Whether the feedback at the contacts keeps a closed form.
 2. **Separation on these families.** Ties with direction 1 and runs in its own thread.
-3. **Restrictions.** Cheap on the 452 families, and the gate's last open item.
+3. **Restrictions.** Cheap on the 260 families, and the gate's last open item.
 4. **Nonlinear paths.** No method beyond search yet.
 
 **Recommendation.** Continue with direction 1. If the proof stalls on the contacts' feedback, settle for the restrictions

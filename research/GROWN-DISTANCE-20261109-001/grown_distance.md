@@ -139,3 +139,31 @@ confirmation narrowed.
 
 **Recommendation.** Research directions, selected #1 within the thread cap; stop it at the first insertion schedule whose lengths and
 balls are read exactly, or at the insertion that breaks persistence.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 19:42 UTC and copied here verbatim.
+
+**Distance in a grown network (B19) is closed and published.** The grown torus reads distance with freezing at every stage. Without freezing, only its first stage reads it. ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROWN-DISTANCE-20261109-001/grown_distance.md))
+
+- **With freezing (proved):** every stage of band growth reads the cut length D and the time length g·δ + 1 exactly.
+- **Without freezing (proved):** the n × 2 ladder, the first band, is on time at every size. So is every square torus whose lattice holds (2, 0). From the second band on, every stage except 3 × 3 is late.
+- **Balls (proved):** the band law makes a tube. Balls grow like the plane's (2r² + 2r + 1) out to half the loop, then by 2n rings per step. That is dimension 2 at short range and 1 beyond.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the grown torus | Successful | Every stage has a proved verdict for both freeze lengths and the plain reading; balls in closed form |
+| Local direction: distance in a grown network | Research directions | Stage by stage is settled; growth while the network runs is open |
+| Broader exploration: G1 with G5 | Known alternatives | Growth chosen by the dynamics (B23); handles from two bands (B22) |
+| Long-term goal: G1 Space from a law | Obstruction learned | The band law grows a line of loops, not a plane |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Growth while running (B24) | 3/3 | 2/3 | Insert a band into a running 3 × m tube; read persistence across it and the first need across it, then a band every P lags → lengths and balls of a network growing in time, or the insertion that breaks persistence |
+| 2 | Growth chosen by the dynamics (B23) | 3/3 | 1/3 | Let a contact's needs pick the band's direction → a law that fixes the dimension, or none |
+| 3 | Thin tubes as theorems | 1/3 | 3/3 | Handed to the rescued-maps thread |
+| 4 | Handles from two bands (B22) | 2/3 | 1/3 | Glue a band pair as a handle → a genus-2 network, or none |
+
+**Corrections:** one, Narrowing. Yesterday's "exactly 26 tori read distance plainly" holds only for regular tori. The ladders (proved) and two other thin families (computed to index 100 and 80, stress-tested past that) are on time at every size. It's logged in CORRECTIONS.md and knotlab's [HISTORY.md](https://github.com/jscul/knotlab/blob/main/HISTORY.md). **Goals:** G1 and G5 checkpoint; B19 taken, B24 added. **Assumptions:** A42 and A43 added (each stage read as a fixed network; bands added along the seed loop), and A41's confirmation narrowed.
+
+I recommend #1 next.

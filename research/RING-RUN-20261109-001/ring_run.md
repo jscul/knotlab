@@ -92,3 +92,28 @@ Since the epic opened:
 2. **Clean lags.** Payoff 1: a curiosity of two tubes; Concreteness 3: the state is in hand.
 
 **Recommendation.** Research directions, selected #1 at the coordinator's instruction; #2 is not parked (a curiosity).
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:35 UTC and copied here verbatim.
+
+A ring inserted while running (B37) is closed and published (RING-RUN-20261109-001). The answer is that single-ring growth, like band growth, has to come between runs.
+- **What it hasn't reached survives (census, pre-registered).** On 19 twist tubes, with both splits and every lag read, no ring outside the insertion's reach loses a binding, and the new ring is bound at every lag. That's what GROW-RUN's theorems predict for any rewiring round a gap.
+- **About half of what it reaches breaks.** 53% of reached bindings fail when the three rewired contacts keep their values, and 51% when they're born fresh. A band breaks 68%, so a ring is gentler but not safe.
+- **Clean lags are rare.** Only lag 0 is clean with kept values, and lags 0 to 2 with fresh ones, except on the 5- and 7-ring tubes at g = 4, where many lags are clean (unexplained).
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: a ring inserted while running | Successful | Clear answer: causal damage, about half of what's reached, no rescue |
+| Local direction: growth in time | Research directions | Running insertion breaks reached knots for rings as for bands |
+| Broader exploration: G1 with G5 | Known alternatives | A plane read plainly beyond tori (B36, next) |
+| Long-term goal: G1 Space from a law | Obstruction learned | A law that grows while it runs keeps only its young knots, ring by ring as band by band |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | A plane read plainly beyond tori (B36) | 3/3 | 1/3 | As in the backlog (starting now) |
+| 2 | The clean lags at g = 4 | 1/3 | 3/3 | Read the 5-ring tube's state at its clean lags → why reached bindings survive there |
+
+**Corrections:** none. **Goals:** a G1 and G5 checkpoint (obstruction learned); B37 marked taken; B36 selected. **Assumptions:** none added or changed.
+
+Commits on main: 18a82abb9 (pre-registration), c08b94272 (amendment before the first run: the 7-ring tubes' state periods are 2,044 and 10,920, so their lags were capped at 64), 21b2c2b59 (the epic), cad2af392 (shared docs). The run took 86 seconds. Starting B36 now.

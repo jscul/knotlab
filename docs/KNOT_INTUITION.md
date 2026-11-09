@@ -1909,6 +1909,23 @@ So network holes come in two kinds:
      arrived.
    - **Next (selected).** Growth chosen by the dynamics, where influence has not arrived (B23)
      ([decision note](../research/GROW-RUN-20261109-001/grow_run.md)).
+
+   **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
+   - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues
+     the cover's late rings. Which tori do, of every shape, and why does a short loop rescue while its mirror image does not?
+   - **Short loops with one fastest way (proved).** A torus is on time exactly when it holds a short loop along which the fastest way
+     to every ring is a single route, or is one of finitely many small tori (23 square, 85 triangular, 15 honeycomb, listed). The
+     loops are (2, 0) and (2, 1) on the square lattice, up to the quarter turn, and every vector of length √3 on the triangular one;
+     the honeycomb has none. The rescue is not a third route that makes a count odd: it is a strictly shorter route round the loop.
+   - **Why the mirror fails (proved).** Along the loop (1, 2) the fastest routes climb two rings per two arcs and can take their side
+     step at any of j places, so a closest contact has j routes and is late whenever j is even, first at distance 4. Rule 60 reads one
+     way round every ring, so a loop and its mirror image are different substrates.
+   - **How it was proved.** The systole lemma holds for every cover, so a late tube makes every thick torus it covers late; the two
+     thin tubes are proved on time by local conditions checked on one period; the finitely many tori in between are read exactly.
+   - **Reading.** Thin reads plainly, thick needs freezing: apart from small cases, a flat torus reads its own distance without
+     intervention only when it is a tube with a unique fastest way along it, as a loop of rings is. No lag cutoff was used.
+   - **Next (selected, B21).** Which lattices compose everywhere; rescue on maps of higher genus is backlog B27
+     ([decision note](../research/RESCUE-MAP-20261109-001/rescue_map.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

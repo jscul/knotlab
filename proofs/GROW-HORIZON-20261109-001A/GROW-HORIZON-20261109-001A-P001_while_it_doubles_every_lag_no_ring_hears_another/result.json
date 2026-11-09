@@ -1,0 +1,502 @@
+{
+ "ticket": "GROW-HORIZON-20261109-001A",
+ "artifact_id": "GROW-HORIZON-20261109-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "research/GROW-HORIZON-20261109-001/preregistration.md": "9adf9e88a5b1a5039a10dddb99e57162a2f520d0b8cd96d659b0e1561efbfa92"
+   }
+  },
+  "1 The theorem: doubling at every lag, from 3 x 3, 4 x 4, 3 x 4 at g = 2 and 3 x 3 at g = 3 to 96 x 96 rings or fewer: at every doubling lag and the lag after, no own cell depends on another ring's original cells and every contact only on the original rings it lies on": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": [
+     [
+      0,
+      "6 x 6",
+      0,
+      0,
+      "1/4"
+     ],
+     [
+      1,
+      "12 x 12",
+      0,
+      0,
+      "1/8"
+     ],
+     [
+      2,
+      "24 x 24",
+      0,
+      0,
+      "1/16"
+     ],
+     [
+      3,
+      "48 x 48",
+      0,
+      0,
+      "1/32"
+     ],
+     [
+      4,
+      "96 x 96",
+      0,
+      0,
+      "1/64"
+     ],
+     [
+      5,
+      "96 x 96",
+      0,
+      36,
+      "1/64"
+     ]
+    ],
+    "4 x 4, g = 2": [
+     [
+      0,
+      "8 x 8",
+      0,
+      0,
+      "1/4"
+     ],
+     [
+      1,
+      "16 x 16",
+      0,
+      0,
+      "1/8"
+     ],
+     [
+      2,
+      "32 x 32",
+      0,
+      0,
+      "1/16"
+     ],
+     [
+      3,
+      "64 x 64",
+      0,
+      0,
+      "1/32"
+     ],
+     [
+      4,
+      "64 x 64",
+      0,
+      64,
+      "1/32"
+     ]
+    ],
+    "3 x 4, g = 2": [
+     [
+      0,
+      "6 x 8",
+      0,
+      0,
+      "1/4"
+     ],
+     [
+      1,
+      "12 x 16",
+      0,
+      0,
+      "1/8"
+     ],
+     [
+      2,
+      "24 x 32",
+      0,
+      0,
+      "1/16"
+     ],
+     [
+      3,
+      "48 x 64",
+      0,
+      0,
+      "1/32"
+     ],
+     [
+      4,
+      "48 x 64",
+      0,
+      48,
+      "1/32"
+     ]
+    ],
+    "3 x 3, g = 3": [
+     [
+      0,
+      "6 x 6",
+      0,
+      0,
+      "1/4"
+     ],
+     [
+      1,
+      "12 x 12",
+      0,
+      0,
+      "1/8"
+     ],
+     [
+      2,
+      "24 x 24",
+      0,
+      0,
+      "1/16"
+     ],
+     [
+      3,
+      "48 x 48",
+      0,
+      0,
+      "1/32"
+     ],
+     [
+      4,
+      "96 x 96",
+      0,
+      0,
+      "1/64"
+     ],
+     [
+      5,
+      "96 x 96",
+      0,
+      36,
+      "1/64"
+     ]
+    ]
+   }
+  },
+  "2 Computed: doubling every P lags from 3 x 3 and 5 x 5 at g = 2 (to 96 x 96 rings or fewer), the reach of an original ring and the original rings that ever hear it": {
+   "pass": true,
+   "info": {
+    "3 x 3, P = 2": {
+     "lags read": 10,
+     "before each doubling": [
+      {
+       "lag": 1,
+       "side": 6,
+       "reach": "1/4",
+       "contacts needing it": 4
+      },
+      {
+       "lag": 3,
+       "side": 12,
+       "reach": "5/8",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 5,
+       "side": 24,
+       "reach": "11/16",
+       "contacts needing it": 20
+      },
+      {
+       "lag": 7,
+       "side": 48,
+       "reach": "25/32",
+       "contacts needing it": 48
+      }
+     ],
+     "largest reach": "51/64",
+     "original rings that ever hear it": []
+    },
+    "3 x 3, P = 3": {
+     "lags read": 15,
+     "before each doubling": [
+      {
+       "lag": 2,
+       "side": 6,
+       "reach": "3/4",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 5,
+       "side": 12,
+       "reach": "3/8",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 8,
+       "side": 24,
+       "reach": "3/16",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 11,
+       "side": 48,
+       "reach": "3/32",
+       "contacts needing it": 8
+      }
+     ],
+     "largest reach": "3/4",
+     "original rings that ever hear it": []
+    },
+    "3 x 3, P = 4": {
+     "lags read": 20,
+     "before each doubling": [
+      {
+       "lag": 3,
+       "side": 6,
+       "reach": "1/4",
+       "contacts needing it": 4
+      },
+      {
+       "lag": 7,
+       "side": 12,
+       "reach": "7/8",
+       "contacts needing it": 16
+      },
+      {
+       "lag": 11,
+       "side": 24,
+       "reach": "19/16",
+       "contacts needing it": 88
+      },
+      {
+       "lag": 15,
+       "side": 48,
+       "reach": "43/32",
+       "contacts needing it": 384
+      }
+     ],
+     "largest reach": "93/64",
+     "original rings that ever hear it": []
+    },
+    "3 x 3, P = 6": {
+     "lags read": 30,
+     "before each doubling": [
+      {
+       "lag": 5,
+       "side": 6,
+       "reach": "3/4",
+       "contacts needing it": 16
+      },
+      {
+       "lag": 11,
+       "side": 12,
+       "reach": "11/8",
+       "contacts needing it": 96
+      },
+      {
+       "lag": 17,
+       "side": 24,
+       "reach": "25/16",
+       "contacts needing it": 444
+      },
+      {
+       "lag": 23,
+       "side": 48,
+       "reach": "55/32",
+       "contacts needing it": 2108
+      }
+     ],
+     "largest reach": "113/64",
+     "original rings that ever hear it": [
+      "1",
+      "1",
+      "1",
+      "1"
+     ]
+    },
+    "3 x 3, P = 8": {
+     "lags read": 40,
+     "before each doubling": [
+      {
+       "lag": 7,
+       "side": 6,
+       "reach": "1/4",
+       "contacts needing it": 4
+      },
+      {
+       "lag": 15,
+       "side": 12,
+       "reach": "11/8",
+       "contacts needing it": 40
+      },
+      {
+       "lag": 23,
+       "side": 24,
+       "reach": "31/16",
+       "contacts needing it": 300
+      },
+      {
+       "lag": 31,
+       "side": 48,
+       "reach": "71/32",
+       "contacts needing it": 1484
+      }
+     ],
+     "largest reach": "155/64",
+     "original rings that ever hear it": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    },
+    "5 x 5, P = 2": {
+     "lags read": 8,
+     "before each doubling": [
+      {
+       "lag": 1,
+       "side": 10,
+       "reach": "1/4",
+       "contacts needing it": 4
+      },
+      {
+       "lag": 3,
+       "side": 20,
+       "reach": "5/8",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 5,
+       "side": 40,
+       "reach": "11/16",
+       "contacts needing it": 20
+      }
+     ],
+     "largest reach": "25/32",
+     "original rings that ever hear it": []
+    },
+    "5 x 5, P = 3": {
+     "lags read": 12,
+     "before each doubling": [
+      {
+       "lag": 2,
+       "side": 10,
+       "reach": "3/4",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 5,
+       "side": 20,
+       "reach": "3/8",
+       "contacts needing it": 8
+      },
+      {
+       "lag": 8,
+       "side": 40,
+       "reach": "3/16",
+       "contacts needing it": 8
+      }
+     ],
+     "largest reach": "3/4",
+     "original rings that ever hear it": []
+    },
+    "5 x 5, P = 4": {
+     "lags read": 16,
+     "before each doubling": [
+      {
+       "lag": 3,
+       "side": 10,
+       "reach": "1/4",
+       "contacts needing it": 4
+      },
+      {
+       "lag": 7,
+       "side": 20,
+       "reach": "7/8",
+       "contacts needing it": 16
+      },
+      {
+       "lag": 11,
+       "side": 40,
+       "reach": "19/16",
+       "contacts needing it": 88
+      }
+     ],
+     "largest reach": "45/32",
+     "original rings that ever hear it": []
+    },
+    "5 x 5, P = 6": {
+     "lags read": 24,
+     "before each doubling": [
+      {
+       "lag": 5,
+       "side": 10,
+       "reach": "3/4",
+       "contacts needing it": 16
+      },
+      {
+       "lag": 11,
+       "side": 20,
+       "reach": "11/8",
+       "contacts needing it": 96
+      },
+      {
+       "lag": 17,
+       "side": 40,
+       "reach": "25/16",
+       "contacts needing it": 444
+      }
+     ],
+     "largest reach": "55/32",
+     "original rings that ever hear it": [
+      "1",
+      "1",
+      "1",
+      "1"
+     ]
+    },
+    "5 x 5, P = 8": {
+     "lags read": 32,
+     "before each doubling": [
+      {
+       "lag": 7,
+       "side": 10,
+       "reach": "1/4",
+       "contacts needing it": 4
+      },
+      {
+       "lag": 15,
+       "side": 20,
+       "reach": "11/8",
+       "contacts needing it": 40
+      },
+      {
+       "lag": 23,
+       "side": 40,
+       "reach": "31/16",
+       "contacts needing it": 300
+      }
+     ],
+     "largest reach": "75/32",
+     "original rings that ever hear it": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    }
+   }
+  },
+  "3 Control: without growth the reach of ring (0, 0) within 40 lags": {
+   "pass": true,
+   "info": {
+    "3 x 3": "5/2",
+    "4 x 4": "5/2",
+    "5 x 5": "9/2"
+   }
+  }
+ },
+ "status": "passed"
+}

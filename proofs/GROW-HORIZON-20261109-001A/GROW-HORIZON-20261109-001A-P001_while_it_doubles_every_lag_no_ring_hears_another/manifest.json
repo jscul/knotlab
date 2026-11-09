@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-HORIZON-20261109-001A-P001",
+  "canonical_id": "GROW-HORIZON-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-HORIZON-20261109-001A",
+  "proof": "GROW-HORIZON-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "While it doubles every lag, no ring hears another",
+  "status": "Proved",
+  "claim": "In a running network of rule-60 rings with law (12,12) contacts grown by the doubling law (a band at every cut, fresh split) at every lag, every own cell depends only on its ring's born cells and on newborn contact values, and every contact only on the own cells of the rings it lies on: no ring ever hears another and a contact needs only its own rings. Computed: doubling every P lags (P = 2, 3, 4, 6, 8) from the 3 x 3 and 5 x 5 tubes at g = 2, an original ring's reach stays below 51/64, 3/4, 93/64, 113/64 and 155/64 original spacings, with increments that halve at each doubling, and no original ring hears it for P <= 4 (the four nearest for P = 6, the eight within distance 2 for P = 8): a horizon. Control: without growth the odd tori are reached throughout.",
+  "dependencies": [
+    "GROW-ALL-20261109-001A",
+    "GROW-RUN-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An own cell that hears another ring under doubling at every lag.",
+    "A contact depending on a ring it does not lie on under doubling at every lag."
+  ],
+  "lineage": {
+    "home_scope": "GROW-HORIZON-20261109-001",
+    "epic_path": [
+      "GROW-HORIZON-20261109-001"
+    ],
+    "parents": [
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py",
+      "research/GROW-HORIZON-20261109-001/preregistration.md",
+      "experiments/GROW-ALL-20261109-001A/GROW-ALL-20261109-001A-E001_every_allowed_cut_at_once/contract.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "research/GROW-HORIZON-20261109-001/preregistration.md": "9adf9e88a5b1a5039a10dddb99e57162a2f520d0b8cd96d659b0e1561efbfa92",
+    "experiments/GROW-ALL-20261109-001A/GROW-ALL-20261109-001A-E001_every_allowed_cut_at_once/contract.json": "54888c8c3ace38f7080156d8b0c43603abf1a7e69a3409cb0dbbed39e6ee0c03"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/manifest.json",
+    "identity": "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/identity.json",
+    "proof": "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/proof.md",
+    "result": "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/result.json",
+    "check": "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/check.py",
+    "directory": "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The doubling law of GROW-ALL-20261109-001 on square tubes of rule-60 rings with law (12,12) contacts; the plain first need; declared rings (A45); the horizon computed to four doublings.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-09, pre-registered.",
+    "status": "proof by hand (theorem); finite claims checked by check.py; the horizon computed (check 2)",
+    "novelty": "known-with-delta"
+  }
+}

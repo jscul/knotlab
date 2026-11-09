@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**269 current results** and 5 superseded ones, from 215 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**270 current results** and 5 superseded ones, from 215 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 43 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 44 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -136,6 +136,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-09 · At powers of two the cut-open torus's whole spectrum lives on its two cut lines** (`FULL-REACH-PROOF-20261108-001-D001`).
   The cut-open torus's walk is the uncut torus's walk with two lines of contacts deleted; at powers of two the uncut walk dies, so the cut walk's whole spectrum is one 2n x 2n determinant on the cut lines, and every eigenvalue is a (2n - 1)-th root of unity there and at no other side to 64. Whether full reach fails exactly at the powers of two from 8 stays open.
   [proof P001](proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/proof.md), [epic closure](proofs/FULL-REACH-PROOF-20261108-001Z/FULL-REACH-PROOF-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · While the network doubles every lag, no ring hears another; slower doubling makes a horizon** (`GROW-HORIZON-20261109-001-D001`).
+  When every ring of a running network splits in four at every lag, every contact is reborn before anything reads it, so no ring ever hears another and the grown plane reads no distance while it grows. Doubling every few lags lets each ring be heard only within a fixed radius of the original lattice, a horizon that widens as doubling slows.
+  [proof P001](proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/proof.md), [epic closure](proofs/GROW-HORIZON-20261109-001Z/GROW-HORIZON-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · A law grows a network that reads its own distance plainly at every stage, but only a line** (`GROW-PLAIN-20261109-001-D001`).
   Inserting one ring at a time into the twist torus of rings, a local rewiring of the three contacts spanning the gap, grows a network whose every stage keeps every contact persistent and reads its distance across time without freezing. Through tori of the regular lattices no growth can do this in two dimensions: an on-time torus of large index is a tube, with balls growing linearly.
   [proof P001](proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/proof.md), [epic closure](proofs/GROW-PLAIN-20261109-001Z/GROW-PLAIN-20261109-001Z-P001_epic_closure/proof.md)
@@ -1143,7 +1146,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Does persistence need a flip? (`FLIP-RULE-20261109-001`) | [closure](proofs/FLIP-RULE-20261109-001Z/FLIP-RULE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/FLIP-RULE-20261109-001/) |
 | 2026-11-09 | Growth by every allowed cut at once (`GROW-ALL-20261109-001`) | [closure](proofs/GROW-ALL-20261109-001Z/GROW-ALL-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-ALL-20261109-001/) |
 | 2026-11-09 | Growth chosen by the dynamics (`GROW-CHOOSE-20261109-001`) | [closure](proofs/GROW-CHOOSE-20261109-001Z/GROW-CHOOSE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-CHOOSE-20261109-001/) |
-| 2026-11-09 | Distance and balls in the doubling network (`GROW-HORIZON-20261109-001`) | — | [folder](research/GROW-HORIZON-20261109-001/) |
+| 2026-11-09 | Distance and balls in the doubling network (`GROW-HORIZON-20261109-001`) | [closure](proofs/GROW-HORIZON-20261109-001Z/GROW-HORIZON-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-HORIZON-20261109-001/) |
 | 2026-11-09 | Grow a single fastest way (`GROW-PLAIN-20261109-001`) | [closure](proofs/GROW-PLAIN-20261109-001Z/GROW-PLAIN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-PLAIN-20261109-001/) |
 | 2026-11-09 | Growth while running (`GROW-RUN-20261109-001`) | [closure](proofs/GROW-RUN-20261109-001Z/GROW-RUN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-RUN-20261109-001/) |
 | 2026-11-09 | Distance in a grown network (`GROWN-DISTANCE-20261109-001`) | [closure](proofs/GROWN-DISTANCE-20261109-001Z/GROWN-DISTANCE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROWN-DISTANCE-20261109-001/) |

@@ -2000,8 +2000,19 @@ So network holes come in two kinds:
    - **Reading.** The spacing decides what growth can keep: with two own cells per corner, a ring can hear its neighbours and its contacts
      keep their knots. These are the first native laws read that grow a plane both ways while it runs, keep every stage balanced and let
      rings hear each other.
-   - **Next (selected, B53).** Distance in the g = 3 growing plane
+   - **Next (taken, B53).** Distance in the g = 3 growing plane (next entry)
      ([decision note](../research/ISOLATION-NEED-20261109-001/isolation_need.md)).
+
+   **2026-11-09: distance in the g = 3 growing plane** (`GROW-HEAR-20261109-001`).
+   - **The question.** Pre-registered: in the growing planes that keep their knots while rings hear each other, how far does an original
+     ring's first row reach?
+   - **Only inside its own territory (exploratory, exact).** Its reach converges to half an original spacing, no original ring ever hears
+     it, and the contacts that need it grow by a constant per doubling, like the boundary of a region, not its area.
+   - **Reading.** The grown plane is a patchwork of territories, one per original ring, each refined and heard inside while it grows,
+     none heard across its border; the knots survive because nothing crosses. Between its original rings the plane reads no distance while
+     it grows.
+   - **Next (selected, B55).** Why g = 3 keeps balance, by confinement to territories
+     ([decision note](../research/GROW-HEAR-20261109-001/grow_hear.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

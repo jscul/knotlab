@@ -1999,7 +1999,8 @@ So network holes come in two kinds:
    - **A correction.** The last two entries' exclusion of knots across growth and rings hearing each other was read at g = 2 only.
    - **Reading.** The spacing decides what growth can keep: with two own cells per corner, a ring can hear its neighbours and its contacts
      keep their knots. These are the first native laws read that grow a plane both ways while it runs, keep every stage balanced and let
-     rings hear each other.
+     rings hear each other. *Narrowed on 2026-11-09: the rings that hear each other are inside one original ring's territory (next entry;
+     `docs/CORRECTIONS.md`).*
    - **Next (taken, B53).** Distance in the g = 3 growing plane (next entry)
      ([decision note](../research/ISOLATION-NEED-20261109-001/isolation_need.md)).
 

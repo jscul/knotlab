@@ -60,6 +60,13 @@ The run is `read_further.py` beside this note, its output `read_further.json` an
 This epic narrows `DOUBLE-BALANCE-20261109-001` and `BIRTH-RULE-20261109-001`: their exclusion was read at g = 2 only (`docs/CORRECTIONS.md`,
 2026-11-09, Narrowing; a qualification of `DOUBLE-BALANCE-20261109-001-D001` on knotlab).
 
+## Correction of this note's reading
+
+**2026-11-09 · Not a block** (`docs/CORRECTIONS.md`). "Rings hear each other" and "this reopens the route to a grown plane that keeps its
+knots and reads its own distance" went beyond the census: in these planes an original ring's first row never leaves half an original
+spacing and no original ring hears another (`GROW-HEAR-20261109-001`). The hearing is among rings inside one original ring's territory.
+Every result stands.
+
 ## Ratio
 
 Since the epic opened:

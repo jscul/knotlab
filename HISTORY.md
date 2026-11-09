@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 9 November 2026: the g = 3 hearing stays inside each original ring's territory
+
+- ISOLATION-NEED-20261109-001 read its g = 3 doubling schedules as letting rings hear each other across a grown plane that keeps its
+  knots, reopening the route to a grown space that reads its distance.
+- In those planes an original ring's influence never leaves half an original spacing, and no original ring hears another
+  ([decision note](research/GROW-HEAR-20261109-001/grow_hear.md)): the hearing is inside each original ring's territory.
+- Unchanged: every result of ISOLATION-NEED-20261109-001.
+
 ## 9 November 2026: growing networks can keep their knots while their rings hear each other
 
 - DOUBLE-BALANCE-20261109-001 and BIRTH-RULE-20261109-001 read that, under the doubling law, knots kept across growth and rings hearing

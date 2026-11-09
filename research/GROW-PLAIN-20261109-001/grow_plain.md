@@ -106,3 +106,29 @@ none added or changed.
 3. **Prediction.** As B28.
 
 **Recommendation.** Research directions, none selected; directions 1 and 2 go to the backlog as B36 and B37 for the coordinator to choose.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:25 UTC and copied here verbatim.
+
+Grow a single fastest way (B34) is closed and published (GROW-PLAIN-20261109-001), with the S6 exception explained first.
+- **A law grows a network that reads its own distance plainly at every stage (proved).** Insert one ring into the twist torus ⟨(2,1),(N,0)⟩ by cutting the three contacts that span the gap and rejoining them through the new ring (five new contacts). The result is the next twist torus. From 4 rings on, every stage keeps every contact persistent (a half-turn at every contact) and every ring's fastest way single, so it reads its distance across time with nothing frozen. The √3 triangular torus grows the same way from 3 rings, and the ladder grows by rungs. The band law loses this at its second band.
+- **But only a line (proved).** Any growth through tori that keeps the reading at every stage ends up in a tube, because an on-time torus of large index holds a family vector. Its balls then grow by 4 rings per step, so it's dimension 1. A plane read plainly would have to be something other than a torus of these lattices.
+- **The S6 exception (exact).** Its odd-rescued ring has three routes to a closest contact, and each pair runs round a different handle. That's three lifts of the target arriving at one distance: parity by wrap-around, which no torus does.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: grow a single fastest way | Successful | A growth law keeps the plain reading at every stage; through tori it makes only a line; S6 explained |
+| Local direction: space read plainly | Research directions | A two-dimensional network read plainly at every size isn't a torus, if one exists |
+| Broader exploration: G1 with G5 | Known alternatives | Growth chosen by the dynamics (B23, growth thread); B30, B35 |
+| Long-term goal: G1 Space from a law | Obstruction learned | A local law grows space that reads its own distance across time, but only a line |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | A plane read plainly beyond tori (B36) | 3/3 | 1/3 | Hyperbolic maps with a short loop or mixed lattices, on time at every size with superlinear balls → one, or an obstruction |
+| 2 | A ring inserted while running (B37) | 2/3 | 2/3 | Insert a ring into the running twist tube, as GROW-RUN did with bands → its light cone, or bindings kept |
+| 3 | Predicting the rescuing loops (B28) | 1/3 | 2/3 | As in the backlog |
+
+**Corrections:** none. This doesn't change any GROW-RUN or GROWN-DISTANCE claim. One note on GROW-NET-20261108-001A: its Theorem 2 (attaching a ring breaks persistence) still holds as stated, but the insertion here also adds one ring at a time and keeps persistence because it rewires the contacts across the gap. Readings that say "single-ring growth breaks persistence" are true only for attachment. **Goals:** a G1 and G5 checkpoint (obstruction learned); B34 marked taken; B36 and B37 added to the backlog. **Assumptions:** none added or changed.
+
+Commits on main: fd9d2bc5d (the epic) and 989286138 (goals doc and knot intuition entry). I staged only my own hunks. Every check was short (none over a minute) and nothing is running. No direction is selected; your call.

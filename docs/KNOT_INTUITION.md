@@ -1922,8 +1922,23 @@ So network holes come in two kinds:
      grows. No lag cutoff was used.
    - **Reading.** Knots across time reach back to a beginning: the first row, or the cells a growth event bears. The loss under growth
      while running is real.
-   - **Next (research directions).** Growth chosen by the dynamics continues; an invertible substrate would test whether the lapse is
-     rule 60's forgetting ([decision note](../research/REBASE-KNOTS-20261109-001/rebase_knots.md)).
+   - **Next (research directions).** Growth chosen by the dynamics continues (taken, next entry); an invertible substrate would test
+     whether the lapse is rule 60's forgetting, B39 ([decision note](../research/REBASE-KNOTS-20261109-001/rebase_knots.md)).
+
+   **2026-11-09: growth chosen by the dynamics** (`GROW-CHOOSE-20261109-001`).
+   - **The question.** If a running tube may add a band, along the loop or across it, only where the band keeps every contact
+     persistent, where and which way does it grow, and does it keep growing?
+   - **One way (exploratory, exact per decision).** At lags 0 and 1 bands are allowed both ways; once one is in, from lag 3 on every
+     allowed place runs across the tube, in all 72 runs read, so the network lengthens the way its first band went: a tube.
+   - **Then it stops, mostly.** If the cut contact keeps or copies its value, nothing more is allowed after lag 2. If both halves are
+     born, one band per lag for 3 to 13 lags, and then no place is left, except on tubes three rings round grown along their length,
+     which reach the horizon of 12 lags.
+   - **All at once grows both ways, briefly.** Filling every allowed place together, which needs no order, doubles both sides at lags 0
+     and 1; past that the networks were too large to read.
+   - **Reading.** The dynamics breaks the symmetry with its first band and keeps it, so the band law, left to itself, grows a line of
+     loops; a band across the tube would cut through old influence. A plane would need the order-free rule to keep going (B38).
+   - **Next (research directions).** The order-free rule past lag 1 (B38); an invertible substrate (B39)
+     ([decision note](../research/GROW-CHOOSE-20261109-001/grow_choose.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

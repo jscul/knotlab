@@ -97,7 +97,7 @@ evidence: results and their status come from the records each entry links.
 | [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Confirmed |
 | [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Confirmed |
 | [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Confirmed |
-| [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Assumed |
+| [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Confirmed |
 | [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Assumed |
 
 ## Entries
@@ -1041,7 +1041,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A43 · Bands are added along the seed loop
 
-**Assumed** · 2026-11-09 · scope
+**Confirmed** · 2026-11-09 · scope
 
 - **Statement.** The band law adds bands of the seed loop's n rings, so its stages are the n × 2 ladder and then the n × m tori with n
   fixed and m growing. Bands of m rings across the other way, which the n × m torus admits as well, are not added.
@@ -1054,6 +1054,12 @@ evidence: results and their status come from the records each entry links.
   that grows both sides reads dimension 2 out to the smaller side, and every n × m stage with both sides at least 3 except 3 × 3 needs
   freezing (`GROWN-DISTANCE-20261109-001A`, Theorem 3). A native rule that fixes the direction would replace this default.
 - **History.**
+  - 2026-11-09 · Confirmed for stated reasons by `GROW-CHOOSE-20261109-001`, which let the dynamics choose: inserting a band only where
+    it keeps every contact persistent, the network picks a direction after its first band and keeps it, so it grows a tube as this
+    entry assumed, along whichever side the first band lengthened; only filling every allowed cut at once grew both ways, at lags 0 and
+    1, and was not read further (exploratory census, exact per decision;
+    [growth chosen by the dynamics](../research/GROW-CHOOSE-20261109-001/grow_choose.md)).
+  - 2026-11-09 · Put under challenge by `GROW-CHOOSE-20261109-001` (backlog B23).
   - 2026-11-09 · Added by `GROWN-DISTANCE-20261109-001`.
 
 ### A44 · A band born while the network runs brings new open distinctions

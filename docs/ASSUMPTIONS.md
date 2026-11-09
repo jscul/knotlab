@@ -98,7 +98,7 @@ evidence: results and their status come from the records each entry links.
 | [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Confirmed |
 | [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Confirmed |
 | [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Confirmed |
-| [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Assumed |
+| [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Under challenge |
 | [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
 
 ## Entries
@@ -1069,7 +1069,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A44 · A band born while the network runs brings new open distinctions
 
-**Assumed** · 2026-11-09 · reading
+**Under challenge** · 2026-11-09 · reading
 
 - **Statement.** When a band is inserted into a network at a lag, its rings' cells and its contacts along the band are new open
   distinctions from that lag, born as the first row is born at lag 0, and a contact binds a new ring when it depends on those cells.
@@ -1082,6 +1082,9 @@ evidence: results and their status come from the records each entry links.
   read binding to the old rings through them. A birth rule under which inserting while running keeps every contact persistent would
   replace this default.
 - **History.**
+  - 2026-11-09 · Put under challenge by `BIRTH-RULE-20261109-001` (backlog B51), a frozen test: under the doubling law every P = 1 to
+    4 lags, the cells a doubling bears are given copies of the cells they split from, zeros, or open distinctions added to copies, and
+    every stage's balance, the old rings' binding and hearing are read, with hypotheses frozen in its contract before any reading.
   - 2026-11-09 · Added by `GROW-RUN-20261109-001`.
 
 ### A45 · Rings are read as declared

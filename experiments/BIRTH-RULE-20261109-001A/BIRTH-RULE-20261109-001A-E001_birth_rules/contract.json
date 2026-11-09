@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BIRTH-RULE-20261109-001A-E001",
+  "ticket": "BIRTH-RULE-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Is there a birth rule for the cells a doubling bears under which a network that grows while it runs keeps every stage balanced while its rings hear each other, so that A44 (new cells are new open distinctions) could be replaced?",
+  "public_inputs": {
+    "library": "GROW-CHOOSE-20261109-001A-E001's choose_lib.py (sha256 71e5e8829415d09533a8648fd615cf06b94e767258c383bd8b6624cb510741c4).",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "The doubling law (a band at every cut both ways) every P = 1, 2, 3, 4 lags from the 3 x 3 tube at g = 2 while the network has at most 600 rings (to 24 x 24); birth rules open (A44), copy (the value, before the doubling, of the cell it splits from), zero, and open plus copy, applied to every contact and every new ring's cell.",
+    "reading": "At each doubling lag, with the network fixed from then on and read through a full cycle of the state (Brent, up to 300,000 steps): whether every contact binds both of its rings at every later lag (the stage balanced), whether every contact binds each of its rings that existed before the doubling (old rings bound), and how many own cells depend on another ring's born own cells (hearing)."
+  },
+  "forbidden_inputs": [
+    "Changing rules, schedules or sizes after seeing results",
+    "Dropping runs"
+  ],
+  "primary_observable": "For every rule, P and doubling lag: balanced, old rings bound, hearing.",
+  "cheapest_meaningful_control": "The open rule must reproduce DOUBLE-BALANCE-20261109-001A's check 3 at g = 2: balanced at every doubling for P = 1 and 3, unbalanced by 24 x 24 for P = 2 and 4, no hearing for P = 1 and 3.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-run summary lines.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: under copy and zero no stage after the first doubling is balanced, at every P, since a new ring then holds no distinction of its own. H2: under open plus copy no stage after the first doubling is balanced, P = 1 included, since a new ring hears its parent at birth. H3: open reproduces the control. H4 (A44's challenge): no rule keeps every stage balanced at a doubling lag where own cells hear another ring. H5: under copy, old rings stay bound at no more doublings than under open. If H4 fails, the first rule and schedule that fails it replaces A44 for growth while running and is read further; if H4 holds, A44 is confirmed for stated reasons.",
+  "stop_rule": "Stop when every run has its readings to the size limit.",
+  "nonclaims": [
+    "Exploratory and finite: one tube, four rules, P to 4, 24 x 24.",
+    "Square tubes and the band law only; two-time knots (A30); declared rings (A45)."
+  ],
+  "feasibility_disclosure": "Before freezing, nothing of these rules was computed; DOUBLE-BALANCE-20261109-001A's check 3 had read the open rule at g = 2 for P = 2, 3, 4, 6, 8 to 48 x 48."
+}

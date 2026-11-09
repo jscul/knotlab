@@ -1937,8 +1937,21 @@ So network holes come in two kinds:
      and 1; past that the networks were too large to read.
    - **Reading.** The dynamics breaks the symmetry with its first band and keeps it, so the band law, left to itself, grows a line of
      loops; a band across the tube would cut through old influence. A plane would need the order-free rule to keep going (B38).
-   - **Next (research directions).** The order-free rule past lag 1 (B38); an invertible substrate (B39)
+   - **Next (research directions).** The order-free rule past lag 1 (B38, taken, next entry); an invertible substrate (B39)
      ([decision note](../research/GROW-CHOOSE-20261109-001/grow_choose.md)).
+
+   **2026-11-09: growth by every allowed cut at once** (`GROW-ALL-20261109-001`).
+   - **The question.** If the running tube fills every place the dynamics allows with a band, all at once, does it keep growing both
+     ways past lag 1, or stop?
+   - **It doubles (exploratory, exact per decision).** On the 3 × 3, 3 × 4 and 4 × 4 tubes every cut, both ways, stays allowed at lags 0,
+     1 and 2, so every ring splits into a 2 × 2 block each lag: 3 × 3, 6 × 6, 12 × 12, 24 × 24, every stage read balanced in the whole
+     history. At lag 3 none of the 48 cuts fails within 50,000 lags; none could be confirmed. Checked against actual bits.
+   - **The price.** Every contact is cut and reborn each lag, so the rings carry the memory, and the stages, square tori with both sides
+     at least 6, read their distance only through freezes. "Plane" is said of the declared rings (A45).
+   - **Reading.** One band at a time grows a tube or breaks; a band at every cut grows a plane. The order-free rule, the one the
+     doctrine allows since nothing picks among cuts, is the plane-growing one.
+   - **Next (selected, B49).** Distance and balls while it doubles: influence crosses a ring in about 2g lags while the rings between two
+     old rings double every lag, so a horizon is expected ([decision note](../research/GROW-ALL-20261109-001/grow_all.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

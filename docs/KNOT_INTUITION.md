@@ -1858,6 +1858,22 @@ So network holes come in two kinds:
      rule 60 reads leftward, so a network and its mirror image are different substrates.
    - **Next (research directions, paused for the day).** Prove the tie law's lower bound; find which quotients rescue late rings
      ([decision note](../research/PLAIN-TIME-20261108-001/plain_time.md)).
+
+   **2026-11-09: full reach on honeycomb tori** (`HONEY-REACH-20261109-001`).
+   - **The question.** On the square torus every ring needs every ring exactly when the side is odd. On the honeycomb torus the census
+     to side 13 said exactly when 3 divides the side. Is that so, and why?
+   - **When 3 does not divide the side, never (proved).** Influence between contacts of one kind spreads by the six-neighbour sum of the
+     triangular lattice, and every power of it vanishes on the three mirror lines through a ring, because each mirror pairs up the
+     walks. The turn of 120° about a ring fixes exactly one ring of the other kind when 3 does not divide the side, and all the points
+     that would let influence into it lie on the mirrors: it never needs the first ring, nor the first ring it.
+   - **When 3 divides the side, always (computed).** The turn then fixes no ring of the other kind, the mirrors pin nothing (proved
+     from side 7), and every ring needs every ring on every side checked, to 300.
+   - **How many are missed (computed).** Otherwise one ring per ring on odd sides, and more as the power of 2 in the side grows: 13,
+     85, 421, … exactly 2(N − 1)(N − 2) + 1 with N = 2^(v + 1), whatever the odd part.
+   - **Reading.** What blocks reach is a rotation of the source: the half-turn's fixed ring (the antipode) on even square tori, the
+     turn of order 3's on honeycomb tori whose side 3 does not divide. The lattice is given, not grown. No lag cutoff was used.
+   - **Next (research directions).** Which lattices compose everywhere, by the same reduction to mirrors; a proof of the computed half
+     ([decision note](../research/HONEY-REACH-20261109-001/honey_reach.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RING-LAW-20261109-001A-P001",
+  "canonical_id": "RING-LAW-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "RING-LAW-20261109-001A",
+  "proof": "RING-LAW-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which contact laws see how rings continue",
+  "status": "Proved",
+  "claim": "For rule-60 rings joined by contacts with self-blind laws c <- u(l_a, r_a) + v(l_b, r_b) (u, v any two-input tables, 256 laws): (1) re-routing at a contact changes the automaton exactly unless u and v are affine with equal coefficients of the arriving cell (32 blind laws, among them law (12,12)); (2) an affine law that sees the routing reads only one of the contact's arriving cells, so the other ring does not pass the contact; a law that sees the routing with both rings passing is nonlinear (128 laws); (3) under affine laws binding (A32) is needing both rings, under nonlinear laws it is stronger.",
+  "dependencies": [
+    "REROUTE-20261109-001B",
+    "LOOP-NET-20261108-001A",
+    "PROCESS-CONTACT-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A law whose re-routing changes the automaton against the ANF condition, or leaves it unchanged where the condition says it changes.",
+    "An unread arriving corner that reaches a cell outside it.",
+    "An affine law under which binding and needing differ."
+  ],
+  "lineage": {
+    "home_scope": "RING-LAW-20261109-001",
+    "epic_path": [
+      "RING-LAW-20261109-001"
+    ],
+    "parents": [
+      "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/reroute_lib.py",
+      "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/manifest.json",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py",
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/reroute_lib.py": "62c13c8f6272e091f943618fa4e18f391fdc8edf97547a04f944577655dd783c",
+    "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/manifest.json": "b15d2d7cbddaa673156af97c89ec99e83da55dd3cb44eb842170d0fc0f3ac8f4",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py": "1adbc514bf5aaf3b23af55229a9b9d1a7795f3a0f9a3312bf2f86cf75920197b",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351"
+  },
+  "paths": {
+    "manifest": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/manifest.json",
+    "identity": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/identity.json",
+    "proof": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/proof.md",
+    "result": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/result.json",
+    "check": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/check.py",
+    "directory": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Networks of rule-60 rings with self-blind contact laws u(l, r) + v(l, r); two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "Theorems 1 to 3 proved by hand; finite claims checked by check.py",
+    "novelty": "new as far as found as a reading of these networks; the algebra is elementary"
+  }
+}

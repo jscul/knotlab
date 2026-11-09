@@ -1,0 +1,52 @@
+{
+ "ticket": "RING-LAW-20261109-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/reroute_lib.py": "62c13c8f6272e091f943618fa4e18f391fdc8edf97547a04f944577655dd783c",
+    "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/manifest.json": "b15d2d7cbddaa673156af97c89ec99e83da55dd3cb44eb842170d0fc0f3ac8f4",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py": "1adbc514bf5aaf3b23af55229a9b9d1a7795f3a0f9a3312bf2f86cf75920197b",
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351"
+   }
+  },
+  "1_the_laws_that_see_the_routing": {
+   "pass": true,
+   "info": {
+    "laws": 256,
+    "condition agrees with the truth tables": 256,
+    "blind laws": 32,
+    "classes": {
+     "affine: False": 192,
+     "affine: True": 64,
+     "both rings pass: False": 112,
+     "both rings pass: True": 144,
+     "sees the routing: False": 32,
+     "sees the routing: True": 224
+    }
+   }
+  },
+  "2_rerouting_changes_the_automaton_exactly_for_the_laws_that_see": {
+   "pass": true,
+   "info": {
+    "laws agreeing": 256
+   }
+  },
+  "3_an_affine_law_that_sees_reads_one_arriving_cell": {
+   "pass": true,
+   "info": {
+    "contacts read under affine laws that see": 1024,
+    "contacts reading both arrivals under blind affine laws": 512
+   }
+  },
+  "4_affine_binding_is_needing": {
+   "pass": true,
+   "info": {
+    "affine laws": 64,
+    "cases": 1024
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 1.0
+}

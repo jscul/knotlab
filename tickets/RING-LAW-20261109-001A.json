@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LOOP-NET-20261108-001A",
+    "PROCESS-CONTACT-20261108-001A",
+    "REROUTE-20261109-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "RING-LAW-20261109-001A-P001"
+  },
+  "id": "RING-LAW-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove which self-blind contact laws u(in, out) + v(in, out) tell a contact's two rings apart (re-routing at the contact changes the automaton): exactly those nonlinear in a ring's two neighbours or reading the arriving cells unequally; that on one-way rings an affine law that sees the routing leaves one ring's arriving corner a dead end; and that under affine laws binding (A32) is dependence on both rings.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RING-LAW-20261109-001"
+  },
+  "parent": "RING-LAW-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09: among the 256 self-blind contact laws u(l_a, r_a) + v(l_b, r_b) on rule-60 rings, re-routing at a contact changes the automaton exactly unless u and v are affine with equal arriving-cell coefficients (32 blind laws, law (12,12) among them); an affine law that sees the routing reads only one arriving cell, cutting the other ring there, so a law that sees the routing with both rings passing is nonlinear; and binding is needing under affine laws, stronger under nonlinear ones.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Which contact laws see how rings continue"
+}

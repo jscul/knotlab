@@ -89,3 +89,31 @@ gained), B52 marked taken, B53 added. **Assumptions:** A44's reason narrowed.
 
 **Recommendation.** Continue with #1; stop it at a reading of distance on a balanced, hearing growing plane, or at the size where its
 balance fails.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:47 UTC and copied here verbatim.
+
+**Is isolation necessary (B52) is closed and published. It isn't: a frozen census refuted my own two-doubling bound.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/ISOLATION-NEED-20261109-001/isolation_need.md))
+
+- **At g = 3 (two own cells per corner):** open-born doubling every 2 or every 4 lags keeps every stage balanced while hundreds of cells hear other rings, read exactly to 24 × 24. A further read to 48 × 48 is running in the background.
+- **At g = 2 the bound holds:** every schedule where rings hear each other loses balance within two doublings. The schedules that isolate are P = 1, 3 and 7.
+- **What it means:** these are the first native laws in this line that grow a plane both ways while running, keep every knot, and let rings hear each other.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: is isolation necessary | Successful | Refuted by a frozen census at g = 3 |
+| Local direction: a grown space that keeps its knots and reads distance | Continue | The g = 3 schedules are the first candidates |
+| Broader exploration: G1 with G5 | Known alternatives | Why g = 3 holds; larger g; B39 |
+| Long-term goal: G1 Space from a law | Capability gained | A growth law that runs, keeps every stage balanced, and lets rings hear each other (to 24 × 24) |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Distance in the g = 3 growing plane (B53) | 3/3 | 3/3 | Reach and horizon as at g = 2, with balance confirmed to 48 × 48 → a grown plane that keeps its knots and reads a distance, or where balance fails |
+| 2 | Why g = 3 keeps balance | 2/3 | 2/3 | Follow a hearing ring's returns across one doubling → the cancellation as a lemma |
+| 3 | Larger spacings (g = 4, 5) | 2/3 | 3/3 | Repeat the census |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** one, Narrowing. B50 and B51 said that keeping knots and hearing exclude each other. That was read only at g = 2 and holds only there. It's logged in CORRECTIONS.md and knotlab's HISTORY.md, with a qualification on B50's record. **Goals:** G1/G5 checkpoint (capability gained); B52 taken, B53 added. **Assumptions:** A44's confirmation reason narrowed: at g = 3, open births alone are enough. **Long-running:** ISOLATION-NEED-A2 (48 × 48 at g = 3) is running.
+
+I recommend #1. It's B19's question on the first grown plane that keeps its knots while its rings talk.

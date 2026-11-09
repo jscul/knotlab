@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TIE-LAW-20261109-001A-P001",
+  "canonical_id": "TIE-LAW-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "TIE-LAW-20261109-001A",
+  "proof": "TIE-LAW-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "No two shortest routes tie before tau",
+  "status": "Proved",
+  "claim": "In the directed medial graph D of every regular tessellation {f, m} of the Euclidean or hyperbolic plane (vertices the edges of the tessellation, an arc for each corner from its edge to the next edge about its vertex): (1) for two routes P, Q with common ends meeting nowhere else, with the disc between them on P's left, km = I + d_P, jf = I + d_Q, I = k + j - 1 + n and n = k + j - 2 - p_F - q_V, so for equal lengths d = K(1 - 1/m - 1/f) + 1 - n with K = km = jf a common multiple of m and f; (2) a shortest route runs along each cell of that disc on its side at most once; (3) its ring runs have at most floor(m(f - 1)/f) arcs and its face runs at most floor(f(m - 1)/m); (4) hence no two different shortest routes with the same ends are shorter than tau = L - L/m - L/f + 1, L = lcm(m, f), so every contact within distance tau - 1 has a single shortest route and, over GF(2), (A^d)[x, y] = 1 at its distance d; (5) every closed route has length at least min(m, f), so for m = f the first tie is exactly at tau = m - 1. Computed: the first tie at tau on 42 hyperbolic covers (two primes each), and every pair of shortest routes read thin, at length c(tau - 1) + 1. Attainment of the tie at tau for m != f is computed, not proved.",
+  "dependencies": [
+    "PLAIN-TIME-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "Two routes with common ends, meeting nowhere else, whose disc violates one of Theorem 1's counts.",
+    "A shortest route running along one cell of such a disc twice, or a ring or face run longer than its bound.",
+    "Two different shortest routes with the same ends in some {f, m}, shorter than tau.",
+    "A closed route shorter than min(m, f), or a type with m = f whose first tie is not at m - 1."
+  ],
+  "lineage": {
+    "home_scope": "TIE-LAW-20261109-001",
+    "epic_path": [
+      "TIE-LAW-20261109-001"
+    ],
+    "parents": [
+      "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json": "603257295514c890d7114b2b0866127cb84b1efcee560a64d987b1173a173936"
+  },
+  "paths": {
+    "manifest": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/manifest.json",
+    "identity": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/identity.json",
+    "proof": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/proof.md",
+    "result": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/result.json",
+    "check": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/check.py",
+    "directory": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The contact graph of rule-60 rings on regular tessellations (rings at vertices, contacts at edges), given rather than grown; shortest routes and their ties (A40, A41). The covers are read in PSL(2, p).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's spawn on 2026-11-09.",
+    "status": "proof by hand (Theorems 1 to 3, Lemmas 1 and 2); the case analysis's arithmetic checked exactly; the covers computed",
+    "novelty": "new as far as found for directed routes; ingredients classical (combinatorial Gauss-Bonnet, thin bigons)"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "PLAIN-TIME-20261108-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TIE-LAW-20261109-001A-P001",
+    "terminal_artifact": "proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/manifest.json"
+  },
+  "id": "TIE-LAW-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for the directed medial graph of every regular tessellation {f, m} of the Euclidean or hyperbolic plane: a Gauss-Bonnet count for two routes with common ends (km = jf and d = K(1 - 1/m - 1/f) + 1 - n_int for equal lengths), that a shortest route runs along each cell of the disc on its side at most once, the longest runs of a shortest route about a ring and about a face, and from these that no two shortest routes share an endpoint before tau = L - L/m - L/f + 1; that every closed route has length at least min(m, f), so the tie at tau is attained when m = f; and compute the first tie on every readable cover and the thinness of every pair of shortest routes read.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TIE-LAW-20261109-001"
+  },
+  "parent": "TIE-LAW-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (by hand; the case analysis's arithmetic checked exactly; the covers computed): in the directed medial graph of every regular tessellation {f, m} of the Euclidean or hyperbolic plane, no two different shortest routes with the same ends are shorter than tau = L - L/m - L/f + 1 (L = lcm(m, f)), so every contact within distance tau - 1 has a single shortest route; the proof is a Gauss-Bonnet count for two routes with common ends (d = K(1 - 1/m - 1/f) + 1 - n, K = km = jf), a lemma that a shortest route runs along each cell of the disc on its side at most once, and run bounds floor(m(f - 1)/f) and floor(f(m - 1)/m); every closed route has length at least min(m, f), so for m = f the first tie is exactly at tau. Computed: the first tie at tau on 42 hyperbolic covers (two primes), every pair of shortest routes read thin at length c(tau - 1) + 1. Attainment for m != f is computed, not proved.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "No two shortest routes tie before tau"
+}

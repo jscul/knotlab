@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "TIE-LAW-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up PLAIN-TIME-20261108-001's direction 1 at the coordinator's spawn on 2026-11-09: prove the tie law, that in the directed medial graph of the regular tessellation {f, m} (the contact graph of rule-60 rings, m contacts per ring and f per face) the first contact reached by two shortest routes comes at tau = L - L/m - L/f + 1, L = lcm(m, f), computed on every cover read by PLAIN-TIME-20261108-001B; state it in standard graph and GF(2) terms so an outsider can check it. Stop with a proof, or with the part proved and the gap stated.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TIE-LAW-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09 (Partially successful): in the directed medial graph of every regular tessellation {f, m}, Euclidean or hyperbolic, no two different shortest routes with the same ends are shorter than tau = L - L/m - L/f + 1, L = lcm(m, f) (proved: a Gauss-Bonnet count d = K(1 - 1/m - 1/f) + 1 - n for two equal routes with K = km = jf, a shortest route runs along each cell of the disc on its side once, its runs are at most floor(m(f - 1)/f) and floor(f(m - 1)/m), and the untouched cells that n counts cannot fit in a disc short enough); every closed route has length at least min(m, f), so the tie at tau is attained when m = f (proved); attainment for m != f computed on 42 covers (two primes) and the larger covers of the stress test TIE-LAW-S1 (running). Recommendation Continue, selected #2 (the full-reach collapse) at the coordinator's instruction.",
+  "status_class": "complete",
+  "stop_rule": "Stop with a proof of both bounds, or with the part proved, the rest computed and the gap stated.",
+  "title": "The first tie of shortest routes"
+}

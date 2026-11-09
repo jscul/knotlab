@@ -18,7 +18,7 @@ The repository has two layers:
   but could challenge, each with its status and what rests on it.
 - **The full record.** [RESULTS.md](RESULTS.md) lists, with dates, every result
   recorded since the knot test K1–K3 became canonical on 19 October 2026:
-  <!-- counts -->263 current results and 5 superseded ones<!-- /counts -->.
+  <!-- counts -->264 current results and 5 superseded ones<!-- /counts -->.
   They are stated in the program's own language and linked to their proofs,
   experiments and working notes, which are published as recorded, together
   with the [tickets](tickets/) that set each piece of work. New epics are

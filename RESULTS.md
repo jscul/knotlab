@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**263 current results** and 5 superseded ones, from 203 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**264 current results** and 5 superseded ones, from 204 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 37 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 38 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 203 epics with their closures
+- [Epics](#epics): all 204 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -150,6 +150,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-09 · Short loops rescue late rings: every torus that reads distance plainly** (`RESCUE-MAP-20261109-001-D001`).
   A torus of rings reads distance without freezing exactly when it holds a short loop along which the fastest way to every ring is a single route, the square lattice's (2, 0) and (2, 1) up to the quarter turn and the triangular lattice's vectors of length root 3, or is one of finitely many small tori. The mirror image (1, 2) is late, since rule 60 reads one way round every ring.
   [proof P001](proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/proof.md), [epic closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · No two shortest routes tie before lcm(m, f) - lcm/m - lcm/f + 1** (`TIE-LAW-20261109-001-D001`).
+  In the contact graph of rule-60 rings on every regular tiling, with m contacts per ring and f per face, no contact is reached by two shortest routes before distance lcm(m, f) - lcm/m - lcm/f + 1, so the plain first need reads every contact closer than that on time. When m = f a tie comes exactly there; elsewhere it does on every tiling read.
+  [proof P001](proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/proof.md), [epic closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md)
 
 ## Holes, depth and Tseitin proof complexity
 
@@ -1125,4 +1128,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Which lattices compose everywhere (`LATTICE-REACH-20261109-001`) | [closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-REACH-20261109-001/) |
 | 2026-11-09 | Knots read from the last growth event (`REBASE-KNOTS-20261109-001`) | [closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REBASE-KNOTS-20261109-001/) |
 | 2026-11-09 | Which finite maps rescue late rings (`RESCUE-MAP-20261109-001`) | [closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-MAP-20261109-001/) |
+| 2026-11-09 | The first tie of shortest routes (`TIE-LAW-20261109-001`) | [closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-LAW-20261109-001/) |
 

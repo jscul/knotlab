@@ -1779,7 +1779,7 @@ So network holes come in two kinds:
      of one corner. No lag cutoff was used.
    - **Reading.** Cutting the torus open removes the cancellation of the two ways round; what remains at the powers of two is a
      cancellation inside the square, of Lucas' kind.
-   - **Next (parked).** The proof, after the growth epic, which the coordinator switched to at the owner's interest
+   - **Next (taken).** The proof, after the growth epic, which the coordinator switched to at the owner's interest; taken on 2026-11-09
      ([decision note](../research/FULL-REACH-20261108-001/full_reach.md)).
 
    **2026-11-08: growing a network of rings from a law** (`GROW-NET-20261108-001`).
@@ -1955,6 +1955,21 @@ So network holes come in two kinds:
      to which walk counts mod 2 are tied. No lag cutoff was used.
    - **Next (selected, B27).** Rescue on maps of higher genus
      ([decision note](../research/LATTICE-REACH-20261109-001/lattice_reach.md)).
+
+   **2026-11-09: full reach on the cut-open torus, the proof** (`FULL-REACH-PROOF-20261108-001`).
+   - **The question.** Does full reach on the cut-open torus fail exactly at the powers of two from 8, as computed to side 48?
+   - **The box is the torus minus a cross (proved).** Its walk is the uncut torus's with the two lines of cut contacts deleted. It
+     commutes with the quarter turn, the mirrors carry it to its transpose, and it plus its transpose is the product of two rule-90
+     walks along a side.
+   - **At powers of two the torus dies (proved).** When n is a power of two the uncut torus's walk vanishes after n steps, so
+     everything the cut-open box does comes from its two cut lines, which behave as circles: its whole spectrum is one 2n × 2n
+     determinant.
+   - **The collapse (computed, to side 64).** Every eigenvalue is a (2n − 1)-th root of unity at sides 4, 8, 16, 32 and 64 and at no
+     other side, and there the eigenvalues come with triangular multiplicities k(k + 1)/2.
+   - **Reading.** The failures at powers of two are a boundary effect on two circles. The theorem is not proved, and at other sides the
+     spectrum is generic. No lag cutoff was used.
+   - **Next (selected, deferred).** The collapse at every power of two, after the tie law
+     ([decision note](../research/FULL-REACH-PROOF-20261108-001/full_reach_proof.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

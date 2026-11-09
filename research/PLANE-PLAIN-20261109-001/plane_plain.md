@@ -99,3 +99,28 @@ none added or changed.
 2. **The rest of the tilings.** Payoff 1: completes the census; Concreteness 3: only constructions are missing.
 
 **Recommendation.** Research directions, none selected; directions 1 and 2 go to the backlog as B40 and B41.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:43 UTC and copied here verbatim.
+
+A plane read plainly beyond tori (B36) is closed and published (PLANE-PLAIN-20261109-001). The result is an obstruction: **I found no plane read plainly among the periodic tilings.**
+- **Persistence needs a flip (census, pre-registered).** I read tori of every shape of 13 periodic tilings: the square, triangular and honeycomb lattices, five Archimedean tilings built by medial and truncation (kagome 3.6.3.6, 4.8.8, 3.12.12, 3.4.6.4, 4.6.12), and their Laves duals. On all 1,479 tori, a contact persists exactly when a symmetry fixes it and exchanges its two rings.
+- **Only the regular lattices have that everywhere.** Mixing ring or face sizes takes the symmetry away. 4.8.8, 3.12.12, tetrakis and triakis keep only their base lattice's contacts persistent. Kagome, 3.4.6.4, 4.6.12 and the other duals keep none.
+- **So, among these tilings, a flat network of persistent contacts is a regular lattice.** By the growth epic's Theorem 2, its large tori read distance plainly only as thin tubes. A plane read plainly at every size would have to be non-periodic, or keep persistence without that symmetry.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: a plane read plainly beyond tori | Obstruction learned | Periodic tilings keep every contact persistent only when regular, and those planes need freezing |
+| Local direction: space read plainly | Research directions | Persistence without a flip, or a non-periodic plane, is what remains |
+| Broader exploration: G1 with G5 | Known alternatives | Growth chosen by the dynamics (B23, growth thread); B30, B35 |
+| Long-term goal: G1 Space from a law | Obstruction learned | Flat space of persistent contacts is a regular lattice, which reads its own distance only through freezes, except as a tube |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Persistence without a flip (B40) | 2/3 | 2/3 | Search small networks, equal and unequal spacing, for a contact that persists with no flip → one, or a proof it can't in some class |
+| 2 | The remaining periodic tilings (B41) | 1/3 | 3/3 | Build the snub and elongated tilings and their duals from coordinates → H2 for all 22, or an exception |
+
+**Corrections:** none. **Goals:** a G1 and G5 checkpoint (obstruction learned); B36 marked taken; B40 and B41 added to the backlog (B38 and B39 were taken meanwhile by the growth thread). **Assumptions:** none added or changed.
+
+Commits on main: 6733e3bc6 (pre-registration), 14fb66075 (a skip-rule fix after the first launch hit an exception before writing anything; the commit message's first word is garbled, but the content is right), 3829a6abb (the epic), 51239c369 (shared docs). The run took 1.3 seconds and nothing is running. No direction is selected; your call. B40 is the one I'd pick: if persistence always needs a flip, every question about persistent networks reduces to regular maps.

@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 9 November 2026: the doubling law's plane reads no distance while it grows
+
+- GROW-ALL-20261109-001 read its doubling law, a band at every cut each lag, as growing a plane while the network runs, its balls
+  growing like the plane's.
+- While it doubles every lag no ring hears another: every contact is reborn before any cell reads what it computed
+  ([decision note](research/GROW-HORIZON-20261109-001/grow_horizon.md)). The plane is one of declared rings, balanced whenever growth
+  stops, that reads no distance while it grows.
+- Unchanged: every result of GROW-ALL-20261109-001.
+
 ## 9 November 2026: small maps persist without a flip by pairings, up to six contacts
 
 - FLIP-RULE-20261109-001 said that small maps persist without a flip by

@@ -1949,9 +1949,24 @@ So network holes come in two kinds:
    - **The price.** Every contact is cut and reborn each lag, so the rings carry the memory, and the stages, square tori with both sides
      at least 6, read their distance only through freezes. "Plane" is said of the declared rings (A45).
    - **Reading.** One band at a time grows a tube or breaks; a band at every cut grows a plane. The order-free rule, the one the
-     doctrine allows since nothing picks among cuts, is the plane-growing one.
-   - **Next (selected, B49).** Distance and balls while it doubles: influence crosses a ring in about 2g lags while the rings between two
-     old rings double every lag, so a horizon is expected ([decision note](../research/GROW-ALL-20261109-001/grow_all.md)).
+     doctrine allows since nothing picks among cuts, is the plane-growing one. *Corrected on 2026-11-09: while it doubles every lag no ring
+     hears another, so this plane of declared rings reads no distance while it grows (next entry; `docs/CORRECTIONS.md`).*
+   - **Next (taken).** Distance and balls while it doubles (next entry)
+     ([decision note](../research/GROW-ALL-20261109-001/grow_all.md)).
+
+   **2026-11-09: distance and balls in the doubling network** (`GROW-HORIZON-20261109-001`).
+   - **The question.** While the doubling law runs, how far does each original ring's first row reach, in the original lattice's units?
+     Pre-registered before reading.
+   - **Every lag: no ring hears another (proved).** Every contact is cut and reborn before any cell reads what it computed, so a ring's
+     cells only ever hear its own cells and newborn contact values.
+   - **Every P lags: a horizon (computed).** Influence crosses contacts between doublings, but the rings between two original rings double
+     faster than it travels: an original ring is heard only within 0.8 to 2.4 original spacings for P = 2 to 8, the same on 3 × 3 and
+     5 × 5, its growth halving at each doubling, while the contacts inside multiply about fourfold per doubling.
+   - **Reading.** Growth that outruns influence confines every ring to a neighbourhood fixed at its birth, and at the fastest rate to
+     itself: the plane is shaped, not connected, while it grows. A grown space that reads its own distance needs growth slow enough for
+     influence to keep up.
+   - **Next (selected, B50).** Why doubling keeps every stage balanced; the horizon as a theorem; growth slow enough to read distance
+     ([decision note](../research/GROW-HORIZON-20261109-001/grow_horizon.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues
@@ -2030,8 +2045,21 @@ So network holes come in two kinds:
      and the cones of sides n and 2n agree to degree 2n.
    - **Reading.** The collapse looks like a two-particle state built from one particle per eigenvalue. That particle has not been
      found, and the collapse is not proved. No lag cutoff was used.
-   - **Next (selected, pending the coordinator).** The single particle behind the symmetric square
-     ([decision note](../research/CONE-COLLAPSE-20261109-001/cone_collapse.md)).
+   - **Next (selected by the coordinator: the return map digit by digit, taken by `RETURN-DIGITS-20261109-001`).** The single
+     particle behind the symmetric square was the recommendation ([decision note](../research/CONE-COLLAPSE-20261109-001/cone_collapse.md)).
+
+   **2026-11-09: the return map digit by digit** (`RETURN-DIGITS-20261109-001`).
+   - **The question.** Can the cone's return map at side 2^(m+1) be built from the one at 2^m, and does that prove the collapse?
+   - **A recursion (proved).** The return map is a one-dimensional operator on polynomials of degree below n/2; a two-by-two block
+     rule builds it digit by digit, starting from the one-by-one matrix [c].
+   - **What powers of two do (proved).** Take away one reversal of the cut line and the eigenvalues are c times the elements of
+     GF(n) of trace 1. Put it back (it is multiplication by an involution) and the cone polynomial becomes the determinant of the
+     trace polynomial of GF(2n), μ + μ² + μ⁴ + ... + μ^n, with its coefficients replaced by matrices over GF(2).
+   - **Reading.** For the scalar trace, every root lies in GF(2n) in one line, since Tr² + Tr = μ^(2n) + μ; for the matrix version
+     that step is what is left. The trace factor itself divides the cone polynomial once with a square left over, at every side to
+     128. No lag cutoff was used.
+   - **Next (selected, pending the coordinator).** The roots of the linearized determinant
+     ([decision note](../research/RETURN-DIGITS-20261109-001/return_digits.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

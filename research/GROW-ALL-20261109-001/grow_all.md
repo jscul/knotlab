@@ -68,6 +68,14 @@ its output `validate.json`.
 - **Relied on.** A30, A32, A42 (confirmed), A44 (born cells open), A43 (confirmed: one band at a time grows one way).
 - **Added.** None.
 
+## Correction
+
+**2026-11-09 · Not a block** (`docs/CORRECTIONS.md`). The reading and the report said that the doubling law grows a plane while the
+network runs, its balls growing like the plane's. `GROW-HORIZON-20261109-001` proved that while it doubles every lag no ring hears
+another: every contact is reborn before any cell reads what it computed. So the plane is one of declared rings (A45), balanced whenever
+growth stops, that reads no distance while it grows; its ring-graph balls grow like the plane's and its balls of influence do not grow.
+Every result above stands ([distance and balls in the doubling network](../GROW-HORIZON-20261109-001/grow_horizon.md)).
+
 ## Ratio
 
 Since the epic opened:

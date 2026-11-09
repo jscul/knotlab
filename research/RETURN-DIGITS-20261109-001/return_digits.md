@@ -119,3 +119,26 @@ None to published claims.
 3. **The layers.** Payoff 1: a description, not a proof; Concreteness 2: the computation is direct.
 
 **Recommendation.** Continue with #1.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:32 UTC and copied here verbatim.
+
+The return-map epic is closed and published. The collapse at every power of two still isn't proved, but it now comes down to one explicit statement. The cut line's return map turns out to be a one-dimensional operator, and a two-by-two block rule builds it digit by digit from the one-by-one matrix [c]. Take away one reversal and its eigenvalues are exactly c times the trace-1 elements of GF(n). The reversal itself is multiplication by an involution. Put back together, the cone polynomial is the determinant of the trace polynomial of GF(2n), μ + μ² + μ⁴ + … + μⁿ, with GF(2) matrices for coefficients. For the scalar trace, one line puts every root in GF(2n). The matrix version is the gap. All five theorems passed one size past what was checked (up to side 128), in 109 seconds.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the return map digit by digit | **Status:** Partially successful | The recursion is found and proved and turns the cone polynomial into a linearized determinant; the collapse isn't proved |
+| Local direction: the collapse at powers of two | Continue | One statement is left: the roots of Σ μ^(2^i) C_i lie in GF(2n) |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B50 |
+| Long-term goal: G5 Dynamics | Capability gained | Why powers of two are special now has an algebraic form |
+
+**Next step:** Continue with #1. I'm opening it as a new epic now and will pre-register it before the proof attempt.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The roots of the linearized determinant | 3/3 | 2/3 | Find matrices M(μ) with L(μ)M(μ) = μ^a(μ^(2n) + μ)^b I at 4, 8, 16 and read their shape → a proof of the collapse, or a side where no such shape exists | Selected |
+| 2 | The single particle | 2/3 | 1/3 | Read the k(k+1)/2 multiplicities off the trace-1 eigenvalues and how the involution pairs them → the multiplicity law, or none | Alternative |
+| 3 | The multiplicities from the linearized form | 1/3 | 2/3 | Peel the trace factor layer by layer at 4 to 128 → a rule for k, or none | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained). **Assumptions:** none added. The epic is commit c4c8fb8bd. Its goals-doc and intuition-doc entries went in with the growth thread's commit 53d46a27a, since both threads were writing the shared docs at the same moment.

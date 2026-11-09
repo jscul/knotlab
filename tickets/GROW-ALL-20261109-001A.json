@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROW-CHOOSE-20261109-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROW-ALL-20261109-001A-E001",
+    "contract_path": "experiments/GROW-ALL-20261109-001A/GROW-ALL-20261109-001A-E001_every_allowed_cut_at_once/contract.json"
+  },
+  "id": "GROW-ALL-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "A frozen exploratory run, exact per decision: from running 3 x 3, 3 x 4 and 4 x 4 tubes at g = 2 and the 3 x 3 tube at g = 3, fresh split, insert a band at every cut (both ways) where one keeps every contact persistent, all at once, at lags 0 to 3, reading persistence through a full period of the state (up to 400,000 steps) and stopping a run past 700 rings; the cuts allowed, refused and unknown at each lag, and whether the combination persists.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROW-ALL-20261109-001"
+  },
+  "parent": "GROW-ALL-20261109-001",
+  "schema_version": 1,
+  "status": "Closed: supported 2026-11-09 (exploratory, exact per decision to lag 2; frozen contract, H refuted): the order-free rule, a band at every cut where one keeps every contact persistent, all at once, finds every cut allowed at lags 0, 1 and 2 on the 3 x 3, 3 x 4 and 4 x 4 tubes at g = 2 and every combination read persists, so the network doubles both sides each lag (3 x 3 to 24 x 24), every stage balanced in the whole-history reading; no cut is refused; at lag 3 the 48 cuts of 24 x 24 show no failure within 50,000 steps but cannot be confirmed (unknown), and at g = 3 the lag-2 cuts are unknown. Every contact is cut and reborn each lag; the rings carry the memory.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Every allowed cut at once, past lag 1"
+}

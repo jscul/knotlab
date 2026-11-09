@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROW-ALL-20261109-001A-E001",
+  "ticket": "GROW-ALL-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does growth chosen by the dynamics in its order-free form (a band at every cut where one keeps every contact persistent, all at once) keep growing both ways past lag 1, or stop by lag 3?",
+  "public_inputs": {
+    "library": "GROW-CHOOSE-20261109-001A-E001's choose_lib.py (sha256 71e5e8829415d09533a8648fd615cf06b94e767258c383bd8b6624cb510741c4).",
+    "run": "run.py in this folder, 8 worker processes over the cuts of each lag.",
+    "family": "Tubes 4 x 4 and 3 x 4 at g = 2, 3 x 3 at g = 3 and 3 x 3 at g = 2, in that order; fresh split; lags 0 to 3.",
+    "reading": "persists(): every contact binds both of its rings at every later lag if the network stays as it is, exact by iterating the state to a repeat (Brent), unknown past 400,000 steps at lags 0 to 2 and past 50,000 steps at lag 3, where a failure is still read exactly. A run stops at the first lag with no allowed cut, at lag 3, if the combination does not persist, or if the next network would pass 700 rings."
+  },
+  "forbidden_inputs": [
+    "Changing the tubes, split, caps or horizon after seeing results",
+    "Dropping tubes or cuts"
+  ],
+  "primary_observable": "For every tube and lag: the sides, the cuts allowed, refused and unknown, whether the combination persists, and why the run stopped.",
+  "cheapest_meaningful_control": "GROW-CHOOSE-20261109-001A-E001: at lags 0 and 1 every cut of 3 x 3, 3 x 4 and 4 x 4 at g = 2 is allowed with fresh and every combination persists.",
+  "resource_budget": {
+    "wall_minutes": 180,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-lag line of the 3 x 3 tube at lag 2.",
+  "decision_or_followup_rule": "Frozen hypothesis H: the order-free rule stops by lag 3 on every tube (no cut allowed at lag 2 or 3, or a combination that fails). If H holds, the line pivots to B39 (the coordinator's instruction). If some tube allows cuts both ways at lag 2 and its combination persists, the order-free rule is a candidate plane-growing law, and its growth is read as far as the caps allow.",
+  "stop_rule": "Stop when every tube has stopped by the rules above.",
+  "nonclaims": [
+    "Exploratory and finite: four tubes, lags 0 to 3.",
+    "persists() reads growth stopping at each lag."
+  ],
+  "feasibility_disclosure": "Before freezing, a scratch pilot on 3 x 3 at g = 2 read lags 0 and 1 (6 and 12 cuts allowed, combinations persisting, as in GROW-CHOOSE) and at lag 2 found all 24 cuts of the 12 x 12 network unknown within 3,000 steps (no failure seen, no repeat); a static 12 x 13 tube at g = 2 has a state cycle of 32,760 (6 x 13: 16,380; 3 x 13: 8,190; 12 x 12: 48). A first launch (grow-all-a1, 21:32 UTC) read the 3 x 3 tube at g = 2 to lag 2, where all 24 cuts of the 12 x 12 network were allowed, and was stopped at 22:33 UTC inside the combination and lag-3 readings, whose 24 x 25 networks would have taken hours per cut; the relaunch reads the other three tubes first, keeps the 400,000-step cap at lags 0 to 2, and reads lag 3 to 50,000 steps (a failure exact, no failure recorded as unknown). The hypothesis and every other input are unchanged."
+}

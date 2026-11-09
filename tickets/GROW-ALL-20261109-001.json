@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "GROW-ALL-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B38, given the go-ahead by the coordinator on 2026-11-09 as the bounded last test of plane growth (G1 with G5): growth chosen by the dynamics in its order-free form, a band at every cut where one keeps every contact persistent, all at once, read past lag 1 on running square tubes of equally spaced rule-60 rings with law (12,12) contacts. Does it keep growing both ways, or stop by lag 3 (then pivot to B39)? Readings exact per decision; size and step caps recorded.",
+  "ownership": {
+    "root": true,
+    "scope_id": "GROW-ALL-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09: growth by every allowed cut at once does not stop by lag 3. On the 3 x 3, 3 x 4 and 4 x 4 tubes at g = 2 every cut both ways is allowed at lags 0, 1 and 2 and every combination read persists, so the network doubles both sides each lag (3 x 3 to 24 x 24), every stage read balanced in the whole-history reading (exploratory, exact per decision; validated against actual bits); at lag 3 no cut of 24 x 24 fails within 50,000 lags and none is confirmed; at g = 3 the lag-2 cuts are beyond the cap. Every contact is cut and reborn each lag; the stages read distance only through freezes; stated for the declared rings (A45). Recommendation Continue: distance and balls in the doubling network (B49).",
+  "status_class": "complete",
+  "stop_rule": "Stop at the first lag where no cut is allowed, or at lag 3, or where the network passes the size cap, for each tube; if growth stops by lag 3 the line pivots to B39 (coordinator).",
+  "title": "Growth by every allowed cut at once"
+}

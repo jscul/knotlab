@@ -39,8 +39,12 @@ knots and reads its own distance while it grows.
 
 ## Stress test
 
-**Pending** (`docs/LONG_RUNNING.md`, ISOLATION-NEED-A2): the two g = 3 counterexamples read further, to 48 × 48, as the frozen rule asks
-(`read_further.py` beside this note; its output will be `read_further.json` and its log `read_further_log.txt`).
+| Claim | One size past | Result |
+| --- | --- | --- |
+| The g = 3 counterexamples keep balance while hearing (1) | 48 × 48 (read to 24 × 24), as the frozen rule asks | pass: both schedules balanced at 48 × 48, with 2,304 (P = 2) and 4,608 (P = 4) own cells hearing another ring |
+
+The run is `read_further.py` beside this note, its output `read_further.json` and its log `read_further_log.txt` (ISOLATION-NEED-A2 in
+`docs/LONG_RUNNING.md`, six minutes, folded in on 2026-11-09). Balance is computed, not proved, at every size read.
 
 ## Literature and provenance
 

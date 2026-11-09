@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RESCUE-MAP-20261109-001A-P001",
+  "canonical_id": "RESCUE-MAP-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "RESCUE-MAP-20261109-001A",
+  "proof": "RESCUE-MAP-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Short loops rescue late rings: every torus that reads distance plainly",
+  "status": "Proved",
+  "claim": "For tori of every shape of the square, triangular and honeycomb lattices of rule-60 rings with equally spaced law-(12,12) contacts: (1) the systole lemma of PLAIN-TIME-20261108-001B holds for every covering of networks, in particular for the tube T/<v> of one lattice vector; (2) in the square tube of (2,1) and the triangular tube of (1,-1) every ring is on time with its closest contacts reached by an odd number of shortest routes (proved by a checked certificate, and by hand for the square tube; exactly one route in every case read), and every torus holding a rotation of (2,1) (index at least 4) or a vector of length sqrt 3 is on time; the two square tori of index 3 holding (2,1) or (-1,2) are late; (3) the mirror tube of (1,2) is late at distance 4; every other tube of a vector with fewer than 2 ell + m arcs to its translate is late within ell or joins a ring to itself; (4) hence a square torus is on time exactly when its lattice holds (2,0), (0,2), (2,1) or (-1,2) (index 3 excepted) or it is one of 23 listed tori of index 5 to 17; a triangular torus exactly when its lattice holds a vector of length sqrt 3 or it is one of 85 listed tori of index 4 to 21; a honeycomb torus exactly when it is one of 15 listed tori of index 1 to 9.",
+  "dependencies": [
+    "DISTANCE-20261108-001B",
+    "GROWN-DISTANCE-20261109-001A",
+    "PLAIN-TIME-20261108-001A",
+    "PLAIN-TIME-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A torus holding (2,1) or (-1,2) of index at least 4, or a triangular torus holding a vector of length sqrt 3, that is late.",
+    "An on-time torus that holds no family vector and is not listed.",
+    "A tube certificate condition failing at some contact.",
+    "A short non-family tube with no late ring within ell."
+  ],
+  "lineage": {
+    "home_scope": "RESCUE-MAP-20261109-001",
+    "epic_path": [
+      "RESCUE-MAP-20261109-001"
+    ],
+    "parents": [
+      "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py",
+      "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json",
+      "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json",
+      "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/proof.md",
+      "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json",
+      "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/proof.md"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json": "cfa8fa26d7df3f5e629fb573d241bac4589e378535bd24aee4d061df6406c45d",
+    "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json": "c99a5ae475f4e02c7f5c09974990c7bfe5a810a0b6593e2037319f1056615fae",
+    "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/proof.md": "44f0d0f3327766b0dd7cf4157b276df5d58d27fa24a29bbdbd9dedacdbf2f45b",
+    "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json": "603257295514c890d7114b2b0866127cb84b1efcee560a64d987b1173a173936",
+    "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/proof.md": "76225e2b7f4623b4a23691c817a857191ad02759e99f48e6be054a6e48ff08c5"
+  },
+  "paths": {
+    "manifest": "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json",
+    "identity": "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/identity.json",
+    "proof": "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/proof.md",
+    "result": "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/result.json",
+    "check": "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/check.py",
+    "directory": "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Tori of every shape of the square, triangular and honeycomb lattices of rule-60 rings with equally spaced law-(12,12) contacts; two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "Theorem 1 by hand; Theorem 2 by hand (square tube) and by a checked certificate (triangular tube); Theorem 3 by Theorems 1 and 2 and an exact census to index 50, 93 and 48; stress test to index 100, 140 and 80",
+    "novelty": "new as far as found for the question asked: the complete list of tori of the three regular lattices that read distance across time plainly; short loops along which shortest routes are unique rescue them"
+  }
+}

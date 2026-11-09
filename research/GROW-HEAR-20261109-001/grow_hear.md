@@ -89,3 +89,31 @@ Since the epic opened:
 4. **Invertible substrate.** As before.
 
 **Recommendation.** Research directions, #1 as the coordinator asked; the territory pattern of conclusion 1 is the lemma to try.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:53 UTC and copied here verbatim.
+
+**Distance in the g = 3 growing plane (B53) is closed and published, pre-registered.** The plane keeps its knots and its rings hear each other, but only inside each original ring's own territory. ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROW-HEAR-20261109-001/grow_hear.md))
+
+- **Reach:** an original ring's influence converges to half an original spacing, and no original ring ever hears another. Balance is computed to 48 × 48, not proved.
+- **Ball:** the contacts that need a ring grow by a constant per doubling, like the boundary of a region rather than its area. At g = 2 they grew about fourfold.
+- **So:** the grown plane is a patchwork of territories, each refined and heard inside, none heard across its border. It reads no distance between original rings while it grows.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: distance in the g = 3 plane | Successful | Each original ring is heard only in its own territory |
+| Local direction: a grown plane with knots and distance | Research directions | Not yet had together in any growing law |
+| Broader exploration: G1 with G5 | Known alternatives | Growth that stops (B56); larger g (B57); B39 |
+| Long-term goal: G1 Space from a law | Obstruction learned | Growing planes that keep their knots split into territories that don't hear each other |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Why g = 3 keeps balance (B55) | 2/3 | 2/3 | Prove confinement to territories, then apply the transfer lemma territory by territory |
+| 2 | Larger spacings (B57) | 2/3 | 3/3 | Census and reach at g = 4, 5 → a spacing where influence crosses borders and balance holds, or none |
+| 3 | Growth that stops (B56) | 2/3 | 2/3 | Double k lags, stop, read the distance → distance as a function of k |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** none new. **Goals:** G1/G5 checkpoint; B53 taken; B55 to B57 added. **Assumptions:** none. **Long-running:** ISOLATION-NEED-A2 is signed off. Nothing is running.
+
+Next is #1 (B55), as the coordinator asked. The territory pattern gives the lemma to try.

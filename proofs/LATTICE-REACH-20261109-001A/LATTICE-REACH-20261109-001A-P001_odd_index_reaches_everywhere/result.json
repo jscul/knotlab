@@ -1,0 +1,182 @@
+{
+ "ticket": "LATTICE-REACH-20261109-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json": "9ba1f3e50d4015eed6677f40bf3dc74c93024d7cb6b69c4ab49656176704643a",
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py": "665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42",
+    "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/manifest.json": "f2c2f5df052af344c943e2b73167496b12dea4d9391ab33a5a0cc80a7376ff8c",
+    "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/proof.md": "519906a13b960572981eb526f33f4a999bf0b37f41e3bca0a71e783e2cf9d433",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json": "b858d086f9e5ece9f0b020b8ebd6f49e2cf8f2da50d589d91d091f23f601d170",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py": "ebfbeab71dcb0568c0f4445750aa719d096daba48c8d6165ace5705575a855fe"
+   }
+  },
+  "1_digon_tori_have_finite_feedback": {
+   "pass": true,
+   "info": {
+    "square": {
+     "digon tori": 127,
+     "most rings any contact needs": 4,
+     "of these, composing everywhere": 1,
+     "largest composing everywhere (rings)": 2
+    },
+    "triangular": {
+     "digon tori": 0,
+     "most rings any contact needs": 0,
+     "of these, composing everywhere": 0,
+     "largest composing everywhere (rings)": 0
+    },
+    "honeycomb": {
+     "digon tori": 193,
+     "most rings any contact needs": 6,
+     "of these, composing everywhere": 1,
+     "largest composing everywhere (rings)": 2
+    }
+   }
+  },
+  "2_odd_square_tori_power_2r_minus_1": {
+   "pass": true,
+   "info": {
+    "tori": 671,
+    "failures": []
+   }
+  },
+  "3_computed_odd_index_rule": {
+   "pass": true,
+   "info": {
+    "square": {
+     "tori": 2006,
+     "composing everywhere": 1926,
+     "ring level everywhere": 1930,
+     "exceptions to the rule": []
+    },
+    "triangular": {
+     "tori": 1966,
+     "composing everywhere": 1966,
+     "ring level everywhere": 1966,
+     "exceptions to the rule": []
+    },
+    "honeycomb": {
+     "tori": 2086,
+     "composing everywhere": 1961,
+     "ring level everywhere": 1967,
+     "exceptions to the rule": [
+      [
+       [
+        [
+         7,
+         0
+        ],
+        [
+         6,
+         9
+        ]
+       ],
+       {
+        "rings": 126,
+        "contact miss": 6,
+        "ring miss": 0,
+        "fewest rings a contact needs": 120,
+        "most rings a contact needs": 126
+       }
+      ],
+      [
+       [
+        [
+         63,
+         0
+        ],
+        [
+         8,
+         1
+        ]
+       ],
+       {
+        "rings": 126,
+        "contact miss": 6,
+        "ring miss": 0,
+        "fewest rings a contact needs": 120,
+        "most rings a contact needs": 126
+       }
+      ],
+      [
+       [
+        [
+         63,
+         0
+        ],
+        [
+         54,
+         1
+        ]
+       ],
+       {
+        "rings": 126,
+        "contact miss": 6,
+        "ring miss": 0,
+        "fewest rings a contact needs": 120,
+        "most rings a contact needs": 126
+       }
+      ]
+     ]
+    }
+   }
+  },
+  "4_computed_even_index_has_no_rule_by_these_invariants": {
+   "pass": true,
+   "info": {
+    "square": {
+     "tori": 1124,
+     "composing everywhere": 1002,
+     "classes mod 16 with both verdicts (of all)": [
+      26,
+      71
+     ],
+     "2-parts with both verdicts (of all)": [
+      10,
+      11
+     ],
+     "mirror counts with both verdicts (of all)": [
+      2,
+      2
+     ]
+    },
+    "triangular": {
+     "tori": 1147,
+     "composing everywhere": 967,
+     "classes mod 16 with both verdicts (of all)": [
+      41,
+      71
+     ],
+     "2-parts with both verdicts (of all)": [
+      10,
+      11
+     ],
+     "mirror counts with both verdicts (of all)": [
+      2,
+      3
+     ]
+    },
+    "honeycomb": {
+     "tori": 1147,
+     "composing everywhere": 780,
+     "classes mod 16 with both verdicts (of all)": [
+      47,
+      71
+     ],
+     "2-parts with both verdicts (of all)": [
+      10,
+      11
+     ],
+     "mirror counts with both verdicts (of all)": [
+      3,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 10.2
+}

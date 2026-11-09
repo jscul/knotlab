@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "HONEY-REACH-20261109-001A",
+    "LATTICE-NET-20261108-001A",
+    "RESCUE-MAP-20261109-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "LATTICE-REACH-20261109-001A-P001"
+  },
+  "id": "LATTICE-REACH-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that a torus with a digon face (a lattice holding (1,1) or (1,-1) on the square lattice, a unit on the honeycomb; none on the triangular) kills a factor of its walk polynomial, so every contact needs only nearby rings; prove the reached set of the power 2^r - 1 on odd square tori of every shape; and compute, without a lag cutoff, which tori of every shape and odd index compose everywhere and how the even index behaves.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LATTICE-REACH-20261109-001"
+  },
+  "parent": "LATTICE-REACH-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (Theorems 1 and 2 by hand; the rest computed): a torus has a digon face exactly when its lattice holds (1,1) or (1,-1) (square) or a unit (honeycomb), never triangular, and then a factor of the walk polynomial vanishes so every contact needs at most a few rings; on odd square tori without digons the power 2^r - 1 is 1 exactly off the symmetric difference of the two diagonals. Computed to index 151: at odd index composition reaches everywhere exactly when there is no digon, except the honeycomb n x n with 3 not dividing n and one torus of index 63; at even index (to 48) no rule by the lattice mod 16, the 2-part of the group or the mirrors.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Composition reaches everywhere at odd index except at digons and the honeycomb's pinned ring"
+}

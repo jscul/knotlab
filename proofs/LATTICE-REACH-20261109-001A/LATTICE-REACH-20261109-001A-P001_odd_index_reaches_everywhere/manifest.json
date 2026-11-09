@@ -1,0 +1,104 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LATTICE-REACH-20261109-001A-P001",
+  "canonical_id": "LATTICE-REACH-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "LATTICE-REACH-20261109-001A",
+  "proof": "LATTICE-REACH-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Composition reaches everywhere at odd index except at digons and the honeycomb's pinned ring",
+  "status": "Proved",
+  "claim": "On tori of every shape of the square, triangular and honeycomb lattices of rule-60 rings with equally spaced contacts: (1) a torus has a digon face exactly when its lattice holds (1,1) or (1,-1) (square) or a unit (honeycomb), never on the triangular lattice; on it a one-step factor of the walk polynomial vanishes in GF(2)[G], walks of two (square) or three (honeycomb) or more arcs cancel, and every contact needs at most 6 or 14 rings (at most 4 and 6 in every case read), so composition does not reach everywhere; (2) on a square torus of odd index without digons, L^(2^r - 1) is 1 exactly off (A symmetric-difference B) and the origin, A and B the images of the two diagonals. Computed, not proved: at odd index 3 to 151 a square torus composes everywhere exactly when it has no digon, every triangular torus does, and a honeycomb torus does exactly when it has no digon and is not n x n with 3 not dividing n, except one torus up to rotation of index 63; at even index (to 48) 89%, 84% and 68% of the tori without digons compose everywhere, with no rule by the lattice mod 16, the 2-part of the group or the mirror symmetries.",
+  "dependencies": [
+    "HONEY-REACH-20261109-001A",
+    "LATTICE-NET-20261108-001A",
+    "RESCUE-MAP-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A digon torus whose contacts need rings beyond the bound.",
+    "An odd-index torus with no digon, other than the honeycomb n x n with 3 not dividing n, on which some contact never needs some ring."
+  ],
+  "lineage": {
+    "home_scope": "LATTICE-REACH-20261109-001",
+    "epic_path": [
+      "LATTICE-REACH-20261109-001"
+    ],
+    "parents": [
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json",
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py",
+      "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/manifest.json",
+      "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/proof.md",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json": "9ba1f3e50d4015eed6677f40bf3dc74c93024d7cb6b69c4ab49656176704643a",
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py": "665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42",
+    "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/manifest.json": "f2c2f5df052af344c943e2b73167496b12dea4d9391ab33a5a0cc80a7376ff8c",
+    "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/proof.md": "519906a13b960572981eb526f33f4a999bf0b37f41e3bca0a71e783e2cf9d433",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json": "b858d086f9e5ece9f0b020b8ebd6f49e2cf8f2da50d589d91d091f23f601d170",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py": "ebfbeab71dcb0568c0f4445750aa719d096daba48c8d6165ace5705575a855fe"
+  },
+  "paths": {
+    "manifest": "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/manifest.json",
+    "identity": "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/identity.json",
+    "proof": "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/proof.md",
+    "result": "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/result.json",
+    "check": "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/check.py",
+    "directory": "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Tori of every shape of the square, triangular and honeycomb lattices of rule-60 rings with equally spaced law-(12,12) contacts; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "Theorems 1 and 2 by hand, checked by check.py; the odd-index classification computed to index 151 (stress test); even index computed to 48",
+    "novelty": "known-with-delta: composition across time on tori of every shape; at odd index only digon faces and the honeycomb's pinned ring stop it, apart from one torus of index 63"
+  }
+}

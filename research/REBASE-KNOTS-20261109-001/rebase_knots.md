@@ -96,3 +96,32 @@ reason.
    persistent at all.
 
 **Recommendation.** Research directions; continue with B23 as ordered, and offer #3 as the sharpest test of this result.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:29 UTC, covering `GROW-CHOOSE-20261109-001` and `REBASE-KNOTS-20261109-001` together, and copied here verbatim.
+
+**Growth chosen by the dynamics (B23) is closed and published, and so is knots read from the last growth event (direction 2).** Left to its own dynamics, the band law grows a tube and then mostly stops. The earlier breakage is real, not a reading artefact. ([B23 note](https://github.com/jscul/knotlab/blob/main/research/GROW-CHOOSE-20261109-001/grow_choose.md), [direction 2 note](https://github.com/jscul/knotlab/blob/main/research/REBASE-KNOTS-20261109-001/rebase_knots.md))
+
+- **One way (census, exact per decision):** allowed a band only where it keeps every contact persistent, the network picks a direction with its first band and keeps it. From lag 3 on, all 72 runs on seven tubes allow cuts in one direction only.
+- **Then it stops:** splits that keep the old contact value stop after lag 2. Fresh splits add one band per lag for 3 to 13 lags and then run out of room. Tubes three rings round, grown along their length, are the exception and reach the horizon.
+- **Filling every allowed cut at once** (no ordering choice) grows both ways at lags 0 and 1. Past that the networks were too large to read.
+- **Direction 2 (proved):** every cell is read by exactly two cells, so no row after the first is open. Reading knots from a later row natively fails even without growth.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: growth chosen by the dynamics | Successful | A tube, then a stop, read exactly per decision; the re-based reading is shown not native |
+| Local direction: growth in time | Research directions | Only the order-free rule grows both ways, and only its first two lags are read |
+| Broader exploration: G1 with G5 | Known alternatives | Invertible substrate (B39); handles from two bands (B22) |
+| Long-term goal: G1 Space from a law | Obstruction learned | Neither the band law nor its own dynamics has grown a plane of persistent contacts |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Every allowed cut at once, past lag 1 (B38) | 3/3 | 2/3 | Faster exact persistence reading, run from 3 × 3 and 4 × 4 → a plane that keeps growing, or the lag it stops |
+| 2 | Invertible substrate (B39) | 2/3 | 2/3 | A rule whose rows stay open; insert while running → whether the lapse is rule 60's forgetting |
+| 3 | Why a band across the tube breaks persistence | 1/3 | 2/3 | Read the reached rings of each refused cut → the cause |
+| 4 | Handles from two bands (B22) | 2/3 | 1/3 | Unchanged |
+
+**Corrections:** none new. **Goals:** G1/G5 checkpoints; B23 taken; B38 and B39 added. **Assumptions:** A43 confirmed (the dynamics grows one way too). A42 has an added reason: each stage starts from an open row. **Long-running:** GROW-RUN-S1 and GROW-CHOOSE-A1 are folded in and await sign-off.
+
+I recommend #1 as a bounded last test of whether this line can grow a plane. If it stops by lag 3, I'd pivot to #2.

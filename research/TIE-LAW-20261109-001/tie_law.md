@@ -114,3 +114,26 @@ Since the epic opened:
 3. **The ring law.** Payoff 1: a sharpening; Concreteness 2: thin ties give the local picture.
 
 **Recommendation.** Continue with the full-reach collapse (#2).
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:10 UTC and copied here verbatim.
+
+The tie law's open half is now proved, and the epic is published. On every regular tiling, flat or curved, no contact is reached by two shortest routes before distance τ = lcm(m,f) − lcm/m − lcm/f + 1. So the plain first need reads every closer contact on time. The proof counts the disc between two tied routes. A shortest route runs along each cell beside it only once, and never for too long. Together those force a tie to span at least lcm(m,f) corners of each kind. That a tie does come at τ is proved when m = f. For other tilings it's computed: on 42 covers, plus 4 larger ones in the stress test.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the tie law | **Status:** Partially successful | No tie before τ proved on every tiling; the tie at τ proved for m = f, computed elsewhere |
+| Local direction: the plain first need | Continue | Attainment for m ≠ f, and the law for rings (τ+1, τ+2) |
+| Broader exploration: G5 with G1 | Known alternatives | The full-reach collapse (next), backlog B22–B31 |
+| Long-term goal: G5 Dynamics | Capability gained | The horizon of distance without freezing is now a theorem from below |
+
+**Next step:** Continue, selected #2 (the coordinator's go-ahead).
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The tie at τ when m ≠ f | 1/3 | 2/3 | Show both routes minus their last arc are shortest → a proof, or a cover where they aren't | Alternative · deferred |
+| 2 | Full-reach collapse at every power of two | 2/3 | 2/3 | Smith form of the cut-line matrix at 4, 8, 16 → a proof, or a power of two where it fails | Selected · started |
+| 3 | The first late ring at τ+1 or τ+2 | 1/3 | 2/3 | The rings beside a thin tie's ends → why triangular faces add a step | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained). **Assumptions:** none added. Both stress tests are folded in. The tie-law one (TIE-LAW-S1) needs the coordinator's sign-off; FULL-REACH-PROOF-S1 already has it. Commits 3982d13c5, 4f286a296 and aa7ab1c7a. I'm starting the Smith-form work now.

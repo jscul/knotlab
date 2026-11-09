@@ -1858,8 +1858,8 @@ So network holes come in two kinds:
      read their distance plainly much further, but not forever. No lag cutoff was used.
    - **Reading.** Freezing does real work wherever a network is two-dimensional and not tiny (A41, confirmed). Chirality is native:
      rule 60 reads leftward, so a network and its mirror image are different substrates.
-   - **Next (research directions, paused for the day).** Prove the tie law's lower bound; find which quotients rescue late rings
-     ([decision note](../research/PLAIN-TIME-20261108-001/plain_time.md)).
+   - **Next (research directions, paused for the day).** Prove the tie law's lower bound (taken, and proved, on 2026-11-09); find which
+     quotients rescue late rings ([decision note](../research/PLAIN-TIME-20261108-001/plain_time.md)).
 
    **2026-11-09: full reach on honeycomb tori** (`HONEY-REACH-20261109-001`).
    - **The question.** On the square torus every ring needs every ring exactly when the side is odd. On the honeycomb torus the census
@@ -1970,6 +1970,20 @@ So network holes come in two kinds:
      spectrum is generic. No lag cutoff was used.
    - **Next (selected, deferred).** The collapse at every power of two, after the tie law
      ([decision note](../research/FULL-REACH-PROOF-20261108-001/full_reach_proof.md)).
+
+   **2026-11-09: the first tie of shortest routes** (`TIE-LAW-20261109-001`).
+   - **The question.** In a tiling with rings of m contacts and faces of f, two shortest routes were computed to first tie at
+     τ = L − L/m − L/f + 1, L = lcm(m, f). Why does no tie come earlier?
+   - **No tie before τ (proved, every tiling).** Two tied routes enclose a disc. Counting its corners gives its length:
+     d = K(1 − 1/m − 1/f) + 1 − n, where K = km = jf counts the ring and face corners and n the contacts inside. A shortest route
+     runs along each cell beside it only once and never too long, so n counts the cells neither route touches; such a cell needs a
+     whole ring of neighbours inside the disc, which a disc of the smallest size L cannot hold and a larger one pays for in length.
+   - **The tie at τ (proved when m = f, computed elsewhere).** Every closed route is at least as long as a cell, so when m = f the
+     long way round a ring and the long way round a face tie at m − 1. Elsewhere the tie at τ is read on every cover, to 24.
+   - **Reading.** The first tie is a single row of cells, rings along one route and faces along the other: the plain first need reads
+     every contact closer than τ on time, on every flat or curved tiling. No lag cutoff was used.
+   - **Next (selected).** The full-reach collapse at every power of two
+     ([decision note](../research/TIE-LAW-20261109-001/tie_law.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

@@ -123,13 +123,13 @@ degree n; the check's own failure showed it is below degree 2n, and the statemen
 - **What the attempt leaves open.** The collapse at every power of two; why the multiplicities are k(k + 1)/2; the failing set; full
   reach at the other sides.
 
-**Next step:** Continue — selected: #1, the single particle behind the symmetric square, unless the coordinator chooses otherwise.
+**Next step:** Continue — selected: #2, the return map digit by digit, at the coordinator's go-ahead (2026-11-09), following it into #1 if the recursion exposes the single particle; #3 parked as backlog B44.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | The single particle behind the symmetric square | 3/3 — Breakthrough | 1/3 — Stated | Look for an operator on n or 2n − 1 sites whose symmetric square, eigenvalue by eigenvalue, has the cone's Jordan data at 4, 8, 16 → a proof of the collapse, or a reason no such operator exists | Selected · not started |
-| 2 | The return map digit by digit | 2/3 — Substantial | 2/3 — Testable | Write C_s through Theorem 3's dyadic product as a sum over binary digits and look for a recursion in m for det(I + C_s) → a proof, or a digit where the recursion fails | Alternative · not started |
-| 3 | Prove the parity and trace laws | 1/3 — Incremental | 2/3 — Testable | Count closed walks of the cone near its apex with Lucas' theorem → a proof of tr(A_cone^j) = [j a power of two] for j < 2n, or a counterexample | Alternative · not started |
+| 1 | The single particle behind the symmetric square | 3/3 — Breakthrough | 1/3 — Stated | Look for an operator on n or 2n − 1 sites whose symmetric square, eigenvalue by eigenvalue, has the cone's Jordan data at 4, 8, 16 → a proof of the collapse, or a reason no such operator exists | Alternative · within #2 |
+| 2 | The return map digit by digit | 2/3 — Substantial | 2/3 — Testable | Write C_s through Theorem 3's dyadic product as a sum over binary digits and look for a recursion in m for det(I + C_s) → a proof, or a digit where the recursion fails | Selected · started |
+| 3 | Prove the parity and trace laws | 1/3 — Incremental | 2/3 — Testable | Count closed walks of the cone near its apex with Lucas' theorem → a proof of tr(A_cone^j) = [j a power of two] for j < 2n, or a counterexample | Alternative · parked (B44) |
 
 1. **The symmetric square.** Payoff 3: a single-particle picture would explain the field GF(2n), the multiplicities and the Jordan
    blocks at once, and would likely prove the collapse; Concreteness 1: Theorem 1 gives the two particles, but no candidate operator
@@ -140,3 +140,26 @@ degree n; the check's own failure showed it is below degree 2n, and the statemen
    apex are plane walks, counted by Lucas' theorem.
 
 **Recommendation.** Continue with #1, keeping #2 as the fallback if no operator appears within the sides already computed.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 22:35 UTC and copied here verbatim.
+
+The collapse epic is closed and published, but the collapse at every power of two is still unproved. What's new: the walk is two particles on one side of the box, and its quarter turn folds the box into a cone whose spectrum, four times over, is the whole spectrum. At powers of two that cone's spectrum is one return map of the cut line, half a side across. Its Smith form, the first step asked for, is exactly the cone's Jordan data. Up to side 64 the eigenvalues follow a rigid law: each one appears k(k+1)/2 times with Jordan blocks 2k−1, 2k−5, …, the pattern of a symmetric square. A count is odd exactly when Tr(1/λ) = 1. The collapse also holds at side 128.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the collapse at every power of two | **Status:** Inconclusive | Four reductions proved and the Smith form computed; the collapse isn't proved |
+| Local direction: the cut-open torus | Continue | The eigenvalue law is rigid and testable, and points at a mechanism |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B43 |
+| Long-term goal: G5 Dynamics | No demonstrated advance | Why powers of two are special is narrowed down, not proved |
+
+**Next step:** Continue. I recommend #1 and have asked the coordinator to choose.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The single particle behind the symmetric square | 3/3 | 1/3 | An operator whose symmetric square has the cone's Jordan data at 4, 8, 16 → a proof, or a reason none exists | Recommended |
+| 2 | The return map digit by digit | 2/3 | 2/3 | Write the return map through the dyadic product and find a recursion in m → a proof, or the digit where it fails | Alternative |
+| 3 | Prove the parity and trace laws | 1/3 | 2/3 | Count the cone's closed walks near its apex → a proof for j < 2n, or a counterexample | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (no demonstrated advance). **Assumptions:** none added. The side-128 stress run's second stage (each class's multiplicity and Jordan blocks) is still running, and every class checked so far passes. I'll fold it in when it finishes. Commits 32e9f536d and cfb2fb3a9.

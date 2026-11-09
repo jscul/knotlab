@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROW-CHOOSE-20261109-001A-E001",
+  "ticket": "GROW-CHOOSE-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On a running square tube of equally spaced rule-60 rings with law (12,12) contacts, read as one space-time law, where and which way does the network grow if a band (along the loop or across it) is inserted only where the insertion keeps every contact persistent, and does it keep growing?",
+  "public_inputs": {
+    "library": "choose_lib.py in this folder (sha256 71e5e8829415d09533a8648fd615cf06b94e767258c383bd8b6624cb510741c4), on SEPARATE-20261108-001A's net_lib.py (sha256 e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351).",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "Tubes 3 x 3, 3 x 4 and 4 x 4 at g = 2 and 3 x 3 at g = 3; splits fresh, lower, upper and copy; rules: all (every clean cut at once, kept only if the combination persists), first with rows listed first, first with columns listed first; lags 0 to 12.",
+    "reading": "At each lag, for every cut (after each row label and after each column label), insert a band there on a copy of the run and read persists(): every contact binds both of its rings at every later lag if the network stays as it is, exact by iterating the state until it repeats; None (unknown) when it has not repeated within 20,000 steps. A run whose network exceeds 120 rings stops there, and the stop is recorded. Then apply the rule and step the run."
+  },
+  "forbidden_inputs": [
+    "Changing the tubes, splits, rules or horizon after seeing results",
+    "Dropping runs or lags"
+  ],
+  "primary_observable": "For every run and lag: the tube's sides, the clean cuts (direction and label), the unknown cuts, and the bands inserted.",
+  "cheapest_meaningful_control": "GROW-RUN-20261109-001A's census: on the 3 x 3 tube at g = 2 a single row band is clean at lags 0 and 1 with the lower split and at 0, 1, 2 and 8 with fresh (choose_lib reproduces lags 0 to 3 for lower in the pilot); every static tube persists.",
+  "resource_budget": {
+    "wall_minutes": 120,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-run summary line: final sides, lags with growth, directions grown.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: with the fresh split every rule inserts at least one band at every lag to the horizon (unknown lags excepted). H2: from lag 3 on, every clean cut of every run runs in the direction the bands already inserted run (all row cuts or all column cuts), so the dynamics grows a tube. H3: with the lower, upper and copy splits no rule inserts a band after lag 2. H4: under the rule all, the combination of the clean cuts persists whenever there is one. If H1 and H2 hold, growth chosen by the dynamics grows a tube, one way, at least to the horizon; if H2 fails, the first run with clean cuts both ways after lag 2 is examined for a plane-growing schedule. If H1 fails, the lag where fresh growth stops is examined.",
+  "stop_rule": "Stop when every run has its readings to the horizon.",
+  "nonclaims": [
+    "Exploratory and finite: four tubes, lags 0 to 12.",
+    "persists() reads growth stopping at each lag; it does not read the run under later growth, which is read lag by lag as the run goes on.",
+    "Square tubes and the band law only; two-time knots only (A30); born cells open (A44)."
+  ],
+  "feasibility_disclosure": "Before freezing, a scratch pilot (first clean cut, rows listed first, rows and columns) on the 3 x 3 tube at g = 2 found: clean cuts both ways at lags 0 and 1, row cuts only at lags 2 to 8 with the fresh split, one row band per lag to 3 x 11 at lag 8; with lower a column band at lag 1 (4 x 4) and no clean cut at lags 2 to 11; on 4 x 4 with fresh, row cuts only from lag 2 and one band per lag to lag 7, where four cuts were unknown under an older row-orbit test. An earlier pilot with row cuts only grew one row band per lag to lag 14 (3 x 18 at g = 2, fresh) and stopped at the orbit cap; with lower, upper or copy it grew only at lag 0. A first launch at 20:13 UTC was stopped at the 16 GB memory cap after 52 s, before any result was written, because persists() kept every visited state; it now finds the cycle by Brent's method in constant memory, and the run uses 8 workers. Nothing else changed. A second launch (grow-choose-a2, 20:15 UTC) ran past the 40-minute budget and was stopped at 21:23 UTC, before any result was written, since results were written only at the end; the run now writes each job's result as it finishes, reads persistence to 20,000 steps (unknown beyond) and stops a run whose network exceeds 120 rings. The tubes, splits, rules, horizon and hypotheses are unchanged."
+}

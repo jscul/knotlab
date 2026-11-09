@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FLIP-RULE-20261109-001B-E001",
+  "ticket": "FLIP-RULE-20261109-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a contact persist without a flip? LOOP-NET-20261108-001A, Theorem 3, shows a flip suffices; on all 22 Archimedean and Laves tilings a contact persists exactly when it has one (PLANE-PLAIN-20261109-001A, FLIP-RULE-20261109-001A). Is a flip necessary on small maps of any surface?",
+  "public_inputs": {
+    "library": "none beyond run.py in this folder.",
+    "run": "run.py, 16 worker processes.",
+    "family": "Every rotation system on E = 1 to 5 contacts (every permutation of the 2E darts), connected, with no contact joining a ring to itself; and 400,000 random permutations each at E = 6 and 7 (seed 20261109). Equally spaced rings.",
+    "reading": "Persistence by the parity of closed walks of length 1 to E + 1; flips and reflections by building the (anti-)automorphism from one dart."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypotheses after seeing results",
+    "Dropping maps"
+  ],
+  "primary_observable": "For each E: maps, contacts, persistent contacts, contacts with a flip, persistent contacts without a flip (and of those, with a reflection), flipped contacts that do not persist.",
+  "cheapest_meaningful_control": "Every contact with a flip persists (LOOP-NET-20261108-001A, Theorem 3): the count of flipped contacts that do not persist must be 0.",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The readings in result.json.",
+  "decision_or_followup_rule": "Frozen hypothesis H1: on every map with at most five contacts, every persistent contact has a flip. If H1 holds and the samples at 6 and 7 find no exception either, persistence needs a flip on small maps, and a proof for some class is the next step; if a contact persists without a flip, the smallest such map is the first example of persistence by another mechanism, and whether a reflection explains it is read.",
+  "stop_rule": "Stop when every map of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: maps to five contacts, and samples at six and seven.",
+    "Equally spaced rings only; two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Nothing of this search was run before freezing; its cost was estimated, not timed."
+}

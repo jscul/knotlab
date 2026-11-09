@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**257 current results** and 5 superseded ones, from 197 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**258 current results** and 5 superseded ones, from 198 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 31 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 32 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 197 epics with their closures
+- [Epics](#epics): all 198 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -128,6 +128,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
   Written as its space-time law, a deterministic process is a static law on its trajectories, and its knots joining a cell's value after T steps to the first row are exactly that value with the minimally decisive sets of two or more past cells: the sets that, set suitably, fix the future value while no smaller set does. A single deciding cell gives a tie. A nonconstant future value has no knot across time exactly when it is a single conjunction or disjunction of literals, so a process remembers its past only pairwise exactly then. A linear rule with polynomial p has one two-time knot per lag, the support of p^T plus the cell, with |supp p| + 1 places at every lag 2^k; through intermediate rows Ledrappier's law gives 2 + w(T) inside the light cone for T <= 6, and the least knot leaves the light cone at T = 7. In one step of Life the knots are the 70 sets of four neighbours, and the cell's own present is in none.
   *Qualification pending: the third sentence holds for knots joining a future value to the first row. Through intermediate rows a process whose every future value is an AND can still knot two times: rule 128 never shows 1 0 1 after a step, so x(1, 1) and x(2, 4) on force x(1, 2) on, and rules 136 and 160 do the same (see the correction in the TIME-KNOTS-20261107-001 decision note).*
   [proof P001](proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/proof.md), [epic closure](proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · The grown torus reads distance by freezing at every stage, and without freezing only as a ladder** (`GROWN-DISTANCE-20261109-001-D001`).
+  Every stage of the band law's torus reads the cut and time lengths exactly, but without freezing only its first stage, the two-ring-wide ladder, reads them, at every size, while every later stage but one small torus needs freezing. Its balls grow like the plane's out to half its loop and then linearly, so band growth makes a tube.
+  [proof P001](proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/proof.md), [epic closure](proofs/GROWN-DISTANCE-20261109-001Z/GROWN-DISTANCE-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · Honeycomb tori of rings reach every ring only when 3 divides the side** (`HONEY-REACH-20261109-001-D001`).
   On the honeycomb torus of equally spaced rings, influence spreads by powers of the six-neighbour sum over GF(2), and when 3 does not divide the side the ring fixed by the turn of 120 degrees about a ring never needs it, because walks into it cancel across the mirrors. When 3 divides the side every ring needs every ring on every side computed, to 300.
   [proof P001](proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/proof.md), [epic closure](proofs/HONEY-REACH-20261109-001Z/HONEY-REACH-20261109-001Z-P001_epic_closure/proof.md)
@@ -1099,5 +1102,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Prove that creation between glue lines sees only the switching class (`SWITCH-PROOF-20261108-001`) | [closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-PROOF-20261108-001/) |
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |
 | 2026-11-08 | Two bits per tile: products of one-bit decorations (`TWO-BIT-20261108-001`) | [closure](proofs/TWO-BIT-20261108-001Z/TWO-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-20261108-001/) |
+| 2026-11-09 | Distance in a grown network (`GROWN-DISTANCE-20261109-001`) | [closure](proofs/GROWN-DISTANCE-20261109-001Z/GROWN-DISTANCE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROWN-DISTANCE-20261109-001/) |
 | 2026-11-09 | Full reach on honeycomb tori (`HONEY-REACH-20261109-001`) | [closure](proofs/HONEY-REACH-20261109-001Z/HONEY-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/HONEY-REACH-20261109-001/) |
 

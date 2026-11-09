@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "GROWN-DISTANCE-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B19 at the coordinator's spawn on 2026-11-09 (G1 with G5): the band law makes and grows only the torus (BAND-SURFACE-20261108-001, GENUS-BAND-20261108-001, GROW-NET-20261108-001), keeping the loop's n rings and adding bands, so its stages are the n x 2 ladder, then n x 3, n x 4, and so on. Does the grown torus read distance across time the way the fixed torus does (DISTANCE-20261108-001: the cut length is the ring graph's distance D and the time length g*delta + 1, with freezing; PLAIN-TIME-20261108-001: the plain first need, without freezing), and how do the balls of both lengths grow as it grows? Networks of equally spaced rule-60 rings with law (12,12) contacts; readings exact; census-only claims marked.",
+  "ownership": {
+    "root": true,
+    "scope_id": "GROWN-DISTANCE-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09: every stage of band growth (the loop, the n x 2 ladder, every n x m torus) reads the cut length D and the time length g*delta + 1 exactly (proved). Without freezing only the first band reads distance: every square torus whose lattice holds (2,0), the ladder among them, is on time at every size, and the n x m torus (2 <= n <= m) is on time exactly when n = 2 or n = m = 3 (proved). Balls are a tube's: 2r^2 + 2r + 1 out to half the loop, then 2n per step (proved). Computed to index 100, 80 and 50: the square (2,1) tubes of one chirality and the triangular sqrt 3 tubes are on time too; PLAIN-TIME-20261108-001's 26 tori are the rotation-invariant ones (correction, Narrowing). A42 and A43 added. Recommendation Research directions, selected #1 (growth while running).",
+  "status_class": "complete",
+  "stop_rule": "Stop when every stage of band growth has a verdict for both freeze lengths and for the plain first need, with the balls' growth stated, or at the first stage whose reading cannot be settled exactly.",
+  "title": "Distance in a grown network"
+}

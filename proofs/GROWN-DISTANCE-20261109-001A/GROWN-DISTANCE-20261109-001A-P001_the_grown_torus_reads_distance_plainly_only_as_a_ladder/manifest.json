@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROWN-DISTANCE-20261109-001A-P001",
+  "canonical_id": "GROWN-DISTANCE-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "GROWN-DISTANCE-20261109-001A",
+  "proof": "GROWN-DISTANCE-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The grown torus reads distance by freezing at every stage, and plainly only as a ladder",
+  "status": "Proved",
+  "claim": "For networks of equally spaced rule-60 rings with law (12,12) contacts grown by the band law (a loop of n rings, the n x 2 ladder, then the n x m tori), each stage read as a fixed network: (1) every stage reads the cut length D and the time length g*delta + 1 exactly, and on the ladder and tori D = ceil(delta/2); (2) every square torus whose lattice holds (0,2) or (2,0), the n x 2 ladder and its twisted forms, is on time for every n >= 2 (the plain first need comes at the time length for every ring and contact); (3) the n x m torus with 2 <= n <= m is on time exactly when n = 2 or n = m = 3, so every stage from the second band on is late but 3 x 3; (4) ring balls on the n x m torus are sum_b min(n, 2(r - |b|) + 1), on the cylinder 2r^2 + 2r + 1 up to r = (n - 1)/2 and then 2n more per step, and the time length's balls at radius 2r are the ring balls of radius r about the contact's two rings. Computed: on every square torus to index 100, triangular to 80 and honeycomb to 50, the ladders, the square tori holding (2,1) or a rotation of it, and the triangular tori holding a vector of length sqrt 3 are all on time, and every other on-time torus has index at most 17, 21 or 9; this corrects PLAIN-TIME-20261108-001B, Theorem 4, which holds for the rotation-invariant tori only.",
+  "dependencies": [
+    "BAND-SURFACE-20261108-001A",
+    "DISTANCE-20261108-001B",
+    "GROW-NET-20261108-001A",
+    "PLAIN-TIME-20261108-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A stage of band growth with twin corners, or an isolated shortest route arriving at another lag than g*delta + 1.",
+    "A square torus holding (0,2) or (2,0) with a late ring.",
+    "An n x m torus with 3 <= n <= m, other than 3 x 3, that is on time.",
+    "A ring ball of the n x m torus or the cylinder that differs from the closed form."
+  ],
+  "lineage": {
+    "home_scope": "GROWN-DISTANCE-20261109-001",
+    "epic_path": [
+      "GROWN-DISTANCE-20261109-001"
+    ],
+    "parents": [
+      "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json",
+      "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json",
+      "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py",
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/grow_lib.py",
+      "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json": "cfa8fa26d7df3f5e629fb573d241bac4589e378535bd24aee4d061df6406c45d",
+    "proofs/PLAIN-TIME-20261108-001B/PLAIN-TIME-20261108-001B-P001_only_the_sphere_reads_distance_plainly/manifest.json": "603257295514c890d7114b2b0866127cb84b1efcee560a64d987b1173a173936",
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/grow_lib.py": "7dcd377da641727744cb00956f40c88f5614ae2e4fd6908d5d790117d7be1f78",
+    "proofs/BAND-SURFACE-20261108-001A/BAND-SURFACE-20261108-001A-P001_one_band_makes_the_torus/manifest.json": "e2631ce24057d884ac630262b921c82b9919c46b38a733fc8939c93038c1be2a"
+  },
+  "paths": {
+    "manifest": "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json",
+    "identity": "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/identity.json",
+    "proof": "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/proof.md",
+    "result": "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/result.json",
+    "check": "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/check.py",
+    "directory": "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Networks of rule-60 rings with law (12,12) contacts made by the band law, each stage read as a fixed network (A42); the freeze readings (A38, A40, A41) and the plain first need against the directed distance; tori of every shape for the census; two-time knots only (A30). The (2,1) and sqrt 3 tubes are computed to index 100 and 80.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's spawn on 2026-11-09, under the owner's standing research mandate.",
+    "status": "proof by hand (Theorems 1 to 4); finite claims checked by check.py; the census of every torus computed (check 5)",
+    "novelty": "new as far as found for the question asked (which tori, of every shape, read distance plainly); ingredients classical"
+  }
+}

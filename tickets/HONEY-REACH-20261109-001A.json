@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "LATTICE-NET-20261108-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "HONEY-REACH-20261109-001A-P001"
+  },
+  "id": "HONEY-REACH-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, on the honeycomb torus of side n of rule-60 rings with equally spaced law-(12,12) contacts: three steps of the contact graph between contacts of one kind are the six-neighbour sum M = (1 + x)(1 + y/x)(1 + 1/y) over GF(2) on the triangular lattice of rings of one kind; every power of M vanishes on the three mirror lines through the origin; when 3 does not divide n the ring fixed by the turn of 120 degrees about a ring never needs it, so composition never reaches every ring; and compute, without a lag cutoff, whether every ring needs every ring when 3 divides n and how many rings never need a given ring when it does not.",
+  "ownership": {
+    "root": false,
+    "scope_id": "HONEY-REACH-20261109-001"
+  },
+  "parent": "HONEY-REACH-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (Theorems 1 to 5 by hand; finite claims checked exactly): on the honeycomb torus of side n of rule-60 rings with equally spaced law-(12,12) contacts, composition is the powers of the six-neighbour sum M = (1 + x)(1 + y/x)(1 + 1/y) over GF(2); every power vanishes on the three mirror lines through a ring; when 3 does not divide n the ring fixed by the turn of 120 degrees about a ring never needs it, so composition never reaches every ring; for n >= 7 the mirror lines pin no other ring. Computed: full reach on every side from 3 to 300 divisible by 3, and 2(N - 1)(N - 2) + 1 rings that never need a given ring otherwise (N = 2^(v2(n) + 1)).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Composition on honeycomb tori reaches every ring exactly when 3 divides the side"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HONEY-REACH-20261109-001A-P001",
+  "canonical_id": "HONEY-REACH-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "HONEY-REACH-20261109-001A",
+  "proof": "HONEY-REACH-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Composition on honeycomb tori reaches every ring exactly when 3 divides the side",
+  "status": "Proved",
+  "claim": "On the honeycomb torus of side n of rule-60 rings with equally spaced law-(12,12) contacts (rings A(p), B(p), p in Z_n^2): (1) three steps of the contact graph between contacts of one type multiply by M = (1 + x)(1 + y/x)(1 + 1/y) = x + 1/x + y + 1/y + y/x + x/y over GF(2), so a contact needs a ring exactly when an odd number of walks of some length lead from one of its contacts, first at lag g k + 1; (2) ring A(p) never needs A(0) exactly when every power of M vanishes on p and its six neighbours, and B(p) exactly when every power vanishes on the six points p, p + e1, p + e2, p + e1 + e2, p + e2 - e1, p + e1 - e2; (3) every M^k, k >= 1, vanishes on the three mirror lines through the origin (directions (1,1), (-2,1), (1,-2)); (4) if 3 does not divide n, the ring B(t,t), t = -1/3 mod n, fixed by the turn of 120 degrees about A(0), never needs A(0) and A(0) never needs it, so composition never reaches every ring; (5) for n >= 7 the mirror lines contain no window of an A ring and contain the window of a B ring exactly when 3 does not divide n and the ring is B(t,t). Computed, not proved: every ring needs every ring on every side from 3 to 300 divisible by 3; when 3 does not divide n each ring is never needed by exactly 2(N - 1)(N - 2) + 1 rings, N = 2^(v2(n) + 1) (2^(v2(n) - 1) for powers of two), on sides 3 to 300.",
+  "dependencies": [
+    "LATTICE-NET-20261108-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A side not divisible by 3 on which B(t,t) needs A(0).",
+    "A power M^k, k >= 1, nonzero at a point of a mirror line.",
+    "A mismatch between the library's contact graph or cell-level reads and the walk model.",
+    "Computed: a side divisible by 3 with a ring that never needs some ring, or a count that differs from 2(N - 1)(N - 2) + 1."
+  ],
+  "lineage": {
+    "home_scope": "HONEY-REACH-20261109-001",
+    "epic_path": [
+      "HONEY-REACH-20261109-001"
+    ],
+    "parents": [
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json",
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/proof.md",
+      "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/manifest.json": "9ba1f3e50d4015eed6677f40bf3dc74c93024d7cb6b69c4ab49656176704643a",
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/proof.md": "c8f8a2b882e879a39d3b4bb0dd874c73b0cb194c018dcb6ea361aca4c1d91e2a",
+    "proofs/LATTICE-NET-20261108-001A/LATTICE-NET-20261108-001A-P001_odd_tori_compose_rings_of_cuts_separate/lattice_lib.py": "665b521a31f86c92771ec204069a6acf44f886d58c35ff5cc1288fe167f92f42",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/proof.md": "fc8fecf29b89ba6e2037ebb626d38a4b8b4603c7f6a6e57cb0c620067c53d76d",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/loopnet_lib.py": "1adbc514bf5aaf3b23af55229a9b9d1a7795f3a0f9a3312bf2f86cf75920197b"
+  },
+  "paths": {
+    "manifest": "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/manifest.json",
+    "identity": "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/identity.json",
+    "proof": "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/proof.md",
+    "result": "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/result.json",
+    "check": "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side/check.py",
+    "directory": "proofs/HONEY-REACH-20261109-001A/HONEY-REACH-20261109-001A-P001_three_divides_the_side"
+  },
+  "remaining_obligations": [
+    "Prove full reach when 3 divides n (computed to side 300); on odd sides it reduces, by Theorem 5, to the points no power reaches being exactly the mirror lines (computed to side 299)."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The honeycomb torus of rule-60 rings with equally spaced law-(12,12) contacts; two-time knots only (A30); no distance.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "Theorems 1 to 5 proved by hand; finite claims checked by check.py; full reach when 3 | n and the count formula computed to side 300",
+    "novelty": "known-with-delta: composition across a honeycomb torus of rings is the powers of the six-neighbour sum over GF(2); the ring the turn of order 3 pins, which exists exactly when 3 does not divide the side, is never reached, as the antipode is on even square tori"
+  }
+}

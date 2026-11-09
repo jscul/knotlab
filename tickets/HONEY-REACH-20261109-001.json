@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "HONEY-REACH-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B18 (G5), relayed by the coordinator on 2026-11-09: on the honeycomb torus of side n of rule-60 rings with equally spaced law-(12,12) contacts, decide whether every ring needs every ring exactly when 3 divides n, as computed on sides 3 to 13 by DISTANCE-20261108-001. Write the honeycomb's walk polynomial over GF(2) and find where its powers vanish, as LATTICE-NET-20261108-001A did for the square torus; stop at a theorem, or at the first side that breaks the pattern. Mark census-only claims.",
+  "ownership": {
+    "root": true,
+    "scope_id": "HONEY-REACH-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09: proved that on the honeycomb torus of side n of rule-60 rings with equally spaced contacts composition is the powers of the six-neighbour sum M = (1 + x)(1 + y/x)(1 + 1/y) over GF(2), that every power vanishes on the three mirror lines through a ring, and that when 3 does not divide n the ring fixed by the turn of 120 degrees about a ring never needs it, so composition never reaches every ring, while from side 7 the mirrors pin no other ring; computed that every ring needs every ring on every side from 3 to 300 divisible by 3, and that otherwise each ring is never needed by exactly 2(N - 1)(N - 2) + 1 rings, N = 2^(v2(n) + 1). Recommendation Research directions (which lattices compose everywhere); the thread moves to the queued epic on which finite maps rescue late rings.",
+  "status_class": "complete",
+  "stop_rule": "Stop at a theorem for every side, or at the first side that breaks the pattern.",
+  "title": "Full reach on honeycomb tori"
+}

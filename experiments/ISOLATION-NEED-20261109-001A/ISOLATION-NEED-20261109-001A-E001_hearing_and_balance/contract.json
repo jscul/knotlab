@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "ISOLATION-NEED-20261109-001A-E001",
+  "ticket": "ISOLATION-NEED-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Under the doubling law, does a schedule whose rings hear each other at a doubling lag always leave a stage unbalanced within boundedly many doublings, and what is the bound?",
+  "public_inputs": {
+    "library": "BIRTH-RULE-20261109-001A-E001's run.py (sha256 700c9ed85da8852dd0c0d1941031b063c116aa3afe29f22186aeb660df7dd6ce), on GROW-CHOOSE-20261109-001A-E001's choose_lib.py.",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "From the 3 x 3 tube: the doubling law every P = 1 to 8 lags at g = 2 while the network has at most 2,400 rings (to 48 x 48), and every P = 1 to 4 lags at g = 3 to 600 rings (24 x 24); births open (A44) and open plus copy.",
+    "reading": "At each doubling lag: whether some own cell depends on another ring's born own cells (hearing), and whether the stage is balanced (every contact binds both of its rings at every later lag, through a full cycle of the state, up to 300,000 steps; unknown beyond). A run stops at its first unbalanced stage."
+  },
+  "forbidden_inputs": [
+    "Changing schedules, rules or sizes after seeing results",
+    "Dropping runs"
+  ],
+  "primary_observable": "For every run: the first doubling with hearing, the first unbalanced doubling, and the delay between them in doublings.",
+  "cheapest_meaningful_control": "DOUBLE-BALANCE-20261109-001A and BIRTH-RULE-20261109-001A-E001 at g = 2: open P = 1 and 3 balanced with no hearing to 48 x 48 and 24 x 24; open P = 2 hearing from 12 x 12 and unbalanced at 24 x 24; open plus copy P = 1 hearing from 6 x 6, balanced to 12 x 12, unbalanced at 24 x 24.",
+  "resource_budget": {
+    "wall_minutes": 40,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-run lines.",
+  "decision_or_followup_rule": "Frozen hypothesis H: in every run with hearing, a stage is unbalanced at most two doublings after the first doubling with hearing (delay <= 2), and every run without hearing stays balanced to its size limit. If H holds, the bound 2 is the conjecture to prove and the proof attempt follows the first hearing ring's returns; if a run hears and stays balanced to its limit, it is the counterexample to isolation being necessary, and is read further.",
+  "stop_rule": "Stop when every run has stopped by the rule above.",
+  "nonclaims": [
+    "Exploratory and finite: one tube, two births, P to 8 (g = 2) and 4 (g = 3), sizes to 48 x 48 and 24 x 24."
+  ],
+  "feasibility_disclosure": "Before freezing, the controls named above had been read; nothing else of this family."
+}

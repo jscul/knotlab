@@ -87,3 +87,31 @@ reasons.
 | 4 | Invertible substrate (B39) | 2/3 — Substantial | 3/3 — Ready | As before | Alternative · deferred |
 
 **Recommendation.** Research directions, #1 as ordered.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:40 UTC and copied here verbatim.
+
+**Another birth rule (B51) is closed and published. It was a frozen test of A44, and A44 is confirmed.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/BIRTH-RULE-20261109-001/birth_rule.md))
+
+- **Copies and zeros cannot be bound:** a new ring that copies its parent, or starts at zero, has no distinction of its own, so no contact can bind it. No stage is balanced.
+- **Open plus copy holds two doublings:** if each new ring gets an open distinction plus its parent's value, the network stays balanced through 12 × 12 while hundreds of its cells hear another ring. That's the first time in this line that a growing network keeps its knots and lets rings hear each other. It fails at 24 × 24 under every schedule.
+- **Open birth** reproduced the earlier control exactly.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: another birth rule | Successful | Every rule read; none sustains balance while rings hear each other |
+| Local direction: knots plus hearing while growing | Research directions | Open plus copy is the only partial success |
+| Broader exploration: G1 with G5 | Known alternatives | Isolation as necessary (B52); horizon theorem; B39 |
+| Long-term goal: G1 Space from a law | Obstruction learned | Sustained growth while running keeps its knots only by isolating its rings, under every birth rule read |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Isolation is necessary (B52) | 2/3 | 2/3 | Follow the first hearing ring's returns across a doubling → a proof, or a balanced schedule without isolation |
+| 2 | Why open plus copy lasts two doublings | 1/3 | 2/3 | Read the first failing contact's returns at 24 × 24 |
+| 3 | The horizon as a theorem | 2/3 | 2/3 | As before |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint; B51 taken. **Assumptions:** A44 confirmed: new cells must be open. Open plus copy is a two-doubling exception.
+
+As the coordinator asked, I'm on #1 (B52) next. Open plus copy already shows that hearing doesn't break balance right away, so I'll aim for a bounded-delay statement, not an immediate one.

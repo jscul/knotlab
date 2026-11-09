@@ -30,7 +30,7 @@ and some y at distance τ has (A^τ)[x, y] = 0.
 | 3 | **Run bounds.** A shortest route goes at most ⌊m(f − 1)/f⌋ arcs about one ring and ⌊f(m − 1)/m⌋ about one face; both are attained. | proved; attainment computed | A |
 | 4 | **No tie before τ.** On every regular tessellation, Euclidean or hyperbolic, two different shortest routes with the same ends have length at least τ: every contact within τ − 1 has a single shortest route. | proved | A |
 | 5 | **The tie at τ when m = f.** Every closed route has length at least min(m, f), so when m = f the first tie is exactly at τ = m − 1, the long way round a ring against the long way round a face. | proved | A |
-| 6 | **The tie at τ elsewhere.** The first tie is at τ, two contacts of two routes each, on 42 hyperbolic covers (two primes each) and on the larger covers of the stress test; every pair of shortest routes read is thin, at length c(τ − 1) + 1. | computed | A, stress test |
+| 6 | **The tie at τ elsewhere.** The first tie is at τ, two contacts of two routes each, on 42 hyperbolic covers (two primes each) and on four larger covers of the stress test (τ up to 24); every pair of shortest routes read is thin, at length c(τ − 1) + 1. | computed | A, stress test |
 
 ## Answer
 
@@ -60,7 +60,7 @@ computed everywhere else read.
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| Attainment at τ (42 covers, balls to two million contacts) | (8, 12), (6, 10), (5, 7), (4, 9), (6, 7), balls to τ of up to 30 million | (8, 12) at 20 and (6, 10) at 23 pass; the rest running (TIE-LAW-S1, `docs/LONG_RUNNING.md`) |
+| Attainment at τ (42 covers, balls to two million contacts) | (8, 12), (6, 10), (5, 7), (4, 9), (6, 7), balls to τ of up to 30 million | pass where read: the first tie at τ = 20, 23, 24 and 24 on the first four; (6, 7), τ = 30, was read only to radius 25 under the cap, with no tie there, as Theorem 2 requires (TIE-LAW-S1, `docs/LONG_RUNNING.md`) |
 | No tie before τ | proved for every type; check 1 runs the case analysis for every type with m, f ≤ 40 | pass |
 
 The script is `stress_test.py` beside this note, with `stress_test.json` and `stress_test_log.txt`.

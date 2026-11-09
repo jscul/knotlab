@@ -117,3 +117,31 @@ Since the epic opened:
 
 **Recommendation.** Research directions, none selected here; the thread moves to the coordinator's queued epic (which finite maps
 rescue late rings). Reassess direction 1 when that epic closes.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 19:33 UTC and copied here verbatim.
+
+Full reach on honeycomb tori is settled in one direction by proof and in the other by computation, and it's published (HONEY-REACH-20261109-001):
+- **When 3 doesn't divide the side, full reach always fails (proved, every side).** Influence spreads by the six-neighbour sum, and every power of it vanishes on the three mirror lines through a ring, because each mirror pairs the walks up. The 120° turn about a ring fixes exactly one ring of the other kind, and everything that would let influence into that ring lies on the mirrors. So that ring never needs the first one, and the first never needs it.
+- **When 3 divides the side, full reach holds on every side checked, to 300 (computed).** The turn then fixes no ring of the other kind, and from side 7 on the mirrors pin no other ring (proved).
+- **How many rings are missed (computed, to 300):** one per ring on odd sides, and otherwise exactly 2(N − 1)(N − 2) + 1, with N = 2^(v+1) and v the power of 2 in the side. That gives 13, 85, 421 and so on, whatever the odd part.
+
+This explains the census: the obstruction is a ring pinned by a rotation of the source. On the square torus it's the antipode (half-turn, even sides); here it's the turn of order 3.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: full reach on honeycomb tori | Partially successful | The failing sides are proved and explained; full reach when 3 divides the side is computed to 300, not proved |
+| Local direction: where composition reaches | Research directions | Square and honeycomb tori are mapped; triangular and rectangular tori, and the proof of the computed half, remain |
+| Broader exploration: G5 | Known alternatives | Which finite maps rescue late rings (queued next); B19 to B23 |
+| Long-term goal: G5 Dynamics | Capability gained | Where composition fails to reach on a lattice of persistent contacts is read off the lattice's rotations |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Which lattices compose everywhere (B21) | 2/3 | 3/3 | Run the same reduction to mirrors on triangular and rectangular tori → a rule from the lattice's rotations, or the first exception |
+| 2 | Prove full reach when 3 divides the side | 1/3 | 2/3 | On odd sides, show that the points no power reaches are exactly the mirror lines → a proof, or the first odd side with extra points |
+| 3 | Prove the count of missed rings | 1/3 | 2/3 | Derive 2(N − 1)(N − 2) + 1 from the halving map from side 2n to side n → proved, or its first failure |
+
+**Corrections:** none; the census claims of DISTANCE-20261108-001 (one ring missed on sides 4, 5, 7, 11 and 13, thirteen on 8 and 10) all hold. **Goals:** a G5 checkpoint (capability gained), and B18 is marked taken. **Assumptions:** none added or changed.
+
+Commits on main: 38ab37ebd (the epic) and 62988d3ae (goals doc and knot intuition entry), both publishing automatically. No long-running checks: the stress test, one size past to side 300, took 162 seconds. Next I'm starting the rescued-maps epic, beginning with today's thin-tori correction.

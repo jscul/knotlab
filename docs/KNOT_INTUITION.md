@@ -1926,6 +1926,22 @@ So network holes come in two kinds:
      intervention only when it is a tube with a unique fastest way along it, as a loop of rings is. No lag cutoff was used.
    - **Next (selected, B21).** Which lattices compose everywhere; rescue on maps of higher genus is backlog B27
      ([decision note](../research/RESCUE-MAP-20261109-001/rescue_map.md)).
+
+   **2026-11-09: which lattices compose everywhere** (`LATTICE-REACH-20261109-001`).
+   - **The question.** The odd square n × n tori compose everywhere: every contact needs every ring. Which tori of every shape, on the
+     square, triangular and honeycomb lattices, do?
+   - **Digons stop it (proved).** Where two rings meet at two contacts in a row, their walks cancel at once: a factor of the walk
+     polynomial vanishes and every contact needs only a handful of rings. The triangular lattice has no such tori.
+   - **At odd index nothing else does, nearly (computed, to index 151).** Every triangular torus of odd index composes everywhere, every
+     square one without a digon does, and every honeycomb one without a digon does except the n × n tori whose side 3 does not divide
+     (the pinned ring of the earlier entry) and one torus of index 63.
+   - **At even index there is no simple rule (computed).** Most tori compose everywhere, but neither the lattice modulo 16, nor the
+     2-part of the torus's group, nor its mirrors tell which: squaring the walk polynomial doubles the lattice, and at even index
+     doubling folds the torus onto half of itself, so the parity of sums over its halves decides at every scale.
+   - **Reading.** Composition fails for a local reason (a digon) or a symmetric one (a pinned ring), and at even index for the prime 2,
+     to which walk counts mod 2 are tied. No lag cutoff was used.
+   - **Next (selected, B27).** Rescue on maps of higher genus
+     ([decision note](../research/LATTICE-REACH-20261109-001/lattice_reach.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

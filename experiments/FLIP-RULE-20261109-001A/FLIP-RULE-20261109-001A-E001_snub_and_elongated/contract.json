@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FLIP-RULE-20261109-001A-E001",
+  "ticket": "FLIP-RULE-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does the flip rule of PLANE-PLAIN-20261109-001A (a contact persists exactly when an automorphism fixes it and exchanges its two rings) hold on the remaining uniform tilings, the snub square, snub hexagonal and elongated triangular tilings, and their duals, and does any of them keep every contact persistent?",
+  "public_inputs": {
+    "library": "flip_lib.py in this folder, on PLANE-PLAIN-20261109-001A-E001's tiling_lib.py.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Tori of the snub square tiling (Conway snub of the square torus), the snub hexagonal tiling (snub of the triangular torus) and the elongated triangular tiling (lattices inside Z x 2Z), and their duals: every base lattice of index 1 to 12 by its canonical basis (for the elongated tiling, ((p, 0), (q, 2r)) with pr from 1 to 12), skipping a torus that joins a ring to itself or has more than 400 contacts. Rings of m contacts hold 2m cells, contacts equally spaced.",
+    "reading": "As PLANE-PLAIN-20261109-001A-E001: return parities to length n + 1, and flips by building the map automorphism from one dart."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypotheses after seeing results",
+    "Dropping tori"
+  ],
+  "primary_observable": "For each tiling: tori read, persistent contacts, whether they are exactly the flipped ones (H1), tori with every contact persistent (H2).",
+  "cheapest_meaningful_control": "The snub of the cube is the snub cube and the constructions give the vertex configurations 3.3.4.3.4, 3.3.3.3.6 and 3.3.3.4.4 (checked before freezing, on the 4 x 4 tori).",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The summary in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: on every torus read, a contact persists exactly when it has a flip. H2: no torus of these six tilings keeps every contact persistent. If both hold, the flip rule and the obstruction of PLANE-PLAIN-20261109-001 cover all 11 Archimedean tilings and their 11 Laves duals, and ticket B searches small maps for persistence without a flip; an exception to H1 is ticket B's first example.",
+  "stop_rule": "Stop when every torus of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only.",
+    "Two-time knots only (A30); equally spaced rings only."
+  ],
+  "feasibility_disclosure": "Before freezing, the constructions were checked for their face counts and vertex configurations on the snub cube, the snub dodecahedron and the 4 x 4 tori; no persistence or flip of these six tilings was read."
+}

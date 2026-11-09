@@ -101,3 +101,31 @@ checkpoint (obstruction learned), B49 marked taken. **Assumptions:** none added.
 | 4 | Invertible substrate (B39) | 2/3 — Substantial | 3/3 — Ready | As before | Alternative · deferred |
 
 **Recommendation.** Research directions, #1 as ordered; stop it at a proof or at the lag where balance fails.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:26 UTC and copied here verbatim.
+
+**Distance and balls in the doubling network (B49) is closed and published, pre-registered, and it comes with a correction to B38's reading.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROW-HORIZON-20261109-001/grow_horizon.md))
+
+- **Doubling every lag isolates every ring (proved):** every contact is cut and reborn before any cell reads what it computed, so no ring ever hears another. While the network grows this fast it reads no distance at all.
+- **Doubling every P lags gives a horizon (computed):** an original ring is heard only within 0.8 to 2.4 original spacings for P = 2 to 8, the same on 3 × 3 and 5 × 5. The reach's growth halves at each doubling, while the contacts inside it multiply about fourfold per doubling. Growth outruns influence.
+- **Pre-registration:** E1 and E2 held. E3 (the static control reaches everywhere) failed on 4 × 4. Even tori are already known to leave rings unreached, so that expectation was mine, not the record's.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the doubling network's distance | Successful | A horizon: zero at every-lag doubling (proved), finite and set by P (computed) |
+| Local direction: a grown space that reads its own distance | Research directions | Doubling outruns influence; growth must be slower, or stop |
+| Broader exploration: G1 with G5 | Known alternatives | B50 (why doubling stays balanced); the horizon as a theorem; B39 |
+| Long-term goal: G1 Space from a law | Obstruction learned | The plane the law grows is shaped, not connected, while it grows fast |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Why doubling keeps every stage balanced (B50) | 3/3 | 2/3 | Pair returns with the old lattice's symmetries → a proof at every lag |
+| 2 | The horizon as a theorem | 2/3 | 2/3 | Bound the rings crossed between doublings by the time of flight → a proved radius per P |
+| 3 | Growth slow enough to read distance | 2/3 | 2/3 | Double only after influence crosses the current spacing → a grown plane that reads its distance, or none |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** one, Not a block. B38's "grows a plane while the network runs" went beyond its results. The plane is made of declared rings, balanced whenever growth stops, but it reads no distance while it grows. It's logged in CORRECTIONS.md and knotlab's [HISTORY.md](https://github.com/jscul/knotlab/blob/main/HISTORY.md). **Goals:** G1/G5 checkpoint; B49 taken. **Assumptions:** none added.
+
+As the coordinator asked, I'm starting #1 (B50) now.

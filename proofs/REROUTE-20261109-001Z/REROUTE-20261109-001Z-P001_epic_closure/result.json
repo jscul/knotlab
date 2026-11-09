@@ -1,0 +1,34 @@
+{
+ "schema_version": 3,
+ "artifact_id": "REROUTE-20261109-001Z-P001",
+ "kind": "proof",
+ "ticket": "REROUTE-20261109-001Z",
+ "proof": "REROUTE-20261109-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing REROUTE-20261109-001: one line per conclusion with its status, novelty and evidence (tickets A and B, proved; ticket C, refuted), the corrections made, the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/manifest.json": "Proved",
+   "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/result.json": "passed",
+   "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/manifest.json": "Proved",
+   "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/result.json": "passed",
+   "experiments/REROUTE-20261109-001C/REROUTE-20261109-001C-E001_rerouted_tori/contract.json": "Frozen",
+   "artifacts/REROUTE-20261109-001C/REROUTE-20261109-001C-E001_rerouted_tori/run/result.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "proved",
+   "C": "refuted"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

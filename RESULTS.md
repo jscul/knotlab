@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**266 current results** and 5 superseded ones, from 211 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**268 current results** and 5 superseded ones, from 212 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 40 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 42 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 211 epics with their closures
+- [Epics](#epics): all 212 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -155,6 +155,12 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-09 · No row after the first is open, so knots across time cannot be read from the last growth event** (`REBASE-KNOTS-20261109-001-D001`).
   Every cell of these networks is read by exactly two cells, so every row after the first has a fixed parity and is not open. Reading knots from the last growth event therefore treats a determined row as open, and read natively from any later row the knots fail even without growth, so the loss under growth while running is real.
   [proof P001](proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/proof.md), [epic closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · Re-routing keeps every contact persistent, but only lines read their distance plainly** (`REROUTE-20261109-001-D001`).
+  Exchanging, at any set of contacts, which ring each arriving ring continues on keeps the contact graph and, at law-(12,12) contacts, the automaton itself, so every re-routing of a lattice torus keeps every contact persistent, and random ones have no flips. Grouped into lines the tori's automata read their distance plainly at every size; on the square contact graph no grouping into small rings does.
+  [proof P001](proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/proof.md), [epic closure](proofs/REROUTE-20261109-001Z/REROUTE-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · Persistence without a flip comes from pairings of walks to six contacts** (`REROUTE-20261109-001-D002`).
+  A contact persists exactly when deleting it keeps det(I + tN) over GF(2), N the contact graph mod 2. Doubled pairs and automorphisms of the contact graph pair closed walks; FLIP-RULE-20261109-001's six-contact example persists by two doubled pairs, and to six contacts every case is paired or flipped, while from seven most are neither.
+  [proof P001](proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/proof.md), [epic closure](proofs/REROUTE-20261109-001Z/REROUTE-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · Short loops rescue late rings: every torus that reads distance plainly** (`RESCUE-MAP-20261109-001-D001`).
   A torus of rings reads distance without freezing exactly when it holds a short loop along which the fastest way to every ring is a single route, the square lattice's (2, 0) and (2, 1) up to the quarter turn and the triangular lattice's vectors of length root 3, or is one of finitely many small tori. The mirror image (1, 2) is late, since rule 60 reads one way round every ring.
   [proof P001](proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/proof.md), [epic closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md)
@@ -1140,6 +1146,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Which lattices compose everywhere (`LATTICE-REACH-20261109-001`) | [closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-REACH-20261109-001/) |
 | 2026-11-09 | A plane read plainly beyond tori (`PLANE-PLAIN-20261109-001`) | [closure](proofs/PLANE-PLAIN-20261109-001Z/PLANE-PLAIN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/PLANE-PLAIN-20261109-001/) |
 | 2026-11-09 | Knots read from the last growth event (`REBASE-KNOTS-20261109-001`) | [closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REBASE-KNOTS-20261109-001/) |
+| 2026-11-09 | Large networks persistent without flips (`REROUTE-20261109-001`) | [closure](proofs/REROUTE-20261109-001Z/REROUTE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REROUTE-20261109-001/) |
 | 2026-11-09 | Rescue on maps of higher genus (`RESCUE-GENUS-20261109-001`) | [closure](proofs/RESCUE-GENUS-20261109-001Z/RESCUE-GENUS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-GENUS-20261109-001/) |
 | 2026-11-09 | Which finite maps rescue late rings (`RESCUE-MAP-20261109-001`) | [closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-MAP-20261109-001/) |
 | 2026-11-09 | A ring inserted while running (`RING-RUN-20261109-001`) | [closure](proofs/RING-RUN-20261109-001Z/RING-RUN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RING-RUN-20261109-001/) |

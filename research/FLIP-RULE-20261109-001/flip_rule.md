@@ -94,3 +94,28 @@ none added or changed.
 2. **Parity.** Payoff 1: an explanation of the small exceptions; Concreteness 2: the example is in hand.
 
 **Recommendation.** Research directions, none selected; directions 1 and 2 go to the backlog as B42 and B43.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:55 UTC and copied here verbatim.
+
+B41 and B40 are closed and published together (FLIP-RULE-20261109-001). The flip rule turns out to be a fact about uniform tilings, not about networks in general.
+- **B41: all 22 uniform tilings obey it (census, pre-registered).** The snub square, snub hexagonal and elongated triangular tilings and their Cairo, floret and prismatic pentagonal duals behave like the 13 read before: a contact persists exactly when it has a flip, and none keeps every contact persistent. On all 11 Archimedean tilings and their 11 Laves duals, only the square, triangular and honeycomb lattices are fully persistent.
+- **B40: persistence doesn't need a flip in general (two pre-registered censuses).** I read every map of up to five contacts exhaustively (258,048 at five). Contacts persist without a flip from three contacts on, but only in degenerate ways: the contact sends or hears nothing, or a ring or face has one or two contacts. I then tested "non-degenerate ⇒ flip" on random maps of 6 to 9 contacts, and it failed too: most persistent contacts there have no flip (17,992 of 21,056 at six). The smallest example has six contacts, three rings on genus 2, and its contact's closed walks are even in number at every length (2, 4, 4, 8, 24, …) with no symmetry, not even of the contact graph. The parity just comes out even.
+- **What this means for B36.** The plane obstruction stands for periodic tilings. A non-periodic, irregular network could in principle keep persistent contacts without the symmetry the tilings need, so the plane read plainly isn't ruled out there.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: does persistence need a flip | Partially successful | Yes on all 22 uniform tilings and duals; no on small maps in general |
+| Local direction: persistent networks | Research directions | Persistence by arithmetic is common on small maps; whether it survives growth is unknown |
+| Broader exploration: G1 with G5 | Known alternatives | Growth chosen by the dynamics (B23, growth thread); B30, B35 |
+| Long-term goal: G5 Dynamics | Obstruction learned | Uniform flat networks persist only by symmetry, and only the regular lattices have it everywhere |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Large networks persistent without flips (B42) | 3/3 | 1/3 | Find growing families of non-degenerate maps with every contact persistent and few or no flips → then read them plainly, or find where they stop |
+| 2 | Why the parity comes out even (B43) | 1/3 | 2/3 | Read the six-contact example's closed walks by length → a pairing, or none |
+
+**Corrections:** none. **Goals:** a G5 checkpoint (obstruction learned); B40 and B41 marked taken; B42 and B43 added to the backlog. **Assumptions:** none added or changed.
+
+Commits on main: 65843d9d4 (B41 pre-registration), 7581ed1fa and b28d92b98 (B40's two pre-registrations; the second tests a refinement I made after seeing the first run, labelled post hoc), 302e84eec (the epic), aa1f6591a (shared docs). Every run took seconds and nothing is running. No direction is selected; your call.

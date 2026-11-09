@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RETURN-DIGITS-20261109-001A-P001",
+  "canonical_id": "RETURN-DIGITS-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "RETURN-DIGITS-20261109-001A",
+  "proof": "RETURN-DIGITS-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The return map of the cut-open torus as a one-dimensional operator, and its digit recursion",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-09, before the proof attempt. For the cut-open torus walk at n = 2^m, h = n/2, over GF(2): (1) the return map C_s of CONE-COLLAPSE-20261109-001A equals w^(n+1) T_h(w^-2), T_h(c) the matrix in the ball basis W_k (W_k(t + 1/t) = sum over |j| <= k of t^j, k < h) of F[c][K]/(K^h) of the map f -> (K + c) (iota f)(K + c) mod K^h, iota(W_k) = W_(h-1-k); so lambda != 0 is an eigenvalue of the walk exactly when det(lambda^(n+1) I + T_h(lambda^2)) = 0; (2) T_1 = [c] and T_2h = P [[A(R + c^h), c^h AR], [A + u (c^h u + v)^T, AR + c^h u v^T]] P, A = T_h, R the reversal, u = e_0, v = e_(h-1), P = [[I, R], [0, I]]; (3) S_h = T_h R satisfies det(zI + S_h) = c^h (1 + sum over j < m of (z/c)^(2^j)), so its eigenvalues are c x for the h elements x of GF(n) of trace 1. Target, to be proved or left open with the gap stated: every nonzero root of det(lambda^(n+1) I + T_h(lambda^2)) is a (2n - 1)-th root of unity, at every power of two. (1) to (3) were found by exact computation (1 at sides 4 to 32, 2 for h = 1 to 16, 3 for h = 1 to 32) before this registration; their proofs and the target's are the attempt.",
+  "dependencies": [
+    "CONE-COLLAPSE-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A power of two at which C_s differs from w^(n+1) T_h(w^-2).",
+    "An h at which T_2h differs from P [[A(R + c^h), c^h AR], [A + u (c^h u + v)^T, AR + c^h u v^T]] P.",
+    "An h at which det(zI + T_h R) differs from c^h (1 + sum over j < m of (z/c)^(2^j)).",
+    "A power of two with a nonzero root of det(lambda^(n+1) I + T_h(lambda^2)) that is not a (2n - 1)-th root of unity (computed false at sides 4 to 128 by CONE-COLLAPSE-20261109-001)."
+  ],
+  "lineage": {
+    "home_scope": "RETURN-DIGITS-20261109-001",
+    "epic_path": [
+      "RETURN-DIGITS-20261109-001"
+    ],
+    "parents": [
+      "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json": "220ceb6c18c74cf54ff51f53bca81468bd38d0512836a37a34e63d06f621d273"
+  },
+  "paths": {
+    "manifest": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/manifest.json",
+    "identity": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/identity.json",
+    "proof": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/proof.md",
+    "result": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/result.json",
+    "check": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/check.py",
+    "directory": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map"
+  },
+  "remaining_obligations": [
+    "proofs of (1), (2), (3)",
+    "the target, the collapse at every power of two"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The square torus of rule-60 rings with equally spaced law-(12, 12) contacts, cut open by a ring of cuts each way (A30, A32, A37, A38); its walk over GF(2), at sides 2^m. The spectrum is a contact-level reading, so it does not depend on how the rings are declared (A45).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-09.",
+    "status": "pre-registered; the statements found by exact computation, the proofs to follow",
+    "novelty": "to be assessed"
+  }
+}

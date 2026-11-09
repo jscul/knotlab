@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CONE-COLLAPSE-20261109-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "RETURN-DIGITS-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for the cut-open torus walk at n = 2^m, h = n/2: (1) the return map C_s of CONE-COLLAPSE-20261109-001A is w^(n+1) T_h(w^-2), where T_h(c) is the matrix, in the basis W_k(t + 1/t) = sum_(|j|<=k) t^j (k < h) of F[c][K]/(K^h), of f -> (K + c)(iota f)(K + c) mod K^h, iota(W_k) = W_(h-1-k); (2) T_1 = [c] and T_2h = P [[A(R + c^h), c^h AR], [A + u(c^h u + v)^T, AR + c^h u v^T]] P with A = T_h, R the reversal, u = e_0, v = e_(h-1), P = [[I, R], [0, I]]; (3) the operator without the reversal, S_h = T_h R, has det(zI + S_h) = c^h (1 + sum_(j<m) (z/c)^(2^j)): its eigenvalues are c x for the h elements x of GF(n) of trace 1; (4) the target: every nonzero root of det(lambda^(n+1) I + T_h(lambda^2)) is a (2n - 1)-th root of unity, at every power of two, or the gap stated.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RETURN-DIGITS-20261109-001"
+  },
+  "parent": "RETURN-DIGITS-20261109-001",
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "A one-dimensional return map and its digit recursion"
+}

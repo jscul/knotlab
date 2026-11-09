@@ -70,6 +70,13 @@ Since the epic opened:
 - **Substantive.** One proof (A) with nine checks, and one census (B).
 - **Administrative.** This note and the closure.
 
+## Correction (2026-11-09)
+
+- **Attachment, not every single ring.** Conclusions 2 and 3 and Theorem 2 of ticket A concern a ring attached to a network, and stand.
+  The answer's "growth one ring at a time breaks persistence" and the reading's "the unit of growth is a band" are true of
+  attachment only: `GROW-PLAIN-20261109-001B` inserts one ring at a time into the twist torus, cutting the three contacts that span
+  the gap and rejoining them through the new ring, and every stage keeps every contact persistent (`docs/CORRECTIONS.md`).
+
 ## Pending the owner
 
 - Nothing new. The owner ruled on 2026-11-08 that counted length can count as a native magnitude; distance across time runs in its own

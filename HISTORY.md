@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 9 November 2026: single rings break persistence when attached, not when inserted
+
+- GROW-NET-20261108-001 said that lattices of rings grow by bands, not by
+  single rings, and that growth one ring at a time breaks persistence. Its
+  theorem and census concern a ring attached to a network.
+- A ring inserted into the twist torus, with the three contacts that span the
+  gap rejoined through it, keeps every contact persistent at every stage
+  ([decision note](research/GROW-PLAIN-20261109-001/grow_plain.md)).
+- Narrowed: attaching a single ring breaks persistence; inserting one with the
+  contacts across the gap rejoined need not.
+- Unchanged: the band and block rule, the attachment theorem and the census.
+
 ## 9 November 2026: thin tori read distance plainly at every size
 
 - PLAIN-TIME-20261108-001 said that exactly 26 tori read distance without

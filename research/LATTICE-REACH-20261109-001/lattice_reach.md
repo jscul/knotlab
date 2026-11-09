@@ -69,6 +69,12 @@ Since the epic opened:
 - **Substantive.** One proof (A) with five checks, one stress test.
 - **Administrative.** This note and the closure.
 
+## Correction (2026-11-09)
+
+- **A doubled pair, not a face.** What Theorem 1 calls a digon face, two contacts consecutive on both rings they share, is not a face:
+  every face of these tori keeps the lattice's size. Read it as a doubled pair, the same order on both rings (`REROUTE-20261109-001A`;
+  `docs/CORRECTIONS.md`). Wording only; every result stands.
+
 ## Pending the owner
 
 - None new.

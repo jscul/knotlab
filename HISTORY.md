@@ -3,6 +3,27 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 9 November 2026: small maps persist without a flip by pairings, up to six contacts
+
+- FLIP-RULE-20261109-001 said that small maps persist without a flip by
+  arithmetic, their closed walks coming out even with no symmetry pairing
+  them.
+- Its six-contact example persists by two doubled pairs, contacts both of
+  whose darts lead to the same next contact, which pair its closed walks. On
+  every non-degenerate map of six contacts, persistence without a flip comes
+  from doubled pairs or from symmetries of the contact graph
+  ([proof](proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/proof.md)).
+- Narrowed: persistence with no pairing found starts at seven contacts.
+- Unchanged: the flip rule on all 22 Archimedean and Laves tilings, and that
+  persistence does not need a flip.
+
+## 9 November 2026: a "digon face" is a doubled pair, not a face
+
+- LATTICE-REACH-20261109-001 called two contacts consecutive on both rings
+  they share a digon face. On those tori every face keeps the lattice's size;
+  the configuration is a doubled pair ([proof](proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/proof.md)).
+- Wording only: the theorem's definition and every result stand.
+
 ## 9 November 2026: single rings break persistence when attached, not when inserted
 
 - GROW-NET-20261108-001 said that lattices of rings grow by bands, not by

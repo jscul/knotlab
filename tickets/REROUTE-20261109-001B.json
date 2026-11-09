@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROW-PLAIN-20261109-001B",
+    "LOOP-NET-20261108-001A",
+    "PLAIN-TIME-20261108-001A",
+    "PLANE-PLAIN-20261109-001A",
+    "REROUTE-20261109-001A",
+    "RESCUE-MAP-20261109-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "REROUTE-20261109-001B-P001"
+  },
+  "id": "REROUTE-20261109-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that re-routing a network at any set of contacts (exchanging how its two rings continue there, the partial duality of maps) keeps the contact graph and so every contact's persistence; that re-routing a square, triangular or honeycomb torus along whole classes of contacts gives networks of lines that read their distance plainly at every size; and that on the square contact graph every small ring is late, so a re-routed square torus that reads its distance plainly has only rings of linear size.",
+  "ownership": {
+    "root": false,
+    "scope_id": "REROUTE-20261109-001"
+  },
+  "parent": "REROUTE-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09: re-routing a network at any set of contacts (Chmutov's partial duality) keeps every arc of the contact graph and so every contact's persistence; the line network of the n x n square torus (2n staircase rings, ring graph a cycle) keeps every contact persistent and reads its distance plainly by single fastest ways at every size (triangular and honeycomb lines computed to n = 20); and on the square contact graph a ring inside a box of side 2^k - 2 is late, so an on-time re-routing of the n x n torus (n >= 64) has at most 64n rings of at least n/8 - 4 contacts: lines, not a plane of rings.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Re-routing keeps persistence, and the plain reading needs long rings"
+}

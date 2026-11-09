@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FLIP-RULE-20261109-001B",
+    "LATTICE-REACH-20261109-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "REROUTE-20261109-001A-P001"
+  },
+  "id": "REROUTE-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Find the pairing behind the even counts of closed walks at FLIP-RULE-20261109-001B's six-contact example, prove the pairings found and an exact criterion for persistence without a flip, and classify the persistent contacts of the small maps by mechanism (exhaustive to six contacts, sampled to ten), stopping at a pairing or at none found.",
+  "ownership": {
+    "root": false,
+    "scope_id": "REROUTE-20261109-001"
+  },
+  "parent": "REROUTE-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09: a contact persists exactly when deleting it keeps det(I + tN) over GF(2) (N the contact graph mod 2), i.e. when the cycle families through it are even in number at every size; doubled pairs (both darts of a contact leading to one contact) and automorphisms of the contact graph fixing it and exchanging its arcs pair its closed walks; FLIP-RULE-20261109-001B's six-contact example persists by two doubled pairs. Computed: on non-degenerate maps to six contacts every persistent contact that sends and hears is explained by a flip, a doubled pair or a contact-graph flip; from seven contacts most are explained by none (5,438 of 8,992 sampled at seven).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Why the parity comes out even"
+}

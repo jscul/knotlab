@@ -60,6 +60,14 @@ Since the epic opened:
 - **Substantive.** Three exploratory runs (A's census, B's exhaustive and sampled searches), each pre-registered.
 - **Administrative.** The pre-registrations, this note and the closure.
 
+## Correction (2026-11-09)
+
+- **Pairings, not bare arithmetic, up to six contacts.** The answer's "small maps persist by arithmetic: their closed walks come out even
+  with no symmetry pairing them" is narrowed. The six-contact example persists by two doubled pairs (both darts of a contact leading to
+  the same next contact), which pair its closed walks, and on every non-degenerate map of six contacts persistence without a flip comes
+  from doubled pairs or from symmetries of the contact graph. Persistence with no pairing found starts at seven contacts
+  (`REROUTE-20261109-001A`; `docs/CORRECTIONS.md`). The censuses and conclusions 1 to 3 stand.
+
 ## Pending the owner
 
 - None new.

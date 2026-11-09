@@ -1962,6 +1962,8 @@ So network holes come in two kinds:
      square, triangular and honeycomb lattices, do?
    - **Digons stop it (proved).** Where two rings meet at two contacts in a row, their walks cancel at once: a factor of the walk
      polynomial vanishes and every contact needs only a handful of rings. The triangular lattice has no such tori.
+     *Corrected on 2026-11-09 (wording): the configuration is not a face of two sides but a doubled pair, the same order on both
+     rings (`REROUTE-20261109-001A`; `docs/CORRECTIONS.md`).*
    - **At odd index nothing else does, nearly (computed, to index 151).** Every triangular torus of odd index composes everywhere, every
      square one without a digon does, and every honeycomb one without a digon does except the n × n tori whose side 3 does not divide
      (the pinned ring of the earlier entry) and one torus of index 63.
@@ -2078,6 +2080,9 @@ So network holes come in two kinds:
    - **On networks in general, no (census, pre-registered).** Among all maps of up to five contacts, contacts persist without such a
      symmetry from three contacts on, though there only in degenerate ways. On larger maps whose rings and faces all have three or
      more contacts, most persistent contacts have none: their closed walks are simply even in number at every length.
+     *Narrowed on 2026-11-09: up to six contacts the walks are paired, by doubled pairs (two arcs from one contact to the same next
+     contact) or by symmetries of the contact graph; with no pairing found only from seven (`REROUTE-20261109-001A`;
+     `docs/CORRECTIONS.md`).*
    - **Reading.** On a uniform plane only symmetry cancels every return; on small irregular networks counting does. A plane read
      plainly is ruled out among the periodic tilings, not among irregular networks. No lag cutoff was used.
    - **Next (research directions, none selected).** Large networks persistent without flips (B42); why the parity comes out even

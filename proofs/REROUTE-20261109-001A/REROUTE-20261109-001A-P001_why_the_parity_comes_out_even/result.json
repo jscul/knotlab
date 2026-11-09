@@ -1,0 +1,214 @@
+{
+ "ticket": "REROUTE-20261109-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/run.py": "7f6a391eaeadc080b9f321ff121d90fcc5fa566d3c1bced04d8a715a4e53b0db",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/contract.json": "112a55d3a2ca6529cbc250d6245863039ea1f40e0b2f952e10913ee8df64abff",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E002_nondegenerate_maps/run.py": "092a03f43bc1d2e779fce9b7d42681d72d6774c7a2aac9cc66100183222c3b46",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E002_nondegenerate_maps/contract.json": "d90c04ab3e593795d7098c1024ebf05215dcfcda9f263cbb174fcca93180e65e",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/manifest.json": "86b7157f1021e7a91cfc6ef83c2f677c295f9fa9013dfb0e598e557b4f1ef742",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py": "ebfbeab71dcb0568c0f4445750aa719d096daba48c8d6165ace5705575a855fe"
+   }
+  },
+  "1_the_six_contact_example_is_paired_by_two_doubled_pairs": {
+   "pass": true,
+   "info": {
+    "rings (sizes)": [
+     3,
+     3,
+     6
+    ],
+    "faces (sizes)": [
+     12
+    ],
+    "genus": 2,
+    "doubled pairs (a, b): both darts of a lead to b": [
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "closed walks at contact 0, lengths 1 to 12": [
+     0,
+     0,
+     2,
+     4,
+     4,
+     8,
+     24,
+     48,
+     80,
+     160,
+     352,
+     704
+    ],
+    "every closed walk uses a doubled pair, and toggling the first one is a fixed-point-free involution": true,
+    "no map flip, no contact-graph flip": true
+   }
+  },
+  "2_criterion_persistence_iff_deleting_the_contact_keeps_det": {
+   "pass": true,
+   "info": {
+    "contacts read": 1977637,
+    "criterion agrees": 1977637
+   }
+  },
+  "3_both_pairings_imply_persistence": {
+   "pass": true,
+   "info": {
+    "blocked contacts": 593692,
+    "blocked and persistent": 593692,
+    "contact-graph flips": 147534,
+    "contact-graph flip and persistent": 147534
+   }
+  },
+  "4_classification_none_found_first_at_seven_contacts": {
+   "pass": true,
+   "info": {
+    "first size with a persistent contact that sends and hears and has no pairing found": 7,
+    "table": {
+     "exhaustive, E = 1 (every map; degenerate maps)": {
+      "maps": 1,
+      "persistent contacts": {
+       "silent or deaf: map flip": 1
+      }
+     },
+     "exhaustive, E = 1 (every map; non-degenerate maps)": {
+      "maps": 0,
+      "persistent contacts": {}
+     },
+     "exhaustive, E = 2 (every map; degenerate maps)": {
+      "maps": 6,
+      "persistent contacts": {
+       "silent or deaf: map flip": 4
+      }
+     },
+     "exhaustive, E = 2 (every map; non-degenerate maps)": {
+      "maps": 0,
+      "persistent contacts": {}
+     },
+     "exhaustive, E = 3 (every map; degenerate maps)": {
+      "maps": 104,
+      "persistent contacts": {
+       "sends and hears: map flip": 72,
+       "silent or deaf: doubled pairs block every closed walk": 96
+      }
+     },
+     "exhaustive, E = 3 (every map; non-degenerate maps)": {
+      "maps": 8,
+      "persistent contacts": {
+       "silent or deaf: map flip": 24
+      }
+     },
+     "exhaustive, E = 4 (every map; degenerate maps)": {
+      "maps": 4128,
+      "persistent contacts": {
+       "sends and hears: map flip": 384,
+       "silent or deaf: doubled pairs block every closed walk": 3456,
+       "silent or deaf: map flip": 1152
+      }
+     },
+     "exhaustive, E = 4 (every map; non-degenerate maps)": {
+      "maps": 48,
+      "persistent contacts": {
+       "silent or deaf: map flip": 192
+      }
+     },
+     "exhaustive, E = 5 (every map; degenerate maps)": {
+      "maps": 249216,
+      "persistent contacts": {
+       "sends and hears: contact-graph flip": 26880,
+       "sends and hears: doubled pairs block every closed walk": 7680,
+       "sends and hears: map flip": 42240,
+       "sends and hears: none found": 15360,
+       "silent or deaf: doubled pairs block every closed walk": 264960,
+       "silent or deaf: map flip": 24960
+      }
+     },
+     "exhaustive, E = 5 (every map; non-degenerate maps)": {
+      "maps": 8832,
+      "persistent contacts": {
+       "sends and hears: map flip": 3840,
+       "silent or deaf: doubled pairs block every closed walk": 15360,
+       "silent or deaf: map flip": 1920
+      }
+     },
+     "exhaustive, E = 6 (non-degenerate, sigma(0) = 2)": {
+      "maps": 89472,
+      "persistent contacts": {
+       "sends and hears: contact-graph flip": 13824,
+       "sends and hears: doubled pairs block every closed walk": 36864,
+       "sends and hears: map flip": 18432,
+       "silent or deaf: doubled pairs block every closed walk": 170496,
+       "silent or deaf: map flip": 20736
+      }
+     },
+     "sampled, E = 10 (non-degenerate, 4000000 draws)": {
+      "maps": 2557,
+      "persistent contacts": {
+       "sends and hears: contact-graph flip": 76,
+       "sends and hears: doubled pairs block every closed walk": 546,
+       "sends and hears: map flip": 5,
+       "sends and hears: none found": 951,
+       "silent or deaf: doubled pairs block every closed walk": 4395,
+       "silent or deaf: map flip": 7
+      }
+     },
+     "sampled, E = 7 (non-degenerate, 4000000 draws)": {
+      "maps": 5839,
+      "persistent contacts": {
+       "sends and hears: contact-graph flip": 838,
+       "sends and hears: doubled pairs block every closed walk": 2211,
+       "sends and hears: map flip": 505,
+       "sends and hears: none found": 5438,
+       "silent or deaf: doubled pairs block every closed walk": 11073,
+       "silent or deaf: map flip": 528
+      }
+     },
+     "sampled, E = 8 (non-degenerate, 4000000 draws)": {
+      "maps": 4481,
+      "persistent contacts": {
+       "sends and hears: contact-graph flip": 328,
+       "sends and hears: doubled pairs block every closed walk": 1359,
+       "sends and hears: map flip": 123,
+       "sends and hears: none found": 2192,
+       "silent or deaf: doubled pairs block every closed walk": 8212,
+       "silent or deaf: map flip": 141
+      }
+     },
+     "sampled, E = 9 (non-degenerate, 4000000 draws)": {
+      "maps": 3469,
+      "persistent contacts": {
+       "sends and hears: contact-graph flip": 145,
+       "sends and hears: doubled pairs block every closed walk": 828,
+       "sends and hears: map flip": 30,
+       "sends and hears: none found": 1437,
+       "silent or deaf: doubled pairs block every closed walk": 5939,
+       "silent or deaf: map flip": 23
+      }
+     }
+    }
+   }
+  },
+  "5_lattice_reach_digons_are_doubled_pairs_not_faces": {
+   "pass": true,
+   "info": {
+    "honeycomb tori": 87,
+    "honeycomb tori with every face of 6 sides": 87,
+    "honeycomb tori with a doubled pair": 87,
+    "square tori": 57,
+    "square tori with every face of 4 sides": 57,
+    "square tori with a doubled pair": 57
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 31.5
+}

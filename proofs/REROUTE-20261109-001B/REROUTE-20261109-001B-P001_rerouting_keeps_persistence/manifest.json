@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "REROUTE-20261109-001B-P001",
+  "canonical_id": "REROUTE-20261109-001B-P001",
+  "kind": "proof",
+  "ticket": "REROUTE-20261109-001B",
+  "proof": "REROUTE-20261109-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Re-routing keeps persistence, and the plain reading needs long rings",
+  "status": "Proved",
+  "claim": "For networks of rule-60 rings with equally spaced law-(12,12) contacts: (1) re-routing at any set of contacts (exchanging which ring each arriving ring continues on there, Chmutov's partial duality) keeps every arc of the contact graph, so every contact's persistence, and the maps sharing a contact graph are exactly its 2^E re-routings; (2) the line network of the n x n square torus (re-routed at every vertical contact), n >= 3, has 2n rings of 2n contacts whose ring graph is a cycle, keeps every contact persistent and is on time, every ring having a closest contact reached by exactly one shortest route; computed likewise for the triangular and honeycomb line networks, n = 3 to 20; (3) with the contact graph of a square torus whose lattice has no nonzero vector shorter than 2^(k+3) in taxicab length, a ring whose contacts fit in a box of side 2^k - 2 is late, so an on-time network with the contact graph of the n x n square torus, n >= 64, has at most 64n rings, each of at least n/8 - 4 contacts.",
+  "dependencies": [
+    "REROUTE-20261109-001A",
+    "LOOP-NET-20261108-001A",
+    "PLAIN-TIME-20261108-001A",
+    "PLANE-PLAIN-20261109-001A",
+    "RESCUE-MAP-20261109-001A",
+    "GROW-PLAIN-20261109-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A re-routing that changes an arc of the contact graph or a contact's persistence.",
+    "A line network of the roster that is late.",
+    "A contact in the even box with an odd count, or a ring in a small box on time at the predicted target."
+  ],
+  "lineage": {
+    "home_scope": "REROUTE-20261109-001",
+    "epic_path": [
+      "REROUTE-20261109-001"
+    ],
+    "parents": [
+      "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/manifest.json",
+      "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/run.py",
+      "experiments/PLANE-PLAIN-20261109-001A/PLANE-PLAIN-20261109-001A-E001_tilings/tiling_lib.py",
+      "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json",
+      "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/manifest.json": "40ffb66eb43b431dcb5eb85431abbccfcfa56c63dcec7d1777525e40ba3b7908",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/run.py": "7f6a391eaeadc080b9f321ff121d90fcc5fa566d3c1bced04d8a715a4e53b0db",
+    "experiments/PLANE-PLAIN-20261109-001A/PLANE-PLAIN-20261109-001A-E001_tilings/tiling_lib.py": "f34ad1c9bfe03c8ddcf1a6e02cd24d6863c9d54be8c59255b0c39cc7c63f074c",
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json": "b858d086f9e5ece9f0b020b8ebd6f49e2cf8f2da50d589d91d091f23f601d170",
+    "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/manifest.json": "a8c0a867b33f43e2c2ccce6bcd3ccbfce1b3e1982bb3236a68fb3929d08ffbce"
+  },
+  "paths": {
+    "manifest": "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/manifest.json",
+    "identity": "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/identity.json",
+    "proof": "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/proof.md",
+    "result": "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/result.json",
+    "check": "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence/check.py",
+    "directory": "proofs/REROUTE-20261109-001B/REROUTE-20261109-001B-P001_rerouting_keeps_persistence"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Networks of rule-60 rings with equally spaced law-(12,12) contacts whose contact graph is that of a map, a square, triangular or honeycomb torus in Theorems 2 and 3; two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "Theorems 1, 2 (square) and 3 proved by hand; finite claims checked by check.py; triangular and honeycomb lines computed",
+    "novelty": "known-with-delta for Theorem 1 (partial duals share the medial graph); new as far as found for Theorems 2 and 3"
+  }
+}

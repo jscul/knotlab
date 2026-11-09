@@ -1,0 +1,132 @@
+{
+ "ticket": "REROUTE-20261109-001B",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/manifest.json": "40ffb66eb43b431dcb5eb85431abbccfcfa56c63dcec7d1777525e40ba3b7908",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/run.py": "7f6a391eaeadc080b9f321ff121d90fcc5fa566d3c1bced04d8a715a4e53b0db",
+    "experiments/PLANE-PLAIN-20261109-001A/PLANE-PLAIN-20261109-001A-E001_tilings/tiling_lib.py": "f34ad1c9bfe03c8ddcf1a6e02cd24d6863c9d54be8c59255b0c39cc7c63f074c",
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json": "b858d086f9e5ece9f0b020b8ebd6f49e2cf8f2da50d589d91d091f23f601d170",
+    "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/manifest.json": "a8c0a867b33f43e2c2ccce6bcd3ccbfce1b3e1982bb3236a68fb3929d08ffbce"
+   }
+  },
+  "1_rerouting_keeps_the_contact_graph_and_persistence": {
+   "pass": true,
+   "info": {
+    "random maps re-routed at random sets": 3000,
+    "contact graph and every persistence unchanged": 3000,
+    "rings = boundary components of the ribbon subgraph on S (Chmutov's partial dual)": 3000,
+    "every map to three contacts shares its contact graph with exactly 2^E maps": true
+   }
+  },
+  "2_square_lines_read_their_distance_plainly": {
+   "pass": true,
+   "info": {
+    "tori": "n x n, n = 3 to 32, re-routed at every horizontal or every vertical contact",
+    "late sizes": [],
+    "fast reading agrees with plain_lib.verdicts (n = 4, 5, three lattices)": true,
+    "n = 32": {
+     "rings": 64,
+     "ring sizes": [
+      64
+     ],
+     "balls 2r + 1": true,
+     "persistent": null,
+     "late": 0,
+     "no single fastest way": 0
+    }
+   }
+  },
+  "3_triangular_and_honeycomb_lines_read_their_distance_plainly": {
+   "pass": true,
+   "info": {
+    "tori": "n x n, n = 3 to 20: triangular re-routed at one direction class, honeycomb at two",
+    "networks read": 108,
+    "late": 0,
+    "ring sizes": [
+     9,
+     12,
+     15,
+     18,
+     21,
+     24,
+     27,
+     30,
+     33,
+     36,
+     39,
+     42,
+     45,
+     48,
+     51,
+     54,
+     57,
+     60
+    ],
+    "base tori (not re-routed) late pairs, n = 4 to 6": {
+     "square 4": 128,
+     "square 5": 200,
+     "square 6": 576,
+     "triangular 4": 0,
+     "triangular 5": 300,
+     "triangular 6": 648,
+     "honeycomb 4": 288,
+     "honeycomb 5": 900,
+     "honeycomb 6": 1296
+    }
+   }
+  },
+  "4_small_rings_are_late_on_the_square_contact_graph": {
+   "pass": true,
+   "info": {
+    "lemma: shortest-route counts to H(0, 0) in the box [2^k + 1, 2^(k+1) - 2]^2": {
+     "2": {
+      "torus side": 32,
+      "contacts in the box": 8,
+      "with an odd count": 0
+     },
+     "3": {
+      "torus side": 64,
+      "contacts in the box": 72,
+      "with an odd count": 0
+     }
+    },
+    "rings in a box of side 2^k - 2, read at the predicted target": {
+     "k = 2, lattice, seed 0": {
+      "torus side": 32,
+      "rings": 1024,
+      "rings in a box of side 2^k - 2": 1024,
+      "read": 120,
+      "late at the predicted target": 120
+     },
+     "k = 2, rerouted, seed 1": {
+      "torus side": 32,
+      "rings": 688,
+      "rings in a box of side 2^k - 2": 570,
+      "read": 120,
+      "late at the predicted target": 120
+     },
+     "k = 2, rerouted, seed 2": {
+      "torus side": 32,
+      "rings": 686,
+      "rings in a box of side 2^k - 2": 561,
+      "read": 120,
+      "late at the predicted target": 120
+     },
+     "k = 3, rerouted, seed 3": {
+      "torus side": 64,
+      "rings": 2680,
+      "rings in a box of side 2^k - 2": 2679,
+      "read": 120,
+      "late at the predicted target": 120
+     }
+    }
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 261.0
+}

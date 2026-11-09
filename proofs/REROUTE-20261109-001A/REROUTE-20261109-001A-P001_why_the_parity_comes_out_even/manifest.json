@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "REROUTE-20261109-001A-P001",
+  "canonical_id": "REROUTE-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "REROUTE-20261109-001A",
+  "proof": "REROUTE-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Why the parity comes out even",
+  "status": "Proved",
+  "claim": "For maps as networks of rule-60 rings with equally spaced law-(12,12) contacts, where a contact persists exactly when every count of closed walks at it in the contact graph is even: (1) over GF(2) a contact c persists exactly when det(I + tN) = det(I + tN without c), N the contact graph mod 2, i.e. when for every m an even number of families of disjoint odd-arc cycles of total length m pass through c; (2) two pairings imply persistence: doubled pairs (both darts of a contact leading to one contact), when every closed walk at c passes one, paired by exchanging the dart at the first such step; and an automorphism of the contact graph fixing c and exchanging its two out-arcs or in-arcs, of which a map flip is a case; (3) FLIP-RULE-20261109-001B's six-contact example persists by two doubled pairs; computed: every persistent contact that sends and hears on a non-degenerate map of up to six contacts has a map flip, a doubled pair or a contact-graph flip, and from seven contacts most have none of them (5,438 of 8,992 at seven, sampled).",
+  "dependencies": [
+    "FLIP-RULE-20261109-001B",
+    "LOOP-NET-20261108-001A",
+    "LATTICE-REACH-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A contact whose persistence disagrees with the determinant criterion.",
+    "A contact blocked by doubled pairs, or with a contact-graph flip, that does not persist.",
+    "A closed walk of the six-contact example that avoids both doubled pairs."
+  ],
+  "lineage": {
+    "home_scope": "REROUTE-20261109-001",
+    "epic_path": [
+      "REROUTE-20261109-001"
+    ],
+    "parents": [
+      "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/run.py",
+      "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/contract.json",
+      "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E002_nondegenerate_maps/run.py",
+      "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E002_nondegenerate_maps/contract.json",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json",
+      "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/manifest.json",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/run.py": "7f6a391eaeadc080b9f321ff121d90fcc5fa566d3c1bced04d8a715a4e53b0db",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E001_small_maps/contract.json": "112a55d3a2ca6529cbc250d6245863039ea1f40e0b2f952e10913ee8df64abff",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E002_nondegenerate_maps/run.py": "092a03f43bc1d2e779fce9b7d42681d72d6774c7a2aac9cc66100183222c3b46",
+    "experiments/FLIP-RULE-20261109-001B/FLIP-RULE-20261109-001B-E002_nondegenerate_maps/contract.json": "d90c04ab3e593795d7098c1024ebf05215dcfcda9f263cbb174fcca93180e65e",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/manifest.json": "86b7157f1021e7a91cfc6ef83c2f677c295f9fa9013dfb0e598e557b4f1ef742",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py": "ebfbeab71dcb0568c0f4445750aa719d096daba48c8d6165ace5705575a855fe"
+  },
+  "paths": {
+    "manifest": "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/manifest.json",
+    "identity": "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/identity.json",
+    "proof": "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/proof.md",
+    "result": "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/result.json",
+    "check": "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even/check.py",
+    "directory": "proofs/REROUTE-20261109-001A/REROUTE-20261109-001A-P001_why_the_parity_comes_out_even"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Maps of up to ten contacts as networks of rule-60 rings with equally spaced law-(12,12) contacts; two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "Theorems 1 and 2 proved by hand; finite claims and the classification checked by check.py (exhaustive to six contacts, sampled to ten)",
+    "novelty": "known-with-delta for the determinant criterion; new as far as found for the two pairings as a reading of persistence and for the classification"
+  }
+}

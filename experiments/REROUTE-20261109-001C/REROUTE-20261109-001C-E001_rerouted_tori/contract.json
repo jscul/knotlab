@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "REROUTE-20261109-001C-E001",
+  "ticket": "REROUTE-20261109-001C",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Backlog B42: are there growing, non-degenerate, non-periodic networks whose every contact persists without flips, and does any of them read its distance plainly as a plane? REROUTE-20261109-001B, Theorem 1, says every re-routing of a lattice torus keeps every contact persistent; this census reads what random re-routings of the square, triangular and honeycomb tori look like: their flips, non-degeneracy, plain first need and ring-graph balls.",
+  "public_inputs": {
+    "library": "reroute_lib.py of REROUTE-20261109-001B-P001, on PLANE-PLAIN-20261109-001A-E001's tiling_lib; FLIP-RULE-20261109-001B-E001's persistent and symmetries.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Square, triangular and honeycomb n x n tori for n = 6, 8, 10, 12, 16; two starts, the torus itself and its line network (the square torus re-routed at its vertical contacts, the triangular at one class, the honeycomb at two); four seeds each: 120 networks. From the start, 4 n^2 times a face of the torus is drawn uniformly and its contacts toggled in the re-routed set, the toggle kept when no contact then joins a ring to itself.",
+    "readings": "rings (count, smallest, largest, mean size), smallest face, genus, doubled pairs, the contact graph unchanged and persistence (directly where at most 300 contacts), contacts with a flip, (ring, target) pairs not on time and pairs with no single fastest way over every ring and target, rings late for some target, rings of at most 12 contacts and how many are late for some target, and mean ring-graph balls of radius 0 to 8 from four random rings."
+  },
+  "forbidden_inputs": [
+    "Changing the roster, the seeds or the hypotheses after seeing results",
+    "Dropping networks"
+  ],
+  "primary_observable": "For each network: contacts with a flip (H1), whether any (ring, target) pair is late (H2), and on tori of n >= 12 whether every ring of at most 12 contacts is late for some target (H3).",
+  "cheapest_meaningful_control": "The contact graph of every network equals its torus's, so every contact persists (REROUTE-20261109-001B, Theorem 1; read directly on networks of at most 300 contacts).",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The summary in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: every network keeps every contact persistent and no contact has a flip (large networks persistent without flips are generic among re-routings). H2: no network is on time. H3: on tori of n >= 12, every ring of at most 12 contacts is late for some target (Theorem 3's mechanism, proved only for the square contact graph and large tori). If H2 fails, the on-time network's ring balls are read: growth faster than linear would be a plane read plainly. If H3 fails on the triangular or honeycomb tori, small rings can read plainly there and Theorem 3 does not extend.",
+  "stop_rule": "Stop when every network of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only; random re-routings by face toggles do not reach every re-routing.",
+    "Two-time knots only (A30); equally spaced rings only; each network read as fixed (A42)."
+  ],
+  "feasibility_disclosure": "Before freezing, pilots (scratch, not kept) read: three random face-toggle re-routings of the 6 x 6 square torus (every contact persistent, no flip, rings of 4 to 36 contacts, genus 17 to 19, about a fifth of (ring, target) pairs late); the re-routings of the square, triangular and honeycomb tori at whole direction classes for n = 6, 8, 9, 12 (the line networks on time, the torus and its dual late, the other class sets not networks); an annealing search on the 6 x 6 square torus that reached 236 late pairs and no on-time network; and strip and checker mixtures of the two square line networks, none of them networks. Ticket B's checks were run before this contract and are its source."
+}

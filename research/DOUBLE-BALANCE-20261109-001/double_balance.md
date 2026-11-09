@@ -95,3 +95,31 @@ none added.
 4. **Invertible substrate.** As before.
 
 **Recommendation.** Research directions, #1 first: it tests whether the exclusion is a law of growth or of the open-birth rule.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:35 UTC and copied here verbatim.
+
+**Why doubling keeps every stage balanced (B50) is closed and published, with a proof for every lag.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/DOUBLE-BALANCE-20261109-001/double_balance.md))
+
+- **Proved:** if nothing outside a ring holds its born cells, and its own cells hold them independently, its contacts bind it exactly as they would from a fresh first row. Doubling every lag isolates every ring, and each ring's own cells evolve invertibly. So every stage, a balanced torus, stays balanced at every lag. This confirms B38's doubling at every size, not just to lag 2.
+- **Computed:** doubling every 2, 4, 6 or 8 lags lets rings hear each other from the second doubling, and a stage is unbalanced by 24 × 24. Every 3 lags happens to keep the rings isolated, and stays balanced to 48 × 48.
+- **So:** while this network grows, persistent knots and rings hearing each other exclude each other in every schedule read. The doubling law keeps its knots by keeping its rings apart.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: why doubling stays balanced | Successful | Proved at every lag, by isolation |
+| Local direction: growth that keeps knots and lets rings hear each other | Research directions | In the schedules read the two exclude each other |
+| Broader exploration: G1 with G5 | Known alternatives | Another birth rule (B51); B39 |
+| Long-term goal: G1 Space from a law | Obstruction learned | A plane grown while running keeps its knots only by isolating its rings |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Another birth rule (B51; challenges A44) | 3/3 | 2/3 | New cells copy their neighbours, or contacts split by copy, under doubling every P ≥ 2 lags → balance with hearing, or none |
+| 2 | Isolation is necessary (B52) | 2/3 | 2/3 | Follow the first hearing ring's returns across a doubling → a proof |
+| 3 | The horizon as a theorem | 2/3 | 2/3 | Bound crossings by the time of flight → a proved radius per P |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** none new. **Goals:** G1/G5 checkpoint (obstruction learned); B50 taken; B51 and B52 added. **Assumptions:** none added.
+
+I recommend #1. It's the one route left in this family to a grown plane that keeps its knots and reads its own distance. Seven epics have closed in this thread today, so it's also a natural place to pause if you'd rather.

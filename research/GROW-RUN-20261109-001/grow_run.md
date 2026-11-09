@@ -51,10 +51,15 @@ line falls back to B23, growth chosen by the dynamics, which this result sharpen
 
 ## Stress test
 
-**Stress test pending** (`docs/LONG_RUNNING.md`, GROW-RUN-S1, started 19:55 UTC): one size past every check of ticket A, Theorem 1 on
-5 × 6 at g = 2 and 4 × 5 at g = 3 (insertion lags 0 to 39, four splits), every insertion lag of 4 × 5, 5 × 4 and 3 × 3 at g = 5, the
-spread on 3 × 10 and on 3 × 8 at g = 3, and six bands at P = 6 and 10. The script is `stress_test.py` beside this note; its output will
-be `stress_test.json`, its log `stress_test_log.txt`, folded in by a later commit.
+| Claim | One size past | Result |
+| --- | --- | --- |
+| Theorems 1 and 2 (1, 2) | 5 × 6 at g = 2 and 4 × 5 at g = 3, insertion lags 0 to 39, four splits (checked on 3 × 8, 4 × 6, 3 × 5) | pass: 0 of 10,200 bindings of rings not reached or of the band's rings fail; 20,752 of 27,560 reached bindings fail (75%) |
+| Every insertion lag (3) | 4 × 5 and 5 × 4 at g = 2, 3 × 3 at g = 5 (13 tubes to 6 × 3) | pass: lag 0 clean in every case; lower split clean at lags 0 and 1 only on 4 × 5 and 5 × 4 (of 124), at 16 of 338 lags on 3 × 3 at g = 5 |
+| The spread (4) | 3 × 10 at g = 2 and 3 × 8 at g = 3 (checked on 3 × 8 at g = 2) | pass: one row every 4 lags at g = 2 and every 6 lags at g = 3 each way, the time length of a row |
+| Only the young are bound (5) | six bands at P = 6 and 10 (four at P = 4, 8, 16) | pass: only the newest band keeps every binding; every older ring keeps none |
+
+The script is `stress_test.py` beside this note, its output `stress_test.json` and its log `stress_test_log.txt` (GROW-RUN-S1 in
+`docs/LONG_RUNNING.md`, 44 minutes, folded in on 2026-11-09).
 
 ## Literature and provenance
 
@@ -116,3 +121,30 @@ stated reasons; A44 added.
 
 **Recommendation.** Research directions, selected #1, the coordinator's fallback B23 in the sharpened form; stop it at a rule that grows
 forever with every contact persistent, or at the lag when no unreached cut remains.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 20:03 UTC and copied here verbatim.
+
+**Growth while running (B24) is closed and published.** If the band law grows while the network runs, persistence breaks quickly. It breaks causally, from the growth outward. ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROW-RUN-20261109-001/grow_run.md))
+
+- **Proved:** a band inserted at lag t₀ leaves every ring its influence hasn't reached fully bound, and its own new rings are always bound.
+- **Computed, exact over every insertion lag:** 68% of the bindings of rings it has reached fail. Only an insertion at lag 0 keeps every contact persistent on all 13 tubes. The damage spreads out from the band one row per row's time length. With a band every P lags, only the newest band stays bound.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: growth while running | Successful | Exact: intact outside the insertion's reach (proved), mostly broken inside it (computed) |
+| Local direction: a law that grows in time | Full pivot | Persistence breaks quickly; your fallback is B23 |
+| Broader exploration: G1 with G5 | Known alternatives | B23 with a candidate rule; B22 |
+| Long-term goal: G1 Space from a law | Obstruction learned | Persistent growth must happen between runs, or only where influence hasn't arrived |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Growth chosen by the dynamics, where influence hasn't arrived (B23) | 3/3 | 2/3 | Insert a band only where it would keep every contact → a rule that grows forever, or the lag when no such place is left |
+| 2 | Knots read from the last growth event | 2/3 | 3/3 | Re-base binding at each insertion → a native reading where growth keeps persistence, or a failure |
+| 3 | Which reached bindings survive | 1/3 | 2/3 | Split the survivors by the returns they carry → a criterion |
+| 4 | Handles from two bands (B22) | 2/3 | 1/3 | Unchanged |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint, B24 taken, B23 selected (ratings raised). **Assumptions:** A42 confirmed (growth must come between runs), A44 added (new cells are open distinctions). **Long-running:** stress test GROW-RUN-S1 is still running and will be folded in.
+
+Starting #1 now, as you asked. An early probe is not encouraging: on a 3 × 3 tube, "insert whenever it's safe" adds one band at lag 0 and then finds no safe lag in the next 80.

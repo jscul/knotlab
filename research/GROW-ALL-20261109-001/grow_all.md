@@ -112,3 +112,31 @@ added; the result is stated for the declared rings (A45).
 
 **Recommendation.** Continue with #1, B19's question on the doubling network; stop it at a horizon read exactly or at the lag where
 the readings run out.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 23:16 UTC and copied here verbatim.
+
+**Growth by every allowed cut at once (B38) is closed and published, and it did not stop by lag 3.** It is the first law in this line that grows a plane while the network runs. ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROW-ALL-20261109-001/grow_all.md))
+
+- **It doubles (exact to lag 2, checked against actual bits):** on 3 × 3, 3 × 4 and 4 × 4, every cut both ways stays allowed at lags 0, 1 and 2. So every ring splits into a 2 × 2 block each lag: 3 × 3 → 6 × 6 → 12 × 12 → 24 × 24, with every stage balanced in the whole-history reading. One band at a time grew a tube or broke instead.
+- **Lag 3:** none of the 48 cuts of 24 × 24 fails within 50,000 lags, but none could be confirmed, because the cycles are longer than the cap. Nothing was refused anywhere.
+- **The price:** every contact is cut and reborn each lag, so the rings carry the memory. The doubled networks only persist; they don't read distance plainly, since the stages are square tori with both sides at least 6, which need freezing. "Plane" is said of the declared rings (A45).
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: every allowed cut at once | Successful | Every cut allowed to lag 2; nothing refused at lag 3 |
+| Local direction: a plane grown by its own dynamics | Continue | The doubling law grows both ways while running |
+| Broader exploration: G1 with G5 | Known alternatives | A proof of the balance (B50); invertible substrate (B39) |
+| Long-term goal: G1 Space from a law | Capability gained | A uniform local law (split every ring in four each lag) grows a plane of rings, every stage balanced (computed to 24 × 24) |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Distance and balls in the doubling network (B49) | 3/3 | 3/3 | Time of flight between old rings and the rings each contact needs while it doubles → a horizon read exactly, or the lag the readings run out |
+| 2 | Why doubling keeps every stage balanced (B50) | 3/3 | 2/3 | Pair the returns using the old lattice's symmetries → a proof at every lag |
+| 3 | Invertible substrate (B39) | 2/3 | 3/3 | Make the scratch search exact (it found none that is both invertible and persistent) |
+| 4 | Faster exact persistence reading | 1/3 | 2/3 | Minimal polynomial → confirm lag 3 |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint (capability gained); B38 taken; B49 and B50 added. **Assumptions:** none added; stated for the declared rings (A45). **Long-running:** GROW-ALL-A1 is folded in and awaits sign-off.
+
+I recommend #1. It's B19's own question on the first network that grows itself both ways. Influence crosses a ring in about 2g lags, while the rings between two old rings double every lag, so I expect a horizon.

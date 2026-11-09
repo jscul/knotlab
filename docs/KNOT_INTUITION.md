@@ -1976,7 +1976,8 @@ So network holes come in two kinds:
    - **Slower doubling (computed).** Every 2, 4, 6 or 8 lags the rings hear each other from the second doubling on, and a stage is
      unbalanced by 24 × 24; every 3 lags, by a cancellation particular to one-cell corners, the rings stay isolated and balanced.
    - **Reading.** While a network grows, its knots across growth and its rings hearing each other exclude each other in every schedule
-     read: the doubling law keeps its knots by keeping its rings apart.
+     read: the doubling law keeps its knots by keeping its rings apart. *Narrowed on 2026-11-09: every schedule read had g = 2; at g = 3
+     doubling every 2 or 4 lags keeps both (`ISOLATION-NEED-20261109-001`; `docs/CORRECTIONS.md`).*
    - **Next (research directions).** Another birth rule (B51, taken, next entry); isolation as necessary (B52)
      ([decision note](../research/DOUBLE-BALANCE-20261109-001/double_balance.md)).
 
@@ -1987,8 +1988,20 @@ So network holes come in two kinds:
    - **Open plus copy holds two doublings.** Each new ring hears its parent from birth and every stage stays balanced through 12 × 12,
      the first growing network in this line balanced while its rings hear each other; at 24 × 24 it fails at every schedule.
    - **Reading.** A beginning must be open, and whatever it inherits spreads the mixtures that break balance. For growth that keeps going,
-     knots across growth still need isolated rings (A44 confirmed).
-   - **Next (selected, B52).** Isolation as necessary ([decision note](../research/BIRTH-RULE-20261109-001/birth_rule.md)).
+     knots across growth still need isolated rings (A44 confirmed). *Narrowed on 2026-11-09 to g = 2: at g = 3 open births with doubling
+     every 2 or 4 lags keep balance while rings hear each other (`ISOLATION-NEED-20261109-001`).*
+   - **Next (taken, B52).** Isolation as necessary (next entry) ([decision note](../research/BIRTH-RULE-20261109-001/birth_rule.md)).
+
+   **2026-11-09: is isolation necessary for balance?** (`ISOLATION-NEED-20261109-001`).
+   - **The question.** Pre-registered: does every doubling schedule whose rings hear each other lose balance within two doublings?
+   - **No (exploratory, exact).** At g = 3, open births doubling every 2 or every 4 lags keep every stage balanced while hundreds of own
+     cells hear another ring, to 24 × 24. At g = 2 the bound holds, and the isolating schedules are P = 1, 3 and 7.
+   - **A correction.** The last two entries' exclusion of knots across growth and rings hearing each other was read at g = 2 only.
+   - **Reading.** The spacing decides what growth can keep: with two own cells per corner, a ring can hear its neighbours and its contacts
+     keep their knots. These are the first native laws read that grow a plane both ways while it runs, keep every stage balanced and let
+     rings hear each other.
+   - **Next (selected, B53).** Distance in the g = 3 growing plane
+     ([decision note](../research/ISOLATION-NEED-20261109-001/isolation_need.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

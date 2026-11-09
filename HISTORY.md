@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 9 November 2026: growing networks can keep their knots while their rings hear each other
+
+- DOUBLE-BALANCE-20261109-001 and BIRTH-RULE-20261109-001 read that, under the doubling law, knots kept across growth and rings hearing
+  each other exclude each other. Every schedule they read had ring spacing g = 2.
+- At g = 3, doubling every 2 or every 4 lags keeps every stage balanced while rings hear each other, to 24 x 24
+  ([decision note](research/ISOLATION-NEED-20261109-001/isolation_need.md)).
+- Unchanged: the proof that doubling every lag keeps every stage balanced, and every reading at g = 2.
+
 ## 9 November 2026: the doubling law's plane reads no distance while it grows
 
 - GROW-ALL-20261109-001 read its doubling law, a band at every cut each lag, as growing a plane while the network runs, its balls

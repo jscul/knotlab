@@ -55,6 +55,12 @@ going, with that qualification.
 - **Challenged.** A44: confirmed for stated reasons, with the qualification of conclusion 2.
 - **Relied on.** A30, A32, A42, A45.
 
+## Correction
+
+**2026-11-09 · Narrowing** (`docs/CORRECTIONS.md`). The exclusion read here, knots across growth against rings hearing each other, was
+read only at g = 2 (corners of one own cell). At g = 3, doubling every 2 or every 4 lags with open births keeps every stage balanced
+while rings hear each other, to 24 × 24 (`ISOLATION-NEED-20261109-001`). The results stand; the reading holds at g = 2.
+
 ## Ratio
 
 Since the epic opened:

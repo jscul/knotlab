@@ -56,6 +56,12 @@ time exactly when its rings do not hear one another, as far as computed.
 - **Relied on.** A30, A32, A42 (confirmed), A44 (born cells open), A45 (declared rings).
 - **Added.** None.
 
+## Correction
+
+**2026-11-09 · Narrowing** (`docs/CORRECTIONS.md`). The exclusion read here, knots across growth against rings hearing each other, was
+read only at g = 2 (corners of one own cell). At g = 3, doubling every 2 or every 4 lags with open births keeps every stage balanced
+while rings hear each other, to 24 × 24 (`ISOLATION-NEED-20261109-001`). The results stand; the reading holds at g = 2.
+
 ## Ratio
 
 Since the epic opened:

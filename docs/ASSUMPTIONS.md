@@ -1082,6 +1082,9 @@ evidence: results and their status come from the records each entry links.
   read binding to the old rings through them. A birth rule under which inserting while running keeps every contact persistent would
   replace this default.
 - **History.**
+  - 2026-11-09 · Reason narrowed by `ISOLATION-NEED-20261109-001`: the confirmation's "no rule read sustains balance with hearing" was
+    read at g = 2; at g = 3 open births themselves, doubling every 2 or 4 lags, keep every stage balanced while rings hear each other to
+    24 × 24, so open birth, this entry's default, is enough there (a correction in `docs/CORRECTIONS.md`).
   - 2026-11-09 · Confirmed for stated reasons by `BIRTH-RULE-20261109-001`: copies and zeros leave a new ring with no distinction of its
     own, so no contact binds it and no stage is balanced; open distinctions plus the parent's value keep every stage balanced while rings
     hear each other through 12 × 12 at P = 1, but fail at 24 × 24 at every P; no rule read sustains balance with hearing

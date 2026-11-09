@@ -106,3 +106,31 @@ added or changed.
 
 **Recommendation.** Research directions, none selected: the coordinator asked to decide on B30 from this report; directions 1 and 3 go to
 the backlog as B34 and B35.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 21:14 UTC and copied here verbatim.
+
+Rescue on higher-genus maps (B27) is closed and published (RESCUE-GENUS-20261109-001): **yes, it's the same unique-fastest-way mechanism as on the tori.**
+- **Out of sample (census, pre-registered).** I froze the hypothesis from a pilot on the old roster (dee5004a4), then read seven groups never read before: PSL(2,31), PSL(2,37), PGL(2,17), PGL(2,19), SL(2,11), GL(2,7) and S7. Every one of the 77 on-time maps (out of 1,056 of genus ≥ 2) has, at every ring, a closest contact reached by a single shortest route. There were no counterexamples.
+- **One exception in 218 on-time maps.** On the old roster, a map of S6 (type (6,6), genus 61) rescues two rings with odd counts of several routes (2, 2 and 3). Parity rescues a ring there and nowhere else.
+- **Ties beside a single route are common and harmless.** 131 of the 218 maps have a ring with a tied closest contact, and another closest contact with one route rescues it.
+- **What's still missing** is a rule on the map that predicts whether it keeps a single fastest way at every ring. On tori that rule is a short loop; on higher genus I don't have one.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: rescue on higher-genus maps | Successful | The tori's mechanism holds out of sample on every new on-time map; one exception in 218 |
+| Local direction: reading distance plainly | Research directions | What makes a map keep a single fastest way at every ring is known only on tori |
+| Broader exploration: G5 | Known alternatives | The even-index mechanism (B30, your call); B20, B22, B25, B26, B28 to B33 |
+| Long-term goal: G5 Dynamics | Capability gained | Reading distance plainly means having unique fastest ways: proved on tori, by census on higher genus |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Grow a single fastest way (B34) | 3/3 | 1/3 | Starting from the twist tube, find a growth law whose stages keep the property → a network that reads its own distance plainly as it grows, or the obstruction |
+| 2 | The even-index mechanism (B30) | 2/3 | 1/3 | As in the backlog |
+| 3 | A criterion on the map (B35) | 2/3 | 1/3 | Relate the shortest non-contractible walks to the rings whose fastest ways tie → a rule, or a counterexample |
+| 4 | The S6 exception | 1/3 | 3/3 | Read its two rings → why three routes arrive, or a second such map |
+
+**Corrections:** none. **Goals:** a G5 checkpoint (capability gained); B27 marked taken; B34 and B35 added to the backlog (B32 and B33 were taken meanwhile by another thread). **Assumptions:** none added or changed.
+
+Commits on main: dee5004a4 (pre-registration), a2d1c8d96 (the epic), addc5500c (goals doc, knot intuition entry, long-running row). One process slip: the census ran 29 minutes, over the ten-minute line, and I registered it in LONG_RUNNING.md only after it finished (marked folded in). On B30: the higher-genus result doesn't touch the even-index question, so it neither strengthens nor weakens the case for its own thread. My view is that B34 (growing a single fastest way) is the more valuable next step if one opens. Nothing is left running, and this thread's queue is done.

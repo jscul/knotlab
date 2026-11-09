@@ -137,3 +137,34 @@ B45 to B48 added. **Assumptions:** A45 added; A41's history extended, status unc
 4. **A pairing from seven.** Payoff 1; Concreteness 1: Theorem 1 says what must cancel, not how.
 
 **Recommendation.** Research directions, none selected; directions 1 to 4 go to the backlog as B45 to B48 for the coordinator to choose.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 22:55 UTC and copied here verbatim.
+
+B43 and B42 are closed and published (REROUTE-20261109-001), along with two corrections.
+- **B43, why the parity comes out even (proved).** The six-contact example isn't bare arithmetic. Two of its contacts send both their arcs to the same next contact, every closed walk passes one, and switching the arc there pairs the walks. Up to six contacts, every non-degenerate case is that kind of pairing or a symmetry of the contact graph. From seven contacts most cases are neither, and what remains is a parity of cycle families: the contact persists exactly when deleting it leaves det(I + tN) over GF(2) unchanged.
+- **B42, large networks persistent without flips (proved, plus a pre-registered census).** They're everywhere. Re-routing a network at any set of contacts, which means swapping which ring continues where (the partial duality of maps), keeps every contact persistent. All 60 random re-routings of the square, triangular and honeycomb tori that I read are non-degenerate, with no flip at any contact. The reason is bigger than the census. At law (12, 12) a contact reads one cell from each ring and both rings read it, so the automaton never says which way a ring continues. Every re-routing is literally the same cellular automaton (checked cell by cell); only the grouping of its cells into rings changes.
+- **The plain reading (proved for the square).** Grouped into lines, the tori's automata read their distance plainly at every size, by single fastest ways, and their ring graph is a cycle. On the square contact graph, a small ring is always late for some target, so any grouping that reads plainly has at most 64n rings on the n × n torus. A plane of small rings still needs freezing, and what reads plainly is a line again.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: B43, then B42 | Successful | A pairing for the example; persistent flipless networks are generic; only lines read plainly |
+| Local direction: persistence and the plain reading | Research directions | Persistence belongs to the automaton, the plain reading to the rings; which grouping is native is open |
+| Broader exploration: G1 with G5 | Known alternatives | The even-index mechanism (B30); the cone's parity laws (B44); B28 |
+| Long-term goal: G1 Space from a law | Obstruction learned | The dimension the plain reading sees depends on how rings are declared; on the square only lines read plainly |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Rings the law can see (B45) | 3/3 | 2/3 | Contact laws that tell their two rings apart, rerun on the square torus and its lines → native rings, or proof that persistence needs symmetric laws |
+| 2 | A plane of long rings (B46) | 2/3 | 1/3 | Groupings into O(n) long rings in two directions, on time with r² ring balls → one, or proof the ring graph must be 1D |
+| 3 | Small rings late on every lattice (B47) | 1/3 | 3/3 | Lucas for multinomials on the triangular and honeycomb contact graphs → proof, or the failing lattice |
+| 4 | A pairing from seven contacts (B48) | 1/3 | 1/3 | An involution on the cycle families of the unpaired cases → a pairing, or none |
+
+**Corrections:** two, both published in 8291ad565 and logged in docs/CORRECTIONS.md and knotlab HISTORY.md.
+- FLIP-RULE-20261109-001's "small maps persist by bare arithmetic, with no symmetry pairing them" is a **Narrowing**: up to six contacts it's pairings, and parity with no pairing found starts at seven.
+- LATTICE-REACH-20261109-001's "digon face" is no face but a doubled pair. **Not a block:** wording only, with a pending qualification on its discovery record.
+
+**Goals:** a G1 and G5 checkpoint (obstruction learned); B42 and B43 marked taken; B45 to B48 added to the backlog. **Assumptions:** A45 added: rings are read as declared. At symmetric contacts the law doesn't fix the rings, so every ring-level reading, "a plane needs freezing" included, is a reading of the declared rings. A41's history is extended; its status is unchanged.
+
+Commits on main: 8291ad565 (pre-registration, tickets A and B, the corrections), 20fa5b248 (the epic) and 082eb6ce9 (shared docs). I staged only my own hunks. The stress test, one size past, passed in 49 seconds, and nothing is running. No direction is selected; your call. If I were picking, I'd take direction 1, because it decides whether ring-level readings of space are native at all.

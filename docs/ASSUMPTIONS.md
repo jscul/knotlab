@@ -1026,6 +1026,10 @@ evidence: results and their status come from the records each entry links.
   band into a running 3 × m tube. Persistence lost at the insertion, or lengths that are not the stages' lengths, would overturn this
   reading for a law that grows in time.
 - **History.**
+  - 2026-11-09 · Reason added by `REBASE-KNOTS-20261109-001`: every row after the first has even parity, since every cell is read by
+    exactly two cells, so no later row is open and knots across time cannot be read natively from the last growth event; the stage
+    reading works because each stage starts from an open first row
+    ([knots read from the last growth event](../research/REBASE-KNOTS-20261109-001/rebase_knots.md)).
   - 2026-11-09 · Confirmed for stated reasons by `GROW-RUN-20261109-001`, which ran this entry's cheapest test: a band inserted while
     the tube runs leaves intact every ring it has not reached and binds its own rings (proved), but 68% of the bindings of the rings it
     has reached fail, and over every insertion lag of 13 tubes only lag 0 keeps every contact persistent in every case (computed). So

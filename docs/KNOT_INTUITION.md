@@ -1907,8 +1907,21 @@ So network holes come in two kinds:
    - **Reading.** A growth event has a past light cone, and the knots across time inside it lapse. The band law's balance belongs to
      growth between runs (A42, confirmed); a law that grows in time keeps its knots young, or must grow where its influence has not
      arrived.
-   - **Next (selected).** Growth chosen by the dynamics, where influence has not arrived (B23)
-     ([decision note](../research/GROW-RUN-20261109-001/grow_run.md)).
+   - **Next (selected).** Growth chosen by the dynamics, where influence has not arrived (B23); knots read from the last growth event
+     (taken, next entry) ([decision note](../research/GROW-RUN-20261109-001/grow_run.md)).
+
+   **2026-11-09: knots read from the last growth event** (`REBASE-KNOTS-20261109-001`).
+   - **The question.** Is the loss of knots under growth while running an artefact of reading from the first row? Read them from the
+     row at the insertion instead.
+   - **No later row is open (proved).** Every cell is read by exactly two cells, itself and the next one, or the next cell on each of a
+     contact's two rings, so from lag 1 on the cells' values sum to 0: each is the sum of the others.
+   - **So the reading is not native (proved and computed).** Treating the insertion row as open gives back every stage's persistence,
+     but read natively from any later row every contact fails to bind each of its rings at some lag, even in a network that never
+     grows. No lag cutoff was used.
+   - **Reading.** Knots across time reach back to a beginning: the first row, or the cells a growth event bears. The loss under growth
+     while running is real.
+   - **Next (research directions).** Growth chosen by the dynamics continues; an invertible substrate would test whether the lapse is
+     rule 60's forgetting ([decision note](../research/REBASE-KNOTS-20261109-001/rebase_knots.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

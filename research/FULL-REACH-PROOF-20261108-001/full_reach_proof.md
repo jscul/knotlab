@@ -54,7 +54,7 @@ is generic (one irreducible factor of degree n(n − 1)/2 at 5, 7 and 11) and no
 
 - **No lag cutoff.** Walk counts are exact; minimal polynomials come from Krylov spans; the collapse at powers of two is an exact matrix
   power; elsewhere a random vector's minimal polynomial is a rigorous certificate against it.
-- **Census-only.** Conclusions 7 and 8; the failing set at 64 and the census at 49 and 50 (stress test).
+- **Census-only.** Conclusions 7 and 8; the failing set at 64 and the census at 49 and 50 (stress test, passed).
 
 ## Stress test
 
@@ -62,10 +62,10 @@ is generic (one irreducible factor of degree n(n − 1)/2 at 5, 7 and 11) and no
 | --- | --- | --- |
 | The collapse (the draft: 4, 8, 16, read to 16) | every side to 64 | pass: 32 and 64 collapse, no other side does |
 | Triangular multiplicities (4, 8, 16 in check 10) | 32 and 64 | pass: at 64 the 17 eigenvalue classes have multiplicities 1, 1, 1, 3, 6, 10, 10, 10, 15, 15, 21, 21, 28, 28, 36, 45, 55 |
-| The failing set (`FULL-REACH-20261108-001A`: 8, 16, 32) | 64 | pending |
-| Only powers of two fail (`FULL-REACH-20261108-001A`: to 48) | 49 and 50 | pending (FULL-REACH-PROOF-S1, `docs/LONG_RUNNING.md`) |
+| The failing set (`FULL-REACH-20261108-001A`: 8, 16, 32) | 64 | pass: exactly the predicted 60 contacts miss a ring, each three; 212 = 3n + 20 miss some contact, as at 8, 16 and 32 |
+| Only powers of two fail (`FULL-REACH-20261108-001A`: to 48) | 49 and 50 | pass: every contact reaches every contact at both |
 
-The script is `stress_test.py` beside this note, with `stress_test.json` (read by check 12 of ticket A) and `stress_test_log.txt`. The census stage runs in the background (FULL-REACH-PROOF-S1 in `docs/LONG_RUNNING.md`) and is folded in when it ends.
+The script is `stress_test.py` beside this note, with `stress_test.json` (read by check 12 of ticket A) and `stress_test_log.txt`. The census stage ran in the background (FULL-REACH-PROOF-S1 in `docs/LONG_RUNNING.md`, 40 minutes) and was folded in on 2026-11-09; ticket A's result, written at closure, records it as pending.
 
 ## Literature and provenance
 

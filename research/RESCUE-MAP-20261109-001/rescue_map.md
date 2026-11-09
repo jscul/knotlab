@@ -117,3 +117,30 @@ Since the epic opened:
 3. **Prediction.** Payoff 1: a sharpening of conclusion 3; Concreteness 2: the tube tables are in hand.
 
 **Recommendation.** Research directions, selected #1 at the coordinator's instruction; reassess #2 when it closes.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 20:03 UTC and copied here verbatim.
+
+Which finite maps rescue late rings is answered for tori of every shape, by proof, and it's published (RESCUE-MAP-20261109-001):
+- **What rescues is a short loop with one fastest way along it.** A torus reads distance without freezing exactly when it holds such a loop, or it is one of finitely many small tori (23 square up to index 17, 85 triangular up to 21, 15 honeycomb up to 9, all listed). The loops are (2,0) and (2,1) on the square lattice, up to the quarter turn (the two tori of index 3 excepted), and any vector of length √3 on the triangular lattice. The honeycomb has none.
+- **The mechanism.** It isn't a third route that makes an even count odd. Around the loop there is a strictly shorter, unique route, so a different contact becomes the closest.
+- **Why the mirror image fails.** Along (1,2) the fastest routes climb two rings per two arcs and can take their side step at any of j places. A closest contact then has j routes, so it is late whenever j is even, first at distance 4. Rule 60 reads one way round every ring, so a loop and its mirror image are different substrates.
+- **How it's proved.** The systole lemma holds for any cover, so a late tube makes every thick torus it covers late. The two thin tubes are proved on time at every size by local conditions checked over one period: by hand for the square tube, by a checked certificate for the triangular one. This turns the grown-torus thread's computed families into theorems. Everything in between, 11,151 lattices, was read exactly.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: which finite maps rescue late rings | Successful | Tori classified completely, with the mechanism and the reason for the chirality split |
+| Local direction: reading distance plainly | Research directions | Tori are done; higher-genus maps (141 of 706 on time) are not classified |
+| Broader exploration: G5 | Known alternatives | Which lattices compose everywhere (B21, selected); B20 and B22 |
+| Long-term goal: G5 Dynamics | Capability gained | We know exactly which flat networks read their own distance without intervention: thin tubes with a unique fastest way, plus finitely many small tori |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Which lattices compose everywhere (B21) | 2/3 | 3/3 | Mirrors reduction on triangular and rectangular tori → a rule from the lattice's rotations, or the first exception |
+| 2 | Rescue on higher-genus maps (B27) | 2/3 | 2/3 | Look for short closed walks with a unique fastest way in the 141 on-time maps against the 565 late ones → same mechanism, or a different one |
+| 3 | Predict the rescuing loops (B28) | 1/3 | 2/3 | Derive from the reading direction which loops give unique fastest routes, and test on the kagome lattice → a rule, or a miss |
+
+**Corrections:** none new. The narrowing of PLAIN-TIME's 26 tori was logged by the grown-torus thread. **Goals:** a G5 checkpoint (capability gained); B21 selected; backlog B25 to B28 added (honeycomb directions 2 and 3 as you asked, and this epic's directions 2 and 3). **Assumptions:** none added or changed.
+
+Commits on main: bd45b273e (the epic) and 67a440501 (knot intuition entry). The goals-doc edits were already in my working copy when the growth thread committed that file in 3d30fa6ce, so they went out with that commit; the content is mine and correct. Stress test, one size past to index 100, 140 and 80: passed in 56 seconds. Starting B21 now.

@@ -1977,8 +1977,18 @@ So network holes come in two kinds:
      unbalanced by 24 × 24; every 3 lags, by a cancellation particular to one-cell corners, the rings stay isolated and balanced.
    - **Reading.** While a network grows, its knots across growth and its rings hearing each other exclude each other in every schedule
      read: the doubling law keeps its knots by keeping its rings apart.
-   - **Next (research directions).** Another birth rule (B51); isolation as necessary (B52)
+   - **Next (research directions).** Another birth rule (B51, taken, next entry); isolation as necessary (B52)
      ([decision note](../research/DOUBLE-BALANCE-20261109-001/double_balance.md)).
+
+   **2026-11-09: another birth rule** (`BIRTH-RULE-20261109-001`).
+   - **The question.** A frozen test of A44: if the cells a doubling bears copy the cells they split from, are zero, or add an open
+     distinction to a copy, can a growing network keep every stage balanced while its rings hear each other?
+   - **Copies cannot be bound (exploratory, exact).** A copied or zeroed ring bears no distinction of its own, so no contact binds it.
+   - **Open plus copy holds two doublings.** Each new ring hears its parent from birth and every stage stays balanced through 12 × 12,
+     the first growing network in this line balanced while its rings hear each other; at 24 × 24 it fails at every schedule.
+   - **Reading.** A beginning must be open, and whatever it inherits spreads the mixtures that break balance. For growth that keeps going,
+     knots across growth still need isolated rings (A44 confirmed).
+   - **Next (selected, B52).** Isolation as necessary ([decision note](../research/BIRTH-RULE-20261109-001/birth_rule.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROW-NET-20261108-001A",
+    "GROWN-DISTANCE-20261109-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROW-RUN-20261109-001A-P001",
+    "terminal_artifact": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/manifest.json"
+  },
+  "id": "GROW-RUN-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that after a band is inserted at lag t0 into a running n x m tube, every cell's dependence on the first row of an old ring that the insertion has not reached (its footprint at t0 equals the new stage's) is the new stage's at every later lag, so every contact keeps binding that ring, and that every contact binds the new band's rings at every lag; compute, exactly over every insertion lag by the period of the run's state, the insertion lags at which every contact stays persistent, for four ways to split the contact the band cuts, the share of reached bindings that fail, and the spread of the failing contacts from the band.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROW-RUN-20261109-001"
+  },
+  "parent": "GROW-RUN-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (by hand; finite claims checked exactly, with an independent reading by actual bits; census, spread and repeated growth computed): a band inserted while the tube runs leaves intact every ring it has not reached (its footprint stays the next stage's, so every contact keeps binding it), and every contact binds the band's rings; an insertion at lag 0 is the next stage. Computed: over every insertion lag of 13 tubes only lag 0 keeps every contact persistent in every case (42 to 64 of 634 lags overall); 68% of reached bindings fail; the damage spreads from the band at the time length of a row; with a band every P lags only the newest band stays bound.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "A band inserted while the network runs keeps only the knots it has not reached"
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-RUN-20261109-001A-P001",
+  "canonical_id": "GROW-RUN-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-RUN-20261109-001A",
+  "proof": "GROW-RUN-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A band inserted while the network runs keeps only the knots it has not reached",
+  "status": "Proved",
+  "claim": "For the n x m tube of equally spaced rule-60 rings with law (12,12) contacts, run from its first row and given a band at lag t0 (its cells new open distinctions; four ways to split the cut contact), the whole history read as one space-time law: (1) if the insertion has not reached an old ring X (X's footprint at t0 equals the next stage's), then X's footprint is the next stage's at every later lag and every contact binds X at every lag; this holds when X's first row has influenced neither the cut contacts nor the cells they read across up to t0, so no ring farther than t0 from them in time length is reached; (2) every contact binds the band's rings at every lag; an insertion at lag 0 is the next stage. Computed: over every insertion lag of 13 tubes only lag 0 is clean in every case (42 to 64 of 634 lags clean overall, by split); 68% of reached bindings fail; the failing contacts spread from the band at the time length of a row; with a band every P lags only the newest band keeps every binding.",
+  "dependencies": [
+    "GROW-NET-20261108-001A",
+    "GROWN-DISTANCE-20261109-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A ring the insertion has not reached that loses a binding.",
+    "A contact that stops binding a ring of the band.",
+    "A dependence set that differs from actual bits under a flip."
+  ],
+  "lineage": {
+    "home_scope": "GROW-RUN-20261109-001",
+    "epic_path": [
+      "GROW-RUN-20261109-001"
+    ],
+    "parents": [
+      "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py",
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json",
+      "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json": "71121891197b547cc36d05bbb54e247377ad2e6d645671eaa91d8345f02ffee7",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json": "c99a5ae475f4e02c7f5c09974990c7bfe5a810a0b6593e2037319f1056615fae"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/manifest.json",
+    "identity": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/identity.json",
+    "proof": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/proof.md",
+    "result": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/result.json",
+    "check": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/check.py",
+    "directory": "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Square tubes of rule-60 rings with law (12,12) contacts grown by the band law while they run, the whole history read as one space-time law (A30, A32); born cells are open distinctions (A44). The reached side and the clean lags are computed.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-09, under the owner's standing research mandate.",
+    "status": "proof by hand (Theorems 1 and 2); finite claims checked by check.py, with an independent reading by actual bits; checks 3, 4 and 6 computed",
+    "novelty": "new as far as found for the question asked; ingredients classical (linearity, causality)"
+  }
+}

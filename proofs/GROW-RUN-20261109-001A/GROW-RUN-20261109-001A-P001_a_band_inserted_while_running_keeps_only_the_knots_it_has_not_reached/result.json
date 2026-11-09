@@ -1,0 +1,969 @@
+{
+ "ticket": "GROW-RUN-20261109-001A",
+ "artifact_id": "GROW-RUN-20261109-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json": "71121891197b547cc36d05bbb54e247377ad2e6d645671eaa91d8345f02ffee7",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5",
+    "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json": "c99a5ae475f4e02c7f5c09974990c7bfe5a810a0b6593e2037319f1056615fae"
+   }
+  },
+  "1 every stage persists, and a band inserted at lag 0 gives the stage, for each split": {
+   "pass": true,
+   "info": {
+    "bad": []
+   }
+  },
+  "2 Theorem 1: a ring the insertion has not reached keeps every binding, and the band's rings are always bound (3 x 8 and 4 x 6 at g = 2, 3 x 5 at g = 3, insertion lags 0 to 31, four splits)": {
+   "pass": true,
+   "info": {
+    "band ring / binds": 5120,
+    "not reached / binds": 6240,
+    "reached / binds": 8404,
+    "reached / fails": 17612
+   }
+  },
+  "3 Computed: every insertion lag of 13 tubes, four splits; lag 0 keeps every contact in every case, and at most one lag in seven does overall": {
+   "pass": true,
+   "info": {
+    "clean lags / lags read, all tubes": {
+     "lower": [
+      42,
+      634
+     ],
+     "upper": [
+      42,
+      634
+     ],
+     "fresh": [
+      64,
+      634
+     ],
+     "copy": [
+      58,
+      634
+     ]
+    },
+    "by tube": {
+     "3 x 3, g = 2": {
+      "lower": 2,
+      "upper": 2,
+      "fresh": 4,
+      "copy": 2,
+      "cycle": 14
+     },
+     "3 x 4, g = 2": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 3,
+      "copy": 1,
+      "cycle": 28
+     },
+     "4 x 3, g = 2": {
+      "lower": 3,
+      "upper": 3,
+      "fresh": 6,
+      "copy": 4,
+      "cycle": 28
+     },
+     "4 x 4, g = 2": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 2,
+      "copy": 1,
+      "cycle": 12
+     },
+     "5 x 3, g = 2": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 2,
+      "copy": 1,
+      "cycle": 31
+     },
+     "3 x 5, g = 2": {
+      "lower": 2,
+      "upper": 2,
+      "fresh": 4,
+      "copy": 2,
+      "cycle": 31
+     },
+     "5 x 5, g = 2": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 2,
+      "copy": 1,
+      "cycle": 62
+     },
+     "3 x 3, g = 3": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 3,
+      "copy": 1,
+      "cycle": 58
+     },
+     "4 x 3, g = 3": {
+      "lower": 15,
+      "upper": 15,
+      "fresh": 17,
+      "copy": 21,
+      "cycle": 116
+     },
+     "3 x 4, g = 3": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 4,
+      "copy": 1,
+      "cycle": 116
+     },
+     "3 x 3, g = 4": {
+      "lower": 10,
+      "upper": 10,
+      "fresh": 12,
+      "copy": 19,
+      "cycle": 82
+     },
+     "6 x 3, g = 2": {
+      "lower": 3,
+      "upper": 3,
+      "fresh": 3,
+      "copy": 3,
+      "cycle": 28
+     },
+     "3 x 6, g = 2": {
+      "lower": 1,
+      "upper": 1,
+      "fresh": 2,
+      "copy": 1,
+      "cycle": 28
+     }
+    }
+   }
+  },
+  "3 census detail": {
+   "3 x 3, g = 2": {
+    "state preperiod": 2,
+    "state period": 12,
+    "clean insertion lags": {
+     "lower": [
+      0,
+      1
+     ],
+     "upper": [
+      0,
+      1
+     ],
+     "fresh": [
+      0,
+      1,
+      2,
+      8
+     ],
+     "copy": [
+      0,
+      1
+     ]
+    }
+   },
+   "3 x 4, g = 2": {
+    "state preperiod": 4,
+    "state period": 24,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1,
+      2
+     ],
+     "copy": [
+      0
+     ]
+    }
+   },
+   "4 x 3, g = 2": {
+    "state preperiod": 4,
+    "state period": 24,
+    "clean insertion lags": {
+     "lower": [
+      0,
+      1,
+      3
+     ],
+     "upper": [
+      0,
+      1,
+      3
+     ],
+     "fresh": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8
+     ],
+     "copy": [
+      0,
+      1,
+      5,
+      25
+     ]
+    }
+   },
+   "4 x 4, g = 2": {
+    "state preperiod": 4,
+    "state period": 8,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1
+     ],
+     "copy": [
+      0
+     ]
+    }
+   },
+   "5 x 3, g = 2": {
+    "state preperiod": 1,
+    "state period": 30,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1
+     ],
+     "copy": [
+      0
+     ]
+    }
+   },
+   "3 x 5, g = 2": {
+    "state preperiod": 1,
+    "state period": 30,
+    "clean insertion lags": {
+     "lower": [
+      0,
+      1
+     ],
+     "upper": [
+      0,
+      1
+     ],
+     "fresh": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "copy": [
+      0,
+      1
+     ]
+    }
+   },
+   "5 x 5, g = 2": {
+    "state preperiod": 2,
+    "state period": 60,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1
+     ],
+     "copy": [
+      0
+     ]
+    }
+   },
+   "3 x 3, g = 3": {
+    "state preperiod": 2,
+    "state period": 56,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1,
+      57
+     ],
+     "copy": [
+      0
+     ]
+    }
+   },
+   "4 x 3, g = 3": {
+    "state preperiod": 4,
+    "state period": 112,
+    "clean insertion lags": {
+     "lower": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      14,
+      30,
+      31,
+      32,
+      40,
+      86,
+      87,
+      88,
+      93,
+      96
+     ],
+     "upper": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      14,
+      30,
+      31,
+      32,
+      40,
+      86,
+      87,
+      88,
+      93,
+      96
+     ],
+     "fresh": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      14,
+      23,
+      30,
+      31,
+      32,
+      40,
+      47,
+      86,
+      87,
+      93,
+      110
+     ],
+     "copy": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      14,
+      29,
+      30,
+      31,
+      32,
+      50,
+      85,
+      86,
+      87,
+      88,
+      93,
+      94,
+      95,
+      96,
+      104,
+      110
+     ]
+    }
+   },
+   "3 x 4, g = 3": {
+    "state preperiod": 4,
+    "state period": 112,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "copy": [
+      0
+     ]
+    }
+   },
+   "3 x 3, g = 4": {
+    "state preperiod": 2,
+    "state period": 80,
+    "clean insertion lags": {
+     "lower": [
+      0,
+      1,
+      2,
+      9,
+      13,
+      42,
+      49,
+      73,
+      74,
+      75
+     ],
+     "upper": [
+      0,
+      1,
+      2,
+      9,
+      13,
+      42,
+      49,
+      73,
+      74,
+      75
+     ],
+     "fresh": [
+      0,
+      1,
+      2,
+      9,
+      12,
+      36,
+      42,
+      49,
+      73,
+      74,
+      75,
+      76
+     ],
+     "copy": [
+      0,
+      1,
+      2,
+      9,
+      10,
+      13,
+      15,
+      36,
+      42,
+      49,
+      50,
+      54,
+      55,
+      70,
+      72,
+      73,
+      74,
+      75,
+      76
+     ]
+    }
+   },
+   "6 x 3, g = 2": {
+    "state preperiod": 4,
+    "state period": 24,
+    "clean insertion lags": {
+     "lower": [
+      0,
+      1,
+      3
+     ],
+     "upper": [
+      0,
+      1,
+      3
+     ],
+     "fresh": [
+      0,
+      1,
+      2
+     ],
+     "copy": [
+      0,
+      1,
+      20
+     ]
+    }
+   },
+   "3 x 6, g = 2": {
+    "state preperiod": 4,
+    "state period": 24,
+    "clean insertion lags": {
+     "lower": [
+      0
+     ],
+     "upper": [
+      0
+     ],
+     "fresh": [
+      0,
+      1
+     ],
+     "copy": [
+      0
+     ]
+    }
+   }
+  },
+  "4 Computed: on the 3 x 8 tube the contacts that lose a binding spread from the band, one row every 4 lags each way": {
+   "pass": true,
+   "info": {
+    "first insertion lag with a failing contact, by row": {
+     "0": 14,
+     "1": 10,
+     "2": 6,
+     "3": 2,
+     "3.5": 1,
+     "4": 3,
+     "5": 7,
+     "6": 11,
+     "7": 15
+    }
+   }
+  },
+  "4 spread table": [
+   [
+    0,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 0,
+     "3.5": 0,
+     "4": 0,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    1,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 0,
+     "3.5": 3,
+     "4": 0,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    2,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 3,
+     "3.5": 3,
+     "4": 0,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    3,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 3,
+     "3.5": 3,
+     "4": 3,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    4,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 6,
+     "3.5": 3,
+     "4": 3,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    5,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 0,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    6,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 3,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 0,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    7,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 3,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 3,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    8,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 3,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    9,
+    {
+     "0": 0,
+     "1": 0,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    10,
+    {
+     "0": 0,
+     "1": 3,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 0,
+     "7": 0
+    }
+   ],
+   [
+    11,
+    {
+     "0": 0,
+     "1": 3,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 3,
+     "7": 0
+    }
+   ],
+   [
+    12,
+    {
+     "0": 0,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 3,
+     "7": 0
+    }
+   ],
+   [
+    13,
+    {
+     "0": 0,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 0
+    }
+   ],
+   [
+    14,
+    {
+     "0": 3,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 0
+    }
+   ],
+   [
+    15,
+    {
+     "0": 3,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 3
+    }
+   ],
+   [
+    16,
+    {
+     "0": 3,
+     "1": 3,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 3,
+     "7": 0
+    }
+   ],
+   [
+    17,
+    {
+     "0": 3,
+     "1": 3,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 3,
+     "7": 0
+    }
+   ],
+   [
+    18,
+    {
+     "0": 3,
+     "1": 3,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 3,
+     "7": 0
+    }
+   ],
+   [
+    19,
+    {
+     "0": 3,
+     "1": 3,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 0
+    }
+   ],
+   [
+    20,
+    {
+     "0": 3,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 0
+    }
+   ],
+   [
+    21,
+    {
+     "0": 3,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 0
+    }
+   ],
+   [
+    22,
+    {
+     "0": 3,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 0
+    }
+   ],
+   [
+    23,
+    {
+     "0": 3,
+     "1": 6,
+     "2": 6,
+     "3": 6,
+     "3.5": 3,
+     "4": 6,
+     "5": 6,
+     "6": 6,
+     "7": 3
+    }
+   ]
+  ],
+  "5 The dependence sets against actual bits, a cell flipped at a time": {
+   "pass": true,
+   "info": {
+    "flips read": 89,
+    "bad": []
+   }
+  },
+  "6 Computed: four bands, one every P lags, on the 3 x 3 tube; after the last, only the newest band's rings keep every binding": {
+   "pass": true,
+   "info": {
+    "P = 4": {
+     "0": [
+      0,
+      36
+     ],
+     "4": [
+      3,
+      12
+     ],
+     "8": [
+      3,
+      12
+     ],
+     "12": [
+      3,
+      12
+     ],
+     "16": [
+      12,
+      12
+     ]
+    },
+    "P = 8": {
+     "0": [
+      6,
+      36
+     ],
+     "8": [
+      0,
+      12
+     ],
+     "16": [
+      0,
+      12
+     ],
+     "24": [
+      0,
+      12
+     ],
+     "32": [
+      12,
+      12
+     ]
+    },
+    "P = 16": {
+     "0": [
+      0,
+      36
+     ],
+     "16": [
+      0,
+      12
+     ],
+     "32": [
+      0,
+      12
+     ],
+     "48": [
+      0,
+      12
+     ],
+     "64": [
+      12,
+      12
+     ]
+    }
+   }
+  }
+ },
+ "status": "passed"
+}

@@ -2053,6 +2053,19 @@ So network holes come in two kinds:
      was used.
    - **Next (research directions, none selected).** Persistence without a flip (B40); the remaining periodic tilings (B41)
      ([decision note](../research/PLANE-PLAIN-20261109-001/plane_plain.md)).
+
+   **2026-11-09: does persistence need a flip?** (`FLIP-RULE-20261109-001`).
+   - **The question.** On 13 periodic tilings a contact persisted exactly when a symmetry fixes it and exchanges its two rings. Is that
+     so on every uniform tiling, and on every network?
+   - **On every uniform tiling, yes (census, pre-registered).** The snub and elongated tilings and their pentagonal duals obey it too:
+     on all 22 Archimedean and Laves tilings persistence is exactly symmetry, and only the regular lattices have it at every contact.
+   - **On networks in general, no (census, pre-registered).** Among all maps of up to five contacts, contacts persist without such a
+     symmetry from three contacts on, though there only in degenerate ways. On larger maps whose rings and faces all have three or
+     more contacts, most persistent contacts have none: their closed walks are simply even in number at every length.
+   - **Reading.** On a uniform plane only symmetry cancels every return; on small irregular networks counting does. A plane read
+     plainly is ruled out among the periodic tilings, not among irregular networks. No lag cutoff was used.
+   - **Next (research directions, none selected).** Large networks persistent without flips (B42); why the parity comes out even
+     (B43) ([decision note](../research/FLIP-RULE-20261109-001/flip_rule.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

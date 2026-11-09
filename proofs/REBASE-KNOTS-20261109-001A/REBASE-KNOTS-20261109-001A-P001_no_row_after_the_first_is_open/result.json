@@ -1,0 +1,1029 @@
+{
+ "ticket": "REBASE-KNOTS-20261109-001A",
+ "artifact_id": "REBASE-KNOTS-20261109-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/manifest.json": "57f8f58178ab5b3077c2e61c2db89f31713299ccb1cbf78aa27507710951bb91",
+    "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/growrun_lib.py": "7a19713eb6eac7a21b5add9ca126b3acd7295e51051c32b658326c19b68c4691",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5"
+   }
+  },
+  "1 Lemma: in every network every cell is read by exactly two cells, so the cells' new values sum to 0 (loops, pairs of rings, Platonic networks, square, triangular and honeycomb tori; g = 2, 3, 5)": {
+   "pass": true,
+   "info": {
+    "networks": 48
+   }
+  },
+  "1b the rank of the row at lags 1 to 8 on six tubes (at most cells - 1), every row of even parity": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": {
+     "cells": 54,
+     "rank, even parity at lags 1 to 8": [
+      [
+       48,
+       true
+      ],
+      [
+       44,
+       true
+      ],
+      [
+       44,
+       true
+      ],
+      [
+       44,
+       true
+      ],
+      [
+       44,
+       true
+      ],
+      [
+       44,
+       true
+      ],
+      [
+       44,
+       true
+      ],
+      [
+       44,
+       true
+      ]
+     ]
+    },
+    "3 x 4, g = 2": {
+     "cells": 72,
+     "rank, even parity at lags 1 to 8": [
+      [
+       70,
+       true
+      ],
+      [
+       68,
+       true
+      ],
+      [
+       66,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ]
+     ]
+    },
+    "4 x 4, g = 2": {
+     "cells": 96,
+     "rank, even parity at lags 1 to 8": [
+      [
+       88,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       72,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ],
+      [
+       64,
+       true
+      ]
+     ]
+    },
+    "3 x 3, g = 3": {
+     "cells": 90,
+     "rank, even parity at lags 1 to 8": [
+      [
+       84,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       80,
+       true
+      ],
+      [
+       80,
+       true
+      ]
+     ]
+    },
+    "5 x 4, g = 2": {
+     "cells": 120,
+     "rank, even parity at lags 1 to 8": [
+      [
+       118,
+       true
+      ],
+      [
+       116,
+       true
+      ],
+      [
+       114,
+       true
+      ],
+      [
+       112,
+       true
+      ],
+      [
+       112,
+       true
+      ],
+      [
+       112,
+       true
+      ],
+      [
+       112,
+       true
+      ],
+      [
+       112,
+       true
+      ]
+     ]
+    },
+    "3 x 8, g = 2": {
+     "cells": 144,
+     "rank, even parity at lags 1 to 8": [
+      [
+       142,
+       true
+      ],
+      [
+       140,
+       true
+      ],
+      [
+       138,
+       true
+      ],
+      [
+       136,
+       true
+      ],
+      [
+       134,
+       true
+      ],
+      [
+       132,
+       true
+      ],
+      [
+       130,
+       true
+      ],
+      [
+       128,
+       true
+      ]
+     ]
+    }
+   }
+  },
+  "2 Read as if row t0 were open, every contact binds both of its rings at every lag after t0, with a band inserted at t0 or without (t0 = 0 to 7, four tubes, four splits)": {
+   "pass": true,
+   "info": {
+    "cases": 160
+   }
+  },
+  "3 Read natively, binding from the first row holds (t0 = 0), and from any later row of a network that does not grow every contact fails to bind each of its rings at some lag": {
+   "pass": true,
+   "info": {
+    "static": {
+     "3 x 3, g = 2": {
+      "0": {
+       "as if open: binds / native: binds": 36
+      },
+      "1": {
+       "as if open: binds / native: fails": 36
+      },
+      "2": {
+       "as if open: binds / native: fails": 36
+      },
+      "3": {
+       "as if open: binds / native: fails": 36
+      },
+      "4": {
+       "as if open: binds / native: fails": 36
+      },
+      "5": {
+       "as if open: binds / native: fails": 36
+      },
+      "6": {
+       "as if open: binds / native: fails": 36
+      },
+      "7": {
+       "as if open: binds / native: fails": 36
+      }
+     },
+     "3 x 4, g = 2": {
+      "0": {
+       "as if open: binds / native: binds": 48
+      },
+      "1": {
+       "as if open: binds / native: fails": 48
+      },
+      "2": {
+       "as if open: binds / native: fails": 48
+      },
+      "3": {
+       "as if open: binds / native: fails": 48
+      },
+      "4": {
+       "as if open: binds / native: fails": 48
+      },
+      "5": {
+       "as if open: binds / native: fails": 48
+      },
+      "6": {
+       "as if open: binds / native: fails": 48
+      },
+      "7": {
+       "as if open: binds / native: fails": 48
+      }
+     },
+     "4 x 3, g = 2": {
+      "0": {
+       "as if open: binds / native: binds": 48
+      },
+      "1": {
+       "as if open: binds / native: fails": 48
+      },
+      "2": {
+       "as if open: binds / native: fails": 48
+      },
+      "3": {
+       "as if open: binds / native: fails": 48
+      },
+      "4": {
+       "as if open: binds / native: fails": 48
+      },
+      "5": {
+       "as if open: binds / native: fails": 48
+      },
+      "6": {
+       "as if open: binds / native: fails": 48
+      },
+      "7": {
+       "as if open: binds / native: fails": 48
+      }
+     },
+     "3 x 3, g = 3": {
+      "0": {
+       "as if open: binds / native: binds": 36
+      },
+      "1": {
+       "as if open: binds / native: fails": 36
+      },
+      "2": {
+       "as if open: binds / native: fails": 36
+      },
+      "3": {
+       "as if open: binds / native: fails": 36
+      },
+      "4": {
+       "as if open: binds / native: fails": 36
+      },
+      "5": {
+       "as if open: binds / native: fails": 36
+      },
+      "6": {
+       "as if open: binds / native: fails": 36
+      },
+      "7": {
+       "as if open: binds / native: fails": 36
+      }
+     }
+    },
+    "with a band at t0, lower split": {
+     "3 x 3, g = 2, lower": {
+      "0": {
+       "as if open: binds / native: binds": 48
+      },
+      "1": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "2": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "3": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "4": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "5": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "6": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "7": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      }
+     },
+     "3 x 4, g = 2, lower": {
+      "0": {
+       "as if open: binds / native: binds": 60
+      },
+      "1": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      },
+      "2": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      },
+      "3": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      },
+      "4": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      },
+      "5": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      },
+      "6": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      },
+      "7": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 48
+      }
+     },
+     "4 x 3, g = 2, lower": {
+      "0": {
+       "as if open: binds / native: binds": 64
+      },
+      "1": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      },
+      "2": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      },
+      "3": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      },
+      "4": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      },
+      "5": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      },
+      "6": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      },
+      "7": {
+       "as if open: binds / native: binds": 16,
+       "as if open: binds / native: fails": 48
+      }
+     },
+     "3 x 3, g = 3, lower": {
+      "0": {
+       "as if open: binds / native: binds": 48
+      },
+      "1": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "2": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "3": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "4": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "5": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "6": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      },
+      "7": {
+       "as if open: binds / native: binds": 12,
+       "as if open: binds / native: fails": 36
+      }
+     }
+    }
+   }
+  },
+  "3 detail, every split": {
+   "3 x 3, g = 2, lower": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 3, g = 2, upper": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 3, g = 2, fresh": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 30,
+     "as if open: binds / native: fails": 18
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 3, g = 2, copy": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 4, g = 2, lower": {
+    "0": {
+     "as if open: binds / native: binds": 60
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "3 x 4, g = 2, upper": {
+    "0": {
+     "as if open: binds / native: binds": 60
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "3 x 4, g = 2, fresh": {
+    "0": {
+     "as if open: binds / native: binds": 60
+    },
+    "1": {
+     "as if open: binds / native: binds": 36,
+     "as if open: binds / native: fails": 24
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "3 x 4, g = 2, copy": {
+    "0": {
+     "as if open: binds / native: binds": 60
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "4 x 3, g = 2, lower": {
+    "0": {
+     "as if open: binds / native: binds": 64
+    },
+    "1": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "2": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "4 x 3, g = 2, upper": {
+    "0": {
+     "as if open: binds / native: binds": 64
+    },
+    "1": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "2": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "4 x 3, g = 2, fresh": {
+    "0": {
+     "as if open: binds / native: binds": 64
+    },
+    "1": {
+     "as if open: binds / native: binds": 40,
+     "as if open: binds / native: fails": 24
+    },
+    "2": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "4 x 3, g = 2, copy": {
+    "0": {
+     "as if open: binds / native: binds": 64
+    },
+    "1": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "2": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "3": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "4": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "5": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "6": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    },
+    "7": {
+     "as if open: binds / native: binds": 16,
+     "as if open: binds / native: fails": 48
+    }
+   },
+   "3 x 3, g = 3, lower": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 3, g = 3, upper": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 3, g = 3, fresh": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 30,
+     "as if open: binds / native: fails": 18
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   },
+   "3 x 3, g = 3, copy": {
+    "0": {
+     "as if open: binds / native: binds": 48
+    },
+    "1": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "2": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "3": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "4": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "5": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "6": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    },
+    "7": {
+     "as if open: binds / native: binds": 12,
+     "as if open: binds / native: fails": 36
+    }
+   }
+  }
+ },
+ "status": "passed"
+}

@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROW-RUN-20261109-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "REBASE-KNOTS-20261109-001A-P001",
+    "terminal_artifact": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/manifest.json"
+  },
+  "id": "REBASE-KNOTS-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that in every network of equally spaced rule-60 rings with law (12,12) contacts every row after the first has even total parity, so no later row is open; show that reading binding from the insertion row as if it were open gives the stage's persistence for every schedule, and compute that read natively (a contact binds a ring from row t0 at lag T unless its value can be computed from the other cells of row t0 on the states the history allows) every contact fails at some lag, with growth and without it.",
+  "ownership": {
+    "root": false,
+    "scope_id": "REBASE-KNOTS-20261109-001"
+  },
+  "parent": "REBASE-KNOTS-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (by hand; finite claims checked exactly; the native reading computed): every cell of a rule-60 network with law (12,12) contacts is read by exactly two cells, so every row after the first has even parity and is not open; read as if the insertion row were open every contact persists, but read natively from any later row of a tube that never grows every contact fails to bind each of its rings at some lag (rows 1 to 7, four tubes). The breakage under growth while running is not a reading artefact.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "No row after the first is open, so knots cannot be read from the last growth event"
+}

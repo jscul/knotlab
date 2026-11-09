@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**261 current results** and 5 superseded ones, from 201 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**262 current results** and 5 superseded ones, from 202 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 35 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 36 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 201 epics with their closures
+- [Epics](#epics): all 202 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -141,6 +141,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-09 · Composition reaches everywhere at odd index except at digons and the honeycomb's pinned ring** (`LATTICE-REACH-20261109-001-D001`).
   On tori of every shape of the three regular lattices, a digon face kills a factor of the walk polynomial so composition cannot reach everywhere (proved), and at odd index that and the honeycomb's turn-pinned ring are the only obstructions apart from one torus of index 63 (computed to index 151). At even index no rule by the lattice mod 16, the torus group's 2-part or its mirrors decides it.
   [proof P001](proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/proof.md), [epic closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · No row after the first is open, so knots across time cannot be read from the last growth event** (`REBASE-KNOTS-20261109-001-D001`).
+  Every cell of these networks is read by exactly two cells, so every row after the first has a fixed parity and is not open. Reading knots from the last growth event therefore treats a determined row as open, and read natively from any later row the knots fail even without growth, so the loss under growth while running is real.
+  [proof P001](proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/proof.md), [epic closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · Short loops rescue late rings: every torus that reads distance plainly** (`RESCUE-MAP-20261109-001-D001`).
   A torus of rings reads distance without freezing exactly when it holds a short loop along which the fastest way to every ring is a single route, the square lattice's (2, 0) and (2, 1) up to the quarter turn and the triangular lattice's vectors of length root 3, or is one of finitely many small tori. The mirror image (1, 2) is late, since rule 60 reads one way round every ring.
   [proof P001](proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/proof.md), [epic closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md)
@@ -1116,5 +1119,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Distance in a grown network (`GROWN-DISTANCE-20261109-001`) | [closure](proofs/GROWN-DISTANCE-20261109-001Z/GROWN-DISTANCE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROWN-DISTANCE-20261109-001/) |
 | 2026-11-09 | Full reach on honeycomb tori (`HONEY-REACH-20261109-001`) | [closure](proofs/HONEY-REACH-20261109-001Z/HONEY-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/HONEY-REACH-20261109-001/) |
 | 2026-11-09 | Which lattices compose everywhere (`LATTICE-REACH-20261109-001`) | [closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-REACH-20261109-001/) |
+| 2026-11-09 | Knots read from the last growth event (`REBASE-KNOTS-20261109-001`) | [closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REBASE-KNOTS-20261109-001/) |
 | 2026-11-09 | Which finite maps rescue late rings (`RESCUE-MAP-20261109-001`) | [closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-MAP-20261109-001/) |
 

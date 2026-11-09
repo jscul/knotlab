@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "REBASE-KNOTS-20261109-001A-P001",
+  "canonical_id": "REBASE-KNOTS-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "REBASE-KNOTS-20261109-001A",
+  "proof": "REBASE-KNOTS-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "No row after the first is open, so knots cannot be read from the last growth event",
+  "status": "Proved",
+  "claim": "In every network of rule-60 rings with law (12,12) contacts (every corner holding an own cell) every cell is read by exactly two cells, so at every lag after the first the cells' values sum to 0 and no later row is open. Read as if the row at an insertion lag were open, every contact of a balanced network binds both of its rings at every later lag. Computed: read natively from a later row (a contact binds a ring unless its value equals, on the allowed rows, a function of the row's other cells), every contact fails to bind each of its rings at some lag from rows 1 to 7 of four tubes that never grow, and binding from the first row holds. So the breakage of persistence under growth while running is not an artefact of reading from the first row.",
+  "dependencies": [
+    "GROW-RUN-20261109-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A cell read by other than two cells, or a later row of odd parity.",
+    "A contact that fails to bind as if open after an insertion.",
+    "A contact that binds natively from a later row of a static tube at every lag."
+  ],
+  "lineage": {
+    "home_scope": "REBASE-KNOTS-20261109-001",
+    "epic_path": [
+      "REBASE-KNOTS-20261109-001"
+    ],
+    "parents": [
+      "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/manifest.json",
+      "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/growrun_lib.py",
+      "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/manifest.json": "57f8f58178ab5b3077c2e61c2db89f31713299ccb1cbf78aa27507710951bb91",
+    "proofs/GROW-RUN-20261109-001A/GROW-RUN-20261109-001A-P001_a_band_inserted_while_running_keeps_only_the_knots_it_has_not_reached/growrun_lib.py": "7a19713eb6eac7a21b5add9ca126b3acd7295e51051c32b658326c19b68c4691",
+    "proofs/LOOP-NET-20261108-001A/LOOP-NET-20261108-001A-P001_symmetry_cancels_returns/manifest.json": "ea82b4fbe792a325ce481430b65203894505095f86c54798973cb5a58d1134e5"
+  },
+  "paths": {
+    "manifest": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/manifest.json",
+    "identity": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/identity.json",
+    "proof": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/proof.md",
+    "result": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/result.json",
+    "check": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/check.py",
+    "directory": "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Linear networks of rule-60 rings with law (12,12) contacts; two-time knots (A30) read from a later row; the native failure computed on four tubes, rows 1 to 7.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-09.",
+    "status": "proof by hand (lemma, theorem); finite claims checked by check.py; the native reading computed (check 3)",
+    "novelty": "known-with-delta: the parity count is classical"
+  }
+}

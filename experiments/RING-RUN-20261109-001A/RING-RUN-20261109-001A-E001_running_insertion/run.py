@@ -24,6 +24,7 @@ GR = TL.GR
 OUT = ROOT / "artifacts" / "RING-RUN-20261109-001A" / "RING-RUN-20261109-001A-E001_running_insertion" / "run"
 ROSTER = [(N, 2) for N in range(4, 13)] + [(N, g) for g in (3, 4) for N in range(4, 9)]
 SPLITS = ("keep", "fresh")
+LAG_CAP = 64   # amended before launch (contract.json, "amendment")
 
 
 def contacts(run):
@@ -46,15 +47,18 @@ def tube_task(args):
     N, g = args
     pre, per = state_cycle(N, g)
     out = {"N": N, "g": g, "state preperiod": pre, "state period": per, "splits": {}}
+    lags = min(pre + per, LAG_CAP)
+    out["lags read"] = lags
+    out["every lag read"] = lags == pre + per
     for split in SPLITS:
         run = TL.Run(TL.TwistTube(list(range(N)), g))
+        st = None
         clean, cnt = [], collections.Counter()
-        for t0 in range(pre + per):
+        for t0 in range(lags):
             r2 = copy.deepcopy(run)
             r2.insert_ring(0, 0.5, split)
-            st = TL.Run(TL.TwistTube(r2.tube.labels, g))
-            for _ in range(t0):
-                st.step()
+            if st is None:
+                st = TL.Run(TL.TwistTube(r2.tube.labels, g))   # the next stage, run from lag 0 alongside
             tb = r2.tube
             reached = {R: GR.footprint(r2, R) != GR.footprint(st, R) for R in run.tube.rings}
             every = True
@@ -69,6 +73,7 @@ def tube_task(args):
             if every:
                 clean.append(t0)
             run.step()
+            st.step()
         out["splits"][split] = {"clean insertion lags": clean, "bindings": {" / ".join(k): v for k, v in sorted(cnt.items())}}
     return out
 
@@ -90,7 +95,8 @@ def main():
             "H2 failures of rings not reached or of the new ring": c.get("not reached / fails", 0) + c.get("new ring / fails", 0),
             "H3 share of reached bindings that fail": round(c.get("reached / fails", 0) / reached, 4) if reached else None,
             "clean lags": sum(len(r["splits"][s]["clean insertion lags"]) for r in rows),
-            "lags read": sum(r["state preperiod"] + r["state period"] for r in rows),
+            "lags read": sum(r["lags read"] for r in rows),
+            "tubes with every lag read": sum(1 for r in rows if r["every lag read"]),
             "bindings": dict(c)}
     res = {"experiment": "RING-RUN-20261109-001A-E001", "rows": rows, "summary": summary, "seconds": round(time.time() - t0, 1)}
     OUT.mkdir(parents=True, exist_ok=True)

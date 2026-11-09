@@ -2029,6 +2029,18 @@ So network holes come in two kinds:
      read plainly needs another substrate, if one exists. Stages are read as fixed networks (A42). No lag cutoff was used.
    - **Next (research directions, none selected).** A plane read plainly beyond tori (B36); a ring inserted while running (B37)
      ([decision note](../research/GROW-PLAIN-20261109-001/grow_plain.md)).
+
+   **2026-11-09: a ring inserted while running** (`RING-RUN-20261109-001`).
+   - **The question.** The twist tube grows one ring at a time and reads its distance plainly at every stage, read as fixed networks.
+     What survives if the ring is inserted while the tube runs?
+   - **What it has not reached (census, pre-registered).** Every binding of a ring the insertion has not reached survives, and the new
+     ring is bound at every lag, as for bands.
+   - **What it has reached.** About half of those bindings fail (53% when the rewired contacts keep their values, 51% when they are
+     born anew), against 68% for a band. Clean insertion lags are lag 0, or the first lag or two, apart from two tubes.
+   - **Reading.** Ring by ring as band by band, a law that grows while it runs keeps only its young knots: growth must come between runs
+     (A42). No lag cutoff was used beyond the census's stated cap.
+   - **Next (selected, B36).** A plane read plainly beyond tori
+     ([decision note](../research/RING-RUN-20261109-001/ring_run.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

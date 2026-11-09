@@ -1997,6 +1997,21 @@ So network holes come in two kinds:
      fastest way. What makes a map keep one at every ring is not yet known beyond tori. No lag cutoff was used.
    - **Next (research directions, none selected).** Growing a network that keeps a single fastest way (B34); a criterion on the map
      (B35) ([decision note](../research/RESCUE-GENUS-20261109-001/rescue_genus.md)).
+
+   **2026-11-09: grow a single fastest way** (`GROW-PLAIN-20261109-001`).
+   - **The question.** A network reads its distance plainly when every ring keeps a single fastest way. Can a law grow one that does
+     at every stage?
+   - **Yes, one ring at a time (proved).** Inserting a ring into the twist torus, cutting the three contacts that span the gap and
+     rejoining them through the new ring, gives the next twist torus: from 4 rings every stage keeps every contact persistent and
+     reads its distance across time with nothing frozen. The band law loses this at its second band.
+   - **But only a line (proved).** Any growth through tori that keeps the reading at every stage ends up in a tube, whose balls grow by
+     4 rings per step: dimension 1.
+   - **The S6 exception (exact).** The one map of higher genus rescued by parity has three routes to a ring's closest contact, each
+     round a different handle: three lifts of the target arriving together.
+   - **Reading.** A law can grow space that reads its own distance across time without intervention, but on tori only a line; a plane
+     read plainly needs another substrate, if one exists. Stages are read as fixed networks (A42). No lag cutoff was used.
+   - **Next (research directions, none selected).** A plane read plainly beyond tori (B36); a ring inserted while running (B37)
+     ([decision note](../research/GROW-PLAIN-20261109-001/grow_plain.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

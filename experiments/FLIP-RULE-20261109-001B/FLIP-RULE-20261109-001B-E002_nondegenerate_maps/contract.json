@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FLIP-RULE-20261109-001B-E002",
+  "ticket": "FLIP-RULE-20261109-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "E001 refuted 'every persistent contact has a flip' at three contacts, but every exception to five contacts was degenerate (a contact that sends or hears nothing, a ring of one or two contacts, or a face of one or two). On maps whose rings and faces all have at least three contacts, does every persistent contact have a flip?",
+  "public_inputs": {
+    "library": "E001's run.py (valid, persistent, symmetries, canonical).",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Random permutations of the darts at E = 6, 7, 8 and 9 contacts, 4,000,000 draws each (seed 20261110), kept when connected, with no contact joining a ring to itself, every ring of at least 3 contacts and every face of at least 3 (rejection). Equally spaced rings.",
+    "reading": "As E001; for each persistent contact without a flip, whether it sends and hears (some walk from it, and some into it, with an odd count)."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypothesis after seeing results",
+    "Dropping maps"
+  ],
+  "primary_observable": "Per E: kept maps, contacts, persistent, with a flip, persistent without a flip (and of those, sending and hearing; with a reflection).",
+  "cheapest_meaningful_control": "No contact with a flip fails to persist (LOOP-NET-20261108-001A, Theorem 3).",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The readings in result.json.",
+  "decision_or_followup_rule": "Frozen hypothesis H1': every persistent contact of a non-degenerate map has a flip. If it holds on all four sizes, the flip rule is the conjecture to prove for non-degenerate maps; if it fails, the smallest exception is read for its mechanism.",
+  "stop_rule": "Stop when every draw has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: random samples only.",
+    "Equally spaced rings only; two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "H1' was written after E001's exhaustive readings to five contacts, which a post-hoc classification (not part of E001's contract) split into degenerate kinds, none non-degenerate. No map of six or more contacts was read for it, and the rejection rate was not timed."
+}

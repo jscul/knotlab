@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SPACING-20261109-001A-E001",
+  "ticket": "SPACING-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "At ring spacings g = 4 and 5, does some open doubling schedule keep every stage balanced while an original ring is heard by another original ring, influence crossing a territory border?",
+  "public_inputs": {
+    "library": "ISOLATION-NEED-20261109-001A-E001's run.py (sha256 d9900c032ebe31ef1f7409efd47722b0bbf4f328a5600195ef979e0f08be6e3e) and GROW-HEAR-20261109-001A-E001's run.py (sha256 be85e143d58ed9c029b91aad0a15681e3e16b4a00d111bebf34907b0f183a142), on choose_lib and horizon_lib.",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "From the 3 x 3 tube, open births, doubling every P = 1, 2, 3, 4 lags, at g = 4 and 5: balance and hearing to 24 x 24 (600 rings), reach to 96 x 96.",
+    "reading": "At each doubling lag: balance (every contact binds both of its rings at every later lag, through a full cycle, up to 300,000 steps) and hearing (own cells depending on another ring's born cells); the run stops at its first unbalanced stage. And the reach of ring (0, 0) and the original rings that ever hear it."
+  },
+  "forbidden_inputs": [
+    "Changing spacings, schedules or sizes after seeing results"
+  ],
+  "primary_observable": "For every (g, P): balance and hearing per doubling, the largest reach, the original rings that hear ring (0, 0).",
+  "cheapest_meaningful_control": "ISOLATION-NEED-20261109-001A-E001 at g = 3 (P = 2, 4 balanced with hearing; P = 1 isolated; P = 3 unbalanced at 12 x 12) and GROW-HEAR-20261109-001A-E001 at g = 3 (reach to 1/2, no original ring hearing).",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The eight per-run lines.",
+  "decision_or_followup_rule": "Frozen hypotheses. S1: at g = 4 or 5 some schedule with hearing keeps every stage balanced to 24 x 24. S2: in every schedule that keeps every stage balanced, no original ring hears ring (0, 0) and its reach stays below 1 original spacing: territories. S3: every schedule in which an original ring hears ring (0, 0) has an unbalanced stage by 24 x 24. If S2 or S3 fails, a schedule keeps balance while influence crosses a border: it is the candidate for a grown space that keeps its knots and reads distance, and is read further; if both hold, territories are the rule at every spacing read.",
+  "stop_rule": "Stop when every run has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: one tube, g = 4 and 5, P to 4, 24 x 24 for balance, 96 x 96 for reach.",
+    "Balance computed, not proved; plain dependence; declared rings (A45)."
+  ],
+  "feasibility_disclosure": "Before freezing, nothing at g = 4 or 5 was read; the g = 2 and 3 results named in the control were known."
+}

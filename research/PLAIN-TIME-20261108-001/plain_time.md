@@ -18,7 +18,7 @@ Epic `PLAIN-TIME-20261108-001` (program foundations), 2026-11-08.
 | 1 | **The sphere reads distance plainly.** Every loop of rings, every pair of rings sharing contacts and every Platonic network is on time at every size. | proved; Platonic exact | B |
 | 2 | **Flat lattices do not.** The square plane has a late ring at distance 4 (its single closest contact reached by two shortest routes), the triangular plane at 6, the honeycomb plane at 5. | proved (square); exact | B |
 | 3 | **The systole lemma.** A quotient of a tessellation whose medial systole is at least 2ℓ + m, ℓ the cover's first late distance, is late. | proved | B |
-| 4 | **Exactly 26 tori are on time**: 9 square lattices (index at most 17), 11 triangular (at most 21), 6 honeycomb (at most 9), counting mirror images apart; every other torus is late. | proved, with an exact reading of the 612 smaller tori | B |
+| 4 | **Exactly 26 tori are on time**: 9 square lattices (index at most 17), 11 triangular (at most 21), 6 honeycomb (at most 9), counting mirror images apart; every other torus is late. *Narrowed on 2026-11-09 to the rotation-invariant (regular) tori: thin tori of other shapes are on time at every size; see Correction.* | proved, with an exact reading of the 612 smaller tori | B |
 | 5 | **The first failing map.** The twisted square torus {4,4}_(2,3), 13 rings, has one late ring per contact (δ 4, κ 5, cell-level lags 11 and 16); its mirror image is on time. The first failure from a non-abelian group is the 20-ring map of S5 with square faces (genus 6), late at 5 and 6 by wrap-around. | exact, at the cell level | A, B |
 | 6 | **The covers' horizon.** In the cover of type (m, f), L = lcm(m, f), the first tie of two shortest routes comes at τ = L − L/m − L/f + 1 and the first late ring at τ + 1 (τ + 2 for triangular faces and larger rings), on every cover read; the formula predicted four types before they were read. | computed, two primes | B, stress test |
 | 7 | **Finite curved maps are mixed.** 141 of 706 regular maps of genus 2 to 2,430 are on time; "unique routes" and "curvature" both fail as criteria. | exploratory census, exact | A |
@@ -77,6 +77,18 @@ The scripts are `stress_test.py` beside this note and check 6 of ticket B.
 Since the epic opened:
 - **Substantive.** One frozen census (A), one proof (B) with eight checks, one stress test.
 - **Administrative.** This note and the closure.
+
+## Correction
+
+**2026-11-09 · Narrowing** (`docs/CORRECTIONS.md`). Conclusion 4 and the answer's "only the sphere reads distance plainly at every size"
+hold for regular maps, the rotation-invariant tori among them. The census built only rotation-invariant sublattices, and the bound that
+made large tori late assumed the shortest lattice vector is at least √N long, which holds for those alone. `GROWN-DISTANCE-20261109-001`
+proved every square torus whose lattice holds (2, 0) or (0, 2), the n × 2 ladder and its twisted forms, on time at every size
+(`GROWN-DISTANCE-20261109-001A`, Theorem 2), and computed the square tori holding (2, 1) or a rotation of it (191 of 191 to index 100) and
+the triangular tori holding a vector of length √3 (232 of 232 to index 80) on time too; every other on-time torus it read is small, and
+the rotation-invariant ones are this epic's 26. So among tori of every shape the plain first need is on time at every size on the
+thinnest tubes, which are one-dimensional at large scale. Theorems 1 to 3, the 26 regular tori, the first failing map, the covers'
+horizon and the census stand ([distance in a grown network](../GROWN-DISTANCE-20261109-001/grown_distance.md)).
 
 ## Next steps
 

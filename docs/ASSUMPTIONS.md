@@ -96,6 +96,8 @@ evidence: results and their status come from the records each entry links.
 | [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
 | [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Confirmed |
 | [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Confirmed |
+| [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Assumed |
+| [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Assumed |
 
 ## Entries
 
@@ -991,6 +993,12 @@ evidence: results and their status come from the records each entry links.
   observable that counts routes rather than their parity, would make freezing unnecessary there; finding none would confirm this
   reading.
 - **History.**
+  - 2026-11-09 · Confirmation narrowed by `GROWN-DISTANCE-20261109-001` (a correction of the line below, `docs/CORRECTIONS.md`): the
+    26 tori are the rotation-invariant ones. Thin tori of every size read distance without freezing too: every square torus whose
+    lattice holds (2, 0), the ladders that are the band law's first stage (proved), and the square (2, 1) tubes of one chirality and the
+    triangular √3 tubes (computed to index 100 and 80). The reason stands in its narrower form: freezing is needed wherever a network
+    is two-dimensional and not tiny, and every stage of band growth from the second band on needs it
+    ([distance in a grown network](../research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
   - 2026-11-08 · Confirmed for stated reasons by `PLAIN-TIME-20261108-001`: the plain first need reads distance at every size only on
     the sphere (every loop of rings, pair of rings sharing contacts and Platonic network, proved). Flat and hyperbolic tilings hide it
     beyond a horizon set by ring and face sizes, exactly 26 tori read it (proved), and the smallest regular map that fails is a
@@ -998,3 +1006,40 @@ evidence: results and their status come from the records each entry links.
     readings agree on the sphere ([distance without freezing](../research/PLAIN-TIME-20261108-001/plain_time.md)).
   - 2026-11-08 · Put under challenge by `PLAIN-TIME-20261108-001`, which took up this entry's cheapest test as its question.
   - 2026-11-08 · Added by `DISTANCE-20261108-001`.
+
+### A42 · A grown network is read stage by stage
+
+**Assumed** · 2026-11-09 · scope
+
+- **Statement.** A network grown by a law is read one stage at a time: each stage is a fixed network whose dynamics run from its own
+  first row, and its lengths, balls and persistence are read on that network. Growth does not happen while the network runs.
+- **Why.** `GROW-NET-20261108-001` and `BAND-SURFACE-20261108-001` judged growth by whether every stage is balanced, and
+  `GROWN-DISTANCE-20261109-001` took the same reading by default, so that the readings of `DISTANCE-20261108-001` and
+  `PLAIN-TIME-20261108-001` apply to each stage as proved.
+- **Rests on it.** "Every stage balanced" in `GROW-NET-20261108-001` and `BAND-SURFACE-20261108-001`; the answer of
+  `GROWN-DISTANCE-20261109-001`, that every stage reads both freeze lengths and that only the ladder stage reads distance without
+  freezing ([distance in a grown network](../research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
+- **Challenge.** Let the band law act while the network runs: insert a band at a lag, its rings' cells new open distinctions from that
+  lag, and read whether every contact keeps its witnesses across the insertion, when a contact first needs a ring on the far side of a
+  band inserted between them, and how the balls of rings needed by a lag grow while bands keep arriving. The cheapest test inserts one
+  band into a running 3 × m tube. Persistence lost at the insertion, or lengths that are not the stages' lengths, would overturn this
+  reading for a law that grows in time.
+- **History.**
+  - 2026-11-09 · Added by `GROWN-DISTANCE-20261109-001`.
+
+### A43 · Bands are added along the seed loop
+
+**Assumed** · 2026-11-09 · scope
+
+- **Statement.** The band law adds bands of the seed loop's n rings, so its stages are the n × 2 ladder and then the n × m tori with n
+  fixed and m growing. Bands of m rings across the other way, which the n × m torus admits as well, are not added.
+- **Why.** `BAND-SURFACE-20261108-001` and `GROW-NET-20261108-001` stated the band step as n × m to n × (m + 1), and
+  `GROWN-DISTANCE-20261109-001` kept it. The law itself does not say which way a band goes.
+- **Rests on it.** The reading of `GROWN-DISTANCE-20261109-001` that band growth makes a tube: its balls grow as in the plane only out to
+  half the loop and then by 2n rings per step, dimension 1 at large scale
+  ([distance in a grown network](../research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
+- **Challenge.** Add bands both ways, or let the dynamics choose where the next band goes (backlog B23), and read the balls: a schedule
+  that grows both sides reads dimension 2 out to the smaller side, and every n × m stage with both sides at least 3 except 3 × 3 needs
+  freezing (`GROWN-DISTANCE-20261109-001A`, Theorem 3). A native rule that fixes the direction would replace this default.
+- **History.**
+  - 2026-11-09 · Added by `GROWN-DISTANCE-20261109-001`.

@@ -1848,6 +1848,8 @@ So network holes come in two kinds:
    - **Only the sphere, at every size (proved).** Every loop of rings, pair of rings sharing contacts and Platonic network reads its
      distance plainly. The square, triangular and honeycomb planes do not, from distance 4, 6 and 5, and a quotient whose systole is long
      enough inherits the failure, so exactly 26 tori read it: 9 square, 11 triangular, 6 honeycomb, mirror images apart.
+     *Corrected on 2026-11-09: the 26 are the regular tori; thin tori of other shapes, the ladders first, read it at every size
+     (`GROWN-DISTANCE-20261109-001`, below; `docs/CORRECTIONS.md`).*
    - **The first failing map (exact).** The twisted square torus {4,4}_(2,3), 13 rings: each contact has one late ring, at distance 4,
      first needed at 5. Its mirror image reads every distance plainly, so no rule by type, genus, curvature or size decides finite maps.
    - **The horizon (computed).** In the tiling with rings of m contacts and faces of f, two shortest routes first tie at
@@ -1874,6 +1876,25 @@ So network holes come in two kinds:
      turn of order 3's on honeycomb tori whose side 3 does not divide. The lattice is given, not grown. No lag cutoff was used.
    - **Next (research directions).** Which lattices compose everywhere, by the same reduction to mirrors; a proof of the computed half
      ([decision note](../research/HONEY-REACH-20261109-001/honey_reach.md)).
+
+   **2026-11-09: distance in a grown network** (`GROWN-DISTANCE-20261109-001`).
+   - **The question.** The band law grows a torus from a loop of n rings: the n × 2 ladder, then n × 3, n × 4, …. Does the grown torus
+     read distance the way the fixed torus does, and how do its balls grow as it grows?
+   - **Every stage reads both freeze lengths (proved).** The cut length is the ring graph's distance and the time length g·δ + 1 at
+     every stage, each stage read as a fixed network (A42).
+   - **Only the ladder reads distance without freezing (proved).** Every square torus whose lattice holds (2, 0), the n × 2 ladder and
+     its twisted forms, is on time at every size: in its cover each ring's nearest contact has exactly one shortest route, because the
+     two rungs pair up every other walk. The n × m torus with 3 ≤ n ≤ m is late except 3 × 3: a tube three rings round already holds
+     the plane's first tie of two shortest routes.
+   - **The balls are a tube's (proved).** 2r² + 2r + 1 rings out to half the loop, then 2n more per step, for both lengths: dimension 2
+     at short range and 1 at long range, with bands added along the seed loop (A43).
+   - **A correction (computed).** The square tori holding (2, 1) of one chirality and the triangular tori holding a vector of length √3
+     are on time too, to index 100 and 80, so the 26 tori of the previous entry are the regular ones.
+   - **Reading.** The plain first need reads distance at every size where a network is one-dimensional at large scale, and freezing is
+     needed wherever it is two-dimensional and not tiny. The band law grows a line of loops, not a plane: which way a band goes is not
+     said by the law.
+   - **Next (selected, B24).** Growth while running: insert bands into a network as it runs and read its lengths and balls across
+     time ([decision note](../research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

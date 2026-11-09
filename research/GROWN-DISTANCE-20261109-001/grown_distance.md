@@ -124,7 +124,7 @@ confirmation narrowed.
 | --- | --- | --- | --- | --- | --- |
 | 1 | Growth while running (G1 with G5; challenges A42) | 3/3 — Major | 2/3 — Testable | Insert one band into a running 3 × m tube, its cells new open distinctions from that lag; read the contacts' witnesses across the insertion and the first need across the new band, then a band every P lags → the lengths and balls of a network growing in time, or the insertion that breaks persistence | Selected · awaiting go-ahead |
 | 2 | Growth chosen by the dynamics (B23; challenges A43) | 3/3 — Major | 1/3 — Stated | Let a contact's needs pick which way the next band goes → a law that fixes the dimension it grows, or none | Alternative · deferred |
-| 3 | The thin tubes as theorems | 1/3 — Minor | 3/3 — Ready | Prove the (2, 1) and √3 tubes on time by the ladder's cover argument, and close the classification of every torus by the cylinder lemma for each short vector → a complete list, or a family the method misses | Alternative · deferred |
+| 3 | The thin tubes as theorems | 1/3 — Minor | 3/3 — Ready | Prove the (2, 1) and √3 tubes on time by the ladder's cover argument, and close the classification of every torus by the cylinder lemma for each short vector → a complete list, or a family the method misses | Handed to the thread on which finite maps rescue late rings (coordinator, 2026-11-09) |
 | 4 | Handles from two bands at once (B22) | 2/3 — Substantial | 1/3 — Stated | Glue a band pair across the n × m torus as a handle → a balanced genus-2 network to read distance on, or none | Alternative · deferred |
 
 1. **Growth while running.** Payoff 3: distance and balls read across time in a network that a law grows in time are B19's aim proper,
@@ -133,7 +133,8 @@ confirmation narrowed.
    which old cell keeps the contact a band splits, to be registered. Main uncertainty: whether persistence survives any insertion.
 2. **Growth chosen by the dynamics.** Payoff 3: a native choice of direction would decide whether a band law can grow a plane.
    Concreteness 1: no candidate rule yet.
-3. **Thin tubes.** Payoff 1: completes the correction's classification. Concreteness 3: the ladder proof's method carries over.
+3. **Thin tubes.** Payoff 1: completes the correction's classification. Concreteness 3: the ladder proof's method carries over. The
+   coordinator gave it, with the reason chirality decides the (2, 1) tubes, to the thread on which finite maps rescue late rings.
 4. **Two bands at once.** Payoff 2: the only route to higher genus left by `GENUS-BAND-20261108-001`. Concreteness 1: no candidate gluing.
 
 **Recommendation.** Research directions, selected #1 within the thread cap; stop it at the first insertion schedule whose lengths and

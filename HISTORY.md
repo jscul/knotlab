@@ -3,6 +3,22 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 9 November 2026: thin tori read distance plainly at every size
+
+- PLAIN-TIME-20261108-001 said that exactly 26 tori read distance without
+  freezing and that every other torus is late, and that only the sphere does
+  so at every size. Its census and its bound for large tori covered only the
+  tori whose lattice is invariant under the lattice's rotation.
+- Every square torus whose lattice holds (2, 0) is on time at every size,
+  the band law's n × 2 ladder among them (proved), and so are the square tori
+  holding (2, 1) of one chirality and the triangular tori holding a vector of
+  length √3 (computed to index 100 and 80)
+  ([decision note](research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
+- The 26 are the regular tori, and "only the sphere at every size" holds
+  among regular maps.
+- Unchanged: the sphere's theorem, the planes' late rings, the systole lemma,
+  the first failing map and the covers' horizon.
+
 ## 8 November 2026: one row reads the contradiction only away from two-vertex cuts
 
 - The knot intuition entry for CONTRA-READ-20261108-001 read its result as

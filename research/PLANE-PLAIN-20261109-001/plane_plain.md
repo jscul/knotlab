@@ -79,7 +79,7 @@ Since the epic opened:
 | Broader exploration — G1 with G5 | Known alternatives | Growth chosen by the dynamics (B23, the growth thread); B30, B35 |
 | Long-term goal — G1 Space from a law (question 9) | Obstruction learned | Flat space of persistent contacts is a regular lattice, and it reads its own distance only through freezes, except as a thin tube |
 
-**Corrections:** none. **Goals:** a G1 and G5 checkpoint (obstruction learned); B36 taken; backlog B38 and B39 added. **Assumptions:**
+**Corrections:** none. **Goals:** a G1 and G5 checkpoint (obstruction learned); B36 taken; backlog B40 and B41 added. **Assumptions:**
 none added or changed.
 
 - **What the attempt leaves open.** Whether a contact can persist without a flip in any network; the snub and elongated tilings; whether
@@ -98,4 +98,4 @@ none added or changed.
    them; Concreteness 2: a search over small networks is direct. Main uncertainty: unequal spacing may balance returns another way.
 2. **The rest of the tilings.** Payoff 1: completes the census; Concreteness 3: only constructions are missing.
 
-**Recommendation.** Research directions, none selected; directions 1 and 2 go to the backlog as B38 and B39.
+**Recommendation.** Research directions, none selected; directions 1 and 2 go to the backlog as B40 and B41.

@@ -2041,6 +2041,18 @@ So network holes come in two kinds:
      (A42). No lag cutoff was used beyond the census's stated cap.
    - **Next (selected, B36).** A plane read plainly beyond tori
      ([decision note](../research/RING-RUN-20261109-001/ring_run.md)).
+
+   **2026-11-09: a plane read plainly beyond tori** (`PLANE-PLAIN-20261109-001`).
+   - **The question.** Tori read their distance plainly at large size only as tubes. Is there another flat network of persistent
+     contacts that might do it as a plane?
+   - **Not among the periodic tilings read (census, pre-registered).** On 13 tilings (the three regular ones, five Archimedean ones
+     built by medial and truncation, and their duals), a contact persists exactly when a symmetry fixes it and exchanges its two rings,
+     and only the regular tilings have that at every contact. Mixing ring or face sizes takes the symmetry away.
+   - **Reading.** A flat network of persistent contacts is a regular lattice, and it reads its own distance only through freezes,
+     except as a thin tube. A plane read plainly would have to be non-periodic or keep persistence without that symmetry. No lag cutoff
+     was used.
+   - **Next (research directions, none selected).** Persistence without a flip (B40); the remaining periodic tilings (B41)
+     ([decision note](../research/PLANE-PLAIN-20261109-001/plane_plain.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

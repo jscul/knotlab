@@ -122,3 +122,26 @@ the draft said GF(2n), and since GF(2n) exists only when n is a power of two, th
    have a one-line reason (Proposition 6).
 
 **Recommendation.** Continue with #1 after the tie-law epic.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-09 at 20:32 UTC and copied here verbatim.
+
+The full-reach proof epic is closed and published, but the theorem itself is still unproved. Here is what's new. The cut-open torus is the uncut torus with two lines of contacts deleted. At powers of two the uncut torus's walk dies after n steps. So the box's whole spectrum reduces to one 2n × 2n determinant on the two cut lines. Computed exactly: every eigenvalue is a (2n−1)-th root of unity at sides 4, 8, 16, 32 and 64, and at no other side from 3 to 64.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the full-reach proof | **Status:** Inconclusive | Five theorems and a reduction; the theorem is not proved |
+| Local direction: topology across time on the cut-open torus | Continue | At powers of two the question is one 2n × 2n determinant |
+| Broader exploration: G5 with G1 | Known alternatives | Honeycomb and lattice reach closed today; backlog B22–B31 |
+| Long-term goal: G5 Dynamics | No demonstrated advance | We now know where the powers-of-two effect sits, but it isn't proved |
+
+**Next step:** Continue, selected #1, deferred while the tie law runs first.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Collapse at every power of two | 2/3 | 2/3 | Smith form of the cut-line matrix at 4, 8, 16 → a proof, or a power of two where it fails | Selected · deferred |
+| 2 | Failing set from the cut-line identity | 2/3 | 1/3 | Corner walks through the cut lines at 8 and 16 → why they cancel | Alternative · deferred |
+| 3 | Full reach at other sides | 2/3 | 1/3 | Odd first arrivals at the farthest ring, sides to 40 → an argument | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G5 checkpoint (no demonstrated advance). **Assumptions:** none added. The census at sides 49, 50 and 64 is still running in the background (FULL-REACH-PROOF-S1), and I'll fold it in when it finishes. Commits 752cbe7fb and 689454586. Next I'm starting the tie law.

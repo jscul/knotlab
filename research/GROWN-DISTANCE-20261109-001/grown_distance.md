@@ -142,7 +142,7 @@ balls are read exactly, or at the insertion that breaks persistence.
 
 ## Final report as sent
 
-Sent to the owner on 2026-11-09 at 19:42 UTC and copied here verbatim.
+Sent to the owner on 2026-11-09 at 19:40 UTC and copied here verbatim.
 
 **Distance in a grown network (B19) is closed and published.** The grown torus reads distance with freezing at every stage. Without freezing, only its first stage reads it. ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROWN-DISTANCE-20261109-001/grown_distance.md))
 

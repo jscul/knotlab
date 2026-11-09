@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PLANE-PLAIN-20261109-001A-E001",
+  "ticket": "PLANE-PLAIN-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Beyond the tori of the three regular lattices, which GROW-PLAIN-20261109-001B rules out, is there a periodic plane tiling whose tori are networks of persistent contacts and could read their distance plainly? Which contacts of the Archimedean and Laves tilings built from the regular ones persist, and is a flip the reason?",
+  "public_inputs": {
+    "library": "tiling_lib.py in this folder, on PLAIN-TIME-20261108-001A's plain_lib and loopnet_lib.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Thirteen periodic tilings: square, triangular, honeycomb; kagome 3.6.3.6 = medial of honeycomb; 4.8.8 = truncated square; 3.12.12 = truncated honeycomb; 3.4.6.4 = medial of kagome; 4.6.12 = truncated kagome; and the Laves duals of the five. Their tori are built by the same operations from every torus of the base lattice of index 3 to 12 (each lattice once, by its canonical basis), skipping a torus whose base or result joins a ring to itself or has more than 400 contacts. Rings of m contacts hold 2m cells, contacts equally spaced.",
+    "reading": "Persistence of every contact by the parity of its returns at lengths 1 to n + 1 (exact: the return sequence satisfies a recurrence of order at most n, the number of contacts); a flip by building the orientation-preserving map automorphism that sends the contact's dart to its reverse."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypotheses after seeing results",
+    "Dropping tori"
+  ],
+  "primary_observable": "For each tiling: the tori read, the persistent contacts, whether they are exactly the contacts with a flip (H1), and the tori with every contact persistent (H2).",
+  "cheapest_meaningful_control": "Every contact of every torus of the three regular lattices persists and has a flip (the half-turn, GROW-NET-20261108-001A, Theorem 1).",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The summary in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: on every torus read, a contact persists exactly when it has a flip. H2: the tilings whose tori keep every contact persistent are exactly the three regular ones; on every other tiling some contact of every torus read fails. If H2 holds, a two-dimensional network of persistent contacts among these tilings is a torus of a regular lattice, which GROW-PLAIN-20261109-001B, Theorem 2, rules out as a plane read plainly; if some other tiling keeps every contact persistent, its tori are read for the plain first need next.",
+  "stop_rule": "Stop when every torus of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only.",
+    "The snub tilings 3.3.3.3.6 and 3.3.4.3.4, the elongated triangular tiling 3.3.3.4.4 and their duals, k-uniform tilings and non-periodic networks are not read.",
+    "Two-time knots only (A30); equally spaced rings only."
+  ],
+  "feasibility_disclosure": "Before freezing, a pilot read the n x n tori of the base lattices for n = 4, 5 and 6: on every tiling but the three regular ones some contacts failed to persist (all of them on kagome, 3.4.6.4, 4.6.12 and their duals and on the rhombille; those between two rings of different kinds on 4.8.8, 3.12.12, tetrakis and triakis), and on the 4 x 4 tori of square, 4.8.8, tetrakis and kagome the persistent contacts were exactly those with a flip. H1 and H2 were written from that pilot; the census reads every shape of index 3 to 12, most of them not read before."
+}

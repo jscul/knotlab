@@ -1985,7 +1985,7 @@ So network holes come in two kinds:
      other side, and there the eigenvalues come with triangular multiplicities k(k + 1)/2.
    - **Reading.** The failures at powers of two are a boundary effect on two circles. The theorem is not proved, and at other sides the
      spectrum is generic. No lag cutoff was used.
-   - **Next (selected, deferred).** The collapse at every power of two, after the tie law
+   - **Next (selected, taken by `CONE-COLLAPSE-20261109-001`).** The collapse at every power of two, after the tie law
      ([decision note](../research/FULL-REACH-PROOF-20261108-001/full_reach_proof.md)).
 
    **2026-11-09: the first tie of shortest routes** (`TIE-LAW-20261109-001`).
@@ -1999,8 +1999,24 @@ So network holes come in two kinds:
      long way round a ring and the long way round a face tie at m − 1. Elsewhere the tie at τ is read on every cover, to 24.
    - **Reading.** The first tie is a single row of cells, rings along one route and faces along the other: the plain first need reads
      every contact closer than τ on time, on every flat or curved tiling. No lag cutoff was used.
-   - **Next (selected).** The full-reach collapse at every power of two
+   - **Next (selected, taken by `CONE-COLLAPSE-20261109-001`).** The full-reach collapse at every power of two
      ([decision note](../research/TIE-LAW-20261109-001/tie_law.md)).
+
+   **2026-11-09: the cone behind the collapse at powers of two** (`CONE-COLLAPSE-20261109-001`).
+   - **The question.** On the cut-open torus every eigenvalue of the walk is a (2n − 1)-th root of unity exactly at the powers of two
+     (computed to side 64). Why?
+   - **Two particles (proved).** A contact is a pair of positions on one side: at each step one crosses a bond and the other steps
+     right or left, according to the bond crossed.
+   - **Four copies of a cone (proved, every side).** The quarter turn moves every contact, so the spectrum is four copies of the
+     spectrum of the cone the turn folds the box into. At powers of two the cone's spectrum is one return map of the cut line around
+     the corner, a matrix half a side across, and its Smith form is the cone's Jordan data.
+   - **A rigid law (computed to 64; the collapse also at 128).** Each eigenvalue λ appears k(k + 1)/2 times with Jordan blocks
+     2k − 1, 2k − 5, ..., the pattern of a symmetric square in characteristic 0; the count is odd exactly when the trace of 1/λ is 1;
+     and the cones of sides n and 2n agree to degree 2n.
+   - **Reading.** The collapse looks like a two-particle state built from one particle per eigenvalue. That particle has not been
+     found, and the collapse is not proved. No lag cutoff was used.
+   - **Next (selected, pending the coordinator).** The single particle behind the symmetric square
+     ([decision note](../research/CONE-COLLAPSE-20261109-001/cone_collapse.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

@@ -1893,8 +1893,22 @@ So network holes come in two kinds:
    - **Reading.** The plain first need reads distance at every size where a network is one-dimensional at large scale, and freezing is
      needed wherever it is two-dimensional and not tiny. The band law grows a line of loops, not a plane: which way a band goes is not
      said by the law.
-   - **Next (selected, B24).** Growth while running: insert bands into a network as it runs and read its lengths and balls across
-     time ([decision note](../research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
+   - **Next (taken).** Growth while running (next entry)
+     ([decision note](../research/GROWN-DISTANCE-20261109-001/grown_distance.md)).
+
+   **2026-11-09: growth while running** (`GROW-RUN-20261109-001`).
+   - **The question.** If the band law inserts a band while the network runs, its cells new open distinctions, does every contact
+     still bind both of its rings at every lag, reading the whole history as one law?
+   - **What it has not reached is intact (proved).** A ring whose first row has not yet flowed through the contacts the band cuts keeps
+     every binding, and every contact binds the band's own rings at every lag.
+   - **What it has reached mostly breaks (computed).** 68% of the bindings of reached rings fail; over every insertion lag of 13 tubes
+     only lag 0 keeps every contact persistent in every case; the damage spreads from the band one row per row's time length; under
+     continual growth only the newest band stays bound. No lag cutoff was used.
+   - **Reading.** A growth event has a past light cone, and the knots across time inside it lapse. The band law's balance belongs to
+     growth between runs (A42, confirmed); a law that grows in time keeps its knots young, or must grow where its influence has not
+     arrived.
+   - **Next (selected).** Growth chosen by the dynamics, where influence has not arrived (B23)
+     ([decision note](../research/GROW-RUN-20261109-001/grow_run.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

@@ -96,8 +96,9 @@ evidence: results and their status come from the records each entry links.
 | [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
 | [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Confirmed |
 | [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Confirmed |
-| [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Assumed |
+| [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Confirmed |
 | [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Assumed |
+| [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Assumed |
 
 ## Entries
 
@@ -1009,7 +1010,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A42 · A grown network is read stage by stage
 
-**Assumed** · 2026-11-09 · scope
+**Confirmed** · 2026-11-09 · scope
 
 - **Statement.** A network grown by a law is read one stage at a time: each stage is a fixed network whose dynamics run from its own
   first row, and its lengths, balls and persistence are read on that network. Growth does not happen while the network runs.
@@ -1025,6 +1026,13 @@ evidence: results and their status come from the records each entry links.
   band into a running 3 × m tube. Persistence lost at the insertion, or lengths that are not the stages' lengths, would overturn this
   reading for a law that grows in time.
 - **History.**
+  - 2026-11-09 · Confirmed for stated reasons by `GROW-RUN-20261109-001`, which ran this entry's cheapest test: a band inserted while
+    the tube runs leaves intact every ring it has not reached and binds its own rings (proved), but 68% of the bindings of the rings it
+    has reached fail, and over every insertion lag of 13 tubes only lag 0 keeps every contact persistent in every case (computed). So
+    the stage reading is the one under which band growth keeps persistence; "every stage balanced" is a property of growth between
+    runs, and a law that grows in time keeps its knots across time only outside each insertion's reach
+    ([growth while running](../research/GROW-RUN-20261109-001/grow_run.md)).
+  - 2026-11-09 · Put under challenge by `GROW-RUN-20261109-001` (backlog B24).
   - 2026-11-09 · Added by `GROWN-DISTANCE-20261109-001`.
 
 ### A43 · Bands are added along the seed loop
@@ -1043,3 +1051,20 @@ evidence: results and their status come from the records each entry links.
   freezing (`GROWN-DISTANCE-20261109-001A`, Theorem 3). A native rule that fixes the direction would replace this default.
 - **History.**
   - 2026-11-09 · Added by `GROWN-DISTANCE-20261109-001`.
+
+### A44 · A band born while the network runs brings new open distinctions
+
+**Assumed** · 2026-11-09 · reading
+
+- **Statement.** When a band is inserted into a network at a lag, its rings' cells and its contacts along the band are new open
+  distinctions from that lag, born as the first row is born at lag 0, and a contact binds a new ring when it depends on those cells.
+  The cut contact's value goes by one of four splits, all of which are read.
+- **Why.** `GROW-RUN-20261109-001` took it by default: a beginning is a knot (`GROWTH-LAW-20261107-001`), and new cells that copied old
+  values would hold no distinction of their own, so no contact could bind the new rings.
+- **Rests on it.** The answer of `GROW-RUN-20261109-001`: the band's rings are always bound, the rings an insertion has not reached are
+  intact, and most bindings of reached rings fail ([growth while running](../research/GROW-RUN-20261109-001/grow_run.md)).
+- **Challenge.** Give the band values the network computes, for instance each new cell the value of the cell it is inserted beside, and
+  read binding to the old rings through them. A birth rule under which inserting while running keeps every contact persistent would
+  replace this default.
+- **History.**
+  - 2026-11-09 · Added by `GROW-RUN-20261109-001`.

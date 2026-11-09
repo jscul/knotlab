@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "FULL-REACH-PROOF-20261108-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up FULL-REACH-20261108-001's direction 1 (the coordinator's go-ahead of 2026-11-08, renewed at the thread's spawn on 2026-11-09): prove that on the n x n torus of rule-60 rings cut open by a ring of cuts each way every uncut contact needs every ring unless n is a power of two of at least 8, or find the first side where the census pattern breaks. Continues the in-progress note of 2026-11-08 (research/FULL-REACH-PROOF-20261108-draft/, commits de223fb38 and b070f2f72) and keeps its three lemmas (mirror duality, four layers, invertible walk). Readings exact; census-only claims marked.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FULL-REACH-PROOF-20261108-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09 (Inconclusive: the theorem is not proved): on the cut-open n x n torus the walk plus its transpose is T (x) T, the quarter turn commutes with it and the mirror and diagonal reflections transpose it (proved); the walk is the uncut torus walk with the two cut lines deleted, and at powers of two the uncut walk dies, so the whole spectrum is one 2n x 2n polynomial determinant on the cut lines (proved); a Chebyshev transfer identity gives two steps' characteristic polynomial at every side, and full reach is immediate where a layer is a field (sides 3, 5, 7, 11) (proved); every eigenvalue is a (2n - 1)-th root of unity exactly at 4, 8, 16, 32 and 64 among sides 3 to 64, with multiplicities k(k + 1)/2 (computed). Census stage of the stress test (sides 49, 50, 64) pending. Recommendation Continue, selected #1 (the collapse at every power of two), deferred while the tie-law epic runs first.",
+  "status_class": "complete",
+  "stop_rule": "Stop with a proof, at the first side where the census pattern breaks, or with the reduction reached and the remaining gap stated.",
+  "title": "Full reach on the cut-open torus: the proof"
+}

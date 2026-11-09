@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FULL-REACH-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "FULL-REACH-PROOF-20261108-001A-P001",
+    "terminal_artifact": "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json"
+  },
+  "id": "FULL-REACH-PROOF-20261108-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that the walk A of the cut-open n x n torus satisfies A + A^T = T (x) T (T the null-boundary path walk on 2n - 1 sites), commutes with the quarter turn and is self-adjoint for the mirror and diagonal pairings, so reach is symmetric under them; that A is the principal submatrix of the side-2n torus walk M on all contacts but the two cut lines, so its walk counts are torus walk counts corrected through a 2n x 2n matrix on the cut lines; that at sides 2^m the torus walk satisfies M^n = 0 and its Green's function on a cut line is the one-dimensional one, so det(I - wA) is that 2n x 2n polynomial determinant; that det(xI - A^2 on h) = det(u_n(y) + u_(n-1)(y) L + R u_(n-1)(y) + R u_(n-2)(y) L), y = xI + T_(n-1), for every n; and compute exactly at which sides 3 to 64 every eigenvalue of A is a (2n - 1)-th root of unity, the Jordan structure at the powers of two to 64, and the ring-level reach census at 49, 50 and 64.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FULL-REACH-PROOF-20261108-001"
+  },
+  "parent": "FULL-REACH-PROOF-20261108-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (by hand; finite claims checked exactly; the collapse and multiplicities computed): on the cut-open n x n torus the walk A satisfies A + A^T = T (x) T, commutes with the quarter turn and is carried to A^T by the mirror and diagonal reflections; A is the uncut torus walk with the two cut lines deleted, so its walk counts are torus counts corrected through a 2n x 2n cut-line matrix R_CC; at powers of two the torus walk dies (M^n = 0), the cut lines carry circle Green's functions and det(I - wA) = det R_CC(w); a transfer identity gives det(xI - A^2 on h) as an (n - 1) x (n - 1) Chebyshev determinant at every n; when A^4's layer polynomial is irreducible of full degree (sides 3, 5, 7, 11) every contact reads every contact. Computed: every eigenvalue is a (2n - 1)-th root of unity exactly at 4, 8, 16, 32, 64 among sides 3 to 64, with multiplicities k(k + 1)/2 there. The full-reach theorem is not proved.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The cut-open torus walk: its symmetries, the torus it comes from, and what is special at powers of two"
+}

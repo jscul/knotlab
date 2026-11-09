@@ -1,0 +1,111 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-PLAIN-20261109-001B-P001",
+  "canonical_id": "GROW-PLAIN-20261109-001B-P001",
+  "kind": "proof",
+  "ticket": "GROW-PLAIN-20261109-001B",
+  "proof": "GROW-PLAIN-20261109-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A single fastest way grows one ring at a time, and only along a line",
+  "status": "Proved",
+  "claim": "On tori of rule-60 rings with equally spaced law-(12,12) contacts: (1) inserting one ring into the twist torus <(2,1),(N,0)>, a local rewiring that cuts the three contacts spanning the gap and adds five, gives <(2,1),(N+1,0)>, so growth by single-ring insertion from 4 rings keeps every contact persistent (a half-turn at every contact) and the plain first need on time at every stage; likewise the triangular torus <(1,-1),(N,0)> from 3 rings (four contacts cut, seven added) and the ladder <(0,2),(n,t)> grown by rungs; (2) every sequence of on-time square, triangular or honeycomb tori of unbounded index eventually holds a ladder, twist or sqrt 3 vector, so its ring balls hold at most 4r + 1 rings: growth that keeps the plain reading through tori grows a line, not a plane.",
+  "dependencies": [
+    "GROW-NET-20261108-001A",
+    "GROWN-DISTANCE-20261109-001A",
+    "RESCUE-MAP-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A stage of the insertion law that is late or has a contact without a half-turn.",
+    "An insertion that changes rings far from the gap.",
+    "A sequence of on-time tori of unbounded index with superlinear balls."
+  ],
+  "lineage": {
+    "home_scope": "GROW-PLAIN-20261109-001",
+    "epic_path": [
+      "GROW-PLAIN-20261109-001"
+    ],
+    "parents": [
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/proof.md",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/check.py",
+      "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py",
+      "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json",
+      "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/proof.md",
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json",
+      "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/proof.md",
+      "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/manifest.json": "b858d086f9e5ece9f0b020b8ebd6f49e2cf8f2da50d589d91d091f23f601d170",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/proof.md": "1455c89959b6e4c26eebd5666a2678bc11ca12073b6b98ef32e402e028bca62e",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/check.py": "392a1d89b1ca0b16da540c1d6e647de66eea3fe238ca8db49407d024ad2c95b3",
+    "proofs/RESCUE-MAP-20261109-001A/RESCUE-MAP-20261109-001A-P001_short_loops_rescue/rescue_lib.py": "ebfbeab71dcb0568c0f4445750aa719d096daba48c8d6165ace5705575a855fe",
+    "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/manifest.json": "c99a5ae475f4e02c7f5c09974990c7bfe5a810a0b6593e2037319f1056615fae",
+    "proofs/GROWN-DISTANCE-20261109-001A/GROWN-DISTANCE-20261109-001A-P001_the_grown_torus_reads_distance_plainly_only_as_a_ladder/proof.md": "44f0d0f3327766b0dd7cf4157b276df5d58d27fa24a29bbdbd9dedacdbf2f45b",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/manifest.json": "71121891197b547cc36d05bbb54e247377ad2e6d645671eaa91d8345f02ffee7",
+    "proofs/GROW-NET-20261108-001A/GROW-NET-20261108-001A-P001_bands_grow_single_rings_do_not/proof.md": "5c1f16d6f18ab9574017bd1389897dbb1f9fbe1df7893ab5314cce68c622c6c7",
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/manifest.json",
+    "identity": "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/identity.json",
+    "proof": "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/proof.md",
+    "result": "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/result.json",
+    "check": "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line/check.py",
+    "directory": "proofs/GROW-PLAIN-20261109-001B/GROW-PLAIN-20261109-001B-P001_one_ring_at_a_time_along_a_line"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Tori of the square and triangular lattices of rule-60 rings with equally spaced law-(12,12) contacts, grown by local insertion; stages read as fixed networks (A42); two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "proof by hand from RESCUE-MAP-20261109-001A, GROWN-DISTANCE-20261109-001A and GROW-NET-20261108-001A; finite claims checked by check.py",
+    "novelty": "new as far as found: a growth law of networks of rings whose every stage reads its own distance across time without freezing, and the obstruction that through tori it grows only a line"
+  }
+}

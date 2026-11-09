@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-PLAIN-20261109-001A-P001",
+  "canonical_id": "GROW-PLAIN-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-PLAIN-20261109-001A",
+  "proof": "GROW-PLAIN-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The S6 exception is a three-way tie between lifts",
+  "status": "Proved",
+  "claim": "The one on-time regular map of genus at least 2 among 1,762 read in which some ring has no closest contact reached by a single shortest route, a map of S6 of type (6,6), genus 61, 120 rings: its two such rings (exchanged by the half-turn about the target) each have three closest contacts at distance 9 reached by 2, 3 and 2 shortest routes, and every pair of these routes closes a loop that is not null-homologous mod 2, so each route comes from a different lift of the target: the odd count 3 is a three-way tie between lifts.",
+  "dependencies": [
+    "PLAIN-TIME-20261108-001A",
+    "RESCUE-GENUS-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A pair of shortest routes to one of the rings' closest contacts whose loop is null-homologous mod 2."
+  ],
+  "lineage": {
+    "home_scope": "GROW-PLAIN-20261109-001",
+    "epic_path": [
+      "GROW-PLAIN-20261109-001"
+    ],
+    "parents": [
+      "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py",
+      "experiments/RESCUE-GENUS-20261109-001A/RESCUE-GENUS-20261109-001A-E001_closest_routes/contract.json",
+      "artifacts/RESCUE-GENUS-20261109-001A/RESCUE-GENUS-20261109-001A-E001_closest_routes/run/interpretation.md"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "experiments/RESCUE-GENUS-20261109-001A/RESCUE-GENUS-20261109-001A-E001_closest_routes/contract.json": "521d183be6e8581c166806bbe55559f43ad0b41c21f0b8cca0f20b004b7a7972",
+    "artifacts/RESCUE-GENUS-20261109-001A/RESCUE-GENUS-20261109-001A-E001_closest_routes/run/interpretation.md": "f63b23d0c6620b7b9263724fbe4ee9cba265bcb8fb2cb75689c9eef727bbfe38"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-PLAIN-20261109-001A/GROW-PLAIN-20261109-001A-P001_three_lifts/manifest.json",
+    "identity": "proofs/GROW-PLAIN-20261109-001A/GROW-PLAIN-20261109-001A-P001_three_lifts/identity.json",
+    "proof": "proofs/GROW-PLAIN-20261109-001A/GROW-PLAIN-20261109-001A-P001_three_lifts/proof.md",
+    "result": "proofs/GROW-PLAIN-20261109-001A/GROW-PLAIN-20261109-001A-P001_three_lifts/result.json",
+    "check": "proofs/GROW-PLAIN-20261109-001A/GROW-PLAIN-20261109-001A-P001_three_lifts/check.py",
+    "directory": "proofs/GROW-PLAIN-20261109-001A/GROW-PLAIN-20261109-001A-P001_three_lifts"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "One orientably regular map of S6 of rule-60 rings with equally spaced law-(12,12) contacts; two-time knots only (A30).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-09.",
+    "status": "exact reading by check.py",
+    "novelty": "new as far as found: the parity rescue by an odd tie between lifts, on one map"
+  }
+}

@@ -1,0 +1,293 @@
+{
+ "ticket": "GROW-PLAIN-20261109-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "experiments/PLAIN-TIME-20261108-001A/PLAIN-TIME-20261108-001A-E001_map_census/plain_lib.py": "bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30",
+    "experiments/RESCUE-GENUS-20261109-001A/RESCUE-GENUS-20261109-001A-E001_closest_routes/contract.json": "521d183be6e8581c166806bbe55559f43ad0b41c21f0b8cca0f20b004b7a7972",
+    "artifacts/RESCUE-GENUS-20261109-001A/RESCUE-GENUS-20261109-001A-E001_closest_routes/run/interpretation.md": "f63b23d0c6620b7b9263724fbe4ee9cba265bcb8fb2cb75689c9eef727bbfe38"
+   }
+  },
+  "1_the_map_and_its_two_rings": {
+   "pass": true,
+   "info": {
+    "generating pairs of S6 of type (6, 6) and genus 61 read": 6,
+    "with a ring rescued only by an odd count of several routes": 2,
+    "those pairs give identical readings (one map in the census)": true,
+    "rings": [
+     [
+      38,
+      9,
+      [
+       [
+        228,
+        2
+       ],
+       [
+        282,
+        3
+       ],
+       [
+        351,
+        2
+       ]
+      ]
+     ],
+     [
+      68,
+      9,
+      [
+       [
+        156,
+        2
+       ],
+       [
+        293,
+        2
+       ],
+       [
+        330,
+        3
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  "2_faces_span_and_genus": {
+   "pass": true,
+   "info": {
+    "faces": 120,
+    "rank": 119,
+    "genus": 61
+   }
+  },
+  "3_every_pair_of_routes_runs_round_a_handle": {
+   "pass": true,
+   "info": {
+    "ring 38 contact 228": {
+     "distance": 9,
+     "routes": 2,
+     "every pair round a handle": true,
+     "routes listed": [
+      [
+       228,
+       4,
+       175,
+       95,
+       352,
+       187,
+       160,
+       311,
+       276,
+       0
+      ],
+      [
+       228,
+       4,
+       175,
+       196,
+       304,
+       254,
+       25,
+       139,
+       276,
+       0
+      ]
+     ]
+    },
+    "ring 38 contact 282": {
+     "distance": 9,
+     "routes": 3,
+     "every pair round a handle": true,
+     "routes listed": [
+      [
+       282,
+       72,
+       31,
+       167,
+       341,
+       243,
+       88,
+       311,
+       276,
+       0
+      ],
+      [
+       282,
+       72,
+       31,
+       270,
+       84,
+       129,
+       232,
+       249,
+       324,
+       0
+      ],
+      [
+       282,
+       72,
+       189,
+       172,
+       40,
+       116,
+       160,
+       311,
+       276,
+       0
+      ]
+     ]
+    },
+    "ring 38 contact 351": {
+     "distance": 9,
+     "routes": 2,
+     "every pair round a handle": true,
+     "routes listed": [
+      [
+       351,
+       123,
+       255,
+       28,
+       323,
+       222,
+       74,
+       249,
+       324,
+       0
+      ],
+      [
+       351,
+       123,
+       255,
+       181,
+       135,
+       243,
+       88,
+       311,
+       276,
+       0
+      ]
+     ]
+    },
+    "ring 68 contact 156": {
+     "distance": 9,
+     "routes": 2,
+     "every pair round a handle": true,
+     "routes listed": [
+      [
+       156,
+       6,
+       223,
+       82,
+       290,
+       129,
+       232,
+       249,
+       324,
+       0
+      ],
+      [
+       156,
+       6,
+       223,
+       134,
+       245,
+       312,
+       12,
+       201,
+       324,
+       0
+      ]
+     ]
+    },
+    "ring 68 contact 293": {
+     "distance": 9,
+     "routes": 2,
+     "every pair round a handle": true,
+     "routes listed": [
+      [
+       293,
+       185,
+       313,
+       14,
+       261,
+       174,
+       88,
+       311,
+       276,
+       0
+      ],
+      [
+       293,
+       185,
+       313,
+       120,
+       197,
+       301,
+       74,
+       249,
+       324,
+       0
+      ]
+     ]
+    },
+    "ring 68 contact 330": {
+     "distance": 9,
+     "routes": 3,
+     "every pair round a handle": true,
+     "routes listed": [
+      [
+       330,
+       85,
+       21,
+       239,
+       269,
+       301,
+       74,
+       249,
+       324,
+       0
+      ],
+      [
+       330,
+       85,
+       21,
+       342,
+       73,
+       187,
+       160,
+       311,
+       276,
+       0
+      ],
+      [
+       330,
+       85,
+       127,
+       220,
+       53,
+       106,
+       232,
+       249,
+       324,
+       0
+      ]
+     ]
+    }
+   }
+  },
+  "4_the_half_turn_about_the_target_exchanges_the_two_rings": {
+   "pass": true,
+   "info": {
+    "rings": [
+     38,
+     68
+    ]
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 0.0
+}

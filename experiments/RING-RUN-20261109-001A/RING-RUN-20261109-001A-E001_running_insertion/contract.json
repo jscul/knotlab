@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "RING-RUN-20261109-001A-E001",
+  "ticket": "RING-RUN-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "When one ring is inserted into the twist tube while it runs, by GROW-PLAIN-20261109-001B's rewiring of the three contacts across the gap, which bindings survive? Is the damage confined to the insertion's past light cone, as for bands (GROW-RUN-20261109-001A), and how much of it is there?",
+  "public_inputs": {
+    "library": "twist_lib.py in this folder, on growrun_lib.py of GROW-RUN-20261109-001A and net_lib of SEPARATE-20261108-001A.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Twist tubes of N = 4 to 12 rings at g = 2 and N = 4 to 8 at g = 3 and 4; one ring inserted after ring 0 (every gap is alike by translation) at every lag below the run state's preperiod plus period; splits keep (the three rewired contacts keep their values) and fresh (they are born anew); the new ring's cells and two new contacts are born (A44).",
+    "reading": "growrun_lib.binds_forever after the insertion (exact, through the orbit of each contact's row); a ring is not reached when its footprint at the insertion equals its footprint in the next stage run from lag 0 (GROW-RUN-20261109-001A)."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypotheses after seeing results",
+    "Dropping tubes or lags"
+  ],
+  "primary_observable": "For each split: whether lag 0 is clean on every tube (H1); the number of failing bindings of rings not reached and of the new ring (H2); the share of failing bindings of reached rings (H3); the clean insertion lags.",
+  "cheapest_meaningful_control": "Every stage persists before insertion, and an insertion at lag 0 gives the next stage, which persists (the pilot printed this for N = 5 to 7 at g = 2).",
+  "resource_budget": {
+    "wall_minutes": 10,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The summary in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: an insertion at lag 0 keeps every contact persistent on every tube. H2: no ring the insertion has not reached, and not the new ring, loses a binding (GROW-RUN-20261109-001A's Theorems 1 and 2, whose proofs use only that the insertion changes the rows of the cells round the gap). H3: more than half of the bindings of reached rings fail, as with bands (68%). If H3 fails, single-ring insertion is gentler than a band while running; if it holds, growth must come between runs for rings as for bands.",
+  "stop_rule": "Stop when every tube of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only.",
+    "One insertion per run; repeated insertions are not read.",
+    "Two-time knots only (A30); equally spaced rings only."
+  ],
+  "feasibility_disclosure": "Before freezing, a pilot printed that the twist tubes of 5 to 7 rings at g = 2 persist, that an insertion at lag 0 gives a persistent next stage for both splits, and that the run state of 6 rings at g = 2 has preperiod 4 and period 8. No binding of a reached ring was read."
+}

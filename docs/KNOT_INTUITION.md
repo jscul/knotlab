@@ -1965,8 +1965,20 @@ So network holes come in two kinds:
    - **Reading.** Growth that outruns influence confines every ring to a neighbourhood fixed at its birth, and at the fastest rate to
      itself: the plane is shaped, not connected, while it grows. A grown space that reads its own distance needs growth slow enough for
      influence to keep up.
-   - **Next (selected, B50).** Why doubling keeps every stage balanced; the horizon as a theorem; growth slow enough to read distance
-     ([decision note](../research/GROW-HORIZON-20261109-001/grow_horizon.md)).
+   - **Next (taken, B50).** Why doubling keeps every stage balanced (next entry); the horizon as a theorem; growth slow enough to read
+     distance ([decision note](../research/GROW-HORIZON-20261109-001/grow_horizon.md)).
+
+   **2026-11-09: why doubling keeps every stage balanced** (`DOUBLE-BALANCE-20261109-001`).
+   - **The question.** Why does splitting every ring in four at every lag keep every stage balanced, and what does slower doubling do?
+   - **By isolation (proved).** If nothing outside a ring holds its born cells and its own cells hold them independently, its contacts
+     bind it exactly as they would from a fresh first row. Doubling every lag isolates every ring, and its own cells evolve invertibly, so
+     every stage, a balanced torus, stays balanced at every lag.
+   - **Slower doubling (computed).** Every 2, 4, 6 or 8 lags the rings hear each other from the second doubling on, and a stage is
+     unbalanced by 24 × 24; every 3 lags, by a cancellation particular to one-cell corners, the rings stay isolated and balanced.
+   - **Reading.** While a network grows, its knots across growth and its rings hearing each other exclude each other in every schedule
+     read: the doubling law keeps its knots by keeping its rings apart.
+   - **Next (research directions).** Another birth rule (B51); isolation as necessary (B52)
+     ([decision note](../research/DOUBLE-BALANCE-20261109-001/double_balance.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

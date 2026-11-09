@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "RETURN-DIGITS-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up CONE-COLLAPSE-20261109-001's direction 2 at the coordinator's go-ahead on 2026-11-09: write the (n/2) x (n/2) return map C_s of the cut-open torus at n = 2^m through the dyadic product of the uncut walk's resolvent, find a recursion in m, and use it to prove that every eigenvalue of the cut-open torus walk is a (2n - 1)-th root of unity at every power of two, or find where the recursion fails; follow it into direction 1 (the single particle behind the symmetric square) if it exposes that operator.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RETURN-DIGITS-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09 (Partially successful): the recursion in m is found and proved, and the collapse at powers of two is reduced to one statement. Proved: the cut line's return map at n = 2^m is a one-dimensional operator on F[K]/(K^(n/2)); its reversal is multiplication by the involution eps = W_(h-1) = 1 + sum_j K^(h - h/2^j); without the reversal its eigenvalues are c times the trace-1 elements of GF(n); a two-by-two digit recursion builds it from T_1 = [c]; and det(I - mu A_cone) = mu^(-h) det(sum_(i=0..m) mu^(2^i) C_i), C_0 = S^-1, C_i = N^(h - 2^(i-1)), C_m = I, the shape of the trace of GF(2n), so the collapse holds exactly when that linearized determinant's roots lie in GF(2n), not proved. Computed: 1 + Tr_(GF(2n)) divides the cone polynomial exactly once with a square quotient at sides 4 to 128. Stress run one size past passed (109 s). Recommendation Continue, selected #1 (the roots of the linearized determinant).",
+  "status_class": "complete",
+  "stop_rule": "Stop with a proof of the collapse at every power of two, a power of two where the recursion breaks it, or the recursion proved and the gap stated.",
+  "title": "The return map digit by digit"
+}

@@ -1,0 +1,142 @@
+{
+ "ticket": "RETURN-DIGITS-20261109-001A",
+ "artifact_id": "RETURN-DIGITS-20261109-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (CONE-COLLAPSE-20261109-001A's manifest and library)": {
+   "pass": true,
+   "info": {
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json": "220ceb6c18c74cf54ff51f53bca81468bd38d0512836a37a34e63d06f621d273",
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/collapse_lib.py": "43d32af505197d097bf5de21b03dd30140f75a8e9c12d16f0b9580d11b44fc18"
+   }
+  },
+  "1 Theorem 1: the return map C_s of the torus equals w^(n+1) T_h(w^-2), sides 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": true,
+    "8": true,
+    "16": true,
+    "32": true
+   }
+  },
+  "2 Theorem 2: the reversal is multiplication by eps = W_(h-1) = 1 + sum_j K^(h - h/2^j), eps^2 = 1, h = 1 to 64": {
+   "pass": true,
+   "info": {
+    "1": true,
+    "2": true,
+    "4": true,
+    "8": true,
+    "16": true,
+    "32": true,
+    "64": true
+   }
+  },
+  "3 Theorem 3: det(zI + S_h(c)) = c^h (1 + L_m(z/c)), h = 1 to 32": {
+   "pass": true,
+   "info": {
+    "1": true,
+    "2": true,
+    "4": true,
+    "8": true,
+    "16": true,
+    "32": true
+   }
+  },
+  "4 Theorem 4: T_2h from T_h by the digit recursion (h = 1 to 16), and det(zI + T_2h) = det(z^2 + S_h^2 + c^h z (M S_h + E)) (h = 1 to 4)": {
+   "pass": true,
+   "info": {
+    "T_2 from T_1": true,
+    "T_4 from T_2": true,
+    "T_8 from T_4": true,
+    "T_16 from T_8": true,
+    "T_32 from T_16": true,
+    "det(zI + T_2) = det(z^2 + S^2 + c^h z (MS + E)), h = 1": true,
+    "det(zI + T_4) = det(z^2 + S^2 + c^h z (MS + E)), h = 2": true,
+    "det(zI + T_8) = det(z^2 + S^2 + c^h z (MS + E)), h = 4": true
+   }
+  },
+  "5 Theorem 5: det(mu S^-1 + sum_(i=1..m) mu^(2^i) N^(h - 2^(i-1))) = mu^h det(I - mu A_cone), sides 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": true,
+    "8": true,
+    "16": true,
+    "32": true
+   }
+  },
+  "6 computed: 1 + Tr_(GF(2n))(mu) divides det(I - mu A_cone) exactly once and the quotient is a square, sides 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": {
+     "divides": true,
+     "exactly once": true,
+     "quotient a square": true
+    },
+    "8": {
+     "divides": true,
+     "exactly once": true,
+     "quotient a square": true
+    },
+    "16": {
+     "divides": true,
+     "exactly once": true,
+     "quotient a square": true
+    },
+    "32": {
+     "divides": true,
+     "exactly once": true,
+     "quotient a square": true
+    }
+   }
+  },
+  "7 the stress run (stress_test.json)": {
+   "pass": true,
+   "info": {
+    "Theorem 1 at side 64": {
+     "pass": true
+    },
+    "Theorem 2 at h = 128": {
+     "pass": true
+    },
+    "seconds": 109,
+    "Theorem 3 at h = 64": {
+     "pass": true
+    },
+    "Theorem 4 recursion 32 -> 64": {
+     "pass": true
+    },
+    "Theorem 4 determinant identity at h = 8, 16 (random points of GF(2^16))": {
+     "pass": true,
+     "detail": {
+      "8": {
+       "points": 24,
+       "mismatches": 0
+      },
+      "16": {
+       "points": 24,
+       "mismatches": 0
+      }
+     }
+    },
+    "Theorem 5 and the trace factor at side 64": {
+     "mu-valuation": 32,
+     "degree of the rest": 2016,
+     "equals mu^h det(I - mu A_cone)": true,
+     "1 + Tr divides exactly once": true,
+     "quotient a square": true,
+     "pass": true
+    },
+    "Theorem 5 and the trace factor at side 128": {
+     "mu-valuation": 64,
+     "degree of the rest": 8128,
+     "valuation h, degree n(n-1)/2": true,
+     "agrees with CONE-COLLAPSE-S1's cone polynomial below degree 129": true,
+     "1 + Tr divides exactly once": true,
+     "quotient a square": true,
+     "pass": true
+    },
+    "pass": true
+   }
+  }
+ },
+ "status": "passed"
+}

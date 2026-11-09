@@ -5,7 +5,10 @@
     "CONE-COLLAPSE-20261109-001A"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "accepted_artifact_id": "RETURN-DIGITS-20261109-001A-P001",
+    "terminal_artifact": "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/manifest.json"
+  },
   "id": "RETURN-DIGITS-20261109-001A",
   "kind": "ticket",
   "legacy": {},
@@ -16,8 +19,8 @@
   },
   "parent": "RETURN-DIGITS-20261109-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Proved 2026-11-09 (by hand, with finite checks; pre-registered in aaa3e7be3): at n = 2^m the cut-open torus's return map is one-dimensional, C_s = w^(n+1) T_h(w^-2) on F[K]/(K^h) in the ball basis; its reversal is multiplication by the involution eps = W_(h-1) = 1 + sum_j K^(h - h/2^j); without the reversal the eigenvalues are c times the trace-1 elements of GF(n); the digit recursion builds S_2h and eps_2h from S_h and eps_h (two-by-two blocks, from T_1 = [c]), with det(zI + T_2h) = det(z^2 + S_h^2 + c^h z (eps_h S_h + E)); and the cone polynomial is a linearized determinant, det(I - mu A_cone) = mu^(-h) det(sum_(i=0..m) mu^(2^i) C_i), C_0 = S^-1, C_i = N^(h - 2^(i-1)), C_m = I, the shape of the trace of GF(2n). Computed: 1 + Tr_(GF(2n)) divides the cone polynomial exactly once with a square quotient (sides 4 to 32; 64 in the stress run). The registered target, the collapse at every power of two, is not proved: it is now the statement that the linearized determinant's roots lie in GF(2n).",
+  "status_class": "proved",
   "stop_rule": "",
   "title": "A one-dimensional return map and its digit recursion"
 }

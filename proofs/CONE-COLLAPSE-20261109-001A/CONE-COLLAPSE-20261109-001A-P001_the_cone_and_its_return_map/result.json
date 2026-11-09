@@ -1,0 +1,424 @@
+{
+ "ticket": "CONE-COLLAPSE-20261109-001A",
+ "artifact_id": "CONE-COLLAPSE-20261109-001A-P001",
+ "checks": {
+  "0 dependency bound by hash (FULL-REACH-PROOF-20261108-001A's manifest)": {
+   "pass": true,
+   "info": {
+    "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0"
+   }
+  },
+  "1 Theorem 1: A = T_e (x) R + T_o (x) L = L (x) T_e + R (x) T_o on the contacts, sides 2 to 16": {
+   "pass": true,
+   "info": []
+  },
+  "2 Theorem 2: the quarter turn is free and commutes with A, (rho + 1)^j has rank (4 - j) T, and charpoly(A) = charpoly(A_cone)^4, sides 2 to 12 (the last at 2 to 8)": {
+   "pass": true,
+   "info": {
+    "2": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      3,
+      2,
+      1,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "3": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      9,
+      6,
+      3,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "4": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      18,
+      12,
+      6,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "5": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      30,
+      20,
+      10,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "6": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      45,
+      30,
+      15,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "7": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      63,
+      42,
+      21,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "8": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      84,
+      56,
+      28,
+      0
+     ],
+     "charpoly(A) = charpoly(A_cone)^4": true
+    },
+    "9": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      108,
+      72,
+      36,
+      0
+     ]
+    },
+    "10": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      135,
+      90,
+      45,
+      0
+     ]
+    },
+    "11": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      165,
+      110,
+      55,
+      0
+     ]
+    },
+    "12": {
+     "free": true,
+     "commutes": "True",
+     "ranks of (rho + 1)^j": [
+      198,
+      132,
+      66,
+      0
+     ]
+    }
+   }
+  },
+  "3 Theorem 3: at sides 2, 4, 8, 16 the cut-line blocks satisfy G = G', R_C2C1 = HJ, H = JHJ, G^-1 = I + w^2 K, CJ = JC; det(I - w A_cone) = det(I + C_s) (4, 8, 16) and det(I - wA) = det(I + C)^2 = det(I + C_s)^4 (4, 8)": {
+   "pass": true,
+   "info": {
+    "2": {
+     "G = G' (the two cut lines' blocks)": true,
+     "R_C2C1 = H J": true,
+     "H = J H J": true,
+     "G (I + w^2 K) = I": true,
+     "C J = J C": true,
+     "C = w C'(w^2) (odd entries)": true
+    },
+    "4": {
+     "G = G' (the two cut lines' blocks)": true,
+     "R_C2C1 = H J": true,
+     "H = J H J": true,
+     "G (I + w^2 K) = I": true,
+     "C J = J C": true,
+     "C = w C'(w^2) (odd entries)": true,
+     "det(I + C_s) = det(I - w A_cone)": true,
+     "det(I - wA) = det(I + C)^2": true,
+     "det(I + C) = det(I + C_s)^2": true
+    },
+    "8": {
+     "G = G' (the two cut lines' blocks)": true,
+     "R_C2C1 = H J": true,
+     "H = J H J": true,
+     "G (I + w^2 K) = I": true,
+     "C J = J C": true,
+     "C = w C'(w^2) (odd entries)": true,
+     "det(I + C_s) = det(I - w A_cone)": true,
+     "det(I - wA) = det(I + C)^2": true,
+     "det(I + C) = det(I + C_s)^2": true
+    },
+    "16": {
+     "G = G' (the two cut lines' blocks)": true,
+     "R_C2C1 = H J": true,
+     "H = J H J": true,
+     "G (I + w^2 K) = I": true,
+     "C J = J C": true,
+     "C = w C'(w^2) (odd entries)": true,
+     "det(I + C_s) = det(I - w A_cone)": true
+    }
+   }
+  },
+  "4 the Smith form of I + C_s(w) at sides 4, 8, 16 is the cone's Jordan data": {
+   "pass": true,
+   "info": {
+    "4": {
+     "nontrivial invariant factors": 1,
+     "match the Jordan blocks": true,
+     "degrees": [
+      6
+     ]
+    },
+    "8": {
+     "nontrivial invariant factors": 2,
+     "match the Jordan blocks": true,
+     "degrees": [
+      2,
+      26
+     ]
+    },
+    "16": {
+     "nontrivial invariant factors": 3,
+     "match the Jordan blocks": true,
+     "degrees": [
+      1,
+      25,
+      94
+     ]
+    }
+   }
+  },
+  "5 computed: at sides 4 to 64 every eigenvalue of the cone is a (2n - 1)-th root of unity, each with multiplicity k(k + 1)/2 and Jordan blocks 2k - 1, 2k - 5, ..., the multiplicity odd exactly when Tr(1/lambda) = 1": {
+   "pass": true,
+   "info": {
+    "4": {
+     "cone dimension": 6,
+     "accounted by (2n - 1)-th roots of unity": 6,
+     "classes (coset: k)": {
+      "0": 2,
+      "1": 1,
+      "3": 0
+     },
+     "triangular": true,
+     "Jordan blocks 2k - 1, 2k - 5, ...": true,
+     "parity = Tr(1/lambda)": true
+    },
+    "8": {
+     "cone dimension": 28,
+     "accounted by (2n - 1)-th roots of unity": 28,
+     "classes (coset: k)": {
+      "0": 0,
+      "1": 2,
+      "3": 1,
+      "5": 3,
+      "7": 0
+     },
+     "triangular": true,
+     "Jordan blocks 2k - 1, 2k - 5, ...": true,
+     "parity = Tr(1/lambda)": true
+    },
+    "16": {
+     "cone dimension": 120,
+     "accounted by (2n - 1)-th roots of unity": 120,
+     "classes (coset: k)": {
+      "0": 5,
+      "1": 3,
+      "3": 4,
+      "5": 1,
+      "7": 1,
+      "11": 2,
+      "15": 0
+     },
+     "triangular": true,
+     "Jordan blocks 2k - 1, 2k - 5, ...": true,
+     "parity = Tr(1/lambda)": true
+    },
+    "32": {
+     "cone dimension": 496,
+     "accounted by (2n - 1)-th roots of unity": 496,
+     "classes (coset: k)": {
+      "0": 4,
+      "1": 2,
+      "3": 1,
+      "5": 6,
+      "7": 0,
+      "9": 7,
+      "11": 3,
+      "13": 2,
+      "15": 4,
+      "21": 5,
+      "23": 5,
+      "27": 3,
+      "31": 0
+     },
+     "triangular": true,
+     "Jordan blocks 2k - 1, 2k - 5, ...": true,
+     "parity = Tr(1/lambda)": true
+    },
+    "64": {
+     "cone dimension": 2016,
+     "accounted by (2n - 1)-th roots of unity": 2016,
+     "classes (coset: k)": {
+      "0": 6,
+      "1": 2,
+      "3": 5,
+      "5": 1,
+      "7": 4,
+      "9": 8,
+      "11": 0,
+      "13": 3,
+      "15": 6,
+      "19": 1,
+      "21": 10,
+      "23": 9,
+      "27": 1,
+      "29": 7,
+      "31": 4,
+      "43": 5,
+      "47": 7,
+      "55": 4,
+      "63": 0
+     },
+     "triangular": true,
+     "Jordan blocks 2k - 1, 2k - 5, ...": true,
+     "parity = Tr(1/lambda)": true
+    }
+   }
+  },
+  "6 computed: tr(A_cone^j) = 1 exactly when j is a power of two mod 2n - 1, for j = 1 to 2n - 1, sides 4 to 64": {
+   "pass": true,
+   "info": {
+    "4": {
+     "j checked": 7,
+     "mismatches": []
+    },
+    "8": {
+     "j checked": 15,
+     "mismatches": []
+    },
+    "16": {
+     "j checked": 31,
+     "mismatches": []
+    },
+    "32": {
+     "j checked": 63,
+     "mismatches": []
+    },
+    "64": {
+     "j checked": 127,
+     "mismatches": []
+    }
+   }
+  },
+  "7 computed: det(I - w A_cone) at sides n and 2n agree below degree 2n and differ at degree 2n, n = 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": {
+     "first differing degree of P_n and P_2n": 8
+    },
+    "8": {
+     "first differing degree of P_n and P_2n": 16
+    },
+    "16": {
+     "first differing degree of P_n and P_2n": 32
+    },
+    "32": {
+     "first differing degree of P_n and P_2n": 64
+    },
+    "P_64 below degree 64": [
+     0,
+     1,
+     3,
+     6,
+     8,
+     10,
+     14,
+     15,
+     16,
+     17,
+     18,
+     21,
+     28,
+     30,
+     34,
+     37,
+     38,
+     40,
+     45,
+     46,
+     47,
+     48,
+     51,
+     52,
+     53,
+     55,
+     60,
+     61,
+     63
+    ]
+   }
+  },
+  "8 computed: det(z + C_s) = sum e_j z^(h - j) with e_1 = w + w^3, val e_j = j(2j - 1), e_h = w^(n(n-1)/2) and e_(h-1) = w^((h-1)(2h-3)) (sum_(i<m) w^(2^i - 1))^2, sides 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": {
+     "e_1 = w + w^3": true,
+     "e_j has valuation j(2j - 1)": true,
+     "e_j / w^j is a square": true,
+     "e_h = w^(n(n - 1)/2)": true,
+     "e_(h-1) = w^((h-1)(2h-3)) (sum_(i<m) w^(2^i - 1))^2": true
+    },
+    "8": {
+     "e_1 = w + w^3": true,
+     "e_j has valuation j(2j - 1)": true,
+     "e_j / w^j is a square": true,
+     "e_h = w^(n(n - 1)/2)": true,
+     "e_(h-1) = w^((h-1)(2h-3)) (sum_(i<m) w^(2^i - 1))^2": true
+    },
+    "16": {
+     "e_1 = w + w^3": true,
+     "e_j has valuation j(2j - 1)": true,
+     "e_j / w^j is a square": true,
+     "e_h = w^(n(n - 1)/2)": true,
+     "e_(h-1) = w^((h-1)(2h-3)) (sum_(i<m) w^(2^i - 1))^2": true
+    },
+    "32": {
+     "e_1 = w + w^3": true,
+     "e_j has valuation j(2j - 1)": true,
+     "e_j / w^j is a square": true,
+     "e_h = w^(n(n - 1)/2)": true,
+     "e_(h-1) = w^((h-1)(2h-3)) (sum_(i<m) w^(2^i - 1))^2": true
+    }
+   }
+  },
+  "9 the stress run at side 128 (stress_test.json)": {
+   "pass": null,
+   "info": {
+    "pending (CONE-COLLAPSE-S1)": true,
+    "stages done": {
+     "1 collapse, traces, stability, return map": true
+    }
+   }
+  }
+ },
+ "status": "passed"
+}

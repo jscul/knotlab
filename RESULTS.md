@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**265 current results** and 5 superseded ones, from 210 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**266 current results** and 5 superseded ones, from 211 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 39 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 40 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 210 epics with their closures
+- [Epics](#epics): all 211 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -130,6 +130,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
   Written as its space-time law, a deterministic process is a static law on its trajectories, and its knots joining a cell's value after T steps to the first row are exactly that value with the minimally decisive sets of two or more past cells: the sets that, set suitably, fix the future value while no smaller set does. A single deciding cell gives a tie. A nonconstant future value has no knot across time exactly when it is a single conjunction or disjunction of literals, so a process remembers its past only pairwise exactly then. A linear rule with polynomial p has one two-time knot per lag, the support of p^T plus the cell, with |supp p| + 1 places at every lag 2^k; through intermediate rows Ledrappier's law gives 2 + w(T) inside the light cone for T <= 6, and the least knot leaves the light cone at T = 7. In one step of Life the knots are the 70 sets of four neighbours, and the cell's own present is in none.
   *Qualification pending: the third sentence holds for knots joining a future value to the first row. Through intermediate rows a process whose every future value is an AND can still knot two times: rule 128 never shows 1 0 1 after a step, so x(1, 1) and x(2, 4) on force x(1, 2) on, and rules 136 and 160 do the same (see the correction in the TIME-KNOTS-20261107-001 decision note).*
   [proof P001](proofs/TIME-KNOTS-20261107-001A/TIME-KNOTS-20261107-001A-P001_knots_across_time_are_minimal_decisive_sets/proof.md), [epic closure](proofs/TIME-KNOTS-20261107-001Z/TIME-KNOTS-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · The cut-open torus's spectrum is four copies of a cone's, and at powers of two one return map's** (`CONE-COLLAPSE-20261109-001-D001`).
+  The cut-open torus's spectrum is four copies of its quarter-turn cone's, and at powers of two the cone's is one return map of the cut line, whose Smith form is the cone's Jordan data. Computed to side 64 (and the collapse at 128), every eigenvalue is a (2n - 1)-th root of unity of multiplicity k(k + 1)/2 with Jordan blocks 2k - 1, 2k - 5, ...; why at every power of two stays open.
+  [proof P001](proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/proof.md), [epic closure](proofs/CONE-COLLAPSE-20261109-001Z/CONE-COLLAPSE-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · At powers of two the cut-open torus's whole spectrum lives on its two cut lines** (`FULL-REACH-PROOF-20261108-001-D001`).
   The cut-open torus's walk is the uncut torus's walk with two lines of contacts deleted; at powers of two the uncut walk dies, so the cut walk's whole spectrum is one 2n x 2n determinant on the cut lines, and every eigenvalue is a (2n - 1)-th root of unity there and at no other side to 64. Whether full reach fails exactly at the powers of two from 8 stays open.
   [proof P001](proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/proof.md), [epic closure](proofs/FULL-REACH-PROOF-20261108-001Z/FULL-REACH-PROOF-20261108-001Z-P001_epic_closure/proof.md)
@@ -1126,6 +1129,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Prove that creation between glue lines sees only the switching class (`SWITCH-PROOF-20261108-001`) | [closure](proofs/SWITCH-PROOF-20261108-001Z/SWITCH-PROOF-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-PROOF-20261108-001/) |
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |
 | 2026-11-08 | Two bits per tile: products of one-bit decorations (`TWO-BIT-20261108-001`) | [closure](proofs/TWO-BIT-20261108-001Z/TWO-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-20261108-001/) |
+| 2026-11-09 | The cone behind the collapse at powers of two (`CONE-COLLAPSE-20261109-001`) | [closure](proofs/CONE-COLLAPSE-20261109-001Z/CONE-COLLAPSE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/CONE-COLLAPSE-20261109-001/) |
 | 2026-11-09 | Does persistence need a flip? (`FLIP-RULE-20261109-001`) | [closure](proofs/FLIP-RULE-20261109-001Z/FLIP-RULE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/FLIP-RULE-20261109-001/) |
 | 2026-11-09 | Growth chosen by the dynamics (`GROW-CHOOSE-20261109-001`) | [closure](proofs/GROW-CHOOSE-20261109-001Z/GROW-CHOOSE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-CHOOSE-20261109-001/) |
 | 2026-11-09 | Grow a single fastest way (`GROW-PLAIN-20261109-001`) | [closure](proofs/GROW-PLAIN-20261109-001Z/GROW-PLAIN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-PLAIN-20261109-001/) |

@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CONE-COLLAPSE-20261109-001A-P001",
+  "canonical_id": "CONE-COLLAPSE-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "CONE-COLLAPSE-20261109-001A",
+  "proof": "CONE-COLLAPSE-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The cut-open torus walk as two particles, its quarter-turn cone, and the return map of the cut line at powers of two",
+  "status": "Proved",
+  "claim": "For the walk A of the n x n torus of rule-60 rings cut open both ways, over GF(2), in doubled coordinates: (1) A = T_e (x) R + T_o (x) L = L (x) T_e + R (x) T_o on the contacts (Kronecker order (Y, X); T_e, T_o the swaps of a side's even and odd bonds, R, L the shifts); (2) the quarter turn acts freely and commutes with A, so det(xI - A) = det(xI - A_cone)^4 for the walk A_cone on its n(n - 1)/2 orbits, at every side; (3) at n = 2^m the uncut walk satisfies M^(2^j) = the sum of the four translations by 2^j for j >= 1, so (I - wM)^-1 = (I + wM) prod_(j=1)^(m-1) (I + w^(2^j) tau_(2^j)); (4) at n = 2^m, with G, H the cut-line blocks, B = G^-1 H = (I + w^2 K) H the first-passage matrix and C = BJ: det(I - wA) = det(I + C)^2 = det(I + C_s)^4 and det(I - w A_cone) = det(I + C_s(w)), C_s the (n/2) x (n/2) action of C on J-symmetric vectors. Computed exactly: the Smith form of I + C_s at 4, 8, 16 is the cone's Jordan data; at 4 to 64 every eigenvalue lambda of the cone is a (2n - 1)-th root of unity of multiplicity k(k + 1)/2 with Jordan blocks 2k - 1, 2k - 5, ..., odd exactly when Tr(1/lambda) = 1; tr(A_cone^j) = 1 exactly when j is a power of two mod 2n - 1; the cone polynomials of n and 2n agree below degree 2n and differ there; det(z + C_s) has e_1 = w + w^3, val e_j = j(2j - 1) and e_(n/2 - 1) = w^((h-1)(2h-3)) (sum_(i<m) w^(2^i - 1))^2. The collapse at every power of two is not proved.",
+  "dependencies": [
+    "FULL-REACH-PROOF-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A side at which A differs from T_e (x) R + T_o (x) L or from L (x) T_e + R (x) T_o on the contacts.",
+    "A side at which the quarter turn has a fixed point or a point of period 2, fails to commute with A, or charpoly(A) != charpoly(A_cone)^4.",
+    "A power of two at which a cut-line block relation fails or det(I - w A_cone) != det(I + C_s).",
+    "A power of two to 64 at which an eigenvalue of the cone is not a (2n - 1)-th root of unity, a multiplicity is not triangular, the Jordan blocks are not 2k - 1, 2k - 5, ..., or the parity differs from Tr(1/lambda).",
+    "A power of two at which the Smith form of I + C_s differs from the cone's Jordan data, the cone polynomials of n and 2n first differ below degree 2n, or the return map's characteristic polynomial breaks the stated form."
+  ],
+  "lineage": {
+    "home_scope": "CONE-COLLAPSE-20261109-001",
+    "epic_path": [
+      "CONE-COLLAPSE-20261109-001"
+    ],
+    "parents": [
+      "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0"
+  },
+  "paths": {
+    "manifest": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json",
+    "identity": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/identity.json",
+    "proof": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/proof.md",
+    "result": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/result.json",
+    "check": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/check.py",
+    "directory": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The square torus of rule-60 rings with equally spaced law-(12, 12) contacts, cut open by a ring of cuts each way (A30, A32, A37, A38); its walk over GF(2). Theorems 1 to 4 are proved; the Smith form, the Jordan and parity laws, the stability and the return map's characteristic polynomial are computed at sides 4 to 64; the collapse at every power of two is open.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-09.",
+    "status": "proof by hand (Theorems 1 to 4) with finite checks; the laws computed exactly to side 64; the stress run at 128: stage 1 passed (the collapse at 128, the traces, stability and the return map's laws), stage 2 (multiplicities and Jordan blocks) pending at closure",
+    "novelty": "new as far as found for this walk; no literature search beyond the ingredients (Schur complements, modules over GF(2)[Z/4], Lucas' theorem, Clebsch-Gordan for sl2)"
+  }
+}

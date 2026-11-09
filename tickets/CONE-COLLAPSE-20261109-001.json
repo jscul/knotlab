@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "CONE-COLLAPSE-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up FULL-REACH-PROOF-20261108-001's direction 1 at the coordinator's go-ahead on 2026-11-09: on the n x n torus of rule-60 rings cut open both ways, every eigenvalue of the walk over GF(2) is a (2n - 1)-th root of unity at sides 4, 8, 16, 32, 64 and at no other side from 3 to 64 (computed). Compute the Smith form of the cut-line matrix at 4, 8, 16, look for a row reduction that holds at every power of two, and prove the collapse at every power of two, or find a power of two where it fails.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CONE-COLLAPSE-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09 (Inconclusive): the collapse at every power of two is not proved. Proved: the cut-open torus walk is two particles on one side, A = T_e (x) R + T_o (x) L; at every side its spectrum is four copies of the spectrum of the cone (the box folded by its free quarter turn); at n = 2^m the uncut walk's resolvent is a product over binary digits and det(I - w A_cone) = det(I + C_s(w)), C_s the (n/2) x (n/2) return map of the cut line around the corner. Computed exactly: the Smith form of I + C_s at 4, 8, 16 is the cone's Jordan data; at 4 to 64 every eigenvalue lambda of the cone is a (2n - 1)-th root of unity of multiplicity k(k + 1)/2 with Jordan blocks 2k - 1, 2k - 5, ... (the pattern of a symmetric square in characteristic 0), odd exactly when Tr(1/lambda) = 1; the cone polynomials of n and 2n agree below degree 2n. Stress run CONE-COLLAPSE-S1 at 128: stage 1 passed (the collapse at 128 exactly, A_cone^(255 * 32) = I, the traces, stability and the return map's laws), stage 2 running. Recommendation Continue, selected #1 (the single particle behind the symmetric square).",
+  "status_class": "complete",
+  "stop_rule": "Stop with a proof of the collapse at every power of two, with a power of two where it fails, or with the reductions proved, the structure computed and the gap stated.",
+  "title": "The cone behind the collapse at powers of two"
+}

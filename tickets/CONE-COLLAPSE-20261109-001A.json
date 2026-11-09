@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FULL-REACH-PROOF-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "CONE-COLLAPSE-20261109-001A-P001",
+    "terminal_artifact": "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json"
+  },
+  "id": "CONE-COLLAPSE-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, for the walk A of the n x n torus of rule-60 rings cut open both ways (over GF(2)): that A is a two-particle walk, A = T_e (x) R + T_o (x) L = L (x) T_e + R (x) T_o on the contacts; that the quarter turn acts freely and commutes with A, so det(I - wA) = det(I - wA_cone)^4 for the walk A_cone on its orbits, at every side; and that at sides 2^m the cone's spectrum is one (n/2) x (n/2) determinant, det(I - wA_cone) = det(I + C_s(w)), C_s the return map of the cut line on the J-symmetric vectors. Compute at 4, 8, 16 the Smith form of I + C_s(w), and at 4 to 64 each root of unity's multiplicity and Jordan blocks on the cone, the parity of the multiplicities, the agreement of the cone polynomials between n and 2n, and the return map's characteristic polynomial; prove the collapse at every power of two if the structure allows.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CONE-COLLAPSE-20261109-001"
+  },
+  "parent": "CONE-COLLAPSE-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (by hand, with finite checks; the laws computed exactly): the cut-open torus walk is two particles on one side, A = T_e (x) R + T_o (x) L = L (x) T_e + R (x) T_o on the contacts; at every side the quarter turn acts freely and commutes with A, so det(xI - A) = det(xI - A_cone)^4 for the walk on its n(n - 1)/2 orbits; at n = 2^m the uncut walk's 2^j-th powers are translations, (I - wM)^-1 = (I + wM) prod (I + w^(2^j) tau_(2^j)), and det(I - w A_cone) = det(I + C_s(w)) with C = (I + w^2 K) H J the cut line's first passage around the corner and C_s its (n/2) x (n/2) action on J-symmetric vectors. Computed: the Smith form of I + C_s at 4, 8, 16 is the cone's Jordan data; at 4 to 64 every eigenvalue of the cone is a (2n - 1)-th root of unity of multiplicity k(k + 1)/2 with Jordan blocks 2k - 1, 2k - 5, ..., odd exactly when Tr(1/lambda) = 1; tr(A_cone^j) = 1 exactly when j is a power of two mod 2n - 1; the cone polynomials of n and 2n agree below degree 2n; the return map's characteristic polynomial has e_1 = w + w^3, val e_j = j(2j - 1). The stress run at 128 (CONE-COLLAPSE-S1): stage 1 passed, the collapse included; stage 2 pending. The collapse at every power of two is not proved.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The cone and its return map"
+}

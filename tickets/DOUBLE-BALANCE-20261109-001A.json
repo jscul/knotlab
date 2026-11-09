@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GROW-HORIZON-20261109-001A",
+    "GROW-NET-20261108-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "DOUBLE-BALANCE-20261109-001A-P001",
+    "terminal_artifact": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json"
+  },
+  "id": "DOUBLE-BALANCE-20261109-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that if at a lag every cell outside ring X holds nothing of X's born cells and X's own cells hold them independently, every contact binds X from then on exactly when it does in the static stage; that doubling every lag meets this at every lag, so with balanced stages every stage stays balanced at every lag; and compute, for doubling every P = 2, 3, 4, 6, 8 lags from the 3 x 3 tube at g = 2, whether rings stay isolated and stages balanced, to 48 x 48.",
+  "ownership": {
+    "root": false,
+    "scope_id": "DOUBLE-BALANCE-20261109-001"
+  },
+  "parent": "DOUBLE-BALANCE-20261109-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-09 (by hand; finite claims checked exactly; slower schedules computed): if no cell outside a ring holds its born cells and its own cells hold them independently, contacts bind it exactly as in the static stage; doubling every lag meets this at every lag, so every stage stays balanced at every lag. Computed: doubling every 2, 4, 6 or 8 lags breaks isolation and balance by 24 x 24; every 3 lags keeps both to 48 x 48.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Doubling every lag keeps every stage balanced; slower doubling does not"
+}

@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "DOUBLE-BALANCE-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B50, given the go-ahead by the coordinator on 2026-11-09 (G1 with G5): prove that the doubling law (every ring of a running network split into a 2 x 2 block at every lag, every contact cut and reborn) keeps every stage balanced in the whole-history reading at every lag, as GROW-ALL-20261109-001 computed to lag 2, and find what slower doubling does. Networks of rule-60 rings with law (12,12) contacts; readings exact.",
+  "ownership": {
+    "root": true,
+    "scope_id": "DOUBLE-BALANCE-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09: the doubling law keeps every stage balanced at every lag, by proof: if no cell outside a ring holds its born cells and its own cells hold them independently, contacts bind it exactly as in the static stage, and doubling every lag isolates every ring while its own cells evolve by a unipotent map. Computed from 3 x 3 at g = 2: doubling every 2, 4, 6 or 8 lags breaks isolation and leaves a stage unbalanced by 24 x 24; every 3 lags keeps both to 48 x 48. Knots across growth and rings hearing each other exclude each other in the schedules read. Recommendation Research directions (another birth rule, B51).",
+  "status_class": "complete",
+  "stop_rule": "Stop at a proof for every lag, or at the lag where balance fails, and at a verdict for doubling every P lags on the sizes read.",
+  "title": "Why doubling keeps every stage balanced"
+}

@@ -1,0 +1,332 @@
+{
+ "ticket": "DOUBLE-BALANCE-20261109-001A",
+ "artifact_id": "DOUBLE-BALANCE-20261109-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "experiments/GROW-CHOOSE-20261109-001A/GROW-CHOOSE-20261109-001A-E001_dynamics_chosen_growth/choose_lib.py": "71e5e8829415d09533a8648fd615cf06b94e767258c383bd8b6624cb510741c4",
+    "research/GROW-ALL-20261109-001/validate.py": "2f66e504c2c146b8d1837ab08f47ecbbb0d19eea871e71dbac6708d8aacfbaf4",
+    "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/manifest.json": "cf2c6a0245a6367f3bd57fa5460dd01db2b2e2d3aa563255d65fd7007af907f0"
+   }
+  },
+  "1 The lemma's hypothesis holds at every doubling lag of doubling every lag (3 x 3 to 48 x 48 and 3 x 4 to 24 x 32 at g = 2, 3 x 3 to 24 x 24 at g = 3), as the theorem says": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 1,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 2,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 3,
+      "side": [
+       48,
+       48
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     }
+    ],
+    "3 x 4, g = 2": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       8
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 1,
+      "side": [
+       12,
+       16
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 2,
+      "side": [
+       24,
+       32
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     }
+    ],
+    "3 x 3, g = 3": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 1,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 2,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     }
+    ]
+   }
+  },
+  "2 The theorem's conclusion: every one of those stages balanced, read through a full cycle": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "3 x 4, g = 2": [
+     true,
+     true,
+     true
+    ],
+    "3 x 3, g = 3": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  "3 Computed: doubling every P lags from 3 x 3 at g = 2 to 48 x 48; isolation and balance at each doubling lag": {
+   "pass": true,
+   "info": {
+    "P = 2": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 2,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 36,
+      "stage balanced": true
+     },
+     {
+      "lag": 4,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 144,
+      "stage balanced": false
+     },
+     {
+      "lag": 6,
+      "side": [
+       48,
+       48
+      ],
+      "rings failing the hypothesis": 576,
+      "stage balanced": false
+     }
+    ],
+    "P = 3": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 3,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 6,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 9,
+      "side": [
+       48,
+       48
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     }
+    ],
+    "P = 4": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 4,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 36,
+      "stage balanced": false
+     },
+     {
+      "lag": 8,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 144,
+      "stage balanced": false
+     },
+     {
+      "lag": 12,
+      "side": [
+       48,
+       48
+      ],
+      "rings failing the hypothesis": 576,
+      "stage balanced": false
+     }
+    ],
+    "P = 6": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 6,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 36,
+      "stage balanced": true
+     },
+     {
+      "lag": 12,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 144,
+      "stage balanced": false
+     },
+     {
+      "lag": 18,
+      "side": [
+       48,
+       48
+      ],
+      "rings failing the hypothesis": 576,
+      "stage balanced": false
+     }
+    ],
+    "P = 8": [
+     {
+      "lag": 0,
+      "side": [
+       6,
+       6
+      ],
+      "rings failing the hypothesis": 0,
+      "stage balanced": true
+     },
+     {
+      "lag": 8,
+      "side": [
+       12,
+       12
+      ],
+      "rings failing the hypothesis": 36,
+      "stage balanced": false
+     },
+     {
+      "lag": 16,
+      "side": [
+       24,
+       24
+      ],
+      "rings failing the hypothesis": 144,
+      "stage balanced": false
+     },
+     {
+      "lag": 24,
+      "side": [
+       48,
+       48
+      ],
+      "rings failing the hypothesis": 576,
+      "stage balanced": false
+     }
+    ]
+   }
+  }
+ },
+ "status": "passed"
+}

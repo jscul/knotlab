@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**270 current results** and 5 superseded ones, from 215 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**271 current results** and 5 superseded ones, from 216 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 44 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 45 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 215 epics with their closures
+- [Epics](#epics): all 216 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -133,6 +133,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-09 · The cut-open torus's spectrum is four copies of a cone's, and at powers of two one return map's** (`CONE-COLLAPSE-20261109-001-D001`).
   The cut-open torus's spectrum is four copies of its quarter-turn cone's, and at powers of two the cone's is one return map of the cut line, whose Smith form is the cone's Jordan data. Computed to side 64 (and the collapse at 128), every eigenvalue is a (2n - 1)-th root of unity of multiplicity k(k + 1)/2 with Jordan blocks 2k - 1, 2k - 5, ...; why at every power of two stays open.
   [proof P001](proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/proof.md), [epic closure](proofs/CONE-COLLAPSE-20261109-001Z/CONE-COLLAPSE-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · Doubling every lag keeps every stage balanced by isolating the rings; slower doubling does not** (`DOUBLE-BALANCE-20261109-001-D001`).
+  A network that splits every ring in four at every lag keeps every stage balanced, because each ring hears only itself and its own cells evolve invertibly, so its contacts' knots are the static stage's. Doubling more slowly lets rings hear each other and loses balance within a few doublings, so here knots across growth and rings hearing each other exclude each other.
+  [proof P001](proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/proof.md), [epic closure](proofs/DOUBLE-BALANCE-20261109-001Z/DOUBLE-BALANCE-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · At powers of two the cut-open torus's whole spectrum lives on its two cut lines** (`FULL-REACH-PROOF-20261108-001-D001`).
   The cut-open torus's walk is the uncut torus's walk with two lines of contacts deleted; at powers of two the uncut walk dies, so the cut walk's whole spectrum is one 2n x 2n determinant on the cut lines, and every eigenvalue is a (2n - 1)-th root of unity there and at no other side to 64. Whether full reach fails exactly at the powers of two from 8 stays open.
   [proof P001](proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/proof.md), [epic closure](proofs/FULL-REACH-PROOF-20261108-001Z/FULL-REACH-PROOF-20261108-001Z-P001_epic_closure/proof.md)
@@ -1143,6 +1146,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-08 | Does native creation see only the switching class? (`SWITCH-READ-20261108-001`) | [closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/SWITCH-READ-20261108-001/) |
 | 2026-11-08 | Two bits per tile: products of one-bit decorations (`TWO-BIT-20261108-001`) | [closure](proofs/TWO-BIT-20261108-001Z/TWO-BIT-20261108-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-20261108-001/) |
 | 2026-11-09 | The cone behind the collapse at powers of two (`CONE-COLLAPSE-20261109-001`) | [closure](proofs/CONE-COLLAPSE-20261109-001Z/CONE-COLLAPSE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/CONE-COLLAPSE-20261109-001/) |
+| 2026-11-09 | Why doubling keeps every stage balanced (`DOUBLE-BALANCE-20261109-001`) | [closure](proofs/DOUBLE-BALANCE-20261109-001Z/DOUBLE-BALANCE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/DOUBLE-BALANCE-20261109-001/) |
 | 2026-11-09 | Does persistence need a flip? (`FLIP-RULE-20261109-001`) | [closure](proofs/FLIP-RULE-20261109-001Z/FLIP-RULE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/FLIP-RULE-20261109-001/) |
 | 2026-11-09 | Growth by every allowed cut at once (`GROW-ALL-20261109-001`) | [closure](proofs/GROW-ALL-20261109-001Z/GROW-ALL-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-ALL-20261109-001/) |
 | 2026-11-09 | Growth chosen by the dynamics (`GROW-CHOOSE-20261109-001`) | [closure](proofs/GROW-CHOOSE-20261109-001Z/GROW-CHOOSE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-CHOOSE-20261109-001/) |

@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "DOUBLE-BALANCE-20261109-001A-P001",
+  "canonical_id": "DOUBLE-BALANCE-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "DOUBLE-BALANCE-20261109-001A",
+  "proof": "DOUBLE-BALANCE-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Doubling every lag keeps every stage balanced; slower doubling does not",
+  "status": "Proved",
+  "claim": "For running networks of rule-60 rings with law (12,12) contacts read as one space-time law: if at a lag no cell outside a ring X holds a part of X's born cells and X's own cells hold them independently, every contact binds X from then on exactly as in the static stage. Under the doubling law at every lag this holds for every ring at every lag (isolation, and a unipotent evolution of each ring's own cells), so every stage, a square torus with sides at least 3, is balanced at every lag. Computed: doubling every 2, 4, 6 or 8 lags from the 3 x 3 tube at g = 2 breaks isolation from the second doubling and leaves a stage unbalanced by 24 x 24; every 3 lags keeps both, to 48 x 48.",
+  "dependencies": [
+    "GROW-HORIZON-20261109-001A",
+    "GROW-NET-20261108-001A",
+    "LOOP-NET-20261108-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A doubling lag of the every-lag schedule at which a ring fails the lemma's hypothesis, or an unbalanced stage."
+  ],
+  "lineage": {
+    "home_scope": "DOUBLE-BALANCE-20261109-001",
+    "epic_path": [
+      "DOUBLE-BALANCE-20261109-001"
+    ],
+    "parents": [
+      "experiments/GROW-CHOOSE-20261109-001A/GROW-CHOOSE-20261109-001A-E001_dynamics_chosen_growth/choose_lib.py",
+      "research/GROW-ALL-20261109-001/validate.py",
+      "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/GROW-CHOOSE-20261109-001A/GROW-CHOOSE-20261109-001A-E001_dynamics_chosen_growth/choose_lib.py": "71e5e8829415d09533a8648fd615cf06b94e767258c383bd8b6624cb510741c4",
+    "research/GROW-ALL-20261109-001/validate.py": "2f66e504c2c146b8d1837ab08f47ecbbb0d19eea871e71dbac6708d8aacfbaf4",
+    "proofs/GROW-HORIZON-20261109-001A/GROW-HORIZON-20261109-001A-P001_while_it_doubles_every_lag_no_ring_hears_another/manifest.json": "cf2c6a0245a6367f3bd57fa5460dd01db2b2e2d3aa563255d65fd7007af907f0"
+  },
+  "paths": {
+    "manifest": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json",
+    "identity": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/identity.json",
+    "proof": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/proof.md",
+    "result": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/result.json",
+    "check": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/check.py",
+    "directory": "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The doubling law on square tubes of rule-60 rings with law (12,12) contacts; whole-history binding (A30, A32); born cells open (A44); declared rings (A45). Slower schedules computed at g = 2 to 48 x 48.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-09.",
+    "status": "proof by hand (lemma, theorem); finite claims checked by check.py; slower schedules computed (check 3)",
+    "novelty": "known-with-delta"
+  }
+}

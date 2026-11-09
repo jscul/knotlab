@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROW-HEAR-20261109-001A-E001",
+  "ticket": "GROW-HEAR-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the growing planes that keep every stage balanced while their rings hear each other (open doubling every 2 or 4 lags at g = 3; balance computed to 24 x 24, not proved), how far does an original ring's first row reach in the original lattice's units, which original rings hear it, and how does its ball grow?",
+  "public_inputs": {
+    "library": "GROW-HORIZON-20261109-001A's horizon_lib.py (sha256 80a51929e8873dc754229f71785001f1ad31efa7d973f184228b50fdbb3162b7).",
+    "run": "run.py in this folder, one process.",
+    "family": "From the 3 x 3 tube, open doubling every P lags: (g, P) = (3, 2), (3, 4), and the controls (2, 2), (2, 4), to 96 x 96 rings; the static 3 x 3 torus at g = 3 and 2 for 60 lags.",
+    "reading": "At every lag: the reach of ring (0, 0) (the largest taxicab distance, on the original torus, to a contact needing it), the original rings one of whose own cells depends on its first row (hearing it) with the first lag, and the contacts needing it just before each doubling."
+  },
+  "forbidden_inputs": [
+    "Changing schedules or sizes after seeing results"
+  ],
+  "primary_observable": "The largest reach, the reach before each doubling, and the original rings that ever hear ring (0, 0).",
+  "cheapest_meaningful_control": "The g = 2 runs must reproduce GROW-HORIZON-20261109-001A's check 2 (largest reach 51/64 at P = 2 and 93/64 at P = 4, no original ring hearing); the static g = 3 torus must have every original ring hear ring (0, 0).",
+  "resource_budget": {
+    "wall_minutes": 20,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The four per-run lines.",
+  "decision_or_followup_rule": "Frozen expectations. G1: at g = 3 the reach stops growing in the original units, a horizon, with increments that halve at each doubling, as at g = 2. G2: its radius at g = 3 is below its g = 2 radius at the same P, since a ring crossing takes 2g lags, and no original ring hears ring (0, 0) at P = 2 or 4. G3: inside the horizon the contacts needing ring (0, 0) grow at least fourfold per doubling. If G1 holds the g = 3 growing plane reads a distance only within a horizon, like the g = 2 one, but while keeping every stage balanced (computed); if the reach keeps growing, it is read as a grown plane whose distance is not bounded, and read further.",
+  "stop_rule": "Stop when every run has been read to the size limit.",
+  "nonclaims": [
+    "Exploratory and finite: one tube, two schedules at g = 3, to 96 x 96.",
+    "Balance of these schedules is computed to 24 x 24 (ISOLATION-NEED-20261109-001A), not proved; 48 x 48 pending (ISOLATION-NEED-A2).",
+    "Plain dependence (no freezing); declared rings (A45)."
+  ],
+  "feasibility_disclosure": "Before freezing: GROW-HORIZON-20261109-001A read g = 2 for P = 2 to 8; ISOLATION-NEED-20261109-001A found the g = 3 schedules hearing (own cells depending on other rings' born cells) and balanced to 24 x 24. Nothing of their reach was read."
+}

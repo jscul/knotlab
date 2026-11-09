@@ -156,7 +156,7 @@ most two literals each is a **2-CNF** (at most three: a 3-CNF). Every relation
 can be written as a CNF, with one clause of full width for each excluded state.
 On the knotlab command line, `~` stands for ¬, spaces separate the literals of
 a clause, and semicolons separate clauses, so (¬A ∨ c) ∧ (¬B ∨ c) is typed `~A
-c; ~B c`.
+c; ~B c`. Lesson 1.5 draws CNFs in colour.
 
 **Free and constrained.** Two words carry the rest of the guide. A set of
 variables is **free**, or **unconstrained**, when every combination of their
@@ -329,6 +329,35 @@ Two rules look similar but are not the atom:
 
 Lesson 4.2 reads 1 as "exists". Then A, B → c is a requirement: when A and B
 exist, c must exist too, and nothing is required otherwise.
+
+**CNFs in colour.** It helps to give each variable its own colour: 🟥 for A,
+🟦 for B and 🟨 for c. Red and blue stand for the open distinctions of two
+loops and yellow for their contact (lesson 1.4), so each loop enters a CNF as
+one colour. Each clause becomes a row of the colours it mentions, with ¬ before
+a negated one, and every row must hold. A row rules out one combination of its
+own colours, whatever the other colours are, so a clause ties together exactly
+the colours in its row. The three rules of this lesson, one clause to a row:
+
+| Rule | Clause | In colour |
+| --- | --- | --- |
+| the atom | ¬A ∨ ¬B ∨ c | ¬🟥 ∨ ¬🟦 ∨ 🟨 |
+| the AND gate | ¬A ∨ ¬B ∨ c | ¬🟥 ∨ ¬🟦 ∨ 🟨 |
+| | A ∨ ¬c | 🟥 ∨ ¬🟨 |
+| | B ∨ ¬c | 🟦 ∨ ¬🟨 |
+| the common hub | ¬A ∨ c | ¬🟥 ∨ 🟨 |
+| | ¬B ∨ c | ¬🟦 ∨ 🟨 |
+
+The atom's one row holds all three colours, so it ties the three together and
+no pair of them: it binds the two loops. Each of the hub's rows holds two
+colours and ties one loop to the contact. The AND gate has a row of all three,
+but its two-colour rows tie the loops to the contact as well, so one full row
+is not enough. A CNF binds the loops when it rules something out but ties no
+pair of colours. Every row then holds all three colours, since a shorter row
+would tie the colours it holds, and lesson 3.2 shows that rows of two colours
+never bind loops at all. Lesson 2.1 turns this into the knot test, which reads
+the allowed states, never the colours. Lesson 4.4 makes loops out of knots, by
+closing copies of one into a ring in which each copy shares a colour with the
+next.
 
 ### 1.6 Forgetting a variable
 

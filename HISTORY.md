@@ -197,6 +197,10 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 - Every part of a lesson now opens with a bold lead, as most already did, so
   that jscul.dev's contents page can list each lesson's subsections and link
   to them.
+- Lesson 1.5 ends with a short subsection, "CNFs in colour", that draws its
+  three rules with one colour for each variable: a clause ties together exactly
+  the colours in its row, and a CNF binds two loops when it rules something out
+  but ties no pair of colours. Lesson 1.2 points to it.
 - Unchanged: every claim, label, proof reference and command. Cross-references
   are renumbered, and the links from [THEORY.md](THEORY.md),
   [FINDINGS.md](FINDINGS.md), [lean/](lean/), the notes and

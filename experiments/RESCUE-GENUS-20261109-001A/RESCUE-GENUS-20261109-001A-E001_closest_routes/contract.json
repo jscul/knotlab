@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment_id": "RESCUE-GENUS-20261109-001A-E001",
+  "ticket": "RESCUE-GENUS-20261109-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Do on-time regular maps of genus at least 2 read distance plainly by the mechanism that rescues tori (RESCUE-MAP-20261109-001): at every ring, for every contact it does not hold, a closest contact reached by a single shortest route? Does it hold on regular maps of groups the earlier census (PLAIN-TIME-20261108-001A) did not read?",
+  "public_inputs": {
+    "library": "plain_lib.py of PLAIN-TIME-20261108-001A-E001 (sha256 bb6dc72ac1267b8139483d95bcbedddd9f55919481f27f8f8f6c040c605f3e30) and the libraries under it.",
+    "run": "run.py in this folder, 16 worker processes.",
+    "family": "Orientably regular maps of genus at least 2: every generating pair (x, y) of plain_lib's construction, merged by readings as in PLAIN-TIME-20261108-001A-E001. The seen roster is that census's 23 groups (A4 to PSL(2,29)); the new roster is PSL(2,31), PSL(2,37), PGL(2,17), PGL(2,19), SL(2,11), GL(2,7) and S7, none read before.",
+    "reading": "For one target contact: the directed distance and the exact number of shortest routes from every contact, by breadth-first search; for every ring not holding the target, how its closest contacts are reached (all by one route; one by one route and another by several; none by one route, with an odd count or not). A map is on time when every ring is (plain_lib.verdicts)."
+  },
+  "forbidden_inputs": [
+    "Changing the rosters or the hypotheses after seeing results on the new roster",
+    "Dropping maps"
+  ],
+  "primary_observable": "For the new roster: the number of on-time maps of genus at least 2 and, among them, those with a ring none of whose closest contacts is reached by a single route (H1's counterexamples), and the late maps whose diameter is at most their first tie plus 2 (H2's counterexamples). The same for the seen roster, as a replication.",
+  "cheapest_meaningful_control": "The seen roster reproduces PLAIN-TIME-20261108-001A-E001's counts: 706 maps of genus at least 2, 141 on time.",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The two roster summaries in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses on the new roster. H1 (one fastest way): every on-time map has, at every ring and for the target, a closest contact reached by one shortest route; H1 holds if at most one map per roster fails it, as on the seen roster, and fails otherwise. H2 (shallow ties): every map whose diameter is at most its first tie plus 2 is on time. If H1 holds, the rescue on higher genus is the tori's mechanism; if it fails, odd counts of several routes rescue too, and the mechanism differs.",
+  "stop_rule": "Stop when every map of both rosters has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the rosters only.",
+    "Orientably regular maps only; irregular maps of higher genus are not sampled.",
+    "Two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing, a pilot read the seen roster with the same classification and printed: 141 of 706 maps on time; in them 23,187 ring-target pairs had every closest contact reached by one route, 679 (in 82 maps) had a tied closest contact beside a single one, and 2 pairs, in one map of S6 of type (6, 6) and genus 61, had only tied closest contacts with an odd count; every map with diameter at most its first tie plus 2 was on time (19 maps). H1 and H2 were written from that pilot, which is why they are tested on the new roster. The new groups were not read or timed."
+}

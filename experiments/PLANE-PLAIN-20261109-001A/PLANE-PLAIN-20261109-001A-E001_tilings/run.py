@@ -52,6 +52,8 @@ def task(args):
         rot, edges = op(base)
     except ValueError:
         return name, B, "loop"
+    if any(u == w for u, w in edges):
+        return name, B, "loop"   # the contract's skip rule: a result that joins a ring to itself
     if len(edges) > MAX_CONTACTS:
         return name, B, "too large"
     sizes, contacts, n, out, rc = TL.network(rot, edges)

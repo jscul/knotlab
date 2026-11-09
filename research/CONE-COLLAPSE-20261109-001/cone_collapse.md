@@ -76,7 +76,7 @@ Jordan types (kernel dimensions of the nilpotent part, power by power) in charac
 | Claim | One size past | Result |
 | --- | --- | --- |
 | The collapse (4 to 64) | side 128, a cone of 8128 states | pass: A_cone^(255 · 32) = I exactly, so every eigenvalue is a 255-th root of unity |
-| The Jordan law and the parity law (4 to 64) | every class of 255-th roots of unity at 128 | stress test pending (CONE-COLLAPSE-S1, `docs/LONG_RUNNING.md`; the classes read so far pass) |
+| The Jordan law and the parity law (4 to 64) | every class of 255-th roots of unity at 128 | pass: all 35 classes fill the 8128 states with multiplicities k(k + 1)/2 (k up to 15, two classes absent), Jordan blocks 2k − 1, 2k − 5, ... and parity Tr(1/λ) (CONE-COLLAPSE-S1, `docs/LONG_RUNNING.md`, 27 minutes for this stage) |
 | The traces (j to 2n − 1, sides 4 to 64) | j = 1 to 255 at 128 | pass: tr(A_cone^j) = 1 exactly at the powers of two mod 255 |
 | Stability (n = 4 to 32) | the cone polynomials of 64 and 128, to degree 128 | pass: they first differ at degree 128 |
 | The return map's characteristic polynomial (4 to 32) | 64, and the trace at 128 | pass |

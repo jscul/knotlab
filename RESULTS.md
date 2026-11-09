@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**271 current results** and 5 superseded ones, from 216 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**271 current results** and 5 superseded ones, from 217 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 216 epics with their closures
+- [Epics](#epics): all 217 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1156,6 +1156,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Distance in a grown network (`GROWN-DISTANCE-20261109-001`) | [closure](proofs/GROWN-DISTANCE-20261109-001Z/GROWN-DISTANCE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/GROWN-DISTANCE-20261109-001/) |
 | 2026-11-09 | Full reach on honeycomb tori (`HONEY-REACH-20261109-001`) | [closure](proofs/HONEY-REACH-20261109-001Z/HONEY-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/HONEY-REACH-20261109-001/) |
 | 2026-11-09 | Which lattices compose everywhere (`LATTICE-REACH-20261109-001`) | [closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-REACH-20261109-001/) |
+| 2026-11-09 | Learning in handles (`LEARN-HANDLES-20261109-001`) | — | [folder](research/LEARN-HANDLES-20261109-001/) |
 | 2026-11-09 | A plane read plainly beyond tori (`PLANE-PLAIN-20261109-001`) | [closure](proofs/PLANE-PLAIN-20261109-001Z/PLANE-PLAIN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/PLANE-PLAIN-20261109-001/) |
 | 2026-11-09 | Knots read from the last growth event (`REBASE-KNOTS-20261109-001`) | [closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REBASE-KNOTS-20261109-001/) |
 | 2026-11-09 | Large networks persistent without flips (`REROUTE-20261109-001`) | [closure](proofs/REROUTE-20261109-001Z/REROUTE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REROUTE-20261109-001/) |

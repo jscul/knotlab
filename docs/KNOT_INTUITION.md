@@ -2085,8 +2085,25 @@ So network holes come in two kinds:
      `docs/CORRECTIONS.md`).*
    - **Reading.** On a uniform plane only symmetry cancels every return; on small irregular networks counting does. A plane read
      plainly is ruled out among the periodic tilings, not among irregular networks. No lag cutoff was used.
-   - **Next (research directions, none selected).** Large networks persistent without flips (B42); why the parity comes out even
+   - **Next (taken, B43 then B42, next entry).** Large networks persistent without flips (B42); why the parity comes out even
      (B43) ([decision note](../research/FLIP-RULE-20261109-001/flip_rule.md)).
+
+   **2026-11-09: large networks persistent without flips** (`REROUTE-20261109-001`).
+   - **The question.** Small maps persist without a flip. Why does the smallest example's parity come out even, and do large networks
+     keep every contact persistent that way?
+   - **The example is paired (proved).** Two of its contacts send both their arcs to one next contact. Every closed walk passes one, and
+     switching the arc there pairs the walks. Up to six contacts every case is such a pairing or a symmetry of the contact graph; from
+     seven on most cases have neither (computed), and only a parity of cycle families remains.
+   - **Persistence belongs to the automaton (proved).** At these contacts a contact reads one cell of each ring and both rings read it,
+     so nothing in the law says which way a ring continues through it. Exchanging the continuations at any contacts leaves the automaton
+     unchanged, so every contact still persists, and a random exchange leaves no symmetry at all (census, pre-registered).
+   - **Reading plainly belongs to the rings (proved for the square).** The square torus's automaton is late when its cells are grouped
+     into small rings and on time when they are grouped into lines; no grouping into small rings reads its distance plainly.
+   - **Reading.** Persistence never needed a flip because it never saw the rings. How a plane reads its distance depends on how its
+     rings are declared (A45): a declared plane of small rings needs freezing, and what reads plainly is again a line. No lag cutoff was
+     used.
+   - **Next (research directions, none selected).** Rings the law can see (B45); a plane of long rings (B46)
+     ([decision note](../research/REROUTE-20261109-001/reroute.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

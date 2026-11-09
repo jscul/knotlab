@@ -99,6 +99,7 @@ evidence: results and their status come from the records each entry links.
 | [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Confirmed |
 | [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Confirmed |
 | [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Assumed |
+| [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
 
 ## Entries
 
@@ -994,6 +995,10 @@ evidence: results and their status come from the records each entry links.
   observable that counts routes rather than their parity, would make freezing unnecessary there; finding none would confirm this
   reading.
 - **History.**
+  - 2026-11-09 · Reason restated by `REROUTE-20261109-001`: the square torus's automaton reads its distance plainly when its cells are
+    grouped into lines, so whether a network needs freezing depends on its declared rings (A45). On the square contact graph a grouping
+    that reads plainly has at most 64n rings of linear size (proved), so the reason stands for networks of small rings
+    ([large networks persistent without flips](../research/REROUTE-20261109-001/reroute.md)).
   - 2026-11-09 · Confirmation narrowed by `GROWN-DISTANCE-20261109-001` (a correction of the line below, `docs/CORRECTIONS.md`): the
     26 tori are the rotation-invariant ones. Thin tori of every size read distance without freezing too: every square torus whose
     lattice holds (2, 0), the ladders that are the band law's first stage (proved), and the square (2, 1) tubes of one chirality and the
@@ -1078,3 +1083,26 @@ evidence: results and their status come from the records each entry links.
   replace this default.
 - **History.**
   - 2026-11-09 · Added by `GROW-RUN-20261109-001`.
+
+### A45 · Rings are read as declared
+
+**Assumed** · 2026-11-09 · reading
+
+- **Statement.** A network's rings are read as its declaration lists them. At a law-(12, 12) contact the automaton does not say which
+  incoming corner a ring continues on: the contact reads its left neighbour on each ring and both rings read it, so every re-routing of
+  a network is the same cellular automaton. Readings that group cells into rings (a contact needing a ring, the plain first need, freeze
+  lengths, ring graphs and their balls, flips) are read for the declared rings; persistence and every contact-level reading do not
+  depend on them.
+- **Why.** Every network epic since `LOOP-NET-20261108-001` took it by default, building networks from a map's rings.
+  `REROUTE-20261109-001` made it visible: re-routing leaves the automaton unchanged cell by cell, and the square torus's automaton is
+  late read as small rings and on time read as lines ([large networks persistent without flips](../research/REROUTE-20261109-001/reroute.md)).
+- **Rests on it.** The ring-level readings of `PLAIN-TIME-20261108-001`, `DISTANCE-20261108-001` (A41), `RESCUE-MAP-20261109-001`,
+  `RESCUE-GENUS-20261109-001`, `GROW-PLAIN-20261109-001`, `PLANE-PLAIN-20261109-001`, `FLIP-RULE-20261109-001` and
+  `REROUTE-20261109-001`, among them that a plane of rings needs freezing to read its distance.
+- **Challenge.** Make the rings native: give contacts laws that read their two rings differently, so that the automaton fixes how each
+  ring continues, and read whether persistence and the plain reading survive; or read ring-level quantities as invariants of the
+  automaton, over all its groupings. The cheapest test reruns the square torus and its line network with a contact law that tells its
+  rings apart. If persistence then picks out one grouping, the rings become native; if persistence needs laws that cannot tell them
+  apart, ring-level readings stay declarations.
+- **History.**
+  - 2026-11-09 · Added by `REROUTE-20261109-001`.

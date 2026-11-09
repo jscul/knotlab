@@ -81,7 +81,7 @@ Since the epic opened:
 | Broader exploration — G5 | Known alternatives | The even-index mechanism (B30, the coordinator's call); B20, B22, B25, B26, B28, B29, B31 |
 | Long-term goal — G5 Dynamics (question 4) | Capability gained | Plain reading of distance is unique fastest ways, on tori by proof and on higher genus by census |
 
-**Corrections:** none. **Goals:** a G5 checkpoint (capability gained); B27 taken; backlog B32 and B33 added. **Assumptions:** none
+**Corrections:** none. **Goals:** a G5 checkpoint (capability gained); B27 taken; backlog B34 and B35 added. **Assumptions:** none
 added or changed.
 
 - **What the attempt leaves open.** A criterion on the map for keeping a single fastest way at every ring; why the S6 map's odd counts
@@ -105,4 +105,4 @@ added or changed.
 4. **S6.** Payoff 1: one map; Concreteness 3: it is in hand.
 
 **Recommendation.** Research directions, none selected: the coordinator asked to decide on B30 from this report; directions 1 and 3 go to
-the backlog as B32 and B33.
+the backlog as B34 and B35.

@@ -1984,6 +1984,19 @@ So network holes come in two kinds:
      every contact closer than τ on time, on every flat or curved tiling. No lag cutoff was used.
    - **Next (selected).** The full-reach collapse at every power of two
      ([decision note](../research/TIE-LAW-20261109-001/tie_law.md)).
+
+   **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
+   - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of
+     genus at least 2 read it too. Are they rescued the same way?
+   - **Yes, out of sample (census, pre-registered).** On seven groups not read before, every one of the 77 on-time maps (of 1,056) has,
+     at every ring, a closest contact reached by a single shortest route. On the earlier roster one map in 141, of S6 and genus 61,
+     rescues two rings by odd counts of several routes instead.
+   - **Ties beside a single route are harmless.** Most on-time maps have rings with a tied closest contact; another closest contact with
+     one route rescues them.
+   - **Reading.** The plain first need asks only for an odd count, but in practice reading distance plainly means having a unique
+     fastest way. What makes a map keep one at every ring is not yet known beyond tori. No lag cutoff was used.
+   - **Next (research directions, none selected).** Growing a network that keeps a single fastest way (B34); a criterion on the map
+     (B35) ([decision note](../research/RESCUE-GENUS-20261109-001/rescue_genus.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

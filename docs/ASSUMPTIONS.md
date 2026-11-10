@@ -642,7 +642,7 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
-  - 2026-11-10 · Put under challenge by  (backlog B71), a frozen test: the state flips one point between learning
+  - 2026-11-10 · Put under challenge by `MOVING-STATE-20261110-001` (backlog B71), a frozen test: the state flips one point between learning
     steps when the flip does not raise the dissonance weight, on the atom spaces where the fixed-state learner was stuck or frozen.
   - 2026-11-10 · `ATOM-LAYERS-20261110-001` found that A26 is what freezes the genus-2 floor unit (an over-agreeing face offers no learning
     step); its next-steps report selects a challenge of A26, backlog B71, letting the state move ([layers through atoms](../research/ATOM-LAYERS-20261110-001/atom_layers.md)).

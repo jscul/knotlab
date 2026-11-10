@@ -1217,6 +1217,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
-| 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | — | [folder](research/READ-ADDRESS-20261110-001/) |
+| 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |
 | 2026-11-10 | A temporary rise (`RISE-ESCAPE-20261110-001`) | [closure](proofs/RISE-ESCAPE-20261110-001Z/RISE-ESCAPE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RISE-ESCAPE-20261110-001/) |
 

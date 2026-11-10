@@ -109,6 +109,7 @@ evidence: results and their status come from the records each entry links.
 | [A52](#a52--a-grown-handle-is-a-class-forced-torus-atom) | A grown handle is a class-forced torus atom | scope | Assumed |
 | [A53](#a53--nativeness-of-a-board-made-of-names-is-counted-per-name) | Nativeness of a board made of names is counted per name | reading | Assumed |
 | [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Assumed |
+| [A55](#a55--brauns-bit-php-preprint-is-correct) | Braun's bit-PHP preprint is correct | premise | Assumed |
 
 ## Entries
 
@@ -1353,3 +1354,22 @@ evidence: results and their status come from the records each entry links.
   fails, the naming was a hidden drawing; if it holds, the obstruction does not depend on the naming.
 - **History.**
   - 2026-11-10 · Added by `BOARD-DIST-20261110-001`.
+
+### A55 · Braun's bit-PHP preprint is correct
+
+**Assumed** · 2026-11-10 · premise
+
+- **Statement.** The lemmas of Braun's preprint "An exponential lower bound for the bit pigeonhole principle in resolution over
+  parities" (arXiv 2609.23015) hold as stated: the generic criterion (Theorem 9.1, Corollary 9.2), the degree-preserving decoder
+  transfer, the stability of the unary functional system below degree n/2, the matching-moment extension and the binary cube degree
+  drop.
+- **Why.** The preprint is unrefereed, but its main theorem and dependencies are formalized in Lean, and this program's audit
+  (`BPHP-RES-PARITY-AUDIT-20261019-001`) replayed the formalization from source, checked its definitions against standard Res(⊕) and
+  found no gap. The prose proof was not checked line by line.
+- **Rests on it.** `HOLE-CRITERION-COLOURING-20261019-001B` (bit PHP with more pigeons), `SEP-LEFT-20261110-001A` (Theorem 2),
+  `HOLE-SEP-20261110-001A` (Theorem (R)), `KERNEL-FRAC-20261110-001A` (the cap) and `WIDE-LEFT-20261110-001A` (the dag-like Res(⊕) lower
+  bound for the binary left-pigeon principle).
+- **Challenge.** Check that each lemma used above is among the Lean declarations the audit replayed (or replay those that are not), and
+  have the prose of §§3, 4 and 9 read by a Res(⊕) expert; a gap in any of them would reopen the results that rest on it.
+- **History.**
+  - 2026-11-10 · Added by `WIDE-LEFT-20261110-001`, whose bound rests on it.

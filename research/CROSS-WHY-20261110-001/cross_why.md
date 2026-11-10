@@ -111,3 +111,32 @@ G1 and G5 checkpoint (capability gained); B64 taken; sub-goal B89 (reading dista
 
 **Recommendation.** Research directions: #1 is the step toward G1, and a 3/3 recorded as a sub-goal; B55 next meanwhile, as the
 coordinator asked.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 02:42 UTC and copied here verbatim.
+
+**Why crossing breaks balance (B64) is closed and published. There's no lemma, because the premise is false: crossing a territory border doesn't break balance.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/CROSS-WHY-20261110-001/cross_why.md))
+
+- **Crossing isn't the mechanism** (frozen census, exact): a stage fails in one of two ways. Either a ring's own cells stop holding its born cells independently, or what its neighbours heard of it cancels what it holds. Both happen with no crossing at all, at g = 2, 3 and 4.
+- **Uneven schedules cross and keep every knot:** pause once, long enough for neighbouring territories to hear each other, then double quickly. At g = 3, 21 such schedules keep every stage balanced to 48 × 48. In [28, 1, 1], every original ring hears all eight others from lag 8. Two of them were confirmed on the full state. Repeating the pause (every 28 lags) still fails.
+- **Proved:** balance can be read exactly on one territory, and rings born at a doubling never fail.
+- **Pending:** a 96 × 96 stress run (about two hours, in the background).
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: why crossing breaks balance | Successful | No lemma: the premise is false |
+| Local direction: a grown plane that keeps its knots and reads distance | Continue | Reopened on evidence: a pause reads who hears whom, quick doublings keep the knots |
+| Broader exploration: G1 with G5 | Known alternatives | Which runs keep balance; B55; a pause the network chooses |
+| Long-term goal: G1 Space from a law | Capability gained | A local law with a declared schedule grows a plane whose territories hear each other while every stage keeps its knots |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Reading distance while growing (B89) | 3/3 | 2/3 | 5 × 5 tube: a schedule where original rings are heard at distance 1 then 2 with every stage balanced, or where every schedule fails |
+| 2 | Why a run keeps balance | 2/3 | 2/3 | At g = 2 one run is safe exactly when P = 1 or P ≡ 2, 3 (mod 4): prove the period |
+| 3 | Why g = 3 keeps balance (B55) | 2/3 | 2/3 | As recorded |
+| 4 | A pause the network chooses | 2/3 | 1/3 | A native rule for when to double |
+
+**Corrections:** one, Not a block. "Knots or distance while growing, never both" (CROSS-BORDER), "making and reading are two phases" (GROW-STOP) and the "proof pair for the exclusion" (INVERT-STEP) all held only for the uniform schedules we read. It's logged in CORRECTIONS.md with a new lesson (vary a schedule's shape, not just its period), and in knotlab's HISTORY.md. **Goals:** G1/G5 checkpoint (capability gained); B64 taken; sub-goal B89 recorded. **Assumptions:** none.
+
+I recommend #1: it's the direct step toward a grown space that reads its own distance while it grows. As the coordinator asked, I'm starting B55 meanwhile.

@@ -84,3 +84,38 @@ the inputs and wandering, sometimes misses the wrong answer and says yes too soo
 gained); B132 taken; B134 added. **Assumptions:** none new or changed.
 **Basket:** B134 (a probe that is not fooled), B133 (three held inputs), B130 (a probe that is a theorem); taken: B134 as the selected
 next step.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-10:
+
+**B132 is closed. Most of the earlier composite failure was the learner's stall, not depth. Pinned dissonance turns out to be an exact signal of what the memory holds, but using it as credit didn't make a better learner.**
+
+**The stall fix first, re-run exactly on the same frozen test.** Leaves went from 53 of 56 to 55 of 56, and composites from 1 of 16 to 10 of 16. Inexact stops went from 6 to 5, and AND still never stopped. I corrected B120's reading "not through a composite" (Narrowing, logged in docs/CORRECTIONS.md with dated lines). Depth is a cost, not a wall: learned composite gates took about 30 times the steps of leaf gates.
+
+**Credit from pinned dissonance (frozen in two stages).** Every one of the 4,473 lines the learner kept fixed, because their dissonance never walked away, sat in an atom that was acting at that moment. So the memory reads what it holds. As credit, it turned composite gates on more often (5 of 8 against 3 of 8) and in under half the steps, and one size past it learned all 12 composite writes. On S3 and S4 the total didn't rise, though: 40 learned and held against 41, with 9 inexact stops against 5. By the frozen mark, credit misleads, and that is the opposite of what I predicted.
+
+**How often the probe is fooled (computed, not proved).** It was fooled in 5 of 90 writes with the fixed learner, 9 of 60 with credit on S3 and S4, and 5 of 45 on S5. Three of those were acceptances of AND, which self-duality forbids. Every inexact stop is the probe's walk missing a reachable wrong value, and that is now the limiting error.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: credit from pinned dissonance (B132) | **Status:** Partial | stall fixed (composites 1 → 10 of 16); credit is exact as a signal but no better overall |
+| Local direction: learning maps through composites | Continue | reach is shown; the probe's false acceptances limit it |
+| Broader exploration: learning program | Known alternatives | a probe that isn't fooled, three held inputs, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | composite gates learned from examples natively; the memory reads what it holds |
+
+**Next step:** Research directions, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A probe that is not fooled (B134) | 2/3 Substantial | 2/3 Testable | the same frozen tests with longer or restarted clamped walks, re-checking each decided reading from a fresh state → no inexact or AND stop, or a reachable wrong value no walk finds | Selected, awaiting go-ahead |
+| 2 | Three held inputs (B133) | 2/3 Substantial | 2/3 Testable | as recorded | In the basket |
+| 3 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 4 | Credit, settled on more seeds | 1/3 Incremental | 3/3 Ready | rerun both learners with a sturdier probe → credit helps composites, or not | Deferred |
+
+**Corrections:** one, Narrowing: B120's composite failure was mostly the stall.
+**Goals:** G15 checkpoint (capability gained); B132 taken; B134 added.
+**Assumptions:** none new or changed.
+**Basket:** B134 (a probe that is not fooled), B133 (three held inputs), B130; taken: B134 as the selected next step.
+
+The learning note now has the line you asked for: B109's AND is over stored roles, which the law fixes, while self-duality concerns values the world holds. B134 waits for a go-ahead.

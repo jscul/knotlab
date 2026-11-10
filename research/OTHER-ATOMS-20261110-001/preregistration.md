@@ -79,7 +79,7 @@ before it is launched. Assumptions in force: A20, A21, A46, A47, A49, A50; A48 u
 
 ## Addendum, 2026-11-10, after ticket A ran and before ticket D runs
 
-Ticket A ran at 04:35 UTC (34 seconds): P1 and P2 held on all 29 types, and every atom's role was the same on all 60 splices. Reading the
+Ticket A ran at 04:13 UTC (34 seconds): P1 and P2 held on all 29 types, and every atom's role was the same on all 60 splices. Reading the
 result, a by-hand reduction was found (it goes in ticket A's proof): an atom's allowed patterns depend only on its torus and the class read
 from its sides. The constant pair of patterns is excluded exactly when the torus is unsatisfiable in that class, and the six other patterns
 are allowed exactly when the torus is **free** at its point in that class: for each of the point's three sides e, the law with e's sign

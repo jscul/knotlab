@@ -5177,6 +5177,32 @@ So network holes come in two kinds:
    - **Next (parked).** The forcing route on the product that keeps only label defects, 01101/10001 x 10001/00010, with edge
      labels and hub chains, all in the backlog ([decision note](../research/TWO-BIT-20261108-001/two_bit.md)).
 
+   **2026-11-10: the board as distinctions** (`BOARD-DIST-20261110-001`).
+   - **The question.** In every law measured for space the board comes first (A51). The owner asked whether the axes themselves can
+     follow rules, governed by an essentially infinite CNF. Here "these two names are one place" is a distinction of the same CNF as
+     the values: names are the words in x, y and their inverses, and the board's own rules say only that being one place is an
+     equivalence, that it passes to neighbours, and that one place has one value.
+   - **Boards are subgroups (proved, classical).** The boards are exactly the Schreier graphs of the subgroups of the free group: the
+     tree, the plane (when xy and yx are one place), lines, tori, the collapse, and every other.
+   - **No law that names no relation chooses the plane (proved).** Suppose a law's clauses relate names only at the same offset: they
+     say which names are one place, never that a word comes back. If such a law allows an infinite board, it allows the tree. Far
+     from the finitely many places whose views are unique, every view repeats, and compactness unfolds the board into the tree.
+     Such laws can force finite boards, and identity of indiscernibles always makes the board finite.
+   - **One named shape suffices (proved).** The commutator rule, a closing square at every name, with an aperiodic tile law forces
+     exactly the plane.
+   - **Frozen at infinity (proved).** Two boards differ in infinitely many identity distinctions, and off the tree every place holds
+     infinitely many names, so under the source-aware reading no knot involving the board is native.
+   - **The census (computed, exact, frozen).**
+     - **The predictions.** All 1,024 Life-like one-bit laws obey them with no violation.
+     - **What the laws allow.** 768 allow every board, 31 none, and 225 the tree without every board.
+     - **Identity boards.** At radius 1 they are finite, and a plane-like abelian one always has a non-abelian sibling.
+     - **The values can forbid a square.** In 60 laws the square's identity distinction is knotted with the values at 1 and xyX,
+       which the square makes neighbours; in 56 of them the knot is a single clause of three.
+   - **Reading.** Shapes have rules, and the plane's rule is a shape: a law chooses the plane exactly when it names the square. The
+     board a relation-free law always leaves open is the tree, whose balls grow exponentially.
+   - **Next (selected).** Leibniz boards: identity of indiscernibles in the limit, beyond the theorem's reach (sub-goal B111)
+     ([decision note](../research/BOARD-DIST-20261110-001/board_dist.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

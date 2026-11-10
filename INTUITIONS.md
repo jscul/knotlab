@@ -1018,22 +1018,49 @@ rings are declared. The register of assumptions records this default as A51,
 "Places and their neighbours are given before the rules"
 ([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
 
-**The board as distinctions (only an idea).** The owner's idea in full asks for
-more: make "these two names are one place", or "these two places are
-neighbours", a distinction of the same infinite CNF as the cells' values, and
-let one uniform pattern of clauses constrain both. The board would then be part
-of every allowed state, and X and Y would be whatever boards the rules allow or
-force. Nothing about this has been computed yet. The first test recorded for it
-names places by words in two letters, gives each pair of names a distinction
-saying whether they are one place, and asks whether any uniform law on the
-values forces the plane, or whether every law leaves the board free. Related
-ideas elsewhere are quantum graphity (Konopka, Markopoulou and Smolin 2006) and
-the Wolfram model (2020).
+**The board as distinctions.** The owner's idea in full asks for more: make
+"these two names are one place" a distinction of the same infinite CNF as the
+cells' values, and let one uniform pattern of clauses constrain both. Name the
+places by words in two letters, x and y, and their inverses, so that every name
+u has four neighbour names, ux, uy and the two inverse steps. Give each pair of
+names a distinction saying whether they are one place. Three rules make these
+distinctions a board: being one place is an equivalence; it passes to
+neighbours (if u and v are one place, so are ux and vx); and one place has one
+value. *Classical:* the boards are then exactly the Schreier graphs of the
+subgroups of the free group on x and y. When no two names are one place the
+board is the tree, whose balls grow exponentially; when xy and yx always are,
+it is the plane.
+
+- **Rules that name no shape never choose the plane (proved).** Call a law
+  relation-free when its clauses say only which names are one place, never that
+  some word comes back to where it started. If such a law allows any infinite
+  board, it also allows the tree. So it never forces the plane, or any other
+  infinite board. Far from the few places that look unique, every local view
+  repeats, and the views can be unfolded into the tree. Such a law can force a
+  finite board, and the rule "two names that look alike are one place" always
+  makes the board finite
+  ([BOARD-DIST-20261110-001](research/BOARD-DIST-20261110-001/board_dist.md)).
+- **One named shape is enough (proved).** A clause at every name saying that
+  xyx⁻¹y⁻¹ comes back, the closing square, forces exactly the plane when it is
+  joined with tiles that cover the plane but never periodically (the same
+  record).
+- **The values can forbid a square (computed).** In 60 of the 1,024 Life-like
+  one-bit laws the board is bound to the values beyond "one place, one value".
+  Closing the square at a name u makes u and uxyx⁻¹ neighbours. When a 0 must
+  have only 1s around it, they cannot both be 0, so the square's distinction
+  and those two values form one clause of three, a knot (the same record).
+- **A board made of names is frozen (proved).** Two different boards differ in
+  infinitely many distinctions, and off the tree every place holds infinitely
+  many names, so no finite change moves a board or its values. The program
+  counts a knot as native only where finite changes can flip its variables, so
+  no knot that involves the board is native.
 
 **Reading.** Rules can measure a space and read its dimension from what they
-allow, and in one dimension they can grow the axis with nothing drawn. Whether
-both axes of the plane can follow from the rules alone, as the owner proposed,
-is open: so far every plane had its board drawn first.
+allow, and in one dimension they can grow the axis with nothing drawn. When the
+board itself is made of distinctions, rules that never name a shape cannot
+choose the plane: they always leave the tree open. One rule that names the
+square can. In the owner's words of lesson 1.7, shapes have rules; the plane's
+rule is a shape.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1277,7 +1304,8 @@ remains open.
    record of its loops only if its contacts act as group elements (lessons
    4.4 and 4.5). Lesson 4.6 shows how far the program has got: rules read a
    drawn grid's dimension and grow a line with nothing drawn, but no tested
-   law yet chooses its own plane.
+   law yet chooses its own plane, and when the board is made of distinctions
+   no law that names no shape can.
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
    time are the data, and does the static test survive that change?
 3. **Limits.** No set of finite clauses binds infinitely many loops into one

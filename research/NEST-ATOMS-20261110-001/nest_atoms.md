@@ -21,6 +21,11 @@ it does: from outside, a composite reads as the AND of the bits inside it.
   group held its units exactly. With the learner, 11 of 12 two-level addresses held after a disturbance, and every outer address held
   whenever its address did.
 
+- **Two frozen expectations were not met.** N2 failed as frozen at all 102 removed points inside a leaf. The closed-composite reading
+  that holds there was added after the run: it is a post hoc restatement, covered by theorem N, not the frozen test. Ticket C landed
+  between its marks: 5 of 6 held with Fano leaves, below the 95% expected and above the 80% failure line, and six writes are too few to
+  tell those apart. A frozen re-test with more addresses is part of the next epic.
+
 ## What is proved and what is computed
 
 | Claim | Evidence class |

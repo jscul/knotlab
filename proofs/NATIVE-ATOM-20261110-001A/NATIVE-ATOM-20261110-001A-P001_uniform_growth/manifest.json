@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-ATOM-20261110-001A-P001",
+  "canonical_id": "NATIVE-ATOM-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-ATOM-20261110-001A",
+  "proof": "NATIVE-ATOM-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Uniform growth",
+  "status": "Proved",
+  "claim": "Proved by hand from UNIFORM-FANO-20261107-001A and OTHER-ATOMS-20261110-001: a rule splicing a lattice torus less a point at a violated line with one sign pattern on every line grows an atom that acts as its line exactly for the Fano torus with a constant pattern; every other class-forced atom grows transparent. Census: 1,256 uniform laws on 157 types, all satisfiable except the Fano torus's two constant laws.",
+  "dependencies": [
+    "UNIFORM-FANO-20261107-001A",
+    "OTHER-ATOMS-20261110-001A",
+    "OTHER-ATOMS-20261110-001D"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A non-Fano type with an unsatisfiable uniform law, or the Fano constant law satisfiable."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-ATOM-20261110-001",
+    "epic_path": [
+      "NATIVE-ATOM-20261110-001"
+    ],
+    "parents": [
+      "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py",
+      "proofs/OTHER-ATOMS-20261110-001D/OTHER-ATOMS-20261110-001D-P001_free_tori/result.json",
+      "research/NATIVE-ATOM-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835",
+    "proofs/OTHER-ATOMS-20261110-001D/OTHER-ATOMS-20261110-001D-P001_free_tori/result.json": "b735ee096fc4b3ec630b8feddd5f9e7fb7114b4787e44d16e45994591014b2fe",
+    "research/NATIVE-ATOM-20261110-001/preregistration.md": "fa3c05cb91c8754b31d10f15e2bb3c858492b98dedb4119f247481635474a961"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth/manifest.json",
+    "identity": "proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth/identity.json",
+    "proof": "proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth/proof.md",
+    "result": "proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth/result.json",
+    "check": "proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth/check.py",
+    "directory": "proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Uniform substitution rules on lattice tori to 30 points (thin of even index to 40).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 4a6ce578f).",
+    "status": "proved by hand; census exhaustive (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

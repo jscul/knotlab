@@ -1,0 +1,209 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/ADDRESS-SEQ-20261110-001A/ADDRESS-SEQ-20261110-001A-P001_writing_in_sequence/seq_lib.py": "0334bfcdb7ec820241a19a9e06110218b47e7ab43aaec727dd10627004b0639f",
+    "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/multi_lib.py": "be36087eee0a5d2763999f5b06b24446e1cb92bb2920c174d9ab4e2b4c247f80",
+    "research/NATIVE-ATOM-20261110-001/preregistration.md": "fa3c05cb91c8754b31d10f15e2bb3c858492b98dedb4119f247481635474a961",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b"
+   }
+  },
+  "1 B1 (exact): the uniform rule grows the Fano atom acting (no satisfying state) and the thin atom transparent (growth resolves)": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "sphere": "K_2",
+      "atom": "Fano",
+      "role": "line",
+      "grown space satisfiable": false
+     },
+     {
+      "sphere": "K_2",
+      "atom": "thin",
+      "role": "transparent",
+      "grown space satisfiable": true
+     },
+     {
+      "sphere": "K_3",
+      "atom": "Fano",
+      "role": "line",
+      "grown space satisfiable": false
+     },
+     {
+      "sphere": "K_3",
+      "atom": "thin",
+      "role": "transparent",
+      "grown space satisfiable": true
+     }
+    ]
+   }
+  },
+  "2 B2 (computed): learning writes single addresses into uniform thin atoms": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "l0": 6,
+      "l1": 63,
+      "acting at the start": [],
+      "steps": [
+       {
+        "target": [
+         0
+        ],
+        "written": true,
+        "configurations": 504,
+        "acting after write": [
+         0
+        ],
+        "acting after disturbance": [
+         0
+        ],
+        "held": true
+       },
+       {
+        "target": [
+         1
+        ],
+        "written": true,
+        "configurations": 467,
+        "acting after write": [
+         1
+        ],
+        "acting after disturbance": [
+         1
+        ],
+        "held": true
+       },
+       {
+        "target": [
+         0
+        ],
+        "written": true,
+        "configurations": 656,
+        "acting after write": [
+         0
+        ],
+        "acting after disturbance": [
+         0
+        ],
+        "held": true
+       }
+      ]
+     },
+     {
+      "l0": 9,
+      "l1": 18,
+      "acting at the start": [],
+      "steps": [
+       {
+        "target": [
+         0
+        ],
+        "written": true,
+        "configurations": 630,
+        "acting after write": [
+         0
+        ],
+        "acting after disturbance": [
+         0
+        ],
+        "held": true
+       },
+       {
+        "target": [
+         1
+        ],
+        "written": true,
+        "configurations": 554,
+        "acting after write": [
+         1
+        ],
+        "acting after disturbance": [
+         1
+        ],
+        "held": true
+       },
+       {
+        "target": [
+         0
+        ],
+        "written": true,
+        "configurations": 503,
+        "acting after write": [
+         0
+        ],
+        "acting after disturbance": [
+         0
+        ],
+        "held": true
+       }
+      ]
+     },
+     {
+      "l0": 10,
+      "l1": 18,
+      "acting at the start": [],
+      "steps": [
+       {
+        "target": [
+         0
+        ],
+        "written": true,
+        "configurations": 534,
+        "acting after write": [
+         0
+        ],
+        "acting after disturbance": [
+         0
+        ],
+        "held": true
+       },
+       {
+        "target": [
+         1
+        ],
+        "written": true,
+        "configurations": 467,
+        "acting after write": [
+         1
+        ],
+        "acting after disturbance": [
+         1
+        ],
+        "held": true
+       },
+       {
+        "target": [
+         0
+        ],
+        "written": true,
+        "configurations": 330,
+        "acting after write": [
+         0
+        ],
+        "acting after disturbance": [
+         0
+        ],
+        "held": true
+       }
+      ]
+     }
+    ],
+    "writes": 9,
+    "written": 9,
+    "held": 9,
+    "exact writes": 9
+   }
+  },
+  "predictions": {
+   "B1 held": true,
+   "B2 every address written": true,
+   "B2 every address held": true
+  },
+  "seconds": 1.0
+ }
+}

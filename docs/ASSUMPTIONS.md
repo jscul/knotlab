@@ -101,6 +101,7 @@ evidence: results and their status come from the records each entry links.
 | [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Confirmed |
 | [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
 | [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
+| [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
 
 ## Entries
 
@@ -639,6 +640,9 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-10 · The outside target is not needed on the class-forced tori: `NATIVE-TARGET-20261110-001` steered the same learner with
+    native signals, its sight of its own moves and the count of states sharing the state's dissonance, resolving every run and beating
+    random moves (computed). The target part of A26 is no longer relied on there; the rest is kept ([a native target for learning](../research/NATIVE-TARGET-20261110-001/native_target.md)).
   - 2026-11-09 · Relied on again by `LEARN-HANDLES-20261109-001` for its walks and its local rule, which used an outside distance to
     the over-agreeing face. Its theorem that every resolution of a class-forced pair winds does not rest on A26: it holds for any
     process, with the state changing or not ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)). Backlog B61 would replace the outside distance with a native signal.
@@ -658,6 +662,9 @@ evidence: results and their status come from the records each entry links.
   moves. The cheapest test recomputes the force with each state weighted by a power of its number of over-agreeing faces, or with
   the states of one local-move component only, and checks whether the halves still repel and the corners still attract.
 - **History.**
+  - 2026-11-10 · Weighed by the state's own dissonance, the count steers: `NATIVE-TARGET-20261110-001` found it is 2 far from the
+    over-agreeing face and grows near it, so a learner keeping the most such states resolves every class-forced pair tested, faster
+    than random moves; one keeping the fewest does not ([a native target for learning](../research/NATIVE-TARGET-20261110-001/native_target.md)).
   - 2026-11-07 · Added by `RESIGN-STEER-20261107-001`.
 
 ### A28 · Outward growth is judged by its law's local consistency
@@ -1145,3 +1152,21 @@ evidence: results and their status come from the records each entry links.
   ignores even faces and over-agreement still has anything to steer.
 - **History.**
   - 2026-11-09 · Added by `LEARN-HANDLES-20261109-001`.
+
+### A47 · A native signal comes from the law and the state alone
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** A signal that steers a learner is native when it is computed from the current law and the state alone: from their
+  dissonance, from the states the law allows, or from the learner's own possible moves. It is outside when it uses a metric or
+  coordinates of the triangulation, or a target the experimenter names. A native rule may recognise an over-agreeing face only by its
+  agreement count, as dissonance it sees.
+- **Why.** `NATIVE-TARGET-20261110-001` froze it before any rule ran, to replace A26's outside distance. It follows the guardrail that a
+  distance supplied by a simulator is not native.
+- **Rests on it.** That epic's reading that sight and the count of states sharing the state's dissonance steer learning natively
+  ([a native target for learning](../research/NATIVE-TARGET-20261110-001/native_target.md)).
+- **Challenge.** Two signals sit on the line. The count is native but global: it weighs the whole law. Sight is local, but it reads the
+  learner's moves, which follow the triangulation's incidences. A stricter reading admits only signals that a bounded neighbourhood of
+  the hole determines; then only sight of bounded radius qualifies, and it already beats random moves.
+- **History.**
+  - 2026-11-10 · Added by `NATIVE-TARGET-20261110-001`.

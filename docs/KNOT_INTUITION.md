@@ -1302,9 +1302,25 @@ So network holes come in two kinds:
    - **Provenance.** Known with delta: in dimer language the classes are winding sectors (Kasteleyn's four Pfaffians) and a worm must
      wrap the torus to change sector. New: the reading as learning against change of state, the χ = 0 statement, the pair on the
      class-forced tori, the costs and the local rule.
-   - **Next (awaiting a go-ahead).** A native target for learning (backlog B61; Payoff 2/3, Concreteness 3/3): replace the outside
+   - **Next (taken by `NATIVE-TARGET-20261110-001`, below).** A native target for learning (backlog B61; Payoff 2/3, Concreteness 3/3): replace the outside
      distance by a signal the law and state supply. Alternatives: choosing the resolution (B62), learning that grows a handle (sub-goal
      B60), layers (sub-goal B54) ([decision note](../research/LEARN-HANDLES-20261109-001/learn_handles.md)).
+
+   **2026-11-10: a native target for learning** (`NATIVE-TARGET-20261110-001`).
+   - **The question.** The local rule above was told the distance to the over-agreeing face by the experimenter. Can a signal that the
+     law and the state supply themselves do the same?
+   - **Yes (computed, pre-registered).** On the class-forced tori, a learner that sees its own moves one to three ahead, and one that
+     keeps the most states sharing the state's dissonance, resolve every run and beat random moves on every torus of at least 10 points:
+     at 40 points 12.9 and 17.9 to 19.3 steps, against 64.4 for random moves and 7.5 with the outside distance. One size past, to 46
+     points, the same.
+   - **Opposite charges attract.** The count of states sharing the dissonance is 2 (the state and its complement) when the holes are
+     far from the over-agreeing face and grows as they approach, unevenly at contact. On the sphere same charges repelled; here a hole
+     and the face of opposite charge attract. A learner keeping the fewest such states never resolves on the Fano tori.
+   - **Reading.** The owner's "strength based on stability" has a native form: the point is drawn to its resolution by keeping the
+     world's options open, with no outside map.
+   - **Next (awaiting a go-ahead).** Learning that grows a handle (sub-goal B60; Payoff 3/3, Concreteness 2/3): a sphere's dissonance
+     cannot be resolved, and splicing a Fano atom across a 3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`), so
+     splice one at the violated line and learn ([decision note](../research/NATIVE-TARGET-20261110-001/native_target.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

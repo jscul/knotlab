@@ -10,9 +10,9 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## The line as it stands (updated 2026-11-10, after `NATIVE-WRITE-20261110-001`)
+## The line as it stands (updated 2026-11-10, after `IN-OUT-20261110-001`)
 
-Sections 1 to 8 are the note as written for B95. Ten epics since then change its statement; this section is the current one.
+Sections 1 to 8 are the note as written for B95. Eleven epics since then change its statement; this section is the current one.
 
 **Proved by hand.**
 - **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
@@ -42,6 +42,10 @@ Sections 1 to 8 are the note as written for B95. Ten epics since then change its
   through AND, OR and their monotone combinations, never through NOT.
 - **A stored 1 cannot be walked away** (`NATIVE-WRITE-20261110-001`, P1, from lemma 3). An acting atom's region holds dissonance in every
   state, so a learner that lets its state wander on the floor and sees the dissonance in an atom vanish knows the atom does not act.
+- **Maps of held inputs are self-dual** (`IN-OUT-20261110-001`, theorem D). Flipping every point leaves the dissonance unchanged, so a
+  map from points held by the world to a point read at the floor answers oppositely for opposite inputs: no AND, OR or XOR of two
+  held inputs. A gauge flip negates one input or the output (lemma G), and a composite's interface reads its inner atoms only
+  through their AND (lemma C).
 
 **Computed.**
 - Freeness of all 157 lattice-torus types to 30 points (thin tori of even index to 40); the class-forced ones are the Fano torus and the thin
@@ -57,6 +61,9 @@ Sections 1 to 8 are the note as written for B95. Ten epics since then change its
   only its own dissonance, a learner that tests its memory by that walk and learns only on atoms whose answer is wrong wrote 100 of 100
   addresses exactly on five spaces of up to six atoms, and each held; read at one instant instead, 84 of 100 stopped inexactly. An
   atom acts exactly when its own constraints cannot clear its region, on every class of seven spaces (exact).
+- Inputs and outputs (`IN-OUT-20261110-001`, frozen): an acting atom read with two sides held is a gate, the NOT gate among them
+  (exact, every class of 18 interfaces); a learner that sees only its dissonance under the world's clamps learned 53 of 56 gate
+  targets at single atoms and 1 of 16 through composites; its clamped probe was fooled 6 times on the largest space.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -71,9 +78,10 @@ Sections 1 to 8 are the note as written for B95. Ten epics since then change its
 - The search for a host outside the proved class found none: seven branched covers had no unsatisfiable class at all.
 
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
-writer's walk never errs when long enough (B130); writing with only the ones named (B131); learning from examples (B120); and whether
-learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106 and B119 are answered
-above.
+writer's walk never errs when long enough (B130); writing with only the ones named (B131); learning through composites (B132); three
+held inputs (B133); and whether
+learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119 and B120 are
+answered above.
 
 ## 1. Where it started
 

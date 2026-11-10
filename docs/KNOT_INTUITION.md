@@ -1606,8 +1606,23 @@ So network holes come in two kinds:
      single moment instead fooled it 84 times in 100: a loose bit of tension can sit in a pattern that does not hold.
    - **Reading.** A stored 1 is a tension the point cannot walk away. The point both writes the memory and reads it, and no one tells
      it the configuration to aim for.
-   - **Next.** Inputs and outputs (backlog B120): learning from examples, with the world holding some points
-     ([decision note](../research/NATIVE-WRITE-20261110-001/native_write.md)).
+   - **Next (taken by `IN-OUT-20261110-001`, below).** Inputs and outputs (backlog B120): learning from examples, with the world holding
+     some points ([decision note](../research/NATIVE-WRITE-20261110-001/native_write.md)).
+
+   **2026-11-10: a held knot is a gate** (`IN-OUT-20261110-001`).
+   - **The question.** Backlog B120: let the world hold two points of a stored pattern and read the third. What can the memory compute
+     this way, and can it learn a chosen answer from examples?
+   - **Proved.** Flipping every point at once never changes the tension, so whatever the memory answers for some inputs, it answers the
+     opposite for the opposite inputs. That rules out "both", "either" and "exactly one" of two inputs. Flipping one point's frame
+     negates that input or the answer, so the world's held inputs give the memory the frame it lacked for "not this".
+   - **Computed.** A pattern that holds its contradiction is a gate: when the two held points agree the third is forced to their
+     opposite, otherwise it is free. A learner that feels only its own tension, taught by the world holding the answer it wants, learned
+     such gates from four examples at 53 of 56 single patterns and switched them off, but almost never through a pattern of patterns.
+   - **Reading.** Through a pattern of patterns the examples see only whether every inner pattern holds, so until all do, every example
+     looks the same: the learner gets no hint which part to change. Each holding part does keep a tension it cannot walk away, which the
+     learner could use as a hint.
+   - **Next.** Credit from pinned dissonance (backlog B132), tied with three held inputs (backlog B133)
+     ([decision note](../research/IN-OUT-20261110-001/in_out.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

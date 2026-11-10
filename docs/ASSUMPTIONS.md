@@ -105,7 +105,7 @@ evidence: results and their status come from the records each entry links.
 | [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Overturned |
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 | [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
-| [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Assumed |
+| [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Under challenge |
 | [A52](#a52--a-grown-handle-is-a-class-forced-torus-atom) | A grown handle is a class-forced torus atom | scope | Assumed |
 
 ## Entries
@@ -1248,7 +1248,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A51 · Places and their neighbours are given before the rules
 
-**Assumed** · 2026-11-10 · scope
+**Under challenge** · 2026-11-10 · scope
 
 - **Statement.** Every law measured for space so far has its places, and which of them are neighbours, fixed before the law is
   read: a lattice Z^D, a declared network of rings (A45), a group's Cayley law, or a gadget's copies. The law's distinctions are
@@ -1268,6 +1268,10 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Under challenge by `BOARD-DIST-20261110-001` (backlog B92), pre-registered before any run: names are the reduced
+    words in x, y and their inverses, e(u, v) says two names are one place, and a frozen census of the 1,024 Life-like one-bit laws
+    and the atom reads which boards each allows; a proof ticket asks whether a law that names no relation can force an infinite board
+    without allowing the tree.
   - 2026-11-10 · Relied on by `READ-GROW-20261110-001`: a growing plane of rings on a declared board reads its original rings'
     distances in order while every stage keeps its knots (to 40 × 40). In a pause the reading is the board's own taxicab distance
     (lags 12|v| − 4), recovered, not chosen; after a doubling it is not taxicab (a diagonal ring heard before a straight one), so the

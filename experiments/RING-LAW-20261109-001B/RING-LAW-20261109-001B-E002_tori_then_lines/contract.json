@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "RING-LAW-20261109-001B-E002",
+  "ticket": "RING-LAW-20261109-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Backlog B45: when a contact law tells its two rings apart, so that the automaton fixes how each ring continues (RING-LAW-20261109-001A: nonlinear laws, or affine ones that cut a ring), do the lattice tori and their line networks still keep their contacts bound (A32) or at least needing both rings, and do they read their distance plainly? E002 reads E001's readings in a feasible order, after E001 was stopped as too slow.",
+  "public_inputs": {
+    "library": "ring_law_lib.py of RING-LAW-20261109-001A-P001 (on REROUTE-20261109-001B's reroute_lib), pysat's CaDiCaL for the exact decisions.",
+    "run": "run.py in this folder (E001's code with the order and roster below), 16 worker processes.",
+    "family": "As E001: square, triangular and honeycomb n x n tori for n = 4, 5, 6 at g = 2 and their line networks (18 networks); every self-blind law (u, v) for R1; law (12, 12) and the eight symmetric nonlinear laws u = v in {1, 2, 4, 7, 8, 11, 13, 14} for R2 and R3. R2 and R3 on all 18 networks first; R1 on the nine tori and on the six line networks of n = 4 and 5 (the line networks of n = 6 are not read for R1).",
+    "readings": "R1: whether the representative contacts bind both their rings at every lag (affine laws, exact from the row orbit) or at every lag to 6 (nonlinear laws, exact by SAT, stopping at the first lag that fails). R2: whether they need both rings at every lag to 64. R3: for every ring and representative contact, whether the plain first need comes at the light-cone lag. R2 and R3 are exact: a sampled pair of first rows (256 per ring) witnesses needing, and every lag not witnessed is decided by SAT."
+  },
+  "forbidden_inputs": [
+    "Changing the roster, the laws, the lags or the hypotheses after seeing results",
+    "Dropping networks"
+  ],
+  "primary_observable": "On the tori, the laws that see the routing and still bind (H1); on the line networks of n = 4 and 5, the laws that see the routing with both rings passing and bind to lag 6, by lattice (H2); for the eight nonlinear laws, needing to lag 64 (H3) and the late (ring, contact) pairs (H4), against law (12, 12).",
+  "cheapest_meaningful_control": "Law (12, 12): blind, binding at every lag, the tori late and the line networks on time (REROUTE-20261109-001B, PLAIN-TIME-20261108-001B).",
+  "resource_budget": {
+    "wall_minutes": 240,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The summary in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: on every torus read no law that sees the routing binds both rings at every lag read. H2: on the square line networks of n = 4 and 5 some law that sees the routing, with both rings passing, binds both rings to lag 6, and on the triangular and honeycomb line networks of n = 4 and 5 none does. H3: under each of the eight symmetric nonlinear laws every representative contact of every network needs both its rings at every lag to 64. H4: under those laws every network read is on time. If H1 and H2 hold, native rings that bind exist on the square lines and not on the tori read, and their binding is read at further lags next. If H1 fails, the torus law that binds is read for its plain reading next. If H4 holds, the plain reading's failure on two-dimensional networks belongs to affine laws, and with H1 a plane read plainly costs binding.",
+  "stop_rule": "Stop when every reading of the roster has its value.",
+  "nonclaims": [
+    "Exploratory and finite: the roster only.",
+    "Binding of nonlinear laws is read to lag 6 and needing to lag 64; neither is read at every lag.",
+    "Binding is not read on the line networks of n = 6.",
+    "Self-blind laws and rule-60 rings only; two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing, pilots (scratch, not kept): (1) the six linear elementary ring rules under nine linear laws on the square 3 x 3 to 5 x 5 tori and their line networks, persistence by row orbits: under laws that read one arriving cell no contact persisted, except all 18 of the 3 x 3 line network under rule 150 and law (6, 10); (2) every law on four shapes of two rings sharing two contacts, both routings, needing by full state maps to lag 40: every law that sees the routing with both rings passing needed both rings at every lag in both routings; (3) the plain reading under law (12, 12) and five nonlinear laws on the square 4 x 4 to 6 x 6 tori and their line networks by sampled witnesses, and by SAT for the pairs not witnessed under (8, 14) at n = 5 and (8, 8) at n = 4, 5, 6 and on the triangular and honeycomb 4 x 4 and 5 x 5 tori: no pair was late under the nonlinear laws, and (12, 12) gave its known late pairs; (4) binding on the square 4 x 4 torus for all 256 laws to lag 6 (contacts 0 and 1): no law that sees the routing bound, the nonlinear ones failing at lag 3 or 4; (5) timing of the heaviest readings (up to 55 s each). H1 to H3 were written from these pilots; the census reads the three lattices at three sizes and both groupings, most of it not read before. After E001's contract was frozen: E001 itself ran for 70 + 17 minutes without finishing and was stopped as too slow; its partial log (artifacts of E001) shows R1 on the square 4 x 4 and 5 x 5 tori finishing quickly with no binding laws logged, and 32 and 10 laws logged as binding to lag 6 on the square 4 x 4 and 5 x 5 line networks, at 50 to 117 s and about 700 s each. Further pilots: the laws (9, 8) and (8, 9) bind to lag 3 and fail at lag 4 on the triangular and honeycomb 4 x 4 line networks; on the square 4 x 4 line network a probe of four laws to lag 10 was started and not read before this freeze; the plain-reading pilots of E001's disclosure found the R2 and R3 readings of E001's code cheap (up to about a minute per network and law). H1 and H2 were written from the partial log and these pilots."
+}

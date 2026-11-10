@@ -1299,4 +1299,7 @@ evidence: results and their status come from the records each entry links.
   growth law that chooses the atom itself (backlog B106). The cheapest test grows a knot sphere carrying two Fano atoms, less a point, as
   one atom (backlog B104): if it acts only where both inner atoms act, the premise extends to atoms of atoms.
 - **History.**
+  - 2026-11-10 · `NEST-ATOMS-20261110-001` extended the premise to composite atoms: a knot sphere carrying such atoms, less a point, acts
+    as its line exactly where every atom inside acts (proved by hand, given flat states at every line of the host), so groups of atoms
+    behind a three-edge cut are atoms of the next level ([atoms within atoms](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).
   - 2026-11-10 · Added by `OTHER-ATOMS-20261110-001`, replacing A48 (overturned as a limit).

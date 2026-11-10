@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**283 current results** and 5 superseded ones, from 245 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**284 current results** and 5 superseded ones, from 246 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 50 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 51 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 14 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 7 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 245 epics with their closures
+- [Epics](#epics): all 246 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -180,6 +180,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-09 · No two shortest routes tie before lcm(m, f) - lcm/m - lcm/f + 1** (`TIE-LAW-20261109-001-D001`).
   In the contact graph of rule-60 rings on every regular tiling, with m contacts per ring and f per face, no contact is reached by two shortest routes before distance lcm(m, f) - lcm/m - lcm/f + 1, so the plain first need reads every contact closer than that on time. When m = f a tie comes exactly there; elsewhere it does on every tiling read.
   [proof P001](proofs/TIE-LAW-20261109-001A/TIE-LAW-20261109-001A-P001_no_tie_comes_before_tau/proof.md), [epic closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Each eigenvalue's Jordan structure on the cut-open torus is the leading part of one moment matrix** (`CHAIN-ORDERS-20261110-001-D001`).
+  At sides 2^m each eigenvalue's Jordan blocks on the cut-open torus are the partial multiplicities of one explicit moment matrix, whose reduction to the eigenvectors has the leading part u⁻¹Y^k L(u²/Y) at every eigenvalue to side 256 (computed). Its leading matrix is invertible for every k (proved), so this is the whole chain lemma 2k − 1 − 4j; its bottom three orders are proved.
+  [proof P001](proofs/CHAIN-ORDERS-20261110-001A/CHAIN-ORDERS-20261110-001A-P001_the_reduced_form_at_every_order/proof.md), [epic closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · A grown plane that stops reads the fixed torus's distances** (`GROW-STOP-20261110-001-D001`).
   A network that splits every ring in four at every lag for k lags and then stops reads, for every ring and every reading, freezes included, exactly what the fixed torus of the grown size reads, with its original rings 2^k ring steps apart per original step. Schedules whose rings heard each other before the stop do not (computed).
   [proof P001](proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/proof.md), [epic closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md)
@@ -1212,6 +1215,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Does the stored address steer later learning (`ADDRESS-STEER-20261110-001`) | [closure](proofs/ADDRESS-STEER-20261110-001Z/ADDRESS-STEER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ADDRESS-STEER-20261110-001/) |
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
 | 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | — | [folder](research/ATOM-RULE-20261110-001/) |
+| 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |

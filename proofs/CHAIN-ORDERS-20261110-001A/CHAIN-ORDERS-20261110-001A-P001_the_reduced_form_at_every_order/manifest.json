@@ -13,8 +13,8 @@
   "proof": "CHAIN-ORDERS-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "The reduced form at every order: the Jordan chains of the cut-open torus at powers of two",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt. At n = 2^m, h = n/2, q = 2n, for a in GF(q)* with b = sqrt(a), Z(w) = S + M_(Omega(w)) the family of JORDAN-CHAINS-20261110-001A (Z(a) = X_b), G the monic least-degree element of ker X_b, k = h - deg G, J = ceil(k/2), u = (w - a)/a and L(x) = x + x^2 + x^4 + ...: to be proved (1) the sparse Taylor form Omega(a + d) = (1 + d/a)(Omega_a + sum over r = 1..m-1 of d^(2^r) k^(h - 2^(r-1))) mod d^n, the perturbation being k^h L(d^2/k); (2) the Hankel reduction: near a, Z(w) is equivalent to diag(H(w), I), H(w) the (h/2) x (h/2) Hankel matrix of psi_1(w), ..., psi_(h-1)(w), psi(w) = (Omega(w) + k + 1)/(k Omega(w) + (k + 1)^2) mod k^h written in Y = k^2 + k; (3) Gamma^(k) = [k - i - j is a power of two]_(0 <= i, j < J) is invertible over GF(2) for every k. Target, the leading form, found by exact computation at every a for sides 8 to 64 before registration: the symmetric Lyapunov-Schmidt reduction M of Z to ker X_b = G F[Y]_(<J) (basis G Y^j, complement spanned by the monomials k^d off the kernel's top degrees deg G + 2j) has M_ij = u^(2k - 1 - 2(i + j)) (Gamma^(k)_ij + O(u)), its leading part being u^-1 Y^k L(u^2/Y); with (3) G Y^j then heads a Jordan chain of exactly 2k - 1 - 4j and these are the Jordan blocks at 1/a. The valuations alone give the multiplicity at least k(k + 1)/2, which with the degree bound deg G <= h - k_a (sub-goal B74) would prove the collapse.",
+  "status": "Proved",
+  "claim": "At n = 2^m, h = n/2, q = 2n, for a in GF(q)* with b = sqrt(a), Z(w) = S + M_(Omega(w)) the family of JORDAN-CHAINS-20261110-001A, G the monic least-degree element of ker X_b, k = h - deg G, J = ceil(k/2), N = G(k) G(k + 1), u = (w - a)/a and L(x) = x + x^2 + x^4 + ...: (1) Omega(a + d) = (1 + d/a)(Omega_a + sum over r = 1..m-1 of d^(2^r) k^(h - 2^(r-1))) mod d^n, so near a, Z(w) = S + (w/a)(b + k^h L(w^2/k)); (2) near every a, Z(w) is equivalent to diag(H(w), I), H(w) = [psi_(i+j+1)(w)] the (h/2) x (h/2) moment matrix of psi(w) = (Omega(w) + k + 1)/(k Omega(w) + (k + 1)^2) mod k^h written in Y = k^2 + k; (3) Gamma^(k) = [k - i - j is a power of two]_(i, j < J) is invertible over GF(2) for every k (det Gamma^(2c) = det Gamma^(c) det Gamma^(c-1), det Gamma^(2c+1) = det(Gamma^(c))^2; equivalently the S-fraction 1/(1 + z/(1 + z/...)) of sum z^(2^r - 1)); (4) with l = u/(1 + u), (1 + l) Z = Z_0 + l S + sum_r a^(2^r) l^(2^r)/(1 + l^(2^r)) M_(k^(h - 2^(r-1))); (5) for the reduction M of that family to ker X_b along a complement containing k G Y^j (2j < k - 1): [l] M_ij = [l^2] M_ij = 0 for i + j <= k - 2 (2i < k - 1) and [l^3] M_ij = [Y^(h - 2 - i - j)] N for 2i, 2j < k - 1; hence every eigenvalue 1/a has exactly k mod 2 Jordan blocks of size 1, none of size 2, and exactly one of size 3 when k is even and none when k is odd, and for k <= 2 these are all ([1], [3]). Computed exactly, the registered target: the symmetric reduction M of Z to ker X_b with the monomial complement has M_ij = u^(2k - 1 - 2(i + j)) ([k - i - j a power of two] + O(u)), its leading part the Hankel matrix of u^-1 Y^k L(u^2/Y), at every a for sides 8 to 64 (before registration), 128 (after) and 256 (the stress run); with (3) this is the chain lemma (G Y^j heads a Jordan chain of exactly 2k - 1 - 4j, these being the blocks). The leading form beyond the anti-diagonals i + j >= k - 2 (orders 4 and up) is not proved.",
   "dependencies": [
     "JORDAN-CHAINS-20261110-001A"
   ],
@@ -28,9 +28,9 @@
     "secondary": []
   },
   "failure_conditions": [
-    "A side 2^m and a in GF(2n)* at which the sparse Taylor form fails, or the partial multiplicities of H(w) at a differ from those of Z(w).",
-    "A k at which Gamma^(k) is singular over GF(2) (computed false for k < 400).",
-    "A side, a and (i, j) at which M_ij has a nonzero coefficient below u^(2k - 1 - 2(i + j)), or its coefficient there differs from Gamma^(k)_ij (computed false at every a for sides 8 to 64; side 128 is a planned check after registration)."
+    "A side 2^m and a in GF(2n)* at which the sparse Taylor form fails, or the partial multiplicities of H(w) at a differ from those of Z(w) (computed false at every a for sides 4 to 128 and 8 to 64).",
+    "A k at which Gamma^(k) is singular over GF(2) (proved false; computed false for k < 1000).",
+    "A side, a and (i, j) at which M_ij has a nonzero coefficient below u^(2k - 1 - 2(i + j)), or its coefficient there differs from [k - i - j a power of two] (computed false at every a for sides 8 to 256; 128 checked after registration, 256 in the stress run)."
   ],
   "lineage": {
     "home_scope": "CHAIN-ORDERS-20261110-001",
@@ -52,10 +52,7 @@
     "check": "proofs/CHAIN-ORDERS-20261110-001A/CHAIN-ORDERS-20261110-001A-P001_the_reduced_form_at_every_order/check.py",
     "directory": "proofs/CHAIN-ORDERS-20261110-001A/CHAIN-ORDERS-20261110-001A-P001_the_reduced_form_at_every_order"
   },
-  "remaining_obligations": [
-    "proofs of (1), (2) and (3)",
-    "the leading form, or the order where the argument stops"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -90,7 +87,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10 (sub-goal B73 continued).",
-    "status": "pre-registered; the leading form found by exact computation, the proofs to follow",
-    "novelty": "to be assessed"
+    "status": "proof by hand (Theorems 1 to 5) with finite checks; the leading form computed at every a for sides 8 to 128 and, in the stress run, 256",
+    "novelty": "new as far as found (bounded search of 2026-11-09); ingredients classical (Lyapunov-Schmidt reduction, Hankel matrices and Pade approximation, Stieltjes continued fractions, the 2n + 1 rule)"
   }
 }

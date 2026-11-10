@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse"
+    ],
+    "program": "foundations",
+    "takes": [
+      "JORDAN-CHAINS-20261110-001#1"
+    ]
+  },
+  "id": "CHAIN-ORDERS-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up JORDAN-CHAINS-20261110-001's direction 1 (sub-goal B73 continued) at the coordinator's go-ahead on 2026-11-10: at sides n = 2^m, prove the chain lemma at every order, that the eigenvector G Y^j at each eigenvalue of the cut-open torus (G the least polynomial, Y = k^2 + k, k = n/2 - deg G) heads a Jordan chain of exactly 2k - 1 - 4j and that these are the Jordan blocks. The route registered before the attempt: the leading part of the reduction of the family Z to the eigenvectors is u^-1 Y^k L(u^2/Y), u = (w - a)/a, L(x) = x + x^2 + x^4 + ..., and its leading matrix is invertible for every k. Or find the order where the argument stops.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CHAIN-ORDERS-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (Partially successful): the chain lemma reduces to one explicit leading form, which holds at every eigenvalue to side 256 and whose leading matrix is invertible by proof. Computed exactly: at sides 2^m the symmetric reduction of the family to the eigenvectors G Y^j has entries starting at u^(2k - 1 - 2(i + j)), u = (w - a)/a, with coefficient 1 exactly when k - i - j is a power of two, its leading part the Hankel matrix of u^-1 Y^k L(u^2/Y), L(x) = x + x^2 + x^4 + ..., at every eigenvalue for sides 8 to 256 (64 and below before registration, 128 after, 256 in the stress run). Proved: near each eigenvalue parameter the family is S + (w/a)(b + k^h L(w^2/k)) and equivalent to one moment (Hankel) matrix of psi = (Omega + k + 1)/(k Omega + (k + 1)^2); the leading matrix has determinant 1 over GF(2) for every k (by halving k), so the leading form is the whole chain lemma; every eigenvalue has exactly k mod 2 Jordan blocks of size 1, none of size 2, and one of size 3 exactly when k is even, the chain lemma in full for k <= 2. Not proved: the leading form from order 4 on, and the degree law (B74). Recommendation Continue, selected #1 (the leading form at every order, B73); #2 (halving the index, B91) attacks the same statement.",
+  "status_class": "complete",
+  "stop_rule": "Stop with the leading form proved (and with it the chain lemma), an eigenvalue where the leading form fails, or the form reduced to an explicit statement with the gap stated.",
+  "title": "The chain lemma at every order"
+}

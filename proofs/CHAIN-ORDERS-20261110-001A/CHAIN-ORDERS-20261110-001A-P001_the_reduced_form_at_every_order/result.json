@@ -1,0 +1,665 @@
+{
+ "schema_version": 1,
+ "artifact": "CHAIN-ORDERS-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (JORDAN-CHAINS-20261110-001A's manifest and library)": {
+   "pass": true,
+   "info": {
+    "proofs/JORDAN-CHAINS-20261110-001A/JORDAN-CHAINS-20261110-001A-P001_the_chains_one_polynomial_heads/manifest.json": "7f29fb0a2fef53fa33f73e65313fc6011be42d7beda9b1c806abcb42edde99a1",
+    "proofs/JORDAN-CHAINS-20261110-001A/JORDAN-CHAINS-20261110-001A-P001_the_chains_one_polynomial_heads/chains_lib.py": "09ac3e88e46a952cbe58dcbc9434c239fdc43fcfb30d5deadb924e2e9c0625ca"
+   }
+  },
+  "1 Theorem 1: Omega(a + d) = (1 + d/a)(Omega_a + sum_r d^(2^r) k^(h - 2^(r-1))) mod d^n, every a, sides 4 to 128": {
+   "pass": true,
+   "info": {
+    "side 4": {
+     "values of a": 7,
+     "mismatches": 0
+    },
+    "side 8": {
+     "values of a": 15,
+     "mismatches": 0
+    },
+    "side 16": {
+     "values of a": 31,
+     "mismatches": 0
+    },
+    "side 32": {
+     "values of a": 63,
+     "mismatches": 0
+    },
+    "side 64": {
+     "values of a": 127,
+     "mismatches": 0
+    },
+    "side 128": {
+     "values of a": 255,
+     "mismatches": 0
+    }
+   }
+  },
+  "2 Theorem 2: the partial multiplicities of the moment matrix H(w) are those of Z(w), every a, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "side 8": {
+     "compared with": "the blocks of Z",
+     "mismatches": 0
+    },
+    "side 16": {
+     "compared with": "the blocks of Z",
+     "mismatches": 0
+    },
+    "side 32": {
+     "compared with": "the blocks of Z",
+     "mismatches": 0
+    },
+    "side 64": {
+     "compared with": "2k - 1 - 4j, the blocks of Z at every a by JORDAN-CHAINS-A1 (side64.json, pass True)",
+     "mismatches": 0
+    }
+   }
+  },
+  "3 Theorem 3: Gamma^(k) = [k - i - j a power of two] invertible over GF(2), k < 1000": {
+   "pass": true,
+   "info": {
+    "k checked": "1 to 999",
+    "singular": []
+   }
+  },
+  "4 Theorem 4: Zhat(l) = Z_0 + l S + sum_r a^(2^r) l^(2^r)/(1 + l^(2^r)) M_(k^(h - 2^(r-1))), every a, sides 4 to 64": {
+   "pass": true,
+   "info": {
+    "side 4": {
+     "mismatches": 0
+    },
+    "side 8": {
+     "mismatches": 0
+    },
+    "side 16": {
+     "mismatches": 0
+    },
+    "side 32": {
+     "mismatches": 0
+    },
+    "side 64": {
+     "mismatches": 0
+    }
+   }
+  },
+  "5 Theorem 5: [l^2] M = 0 where i + j <= k - 2, and [l^3] M = [Y^(h-2-i-j)] N(G) on the chains of length >= 2, every a, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "side 8": {
+     "values of a": 15,
+     "failures": 0
+    },
+    "side 16": {
+     "values of a": 31,
+     "failures": 0
+    },
+    "side 32": {
+     "values of a": 63,
+     "failures": 0
+    },
+    "side 64": {
+     "values of a": 127,
+     "failures": 0
+    },
+    "side 128": {
+     "values of a": 255,
+     "failures": 0
+    }
+   }
+  },
+  "6 computed, the target: M_ij = u^(2k-1-2(i+j)) ([k-i-j a power of two] + O(u)), every a, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "side 8": {
+     "values of a": 15,
+     "failures": 0,
+     "counts by k": {
+      "0": 5,
+      "1": 4,
+      "2": 4,
+      "3": 2
+     }
+    },
+    "side 16": {
+     "values of a": 31,
+     "failures": 0,
+     "counts by k": {
+      "0": 5,
+      "1": 10,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 1
+     }
+    },
+    "side 32": {
+     "values of a": 63,
+     "failures": 0,
+     "counts by k": {
+      "0": 12,
+      "1": 6,
+      "2": 12,
+      "3": 9,
+      "4": 7,
+      "5": 8,
+      "6": 6,
+      "7": 3
+     }
+    },
+    "side 64": {
+     "values of a": 127,
+     "failures": 0,
+     "counts by k": {
+      "0": 14,
+      "1": 21,
+      "2": 7,
+      "3": 7,
+      "4": 21,
+      "5": 14,
+      "6": 8,
+      "7": 14,
+      "8": 7,
+      "9": 7,
+      "10": 7
+     }
+    },
+    "side 128": {
+     "values of a": 255,
+     "failures": 0,
+     "counts by k": {
+      "0": 16,
+      "1": 16,
+      "2": 32,
+      "3": 20,
+      "4": 16,
+      "5": 16,
+      "6": 24,
+      "7": 16,
+      "8": 18,
+      "9": 16,
+      "10": 8,
+      "11": 20,
+      "12": 16,
+      "13": 8,
+      "14": 8,
+      "15": 5
+     }
+    }
+   }
+  },
+  "8 the reading: over GF(2) the exterior and symmetric squares of one Jordan block differ from 2k - 1 - 4j at k = 3 and 5 to 15": {
+   "pass": true,
+   "info": {
+    "agreeing at": {
+     "1": [
+      "wedge^2 of J_(k+1), group",
+      "wedge^2 of J_(k+1), Lie",
+      "Sym^2 of J_k, group"
+     ],
+     "2": [
+      "wedge^2 of J_(k+1), group",
+      "wedge^2 of J_(k+1), Lie"
+     ],
+     "4": [
+      "wedge^2 of J_(k+1), group",
+      "wedge^2 of J_(k+1), Lie"
+     ]
+    },
+    "blocks": {
+     "1": {
+      "2k-1-4j": [
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       1
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       1
+      ],
+      "Sym^2 of J_k, group": [
+       1
+      ]
+     },
+     "2": {
+      "2k-1-4j": [
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       3
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       3
+      ],
+      "Sym^2 of J_k, group": [
+       2,
+       1
+      ]
+     },
+     "3": {
+      "2k-1-4j": [
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       4,
+       2
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       3,
+       3
+      ],
+      "Sym^2 of J_k, group": [
+       4,
+       2
+      ]
+     },
+     "4": {
+      "2k-1-4j": [
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       7,
+       3
+      ],
+      "Sym^2 of J_k, group": [
+       4,
+       4,
+       2
+      ]
+     },
+     "5": {
+      "2k-1-4j": [
+       9,
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       8,
+       6,
+       1
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       7,
+       7,
+       1
+      ],
+      "Sym^2 of J_k, group": [
+       8,
+       4,
+       3
+      ]
+     },
+     "6": {
+      "2k-1-4j": [
+       11,
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       8,
+       8,
+       5
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       7,
+       7,
+       7
+      ],
+      "Sym^2 of J_k, group": [
+       8,
+       8,
+       4,
+       1
+      ]
+     },
+     "7": {
+      "2k-1-4j": [
+       13,
+       9,
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       8,
+       8,
+       8,
+       4
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       7,
+       7,
+       7,
+       7
+      ],
+      "Sym^2 of J_k, group": [
+       8,
+       8,
+       8,
+       4
+      ]
+     },
+     "8": {
+      "2k-1-4j": [
+       15,
+       11,
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       15,
+       8,
+       8,
+       5
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       7,
+       7,
+       7
+      ],
+      "Sym^2 of J_k, group": [
+       8,
+       8,
+       8,
+       8,
+       4
+      ]
+     },
+     "9": {
+      "2k-1-4j": [
+       17,
+       13,
+       9,
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       14,
+       8,
+       6,
+       1
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       7,
+       7,
+       1
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       8,
+       8,
+       8,
+       5
+      ]
+     },
+     "10": {
+      "2k-1-4j": [
+       19,
+       15,
+       11,
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       16,
+       13,
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       15,
+       7,
+       3
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       16,
+       8,
+       8,
+       6,
+       1
+      ]
+     },
+     "11": {
+      "2k-1-4j": [
+       21,
+       17,
+       13,
+       9,
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       16,
+       16,
+       12,
+       4,
+       2
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       15,
+       15,
+       3,
+       3
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       16,
+       16,
+       8,
+       7,
+       3
+      ]
+     },
+     "12": {
+      "2k-1-4j": [
+       23,
+       19,
+       15,
+       11,
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       16,
+       16,
+       16,
+       11,
+       3
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       15,
+       15,
+       15,
+       3
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       16,
+       16,
+       16,
+       8,
+       4,
+       2
+      ]
+     },
+     "13": {
+      "2k-1-4j": [
+       25,
+       21,
+       17,
+       13,
+       9,
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       16,
+       16,
+       16,
+       16,
+       10,
+       1
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       15,
+       15,
+       15,
+       15,
+       1
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       16,
+       16,
+       16,
+       16,
+       8,
+       3
+      ]
+     },
+     "14": {
+      "2k-1-4j": [
+       27,
+       23,
+       19,
+       15,
+       11,
+       7,
+       3
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       9
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       15,
+       15,
+       15,
+       15,
+       15
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       8,
+       1
+      ]
+     },
+     "15": {
+      "2k-1-4j": [
+       29,
+       25,
+       21,
+       17,
+       13,
+       9,
+       5,
+       1
+      ],
+      "wedge^2 of J_(k+1), group": [
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       8
+      ],
+      "wedge^2 of J_(k+1), Lie": [
+       15,
+       15,
+       15,
+       15,
+       15,
+       15,
+       15,
+       15
+      ],
+      "Sym^2 of J_k, group": [
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       8
+      ]
+     }
+    }
+   }
+  },
+  "7 the stress run at side 256, every a (stress_test.json)": {
+   "pass": true,
+   "info": {
+    "checked": 511,
+    "failures": 0,
+    "k counts": {
+     "2": 19,
+     "0": 18,
+     "16": 36,
+     "21": 9,
+     "3": 27,
+     "13": 45,
+     "7": 45,
+     "18": 18,
+     "19": 18,
+     "6": 27,
+     "9": 18,
+     "8": 27,
+     "1": 45,
+     "10": 27,
+     "12": 9,
+     "4": 36,
+     "20": 9,
+     "11": 21,
+     "5": 18,
+     "17": 9,
+     "14": 18,
+     "15": 9,
+     "22": 3
+    },
+    "seconds": 256,
+    "finished": true
+   }
+  }
+ },
+ "status": "passed"
+}

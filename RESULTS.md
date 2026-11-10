@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**291 current results** and 5 superseded ones, from 258 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**291 current results** and 5 superseded ones, from 259 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 10 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 258 epics with their closures
+- [Epics](#epics): all 259 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1256,6 +1256,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A note on the learning line (`LEARN-NOTE-20261110-001`) | [closure](proofs/LEARN-NOTE-20261110-001Z/LEARN-NOTE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-NOTE-20261110-001/) |
 | 2026-11-10 | Learning at a rise (`LEARN-RISE-20261110-001`) | [closure](proofs/LEARN-RISE-20261110-001Z/LEARN-RISE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-RISE-20261110-001/) |
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
+| 2026-11-10 | Many points at once (`MANY-POINTS-20261110-001`) | — | [folder](research/MANY-POINTS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 | 2026-11-10 | Atoms within atoms (`NEST-ATOMS-20261110-001`) | [closure](proofs/NEST-ATOMS-20261110-001Z/NEST-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NEST-ATOMS-20261110-001/) |

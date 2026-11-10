@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "program": "foundations"
+  },
+  "id": "LINEAR-ROOTS-20261109-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up sub-goal B58 (RETURN-DIGITS-20261109-001's direction 1, selected 2026-11-09): prove that every nonzero root of the linearized determinant det(sum_(i=0..m) mu^(2^i) C_i) of RETURN-DIGITS-20261109-001A lies in GF(2n), which is the collapse of the cut-open torus walk at every power of two n = 2^m, or state the gap. Exploration before registration found that the multiplicities follow Kloosterman sums over GF(2n) (computed at sides 4 to 128); by the second moment of Kloosterman sums, lower bounds on those multiplicities would prove the collapse.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LINEAR-ROOTS-20261109-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-09 (Partially successful): the roots of the linearized determinant are not proved to lie in GF(2n), but their multiplicities are found. Computed exactly: with K(a) = sum over x in GF(2n) of (-1)^Tr(x + a/x), the cone's eigenvalue 1/a has algebraic multiplicity K(a)(K(a) - 2)/8, geometric multiplicity |K(a)|/4 and Jordan blocks 1, 5, 9, ... (K > 0) or 3, 7, 11, ... (K < 0), every class at sides 4 to 128 and every eigenvector count to side 512; equivalently (t^2 - 1)/8 for the trace t of the elliptic curve y^2 + xy = x^3 + a, whose j-invariant is the eigenvalue. Proved: K(a) = 0 mod 4 and these multiplicities add up to n(n - 1)/2, so lower bounds at every a would prove the collapse and the law; the eigenvectors at 1/a are one explicit kernel (k + 1) F(k + 1) = Omega_b(k) F(k) mod k^h; on GF(2n)* Omega_b(y) = y^h Tr(b^4/y) + b^2/y^h; the shift's curve is the Kloosterman curve. Computed: at sides 3 to 20 other than powers of two the eigenvalues are not in the field of (2n - 1)-th roots of unity. Stress run (sides 256 and 512) passed. Recommendation Continue, selected #1 (prove the Kloosterman lower bounds, sub-goal B58).",
+  "status_class": "complete",
+  "stop_rule": "Stop with a proof of the collapse at every power of two, a proof of the Kloosterman multiplicity law, a power of two where the law fails, or the reduction proved and the gap stated.",
+  "title": "The roots of the linearized determinant"
+}

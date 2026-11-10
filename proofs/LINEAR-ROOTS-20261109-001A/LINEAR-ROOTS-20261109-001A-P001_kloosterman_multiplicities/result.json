@@ -1,0 +1,472 @@
+{
+ "ticket": "LINEAR-ROOTS-20261109-001A",
+ "artifact_id": "LINEAR-ROOTS-20261109-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (RETURN-DIGITS-20261109-001A, CONE-COLLAPSE-20261109-001A's library, result and stress data)": {
+   "pass": true,
+   "info": {
+    "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/manifest.json": "0604ca4e92ae7d1d958ad8e993b0bcc5f7850a9927efb73891df1d10dfa4e8bd",
+    "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/digits_lib.py": "6c7f2c9605a19b939e3ace114e4a467b7e458d3146550b78424437b63ba3e69c",
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/collapse_lib.py": "43d32af505197d097bf5de21b03dd30140f75a8e9c12d16f0b9580d11b44fc18",
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/result.json": "0d32fe9c3d0295aa9b8538c77a0076ce1d46c95583c439a5162f860cc5c7d4c5",
+    "research/CONE-COLLAPSE-20261109-001/stress_test.json": "c4dbfdebff3a13b7b63246172fe2fd7bfdf1932a6a761053a56b38b575c22f5e"
+   }
+  },
+  "1 Theorem 1: sum over a in GF(q)* of K(a)(K(a) - 2)/8 = q(q - 2)/8 and K(a) = 0 mod 4, q = 4 to 512": {
+   "pass": true,
+   "info": {
+    "4": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 1,
+     "q(q - 2)/8": 1,
+     "pass": true
+    },
+    "8": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 6,
+     "q(q - 2)/8": 6,
+     "pass": true
+    },
+    "16": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 28,
+     "q(q - 2)/8": 28,
+     "pass": true
+    },
+    "32": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 120,
+     "q(q - 2)/8": 120,
+     "pass": true
+    },
+    "64": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 496,
+     "q(q - 2)/8": 496,
+     "pass": true
+    },
+    "128": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 2016,
+     "q(q - 2)/8": 2016,
+     "pass": true
+    },
+    "256": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 8128,
+     "q(q - 2)/8": 8128,
+     "pass": true
+    },
+    "512": {
+     "K(a) = 0 mod 4": true,
+     "sum K(K - 2)/8": 32640,
+     "q(q - 2)/8": 32640,
+     "pass": true
+    }
+   }
+  },
+  "2 Theorem 2: dim ker(I + C_s(a)) = dim of the solutions of (k + 1) F(k + 1) = Omega_b(k) F(k) mod k^h, b^2 = a, every a, sides 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": {
+     "values of a": 7,
+     "mismatches": 0
+    },
+    "8": {
+     "values of a": 15,
+     "mismatches": 0
+    },
+    "16": {
+     "values of a": 31,
+     "mismatches": 0
+    },
+    "32": {
+     "values of a": 63,
+     "mismatches": 0
+    }
+   }
+  },
+  "3 Theorem 3: k^h Omega_b(k) = b^2 + sum_(i=0..m) b^(2^(i+2)) k^(2h - 2^i) for b in GF(2n) (sides 4 to 256), and Omega_b(y) = y^h Tr(b^4/y) + b^2/y^h on GF(2n)* (sides 4 to 64)": {
+   "pass": true,
+   "info": {
+    "4": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    },
+    "8": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    },
+    "16": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    },
+    "32": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    },
+    "64": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    },
+    "128": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    },
+    "256": {
+     "polynomial identity mismatches": 0,
+     "evaluation mismatches (sides to 64)": 0
+    }
+   }
+  },
+  "4 computed: dim ker(I + C_s(a)) = |K(a)|/4 for every a in GF(2n)*, sides 4 to 128": {
+   "pass": true,
+   "info": {
+    "4": {
+     "values of a": 7,
+     "mismatches": 0
+    },
+    "8": {
+     "values of a": 15,
+     "mismatches": 0
+    },
+    "16": {
+     "values of a": 31,
+     "mismatches": 0
+    },
+    "32": {
+     "values of a": 63,
+     "mismatches": 0
+    },
+    "64": {
+     "values of a": 127,
+     "mismatches": 0
+    },
+    "128": {
+     "values of a": 255,
+     "mismatches": 0
+    }
+   }
+  },
+  "5 computed: algebraic multiplicity K(K - 2)/8 and Jordan blocks of the law, every class, sides 4 to 128 (CONE-COLLAPSE-20261109-001's data)": {
+   "pass": true,
+   "info": {
+    "4": {
+     "classes": 3,
+     "k mismatches": 0,
+     "Jordan blocks 2k - 1, 2k - 5, ... (CONE-COLLAPSE)": true
+    },
+    "8": {
+     "classes": 5,
+     "k mismatches": 0,
+     "Jordan blocks 2k - 1, 2k - 5, ... (CONE-COLLAPSE)": true
+    },
+    "16": {
+     "classes": 7,
+     "k mismatches": 0,
+     "Jordan blocks 2k - 1, 2k - 5, ... (CONE-COLLAPSE)": true
+    },
+    "32": {
+     "classes": 13,
+     "k mismatches": 0,
+     "Jordan blocks 2k - 1, 2k - 5, ... (CONE-COLLAPSE)": true
+    },
+    "64": {
+     "classes": 19,
+     "k mismatches": 0,
+     "Jordan blocks 2k - 1, 2k - 5, ... (CONE-COLLAPSE)": true
+    },
+    "128": {
+     "classes": 35,
+     "mismatches (multiplicity, k, kernel dims of m_s(A)^j)": 0
+    }
+   }
+  },
+  "6 computed: the law's period exponent (least power of two at least the largest block) equals the computed one, sides 4 to 128": {
+   "pass": true,
+   "info": {
+    "4": {
+     "largest Jordan block": 3,
+     "predicted e": 4,
+     "computed e": 4
+    },
+    "8": {
+     "largest Jordan block": 5,
+     "predicted e": 8,
+     "computed e": 8
+    },
+    "16": {
+     "largest Jordan block": 9,
+     "predicted e": 16,
+     "computed e": 16
+    },
+    "32": {
+     "largest Jordan block": 13,
+     "predicted e": 16,
+     "computed e": 16
+    },
+    "64": {
+     "largest Jordan block": 19,
+     "predicted e": 32,
+     "computed e": 32
+    },
+    "128": {
+     "largest Jordan block": 29,
+     "predicted e": 32,
+     "computed e": 32
+    }
+   }
+  },
+  "7 computed: K(1) = 1 - t_(m+1) for the curve y^2 + xy = x^3 + 1, so the eigenvalue 1 has multiplicity (t_(m+1)^2 - 1)/8, sides 4 to 128": {
+   "pass": true,
+   "info": {
+    "4": {
+     "K(1)": -4,
+     "1 - t_(m+1)": -4,
+     "multiplicity (t^2 - 1)/8": 3
+    },
+    "8": {
+     "K(1)": 0,
+     "1 - t_(m+1)": 0,
+     "multiplicity (t^2 - 1)/8": 0
+    },
+    "16": {
+     "K(1)": 12,
+     "1 - t_(m+1)": 12,
+     "multiplicity (t^2 - 1)/8": 15
+    },
+    "32": {
+     "K(1)": -8,
+     "1 - t_(m+1)": -8,
+     "multiplicity (t^2 - 1)/8": 10
+    },
+    "64": {
+     "K(1)": -12,
+     "1 - t_(m+1)": -12,
+     "multiplicity (t^2 - 1)/8": 21
+    },
+    "128": {
+     "K(1)": 32,
+     "1 - t_(m+1)": 32,
+     "multiplicity (t^2 - 1)/8": 120
+    }
+   }
+  },
+  "8 computed: at sides 3 to 20 other than powers of two the cone has an irreducible factor of degree not dividing ord_(2n - 1)(2)": {
+   "pass": true,
+   "info": {
+    "3": {
+     "order of 2 mod 2n - 1": 4,
+     "factor degrees": [
+      3
+     ],
+     "some degree not dividing it": true
+    },
+    "5": {
+     "order of 2 mod 2n - 1": 6,
+     "factor degrees": [
+      10
+     ],
+     "some degree not dividing it": true
+    },
+    "6": {
+     "order of 2 mod 2n - 1": 10,
+     "factor degrees": [
+      1,
+      14
+     ],
+     "some degree not dividing it": true
+    },
+    "7": {
+     "order of 2 mod 2n - 1": 12,
+     "factor degrees": [
+      21
+     ],
+     "some degree not dividing it": true
+    },
+    "9": {
+     "order of 2 mod 2n - 1": 8,
+     "factor degrees": [
+      11,
+      25
+     ],
+     "some degree not dividing it": true
+    },
+    "10": {
+     "order of 2 mod 2n - 1": 18,
+     "factor degrees": [
+      1,
+      15,
+      29
+     ],
+     "some degree not dividing it": true
+    },
+    "11": {
+     "order of 2 mod 2n - 1": 6,
+     "factor degrees": [
+      55
+     ],
+     "some degree not dividing it": true
+    },
+    "12": {
+     "order of 2 mod 2n - 1": 11,
+     "factor degrees": [
+      1,
+      17,
+      48
+     ],
+     "some degree not dividing it": true
+    },
+    "13": {
+     "order of 2 mod 2n - 1": 20,
+     "factor degrees": [
+      5,
+      16,
+      18,
+      39
+     ],
+     "some degree not dividing it": true
+    },
+    "14": {
+     "order of 2 mod 2n - 1": 18,
+     "factor degrees": [
+      1,
+      3,
+      4,
+      10,
+      25,
+      43
+     ],
+     "some degree not dividing it": true
+    },
+    "15": {
+     "order of 2 mod 2n - 1": 28,
+     "factor degrees": [
+      4,
+      48,
+      53
+     ],
+     "some degree not dividing it": true
+    },
+    "17": {
+     "order of 2 mod 2n - 1": 10,
+     "factor degrees": [
+      3,
+      4,
+      10,
+      58,
+      61
+     ],
+     "some degree not dividing it": true
+    },
+    "18": {
+     "order of 2 mod 2n - 1": 12,
+     "factor degrees": [
+      21,
+      23,
+      109
+     ],
+     "some degree not dividing it": true
+    },
+    "19": {
+     "order of 2 mod 2n - 1": 36,
+     "factor degrees": [
+      13,
+      24,
+      31,
+      36,
+      67
+     ],
+     "some degree not dividing it": true
+    },
+    "20": {
+     "order of 2 mod 2n - 1": 12,
+     "factor degrees": [
+      1,
+      3,
+      42,
+      142
+     ],
+     "some degree not dividing it": true
+    }
+   }
+  },
+  "9 the stress run (stress_test.json)": {
+   "pass": true,
+   "info": {
+    "geometric law at side 256": {
+     "values of a": 511,
+     "mismatches": 0,
+     "counts": {
+      "kernel 1, K -4": 19,
+      "kernel 0, K 0": 18,
+      "kernel 8, K -32": 36,
+      "kernel 11, K 44": 9,
+      "kernel 2, K 8": 27,
+      "kernel 7, K 28": 45,
+      "kernel 4, K 16": 45,
+      "kernel 9, K -36": 18,
+      "kernel 10, K 40": 18,
+      "kernel 3, K -12": 27,
+      "kernel 5, K 20": 18,
+      "kernel 4, K -16": 27,
+      "kernel 1, K 4": 45,
+      "kernel 5, K -20": 27,
+      "kernel 6, K -24": 9,
+      "kernel 2, K -8": 36,
+      "kernel 10, K -40": 9,
+      "kernel 6, K 24": 21,
+      "kernel 3, K 12": 18,
+      "kernel 9, K 36": 9,
+      "kernel 7, K -28": 18,
+      "kernel 8, K 32": 9,
+      "kernel 11, K -44": 3
+     },
+     "pass": true
+    },
+    "seconds": 212,
+    "geometric law at side 512": {
+     "values of a": 1023,
+     "mismatches": 0,
+     "counts": {
+      "kernel 14, K -56": 11,
+      "kernel 0, K 0": 60,
+      "kernel 8, K -32": 20,
+      "kernel 2, K 8": 40,
+      "kernel 3, K -12": 40,
+      "kernel 8, K 32": 40,
+      "kernel 12, K 48": 20,
+      "kernel 10, K 40": 35,
+      "kernel 15, K -60": 12,
+      "kernel 14, K 56": 30,
+      "kernel 13, K 52": 20,
+      "kernel 6, K -24": 60,
+      "kernel 1, K 4": 30,
+      "kernel 1, K -4": 40,
+      "kernel 9, K 36": 50,
+      "kernel 4, K -16": 45,
+      "kernel 9, K -36": 40,
+      "kernel 3, K 12": 50,
+      "kernel 2, K -8": 20,
+      "kernel 5, K 20": 50,
+      "kernel 5, K -20": 20,
+      "kernel 7, K -28": 40,
+      "kernel 12, K -48": 20,
+      "kernel 10, K -40": 40,
+      "kernel 4, K 16": 45,
+      "kernel 11, K 44": 20,
+      "kernel 11, K -44": 30,
+      "kernel 13, K -52": 30,
+      "kernel 7, K 28": 20,
+      "kernel 15, K 60": 20,
+      "kernel 6, K 24": 20,
+      "kernel 16, K 64": 5
+     },
+     "pass": true
+    },
+    "pass": true
+   }
+  }
+ },
+ "status": "passed"
+}

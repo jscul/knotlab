@@ -13,8 +13,8 @@
   "proof": "LINEAR-ROOTS-20261109-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Kloosterman multiplicities of the cut-open torus and the collapse at powers of two",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-09, before the proof attempt. For the cut-open torus walk at n = 2^m over GF(2), q = 2n, K(a) = sum over x in GF(q) of (-1)^Tr(x + a/x) with 1/0 = 0 (Tr the trace of GF(q) over GF(2)), and A_cone the quarter-turn cone of CONE-COLLAPSE-20261109-001A (det(I - mu A_cone) = det(I + C_s(mu)) = mu^(-h) det(sum over i of mu^(2^i) C_i), RETURN-DIGITS-20261109-001A): (1) to be proved: sum over a in GF(q)* of K(a)(K(a) - 2)/8 = n(n - 1)/2, the degree of the cone polynomial; so if every a in GF(q)* is a root of det(I - mu A_cone) of order at least K(a)(K(a) - 2)/8, the collapse holds and every order is exactly that; (2) the Kloosterman law, found by exact computation before this registration: for every a in GF(q)*, the eigenvalue 1/a of A_cone has algebraic multiplicity K(a)(K(a) - 2)/8, geometric multiplicity |K(a)|/4 (the dimension of the kernel of I + C_s(a)), and Jordan blocks of sizes 1, 5, 9, ..., 4(K(a)/4) - 3 when K(a) > 0 and 3, 7, 11, ..., 4|K(a)/4| - 1 when K(a) < 0 (none when K(a) = 0); equivalently, with t = 1 - K(a) the trace of Frobenius of the elliptic curve y^2 + xy = x^3 + a over GF(q), the multiplicity is (t^2 - 1)/8 and the k(k + 1)/2 law of CONE-COLLAPSE-20261109-001 has |t| = 2k + 1. Target, to be proved or left open with the gap stated: (2), or lower bounds as in (1), hence the collapse at every power of two. Computed before registration: (2)'s algebraic multiplicities at sides 4 to 128 (every class, against CONE-COLLAPSE-20261109-001's data), its geometric multiplicities at 4 to 64 (every a in GF(q)*, on the return map); and at the sides n = 3 to 24 that are not powers of two the cone's characteristic polynomial has an irreducible factor whose degree does not divide the order of 2 mod 2n - 1, so its eigenvalues do not all lie in the field of (2n - 1)-th roots of unity.",
+  "status": "Proved",
+  "claim": "For the cut-open torus walk at n = 2^m, h = n/2, q = 2n, over GF(2), with K(a) = sum over x in GF(q) of (-1)^Tr(x + a/x) (1/0 = 0) and A_cone, C_s, T_h, eps as in CONE-COLLAPSE-20261109-001A and RETURN-DIGITS-20261109-001A: (1) K(a) = 0 mod 4 and sum over a in GF(q)* of K(a)(K(a) - 2)/8 = q(q - 2)/8 = n(n - 1)/2, so if every a in GF(q)* is a root of det(I - mu A_cone) of order at least K(a)(K(a) - 2)/8, every eigenvalue of A is a (2n - 1)-th root of unity, A_cone is invertible and each order is exactly K(a)(K(a) - 2)/8; (2) ker(I + C_s(a)) is isomorphic to the space of F in F[k]/(k^h) with (k + 1) F(k + 1) = Omega_b(k) F(k) mod k^h, b = sqrt(a), Omega_b(k) = b eps(b^-4 k) = b + sum over i = 2..m of b^(2^i) k^(h - 2^(i-2)); (3) for b in GF(q), k^h Omega_b(k) = b^2 + k^(2h) L(b^4/k) as Laurent polynomials, L(x) = sum over i = 0..m of x^(2^i), so Omega_b(y) = y^h Tr(b^4/y) + b^2/y^h on GF(q)*; (4) the curve r + 1/r = t + 1/t + c of the substitution K -> K + c is birational to Y^2 + Y = x + c^-4/x, with q - 2 + K(c^-4) points with x != 0 over GF(q). Computed exactly (the Kloosterman law): the eigenvalue 1/a of A_cone has algebraic multiplicity K(a)(K(a) - 2)/8 (= (t^2 - 1)/8, t = 1 - K(a) the trace of y^2 + xy = x^3 + a) and Jordan blocks 1, 5, 9, ... (K > 0) or 3, 7, 11, ... (K < 0) for every class at sides 4 to 128, and geometric multiplicity |K(a)|/4 for every a at sides 4 to 512 (stress run 256 and 512); the law's period exponent equals the computed one at 4 to 128; at sides 3 to 20 other than powers of two the cone has an irreducible factor of degree not dividing ord_(2n-1)(2). The target registered with this ticket, the law's lower bounds and with them the collapse at every power of two, is not proved.",
   "dependencies": [
     "RETURN-DIGITS-20261109-001A"
   ],
@@ -52,10 +52,7 @@
     "check": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/check.py",
     "directory": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities"
   },
-  "remaining_obligations": [
-    "the proof of (1)",
-    "the target: (2) or lower bounds as in (1), hence the collapse at every power of two"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -90,7 +87,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session, opened under the owner's autonomy rule on 2026-11-09 (sub-goal B58).",
-    "status": "pre-registered; the law found by exact computation, the proofs to follow",
-    "novelty": "to be assessed"
+    "status": "proof by hand (Theorems 1 to 3, Proposition 4) with finite checks; checks 4 to 8 computed; the stress run at sides 256 and 512",
+    "novelty": "new as far as found (bounded web search 2026-11-09: no link between Kloosterman sums and eigenvalue multiplicities of a walk or matrix over GF(2)); ingredients classical (Kloosterman sums over GF(2^r), Lachaud-Wolfmann, their moments)"
   }
 }

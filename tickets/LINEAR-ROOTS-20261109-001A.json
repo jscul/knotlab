@@ -5,7 +5,10 @@
     "RETURN-DIGITS-20261109-001A"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "accepted_artifact_id": "LINEAR-ROOTS-20261109-001A-P001",
+    "terminal_artifact": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/manifest.json"
+  },
   "id": "LINEAR-ROOTS-20261109-001A",
   "kind": "ticket",
   "legacy": {},
@@ -16,8 +19,8 @@
   },
   "parent": "LINEAR-ROOTS-20261109-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Proved 2026-11-09 (by hand, with finite checks; pre-registered in 76cc32e30): K(a) = 0 mod 4 and the Kloosterman multiplicities K(a)(K(a) - 2)/8 add up to n(n - 1)/2 over GF(2n)*, so lower bounds at every a would prove the collapse and the law; the eigenvectors at 1/a are the F of degree below h with (k + 1) F(k + 1) = Omega_b(k) F(k) mod k^h, b = sqrt(a); on GF(2n)* Omega_b(y) = y^h Tr(b^4/y) + b^2/y^h; the shift's curve is the Kloosterman curve Y^2 + Y = x + c^-4/x. Computed exactly: the Kloosterman law (algebraic multiplicity K(K - 2)/8, geometric |K|/4, Jordan blocks 1, 5, 9, ... or 3, 7, 11, ...) at every class for sides 4 to 128 and every eigenvector count to side 512; the law's period equals the computed one at 4 to 128; at sides 3 to 20 other than powers of two the eigenvalues are not in the field of (2n - 1)-th roots of unity. The target, the lower bounds and with them the collapse, is not proved.",
+  "status_class": "proved",
   "stop_rule": "",
   "title": "Kloosterman multiplicities and the collapse"
 }

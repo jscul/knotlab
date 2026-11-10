@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**273 current results** and 5 superseded ones, from 225 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**274 current results** and 5 superseded ones, from 226 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 46 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 47 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 3 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 225 epics with their closures
+- [Epics](#epics): all 226 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -159,6 +159,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
   On tori of every shape of the three regular lattices, a digon face kills a factor of the walk polynomial so composition cannot reach everywhere (proved), and at odd index that and the honeycomb's turn-pinned ring are the only obstructions apart from one torus of index 63 (computed to index 151). At even index no rule by the lattice mod 16, the torus group's 2-part or its mirrors decides it.
   *Wording qualification: no face of these tori has two sides; read "digon face" as a doubled pair, two contacts consecutive in the same order on both rings they share, which is what the theorem defines (see REROUTE-20261109-001A).*
   [proof P001](proofs/LATTICE-REACH-20261109-001A/LATTICE-REACH-20261109-001A-P001_odd_index_reaches_everywhere/proof.md), [epic closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · At powers of two the cut-open torus's eigenvalue multiplicities are Kloosterman sums** (`LINEAR-ROOTS-20261109-001-D001`).
+  At sides 2^m every eigenvalue λ of the cut-open torus walk appears K(1/λ)(K(1/λ) − 2)/8 times, K the Kloosterman sum of GF(2n), that is (t² − 1)/8 for the elliptic curve with j-invariant λ, computed exactly for every class to side 128 and every eigenvector count to side 512. These multiplicities provably add up to the whole spectrum, so lower bounds alone would prove that every eigenvalue lies in GF(2n), which stays open.
+  [proof P001](proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/proof.md), [epic closure](proofs/LINEAR-ROOTS-20261109-001Z/LINEAR-ROOTS-20261109-001Z-P001_epic_closure/proof.md)
 - **2026-11-09 · No row after the first is open, so knots across time cannot be read from the last growth event** (`REBASE-KNOTS-20261109-001-D001`).
   Every cell of these networks is read by exactly two cells, so every row after the first has a fixed parity and is not open. Reading knots from the last growth event therefore treats a determined row as open, and read natively from any later row the knots fail even without growth, so the loss under growth while running is real.
   [proof P001](proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/proof.md), [epic closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md)
@@ -1167,6 +1170,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Is isolation necessary for balance under doubling? (`ISOLATION-NEED-20261109-001`) | [closure](proofs/ISOLATION-NEED-20261109-001Z/ISOLATION-NEED-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/ISOLATION-NEED-20261109-001/) |
 | 2026-11-09 | Which lattices compose everywhere (`LATTICE-REACH-20261109-001`) | [closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-REACH-20261109-001/) |
 | 2026-11-09 | Learning in handles (`LEARN-HANDLES-20261109-001`) | [closure](proofs/LEARN-HANDLES-20261109-001Z/LEARN-HANDLES-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-HANDLES-20261109-001/) |
+| 2026-11-09 | The roots of the linearized determinant (`LINEAR-ROOTS-20261109-001`) | [closure](proofs/LINEAR-ROOTS-20261109-001Z/LINEAR-ROOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LINEAR-ROOTS-20261109-001/) |
 | 2026-11-09 | A plane read plainly beyond tori (`PLANE-PLAIN-20261109-001`) | [closure](proofs/PLANE-PLAIN-20261109-001Z/PLANE-PLAIN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/PLANE-PLAIN-20261109-001/) |
 | 2026-11-09 | Knots read from the last growth event (`REBASE-KNOTS-20261109-001`) | [closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REBASE-KNOTS-20261109-001/) |
 | 2026-11-09 | Large networks persistent without flips (`REROUTE-20261109-001`) | [closure](proofs/REROUTE-20261109-001Z/REROUTE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REROUTE-20261109-001/) |

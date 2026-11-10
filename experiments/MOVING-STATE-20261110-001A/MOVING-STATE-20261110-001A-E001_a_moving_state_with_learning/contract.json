@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "MOVING-STATE-20261110-001A-E001",
+  "ticket": "MOVING-STATE-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Challenge of A26: on the atom spaces of ATOM-LAYERS-20261110-001 where the fixed-state learner was stuck or frozen, does a state that flips one point between learning steps (never raising the dissonance weight W) free the learner or move the frozen unit?",
+  "public_inputs": {
+    "spaces": "layers_lib.Layered on K_2 and K_3, every line orbit l0: atoms at the line at distance 2 (genus 1, away); at the lines at distances 2 and 3 (genus 2, away); and at l0 plus the line at distance 1, 2 or 3 (genus 2, at l0), as in ATOM-LAYERS-20261110-001A check.py.",
+    "M": "each round: if stuck_lib.search(r = 3) finds a step lowering W, take it; else flip a point chosen uniformly among the flips with W not increasing; else stop. 150 rounds, 10 runs per space, random.Random(71) in a fixed loop order. Genus-2 at-l0 spaces start from the floor state the sight-4 learner of ATOM-LAYERS reached; the others from the extended flat state.",
+    "F": "for every genus-2 at-l0 floor state: breadth-first search over states reachable by single flips keeping W at the floor (law fixed), at most 20,000 states; the faces holding the unit (agree 3) by level and atom.",
+    "levels": "layers_lib.Layered.face_level and defects."
+  },
+  "forbidden_inputs": [
+    "Changing dynamics, spaces, budgets or seeds after seeing results",
+    "Dropping runs"
+  ],
+  "primary_observable": "S1: genus-1 away runs resolved; S2: genus-2 away runs reaching W = 1; S3: atoms and levels whose faces hold the unit in each floor component; also the levels visited by M's runs.",
+  "cheapest_meaningful_control": "The fixed-state learner's outcomes recorded by ATOM-LAYERS-20261110-001A (stuck at W = 2 and 3; the unit frozen in the second atom).",
+  "resource_budget": {
+    "wall_minutes": 30,
+    "memory_mib": 4096
+  },
+  "first_executable_signal": "M on K_2's genus-1 away space.",
+  "decision_or_followup_rule": "S1 holds if every genus-1 away run resolves; S2 if every genus-2 away run reaches W = 1; S3 if every floor component holds the unit inside both atoms, and at the upper level where ATOM-LAYERS' census found upper hosts. A26: Confirmed if no stuck run is freed and no frozen unit leaves its atom (in M or F); Overturned as a limit on what learning reaches if any is freed or leaves.",
+  "stop_rule": "Stop at the declared spaces, runs and rounds.",
+  "nonclaims": [
+    "Exploratory: small spheres and samples.",
+    "No claim about minds."
+  ],
+  "feasibility_disclosure": "Nothing was run before freezing."
+}

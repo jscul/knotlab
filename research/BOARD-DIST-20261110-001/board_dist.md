@@ -167,3 +167,34 @@ names is counted per name) and A54 (places are named by words in two letters) ad
 
 **Recommendation.** Continue with #1. The finitary question is closed by proof; the infinitary limit of identity is where the owner's
 idea still has room without naming a shape.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 05:24 UTC and copied here verbatim.
+
+I've closed and published the board-as-distinctions epic. I proved an obstruction: when "these two names are one place" is a distinction of the CNF, no uniform law that names no relation can choose the plane.
+
+**What I proved.** Names are the words in x, y and their inverses. With that naming, the boards are exactly the Schreier graphs of subgroups of the free group: the tree, the plane, lines, tori and the rest. Suppose a law only says which names are one place, never that a word comes back to where it started. If it allows any infinite board, it also allows the tree, so it never forces the plane. Such laws can force finite boards, and "names that look alike are one place" always makes the board finite. One named relation is enough, though: a closing square at every name, together with an aperiodic tile law, forces exactly the plane. Your hint fits here: shapes have rules, and the plane's rule is a shape.
+
+**The census.** I froze an exact census of all 1,024 Life-like one-bit laws plus the atom, and every prediction held with no violation, including one size past. The values can stop a square from closing. In 60 laws the square's identity distinction is knotted with two values that the square makes neighbours, and in 56 of those the knot is a single clause of three. Nothing that involves the board is native, though, because a board made of names can't change by finitely many distinctions.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the board as distinctions | **Status:** Successful | Answered by proof; the frozen census held every prediction |
+| Local direction: boards made of distinctions | Obstruction proved | Finitary relation-free laws leave the tree open; the infinitary limit is what remains |
+| Broader exploration: question 9 | Sharpened | LOGIC-AXIS's barrier now covers boards made of distinctions too |
+| Long-term goal: G1 Space from a law | Obstruction learned | The plane needs a named shape or a process |
+
+**Next step:** Continue with #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Leibniz boards (B111) | 3/3 | 2/3 | Prove or refute "tree or finite" when names that agree at every radius are one place | Selected |
+| 2 | Rigid worlds at radius 2 | 2/3 | 3/3 | Search for a law that forces a finite 2D torus | Alternative |
+| 3 | Abstract names (A54) | 2/3 | 2/3 | Names without letters: does the theorem survive? | Alternative |
+| 4 | Nativeness per place (A53) | 1/3 | 3/3 | Re-read the 60 square knots per place | Alternative |
+
+**Corrections:** none. **Goals:** G1 checkpoint (obstruction learned), B92 taken, sub-goal B111 recorded. **Assumptions:** A51 is now confirmed for planes within relation-free laws. I added A53 (nativeness counted per name) and A54 (two-letter naming).
+**Basket:** spacing's HARD-FLAT-20261107-001#3 and B16. I didn't take either, because #1 rates higher and picks up where the obstruction stops.
+
+Two deviations are disclosed in the record. A stress script stalled on parity, so I switched it to linear algebra over GF(2). One pigeonhole query was decided by counting after the solver ran for 28 minutes. Commits: c3b6a0bde, 9248d6929, 2e638b79b. My tracking rows went in with another thread's tracking commit, b812d2965.

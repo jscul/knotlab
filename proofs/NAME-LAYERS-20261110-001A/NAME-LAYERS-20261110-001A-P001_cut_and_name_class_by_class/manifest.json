@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NAME-LAYERS-20261110-001A-P001",
+  "canonical_id": "NAME-LAYERS-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "NAME-LAYERS-20261110-001A",
+  "proof": "NAME-LAYERS-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Cut and name, class by class",
+  "status": "Proved",
+  "claim": "Proved by hand: through a three-edge cut a lower level's unsatisfiable class offers the upper level the replaced line (a contradiction becomes a constraint, and a point crosses levels); through a parity name it offers nothing, and each level keeps its own forced dissonance: two readings of layers. Computed on seven lower-level spaces and two namings: D and N1 held; names carry class-dependent correlations in 41 of 69 satisfiable class readings, including single excluded patterns, which no cut can offer.",
+  "dependencies": [
+    "NEST-ATOMS-20261110-001A",
+    "OTHER-ATOMS-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A nonempty name relation in an unsatisfiable class."
+  ],
+  "lineage": {
+    "home_scope": "NAME-LAYERS-20261110-001",
+    "epic_path": [
+      "NAME-LAYERS-20261110-001"
+    ],
+    "parents": [
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "research/NAME-LAYERS-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/NAME-LAYERS-20261110-001/preregistration.md": "0ad01e243a2d3253e7ea41a1a8e58fef28945a14478efa6a1ab394327cc19b73"
+  },
+  "paths": {
+    "manifest": "proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class/manifest.json",
+    "identity": "proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class/identity.json",
+    "proof": "proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class/proof.md",
+    "result": "proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class/result.json",
+    "check": "proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class/check.py",
+    "directory": "proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Seven lower-level spaces (lattice tori, K_2, two composites), two frozen namings.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 6901b52a8).",
+    "status": "proved by hand; census exhaustive per class (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

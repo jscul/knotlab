@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**298 current results** and 5 superseded ones, from 266 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**299 current results** and 5 superseded ones, from 266 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 13 results
+- [Other results](#other-results): 14 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 266 epics with their closures
 
@@ -1003,6 +1003,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · In the layered memory, points apart move independently in every order, and floor units sit where the rule says** (`MANY-POINTS-20261110-001-D001`).
   In the two-level space no region holds three floor units and an acting composite holds exactly two, one per leaf (proved by hand, checked exactly). Disturbances in different composites learned away independently in every order with the address kept (320 of 320 pairs, computed), while points sharing a line interacted, mostly cancelling.
   [proof P001](proofs/MANY-POINTS-20261110-001A/MANY-POINTS-20261110-001A-P001_where_units_sit_together/proof.md), [proof P001](proofs/MANY-POINTS-20261110-001B/MANY-POINTS-20261110-001B-P001_two_points_at_once/proof.md), [proof P001](proofs/MANY-POINTS-20261110-001C/MANY-POINTS-20261110-001C-P001_writing_with_more_addresses/proof.md), [epic closure](proofs/MANY-POINTS-20261110-001Z/MANY-POINTS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Two readings of layers: a three-edge cut carries contradictions up, a parity name carries correlations** (`NAME-LAYERS-20261110-001-D001`).
+  Through a three-edge cut a lower level's unsatisfiable class becomes the upper level's constraint, so a dissonance crosses levels; through a parity name it cannot, and each level keeps its own (proved by hand). Names instead carry class-dependent correlations of the lower level's states, single clauses included, which no cut can offer (computed).
+  [proof P001](proofs/NAME-LAYERS-20261110-001A/NAME-LAYERS-20261110-001A-P001_cut_and_name_class_by_class/proof.md), [epic closure](proofs/NAME-LAYERS-20261110-001Z/NAME-LAYERS-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · A uniform growth rule grows a remembering handle only with the Fano plane** (`NATIVE-ATOM-20261110-001-D001`).
   Splicing a lattice torus less a point at a violated line with one sign pattern on every line grows an atom that holds the dissonance exactly for the Fano torus with a constant pattern (proved by hand from the uniform-Fano theorem); every other class-forced atom grows transparent, and learning can then write it into its acting class.
   [proof P001](proofs/NATIVE-ATOM-20261110-001A/NATIVE-ATOM-20261110-001A-P001_uniform_growth/proof.md), [proof P001](proofs/NATIVE-ATOM-20261110-001B/NATIVE-ATOM-20261110-001B-P001_growth_then_learning/proof.md), [epic closure](proofs/NATIVE-ATOM-20261110-001Z/NATIVE-ATOM-20261110-001Z-P001_epic_closure/proof.md)
@@ -1283,7 +1286,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Many points at once (`MANY-POINTS-20261110-001`) | [closure](proofs/MANY-POINTS-20261110-001Z/MANY-POINTS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MANY-POINTS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
-| 2026-11-10 | Layers through a naming knot (`NAME-LAYERS-20261110-001`) | — | [folder](research/NAME-LAYERS-20261110-001/) |
+| 2026-11-10 | Layers through a naming knot (`NAME-LAYERS-20261110-001`) | [closure](proofs/NAME-LAYERS-20261110-001Z/NAME-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NAME-LAYERS-20261110-001/) |
 | 2026-11-10 | Which atom a growth law grows (`NATIVE-ATOM-20261110-001`) | [closure](proofs/NATIVE-ATOM-20261110-001Z/NATIVE-ATOM-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-ATOM-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 | 2026-11-10 | Atoms within atoms (`NEST-ATOMS-20261110-001`) | [closure](proofs/NEST-ATOMS-20261110-001Z/NEST-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NEST-ATOMS-20261110-001/) |

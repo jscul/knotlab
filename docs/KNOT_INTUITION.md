@@ -2053,7 +2053,17 @@ So network holes come in two kinds:
      appears exactly at the odd spacings read, whose corners hold an even number of own cells.
    - **Reading.** Territories are the rule at every spacing read; slower doubling at an odd spacing is the one place left where a border
      might be crossed with balance kept (sub-goal B63).
-   - **Next (selected, B55).** Why odd spacings keep balance ([decision note](../research/SPACING-20261109-001/spacing.md)).
+   - **Next (taken: sub-goal B63, next entry; then B55).** Crossing a border at odd spacings; why odd spacings keep balance
+     ([decision note](../research/SPACING-20261109-001/spacing.md)).
+
+   **2026-11-10: crossing a territory border with balance** (`CROSS-BORDER-20261110-001`).
+   - **The question.** Pre-registered: at g = 3 and 5, does doubling slow enough for influence to cross a territory border keep every
+     stage balanced?
+   - **Crossing breaks balance (exploratory, exact).** Doubling every 8 to 16 lags at g = 3, or 12 to 16 at g = 5, lets original rings
+     hear each other, and every such schedule has an unbalanced stage within two doublings of the crossing.
+   - **Reading.** Hearing inside territories is compatible with keeping knots; hearing across them, followed by more growth, is not, in
+     every schedule read (g = 2 to 5). While a network grows it keeps its knots or reads distance across its grown plane, not both.
+   - **Next (selected, B55).** Why odd spacings keep balance ([decision note](../research/CROSS-BORDER-20261110-001/cross_border.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

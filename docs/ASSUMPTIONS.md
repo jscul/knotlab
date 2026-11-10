@@ -1277,6 +1277,11 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Extended by `LEIBNIZ-BOARDS-20261110-001`
+    ([Leibniz boards](../research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)): under Leibniz's rule in full (names whose
+    views agree at every radius are one place), an infinitary identity rule, no one-bit Life-like law and not the atom forces the
+    plane, since each has finitely many solutions or a periodic solution with a free choice, which leaves the tree as a board
+    (proved with a frozen exact census). For arbitrary finite alphabets this is reduced, not proved.
   - 2026-11-10 · Confirmed for planes within laws that name no relation, by `BOARD-DIST-20261110-001`
     ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)). With the board made of identity distinctions on
     the words in x, y and their inverses, a law whose identity literals relate only the same offset of two names allows the tree

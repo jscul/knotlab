@@ -1439,7 +1439,7 @@ evidence: results and their status come from the records each entry links.
   dissonance of an unnamed atom that acts from a free unit in the host, so it cannot check that the other atoms are clear; a memory word
   asks for its zeros as well as its ones.
 - **Rests on it.** That epic's native learner, whose probe checks each atom asked 0 for a moment its region is free of dissonance
-  ([its pre-registration](../research/NATIVE-WRITE-20261110-001/preregistration.md)).
+  ([native writing](../research/NATIVE-WRITE-20261110-001/native_write.md)).
 - **Challenge.** Name only the atoms asked 1, as backlog B119 first phrased it ("a bias at the named atoms only"), and ask whether a
   learner can still write exactly, for instance by testing whether dissonance outside the named atoms ever moves.
 - **History.**

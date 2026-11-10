@@ -1522,8 +1522,18 @@ So network holes come in two kinds:
      keeps what it was told; points on one line meet.
    - **Corrected (`COMPOSITE-FN-20261110-001C`).** Not every such pair: one of 1,200 fresh distant pairs met, because one point's repair
      reached a line through the other. Points combine in any order when what each one and its repair touch is disjoint (proved).
-   - **Next.** Which functions a composite computes (backlog B109)
+   - **Next (taken by `COMPOSITE-FN-20261110-001`, below).** Which functions a composite computes (backlog B109)
      ([decision note](../research/MANY-POINTS-20261110-001/many_points.md)).
+
+   **2026-11-10: the layers only conjoin** (`COMPOSITE-FN-20261110-001`).
+   - **The question.** Backlog B109: can some host make a composite read an OR, or anything but the AND of the bits inside it?
+   - **The theorem (by hand).** A composite acts where its host, with its transparent atoms' lines deleted, has no satisfying state, so
+     it computes an OR of ANDs over the host's minimal unsatisfiable sets of lines. On a knot sphere every line can be violated alone: any
+     set of lines touches at least two more faces than it has lines, and Hall's theorem does the rest. Growth keeps this, so over every
+     host built from knot spheres and class-forced lattice tori, a composite computes exactly the AND.
+   - **Computed.** Seven branched covers, the frozen search outside that class, had no unsatisfiable class at all.
+   - **Reading.** The layers say "all of these": every pattern the program can grow is held together by every one of its lines.
+   - **Next.** Which atom a growth law grows (backlog B106) ([decision note](../research/COMPOSITE-FN-20261110-001/composite_fn.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

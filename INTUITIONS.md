@@ -1055,6 +1055,13 @@ it is the plane.
   counts a knot as native only where finite changes can flip its variables, so
   no knot that involves the board is native.
 
+**The theorem.** A law that never names a relation cannot choose the plane:
+whenever it allows an infinite board, it allows the tree too, so no such law
+forces the plane. One closing square, joined with a tile law that covers the
+plane but never periodically, does choose it. The question of which boards
+local rules can force is also studied as graph subshifts (Arrighi, Durbec and
+Guillon 2023).
+
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the
 board itself is made of distinctions, rules that never name a shape cannot

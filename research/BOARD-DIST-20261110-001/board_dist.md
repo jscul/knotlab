@@ -93,12 +93,18 @@ change by finitely many distinctions.
 - **Sources.** Schreier coset graphs and Stallings foldings (1983); compactness (Tychonoff; König); aperiodic tilings (Berger 1966,
   Robinson 1971, Jeandel and Rao 2015); Leibniz's identity of indiscernibles, read as a rule; shifts of finite type on free groups
   (Piantadosi 2008) and tree shifts (Aubrun and Béal).
-- **Names elsewhere.** Quantum graphity (Konopka, Markopoulou and Smolin 2006) and the Wolfram model (2020) make adjacency dynamical;
-  Gromov's growth of groups (1981) reads dimension from ball growth.
-- **Where the ideas came from.** The owner's idea and B92's design; the subgroup reading, the unfolding theorem and the census are this
-  epic's.
-- **Classification.** New as far as found for conclusions 3, 6 and 8 (a bounded search on 2026-11-10, not a priority claim); folklore
-  risk moderate for 1, 2, 4 and 5.
+- **Names elsewhere.** Graph subshifts (Arrighi, Durbec and Guillon, arXiv 2302.07249, 2023) ask the same question in another
+  formalism: sets of graphs defined by forbidding finitely many local patterns, which extend both shifts of finite type and finitely
+  presented groups, and the question whether such local conditions can enforce a specific support graph. Their abstract proves that
+  subshifts containing only infinite graphs are aperiodic or have a period group that is not residually finite; no statement like
+  conclusion 3 was found there. Quantum graphity (Konopka, Markopoulou and Smolin 2006) and the Wolfram model (2020) make adjacency
+  dynamical; Gromov's growth of groups (1981) reads dimension from ball growth. Free groups carry no strongly aperiodic shift of
+  finite type (Piantadosi 2008), which bears on the identity rule in the limit (sub-goal B111).
+- **Where the ideas came from.** The owner's idea and B92's design. The reading of these boards as subgroups is classical in itself;
+  the unfolding theorem, the freezing of boards made of names and the census are this epic's.
+- **Classification.** New as far as found for conclusions 3, 6 and 8 (bounded searches on 2026-11-10, the second at the coordinator's
+  request, not a priority claim), within the known framework of graph subshifts. Known-with-delta for conclusion 5: finitely
+  presented groups are graph subshifts, and aperiodic tilings exclude the periodic quotients. Folklore risk moderate for 1, 2 and 4.
 
 ## Workspace assumptions
 

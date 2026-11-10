@@ -112,3 +112,34 @@ recorded. **Assumptions:** a history line on A51.
 
 **Recommendation.** Research directions, #1; stop it at a balanced schedule whose lags form a metric, or at the distance beyond which
 every balanced schedule read is deaf.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 04:06 UTC and copied here verbatim.
+
+**Reading distance while growing (B89) is closed and published. The growing plane reads its distances in order and keeps its knots, but the readings don't form a metric yet.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/READ-GROW-20261110-001/read_grow.md))
+
+- **What "reads distance" meant (frozen before running):** the lag at which each original ring first hears ring (0, 0), against taxicab distance on the 5 × 5 tube. A metric would also need every ring heard, symmetry, and the triangle inequality.
+- **Distances in order** (exact census): five schedules keep every stage balanced at 10, 20 and 40 × 40 while the four nearest rings hear before any ring two away. In [12, 28] the plane hears distance 1, doubles, and only then hears distance 2. Two schedules are confirmed on the full state and by a second code I wrote from scratch.
+- **What a pause reads:** lags 8, 20 and 32 at distances 1, 2 and 3. That is exactly the drawn board's taxicab distance. After a doubling, the diagonal ring is heard before the straight one two away, so it's no longer taxicab.
+- **Not a metric:** the farthest rings are never heard while every stage stays balanced, and the lags' offset breaks the triangle inequality.
+- **Sizes:** everything holds to 40 × 40. The 80 × 80 check with both codes is still running, and balance at every size is open.
+- **On A51:** these results rest on it. The board is declared, and the reading recovers it rather than choosing it.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: reading distance while growing | Partially successful | Distances read in order to 40 × 40, once across a doubling; no metric |
+| Local direction: a grown plane that reads its own metric | Continue | The order is there; the farthest rings and the triangle inequality are missing |
+| Broader exploration: G1 with G5 | Known alternatives | Growth that rounds the reading; why a run keeps balance; a pause the network chooses |
+| Long-term goal: G1 Space from a law | Capability gained | A local law with a declared schedule grows a plane that keeps its knots while reading its distances in order |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | A metric while growing (B102) | 3/3 | 2/3 | Two pauses on 5 × 5 and 7 × 7, lags read without their offset or through freezes → a balanced schedule whose lags form a metric, or the distance beyond which every one is deaf |
+| 2 | Growth that rounds the reading | 2/3 | 3/3 | Diagonal against straight across all long second pauses → rounder than taxicab, or one schedule's accident |
+| 3 | Why a run keeps balance | 2/3 | 2/3 | As recorded |
+| 4 | A pause the network chooses | 2/3 | 1/3 | As recorded |
+
+**Corrections:** none new. **Goals:** G1/G5 checkpoint (capability gained); B89 taken; sub-goal B102 recorded. **Assumptions:** a history line on A51.
+
+I recommend #1 and will wait for the go-ahead. I'll report the 80 × 80 result when it lands.

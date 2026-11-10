@@ -125,3 +125,28 @@ re-rated 3/3, backlog B60 added. **Assumptions:** none added.
    is direct with this epic's code.
 
 **Recommendation.** Continue with #1.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 00:38 UTC and copied here verbatim.
+
+The roots epic is closed and published. The collapse still isn't proved, but every eigenvalue's multiplicity is now known exactly, and it's a Kloosterman sum over GF(2n). The eigenvalue 1/a occurs K(a)(K(a) − 2)/8 times, with |K(a)|/4 eigenvectors. In elliptic-curve terms it's (t² − 1)/8 for the curve y² + xy = x³ + a, whose j-invariant is that eigenvalue. Every eigenvalue matches at sides 4 to 128, and every eigenvector count matches up to side 512.
+
+I proved these multiplicities add up to the cone's full size. So showing that each one is at least that large would prove the collapse, and that lower bound is the gap. The law also predicts the walk's period exactly at every side computed. At sides that aren't powers of two, the eigenvalues aren't even in the field of (2n − 1)-th roots of unity.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the roots of the linearized determinant | **Status:** Partially successful | Multiplicities found and shown to fill the spectrum; the lower bounds aren't proved |
+| Local direction: the collapse at powers of two | Continue | One lower bound per eigenvalue, with an explicit kernel and the Kloosterman curve in hand |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B66 |
+| Long-term goal: G5 Dynamics | Capability gained | The spectrum has a closed form in classical arithmetic |
+
+**Next step:** Continue with #1. Unless you or the coordinator redirect, I'll start it next.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Prove the Kloosterman lower bounds (B58) | 3/3 | 2/3 | Prove each eigenvalue's kernel has dimension \|K(a)\|/4 by evaluating it on GF(2n), where the trace of GF(2n) appears → that count proved, or why evaluation can't see it | Selected |
+| 2 | The curve behind each eigenvalue (B59) | 3/3 | 1/3 | Find a k-dimensional space attached to the curve with j-invariant λ whose symmetric square is the cone's λ-part, at 4, 8, 16 → the mechanism, or why none exists | Alternative |
+| 3 | Other tori (B66) | 2/3 | 3/3 | The cut-open 2^m × 2^m′ torus against Kloosterman-type sums → a wider law, or where it breaks | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained); B58 advanced with a new first step, B59 re-rated 3/3, B66 added. **Assumptions:** none added. The stress run at sides 256 and 512 passed in under four minutes. Commits: 76cc32e30 (pre-registration), e528d999e (epic), 4e5ab67e9 (shared docs). A bounded literature search found no earlier link between Kloosterman sums and the spectrum of a walk or matrix over GF(2). The nearest sources are on Kloosterman sums and elliptic curves in characteristic 2 ([arXiv 1104.3882](https://ar5iv.labs.arxiv.org/html/1104.3882), [arXiv 0801.2988](https://arxiv.org/pdf/0801.2988)) and on matrix Kloosterman sums ([arXiv 2210.07133](https://arxiv.org/pdf/2210.07133.pdf)).

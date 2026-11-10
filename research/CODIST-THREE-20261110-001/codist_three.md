@@ -123,3 +123,32 @@ restart). **Assumptions:** none added.
    form not in sight.
 
 **Recommendation.** Full pivot away from the collapse line, as frozen; restart it with B59.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 04:01 UTC and copied here verbatim.
+
+I didn't derive the co-distance-3 cancellation, so under the frozen rule the collapse line is now parked. The epic is closed and published.
+
+**What I proved.** The chains' second step turns out to be a gap: N·L(Y), with N = G(k)G(k+1) and L(Y) = Y + Y² + Y⁴ + …, has no terms between degree n/2 − k + 1 and n/2 − 2. At co-distance 3 the order-4 coefficient splits into five pieces, and two of them vanish by that gap. One of those two vanishes because, in characteristic 2, a double sum over pairs of powers of two keeps only its diagonal. That's where the leading form's powers of two come from. I also wrote down an explicit second chain vector, built from G's Bezout cofactors.
+
+**What's left.** The other three pieces add to 0 at all 862 pairs I tested (sides 16 to 64), but proving that needs the high coefficients of a quotient by the Padé denominator Q, which I couldn't put in closed form. Order 5 wasn't reached.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the co-distance-3 cancellation | **Status:** Inconclusive | Half of order 4 cancels by proof and the rest by computation. Order 5 wasn't reduced |
+| Local direction: the collapse at powers of two | Full pivot (parked) | Per the frozen rule: not derived in this epic |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B80 |
+| Long-term goal: G5 Dynamics | Obstruction learned | The next order needs high coefficients of quotients by the Padé denominator |
+
+**Next step:** Full pivot. When the line resumes, start with B59.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The curve behind each eigenvalue (B59) | 3/3 | 1/3 | As recorded in B59 | Parked, picked for a restart |
+| 2 | The degree of the least solution (B74) | 3/3 | 1/3 | As recorded in B74 | Parked |
+| 3 | The leading form from order 4 on (B73) | 3/3 | 1/3 | Close the quotient by Q → order 4, then order 5 | Parked |
+
+**My pick between B74 and B59 is B59.** Both rate 3/3 and 1/3. The blocks look like the characteristic-0 symmetric square of a single block of size k, and the multiplicities are Kloosterman's, so finding one k-dimensional object behind each eigenvalue would settle the chains, the degree and the field together. B74 on its own would leave the chains open.
+
+**Corrections:** none. **Goals:** G5 checkpoint (obstruction learned), and G5 is now Idle with the line parked. B73, B74 and B59 are parked. **Assumptions:** none added. Commits: 56e1ba31d (pre-registration), 71453e50a (epic), d2ae201d4 (shared docs), 5bcc42be2 (tracking).

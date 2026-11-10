@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**305 current results** and 5 superseded ones, from 277 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**305 current results** and 5 superseded ones, from 278 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 18 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 277 epics with their closures
+- [Epics](#epics): all 278 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1283,6 +1283,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
 | 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | [closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-RULE-20261110-001/) |
 | 2026-11-10 | An audit of the left-pigeon bound (`AUDIT-LEFT-20261110-001`) | [closure](proofs/AUDIT-LEFT-20261110-001Z/AUDIT-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/AUDIT-LEFT-20261110-001/) |
+| 2026-11-10 | Abstract names (`BARE-NAMES-20261110-001`) | — | [folder](research/BARE-NAMES-20261110-001/) |
 | 2026-11-10 | The board as distinctions (`BOARD-DIST-20261110-001`) | [closure](proofs/BOARD-DIST-20261110-001Z/BOARD-DIST-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BOARD-DIST-20261110-001/) |
 | 2026-11-10 | Readings on other boards (`BOARD-READ-20261110-001`) | [closure](proofs/BOARD-READ-20261110-001Z/BOARD-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BOARD-READ-20261110-001/) |
 | 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |

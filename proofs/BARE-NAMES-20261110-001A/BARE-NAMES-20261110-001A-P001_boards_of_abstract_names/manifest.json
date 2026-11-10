@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BARE-NAMES-20261110-001A-P001",
+  "canonical_id": "BARE-NAMES-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "BARE-NAMES-20261110-001A",
+  "proof": "BARE-NAMES-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Boards of abstract names",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-10, before any computation and before ticket B's census. Names are a countable set with no letters; a state gives each pair of names a neighbour distinction and each name a value; a uniform law treats all names alike. To be proved: (T1) every finitary law that allows a state allows one with constant adjacency and values (Ramsey), so no finitary law forces a neighbour, bounded degree needs a forbidden homogeneous star, and no finitary law forces a finite board other than one place; (T2) with existence clauses giving every place exactly 2k neighbours, every board is a disjoint union of Schreier graphs of F_k; (T3) a count law allows the universal cover of every component of an allowed board; (T4) no first-order law forces connected boards when a board has a component of infinite diameter, and a named square with coordinates mod 3 and an aperiodic tile set makes every component a plane; (T5) in a count law, edges with the same pair of values can exchange partners and far places of different value can exchange names, so every neighbour distinction and value is flipped by a finite change. Each target is proved, refuted, or left with its gap stated.",
+  "dependencies": [
+    "BOARD-DIST-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A finitary law with an allowed state and no state of constant adjacency and values (against T1).",
+    "A countable 2k-regular simple graph with no decomposition into k oriented 2-factors (against T2).",
+    "A count law with a board containing a cycle and no tree board (against T3, and A54 overturned).",
+    "A first-order law all of whose boards are connected while one has a component of infinite diameter (against T4).",
+    "A count-law state in which the switch or the swap breaks the law (against T5)."
+  ],
+  "lineage": {
+    "home_scope": "BARE-NAMES-20261110-001",
+    "epic_path": [
+      "BARE-NAMES-20261110-001"
+    ],
+    "parents": [
+      "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/manifest.json": "2a82d88f368414b4a8aa371246fff5e3e57939ac17fad87fbd2fc12aac4b72f1"
+  },
+  "paths": {
+    "manifest": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/manifest.json",
+    "identity": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/identity.json",
+    "proof": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/proof.md",
+    "result": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/result.json",
+    "check": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/check.py",
+    "directory": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names"
+  },
+  "remaining_obligations": [
+    "Targets T1 to T5, or the record of which fails and why"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Boards made of neighbour distinctions on a countable set of names with no letters; uniform laws over finite alphabets, finitary or with existence clauses. Neighbour distinctions are distinctions of the law, never contact by themselves (A51).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
+    "status": "pre-registered; the proof attempt to follow",
+    "novelty": "to be assessed"
+  }
+}

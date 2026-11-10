@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "BARE-NAMES-20261110-001B-E001",
+ "ticket": "BARE-NAMES-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "With places named without letters, which of the 1,024 one-bit count laws of degree four knot the board with the values (one neighbour distinction and its two endpoint values, K1-K3), and are those knots native under the source-aware reading?",
+ "definitions": {
+  "the family": "The 1,024 Life-like laws read over abstract names: a set S of pairs (c, k), c a place's value and k its number of neighbours with value 1; a state is allowed when every place has exactly four neighbours and its pair is in S (key L<m>, m = sum of 2^(5c + k) over S, as in BOARD-DIST-20261110-001B). The atom reads the letters x and y, so it cannot be stated without letters and is not in the family.",
+  "pairs that occur": "The greatest subset T of S in which every pair has, for each neighbour value it needs, a pair of that value in T that accepts a neighbour of its value. A tree built greedily realizes every pair of T, and every allowed board's universal cover is allowed (ticket A, T3), so T is exactly the set of pairs that occur.",
+  "the relation": "The joint states of (n(u, v), s(u), s(v)) over all allowed states: (0, a, b) for every pair of occurring values (disjoint unions of allowed boards are allowed), and (1, a, b) for every pair of values that occurs on an edge.",
+  "the knot": "K1-K3 on the relation by knotlab's checker (canonical, erasure by forgetting), with the two values as the loops' distinctions and the neighbour distinction as the contact.",
+  "native": "For the first law (in key order) of each knot shape with a board in the frozen list that uses both values: two disjoint copies of that board; the switch of an edge {u, v} with its copy {u', v'} (u-v', u'-v) must flip n(u, v) and keep every place allowed, and exchanging the names of u (then v) with a place of the other value in the second copy must flip s(u) (then s(v)) and keep every place allowed.",
+  "frozen boards": "The tori C3xC3, C3xC4, C3xC5 and C4xC4, and the circulant graphs C_n(1, a) for 5 <= n <= 14, 2 <= a < n/2, a != n/2; every colouring is checked."
+ },
+ "public_inputs": {
+  "code": "knots.py (sha256 8ca10a15f077b3f7b33d59167cb3eaea7313a6b9674e2cf4ec34187c0d0c1fc2) beside this file; numpy from the workspace .venv; knotlab (tools/knotlab) for the K1-K3 verdicts.",
+  "run": "knots.py; output artifacts/BARE-NAMES-20261110-001B/BARE-NAMES-20261110-001B-E001_board_value_knots/knots.json."
+ },
+ "forbidden_inputs": [
+  "Changing the family, the relation, the boards, the moves or the predictions after seeing results"
+ ],
+ "primary_observable": "Each law's occurring pairs, values, edge value pairs, relation and knot verdict; the native moves for each knot shape.",
+ "cheapest_meaningful_control": "The law 'no adjacent 1s' (key 63: a 1 has no neighbour 1, a 0 anything; expected a knot, and the native moves succeeding on a frozen board), the full law (key 1023, no knot) and the empty law (key 0, no state); run before freezing (disclosed) and as expected: law 63 is a knot, and on the 3 x 3 torus the switch flips n and both swaps flip the values. No law of the family was run.",
+ "predictions": {
+  "C1": "No law of the family is undecided: every law gets its pairs, values, edge value pairs, relation and verdict.",
+  "C2": "knotlab's verdict is 'knot' exactly when both values occur and some unordered value pair never occurs on an edge.",
+  "C3": "For every knot shape, the switch and both swaps succeed on the first law of that shape with a two-valued board in the frozen list."
+ },
+ "decision_rules": {
+  "C2 fails": "The argument that K2 always holds (every occurring value has four neighbours; disjoint unions are allowed) is wrong somewhere; examined by hand in this epic.",
+  "C3 fails": "Ticket A's T5 is wrong for that law: a correction of target 5.",
+  "a shape with no frozen board": "Recorded as not certified on an explicit board; not a failure.",
+  "reading": "If some law knots the board with the values and C3 holds, a board without letters takes part in native knots, against BOARD-DIST-20261110-001's frozen boards (A53, A54)."
+ },
+ "stop_rule": "One run on the frozen family.",
+ "runtime": "Expected under five minutes; no long-running registration needed."
+}

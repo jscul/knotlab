@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "THREE-IN-20261110-001Z-P001",
+  "canonical_id": "THREE-IN-20261110-001Z-P001",
+  "kind": "proof",
+  "ticket": "THREE-IN-20261110-001Z",
+  "proof": "THREE-IN-20261110-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of three held inputs",
+  "status": "Proved",
+  "claim": "Ledger closing THREE-IN-20261110-001: one line per conclusion with its status and evidence (tickets A and B), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "THREE-IN-20261110-001A",
+    "THREE-IN-20261110-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "THREE-IN-20261110-001",
+    "epic_path": [
+      "THREE-IN-20261110-001"
+    ],
+    "parents": [
+      "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/manifest.json",
+      "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/result.json",
+      "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/manifest.json",
+      "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/manifest.json": "c8f4db3dbd30375928daed1c834bf6cff31cbac1f91f01b2b01305d332ad5779",
+    "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/result.json": "558aefe3b91465a7472056bf3cd2ae20a846c5c08fab434e7490267183ae569f",
+    "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/manifest.json": "824a037cf116b2c466212fbbef6ddaf5c53df1832acf2a4ceb32d1d3b8ed0fad",
+    "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/result.json": "9800ef5936fe932a9f26f6afff671e756073bad483c6b1eb0c611cc6cdcdd515"
+  },
+  "paths": {
+    "manifest": "proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/result.json",
+    "check": "proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Ledger only.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session on 2026-11-10.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

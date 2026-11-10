@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**308 current results** and 5 superseded ones, from 284 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**309 current results** and 5 superseded ones, from 284 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 21 results
+- [Other results](#other-results): 22 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 284 epics with their closures
 
@@ -1043,6 +1043,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · With a check that does not accept too soon, a learned knot memory learns every gate through composites from examples** (`STURDY-PROBE-20261110-001-D001`).
   Making each negative check four longer walks, three from fresh states, removed every false acceptance in 156 writes at 2.5 times the probe's cost. With it a learner that keeps what its walk shows holding learned all 84 of its gate targets, through composites too, with no outside map (computed).
   [proof P001](proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/proof.md), [epic closure](proofs/STURDY-PROBE-20261110-001Z/STURDY-PROBE-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Maps of three held points in a knot memory are unate: no parity, no majority** (`THREE-IN-20261110-001-D001`).
+  On every class of six spaces, no map of three held points at a group's interfaces is parity, majority or non-unate; the only total ones copy or negate one input (exact, with the frame lemma covering every law). A learner never accepted parity or majority (computed).
+  [proof P001](proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/proof.md), [proof P001](proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/proof.md), [epic closure](proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Notes
 
@@ -1343,7 +1346,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Growth that rounds the reading (`ROUND-READ-20261110-001`) | [closure](proofs/ROUND-READ-20261110-001Z/ROUND-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ROUND-READ-20261110-001/) |
 | 2026-11-10 | Bit LeftPigeon as Braun's second family (`SEP-LEFT-20261110-001`) | [closure](proofs/SEP-LEFT-20261110-001Z/SEP-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/SEP-LEFT-20261110-001/) |
 | 2026-11-10 | A probe that is not fooled (`STURDY-PROBE-20261110-001`) | [closure](proofs/STURDY-PROBE-20261110-001Z/STURDY-PROBE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/STURDY-PROBE-20261110-001/) |
-| 2026-11-10 | Three held inputs (`THREE-IN-20261110-001`) | — | [folder](research/THREE-IN-20261110-001/) |
+| 2026-11-10 | Three held inputs (`THREE-IN-20261110-001`) | [closure](proofs/THREE-IN-20261110-001Z/THREE-IN-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/THREE-IN-20261110-001/) |
 | 2026-11-10 | Tree-like Res(xor) on the sphere's count (`TREE-XOR-20261110-001`) | [closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-XOR-20261110-001/) |
 | 2026-11-10 | Weakly aperiodic laws under Leibniz's rule (`WEAK-APER-20261110-001`) | [closure](proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WEAK-APER-20261110-001/) |
 | 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |

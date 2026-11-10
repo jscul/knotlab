@@ -1,0 +1,201 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/io3_lib.py": "0a30f53ed6d39129c9234011aa039217fad8bea2ddfe5e078b8d68c8a45181c3",
+    "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/probe_lib.py": "0a43265ead7402efc0c64c3935a823f47fe76317846984f2ce08141508764a65",
+    "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py": "6cca6f5bbc621e71be09f167683dbf1ab994b5af0b3489666a4fcb163fcaa16b",
+    "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/result.json": "558aefe3b91465a7472056bf3cd2ae20a846c5c08fab434e7490267183ae569f",
+    "research/THREE-IN-20261110-001/preregistration.md": "ad9f3ad958c002527dd1e241563ab662d483e9e3597513ecbb7c0308a7b769c9"
+   }
+  },
+  "1 learning maps of three held points (computed, frozen)": {
+   "pass": true,
+   "info": {
+    "dictator outcomes": {
+     "learned, held": 2,
+     "not stopped": 2
+    },
+    "parity and majority outcomes": {
+     "not stopped": 8
+    },
+    "mark I: parity and majority never stopped": true,
+    "mark L3: the dictator learned and held at 3 or 4 of 4": false,
+    "probe steps": {
+     "S1 single K_3 thin": 689925434,
+     "S2 single K_3 Fano": 373736436,
+     "S3 two-level K_3 thin": 131922214,
+     "S4 two-level K_3 Fano": 128371341
+    }
+   }
+  },
+  "rows": {
+   "S1 single K_3 thin": [
+    {
+     "target": "10101010",
+     "stopped": true,
+     "steps": 806400,
+     "probes": 251,
+     "radius": 4,
+     "map at the stop": "10101010",
+     "acting": [
+      0,
+      2
+     ],
+     "map after the disturbance": "10101010",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": false,
+     "steps": null,
+     "probes": 1048,
+     "radius": 4,
+     "map at the stop": "1uu01uu0",
+     "acting": [
+      0,
+      2
+     ],
+     "outcome": "not stopped"
+    },
+    {
+     "target": "00010111",
+     "stopped": false,
+     "steps": null,
+     "probes": 988,
+     "radius": 4,
+     "map at the stop": "u10uu10u",
+     "acting": [
+      2
+     ],
+     "outcome": "not stopped"
+    }
+   ],
+   "S2 single K_3 Fano": [
+    {
+     "target": "10101010",
+     "stopped": true,
+     "steps": 706400,
+     "probes": 176,
+     "radius": 4,
+     "map at the stop": "10101010",
+     "acting": [
+      0,
+      2
+     ],
+     "map after the disturbance": "10101010",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": false,
+     "steps": null,
+     "probes": 534,
+     "radius": 4,
+     "map at the stop": "1uu01uu0",
+     "acting": [
+      0,
+      2
+     ],
+     "outcome": "not stopped"
+    },
+    {
+     "target": "00010111",
+     "stopped": false,
+     "steps": null,
+     "probes": 598,
+     "radius": 4,
+     "map at the stop": "1uu01uu0",
+     "acting": [
+      0,
+      1
+     ],
+     "outcome": "not stopped"
+    }
+   ],
+   "S3 two-level K_3 thin": [
+    {
+     "target": "00001111",
+     "stopped": false,
+     "steps": null,
+     "probes": 780,
+     "radius": 4,
+     "map at the stop": "uuu01uuu",
+     "acting": [
+      1
+     ],
+     "outcome": "not stopped"
+    },
+    {
+     "target": "01101001",
+     "stopped": false,
+     "steps": null,
+     "probes": 813,
+     "radius": 4,
+     "map at the stop": "uuuuuuuu",
+     "acting": [
+      1
+     ],
+     "outcome": "not stopped"
+    },
+    {
+     "target": "00010111",
+     "stopped": false,
+     "steps": null,
+     "probes": 756,
+     "radius": 4,
+     "map at the stop": "0u0uu1u1",
+     "acting": [
+      0,
+      1
+     ],
+     "outcome": "not stopped"
+    }
+   ],
+   "S4 two-level K_3 Fano": [
+    {
+     "target": "00001111",
+     "stopped": false,
+     "steps": null,
+     "probes": 467,
+     "radius": 4,
+     "map at the stop": "u1u10u0u",
+     "acting": [
+      0,
+      1
+     ],
+     "outcome": "not stopped"
+    },
+    {
+     "target": "01101001",
+     "stopped": false,
+     "steps": null,
+     "probes": 569,
+     "radius": 4,
+     "map at the stop": "1u1uu0u0",
+     "acting": [
+      0,
+      1
+     ],
+     "outcome": "not stopped"
+    },
+    {
+     "target": "00010111",
+     "stopped": false,
+     "steps": null,
+     "probes": 433,
+     "radius": 4,
+     "map at the stop": "uuuuuuuu",
+     "acting": [
+      0,
+      1
+     ],
+     "outcome": "not stopped"
+    }
+   ]
+  },
+  "seconds": 1939.8
+ }
+}

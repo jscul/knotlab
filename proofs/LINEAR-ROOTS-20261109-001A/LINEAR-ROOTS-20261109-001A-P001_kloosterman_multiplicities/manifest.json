@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LINEAR-ROOTS-20261109-001A-P001",
+  "canonical_id": "LINEAR-ROOTS-20261109-001A-P001",
+  "kind": "proof",
+  "ticket": "LINEAR-ROOTS-20261109-001A",
+  "proof": "LINEAR-ROOTS-20261109-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Kloosterman multiplicities of the cut-open torus and the collapse at powers of two",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-09, before the proof attempt. For the cut-open torus walk at n = 2^m over GF(2), q = 2n, K(a) = sum over x in GF(q) of (-1)^Tr(x + a/x) with 1/0 = 0 (Tr the trace of GF(q) over GF(2)), and A_cone the quarter-turn cone of CONE-COLLAPSE-20261109-001A (det(I - mu A_cone) = det(I + C_s(mu)) = mu^(-h) det(sum over i of mu^(2^i) C_i), RETURN-DIGITS-20261109-001A): (1) to be proved: sum over a in GF(q)* of K(a)(K(a) - 2)/8 = n(n - 1)/2, the degree of the cone polynomial; so if every a in GF(q)* is a root of det(I - mu A_cone) of order at least K(a)(K(a) - 2)/8, the collapse holds and every order is exactly that; (2) the Kloosterman law, found by exact computation before this registration: for every a in GF(q)*, the eigenvalue 1/a of A_cone has algebraic multiplicity K(a)(K(a) - 2)/8, geometric multiplicity |K(a)|/4 (the dimension of the kernel of I + C_s(a)), and Jordan blocks of sizes 1, 5, 9, ..., 4(K(a)/4) - 3 when K(a) > 0 and 3, 7, 11, ..., 4|K(a)/4| - 1 when K(a) < 0 (none when K(a) = 0); equivalently, with t = 1 - K(a) the trace of Frobenius of the elliptic curve y^2 + xy = x^3 + a over GF(q), the multiplicity is (t^2 - 1)/8 and the k(k + 1)/2 law of CONE-COLLAPSE-20261109-001 has |t| = 2k + 1. Target, to be proved or left open with the gap stated: (2), or lower bounds as in (1), hence the collapse at every power of two. Computed before registration: (2)'s algebraic multiplicities at sides 4 to 128 (every class, against CONE-COLLAPSE-20261109-001's data), its geometric multiplicities at 4 to 64 (every a in GF(q)*, on the return map); and at the sides n = 3 to 24 that are not powers of two the cone's characteristic polynomial has an irreducible factor whose degree does not divide the order of 2 mod 2n - 1, so its eigenvalues do not all lie in the field of (2n - 1)-th roots of unity.",
+  "dependencies": [
+    "RETURN-DIGITS-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A power of two and an a in GF(2n)* at which the kernel of I + C_s(a) has dimension other than |K(a)|/4 (computed false at 4 to 64; side 128 is a planned check after registration).",
+    "A power of two and an a in GF(2n)* at which the multiplicity of the eigenvalue 1/a of A_cone differs from K(a)(K(a) - 2)/8 (computed false at 4 to 128).",
+    "A power of two with an eigenvalue of A_cone outside GF(2n) (computed false at 4 to 128 by CONE-COLLAPSE-20261109-001)."
+  ],
+  "lineage": {
+    "home_scope": "LINEAR-ROOTS-20261109-001",
+    "epic_path": [
+      "LINEAR-ROOTS-20261109-001"
+    ],
+    "parents": [
+      "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/RETURN-DIGITS-20261109-001A/RETURN-DIGITS-20261109-001A-P001_a_one_dimensional_return_map/manifest.json": "0604ca4e92ae7d1d958ad8e993b0bcc5f7850a9927efb73891df1d10dfa4e8bd"
+  },
+  "paths": {
+    "manifest": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/manifest.json",
+    "identity": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/identity.json",
+    "proof": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/proof.md",
+    "result": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/result.json",
+    "check": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/check.py",
+    "directory": "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities"
+  },
+  "remaining_obligations": [
+    "the proof of (1)",
+    "the target: (2) or lower bounds as in (1), hence the collapse at every power of two"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The square torus of rule-60 rings with equally spaced law-(12, 12) contacts, cut open by a ring of cuts each way (A30, A32, A37, A38); its walk over GF(2), at sides 2^m. The spectrum is a contact-level reading, so it does not depend on how the rings are declared (A45).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session, opened under the owner's autonomy rule on 2026-11-09 (sub-goal B58).",
+    "status": "pre-registered; the law found by exact computation, the proofs to follow",
+    "novelty": "to be assessed"
+  }
+}

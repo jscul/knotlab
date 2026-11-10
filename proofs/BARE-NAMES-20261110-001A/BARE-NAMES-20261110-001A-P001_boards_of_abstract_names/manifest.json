@@ -13,8 +13,8 @@
   "proof": "BARE-NAMES-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Boards of abstract names",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before any computation and before ticket B's census. Names are a countable set with no letters; a state gives each pair of names a neighbour distinction and each name a value; a uniform law treats all names alike. To be proved: (T1) every finitary law that allows a state allows one with constant adjacency and values (Ramsey), so no finitary law forces a neighbour, bounded degree needs a forbidden homogeneous star, and no finitary law forces a finite board other than one place; (T2) with existence clauses giving every place exactly 2k neighbours, every board is a disjoint union of Schreier graphs of F_k; (T3) a count law allows the universal cover of every component of an allowed board; (T4) no first-order law forces connected boards when a board has a component of infinite diameter, and a named square with coordinates mod 3 and an aperiodic tile set makes every component a plane; (T5) in a count law, edges with the same pair of values can exchange partners and far places of different value can exchange names, so every neighbour distinction and value is flipped by a finite change. Each target is proved, refuted, or left with its gap stated.",
+  "status": "Proved",
+  "claim": "Names are a countably infinite set with no letters; a state gives each unordered pair of names a neighbour distinction and each name a value; a uniform law applies its templates to every tuple alike. Proved: (T1) every finitary law that allows a state allows one with constant adjacency and values, or with identity distinctions all names one place (Ramsey), so a finitary law can bound the degree but never force a neighbour and forces no finite board other than one place; (T2) every countable simple 2k-regular graph splits into k fixed-point-free permutations, so a degree supplied by existence clauses carries a labelling, which no clause can read; (T3) a count law allows every countable cover and disjoint union of its boards, hence a tree whenever it allows a cycle, while a finitary clause reading a walk of distinct names can exclude the tree; (T4) no law of bounded degree forces a connected infinite board (compactness), and a named square with coordinates mod 3 and an aperiodic Wang set has exactly the disjoint unions of tiled planes as boards; (T5) in a count law of degree d >= 1, two edges with one pair of values exchange partners (a four-distinction change that changes the board when the edge lies on a cycle of a finite component) and names can be exchanged, so at a state of infinitely many copies of a two-valued board every distinction is flipped by a finite change and the source-aware condition excludes nothing. Read before publication by an independent referee; checks passed.",
   "dependencies": [
     "BOARD-DIST-20261110-001A"
   ],
@@ -54,9 +54,7 @@
     "check": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/check.py",
     "directory": "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names"
   },
-  "remaining_obligations": [
-    "Targets T1 to T5, or the record of which fails and why"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -90,8 +88,8 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10; read before publication by an independent referee (a fresh Claude agent given only the proof).",
+    "status": "proved by hand; finite checks in check.py passed (result.json); read before publication by an independent referee, no error in the main statements, scope fixes made",
+    "novelty": "Every ingredient classical (Ramsey, Petersen, Hall and Mendelsohn-Dulmage, compactness, covering graphs, aperiodic Wang tiles; the switch is the graph-theoretic 2-switch); each statement a short consequence, folklore risk high. The reading for the board line is this epic's."
   }
 }

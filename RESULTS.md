@@ -1286,7 +1286,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
 | 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | [closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-RULE-20261110-001/) |
 | 2026-11-10 | An audit of the left-pigeon bound (`AUDIT-LEFT-20261110-001`) | [closure](proofs/AUDIT-LEFT-20261110-001Z/AUDIT-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/AUDIT-LEFT-20261110-001/) |
-| 2026-11-10 | Abstract names (`BARE-NAMES-20261110-001`) | — | [folder](research/BARE-NAMES-20261110-001/) |
+| 2026-11-10 | Abstract names (`BARE-NAMES-20261110-001`) | [closure](proofs/BARE-NAMES-20261110-001Z/BARE-NAMES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BARE-NAMES-20261110-001/) |
 | 2026-11-10 | The board as distinctions (`BOARD-DIST-20261110-001`) | [closure](proofs/BOARD-DIST-20261110-001Z/BOARD-DIST-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BOARD-DIST-20261110-001/) |
 | 2026-11-10 | Readings on other boards (`BOARD-READ-20261110-001`) | [closure](proofs/BOARD-READ-20261110-001Z/BOARD-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BOARD-READ-20261110-001/) |
 | 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |

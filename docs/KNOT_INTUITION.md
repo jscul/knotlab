@@ -1618,6 +1618,8 @@ So network holes come in two kinds:
    - **Computed.** A pattern that holds its contradiction is a gate: when the two held points agree the third is forced to their
      opposite, otherwise it is free. A learner that feels only its own tension, taught by the world holding the answer it wants, learned
      such gates from four examples at 53 of 56 single patterns and switched them off, but almost never through a pattern of patterns.
+   - **Corrected (`CREDIT-PIN-20261110-001`).** That failure was mostly a stall in the learner; fixed, it reached gates through a pattern
+     of patterns about half the time, though at many times the cost.
    - **Reading.** Through a pattern of patterns the examples see only whether every inner pattern holds, so until all do, every example
      looks the same: the learner gets no hint which part to change. Each holding part does keep a tension it cannot walk away, which the
      learner could use as a hint.

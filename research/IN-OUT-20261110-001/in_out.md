@@ -6,6 +6,10 @@ Epic `IN-OUT-20261110-001` (backlog B120, G15 with G16; program learning), 2026-
 
 ## The answer
 
+*Corrected on 2026-11-10 (`CREDIT-PIN-20261110-001`, ticket A).* The composite figure below was mostly the learner's stall
+defect: with only that fixed and the test re-run exactly, composites gave 10 of 16 learned and held (6 of 12 gate writes) and leaves
+55 of 56. Depth makes composite gates much costlier, not unreachable. See `docs/CORRECTIONS.md`.
+
 **At a single atom, yes: the memory learns input-output maps from examples, a NOT gate included. Through a composite, not with this
 learner.** The world holds two outer points of an atom or composite (the inputs) and reads the third at the floor: decided, undecided or
 excluded (A58). A learner that sees only its own dissonance under the world's clamps, with no address and no outside map, learned 53 of

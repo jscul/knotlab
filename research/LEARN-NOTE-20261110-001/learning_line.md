@@ -66,7 +66,8 @@ Sections 1 to 8 are the note as written for B95. Eleven epics since then change 
   atom acts exactly when its own constraints cannot clear its region, on every class of seven spaces (exact).
 - Inputs and outputs (`IN-OUT-20261110-001`, frozen): an acting atom read with two sides held is a gate, the NOT gate among them
   (exact, every class of 18 interfaces); a learner that sees only its dissonance under the world's clamps learned 53 of 56 gate
-  targets at single atoms and 1 of 16 through composites; its clamped probe was fooled 6 times on the largest space.
+  targets at single atoms and 1 of 16 through composites; its clamped probe was fooled 6 times on the largest space. *Corrected
+  (`CREDIT-PIN-20261110-001`): with the learner's stall fixed, 55 of 56 and 10 of 16; depth costs steps, not reach.*
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was

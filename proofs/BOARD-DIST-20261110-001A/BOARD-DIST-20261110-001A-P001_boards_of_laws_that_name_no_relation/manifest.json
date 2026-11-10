@@ -13,8 +13,8 @@
   "proof": "BOARD-DIST-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Boards of laws that name no relation",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt and before ticket B's census. Names are the reduced words of F2 = <x, y>; e(u, v) says names u and v are one place, under transitivity, letter closure e(u, v) -> e(ug, vg) and constancy e(u, v) -> s(u) = s(v); a law is finitely many clause templates over a finite alphabet, and it names no relation when every identity literal relates the same offset of two base names. To be proved: (1) the board states are the subgroups of F2 (Schreier graphs), on B_L the restrictions of right congruences; (2) with no positive identity literal beyond the board axioms, refining an allowed board keeps it allowed, so the tree is allowed whenever any state is; (3) if a law names no relation and allows an infinite board, it allows the tree; (4) every finite board is forced by some law that names no relation; (5) two different boards differ in infinitely many identity distinctions and every place off the tree holds infinitely many names, so off the tree no distinction is flipped by a finite change; (6) for value laws the collapse is allowed iff a constant colouring is iff every board is; (7) identity of indiscernibles at radius r makes boards finite, at radius 1 with one bit boards are the balanced view sets and a plane-like abelian board always comes with a non-abelian one; (8) the commutator rule with an aperiodic Wang-tile law forces exactly the plane.",
+  "status": "Proved",
+  "claim": "Names are the reduced words of F2 = <x, y>; e(u, v) says names u and v are one place, under transitivity, letter closure e(u, v) -> e(ug, vg) and constancy e(u, v) -> s(u) = s(v); a law is finitely many clause templates over a finite alphabet, and it names no relation when every identity literal relates the same offset of two base names. Proved: (1) the board states are exactly the subgroups of F2 with their Schreier graphs, and on a ball B_L exactly the restrictions of right congruences (every one of finite index); (2) with no positive identity literal beyond the board axioms, refining an allowed board keeps it allowed, so the tree is allowed whenever any state is and allowed boards are closed under covering; (3) unfolding: if a law names no relation and allows an infinite board, it allows the tree, so no such law forces an infinite board; (4) every finite board is the only board of some law that names no relation; (5) two different boards differ in infinitely many identity distinctions and off the tree every place holds infinitely many names, so no distinction of a state off the tree, and no identity distinction anywhere, is flipped by a finite change; (6) for value laws the collapse is allowed iff a constant colouring is iff every board is; (7) identity of indiscernibles at radius r makes every board finite (at most q^|B_r| places), at radius 1 with one bit the boards are exactly the balanced view sets, and every plane-like abelian board there has a non-abelian sibling (at radius r, above q^(3^r - 1) places); (8) the commutator rule e(u, u x y X Y) with an aperiodic Wang-tile law forces exactly the plane.",
   "dependencies": [],
   "evidence_modes": [
     "exact-proof",
@@ -47,9 +47,7 @@
     "check": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/check.py",
     "directory": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation"
   },
-  "remaining_obligations": [
-    "Targets 1 to 8, or the record of which fails and why"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -84,7 +82,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's assignment on 2026-11-10 (backlog B92).",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "status": "proved by hand; finite checks in check.py passed (result.json)",
+    "novelty": "Ingredients classical (Schreier graphs, Stallings foldings, compactness, aperiodic tilings); the unfolding theorem (3) and its reading as an obstruction for boards made of distinctions are new as far as found (bounded search, 2026-11-10, not a priority claim); folklore risk moderate for 1, 2, 6 and 8, low to moderate for 3, 5 and 7."
   }
 }

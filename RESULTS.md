@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**291 current results** and 5 superseded ones, from 259 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**292 current results** and 5 superseded ones, from 259 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 18 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 78 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 79 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
@@ -706,6 +706,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-08 · Native creation sees a signing's switching class between glue lines and its placement through the atoms** (`SWITCH-READ-20261108-001-D001`).
   For five trisum glues, each with two placements of its atoms in one switching class, removing a glue line and gluing at a glue line gives the same native vectors in both placements, while removing a line of an atom creates differently at glue lines, so the whole native maps are never isomorphic. TRISUM-READ's frozen statements hold on all five alternative placements.
   [proof P001](proofs/SWITCH-READ-20261108-001A/SWITCH-READ-20261108-001A-P001_placements_in_one_switching_class/proof.md), [epic closure](proofs/SWITCH-READ-20261108-001Z/SWITCH-READ-20261108-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · A law that names no relation never forces an infinite board without allowing the tree** (`BOARD-DIST-20261110-001-D001`).
+  With names the words of F2 and an identity distinction per pair, a law over a finite alphabet whose identity literals relate only the same offset of two names, and which allows an infinite board, also allows the tree, so no such law forces the plane (proved). One named relation, the commutator, with an aperiodic tile law forces exactly the plane.
+  [proof P001](proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/proof.md), [epic closure](proofs/BOARD-DIST-20261110-001Z/BOARD-DIST-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1236,7 +1239,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Does the stored address steer later learning (`ADDRESS-STEER-20261110-001`) | [closure](proofs/ADDRESS-STEER-20261110-001Z/ADDRESS-STEER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ADDRESS-STEER-20261110-001/) |
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
 | 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | [closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-RULE-20261110-001/) |
-| 2026-11-10 | The board as distinctions (`BOARD-DIST-20261110-001`) | — | [folder](research/BOARD-DIST-20261110-001/) |
+| 2026-11-10 | The board as distinctions (`BOARD-DIST-20261110-001`) | [closure](proofs/BOARD-DIST-20261110-001Z/BOARD-DIST-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BOARD-DIST-20261110-001/) |
 | 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
 | 2026-11-10 | The co-distance-3 cancellation (`CODIST-THREE-20261110-001`) | [closure](proofs/CODIST-THREE-20261110-001Z/CODIST-THREE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CODIST-THREE-20261110-001/) |

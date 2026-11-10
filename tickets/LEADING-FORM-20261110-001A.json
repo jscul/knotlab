@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CHAIN-ORDERS-20261110-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "LEADING-FORM-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At n = 2^m, h = n/2, for a in GF(2n)* with G the monic least polynomial, k = h - deg G, J = ceil(k/2), N = G(k)G(k + 1) and the family Zhat(l) = Z_0 + l S + sum_r a^(2^r) l^(2^r)/(1 + l^(2^r)) M_(k^(h - 2^(r-1))) of CHAIN-ORDERS-20261110-001A: find the vectors psi_r of the reduction of Zhat to ker X_b = G F[Y]_(<J) in closed form order by order (in the theta-picture theta_r = psi_r/G, where the chain equations read Tr theta_r = tau theta_(r-1) + (the family's high terms) mod k^h, Tr = 1 + tau, and the Wronskian W(G, F) = G tau F + F tau G carries them to polynomials in Y), and from them, by the 2n + 1 rule, the reduction's coefficient at l^(2t-1) on co-distance t = k - i - j; target: [k - i - j a power of two] there and zero below, at every t (with CHAIN-ORDERS-20261110-001A's Theorem 3, the chain lemma). Frozen stop rule: the first order r >= 2 with no closed form of psi_r (verified exactly at every a for sides 8 to 64) ends the attempt, and the record states how far the leading form is proved. Found before registration: the leading form at every a for sides 8 to 256 and its first three orders proved (CHAIN-ORDERS-20261110-001); no closed form of psi_2 yet.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LEADING-FORM-20261110-001"
+  },
+  "parent": "LEADING-FORM-20261110-001",
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "The reduction's vectors order by order"
+}

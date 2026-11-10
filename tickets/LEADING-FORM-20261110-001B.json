@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CHAIN-ORDERS-20261110-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "LEADING-FORM-20261110-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Frozen side check (sub-goal B91's first step), run before the proof attempt of ticket A: at every eigenvalue with even k = 2c >= 4 for sides 16, 32 and 64, compute the reduction of the family to ker X_b with the monomial complement and with the complement containing k G Y^j (2j < k - 1), in two parametrizations (the family Zhat in l, and Z(a + au)/(1 + u) in u), and test (S1) every entry (i, j) with i + j odd vanishes modulo the parameter to the power 2k, and (S2) every entry with i + j even has only odd powers of the parameter below 2k. B91's strong form (the reduction at k = 2c is the parameter times the reductions at c and c - 1 with the parameter squared) predicts S1 and S2 for some of the four variants at every tested eigenvalue. Decision rule, frozen: if one variant passes at every tested eigenvalue, the epic considers the induction on k and says which route it takes and why; if every variant fails somewhere, B91's strong form is recorded as refuted (the halving of the leading matrix, proved, stands) and the epic proceeds with ticket A's co-distance induction. Disclosed before registration: at one eigenvalue (k = 6, side 32, a = alpha^23) the monomial-complement entry (0, 1) has valuation 10 < 12 in u, and valuations do not depend on the parametrization, so S1 already fails for that complement there.",
+  "ownership": {
+    "root": false,
+    "scope_id": "LEADING-FORM-20261110-001"
+  },
+  "parent": "LEADING-FORM-20261110-001",
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "Does the reduction split when the index halves"
+}

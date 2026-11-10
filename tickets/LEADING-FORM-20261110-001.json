@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse"
+    ],
+    "program": "foundations",
+    "takes": [
+      "CHAIN-ORDERS-20261110-001#1",
+      "CHAIN-ORDERS-20261110-001#2"
+    ]
+  },
+  "id": "LEADING-FORM-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up CHAIN-ORDERS-20261110-001's direction 1 (sub-goal B73) at the coordinator's go-ahead on 2026-11-10, with the first step of its direction 2 (sub-goal B91) as a frozen side check: at sides n = 2^m, prove the leading form of the reduction of the cut-open torus's family to the eigenvectors G Y^j at every order (entry (i, j) starting at u^(2k-1-2(i+j)) with coefficient [k - i - j a power of two]), by finding the reduction's vectors in closed form order by order and the 2n + 1 rule (co-distance induction); or, if the frozen halving test shows the reduction at k = 2c splitting into those at c and c - 1 with u replaced by u^2, by an induction on k if that looks shorter. Frozen stop rule: the first order with no closed form ends the attempt.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LEADING-FORM-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Active 2026-11-10: pre-registered; the halving test and the proof attempt follow.",
+  "status_class": "active",
+  "stop_rule": "Frozen 2026-11-10 before the attempt: the attempt ends at the first order r >= 2 for which no closed form of the reduction's vector psi_r (an explicit formula in G, k, Y, a and the family's terms, verified exactly at every eigenvalue for sides 8 to 64) is found; the record then states the leading form proved through the co-distance that order reaches and the obstruction at order r. It also ends with the leading form proved at every order, or an eigenvalue where it fails.",
+  "title": "The leading form at every order"
+}

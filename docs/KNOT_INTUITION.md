@@ -1379,8 +1379,21 @@ So network holes come in two kinds:
      where the dissonance ends.
    - **Reading.** The point flows down into named patterns and settles; to move it again something must raise the tension, a moving state
      or a learner that accepts a temporary rise.
-   - **Next (awaiting a go-ahead).** Let the state move while learning acts (backlog B71), the first challenge of A26
+   - **Next (taken by `MOVING-STATE-20261110-001`, below).** Let the state move while learning acts (backlog B71), the first challenge of A26
      ([decision note](../research/ATOM-LAYERS-20261110-001/atom_layers.md)).
+
+   **2026-11-10: let the state move while learning acts** (`MOVING-STATE-20261110-001`, the challenge of A26).
+   - **The question.** Every learning result so far held the state still. Let the point move: between learning steps the state may flip
+     one point, never raising the dissonance.
+   - **A moving point frees learning (computed).** Where the fixed-state learner made no step, about half the runs now resolve or reach
+     the floor (23 of 50 with one atom away, 28 of 50 with two): the point walks to where learning can act.
+   - **A settled unit stays in its pattern (computed).** At the genus-2 floor the unit wanders under such flips, but only inside the atom
+     it settled in and at that atom's junction faces, never into the other atom or the upper level (exhaustive on K_2).
+   - **Verdict.** A26 Overturned as a limit on what learning reaches, by the rule frozen before the run; its fixed-state results stand as
+     such, and the moving-state reading is A50.
+   - **Reading.** Named patterns are traps at constant tension: a point can move inside one but not out of it.
+   - **Next (started).** A learner that accepts a temporary rise (backlog B72): does a bounded rise let the point leave the trap
+     ([decision note](../research/MOVING-STATE-20261110-001/moving_state.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

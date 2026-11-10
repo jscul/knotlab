@@ -80,7 +80,7 @@ evidence: results and their status come from the records each entry links.
 | [A23](#a23--a-laws-local-view-is-its-rooted-code) | A law's local view is its rooted code | measure | Assumed |
 | [A24](#a24--the-pinwheel-laws-allowed-states-fix-its-planar-map) | The pinwheel law's allowed states fix its planar map | working premise | Assumed |
 | [A25](#a25--a-local-law-without-hidden-states-cannot-force-roundness) | A local law without hidden states cannot force roundness | working premise | Confirmed |
-| [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Under challenge |
+| [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Overturned |
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
 | [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Overturned |
@@ -104,6 +104,7 @@ evidence: results and their status come from the records each entry links.
 | [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
 | [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Assumed |
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
+| [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
 
 ## Entries
 
@@ -626,7 +627,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A26 · A learner acts only at dissonance while the state holds still
 
-**Under challenge** · 2026-11-10 · scope
+**Overturned** · 2026-11-10 · scope
 
 - **Statement.** In the steering results a learning step changes one sign, and only on a side of a violated line or on a side
   with an end at an even face, where dissonance can be seen. The state does not change while the law is learned. A target, when
@@ -642,6 +643,11 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-10 · Overturned as a limit on what learning reaches by its challenge, `MOVING-STATE-20261110-001`, under the rule frozen before it
+    ran: a state that flips one point between learning steps without raising the dissonance freed a stuck learner in 23 of 50 one-atom
+    runs and brought 28 of 50 two-atom runs to the floor, where the fixed-state learner made no step; a unit settled at the genus-2 floor
+    still wanders only inside its own atom. The results proved or computed with the state held still stand as statements about such a
+    learner; the program's reading of the learning picture is now A50 ([let the state move](../research/MOVING-STATE-20261110-001/moving_state.md)).
   - 2026-11-10 · Put under challenge by `MOVING-STATE-20261110-001` (backlog B71), a frozen test: the state flips one point between learning
     steps when the flip does not raise the dissonance weight, on the atom spaces where the fixed-state learner was stuck or frozen.
   - 2026-11-10 · `ATOM-LAYERS-20261110-001` found that A26 is what freezes the genus-2 floor unit (an over-agreeing face offers no learning
@@ -1213,3 +1219,18 @@ evidence: results and their status come from the records each entry links.
   so when it grows. The cheapest test reruns GROW-r with unit weights and reads whether it still grows once at the dissonance.
 - **History.**
   - 2026-11-10 · Added by `GROW-STUCK-20261110-001`.
+
+### A50 · The state moves without raising the dissonance while learning acts
+
+**Assumed** · 2026-11-10 · scope
+
+- **Statement.** In the learning picture, between learning steps (sign changes at the dissonance) the state may flip one point, chosen
+  among the flips that do not raise the dissonance weight W (A49). The point moves; learning orients it.
+- **Why.** It replaces A26 as a limit, after `MOVING-STATE-20261110-001` showed that holding the state still is what left a learner stuck
+  and a unit frozen. It is the owner's picture most directly: a point that moves through a network that learning orients.
+- **Rests on it.** That epic's finding that a moving point frees learning in about half the runs while a settled unit stays in its atom
+  ([let the state move](../research/MOVING-STATE-20261110-001/moving_state.md)).
+- **Challenge.** The alternatives let the state take only improving flips, or any flip with a temperature, or flip several points at once.
+  The cheapest test reruns that epic with improving flips only.
+- **History.**
+  - 2026-11-10 · Added by `MOVING-STATE-20261110-001`.

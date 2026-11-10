@@ -1432,8 +1432,17 @@ So network holes come in two kinds:
      as their holders, on all three line orbits of K_3; the named atoms end acting as their lines, the third transparent.
    - **Reading.** The leftovers behave as a memory: written by learning, held by the law in every state, untouched by the point's own
      motion, and read off by where the tension sits.
-   - **Next (awaiting a go-ahead).** Reading the address natively (backlog B85)
+   - **Next (taken by `READ-ADDRESS-20261110-001`, below).** Reading the address natively (backlog B85)
      ([decision note](../research/ADDRESS-20261110-001/address.md)).
+
+   **2026-11-10: reading the address** (`READ-ADDRESS-20261110-001`).
+   - **Writing holds one size past (computed).** On K_4 with three atoms, the two leftovers were written into every pair on every line
+     orbit (15 of 15; 24 of 24 with K_3).
+   - **The law reads it, atom by atom (computed).** In 23 of 24 written configurations the holders are exactly the atoms whose own signs
+     make them act as their lines; the read needs no state and no census. The exception had one acting atom for two units.
+   - **A random state does not show it.** About one random state in six has its over-agreement in exactly the holder pair.
+   - **Next (awaiting a go-ahead).** Does the stored address steer later learning (backlog B86)
+     ([decision note](../research/READ-ADDRESS-20261110-001/read_address.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

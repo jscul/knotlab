@@ -106,6 +106,7 @@ evidence: results and their status come from the records each entry links.
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 | [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
 | [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Assumed |
+| [A52](#a52--a-grown-handle-is-a-class-forced-torus-atom) | A grown handle is a class-forced torus atom | scope | Assumed |
 
 ## Entries
 
@@ -1267,3 +1268,25 @@ evidence: results and their status come from the records each entry links.
     growth law shapes what is read, but the board is still drawn ([reading distance while growing](../research/READ-GROW-20261110-001/read_grow.md)).
   - 2026-11-10 · Added at the owner's question whether the axes can follow rules, recording a default every space epic since
     `LOGIC-AXIS-20261107-001` took.
+
+### A52 · A grown handle is a class-forced torus atom
+
+**Assumed** · 2026-11-10 · scope
+
+- **Statement.** When learning is paired with growth, the growth move splices a torus atom, a torus knot space less one point, whose torus
+  has exactly one sign class that no state satisfies and is free at the removed point (flipping the sign of any one of the point's three
+  sides leaves a satisfiable law). The atom brings a Kasteleyn law of its torus, the old signs are kept, and the three new sides take the
+  signs that leave no even face. The Fano atom (7 points) and the thin-torus atoms of even index (4 to 40 points) are such atoms. The
+  experimenter chooses the atom and the line.
+- **Why.** `OTHER-ATOMS-20261110-001` put it in place of A48: for exactly these atoms the atom rule holds on any host (proved, given
+  freeness, which was checked for every lattice torus to 30 points), and thin-torus atoms wrote and held addresses as the Fano atom does
+  ([other atoms](../research/OTHER-ATOMS-20261110-001/other_atoms.md)). An atom whose torus satisfies every class is transparent in all
+  four classes and holds nothing, so it is not a memory.
+- **Rests on it.** The learning line's results from `GROW-HANDLE-20261110-001` to `ADDRESS-SEQ-20261110-001`, now read for any such atom;
+  the reading that growth alone does not remove a sphere's dissonance
+  ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)); backlog B98 and B104.
+- **Challenge.** Atoms of genus 2 or more (a grown space less a point), tori that are not lattice quotients, a torus that is not free, or a
+  growth law that chooses the atom itself (backlog B106). The cheapest test grows a knot sphere carrying two Fano atoms, less a point, as
+  one atom (backlog B104): if it acts only where both inner atoms act, the premise extends to atoms of atoms.
+- **History.**
+  - 2026-11-10 · Added by `OTHER-ATOMS-20261110-001`, replacing A48 (overturned as a limit).

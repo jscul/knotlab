@@ -2442,8 +2442,23 @@ So network holes come in two kinds:
      The expansion is the excess, up to a bounded residual; strictly, both predictions fail on that residual.
    - **Reading.** The network's own crossings keep the conformal clock, so the clock is not only the observer's. The resemblance to
      comoving distance in an expanding space is a resemblance of counting, not a physics claim; the board is still drawn (A51).
-   - **Next (selected, awaiting a go-ahead).** The conformal metric as a theorem (sub-goal B125; Payoff 3/3, Concreteness 2/3)
+   - **Next (taken: B125, next entry).** The conformal metric as a theorem (sub-goal B125; Payoff 3/3, Concreteness 2/3)
      ([decision note](../research/EXPAND-READ-20261110-001/expand_read.md)).
+
+   **2026-11-10: the conformal metric, proved** (`CONF-METRIC-20261110-001`).
+   - **The question.** Sub-goal B125: is the growing plane's round trip, in its own clock, a metric up to a constant at every size and
+     for every schedule, not only in the schedules read?
+   - **Yes (proved).** In one stage, the earliest arrival between cells is a taxicab distance on the lattice of contacts: the contacts
+     sit at the midpoints of the rings' sides, a route goes a quarter-turn round a ring from one to the next in g lags, and two such hops
+     make exactly one ring step along an axis. Conformal time makes that speed the same in every stage, and what a doubling adds (a ring
+     shrinking toward its corner, one possible wait) shrinks with the stage and sums to a constant. So the first arrival between original
+     rings is 4g times their taxicab distance up to a constant, and the round trip is a metric up to 42g + 4. In plain lags the excess
+     doubles with each doubling a trip crosses (computed).
+   - **The 4g·2^k law follows in a line** from the two hops per ring step: it was a consequence of the construction, read by the census.
+   - **Reading.** The first proved statement in this line that a uniform local law, growing, reads a distance between its original
+     rings in its own clock at every size. It is coarse, the board is still drawn (A51), and the distance read is the drawn board's.
+   - **Next (proposed).** Sharp constants: the readings stay within 6 below and 4g above, the bounds are 6g and 9g + 2
+     ([decision note](../research/CONF-METRIC-20261110-001/conf_metric.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

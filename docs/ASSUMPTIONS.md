@@ -1402,6 +1402,10 @@ evidence: results and their status come from the records each entry links.
   instance from the time a front takes to cross one ring, which X2 measures. If that crossing time doubles exactly at each doubling,
   the network's own crossings count conformal time and the choice is not an observer's; if not, another clock would do differently.
 - **History.**
+  - 2026-11-10 · Used by `CONF-METRIC-20261110-001`, which proved that in this clock the growing plane's first arrivals between
+    original rings are 4g times their taxicab distance up to a constant, for every schedule and size, so the round trip is a metric up to
+    42g + 4 ([the conformal metric as a theorem](../research/CONF-METRIC-20261110-001/conf_metric.md)). Kept as Assumed: the clock is a
+    reading, now with a theorem about what it reads.
   - 2026-11-10 · Tested by `EXPAND-READ-20261110-001` (exploratory, exact, 891 schedules): every ring-to-ring crossing time doubles at
     each doubling (4g 2^k lags per original spacing in stage k, 2,368 of 2,368 readings), so the network's own crossings count this clock,
     as the challenge asked; in it the round trip breaks the triangle inequality in 28 schedules by at most 2 lags, against 240 schedules

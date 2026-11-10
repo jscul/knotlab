@@ -75,6 +75,13 @@ on the 7 × 7 tube every balanced schedule read is deaf beyond distance 4.
 
 - **Relied on.** A30, A32, A38 (freezing), A40, A41 (time length through freezes), A42, A44, A45, A51. **Added.** None.
 
+## Correction
+
+**2026-11-10 · Not a block, missed prior work** (`docs/CORRECTIONS.md`). The classification "new as far as found" missed that
+earliest-arrival distances in time-varying graphs need not satisfy the triangle inequality (temporal graphs: Michail 2015; arXiv
+2510.01702). The census's own contribution is where the violations fall (only across doublings); their removal in conformal time is
+`EXPAND-READ-20261110-001`'s and `CONF-METRIC-20261110-001`'s. Every result stands.
+
 ## Ratio
 
 - **Substantive.** One frozen census (A), with the second code extended for it. **Administrative.** The pre-registration, this note

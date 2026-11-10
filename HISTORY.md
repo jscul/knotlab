@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: a growing plane's time lengths failing to be a metric was not new
+
+- METRIC-GROW-20261110-001 classified its finding, that a growing plane's time lengths break the triangle inequality, as new as far as
+  found.
+- Earliest-arrival distances in time-varying graphs are known not to be metrics in general. What is new is where the violations fall
+  (only across doublings) and their removal in conformal time, proved up to a constant
+  ([decision note](research/CONF-METRIC-20261110-001/conf_metric.md)).
+- Unchanged: every result of METRIC-GROW-20261110-001.
+
 ## 10 November 2026: the left-pigeon bound is audited and not new in substance
 
 - The audit of `WIDE-LEFT-20261110-001`'s Res(⊕) bound for the binary

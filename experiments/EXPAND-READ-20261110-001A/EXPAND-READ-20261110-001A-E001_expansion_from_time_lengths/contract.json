@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXPAND-READ-20261110-001A-E001",
+  "ticket": "EXPAND-READ-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a plane grown by the doubling law read its own expansion from its time lengths: is the triangle excess zero within a stage, does the time to cross one original spacing double at each doubling, and does a clock that counts a lag after k doublings as 2^-k make the round trip time lengths a metric while the plane grows?",
+  "definitions": {
+    "time lengths": "As frozen in METRIC-GROW-20261110-001A-E001: T1(v) from ring (0, 0)'s own cell at position 1 to the position-1 cell of the original ring at v, T(v) from ring to ring, both the first lag a route reaches the target and both counted only when an explicit freeze leaving one route open confirms them (A41). All readings while the plane grows.",
+    "stage": "The step from lag tau to tau + 1 is in stage k(tau), the number of doublings at lags 0 < d <= tau (stage 0 follows the doubling at lag 0). A target first reached at lag t is reached in stage k(t - 1).",
+    "conformal time": "phi(t) = sum over tau = 0 .. t - 1 of 2^-k(tau): a lag of stage k counts as 2^-k, the time the plane would take at its stage-0 scale. The conformal round trip is phi(T1(v)) + phi(T1(-v)). This reading is new and is recorded as assumption A56: it is computed from the law's own doublings, not supplied by a simulator, but another clock could be chosen.",
+    "X1 (no excess within a stage)": "Every directed triangle violation T1(u + w) > T1(u) + T1(w) has T1(u) + T1(w) beyond the first doubling after lag 0. A theorem by concatenation: within a stage a route to u followed by the translate of a route to w is a route to u + w. Checked, not tested.",
+    "X2 (the scale factor read)": "Along every axis, when d and d + 1 original spacings are both first reached in stage k, the time length (T and T1) grows by 4g 2^k lags: the plane's original spacing is 2^(k+1) ring steps in stage k, and a front crosses one ring in 2g lags.",
+    "X3 (a metric in conformal time)": "In every schedule read, the conformal round trip satisfies the triangle inequality on every triple where it is defined (no violation, beyond 1e-9).",
+    "comparison": "The plain round trip T1(v) + T1(-v) (lags), whose violations METRIC-GROW-20261110-001 found, is reported beside X3."
+  },
+  "public_inputs": {
+    "code 1": "METRIC-GROW-20261110-001A-E001's metric_lib.py (sha256 417a8b4d4c5b7a89eae96210dd7aa5800f48d6ebbe418aef715a42f90051dd04), on CROSS-WHY-20261110-001B's territory_lib.py.",
+    "code 2": "METRIC-GROW-20261110-001A-E001's code2_metric.py (sha256 5328555277e03ce2eee1a04c1ae12215b80427da9301fd432df169745895b744), on grid_lib.py, for every 25th schedule of F1 to F3 (T and T1 compared before freezes).",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "F1: the 5 x 5 tube at g = 3, three runs, the first of 8 to 28 lags (step 4), the second 4 to 24 (step 4), the third 8 to 64 (step 8): 288 schedules. F2: the 5 x 5 tube at g = 2 and at g = 5, two runs of 4 to 64 lags (step 4): 512. F3: the 7 x 7 tube at g = 3, two runs, 8 to 48 (step 8) then 8 to 64 (step 8): 48. F4: the schedules known to keep every stage balanced (METRIC-GROW-20261110-001's 32 two-run schedules on 5 x 5 and 8 on 7 x 7, and [28, 1, 1], [28, 1, 2], [35, 1, 1] from READ-GROW-20261110-001), reported apart. Balance is not read here: X1 to X3 are claims about the growing network's routes whether or not its stages are balanced."
+  },
+  "forbidden_inputs": [
+    "Changing the families, definitions, clock or thresholds after seeing results"
+  ],
+  "primary_observable": "Per family: X1's violations and where they fall; X2's increments by stage against 4g 2^k; X3's conformal violations and their largest excess; the plain round trip's violations beside them.",
+  "cheapest_meaningful_control": "METRIC-GROW-20261110-001A-E001's readings: the plain round trip broke the triangle inequality only across doublings; in its stage-0 readings at g = 3 the axis increment was 12.",
+  "resource_budget": {
+    "wall_minutes": 120,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-family lines.",
+  "decision_or_followup_rule": "Frozen. X2 holds if every increment read equals 4g 2^k; X3 holds if no family has a conformal violation. If X3 holds while the plain round trip is violated, the expansion is the whole of the triangle excess: the growing plane reads a metric in conformal time. If X3 fails, its violations are reported with their size and stage, and the excess is not only the scale. If code 2 disagrees on any sampled schedule, that is reported before any verdict.",
+  "stop_rule": "Stop when every family is read.",
+  "nonclaims": [
+    "Exploratory and finite: two tubes, three spacings, the frozen families; the freeze readings exact per case.",
+    "Conformal time is a reading of the law's own doublings (A56); no physics claim. Declared rings (A45) on a declared board (A51); open births (A44); the schedules declared."
+  ],
+  "feasibility_disclosure": "Not blind. Known before freezing: METRIC-GROW-20261110-001's readings on its 5 x 5 and 7 x 7 schedules (those of F4), including stage-0 axis increments of 12 at g = 3 and, in [12, 60] and [28, 60], ring-to-ring increments of 24 after one doubling; one conformal triple of [28, 60] checked by hand (no violation). A smoke test ran run.py's evaluate on the 3 x 3 schedule [12, 4], outside the families. Nothing of F1 to F3 was read."
+}

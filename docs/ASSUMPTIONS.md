@@ -110,6 +110,7 @@ evidence: results and their status come from the records each entry links.
 | [A53](#a53--nativeness-of-a-board-made-of-names-is-counted-per-name) | Nativeness of a board made of names is counted per name | reading | Assumed |
 | [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Assumed |
 | [A55](#a55--brauns-bit-php-preprint-is-correct) | Braun's bit-PHP preprint is correct | premise | Assumed |
+| [A56](#a56--time-in-a-growing-plane-is-counted-at-the-planes-own-scale) | Time in a growing plane is counted at the plane's own scale | reading | Assumed |
 
 ## Entries
 
@@ -1385,3 +1386,20 @@ evidence: results and their status come from the records each entry links.
     theorem in a stronger system, and Pang (arXiv 2610.00837) builds on it; both are unrefereed, and the generic criterion's prose has
     had no outside reading.
   - 2026-11-10 · Added by `WIDE-LEFT-20261110-001`, whose bound rests on it.
+
+### A56 · Time in a growing plane is counted at the plane's own scale
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** In a plane grown by the doubling law, a lag taken after k doublings counts as 2^-k of a lag: conformal time
+  phi(t) = sum of 2^-k(tau) over the lags before t, where k(tau) is the number of doublings so far. Time lengths read in this clock
+  are the plane's distances at its first scale.
+- **Why.** `EXPAND-READ-20261110-001` took it by default to test whether the triangle excess of a growing plane's time lengths
+  (`METRIC-GROW-20261110-001`) is its expansion and nothing else. The weight is computed from the law's own doublings, which the declared
+  schedule fixes, not from a metric supplied by a simulator.
+- **Rests on it.** That epic's test X3, whether the round trip in conformal time is a metric while the plane grows.
+- **Challenge.** The doubling count is part of a declared schedule; a native clock would have to be read by the network itself, for
+  instance from the time a front takes to cross one ring, which X2 measures. If that crossing time doubles exactly at each doubling,
+  the network's own crossings count conformal time and the choice is not an observer's; if not, another clock would do differently.
+- **History.**
+  - 2026-11-10 · Added by `EXPAND-READ-20261110-001`.

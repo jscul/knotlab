@@ -112,6 +112,7 @@ evidence: results and their status come from the records each entry links.
 | [A55](#a55--brauns-bit-php-preprint-is-correct) | Braun's bit-PHP preprint is correct | premise | Assumed |
 | [A56](#a56--time-in-a-growing-plane-is-counted-at-the-planes-own-scale) | Time in a growing plane is counted at the plane's own scale | reading | Assumed |
 | [A57](#a57--an-address-asks-for-a-bit-per-atom-each-atom-given-by-its-region) | An address asks for a bit per atom, each atom given by its region | reading | Assumed |
+| [A58](#a58--the-world-holds-inputs-as-points-and-reads-an-output-at-the-floor) | The world holds inputs as points and reads an output at the floor | reading | Assumed |
 
 ## Entries
 
@@ -1446,3 +1447,22 @@ evidence: results and their status come from the records each entry links.
   learner can still write exactly, for instance by testing whether dissonance outside the named atoms ever moves.
 - **History.**
   - 2026-11-10 · Added by `NATIVE-WRITE-20261110-001`.
+
+### A58 · The world holds inputs as points and reads an output at the floor
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** An input-output interface of the layered memory is the three outer points of an atom or composite. The world holds two
+  of them at values (the inputs), and the third is read at the floor (every line satisfied, no even face) as decided (every floor state
+  gives it one value), undecided (both values occur) or excluded (no floor state has those inputs). A learner is taught by the world
+  holding the inputs and the output it asks for.
+- **Why.** `IN-OUT-20261110-001` froze it before any run. A role depends on the law alone, so held inputs cannot change it, and readings of
+  roles are monotone (theorem M of `NOT-INSIDE-20261110-001`); a decided value alone allows, for two inputs, only copying or negating one
+  of them (theorem D there). The undecided reading is what a gate does: an acting atom forces its third side exactly when the held sides
+  agree.
+- **Rests on it.** That epic's maps and its learning from examples
+  ([its pre-registration](../research/IN-OUT-20261110-001/preregistration.md)).
+- **Challenge.** Read the output differently: as the dissonance near it, as a decided value with more inputs (three held inputs allow
+  majority and parity under theorem D), or as a probability over floor states; or let the world hold inputs as signs rather than points.
+- **History.**
+  - 2026-11-10 · Added by `IN-OUT-20261110-001`.

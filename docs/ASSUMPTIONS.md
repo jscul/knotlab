@@ -642,6 +642,8 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-10 · `ATOM-LAYERS-20261110-001` found that A26 is what freezes the genus-2 floor unit (an over-agreeing face offers no learning
+    step); its next-steps report selects a challenge of A26, backlog B71, letting the state move ([layers through atoms](../research/ATOM-LAYERS-20261110-001/atom_layers.md)).
   - 2026-11-10 · `CHOOSE-RES-20261110-001` supplied a target class from outside, as A26 allows a target, and kept the learner's steps
     at the dissonance with the state fixed ([choosing the resolution](../research/CHOOSE-RES-20261110-001/choose_res.md)).
   - 2026-11-10 · Relied on again by `GROW-HANDLE-20261110-001` for learning after growth; growth itself is a separate move, chosen by the

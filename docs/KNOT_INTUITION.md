@@ -1366,7 +1366,21 @@ So network holes come in two kinds:
      changes; seeing 2 or fewer it cannot see what its new handle offers and keeps growing, never resolving (K_2 to K_6).
    - **Reading.** Growing where you are stuck works only if you look far enough ahead to use what you grew; growing at every impasse piles
      up permanent dissonance.
-   - **Next (started).** Layers through atoms (sub-goal B54) ([decision note](../research/GROW-STUCK-20261110-001/grow_stuck.md)).
+   - **Next (taken by `ATOM-LAYERS-20261110-001`, below).** Layers through atoms (sub-goal B54) ([decision note](../research/GROW-STUCK-20261110-001/grow_stuck.md)).
+
+   **2026-11-10: layers through atoms** (`ATOM-LAYERS-20261110-001`).
+   - **The question.** A Fano atom spliced in for a line acts from outside as that line: the sphere is an upper level, each atom a lower
+     level standing for one of its lines. With several atoms, where does the dissonance sit, and can learning move it between levels?
+   - **Down, yes (computed).** Growing an atom at the dissonance moves it into the atom, and learning resolves it there. Away from the
+     dissonance the resolution still passes through the atom, but a learner seeing 4 steps ahead cannot find it and stays stuck above.
+   - **Up or across, no (proved).** At genus 2 the remaining unit is one over-agreeing face with no violated line or even face, so no
+     learning step exists there; a learner that holds the state still and never raises the dissonance cannot move it.
+   - **Each extra atom carries its own unit (computed).** A second atom holds one over-agreeing face from the moment it is grown, and that is
+     where the dissonance ends.
+   - **Reading.** The point flows down into named patterns and settles; to move it again something must raise the tension, a moving state
+     or a learner that accepts a temporary rise.
+   - **Next (awaiting a go-ahead).** Let the state move while learning acts (backlog B71), the first challenge of A26
+     ([decision note](../research/ATOM-LAYERS-20261110-001/atom_layers.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

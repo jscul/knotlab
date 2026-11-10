@@ -13,8 +13,8 @@
   "proof": "LEIBNIZ-BOARDS-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Boards under Leibniz's rule",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt and before ticket B's census. With the board made of identity distinctions on the words of F2 and a finitary value law over a finite alphabet, Leibniz's rule (names u and v are one place iff s(ug) = s(vg) for every word g) makes the boards the Schreier graphs Sch(Stab(s)) of the solutions s on the tree (T1). To be proved: S (every board the tree or finite) is false, by the horofunction law on Z/3 and Sch(<x^3>) (T2, found by hand before registration); Lemma A (T3); Lemma B (T4); the dichotomy W, if some board is infinite then the tree is a board (T5), or W reduced to an explicit statement; P, no law makes every board grow quadratically (T6).",
+  "status": "Proved",
+  "claim": "With the board made of identity distinctions on the words of F2 and a finitary value law over a finite alphabet, Leibniz's rule (names u and v are one place iff s(ug) = s(vg) for every word g) makes the boards exactly the Schreier graphs Sch(Stab(s)) of the solutions s on the tree (T1). Proved: the strong form S (every board the tree or finite) is false, since the horofunction law on Z/3 has the board Sch(<x^3>) (T2); Lemma A, a periodic solution using a branching pattern gives a solution with trivial stabilizer and one with an infinite cyclic stabilizer (T3); Lemma B, without a solution of trivial stabilizer some open set of solutions is fixed by an h != 1, rigid off h's axis, finite and isolated (T4); the dichotomy W (an infinite board brings the tree) and P (no law makes every board quadratic) for deterministic laws and for laws with a periodic branching solution, which by ticket B covers all 1,024 Life-like one-bit laws and the atom (T5, T6). Not proved: W in general; it is reduced to excluding a non-isolated solution fixed by some h != 1, rigid away from one end of h's axis, whose far alternative completions are all isolated.",
   "dependencies": [
     "BOARD-DIST-20261110-001A"
   ],
@@ -52,9 +52,7 @@
     "check": "proofs/LEIBNIZ-BOARDS-20261110-001A/LEIBNIZ-BOARDS-20261110-001A-P001_boards_under_leibnizs_rule/check.py",
     "directory": "proofs/LEIBNIZ-BOARDS-20261110-001A/LEIBNIZ-BOARDS-20261110-001A-P001_boards_under_leibnizs_rule"
   },
-  "remaining_obligations": [
-    "T2 to T6, or the record of which fails and why"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -89,7 +87,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10 (sub-goal B111).",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "status": "proved by hand; finite checks in check.py passed (result.json); the general W reduced, not proved",
+    "novelty": "T2 to T4 elementary and close to folklore (Busemann functions, Baire category); W not found stated for free groups (bounded search 2026-11-10; Piantadosi 2008 and Bitar, arXiv 2406.04132, treat the converse direction and stabilizer families)."
   }
 }

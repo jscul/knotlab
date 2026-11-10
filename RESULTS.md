@@ -1276,7 +1276,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | The leading form at every order (`LEADING-FORM-20261110-001`) | [closure](proofs/LEADING-FORM-20261110-001Z/LEADING-FORM-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEADING-FORM-20261110-001/) |
 | 2026-11-10 | A note on the learning line (`LEARN-NOTE-20261110-001`) | [closure](proofs/LEARN-NOTE-20261110-001Z/LEARN-NOTE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-NOTE-20261110-001/) |
 | 2026-11-10 | Learning at a rise (`LEARN-RISE-20261110-001`) | [closure](proofs/LEARN-RISE-20261110-001Z/LEARN-RISE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-RISE-20261110-001/) |
-| 2026-11-10 | Leibniz boards (`LEIBNIZ-BOARDS-20261110-001`) | — | [folder](research/LEIBNIZ-BOARDS-20261110-001/) |
+| 2026-11-10 | Leibniz boards (`LEIBNIZ-BOARDS-20261110-001`) | [closure](proofs/LEIBNIZ-BOARDS-20261110-001Z/LEIBNIZ-BOARDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEIBNIZ-BOARDS-20261110-001/) |
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Many points at once (`MANY-POINTS-20261110-001`) | [closure](proofs/MANY-POINTS-20261110-001Z/MANY-POINTS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MANY-POINTS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |

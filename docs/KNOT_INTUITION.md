@@ -1441,8 +1441,20 @@ So network holes come in two kinds:
    - **The law reads it, atom by atom (computed).** In 23 of 24 written configurations the holders are exactly the atoms whose own signs
      make them act as their lines; the read needs no state and no census. The exception had one acting atom for two units.
    - **A random state does not show it.** About one random state in six has its over-agreement in exactly the holder pair.
-   - **Next (awaiting a go-ahead).** Does the stored address steer later learning (backlog B86)
+   - **Next (taken by `ADDRESS-STEER-20261110-001`, below).** Does the stored address steer later learning (backlog B86)
      ([decision note](../research/READ-ADDRESS-20261110-001/read_address.md)).
+
+   **2026-11-10: the stored address steers later learning** (`ADDRESS-STEER-20261110-001`).
+   - **The rule (exact on 1,280 classes of 11 spaces).** If every atom acts as its line, no state satisfies every line; otherwise every
+     acting atom holds a unit of the floor dissonance and further units are free. Each atom's role is set by its own handle's class. The
+     earlier exception was a class with fewer acting atoms than units.
+   - **Four atoms (computed).** Every triple of four atoms was written as the holders on every line orbit of K_3 (12 of 12).
+   - **Memory survives a fresh tension (computed).** After one random flip of the upper level a learner returned to the written acting
+     atoms in 240 of 240 runs, and after two or three in 463 of 480.
+   - **Reading.** Learning writes which patterns stand for their lines, the law keeps it, and a new disturbance settles back into it. All
+     on small cases.
+   - **Next (awaiting a go-ahead).** A proof of the atom rule (backlog B87)
+     ([decision note](../research/ADDRESS-STEER-20261110-001/address_steer.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

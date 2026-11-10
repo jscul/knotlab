@@ -44,12 +44,13 @@ rings of its own is not a bound one.
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| The 32 laws bind on square lines (3) | square 6 × 6 lines, to lag 6 (read to 5) | pending |
-| No seeing law binds on a torus (2) | square 7 × 7 torus, the 128 nonlinear passing laws and the 32 (read to 6) | pending |
-| Needing and on time under the eight nonlinear laws (4) | square 7 × 7 torus and lines (read to 6) | pending |
+| The 32 laws bind on square lines (3) | square 6 × 6 lines, to lag 6 (read to 5) | pass: all 32 bind to lag 6 |
+| No seeing law binds on a torus (2) | square 7 × 7 torus, the 128 nonlinear passing laws and the 32 (read to 6) | pass: none of the 128 binds |
+| Needing and on time under the eight nonlinear laws (4) | square 7 × 7 torus and lines (read to 6) | pass: every contact needs both rings to lag 64, none late (98 and 28 pairs per law) |
 
-The script is `stress_test.py` beside this note, registered before launch as RING-LAW-S1; **stress test pending**: the closure commits
-these preliminary results and the outcome is folded in when the run finishes.
+The script is `stress_test.py` beside this note, its output `stress_test.json`; registered before launch as RING-LAW-S1, it ran from
+2026-11-10 05:23 to 09:13 UTC (3.8 hours, 6 workers, 5.3 GB peak) and passed. Folded in on 2026-11-10; the conclusions stand as
+stated.
 
 ## Literature and provenance
 

@@ -2372,8 +2372,21 @@ So network holes come in two kinds:
    - **Reading.** Persistence never needed a flip because it never saw the rings. How a plane reads its distance depends on how its
      rings are declared (A45): a declared plane of small rings needs freezing, and what reads plainly is again a line. No lag cutoff was
      used.
-   - **Next (research directions, none selected).** Rings the law can see (B45); a plane of long rings (B46)
+   - **Next (taken, B45 and B46).** Rings the law can see (B45, `RING-LAW-20261109-001`); a plane of long rings (B46, next entry)
      ([decision note](../research/REROUTE-20261109-001/reroute.md)).
+
+   **2026-11-10: a plane of long rings** (`LONG-RINGS-20261110-001`).
+   - **The question.** The square torus's automaton reads its distance plainly only when its rings are long. Could long rings running
+     in two directions read it plainly and still form a plane?
+   - **Not among the periodic groupings (census, pre-registered).** Of about two million groupings with a small period, every one that
+     reads plainly is a family of parallel lines that wind round the torus, along an axis or a diagonal of slope 1, 2, 3, 5, 7 or 5/3.
+     Each line touches only its two neighbours, so the rings form a cycle. Where lines of two directions cross, or a ring closes up,
+     some reading comes late.
+   - **Reading.** Lines of every slope are reached the same way, by a single straight route from each target to the line's nearest
+     contact. What reads plainly is one direction of lines, so under this law a plane of rings still needs freezing. No lag cutoff was
+     used.
+   - **Next (research directions, none selected).** Prove that only lines read plainly (B75); groupings without a period (B76)
+     ([decision note](../research/LONG-RINGS-20261110-001/long_rings.md)).
 5. **Repository consequences, resolved on 2026-10-19.** The owner adopted
    K1–K3 as the canonical test with erasure read as forgetting.
    `KNOT-FOUNDATION-20261019-001E-P001` and `KNOT-FOUNDATION-20261019-001A-P001`

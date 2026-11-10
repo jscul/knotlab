@@ -143,3 +143,9 @@ tension around; learning decides where it rests. That much is a theorem on these
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B95 taken; B97 (selected), B98 and B99 added; B78 closed as answered.
 **Assumptions:** none new; A48 named as the challenge of B97.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (04:02 UTC), summarizing sections 1 to 8 above: the note's location and checks, the
+atom rule's scope, the seven failed predictions, the open observations, B78 closed as answered, and the next-steps table of section 8 with
+B97 (other atoms, a challenge of A48) selected and awaiting a go-ahead.

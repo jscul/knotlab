@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**275 current results** and 5 superseded ones, from 227 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**276 current results** and 5 superseded ones, from 227 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 3 results
+- [Other results](#other-results): 4 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 227 epics with their closures
 
@@ -942,6 +942,9 @@ Results not yet placed in a line of work.
 - **2026-11-09 · Learning removes a class-forced dissonance only by winding around a handle** (`LEARN-HANDLES-20261109-001-D001`).
   On a torus whose Kasteleyn law is in a class no state satisfies, the least dissonance is one violated line and one over-agreeing face, and learning at the dissonance with the state fixed removes it, leaving no even face. Every process that removes it changes the law by a cycle of nonzero homology class, so learning carries the law's class, which no change of state can, and only around a handle.
   [proof P001](proofs/LEARN-HANDLES-20261109-001A/LEARN-HANDLES-20261109-001A-P001_learning_resolves_a_class_forced_pair_only_by_winding/proof.md), [epic closure](proofs/LEARN-HANDLES-20261109-001Z/LEARN-HANDLES-20261109-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · A handle grown at a knot sphere's line lets learning remove the dissonance the sphere forces** (`GROW-HANDLE-20261110-001-D001`).
+  Splicing a Fano atom at a line of a knot sphere makes a torus whose law extends with no even face, and if the grown law is its only unsatisfiable class, as computed on every grown torus from K_2 to K_5, learning at the dissonance with the state fixed then removes it. Every such removal changes a sign in the grown handle, so growth and learning together remove what neither removes alone.
+  [proof P001](proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/proof.md), [epic closure](proofs/GROW-HANDLE-20261110-001Z/GROW-HANDLE-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Notes
 
@@ -1184,7 +1187,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Larger spacings (`SPACING-20261109-001`) | [closure](proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/SPACING-20261109-001/) |
 | 2026-11-09 | The first tie of shortest routes (`TIE-LAW-20261109-001`) | [closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-LAW-20261109-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
-| 2026-11-10 | Learning that grows a handle (`GROW-HANDLE-20261110-001`) | — | [folder](research/GROW-HANDLE-20261110-001/) |
+| 2026-11-10 | Learning that grows a handle (`GROW-HANDLE-20261110-001`) | [closure](proofs/GROW-HANDLE-20261110-001Z/GROW-HANDLE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-HANDLE-20261110-001/) |
 | 2026-11-10 | Growth that stops (`GROW-STOP-20261110-001`) | [closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STOP-20261110-001/) |
 | 2026-11-10 | Growth on an invertible substrate (`INVERT-STEP-20261110-001`) | [closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/INVERT-STEP-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |

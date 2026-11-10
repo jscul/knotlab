@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CROSS-WHY-20261110-001Z-P001",
+  "canonical_id": "CROSS-WHY-20261110-001Z-P001",
+  "kind": "proof",
+  "ticket": "CROSS-WHY-20261110-001Z",
+  "proof": "CROSS-WHY-20261110-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of why crossing breaks balance",
+  "status": "Proved",
+  "claim": "Ledger closing CROSS-WHY-20261110-001: one line per conclusion with its status and evidence (ticket A, a frozen exploratory census that refutes W1 and W2; ticket B, proved), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "CROSS-WHY-20261110-001A",
+    "CROSS-WHY-20261110-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "CROSS-WHY-20261110-001",
+    "epic_path": [
+      "CROSS-WHY-20261110-001"
+    ],
+    "parents": [
+      "experiments/CROSS-WHY-20261110-001A/CROSS-WHY-20261110-001A-E001_schedules_that_cross/contract.json",
+      "proofs/CROSS-WHY-20261110-001B/CROSS-WHY-20261110-001B-P001_balance_is_read_on_one_territory/manifest.json",
+      "proofs/CROSS-WHY-20261110-001B/CROSS-WHY-20261110-001B-P001_balance_is_read_on_one_territory/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/CROSS-WHY-20261110-001A/CROSS-WHY-20261110-001A-E001_schedules_that_cross/contract.json": "5db50b03efb2b2dc1c876f971cafb7e44d4c5c7977f558810ef5ca2d54018bbb",
+    "proofs/CROSS-WHY-20261110-001B/CROSS-WHY-20261110-001B-P001_balance_is_read_on_one_territory/manifest.json": "0d7fc1215e3db1cd23c6acb8bb8f4e23889c2f8ed057cee316ba9be5c434b95d",
+    "proofs/CROSS-WHY-20261110-001B/CROSS-WHY-20261110-001B-P001_balance_is_read_on_one_territory/result.json": "d634a54b0ad4b6beb5f6f4f92252a493fe54d8a73fd114ac913f49c4957c9999"
+  },
+  "paths": {
+    "manifest": "proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/result.json",
+    "check": "proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's ticket; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's spawn on 2026-11-09.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

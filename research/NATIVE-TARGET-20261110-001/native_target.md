@@ -84,3 +84,29 @@ tested are all thin or Fano.
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B61 taken; sub-goal B60 re-rated to Concreteness 2/3 with its
 first step; B54 carried. **Assumptions:** A47 added (what a native signal is); history lines for A26 (the outside target is not needed on
 these tori) and A27 (the count, weighed by the state's dissonance, steers).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (00:23 UTC).
+
+**B61 done: learning doesn't need the outside map.** A learner that looks three of its own moves ahead (12.9 steps at 40 points), or one that keeps the most states sharing its tension (17.9), resolves every pair and beats random moves (64.4). The outside distance is still faster (7.5). The count works because opposite charges attract: far away only 2 states fit, and more fit as the hole nears the over-agreeing face. All computed and pre-registered, and it held one size past (to 46 points).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: native target (B61) | **Status:** Successful | sight and state counts both steer |
+| Local direction: steering by re-signing | Continue | no outside input needed on these tori |
+| Broader exploration: learning program | Known alternatives | growing a handle, chosen resolution, layers |
+| Long-term goal: G15 | Capability gained | the point is drawn natively, by stability |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Learning that grows a handle (B60) | 3/3 — Barrier | 2/3 — Testable | splice a Fano atom at a sphere's violated line, then learn → resolved by winding, or still forced | Selected · awaiting go-ahead |
+| 2 | Choosing the resolution (B62) | 2/3 — Substantial | 2/3 — Testable | native rule with a target class → all reached, or not | Alternative · deferred |
+| 3 | Why the pull dips at contact | 1/3 — Incremental | 3/3 — Ready | exact counts by position → closed form | Alternative · deferred |
+| 4 | Layers (B54) | 3/3 — Barrier | 1/3 — Stated | two-level network → crosses, or not | Alternative · deferred |
+
+On B60: yes, it can be run. The record already has a local move that adds exactly one handle: splicing in a Fano atom (THREEFOLD-SURFACES). So the test is to grow one where the sphere's dissonance sits and see whether learning then removes it. The only missing piece is a builder from a map to a knot space.
+
+**Corrections:** none. **Goals:** G15 checkpoint; B61 taken; B60 selected and re-rated. **Assumptions:** A47 added (what counts as native); A26, A27 history.

@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "STURDY-PROBE-20261110-001A-P001",
+  "canonical_id": "STURDY-PROBE-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "STURDY-PROBE-20261110-001A",
+  "proof": "STURDY-PROBE-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A sturdier probe",
+  "status": "Proved",
+  "claim": "Computed, frozen: with each negative check made four 25,000-step clamped walks (one from the current state, three from fresh states), the example learner made no inexact stop and no 0001 stop in 156 writes and 39 runs of 0001; the fixed learner learned 56 of 56 leaf and 10 of 16 composite writes, and the credit learner every one of its 84 writes (all 28 composite writes); the probe cost 2.5 times the old one's walk steps on the same run.",
+  "dependencies": [
+    "CREDIT-PIN-20261110-001A",
+    "CREDIT-PIN-20261110-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An inexact stop or a 0001 stop with the sturdier probe (mark Z)."
+  ],
+  "lineage": {
+    "home_scope": "STURDY-PROBE-20261110-001",
+    "epic_path": [
+      "STURDY-PROBE-20261110-001"
+    ],
+    "parents": [
+      "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/result.json",
+      "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/result.json",
+      "research/STURDY-PROBE-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/result.json": "1a41a7d4bdb9944c8da14954e861921e58200e715c07f1cf2043ce79e2ff7a28",
+    "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/result.json": "5836877d8f2a83d568237b25f902ea46bd6688f5d22be9f3499d13ab7b4cec4c",
+    "research/STURDY-PROBE-20261110-001/preregistration.md": "4ce2befc410da16dca3bd217f12108fd1c9faecd7a7675940a15226169099b23"
+  },
+  "paths": {
+    "manifest": "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/manifest.json",
+    "identity": "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/identity.json",
+    "proof": "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/proof.md",
+    "result": "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/result.json",
+    "check": "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/check.py",
+    "directory": "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "CREDIT-PIN-20261110-001's frozen runs with the sturdier probe.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit fb162b543).",
+    "status": "computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

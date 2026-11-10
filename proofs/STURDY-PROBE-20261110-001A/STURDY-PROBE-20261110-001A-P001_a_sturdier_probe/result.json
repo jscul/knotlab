@@ -1,0 +1,6250 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/probe_lib.py": "0a43265ead7402efc0c64c3935a823f47fe76317846984f2ce08141508764a65",
+    "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/fix_lib.py": "be297d0f43a534bb8949850c54c500a32291b38c0ae1745d120aa73851e9e178",
+    "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/result.json": "1a41a7d4bdb9944c8da14954e861921e58200e715c07f1cf2043ce79e2ff7a28",
+    "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py": "6cca6f5bbc621e71be09f167683dbf1ab994b5af0b3489666a4fcb163fcaa16b",
+    "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/result.json": "5836877d8f2a83d568237b25f902ea46bd6688f5d22be9f3499d13ab7b4cec4c",
+    "research/STURDY-PROBE-20261110-001/preregistration.md": "4ce2befc410da16dca3bd217f12108fd1c9faecd7a7675940a15226169099b23"
+   }
+  },
+  "1 the old probe's step cost on CREDIT-PIN-20261110-001A's run (reproduces its rows)": {
+   "pass": true,
+   "info": {
+    "outcomes": {
+     "S1-S4 0001": {
+      "not stopped, never reached (map uuuu)": 14,
+      "not stopped, other map": 4
+     },
+     "S1-S4 composite": {
+      "learned, held": 10,
+      "not stopped, never reached (map uuuu)": 2,
+      "inexact stop": 4
+     },
+     "S1-S4 leaf": {
+      "learned, held": 55,
+      "inexact stop": 1
+     }
+    },
+    "learner steps": 97380600,
+    "probe steps": 135620778,
+    "inexact stops": 5,
+    "0001 stops": 0,
+    "cpu seconds": 2196.7
+   }
+  },
+  "2 sturdier probe, fixed learner (computed, frozen)": {
+   "pass": true,
+   "info": {
+    "outcomes": {
+     "S1-S4 0001": {
+      "not stopped, never reached (map uuuu)": 15,
+      "not stopped, other map": 3
+     },
+     "S1-S4 composite": {
+      "learned, held": 10,
+      "not stopped, never reached (map uuuu)": 6
+     },
+     "S1-S4 leaf": {
+      "learned, held": 56
+     }
+    },
+    "learner steps": 108410600,
+    "probe steps": 335240875,
+    "inexact stops": 0,
+    "0001 stops": 0,
+    "cpu seconds": 3178.4
+   }
+  },
+  "3 sturdier probe, credit learner (computed, frozen)": {
+   "pass": true,
+   "info": {
+    "outcomes": {
+     "S1-S4 0001": {
+      "not stopped, never reached (map uuuu)": 6,
+      "not stopped, other map": 6
+     },
+     "S1-S4 composite": {
+      "learned, held": 16
+     },
+     "S1-S4 leaf": {
+      "learned, held": 32
+     },
+     "S5 0001": {
+      "not stopped, never reached (map uuuu)": 8,
+      "not stopped, other map": 1
+     },
+     "S5 composite": {
+      "learned, held": 12
+     },
+     "S5 leaf": {
+      "learned, held": 24
+     }
+    },
+    "learner steps": 100041800,
+    "probe steps": 559016656,
+    "inexact stops": 0,
+    "0001 stops": 0,
+    "cpu seconds": 4746.2
+   }
+  },
+  "mark Z: no inexact stop and no 0001 stop with the sturdier probe": {
+   "pass": true,
+   "info": {
+    "inexact or 0001 stops": 0
+   }
+  },
+  "rows": {
+   "old probe, fixed learner": {
+    "S1 single K_3 thin / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 510000,
+      "probes": 194,
+      "radius": 4,
+      "stalls": 18,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 6400,
+      "probes": 18,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 800,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 62400,
+      "probes": 80,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1193,
+      "radius": 4,
+      "stalls": 112,
+      "map at the stop": "uuuu",
+      "acting": [
+       2
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S1 single K_3 thin / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 20600,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 42600,
+      "probes": 54,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 600,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 66200,
+      "probes": 92,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1151,
+      "radius": 4,
+      "stalls": 110,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S1 single K_3 thin / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 33400,
+      "probes": 48,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 34200,
+      "probes": 43,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 200,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 800,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1132,
+      "radius": 4,
+      "stalls": 128,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S2 single K_3 Fano / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 120600,
+      "probes": 91,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 1800,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 9400,
+      "probes": 4,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 722600,
+      "probes": 231,
+      "radius": 4,
+      "stalls": 27,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 969,
+      "radius": 4,
+      "stalls": 164,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S2 single K_3 Fano / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 45600,
+      "probes": 61,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2800,
+      "probes": 5,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 38600,
+      "probes": 42,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 281200,
+      "probes": 124,
+      "radius": 4,
+      "stalls": 7,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 957,
+      "radius": 4,
+      "stalls": 174,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S2 single K_3 Fano / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 65400,
+      "probes": 68,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 800,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 38200,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 207800,
+      "probes": 111,
+      "radius": 4,
+      "stalls": 4,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 959,
+      "radius": 4,
+      "stalls": 172,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 59800,
+      "probes": 75,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 16800,
+      "probes": 40,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 6800,
+      "probes": 21,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1064,
+      "radius": 4,
+      "stalls": 152,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 12800,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 10600,
+      "probes": 36,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 800,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 354600,
+      "probes": 183,
+      "radius": 4,
+      "stalls": 9,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1143,
+      "radius": 4,
+      "stalls": 161,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 128000,
+      "probes": 112,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 358000,
+      "probes": 140,
+      "radius": 4,
+      "stalls": 16,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 3200,
+      "probes": 9,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1046,
+      "radius": 4,
+      "stalls": 174,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 28000,
+      "probes": 53,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 8400,
+      "probes": 11,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 88000,
+      "probes": 115,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1169,
+      "radius": 4,
+      "stalls": 150,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 3309200,
+      "probes": 755,
+      "radius": 4,
+      "stalls": 166,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2800,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 26800,
+      "probes": 19,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 3454200,
+      "probes": 748,
+      "radius": 4,
+      "stalls": 164,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 848,
+      "radius": 4,
+      "stalls": 193,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": false,
+      "steps": null,
+      "probes": 930,
+      "radius": 4,
+      "stalls": 191,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 533800,
+      "probes": 109,
+      "radius": 4,
+      "stalls": 29,
+      "map at the stop": "u10u",
+      "acting": [
+       2,
+       3
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 23000,
+      "probes": 9,
+      "radius": 2,
+      "stalls": 2,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": false,
+      "steps": null,
+      "probes": 879,
+      "radius": 4,
+      "stalls": 202,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 950,
+      "radius": 4,
+      "stalls": 180,
+      "map at the stop": "uuuu",
+      "acting": [
+       3
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 56800,
+      "probes": 59,
+      "radius": 2,
+      "stalls": 1,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 11600,
+      "probes": 16,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 38200,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 765800,
+      "probes": 274,
+      "radius": 4,
+      "stalls": 15,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 926,
+      "radius": 4,
+      "stalls": 174,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 512800,
+      "probes": 194,
+      "radius": 4,
+      "stalls": 22,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 13600,
+      "probes": 18,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 25000,
+      "probes": 18,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 138000,
+      "probes": 122,
+      "radius": 3,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1019,
+      "radius": 4,
+      "stalls": 170,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 612400,
+      "probes": 232,
+      "radius": 4,
+      "stalls": 26,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2600,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 29000,
+      "probes": 30,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 167200,
+      "probes": 69,
+      "radius": 4,
+      "stalls": 7,
+      "map at the stop": "uuuu",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "uuuu",
+      "outcome": "inexact stop"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 963,
+      "radius": 4,
+      "stalls": 184,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 103200,
+      "probes": 116,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2200,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 35000,
+      "probes": 31,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 363800,
+      "probes": 175,
+      "radius": 4,
+      "stalls": 12,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 970,
+      "radius": 4,
+      "stalls": 192,
+      "map at the stop": "uuuu",
+      "acting": [
+       2
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 349600,
+      "probes": 126,
+      "radius": 4,
+      "stalls": 12,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "inexact stop"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 89400,
+      "probes": 85,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "inexact stop"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 600,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 342400,
+      "probes": 132,
+      "radius": 4,
+      "stalls": 15,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "inexact stop"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 877,
+      "radius": 4,
+      "stalls": 196,
+      "map at the stop": "0uu1",
+      "acting": [],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 2418000,
+      "probes": 557,
+      "radius": 4,
+      "stalls": 127,
+      "map at the stop": "1uu0",
+      "acting": [
+       2,
+       3
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 5000,
+      "probes": 7,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2,
+       3
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 28600,
+      "probes": 14,
+      "radius": 2,
+      "stalls": 2,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 529000,
+      "probes": 157,
+      "radius": 4,
+      "stalls": 27,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "inexact stop"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 814,
+      "radius": 4,
+      "stalls": 223,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ]
+   },
+   "sturdier probe, fixed learner": {
+    "S1 single K_3 thin / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 293800,
+      "probes": 141,
+      "radius": 4,
+      "stalls": 6,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 9800,
+      "probes": 12,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1000,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 365200,
+      "probes": 143,
+      "radius": 4,
+      "stalls": 10,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1185,
+      "radius": 4,
+      "stalls": 135,
+      "map at the stop": "uuuu",
+      "acting": [
+       2
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S1 single K_3 thin / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 20600,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 34600,
+      "probes": 59,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 800,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 12600,
+      "probes": 27,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1225,
+      "radius": 4,
+      "stalls": 122,
+      "map at the stop": "u01u",
+      "acting": [
+       1
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S1 single K_3 thin / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 33400,
+      "probes": 48,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 15000,
+      "probes": 32,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 5600,
+      "probes": 6,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1184,
+      "radius": 4,
+      "stalls": 116,
+      "map at the stop": "u01u",
+      "acting": [
+       0,
+       2
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S2 single K_3 Fano / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 120600,
+      "probes": 91,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 1000,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 68400,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 58000,
+      "probes": 62,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 945,
+      "radius": 4,
+      "stalls": 175,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S2 single K_3 Fano / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 45600,
+      "probes": 61,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 11200,
+      "probes": 13,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 36200,
+      "probes": 43,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 105400,
+      "probes": 87,
+      "radius": 4,
+      "stalls": 2,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1061,
+      "radius": 4,
+      "stalls": 145,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S2 single K_3 Fano / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 136800,
+      "probes": 90,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 12000,
+      "probes": 8,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 43800,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 68600,
+      "probes": 60,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1057,
+      "radius": 4,
+      "stalls": 153,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 36000,
+      "probes": 59,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 11800,
+      "probes": 32,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 12000,
+      "probes": 23,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1007,
+      "radius": 4,
+      "stalls": 166,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 12800,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 81600,
+      "probes": 105,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1000,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 222000,
+      "probes": 156,
+      "radius": 4,
+      "stalls": 6,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1051,
+      "radius": 4,
+      "stalls": 161,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 128000,
+      "probes": 112,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 176600,
+      "probes": 115,
+      "radius": 4,
+      "stalls": 6,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1200,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 44400,
+      "probes": 65,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1105,
+      "radius": 4,
+      "stalls": 157,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 53200,
+      "probes": 89,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 20800,
+      "probes": 46,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1600,
+      "probes": 7,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 76400,
+      "probes": 102,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1114,
+      "radius": 4,
+      "stalls": 160,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 520800,
+      "probes": 165,
+      "radius": 4,
+      "stalls": 18,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2400,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 11200,
+      "probes": 7,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 470800,
+      "probes": 146,
+      "radius": 4,
+      "stalls": 20,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 884,
+      "radius": 4,
+      "stalls": 189,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 122200,
+      "probes": 91,
+      "radius": 4,
+      "stalls": 2,
+      "map at the stop": "1uu0",
+      "acting": [
+       2,
+       3
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": false,
+      "steps": null,
+      "probes": 929,
+      "radius": 4,
+      "stalls": 194,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 10600,
+      "probes": 1,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": false,
+      "steps": null,
+      "probes": 926,
+      "radius": 4,
+      "stalls": 187,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 893,
+      "radius": 4,
+      "stalls": 189,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 86200,
+      "probes": 101,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 35000,
+      "probes": 37,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 25000,
+      "probes": 22,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 548400,
+      "probes": 185,
+      "radius": 4,
+      "stalls": 23,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 971,
+      "radius": 4,
+      "stalls": 175,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 65000,
+      "probes": 93,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 5400,
+      "probes": 10,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 39600,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 65600,
+      "probes": 79,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 987,
+      "radius": 4,
+      "stalls": 178,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 722600,
+      "probes": 243,
+      "radius": 4,
+      "stalls": 30,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2200,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 29200,
+      "probes": 27,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 2279000,
+      "probes": 568,
+      "radius": 4,
+      "stalls": 118,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 905,
+      "radius": 4,
+      "stalls": 211,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 584400,
+      "probes": 216,
+      "radius": 4,
+      "stalls": 26,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 600,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 30000,
+      "probes": 42,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 345200,
+      "probes": 186,
+      "radius": 4,
+      "stalls": 5,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1024,
+      "radius": 4,
+      "stalls": 183,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": false,
+      "steps": null,
+      "probes": 824,
+      "radius": 4,
+      "stalls": 208,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 3248800,
+      "probes": 717,
+      "radius": 4,
+      "stalls": 167,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 58000,
+      "probes": 31,
+      "radius": 3,
+      "stalls": 3,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": false,
+      "steps": null,
+      "probes": 757,
+      "radius": 4,
+      "stalls": 219,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 809,
+      "radius": 4,
+      "stalls": 206,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S4 two-level K_3 Fano / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": false,
+      "steps": null,
+      "probes": 899,
+      "radius": 4,
+      "stalls": 201,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "u10u",
+      "stopped": false,
+      "steps": null,
+      "probes": 781,
+      "radius": 4,
+      "stalls": 210,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 17600,
+      "probes": 1,
+      "radius": 2,
+      "stalls": 2,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 703600,
+      "probes": 219,
+      "radius": 4,
+      "stalls": 29,
+      "map at the stop": "0uu1",
+      "acting": [
+       2,
+       3
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 830,
+      "radius": 4,
+      "stalls": 200,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ]
+   },
+   "sturdier probe, credit learner": {
+    "S3 two-level K_3 thin / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 68400,
+      "probes": 89,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 18200,
+      "probes": 39,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 1686400,
+      "probes": 462,
+      "radius": 4,
+      "stalls": 72,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 931,
+      "radius": 4,
+      "stalls": 199,
+      "map at the stop": "uuuu",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       3,
+       2,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 61800,
+      "probes": 86,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 645600,
+      "probes": 247,
+      "radius": 4,
+      "stalls": 23,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1400,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 123000,
+      "probes": 98,
+      "radius": 4,
+      "stalls": 4,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 840,
+      "radius": 4,
+      "stalls": 226,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 7800,
+      "probes": 26,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 56000,
+      "probes": 85,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 800,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 65600,
+      "probes": 94,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 887,
+      "radius": 4,
+      "stalls": 201,
+      "map at the stop": "uuuu",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 54800,
+      "probes": 86,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 46000,
+      "probes": 78,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 800,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 86400,
+      "probes": 119,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 955,
+      "radius": 4,
+      "stalls": 202,
+      "map at the stop": "uuuu",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 294400,
+      "probes": 113,
+      "radius": 4,
+      "stalls": 8,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       2,
+       2,
+       2,
+       4,
+       4,
+       4,
+       8
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 11400,
+      "probes": 8,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 35600,
+      "probes": 20,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 154000,
+      "probes": 82,
+      "radius": 3,
+      "stalls": 1,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       2,
+       2,
+       2,
+       2,
+       4
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 784,
+      "radius": 4,
+      "stalls": 216,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S3 two-level K_3 thin / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 551000,
+      "probes": 154,
+      "radius": 4,
+      "stalls": 30,
+      "map at the stop": "1uu0",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       8
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 64200,
+      "probes": 42,
+      "radius": 2,
+      "stalls": 1,
+      "map at the stop": "u10u",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       4,
+       4,
+       8
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 33800,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 65600,
+      "probes": 72,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       2,
+       2
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 424,
+      "radius": 4,
+      "stalls": 331,
+      "map at the stop": "u01u",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       2,
+       0,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 118200,
+      "probes": 82,
+      "radius": 4,
+      "stalls": 3,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 9400,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 27400,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 185800,
+      "probes": 121,
+      "radius": 4,
+      "stalls": 3,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 559,
+      "radius": 4,
+      "stalls": 291,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 38800,
+      "probes": 60,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 600,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 39200,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 19200,
+      "probes": 43,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 528,
+      "radius": 4,
+      "stalls": 316,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 141000,
+      "probes": 92,
+      "radius": 4,
+      "stalls": 4,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 3600,
+      "probes": 9,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 34000,
+      "probes": 23,
+      "radius": 1,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 261600,
+      "probes": 138,
+      "radius": 4,
+      "stalls": 10,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 492,
+      "radius": 4,
+      "stalls": 341,
+      "map at the stop": "0uu1",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 24800,
+      "probes": 54,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 1200,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 23000,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 22600,
+      "probes": 42,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 600,
+      "radius": 4,
+      "stalls": 295,
+      "map at the stop": "1uu0",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11,
+       11
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 638800,
+      "probes": 171,
+      "radius": 4,
+      "stalls": 34,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       14
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 5800,
+      "probes": 12,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 41200,
+      "probes": 43,
+      "radius": 2,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 423800,
+      "probes": 146,
+      "radius": 4,
+      "stalls": 17,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       7,
+       7
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 430,
+      "radius": 4,
+      "stalls": 328,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       4,
+       0,
+       0,
+       7,
+       7,
+       7,
+       7,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S4 two-level K_3 Fano / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 844200,
+      "probes": 211,
+      "radius": 4,
+      "stalls": 49,
+      "map at the stop": "1uu0",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       6,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       14
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 3400,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 24600,
+      "probes": 3,
+      "radius": 2,
+      "stalls": 2,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 978000,
+      "probes": 220,
+      "radius": 4,
+      "stalls": 55,
+      "map at the stop": "0uu1",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       7,
+       7
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 466,
+      "radius": 4,
+      "stalls": 331,
+      "map at the stop": "uuuu",
+      "acting": [
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       7,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14,
+       14
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / leaf 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 26600,
+      "probes": 52,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 80000,
+      "probes": 90,
+      "radius": 3,
+      "stalls": 1,
+      "map at the stop": "u10u",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 2600,
+      "probes": 9,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 18800,
+      "probes": 35,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 633,
+      "radius": 4,
+      "stalls": 289,
+      "map at the stop": "uuuu",
+      "acting": [
+       1,
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0,
+       2,
+       2,
+       6,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       11,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / leaf 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 123400,
+      "probes": 140,
+      "radius": 3,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 10200,
+      "probes": 21,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 600,
+      "probes": 3,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 29000,
+      "probes": 44,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1137,
+      "radius": 4,
+      "stalls": 160,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / leaf 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 3800,
+      "probes": 9,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       2
+      ],
+      "credit": [],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 2200,
+      "probes": 9,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       2
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 400,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 12600,
+      "probes": 32,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 701,
+      "radius": 4,
+      "stalls": 255,
+      "map at the stop": "uuuu",
+      "acting": [
+       0,
+       3,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       2,
+       2,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10,
+       10
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / leaf 3": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 55800,
+      "probes": 95,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 428000,
+      "probes": 223,
+      "radius": 4,
+      "stalls": 9,
+      "map at the stop": "u10u",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 200,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 12800,
+      "probes": 36,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1016,
+      "radius": 4,
+      "stalls": 165,
+      "map at the stop": "uuuu",
+      "acting": [
+       2
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / leaf 4": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 9600,
+      "probes": 12,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       4
+      ],
+      "credit": [
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 42800,
+      "probes": 72,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       4
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1000,
+      "probes": 5,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 21000,
+      "probes": 39,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       4
+      ],
+      "credit": [
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1026,
+      "radius": 4,
+      "stalls": 169,
+      "map at the stop": "uuuu",
+      "acting": [
+       3,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       6,
+       7,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       7,
+       6,
+       7,
+       6,
+       6,
+       6,
+       6,
+       6,
+       7,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       7,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6,
+       6
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / leaf 5": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 8600,
+      "probes": 25,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "1uu0",
+      "acting": [
+       5
+      ],
+      "credit": [
+       0,
+       0
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 179400,
+      "probes": 152,
+      "radius": 4,
+      "stalls": 3,
+      "map at the stop": "u10u",
+      "acting": [
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 1200,
+      "probes": 2,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 46400,
+      "probes": 82,
+      "radius": 2,
+      "stalls": 0,
+      "map at the stop": "0uu1",
+      "acting": [
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 1133,
+      "radius": 4,
+      "stalls": 161,
+      "map at the stop": "uuuu",
+      "acting": [
+       4
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       5,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / composite 0": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 215200,
+      "probes": 105,
+      "radius": 4,
+      "stalls": 9,
+      "map at the stop": "1uu0",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       2,
+       2,
+       4,
+       4,
+       4
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 8000,
+      "probes": 9,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 40400,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [
+       0
+      ],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 234400,
+      "probes": 76,
+      "radius": 4,
+      "stalls": 11,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 522,
+      "radius": 4,
+      "stalls": 305,
+      "map at the stop": "uuuu",
+      "acting": [
+       0,
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       4,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / composite 1": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 1730200,
+      "probes": 253,
+      "radius": 4,
+      "stalls": 133,
+      "map at the stop": "1uu0",
+      "acting": [
+       1,
+       2,
+       3,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       12,
+       12,
+       12,
+       12,
+       16,
+       16
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 3200,
+      "probes": 4,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       1,
+       2,
+       3,
+       5
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 37000,
+      "probes": 41,
+      "radius": 1,
+      "stalls": 0,
+      "map at the stop": "uuuu",
+      "acting": [
+       1,
+       5
+      ],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 374200,
+      "probes": 109,
+      "radius": 4,
+      "stalls": 27,
+      "map at the stop": "0uu1",
+      "acting": [
+       1,
+       2,
+       3
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       2,
+       2,
+       2,
+       4,
+       4,
+       8
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 382,
+      "radius": 4,
+      "stalls": 356,
+      "map at the stop": "0uu1",
+      "acting": [
+       0,
+       1,
+       2,
+       3,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       0,
+       1,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       8,
+       8,
+       8,
+       8,
+       12,
+       12,
+       12,
+       12,
+       16,
+       16,
+       16,
+       16,
+       20,
+       20,
+       20,
+       20,
+       20
+      ],
+      "outcome": "not stopped, other map"
+     }
+    ],
+    "S5 two-level K_3 thin, three composites / composite 2": [
+     {
+      "target": "1uu0",
+      "stopped": true,
+      "steps": 576000,
+      "probes": 181,
+      "radius": 4,
+      "stalls": 26,
+      "map at the stop": "1uu0",
+      "acting": [
+       4,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       2,
+       2,
+       0,
+       0,
+       2,
+       2,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       8
+      ],
+      "map after the disturbance": "1uu0",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "u10u",
+      "stopped": true,
+      "steps": 3400,
+      "probes": 7,
+      "radius": 0,
+      "stalls": 0,
+      "map at the stop": "u10u",
+      "acting": [
+       4,
+       5
+      ],
+      "credit": [],
+      "map after the disturbance": "u10u",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "uuuu",
+      "stopped": true,
+      "steps": 48400,
+      "probes": 42,
+      "radius": 2,
+      "stalls": 1,
+      "map at the stop": "uuuu",
+      "acting": [],
+      "credit": [],
+      "map after the disturbance": "uuuu",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0uu1",
+      "stopped": true,
+      "steps": 3610800,
+      "probes": 514,
+      "radius": 4,
+      "stalls": 273,
+      "map at the stop": "0uu1",
+      "acting": [
+       2,
+       3,
+       4,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       8,
+       8,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       16
+      ],
+      "map after the disturbance": "0uu1",
+      "outcome": "learned, held"
+     },
+     {
+      "target": "0001",
+      "stopped": false,
+      "steps": null,
+      "probes": 397,
+      "radius": 4,
+      "stalls": 359,
+      "map at the stop": "uuuu",
+      "acting": [
+       2,
+       3,
+       4,
+       5
+      ],
+      "credit": [
+       0,
+       0,
+       2,
+       4,
+       4,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       12,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16,
+       16
+      ],
+      "outcome": "not stopped, never reached (map uuuu)"
+     }
+    ]
+   }
+  },
+  "seconds": 930.8
+ }
+}

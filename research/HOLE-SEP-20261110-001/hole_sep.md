@@ -114,3 +114,25 @@ B103 taken; sub-goal B107 added. **Assumptions:** none.
 
 **Recommendation.** Continue with direction 1, recorded as sub-goal B107 under the owner's rule for untaken 3/3 directions, for the
 coordinator to confirm.
+
+## Final report as sent
+
+B103 is closed. It was not proved, and its frozen rule stopped the route. I proved that hole-row separation for bit LeftPigeon is a static question: anything the polynomial calculus derives must lie in one fixed kernel of Braun's decoder into the unary pigeonhole principle. That kernel isn't zero. It holds the "inverse-counting" identities (summing over holes equals summing over pigeons, true for an inverse map but not implied by LeftPigeon) and their products. At degree 2 the kernel is 73%, 49%, 32% and 19% of the space at 4, 8, 16 and 32 holes, tracking (l+1)²k/v as predicted before the n = 32 run. My frozen rule said a kernel over 10% closes the route. That reading was wrong: a kernel that size costs the bound only a constant factor. I logged that as a correction, and the sharp remaining question is now sub-goal B107. On novelty, nothing is claimed as a lower bound. My search found no Res(⊕) bound of any kind for PPADS-complete principles, and the reduction is new as far as I found. A bound for LeftPigeon would not transfer to the sphere's count: the count's own Res(⊕) route is closed by its degree O(√n), and LeftPigeon reaches the count only through non-affine reductions.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: hole-row separation for bit LeftPigeon | Obstructed (by its frozen rule) | Kernel 32% at n = 16, k = 2; the rule's reading of that was wrong |
+| Local direction: the decoder's kernel | Continue | Sharp question; the readings fit a small fraction at the needed degree |
+| Broader exploration: G3 | Known alternatives | Cutting planes (B82), the parity reduction (B101) |
+| Long-term goal: G3 | Capability gained | Separation for LeftPigeon is now one counting question about a kernel |
+
+**Next step:** Continue with the kernel bound (B107), for you to confirm.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | The decoder's kernel is a vanishing fraction (B107) | 3/3 | 2/3 | Identify the rest of K_2, conjecture K_k = the identities' ideal, check k = 3, 4 → a dimension proof, or a family whose share nears 1 |
+| 2 | Cutting planes on the count (B82) | 3/3 | 1/3 | As recorded |
+| 3 | A parity reduction from PIGEON to SINK (B101) | 3/3 | 1/3 | As recorded |
+
+**Corrections:** one, the frozen rule's reading (Not a block). **Goals:** a G3 checkpoint; B103 taken; sub-goal B107 added. **Assumptions:** none.
+**Basket:** B107 (3/3, 2/3), B59 (3/3, 1/3), B101 (3/3, 1/3); the recommendation stays in this line, since B107 tops the basket.

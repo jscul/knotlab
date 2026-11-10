@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**306 current results** and 5 superseded ones, from 281 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**307 current results** and 5 superseded ones, from 281 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 19 results
+- [Other results](#other-results): 20 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 281 epics with their closures
 
@@ -1001,6 +1001,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · Every line of a knot sphere is critical, so the layered memory computes only conjunctions** (`COMPOSITE-FN-20261110-001-D001`).
   Every line of every Kasteleyn knot sphere has a state violating it alone, since any set of lines touches at least two more faces than it has lines; with growth keeping this, a composite over any host built from knot spheres and class-forced lattice tori computes exactly the AND of its atoms' bits (proved by hand). Disturbances whose flips and repairs touch disjoint lines and faces combine in every order.
   [proof P001](proofs/COMPOSITE-FN-20261110-001A/COMPOSITE-FN-20261110-001A-P001_and_for_critical_hosts/proof.md), [proof P001](proofs/COMPOSITE-FN-20261110-001B/COMPOSITE-FN-20261110-001B-P001_a_search_outside_the_proved_class/proof.md), [proof P001](proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/proof.md), [epic closure](proofs/COMPOSITE-FN-20261110-001Z/COMPOSITE-FN-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · A learned knot memory reads which of its atoms hold, and learns gates through composites by trial** (`CREDIT-PIN-20261110-001-D001`).
+  With its stall fixed, a learner seeing only its dissonance under the world's clamps learned 10 of 16 composite gates by trial, not 1 (computed). Dissonance a state-only walk cannot clear marked acting atoms without error, but as credit it did not raise the total (computed).
+  [proof P001](proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/proof.md), [proof P001](proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/proof.md), [epic closure](proofs/CREDIT-PIN-20261110-001Z/CREDIT-PIN-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · Cuts and names read AND and OR of stored bits, but no negation was found** (`GATES-20261110-001-D001`).
   An unsatisfiable component makes the whole network unsatisfiable and a cut leaf read from outside is never negated (proved by hand), so readings are 1 where every stored bit is 1. Across 43,091 networks in five frozen families, cuts and names read AND, OR, single bits and constants, never a negation (computed).
   [proof P001](proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read/proof.md), [epic closure](proofs/GATES-20261110-001Z/GATES-20261110-001Z-P001_epic_closure/proof.md)
@@ -1296,7 +1299,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Which functions a composite computes (`COMPOSITE-FN-20261110-001`) | [closure](proofs/COMPOSITE-FN-20261110-001Z/COMPOSITE-FN-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COMPOSITE-FN-20261110-001/) |
 | 2026-11-10 | The conformal metric as a theorem (`CONF-METRIC-20261110-001`) | [closure](proofs/CONF-METRIC-20261110-001Z/CONF-METRIC-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CONF-METRIC-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |
-| 2026-11-10 | Credit from pinned dissonance (`CREDIT-PIN-20261110-001`) | — | [folder](research/CREDIT-PIN-20261110-001/) |
+| 2026-11-10 | Credit from pinned dissonance (`CREDIT-PIN-20261110-001`) | [closure](proofs/CREDIT-PIN-20261110-001Z/CREDIT-PIN-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CREDIT-PIN-20261110-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
 | 2026-11-10 | Why crossing breaks balance (`CROSS-WHY-20261110-001`) | [closure](proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-WHY-20261110-001/) |
 | 2026-11-10 | Expansion as a reading (`EXPAND-READ-20261110-001`) | [closure](proofs/EXPAND-READ-20261110-001Z/EXPAND-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/EXPAND-READ-20261110-001/) |

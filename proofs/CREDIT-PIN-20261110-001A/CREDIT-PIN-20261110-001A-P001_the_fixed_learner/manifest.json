@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CREDIT-PIN-20261110-001A-P001",
+  "canonical_id": "CREDIT-PIN-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "CREDIT-PIN-20261110-001A",
+  "proof": "CREDIT-PIN-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The fixed learner",
+  "status": "Proved",
+  "claim": "Computed, frozen: IN-OUT-20261110-001A's test re-run exactly with the learner's stall defect fixed (a run of 40 probe slots above the floor counts as a failed probe for widening): leaves 55 of 56 learned and held (was 53), composites 10 of 16 (was 1), 5 inexact stops (was 6), 0001 never stopped; the census unchanged.",
+  "dependencies": [
+    "IN-OUT-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The fix changes anything but widening after a stall."
+  ],
+  "lineage": {
+    "home_scope": "CREDIT-PIN-20261110-001",
+    "epic_path": [
+      "CREDIT-PIN-20261110-001"
+    ],
+    "parents": [
+      "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/io_lib.py",
+      "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/result.json",
+      "research/CREDIT-PIN-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/io_lib.py": "03434b69fcb3087136bb33a3124b39059e5128b03fd10f81841eede6e25f8965",
+    "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/result.json": "813bd28d7905f47b58a2cccf439a4b9f5278dc8c3a6e2e4dc1a4b69564ff7d55",
+    "research/CREDIT-PIN-20261110-001/preregistration.md": "620cca99577ed884775a86fe0f8324adebee8e92cd7596be00194305d3e277e8"
+  },
+  "paths": {
+    "manifest": "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/manifest.json",
+    "identity": "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/identity.json",
+    "proof": "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/proof.md",
+    "result": "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/result.json",
+    "check": "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/check.py",
+    "directory": "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "IN-OUT-20261110-001A's frozen test, re-run with the defect fixed.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 08681795e).",
+    "status": "computed (check.py); census exhaustive",
+    "novelty": "known-with-delta"
+  }
+}

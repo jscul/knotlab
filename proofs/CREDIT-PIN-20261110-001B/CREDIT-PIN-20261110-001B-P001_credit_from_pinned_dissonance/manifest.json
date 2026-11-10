@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CREDIT-PIN-20261110-001B-P001",
+  "canonical_id": "CREDIT-PIN-20261110-001B-P001",
+  "kind": "proof",
+  "ticket": "CREDIT-PIN-20261110-001B",
+  "proof": "CREDIT-PIN-20261110-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Credit from pinned dissonance",
+  "status": "Proved",
+  "claim": "Computed, frozen: a learner that also cools lines whose dissonance a state-only walk cannot clear (pinned dissonance as credit) cooled 4,473 lines on S3 and S4, every one in an atom acting at that moment; it learned and held 11 of 16 composite writes (the fixed learner 10) and 29 of 32 leaf writes (31), with 9 inexact stops (5), so by the frozen mark pinned dissonance misleads; one size past, on S5, all 12 composite writes were learned and held. Every inexact stop was the clamped probe missing a reachable wrong value; it accepted the impossible 0001 three times.",
+  "dependencies": [
+    "CREDIT-PIN-20261110-001A",
+    "NATIVE-WRITE-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "Fewer than 90% of composite writes learned and held (C2).",
+    "Pinned dissonance misleads (M)."
+  ],
+  "lineage": {
+    "home_scope": "CREDIT-PIN-20261110-001",
+    "epic_path": [
+      "CREDIT-PIN-20261110-001"
+    ],
+    "parents": [
+      "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/fix_lib.py",
+      "research/CREDIT-PIN-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/CREDIT-PIN-20261110-001A/CREDIT-PIN-20261110-001A-P001_the_fixed_learner/fix_lib.py": "be297d0f43a534bb8949850c54c500a32291b38c0ae1745d120aa73851e9e178",
+    "research/CREDIT-PIN-20261110-001/preregistration.md": "620cca99577ed884775a86fe0f8324adebee8e92cd7596be00194305d3e277e8"
+  },
+  "paths": {
+    "manifest": "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/manifest.json",
+    "identity": "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/identity.json",
+    "proof": "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/proof.md",
+    "result": "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/result.json",
+    "check": "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/check.py",
+    "directory": "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Interfaces of S3, S4 and S5; one frozen credit learner.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 08681795e).",
+    "status": "computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

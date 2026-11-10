@@ -10,6 +10,12 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
+**Update, 2026-11-10 (`OTHER-ATOMS-20261110-001`).** The Fano atom is not required. A torus atom (a torus knot space less a point)
+acts as its line exactly where its torus has no satisfying state, provided the torus is free at the removed point, and the atom rule of
+section 3 is now proved by hand for such atoms on any orientable knot space with a Kasteleyn law, atoms adjacent or not. The Fano atom
+and the thin-torus atoms of even index are such atoms. A48 (section 6) was overturned as a limit and replaced by A52. Nothing below was
+wrong: sections 3 and 6 state less than is now known.
+
 ## 1. Where it started
 
 The owner's picture (G15): a point with a strength, moving through a learned network of knots, guided by learning to a resolution. The

@@ -1337,6 +1337,8 @@ So network holes come in two kinds:
      3 sign changes on every sphere; grown farther away it costs more (on K_5 a mean of 5.7 one line away, 15.6 five away).
    - **Reading.** For the owner's picture: growth and learning together remove what neither removes alone, most cheaply when the space
      grows where the tension is.
+   - **Later (`OTHER-ATOMS-20261110-001`).** Any torus atom whose torus has a class no state satisfies, and is free at its point, behaves
+     the same way (proved); an atom whose torus satisfies every class is transparent in all four, and growing it deletes the line's constraint.
    - **Next (taken by `CHOOSE-RES-20261110-001`, below).** Choosing the resolution (backlog B62): which of the classes a pair can end in a native rule can choose
      ([decision note](../research/GROW-HANDLE-20261110-001/grow_handle.md)).
 
@@ -1474,6 +1476,8 @@ So network holes come in two kinds:
      at each of its faces (2,700 splices); and line neighbourhoods come in four types over K_2 to K_8, none new beyond K_3, because the sphere
      is the triangular lattice away from six corners.
    - **Reading.** Which patterns hold the tension is a rule of the shape, not an accident of the small cases.
+   - **Later (`OTHER-ATOMS-20261110-001`).** The rule holds by hand for every class-forced free torus atom on any Kasteleyn host, atoms
+     adjacent or not, so neither the Fano plane nor separation nor the octahedral sphere is needed.
    - **Next (taken by `LEARN-NOTE-20261110-001`).** A note on the learning line (backlog B95), written up as
      [the learning line](../research/LEARN-NOTE-20261110-001/learning_line.md); its next step, other atoms (backlog B97), was taken by
      `OTHER-ATOMS-20261110-001`, below ([decision note](../research/ATOM-RULE-20261110-001/atom_rule.md)).

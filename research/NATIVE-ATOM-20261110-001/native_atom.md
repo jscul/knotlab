@@ -81,3 +81,10 @@ memory.
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B106 taken; B117 added. **Assumptions:** none new or changed in status;
 A52 history line.
 **Basket:** `NEST-ATOMS-20261110-001`#4 (layers through a naming knot), the line's only item at payoff 2; taken: it, as the selected next step.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (05:56 UTC): the answer (a uniform growth rule remembers only with the Fano plane;
+every other class-forced handle grows open and learning closes it), claim U and why, the census and the checks, what it says about A48,
+the learning note brought up to date, the staging slip in `cefd5dbc0` (another thread's goals hunks committed under this epic's message),
+both tables above with layers through a naming knot selected, the Corrections, Goals and Assumptions lines, and the Basket line.

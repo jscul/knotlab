@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "experiment_id": "METRIC-GROW-20261110-001A-E001",
+  "ticket": "METRIC-GROW-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the 5 x 5 and 7 x 7 tubes at g = 3, does some doubling schedule with every stage balanced reach every original ring from ring (0, 0) within the schedule, with time lengths read through freezes that form a metric on the original rings, and does that metric read the lattice's taxicab distance? Otherwise, beyond which distance is every balanced schedule read deaf?",
+  "definitions": {
+    "route": "A sequence of cells, each read by the next one lag later (an own cell reads itself and its left neighbour, a contact its two left neighbours), crossing a doubling only through an old ring's own cell, which the doubling keeps; never through a cell born at a doubling.",
+    "T(v), time length between rings": "The first lag at which a route from one of ring (0, 0)'s first-row own cells reaches an own cell of the original ring at displacement v.",
+    "T1(v), time length between points": "The same from ring (0, 0)'s own cell at position 1 alone to the own cell at position 1 of the ring at v: one point per ring, so no time is spent inside a ring at either end. It is directed (rule 60 reads leftward), so T1(v) and T1(-v) may differ.",
+    "R1(v), the round trip": "T1(v) + T1(-v), defined when both are: the time out and back, symmetric by construction. No offset is subtracted from any reading.",
+    "freeze reading (A41)": "For each T(v) and T1(v), one route reaching the target at that lag is traced back, every contact of every stage not on it is frozen for that whole stage (A38: it holds its newborn value, which carries nothing of the source), and the plain dependence is recomputed. The reading counts only if the target then depends on the source at exactly that lag; a T1 that fails this is dropped from R1.",
+    "L(v), plain hearing lag": "The first lag at which an own cell of the ring at v depends on ring (0, 0)'s first row with nothing frozen (as in READ-GROW-20261110-001).",
+    "window": "Every reading is taken at lags inside the schedule, from lag 0 to its last doubling: while the plane grows, never after it stops.",
+    "metric (M1)": "R1 defined on every original ring, every T1 read through freezes, and the triangle inequality R1(u + w) <= R1(u) + R1(w) for all u, w with u + w != 0 (symmetry holds by construction).",
+    "reads the lattice distance (M2)": "M1, and R1 constant on each taxicab class and strictly increasing in taxicab distance.",
+    "deaf distance": "For a schedule, the largest d such that R1 is defined on every ring at taxicab distance at most d; for a tube, the largest over its balanced schedules. Every balanced schedule read is deaf beyond it."
+  },
+  "public_inputs": {
+    "code 1": "metric_lib.py beside this file (sha256 417a8b4d4c5b7a89eae96210dd7aa5800f48d6ebbe418aef715a42f90051dd04), on CROSS-WHY-20261110-001B's territory_lib.py (sha256 7c613304f59bc6985a4966be3b78002d21e14b62297ab69b19b0de541db5676b).",
+    "code 2": "code2_metric.py beside this file (sha256 5328555277e03ce2eee1a04c1ae12215b80427da9301fd432df169745895b744), on READ-GROW-20261110-001A-E001's grid_lib.py (sha256 0176b395221264fece460187692d5d9bcc2868fcd44cb35f35871d733397847e), written independently of code 1.",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "g = 3, open births, the doubling law at lag 0 and after each run. S5: the 5 x 5 tube, one run of 1 to 48 lags, then after every balanced one a second of 1 to 64 (to 40 x 40). S7: the 7 x 7 tube, one run of 1 to 72 lags, then 1 or 2 (to 56 x 56; its stages' state cycles run to about 400,000 to 800,000 lags, so no longer second runs). C: code 1 and code 2 on seven schedules (T, T1, L). V: code 2 on the first two M1 schedules of each tube, or, if none, on the first two that reach the deaf distance; with balance on 5 x 5 only (code 2 is too slow for 7 x 7 balance). X: if S5 has M1 schedules, the first two extended by a run of 1 lag, to 80 x 80, under both codes."
+  },
+  "forbidden_inputs": [
+    "Changing the tubes, spacing, ranges, definitions, window or sizes after seeing results"
+  ],
+  "primary_observable": "For every balanced two-run schedule: T, T1, R1 and L by displacement, the freeze readings, M1, M2 and the deaf distance; the same metric properties reported for T, T1 and L.",
+  "cheapest_meaningful_control": "READ-GROW-20261110-001A: on the 5 x 5 tube, plain hearing lags read taxicab distance in one pause (8, 20, 32) and break the triangle inequality by their offset; A41: on fixed networks the freeze-read time length is a directed graph distance (proved).",
+  "resource_budget": {
+    "wall_minutes": 240,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "C's agreement line, then the depth counts.",
+  "decision_or_followup_rule": "Frozen. If C finds any disagreement, stop and report it. B102 succeeds if some balanced schedule meets M1 and code 2 agrees on it (V); it reads the lattice distance if it meets M2; it is confirmed one size past if, in X, an extension keeps every stage balanced under both codes and still meets M1. It fails if no balanced schedule meets M1: the result is then each tube's deaf distance, the distance beyond which every balanced schedule read is deaf, and whether the triangle inequality ever fails on what is reached (a growing plane whose time lengths are not a metric). T, T1 and L are reported, not decided on.",
+  "stop_rule": "Stop when every part has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: two tubes, g = 3, the frozen ranges and window; balance computed, not proved; the freeze readings exact per case, not a theorem for growing networks.",
+    "Plain dependence; declared rings (A45) on a declared board (A51); open births (A44); the schedules declared, found by search."
+  ],
+  "feasibility_disclosure": "Not blind. Before freezing: READ-GROW-20261110-001's results on the 5 x 5 tube were known; smoke tests computed T, T1 and L with both codes for [12, 1] (3 x 3), [12, 28] and [28, 1] (5 x 5), all agreeing and all read through freezes; the full evaluation of [28, 1] gave R1 = 36 at distance 1 and 48 on the diagonal, the rest undefined; on the 7 x 7 tube the state cycle at 14 x 14 is 204,655 lags and at 28 x 28 409,311 (one stage read in 77 seconds), which set S7's ranges."
+}

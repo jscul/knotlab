@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: a lesson on dimensions from rules
+
+- [INTUITIONS.md](INTUITIONS.md) gains lesson 4.6, "Dimensions from rules", at
+  the owner's question what became of the idea that the axes X and Y follow
+  rules, as in the Game of Life, governed by an essentially infinite CNF. It
+  sets out what is proved (bond distance and ball growth read a drawn grid's
+  dimension; the open-end rule grows the number line with nothing drawn), that
+  every plane measured so far had its board drawn first (assumption A51), and
+  the untested form of the idea, the board itself as distinctions of the CNF.
+  The guide now has 27 lessons, and the glossary defines bond distance.
+
 ## 10 November 2026: crossing schedules balanced at 48 x 48 are not known to stay balanced
 
 - CROSS-WHY-20261110-001's answer said, without a size, that schedules that pause once and then double quickly keep every stage balanced.

@@ -59,6 +59,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [4.3 Knots from competing pairs](#43-knots-from-competing-pairs)
   - [4.4 Which knots remember a loop](#44-which-knots-remember-a-loop)
   - [4.5 What networks of loops remember](#45-what-networks-of-loops-remember)
+  - [4.6 Dimensions from rules](#46-dimensions-from-rules)
 - [Chapter 5. Depth](#chapter-5-depth)
   - [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed)
   - [5.2 How deep a hole is](#52-how-deep-a-hole-is)
@@ -738,8 +739,10 @@ PYTHONPATH=tools python3 -m knotlab space
 ## Chapter 4. How bindings behave
 
 Knots can be read as requirements or as choices, can come from rules that
-compete, and can be joined into rings and networks. The chapter first fixes
-the words for easy and hard questions, which these behaviours are measured by.
+compete, and can be joined into rings and networks. They also space
+distinctions apart, so that rules alone can set a distance and a dimension.
+The chapter first fixes the words for easy and hard questions, which these
+behaviours are measured by.
 
 ### 4.1 Easy and hard questions
 
@@ -941,6 +944,95 @@ record of its own loops only if its contacts act as group elements.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab holonomy
+```
+
+### 4.6 Dimensions from rules
+
+**The idea.** In the Game of Life the board comes first: the grid decides
+which cells are neighbours, and the rules are read on it (lesson 1.3). The
+owner proposed the reverse, on 7 November 2026: "a number line/Cartesian plane
+where the dimensions themselves expand out in measures of logic", each axis
+"built out of an infinite structure of logic (emergent space)". So the axes X
+and Y would follow rules, as Life's cells do, and the rules would be an
+essentially infinite CNF. This lesson says what of that idea is proved, what is
+computed, and what is still only an idea.
+
+**Infinite CNFs.** A CNF may have infinitely many variables and clauses, as
+long as each clause names finitely many variables. A law is **uniform** when
+one pattern of clauses is repeated everywhere, as Life repeats its rule at
+every cell and step of an infinite board. *Classical:* even whether one
+repeated pattern allows any state at all can be undecidable; this is the
+domino problem (Berger 1966).
+
+**Every bond stays finite.** No knot joins infinitely many things (lesson 1.7),
+so a space that an infinite CNF makes is made of infinitely many finite bonds.
+*Classical:* the compactness theorem.
+
+**Distance read from the rules.** Two distinctions are as far apart as the
+smallest knot that contains them both: their **bond distance** is that knot's
+size minus one. It is read from the allowed states alone, with every other
+variable forgotten (lesson 1.6), so no ruler is drawn. On a thread of atoms,
+w(t−1) ∧ L(t) → w(t), the bond distance from w(s) to w(t) is exactly t − s + 1,
+one unit for each loop between them, and every knot through the two contains
+those loops. A chain of two-place ties has no knot, and so no bond distance
+(proved, [LOGIC-AXIS-20261107-001](research/LOGIC-AXIS-20261107-001/logic_axis.md)).
+
+**Dimension read from the rules.** The distinctions within bond distance r of
+one of them form a **ball**. When the number in a ball grows like r^D, the
+rules have dimension D. Tseitin's parity law on the infinite grid of D
+dimensions has balls that grow like r^D, and so does the gauge law in the
+plane, so the allowed states alone recover the grid's dimension. In the plane
+both laws measure like a taxi, by
+steps along x plus steps along y, never along the diagonal (proved, with the
+gauge law's constants computed on a 41 × 41 box; the same record).
+
+**The rules can disagree with the grid.** The grid sets a ruler for a parity
+law that has no ends: one in which every pattern it allows in a region can be
+reached from any allowed state by changing finitely many cells. Bond distance
+is then at least the separation divided by the law's range (proved).
+Ledrappier's law,
+in which every cell is the parity of two neighbours in the row before, has
+ends. Its three-place knots are exactly its Frobenius triangles, cells 2^k
+apart are bonded as tightly as neighbours, and every ball is infinite (proved,
+the same record). So what the rules measure need not be the grid they are
+written on.
+
+**A line with nothing drawn.** A rule that grows only at knots holding two open
+ends grows exactly the number line from a single knot (proved,
+[OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
+Here one axis does come from the rules alone.
+
+**The plane is still drawn.** Every plane measured so far had its places, and
+which of them are neighbours, given before the rules were read: a grid, a
+declared network of rings, a group's table, or a gadget whose copies and
+stretch set the dimension. No tested law selects its own dimension (reading,
+[LOGIC-AXIS-20261107-001](research/LOGIC-AXIS-20261107-001/logic_axis.md)).
+Under a uniform law, a plane of rings that keeps doubling and then stops reads
+the distance of a fixed torus (proved,
+[GROW-STOP-20261110-001](research/GROW-STOP-20261110-001/grow_stop.md)), but its
+rings are declared. The register of assumptions records this default as A51,
+"Places and their neighbours are given before the rules"
+([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
+
+**The board as distinctions (only an idea).** The owner's idea in full asks for
+more: make "these two names are one place", or "these two places are
+neighbours", a distinction of the same infinite CNF as the cells' values, and
+let one uniform pattern of clauses constrain both. The board would then be part
+of every allowed state, and X and Y would be whatever boards the rules allow or
+force. Nothing about this has been computed yet. The first test recorded for it
+names places by words in two letters, gives each pair of names a distinction
+saying whether they are one place, and asks whether any uniform law on the
+values forces the plane, or whether every law leaves the board free. Related
+ideas elsewhere are quantum graphity (Konopka, Markopoulou and Smolin 2006) and
+the Wolfram model (2020).
+
+**Reading.** Rules can measure a space and read its dimension from what they
+allow, and in one dimension they can grow the axis with nothing drawn. Whether
+both axes of the plane can follow from the rules alone, as the owner proposed,
+is open: so far every plane had its board drawn first.
+
+```bash
+PYTHONPATH=tools python3 -m knotlab space
 ```
 
 ## Chapter 5. Depth
@@ -1179,7 +1271,9 @@ remains open.
    not written on a space in advance, gives a shape that looks like a space of
    low dimension? One necessary condition is known: a law keeps a lasting
    record of its loops only if its contacts act as group elements (lessons
-   4.4 and 4.5).
+   4.4 and 4.5). Lesson 4.6 shows how far the program has got: rules read a
+   drawn grid's dimension and grow a line with nothing drawn, but no tested
+   law yet chooses its own plane.
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
    time are the data, and does the static test survive that change?
 3. **Limits.** No set of finite clauses binds infinitely many loops into one
@@ -1230,6 +1324,10 @@ remains open.
 - **Requirement.** A rule saying what must exist when other things do, such as
   `A ∧ B → c`. A **choice** says that when something exists, one of several
   things must, such as `c → A ∨ B` (lesson 4.2).
+- **Bond distance.** The size of the smallest knot containing two
+  distinctions, minus one, read from the allowed states alone. A **ball** is
+  the set of distinctions within a given bond distance of one of them, and how
+  fast balls grow gives a dimension (lesson 4.6).
 - **Refutation.** A proof that a system allows no state at all (lesson 5.1).
 - **Depth.** How much of a network an observer must hold at once to see a
   hole in it (lesson 5.2).

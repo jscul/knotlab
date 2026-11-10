@@ -1422,8 +1422,18 @@ So network holes come in two kinds:
      learning steps. The atoms' roles swap, and the tension follows.
    - **Reading.** The point and learning together move a pattern's tension: the state carries the dissonance around, learning rewrites
      which pattern stands for the contradiction, and the tension settles where learning puts it.
-   - **Next (awaiting a go-ahead).** Learning chooses which atom holds the leftover (backlog B81), a learned address
+   - **Next (taken by `ADDRESS-20261110-001`, below).** Learning chooses which atom holds the leftover (backlog B81), a learned address
      ([decision note](../research/LEARN-RISE-20261110-001/learn_rise.md)).
+
+   **2026-11-10: a learned address** (`ADDRESS-20261110-001`).
+   - **The role swap confirmed.** On six K_3 starts not used before, a frozen prediction held: learning at a rise, with the state moving,
+     carried the leftover to the other atom from every one.
+   - **Learning writes an address (computed, pre-registered).** With three atoms and two leftover units, every pair of atoms was reached
+     as their holders, on all three line orbits of K_3; the named atoms end acting as their lines, the third transparent.
+   - **Reading.** The leftovers behave as a memory: written by learning, held by the law in every state, untouched by the point's own
+     motion, and read off by where the tension sits.
+   - **Next (awaiting a go-ahead).** Reading the address natively (backlog B85)
+     ([decision note](../research/ADDRESS-20261110-001/address.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

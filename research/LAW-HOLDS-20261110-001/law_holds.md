@@ -48,3 +48,26 @@ None. This makes `RISE-ESCAPE-20261110-001`'s capped K_3 cases exact: no state o
   winding through both handles; B80's concreteness rises to 3/3.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B79 taken; B80 re-rated. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:10 UTC).
+
+**B79 done: the law decides where the leftover tension lives.** I checked by SAT over every possible state, not just reachable ones, on 15 two-atom spaces. The leftover can only sit inside an atom that still acts as the line it replaced. Across all 16 ways the learned signs can wind: if both atoms act as lines there's no floor state at all, since the sphere's contradiction comes back. If one acts, it holds the leftover. If both are transparent, it can sit in either, or up on the sphere when the atoms are apart. So where the tension sits is a learned fact, not a fact about the point. That's why moving the point never moved it. This also makes B72's capped cases exact.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: does the law decide (B79) | **Status:** Successful | the acting atom holds it, in every state |
+| Local direction: moving the leftover | Continue, by changing the law | learning has to swap the atoms' roles |
+| Broader exploration: learning program | Known alternatives | learning at a rise |
+| Long-term goal: G15 | Capability gained | where tension sits is something learned |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Learning at a rise (B80) | 2/3 — Substantial | 3/3 — Ready | state + learning steps one unit up, until the atoms swap roles → the leftover moves, or not | Selected · started |
+| 2 | Why the trap holds (B78) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+| 3 | Overgrown surfaces (B70) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B79 taken; B80 re-rated 3/3. **Assumptions:** none new.

@@ -1272,10 +1272,39 @@ So network holes come in two kinds:
    - **Provenance.** Known: Kasteleyn's theorem, Hall's theorem, Heawood's colouring theorem, monomer correlations (Fisher and
      Stephenson), worm algorithms for dimers (Sandvik and Moessner), Ciucu's electrostatics of holes in lozenge tilings. Not found:
      the uniform count over lines and its closed form.
-   - **Next (awaiting the owner's go-ahead).** Learning in handles: off the sphere, signings with the same even faces differ by a
+   - **Next (taken by `LEARN-HANDLES-20261109-001`, below).** Learning in handles: off the sphere, signings with the same even faces differ by a
      homology class that no change of state reaches, so a learning walk around a handle could remove a dissonance that the class
      forces, with no mark left in the law (Payoff 2/3, Concreteness 2/3). The alternatives: many points at once, and layers
      through naming knots ([decision note](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
+
+   **2026-11-09: learning in handles** (`LEARN-HANDLES-20261109-001`).
+   - **The question.** On the sphere learning moves the forced dissonance anywhere, but a closed learning walk is a change of state in
+     disguise. Off the sphere laws with the same even faces differ by a homology class that no change of state reaches. Can learning
+     carry information that no change of state can?
+   - **Only χ = 0 can be resolved (proved).** A law and a state are free of dissonance (no violated line, no over-agreeing face, no
+     even face) only on a surface of Euler characteristic 0. On the sphere learning can move the forced dissonance into the law but
+     never remove it; at genus 2 or more every state over-agrees somewhere.
+   - **The class-forced pair (proved).** On a torus whose Kasteleyn law is in a class no state satisfies (the Fano plane's torus and
+     the thin tori of even index), the least dissonance is one violated line and one face whose three corners agree: two opposite
+     charges that no change of state cancels.
+   - **Learning resolves it, only by winding (proved).** With the state fixed, one sign change at the violated line splits it into two
+     holes, and walking them along the lines into the over-agreeing face resolves everything, leaving no even face. Every process that
+     resolves the pair, whatever the state does, changes the law by a cycle around a handle, into another class: learning carries the
+     class, two bits on a torus, and nothing local. Checked by 96,732 walks on the two Fano tori and 57 thin tori up to 40 points.
+   - **Measured (computed).** The cheapest walk into each class costs exactly the smallest cycle of its class change (2 the short way
+     around a thin torus, about half its points the long way). A local rule that sees only the lines at a hole and an outside distance
+     to the over-agreeing face resolved all 9,608 starts, against the pre-registered expectation: any resolving walk winds, so the
+     winding is written in the state and the rule needs no plan. The sphere's local rule held one size past.
+   - **Reading.** For the owner's picture: a handle turns the point into a pair held apart by the shape of the space, and learning
+     can make it vanish only by going around. What learning keeps is which way it went, a memory held by the space's shape. On the
+     sphere learning only moved the dissonance; here it removes one that no change of behaviour can, and that lives in handles, as
+     emergence does (question 9).
+   - **Provenance.** Known with delta: in dimer language the classes are winding sectors (Kasteleyn's four Pfaffians) and a worm must
+     wrap the torus to change sector. New: the reading as learning against change of state, the χ = 0 statement, the pair on the
+     class-forced tori, the costs and the local rule.
+   - **Next (awaiting a go-ahead).** A native target for learning (backlog B61; Payoff 2/3, Concreteness 3/3): replace the outside
+     distance by a signal the law and state supply. Alternatives: choosing the resolution (B62), learning that grows a handle (sub-goal
+     B60), layers (sub-goal B54) ([decision note](../research/LEARN-HANDLES-20261109-001/learn_handles.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

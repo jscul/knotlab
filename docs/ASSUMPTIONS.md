@@ -100,6 +100,7 @@ evidence: results and their status come from the records each entry links.
 | [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Confirmed |
 | [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Confirmed |
 | [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
+| [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
 
 ## Entries
 
@@ -502,6 +503,9 @@ evidence: results and their status come from the records each entry links.
   update law. The parked direction's first step decides between them: on the octahedral knot spheres, change one sign at a time
   and check whether the forced dissonance moves as its index predicts.
 - **History.**
+  - 2026-11-09 · On a torus whose Kasteleyn law is in a class no state satisfies, `LEARN-HANDLES-20261109-001` found the point to be
+    a pair of opposite charges, one violated line and one face whose three corners agree, which learning removes only by winding
+    around a handle ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)). The point stays localized. Kept as Assumed.
   - 2026-11-07 · The first step ran in `RESIGN-STEER-20261107-001`. The forced dissonance moves exactly as its index predicts:
     one sign change at the violated line splits its index 2 into two even faces of index 1, every such law is satisfiable, and
     the halves rejoin into a violated line anywhere ([steering by re-signing](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
@@ -524,6 +528,9 @@ evidence: results and their status come from the records each entry links.
   settles. The steering direction's first check, whether one re-signing moves the forced violated line out of the states once
   two even faces appear, tests the premise of this reading.
 - **History.**
+  - 2026-11-09 · The boundary off the sphere, drawn by `LEARN-HANDLES-20261109-001`: on a torus a law's homology class is what
+    learning carries beyond its even faces, and on a class-forced torus every process that removes the dissonance, whatever the
+    state does, changes the law around a handle; no change of state does it ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)). Still Confirmed.
   - 2026-11-07 · Confirmed on the sphere, with its boundary drawn, by `RESIGN-STEER-20261107-001`. The premise is proved: on
     every simplicial knot sphere one re-signing at the violated line leaves a satisfiable law with two even faces. The boundary:
     on the sphere a re-signing that keeps the even faces where they are is a change of state in disguise (a gauge), and a closed
@@ -632,6 +639,9 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-09 · Relied on again by `LEARN-HANDLES-20261109-001` for its walks and its local rule, which used an outside distance to
+    the over-agreeing face. Its theorem that every resolution of a class-forced pair winds does not rest on A26: it holds for any
+    process, with the state changing or not ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)). Backlog B61 would replace the outside distance with a native signal.
   - 2026-11-07 · Added by `RESIGN-STEER-20261107-001`.
 
 ### A27 · A law is weighed by how many states it allows
@@ -1116,3 +1126,22 @@ evidence: results and their status come from the records each entry links.
   apart, ring-level readings stay declarations.
 - **History.**
   - 2026-11-09 · Added by `REROUTE-20261109-001`.
+
+### A46 · An over-agreeing face and an even face are dissonance
+
+**Assumed** · 2026-11-09 · reading
+
+- **Statement.** In the learning results a dissonance is a violated line, a face where two or more corners agree, or an even face of
+  the law. A law and a state are resolved only when none of the three is present. The count weighs them together: violated lines
+  minus Σ⌊agree/2⌋ equals (χ − |D|) / 2 in every state.
+- **Why.** `LEARN-HANDLES-20261109-001` took it by default, following the count of `COUNT-SURFACES-20261107-001` and the steering
+  learner of `RESIGN-STEER-20261107-001`, which acts at violated lines and even faces. With it, over-agreement is the charge opposite a
+  violated line, and an even face is half a charge kept in the law.
+- **Rests on it.** That epic's theorem that only surfaces of Euler characteristic 0 can be free of dissonance, and its reading of the
+  class-forced torus's least dissonance as a pair that learning removes only by winding ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)).
+- **Challenge.** The alternative counts only violated lines as dissonance. Then one sign change at the violated line resolves a
+  class-forced torus at once, with no winding, and the sphere too, leaving two even faces; learning would then never need a handle. The
+  owner's words, dissonance as what learning works to resolve, decide between the readings; a test would ask whether a learner that
+  ignores even faces and over-agreement still has anything to steer.
+- **History.**
+  - 2026-11-09 · Added by `LEARN-HANDLES-20261109-001`.

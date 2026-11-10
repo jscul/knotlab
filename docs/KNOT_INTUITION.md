@@ -2416,8 +2416,20 @@ So network holes come in two kinds:
      when k is odd and one of size 3 when it is even; for k ≤ 2 that is everything.
    - **Reading.** The same linearized polynomial L drives the family and shapes its answer, one term per power of two; its continued
      fraction is what makes a characteristic-0 pattern appear over GF(2). No lag cutoff was used.
-   - **Next (selected, pending the coordinator).** The leading form at every order, or halving the index
+   - **Next (selected, taken by `LEADING-FORM-20261110-001`).** The leading form at every order, or halving the index
      ([decision note](../research/CHAIN-ORDERS-20261110-001/chain_orders.md)).
+
+   **2026-11-10: the leading form at every order** (`LEADING-FORM-20261110-001`).
+   - **The question.** Can the leading form be proved at every order, either order by order or by halving the index k?
+   - **The index does not halve (computed, frozen).** At every eigenvalue with even k ≥ 4 for sides 16 to 64, the reduction mixes the
+     even and odd powers of Y below the orders that matter, so an induction on k has nothing to stand on.
+   - **The operator is a Wronskian (proved).** Multiplied by G, the kernel operator is (k + 1)·W(G, F), where
+     W(A, B) = A(k)B(k + 1) + B(k)A(k + 1) is a polynomial in Y. That makes the second chain vector's Wronskian explicit, and it gives a
+     second solution G′ whose Wronskian with G is a single power of Y, like two consecutive convergents of a continued fraction.
+   - **Where it stops.** The second vector needs G′, and the cancellation at co-distance 3 (the corrections adding 1 to a pure part of 1)
+     was not derived; by the rule frozen beforehand, the attempt ends at order 2. No lag cutoff was used.
+   - **Next (selected, pending the coordinator).** The leading form through the pair of solutions, bounded to co-distance 3
+     ([decision note](../research/LEADING-FORM-20261110-001/leading_form.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

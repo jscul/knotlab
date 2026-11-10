@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SPACING-20261109-001Z-P001",
+  "canonical_id": "SPACING-20261109-001Z-P001",
+  "kind": "proof",
+  "ticket": "SPACING-20261109-001Z",
+  "proof": "SPACING-20261109-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of larger spacings",
+  "status": "Proved",
+  "claim": "Ledger closing SPACING-20261109-001: one line per conclusion with its status and evidence (ticket A, the frozen exploratory census, supported), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "SPACING-20261109-001A"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Proved.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "SPACING-20261109-001",
+    "epic_path": [
+      "SPACING-20261109-001"
+    ],
+    "parents": [
+      "experiments/SPACING-20261109-001A/SPACING-20261109-001A-E001_borders/contract.json",
+      "artifacts/SPACING-20261109-001A/SPACING-20261109-001A-E001_borders/run/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/SPACING-20261109-001A/SPACING-20261109-001A-E001_borders/contract.json": "b8fe14c12dc121177ac3213529ef08a07d20dea93cd83ff542ab2d3f57a820b4",
+    "artifacts/SPACING-20261109-001A/SPACING-20261109-001A-E001_borders/run/result.json": "604c0eba8fff2019f256f091f271c7257dc3612a32c1c1f53a5aff38c587a33e"
+  },
+  "paths": {
+    "manifest": "proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/result.json",
+    "check": "proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's ticket; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's spawn on 2026-11-09.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

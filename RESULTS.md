@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**271 current results** and 5 superseded ones, from 220 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**271 current results** and 5 superseded ones, from 221 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 2 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 220 epics with their closures
+- [Epics](#epics): all 221 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1168,5 +1168,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Which finite maps rescue late rings (`RESCUE-MAP-20261109-001`) | [closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-MAP-20261109-001/) |
 | 2026-11-09 | The return map digit by digit (`RETURN-DIGITS-20261109-001`) | [closure](proofs/RETURN-DIGITS-20261109-001Z/RETURN-DIGITS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RETURN-DIGITS-20261109-001/) |
 | 2026-11-09 | A ring inserted while running (`RING-RUN-20261109-001`) | [closure](proofs/RING-RUN-20261109-001Z/RING-RUN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RING-RUN-20261109-001/) |
+| 2026-11-09 | Larger spacings (`SPACING-20261109-001`) | [closure](proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/SPACING-20261109-001/) |
 | 2026-11-09 | The first tie of shortest routes (`TIE-LAW-20261109-001`) | [closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-LAW-20261109-001/) |
 

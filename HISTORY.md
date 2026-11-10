@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: the level-law census was not solved exactly as run, and a board count was known
+
+- The frozen contract of `WEAK-APER-20261110-001B` said its balance program,
+  which decides whether a law has a finite board, was "solved exactly in
+  rationals" by HiGHS. HiGHS works in floating point. Every verdict has since
+  been re-decided exactly, by a potential for each weakly aperiodic law and an
+  explicit board for each other law, and all agree
+  ([decision note](research/WEAK-APER-20261110-001/weak_aperiodic.md)).
+- Part 2 of Theorem 7 of `BOARD-DIST-20261110-001A`, that view boards exist
+  exactly when the counts of patterns leaving and arriving with each pair of
+  values match, is the known periodic-point criterion for shifts on free
+  groups (Piantadosi 2008; Hellouin de Menibus and Maturana Cornejo, arXiv
+  1904.03907). The records now credit it.
+- Unchanged: every result of both epics.
+
 ## 10 November 2026: a growing plane's time lengths failing to be a metric was not new
 
 - METRIC-GROW-20261110-001 classified its finding, that a growing plane's time lengths break the triangle inequality, as new as far as

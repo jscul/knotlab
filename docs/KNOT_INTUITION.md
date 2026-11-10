@@ -5268,6 +5268,17 @@ So network holes come in two kinds:
    - **Next (selected).** Rigid finite worlds at radius 2 (`BOARD-DIST-20261110-001` direction 2)
      ([decision note](../research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)).
 
+   **2026-11-10: rigid worlds at radius 2** (`RIGID-WORLDS-20261110-001`).
+   - **The question.** Finite boards can be forced. With identity at radius 2 (names whose radius-2 views agree are one place), does
+     a one-bit Life-like law force every board to be a genuinely two-dimensional torus, one whose radius-2 balls are the plane's?
+   - **No law of the family does (computed, exact, frozen).** Of the 994 laws with any board, 769 allow the one-place board, 223 a thin
+     abelian board with at most 8 places, and two counting laws a non-abelian board with 7 places; 31 allow none.
+   - **Forcing is visible when it happens.** A law that lists the views of one 13-place torus forces exactly that torus, at one size.
+     That law draws the board in advance.
+   - **Bounded anyway.** At radius 2 a forced torus has at most 256 places, so a growing family would need a growing radius.
+   - **Next (proposed for the morning).** Weakly aperiodic laws under Leibniz's rule
+     ([decision note](../research/RIGID-WORLDS-20261110-001/rigid_worlds.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

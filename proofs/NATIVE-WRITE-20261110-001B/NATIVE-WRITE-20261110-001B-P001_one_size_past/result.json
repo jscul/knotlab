@@ -1,0 +1,804 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/write_lib.py": "3304134845406357f8584a6a42819bbe7adabfe93fd96aab836a7ac56dc783fb",
+    "research/NATIVE-WRITE-20261110-001/preregistration.md": "1f43be52c8d6f84041f88c536f7474c40a855a088a1ae13c798751b8d7960b01"
+   }
+  },
+  "1 region lemma on S5 (exact, every class)": {
+   "pass": true,
+   "info": {
+    "acting and clearability": {
+     "acting, not clearable": 6144,
+     "transparent, clearable": 18432
+    },
+    "writable addresses": 63
+   }
+  },
+  "targets": [
+   [
+    5
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   [],
+   [
+    0,
+    1,
+    3,
+    4,
+    5
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5
+   ],
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    3,
+    4,
+    5
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    3,
+    4,
+    5
+   ],
+   [
+    0,
+    2,
+    4,
+    5
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2,
+    3,
+    5
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    3,
+    4
+   ],
+   [
+    5
+   ],
+   [
+    0,
+    2,
+    3,
+    4
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    0,
+    3,
+    4
+   ]
+  ],
+  "2 native writing on S5 (computed)": {
+   "pass": true,
+   "info": {
+    "outcomes": {
+     "exact, held": 20
+    },
+    "holds (at least 18 of 20)": true,
+    "max steps": 80200
+   }
+  },
+  "3 control U on S5 (computed)": {
+   "pass": true,
+   "info": {
+    "outcomes": {
+     "inexact stop": 19,
+     "exact, held": 1
+    }
+   }
+  },
+  "rows": {
+   "probe": [
+    {
+     "target": [
+      5
+     ],
+     "stopped": true,
+     "steps": 15600,
+     "probes": 75,
+     "acting at the stop": [
+      5
+     ],
+     "acting after the disturbance": [
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      2
+     ],
+     "stopped": true,
+     "steps": 6400,
+     "probes": 28,
+     "acting at the stop": [
+      0,
+      2
+     ],
+     "acting after the disturbance": [
+      0,
+      2
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 27400,
+     "probes": 127,
+     "acting at the stop": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "acting after the disturbance": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [],
+     "stopped": true,
+     "steps": 3400,
+     "probes": 18,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      1,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 39400,
+     "probes": 120,
+     "acting at the stop": [
+      0,
+      1,
+      3,
+      4,
+      5
+     ],
+     "acting after the disturbance": [
+      0,
+      1,
+      3,
+      4,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 3000,
+     "probes": 14,
+     "acting at the stop": [
+      4,
+      5
+     ],
+     "acting after the disturbance": [
+      4,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      5
+     ],
+     "stopped": true,
+     "steps": 800,
+     "probes": 5,
+     "acting at the stop": [
+      5
+     ],
+     "acting after the disturbance": [
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      1,
+      2
+     ],
+     "stopped": true,
+     "steps": 80200,
+     "probes": 371,
+     "acting at the stop": [
+      0,
+      1,
+      2
+     ],
+     "acting after the disturbance": [
+      0,
+      1,
+      2
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 32600,
+     "probes": 127,
+     "acting at the stop": [
+      0,
+      3,
+      4,
+      5
+     ],
+     "acting after the disturbance": [
+      0,
+      3,
+      4,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      2
+     ],
+     "stopped": true,
+     "steps": 11600,
+     "probes": 51,
+     "acting at the stop": [
+      0,
+      2
+     ],
+     "acting after the disturbance": [
+      0,
+      2
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 67000,
+     "probes": 169,
+     "acting at the stop": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "acting after the disturbance": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      2,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 5400,
+     "probes": 25,
+     "acting at the stop": [
+      0,
+      2,
+      4,
+      5
+     ],
+     "acting after the disturbance": [
+      0,
+      2,
+      4,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      1
+     ],
+     "stopped": true,
+     "steps": 28600,
+     "probes": 99,
+     "acting at the stop": [
+      0,
+      1
+     ],
+     "acting after the disturbance": [
+      0,
+      1
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      2,
+      3,
+      5
+     ],
+     "stopped": true,
+     "steps": 21800,
+     "probes": 93,
+     "acting at the stop": [
+      0,
+      2,
+      3,
+      5
+     ],
+     "acting after the disturbance": [
+      0,
+      2,
+      3,
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      1,
+      3
+     ],
+     "stopped": true,
+     "steps": 19600,
+     "probes": 94,
+     "acting at the stop": [
+      0,
+      1,
+      3
+     ],
+     "acting after the disturbance": [
+      0,
+      1,
+      3
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      3,
+      4
+     ],
+     "stopped": true,
+     "steps": 6600,
+     "probes": 30,
+     "acting at the stop": [
+      0,
+      3,
+      4
+     ],
+     "acting after the disturbance": [
+      0,
+      3,
+      4
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      5
+     ],
+     "stopped": true,
+     "steps": 24600,
+     "probes": 118,
+     "acting at the stop": [
+      5
+     ],
+     "acting after the disturbance": [
+      5
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      2,
+      3,
+      4
+     ],
+     "stopped": true,
+     "steps": 14600,
+     "probes": 59,
+     "acting at the stop": [
+      0,
+      2,
+      3,
+      4
+     ],
+     "acting after the disturbance": [
+      0,
+      2,
+      3,
+      4
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      2,
+      4
+     ],
+     "stopped": true,
+     "steps": 6000,
+     "probes": 30,
+     "acting at the stop": [
+      2,
+      4
+     ],
+     "acting after the disturbance": [
+      2,
+      4
+     ],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      3,
+      4
+     ],
+     "stopped": true,
+     "steps": 10800,
+     "probes": 53,
+     "acting at the stop": [
+      0,
+      3,
+      4
+     ],
+     "acting after the disturbance": [
+      0,
+      3,
+      4
+     ],
+     "outcome": "exact, held"
+    }
+   ],
+   "instant": [
+    {
+     "target": [
+      5
+     ],
+     "stopped": true,
+     "steps": 400,
+     "probes": 3,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      2
+     ],
+     "stopped": true,
+     "steps": 800,
+     "probes": 5,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 4600,
+     "probes": 18,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [],
+     "stopped": true,
+     "steps": 315200,
+     "probes": 1451,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "exact, held"
+    },
+    {
+     "target": [
+      0,
+      1,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 2600,
+     "probes": 6,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 49400,
+     "probes": 217,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      5
+     ],
+     "stopped": true,
+     "steps": 3200,
+     "probes": 15,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      1,
+      2
+     ],
+     "stopped": true,
+     "steps": 3800,
+     "probes": 17,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 17400,
+     "probes": 85,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      2
+     ],
+     "stopped": true,
+     "steps": 7200,
+     "probes": 35,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 22400,
+     "probes": 78,
+     "acting at the stop": [
+      3
+     ],
+     "acting after the disturbance": [
+      3
+     ],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      2,
+      4,
+      5
+     ],
+     "stopped": true,
+     "steps": 3800,
+     "probes": 20,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      1
+     ],
+     "stopped": true,
+     "steps": 19000,
+     "probes": 77,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      2,
+      3,
+      5
+     ],
+     "stopped": true,
+     "steps": 1400,
+     "probes": 4,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      1,
+      3
+     ],
+     "stopped": true,
+     "steps": 3800,
+     "probes": 20,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      3,
+      4
+     ],
+     "stopped": true,
+     "steps": 3200,
+     "probes": 15,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      5
+     ],
+     "stopped": true,
+     "steps": 98400,
+     "probes": 449,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      2,
+      3,
+      4
+     ],
+     "stopped": true,
+     "steps": 2200,
+     "probes": 11,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      2,
+      4
+     ],
+     "stopped": true,
+     "steps": 2800,
+     "probes": 14,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    },
+    {
+     "target": [
+      0,
+      3,
+      4
+     ],
+     "stopped": true,
+     "steps": 1200,
+     "probes": 6,
+     "acting at the stop": [],
+     "acting after the disturbance": [],
+     "outcome": "inexact stop"
+    }
+   ]
+  },
+  "seconds": 143.4
+ }
+}

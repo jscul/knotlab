@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NATIVE-WRITE-20261110-001A-P001",
+  "canonical_id": "NATIVE-WRITE-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "NATIVE-WRITE-20261110-001A",
+  "proof": "NATIVE-WRITE-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Native writing on four fresh spaces",
+  "status": "Proved",
+  "claim": "Proved by hand: an acting atom has dissonance in its region in every state (P1, from lemma 3 of OTHER-ATOMS-20261110-001A), and a write changes only atoms the learner's probe finds unmet (P2). Exact: an atom acts exactly when its own constraints cannot clear its region, on every class of six spaces. Computed, frozen: a learner that sees only its own dissonance, the floor and the address asked for (a bit per atom, each atom given by its region) wrote 80 of 80 addresses exactly on four fresh spaces and each held after a disturbance, with no inexact stop; with the probe replaced by an instant check, 65 of 80 writes were inexact.",
+  "dependencies": [
+    "OTHER-ATOMS-20261110-001A",
+    "NEST-ATOMS-20261110-001A",
+    "LEARN-RISE-20261110-001A",
+    "ADDRESS-STEER-20261110-001C"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A space of S1 to S4 with fewer than 18 of 20 writes exact and held.",
+    "An inexact stop (R).",
+    "An atom whose role and region clearability disagree."
+  ],
+  "lineage": {
+    "home_scope": "NATIVE-WRITE-20261110-001",
+    "epic_path": [
+      "NATIVE-WRITE-20261110-001"
+    ],
+    "parents": [
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "research/NATIVE-WRITE-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/NATIVE-WRITE-20261110-001/preregistration.md": "1f43be52c8d6f84041f88c536f7474c40a855a088a1ae13c798751b8d7960b01"
+  },
+  "paths": {
+    "manifest": "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/manifest.json",
+    "identity": "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/identity.json",
+    "proof": "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/proof.md",
+    "result": "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/result.json",
+    "check": "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/check.py",
+    "directory": "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The frozen learner on four spaces (K_3 single-level with three thin or Fano leaves; outer K_3 with two composites C(2, thin) or C(2, Fano)).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 22c1a427f).",
+    "status": "P1 and P2 proved by hand; census exhaustive; frozen test computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

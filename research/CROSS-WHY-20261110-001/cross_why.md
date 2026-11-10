@@ -20,7 +20,7 @@ Epic `CROSS-WHY-20261110-001` (program foundations), 2026-11-10. A frozen explor
 | 2 | **Uneven schedules cross with every stage balanced (W1 refuted).** At g = 3, 21 schedules of three runs, a pause and then short runs, cross a border and keep every stage balanced to 48 × 48; in 11 of them every original ring hears all eight others, as in [28, 1, 1] from lag 8. At g = 2 and 5, 97 and 55 schedules of two runs cross with every stage balanced to 24 × 24. Two of them, [1, 28, 1] and [1, 28, 12], are confirmed on the full state. | exploratory, exact | A |
 | 3 | **Uniform long pauses still fail.** Repeating a pause fails where a pause followed by short runs does not: P = 28 at g = 3 is balanced at 12 × 12 and 24 × 24, both after crossing, and fails at 48 × 48. | exploratory, exact | A |
 | 4 | **Balance is read on one territory, and newborn rings never fail.** The law commutes with the original lattice's translations, so a stage's balance is decided on one fundamental domain; every ring born at a doubling is bound at every later lag of its stage (the transfer lemma), so every failure is at a ring that lived through a run. | proved; checked against the full state | B |
-| 5 | **One size past.** Four of the 21, each with one more run of 1 or 2 lags, read at 96 × 96: stress test pending (CROSS-WHY-A1). | exploratory, exact | A |
+| 5 | **One size past.** Four of the 21, each with one more run of 1 or 2 lags, read at 96 × 96: two of the eight extensions, [1, 28, 1, 1] and [1, 28, 1, 2], keep every stage balanced through 96 × 96; the other six fail there (CROSS-WHY-A1, folded in 2026-11-10). | exploratory, exact | A |
 
 ## Answer
 
@@ -50,7 +50,7 @@ what its territories heard of each other.
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| Crossing with every stage balanced (2) | The first four schedules of conclusion 2 with one more run of 1 or 2 lags, at 96 × 96 | **stress test pending** (CROSS-WHY-A1 in `docs/LONG_RUNNING.md`) |
+| Crossing with every stage balanced (2) | The first four schedules of conclusion 2 with one more run of 1 or 2 lags, at 96 × 96 | pass for [1, 28, 1]: both its extensions are balanced at every stage through 96 × 96; [1, 28, 12], [1, 28, 13] and [1, 33, 2] fail at 96 × 96 with both (CROSS-WHY-A1, folded in 2026-11-10, `X.json`) |
 | The reduced reading (4) | eleven schedules against the full state, and two at 48 × 48 against `readings()` | pass (ticket B, check 1; ticket A, part V) |
 
 ## Literature and provenance

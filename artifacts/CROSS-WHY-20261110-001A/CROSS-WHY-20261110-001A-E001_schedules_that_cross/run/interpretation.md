@@ -32,5 +32,12 @@ for these schedules only.
 
 ## Nonclaims
 
-- One tube (3 × 3), g = 2 to 5, the frozen ranges; balance to 48 × 48 (96 × 96 pending), computed, not proved; plain dependence;
+- One tube (3 × 3), g = 2 to 5, the frozen ranges; balance to 48 × 48 (96 × 96 in part X, folded in below), computed, not proved; plain dependence;
   declared rings (A45); open births (A44). The schedules are declared, found by search, not chosen by the network.
+
+## Part X, folded in
+
+Part X finished at 5,527 seconds of the run (`X.json`). Of the first four three-run schedules of S, each extended by one more run of 1
+or 2 lags, [1, 28, 1, 1] and [1, 28, 1, 2] keep every stage balanced through 96 × 96, with the four nearest original rings hearing ring
+(0, 0) from lag 21; the six extensions of [1, 28, 12], [1, 28, 13] and [1, 33, 2] fail at 96 × 96. The contract's rule: balance continues
+one doubling further for some extension, so the refutation of W1 holds one size past for [1, 28, 1].

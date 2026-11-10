@@ -1,0 +1,24 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CONE-COLLAPSE-20261109-001A",
+    "FULL-REACH-PROOF-20261108-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "REACH-HALVES-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At n = 2^m >= 8 prove that the contact (n + 2, n + 3) of the doubled box [0, 2n - 2]^2 never reads either contact of the corner ring (0, 0), so full reach fails; equivalently (to be proved) that on the grid [0, n - 2] x [0, n - 1] whose walker moves to a 4-neighbour except leftwards on the bottom row and rightwards on the top row, the walks of every length from (0, 0) to (n/2 + 1, n/2 + 1) are even in number. Secondary targets: the corner return law (the generating function of the corner's returns is 1/(1 + L(w^4)), L the trace polynomial of GF(2n)) and the exact failing set (n - 4 contacts, each missing exactly the three rings of one corner). Found before registration, by computation: all three at sides 8 to 32 (the failing set to 64).",
+  "ownership": {
+    "root": false,
+    "scope_id": "REACH-HALVES-20261110-001"
+  },
+  "parent": "REACH-HALVES-20261110-001",
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "The failure at every power of two"
+}

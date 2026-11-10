@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "REACH-HALVES-20261110-001A-P001",
+  "canonical_id": "REACH-HALVES-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "REACH-HALVES-20261110-001A",
+  "proof": "REACH-HALVES-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The failure of full reach at every power of two from 8",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-10, before the proof attempt. Doubled coordinates of FULL-REACH-PROOF-20261108-001A: contacts (X, Y) of [0, N]^2, N = 2n - 2, X + Y odd; A[c, d] = 1 when c reads d over GF(2). Target A1: at every n = 2^m >= 8, the contact c* = (n + 2, n + 3) never reads (0, 1) or (1, 0), the contacts of the corner ring (0, 0), so full reach fails at every power of two from 8. To be proved on the way: (A0) A1 follows from the single statement that the walks of every length from (1, 0) to d* = (n + 3, n + 2) are even in number, which on the h contacts (2i + 1, 2j) is the conveyor-belt grid statement: on [0, n - 2] x [0, n - 1] with moves to 4-neighbours except leftwards on the bottom row and rightwards on the top row, the walks from (0, 0) to (n/2 + 1, n/2 + 1) are even at every length. Secondary targets: (A2) the corner return law, sum_k A^k[(0, 1), (0, 1)] w^k = 1/(1 + sum_{j=0}^{m} w^(2^(j+2))), equivalently the corner returns at time 4j exactly when j + 1 is a power of two modulo 2n - 1; (A3) the exact failing set: exactly the n - 4 contacts rho^i (X, X + 1), X = n + 2, n + 6, ..., 2n - 6, miss a ring, each exactly the three rings of one corner. Found before registration (computed): A1 and A3 at 8, 16, 32 and 64, A2 at 4 to 32, the conveyor statement at 8, 16, 32 (there the corner reaches every other point but (i, i) for odd i in [n/2 + 1, n - 3]); in the quadrant and in both half-strips the corner does reach d*.",
+  "dependencies": [
+    "FULL-REACH-PROOF-20261108-001A",
+    "CONE-COLLAPSE-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A power of two n >= 8 at which (n + 2, n + 3) reads a contact of the corner ring (computed false at 8, 16, 32, 64).",
+    "A side 2^m at which the corner's return series is not 1/(1 + L(w^4)) (computed false at 4 to 32)."
+  ],
+  "lineage": {
+    "home_scope": "REACH-HALVES-20261110-001",
+    "epic_path": [
+      "REACH-HALVES-20261110-001"
+    ],
+    "parents": [
+      "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json",
+      "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0",
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json": "220ceb6c18c74cf54ff51f53bca81468bd38d0512836a37a34e63d06f621d273"
+  },
+  "paths": {
+    "manifest": "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/manifest.json",
+    "identity": "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/identity.json",
+    "proof": "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/proof.md",
+    "result": "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/result.json",
+    "check": "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/check.py",
+    "directory": "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two"
+  },
+  "remaining_obligations": [
+    "A0 and A1 by proof for every m >= 3, or the lemma that would finish them, checked exactly at sides 8 to 64",
+    "A2 and A3, by proof or as computed laws with their stress test one size past"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The square torus of rule-60 rings with equally spaced law-(12, 12) contacts, cut open by a ring of cuts each way (A30, A32, A37, A38); its walk over GF(2). Reach is a contact-level reading, so it does not depend on how the rings are declared beyond which contacts each ring holds (A45).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's pick of B59 on 2026-11-10, relaying the owner's go-ahead for a harder 3/3 direction.",
+    "status": "pre-registered; the proof attempt to follow",
+    "novelty": "to be assessed"
+  }
+}

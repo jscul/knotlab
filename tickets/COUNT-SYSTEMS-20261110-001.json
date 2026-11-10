@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spheres",
+      "threefold"
+    ],
+    "program": "complexity",
+    "takes": [
+      "TWO-ROUND-BRIDGE-20261106-001#L1"
+    ]
+  },
+  "id": "COUNT-SYSTEMS-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up TWO-ROUND-BRIDGE-20261106-001's lead L1 (lower bounds in stronger proof systems for the sphere's count), surfaced by the reassessment pass and selected by the coordinator on 2026-11-10: resolution (size 2^Theta(sqrt n), SPHERE-SIZE-20261107-001) and the Nullstellensatz (outside PPA^dt and PPAD^dt, COUNT-TFNP-20261107-001) are settled; bounded-depth Frege, Res(xor) and cutting planes are open. Settle what the known reductions settle, and locate what the count needs from each open system.",
+  "ownership": {
+    "root": true,
+    "scope_id": "COUNT-SYSTEMS-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10: every depth-d Frege refutation of the octahedral knot sphere's NAE formula has size exp(n^{eps_d}) (LeftPigeon to SINK to grid Sperner to the sphere, with the pigeonhole lower bounds; close to Dantchev 2006); over corner atoms cutting planes refutes the count in O(n) lines, while every corner parity holds under every assignment, so the count is a count of parities, and Res(xor) and cutting planes, each with one ingredient, stay open. Recommendation Research directions, none selected.",
+  "status_class": "complete",
+  "stop_rule": "Stop at a lower bound in one of the open systems, or when each open system's position is stated with what it lacks.",
+  "title": "The sphere's count in stronger proof systems"
+}

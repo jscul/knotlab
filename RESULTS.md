@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**280 current results** and 5 superseded ones, from 238 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**281 current results** and 5 superseded ones, from 239 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 50 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 13 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 78 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 6 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 238 epics with their closures
+- [Epics](#epics): all 239 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -337,6 +337,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-07 · Hardness needs a flat disc, not roundness** (`HARD-FLAT-20261107-001-D001`).
   On every two-kind knot sphere the flat states and the Sperner reduction need only a corner-free disc whose rim reaches the six corners, so the knot's contradiction needs resolution width at least a constant times that disc's radius and at most O(sqrt n). Hardness therefore follows the largest flat disc, not roundness: spheres with a flat disc of radius order sqrt(n) are hard without any witness.
   [proof P001](proofs/HARD-FLAT-20261107-001A/HARD-FLAT-20261107-001A-P001_the_sperner_reduction_needs_only_a_flat_disc/proof.md), [epic closure](proofs/HARD-FLAT-20261107-001Z/HARD-FLAT-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · The sphere's count needs exponential size in bounded-depth Frege** (`COUNT-SYSTEMS-20261110-001-D001`).
+  Every depth-d Frege refutation of the octahedral knot sphere's NAE formula has size exp(n^{eps_d}): the binary left-pigeon principle reduces to SINK, SINK to one-sided grid Sperner and grid Sperner to the sphere by shallow decision trees, and the bijective pigeonhole principle needs exponential size at every fixed depth. Res(xor) and cutting planes remain open.
+  [proof P001](proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/proof.md), [epic closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -1201,6 +1204,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Learning chooses which atom holds the leftover (`ADDRESS-20261110-001`) | — | [folder](research/ADDRESS-20261110-001/) |
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
+| 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
 | 2026-11-10 | Learning that grows a handle (`GROW-HANDLE-20261110-001`) | [closure](proofs/GROW-HANDLE-20261110-001Z/GROW-HANDLE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-HANDLE-20261110-001/) |
 | 2026-11-10 | Growth that stops (`GROW-STOP-20261110-001`) | [closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STOP-20261110-001/) |

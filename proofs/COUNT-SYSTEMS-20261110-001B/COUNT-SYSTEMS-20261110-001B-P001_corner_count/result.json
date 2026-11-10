@@ -1,0 +1,148 @@
+{
+ "ticket": "COUNT-SYSTEMS-20261110-001B",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/sa_lib.py": "1007f41f06a4af08e5a9b11e36d8f4109f53634d874a9e68431b311619052782",
+    "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/manifest.json": "e360e826bedef7a8943d2543e9e586beb03d403a4600f1d1f974f0d8905f6d52",
+    "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/count_lib.py": "55a90d4a3cbf9b62ba83e8eca889b17f17d7ee563954d2db6813ad57b0103a13",
+    "proofs/TWO-ROUND-BRIDGE-20261106-001B/TWO-ROUND-BRIDGE-20261106-001B-P001_three_fold_spaces_are_an_euler_count/manifest.json": "bacd6747a70aa2b2dd0854449b574ff433322627fb0d1da8e09f8097eecb236e"
+   }
+  },
+  "1_corners_lie_on_one_line_and_one_face": {
+   "pass": true,
+   "info": {
+    "2": {
+     "points": 16,
+     "lines": 16,
+     "faces": 18,
+     "corners": 48
+    },
+    "3": {
+     "points": 36,
+     "lines": 36,
+     "faces": 38,
+     "corners": 108
+    },
+    "4": {
+     "points": 64,
+     "lines": 64,
+     "faces": 66,
+     "corners": 192
+    },
+    "5": {
+     "points": 100,
+     "lines": 100,
+     "faces": 102,
+     "corners": 300
+    },
+    "6": {
+     "points": 144,
+     "lines": 144,
+     "faces": 146,
+     "corners": 432
+    },
+    "7": {
+     "points": 196,
+     "lines": 196,
+     "faces": 198,
+     "corners": 588
+    },
+    "8": {
+     "points": 256,
+     "lines": 256,
+     "faces": 258,
+     "corners": 768
+    }
+   }
+  },
+  "2_every_corner_parity_holds_identically": {
+   "pass": true,
+   "info": {
+    "lines and faces read under every local assignment": {
+     "2": {
+      "lines": 16,
+      "faces": 18
+     },
+     "3": {
+      "lines": 36,
+      "faces": 38
+     },
+     "4": {
+      "lines": 64,
+      "faces": 66
+     },
+     "5": {
+      "lines": 100,
+      "faces": 102
+     },
+     "6": {
+      "lines": 144,
+      "faces": 146
+     },
+     "7": {
+      "lines": 196,
+      "faces": 198
+     },
+     "8": {
+      "lines": 256,
+      "faces": 258
+     }
+    }
+   }
+  },
+  "3_linear_refutation_over_corner_atoms": {
+   "pass": true,
+   "info": {
+    "2": {
+     "line equalities": 16,
+     "face inequalities": 18,
+     "constant left": 2,
+     "LP over corner atoms": "infeasible",
+     "LP over points at y = 1/2": "feasible"
+    },
+    "3": {
+     "line equalities": 36,
+     "face inequalities": 38,
+     "constant left": 2,
+     "LP over corner atoms": "infeasible",
+     "LP over points at y = 1/2": "feasible"
+    },
+    "4": {
+     "line equalities": 64,
+     "face inequalities": 66,
+     "constant left": 2,
+     "LP over corner atoms": "infeasible",
+     "LP over points at y = 1/2": "feasible"
+    },
+    "5": {
+     "line equalities": 100,
+     "face inequalities": 102,
+     "constant left": 2,
+     "LP over corner atoms": "infeasible",
+     "LP over points at y = 1/2": "feasible"
+    },
+    "6": {
+     "line equalities": 144,
+     "face inequalities": 146,
+     "constant left": 2,
+     "LP over corner atoms": "infeasible",
+     "LP over points at y = 1/2": "feasible"
+    },
+    "7": {
+     "line equalities": 196,
+     "face inequalities": 198,
+     "constant left": 2
+    },
+    "8": {
+     "line equalities": 256,
+     "face inequalities": 258,
+     "constant left": 2
+    }
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 1.0
+}

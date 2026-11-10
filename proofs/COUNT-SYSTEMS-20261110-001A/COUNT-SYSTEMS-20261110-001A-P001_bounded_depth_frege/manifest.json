@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COUNT-SYSTEMS-20261110-001A-P001",
+  "canonical_id": "COUNT-SYSTEMS-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "COUNT-SYSTEMS-20261110-001A",
+  "proof": "COUNT-SYSTEMS-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The sphere's count needs exponential size in bounded-depth Frege",
+  "status": "Proved",
+  "claim": "For every d there is eps_d > 0 such that every depth-d Frege refutation of the octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k) (n = 4k^2 points) has size at least exp(n^{eps_d}): the binary left-pigeon principle reduces to SINK by succ = f, pred = g, SINK to one-sided grid Sperner (COUNT-TFNP-20261107-001A) and grid Sperner to the sphere (FLAT-STATES-20261107-001B) by decision trees of depth O(log N), and depth-d Frege refutations of the bijective pigeonhole principle need exp(N^{eps_d}) (Ajtai; Pitassi-Beame-Impagliazzo; Krajicek-Pudlak-Woods).",
+  "dependencies": [
+    "COUNT-TFNP-20261107-001A",
+    "COUNT-TFNP-20261107-001B",
+    "FLAT-STATES-20261107-001B",
+    "COUNT-NOTE-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A SINK answer of the left-pigeon reduction that is not a left-pigeon violation.",
+    "A counterclockwise full triangle of the composed grid colouring that decodes to no violation."
+  ],
+  "lineage": {
+    "home_scope": "COUNT-SYSTEMS-20261110-001",
+    "epic_path": [
+      "COUNT-SYSTEMS-20261110-001"
+    ],
+    "parents": [
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/tube_lib.py",
+      "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json",
+      "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/manifest.json": "38750733a88ce278be7f9aed233df05dbcaf7c81303efb7635ebae4edf20cab6",
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/tube_lib.py": "305e5b39e2b7ab664a8c7a2643f36db582c2b74f9eee9811bf55eeef2c67321d",
+    "proofs/FLAT-STATES-20261107-001B/FLAT-STATES-20261107-001B-P001_the_knot_sphere_contains_sperner/manifest.json": "94a048cfe6159b4de6b36487da85c20c5b422c97f7a7a1dd0f4783ee0e960971",
+    "proofs/COUNT-NOTE-20261107-001A/COUNT-NOTE-20261107-001A-P001_the_spheres_count_written_out/manifest.json": "e0c9052f0b4a7e454c0e550d542dcaeb20790e7b0561a9c197a5e224c1eb696f"
+  },
+  "paths": {
+    "manifest": "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/manifest.json",
+    "identity": "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/identity.json",
+    "proof": "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/proof.md",
+    "result": "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/result.json",
+    "check": "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/check.py",
+    "directory": "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k); proof complexity of its refutations.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+    "status": "proved by hand from published lower bounds; the new reduction step and its composition checked by check.py",
+    "novelty": "known-with-delta: close to Dantchev (CiE 2006, Sperner's lemma has no short constant-depth Frege proofs); a self-contained chain for this formula with explicit sizes"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261107-001B",
+    "TWO-ROUND-BRIDGE-20261106-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "COUNT-SYSTEMS-20261110-001B-P001"
+  },
+  "id": "COUNT-SYSTEMS-20261110-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that over corner variables (each the agreement of a corner's two literals, a 2-XOR) the sphere's count has a cutting-planes refutation of linear size, while every corner parity it states holds under every assignment; so cutting planes lacks only the corner atoms and Res(xor) has the atoms but needs to count them, locating the two open cells.",
+  "ownership": {
+    "root": false,
+    "scope_id": "COUNT-SYSTEMS-20261110-001"
+  },
+  "parent": "COUNT-SYSTEMS-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10: over corner atoms (2-XORs of points, defined by four clauses each) cutting planes refutes the sphere's count with O(n) lines (lines give sum <= 1, faces sum >= 1, F - L = 2); every corner parity holds under every assignment, so the contradiction is an integer count invisible modulo 2; over the points alone the LP is feasible at x = 1/2.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The count is a linear count of corner parities"
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GATES-20261110-001A-P001",
+  "canonical_id": "GATES-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "GATES-20261110-001A",
+  "proof": "GATES-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which gates the families read",
+  "status": "Proved",
+  "claim": "Proved by hand: a cut reads AND; a component with no satisfying state makes the network unsatisfiable, so every reading is 1 where both stored bits are 1; a cut leaf read only from outside is never negated. Computed on 43,091 networks in five frozen families: AND, OR, a single bit and constants are read, never NOT a_1 (P4 failed). Post hoc: names read the parity of a closed leaf's two class bits.",
+  "dependencies": [
+    "NEST-ATOMS-20261110-001A",
+    "NAME-LAYERS-20261110-001A",
+    "OTHER-ATOMS-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A violation of P1 or P2."
+  ],
+  "lineage": {
+    "home_scope": "GATES-20261110-001",
+    "epic_path": [
+      "GATES-20261110-001"
+    ],
+    "parents": [
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "research/GATES-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/GATES-20261110-001/preregistration.md": "759a52cd70a218353634b5c5623ead87f8e3e60aca861c7b08188a6772cd4091"
+  },
+  "paths": {
+    "manifest": "proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read/manifest.json",
+    "identity": "proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read/identity.json",
+    "proof": "proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read/proof.md",
+    "result": "proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read/result.json",
+    "check": "proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read/check.py",
+    "directory": "proofs/GATES-20261110-001A/GATES-20261110-001A-P001_which_gates_the_families_read"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Two thin-torus leaves; five frozen network families.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 6c0331519).",
+    "status": "proved by hand; census exhaustive per network (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

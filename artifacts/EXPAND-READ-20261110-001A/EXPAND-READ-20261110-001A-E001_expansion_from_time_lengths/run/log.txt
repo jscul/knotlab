@@ -1,0 +1,91 @@
+Running as unit: expand-read-a1.scope; invocation ID: 475f43bafa2b4fcc90c5cc4e53595669
+F1 288 schedules 20 s
+F2 512 schedules 28 s
+F3 48 schedules 30 s
+F4 (balanced) 43 schedules 31 s
+{
+ "F1": {
+  "schedules": 288,
+  "X1: T1 violations": 3219,
+  "X1: violations within the first stage": 0,
+  "X2: increments read": 785,
+  "X2: increments as predicted": 773,
+  "X2: by stage": {
+   "0": [
+    12
+   ],
+   "2": [
+    42,
+    48
+   ]
+  },
+  "R1: schedules with a violation": 93,
+  "X3: schedules with a conformal violation": 3,
+  "X3: conformal violations": 6,
+  "X3: largest conformal excess": 1.5,
+  "T1 not read through freezes": 1041
+ },
+ "F2": {
+  "schedules": 512,
+  "X1: T1 violations": 4142,
+  "X1: violations within the first stage": 0,
+  "X2: increments read": 2658,
+  "X2: increments as predicted": 2642,
+  "X2: by stage": {
+   "0": [
+    8,
+    20
+   ],
+   "1": [
+    16,
+    30,
+    40
+   ]
+  },
+  "R1: schedules with a violation": 121,
+  "X3: schedules with a conformal violation": 18,
+  "X3: conformal violations": 36,
+  "X3: largest conformal excess": 2.0,
+  "T1 not read through freezes": 198
+ },
+ "F3": {
+  "schedules": 48,
+  "X1: T1 violations": 1529,
+  "X1: violations within the first stage": 0,
+  "X2: increments read": 423,
+  "X2: increments as predicted": 423,
+  "X2: by stage": {
+   "0": [
+    12
+   ],
+   "1": [
+    24
+   ]
+  },
+  "R1: schedules with a violation": 23,
+  "X3: schedules with a conformal violation": 6,
+  "X3: conformal violations": 36,
+  "X3: largest conformal excess": 1.0,
+  "T1 not read through freezes": 216
+ },
+ "F4 (balanced)": {
+  "schedules": 43,
+  "X1: T1 violations": 97,
+  "X1: violations within the first stage": 0,
+  "X2: increments read": 116,
+  "X2: increments as predicted": 116,
+  "X2: by stage": {
+   "0": [
+    12
+   ],
+   "1": [
+    24
+   ]
+  },
+  "R1: schedules with a violation": 3,
+  "X3: schedules with a conformal violation": 1,
+  "X3: conformal violations": 2,
+  "X3: largest conformal excess": 1.0,
+  "T1 not read through freezes": 29
+ }
+} code 2 34 of 34 32 s

@@ -1,0 +1,88 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/GATES-20261110-001/preregistration.md": "759a52cd70a218353634b5c5623ead87f8e3e60aca861c7b08188a6772cd4091"
+   }
+  },
+  "1 the census: functions of the stored acting bits read by each frozen family": {
+   "pass": true,
+   "info": {
+    "summary": {
+     "F1": {
+      "networks": 1,
+      "functions of the acting bits read (networks)": {
+       "AND": 1
+      },
+      "networks whose reading depends on more than the acting bits": 0,
+      "P2 violations": 0,
+      "one example per function": {
+       "AND": "('none', 'none')"
+      }
+     },
+     "F2": {
+      "networks": 4320,
+      "functions of the acting bits read (networks)": {
+       "OR": 4184
+      },
+      "networks whose reading depends on more than the acting bits": 136,
+      "P2 violations": 0,
+      "one example per function": {
+       "OR": "((('A', 0, 1), ('B', 0, 1), ('A', 0, 1)), ('nae', (0, 0, 1)))"
+      }
+     },
+     "F3": {
+      "networks": 7200,
+      "functions of the acting bits read (networks)": {
+       "OR": 6942
+      },
+      "networks whose reading depends on more than the acting bits": 258,
+      "P2 violations": 0,
+      "one example per function": {
+       "OR": "((('A', 3, 4), ('A', 3, 4), ('B', 0, 1)), ('nae', (0, 0, 0)))"
+      }
+     },
+     "F4": {
+      "networks": 13860,
+      "functions of the acting bits read (networks)": {
+       "a2": 13812
+      },
+      "networks whose reading depends on more than the acting bits": 48,
+      "P2 violations": 0,
+      "one example per function": {
+       "a2": "((('A', 0, 1), ('A', 0, 1), ('B', 0, 1)), ('nae', (0, 0, 0)))"
+      }
+     },
+     "F4'": {
+      "networks": 17710,
+      "functions of the acting bits read (networks)": {
+       "1": 77,
+       "0": 17599,
+       "a1": 34
+      },
+      "networks whose reading depends on more than the acting bits": 0,
+      "P2 violations": 0,
+      "one example per function": {
+       "1": "(((0, 1), (0, 1), (0, 1)), ('nae', (0, 0, 0)))",
+       "0": "(((0, 1), (0, 1), (0, 1)), ('nae', (0, 0, 1)))",
+       "a1": "(((0, 1), (0, 1), (2, 3)), ('nae', (0, 0, 0)))"
+      }
+     }
+    }
+   }
+  },
+  "predictions": {
+   "P1: F1 reads AND": true,
+   "P2: no violation (O = 1 wherever a component is unsatisfiable)": true,
+   "P3: OR read in F2": true,
+   "P3: OR read in F3": true,
+   "P4: NOT a1 read in F4'": false,
+   "failure line crossed": false
+  },
+  "seconds": 24.1
+ }
+}

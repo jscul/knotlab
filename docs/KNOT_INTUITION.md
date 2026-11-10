@@ -1453,8 +1453,17 @@ So network holes come in two kinds:
      atoms in 240 of 240 runs, and after two or three in 463 of 480.
    - **Reading.** Learning writes which patterns stand for their lines, the law keeps it, and a new disturbance settles back into it. All
      on small cases.
-   - **Next (awaiting a go-ahead).** A proof of the atom rule (backlog B87)
+   - **Next.** Several addresses in sequence (B88, taken by `ADDRESS-SEQ-20261110-001`, below), then a proof of the atom rule (B87)
      ([decision note](../research/ADDRESS-STEER-20261110-001/address_steer.md)).
+
+   **2026-11-10: a rewritable address** (`ADDRESS-SEQ-20261110-001`).
+   - **Written in turn (computed).** 90 addresses written one after another on 14 spaces, from K_3 to K_5 and with three or four atoms,
+     each followed by a random disturbance: every write reached its target and every address was held, never reverting to the one before.
+   - **The unsettled returns explained (computed).** Of the 17 earlier runs that did not settle back, 7 lost an atom's bit through a
+     learning step that wound through its handle, exactly as the rule allows, and 10 stopped one unit above the floor.
+   - **Reading.** The learned network holds a register: written by learning, rewritten cleanly, robust to disturbance.
+   - **Next (started).** A proof of the atom rule (backlog B87)
+     ([decision note](../research/ADDRESS-SEQ-20261110-001/address_seq.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

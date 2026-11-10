@@ -94,12 +94,32 @@ def r23(args):
                   "(ring, contact) pairs": pairs, "late": len(late), "late examples": late[:5], "SAT calls": sat_calls}
 
 
+def timed_r1(args):
+    t = time.time()
+    key, val = r1(args)
+    return key, (val, time.time() - t)
+
+
+def timed_r23(args):
+    t = time.time()
+    key, val = r23(args)
+    return key, (val, time.time() - t)
+
+
 def main():
     t0 = time.time()
+    OUT.mkdir(parents=True, exist_ok=True)
     nets = [(k, n, gr) for k in KINDS for n in SIZES for gr in GROUPINGS]
+    log = open(OUT / "progress.log", "w")
+    b1, b23 = {}, {}
     with Pool(16) as pool:
-        b1 = dict(pool.map(r1, [net + (law,) for net in nets for law in LAWS], chunksize=8))
-        b23 = dict(pool.map(r23, sorted([net + (law,) for net in nets for law in SELECTED], key=lambda a: -a[1]), chunksize=1))
+        for i, (key, val) in enumerate(pool.imap_unordered(timed_r1, [net + (law,) for net in nets for law in LAWS], chunksize=8)):
+            b1[key] = val[0]
+            if val[1] > 30 or i % 500 == 0:
+                print("r1", i, key, val, round(time.time() - t0), file=log, flush=True)
+        for i, (key, val) in enumerate(pool.imap_unordered(timed_r23, sorted([net + (law,) for net in nets for law in SELECTED], key=lambda a: -a[1]), chunksize=1)):
+            b23[key] = val[0]
+            print("r23", i, key, round(val[1]), {k: v for k, v in val[0].items() if "examples" not in k}, round(time.time() - t0), file=log, flush=True)
     table, seeing_binders = {}, []
     for net in nets:
         cnt = collections.Counter()

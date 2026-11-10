@@ -37,3 +37,10 @@ known before part X; balance at every size is open.
 
 - The 5 × 5 tube, g = 3, the frozen ranges; balance computed, not proved; plain dependence; declared rings (A45) on a declared board
   (A51); open births (A44); the schedules declared, found by search.
+
+## Part X, folded in
+
+Part X finished at 7,627 seconds of the run (`X.json`); code 1 and code 2 agree on all eight extensions (balance at every doubling,
+first failures, hearing lags). Through 80 × 80: [28, 1, 1], [28, 1, 2] and [35, 1, 1] keep every stage balanced; [35, 1, 2], [28, 2, 1],
+[28, 2, 2], [12, 28, 1] and [12, 28, 2] fail at 80 × 80. The contract's rule: the first step is confirmed one size past, by [28, 1] and
+[35, 1]; [12, 28], the one schedule meeting O2, is not, so reading distance across a doubling is known only to 40 × 40.

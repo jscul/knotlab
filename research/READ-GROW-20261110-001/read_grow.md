@@ -30,7 +30,7 @@ Frozen in the contract before any run:
 | 3 | **In one pause, taxicab distance exactly.** [35, 1] and [43, 1] hear every ring at distance 1, 2 and 3 in their first run, at lags 8, 20 and 32: L = 12|v| − 4, the same on each taxicab class. | exploratory, exact | A |
 | 4 | **After a doubling, not taxicab.** [12, 28]'s second run hears the four diagonal rings at lag 23 and the four straight rings at distance 2 at lag 32. | exploratory, exact | A |
 | 5 | **No metric (O3 not met).** No balanced schedule hears the rings at distance 4, and where defined the lags break the triangle inequality by their offset (L(2, 0) = 20 > 2 L(1, 0) = 16). | exploratory, exact | A |
-| 6 | **One size past.** The first four O1 schedules, extended by a run of 1 or 2 lags, at 80 × 80 under both codes: stress test pending (READ-GROW-A1). | exploratory, exact | A |
+| 6 | **One size past, in part.** The first four O1 schedules, each extended by a run of 1 or 2 lags, at 80 × 80 under both codes, which agree on all eight: [28, 1, 1], [28, 1, 2] and [35, 1, 1] keep every stage balanced through 80 × 80; [35, 1, 2], both extensions of [28, 2] and both of [12, 28] fail there. So the schedule that read distance across a doubling (2) is not known to stay balanced past 40 × 40 (READ-GROW-A1, folded in 2026-11-10). | exploratory, exact | A |
 
 ## Answer
 
@@ -39,8 +39,9 @@ every stage balanced while its original rings hear each other in order of distan
 only after more growth. During a pause the fixed stage reads the board's taxicab distance exactly, as a fixed torus does; after a
 doubling the reading departs from taxicab, the diagonal ring heard before the straight one. The lags are an order and an affine
 reading of taxicab distance on what is heard, not a metric: the farthest rings are never heard while every stage stays balanced, and
-the lags' offset breaks the triangle inequality. Every result is to 40 × 40; balance at larger sizes is pending one size past, and at
-every size open.
+the lags' offset breaks the triangle inequality. Every result is to 40 × 40. One size past, [28, 1] and [35, 1], extended by a short
+run, stay balanced to 80 × 80 under both codes, while [12, 28], the schedule that reads across a doubling, does not; balance at every
+size is open.
 
 ## Reading
 
@@ -59,7 +60,7 @@ every size open.
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| Reading distance 1 then 2 with every stage balanced (1) | the first four O1 schedules with one more run of 1 or 2 lags, at 80 × 80, under code 1 and code 2 | **stress test pending** (READ-GROW-A1 in `docs/LONG_RUNNING.md`) |
+| Reading distance 1 then 2 with every stage balanced (1) | the first four O1 schedules with one more run of 1 or 2 lags, at 80 × 80, under code 1 and code 2 | pass for [28, 1] (both extensions) and [35, 1] (one); fail for [12, 28] and [28, 2]; the codes agree on all eight (READ-GROW-A1, folded in 2026-11-10, `X.json`) |
 | The two codes (1) | eleven schedules, and the first two O1 schedules at 40 × 40 | pass (`C.json`, `V.json`) |
 
 ## Literature and provenance

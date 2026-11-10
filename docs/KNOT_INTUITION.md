@@ -2308,7 +2308,8 @@ So network holes come in two kinds:
      original ring first hears ring (0, 0); a metric needs every ring heard, symmetry and the triangle inequality.
    - **Distances in order (exploratory, exact).** Five schedules keep every stage balanced to 40 × 40 while the four nearest rings hear
      ring (0, 0) before any ring two away. In [12, 28] the plane hears distance 1, doubles, and only then hears distance 2. Two schedules
-     were confirmed on the full state and by a second code written independently.
+     were confirmed on the full state and by a second code written independently. One size past, at 80 × 80, [28, 1] and [35, 1]
+     extended stay balanced and [12, 28] does not.
    - **What the pause reads.** In one long pause the lags are exactly 8, 20 and 32 at distances 1, 2 and 3: the drawn board's taxicab
      distance, recovered. After a doubling the diagonal ring is heard before the straight one two away: no longer taxicab.
    - **Not a metric.** The rings at distance 4 are never heard while every stage is balanced, and the lags' offset breaks the triangle

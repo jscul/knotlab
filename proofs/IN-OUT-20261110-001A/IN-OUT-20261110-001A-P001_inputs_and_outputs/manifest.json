@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "IN-OUT-20261110-001A-P001",
+  "canonical_id": "IN-OUT-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "IN-OUT-20261110-001A",
+  "proof": "IN-OUT-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Maps of held inputs and learning them from examples",
+  "status": "Proved",
+  "claim": "Proved by hand: every map from held inputs to a held output is self-dual, so no knot space computes AND, OR or XOR of two held inputs (theorem D); a gauge flip negates one input or the output (lemma G); a composite's interface reads its inner atoms only through their AND (lemma C). Exact on every class of 18 interfaces of four spaces: D and G hold, and an acting atom or composite computes a gate (the output forced exactly when the held sides agree, or exactly when they differ). Computed, frozen: a learner that sees only its own dissonance under the world's clamps, with no address and no outside map, learned 53 of 56 gate and off targets at leaves (NOT gate included) and held them, but 1 of 16 at composites; the impossible AND never stopped (18 of 18); 6 inexact stops, all on the largest space.",
+  "dependencies": [
+    "NATIVE-WRITE-20261110-001A",
+    "NEST-ATOMS-20261110-001A",
+    "NOT-INSIDE-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A map that is not self-dual (theorem D).",
+    "A gauge flip that acts otherwise than lemma G says.",
+    "Fewer than 90% of leaf writes learned and held (L)."
+  ],
+  "lineage": {
+    "home_scope": "IN-OUT-20261110-001",
+    "epic_path": [
+      "IN-OUT-20261110-001"
+    ],
+    "parents": [
+      "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/write_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py",
+      "research/IN-OUT-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NATIVE-WRITE-20261110-001A/NATIVE-WRITE-20261110-001A-P001_native_writing/write_lib.py": "3304134845406357f8584a6a42819bbe7adabfe93fd96aab836a7ac56dc783fb",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "research/IN-OUT-20261110-001/preregistration.md": "4a6d9c310eeb867f6c6fc56113906b2909a2b04fb329a0922af6e4caa8f71e05"
+  },
+  "paths": {
+    "manifest": "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/manifest.json",
+    "identity": "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/identity.json",
+    "proof": "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/proof.md",
+    "result": "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/result.json",
+    "check": "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/check.py",
+    "directory": "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Interfaces at the sides of 14 leaves and 4 composites of four spaces; one frozen example learner.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 6d6434df1).",
+    "status": "D, G, C proved by hand; census exhaustive; frozen test computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

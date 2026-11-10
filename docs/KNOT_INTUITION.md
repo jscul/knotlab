@@ -1337,8 +1337,23 @@ So network holes come in two kinds:
      3 sign changes on every sphere; grown farther away it costs more (on K_5 a mean of 5.7 one line away, 15.6 five away).
    - **Reading.** For the owner's picture: growth and learning together remove what neither removes alone, most cheaply when the space
      grows where the tension is.
-   - **Next (started).** Choosing the resolution (backlog B62): which of the classes a pair can end in a native rule can choose
+   - **Next (taken by `CHOOSE-RES-20261110-001`, below).** Choosing the resolution (backlog B62): which of the classes a pair can end in a native rule can choose
      ([decision note](../research/GROW-HANDLE-20261110-001/grow_handle.md)).
+
+   **2026-11-10: choosing the resolution** (`CHOOSE-RES-20261110-001`).
+   - **The question.** A class-forced pair can be resolved into any of three other classes. Given a target, can a learner reach the one it
+     is given, and where does a learner without a target end up?
+   - **Choosing has a price (proved bound).** A resolution into a class costs at least the smallest cycle of its class change: 2 the short
+     way around a thin torus, about half the torus the long way.
+   - **A learner told the target reaches it (computed).** Keeping the class its own sign changes have made, it reached the target in
+     3,173 of 3,186 runs, every one on the thin tori, within 0.4 sign changes of the cheapest walk; the misses entered the target face in
+     the wrong sheet.
+   - **Without a target, how it moves decides (computed).** Random moves end in the short class in only 13% of runs on thin tori of at
+     least 20 points; sight of radius 3 in 63%; the outside distance in 96 to 99%. The pre-registered default was wrong.
+   - **Reading.** For the owner's picture: once there is a handle there is more than one resolution, a learner can pick one if it carries
+     the choice, and the far one costs the handle's length.
+   - **Next (started).** Grow where learning is stuck (backlog B68). Layers (sub-goal B54) became more concrete under the reading that an
+     atom is a pattern standing for one line ([decision note](../research/CHOOSE-RES-20261110-001/choose_res.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

@@ -641,6 +641,8 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-10 · `CHOOSE-RES-20261110-001` supplied a target class from outside, as A26 allows a target, and kept the learner's steps
+    at the dissonance with the state fixed ([choosing the resolution](../research/CHOOSE-RES-20261110-001/choose_res.md)).
   - 2026-11-10 · Relied on again by `GROW-HANDLE-20261110-001` for learning after growth; growth itself is a separate move, chosen by the
     experimenter there (A48) ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)).
   - 2026-11-10 · The outside target is not needed on the class-forced tori: `NATIVE-TARGET-20261110-001` steered the same learner with

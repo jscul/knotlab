@@ -1579,7 +1579,21 @@ So network holes come in two kinds:
      "not this" is still missing.
    - **Corrected (`NOT-INSIDE-20261110-001`).** Those readings read the frame, the particular signing each winding was given, not the
      winding: a reading of the windings alone sees only which patterns hold a contradiction.
-   - **Next.** Negation inside a cut leaf (backlog B123) ([decision note](../research/CLASS-READ-20261110-001/class_read.md)).
+   - **Next (taken by `NOT-INSIDE-20261110-001`, below).** Negation inside a cut leaf (backlog B123)
+     ([decision note](../research/CLASS-READ-20261110-001/class_read.md)).
+
+   **2026-11-10: "not this" needs a record of the path** (`NOT-INSIDE-20261110-001`).
+   - **The question.** Backlog B123, the deciding question for gates: with names reading inside a stored pattern, does a network ever say
+     "not this", or is every reading monotone?
+   - **Proved.** A reading that looks only at how each pattern ended up, its winding, says yes whenever more patterns hold their
+     contradiction, and cannot tell apart two windings that hold none: where a network allows one such winding, it allows the other once
+     the pattern's inner points are flipped to match.
+   - **Computed.** Fix one exact way of writing each winding, and a network does say "not this" for each of three patterns; write the
+     same winding another way and it stops. The earlier readings against two landmarks were readings of that fixed way of writing.
+   - **Reading.** The layered memory can say "all of these" and "any of these" about what it stores, and nothing more. To say "not this"
+     it has to know how each pattern was wound, not only which way it ended up, and that is a record of the path learning took.
+   - **Next.** Native writing (backlog B119), with a frame that learning itself fixes as a further question (backlog B126)
+     ([decision note](../research/NOT-INSIDE-20261110-001/not_inside.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

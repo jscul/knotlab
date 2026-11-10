@@ -72,3 +72,28 @@ knots (`GEOMETRY-LAW-20261029-001`), nothing changed, and it stays at 1/3.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B62 taken; sub-goal B54 re-rated (Concreteness 2/3 under the atom
 reading); B69 added. **Assumptions:** a history line for A26 (a target class supplied from outside).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (00:53 UTC).
+
+**B62 done: a learner can choose its resolution, and choosing has a price.** Told which class to end in, a learner that tracks the class its own changes have made reached it in 3,173 of 3,186 runs. On thin tori it was within half a step of the cheapest walk. The price is the handle: the far resolution costs about half the torus, the near one 2 steps. My pre-registered guess was wrong: without a target, random learners mostly go the long way (only 13% short).
+
+**On B54 (layers):** yes, more concrete now. The grown Fano atom acts from outside exactly as the line it replaced, and learning inside it removed the sphere's dissonance. That's a two-level network where learning one level down resolved a contradiction forced one level up. Next step: replace several lines by atoms and watch the dissonance move between levels (2/3 now, kept as a sub-goal).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: choosing (B62) | **Status:** Partially successful | targeted choice works; default guess failed |
+| Local direction: steering by re-signing | Continue | resolutions chosen at a known price |
+| Broader exploration: learning program | Known alternatives | growth trigger, layers via atoms |
+| Long-term goal: G15 | Capability gained | the point can be guided to a chosen resolution |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Grow where learning is stuck (B68) | 2/3 — Substantial | 2/3 — Testable | grow only where sight finds nothing → once at the dissonance, or not | Selected · started |
+| 2 | Layers through atoms (B54) | 3/3 — Barrier | 2/3 — Testable | several lines of K_2 replaced by atoms → dissonance crosses levels, or not | Alternative · deferred |
+| 3 | Why random learning goes long (B69) | 1/3 — Incremental | 3/3 — Ready | trace both holes' paths → a reason | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B62 taken; B54 re-rated; B69 added. **Assumptions:** A26 history line.

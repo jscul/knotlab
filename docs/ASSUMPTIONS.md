@@ -1258,5 +1258,9 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Relied on by `READ-GROW-20261110-001`: a growing plane of rings on a declared board reads its original rings'
+    distances in order while every stage keeps its knots (to 40 × 40). In a pause the reading is the board's own taxicab distance
+    (lags 12|v| − 4), recovered, not chosen; after a doubling it is not taxicab (a diagonal ring heard before a straight one), so the
+    growth law shapes what is read, but the board is still drawn ([reading distance while growing](../research/READ-GROW-20261110-001/read_grow.md)).
   - 2026-11-10 · Added at the owner's question whether the axes can follow rules, recording a default every space epic since
     `LOGIC-AXIS-20261107-001` took.

@@ -2279,9 +2279,24 @@ So network holes come in two kinds:
      knots and carry what its territories heard of each other. Only [1, 28, 1], extended by a run of 1 or 2 lags, is confirmed at
      96 × 96; most of the 21 are not known to stay balanced larger, and balance at every size is open. The schedules are declared
      and were found by search; a rule the network could follow to pause on its own is open.
-   - **Next (selected, awaiting a go-ahead).** Reading distance while growing (sub-goal B89; Payoff 3/3, Concreteness 2/3): on a 5 × 5
+   - **Next (taken: B89, next entry).** Reading distance while growing (sub-goal B89; Payoff 3/3, Concreteness 2/3): on a 5 × 5
      tube, a schedule under which original rings are heard at distance 1 and then 2 with every stage balanced; B55 meanwhile
      ([decision note](../research/CROSS-WHY-20261110-001/cross_why.md)).
+
+   **2026-11-10: reading distance while growing** (`READ-GROW-20261110-001`).
+   - **The question.** Sub-goal B89: on a 5 × 5 tube, can the growing plane read its distances, nearest original rings first, while
+     every stage keeps its knots? Frozen first: the distance is taxicab on the original torus, and the reading is the lag at which an
+     original ring first hears ring (0, 0); a metric needs every ring heard, symmetry and the triangle inequality.
+   - **Distances in order (exploratory, exact).** Five schedules keep every stage balanced to 40 × 40 while the four nearest rings hear
+     ring (0, 0) before any ring two away. In [12, 28] the plane hears distance 1, doubles, and only then hears distance 2. Two schedules
+     were confirmed on the full state and by a second code written independently.
+   - **What the pause reads.** In one long pause the lags are exactly 8, 20 and 32 at distances 1, 2 and 3: the drawn board's taxicab
+     distance, recovered. After a doubling the diagonal ring is heard before the straight one two away: no longer taxicab.
+   - **Not a metric.** The rings at distance 4 are never heard while every stage is balanced, and the lags' offset breaks the triangle
+     inequality. The board is still declared (A51): the reading recovers it, it does not choose it.
+   - **Next (selected, awaiting a go-ahead).** A metric while growing (sub-goal B102; Payoff 3/3, Concreteness 2/3): two pauses on the
+     5 × 5 and 7 × 7 tubes, lags read without their offset or through freezes
+     ([decision note](../research/READ-GROW-20261110-001/read_grow.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

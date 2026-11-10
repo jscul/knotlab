@@ -106,3 +106,25 @@ Since the epic opened:
 
 **Recommendation.** Research directions, direction 1 recommended and recorded as sub-goal B114 under the owner's rule for untaken 3/3
 directions, for the coordinator to confirm.
+
+## Final report as sent
+
+B107 is closed: obstructed. This is a clean obstruction, not a bound. Conjecture C, frozen with predicted dimensions, fails at every entry from degree 2 on, so the kernel is bigger than the inverse-counting ideal. The cause is the encoding. With n + 1 pigeons coded in l + 1 bits, only pigeon n has the top code bit. The decoder reads a hole's top bit as "pigeon n sits here", and that can hold for at most one hole, so every row-linear monomial with two top hole bits falls into the kernel. I proved that through the decoder Braun's criterion then certifies at most a constant number of proof lines, at every degree and accuracy, which closes this route for n + 1 pigeons. Those monomials are not consequences of LeftPigeon itself. The 2n-pigeon principle fills all the code bits, has no such bit, and contains the n + 1 pigeon clauses, so a bound for it would be one for the PPADS-complete principle. Nothing here is a lower bound, and nothing transfers to the sphere's count.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the decoder's kernel at the needed degree | Obstructed | C fails; the top hole bit closes the route for n + 1 pigeons |
+| Local direction: the decoder route | Research directions | Closed for n + 1 pigeons, open for 2n, whose bound gives LeftPigeon's |
+| Broader exploration: G3 | Known alternatives | Cutting planes (B82), the parity reduction (B101) |
+| Long-term goal: G3 | Obstruction learned | The decoder separates only what real placements can't decide, and the encoding decides which those are |
+
+**Next step:** Research directions, the 2n-pigeon route recommended, for you to confirm.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | The decoder route for the 2n-pigeon principle (B114) | 3/3 | 2/3 | Freeze the target; prove a spare-row space misses the kernel (a cube that parks a hole's pigeon pair in a spare hole); check on n = 4, 8; count density at k ≈ n/(C l³) → a bound for LeftPigeon, or the failing step |
+| 2 | Cutting planes on the count (B82) | 3/3 | 1/3 | As recorded |
+| 3 | A parity reduction from PIGEON to SINK (B101) | 3/3 | 1/3 | As recorded |
+
+**Corrections:** none. **Goals:** a G3 checkpoint; B107 taken; sub-goal B114 added. **Assumptions:** none.
+**Basket:** KERNEL-FRAC-20261110-001#1 (B114, 3/3, 2/3), B101 (3/3, 1/3), B82 (3/3, 1/3); none taken, since the recommendation is the line's top item and waits for your go-ahead.

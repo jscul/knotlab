@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEAK-APER-20261110-001B-E001",
+ "ticket": "WEAK-APER-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Among the 32,768 level laws on three values, which are weakly aperiodic (solutions on the tree but no finite board), and does each weakly aperiodic law carry a certificate of a solution with trivial stabilizer, so that the dichotomy W holds for it?",
+ "definitions": {
+  "the family": "A level law on Z/3 is a set S of triples (a, b, c) with a + b + c = 4; a place of value k is allowed when a of its four neighbours have value k - 1, b have value k and c have value k + 1, mod 3. 15 triples, 2^15 = 32,768 laws, keyed by the bitmask over census.py's TRIPLES order. The horofunction law is {(1, 0, 3)}.",
+  "tree patterns": "The greatest set of allowed patterns (centre and four neighbour values) in which every pattern has a compatible pattern in every direction.",
+  "finite board": "Exists iff the balance linear program over the tree patterns is feasible (ticket A, target 1); solved exactly in rationals by HiGHS (linprog).",
+  "classes": "E: no tree pattern. D: no branching pattern (finitely many solutions). A: some balanced (periodic) solution puts positive weight on branching patterns (Lemma A of LEIBNIZ-BOARDS-20261110-001A applies). WA: tree patterns but the balance program infeasible (weakly aperiodic). P: balanced solutions exist but none uses a branching pattern. WA and P are then certified by L1 (a doubly recurrent branching type: a type in the set that reaches a locally branching choice, with two different child directions each having a child type in its strongly connected component) or L2 ((1, 0, 3) in S), or left U.",
+  "reading": "For each weakly aperiodic law, whether its solutions also include ones with nontrivial stabilizer (an infinite board other than the tree) is not computed."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 f107ac70fb5e82cbb343b23d33558618704375d2188282373227a1645193fe50) beside this file; numpy and scipy (linprog, HiGHS) from the workspace .venv.",
+  "run": "census.py; output artifacts/WEAK-APER-20261110-001B/WEAK-APER-20261110-001B-E001_level_laws_on_three_values/census.json."
+ },
+ "forbidden_inputs": [
+  "Changing the family, the classes, the certificates or the predictions after seeing results"
+ ],
+ "primary_observable": "Each law's class, and the list of undecided laws.",
+ "cheapest_meaningful_control": "The horofunction law (expected WA-L2: weakly aperiodic, horofunction certificate, no doubly recurrent branching type), the empty law (E) and the full law (A); run before freezing (disclosed) and as expected. No law of the family was run.",
+ "predictions": {
+  "C1": "No law of the family is undecided (no WA-U or P-U).",
+  "C2": "The horofunction law is WA-L2 and has no L1 certificate."
+ },
+ "decision_rules": {
+  "C1 holds": "W holds for every level law on three values, by Lemma A, L1 or L2 (ticket A).",
+  "C1 fails": "Each undecided law is examined by hand in this epic: a proof of a free solution, a proof that every solution has a nontrivial stabilizer (a counterexample to W), or the law recorded as open.",
+  "a failed certificate": "A certified law shown to have no free solution would be a correction of ticket A's certificate."
+ },
+ "stop_rule": "One run on the frozen family.",
+ "runtime": "Expected under thirty minutes; registered in docs/LONG_RUNNING.md before launch and run under systemd-run MemoryMax=16G with no swap."
+}

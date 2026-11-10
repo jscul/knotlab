@@ -13,8 +13,8 @@
   "proof": "CODIST-THREE-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "The second vector on the pair of solutions, and the co-distance-3 cancellation",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt. At n = 2^m, h = n/2, q = 2n, for a in GF(q)* with G the monic least-degree element of ker X_b, k = h - deg G >= 3, J = ceil(k/2), e = h - J - 1, G' the second solution of LEADING-FORM-20261110-001A (W(G, G') = c Y^e) and the family Zhat of CHAIN-ORDERS-20261110-001A: to be proved (1) the second vector of the reduction is, modulo the kernel, psi_2(x) = [What_x G + W_x G']/(c Y^e) with W_x = W(G, psi_2(x)) and What_x the polynomial in Y of degree below e congruent to W_x G'/G mod k^e; target (2), the co-distance-3 cancellation: with a complement containing k G Y^j (2j < k - 1), the reduction's coefficients at l^4 and l^5 vanish on every entry with i + j <= k - 3; then there is no Jordan block of size 4, exactly one of size 5 when k is odd and none when k is even, and the chain lemma holds in full for k <= 3. Frozen stop rule: if (2) is not derived in this epic, the collapse line is parked.",
+  "status": "Proved",
+  "claim": "At n = 2^m, h = n/2, for a in GF(2n)* with G = Q(Y) + k P(Y) the monic least polynomial, k = h - deg G, J = ceil(k/2), N = G(k) G(k + 1) and L(Y) = Y + Y^2 + ... + Y^(h/2): (1) for k >= 2, [Y^d](N L) = 0 for h - k + 1 <= d <= h - 2 and [Y^(h-1)](N L) = a^2 G(0)^2 (the second-order solvability in its plainest form); (2) for x = G Y^i, y = G Y^j with 2i, 2j < k - 1 and i + j <= k - 3, the reduction's order-4 coefficient (complement containing k G Y^j) is Q1 + Q2 + Q3 + Q4 + Q5 with Q1 = [k^(h-2)](Y^j W_x) = 0 and Q2 = [Y^(h-2-j)] W_x = 0 (the gap, and a double sum over powers of two collapsing), Q3 = [k^(h-2)](Y^j I_x), I_x = G tau phi_2 + k W_x, Q4 = a^2 phi_2(0) y(0), Q5 = B_4(x, y), for any second chain vector phi_2; (3) psi_hat_x = R_x + k (W_x + P R_x)/Q, R_x = (W_x Q'') mod Q (P Q'' + Q P'' = 1), is a second chain vector whenever its degree is below h. Computed: Q3 + Q4 + Q5 = 0 for psi_hat_x at every pair (sides 16 to 64), so the order-4 coefficient vanishes there; a first continued-fraction reading does not show the leading form. The registered target, the co-distance-3 cancellation, is not derived (the remaining identity concerns the high coefficients of a quotient by Q; the order-5 coefficient was not reduced), so by the frozen stop rule the collapse line is parked.",
   "dependencies": [
     "LEADING-FORM-20261110-001A"
   ],
@@ -50,9 +50,7 @@
     "check": "proofs/CODIST-THREE-20261110-001A/CODIST-THREE-20261110-001A-P001_the_second_vector_on_the_pair/check.py",
     "directory": "proofs/CODIST-THREE-20261110-001A/CODIST-THREE-20261110-001A-P001_the_second_vector_on_the_pair"
   },
-  "remaining_obligations": [
-    "(1) and (2), or the record of what failed"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -87,7 +85,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10 (sub-goal B73, the last epic on the collapse line for now).",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "status": "proof by hand (Theorems 1 to 3) with finite checks; the target not derived; the collapse line parked by the frozen rule",
+    "novelty": "new as far as found (bounded search of 2026-11-09); ingredients classical"
   }
 }

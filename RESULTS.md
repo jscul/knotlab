@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**286 current results** and 5 superseded ones, from 250 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**286 current results** and 5 superseded ones, from 251 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 8 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 250 epics with their closures
+- [Epics](#epics): all 251 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1223,6 +1223,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | [closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-RULE-20261110-001/) |
 | 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
+| 2026-11-10 | The co-distance-3 cancellation (`CODIST-THREE-20261110-001`) | [closure](proofs/CODIST-THREE-20261110-001Z/CODIST-THREE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CODIST-THREE-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
 | 2026-11-10 | Why crossing breaks balance (`CROSS-WHY-20261110-001`) | [closure](proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-WHY-20261110-001/) |

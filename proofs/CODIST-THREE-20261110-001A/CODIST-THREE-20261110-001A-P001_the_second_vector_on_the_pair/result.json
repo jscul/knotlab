@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "artifact": "CODIST-THREE-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (LEADING-FORM-20261110-001A's manifest and library)": {
+   "pass": true,
+   "info": {
+    "proofs/LEADING-FORM-20261110-001A/LEADING-FORM-20261110-001A-P001_the_reductions_vectors_order_by_order/manifest.json": "7372c377acc3d27b12302d53ac5f4c4c0a512cb50daa775ec5df9c77525d8ae3",
+    "proofs/LEADING-FORM-20261110-001A/LEADING-FORM-20261110-001A-P001_the_reductions_vectors_order_by_order/wronski_lib.py": "9e64e6bd0efe049d086e06218392d655b3f74f9cd30ee013c3ba6e7919c1975e"
+   }
+  },
+  "1 Theorem 1: [Y^d](N L(Y)) = 0 for h - k + 1 <= d <= h - 2 and [Y^(h-1)](N L(Y)) = a^2 G(0)^2, every a with k >= 2, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "eigenvalues with k >= 2": 382,
+    "failures": 0
+   }
+  },
+  "2 Theorem 2: the order-4 coefficient at i + j <= k - 3 splits into Q1 + ... + Q5 with Q1 = Q2 = 0, sides 16 to 64": {
+   "pass": true,
+   "info": {
+    "pairs": 862,
+    "split equals the coefficient": 862,
+    "Q1 = 0": 862,
+    "Q2 = 0": 862,
+    "coefficient 0": 862
+   }
+  },
+  "3 Theorem 3 and computed: the canonical second vector is a second chain vector of degree < h, and Q3 + Q4 + Q5 = 0 for it at i + j <= k - 3, sides 16 to 64": {
+   "pass": true,
+   "info": {
+    "vectors": 317,
+    "chain equation holds": 317,
+    "pairs": 862,
+    "canonical Q3 + Q4 + Q5 = 0": 862
+   }
+  },
+  "4 negative, computed: the top coefficients of phi = xi N/(1 + xi (k + 1 + Lam0)) do not show the leading form, sides 16 to 64": {
+   "pass": true,
+   "info": {
+    "coefficients": 702,
+    "differing from the leading form": 596
+   }
+  }
+ },
+ "status": "passed"
+}

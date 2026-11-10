@@ -113,3 +113,33 @@ none.
 
 **Recommendation.** Research directions: #1 and #2 together, as the proof pair for the exclusion, since growth then reading is now
 the positive result and the exclusion is the open half.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 00:38 UTC and copied here verbatim, with the one edit made to it a minute later (a wrong epic
+number in the corollary line).
+
+**Invertible substrate (B39) is closed and published. No such substrate exists on a finite network: persistence needs forgetting.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/INVERT-STEP-20261110-001/invert_step.md))
+
+- **Proved:** an invertible step just reshuffles the finite set of states, so some power of it is the identity. At that lag every contact holds only its own first value, which neither ring decides. So no contact stays bound, whatever the rule.
+- **Corollary:** wherever a contact persists, no row after the first is open. ~~B38's~~ The rule-60 result of "knots read from the last growth event" now holds for every rule and contact law. [Edit: that result came from the rebase epic, not B38.]
+- **Checked:** 256 linear substrates, first and second order, on five tubes. Every invertible one fails by lag 336.
+- **No conflict with B50:** its invertible map was each ring's own cells while contacts are reborn, not the whole step. That step is rule 60's, and it forgets. I spelled this out in the note, as the coordinator asked.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: an invertible substrate | Successful | Proved none exists on a finite network |
+| Local direction: growth while running | Research directions | Changing the substrate can't remove the lapse; growth keeps knots by new beginnings |
+| Broader exploration: G1 with G5 | Known alternatives | Proof pair B55 and B64; B65; B67 |
+| Long-term goal: G5 Dynamics | Obstruction learned | A process keeps its contacts' knots only if its law forgets |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Why odd spacings keep balance (B55) | 2/3 | 2/3 | As recorded |
+| 2 | Why crossing breaks balance (B64) | 2/3 | 2/3 | The first failing contact's returns → a lemma |
+| 3 | Shaped growth that stops (B65) | 2/3 | 2/3 | Double one territory, stop, compare |
+| 4 | Reversible substrate that never stops growing (B67) | 2/3 | 2/3 | Doubling on second-order rule 60 → bound while growing, or not |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint; B39 taken; B67 added. **Assumptions:** none.
+
+I recommend #1 and #2 together, as the proof pair for "knots or distance while growing." I'll wait for the go-ahead.

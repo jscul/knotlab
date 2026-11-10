@@ -113,3 +113,32 @@ The coordinator asked; the answer, from the theorem and this census:
 **Recommendation.** Research directions, #1; stop at a proof or the distance where the law fails.
 
 **Basket:** B127, `EXPAND-READ-20261110-001#2`, B55; none taken: #1 stays in this line because it proves what this census found.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 17:29 UTC and copied here verbatim.
+
+**Growth that rounds the reading (B108) is closed and published. The answer is no: the growing plane never reads a distance rounder than its board's taxicab one.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/ROUND-READ-20261110-001/round_read.md))
+
+- **Route readings stay taxicab** (frozen census, 113 schedules, tubes to 41 × 41, distances to 20, exact). Diagonal and axis rings at the same distance are reached within 9 conformal lags of each other, and the gap doesn't grow, as the theorem requires. The diagonal lead seen in B89 was one of these bounded offsets.
+- **The plain hearing is even less round.** On the first stage, a diagonal ring at distance d is heard only when the axis ring at the next power of two would be: the gap is exactly 4g·(2^⌈log₂d⌉ − d), in 24 of 24 readings. Growth perturbs this pattern but keeps it square in every schedule.
+- **What the law adds beyond the drawn board** (your question): scale and clock (2g lags per ring step, plus the expansion), bounded offsets (rule 60 reads leftward), and a binary plain reading from Pascal's triangle mod 2. The coarse taxicab shape is the board's. Roundness would have to come from the board itself, not from this growth.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: growth that rounds the reading | Successful | Read exactly: no rounding; routes taxicab, plain hearing binary along diagonals |
+| Local direction: a grown plane that reads its own metric | Research directions | The coarse metric is proved and its shape is the board's; what's left here is sharpening |
+| Broader exploration: G1 with G5 | Known alternatives | Board as distinctions (B92, another line); other boards; why a run keeps balance |
+| Long-term goal: G1 Space from a law | Obstruction learned | This law's growth adds scale, clock, offsets and a binary plain reading to the board, never roundness |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | The plain reading's power-of-two law as a theorem | 2/3 | 3/3 | Route counts from the hop lattice + Lucas's theorem → a proof, or where it fails |
+| 2 | Sharp constants (B127) | 2/3 | 3/3 | As recorded |
+| 3 | A metric with knots kept (B128) | 2/3 | 2/3 | As recorded |
+| 4 | Readings on other boards | 2/3 | 2/3 | Triangular and honeycomb ring lattices → whether a board makes the route reading rounder |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint (obstruction learned); B108 taken. **Assumptions:** none.
+**Basket:** B127, EXPAND-READ-20261110-001#2, B55. None taken: #1 stays in this line because it proves what this census found.
+
+I recommend #1, though it's a modest payoff. If you'd rather redirect, #4 (or B92's board-as-distinctions line) is where roundness could actually come from. I'll wait for the go-ahead.

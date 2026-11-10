@@ -60,3 +60,28 @@ holds the state still).
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B71 taken; B78 added. **Assumptions:** A26 Overturned (as a limit on
 what learning reaches); A50 added (the state moves without raising the dissonance while learning acts).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (01:39 UTC).
+
+**B71 done, and it overturns an assumption: holding the state still was what froze the point.** I let the state flip one point at a time between learning steps, never raising the dissonance. The learners that were stuck before (atoms away from the dissonance) now resolve or reach the floor in about half the runs (23 and 28 of 50, against none). The point walks to where learning can act. But a leftover unit that has settled in an atom stays there: it wanders inside that atom and at its border, never into the other atom or back up (exhaustive on K_2). So named patterns behave like traps at constant tension.
+
+By the rule I froze beforehand, A26 ("the state holds still") is **Overturned** as a limit on what learning can reach. The earlier fixed-state results still stand as statements about that kind of learner. The new reading is A50.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: let the state move (B71) | **Status:** Partially successful | frees learning; a settled unit stays in its atom |
+| Local direction: learning with a moving state | Continue | the point travels to where learning acts |
+| Broader exploration: learning program | Known alternatives | temporary rises, larger networks |
+| Long-term goal: G15 | Capability gained | a moving point plus learning, as in your picture |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Accept a temporary rise (B72) | 2/3 — Substantial | 3/3 — Ready | let W rise by one for ≤ k steps → the unit leaves its atom, or no k ≤ 6 does | Selected · started |
+| 2 | Why the trap holds (B78) | 1/3 — Incremental | 3/3 — Ready | junction faces under floor flips → a reason | Alternative · deferred |
+| 3 | Overgrown surfaces (B70) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+**Corrections:** none (the claims that relied on A26 all name the fixed state). **Goals:** G15 checkpoint; B71 taken; B78 added. **Assumptions:** A26 Overturned (as a limit); A50 added.

@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "KERNEL-FRAC-20261110-001A-P001",
+  "canonical_id": "KERNEL-FRAC-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "KERNEL-FRAC-20261110-001A",
+  "proof": "KERNEL-FRAC-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The top hole bit closes the decoder route",
+  "status": "Proved",
+  "claim": "For the binary left-pigeon principle with n = 2^l holes and n + 1 pigeons, whose hole rows carry l + 1 bits, only pigeon n has the top code bit, so the reduced decoder sends the top bit of hole row h to the single cell X_n,h and every row-linear monomial with top bits on two different hole rows to zero: these monomials lie in the decoder's kernel K_k. Consequently every subspace of L_k that meets K_k only in zero has dimension at most low_k, the number of row-linear monomials of degree <= k with at most one top hole bit, and Braun's criterion applied through Theorem (R) certifies at most 3S + |J| >= 5.2, for every degree k <= n/2 and every accuracy h that Theorem (R) allows. The obstruction comes from the extra pigeon: the left-pigeon principle with 2n pigeons, whose codes fill the l + 1 bits, does not have it.",
+  "dependencies": [
+    "HOLE-SEP-20261110-001A",
+    "SEP-LEFT-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A hole whose top bit does not decode to X_n,h, or a pair of top bits whose decoded product is not in the unary ideal.",
+    "A degree k and accuracy h where the certified value exceeds 5.2."
+  ],
+  "lineage": {
+    "home_scope": "KERNEL-FRAC-20261110-001",
+    "epic_path": [
+      "KERNEL-FRAC-20261110-001"
+    ],
+    "parents": [
+      "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json",
+      "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json",
+      "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run.py",
+      "research/KERNEL-FRAC-20261110-001/kernel_statement.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json": "b9778bf6563ddf39b5a28bf3fd7a69225c02292b5ce597ee42d904f10dc1dffb",
+    "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json": "82b20ed526a38a9618965517981a7c328f6dbb6247e647331909cfb225ce557c",
+    "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run.py": "68cd9a8e3f1fac66543edc836756e023e47c7f8f31344a2e0e88682092413caa",
+    "research/KERNEL-FRAC-20261110-001/kernel_statement.md": "78a37a06a167c02500d3ce2700869cea5504bc33d06efb861c8a2edd4097418e"
+  },
+  "paths": {
+    "manifest": "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/manifest.json",
+    "identity": "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/identity.json",
+    "proof": "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/proof.md",
+    "result": "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/result.json",
+    "check": "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/check.py",
+    "directory": "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k); proof complexity of its refutations.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+    "status": "proved by hand; the identities and the cap checked by check.py",
+    "novelty": "new as far as found: an exact obstruction for the decoder route on this encoding; elementary"
+  }
+}

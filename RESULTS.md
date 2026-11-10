@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**292 current results** and 5 superseded ones, from 259 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**293 current results** and 5 superseded ones, from 259 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 51 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 18 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 19 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 79 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -346,6 +346,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-10 · Row-linear separation for bit LeftPigeon is a static kernel question** (`HOLE-SEP-20261110-001-D001`).
   For the binary left-pigeon principle, a row-linear polynomial derived in polynomial-calculus degree B, with 2lB - 1 <= n, lies in a fixed kernel of the decoder to Braun's unary pigeonhole system; that kernel contains the inverse-counting identities, summing over holes equals summing over pigeons, and at degree 2 it is a fraction near (l+1)^2 k / v of the row-linear space.
   [proof P001](proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/proof.md), [epic closure](proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · The extra pigeon closes the decoder route for bit LeftPigeon** (`KERNEL-FRAC-20261110-001-D001`).
+  For the binary left-pigeon principle with n + 1 pigeons coded in l + 1 bits, only one pigeon has the top code bit, so the decoder into the unary pigeonhole principle sends products of top hole bits to zero, and Braun's Res(xor) criterion applied through that decoder certifies only a constant number of lines; the principle with 2n pigeons has no such bit and contains the n + 1 pigeon clauses.
+  [proof P001](proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/proof.md), [epic closure](proofs/KERNEL-FRAC-20261110-001Z/KERNEL-FRAC-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · The sphere's count needs polynomial-calculus degree n^{Omega(1)} over every field** (`PC-COUNT-20261110-001-D001`).
   Over every field, every polynomial-calculus refutation of the octahedral knot sphere's count has degree at least c n^{1/4}/log n, because a low-degree refutation would give one for the functional pigeonhole principle on an expander. Over F2, tree-like Res(xor) refutations of the count therefore need size 2^{Omega(n^{1/4}/log n)}.
   [proof P001](proofs/PC-COUNT-20261110-001A/PC-COUNT-20261110-001A-P001_degree_through_the_pigeonhole_principle/proof.md), [epic closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md)
@@ -1252,7 +1255,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Hole-row separation for bit LeftPigeon (`HOLE-SEP-20261110-001`) | [closure](proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/HOLE-SEP-20261110-001/) |
 | 2026-11-10 | Growth on an invertible substrate (`INVERT-STEP-20261110-001`) | [closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/INVERT-STEP-20261110-001/) |
 | 2026-11-10 | The Jordan chains from one polynomial (`JORDAN-CHAINS-20261110-001`) | [closure](proofs/JORDAN-CHAINS-20261110-001Z/JORDAN-CHAINS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/JORDAN-CHAINS-20261110-001/) |
-| 2026-11-10 | The decoder's kernel at the needed degree (`KERNEL-FRAC-20261110-001`) | — | [folder](research/KERNEL-FRAC-20261110-001/) |
+| 2026-11-10 | The decoder's kernel at the needed degree (`KERNEL-FRAC-20261110-001`) | [closure](proofs/KERNEL-FRAC-20261110-001Z/KERNEL-FRAC-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/KERNEL-FRAC-20261110-001/) |
 | 2026-11-10 | The Kloosterman lower bounds (`KLOOSTERMAN-BOUNDS-20261110-001`) | [closure](proofs/KLOOSTERMAN-BOUNDS-20261110-001Z/KLOOSTERMAN-BOUNDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/KLOOSTERMAN-BOUNDS-20261110-001/) |
 | 2026-11-10 | Does the law decide which atom holds the unit (`LAW-HOLDS-20261110-001`) | [closure](proofs/LAW-HOLDS-20261110-001Z/LAW-HOLDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-HOLDS-20261110-001/) |
 | 2026-11-10 | The leading form at every order (`LEADING-FORM-20261110-001`) | [closure](proofs/LEADING-FORM-20261110-001Z/LEADING-FORM-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEADING-FORM-20261110-001/) |

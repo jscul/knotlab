@@ -6,7 +6,10 @@
     "METRIC-GROW-20261110-001A"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "accepted_artifact_id": "CONF-METRIC-20261110-001A-P001",
+    "terminal_artifact": "proofs/CONF-METRIC-20261110-001A/CONF-METRIC-20261110-001A-P001_a_growing_plane_reads_taxicab_distance_in_conformal_time/manifest.json"
+  },
   "id": "CONF-METRIC-20261110-001A",
   "kind": "ticket",
   "legacy": {},
@@ -17,8 +20,8 @@
   },
   "parent": "CONF-METRIC-20261110-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Proved 2026-11-10 (by hand; Lemma 1 checked against breadth-first search on 326,400 pairs, Theorem 2 against 15,373 route arrivals): one-stage earliest arrivals are the steps to the next contact, g times the contact lattice's hop distance (two hops per ring step), and the steps from the last contact; for every doubling schedule, 4g d(v) - 6g <= phi(T1(v)) < 4g d(v) + 9g + 2 in conformal time, so the conformal round trip satisfies the triangle inequality up to 42g + 4; plain lags have unbounded excess (computed).",
+  "status_class": "proved",
   "stop_rule": "",
   "title": "A growing plane reads taxicab distance in conformal time"
 }

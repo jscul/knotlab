@@ -1,0 +1,148 @@
+{
+ "ticket": "CONF-METRIC-20261110-001A",
+ "artifact_id": "CONF-METRIC-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "experiments/READ-GROW-20261110-001A/READ-GROW-20261110-001A-E001_reading_distance_while_growing/grid_lib.py": "0176b395221264fece460187692d5d9bcc2868fcd44cb35f35871d733397847e",
+    "experiments/METRIC-GROW-20261110-001A/METRIC-GROW-20261110-001A-E001_time_length_while_growing/metric_lib.py": "417a8b4d4c5b7a89eae96210dd7aa5800f48d6ebbe418aef715a42f90051dd04",
+    "experiments/EXPAND-READ-20261110-001A/EXPAND-READ-20261110-001A-E001_expansion_from_time_lengths/run.py": "eed326df0b76f8c5d170e9425f93a3567ba4be272d1bddadbd77bfe9b8edf78a"
+   }
+  },
+  "1 Lemma 1 equals breadth-first search on fixed stages (every own cell from 12 random own cells; n = 3, 5; g = 2 to 5; sides 2n and 4n)": {
+   "pass": true,
+   "info": {
+    "stages": 16,
+    "pairs": 326400,
+    "mismatches": 0
+   }
+  },
+  "2 Theorem 2 on every schedule of EXPAND-READ-20261110-001A-E001 (route first arrivals, computed here and, on every 40th schedule, equal to metric_lib's)": {
+   "pass": true,
+   "info": {
+    "schedules": 891,
+    "readings": 13614,
+    "lower bound held": 891,
+    "upper bound held": 891,
+    "unreached below the bound": 891,
+    "least phi - 4gd by g": {
+     "2": -2.0,
+     "3": -4.5,
+     "4": null,
+     "5": -5.0
+    },
+    "largest phi - 4gd by g": {
+     "2": 8.0,
+     "3": 12.0,
+     "4": null,
+     "5": 20.0
+    },
+    "largest conformal excess": 3.0,
+    "sample agreeing with metric_lib": [
+     23,
+     23
+    ]
+   }
+  },
+  "3 Theorem 2 on 240 fresh random schedules (n = 5, 7, 9; g = 2 to 5; one to four runs)": {
+   "pass": true,
+   "info": {
+    "schedules": 240,
+    "readings": 1759,
+    "lower bound held": 240,
+    "upper bound held": 240,
+    "unreached below the bound": 240,
+    "least phi - 4gd by g": {
+     "2": -3.25,
+     "3": -3.0,
+     "4": -1.5,
+     "5": -5.75
+    },
+    "largest phi - 4gd by g": {
+     "2": 8.0,
+     "3": 12.0,
+     "4": 16.0,
+     "5": 20.0
+    },
+    "largest conformal excess": 2.0
+   }
+  },
+  "4 Computed (Corollary 4): on [28, 2 x K, 40 2^(K+1)] the plain round-trip excess R1(2u) - 2 R1(u), u = (1, 1), grows with K while the conformal excess stays bounded": {
+   "pass": true,
+   "info": [
+    {
+     "K": 0,
+     "runs": [
+      28,
+      80
+     ],
+     "defined": true,
+     "plain excess R1(2u) - 2 R1(u)": 42,
+     "conformal excess": 1.0,
+     "T1": {
+      "(1, 1)": 24,
+      "(4, 4)": 24,
+      "(2, 2)": 66,
+      "(3, 3)": 72
+     }
+    },
+    {
+     "K": 1,
+     "runs": [
+      28,
+      2,
+      160
+     ],
+     "defined": true,
+     "plain excess R1(2u) - 2 R1(u)": 114,
+     "conformal excess": -0.5,
+     "T1": {
+      "(1, 1)": 24,
+      "(4, 4)": 24,
+      "(2, 2)": 96,
+      "(3, 3)": 114
+     }
+    },
+    {
+     "K": 2,
+     "runs": [
+      28,
+      2,
+      2,
+      320
+     ],
+     "defined": true,
+     "plain excess R1(2u) - 2 R1(u)": 260,
+     "conformal excess": -0.5,
+     "T1": {
+      "(1, 1)": 24,
+      "(4, 4)": 24,
+      "(2, 2)": 157,
+      "(3, 3)": 199
+     }
+    },
+    {
+     "K": 3,
+     "runs": [
+      28,
+      2,
+      2,
+      2,
+      640
+     ],
+     "defined": true,
+     "plain excess R1(2u) - 2 R1(u)": 548,
+     "conformal excess": -0.5,
+     "T1": {
+      "(1, 1)": 24,
+      "(4, 4)": 24,
+      "(2, 2)": 277,
+      "(3, 3)": 367
+     }
+    }
+   ]
+  }
+ },
+ "status": "passed"
+}

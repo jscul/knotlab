@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**302 current results** and 5 superseded ones, from 273 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**303 current results** and 5 superseded ones, from 274 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 52 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 20 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 17 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 273 epics with their closures
+- [Epics](#epics): all 274 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -183,6 +183,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-10 · Each eigenvalue's Jordan structure on the cut-open torus is the leading part of one moment matrix** (`CHAIN-ORDERS-20261110-001-D001`).
   At sides 2^m each eigenvalue's Jordan blocks on the cut-open torus are the partial multiplicities of one explicit moment matrix, whose reduction to the eigenvectors has the leading part u⁻¹Y^k L(u²/Y) at every eigenvalue to side 256 (computed). Its leading matrix is invertible for every k (proved), so this is the whole chain lemma 2k − 1 − 4j; its bottom three orders are proved.
   [proof P001](proofs/CHAIN-ORDERS-20261110-001A/CHAIN-ORDERS-20261110-001A-P001_the_reduced_form_at_every_order/proof.md), [epic closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · A growing plane reads its original rings' taxicab distance in conformal time, up to a constant** (`CONF-METRIC-20261110-001-D001`).
+  For every doubling schedule and every size, counting a lag after k doublings as 2^-k, the first arrival from one original ring to another is 4g times their taxicab distance up to an additive constant, so the round trip is a metric up to 42g + 4. In plain lags the excess grows without bound.
+  [proof P001](proofs/CONF-METRIC-20261110-001A/CONF-METRIC-20261110-001A-P001_a_growing_plane_reads_taxicab_distance_in_conformal_time/proof.md), [epic closure](proofs/CONF-METRIC-20261110-001Z/CONF-METRIC-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · A grown plane that stops reads the fixed torus's distances** (`GROW-STOP-20261110-001-D001`).
   A network that splits every ring in four at every lag for k lags and then stops reads, for every ring and every reading, freezes included, exactly what the fixed torus of the grown size reads, with its original rings 2^k ring steps apart per original step. Schedules whose rings heard each other before the stop do not (computed).
   [proof P001](proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/proof.md), [epic closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md)
@@ -1280,6 +1283,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Reading the class, not the bit (`CLASS-READ-20261110-001`) | [closure](proofs/CLASS-READ-20261110-001Z/CLASS-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CLASS-READ-20261110-001/) |
 | 2026-11-10 | The co-distance-3 cancellation (`CODIST-THREE-20261110-001`) | [closure](proofs/CODIST-THREE-20261110-001Z/CODIST-THREE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CODIST-THREE-20261110-001/) |
 | 2026-11-10 | Which functions a composite computes (`COMPOSITE-FN-20261110-001`) | [closure](proofs/COMPOSITE-FN-20261110-001Z/COMPOSITE-FN-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COMPOSITE-FN-20261110-001/) |
+| 2026-11-10 | The conformal metric as a theorem (`CONF-METRIC-20261110-001`) | [closure](proofs/CONF-METRIC-20261110-001Z/CONF-METRIC-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CONF-METRIC-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
 | 2026-11-10 | Why crossing breaks balance (`CROSS-WHY-20261110-001`) | [closure](proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-WHY-20261110-001/) |

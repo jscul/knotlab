@@ -128,6 +128,8 @@ None to published claims. The referee's findings were in unpublished drafts and 
 
 **Corrections:** none. **Goals:** a G5 checkpoint (capability gained); B59 rated again; sub-goal B137 and backlog B138, B139 added.
 **Assumptions:** none added.
+**Basket:** B137 (3/3, 1/3), B74 (3/3, 1/3), B66 (2/3, 3/3); none taken, because #1 (B138) is the cheaper route toward B137 and waits for
+the coordinator's go-ahead.
 
 - **What the attempt leaves open.** The count (★) at every power of two, the return law as a theorem, and full reach at any infinite
   family of other sides.
@@ -155,3 +157,32 @@ None to published claims. The referee's findings were in unpublished drafts and 
    6.4n steps everywhere to 130, but no rule for the certifying times is known.
 
 **Recommendation.** Continue with #1 once the coordinator gives the go-ahead; it is the cheapest route with a definite outcome toward #2.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 21:59 UTC and copied here verbatim.
+
+The full-reach theorem is still unproved, but its failing half now rests on one even walk count, with the reduction proved and refereed. If the contact next to a corner never reaches the point half a side away just below the diagonal, a contact just above it never reads the corner's ring, so full reach fails. On half the contacts that is a grid walk with a conveyor belt: the bottom row only moves right and the top row only left. The count vanishes at every power of two from 8 to 128. The spectrum turned out not to be needed.
+
+A reflection that the box's own mirrors hide is a true symmetry of the walk. Mod 2 it cancels everything except excursions above the diagonal that reach the left or top wall. The corner's return series is exactly 1/(1 + trace polynomial of GF(2n)), which is the quadrant's Catalan pattern folded modulo 2n − 1. The census confirms full reach at every other side up to 130. The independent referee found one false edge-case sentence, one lemma stated too broadly and a few missing checks; all were fixed before commit.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: both halves of full reach | **Status:** Partially successful | Failing half reduced by proof to one even walk count, computed to 128; census to 130; neither half proved |
+| Local direction: the corner count | Continue | One explicit count, placed by a proved reflection lemma, with an exact return law beside it |
+| Broader exploration: the spectral route (G5) | Known alternatives | The failure doesn't need the collapse; B73 and B74 stay parked |
+| Long-term goal: G5 Dynamics | Capability gained | Why powers of two fail is one walk count from a corner, and GF(2n)'s trace shows in its returns |
+
+**Next step:** Continue, selected #1, awaiting the coordinator's go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The corner return law as a theorem (B138) | 2/3 | 2/3 | Prove the half-strip case by a reflection, then the box's folding → a proof, or where the two far walls interact | Selected · awaiting go-ahead |
+| 2 | The corner count at every power of two (B137) | 3/3 | 1/3 | Wall-reaching excursions in closed form at 8, 16, 32 → a proof of the failing half, or no pattern | Alternative |
+| 3 | The single particle behind the corner (B59) | 3/3 | 1/3 | An n-state operator with the corner's return series, tested against the cone's Jordan data → the mechanism, or none | Alternative |
+| 4 | A short-time certificate for the other half (B139) | 2/3 | 1/3 | Odd counts within 6.4n for every contact and ring, sides to 40 → a rule, or sides with none | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained), no goal change. **Assumptions:** none added.
+**Basket:** B137 (3/3, 1/3), B74 (3/3, 1/3), B66 (2/3, 3/3); none taken, because #1 (B138) is the cheaper route toward B137 and waits for your go-ahead.
+
+Nothing here comes near the publication hold. Commits: 03bd5937b (pre-registration), 69811f0ea (epic), 36da8155f (goals and intuition), plus tracking. The census (REACH-HALVES-B2) passed and needs your sign-off.

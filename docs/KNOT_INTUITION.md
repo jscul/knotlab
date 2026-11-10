@@ -2470,8 +2470,20 @@ So network holes come in two kinds:
    - **What the law adds to the board.** Scale and clock (2g lags per ring step, and the expansion), bounded offsets (rule 60 reads
      leftward), and a binary plain reading from Pascal's triangle mod 2. The coarse shape, taxicab, is the drawn board's; roundness
      would have to come from the board.
-   - **Next (selected, awaiting a go-ahead).** The plain reading's power-of-two law as a theorem
+   - **Next (taken instead: readings on other boards, next entry).** The plain reading's power-of-two law as a theorem
      ([decision note](../research/ROUND-READ-20261110-001/round_read.md)).
+
+   **2026-11-10: the reading is the board's** (`BOARD-READ-20261110-001`).
+   - **The question.** Does any drawn board make the route reading rounder than its own graph distance, or is the reading always the
+     board's graph metric up to a constant?
+   - **Always a polygon (proved).** On every periodic board, the route reading is, up to a constant, a norm whose unit ball is the
+     polygon of its cycles' displacement per length: never round. This is a classical fact about periodic graphs, applied here.
+   - **The board's own polygon (computed).** On the square, triangular, honeycomb and kagome boards, at every g read, the route reading
+     is the board's graph distance times g·d/2, d the ring degree: a route crosses a ring by going half way round it, on average over
+     its turns.
+   - **The growth line's verdict.** A plane of rings grown by the doubling law reads, in its own clock, the drawn board's distance,
+     scaled, up to a constant; the law adds scale, clock, offsets and a binary plain reading, and no shape. A chosen shape would need the
+     board itself to follow the rules (sub-goal B92) ([decision note](../research/BOARD-READ-20261110-001/board_read.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

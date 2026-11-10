@@ -1278,6 +1278,11 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Sharpened by `BOARD-READ-20261110-001`: on every periodic board the route reading is a polygon norm up to a constant
+    (proved), and on the square, triangular, honeycomb and kagome boards it is the board's own graph distance times g·d/2 (computed),
+    so under these laws the dynamics reads the declared board's distance, scaled, and adds no shape of its own. The growth line's
+    question 9 thus rests on this entry: a chosen shape needs the board to be part of the law
+    ([readings on other boards](../research/BOARD-READ-20261110-001/board_read.md)).
   - 2026-11-10 · Extended by `LEIBNIZ-BOARDS-20261110-001`
     ([Leibniz boards](../research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)): under Leibniz's rule in full (names whose
     views agree at every radius are one place), an infinitary identity rule, no one-bit Life-like law and not the atom forces the

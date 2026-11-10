@@ -10,9 +10,9 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## The line as it stands (updated 2026-11-10, after `COMPOSITE-FN-20261110-001`)
+## The line as it stands (updated 2026-11-10, after `NOT-INSIDE-20261110-001`)
 
-Sections 1 to 8 are the note as written for B95. Four epics since then change its statement; this section is the current one.
+Sections 1 to 8 are the note as written for B95. Nine epics since then change its statement; this section is the current one.
 
 **Proved by hand.**
 - **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
@@ -28,6 +28,18 @@ Sections 1 to 8 are the note as written for B95. Four epics since then change it
   this, so over every host built from knot spheres and class-forced lattice tori a composite computes exactly the AND.
 - **Parallel points** (`COMPOSITE-FN-20261110-001C`). Two disturbances combine in every order, ending at the floor, when the lines and faces
   touched by each flip and its repair are disjoint.
+- **A uniform growth rule remembers only with Fano** (`NATIVE-ATOM-20261110-001`). Splicing a lattice torus less a point at a violated
+  line, with one sign pattern on every line, grows an atom that holds the dissonance only for the Fano torus with a constant pattern;
+  every other class-forced atom grows transparent (from `UNIFORM-FANO-20261107-001`).
+- **Two kinds of layer** (`NAME-LAYERS-20261110-001`). Through a three-edge cut a lower level's contradiction becomes the upper level's
+  constraint; through a parity name it cannot, and each level keeps its own.
+- **No negation from outside** (`GATES-20261110-001`). An unsatisfiable component makes the whole network unsatisfiable, and a cut leaf
+  read only from outside is never negated.
+- **Every reading of the stored classes is monotone** (`NOT-INSIDE-20261110-001`, theorem M). If a network's reading depends only on
+  the stored classes, and not on which signing of a class learning happened to leave, it is non-decreasing in each acting bit and
+  cannot tell two non-acting classes apart: where a network allows one signing, it allows another of a class the leaf lets through at
+  least as much, once the leaf's inner points are flipped where the completions differ. So the layered memory reads its stored bits
+  through AND, OR and their monotone combinations, never through NOT.
 
 **Computed.**
 - Freeness of all 157 lattice-torus types to 30 points (thin tori of even index to 40); the class-forced ones are the Fano torus and the thin
@@ -36,6 +48,13 @@ Sections 1 to 8 are the note as written for B95. Four epics since then change it
 - Writing and returning addresses: with thin leaves, 18 of 18, 6 of 6 and 48 of 48 held. With Fano leaves the two-level result landed
   between its marks twice (5 of 6, 43 of 48), every miss an inexact search; every exact write held.
 - Disturbances in different composites combined in every order, 320 of 320; nearby ones mostly cancel.
+- Gates: 43,091 networks of cuts and names read AND, OR, single bits and constants, never NOT (`GATES-20261110-001`). A NOT exists only
+  in a fixed frame: with one signing fixed per class, explicit networks read NOT a₁ for three cut leaves, and another signing of the
+  same class switches it off (`NOT-INSIDE-20261110-001`, census N).
+- **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
+  one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
+  (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
+  written, not the class.
 
 **Failed as frozen, stated plainly.**
 - N2 (`NEST-ATOMS-20261110-001`) failed at all 102 removed points inside a leaf: a leaf cut open by the removed point has no role. The
@@ -45,8 +64,9 @@ Sections 1 to 8 are the note as written for B95. Four epics since then change it
   of 1,200 fresh pairs; it is corrected to disjoint supports (`docs/CORRECTIONS.md`, Narrowing).
 - The search for a host outside the proved class found none: seven branched covers had no unsatisfiable class at all.
 
-**Open.** Whether every host is critical (B115); which atom a growth law can grow without design (B106); capacity (B98); the writing
-search's stopping rule (B113).
+**Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether a learner that sees
+only its own dissonance and the address asked for can write (B119, under way); and whether learning could keep a fixed frame, which would
+make a frame-level NOT a reading of what was written (B126). B106 is answered above.
 
 ## 1. Where it started
 

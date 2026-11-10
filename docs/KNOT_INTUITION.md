@@ -2457,8 +2457,21 @@ So network holes come in two kinds:
    - **The 4g·2^k law follows in a line** from the two hops per ring step: it was a consequence of the construction, read by the census.
    - **Reading.** The first proved statement in this line that a uniform local law, growing, reads a distance between its original
      rings in its own clock at every size. It is coarse, the board is still drawn (A51), and the distance read is the drawn board's.
-   - **Next (proposed).** Sharp constants: the readings stay within 6 below and 4g above, the bounds are 6g and 9g + 2
-     ([decision note](../research/CONF-METRIC-20261110-001/conf_metric.md)).
+   - **Next (taken instead: B108, next entry).** Sharp constants: the readings stay within 6 below and 4g above, the bounds are 6g and
+     9g + 2 ([decision note](../research/CONF-METRIC-20261110-001/conf_metric.md)).
+
+   **2026-11-10: growth does not round the reading** (`ROUND-READ-20261110-001`).
+   - **The question.** Backlog B108: does the growing plane read a distance rounder than its board's taxicab one, the diagonal ring
+     heard earlier than the axis ring at the same taxicab distance by a margin that grows?
+   - **No (exploratory, exact, frozen census).** On 113 schedules, to distance 20, route readings stay taxicab (the diagonal and the axis
+     within 9 conformal lags), as the theorem requires. Plain hearing is less round still: on the first stage the diagonal ring at
+     distance d is heard only when the axis ring at the next power of two would be, on time exactly at d = 2, 4, 8, 16; growth perturbs
+     this but keeps it square.
+   - **What the law adds to the board.** Scale and clock (2g lags per ring step, and the expansion), bounded offsets (rule 60 reads
+     leftward), and a binary plain reading from Pascal's triangle mod 2. The coarse shape, taxicab, is the drawn board's; roundness
+     would have to come from the board.
+   - **Next (selected, awaiting a go-ahead).** The plain reading's power-of-two law as a theorem
+     ([decision note](../research/ROUND-READ-20261110-001/round_read.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

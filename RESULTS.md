@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**293 current results** and 5 superseded ones, from 260 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**294 current results** and 5 superseded ones, from 260 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 10 results
+- [Other results](#other-results): 11 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 260 epics with their closures
 
@@ -990,6 +990,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · The leftover dissonance lives in whichever atom still acts as its line** (`LAW-HOLDS-20261110-001-D001`).
   On every genus-2 space tested, with two Fano atoms grown into a knot sphere, the floor unit can sit only inside an atom that acts as its line or at its junctions, decided by SAT over every state. Which atom holds the leftover dissonance is therefore set by the law's class, what was learned, and not by the state.
   [proof P001](proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/proof.md), [epic closure](proofs/LAW-HOLDS-20261110-001Z/LAW-HOLDS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · In the layered memory, points apart move independently in every order, and floor units sit where the rule says** (`MANY-POINTS-20261110-001-D001`).
+  In the two-level space no region holds three floor units and an acting composite holds exactly two, one per leaf (proved by hand, checked exactly). Disturbances in different composites learned away independently in every order with the address kept (320 of 320 pairs, computed), while points sharing a line interacted, mostly cancelling.
+  [proof P001](proofs/MANY-POINTS-20261110-001A/MANY-POINTS-20261110-001A-P001_where_units_sit_together/proof.md), [proof P001](proofs/MANY-POINTS-20261110-001B/MANY-POINTS-20261110-001B-P001_two_points_at_once/proof.md), [proof P001](proofs/MANY-POINTS-20261110-001C/MANY-POINTS-20261110-001C-P001_writing_with_more_addresses/proof.md), [epic closure](proofs/MANY-POINTS-20261110-001Z/MANY-POINTS-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · A group of atoms behind a three-edge cut is an atom of the next level, reading as the AND of its atoms** (`NEST-ATOMS-20261110-001-D001`).
   A knot sphere with a flat state at every line, carrying atoms that each act in exactly one class and are free, is again such an atom: less any point it acts as its replaced line exactly where every atom inside acts, at any depth, and a composite of genus g holds g - 1 units, g where it acts (proved by hand). Computed: the AND at 274 removed points, 576 classes exact, 11 of 12 two-level addresses held.
   [proof P001](proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/proof.md), [proof P001](proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/proof.md), [proof P001](proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/proof.md), [epic closure](proofs/NEST-ATOMS-20261110-001Z/NEST-ATOMS-20261110-001Z-P001_epic_closure/proof.md)
@@ -1263,7 +1266,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A note on the learning line (`LEARN-NOTE-20261110-001`) | [closure](proofs/LEARN-NOTE-20261110-001Z/LEARN-NOTE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-NOTE-20261110-001/) |
 | 2026-11-10 | Learning at a rise (`LEARN-RISE-20261110-001`) | [closure](proofs/LEARN-RISE-20261110-001Z/LEARN-RISE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-RISE-20261110-001/) |
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
-| 2026-11-10 | Many points at once (`MANY-POINTS-20261110-001`) | — | [folder](research/MANY-POINTS-20261110-001/) |
+| 2026-11-10 | Many points at once (`MANY-POINTS-20261110-001`) | [closure](proofs/MANY-POINTS-20261110-001Z/MANY-POINTS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MANY-POINTS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 | 2026-11-10 | Atoms within atoms (`NEST-ATOMS-20261110-001`) | [closure](proofs/NEST-ATOMS-20261110-001Z/NEST-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NEST-ATOMS-20261110-001/) |

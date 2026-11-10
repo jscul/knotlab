@@ -1,0 +1,70 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/MANY-POINTS-20261110-001/preregistration.md": "bd3f6cc795034e8586a4973a1664ffce649e3f92fb9adfbfefcde69cfcf95ae7"
+   }
+  },
+  "1 A1 (proved; exact check): no distribution the theorem excludes is realized": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "leaf": "Fano",
+      "classes": 256,
+      "(composites acting, distributions realized)": {
+       "((False, False), ((0, 1, 2), (0, 2, 1), (1, 1, 1)))": 225,
+       "((False, True), ((0, 1, 2),))": 15,
+       "((True, False), ((0, 2, 1),))": 15,
+       "((True, True), ())": 1
+      },
+      "A1 violations": [],
+      "A2 misses": 0,
+      "A2 miss examples": [],
+      "A3 violations": [],
+      "A4: where two units of a non-acting composite can sit (part: units), with how many class-composite cases": {
+       "('leaf (0, 0): 1', 'leaf (0, 0): 2', 'leaf (0, 1): 1', 'sphere part: 1')": 45,
+       "('leaf (1, 0): 1', 'leaf (1, 0): 2', 'leaf (1, 1): 1', 'sphere part: 1')": 45,
+       "('leaf (1, 0): 1', 'leaf (1, 1): 1', 'leaf (1, 1): 2', 'sphere part: 1')": 45,
+       "('leaf (1, 0): 1', 'leaf (1, 0): 2', 'leaf (1, 1): 1', 'leaf (1, 1): 2', 'sphere part: 1', 'sphere part: 2')": 135,
+       "('leaf (0, 0): 1', 'leaf (0, 1): 1', 'leaf (0, 1): 2', 'sphere part: 1')": 45,
+       "('leaf (0, 0): 1', 'leaf (0, 0): 2', 'leaf (0, 1): 1', 'leaf (0, 1): 2', 'sphere part: 1', 'sphere part: 2')": 135
+      }
+     },
+     {
+      "leaf": "thin",
+      "classes": 256,
+      "(composites acting, distributions realized)": {
+       "((False, False), ((0, 1, 2), (0, 2, 1), (1, 1, 1)))": 225,
+       "((False, True), ((0, 1, 2),))": 15,
+       "((True, False), ((0, 2, 1),))": 15,
+       "((True, True), ())": 1
+      },
+      "A1 violations": [],
+      "A2 misses": 0,
+      "A2 miss examples": [],
+      "A3 violations": [],
+      "A4: where two units of a non-acting composite can sit (part: units), with how many class-composite cases": {
+       "('leaf (0, 0): 1', 'leaf (0, 0): 2', 'leaf (0, 1): 1', 'sphere part: 1')": 45,
+       "('leaf (1, 0): 1', 'leaf (1, 0): 2', 'leaf (1, 1): 1', 'sphere part: 1')": 45,
+       "('leaf (1, 0): 1', 'leaf (1, 1): 1', 'leaf (1, 1): 2', 'sphere part: 1')": 45,
+       "('leaf (1, 0): 1', 'leaf (1, 0): 2', 'leaf (1, 1): 1', 'leaf (1, 1): 2', 'sphere part: 1', 'sphere part: 2')": 135,
+       "('leaf (0, 0): 1', 'leaf (0, 1): 1', 'leaf (0, 1): 2', 'sphere part: 1')": 45,
+       "('leaf (0, 0): 1', 'leaf (0, 0): 2', 'leaf (0, 1): 1', 'leaf (0, 1): 2', 'sphere part: 1', 'sphere part: 2')": 135
+      }
+     }
+    ]
+   }
+  },
+  "predictions": {
+   "A1 held": true,
+   "A2 held": true,
+   "A3 held": true
+  },
+  "seconds": 191.7
+ }
+}

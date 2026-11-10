@@ -57,7 +57,7 @@ would prove the whole lemma, were not reached.
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| Conclusion 5 (sides 8 to 64) | side 128, nine values of a with k = 1, 2, 3, 4, 6, 7, 8, 11 and 15 | stress test pending (JORDAN-CHAINS-S1, running) |
+| Conclusion 5 (sides 8 to 64) | side 128, nine values of a with k = 1, 2, 3, 4, 6, 7, 8, 11 and 15 | passed: at all nine, G·Y^j heads a chain of exactly 2k − 1 − 4j and these are the blocks, up to [29, 25, 21, 17, 13, 9, 5, 1] at the eigenvalue 1 (k = 15) (JORDAN-CHAINS-S1, 1,652 s) |
 | Conclusion 5 at side 64 | registered before it was run | JORDAN-CHAINS-A1 |
 | Conclusions 1 to 4 (proved) | — | proofs by hand; checks at sides 4 to 64 |
 

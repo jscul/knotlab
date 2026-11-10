@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "artifact": "LEADING-FORM-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (CHAIN-ORDERS-20261110-001A's manifest and library)": {
+   "pass": true,
+   "info": {
+    "proofs/CHAIN-ORDERS-20261110-001A/CHAIN-ORDERS-20261110-001A-P001_the_reduced_form_at_every_order/manifest.json": "e1e742b19c5d08c8fb4866409289c583cbfaa4834bff60e2e3e0a80f716ecbd6",
+    "proofs/CHAIN-ORDERS-20261110-001A/CHAIN-ORDERS-20261110-001A-P001_the_reduced_form_at_every_order/orders_lib.py": "6a389eae7827fb5b88f0b00f17145d03afbe8014ebcf07492d280a2a2e7921a0"
+   }
+  },
+  "1 Theorem 1: G Z_0 F = (k + 1) W(G, F) mod k^h on a basis of V, and G(1) = b G(0) != 0, every a, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "basis mismatches": 0,
+    "eigenvalues with G(0) = 0 or G(1) != b G(0)": 0
+   }
+  },
+  "2 Theorems 2 and 3(a): W(G, phi_2) = N Y^i (1 + L(Y)) + a^2 G(0)^2 [i = 0] Y^(h-1) mod Y^h, of degree < h - J, every a and 2i < k - 1, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "second chain vectors checked": 1094,
+    "mismatches": 0
+   }
+  },
+  "3 Theorem 4: a second solution of degree h + k - 1 - 2J with W(G, G') = c Y^(h-J-1), every a with k >= 2, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "eigenvalues with k >= 2": 382,
+    "failures": 0
+   }
+  },
+  "4 Theorem 5: c Y^(h-J-1) F = W(G', F) G + W(G, F) G' on a basis of V, every a with k >= 2, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "basis mismatches": 0
+   }
+  },
+  "5 computed: at co-distance 3 the pure part of the l^5 coefficient is 1 and the corrections add 1, every a, sides 16 to 64": {
+   "pass": true,
+   "info": {
+    "cases": 129,
+    "pure part 1": 129,
+    "corrections sum to 1": 129,
+    "coefficient 0": 129,
+    "eta self-pairing alone 1": 97
+   }
+  }
+ },
+ "status": "passed"
+}

@@ -13,8 +13,8 @@
   "proof": "LEADING-FORM-20261110-001B-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Does the reduction split when the index halves (frozen side check)",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, frozen before any run (sub-goal B91's first step). At every eigenvalue with even k = 2c >= 4 for sides 16, 32 and 64: the reduction M of the family to ker X_b with the monomial complement W_0 and with a complement W' containing k G Y^j (2j < k - 1), each in two parametrizations (Zhat in l = u/(1 + u), and Z(a + au)/(1 + u) in u). Test S1: every entry (i, j) with i + j odd vanishes modulo the parameter to the power 2k; test S2: every entry with i + j even has only odd powers of the parameter below 2k. B91's strong form predicts S1 and S2 for at least one of the four variants at every tested eigenvalue. Decision rule: if a variant passes everywhere, the epic considers the induction on k and says which route it takes and why; otherwise B91's strong form is recorded as refuted, the halving of the leading matrix (CHAIN-ORDERS-20261110-001A, Theorem 3) stands, and the epic proceeds with ticket A. Disclosed: at k = 6, side 32, a = alpha^23, the W_0 entry (0, 1) has valuation 10 < 12, so S1 already fails for W_0 there (valuations do not depend on the parametrization).",
+  "status": "Proved",
+  "claim": "Run as frozen 2026-11-10 (pre-registered in f8e8b996c, sub-goal B91's first step): at the 61 eigenvalues with even k = 2c >= 4 for sides 16, 32 and 64, the reduction of the family to ker X_b (G monic) with the monomial complement or with the complement containing k G Y^j, in the parameter l of Zhat or u of Z(a + au)/(1 + u), has a nonzero entry with i + j odd below order 2k at every eigenvalue in every variant (S1 fails everywhere), so B91's strong form (the reduction at k = 2c splits into the parameter times the reductions at c and c - 1 with the parameter squared) is refuted at these sides; S2 (only odd powers on the parity-diagonal entries) holds at 33 of 61 eigenvalues for the monomial complement in u. The halving of the leading matrix (CHAIN-ORDERS-20261110-001A, Theorem 3) stands.",
   "dependencies": [
     "CHAIN-ORDERS-20261110-001A"
   ],
@@ -49,9 +49,7 @@
     "check": "proofs/LEADING-FORM-20261110-001B/LEADING-FORM-20261110-001B-P001_does_the_reduction_split_when_the_index_halves/check.py",
     "directory": "proofs/LEADING-FORM-20261110-001B/LEADING-FORM-20261110-001B-P001_does_the_reduction_split_when_the_index_halves"
   },
-  "remaining_obligations": [
-    "the frozen test and its decision"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -86,7 +84,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10 (sub-goals B73 and B91).",
-    "status": "pre-registered; frozen before any run",
-    "novelty": "to be assessed"
+    "status": "exact finite computation, run once as frozen",
+    "novelty": "not applicable: a frozen side check"
   }
 }

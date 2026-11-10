@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LONG-RINGS-20261110-001A-E001",
+  "ticket": "LONG-RINGS-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Backlog B46: the square torus's law-(12, 12) automaton reads its distance plainly only when grouped into rings of linear size (REROUTE-20261109-001B, Theorem 3), as its two line networks are. Can its cells be grouped into long rings running in two directions, on time with ring balls growing like a plane's? Among the periodic groupings, which are on time, and what do their rings and ring graphs look like?",
+  "public_inputs": {
+    "library": "reroute_lib.py of REROUTE-20261109-001B-P001.",
+    "run": "run.py in this folder, 6 worker processes.",
+    "family": "Every grouping of the n x n square torus invariant under a sublattice <(a, 0), (b, c)> (Hermite normal form) of index ac at most 8 containing n Z^2, for n = 24 and 16, and of index at most 6 for n = 12: each re-routes H(p) and V(p) by p mod the sublattice, 4^(ac) patterns per lattice.",
+    "readings": "Whether the pattern is a network; the plain first need of every ring at every target of one fundamental domain, exact (shortest-route parities); for on-time groupings, every ring's homology class, the number of rings and their sizes, and the ring graph's balls of radius 0 to 10 from one ring."
+  },
+  "forbidden_inputs": [
+    "Changing the roster or the hypotheses after seeing results",
+    "Dropping patterns"
+  ],
+  "primary_observable": "The on-time groupings, with their rings' homology classes up to sign (H1) and whether their ring graph is a cycle (H2).",
+  "cheapest_meaningful_control": "The two line networks (re-routed at every horizontal or every vertical contact) are periodic under the full lattice (index 1) and on time (REROUTE-20261109-001B, Theorem 2).",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The summary in result.json.",
+  "decision_or_followup_rule": "Frozen hypotheses. H1: every on-time grouping read is a family of parallel lines: every ring non-contractible and all of one homology class up to sign. H2: every on-time grouping read has a ring graph that is a cycle (balls of 2r + 1 rings until all are reached). If both hold, the periodic groupings give no plane of long rings: what reads plainly is a family of lines, of several slopes. If H1 fails with an on-time grouping of crossing rings, its ring graph and balls are read; growth faster than linear would be a plane of long rings.",
+  "stop_rule": "Stop when every pattern of the roster has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: periodic groupings with period cells of at most 8 contacts' worth only; non-periodic groupings are not read.",
+    "Law (12, 12) on the square torus only; two-time knots only (A30)."
+  ],
+  "feasibility_disclosure": "Before freezing, a pilot (scratch, not kept) read the groupings periodic under rectangular sublattices a x b with ab at most 6 on the 12 x 12 torus (1,014 networks, 28 on time, all of them the two line networks), and under the sublattices <(a, 0), (b, c)> with 0 <= b < c of index at most 6 on the 24 x 24 torus (3,157 networks, 68 on time: the axis line networks, 54 times, and families of 24 rings of 96 contacts in the classes (1, 1) and (1, -1) and of 16 rings of 144 in the classes (2, 1) and (1, 2), every one with a cyclic ring graph). That pilot's parametrisation skipped the lattices with b >= c and repeated others; this census uses the Hermite normal form 0 <= b < a, so most lattices of index 4 to 8 are read here for the first time. H1 and H2 were written from the pilot."
+}

@@ -2183,8 +2183,26 @@ So network holes come in two kinds:
    - **Reading.** For the scalar trace, every root lies in GF(2n) in one line, since Tr² + Tr = μ^(2n) + μ; for the matrix version
      that step is what is left. The trace factor itself divides the cone polynomial once with a square left over, at every side to
      128. No lag cutoff was used.
-   - **Next (selected, pending the coordinator).** The roots of the linearized determinant
+   - **Next (selected, taken by `LINEAR-ROOTS-20261109-001`).** The roots of the linearized determinant
      ([decision note](../research/RETURN-DIGITS-20261109-001/return_digits.md)).
+
+   **2026-11-10: the roots of the linearized determinant** (`LINEAR-ROOTS-20261109-001`).
+   - **The question.** Does every root of the cone polynomial lie in GF(2n), and how often does each one occur?
+   - **The multiplicities are Kloosterman sums (computed, exact).** Let K(a) be the sum over x in GF(2n) of (−1)^Tr(x + a/x). Then
+     the eigenvalue 1/a occurs K(a)(K(a) − 2)/8 times, with |K(a)|/4 independent eigenvectors, and not at all when K(a) = 0. In
+     elliptic-curve terms the eigenvalue is the j-invariant of the curve y² + xy = x³ + a, and its multiplicity is (t² − 1)/8 for that
+     curve's trace of Frobenius t. Every eigenvalue matches at sides 4 to 128, and every eigenvector count to side 512.
+   - **Why that would be enough (proved).** A classical identity, the second moment of Kloosterman sums, makes these multiplicities
+     add up to exactly the size of the cone. So if each eigenvalue in GF(2n) occurs at least that often, nothing is left over for
+     eigenvalues outside GF(2n): the collapse would follow.
+   - **Where the sum comes from (proved).** The eigenvectors at each eigenvalue are one explicit kernel; on GF(2n) its multiplier is
+     y^h Tr(b⁴/y) + b²/y^h, the trace of GF(2n) beside a shift, and the shift itself traces the Kloosterman curve
+     Y² + Y = x + c⁻⁴/x.
+   - **Reading.** At sides that are not powers of two the eigenvalues are not even in the field of (2n − 1)-th roots of unity: what
+     makes powers of two special is the arithmetic of elliptic curves over GF(2n). The lower bounds are not proved. No lag cutoff was
+     used.
+   - **Next (selected, pending the coordinator).** Prove the lower bounds, starting from that kernel
+     ([decision note](../research/LINEAR-ROOTS-20261109-001/linear_roots.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

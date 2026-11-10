@@ -101,3 +101,28 @@ Since the epic opened:
 3. **The slope rule.** Payoff 1; Concreteness 3: the families are explicit in `result.json`.
 
 **Recommendation.** Research directions, none selected; directions 1 to 3 go to the backlog for the coordinator to choose.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 01:23 UTC and copied here verbatim.
+
+A plane of long rings (B46) is closed and published (LONG-RINGS-20261110-001). I ran it while the B45 census runs in the background; B45's report follows when that census finishes.
+- **No plane of long rings (pre-registered census, exact).** I read every grouping of the square torus's automaton that is periodic under a sublattice of index up to 8: 2,070,428 patterns on the 24 × 24, 16 × 16 and 12 × 12 tori. Of these, 24,060 are networks and 1,302 read their distance plainly. Every one of those is a family of parallel lines winding round the torus, all in one homology class, and its ring graph is a cycle. Both frozen hypotheses held.
+- **The lines come in many slopes.** Besides the axis lines there are diagonal families of class (1, 1), (1, 2), (1, 3), (1, 5), (1, 7) and (3, 5). Class (p, q) has 2n/(|p|+|q|) rings of 2n(|p|+|q|) contacts. Every line is read the same way, by a single straight route from each target to its nearest contact. Where two directions of lines cross, or a ring closes up, some reading comes late. So under law (12, 12) a plane of rings still needs freezing.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: a plane of long rings | Partially successful | None among the periodic groupings: every on-time one is one family of parallel lines with a cyclic ring graph (census) |
+| Local direction: the square automaton's plain reading | Research directions | A proof for all groupings, and groupings without a period, are open |
+| Broader exploration: G1 with G5 | Known alternatives | Rings the law can see (B45, census running); the even-index mechanism (B30) |
+| Long-term goal: G1 Space from a law | Obstruction learned | Under law (12, 12) a plane's automaton reads plainly only as one family of lines |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Only lines read plainly, proved (B75) | 2/3 | 1/3 | Extend the even box to a ring's bend → a proof that on-time rings never bend at large scale, or the bend it can't handle |
+| 2 | Non-periodic groupings (B76) | 1/3 | 2/3 | Moves that exchange two lines' routing along a stretch → an on-time grouping that isn't lines, or none |
+| 3 | The slope rule (B77) | 1/3 | 3/3 | Build and prove the class (p, q) families with \|p\|+\|q\| dividing 2n → the rule, or the class that fails |
+
+**Corrections:** none. **Goals:** a G1 checkpoint (obstruction learned); B46 taken; B75 to B77 added to the backlog. No direction is rated 3/3, so there are no sub-goals to record. **Assumptions:** none added or changed.
+
+Commits on main: 543d364ab (pre-registration), d1898478b (the epic) and 9298e058b (shared docs). The census took 7 minutes. The stress test one size past (the 32 × 32 torus, LONG-RINGS-S1) is running and will be folded in when it finishes. No direction is selected; your call.

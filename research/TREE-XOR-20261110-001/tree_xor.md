@@ -100,3 +100,25 @@ tree-like Res(⊕) size. **Assumptions:** none added or changed.
 2. **Cutting planes.** As in `COUNT-SYSTEMS-20261110-001`.
 
 **Recommendation.** Research directions, none selected, for the coordinator; B84 is re-rated 2/2 because it now decides both questions.
+
+## Final report as sent
+
+B83 is closed and published. Parities alone can't find the sphere's contradiction quickly: every tree-like Res(⊕) refutation of the count has depth at least c·n^{1/8}/log n. Its size is at least 2^(d − 3), where d is the count's F2 polynomial-calculus degree, so the size question is now a single degree question (B84).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: tree-like Res(⊕) on the count | Partially successful | Depth n^{Ω(1)} proved; size reduced to the F2 polynomial-calculus degree |
+| Local direction: F2 proof systems on the count | Research directions | That degree (B84) now decides both questions |
+| Broader exploration: G3 | Known alternatives | Cutting planes on the count (sub-goal B82) |
+| Long-term goal: G3 Hardness at three places | Obstruction learned | Parity queries can't find the violated line quickly; whether parities can refute it in small size is one degree question |
+
+**Next step:** Research directions, none selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | F2 polynomial calculus on the count (B84) | 2/3 | 2/3 | Exact degree on K_2 and K_3 by linear algebra → growing with k (a size bound), or a low-degree refutation |
+| 2 | Cutting planes on the count (sub-goal B82) | 3/3 | 1/3 | As recorded |
+
+**Corrections:** none. **Goals:** a G3 checkpoint (obstruction learned); B84 re-rated from 2/1 to 2/2. **Assumptions:** none added or changed.
+
+The rings census (B45) ran out of memory with 440 of its 4,002 readings left. I'm finishing those with fewer workers and will report when it's done.

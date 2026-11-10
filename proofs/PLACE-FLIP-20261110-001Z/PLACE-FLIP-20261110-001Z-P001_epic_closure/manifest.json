@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLACE-FLIP-20261110-001Z-P001",
+  "canonical_id": "PLACE-FLIP-20261110-001Z-P001",
+  "kind": "proof",
+  "ticket": "PLACE-FLIP-20261110-001Z",
+  "proof": "PLACE-FLIP-20261110-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of nativeness up to renaming",
+  "status": "Proved",
+  "claim": "Ledger closing PLACE-FLIP-20261110-001: one line per conclusion with its status, novelty and evidence (ticket A, proved: renamings in worlds of finite pieces are the changes that keep component types, none changes values alone on trees, the switch flips neighbour distinctions in place, transplants make excluding renamings alone insufficient, cascades and a least fixed point decide value flips on trees; ticket B, refuted: C1 and C2 failed as frozen and were settled by hand, C3 held), with every board-value knot native in place in a world of finite pieces, 26 in a tree world and 58 laws rigid on every tree, A59 confirmed for these knots, A60 added, and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "PLACE-FLIP-20261110-001A",
+    "PLACE-FLIP-20261110-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+    "The decision note or the pre-registration is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "PLACE-FLIP-20261110-001",
+    "epic_path": [
+      "PLACE-FLIP-20261110-001"
+    ],
+    "parents": [
+      "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/manifest.json",
+      "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/result.json",
+      "experiments/PLACE-FLIP-20261110-001B/PLACE-FLIP-20261110-001B-E001_flips_in_place/contract.json",
+      "artifacts/PLACE-FLIP-20261110-001B/PLACE-FLIP-20261110-001B-E001_flips_in_place/flips.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/manifest.json": "6633ecdaca5d1a2132e7805b44c0ca1b86a22afb5fb883d200c28495f2bfc894",
+    "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/result.json": "8d237ea3356a5824dd770f2ed6407be8d69e5b9c9b129b0665cf41ab07aae8ac",
+    "experiments/PLACE-FLIP-20261110-001B/PLACE-FLIP-20261110-001B-E001_flips_in_place/contract.json": "f4f554268faf0fd02bcae19c2548e84a715a8c285538628faeaac65817d767b0",
+    "artifacts/PLACE-FLIP-20261110-001B/PLACE-FLIP-20261110-001B-E001_flips_in_place/flips.json": "cfd6344e90d6a0d1d414e8b4f61e10c8edc611356b7e3862b5376f69f0cb136f"
+  },
+  "paths": {
+    "manifest": "proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure/result.json",
+    "check": "proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

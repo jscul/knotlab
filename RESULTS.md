@@ -1330,7 +1330,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Negation inside a cut leaf (`NOT-INSIDE-20261110-001`) | [closure](proofs/NOT-INSIDE-20261110-001Z/NOT-INSIDE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NOT-INSIDE-20261110-001/) |
 | 2026-11-10 | Other atoms, a challenge of A48 (`OTHER-ATOMS-20261110-001`) | [closure](proofs/OTHER-ATOMS-20261110-001Z/OTHER-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/OTHER-ATOMS-20261110-001/) |
 | 2026-11-10 | F2 polynomial calculus on the sphere's count (`PC-COUNT-20261110-001`) | [closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/PC-COUNT-20261110-001/) |
-| 2026-11-10 | Nativeness up to renaming (`PLACE-FLIP-20261110-001`) | — | [folder](research/PLACE-FLIP-20261110-001/) |
+| 2026-11-10 | Nativeness up to renaming (`PLACE-FLIP-20261110-001`) | [closure](proofs/PLACE-FLIP-20261110-001Z/PLACE-FLIP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/PLACE-FLIP-20261110-001/) |
 | 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |
 | 2026-11-10 | Reading distance while growing (`READ-GROW-20261110-001`) | [closure](proofs/READ-GROW-20261110-001Z/READ-GROW-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-GROW-20261110-001/) |
 | 2026-11-10 | Res(xor) beyond tree-like on the sphere's count (`RES-XOR-COUNT-20261110-001`) | [closure](proofs/RES-XOR-COUNT-20261110-001Z/RES-XOR-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RES-XOR-COUNT-20261110-001/) |

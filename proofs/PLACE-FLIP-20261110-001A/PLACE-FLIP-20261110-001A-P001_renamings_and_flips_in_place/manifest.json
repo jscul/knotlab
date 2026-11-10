@@ -13,8 +13,8 @@
   "proof": "PLACE-FLIP-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Renamings, transplants and flips in place",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before any run. Over abstract names, to be proved: (L1) in a world of finite components a finite change is a renaming exactly when it keeps the multiset of isomorphism types of the components it touches, so a change of values on one copy of (B, c) is a renaming exactly when the new colouring is an automorphic image of c; (L2) in a world of infinite trees no change of values alone is a renaming; (L3) the switch flips a neighbour distinction in place when the edge lies on a cycle of a finite component or in a tree world; (L4) transplants: with values and neighbour distinctions changing together, a place can be moved by a finite rewiring that is not a renaming; (L5) cascades: in the laws that never put a 0 beside a 1, and in law 48, no finite change of values alone flips a value in a tree world. Each is proved, refuted, or left with its gap stated.",
+  "status": "Proved",
+  "claim": "Over abstract names, with count laws of degree four: (L1) in a world of finite components a finite change is a renaming exactly when it keeps the multiset of types of the components it touches, so a change of values on one copy of (B, c) is a renaming exactly when the new colouring is an automorphic image of c; (L2) on four-regular trees no change of values alone is a renaming; (L3) the switch flips a neighbour distinction in place, in two copies of a finite component (edge on a cycle) and in tree worlds (a partner edge closing a cycle exists in every cover); (L4) transplants: a place can be moved by a finite rewiring that is not a renaming, so excluding renamings alone is not enough and flips are counted in place; (L5) where no allowed state has a mixed edge, and in law 48, no finite change of values flips a value in a world of infinite components; (L6, after the census) least fixed points decide finite value flips in a cover, for one place in some tree world, and for both ends of an edge in some tree world. Checks: all 90 board-value knots native in place in some world of finite pieces (84 frozen witnesses, 6 by hand); on trees 26 native in place in some tree world and 64 in none, 58 laws with no value flippable at all. Read by an independent referee.",
   "dependencies": [
     "BARE-NAMES-20261110-001A"
   ],
@@ -53,9 +53,7 @@
     "check": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/check.py",
     "directory": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place"
   },
-  "remaining_obligations": [
-    "L1 to L5, or the record of which fails and why"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -89,8 +87,8 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10; read before publication by an independent referee (a fresh Claude agent given only the proof), whose suggested joint recursion was then run.",
+    "status": "proved by hand; finite checks in check.py passed (result.json); read before publication by an independent referee, L1 to L6 sound, fixes made",
+    "novelty": "Elementary consequences of standard facts (covering graphs, least fixed points, the 2-switch); folklore risk high."
   }
 }

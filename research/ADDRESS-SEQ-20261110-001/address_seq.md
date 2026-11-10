@@ -41,3 +41,27 @@ None.
 - **#1** is next by the coordinator's order.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B88 taken. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:40 UTC).
+
+**B88 done: the learned address is a rewritable register.** I wrote 90 addresses one after another on 14 spaces: three atoms on K_3, K_4 and, one size up, K_5; four atoms on K_3. Each write was followed by a random disturbance. Every write landed and every address was held. It never fell back to the previous address, so writing leaves no trace of the old one. The 17 runs from B86 that didn't settle back split into two kinds. In 7, a learning step during the return wound through an atom's handle and erased that atom's bit, exactly as the rule allows. The other 10 got stuck one unit above the floor with no downhill move. All computed on small cases.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: addresses in sequence (B88) | **Status:** Successful | 90 of 90 written and held; the 17 explained |
+| Local direction: a learned memory in atoms | Continue | rewritable, at K_5 too |
+| Broader exploration: learning program | Known alternatives | the proof; capacity |
+| Long-term goal: G15 | Capability gained | a rewritable learned register |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A proof of the atom rule (B87) | 2/3 — Substantial | 2/3 — Testable | per-atom role + local check → proof for every knot sphere, or a counterexample | Selected · started |
+| 2 | Why the trap holds (B78) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+On B87's effort: it looks tractable without max effort. Each atom's role seems to depend only on its own handle, and "an acting atom holds a unit" only on a small neighbourhood of the atom. So the proof should reduce to a handful of finite local checks plus a decomposition argument. I'll say so if it turns out harder.
+
+**Corrections:** none. **Goals:** G15 checkpoint; B88 taken. **Assumptions:** none new.

@@ -10,9 +10,9 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## The line as it stands (updated 2026-11-10, after `NOT-INSIDE-20261110-001`)
+## The line as it stands (updated 2026-11-10, after `NATIVE-WRITE-20261110-001`)
 
-Sections 1 to 8 are the note as written for B95. Nine epics since then change its statement; this section is the current one.
+Sections 1 to 8 are the note as written for B95. Ten epics since then change its statement; this section is the current one.
 
 **Proved by hand.**
 - **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
@@ -40,6 +40,8 @@ Sections 1 to 8 are the note as written for B95. Nine epics since then change it
   cannot tell two non-acting classes apart: where a network allows one signing, it allows another of a class the leaf lets through at
   least as much, once the leaf's inner points are flipped where the completions differ. So the layered memory reads its stored bits
   through AND, OR and their monotone combinations, never through NOT.
+- **A stored 1 cannot be walked away** (`NATIVE-WRITE-20261110-001`, P1, from lemma 3). An acting atom's region holds dissonance in every
+  state, so a learner that lets its state wander on the floor and sees the dissonance in an atom vanish knows the atom does not act.
 
 **Computed.**
 - Freeness of all 157 lattice-torus types to 30 points (thin tori of even index to 40); the class-forced ones are the Fano torus and the thin
@@ -51,6 +53,10 @@ Sections 1 to 8 are the note as written for B95. Nine epics since then change it
 - Gates: 43,091 networks of cuts and names read AND, OR, single bits and constants, never NOT (`GATES-20261110-001`). A NOT exists only
   in a fixed frame: with one signing fixed per class, explicit networks read NOT a₁ for three cut leaves, and another signing of the
   same class switches it off (`NOT-INSIDE-20261110-001`, census N).
+- Native writing (`NATIVE-WRITE-20261110-001`, frozen): told only the address (a bit per atom, each atom given by its region) and seeing
+  only its own dissonance, a learner that tests its memory by that walk and learns only on atoms whose answer is wrong wrote 100 of 100
+  addresses exactly on five spaces of up to six atoms, and each held; read at one instant instead, 84 of 100 stopped inexactly. An
+  atom acts exactly when its own constraints cannot clear its region, on every class of seven spaces (exact).
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -64,9 +70,10 @@ Sections 1 to 8 are the note as written for B95. Nine epics since then change it
   of 1,200 fresh pairs; it is corrected to disjoint supports (`docs/CORRECTIONS.md`, Narrowing).
 - The search for a host outside the proved class found none: seven branched covers had no unsatisfiable class at all.
 
-**Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether a learner that sees
-only its own dissonance and the address asked for can write (B119, under way); and whether learning could keep a fixed frame, which would
-make a frame-level NOT a reading of what was written (B126). B106 is answered above.
+**Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
+writer's walk never errs when long enough (B130); writing with only the ones named (B131); learning from examples (B120); and whether
+learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106 and B119 are answered
+above.
 
 ## 1. Where it started
 

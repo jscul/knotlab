@@ -1592,8 +1592,22 @@ So network holes come in two kinds:
      same winding another way and it stops. The earlier readings against two landmarks were readings of that fixed way of writing.
    - **Reading.** The layered memory can say "all of these" and "any of these" about what it stores, and nothing more. To say "not this"
      it has to know how each pattern was wound, not only which way it ended up, and that is a record of the path learning took.
-   - **Next.** Native writing (backlog B119), with a frame that learning itself fixes as a further question (backlog B126)
-     ([decision note](../research/NOT-INSIDE-20261110-001/not_inside.md)).
+   - **Next (taken by `NATIVE-WRITE-20261110-001`, below).** Native writing (backlog B119), with a frame that learning itself fixes as a
+     further question (backlog B126) ([decision note](../research/NOT-INSIDE-20261110-001/not_inside.md)).
+
+   **2026-11-10: the memory writes itself** (`NATIVE-WRITE-20261110-001`).
+   - **The question.** Backlog B119: every stored pattern so far was written by a search told exactly what to aim for. Can a learner
+     that feels only its own tension, and is told only which patterns should hold, write them?
+   - **Proved.** A pattern that holds its contradiction keeps some tension in it in every state, however the points are set. So a
+     learner can test whether a pattern holds by letting its points wander without learning: if the tension there ever goes away, the
+     pattern does not hold.
+   - **Computed.** A learner that runs this test, and changes the law only in the patterns whose answer is wrong, wrote 100 of 100
+     requested words exactly on five memories of up to six patterns, and every word survived a disturbance. Reading the tension at a
+     single moment instead fooled it 84 times in 100: a loose bit of tension can sit in a pattern that does not hold.
+   - **Reading.** A stored 1 is a tension the point cannot walk away. The point both writes the memory and reads it, and no one tells
+     it the configuration to aim for.
+   - **Next.** Inputs and outputs (backlog B120): learning from examples, with the world holding some points
+     ([decision note](../research/NATIVE-WRITE-20261110-001/native_write.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

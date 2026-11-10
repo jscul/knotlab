@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "CROSS-BORDER-20261110-001A-E001",
+  "ticket": "CROSS-BORDER-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "At g = 3 and 5, does open doubling every 6, 8, 12 or 16 lags let an original ring be heard by another (influence crossing a territory border) while every stage stays balanced?",
+  "public_inputs": {
+    "library": "SPACING-20261109-001A-E001's run.py (sha256 87f5c6e19248e39a16d14207c014758d5a4f7f08a1a7348ba130558b71d6c651) and the libraries under it.",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "From the 3 x 3 tube, open births, doubling every P = 6, 8, 12, 16 lags at g = 3 and 5; balance and hearing to 24 x 24 (600 rings), reach and hearing original rings to 96 x 96.",
+    "reading": "As in SPACING-20261109-001A-E001: balance (through a full cycle of the state, up to 300,000 steps) and hearing at each doubling, the run stopping at its first unbalanced stage; the reach of ring (0, 0) and the original rings that ever hear it."
+  },
+  "forbidden_inputs": [
+    "Changing spacings, schedules or sizes after seeing results"
+  ],
+  "primary_observable": "For every (g, P): the original rings that hear ring (0, 0), and balance at each doubling.",
+  "cheapest_meaningful_control": "At g = 2, P = 6 and 8 let original rings hear ring (0, 0) (GROW-HORIZON-20261109-001A) and were unbalanced by 24 x 24 and 12 x 12 (DOUBLE-BALANCE-20261109-001A).",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The eight per-run lines.",
+  "decision_or_followup_rule": "Frozen hypotheses. C1: at P = 12 or 16, at both spacings, some original ring hears ring (0, 0). C2: every schedule in which an original ring hears ring (0, 0) has an unbalanced stage by 24 x 24, as at g = 2. If C2 fails, the first schedule that crosses a border and stays balanced is a grown plane that keeps its knots and lets its territories hear each other, and is read further (balance to 48 x 48 and the reach) before any reading of distance; if C2 holds, crossing a border breaks balance at every spacing read.",
+  "stop_rule": "Stop when every run has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: one tube, g = 3 and 5, P = 6 to 16, 24 x 24 and 96 x 96.",
+    "Balance computed, not proved; plain dependence; declared rings (A45)."
+  ],
+  "feasibility_disclosure": "Before freezing, nothing of these schedules was read; the g = 2 control and SPACING-20261109-001's P <= 4 readings were known."
+}

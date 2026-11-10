@@ -81,3 +81,9 @@ signal, which way their tension is wound, and that one comes through as an odd-o
 and B124 added. **Assumptions:** none new or changed.
 **Basket:** B119 (native writing), B120 (inputs and outputs); taken: none, because #1 continues this result directly and ties with B119,
 which stays in the basket.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (16:58 UTC): the partial answer (AND and OR read, no negation), the three limits
+proved by hand, the census of 43,091 networks with P4's failure, the parity reading found after the run, both tables above with B122
+selected, the Corrections, Goals and Assumptions lines, and the Basket line.

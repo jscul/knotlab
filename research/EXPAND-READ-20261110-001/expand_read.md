@@ -111,3 +111,33 @@ conformal metric as a theorem) recorded. **Assumptions:** A56 added and tested.
 **Recommendation.** Research directions: #1, with #2 as its first step; stop at a proof or at the refinement step that fails.
 
 **Basket:** B108, B55, `GROW-HORIZON-20261109-001#2`; none taken: #1 stays in this line because it turns this result into a theorem.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 16:58 UTC and copied here verbatim.
+
+**Expansion as a reading is closed and published. The growing plane reads its own expansion, and once that's counted, its distances are a metric up to 2.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/EXPAND-READ-20261110-001/expand_read.md))
+
+- **The scale factor, read exactly** (frozen census, 891 schedules at g = 2, 3, 5, exact): between rings, crossing one original spacing takes 4g·2^k lags after k doublings. That held in all 2,368 readings. The network's own crossings keep the clock.
+- **A metric at the plane's own scale:** count a lag after k doublings as 2^−k of a lag (conformal time, new assumption A56). The round trip then breaks the triangle inequality in only 28 of 891 schedules, by at most 2. In plain lags it broke in 240 schedules, by up to 78.
+- **Strictly, two of the three frozen predictions fail on that small residual.** The scale-factor prediction misses 28 of 1,614 cell-to-cell readings, and the metric prediction misses those 28 schedules by at most 2. "No excess within a stage" holds. Code 2 agrees on all 34 sampled schedules.
+- **B102's 7 × 7 half is folded in:** deaf beyond distance 4.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: expansion as a reading | Partially successful | Scale factor exact between rings; in conformal time a metric up to 2; strict predictions fail on the residual |
+| Local direction: a grown plane that reads its own metric | Continue | At its own scale the growing plane's round trips are a metric up to 2; a proof would make it a theorem |
+| Broader exploration: G1 with G5 | Known alternatives | Growth that rounds the reading (B108); where the residual comes from |
+| Long-term goal: G1 Space from a law | Capability gained | A local law grows a plane that reads its own scale factor, and at that scale a metric up to a bounded error |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | The conformal metric as a theorem (B125) | 3/3 | 2/3 | Trace the residual to where routes meet a doubling, then prove a route refines with bounded extra conformal time → a theorem, or the step that fails |
+| 2 | The residual's first runs | 2/3 | 3/3 | Trace the 28 schedules' violating triples → the cell positions behind the residual |
+| 3 | Growth that rounds the reading (B108) | 2/3 | 3/3 | As recorded |
+| 4 | Why a run keeps balance | 2/3 | 2/3 | As recorded |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint (capability gained); sub-goal B125 recorded. **Assumptions:** A56 added (conformal time) and tested: the network's own crossings keep that clock exactly between rings.
+**Basket:** B108, B55, GROW-HORIZON-20261109-001#2. None taken: #1 stays in this line because it turns this result into a theorem.
+
+I recommend #1 and will wait for the go-ahead. EXPAND-READ-A1 (32 seconds) is folded in and awaiting sign-off, along with B102's 7 × 7 row.

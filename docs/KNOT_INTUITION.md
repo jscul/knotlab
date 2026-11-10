@@ -5431,6 +5431,23 @@ So network holes come in two kinds:
      them.
    - **Next (selected).** Abstract names: places named without letters (A54) ([decision note](../research/WEAK-APER-20261110-001/weak_aperiodic.md)).
 
+   **2026-11-10: abstract names** (`BARE-NAMES-20261110-001`).
+   - **The question.** The board line named places by words in two letters (A54). Without letters, with a neighbour distinction for
+     each pair of names, what can a law force, and is the board still frozen?
+   - **No finite rule can make places touch (proved).** A law of finitary clauses that allows anything allows a board on which all
+     places are neighbours, or none are (Ramsey). So it can bound the degree but never force a neighbour.
+   - **What the letters drew (proved).** Four neighbours a law can address, and one connected world. An infinite clause "every
+     place has a neighbour" can supply a degree, but not neighbours a law can tell apart, and no law of bounded degree forces a
+     connected world.
+   - **The tree still comes back (proved).** A law that reads only a place and its neighbours allows the tree whenever it allows a
+     cycle. A named square with aperiodic tiles gives planes, but only one per component.
+   - **The board is no longer frozen (proved).** Two edges with the same pair of values can exchange partners, a change of four
+     distinctions. In 90 of the 1,024 one-bit laws one neighbour distinction knots with its two endpoint values (computed, exact,
+     frozen).
+   - **Renaming is a finite change too.** Exchanging two names flips every distinction at them, so the source-aware condition, as
+     read now, excludes nothing (A58).
+   - **Next (selected).** Nativeness up to renaming ([decision note](../research/BARE-NAMES-20261110-001/bare_names.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

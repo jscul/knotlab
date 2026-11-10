@@ -1077,6 +1077,17 @@ exactly the laws that drift: every place has more neighbours above it than
 below, or every place more below. On a finite board every step up is a step
 down seen from the other end, so a drift cannot close up.
 
+**Without letters.** So far every name came with four neighbour names, its
+letters. Take the letters away: names are only names, and whether two of them
+are neighbours is one more distinction of the law. A rule of finitely many
+variables then cannot make two places touch: whatever it allows, it also
+allows a world in which every place touches every other, or none does
+(Ramsey's theorem). The letters were drawing four neighbours that a rule can
+tell apart, and one connected world. Without them the board is no longer
+frozen: two edges that join the same pair of values can trade partners, and
+the board takes part in knots with the values
+([BARE-NAMES-20261110-001](research/BARE-NAMES-20261110-001/bare_names.md)).
+
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the
 board itself is made of distinctions, rules that never name a shape cannot

@@ -2079,7 +2079,19 @@ So network holes come in two kinds:
      hear each other, and every such schedule has an unbalanced stage within two doublings of the crossing.
    - **Reading.** Hearing inside territories is compatible with keeping knots; hearing across them, followed by more growth, is not, in
      every schedule read (g = 2 to 5). While a network grows it keeps its knots or reads distance across its grown plane, not both.
-   - **Next (selected, B55).** Why odd spacings keep balance ([decision note](../research/CROSS-BORDER-20261110-001/cross_border.md)).
+   - **Next (taken: B56, next entry; B55 deferred).** Why odd spacings keep balance
+     ([decision note](../research/CROSS-BORDER-20261110-001/cross_border.md)).
+
+   **2026-11-10: growth that stops** (`GROW-STOP-20261110-001`).
+   - **The question.** Backlog B56: grow by doubling for k lags, stop, and read what distance the stopped network reads.
+   - **The fixed torus, scaled (proved).** After doubling every lag for k lags and a stop, every need of every ring, with or without
+     freezes, is the fixed (n·2^k × m·2^k)-torus's. The stopped plane reads that torus's cut length, time length and plain first need,
+     and two original rings D apart are now 2^k·D ring steps apart. Checked at the cell level: 21,456 pairs, 60 lags after the stop.
+   - **Hearing before the stop spoils it (computed).** Doubling every 2 or 4 lags at g = 2 and 3 leaves a stopped network whose needs
+     differ from the fixed torus's for most pairs; every 3 lags at g = 2, which isolates, reads it exactly.
+   - **Reading.** Making and reading are two phases. The law grows a plane that reads no distance while it grows; once it stops, the
+     plane reads its own distance as a fixed torus does, the distance between original rings scaled by the growth it went through.
+   - **Next (selected, B39).** An invertible substrate ([decision note](../research/GROW-STOP-20261110-001/grow_stop.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

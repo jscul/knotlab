@@ -63,10 +63,10 @@ both sides at least 6, so the distance is read through freezes.
 | --- | --- | --- |
 | This attempt — growth that stops | **Status:** Successful | Proved: the stopped plane reads the fixed torus's distances, scaled by 2^k |
 | Local direction — grown space and distance | Continue | Growth then reading works; what remains is whether growth can be shaped, not only doubled |
-| Broader exploration — G1 with G5 | Known alternatives | Invertible substrate (B39, next); the proof pair for the exclusion (B55, why crossing breaks balance) |
+| Broader exploration — G1 with G5 | Known alternatives | Invertible substrate (B39, next); the proof pair for the exclusion (B55, B64) |
 | Long-term goal — G1 Space from a law (question 9) | Capability gained | A uniform local law grows a plane while running, keeps every stage balanced, and, once it stops, reads its own distance as a fixed torus does |
 
-**Corrections:** none. **Goals:** a G1 and G5 checkpoint (capability gained), B56 marked taken. **Assumptions:** none.
+**Corrections:** none. **Goals:** a G1 and G5 checkpoint (capability gained), B56 marked taken, backlog B64 (why crossing breaks balance) and B65 (shaped growth that stops) added. **Assumptions:** none.
 
 **Next step:** Research directions — B39, as the coordinator asked.
 
@@ -74,7 +74,7 @@ both sides at least 6, so the distance is read through freezes.
 | --- | --- | --- | --- | --- | --- |
 | 1 | Invertible substrate (B39) | 2/3 — Substantial | 3/3 — Ready | A rule and contact law with an invertible one-step map and persistent contacts on a tube, then growth while running → knots across growth with rings hearing each other across territories, or no such substrate | Selected (coordinator) |
 | 2 | Why odd spacings keep balance (B55) | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |
-| 3 | Why crossing breaks balance | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |
-| 4 | Shaped growth that stops | 2/3 — Substantial | 2/3 — Testable | Double only some territories before stopping, and read whether the stopped network is a fixed network of the grown shape → a law that grows a chosen shape and reads it | Alternative · deferred |
+| 3 | Why crossing breaks balance (B64) | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |
+| 4 | Shaped growth that stops (B65) | 2/3 — Substantial | 2/3 — Testable | Double only some territories before stopping, and read whether the stopped network is a fixed network of the grown shape → a law that grows a chosen shape and reads it | Alternative · deferred |
 
 **Recommendation.** Research directions, #1 as the coordinator asked.

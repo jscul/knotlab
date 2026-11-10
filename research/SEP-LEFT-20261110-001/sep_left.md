@@ -90,7 +90,7 @@ Since the epic opened:
 | Broader exploration — G3 | Known alternatives | Cutting planes on the count (B82); the parity reduction from PIGEON (B101) |
 | Long-term goal — G3 Hardness at three places | Capability gained | A route to the first dag-like Res(⊕) bound for a PPADS-complete principle, short of the knot sphere |
 
-**Corrections:** none. **Goals:** a G3 checkpoint (capability gained); B100 taken; sub-goal B102 added. **Assumptions:** none added or
+**Corrections:** none. **Goals:** a G3 checkpoint (capability gained); B100 taken; sub-goal B103 added. **Assumptions:** none added or
 changed.
 
 - **What the attempt leaves open.** Row-linear separation over the hole rows at degree beyond the sizes computed.
@@ -110,5 +110,5 @@ changed.
 2. **Cutting planes.** As in `COUNT-SYSTEMS-20261110-001`.
 3. **The parity reduction.** As in `RES-XOR-COUNT-20261110-001`.
 
-**Recommendation.** Continue with direction 1, recorded as sub-goal B102 under the owner's rule for untaken 3/3 directions, for the
+**Recommendation.** Continue with direction 1, recorded as sub-goal B103 under the owner's rule for untaken 3/3 directions, for the
 coordinator to confirm.

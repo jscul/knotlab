@@ -26,4 +26,4 @@ B100 reduces to one statement, hole-row separation, which every computable insta
 
 ## Recommendation
 
-**Continue** with hole-row separation (sub-goal B102), for the coordinator to confirm. The table is in the decision note.
+**Continue** with hole-row separation (sub-goal B103), for the coordinator to confirm. The table is in the decision note.

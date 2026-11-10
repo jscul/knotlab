@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TREE-XOR-20261110-001A-P001",
+  "canonical_id": "TREE-XOR-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "TREE-XOR-20261110-001A",
+  "proof": "TREE-XOR-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Parity decision trees on the count need polynomial depth",
+  "status": "Proved",
+  "claim": "Every parity decision tree solving the false-clause search of the octahedral knot sphere's NAE formula (n = 4k^2 points), hence every tree-like Res(xor) refutation, has depth at least c n^{1/8} / log n: a parity decision tree of depth d gives an F2 Nullstellensatz refutation of degree d + 3 (its leaves' indicators times the falsified clauses sum to 1), and the count needs F2 degree Omega(n^{1/8}/log n) by Beame et al.'s Omega(sqrt N) bound for the sink-counting principle, carried through linear substitution and the decision-tree reductions of COUNT-SYSTEMS-20261110-001A.",
+  "dependencies": [
+    "COUNT-SYSTEMS-20261110-001A",
+    "COUNT-TFNP-20261107-001B",
+    "COUNT-NOTE-20261107-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A complete parity decision tree on K_2 whose leaf identity fails or whose leaf does not falsify its clause."
+  ],
+  "lineage": {
+    "home_scope": "TREE-XOR-20261110-001",
+    "epic_path": [
+      "TREE-XOR-20261110-001"
+    ],
+    "parents": [
+      "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/sa_lib.py",
+      "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/tube_lib.py",
+      "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/manifest.json",
+      "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/COUNT-NOTE-20261107-001B/COUNT-NOTE-20261107-001B-P001_the_count_has_a_unary_sherali_adams_refutation/sa_lib.py": "1007f41f06a4af08e5a9b11e36d8f4109f53634d874a9e68431b311619052782",
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/tube_lib.py": "305e5b39e2b7ab664a8c7a2643f36db582c2b74f9eee9811bf55eeef2c67321d",
+    "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/manifest.json": "ba3dbdd74d050f34e04fa5c16eba2ba455339a3b8701356a97e2b96dce7d2d99",
+    "proofs/COUNT-TFNP-20261107-001B/COUNT-TFNP-20261107-001B-P001_the_knots_count_is_ppads_complete/manifest.json": "13df23640a58dd4f8f4e0b7d54387fb0291ec137aaf224ce4f313e259572a42b"
+  },
+  "paths": {
+    "manifest": "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/manifest.json",
+    "identity": "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/identity.json",
+    "proof": "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/proof.md",
+    "result": "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/result.json",
+    "check": "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/check.py",
+    "directory": "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k); proof complexity of its refutations.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+    "status": "proved by hand from Beame et al.'s degree bound; Lemma 1 checked on K_2, the chain's sizes tabulated by check.py",
+    "novelty": "known-with-delta: low-depth parity trees give low-degree F2 refutations and the count is outside PPA^dt; the polynomial height bound for this formula with explicit sizes"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "TREE-XOR-20261110-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TREE-XOR-20261110-001B-P001"
+  },
+  "id": "TREE-XOR-20261110-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove, in the style of Ben-Sasson and Wigderson's size-width argument, that a parity decision tree of size s for a CNF's false-clause search gives an F2 polynomial-calculus refutation of degree at most log2 s + w; so a size lower bound for tree-like Res(xor) on the count follows from an F2 polynomial-calculus degree lower bound (backlog B84).",
+  "ownership": {
+    "root": false,
+    "scope_id": "TREE-XOR-20261110-001"
+  },
+  "parent": "TREE-XOR-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10: a parity decision tree with s leaves gives an F2 polynomial-calculus refutation of degree log2 s + w (Ben-Sasson-Wigderson's induction with linear queries), so tree-like Res(xor) on the sphere's count has size at least 2^(deg_PC - 3): the size question is the F2 polynomial-calculus degree (B84).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Tree-like Res(xor) size is bounded by F2 polynomial-calculus degree"
+}

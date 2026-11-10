@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-NOTE-20261107-001B",
+    "COUNT-SYSTEMS-20261110-001A",
+    "COUNT-TFNP-20261107-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TREE-XOR-20261110-001A-P001"
+  },
+  "id": "TREE-XOR-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that a parity decision tree of depth d for a CNF's false-clause search gives an F2 Nullstellensatz refutation of degree d + w (w the clause width), and that the sphere's count needs F2 Nullstellensatz degree n^{Omega(1)}, by Beame et al.'s degree bound for the sink-counting principle carried through linear substitution and the decision-tree reductions of COUNT-SYSTEMS-20261110-001A; so every tree-like Res(xor) refutation of the count has height n^{Omega(1)}.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TREE-XOR-20261110-001"
+  },
+  "parent": "TREE-XOR-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10: every parity decision tree for the sphere's count, hence every tree-like Res(xor) refutation, has depth at least c n^{1/8}/log n, because a depth-d parity tree is an F2 Nullstellensatz refutation of degree d + 3 and the count needs F2 degree Omega(n^{1/8}/log n) (Beame et al.'s sink bound through linear substitution and decision-tree reductions); size remains open.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Parity decision trees on the count need polynomial depth"
+}

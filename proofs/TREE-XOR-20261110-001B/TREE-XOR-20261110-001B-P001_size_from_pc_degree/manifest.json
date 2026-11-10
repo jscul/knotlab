@@ -1,0 +1,91 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TREE-XOR-20261110-001B-P001",
+  "canonical_id": "TREE-XOR-20261110-001B-P001",
+  "kind": "proof",
+  "ticket": "TREE-XOR-20261110-001B",
+  "proof": "TREE-XOR-20261110-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Tree-like Res(xor) size is bounded by F2 polynomial-calculus degree",
+  "status": "Proved",
+  "claim": "If a parity decision tree with s leaves solves a width-w CNF's false-clause search, the CNF has an F2 polynomial-calculus refutation of degree at most log2 s + w (Ben-Sasson-Wigderson's induction with linear queries); so tree-like Res(xor) refutations of the sphere's count have size at least 2^(deg_PC - 3), and a size lower bound follows from an F2 polynomial-calculus degree lower bound.",
+  "dependencies": [
+    "TREE-XOR-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A formula and a parity decision tree of size s with F2 polynomial-calculus degree above log2 s + w."
+  ],
+  "lineage": {
+    "home_scope": "TREE-XOR-20261110-001",
+    "epic_path": [
+      "TREE-XOR-20261110-001"
+    ],
+    "parents": [
+      "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/manifest.json": "ec1e207e49bd73987b80b2411a1929f65620a67babdd4e1981076228403504eb"
+  },
+  "paths": {
+    "manifest": "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree/manifest.json",
+    "identity": "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree/identity.json",
+    "proof": "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree/proof.md",
+    "result": "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree/result.json",
+    "check": "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree/check.py",
+    "directory": "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k); proof complexity of its refutations.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+    "status": "proved by hand; a sanity check on small random formulas by check.py",
+    "novelty": "known-with-delta, folklore risk high: the size-width and size-degree arguments with linear queries"
+  }
+}

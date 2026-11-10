@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spheres",
+      "threefold"
+    ],
+    "program": "complexity",
+    "takes": [
+      "B83"
+    ]
+  },
+  "id": "TREE-XOR-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B83 (G3), selected by the coordinator on 2026-11-10: tree-like Res(xor) on the sphere's count, that is parity decision trees that find a violated line of the octahedral knot sphere. Bound their depth from below through the F2 Nullstellensatz (the count is outside PPA^dt, COUNT-TFNP-20261107-001B), and say what the size question then needs.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TREE-XOR-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10: every parity decision tree for the sphere's count, hence every tree-like Res(xor) refutation, has depth at least c n^{1/8}/log n (a depth-d parity tree is a degree-(d+3) F2 Nullstellensatz refutation, and the count needs F2 degree Omega(n^{1/8}/log n) by Beame et al.'s sink bound through the reductions); and tree-like Res(xor) size is at least 2^(deg_PC - 3), so the size question is the F2 polynomial-calculus degree (B84). Recommendation Research directions, none selected.",
+  "status_class": "complete",
+  "stop_rule": "Stop at a depth or size bound for parity decision trees on the count, or at the reason the known methods stop.",
+  "title": "Tree-like Res(xor) on the sphere's count"
+}

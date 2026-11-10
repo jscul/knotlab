@@ -43,6 +43,20 @@ Checked and computed on the two Fano tori and 57 thin tori of even index up to 4
 - **S (stress test).** `RESIGN-STEER-20261107-001B`'s local rule, one size past: 300 of 300 targets on K_14 and K_16, and 2,698 of
   2,700 on nine non-octahedral spheres (one miss on a tube is not reached with ten times the budget). The published line holds.
 
+## What is proved and what is computed
+
+| Claim | Evidence class |
+| --- | --- |
+| Only surfaces of Euler characteristic 0 can be free of dissonance (theorem 1) | proved, by hand, on every closed surface |
+| A state with one violated line of a class-forced law has exactly one over-agreeing face (theorem 2) | proved, by hand |
+| Such states exist on every tested torus; 70 per Fano torus and n² per thin torus up to 20 points | computed (all states up to 20 points; SAT beyond) |
+| From any such state learning at the dissonance, state fixed, resolves the pair via a cheapest perfect matching (theorem 3.1) | proved, by hand |
+| Every resolution of a class-forced pair, by any process, winds around a handle into another class (theorem 3.2) | proved, by hand, on every closed surface with χ = 0 |
+| Every other class is reached directly from every least state and split: the 96,732 walks | computed (a finite check of theorem 3 and its extension to every class) |
+| The cheapest walk into each class meets the cycle bound exactly | computed; the bound itself is proved |
+| A local rule with an outside distance resolves every start: the 9,608 starts; random moves: 2,806 runs | computed (exploratory) |
+| The sphere's local rule one size past (K_14, K_16, nine other spheres) | computed (stress test) |
+
 ## For the owner's picture
 
 The point (a dissonance) on a sphere can be carried anywhere by learning but never made to vanish: the sphere's curvature forces it.

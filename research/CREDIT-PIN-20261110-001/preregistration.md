@@ -39,3 +39,27 @@ that. Does using it as partial credit let the learner reach composites, and does
 - **S5 (one size past):** the C2 mark on its 12 composite writes, and the M comparison is not made there (ticket A does not run S5).
 
 Assumptions in force: A20, A21, A46, A47, A49, A50 (its temperature alternative), A52, A58.
+
+## Stage 2: the credit learner (frozen before ticket B runs on any test space)
+
+Frozen in `proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py` with its `check.py`.
+The learner was written and run on the dev spaces only, before ticket A's results were read, and is unchanged since.
+
+- **The credit learner** is ticket A's fixed learner plus one rule. While some example asks for a decided output, after every 10 failed
+  probes it runs a state-only plateau walk (a random point flipped when W does not rise) of 20,000 steps on a copy. A face is pinned when
+  its closed neighbourhood (itself and every face sharing a line with it) never clears of dissonance during the walk. An attention line
+  whose three corner faces are all pinned, and which does not pass through an interface point, is cooled: the learner stops changing
+  its signs, keeping what holds. The cooled set is replaced at each walk and emptied at each new target. For the target `uuuu` (no
+  decided output) nothing is cooled.
+- **What it sees** is unchanged: its own dissonance, the floor, the interface points and the examples. Whether a cooled line lies in an
+  acting atom is read by SAT only afterwards, to score.
+- **Dev (not blind).** On the dev composites, two batches of seeds: 15 of 16 and 13 of 16 composite writes learned and held; at the dev
+  leaves 9 of 9 and 8 of 8 (with `0001` never stopping). One dev composite failed twice with 19 lines cooled while one of its atoms did not
+  act, a case of pinned dissonance misleading, so the M mark can go either way.
+- **Ticket B's run** is as frozen in stage 1: S3 and S4 (learner seed 3000 + k, the same k as ticket A), S5 (5000 + k), every interface,
+  targets `1uu0`, `u10u`, `uuuu`, `0uu1`, `0001`; marks C2, M, A, and C2 on S5.
+
+## Predictions (stage 2)
+
+C2 holds on S3 and S4 (at least 15 of 16); M does not hold (credit does not mislead overall); A holds; most cooled lines lie in acting
+atoms; S5's C2 is uncertain.

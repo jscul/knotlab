@@ -69,3 +69,28 @@ None.
 
 **Corrections:** none. **Goals:** G15 checkpoint (obstruction learned); sub-goal B54 taken; B71 and B72 added. **Assumptions:** A26 put
 under challenge if #1 is taken.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (01:08 UTC).
+
+**B54 (layers through atoms) done: the dissonance flows down into the named patterns and settles there, but never comes back up or moves across.** I replaced one or two lines of K_2 and K_3 by Fano atoms, each acting as the line it replaced. Growing an atom at the dissonance moves it down into the atom, where learning resolves it. A second atom holds one unit of dissonance from the moment it's grown, and that's where the leftover ends. Once there it's frozen (proved): at genus 2 the leftover is a single over-agreeing face, and a learner that holds the state still has no move there. So moving the point between patterns needs something to raise the tension first.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: layers through atoms (B54) | **Status:** Partially successful | flows down, never back up or across |
+| Local direction: learning with the state fixed | Continue, with a challenge | holding the state still is what freezes it |
+| Broader exploration: learning program | Known alternatives | moving state, temporary rises |
+| Long-term goal: G15 | Obstruction learned | a fixed-state learner can't move a point between patterns |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Let the state move while learning acts (B71) | 2/3 — Substantial | 3/3 — Ready | state flips between learning steps → unit moves between atoms, or stays | Selected · awaiting go-ahead |
+| 2 | Accept a temporary rise (B72) | 2/3 — Substantial | 3/3 — Ready | allow W +1 for ≤ k steps → unit crosses, or not | Alternative · deferred |
+| 3 | Overgrown surfaces (B70) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+#1 is your original picture most directly: a point that moves, through a network that learning orients. It would be the first challenge of the "state holds still" assumption every learning epic has used.
+
+**Corrections:** none. **Goals:** G15 checkpoint; B54 taken (atom reading); B71, B72 added. **Assumptions:** A26 history line.

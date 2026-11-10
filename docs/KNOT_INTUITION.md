@@ -1623,8 +1623,19 @@ So network holes come in two kinds:
    - **Reading.** Through a pattern of patterns the examples see only whether every inner pattern holds, so until all do, every example
      looks the same: the learner gets no hint which part to change. Each holding part does keep a tension it cannot walk away, which the
      learner could use as a hint.
-   - **Next.** Credit from pinned dissonance (backlog B132), tied with three held inputs (backlog B133)
-     ([decision note](../research/IN-OUT-20261110-001/in_out.md)).
+   - **Next (taken by `CREDIT-PIN-20261110-001`, below).** Credit from pinned dissonance (backlog B132), tied with three held inputs
+     (backlog B133) ([decision note](../research/IN-OUT-20261110-001/in_out.md)).
+
+   **2026-11-10: the memory feels which knots hold** (`CREDIT-PIN-20261110-001`).
+   - **The question.** Backlog B132: can the tension a holding knot keeps, which the points cannot walk away, guide the learner to the
+     knots inside a knot that the examples cannot point to?
+   - **Computed, first.** The learner had stalled, not failed: fixed, it learned gates through a pattern of patterns 10 times in 16, by
+     trial, at about thirty times the cost of a single pattern.
+   - **Computed, then.** Tension that a wandering of the points never clears sat in a holding knot every one of 4,473 times. Keeping
+     those parts fixed made the inner knots faster to find, but the learner did no better on the whole, because its check of an
+     answer, holding the inputs and wandering, sometimes misses the wrong answer and says yes too soon.
+   - **Reading.** The memory can feel what it stores without being told; what it lacks is a check that never says yes too soon.
+   - **Next.** A probe that is not fooled (backlog B134) ([decision note](../research/CREDIT-PIN-20261110-001/credit_pin.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

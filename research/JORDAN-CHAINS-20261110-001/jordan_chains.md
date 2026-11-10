@@ -115,3 +115,28 @@ computed) and re-rated by this report, B74 and B59 rated again. **Assumptions:**
 3. **The curve.** Payoff 3: as recorded. Concreteness 1.
 
 **Recommendation.** Continue with #1.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 01:50 UTC and copied here verbatim.
+
+The chains epic is closed and published. The prediction holds everywhere I tested it: at each eigenvalue, the eigenvector G·Y^j heads a Jordan chain of exactly 2k − 1 − 4j, and those are all the blocks. So an eigenvalue's whole Jordan structure, and its multiplicity k(k+1)/2, is read off the degree of its one polynomial. This holds at every eigenvalue for sides 8 to 64 (side 64 registered before running) and at seven of nine sampled eigenvalues at side 128 so far. The last two, including the eigenvalue 1 with k = 15, are still running.
+
+I proved the bottom of the structure. The family carrying the spectrum is self-adjoint at every parameter, and its first derivative on the eigenvectors is a Hankel matrix of the top coefficients of G's norm G(k)G(k+1). That norm has degree n/2 − k, so all but one corner vanishes: exactly one size-1 block when k is odd, none when k is even. The higher orders aren't proved.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the Jordan chains from one polynomial | **Status:** Partially successful | The chain lemma holds wherever tested and its first order is proved |
+| Local direction: the collapse at powers of two | Continue | Two statements remain: the chains beyond first order, and the degree law |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B74 |
+| Long-term goal: G5 Dynamics | Capability gained | Each eigenvalue's Jordan structure is read off one polynomial's degree |
+
+**Next step:** Continue with #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The chain lemma at every order (B73) | 3/3 | 2/3 | Write the second-order term with the explicit first step a⁻¹kGY^i and show it vanishes except on the next anti-diagonal → an induction, or the order where it breaks | Selected |
+| 2 | The degree of the least solution (B74) | 3/3 | 1/3 | As recorded in B74 | Alternative |
+| 3 | The curve behind each eigenvalue (B59) | 3/3 | 1/3 | As recorded in B59 | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained); sub-goal B73 advanced and re-rated (3/3, 2/3); B74 and B59 stay open. **Assumptions:** none added. The side-128 stress run (JORDAN-CHAINS-S1) is still running, and I'll fold it in when it finishes. Commits: 25ab6ffa4 (pre-registration), 3d9912955 (epic), 692a8c533 and ceefda576 (tracking), 2eb84dc45 (shared docs).

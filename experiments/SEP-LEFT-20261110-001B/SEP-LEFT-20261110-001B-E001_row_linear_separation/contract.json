@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SEP-LEFT-20261110-001B-E001",
+ "ticket": "SEP-LEFT-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Sub-goal B100 at the smallest sizes: do the row-linear polynomial spaces of the binary left-pigeon principle LP_n stay separated from its F2 polynomial-calculus consequences as far in degree as Braun's do for bit PHP, and does that reach grow with n?",
+ "public_inputs": {
+  "solver": "pcsep.c in this folder: the closure of PC-COUNT-20261110-001B-E001's pcdeg.c (standard rule) with probe sets of monomials, each reported as the number independent modulo the closure, the closure restored between sets; checked before freezing against an independent Python reference on 48 random 3-CNF cases with 6 to 8 variables, two probe sets each, 32 of them with a nontrivial intersection, no mismatch (scratch, not kept).",
+  "instances": "For n = 2, 4, 8 holes, l = log2 n, m = n + 1 pigeons. BPHP_n: Braun's compact base, pigeon rows of l bits, axioms E_ii' = prod_t (1 + b_it + b_i't). LP_n: pigeon rows f_x (l bits) and hole rows g_h (l + 1 bits, a pigeon's code), axioms [f_x = h][g_h,j != x_j] for every pigeon x, hole h, bit j, of degree l + 1 (7, 22 and 59 variables; BPHP 3, 10 and 27). Both are unsatisfiable (checked by brute force for n = 2, 4 before freezing; this was the only computation on them).",
+  "probe sets": "Row-linear monomials (at most one bit from each row) of degree at most k, k = 1, 2: over the pigeon rows only, and over all rows (for BPHP they coincide).",
+  "run": "run.py: for each instance B = 1, 2, ... until 1 is derived or a run would pass 15,000 MiB; one solver at a time."
+ },
+ "forbidden_inputs": [
+  "Changing the instances, probe sets, memory cap, hypotheses or the definition of density that grows after seeing results"
+ ],
+ "primary_observable": "For each instance, probe set and degree B, the dimension of the largest separated subspace of the set's span (the number of its monomials independent modulo the degree-B closure), and each set's horizon: the largest B read at which the whole set is separated.",
+ "cheapest_meaningful_control": "BPHP_n, whose row-linear spaces Braun's row-linear separation theorem (his section 4) separates for 2B - 1 <= n and 4(k - 1) < n (n = 4: k = 1, B <= 2; n = 8: k <= 2, B <= 4).",
+ "resource_budget": {
+  "wall_minutes": 180,
+  "memory_mib": 16384
+ },
+ "first_executable_signal": "The horizons and the verdict in result.json.",
+ "decision_or_followup_rule": "Frozen hypotheses. H1 (control): BPHP_n's row-linear spaces are fully separated through Braun's range at n = 4 and 8. H2: LP_n's row-linear spaces over all rows have horizon at least BPHP_n's, for n = 4, 8 and k = 1, 2. H3: LP_n's row-linear spaces over the pigeon rows have horizon at least BPHP_n's. Density that grows, frozen: H2 holds at n = 4 and 8 for k = 1, 2, and LP's all-rows horizon at n = 8 exceeds its horizon at n = 4 for k = 1, 2; then the next step is a matching-moment theorem for LP's unary form. None: some row-linear polynomial of degree at most 2 over all rows is derived at a degree B <= 4 inside Braun's range at n = 8; then LP's separated space can only be thinner than bit PHP's and the generic count is read as failing at these sizes. Otherwise intermediate. These readings reach only small degrees: the criterion's degree B = k(D + 1) is far beyond them, so they test only whether LP keeps pace with bit PHP where both can be computed.",
+ "stop_rule": "Stop when every instance has its readings to refutation or to the memory cap.",
+ "nonclaims": [
+  "Exploratory and finite: n = 2, 4, 8 and k <= 2 only.",
+  "No Res(xor) bound follows from any reading; the criterion's degree regime is not reached.",
+  "The standard PC rule only."
+ ],
+ "feasibility_disclosure": "Before freezing, the solver was run only on random formulas (the cross-check) and the instances' unsatisfiability was checked by brute force for n = 2, 4; no closure of BPHP_n or LP_n was computed. The structural argument of ticket A (an f-only separated space of LP is separated whenever BPHP's is at about l times the degree, by substituting g(h) := sum_x [f_x = h] x) was worked out before the freeze, and H3 was written knowing it."
+}

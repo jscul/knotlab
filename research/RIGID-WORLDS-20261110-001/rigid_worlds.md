@@ -118,3 +118,32 @@ owner's instruction.
 
 **Recommendation.** Research directions, proposed #1 for the morning; the board-as-distinctions line has reached its static limits
 in the families studied.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 06:15 UTC and copied here verbatim.
+
+I've closed and published rigid worlds at radius 2, and with it everything I had open. No one-bit Life-like law and not the atom forces a two-dimensional world when "names whose radius-2 views agree are one place".
+
+**What the census found.** It was frozen and exact. Of the 994 laws that allow any board, 769 allow the one-place board, 223 allow a thin abelian board with at most 8 places, and two counting laws allow a non-abelian board with 7 places. The other 31 allow no board. Forcing does happen when a law lists the views of one 13-place torus: it forces exactly that torus, at one size, but that's drawing the board in advance. A forced torus can't exceed 256 places at this radius anyway, so a growing family would need a growing radius.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: rigid worlds at radius 2 | **Status:** Successful | Decided for every law; none forces a 2D torus |
+| Local direction: boards made of distinctions | Obstruction learned | Static laws, at radius 1 or 2, finitary or infinitary, never choose the plane in these families |
+| Broader exploration: question 9 | Known alternatives | Growth, larger alphabets, weakly aperiodic laws |
+| Long-term goal: G1 | Obstruction learned | A 2D world is chosen only when its shape is named or drawn |
+
+**Next step (for the morning, not started):** Research directions. I propose #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Weakly aperiodic laws under Leibniz's rule | 2/3 | 2/3 | Build one and decide whether it has a free point | Proposed |
+| 2 | Every accretion law (HARD-FLAT#3) | 2/3 | 2/3 | As recorded | Alternative |
+| 3 | Abstract names (A54) | 2/3 | 2/3 | As recorded | Alternative |
+| 4 | Growing radius | 2/3 | 1/3 | A uniform family of laws over r; do forced tori grow? | Alternative |
+
+**Corrections:** none. **Goals:** G1 checkpoint (obstruction learned). **Assumptions:** none added.
+**Basket:** spacing's HARD-FLAT-20261107-001#3, BOARD-DIST-20261110-001#3 and LEIBNIZ-BOARDS-20261110-001#2. Nothing taken tonight; #1 is my proposal for the morning.
+
+No long-running rows are left pending from my epics. Commits: 87caa46a3, 43e5056cd, d12edc9c5. I'm stopping here until you prompt.

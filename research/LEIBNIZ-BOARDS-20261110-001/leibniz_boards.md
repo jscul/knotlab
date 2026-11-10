@@ -123,3 +123,36 @@ extended in scope, and its history records it).
 
 **Recommendation.** Research directions, selected #1: the most concrete open question about boards made of distinctions, and the
 spacing basket's top item. The Leibniz line pauses by its stop rule.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 05:53 UTC and copied here verbatim.
+
+I've closed and published Leibniz boards (B111). Under the infinite identity rule ("names that look alike at every radius are one place"), no one-bit Life-like law and not the atom forces the plane. The general dichotomy is reduced but not proved, so the line pauses by its stop rule.
+
+**What I proved.** Under that rule, a law's boards are the Schreier graphs of its solutions' stabilizers. The strong form you froze, "every board is the tree or finite", is false: a three-value horofunction law has a 3-cycle with trees attached as a board. A periodic solution with one free choice gives back two boards: the tree, by spreading the choices out independently, and a cycle with trees attached, by repeating them along one element.
+
+**The census.** The frozen exact census covers every one-bit Life-like law. 31 have no solution, 97 have finitely many, and 896 plus the atom have a periodic solution with a free choice. None is undecided. So the plane is never forced in this family, even though 891 laws allow it.
+
+**What's left.** For arbitrary alphabets, an infinite board bringing the tree comes down to excluding one rigid kind of solution, whose freedom runs along a single end. The likely exceptions are weakly aperiodic laws, which free groups do carry (Piantadosi).
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: Leibniz boards | **Status:** Partially successful | W and P hold for the whole one-bit family; S is refuted; W in general is reduced |
+| Local direction: the identity rule in the limit | Paused by the stop rule | W isn't settled and no new route is named |
+| Broader exploration: question 9 | Known alternatives | Rigid finite worlds, other namings, growth |
+| Long-term goal: G1 | Obstruction learned | The plane is allowed but never forced |
+
+**Next step:** Research directions. My pick is #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Rigid worlds at radius 2 (BOARD-DIST-20261110-001#2) | 2/3 | 3/3 | Search for a law whose radius-2 identity boards are all 2D tori | Selected |
+| 2 | Weakly aperiodic laws | 2/3 | 2/3 | Build one and decide whether it has a free point | Alternative |
+| 3 | W in general | 2/3 | 1/3 | Exclude the rigid one-ended solution | Paused |
+| 4 | Abstract names (A54) | 2/3 | 2/3 | As recorded | Alternative |
+
+**Corrections:** none. **Goals:** G1 checkpoint (obstruction learned), B111 taken. **Assumptions:** none added; A51's history now records the extension.
+**Basket:** spacing's BOARD-DIST-20261110-001#2, HARD-FLAT-20261107-001#3 and BOARD-DIST-20261110-001#3; taken: BOARD-DIST-20261110-001#2.
+
+Commits: 3592c5641 and ec1664143 (pre-registration and the census code's revision before any run), 8a83ef610 (epic), b4258c448 (lesson 4.6). The doc hunks landed inside another thread's commit, cefd5dbc0.

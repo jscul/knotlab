@@ -2300,8 +2300,21 @@ So network holes come in two kinds:
      multiplicity; with the theorem this is the Kloosterman count |K|/4.
    - **Reading.** Proving the eigenvector count now means bounding the degree of one polynomial per eigenvalue; nothing found ties it to
      the Kloosterman sum, and the Jordan chains, which the collapse needs, were not reached. No lag cutoff was used.
-   - **Next (selected, pending the coordinator).** The Jordan chains that G·Y^j heads
+   - **Next (selected, taken by `JORDAN-CHAINS-20261110-001`).** The Jordan chains that G·Y^j heads
      ([decision note](../research/KLOOSTERMAN-BOUNDS-20261110-001/kloosterman_bounds.md)).
+
+   **2026-11-10: the Jordan chains from one polynomial** (`JORDAN-CHAINS-20261110-001`).
+   - **The question.** Does each eigenvector G·Y^j head a Jordan chain of length 2k − 1 − 4j, so that the multiplicity k(k + 1)/2 follows
+     from the degree of G alone?
+   - **Yes, wherever tested (computed).** At every eigenvalue for sides 8 to 64, and at nine eigenvalues of side 128 up to the eigenvalue 1
+     with k = 15 (the side-128 check still running when this was written).
+   - **Its first order (proved).** The family that carries the spectrum is self-adjoint at every parameter. On the eigenvectors, its first
+     derivative is a Hankel matrix of the top coefficients of G's norm G(k)G(k + 1), whose degree n/2 − k makes all but one corner vanish.
+     So there is exactly one Jordan block of size 1 when k is odd and none when k is even.
+   - **Reading.** An eigenvalue's whole Jordan structure is read off one polynomial's degree; the collapse now rests on that degree (B74) and
+     on the chains at every order. No lag cutoff was used.
+   - **Next (selected, pending the coordinator).** The chain lemma at every order
+     ([decision note](../research/JORDAN-CHAINS-20261110-001/jordan_chains.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

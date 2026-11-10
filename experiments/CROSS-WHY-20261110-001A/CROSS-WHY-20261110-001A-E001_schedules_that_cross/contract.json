@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "CROSS-WHY-20261110-001A-E001",
+  "ticket": "CROSS-WHY-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Why does a doubling schedule in which original rings hear each other lose balance (CROSS-BORDER-20261110-001, every uniform schedule read at g = 2 to 5)? Is the crossing the mechanism, and does some schedule cross a territory border with every stage balanced?",
+  "public_inputs": {
+    "library": "CROSS-WHY-20261110-001B's territory_lib.py (sha256 7c613304f59bc6985a4966be3b78002d21e14b62297ab69b19b0de541db5676b), exact by that ticket's Lemma 1 and checked there against the full state; BIRTH-RULE-20261109-001A-E001's run.py (sha256 700c9ed85da8852dd0c0d1941031b063c116aa3afe29f22186aeb660df7dd6ce) for part V.",
+    "run": "run.py in this folder, 8 worker processes (4 for part X).",
+    "family": "The 3 x 3 tube, open births, the doubling law at lag 0 and after each run of a schedule. M: one run of P = 1 to 24 lags at g = 2, 3, 4. S: at g = 3, schedules of up to three runs, the first two of 1 to 40 lags, the third of 1 to 16 after a crossing; at g = 2 and 5, two runs of 1 to 24 lags. V: two balanced three-run crossing schedules from S (the first two in S's order) and two controls ([12, 2, 1], [28, 28, 28]) at 48 x 48. X: the first four balanced three-run crossing schedules from S extended by one more run of 1 or 2 lags, to 96 x 96.",
+    "reading": "Balance at each doubling through a full cycle of the state (Brent), every contact and both of its rings, on one fundamental domain; the kind of a failure (internal: each ring's parts on its own cells alone already fail; heard: they bind and parts held by other rings cancel them); the own-cell rank of ring (0, 0) before the doubling; crossing: an original ring whose own cells depend on ring (0, 0)'s first row (GROW-HORIZON-20261109-001A's heard())."
+  },
+  "forbidden_inputs": [
+    "Changing spacings, schedules, ranges or sizes after seeing results"
+  ],
+  "primary_observable": "Per M job, balance and the kind of failure with the crossing lag; per S, every schedule with every stage balanced and its crossing; per V, the full-state verdicts; per X, the verdicts at 96 x 96.",
+  "cheapest_meaningful_control": "Uniform schedules already read: at g = 3, P = 8 crosses at lag 8 and fails at 12 x 12, P = 12 and 16 fail at 24 x 24 (CROSS-BORDER-20261110-001A); P = 2 and 4 hear inside territories and stay balanced (ISOLATION-NEED-20261109-001A).",
+  "resource_budget": {
+    "wall_minutes": 240,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-depth counts of part S.",
+  "decision_or_followup_rule": "Frozen hypotheses. W1 (the premise of backlog B64): every schedule in which an original ring hears ring (0, 0) has an unbalanced stage within two doublings of the crossing. W1 is refuted if some schedule of S crosses by its second doubling and has every stage balanced through 48 x 48, and V confirms it on the full state. W2: crossing is the mechanism, so every failure at the second doubling in M comes after a crossing. W2 is refuted by any failure in M with no crossing by the stage lag. If W1 is refuted, X says whether balance continues one doubling further for some extension, and the result is reported as computed for these schedules only; if W1 holds, its two-doubling bound is the lemma to prove.",
+  "stop_rule": "Stop when every part has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the 3 x 3 tube, g = 2 to 5, the ranges above, 48 x 48 (96 x 96 in X).",
+    "Balance computed, not proved; plain dependence; declared rings (A45); open births (A44)."
+  ],
+  "feasibility_disclosure": "Not blind. Before freezing, exploratory scratch runs read, at g = 3: one run of P = 1 to 24 (failures of both kinds, several with no crossing); two runs from P1 = 12, 13, 16, 19 (balanced at 24 x 24 for [12, 1], [12, 2], [12, 28], [13, 28], [19, 1]); the tree to depth 2 with P <= 40 (39 balanced schedules); [12, 1, 1] and [12, 1, 2] balanced at 48 x 48 by two independent codes, [12, 2, 1], [12, 2, 2], [28, 28, 28], [12, 28, 1], [12, 28, 28] and [28, 28, 1] unbalanced there; and at g = 2, 3, 4, one run of P = 1 to 24. A run of [12, 1, x, y] at 96 x 96 was started and had not finished. This contract freezes the full census and its decision rules; the scratch readings are not evidence."
+}

@@ -1,0 +1,190 @@
+{
+ "ticket": "CROSS-WHY-20261110-001B",
+ "artifact_id": "CROSS-WHY-20261110-001B-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "experiments/BIRTH-RULE-20261109-001A/BIRTH-RULE-20261109-001A-E001_birth_rules/run.py": "700c9ed85da8852dd0c0d1941031b063c116aa3afe29f22186aeb660df7dd6ce",
+    "experiments/GROW-CHOOSE-20261109-001A/GROW-CHOOSE-20261109-001A-E001_dynamics_chosen_growth/choose_lib.py": "71e5e8829415d09533a8648fd615cf06b94e767258c383bd8b6624cb510741c4",
+    "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json": "cc40bc02687e69af79c7c71b66feebc5df67ca24616a4ceb60aa76325860a082"
+   }
+  },
+  "1 Lemma 1: the reduced reading equals the full-state reading on the domain, every other failure is a translate, and the balance verdict agrees with BIRTH-RULE's readings()": {
+   "pass": true,
+   "info": {
+    "g = 3, runs [6]": {
+     "side": 12,
+     "full failures": 144,
+     "reduced failures": 16,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": false,
+     "balanced (reduced)": false,
+     "periods": [
+      479,
+      479
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 3, runs [8]": {
+     "side": 12,
+     "full failures": 144,
+     "reduced failures": 16,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": false,
+     "balanced (reduced)": false,
+     "periods": [
+      479,
+      479
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 3, runs [12]": {
+     "side": 12,
+     "full failures": 0,
+     "reduced failures": 0,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": true,
+     "balanced (reduced)": true,
+     "periods": [
+      479,
+      479
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 3, runs [13]": {
+     "side": 12,
+     "full failures": 0,
+     "reduced failures": 0,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": true,
+     "balanced (reduced)": true,
+     "periods": [
+      479,
+      479
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 3, runs [12, 1]": {
+     "side": 24,
+     "full failures": 0,
+     "reduced failures": 0,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": true,
+     "balanced (reduced)": true,
+     "periods": [
+      959,
+      959
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 3, runs [12, 3]": {
+     "side": 24,
+     "full failures": 576,
+     "reduced failures": 64,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": false,
+     "balanced (reduced)": false,
+     "periods": [
+      959,
+      959
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 2, runs [2]": {
+     "side": 12,
+     "full failures": 0,
+     "reduced failures": 0,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": true,
+     "balanced (reduced)": true,
+     "periods": [
+      111,
+      111
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 2, runs [4]": {
+     "side": 12,
+     "full failures": 144,
+     "reduced failures": 16,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": false,
+     "balanced (reduced)": false,
+     "periods": [
+      111,
+      111
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 2, runs [5]": {
+     "side": 12,
+     "full failures": 144,
+     "reduced failures": 16,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": false,
+     "balanced (reduced)": false,
+     "periods": [
+      111,
+      111
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 5, runs [6]": {
+     "side": 12,
+     "full failures": 0,
+     "reduced failures": 0,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": true,
+     "balanced (reduced)": true,
+     "periods": [
+      3391,
+      3391
+     ],
+     "rings born at the stage that fail": 0
+    },
+    "g = 5, runs [8]": {
+     "side": 12,
+     "full failures": 144,
+     "reduced failures": 16,
+     "domain failures equal": true,
+     "outside failures are translates": true,
+     "balanced (readings)": false,
+     "balanced (reduced)": false,
+     "periods": [
+      3391,
+      3391
+     ],
+     "rings born at the stage that fail": 0
+    }
+   }
+  },
+  "2 Lemma 2: no ring born at a doubling fails in its stage": {
+   "pass": true,
+   "info": {
+    "g = 3, runs [6]": 0,
+    "g = 3, runs [8]": 0,
+    "g = 3, runs [12]": 0,
+    "g = 3, runs [13]": 0,
+    "g = 3, runs [12, 1]": 0,
+    "g = 3, runs [12, 3]": 0,
+    "g = 2, runs [2]": 0,
+    "g = 2, runs [4]": 0,
+    "g = 2, runs [5]": 0,
+    "g = 5, runs [6]": 0,
+    "g = 5, runs [8]": 0
+   }
+  }
+ },
+ "status": "passed"
+}

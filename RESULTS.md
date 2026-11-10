@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**287 current results** and 5 superseded ones, from 251 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**287 current results** and 5 superseded ones, from 252 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 8 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 251 epics with their closures
+- [Epics](#epics): all 252 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1245,6 +1245,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 | 2026-11-10 | F2 polynomial calculus on the sphere's count (`PC-COUNT-20261110-001`) | [closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/PC-COUNT-20261110-001/) |
 | 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |
+| 2026-11-10 | Reading distance while growing (`READ-GROW-20261110-001`) | [closure](proofs/READ-GROW-20261110-001Z/READ-GROW-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-GROW-20261110-001/) |
 | 2026-11-10 | Res(xor) beyond tree-like on the sphere's count (`RES-XOR-COUNT-20261110-001`) | [closure](proofs/RES-XOR-COUNT-20261110-001Z/RES-XOR-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RES-XOR-COUNT-20261110-001/) |
 | 2026-11-10 | A temporary rise (`RISE-ESCAPE-20261110-001`) | [closure](proofs/RISE-ESCAPE-20261110-001Z/RISE-ESCAPE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RISE-ESCAPE-20261110-001/) |
 | 2026-11-10 | Tree-like Res(xor) on the sphere's count (`TREE-XOR-20261110-001`) | [closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-XOR-20261110-001/) |

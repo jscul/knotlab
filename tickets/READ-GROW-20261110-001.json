@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "doubling"
+    ],
+    "program": "foundations",
+    "takes": "B89"
+  },
+  "id": "READ-GROW-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up sub-goal B89, given the go-ahead by the coordinator on 2026-11-10 (G1 with G5): on the 5 x 5 tube at g = 3, find a doubling schedule under which original rings are heard by ring (0, 0)'s neighbours at distance 1 and then at distance 2 while every stage stays balanced, and read whether the hearing lags between original rings form a metric of the original lattice; positives checked one size past with a second independent code.",
+  "ownership": {
+    "root": true,
+    "scope_id": "READ-GROW-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (sub-goal B89): on the 5 x 5 tube at g = 3, five two-run schedules keep every stage balanced through 40 x 40 while the original rings hear ring (0, 0) in order of distance, 1 before 2 (two confirmed on the full state and by an independent code), [12, 28] hearing distance 2 only after a later doubling; in one pause the lags read taxicab distance exactly, after a doubling not; no metric (the farthest rings never heard while balanced, the offset breaks the triangle inequality). One size past pending as READ-GROW-A1. Recommendation Research directions (sub-goal B102).",
+  "status_class": "complete",
+  "stop_rule": "Stop at a schedule that reads distance 1 then 2 with every stage balanced to 40 x 40, confirmed at 80 x 80 by two codes, or at the frozen family's exhaustion with none.",
+  "title": "Reading distance while growing"
+}

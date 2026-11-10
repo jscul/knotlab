@@ -115,6 +115,7 @@ evidence: results and their status come from the records each entry links.
 | [A58](#a58--the-world-holds-inputs-as-points-and-reads-an-output-at-the-floor) | The world holds inputs as points and reads an output at the floor | reading | Assumed |
 | [A59](#a59--renamings-count-as-finite-changes-under-abstract-names) | Renamings count as finite changes under abstract names | reading | Confirmed |
 | [A60](#a60--nativeness-under-abstract-names-is-counted-in-place) | Nativeness under abstract names is counted in place | reading | Assumed |
+| [A61](#a61--closing-a-cycle-in-a-growth-step-names-a-face) | Closing a cycle in a growth step names a face | reading | Assumed |
 
 ## Entries
 
@@ -1284,6 +1285,11 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · The board line closes on it, with `GROW-FACE-20261110-001` ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)):
+    places and their neighbours need not be given before the rules, but a face must be named by them. Static laws, with letters
+    or without, and laws that grow the board from a seed choose the plane only by naming a face (for growth by definition, A61).
+    With a named face, growth from one seed gives the plane itself with coordinates mod 3, where a static law with those values
+    allows its cylinders and tori: growth adds one world with no quotient, but no face. The line is parked.
   - 2026-11-10 · Extended by `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)): with the neighbours
     themselves distinctions of the law, on names without letters, no finitary law forces two places to touch (Ramsey), every
     count law allows the tree, and a named square with aperiodic tiles gives planes only componentwise (proved). For finitary
@@ -1527,3 +1533,21 @@ evidence: results and their status come from the records each entry links.
   condition, not a change to it; any change to the canonical test is the owner's.
 - **History.**
   - 2026-11-10 · Added by `PLACE-FLIP-20261110-001`.
+
+### A61 · Closing a cycle in a growth step names a face
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** A growth step of an accretion law names a face when it closes a cycle, by joining a new place to two or more existing
+  places or by joining two existing places. Since the cycle runs through the step's view, the step fixes it. Merging places and
+  changing existing values are outside accretion.
+- **Why.** `GROW-FACE-20261110-001` froze it before any computation, at the coordinator's request, as what would count as growth
+  forcing the plane without a named face. Under it a law that names no face grows trees, so growth needs a named face by definition;
+  the epic's content is what laws that do name faces force.
+- **Rests on it.** That epic's verdict for growth, and with it the board line's closing summary ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)).
+- **Challenge.** Read naming more finely: a rule names a face only when it fixes the face's length or offsets. Then ask whether a law
+  that closes whatever short cycles it sees, without coordinates, can grow the plane in every fair order; such a law would show the
+  face emerging rather than written in. Merging places whose views agree while growing, a Leibniz rule, is another way to close
+  cycles that no step fixes.
+- **History.**
+  - 2026-11-10 · Added by `GROW-FACE-20261110-001`.

@@ -2441,8 +2441,20 @@ So network holes come in two kinds:
      second solution G′ whose Wronskian with G is a single power of Y, like two consecutive convergents of a continued fraction.
    - **Where it stops.** The second vector needs G′, and the cancellation at co-distance 3 (the corrections adding 1 to a pure part of 1)
      was not derived; by the rule frozen beforehand, the attempt ends at order 2. No lag cutoff was used.
-   - **Next (selected, pending the coordinator).** The leading form through the pair of solutions, bounded to co-distance 3
+   - **Next (selected, taken by `CODIST-THREE-20261110-001`).** The leading form through the pair of solutions, bounded to co-distance 3
      ([decision note](../research/LEADING-FORM-20261110-001/leading_form.md)).
+
+   **2026-11-10: the co-distance-3 cancellation** (`CODIST-THREE-20261110-001`).
+   - **The question.** Can the next order of the leading form, its vanishing at co-distance 3, be derived?
+   - **The second order is a gap (proved).** The chains' second step exists exactly because N·L(Y), with N = G(k)G(k + 1) and
+     L(Y) = Y + Y² + ⋯ + Y^(n/4), has no terms between degree n/2 − k + 1 and n/2 − 2.
+   - **Half of the next order (proved), the rest computed.** At co-distance 3 the order-4 coefficient splits into five pieces. Two vanish
+     by the gap and because, in characteristic 2, a double sum over pairs of powers of two keeps only its diagonal: that is where the
+     leading form's powers of two come from. The other three add to 0 at every pair tested.
+   - **Reading.** The rest needs the high coefficients of a quotient by the Padé denominator Q, which were not found; by the rule frozen
+     beforehand the collapse line is parked, with the curve behind each eigenvalue (B59) picked first for a restart. No lag cutoff was
+     used.
+   - **Next (parked).** The collapse line pauses here ([decision note](../research/CODIST-THREE-20261110-001/codist_three.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

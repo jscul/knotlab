@@ -110,3 +110,31 @@ correct).
 
 **Recommendation.** Full pivot from the decoder route, with the note for review recommended first and recorded as sub-goal B116 under the
 owner's rule for untaken 3/3 directions, for the coordinator to confirm.
+
+## Final report as sent
+
+B114 is closed with a proved bound. Every dag-like Res(⊕) refutation of the binary left-pigeon principle needs exp(Ω(n / log⁵ n)) lines, both with 2n pigeons and with the PPADS-complete n + 1. As far as my searches found, this is the first Res(⊕) lower bound of any kind for a PPADS-complete principle.
+
+Before any proof work I checked the novelty and the transfer. The 2n-pigeon formula derives bit-PHP's clauses in one step each, so its bound is stronger than Braun's and doesn't follow from it. Its clause set contains the n + 1 pigeon clauses line for line, so the bound transfers.
+
+The proof has three steps. First, separation reduces to a decoder kernel (from earlier). Second, a new spare-row lemma: a cube parks the pigeons it moves in a few spare holes and pigeons, so the space avoiding those spares misses the kernel. Third, a density count through Braun's criterion. All four frozen checks held: the space missed the kernel at (4,1), (8,1) and (16,2), and the stress test one size past passed.
+
+Two caveats. It's V1, one session and not externally reviewed. It also rests on Braun's unrefereed but Lean-checked preprint, now recorded as assumption A55. Scope: it covers this binary encoding only and does not reach the sphere's count. Per your condition, the decoder route is now finished.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the 2n-pigeon route | Successful | Dag-like Res(⊕) bound for bit LeftPigeon, proved |
+| Local direction: the decoder route | Full pivot | Finished, as you set |
+| Broader exploration: G3 | Known alternatives | Cutting planes (B82), the parity reduction (B101) |
+| Long-term goal: G3 | Capability gained | A PPADS-complete principle is hard for Res(⊕); the sphere's count isn't reached |
+
+**Next step:** Full pivot, with a note for review first.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | A note on the bound for review (B116) | 3/3 | 3/3 | Write it self-contained, settle which of Braun's lemmas the Lean replay covered → a note an expert can check |
+| 2 | Cutting planes on the count (B82) | 3/3 | 1/3 | As recorded |
+| 3 | A parity reduction from PIGEON to SINK (B101) | 3/3 | 1/3 | As recorded |
+
+**Corrections:** none. **Goals:** a G3 checkpoint; B114 taken; sub-goal B116 added. **Assumptions:** A55 added (Braun's preprint is correct).
+**Basket:** B116 (3/3, 3/3), B101 (3/3, 1/3), B82 (3/3, 1/3); none taken. B116 is recommended, and whether to share the result is John's call.

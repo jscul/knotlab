@@ -89,3 +89,34 @@ there cannot be walked away. No one tells it the configuration to aim for.
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B119 taken; B130 and B131 added; B120's concreteness raised to
 2/3. **Assumptions:** A57 added; A50 history line (writing uses its alternative).
 **Basket:** B120 (inputs and outputs), B130 (a probe that is a theorem); taken: B120 as the selected next step.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-10:
+
+**B119 is closed, and the answer is yes: the memory can be written natively.** A learner that sees only its own dissonance and the address it's asked for wrote 100 of 100 frozen addresses exactly, on five fresh spaces of up to six atoms, and every one held after a disturbance. There were no inexact stops. Every earlier address had been written by a search that was told the configuration to aim for.
+
+It tells whether an atom holds a 1 the way the memory does: an acting atom keeps dissonance in it in every state (P1, proved from lemma 3), so the learner lets its state wander on the floor without learning, and if the dissonance in an atom ever goes away, that atom doesn't act. It changes signs only on atoms whose answer is wrong, so atoms already right are never touched (P2, proved). With that test replaced by a single look at the dissonance, 84 of 100 writes stopped inexactly, which is the old search's failure. The theorem M result and the frame correction are now in the learning note.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: native writing (B119) | **Status:** Successful | 100 of 100 exact and held with no outside map; the probe is why |
+| Local direction: writing the layered memory | Continue | a native writer exists; the probe's reliability is the one computed link |
+| Broader exploration: learning program | Known alternatives | inputs and outputs, the probe as a theorem, writing with only the ones named |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | the point now writes and reads the memory itself |
+
+**Next step:** Research directions, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Inputs and outputs (B120) | 2/3 Substantial | 2/3 Testable | input points held by the world, the native writer storing the examples, a composite read as the output → a map learned from examples and held, or the input never reaches the handle | Selected, awaiting go-ahead |
+| 2 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | whether the floor walk reaches a clear region of every transparent atom from every floor state → a long enough probe never errs, or a trapped free unit | Deferred |
+| 3 | Writing with only the ones named (B131) | 1/3 Incremental | 2/3 Testable | the same learner told only the atoms asked 1 → exact writes, or unnamed atoms left acting | Deferred |
+| 4 | A frame fixed by learning (B126) | 1/3 Incremental | 1/3 Exploratory | as recorded | Deferred |
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (capability gained); B119 taken; B130 and B131 added; B120's concreteness raised to 2/3.
+**Assumptions:** A57 added (an address asks for a bit per atom, each atom given by its region); A50 gets a history line (the learner tests its memory with A50's walk and writes with its temperature alternative).
+**Basket:** B120 (inputs and outputs), B130 (a probe that is a theorem); taken: B120 as the selected next step.
+
+The stress test one size past finished in under three minutes and is folded in. B120 waits for a go-ahead.

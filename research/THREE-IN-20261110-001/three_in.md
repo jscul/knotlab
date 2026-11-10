@@ -79,3 +79,36 @@ The line pauses after this epic at the owner's decision (2026-11-10), not droppe
 **Corrections:** none. **Goals:** G15 checkpoint (obstruction learned); B133 taken; B136 added. **Assumptions:** none new or changed.
 **Basket:** B135 (deeper memories from examples), B136 (are maps of held points unate), B130 (a probe that is a theorem); taken: B135
 as the selected next step, paused until a go-ahead.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-10:
+
+**B133 is closed: three held points never count and never vote. At every interface tested, a knot memory's maps of held inputs are unate, and parity and majority are impossible there.** Self-duality allowed both.
+
+- **Census (exact).** I read every way of holding three points around a group, on every class of six spaces: 2,976,256 maps. Every one is self-dual. None is parity, none is majority, and none has an input that pushes the output both up and down. The only total maps (1,074) copy or negate a single input while the other two never reach the output. By the frame lemma this covers every law of these spaces, not just one signing per class.
+- **Learning (computed, frozen after the census).** The credit learner with the sturdier probe, extended to three inputs, never stopped on parity or majority (8 of 8). It learned and held the census's single-input map at 2 of 4 interfaces. On the two-level spaces that map lives in only 12 of 256 classes, and the learner didn't find one within the budget. So the L3 mark failed.
+- **Scope.** General NAE logic with hidden points can express parity (an external fact I haven't checked here), so the limit looks like a property of knot spaces. Whether it holds for every knot space and interface is open.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: three held inputs (B133) | **Status:** Successful | a definite answer: no non-unate map at these interfaces (exact); impossible targets never accepted |
+| Local direction: maps of held points | Exhausted for this phase | every map tested is unate; the open question is whether that's a theorem |
+| Broader exploration: learning program | Known alternatives | deeper memories, unateness as a theorem, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Obstruction learned | held inputs reach a knot memory's output only unately here |
+
+**Next step:** Research directions, selected #1, paused as agreed.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Deeper memories from examples (B135) | 2/3 Substantial | 2/3 Testable | as recorded | Selected, paused |
+| 2 | Are maps of held points unate (B136) | 2/3 Substantial | 1/3 Exploratory | census at radius 2 and on the six-atom space, then a proof attempt → a theorem, or a parity gadget | Deferred |
+| 3 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 4 | Single-input maps through rare classes | 1/3 Incremental | 2/3 Testable | longer budget or credit on the frozen pair | Deferred |
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (obstruction learned); B133 taken; B136 added.
+**Assumptions:** none new or changed.
+**Basket:** B135 (deeper memories), B136 (are maps of held points unate), B130; taken: B135 as the selected next step, paused.
+
+**The line is now paused, not dropped.** The learning note opens with a new "Picking the line up cold" section: what a learned knot memory is, what is established (by evidence class), the frozen tools with their paths, where to start again, and the lessons from the line's four corrections. The goals doc records the pause. All long runs are registered in docs/LONG_RUNNING.md and folded in. I won't start another epic on this line until there's a new go-ahead.

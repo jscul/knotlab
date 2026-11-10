@@ -2376,9 +2376,23 @@ So network holes come in two kinds:
      distance, recovered. After a doubling the diagonal ring is heard before the straight one two away: no longer taxicab.
    - **Not a metric.** The rings at distance 4 are never heard while every stage is balanced, and the lags' offset breaks the triangle
      inequality. The board is still declared (A51): the reading recovers it, it does not choose it.
-   - **Next (selected, awaiting a go-ahead).** A metric while growing (sub-goal B102; Payoff 3/3, Concreteness 2/3): two pauses on the
+   - **Next (taken: B102, next entry).** A metric while growing (sub-goal B102; Payoff 3/3, Concreteness 2/3): two pauses on the
      5 × 5 and 7 × 7 tubes, lags read without their offset or through freezes
      ([decision note](../research/READ-GROW-20261110-001/read_grow.md)).
+
+   **2026-11-10: a metric only between doublings** (`METRIC-GROW-20261110-001`).
+   - **The question.** Sub-goal B102: can a growing plane keep every stage balanced and read a metric on its original rings? Frozen
+     first: the time length is read through freezes (A41), from one cell of ring (0, 0) to the same cell of another ring; the round
+     trip, out and back, is symmetric by construction; a metric also needs the triangle inequality, with no offset subtracted.
+   - **No metric (exploratory, exact).** On the 5 × 5 tube one schedule, [28, 60], keeps every stage balanced to 40 × 40 and reaches
+     every original ring out and back, but far rings cost more than the sum of near trips: 60 violations of the triangle inequality,
+     such as 138 > 90 + 36.
+   - **The growth is what breaks it.** Every violation involves a trip across a doubling; within one stage a route to one ring
+     followed by a translated route to the next is a route, so the time length is subadditive there.
+   - **Reading.** The plane expands while it is read: the triangle excess is a native measure of growth during a trip. A metric is read
+     between doublings, and after growth stops (`GROW-STOP-20261110-001`), not across them. The 7 × 7 half is pending.
+   - **Next (proposed for the morning).** Expansion as a reading: the triangle excess as a function of the doublings each trip crosses
+     ([decision note](../research/METRIC-GROW-20261110-001/metric_grow.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

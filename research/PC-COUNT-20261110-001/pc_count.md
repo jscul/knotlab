@@ -96,7 +96,7 @@ Since the epic opened:
 | Long-term goal — G3 Hardness at three places | Obstruction learned | No algebraic system refutes the count in low degree over any field; only positivity does |
 
 **Corrections:** none (`TREE-XOR-20261110-001A`'s depth bound stays true and is improved). **Goals:** a G3 checkpoint (obstruction
-learned); B84 taken; one sub-goal and one backlog entry added. **Assumptions:** none added or changed.
+learned); B84 taken; one sub-goal (B93) and one backlog entry (B94) added. **Assumptions:** none added or changed.
 
 - **What the attempt leaves open.** The exponent (n^{1/4}/log n against O(√n)); K_4's exact degree; any Res(⊕) beyond tree-like.
 - **The missing bridge to the program's composed topology.** None here; this line asks how hard the sphere's contradiction is.
@@ -115,5 +115,5 @@ learned); B84 taken; one sub-goal and one backlog entry added. **Assumptions:** 
 3. **The exponent.** Payoff 2: 2^{Ω(√n)} for tree-like Res(⊕) would match resolution; Concreteness 2: the K_4 reading is a computation, the
    shorter embedding a construction.
 
-**Recommendation.** Research directions, none selected, for the coordinator. Direction 1 is recorded as a sub-goal (owner rule for
-untaken 3/3 directions) and direction 3 in the backlog; B82 stays as recorded.
+**Recommendation.** Research directions, none selected, for the coordinator. Direction 1 is recorded as sub-goal B93 (owner rule
+for untaken 3/3 directions) and direction 3 as backlog B94; B82 stays as recorded.

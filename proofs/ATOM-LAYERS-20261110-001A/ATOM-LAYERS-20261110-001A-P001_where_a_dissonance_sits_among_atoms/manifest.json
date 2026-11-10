@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ATOM-LAYERS-20261110-001A-P001",
+  "canonical_id": "ATOM-LAYERS-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "ATOM-LAYERS-20261110-001A",
+  "proof": "ATOM-LAYERS-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Where a dissonance sits among atoms",
+  "status": "Proved",
+  "claim": "At genus 2 a state at the floor W = 1 is one over-agreeing face with no violated line or even face, so learning with the state fixed cannot move it (proved). Computed on K_2 and K_3 with one or two Fano atoms: the dissonance moves down into an atom by growth at the dissonance, and the sight-4 learner then resolves it there or leaves one unit inside the other atom, present since that atom was grown; with atoms away from the dissonance the sight-4 learner is stuck; the floor unit can sit inside atoms on every space and at the upper level on half.",
+  "dependencies": [
+    "GROW-HANDLE-20261110-001A",
+    "GROW-STUCK-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A genus-2 floor state with a learning step."
+  ],
+  "lineage": {
+    "home_scope": "ATOM-LAYERS-20261110-001",
+    "epic_path": [
+      "ATOM-LAYERS-20261110-001"
+    ],
+    "parents": [
+      "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/stuck_lib.py",
+      "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py",
+      "research/ATOM-LAYERS-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/stuck_lib.py": "21c1cb67a13ddef5768d42946bba2e5e13b886ab571a2d90aea113e88c92feb4",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/ATOM-LAYERS-20261110-001/preregistration.md": "2ec39db90ee54f8a495ca31c31de5e4ff54390dd48093d0bc79e86998550c5ed"
+  },
+  "paths": {
+    "manifest": "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/manifest.json",
+    "identity": "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/identity.json",
+    "proof": "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/proof.md",
+    "result": "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/result.json",
+    "check": "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/check.py",
+    "directory": "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_2 and K_3 with at most two atoms (A48), the learner of A26 with A49's weight and sight 4.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered.",
+    "status": "theorem 1 proved by hand; the rest computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

@@ -1,0 +1,1056 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/stuck_lib.py": "21c1cb67a13ddef5768d42946bba2e5e13b886ab571a2d90aea113e88c92feb4",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/ATOM-LAYERS-20261110-001/preregistration.md": "2ec39db90ee54f8a495ca31c31de5e4ff54390dd48093d0bc79e86998550c5ed"
+   }
+  },
+  "1 B1: every genus-2 floor state the learner reached has no violated line, exactly one face with three agreeing corners, every other face one, and no learning step": {
+   "pass": true,
+   "info": {
+    "floor states": 15,
+    "hold": 15
+   }
+  },
+  "2 B2 (computed): on every genus-2 space the faces that can hold the floor unit, by level": {
+   "pass": true,
+   "info": {
+    "spaces with upper hosts": 10,
+    "spaces with atom hosts": 20,
+    "of": 20,
+    "hosts by space": [
+     [
+      "K_2",
+      3,
+      "at l0 and d = 1",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      3,
+      "at l0 and d = 2",
+      {
+       "junction": 6,
+       "upper": 4,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      3,
+      "at l0 and d = 3",
+      {
+       "junction": 6,
+       "upper": 4,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      3,
+      "away (d = 2 and 3)",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      4,
+      "at l0 and d = 1",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      4,
+      "at l0 and d = 2",
+      {
+       "junction": 6,
+       "upper": 4,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      4,
+      "at l0 and d = 3",
+      {
+       "upper": 8,
+       "junction": 6,
+       "atom": 8
+      }
+     ],
+     [
+      "K_2",
+      4,
+      "away (d = 2 and 3)",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      6,
+      "at l0 and d = 1",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      6,
+      "at l0 and d = 2",
+      {
+       "junction": 6,
+       "upper": 27,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      6,
+      "at l0 and d = 3",
+      {
+       "junction": 6,
+       "upper": 26,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      6,
+      "away (d = 2 and 3)",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      9,
+      "at l0 and d = 1",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      9,
+      "at l0 and d = 2",
+      {
+       "upper": 28,
+       "junction": 6,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      9,
+      "at l0 and d = 3",
+      {
+       "junction": 6,
+       "upper": 27,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      9,
+      "away (d = 2 and 3)",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      10,
+      "at l0 and d = 1",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      10,
+      "at l0 and d = 2",
+      {
+       "junction": 6,
+       "upper": 26,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      10,
+      "at l0 and d = 3",
+      {
+       "junction": 6,
+       "upper": 26,
+       "atom": 8
+      }
+     ],
+     [
+      "K_3",
+      10,
+      "away (d = 2 and 3)",
+      {
+       "junction": 5,
+       "atom": 8
+      }
+     ]
+    ]
+   }
+  },
+  "3 B3 (computed): one atom, at l0 or away: resolved, and the levels the dissonance visited": {
+   "pass": true,
+   "info": {
+    "resolved": 5,
+    "of": 10,
+    "(atoms, start levels, levels visited)": {
+     "('at l0', ('lower',), ('junction', 'lower'))": 3,
+     "('away (d = 2)', ('lower', 'upper'), ('lower', 'upper'))": 5,
+     "('at l0', ('junction', 'lower'), ('junction', 'lower'))": 2
+    }
+   }
+  },
+  "4 B4 (computed): two atoms: whether the learner reaches the floor, and where the remaining dissonance ends": {
+   "pass": true,
+   "info": {
+    "reached the floor": 15,
+    "of": 20,
+    "(atoms, end levels)": {
+     "('at l0 and d = 1', ('lower',))": 5,
+     "('at l0 and d = 2', ('lower',))": 5,
+     "('at l0 and d = 3', ('lower',))": 4,
+     "('away (d = 2 and 3)', ('lower', 'upper'))": 4,
+     "('at l0 and d = 3', ('junction',))": 1,
+     "('away (d = 2 and 3)', ('junction', 'lower', 'upper'))": 1
+    },
+    "rows": [
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "atoms": "at l0",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 0.0,
+      "floor": 0.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {}
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "atoms": "away (d = 2)",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 2.0,
+      "floor": 0.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "violated line, upper": 1
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "atoms": "at l0 and d = 1",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "atoms": "at l0 and d = 2",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 4,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "atoms": "at l0 and d = 3",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 4,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "atoms": "away (d = 2 and 3)",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 3.0,
+      "floor": 1.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "over-agreeing face, atom 1": 1,
+       "violated line, upper": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "atoms": "at l0",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 0.0,
+      "floor": 0.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {}
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "atoms": "away (d = 2)",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 2.0,
+      "floor": 0.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "violated line, upper": 1
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "atoms": "at l0 and d = 1",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "atoms": "at l0 and d = 2",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 4,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "atoms": "at l0 and d = 3",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "upper": 8,
+       "junction": 6,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "atoms": "away (d = 2 and 3)",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 3.0,
+      "floor": 1.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "over-agreeing face, atom 1": 1,
+       "violated line, upper": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "atoms": "at l0",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 0.0,
+      "floor": 0.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {}
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "atoms": "away (d = 2)",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 2.0,
+      "floor": 0.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "violated line, upper": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "atoms": "at l0 and d = 1",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "atoms": "at l0 and d = 2",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 27,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "atoms": "at l0 and d = 3",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 26,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "atoms": "away (d = 2 and 3)",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 3.0,
+      "floor": 1.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "over-agreeing face, atom 1": 1,
+       "violated line, upper": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "atoms": "at l0",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 0.0,
+      "floor": 0.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {}
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "atoms": "away (d = 2)",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 2.0,
+      "floor": 0.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "violated line, upper": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "atoms": "at l0 and d = 1",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "atoms": "at l0 and d = 2",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "upper": 28,
+       "junction": 6,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "atoms": "at l0 and d = 3",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 27,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "atoms": "away (d = 2 and 3)",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 3.0,
+      "floor": 1.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "over-agreeing face, atom 1": 1,
+       "violated line, upper": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "atoms": "at l0",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 0.0,
+      "floor": 0.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {}
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "atoms": "away (d = 2)",
+      "genus": 1,
+      "W start": 2.0,
+      "W end": 2.0,
+      "floor": 0.0,
+      "sign changes": 0,
+      "start levels": [
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "violated line, upper": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "atoms": "at l0 and d = 1",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "atoms": "at l0 and d = 2",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [
+       "lower"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 1": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 26,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "atoms": "at l0 and d = 3",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 1.0,
+      "floor": 1.0,
+      "sign changes": 3,
+      "start levels": [
+       "junction",
+       "lower"
+      ],
+      "end levels": [
+       "junction"
+      ],
+      "levels visited": [
+       "junction",
+       "lower"
+      ],
+      "end defects": {
+       "over-agreeing face, junction": 1
+      },
+      "hosts": {
+       "junction": 6,
+       "upper": 26,
+       "atom": 8
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "atoms": "away (d = 2 and 3)",
+      "genus": 2,
+      "W start": 3.0,
+      "W end": 3.0,
+      "floor": 1.0,
+      "sign changes": 0,
+      "start levels": [
+       "junction",
+       "lower",
+       "upper"
+      ],
+      "end levels": [
+       "junction",
+       "lower",
+       "upper"
+      ],
+      "levels visited": [
+       "junction",
+       "lower",
+       "upper"
+      ],
+      "end defects": {
+       "over-agreeing face, atom 0": 1,
+       "over-agreeing face, junction": 1,
+       "violated line, upper": 1
+      },
+      "hosts": {
+       "junction": 5,
+       "atom": 8
+      }
+     }
+    ]
+   }
+  },
+  "seconds": 2.8
+ }
+}

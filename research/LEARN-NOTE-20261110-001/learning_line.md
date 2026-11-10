@@ -10,9 +10,47 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## The line as it stands (updated 2026-11-10, after `STURDY-PROBE-20261110-001`)
+## Picking the line up cold (paused 2026-11-10, after `THREE-IN-20261110-001`)
 
-Sections 1 to 8 are the note as written for B95. Thirteen epics since then change its statement; this section is the current one.
+The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere. It is paused, not dropped. This section is what
+a new thread needs; the section after it is the full current statement, and sections 1 to 8 the history.
+
+**What a learned knot memory is, in one paragraph.** A knot space's law signs its lines; a point's state is a bit per point; dissonance
+W counts violated lines and even faces (at a Kasteleyn law, W = |χ| + 4·violated lines + 2·even faces, so the floor states are the
+satisfying ones). An atom (a class-forced torus less a point, spliced at a line) acts as that line in one class and lets everything
+through in the others; composites of atoms act exactly when all their atoms act (AND). Which atoms act is the stored address. Reading
+roles from stored classes is monotone (theorem M); reading held inputs is self-dual (theorem D).
+
+**What is established.**
+- *Proved by hand:* the atom rule and units (OTHER-ATOMS, NEST-ATOMS, MANY-POINTS), AND-only composites (COMPOSITE-FN), monotone
+  class-level readings (NOT-INSIDE, theorem M), self-duality of maps of held inputs and the frame lemma (IN-OUT, theorem D, lemma G), a
+  composite's interface seeing its atoms only through their AND (IN-OUT, lemma C), and an acting atom's dissonance never walking away
+  (NATIVE-WRITE, P1).
+- *Exact:* an atom acts exactly when its own constraints cannot clear its region (seven spaces); an acting atom held on two sides is a
+  gate (18 interfaces); no map of three held points is parity, majority or non-unate (THREE-IN, six spaces, every law).
+- *Computed, frozen:* native writing of addresses, 100 of 100 (NATIVE-WRITE); learning gates of held inputs from examples, natively and
+  without false stops, at every leaf and composite tested, 84 of 84 with the credit learner and the sturdier probe (STURDY-PROBE); the
+  impossible AND, parity and majority never accepted.
+
+**The tools** (all frozen, each with a `check.py` that reproduces its result):
+- `proofs/NATIVE-WRITE-20261110-001A/.../write_lib.py`: spaces S1 to S5 and the dev spaces (`Space`), the fast incremental dissonance
+  `Engine` (about 100,000 moves a second), M1, the native writer and its probe.
+- `proofs/IN-OUT-20261110-001A/.../io_lib.py`: interfaces, exact map reading by SAT, the clamped probe, attention that widens.
+- `proofs/CREDIT-PIN-20261110-001A/.../fix_lib.py` (the stall fix) and `proofs/CREDIT-PIN-20261110-001B/.../credit_lib.py` (credit
+  from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
+  `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
+
+**Where to start again** (the basket, best first): deeper memories from examples (B135, 2/3 and 2/3); whether every map of held points
+is unate, a structural bound on what the memory computes (B136, 2/3 and 1/3); a probe that is a theorem (B130); writing with only the
+ones named (B131); a frame fixed by learning (B126).
+
+**Lessons from the line's corrections** (`docs/CORRECTIONS.md`): read a role through a second signing before calling it stored memory;
+re-run with a defect fixed before reading failures as a property of the system; rule a shared fallible check out before reading a
+difference between two learners; every learning count is scored by SAT, so a fooled probe shows as an inexact stop, never as a success.
+
+## The line as it stands (updated 2026-11-10, after `THREE-IN-20261110-001`)
+
+Sections 1 to 8 are the note as written for B95. Fourteen epics since then change its statement; this section is the current one.
 
 **Proved by hand.**
 - **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
@@ -74,6 +112,9 @@ Sections 1 to 8 are the note as written for B95. Thirteen epics since then chang
   *Corrected (`STURDY-PROBE-20261110-001`): with a sturdier probe, the credit learner learned all 84 of its writes.*
 - A probe that is not fooled (`STURDY-PROBE-20261110-001`, frozen): each negative check four 25,000-step walks, three from fresh states;
   no false stop in 156 writes and 39 runs of AND, at 2.5 times the walk steps; every earlier figure, scored by SAT, stays or rises.
+- Three held inputs (`THREE-IN-20261110-001`): exact on every class of six spaces, no map of three held points is parity, majority or
+  non-unate, and the only total maps copy or negate one input; with the frame lemma this covers every law. The learner never accepted
+  parity or majority (8 of 8) and learned the single-input map at 2 of 4 interfaces.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -89,9 +130,9 @@ Sections 1 to 8 are the note as written for B95. Thirteen epics since then chang
 
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
 writer's walk never errs when long enough (B130); writing with only the ones named (B131); deeper memories from examples (B135);
-three held inputs (B133); and whether
-learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132 and B134
-are answered above.
+whether every map of held points is unate (B136); and whether
+learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132, B133
+and B134 are answered above.
 
 ## 1. Where it started
 

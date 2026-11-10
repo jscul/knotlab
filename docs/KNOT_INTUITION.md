@@ -1647,8 +1647,20 @@ So network holes come in two kinds:
      accepted "both" of two inputs, which no knot can compute. It cost two and a half times the looking.
    - **Reading.** With that check, a learner that feels only its own tension, and keeps the parts whose tension it cannot walk away,
      learned every gate it was asked for, inside patterns of patterns too.
-   - **Next.** Three held inputs (backlog B133): self-duality allows majority and parity, the strongest test of what the held points
-     let the memory compute ([decision note](../research/STURDY-PROBE-20261110-001/sturdy_probe.md)).
+   - **Next (taken by `THREE-IN-20261110-001`, below).** Three held inputs (backlog B133): self-duality allows majority and parity, the
+     strongest test of what the held points let the memory compute ([decision note](../research/STURDY-PROBE-20261110-001/sturdy_probe.md)).
+
+   **2026-11-10: three held points never count or vote** (`THREE-IN-20261110-001`).
+   - **The question.** Backlog B133: with two held points the memory can only gate, copy or negate. With three, "opposite inputs give
+     the opposite answer" still allows a vote (majority) or a count (parity). Does a learned knot compute either?
+   - **Exact.** Reading every way of holding three points around a stored pattern, on every law of six spaces, nearly three million
+     ways: never a vote, never a count, and never an answer that one input pushes both up and down. The only full answers follow one
+     input and ignore the other two.
+   - **Computed.** A learner asked for a count or a vote never pretended it had one.
+   - **Reading.** What the world holds reaches a learned knot's answer only one way round. Plain logic of this kind can count with hidden
+     helpers, so the limit belongs to the knot space; whether it holds everywhere is open.
+   - **Next.** The line pauses here (2026-11-10); deeper memories from examples (backlog B135) when it resumes
+     ([decision note](../research/THREE-IN-20261110-001/three_in.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

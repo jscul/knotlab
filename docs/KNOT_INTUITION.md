@@ -1557,7 +1557,17 @@ So network holes come in two kinds:
      excluded pattern, a clause.
    - **Reading.** A cut tells the level above whether everything inside holds; a name tells it how the parts line up. A network with
      both may compute more than conjunctions, which is the next phase's first question (sub-goal B118).
-   - **Next.** The next phase of the learning line awaits the owner ([decision note](../research/NAME-LAYERS-20261110-001/name_layers.md)).
+   - **Next (taken by `GATES-20261110-001`, below).** A learned network that computes, sub-goal B118
+     ([decision note](../research/NAME-LAYERS-20261110-001/name_layers.md)).
+
+   **2026-11-10: AND and OR, but no NOT yet** (`GATES-20261110-001`).
+   - **The question.** Sub-goal B118: do cuts and names together compute every function of the stored bits?
+   - **Proved.** If any part of a network holds a contradiction of its own, the whole network does, so every reading says yes wherever
+     every stored bit is set; and a stored pattern seen only from outside its three sides can never be read negated.
+   - **Computed.** 43,091 small networks read "all of these" and "any of these", single bits and constants, but never "not this".
+   - **Reading.** The layered memory reasons monotonically so far. After the run, names were seen to read a finer signal, the parity of
+     how a pattern's tension is wound, which is the next place to look for a negation.
+   - **Next.** Reading the class, not the bit (backlog B122) ([decision note](../research/GATES-20261110-001/gates.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "JORDAN-CHAINS-20261110-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "CHAIN-ORDERS-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At n = 2^m, h = n/2, q = 2n, for a in GF(q)* with G the monic least-degree element of ker X_b (b = sqrt(a)), k = h - deg G, J = ceil(k/2) and u = (w - a)/a: prove (1) the sparse Taylor form Omega(a + d) = (1 + d/a)(Omega_a + sum over r = 1..m-1 of d^(2^r) k^(h - 2^(r-1))) mod d^n; (2) the Hankel reduction: near a, Z(w) is equivalent to diag(H(w), I) with H(w) the (h/2) x (h/2) Hankel matrix of psi_1(w), ..., psi_(h-1)(w), psi(w) = (Omega(w) + k + 1)/(k Omega(w) + (k + 1)^2) mod k^h written in Y; (3) Gamma^(k) = [k - i - j is a power of two]_(i, j < J) is invertible over GF(2) for every k; and, as the target, (4) the leading form: the symmetric reduction M of Z to ker X_b = G F[Y]_(<J) (complement: the monomials off the kernel's top degrees) has M_ij = u^(2k - 1 - 2(i + j)) (Gamma^(k)_ij + O(u)), so that with (3) G Y^j heads a Jordan chain of exactly 2k - 1 - 4j and these are the partial multiplicities; or the order where the argument stops. Found by exact computation before registration: (1) at sides 8 to 32, the partial multiplicities of H at sides 8 to 32, (3) for k < 400, (4) at every a for sides 8 to 64.",
+  "ownership": {
+    "root": false,
+    "scope_id": "CHAIN-ORDERS-20261110-001"
+  },
+  "parent": "CHAIN-ORDERS-20261110-001",
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "The reduced form at every order"
+}

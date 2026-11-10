@@ -2725,6 +2725,28 @@ So network holes come in two kinds:
      used.
    - **Next (parked).** The collapse line pauses here ([decision note](../research/CODIST-THREE-20261110-001/codist_three.md)).
 
+   **2026-11-10: both halves of full reach** (`REACH-HALVES-20261110-001`).
+   - **The question.** The cut-open square torus loses full reach exactly at the powers of two from 8 (computed). Can either half be
+     proved: the failure at every power of two, and full reach at every other side?
+   - **The failure is one walk count (proved).** If the contact next to a corner never reaches the point half a side away just below the
+     diagonal, the contact just above it never reads the corner's ring, and full reach fails. On every other contact the walk is a grid
+     walk with a conveyor belt (no step left on the bottom row, none right on the top row), so the failure needs only that walks from one
+     corner of that grid to one diagonal point are even in number at every length. The spectrum, which eight epics studied, is not needed.
+   - **A symmetry the box hides (proved).** The box's mirrors swap the walk with its reverse, but the mirror through the corner's
+     neighbour and the target is a true symmetry of the walk. Mod 2 it cancels every excursion off that diagonal except those above it
+     that reach the left or top wall; in the open plane nothing gets through.
+   - **Computed to side 128.** The count vanishes at every power of two from 8 to 128, and there the corner reads every contact but the
+     target and a few points like it. The corner returns to itself exactly as the trace polynomial of GF(2n) says: its return series is
+     1/(1 + w⁴ + w⁸ + ⋯ + w^(4n)). In the quadrant it returns as often as the Catalan numbers are odd, and the box folds that pattern
+     modulo 2n − 1. With either far wall removed the corner's returns are the quadrant's and it does reach the target: all four walls
+     are needed.
+   - **The other half.** Full reach holds at every side from 3 to 130 except exactly 8, 16, 32, 64 and 128, as predicted before the run,
+     but no infinite family is proved; a cyclic contact in every ring would suffice, and that holds only at scattered sides.
+   - **Reading.** Why powers of two fail now sits in one corner's walk, where the trace of GF(2n) appears in the plainest form. A proof
+     of the return law is the cheapest way in. No lag cutoff was used.
+   - **Next (selected, awaiting the coordinator).** The corner return law as a theorem (B138)
+     ([decision note](../research/REACH-HALVES-20261110-001/reach_halves.md)).
+
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of
      genus at least 2 read it too. Are they rescued the same way?

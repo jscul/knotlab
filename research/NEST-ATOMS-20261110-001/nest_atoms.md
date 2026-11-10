@@ -107,3 +107,11 @@ replaced only when every pattern inside it does. So the layers read each other: 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B104 taken; B109 and B110 added. **Assumptions:** none new or
 changed in status; A52 read for composites (history line).
 **Basket:** B3, `RESIGN-STEER-20261107-001`#3, B106; taken: B3 as the selected next step, pending the owner's go-ahead.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (05:10 UTC): the answer (a group of atoms behind a three-edge cut is an atom of the
+next level, reading as the AND of its atoms), the theorem by hand with its unit count and the monotone limit, the computed checks (274
+removed points, 576 classes, 11 of 12 two-level addresses), the misses against the pre-registration (N2 as stated inside leaves; ticket C
+between its marks), both tables of the position and next directions above with B3 selected pending the owner's go-ahead, the
+Corrections, Goals and Assumptions lines, and the Basket line.

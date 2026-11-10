@@ -2012,8 +2012,19 @@ So network holes come in two kinds:
    - **Reading.** The grown plane is a patchwork of territories, one per original ring, each refined and heard inside while it grows,
      none heard across its border; the knots survive because nothing crosses. Between its original rings the plane reads no distance while
      it grows.
-   - **Next (selected, B55).** Why g = 3 keeps balance, by confinement to territories
+   - **Next (taken: B57, next entry; then B55).** Larger spacings; why g = 3 keeps balance, by confinement to territories
      ([decision note](../research/GROW-HEAR-20261109-001/grow_hear.md)).
+
+   **2026-11-09: larger spacings** (`SPACING-20261109-001`).
+   - **The question.** Pre-registered: at spacings g = 4 and 5, can a growing plane keep its knots while influence crosses a territory
+     border, an original ring heard by another?
+   - **No border crossed (exploratory, exact).** Doubling every 1 to 4 lags, no original ring is heard by another at either spacing.
+   - **Odd spacings keep balance with hearing.** At g = 5 doubling every 2, 3 and 4 lags keeps every stage balanced while rings hear
+     each other inside territories, to 24 × 24; at g = 4 every such schedule fails at 12 × 12. With g = 2 and 3, balance with hearing
+     appears exactly at the odd spacings read, whose corners hold an even number of own cells.
+   - **Reading.** Territories are the rule at every spacing read; slower doubling at an odd spacing is the one place left where a border
+     might be crossed with balance kept (sub-goal B63).
+   - **Next (selected, B55).** Why odd spacings keep balance ([decision note](../research/SPACING-20261109-001/spacing.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

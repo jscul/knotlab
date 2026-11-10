@@ -5488,6 +5488,21 @@ So network holes come in two kinds:
    - **Next (selected).** Every accretion law, the one route left that could change the line's verdict
      ([decision note](../research/PLACE-FLIP-20261110-001/place_flip.md)).
 
+   **2026-11-10: every accretion law** (`GROW-FACE-20261110-001`), the board line's deciding epic.
+   - **The question.** Static laws choose the plane only by naming a face. Can a law that grows the board from a seed do it without
+     naming one?
+   - **No, by definition (proved).** A growing rule that closes no cycle grows the seed with trees attached. A local rule that closes
+     a cycle names it, because the cycle runs through what the rule can see. So the escape the epic froze could not exist, which its
+     registration should have said (corrected).
+   - **With a named face, growth gives the plane itself (proved).** A rule that closes squares, with coordinates mod 3 as its only
+     values, grows the square spiral one place at a time, in its only order: its head is the only place whose view looks like a
+     head's. With the same values a static law also allows the plane's cylinders and tori.
+   - **Growing everywhere at once, an order splits it (proved).** For every radius and every fixed priority, the rule that fills any
+     missing neighbour and closes every square it sees can be grown into two long arms, and the slit between them, filled from the
+     top, gets two places at one position.
+   - **The line closes and is parked.** A uniform local law, static or growing, chooses the plane only by naming a face; growth adds
+     one world with no quotient, not a face ([decision note](../research/GROW-FACE-20261110-001/grow_face.md), with the line's closing summary).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

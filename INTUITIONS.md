@@ -1091,6 +1091,10 @@ The values on it can change in place, with the board kept, wherever the world
 comes in finite pieces. On the free board a change has to stop somewhere, and
 for most of these rules it never can
 ([PLACE-FLIP-20261110-001](research/PLACE-FLIP-20261110-001/place_flip.md)).
+Growing the board from a seed does not escape this either. A growing rule
+that closes no cycle grows a tree. One that closes squares can grow the
+whole plane, one place at a time, but it names each square as it closes it
+([GROW-FACE-20261110-001](research/GROW-FACE-20261110-001/grow_face.md)).
 
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the

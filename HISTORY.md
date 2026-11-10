@@ -3,6 +3,19 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: the accretion epic's registration offered a test its definition settled
+
+- The pre-registration of `GROW-FACE-20261110-001` listed a failure of its
+  first target as an outcome that would keep the board line open. Under its
+  own definition, where closing any cycle names a face, that target holds by
+  definition.
+- Its targets also claimed more than holds:
+  - a law that names no face grows the seed with trees attached, of asymptotic
+    dimension at most 1, and can still grow quadratically, as the comb does;
+  - a law with no marker can grow the plane: the spiral needs only coordinates
+    mod 3 ([decision note](research/GROW-FACE-20261110-001/grow_face.md)).
+- Unchanged: the verdict that the plane needs a named face, static or grown.
+
 ## 10 November 2026: a census control belonged to its own family
 
 - The frozen contract of `BARE-NAMES-20261110-001B` says that no law of its

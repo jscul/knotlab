@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-STUCK-20261110-001A-P001",
+  "canonical_id": "GROW-STUCK-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-STUCK-20261110-001A",
+  "proof": "GROW-STUCK-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A learner that grows only when stuck",
+  "status": "Proved",
+  "claim": "The dissonance weight W = violated lines + E + |D|/2 is at least |chi|/2 in every state of every law (proved from the count), so a knot sphere's flat state is at its floor and a learner that waits for W to fall is stuck at once; one Fano atom grown from a sphere gives a torus (floor 0) and every further atom raises the floor by one (proved). Computed on K_2-K_5 (and K_6 one size past): a learner that grows an atom only when no sequence of at most r learning steps lowers W grows at the dissonance at once; with r >= 3 it grows once and resolves in 3 sign changes, with r <= 2 it grows again and never resolves.",
+  "dependencies": [
+    "GROW-HANDLE-20261110-001A",
+    "RESIGN-STEER-20261107-001A",
+    "COUNT-SURFACES-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A state with W < |chi|/2.",
+    "A start where GROW-r with r >= 3 grows twice or does not resolve."
+  ],
+  "lineage": {
+    "home_scope": "GROW-STUCK-20261110-001",
+    "epic_path": [
+      "GROW-STUCK-20261110-001"
+    ],
+    "parents": [
+      "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py",
+      "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py",
+      "research/GROW-STUCK-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py": "02a0734d3cd619298b379c025d550f9acab401b6c1042e0b196ea6a4623d4abc",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/GROW-STUCK-20261110-001/preregistration.md": "8168401927f2aa42396e0336ae0020da21cad834df8675de858d56c08efdc95e"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/manifest.json",
+    "identity": "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/identity.json",
+    "proof": "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/proof.md",
+    "result": "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/result.json",
+    "check": "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/check.py",
+    "directory": "proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Octahedral knot spheres K_2-K_6, the Fano atom of A48, the learner of A26 with the weight W (A49).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered.",
+    "status": "theorems 1 and 2 proved by hand; the learner computed (check.py, stress test on K_6)",
+    "novelty": "known-with-delta"
+  }
+}

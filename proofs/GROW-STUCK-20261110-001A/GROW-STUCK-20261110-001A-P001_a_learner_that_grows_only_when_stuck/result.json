@@ -1,0 +1,1258 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py": "02a0734d3cd619298b379c025d550f9acab401b6c1042e0b196ea6a4623d4abc",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/GROW-STUCK-20261110-001/preregistration.md": "8168401927f2aa42396e0336ae0020da21cad834df8675de858d56c08efdc95e"
+   }
+  },
+  "1 P0: W >= |chi| / 2 on every configuration GROW-r visited": {
+   "pass": true,
+   "info": {
+    "runs": 68
+   }
+  },
+  "2 P1 and P3 (computed): on every start the first decision is stuck and the first growth is at l0; with r >= 3 GROW-r grows once and resolves in 3 sign changes; with r <= 2 it grows again and never resolves": {
+   "pass": true,
+   "info": {
+    "P1": true,
+    "P3, r >= 3": true,
+    "P3, r <= 2": true,
+    "(r >= 3, growths, resolved, final chi, final W)": {
+     "(False, 3, False, -4, 4.0)": 34,
+     "(True, 1, True, 0, 0.0)": 34
+    },
+    "rows": [
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 3,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_2",
+      "l0": 4,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 15,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 15,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 15,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 15,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 16,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 16,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 16,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 16,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 20,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 20,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 20,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 20,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 25,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 25,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 25,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 25,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 26,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 26,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 26,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 26,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 27,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 27,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 27,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 27,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 31,
+      "r": 1,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 31,
+      "r": 2,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 3,
+      "resolved": false,
+      "sign changes": 0,
+      "final chi": -4,
+      "final W": 4.0,
+      "floor respected": true,
+      "stopped": "stuck at the growth cap",
+      "growth sites": [
+       "violated line",
+       "violated line",
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 31,
+      "r": 3,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     },
+     {
+      "sphere": "K_5",
+      "l0": 31,
+      "r": 4,
+      "first decision stuck": true,
+      "first growth at l0": true,
+      "growths": 1,
+      "resolved": true,
+      "sign changes": 3,
+      "final chi": 0,
+      "final W": 0.0,
+      "floor respected": true,
+      "stopped": null,
+      "growth sites": [
+       "violated line"
+      ]
+     }
+    ]
+   }
+  },
+  "seconds": 14.9
+ }
+}

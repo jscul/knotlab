@@ -119,3 +119,30 @@ not taken by this epic), B58 advanced, B59 unchanged. **Assumptions:** none adde
 3. **The curve.** Payoff 3: as in B59. Concreteness 1.
 
 **Recommendation.** Continue with #1.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 01:15 UTC and copied here verbatim.
+
+The lower-bounds epic is closed and published. The bounds aren't proved, but the eigenvector half now comes down to one degree per eigenvalue.
+
+I proved that at each eigenvalue, every eigenvector is a single polynomial G times a polynomial in Y = k² + k. Two short facts give this: the operator is self-adjoint, and any two eigenvectors change by the same factor under the cut line's shift. So the exact count is ⌈(n/2 − deg G)/2⌉, or equivalently n/4 minus the rank of one explicit Toeplitz matrix. The Kloosterman count |K|/4 is then the single statement deg G = n/2 − k, where k(k+1)/2 is the multiplicity. That holds at every eigenvalue for sides 8 to 512, with 256 and 512 checked after registering.
+
+Where it stops: evaluating on GF(2n) gives the shared shift factor but not the count. G has no zeros or factors that follow the Kloosterman trace classes, so nothing yet ties deg G to K. I didn't reach the Jordan chains, which the collapse needs.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the Kloosterman lower bounds | **Status:** Partially successful | Eigenvector count reduced, with proofs, to one degree per eigenvalue; that degree and the chains aren't proved |
+| Local direction: the collapse at powers of two | Continue | Two explicit statements remain |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B74 |
+| Long-term goal: G5 Dynamics | Capability gained | Each eigenvalue's eigenvectors are one polynomial |
+
+**Next step:** Continue with #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The Jordan chains from one polynomial (B73) | 3/3 | 2/3 | Test whether G·Y^j heads a chain of length 2k − 1 − 4j at sides 4 to 64, which would make the multiplicity depend on deg G alone → a chain lemma, or the first shorter chain | Selected |
+| 2 | The degree of the least solution (B74) | 3/3 | 1/3 | Bound deg G through the identity tying G to its overflow at the roots of Δ = Ω(k)Ω(k+1) + Y → the bound, or why it can't see K | Alternative |
+| 3 | The curve behind each eigenvalue (B59) | 3/3 | 1/3 | As recorded in B59 | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained); sub-goals B73 and B74 recorded, B58 advanced, B59 re-rated with this report. **Assumptions:** none added. The stress runs at sides 256 and 512 passed in under four minutes. Commits: 78a919ba5 (pre-registration), 14e1c98a1 (epic), 5efec71b6 (tracking), 6703cb974 (shared docs). The novelty claim still rests on the bounded search from yesterday, not a priority search.

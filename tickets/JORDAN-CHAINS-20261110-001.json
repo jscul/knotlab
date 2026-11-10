@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse"
+    ],
+    "program": "foundations",
+    "takes": [
+      "KLOOSTERMAN-BOUNDS-20261110-001#1"
+    ]
+  },
+  "id": "JORDAN-CHAINS-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up KLOOSTERMAN-BOUNDS-20261110-001's direction 1 (sub-goal B73) at the coordinator's go-ahead on 2026-11-10: at sides n = 2^m, show that at each eigenvalue of the cut-open torus the eigenvector G Y^j (G the least polynomial of KLOOSTERMAN-BOUNDS-20261110-001A, Y = k^2 + k) heads a Jordan chain of length 2k - 1 - 4j, k = n/2 - deg G, so that the eigenvalue's multiplicity is k(k + 1)/2 with k read off deg G alone; with the degree law (B74) this would prove the collapse. Or find where the chains fall short.",
+  "ownership": {
+    "root": true,
+    "scope_id": "JORDAN-CHAINS-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (Partially successful): the Jordan chains follow one polynomial wherever computed, and their first order is proved. Computed exactly: at sides 2^m the eigenvector G Y^j (G the least polynomial, Y = k^2 + k) heads a Jordan chain of exactly 2k - 1 - 4j, k = n/2 - deg G, these being the Jordan blocks, at every eigenvalue for sides 8 to 64 (64 registered before it was run) and nine eigenvalues of side 128 covering k = 1 to 15 (stress test pending at closure), so the multiplicity k(k + 1)/2 is read off deg G alone. Proved: the family Z(w) carrying the spectrum is S + (a + delta) M_(Phi(a^2 + delta^2)) near each eigenvalue parameter and self-adjoint at every w; its first-order term on the eigenvectors is a^-1 times the Hankel matrix of the top coefficients of N(G) = G(k) G(k + 1), so each eigenvalue has exactly k mod 2 blocks of size 1; a^-1 k G Y^i is the second vector of each chain with 2i < k - 1. Not proved: the chain lemma beyond first order, and the degree law (B74). Recommendation Continue, selected #1 (the chain lemma at every order, B73).",
+  "status_class": "complete",
+  "stop_rule": "Stop with the chain lemma proved, a side and eigenvalue where a chain is shorter, or the lemma reduced to an explicit statement with the gap stated.",
+  "title": "The Jordan chains from one polynomial"
+}

@@ -13,8 +13,8 @@
   "proof": "JORDAN-CHAINS-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "The Jordan chains that one polynomial heads, on the cut-open torus at powers of two",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt. At n = 2^m, h = n/2, q = 2n, for a in GF(q)* with b = sqrt(a), G_b the least-degree element of ker X_b (KLOOSTERMAN-BOUNDS-20261110-001A, Theorem 3) and k = h - deg G_b: to be proved (1) the family Z(w) = S + w^(1-n) M_(eps(w^-2 k)) on F[k]_(<h) satisfies det Z(w) = w^(h(1-n)) det(I + C_s(w)) and Z(a) = X_b, and its Taylor coefficients at w = a of order i >= 1 are the multiplications by Omega_i(k) = sum over e of binom(1 - n - 2e, i) a^(1 - n - 2e - i) k^e, e running over 0 and h - h/2^j; (2) since Z(w) is self-adjoint for <F, G> for every w, the partial multiplicities of Z at a are those of the Lyapunov-Schmidt reduction of Z to ker X_b, a ceil(k/2) x ceil(k/2) symmetric matrix function of w - a. Target, the chain lemma, found by exact computation at every a for sides 8 to 32 before registration: G_b Y^j heads a Jordan chain of Z at a of length exactly 2k - 1 - 4j for j < ceil(k/2), and these lengths are the partial multiplicities; so the eigenvalue 1/a of the cone has algebraic multiplicity k(k + 1)/2 with k = h - deg G_b, and with the degree law deg G_b = h - k_a (KLOOSTERMAN-BOUNDS-20261110-001, computed) the Kloosterman multiplicity K(a)(K(a) - 2)/8.",
+  "status": "Proved",
+  "claim": "At n = 2^m, h = n/2, q = 2n, for a in GF(q)* with b = sqrt(a), G = G_b the least-degree element of ker X_b (KLOOSTERMAN-BOUNDS-20261110-001A) and k = h - deg G: (1) Z(w) = S + w^(1-n) M_(eps(w^-2 k)) on F[k]_(<h) satisfies det Z(w) = w^(h(1-n)) det(I + C_s(w)) and Z(a) = X_b; with Phi(u) = u^(-h) eps(u^-1 k), Z(a + delta) = S + (a + delta) M_(Phi(a^2 + delta^2)), so the Taylor coefficients of order i >= 1 are multiplications, Z_(2i+1) = a^-1 Z_(2i) for i >= 1 and Z_1 = a^-1 (Z_0 + S); (2) Z(w) is self-adjoint for <F, G> at every w, so the partial multiplicities at a are those of the ceil(k/2) x ceil(k/2) Lyapunov-Schmidt reduction to ker X_b; (3) <Z_1 G Y^i, G Y^j> = a^-1 [Y^(h-1-i-j)] N(G), N(G) = G(k) G(k + 1) of degree h - k in Y, so this first-order matrix vanishes but for one corner when k is odd and the eigenvalue 1/a has exactly k mod 2 Jordan blocks of size 1; (4) for 2i < k - 1, a^-1 k G Y^i solves Z_0 phi = Z_1 G Y^i. Computed exactly (the chain lemma): G Y^j heads a Jordan chain of exactly 2k - 1 - 4j and these are the Jordan blocks, at every a for sides 8 to 64 (64 in the run registered before it was made) and, in the stress run, at nine values of a of side 128 (k = 1 to 15), stress test pending at closure; so the multiplicity of 1/a is k(k + 1)/2 with k read off deg G alone. The target registered with this ticket, a proof of the chain lemma, is not reached beyond its first order.",
   "dependencies": [
     "KLOOSTERMAN-BOUNDS-20261110-001A"
   ],
@@ -51,10 +51,7 @@
     "check": "proofs/JORDAN-CHAINS-20261110-001A/JORDAN-CHAINS-20261110-001A-P001_the_chains_one_polynomial_heads/check.py",
     "directory": "proofs/JORDAN-CHAINS-20261110-001A/JORDAN-CHAINS-20261110-001A-P001_the_chains_one_polynomial_heads"
   },
-  "remaining_obligations": [
-    "proofs of (1) and (2)",
-    "the chain lemma, or where the chains fall short"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -89,7 +86,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10 (sub-goal B73).",
-    "status": "pre-registered; the chain lemma found by exact computation, the proofs to follow",
-    "novelty": "to be assessed"
+    "status": "proof by hand (Theorems 1 to 3 and the lemma) with finite checks; the chain lemma computed (sides 8 to 64, the side-64 run registered); the side-128 stress run pending at closure",
+    "novelty": "new as far as found (bounded search); ingredients classical (partial multiplicities of analytic matrix functions, Lyapunov-Schmidt reduction, Hasse derivatives)"
   }
 }

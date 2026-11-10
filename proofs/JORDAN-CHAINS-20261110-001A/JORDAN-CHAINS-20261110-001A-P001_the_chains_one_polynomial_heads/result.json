@@ -1,0 +1,179 @@
+{
+ "ticket": "JORDAN-CHAINS-20261110-001A",
+ "artifact_id": "JORDAN-CHAINS-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (KLOOSTERMAN-BOUNDS-20261110-001A's manifest and library)": {
+   "pass": true,
+   "info": {
+    "proofs/KLOOSTERMAN-BOUNDS-20261110-001A/KLOOSTERMAN-BOUNDS-20261110-001A-P001_one_polynomial_per_eigenvalue/manifest.json": "93183701f227f000d1efc31c867ad6bff717369712ed2594a635c6727b6f430a",
+    "proofs/KLOOSTERMAN-BOUNDS-20261110-001A/KLOOSTERMAN-BOUNDS-20261110-001A-P001_one_polynomial_per_eigenvalue/bounds_lib.py": "a822f5d8b086f8120b07339cd322ccba2bad9829253dbdb42f79faf7cad470c1"
+   }
+  },
+  "1 Theorem 1: det Z(w) = w^(h(1-n)) det(I + C_s(w)) (sides 4 to 16, random points of GF(2^16)), Z(a) = X_b and the Taylor coefficients (sides 4 to 64)": {
+   "pass": true,
+   "info": {
+    "det identity, side 4": {
+     "points": 6,
+     "mismatches": 0
+    },
+    "det identity, side 8": {
+     "points": 6,
+     "mismatches": 0
+    },
+    "det identity, side 16": {
+     "points": 6,
+     "mismatches": 0
+    },
+    "side 4": {
+     "Z(a) != X_b": 0,
+     "Taylor mismatches": 0
+    },
+    "side 8": {
+     "Z(a) != X_b": 0,
+     "Taylor mismatches": 0
+    },
+    "side 16": {
+     "Z(a) != X_b": 0,
+     "Taylor mismatches": 0
+    },
+    "side 32": {
+     "Z(a) != X_b": 0,
+     "Taylor mismatches": 0
+    },
+    "side 64": {
+     "Z(a) != X_b": 0,
+     "Taylor mismatches": 0
+    }
+   }
+  },
+  "2 Theorem 2: every Taylor coefficient of Z at a is self-adjoint for <F, G>, sides 4 to 32": {
+   "pass": true,
+   "info": {
+    "4": {
+     "non-self-adjoint coefficients": 0
+    },
+    "8": {
+     "non-self-adjoint coefficients": 0
+    },
+    "16": {
+     "non-self-adjoint coefficients": 0
+    },
+    "32": {
+     "non-self-adjoint coefficients": 0
+    }
+   }
+  },
+  "3 Theorem 3: <Z_1 G Y^i, G Y^j> = a^-1 [Y^(h-1-i-j)] N(G), and k mod 2 blocks of size 1, every a, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "8": {
+     "first-order form mismatches": 0,
+     "size-1 block count != k mod 2": 0
+    },
+    "16": {
+     "first-order form mismatches": 0,
+     "size-1 block count != k mod 2": 0
+    },
+    "32": {
+     "first-order form mismatches": 0,
+     "size-1 block count != k mod 2": 0
+    },
+    "64": {
+     "first-order form mismatches": 0,
+     "size-1 block count != k mod 2": 0
+    }
+   }
+  },
+  "4 Lemma: phi_1 = a^-1 k G Y^i solves Z_0 phi_1 = Z_1 G Y^i when 2i < k - 1, every a, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "8": {
+     "cases": 6,
+     "mismatches": 0
+    },
+    "16": {
+     "cases": 22,
+     "mismatches": 0
+    },
+    "32": {
+     "cases": 78,
+     "mismatches": 0
+    },
+    "64": {
+     "cases": 241,
+     "mismatches": 0
+    }
+   }
+  },
+  "5 computed: G Y^j heads a chain of exactly 2k - 1 - 4j and these are the Jordan blocks, every a, sides 8 to 32": {
+   "pass": true,
+   "info": {
+    "8": {
+     "values of a": 15,
+     "failures": 0,
+     "counts by k": {
+      "0": 5,
+      "1": 4,
+      "3": 2,
+      "2": 4
+     }
+    },
+    "16": {
+     "values of a": 31,
+     "failures": 0,
+     "counts by k": {
+      "5": 1,
+      "0": 5,
+      "1": 10,
+      "2": 5,
+      "4": 5,
+      "3": 5
+     }
+    },
+    "32": {
+     "values of a": 63,
+     "failures": 0,
+     "counts by k": {
+      "4": 7,
+      "0": 12,
+      "5": 8,
+      "3": 9,
+      "2": 12,
+      "1": 6,
+      "6": 6,
+      "7": 3
+     }
+    }
+   }
+  },
+  "6 the chain lemma at every a, side 64 (side64.json)": {
+   "pass": true,
+   "info": {
+    "side": 64,
+    "values of a": 127,
+    "failures": 0,
+    "failing cases": [],
+    "counts by k": {
+     "6": 8,
+     "0": 14,
+     "4": 21,
+     "7": 14,
+     "9": 7,
+     "1": 21,
+     "5": 14,
+     "3": 7,
+     "10": 7,
+     "8": 7,
+     "2": 7
+    },
+    "seconds": 737,
+    "pass": true
+   }
+  },
+  "7 the stress run at side 128 (stress_test.json)": {
+   "pass": null,
+   "info": "pending (JORDAN-CHAINS-S1)"
+  }
+ },
+ "status": "passed"
+}

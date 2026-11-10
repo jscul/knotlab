@@ -1,0 +1,422 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/ADDRESS-SEQ-20261110-001A/ADDRESS-SEQ-20261110-001A-P001_writing_in_sequence/seq_lib.py": "0334bfcdb7ec820241a19a9e06110218b47e7ab43aaec727dd10627004b0639f",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/result.json": "479468c77986eaf988fbb6fb94b313fc5390f928369bdc4acae12ed2114baa10",
+    "research/NEST-ATOMS-20261110-001/preregistration.md": "37e9445fbede854212898cfcaef992d01076ef9f914ccaf4fcf74bf0b62493c4"
+   }
+  },
+  "1 a two-level address written in sequence and returned (computed)": {
+   "pass": true,
+   "info": {
+    "verdicts": [
+     {
+      "leaf": "Fano",
+      "writes": 6,
+      "written": 6,
+      "outcomes": {
+       "held": 5,
+       "other": 1
+      },
+      "held share": 0.833,
+      "outer held share": 0.833,
+      "outer held whenever held": true,
+      "expected": false,
+      "failure": false
+     },
+     {
+      "leaf": "thin",
+      "writes": 6,
+      "written": 6,
+      "outcomes": {
+       "held": 6
+      },
+      "held share": 1.0,
+      "outer held share": 1.0,
+      "outer held whenever held": true,
+      "expected": true,
+      "failure": false
+     }
+    ]
+   }
+  },
+  "predictions": {
+   "expected held for every leaf type": false,
+   "failure for some leaf type": false
+  },
+  "rows": [
+   {
+    "leaf": "Fano",
+    "points": 70,
+    "steps": [
+     {
+      "target": [
+       0,
+       1,
+       2
+      ],
+      "outer target": [
+       0
+      ],
+      "written": true,
+      "configurations": 1209,
+      "acting after write": [
+       0,
+       1,
+       2
+      ],
+      "outer after write": [
+       0
+      ],
+      "acting after disturbance": [
+       0,
+       1,
+       2
+      ],
+      "outer after disturbance": [
+       0
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       2,
+       3
+      ],
+      "outer target": [
+       1
+      ],
+      "written": true,
+      "configurations": 608,
+      "acting after write": [
+       0,
+       2,
+       3
+      ],
+      "outer after write": [
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       2,
+       3
+      ],
+      "outer after disturbance": [
+       1
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       1,
+       3
+      ],
+      "outer target": [
+       0
+      ],
+      "written": true,
+      "configurations": 1283,
+      "acting after write": [
+       0,
+       1,
+       3
+      ],
+      "outer after write": [
+       0
+      ],
+      "acting after disturbance": [
+       0,
+       1,
+       3
+      ],
+      "outer after disturbance": [
+       0
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       1,
+       2,
+       3
+      ],
+      "outer target": [
+       1
+      ],
+      "written": true,
+      "configurations": 831,
+      "acting after write": [
+       1,
+       2,
+       3
+      ],
+      "outer after write": [
+       1
+      ],
+      "acting after disturbance": [
+       1,
+       2,
+       3
+      ],
+      "outer after disturbance": [
+       1
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       1,
+       2
+      ],
+      "outer target": [
+       0
+      ],
+      "written": true,
+      "configurations": 758,
+      "acting after write": [
+       1,
+       2
+      ],
+      "outer after write": [],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outer after disturbance": [],
+      "outcome": "other",
+      "outer held": false
+     },
+     {
+      "target": [
+       0,
+       2,
+       3
+      ],
+      "outer target": [
+       1
+      ],
+      "written": true,
+      "configurations": 1416,
+      "acting after write": [
+       0,
+       2,
+       3
+      ],
+      "outer after write": [
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       2,
+       3
+      ],
+      "outer after disturbance": [
+       1
+      ],
+      "outcome": "held",
+      "outer held": true
+     }
+    ]
+   },
+   {
+    "leaf": "thin",
+    "points": 58,
+    "steps": [
+     {
+      "target": [
+       0,
+       1,
+       2
+      ],
+      "outer target": [
+       0
+      ],
+      "written": true,
+      "configurations": 924,
+      "acting after write": [
+       0,
+       1,
+       2
+      ],
+      "outer after write": [
+       0
+      ],
+      "acting after disturbance": [
+       0,
+       1,
+       2
+      ],
+      "outer after disturbance": [
+       0
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       2,
+       3
+      ],
+      "outer target": [
+       1
+      ],
+      "written": true,
+      "configurations": 978,
+      "acting after write": [
+       0,
+       2,
+       3
+      ],
+      "outer after write": [
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       2,
+       3
+      ],
+      "outer after disturbance": [
+       1
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       1,
+       3
+      ],
+      "outer target": [
+       0
+      ],
+      "written": true,
+      "configurations": 475,
+      "acting after write": [
+       0,
+       1,
+       3
+      ],
+      "outer after write": [
+       0
+      ],
+      "acting after disturbance": [
+       0,
+       1,
+       3
+      ],
+      "outer after disturbance": [
+       0
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       1,
+       2,
+       3
+      ],
+      "outer target": [
+       1
+      ],
+      "written": true,
+      "configurations": 437,
+      "acting after write": [
+       1,
+       2,
+       3
+      ],
+      "outer after write": [
+       1
+      ],
+      "acting after disturbance": [
+       1,
+       2,
+       3
+      ],
+      "outer after disturbance": [
+       1
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       1,
+       2
+      ],
+      "outer target": [
+       0
+      ],
+      "written": true,
+      "configurations": 977,
+      "acting after write": [
+       0,
+       1,
+       2
+      ],
+      "outer after write": [
+       0
+      ],
+      "acting after disturbance": [
+       0,
+       1,
+       2
+      ],
+      "outer after disturbance": [
+       0
+      ],
+      "outcome": "held",
+      "outer held": true
+     },
+     {
+      "target": [
+       0,
+       2,
+       3
+      ],
+      "outer target": [
+       1
+      ],
+      "written": true,
+      "configurations": 1018,
+      "acting after write": [
+       0,
+       2,
+       3
+      ],
+      "outer after write": [
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       2,
+       3
+      ],
+      "outer after disturbance": [
+       1
+      ],
+      "outcome": "held",
+      "outer held": true
+     }
+    ]
+   }
+  ],
+  "seconds": 1.4
+ }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NEST-ATOMS-20261110-001C-P001",
+  "canonical_id": "NEST-ATOMS-20261110-001C-P001",
+  "kind": "proof",
+  "ticket": "NEST-ATOMS-20261110-001C",
+  "proof": "NEST-ATOMS-20261110-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A two-level address",
+  "status": "Proved",
+  "claim": "Computed: ADDRESS-SEQ's frozen search and learner M1 wrote six two-level addresses in turn on K_2 with two composites, for each of the Fano and thin (2,1,2) leaves: 12 of 12 reached, 11 of 12 held after a disturbance (the miss: the search stopped with a unit in a leaf that did not act), and every outer address held whenever its address did.",
+  "dependencies": [
+    "NEST-ATOMS-20261110-001A",
+    "NEST-ATOMS-20261110-001B",
+    "ADDRESS-SEQ-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A write not reached, or fewer than 80% held."
+  ],
+  "lineage": {
+    "home_scope": "NEST-ATOMS-20261110-001",
+    "epic_path": [
+      "NEST-ATOMS-20261110-001"
+    ],
+    "parents": [
+      "proofs/ADDRESS-SEQ-20261110-001A/ADDRESS-SEQ-20261110-001A-P001_writing_in_sequence/seq_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/result.json",
+      "research/NEST-ATOMS-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ADDRESS-SEQ-20261110-001A/ADDRESS-SEQ-20261110-001A-P001_writing_in_sequence/seq_lib.py": "0334bfcdb7ec820241a19a9e06110218b47e7ab43aaec727dd10627004b0639f",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/result.json": "479468c77986eaf988fbb6fb94b313fc5390f928369bdc4acae12ed2114baa10",
+    "research/NEST-ATOMS-20261110-001/preregistration.md": "37e9445fbede854212898cfcaef992d01076ef9f914ccaf4fcf74bf0b62493c4"
+  },
+  "paths": {
+    "manifest": "proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/manifest.json",
+    "identity": "proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/identity.json",
+    "proof": "proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/proof.md",
+    "result": "proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/result.json",
+    "check": "proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/check.py",
+    "directory": "proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_2 with two composites of genus 2; moves of A50 and A26 (A49).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 4b27647cb).",
+    "status": "computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

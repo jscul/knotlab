@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NEST-ATOMS-20261110-001B-P001",
+  "canonical_id": "NEST-ATOMS-20261110-001B-P001",
+  "kind": "proof",
+  "ticket": "NEST-ATOMS-20261110-001B",
+  "proof": "NEST-ATOMS-20261110-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Units at every level",
+  "status": "Proved",
+  "claim": "Exact on small cases (SAT over every state): on K_2 with one or two composites C(2, leaf) or the depth-two composite, for Fano and thin (2,1,2) leaves, in all 576 classes every composite acts exactly where its leaves all act, all top-level groups acting leaves no state satisfying every line, and each group of genus g holds at least g - 1 + [it acts] units in every state satisfying every line.",
+  "dependencies": [
+    "NEST-ATOMS-20261110-001A",
+    "OTHER-ATOMS-20261110-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A class breaking R-a, R-b' or the AND."
+  ],
+  "lineage": {
+    "home_scope": "NEST-ATOMS-20261110-001",
+    "epic_path": [
+      "NEST-ATOMS-20261110-001"
+    ],
+    "parents": [
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "research/NEST-ATOMS-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/NEST-ATOMS-20261110-001/preregistration.md": "37e9445fbede854212898cfcaef992d01076ef9f914ccaf4fcf74bf0b62493c4"
+  },
+  "paths": {
+    "manifest": "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/manifest.json",
+    "identity": "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/identity.json",
+    "proof": "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/proof.md",
+    "result": "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/result.json",
+    "check": "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/check.py",
+    "directory": "proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_2 outer hosts with up to two composites of genus 2.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 4b27647cb).",
+    "status": "exact finite computation by SAT over every state (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

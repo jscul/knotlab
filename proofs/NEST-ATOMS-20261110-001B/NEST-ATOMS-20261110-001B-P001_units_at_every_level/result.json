@@ -1,0 +1,140 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/result.json": "209d6f17a5ba248edbc7e461101da46d864a09d26f39347b67b8446083eb9b0d",
+    "research/NEST-ATOMS-20261110-001/preregistration.md": "37e9445fbede854212898cfcaef992d01076ef9f914ccaf4fcf74bf0b62493c4"
+   }
+  },
+  "1 code control: nest_lib on K_3 with two Fano leaves (l0, distance 3) reproduces OTHER-ATOMS-20261110-001B's split of classes by acting leaves, with R-a and R-b in every class": {
+   "pass": true,
+   "info": {
+    "here": {
+     "2": 1,
+     "1": 6,
+     "0": 9
+    },
+    "OTHER-ATOMS-B": {
+     "0": 9,
+     "1": 6,
+     "2": 1
+    },
+    "failures": []
+   }
+  },
+  "2 R-a, R-b' and the AND in every class of every named space (exact, SAT over every state)": {
+   "pass": true,
+   "info": {
+    "spaces": 6,
+    "classes": 576,
+    "failing": []
+   }
+  },
+  "predictions": {
+   "ticket B expectation held": true
+  },
+  "rows": [
+   {
+    "leaf": "Fano",
+    "space": "(a) one composite",
+    "genus": 2,
+    "points": 43,
+    "classes": 16,
+    "(acting leaves per top group, top groups acting, R-a, R-b', AND)": {
+     "((0,), (False,), None, True, True)": 9,
+     "((1,), (False,), None, True, True)": 6,
+     "((2,), (True,), True, True, True)": 1
+    },
+    "holds": true,
+    "failures": []
+   },
+   {
+    "leaf": "Fano",
+    "space": "(b) two composites",
+    "genus": 4,
+    "points": 70,
+    "classes": 256,
+    "(acting leaves per top group, top groups acting, R-a, R-b', AND)": {
+     "((0, 0), (False, False), None, True, True)": 81,
+     "((0, 1), (False, False), None, True, True)": 54,
+     "((0, 2), (False, True), None, True, True)": 9,
+     "((1, 0), (False, False), None, True, True)": 54,
+     "((1, 1), (False, False), None, True, True)": 36,
+     "((1, 2), (False, True), None, True, True)": 6,
+     "((2, 0), (True, False), None, True, True)": 9,
+     "((2, 1), (True, False), None, True, True)": 6,
+     "((2, 2), (True, True), True, True, True)": 1
+    },
+    "holds": true,
+    "failures": []
+   },
+   {
+    "leaf": "Fano",
+    "space": "(c) depth two",
+    "genus": 2,
+    "points": 58,
+    "classes": 16,
+    "(acting leaves per top group, top groups acting, R-a, R-b', AND)": {
+     "((0,), (False,), None, True, True)": 9,
+     "((1,), (False,), None, True, True)": 6,
+     "((2,), (True,), True, True, True)": 1
+    },
+    "holds": true,
+    "failures": []
+   },
+   {
+    "leaf": "thin",
+    "space": "(a) one composite",
+    "genus": 2,
+    "points": 37,
+    "classes": 16,
+    "(acting leaves per top group, top groups acting, R-a, R-b', AND)": {
+     "((0,), (False,), None, True, True)": 9,
+     "((1,), (False,), None, True, True)": 6,
+     "((2,), (True,), True, True, True)": 1
+    },
+    "holds": true,
+    "failures": []
+   },
+   {
+    "leaf": "thin",
+    "space": "(b) two composites",
+    "genus": 4,
+    "points": 58,
+    "classes": 256,
+    "(acting leaves per top group, top groups acting, R-a, R-b', AND)": {
+     "((0, 0), (False, False), None, True, True)": 81,
+     "((0, 1), (False, False), None, True, True)": 54,
+     "((0, 2), (False, True), None, True, True)": 9,
+     "((1, 0), (False, False), None, True, True)": 54,
+     "((1, 1), (False, False), None, True, True)": 36,
+     "((1, 2), (False, True), None, True, True)": 6,
+     "((2, 0), (True, False), None, True, True)": 9,
+     "((2, 1), (True, False), None, True, True)": 6,
+     "((2, 2), (True, True), True, True, True)": 1
+    },
+    "holds": true,
+    "failures": []
+   },
+   {
+    "leaf": "thin",
+    "space": "(c) depth two",
+    "genus": 2,
+    "points": 52,
+    "classes": 16,
+    "(acting leaves per top group, top groups acting, R-a, R-b', AND)": {
+     "((0,), (False,), None, True, True)": 9,
+     "((1,), (False,), None, True, True)": 6,
+     "((2,), (True,), True, True, True)": 1
+    },
+    "holds": true,
+    "failures": []
+   }
+  ],
+  "seconds": 18.9
+ }
+}

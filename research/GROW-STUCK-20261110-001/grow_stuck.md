@@ -68,3 +68,26 @@ None.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B68 taken; B70 added. **Assumptions:** A49 added (dissonance is
 weighed as the count weighs it).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (01:01 UTC).
+
+**B68 done: the learner can decide where to grow, and the right amount is exactly one handle.** I proved a floor: total dissonance is at least half the Euler characteristic's size. That's 1 on a sphere, 0 on a torus, and g − 1 at genus g, so the torus is the only shape that forces none. A learner that grows only when it can't see a way to lower the dissonance is stuck at once on the sphere, and grows right at the dissonance. If it looks 3 steps ahead, it grows once and resolves in 3 sign changes. If it looks 2 or fewer, it can't see what the new handle offers, keeps growing, and locks the dissonance in for good (computed, K_2 to K_6).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: grow where stuck (B68) | **Status:** Successful | grows once at the dissonance, given sight 3 |
+| Local direction: steering by re-signing | Continue | growth now comes from the learner |
+| Broader exploration: learning program | Known alternatives | layers through atoms, overgrown surfaces |
+| Long-term goal: G15 | Capability gained | the network grows from the learner's own state |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Layers through atoms (B54) | 3/3 — Barrier | 2/3 — Testable | several lines of K_2 replaced by atoms → dissonance crosses levels, or not | Selected · started |
+| 2 | Learning on an overgrown surface (B70) | 1/3 — Incremental | 3/3 — Ready | far-sighted learner from genus 2-3 → reaches the floor, or not | Alternative · deferred |
+| 3 | Why random learning goes long (B69) | 1/3 — Incremental | 3/3 — Ready | trace both holes → a reason | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B68 taken; B70 added. **Assumptions:** A49 added (dissonance weighed as the count weighs it).

@@ -1533,7 +1533,19 @@ So network holes come in two kinds:
      host built from knot spheres and class-forced lattice tori, a composite computes exactly the AND.
    - **Computed.** Seven branched covers, the frozen search outside that class, had no unsatisfiable class at all.
    - **Reading.** The layers say "all of these": every pattern the program can grow is held together by every one of its lines.
-   - **Next.** Which atom a growth law grows (backlog B106) ([decision note](../research/COMPOSITE-FN-20261110-001/composite_fn.md)).
+   - **Next (taken by `NATIVE-ATOM-20261110-001`, below).** Which atom a growth law grows (backlog B106)
+     ([decision note](../research/COMPOSITE-FN-20261110-001/composite_fn.md)).
+
+   **2026-11-10: which handle grows a memory by itself** (`NATIVE-ATOM-20261110-001`).
+   - **The question.** Backlog B106: can a growth rule with nothing designed in grow a handle that remembers where a dissonance sits?
+   - **The answer (by hand).** A rule that splices the same torus at every violated line, with the same signs on every line, grows a
+     remembering handle only if the torus is the Fano plane and the signs are constant: the plain law contradicts itself only on the Fano
+     plane (`UNIFORM-FANO-20261107-001`). Every other class-forced handle grows open and lets the dissonance go.
+   - **Computed.** All 1,256 uniform laws on 157 lattice tori agree; the growth was checked exactly on K_2 and K_3; and learning wrote and
+     held 9 of 9 addresses into two open thin handles.
+   - **Reading.** The Fano plane is the one handle a uniform rule can grow closed; any other handle is memory in waiting, which learning
+     closes.
+   - **Next.** Layers through a naming knot ([decision note](../research/NATIVE-ATOM-20261110-001/native_atom.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
@@ -5227,6 +5239,22 @@ So network holes come in two kinds:
      board a relation-free law always leaves open is the tree, whose balls grow exponentially.
    - **Next (selected).** Leibniz boards: identity of indiscernibles in the limit, beyond the theorem's reach (sub-goal B111)
      ([decision note](../research/BOARD-DIST-20261110-001/board_dist.md)).
+
+   **2026-11-10: Leibniz boards** (`LEIBNIZ-BOARDS-20261110-001`).
+   - **The question.** The board theorem needs finitary clauses. Leibniz's rule in full, "names whose views agree at every radius are
+     one place", is one infinitary rule it does not reach. Under it a law's boards are the Schreier graphs of its solutions'
+     stabilizers.
+   - **Not every board is the tree or finite (proved).** A three-value horofunction law has the board of a 3-cycle with trees
+     attached.
+   - **Free choices bring the tree back (proved).** A periodic solution with a free choice gives, by independent choices on disjoint
+     half-trees, a solution with trivial stabilizer (the tree) and one with an infinite cyclic stabilizer.
+   - **The census (computed, exact, frozen).** Every one-bit Life-like law and the atom has no solution (31), finitely many (97) or a
+     periodic solution with a free choice (896, and the atom). So Leibniz's rule never forces the plane in the family, though 891
+     laws allow it.
+   - **Reduced, not proved.** For arbitrary finite alphabets the dichotomy, an infinite board brings the tree, comes down to excluding
+     one rigid kind of solution, with its freedom along a single end. The line pauses by its stop rule.
+   - **Next (selected).** Rigid finite worlds at radius 2 (`BOARD-DIST-20261110-001` direction 2)
+     ([decision note](../research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

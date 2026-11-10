@@ -1289,7 +1289,7 @@
    "statement": "Every dag-like Res(xor) refutation of the binary left-pigeon principle with n holes, with n + 1 pigeons or with 2n, has exp(Omega(n / log^5 n)) lines; the proof runs Braun's bit-PHP framework through a decoder into the unary pigeonhole principle and separates a space of row-linear polynomials that avoids a few spare holes and pigeons.",
    "status": "active",
    "superseded_by": null,
-   "issue": "Qualification pending: the bound is a proof written (V1) in one session and not independently checked, conditional on Braun's unrefereed preprint arXiv 2609.23015 (assumption A55); it is under audit (AUDIT-LEFT-20261110-001). Read every statement of it as such.",
+   "issue": "Qualification pending: audited in AUDIT-LEFT-20261110-001, where every step holds (a proof written, V1, conditional on Braun's unrefereed preprint, assumption A55), but the bound is not new in substance: the 2n-pigeon formula is Pudlák and Thapen's rWPHP, and exp(Ω(n)) for it and for the n + 1 pigeon principle follows from Pang's degree–size relation (arXiv 2610.00837, 30 September 2026) by an affine substitution into graph FPHP. The PPADS-complete problem is Reversible-Pigeon in Göös et al., J. ACM 2024.",
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/proof.md",
    "tier": null
   },
@@ -3533,7 +3533,7 @@
    "statement": "For l >= 32, every DAG-like Res(⊕) refutation of bit PHP with 2^l holes and m pigeons, for 2^l < m with 8192 m l^2 (2l+5) <= 4^l, has more than exp(4^l/(8192 m l^2)) lines, checked in Lean against Braun's replayed development. A proper colouring with m classes turns every bit-colouring refutation into one of bit PHP with m pigeons of the same size, so the bound covers every graph whose chromatic number lies in that range.",
    "status": "active",
    "superseded_by": null,
-   "issue": null,
+   "issue": "Qualification pending: for linearly many pigeons a stronger bound, exp(Ω(n)), was already in Pang's arXiv 2610.00837v1 (30 September 2026); the novelty narrows to superlinearly many pigeons, where ECCC TR26-316 (10 November 2026, Theorem 3.2) later states the same form (see AUDIT-LEFT-20261110-001).",
    "href": "https://github.com/jscul/knotlab/blob/main/proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/proof.md",
    "tier": null
   },

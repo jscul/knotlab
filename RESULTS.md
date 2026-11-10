@@ -366,7 +366,7 @@ What networks of knots can decide, count and approximate without hubs.
   [proof P001](proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/proof.md), [epic closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · The binary left-pigeon principle needs exponential dag-like Res(xor) proofs** (`WIDE-LEFT-20261110-001-D001`).
   Every dag-like Res(xor) refutation of the binary left-pigeon principle with n holes, with n + 1 pigeons or with 2n, has exp(Omega(n / log^5 n)) lines; the proof runs Braun's bit-PHP framework through a decoder into the unary pigeonhole principle and separates a space of row-linear polynomials that avoids a few spare holes and pigeons.
-  *Qualification pending: the bound is a proof written (V1) in one session and not independently checked, conditional on Braun's unrefereed preprint arXiv 2609.23015 (assumption A55); it is under audit (AUDIT-LEFT-20261110-001). Read every statement of it as such.*
+  *Qualification pending: audited in AUDIT-LEFT-20261110-001, where every step holds (a proof written, V1, conditional on Braun's unrefereed preprint, assumption A55), but the bound is not new in substance: the 2n-pigeon formula is Pudlák and Thapen's rWPHP, and exp(Ω(n)) for it and for the n + 1 pigeon principle follows from Pang's degree–size relation (arXiv 2610.00837, 30 September 2026) by an affine substitution into graph FPHP. The PPADS-complete problem is Reversible-Pigeon in Göös et al., J. ACM 2024.*
   [proof P001](proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/proof.md), [epic closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them
@@ -967,6 +967,7 @@ Checks and extensions of Braun's formal Res(⊕) lower bound.
   [proof P001](proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/proof.md), [epic closure](proofs/BPHP-RES-PARITY-AUDIT-20261019-001Z/BPHP-RES-PARITY-AUDIT-20261019-001Z-P001_epic_closure/proof.md)
 - **2026-10-19 · Braun's Res(⊕) bound extends to more pigeons and to bit-colouring** (`HOLE-CRITERION-COLOURING-20261019-001-D001`).
   For l >= 32, every DAG-like Res(⊕) refutation of bit PHP with 2^l holes and m pigeons, for 2^l < m with 8192 m l^2 (2l+5) <= 4^l, has more than exp(4^l/(8192 m l^2)) lines, checked in Lean against Braun's replayed development. A proper colouring with m classes turns every bit-colouring refutation into one of bit PHP with m pigeons of the same size, so the bound covers every graph whose chromatic number lies in that range.
+  *Qualification pending: for linearly many pigeons a stronger bound, exp(Ω(n)), was already in Pang's arXiv 2610.00837v1 (30 September 2026); the novelty narrows to superlinearly many pigeons, where ECCC TR26-316 (10 November 2026, Theorem 3.2) later states the same form (see AUDIT-LEFT-20261110-001).*
   [proof P001](proofs/HOLE-CRITERION-COLOURING-20261019-001B/HOLE-CRITERION-COLOURING-20261019-001B-P001_more_pigeons_and_colouring/proof.md), [epic closure](proofs/HOLE-CRITERION-COLOURING-20261019-001Z/HOLE-CRITERION-COLOURING-20261019-001Z-P001_epic_closure/proof.md)
 
 ## Other results
@@ -1022,6 +1023,7 @@ Self-contained write-ups. The first three are also in [notes/](notes/) with stan
 
 - **2026-10-20 · The Nullstellensatz degree of Tseitin formulas is the toggle width** (`TSEITIN-NS-DEGREE-NOTE-20261020-001`). [Note folder](proofs/TSEITIN-NS-DEGREE-NOTE-20261020-001/TSEITIN-NS-DEGREE-NOTE-20261020-001-P001_note/)
 - **2026-10-19 · A checkable note for Braun: bit PHP with more pigeons, bit-colouring, and an independent replay** (`BPHP-MORE-PIGEONS-NOTE-20261019-001`). [Note folder](proofs/BPHP-MORE-PIGEONS-NOTE-20261019-001/BPHP-MORE-PIGEONS-NOTE-20261019-001-P001_note_for_author/)
+  *Qualification pending: for linearly many pigeons Pang's arXiv 2610.00837v1 (30 September 2026) already gave a stronger bound; for superlinearly many, ECCC TR26-316 (10 November 2026, Theorem 3.2) later states the same form (see AUDIT-LEFT-20261110-001).*
 - **2026-10-26 · Counting homomorphisms from knot groups to solvable groups can be #P-hard** (`ROWELL-NOTE-20261026-001`). [Note folder](proofs/ROWELL-NOTE-20261026-001/ROWELL-NOTE-20261026-001-P001_note/)
 - **2026-10-31 · Counting 2-colourings of 3-regular hypergraphs with Pfaffian incidence graphs** (`COUNT-NOTE-20261031-001`). [Note folder](proofs/COUNT-NOTE-20261031-001/COUNT-NOTE-20261031-001-P001_note/)
 - **2026-11-01 · Native selection, and why three places** (`SELECTION-NOTE-20261101-001`). [Note folder](proofs/SELECTION-NOTE-20261101-001/SELECTION-NOTE-20261101-001-P001_note/)

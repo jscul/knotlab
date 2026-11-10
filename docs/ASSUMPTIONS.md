@@ -1377,7 +1377,11 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** `HOLE-CRITERION-COLOURING-20261019-001B` (bit PHP with more pigeons), `SEP-LEFT-20261110-001A` (Theorem 2),
   `HOLE-SEP-20261110-001A` (Theorem (R)), `KERNEL-FRAC-20261110-001A` (the cap) and `WIDE-LEFT-20261110-001A` (the dag-like Res(⊕) lower
   bound for the binary left-pigeon principle).
-- **Challenge.** Check that each lemma used above is among the Lean declarations the audit replayed (or replay those that are not), and
-  have the prose of §§3, 4 and 9 read by a Res(⊕) expert; a gap in any of them would reopen the results that rest on it.
+- **Challenge.** Each lemma used above is among the Lean declarations the audit replayed (checked 2026-11-10). Still open: have the prose of §§3, 4 and 9 read by a Res(⊕) expert; a gap in any of them would reopen the results that rest on it.
 - **History.**
+  - 2026-11-10 · Evidence for, status unchanged (`AUDIT-LEFT-20261110-001`): every lemma listed is among the declarations replayed in a
+    fresh kernel (the audited aggregate imports the generic criterion), and their Lean statements cover the uses, any number of
+    rows included. ECCC TR26-316 (Alekseev, Gryaznov, Itsykson, Pitassi, Robere and Tzameret, 10 November 2026) re-proves the main
+    theorem in a stronger system, and Pang (arXiv 2610.00837) builds on it; both are unrefereed, and the generic criterion's prose has
+    had no outside reading.
   - 2026-11-10 · Added by `WIDE-LEFT-20261110-001`, whose bound rests on it.

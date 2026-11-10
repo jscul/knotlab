@@ -22,6 +22,10 @@ Epic `WIDE-LEFT-20261110-001` (program complexity), 2026-11-10.
 *(Corrected 2026-11-10: this answer first read as an established result; it is a proof written (V1), not independently
 checked, conditional on A55, and is under audit in `AUDIT-LEFT-20261110-001`; `docs/CORRECTIONS.md`.)*
 
+*(Audited 2026-11-10 in `AUDIT-LEFT-20261110-001`: every step holds, but the bound is not new in substance. The 2n-pigeon formula is
+Pudlák and Thapen's rWPHP, and Pang's degree–size relation (arXiv 2610.00837) gives exp(Ω(n)) for it and for the n + 1 pigeon
+principle in a few lines; `docs/CORRECTIONS.md`.)*
+
 By stop rule (a), a proof is written. The decoder route gives a bound once the formula has 2n pigeons: a separated space built from the rows outside
 a few spare stars is dense enough for Braun's criterion, and the kernel elements that blocked the earlier attempts all use a spare row
 or every hole. The bound is exponential in n/log⁵ n and transfers to the PPADS-complete n + 1 pigeon principle because that principle's
@@ -67,7 +71,10 @@ The script is `stress_test.py` beside this note, its output `stress_test.json`; 
   Bhattacharya and Chattopadhyay (arXiv 2507.23008); Itsykson and Knop (ITCS 2026); Göös et al. (*J. ACM* 2024) for LeftPigeon.
 - **Searched and not found.** Any Res(⊕) bound for left-pigeon, injective-with-retraction, onto or bijective bit PHP, or any
   PPADS-complete principle.
-- **Classification.** New as far as found; known-with-delta in technique (Braun's framework throughout). V1: written in one session, not
+- **Corrected 2026-11-10.** Missed: Pudlák and Thapen (*Comput. Complexity* 2019, §3.3) define this formula as rWPHP_n; Pang (arXiv
+  2610.00837, 30 September 2026) gives a stronger bound by a shorter route; the *J. ACM* paper's PPADS^dt-complete problem is
+  Reversible-Pigeon. See `AUDIT-LEFT-20261110-001A` §8.4.
+- **Classification (as first written).** New as far as found; known-with-delta in technique (Braun's framework throughout). V1: written in one session, not
   externally reviewed, and resting on Braun's unrefereed (Lean-formalized, audited) preprint, recorded as assumption A55.
 
 ## Workspace assumptions

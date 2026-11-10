@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: the left-pigeon bound is audited and not new in substance
+
+- The audit of `WIDE-LEFT-20261110-001`'s Res(⊕) bound for the binary
+  left-pigeon principle found every step sound, but the bound is not new in
+  substance. The 2n-pigeon formula is Pudlák and Thapen's rWPHP, and Shuo
+  Pang's degree–size relation (arXiv 2610.00837, September 2026) gives a
+  stronger bound, exp(Ω(n)), in a few lines. The records now say so.
+- The same preprint already gave a stronger bound for bit PHP with linearly
+  many pigeons than `HOLE-CRITERION-COLOURING-20261019-001`'s; that record's
+  novelty narrows to superlinearly many pigeons.
+
 ## 10 November 2026: the left-pigeon bound is a proof written, under audit
 
 - `WIDE-LEFT-20261110-001` was published with headline sentences that read its

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**301 current results** and 5 superseded ones, from 273 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**302 current results** and 5 superseded ones, from 273 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 16 results
+- [Other results](#other-results): 17 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 273 epics with their closures
 
@@ -1019,6 +1019,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · A group of atoms behind a three-edge cut is an atom of the next level, reading as the AND of its atoms** (`NEST-ATOMS-20261110-001-D001`).
   A knot sphere with a flat state at every line, carrying atoms that each act in exactly one class and are free, is again such an atom: less any point it acts as its replaced line exactly where every atom inside acts, at any depth, and a composite of genus g holds g - 1 units, g where it acts (proved by hand). Computed: the AND at 274 removed points, 576 classes exact, 11 of 12 two-level addresses held.
   [proof P001](proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/proof.md), [proof P001](proofs/NEST-ATOMS-20261110-001B/NEST-ATOMS-20261110-001B-P001_units_at_every_level/proof.md), [proof P001](proofs/NEST-ATOMS-20261110-001C/NEST-ATOMS-20261110-001C-P001_a_two_level_address/proof.md), [epic closure](proofs/NEST-ATOMS-20261110-001Z/NEST-ATOMS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Class-level readings of a learned knot memory are monotone; a negation needs a frame** (`NOT-INSIDE-20261110-001-D001`).
+  A reading that depends only on the stored classes, by any network whose other constraints leave the leaves' signs alone, is non-decreasing in every acting bit and cannot tell non-acting classes apart (proved by hand, by a gauge on the leaf's inner points). A negation exists only for one fixed signing per class, a frame learning's path decides (computed).
+  [proof P001](proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone/proof.md), [epic closure](proofs/NOT-INSIDE-20261110-001Z/NOT-INSIDE-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · A torus atom remembers exactly where its torus has no satisfying state: the atom rule for every class-forced free torus atom on any host** (`OTHER-ATOMS-20261110-001-D001`).
   A torus atom grown on any orientable Kasteleyn knot space acts as its replaced line exactly where its torus has no satisfying state, transparent elsewhere, and holds a unit where it acts, whenever the torus is free at the removed point (proved by hand). Every lattice torus to 30 points is free (computed), so the Fano and thin-torus atoms of even index remember, the rest never do, and the memory does not need the Fano plane.
   [proof P001](proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/proof.md), [proof P001](proofs/OTHER-ATOMS-20261110-001D/OTHER-ATOMS-20261110-001D-P001_free_tori/proof.md), [proof P001](proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/proof.md), [proof P001](proofs/OTHER-ATOMS-20261110-001C/OTHER-ATOMS-20261110-001C-P001_writing_with_other_atoms/proof.md), [epic closure](proofs/OTHER-ATOMS-20261110-001Z/OTHER-ATOMS-20261110-001Z-P001_epic_closure/proof.md)
@@ -1303,7 +1306,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Which atom a growth law grows (`NATIVE-ATOM-20261110-001`) | [closure](proofs/NATIVE-ATOM-20261110-001Z/NATIVE-ATOM-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-ATOM-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 | 2026-11-10 | Atoms within atoms (`NEST-ATOMS-20261110-001`) | [closure](proofs/NEST-ATOMS-20261110-001Z/NEST-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NEST-ATOMS-20261110-001/) |
-| 2026-11-10 | Negation inside a cut leaf (`NOT-INSIDE-20261110-001`) | — | [folder](research/NOT-INSIDE-20261110-001/) |
+| 2026-11-10 | Negation inside a cut leaf (`NOT-INSIDE-20261110-001`) | [closure](proofs/NOT-INSIDE-20261110-001Z/NOT-INSIDE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NOT-INSIDE-20261110-001/) |
 | 2026-11-10 | Other atoms, a challenge of A48 (`OTHER-ATOMS-20261110-001`) | [closure](proofs/OTHER-ATOMS-20261110-001Z/OTHER-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/OTHER-ATOMS-20261110-001/) |
 | 2026-11-10 | F2 polynomial calculus on the sphere's count (`PC-COUNT-20261110-001`) | [closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/PC-COUNT-20261110-001/) |
 | 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |

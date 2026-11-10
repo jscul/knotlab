@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "NOT-INSIDE-20261110-001A-P001",
+  "canonical_id": "NOT-INSIDE-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "NOT-INSIDE-20261110-001A",
+  "proof": "NOT-INSIDE-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Class-level readings are monotone",
+  "status": "Proved",
+  "claim": "Proved by hand (theorem M): for any network whose other constraints do not involve a leaf's signs, a reading that depends only on the leaves' classes is non-decreasing in each acting bit and constant on non-acting classes, so no class-level reading negates a stored bit. Computed: in a fixed frame (one signing per class) explicit networks read NOT a_1 for cut leaves thin (3,2,2), thin (4,3,2) and Fano, and another signing of a non-acting class makes them read 0; all 718 sigma readings of CLASS-READ-20261110-001 read the frame.",
+  "dependencies": [
+    "GATES-20261110-001A",
+    "CLASS-READ-20261110-001A",
+    "OTHER-ATOMS-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A class-level reading that negates an acting bit."
+  ],
+  "lineage": {
+    "home_scope": "NOT-INSIDE-20261110-001",
+    "epic_path": [
+      "NOT-INSIDE-20261110-001"
+    ],
+    "parents": [
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "research/NOT-INSIDE-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/NOT-INSIDE-20261110-001/preregistration.md": "a30049badc97827bde81e8eb74033f46ab9f112e004d282c41dc3b2783ddf7df"
+  },
+  "paths": {
+    "manifest": "proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone/manifest.json",
+    "identity": "proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone/identity.json",
+    "proof": "proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone/proof.md",
+    "result": "proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone/result.json",
+    "check": "proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone/check.py",
+    "directory": "proofs/NOT-INSIDE-20261110-001A/NOT-INSIDE-20261110-001A-P001_class_level_readings_are_monotone"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Any network of knot lines with further constraints not involving a leaf's signs; computed on three cut leaves.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 904fce672).",
+    "status": "proved by hand; census exhaustive (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

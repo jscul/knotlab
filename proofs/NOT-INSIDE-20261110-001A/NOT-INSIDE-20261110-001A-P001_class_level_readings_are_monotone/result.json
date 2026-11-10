@@ -1,0 +1,147 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/check.py": "a9772ef6dbd7b7011ae3cf2871e58581914e4393f2c4a5b6bf4cf9a898a40153",
+    "research/NOT-INSIDE-20261110-001/preregistration.md": "a30049badc97827bde81e8eb74033f46ab9f112e004d282c41dc3b2783ddf7df"
+   }
+  },
+  "1 N: frame-level NOT through names inside a cut leaf": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "leaf": "torus(3,2,2)",
+      "points": 9,
+      "inner points": 5,
+      "acting class": [
+       0,
+       1
+      ],
+      "satisfying states per class": {
+       "(0, 0)": 66,
+       "(0, 1)": 18,
+       "(1, 0)": 24,
+       "(1, 1)": 60
+      },
+      "frame-level NOT possible": true,
+      "witness states": 10,
+      "explicit network reading (1 = no satisfying state)": {
+       "(0, 0)": 1,
+       "(0, 1)": 0,
+       "(1, 0)": 1,
+       "(1, 1)": 1
+      },
+      "it reads NOT a_1 in this frame": true,
+      "second signing of a non-acting class (inner points flipped)": {
+       "class": [
+        0,
+        0
+       ],
+       "points flipped": [
+        7
+       ],
+       "reading": 0
+      }
+     },
+     {
+      "leaf": "torus(4,3,2)",
+      "points": 11,
+      "inner points": 7,
+      "acting class": [
+       1,
+       0
+      ],
+      "satisfying states per class": {
+       "(0, 0)": 162,
+       "(0, 1)": 30,
+       "(1, 0)": 24,
+       "(1, 1)": 168
+      },
+      "frame-level NOT possible": true,
+      "witness states": 14,
+      "explicit network reading (1 = no satisfying state)": {
+       "(0, 0)": 1,
+       "(0, 1)": 1,
+       "(1, 0)": 0,
+       "(1, 1)": 1
+      },
+      "it reads NOT a_1 in this frame": true,
+      "second signing of a non-acting class (inner points flipped)": {
+       "class": [
+        0,
+        0
+       ],
+       "points flipped": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+       ],
+       "reading": 0
+      }
+     },
+     {
+      "leaf": "torus(7,2,1)",
+      "points": 10,
+      "inner points": 6,
+      "acting class": [
+       0,
+       0
+      ],
+      "satisfying states per class": {
+       "(0, 0)": 30,
+       "(0, 1)": 66,
+       "(1, 0)": 66,
+       "(1, 1)": 66
+      },
+      "frame-level NOT possible": true,
+      "witness states": 12,
+      "explicit network reading (1 = no satisfying state)": {
+       "(0, 0)": 0,
+       "(0, 1)": 1,
+       "(1, 0)": 1,
+       "(1, 1)": 1
+      },
+      "it reads NOT a_1 in this frame": true,
+      "second signing of a non-acting class (inner points flipped)": {
+       "class": [
+        0,
+        1
+       ],
+       "points flipped": [
+        4,
+        5,
+        6,
+        7,
+        9
+       ],
+       "reading": 0
+      }
+     }
+    ]
+   }
+  },
+  "2 F: the sigma readings of CLASS-READ-20261110-001 read the frame": {
+   "pass": true,
+   "info": {
+    "networks reading {omega, sigma}": 718,
+    "with a signing of sigma under which they have a satisfying state": 718
+   }
+  },
+  "predictions": {
+   "N: a frame-level NOT for at least one leaf": true,
+   "N: every explicit network reads NOT a_1 in its frame": true,
+   "M checked: every second signing reads 0": true,
+   "F: every sigma network reads the frame": true,
+   "failure line crossed": false
+  },
+  "seconds": 0.4
+ }
+}

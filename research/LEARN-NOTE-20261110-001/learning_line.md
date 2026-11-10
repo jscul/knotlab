@@ -10,11 +10,43 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-**Update, 2026-11-10 (`OTHER-ATOMS-20261110-001`).** The Fano atom is not required. A torus atom (a torus knot space less a point)
-acts as its line exactly where its torus has no satisfying state, provided the torus is free at the removed point, and the atom rule of
-section 3 is now proved by hand for such atoms on any orientable knot space with a Kasteleyn law, atoms adjacent or not. The Fano atom
-and the thin-torus atoms of even index are such atoms. A48 (section 6) was overturned as a limit and replaced by A52. Nothing below was
-wrong: sections 3 and 6 state less than is now known.
+## The line as it stands (updated 2026-11-10, after `COMPOSITE-FN-20261110-001`)
+
+Sections 1 to 8 are the note as written for B95. Four epics since then change its statement; this section is the current one.
+
+**Proved by hand.**
+- **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
+  replaced exactly in the classes where its torus has no satisfying state, and lets everything through where it has one, provided the
+  torus is free at the removed point; where it acts it holds a unit. So the atom rule of section 3 holds for such atoms on any orientable
+  knot space with a Kasteleyn law, atoms adjacent or not. The Fano atom is not required (A48 overturned as a limit, replaced by A52).
+- **Atoms nest** (`NEST-ATOMS-20261110-001`). A knot sphere carrying such atoms, less a point, is again such an atom: it acts as its line
+  exactly where every atom inside acts, at any depth, and a composite of genus g holds g − 1 units, g where it acts.
+- **Units sit where the rule says** (`MANY-POINTS-20261110-001`). With two composites and three floor units, no region holds three, the
+  composites never act together, and an acting composite holds exactly two units, one per leaf.
+- **The layers only conjoin** (`COMPOSITE-FN-20261110-001`). A composite computes the OR, over its host's minimal unsatisfiable sets of
+  lines, of the AND of their atoms' bits. Every line of every Kasteleyn knot sphere can be violated alone (a Hall count), and growth keeps
+  this, so over every host built from knot spheres and class-forced lattice tori a composite computes exactly the AND.
+- **Parallel points** (`COMPOSITE-FN-20261110-001C`). Two disturbances combine in every order, ending at the floor, when the lines and faces
+  touched by each flip and its repair are disjoint.
+
+**Computed.**
+- Freeness of all 157 lattice-torus types to 30 points (thin tori of even index to 40); the class-forced ones are the Fano torus and the thin
+  tori of even index (`OTHER-ATOMS-20261110-001D`). The smallest atom that remembers has four points.
+- Exact checks of the rules above on 960, 576 and 512 classes; the AND at 274 removed points of seven composites.
+- Writing and returning addresses: with thin leaves, 18 of 18, 6 of 6 and 48 of 48 held. With Fano leaves the two-level result landed
+  between its marks twice (5 of 6, 43 of 48), every miss an inexact search; every exact write held.
+- Disturbances in different composites combined in every order, 320 of 320; nearby ones mostly cancel.
+
+**Failed as frozen, stated plainly.**
+- N2 (`NEST-ATOMS-20261110-001`) failed at all 102 removed points inside a leaf: a leaf cut open by the removed point has no role. The
+  closed-composite reading that holds there is a post hoc restatement, covered by the theorem.
+- Ticket C of `NEST-ATOMS-20261110-001` and its re-test landed between their marks with Fano leaves (above), not a pass.
+- The locality "points interact only through a shared line", read after `MANY-POINTS-20261110-001` ran, failed its frozen re-test on one
+  of 1,200 fresh pairs; it is corrected to disjoint supports (`docs/CORRECTIONS.md`, Narrowing).
+- The search for a host outside the proved class found none: seven branched covers had no unsatisfiable class at all.
+
+**Open.** Whether every host is critical (B115); which atom a growth law can grow without design (B106); capacity (B98); the writing
+search's stopping rule (B113).
 
 ## 1. Where it started
 

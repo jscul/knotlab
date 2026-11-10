@@ -77,3 +77,32 @@ is a record of the path learning took, not of what it stored.
 **Corrections:** one, Narrowing: the σ and parity readings read the frame, not the class (`CLASS-READ-20261110-001`, `GATES-20261110-001`).
 **Goals:** G15 checkpoint (obstruction learned); B123 taken; B126 added; B124's payoff lowered to 1/3. **Assumptions:** none new or changed.
 **Basket:** B119 (native writing), B120 (inputs and outputs); taken: B119 as the selected next step.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-10:
+
+**B123 is closed, and the gates question ends with a proof.** Every reading of the stored classes is monotone. If a network's reading depends only on the classes, and not on which signing of a class learning happened to leave, it can only rise as more atoms act, and it cannot tell two non-acting classes apart (theorem M, proved by hand). A NOT does exist, but only in a fixed frame: with one signing fixed per class, explicit networks read NOT a₁ for three cut leaves, and another signing of the same class switches it off (computed). So the layered memory can say "all of these" and "any of these" about what it stores, but to say "not this" it needs a record of how each pattern was written.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: negation inside a cut leaf (B123) | **Status:** Successful | a definite ending: class readings proved monotone, a frame-level NOT exhibited |
+| Local direction: gates from cuts and names | Exhausted for this phase | what stored classes can be read as is monotone, by proof |
+| Broader exploration: learning program | Known alternatives | native writing, inputs and outputs, a frame fixed by learning |
+| Long-term goal: G15, a point in a learned knot space | Obstruction learned | a learned knot memory computes monotone functions only |
+
+**Next step:** Research directions, selected #1. The line leaves gates, as agreed.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Native writing (B119) | 2/3 Substantial | 2/3 Testable | a learner that sees only its own dissonance and the address asked for writes into the layered memory → native writing, or a reason it needs an outside map | Selected, awaiting go-ahead |
+| 2 | Inputs and outputs (B120) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 3 | A frame fixed by learning (B126) | 1/3 Incremental | 1/3 Exploratory | a writing rule that winds along fixed cycles, then the frame-level NOT read on what it writes → a native negation, or a frame learning cannot keep | Deferred |
+| 4 | Composing gates (B124) | 1/3 Incremental | 1/3 Exploratory | composed gates now known to stay monotone | Deferred |
+
+**Corrections:** one, Narrowing: the σ and parity readings from the last two epics read the frame, not the class (718 of 718 networks have a satisfying state under another signing). It's logged in docs/CORRECTIONS.md with dated lines in both notes.
+**Goals:** G15 checkpoint (obstruction learned); B123 taken; B126 added; B124's payoff lowered to 1/3.
+**Assumptions:** none new or changed.
+**Basket:** B119 (native writing), B120 (inputs and outputs); taken: B119 as the selected next step.
+
+I haven't started B119; it waits for a go-ahead.

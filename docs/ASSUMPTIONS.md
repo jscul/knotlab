@@ -113,7 +113,8 @@ evidence: results and their status come from the records each entry links.
 | [A56](#a56--time-in-a-growing-plane-is-counted-at-the-planes-own-scale) | Time in a growing plane is counted at the plane's own scale | reading | Assumed |
 | [A57](#a57--an-address-asks-for-a-bit-per-atom-each-atom-given-by-its-region) | An address asks for a bit per atom, each atom given by its region | reading | Assumed |
 | [A58](#a58--the-world-holds-inputs-as-points-and-reads-an-output-at-the-floor) | The world holds inputs as points and reads an output at the floor | reading | Assumed |
-| [A59](#a59--renamings-count-as-finite-changes-under-abstract-names) | Renamings count as finite changes under abstract names | reading | Assumed |
+| [A59](#a59--renamings-count-as-finite-changes-under-abstract-names) | Renamings count as finite changes under abstract names | reading | Confirmed |
+| [A60](#a60--nativeness-under-abstract-names-is-counted-in-place) | Nativeness under abstract names is counted in place | reading | Assumed |
 
 ## Entries
 
@@ -1365,6 +1366,10 @@ evidence: results and their status come from the records each entry links.
   many places. Re-read the census's square knots under that count. If they become native, a board made of distinctions can carry
   native knots, and the tension between the owner's idea and the source-aware reading lifts.
 - **History.**
+  - 2026-11-10 · Answered by `PLACE-FLIP-20261110-001` ([nativeness up to renaming](../research/PLACE-FLIP-20261110-001/place_flip.md)), for boards of
+    abstract names: counting changes per place with the board fixed, as the challenge asks, every board-value knot of the 90 one-bit
+    count laws is native in some world of finite pieces, while on the free board 58 of those laws let no value change by any
+    finite change. The board's own neighbour distinctions are native in place everywhere, through the switch.
   - 2026-11-10 · Bearing from `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)): without letters
     places are names, and a board changes by switching two edges with one pair of values, so its knots pass the source-aware
     condition (90 one-bit count laws knot a neighbour distinction with its two endpoint values). The frozen boards that rest on
@@ -1487,16 +1492,38 @@ evidence: results and their status come from the records each entry links.
 
 ### A59 · Renamings count as finite changes under abstract names
 
-**Assumed** · 2026-11-10 · reading
+**Confirmed** · 2026-11-10 · reading
 
 - **Statement.** When places are names without letters, the source-aware reading counts a change by the distinctions it flips, as
   written. Exchanging finitely many names is then a finite change, so in a state with infinitely many copies of each place every
   distinction passes the condition, which then excludes nothing.
 - **Why.** `BARE-NAMES-20261110-001` applied the reading as written. A count up to renaming was not mapped.
-- **Rests on it.** That the 90 knots between a neighbour distinction and its two endpoint values found by that epic's census pass
-  the source-aware condition, through the exchanges of values ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)).
+- **Rests on it.** Nothing now: the 90 knots between a neighbour distinction and its two endpoint values found by that epic's census
+  pass the source-aware condition through the exchanges of values ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)),
+  but each is also native in place, without renamings, in some world of finite pieces (`PLACE-FLIP-20261110-001`).
 - **Challenge.** Count changes up to renaming: a variable is native when a finite change that is not a renaming flips it. The switch
   of two edges with one pair of values still flips neighbour distinctions; ask which values of the 90 laws are flipped by local
   moves without renaming.
 - **History.**
+  - 2026-11-10 · Confirmed for the 90 knots by `PLACE-FLIP-20261110-001` ([nativeness up to renaming](../research/PLACE-FLIP-20261110-001/place_flip.md)):
+    counted in place (A60), with renamings excluded, every one of them is native in some world of copies of a finite board, so
+    none rests on renamings. On the free board 58 of the laws freeze their values, which no count of renamings changes.
   - 2026-11-10 · Added by `BARE-NAMES-20261110-001`.
+
+### A60 · Nativeness under abstract names is counted in place
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** When places are names without letters, a distinction counts as native at a state when a finite change flips it that
+  changes one kind of distinction only, values with the board kept or neighbour distinctions with the values kept, is not a
+  renaming, and is minimal. The source-aware reading as written cannot tell a renaming from a change; this is the count used in its
+  place.
+- **Why.** `PLACE-FLIP-20261110-001` froze it before any run, at the coordinator's request. Excluding renamings alone is not enough,
+  since a place can be transplanted by a finite rewiring that is not a renaming, so the count holds one kind of distinction fixed.
+- **Rests on it.** That epic's marks: all 90 board-value knots of `BARE-NAMES-20261110-001B` native in place in some world of finite
+  pieces, 26 native in place in some tree world and 64 in none, 58 laws rigid on every tree ([nativeness up to renaming](../research/PLACE-FLIP-20261110-001/place_flip.md)).
+- **Challenge.** Count a change by whether it changes the world up to isomorphism, or allow both kinds of distinction to change in
+  one minimal change that is not a transplant, and ask whether the marks move. It is a reading of the canonical source-aware
+  condition, not a change to it; any change to the canonical test is the owner's.
+- **History.**
+  - 2026-11-10 · Added by `PLACE-FLIP-20261110-001`.

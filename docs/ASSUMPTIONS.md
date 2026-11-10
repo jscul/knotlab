@@ -102,6 +102,7 @@ evidence: results and their status come from the records each entry links.
 | [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
 | [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
 | [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
+| [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Assumed |
 
 ## Entries
 
@@ -640,6 +641,8 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-10 · Relied on again by `GROW-HANDLE-20261110-001` for learning after growth; growth itself is a separate move, chosen by the
+    experimenter there (A48) ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)).
   - 2026-11-10 · The outside target is not needed on the class-forced tori: `NATIVE-TARGET-20261110-001` steered the same learner with
     native signals, its sight of its own moves and the count of states sharing the state's dissonance, resolving every run and beating
     random moves (computed). The target part of A26 is no longer relied on there; the rest is kept ([a native target for learning](../research/NATIVE-TARGET-20261110-001/native_target.md)).
@@ -1170,3 +1173,21 @@ evidence: results and their status come from the records each entry links.
   the hole determines; then only sight of bounded radius qualifies, and it already beats random moves.
 - **History.**
   - 2026-11-10 · Added by `NATIVE-TARGET-20261110-001`.
+
+### A48 · A grown handle is a Fano atom with the uniform law
+
+**Assumed** · 2026-11-10 · scope
+
+- **Statement.** When learning is paired with growth, the growth move splices one Fano atom (the Fano plane less a point) at a line, by
+  one of the three bijections that keep both rotations; the atom brings the Fano plane's uniform signs, the old signs are kept, and the
+  three new sides take the signs that leave no even face. The experimenter chooses the line.
+- **Why.** `GROW-HANDLE-20261110-001` took it by default: a Fano atom is the knot's own uniform contradiction, and splicing one across a
+  3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`). The uniform signs make the grown law the one class that keeps the
+  sphere's contradiction.
+- **Rests on it.** That epic's reading that growth alone does not remove a sphere's dissonance and that learning then removes it through
+  the grown handle ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)). With the atom brought in another class, the atom would be transparent and growth alone would remove it.
+- **Challenge.** Other atoms (a thin torus less a point, other three-fold blocks), the atom brought in the class growth chooses, or a
+  growth site the learner chooses (backlog B68). The cheapest test grows a thin torus's atom instead and reads whether it too acts as the
+  replaced line in one class and is transparent in the others.
+- **History.**
+  - 2026-11-10 · Added by `GROW-HANDLE-20261110-001`.

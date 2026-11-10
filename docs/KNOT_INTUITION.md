@@ -1318,9 +1318,27 @@ So network holes come in two kinds:
      and the face of opposite charge attract. A learner keeping the fewest such states never resolves on the Fano tori.
    - **Reading.** The owner's "strength based on stability" has a native form: the point is drawn to its resolution by keeping the
      world's options open, with no outside map.
-   - **Next (awaiting a go-ahead).** Learning that grows a handle (sub-goal B60; Payoff 3/3, Concreteness 2/3): a sphere's dissonance
+   - **Next (taken by `GROW-HANDLE-20261110-001`, below).** Learning that grows a handle (sub-goal B60; Payoff 3/3, Concreteness 2/3): a sphere's dissonance
      cannot be resolved, and splicing a Fano atom across a 3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`), so
      splice one at the violated line and learn ([decision note](../research/NATIVE-TARGET-20261110-001/native_target.md)).
+
+   **2026-11-10: learning that grows a handle** (`GROW-HANDLE-20261110-001`).
+   - **The question.** A sphere's forced dissonance can be moved but never removed. Can growth add a handle where it sits, so that learning
+     then removes it, and does it matter where the handle grows?
+   - **The grown space (proved).** Splicing a Fano atom (the Fano plane less a point, the knot's own uniform contradiction) at a line of a
+     knot sphere, by one of the three bijections that keep both rotations, makes a torus; the old law extends with no even face, uniquely
+     up to gauge.
+   - **Growth alone does not resolve (computed, then proved from it).** In the grown class the atom acts exactly as the line it replaced,
+     and in the other three classes it is transparent (540 grown tori, K_2 to K_5). So the grown law is the only class no state satisfies:
+     growth changes what forces the dissonance, from the count to the class.
+   - **Learning then resolves it, through the new handle (proved).** With the state fixed, learning removes the dissonance completely, and
+     every resolution changes a sign in the grown atom: going around the new handle is what makes the atom transparent.
+   - **Placement sets the cost (computed).** Grown at the dissonance, the violated line moves into the atom and learning resolves it in
+     3 sign changes on every sphere; grown farther away it costs more (on K_5 a mean of 5.7 one line away, 15.6 five away).
+   - **Reading.** For the owner's picture: growth and learning together remove what neither removes alone, most cheaply when the space
+     grows where the tension is.
+   - **Next (started).** Choosing the resolution (backlog B62): which of the classes a pair can end in a native rule can choose
+     ([decision note](../research/GROW-HANDLE-20261110-001/grow_handle.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

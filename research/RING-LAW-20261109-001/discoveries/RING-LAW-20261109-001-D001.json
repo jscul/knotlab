@@ -1,0 +1,34 @@
+{
+ "schema_version": 3,
+ "id": "RING-LAW-20261109-001-D001",
+ "scope_id": "RING-LAW-20261109-001",
+ "title": "Which contact laws make rings native",
+ "subject": "Ring networks of rule-60 rings joined by contacts, and whether their rings can be native to the automaton",
+ "conclusion": "Of the 256 self-blind contact laws, exactly the 32 affine ones that read both arriving cells alike are blind to how rings are routed through a contact, so the 224 others make rings native; an affine law sees the routing only by cutting a ring, so a law under which both rings pass and are seen is nonlinear.",
+ "authority_class": "proof",
+ "significance": [
+  "first_construction"
+ ],
+ "status": "active",
+ "superseded_by": null,
+ "curated_at": "2026-11-10",
+ "epic_closure": {
+  "ticket_id": "RING-LAW-20261109-001Z",
+  "artifact_id": "RING-LAW-20261109-001Z-P001",
+  "manifest_path": "proofs/RING-LAW-20261109-001Z/RING-LAW-20261109-001Z-P001_epic_closure/manifest.json",
+  "manifest_sha256": "240277580bca920d7c09f976f63ee56741d3de58709b61f88650403fe3178ef1",
+  "report_path": "proofs/RING-LAW-20261109-001Z/RING-LAW-20261109-001Z-P001_epic_closure/proof.md",
+  "dependency_graph_sha256": "d61174e5f3fd8485eba273102d67e3dec74a5234627cefb4beaa7369841e8666"
+ },
+ "evidence": [
+  {
+   "artifact_id": "RING-LAW-20261109-001A-P001",
+   "kind": "proof",
+   "ticket_id": "RING-LAW-20261109-001A",
+   "authority_path": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/manifest.json",
+   "authority_sha256": "8cb502e27547f95540bea20603716eb41aa21c2c94e24d03d84a40898f213d2f",
+   "explanation_path": "proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/proof.md",
+   "explanation_sha256": "0c3ec34f2bd20c7a81985aa09a9312fe6772a0e1634645bc191f53d45a2ccc88"
+  }
+ ]
+}

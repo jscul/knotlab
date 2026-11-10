@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**294 current results** and 5 superseded ones, from 260 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**295 current results** and 5 superseded ones, from 260 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 51 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 52 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 19 results
@@ -195,6 +195,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-10 · Each eigenvalue's eigenvectors on the cut-open torus are one polynomial** (`KLOOSTERMAN-BOUNDS-20261110-001-D001`).
   At sides 2^m the eigenvectors of the cut-open torus at each eigenvalue are one polynomial G times polynomials in Y = k² + k, proved from a self-adjointness and a shared shift ratio, so their number is set by deg G alone. deg G matches the Kloosterman count at every eigenvalue to side 512 (computed); bounding it, and the Jordan chains the collapse needs, stay open.
   [proof P001](proofs/KLOOSTERMAN-BOUNDS-20261110-001A/KLOOSTERMAN-BOUNDS-20261110-001A-P001_one_polynomial_per_eigenvalue/proof.md), [epic closure](proofs/KLOOSTERMAN-BOUNDS-20261110-001Z/KLOOSTERMAN-BOUNDS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Which contact laws make rings native** (`RING-LAW-20261109-001-D001`).
+  Of the 256 self-blind contact laws, exactly the 32 affine ones that read both arriving cells alike are blind to how rings are routed through a contact, so the 224 others make rings native; an affine law sees the routing only by cutting a ring, so a law under which both rings pass and are seen is nonlinear.
+  [proof P001](proofs/RING-LAW-20261109-001A/RING-LAW-20261109-001A-P001_which_laws_see_rings/proof.md), [epic closure](proofs/RING-LAW-20261109-001Z/RING-LAW-20261109-001Z-P001_epic_closure/proof.md)
 
 ## Holes, depth and Tseitin proof complexity
 
@@ -1237,7 +1240,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Rescue on maps of higher genus (`RESCUE-GENUS-20261109-001`) | [closure](proofs/RESCUE-GENUS-20261109-001Z/RESCUE-GENUS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-GENUS-20261109-001/) |
 | 2026-11-09 | Which finite maps rescue late rings (`RESCUE-MAP-20261109-001`) | [closure](proofs/RESCUE-MAP-20261109-001Z/RESCUE-MAP-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RESCUE-MAP-20261109-001/) |
 | 2026-11-09 | The return map digit by digit (`RETURN-DIGITS-20261109-001`) | [closure](proofs/RETURN-DIGITS-20261109-001Z/RETURN-DIGITS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RETURN-DIGITS-20261109-001/) |
-| 2026-11-09 | Rings the law can see (`RING-LAW-20261109-001`) | — | [folder](research/RING-LAW-20261109-001/) |
+| 2026-11-09 | Rings the law can see (`RING-LAW-20261109-001`) | [closure](proofs/RING-LAW-20261109-001Z/RING-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RING-LAW-20261109-001/) |
 | 2026-11-09 | A ring inserted while running (`RING-RUN-20261109-001`) | [closure](proofs/RING-RUN-20261109-001Z/RING-RUN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RING-RUN-20261109-001/) |
 | 2026-11-09 | Larger spacings (`SPACING-20261109-001`) | [closure](proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/SPACING-20261109-001/) |
 | 2026-11-09 | The first tie of shortest routes (`TIE-LAW-20261109-001`) | [closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-LAW-20261109-001/) |

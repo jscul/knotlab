@@ -1,0 +1,70 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835",
+    "research/CLASS-READ-20261110-001/preregistration.md": "8c42661be663fc0ab7fd6b5304e96a6960bec0c2b29b9fabb601293151416d0e"
+   }
+  },
+  "1 G1: the sets of classes read by one-leaf networks": {
+   "pass": true,
+   "info": {
+    "networks": 6800,
+    "acting class": [
+     0,
+     1
+    ],
+    "sets read (networks)": {
+     "[(0, 0), (0, 1), (1, 0), (1, 1)]": 50,
+     "[(0, 1)]": 6032,
+     "[(0, 1), (1, 0)]": 718
+    },
+    "lines through the acting class read": [
+     [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    ]
+   }
+  },
+  "2 G2: readings of two-leaf networks on the nine non-acting class pairs": {
+   "pass": true,
+   "info": {
+    "networks": 67500,
+    "distinct readings on the non-acting pairs (of 512)": 4,
+    "networks reading each joint minterm": {
+     "((0, 0), (0, 0))": 0,
+     "((0, 0), (1, 0))": 0,
+     "((0, 0), (1, 1))": 0,
+     "((1, 0), (0, 0))": 0,
+     "((1, 0), (1, 0))": 2088,
+     "((1, 0), (1, 1))": 0,
+     "((1, 1), (0, 0))": 0,
+     "((1, 1), (1, 0))": 0,
+     "((1, 1), (1, 1))": 0
+    },
+    "most common readings": {
+     "[]": 65232,
+     "[((1, 0), (1, 0))]": 2088,
+     "[((0, 0), (1, 0)), ((1, 0), (1, 0)), ((1, 1), (1, 0))]": 90,
+     "[((1, 0), (0, 0)), ((1, 0), (1, 0)), ((1, 0), (1, 1))]": 90
+    }
+   }
+  },
+  "predictions": {
+   "R0: every reading 1 where a leaf acts": true,
+   "R1: some G1 network reads a line through the acting class": true,
+   "R2: every joint minterm of the non-acting pairs read in G2": false,
+   "failure line crossed": false
+  },
+  "seconds": 7.2
+ }
+}

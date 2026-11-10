@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**300 current results** and 5 superseded ones, from 272 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**301 current results** and 5 superseded ones, from 272 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 15 results
+- [Other results](#other-results): 16 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 272 epics with their closures
 
@@ -989,6 +989,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · On every octahedral knot sphere, each separated Fano atom acts as its line in exactly one class of its handle and then holds a unit** (`ATOM-RULE-20261110-001-D001`).
   For every octahedral knot sphere with separated Fano atoms, each atom acts as its replaced line in exactly one of its handle's four classes; if all act no state satisfies every line, and otherwise every acting atom holds a unit of the floor dissonance. Proved computer-assisted: two lemmas by hand, a finite local check and a classification of line neighbourhoods.
   [proof P001](proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/proof.md), [epic closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Names read a stored class only upward, against two fixed landmarks** (`CLASS-READ-20261110-001-D001`).
+  Read by parity names, a closed leaf's class gives only three readings: its acting class, its acting class or its most constrained satisfiable class, or every class; with two leaves only one of nine joint minterms of the non-acting classes appears. So readings stay monotone and the basis is not completed (computed exhaustively on new networks).
+  [proof P001](proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/proof.md), [epic closure](proofs/CLASS-READ-20261110-001Z/CLASS-READ-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · Every line of a knot sphere is critical, so the layered memory computes only conjunctions** (`COMPOSITE-FN-20261110-001-D001`).
   Every line of every Kasteleyn knot sphere has a state violating it alone, since any set of lines touches at least two more faces than it has lines; with growth keeping this, a composite over any host built from knot spheres and class-forced lattice tori computes exactly the AND of its atoms' bits (proved by hand). Disturbances whose flips and repairs touch disjoint lines and faces combine in every order.
   [proof P001](proofs/COMPOSITE-FN-20261110-001A/COMPOSITE-FN-20261110-001A-P001_and_for_critical_hosts/proof.md), [proof P001](proofs/COMPOSITE-FN-20261110-001B/COMPOSITE-FN-20261110-001B-P001_a_search_outside_the_proved_class/proof.md), [proof P001](proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/proof.md), [epic closure](proofs/COMPOSITE-FN-20261110-001Z/COMPOSITE-FN-20261110-001Z-P001_epic_closure/proof.md)
@@ -1271,7 +1274,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | The board as distinctions (`BOARD-DIST-20261110-001`) | [closure](proofs/BOARD-DIST-20261110-001Z/BOARD-DIST-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/BOARD-DIST-20261110-001/) |
 | 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
-| 2026-11-10 | Reading the class, not the bit (`CLASS-READ-20261110-001`) | — | [folder](research/CLASS-READ-20261110-001/) |
+| 2026-11-10 | Reading the class, not the bit (`CLASS-READ-20261110-001`) | [closure](proofs/CLASS-READ-20261110-001Z/CLASS-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CLASS-READ-20261110-001/) |
 | 2026-11-10 | The co-distance-3 cancellation (`CODIST-THREE-20261110-001`) | [closure](proofs/CODIST-THREE-20261110-001Z/CODIST-THREE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CODIST-THREE-20261110-001/) |
 | 2026-11-10 | Which functions a composite computes (`COMPOSITE-FN-20261110-001`) | [closure](proofs/COMPOSITE-FN-20261110-001Z/COMPOSITE-FN-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COMPOSITE-FN-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |

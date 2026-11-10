@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLASS-READ-20261110-001A-P001",
+  "canonical_id": "CLASS-READ-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "CLASS-READ-20261110-001A",
+  "proof": "CLASS-READ-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Class readings",
+  "status": "Proved",
+  "claim": "Computed exhaustively on networks not used before: one closed thin torus (3,2,2) read by names gives only the class sets {acting}, {acting, sigma} (the line through the acting class in direction (1,1), the post hoc parity reading re-found) and everything; two such leaves give only one of the nine joint minterms of the non-acting classes. So readings stay monotone with classes as the stored state; sigma is the most constrained satisfiable class.",
+  "dependencies": [
+    "GATES-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A reading that is 0 where a leaf acts."
+  ],
+  "lineage": {
+    "home_scope": "CLASS-READ-20261110-001",
+    "epic_path": [
+      "CLASS-READ-20261110-001"
+    ],
+    "parents": [
+      "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py",
+      "research/CLASS-READ-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835",
+    "research/CLASS-READ-20261110-001/preregistration.md": "8c42661be663fc0ab7fd6b5304e96a6960bec0c2b29b9fabb601293151416d0e"
+  },
+  "paths": {
+    "manifest": "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/manifest.json",
+    "identity": "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/identity.json",
+    "proof": "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/proof.md",
+    "result": "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/result.json",
+    "check": "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings/check.py",
+    "directory": "proofs/CLASS-READ-20261110-001A/CLASS-READ-20261110-001A-P001_class_readings"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Closed thin tori (3,2,2), one or two leaves, three names and one top.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 10e19e0a3).",
+    "status": "exhaustive computation (check.py); R0 from GATES-20261110-001A",
+    "novelty": "known-with-delta"
+  }
+}

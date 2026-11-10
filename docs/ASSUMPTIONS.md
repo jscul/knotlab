@@ -108,11 +108,12 @@ evidence: results and their status come from the records each entry links.
 | [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Confirmed |
 | [A52](#a52--a-grown-handle-is-a-class-forced-torus-atom) | A grown handle is a class-forced torus atom | scope | Assumed |
 | [A53](#a53--nativeness-of-a-board-made-of-names-is-counted-per-name) | Nativeness of a board made of names is counted per name | reading | Assumed |
-| [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Assumed |
+| [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Confirmed |
 | [A55](#a55--brauns-bit-php-preprint-is-correct) | Braun's bit-PHP preprint is correct | premise | Assumed |
 | [A56](#a56--time-in-a-growing-plane-is-counted-at-the-planes-own-scale) | Time in a growing plane is counted at the plane's own scale | reading | Assumed |
 | [A57](#a57--an-address-asks-for-a-bit-per-atom-each-atom-given-by-its-region) | An address asks for a bit per atom, each atom given by its region | reading | Assumed |
 | [A58](#a58--the-world-holds-inputs-as-points-and-reads-an-output-at-the-floor) | The world holds inputs as points and reads an output at the floor | reading | Assumed |
+| [A59](#a59--renamings-count-as-finite-changes-under-abstract-names) | Renamings count as finite changes under abstract names | reading | Assumed |
 
 ## Entries
 
@@ -1282,6 +1283,10 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Extended by `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)): with the neighbours
+    themselves distinctions of the law, on names without letters, no finitary law forces two places to touch (Ramsey), every
+    count law allows the tree, and a named square with aperiodic tiles gives planes only componentwise (proved). For finitary
+    and count laws the barrier holds without the naming.
   - 2026-11-10 · Extended by `WEAK-APER-20261110-001`
     ([weakly aperiodic laws](../research/WEAK-APER-20261110-001/weak_aperiodic.md)): under Leibniz's rule every law with finite windows over a
     finite alphabet and infinitely many solutions has the tree as a board, since every infinite shift of finite type on the free
@@ -1360,23 +1365,36 @@ evidence: results and their status come from the records each entry links.
   many places. Re-read the census's square knots under that count. If they become native, a board made of distinctions can carry
   native knots, and the tension between the owner's idea and the source-aware reading lifts.
 - **History.**
+  - 2026-11-10 · Bearing from `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)): without letters
+    places are names, and a board changes by switching two edges with one pair of values, so its knots pass the source-aware
+    condition (90 one-bit count laws knot a neighbour distinction with its two endpoint values). The frozen boards that rest on
+    this entry rest on the naming (A54). Renamings are then finite changes as well, so the condition excludes nothing (A59).
   - 2026-11-10 · Added by `BOARD-DIST-20261110-001`, which took the per-name count by default.
 
 ### A54 · Places are named by words in two letters
 
-**Assumed** · 2026-11-10 · scope
+**Confirmed** · 2026-11-10 · scope
 
 - **Statement.** In the challenge of A51 the places are named by the reduced words in x, y and their inverses. Every name then has
   four neighbour names, so the law's neighbourhood is fixed by the naming, and every board is a quotient of the tree of names.
+  Confirmed for the obstruction: without letters no finitary law and no count law forces the plane either. The naming draws
+  four neighbours a law can address and one connected world, and it freezes the board.
 - **Why.** Backlog B92's first test chose this naming. A finitary uniform law needs a bounded neighbourhood, and the naming supplies one
   without a clause that names a degree. `BOARD-DIST-20261110-001` kept it.
-- **Rests on it.** Every result of `BOARD-DIST-20261110-001`
-  ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)), `LEIBNIZ-BOARDS-20261110-001`,
-  `RIGID-WORLDS-20261110-001` and `WEAK-APER-20261110-001`.
+- **Rests on it.** Not the obstruction itself, which holds without letters (`BARE-NAMES-20261110-001`). What does rest on it:
+  the frozen boards of `BOARD-DIST-20261110-001` (its Theorem 5) and A53's reading; finite boards forced by finitary laws
+  (its Theorem 4); every board being connected; and the stabilizer readings of `LEIBNIZ-BOARDS-20261110-001`,
+  `RIGID-WORLDS-20261110-001` and `WEAK-APER-20261110-001`, which use the letters' group
+  ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)).
 - **Challenge.** Name places without letters, with a neighbour distinction for each pair and laws that name no degree. The question
   is then whether a finitary law can force a bounded degree at all, and whether the unfolding theorem holds there. If the theorem
   fails, the naming was a hidden drawing; if it holds, the obstruction does not depend on the naming.
 - **History.**
+  - 2026-11-10 · Confirmed for the obstruction by `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)), by
+    the rule frozen in its pre-registration. Without letters every finitary law that allows a state allows a structureless one,
+    every count law allows the tree, and a named face gives planes only componentwise (proved), so the obstruction does not
+    depend on the naming. The naming draws neighbours a law can address and one connected world, and the frozen boards rest on
+    it: without letters two edges with one pair of values exchange partners, a finite change.
   - 2026-11-10 · Bearing from `WEAK-APER-20261110-001` ([weakly aperiodic laws](../research/WEAK-APER-20261110-001/weak_aperiodic.md)): with
     this naming, under Leibniz's rule, the tree is a board of every law with infinitely many solutions (proved). The tree is the
     naming's own shape, so the challenge, names without letters, is the remaining test of whether the obstruction belongs to the
@@ -1466,3 +1484,19 @@ evidence: results and their status come from the records each entry links.
   majority and parity under theorem D), or as a probability over floor states; or let the world hold inputs as signs rather than points.
 - **History.**
   - 2026-11-10 · Added by `IN-OUT-20261110-001`.
+
+### A59 · Renamings count as finite changes under abstract names
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** When places are names without letters, the source-aware reading counts a change by the distinctions it flips, as
+  written. Exchanging finitely many names is then a finite change, so in a state with infinitely many copies of each place every
+  distinction passes the condition, which then excludes nothing.
+- **Why.** `BARE-NAMES-20261110-001` applied the reading as written. A count up to renaming was not mapped.
+- **Rests on it.** That the 90 knots between a neighbour distinction and its two endpoint values found by that epic's census pass
+  the source-aware condition, through the exchanges of values ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)).
+- **Challenge.** Count changes up to renaming: a variable is native when a finite change that is not a renaming flips it. The switch
+  of two edges with one pair of values still flips neighbour distinctions; ask which values of the 90 laws are flipped by local
+  moves without renaming.
+- **History.**
+  - 2026-11-10 · Added by `BARE-NAMES-20261110-001`.

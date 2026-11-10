@@ -18,8 +18,9 @@ Several points of dissonance in the layered memory move independently unless the
   the address held 93% to 100% of the time, against 100% after one.
 - **Post hoc:** every pair at distance 2 or more was independent (1,104 of 1,104), and 154 of the 176 pairs sharing a line interacted.
   Points interact only through a shared line, on these samples.
-- **Writing, re-tested (computed).** With 96 addresses: thin leaves held 48 of 48; Fano leaves held 43 of 48, between the marks again.
-  All five misses were writes the search ended inexactly; every exact write, 91 of 91, held after the disturbance.
+- **Writing, re-tested (computed).** With 96 addresses: thin leaves held 48 of 48. With Fano leaves the result is not a pass: it landed
+  between the marks twice (5 of 6 in `NEST-ATOMS-20261110-001`, 43 of 48 here), all misses inexact searches. Every exact write, 91 of
+  91, held after the disturbance.
 
 ## What is proved and what is computed
 
@@ -30,7 +31,7 @@ Several points of dissonance in the layered memory move independently unless the
 | A2: every allowed distribution realized in every class | exact (SAT over every state, 512 classes) |
 | Two points: independence by category, cancel and bind | computed on 1,280 sampled pairs, the order test exhaustive per pair |
 | Interaction only through a shared line | computed, post hoc |
-| Writing: 91 of 96 held, every exact write held | computed |
+| Writing: thin leaves 48 of 48 held; Fano leaves between the marks twice (5 of 6, 43 of 48), all misses inexact searches | computed |
 
 ## Against the pre-registration
 

@@ -108,3 +108,42 @@ Directions 1 and 2 tie at the top and are independent; they could run in paralle
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B120 taken; B132 and B133 added. **Assumptions:** A58 added.
 **Basket:** B132 (credit from pinned dissonance), B133 (three held inputs), B130 (a probe that is a theorem); taken: B132 as the selected
 next step.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-10:
+
+**B120 is closed: the memory learns gates from examples at a single atom, a NOT gate included, but not through a composite.** The world holds two points of an atom and reads the third at the floor. A learner that sees only its own dissonance under the world's clamps learned 53 of 56 targets at 14 single atoms and they held. At 4 composites it got 1 of 16, and that one was the "off" target.
+
+The examples were stored by that learner alone, with no outside map. It is not the native writer and uses no address: it never learns which atoms exist, where they are, their roles or classes, or any target signing.
+
+- **Every map is self-dual (proved by hand).** Flipping every point never changes the dissonance, so the answer for opposite inputs is always the opposite. No knot space computes AND, OR or XOR of two held inputs, and the learner never stopped on AND (18 of 18).
+- **Non-monotone maps come from the world's frame (proved by hand).** Flipping one point's frame negates that input or the output. Theorem M only bounds readings of stored classes, and held inputs aren't stored classes, so NOT is allowed here.
+- **An acting atom is a gate (exact, every class).** When the two held points agree, the third is forced to their opposite (the NOT gate); otherwise it's free. A transparent atom reads nothing.
+- **Examples can't see inside a composite (proved by hand).** A composite's interface reads its inner atoms only through the AND of their roles, so every example looks the same until all of them act.
+- **The probe is computed, not proved, and it failed its mark.** On the largest space it was fooled 6 times (I predicted 0). There was also a learner defect: a failed write could leave it stuck above its floor, where it never probes again.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: inputs and outputs (B120) | **Status:** Partial | gates learned at single atoms (53 of 56); composites not reached (1 of 16); the probe was fooled 6 times |
+| Local direction: learning maps at an interface | Continue | depth fails for a proved reason, and there is a native signal it doesn't use yet |
+| Broader exploration: learning program | Known alternatives | credit from pinned dissonance, three held inputs, a sturdier probe |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | the memory computes and learns gates of held inputs, NOT included |
+
+**Next step:** Research directions, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Credit from pinned dissonance (B132) | 2/3 Substantial | 2/3 Testable | also count dissonance the learner can't walk away near the interface as partial credit, and relax to the floor before probing → composite gates learned, or pinned dissonance that misleads | Selected, awaiting go-ahead |
+| 2 | Three held inputs (B133) | 2/3 Substantial | 2/3 Testable | census of maps with three held points (self-duality allows majority and parity), then learn parity → a learned map that isn't unate, or a proof none exists | Tied, independent |
+| 3 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded; now covering the clamped walks too | Deferred |
+| 4 | Writing with only the ones named (B131) | 1/3 Incremental | 2/3 Testable | as recorded | Deferred |
+
+Directions 1 and 2 tie at the top and are independent, so they could run in parallel.
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (capability gained); B120 taken; B132 and B133 added.
+**Assumptions:** A58 added (the world holds inputs as points and reads the output at the floor as decided, undecided or excluded).
+**Basket:** B132 (credit from pinned dissonance), B133 (three held inputs), B130 (a probe that is a theorem); taken: B132 as the selected next step.
+
+B132 waits for a go-ahead.

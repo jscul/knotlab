@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse",
+      "reach"
+    ],
+    "program": "foundations",
+    "takes": [
+      "B59"
+    ]
+  },
+  "id": "REACH-HALVES-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Restart the parked collapse line with B59 at the coordinator's pick (2026-11-10, relaying the owner's 'let's try the harder 3/3'), taken as the coordinator framed it: the full-reach theorem on the n x n square torus of rule-60 rings cut open both ways (FULL-REACH-20261108-001: every uncut contact needs every ring at every side n >= 3 except the powers of two from 8), both halves. Ticket A: the failure at every power of two n = 2^m >= 8, by proof; ticket B: full reach at every other side, by proof for as large a family as can be reached, with the census carried one size past 64. Outcomes: a proof of a half, a side where the census breaks, or the exact step that resists, stated and checked.",
+  "ownership": {
+    "root": true,
+    "scope_id": "REACH-HALVES-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (Partially successful): the full-reach theorem is not proved, but its failing half now rests on one even walk count. Proved: if the contact (1, 0) next to a corner never reads d* = (n + 3, n + 2), then (n + 2, n + 3) misses the corner ring and full reach fails; on the h contacts this is a count on a conveyor-belt grid; the reflection in X - Y = 1 is a symmetry of the walk (the box's own mirrors carry it to its transpose), and mod 2 only excursions above the diagonal that reach the left or top wall survive; the strip at a power of two has one nonzero branch; a cyclic contact in every ring suffices for full reach. Computed: the count vanishes at every power of two from 8 to 128; the corner's return series is 1/(1 + L(w^4)), L the trace polynomial of GF(2n), at 4 to 128, the quadrant's Catalan series folded modulo 2n - 1; full reach at every side to 130 except exactly 8, 16, 32, 64, 128, with the predicted failing sets. Recommendation Continue, awaiting the coordinator's go-ahead: the corner return law as a theorem first.",
+  "status_class": "complete",
+  "stop_rule": "Frozen 2026-11-10 before the proof attempt: the epic ends when ticket A has a refereed proof of the failure at every power of two from 8 or its attempt has stated the lemma that would finish it (checked exactly at sides 8 to 64), and ticket B has its census to side 130 and either a proof for an infinite family of sides or the stated obstruction. No successor epic starts without the coordinator's go-ahead.",
+  "title": "Both halves of full reach on the square torus"
+}

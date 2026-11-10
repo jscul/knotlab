@@ -1,0 +1,211 @@
+{
+ "schema_version": 1,
+ "artifact": "REACH-HALVES-20261110-001B-P001",
+ "checks": {
+  "0 the dependency (FULL-REACH-PROOF-20261108-001A's manifest) bound by hash": {
+   "pass": true,
+   "info": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0"
+  },
+  "1 Proposition 5's criterion at sides 3 to 26: met exactly at 3, 5, 7, 9, 11, 13, 18, 19, 21, 23, 25; no cyclic contact at 4, 8, 14, 16, 20, 24; full reach everywhere but 8 and 16": {
+   "pass": true,
+   "info": {
+    "3": {
+     "cyclic contacts": 12,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "4": {
+     "cyclic contacts": 0,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": true
+    },
+    "5": {
+     "cyclic contacts": 40,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "6": {
+     "cyclic contacts": 32,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "7": {
+     "cyclic contacts": 84,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "8": {
+     "cyclic contacts": 0,
+     "every ring has one": false,
+     "full reach": false,
+     "no cyclic contact": true
+    },
+    "9": {
+     "cyclic contacts": 144,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "10": {
+     "cyclic contacts": 108,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "11": {
+     "cyclic contacts": 220,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "12": {
+     "cyclic contacts": 144,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "13": {
+     "cyclic contacts": 312,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "14": {
+     "cyclic contacts": 0,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": true
+    },
+    "15": {
+     "cyclic contacts": 392,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "16": {
+     "cyclic contacts": 0,
+     "every ring has one": false,
+     "full reach": false,
+     "no cyclic contact": true
+    },
+    "17": {
+     "cyclic contacts": 464,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "18": {
+     "cyclic contacts": 612,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "19": {
+     "cyclic contacts": 684,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "20": {
+     "cyclic contacts": 0,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": true
+    },
+    "21": {
+     "cyclic contacts": 808,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "22": {
+     "cyclic contacts": 384,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "23": {
+     "cyclic contacts": 1012,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "24": {
+     "cyclic contacts": 0,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": true
+    },
+    "25": {
+     "cyclic contacts": 1200,
+     "every ring has one": true,
+     "full reach": true,
+     "no cyclic contact": false
+    },
+    "26": {
+     "cyclic contacts": 500,
+     "every ring has one": false,
+     "full reach": true,
+     "no cyclic contact": false
+    }
+   }
+  },
+  "2 the census B2, sides 3 to 130 (census.json bound by hash): full reach fails exactly at 8, 16, 32, 64, 128; there the failing set is the quarter-turn orbit of (X, X + 1), X = n + 2, n + 6, ..., 2n - 6, each contact missing one corner ring and its two neighbours, recomputed from the ring lists": {
+   "pass": true,
+   "info": {
+    "census.json sha256": "ca70adb2029ec8ccb631b64b9c049501e306cc919f4d85493a8104c42c7861dd",
+    "failing sides": [
+     8,
+     16,
+     32,
+     64,
+     128
+    ],
+    "predictions": {
+     "8": {
+      "missing a ring == n - 4": true,
+      "missing some contact == 3n + 20": true,
+      "each misses exactly three rings": true,
+      "the corner-(0,0) failures are (X, X+1), X = n+2, n+6, ..., 2n-6": true,
+      "period verified": true
+     },
+     "16": {
+      "missing a ring == n - 4": true,
+      "missing some contact == 3n + 20": true,
+      "each misses exactly three rings": true,
+      "the corner-(0,0) failures are (X, X+1), X = n+2, n+6, ..., 2n-6": true,
+      "period verified": true
+     },
+     "32": {
+      "missing a ring == n - 4": true,
+      "missing some contact == 3n + 20": true,
+      "each misses exactly three rings": true,
+      "the corner-(0,0) failures are (X, X+1), X = n+2, n+6, ..., 2n-6": true,
+      "period verified": true
+     },
+     "64": {
+      "missing a ring == n - 4": true,
+      "missing some contact == 3n + 20": true,
+      "each misses exactly three rings": true,
+      "the corner-(0,0) failures are (X, X+1), X = n+2, n+6, ..., 2n-6": true,
+      "period verified": true
+     },
+     "128": {
+      "missing a ring == n - 4": true,
+      "missing some contact == 3n + 20": true,
+      "each misses exactly three rings": true,
+      "the corner-(0,0) failures are (X, X+1), X = n+2, n+6, ..., 2n-6": true,
+      "period verified": true
+     }
+    },
+    "seconds": 1064.2
+   }
+  }
+ },
+ "status": "passed"
+}

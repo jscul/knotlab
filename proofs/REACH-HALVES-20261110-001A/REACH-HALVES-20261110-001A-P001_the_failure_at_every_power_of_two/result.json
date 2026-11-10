@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "artifact": "REACH-HALVES-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (FULL-REACH-PROOF-20261108-001A, CONE-COLLAPSE-20261109-001A manifests)": {
+   "pass": true,
+   "info": {
+    "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0",
+    "proofs/CONE-COLLAPSE-20261109-001A/CONE-COLLAPSE-20261109-001A-P001_the_cone_and_its_return_map/manifest.json": "220ceb6c18c74cf54ff51f53bca81468bd38d0512836a37a34e63d06f621d273"
+   }
+  },
+  "1 Theorem 1: the corner funnel, the D-identities A^k[c*,(0,1)] = A^k[(1,0),d*], A^k[c*,(1,0)] = A^k[(0,1),d*], and A^2 on h = the conveyor grid, sides 3 to 16": {
+   "pass": true,
+   "info": null
+  },
+  "2 Theorem 2: sigma_0 is a symmetry of the free walk; G^B = G^(sigma_0 B) on the line X - Y = 1 (sides 3 to 10); the excursion form for (1,0) -> d* (sides 5 to 16, 25n steps) and for every pair of line points, h and v ends (sides 5 to 9, 12n steps)": {
+   "pass": true,
+   "info": {
+    "all line pairs checked (sides 5 to 9, 12n steps)": 760
+   }
+  },
+  "3 Theorem 3: det(lam - A(t)) = lam U_(n-1)((lam + t + 1/t)^2) at random points of GF(2^10), sides 2 to 16; the period-4 eigenvector at 2, 4, 8, 16; rank A(t) = 2n - 2 and dim ker (A(t) - (t + 1/t))^j = j for j <= 2n - 2 at 4 and 8 (one Jordan block); s_- = w^2 C(w^4)": {
+   "pass": true,
+   "info": null
+  },
+  "4 Lemma 4: anti-diagonal sums of x M are x(0, s + 1) + x(n - 2, s + 1 - n) for 0 <= s <= 2n - 3, sides 3 to 20, ten random vectors each": {
+   "pass": true,
+   "info": null
+  },
+  "5 computed at 4 to 64: A^P, P = e(2n - 1), fixes the corner's orbit and c*'s (so the unions over k < P are exact); A1 (c* misses the corner ring); the corner reads every contact but the d*'s; the return law A2; the far corner delayed by 4n - 2": {
+   "pass": true,
+   "info": {
+    "4": {
+     "A^P fixes the orbits": true,
+     "return law": true,
+     "never read = predicted d*'s": true,
+     "far delay 4n - 2": true,
+     "A1": true
+    },
+    "8": {
+     "A^P fixes the orbits": true,
+     "return law": true,
+     "never read = predicted d*'s": true,
+     "far delay 4n - 2": true,
+     "A1": true
+    },
+    "16": {
+     "A^P fixes the orbits": true,
+     "return law": true,
+     "never read = predicted d*'s": true,
+     "far delay 4n - 2": true,
+     "A1": true
+    },
+    "32": {
+     "A^P fixes the orbits": true,
+     "return law": true,
+     "never read = predicted d*'s": true,
+     "far delay 4n - 2": true,
+     "A1": true
+    },
+    "64": {
+     "A^P fixes the orbits": true,
+     "return law": true,
+     "never read = predicted d*'s": true,
+     "far delay 4n - 2": true,
+     "A1": true
+    }
+   }
+  }
+ },
+ "status": "passed"
+}

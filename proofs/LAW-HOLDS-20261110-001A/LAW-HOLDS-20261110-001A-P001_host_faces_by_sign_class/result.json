@@ -1,0 +1,3589 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/layers_lib.py": "27504443997b32c58096c46c5a82f71d310e1b490da3d40f60881295af74b39b",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/LAW-HOLDS-20261110-001/preregistration.md": "fda0fd633c95a994ef964e8be48557215211aada3c581546546928f4c21f69e3"
+   }
+  },
+  "1 L1 (computed by SAT over every state): the learned law's host faces lie only in the atom the unit settled in and its junction faces": {
+   "pass": true,
+   "info": {
+    "L1 as stated": false,
+    "rows": [
+     [
+      "K_2",
+      3,
+      1,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 0,1": 1,
+       "junction 1": 2,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_2",
+      3,
+      2,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_2",
+      3,
+      3,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_2",
+      4,
+      1,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 2,
+       "junction 0,1": 1,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_2",
+      4,
+      2,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_2",
+      4,
+      3,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      6,
+      1,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 2,
+       "junction 0,1": 1,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      6,
+      2,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      6,
+      3,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      9,
+      1,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 2,
+       "junction 0,1": 1,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      9,
+      2,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      9,
+      3,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      10,
+      1,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 2,
+       "junction 0,1": 1,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      10,
+      2,
+      [
+       "atom 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ],
+     [
+      "K_3",
+      10,
+      3,
+      [
+       "junction 1"
+      ],
+      {
+       "junction 1": 3,
+       "atom 1": 3
+      },
+      [
+       "transparent",
+       "line"
+      ]
+     ]
+    ]
+   }
+  },
+  "2 L2 (computed): in every class the hosts follow the atoms' roles": {
+   "pass": true,
+   "info": {
+    "L2 as stated": false,
+    "(roles, host levels): count": {
+     "(('line', 'line'), ())": 15,
+     "(('line', 'transparent'), ('atom 0', 'junction 0'))": 30,
+     "(('line', 'transparent'), ('atom 0', 'junction 0', 'junction 0,1'))": 15,
+     "(('transparent', 'line'), ('atom 1', 'junction 0,1', 'junction 1'))": 15,
+     "(('transparent', 'line'), ('atom 1', 'junction 1'))": 30,
+     "(('transparent', 'transparent'), ('atom 0', 'atom 1', 'junction 0', 'junction 0,1', 'junction 1'))": 45,
+     "(('transparent', 'transparent'), ('atom 0', 'atom 1', 'junction 0', 'junction 1', 'upper'))": 90
+    }
+   }
+  },
+  "seconds": 15.6
+ },
+ "rows": [
+  {
+   "sphere": "K_2",
+   "l0": 3,
+   "second atom at distance": 1,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 0,1": 1,
+    "junction 1": 2,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "junction 1": 2,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_2",
+   "l0": 3,
+   "second atom at distance": 2,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "junction 1": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_2",
+   "l0": 3,
+   "second atom at distance": 3,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 4,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_2",
+   "l0": 4,
+   "second atom at distance": 1,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 2,
+    "junction 0,1": 1,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 1": 2,
+      "atom 1": 2,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 2,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 2,
+      "junction 0,1": 1
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_2",
+   "l0": 4,
+   "second atom at distance": 2,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 4,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_2",
+   "l0": 4,
+   "second atom at distance": 3,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 8,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 6,
+   "second atom at distance": 1,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 2,
+    "junction 0,1": 1,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 6,
+   "second atom at distance": 2,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 27,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 6,
+   "second atom at distance": 3,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "upper": 26,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 9,
+   "second atom at distance": 1,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 2,
+    "junction 0,1": 1,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 2,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 1": 2,
+      "atom 1": 2,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 1": 2,
+      "atom 1": 2,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 9,
+   "second atom at distance": 2,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "upper": 28,
+      "junction 0": 3,
+      "atom 0": 3,
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 9,
+   "second atom at distance": 3,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 27,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 10,
+   "second atom at distance": 1,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 2,
+    "junction 0,1": 1,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 2
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 2,
+      "junction 0": 2,
+      "atom 0": 3,
+      "junction 0,1": 1,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 10,
+   "second atom at distance": 2,
+   "unit settled at": [
+    "atom 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  },
+  {
+   "sphere": "K_3",
+   "l0": 10,
+   "second atom at distance": 3,
+   "unit settled at": [
+    "junction 1"
+   ],
+   "learned law hosts": {
+    "junction 1": 3,
+    "atom 1": 3
+   },
+   "learned law roles": [
+    "transparent",
+    "line"
+   ],
+   "classes": [
+    {
+     "class": "0000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0010",
+     "roles": [
+      "line",
+      "line"
+     ],
+     "hosts": {}
+    },
+    {
+     "class": "0011",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "0110",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "0111",
+     "roles": [
+      "line",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 0": 3,
+      "atom 0": 3
+     }
+    },
+    {
+     "class": "1000",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1001",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1010",
+     "roles": [
+      "transparent",
+      "line"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1011",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1100",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1101",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1110",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    },
+    {
+     "class": "1111",
+     "roles": [
+      "transparent",
+      "transparent"
+     ],
+     "hosts": {
+      "junction 1": 3,
+      "upper": 26,
+      "junction 0": 3,
+      "atom 0": 3,
+      "atom 1": 3
+     }
+    }
+   ]
+  }
+ ]
+}

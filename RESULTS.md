@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**279 current results** and 5 superseded ones, from 236 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**280 current results** and 5 superseded ones, from 236 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 5 results
+- [Other results](#other-results): 6 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 236 epics with their closures
 
@@ -954,6 +954,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · Dissonance has a floor of half the Euler characteristic, so one grown handle is exactly enough** (`GROW-STUCK-20261110-001-D001`).
   In every state of every law on a knot space, violated lines plus over-agreement plus half the even faces is at least half the absolute Euler characteristic. So a sphere's dissonance cannot be resolved, one grown Fano atom reaches the torus's floor of zero, and every further atom adds a unit that no learning removes.
   [proof P001](proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/proof.md), [epic closure](proofs/GROW-STUCK-20261110-001Z/GROW-STUCK-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · The leftover dissonance lives in whichever atom still acts as its line** (`LAW-HOLDS-20261110-001-D001`).
+  On every genus-2 space tested, with two Fano atoms grown into a knot sphere, the floor unit can sit only inside an atom that acts as its line or at its junctions, decided by SAT over every state. Which atom holds the leftover dissonance is therefore set by the law's class, what was learned, and not by the state.
+  [proof P001](proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/proof.md), [epic closure](proofs/LAW-HOLDS-20261110-001Z/LAW-HOLDS-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Notes
 
@@ -1204,7 +1207,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Growth on an invertible substrate (`INVERT-STEP-20261110-001`) | [closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/INVERT-STEP-20261110-001/) |
 | 2026-11-10 | The Jordan chains from one polynomial (`JORDAN-CHAINS-20261110-001`) | [closure](proofs/JORDAN-CHAINS-20261110-001Z/JORDAN-CHAINS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/JORDAN-CHAINS-20261110-001/) |
 | 2026-11-10 | The Kloosterman lower bounds (`KLOOSTERMAN-BOUNDS-20261110-001`) | [closure](proofs/KLOOSTERMAN-BOUNDS-20261110-001Z/KLOOSTERMAN-BOUNDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/KLOOSTERMAN-BOUNDS-20261110-001/) |
-| 2026-11-10 | Does the law decide which atom holds the unit (`LAW-HOLDS-20261110-001`) | — | [folder](research/LAW-HOLDS-20261110-001/) |
+| 2026-11-10 | Does the law decide which atom holds the unit (`LAW-HOLDS-20261110-001`) | [closure](proofs/LAW-HOLDS-20261110-001Z/LAW-HOLDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-HOLDS-20261110-001/) |
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |

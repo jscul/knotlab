@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LAW-HOLDS-20261110-001A-P001",
+  "canonical_id": "LAW-HOLDS-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "LAW-HOLDS-20261110-001A",
+  "proof": "LAW-HOLDS-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Host faces by sign class",
+  "status": "Proved",
+  "claim": "Decided by SAT over every state on 15 genus-2 spaces (K_2, K_3, two Fano atoms): under the learned law the floor unit can sit only inside the atom that still acts as its line or at its junction faces; across all 16 classes the hosts follow the atoms' roles (both acting: no floor state; one acting: that atom; both transparent: both atoms, and the upper level when the atoms are apart).",
+  "dependencies": [
+    "ATOM-LAYERS-20261110-001A",
+    "RISE-ESCAPE-20261110-001A",
+    "GROW-HANDLE-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A floor state of the learned law with the unit inside the transparent atom or at the upper level."
+  ],
+  "lineage": {
+    "home_scope": "LAW-HOLDS-20261110-001",
+    "epic_path": [
+      "LAW-HOLDS-20261110-001"
+    ],
+    "parents": [
+      "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/layers_lib.py",
+      "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py",
+      "research/LAW-HOLDS-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/layers_lib.py": "27504443997b32c58096c46c5a82f71d310e1b490da3d40f60881295af74b39b",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/LAW-HOLDS-20261110-001/preregistration.md": "fda0fd633c95a994ef964e8be48557215211aada3c581546546928f4c21f69e3"
+  },
+  "paths": {
+    "manifest": "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/manifest.json",
+    "identity": "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/identity.json",
+    "proof": "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/proof.md",
+    "result": "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/result.json",
+    "check": "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/check.py",
+    "directory": "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_2 and K_3 with two Fano atoms (A48); the 15 floor states left by the sight-4 learner; A49's weight.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered.",
+    "status": "exact finite computation by SAT over every state (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**288 current results** and 5 superseded ones, from 255 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**289 current results** and 5 superseded ones, from 255 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 8 results
+- [Other results](#other-results): 9 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 255 epics with their closures
 
@@ -981,6 +981,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · The leftover dissonance lives in whichever atom still acts as its line** (`LAW-HOLDS-20261110-001-D001`).
   On every genus-2 space tested, with two Fano atoms grown into a knot sphere, the floor unit can sit only inside an atom that acts as its line or at its junctions, decided by SAT over every state. Which atom holds the leftover dissonance is therefore set by the law's class, what was learned, and not by the state.
   [proof P001](proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/proof.md), [epic closure](proofs/LAW-HOLDS-20261110-001Z/LAW-HOLDS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · A torus atom remembers exactly where its torus has no satisfying state: the atom rule for every class-forced free torus atom on any host** (`OTHER-ATOMS-20261110-001-D001`).
+  A torus atom grown on any orientable Kasteleyn knot space acts as its replaced line exactly where its torus has no satisfying state, transparent elsewhere, and holds a unit where it acts, whenever the torus is free at the removed point (proved by hand). Every lattice torus to 30 points is free (computed), so the Fano and thin-torus atoms of even index remember, the rest never do, and the memory does not need the Fano plane.
+  [proof P001](proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/proof.md), [proof P001](proofs/OTHER-ATOMS-20261110-001D/OTHER-ATOMS-20261110-001D-P001_free_tori/proof.md), [proof P001](proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/proof.md), [proof P001](proofs/OTHER-ATOMS-20261110-001C/OTHER-ATOMS-20261110-001C-P001_writing_with_other_atoms/proof.md), [epic closure](proofs/OTHER-ATOMS-20261110-001Z/OTHER-ATOMS-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Notes
 
@@ -1247,7 +1250,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
-| 2026-11-10 | Other atoms, a challenge of A48 (`OTHER-ATOMS-20261110-001`) | — | [folder](research/OTHER-ATOMS-20261110-001/) |
+| 2026-11-10 | Other atoms, a challenge of A48 (`OTHER-ATOMS-20261110-001`) | [closure](proofs/OTHER-ATOMS-20261110-001Z/OTHER-ATOMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/OTHER-ATOMS-20261110-001/) |
 | 2026-11-10 | F2 polynomial calculus on the sphere's count (`PC-COUNT-20261110-001`) | [closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/PC-COUNT-20261110-001/) |
 | 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |
 | 2026-11-10 | Reading distance while growing (`READ-GROW-20261110-001`) | [closure](proofs/READ-GROW-20261110-001Z/READ-GROW-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-GROW-20261110-001/) |

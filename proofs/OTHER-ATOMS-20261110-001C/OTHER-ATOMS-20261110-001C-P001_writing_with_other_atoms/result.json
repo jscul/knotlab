@@ -1,0 +1,1411 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/ADDRESS-SEQ-20261110-001A/ADDRESS-SEQ-20261110-001A-P001_writing_in_sequence/seq_lib.py": "0334bfcdb7ec820241a19a9e06110218b47e7ab43aaec727dd10627004b0639f",
+    "proofs/ADDRESS-SEQ-20261110-001A/ADDRESS-SEQ-20261110-001A-P001_writing_in_sequence/result.json": "4c95bf59b8631445b76ba8426c13135c13e94a22fc56f2f8476545d039b625e3",
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835",
+    "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/multi_lib.py": "be36087eee0a5d2763999f5b06b24446e1cb92bb2920c174d9ab4e2b4c247f80",
+    "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/result.json": "209d6f17a5ba248edbc7e461101da46d864a09d26f39347b67b8446083eb9b0d",
+    "research/OTHER-ATOMS-20261110-001/preregistration.md": "387de4ba12c2ea60e7737632ce10379c64eaba3e183d65844cb1c09c11561fbb"
+   }
+  },
+  "1 code control: the Fano atom through the patched code with random.Random(88) reproduces ADDRESS-SEQ-20261110-001A's K_3 rows exactly": {
+   "pass": true,
+   "info": {
+    "rows": 3,
+    "ADDRESS-SEQ rows": 3
+   }
+  },
+  "2 T3 (computed): writing in sequence with each atom passing T1 and T2, random.Random(97)": {
+   "pass": true,
+   "info": {
+    "verdicts": [
+     {
+      "atom": "torus(7,2,1)",
+      "writes": 18,
+      "written": 18,
+      "outcomes": {
+       "held": 18
+      },
+      "held share": 1.0,
+      "T3": true,
+      "failure (a write not reached, or under 80% held)": false,
+      "configurations searched": 11692
+     },
+     {
+      "atom": "torus(2,1,2)",
+      "writes": 18,
+      "written": 18,
+      "outcomes": {
+       "held": 18
+      },
+      "held share": 1.0,
+      "T3": true,
+      "failure (a write not reached, or under 80% held)": false,
+      "configurations searched": 7461
+     },
+     {
+      "atom": "torus(3,2,2)",
+      "writes": 18,
+      "written": 18,
+      "outcomes": {
+       "held": 18
+      },
+      "held share": 1.0,
+      "T3": true,
+      "failure (a write not reached, or under 80% held)": false,
+      "configurations searched": 13565
+     },
+     {
+      "atom": "torus(4,3,2)",
+      "writes": 18,
+      "written": 18,
+      "outcomes": {
+       "held": 18
+      },
+      "held share": 1.0,
+      "T3": true,
+      "failure (a write not reached, or under 80% held)": false,
+      "configurations searched": 17880
+     }
+    ]
+   }
+  },
+  "predictions": {
+   "P4: every atom tested passes T3": true,
+   "atoms passing T3": [
+    "torus(7,2,1)",
+    "torus(2,1,2)",
+    "torus(3,2,2)",
+    "torus(4,3,2)"
+   ],
+   "atoms failing T3": []
+  },
+  "rows": [
+   {
+    "sphere": "K_3",
+    "l0": 6,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 889,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1030,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 732,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 774,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1053,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 689,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(7,2,1)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 9,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 737,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 584,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 508,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 333,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 547,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 508,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(7,2,1)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 10,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 623,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 644,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 501,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 481,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 600,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 459,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(7,2,1)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 6,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 532,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 407,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 401,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 276,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 465,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 382,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(2,1,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 9,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 581,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 263,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 272,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 224,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 263,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 253,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(2,1,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 10,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 603,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 473,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 416,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 756,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 473,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 421,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(2,1,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 6,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 763,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 660,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 964,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1022,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 663,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 922,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(3,2,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 9,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 740,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 815,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 413,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1064,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 815,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 433,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(3,2,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 10,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 694,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 691,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 567,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1003,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 749,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 587,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(3,2,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 6,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1043,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1003,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 1381,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1512,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1063,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 1381,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(4,3,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 9,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 577,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1103,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 617,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1038,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1103,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 529,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(4,3,2)"
+   },
+   {
+    "sphere": "K_3",
+    "l0": 10,
+    "atoms": 3,
+    "steps": [
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 925,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 968,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 746,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       1
+      ],
+      "written": true,
+      "configurations": 1171,
+      "acting after write": [
+       0,
+       1
+      ],
+      "acting after disturbance": [
+       0,
+       1
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       1,
+       2
+      ],
+      "written": true,
+      "configurations": 1002,
+      "acting after write": [
+       1,
+       2
+      ],
+      "acting after disturbance": [
+       1,
+       2
+      ],
+      "outcome": "held"
+     },
+     {
+      "target": [
+       0,
+       2
+      ],
+      "written": true,
+      "configurations": 718,
+      "acting after write": [
+       0,
+       2
+      ],
+      "acting after disturbance": [
+       0,
+       2
+      ],
+      "outcome": "held"
+     }
+    ],
+    "atom": "torus(4,3,2)"
+   }
+  ],
+  "seconds": 5.9
+ }
+}

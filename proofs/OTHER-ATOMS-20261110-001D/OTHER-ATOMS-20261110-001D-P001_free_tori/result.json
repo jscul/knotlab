@@ -1,0 +1,11077 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835",
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/result.json": "43710f2a2f982448b24b13a53c552a1d3fd89d01217bccb704c715752d741dc8",
+    "research/OTHER-ATOMS-20261110-001/preregistration.md": "387de4ba12c2ea60e7737632ce10379c64eaba3e183d65844cb1c09c11561fbb"
+   }
+  },
+  "1 D1: every torus is free at its point in every class": {
+   "pass": true,
+   "info": {
+    "types": 157,
+    "not free": [],
+    "types by points": {
+     "3": 1,
+     "4": 2,
+     "5": 1,
+     "6": 2,
+     "7": 2,
+     "8": 4,
+     "9": 3,
+     "10": 3,
+     "11": 2,
+     "12": 7,
+     "13": 3,
+     "14": 4,
+     "15": 5,
+     "16": 8,
+     "17": 3,
+     "18": 7,
+     "19": 4,
+     "20": 9,
+     "21": 7,
+     "22": 6,
+     "23": 4,
+     "24": 14,
+     "25": 6,
+     "26": 7,
+     "27": 8,
+     "28": 12,
+     "29": 5,
+     "30": 13,
+     "32": 1,
+     "34": 1,
+     "36": 1,
+     "38": 1,
+     "40": 1
+    }
+   }
+  },
+  "2 D2: the class-forced types are the Fano torus and the thin tori of even index, each with exactly one unsatisfiable class": {
+   "pass": true,
+   "info": {
+    "class-forced types": [
+     [
+      "torus(2,1,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(3,2,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(7,2,1)",
+      "other",
+      [
+       "00"
+      ]
+     ],
+     [
+      "torus(4,3,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(5,4,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(6,5,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(7,6,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(8,7,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(9,8,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(10,9,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(11,10,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(12,11,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(13,12,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(14,13,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(15,14,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(16,15,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(17,16,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(18,17,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ],
+     [
+      "torus(19,18,2)",
+      "thin",
+      [
+       "01"
+      ]
+     ],
+     [
+      "torus(20,19,2)",
+      "thin",
+      [
+       "10"
+      ]
+     ]
+    ]
+   }
+  },
+  "3 D3: on ticket A's 29 types, the role read from the torus alone equals the role found on every splice": {
+   "pass": true,
+   "info": {
+    "class readings compared": 6960,
+    "splices": 1740,
+    "disagreements": []
+   }
+  },
+  "rows": [
+   {
+    "torus": "torus(3,1,1)",
+    "points": 3,
+    "kind": "thin",
+    "members": [
+     [
+      3,
+      1,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,2)",
+    "points": 4,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,2)",
+    "points": 4,
+    "kind": "thin",
+    "members": [
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      4,
+      1,
+      1
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,1,1)",
+    "points": 5,
+    "kind": "thin",
+    "members": [
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      5,
+      2,
+      1
+     ],
+     [
+      5,
+      3,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,3)",
+    "points": 6,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      3
+     ],
+     [
+      2,
+      1,
+      3
+     ],
+     [
+      3,
+      0,
+      2
+     ],
+     [
+      3,
+      1,
+      2
+     ],
+     [
+      6,
+      2,
+      1
+     ],
+     [
+      6,
+      3,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,2,2)",
+    "points": 6,
+    "kind": "thin",
+    "members": [
+     [
+      3,
+      2,
+      2
+     ],
+     [
+      6,
+      1,
+      1
+     ],
+     [
+      6,
+      4,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,1,1)",
+    "points": 7,
+    "kind": "thin",
+    "members": [
+     [
+      7,
+      1,
+      1
+     ],
+     [
+      7,
+      3,
+      1
+     ],
+     [
+      7,
+      5,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,2,1)",
+    "points": 7,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      2,
+      1
+     ],
+     [
+      7,
+      4,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "00"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,4)",
+    "points": 8,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      4
+     ],
+     [
+      4,
+      0,
+      2
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,4)",
+    "points": 8,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      1,
+      4
+     ],
+     [
+      8,
+      3,
+      1
+     ],
+     [
+      8,
+      4,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,1,2)",
+    "points": 8,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      1,
+      2
+     ],
+     [
+      8,
+      2,
+      1
+     ],
+     [
+      8,
+      5,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,3,2)",
+    "points": 8,
+    "kind": "thin",
+    "members": [
+     [
+      4,
+      3,
+      2
+     ],
+     [
+      8,
+      1,
+      1
+     ],
+     [
+      8,
+      6,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,3)",
+    "points": 9,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      3
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,1,3)",
+    "points": 9,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      1,
+      3
+     ],
+     [
+      3,
+      2,
+      3
+     ],
+     [
+      9,
+      2,
+      1
+     ],
+     [
+      9,
+      3,
+      1
+     ],
+     [
+      9,
+      5,
+      1
+     ],
+     [
+      9,
+      6,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,1,1)",
+    "points": 9,
+    "kind": "thin",
+    "members": [
+     [
+      9,
+      1,
+      1
+     ],
+     [
+      9,
+      4,
+      1
+     ],
+     [
+      9,
+      7,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,5)",
+    "points": 10,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      5
+     ],
+     [
+      2,
+      1,
+      5
+     ],
+     [
+      5,
+      0,
+      2
+     ],
+     [
+      5,
+      3,
+      2
+     ],
+     [
+      10,
+      4,
+      1
+     ],
+     [
+      10,
+      5,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,1,2)",
+    "points": 10,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      1,
+      2
+     ],
+     [
+      5,
+      2,
+      2
+     ],
+     [
+      10,
+      2,
+      1
+     ],
+     [
+      10,
+      3,
+      1
+     ],
+     [
+      10,
+      6,
+      1
+     ],
+     [
+      10,
+      7,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,4,2)",
+    "points": 10,
+    "kind": "thin",
+    "members": [
+     [
+      5,
+      4,
+      2
+     ],
+     [
+      10,
+      1,
+      1
+     ],
+     [
+      10,
+      8,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,1,1)",
+    "points": 11,
+    "kind": "thin",
+    "members": [
+     [
+      11,
+      1,
+      1
+     ],
+     [
+      11,
+      5,
+      1
+     ],
+     [
+      11,
+      9,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,2,1)",
+    "points": 11,
+    "kind": "other",
+    "members": [
+     [
+      11,
+      2,
+      1
+     ],
+     [
+      11,
+      3,
+      1
+     ],
+     [
+      11,
+      4,
+      1
+     ],
+     [
+      11,
+      6,
+      1
+     ],
+     [
+      11,
+      7,
+      1
+     ],
+     [
+      11,
+      8,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,6)",
+    "points": 12,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      6
+     ],
+     [
+      6,
+      0,
+      2
+     ],
+     [
+      6,
+      4,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,6)",
+    "points": 12,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      1,
+      6
+     ],
+     [
+      12,
+      5,
+      1
+     ],
+     [
+      12,
+      6,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,4)",
+    "points": 12,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      4
+     ],
+     [
+      3,
+      2,
+      4
+     ],
+     [
+      4,
+      0,
+      3
+     ],
+     [
+      4,
+      1,
+      3
+     ],
+     [
+      12,
+      3,
+      1
+     ],
+     [
+      12,
+      8,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,1,4)",
+    "points": 12,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      1,
+      4
+     ],
+     [
+      12,
+      4,
+      1
+     ],
+     [
+      12,
+      7,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,2,3)",
+    "points": 12,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      2,
+      3
+     ],
+     [
+      4,
+      3,
+      3
+     ],
+     [
+      6,
+      1,
+      2
+     ],
+     [
+      6,
+      3,
+      2
+     ],
+     [
+      12,
+      2,
+      1
+     ],
+     [
+      12,
+      9,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,2,2)",
+    "points": 12,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      2,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,5,2)",
+    "points": 12,
+    "kind": "thin",
+    "members": [
+     [
+      6,
+      5,
+      2
+     ],
+     [
+      12,
+      1,
+      1
+     ],
+     [
+      12,
+      10,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,1,1)",
+    "points": 13,
+    "kind": "thin",
+    "members": [
+     [
+      13,
+      1,
+      1
+     ],
+     [
+      13,
+      6,
+      1
+     ],
+     [
+      13,
+      11,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,2,1)",
+    "points": 13,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      2,
+      1
+     ],
+     [
+      13,
+      4,
+      1
+     ],
+     [
+      13,
+      5,
+      1
+     ],
+     [
+      13,
+      7,
+      1
+     ],
+     [
+      13,
+      8,
+      1
+     ],
+     [
+      13,
+      10,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,3,1)",
+    "points": 13,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      3,
+      1
+     ],
+     [
+      13,
+      9,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,7)",
+    "points": 14,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      7
+     ],
+     [
+      2,
+      1,
+      7
+     ],
+     [
+      7,
+      0,
+      2
+     ],
+     [
+      7,
+      5,
+      2
+     ],
+     [
+      14,
+      6,
+      1
+     ],
+     [
+      14,
+      7,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,1,2)",
+    "points": 14,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      1,
+      2
+     ],
+     [
+      7,
+      4,
+      2
+     ],
+     [
+      14,
+      2,
+      1
+     ],
+     [
+      14,
+      4,
+      1
+     ],
+     [
+      14,
+      9,
+      1
+     ],
+     [
+      14,
+      11,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,2,2)",
+    "points": 14,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      2,
+      2
+     ],
+     [
+      7,
+      3,
+      2
+     ],
+     [
+      14,
+      3,
+      1
+     ],
+     [
+      14,
+      5,
+      1
+     ],
+     [
+      14,
+      8,
+      1
+     ],
+     [
+      14,
+      10,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,6,2)",
+    "points": 14,
+    "kind": "thin",
+    "members": [
+     [
+      7,
+      6,
+      2
+     ],
+     [
+      14,
+      1,
+      1
+     ],
+     [
+      14,
+      12,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(15,1,1)",
+    "points": 15,
+    "kind": "thin",
+    "members": [
+     [
+      15,
+      1,
+      1
+     ],
+     [
+      15,
+      7,
+      1
+     ],
+     [
+      15,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,5)",
+    "points": 15,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      5
+     ],
+     [
+      3,
+      1,
+      5
+     ],
+     [
+      5,
+      0,
+      3
+     ],
+     [
+      5,
+      2,
+      3
+     ],
+     [
+      15,
+      5,
+      1
+     ],
+     [
+      15,
+      9,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,2,5)",
+    "points": 15,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      2,
+      5
+     ],
+     [
+      15,
+      4,
+      1
+     ],
+     [
+      15,
+      10,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,1,3)",
+    "points": 15,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      1,
+      3
+     ],
+     [
+      15,
+      3,
+      1
+     ],
+     [
+      15,
+      11,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,3,3)",
+    "points": 15,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      3,
+      3
+     ],
+     [
+      5,
+      4,
+      3
+     ],
+     [
+      15,
+      2,
+      1
+     ],
+     [
+      15,
+      6,
+      1
+     ],
+     [
+      15,
+      8,
+      1
+     ],
+     [
+      15,
+      12,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,8)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      8
+     ],
+     [
+      8,
+      0,
+      2
+     ],
+     [
+      8,
+      6,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,8)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      1,
+      8
+     ],
+     [
+      16,
+      7,
+      1
+     ],
+     [
+      16,
+      8,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,0,4)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      0,
+      4
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,1,4)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      1,
+      4
+     ],
+     [
+      4,
+      3,
+      4
+     ],
+     [
+      16,
+      3,
+      1
+     ],
+     [
+      16,
+      4,
+      1
+     ],
+     [
+      16,
+      11,
+      1
+     ],
+     [
+      16,
+      12,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,2,4)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      2,
+      4
+     ],
+     [
+      8,
+      2,
+      2
+     ],
+     [
+      8,
+      4,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(8,1,2)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      8,
+      1,
+      2
+     ],
+     [
+      8,
+      5,
+      2
+     ],
+     [
+      16,
+      2,
+      1
+     ],
+     [
+      16,
+      5,
+      1
+     ],
+     [
+      16,
+      10,
+      1
+     ],
+     [
+      16,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(8,3,2)",
+    "points": 16,
+    "kind": "other",
+    "members": [
+     [
+      8,
+      3,
+      2
+     ],
+     [
+      16,
+      6,
+      1
+     ],
+     [
+      16,
+      9,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(8,7,2)",
+    "points": 16,
+    "kind": "thin",
+    "members": [
+     [
+      8,
+      7,
+      2
+     ],
+     [
+      16,
+      1,
+      1
+     ],
+     [
+      16,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(17,1,1)",
+    "points": 17,
+    "kind": "thin",
+    "members": [
+     [
+      17,
+      1,
+      1
+     ],
+     [
+      17,
+      8,
+      1
+     ],
+     [
+      17,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(17,2,1)",
+    "points": 17,
+    "kind": "other",
+    "members": [
+     [
+      17,
+      2,
+      1
+     ],
+     [
+      17,
+      5,
+      1
+     ],
+     [
+      17,
+      7,
+      1
+     ],
+     [
+      17,
+      9,
+      1
+     ],
+     [
+      17,
+      11,
+      1
+     ],
+     [
+      17,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(17,3,1)",
+    "points": 17,
+    "kind": "other",
+    "members": [
+     [
+      17,
+      3,
+      1
+     ],
+     [
+      17,
+      4,
+      1
+     ],
+     [
+      17,
+      6,
+      1
+     ],
+     [
+      17,
+      10,
+      1
+     ],
+     [
+      17,
+      12,
+      1
+     ],
+     [
+      17,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,9)",
+    "points": 18,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      9
+     ],
+     [
+      2,
+      1,
+      9
+     ],
+     [
+      9,
+      0,
+      2
+     ],
+     [
+      9,
+      7,
+      2
+     ],
+     [
+      18,
+      8,
+      1
+     ],
+     [
+      18,
+      9,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,6)",
+    "points": 18,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      6
+     ],
+     [
+      6,
+      0,
+      3
+     ],
+     [
+      6,
+      3,
+      3
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,1,6)",
+    "points": 18,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      1,
+      6
+     ],
+     [
+      3,
+      2,
+      6
+     ],
+     [
+      18,
+      5,
+      1
+     ],
+     [
+      18,
+      6,
+      1
+     ],
+     [
+      18,
+      11,
+      1
+     ],
+     [
+      18,
+      12,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,1,3)",
+    "points": 18,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      1,
+      3
+     ],
+     [
+      6,
+      2,
+      3
+     ],
+     [
+      9,
+      3,
+      2
+     ],
+     [
+      9,
+      4,
+      2
+     ],
+     [
+      18,
+      3,
+      1
+     ],
+     [
+      18,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,4,3)",
+    "points": 18,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      4,
+      3
+     ],
+     [
+      6,
+      5,
+      3
+     ],
+     [
+      9,
+      1,
+      2
+     ],
+     [
+      9,
+      6,
+      2
+     ],
+     [
+      18,
+      2,
+      1
+     ],
+     [
+      18,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,2,2)",
+    "points": 18,
+    "kind": "other",
+    "members": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      9,
+      5,
+      2
+     ],
+     [
+      18,
+      4,
+      1
+     ],
+     [
+      18,
+      7,
+      1
+     ],
+     [
+      18,
+      10,
+      1
+     ],
+     [
+      18,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,8,2)",
+    "points": 18,
+    "kind": "thin",
+    "members": [
+     [
+      9,
+      8,
+      2
+     ],
+     [
+      18,
+      1,
+      1
+     ],
+     [
+      18,
+      16,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(19,1,1)",
+    "points": 19,
+    "kind": "thin",
+    "members": [
+     [
+      19,
+      1,
+      1
+     ],
+     [
+      19,
+      9,
+      1
+     ],
+     [
+      19,
+      17,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(19,2,1)",
+    "points": 19,
+    "kind": "other",
+    "members": [
+     [
+      19,
+      2,
+      1
+     ],
+     [
+      19,
+      6,
+      1
+     ],
+     [
+      19,
+      8,
+      1
+     ],
+     [
+      19,
+      10,
+      1
+     ],
+     [
+      19,
+      12,
+      1
+     ],
+     [
+      19,
+      16,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(19,3,1)",
+    "points": 19,
+    "kind": "other",
+    "members": [
+     [
+      19,
+      3,
+      1
+     ],
+     [
+      19,
+      4,
+      1
+     ],
+     [
+      19,
+      5,
+      1
+     ],
+     [
+      19,
+      13,
+      1
+     ],
+     [
+      19,
+      14,
+      1
+     ],
+     [
+      19,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(19,7,1)",
+    "points": 19,
+    "kind": "other",
+    "members": [
+     [
+      19,
+      7,
+      1
+     ],
+     [
+      19,
+      11,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(10,1,2)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      10,
+      1,
+      2
+     ],
+     [
+      10,
+      7,
+      2
+     ],
+     [
+      20,
+      2,
+      1
+     ],
+     [
+      20,
+      6,
+      1
+     ],
+     [
+      20,
+      13,
+      1
+     ],
+     [
+      20,
+      17,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(10,2,2)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      10,
+      2,
+      2
+     ],
+     [
+      10,
+      4,
+      2
+     ],
+     [
+      10,
+      6,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(10,9,2)",
+    "points": 20,
+    "kind": "thin",
+    "members": [
+     [
+      10,
+      9,
+      2
+     ],
+     [
+      20,
+      1,
+      1
+     ],
+     [
+      20,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,10)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      10
+     ],
+     [
+      10,
+      0,
+      2
+     ],
+     [
+      10,
+      8,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,10)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      1,
+      10
+     ],
+     [
+      20,
+      9,
+      1
+     ],
+     [
+      20,
+      10,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,0,5)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      0,
+      5
+     ],
+     [
+      4,
+      3,
+      5
+     ],
+     [
+      5,
+      0,
+      4
+     ],
+     [
+      5,
+      1,
+      4
+     ],
+     [
+      20,
+      4,
+      1
+     ],
+     [
+      20,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,1,5)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      1,
+      5
+     ],
+     [
+      4,
+      2,
+      5
+     ],
+     [
+      10,
+      3,
+      2
+     ],
+     [
+      10,
+      5,
+      2
+     ],
+     [
+      20,
+      5,
+      1
+     ],
+     [
+      20,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,2,4)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      2,
+      4
+     ],
+     [
+      5,
+      4,
+      4
+     ],
+     [
+      20,
+      3,
+      1
+     ],
+     [
+      20,
+      7,
+      1
+     ],
+     [
+      20,
+      12,
+      1
+     ],
+     [
+      20,
+      16,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,3,4)",
+    "points": 20,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      3,
+      4
+     ],
+     [
+      20,
+      8,
+      1
+     ],
+     [
+      20,
+      11,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(21,1,1)",
+    "points": 21,
+    "kind": "thin",
+    "members": [
+     [
+      21,
+      1,
+      1
+     ],
+     [
+      21,
+      10,
+      1
+     ],
+     [
+      21,
+      19,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(21,4,1)",
+    "points": 21,
+    "kind": "other",
+    "members": [
+     [
+      21,
+      4,
+      1
+     ],
+     [
+      21,
+      16,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,7)",
+    "points": 21,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      7
+     ],
+     [
+      3,
+      2,
+      7
+     ],
+     [
+      7,
+      0,
+      3
+     ],
+     [
+      7,
+      4,
+      3
+     ],
+     [
+      21,
+      6,
+      1
+     ],
+     [
+      21,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,1,7)",
+    "points": 21,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      1,
+      7
+     ],
+     [
+      21,
+      7,
+      1
+     ],
+     [
+      21,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,1,3)",
+    "points": 21,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      1,
+      3
+     ],
+     [
+      7,
+      3,
+      3
+     ],
+     [
+      21,
+      3,
+      1
+     ],
+     [
+      21,
+      5,
+      1
+     ],
+     [
+      21,
+      15,
+      1
+     ],
+     [
+      21,
+      17,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,2,3)",
+    "points": 21,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      2,
+      3
+     ],
+     [
+      21,
+      8,
+      1
+     ],
+     [
+      21,
+      12,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,5,3)",
+    "points": 21,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      5,
+      3
+     ],
+     [
+      7,
+      6,
+      3
+     ],
+     [
+      21,
+      2,
+      1
+     ],
+     [
+      21,
+      9,
+      1
+     ],
+     [
+      21,
+      11,
+      1
+     ],
+     [
+      21,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,1,2)",
+    "points": 22,
+    "kind": "other",
+    "members": [
+     [
+      11,
+      1,
+      2
+     ],
+     [
+      11,
+      8,
+      2
+     ],
+     [
+      22,
+      2,
+      1
+     ],
+     [
+      22,
+      7,
+      1
+     ],
+     [
+      22,
+      14,
+      1
+     ],
+     [
+      22,
+      19,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,10,2)",
+    "points": 22,
+    "kind": "thin",
+    "members": [
+     [
+      11,
+      10,
+      2
+     ],
+     [
+      22,
+      1,
+      1
+     ],
+     [
+      22,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,2,2)",
+    "points": 22,
+    "kind": "other",
+    "members": [
+     [
+      11,
+      2,
+      2
+     ],
+     [
+      11,
+      7,
+      2
+     ],
+     [
+      22,
+      5,
+      1
+     ],
+     [
+      22,
+      9,
+      1
+     ],
+     [
+      22,
+      12,
+      1
+     ],
+     [
+      22,
+      16,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,3,2)",
+    "points": 22,
+    "kind": "other",
+    "members": [
+     [
+      11,
+      3,
+      2
+     ],
+     [
+      11,
+      6,
+      2
+     ],
+     [
+      22,
+      4,
+      1
+     ],
+     [
+      22,
+      8,
+      1
+     ],
+     [
+      22,
+      13,
+      1
+     ],
+     [
+      22,
+      17,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(11,4,2)",
+    "points": 22,
+    "kind": "other",
+    "members": [
+     [
+      11,
+      4,
+      2
+     ],
+     [
+      11,
+      5,
+      2
+     ],
+     [
+      22,
+      3,
+      1
+     ],
+     [
+      22,
+      6,
+      1
+     ],
+     [
+      22,
+      15,
+      1
+     ],
+     [
+      22,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,11)",
+    "points": 22,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      11
+     ],
+     [
+      2,
+      1,
+      11
+     ],
+     [
+      11,
+      0,
+      2
+     ],
+     [
+      11,
+      9,
+      2
+     ],
+     [
+      22,
+      10,
+      1
+     ],
+     [
+      22,
+      11,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(23,1,1)",
+    "points": 23,
+    "kind": "thin",
+    "members": [
+     [
+      23,
+      1,
+      1
+     ],
+     [
+      23,
+      11,
+      1
+     ],
+     [
+      23,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(23,2,1)",
+    "points": 23,
+    "kind": "other",
+    "members": [
+     [
+      23,
+      2,
+      1
+     ],
+     [
+      23,
+      7,
+      1
+     ],
+     [
+      23,
+      10,
+      1
+     ],
+     [
+      23,
+      12,
+      1
+     ],
+     [
+      23,
+      15,
+      1
+     ],
+     [
+      23,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(23,3,1)",
+    "points": 23,
+    "kind": "other",
+    "members": [
+     [
+      23,
+      3,
+      1
+     ],
+     [
+      23,
+      5,
+      1
+     ],
+     [
+      23,
+      8,
+      1
+     ],
+     [
+      23,
+      14,
+      1
+     ],
+     [
+      23,
+      17,
+      1
+     ],
+     [
+      23,
+      19,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(23,4,1)",
+    "points": 23,
+    "kind": "other",
+    "members": [
+     [
+      23,
+      4,
+      1
+     ],
+     [
+      23,
+      6,
+      1
+     ],
+     [
+      23,
+      9,
+      1
+     ],
+     [
+      23,
+      13,
+      1
+     ],
+     [
+      23,
+      16,
+      1
+     ],
+     [
+      23,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(12,11,2)",
+    "points": 24,
+    "kind": "thin",
+    "members": [
+     [
+      12,
+      11,
+      2
+     ],
+     [
+      24,
+      1,
+      1
+     ],
+     [
+      24,
+      22,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(12,5,2)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      12,
+      5,
+      2
+     ],
+     [
+      24,
+      10,
+      1
+     ],
+     [
+      24,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,12)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      12
+     ],
+     [
+      12,
+      0,
+      2
+     ],
+     [
+      12,
+      10,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,12)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      1,
+      12
+     ],
+     [
+      24,
+      11,
+      1
+     ],
+     [
+      24,
+      12,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,8)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      8
+     ],
+     [
+      3,
+      1,
+      8
+     ],
+     [
+      8,
+      0,
+      3
+     ],
+     [
+      8,
+      5,
+      3
+     ],
+     [
+      24,
+      8,
+      1
+     ],
+     [
+      24,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,2,8)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      2,
+      8
+     ],
+     [
+      24,
+      7,
+      1
+     ],
+     [
+      24,
+      16,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,0,6)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      0,
+      6
+     ],
+     [
+      4,
+      2,
+      6
+     ],
+     [
+      6,
+      0,
+      4
+     ],
+     [
+      6,
+      2,
+      4
+     ],
+     [
+      12,
+      4,
+      2
+     ],
+     [
+      12,
+      6,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,1,6)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      1,
+      6
+     ],
+     [
+      24,
+      6,
+      1
+     ],
+     [
+      24,
+      17,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,3,6)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      3,
+      6
+     ],
+     [
+      24,
+      5,
+      1
+     ],
+     [
+      24,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,1,4)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      1,
+      4
+     ],
+     [
+      24,
+      4,
+      1
+     ],
+     [
+      24,
+      19,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,3,4)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      3,
+      4
+     ],
+     [
+      6,
+      5,
+      4
+     ],
+     [
+      8,
+      1,
+      3
+     ],
+     [
+      8,
+      4,
+      3
+     ],
+     [
+      24,
+      3,
+      1
+     ],
+     [
+      24,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,4,4)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      4,
+      4
+     ],
+     [
+      12,
+      2,
+      2
+     ],
+     [
+      12,
+      8,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(8,2,3)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      8,
+      2,
+      3
+     ],
+     [
+      8,
+      3,
+      3
+     ],
+     [
+      12,
+      3,
+      2
+     ],
+     [
+      12,
+      7,
+      2
+     ],
+     [
+      24,
+      9,
+      1
+     ],
+     [
+      24,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(8,6,3)",
+    "points": 24,
+    "kind": "other",
+    "members": [
+     [
+      8,
+      6,
+      3
+     ],
+     [
+      8,
+      7,
+      3
+     ],
+     [
+      12,
+      1,
+      2
+     ],
+     [
+      12,
+      9,
+      2
+     ],
+     [
+      24,
+      2,
+      1
+     ],
+     [
+      24,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(25,1,1)",
+    "points": 25,
+    "kind": "thin",
+    "members": [
+     [
+      25,
+      1,
+      1
+     ],
+     [
+      25,
+      12,
+      1
+     ],
+     [
+      25,
+      23,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(25,2,1)",
+    "points": 25,
+    "kind": "other",
+    "members": [
+     [
+      25,
+      2,
+      1
+     ],
+     [
+      25,
+      8,
+      1
+     ],
+     [
+      25,
+      11,
+      1
+     ],
+     [
+      25,
+      13,
+      1
+     ],
+     [
+      25,
+      16,
+      1
+     ],
+     [
+      25,
+      22,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(25,3,1)",
+    "points": 25,
+    "kind": "other",
+    "members": [
+     [
+      25,
+      3,
+      1
+     ],
+     [
+      25,
+      6,
+      1
+     ],
+     [
+      25,
+      7,
+      1
+     ],
+     [
+      25,
+      17,
+      1
+     ],
+     [
+      25,
+      18,
+      1
+     ],
+     [
+      25,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,0,5)",
+    "points": 25,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      0,
+      5
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,1,5)",
+    "points": 25,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      1,
+      5
+     ],
+     [
+      5,
+      4,
+      5
+     ],
+     [
+      25,
+      4,
+      1
+     ],
+     [
+      25,
+      5,
+      1
+     ],
+     [
+      25,
+      19,
+      1
+     ],
+     [
+      25,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,2,5)",
+    "points": 25,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      2,
+      5
+     ],
+     [
+      5,
+      3,
+      5
+     ],
+     [
+      25,
+      9,
+      1
+     ],
+     [
+      25,
+      10,
+      1
+     ],
+     [
+      25,
+      14,
+      1
+     ],
+     [
+      25,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,1,2)",
+    "points": 26,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      1,
+      2
+     ],
+     [
+      13,
+      10,
+      2
+     ],
+     [
+      26,
+      2,
+      1
+     ],
+     [
+      26,
+      8,
+      1
+     ],
+     [
+      26,
+      17,
+      1
+     ],
+     [
+      26,
+      23,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,12,2)",
+    "points": 26,
+    "kind": "thin",
+    "members": [
+     [
+      13,
+      12,
+      2
+     ],
+     [
+      26,
+      1,
+      1
+     ],
+     [
+      26,
+      24,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,2,2)",
+    "points": 26,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      2,
+      2
+     ],
+     [
+      13,
+      9,
+      2
+     ],
+     [
+      26,
+      6,
+      1
+     ],
+     [
+      26,
+      11,
+      1
+     ],
+     [
+      26,
+      14,
+      1
+     ],
+     [
+      26,
+      19,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,3,2)",
+    "points": 26,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      3,
+      2
+     ],
+     [
+      13,
+      8,
+      2
+     ],
+     [
+      26,
+      7,
+      1
+     ],
+     [
+      26,
+      10,
+      1
+     ],
+     [
+      26,
+      15,
+      1
+     ],
+     [
+      26,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,4,2)",
+    "points": 26,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      4,
+      2
+     ],
+     [
+      13,
+      7,
+      2
+     ],
+     [
+      26,
+      4,
+      1
+     ],
+     [
+      26,
+      5,
+      1
+     ],
+     [
+      26,
+      20,
+      1
+     ],
+     [
+      26,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(13,5,2)",
+    "points": 26,
+    "kind": "other",
+    "members": [
+     [
+      13,
+      5,
+      2
+     ],
+     [
+      13,
+      6,
+      2
+     ],
+     [
+      26,
+      3,
+      1
+     ],
+     [
+      26,
+      9,
+      1
+     ],
+     [
+      26,
+      16,
+      1
+     ],
+     [
+      26,
+      22,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,13)",
+    "points": 26,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      13
+     ],
+     [
+      2,
+      1,
+      13
+     ],
+     [
+      13,
+      0,
+      2
+     ],
+     [
+      13,
+      11,
+      2
+     ],
+     [
+      26,
+      12,
+      1
+     ],
+     [
+      26,
+      13,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(27,1,1)",
+    "points": 27,
+    "kind": "thin",
+    "members": [
+     [
+      27,
+      1,
+      1
+     ],
+     [
+      27,
+      13,
+      1
+     ],
+     [
+      27,
+      25,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(27,4,1)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      27,
+      4,
+      1
+     ],
+     [
+      27,
+      7,
+      1
+     ],
+     [
+      27,
+      10,
+      1
+     ],
+     [
+      27,
+      16,
+      1
+     ],
+     [
+      27,
+      19,
+      1
+     ],
+     [
+      27,
+      22,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,9)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      9
+     ],
+     [
+      9,
+      0,
+      3
+     ],
+     [
+      9,
+      6,
+      3
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,1,9)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      1,
+      9
+     ],
+     [
+      3,
+      2,
+      9
+     ],
+     [
+      27,
+      8,
+      1
+     ],
+     [
+      27,
+      9,
+      1
+     ],
+     [
+      27,
+      17,
+      1
+     ],
+     [
+      27,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,1,3)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      9,
+      1,
+      3
+     ],
+     [
+      9,
+      5,
+      3
+     ],
+     [
+      27,
+      3,
+      1
+     ],
+     [
+      27,
+      6,
+      1
+     ],
+     [
+      27,
+      20,
+      1
+     ],
+     [
+      27,
+      23,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,2,3)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      9,
+      2,
+      3
+     ],
+     [
+      9,
+      4,
+      3
+     ],
+     [
+      27,
+      5,
+      1
+     ],
+     [
+      27,
+      11,
+      1
+     ],
+     [
+      27,
+      15,
+      1
+     ],
+     [
+      27,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,3,3)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      9,
+      3,
+      3
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(9,7,3)",
+    "points": 27,
+    "kind": "other",
+    "members": [
+     [
+      9,
+      7,
+      3
+     ],
+     [
+      9,
+      8,
+      3
+     ],
+     [
+      27,
+      2,
+      1
+     ],
+     [
+      27,
+      12,
+      1
+     ],
+     [
+      27,
+      14,
+      1
+     ],
+     [
+      27,
+      24,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(14,1,2)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      14,
+      1,
+      2
+     ],
+     [
+      14,
+      11,
+      2
+     ],
+     [
+      28,
+      2,
+      1
+     ],
+     [
+      28,
+      9,
+      1
+     ],
+     [
+      28,
+      18,
+      1
+     ],
+     [
+      28,
+      25,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(14,13,2)",
+    "points": 28,
+    "kind": "thin",
+    "members": [
+     [
+      14,
+      13,
+      2
+     ],
+     [
+      28,
+      1,
+      1
+     ],
+     [
+      28,
+      26,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(14,2,2)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      14,
+      2,
+      2
+     ],
+     [
+      14,
+      6,
+      2
+     ],
+     [
+      14,
+      10,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(14,3,2)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      14,
+      3,
+      2
+     ],
+     [
+      14,
+      9,
+      2
+     ],
+     [
+      28,
+      5,
+      1
+     ],
+     [
+      28,
+      10,
+      1
+     ],
+     [
+      28,
+      17,
+      1
+     ],
+     [
+      28,
+      22,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(14,4,2)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      14,
+      4,
+      2
+     ],
+     [
+      14,
+      8,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,14)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      14
+     ],
+     [
+      14,
+      0,
+      2
+     ],
+     [
+      14,
+      12,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,1,14)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      1,
+      14
+     ],
+     [
+      28,
+      13,
+      1
+     ],
+     [
+      28,
+      14,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,0,7)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      0,
+      7
+     ],
+     [
+      4,
+      1,
+      7
+     ],
+     [
+      7,
+      0,
+      4
+     ],
+     [
+      7,
+      3,
+      4
+     ],
+     [
+      28,
+      7,
+      1
+     ],
+     [
+      28,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(4,2,7)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      4,
+      2,
+      7
+     ],
+     [
+      4,
+      3,
+      7
+     ],
+     [
+      14,
+      5,
+      2
+     ],
+     [
+      14,
+      7,
+      2
+     ],
+     [
+      28,
+      6,
+      1
+     ],
+     [
+      28,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,1,4)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      1,
+      4
+     ],
+     [
+      7,
+      2,
+      4
+     ],
+     [
+      28,
+      4,
+      1
+     ],
+     [
+      28,
+      11,
+      1
+     ],
+     [
+      28,
+      16,
+      1
+     ],
+     [
+      28,
+      23,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,4,4)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      4,
+      4
+     ],
+     [
+      7,
+      6,
+      4
+     ],
+     [
+      28,
+      3,
+      1
+     ],
+     [
+      28,
+      8,
+      1
+     ],
+     [
+      28,
+      19,
+      1
+     ],
+     [
+      28,
+      24,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(7,5,4)",
+    "points": 28,
+    "kind": "other",
+    "members": [
+     [
+      7,
+      5,
+      4
+     ],
+     [
+      28,
+      12,
+      1
+     ],
+     [
+      28,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(29,1,1)",
+    "points": 29,
+    "kind": "thin",
+    "members": [
+     [
+      29,
+      1,
+      1
+     ],
+     [
+      29,
+      14,
+      1
+     ],
+     [
+      29,
+      27,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(29,2,1)",
+    "points": 29,
+    "kind": "other",
+    "members": [
+     [
+      29,
+      2,
+      1
+     ],
+     [
+      29,
+      9,
+      1
+     ],
+     [
+      29,
+      13,
+      1
+     ],
+     [
+      29,
+      15,
+      1
+     ],
+     [
+      29,
+      19,
+      1
+     ],
+     [
+      29,
+      26,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(29,3,1)",
+    "points": 29,
+    "kind": "other",
+    "members": [
+     [
+      29,
+      3,
+      1
+     ],
+     [
+      29,
+      7,
+      1
+     ],
+     [
+      29,
+      10,
+      1
+     ],
+     [
+      29,
+      18,
+      1
+     ],
+     [
+      29,
+      21,
+      1
+     ],
+     [
+      29,
+      25,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(29,4,1)",
+    "points": 29,
+    "kind": "other",
+    "members": [
+     [
+      29,
+      4,
+      1
+     ],
+     [
+      29,
+      5,
+      1
+     ],
+     [
+      29,
+      6,
+      1
+     ],
+     [
+      29,
+      22,
+      1
+     ],
+     [
+      29,
+      23,
+      1
+     ],
+     [
+      29,
+      24,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(29,8,1)",
+    "points": 29,
+    "kind": "other",
+    "members": [
+     [
+      29,
+      8,
+      1
+     ],
+     [
+      29,
+      11,
+      1
+     ],
+     [
+      29,
+      12,
+      1
+     ],
+     [
+      29,
+      16,
+      1
+     ],
+     [
+      29,
+      17,
+      1
+     ],
+     [
+      29,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(10,1,3)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      10,
+      1,
+      3
+     ],
+     [
+      10,
+      6,
+      3
+     ],
+     [
+      15,
+      6,
+      2
+     ],
+     [
+      15,
+      7,
+      2
+     ],
+     [
+      30,
+      3,
+      1
+     ],
+     [
+      30,
+      26,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(10,3,3)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      10,
+      3,
+      3
+     ],
+     [
+      10,
+      4,
+      3
+     ],
+     [
+      15,
+      4,
+      2
+     ],
+     [
+      15,
+      9,
+      2
+     ],
+     [
+      30,
+      8,
+      1
+     ],
+     [
+      30,
+      21,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(10,8,3)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      10,
+      8,
+      3
+     ],
+     [
+      10,
+      9,
+      3
+     ],
+     [
+      15,
+      1,
+      2
+     ],
+     [
+      15,
+      12,
+      2
+     ],
+     [
+      30,
+      2,
+      1
+     ],
+     [
+      30,
+      27,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(15,14,2)",
+    "points": 30,
+    "kind": "thin",
+    "members": [
+     [
+      15,
+      14,
+      2
+     ],
+     [
+      30,
+      1,
+      1
+     ],
+     [
+      30,
+      28,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(15,2,2)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      15,
+      2,
+      2
+     ],
+     [
+      15,
+      11,
+      2
+     ],
+     [
+      30,
+      7,
+      1
+     ],
+     [
+      30,
+      13,
+      1
+     ],
+     [
+      30,
+      16,
+      1
+     ],
+     [
+      30,
+      22,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(2,0,15)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      2,
+      0,
+      15
+     ],
+     [
+      2,
+      1,
+      15
+     ],
+     [
+      15,
+      0,
+      2
+     ],
+     [
+      15,
+      13,
+      2
+     ],
+     [
+      30,
+      14,
+      1
+     ],
+     [
+      30,
+      15,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,0,10)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      0,
+      10
+     ],
+     [
+      3,
+      2,
+      10
+     ],
+     [
+      10,
+      0,
+      3
+     ],
+     [
+      10,
+      7,
+      3
+     ],
+     [
+      30,
+      9,
+      1
+     ],
+     [
+      30,
+      20,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(3,1,10)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      3,
+      1,
+      10
+     ],
+     [
+      30,
+      10,
+      1
+     ],
+     [
+      30,
+      19,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,0,6)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      0,
+      6
+     ],
+     [
+      5,
+      4,
+      6
+     ],
+     [
+      6,
+      0,
+      5
+     ],
+     [
+      6,
+      1,
+      5
+     ],
+     [
+      30,
+      5,
+      1
+     ],
+     [
+      30,
+      24,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,1,6)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      1,
+      6
+     ],
+     [
+      5,
+      3,
+      6
+     ],
+     [
+      30,
+      6,
+      1
+     ],
+     [
+      30,
+      12,
+      1
+     ],
+     [
+      30,
+      17,
+      1
+     ],
+     [
+      30,
+      23,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(5,2,6)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      5,
+      2,
+      6
+     ],
+     [
+      30,
+      11,
+      1
+     ],
+     [
+      30,
+      18,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,2,5)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      2,
+      5
+     ],
+     [
+      6,
+      5,
+      5
+     ],
+     [
+      15,
+      5,
+      2
+     ],
+     [
+      15,
+      8,
+      2
+     ],
+     [
+      30,
+      4,
+      1
+     ],
+     [
+      30,
+      25,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(6,3,5)",
+    "points": 30,
+    "kind": "other",
+    "members": [
+     [
+      6,
+      3,
+      5
+     ],
+     [
+      6,
+      4,
+      5
+     ],
+     [
+      10,
+      2,
+      3
+     ],
+     [
+      10,
+      5,
+      3
+     ],
+     [
+      15,
+      3,
+      2
+     ],
+     [
+      15,
+      10,
+      2
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(16,15,2)",
+    "points": 32,
+    "kind": "thin",
+    "members": [
+     [
+      16,
+      15,
+      2
+     ],
+     [
+      32,
+      1,
+      1
+     ],
+     [
+      32,
+      30,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(17,16,2)",
+    "points": 34,
+    "kind": "thin",
+    "members": [
+     [
+      17,
+      16,
+      2
+     ],
+     [
+      34,
+      1,
+      1
+     ],
+     [
+      34,
+      32,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(18,17,2)",
+    "points": 36,
+    "kind": "thin",
+    "members": [
+     [
+      18,
+      17,
+      2
+     ],
+     [
+      36,
+      1,
+      1
+     ],
+     [
+      36,
+      34,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(19,18,2)",
+    "points": 38,
+    "kind": "thin",
+    "members": [
+     [
+      19,
+      18,
+      2
+     ],
+     [
+      38,
+      1,
+      1
+     ],
+     [
+      38,
+      36,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "01"
+    ],
+    "free in every class": true
+   },
+   {
+    "torus": "torus(20,19,2)",
+    "points": 40,
+    "kind": "thin",
+    "members": [
+     [
+      20,
+      19,
+      2
+     ],
+     [
+      40,
+      1,
+      1
+     ],
+     [
+      40,
+      38,
+      1
+     ]
+    ],
+    "classes": {
+     "00": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "01": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "10": {
+      "satisfiable": false,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     },
+     "11": {
+      "satisfiable": true,
+      "flipped side satisfiable": [
+       true,
+       true,
+       true
+      ],
+      "free": true
+     }
+    },
+    "unsatisfiable classes": [
+     "10"
+    ],
+    "free in every class": true
+   }
+  ],
+  "seconds": 23.4
+ }
+}

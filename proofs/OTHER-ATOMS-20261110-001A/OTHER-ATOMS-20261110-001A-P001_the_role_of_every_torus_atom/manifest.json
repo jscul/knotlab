@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "OTHER-ATOMS-20261110-001A-P001",
+  "canonical_id": "OTHER-ATOMS-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "OTHER-ATOMS-20261110-001A",
+  "proof": "OTHER-ATOMS-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The role of every torus atom",
+  "status": "Proved",
+  "claim": "Proved by hand: a torus atom (a torus knot space less a point P) grown at a line of any orientable knot space with a Kasteleyn law allows on its three outer points the replaced line's six patterns when its torus is unsatisfiable in the class read on the atom and free at P (each of P's sides flipped leaves a satisfiable law), and all eight when the torus is satisfiable and free; in an unsatisfiable class it holds a unit in its region in every state satisfying its lines. Hence the atom rule (one acting class per atom; all acting leaves the host's satisfiability; each acting atom holds a unit) for any such atoms on any host, adjacent or not. T1 computed on 29 lattice-torus types: the 8 class-forced ones act in exactly their torus's unsatisfiable class on all 60 splices each (K_2-K_4), the 21 all-satisfiable ones are transparent.",
+  "dependencies": [
+    "ATOM-RULE-20261110-001A",
+    "GROW-HANDLE-20261110-001A",
+    "LEARN-HANDLES-20261109-001A",
+    "COUNT-SURFACES-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A class-forced atom torus that is not free at its point, or that has two unsatisfiable classes (the theorem's hypotheses then fail)."
+  ],
+  "lineage": {
+    "home_scope": "OTHER-ATOMS-20261110-001",
+    "epic_path": [
+      "OTHER-ATOMS-20261110-001"
+    ],
+    "parents": [
+      "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py",
+      "research/OTHER-ATOMS-20261110-001/preregistration.md",
+      "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py": "02a0734d3cd619298b379c025d550f9acab401b6c1042e0b196ea6a4623d4abc",
+    "research/OTHER-ATOMS-20261110-001/preregistration.md": "387de4ba12c2ea60e7737632ce10379c64eaba3e183d65844cb1c09c11561fbb",
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835"
+  },
+  "paths": {
+    "manifest": "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/manifest.json",
+    "identity": "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/identity.json",
+    "proof": "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/proof.md",
+    "result": "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/result.json",
+    "check": "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/check.py",
+    "directory": "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Torus atoms on orientable knot spaces with Kasteleyn laws; the hypotheses (one unsatisfiable class, free at the point) checked for lattice tori in ticket D.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commits 1fd95cc5f and 6f43acb56).",
+    "status": "proved by hand given two facts per torus (ticket D); T1 computed exhaustively (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

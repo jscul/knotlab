@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "OTHER-ATOMS-20261110-001B-P001",
+  "canonical_id": "OTHER-ATOMS-20261110-001B-P001",
+  "kind": "proof",
+  "ticket": "OTHER-ATOMS-20261110-001B",
+  "proof": "OTHER-ATOMS-20261110-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Holding a unit with other atoms",
+  "status": "Proved",
+  "claim": "Exact on small cases (SAT over every state): on K_3 at every line orbit, with two atoms (16 classes) and three atoms (64 classes) of each of the Fano atom and the thin-torus atoms (2,1,2), (3,2,2), (4,3,2): if every atom acts no state satisfies every line, and otherwise each acting atom holds a unit; every role equals the one read on the atom's torus. 24 spaces, 960 classes.",
+  "dependencies": [
+    "OTHER-ATOMS-20261110-001A",
+    "ADDRESS-STEER-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A class breaking R-a or R-b, or a role differing from the one read on the torus."
+  ],
+  "lineage": {
+    "home_scope": "OTHER-ATOMS-20261110-001",
+    "epic_path": [
+      "OTHER-ATOMS-20261110-001"
+    ],
+    "parents": [
+      "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py",
+      "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/result.json",
+      "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/multi_lib.py",
+      "research/OTHER-ATOMS-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/atoms_lib.py": "7282c6483809f86db21f408ae931f739963d41ea97a172400f214bdeb785a835",
+    "proofs/OTHER-ATOMS-20261110-001A/OTHER-ATOMS-20261110-001A-P001_the_role_of_every_torus_atom/result.json": "99aa6ebc80cfbe72b9b7e4315017802d1a1f3c30317403433dfda51c7c0765cb",
+    "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/multi_lib.py": "be36087eee0a5d2763999f5b06b24446e1cb92bb2920c174d9ab4e2b4c247f80",
+    "research/OTHER-ATOMS-20261110-001/preregistration.md": "387de4ba12c2ea60e7737632ce10379c64eaba3e183d65844cb1c09c11561fbb"
+  },
+  "paths": {
+    "manifest": "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/manifest.json",
+    "identity": "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/identity.json",
+    "proof": "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/proof.md",
+    "result": "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/result.json",
+    "check": "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms/check.py",
+    "directory": "proofs/OTHER-ATOMS-20261110-001B/OTHER-ATOMS-20261110-001B-P001_holding_a_unit_with_other_atoms"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_3 with two or three atoms of four types.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commits 1fd95cc5f and 6f43acb56).",
+    "status": "exact finite computation by SAT over every state (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

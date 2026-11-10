@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RISE-ESCAPE-20261110-001A-P001",
+  "canonical_id": "RISE-ESCAPE-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "RISE-ESCAPE-20261110-001A",
+  "proof": "RISE-ESCAPE-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Excursions out of an atom",
+  "status": "Proved",
+  "claim": "At the genus-2 floor a learner that holds the state still has no step (proved). With the law fixed and state flips allowed one unit above the floor for any number of steps, the unit settled in an atom never reaches the other atom or the upper level: exhaustive on five K_2 components of up to 195,264 states, and the same to a cap of 200,000 states on the rest (computed).",
+  "dependencies": [
+    "ATOM-LAYERS-20261110-001A",
+    "MOVING-STATE-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A floor state reached by such flips with the unit in the other atom or at the upper level."
+  ],
+  "lineage": {
+    "home_scope": "RISE-ESCAPE-20261110-001",
+    "epic_path": [
+      "RISE-ESCAPE-20261110-001"
+    ],
+    "parents": [
+      "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/layers_lib.py",
+      "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py",
+      "research/RISE-ESCAPE-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/layers_lib.py": "27504443997b32c58096c46c5a82f71d310e1b490da3d40f60881295af74b39b",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/RISE-ESCAPE-20261110-001/preregistration.md": "d26b66b5fe42520b2c02aaf3ffbd42bb02c876311568dafbbc1850f52c96c74f"
+  },
+  "paths": {
+    "manifest": "proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom/manifest.json",
+    "identity": "proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom/identity.json",
+    "proof": "proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom/proof.md",
+    "result": "proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom/result.json",
+    "check": "proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom/check.py",
+    "directory": "proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_2 and K_3 with two Fano atoms (A48); the law fixed; state flips of A50 with a rise of one unit; A49's weight.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered.",
+    "status": "E1 proved by hand; the excursion search computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "HOLE-SEP-20261110-001B-E001",
+ "ticket": "HOLE-SEP-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "How large is the kernel K_k of the reduced decoder on bit LeftPigeon's row-linear space, modulo Braun's unary degree-k ideal, and is it spanned at k = 1 by the (l + 1)^2 known elements?",
+ "public_inputs": {
+  "run": "run.py in this folder: exact GF(2) elimination over Python integers, matching coordinates modulo the row-sum relations.",
+  "statement": "research/HOLE-SEP-20261110-001/separation_statement.md (frozen in 0596397e3), whose predictions P1 and P2 this contract restates.",
+  "roster": "(n, k) = (4, 1), (4, 2), (4, 3), (8, 1), (8, 2), (8, 3), (16, 1), (16, 2)."
+ },
+ "forbidden_inputs": [
+  "Changing the roster, the definitions or the predictions after seeing results"
+ ],
+ "primary_observable": "dim K_k and dim K_k / dim L_k for each roster entry; whether the known elements lie in K_1 and are independent.",
+ "cheapest_meaningful_control": "The pigeon-row part: by Braun's row-linear separation, no nonzero pigeon-row polynomial lies in K_k when 4(k - 1) < n, so the kernel is all in combinations touching hole rows.",
+ "resource_budget": {
+  "wall_minutes": 60,
+  "memory_mib": 16384
+ },
+ "first_executable_signal": "P1 and P2 in result.json.",
+ "decision_or_followup_rule": "P1: dim K_1 = (l + 1)^2 at n = 4, 8, 16, spanned by the known elements. P2: the kernel fraction falls with n for k = 2 and 3 and is below 1% at n = 16, k = 2. If P2 holds, attempt a proof of the kernel bound (K); if the fraction exceeds 10% at n = 16, k = 2 or does not fall, stop by rule (b) and name the killed family.",
+ "stop_rule": "Stop when every roster entry has its kernel dimension.",
+ "nonclaims": [
+  "Exploratory and finite: the roster only.",
+  "The kernel bound for all n is not read; it needs a proof."
+ ],
+ "feasibility_disclosure": "No kernel was computed before freezing; the roster was sized by counting matchings only (381, 30,313 and 32,913 coordinates at its largest entries). The known elements and their membership in K_1 were derived by hand before the freeze (separation_statement.md)."
+}

@@ -57,3 +57,28 @@ None.
 - **#1** reads the leftover as a stored symbol: if learning can put it in any chosen atom, the network holds a learned address.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B80 taken; B81 added. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:16 UTC).
+
+**B80 done: learning can carry the leftover tension to another pattern, with the point's help.** My pre-registered search ran out of room: it could only look about four moves deep, so it's inconclusive. A targeted search afterwards (post hoc, labelled as such) aimed at a law where the other atom acts as the line. It found a path from all 9 starts: 16 to 43 moves, mixing state flips with 4 to 16 learning steps, never more than one unit above the floor. The atoms swap roles and the tension follows. So the state moves the dissonance up and around, learning rewrites which pattern stands for the contradiction, and the tension settles where learning puts it.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: learning at a rise (B80) | **Status:** Partially successful | frozen test capped; post hoc it works |
+| Local direction: moving the leftover by learning | Continue | works with the state's help |
+| Broader exploration: learning program | Known alternatives | choosing the atom, shortest paths |
+| Long-term goal: G15 | Capability gained | learning places a pattern's tension |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Learning chooses which atom holds it (B81) | 2/3 — Substantial | 3/3 — Ready | 3–4 atoms on K_3, a named target → every atom reachable, or not | Selected · awaiting go-ahead |
+| 2 | Why the trap holds (B78) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+| 3 | Overgrown surfaces (B70) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+#1 would make the leftover a learned address: a symbol the network holds, placed by learning, readable by where the tension sits.
+
+**Corrections:** none. **Goals:** G15 checkpoint; B80 taken; B81 added. **Assumptions:** none new.

@@ -119,3 +119,29 @@ unchanged.
    Concreteness 1: no candidate, and native networks are blind to three dimensions (`HUB-DIMENSION-20261024-001`).
 
 **Recommendation.** Research directions, B101 recommended, for the coordinator to confirm when work resumes.
+
+## Final report as sent
+
+B116 is closed. The audit found no failing step, but the result turned out not to be new in substance.
+
+Every step of the left-pigeon bound held up: the transfer to n + 1 pigeons, the reduction, the spare-row lemma and the density count. I re-derived each one with explicit constants, and four fresh reviewers attacked them using their own code without seeing my proof. All eight of Braun's lemmas the proof uses were covered by the fresh-kernel Lean replay we ran in October.
+
+The problem is novelty, which I checked in the sources myself. The 2n-pigeon formula is Pudlák and Thapen's rWPHP (2017). Pang's degree–size relation (arXiv 2610.00837, 30 September) gives exp(Ω(n)) for it in a few lines, which beats our exp(Ω(n/log⁵ n)). That same preprint had already beaten our October more-pigeons bound for linearly many pigeons. I logged both as corrections (Not a block), and the public records now carry qualifications.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: audit of the left-pigeon bound | Successful | No failing step; the result is known in substance |
+| Local direction: the decoder route | Full pivot | Finished, and superseded by Pang's relation |
+| Broader exploration: G3 | Known alternatives | Cutting planes (B82), parity reduction (B101), a high-degree native contradiction (B121) |
+| Long-term goal: G3 | No demonstrated advance | Nothing beyond what a known theorem gives more strongly; the sphere's count is untouched |
+
+**Next step:** Research directions, B101 recommended. Nothing is started tonight, as you asked.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | Parity reduction from PIGEON to SINK (B101) | 3/3 | 1/3 | As recorded |
+| 2 | Cutting planes on the count (B82) | 3/3 | 1/3 | As recorded |
+| 3 | Native contradiction with F₂ degree past √n (B121, new) | 3/3 | 1/3 | Bound each native contradiction's degree by its width and compute the smallest cases → a family past √n, or proof that native contradictions live on surfaces |
+
+**Corrections:** three, none a block: the rewording, this bound's novelty, and the more-pigeons novelty. **Goals:** G3 checkpoint (no demonstrated advance); B116 taken; B121 added. **Assumptions:** A55 gains evidence (TR26-316 re-proves Braun's theorem); its status is unchanged.
+**Basket:** B101 (3/3, 1/3), B121 (3/3, 1/3), B82 (3/3, 1/3); none taken. The RING-LAW-S1 stress test is still running and stays registered as pending. Nothing went outside the repo; whether to share anything is your call, though the left-pigeon bound is no longer worth sending as a result.

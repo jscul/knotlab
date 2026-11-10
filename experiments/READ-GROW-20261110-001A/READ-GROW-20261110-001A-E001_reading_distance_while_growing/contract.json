@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment_id": "READ-GROW-20261110-001A-E001",
+  "ticket": "READ-GROW-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the 5 x 5 tube at g = 3, does some doubling schedule keep every stage balanced while its original rings are heard by ring (0, 0)'s neighbours at distance 1 and then at distance 2, and do the hearing lags between original rings form a metric that reads the lattice distance?",
+  "definitions": {
+    "distance between original rings": "The taxicab distance |v| = |v_x| + |v_y| of their displacement v on the original 5 x 5 torus (coordinates -2 .. 2), the ring-graph distance of the contact graph (DISTANCE-20261108-001's cut length).",
+    "hearing lag": "L(v), the first lag at which an own cell of the original ring at displacement v depends on ring (0, 0)'s first-row cells (GROW-HORIZON-20261109-001A's heard()); a counted number of lags, a native magnitude (A40). By the original lattice's translations, L(v) is the lag at which any original ring X + v first hears X.",
+    "reads distance 1 then 2 (O1, the first step)": "Every stage balanced at every doubling through 40 x 40, all four rings at distance 1 heard, at least one at distance 2 heard, and every distance-1 lag strictly below every distance-2 lag.",
+    "reads distance across growth (O2)": "O1, and the first distance-2 hearing comes in a later run (after more doublings) than the last distance-1 hearing.",
+    "a metric that reads the lattice distance (O3)": "Every original ring is heard (L defined on all 24 displacements); L is symmetric (L(v) = L(-v)); L satisfies the triangle inequality L(u + w) <= L(u) + L(w) for all u, w with u + w != 0; L is constant on each taxicab class; and it strictly increases with |v| = 1, 2, 3, 4. Each property is reported separately: symmetric and subadditive positive lags are a metric on the original rings; constant and increasing on classes, it reads the lattice distance. A hearing order alone (O1 without O3) is not a metric."
+  },
+  "public_inputs": {
+    "code 1": "CROSS-WHY-20261110-001B's territory_lib.py (sha256 7c613304f59bc6985a4966be3b78002d21e14b62297ab69b19b0de541db5676b), exact by that ticket's Lemma 1.",
+    "code 2": "grid_lib.py beside this file (sha256 0176b395221264fece460187692d5d9bcc2868fcd44cb35f35871d733397847e), written independently of choose_lib, net_lib and territory_lib.",
+    "full state": "BIRTH-RULE-20261109-001A-E001's run.py (sha256 700c9ed85da8852dd0c0d1941031b063c116aa3afe29f22186aeb660df7dd6ce) double() and readings() on GROW-CHOOSE-20261109-001A-E001's full state.",
+    "run": "run.py in this folder, 8 worker processes.",
+    "family": "The 5 x 5 tube at g = 3, open births, the doubling law at lag 0 and after each run. S: one run of 1 to 48 lags (to 20 x 20), then, after every balanced one, a second run of 1 to 40 lags (to 40 x 40); O1 to O3 read on the two-run schedules with every stage balanced. C: code 1 and code 2 on eleven schedules (3 x 3 and 5 x 5, g = 2 and 3). V: the first two O1 schedules in S's order on the full state and with code 2 at 40 x 40. X: the first four O1 schedules extended by one run of 1 or 2 lags, to 80 x 80, with both codes."
+  },
+  "forbidden_inputs": [
+    "Changing the tube, spacing, ranges, definitions or sizes after seeing results"
+  ],
+  "primary_observable": "For every balanced two-run schedule: the hearing lags L(v) and O1, O2, O3 with each metric property.",
+  "cheapest_meaningful_control": "On the 3 x 3 tube CROSS-WHY-20261110-001A found 39 balanced two-run schedules at g = 3, 29 of them crossing; a uniform schedule (every 28 lags) failed at the third doubling.",
+  "resource_budget": {
+    "wall_minutes": 240,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "C's agreement line, then the depth counts of S.",
+  "decision_or_followup_rule": "Frozen. If C finds any disagreement between code 1 and code 2, stop and report it before reading S. B89's first step succeeds if some schedule meets O1 and its V readings agree; it is confirmed one size past if, in X, some extension keeps every stage balanced to 80 x 80 under both codes. It fails if no two-run schedule meets O1: the grown plane then reads no distance 1 then 2 in this family. O2 and O3 are reported for every O1 schedule; a claim of a metric needs O3, and a claim that the plane reads its lattice distance needs O3's last two properties as well.",
+  "stop_rule": "Stop when every part has its readings.",
+  "nonclaims": [
+    "Exploratory and finite: the 5 x 5 tube, g = 3, the frozen ranges, 40 x 40 (80 x 80 in X).",
+    "Balance computed, not proved; plain dependence; declared rings (A45); open births (A44); the schedules declared, found by search."
+  ],
+  "feasibility_disclosure": "Nearly blind on the 5 x 5 tube: before freezing, one smoke test of code 1 ran [12, 1] (every stage balanced to 40 x 40; the four rings at distance 1 heard at lag 8, none at distance 2), and code 2 was checked against code 1 on seven 3 x 3 schedules (all agreeing). The 3 x 3 results of CROSS-WHY-20261110-001A were known."
+}

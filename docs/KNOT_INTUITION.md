@@ -1402,8 +1402,17 @@ So network holes come in two kinds:
      to a cap of 200,000 states elsewhere. With the state fixed there is no learning step at the floor at all (proved).
    - **Reading (unchecked).** Which atom holds the leftover may be fixed by what was learned, the law's class, so that only learning, at a
      rise where violated lines appear, could move it.
-   - **Next (awaiting a go-ahead).** Does the law decide which atom holds the unit (backlog B79)
+   - **Next (taken by `LAW-HOLDS-20261110-001`, below).** Does the law decide which atom holds the unit (backlog B79)
      ([decision note](../research/RISE-ESCAPE-20261110-001/rise_escape.md)).
+
+   **2026-11-10: the law decides where the leftover lives** (`LAW-HOLDS-20261110-001`).
+   - **Exact (SAT over every state).** On 15 genus-2 spaces the floor unit can sit only inside a Fano atom that still acts as its line,
+     or at that atom's junctions. Across all 16 sign classes: both atoms acting leaves no floor state (the sphere's contradiction
+     returns), one acting holds the unit, both transparent lets it sit in either atom and at the upper level when the atoms are apart.
+   - **Reading.** The leftover tension lives in whichever named pattern still stands for its line. Where it sits is a learned fact, not a
+     fact about the point, so only learning can move it.
+   - **Next (started).** Learning at a rise (backlog B80): swap the two atoms' roles by learning, one unit above the floor
+     ([decision note](../research/LAW-HOLDS-20261110-001/law_holds.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

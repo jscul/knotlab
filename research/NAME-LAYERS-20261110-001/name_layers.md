@@ -83,3 +83,10 @@ questions the proved layered memory makes askable:
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); `NEST-ATOMS-20261110-001`#4 taken; next-phase proposals added (one
 3/3 sub-goal, two backlog entries). **Assumptions:** none new or changed.
 **Basket:** the learning line's basket is empty at payoff 2 or more once this epic takes its only item; the proposals above are new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (06:04 UTC), after the owner rested the project for the night: the answer (two
+readings of layers), claim D, the census with N2's failure and the undefined namings, both tables above with the next-phase proposals
+(sub-goal B118 selected, B119, B120) for the owner and the coordinator to weigh tomorrow, that no long-running check is pending, the
+Corrections, Goals and Assumptions lines, and the Basket line.

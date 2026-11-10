@@ -80,7 +80,7 @@ evidence: results and their status come from the records each entry links.
 | [A23](#a23--a-laws-local-view-is-its-rooted-code) | A law's local view is its rooted code | measure | Assumed |
 | [A24](#a24--the-pinwheel-laws-allowed-states-fix-its-planar-map) | The pinwheel law's allowed states fix its planar map | working premise | Assumed |
 | [A25](#a25--a-local-law-without-hidden-states-cannot-force-roundness) | A local law without hidden states cannot force roundness | working premise | Confirmed |
-| [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Assumed |
+| [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Under challenge |
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
 | [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Overturned |
@@ -626,7 +626,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A26 · A learner acts only at dissonance while the state holds still
 
-**Assumed** · 2026-11-07 · scope
+**Under challenge** · 2026-11-10 · scope
 
 - **Statement.** In the steering results a learning step changes one sign, and only on a side of a violated line or on a side
   with an end at an even face, where dissonance can be seen. The state does not change while the law is learned. A target, when
@@ -642,6 +642,8 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-10 · Put under challenge by  (backlog B71), a frozen test: the state flips one point between learning
+    steps when the flip does not raise the dissonance weight, on the atom spaces where the fixed-state learner was stuck or frozen.
   - 2026-11-10 · `ATOM-LAYERS-20261110-001` found that A26 is what freezes the genus-2 floor unit (an over-agreeing face offers no learning
     step); its next-steps report selects a challenge of A26, backlog B71, letting the state move ([layers through atoms](../research/ATOM-LAYERS-20261110-001/atom_layers.md)).
   - 2026-11-10 · `CHOOSE-RES-20261110-001` supplied a target class from outside, as A26 allows a target, and kept the learner's steps

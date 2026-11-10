@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**277 current results** and 5 superseded ones, from 230 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**278 current results** and 5 superseded ones, from 232 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 48 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 49 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 5 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 230 epics with their closures
+- [Epics](#epics): all 232 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -186,6 +186,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-10 · Persistence needs forgetting: no finite substrate has an invertible step and a persistent contact** (`INVERT-STEP-20261110-001-D001`).
   On a finite network an invertible step returns every state to itself, and at that lag each contact holds only its own first value, bound to neither ring, so no contact persists. Hence wherever a contact persists no row after the first is open, for every rule and law, and growth while running cannot be rescued by an invertible substrate.
   [proof P001](proofs/INVERT-STEP-20261110-001A/INVERT-STEP-20261110-001A-P001_persistence_needs_forgetting/proof.md), [epic closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Each eigenvalue's eigenvectors on the cut-open torus are one polynomial** (`KLOOSTERMAN-BOUNDS-20261110-001-D001`).
+  At sides 2^m the eigenvectors of the cut-open torus at each eigenvalue are one polynomial G times polynomials in Y = k² + k, proved from a self-adjointness and a shared shift ratio, so their number is set by deg G alone. deg G matches the Kloosterman count at every eigenvalue to side 512 (computed); bounding it, and the Jordan chains the collapse needs, stay open.
+  [proof P001](proofs/KLOOSTERMAN-BOUNDS-20261110-001A/KLOOSTERMAN-BOUNDS-20261110-001A-P001_one_polynomial_per_eigenvalue/proof.md), [epic closure](proofs/KLOOSTERMAN-BOUNDS-20261110-001Z/KLOOSTERMAN-BOUNDS-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Holes, depth and Tseitin proof complexity
 
@@ -1196,5 +1199,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Growth that stops (`GROW-STOP-20261110-001`) | [closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STOP-20261110-001/) |
 | 2026-11-10 | Grow where learning is stuck (`GROW-STUCK-20261110-001`) | [closure](proofs/GROW-STUCK-20261110-001Z/GROW-STUCK-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STUCK-20261110-001/) |
 | 2026-11-10 | Growth on an invertible substrate (`INVERT-STEP-20261110-001`) | [closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/INVERT-STEP-20261110-001/) |
+| 2026-11-10 | The Kloosterman lower bounds (`KLOOSTERMAN-BOUNDS-20261110-001`) | [closure](proofs/KLOOSTERMAN-BOUNDS-20261110-001Z/KLOOSTERMAN-BOUNDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/KLOOSTERMAN-BOUNDS-20261110-001/) |
+| 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | — | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 

@@ -1,0 +1,242 @@
+{
+ "ticket": "KLOOSTERMAN-BOUNDS-20261110-001A",
+ "artifact_id": "KLOOSTERMAN-BOUNDS-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash (LINEAR-ROOTS-20261109-001A's manifest and library)": {
+   "pass": true,
+   "info": {
+    "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/manifest.json": "32e65c9216407b424f49f2bd4bde5452c7df0711be93df8afc34073002253a74",
+    "proofs/LINEAR-ROOTS-20261109-001A/LINEAR-ROOTS-20261109-001A-P001_kloosterman_multiplicities/roots_lib.py": "aaa055213fbd45865e6a5c5e8aedbd81a32890bbc6771f0df66dcc9aecc536b6"
+   }
+  },
+  "1 Theorem 1: X_b and the shift are self-adjoint for <F, G> = sum_(j<h) [k^j](F G), every b, sides 4 to 64": {
+   "pass": true,
+   "info": {
+    "4": {
+     "values of b": 7,
+     "X_b not self-adjoint": 0,
+     "shift self-adjoint": true
+    },
+    "8": {
+     "values of b": 15,
+     "X_b not self-adjoint": 0,
+     "shift self-adjoint": true
+    },
+    "16": {
+     "values of b": 31,
+     "X_b not self-adjoint": 0,
+     "shift self-adjoint": true
+    },
+    "32": {
+     "values of b": 63,
+     "X_b not self-adjoint": 0,
+     "shift self-adjoint": true
+    },
+    "64": {
+     "values of b": 127,
+     "X_b not self-adjoint": 0,
+     "shift self-adjoint": true
+    }
+   }
+  },
+  "2 Theorem 2: F_1(k) F_2(k + 1) = F_1(k + 1) F_2(k) for every pair of solutions, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "8": {
+     "pairs": 2,
+     "nonzero Wronskians": 0
+    },
+    "16": {
+     "pairs": 13,
+     "nonzero Wronskians": 0
+    },
+    "32": {
+     "pairs": 76,
+     "nonzero Wronskians": 0
+    },
+    "64": {
+     "pairs": 360,
+     "nonzero Wronskians": 0
+    }
+   }
+  },
+  "3 Theorem 3: the solutions are G_b r(Y) of degree below h, dim = ceil((h - deg G_b)/2), every b, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "8": {
+     "values of b": 15,
+     "kernels not of the form G r(Y)": 0
+    },
+    "16": {
+     "values of b": 31,
+     "kernels not of the form G r(Y)": 0
+    },
+    "32": {
+     "values of b": 63,
+     "kernels not of the form G r(Y)": 0
+    },
+    "64": {
+     "values of b": 127,
+     "kernels not of the form G r(Y)": 0
+    },
+    "128": {
+     "values of b": 255,
+     "kernels not of the form G r(Y)": 0
+    }
+   }
+  },
+  "4 Theorem 4: dim ker X_b = h/2 - rank T_b (the Pade form), every b, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "8": {
+     "values of b": 15,
+     "mismatches": 0
+    },
+    "16": {
+     "values of b": 31,
+     "mismatches": 0
+    },
+    "32": {
+     "values of b": 63,
+     "mismatches": 0
+    },
+    "64": {
+     "values of b": 127,
+     "mismatches": 0
+    }
+   }
+  },
+  "5 computed: deg G_b = h - k_b and valuations 0, ..., dim - 1, every b, sides 8 to 128": {
+   "pass": true,
+   "info": {
+    "8": {
+     "values of b": 15,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0
+    },
+    "16": {
+     "values of b": 31,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0
+    },
+    "32": {
+     "values of b": 63,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0
+    },
+    "64": {
+     "values of b": 127,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0
+    },
+    "128": {
+     "values of b": 255,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0
+    }
+   }
+  },
+  "6 computed: rank T_b = linear complexity of psi_b = h/2 - |K(b)|/4, every b, sides 8 to 64": {
+   "pass": true,
+   "info": {
+    "8": {
+     "values of b": 15,
+     "mismatches": 0
+    },
+    "16": {
+     "values of b": 31,
+     "mismatches": 0
+    },
+    "32": {
+     "values of b": 63,
+     "mismatches": 0
+    },
+    "64": {
+     "values of b": 127,
+     "mismatches": 0
+    }
+   }
+  },
+  "7 the stress run (stress_test.json)": {
+   "pass": true,
+   "info": {
+    "one polynomial per eigenvalue at side 256": {
+     "values of b": 511,
+     "kernels not G_b r(Y)": 0,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0,
+     "counts by k": {
+      "k 2": 19,
+      "k 0": 18,
+      "k 16": 36,
+      "k 21": 9,
+      "k 3": 27,
+      "k 13": 45,
+      "k 7": 45,
+      "k 18": 18,
+      "k 19": 18,
+      "k 6": 27,
+      "k 9": 18,
+      "k 8": 27,
+      "k 1": 45,
+      "k 10": 27,
+      "k 12": 9,
+      "k 4": 36,
+      "k 20": 9,
+      "k 11": 21,
+      "k 5": 18,
+      "k 17": 9,
+      "k 14": 18,
+      "k 15": 9,
+      "k 22": 3
+     },
+     "pass": true
+    },
+    "seconds": 171,
+    "one polynomial per eigenvalue at side 512": {
+     "values of b": 1023,
+     "kernels not G_b r(Y)": 0,
+     "deg G_b != h - k_b": 0,
+     "valuations not 0..dim-1": 0,
+     "counts by k": {
+      "k 28": 11,
+      "k 0": 60,
+      "k 16": 20,
+      "k 3": 40,
+      "k 6": 40,
+      "k 15": 40,
+      "k 23": 20,
+      "k 19": 35,
+      "k 30": 12,
+      "k 27": 30,
+      "k 25": 20,
+      "k 12": 60,
+      "k 1": 30,
+      "k 2": 40,
+      "k 17": 50,
+      "k 8": 45,
+      "k 18": 40,
+      "k 5": 50,
+      "k 4": 20,
+      "k 9": 50,
+      "k 10": 20,
+      "k 14": 40,
+      "k 24": 20,
+      "k 20": 40,
+      "k 7": 45,
+      "k 21": 20,
+      "k 22": 30,
+      "k 26": 30,
+      "k 13": 20,
+      "k 29": 20,
+      "k 11": 20,
+      "k 31": 5
+     },
+     "pass": true
+    },
+    "pass": true
+   }
+  }
+ },
+ "status": "passed"
+}

@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse"
+    ],
+    "program": "foundations",
+    "takes": [
+      "LINEAR-ROOTS-20261109-001#1"
+    ]
+  },
+  "id": "KLOOSTERMAN-BOUNDS-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up LINEAR-ROOTS-20261109-001's direction 1 (sub-goal B58) at the coordinator's go-ahead on 2026-11-10: prove that at sides n = 2^m every a in GF(2n)* is a root of the cut-open torus's cone polynomial of order at least K(a)(K(a) - 2)/8 (K the Kloosterman sum of GF(2n) with x = 0 included), which by LINEAR-ROOTS-20261109-001A Theorem 1 proves the collapse and the Kloosterman law together; first the geometric half, that the kernel of I + C_s(a) has dimension |K(a)|/4. If the bounds stall, report the kernel count at each a precisely and where the argument stops.",
+  "ownership": {
+    "root": true,
+    "scope_id": "KLOOSTERMAN-BOUNDS-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (Partially successful): the Kloosterman lower bounds are not proved, but the eigenvector half is reduced to one degree per eigenvalue. Proved: the operator holding the cone's eigenvectors at each eigenvalue (sides 2^m) is self-adjoint for <F, G> = sum of the coefficients of F G below degree h; any two of its kernel elements have a ratio unchanged by k -> k + 1; so the eigenvectors are G r(Y), Y = k^2 + k, for one least-degree polynomial G, and their number is ceil((h - deg G)/2), equivalently h/2 minus the rank of one explicit Toeplitz matrix of a Pade series. Computed exactly: deg G = h - k at every eigenvalue for sides 8 to 512 (stress run 256 and 512), k(k + 1)/2 the multiplicity, which is the Kloosterman count |K|/4; the Toeplitz rank is the Pade series' linear complexity, h/2 - |K|/4 (sides 8 to 64). Where it stops: the eigenvector lower bound is exactly deg G <= h - k, and nothing found ties that degree to the Kloosterman sum; the Jordan chains were not reached. Recommendation Continue, selected #1 (the Jordan chains from one polynomial, sub-goal B73); B74 (the degree) recorded.",
+  "status_class": "complete",
+  "stop_rule": "Stop with the lower bounds proved (the collapse), the geometric count proved and the Jordan chains stated open, or the point where the argument stops stated with the kernel count computed precisely.",
+  "title": "The Kloosterman lower bounds"
+}

@@ -5,7 +5,10 @@
     "LINEAR-ROOTS-20261109-001A"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "accepted_artifact_id": "KLOOSTERMAN-BOUNDS-20261110-001A-P001",
+    "terminal_artifact": "proofs/KLOOSTERMAN-BOUNDS-20261110-001A/KLOOSTERMAN-BOUNDS-20261110-001A-P001_one_polynomial_per_eigenvalue/manifest.json"
+  },
   "id": "KLOOSTERMAN-BOUNDS-20261110-001A",
   "kind": "ticket",
   "legacy": {},
@@ -16,8 +19,8 @@
   },
   "parent": "KLOOSTERMAN-BOUNDS-20261110-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Proved 2026-11-10 (by hand, with finite checks; pre-registered in 78a919ba5): at sides 2^m the operator X_b whose kernel holds the cone's eigenvectors at 1/b^2 is self-adjoint for <F, G> = sum of the coefficients of F G below degree h; any two solutions satisfy F_1(k) F_2(k + 1) = F_1(k + 1) F_2(k); so the solutions are G_b r(Y), Y = k^2 + k, for one least-degree polynomial G_b, and their number is ceil((h - deg G_b)/2), equivalently h/2 minus the rank of one explicit Toeplitz matrix. Computed exactly: deg G_b = h - k_b at every b for sides 8 to 512 (stress run 256 and 512), which is the Kloosterman eigenvector count |K(b)|/4. The target, deg G_b <= h - k_b and the Jordan chains, and with them the collapse, is not proved.",
+  "status_class": "proved",
   "stop_rule": "",
   "title": "One polynomial per eigenvalue"
 }

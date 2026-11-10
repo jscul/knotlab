@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PC-COUNT-20261110-001B-E001",
+ "ticket": "PC-COUNT-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Backlog B84 at the smallest sizes: what is the exact F2 polynomial-calculus degree of the sphere's count on K_2 (16 points) and K_3 (36 points), and on K_4 (64 points) as far as it fits, against its F2 Nullstellensatz degree and against the two-sided control? Does the degree already grow at these sizes?",
+ "public_inputs": {
+  "solver": "pcdeg.c in this folder (dense GF(2) semi-echelon elimination, columns ordered by degree), compiled by run.py; checked before freezing against an independent Python reference on 12 random 3-CNFs (6 to 8 variables) and PHP and FPHP with 3 and 4 pigeons, no mismatch (scratch, not kept).",
+  "formulas": "NAE(K_k), the falsifiers of the count's own clauses (COUNT-NOTE-20261107-001B, sa_lib.falsifiers), 2n clauses of width 3; the control NAE(K_k) and FACE(K_k), adding the conjunctions of the three-point faces (sa_lib.certificate's terms of coefficient -1).",
+  "systems": "pc: standard polynomial calculus over F2 (multilinear lines; a line of degree at most D - 1 may be multiplied by a variable; the degree is the largest degree of a line). ns: the F2 Nullstellensatz (span of monomial multiples of falsifiers within degree D). The multilinear variant of TREE-XOR-20261110-001B, which also multiplies degree-D lines whose product stays within degree D, is not read; its degree is the standard one or one less.",
+  "run": "run.py: for k = 2, 3, 4, for the control then the count, pc then ns, D = 3, 4, ... until 1 is derived or a run would pass 15,000 MiB; one solver at a time."
+ },
+ "forbidden_inputs": [
+  "Changing the formulas, the systems, the memory cap or the hypotheses after seeing results",
+  "Reading the multilinear variant in place of the standard rule"
+ ],
+ "primary_observable": "The exact degrees (or the largest degree decided) of the count in both systems on K_2, K_3 and K_4, and of the control.",
+ "cheapest_meaningful_control": "NAE(K_k) and FACE(K_k): degree 3 in both systems, since its falsifiers sum to 1 (COUNT-TFNP-20261107-001B).",
+ "resource_budget": {
+  "wall_minutes": 120,
+  "memory_mib": 16384
+ },
+ "first_executable_signal": "The degrees in result.json.",
+ "decision_or_followup_rule": "Frozen hypotheses. H1: the count's pc degree on K_3 is above its pc degree on K_2. H2: on K_2 and K_3 the count's pc degree is strictly below its ns degree (the dynamic system gains). H3: the control has degree 3 in both systems on every sphere. H4 (read only if K_3 and K_4 are both decided): the count's pc degree on K_4 is above K_3's. Reading: the asymptotic lower bound of PC-COUNT-20261110-001A (c n^{1/4}/log n) says nothing at these sizes, so these readings test only whether the smallest spheres already show growth. Growth at every decided step is read as the small-size face of that bound; equal degrees on K_2 and K_3 are read as a small-sphere plateau, a low-degree refutation at these sizes and no evidence against the asymptotic bound. A degree reached by a refutation is an upper bound on a proof system at one size, not an algorithm.",
+ "stop_rule": "Stop when every reading has its degree or its first undecided degree.",
+ "nonclaims": [
+  "Exploratory and finite: K_2, K_3 and K_4 only, and only as far as dense rows fit in 15,000 MiB.",
+  "No asymptotic claim; the lower bound is ticket A's proof.",
+  "The standard rule only; the multilinear variant is within one."
+ ],
+ "feasibility_disclosure": "Before freezing, the solver was run only on formulas other than the count: the Python cross-check above, and timing on a satisfiable random 3-CNF with 36 variables and 72 clauses (degree 4: 66,712 columns, rank 4,436, under a second; degree 5: 443,704 columns, rank 159,600, 14 s, 8.5 GiB). No degree of the count or the control was computed before this freeze. Ticket A's transfer theorem (degree at least c n^{1/4}/log n) was worked out before the freeze, from Miksa and Nordstrom's bound for the functional pigeonhole principle on expanders; it is asymptotic and the hypotheses above were written knowing it."
+}

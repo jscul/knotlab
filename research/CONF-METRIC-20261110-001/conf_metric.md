@@ -116,3 +116,34 @@ temporal graphs. **Goals:** a G1 and G5 checkpoint (capability gained); B125 tak
 **Recommendation.** Research directions, #1; stop at the sharp constants or a schedule beyond them.
 
 **Basket:** B108, B55, `GROW-HORIZON-20261109-001#2`; none taken: #1 stays in this line because it sharpens the theorem just proved.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 17:18 UTC and copied here verbatim.
+
+**The conformal metric as a theorem (B125) is proved and published. At its own scale the growing plane reads its original rings' taxicab distance up to a constant, at every size and for every schedule.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/CONF-METRIC-20261110-001/conf_metric.md))
+
+- **One stage, exactly:** a route's earliest arrival is a taxicab distance on the lattice of contacts. Each hop goes a quarter-turn round a ring in g lags, and two hops make one ring step. Checked against breadth-first search on 326,400 pairs.
+- **The theorem:** in conformal time the first arrival between original rings is 4g × taxicab distance, to within −6g and +9g + 2. So the round trip is a metric up to 42g + 4. Checked on 15,373 arrivals. In plain lags the excess roughly doubles with each doubling a trip crosses (42, 114, 260, 548).
+- **Your question on the 4g·2^k law:** it's a consequence of the construction, provable in a line from two hops per ring step. The census's 2,368 exact matches confirm that consequence rather than an independent law.
+- **The residual traced:** it comes from the doubling jumps the proof bounds (a ring shrinking toward its corner, one possible wait).
+- **Honest limits:** it's a coarse metric (the readings stay within 6 below and 4g above, so the constants are loose), and the board is still drawn (A51).
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the conformal metric as a theorem | Successful | Proved for every schedule and size, constants explicit, checked |
+| Local direction: a grown plane that reads its own metric | Research directions | Coarse metric proved; sharp constants and knots-kept versions open |
+| Broader exploration: G1 with G5 | Known alternatives | Growth that rounds the reading (B108); why a run keeps balance |
+| Long-term goal: G1 Space from a law | Capability gained | A local law grows a plane that, in its own clock, reads its distance up to a constant, proved at every size |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Sharp constants | 2/3 | 3/3 | Tighten the one-sided jump bound → the exact range, or a schedule beyond it |
+| 2 | Growth that rounds the reading (B108) | 2/3 | 3/3 | As recorded |
+| 3 | A metric with knots kept | 2/3 | 2/3 | Which balanced schedules hear every ring on larger tubes |
+| 4 | Why a run keeps balance | 2/3 | 2/3 | As recorded |
+
+**Corrections:** one, Not a block (missed prior work). B102's "time lengths of a growing plane aren't a metric" is an instance of a known fact: earliest-arrival distances in time-varying graphs needn't satisfy the triangle inequality. What's new is where the violations fall and their removal in conformal time. Logged in CORRECTIONS.md and knotlab's HISTORY.md. **Goals:** G1/G5 checkpoint (capability gained); B125 taken. **Assumptions:** A56's history records the theorem.
+**Basket:** B108, B55, GROW-HORIZON-20261109-001#2. None taken: #1 stays in this line because it sharpens the theorem just proved.
+
+I recommend #1 and will wait for the go-ahead.

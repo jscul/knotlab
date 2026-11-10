@@ -112,3 +112,24 @@ changed.
 
 **Recommendation.** Continue with direction 1, recorded as sub-goal B103 under the owner's rule for untaken 3/3 directions, for the
 coordinator to confirm.
+
+## Final report as sent
+
+B100 is closed and published: bit LeftPigeon is one statement short of being Braun's second family. His general Res(⊕) criterion applies to this PPADS-complete principle with its own clauses. What's missing is one fact: that its row-linear polynomials over the hole rows, not only the pigeon rows, are never low-degree consequences. With that, dag-like Res(⊕) proofs would need superpolynomial size. The pigeon rows carry over from bit PHP through a substitution, but on their own they are too thin to give a bound. I froze the meaning of "density that grows" and the sizes (2, 4 and 8 holes) before computing. On every instance I could compute, the hole rows stay separated as far as bit PHP's and their reach grows, so the frozen verdict is "density that grows". That reading uses the contract's definition, after I fixed a disclosed bug in the script's horizon count.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: bit LeftPigeon as Braun's second family | Partially successful | Reduced to one separation statement, supported at small sizes |
+| Local direction: hole-row separation | Continue | Exact statement, Braun's machinery to adapt, small-size evidence |
+| Broader exploration: G3 | Known alternatives | Cutting planes (B82), the parity reduction (B101) |
+| Long-term goal: G3 | Capability gained | A route to the first dag-like Res(⊕) bound for a PPADS-complete principle (not the sphere) |
+
+**Next step:** Continue with hole-row separation (sub-goal B103), for you to confirm.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | Hole-row separation for bit LeftPigeon (B103) | 3/3 | 2/3 | Adapt Braun's cube argument to weighted hole sums; test the moment functionals on unary instances with 4 to 8 holes → a separator for every hole-row monomial, or a combination they all kill |
+| 2 | Cutting planes on the count (B82) | 3/3 | 1/3 | As recorded |
+| 3 | A parity reduction from PIGEON to SINK (B101) | 3/3 | 1/3 | As recorded |
+
+**Corrections:** none. **Goals:** a G3 checkpoint; B100 taken; sub-goal B103 added. **Assumptions:** none.

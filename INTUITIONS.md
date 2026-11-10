@@ -1062,6 +1062,13 @@ plane but never periodically, does choose it. The question of which boards
 local rules can force is also studied as graph subshifts (Arrighi, Durbec and
 Guillon 2023).
 
+**Even in the limit.** Take the identity rule to its limit: names that look
+alike at every radius, however far, are one place. That rule is no longer a
+clause of finitely many variables. For every one-bit Life-like law it still
+leaves the tree open whenever an infinite board is allowed, so it never forces
+the plane, though the plane is allowed for most of them
+([LEIBNIZ-BOARDS-20261110-001](research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)).
+
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the
 board itself is made of distinctions, rules that never name a shape cannot

@@ -2275,8 +2275,20 @@ So network holes come in two kinds:
    - **Reading.** At sides that are not powers of two the eigenvalues are not even in the field of (2n − 1)-th roots of unity: what
      makes powers of two special is the arithmetic of elliptic curves over GF(2n). The lower bounds are not proved. No lag cutoff was
      used.
-   - **Next (selected, pending the coordinator).** Prove the lower bounds, starting from that kernel
+   - **Next (selected, taken by `KLOOSTERMAN-BOUNDS-20261110-001`).** Prove the lower bounds, starting from that kernel
      ([decision note](../research/LINEAR-ROOTS-20261109-001/linear_roots.md)).
+
+   **2026-11-10: the Kloosterman lower bounds** (`KLOOSTERMAN-BOUNDS-20261110-001`).
+   - **The question.** Can the multiplicities be proved, starting with the eigenvectors: at least |K|/4 of them at each eigenvalue?
+   - **One polynomial per eigenvalue (proved).** The eigenvectors at an eigenvalue are all one polynomial G times polynomials in
+     Y = k² + k. Two short facts give it: the operator is self-adjoint, and any two eigenvectors change by the same factor under the cut
+     line's shift. So their number is ⌈(n/2 − deg G)/2⌉.
+   - **The count is one degree (computed).** deg G = n/2 − k at every eigenvalue for sides 8 to 512, where k(k + 1)/2 is the
+     multiplicity; with the theorem this is the Kloosterman count |K|/4.
+   - **Reading.** Proving the eigenvector count now means bounding the degree of one polynomial per eigenvalue; nothing found ties it to
+     the Kloosterman sum, and the Jordan chains, which the collapse needs, were not reached. No lag cutoff was used.
+   - **Next (selected, pending the coordinator).** The Jordan chains that G·Y^j heads
+     ([decision note](../research/KLOOSTERMAN-BOUNDS-20261110-001/kloosterman_bounds.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

@@ -63,3 +63,5 @@ The learner was written and run on the dev spaces only, before ticket A's result
 
 C2 holds on S3 and S4 (at least 15 of 16); M does not hold (credit does not mislead overall); A holds; most cooled lines lie in acting
 atoms; S5's C2 is uncertain.
+
+*Erratum, 2026-11-10, before ticket B ran:* the dev leaf counts above are 4 of 4 and 8 of 8, not "9 of 9 and 8 of 8". Nothing else changes.

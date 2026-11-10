@@ -2262,9 +2262,10 @@ So network holes come in two kinds:
      lag 8. A uniform pause repeated, as every 28 lags, fails at 48 × 48.
    - **Balance is read on one territory (proved).** The law commutes with the original lattice's translations, and rings born at a
      doubling are never the ones that fail.
-   - **Reading.** The exclusion was a fact about uniform schedules, not about growth: a growing plane can keep its knots and carry what
-     its territories heard of each other. The schedules are declared and were found by search; a rule the network could follow to pause
-     on its own is open.
+   - **Reading.** The exclusion was a fact about uniform schedules, not about growth: to the sizes read, a growing plane can keep its
+     knots and carry what its territories heard of each other. Only [1, 28, 1], extended by a run of 1 or 2 lags, is confirmed at
+     96 × 96; most of the 21 are not known to stay balanced larger, and balance at every size is open. The schedules are declared
+     and were found by search; a rule the network could follow to pause on its own is open.
    - **Next (selected, awaiting a go-ahead).** Reading distance while growing (sub-goal B89; Payoff 3/3, Concreteness 2/3): on a 5 × 5
      tube, a schedule under which original rings are heard at distance 1 and then 2 with every stage balanced; B55 meanwhile
      ([decision note](../research/CROSS-WHY-20261110-001/cross_why.md)).

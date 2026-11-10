@@ -24,18 +24,21 @@ Epic `CROSS-WHY-20261110-001` (program foundations), 2026-11-10. A frozen explor
 
 ## Answer
 
-No lemma, because the premise is false. Crossing a territory border does not break balance: what failed in the uniform schedules read
-was the repetition of a long pause, through a ring's own cells losing hold of its born cells or through what its neighbours heard
-cancelling what it holds, and both happen with no crossing at all. A schedule that pauses once, long enough for neighbouring territories
-to hear each other, and then doubles quickly, keeps every stage balanced while its original rings hear their neighbours. So the exclusion
-read by the last epics holds for the uniform schedules read and not as a law of growth: a growing plane can keep its knots and carry
-what its territories heard of each other.
+No lemma, because the premise is false. Crossing a territory border does not break balance: the uniform schedules read failed through a
+ring's own cells losing hold of its born cells or through what its neighbours heard cancelling what it holds, and both happen with no
+crossing at all. Some schedules that pause once, long enough for neighbouring territories to hear each other, and then double quickly,
+keep every stage balanced while their original rings hear their neighbours: 21 at g = 3 through 48 × 48. Only [1, 28, 1], extended by a
+run of 1 or 2 lags, is confirmed through 96 × 96; three of the four schedules read one size past fail there, so most of the 21 are not
+known to stay balanced at larger sizes, and balance at every size is open for all of them. So the exclusion read by the last epics
+holds for the uniform schedules read and not as a law of growth: to the sizes read, a growing plane can keep its knots and carry what
+its territories heard of each other.
 
 ## Reading
 
 **Interpretation, not a theorem.**
 - **Pauses read, quick growth keeps.** In the schedules found, distance between territories is read during a pause, and the doublings
-  that follow keep every knot; repeating the pause is what fails.
+  that follow keep every knot to the sizes read; a uniform repeated pause (every 28 lags) failed where a pause followed by short runs
+  did not, which is one comparison, not a mechanism.
 - **The schedule is declared.** Each schedule is a declared, time-dependent growth law. They were found by search: no native rule of the
   network has been shown to choose them, so "the network decides when to pause" is open.
 - **For G1.** This reopens, on evidence this time, the route to a grown plane that keeps its knots and reads its own distance while it
@@ -69,6 +72,13 @@ as an exclusion: while a network grows it keeps its knots or reads distance acro
 read "making and reading are two phases", and `INVERT-STEP-20261110-001` listed B55 and B64 as the proof pair for that exclusion. The
 computed results stand for the uniform schedules read; the exclusion and the causal reading do not. Correction sections were added to
 both decision notes.
+
+### Correction of this note's reading
+
+**2026-11-10 · Not a block** (`docs/CORRECTIONS.md`). The Answer said, unsized, that a schedule that pauses once and then doubles quickly
+"keeps every stage balanced", and the Reading that "repeating the pause is what fails". The census read balance to 48 × 48, and one size
+past only [1, 28, 1] extended holds through 96 × 96 while three of the four schedules read there fail. Both sentences are narrowed above;
+every result stands.
 
 ## Ratio
 

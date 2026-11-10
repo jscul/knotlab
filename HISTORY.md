@@ -3,6 +3,13 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: crossing schedules balanced at 48 x 48 are not known to stay balanced
+
+- CROSS-WHY-20261110-001's answer said, without a size, that schedules that pause once and then double quickly keep every stage balanced.
+- Its census read 48 x 48. One size past, only [1, 28, 1] extended by a run of 1 or 2 lags stays balanced through 96 x 96; three of the
+  four schedules read there fail ([decision note](research/CROSS-WHY-20261110-001/cross_why.md)). Balance at every size is open.
+- Unchanged: every result of CROSS-WHY-20261110-001, and the correction below.
+
 ## 10 November 2026: uneven doubling schedules cross a border with every stage balanced
 
 - CROSS-BORDER-20261110-001 read that crossing a territory border breaks balance, and that while a network grows it keeps its knots or

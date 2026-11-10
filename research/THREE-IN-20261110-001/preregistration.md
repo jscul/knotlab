@@ -23,3 +23,27 @@ Which maps of three held points does a knot memory compute, is any non-unate, an
   moves the decided output both ways: one pair of decided patterns differing only in that input rises with it and another falls.
 - **Checks.** Every map self-dual (theorem D, again, exactly); the counts of each kind by space, group kind, held set and whether the group
   acts; the first instance of each total majority, total parity and partial non-unate map.
+
+## Stage 0 result (exact, ticket A)
+
+2,976,256 maps read on every class of six spaces: every one self-dual; **no total majority, no total parity and no partial non-unate map
+occurs**. The only total maps (1,074) copy or negate a single input, the other two never reaching the output; the rest are partial and
+unate (935,160), never decided (2,025,954) or have no floor state (14,068). By lemma G of `IN-OUT-20261110-001` every Kasteleyn law of
+these spaces is a class's representative up to negating interface points, and negation keeps a map's kind, so the census covers every
+law: **at these interfaces no knot law computes parity, majority or any non-unate map.**
+
+## Stage 1: the learning test (frozen before any learning run)
+
+Frozen in `proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/` (`io3_lib.py`, `check.py`).
+
+- **Learner.** `CREDIT-PIN-20261110-001B`'s credit learner, unchanged, with `STURDY-PROBE-20261110-001A`'s sturdier probe extended to three
+  inputs (eight examples; positive checks one 4,000-step walk; each negative check four 25,000-step walks, three from fresh states).
+  It sees what it saw before: its dissonance, the floor, the interface points and the examples. Maps are scored by SAT.
+- **Interfaces.** In each test space, the first interface in census order where a total map occurs, with that map as the realizable
+  target: S1 and S2, leaf 0, inputs points 0, 1, 2 and output 4, target `10101010` (the output is the negation of the third input);
+  S3 and S4, leaf 0, inputs 1, 36, 37 and output 3, target `00001111` (the output copies the first input).
+- **Targets in turn:** that map, then parity `01101001`, then majority `00010111`; learner seed 7000 + k (k = 0 to 3 for S1 to S4);
+  budget 4,000,000 steps each. After each stop, a disturbance and M1 as before.
+- **Marks.** **I:** parity and majority never stop (8 of 8): the census proves them impossible here, so any stop is a fooled probe.
+  **L3:** the realizable single-input map is learned and held at 3 or 4 of the 4 interfaces.
+- **Predictions.** I holds; L3 holds. Learning counts are computed; the census claims are exact.

@@ -114,3 +114,34 @@ by this report; sub-goal B91 retired (its strong form refuted); B74 and B59 rate
 
 **Recommendation.** Continue with #1, bounded to co-distance 3. The chain line has now taken three epics for three orders; if
 co-distance 3 does not yield, the collapse line should be parked behind other goals rather than pressed further.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 03:42 UTC and copied here verbatim.
+
+The leading-form epic is closed and published. Neither route got the leading form past co-distance 2.
+
+**The halving route is out.** The frozen test came first. At all 61 eigenvalues with even k at sides 16 to 64, and in every variant I froze, the reduction mixes even and odd powers of Y below the orders that matter. That refutes B91's strong form at these sides, so the frozen rule sent me down the co-distance route.
+
+**On the co-distance route I proved new structure.** Multiplied by G, the kernel operator is (k + 1) times a Wronskian, W(G, F) = G(k)F(k+1) + F(k)G(k+1). That makes the second chain vector's Wronskian explicit. It also gives a second solution G′ whose Wronskian with G is a single power of Y, like two consecutive convergents of a continued fraction.
+
+**Where it stopped.** The second vector itself needs G′. At co-distance 3, its corrections add exactly 1 to a pure part of 1, which is why the coefficient vanishes there, but I didn't derive that cancellation. By the rule frozen beforehand, the attempt ends at order 2.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the leading form at every order | **Status:** Inconclusive | It stopped at order 2 under the frozen rule. The halving route was refuted, and the Wronskian form and a second solution were proved |
+| Local direction: the collapse at powers of two | Continue, bounded | The co-distance-3 cancellation is located (in the corrections, which run through G′). The degree law is untouched |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B80 |
+| Long-term goal: G5 Dynamics | Obstruction learned | The next order needs a second solution, and the index doesn't halve |
+
+**Next step:** Continue with #1, bounded to co-distance 3.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The leading form through the pair of solutions (B73) | 3/3 | 2/3 | Write the co-distance-3 coefficient through the Wronskians of (G, G′) and prove the corrections add 1 → co-distance 3, or park the line after one epic | Selected |
+| 2 | The degree of the least solution (B74) | 3/3 | 1/3 | As recorded in B74 | Alternative |
+| 3 | The curve behind each eigenvalue (B59) | 3/3 | 1/3 | As recorded in B59 | Alternative |
+
+**My recommendation:** the chain line has now taken three epics to get through three orders. If co-distance 3 doesn't give way in the next one, I'd park the collapse line behind other goals.
+
+**Corrections:** none. **Goals:** G5 checkpoint (obstruction learned). B73 has been attempted again and is re-rated 3/3, 2/3. B91's strong form is refuted. B74 and B59 stay open. **Assumptions:** none added. Commits: f8e8b996c (pre-registration), 134808d8d (epic), d617c8bc0 (shared docs), 169887c64 (tracking).

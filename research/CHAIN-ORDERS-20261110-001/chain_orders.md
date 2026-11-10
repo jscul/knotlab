@@ -127,3 +127,29 @@ the index); B74 and B59 rated again. **Assumptions:** none added.
 
 **Recommendation.** Continue with #1; #2 attacks the same statement by another route and could replace it if the second vector has no
 closed form.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 03:15 UTC and copied here verbatim.
+
+The chain-lemma epic is closed and published. The lemma now comes down to one explicit statement, and that statement holds at every eigenvalue I tested, sides 8 to 256. On the eigenvectors G·Y^j, the family's reduction starts entry by entry at u^(2k−1−2(i+j)), with coefficient 1 exactly when k − i − j is a power of two. That's the Hankel matrix of u⁻¹Y^k·L(u²/Y), built from the same L(x) = x + x² + x⁴ + … that drives the family. I proved this leading matrix is invertible for every k, so the form gives each eigenvalue's whole Jordan structure.
+
+I also proved that near each eigenvalue the whole family is one Hankel (moment) matrix. The bottom three orders hold: no block of size 2, and one of size 3 exactly when k is even. That settles the lemma completely for k ≤ 2. Orders 4 and up aren't proved, because the second correction vector stops being a multiple of G and I didn't find a closed form for it.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the chain lemma at every order | **Status:** Partially successful | The lemma is one explicit leading form, true at every eigenvalue to side 256, with its leading matrix invertible by proof. The form itself is proved for its first three orders |
+| Local direction: the collapse at powers of two | Continue | Two statements remain: the leading form from order 4 on, and the degree law |
+| Broader exploration: G5 with G1 | Known alternatives | Backlog B22–B80 |
+| Long-term goal: G5 Dynamics | Capability gained | Each eigenvalue's Jordan structure is the leading part of one moment matrix, and its bottom three orders are proved |
+
+**Next step:** Continue with #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The leading form at every order (B73) | 3/3 | 2/3 | Find the second correction vector in closed form from the moment matrix, and check that it cancels the u⁵ term on co-distance 3 → an induction on co-distance, or the first order with no closed form | Selected |
+| 2 | Halving the index (B91) | 3/3 | 2/3 | Test whether the reduction at k = 2c splits into u times the reductions at c and c − 1 with u → u² → an induction on k, or where the splitting fails | Alternative (same target) |
+| 3 | The degree of the least solution (B74) | 3/3 | 1/3 | As recorded in B74 | Alternative |
+| 4 | The curve behind each eigenvalue (B59) | 3/3 | 1/3 | As recorded in B59 | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained). Sub-goal B73 is advanced and re-rated (3/3, 2/3), I added B91 (halving the index) under the sub-goal rule, and B74 and B59 stay open. **Assumptions:** none added. The side-256 stress run (CHAIN-ORDERS-S1) passed and is folded in. Commits: c252175e4 (pre-registration), ac41ae2dd (epic), 6318e7966 (shared docs), 39d891f3e (tracking).

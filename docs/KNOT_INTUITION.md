@@ -1411,8 +1411,19 @@ So network holes come in two kinds:
      returns), one acting holds the unit, both transparent lets it sit in either atom and at the upper level when the atoms are apart.
    - **Reading.** The leftover tension lives in whichever named pattern still stands for its line. Where it sits is a learned fact, not a
      fact about the point, so only learning can move it.
-   - **Next (started).** Learning at a rise (backlog B80): swap the two atoms' roles by learning, one unit above the floor
+   - **Next (taken by `LEARN-RISE-20261110-001`, below).** Learning at a rise (backlog B80): swap the two atoms' roles by learning, one unit above the floor
      ([decision note](../research/LAW-HOLDS-20261110-001/law_holds.md)).
+
+   **2026-11-10: learning at a rise** (`LEARN-RISE-20261110-001`).
+   - **The question.** The leftover sits in whichever atom acts as its line. With the state moving and learning acting, one unit above
+     the floor, can it be carried to the other atom?
+   - **Yes, post hoc (computed).** The pre-registered breadth-first search ran out of room at about four moves. A targeted search over the
+     same moves, aimed at a law in which the other atom acts as its line, found paths from all 9 starts: 16 to 43 moves, 4 to 16 of them
+     learning steps. The atoms' roles swap, and the tension follows.
+   - **Reading.** The point and learning together move a pattern's tension: the state carries the dissonance around, learning rewrites
+     which pattern stands for the contradiction, and the tension settles where learning puts it.
+   - **Next (awaiting a go-ahead).** Learning chooses which atom holds the leftover (backlog B81), a learned address
+     ([decision note](../research/LEARN-RISE-20261110-001/learn_rise.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

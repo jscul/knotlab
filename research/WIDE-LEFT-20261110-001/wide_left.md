@@ -14,15 +14,19 @@ Epic `WIDE-LEFT-20261110-001` (program complexity), 2026-11-10.
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **A dag-like Res(⊕) lower bound for the binary left-pigeon principle.** For n = 2^l holes, l ≥ 20, every dag-like Res(⊕) refutation of the principle with 2n pigeons has S lines with 3S + 2n²(l + 1) ≥ exp(0.005·k/l² − 1), k = ⌊n/(64 l³)⌋: S ≥ exp(Ω(n/log⁵ n)). Its clauses contain those of the n + 1 pigeon principle, whose search problem is PPADS-complete, so the same bound holds there. | proved (V1, from Braun's lemmas, assumption A55) | A |
+| 1 | **A dag-like Res(⊕) lower bound for the binary left-pigeon principle.** For n = 2^l holes, l ≥ 20, every dag-like Res(⊕) refutation of the principle with 2n pigeons has S lines with 3S + 2n²(l + 1) ≥ exp(0.005·k/l² − 1), k = ⌊n/(64 l³)⌋: S ≥ exp(Ω(n/log⁵ n)). Its clauses contain those of the n + 1 pigeon principle, whose search problem is PPADS-complete, so the same bound holds there. | proof written (V1), not independently checked, conditional on A55 | A |
 | 2 | **The spare-row lemma holds where it can be computed.** The space of row-linear monomials avoiding the spare stars meets the decoder's kernel only in zero at (4, 1), (8, 1), (16, 2), and the cube that proves it isolates every top monomial checked, while the whole kernel is 63% and 36% of the space at degree 2. | computed (pre-registered, exact) | B |
 
 ## Answer
 
-Yes, by stop rule (a). The decoder route gives a bound once the formula has 2n pigeons: a separated space built from the rows outside
+*(Corrected 2026-11-10: this answer first read as an established result; it is a proof written (V1), not independently
+checked, conditional on A55, and is under audit in `AUDIT-LEFT-20261110-001`; `docs/CORRECTIONS.md`.)*
+
+By stop rule (a), a proof is written. The decoder route gives a bound once the formula has 2n pigeons: a separated space built from the rows outside
 a few spare stars is dense enough for Braun's criterion, and the kernel elements that blocked the earlier attempts all use a spare row
 or every hole. The bound is exponential in n/log⁵ n and transfers to the PPADS-complete n + 1 pigeon principle because that principle's
-clauses are a subset. As far as found, it is the first lower bound of any kind for a PPADS-complete principle in dag-like Res(⊕).
+clauses are a subset. If the proof survives review, it would be the first lower bound of any kind for a PPADS-complete principle in dag-like Res(⊕), as far as
+found.
 
 ## Scope and transfer
 
@@ -85,10 +89,10 @@ Since the epic opened:
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the decoder route for 2n pigeons | **Status:** Successful | A dag-like Res(⊕) lower bound for the binary left-pigeon principle, proved |
+| This attempt — the decoder route for 2n pigeons | **Status:** Successful (proof written, V1) | A dag-like Res(⊕) lower bound for the binary left-pigeon principle: proof written (V1), not independently checked, conditional on A55 |
 | Local direction — the decoder route | Full pivot | The coordinator's condition: the route is finished in this program after this epic |
 | Broader exploration — G3 | Known alternatives | Cutting planes on the count (B82), the parity reduction from PIGEON (B101) |
-| Long-term goal — G3 Hardness at three places | Capability gained | A PPADS-complete principle is hard for dag-like Res(⊕); the knot sphere's count is not reached |
+| Long-term goal — G3 Hardness at three places | Capability gained (pending audit) | If the V1 proof holds, a PPADS-complete principle is hard for dag-like Res(⊕); the knot sphere's count is not reached |
 
 **Corrections:** none. **Goals:** a G3 checkpoint (capability gained); B114 taken; sub-goal B116 added. **Assumptions:** A55 added (Braun's preprint is
 correct).

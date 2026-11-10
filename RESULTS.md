@@ -366,6 +366,7 @@ What networks of knots can decide, count and approximate without hubs.
   [proof P001](proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/proof.md), [epic closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · The binary left-pigeon principle needs exponential dag-like Res(xor) proofs** (`WIDE-LEFT-20261110-001-D001`).
   Every dag-like Res(xor) refutation of the binary left-pigeon principle with n holes, with n + 1 pigeons or with 2n, has exp(Omega(n / log^5 n)) lines; the proof runs Braun's bit-PHP framework through a decoder into the unary pigeonhole principle and separates a space of row-linear polynomials that avoids a few spare holes and pigeons.
+  *Qualification pending: the bound is a proof written (V1) in one session and not independently checked, conditional on Braun's unrefereed preprint arXiv 2609.23015 (assumption A55); it is under audit (AUDIT-LEFT-20261110-001). Read every statement of it as such.*
   [proof P001](proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/proof.md), [epic closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them

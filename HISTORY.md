@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: the left-pigeon bound is a proof written, under audit
+
+- `WIDE-LEFT-20261110-001` was published with headline sentences that read its
+  dag-like Res(⊕) lower bound for the binary left-pigeon principle as settled.
+  It is a proof written (V1) in one session, not independently checked, and
+  conditional on Braun's unrefereed preprint. The wording now says so, the
+  record carries a pending qualification, and an audit is under way.
+
 ## 10 November 2026: a large decoder kernel does not close the left-pigeon route
 
 - The frozen statement of `HOLE-SEP-20261110-001` said that a kernel above

@@ -33,8 +33,10 @@ per step (3, 4, at least 5), while the Nullstellensatz needs 6 on K_2, so the po
   sum, not its value: the count is a count of things that cannot be negative.
 - **The open window.** The degree lies between c n^{1/4}/log n and O(√n) (the resolution width plus 1, `SPHERE-WIDTH-20261107-001`). The
   small spheres fit k + 1, which is of order √n; that is three points, read as a pattern only.
-- **Why only tree-like.** Dag-like Res(⊕) is not closed under the substitutions used here, and no superpolynomial dag-like Res(⊕) bound
-  is known for any formula; the strongest known results need lifted formulas.
+- **Why only tree-like.** Dag-like Res(⊕) is not closed under the substitutions used here. The known superpolynomial bounds beyond
+  tree-like are for lifted formulas and for bit-encoded pigeonhole principles: Braun's dag-like bound for bit PHP (preprint, audited
+  in `BPHP-RES-PARITY-AUDIT-20261019-001`) and Efremenko, Garlík and Itsykson's regular bounds. None is known for this formula.
+  (Corrected 2026-11-10: this bullet first said no dag-like bound was known for any formula; `docs/CORRECTIONS.md`.)
 
 ## Publication hold
 

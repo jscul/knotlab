@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: a dag-like Res(⊕) bound is known, for bit PHP
+
+- The decision note of `PC-COUNT-20261110-001` said that no superpolynomial
+  dag-like Res(⊕) bound was known for any formula. Braun's preprint proves an
+  exponential one for the bit pigeonhole principle, which this program audited
+  on 19 October 2026 (`BPHP-RES-PARITY-AUDIT-20261019-001`, no gap found).
+  The note now says that the known bounds beyond tree-like are for lifted
+  formulas and bit-encoded pigeonhole principles, and that none is known for
+  the knot sphere's count. Its results are unchanged.
+
 ## 10 November 2026: a lesson on dimensions from rules
 
 - [INTUITIONS.md](INTUITIONS.md) gains lesson 4.6, "Dimensions from rules", at

@@ -1474,7 +1474,8 @@ So network holes come in two kinds:
      at each of its faces (2,700 splices); and line neighbourhoods come in four types over K_2 to K_8, none new beyond K_3, because the sphere
      is the triangular lattice away from six corners.
    - **Reading.** Which patterns hold the tension is a rule of the shape, not an accident of the small cases.
-   - **Next (awaiting a go-ahead).** A note on the learning line (backlog B95)
+   - **Next (taken by `LEARN-NOTE-20261110-001`).** A note on the learning line (backlog B95), written up as
+     [the learning line](../research/LEARN-NOTE-20261110-001/learning_line.md); its next step is other atoms (backlog B97)
      ([decision note](../research/ATOM-RULE-20261110-001/atom_rule.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).

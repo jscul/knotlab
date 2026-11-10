@@ -1,0 +1,171 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/nest_lib.py": "cbe932cec8323730e1ca7c77bd5340ea4648475f13cbacacabb55f370467fba4",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/COMPOSITE-FN-20261110-001/preregistration.md": "472b2db0c50918a4fb22fc90fd36ccd40008d13a57147987797678746966e460"
+   }
+  },
+  "1 lemma H, checked: every line of every sphere in the set has a state violating it alone": {
+   "pass": true,
+   "info": {
+    "spheres": [
+     {
+      "sphere": "K_2",
+      "lines": 16,
+      "three distinct faces per line": true,
+      "critical lines": 16
+     },
+     {
+      "sphere": "K_3",
+      "lines": 36,
+      "three distinct faces per line": true,
+      "critical lines": 36
+     },
+     {
+      "sphere": "K_4",
+      "lines": 64,
+      "three distinct faces per line": true,
+      "critical lines": 64
+     },
+     {
+      "sphere": "tube(2, 5, 1)",
+      "lines": 34,
+      "three distinct faces per line": true,
+      "critical lines": 34
+     },
+     {
+      "sphere": "tube(3, 7, 2)",
+      "lines": 72,
+      "three distinct faces per line": true,
+      "critical lines": 72
+     },
+     {
+      "sphere": "grown200",
+      "lines": 100,
+      "three distinct faces per line": true,
+      "critical lines": 100
+     },
+     {
+      "sphere": "grown104",
+      "lines": 52,
+      "three distinct faces per line": true,
+      "critical lines": 52
+     },
+     {
+      "sphere": "grown220",
+      "lines": 110,
+      "three distinct faces per line": true,
+      "critical lines": 110
+     },
+     {
+      "sphere": "cover(K_2; 2 corners)",
+      "lines": 32,
+      "three distinct faces per line": true,
+      "critical lines": 32
+     },
+     {
+      "sphere": "cover(K_2; corner+regular)",
+      "lines": 32,
+      "three distinct faces per line": true,
+      "critical lines": 32
+     },
+     {
+      "sphere": "cover(K_3; 2 corners)",
+      "lines": 72,
+      "three distinct faces per line": true,
+      "critical lines": 72
+     },
+     {
+      "sphere": "cover(K_3; corner+regular)",
+      "lines": 72,
+      "three distinct faces per line": true,
+      "critical lines": 72
+     },
+     {
+      "sphere": "K_5",
+      "lines": 100,
+      "three distinct faces per line": true,
+      "critical lines": 100
+     },
+     {
+      "sphere": "K_6",
+      "lines": 144,
+      "three distinct faces per line": true,
+      "critical lines": 144
+     },
+     {
+      "sphere": "K_7",
+      "lines": 196,
+      "three distinct faces per line": true,
+      "critical lines": 196
+     },
+     {
+      "sphere": "K_8",
+      "lines": 256,
+      "three distinct faces per line": true,
+      "critical lines": 256
+     }
+    ]
+   }
+  },
+  "2 the AND over three non-octahedral sphere hosts (exact, 16 classes each)": {
+   "pass": true,
+   "info": {
+    "hosts": [
+     {
+      "host": "tube(2, 5, 1)",
+      "leaf lines": [
+       1,
+       51
+      ],
+      "classes": 16,
+      "tally": {
+       "line, acting leaves 2, AND holds True": 1,
+       "transparent, acting leaves 1, AND holds True": 6,
+       "transparent, acting leaves 0, AND holds True": 9
+      },
+      "AND holds in every class": true
+     },
+     {
+      "host": "grown200",
+      "leaf lines": [
+       1,
+       198
+      ],
+      "classes": 16,
+      "tally": {
+       "line, acting leaves 2, AND holds True": 1,
+       "transparent, acting leaves 1, AND holds True": 6,
+       "transparent, acting leaves 0, AND holds True": 9
+      },
+      "AND holds in every class": true
+     },
+     {
+      "host": "cover(K_2; 2 corners)",
+      "leaf lines": [
+       3,
+       59
+      ],
+      "classes": 16,
+      "tally": {
+       "line, acting leaves 2, AND holds True": 1,
+       "transparent, acting leaves 1, AND holds True": 6,
+       "transparent, acting leaves 0, AND holds True": 9
+      },
+      "AND holds in every class": true
+     }
+    ]
+   }
+  },
+  "predictions": {
+   "lemma H checked on every sphere": true,
+   "AND on the three hosts": true
+  },
+  "seconds": 3.6
+ }
+}

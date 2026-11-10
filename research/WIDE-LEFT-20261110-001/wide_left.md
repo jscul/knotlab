@@ -90,7 +90,7 @@ Since the epic opened:
 | Broader exploration — G3 | Known alternatives | Cutting planes on the count (B82), the parity reduction from PIGEON (B101) |
 | Long-term goal — G3 Hardness at three places | Capability gained | A PPADS-complete principle is hard for dag-like Res(⊕); the knot sphere's count is not reached |
 
-**Corrections:** none. **Goals:** a G3 checkpoint (capability gained); B114 taken. **Assumptions:** A55 added (Braun's preprint is
+**Corrections:** none. **Goals:** a G3 checkpoint (capability gained); B114 taken; sub-goal B116 added. **Assumptions:** A55 added (Braun's preprint is
 correct).
 
 - **What the attempt leaves open.** External review; whether the exponent improves (n/l² as for bit PHP); the knot sphere's count.
@@ -108,5 +108,5 @@ correct).
 2. **Cutting planes.** As in `COUNT-SYSTEMS-20261110-001`.
 3. **The parity reduction.** As in `RES-XOR-COUNT-20261110-001`.
 
-**Recommendation.** Full pivot from the decoder route, with the note for review recommended first and recorded as a sub-goal under the
+**Recommendation.** Full pivot from the decoder route, with the note for review recommended first and recorded as sub-goal B116 under the
 owner's rule for untaken 3/3 directions, for the coordinator to confirm.

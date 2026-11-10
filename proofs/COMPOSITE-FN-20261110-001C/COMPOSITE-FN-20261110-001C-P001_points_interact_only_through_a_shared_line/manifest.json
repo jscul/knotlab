@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "COMPOSITE-FN-20261110-001C-P001",
+  "canonical_id": "COMPOSITE-FN-20261110-001C-P001",
+  "kind": "proof",
+  "ticket": "COMPOSITE-FN-20261110-001C",
+  "proof": "COMPOSITE-FN-20261110-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Points interact only through a shared line",
+  "status": "Proved",
+  "claim": "The frozen prediction failed: on fresh composites 1,199 of 1,200 pairs of disturbances at distance 2 or more combined, one did not (one point's repair flipped a point on a line through the other). Proved by hand instead (lemma L): disturbances whose flips and repairs touch disjoint lines and faces combine in every order and end at the floor.",
+  "dependencies": [
+    "COMPOSITE-FN-20261110-001A",
+    "MANY-POINTS-20261110-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A pair at distance 2 or more not independent (crossed: one pair)."
+  ],
+  "lineage": {
+    "home_scope": "COMPOSITE-FN-20261110-001",
+    "epic_path": [
+      "COMPOSITE-FN-20261110-001"
+    ],
+    "parents": [
+      "proofs/MANY-POINTS-20261110-001B/MANY-POINTS-20261110-001B-P001_two_points_at_once/check.py",
+      "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py",
+      "research/COMPOSITE-FN-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/MANY-POINTS-20261110-001B/MANY-POINTS-20261110-001B-P001_two_points_at_once/check.py": "981dea03b746cd5b04e6f5937e36fca27679d6a905fbaa3233a9d860ff718861",
+    "proofs/NEST-ATOMS-20261110-001A/NEST-ATOMS-20261110-001A-P001_composite_atoms/spaces_lib.py": "918551adb2319badbde750497fbdbbc04a8c18cb2e76c43b53f3a4ff2e7317e2",
+    "research/COMPOSITE-FN-20261110-001/preregistration.md": "472b2db0c50918a4fb22fc90fd36ccd40008d13a57147987797678746966e460"
+  },
+  "paths": {
+    "manifest": "proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/manifest.json",
+    "identity": "proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/identity.json",
+    "proof": "proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/proof.md",
+    "result": "proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/result.json",
+    "check": "proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line/check.py",
+    "directory": "proofs/COMPOSITE-FN-20261110-001C/COMPOSITE-FN-20261110-001C-P001_points_interact_only_through_a_shared_line"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "K_2 with two composites C(3, leaf); moves of A50 and A26 (A49).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 36d02b296).",
+    "status": "computed (check.py); lemma L proved by hand",
+    "novelty": "known-with-delta"
+  }
+}

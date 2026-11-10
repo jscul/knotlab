@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-FACE-20261110-001A-P001",
+  "canonical_id": "GROW-FACE-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-FACE-20261110-001A",
+  "proof": "GROW-FACE-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Accretion needs a named face",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-10, before any computation. Accretion laws over abstract names (a board grown from a seed, each step decided by the radius-r view of a site, values from a finite alphabet, every fair order counted). To be proved: (G1) a law none of whose actions closes a cycle grows only trees; (G2) a law naming the square and carrying a marker grows exactly the plane in its only order; (G3) the square-closing law of every radius, without a marker, has a fair order whose limit is not the plane. Checks frozen in the pre-registration.",
+  "dependencies": [
+    "PLACE-FLIP-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An accretion law that closes no cycle and has a limit other than a forest (against G1).",
+    "A fair order of the spiral law whose limit is not the square grid, or a turn at which its board is not the expected block (against G2).",
+    "A radius r for which every fair order of the square-closing law has the square grid as its limit (against G3)."
+  ],
+  "lineage": {
+    "home_scope": "GROW-FACE-20261110-001",
+    "epic_path": [
+      "GROW-FACE-20261110-001"
+    ],
+    "parents": [
+      "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/manifest.json": "6633ecdaca5d1a2132e7805b44c0ca1b86a22afb5fb883d200c28495f2bfc894"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face/manifest.json",
+    "identity": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face/identity.json",
+    "proof": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face/proof.md",
+    "result": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face/result.json",
+    "check": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face/check.py",
+    "directory": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face"
+  },
+  "remaining_obligations": [
+    "G1 to G3, or the record of which fails and why"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Accretion laws over a countably infinite set of names with no letters; growth from a seed, every fair order; the plane as the square grid. Growth order is not part of the world (GROWTH-LAW-20261107-001).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
+    "status": "pre-registered; the proof attempt to follow",
+    "novelty": "to be assessed"
+  }
+}

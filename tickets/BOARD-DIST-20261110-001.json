@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "B92"
+    ]
+  },
+  "id": "BOARD-DIST-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B92 (G1) at the coordinator's assignment on 2026-11-10, a challenge of assumption A51 (places and their neighbours are given before the rules): make the board part of the allowed states. Names are the reduced words in x, y and their inverses; an identity distinction e(u, v) for each pair of names says whether they are one place, under relation-free board axioms (transitivity, letter closure e(u, v) -> e(ug, vg), and constancy e(u, v) -> (s(u) <-> s(v))), with one uniform value law on each place and its four neighbours. Which boards do the rules allow or force? Ticket A proves what holds for every law that names no relation; ticket B runs a frozen exact census of the 1,024 Life-like one-bit laws and the atom.",
+  "ownership": {
+    "root": true,
+    "scope_id": "BOARD-DIST-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "Stop with every frozen prediction of ticket B decided and ticket A's theorems proved or their failure recorded: a clean obstruction (no law that names no relation forces an infinite board without allowing the tree, and no law of the census forces a two-dimensional board), or a law whose allowed boards are all two-dimensional, a plane chosen by the rules.",
+  "title": "The board as distinctions"
+}

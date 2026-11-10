@@ -1,0 +1,50 @@
+{
+ "schema_version": 1,
+ "experiment_id": "BOARD-DIST-20261110-001B-E001",
+ "ticket": "BOARD-DIST-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "When the board is made of distinctions (identity distinctions e(u, v) on the names of F2 = <x, y>, under transitivity, letter closure and constancy), which boards do the 1,024 Life-like one-bit laws and the atom allow, with and without frozen places and under identity of indiscernibles at radius 1, and is the square's identity distinction bound to the values?",
+ "definitions": {
+  "names and boards": "Names are the reduced words in x, y, X = x^-1, Y = y^-1. A board is a right congruence on the names (a subgroup H of F2); its places are the cosets Hu and its letters give the Schreier graph. A finite board is a transitive pair of permutations (sigma_x, sigma_y) up to simultaneous conjugation.",
+  "pattern": "The values at a place and its x-, X-, y- and Y-neighbours, p = c + 2x + 4X + 8y + 16Y. A one-bit law is the set of patterns it allows.",
+  "the family": "The 1,024 Life-like laws: a set S of pairs (c, k), c the place's value and k the number of its four neighbours with value 1; a pattern is allowed when its pair is in S (key L<m>, m = sum of 2^(5c + k) over S). Parity 0 is S = {c + k even} (m = 341), parity 1 is S = {c + k odd} (m = 682). The atom: x, y -> c, a place has value 1 whenever its x- and y-neighbours both have value 1.",
+  "allowed board (R0)": "Some colouring of the board's places gives every place an allowed pattern. With constancy, the allowed states on the board are exactly these colourings.",
+  "no frozen place (R0F)": "Allowed, and every place takes both values among the board's allowed colourings.",
+  "identity of indiscernibles at radius 1 (R1)": "Also: two names whose patterns (radius-1 views) agree are one place. An R1 board is a finite set V of distinct allowed patterns with permutations sigma_x, sigma_y of V such that sigma_g(t) has centre t's g-value and gives its g^-1-neighbour t's centre (ticket A, target 7). Plane-like: every star has five distinct places. Abelian: sigma_x sigma_y = sigma_y sigma_x everywhere.",
+  "the listed boards": "The tree; the six lines Sch(ker phi), phi(x) = a, phi(y) = b, (a, b) in (1,0), (0,1), (1,1), (1,-1), (1,2), (2,1); the plane (Z^2); every finite board with at most 6 places (1, 3, 7, 26, 97, 624 up to isomorphism, OEIS A057005). Growth: the tree exponential, the plane quadratic, a line linear, a finite board bounded (by definition, not measured).",
+  "deciding the boards": "Tree: the greatest fixpoint of half-tree pattern sets, exact. Lines: bi-infinite paths of the window graph, exact. Finite boards: every colouring. The plane: allowed if some torus Z^2/Lambda of index at most 16 is allowed (all 220 lattices in Hermite normal form); not allowed if some k x k box, k <= 8, has no colouring with allowed patterns at its interior cells (SAT); otherwise undecided. Plane without a frozen place: certified by torus colourings using both values; frozen when a box with its central cell fixed to one value is unsatisfiable.",
+  "covering among listed boards": "Finite board B covers finite board A when a letter-preserving map of places exists; the tree covers every board; the plane covers every line and every abelian finite board; a line covers each abelian finite board on which x^(-b) y^a acts trivially.",
+  "the square's relations (B3)": "For c = xyXY and each pair of the path names 1, x, xy, xyX, c: the exact projection of the allowed R0 states onto (e(1, c), s(v), s(w)). For e = 0 the values are those of tree solutions along the path (every such state refines to the tree); for e = 1 those of Sch(<c>), the finest board identifying 1 and c (a 4-cycle of places with half-trees attached). Each relation is read by knotlab check with loops s(v), s(w) and contact e(1, c). The pair (1, c) is the constancy clause itself; a knot at another pair would bind the board to the values beyond constancy.",
+  "the truncated CNF (B4)": "trunc_check.py, written without board_lib: names B_L, variables s(u) and e(u, v), the board axioms within the ball and the law at every name with its four neighbours in the ball. Fixed boards at L = 6 (the tree, the plane, line(1,0), line(1,1), the collapse, Sch(<c>)): allowed, and the pairs (s(1), s(c)). Free board at L = 4: the projection onto (e(1, c), s(1), s(c)); with R1, whether the tree and whether any state is allowed."
+ },
+ "public_inputs": {
+  "code": "board_lib.py (sha256 72a52aafee769792d1c0eb4ca5c7a2e1d4d446876994fee6b20875f660132458), run.py (sha256 06b4bb56104a15cec1eeca5474a55032601de95ac1bfab70bf538693a73c1237), trunc_check.py (sha256 ea40bacd1fa9c261e4cc3188ed59a03ab2153d57d2929f10adfbe715a9d08dfa, the independent second code), ioi2_stress.py (sha256 7f58444371341c25108ad7e4e99aec0e5033075c65b53f5e9278da1ccc0f2f6d), beside this file; pysat Minisat22 from the workspace .venv.",
+  "run": "run.py (B1 to B3, controls first), trunc_check.py --fixed-L 6 --free-L 4 (B4); outputs under artifacts/BOARD-DIST-20261110-001B/BOARD-DIST-20261110-001B-E001_which_boards_one_bit_laws_allow/.",
+  "stress, one size past": "S1: run.py --nmax 8 (finite boards with 7 and 8 places added; P1 to P3 over the extended list). S2: ioi2_stress.py, identity of indiscernibles at radius 2 for parity 0, parity 1 and the atom on a frozen list of boards (the 28 tori Z_m x Z_n, 3 <= m <= n <= 9; every plane-like non-abelian board with 7 places; 30 random connected non-abelian boards at each of 8, 12, 16, 24 and 32 places, seed 92). S3: trunc_check.py --fixed-L 7 --free-L 5, registered as a long-running check before launch if it is expected to exceed ten minutes."
+ },
+ "forbidden_inputs": [
+  "Changing the family, the listed boards, the bounds (6 places, index 16, boxes to 8, L = 6 and 4), the definitions, predictions or decision rules after seeing results",
+  "Replacing a failed prediction's test by a weaker one"
+ ],
+ "primary_observable": "For each law: the listed boards it allows (R0, R0F), its R1 boards (existence, largest, non-abelian, plane-like abelian), and the square's relations with their K1-K3 verdicts; the number of violations of P1 to P5.",
+ "cheapest_meaningful_control": "The full law (every pattern allowed: every listed board allowed with no frozen place, an R1 board with all 32 views, the square's (1, c) relation the constancy gate) and the empty law (nothing allowed), run first; the census stops if a control fails. Smoke-tested before freezing: the finite-board counts 1, 3, 7, 26, 97, 624 and the two controls (disclosed); knotlab check on the constancy gate {e -> a = b} reads it as a knot (disclosed). No law of the family was run.",
+ "predictions": {
+  "P1 (refinement, target 2)": "For every law and every covering pair of listed boards, if the covered board is allowed (R0), so is the cover; any allowed board makes the tree allowed. Predicted violations: 0.",
+  "P2 (the collapse, target 6)": "For every law, the one-place board is allowed iff every listed board is allowed. Predicted violations: 0.",
+  "P3 (refinement without frozen places)": "P1 with R0F in place of R0. Predicted violations: 0.",
+  "P4 (the swap, target 7)": "No law has a plane-like abelian R1 board without a non-abelian R1 board. Predicted violations: 0. Every R1 certificate re-verified independently of the solver.",
+  "P5 (the truncation agrees)": "For parity 0, parity 1 and the atom: every board that run.py allows is allowed in the truncation at L = 6, and the truncation's pairs (s(1), s(c)) contain run.py's; the truncated projection at L = 4 contains B3's relation for (1, c); with R1 at L = 4 the tree is not allowed and some state is."
+ },
+ "decision_rules": {
+  "a theorem fails": "A violation of P1, P2, P3 or P4, or a direction of P5 in which run.py allows what the truncation forbids, is first checked as a code error; if it stands, the corresponding target of ticket A is false and is recorded as such (no closure claims it).",
+  "a truncation artifact": "The truncation allowing more than run.py (boundary freedom) is reported, not a failure.",
+  "the obstruction holds": "P1 to P4 with no violation and ticket A's target 3 proved: no law that names no relation forces an infinite board without the tree, and at radius 1 none forces a two-dimensional board. Then A51 is recorded as confirmed for planes within laws that name no relation, in the free-group naming.",
+  "a plane chosen by the rules": "A law whose R1 boards exist and are all abelian and plane-like (a violation of P4) is a finite two-dimensional board chosen by the rules; A51 is then put under challenge with that law as the evidence.",
+  "the board bound to the values": "A knot at a path pair other than (1, c) binds the board to the values beyond constancy; it is reported with its law, its relation and the source label of target 5 (no identity distinction is flipped by a finite change).",
+  "undecided planes": "Laws whose plane stays undecided under the frozen bounds are reported and left out of P1 to P3's plane conditions."
+ },
+ "stop_rule": "All of B1 to B4 run once on the frozen family, with S1 to S3 as the stress test; no rerun with changed bounds.",
+ "runtime": "Expected minutes; any check expected to exceed ten minutes is registered in docs/LONG_RUNNING.md before launch and run in the background under systemd-run MemoryMax=16G with no swap."
+}

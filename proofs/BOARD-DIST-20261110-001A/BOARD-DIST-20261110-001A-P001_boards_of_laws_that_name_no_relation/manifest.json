@@ -1,0 +1,90 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "BOARD-DIST-20261110-001A-P001",
+  "canonical_id": "BOARD-DIST-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "BOARD-DIST-20261110-001A",
+  "proof": "BOARD-DIST-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Boards of laws that name no relation",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-10, before the proof attempt and before ticket B's census. Names are the reduced words of F2 = <x, y>; e(u, v) says names u and v are one place, under transitivity, letter closure e(u, v) -> e(ug, vg) and constancy e(u, v) -> s(u) = s(v); a law is finitely many clause templates over a finite alphabet, and it names no relation when every identity literal relates the same offset of two base names. To be proved: (1) the board states are the subgroups of F2 (Schreier graphs), on B_L the restrictions of right congruences; (2) with no positive identity literal beyond the board axioms, refining an allowed board keeps it allowed, so the tree is allowed whenever any state is; (3) if a law names no relation and allows an infinite board, it allows the tree; (4) every finite board is forced by some law that names no relation; (5) two different boards differ in infinitely many identity distinctions and every place off the tree holds infinitely many names, so off the tree no distinction is flipped by a finite change; (6) for value laws the collapse is allowed iff a constant colouring is iff every board is; (7) identity of indiscernibles at radius r makes boards finite, at radius 1 with one bit boards are the balanced view sets and a plane-like abelian board always comes with a non-abelian one; (8) the commutator rule with an aperiodic Wang-tile law forces exactly the plane.",
+  "dependencies": [],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A law of ticket B's census with an allowed board whose listed cover is not allowed (target 2).",
+    "A law of the census allowing the collapse without allowing every listed board (target 6).",
+    "A law of the census with a plane-like abelian board under identity of indiscernibles at radius 1 and no non-abelian one (target 7).",
+    "A law that names no relation, with an allowed infinite board and no allowed state on the tree (target 3)."
+  ],
+  "lineage": {
+    "home_scope": "BOARD-DIST-20261110-001",
+    "epic_path": [
+      "BOARD-DIST-20261110-001"
+    ],
+    "parents": []
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/manifest.json",
+    "identity": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/identity.json",
+    "proof": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/proof.md",
+    "result": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/result.json",
+    "check": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/check.py",
+    "directory": "proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation"
+  },
+  "remaining_obligations": [
+    "Targets 1 to 8, or the record of which fails and why"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Boards made of identity distinctions on the names of the free group on two letters; finitary laws over finite alphabets. Identity distinctions are distinctions of the law, never contact: equality is not a binding (A51).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's assignment on 2026-11-10 (backlog B92).",
+    "status": "pre-registered; the proof attempt to follow",
+    "novelty": "to be assessed"
+  }
+}

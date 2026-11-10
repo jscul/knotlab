@@ -954,8 +954,12 @@ owner proposed the reverse, on 7 November 2026: "a number line/Cartesian plane
 where the dimensions themselves expand out in measures of logic", each axis
 "built out of an infinite structure of logic (emergent space)". So the axes X
 and Y would follow rules, as Life's cells do, and the rules would be an
-essentially infinite CNF. This lesson says what of that idea is proved, what is
-computed, and what is still only an idea.
+essentially infinite CNF. It is the intuition of lesson 1.7 turned on space
+itself: lines and functions are shapes, and shapes have rules. A function's
+graph already obeys one ("A single input (x-value) cannot have two different
+outputs (y-values)", in the owner's words of 8 November), so the axes it is
+drawn on could obey rules too. This lesson says what of that idea is proved,
+what is computed, and what is still only an idea.
 
 **Infinite CNFs.** A CNF may have infinitely many variables and clauses, as
 long as each clause names finitely many variables. A law is **uniform** when

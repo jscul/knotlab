@@ -192,3 +192,22 @@ finer reading of naming (A61's challenge) is taken up.
    naming it needs is not yet fixed.
 
 **Recommendation.** Full pivot: the line has answered its question and is parked.
+
+## Final report as sent
+
+Sent to the owner's thread on 2026-11-10 after closure (commits e8fe22c31, 84237f77d, 246fa2fb7):
+
+> **Every accretion law is closed and published, and the board line is parked.** The verdict is again that the plane needs a named
+> face. The referee pointed out that for growth this holds by definition, so the real content is what growth does once a face is
+> named.
+> - **No cycle closed, no plane.** A growth rule that closes no cycle grows only trees. As frozen, closing a cycle counts as naming a
+>   face, so this could not have come out any other way; logged as a correction to the pre-registration.
+> - **Growth gives the plane itself.** A radius-2 rule that closes squares, with coordinates mod 3 as its only values, grows the square
+>   spiral in its only order. It needs no marker, because the head is the only place whose view looks like a head's. A static law
+>   with the same values also allows the plane's cylinders and tori.
+> - **Growing everywhere at once fails.** For every radius and every priority, a fair order can split the rule that lets any place
+>   fill a missing neighbour.
+>
+> The position table and the direction table are those above. **Corrections:** one, Narrowing. **Goals:** a G1 checkpoint
+> (obstruction learned); WEAK-APER-20261110-001#2 taken. **Assumptions:** A61 added (Assumed); A51's history records the line's
+> verdict. **Basket (spacing):** "A face that emerges" (2/3, 1/3) and B16, edge labels (2/3, 1/3), both unstarted.

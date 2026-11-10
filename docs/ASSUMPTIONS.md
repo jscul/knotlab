@@ -1461,7 +1461,7 @@ evidence: results and their status come from the records each entry links.
   of them (theorem D there). The undecided reading is what a gate does: an acting atom forces its third side exactly when the held sides
   agree.
 - **Rests on it.** That epic's maps and its learning from examples
-  ([its pre-registration](../research/IN-OUT-20261110-001/preregistration.md)).
+  ([inputs and outputs](../research/IN-OUT-20261110-001/in_out.md)).
 - **Challenge.** Read the output differently: as the dissonance near it, as a decided value with more inputs (three held inputs allow
   majority and parity under theorem D), or as a probability over floor states; or let the world hold inputs as signs rather than points.
 - **History.**

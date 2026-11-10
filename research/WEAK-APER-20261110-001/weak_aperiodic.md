@@ -159,3 +159,35 @@ Two, logged in `docs/CORRECTIONS.md`, both **Not a block**.
 
 **Recommendation.** Research directions, selected #1: the Leibniz line is complete, and the naming is what this line has not yet
 questioned. #1 and #2 tie at the top and are independent.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 17:51 UTC and copied here verbatim.
+
+I've closed and published weakly aperiodic laws under Leibniz's rule. The dichotomy now holds for every law: if a law has infinitely many solutions on the tree of names, one of them repeats nowhere. So under Leibniz's rule the tree is always one of its boards and the plane is never forced. The Leibniz line is complete.
+
+**What I proved.** Every infinite shift of finite type on the free group has a point with trivial stabilizer. A law's freedom either sits in infinitely many disjoint branches, where the choices can be made independently, or it runs toward a few ends in each solution. Taken over all solutions, those ends make up every end of the tree, including ends that no group element fixes. An independent referee read the proof before publication and found no errors. One ingredient, the finite-board criterion, turned out to be known and is now credited.
+
+**The census.** 96 of the 32,768 three-value level laws have solutions but no finite board. After the census I proved these are exactly the laws that drift: every place has more neighbours one level up than down, or every place has more down than up. My frozen certificates left 10 laws undecided, so prediction C1 failed. The mirrored horofunction settles all 10. Every verdict has now been re-checked in exact arithmetic.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: weakly aperiodic laws | **Status:** Successful | W and P proved for every law with finite windows; in the family, drift is the only thing that rules out a finite board; C1 failed and was settled by proof |
+| Local direction: the identity rule in the limit | Complete | Leibniz's rule never forces the plane |
+| Broader exploration: question 9 | Known alternatives | Abstract names, accretion laws, the boards beside the tree |
+| Long-term goal: G1 | Obstruction learned | When places are named by words in two letters, the tree is always a board |
+
+**Next step:** Research directions. My pick is #1. It ties with #2, and the two are independent.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Abstract names (A54) | 2/3 | 2/3 | As recorded | Selected |
+| 2 | Every accretion law | 2/3 | 2/3 | As recorded | Alternative |
+| 3 | The boards beside the tree | 1/3 | 2/3 | Prove every infinite law also has a cycle-with-trees board, or find a law whose only other boards are planes | Alternative |
+| 4 | Theorem W as a short note for outside review | 1/3 | 3/3 | Write it up after one more literature search | Alternative |
+
+**Corrections:** two, both Not a block ([history](https://github.com/jscul/knotlab/blob/main/HISTORY.md)). The census contract said HiGHS solved the balance program "exactly in rationals". HiGHS uses floating point, and every verdict has since been re-checked exactly. Separately, the view-board count in BOARD-DIST's Theorem 7 is a known criterion (Piantadosi 2008) and is now credited.
+**Goals:** G1 checkpoint (obstruction learned); "W in general" answered. **Assumptions:** none added; the A51 and A54 histories are updated.
+**Basket:** spacing's WEAK-APER-20261110-001#1 (abstract names), #2 (every accretion law) and B16 (edge labels). Taken: none yet; #1 is selected and waiting for a go-ahead.
+
+Commits: 794eec810 (epic), 9bb9a90c4 (shared docs), cc237504a and e3ceee237 (tracking), d436148f1 (history).

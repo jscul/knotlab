@@ -47,3 +47,31 @@ None.
 - **#2** reads the memory as a register that can be rewritten.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B86 taken; B87 and B88 added. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:35 UTC).
+
+**B86 done: the stored address steers later learning, and the exception is explained by an exact rule.**
+
+- **The rule (exact: SAT over every state, all 1,280 sign classes of 11 spaces with three or four atoms).** If every atom acts as its line, no state satisfies every line. Otherwise every acting atom holds a unit of leftover, and any extra units are free to sit anywhere. Each atom's role is set by its own handle, independently of the others. B85's exception was a case with fewer acting atoms than units, so "the acting atoms are the address" is a rule exactly when the counts match.
+- **Four atoms (computed).** Every triple of four atoms was written as the holders on every K_3 line type (12 of 12). That makes 36 of 36 written cases in all.
+- **A fresh tension (computed).** After one random flip on the sphere, a learner settled back into the written address in 240 of 240 runs, and after two or three flips in 463 of 480. What was learned before decides how a new tension resolves.
+
+All on small cases (K_3 and K_4, up to four atoms). A proof for every sphere is the next step.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: does the address steer (B86) | **Status:** Successful | exact rule, four atoms, memory survives tension |
+| Local direction: a learned memory in atoms | Continue | exact on small cases; proof open |
+| Broader exploration: learning program | Known alternatives | a proof; sequences of addresses |
+| Long-term goal: G15 | Capability gained | memory written, kept, and steering resolution |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A proof of the atom rule (B87) | 2/3 — Substantial | 2/3 — Testable | role set by own handle; acting atom forces a unit → proof, or a counterexample | Selected · awaiting go-ahead |
+| 2 | Several addresses in sequence (B88) | 2/3 — Substantial | 3/3 — Ready | write, disturb, rewrite → each held, or interference | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B86 taken; B87, B88 added. **Assumptions:** none new.

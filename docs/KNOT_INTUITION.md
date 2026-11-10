@@ -1392,8 +1392,18 @@ So network holes come in two kinds:
    - **Verdict.** A26 Overturned as a limit on what learning reaches, by the rule frozen before the run; its fixed-state results stand as
      such, and the moving-state reading is A50.
    - **Reading.** Named patterns are traps at constant tension: a point can move inside one but not out of it.
-   - **Next (started).** A learner that accepts a temporary rise (backlog B72): does a bounded rise let the point leave the trap
+   - **Next (taken by `RISE-ESCAPE-20261110-001`, below).** A learner that accepts a temporary rise (backlog B72): does a bounded rise let the point leave the trap
      ([decision note](../research/MOVING-STATE-20261110-001/moving_state.md)).
+
+   **2026-11-10: a temporary rise** (`RISE-ESCAPE-20261110-001`).
+   - **The question.** Can a unit settled in an atom leave it if the dissonance may rise for a while?
+   - **Not by moving the state (computed).** With the law fixed and the state allowed one unit above the floor for as long as it likes,
+     the unit never reaches the other atom or the upper level: exhaustively on five of K_2's components (up to 195,264 states each), and
+     to a cap of 200,000 states elsewhere. With the state fixed there is no learning step at the floor at all (proved).
+   - **Reading (unchecked).** Which atom holds the leftover may be fixed by what was learned, the law's class, so that only learning, at a
+     rise where violated lines appear, could move it.
+   - **Next (awaiting a go-ahead).** Does the law decide which atom holds the unit (backlog B79)
+     ([decision note](../research/RISE-ESCAPE-20261110-001/rise_escape.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

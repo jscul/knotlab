@@ -102,3 +102,32 @@ computed), and that every class is reached directly from every least state (comp
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B6 taken; sub-goal B60 added (learning that grows a handle), B54
 carried; backlog B61 (selected, awaiting go-ahead) and B62 added. **Assumptions:** A46 added (an over-agreeing face and an even face are
 dissonance); history lines for A20, A21 (the boundary off the sphere) and A26 (theorem 3.2 does not rest on it).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (00:08 UTC).
+
+**Learning in handles is done and published, and it's the result the learning line was missing: learning can do something no change of behaviour can, and it only does it around a handle.**
+
+On a sphere the forced contradiction can be moved by learning but never removed. On a torus whose law is in a class no state can satisfy (the Fano plane's torus, and the thin tori), the contradiction is a pair of opposite charges: one violated line and one face where everything over-agrees. Learning removes the pair completely and leaves no local mark, but only by carrying half of it once around the handle. Every way of removing it winds, whatever the state does, so the only thing learning keeps is which way it went around (proved; 96,732 walks checked on 59 tori up to 40 points). A local rule that only heads for the over-agreeing face resolved all 9,608 starts. I had pre-registered that it would sometimes fail; it never did, because the winding is already written in the state. The old sphere result held one size past.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: learning in handles (B6) | **Status:** Successful | learning removes class-forced dissonance, only by winding |
+| Local direction: steering by re-signing | Continue | the learner now does what no state change can |
+| Broader exploration: learning program | Known alternatives | native target, chosen resolution, growth, layers |
+| Long-term goal: G15 a point in a learned knot space | Capability gained | learning carries the class, two bits per handle |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A native target for learning (B61) | 2/3 — Substantial | 3/3 — Ready | rerun the local rule with signals the law and state supply → one beats random, or none does | Selected · awaiting go-ahead |
+| 2 | Choosing the resolution (B62) | 2/3 — Substantial | 2/3 — Testable | local rule given a target class on thin tori → all reached, or the long class needs more | Alternative · deferred |
+| 3 | Learning that grows a handle (sub-goal B60) | 3/3 — Barrier | 1/3 — Stated | glue one handle where a sphere's dissonance sits → it resolves, or placement matters | Alternative · deferred |
+| 4 | A point moving between layers (sub-goal B54) | 3/3 — Barrier | 1/3 — Stated | smallest two-level network with one dissonance → it crosses levels, or not | Alternative · deferred |
+| 5 | Many points at once (B3) | 1/3 — Incremental | 2/3 — Testable | two pairs on one torus, every order → they resolve independently | Alternative · deferred |
+
+#1 removes the last outside input: today the experimenter tells the rule where the over-agreeing face is. #3 is the most striking reading. If a sphere's dissonance can't be resolved but a torus's can, a learner stuck with forced dissonance would have to grow a handle. Both 3/3 rows are recorded as sub-goals under G15.
+
+**Corrections:** none. **Goals:** G15 checkpoint (capability gained); B6 taken; sub-goal B60 added, B54 re-rated; B61 and B62 added. **Assumptions:** A46 added (over-agreeing and even faces count as dissonance); history lines on A20, A21, A26.

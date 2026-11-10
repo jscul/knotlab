@@ -95,3 +95,27 @@ Unresolved: a proof of theorem 2 for every knot sphere, and other atoms or other
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); sub-goal B60 taken; B54 carried; backlog B68 (grow where learning is
 stuck) added. **Assumptions:** A48 added (the growth move brings a Fano atom with uniform signs and completes the law with no even face);
 history line for A26.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (00:44 UTC).
+
+**B60 done: growing a handle plus learning removes what the sphere forces.** I spliced a Fano atom (the Fano plane less a point) into the knot sphere at a line. That makes a torus (proved). Growth alone doesn't remove the contradiction: the new piece acts exactly as the line it replaced (computed on 540 grown tori). Learning then removes it, always by going around the new handle (proved). Grown at the dissonance, it takes 3 sign changes on every sphere size; grown farther away it costs more. My guess about the other classes was wrong: there the atom becomes transparent.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: growing a handle (B60) | **Status:** Successful | growth plus learning removes the sphere's dissonance |
+| Local direction: steering by re-signing | Continue | learning now pairs with growth |
+| Broader exploration: learning program | Known alternatives | chosen resolution, native growth trigger, layers |
+| Long-term goal: G15 | Capability gained | the network grows where the point is stuck |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Choosing the resolution (B62) | 2/3 — Substantial | 2/3 — Testable | native rule given a target class → all reached, or not | Selected · started |
+| 2 | Grow where learning is stuck (B68) | 2/3 — Substantial | 2/3 — Testable | grow only when sight finds nothing → once, at the dissonance, or not | Alternative · deferred |
+| 3 | Prove the atom's behaviour for every sphere | 1/3 — Incremental | 3/3 — Ready | parity at the merged faces → proof, or a counterexample | Alternative · deferred |
+| 4 | Layers (B54) | 3/3 — Barrier | 1/3 — Stated | two-level network → crosses, or not | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B60 taken; B68 added. **Assumptions:** A48 added (the grown handle is a Fano atom with the uniform law).

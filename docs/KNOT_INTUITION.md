@@ -1352,8 +1352,21 @@ So network holes come in two kinds:
      least 20 points; sight of radius 3 in 63%; the outside distance in 96 to 99%. The pre-registered default was wrong.
    - **Reading.** For the owner's picture: once there is a handle there is more than one resolution, a learner can pick one if it carries
      the choice, and the far one costs the handle's length.
-   - **Next (started).** Grow where learning is stuck (backlog B68). Layers (sub-goal B54) became more concrete under the reading that an
+   - **Next (taken by `GROW-STUCK-20261110-001`, below).** Grow where learning is stuck (backlog B68). Layers (sub-goal B54) became more concrete under the reading that an
      atom is a pattern standing for one line ([decision note](../research/CHOOSE-RES-20261110-001/choose_res.md)).
+
+   **2026-11-10: grow where learning is stuck** (`GROW-STUCK-20261110-001`).
+   - **A floor on dissonance (proved).** Weighed as the count weighs it, violated lines plus over-agreement plus half the even faces is
+     at least half the absolute Euler characteristic, in every state of every law: 1 on a sphere, 0 on a torus, g − 1 at genus g. The
+     torus is the only shape that forces no dissonance.
+   - **One handle is exactly enough (proved).** Each Fano atom lowers χ by 2, so from a sphere one growth reaches the floor 0 and every
+     further one adds a unit no learning removes.
+   - **The stuck learner (computed).** A learner that steps only when some sequence of at most r steps lowers the dissonance, and grows an
+     atom otherwise, is stuck at once on a sphere and grows at the dissonance. Seeing 3 steps ahead it grows once and resolves in 3 sign
+     changes; seeing 2 or fewer it cannot see what its new handle offers and keeps growing, never resolving (K_2 to K_6).
+   - **Reading.** Growing where you are stuck works only if you look far enough ahead to use what you grew; growing at every impasse piles
+     up permanent dissonance.
+   - **Next (started).** Layers through atoms (sub-goal B54) ([decision note](../research/GROW-STUCK-20261110-001/grow_stuck.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

@@ -103,6 +103,7 @@ evidence: results and their status come from the records each entry links.
 | [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
 | [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
 | [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Assumed |
+| [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 
 ## Entries
 
@@ -1193,3 +1194,18 @@ evidence: results and their status come from the records each entry links.
   replaced line in one class and is transparent in the others.
 - **History.**
   - 2026-11-10 · Added by `GROW-HANDLE-20261110-001`.
+
+### A49 · Dissonance is weighed as the count weighs it
+
+**Assumed** · 2026-11-10 · measure
+
+- **Statement.** The total dissonance of a law and a state is W = violated lines + E + |D| / 2: a violated line counts 1, a face counts
+  ⌊agree / 2⌋, and an even face counts 1/2, the weights of the count's identity.
+- **Why.** `GROW-STUCK-20261110-001` took it by default for its learner, which steps only when W falls. With these weights the count gives
+  the floor W ≥ |χ| / 2.
+- **Rests on it.** That epic's learner and its reading that one grown handle is exactly enough ([grow where learning is stuck](../research/GROW-STUCK-20261110-001/grow_stuck.md)). The floor itself holds for any
+  weights at least these.
+- **Challenge.** Other weights (every dissonance counting 1, or over-agreement counted by agree − 1) change when a learner sees progress and
+  so when it grows. The cheapest test reruns GROW-r with unit weights and reads whether it still grows once at the dissonance.
+- **History.**
+  - 2026-11-10 · Added by `GROW-STUCK-20261110-001`.

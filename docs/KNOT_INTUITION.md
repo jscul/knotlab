@@ -1545,7 +1545,19 @@ So network holes come in two kinds:
      held 9 of 9 addresses into two open thin handles.
    - **Reading.** The Fano plane is the one handle a uniform rule can grow closed; any other handle is memory in waiting, which learning
      closes.
-   - **Next.** Layers through a naming knot ([decision note](../research/NATIVE-ATOM-20261110-001/native_atom.md)).
+   - **Next (taken by `NAME-LAYERS-20261110-001`, below).** Layers through a naming knot
+     ([decision note](../research/NATIVE-ATOM-20261110-001/native_atom.md)).
+
+   **2026-11-10: two ways for one level to speak to the next** (`NAME-LAYERS-20261110-001`).
+   - **The question.** A parity name (a variable named by the parity of two below) and a three-edge cut (a group sealed off by three
+     sides): one kind of layer, or two? And can a point cross levels through each?
+   - **The answer (by hand).** Two. Through a cut a contradiction below becomes a constraint above, so a point crosses levels. Through a
+     name it cannot: the level below keeps its own contradiction, and so does the level above.
+   - **Computed.** Names carry something cuts cannot: correlations of the states below that change with the law below, down to a single
+     excluded pattern, a clause.
+   - **Reading.** A cut tells the level above whether everything inside holds; a name tells it how the parts line up. A network with
+     both may compute more than conjunctions, which is the next phase's first question (sub-goal B118).
+   - **Next.** The next phase of the learning line awaits the owner ([decision note](../research/NAME-LAYERS-20261110-001/name_layers.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

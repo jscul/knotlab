@@ -5384,6 +5384,24 @@ So network holes come in two kinds:
    - **Next (proposed for the morning).** Weakly aperiodic laws under Leibniz's rule
      ([decision note](../research/RIGID-WORLDS-20261110-001/rigid_worlds.md)).
 
+   **2026-11-10: weakly aperiodic laws under Leibniz's rule** (`WEAK-APER-20261110-001`).
+   - **The question.** Under Leibniz's rule an infinite board brings the tree for every one-bit Life-like law. Only a law with
+     solutions but no finite board could break this. Does such a law still have a solution that repeats nowhere?
+   - **Every infinite law does (proved).** Every law with infinitely many solutions on the tree of names, over any finite alphabet
+     and with rules of any finite reach, has a solution that no element of the group fixes.
+     - Free choices in infinitely many disjoint branches can be made independently, so that nothing repeats.
+     - Otherwise the freedom runs toward a few ends in each solution. Over all solutions those ends are every end of the tree,
+       including ends no element fixes.
+   - **So the identity rule in the limit never forces the plane (proved).** The tree is a board exactly when a law has infinitely
+     many solutions.
+   - **No finite board means a drift (proved after the census).** A three-value level law has solutions but no finite board exactly
+     when every place climbs on balance, with more neighbours one level up than down, or every place descends. On a finite board
+     the steps up and down cancel.
+   - **The census (computed, exact, frozen).** Of the 32,768 level laws on three values, 96 have no finite board: 48 drift up and
+     48 down. The frozen certificates left 10 laws undecided, mirror images of certified ones, and the mirrored horofunction settles
+     them.
+   - **Next (selected).** Abstract names: places named without letters (A54) ([decision note](../research/WEAK-APER-20261110-001/weak_aperiodic.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

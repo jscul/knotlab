@@ -1064,10 +1064,18 @@ Guillon 2023).
 
 **Even in the limit.** Take the identity rule to its limit: names that look
 alike at every radius, however far, are one place. That rule is no longer a
-clause of finitely many variables. For every one-bit Life-like law it still
-leaves the tree open whenever an infinite board is allowed, so it never forces
-the plane, though the plane is allowed for most of them
-([LEIBNIZ-BOARDS-20261110-001](research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)).
+clause of finitely many variables. It still leaves the tree open for every law
+with infinitely many solutions, whatever its finite alphabet of values and
+however far, finitely, its rules reach. Such a law always has a solution that
+repeats nowhere, so no two names are one place and the board is the tree. The
+rule never forces the plane, though the plane is allowed for most one-bit laws
+([LEIBNIZ-BOARDS-20261110-001](research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md),
+[WEAK-APER-20261110-001](research/WEAK-APER-20261110-001/weak_aperiodic.md)).
+Some laws have no finite board at all. Among the laws on three values that
+count a place's neighbours one level down, level and one level up, they are
+exactly the laws that drift: every place has more neighbours above it than
+below, or every place more below. On a finite board every step up is a step
+down seen from the other end, so a drift cannot close up.
 
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the

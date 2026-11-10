@@ -111,6 +111,7 @@ evidence: results and their status come from the records each entry links.
 | [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Assumed |
 | [A55](#a55--brauns-bit-php-preprint-is-correct) | Braun's bit-PHP preprint is correct | premise | Assumed |
 | [A56](#a56--time-in-a-growing-plane-is-counted-at-the-planes-own-scale) | Time in a growing plane is counted at the plane's own scale | reading | Assumed |
+| [A57](#a57--an-address-asks-for-a-bit-per-atom-each-atom-given-by-its-region) | An address asks for a bit per atom, each atom given by its region | reading | Assumed |
 
 ## Entries
 
@@ -1416,3 +1417,20 @@ evidence: results and their status come from the records each entry links.
     as the challenge asked; in it the round trip breaks the triangle inequality in 28 schedules by at most 2 lags, against 240 schedules
     and up to 78 lags in plain lags ([expansion as a reading](../research/EXPAND-READ-20261110-001/expand_read.md)). Kept as Assumed.
   - 2026-11-10 · Added by `EXPAND-READ-20261110-001`.
+
+### A57 · An address asks for a bit per atom, each atom given by its region
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** An address asked of the layered memory is a bit for every atom, acting or not, and each atom is given to the learner by
+  its region: its lines and every face they touch. The learner knows where each atom is and what is asked of it, and nothing about its
+  class or role.
+- **Why.** `NATIVE-WRITE-20261110-001` froze it before any run. With only the atoms asked to act named, a learner cannot tell the forced
+  dissonance of an unnamed atom that acts from a free unit in the host, so it cannot check that the other atoms are clear; a memory word
+  asks for its zeros as well as its ones.
+- **Rests on it.** That epic's native learner, whose probe checks each atom asked 0 for a moment its region is free of dissonance
+  ([its pre-registration](../research/NATIVE-WRITE-20261110-001/preregistration.md)).
+- **Challenge.** Name only the atoms asked 1, as backlog B119 first phrased it ("a bias at the named atoms only"), and ask whether a
+  learner can still write exactly, for instance by testing whether dissonance outside the named atoms ever moves.
+- **History.**
+  - 2026-11-10 · Added by `NATIVE-WRITE-20261110-001`.

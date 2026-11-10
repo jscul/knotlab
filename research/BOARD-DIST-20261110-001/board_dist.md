@@ -105,6 +105,11 @@ change by finitely many distinctions.
 - **Classification.** New as far as found for conclusions 3, 6 and 8 (bounded searches on 2026-11-10, the second at the coordinator's
   request, not a priority claim), within the known framework of graph subshifts. Known-with-delta for conclusion 5: finitely
   presented groups are graph subshifts, and aperiodic tilings exclude the periodic quotients. Folklore risk moderate for 1, 2 and 4.
+- **Correction (2026-11-10, found by `WEAK-APER-20261110-001`'s referee).** Part 2 of ticket A's Theorem 7 (view boards exist iff,
+  for each letter and pair of values, the class counts match) is the known periodic-point criterion for tree shifts: Piantadosi
+  (2008, Theorem 3.6), and in this pattern form the condition of Chazottes, Gambaudo and Gautero, proved equivalent by Hellouin de
+  Menibus and Maturana Cornejo (arXiv 1904.03907). The proof rated Theorem 7's folklore risk low to moderate; part 2 is known.
+  Every result stands (`docs/CORRECTIONS.md`, Not a block).
 
 ## Workspace assumptions
 

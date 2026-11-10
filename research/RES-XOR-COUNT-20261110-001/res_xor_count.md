@@ -116,3 +116,24 @@ checkpoint (obstruction learned); B93 taken; two sub-goals added. **Assumptions:
 
 **Recommendation.** Research directions: B82 is taken next (coordinator, 2026-11-10); directions 2 and 3 are recorded as sub-goals under
 the owner's rule for untaken 3/3 directions.
+
+## Final report as sent
+
+B93 is closed: obstructed. No published Res(⊕) bound beyond tree-like reaches the sphere's count, and every route I froze in advance stops at its first step. The degree route is closed for good. I proved that Braun's general criterion can certify at most exp(d²/6v) proof lines when the formula has polynomial-calculus degree d. The count has degree O(√n), so the criterion gives only a constant. Carrying Braun's bit-PHP bound over would need a reduction from PIGEON in which each sphere point is one parity. Ordinary decision trees provably can't do that, and no parity version is known. I'm moving to cutting planes (B82), as directed.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: Res(⊕) beyond tree-like on the count | Obstructed | Every frozen route stops at its first step |
+| Local direction: Res(⊕) on the count | Research directions | Only a parity reduction from PIGEON, or a non-algebraic method, remains |
+| Broader exploration: G3 | Known alternatives | Cutting planes (B82), started now |
+| Long-term goal: G3 | Obstruction learned | The count's algebraic hardness stops at degree √n |
+
+**Next step:** cutting planes (B82), taken now.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | Cutting planes on the count (B82) | 3/3 | 1/3 | As recorded (taken) |
+| 2 | Bit LeftPigeon as Braun's second family (sub-goal B100) | 3/3 | 2/3 | Separated spaces on small binary LeftPigeon by linear algebra → density that grows, or none |
+| 3 | A parity reduction from PIGEON to SINK (sub-goal B101) | 3/3 | 1/3 | Small-instance search, or an F2 invariant that rules it out |
+
+**Corrections:** one (Not a block). The B84 note and B93's entry said no dag-like Res(⊕) bound was known for any formula, but we audited Braun's bit-PHP bound ourselves in October. Fixed in 249df4d87. **Goals:** a G3 checkpoint; B93 taken; sub-goals B100 and B101 added. **Assumptions:** none.

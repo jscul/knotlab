@@ -139,3 +139,35 @@ knots; A60 added (nativeness under abstract names counted in place); A53's histo
 
 **Recommendation.** Research directions, selected #1, the only item in the line's basket that could change its verdict; the
 coordinator may prefer to redirect the line, and nothing else in this basket would be lost by it.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 19:31 UTC and copied here verbatim.
+
+I've closed and published nativeness up to renaming. None of the 90 board–value knots depends on renamings. Excluding renamings alone wasn't enough: a place can be transplanted from one region to another by a finite rewiring that isn't a renaming. So the frozen count changes one kind of distinction at a time and calls that a flip "in place". Under that count every knot is native somewhere, which confirms A59 for these knots.
+
+**Where that holds.** It holds in a world made of finite pieces, here infinitely many copies of one small board, because a whole piece can be recoloured at finite cost. 84 knots worked on the frozen boards, and I found boards by hand for the other 6. On the free board, a tree world, renamings play no part. There, least fixed points show 26 knots native in place and 64 not. In 58 of those laws, no value can change by any finite change at all. Neighbour distinctions are native in place everywhere, through the switch. The referee found the lemmas sound and proposed the fixed point that settled the last six laws.
+
+**For the foundation.** I made no proposal. The count used here is recorded as assumption A60, a reading of the source-aware condition. Whether the canonical reading should say so is your call.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: nativeness up to renaming | **Status:** Successful | Every knot is native in place in worlds of finite pieces; on the free board 26 are and 64 aren't. C1 and C2 failed as frozen and were settled by hand |
+| Local direction: boards made of distinctions | Obstruction confirmed | Nativeness is settled; forcing the plane is untouched |
+| Broader exploration: question 9 | Known alternatives | Growth is the one route this line hasn't tried |
+| Long-term goal: G1 | Obstruction learned | Static laws, with or without letters, force the plane only by naming a face |
+
+**Would anything left change the verdict?** Only growth. Every static route tried needs a named face. Leibniz's rule with abstract names could at most force one connected world, and edge labels or a growing radius would just restate the verdict.
+
+**Next step:** Research directions. My pick is #1, unless you redirect the line.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Every accretion law | 2/3 | 2/3 | As recorded | Selected |
+| 2 | Leibniz's rule with abstract names | 1/3 (lowered) | 2/3 | As recorded | Alternative |
+
+**Corrections:** one, Not a block: BARE-NAMES's census contract said no law of its family was run before freezing, but its control was one of them ([history](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** G1 checkpoint (obstruction learned). **Assumptions:** A59 confirmed for these knots; A60 added; A53's history records the answer to its challenge.
+**Basket:** spacing's WEAK-APER-20261110-001#2 (every accretion law), B16 (edge labels) and RIGID-WORLDS-20261110-001#4 (growing radius). Taken: none yet; #1 is selected and waiting for a go-ahead.
+
+Commits: 75f8e2b79 (pre-registration), 395d97283 (epic), f4bdc127f (shared docs and correction), 8d9b3fcb2 (assumptions).

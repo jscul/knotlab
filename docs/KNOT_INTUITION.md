@@ -1494,8 +1494,21 @@ So network holes come in two kinds:
      the thin tori of even index, so twenty atoms up to 40 points remember, the smallest with four points; every other atom is transparent
      in every class. Thin-torus atoms wrote and held addresses as the Fano atom does.
    - **Reading.** A handle remembers because its torus has a sign class that no state can satisfy: the bit lives in the class.
-   - **Next.** Atoms within atoms (backlog B104): a sphere carrying two atoms, less a point, as one atom
-     ([decision note](../research/OTHER-ATOMS-20261110-001/other_atoms.md)).
+   - **Next (taken by `NEST-ATOMS-20261110-001`, below).** Atoms within atoms (backlog B104): a sphere carrying two atoms, less a
+     point, as one atom ([decision note](../research/OTHER-ATOMS-20261110-001/other_atoms.md)).
+
+   **2026-11-10: atoms within atoms** (`NEST-ATOMS-20261110-001`).
+   - **The question.** Backlog B104: is a knot sphere that already carries atoms, less a point, an atom of the next level?
+   - **The theorem (by hand).** Yes. If the sphere has a state violating any one chosen line and no other, and its atoms each act in
+     exactly one class and are free, the composite acts as its line exactly where every atom inside acts, whichever point is removed, and
+     it is again an atom of the same kind, so composites nest to any depth. A composite of genus g holds g − 1 units, g where it acts.
+   - **Computed.** The AND held at 274 removed points of seven composites, exactly on 576 classes, and 11 of 12 two-level addresses
+     written by learning held after a disturbance, every outer address with them.
+   - **Reading.** For the owner's layers: a group of patterns cut off by three sides reads from outside as one pattern, standing for its
+     line only when every pattern inside does. Each level sees the one below as an AND; acting only adds constraints, so no host makes a
+     level read anything but a monotone function of the bits below.
+   - **Next.** Many points at once (backlog B3), awaiting the owner's go-ahead; in line, whether any host gives an OR (backlog B109)
+     ([decision note](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

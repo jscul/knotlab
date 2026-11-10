@@ -18,6 +18,9 @@ Several points of dissonance in the layered memory move independently unless the
   the address held 93% to 100% of the time, against 100% after one.
 - **Post hoc:** every pair at distance 2 or more was independent (1,104 of 1,104), and 154 of the 176 pairs sharing a line interacted.
   Points interact only through a shared line, on these samples.
+  *Corrected on 2026-11-10 (`COMPOSITE-FN-20261110-001C`).* As a general statement this is false: on fresh composites one of 1,200
+  distant pairs interacted, because the repair of one point flipped a point on a line through the other. Two disturbances combine in
+  every order when the lines and faces touched by each flip and its repair are disjoint (proved there); `docs/CORRECTIONS.md`.
 - **Writing, re-tested (computed).** With 96 addresses: thin leaves held 48 of 48. With Fano leaves the result is not a pass: it landed
   between the marks twice (5 of 6 in `NEST-ATOMS-20261110-001`, 43 of 48 here), all misses inexact searches. Every exact write, 91 of
   91, held after the disturbance.

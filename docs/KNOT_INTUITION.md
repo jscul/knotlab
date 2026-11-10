@@ -1520,6 +1520,8 @@ So network holes come in two kinds:
      pairs sharing a line did.
    - **Reading.** For the owner's "parallelized" picture: points that do not share a line can be updated in any order, and the memory
      keeps what it was told; points on one line meet.
+   - **Corrected (`COMPOSITE-FN-20261110-001C`).** Not every such pair: one of 1,200 fresh distant pairs met, because one point's repair
+     reached a line through the other. Points combine in any order when what each one and its repair touch is disjoint (proved).
    - **Next.** Which functions a composite computes (backlog B109)
      ([decision note](../research/MANY-POINTS-20261110-001/many_points.md)).
 

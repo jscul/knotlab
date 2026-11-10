@@ -43,9 +43,10 @@ it is even). The orders from four on are not proved.
   the linearized polynomial L, one term per power of two, appears in the input at the bottom coefficients and in the output at the top
   ones. The continued fraction of L(z)/z, 1/(1 + z/(1 + ⋯)), is what makes the leading matrix invertible.
 - **A characteristic-zero pattern in characteristic two.** The blocks 2k − 1, 2k − 5, … are those of the symmetric square of one Jordan
-  block of size k in characteristic 0 (Sym²V_(k−1) = V_(2k−2) ⊕ V_(2k−6) ⊕ ⋯ for sl₂). Over GF(2) neither the symmetric nor the exterior
-  square of one Jordan block gives them in general: the exterior square agrees only at k = 1, 2 and 4 and the symmetric square only at
-  k = 1, and at k = 3 and from 5 to 15 both differ, their blocks capped at a power of two (computed, check 8).
+  block of size k in characteristic 0 (Sym²V_(k−1) = V_(2k−2) ⊕ V_(2k−6) ⊕ ⋯ for sl₂). As `CONE-COLLAPSE-20261109-001` found, over GF(2)
+  neither the symmetric nor the exterior square of one Jordan block gives them in general (the exterior square agrees only at k ≤ 2 and
+  k = 4); check 8 recomputes this to k = 15, where the blocks of both are capped at a power of two. Here the characteristic-2 mechanism
+  shows: the leading matrix is the Hankel matrix of the continued fraction of L(z)/z. The single particle behind the square is B59.
 - **Halving.** The leading matrix at k = 2c splits into those at c and c − 1 over the even and odd powers of Y, and the chains match:
   at k = 2c the chain of G·Y^(2i) has length 2(2c − 1 − 4i) + 1 and that of G·Y^(2i+1) has 2(2(c − 1) − 1 − 4i) + 1, twice a chain at
   index c or c − 1, plus one. The eigenvectors with even and odd powers of Y may behave like those at half the index.

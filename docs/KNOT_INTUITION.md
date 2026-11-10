@@ -2397,14 +2397,27 @@ So network holes come in two kinds:
    - **The question.** Does each eigenvector G·Y^j head a Jordan chain of length 2k − 1 − 4j, so that the multiplicity k(k + 1)/2 follows
      from the degree of G alone?
    - **Yes, wherever tested (computed).** At every eigenvalue for sides 8 to 64, and at nine eigenvalues of side 128 up to the eigenvalue 1
-     with k = 15 (the side-128 check still running when this was written).
+     with k = 15 (the side-128 check, which finished after the epic closed, passed).
    - **Its first order (proved).** The family that carries the spectrum is self-adjoint at every parameter. On the eigenvectors, its first
      derivative is a Hankel matrix of the top coefficients of G's norm G(k)G(k + 1), whose degree n/2 − k makes all but one corner vanish.
      So there is exactly one Jordan block of size 1 when k is odd and none when k is even.
    - **Reading.** An eigenvalue's whole Jordan structure is read off one polynomial's degree; the collapse now rests on that degree (B74) and
      on the chains at every order. No lag cutoff was used.
-   - **Next (selected, pending the coordinator).** The chain lemma at every order
+   - **Next (selected, taken by `CHAIN-ORDERS-20261110-001`).** The chain lemma at every order
      ([decision note](../research/JORDAN-CHAINS-20261110-001/jordan_chains.md)).
+
+   **2026-11-10: the chain lemma at every order** (`CHAIN-ORDERS-20261110-001`).
+   - **The question.** Does the chain lemma hold at every order, and why?
+   - **One leading form (computed).** Near each eigenvalue the family is a single moment matrix. On the eigenvectors G·Y^j its reduction
+     starts, entry by entry, at u^(2k−1−2(i+j)), u = (w − a)/a, with coefficient 1 exactly when k − i − j is a power of two: the Hankel
+     matrix of u⁻¹Y^k L(u²/Y), L(x) = x + x² + x⁴ + ⋯. This holds at every eigenvalue for sides 8 to 256.
+   - **It is the whole lemma (proved).** That leading matrix has determinant 1 over GF(2) for every k, by halving k, so the form gives
+     each eigenvalue's blocks 2k − 1, 2k − 5, …. The form itself is proved for its first three orders: no block of size 2, one of size 1
+     when k is odd and one of size 3 when it is even; for k ≤ 2 that is everything.
+   - **Reading.** The same linearized polynomial L drives the family and shapes its answer, one term per power of two; its continued
+     fraction is what makes a characteristic-0 pattern appear over GF(2). No lag cutoff was used.
+   - **Next (selected, pending the coordinator).** The leading form at every order, or halving the index
+     ([decision note](../research/CHAIN-ORDERS-20261110-001/chain_orders.md)).
 
    **2026-11-09: rescue on maps of higher genus** (`RESCUE-GENUS-20261109-001`).
    - **The question.** Tori read distance plainly when a short loop gives every ring a single fastest way. 141 of 706 regular maps of

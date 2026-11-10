@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**285 current results** and 5 superseded ones, from 249 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**286 current results** and 5 superseded ones, from 249 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 7 results
+- [Other results](#other-results): 8 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 249 epics with their closures
 
@@ -963,6 +963,9 @@ Results not yet placed in a line of work.
 - **2026-11-10 · Each acting Fano atom holds a unit of the leftover dissonance, and units beyond them are free** (`ADDRESS-STEER-20261110-001-D001`).
   On every one of 1,280 sign classes of 11 spaces with three or four Fano atoms, decided by SAT over every state: no state satisfies every line when every atom acts as its line, and otherwise every such state holds a unit in each acting atom, with any further units free. Which atoms act is set by each atom's own handle.
   [proof P001](proofs/ADDRESS-STEER-20261110-001A/ADDRESS-STEER-20261110-001A-P001_the_rule_behind_the_exception/proof.md), [epic closure](proofs/ADDRESS-STEER-20261110-001Z/ADDRESS-STEER-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · On every octahedral knot sphere, each separated Fano atom acts as its line in exactly one class of its handle and then holds a unit** (`ATOM-RULE-20261110-001-D001`).
+  For every octahedral knot sphere with separated Fano atoms, each atom acts as its replaced line in exactly one of its handle's four classes; if all act no state satisfies every line, and otherwise every acting atom holds a unit of the floor dissonance. Proved computer-assisted: two lemmas by hand, a finite local check and a classification of line neighbourhoods.
+  [proof P001](proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/proof.md), [epic closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · A handle grown at a knot sphere's line lets learning remove the dissonance the sphere forces** (`GROW-HANDLE-20261110-001-D001`).
   Splicing a Fano atom at a line of a knot sphere makes a torus whose law extends with no even face, and if the grown law is its only unsatisfiable class, as computed on every grown torus from K_2 to K_5, learning at the dissonance with the state fixed then removes it. Every such removal changes a sign in the grown handle, so growth and learning together remove what neither removes alone.
   [proof P001](proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/proof.md), [epic closure](proofs/GROW-HANDLE-20261110-001Z/GROW-HANDLE-20261110-001Z-P001_epic_closure/proof.md)
@@ -1217,7 +1220,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Several addresses in sequence (`ADDRESS-SEQ-20261110-001`) | [closure](proofs/ADDRESS-SEQ-20261110-001Z/ADDRESS-SEQ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ADDRESS-SEQ-20261110-001/) |
 | 2026-11-10 | Does the stored address steer later learning (`ADDRESS-STEER-20261110-001`) | [closure](proofs/ADDRESS-STEER-20261110-001Z/ADDRESS-STEER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ADDRESS-STEER-20261110-001/) |
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
-| 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | — | [folder](research/ATOM-RULE-20261110-001/) |
+| 2026-11-10 | A proof of the atom rule (`ATOM-RULE-20261110-001`) | [closure](proofs/ATOM-RULE-20261110-001Z/ATOM-RULE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-RULE-20261110-001/) |
 | 2026-11-10 | The chain lemma at every order (`CHAIN-ORDERS-20261110-001`) | [closure](proofs/CHAIN-ORDERS-20261110-001Z/CHAIN-ORDERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-ORDERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |

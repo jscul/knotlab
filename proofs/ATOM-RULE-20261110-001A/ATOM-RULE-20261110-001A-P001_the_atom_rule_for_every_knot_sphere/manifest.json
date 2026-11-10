@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ATOM-RULE-20261110-001A-P001",
+  "canonical_id": "ATOM-RULE-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "ATOM-RULE-20261110-001A",
+  "proof": "ATOM-RULE-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The atom rule for every knot sphere",
+  "status": "Proved",
+  "claim": "For every octahedral knot sphere K_k (k >= 2) with separated Fano atoms: each atom acts as its line in exactly one of the four classes of its own handle; all atoms acting leaves no state satisfying every line; otherwise every acting atom holds a unit in its region in every state satisfying every line. Proved computer-assisted: a homology decomposition and a locality lemma by hand, a finite local check on 2,700 splices (every line of K_5-K_7, orbits of K_2-K_4) and a classification of line neighbourhoods (four types over K_2-K_8, none new beyond K_3).",
+  "dependencies": [
+    "ADDRESS-STEER-20261110-001A",
+    "GROW-HANDLE-20261110-001A",
+    "COUNT-SURFACES-20261107-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A gadget type whose acting class is locally satisfiable, or a line neighbourhood type not among those checked."
+  ],
+  "lineage": {
+    "home_scope": "ATOM-RULE-20261110-001",
+    "epic_path": [
+      "ATOM-RULE-20261110-001"
+    ],
+    "parents": [
+      "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py",
+      "research/ATOM-RULE-20261110-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/grow_lib.py": "02a0734d3cd619298b379c025d550f9acab401b6c1042e0b196ea6a4623d4abc",
+    "research/ATOM-RULE-20261110-001/preregistration.md": "e9b572ea112b41d6fe8e20fcc26602559d66ce4412fe277bcc97d37e1a82cba5"
+  },
+  "paths": {
+    "manifest": "proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/manifest.json",
+    "identity": "proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/identity.json",
+    "proof": "proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/proof.md",
+    "result": "proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/result.json",
+    "check": "proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/check.py",
+    "directory": "proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Octahedral knot spheres K_k, k >= 2, with separated Fano atoms (A48); R-c not proved.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered.",
+    "status": "proved, computer-assisted: lemmas by hand, finite local check and classification computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

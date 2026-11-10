@@ -1256,7 +1256,6 @@ evidence: results and their status come from the records each entry links.
   The cheapest test reruns that epic with improving flips only.
 - **History.**
   - 2026-11-10 · Added by `MOVING-STATE-20261110-001`.
-
   - 2026-11-10 · Used both ways by `NATIVE-WRITE-20261110-001`: its learner tests its memory with this walk (a state flip only when W
     does not rise), and writes with the alternative, state flips at a temperature; status unchanged.
 

@@ -5445,7 +5445,7 @@ So network holes come in two kinds:
      distinctions. In 90 of the 1,024 one-bit laws one neighbour distinction knots with its two endpoint values (computed, exact,
      frozen).
    - **Renaming is a finite change too.** Exchanging two names flips every distinction at them, so the source-aware condition, as
-     read now, excludes nothing (A58).
+     read now, excludes nothing (A59).
    - **Next (selected).** Nativeness up to renaming ([decision note](../research/BARE-NAMES-20261110-001/bare_names.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that

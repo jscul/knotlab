@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: abstract names cited its new assumption under the wrong number
+
+- `BARE-NAMES-20261110-001`'s proof and closure ledger call the reading
+  "renamings count as finite changes under abstract names" A58. That number
+  had already been taken by another entry; the reading is A59, and the
+  epic's decision note says so
+  ([decision note](research/BARE-NAMES-20261110-001/bare_names.md)).
+- Unchanged: every result of the epic.
+
 ## 10 November 2026: the level-law census was not solved exactly as run, and a board count was known
 
 - The frozen contract of `WEAK-APER-20261110-001B` said its balance program,

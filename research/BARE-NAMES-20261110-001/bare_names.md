@@ -26,8 +26,8 @@ force, how they behave under Ramsey's theorem, covers and compactness, and wheth
 | 3 | **The unfolding theorem for count laws.** A count law allows the cover of every board, so it allows a tree whenever it allows a board with a cycle. A finitary clause that reads a walk of distinct names can exclude the tree: distinct names tell a closed walk from an open one, which plays the part of a named relation. | proved; classical | A (T3) |
 | 4 | **One named face still gives the plane, componentwise.** A law that names the square, with coordinates mod 3 and an aperiodic tile set, has exactly the disjoint unions of tiled planes as its boards. | proved | A (T4) |
 | 5 | **Without letters the board is not frozen.** In a count law, two edges with the same pair of values can exchange partners, a change of four distinctions. When the edge lies on a cycle of a finite component, the board changes up to isomorphism; on copies of a tree the switch only exchanges names. With letters, two boards differ in infinitely many distinctions. | proved | A (T5) |
-| 6 | **The board knots with the values in 90 one-bit laws.** Of the 1,024 one-bit count laws of degree four, 31 have no state. In 90 of the other 993, one neighbour distinction and its two endpoint values form a knot (K1–K3, a clause of width three): 29 never put two 0s side by side, 29 never two 1s, 31 never a 0 beside a 1, and 1 only a 0 beside a 1. Source label: each passes the source-aware condition at a state of infinitely many copies of a board, by T5's moves (through renamings, A58). | computed, exact, frozen | B |
-| 7 | **Under abstract names the source-aware condition excludes nothing.** A knot is native only when each of its variables is flipped by a finite change, and renaming finitely many names is one, flipping every distinction, for any uniform law of finite degree with two values. So the condition carries no information about the board. A count that ignored renamings would keep the switch's flips on cycles of finite components. | proved; a reading (A58) | A (T5) |
+| 6 | **The board knots with the values in 90 one-bit laws.** Of the 1,024 one-bit count laws of degree four, 31 have no state. In 90 of the other 993, one neighbour distinction and its two endpoint values form a knot (K1–K3, a clause of width three): 29 never put two 0s side by side, 29 never two 1s, 31 never a 0 beside a 1, and 1 only a 0 beside a 1. Source label: each passes the source-aware condition at a state of infinitely many copies of a board, by T5's moves (through renamings, A59). | computed, exact, frozen | B |
+| 7 | **Under abstract names the source-aware condition excludes nothing.** A knot is native only when each of its variables is flipped by a finite change, and renaming finitely many names is one, flipping every distinction, for any uniform law of finite degree with two values. So the condition carries no information about the board. A count that ignored renamings would keep the switch's flips on cycles of finite components. | proved; a reading (A59) | A (T5) |
 
 ## Answer
 
@@ -48,7 +48,7 @@ nothing, and whether renamings should count is now an open reading.
   changes flip them. Shape still does not follow, unless the law names a face, and then only one plane per component.
 - **Renaming is a gauge.** Two states that differ by a renaming are the same world with different names. A reading of nativeness
   that ignores renamings would keep the switch's flips on cycles of finite components, lose those on trees, and have to find value
-  flips by other moves. It is recorded as assumption A58.
+  flips by other moves. It is recorded as assumption A59.
 - **Nothing here is a length.**
 
 ## Lag cutoffs and census-only claims
@@ -107,7 +107,7 @@ An independent referee, a fresh Claude agent given only ticket A's proof, read i
   on the naming.
 - **Bearing on A53.** Without letters, places are names, and the board changes by finite switches. A53's challenge, counting changes
   per place, gives way to a sharper question: whether renamings count.
-- **Added.** A58, renamings count as finite changes under abstract names (a reading, Assumed).
+- **Added.** A59, renamings count as finite changes under abstract names (a reading, Assumed).
 
 ## Ratio
 
@@ -117,7 +117,10 @@ Since the epic opened:
 
 ## Corrections
 
-None to published claims. `BOARD-DIST-20261110-001`'s frozen boards were proved within A54's scope, which the register now records.
+One, logged in `docs/CORRECTIONS.md` (**Not a block**). Ticket A's proof and the closure ledger, both closed, cite the reading
+"renamings count as finite changes" as A58. A58 had been taken by another thread first; the reading is A59, as this note, the knot
+intuition entry and the goals doc now say. `BOARD-DIST-20261110-001`'s frozen boards were proved within A54's scope, which the
+register now records; that is not a correction.
 
 ## Next steps
 
@@ -129,7 +132,7 @@ None to published claims. `BOARD-DIST-20261110-001`'s frozen boards were proved 
 | Long-term goal — G1 Space from a law | Obstruction learned | Space still needs a named face, whatever the naming, and one connected world needs the naming |
 
 **Corrections:** none. **Goals:** a G1 checkpoint (obstruction learned); WEAK-APER-20261110-001#1 taken.
-**Assumptions:** A54 Confirmed for the obstruction, its "Rests on it" split (the frozen boards rest on the naming); A58 added
+**Assumptions:** A54 Confirmed for the obstruction, its "Rests on it" split (the frozen boards rest on the naming); A59 added
 (renamings count as finite changes); A51's and A53's histories record the bearing.
 
 - **What the attempt leaves open.** Whether the board's knots with the values stay native when renamings do not count, and what
@@ -139,7 +142,7 @@ None to published claims. `BOARD-DIST-20261110-001`'s frozen boards were proved 
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Nativeness up to renaming (A58) | 2/3 — Substantial | 3/3 — Ready | For the 90 knotted laws, search two copies of a finite board for value flips by local moves that are not renamings (value changes with switches) → each law's knot native or not under the stricter count | Selected · not started |
+| 1 | Nativeness up to renaming (A59) | 2/3 — Substantial | 3/3 — Ready | For the 90 knotted laws, search two copies of a finite board for value flips by local moves that are not renamings (value changes with switches) → each law's knot native or not under the stricter count | Selected · not started |
 | 2 | Leibniz's rule with abstract names | 2/3 — Substantial | 2/3 — Testable | Under "places with isomorphic views are one place", isomorphic components merge; ask whether a law of finitary and existence clauses then forces one connected board → such a law, or an obstruction | Alternative · not started |
 | 3 | Every accretion law (WEAK-APER-20261110-001#2) | 2/3 — Substantial | 2/3 — Testable | As recorded there | Alternative · not started |
 

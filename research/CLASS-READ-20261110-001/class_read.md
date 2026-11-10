@@ -5,6 +5,12 @@ Epic `CLASS-READ-20261110-001` (backlog B122, G15; program learning), 2026-11-10
 
 ## The answer
 
+*Corrected on 2026-11-10 (`NOT-INSIDE-20261110-001`).* The readings below were computed with one fixed signing per class, and they read
+that frame, not the class: under another signing of σ each σ-reading network has a satisfying state, and no reading that depends only on
+the classes can tell non-acting classes apart (theorem M there). A class-level reading sees only whether a leaf acts. See
+`docs/CORRECTIONS.md`.
+
+
 Reading the full class does not complete the basis. The parity reading found after `GATES-20261110-001` holds up on new networks, but it is
 the only one: names tell apart just one non-acting class, and only upward.
 

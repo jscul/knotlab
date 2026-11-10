@@ -1567,6 +1567,7 @@ So network holes come in two kinds:
    - **Computed.** 43,091 small networks read "all of these" and "any of these", single bits and constants, but never "not this".
    - **Reading.** The layered memory reasons monotonically so far. After the run, names were seen to read a finer signal, the parity of
      how a pattern's tension is wound, which is the next place to look for a negation.
+   - **Corrected (`NOT-INSIDE-20261110-001`).** That finer signal reads the frame (the particular signing), not the winding.
    - **Next (taken by `CLASS-READ-20261110-001`, below).** Reading the class, not the bit (backlog B122)
      ([decision note](../research/GATES-20261110-001/gates.md)).
 
@@ -1576,6 +1577,8 @@ So network holes come in two kinds:
      contradiction or its states as tightly as possible; anything. Two patterns together give no more.
    - **Reading.** The winding is stored memory, but the network reads it only against two landmarks the law fixes, and only upward, so
      "not this" is still missing.
+   - **Corrected (`NOT-INSIDE-20261110-001`).** Those readings read the frame, the particular signing each winding was given, not the
+     winding: a reading of the windings alone sees only which patterns hold a contradiction.
    - **Next.** Negation inside a cut leaf (backlog B123) ([decision note](../research/CLASS-READ-20261110-001/class_read.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).

@@ -6,6 +6,11 @@ do that." Pre-registered in [preregistration.md](preregistration.md), frozen in 
 
 ## The answer
 
+*Corrected on 2026-11-10 (`NOT-INSIDE-20261110-001`).* The post hoc parity reading below reads the frame (one fixed signing per class),
+not the class; by theorem M there, no reading of the classes alone negates a stored bit or tells non-acting classes apart. See
+`docs/CORRECTIONS.md`.
+
+
 Not in the families tried: cuts and names together read AND and OR of the stored acting bits, and single bits and constants, but never
 a negation, so they do not compute every function of those bits here.
 

@@ -1567,7 +1567,16 @@ So network holes come in two kinds:
    - **Computed.** 43,091 small networks read "all of these" and "any of these", single bits and constants, but never "not this".
    - **Reading.** The layered memory reasons monotonically so far. After the run, names were seen to read a finer signal, the parity of
      how a pattern's tension is wound, which is the next place to look for a negation.
-   - **Next.** Reading the class, not the bit (backlog B122) ([decision note](../research/GATES-20261110-001/gates.md)).
+   - **Next (taken by `CLASS-READ-20261110-001`, below).** Reading the class, not the bit (backlog B122)
+     ([decision note](../research/GATES-20261110-001/gates.md)).
+
+   **2026-11-10: the class is read upward only** (`CLASS-READ-20261110-001`).
+   - **The question.** Backlog B122: a stored pattern can be wound four ways. Read by names, do all four ways give the missing negation?
+   - **Computed.** On new networks, names read only three things about a pattern's winding: it holds the contradiction; it holds the
+     contradiction or its states as tightly as possible; anything. Two patterns together give no more.
+   - **Reading.** The winding is stored memory, but the network reads it only against two landmarks the law fixes, and only upward, so
+     "not this" is still missing.
+   - **Next.** Negation inside a cut leaf (backlog B123) ([decision note](../research/CLASS-READ-20261110-001/class_read.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

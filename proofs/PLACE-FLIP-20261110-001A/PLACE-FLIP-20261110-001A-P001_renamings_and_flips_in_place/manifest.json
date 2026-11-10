@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PLACE-FLIP-20261110-001A-P001",
+  "canonical_id": "PLACE-FLIP-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "PLACE-FLIP-20261110-001A",
+  "proof": "PLACE-FLIP-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Renamings, transplants and flips in place",
+  "status": "Partial",
+  "claim": "Pre-registered 2026-11-10, before any run. Over abstract names, to be proved: (L1) in a world of finite components a finite change is a renaming exactly when it keeps the multiset of isomorphism types of the components it touches, so a change of values on one copy of (B, c) is a renaming exactly when the new colouring is an automorphic image of c; (L2) in a world of infinite trees no change of values alone is a renaming; (L3) the switch flips a neighbour distinction in place when the edge lies on a cycle of a finite component or in a tree world; (L4) transplants: with values and neighbour distinctions changing together, a place can be moved by a finite rewiring that is not a renaming; (L5) cascades: in the laws that never put a 0 beside a 1, and in law 48, no finite change of values alone flips a value in a tree world. Each is proved, refuted, or left with its gap stated.",
+  "dependencies": [
+    "BARE-NAMES-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A finite change that keeps the type multiset of the components it touches and is not a renaming, or the converse (against L1).",
+    "A nontrivial renaming of an infinite tree world that changes no neighbour distinction (against L2).",
+    "A switch on a cycle of a finite component, or in a tree world, that is a renaming or not minimal (against L3).",
+    "A finite change of values alone that flips a value in a tree world of a cascading law (against L5)."
+  ],
+  "lineage": {
+    "home_scope": "PLACE-FLIP-20261110-001",
+    "epic_path": [
+      "PLACE-FLIP-20261110-001"
+    ],
+    "parents": [
+      "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/BARE-NAMES-20261110-001A/BARE-NAMES-20261110-001A-P001_boards_of_abstract_names/manifest.json": "92e582d4894b06ae942eb45f8a5e00d4f85d14334f046cf9c15c30dd9977c325"
+  },
+  "paths": {
+    "manifest": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/manifest.json",
+    "identity": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/identity.json",
+    "proof": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/proof.md",
+    "result": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/result.json",
+    "check": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place/check.py",
+    "directory": "proofs/PLACE-FLIP-20261110-001A/PLACE-FLIP-20261110-001A-P001_renamings_and_flips_in_place"
+  },
+  "remaining_obligations": [
+    "L1 to L5, or the record of which fails and why"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Boards made of neighbour distinctions on a countably infinite set of names with no letters; count laws; the source-aware reading counted up to renaming as defined in the pre-registration. No change to the canonical knot test.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
+    "status": "pre-registered; the proof attempt to follow",
+    "novelty": "to be assessed"
+  }
+}

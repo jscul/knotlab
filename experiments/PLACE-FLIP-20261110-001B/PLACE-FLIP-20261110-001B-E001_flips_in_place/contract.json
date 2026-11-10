@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PLACE-FLIP-20261110-001B-E001",
+ "ticket": "PLACE-FLIP-20261110-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "For the 90 one-bit count laws whose board knots with the values (BARE-NAMES-20261110-001B), is the knot native in place, that is, with renamings not counted: in a world of finitely large components, and in a tree world?",
+ "definitions": {
+  "renaming": "A change from x to x o pi for a permutation pi of the names that moves finitely many of them.",
+  "a value flipped in place": "s(u) is flipped in place at x by a finite change of values alone (every neighbour distinction kept) that is allowed, flips s(u), is not a renaming, and is minimal: no allowed change of a proper subset of its values flips s(u).",
+  "a neighbour distinction flipped in place": "The same, with neighbour distinctions alone changed and every value kept; the switch of an edge with the same edge in another copy is the move tried.",
+  "native in place": "For some edge {u, v} of the world's first board, n(u, v), s(u) and s(v) are all flipped in place.",
+  "the dust world": "Infinitely many disjoint copies of an allowed coloured board (B, c), c using both values, for the first (B, c) in frozen order (at most 60 colourings per board) that makes the knot native in place. For the laws whose boards never put a 0 beside a 1: copies of (B0, all 0) and (B1, all 1), B0 the first frozen board allowing all 0 and B1 the first frozen board not isomorphic to B0 allowing all 1, with the edge in B0. A change of values on one copy is a renaming exactly when the new colouring is an automorphic image of c (ticket A, L1); automorphisms by networkx's matcher.",
+  "the tree world": "The universal cover of an allowed coloured board (B, c) using both values, for the first 12 such (B, c) in frozen order; for the laws with no mixed edge, the covers of (B0, all 0) and (B1, all 1). Changes of values are searched within distance 2 of u (all 2^16 changes of the 16 other places there, u flipped), every place within distance 3 checked; such a change is never a renaming (ticket A, L2), and an allowed one contains a minimal one. The neighbour distinction in a tree world is flipped in place by the switch (ticket A, L3), not computed.",
+  "frozen boards": "BARE-NAMES-20261110-001B's 34 tori and circulant graphs; networkx random_regular_graph(4, n, seed) for n in 8, 10, 12, 14, 16 and seeds 0 to 3; random bipartite 4-regular graphs, the union of four random perfect matchings between two sides of m places (Python random seeded 0 to 3, m = 4 to 8, rejecting repeated edges and disconnected graphs): 74 boards in all, in that order.",
+  "the mark": "Each law gets two marks, dust and tree: native in place, or not (with the reason: no world of the frozen class, or a value not flipped within the search)."
+ },
+ "public_inputs": {
+  "code": "flips.py (sha256 deaea74fc1502379a702686ce55f10485fce05224b56401c5a441bde1e9fdc26) beside this file; BARE-NAMES-20261110-001B's knots.py and knots.json; numpy and networkx 3.6.1 from the workspace .venv.",
+  "run": "flips.py; output artifacts/PLACE-FLIP-20261110-001B/PLACE-FLIP-20261110-001B-E001_flips_in_place/flips.json."
+ },
+ "forbidden_inputs": [
+  "Changing the definitions, the worlds, the boards, the search bounds, the marks or the predictions after seeing results"
+ ],
+ "primary_observable": "Each law's dust and tree marks, with the witness: board, colouring, edge and the sizes of the value flips.",
+ "cheapest_meaningful_control": "The full law (key 1023, outside the family): expected native in place in both worlds with single-value flips; run before freezing (disclosed) and as expected, on the 3 x 3 torus. No law of the family was run.",
+ "predictions": {
+  "C1": "Every knotted law gets a dust world and a tree world from the frozen class.",
+  "C2": "Every knotted law is native in place in its dust world.",
+  "C3": "In tree worlds, no value of the 31 laws that never put a 0 beside a 1, nor of law 48, flips in place within distance 2."
+ },
+ "decision_rules": {
+  "C2 holds": "In worlds of finite components the board-value knots do not rest on renamings, and with L2 nothing in tree worlds does either: A59 becomes Confirmed for these knots.",
+  "C2 fails": "Each law not native in place in its dust world is examined by hand in this epic; if its knot is native only through renamings in every world, it is recorded as resting on A59, which stays Assumed.",
+  "C3 fails": "A value flip in place found for a cascading law refutes ticket A's L5: a correction of that lemma.",
+  "exploratory": "How many of the other 58 laws are native in place in a tree world, within distance 2; a law not found there is not shown rigid.",
+  "the canonical test": "No change to the canonical knot test is proposed; a result bearing on it goes to the owner as a question."
+ },
+ "stop_rule": "One run on the frozen family.",
+ "runtime": "Expected under ten minutes; run under systemd-run MemoryMax=16G with no swap."
+}

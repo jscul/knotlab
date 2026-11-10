@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**295 current results** and 5 superseded ones, from 263 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**296 current results** and 5 superseded ones, from 263 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 52 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 19 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 20 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 79 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -364,6 +364,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-10 · Parity decision trees on the sphere's count need polynomial depth** (`TREE-XOR-20261110-001-D001`).
   Every parity decision tree that finds a violated line of the octahedral knot sphere, hence every tree-like Res(xor) refutation of its count, has depth at least c n^{1/8}/log n, because a shallow parity tree is a low-degree F2 refutation and the count needs F2 degree polynomial in n. Its size is at least 2 to its F2 polynomial-calculus degree minus 3.
   [proof P001](proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/proof.md), [epic closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · The binary left-pigeon principle needs exponential dag-like Res(xor) proofs** (`WIDE-LEFT-20261110-001-D001`).
+  Every dag-like Res(xor) refutation of the binary left-pigeon principle with n holes, with n + 1 pigeons or with 2n, has exp(Omega(n / log^5 n)) lines; the proof runs Braun's bit-PHP framework through a decoder into the unary pigeonhole principle and separates a space of row-linear polynomials that avoids a few spare holes and pigeons.
+  [proof P001](proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/proof.md), [epic closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -1283,5 +1286,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A temporary rise (`RISE-ESCAPE-20261110-001`) | [closure](proofs/RISE-ESCAPE-20261110-001Z/RISE-ESCAPE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RISE-ESCAPE-20261110-001/) |
 | 2026-11-10 | Bit LeftPigeon as Braun's second family (`SEP-LEFT-20261110-001`) | [closure](proofs/SEP-LEFT-20261110-001Z/SEP-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/SEP-LEFT-20261110-001/) |
 | 2026-11-10 | Tree-like Res(xor) on the sphere's count (`TREE-XOR-20261110-001`) | [closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-XOR-20261110-001/) |
-| 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | — | [folder](research/WIDE-LEFT-20261110-001/) |
+| 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |
 

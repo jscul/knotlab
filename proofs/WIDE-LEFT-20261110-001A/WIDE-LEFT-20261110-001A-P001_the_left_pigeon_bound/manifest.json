@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "WIDE-LEFT-20261110-001A-P001",
+  "canonical_id": "WIDE-LEFT-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "WIDE-LEFT-20261110-001A",
+  "proof": "WIDE-LEFT-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A dag-like Res(xor) lower bound for the binary left-pigeon principle",
+  "status": "Proved",
+  "claim": "For n = 2^l holes with l >= 20, every dag-like Res(xor) refutation of the binary left-pigeon principle with 2n pigeons (hole rows of l + 1 bits) has S lines with 3S + 2n^2(l + 1) >= exp(0.005 k / l^2 - 1), k = floor(n/(64 l^3)), that is exp(Omega(n / log^5 n)); since the n + 1 pigeon principle's clauses are a subset, the same holds for the binary left-pigeon principle LP_{n+1}, whose search problem is PPADS-complete. The proof: Theorem (R) for 2n pigeons; a spare-row space separated by a cube with hole coordinates (Braun's cube-drop lemma and moments); Braun's generic criterion with the density count. Conditional on Braun's preprint arXiv 2609.23015 (Lean-formalized, audited by this program), whose lemmas it cites.",
+  "dependencies": [
+    "HOLE-SEP-20261110-001A",
+    "SEP-LEFT-20261110-001A",
+    "KERNEL-FRAC-20261110-001A",
+    "BPHP-RES-PARITY-AUDIT-20261019-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A value of l in the checked range where the bracket or the density count falls below its stated bound, or a side condition fails.",
+    "A refutation of the spare-row lemma (ticket B's checks)."
+  ],
+  "lineage": {
+    "home_scope": "WIDE-LEFT-20261110-001",
+    "epic_path": [
+      "WIDE-LEFT-20261110-001"
+    ],
+    "parents": [
+      "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json",
+      "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json",
+      "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/manifest.json",
+      "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json",
+      "research/WIDE-LEFT-20261110-001/novelty_and_transfer.md",
+      "research/WIDE-LEFT-20261110-001/target_statement.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json": "b9778bf6563ddf39b5a28bf3fd7a69225c02292b5ce597ee42d904f10dc1dffb",
+    "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json": "82b20ed526a38a9618965517981a7c328f6dbb6247e647331909cfb225ce557c",
+    "proofs/KERNEL-FRAC-20261110-001A/KERNEL-FRAC-20261110-001A-P001_the_top_hole_bit/manifest.json": "ffb6c3d68f23b3544dd2a92b46cce1d6e6549b8417038843810e66be53d7c217",
+    "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json": "4126014582ba2a271aa07918e6adbb9dab115b1f0f5cb7935eb18b11dca7ddc6",
+    "research/WIDE-LEFT-20261110-001/novelty_and_transfer.md": "65a20a0eac000e87eaed0e1b480007d068c5face0385df8331ab8a4c386bb17e",
+    "research/WIDE-LEFT-20261110-001/target_statement.md": "40267448cd4901ce1dd04f5a567c01896634c6bbaaf7b0ff62c7e364c9ef8752"
+  },
+  "paths": {
+    "manifest": "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/manifest.json",
+    "identity": "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/identity.json",
+    "proof": "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/proof.md",
+    "result": "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/result.json",
+    "check": "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/check.py",
+    "directory": "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k); proof complexity of its refutations.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+    "status": "proved by hand from Braun's lemmas (cited, Lean-formalized in his repository); the density numbers and star packing checked by check.py; the spare-row lemma checked on small instances by ticket B",
+    "novelty": "new as far as found (no Res(xor) bound for left-pigeon or PPADS-complete principles found in searches of 2026-11-10); built on Braun's framework, so known-with-delta in technique; not externally reviewed"
+  }
+}

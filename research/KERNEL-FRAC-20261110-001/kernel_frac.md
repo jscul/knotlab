@@ -86,7 +86,7 @@ Since the epic opened:
 | Broader exploration — G3 | Known alternatives | Cutting planes (B82), the parity reduction (B101) |
 | Long-term goal — G3 Hardness at three places | Obstruction learned | The decoder separates only what real placements cannot decide; the encoding decides which those are |
 
-**Corrections:** none. **Goals:** a G3 checkpoint (obstruction learned); B107 taken; one sub-goal added. **Assumptions:** none.
+**Corrections:** none. **Goals:** a G3 checkpoint (obstruction learned); B107 taken; sub-goal B114 added. **Assumptions:** none.
 
 - **What the attempt leaves open.** The decoder's kernel for the 2n-pigeon principle; the rest of K_2 beyond the identified families.
 
@@ -104,5 +104,5 @@ Since the epic opened:
 2. **Cutting planes.** As in `COUNT-SYSTEMS-20261110-001`.
 3. **The parity reduction.** As in `RES-XOR-COUNT-20261110-001`.
 
-**Recommendation.** Research directions, direction 1 recommended and recorded as a sub-goal under the owner's rule for untaken 3/3
+**Recommendation.** Research directions, direction 1 recommended and recorded as sub-goal B114 under the owner's rule for untaken 3/3
 directions, for the coordinator to confirm.

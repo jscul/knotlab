@@ -1201,7 +1201,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | A ring inserted while running (`RING-RUN-20261109-001`) | [closure](proofs/RING-RUN-20261109-001Z/RING-RUN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/RING-RUN-20261109-001/) |
 | 2026-11-09 | Larger spacings (`SPACING-20261109-001`) | [closure](proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/SPACING-20261109-001/) |
 | 2026-11-09 | The first tie of shortest routes (`TIE-LAW-20261109-001`) | [closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-LAW-20261109-001/) |
-| 2026-11-10 | Learning chooses which atom holds the leftover (`ADDRESS-20261110-001`) | — | [folder](research/ADDRESS-20261110-001/) |
+| 2026-11-10 | Learning chooses which atom holds the leftover (`ADDRESS-20261110-001`) | [closure](proofs/ADDRESS-20261110-001Z/ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ADDRESS-20261110-001/) |
 | 2026-11-10 | Layers through atoms (`ATOM-LAYERS-20261110-001`) | [closure](proofs/ATOM-LAYERS-20261110-001Z/ATOM-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ATOM-LAYERS-20261110-001/) |
 | 2026-11-10 | Choosing the resolution (`CHOOSE-RES-20261110-001`) | [closure](proofs/CHOOSE-RES-20261110-001Z/CHOOSE-RES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CHOOSE-RES-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |

@@ -46,6 +46,9 @@ Sections 1 to 8 are the note as written for B95. Eleven epics since then change 
   map from points held by the world to a point read at the floor answers oppositely for opposite inputs: no AND, OR or XOR of two
   held inputs. A gauge flip negates one input or the output (lemma G), and a composite's interface reads its inner atoms only
   through their AND (lemma C).
+  *Not a contradiction with the AND above:* that AND (`COMPOSITE-FN-20261110-001`, B109) is over stored classes, whether each atom
+  acts, which the law fixes; theorem D is about values of points the world holds, which are state. A held atom is a gate that is on
+  only when the AND of its stored bits is 1, and what it does with the held values is self-dual.
 
 **Computed.**
 - Freeness of all 157 lattice-torus types to 30 points (thin tori of even index to 40); the class-forced ones are the Fano torus and the thin

@@ -80,3 +80,33 @@ original rings' territories do not hear each other, so it never reads a distance
 | 4 | Invertible substrate (B39) | 2/3 — Substantial | 3/3 — Ready | As before | Alternative · deferred |
 
 **Recommendation.** Research directions, #1 as ordered.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 00:12 UTC and copied here verbatim.
+
+**Crossing a territory border with balance (sub-goal B63) is closed and published, pre-registered. Crossing breaks balance.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/CROSS-BORDER-20261110-001/cross_border.md))
+
+- **Slow doubling does cross borders:** at g = 3, doubling every 8 to 16 lags lets the nearest original rings hear each other from lag 8. At g = 5 that happens every 12 to 16 lags.
+- **And every such schedule loses balance** within two doublings of the crossing (exact, to 24 × 24), as at g = 2.
+- **Without crossing, balance can hold:** g = 5 doubling every 6 lags stays balanced while rings hear each other inside their territories.
+
+So across g = 2 to 5 and every schedule read, a network that grows while it runs keeps its knots, or reads distance across its grown plane, but not both.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: crossing a border with balance | Successful | Crossing breaks balance within two doublings at g = 3 and 5 |
+| Local direction: knots plus distance while growing | Full pivot | Not had together in any schedule read |
+| Broader exploration: G1 with G5 | Known alternatives | Growth that stops (B56); why odd g keeps balance (B55); B39 |
+| Long-term goal: G1 Space from a law | Obstruction learned | While growing, keeping knots and reading distance across the plane exclude each other, in every law read |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Why odd spacings keep balance (B55) | 2/3 | 2/3 | Territory confinement plus the transfer lemma → a proof |
+| 2 | Growth that stops (B56) | 2/3 | 2/3 | Double for k lags, stop, read the distance → a law in k |
+| 3 | Why crossing breaks balance | 2/3 | 2/3 | Read the first failing contact's returns → toward proving the exclusion |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint; sub-goal B63 taken. **Assumptions:** none. **Long-running:** CROSS-BORDER-A1 is folded in and awaits sign-off.
+
+B55 is next, as agreed. This thread has now closed thirteen epics; the growth line has reached a clear exclusion, so a pause after B55 would be reasonable too.

@@ -1,0 +1,915 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/READ-ADDRESS-20261110-001A/READ-ADDRESS-20261110-001A-P001_writing_at_k4_and_reading_from_the_law/check.py": "fa4fa975f15af96d5bbfc73b0007bf5f33d9077561fca15315ba248b9b4a1b89",
+    "proofs/ADDRESS-20261110-001A/ADDRESS-20261110-001A-P001_a_learned_address_among_three_atoms/check.py": "43f2a05e2c9708c5a198c583419fc259a9c7c659d020662741ea08e796c1584c",
+    "proofs/LEARN-RISE-20261110-001A/LEARN-RISE-20261110-001A-P001_swapping_the_atoms_roles/check.py": "3832b3b273e2676517c5760e5002656cc2733d5a48cf1fb424017f4617387bd7",
+    "proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/check.py": "7b19be47f2f6a6f8d0ac5d487a5e8fe4f33a709f88b7fd13cfc94359a072eddb",
+    "proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/layers_lib.py": "27504443997b32c58096c46c5a82f71d310e1b490da3d40f60881295af74b39b",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py": "ce5b9e284489ed3f1c60d5768be985d7966e27ac1ecea3b247fab47c3c439a2b",
+    "research/ADDRESS-STEER-20261110-001/preregistration.md": "bab5dcd7a205c7fb4d2a705e9fa4a94fe7d7ec641597810b73a4a2ecee018272"
+   }
+  },
+  "1 C (computed): after k random upper flips the learner M1 returns to the written address": {
+   "pass": true,
+   "info": {
+    "expected (at least 80% at k = 1 on every space)": false,
+    "failure (at most a third at k = 1)": false,
+    "kept, by sphere and k": {
+     "K_3 k=1": "90 of 90",
+     "K_3 k=2": "85 of 90",
+     "K_3 k=3": "85 of 90",
+     "K_4 k=1": "140 of 150",
+     "K_4 k=2": "139 of 150",
+     "K_4 k=3": "134 of 150"
+    },
+    "rows": [
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 9,
+       "acting = (2,)": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 6,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 8,
+       "not at the floor": 2
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 9,
+       "acting = (0,)": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 9,
+       "acting = (2,)": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 9,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 9,
+       "acting = (1,)": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 8,
+       "acting = (1,)": 1,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 8,
+       "not at the floor": 1,
+       "acting = (2,)": 1
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_3",
+      "l0": 10,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 9,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 10,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 11,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 9,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = (2,)": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = (2,)": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = (2,)": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 16,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = ()": 1,
+       "acting = written": 9
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 9,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 9,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 17,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       0,
+       1
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       0,
+       1
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 9,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       0,
+       1
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 9,
+       "not at the floor": 1
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       0,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       0,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       0,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       1,
+       2
+      ],
+      "k": 1,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       1,
+       2
+      ],
+      "k": 2,
+      "outcomes": {
+       "acting = written": 10
+      }
+     },
+     {
+      "sphere": "K_4",
+      "l0": 21,
+      "written": [
+       1,
+       2
+      ],
+      "k": 3,
+      "outcomes": {
+       "acting = written": 10
+      }
+     }
+    ]
+   }
+  },
+  "seconds": 12.1
+ }
+}

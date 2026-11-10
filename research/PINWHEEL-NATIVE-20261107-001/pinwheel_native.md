@@ -139,3 +139,58 @@ Written after closure, when a later prior-work check found Kenyon and Stephenson
 | Next recommendation — a round plane grown at its open ends | **Next step:** Continue, as a fresh epic, starting with a scoping test. Atlas growth: from one knot, add knots one at a time where the law shows an open end. Allow a placement only if every distinction near it keeps a radius-2 neighbourhood that occurs in the pinwheel law's atlas (the 1,168 types of ticket B). Prefer placements that are forced. Does growth ever reach a dead end, and do the grown patches stay pinwheel patches? | `OPEN-END-GROWTH-20261107-001` found no local rule that grows a plane. A rule that grows the pinwheel plane outward would break that, with a round distance. A clean dead end is also informative. |
 | Interest — that recommendation | **Payoff 3/3 — Barrier · Concreteness 2/3 — Testable** | **Payoff.** It would answer question 9's open part, a plane grown natively from one knot, and the plane would be round. **Concreteness.** The question is precise, the atlas exists, and Onoda, Steinhardt, DiVincenzo and Socolar (1988) grew perfect Penrose tilings by local forced-move rules from a seed. **Main uncertainty.** Whether forced moves exist at every step for the pinwheel, which has infinitely many orientations. |
 | Execution — that action | Deferred to the owner | **Not started.** **Stop when** atlas growth either grows a patch of radius 30 without a dead end (then test that it is a pinwheel patch) or reaches a dead end that no radius up to 4 avoids. **Alternatives:** prove radius 2 for every pinwheel tiling (Payoff 1/3 — Incremental · Concreteness 3/3 — Ready); the spectrum of rational π among periodic laws (Payoff 1/3 — Incremental · Concreteness 3/3 — Ready). |
+
+## Final report as sent
+
+Sent to the owner on 2026-11-08 at 01:41 UTC and copied here verbatim.
+
+I've finished and published the "pinwheel grown with nothing drawn" epic. The pinwheel law can be grown by a small symbolic rule with no coordinates, lengths or angles. On every patch I tested, that rule can read everything it needs from the law itself.
+
+**The rule** (proved). Label each distinction by:
+- the two knots' side types;
+- where it sits along them;
+- whether the two sides run the same way.
+
+Only 11 labels ever occur: 8 inside the patch and 3 on its boundary. Each step:
+- **Knots.** Every knot splits into five, whose handedness flips in a fixed pattern.
+- **Distinctions.** Each splits by a letter table: a → g e d e g, b → h c c, c → b b, d → a, e → b, f → b, g → a, h → b.
+- **Inside each knot**, five new distinctions appear, labelled f, g, c, a, h.
+
+This regrows the law exactly at every level. It matches the geometric construction at levels 0–7, including all 133,883 distinctions at level 7. The pinwheel's distinctions therefore come in only eight kinds, and its only T-junctions sit at the midpoints of long legs.
+
+**On the doubt you flagged** (measured, not proved). You asked whether the rule needs labels supplied from outside. On every tested patch it doesn't:
+- **The law fixes its map.** Its graph is 3-connected, so by Whitney's theorem its allowed states determine its planar map up to a mirror image.
+- **The map fixes the labels.** Every distinction's label is determined by its unlabelled neighbourhood of radius 2. There was no conflict among up to 235,394 cases at levels 5–7. Shuffled and non-local labellings conflict almost everywhere, so the test can fail.
+
+So the step "split every knot, read each distinction's kind nearby, split it by the table" reads only the law, and it grows the law whose circle is round. This is shown on patches up to level 7, not proved for every pinwheel tiling.
+
+**A correction to my own reading.** I first wrote that your "ratio that continues" lives in how often the eight kinds recur. I then computed those frequencies, and they are rational: per knot, a 3/11, b 5/22, c 16/55, d 3/55, e 6/55, f 1/5, g 17/55, h 27/110. The only irrational number in the table is its growth rate √5, which is the length scale, not the angle. The irrational angle appears only when the law is drawn; what the law itself shows of it is its round circle. I corrected the decision note and the intuition entry and republished.
+
+**Prior work.** Finite combinatorial descriptions of the pinwheel substitution already exist in substance, via collared tiles and Anderson–Putnam complexes. What I didn't find: an explicit rule on knots and distinctions, the eight-kind census, or the radius-2 reading.
+
+| Layer | Assessment | Evidence or consequence |
+| --- | --- | --- |
+| Current attempt: pinwheel grown with nothing drawn | **Successful** | Exact regrowth proved; labels readable from the law at radius 2 on tested patches. Open: radius 2 for every pinwheel tiling. |
+| Broader: space from a law | A round plane grown by local subdivision | Still unmapped: growing a round plane outward from one knot, the way the number line grew. |
+| Next recommendation | **Continue**, as a fresh epic: a round plane grown at its open ends. Start with "atlas growth": from one knot, add knots only where every nearby distinction keeps a radius-2 neighbourhood that the pinwheel law actually contains. Then see whether growth hits dead ends. | Your growth-at-open-ends epic found that no local rule grew a plane. A rule that grows the pinwheel plane outward would overturn that, and the plane would be round. |
+| Interest | **Payoff 3/3 — Barrier · Concreteness 2/3 — Testable** | A precedent exists: Onoda and colleagues grew perfect Penrose tilings by forced local moves in 1988. Main doubt: whether forced moves exist at every step for the pinwheel. |
+| Execution | Waiting for your go-ahead | Alternatives: prove radius 2 for every pinwheel tiling (Payoff 1/3 · Concreteness 3/3); which fractions periodic laws realize as π (Payoff 1/3 · Concreteness 3/3). |
+
+**Still waiting on you, carried from earlier epics:**
+- whether a native knot must also be natively bound;
+- the PHASE-HALO and FACE-CLAIM qualifications;
+- the SELECTION-NOTE erratum;
+- superseding KNOT-COMPOSE D001;
+- counted length as a native magnitude.
+
+One new discovery record means the generated discoveries index needs a rebuild. knotlab's tests and the jscul.dev sync both passed.
+- [Decision note](https://github.com/jscul/knotlab/blob/main/research/PINWHEEL-NATIVE-20261107-001/pinwheel_native.md)
+- [Proof, with `rule_table.json`](https://github.com/jscul/knotlab/tree/main/proofs/PINWHEEL-NATIVE-20261107-001A/PINWHEEL-NATIVE-20261107-001A-P001_a_finite_rule_regrows_the_pinwheel)
+- [Readability measurements](https://github.com/jscul/knotlab/blob/main/artifacts/PINWHEEL-NATIVE-20261107-001B/PINWHEEL-NATIVE-20261107-001B-E001_reading_labels_from_the_law/run/interpretation.md)
+- [jscul.dev/proofs](https://jscul.dev/proofs)
+
+Sources:
+- **Collared tiles for the pinwheel:** [Barge, Diamond, Hunton, Sadun](https://arxiv.org/pdf/0811.2507)
+- **The pinwheel's Anderson–Putnam complex:** [Frettlöh, Whitehead, Whittaker](https://arxiv.org/abs/1212.4401)
+- **Combinatorial versions of geometric substitutions:** [topological substitution for the Rauzy fractal](https://arxiv.org/pdf/1603.02790)
+- **Background:** [Substitution tiling](https://en.wikipedia.org/wiki/Substitution_tiling)

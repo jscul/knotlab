@@ -114,3 +114,33 @@ the 7 × 7 half is pending.
 
 **Basket:** B108, B55, `GROW-HORIZON-20261109-001#2`; none taken tonight, as the owner is resting the project; #1 stays in this line
 because it reads the result just found.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 07:32 UTC and copied here verbatim.
+
+**A metric while growing (B102) is closed and published. The answer is no: a growing plane's time lengths are a metric only between doublings.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/METRIC-GROW-20261110-001/metric_grow.md))
+
+- **How it was read (frozen):** time length through freezes (A41), from one cell of ring (0, 0) to the same cell of another ring. The round trip out and back is the candidate metric, and no offset is subtracted.
+- **No metric on 5 × 5** (exact census): one schedule, [28, 60], keeps every stage balanced to 40 × 40 and reaches every original ring out and back. But far rings cost more than the sum of near trips: 60 violations of the triangle inequality, such as 138 > 90 + 36. Code 2 agrees.
+- **Growth is what breaks it:** every violation involves a trip that crosses a doubling. Within one stage the time length is subadditive, because routes concatenate. The plane expands while it's being read.
+- **Pending:** the 7 × 7 half (stages there cycle through about 800,000 lags) is still running, along with its checks. It's registered as pending in the long-running index.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: a metric while growing | Unsuccessful | Every ring reached with every stage balanced, but the triangle inequality fails across doublings |
+| Local direction: a grown plane that reads its own metric | Research directions | A metric holds within a stage, and after growth stops; not across growth |
+| Broader exploration: G1 with G5 | Known alternatives | Growth that rounds the reading (B108); the expansion as a quantity |
+| Long-term goal: G1 Space from a law | Obstruction learned | A plane that keeps growing reads distances in order, but a metric only between doublings |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Expansion as a reading | 2/3 | 3/3 | The triangle excess against the doublings each trip crosses → a law for it, or none |
+| 2 | Growth that rounds the reading (B108) | 2/3 | 3/3 | As recorded |
+| 3 | The 7 × 7 half | 1/3 | 3/3 | Fold in when it finishes |
+| 4 | Why a run keeps balance | 2/3 | 2/3 | As recorded |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint (obstruction learned); B102 taken. **Assumptions:** none.
+**Basket:** B108, B55, GROW-HORIZON-20261109-001#2. None taken, since you're resting the project tonight.
+
+I propose #1 for the morning. As you asked, I'm stopping here with no new epic. The 7 × 7 run keeps going on its own, and I'll fold it in when you're back.

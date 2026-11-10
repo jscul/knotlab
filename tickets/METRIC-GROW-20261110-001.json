@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "doubling"
+    ],
+    "program": "foundations",
+    "takes": "B102"
+  },
+  "id": "METRIC-GROW-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up sub-goal B102, given the go-ahead by the coordinator on 2026-11-10 (G1 with G5): on the 5 x 5 and 7 x 7 tubes at g = 3, find a doubling schedule with every stage balanced under which every original ring is reached from ring (0, 0) within the schedule and the time lengths between original rings, read through freezes (A41), form a metric (symmetric, with the triangle inequality), and read whether it is the lattice's taxicab distance; or the distance beyond which every balanced schedule read is deaf.",
+  "ownership": {
+    "root": true,
+    "scope_id": "METRIC-GROW-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (sub-goal B102): on the 5 x 5 tube at g = 3, of 42 doubling schedules with every stage balanced to 40 x 40, one ([28, 60]) reaches every original ring out and back, and its freeze-read round-trip time lengths break the triangle inequality (60 violations), only for trips that cross a doubling; within one stage the time length is subadditive. No metric while growing; nothing deaf. Code 2 agrees. The 7 x 7 half pending as METRIC-GROW-A1. Recommendation Research directions; nothing selected tonight.",
+  "status_class": "complete",
+  "stop_rule": "Stop at a balanced schedule whose freeze-read time lengths form a metric on all original rings, confirmed by the second code, or at the deaf distance of the frozen family.",
+  "title": "A metric while growing"
+}

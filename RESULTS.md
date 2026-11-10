@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**299 current results** and 5 superseded ones, from 267 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**299 current results** and 5 superseded ones, from 268 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 14 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 267 epics with their closures
+- [Epics](#epics): all 268 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1288,6 +1288,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Leibniz boards (`LEIBNIZ-BOARDS-20261110-001`) | [closure](proofs/LEIBNIZ-BOARDS-20261110-001Z/LEIBNIZ-BOARDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LEIBNIZ-BOARDS-20261110-001/) |
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Many points at once (`MANY-POINTS-20261110-001`) | [closure](proofs/MANY-POINTS-20261110-001Z/MANY-POINTS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MANY-POINTS-20261110-001/) |
+| 2026-11-10 | A metric while growing (`METRIC-GROW-20261110-001`) | [closure](proofs/METRIC-GROW-20261110-001Z/METRIC-GROW-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/METRIC-GROW-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | Layers through a naming knot (`NAME-LAYERS-20261110-001`) | [closure](proofs/NAME-LAYERS-20261110-001Z/NAME-LAYERS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NAME-LAYERS-20261110-001/) |
 | 2026-11-10 | Which atom a growth law grows (`NATIVE-ATOM-20261110-001`) | [closure](proofs/NATIVE-ATOM-20261110-001Z/NATIVE-ATOM-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-ATOM-20261110-001/) |

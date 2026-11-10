@@ -122,6 +122,10 @@ One, logged in `docs/CORRECTIONS.md` (**Not a block**). Ticket A's proof and the
 intuition entry and the goals doc now say. `BOARD-DIST-20261110-001`'s frozen boards were proved within A54's scope, which the
 register now records; that is not a correction.
 
+**Correction (2026-11-10, found by `PLACE-FLIP-20261110-001`).** Ticket B's frozen contract says no law of the family was run
+before freezing, but its control, law 63, is in the family. The control's run and result were disclosed there, and the frozen
+run agreed, so no result changes (`docs/CORRECTIONS.md`, Not a block).
+
 ## Next steps
 
 | Scope | Verdict | Why |

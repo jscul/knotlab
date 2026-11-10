@@ -5463,6 +5463,20 @@ So network holes come in two kinds:
      read now, excludes nothing (A59).
    - **Next (selected).** Nativeness up to renaming ([decision note](../research/BARE-NAMES-20261110-001/bare_names.md)).
 
+   **2026-11-10: nativeness up to renaming** (`PLACE-FLIP-20261110-001`).
+   - **The question.** Without letters, exchanging two names is a finite change, so every distinction passed the source-aware
+     condition. With renamings not counted, are the 90 knots between the board and the values still native?
+   - **Excluding renamings is not enough (proved).** A place can be cut out of one region and wired into another by a finite change
+     that is no renaming. So the count that means something keeps one kind of distinction fixed while the other changes: values
+     with the board kept, or neighbour distinctions with the values kept.
+   - **In worlds of finite pieces, every knot is native (proved, computed).** In a world made of copies of a finite board, each of
+     the 90 knots has its three distinctions flipped this way, so none rests on renamings.
+   - **On the free board most values are frozen (proved).** On a tree world a recolouring has to stop somewhere. In 58 of the laws it
+     never can, among them those where a flipped place forces all four neighbours to flip. 26 knots stay native; the other 64 are not
+     native on any tree.
+   - **Next (selected).** Every accretion law, the one route left that could change the line's verdict
+     ([decision note](../research/PLACE-FLIP-20261110-001/place_flip.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

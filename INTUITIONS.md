@@ -1087,6 +1087,10 @@ tell apart, and one connected world. Without them the board is no longer
 frozen: two edges that join the same pair of values can trade partners, and
 the board takes part in knots with the values
 ([BARE-NAMES-20261110-001](research/BARE-NAMES-20261110-001/bare_names.md)).
+The values on it can change in place, with the board kept, wherever the world
+comes in finite pieces. On the free board a change has to stop somewhere, and
+for most of these rules it never can
+([PLACE-FLIP-20261110-001](research/PLACE-FLIP-20261110-001/place_flip.md)).
 
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the

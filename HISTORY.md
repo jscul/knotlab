@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: a census control belonged to its own family
+
+- The frozen contract of `BARE-NAMES-20261110-001B` says that no law of its
+  family was run before freezing, but its control, law 63, is one of those
+  laws. The run was disclosed with its result, and the frozen run agreed
+  ([decision note](research/BARE-NAMES-20261110-001/bare_names.md)).
+- Unchanged: every result of the census.
+
 ## 10 November 2026: abstract names cited its new assumption under the wrong number
 
 - `BARE-NAMES-20261110-001`'s proof and closure ledger call the reading

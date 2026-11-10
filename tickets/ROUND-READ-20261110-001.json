@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "doubling"
+    ],
+    "program": "foundations",
+    "takes": "B108"
+  },
+  "id": "ROUND-READ-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B108, given the go-ahead by the coordinator on 2026-11-10 (G1 with G5): does a plane grown by the doubling law read a distance rounder than its board's taxicab one? Route readings are taxicab up to a constant by CONF-METRIC-20261110-001A; test the plain hearing, which that theorem does not cover, on large tubes, and say what the law contributes beyond the drawn board.",
+  "ownership": {
+    "root": true,
+    "scope_id": "ROUND-READ-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (backlog B108): no reading of a plane grown by the doubling law is rounder than its board's taxicab distance (113 schedules, tubes to 41 x 41, distances to 20): route readings stay taxicab (gaps within -9 and 0), and plain hearing waits for powers of two along diagonals on the fixed first stage (gap 4g (2^ceil(log2 d) - d), 24 of 24) and stays on the square side under growth. What the law adds beyond the drawn board: scale, clock, bounded offsets and a binary plain reading, never roundness. Recommendation Research directions (the power-of-two law as a theorem).",
+  "status_class": "complete",
+  "stop_rule": "Stop when the frozen families are read: a schedule whose plain reading is rounder than taxicab by the frozen criterion, or none.",
+  "title": "Growth that rounds the reading"
+}

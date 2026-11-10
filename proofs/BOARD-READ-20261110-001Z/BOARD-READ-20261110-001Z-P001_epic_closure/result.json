@@ -1,0 +1,30 @@
+{
+ "schema_version": 3,
+ "artifact_id": "BOARD-READ-20261110-001Z-P001",
+ "kind": "proof",
+ "ticket": "BOARD-READ-20261110-001Z",
+ "proof": "BOARD-READ-20261110-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing BOARD-READ-20261110-001: one line per conclusion with its status and evidence (ticket A, proved; ticket B, a frozen computation, supported), the growth line's verdict and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/BOARD-READ-20261110-001A/BOARD-READ-20261110-001A-P001_on_every_periodic_board_the_route_reading_is_a_polygon_norm/manifest.json": "Proved",
+   "proofs/BOARD-READ-20261110-001A/BOARD-READ-20261110-001A-P001_on_every_periodic_board_the_route_reading_is_a_polygon_norm/result.json": "passed",
+   "experiments/BOARD-READ-20261110-001B/BOARD-READ-20261110-001B-E001_route_and_graph_polygons/contract.json": "Frozen"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

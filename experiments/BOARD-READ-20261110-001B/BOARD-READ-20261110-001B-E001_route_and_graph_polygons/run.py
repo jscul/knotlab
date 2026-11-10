@@ -105,9 +105,12 @@ def one(job):
         for k in range(1, KMAX // max(abs(v[0]), abs(v[1])) + 1):
             tgt = BL.ring_cells(tor, t0type, k * v[0], k * v[1])
             T = min(dist[c] for c in tgt)
-            N = BL.gauge(route_pts, (k * v[0], k * v[1]), board)
+            # on the torus the distance is the least over the images of the displacement (amended after the first run, which
+            # compared with the plane's gauge and so read wrap-around as deviation)
+            imgs = [(k * v[0] + L * a, k * v[1] + L * c) for a in (-1, 0, 1) for c in (-1, 0, 1)]
+            N = min(BL.gauge(route_pts, w, board) for w in imgs)
             dev_route.append(float(T - N))
-            NG = BL.gauge(graph_pts, (k * v[0], k * v[1]), board)
+            NG = min(BL.gauge(graph_pts, w, board) for w in imgs)
             dev_graph.append(float(gd[(t0type, (k * v[0]) % L, (k * v[1]) % L)] - NG))
             readings += 1
     return {"board": board, "g": g, "route hull": [[str(x), str(y)] for x, y in H], "graph hull": [[str(x), str(y)] for x, y in HG],

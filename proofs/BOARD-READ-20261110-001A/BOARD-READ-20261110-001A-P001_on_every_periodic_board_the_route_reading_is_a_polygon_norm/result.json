@@ -1,0 +1,74 @@
+{
+ "ticket": "BOARD-READ-20261110-001A",
+ "artifact_id": "BOARD-READ-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "experiments/BOARD-READ-20261110-001B/BOARD-READ-20261110-001B-E001_route_and_graph_polygons/board_lib.py": "1cc208f412014c3738a478b9cb376fc4308c1055f781e1e72b6470f1ecbe8155"
+   }
+  },
+  "1 The polygon has 0 inside and the route reading stays within a constant of its gauge, without growth, on four boards": {
+   "pass": true,
+   "info": [
+    {
+     "board": "square",
+     "g": 2,
+     "0 interior": true,
+     "nearer half max |T - N|": 4.0,
+     "farther half max |T - N|": 4.0
+    },
+    {
+     "board": "square",
+     "g": 3,
+     "0 interior": true,
+     "nearer half max |T - N|": 7.0,
+     "farther half max |T - N|": 7.0
+    },
+    {
+     "board": "triangular",
+     "g": 2,
+     "0 interior": true,
+     "nearer half max |T - N|": 6.0,
+     "farther half max |T - N|": 6.0
+    },
+    {
+     "board": "triangular",
+     "g": 3,
+     "0 interior": true,
+     "nearer half max |T - N|": 10.0,
+     "farther half max |T - N|": 10.0
+    },
+    {
+     "board": "honeycomb",
+     "g": 2,
+     "0 interior": true,
+     "nearer half max |T - N|": 2.0,
+     "farther half max |T - N|": 2.0
+    },
+    {
+     "board": "honeycomb",
+     "g": 3,
+     "0 interior": true,
+     "nearer half max |T - N|": 4.0,
+     "farther half max |T - N|": 4.0
+    },
+    {
+     "board": "kagome",
+     "g": 2,
+     "0 interior": true,
+     "nearer half max |T - N|": 4.0,
+     "farther half max |T - N|": 4.0
+    },
+    {
+     "board": "kagome",
+     "g": 3,
+     "0 interior": true,
+     "nearer half max |T - N|": 7.0,
+     "farther half max |T - N|": 7.0
+    }
+   ]
+  }
+ },
+ "status": "passed"
+}

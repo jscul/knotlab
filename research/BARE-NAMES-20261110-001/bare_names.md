@@ -155,3 +155,34 @@ register now records; that is not a correction.
 
 **Recommendation.** Research directions, selected #1: the cheapest step, and it settles the reading this epic opened, which bears on
 the foundation's source-aware reading.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 18:44 UTC and copied here verbatim.
+
+I've closed and published abstract names. The obstruction holds without letters. A law that reads finitely many names at a time can't make two places touch, and a law that reads a place and its neighbours always allows the tree, so the obstruction doesn't depend on the naming. Theorem W is now described as "proved here, not found in the literature so far". Piantadosi and Cohen only give points with a nontrivial stabilizer, so they don't imply it.
+
+**What the letters were doing.** They gave every place four neighbours a law can address, and they kept the world connected. Without letters, an infinite clause can supply the degree. But no law of bounded degree can force one connected world, and a named square with aperiodic tiles gives only one plane per component. The letters also froze the board. Without them, two edges joining the same pair of values can swap partners. In 90 of the 1,024 one-bit laws, a neighbour distinction knots with the values at its two ends.
+
+**A catch for the foundation.** Swapping two names also counts as a finite change, so under abstract names the source-aware condition excludes nothing. I've recorded this as assumption A59 and haven't proposed any change to the canonical reading. Tell me if you'd rather have a correction request.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: abstract names | **Status:** Successful | Under the frozen rule, the obstruction holds without letters; the frozen boards don't |
+| Local direction: boards made of distinctions | Obstruction confirmed | With or without letters, no finitary law or count law forces the plane |
+| Broader exploration: question 9 | Sharpened | Letters give shape and freeze the board; abstract names give a board that changes, and no shape |
+| Long-term goal: G1 | Obstruction learned | Space still needs a named face |
+
+**Next step:** Research directions. My pick is #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Nativeness up to renaming (A59) | 2/3 | 3/3 | For the 90 knotted laws, look for value flips that aren't renamings | Selected |
+| 2 | Leibniz's rule with abstract names | 2/3 | 2/3 | Ask whether merging isomorphic components forces one connected world | Alternative |
+| 3 | Every accretion law | 2/3 | 2/3 | As recorded | Alternative |
+
+**Corrections:** one, Not a block. The epic's proof and ledger cite the new assumption as A58, a number another thread had already taken; it is A59 ([history](https://github.com/jscul/knotlab/blob/main/HISTORY.md)).
+**Goals:** G1 checkpoint (obstruction learned). **Assumptions:** A54 is confirmed for the obstruction, with the frozen boards recorded as resting on the naming; A59 is added; the A51 and A53 histories are updated.
+**Basket:** spacing's BARE-NAMES-20261110-001#1 (nativeness up to renaming), #2 (Leibniz's rule with abstract names) and WEAK-APER-20261110-001#2 (every accretion law). Taken: none yet; #1 is selected and waiting for a go-ahead.
+
+Commits: eed41814b (pre-registration), 2ebe30869 (epic), 04b3fdc8b (shared docs), 3e4b06ad7 (correction), fb3c86f52 (assumptions).

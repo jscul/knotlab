@@ -1475,8 +1475,23 @@ So network holes come in two kinds:
      is the triangular lattice away from six corners.
    - **Reading.** Which patterns hold the tension is a rule of the shape, not an accident of the small cases.
    - **Next (taken by `LEARN-NOTE-20261110-001`).** A note on the learning line (backlog B95), written up as
-     [the learning line](../research/LEARN-NOTE-20261110-001/learning_line.md); its next step is other atoms (backlog B97)
-     ([decision note](../research/ATOM-RULE-20261110-001/atom_rule.md)).
+     [the learning line](../research/LEARN-NOTE-20261110-001/learning_line.md); its next step, other atoms (backlog B97), was taken by
+     `OTHER-ATOMS-20261110-001`, below ([decision note](../research/ATOM-RULE-20261110-001/atom_rule.md)).
+
+   **2026-11-10: any class-forced handle remembers** (`OTHER-ATOMS-20261110-001`).
+   - **The question.** Backlog B97, the challenge of A48: every learning result so far grew the Fano atom. Does the memory need the Fano
+     plane?
+   - **The theorem (by hand).** A torus atom, a torus knot space less a point, grown at a line of any orientable knot space with a
+     Kasteleyn law, allows on its three outer points what its torus allows with that point split in three: the replaced line's six
+     patterns in a class where the torus has no satisfying state, all eight where it has one, provided the torus is free at the point
+     (flipping any one of the point's sides leaves a satisfiable law). Where it acts it holds a unit. So the atom rule holds for such atoms
+     on any host, adjacent ones included, with no local check.
+   - **Which tori (computed).** Every lattice torus to 30 points is free. The ones with a class no state satisfies are the Fano torus and
+     the thin tori of even index, so twenty atoms up to 40 points remember, the smallest with four points; every other atom is transparent
+     in every class. Thin-torus atoms wrote and held addresses as the Fano atom does.
+   - **Reading.** A handle remembers because its torus has a sign class that no state can satisfy: the bit lives in the class.
+   - **Next.** Atoms within atoms (backlog B104): a sphere carrying two atoms, less a point, as one atom
+     ([decision note](../research/OTHER-ATOMS-20261110-001/other_atoms.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

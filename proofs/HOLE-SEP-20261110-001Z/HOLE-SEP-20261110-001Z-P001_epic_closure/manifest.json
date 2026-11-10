@@ -1,0 +1,103 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "HOLE-SEP-20261110-001Z-P001",
+ "canonical_id": "HOLE-SEP-20261110-001Z-P001",
+ "kind": "proof",
+ "ticket": "HOLE-SEP-20261110-001Z",
+ "proof": "HOLE-SEP-20261110-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure of hole-row separation for bit LeftPigeon",
+ "status": "Proved",
+ "claim": "Ledger closing HOLE-SEP-20261110-001: one line per conclusion with its status, novelty and evidence (ticket A proved; ticket B's P1 held and P2 was refuted, triggering stop rule (b)), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "dependencies": [
+  "HOLE-SEP-20261110-001A",
+  "HOLE-SEP-20261110-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest or result changes, or a proof is not Proved.",
+  "The decision note is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "HOLE-SEP-20261110-001",
+  "epic_path": [
+   "HOLE-SEP-20261110-001"
+  ],
+  "parents": [
+   "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json",
+   "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/result.json",
+   "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/contract.json",
+   "artifacts/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run/result.json",
+   "artifacts/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run/interpretation.md",
+   "research/HOLE-SEP-20261110-001/separation_statement.md"
+  ]
+ },
+ "parent_bindings": {
+  "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json": "b9778bf6563ddf39b5a28bf3fd7a69225c02292b5ce597ee42d904f10dc1dffb",
+  "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/result.json": "df9432b8b20e09829cb2fa49693d8a4a07e2a5e0e67c10fa84ca25ece1c27cf5",
+  "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/contract.json": "d7d40df64655535f52307595814ad2a746bddd60730302ca80049b9079430935",
+  "artifacts/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run/result.json": "3cadd8da755c8f953299c134433e1e37d6546d986012e673bd5de53f9c9150bc",
+  "artifacts/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run/interpretation.md": "36ae190170ec4ceb4b4bdf7a2b1aa9df30465f384a40c84a3a6c5a7a14c3173d",
+  "research/HOLE-SEP-20261110-001/separation_statement.md": "252e586aaba12c912a1d49d63cd37935420ed194b1e84761093d5e7f98557337"
+ },
+ "paths": {
+  "manifest": "proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/result.json",
+  "check": "proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's ticket; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

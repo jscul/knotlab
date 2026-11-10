@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HOLE-SEP-20261110-001A-P001",
+  "canonical_id": "HOLE-SEP-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "HOLE-SEP-20261110-001A",
+  "proof": "HOLE-SEP-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Separation through the decoder's kernel",
+  "status": "Proved",
+  "claim": "For the binary left-pigeon principle LP_n (n = 2^l holes, l >= 2), if B >= 2, k <= B and 2lB - 1 <= n, then every row-linear polynomial p of degree at most k derived from LP_n in polynomial-calculus degree B lies in the kernel K_k = {p : tau~(p) in Ideal_k(F^fun_{n+1,n})} of the reduced decoder (pigeon bit f_x,t to sum_{z: z_t = 1} X_x,z, hole bit g_h,j to sum_y y_j X_y,h) modulo Braun's unary degree-k ideal. So the dynamic separation question for LP_n is a static one: every subspace of L_k meeting K_k only in zero is separated. The (l + 1)^2 inverse-counting identities kappa_{a,j} = sum_h a(h) g_h,j + sum_x x_j a(f_x) lie in K_1 for every n.",
+  "dependencies": [
+    "SEP-LEFT-20261110-001A",
+    "HOLE-SEP-20261110-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An indicator [f_x = h] whose decoded image does not reduce to the cell X_x,h modulo the unary ideal.",
+    "A hole bit whose decoded image does not reduce to its weighted hole sum.",
+    "An inverse-counting identity outside K_1."
+  ],
+  "lineage": {
+    "home_scope": "HOLE-SEP-20261110-001",
+    "epic_path": [
+      "HOLE-SEP-20261110-001"
+    ],
+    "parents": [
+      "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json",
+      "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run.py",
+      "research/HOLE-SEP-20261110-001/separation_statement.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json": "82b20ed526a38a9618965517981a7c328f6dbb6247e647331909cfb225ce557c",
+    "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run.py": "68cd9a8e3f1fac66543edc836756e023e47c7f8f31344a2e0e88682092413caa",
+    "research/HOLE-SEP-20261110-001/separation_statement.md": "252e586aaba12c912a1d49d63cd37935420ed194b1e84761093d5e7f98557337"
+  },
+  "paths": {
+    "manifest": "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json",
+    "identity": "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/identity.json",
+    "proof": "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/proof.md",
+    "result": "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/result.json",
+    "check": "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/check.py",
+    "directory": "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The octahedral knot sphere's Kasteleyn-signed NAE formula NAE(K_k); proof complexity of its refutations.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the repository owner's standing request on 2026-11-10.",
+    "status": "proved by hand from Braun's decoder transfer and stability corollary (cited, Lean-formalized in his repository); its ingredient identities checked by check.py",
+    "novelty": "new as far as found: the reduction of row-linear separation for the left-pigeon principle to a static kernel; elementary given Braun's lemmas"
+  }
+}

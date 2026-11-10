@@ -1,0 +1,33 @@
+{
+ "schema_version": 3,
+ "artifact_id": "HOLE-SEP-20261110-001Z-P001",
+ "kind": "proof",
+ "ticket": "HOLE-SEP-20261110-001Z",
+ "proof": "HOLE-SEP-20261110-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing HOLE-SEP-20261110-001: one line per conclusion with its status, novelty and evidence (ticket A proved; ticket B's P1 held and P2 was refuted, triggering stop rule (b)), the items pending the owner, and the end-of-epic recommendation. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json": "Proved",
+   "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/result.json": "passed",
+   "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/contract.json": "Frozen",
+   "artifacts/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run/result.json": "run output",
+   "artifacts/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run/interpretation.md": "frozen statement",
+   "research/HOLE-SEP-20261110-001/separation_statement.md": "frozen statement"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "refuted"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -1,0 +1,55 @@
+{
+ "ticket": "HOLE-SEP-20261110-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json": "82b20ed526a38a9618965517981a7c328f6dbb6247e647331909cfb225ce557c",
+    "experiments/HOLE-SEP-20261110-001B/HOLE-SEP-20261110-001B-E001_decoder_kernel/run.py": "68cd9a8e3f1fac66543edc836756e023e47c7f8f31344a2e0e88682092413caa",
+    "research/HOLE-SEP-20261110-001/separation_statement.md": "252e586aaba12c912a1d49d63cd37935420ed194b1e84761093d5e7f98557337"
+   }
+  },
+  "1_indicator_decodes_to_a_cell": {
+   "pass": true,
+   "info": {
+    "(n, x, h) cases": 92,
+    "n": [
+     4,
+     8
+    ]
+   }
+  },
+  "2_hole_bits_decode_to_weighted_hole_sums": {
+   "pass": true,
+   "info": {
+    "n": [
+     4,
+     8
+    ]
+   }
+  },
+  "3_inverse_counting_identities_in_the_kernel": {
+   "pass": true,
+   "info": {
+    "4": {
+     "in K_1": true,
+     "count": 9
+    },
+    "8": {
+     "in K_1": true,
+     "count": 16
+    },
+    "16": {
+     "in K_1": true,
+     "count": 25
+    },
+    "32": {
+     "in K_1": true,
+     "count": 36
+    }
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 0.6
+}

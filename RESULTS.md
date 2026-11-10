@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**289 current results** and 5 superseded ones, from 256 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**290 current results** and 5 superseded ones, from 256 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 51 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 17 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 18 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 78 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -343,6 +343,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-10 · The sphere's count needs exponential size in bounded-depth Frege** (`COUNT-SYSTEMS-20261110-001-D001`).
   Every depth-d Frege refutation of the octahedral knot sphere's NAE formula has size exp(n^{eps_d}): the binary left-pigeon principle reduces to SINK, SINK to one-sided grid Sperner and grid Sperner to the sphere by shallow decision trees, and the bijective pigeonhole principle needs exponential size at every fixed depth. Res(xor) and cutting planes remain open.
   [proof P001](proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/proof.md), [epic closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Row-linear separation for bit LeftPigeon is a static kernel question** (`HOLE-SEP-20261110-001-D001`).
+  For the binary left-pigeon principle, a row-linear polynomial derived in polynomial-calculus degree B, with 2lB - 1 <= n, lies in a fixed kernel of the decoder to Braun's unary pigeonhole system; that kernel contains the inverse-counting identities, summing over holes equals summing over pigeons, and at degree 2 it is a fraction near (l+1)^2 k / v of the row-linear space.
+  [proof P001](proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/proof.md), [epic closure](proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · The sphere's count needs polynomial-calculus degree n^{Omega(1)} over every field** (`PC-COUNT-20261110-001-D001`).
   Over every field, every polynomial-calculus refutation of the octahedral knot sphere's count has degree at least c n^{1/4}/log n, because a low-degree refutation would give one for the functional pigeonhole principle on an expander. Over F2, tree-like Res(xor) refutations of the count therefore need size 2^{Omega(n^{1/4}/log n)}.
   [proof P001](proofs/PC-COUNT-20261110-001A/PC-COUNT-20261110-001A-P001_degree_through_the_pigeonhole_principle/proof.md), [epic closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md)
@@ -1240,7 +1243,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Learning that grows a handle (`GROW-HANDLE-20261110-001`) | [closure](proofs/GROW-HANDLE-20261110-001Z/GROW-HANDLE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-HANDLE-20261110-001/) |
 | 2026-11-10 | Growth that stops (`GROW-STOP-20261110-001`) | [closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STOP-20261110-001/) |
 | 2026-11-10 | Grow where learning is stuck (`GROW-STUCK-20261110-001`) | [closure](proofs/GROW-STUCK-20261110-001Z/GROW-STUCK-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STUCK-20261110-001/) |
-| 2026-11-10 | Hole-row separation for bit LeftPigeon (`HOLE-SEP-20261110-001`) | — | [folder](research/HOLE-SEP-20261110-001/) |
+| 2026-11-10 | Hole-row separation for bit LeftPigeon (`HOLE-SEP-20261110-001`) | [closure](proofs/HOLE-SEP-20261110-001Z/HOLE-SEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/HOLE-SEP-20261110-001/) |
 | 2026-11-10 | Growth on an invertible substrate (`INVERT-STEP-20261110-001`) | [closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/INVERT-STEP-20261110-001/) |
 | 2026-11-10 | The Jordan chains from one polynomial (`JORDAN-CHAINS-20261110-001`) | [closure](proofs/JORDAN-CHAINS-20261110-001Z/JORDAN-CHAINS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/JORDAN-CHAINS-20261110-001/) |
 | 2026-11-10 | The Kloosterman lower bounds (`KLOOSTERMAN-BOUNDS-20261110-001`) | [closure](proofs/KLOOSTERMAN-BOUNDS-20261110-001Z/KLOOSTERMAN-BOUNDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/KLOOSTERMAN-BOUNDS-20261110-001/) |

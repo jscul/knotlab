@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "WEAK-APER-20261110-001Z-P001",
+  "canonical_id": "WEAK-APER-20261110-001Z-P001",
+  "kind": "proof",
+  "ticket": "WEAK-APER-20261110-001Z",
+  "proof": "WEAK-APER-20261110-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of weakly aperiodic laws under Leibniz's rule",
+  "status": "Proved",
+  "claim": "Ledger closing WEAK-APER-20261110-001: one line per conclusion with its status, novelty and evidence (ticket A, proved: Theorem W, every infinite shift of finite type on F2 has a solution with trivial stabilizer, so under Leibniz's rule the tree is a board exactly when a law has infinitely many solutions and no law forces the plane; the balance criterion and its potentials; L1, L2 and the mirrored horofunction; the drift theorem for level laws on Z/3, found after the census; ticket B, refuted: the frozen census, C1 failed with 10 laws undecided and settled by proof, C2 held), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "WEAK-APER-20261110-001A",
+    "WEAK-APER-20261110-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+    "The decision note or the pre-registration is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "WEAK-APER-20261110-001",
+    "epic_path": [
+      "WEAK-APER-20261110-001"
+    ],
+    "parents": [
+      "proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/manifest.json",
+      "proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/result.json",
+      "experiments/WEAK-APER-20261110-001B/WEAK-APER-20261110-001B-E001_level_laws_on_three_values/contract.json",
+      "artifacts/WEAK-APER-20261110-001B/WEAK-APER-20261110-001B-E001_level_laws_on_three_values/census.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/manifest.json": "57f4200e27cc657195900d88f2a885bfd3b1d8e4aae7ef7135cd2756fde538f2",
+    "proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/result.json": "db10775b343a80e37ebb848334cc5b1ffe818a5ec26f290f7f5d697d30cd41da",
+    "experiments/WEAK-APER-20261110-001B/WEAK-APER-20261110-001B-E001_level_laws_on_three_values/contract.json": "0726de464599b8f75d69f88b9011a756264bc66ccc04c5799de39fc365bb22bd",
+    "artifacts/WEAK-APER-20261110-001B/WEAK-APER-20261110-001B-E001_level_laws_on_three_values/census.json": "5b2f10a3939ad691446124e7bc0b45398ec3492bb3019ab971e46fe30e34bae0"
+  },
+  "paths": {
+    "manifest": "proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/result.json",
+    "check": "proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-10.",
+    "status": "ledger checked by check.py",
+    "novelty": "not applicable: a closure ledger"
+  }
+}

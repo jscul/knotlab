@@ -13,8 +13,8 @@
   "proof": "WEAK-APER-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Free solutions without finite boards",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt and before ticket B's census. For a nearest-neighbour shift of finite type X on the tree of F2: to be proved (1) a finite board exists iff the balance equations over X's tree patterns have a nonzero nonnegative solution; (2) Lemma A'': infinitely many pairwise disjoint half-trees with two completions each in one solution give a solution with trivial stabilizer; (3) L1: a vertex type that reaches a branching choice and recurs in two different child directions gives such a solution; (4) L2: a solution whose orientation (one neighbour one level lower) points to an end fixed by no nontrivial element is free; (5) the target W: every infinite X has a free solution, or the gap stated.",
+  "status": "Proved",
+  "claim": "For a shift of finite type X on the tree of F2 over a finite alphabet (every finitary value law, after recoding): (1) a finite board exists iff the balance equations over X's tree patterns have a nonzero nonnegative solution (known: Piantadosi 2008, Theorem 3.6; Hellouin de Menibus and Maturana Cornejo, arXiv 1904.03907), and by Farkas' lemma there is none iff a potential on edge values makes every tree pattern gain; (2) Lemma A'': infinitely many pairwise disjoint non-rigid half-trees in one solution give a solution with trivial stabilizer; (3) L1, a doubly recurrent branching type, and (4) L2, Busemann functions mod 3 for a level law allowing (1, 0, 3), or their negatives for (3, 0, 1), each give such a solution; (5) Theorem W: every infinite X has a solution with trivial stabilizer (Case I by Lemma A''; Case II because the non-rigid ends of all solutions form a closed invariant set, hence the whole boundary, which contains an end fixed by no nontrivial element). So under Leibniz's rule the tree is a board exactly when a law has infinitely many solutions, none forces the plane, with Piantadosi's weakly periodic points no law forces one infinite board, and every infinite X is uncountable; the proof holds for F_n, n >= 2. (6, found after the census, not pre-registered) A level law on Z/3 with solutions has no finite board iff its tree patterns all drift up (more neighbours one level up than down) or all drift down. Checks (check.py, all passed): mirror invariance of the census, the 10 undecided laws settled by the mirrored horofunction, every balance verdict re-decided exactly (96 potentials, 32,604 explicit boards, 4 boards with potentials), small boards to 4 places consistent, and the 96 weakly aperiodic laws exactly the 48 + 48 drifting ones.",
   "dependencies": [
     "LEIBNIZ-BOARDS-20261110-001A"
   ],
@@ -51,9 +51,7 @@
     "check": "proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/check.py",
     "directory": "proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards"
   },
-  "remaining_obligations": [
-    "Targets 1 to 5, or the record of which fails and why"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -87,8 +85,8 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-10; read before publication by an independent referee (a fresh Claude agent given only the proof), which found no error and asked for the wording changes made.",
+    "status": "proved by hand; finite checks in check.py passed (result.json); target 6 added after the census and disclosed as post hoc",
+    "novelty": "Theorem W not found stated (bounded searches 2026-11-10: Piantadosi's 2008 paper and thesis, Cohen 2017, Bitar arXiv 2406.04132, Carroll and Penland, and the referee's searches); the argument is short and uses standard tools (Baire, Konig, the minimal boundary action), so folklore risk is moderate. Target 1 is known (Piantadosi 2008, Theorem 3.6; the Chazottes-Gambaudo-Gautero condition, Hellouin de Menibus and Maturana Cornejo arXiv 1904.03907). Targets 2 to 4 and 6 are elementary."
   }
 }

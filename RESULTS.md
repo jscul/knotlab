@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**303 current results** and 5 superseded ones, from 276 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**304 current results** and 5 superseded ones, from 276 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 20 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 79 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
@@ -722,6 +722,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-10 · A law that names no relation never forces an infinite board without allowing the tree** (`BOARD-DIST-20261110-001-D001`).
   With names the words of F2 and an identity distinction per pair, a law over a finite alphabet whose identity literals relate only the same offset of two names, and which allows an infinite board, also allows the tree, so no such law forces the plane (proved). One named relation, the commutator, with an aperiodic tile law forces exactly the plane.
   [proof P001](proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/proof.md), [epic closure](proofs/BOARD-DIST-20261110-001Z/BOARD-DIST-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Every infinite law on the tree of names has a solution that repeats nowhere** (`WEAK-APER-20261110-001-D001`).
+  Every infinite shift of finite type on the free group F2, over any finite alphabet, has a solution with trivial stabilizer, so under Leibniz's rule the tree is a board exactly when a law with finite windows has infinitely many solutions, and no such law forces the plane. A level law on Z/3 with solutions has no finite board exactly when its solutions drift up or down.
+  [proof P001](proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/proof.md), [epic closure](proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1322,6 +1325,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Growth that rounds the reading (`ROUND-READ-20261110-001`) | [closure](proofs/ROUND-READ-20261110-001Z/ROUND-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/ROUND-READ-20261110-001/) |
 | 2026-11-10 | Bit LeftPigeon as Braun's second family (`SEP-LEFT-20261110-001`) | [closure](proofs/SEP-LEFT-20261110-001Z/SEP-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/SEP-LEFT-20261110-001/) |
 | 2026-11-10 | Tree-like Res(xor) on the sphere's count (`TREE-XOR-20261110-001`) | [closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-XOR-20261110-001/) |
-| 2026-11-10 | Weakly aperiodic laws under Leibniz's rule (`WEAK-APER-20261110-001`) | — | [folder](research/WEAK-APER-20261110-001/) |
+| 2026-11-10 | Weakly aperiodic laws under Leibniz's rule (`WEAK-APER-20261110-001`) | [closure](proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WEAK-APER-20261110-001/) |
 | 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |
 

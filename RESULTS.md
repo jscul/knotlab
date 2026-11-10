@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**284 current results** and 5 superseded ones, from 247 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**285 current results** and 5 superseded ones, from 248 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 51 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 14 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 15 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 78 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 7 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 247 epics with their closures
+- [Epics](#epics): all 248 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -343,6 +343,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-10 · The sphere's count needs exponential size in bounded-depth Frege** (`COUNT-SYSTEMS-20261110-001-D001`).
   Every depth-d Frege refutation of the octahedral knot sphere's NAE formula has size exp(n^{eps_d}): the binary left-pigeon principle reduces to SINK, SINK to one-sided grid Sperner and grid Sperner to the sphere by shallow decision trees, and the bijective pigeonhole principle needs exponential size at every fixed depth. Res(xor) and cutting planes remain open.
   [proof P001](proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/proof.md), [epic closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · The sphere's count needs polynomial-calculus degree n^{Omega(1)} over every field** (`PC-COUNT-20261110-001-D001`).
+  Over every field, every polynomial-calculus refutation of the octahedral knot sphere's count has degree at least c n^{1/4}/log n, because a low-degree refutation would give one for the functional pigeonhole principle on an expander. Over F2, tree-like Res(xor) refutations of the count therefore need size 2^{Omega(n^{1/4}/log n)}.
+  [proof P001](proofs/PC-COUNT-20261110-001A/PC-COUNT-20261110-001A-P001_degree_through_the_pigeonhole_principle/proof.md), [epic closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md)
 - **2026-11-10 · Parity decision trees on the sphere's count need polynomial depth** (`TREE-XOR-20261110-001-D001`).
   Every parity decision tree that finds a violated line of the octahedral knot sphere, hence every tree-like Res(xor) refutation of its count, has depth at least c n^{1/8}/log n, because a shallow parity tree is a low-degree F2 refutation and the count needs F2 degree polynomial in n. Its size is at least 2 to its F2 polynomial-calculus degree minus 3.
   [proof P001](proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/proof.md), [epic closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md)
@@ -1232,6 +1235,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | A plane of long rings (`LONG-RINGS-20261110-001`) | [closure](proofs/LONG-RINGS-20261110-001Z/LONG-RINGS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-RINGS-20261110-001/) |
 | 2026-11-10 | Let the state move while learning acts (`MOVING-STATE-20261110-001`) | [closure](proofs/MOVING-STATE-20261110-001Z/MOVING-STATE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/MOVING-STATE-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
+| 2026-11-10 | F2 polynomial calculus on the sphere's count (`PC-COUNT-20261110-001`) | [closure](proofs/PC-COUNT-20261110-001Z/PC-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/PC-COUNT-20261110-001/) |
 | 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |
 | 2026-11-10 | A temporary rise (`RISE-ESCAPE-20261110-001`) | [closure](proofs/RISE-ESCAPE-20261110-001Z/RISE-ESCAPE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RISE-ESCAPE-20261110-001/) |
 | 2026-11-10 | Tree-like Res(xor) on the sphere's count (`TREE-XOR-20261110-001`) | [closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-XOR-20261110-001/) |

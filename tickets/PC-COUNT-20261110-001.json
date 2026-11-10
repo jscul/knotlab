@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spheres",
+      "threefold"
+    ],
+    "program": "complexity",
+    "takes": [
+      "B84"
+    ]
+  },
+  "id": "PC-COUNT-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up backlog B84 (G3), selected by the coordinator on 2026-11-10: the F2 polynomial-calculus degree of the sphere's count, which by TREE-XOR-20261110-001B also bounds tree-like Res(xor) size. Bound the degree from below through a published pigeonhole bound and the program's reductions, and read the exact degree on the small spheres K_2 and K_3 under a frozen prediction.",
+  "ownership": {
+    "root": true,
+    "scope_id": "PC-COUNT-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10: over every field every polynomial-calculus refutation of the sphere's count has degree at least c n^{1/4}/log n (FPHP on an expander, Miksa-Nordstrom, through LeftPigeon and COUNT-SYSTEMS-20261110-001A's chain), so over F2 tree-like Res(xor) needs size 2^{Omega(n^{1/4}/log n)} and parity trees depth Omega(n^{1/4}/log n); the exact F2 polynomial-calculus degree is 3 on K_2, 4 on K_3, at least 5 on K_4 (pre-registered). Recommendation Research directions, none selected.",
+  "status_class": "complete",
+  "stop_rule": "Stop at a degree lower bound for the count, or a low-degree refutation, or the reason the known methods stop; and at the frozen small-sphere readings.",
+  "title": "F2 polynomial calculus on the sphere's count"
+}

@@ -1,0 +1,73 @@
+{
+ "ticket": "PC-COUNT-20261110-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/check.py": "cd8e7816133505424a45be334f9afca7a1225b2994f0ba7743b4976e5ddbda9e",
+    "proofs/COUNT-SYSTEMS-20261110-001A/COUNT-SYSTEMS-20261110-001A-P001_bounded_depth_frege/manifest.json": "ba3dbdd74d050f34e04fa5c16eba2ba455339a3b8701356a97e2b96dce7d2d99",
+    "proofs/COUNT-TFNP-20261107-001A/COUNT-TFNP-20261107-001A-P001_one_sided_grid_sperner_is_ppads_hard/tube_lib.py": "305e5b39e2b7ab664a8c7a2643f36db582c2b74f9eee9811bf55eeef2c67321d",
+    "proofs/TREE-XOR-20261110-001A/TREE-XOR-20261110-001A-P001_parity_trees_need_polynomial_depth/manifest.json": "ec1e207e49bd73987b80b2411a1929f65620a67babdd4e1981076228403504eb",
+    "proofs/TREE-XOR-20261110-001B/TREE-XOR-20261110-001B-P001_size_from_pc_degree/manifest.json": "124202ad9159ceabcebe7bce9ee4ee9e8016371f09ff4c5208ab9991fb0bd013"
+   }
+  },
+  "1_fphp_reduces_to_left_pigeon": {
+   "pass": true,
+   "info": {
+    "graphs (N = 1, 2 all; N = 3: 300 random)": 328,
+    "assignments": 64692,
+    "answers decoded": 143184,
+    "most reads beyond the hole degree": 2
+   }
+  },
+  "2_composed_with_the_chain_to_the_sphere": {
+   "pass": true,
+   "info": {
+    "FPHP_G instances with N = 2": 72,
+    "counterclockwise full triangles decoded": 76
+   }
+  },
+  "3_sizes_n_is_order_N_to_the_fourth": {
+   "pass": true,
+   "info": [
+    {
+     "N": 2,
+     "grid side": 228,
+     "k": 460,
+     "n": 846400,
+     "N / n^(1/4)": 0.066
+    },
+    {
+     "N": 3,
+     "grid side": 336,
+     "k": 676,
+     "n": 1827904,
+     "N / n^(1/4)": 0.082
+    },
+    {
+     "N": 4,
+     "grid side": 468,
+     "k": 940,
+     "n": 3534400,
+     "N / n^(1/4)": 0.092
+    },
+    {
+     "N": 5,
+     "grid side": 624,
+     "k": 1252,
+     "n": 6270016,
+     "N / n^(1/4)": 0.1
+    },
+    {
+     "N": 6,
+     "grid side": 804,
+     "k": 1612,
+     "n": 10394176,
+     "N / n^(1/4)": 0.106
+    }
+   ]
+  }
+ },
+ "status": "passed",
+ "seconds": 47.9
+}

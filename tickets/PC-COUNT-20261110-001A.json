@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "COUNT-SYSTEMS-20261110-001A",
+    "TREE-XOR-20261110-001A",
+    "TREE-XOR-20261110-001B"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "PC-COUNT-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that the sphere's count needs polynomial-calculus degree at least c n^{1/4}/log n over every field, F2 included: the functional pigeonhole principle on a bounded-degree boundary expander (Miksa and Nordstrom: degree linear in the holes over every field) reduces by shallow decision trees to LeftPigeon and, through COUNT-SYSTEMS-20261110-001A's chain, to the count, and polynomial-calculus degree transfers through such reductions. With TREE-XOR-20261110-001B this gives tree-like Res(xor) size 2^{Omega(n^{1/4}/log n)} and improves TREE-XOR-20261110-001A's depth bound to the same order.",
+  "ownership": {
+    "root": false,
+    "scope_id": "PC-COUNT-20261110-001"
+  },
+  "parent": "PC-COUNT-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10 (from Miksa and Nordstrom's degree bound and the program's reductions): over every field the count needs polynomial-calculus degree at least c n^{1/4}/log n; over F2, tree-like Res(xor) size 2^{Omega(n^{1/4}/log n)} and parity-tree depth Omega(n^{1/4}/log n). Known-with-delta, folklore risk high.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The count needs F2 polynomial-calculus degree n^{Omega(1)}"
+}

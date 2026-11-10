@@ -103,3 +103,11 @@ stays apart.
 supports. **Goals:** G15 checkpoint (capability gained); B109 and B112 taken; B110 closed as answered; B115 added. **Assumptions:** none
 new or changed.
 **Basket:** B106, `NEST-ATOMS-20261110-001`#4; taken: B106 as the selected next step.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (05:47 UTC): the answer (AND only, proved for every host built from knot spheres
+and class-forced lattice tori), why (lemma M, the Hall count on spheres closing B110, growth keeping criticality), the empty search (no
+unsatisfiable class in seven branched covers; the Fano cover undefined under the frozen rule), ticket C's failed locality and its proved
+replacement, the note that another thread's commit `3677826e6` took this epic's files from the shared working tree before `commit_epic`
+ran, both tables above with B106 selected, the Corrections, Goals and Assumptions lines, and the Basket line.

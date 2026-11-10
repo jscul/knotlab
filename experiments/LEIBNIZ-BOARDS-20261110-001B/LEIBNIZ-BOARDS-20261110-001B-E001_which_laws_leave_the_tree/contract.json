@@ -15,7 +15,7 @@
   "plane reading (class A)": "Some solution on a torus Z^2/Lambda of index at most 16 has a cell or a 2 x 2 block that can be refilled differently with every pattern still allowed: then independent refills at sparse translates give aperiodic solutions on the plane, so the plane is a board. Otherwise not decided."
  },
  "public_inputs": {
-  "code": "census.py (sha256 81a3836cb432386f2b55d344308e6f6b940b809cdd047ce0eae72d44108482f5) beside this file, importing board_lib.py of BOARD-DIST-20261110-001B-E001 (sha256 72a52aafee769792d1c0eb4ca5c7a2e1d4d446876994fee6b20875f660132458); numpy.",
+  "code": "census.py (sha256 ebdd25b1ed6c99a63f384ee1755d6664e77499358232ae92e65a6e67c56ff699) beside this file, importing board_lib.py of BOARD-DIST-20261110-001B-E001 (sha256 72a52aafee769792d1c0eb4ca5c7a2e1d4d446876994fee6b20875f660132458); numpy.",
   "run": "census.py --nmax 6 --nmax-rest 8; output artifacts/LEIBNIZ-BOARDS-20261110-001B/LEIBNIZ-BOARDS-20261110-001B-E001_which_laws_leave_the_tree/census.json."
  },
  "forbidden_inputs": [
@@ -33,5 +33,6 @@
   "plane reading": "Reported as a count; laws in A without a certificate are listed, not decided."
  },
  "stop_rule": "One run on the frozen family; no rerun with changed bounds.",
- "runtime": "Expected minutes; registered in docs/LONG_RUNNING.md before launch if expected past ten minutes, and run under systemd-run MemoryMax=16G with no swap."
+ "runtime": "Expected minutes; registered in docs/LONG_RUNNING.md before launch if expected past ten minutes, and run under systemd-run MemoryMax=16G with no swap.",
+ "revision_before_run": "2026-11-10, before any run of the family: census.py's plane reading was vectorized and now checks every solution on each torus, as the definition says (the first version checked one solution per torus and would have taken hours); the classes, bounds, prediction and decision rules are unchanged."
 }

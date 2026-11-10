@@ -74,40 +74,42 @@ def periodic_branching(boards, laws_masks, branch_masks):
     return found
 
 
-def plane_refill(L, tmax=16):
-    """A torus solution with a cell or a 2 x 2 block that can be refilled differently, every pattern still allowed: then the
-    plane carries aperiodic solutions (independent refills at sparse translates). Returns the torus (a, b, d) or None."""
+def plane_refill(L, tori_data):
+    """Some solution on a torus of index at most 16 has a cell or a 2 x 2 block that can be refilled differently with every
+    pattern still allowed (that is, a second solution differing from it only there): then independent refills at sparse
+    translates give aperiodic solutions on the plane. Returns the torus (a, b, d) or None."""
+    forb = (~np.int64(L)) & 0xFFFFFFFF
+    for abd, masks, diffs in tori_data:
+        valid = (masks & forb) == 0
+        sols = np.nonzero(valid)[0]
+        if len(sols) == 0:
+            continue
+        hit = valid[np.bitwise_xor.outer(sols, diffs)]
+        if hit.any():
+            return list(abd)
+    return None
+
+
+def tori_data(tmax=16):
+    """For each torus: the pattern masks of all colourings and the difference masks of every nonempty change inside a cell or
+    a 2 x 2 block (v, vx, vy, vxy)."""
+    out = []
     for (abd, bd) in bl.tori(tmax):
         sx, sy = bd
         n = len(sx)
-        six, siy = bl._inverse(sx), bl._inverse(sy)
-        nbrs = [(sx[v], six[v], sy[v], siy[v]) for v in range(n)]
-
-        def pat(col, v):
-            a, b, c, d = nbrs[v]
-            return bl.pattern(col[v], col[a], col[b], col[c], col[d])
-        for cbits in range(1 << n):
-            col = [(cbits >> v) & 1 for v in range(n)]
-            if not all((L >> pat(col, v)) & 1 for v in range(n)):
-                continue
-            # single cells and 2 x 2 blocks (v, vx, vy, vxy)
-            for v in range(n):
-                blocks = [(v,), (v, sx[v], sy[v], sy[sx[v]])]
-                for blk in blocks:
-                    cells = sorted(set(blk))
-                    for alt in itertools.product((0, 1), repeat=len(cells)):
-                        if all(col[c] == a for c, a in zip(cells, alt)):
-                            continue
-                        new = list(col)
-                        for c, a in zip(cells, alt):
-                            new[c] = a
-                        touched = set(cells)
-                        for c in cells:
-                            touched.update(nbrs[c])
-                        if all((L >> pat(new, w)) & 1 for w in touched):
-                            return list(abd)
-            break  # one solution per torus suffices to look for refills
-    return None
+        bits, masks = bl.board_patterns(bd)
+        diffs = set()
+        for v in range(n):
+            cells = sorted({v, sx[v], sy[v], sy[sx[v]]})
+            diffs.add(1 << v)
+            for r in range(1, len(cells) + 1):
+                for sub in itertools.combinations(cells, r):
+                    m = 0
+                    for c in sub:
+                        m |= 1 << c
+                    diffs.add(m)
+        out.append((abd, masks, np.array(sorted(diffs), dtype=np.int64)))
+    return out
 
 
 def main():
@@ -154,9 +156,10 @@ def main():
             r['periodic_branching_board'] = [list(b[0]), list(b[1])]
         else:
             r['class'] = 'U'
+    td = tori_data()
     for j, (k, L) in enumerate(fam):
         if res[k]['class'] == 'A':
-            res[k]['plane_refill_torus'] = plane_refill(L)
+            res[k]['plane_refill_torus'] = plane_refill(L, td)
     counts = {}
     for k, r in res.items():
         if k.startswith('L'):

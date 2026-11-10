@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "GROW-STOP-20261110-001A-P001",
+  "canonical_id": "GROW-STOP-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "GROW-STOP-20261110-001A",
+  "proof": "GROW-STOP-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A grown plane that stops reads the fixed torus's distances, scaled by the growth",
+  "status": "Proved",
+  "claim": "After the doubling law at every lag for k lags and a stop, for every ring X, contact c and lag T after the stop, c needs X in the stopped run exactly when it does in the fixed (n 2^k x m 2^k)-torus run from an open first row, with or without contacts frozen from the stop on; so the stopped plane reads that torus's cut length, time length and plain first need, its original rings 2^k ring steps apart per original step. Computed: schedules that isolate their rings (P = 3 at g = 2) agree with the fixed torus after a stop; those whose rings hear each other (P = 2, 4 at g = 2 and 3) do not.",
+  "dependencies": [
+    "DISTANCE-20261108-001B",
+    "DOUBLE-BALANCE-20261109-001A",
+    "GROWN-DISTANCE-20261109-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A contact, original ring and lag after the stop at which the stopped run and the fixed torus disagree, under doubling at every lag."
+  ],
+  "lineage": {
+    "home_scope": "GROW-STOP-20261110-001",
+    "epic_path": [
+      "GROW-STOP-20261110-001"
+    ],
+    "parents": [
+      "experiments/BIRTH-RULE-20261109-001A/BIRTH-RULE-20261109-001A-E001_birth_rules/run.py",
+      "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json",
+      "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "experiments/BIRTH-RULE-20261109-001A/BIRTH-RULE-20261109-001A-E001_birth_rules/run.py": "700c9ed85da8852dd0c0d1941031b063c116aa3afe29f22186aeb660df7dd6ce",
+    "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json": "cc40bc02687e69af79c7c71b66feebc5df67ca24616a4ceb60aa76325860a082",
+    "proofs/DISTANCE-20261108-001B/DISTANCE-20261108-001B-P001_distance_across_time_is_native_as_a_cone/manifest.json": "cfa8fa26d7df3f5e629fb573d241bac4589e378535bd24aee4d061df6406c45d"
+  },
+  "paths": {
+    "manifest": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/manifest.json",
+    "identity": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/identity.json",
+    "proof": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/proof.md",
+    "result": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/result.json",
+    "check": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/check.py",
+    "directory": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The doubling law at every lag on square tubes of rule-60 rings with law (12,12) contacts, then a stop; whole-history needs (A30, A32), freezes (A38); open births (A44); declared rings (A45).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
+    "status": "proof by hand (a corollary of the transfer lemma); checked at the cell level; slower schedules computed",
+    "novelty": "known-with-delta"
+  }
+}

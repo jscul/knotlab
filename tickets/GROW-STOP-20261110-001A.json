@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DISTANCE-20261108-001B",
+    "DOUBLE-BALANCE-20261109-001A",
+    "GROWN-DISTANCE-20261109-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROW-STOP-20261110-001A-P001",
+    "terminal_artifact": "proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/manifest.json"
+  },
+  "id": "GROW-STOP-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that after the doubling law at every lag for k lags and a stop, every reading of an original ring from then on (the lags at which a contact needs it, with or without freezes) is the fixed (3 * 2^k)-torus's from an open first row, so the cut length, the time length and the plain first need between original rings are that torus's, the original rings 2^k ring steps apart per original step; check it at the cell level for k = 1, 2 at g = 2 and 3; and compute what slower schedules (doubling every 2 to 4 lags, k doublings) read after a stop against the same torus.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROW-STOP-20261110-001"
+  },
+  "parent": "GROW-STOP-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10 (by hand, from the transfer lemma; checked at the cell level; slower schedules computed): after the doubling law at every lag for k lags and a stop, every need of every ring, with or without freezes from the stop on, is the fixed (n 2^k x m 2^k)-torus's, so the stopped plane reads that torus's cut length, time length and plain first need, its original rings 2^k ring steps apart per original step. Schedules whose rings heard each other before the stop do not read the fixed torus (computed).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "A grown plane that stops reads the fixed torus's distances, scaled by the growth"
+}

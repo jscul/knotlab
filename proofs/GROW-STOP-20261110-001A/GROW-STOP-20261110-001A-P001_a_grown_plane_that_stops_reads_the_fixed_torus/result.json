@@ -1,0 +1,85 @@
+{
+ "ticket": "GROW-STOP-20261110-001A",
+ "artifact_id": "GROW-STOP-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "experiments/BIRTH-RULE-20261109-001A/BIRTH-RULE-20261109-001A-E001_birth_rules/run.py": "700c9ed85da8852dd0c0d1941031b063c116aa3afe29f22186aeb660df7dd6ce",
+    "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json": "cc40bc02687e69af79c7c71b66feebc5df67ca24616a4ceb60aa76325860a082"
+   }
+  },
+  "1 The theorem, doubling every lag: after the stop every contact's dependence on every original ring's first row, lag by lag for 60 lags, is the fixed torus's": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2, k = 1": [
+     648,
+     0
+    ],
+    "3 x 3, g = 2, k = 2": [
+     2592,
+     0
+    ],
+    "3 x 3, g = 2, k = 3": [
+     10368,
+     0
+    ],
+    "3 x 4, g = 2, k = 2": [
+     4608,
+     0
+    ],
+    "3 x 3, g = 3, k = 1": [
+     648,
+     0
+    ],
+    "3 x 3, g = 3, k = 2": [
+     2592,
+     0
+    ]
+   }
+  },
+  "2 The same with a contact frozen from the stop on": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2, k = 2, contact 0 frozen": [
+     2592,
+     0
+    ],
+    "3 x 3, g = 2, k = 2, contact 17 frozen": [
+     2592,
+     0
+    ],
+    "3 x 3, g = 3, k = 2, contact 5 frozen": [
+     2592,
+     0
+    ]
+   }
+  },
+  "3 Computed: slower schedules (k = 2 doublings, then a stop) against the fixed torus: pairs that differ": {
+   "pass": true,
+   "info": {
+    "g = 2, P = 2, k = 2": [
+     2592,
+     2160
+    ],
+    "g = 2, P = 3, k = 2": [
+     2592,
+     0
+    ],
+    "g = 2, P = 4, k = 2": [
+     2592,
+     2592
+    ],
+    "g = 3, P = 2, k = 2": [
+     2592,
+     2196
+    ],
+    "g = 3, P = 4, k = 2": [
+     2592,
+     2196
+    ]
+   }
+  }
+ },
+ "status": "passed"
+}

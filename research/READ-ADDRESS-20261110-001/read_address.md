@@ -43,3 +43,26 @@ None.
 - **#1** asks whether memory guides action: whether what was learned before changes how a new tension resolves.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B85 taken; B86 added. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:27 UTC).
+
+**B85 done: the learned address holds one size up, and the law itself can read it.** On the bigger sphere (K_4), learning wrote the two leftovers into every chosen pair of three atoms on every line type (15 of 15; 24 of 24 counting K_3). Reading needs no state and no outside search: in 23 of 24 cases the atoms holding the leftovers are exactly those whose own signs make them act as lines. The one exception ended with only one atom acting for two units. A random state shows the address only about one time in six. All of this is computed on small cases (K_3 and K_4, three atoms), so "memory" is still a small-case result.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: reading the address (B85) | **Status:** Partially successful | read from the law locally in 23 of 24 |
+| Local direction: a learned memory | Continue | written and read at two sphere sizes |
+| Broader exploration: learning program | Known alternatives | memory guiding later learning |
+| Long-term goal: G15 | Capability gained | memory each pattern carries in its signs |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Does the stored address steer later learning (B86) | 2/3 — Substantial | 2/3 — Testable | a fresh tension after writing → its resolution depends on the address, or not | Selected · awaiting go-ahead |
+| 2 | Write the roles too | 1/3 — Incremental | 3/3 — Ready | require named atoms to act as lines → every pair | Alternative · deferred |
+| 3 | Four atoms, three units | 1/3 — Incremental | 3/3 — Ready | every triple on K_3 → written, or not | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B85 taken; B86 added. **Assumptions:** none new.

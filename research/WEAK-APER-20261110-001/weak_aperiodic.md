@@ -95,9 +95,17 @@ An independent referee, a fresh Claude agent given only ticket A's proof, read i
     ends of its tree.
   - The finite-board criterion: Piantadosi (2008, Theorem 3.6); Chazottes, Gambaudo and Gautero; Hellouin de Menibus and Maturana
     Cornejo (arXiv 1904.03907, Theorems 3.5 and 3.11).
-- **Classification.** Theorem W was not found stated (bounded searches, 2026-11-10, including Piantadosi's thesis, the papers of
-  Cohen and Bitar, and the referee's own searches). The argument is short and uses standard tools, so the folklore risk is moderate;
-  this is not a priority claim. Conclusion 3's criterion is known, and conclusion 4 is elementary.
+- **What the nearest results imply (added 2026-11-10 at the coordinator's request).**
+  - Piantadosi (2008) and Cohen (2017) prove the opposite existence statement: every nonempty SFT on a free group, and on any
+    finitely generated group with two or more ends, has a point with nontrivial stabilizer. Neither says anything about free points,
+    so neither implies Theorem W. Together with it, every infinite SFT on F_n has both kinds of point.
+  - Ends alone do not give W. Z × Z/2 has two ends, and the rule x(g) = x(gt) for its central involution t defines an infinite SFT
+    in which t fixes every point. So W uses more than the ends: the free group has no torsion, and it acts minimally on the ends of
+    its tree.
+- **Classification.** Theorem W is proved here and not found in the literature so far (bounded searches, 2026-11-10, including
+  Piantadosi's thesis, the papers of Cohen and Bitar, and the referee's own searches). The argument is short and uses standard tools,
+  so the folklore risk is moderate; this is not a priority claim, and the further search of direction 4 is still to come. Conclusion
+  3's criterion is known, and conclusion 4 is elementary.
 
 ## Workspace assumptions
 

@@ -94,7 +94,7 @@ Since the epic opened:
 | Long-term goal — G3 Hardness at three places | Capability gained | Separation for the left-pigeon principle is now one counting question about a kernel |
 
 **Corrections:** one, the frozen rule's reading (Not a block; `docs/CORRECTIONS.md`). **Goals:** a G3 checkpoint (capability gained);
-B103 taken; one sub-goal added. **Assumptions:** none.
+B103 taken; sub-goal B107 added. **Assumptions:** none.
 
 - **What the attempt leaves open.** A bound on dim K_k at k ≈ n/(24 l²); the unidentified part of K_2.
 
@@ -112,5 +112,5 @@ B103 taken; one sub-goal added. **Assumptions:** none.
 2. **Cutting planes.** As in `COUNT-SYSTEMS-20261110-001`.
 3. **The parity reduction.** As in `RES-XOR-COUNT-20261110-001`.
 
-**Recommendation.** Continue with direction 1, recorded as a sub-goal under the owner's rule for untaken 3/3 directions, for the
+**Recommendation.** Continue with direction 1, recorded as sub-goal B107 under the owner's rule for untaken 3/3 directions, for the
 coordinator to confirm.

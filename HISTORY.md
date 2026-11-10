@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: a large decoder kernel does not close the left-pigeon route
+
+- The frozen statement of `HOLE-SEP-20261110-001` said that a kernel above
+  10% at n = 16 and degree 2 would mean its route could not give a dense
+  separated space. The kernel came out at 32%, but a kernel that size costs
+  the lower bound only a constant factor, so the reading does not follow. The
+  epic stopped as its rule said, and the question it should have asked is
+  recorded as the next step.
+
 ## 10 November 2026: a dag-like Res(⊕) bound is known, for bit PHP
 
 - The decision note of `PC-COUNT-20261110-001` said that no superpolynomial

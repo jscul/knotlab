@@ -29,6 +29,19 @@ of knots under growth while running is therefore not a defect of rule 60 that an
 breaks them is what any persistent contact on a finite network needs. Growth keeps knots by giving the network new beginnings, as the
 doubling law does, not by reading a later row.
 
+## Reconciliation with `DOUBLE-BALANCE-20261109-001A`
+
+That proof of balance under doubling every lag rests on an invertible map, and the two results do not conflict, for three reasons
+(ticket A's remark and check 4):
+- **Different maps.** Its invertible map is the evolution of one ring's own cells, read as their parts over that ring's born cells,
+  with every contact newborn before each step and so carrying none of them: a unipotent map on own cells alone. The theorem here is
+  about the network's whole step, which there is rule 60 with law (12, 12) and forgets (its rank falls short on every tube read).
+- **No fixed network while growing.** Doubling every lag never leaves the network fixed, and the theorem speaks only of a fixed finite
+  network; each contact's first value is discarded at its rebirth, itself a way of forgetting.
+- **Stages forget.** Once growth stops, the stage runs rule 60's forgetting step, and its contacts persist as the static stage's do.
+
+So the transfer lemma needs invertibility inside a ring's own cells, and persistence needs the step as a whole to lose information.
+
 ## Reading
 
 **Interpretation, not a theorem.**
@@ -80,7 +93,7 @@ doubling law does, not by reading a later row.
 | Broader exploration — G1 with G5 | Known alternatives | The proof pair B55 and B64; shaped growth that stops (B65); a reversible substrate that never stops growing |
 | Long-term goal — G5 Dynamics (question 4) | Obstruction learned | A process keeps its contacts' knots across time only if its law forgets |
 
-**Corrections:** none. **Goals:** a G1 and G5 checkpoint (obstruction learned), B39 marked taken, backlog B66 added. **Assumptions:**
+**Corrections:** none. **Goals:** a G1 and G5 checkpoint (obstruction learned), B39 marked taken, backlog B67 added. **Assumptions:**
 none.
 
 **Next step:** Research directions.
@@ -90,12 +103,12 @@ none.
 | 1 | Why odd spacings keep balance (B55) | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |
 | 2 | Why crossing breaks balance (B64) | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |
 | 3 | Shaped growth that stops (B65) | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |
-| 4 | A reversible substrate that never stops growing (B66) | 2/3 — Substantial | 2/3 — Testable | Run the doubling law on second-order rule 60, which the theorem leaves open because the network is never fixed, and read binding while it grows → contacts bound at every lag while growth lasts, or the lag where binding fails | Alternative · deferred |
+| 4 | A reversible substrate that never stops growing (B67) | 2/3 — Substantial | 2/3 — Testable | Run the doubling law on second-order rule 60, which the theorem leaves open because the network is never fixed, and read binding while it grows → contacts bound at every lag while growth lasts, or the lag where binding fails | Alternative · deferred |
 
 1. **B55.** Payoff 2: half of a theorem that would make the exclusion between knots and distance while growing exact. Concreteness 2.
 2. **B64.** The other half. Payoff 2, Concreteness 2.
 3. **B65.** Payoff 2: growth that chooses a shape, then reads it. Concreteness 2: the GROW-STOP check extends to partial doubling.
-4. **B66.** Payoff 2: the mirror of `GROW-STOP-20261110-001`, knots kept only while growing. Concreteness 2: second-order doubling
+4. **B67.** Payoff 2: the mirror of `GROW-STOP-20261110-001`, knots kept only while growing. Concreteness 2: second-order doubling
    has to be written.
 
 **Recommendation.** Research directions: #1 and #2 together, as the proof pair for the exclusion, since growth then reading is now

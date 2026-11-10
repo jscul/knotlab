@@ -2091,7 +2091,21 @@ So network holes come in two kinds:
      differ from the fixed torus's for most pairs; every 3 lags at g = 2, which isolates, reads it exactly.
    - **Reading.** Making and reading are two phases. The law grows a plane that reads no distance while it grows; once it stops, the
      plane reads its own distance as a fixed torus does, the distance between original rings scaled by the growth it went through.
-   - **Next (selected, B39).** An invertible substrate ([decision note](../research/GROW-STOP-20261110-001/grow_stop.md)).
+   - **Next (taken: B39, next entry).** An invertible substrate ([decision note](../research/GROW-STOP-20261110-001/grow_stop.md)).
+
+   **2026-11-10: persistence needs forgetting** (`INVERT-STEP-20261110-001`).
+   - **The question.** Backlog B39: on a substrate whose step is invertible every row is open, so growth while running could be read
+     from any row. Is there one whose contacts persist?
+   - **No, on any finite network (proved).** An invertible step permutes the finite set of states, so some power of it is the identity.
+     At that lag every contact holds exactly its own first value, which neither ring decides, and erasing either ring changes nothing:
+     no contact persists. So wherever a contact persists the law loses information, and no row after the first is open, for every rule
+     and contact law. Checked on 256 linear substrates, first and second order, on five tubes: every invertible one fails by lag 336.
+   - **Not in conflict with doubling.** `DOUBLE-BALANCE-20261109-001A` uses an invertible map, but it is a ring's own cells' evolution
+     while every contact is reborn, not the step; the step there is rule 60's, which forgets.
+   - **Reading.** A finite world whose contacts keep their knots across time has an irreversible law. Growth keeps knots by giving the
+     network new beginnings, as the doubling law does, not by reading a later row.
+   - **Next (research directions).** The proof pair B55 and B64 for the exclusion while growing; a reversible substrate that never stops
+     growing (B67) ([decision note](../research/INVERT-STEP-20261110-001/invert_step.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

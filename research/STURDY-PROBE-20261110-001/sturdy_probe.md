@@ -89,3 +89,44 @@ whose tension it cannot walk away.
 B135 added. **Assumptions:** none new or changed.
 **Basket:** B133 (three held inputs), B135 (deeper memories from examples), B130 (a probe that is a theorem); taken: B133 as the selected
 next step.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-10:
+
+**B134 is closed and its mark was met. The sturdier probe never stopped falsely, and with it the credit learner learned every gate it was asked for, through composites too.** The only change: each negative check is now four 25,000-step walks, one from the current state and three from fresh states. Across 156 writes and 39 runs of the impossible AND, there were no inexact stops and AND never stopped. It cost 2.5 times the old probe's walk steps on the same run (335 million against 136 million, about 3 probe steps per learner step). All three runs took 15.5 minutes and reproduce.
+
+**Which earlier figures survive the re-check.** Every count since B119 was scored by SAT on the law at each stop, so a fooled probe never inflated one; it only stopped a run early, as an inexact stop. With the sturdier probe:
+
+| Figure | Before | With the sturdier probe |
+| --- | --- | --- |
+| Native writes (B119) | 100 of 100 | untouched (its own probe, never fooled) |
+| Fixed learner, leaves | 55 of 56 | 56 of 56 |
+| Fixed learner, composites | 10 of 16 | 10 of 16 |
+| Credit learner, S3 and S4 composites | 11 of 16 | 16 of 16 |
+| Credit learner, S5 (one size past) | 21 of 24, 12 of 12 | 24 of 24, 12 of 12 |
+
+That reverses B132's reading, so I logged a correction (Narrowing): credit from pinned dissonance does help. It turned on 8 of 8 composite gates against the fixed learner's 4 of 8. Mark M stands as computed with the old probe; what it was really measuring was the probe.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a probe that is not fooled (B134) | **Status:** Successful | mark met at 2.5 times the probe's cost; every figure stays or rises |
+| Local direction: learning gates of held inputs | Exhausted for this phase | every gate target learned at every leaf and composite tested |
+| Broader exploration: learning program | Known alternatives | three held inputs, deeper memories, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | gates through composites learned from examples natively, with no false stops |
+
+**Next step:** Research directions, selected #1 (as you set).
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Three held inputs (B133) | 2/3 Substantial | 2/3 Testable | census of maps with three held points (self-duality allows majority and parity), then learn parity with the credit learner and the sturdier probe → a learned map that isn't unate, or a proof none exists | Selected, awaiting go-ahead |
+| 2 | Deeper memories from examples (B135) | 2/3 Substantial | 2/3 Testable | composites of three atoms and composites within composites, same learner and probe → gates at every depth tested, or the depth where the budget runs out | Deferred |
+| 3 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded, now for both probes | Deferred |
+| 4 | A cheaper sturdy probe | 1/3 Incremental | 2/3 Testable | fewer or shorter negative walks with the same mark → the cheapest probe with no false stop | Deferred |
+
+**Corrections:** one, Narrowing: B132's "credit did not make a better learner" was the old probe's doing.
+**Goals:** G15 checkpoint (capability gained); B134 taken; B135 added.
+**Assumptions:** none new or changed.
+**Basket:** B133 (three held inputs), B135 (deeper memories), B130; taken: B133 as the selected next step.
+
+The probe's reliability is still computed, not proved. B133 waits for a go-ahead.

@@ -51,3 +51,26 @@ label and gain this confirmation.
 - **#1** asks whether the network can read its own memory, without the experimenter's SAT census.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B81 taken; B85 added. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:22 UTC).
+
+**B81 done: learning can write an address, and B80's result is now confirmed under a frozen prediction.** On six starts I hadn't used before, the pre-registered targeted search carried the leftover to the other atom every time. With three atoms there are two leftover units. Learning, with the state moving, put them in every chosen pair of atoms, on all three line types of K_3 (9 of 9). The chosen atoms end up acting as lines and the third goes transparent. Put together with B79 (the law holds the leftover in every state) and B72 (the point's motion can't carry it out), the leftovers behave like a memory. Learning writes it, the law keeps it, and you read it from where the tension sits.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a learned address (B81) | **Status:** Successful | every chosen pair reached; B80 confirmed |
+| Local direction: learning places tension | Continue | writing works; reading is next |
+| Broader exploration: learning program | Known alternatives | native reading, cost of writing |
+| Long-term goal: G15 | Capability gained | a learned, persistent memory |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Reading the address natively (B85) | 2/3 — Substantial | 2/3 — Testable | probes the law and state supply → tell the holders apart, or not | Selected · awaiting go-ahead |
+| 2 | The cost of writing | 1/3 — Incremental | 3/3 — Ready | shortest paths → a cost per unit moved | Alternative · deferred |
+| 3 | Why the trap holds (B78) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B81 taken; B85 added. **Assumptions:** none new.

@@ -1295,7 +1295,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Reading the address natively (`READ-ADDRESS-20261110-001`) | [closure](proofs/READ-ADDRESS-20261110-001Z/READ-ADDRESS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-ADDRESS-20261110-001/) |
 | 2026-11-10 | Reading distance while growing (`READ-GROW-20261110-001`) | [closure](proofs/READ-GROW-20261110-001Z/READ-GROW-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/READ-GROW-20261110-001/) |
 | 2026-11-10 | Res(xor) beyond tree-like on the sphere's count (`RES-XOR-COUNT-20261110-001`) | [closure](proofs/RES-XOR-COUNT-20261110-001Z/RES-XOR-COUNT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RES-XOR-COUNT-20261110-001/) |
-| 2026-11-10 | Rigid worlds at radius 2 (`RIGID-WORLDS-20261110-001`) | — | [folder](research/RIGID-WORLDS-20261110-001/) |
+| 2026-11-10 | Rigid worlds at radius 2 (`RIGID-WORLDS-20261110-001`) | [closure](proofs/RIGID-WORLDS-20261110-001Z/RIGID-WORLDS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RIGID-WORLDS-20261110-001/) |
 | 2026-11-10 | A temporary rise (`RISE-ESCAPE-20261110-001`) | [closure](proofs/RISE-ESCAPE-20261110-001Z/RISE-ESCAPE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/RISE-ESCAPE-20261110-001/) |
 | 2026-11-10 | Bit LeftPigeon as Braun's second family (`SEP-LEFT-20261110-001`) | [closure](proofs/SEP-LEFT-20261110-001Z/SEP-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/SEP-LEFT-20261110-001/) |
 | 2026-11-10 | Tree-like Res(xor) on the sphere's count (`TREE-XOR-20261110-001`) | [closure](proofs/TREE-XOR-20261110-001Z/TREE-XOR-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-XOR-20261110-001/) |

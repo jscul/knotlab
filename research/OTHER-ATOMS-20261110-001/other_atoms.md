@@ -124,3 +124,11 @@ points. A torus that can satisfy every class remembers nothing.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B97 taken; B104 (selected), B105 and B106 added; B96 closed as
 answered. **Assumptions:** A48 overturned as a limit; A52 added (Assumed).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (04:47 UTC): the answer (the memory needs a torus with a sign class no state
+satisfies, not the Fano plane), the theorem proved by hand and its freeness condition, the computed census (157 torus types free;
+twenty remembering atoms to 40 points, the smallest with 4 points), the exact and computed tiers (960 classes; 54 of 54 addresses with
+thin-torus atoms), the freeze commits, both tables of the position and next directions above with B104 selected and awaiting a
+go-ahead, and the Corrections, Goals and Assumptions lines (A48 overturned as a limit, A52 added).

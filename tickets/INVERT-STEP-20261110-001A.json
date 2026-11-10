@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DOUBLE-BALANCE-20261109-001A",
+    "REBASE-KNOTS-20261109-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "INVERT-STEP-20261110-001A-P001",
+    "terminal_artifact": "proofs/INVERT-STEP-20261110-001A/INVERT-STEP-20261110-001A-P001_persistence_needs_forgetting/manifest.json"
+  },
+  "id": "INVERT-STEP-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove that on every finite network of rings with shared contacts, under any deterministic law read from an open first row (A30, A32), an injective one-step map returns every contact to its own first-row value at the map's order, so no contact persists; derive that no row after the first is open in any finite network with a persistent contact, generalizing REBASE-KNOTS-20261109-001A; check it on every linear substrate of a declared family (8 ring rules, 32 contact laws, first and second order) on five tubes; and reconcile it with DOUBLE-BALANCE-20261109-001A, whose invertible map is the own cells' evolution, not the step.",
+  "ownership": {
+    "root": false,
+    "scope_id": "INVERT-STEP-20261110-001"
+  },
+  "parent": "INVERT-STEP-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10 (by hand; checked on 256 linear substrates, first and second order, on five tubes): on a finite network an injective step has finite order p, and at every lag kp each contact's value is its own first value, so no contact persists; in a finite network with a persistent contact no row after the first is open; no finite substrate has both an invertible step and a persistent contact. Reconciled with DOUBLE-BALANCE-20261109-001A: its invertible map is the own cells' evolution, not the step.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Persistence needs forgetting"
+}

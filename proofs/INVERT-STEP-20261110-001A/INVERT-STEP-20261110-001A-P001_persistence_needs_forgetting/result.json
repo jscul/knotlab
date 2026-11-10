@@ -1,0 +1,345 @@
+{
+ "ticket": "INVERT-STEP-20261110-001A",
+ "artifact_id": "INVERT-STEP-20261110-001A-P001",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/SEPARATE-20261108-001A/SEPARATE-20261108-001A-P001_a_cut_separates_a_cycle_needs_two/net_lib.py": "e75467f9d6df5f0fe7c8311e4801fabfaa8b4a4a74b3a4e2ff26c1cab9d26351",
+    "proofs/REBASE-KNOTS-20261109-001A/REBASE-KNOTS-20261109-001A-P001_no_row_after_the_first_is_open/manifest.json": "ea0dce653eb06438a7cdfebfc6c467e88cb4826d6005e386da7ed48f522aa464",
+    "proofs/DOUBLE-BALANCE-20261109-001A/DOUBLE-BALANCE-20261109-001A-P001_doubling_every_lag_keeps_every_stage_balanced/manifest.json": "cc40bc02687e69af79c7c71b66feebc5df67ca24616a4ceb60aa76325860a082"
+   }
+  },
+  "1 The theorem, first order: every invertible substrate has a finite order, at which every contact is its own first-row value, and none persists (census tubes and one size past)": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": {
+     "invertible": 45,
+     "invertible that persist": 0,
+     "orders found": 45,
+     "largest order": 30,
+     "latest first failure": 13,
+     "persistent (non-invertible)": 44,
+     "persistent by ring rule": {
+      "0": 9,
+      "204": 9,
+      "240": 5,
+      "170": 5,
+      "60": 5,
+      "102": 5,
+      "90": 3,
+      "150": 3
+     },
+     "rule 60 with law (12, 12) persists": true,
+     "smallest rank deficit of a persistent one": 4,
+     "undecided within the cap": 0
+    },
+    "3 x 4, g = 2": {
+     "invertible": 54,
+     "invertible that persist": 0,
+     "orders found": 54,
+     "largest order": 32,
+     "latest first failure": 17,
+     "persistent (non-invertible)": 32,
+     "persistent by ring rule": {
+      "0": 9,
+      "204": 9,
+      "240": 2,
+      "170": 2,
+      "60": 2,
+      "102": 2,
+      "90": 3,
+      "150": 3
+     },
+     "rule 60 with law (12, 12) persists": true,
+     "smallest rank deficit of a persistent one": 2,
+     "undecided within the cap": 0
+    },
+    "4 x 4, g = 3": {
+     "invertible": 64,
+     "invertible that persist": 0,
+     "orders found": 64,
+     "largest order": 56,
+     "latest first failure": 25,
+     "persistent (non-invertible)": 52,
+     "persistent by ring rule": {
+      "0": 9,
+      "204": 9,
+      "240": 7,
+      "170": 7,
+      "60": 5,
+      "102": 5,
+      "90": 7,
+      "150": 3
+     },
+     "rule 60 with law (12, 12) persists": true,
+     "smallest rank deficit of a persistent one": 4,
+     "undecided within the cap": 0
+    },
+    "5 x 4, g = 2": {
+     "invertible": 64,
+     "invertible that persist": 0,
+     "orders found": 64,
+     "largest order": 510,
+     "latest first failure": 21,
+     "persistent (non-invertible)": 32,
+     "persistent by ring rule": {
+      "0": 9,
+      "204": 9,
+      "240": 2,
+      "170": 2,
+      "60": 2,
+      "102": 2,
+      "90": 3,
+      "150": 3
+     },
+     "rule 60 with law (12, 12) persists": true,
+     "smallest rank deficit of a persistent one": 2,
+     "undecided within the cap": 0
+    },
+    "3 x 4, g = 3": {
+     "invertible": 54,
+     "invertible that persist": 0,
+     "orders found": 54,
+     "largest order": 210,
+     "latest first failure": 25,
+     "persistent (non-invertible)": 50,
+     "persistent by ring rule": {
+      "0": 9,
+      "204": 9,
+      "240": 7,
+      "170": 7,
+      "60": 5,
+      "102": 5,
+      "90": 5,
+      "150": 3
+     },
+     "rule 60 with law (12, 12) persists": true,
+     "smallest rank deficit of a persistent one": 2,
+     "undecided within the cap": 0
+    }
+   }
+  },
+  "2 The theorem, second order (reversible by construction): every one of the 256 has a finite order and none persists": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": {
+     "invertible": 256,
+     "invertible that persist": 0,
+     "orders found": 256,
+     "largest order": 2040,
+     "latest first failure": 59,
+     "persistent (non-invertible)": 0,
+     "persistent by ring rule": {
+      "0": 0,
+      "204": 0,
+      "240": 0,
+      "170": 0,
+      "60": 0,
+      "102": 0,
+      "90": 0,
+      "150": 0
+     },
+     "rule 60 with law (12, 12) persists": false,
+     "smallest rank deficit of a persistent one": null,
+     "undecided within the cap": 0
+    },
+    "3 x 4, g = 2": {
+     "invertible": 256,
+     "invertible that persist": 0,
+     "orders found": 256,
+     "largest order": 510,
+     "latest first failure": 119,
+     "persistent (non-invertible)": 0,
+     "persistent by ring rule": {
+      "0": 0,
+      "204": 0,
+      "240": 0,
+      "170": 0,
+      "60": 0,
+      "102": 0,
+      "90": 0,
+      "150": 0
+     },
+     "rule 60 with law (12, 12) persists": false,
+     "smallest rank deficit of a persistent one": null,
+     "undecided within the cap": 0
+    },
+    "4 x 4, g = 3": {
+     "invertible": 256,
+     "invertible that persist": 0,
+     "orders found": 256,
+     "largest order": 240,
+     "latest first failure": 95,
+     "persistent (non-invertible)": 0,
+     "persistent by ring rule": {
+      "0": 0,
+      "204": 0,
+      "240": 0,
+      "170": 0,
+      "60": 0,
+      "102": 0,
+      "90": 0,
+      "150": 0
+     },
+     "rule 60 with law (12, 12) persists": false,
+     "smallest rank deficit of a persistent one": null,
+     "undecided within the cap": 0
+    },
+    "5 x 4, g = 2": {
+     "invertible": 256,
+     "invertible that persist": 0,
+     "orders found": 256,
+     "largest order": 7710,
+     "latest first failure": 55,
+     "persistent (non-invertible)": 0,
+     "persistent by ring rule": {
+      "0": 0,
+      "204": 0,
+      "240": 0,
+      "170": 0,
+      "60": 0,
+      "102": 0,
+      "90": 0,
+      "150": 0
+     },
+     "rule 60 with law (12, 12) persists": false,
+     "smallest rank deficit of a persistent one": null,
+     "undecided within the cap": 0
+    },
+    "3 x 4, g = 3": {
+     "invertible": 256,
+     "invertible that persist": 0,
+     "orders found": 256,
+     "largest order": 3570,
+     "latest first failure": 336,
+     "persistent (non-invertible)": 0,
+     "persistent by ring rule": {
+      "0": 0,
+      "204": 0,
+      "240": 0,
+      "170": 0,
+      "60": 0,
+      "102": 0,
+      "90": 0,
+      "150": 0
+     },
+     "rule 60 with law (12, 12) persists": false,
+     "smallest rank deficit of a persistent one": null,
+     "undecided within the cap": 0
+    }
+   }
+  },
+  "3 Computed: the persistent first-order substrates, all forgetting (rank deficit at least 1), rule 60 with law (12, 12) among them": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": [
+     44,
+     4,
+     {
+      "0": 9,
+      "204": 9,
+      "240": 5,
+      "170": 5,
+      "60": 5,
+      "102": 5,
+      "90": 3,
+      "150": 3
+     }
+    ],
+    "3 x 4, g = 2": [
+     32,
+     2,
+     {
+      "0": 9,
+      "204": 9,
+      "240": 2,
+      "170": 2,
+      "60": 2,
+      "102": 2,
+      "90": 3,
+      "150": 3
+     }
+    ],
+    "4 x 4, g = 3": [
+     52,
+     4,
+     {
+      "0": 9,
+      "204": 9,
+      "240": 7,
+      "170": 7,
+      "60": 5,
+      "102": 5,
+      "90": 7,
+      "150": 3
+     }
+    ],
+    "5 x 4, g = 2": [
+     32,
+     2,
+     {
+      "0": 9,
+      "204": 9,
+      "240": 2,
+      "170": 2,
+      "60": 2,
+      "102": 2,
+      "90": 3,
+      "150": 3
+     }
+    ],
+    "3 x 4, g = 3": [
+     50,
+     2,
+     {
+      "0": 9,
+      "204": 9,
+      "240": 7,
+      "170": 7,
+      "60": 5,
+      "102": 5,
+      "90": 5,
+      "150": 3
+     }
+    ]
+   }
+  },
+  "4 Reconciliation with DOUBLE-BALANCE-20261109-001A: on rule 60 with law (12, 12) the step forgets (rank below the number of cells) while the own cells' evolution with contacts read as zero is invertible": {
+   "pass": true,
+   "info": {
+    "3 x 3, g = 2": {
+     "cells": 54,
+     "rank of the step": 48,
+     "own cells": 36,
+     "rank of the own-cell block": 36
+    },
+    "3 x 4, g = 2": {
+     "cells": 72,
+     "rank of the step": 70,
+     "own cells": 48,
+     "rank of the own-cell block": 48
+    },
+    "4 x 4, g = 3": {
+     "cells": 160,
+     "rank of the step": 152,
+     "own cells": 128,
+     "rank of the own-cell block": 128
+    },
+    "5 x 4, g = 2": {
+     "cells": 120,
+     "rank of the step": 118,
+     "own cells": 80,
+     "rank of the own-cell block": 80
+    },
+    "3 x 4, g = 3": {
+     "cells": 120,
+     "rank of the step": 118,
+     "own cells": 96,
+     "rank of the own-cell block": 96
+    }
+   }
+  }
+ },
+ "status": "passed"
+}

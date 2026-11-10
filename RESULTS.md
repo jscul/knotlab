@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**274 current results** and 5 superseded ones, from 226 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**275 current results** and 5 superseded ones, from 227 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -19,7 +19,7 @@ How to read an entry:
 
 ## Lines of work
 
-- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 47 results
+- [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 48 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 12 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 3 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 226 epics with their closures
+- [Epics](#epics): all 227 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -183,6 +183,9 @@ The knot test, what knots hide and remember, holes, choice, and where emergence 
 - **2026-11-10 · A grown plane that stops reads the fixed torus's distances** (`GROW-STOP-20261110-001-D001`).
   A network that splits every ring in four at every lag for k lags and then stops reads, for every ring and every reading, freezes included, exactly what the fixed torus of the grown size reads, with its original rings 2^k ring steps apart per original step. Schedules whose rings heard each other before the stop do not (computed).
   [proof P001](proofs/GROW-STOP-20261110-001A/GROW-STOP-20261110-001A-P001_a_grown_plane_that_stops_reads_the_fixed_torus/proof.md), [epic closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-10 · Persistence needs forgetting: no finite substrate has an invertible step and a persistent contact** (`INVERT-STEP-20261110-001-D001`).
+  On a finite network an invertible step returns every state to itself, and at that lag each contact holds only its own first value, bound to neither ring, so no contact persists. Hence wherever a contact persists no row after the first is open, for every rule and law, and growth while running cannot be rescued by an invertible substrate.
+  [proof P001](proofs/INVERT-STEP-20261110-001A/INVERT-STEP-20261110-001A-P001_persistence_needs_forgetting/proof.md), [epic closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md)
 
 ## Holes, depth and Tseitin proof complexity
 
@@ -1183,5 +1186,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
 | 2026-11-10 | Learning that grows a handle (`GROW-HANDLE-20261110-001`) | — | [folder](research/GROW-HANDLE-20261110-001/) |
 | 2026-11-10 | Growth that stops (`GROW-STOP-20261110-001`) | [closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STOP-20261110-001/) |
+| 2026-11-10 | Growth on an invertible substrate (`INVERT-STEP-20261110-001`) | [closure](proofs/INVERT-STEP-20261110-001Z/INVERT-STEP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/INVERT-STEP-20261110-001/) |
 | 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 

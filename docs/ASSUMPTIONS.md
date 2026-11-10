@@ -102,7 +102,7 @@ evidence: results and their status come from the records each entry links.
 | [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
 | [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
 | [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
-| [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Assumed |
+| [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Under challenge |
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 | [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
 | [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Assumed |
@@ -1190,7 +1190,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A48 · A grown handle is a Fano atom with the uniform law
 
-**Assumed** · 2026-11-10 · scope
+**Under challenge** · 2026-11-10 · scope
 
 - **Statement.** When learning is paired with growth, the growth move splices one Fano atom (the Fano plane less a point) at a line, by
   one of the three bijections that keep both rotations; the atom brings the Fano plane's uniform signs, the old signs are kept, and the
@@ -1204,6 +1204,9 @@ evidence: results and their status come from the records each entry links.
   growth site the learner chooses (backlog B68). The cheapest test grows a thin torus's atom instead and reads whether it too acts as the
   replaced line in one class and is transparent in the others.
 - **History.**
+  - 2026-11-10 · Under challenge by `OTHER-ATOMS-20261110-001` (backlog B97): 28 other lattice-torus atoms grown at knot sphere lines, each
+    tested for acting as its line in exactly one class, holding a unit, and writing and returning an address
+    ([pre-registration](../research/OTHER-ATOMS-20261110-001/preregistration.md)).
   - 2026-11-10 · Added by `GROW-HANDLE-20261110-001`.
 
 ### A49 · Dissonance is weighed as the count weighs it

@@ -1174,5 +1174,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Larger spacings (`SPACING-20261109-001`) | [closure](proofs/SPACING-20261109-001Z/SPACING-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/SPACING-20261109-001/) |
 | 2026-11-09 | The first tie of shortest routes (`TIE-LAW-20261109-001`) | [closure](proofs/TIE-LAW-20261109-001Z/TIE-LAW-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-LAW-20261109-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
-| 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | — | [folder](research/NATIVE-TARGET-20261110-001/) |
+| 2026-11-10 | A native target for learning (`NATIVE-TARGET-20261110-001`) | [closure](proofs/NATIVE-TARGET-20261110-001Z/NATIVE-TARGET-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-TARGET-20261110-001/) |
 

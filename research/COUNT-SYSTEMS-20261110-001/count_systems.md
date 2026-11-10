@@ -117,3 +117,28 @@ recorded as a sub-goal under G3 (3/3, not taken); directions 2 and 3 to the back
 
 **Recommendation.** Research directions, none selected; direction 1 is recorded as a sub-goal under G3, directions 2 and 3 go to the
 backlog, for the coordinator to choose.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 02:17 UTC and copied here verbatim.
+
+The sphere's count in stronger proof systems is closed and published (COUNT-SYSTEMS-20261110-001). It took up TWO-ROUND-BRIDGE's lead L1 while the B45 census keeps running.
+- **Bounded-depth Frege needs exponential size (proved, from published lower bounds).** Every depth-d Frege refutation of the sphere's NAE formula has size exp(n^{ε_d}). The chain is three reductions by shallow decision trees: the binary left-pigeon principle reduces to SINK (succ = f, pred = g), SINK reduces to one-sided grid Sperner (COUNT-TFNP-A), and grid Sperner reduces to the sphere (FLAT-STATES-B). The bijective pigeonhole principle needs exponential size at every fixed depth (Ajtai; Pitassi–Beame–Impagliazzo; Krajíček–Pudlák–Woods). This is expected, and close to Dantchev's 2006 result for Sperner's lemma, so I classed it known-with-delta. The delta is a self-contained chain for this formula with explicit sizes.
+- **Why cutting planes and Res(⊕) stay open (proved).** Give each corner a variable for whether its two literals agree, a 2-XOR. Then cutting planes refutes the count in linear size: each line gives Σ ≤ 1, each face Σ ≥ 1, and there are two more faces than lines. But every corner parity holds under every assignment, since each line has 1 or 3 agreeing corners and each face an odd number. So the contradiction is "exactly one, not three", invisible mod 2. The count is a count of parities. Cutting planes can count but sees agreements only as quadratics; Res(⊕) names the parities but finds nothing to cancel. Tseitin is pure parity and the pigeonhole principle a pure count; this formula needs both.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the count in stronger systems | Partially successful | Bounded-depth Frege settled (exponential); cutting planes and Res(⊕) open, with what each lacks located |
+| Local direction: lower bounds that need counting or parities | Research directions | No technique for either system applies off the shelf |
+| Broader exploration: G3 | Known alternatives | Grown spheres and their flat radius (HARD-FLAT's directions) |
+| Long-term goal: G3 Hardness at three places | Obstruction learned | The strong systems each half-have what Sherali–Adams uses at degree 3: a count of parities |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Cutting planes on the count (sub-goal B82) | 3/3 | 1/3 | Derive each line's Σ e ≤ 1 from the point inequalities with rounding on K_2 to K_4 and measure the rank → a short refutation's shape, or rank growing with k |
+| 2 | Tree-like Res(⊕) on the count (B83) | 2/3 | 2/3 | Parity-decision-tree depth on K_2 and K_3, and the vortex adversary against parity queries → an adversary, or the parity that catches it |
+| 3 | F2 polynomial calculus on the count (B84) | 2/3 | 1/3 | F2-PC degree on K_2 to K_5 → growing with k, or bounded |
+
+**Corrections:** none. **Goals:** a G3 checkpoint (obstruction learned); lead TWO-ROUND-BRIDGE#L1 taken; sub-goal B82 recorded under G3 for the untaken 3/3 direction; B83 and B84 added to the backlog. **Assumptions:** none added or changed. **Publication hold:** nothing here is an algorithm; these are lower bounds and a linear refutation in an extended language.
+
+Commits on main: c4385d487 (the epic) and fa8b20f53 (goals doc). B82 to B84 were written through track.py and landed in another thread's tracking commit, dba71d70e. The stress test one size past (N = 4 for the reductions, K_9 and K_10 for the corner count) passed in 103 seconds. No direction is selected; your call.

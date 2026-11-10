@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "ROUND-READ-20261110-001A-E001",
+  "ticket": "ROUND-READ-20261110-001A",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does a plane grown by the doubling law read a distance rounder than its board's taxicab distance: at equal taxicab distance, is the diagonal original ring reached or heard earlier than the axis one by a margin that grows with the distance?",
+  "definitions": {
+    "readings": "From ring (0, 0) to the original ring at v, the first lag of: T, a route from any first-row own cell to any own cell; T1, a route from the position-1 cell to the position-1 cell; L, plain dependence of any own cell on the first-row own cells; L1, plain dependence of the position-1 cell on the position-1 cell. All while the plane grows, in conformal time (A56).",
+    "gap": "For even taxicab distance d up to n // 2, gap(d) = (the least conformal lag over the four diagonal rings (+-d/2, +-d/2)) minus (the least over the four axis rings (+-d, 0), (0, +-d)), where both are defined. Taxicab reading: gap bounded; Euclidean reading: gap about -4g (1 - 1/sqrt 2) d, about -1.17 g d.",
+    "slope": "The least-squares slope of gap(d) over the even d read, when at least three are defined.",
+    "rounder than taxicab": "slope <= -g/2, half way from taxicab (0) to Euclidean (-1.17 g); squarer: slope >= g/2.",
+    "plain holes": "Original rings reached by a route (T or T1) but never heard plainly (L or L1) within the schedule."
+  },
+  "public_inputs": {
+    "library": "round_lib.py beside this file (sha256 720105d53ed1d62f5d6434468bcc1927b7acb8c6b5aab5b5eb53989a5f4c1ac7), written afresh, numpy.",
+    "second code": "METRIC-GROW-20261110-001A-E001's metric_lib.py (sha256 417a8b4d4c5b7a89eae96210dd7aa5800f48d6ebbe418aef715a42f90051dd04) for T, T1 and L on seven small schedules (part C).",
+    "run": "run.py in this folder, 6 worker processes.",
+    "family": "For (n, g) in (13, 3), (21, 3), (41, 3), (13, 2), (13, 5), with W = 4g 2 floor(n/2) + 9g + 2 the conformal time by which CONF-METRIC-20261110-001A has every ring reached: a baseline [W] (one pause, the fixed first stage); two runs [P1, ceil(2 (W - P1))] for P1 in 2, 4, 8, 12, 16, 20, 24, 28, 32, 40, 48, 56; and, for n <= 21, pauses then a long run, [P] * m followed by enough lags to reach conformal time W, for P in 8, 12, 16, 24, 32, 48 and m in 2, 3. 113 schedules."
+  },
+  "forbidden_inputs": [
+    "Changing the tubes, families, readings, criteria or thresholds after seeing results"
+  ],
+  "primary_observable": "Per schedule and reading, gap(d) and its slope; per family, the slope range and the schedules rounder or squarer than taxicab; the plain holes.",
+  "cheapest_meaningful_control": "CONF-METRIC-20261110-001A: T1 is 4g d(v) up to -6g and +9g + 2, so T and T1 gaps are bounded by 15g + 2 at every d; READ-GROW-20261110-001: on the 5 x 5 tube [12, 28] heard a diagonal ring at lag 23 before a straight ring at the same taxicab distance at lag 32.",
+  "resource_budget": {
+    "wall_minutes": 120,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "Part C's agreement line.",
+  "decision_or_followup_rule": "Frozen. Q1 (a check of the theorem): every T and T1 gap lies within +-(15g + 2). Q2 (route readings, predicted): no schedule's T or T1 slope is <= -g/2. Q3 (the test, plain readings): growth rounds the plain reading if some growth schedule (not a baseline) has an L or L1 slope <= -g/2 and at least g/2 below its family's baseline slope; the prediction is that none does. If Q3's rounding is found, the law contributes a rounder distance than the drawn board's; if not, the reading's coarse shape is the board's, and what the law adds is its offsets, its clock and its plain holes. If part C disagrees, stop and report.",
+  "stop_rule": "Stop when every family is read.",
+  "nonclaims": [
+    "Exploratory and finite: five families, 113 schedules, distances to 20 (41 x 41).",
+    "Balance is not read: the question is the reading's shape, whatever the knots; declared rings (A45) on a declared board (A51); open births (A44); conformal time a reading (A56)."
+  ],
+  "feasibility_disclosure": "Not blind. Known before freezing: CONF-METRIC-20261110-001A's theorem and Lemma 1 (in the first stage the cell gap is 0 or -4g by direction); READ-GROW-20261110-001's 5 x 5 readings. A smoke test ran the 9 x 9 schedule [20, 200], outside the families (T gaps -3, -1.5; L gaps 0, 0). Five of part C's seven cases were checked once while writing round_lib (all agreeing)."
+}

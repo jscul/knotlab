@@ -2402,8 +2402,22 @@ So network holes come in two kinds:
    - **Reading.** The plane expands while it is read: the triangle excess is a native measure of growth during a trip. A metric is read
      between doublings, and after growth stops (`GROW-STOP-20261110-001`), not across them. On the 7 × 7 tube, every balanced schedule
      read is deaf beyond distance 4.
-   - **Next (proposed for the morning).** Expansion as a reading: the triangle excess as a function of the doublings each trip crosses
+   - **Next (taken, next entry).** Expansion as a reading: the triangle excess as a function of the doublings each trip crosses
      ([decision note](../research/METRIC-GROW-20261110-001/metric_grow.md)).
+
+   **2026-11-10: the plane reads its own expansion** (`EXPAND-READ-20261110-001`).
+   - **The question.** If the growing plane's time lengths break the triangle inequality because the plane grows during a trip, can the
+     plane read that growth, and is it the whole of the excess? Frozen first, on 891 schedules at three spacings.
+   - **The scale factor, read exactly (exploratory, exact).** Between rings, crossing one original spacing takes 4g·2^k lags after k
+     doublings, in every one of 2,368 readings: each doubling doubles the time to cross, because it doubles the rings to cross and a
+     front crosses a ring in 2g lags at every stage.
+   - **A metric at the plane's own scale, up to 2.** Count a lag after k doublings as 2^-k of a lag (conformal time, A56). The round trip
+     then breaks the triangle inequality in 28 of 891 schedules, by at most 2, where in plain lags it breaks it in 240, by up to 78.
+     The expansion is the excess, up to a bounded residual; strictly, both predictions fail on that residual.
+   - **Reading.** The network's own crossings keep the conformal clock, so the clock is not only the observer's. The resemblance to
+     comoving distance in an expanding space is a resemblance of counting, not a physics claim; the board is still drawn (A51).
+   - **Next (selected, awaiting a go-ahead).** The conformal metric as a theorem (sub-goal B125; Payoff 3/3, Concreteness 2/3)
+     ([decision note](../research/EXPAND-READ-20261110-001/expand_read.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

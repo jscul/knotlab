@@ -88,14 +88,14 @@ their error grows with every doubling crossed. Strictly, both X2 and X3 fail as 
 | Broader exploration — G1 with G5 | Known alternatives | Growth that rounds the reading (B108); the residual's first runs |
 | Long-term goal — G1 Space from a law (question 9) | Capability gained | A uniform local law grows a plane whose time lengths, at its own scale, are a metric up to a bounded error, and which reads its own scale factor |
 
-**Corrections:** none. **Goals:** a G1 and G5 checkpoint (capability gained); METRIC-GROW-20261110-001#1 taken; sub-goal B? (the
+**Corrections:** none. **Goals:** a G1 and G5 checkpoint (capability gained); METRIC-GROW-20261110-001#1 taken; sub-goal B125 (the
 conformal metric as a theorem) recorded. **Assumptions:** A56 added and tested.
 
 **Next step:** Research directions — selected: #1, awaiting the coordinator's go-ahead.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | The conformal metric as a theorem | 3/3 — Major | 2/3 — Testable | Prove that a route of conformal duration τ at one stage refines to a route of conformal duration at most τ + c after a doubling (c the residual), so the conformal round trip is subadditive up to 2c at every size → a theorem that a growing plane reads a metric up to a constant at its own scale, or the step that fails | Selected · awaiting go-ahead |
+| 1 | The conformal metric as a theorem (B125) | 3/3 — Major | 2/3 — Testable | Prove that a route of conformal duration τ at one stage refines to a route of conformal duration at most τ + c after a doubling (c the residual), so the conformal round trip is subadditive up to 2c at every size → a theorem that a growing plane reads a metric up to a constant at its own scale, or the step that fails | Selected · awaiting go-ahead |
 | 2 | The residual's first runs | 2/3 — Substantial | 3/3 — Ready | Trace the 28 schedules' violating triples to the lag where a route meets a doubling → the cell positions that cost the residual, as a lemma | Alternative · deferred |
 | 3 | Growth that rounds the reading (B108) | 2/3 — Substantial | 3/3 — Ready | As recorded | Alternative · deferred |
 | 4 | Why a run keeps balance (was `READ-GROW-20261110-001#3`) | 2/3 — Substantial | 2/3 — Testable | As recorded | Alternative · deferred |

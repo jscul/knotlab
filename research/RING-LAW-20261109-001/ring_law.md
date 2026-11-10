@@ -98,3 +98,24 @@ Since the epic opened:
 2. **Why square.** Payoff 2: it would say which geometry lets a law see its rings and hold them. Concreteness 2.
 
 **Recommendation.** Research directions, none selected, for the coordinator.
+
+## Final report as sent
+
+B45 is closed and published: rings can be native, but on a torus that costs binding. Exactly 32 of the 256 self-blind contact laws are blind to how rings run through a contact, (12, 12) among them, so the other 224 make the rings the automaton's own (proved). Under the eight nonlinear laws, every torus and line network needs both rings to lag 64 and reads its distance on time, including the tori where (12, 12) was late. But no torus keeps both rings bound under a law that sees them. On the square line networks, 32 laws (a parity on one ring, a nonlinear table on the other) bind to lag 6. A45 is now confirmed: the earlier ring readings were declarations. The stress test one size past is running and registered as pending (RING-LAW-S1). One slip along the way: my A45 history line went in oldest-first, which failed one publication run for about a minute. It's fixed and published.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: rings the law can see | Successful | Native rings exist; on tori they cost binding, square lines keep it to lag 6 |
+| Local direction: native rings | Research directions | Binding past lag 6, and why only the square lines |
+| Broader exploration: G1 | Known alternatives | The reach line's open rows |
+| Long-term goal: G5, with G1 | Obstruction learned | A torus read plainly with rings of its own is not bound |
+
+**Next step:** Research directions, none selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | Do the 32 square-line laws bind at every lag? | 2/3 | 3/3 | Read binding to lag 12 and look for an invariant → a proof at every lag, or the lag where it fails |
+| 2 | Why the square lines and not the others? | 2/3 | 2/3 | Compare how rings meet per period and where the laws fail → the deciding count, or none |
+
+**Corrections:** none. **Goals:** a G5/G1 checkpoint; B45 taken. **Assumptions:** A45 confirmed.
+**Basket:** RING-LAW-20261109-001#1 (2/3, 3/3), B13 (2/3, 2/3), RING-LAW-20261109-001#2 (2/3, 2/3); none taken, since this thread moves to B114 at your go-ahead.

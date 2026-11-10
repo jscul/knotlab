@@ -1637,7 +1637,18 @@ So network holes come in two kinds:
    - **Reading.** The memory can feel what it stores without being told; what it lacks is a check that never says yes too soon.
    - **Corrected (`STURDY-PROBE-20261110-001`).** With a check that does not say yes too soon, keeping what holds does make it better:
      it then learned every gate through every pattern of patterns.
-   - **Next.** A probe that is not fooled (backlog B134) ([decision note](../research/CREDIT-PIN-20261110-001/credit_pin.md)).
+   - **Next (taken by `STURDY-PROBE-20261110-001`, below).** A probe that is not fooled (backlog B134)
+     ([decision note](../research/CREDIT-PIN-20261110-001/credit_pin.md)).
+
+   **2026-11-10: look four times before saying yes** (`STURDY-PROBE-20261110-001`).
+   - **The question.** Backlog B134: the learner checks a wanted answer by holding the inputs and the wrong answer and wandering; if it
+     never settles, it believes the wrong answer impossible. Too short a wander says yes too soon. Does a longer look fix it?
+   - **Computed.** Looking four times, three from somewhere new and each longer, it never said yes too soon in 195 trials, and never
+     accepted "both" of two inputs, which no knot can compute. It cost two and a half times the looking.
+   - **Reading.** With that check, a learner that feels only its own tension, and keeps the parts whose tension it cannot walk away,
+     learned every gate it was asked for, inside patterns of patterns too.
+   - **Next.** Three held inputs (backlog B133): self-duality allows majority and parity, the strongest test of what the held points
+     let the memory compute ([decision note](../research/STURDY-PROBE-20261110-001/sturdy_probe.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

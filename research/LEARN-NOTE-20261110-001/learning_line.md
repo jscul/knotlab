@@ -10,9 +10,9 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## The line as it stands (updated 2026-11-10, after `CREDIT-PIN-20261110-001`)
+## The line as it stands (updated 2026-11-10, after `STURDY-PROBE-20261110-001`)
 
-Sections 1 to 8 are the note as written for B95. Twelve epics since then change its statement; this section is the current one.
+Sections 1 to 8 are the note as written for B95. Thirteen epics since then change its statement; this section is the current one.
 
 **Proved by hand.**
 - **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
@@ -72,6 +72,8 @@ Sections 1 to 8 are the note as written for B95. Twelve epics since then change 
   atoms every time (4,473 of 4,473); kept as credit they helped composite gates (12 of 12 one size past) but not the total (40
   against 41 on S3 and S4, 9 inexact stops against 5). Every inexact stop was the clamped probe missing a reachable wrong value.
   *Corrected (`STURDY-PROBE-20261110-001`): with a sturdier probe, the credit learner learned all 84 of its writes.*
+- A probe that is not fooled (`STURDY-PROBE-20261110-001`, frozen): each negative check four 25,000-step walks, three from fresh states;
+  no false stop in 156 writes and 39 runs of AND, at 2.5 times the walk steps; every earlier figure, scored by SAT, stays or rises.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -86,9 +88,9 @@ Sections 1 to 8 are the note as written for B95. Twelve epics since then change 
 - The search for a host outside the proved class found none: seven branched covers had no unsatisfiable class at all.
 
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
-writer's walk never errs when long enough (B130); writing with only the ones named (B131); a probe that is not fooled (B134); three
-held inputs (B133); and whether
-learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120 and B132
+writer's walk never errs when long enough (B130); writing with only the ones named (B131); deeper memories from examples (B135);
+three held inputs (B133); and whether
+learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132 and B134
 are answered above.
 
 ## 1. Where it started

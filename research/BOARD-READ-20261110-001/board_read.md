@@ -102,4 +102,33 @@ work it points to is the board as distinctions (B92), in another line.
    identity is proved; the one-way bound needs the turning count.
 2. **B92.** Payoff 3, as recorded; taken by another line.
 
-**Basket:** B127, `EXPAND-READ-20261110-001#2`, B55; none taken: the line is parked with its verdict.
+**Basket:** B127, B129, `EXPAND-READ-20261110-001#2`; none taken: the line is parked with its verdict.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 17:42 UTC and copied here verbatim. The Basket line above was corrected to the line's current top three
+(B129, filed at this epic's pre-registration, ranks second) before the report was sent.
+
+**Readings on other boards is closed and published. The answer is the second option: the reading always has the board's own shape, never rounder.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/BOARD-READ-20261110-001/board_read.md))
+
+- **Proved, every periodic board:** up to a constant, the route reading is a polygon norm. The polygon comes from each cycle's displacement divided by its length. So no drawn periodic board makes the reading round. This is a classical fact about periodic graphs (Burago 1992), applied to our rings.
+- **Computed, four boards:** on the square, triangular, honeycomb and kagome boards, at g = 2 to 6, the route reading is exactly the board's graph distance times g·d/2 (d is the ring degree), up to a constant. It was frozen in advance, done by two methods, and checked on 48 × 48 tori.
+- **Proved, round trips:** going and coming back costs g·d per ring crossed, on every d-regular board. That the one-way reading matches the graph distance on *every* board is computed on the four boards, not proved.
+- **The growth line's verdict:** a plane grown by the doubling law reads the distance of the board it was drawn on, scaled, up to a constant. The law adds scale, a clock, bounded offsets and a binary plain reading, and no shape of its own. To get a chosen shape, the board itself has to follow the rules. That is B92, already taken by the board-as-distinctions epic.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: readings on other boards | Successful | On every periodic board the reading is a polygon norm (proved); on four boards it is the board's distance × g·d/2 |
+| Local direction: a grown plane that reads its own metric | Full pivot | The verdict is in: the reading is the drawn board's, scaled |
+| Broader exploration: G1 with G5 | Known alternatives | B92 (another line); one-way homothety as a theorem |
+| Long-term goal: G1 Space from a law | Obstruction learned | A shape chosen by the law needs the board to be part of the law |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | One-way homothety as a theorem | 2/3 | 2/3 | A turning-count proof on every d-regular board → a theorem, or a board where it fails |
+| 2 | The board as distinctions (B92) | 3/3 | 2/3 | As recorded, in its own line |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint (obstruction learned); G1 now records the line as parked with its verdict. **Assumptions:** a history line on A51.
+**Basket:** B127, B129, EXPAND-READ-20261110-001#2. None taken, because the line is parked with its verdict.
+
+Full pivot, with no next action selected. I'm not starting a new epic.

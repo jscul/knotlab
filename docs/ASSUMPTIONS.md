@@ -105,6 +105,7 @@ evidence: results and their status come from the records each entry links.
 | [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Assumed |
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 | [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
+| [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Assumed |
 
 ## Entries
 
@@ -1234,3 +1235,28 @@ evidence: results and their status come from the records each entry links.
   The cheapest test reruns that epic with improving flips only.
 - **History.**
   - 2026-11-10 · Added by `MOVING-STATE-20261110-001`.
+
+### A51 · Places and their neighbours are given before the rules
+
+**Assumed** · 2026-11-10 · scope
+
+- **Statement.** Every law measured for space so far has its places, and which of them are neighbours, fixed before the law is
+  read: a lattice Z^D, a declared network of rings (A45), a group's Cayley law, or a gadget's copies. The law's distinctions are
+  the values on that board; the board itself is not a distinction, so no allowed state can change it.
+- **Why.** A CNF names its variables, and naming them by positions on a grid is the usual way to write a uniform local law; Conway's
+  Life is written that way (lesson 1.3 of the Intuitions guide). `LOGIC-AXIS-20261107-001` took it by default and found that the
+  dimension then comes with the board or with the gadget: no tested law selects its own dimension
+  ([the axis built from logic](../research/LOGIC-AXIS-20261107-001/logic_axis.md)).
+- **Rests on it.** The dimensions read from bond-ball growth on Z^D, the taxicab plane, the circles of periodic and pinwheel laws,
+  the grown planes of rings of the growth line (`GROW-ALL-20261109-001`, `GROW-STOP-20261110-001`, `CROSS-WHY-20261110-001`), and
+  the reading that no tested law selects its own dimension. Only the number line of `OPEN-END-GROWTH-20261107-001` is grown with
+  nothing drawn.
+- **Challenge.** Make the board part of the allowed states, as the owner proposed on 2026-11-07 and 2026-11-10: give each pair of
+  places a distinction saying whether they are neighbours, or whether two names are one place, in the same infinite CNF as the
+  values, with one uniform clause pattern that names no degree, face size or relation of a group, and read which boards the rules
+  allow or force (backlog B92). If every such law leaves the board free, the barrier belongs to uniform laws and not to drawing; if
+  one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
+  contact: equality is not a binding.
+- **History.**
+  - 2026-11-10 · Added at the owner's question whether the axes can follow rules, recording a default every space epic since
+    `LOGIC-AXIS-20261107-001` took.

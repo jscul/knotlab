@@ -78,3 +78,31 @@ both sides at least 6, so the distance is read through freezes.
 | 4 | Shaped growth that stops (B65) | 2/3 — Substantial | 2/3 — Testable | Double only some territories before stopping, and read whether the stopped network is a fixed network of the grown shape → a law that grows a chosen shape and reads it | Alternative · deferred |
 
 **Recommendation.** Research directions, #1 as the coordinator asked.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 00:23 UTC and copied here verbatim.
+
+**Growth that stops (B56) is closed and published, and it's a proof.** ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROW-STOP-20261110-001/grow_stop.md))
+
+- **Proved:** double every lag for k lags, then stop. From then on every reading of every ring, with or without freezes, is exactly that of a fixed torus of the grown size. Two original rings D apart are now 2^k·D ring steps apart. Checked cell by cell on 21,456 pairs.
+- **Computed:** schedules where rings heard each other before the stop don't read the fixed torus.
+- **So:** making and reading are two phases. The plane reads no distance while it grows and its own distance once it stops.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: growth that stops | Successful | Proved: the stopped plane reads the fixed torus, scaled by 2^k |
+| Local direction: grown space and distance | Continue | Growth then reading works |
+| Broader exploration: G1 with G5 | Known alternatives | B39 next; the proof pair B55 and B64 |
+| Long-term goal: G1 Space from a law | Capability gained | A local law grows a plane and then reads its own distance |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Invertible substrate (B39) | 2/3 | 3/3 | A rule with an invertible step and persistent contacts, then growth while running → knots kept across growth with hearing, or no such substrate |
+| 2 | Why odd spacings keep balance (B55) | 2/3 | 2/3 | As recorded |
+| 3 | Why crossing breaks balance (B64) | 2/3 | 2/3 | The first failing contact's returns → a lemma |
+| 4 | Shaped growth that stops (B65) | 2/3 | 2/3 | Double one territory, stop, compare with the fixed shape |
+
+**Corrections:** none. **Goals:** G1/G5 checkpoint; B56 taken; B64 and B65 added to the backlog. **Assumptions:** none. **Long-running:** CROSS-BORDER-A1 marked signed off.
+
+As the coordinator asked, I'm starting B39 now.

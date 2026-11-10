@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BPHP-RES-PARITY-AUDIT-20261019-001A",
+    "BPHP-RES-PARITY-AUDIT-20261019-001B",
+    "HOLE-SEP-20261110-001A",
+    "SEP-LEFT-20261110-001A",
+    "WIDE-LEFT-20261110-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "AUDIT-LEFT-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Re-derive WIDE-LEFT-20261110-001A's Theorem (W) from scratch with every constant and quantifier explicit (the transfer to n + 1 pigeons with literal variable sets, the reduction through the decoder, the spare-row lemma, the density count); state exactly which of Braun's results it uses, check their Lean statements against the use, and say which the earlier fresh-kernel replay covers; record the outcome of adversarial reviews by fresh reviewers who did not see the proof, and sanity checks against known upper bounds and computed minimum sizes; or name the failing step.",
+  "ownership": {
+    "root": false,
+    "scope_id": "AUDIT-LEFT-20261110-001"
+  },
+  "parent": "AUDIT-LEFT-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10 (V1, conditional on A55): WIDE-LEFT-20261110-001A's bound re-derived with explicit constants and attacked by four fresh reviewers; every step holds. Not new in substance: the 2n-pigeon formula is Pudlak-Thapen's rWPHP_n and exp(Omega(n)) for it and for LP_{n+1} follows from Pang's degree-size relation (arXiv 2610.00837).",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The left-pigeon bound re-derived and audited"
+}

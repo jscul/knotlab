@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "AUDIT-LEFT-20261110-001A-P001",
+  "canonical_id": "AUDIT-LEFT-20261110-001A-P001",
+  "kind": "proof",
+  "ticket": "AUDIT-LEFT-20261110-001A",
+  "proof": "AUDIT-LEFT-20261110-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The left-pigeon bound re-derived and audited",
+  "status": "Proved",
+  "claim": "Audit of WIDE-LEFT-20261110-001A's Theorem (W). Re-derived from Braun's stated results (arXiv 2609.23015) with every constant explicit: every dag-like Res(xor) refutation of the 2n-pigeon formula WLP_n (Pudlak and Thapen's rWPHP_n) has 3S + 2n^2(l+1) >= exp(0.005 k / l^2), k = floor(n/(64 l^3)), l >= 20, and so does every refutation of the binary left-pigeon principle LP_{n+1} (a clause subset). Every step survives four adversarial reviews (spare-row lemma, density count, reduction and transfer, literature); the eight results of Braun's it uses are all in the import closure replayed in a fresh kernel by BPHP-RES-PARITY-AUDIT-20261019-001A, with Lean statements that cover the uses. Not new in substance: exp(Omega(n)) for both formulas follows from Pang's degree-size relation (arXiv 2610.00837, Cor. 1.3 and Thm 7.2) by the affine substitution into graph FPHP; the bit-PHP corollary is in Pang and ECCC TR26-316.",
+  "dependencies": [
+    "WIDE-LEFT-20261110-001A",
+    "HOLE-SEP-20261110-001A",
+    "SEP-LEFT-20261110-001A",
+    "BPHP-RES-PARITY-AUDIT-20261019-001A",
+    "BPHP-RES-PARITY-AUDIT-20261019-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A step of the re-derivation that does not hold as stated (the transfer, the reduction, the spare-row lemma, the density count), found by the author or a reviewer.",
+    "A Lean statement of a cited result of Braun's whose hypotheses do not cover the use (for example m = 2n rows, or a cube with hole coordinates).",
+    "A known refutation of the 2n-pigeon or n + 1 pigeon formula, in dag-like Res(xor) or a system it simulates, shorter than the bound."
+  ],
+  "lineage": {
+    "home_scope": "AUDIT-LEFT-20261110-001",
+    "epic_path": [
+      "AUDIT-LEFT-20261110-001"
+    ],
+    "parents": [
+      "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/manifest.json",
+      "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json",
+      "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json",
+      "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/manifest.json": "00768aeaca2e3e8143d2b33119214897345e3e05ebb376235954513535cff1e6",
+    "proofs/HOLE-SEP-20261110-001A/HOLE-SEP-20261110-001A-P001_separation_through_the_decoder/manifest.json": "b9778bf6563ddf39b5a28bf3fd7a69225c02292b5ce597ee42d904f10dc1dffb",
+    "proofs/SEP-LEFT-20261110-001A/SEP-LEFT-20261110-001A-P001_what_transfers_from_bit_php/manifest.json": "82b20ed526a38a9618965517981a7c328f6dbb6247e647331909cfb225ce557c",
+    "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json": "4126014582ba2a271aa07918e6adbb9dab115b1f0f5cb7935eb18b11dca7ddc6"
+  },
+  "paths": {
+    "manifest": "proofs/AUDIT-LEFT-20261110-001A/AUDIT-LEFT-20261110-001A-P001_the_left_pigeon_bound_audited/manifest.json",
+    "identity": "proofs/AUDIT-LEFT-20261110-001A/AUDIT-LEFT-20261110-001A-P001_the_left_pigeon_bound_audited/identity.json",
+    "proof": "proofs/AUDIT-LEFT-20261110-001A/AUDIT-LEFT-20261110-001A-P001_the_left_pigeon_bound_audited/proof.md",
+    "result": "proofs/AUDIT-LEFT-20261110-001A/AUDIT-LEFT-20261110-001A-P001_the_left_pigeon_bound_audited/result.json",
+    "check": "proofs/AUDIT-LEFT-20261110-001A/AUDIT-LEFT-20261110-001A-P001_the_left_pigeon_bound_audited/check.py",
+    "directory": "proofs/AUDIT-LEFT-20261110-001A/AUDIT-LEFT-20261110-001A-P001_the_left_pigeon_bound_audited"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Proof complexity of the binary left-pigeon principle (with n + 1 and with 2n pigeons) in dag-like Res(xor); nothing about the knot sphere's count.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Re-derived by Claude, the author of WIDE-LEFT-20261110-001A, on 2026-11-10; attacked by fresh Claude reviewers that were not shown the proof (same model, so not independent in the V2 sense).",
+    "status": "re-derived by hand; numeric checks in check.py (rewritten independently); attacked by four fresh same-model reviewers with their own code; no failing step; one presentation gap in the earlier Lemma 2 (redundant side conditions) noted",
+    "novelty": "not new in substance: the formula is Pudlak-Thapen's rWPHP_n, and a stronger exp(Omega(n)) bound follows from Pang (arXiv 2610.00837, 30 September 2026) in a few lines; corrections logged in docs/CORRECTIONS.md on 2026-11-10"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spheres",
+      "threefold"
+    ],
+    "program": "complexity",
+    "takes": [
+      "B116"
+    ]
+  },
+  "id": "AUDIT-LEFT-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take up sub-goal B116 (G3), confirmed by the coordinator on 2026-11-10 at max effort as an audit, not a write-up: re-derive WIDE-LEFT-20261110-001A's dag-like Res(xor) lower bound for the binary left-pigeon principle from scratch with every constant and quantifier explicit; attack the spare-row lemma, the density count and the transfer to n + 1 pigeons with fresh reviewers who have not seen the proof sketch; say which of Braun's lemmas are used and which the Lean replay covers; check the bound against known upper bounds and, where feasible, against computed minimum sizes. Stop when the note survives or names the failing step. Nothing is shared outside the repository.",
+  "ownership": {
+    "root": true,
+    "scope_id": "AUDIT-LEFT-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (stop rule: the note survives): WIDE-LEFT-20261110-001A's dag-like Res(xor) bound for the binary left-pigeon principle re-derived with explicit constants and attacked by four fresh reviewers; every step holds (V1, conditional on A55; Braun's eight lemmas all in the replayed import closure). Not new in substance: the 2n-pigeon formula is Pudlak-Thapen's rWPHP and exp(Omega(n)) follows from Pang's degree-size relation (arXiv 2610.00837); two novelty corrections logged.",
+  "status_class": "complete",
+  "stop_rule": "The audit note either survives every check named in the objective or names the step that fails; a failing step is logged as a correction at once. One epic.",
+  "title": "An audit of the left-pigeon bound"
+}

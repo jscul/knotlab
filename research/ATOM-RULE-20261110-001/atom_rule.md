@@ -61,3 +61,33 @@ None.
   computed, would let the owner judge it as a whole.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B87 taken; B95 and B96 added. **Assumptions:** none new.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (03:56 UTC).
+
+**B87 done: the atom rule is now a theorem, not just a small-case observation.** On every octahedral knot sphere, with Fano atoms placed so their neighbourhoods don't overlap:
+- each atom acts as its line in exactly one of the four winding classes of its own handle, independently of the others;
+- if every atom acts, no state satisfies every line;
+- otherwise every acting atom holds a unit of the leftover tension.
+
+The proof is computer-assisted. Two lemmas are by hand: each handle is its own summand, and an atom's behaviour depends only on its own signs. A finite local check covered 2,700 splices on K_2 to K_7. A classification found only four kinds of line neighbourhood from K_2 to K_8, none new after K_3, because the sphere is a flat lattice except at six corners. Not proved: that extra units are free when fewer atoms act. That part is computed only. This didn't need max effort.
+
+**Your two asks on B88.** (1) Its failure criteria were frozen in commit 1be11cd69 at 02:32 UTC, before the run started at 02:33, so B88 is not post hoc. (2) The atom rule says nothing about the 10 runs stuck one unit above the floor, since it only covers floor states. They're recorded as an open observation, B90.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: proof of the atom rule (B87) | **Status:** Successful | proved for every octahedral knot sphere, separated atoms |
+| Local direction: the learned memory | Practically complete for this phase | written, held, rewritten, read, rule proved |
+| Broader exploration: learning program | Known alternatives | other spheres, stuck states, a write-up |
+| Long-term goal: G15 | Capability gained | a learned memory with a proved rule |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A note on the learning line (B95) | 2/3 — Substantial | 3/3 — Ready | write the arc from B6 to B87 in plain words, proved vs computed → a note you can check | Selected · awaiting go-ahead |
+| 2 | The rule beyond octahedral spheres (B96) | 1/3 — Incremental | 2/3 — Testable | local check on other spheres → same rule, or a breaking type | Alternative · deferred |
+| 3 | Learner local minima (B90) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B87 taken; B95, B96 added. **Assumptions:** none new.

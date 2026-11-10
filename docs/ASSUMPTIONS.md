@@ -1279,6 +1279,11 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Extended by `WEAK-APER-20261110-001`
+    ([weakly aperiodic laws](../research/WEAK-APER-20261110-001/weak_aperiodic.md)): under Leibniz's rule every law with finite windows over a
+    finite alphabet and infinitely many solutions has the tree as a board, since every infinite shift of finite type on the free
+    group has a solution with trivial stabilizer (proved). So no such law forces the plane, and the reduction left by
+    `LEIBNIZ-BOARDS-20261110-001` is closed.
   - 2026-11-10 · Sharpened by `BOARD-READ-20261110-001`: on every periodic board the route reading is a polygon norm up to a constant
     (proved), and on the square, triangular, honeycomb and kagome boards it is the board's own graph distance times g·d/2 (computed),
     so under these laws the dynamics reads the declared board's distance, scaled, and adds no shape of its own. The growth line's
@@ -1363,11 +1368,16 @@ evidence: results and their status come from the records each entry links.
 - **Why.** Backlog B92's first test chose this naming. A finitary uniform law needs a bounded neighbourhood, and the naming supplies one
   without a clause that names a degree. `BOARD-DIST-20261110-001` kept it.
 - **Rests on it.** Every result of `BOARD-DIST-20261110-001`
-  ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)).
+  ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)), `LEIBNIZ-BOARDS-20261110-001`,
+  `RIGID-WORLDS-20261110-001` and `WEAK-APER-20261110-001`.
 - **Challenge.** Name places without letters, with a neighbour distinction for each pair and laws that name no degree. The question
   is then whether a finitary law can force a bounded degree at all, and whether the unfolding theorem holds there. If the theorem
   fails, the naming was a hidden drawing; if it holds, the obstruction does not depend on the naming.
 - **History.**
+  - 2026-11-10 · Bearing from `WEAK-APER-20261110-001` ([weakly aperiodic laws](../research/WEAK-APER-20261110-001/weak_aperiodic.md)): with
+    this naming, under Leibniz's rule, the tree is a board of every law with infinitely many solutions (proved). The tree is the
+    naming's own shape, so the challenge, names without letters, is the remaining test of whether the obstruction belongs to the
+    naming.
   - 2026-11-10 · Added by `BOARD-DIST-20261110-001`.
 
 ### A55 · Braun's bit-PHP preprint is correct

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**271 current results** and 5 superseded ones, from 221 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**272 current results** and 5 superseded ones, from 221 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 2 results
+- [Other results](#other-results): 3 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 221 epics with their closures
 
@@ -930,6 +930,9 @@ Results not yet placed in a line of work.
 - **2026-11-07 · Every line of a knot sphere carries the forced dissonance equally often** (`RESIGN-STEER-20261107-001-D002`).
   On every simplicial two-coloured sphere triangulation with Kasteleyn signs, each line is the only violated line of exactly 2N(T) states with no over-agreeing face, where N(T)^2 = det(BB^T)/(n0n1 + n1n2 + n2n0) for the line-vertex matrix B and the class sizes n_i of the vertex 3-colouring. Two even faces of different colours never allow fewer consistent states than two adjacent ones.
   [proof P001](proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/proof.md), [epic closure](proofs/RESIGN-STEER-20261107-001Z/RESIGN-STEER-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-09 · Learning removes a class-forced dissonance only by winding around a handle** (`LEARN-HANDLES-20261109-001-D001`).
+  On a torus whose Kasteleyn law is in a class no state satisfies, the least dissonance is one violated line and one over-agreeing face, and learning at the dissonance with the state fixed removes it, leaving no even face. Every process that removes it changes the law by a cycle of nonzero homology class, so learning carries the law's class, which no change of state can, and only around a handle.
+  [proof P001](proofs/LEARN-HANDLES-20261109-001A/LEARN-HANDLES-20261109-001A-P001_learning_resolves_a_class_forced_pair_only_by_winding/proof.md), [epic closure](proofs/LEARN-HANDLES-20261109-001Z/LEARN-HANDLES-20261109-001Z-P001_epic_closure/proof.md)
 
 ## Notes
 
@@ -1160,7 +1163,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-09 | Full reach on honeycomb tori (`HONEY-REACH-20261109-001`) | [closure](proofs/HONEY-REACH-20261109-001Z/HONEY-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/HONEY-REACH-20261109-001/) |
 | 2026-11-09 | Is isolation necessary for balance under doubling? (`ISOLATION-NEED-20261109-001`) | [closure](proofs/ISOLATION-NEED-20261109-001Z/ISOLATION-NEED-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/ISOLATION-NEED-20261109-001/) |
 | 2026-11-09 | Which lattices compose everywhere (`LATTICE-REACH-20261109-001`) | [closure](proofs/LATTICE-REACH-20261109-001Z/LATTICE-REACH-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LATTICE-REACH-20261109-001/) |
-| 2026-11-09 | Learning in handles (`LEARN-HANDLES-20261109-001`) | — | [folder](research/LEARN-HANDLES-20261109-001/) |
+| 2026-11-09 | Learning in handles (`LEARN-HANDLES-20261109-001`) | [closure](proofs/LEARN-HANDLES-20261109-001Z/LEARN-HANDLES-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-HANDLES-20261109-001/) |
 | 2026-11-09 | A plane read plainly beyond tori (`PLANE-PLAIN-20261109-001`) | [closure](proofs/PLANE-PLAIN-20261109-001Z/PLANE-PLAIN-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/PLANE-PLAIN-20261109-001/) |
 | 2026-11-09 | Knots read from the last growth event (`REBASE-KNOTS-20261109-001`) | [closure](proofs/REBASE-KNOTS-20261109-001Z/REBASE-KNOTS-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REBASE-KNOTS-20261109-001/) |
 | 2026-11-09 | Large networks persistent without flips (`REROUTE-20261109-001`) | [closure](proofs/REROUTE-20261109-001Z/REROUTE-20261109-001Z-P001_epic_closure/proof.md) | [folder](research/REROUTE-20261109-001/) |

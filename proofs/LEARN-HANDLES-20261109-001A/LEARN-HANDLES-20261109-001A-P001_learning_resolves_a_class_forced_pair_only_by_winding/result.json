@@ -1,0 +1,3245 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": [
+    "experiments/RESIGN-STEER-20261107-001B/RESIGN-STEER-20261107-001B-E001_local_rules_and_the_force_between_halves/run.py",
+    "proofs/COUNT-SURFACES-20261107-001A/COUNT-SURFACES-20261107-001A-P001_the_count_reads_the_euler_characteristic/surface_lib.py",
+    "proofs/RESIGN-STEER-20261107-001A/RESIGN-STEER-20261107-001A-P001_re_signing_splits_the_dissonance_and_carries_it_anywhere/steer_lib.py",
+    "research/LEARN-HANDLES-20261109-001/preregistration.md"
+   ]
+  },
+  "1 class-forced spaces: the two Fano tori and 57 thin tori of even index up to 40 points, each with exactly one sign class that no state satisfies (SAT agrees with the criterion of COUNT-SURFACES-20261107-001A theorem 5)": {
+   "pass": true,
+   "info": {
+    "tori": 59,
+    "Fano": 2,
+    "thin, even index 4 to 40": 57,
+    "one class unsatisfiable on each": true
+   }
+  },
+  "2 E1: every class-forced law has states violating exactly one line, and each of them has exactly one face whose three corners all agree (deg 3), every other face deg 1; up to 20 points every least state is read (70 on each Fano torus, n^2 on each thin torus), beyond, 200 found by SAT": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "torus": "torus(7,2,1)",
+      "points": 7,
+      "least violated lines": 1,
+      "least states": 70,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(7,4,1)",
+      "points": 7,
+      "least violated lines": 1,
+      "least states": 70,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(2,1,2)",
+      "points": 4,
+      "least violated lines": 1,
+      "least states": 16,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(4,1,1)",
+      "points": 4,
+      "least violated lines": 1,
+      "least states": 16,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(4,2,1)",
+      "points": 4,
+      "least violated lines": 1,
+      "least states": 16,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(3,2,2)",
+      "points": 6,
+      "least violated lines": 1,
+      "least states": 36,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(6,1,1)",
+      "points": 6,
+      "least violated lines": 1,
+      "least states": 36,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(6,4,1)",
+      "points": 6,
+      "least violated lines": 1,
+      "least states": 36,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(4,3,2)",
+      "points": 8,
+      "least violated lines": 1,
+      "least states": 64,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(8,1,1)",
+      "points": 8,
+      "least violated lines": 1,
+      "least states": 64,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(8,6,1)",
+      "points": 8,
+      "least violated lines": 1,
+      "least states": 64,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(5,4,2)",
+      "points": 10,
+      "least violated lines": 1,
+      "least states": 100,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(10,1,1)",
+      "points": 10,
+      "least violated lines": 1,
+      "least states": 100,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(10,8,1)",
+      "points": 10,
+      "least violated lines": 1,
+      "least states": 100,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(6,5,2)",
+      "points": 12,
+      "least violated lines": 1,
+      "least states": 144,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(12,1,1)",
+      "points": 12,
+      "least violated lines": 1,
+      "least states": 144,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(12,10,1)",
+      "points": 12,
+      "least violated lines": 1,
+      "least states": 144,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(7,6,2)",
+      "points": 14,
+      "least violated lines": 1,
+      "least states": 196,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(14,1,1)",
+      "points": 14,
+      "least violated lines": 1,
+      "least states": 196,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(14,12,1)",
+      "points": 14,
+      "least violated lines": 1,
+      "least states": 196,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(8,7,2)",
+      "points": 16,
+      "least violated lines": 1,
+      "least states": 256,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(16,1,1)",
+      "points": 16,
+      "least violated lines": 1,
+      "least states": 256,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(16,14,1)",
+      "points": 16,
+      "least violated lines": 1,
+      "least states": 256,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(9,8,2)",
+      "points": 18,
+      "least violated lines": 1,
+      "least states": 324,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(18,1,1)",
+      "points": 18,
+      "least violated lines": 1,
+      "least states": 324,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(18,16,1)",
+      "points": 18,
+      "least violated lines": 1,
+      "least states": 324,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(10,9,2)",
+      "points": 20,
+      "least violated lines": 1,
+      "least states": 400,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(20,1,1)",
+      "points": 20,
+      "least violated lines": 1,
+      "least states": 400,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(20,18,1)",
+      "points": 20,
+      "least violated lines": 1,
+      "least states": 400,
+      "read": "all",
+      "ok": true
+     },
+     {
+      "torus": "torus(11,10,2)",
+      "points": 22,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(22,1,1)",
+      "points": 22,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(22,20,1)",
+      "points": 22,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(12,11,2)",
+      "points": 24,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(24,1,1)",
+      "points": 24,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(24,22,1)",
+      "points": 24,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(13,12,2)",
+      "points": 26,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(26,1,1)",
+      "points": 26,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(26,24,1)",
+      "points": 26,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(14,13,2)",
+      "points": 28,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(28,1,1)",
+      "points": 28,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(28,26,1)",
+      "points": 28,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(15,14,2)",
+      "points": 30,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(30,1,1)",
+      "points": 30,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(30,28,1)",
+      "points": 30,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(16,15,2)",
+      "points": 32,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(32,1,1)",
+      "points": 32,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(32,30,1)",
+      "points": 32,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(17,16,2)",
+      "points": 34,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(34,1,1)",
+      "points": 34,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(34,32,1)",
+      "points": 34,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(18,17,2)",
+      "points": 36,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(36,1,1)",
+      "points": 36,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(36,34,1)",
+      "points": 36,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(19,18,2)",
+      "points": 38,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(38,1,1)",
+      "points": 38,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(38,36,1)",
+      "points": 38,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(20,19,2)",
+      "points": 40,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(40,1,1)",
+      "points": 40,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     },
+     {
+      "torus": "torus(40,38,1)",
+      "points": 40,
+      "least violated lines": 1,
+      "least states": 200,
+      "read": "SAT sample",
+      "ok": true
+     }
+    ],
+    "thin tori up to 20 points have n^2 least states": true
+   }
+  },
+  "3 E2: from every least state read and each of its three splits, learning at the dissonance with the state fixed resolves the pair into every other class (cheapest perfect matching of that class, holes moved along lines that agree where they go): every step is at a dissonance, the end has no violated line, no over-agreeing face and no even face, and the sign change is a cycle whose class is the difference of classes, never zero": {
+   "pass": true,
+   "info": {
+    "totals": {
+     "walks": 96732,
+     "resolved and winding": 96732,
+     "cheapest walk over classes found": 32244
+    },
+    "per torus": [
+     {
+      "torus": "torus(7,2,1)",
+      "walks": 630,
+      "resolved and winding": 630,
+      "cheapest walk over classes found": 210
+     },
+     {
+      "torus": "torus(7,4,1)",
+      "walks": 630,
+      "resolved and winding": 630,
+      "cheapest walk over classes found": 210
+     },
+     {
+      "torus": "torus(2,1,2)",
+      "walks": 144,
+      "resolved and winding": 144,
+      "cheapest walk over classes found": 48
+     },
+     {
+      "torus": "torus(4,1,1)",
+      "walks": 144,
+      "resolved and winding": 144,
+      "cheapest walk over classes found": 48
+     },
+     {
+      "torus": "torus(4,2,1)",
+      "walks": 144,
+      "resolved and winding": 144,
+      "cheapest walk over classes found": 48
+     },
+     {
+      "torus": "torus(3,2,2)",
+      "walks": 324,
+      "resolved and winding": 324,
+      "cheapest walk over classes found": 108
+     },
+     {
+      "torus": "torus(6,1,1)",
+      "walks": 324,
+      "resolved and winding": 324,
+      "cheapest walk over classes found": 108
+     },
+     {
+      "torus": "torus(6,4,1)",
+      "walks": 324,
+      "resolved and winding": 324,
+      "cheapest walk over classes found": 108
+     },
+     {
+      "torus": "torus(4,3,2)",
+      "walks": 576,
+      "resolved and winding": 576,
+      "cheapest walk over classes found": 192
+     },
+     {
+      "torus": "torus(8,1,1)",
+      "walks": 576,
+      "resolved and winding": 576,
+      "cheapest walk over classes found": 192
+     },
+     {
+      "torus": "torus(8,6,1)",
+      "walks": 576,
+      "resolved and winding": 576,
+      "cheapest walk over classes found": 192
+     },
+     {
+      "torus": "torus(5,4,2)",
+      "walks": 900,
+      "resolved and winding": 900,
+      "cheapest walk over classes found": 300
+     },
+     {
+      "torus": "torus(10,1,1)",
+      "walks": 900,
+      "resolved and winding": 900,
+      "cheapest walk over classes found": 300
+     },
+     {
+      "torus": "torus(10,8,1)",
+      "walks": 900,
+      "resolved and winding": 900,
+      "cheapest walk over classes found": 300
+     },
+     {
+      "torus": "torus(6,5,2)",
+      "walks": 1296,
+      "resolved and winding": 1296,
+      "cheapest walk over classes found": 432
+     },
+     {
+      "torus": "torus(12,1,1)",
+      "walks": 1296,
+      "resolved and winding": 1296,
+      "cheapest walk over classes found": 432
+     },
+     {
+      "torus": "torus(12,10,1)",
+      "walks": 1296,
+      "resolved and winding": 1296,
+      "cheapest walk over classes found": 432
+     },
+     {
+      "torus": "torus(7,6,2)",
+      "walks": 1764,
+      "resolved and winding": 1764,
+      "cheapest walk over classes found": 588
+     },
+     {
+      "torus": "torus(14,1,1)",
+      "walks": 1764,
+      "resolved and winding": 1764,
+      "cheapest walk over classes found": 588
+     },
+     {
+      "torus": "torus(14,12,1)",
+      "walks": 1764,
+      "resolved and winding": 1764,
+      "cheapest walk over classes found": 588
+     },
+     {
+      "torus": "torus(8,7,2)",
+      "walks": 2304,
+      "resolved and winding": 2304,
+      "cheapest walk over classes found": 768
+     },
+     {
+      "torus": "torus(16,1,1)",
+      "walks": 2304,
+      "resolved and winding": 2304,
+      "cheapest walk over classes found": 768
+     },
+     {
+      "torus": "torus(16,14,1)",
+      "walks": 2304,
+      "resolved and winding": 2304,
+      "cheapest walk over classes found": 768
+     },
+     {
+      "torus": "torus(9,8,2)",
+      "walks": 2916,
+      "resolved and winding": 2916,
+      "cheapest walk over classes found": 972
+     },
+     {
+      "torus": "torus(18,1,1)",
+      "walks": 2916,
+      "resolved and winding": 2916,
+      "cheapest walk over classes found": 972
+     },
+     {
+      "torus": "torus(18,16,1)",
+      "walks": 2916,
+      "resolved and winding": 2916,
+      "cheapest walk over classes found": 972
+     },
+     {
+      "torus": "torus(10,9,2)",
+      "walks": 3600,
+      "resolved and winding": 3600,
+      "cheapest walk over classes found": 1200
+     },
+     {
+      "torus": "torus(20,1,1)",
+      "walks": 3600,
+      "resolved and winding": 3600,
+      "cheapest walk over classes found": 1200
+     },
+     {
+      "torus": "torus(20,18,1)",
+      "walks": 3600,
+      "resolved and winding": 3600,
+      "cheapest walk over classes found": 1200
+     },
+     {
+      "torus": "torus(11,10,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(22,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(22,20,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(12,11,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(24,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(24,22,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(13,12,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(26,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(26,24,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(14,13,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(28,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(28,26,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(15,14,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(30,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(30,28,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(16,15,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(32,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(32,30,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(17,16,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(34,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(34,32,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(18,17,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(36,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(36,34,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(19,18,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(38,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(38,36,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(20,19,2)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(40,1,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     },
+     {
+      "torus": "torus(40,38,1)",
+      "walks": 1800,
+      "resolved and winding": 1800,
+      "cheapest walk over classes found": 600
+     }
+    ]
+   }
+  },
+  "4 E4 (computed): the cheapest walk into each class, against the least number of sides of a cycle in its class change": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "torus": "torus(7,2,1)",
+      "points": 7,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "10": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "11": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       }
+      }
+     },
+     {
+      "torus": "torus(7,4,1)",
+      "points": 7,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "10": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "11": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       }
+      }
+     },
+     {
+      "torus": "torus(2,1,2)",
+      "points": 4,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.0,
+        "most": 3
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 2.67,
+        "most": 3
+       },
+       "01": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 2.67,
+        "most": 3
+       }
+      }
+     },
+     {
+      "torus": "torus(4,1,1)",
+      "points": 4,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.0,
+        "most": 3
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 2.67,
+        "most": 3
+       },
+       "01": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 2.67,
+        "most": 3
+       }
+      }
+     },
+     {
+      "torus": "torus(4,2,1)",
+      "points": 4,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.0,
+        "most": 3
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 2.67,
+        "most": 3
+       },
+       "01": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 2.67,
+        "most": 3
+       }
+      }
+     },
+     {
+      "torus": "torus(3,2,2)",
+      "points": 6,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 3.22,
+        "most": 5
+       },
+       "10": {
+        "lower bound (systole)": 4,
+        "cheapest": 4,
+        "mean": 4.0,
+        "most": 4
+       }
+      }
+     },
+     {
+      "torus": "torus(6,1,1)",
+      "points": 6,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 3.22,
+        "most": 5
+       },
+       "01": {
+        "lower bound (systole)": 4,
+        "cheapest": 4,
+        "mean": 4.0,
+        "most": 4
+       }
+      }
+     },
+     {
+      "torus": "torus(6,4,1)",
+      "points": 6,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 3,
+        "cheapest": 3,
+        "mean": 3.67,
+        "most": 4
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 3.22,
+        "most": 5
+       },
+       "01": {
+        "lower bound (systole)": 4,
+        "cheapest": 4,
+        "mean": 4.0,
+        "most": 4
+       }
+      }
+     },
+     {
+      "torus": "torus(4,3,2)",
+      "points": 8,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 5,
+        "cheapest": 5,
+        "mean": 5.0,
+        "most": 5
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 3.67,
+        "most": 5
+       },
+       "01": {
+        "lower bound (systole)": 4,
+        "cheapest": 4,
+        "mean": 4.67,
+        "most": 5
+       }
+      }
+     },
+     {
+      "torus": "torus(8,1,1)",
+      "points": 8,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 5,
+        "cheapest": 5,
+        "mean": 5.0,
+        "most": 5
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 3.67,
+        "most": 5
+       },
+       "01": {
+        "lower bound (systole)": 4,
+        "cheapest": 4,
+        "mean": 4.67,
+        "most": 5
+       }
+      }
+     },
+     {
+      "torus": "torus(8,6,1)",
+      "points": 8,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 5,
+        "cheapest": 5,
+        "mean": 5.0,
+        "most": 5
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 3.67,
+        "most": 5
+       },
+       "01": {
+        "lower bound (systole)": 4,
+        "cheapest": 4,
+        "mean": 4.67,
+        "most": 5
+       }
+      }
+     },
+     {
+      "torus": "torus(5,4,2)",
+      "points": 10,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 5,
+        "cheapest": 5,
+        "mean": 5.67,
+        "most": 6
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 4.2,
+        "most": 7
+       },
+       "10": {
+        "lower bound (systole)": 6,
+        "cheapest": 6,
+        "mean": 6.0,
+        "most": 6
+       }
+      }
+     },
+     {
+      "torus": "torus(10,1,1)",
+      "points": 10,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 5,
+        "cheapest": 5,
+        "mean": 5.67,
+        "most": 6
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 4.2,
+        "most": 7
+       },
+       "01": {
+        "lower bound (systole)": 6,
+        "cheapest": 6,
+        "mean": 6.0,
+        "most": 6
+       }
+      }
+     },
+     {
+      "torus": "torus(10,8,1)",
+      "points": 10,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 5,
+        "cheapest": 5,
+        "mean": 5.67,
+        "most": 6
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 4.2,
+        "most": 7
+       },
+       "01": {
+        "lower bound (systole)": 6,
+        "cheapest": 6,
+        "mean": 6.0,
+        "most": 6
+       }
+      }
+     },
+     {
+      "torus": "torus(6,5,2)",
+      "points": 12,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 7,
+        "cheapest": 7,
+        "mean": 7.0,
+        "most": 7
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 4.67,
+        "most": 7
+       },
+       "01": {
+        "lower bound (systole)": 6,
+        "cheapest": 6,
+        "mean": 6.67,
+        "most": 7
+       }
+      }
+     },
+     {
+      "torus": "torus(12,1,1)",
+      "points": 12,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 7,
+        "cheapest": 7,
+        "mean": 7.0,
+        "most": 7
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 4.67,
+        "most": 7
+       },
+       "01": {
+        "lower bound (systole)": 6,
+        "cheapest": 6,
+        "mean": 6.67,
+        "most": 7
+       }
+      }
+     },
+     {
+      "torus": "torus(12,10,1)",
+      "points": 12,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 7,
+        "cheapest": 7,
+        "mean": 7.0,
+        "most": 7
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 4.67,
+        "most": 7
+       },
+       "01": {
+        "lower bound (systole)": 6,
+        "cheapest": 6,
+        "mean": 6.67,
+        "most": 7
+       }
+      }
+     },
+     {
+      "torus": "torus(7,6,2)",
+      "points": 14,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 7,
+        "cheapest": 7,
+        "mean": 7.67,
+        "most": 8
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 5.19,
+        "most": 9
+       },
+       "10": {
+        "lower bound (systole)": 8,
+        "cheapest": 8,
+        "mean": 8.0,
+        "most": 8
+       }
+      }
+     },
+     {
+      "torus": "torus(14,1,1)",
+      "points": 14,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 7,
+        "cheapest": 7,
+        "mean": 7.67,
+        "most": 8
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 5.19,
+        "most": 9
+       },
+       "01": {
+        "lower bound (systole)": 8,
+        "cheapest": 8,
+        "mean": 8.0,
+        "most": 8
+       }
+      }
+     },
+     {
+      "torus": "torus(14,12,1)",
+      "points": 14,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 7,
+        "cheapest": 7,
+        "mean": 7.67,
+        "most": 8
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 5.19,
+        "most": 9
+       },
+       "01": {
+        "lower bound (systole)": 8,
+        "cheapest": 8,
+        "mean": 8.0,
+        "most": 8
+       }
+      }
+     },
+     {
+      "torus": "torus(8,7,2)",
+      "points": 16,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 9,
+        "cheapest": 9,
+        "mean": 9.0,
+        "most": 9
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 5.67,
+        "most": 9
+       },
+       "01": {
+        "lower bound (systole)": 8,
+        "cheapest": 8,
+        "mean": 8.67,
+        "most": 9
+       }
+      }
+     },
+     {
+      "torus": "torus(16,1,1)",
+      "points": 16,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 9,
+        "cheapest": 9,
+        "mean": 9.0,
+        "most": 9
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 5.67,
+        "most": 9
+       },
+       "01": {
+        "lower bound (systole)": 8,
+        "cheapest": 8,
+        "mean": 8.67,
+        "most": 9
+       }
+      }
+     },
+     {
+      "torus": "torus(16,14,1)",
+      "points": 16,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 9,
+        "cheapest": 9,
+        "mean": 9.0,
+        "most": 9
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 5.67,
+        "most": 9
+       },
+       "01": {
+        "lower bound (systole)": 8,
+        "cheapest": 8,
+        "mean": 8.67,
+        "most": 9
+       }
+      }
+     },
+     {
+      "torus": "torus(9,8,2)",
+      "points": 18,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 9,
+        "cheapest": 9,
+        "mean": 9.67,
+        "most": 10
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.19,
+        "most": 11
+       },
+       "10": {
+        "lower bound (systole)": 10,
+        "cheapest": 10,
+        "mean": 10.0,
+        "most": 10
+       }
+      }
+     },
+     {
+      "torus": "torus(18,1,1)",
+      "points": 18,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 9,
+        "cheapest": 9,
+        "mean": 9.67,
+        "most": 10
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.19,
+        "most": 11
+       },
+       "01": {
+        "lower bound (systole)": 10,
+        "cheapest": 10,
+        "mean": 10.0,
+        "most": 10
+       }
+      }
+     },
+     {
+      "torus": "torus(18,16,1)",
+      "points": 18,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 9,
+        "cheapest": 9,
+        "mean": 9.67,
+        "most": 10
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.19,
+        "most": 11
+       },
+       "01": {
+        "lower bound (systole)": 10,
+        "cheapest": 10,
+        "mean": 10.0,
+        "most": 10
+       }
+      }
+     },
+     {
+      "torus": "torus(10,9,2)",
+      "points": 20,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 11,
+        "cheapest": 11,
+        "mean": 11.0,
+        "most": 11
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.67,
+        "most": 11
+       },
+       "01": {
+        "lower bound (systole)": 10,
+        "cheapest": 10,
+        "mean": 10.67,
+        "most": 11
+       }
+      }
+     },
+     {
+      "torus": "torus(20,1,1)",
+      "points": 20,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 11,
+        "cheapest": 11,
+        "mean": 11.0,
+        "most": 11
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.67,
+        "most": 11
+       },
+       "01": {
+        "lower bound (systole)": 10,
+        "cheapest": 10,
+        "mean": 10.67,
+        "most": 11
+       }
+      }
+     },
+     {
+      "torus": "torus(20,18,1)",
+      "points": 20,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 11,
+        "cheapest": 11,
+        "mean": 11.0,
+        "most": 11
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.67,
+        "most": 11
+       },
+       "01": {
+        "lower bound (systole)": 10,
+        "cheapest": 10,
+        "mean": 10.67,
+        "most": 11
+       }
+      }
+     },
+     {
+      "torus": "torus(11,10,2)",
+      "points": 22,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 11,
+        "cheapest": 11,
+        "mean": 11.67,
+        "most": 12
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.35,
+        "most": 13
+       },
+       "10": {
+        "lower bound (systole)": 12,
+        "cheapest": 12,
+        "mean": 12.0,
+        "most": 12
+       }
+      }
+     },
+     {
+      "torus": "torus(22,1,1)",
+      "points": 22,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 11,
+        "cheapest": 11,
+        "mean": 11.67,
+        "most": 12
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.07,
+        "most": 13
+       },
+       "01": {
+        "lower bound (systole)": 12,
+        "cheapest": 12,
+        "mean": 12.0,
+        "most": 12
+       }
+      }
+     },
+     {
+      "torus": "torus(22,20,1)",
+      "points": 22,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 11,
+        "cheapest": 11,
+        "mean": 11.67,
+        "most": 12
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.11,
+        "most": 13
+       },
+       "01": {
+        "lower bound (systole)": 12,
+        "cheapest": 12,
+        "mean": 12.0,
+        "most": 12
+       }
+      }
+     },
+     {
+      "torus": "torus(12,11,2)",
+      "points": 24,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 13,
+        "cheapest": 13,
+        "mean": 13.0,
+        "most": 13
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.86,
+        "most": 13
+       },
+       "01": {
+        "lower bound (systole)": 12,
+        "cheapest": 12,
+        "mean": 12.67,
+        "most": 13
+       }
+      }
+     },
+     {
+      "torus": "torus(24,1,1)",
+      "points": 24,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 13,
+        "cheapest": 13,
+        "mean": 13.0,
+        "most": 13
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.42,
+        "most": 13
+       },
+       "01": {
+        "lower bound (systole)": 12,
+        "cheapest": 12,
+        "mean": 12.67,
+        "most": 13
+       }
+      }
+     },
+     {
+      "torus": "torus(24,22,1)",
+      "points": 24,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 13,
+        "cheapest": 13,
+        "mean": 13.0,
+        "most": 13
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.33,
+        "most": 13
+       },
+       "01": {
+        "lower bound (systole)": 12,
+        "cheapest": 12,
+        "mean": 12.67,
+        "most": 13
+       }
+      }
+     },
+     {
+      "torus": "torus(13,12,2)",
+      "points": 26,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 13,
+        "cheapest": 13,
+        "mean": 13.67,
+        "most": 14
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 8.33,
+        "most": 15
+       },
+       "10": {
+        "lower bound (systole)": 14,
+        "cheapest": 14,
+        "mean": 14.0,
+        "most": 14
+       }
+      }
+     },
+     {
+      "torus": "torus(26,1,1)",
+      "points": 26,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 13,
+        "cheapest": 13,
+        "mean": 13.67,
+        "most": 14
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.63,
+        "most": 15
+       },
+       "01": {
+        "lower bound (systole)": 14,
+        "cheapest": 14,
+        "mean": 14.0,
+        "most": 14
+       }
+      }
+     },
+     {
+      "torus": "torus(26,24,1)",
+      "points": 26,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 13,
+        "cheapest": 13,
+        "mean": 13.67,
+        "most": 14
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.59,
+        "most": 15
+       },
+       "01": {
+        "lower bound (systole)": 14,
+        "cheapest": 14,
+        "mean": 14.0,
+        "most": 14
+       }
+      }
+     },
+     {
+      "torus": "torus(14,13,2)",
+      "points": 28,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 15,
+        "cheapest": 15,
+        "mean": 15.0,
+        "most": 15
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 8.67,
+        "most": 15
+       },
+       "01": {
+        "lower bound (systole)": 14,
+        "cheapest": 14,
+        "mean": 14.67,
+        "most": 15
+       }
+      }
+     },
+     {
+      "torus": "torus(28,1,1)",
+      "points": 28,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 15,
+        "cheapest": 15,
+        "mean": 15.0,
+        "most": 15
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.0,
+        "most": 15
+       },
+       "01": {
+        "lower bound (systole)": 14,
+        "cheapest": 14,
+        "mean": 14.67,
+        "most": 15
+       }
+      }
+     },
+     {
+      "torus": "torus(28,26,1)",
+      "points": 28,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 15,
+        "cheapest": 15,
+        "mean": 15.0,
+        "most": 15
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.93,
+        "most": 15
+       },
+       "01": {
+        "lower bound (systole)": 14,
+        "cheapest": 14,
+        "mean": 14.67,
+        "most": 15
+       }
+      }
+     },
+     {
+      "torus": "torus(15,14,2)",
+      "points": 30,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 15,
+        "cheapest": 15,
+        "mean": 15.67,
+        "most": 16
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 9.17,
+        "most": 17
+       },
+       "10": {
+        "lower bound (systole)": 16,
+        "cheapest": 16,
+        "mean": 16.0,
+        "most": 16
+       }
+      }
+     },
+     {
+      "torus": "torus(30,1,1)",
+      "points": 30,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 15,
+        "cheapest": 15,
+        "mean": 15.67,
+        "most": 16
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.41,
+        "most": 17
+       },
+       "01": {
+        "lower bound (systole)": 16,
+        "cheapest": 16,
+        "mean": 16.0,
+        "most": 16
+       }
+      }
+     },
+     {
+      "torus": "torus(30,28,1)",
+      "points": 30,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 15,
+        "cheapest": 15,
+        "mean": 15.67,
+        "most": 16
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.18,
+        "most": 17
+       },
+       "01": {
+        "lower bound (systole)": 16,
+        "cheapest": 16,
+        "mean": 16.0,
+        "most": 16
+       }
+      }
+     },
+     {
+      "torus": "torus(16,15,2)",
+      "points": 32,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 17,
+        "cheapest": 17,
+        "mean": 17.0,
+        "most": 17
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 9.79,
+        "most": 17
+       },
+       "01": {
+        "lower bound (systole)": 16,
+        "cheapest": 16,
+        "mean": 16.67,
+        "most": 17
+       }
+      }
+     },
+     {
+      "torus": "torus(32,1,1)",
+      "points": 32,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 17,
+        "cheapest": 17,
+        "mean": 17.0,
+        "most": 17
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 6.98,
+        "most": 17
+       },
+       "01": {
+        "lower bound (systole)": 16,
+        "cheapest": 16,
+        "mean": 16.67,
+        "most": 17
+       }
+      }
+     },
+     {
+      "torus": "torus(32,30,1)",
+      "points": 32,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 17,
+        "cheapest": 17,
+        "mean": 17.0,
+        "most": 17
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.03,
+        "most": 17
+       },
+       "01": {
+        "lower bound (systole)": 16,
+        "cheapest": 16,
+        "mean": 16.67,
+        "most": 17
+       }
+      }
+     },
+     {
+      "torus": "torus(17,16,2)",
+      "points": 34,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 17,
+        "cheapest": 17,
+        "mean": 17.67,
+        "most": 18
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 10.23,
+        "most": 19
+       },
+       "10": {
+        "lower bound (systole)": 18,
+        "cheapest": 18,
+        "mean": 18.0,
+        "most": 18
+       }
+      }
+     },
+     {
+      "torus": "torus(34,1,1)",
+      "points": 34,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 17,
+        "cheapest": 17,
+        "mean": 17.67,
+        "most": 18
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.66,
+        "most": 19
+       },
+       "01": {
+        "lower bound (systole)": 18,
+        "cheapest": 18,
+        "mean": 18.0,
+        "most": 18
+       }
+      }
+     },
+     {
+      "torus": "torus(34,32,1)",
+      "points": 34,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 17,
+        "cheapest": 17,
+        "mean": 17.67,
+        "most": 18
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.69,
+        "most": 19
+       },
+       "01": {
+        "lower bound (systole)": 18,
+        "cheapest": 18,
+        "mean": 18.0,
+        "most": 18
+       }
+      }
+     },
+     {
+      "torus": "torus(18,17,2)",
+      "points": 36,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 19,
+        "cheapest": 19,
+        "mean": 19.0,
+        "most": 19
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 10.32,
+        "most": 19
+       },
+       "01": {
+        "lower bound (systole)": 18,
+        "cheapest": 18,
+        "mean": 18.67,
+        "most": 19
+       }
+      }
+     },
+     {
+      "torus": "torus(36,1,1)",
+      "points": 36,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 19,
+        "cheapest": 19,
+        "mean": 19.0,
+        "most": 19
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.84,
+        "most": 19
+       },
+       "01": {
+        "lower bound (systole)": 18,
+        "cheapest": 18,
+        "mean": 18.67,
+        "most": 19
+       }
+      }
+     },
+     {
+      "torus": "torus(36,34,1)",
+      "points": 36,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 19,
+        "cheapest": 19,
+        "mean": 19.0,
+        "most": 19
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.75,
+        "most": 19
+       },
+       "01": {
+        "lower bound (systole)": 18,
+        "cheapest": 18,
+        "mean": 18.67,
+        "most": 19
+       }
+      }
+     },
+     {
+      "torus": "torus(19,18,2)",
+      "points": 38,
+      "by class change": {
+       "01": {
+        "lower bound (systole)": 19,
+        "cheapest": 19,
+        "mean": 19.67,
+        "most": 20
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 11.78,
+        "most": 21
+       },
+       "10": {
+        "lower bound (systole)": 20,
+        "cheapest": 20,
+        "mean": 20.0,
+        "most": 20
+       }
+      }
+     },
+     {
+      "torus": "torus(38,1,1)",
+      "points": 38,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 19,
+        "cheapest": 19,
+        "mean": 19.67,
+        "most": 20
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 8.1,
+        "most": 21
+       },
+       "01": {
+        "lower bound (systole)": 20,
+        "cheapest": 20,
+        "mean": 20.0,
+        "most": 20
+       }
+      }
+     },
+     {
+      "torus": "torus(38,36,1)",
+      "points": 38,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 19,
+        "cheapest": 19,
+        "mean": 19.67,
+        "most": 20
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 7.87,
+        "most": 21
+       },
+       "01": {
+        "lower bound (systole)": 20,
+        "cheapest": 20,
+        "mean": 20.0,
+        "most": 20
+       }
+      }
+     },
+     {
+      "torus": "torus(20,19,2)",
+      "points": 40,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 21,
+        "cheapest": 21,
+        "mean": 21.0,
+        "most": 21
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 11.32,
+        "most": 21
+       },
+       "01": {
+        "lower bound (systole)": 20,
+        "cheapest": 20,
+        "mean": 20.67,
+        "most": 21
+       }
+      }
+     },
+     {
+      "torus": "torus(40,1,1)",
+      "points": 40,
+      "by class change": {
+       "11": {
+        "lower bound (systole)": 21,
+        "cheapest": 21,
+        "mean": 21.0,
+        "most": 21
+       },
+       "10": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 8.29,
+        "most": 21
+       },
+       "01": {
+        "lower bound (systole)": 20,
+        "cheapest": 20,
+        "mean": 20.67,
+        "most": 21
+       }
+      }
+     },
+     {
+      "torus": "torus(40,38,1)",
+      "points": 40,
+      "by class change": {
+       "10": {
+        "lower bound (systole)": 21,
+        "cheapest": 21,
+        "mean": 21.0,
+        "most": 21
+       },
+       "11": {
+        "lower bound (systole)": 2,
+        "cheapest": 2,
+        "mean": 8.17,
+        "most": 21
+       },
+       "01": {
+        "lower bound (systole)": 20,
+        "cheapest": 20,
+        "mean": 20.67,
+        "most": 21
+       }
+      }
+     }
+    ]
+   }
+  },
+  "5 E5 (computed, exploratory): a rule seeing only the lines at a hole and the outside distance to the over-agreeing face, never stepping straight back, and unbiased random moves; every resolved run replays as sign changes at the dissonance and winds": {
+   "pass": true,
+   "info": {
+    "no_reversal resolved": 9608,
+    "of": 9608,
+    "rows": [
+     {
+      "torus": "torus(7,2,1)",
+      "points": 7,
+      "no_reversal runs": 70,
+      "no_reversal resolved": 70,
+      "no_reversal class change 11": 25,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 19,
+      "no_reversal class change 01": 26,
+      "no_reversal mean re-signings": 3.39,
+      "no_reversal mean excess over lower bound": 0.39,
+      "random mean re-signings": 6.8
+     },
+     {
+      "torus": "torus(7,4,1)",
+      "points": 7,
+      "no_reversal runs": 70,
+      "no_reversal resolved": 70,
+      "no_reversal class change 01": 22,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 23,
+      "no_reversal class change 11": 25,
+      "no_reversal mean re-signings": 3.4,
+      "no_reversal mean excess over lower bound": 0.4,
+      "random mean re-signings": 5.8
+     },
+     {
+      "torus": "torus(2,1,2)",
+      "points": 4,
+      "no_reversal runs": 16,
+      "no_reversal resolved": 16,
+      "no_reversal class change 11": 8,
+      "random runs": 16,
+      "random resolved": 16,
+      "no_reversal class change 10": 2,
+      "no_reversal class change 01": 6,
+      "no_reversal mean re-signings": 2.38,
+      "no_reversal mean excess over lower bound": 0.25,
+      "random mean re-signings": 2.8
+     },
+     {
+      "torus": "torus(4,1,1)",
+      "points": 4,
+      "no_reversal runs": 16,
+      "no_reversal resolved": 16,
+      "no_reversal class change 01": 6,
+      "random runs": 16,
+      "random resolved": 16,
+      "no_reversal class change 10": 9,
+      "no_reversal class change 11": 1,
+      "no_reversal mean re-signings": 2.25,
+      "no_reversal mean excess over lower bound": 0.19,
+      "random mean re-signings": 2.1
+     },
+     {
+      "torus": "torus(4,2,1)",
+      "points": 4,
+      "no_reversal runs": 16,
+      "no_reversal resolved": 16,
+      "no_reversal class change 01": 8,
+      "random runs": 16,
+      "random resolved": 16,
+      "no_reversal class change 11": 7,
+      "no_reversal class change 10": 1,
+      "no_reversal mean re-signings": 2.25,
+      "no_reversal mean excess over lower bound": 0.19,
+      "random mean re-signings": 2.7
+     },
+     {
+      "torus": "torus(3,2,2)",
+      "points": 6,
+      "no_reversal runs": 36,
+      "no_reversal resolved": 36,
+      "no_reversal class change 11": 25,
+      "random runs": 36,
+      "random resolved": 36,
+      "no_reversal class change 10": 3,
+      "no_reversal class change 01": 8,
+      "no_reversal mean re-signings": 3.08,
+      "no_reversal mean excess over lower bound": 0.69,
+      "random mean re-signings": 6.7
+     },
+     {
+      "torus": "torus(6,1,1)",
+      "points": 6,
+      "no_reversal runs": 36,
+      "no_reversal resolved": 36,
+      "no_reversal class change 10": 25,
+      "random runs": 36,
+      "random resolved": 36,
+      "no_reversal class change 11": 11,
+      "no_reversal mean re-signings": 3.03,
+      "no_reversal mean excess over lower bound": 0.72,
+      "random mean re-signings": 5.6
+     },
+     {
+      "torus": "torus(6,4,1)",
+      "points": 6,
+      "no_reversal runs": 36,
+      "no_reversal resolved": 36,
+      "no_reversal class change 11": 25,
+      "random runs": 36,
+      "random resolved": 36,
+      "no_reversal class change 10": 9,
+      "no_reversal class change 01": 2,
+      "no_reversal mean re-signings": 3.22,
+      "no_reversal mean excess over lower bound": 0.86,
+      "random mean re-signings": 6.6
+     },
+     {
+      "torus": "torus(4,3,2)",
+      "points": 8,
+      "no_reversal runs": 64,
+      "no_reversal resolved": 64,
+      "no_reversal class change 11": 44,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 19,
+      "no_reversal class change 10": 1,
+      "no_reversal mean re-signings": 3.52,
+      "no_reversal mean excess over lower bound": 0.88,
+      "random mean re-signings": 9.4
+     },
+     {
+      "torus": "torus(8,1,1)",
+      "points": 8,
+      "no_reversal runs": 64,
+      "no_reversal resolved": 64,
+      "no_reversal class change 10": 48,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 16,
+      "no_reversal mean re-signings": 3.62,
+      "no_reversal mean excess over lower bound": 1.12,
+      "random mean re-signings": 9.5
+     },
+     {
+      "torus": "torus(8,6,1)",
+      "points": 8,
+      "no_reversal runs": 64,
+      "no_reversal resolved": 64,
+      "no_reversal class change 11": 43,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 4,
+      "no_reversal class change 01": 17,
+      "no_reversal mean re-signings": 3.61,
+      "no_reversal mean excess over lower bound": 0.89,
+      "random mean re-signings": 7.3
+     },
+     {
+      "torus": "torus(5,4,2)",
+      "points": 10,
+      "no_reversal runs": 100,
+      "no_reversal resolved": 100,
+      "no_reversal class change 11": 77,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 21,
+      "no_reversal class change 10": 2,
+      "no_reversal mean re-signings": 4.12,
+      "no_reversal mean excess over lower bound": 1.41,
+      "random mean re-signings": 11.4
+     },
+     {
+      "torus": "torus(10,1,1)",
+      "points": 10,
+      "no_reversal runs": 100,
+      "no_reversal resolved": 100,
+      "no_reversal class change 10": 70,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 30,
+      "no_reversal mean re-signings": 4.14,
+      "no_reversal mean excess over lower bound": 1.24,
+      "random mean re-signings": 11.4
+     },
+     {
+      "torus": "torus(10,8,1)",
+      "points": 10,
+      "no_reversal runs": 100,
+      "no_reversal resolved": 100,
+      "no_reversal class change 11": 79,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 20,
+      "no_reversal class change 01": 1,
+      "no_reversal mean re-signings": 4.11,
+      "no_reversal mean excess over lower bound": 1.47,
+      "random mean re-signings": 12.2
+     },
+     {
+      "torus": "torus(6,5,2)",
+      "points": 12,
+      "no_reversal runs": 144,
+      "no_reversal resolved": 144,
+      "no_reversal class change 11": 119,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 23,
+      "no_reversal class change 10": 2,
+      "no_reversal mean re-signings": 4.62,
+      "no_reversal mean excess over lower bound": 1.91,
+      "random mean re-signings": 17.7
+     },
+     {
+      "torus": "torus(12,1,1)",
+      "points": 12,
+      "no_reversal runs": 144,
+      "no_reversal resolved": 144,
+      "no_reversal class change 10": 117,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 27,
+      "no_reversal mean re-signings": 4.67,
+      "no_reversal mean excess over lower bound": 1.92,
+      "random mean re-signings": 16.2
+     },
+     {
+      "torus": "torus(12,10,1)",
+      "points": 12,
+      "no_reversal runs": 144,
+      "no_reversal resolved": 144,
+      "no_reversal class change 11": 112,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 32,
+      "no_reversal mean re-signings": 4.66,
+      "no_reversal mean excess over lower bound": 1.77,
+      "random mean re-signings": 16.4
+     },
+     {
+      "torus": "torus(7,6,2)",
+      "points": 14,
+      "no_reversal runs": 196,
+      "no_reversal resolved": 196,
+      "no_reversal class change 11": 159,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 36,
+      "no_reversal class change 10": 1,
+      "no_reversal mean re-signings": 5.23,
+      "no_reversal mean excess over lower bound": 2.29,
+      "random mean re-signings": 19.7
+     },
+     {
+      "torus": "torus(14,1,1)",
+      "points": 14,
+      "no_reversal runs": 196,
+      "no_reversal resolved": 196,
+      "no_reversal class change 10": 158,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 37,
+      "no_reversal class change 01": 1,
+      "no_reversal mean re-signings": 5.23,
+      "no_reversal mean excess over lower bound": 2.26,
+      "random mean re-signings": 22.5
+     },
+     {
+      "torus": "torus(14,12,1)",
+      "points": 14,
+      "no_reversal runs": 196,
+      "no_reversal resolved": 196,
+      "no_reversal class change 11": 167,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 28,
+      "no_reversal class change 01": 1,
+      "no_reversal mean re-signings": 5.19,
+      "no_reversal mean excess over lower bound": 2.45,
+      "random mean re-signings": 19.4
+     },
+     {
+      "torus": "torus(8,7,2)",
+      "points": 16,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 01": 28,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 172,
+      "no_reversal mean re-signings": 5.74,
+      "no_reversal mean excess over lower bound": 2.9,
+      "random mean re-signings": 21.2
+     },
+     {
+      "torus": "torus(16,1,1)",
+      "points": 16,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 172,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 28,
+      "no_reversal mean re-signings": 5.71,
+      "no_reversal mean excess over lower bound": 2.87,
+      "random mean re-signings": 22.6
+     },
+     {
+      "torus": "torus(16,14,1)",
+      "points": 16,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 172,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 27,
+      "no_reversal class change 10": 1,
+      "no_reversal mean re-signings": 5.68,
+      "no_reversal mean excess over lower bound": 2.83,
+      "random mean re-signings": 20.0
+     },
+     {
+      "torus": "torus(9,8,2)",
+      "points": 18,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 170,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 30,
+      "no_reversal mean re-signings": 6.32,
+      "no_reversal mean excess over lower bound": 3.27,
+      "random mean re-signings": 28.1
+     },
+     {
+      "torus": "torus(18,1,1)",
+      "points": 18,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 177,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 23,
+      "no_reversal mean re-signings": 6.16,
+      "no_reversal mean excess over lower bound": 3.35,
+      "random mean re-signings": 29.7
+     },
+     {
+      "torus": "torus(18,16,1)",
+      "points": 18,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 179,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 21,
+      "no_reversal mean re-signings": 5.99,
+      "no_reversal mean excess over lower bound": 3.25,
+      "random mean re-signings": 23.5
+     },
+     {
+      "torus": "torus(10,9,2)",
+      "points": 20,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 182,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 18,
+      "no_reversal mean re-signings": 6.62,
+      "no_reversal mean excess over lower bound": 3.9,
+      "random mean re-signings": 34.7
+     },
+     {
+      "torus": "torus(20,1,1)",
+      "points": 20,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 180,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 20,
+      "no_reversal mean re-signings": 6.41,
+      "no_reversal mean excess over lower bound": 3.61,
+      "random mean re-signings": 29.3
+     },
+     {
+      "torus": "torus(20,18,1)",
+      "points": 20,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 01": 20,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 180,
+      "no_reversal mean re-signings": 6.7,
+      "no_reversal mean excess over lower bound": 3.9,
+      "random mean re-signings": 32.1
+     },
+     {
+      "torus": "torus(11,10,2)",
+      "points": 22,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 172,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 28,
+      "no_reversal mean re-signings": 7.46,
+      "no_reversal mean excess over lower bound": 4.21,
+      "random mean re-signings": 39.6
+     },
+     {
+      "torus": "torus(22,1,1)",
+      "points": 22,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 183,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 17,
+      "no_reversal mean re-signings": 6.17,
+      "no_reversal mean excess over lower bound": 3.4,
+      "random mean re-signings": 37.2
+     },
+     {
+      "torus": "torus(22,20,1)",
+      "points": 22,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 190,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 10,
+      "no_reversal mean re-signings": 6.18,
+      "no_reversal mean excess over lower bound": 3.73,
+      "random mean re-signings": 30.9
+     },
+     {
+      "torus": "torus(12,11,2)",
+      "points": 24,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 179,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 1,
+      "no_reversal class change 01": 20,
+      "no_reversal mean re-signings": 7.87,
+      "no_reversal mean excess over lower bound": 4.81,
+      "random mean re-signings": 36.9
+     },
+     {
+      "torus": "torus(24,1,1)",
+      "points": 24,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 189,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 11,
+      "no_reversal mean re-signings": 6.5,
+      "no_reversal mean excess over lower bound": 3.94,
+      "random mean re-signings": 36.5
+     },
+     {
+      "torus": "torus(24,22,1)",
+      "points": 24,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 189,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 11,
+      "no_reversal mean re-signings": 6.38,
+      "no_reversal mean excess over lower bound": 3.83,
+      "random mean re-signings": 37.8
+     },
+     {
+      "torus": "torus(13,12,2)",
+      "points": 26,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 177,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 23,
+      "no_reversal mean re-signings": 8.4,
+      "no_reversal mean excess over lower bound": 5.14,
+      "random mean re-signings": 43.5
+     },
+     {
+      "torus": "torus(26,1,1)",
+      "points": 26,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 186,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 14,
+      "no_reversal mean re-signings": 6.73,
+      "no_reversal mean excess over lower bound": 3.96,
+      "random mean re-signings": 40.1
+     },
+     {
+      "torus": "torus(26,24,1)",
+      "points": 26,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 191,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 9,
+      "no_reversal mean re-signings": 6.74,
+      "no_reversal mean excess over lower bound": 4.25,
+      "random mean re-signings": 44.5
+     },
+     {
+      "torus": "torus(14,13,2)",
+      "points": 28,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 182,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 17,
+      "no_reversal class change 10": 1,
+      "no_reversal mean re-signings": 8.81,
+      "no_reversal mean excess over lower bound": 5.72,
+      "random mean re-signings": 43.1
+     },
+     {
+      "torus": "torus(28,1,1)",
+      "points": 28,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 196,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 4,
+      "no_reversal mean re-signings": 7.08,
+      "no_reversal mean excess over lower bound": 4.84,
+      "random mean re-signings": 40.5
+     },
+     {
+      "torus": "torus(28,26,1)",
+      "points": 28,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 193,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 7,
+      "no_reversal mean re-signings": 7.05,
+      "no_reversal mean excess over lower bound": 4.63,
+      "random mean re-signings": 39.4
+     },
+     {
+      "torus": "torus(15,14,2)",
+      "points": 30,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 188,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 12,
+      "no_reversal mean re-signings": 9.32,
+      "no_reversal mean excess over lower bound": 6.54,
+      "random mean re-signings": 50.9
+     },
+     {
+      "torus": "torus(30,1,1)",
+      "points": 30,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 190,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 10,
+      "no_reversal mean re-signings": 7.63,
+      "no_reversal mean excess over lower bound": 4.98,
+      "random mean re-signings": 44.6
+     },
+     {
+      "torus": "torus(30,28,1)",
+      "points": 30,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 188,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 12,
+      "no_reversal mean re-signings": 7.3,
+      "no_reversal mean excess over lower bound": 4.53,
+      "random mean re-signings": 49.4
+     },
+     {
+      "torus": "torus(16,15,2)",
+      "points": 32,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 182,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 18,
+      "no_reversal mean re-signings": 9.91,
+      "no_reversal mean excess over lower bound": 6.65,
+      "random mean re-signings": 57.8
+     },
+     {
+      "torus": "torus(32,1,1)",
+      "points": 32,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 195,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 5,
+      "no_reversal mean re-signings": 7.12,
+      "no_reversal mean excess over lower bound": 4.78,
+      "random mean re-signings": 53.3
+     },
+     {
+      "torus": "torus(32,30,1)",
+      "points": 32,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 197,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 3,
+      "no_reversal mean re-signings": 7.21,
+      "no_reversal mean excess over lower bound": 5.0,
+      "random mean re-signings": 49.9
+     },
+     {
+      "torus": "torus(17,16,2)",
+      "points": 34,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 187,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 13,
+      "no_reversal mean re-signings": 10.28,
+      "no_reversal mean excess over lower bound": 7.3,
+      "random mean re-signings": 62.3
+     },
+     {
+      "torus": "torus(34,1,1)",
+      "points": 34,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 190,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 10,
+      "no_reversal mean re-signings": 7.82,
+      "no_reversal mean excess over lower bound": 5.07,
+      "random mean re-signings": 60.8
+     },
+     {
+      "torus": "torus(34,32,1)",
+      "points": 34,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 194,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 6,
+      "no_reversal mean re-signings": 7.86,
+      "no_reversal mean excess over lower bound": 5.41,
+      "random mean re-signings": 48.0
+     },
+     {
+      "torus": "torus(18,17,2)",
+      "points": 36,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 190,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 10,
+      "no_reversal mean re-signings": 10.46,
+      "no_reversal mean excess over lower bound": 7.66,
+      "random mean re-signings": 61.7
+     },
+     {
+      "torus": "torus(36,1,1)",
+      "points": 36,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 193,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 7,
+      "no_reversal mean re-signings": 8.03,
+      "no_reversal mean excess over lower bound": 5.46,
+      "random mean re-signings": 57.4
+     },
+     {
+      "torus": "torus(36,34,1)",
+      "points": 36,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 193,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 7,
+      "no_reversal mean re-signings": 7.91,
+      "no_reversal mean excess over lower bound": 5.34,
+      "random mean re-signings": 50.7
+     },
+     {
+      "torus": "torus(19,18,2)",
+      "points": 38,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 187,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 13,
+      "no_reversal mean re-signings": 11.83,
+      "no_reversal mean excess over lower bound": 8.72,
+      "random mean re-signings": 65.5
+     },
+     {
+      "torus": "torus(38,1,1)",
+      "points": 38,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 193,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 11": 7,
+      "no_reversal mean re-signings": 8.3,
+      "no_reversal mean excess over lower bound": 5.71,
+      "random mean re-signings": 63.2
+     },
+     {
+      "torus": "torus(38,36,1)",
+      "points": 38,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 195,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 10": 5,
+      "no_reversal mean re-signings": 8.02,
+      "no_reversal mean excess over lower bound": 5.59,
+      "random mean re-signings": 66.7
+     },
+     {
+      "torus": "torus(20,19,2)",
+      "points": 40,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 192,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 8,
+      "no_reversal mean re-signings": 11.38,
+      "no_reversal mean excess over lower bound": 8.65,
+      "random mean re-signings": 69.3
+     },
+     {
+      "torus": "torus(40,1,1)",
+      "points": 40,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 10": 197,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 3,
+      "no_reversal mean re-signings": 8.43,
+      "no_reversal mean excess over lower bound": 6.16,
+      "random mean re-signings": 59.8
+     },
+     {
+      "torus": "torus(40,38,1)",
+      "points": 40,
+      "no_reversal runs": 200,
+      "no_reversal resolved": 200,
+      "no_reversal class change 11": 199,
+      "random runs": 50,
+      "random resolved": 50,
+      "no_reversal class change 01": 1,
+      "no_reversal mean re-signings": 8.26,
+      "no_reversal mean excess over lower bound": 6.17,
+      "random mean re-signings": 56.8
+     }
+    ]
+   }
+  },
+  "6 S (stress test, computed): RESIGN-STEER-20261107-001B's no-reversal rule on K_14 and K_16 and on the non-octahedral test spheres, 300 random targets each; pass when every sphere reaches at least 95%": {
+   "pass": true,
+   "info": {
+    "rows": [
+     {
+      "sphere": "K_14",
+      "faces": 786,
+      "budget": 560,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.02,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "K_16",
+      "faces": 1026,
+      "budget": 640,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.44,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "K_2",
+      "faces": 18,
+      "budget": 100,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.23,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "K_3",
+      "faces": 38,
+      "budget": 140,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.02,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "K_4",
+      "faces": 66,
+      "budget": 180,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.81,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "tube(2, 5, 1)",
+      "faces": 36,
+      "budget": 120,
+      "reached": 299,
+      "of": 300,
+      "mean steps / start distance": 2.22,
+      "failures": [
+       {
+        "start distance": 3,
+        "reached with 10x budget": false
+       }
+      ],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "tube(3, 7, 2)",
+      "faces": 74,
+      "budget": 180,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.17,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "grown128",
+      "faces": 66,
+      "budget": 180,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 1.91,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "grown116",
+      "faces": 60,
+      "budget": 160,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.32,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "grown64",
+      "faces": 34,
+      "budget": 120,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.05,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "cover(K_2; 2 corners)",
+      "faces": 34,
+      "budget": 120,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.41,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "cover(K_2; corner+regular)",
+      "faces": 34,
+      "budget": 120,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.79,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "cover(K_3; 2 corners)",
+      "faces": 74,
+      "budget": 180,
+      "reached": 300,
+      "of": 300,
+      "mean steps / start distance": 2.33,
+      "failures": [],
+      "replayed as sign changes": true
+     },
+     {
+      "sphere": "cover(K_3; corner+regular)",
+      "faces": 74,
+      "budget": 180,
+      "reached": 299,
+      "of": 300,
+      "mean steps / start distance": 2.21,
+      "failures": [
+       {
+        "start distance": 1,
+        "reached with 10x budget": true
+       }
+      ],
+      "replayed as sign changes": true
+     }
+    ],
+    "at least 95% on every sphere": true
+   }
+  },
+  "seconds": 142.9
+ }
+}

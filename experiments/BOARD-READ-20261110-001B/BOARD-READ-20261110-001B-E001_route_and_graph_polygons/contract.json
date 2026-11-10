@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BOARD-READ-20261110-001B-E001",
+  "ticket": "BOARD-READ-20261110-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the square, triangular, honeycomb and kagome ring boards, is the route reading's polygon the same shape as the board's graph-distance polygon, and if not, which is rounder?",
+  "definitions": {
+    "route polygon": "conv{disp(C)/len(C)} over the simple cycles C of the contact quotient of the route digraph (a hop of g cells from one contact to the next counterclockwise on a ring), in lattice coordinates (BOARD-READ-20261110-001A's theorem).",
+    "graph polygon": "The same over the simple cycles of the ring-graph quotient (rings adjacent through contacts, an edge not reused).",
+    "homothetic": "route polygon = s times graph polygon for some s > 0: the route reading is the board's graph metric up to scale and a constant.",
+    "anisotropy": "max over directions of the gauge of a Euclidean unit vector divided by its min (3,600 directions): 1 for a disc, 2/sqrt 3 = 1.1547 for a regular hexagon, sqrt 2 = 1.4142 for a square.",
+    "rounder": "route anisotropy below graph anisotropy by more than 1e-6."
+  },
+  "public_inputs": {
+    "library": "board_lib.py beside this file (sha256 1cc208f412014c3738a478b9cb376fc4308c1055f781e1e72b6470f1ecbe8155).",
+    "run": "run.py in this folder, 6 worker processes.",
+    "family": "Boards square, triangular, honeycomb, kagome; g = 2 to 6; for the second method, breadth-first distances on the 48 x 48-domain torus from one ring of the first vertex type to its translates k v, for every primitive v with |v_x|, |v_y| <= 3 and k |v|_inf <= 20."
+  },
+  "forbidden_inputs": [
+    "Changing boards, g, directions, torus size or criteria after seeing results"
+  ],
+  "primary_observable": "Per board and g: the two hulls, homothety, anisotropies, and the deviations T - N and d - N_G.",
+  "cheapest_meaningful_control": "The square board: CONF-METRIC-20261110-001A's Lemma 1 gives the route polygon (1/2g) times the taxicab diamond, homothetic to the graph polygon, anisotropy sqrt 2 for both.",
+  "resource_budget": {
+    "wall_minutes": 60,
+    "memory_mib": 16384
+  },
+  "first_executable_signal": "The per-board lines.",
+  "decision_or_followup_rule": "Frozen. Prediction P1: on the square board the polygons are homothetic at every g. Hypothesis H (the coordinator's alternative): on every board read the route polygon is homothetic to the graph polygon, so the route reading is the board's graph metric up to scale and a constant; H fails on a board where they are not homothetic, and that board's reading is then rounder or less round than its graph distance by the anisotropies. The theorem of ticket A is checked here: every deviation T - N and d - N_G must stay bounded (no growth with k); a growing deviation is a gap in the proof.",
+  "stop_rule": "Stop when every board and g has both methods' readings.",
+  "nonclaims": [
+    "Four periodic boards, g = 2 to 6; the program's ring cells and contact law; declared rings (A45) on a declared board (A51)."
+  ],
+  "feasibility_disclosure": "Blind on the results: before freezing only the boards' structures were printed (edges per domain, ring degrees). The square board's polygon is known from CONF-METRIC-20261110-001A."
+}

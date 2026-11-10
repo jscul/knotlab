@@ -81,3 +81,9 @@ its states most tightly. The other two ways look alike from outside. The network
 
 **Corrections:** none. **Goals:** G15 checkpoint (obstruction learned); B122 taken. **Assumptions:** none new or changed.
 **Basket:** B123 (negation inside a cut leaf), B119 (native writing); taken: B123 as the selected next step.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (17:04 UTC): the partial answer (the parity reading re-found, the basis not
+completed), R1 and R2's verdicts, the chain of readings and σ's post hoc explanation, the plain answer on stored memory against law-fixed
+landmarks, both tables above with B123 selected, the Corrections, Goals and Assumptions lines, and the Basket line.

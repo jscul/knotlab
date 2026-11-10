@@ -1,0 +1,134 @@
+{
+ "ticket": "SEP-LEFT-20261110-001A",
+ "checks": {
+  "0_dependencies_bound": {
+   "pass": true,
+   "info": {
+    "experiments/SEP-LEFT-20261110-001B/SEP-LEFT-20261110-001B-E001_row_linear_separation/run.py": "cc280dae9fdafb0604208e0a5cf9eedb69b25cb2e0d040719d33f871b1a41381",
+    "proofs/RES-XOR-COUNT-20261110-001A/RES-XOR-COUNT-20261110-001A-P001_where_each_route_stops/manifest.json": "e87b29d439d73f99fd942c237aa27e43a8d6da725472da0cffc56a65ef9d6690",
+    "proofs/BPHP-RES-PARITY-AUDIT-20261019-001B/BPHP-RES-PARITY-AUDIT-20261019-001B-P001_definitional_fidelity/manifest.json": "4126014582ba2a271aa07918e6adbb9dab115b1f0f5cb7935eb18b11dca7ddc6",
+    "proofs/PC-COUNT-20261110-001A/PC-COUNT-20261110-001A-P001_degree_through_the_pigeonhole_principle/manifest.json": "5222cd010dfd80203fef600106e331b0c42718fb644a5e96fc7618b87e66dce9"
+   }
+  },
+  "1_lemma_1_axioms_become_collisions": {
+   "pass": true,
+   "info": {
+    "n = 4 every pigeon assignment, n = 8 and 16 random": {
+     "4": 1024,
+     "8": 300,
+     "16": 300
+    }
+   }
+  },
+  "2_lemma_3_hole_sums_are_constant": {
+   "pass": true,
+   "info": {
+    "4": 1024,
+    "8": 300,
+    "16": 300
+   }
+  },
+  "3_theorem_2_density_inequality": {
+   "pass": true,
+   "info": {
+    "smallest margin (log)": 2.0,
+    "sizes": [
+     {
+      "l": 4,
+      "n": 16,
+      "v": 148
+     },
+     {
+      "l": 5,
+      "n": 32,
+      "v": 357
+     },
+     {
+      "l": 6,
+      "n": 64,
+      "v": 838
+     },
+     {
+      "l": 7,
+      "n": 128,
+      "v": 1927
+     },
+     {
+      "l": 8,
+      "n": 256,
+      "v": 4360
+     },
+     {
+      "l": 9,
+      "n": 512,
+      "v": 9737
+     },
+     {
+      "l": 10,
+      "n": 1024,
+      "v": 21514
+     },
+     {
+      "l": 11,
+      "n": 2048,
+      "v": 47115
+     },
+     {
+      "l": 12,
+      "n": 4096,
+      "v": 102412
+     },
+     {
+      "l": 13,
+      "n": 8192,
+      "v": 221197
+     },
+     {
+      "l": 14,
+      "n": 16384,
+      "v": 475150
+     },
+     {
+      "l": 15,
+      "n": 32768,
+      "v": 1015823
+     },
+     {
+      "l": 16,
+      "n": 65536,
+      "v": 2162704
+     },
+     {
+      "l": 17,
+      "n": 131072,
+      "v": 4587537
+     },
+     {
+      "l": 18,
+      "n": 262144,
+      "v": 9699346
+     },
+     {
+      "l": 19,
+      "n": 524288,
+      "v": 20447251
+     },
+     {
+      "l": 20,
+      "n": 1048576,
+      "v": 42991636
+     }
+    ]
+   }
+  },
+  "4_lemma_4_pigeon_rows_too_thin": {
+   "pass": true,
+   "info": {
+    "cases": 252,
+    "largest log bound": -0.572
+   }
+  }
+ },
+ "status": "passed",
+ "seconds": 3.4
+}

@@ -1,0 +1,167 @@
+{
+ "epic": "SEP-LEFT-20261110-001",
+ "checks": {
+  "1_ticket_B_by_an_independent_solver": {
+   "pass": true,
+   "info": {
+    "independent": {
+     "BPHP_4 B=1": [
+      false,
+      11,
+      11
+     ],
+     "BPHP_4 B=2": [
+      false,
+      11,
+      11,
+      45,
+      45
+     ],
+     "BPHP_4 B=3": [
+      true,
+      0,
+      0,
+      0,
+      0
+     ],
+     "LP_4 B=1": [
+      false,
+      11,
+      23
+     ],
+     "LP_4 B=2": [
+      false,
+      11,
+      23,
+      51,
+      237
+     ],
+     "LP_4 B=3": [
+      false,
+      11,
+      23,
+      51,
+      237
+     ],
+     "LP_4 B=4": [
+      true,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "ticket B": {
+     "BPHP_4 B=1": [
+      false,
+      11,
+      11
+     ],
+     "BPHP_4 B=2": [
+      false,
+      11,
+      11,
+      45,
+      45
+     ],
+     "BPHP_4 B=3": [
+      true,
+      0,
+      0,
+      0,
+      0
+     ],
+     "LP_4 B=1": [
+      false,
+      11,
+      23
+     ],
+     "LP_4 B=2": [
+      false,
+      11,
+      23,
+      51,
+      237
+     ],
+     "LP_4 B=3": [
+      false,
+      11,
+      23,
+      51,
+      237
+     ],
+     "LP_4 B=4": [
+      true,
+      0,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "seconds": 0.2
+  },
+  "2_control_BPHP_16_inside_Braun_range": {
+   "pass": true,
+   "info": {
+    "pigeons": 16,
+    "variables": 64,
+    "B: [size, separated] for L1, L2": {
+     "2": [
+      [
+       65,
+       65
+      ],
+      [
+       1985,
+       1985
+      ]
+     ],
+     "3": [
+      [
+       65,
+       65
+      ],
+      [
+       1985,
+       1985
+      ]
+     ],
+     "4": [
+      [
+       65,
+       65
+      ],
+      [
+       1985,
+       1985
+      ]
+     ],
+     "5": [
+      [
+       65,
+       65
+      ],
+      [
+       1985,
+       1985
+      ]
+     ]
+    }
+   },
+   "seconds": 37.6
+  },
+  "3_ticket_A_one_size_past": {
+   "pass": true,
+   "info": {
+    "n = 32 assignments": 100,
+    "Lemma 1": true,
+    "Lemma 3": true,
+    "Theorem 2 margin, l = 21 to 24": 2.0
+   },
+   "seconds": 63.2
+  }
+ },
+ "status": "passed",
+ "seconds": 63.2
+}

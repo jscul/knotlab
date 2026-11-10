@@ -1,0 +1,25 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BPHP-RES-PARITY-AUDIT-20261019-001B",
+    "PC-COUNT-20261110-001A",
+    "RES-XOR-COUNT-20261110-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "SEP-LEFT-20261110-001A",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Prove which steps of Braun's exponential Res(xor) bound for bit PHP carry over to the binary left-pigeon principle: separation of pigeon-row polynomials through the substitution g(h) := sum_x [f_x = h] x, and where the generic count and the affine removal step stop for the hole rows.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SEP-LEFT-20261110-001"
+  },
+  "parent": "SEP-LEFT-20261110-001",
+  "schema_version": 1,
+  "status": "Proved 2026-11-10: pigeon-row separation transfers from bit PHP to bit LeftPigeon through g := sum_x [f_x = h] x (degree times l); Braun's generic criterion applies to LP_n with its own clauses, giving 3S + n(n+1)(l+1) >= exp(k^2/(3n) - 2) if the row-linear space over all rows is separated at degree k(12l+2); the pigeon rows alone are too thin. B100 reduces to row-linear separation over all rows.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "What of Braun's bit-PHP argument transfers to bit LeftPigeon"
+}

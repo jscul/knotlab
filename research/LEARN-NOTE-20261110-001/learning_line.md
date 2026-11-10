@@ -71,6 +71,7 @@ Sections 1 to 8 are the note as written for B95. Twelve epics since then change 
 - Credit from pinned dissonance (`CREDIT-PIN-20261110-001`, frozen): lines whose dissonance a state-only walk cannot clear lay in acting
   atoms every time (4,473 of 4,473); kept as credit they helped composite gates (12 of 12 one size past) but not the total (40
   against 41 on S3 and S4, 9 inexact stops against 5). Every inexact stop was the clamped probe missing a reachable wrong value.
+  *Corrected (`STURDY-PROBE-20261110-001`): with a sturdier probe, the credit learner learned all 84 of its writes.*
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was

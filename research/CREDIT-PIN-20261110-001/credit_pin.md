@@ -7,6 +7,10 @@ families: `proofs/CREDIT-PIN-20261110-001A/` (the fixed learner) and `proofs/CRE
 
 ## The answer
 
+*Corrected on 2026-11-10 (`STURDY-PROBE-20261110-001`).* The credit learner lost to the probe, not to its credit: with a
+sturdier probe and both learners unchanged, it learned and held every write (16 of 16 composites on S3 and S4, 12 of 12 on S5) against the
+fixed learner's 10 of 16 composites, with no inexact stop. Mark M stands as computed with the old probe. See `docs/CORRECTIONS.md`.
+
 **The defect, not depth, was most of the composite failure; pinned dissonance is an exact signal but not a better learner.**
 
 - **Ticket A: the stall fixed, the old test re-run exactly.** Leaves 55 of 56 learned and held (was 53), composites 10 of 16 (was 1),

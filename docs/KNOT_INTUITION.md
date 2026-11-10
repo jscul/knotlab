@@ -1635,6 +1635,8 @@ So network holes come in two kinds:
      those parts fixed made the inner knots faster to find, but the learner did no better on the whole, because its check of an
      answer, holding the inputs and wandering, sometimes misses the wrong answer and says yes too soon.
    - **Reading.** The memory can feel what it stores without being told; what it lacks is a check that never says yes too soon.
+   - **Corrected (`STURDY-PROBE-20261110-001`).** With a check that does not say yes too soon, keeping what holds does make it better:
+     it then learned every gate through every pattern of patterns.
    - **Next.** A probe that is not fooled (backlog B134) ([decision note](../research/CREDIT-PIN-20261110-001/credit_pin.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).

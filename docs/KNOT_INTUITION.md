@@ -1462,8 +1462,20 @@ So network holes come in two kinds:
    - **The unsettled returns explained (computed).** Of the 17 earlier runs that did not settle back, 7 lost an atom's bit through a
      learning step that wound through its handle, exactly as the rule allows, and 10 stopped one unit above the floor.
    - **Reading.** The learned network holds a register: written by learning, rewritten cleanly, robust to disturbance.
-   - **Next (started).** A proof of the atom rule (backlog B87)
+   - **Next (taken by `ATOM-RULE-20261110-001`, below).** A proof of the atom rule (backlog B87)
      ([decision note](../research/ADDRESS-SEQ-20261110-001/address_seq.md)).
+
+   **2026-11-10: the atom rule proved** (`ATOM-RULE-20261110-001`).
+   - **The theorem (computer-assisted).** On every octahedral knot sphere with separated Fano atoms, each atom acts as its line in exactly
+     one of the four classes of its own handle, independently of the others; if every atom acts, no state satisfies every line; otherwise
+     every acting atom holds a unit of the floor dissonance.
+   - **The proof.** Each atom's handle is a direct summand of the homology and its role depends only on its own signs (by hand); a finite
+     local check shows that in the acting class no state of the atom's neighbourhood satisfies its lines with at most one agreeing corner
+     at each of its faces (2,700 splices); and line neighbourhoods come in four types over K_2 to K_8, none new beyond K_3, because the sphere
+     is the triangular lattice away from six corners.
+   - **Reading.** Which patterns hold the tension is a rule of the shape, not an accident of the small cases.
+   - **Next (awaiting a go-ahead).** A note on the learning line (backlog B95)
+     ([decision note](../research/ATOM-RULE-20261110-001/atom_rule.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

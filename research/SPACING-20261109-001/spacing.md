@@ -85,3 +85,31 @@ spacing can cross borders and keep balance is the question this leaves.
 4. **Invertible substrate.** As before.
 
 **Recommendation.** Research directions, #2 (B55) as the coordinator asked, with #1 kept as a sub-goal.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-10 at 00:05 UTC and copied here verbatim.
+
+**Larger spacings (B57) is closed and published, pre-registered.** At g = 4 and 5, no territory border is crossed. ([decision note](https://github.com/jscul/knotlab/blob/main/research/SPACING-20261109-001/spacing.md))
+
+- **No crossing:** with doubling every 1 to 4 lags, no original ring is ever heard by another at either spacing.
+- **Odd spacings keep balance while rings hear each other:** at g = 5, doubling every 2, 3 or 4 lags stays balanced to 24 × 24 (computed). At g = 4 every such schedule fails at 12 × 12. Across g = 2 to 5 that pattern appears only at odd spacings, whose corners hold an even number of own cells.
+- **So territories are the rule at every spacing read.** The one family that crossed a border, doubling every 6 or 8 lags, was only read at g = 2, where it lost balance.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: larger spacings | Successful | Read exactly: no border crossed; odd g keeps balance with hearing |
+| Local direction: crossing a border with balance | Research directions | Untried: slower doubling at odd g |
+| Broader exploration: G1 with G5 | Known alternatives | Why odd g keeps balance (B55); growth that stops (B56); B39 |
+| Long-term goal: G1 Space from a law | Obstruction learned | Growing planes that keep their knots keep their territories apart, at every spacing read |
+
+| # | Direction | Payoff | Concreteness | First step → stop |
+|---|---|---|---|---|
+| 1 | Crossing a border with balance at odd g (sub-goal B63) | 3/3 | 3/3 | Doubling every 6, 8, 12, 16 lags at g = 3 and 5 → the first schedule that crosses and stays balanced, or none |
+| 2 | Why odd spacings keep balance (B55) | 2/3 | 2/3 | Territory confinement plus the transfer lemma, with the parity of a corner |
+| 3 | Growth that stops (B56) | 2/3 | 2/3 | As recorded |
+| 4 | Invertible substrate (B39) | 2/3 | 3/3 | As before |
+
+**Corrections:** one earlier this turn, Not a block (B52's hearing is within territories). **Goals:** G1/G5 checkpoint; B57 taken. Under your new rule, #1 is recorded as sub-goal B63 under G1, since the coordinator put B55 next. **Assumptions:** none. **Long-running:** SPACING-A1 is folded in and awaits sign-off.
+
+I'm starting B55 as the coordinator asked. #1 is ready to run whenever it's chosen.

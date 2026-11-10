@@ -105,8 +105,10 @@ evidence: results and their status come from the records each entry links.
 | [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Overturned |
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 | [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
-| [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Under challenge |
+| [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Confirmed |
 | [A52](#a52--a-grown-handle-is-a-class-forced-torus-atom) | A grown handle is a class-forced torus atom | scope | Assumed |
+| [A53](#a53--nativeness-of-a-board-made-of-names-is-counted-per-name) | Nativeness of a board made of names is counted per name | reading | Assumed |
+| [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Assumed |
 
 ## Entries
 
@@ -1248,7 +1250,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A51 · Places and their neighbours are given before the rules
 
-**Under challenge** · 2026-11-10 · scope
+**Confirmed** · 2026-11-10 · scope
 
 - **Statement.** Every law measured for space so far has its places, and which of them are neighbours, fixed before the law is
   read: a lattice Z^D, a declared network of rings (A45), a group's Cayley law, or a gadget's copies. The law's distinctions are
@@ -1268,6 +1270,13 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-10 · Confirmed for planes within laws that name no relation, by `BOARD-DIST-20261110-001`
+    ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)). With the board made of identity distinctions on
+    the words in x, y and their inverses, a law whose identity literals relate only the same offset of two names allows the tree
+    whenever it allows an infinite board, so it never forces the plane (proved); one named relation, the commutator, with an
+    aperiodic tile law forces exactly the plane (proved); the frozen census of the 1,024 Life-like one-bit laws held all its
+    predictions. The barrier belongs to uniform laws that name no relation, not to drawing. The naming (A54) and the per-name count
+    of nativeness (A53) are recorded as new assumptions; Leibniz's principle in the limit, an infinitary rule, is open (B111).
   - 2026-11-10 · Under challenge by `BOARD-DIST-20261110-001` (backlog B92), pre-registered before any run: names are the reduced
     words in x, y and their inverses, e(u, v) says two names are one place, and a frozen census of the 1,024 Life-like one-bit laws
     and the atom reads which boards each allows; a proof ticket asks whether a law that names no relation can force an infinite board
@@ -1303,3 +1312,38 @@ evidence: results and their status come from the records each entry links.
     as its line exactly where every atom inside acts (proved by hand, given flat states at every line of the host), so groups of atoms
     behind a three-edge cut are atoms of the next level ([atoms within atoms](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).
   - 2026-11-10 · Added by `OTHER-ATOMS-20261110-001`, replacing A48 (overturned as a limit).
+
+### A53 · Nativeness of a board made of names is counted per name
+
+**Assumed** · 2026-11-10 · reading
+
+- **Statement.** When the board is made of identity distinctions on names, the source-aware reading counts a change by the name
+  variables it flips. A value at a place of a board other than the tree is one variable per name, so flipping it flips infinitely
+  many. Under this count no distinction of a state off the tree, and no identity distinction anywhere, is native.
+- **Why.** The source-aware reading (adopted 2026-10-20) is stated for the variables of the system, and in this encoding the variables
+  belong to names. `BOARD-DIST-20261110-001` applied it as written; the alternative, a count per place, was not mapped.
+- **Rests on it.** Theorem 5's corollary in
+  [boards of laws that name no relation](../proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/proof.md),
+  and the reading that the 60 knots between the square's identity distinction and the values are not native
+  ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)).
+- **Challenge.** Count changes per place: finitely many places' values changed with the board fixed, and identifications at finitely
+  many places. Re-read the census's square knots under that count. If they become native, a board made of distinctions can carry
+  native knots, and the tension between the owner's idea and the source-aware reading lifts.
+- **History.**
+  - 2026-11-10 · Added by `BOARD-DIST-20261110-001`, which took the per-name count by default.
+
+### A54 · Places are named by words in two letters
+
+**Assumed** · 2026-11-10 · scope
+
+- **Statement.** In the challenge of A51 the places are named by the reduced words in x, y and their inverses. Every name then has
+  four neighbour names, so the law's neighbourhood is fixed by the naming, and every board is a quotient of the tree of names.
+- **Why.** Backlog B92's first test chose this naming. A finitary uniform law needs a bounded neighbourhood, and the naming supplies one
+  without a clause that names a degree. `BOARD-DIST-20261110-001` kept it.
+- **Rests on it.** Every result of `BOARD-DIST-20261110-001`
+  ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)).
+- **Challenge.** Name places without letters, with a neighbour distinction for each pair and laws that name no degree. The question
+  is then whether a finitary law can force a bounded degree at all, and whether the unfolding theorem holds there. If the theorem
+  fails, the naming was a hidden drawing; if it holds, the obstruction does not depend on the naming.
+- **History.**
+  - 2026-11-10 · Added by `BOARD-DIST-20261110-001`.

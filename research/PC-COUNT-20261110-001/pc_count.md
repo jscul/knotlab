@@ -117,3 +117,26 @@ learned); B84 taken; one sub-goal (B93) and one backlog entry (B94) added. **Ass
 
 **Recommendation.** Research directions, none selected, for the coordinator. Direction 1 is recorded as sub-goal B93 (owner rule
 for untaken 3/3 directions) and direction 3 as backlog B94; B82 stays as recorded.
+
+## Final report as sent
+
+B84 is closed and published. No algebra refutes the sphere's count in low degree. Over every field, polynomial-calculus refutations of the count need degree at least c·n^{1/4}/log n. So tree-like Res(⊕) needs exponential size on it, 2^{Ω(n^{1/4}/log n)}, which answers the size question left open by B83. The proof runs Mikša–Nordström's degree bound for the pigeonhole principle on an expander through LeftPigeon and our reduction chain. It is known-with-delta, with high folklore risk: my bounded search found no published statement of it. The prediction was frozen before the computation, and all four hypotheses hold. The exact F2 degree is 3 on K_2, 4 on K_3 and at least 5 on K_4, against Nullstellensatz degree 6 on K_2. The degree-3 and degree-4 refutations are fixed-size proof bounds, not an algorithm, so the publication hold doesn't apply.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: F2 polynomial calculus on the count | Successful | Degree n^{Ω(1)} over every field proved; tree-like Res(⊕) size exponential |
+| Local direction: Res(⊕) on the count | Research directions | Tree-like is settled; regular and dag-like are open |
+| Broader exploration: G3 | Known alternatives | Cutting planes on the count (B82) |
+| Long-term goal: G3 Hardness at three places | Obstruction learned | No algebra refutes the count in low degree; only positivity (Sherali–Adams, degree 3) does |
+
+**Next step:** Research directions, none selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when |
+| --- | --- | --- | --- | --- |
+| 1 | Res(⊕) beyond tree-like on the count (sub-goal B93) | 3/3 | 1/3 | Look for an embedding or lifting that carries a known regular or bounded-depth Res(⊕) bound → a transfer, or the step that fails |
+| 2 | Cutting planes on the count (sub-goal B82) | 3/3 | 1/3 | As recorded |
+| 3 | Is the degree of order √n? (B94) | 2/3 | 2/3 | Decide K_4 exactly by a restricted closure and look for a shorter embedding of SINK → exponent 1/2, or what costs it |
+
+**Corrections:** none (B83's depth bound stays true; this improves it from n^{1/8} to n^{1/4}). **Goals:** a G3 checkpoint; B84 taken; sub-goal B93 and backlog B94 added. **Assumptions:** none added or changed.
+
+The rings census (B45) has about 290 of its last 440 readings to go; I'll report when it finishes.

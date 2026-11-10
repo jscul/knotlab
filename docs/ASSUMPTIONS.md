@@ -99,7 +99,7 @@ evidence: results and their status come from the records each entry links.
 | [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Confirmed |
 | [A43](#a43--bands-are-added-along-the-seed-loop) | Bands are added along the seed loop | scope | Confirmed |
 | [A44](#a44--a-band-born-while-the-network-runs-brings-new-open-distinctions) | A band born while the network runs brings new open distinctions | reading | Confirmed |
-| [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Assumed |
+| [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Confirmed |
 | [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
 | [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
 | [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Overturned |
@@ -1133,7 +1133,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A45 · Rings are read as declared
 
-**Assumed** · 2026-11-09 · reading
+**Confirmed** · 2026-11-10 · reading
 
 - **Statement.** A network's rings are read as its declaration lists them. At a law-(12, 12) contact the automaton does not say which
   incoming corner a ring continues on: the contact reads its left neighbour on each ring and both rings read it, so every re-routing of
@@ -1152,6 +1152,12 @@ evidence: results and their status come from the records each entry links.
   rings apart. If persistence then picks out one grouping, the rings become native; if persistence needs laws that cannot tell them
   apart, ring-level readings stay declarations.
 - **History.**
+  - 2026-11-10 · Confirmed by `RING-LAW-20261109-001`, which took up the challenge. A law is blind to re-routing exactly when it is affine
+    and reads both arriving cells alike (32 of the 256 self-blind laws, (12, 12) among them), so the ring-level readings of the epics
+    above are declarations, as stated. Rings become native under the 224 laws that see the routing; affine ones see only by cutting a
+    ring. Under the eight symmetric nonlinear laws every network read needs both rings to lag 64 and reads its distance on time, so
+    the plain reading survives native rings; but on no torus read does a law that sees the routing bind both rings (A32), and on the
+    square line networks 32 such laws bind to lag 6. Native rings on a torus cost binding.
   - 2026-11-09 · Added by `REROUTE-20261109-001`.
 
 ### A46 · An over-agreeing face and an even face are dissonance

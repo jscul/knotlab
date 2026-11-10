@@ -1507,8 +1507,21 @@ So network holes come in two kinds:
    - **Reading.** For the owner's layers: a group of patterns cut off by three sides reads from outside as one pattern, standing for its
      line only when every pattern inside does. Each level sees the one below as an AND; acting only adds constraints, so no host makes a
      level read anything but a monotone function of the bits below.
-   - **Next.** Many points at once (backlog B3), awaiting the owner's go-ahead; in line, whether any host gives an OR (backlog B109)
-     ([decision note](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).
+   - **Next (taken by `MANY-POINTS-20261110-001`, below).** Many points at once (backlog B3); in line, whether any host gives an OR
+     (backlog B109) ([decision note](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).
+
+   **2026-11-10: many points at once** (`MANY-POINTS-20261110-001`).
+   - **The question.** Backlog B3, the owner's parallel picture: can several points of dissonance move through the layered memory with
+     no scheduler choosing an order, and where can units of the floor dissonance sit together?
+   - **Where units sit (proved, checked exactly).** With two composites and three floor units, no region holds three, the composites
+     never act together, and an acting composite holds exactly two, one in each leaf; every placement the rule allows occurs.
+   - **Points at once (computed).** Two disturbances in different composites learned away independently in every order of their moves,
+     with the address kept, in all 320 sampled pairs. Nearby pairs interacted, mostly by cancelling; after the run it was seen that only
+     pairs sharing a line did.
+   - **Reading.** For the owner's "parallelized" picture: points that do not share a line can be updated in any order, and the memory
+     keeps what it was told; points on one line meet.
+   - **Next.** Which functions a composite computes (backlog B109)
+     ([decision note](../research/MANY-POINTS-20261110-001/many_points.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

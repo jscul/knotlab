@@ -86,3 +86,11 @@ order, and the memory keeps what it was told. Two points on one line meet, and u
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B3 taken; B112 and B113 added. **Assumptions:** none new or changed.
 **Basket:** B106, B109, `NEST-ATOMS-20261110-001`#4 (layers through a naming knot); taken: B109 as the selected next step.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (05:28 UTC): the answer (points apart move independently in every order; on a
+shared line they meet and mostly cancel), where floor units sit (proved, exact on 512 classes), the two-point results by category with
+the post hoc locality, the writing re-test (91 of 96, every exact write held), the plain statement added to the B104 record, both tables
+of the position and next directions above with B109 selected and B106 and layers through a naming knot tied, the Corrections, Goals and
+Assumptions lines, and the Basket line.

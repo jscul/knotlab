@@ -1320,6 +1320,9 @@ evidence: results and their status come from the records each entry links.
   growth law that chooses the atom itself (backlog B106). The cheapest test grows a knot sphere carrying two Fano atoms, less a point, as
   one atom (backlog B104): if it acts only where both inner atoms act, the premise extends to atoms of atoms.
 - **History.**
+  - 2026-11-10 · `NATIVE-ATOM-20261110-001` read the choice: a uniform growth rule (one sign pattern on every line, fired at a violated line)
+    grows a remembering atom only with the Fano atom, the one handle whose plain law contradicts itself; every other class-forced atom grows
+    transparent and needs its class supplied, which learning does ([which atom a growth law grows](../research/NATIVE-ATOM-20261110-001/native_atom.md)).
   - 2026-11-10 · `NEST-ATOMS-20261110-001` extended the premise to composite atoms: a knot sphere carrying such atoms, less a point, acts
     as its line exactly where every atom inside acts (proved by hand, given flat states at every line of the host), so groups of atoms
     behind a three-edge cut are atoms of the next level ([atoms within atoms](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).

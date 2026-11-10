@@ -13,8 +13,8 @@
   "proof": "GROW-FACE-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "Accretion needs a named face",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before any computation. Accretion laws over abstract names (a board grown from a seed, each step decided by the radius-r view of a site, values from a finite alphabet, every fair order counted). To be proved: (G1) a law none of whose actions closes a cycle grows only trees; (G2) a law naming the square and carrying a marker grows exactly the plane in its only order; (G3) the square-closing law of every radius, without a marker, has a fair order whose limit is not the plane. Checks frozen in the pre-registration.",
+  "status": "Proved",
+  "claim": "Accretion laws over abstract names (a board grown from a seed, each step decided by the radius-r view of a site, values from a finite alphabet, every fair order counted). (G1) If no action closes a cycle, each component of every limit is the seed's with trees attached, of asymptotic dimension at most 1; since closing a cycle is naming a face, this follows from the frozen definition. (G2) A radius-2 law with coordinates mod 3 and an arrow that closes squares grows the square spiral, the plane, in its only order. (G2') The arrow is not needed: with coordinates mod 3 alone, a site enabled when its radius-2 view is one of the spiral head's 77 views grows the same spiral (Lemma S: the views repeat every three rings, so a check to ring 40 covers them). (G3) For every radius r >= 2 and every fixed priority of the four offsets, the square-closing law SQ_r has a fair order whose limit is not the square grid; for r <= 1 it closes no square. With the same nine values a static law that names the square allows the plane's cylinders and tori (BARE-NAMES-20261110-001A, T4). Revised after an independent review before publication.",
   "dependencies": [
     "PLACE-FLIP-20261110-001A"
   ],
@@ -28,9 +28,10 @@
     "secondary": []
   },
   "failure_conditions": [
-    "An accretion law that closes no cycle and has a limit other than a forest (against G1).",
+    "An accretion law that closes no cycle with a limit component other than a seed component with trees attached (against G1).",
     "A fair order of the spiral law whose limit is not the square grid, or a turn at which its board is not the expected block (against G2).",
-    "A radius r for which every fair order of the square-closing law has the square grid as its limit (against G3)."
+    "A step of the arrow-free spiral at which a place other than the head has one of the head's views, or a view not covered by the check (against G2').",
+    "A radius r >= 2 and a priority for which every fair order of the square-closing law has the square grid as its limit (against G3)."
   ],
   "lineage": {
     "home_scope": "GROW-FACE-20261110-001",
@@ -52,9 +53,7 @@
     "check": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face/check.py",
     "directory": "proofs/GROW-FACE-20261110-001A/GROW-FACE-20261110-001A-P001_accretion_needs_a_named_face"
   },
-  "remaining_obligations": [
-    "G1 to G3, or the record of which fails and why"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -88,8 +87,8 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10; read twice before publication by an independent referee (a fresh Claude agent given the proof). Its arrow-free spiral became G2', its fixes to G1 and G3 were made, and its second pass found G2' with Lemma S and the priority form of G3 sound; both were checked independently in check.py.",
+    "status": "proved by hand; finite checks in check.py passed (result.json): P1 to P3 as frozen, P4 and P5 added after the review; read twice by an independent referee, sound after fixes",
+    "novelty": "Elementary; the spiral and the order-splitting argument are standard ideas in growth processes; folklore risk high. The arrow-free spiral is the referee's construction, proved here."
   }
 }

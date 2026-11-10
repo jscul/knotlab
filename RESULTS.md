@@ -1307,7 +1307,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Why crossing breaks balance (`CROSS-WHY-20261110-001`) | [closure](proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-WHY-20261110-001/) |
 | 2026-11-10 | Expansion as a reading (`EXPAND-READ-20261110-001`) | [closure](proofs/EXPAND-READ-20261110-001Z/EXPAND-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/EXPAND-READ-20261110-001/) |
 | 2026-11-10 | A learned network that computes (`GATES-20261110-001`) | [closure](proofs/GATES-20261110-001Z/GATES-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GATES-20261110-001/) |
-| 2026-11-10 | Every accretion law (`GROW-FACE-20261110-001`) | — | [folder](research/GROW-FACE-20261110-001/) |
+| 2026-11-10 | Every accretion law (`GROW-FACE-20261110-001`) | [closure](proofs/GROW-FACE-20261110-001Z/GROW-FACE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-FACE-20261110-001/) |
 | 2026-11-10 | Learning that grows a handle (`GROW-HANDLE-20261110-001`) | [closure](proofs/GROW-HANDLE-20261110-001Z/GROW-HANDLE-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-HANDLE-20261110-001/) |
 | 2026-11-10 | Growth that stops (`GROW-STOP-20261110-001`) | [closure](proofs/GROW-STOP-20261110-001Z/GROW-STOP-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STOP-20261110-001/) |
 | 2026-11-10 | Grow where learning is stuck (`GROW-STUCK-20261110-001`) | [closure](proofs/GROW-STUCK-20261110-001Z/GROW-STUCK-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-STUCK-20261110-001/) |

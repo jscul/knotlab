@@ -1,0 +1,5712 @@
+{
+ "P1_spiral": {
+  "blocks_exact": true,
+  "one_enabled_action": true,
+  "order_is_the_ring_formula": true,
+  "pass": true,
+  "places": 6561,
+  "turns": 40
+ },
+ "P2_slit": {
+  "pass": true,
+  "runs": [
+   {
+    "H": 12,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 176,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 184,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 18,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 173,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   }
+  ]
+ },
+ "P3_control": {
+  "pass": true,
+  "runs": [
+   {
+    "H": 12,
+    "order": "bottom-up",
+    "positions_with_two_places": 0,
+    "r": 3
+   },
+   {
+    "H": 14,
+    "order": "bottom-up",
+    "positions_with_two_places": 0,
+    "r": 4
+   },
+   {
+    "H": 18,
+    "order": "bottom-up",
+    "positions_with_two_places": 0,
+    "r": 6
+   }
+  ]
+ },
+ "P4_priorities": {
+  "order_choosing_runs": [
+   {
+    "H": 10,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 179,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 12,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 176,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 184,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 18,
+    "base_ball_is_the_grids": false,
+    "base_neighbourhood_saturated": true,
+    "heights_as_predicted": true,
+    "order": "top-down",
+    "places": 173,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   }
+  ],
+  "pass": true,
+  "runs": [
+   {
+    "H": 10,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 154,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 154,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 154,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 154,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 156,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 10,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 155,
+    "positions_with_two_places": 10,
+    "r": 2,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 1
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 12,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 161,
+    "positions_with_two_places": 11,
+    "r": 3,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 171,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 14,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 170,
+    "positions_with_two_places": 13,
+    "r": 4,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 2
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 178,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   },
+   {
+    "H": 18,
+    "P": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "base_built": true,
+    "heights_as_predicted": true,
+    "places": 177,
+    "positions_with_two_places": 16,
+    "r": 6,
+    "u_w_share_only_v_after_growth": true,
+    "u_w_share_only_v_at_end_of_slit": true,
+    "y0": 3
+   }
+  ]
+ },
+ "P5_arrow_free": {
+  "pass": true,
+  "radius_1": {
+   "clashes": 13,
+   "head_views": 49,
+   "last_ring_with_a_new_view": 5,
+   "one_arrow_per_head_view": true,
+   "other_views": 58,
+   "radius": 1,
+   "radius_1_reads_the_arrow": true,
+   "rings": 40,
+   "views_repeat_every_3_rings_from": 6
+  },
+  "radius_2": {
+   "clashes": 0,
+   "head_view_list": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      0
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       -1
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       -2,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       -1,
+       -1
+      ],
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       0,
+       -2
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      1,
+      0
+     ]
+    ]
+   ],
+   "head_views": 77,
+   "last_ring_with_a_new_view": 6,
+   "one_arrow_per_head_view": true,
+   "other_views": 366,
+   "radius": 2,
+   "radius_1_reads_the_arrow": true,
+   "rings": 40,
+   "run_one_enabled_site_and_the_spiral": true,
+   "run_places": 6561,
+   "views_repeat_every_3_rings_from": 7
+  }
+ },
+ "pass": true,
+ "seconds": 1.0,
+ "status": "passed"
+}

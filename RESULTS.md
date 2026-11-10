@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**306 current results** and 5 superseded ones, from 279 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**306 current results** and 5 superseded ones, from 280 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 19 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 279 epics with their closures
+- [Epics](#epics): all 280 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1296,6 +1296,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Which functions a composite computes (`COMPOSITE-FN-20261110-001`) | [closure](proofs/COMPOSITE-FN-20261110-001Z/COMPOSITE-FN-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COMPOSITE-FN-20261110-001/) |
 | 2026-11-10 | The conformal metric as a theorem (`CONF-METRIC-20261110-001`) | [closure](proofs/CONF-METRIC-20261110-001Z/CONF-METRIC-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CONF-METRIC-20261110-001/) |
 | 2026-11-10 | The sphere's count in stronger proof systems (`COUNT-SYSTEMS-20261110-001`) | [closure](proofs/COUNT-SYSTEMS-20261110-001Z/COUNT-SYSTEMS-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/COUNT-SYSTEMS-20261110-001/) |
+| 2026-11-10 | Credit from pinned dissonance (`CREDIT-PIN-20261110-001`) | — | [folder](research/CREDIT-PIN-20261110-001/) |
 | 2026-11-10 | Crossing a territory border with balance (`CROSS-BORDER-20261110-001`) | [closure](proofs/CROSS-BORDER-20261110-001Z/CROSS-BORDER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-BORDER-20261110-001/) |
 | 2026-11-10 | Why crossing breaks balance (`CROSS-WHY-20261110-001`) | [closure](proofs/CROSS-WHY-20261110-001Z/CROSS-WHY-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/CROSS-WHY-20261110-001/) |
 | 2026-11-10 | Expansion as a reading (`EXPAND-READ-20261110-001`) | [closure](proofs/EXPAND-READ-20261110-001Z/EXPAND-READ-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/EXPAND-READ-20261110-001/) |

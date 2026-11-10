@@ -63,3 +63,26 @@ None.
 
 **Corrections:** none. **Goals:** G15 checkpoint (obstruction learned); B72 taken; B79 and B80 added. **Assumptions:** none new; A50 and A49
 used.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-10 (02:01 UTC).
+
+**B72 done, with a negative result: a temporary rise doesn't let a settled unit escape its atom.** With the law fixed, I let the state go one unit of dissonance above the floor for as long as it liked. The leftover never reached the other atom or the sphere: I checked every reachable state on five K_2 cases (up to 195,264 states each), and found the same within a 200,000-state cap elsewhere. With the state fixed there's no learning step at the floor at all (proved). My guess is that which atom holds the leftover is set by what was learned (the law's class), not by where the point is. If so, only learning could move it. That's the cheap next check.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: temporary rise (B72) | **Status:** Failed | no escape at a one-unit rise, law fixed |
+| Local direction: moving the point to move the unit | Retire | the trap holds against state moves |
+| Broader exploration: learning program | Known alternatives | the law as the trap; learning at a rise |
+| Long-term goal: G15 | Obstruction learned | a pattern's leftover isn't carried by the point |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Does the law decide which atom holds it (B79) | 2/3 — Substantial | 3/3 — Ready | every floor state the fixed law allows → none in the other atom, or some | Selected · awaiting go-ahead |
+| 2 | Learning at a rise (B80) | 2/3 — Substantial | 2/3 — Testable | state and learning steps together, one unit up → unit changes atom, or not | Alternative · deferred |
+| 3 | Why the trap holds (B78) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G15 checkpoint; B72 taken; B79, B80 added. **Assumptions:** none new.

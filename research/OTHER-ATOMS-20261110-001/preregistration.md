@@ -76,3 +76,22 @@ Either way, what is proved for the Fano atom stands. If P2 fails, what the actin
 
 Each ticket's check is expected to take under ten minutes. A check expected to take longer is registered in `docs/LONG_RUNNING.md`
 before it is launched. Assumptions in force: A20, A21, A46, A47, A49, A50; A48 under challenge.
+
+## Addendum, 2026-11-10, after ticket A ran and before ticket D runs
+
+Ticket A ran at 04:35 UTC (34 seconds): P1 and P2 held on all 29 types, and every atom's role was the same on all 60 splices. Reading the
+result, a by-hand reduction was found (it goes in ticket A's proof): an atom's allowed patterns depend only on its torus and the class read
+from its sides. The constant pair of patterns is excluded exactly when the torus is unsatisfiable in that class, and the six other patterns
+are allowed exactly when the torus is **free** at its point in that class: for each of the point's three sides e, the law with e's sign
+flipped (two adjacent even faces) has a satisfying state. So the role needs only twelve satisfiability facts about the torus itself, and no
+host. **Ticket D** (computed, exhaustive per torus), frozen here before it runs:
+
+- **Scope.** Every simple lattice torus with at most 30 points, and every thin torus of even index with at most 40 points, grouped up to
+  isomorphism as in ticket A; one point per torus (they are point-transitive).
+- **Measured.** For each of the four classes: whether a state satisfies the law, and, for each of the point's three sides, whether the law
+  with that side's sign flipped has a satisfying state (SAT).
+- **Predictions.** D1: every torus is free at its point in every class. D2: the class-forced types are exactly the Fano tori and the thin
+  tori of even index, each with exactly one unsatisfiable class. D3: on the 29 types of ticket A, the role read from these facts equals the
+  role ticket A found on every splice.
+- **Failure.** A torus not free in some class (its atom would then allow a relation other than the line's or all eight there), or a
+  class-forced type with two unsatisfiable classes.

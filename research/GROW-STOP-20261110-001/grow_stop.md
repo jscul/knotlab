@@ -49,6 +49,12 @@ both sides at least 6, so the distance is read through freezes.
 
 - **Relied on.** A30, A32, A38, A40, A41, A44, A45. **Added.** None.
 
+## Correction
+
+**2026-11-10 · Not a block** (`docs/CORRECTIONS.md`). The reading "in every law read, growth and the reading of distance across the
+grown plane do not overlap" and the report's "making and reading are two phases" held for the uniform doubling schedules read, not for
+growth in general: uneven schedules cross a territory border with every stage balanced (`CROSS-WHY-20261110-001`). The theorem stands.
+
 ## Ratio
 
 - **Substantive.** One proof (A) with three checks. **Administrative.** This note and the closure.

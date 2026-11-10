@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 10 November 2026: uneven doubling schedules cross a border with every stage balanced
+
+- CROSS-BORDER-20261110-001 read that crossing a territory border breaks balance, and that while a network grows it keeps its knots or
+  reads distance across its grown plane, never both; GROW-STOP-20261110-001 read growth and reading as two phases.
+- Every schedule they read doubled every P lags. Schedules that pause once and then double quickly cross a border with every stage
+  balanced, to 48 x 48 at g = 3, and failures need no crossing ([decision note](research/CROSS-WHY-20261110-001/cross_why.md)).
+- Unchanged: every computed result of both epics, and GROW-STOP-20261110-001's proof that a stopped plane reads the fixed torus.
+
 ## 9 November 2026: the g = 3 hearing stays inside each original ring's territory
 
 - ISOLATION-NEED-20261109-001 read its g = 3 doubling schedules as letting rings hear each other across a grown plane that keeps its

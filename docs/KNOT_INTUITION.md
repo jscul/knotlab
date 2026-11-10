@@ -2222,6 +2222,7 @@ So network holes come in two kinds:
      hear each other, and every such schedule has an unbalanced stage within two doublings of the crossing.
    - **Reading.** Hearing inside territories is compatible with keeping knots; hearing across them, followed by more growth, is not, in
      every schedule read (g = 2 to 5). While a network grows it keeps its knots or reads distance across its grown plane, not both.
+     *Corrected 2026-11-10:* that held for the uniform schedules read only; uneven ones cross with every stage balanced (below).
    - **Next (taken: B56, next entry; B55 deferred).** Why odd spacings keep balance
      ([decision note](../research/CROSS-BORDER-20261110-001/cross_border.md)).
 
@@ -2234,6 +2235,7 @@ So network holes come in two kinds:
      differ from the fixed torus's for most pairs; every 3 lags at g = 2, which isolates, reads it exactly.
    - **Reading.** Making and reading are two phases. The law grows a plane that reads no distance while it grows; once it stops, the
      plane reads its own distance as a fixed torus does, the distance between original rings scaled by the growth it went through.
+     *Corrected 2026-11-10:* "two phases" holds for the doubling schedules read here, not for every schedule (below).
    - **Next (taken: B39, next entry).** An invertible substrate ([decision note](../research/GROW-STOP-20261110-001/grow_stop.md)).
 
    **2026-11-10: persistence needs forgetting** (`INVERT-STEP-20261110-001`).
@@ -2247,8 +2249,25 @@ So network holes come in two kinds:
      while every contact is reborn, not the step; the step there is rule 60's, which forgets.
    - **Reading.** A finite world whose contacts keep their knots across time has an irreversible law. Growth keeps knots by giving the
      network new beginnings, as the doubling law does, not by reading a later row.
-   - **Next (research directions).** The proof pair B55 and B64 for the exclusion while growing; a reversible substrate that never stops
+   - **Next (taken: B64, next entry).** The proof pair B55 and B64 for the exclusion while growing; a reversible substrate that never stops
      growing (B67) ([decision note](../research/INVERT-STEP-20261110-001/invert_step.md)).
+
+   **2026-11-10: crossing does not break balance** (`CROSS-WHY-20261110-001`).
+   - **The question.** Backlog B64: why does a schedule in which original rings hear each other lose balance? The aim was a lemma that
+     would make the exclusion of the last entries exact.
+   - **It does not, in general (exploratory, exact, frozen census).** Failures come in two kinds: a ring's own cells stop holding its
+     born cells independently (internal), or what other rings heard of it cancels what it holds (heard). Both happen with no crossing
+     at all. And a schedule that pauses once, long enough for neighbouring territories to hear each other, then doubles quickly, keeps
+     every stage balanced: at g = 3, 21 such schedules to 48 × 48, as [28, 1, 1], where every original ring hears all eight others from
+     lag 8. A uniform pause repeated, as every 28 lags, fails at 48 × 48.
+   - **Balance is read on one territory (proved).** The law commutes with the original lattice's translations, and rings born at a
+     doubling are never the ones that fail.
+   - **Reading.** The exclusion was a fact about uniform schedules, not about growth: a growing plane can keep its knots and carry what
+     its territories heard of each other. The schedules are declared and were found by search; a rule the network could follow to pause
+     on its own is open.
+   - **Next (selected, awaiting a go-ahead).** Reading distance while growing (sub-goal B89; Payoff 3/3, Concreteness 2/3): on a 5 × 5
+     tube, a schedule under which original rings are heard at distance 1 and then 2 with every stage balanced; B55 meanwhile
+     ([decision note](../research/CROSS-WHY-20261110-001/cross_why.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues

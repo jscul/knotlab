@@ -51,6 +51,14 @@ original rings' territories do not hear each other, so it never reads a distance
 
 - **Relied on.** A30, A32, A44, A45. **Added.** None.
 
+## Correction
+
+**2026-11-10 · Not a block** (`docs/CORRECTIONS.md`). "Crossing breaks balance", "the mixtures that cross a border are what the next
+doubling cannot carry" and the exclusion "keeps its knots or reads its distance across its grown plane, not both, in every law read"
+went beyond the census: every schedule read here was uniform, and this note's own interpretation saw failures without a crossing.
+Uneven schedules, a pause and then short runs, cross a border with every stage balanced to 48 × 48 at g = 3
+(`CROSS-WHY-20261110-001`). Every result here stands for the uniform schedules read.
+
 ## Ratio
 
 - **Substantive.** One frozen exploratory census (A), eight runs. **Administrative.** The pre-registration, this note and the closure.

@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RIGID-WORLDS-20261110-001A-E001",
+ "ticket": "RIGID-WORLDS-20261110-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "With identity of indiscernibles at radius 2, does any of the 1,024 Life-like one-bit laws or the atom force every allowed board to be a two-dimensional torus, and if so which torus sizes does it allow?",
+ "definitions": {
+  "the family": "The 1,024 Life-like one-bit laws (a place of value c with k neighbours of value 1 is allowed when (c, k) is in the law's set) and the atom x, y -> c: 1,025 laws, as in BOARD-DIST-20261110-001B.",
+  "identity at radius 2": "Two names whose radius-2 views agree are one place; a radius-2 view is the values at the 17 names ug, g a reduced word of length at most 2. The allowed boards are exactly the finite connected boards with a colouring that obeys the law at every place and gives distinct places distinct radius-2 views (BOARD-DIST-20261110-001A, Theorem 7 and its remark): the view boards.",
+  "two-dimensional torus": "An abelian board (sigma_x sigma_y = sigma_y sigma_x at every place), so Z^2/Lambda for a lattice of finite index, whose lattice has no nonzero vector of L1 norm at most 4. Every radius-2 ball is then the plane's: 13 distinct places with the plane's incidences. The smallest has 13 places.",
+  "thick board (not two-dimensional)": "An abelian board whose lattice has a nonzero vector of L1 norm at most 4 (a loop, an involution, or a word x^a y^b with 0 < |a| + |b| <= 4 returning to a place: thin cylinders and cycles). Thick and non-abelian boards do not count.",
+  "forces a two-dimensional world": "Some board is allowed, and every allowed board is a two-dimensional torus.",
+  "bound": "A forced two-dimensional torus has at most 256 places: at radius 2 with one bit a view board has 2^8 compatibility classes per letter, and a plane-like abelian board with more places has a non-abelian sibling (the swap, BOARD-DIST-20261110-001A, Theorem 7's remark). Any family of forced tori is bounded at this radius.",
+  "step 1, refutation by boards": "In order, stopping at the first allowed board: the one-place board; every abelian board with at most 8 places (the 55 tori of index 2 to 8, all thick); every non-abelian board with at most 6 places; the 16 plane-like non-abelian boards with 7 places; 150 random non-abelian boards of 8 to 32 places (seed 92); every torus of index 9 to 64 with a lattice vector of L1 norm 3 or 4. Parity laws by elimination over GF(2), the others by SAT under 10^6 conflicts (a board over budget does not refute).",
+  "step 2, exact view-board search": "For a law not refuted: SAT over its allowed views for (a) any board, (b) a non-abelian board, (c) a thick board (a loop, or a closing word x^a y^b with 0 < |a| + |b| <= 4). Undecided above 3,000 allowed views or over budget.",
+  "reading for a forcing law": "The two-dimensional tori of index at most 32 it allows: one size or several."
+ },
+ "public_inputs": {
+  "code": "rigid.py (sha256 4354999f2d9a1188b044d90f829d81ea5d4133b1a519b8335d2c613f5142a2cb) beside this file, importing board_lib.py (sha256 72a52aafee769792d1c0eb4ca5c7a2e1d4d446876994fee6b20875f660132458) and ioi2_stress.py (sha256 6413895b0d0f7838052eadadb372597dfe9202b73d106f19ea037f1e84fc07d2) of BOARD-DIST-20261110-001B-E001; pysat Minisat22.",
+  "run": "rigid.py; output artifacts/RIGID-WORLDS-20261110-001A/RIGID-WORLDS-20261110-001A-E001_rigid_worlds_at_radius_two/census.json."
+ },
+ "forbidden_inputs": [
+  "Changing the family, the definitions, the board lists, the budgets, the view threshold or the predictions after seeing results"
+ ],
+ "primary_observable": "Each law's classification: refuted by which board, no board, not forcing, forcing (with its tori), or undecided.",
+ "cheapest_meaningful_control": "A drawn control, the radius-2 law whose allowed views are exactly those of one colouring of the 13-place torus Z^2/<(13, 0), (5, 1)> with distinct views and unique overlap classes (forces exactly that torus), and the full law (refuted by the one-place board). Both were run before freezing (disclosed) and behaved so; no law of the family was run.",
+ "predictions": {
+  "R1": "No law of the family forces a two-dimensional world at radius 2.",
+  "R2": "The drawn control forces its torus; the full law is refuted at once."
+ },
+ "decision_rules": {
+  "R1 holds": "The failure line for the hope: identity at radius 2 does not make a one-bit Life-like law, or the atom, choose a two-dimensional world. Laws are reported by what refuted them, with those that allow no board.",
+  "R1 fails": "Each forcing law is a two-dimensional world chosen by the rules, finite and at most 256 places; reported with its tori, one size or a family, and its exact queries re-run.",
+  "undecided": "Listed and counted against neither side."
+ },
+ "stop_rule": "One run on the frozen family; no extension of the family or the radius in this epic.",
+ "runtime": "Expected under an hour; registered in docs/LONG_RUNNING.md before launch and run under systemd-run MemoryMax=16G with no swap."
+}

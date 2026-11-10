@@ -31,7 +31,7 @@ Frozen in the contract before any run:
 | 3 | **The triangle fails only across a doubling.** In all 14 two-run schedules with enough readings, every violation of the directed T1 involves a target reached after the first doubling, none one reached within the first run; within one stage a route to u followed by the translate of a route to w is a route to u + w, so the time length is subadditive there. | the census exact; the within-stage bound by hand | A |
 | 4 | **Far costs more than the sum of near.** In [28, 60], R1 is 36 at distance 1, 48 and 60 at 2, 90 and 102 at 3, 138 and 150 at 4: after the doubling at lag 28 doubles the ring steps between original rings, every leg is slower. | exploratory, exact | A |
 | 5 | **Every reading was read through freezes**, except three T1 values, dropped from R1 as frozen. | exploratory, exact | A |
-| 6 | **The 7 × 7 half is pending.** One long run of 1 to 72 lags, then 1 or 2: nine first runs keep the second stage balanced; their extensions, the second code on the picks, and one size past wait on stages that cycle through about 800,000 lags (METRIC-GROW-A1). | pending | A |
+| 6 | **The 7 × 7 half: deaf beyond distance 4.** One long run of 1 to 72 lags, then 1 or 2: nine first runs keep the second stage balanced and eight two-run schedules every stage to 56 × 56. The best, [60, 1], reaches every ring within taxicab distance 4 out and back, all inside its first stage, with no triangle violation; rings at distance 5 and 6 are not all reached, so no schedule meets M1. Code 2 agrees on [60, 1]'s readings (METRIC-GROW-A1, folded in 2026-11-10). | exploratory, exact | A |
 
 ## Answer
 
@@ -39,7 +39,7 @@ No, on the 5 × 5 tube. A growing plane can keep every stage balanced while ever
 lengths, read through freezes as the program reads distance across time, are not a metric: far rings cost more than the sum of near
 trips. The excess appears only when a trip crosses a doubling; within one stage the time length is subadditive, as on a fixed network.
 So what breaks the metric is not the reading but the growth: the plane expands while it is being read. Every result is to 40 × 40;
-the 7 × 7 half is pending.
+on the 7 × 7 tube every balanced schedule read is deaf beyond distance 4.
 
 ## Reading
 
@@ -63,7 +63,7 @@ the 7 × 7 half is pending.
 | --- | --- | --- |
 | No metric on 5 × 5 (1) | the frozen X runs only on M1 positives; there were none | not applicable |
 | The two codes (1) | seven schedules (C), and [28, 60] at 40 × 40 | pass (`C.json`, `V5_at_close.json`) |
-| The 7 × 7 half (6) | | **pending** (METRIC-GROW-A1 in `docs/LONG_RUNNING.md`) |
+| The 7 × 7 half (6) | the frozen S7 and V | read: deaf beyond distance 4; code 2 agrees on [60, 1]'s T, T1 and L, and on [28, 60]'s balance and readings (`S7.json`, `V.json`) |
 
 ## Literature and provenance
 

@@ -31,3 +31,11 @@ when they finish (METRIC-GROW-A1). Code 2 was run on S5's pick at the close (`V5
 
 - The 5 × 5 tube, g = 3, the frozen ranges and window; balance computed, not proved; the freeze readings exact per case; declared
   rings (A45) on a declared board (A51); open births (A44); the schedules declared, found by search. The 7 × 7 half is pending.
+
+## The 7 × 7 half, folded in
+
+S7 finished at 16,729 seconds and V at 16,804 (`S7.json`, `V.json`). Nine first runs keep the second stage balanced (1, 2, 4, 12, 13,
+28, 29, 60, 61) and eight two-run schedules keep every stage balanced to 56 × 56. The deaf distance is 4: [60, 1] (and [60], [61])
+reaches every ring within taxicab distance 4 out and back, inside the first stage, R1 = 36; 48, 60; 72, 84; 96, 108 at distances 1 to
+4, with no triangle violation, as the within-stage bound requires; distance 5 is reached in part (120) and 6 not. No schedule meets M1.
+Code 2 agrees on [60, 1]'s T, T1 and L, and, on 5 × 5, on [28, 60]'s balance and readings. X did not run (no M1 positive).

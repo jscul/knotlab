@@ -2390,7 +2390,8 @@ So network holes come in two kinds:
    - **The growth is what breaks it.** Every violation involves a trip across a doubling; within one stage a route to one ring
      followed by a translated route to the next is a route, so the time length is subadditive there.
    - **Reading.** The plane expands while it is read: the triangle excess is a native measure of growth during a trip. A metric is read
-     between doublings, and after growth stops (`GROW-STOP-20261110-001`), not across them. The 7 × 7 half is pending.
+     between doublings, and after growth stops (`GROW-STOP-20261110-001`), not across them. On the 7 × 7 tube, every balanced schedule
+     read is deaf beyond distance 4.
    - **Next (proposed for the morning).** Expansion as a reading: the triangle excess as a function of the doublings each trip crosses
      ([decision note](../research/METRIC-GROW-20261110-001/metric_grow.md)).
 

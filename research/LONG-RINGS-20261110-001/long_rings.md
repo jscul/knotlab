@@ -42,9 +42,10 @@ lines never cross in an on-time grouping, so what reads plainly is always one-di
 
 | Claim | One size past | Result |
 | --- | --- | --- |
-| Every on-time periodic grouping is a family of parallel lines with a cyclic ring graph (1) | the 32 × 32 torus, sublattice index up to 8 (read to side 24) | stress test pending (LONG-RINGS-S1, running) |
+| Every on-time periodic grouping is a family of parallel lines with a cyclic ring graph (1) | the 32 × 32 torus, sublattice index up to 8 (read to side 24) | pass: 984,884 patterns, 10,076 networks, 320 on time, every one a family of parallel lines with a cyclic ring graph |
 
-The script is `stress_test.py` beside this note; its output will be `stress_test.json`.
+The script is `stress_test.py` beside this note, its output `stress_test.json`; it ran in 638 seconds (LONG-RINGS-S1), after the
+report below was sent, and was folded in afterwards.
 
 ## Literature and provenance
 

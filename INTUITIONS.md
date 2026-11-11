@@ -1746,3 +1746,10 @@ that earlier records used in two senses.
   | balanced | (the doubling line's balanced stages, not used in the guide) | six knots at every distinction: six-regular |
   | two-sided | (none) | orientable |
   | thread | (a thread of work, not used in the guide) | an endless chain of atoms: chain |
+- **Older records.** Records written before 11 November 2026 use the older
+  words, and a record whose checksum another record pins (a manifest, a result
+  or a discovery) is never edited, so it keeps them. Read such a record with the
+  table above: a line of a triple system is a knot, a point a distinction, an
+  atom of a three-fold space a Fano piece, a three-fold or knot space a
+  three-regular contradiction or a drawn knot pattern, a contact where several
+  knots meet a shared distinction, and a world of knots a base, weave or patch.

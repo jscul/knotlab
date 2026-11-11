@@ -186,3 +186,40 @@ same question with a test in hand.
 4. **A face that emerges.** Payoff 2, concreteness 1, as recorded; direction 1 asks the same question with a test in hand.
 
 **Recommendation.** Research directions, #1, awaiting the coordinator's go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 04:59 UTC and copied here verbatim.
+
+**Knots alone: only the not-all-equal knot both recovers a world made of knots and spaces it. It came close to overturning A63 but didn't.**
+
+- **The other three laws are settled by proof.** The clause recovers exactly the knots but relates nothing beyond touching. Parity folds a flat world into a 3-colouring. Not-exactly-one ties everything to one all-zero hub state.
+- **Not-all-equal recovers the world.** It reads 227 of 229 flat worlds (those without a non-facial triangle) faithfully, and every one whose short loops have length 5 or more. Its bond distance is graph distance + 1 out to distance 2.
+- **At positive curvature a law fixes the whole world.** With five knots per distinction, not-all-equal allows only the icosahedron. Flat worlds always have covers, so no law fixes their size, and not-all-equal allows every Klein bottle in range.
+- **Why A63 stands.** P2, P3 and P5 failed narrowly (two thin tori, a biased sample, and short loops shortening bonds at distance 3), so by the frozen rule A63 stands.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the knots-alone census (B144) | **Status:** Partially successful | P1, P4 hold; P2, P3, P5 fail narrowly; three laws settled by proof |
+| Local direction — NAE on worlds of knots alone | Continue | Faithful wherever loops are long; whether faithfulness supplies the surface is open |
+| Broader exploration — G1 space from a law | Known alternatives | The board line's routes are closed; this setting is the open one |
+| Long-term goal — G1 Space from a law (question 9) | Capability gained | One knot law reads flat local geometry natively with nothing named but the knot and the surface count |
+
+**Corrections:** two, neither a block.
+1. *Narrowing*, reported earlier: "a law never fixes global shape or size" holds only where worlds have covers.
+2. *Not a block*: the referee found four slips in the pre-registration (a genus aside, "allows" written for "is native on", the A62 rule crediting the law, and two registered cells the code dropped; I ran those afterwards and nothing changed).
+
+**Goals:** a G1 checkpoint (capability gained), no goal change; B144 taken; sub-goal B145 recorded.
+**Assumptions:** A64 added ("counting how knots meet names no face"); A62 and A63 gain history lines, statuses unchanged.
+**Basket:** GROW-FACE#1 (a face that emerges, 2/3, 1/3), B16 (2/3, 1/3); none taken, because direction 1 asks the same question with a test in hand.
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Does NAE's faithful reading supply the surface? (B145) | 3/3 — Major | 2/3 — Testable | NAE on non-surface regular worlds, 13–30 distinctions, d = 4–7, frozen → a faithful one, or none and a local lemma | Selected · awaiting go-ahead |
+| 2 | The edge-width reading, frozen | 2/3 — Substantial | 3/3 — Ready | Tori 49–80, Klein bottles past 18 → confirmed or first failure | Alternative · deferred |
+| 3 | NAE's ruler as a theorem | 2/3 — Substantial | 2/3 — Testable | Hidden-path bonds up, a splitting argument down → a proof or where it fails | Alternative · deferred |
+| 4 | A face that emerges (was GROW-FACE#1) | 2/3 — Substantial | 1/3 — Stated | As recorded | Alternative · deferred |
+
+Everything is committed and published ([decision note](https://github.com/jscul/knotlab/blob/main/research/KNOTS-ALONE-20261111-001/knots_alone.md)). I'm holding before a second epic until the coordinator gives the go-ahead.

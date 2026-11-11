@@ -6,6 +6,10 @@ Ticket `STURDY-PROBE-20261110-001Z`, 2026-11-10.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/STURDY-PROBE-20261110-001/sturdy_probe.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule: a knot space is now a drawn knot pattern, its points
+distinctions and its lines knots, and an atom (a Fano or torus atom) a piece (Intuitions guide, Glossary). The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |

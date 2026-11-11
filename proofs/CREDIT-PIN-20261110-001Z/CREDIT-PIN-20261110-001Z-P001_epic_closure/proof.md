@@ -6,12 +6,16 @@ Ticket `CREDIT-PIN-20261110-001Z`, 2026-11-10.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/CREDIT-PIN-20261110-001/credit_pin.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule: a knot space is now a drawn knot pattern, its points
+distinctions and its lines knots, and an atom (a Fano or torus atom) a piece (Intuitions guide, Glossary). The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
 | 1 | With the example learner's stall fixed, the frozen test of IN-OUT-20261110-001 gives leaves 55 of 56 and composites 10 of 16 learned and held (was 53 and 1). | computed, frozen | A |
-| 2 | Lines whose dissonance a state-only walk cannot clear lie in acting atoms (4,473 of 4,473 cooled on S3 and S4). | computed, frozen | B |
+| 2 | Knots whose dissonance a state-only walk cannot clear lie in acting pieces (4,473 of 4,473 cooled on S3 and S4). | computed, frozen | B |
 | 3 | As credit, pinned dissonance learned composites 11 of 16 against 10 but leaves 29 of 32 against 31, with 9 inexact stops against 5: by the frozen mark it misleads; S5 composites 12 of 12. | computed, frozen | B |
 
 ## Answer

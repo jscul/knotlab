@@ -58,3 +58,10 @@ occur in general knot spaces; `THREE-IN-20261110-001`'s "no majority" holds for 
 
 Assumptions in force: A20, A46, A47, A58. The searches are expected to take more than ten minutes and are registered in
 `docs/LONG_RUNNING.md`.
+
+## Deviation (2026-11-11, before any result was read)
+
+Census 2 (S1 at radius 2) was dropped. Its radius-2 neighbourhoods hold 26 to 29 of S1's 45 points, and projecting the floor states onto
+them by SAT enumeration had not finished its first group after two hours; nothing from the run had been printed or read. The run was
+stopped and restarted with `check.py` changed only to leave that job out (commit with this note). The mark and every other search are
+unchanged.

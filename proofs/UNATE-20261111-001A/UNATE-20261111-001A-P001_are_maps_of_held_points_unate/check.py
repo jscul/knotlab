@@ -2,8 +2,8 @@
 """Checks for UNATE-20261111-001A: are maps of held points unate (research/UNATE-20261111-001/preregistration.md).
 
     .venv/bin/python3 -B check.py [--write]
-PYTHONHASHSEED=0. Check 1 (exact): THREE-IN-20261110-001's census on DEEP-MEM-20261111-001's spaces T1 and T3 (radius 1), and on S1 at
-radius 2 (two sides and one point of the radius-2 neighbourhood held, the output any point of it). Check 2 (exact): random small knot
+PYTHONHASHSEED=0. Check 1 (exact): THREE-IN-20261110-001's census on DEEP-MEM-20261111-001's spaces T1 and T3 (radius 1); the radius-2 census
+on S1 was dropped as infeasible before any result was read. Check 2 (exact): random small knot
 spaces, n = 6, 8, 10, 12 points, seeds 0 to 199 for each n, every class, every interface of three held points and one output. Check 3:
 every non-unate instance re-read independently by SAT. Mark N: some map of held points is not unate."""
 import hashlib
@@ -27,6 +27,9 @@ DEPS = [str((HERE / "unate_lib.py").relative_to(ROOT)),
         "research/UNATE-20261111-001/preregistration.md"]
 NS, SEEDS = (6, 8, 10, 12), range(200)
 INTERESTING = ("total majority", "total parity", "partial, non-unate", "total other")
+# Census 2 (S1 at radius 2) was dropped before any result was read: projecting the floor states onto its radius-2 neighbourhoods (26 to
+# 29 of 45 points) by SAT enumeration had not finished one group after two hours (see the pre-registration's deviation note).
+CENSUS = [("T1 D2 D2 thin", 1), ("T3 D2 D2 Fano", 1)]
 
 
 def sha(p):
@@ -110,8 +113,8 @@ def main():
         os.execve(sys.executable, [sys.executable, "-B"] + sys.argv, {**os.environ, "PYTHONHASHSEED": "0"})
     write = "--write" in sys.argv
     check("0 dependencies bound by hash", True, {p: sha(p) for p in DEPS})
-    with Pool(3) as pool:
-        cen = dict(pool.map(census, [("T1 D2 D2 thin", 1), ("T3 D2 D2 Fano", 1), ("S1 single K_3 thin", 2)]))
+    with Pool(len(CENSUS)) as pool:
+        cen = dict(pool.map(census, CENSUS))
     nonunate_census = {k: v["first instances"] for k, v in cen.items() if v["first instances"]}
     check("1 census on the deeper spaces and at radius 2 (exact)", True, {"by space": cen, "non-unate or other found": nonunate_census})
     with Pool(22) as pool:

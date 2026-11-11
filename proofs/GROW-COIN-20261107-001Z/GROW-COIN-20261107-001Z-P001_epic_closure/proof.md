@@ -6,11 +6,14 @@ Ticket `GROW-COIN-20261107-001Z`, 2026-11-07.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/GROW-COIN-20261107-001/grow_coin.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a seed's shape is now its outline. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | Refinement maps K_m to K_jm, is all-or-nothing in every order, and keeps the seed's shape, so it never places a corner. | known-with-delta (Goldberg–Coxeter); proved | A |
+| 1 | Refinement maps K_m to K_jm, is all-or-nothing in every order, and keeps the seed's outline, so it never places a corner. | known-with-delta (Goldberg–Coxeter); proved | A |
 | 2 | Ring accretion gives K_m exactly when the four turns of one ring become corners. | proved | A |
 | 3 | With turns decided one at a time, ring accretion also closes lopsided spheres: 38 distinct closures up to 100 triangles, 3 round; 12 of 400 random-coin runs non-round. | new as far as found; computed | A |
 | 4 | In single-strip accretion a turn's decision window is the same in every lap, so tying the four corners needs a carried bit, a hidden witness. | known-with-delta (local growth rules); proved, windows computed | A |

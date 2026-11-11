@@ -6,16 +6,19 @@ Ticket `BOND-CHAIN-20261108-001Z`, 2026-11-08.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/BOND-CHAIN-20261108-001/bond_chain.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): the NAND thread is now the NAND chain. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
 | 1 | On a consistent parity law, two non-parallel distinctions joined by a chain of knots lie on a knot inside the chain's union, so chain distance counted in knots is 1 and counted in distinctions equals bond distance. | known-with-delta; proved | A |
-| 2 | Off parity laws the measures part exactly at gates: of 1,156 laws of two three-place knots sharing one distinction, the 72 gated ones have no knot through the far ends; clause chains are spanned exactly when they chain as implications; the NAND thread's only knots are its clauses. | known-with-delta; proved (exhaustive) | B |
+| 2 | Off parity laws the measures part exactly at gates: of 1,156 laws of two three-place knots sharing one distinction, the 72 gated ones have no knot through the far ends; clause chains are spanned exactly when they chain as implications; the NAND chain's only knots are its clauses. | known-with-delta; proved (exhaustive) | B |
 
 ## Answer
 
-By its frozen test A12 is overturned as a universal statement (the NAND thread); it holds wherever knots compose, which covers
+By its frozen test A12 is overturned as a universal statement (the NAND chain); it holds wherever knots compose, which covers
 every law measured for space so far. A39 replaces it.
 
 ## Pending the owner

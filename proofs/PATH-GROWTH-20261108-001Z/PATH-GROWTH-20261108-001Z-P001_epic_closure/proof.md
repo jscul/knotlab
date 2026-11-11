@@ -6,13 +6,16 @@ Ticket `PATH-GROWTH-20261108-001Z`, 2026-11-08.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/PATH-GROWTH-20261108-001/path_growth.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): isolated shapes became isolated ring sizes. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
 | 1 | No family of paths with one linear rule per ring is native at every size: with all four rings of 3, 4 or 5 cells no path is native at all, and the 8 longer families native at four rings fail at five. | not found in prior work; exploratory search, exact | A |
 | 2 | Growth breaks composition, not persistence: persistent paths with short row cycles remain at every size, and none is native. | not found in prior work; exploratory measure, exact | B |
-| 3 | Native paths sit at isolated shapes (3/5/5/3, 5/6/6/5, 4/7/7/5 in the map; five more with rule 150 on every ring), each family at one shape, none surviving one more cell. | not found in prior work; exploratory, exact, verified on full state spaces | B, decision note |
+| 3 | Native paths sit at isolated ring sizes (3/5/5/3, 5/6/6/5, 4/7/7/5 in the map; five more with rule 150 on every ring), each family at one choice of sizes, none surviving one more cell. | not found in prior work; exploratory, exact, verified on full state spaces | B, decision note |
 
 ## Answer
 

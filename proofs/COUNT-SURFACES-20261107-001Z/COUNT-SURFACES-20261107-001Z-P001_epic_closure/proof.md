@@ -6,6 +6,9 @@ Ticket `COUNT-SURFACES-20261107-001Z`, 2026-11-07.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/COUNT-SURFACES-20261107-001/count_surfaces.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is now a drawn knot pattern. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -20,7 +23,7 @@ Ticket `COUNT-SURFACES-20261107-001Z`, 2026-11-07.
 
 - **χ decides whether and where the count forces:** lines on the Kasteleyn sphere, faces when χ < \|D\|.
 - **Orientability never enters.** Where the count forces, it stays in PPADS^dt.
-- **Off the sphere,** the lattice knot spaces are satisfiable except thin and Fano tori. The TFNP class of the knot's own contradiction
+- **Off the sphere,** the lattice drawn knot patterns are satisfiable except thin and Fano tori. The TFNP class of the knot's own contradiction
   is a property of the sphere.
 
 ## Pending the owner

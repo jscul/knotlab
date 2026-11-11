@@ -6,6 +6,9 @@ Ticket `COUNT-TFNP-20261107-001Z`, 2026-11-07.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/COUNT-TFNP-20261107-001/count_tfnp.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is now a drawn knot pattern. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -30,7 +33,7 @@ Carried from earlier epics:
 ## Recommendation
 
 **Research directions:**
-- **(i)** The knot's count on non-orientable and higher-genus knot spaces: whether the surface's Euler characteristic and orientability
+- **(i)** The knot's count on non-orientable and higher-genus drawn knot patterns: whether the surface's Euler characteristic and orientability
   decide its class (2/3).
 - **(ii)** A return to question 9, whose choice is yours.
 

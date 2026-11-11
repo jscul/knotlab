@@ -6,16 +6,20 @@ Ticket `REFINE-READ-20261107-001Z`, 2026-11-07.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/REFINE-READ-20261107-001/refine_read.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule: a three-fold or knot space is now a three-regular
+contradiction, its lines knots and its points distinctions, and a Fano atom a Fano piece (Intuitions guide, Glossary). The
+mathematics is unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | Colour refinement on the native creation map puts lines of two atoms in one class in 87 of 277 spaces (14 of 23 Fano trees). Symmetry forces it, so this is no obstruction. | new; computed | A |
-| 2 | Pair refinement never puts a pair within an atom and a pair across atoms in one class (277 of 277). Every automorphism of the native map preserves the atoms, and "same atom" is C^3-definable in each space. | new; computed (classical logic of refinement) | A |
-| 3 | On yes/no creation alone, pair refinement mixes them in 42 spaces, including all 39 with yes/no twins across atoms. | new; computed | A |
-| 4 | Five uniform rules read 219 (yes/no two-stage) and 234 (native twins and three refinements of them) of 277 spaces. | new; computed | B |
-| 5 | Native twins fail only by merging atoms: 38 spaces, 32 by complete twinship of two whole atoms. | new; computed | B |
-| 6 | Native-twin lines of one atom never create at a common glue line in different ways (17,494 of 17,494). Across atoms 530 of 1,572 do. | new; computed | B |
+| 1 | Colour refinement on the native creation map puts knots of two Fano pieces in one class in 87 of 277 contradictions (14 of 23 Fano trees). Symmetry forces it, so this is no obstruction. | new; computed | A |
+| 2 | Pair refinement never puts a pair within a Fano piece and a pair across Fano pieces in one class (277 of 277). Every automorphism of the native map preserves the Fano pieces, and "same Fano piece" is C^3-definable in each contradiction. | new; computed (classical logic of refinement) | A |
+| 3 | On yes/no creation alone, pair refinement mixes them in 42 contradictions, including all 39 with yes/no twins across Fano pieces. | new; computed | A |
+| 4 | Five uniform rules read 219 (yes/no two-stage) and 234 (native twins and three refinements of them) of 277 contradictions. | new; computed | B |
+| 5 | Native twins fail only by merging Fano pieces: 38 contradictions, 32 by complete twinship of two whole Fano pieces. | new; computed | B |
+| 6 | Native-twin knots of one Fano piece never create at a common glue knot in different ways (17,494 of 17,494). Across Fano pieces 530 of 1,572 do. | new; computed | B |
 
 ## Pending the owner
 
@@ -29,8 +33,8 @@ Ticket `REFINE-READ-20261107-001Z`, 2026-11-07.
 ## Recommendation
 
 **Continue** (2/3), in the adjacent direction: native creation at junction handles.
-- **The method.** On HANDLE-COUNT's trisum spaces, ask whether pair refinement on the native map fixes the junctions, and whether junction
-  lines carry a native signature.
-- **Alternatives.** Uniform definability of the atoms (1/3); a native audit of earlier far-side records (1/3).
+- **The method.** On HANDLE-COUNT's trisum contradictions, ask whether pair refinement on the native map fixes the junctions, and whether junction
+  knots carry a native signature.
+- **Alternatives.** Uniform definability of the Fano pieces (1/3); a native audit of earlier far-side records (1/3).
 
 The table is in the decision note.

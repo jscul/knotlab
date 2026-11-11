@@ -6,11 +6,14 @@ Ticket `COUNT-ANTIVORTEX-20261107-001Z`, 2026-11-07.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/COUNT-ANTIVORTEX-20261107-001/count_antivortex.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is now a drawn knot pattern. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | The double of T(3a Z²) along a hexagonal hole is a genus-2 knot space whose six degree-8 faces turn the frames by +1, the mirror of the knot sphere's corners. Exactly one Kasteleyn class makes its handles flat. | new as far as found; proved | A |
+| 1 | The double of T(3a Z²) along a hexagonal hole is a genus-2 drawn knot pattern whose six degree-8 faces turn the frames by +1, the mirror of the knot sphere's corners. Exactly one Kasteleyn class makes its handles flat. | new as far as found; proved | A |
 | 2 | The developed state violates no line and over-agrees at exactly one face (an antivortex), so the knot's lines are satisfiable on genus 2. | new as far as found; proved | A |
 | 3 | Finding an over-agreeing face is PPADS^dt-complete, and finding a violated line or an over-agreeing face is PPAD^dt-complete: the mirrored Sperner map puts over-agreeing faces exactly in clockwise fully labelled triangles. | new as far as found; proved | A |
 

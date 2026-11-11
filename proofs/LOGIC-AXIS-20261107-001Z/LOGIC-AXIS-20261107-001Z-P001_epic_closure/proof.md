@@ -7,6 +7,9 @@ Ticket `LOGIC-AXIS-20261107-001Z`, 2026-11-07.
   claim.
 - **The decision note** is `research/LOGIC-AXIS-20261107-001/logic_axis.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): open ends are now loose ends, threads chains, and a tree-shaped knot graph one that is a tree. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -19,18 +22,18 @@ Ticket `LOGIC-AXIS-20261107-001Z`, 2026-11-07.
 | 6 | Conservative extensions never increase bond distance. | elementary; proved | A |
 | 7 | In Ledrappier's shift, the three-point minimal relations are exactly the Frobenius triangles, and along each lattice line the least minimal relation through points n apart has at most 2 + w(n) points (w the non-adjacent-form weight), 3 exactly at powers of two. | known overlap (Ledrappier; Masser); delta new as far as found; proved | B |
 | 8 | Conjecture: equality, 2 + w(n), and 2 + \|v\|_D in the plane. | conjecture; checked in windows | B |
-| 9 | Parity substitution towers with nothing drawn: gadgets adding no open ends keep the old knot (bond distance 2 at every level). Gadgets adding open ends stretch by fixed factors (3^k + 1; 3·4^(k−1) + 1), with dimension estimates 1.26, 1.63 and 1.29. | exploratory experiment | C |
-| 10 | A hub-free substitution keeps the replaced constraint exactly when its gadget adds no open end, and then is conservative; on tree-shaped knot graphs, bond distance = path knots + 1. | folklore-level mathematics; reading new; proved | D |
+| 9 | Parity substitution towers with nothing drawn: gadgets adding no loose ends keep the old knot (bond distance 2 at every level). Gadgets adding loose ends stretch by fixed factors (3^k + 1; 3·4^(k−1) + 1), with dimension estimates 1.26, 1.63 and 1.29. | exploratory experiment | C |
+| 10 | A hub-free substitution keeps the replaced constraint exactly when its gadget adds no loose end, and then is conservative; on knot graphs, bond distance = path knots + 1. | folklore-level mathematics; reading new; proved | D |
 
 ## Answer
 
 - **When logic measures its own axis.** Logic measures its own axis faithfully exactly when nothing is
-  opened by infinity: the thread counts loops, and lattice laws without ends read their dimension off
+  opened by infinity: the endless chain counts loops, and lattice laws without ends read their dimension off
   their allowed states.
 - **A frozen law.** It measures by signed binary digits, and its bond balls are infinite.
 - **Growth.**
   - Growth that keeps old allowed states never stretches.
-  - Refinement stretches only through open ends, with a dimension fixed by the chosen gadget.
+  - Refinement stretches only through loose ends, with a dimension fixed by the chosen gadget.
 
 ## Pending the owner
 
@@ -43,11 +46,11 @@ Ticket `LOGIC-AXIS-20261107-001Z`, 2026-11-07.
 
 ## Recommendation
 
-**Continue** (2/3), as a fresh epic: growth at open ends.
-- **The rule.** A uniform rule acts only where the relation shows an open end, with no chosen gadget
-  shape.
+**Continue** (2/3), as a fresh epic: growth at loose ends.
+- **The rule.** A uniform rule acts only where the relation shows a loose end, with no chosen gadget
+  design.
 - **The measurement.** The growth exponent of bond balls.
 - **Alternatives.** The signed-binary lower bound (1/3) and the logical Cartesian product of two
-  threads (1/3).
+  chains (1/3).
 
 The table is in the decision note.

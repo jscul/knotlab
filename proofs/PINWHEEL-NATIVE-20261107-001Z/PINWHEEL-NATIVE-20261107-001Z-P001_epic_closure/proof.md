@@ -6,6 +6,9 @@ Ticket `PINWHEEL-NATIVE-20261107-001Z`, 2026-11-07.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/PINWHEEL-NATIVE-20261107-001/pinwheel_native.md`.
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): open ends are now loose ends. The mathematics is
+unchanged; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -31,7 +34,7 @@ Ticket `PINWHEEL-NATIVE-20261107-001Z`, 2026-11-07.
 
 ## Recommendation
 
-**Continue**, as a fresh epic: a round plane grown at its open ends, starting with atlas growth.
+**Continue**, as a fresh epic: a round plane grown at its loose ends, starting with atlas growth.
 - **Ratings.** Payoff 3/3 — Barrier · Concreteness 2/3 — Testable.
 - **The question.** From one knot, add knots only where every nearby distinction keeps a radius-2 neighbourhood of the pinwheel
   atlas. Does growth reach dead ends, and do the grown patches stay pinwheel patches?

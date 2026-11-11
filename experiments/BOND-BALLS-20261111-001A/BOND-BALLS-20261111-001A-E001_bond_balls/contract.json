@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "BOND-BALLS-20261111-001A-E001",
+ "ticket": "BOND-BALLS-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On the 134 infinite two-shift bases NAE reads faithfully, does bond distance equal steps apart plus one to three steps, with no shortcut at four, so that bond balls follow the step balls the shifts dictate?",
+ "definitions": {
+  "steps apart": "shortest row of co-knotted pairs (the shared-distinction distance), the control; step shells to four.",
+  "three steps": "for every distinction w three steps from the origin: least bond with the origin and w, rest from the lens (within three steps of both), of four (shortcut) or five, else none; constrained = refuted by the window of radius 10; parts free by PERIODIC-READ's bounds with 300 sampled periodic states first.",
+  "four steps": "for every distinction four steps away: a bond of four with the origin from the lens (a shortcut by two)."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 d10ec0db9055dabc0ed26f7a7174314f69c5c12d2508cff2f13231c35d2e33f1) beside this file; PERIODIC-READ-20261111-001A-E001's census.py (sha256 8722986805e2b60b639fc2b24215a684bc623a1545c6fc55b5cbea5e684d6765) and census.json; pysat; 8 workers.",
+  "run": "census.py from the repository root; output artifacts/BOND-BALLS-20261111-001A/BOND-BALLS-20261111-001A-E001_bond_balls/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the bases, lens, window, sample or predictions after seeing results"
+ ],
+ "primary_observable": "Per base: step shells; three-step verdicts (bond of five, bond of four, none, unsettled); four-step shortcuts.",
+ "cheapest_meaningful_control": "Steps apart (the shared-distinction distance) as the comparison; the endless six-regular weave among the bases, where the ruler is proved (bond distance 4 at three steps).",
+ "predictions": {
+  "B1": "Every distinction three steps away lies in a bond of five with the origin and in no bond of four.",
+  "B2": "No distinction four steps away lies in a bond of four with the origin."
+ },
+ "decision_rules": {
+  "B1 and B2 hold": "Bond distance = steps + 1 to three steps on every base; bond balls follow step balls to radius four.",
+  "B1 fails by absence": "The law stops measuring at three steps there.",
+  "A shortcut": "The law's distance is shorter than the shifts' there."
+ },
+ "stop_rule": "One run; report and hold.",
+ "runtime": "About ten to twenty minutes on 8 workers; registered; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

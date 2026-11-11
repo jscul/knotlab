@@ -120,7 +120,7 @@ evidence: results and their status come from the records each entry links.
 | [A63](#a63--a-declared-cycle-is-put-in-not-native) | A declared cycle is put in, not native | reading | Overturned |
 | [A64](#a64--counting-how-knots-meet-at-a-distinction-declares-no-cycle) | Counting how knots meet at a distinction declares no cycle | reading | Assumed |
 | [A65](#a65--a-held-reference-distinction-is-supplied-by-the-outside) | A held reference distinction is supplied by the outside | reading | Assumed |
-| [A66](#a66--a-joined-base-keeps-each-copys-own-closed-tours) | A joined base keeps each copy's own closed tours | reading | Assumed |
+| [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Assumed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 
 ## Entries
@@ -1733,22 +1733,28 @@ evidence: results and their status come from the records each entry links.
     ([what it takes to hold a count](../research/HOLD-COUNT-20261111-001/hold_count.md)).
   - 2026-11-11 · Added by `HOLD-COUNT-20261111-001`.
 
-### A66 · A joined base keeps each copy's own closed tours
+### A66 · Copies sharing distinctions keep each copy's own drawn faces
 
 **Assumed** · 2026-11-11 · reading
 
-- **Statement.** When copies of two-fold weaves are joined by sharing distinctions (a distinction of one copy is the same distinction as
-  one of another), the dissonance the learner feels is the sum of the copies' own: violated knots, plus each copy's closed tours read as
-  in that copy alone. A shared distinction's knots close into one tour per copy, not one tour in all. The canonical K1–K3 test is
-  unchanged.
+- **Statement.** When copies of drawn knot patterns share distinctions (a distinction of one copy is the same distinction as one of
+  another), the dissonance the learner feels is the sum of the copies' own: violated knots, plus each copy's faces, which belong to that
+  copy's drawing, read as in that copy alone. A shared distinction's knots lie around one face-cycle per copy, not one in all. The
+  canonical K1–K3 test is unchanged.
 - **Why.** Taken by default in `SHARED-COUNT-20261111-001`'s pre-registration, so that the learning line's learner, whose dissonance
-  counts closed tours, runs unchanged on the first overlapping bases. On a base with no two-fold pieces there are no closed tours, and the
+  counts the drawing's faces, runs unchanged on the first overlapping bases. On a base with no drawing there are no faces, and the
   natural dissonance is violated knots alone; that reading is the alternative.
-- **Rests on it.** `SHARED-COUNT-20261111-001`'s learning runs on joined bases (the floor states are the satisfying states either way,
-  since each copy's law is a Kasteleyn law in the literature's term; what changes is the path the learner takes).
-- **Challenge.** Run the same learning with dissonance from violated knots alone, on the joined bases and on bases with no two-fold
-  pieces; if learning succeeds or fails the same way, the tours were inessential; if it differs, the learner's success depends on them.
+- **Rests on it.** `SHARED-COUNT-20261111-001`'s learning runs on copies sharing distinctions (the floor states are the satisfying
+  states either way, since each copy's law is a Kasteleyn law in the literature's term; what changes is the path the learner takes).
+- **Challenge.** Run the same learning with dissonance from violated knots alone, on copies sharing distinctions and on bases with no
+  drawing (sub-goal B153); if learning succeeds or fails the same way, the faces were inessential; if it differs, the learner's success
+  depends on them.
 - **History.**
+  - 2026-11-11 · Used by `SHARED-COUNT-20261111-001`, status unchanged: with each copy's faces in the dissonance, the count of five held
+    distinctions was learned and held through one shared distinction in 10 of 10 runs, and the count of seven not within two hours
+    ([counting through a shared distinction](../research/SHARED-COUNT-20261111-001/shared_count.md)). The statement, first written with
+    "two-fold weaves" and "closed tours", now names drawn knot patterns and their faces, the glossary's words (a wording correction, Not a
+    block).
   - 2026-11-11 · Added by `SHARED-COUNT-20261111-001`.
 
 ### A67 · A base is read on sets of at most three distinctions

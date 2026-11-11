@@ -119,6 +119,7 @@ evidence: results and their status come from the records each entry links.
 | [A62](#a62--a-law-gives-a-shape-only-by-forcing-it) | A law gives a shape only by forcing it | reading | Assumed |
 | [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Overturned |
 | [A64](#a64--counting-how-knots-meet-at-a-distinction-names-no-face) | Counting how knots meet at a distinction names no face | reading | Assumed |
+| [A65](#a65--a-held-reference-point-is-supplied-by-the-world) | A held reference point is supplied by the world | reading | Assumed |
 
 ## Entries
 
@@ -1664,3 +1665,23 @@ evidence: results and their status come from the records each entry links.
     does not supply the count; whether counting is naming is untouched
     ([does a faithful reading supply the surface?](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
   - 2026-11-11 · Added by `KNOTS-ALONE-20261111-001`.
+
+### A65 · A held reference point is supplied by the world
+
+**Assumed** · 2026-11-11 · reading
+
+- **Statement.** In a knot space whose law is closed under flipping every point (the not-all-equal law of the learning line), a
+  reference is a point the world holds at one fixed value while it holds the inputs, and a map read with a reference is read at that
+  value only. The reference is an input supplied by the world, like the held inputs; the law does not produce it. The canonical K1–K3
+  test is unchanged.
+- **Why.** Taken by default in `HOLD-COUNT-20261111-001`'s pre-registration, to ask what one fixed value buys a knot space that, by
+  theorem D of `IN-OUT-20261110-001`, can read a count only up to its mirror. The alternative is a reference made natively, a point
+  whose value the law or learning fixes; the not-all-equal law cannot fix one, being the only three-place knot with no preferred value
+  (`PINNING-20261031-001`, `MUTUAL-SELECTION-20261031-001`).
+- **Rests on it.** `HOLD-COUNT-20261111-001`'s readings with a reference (the count mod 3 and the least spaces holding it), and the
+  reading in backlog B148 that a reference point turns self-dual maps into all maps.
+- **Challenge.** Look for a native reference: a space or a learned frame in which one point's value is fixed in every floor state
+  without the world holding it, or a law with a preferred value that keeps the knot's other properties. Finding one would make the
+  counts read here native; a proof that no complement-closed law fixes a value would confirm that the reference is always an input.
+- **History.**
+  - 2026-11-11 · Added by `HOLD-COUNT-20261111-001`.

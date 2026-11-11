@@ -144,3 +144,10 @@ measured, not predicted, and is reported as conclusion 5.
 4. **Four exceptions.** Payoff 1, concreteness 3.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at about 23:00 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: infinite
+bases with overlap are read natively and are not their finite repeats; one shift exact (73 of 181), two shifts bounded (134 of 627, 36
+with a pair in three or more knots, two in four, 160 unsettled); the ruler's first step holds on every faithful one; the global triples
+are, in 91 of 98 cases, a removed knot held by the other class (proved). Corrections: one, Not a block. Holding for a go-ahead on #1.

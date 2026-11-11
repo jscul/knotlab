@@ -1366,7 +1366,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | Weakly aperiodic laws under Leibniz's rule (`WEAK-APER-20261110-001`) | [closure](proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WEAK-APER-20261110-001/) |
 | 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |
 | 2026-11-11 | Deeper memories from examples (`DEEP-MEM-20261111-001`) | [closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/DEEP-MEM-20261111-001/) |
-| 2026-11-11 | The count from growth (`GROW-COUNT-20261111-001`) | — | [folder](research/GROW-COUNT-20261111-001/) |
+| 2026-11-11 | The count from growth (`GROW-COUNT-20261111-001`) | [closure](proofs/GROW-COUNT-20261111-001Z/GROW-COUNT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-COUNT-20261111-001/) |
 | 2026-11-11 | Knots alone (`KNOTS-ALONE-20261111-001`) | [closure](proofs/KNOTS-ALONE-20261111-001Z/KNOTS-ALONE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/KNOTS-ALONE-20261111-001/) |
 | 2026-11-11 | A learned memory that computes parity (`LEARN-PARITY-20261111-001`) | [closure](proofs/LEARN-PARITY-20261111-001Z/LEARN-PARITY-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-PARITY-20261111-001/) |
 | 2026-11-11 | The long-loop regime (`LONG-LOOP-20261111-001`) | [closure](proofs/LONG-LOOP-20261111-001Z/LONG-LOOP-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-LOOP-20261111-001/) |

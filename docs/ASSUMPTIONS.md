@@ -1655,6 +1655,10 @@ evidence: results and their status come from the records each entry links.
   at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
   non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).
 - **History.**
+  - 2026-11-11 · Challenged again by `GROW-COUNT-20261111-001`, status unchanged: growth does not supply the count either. Worlds
+    grown by knots kept only while the not-all-equal law reads them faithfully accept pairs in three knots and pinched links, and
+    with both named close links at every degree from 3 to 14
+    ([the count from growth](../research/GROW-COUNT-20261111-001/grow_count.md)).
   - 2026-11-11 · Challenged by `NAE-SURFACE-20261111-001`, status unchanged: the count is an input. 160 of 822 degree-preserving
     knot swaps of faithful flat tori are read faithfully by the not-all-equal law though none is a surface, so a faithful reading
     does not supply the count; whether counting is naming is untouched

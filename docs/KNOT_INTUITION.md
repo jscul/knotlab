@@ -5336,6 +5336,11 @@ So holes come in two kinds:
    - **Next (paused).** The owner asked to wrap up open lines. The sphere line stops here. When it reopens, candidates are whether
      grown spheres stay fat, and whether resolution size also follows the flat radius.
 
+   **Words in the pinwheel entries.** The pinwheel entries work with Radin's pinwheel tiling, a classical tiling of the drawn plane
+   by right triangles, and with periodic tilings of the drawn plane, with knots placed on the tiles: their tiles, patches, collars,
+   crystals, lattices, planes and circles are the literature's and the drawing's (reworded on 2026-11-11; the earlier text is in git
+   history).
+
    **2026-11-07: round without coins** (`PINWHEEL-ROUND-20261107-001`).
    - **The question.** Can a law with no coins, and no Poisson points, have a round circle?
    - **Already known (Radin–Sadun 1996).** In Conway and Radin's pinwheel tiling, the shortest path along tile edges between points R
@@ -5356,7 +5361,7 @@ So holes come in two kinds:
      - **Anisotropy.** The corner law's falls from 1.106 to 1.030 between R = 8 and 128.
    - **Reading.**
      - **One rule, two outcomes.** It makes a harmony or a continuing ratio depending only on the triangle: 1:1 closes into a periodic
-       polygon world; 1:2 continues and becomes round.
+       polygon layout; 1:2 continues and becomes round.
      - **Perfect circles are trends.** The circle is round only in the limit, gaining directions logarithmically.
      - **Intrinsic.** Bond distance depends only on which distinctions share knots, so the law's own distance is large-scale Euclidean.
        The drawing is used to prove it, not to state it.
@@ -5390,12 +5395,12 @@ So holes come in two kinds:
      - **The rule.** Split every knot into five, read each distinction's kind nearby, and split it by an eleven-letter table. That
        rule grows a law whose own distance is round.
      - **No geometry.** No coordinate, length or angle enters.
-     - **Where the angle went.** Into the law's large-scale shape, not into any finite part of it.
+     - **Where the angle went.** Into the law's large-scale outline, not into any finite part of it.
        - **Not in the counts.** The eight kinds recur in rational proportions, per knot: a 3/11, b 5/22, c 16/55, d 3/55, e 6/55,
          f 1/5, g 17/55, h 27/110.
        - **The only irrational number.** The table's growth rate √5, which is the length scale.
        - **In the limit.** The combinatorics alone recover the triangles (Kenyon and Stephenson). Drawn conformally, which fixes
-         the picture up to similarity, clusters of tiles converge in shape to the 1:2:√5 triangles. So the angle, like the round
+         the picture up to similarity, clusters of tiles converge in outline to the 1:2:√5 triangles. So the angle, like the round
          circle, is a limit property of the law.
        - **Corrected 2026-11-08.** This bullet first said that the angle appears only if the grown law is drawn in the plane.
    - **Provenance.**
@@ -5423,7 +5428,7 @@ So holes come in two kinds:
        the growing patch at radius 2 on levels 4–7 (measured).
    - **Periodic planes fail (measured).**
      - **The test.** None of 96,474 periodic configurations obeys the law, even at radius 1: rectangle grids, brick rows, every
-       domino tiling of small tori with every diagonal choice, and the six two-tile shapes tiled by half-turns.
+       domino tiling of small tori with every diagonal choice, and the six two-tile figures tiled by half-turns.
      - **The frame-consistent cut** fails too. It is neither periodic nor round.
    - **Reading.**
      - **Unlike the sphere.** On the sphere, a law without hidden states cannot tell a round sphere from a tube
@@ -5433,7 +5438,7 @@ So holes come in two kinds:
        (`COLLAR-PLANE-20261108-001`, next entry; `docs/CORRECTIONS.md`).
      - **Why.** Its vertices are mostly T-junctions at long-leg midpoints, which crystalline arrangements of the same triangle do not
        make in the allowed combinations.
-     - **The shared question.** For regrowth, roundness costs no hidden information beyond the patch's shape at radius 2. Whether the
+     - **The shared question.** For regrowth, roundness costs no hidden information beyond the patch's outline at radius 2. Whether the
        law forces roundness is open.
    - **Provenance.**
      - **Known.** Collared tiles (Anderson–Putnam); the combinatorial rule (Kenyon–Stephenson); undecorated local rules (Levitov,
@@ -5479,7 +5484,7 @@ So holes come in two kinds:
    **2026-11-08: the price of roundness in the plane** (`ROUND-PRICE-20261108-001`).
    - **The question.** No undecorated law of the pinwheel forces roundness. How much hidden information does? Start with one bit per
      tile, set the way every known decoration sets it: Conway's cut gives each child a label fixed by its parent's label and its
-     place among the five children.
+     position among the five children.
    - **Labels read from the tiling add nothing (proved).** If a label is a function of a bounded window, the cut crystal, labelled
      the same way, obeys the labelled law at every radius. Child indices, and any finite part of a tile's address in the hierarchy,
      are such labels. A forcing label must carry information no window determines.
@@ -5519,7 +5524,7 @@ So holes come in two kinds:
      exhaustive extension two tiles out at the parent level, and most survive three; 50 pinwheel collars with labels the law does
      not list survive the joint test and were not tested further (corrected 2026-11-08: the entry first asked only for pinwheel
      collars).
-   - **Reading.** The question is still open, now with a sharp shape: either some plane obeys the law while its parents break it,
+   - **Reading.** The question is still open, now sharply posed: either some plane obeys the law while its parents break it,
      probably a crystal outside the domino family, or all those off-law parents die further out and one bit per tile forces the
      pinwheel.
    - **Next (taken).** A crystal built from the surviving parent collars (next entry)
@@ -5543,7 +5548,7 @@ So holes come in two kinds:
      labels stay in the backlog ([decision note](../research/CRYSTAL-UP-20261108-001/crystal_up.md)).
 
    **2026-11-08: chains of knots and bond distance** (`BOND-CHAIN-20261108-001`).
-   - **The question.** Bond distance, the least knot through two distinctions minus one, has measured every space since
+   - **The question.** Bond distance, the least bond through two distinctions minus one, has measured every law read for space since
      2026-11-07 (A12). Another measure reads only knots: the shortest chain of knots, each sharing a distinction with the next. Do
      they agree?
    - **On parity laws they do (proved).** A chain of knots always holds a knot through its two ends, by matroid connectivity. So
@@ -5552,9 +5557,9 @@ So holes come in two kinds:
    - **Elsewhere they part exactly at gates (proved, exhaustive).** A gate is a shared distinction one value of which satisfies both
      knots it joins. Of the 1,156 laws made of two three-place knots sharing a distinction, a knot joins the far ends exactly when
      the knots do not meet at a gate. A chain of single clauses is spanned by a knot exactly when its clauses chain as implications.
-   - **A law only chains see as a line.** The NAND thread, clauses not(s(t−1) ∧ a(t) ∧ s(t)), has no knot beyond its clauses, so
-     bond distance sees separate clauses where chain distance counts a line. The atom thread, the same clauses with the signs of
-     an implication, is a line for both.
+   - **A law only chains see as an endless chain.** The NAND chain, clauses not(s(t−1) ∧ a(t) ∧ s(t)), has no knot beyond its
+     clauses, so bond distance sees separate clauses where chain distance counts one step per clause, as along an endless chain. The
+     atom chain, the same clauses with the signs of an implication, counts one step per clause for both.
    - **Reading.** By the test frozen before the run, A12 is overturned as a universal statement. The foundation decides between the
      measures: two independent relations on A and k and on B and k make k a common hub, not one touch between A and B. At a gate no
      knot crosses k, and bond distance follows that rule.

@@ -5,6 +5,9 @@ Status: Proved
 Ticket `RULER-20261111-001A`, 2026-11-11. The statement was frozen in `research/RULER-20261111-001/preregistration.md` before this proof
 was written.
 
+Words (2026-11-11). The statements use the literature's words for a given substrate: a triangle is a knot, a vertex a
+distinction, an edge a co-knotted pair and a triangulated surface a two-fold weave (Intuitions guide, Glossary).
+
 ## Standard statement
 
 Let Λ be the triangular lattice and N the set of 2-colourings of its vertices with no monochromatic triangle (the ground states of the
@@ -147,4 +150,4 @@ An independent referee, a fresh agent, checked every lemma and theorem with its 
 non-extension, SAT on the 24 × 24 torus for extension, neither using D) and found the statement fully proved: the criterion matched on
 55,756 random patterns; the side-and-apex sets are bonds in all 6d directions for d ≤ 6; no smaller bond in boxes to d = 4 (398,504
 sets at d = 4); R3's flip needs radius 0 or 1, not 4. It asked for the normalization in Lemma 1 (made), a sentence on why disc SAT
-speaks for the plane (added), and a narrower scope note: the flat-world equality was computed on tori only (corrected; logged).
+speaks for the plane (added), and a narrower scope note: the six-regular equality was computed on tori only (corrected; logged).

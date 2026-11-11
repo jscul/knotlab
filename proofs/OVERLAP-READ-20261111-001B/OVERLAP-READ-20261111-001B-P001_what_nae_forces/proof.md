@@ -6,6 +6,9 @@ Ticket `OVERLAP-READ-20261111-001B`, 2026-11-11. The statements L1 to L4 were fr
 `research/OVERLAP-READ-20261111-001/preregistration.md` before the census ran; the referee's fixes to their wording are listed at the
 end. L5 was added after the referee pointed to it; it was not registered.
 
+Words (2026-11-11). The statements use the literature's words for a given substrate: a triangle is a knot, a vertex a
+distinction, an edge a co-knotted pair and a triangulated surface a two-fold weave (Intuitions guide, Glossary).
+
 ## Standard statement
 
 Let H be a 3-uniform hypergraph (a knot pattern: its edges are the knots, with no limit on how many edges contain a pair), and

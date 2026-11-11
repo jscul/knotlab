@@ -1,13 +1,18 @@
-# Four-point maps on larger knot spaces, and a reason
+# Four-point maps on larger drawn knot patterns, and a reason
 
 Status: Proved (the four classes and the reasoning of section 1; an exact census, refereed by fresh code). Ticket A of
 `research/OWN-RELATION-20261111-001/preregistration.md`, frozen with the code in commit `bce78f40c` before any run.
 `check.py --part control|census|export|summary|referee` reproduces each part; `referee_parallel.py` runs the frozen referee's functions
 unchanged over the exported spaces in parallel (added after the freeze for time).
 
-Words. A knot space's points are its distinctions and its lines its knots (each a not-all-equal relation on three distinctions); every
-distinction lies in three knots. The spaces below are random such worlds whose drawn picture is a surface of genus 2, 3 or 4, that is,
+Words. A drawn knot pattern's distinctions were once its points and its knots its lines (each a not-all-equal relation on three
+distinctions); every distinction lies in three knots. The patterns below are random ones whose drawn picture is a surface of genus 2, 3
+or 4, that is,
 with 4, 6 or 8 independent loops of distinctions that no patch of knots fills (the literature's genus, used here only as a label).
+
+Words (2026-11-11). Reworded under the owner's language rule: a knot space is now a drawn knot pattern, its points
+distinctions and its lines knots, an atom a piece and a world of knots a pattern (Intuitions guide, Glossary). The
+mathematics is unchanged; the earlier text is in git history.
 
 ## 1. The question and why it is not forced
 
@@ -43,14 +48,14 @@ space took 594 of its 1,200 seconds; the part took 32 minutes). 179,559,422 free
 | 20, 4 | 77 | 26 | 0 | 0 | 0 |
 
 - **Positive control (run first): passed.** Synthetic floor states realising each of A, B, C and D were read as that class.
-- **P1 holds: neither C nor D occurs** anywhere in the range. With `HOLD-COUNT-20261111-001`'s 1,128 spaces, no knot space of up to 20
+- **P1 holds: neither C nor D occurs** anywhere in the range. With `HOLD-COUNT-20261111-001`'s 1,128 patterns, no drawn knot pattern of up to 20
   distinctions in either census reads the knot's own relation against a fourth distinction, or the switch.
 - **P2 fails:** B per space at genus 3 is 0.054, 0.080 and 0 at 16, 18 and 20 distinctions, not growing. Decided four-point readings of
   every kind get rarer past 16 distinctions at fixed genus (A: 1,859 at 16 and genus 4, 26 at 20), the reverse of their growth from 10 to
   14 in `HOLD-COUNT-20261111-001`.
 - **Seen after the run.** The B readings sit on few incidences: the 33 lie in 15 spaces built on 9 incidences (7 at 16 distinctions, 2 at 18), and the same
   incidence gives B at several genera (seeds 20 and 34 at 16 distinctions give it at genus 2, 3 and 4), so the reading belongs to which distinctions share
-  knots more than to how the world is drawn.
+  knots more than to how the pattern is drawn.
 - **Referee (`own_referee.py`, fresh code).** R1 recomputes the four classes by closing under generators and confirms that only C and D
   can give a mod-3 bit. R2 recomputes the A to D counts on every tenth space read (46 spaces) from the lines and signs alone. Result in
   section 4.
@@ -79,6 +84,6 @@ control and `HOLD-COUNT-20261111-001`'s cross-check (the same 20 A and 3 B on on
 ## What this establishes
 
 - Proved: all four kinds are self-dual and realisable in general not-all-equal systems, so their absence is not forced by the law.
-- Exact in the range (453 spaces of 16 to 20 distinctions, genus 2 to 4, with 1,128 smaller ones before): no knot space reads its own
+- Exact in the range (453 spaces of 16 to 20 distinctions, genus 2 to 4, with 1,128 smaller ones before): no drawn knot pattern reads its own
   relation, or the switch, from four held distinctions; four-point readings thin out past 16 distinctions.
-- Not established: whether any knot space at any size reads D or C.
+- Not established: whether any drawn knot pattern at any size reads D or C.

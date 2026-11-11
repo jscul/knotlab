@@ -5,6 +5,9 @@ Status: Proved
 Ticket `RULER-FLAT-20261111-001A`, 2026-11-11. The statement was frozen in `research/RULER-FLAT-20261111-001/preregistration.md`
 before this proof was written.
 
+Words (2026-11-11). The statements use the literature's words for a given substrate: a triangle is a knot, a vertex a
+distinction, an edge a co-knotted pair and a triangulated surface a two-fold weave (Intuitions guide, Glossary).
+
 ## Standard statement
 
 Let W = Λ/L be a 6-regular triangulation of the torus (the triangular lattice modulo a sublattice). Consider the 2-colourings of W

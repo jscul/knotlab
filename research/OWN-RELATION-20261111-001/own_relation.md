@@ -98,3 +98,11 @@ others are not all equal, which is the knot's own relation, read against a fourt
 
 **Corrections:** none. **Goals:** G8 checkpoint (obstruction learned; no goal change). **Assumptions:** none new or changed.
 **Basket:** #1 and #2 recorded; B148 unchanged.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-11 (about 19:58 UTC): the four results above (not forced; not found in 453 worlds,
+1,581 with `HOLD-COUNT-20261111-001`'s; readings thin out past 16 distinctions; no proof, the at-most-one-parity conjecture), the
+position table and the next-directions table of this note with #1 selected and awaiting a go-ahead, except that #3 (sub-goal B148) was
+marked as taken elsewhere, by `SHARED-COUNT-20261111-001`, which had started meanwhile, and the Corrections, Goals, Assumptions and
+Basket lines.

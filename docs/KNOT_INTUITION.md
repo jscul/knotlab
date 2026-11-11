@@ -5621,6 +5621,16 @@ So network holes come in two kinds:
    - **What is still put in** is the count of how knots meet (A64). Whether reading the knots faithfully supplies it is the next
      question (sub-goal B145) ([decision note](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
 
+   **2026-11-11: does a faithful reading supply the surface?** (`NAE-SURFACE-20261111-001`, sub-goal B145).
+   - **The question.** Not-all-equal reads almost every flat surface of knots alone faithfully, but the surface count (each pair in
+     two knots, each link one cycle) was given. Does reading the knots faithfully force it?
+   - **No (computed, exact, frozen).** Swap two knots of a faithful flat torus for two long-range ones: 160 of 822 such worlds are still
+     read faithfully, though some pairs now lie in one knot and some in three. The smallest has 25 distinctions, checked by independent
+     code and knotlab.
+   - **But near-surfaces are where it works.** Each swap costs faithfulness, and random regular worlds were never read faithfully. So
+     the knot law reads which knots there are, not how they meet: the count of how knots meet is an input
+     ([decision note](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

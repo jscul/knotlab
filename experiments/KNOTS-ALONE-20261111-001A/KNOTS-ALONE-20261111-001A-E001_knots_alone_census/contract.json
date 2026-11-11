@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "experiment_id": "KNOTS-ALONE-20261111-001A-E001",
+ "ticket": "KNOTS-ALONE-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On worlds of three-place knots alone (finite, no board, no names, no declared faces), which worlds does each uniform symmetric knot law allow and keep native, which does it read faithfully (its 3-bonds exactly the world's knots, no ties), what global features does it fix, does any law supply the surface condition, and how does NAE's bond distance grow on small flat worlds?",
+ "definitions": {
+  "world": "A finite set of distinctions 0..V-1 and a set of 3-subsets (knots), connected, every distinction in d knots; read up to isomorphism.",
+  "surface condition": "Every co-knotted pair in exactly two knots and every link one cycle: a closed triangulated surface.",
+  "laws": "PAR {1,3}, NAE {1,2}, OR {1,2,3}, NOL {0,2,3} (weights allowed on every knot); the four classes, up to complement, of symmetric three-place relations passing K1-K3 (knotlab check, 2026-11-11).",
+  "readings": "allowed; frozen distinction; tie (a pair of unfrozen distinctions missing a value pair); 3-bond (pairs free, eight patterns not all allowed); native (allowed, every knot a 3-bond); faithful (native, no frozen, no tie, 3-bonds exactly the knots); bond distance (least bond through two distinctions, minus one; a bond is a constrained set of three or more whose co-1 subsets are free). All from the allowed states, other distinctions quantified away.",
+  "family": "Surface worlds: d = 3, 4, 5 every V (complete by double counting), d = 6 every V in 7..16 (exhaustive SAT) and every lattice torus with 17 <= V <= 48 (Altshuler), d = 7 V = 12 the classes found in 600 s (sample). Non-surface: seeded SAT sample of at most 60 connected d-regular triple systems per (d, V), d = 3..7, 6 <= V <= 12, 3 | dV, surfaces removed (seed 20261111 + 100 d + V).",
+  "bond distance range": "Every lattice torus with 12 <= V <= 24, from distinction 0, bonds of size <= 6 (beta <= 5); NAE on all, OR, NOL, PAR on 12 <= V <= 16 as lemma controls.",
+  "settled before the run": "D1 (chi = V(6-d)/6), D2 (allowed and native states lift to covers), D3 (classical lists), D4 (OR faithful, bonds exactly the knots), D5 (PAR: rainbow classes, 4 states, never faithful), D6 (NOL: independent sets plus the all-zero state, 3-bonds the triples with a co-knotted pair, beta = 2): research/KNOTS-ALONE-20261111-001/preregistration.md."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 54836abe48882af57959289302dfb698e5d27e2c78a9b8a7c0e471ee3f36d520) and knots_alone.py (sha256 aee9a2eda0907064b89eae4fe4badddb22b80fecb62bd91d5a5fa448397010de) beside this file; pysat Minisat22, numpy; tools/knotlab for the cross-check.",
+  "run": "census.py from the repository root; output artifacts/KNOTS-ALONE-20261111-001A/KNOTS-ALONE-20261111-001A-E001_knots_alone_census/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the laws, the readings, the family, the ranges, the seeds, the size cap or the predictions after seeing results"
+ ],
+ "primary_observable": "For each world and law: allowed, frozen, ties, 3-bonds, native, faithful; for the bond-distance tori, the table of (delta, beta, count) from distinction 0.",
+ "cheapest_meaningful_control": "Lemma controls D4 to D6 computed on every world where the law is read; independent paths (brute force V <= 16, GF(2) against SAT for PAR, complements V <= 12, knotlab on the smallest bond torus); lattice tori against the SAT tori at 7..16. Run before freezing on worlds outside the family, with mutations rejected (disclosed in the pre-registration).",
+ "predictions": {
+  "P1": "NAE is faithful on the tetrahedron, octahedron and icosahedron and allows no state on the hemi-icosahedron.",
+  "P2": "NAE is faithful on every flat world in range without a non-facial triangle, and allows no state on K7.",
+  "P3": "For each law and each d = 3..7 the sample has a native non-surface world, and for NAE a faithful one.",
+  "P4": "NAE allows states on some Klein bottle and some torus in range.",
+  "P5": "On every lattice torus with 12 <= V <= 24 that NAE reads faithfully, beta(0, v) = delta(0, v) + 1 for every v with delta in {1, 2, 3}."
+ },
+ "decision_rules": {
+  "A63": "P2 and P5 hold: flat local geometry is read natively and spaced as a ruler with nothing named but the knot and the surface count; A63 overturned in this setting (caveat: the surface condition; P3 says whether a law supplies it). P2 holds, P5 fails with finite beta: spaced otherwise, reported. Beta mostly undefined: A63 narrowed (recovered, not spaced). P2 fails: A63 stands for NAE on flat worlds.",
+  "A62": "P1 holds: a uniform knot law fixes global shape and size at positive curvature; with D2 none fixes size at d >= 6; A62 narrowed accordingly.",
+  "undecided": "A sample that finds no witness (P3) is reported as not found, not as an absence."
+ },
+ "stop_rule": "One run on the frozen family; a stress test one size past (lattice tori to 30 for P5, Klein bottles at 17 and 18 for P2 and P4). No extension in this epic.",
+ "runtime": "Expected under an hour; registered in docs/LONG_RUNNING.md before launch and run under systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

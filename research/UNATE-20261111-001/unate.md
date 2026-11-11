@@ -6,6 +6,10 @@ infeasible before any result was read (deviation, commit `771a8f5bf`). Proof fam
 
 ## The answer
 
+*Refereed on 2026-11-11 (`PARITY-NEEDS-20261111-001`).* An independent check by fresh code passed: the gadget is a valid knot
+space of genus 4 with a Kasteleyn law, every line and its four-point parity relation are knots under the canonical K1–K3 test, and the
+parity is exact. One handle is in fact enough: an 8-point lattice torus also computes parity.
+
 **No. Unateness is not a theorem of knot spaces: an 8-point knot space of genus 4 computes the parity of three held points exactly.**
 Hold points 0, 3 and 4 at any values, and every floor state gives point 5 their sum mod 2. Small knot spaces compute majority often.
 The learned memories' interfaces stay unate: the limit `THREE-IN-20261110-001` found belongs to them, not to knot spaces (a correction).

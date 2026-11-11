@@ -1680,8 +1680,17 @@ So network holes come in two kinds:
      to their parity, every time. Small knot spaces vote (majority) often.
    - **Reading.** The memories never count because of where their knots sit, each pattern of tension in its own handle, not because knots
      cannot. Counting needs many handles close together, crossings that a flat sheet cannot make.
-   - **Next.** What a knot space needs to count (backlog B147), then whether a learned memory can grow such a place (sub-goal B146)
-     ([decision note](../research/UNATE-20261111-001/unate.md)).
+   - **Next (taken by `PARITY-NEEDS-20261111-001`, below).** What a knot space needs to count (backlog B147), then whether a learned memory
+     can grow such a place (sub-goal B146) ([decision note](../research/UNATE-20261111-001/unate.md)).
+
+   **2026-11-11: one handle is enough to count** (`PARITY-NEEDS-20261111-001`).
+   - **The question.** Backlog B147: how many handles does counting need?
+   - **Exact.** One. A ring of eight points on a torus, wound into its tightest pattern, forces a fourth point to the parity of any three
+     held ones; sixteen small tori do it, always in their tightest pattern. The first counting space, checked again by fresh code with the
+     canonical knot test, holds up.
+   - **Reading.** A flat sheet cannot count unless every hard problem is easy; one handle suffices. The memories' own atoms are tori too, so
+     the question is whether learning can wind one into its tightest pattern with the held points inside it.
+   - **Next.** A learned memory that computes parity (sub-goal B146) ([decision note](../research/PARITY-NEEDS-20261111-001/parity_needs.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

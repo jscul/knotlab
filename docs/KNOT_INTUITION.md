@@ -3027,9 +3027,9 @@ So holes come in two kinds:
    three is constrained". The absence reading, with a presence variable set to
    absent, came from the 2026-10-19 formalization, not from the original
    gate.
-9. **Space from a law.** Logic allows every shape. Which uniform, local law,
-   not written on a space in advance, gives a shape that looks like a space
-   of low dimension? This is open and shared with causal sets, quantum
+9. **Space from a law.** Logic allows every free complex. Which uniform, local
+   law, not written on a space in advance, gives a meeting pattern that looks
+   like a space of low dimension? This is open and shared with causal sets, quantum
    graphity and hypergraph rewriting. Since 2026-10-19 there is one necessary
    condition: a law can keep a lasting record of its own loops only if its
    contacts act as group elements on the witnesses ("Which knots remember a

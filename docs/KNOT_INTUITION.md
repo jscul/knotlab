@@ -1260,26 +1260,32 @@ So holes come in two kinds:
 4. **Dynamics.** Are loops better modeled as processes whose outputs over time
    are the data, and does the static definition survive that change?
 
+   **Words in the learning entries.** The learning entries below work on drawn knot patterns (glossary of the Intuitions guide): every
+   distinction lies in three knots and every co-knotted pair in one, and the knots are drawn as the triangles of one colour of a
+   two-coloured triangulation. The knot sphere and the tori, with their faces, corners, handles and genus, belong to that drawing, which
+   is declared, not built by the law. Before 2026-11-11 these entries called the knots lines, the distinctions points, the Fano and torus
+   pieces atoms and the drawn knot patterns knot spaces; "the point" is still the owner's moving point of dissonance (G15).
+
    **2026-11-07: steering the knot sphere's dissonance by re-signing** (`RESIGN-STEER-20261107-001`).
    - **The question.** The owner pictures learning as a point with a strength like charge moving through a learned network of knots,
      the learning orienting the logic to guide it to a resolution. On a Kasteleyn-signed knot sphere no change of state removes the
-     dissonance: some line is always violated. Take that forced dissonance as the point and learning as changing signs. Can
+     dissonance: some knot is always violated. Take that forced dissonance as the point and learning as changing signs. Can
      learning move it, and where to?
-   - **Rationalization never fails (proved).** Violated lines minus over-agreement plus half the number of even faces is 1 in every
-     state and law. One sign change at the violated line splits the point into two even faces, the law's own marks, and on every
+   - **Rationalization never fails (proved).** Violated knots minus over-agreement plus half the number of even faces is 1 in every
+     state and law. One sign change at the violated knot splits the point into two even faces, the law's own marks, and on every
      simplicial sphere every law with two even faces, wherever they sit, has consistent states (Euler's formula and Hall's
      theorem). With four or more even faces every state over-agrees somewhere: rationalizing too much makes the opposite
      dissonance.
-   - **The unlearned law prefers no place (proved).** Every line is the violated line of exactly 2 N(T) least-dissonance states,
-     with N(T)² = det(B Bᵀ) / (n0 n1 + n1 n2 + n2 n0), B the line–vertex matrix and n_i the sizes of the vertex 3-colouring's
-     classes: 54 on K_2, 24,576 on K_3, 163,840,000 on K_4.
-   - **Learning alone steers (proved).** With the state held fixed, sign changes made only at the violated line or at an even face
-     carry the point from any line to any line, never holding more than the forced unit. On the sphere a closed walk of sign
+   - **The unlearned law prefers no knot (proved).** Every knot is the violated knot of exactly 2 N(T) least-dissonance states,
+     with N(T)² = det(B Bᵀ) / (n0 n1 + n1 n2 + n2 n0), B the knot–distinction matrix and n_i the sizes of the classes of the
+     distinctions' 3-colouring: 54 on K_2, 24,576 on K_3, 163,840,000 on K_4.
+   - **Learning alone steers (proved).** With the state held fixed, sign changes made only at the violated knot or at an even face
+     carry the point from any knot to any knot, never holding more than the forced unit. On the sphere a closed walk of sign
      changes equals a block change of state, so what learning adds to behaviour is exactly where the even faces sit. In dimer
      language the point is a trimer, the even faces are monomers, and the walk is the worm algorithm of dimer models, carried by the
      signs.
    - **Measured on the octahedral spheres (exploratory).**
-     - **A local rule suffices.** A rule that sees only the lines at one even face and the distance to the target, and never steps
+     - **A local rule suffices.** A rule that sees only the knots at one even face and the distance to the target, and never steps
        straight back, reached 2,399 of 2,400 targets on K_2–K_8 and K_10, and 300 of 300 on K_12.
      - **The halves repel and the corners attract.** The number of consistent states is least when the two even faces touch and
        grows like a power near 1/2 of their separation (fitted 0.46 on K_12, 0.49 on K_16, 0.51 on K_20), as for two unit holes in
@@ -1292,32 +1298,32 @@ So holes come in two kinds:
      dissonance sits.
    - **Provenance.** Known: Kasteleyn's theorem, Hall's theorem, Heawood's colouring theorem, monomer correlations (Fisher and
      Stephenson), worm algorithms for dimers (Sandvik and Moessner), Ciucu's electrostatics of holes in lozenge tilings. Not found:
-     the uniform count over lines and its closed form.
+     the uniform count over knots and its closed form.
    - **Next (taken by `LEARN-HANDLES-20261109-001`, below).** Learning in handles: off the sphere, signings with the same even faces differ by a
      homology class that no change of state reaches, so a learning walk around a handle could remove a dissonance that the class
-     forces, with no mark left in the law (Payoff 2/3, Concreteness 2/3). The alternatives: many points at once, and layers
+     forces, with no mark left in the law (Payoff 2/3, Concreteness 2/3). The alternatives: many distinctions at once, and layers
      through naming knots ([decision note](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
 
    **2026-11-09: learning in handles** (`LEARN-HANDLES-20261109-001`).
    - **The question.** On the sphere learning moves the forced dissonance anywhere, but a closed learning walk is a change of state in
      disguise. Off the sphere laws with the same even faces differ by a homology class that no change of state reaches. Can learning
      carry information that no change of state can?
-   - **Only χ = 0 can be resolved (proved).** A law and a state are free of dissonance (no violated line, no over-agreeing face, no
+   - **Only χ = 0 can be resolved (proved).** A law and a state are free of dissonance (no violated knot, no over-agreeing face, no
      even face) only on a surface of Euler characteristic 0. On the sphere learning can move the forced dissonance into the law but
      never remove it; at genus 2 or more every state over-agrees somewhere.
    - **The class-forced pair (proved).** On a torus whose Kasteleyn law is in a class no state satisfies (the Fano plane's torus and
-     the thin tori of even index), the least dissonance is one violated line and one face whose three corners agree: two opposite
+     the thin tori of even index), the least dissonance is one violated knot and one face whose three corners agree: two opposite
      charges that no change of state cancels.
-   - **Learning resolves it, only by winding (proved).** With the state fixed, one sign change at the violated line splits it into two
-     holes, and walking them along the lines into the over-agreeing face resolves everything, leaving no even face. Every process that
+   - **Learning resolves it, only by winding (proved).** With the state fixed, one sign change at the violated knot splits it into two
+     holes, and walking them along the knots into the over-agreeing face resolves everything, leaving no even face. Every process that
      resolves the pair, whatever the state does, changes the law by a cycle around a handle, into another class: learning carries the
-     class, two bits on a torus, and nothing local. Checked by 96,732 walks on the two Fano tori and 57 thin tori up to 40 points.
+     class, two bits on a torus, and nothing local. Checked by 96,732 walks on the two Fano tori and 57 thin tori up to 40 distinctions.
    - **Measured (computed).** The cheapest walk into each class costs exactly the smallest cycle of its class change (2 the short way
-     around a thin torus, about half its points the long way). A local rule that sees only the lines at a hole and an outside distance
+     around a thin torus, about half its distinctions the long way). A local rule that sees only the knots at a hole and an outside distance
      to the over-agreeing face resolved all 9,608 starts, against the pre-registered expectation: any resolving walk winds, so the
      winding is written in the state and the rule needs no plan. The sphere's local rule held one size past.
-   - **Reading.** For the owner's picture: a handle turns the point into a pair held apart by the shape of the space, and learning
-     can make it vanish only by going around. What learning keeps is which way it went, a memory held by the space's shape. On the
+   - **Reading.** For the owner's picture: a handle turns the point into a pair held apart by the handle, and learning
+     can make it vanish only by going around. What learning keeps is which way it went, a memory held by the handle. On the
      sphere learning only moved the dissonance; here it removes one that no change of behaviour can, and that lives in handles, as
      emergence does (question 9).
    - **Provenance.** Known with delta: in dimer language the classes are winding sectors (Kasteleyn's four Pfaffians) and a worm must
@@ -1331,35 +1337,35 @@ So holes come in two kinds:
    - **The question.** The local rule above was told the distance to the over-agreeing face by the experimenter. Can a signal that the
      law and the state supply themselves do the same?
    - **Yes (computed, pre-registered).** On the class-forced tori, a learner that sees its own moves one to three ahead, and one that
-     keeps the most states sharing the state's dissonance, resolve every run and beat random moves on every torus of at least 10 points:
-     at 40 points 12.9 and 17.9 to 19.3 steps, against 64.4 for random moves and 7.5 with the outside distance. One size past, to 46
-     points, the same.
+     keeps the most states sharing the state's dissonance, resolve every run and beat random moves on every torus of at least 10 distinctions:
+     at 40 distinctions 12.9 and 17.9 to 19.3 steps, against 64.4 for random moves and 7.5 with the outside distance. One size past, to 46
+     distinctions, the same.
    - **Opposite charges attract.** The count of states sharing the dissonance is 2 (the state and its complement) when the holes are
      far from the over-agreeing face and grows as they approach, unevenly at contact. On the sphere same charges repelled; here a hole
      and the face of opposite charge attract. A learner keeping the fewest such states never resolves on the Fano tori.
-   - **Reading.** The owner's "strength based on stability" has a native form: the point is drawn to its resolution by keeping the
-     world's options open, with no outside map.
+   - **Reading.** The owner's "strength based on stability" has a native form: the point is drawn to its resolution by keeping its
+     options open, with no outside map.
    - **Next (taken by `GROW-HANDLE-20261110-001`, below).** Learning that grows a handle (sub-goal B60; Payoff 3/3, Concreteness 2/3): a sphere's dissonance
-     cannot be resolved, and splicing a Fano atom across a 3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`), so
-     splice one at the violated line and learn ([decision note](../research/NATIVE-TARGET-20261110-001/native_target.md)).
+     cannot be resolved, and splicing a Fano piece across a 3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`), so
+     splice one at the violated knot and learn ([decision note](../research/NATIVE-TARGET-20261110-001/native_target.md)).
 
    **2026-11-10: learning that grows a handle** (`GROW-HANDLE-20261110-001`).
    - **The question.** A sphere's forced dissonance can be moved but never removed. Can growth add a handle where it sits, so that learning
      then removes it, and does it matter where the handle grows?
-   - **The grown space (proved).** Splicing a Fano atom (the Fano plane less a point, the knot's own uniform contradiction) at a line of a
+   - **The grown pattern (proved).** Splicing a Fano piece (the Fano pattern less a distinction, the knot's own uniform contradiction) at a knot of a
      knot sphere, by one of the three bijections that keep both rotations, makes a torus; the old law extends with no even face, uniquely
      up to gauge.
-   - **Growth alone does not resolve (computed, then proved from it).** In the grown class the atom acts exactly as the line it replaced,
+   - **Growth alone does not resolve (computed, then proved from it).** In the grown class the piece acts exactly as the knot it replaced,
      and in the other three classes it is transparent (540 grown tori, K_2 to K_5). So the grown law is the only class no state satisfies:
      growth changes what forces the dissonance, from the count to the class.
    - **Learning then resolves it, through the new handle (proved).** With the state fixed, learning removes the dissonance completely, and
-     every resolution changes a sign in the grown atom: going around the new handle is what makes the atom transparent.
-   - **Placement sets the cost (computed).** Grown at the dissonance, the violated line moves into the atom and learning resolves it in
-     3 sign changes on every sphere; grown farther away it costs more (on K_5 a mean of 5.7 one line away, 15.6 five away).
-   - **Reading.** For the owner's picture: growth and learning together remove what neither removes alone, most cheaply when the space
+     every resolution changes a sign in the grown piece: going around the new handle is what makes the piece transparent.
+   - **Placement sets the cost (computed).** Grown at the dissonance, the violated knot moves into the piece and learning resolves it in
+     3 sign changes on every sphere; grown farther away it costs more (on K_5 a mean of 5.7 one knot away, 15.6 five away).
+   - **Reading.** For the owner's picture: growth and learning together remove what neither removes alone, most cheaply when the pattern
      grows where the tension is.
-   - **Later (`OTHER-ATOMS-20261110-001`).** Any torus atom whose torus has a class no state satisfies, and is free at its point, behaves
-     the same way (proved); an atom whose torus satisfies every class is transparent in all four, and growing it deletes the line's constraint.
+   - **Later (`OTHER-ATOMS-20261110-001`).** Any torus piece whose torus has a class no state satisfies, and is free at its distinction, behaves
+     the same way (proved); a piece whose torus satisfies every class is transparent in all four, and growing it deletes the knot's constraint.
    - **Next (taken by `CHOOSE-RES-20261110-001`, below).** Choosing the resolution (backlog B62): which of the classes a pair can end in a native rule can choose
      ([decision note](../research/GROW-HANDLE-20261110-001/grow_handle.md)).
 
@@ -1372,33 +1378,33 @@ So holes come in two kinds:
      3,173 of 3,186 runs, every one on the thin tori, within 0.4 sign changes of the cheapest walk; the misses entered the target face in
      the wrong sheet.
    - **Without a target, how it moves decides (computed).** Random moves end in the short class in only 13% of runs on thin tori of at
-     least 20 points; sight of radius 3 in 63%; the outside distance in 96 to 99%. The pre-registered default was wrong.
+     least 20 distinctions; sight of radius 3 in 63%; the outside distance in 96 to 99%. The pre-registered default was wrong.
    - **Reading.** For the owner's picture: once there is a handle there is more than one resolution, a learner can pick one if it carries
      the choice, and the far one costs the handle's length.
    - **Next (taken by `GROW-STUCK-20261110-001`, below).** Grow where learning is stuck (backlog B68). Layers (sub-goal B54) became more concrete under the reading that an
-     atom is a pattern standing for one line ([decision note](../research/CHOOSE-RES-20261110-001/choose_res.md)).
+     piece is a pattern standing for one knot ([decision note](../research/CHOOSE-RES-20261110-001/choose_res.md)).
 
    **2026-11-10: grow where learning is stuck** (`GROW-STUCK-20261110-001`).
-   - **A floor on dissonance (proved).** Weighed as the count weighs it, violated lines plus over-agreement plus half the even faces is
+   - **A floor on dissonance (proved).** Weighed as the count weighs it, violated knots plus over-agreement plus half the even faces is
      at least half the absolute Euler characteristic, in every state of every law: 1 on a sphere, 0 on a torus, g − 1 at genus g. The
-     torus is the only shape that forces no dissonance.
-   - **One handle is exactly enough (proved).** Each Fano atom lowers χ by 2, so from a sphere one growth reaches the floor 0 and every
+     torus is the only drawing surface that forces no dissonance.
+   - **One handle is exactly enough (proved).** Each Fano piece lowers χ by 2, so from a sphere one growth reaches the floor 0 and every
      further one adds a unit no learning removes.
    - **The stuck learner (computed).** A learner that steps only when some sequence of at most r steps lowers the dissonance, and grows an
-     atom otherwise, is stuck at once on a sphere and grows at the dissonance. Seeing 3 steps ahead it grows once and resolves in 3 sign
+     piece otherwise, is stuck at once on a sphere and grows at the dissonance. Seeing 3 steps ahead it grows once and resolves in 3 sign
      changes; seeing 2 or fewer it cannot see what its new handle offers and keeps growing, never resolving (K_2 to K_6).
    - **Reading.** Growing where you are stuck works only if you look far enough ahead to use what you grew; growing at every impasse piles
      up permanent dissonance.
-   - **Next (taken by `ATOM-LAYERS-20261110-001`, below).** Layers through atoms (sub-goal B54) ([decision note](../research/GROW-STUCK-20261110-001/grow_stuck.md)).
+   - **Next (taken by `ATOM-LAYERS-20261110-001`, below).** Layers through pieces (sub-goal B54) ([decision note](../research/GROW-STUCK-20261110-001/grow_stuck.md)).
 
-   **2026-11-10: layers through atoms** (`ATOM-LAYERS-20261110-001`).
-   - **The question.** A Fano atom spliced in for a line acts from outside as that line: the sphere is an upper level, each atom a lower
-     level standing for one of its lines. With several atoms, where does the dissonance sit, and can learning move it between levels?
-   - **Down, yes (computed).** Growing an atom at the dissonance moves it into the atom, and learning resolves it there. Away from the
-     dissonance the resolution still passes through the atom, but a learner seeing 4 steps ahead cannot find it and stays stuck above.
-   - **Up or across, no (proved).** At genus 2 the remaining unit is one over-agreeing face with no violated line or even face, so no
+   **2026-11-10: layers through pieces** (`ATOM-LAYERS-20261110-001`).
+   - **The question.** A Fano piece spliced in for a knot acts from outside as that knot: the sphere is an upper level, each piece a lower
+     level standing for one of its knots. With several pieces, where does the dissonance sit, and can learning move it between levels?
+   - **Down, yes (computed).** Growing a piece at the dissonance moves it into the piece, and learning resolves it there. Away from the
+     dissonance the resolution still passes through the piece, but a learner seeing 4 steps ahead cannot find it and stays stuck above.
+   - **Up or across, no (proved).** At genus 2 the remaining unit is one over-agreeing face with no violated knot or even face, so no
      learning step exists there; a learner that holds the state still and never raises the dissonance cannot move it.
-   - **Each extra atom carries its own unit (computed).** A second atom holds one over-agreeing face from the moment it is grown, and that is
+   - **Each extra piece carries its own unit (computed).** A second piece holds one over-agreeing face from the moment it is grown, and that is
      where the dissonance ends.
    - **Reading.** The point flows down into named patterns and settles; to move it again something must raise the tension, a moving state
      or a learner that accepts a temporary rise.
@@ -1407,11 +1413,11 @@ So holes come in two kinds:
 
    **2026-11-10: let the state move while learning acts** (`MOVING-STATE-20261110-001`, the challenge of A26).
    - **The question.** Every learning result so far held the state still. Let the point move: between learning steps the state may flip
-     one point, never raising the dissonance.
+     one distinction, never raising the dissonance.
    - **A moving point frees learning (computed).** Where the fixed-state learner made no step, about half the runs now resolve or reach
-     the floor (23 of 50 with one atom away, 28 of 50 with two): the point walks to where learning can act.
-   - **A settled unit stays in its pattern (computed).** At the genus-2 floor the unit wanders under such flips, but only inside the atom
-     it settled in and at that atom's junction faces, never into the other atom or the upper level (exhaustive on K_2).
+     the floor (23 of 50 with one piece away, 28 of 50 with two): the point walks to where learning can act.
+   - **A settled unit stays in its pattern (computed).** At the genus-2 floor the unit wanders under such flips, but only inside the piece
+     it settled in and at that piece's junction faces, never into the other piece or the upper level (exhaustive on K_2).
    - **Verdict.** A26 Overturned as a limit on what learning reaches, by the rule frozen before the run; its fixed-state results stand as
      such, and the moving-state reading is A50.
    - **Reading.** Named patterns are traps at constant tension: a point can move inside one but not out of it.
@@ -1419,164 +1425,164 @@ So holes come in two kinds:
      ([decision note](../research/MOVING-STATE-20261110-001/moving_state.md)).
 
    **2026-11-10: a temporary rise** (`RISE-ESCAPE-20261110-001`).
-   - **The question.** Can a unit settled in an atom leave it if the dissonance may rise for a while?
+   - **The question.** Can a unit settled in a piece leave it if the dissonance may rise for a while?
    - **Not by moving the state (computed).** With the law fixed and the state allowed one unit above the floor for as long as it likes,
-     the unit never reaches the other atom or the upper level: exhaustively on five of K_2's components (up to 195,264 states each), and
+     the unit never reaches the other piece or the upper level: exhaustively on five of K_2's components (up to 195,264 states each), and
      to a cap of 200,000 states elsewhere. With the state fixed there is no learning step at the floor at all (proved).
-   - **Reading (unchecked).** Which atom holds the leftover may be fixed by what was learned, the law's class, so that only learning, at a
-     rise where violated lines appear, could move it.
-   - **Next (taken by `LAW-HOLDS-20261110-001`, below).** Does the law decide which atom holds the unit (backlog B79)
+   - **Reading (unchecked).** Which piece holds the leftover may be fixed by what was learned, the law's class, so that only learning, at a
+     rise where violated knots appear, could move it.
+   - **Next (taken by `LAW-HOLDS-20261110-001`, below).** Does the law decide which piece holds the unit (backlog B79)
      ([decision note](../research/RISE-ESCAPE-20261110-001/rise_escape.md)).
 
    **2026-11-10: the law decides where the leftover lives** (`LAW-HOLDS-20261110-001`).
-   - **Exact (SAT over every state).** On 15 genus-2 spaces the floor unit can sit only inside a Fano atom that still acts as its line,
-     or at that atom's junctions. Across all 16 sign classes: both atoms acting leaves no floor state (the sphere's contradiction
-     returns), one acting holds the unit, both transparent lets it sit in either atom and at the upper level when the atoms are apart.
-   - **Reading.** The leftover tension lives in whichever named pattern still stands for its line. Where it sits is a learned fact, not a
+   - **Exact (SAT over every state).** On 15 genus-2 drawn knot patterns the floor unit can sit only inside a Fano piece that still acts as its knot,
+     or at that piece's junctions. Across all 16 sign classes: both pieces acting leaves no floor state (the sphere's contradiction
+     returns), one acting holds the unit, both transparent lets it sit in either piece and at the upper level when the pieces are apart.
+   - **Reading.** The leftover tension lives in whichever named pattern still stands for its knot. Where it sits is a learned fact, not a
      fact about the point, so only learning can move it.
-   - **Next (taken by `LEARN-RISE-20261110-001`, below).** Learning at a rise (backlog B80): swap the two atoms' roles by learning, one unit above the floor
+   - **Next (taken by `LEARN-RISE-20261110-001`, below).** Learning at a rise (backlog B80): swap the two pieces' roles by learning, one unit above the floor
      ([decision note](../research/LAW-HOLDS-20261110-001/law_holds.md)).
 
    **2026-11-10: learning at a rise** (`LEARN-RISE-20261110-001`).
-   - **The question.** The leftover sits in whichever atom acts as its line. With the state moving and learning acting, one unit above
-     the floor, can it be carried to the other atom?
+   - **The question.** The leftover sits in whichever piece acts as its knot. With the state moving and learning acting, one unit above
+     the floor, can it be carried to the other piece?
    - **Yes, post hoc (computed).** The pre-registered breadth-first search ran out of room at about four moves. A targeted search over the
-     same moves, aimed at a law in which the other atom acts as its line, found paths from all 9 starts: 16 to 43 moves, 4 to 16 of them
-     learning steps. The atoms' roles swap, and the tension follows.
+     same moves, aimed at a law in which the other piece acts as its knot, found paths from all 9 starts: 16 to 43 moves, 4 to 16 of them
+     learning steps. The pieces' roles swap, and the tension follows.
    - **Reading.** The point and learning together move a pattern's tension: the state carries the dissonance around, learning rewrites
      which pattern stands for the contradiction, and the tension settles where learning puts it.
-   - **Next (taken by `ADDRESS-20261110-001`, below).** Learning chooses which atom holds the leftover (backlog B81), a learned address
+   - **Next (taken by `ADDRESS-20261110-001`, below).** Learning chooses which piece holds the leftover (backlog B81), a learned address
      ([decision note](../research/LEARN-RISE-20261110-001/learn_rise.md)).
 
    **2026-11-10: a learned address** (`ADDRESS-20261110-001`).
    - **The role swap confirmed.** On six K_3 starts not used before, a frozen prediction held: learning at a rise, with the state moving,
-     carried the leftover to the other atom from every one.
-   - **Learning writes an address (computed, pre-registered).** With three atoms and two leftover units, every pair of atoms was reached
-     as their holders, on all three line orbits of K_3; the named atoms end acting as their lines, the third transparent.
+     carried the leftover to the other piece from every one.
+   - **Learning writes an address (computed, pre-registered).** With three pieces and two leftover units, every pair of pieces was reached
+     as their holders, on all three knot orbits of K_3; the named pieces end acting as their knots, the third transparent.
    - **Reading.** The leftovers behave as a memory: written by learning, held by the law in every state, untouched by the point's own
      motion, and read off by where the tension sits.
    - **Next (taken by `READ-ADDRESS-20261110-001`, below).** Reading the address natively (backlog B85)
      ([decision note](../research/ADDRESS-20261110-001/address.md)).
 
    **2026-11-10: reading the address** (`READ-ADDRESS-20261110-001`).
-   - **Writing holds one size past (computed).** On K_4 with three atoms, the two leftovers were written into every pair on every line
+   - **Writing holds one size past (computed).** On K_4 with three pieces, the two leftovers were written into every pair on every knot
      orbit (15 of 15; 24 of 24 with K_3).
-   - **The law reads it, atom by atom (computed).** In 23 of 24 written configurations the holders are exactly the atoms whose own signs
-     make them act as their lines; the read needs no state and no census. The exception had one acting atom for two units.
+   - **The law reads it, piece by piece (computed).** In 23 of 24 written configurations the holders are exactly the pieces whose own signs
+     make them act as their knots; the read needs no state and no census. The exception had one acting piece for two units.
    - **A random state does not show it.** About one random state in six has its over-agreement in exactly the holder pair.
    - **Next (taken by `ADDRESS-STEER-20261110-001`, below).** Does the stored address steer later learning (backlog B86)
      ([decision note](../research/READ-ADDRESS-20261110-001/read_address.md)).
 
    **2026-11-10: the stored address steers later learning** (`ADDRESS-STEER-20261110-001`).
-   - **The rule (exact on 1,280 classes of 11 spaces).** If every atom acts as its line, no state satisfies every line; otherwise every
-     acting atom holds a unit of the floor dissonance and further units are free. Each atom's role is set by its own handle's class. The
-     earlier exception was a class with fewer acting atoms than units.
-   - **Four atoms (computed).** Every triple of four atoms was written as the holders on every line orbit of K_3 (12 of 12).
+   - **The rule (exact on 1,280 classes of 11 drawn knot patterns).** If every piece acts as its knot, no state satisfies every knot; otherwise every
+     acting piece holds a unit of the floor dissonance and further units are free. Each piece's role is set by its own handle's class. The
+     earlier exception was a class with fewer acting pieces than units.
+   - **Four pieces (computed).** Every triple of four pieces was written as the holders on every knot orbit of K_3 (12 of 12).
    - **Memory survives a fresh tension (computed).** After one random flip of the upper level a learner returned to the written acting
-     atoms in 240 of 240 runs, and after two or three in 463 of 480.
-   - **Reading.** Learning writes which patterns stand for their lines, the law keeps it, and a new disturbance settles back into it. All
+     pieces in 240 of 240 runs, and after two or three in 463 of 480.
+   - **Reading.** Learning writes which patterns stand for their knots, the law keeps it, and a new disturbance settles back into it. All
      on small cases.
-   - **Next.** Several addresses in sequence (B88, taken by `ADDRESS-SEQ-20261110-001`, below), then a proof of the atom rule (B87)
+   - **Next.** Several addresses in sequence (B88, taken by `ADDRESS-SEQ-20261110-001`, below), then a proof of the piece rule (B87)
      ([decision note](../research/ADDRESS-STEER-20261110-001/address_steer.md)).
 
    **2026-11-10: a rewritable address** (`ADDRESS-SEQ-20261110-001`).
-   - **Written in turn (computed).** 90 addresses written one after another on 14 spaces, from K_3 to K_5 and with three or four atoms,
+   - **Written in turn (computed).** 90 addresses written one after another on 14 drawn knot patterns, from K_3 to K_5 and with three or four pieces,
      each followed by a random disturbance: every write reached its target and every address was held, never reverting to the one before.
-   - **The unsettled returns explained (computed).** Of the 17 earlier runs that did not settle back, 7 lost an atom's bit through a
+   - **The unsettled returns explained (computed).** Of the 17 earlier runs that did not settle back, 7 lost a piece's bit through a
      learning step that wound through its handle, exactly as the rule allows, and 10 stopped one unit above the floor.
    - **Reading.** The learned network holds a register: written by learning, rewritten cleanly, robust to disturbance.
-   - **Next (taken by `ATOM-RULE-20261110-001`, below).** A proof of the atom rule (backlog B87)
+   - **Next (taken by `ATOM-RULE-20261110-001`, below).** A proof of the piece rule (backlog B87)
      ([decision note](../research/ADDRESS-SEQ-20261110-001/address_seq.md)).
 
-   **2026-11-10: the atom rule proved** (`ATOM-RULE-20261110-001`).
-   - **The theorem (computer-assisted).** On every octahedral knot sphere with separated Fano atoms, each atom acts as its line in exactly
-     one of the four classes of its own handle, independently of the others; if every atom acts, no state satisfies every line; otherwise
-     every acting atom holds a unit of the floor dissonance.
-   - **The proof.** Each atom's handle is a direct summand of the homology and its role depends only on its own signs (by hand); a finite
-     local check shows that in the acting class no state of the atom's neighbourhood satisfies its lines with at most one agreeing corner
-     at each of its faces (2,700 splices); and line neighbourhoods come in four types over K_2 to K_8, none new beyond K_3, because the sphere
+   **2026-11-10: the piece rule proved** (`ATOM-RULE-20261110-001`).
+   - **The theorem (computer-assisted).** On every octahedral knot sphere with separated Fano pieces, each piece acts as its knot in exactly
+     one of the four classes of its own handle, independently of the others; if every piece acts, no state satisfies every knot; otherwise
+     every acting piece holds a unit of the floor dissonance.
+   - **The proof.** Each piece's handle is a direct summand of the homology and its role depends only on its own signs (by hand); a finite
+     local check shows that in the acting class no state of the piece's neighbourhood satisfies its knots with at most one agreeing corner
+     at each of its faces (2,700 splices); and knot neighbourhoods come in four types over K_2 to K_8, none new beyond K_3, because the sphere
      is the triangular lattice away from six corners.
-   - **Reading.** Which patterns hold the tension is a rule of the shape, not an accident of the small cases.
-   - **Later (`OTHER-ATOMS-20261110-001`).** The rule holds by hand for every class-forced free torus atom on any Kasteleyn host, atoms
-     adjacent or not, so neither the Fano plane nor separation nor the octahedral sphere is needed.
+   - **Reading.** Which patterns hold the tension is a rule, not an accident of the small cases.
+   - **Later (`OTHER-ATOMS-20261110-001`).** The rule holds by hand for every class-forced free torus piece on any Kasteleyn host, pieces
+     adjacent or not, so neither the Fano pattern nor separation nor the octahedral sphere is needed.
    - **Next (taken by `LEARN-NOTE-20261110-001`).** A note on the learning line (backlog B95), written up as
-     [the learning line](../research/LEARN-NOTE-20261110-001/learning_line.md); its next step, other atoms (backlog B97), was taken by
+     [the learning line](../research/LEARN-NOTE-20261110-001/learning_line.md); its next step, other pieces (backlog B97), was taken by
      `OTHER-ATOMS-20261110-001`, below ([decision note](../research/ATOM-RULE-20261110-001/atom_rule.md)).
 
    **2026-11-10: any class-forced handle remembers** (`OTHER-ATOMS-20261110-001`).
-   - **The question.** Backlog B97, the challenge of A48: every learning result so far grew the Fano atom. Does the memory need the Fano
-     plane?
-   - **The theorem (by hand).** A torus atom, a torus knot space less a point, grown at a line of any orientable knot space with a
-     Kasteleyn law, allows on its three outer points what its torus allows with that point split in three: the replaced line's six
-     patterns in a class where the torus has no satisfying state, all eight where it has one, provided the torus is free at the point
-     (flipping any one of the point's sides leaves a satisfiable law). Where it acts it holds a unit. So the atom rule holds for such atoms
+   - **The question.** Backlog B97, the challenge of A48: every learning result so far grew the Fano piece. Does the memory need the Fano
+     pattern?
+   - **The theorem (by hand).** A torus piece, a torus drawn knot pattern less a distinction, grown at a knot of any orientable drawn knot pattern with a
+     Kasteleyn law, allows on its three outer distinctions what its torus allows with that distinction split in three: the replaced knot's six
+     patterns in a class where the torus has no satisfying state, all eight where it has one, provided the torus is free at the distinction
+     (flipping any one of the distinction's sides leaves a satisfiable law). Where it acts it holds a unit. So the piece rule holds for such pieces
      on any host, adjacent ones included, with no local check.
-   - **Which tori (computed).** Every lattice torus to 30 points is free. The ones with a class no state satisfies are the Fano torus and
-     the thin tori of even index, so twenty atoms up to 40 points remember, the smallest with four points; every other atom is transparent
-     in every class. Thin-torus atoms wrote and held addresses as the Fano atom does.
+   - **Which tori (computed).** Every lattice torus to 30 distinctions is free. The ones with a class no state satisfies are the Fano torus and
+     the thin tori of even index, so twenty pieces up to 40 distinctions remember, the smallest with four distinctions; every other piece is transparent
+     in every class. Thin-torus pieces wrote and held addresses as the Fano piece does.
    - **Reading.** A handle remembers because its torus has a sign class that no state can satisfy: the bit lives in the class.
-   - **Next (taken by `NEST-ATOMS-20261110-001`, below).** Atoms within atoms (backlog B104): a sphere carrying two atoms, less a
-     point, as one atom ([decision note](../research/OTHER-ATOMS-20261110-001/other_atoms.md)).
+   - **Next (taken by `NEST-ATOMS-20261110-001`, below).** Pieces within pieces (backlog B104): a sphere carrying two pieces, less a
+     distinction, as one piece ([decision note](../research/OTHER-ATOMS-20261110-001/other_atoms.md)).
 
-   **2026-11-10: atoms within atoms** (`NEST-ATOMS-20261110-001`).
-   - **The question.** Backlog B104: is a knot sphere that already carries atoms, less a point, an atom of the next level?
-   - **The theorem (by hand).** Yes. If the sphere has a state violating any one chosen line and no other, and its atoms each act in
-     exactly one class and are free, the composite acts as its line exactly where every atom inside acts, whichever point is removed, and
-     it is again an atom of the same kind, so composites nest to any depth. A composite of genus g holds g − 1 units, g where it acts.
-   - **Computed.** The AND held at 274 removed points of seven composites, exactly on 576 classes, and 11 of 12 two-level addresses
+   **2026-11-10: pieces within pieces** (`NEST-ATOMS-20261110-001`).
+   - **The question.** Backlog B104: is a knot sphere that already carries pieces, less a distinction, a piece of the next level?
+   - **The theorem (by hand).** Yes. If the sphere has a state violating any one chosen knot and no other, and its pieces each act in
+     exactly one class and are free, the composite acts as its knot exactly where every piece inside acts, whichever distinction is removed, and
+     it is again a piece of the same kind, so composites nest to any depth. A composite of genus g holds g − 1 units, g where it acts.
+   - **Computed.** The AND held at 274 removed distinctions of seven composites, exactly on 576 classes, and 11 of 12 two-level addresses
      written by learning held after a disturbance, every outer address with them.
    - **Reading.** For the owner's layers: a group of patterns cut off by three sides reads from outside as one pattern, standing for its
-     line only when every pattern inside does. Each level sees the one below as an AND; acting only adds constraints, so no host makes a
+     knot only when every pattern inside does. Each level sees the one below as an AND; acting only adds constraints, so no host makes a
      level read anything but a monotone function of the bits below.
-   - **Next (taken by `MANY-POINTS-20261110-001`, below).** Many points at once (backlog B3); in line, whether any host gives an OR
+   - **Next (taken by `MANY-POINTS-20261110-001`, below).** Many distinctions at once (backlog B3); in knot, whether any host gives an OR
      (backlog B109) ([decision note](../research/NEST-ATOMS-20261110-001/nest_atoms.md)).
 
-   **2026-11-10: many points at once** (`MANY-POINTS-20261110-001`).
-   - **The question.** Backlog B3, the owner's parallel picture: can several points of dissonance move through the layered memory with
+   **2026-11-10: many distinctions at once** (`MANY-POINTS-20261110-001`).
+   - **The question.** Backlog B3, the owner's parallel picture: can several distinctions of dissonance move through the layered memory with
      no scheduler choosing an order, and where can units of the floor dissonance sit together?
    - **Where units sit (proved, checked exactly).** With two composites and three floor units, no region holds three, the composites
      never act together, and an acting composite holds exactly two, one in each leaf; every placement the rule allows occurs.
-   - **Points at once (computed).** Two disturbances in different composites learned away independently in every order of their moves,
+   - **Distinctions at once (computed).** Two disturbances in different composites learned away independently in every order of their moves,
      with the address kept, in all 320 sampled pairs. Nearby pairs interacted, mostly by cancelling; after the run it was seen that only
-     pairs sharing a line did.
-   - **Reading.** For the owner's "parallelized" picture: points that do not share a line can be updated in any order, and the memory
-     keeps what it was told; points on one line meet.
-   - **Corrected (`COMPOSITE-FN-20261110-001C`).** Not every such pair: one of 1,200 fresh distant pairs met, because one point's repair
-     reached a line through the other. Points combine in any order when what each one and its repair touch is disjoint (proved).
+     pairs sharing a knot did.
+   - **Reading.** For the owner's "parallelized" picture: distinctions that do not share a knot can be updated in any order, and the memory
+     keeps what it was told; distinctions on one knot meet.
+   - **Corrected (`COMPOSITE-FN-20261110-001C`).** Not every such pair: one of 1,200 fresh distant pairs met, because one distinction's repair
+     reached a knot through the other. Distinctions combine in any order when what each one and its repair touch is disjoint (proved).
    - **Next (taken by `COMPOSITE-FN-20261110-001`, below).** Which functions a composite computes (backlog B109)
      ([decision note](../research/MANY-POINTS-20261110-001/many_points.md)).
 
    **2026-11-10: the layers only conjoin** (`COMPOSITE-FN-20261110-001`).
    - **The question.** Backlog B109: can some host make a composite read an OR, or anything but the AND of the bits inside it?
-   - **The theorem (by hand).** A composite acts where its host, with its transparent atoms' lines deleted, has no satisfying state, so
-     it computes an OR of ANDs over the host's minimal unsatisfiable sets of lines. On a knot sphere every line can be violated alone: any
-     set of lines touches at least two more faces than it has lines, and Hall's theorem does the rest. Growth keeps this, so over every
+   - **The theorem (by hand).** A composite acts where its host, with its transparent pieces' knots deleted, has no satisfying state, so
+     it computes an OR of ANDs over the host's minimal unsatisfiable sets of knots. On a knot sphere every knot can be violated alone: any
+     set of knots touches at least two more faces than it has knots, and Hall's theorem does the rest. Growth keeps this, so over every
      host built from knot spheres and class-forced lattice tori, a composite computes exactly the AND.
    - **Computed.** Seven branched covers, the frozen search outside that class, had no unsatisfiable class at all.
-   - **Reading.** The layers say "all of these": every pattern the program can grow is held together by every one of its lines.
-   - **Next (taken by `NATIVE-ATOM-20261110-001`, below).** Which atom a growth law grows (backlog B106)
+   - **Reading.** The layers say "all of these": every pattern the program can grow is held together by every one of its knots.
+   - **Next (taken by `NATIVE-ATOM-20261110-001`, below).** Which piece a growth law grows (backlog B106)
      ([decision note](../research/COMPOSITE-FN-20261110-001/composite_fn.md)).
 
    **2026-11-10: which handle grows a memory by itself** (`NATIVE-ATOM-20261110-001`).
    - **The question.** Backlog B106: can a growth rule with nothing designed in grow a handle that remembers where a dissonance sits?
-   - **The answer (by hand).** A rule that splices the same torus at every violated line, with the same signs on every line, grows a
-     remembering handle only if the torus is the Fano plane and the signs are constant: the plain law contradicts itself only on the Fano
-     plane (`UNIFORM-FANO-20261107-001`). Every other class-forced handle grows open and lets the dissonance go.
+   - **The answer (by hand).** A rule that splices the same torus at every violated knot, with the same signs on every knot, grows a
+     remembering handle only if the torus carries the Fano pattern and the signs are constant: the plain law contradicts itself only on the Fano
+     pattern (`UNIFORM-FANO-20261107-001`). Every other class-forced handle grows open and lets the dissonance go.
    - **Computed.** All 1,256 uniform laws on 157 lattice tori agree; the growth was checked exactly on K_2 and K_3; and learning wrote and
      held 9 of 9 addresses into two open thin handles.
-   - **Reading.** The Fano plane is the one handle a uniform rule can grow closed; any other handle is memory in waiting, which learning
+   - **Reading.** The Fano pattern's torus is the one handle a uniform rule can grow closed; any other handle is memory in waiting, which learning
      closes.
    - **Next (taken by `NAME-LAYERS-20261110-001`, below).** Layers through a naming knot
      ([decision note](../research/NATIVE-ATOM-20261110-001/native_atom.md)).
 
    **2026-11-10: two ways for one level to speak to the next** (`NAME-LAYERS-20261110-001`).
    - **The question.** A parity name (a variable named by the parity of two below) and a three-edge cut (a group sealed off by three
-     sides): one kind of layer, or two? And can a point cross levels through each?
-   - **The answer (by hand).** Two. Through a cut a contradiction below becomes a constraint above, so a point crosses levels. Through a
+     sides): one kind of layer, or two? And can a distinction cross levels through each?
+   - **The answer (by hand).** Two. Through a cut a contradiction below becomes a constraint above, so a distinction crosses levels. Through a
      name it cannot: the level below keeps its own contradiction, and so does the level above.
    - **Computed.** Names carry something cuts cannot: correlations of the states below that change with the law below, down to a single
      excluded pattern, a clause.
-   - **Reading.** A cut tells the level above whether everything inside holds; a name tells it how the parts line up. A network with
+   - **Reading.** A cut tells the level above whether everything inside holds; a name tells it how the parts match. A network with
      both may compute more than conjunctions, which is the next phase's first question (sub-goal B118).
    - **Next (taken by `GATES-20261110-001`, below).** A learned network that computes, sub-goal B118
      ([decision note](../research/NAME-LAYERS-20261110-001/name_layers.md)).
@@ -1608,7 +1614,7 @@ So holes come in two kinds:
      "not this", or is every reading monotone?
    - **Proved.** A reading that looks only at how each pattern ended up, its winding, says yes whenever more patterns hold their
      contradiction, and cannot tell apart two windings that hold none: where a network allows one such winding, it allows the other once
-     the pattern's inner points are flipped to match.
+     the pattern's inner distinctions are flipped to match.
    - **Computed.** Fix one exact way of writing each winding, and a network does say "not this" for each of three patterns; write the
      same winding another way and it stops. The earlier readings against two landmarks were readings of that fixed way of writing.
    - **Reading.** The layered memory can say "all of these" and "any of these" about what it stores, and nothing more. To say "not this"
@@ -1619,25 +1625,25 @@ So holes come in two kinds:
    **2026-11-10: the memory writes itself** (`NATIVE-WRITE-20261110-001`).
    - **The question.** Backlog B119: every stored pattern so far was written by a search told exactly what to aim for. Can a learner
      that feels only its own tension, and is told only which patterns should hold, write them?
-   - **Proved.** A pattern that holds its contradiction keeps some tension in it in every state, however the points are set. So a
-     learner can test whether a pattern holds by letting its points wander without learning: if the tension there ever goes away, the
+   - **Proved.** A pattern that holds its contradiction keeps some tension in it in every state, however the distinctions are set. So a
+     learner can test whether a pattern holds by letting its distinctions wander without learning: if the tension there ever goes away, the
      pattern does not hold.
    - **Computed.** A learner that runs this test, and changes the law only in the patterns whose answer is wrong, wrote 100 of 100
      requested words exactly on five memories of up to six patterns, and every word survived a disturbance. Reading the tension at a
      single moment instead fooled it 84 times in 100: a loose bit of tension can sit in a pattern that does not hold.
    - **Reading.** A stored 1 is a tension the point cannot walk away. The point both writes the memory and reads it, and no one tells
      it the configuration to aim for.
-   - **Next (taken by `IN-OUT-20261110-001`, below).** Inputs and outputs (backlog B120): learning from examples, with the world holding
-     some points ([decision note](../research/NATIVE-WRITE-20261110-001/native_write.md)).
+   - **Next (taken by `IN-OUT-20261110-001`, below).** Inputs and outputs (backlog B120): learning from examples, with the outside holding
+     some distinctions ([decision note](../research/NATIVE-WRITE-20261110-001/native_write.md)).
 
    **2026-11-10: a held knot is a gate** (`IN-OUT-20261110-001`).
-   - **The question.** Backlog B120: let the world hold two points of a stored pattern and read the third. What can the memory compute
+   - **The question.** Backlog B120: let the outside hold two distinctions of a stored pattern and read the third. What can the memory compute
      this way, and can it learn a chosen answer from examples?
-   - **Proved.** Flipping every point at once never changes the tension, so whatever the memory answers for some inputs, it answers the
-     opposite for the opposite inputs. That rules out "both", "either" and "exactly one" of two inputs. Flipping one point's frame
-     negates that input or the answer, so the world's held inputs give the memory the frame it lacked for "not this".
-   - **Computed.** A pattern that holds its contradiction is a gate: when the two held points agree the third is forced to their
-     opposite, otherwise it is free. A learner that feels only its own tension, taught by the world holding the answer it wants, learned
+   - **Proved.** Flipping every distinction at once never changes the tension, so whatever the memory answers for some inputs, it answers the
+     opposite for the opposite inputs. That rules out "both", "either" and "exactly one" of two inputs. Flipping one distinction's frame
+     negates that input or the answer, so the inputs the outside holds give the memory the frame it lacked for "not this".
+   - **Computed.** A pattern that holds its contradiction is a gate: when the two held distinctions agree the third is forced to their
+     opposite, otherwise it is free. A learner that feels only its own tension, taught by the outside holding the answer it wants, learned
      such gates from four examples at 53 of 56 single patterns and switched them off, but almost never through a pattern of patterns.
    - **Corrected (`CREDIT-PIN-20261110-001`).** That failure was mostly a stall in the learner; fixed, it reached gates through a pattern
      of patterns about half the time, though at many times the cost.
@@ -1648,11 +1654,11 @@ So holes come in two kinds:
      (backlog B133) ([decision note](../research/IN-OUT-20261110-001/in_out.md)).
 
    **2026-11-10: the memory feels which knots hold** (`CREDIT-PIN-20261110-001`).
-   - **The question.** Backlog B132: can the tension a holding knot keeps, which the points cannot walk away, guide the learner to the
+   - **The question.** Backlog B132: can the tension a holding knot keeps, which the distinctions cannot walk away, guide the learner to the
      knots inside a knot that the examples cannot point to?
    - **Computed, first.** The learner had stalled, not failed: fixed, it learned gates through a pattern of patterns 10 times in 16, by
      trial, at about thirty times the cost of a single pattern.
-   - **Computed, then.** Tension that a wandering of the points never clears sat in a holding knot every one of 4,473 times. Keeping
+   - **Computed, then.** Tension that a wandering of the distinctions never clears sat in a holding knot every one of 4,473 times. Keeping
      those parts fixed made the inner knots faster to find, but the learner did no better on the whole, because its check of an
      answer, holding the inputs and wandering, sometimes misses the wrong answer and says yes too soon.
    - **Reading.** The memory can feel what it stores without being told; what it lacks is a check that never says yes too soon.
@@ -1669,19 +1675,19 @@ So holes come in two kinds:
    - **Reading.** With that check, a learner that feels only its own tension, and keeps the parts whose tension it cannot walk away,
      learned every gate it was asked for, inside patterns of patterns too.
    - **Next (taken by `THREE-IN-20261110-001`, below).** Three held inputs (backlog B133): self-duality allows majority and parity, the
-     strongest test of what the held points let the memory compute ([decision note](../research/STURDY-PROBE-20261110-001/sturdy_probe.md)).
+     strongest test of what the held distinctions let the memory compute ([decision note](../research/STURDY-PROBE-20261110-001/sturdy_probe.md)).
 
-   **2026-11-10: three held points never count or vote** (`THREE-IN-20261110-001`).
-   - **The question.** Backlog B133: with two held points the memory can only gate, copy or negate. With three, "opposite inputs give
+   **2026-11-10: three held distinctions never count or vote** (`THREE-IN-20261110-001`).
+   - **The question.** Backlog B133: with two held distinctions the memory can only gate, copy or negate. With three, "opposite inputs give
      the opposite answer" still allows a vote (majority) or a count (parity). Does a learned knot compute either?
-   - **Exact.** Reading every way of holding three points around a stored pattern, on every law of six spaces, nearly three million
+   - **Exact.** Reading every way of holding three distinctions around a stored pattern, on every law of six drawn knot patterns, nearly three million
      ways: never a vote, never a count, and never an answer that one input pushes both up and down. The only full answers follow one
      input and ignore the other two.
    - **Computed.** A learner asked for a count or a vote never pretended it had one.
-   - **Reading.** What the world holds reaches a learned knot's answer only one way round. Plain logic of this kind can count with hidden
-     helpers, so the limit belongs to the knot space; whether it holds everywhere is open.
-   - **Corrected (`UNATE-20261111-001`).** It does not hold everywhere: a small knot space with many handles counts three held points
-     exactly. The limit belongs to the learned memories' interfaces, not to knot spaces.
+   - **Reading.** What the outside holds reaches a learned knot's answer only one way round. Plain logic of this kind can count with hidden
+     helpers, so the limit belongs to the drawn knot pattern; whether it holds everywhere is open.
+   - **Corrected (`UNATE-20261111-001`).** It does not hold everywhere: a small drawn knot pattern with many handles counts three held distinctions
+     exactly. The limit belongs to the learned memories' interfaces, not to drawn knot patterns.
    - **Next (taken by `DEEP-MEM-20261111-001`, below, when the line resumed).** Deeper memories from examples (backlog B135)
      ([decision note](../research/THREE-IN-20261110-001/three_in.md)).
 
@@ -1692,48 +1698,48 @@ So holes come in two kinds:
      as quick to reach as one at the surface; a second pattern beside the first cost about eighteen times the time; a third cost no more.
    - **Reading.** Keeping the parts whose tension cannot be walked away lets the learner build a pattern of patterns one part at a time;
      what still limits the memory is what it can compute: every answer it gives is a gate.
-   - **Next (taken by `UNATE-20261111-001`, below).** Are maps of held points unate (backlog B136): whether "never counts, never votes" is
+   - **Next (taken by `UNATE-20261111-001`, below).** Are maps of held distinctions unate (backlog B136): whether "never counts, never votes" is
      a theorem ([decision note](../research/DEEP-MEM-20261111-001/deep_mem.md)).
 
    **2026-11-11: knots can count** (`UNATE-20261111-001`).
-   - **The question.** Backlog B136: the memories never counted or voted. Is that true of every knot space?
-   - **No (exact).** Eight points tied by eight knots on a surface with four handles count exactly: hold any three, and a fourth is forced
-     to their parity, every time. Small knot spaces vote (majority) often.
+   - **The question.** Backlog B136: the memories never counted or voted. Is that true of every drawn knot pattern?
+   - **No (exact).** Eight distinctions tied by eight knots on a surface with four handles count exactly: hold any three, and a fourth is forced
+     to their parity, every time. Small drawn knot patterns vote (majority) often.
    - **Reading.** The memories never count because of where their knots sit, each pattern of tension in its own handle, not because knots
-     cannot. Counting needs many handles close together, crossings that a flat sheet cannot make.
-   - **Next (taken by `PARITY-NEEDS-20261111-001`, below).** What a knot space needs to count (backlog B147), then whether a learned memory
+     cannot. Counting needs many handles close together, crossings that a drawing on a sphere cannot make.
+   - **Next (taken by `PARITY-NEEDS-20261111-001`, below).** What a drawn knot pattern needs to count (backlog B147), then whether a learned memory
      can grow such a place (sub-goal B146) ([decision note](../research/UNATE-20261111-001/unate.md)).
 
    **2026-11-11: one handle is enough to count** (`PARITY-NEEDS-20261111-001`).
    - **The question.** Backlog B147: how many handles does counting need?
-   - **Exact.** One. A ring of eight points on a torus, wound into its tightest pattern, forces a fourth point to the parity of any three
-     held ones; sixteen small tori do it, always in their tightest pattern. The first counting space, checked again by fresh code with the
+   - **Exact.** One. A knot pattern of eight distinctions drawn on a torus, wound into its tightest winding, forces a fourth distinction to the parity of any three
+     held ones; sixteen small tori do it, always in their tightest pattern. The first counting pattern, checked again by fresh code with the
      canonical knot test, holds up.
-   - **Reading.** A flat sheet cannot count unless every hard problem is easy; one handle suffices. The memories' own atoms are tori too, so
-     the question is whether learning can wind one into its tightest pattern with the held points inside it.
+   - **Reading.** A pattern drawn on a sphere cannot count unless every hard problem is easy; one handle suffices. The memories' own pieces are tori too, so
+     the question is whether learning can wind one into its tightest pattern with the held distinctions inside it.
    - **Next (taken by `LEARN-PARITY-20261111-001`, below).** A learned memory that computes parity (sub-goal B146)
      ([decision note](../research/PARITY-NEEDS-20261111-001/parity_needs.md)).
 
    **2026-11-11: the memory learns to count** (`LEARN-PARITY-20261111-001`).
-   - **The question.** Sub-goal B146: can the learner, feeling only its own tension and taught by the world holding the answers, wind a ring
-     into the pattern that counts, and keep it there?
-   - **Computed.** Every time: 20 runs of 20, on the ring alone and grown inside a larger memory, it learned the parity of three held
-     points from eight examples, kept it when shaken, turned it into its opposite and back.
+   - **The question.** Sub-goal B146: can the learner, feeling only its own tension and taught by the outside holding the answers, wind a torus
+     piece into the winding that counts, and keep it there?
+   - **Computed.** Every time: 20 runs of 20, on the torus alone and grown inside a larger memory, it learned the parity of three held
+     distinctions from eight examples, kept it when shaken, turned it into its opposite and back.
    - **Reading.** The memory is no longer limited to "all of these", "any of these" and gates: it counts. What it stores is still which
-     way the ring is wound; counting is what that winding does to points held inside it.
-   - **Next (taken by `PARITY-FIVE-20261111-001`, below).** Whether one ring counts more points (backlog B149), and whether rings can be
+     way the torus is wound; counting is what that winding does to distinctions held inside it.
+   - **Next (taken by `PARITY-FIVE-20261111-001`, below).** Whether one torus counts more distinctions (backlog B149), and whether tori can be
      wired into larger functions (sub-goal B148) ([decision note](../research/LEARN-PARITY-20261111-001/learn_parity.md)).
 
-   **2026-11-11: one ring counts three, and two rings go quiet** (`PARITY-FIVE-20261111-001`).
-   - **The question.** Backlog B149: can one ring count five held points into a sixth? (An even number can never be counted: flipping
-     every point always flips the read point, but it leaves the parity of an even number of held points unchanged.)
-   - **Exact.** Not among the 421 lattice rings of up to 24 points, in any winding; only rings of 8 to 18 points count even three. This
+   **2026-11-11: one torus counts three, and two go quiet** (`PARITY-FIVE-20261111-001`).
+   - **The question.** Backlog B149: can one torus count five held distinctions into a sixth? (An even number can never be counted: flipping
+     every distinction always flips the read distinction, but it leaves the parity of an even number of held distinctions unchanged.)
+   - **Exact.** Not among the 421 lattice tori of up to 24 distinctions, in any winding; only tori of 8 to 18 distinctions count even three. This
      is the range searched, not a limit on what one handle can do.
-   - **Two rings on one sphere count nothing.** One counting ring grown on the knot sphere ties six of the sphere's points into a wire
-     that carries its count. Growing a second ring at the sphere's other line unties that wire: no point is forced by any others in any
+   - **Two tori on one sphere count nothing.** One counting torus piece grown on the knot sphere ties six of the sphere's distinctions into a
+     wire that carries its count. Growing a second torus piece at the sphere's other knot unties that wire: no distinction is forced by any others in any
      winding (exact; the wire was found after the run).
-   - **Reading.** To count more, rings must be wired together, and the wire has to survive the second ring.
-   - **Next.** A host where two counting rings stay wired (sub-goal B148's first step), awaiting a go-ahead
+   - **Reading.** To count more, tori must be wired together, and the wire has to survive the second torus.
+   - **Next.** A host where two counting tori stay wired (sub-goal B148's first step), awaiting a go-ahead
      ([decision note](../research/PARITY-FIVE-20261111-001/parity_five.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).

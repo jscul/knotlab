@@ -33,9 +33,12 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   piece; the points and lines of a knot pattern are its distinctions and
   knots; a board's places are cells; a named face is a declared cycle; the 34
   knots come in five classes.
-- Lesson 3.3 is now "The free complex of a system" and lesson 6.3 "Counting
-  on classical 3-manifolds", which says it reports a result about classical
-  objects. Knot patterns, bases and two-fold weaves are introduced in lesson
+- The owner's word "shape" is kept only in his own words. For the program's
+  own objects the guide says meeting pattern: which knots share which
+  distinctions, with their rules left out (the owner chose the word on 11
+  November). Lesson 1.7 is now "What rules make", lesson 3.3 "The free complex
+  of a system" and lesson 6.3 "Counting on classical 3-manifolds", which says
+  it reports a result about classical objects. Knot patterns, bases and two-fold weaves are introduced in lesson
   2.1, after knots.
 - Unchanged: every claim, label, number and evidence link. For records that
   still use the earlier words, the glossary's table "One word, one meaning"

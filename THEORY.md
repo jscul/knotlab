@@ -826,9 +826,9 @@ What the record leaves open.
 
 **Open**
 
-Which uniform, local law, not written on a space in advance, gives a shape, in
-the owner's sense of a structure rules make, that looks like a space of low
-dimension, with geometry as well as topology? Native laws found so far fix
+Which uniform, local law, not written on a space in advance, gives a meeting
+pattern of knots that looks like a space of low dimension, with geometry as
+well as topology? Native laws found so far fix
 topology but neither orientation nor scale, and see a drawn three-manifold
 only through hubs.
 

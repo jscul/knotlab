@@ -103,8 +103,8 @@ every knot or contact claim.
 
 These are numbered as in `docs/KNOT_INTUITION.md`:
 - **Space from a law (9).** Which uniform, local law, not written on a space
-  in advance, gives a shape, in the owner's sense of a structure rules make,
-  that looks like a low-dimensional space? This question is shared with causal
+  in advance, gives a meeting pattern of knots that looks like a
+  low-dimensional space? This question is shared with causal
   sets, quantum graphity and hypergraph rewriting. On declared lattices, the
   global emergence of not-all-equal patterns is critical exactly where the
   drawn lattice's bond threshold equals the

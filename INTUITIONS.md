@@ -57,7 +57,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [1.4 The picture](#14-the-picture)
   - [1.5 Reading A, B → c](#15-reading-a-b--c)
   - [1.6 Forgetting a variable](#16-forgetting-a-variable)
-  - [1.7 What a shape is](#17-what-a-shape-is)
+  - [1.7 What rules make](#17-what-rules-make)
 - [Chapter 2. The knot test](#chapter-2-the-knot-test)
   - [2.1 The knot test](#21-the-knot-test)
   - [2.2 Knots on the cube](#22-knots-on-the-cube)
@@ -91,7 +91,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 Everything later is built from bits and from rules about them. This chapter
 sets up that vocabulary and its notation, reads the Game of Life as such rules,
 states the picture the program starts from, reads the smallest rule that binds
-two loops, and ends with what the guide means by a shape.
+two loops, and ends with what rules make.
 
 ### 1.1 Distinctions and states
 
@@ -436,23 +436,25 @@ w = x1 ⊕ x2 and w = x3 ⊕ x4. Forgetting w leaves exactly the states with
 x1 ⊕ x2 = x3 ⊕ x4, which is the parity x1 ⊕ x2 ⊕ x3 ⊕ x4 = 0. Lesson 3.2 uses
 the same device to bind any number of loops with three-place rules.
 
-### 1.7 What a shape is
+### 1.7 What rules make
 
-**The word.** In the owner's usage, which this guide adopts, a shape is any
-structure that rules make. In the owner's words (8 November 2026): "things like
+**The word.** The owner's word for any structure that rules make is "shape".
+In his words (8 November 2026): "things like
 triangles/lines are essentially shapes, and they can run on forever. You can
 have an infinitely large circle, and different infinity size circles as well.
 Same thing with human minds. [W]e're essentially just a logical shape, or a
 pattern that repeats as consciousness in other humans. Our genome is a shape
-just like it."
+just like it." For the program's own objects the guide does not use the word:
+since 11 November 2026 it says **meeting pattern** for which knots share which
+distinctions (lesson 2.1), and it keeps "shape" in the owner's own words only.
 
-**Shape or pattern.** "People refer to these as 'patterns'. They are, but it's
+**More than a pattern.** "People refer to these as 'patterns'. They are, but it's
 missing the root of it. Saying that these 'emergent structures' are shapes
 allows us to understand them in the context of logic, from which we can create
-shapes. They are rules, and rules within rules." So a shape is a pattern
-together with the rules that make it. A glider is a pattern on Life's board; as
-a shape it is the glider together with the rule that carries it along (lesson
-1.3).
+shapes. They are rules, and rules within rules." So, in the owner's sense, a
+"shape" is a pattern together with the rules that make it. A glider is a
+pattern on Life's board; as a "shape" it is the glider together with the rule
+that carries it along (lesson 1.3).
 
 **Rules within rules.** Naming a pattern gives it a new variable, a witness,
 and the naming is itself a three-place rule (lessons 1.6 and 3.2), so rules
@@ -461,9 +463,9 @@ one three-place law, towers of patterns of patterns keep only parity: every
 other law reaches the free relation, which constrains nothing, within three
 levels ([GEOMETRY-LAW-20261029-001](research/GEOMETRY-LAW-20261029-001/geometry_from_a_law.md)).
 
-**Shapes that run on forever.** In the owner's words, a line has no end and a
-circle can be as large as you like. The record has a shape of this kind built
-with nothing drawn: a rule that grows only at knots holding two loose ends grows
+**Structures that run on forever.** In the owner's words, a line has no end
+and a circle can be as large as you like. The record has a meeting pattern of
+this kind built with nothing drawn: a rule that grows only at knots holding two loose ends grows
 an endless chain from a single knot, along which bond distance (lesson 4.6)
 counts one per step, while a part with no loose ends freezes
 ([OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
@@ -475,18 +477,18 @@ perimeter to diameter (π, in Gołąb's sense) is a rational number, and an
 exactly round outline came from a random layout with no preferred direction
 ([LOGIC-CIRCLE-20261107-001](research/LOGIC-CIRCLE-20261107-001/logic_circle.md)).
 
-**Every bond is finite.** A shape can run on forever, but each binding in it
-joins finitely many things. No system of clauses binds infinitely many loops
-into one knot, by the compactness theorem, so an infinite thread is a tower of
-finite knots ([THEORY.md](THEORY.md#every-bond-is-finite); lesson 7.2,
+**Every bond is finite.** A meeting pattern can run on forever, but each bond
+in it joins finitely many distinctions. No system of clauses binds infinitely
+many loops into one knot, by the compactness theorem, so an endless chain is a
+tower of finite knots ([THEORY.md](THEORY.md#every-bond-is-finite); lesson 7.2,
 question 3).
 
 **The board and true base reality.** Life's board is drawn before the game
 starts (lesson 1.3). In the owner's words, "we're in a different base reality.
 True base reality, where we start with nothing and have to create the
 pattern." The guide's version is lesson 1.1's: nothing is assumed except
-distinctions, so every shape, space included, has to come from rules (lesson
-7.2, question 1).
+distinctions, so every structure, space included, has to come from rules
+(lesson 7.2, question 1).
 
 **Can the rule be learned?** "This doesn't have to be designed, maybe we can
 learn the shape of the underlying pattern somehow. But that is to be tested."
@@ -497,8 +499,8 @@ rules, and rules within rules, that make it.
 view of what a system's rules make: the sets of variables it leaves free,
 which lesson 3.3 calls the system's free complex and the literature draws as
 points, edges and filled triangles. It shows the holes and knots inside what a
-system allows. Earlier versions of the guide called it the system's shape; the
-word "shape" now keeps only the owner's sense.
+system allows. Earlier versions of the guide called it the system's shape;
+the guide now keeps "shape" in the owner's own words only.
 
 **Reading.** Apart from the results it cites, this lesson is the owner's
 reading. Minds, consciousness and genomes are examples of the word, and nothing
@@ -560,18 +562,19 @@ another with only a few, and nothing makes knots meet "along their sides", one
 neighbour at a time. A distinction that several knots share is a shared
 distinction, not a contact: a contact is the variable through which one knot
 binds loops. Two distinctions in a common three-place knot are a **co-knotted
-pair**. Knots, finitely or infinitely many, together with the pattern of which
-distinctions they share, form a **knot pattern**, and a knot pattern that
-allows at least one state is a **base**, in the sense of the owner's "base
-reality": different patterns of overlap, infinite ones included, are
-different bases. In the owner's words (11 November 2026), loops "weave in and
+pair**. Which knots share which distinctions, finitely or infinitely many
+knots, is their **meeting pattern**, with the knots' rules left out. Knots
+with their rules, together with their meeting pattern, form a **knot
+pattern**, and a knot pattern that allows at least one state is a **base**, in
+the sense of the owner's "base reality": different meeting patterns, infinite
+ones included, make different bases. In the owner's words (11 November 2026), loops "weave in and
 out and around other loops", the whole is "immensely complicated", and the
 structure that emerges is "folded" and "compressed".
 
-**One special pattern.** When every co-knotted pair of a pattern of
-three-place knots lies in exactly two knots, and the knots at each distinction
-form one cycle, each sharing a pair with the next, the pattern is a
-**two-fold weave**. The literature draws it as a closed surface, and much of
+**One special meeting pattern.** When every co-knotted pair of a meeting
+pattern of three-place knots lies in exactly two knots, and the knots at each
+distinction form one cycle, each sharing a pair with the next, the meeting
+pattern is a **two-fold weave**. The literature draws it as a closed surface, and much of
 the record studies it. It is one way of writing an overlap down, not what a
 base is. In the owner's words, "we can have a flat structure represent the
 folded compressed structure, but the flat structure and emergent structure are
@@ -820,8 +823,8 @@ A, B and c together are not          they are missing from the complex; the
 
 **Reading.** Logic gives intrinsic holes, paths and separation, but it selects
 no space. Whatever space there is has to come from a law. Which law gives a
-shape, in the owner's sense of lesson 1.7, that looks like a space of low
-dimension is open (lesson 7.2, question 1).
+meeting pattern that looks like a space of low dimension is open (lesson 7.2,
+question 1).
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1048,8 +1051,8 @@ where the dimensions themselves expand out in measures of logic", each axis
 "built out of an infinite structure of logic (emergent space)". So the axes X
 and Y would follow rules, as Life's cells do, and the rules would be an
 essentially infinite CNF. It is the intuition of lesson 1.7 turned on space
-itself: in the owner's terms, lines and functions are shapes, and shapes have
-rules. A function's
+itself: in the owner's terms, lines and functions are "shapes", and "shapes"
+have rules. A function's
 graph already obeys one ("A single input (x-value) cannot have two different
 outputs (y-values)", in the owner's words of 8 November), so the axes it is
 drawn on could obey rules too. This lesson says what of that idea is proved,
@@ -1208,9 +1211,8 @@ it closes it
 allow, and in one dimension they can grow the axis with nothing drawn. When the
 board itself is made of distinctions, rules that declare no cycle cannot
 choose the commuting board: they always allow the tree. One rule that
-declares the commuting cycle can. In the owner's words of lesson 1.7, shapes
-have rules; here the commuting board's rule is itself a shape, one declared
-cycle.
+declares the commuting cycle can. In the owner's words of lesson 1.7, "shapes"
+have rules; here the commuting board's rule is one declared cycle.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1463,8 +1465,8 @@ remains open.
 ### 7.2 Open questions
 
 1. **Space from a law.** Logic allows every free complex (lesson 3.4). Which
-   uniform, local law, not written on a space in advance, gives a shape, in
-   the owner's sense of lesson 1.7, that looks like a space of low dimension?
+   uniform, local law, not written on a space in advance, gives a meeting
+   pattern that looks like a space of low dimension?
    One necessary condition is known: a law keeps a lasting record of its
    loops only if its contacts act as group elements (lessons 4.4 and 4.5).
    Lesson 4.6 shows how far the program has got: rules read a drawn grid's
@@ -1532,10 +1534,11 @@ that earlier records used in two senses.
 - **Witness.** An auxiliary variable that reports on something, such as
   whether two loops are bound. Witnesses are quantified away before a verdict
   (lesson 1.6).
-- **Shape.** In the owner's sense, which the guide adopts, any structure that
-  rules make, together with those rules (lesson 1.7). The intuition, in the
-  owner's words: emergent structures "are rules, and rules within rules".
-  Earlier versions of the guide also called a system's free complex its shape.
+- **Shape.** The owner's word, kept in his own words only: any structure that
+  rules make, together with those rules (lesson 1.7). The intuition, in his
+  words: emergent structures "are rules, and rules within rules". For the
+  program's own objects the guide says meeting pattern, and for the sets a
+  system leaves free, free complex.
 - **Knot.** A relation that is constrained as a whole and unconstrained in
   every part (lesson 2.1). The intuition: a binding that lives only in the
   whole. Forget any one variable and nothing is left tied, as in the
@@ -1549,13 +1552,18 @@ that earlier records used in two senses.
   (lesson 2.1). The intuition: knots do not sit side by side in a space. They
   meet only by sharing what they bind, as the owner's loops weave in and out
   and around other loops.
-- **Knot pattern.** Knots, finitely or infinitely many, together with the
-  pattern of which distinctions they share (lesson 2.1). The literature writes
-  a knot pattern as a hypergraph, its vertices the distinctions and its edges
-  the knots (lesson 6.2).
+- **Meeting pattern.** Which knots share which distinctions, with the knots'
+  rules left out; finitely or infinitely many knots, any of which may share
+  distinctions with any number of others (lesson 2.1). It is what the record
+  calls "how knots meet". The intuition, in the owner's picture: the overlaps
+  themselves, loops weaving in and out and around other loops, whatever rules
+  the knots carry. The literature writes a meeting pattern as a hypergraph,
+  its vertices the distinctions and its edges the knots (lesson 6.2).
+- **Knot pattern.** Knots with their rules, finitely or infinitely many,
+  together with their meeting pattern (lesson 2.1).
 - **Base.** A knot pattern that allows at least one state, in the sense of the
-  owner's "base reality": different patterns of overlap, infinite ones
-  included, are different bases (lesson 2.1). The intuition: a reality built
+  owner's "base reality": different meeting patterns, infinite ones included,
+  make different bases (lesson 2.1). The intuition: a reality built
   from the bottom up, out of nothing but knots and which distinctions they
   share. The foundation's **admissible base** is the general notion, declared
   primitives and native rules of any kind with their semantics, admitted maps
@@ -1564,16 +1572,16 @@ that earlier records used in two senses.
   semantics and admitted maps are declared is an admissible base, and the
   program reads every coherent admissible base as co-real (lesson 7.1).
 - **Co-knotted pair.** Two distinctions in a common three-place knot of a
-  pattern (lesson 2.1).
-- **Two-fold weave.** A knot pattern of three-place knots in which every
+  meeting pattern (lesson 2.1).
+- **Two-fold weave.** A meeting pattern of three-place knots in which every
   co-knotted pair lies in exactly two knots and the knots at each distinction
   form one cycle, each sharing a pair with the next (lesson 2.1). Where no
   other pattern is in view, the record says weave for short. The literature
-  draws a two-fold weave as a closed surface. The intuition: the one pattern
-  of overlap that can be written down flat, in the owner's words a "flat
+  draws a two-fold weave as a closed surface. The intuition: the one meeting
+  pattern that can be written down flat, in the owner's words a "flat
   structure" that can "represent the folded compressed structure" but is not
   it.
-- **Patch.** A finite pattern of three-place knots whose co-knotted pairs all
+- **Patch.** A finite meeting pattern of three-place knots whose co-knotted pairs all
   lie in two knots except the pairs of one cycle, its **selvage**, which lie
   in one; in which the knots at each distinction form one cycle, or one path
   for a distinction on the selvage; and whose Euler count is 1. The
@@ -1652,6 +1660,13 @@ that earlier records used in two senses.
   system that allows no state is a **contradiction**.
 - **Depth.** How much of a knot pattern an observer must hold at once to see a
   hole in it (lesson 5.2).
+- **Drawn knot pattern.** A knot pattern given together with a drawing on a
+  surface, which earlier records called a knot space: every distinction lies in
+  three three-place knots and every co-knotted pair in one, and the knots are
+  drawn as the triangles of one colour of a two-coloured triangulation, whose
+  triangles of the other colour, its faces, are not knots. The drawing is a
+  declared substrate, so the words that describe it, such as face, corner,
+  sphere, torus, handle and genus, are the drawing's and are marked as drawn.
 - **Three-regular contradiction.** A pattern of not-all-equal knots in which
   every distinction lies in exactly three knots and that allows no state
   (lesson 6.2); earlier records called it a three-fold space. The record cuts
@@ -1672,7 +1687,8 @@ that earlier records used in two senses.
   | distinction | a variable | point, vertex, site |
   | knot (three-place) | a relation on three distinctions passing K1–K3 | triangle, when drawn in a surface; line of a triple system, such as the Fano plane |
   | co-knotted pair | two distinctions in a common three-place knot | edge |
-  | knot pattern | knots and which distinctions they share | hypergraph |
+  | meeting pattern | which knots share which distinctions, rules left out | hypergraph |
+  | knot pattern | knots with their rules, and their meeting pattern | constraint network on a hypergraph |
   | base | a knot pattern that allows a state | (none; a space is what the program hopes to build from one) |
   | two-fold weave | every co-knotted pair in exactly two knots, the knots at each distinction in one cycle | closed triangulated surface |
   | patch; selvage | a finite pattern of Euler count 1 whose one-knot pairs form one cycle; that cycle | disc; its boundary |
@@ -1696,6 +1712,7 @@ that earlier records used in two senses.
   | board; cell | cells and which are neighbours; what holds one value | grid, Schreier graph; site, vertex |
   | commuting board | the board on which the steps xy and yx always meet | grid ℤ², drawn as the plane |
   | declared cycle; commuting cycle | a word of steps that a law says comes back; xyx⁻¹y⁻¹ | face; closing square |
+  | drawn knot pattern | every distinction in three knots and every co-knotted pair in one, the knots drawn as one colour of a two-coloured triangulation | the record's knot space; its drawing a checkerboard triangulated surface |
   | three-regular contradiction | not-all-equal knots, every distinction in three, no allowed state | non-2-colourable 3-regular 3-uniform hypergraph |
   | Fano pattern; Fano piece | seven distinctions and seven knots, every two distinctions in one knot; that pattern less one element | Fano plane; Fano plane less a point or a line |
 - **One word, one meaning.** Earlier records used some words in two senses
@@ -1707,8 +1724,8 @@ that earlier records used in two senses.
   | Word | Its one meaning in the guide | Other senses in earlier records, and the word for each now |
   | --- | --- | --- |
   | base | a knot pattern that allows a state (lesson 2.1) | the foundation's general notion: admissible base, written in full |
-  | world | an allowed state, read with 1 as "exists" (lesson 4.2) | a pattern of knots ("flat world", "disc world", "knot world"): base, weave or patch; the foundation's world branch, written in full |
-  | shape | the owner's: any structure that rules make (lesson 1.7) | the sets a system leaves free: free complex; the five kinds of three-place knot: classes |
+  | world | an allowed state, read with 1 as "exists" (lesson 4.2) | a pattern of knots ("flat world", "disc world", "knot world"): base, weave, patch or drawn knot pattern; the foundation's world branch, written in full |
+  | shape | (the owner's word, in his own words only: any structure that rules make, lesson 1.7) | for the program's own objects: meeting pattern; the sets a system leaves free: free complex; the five kinds of three-place knot: classes |
   | loop | a logical structure that leaves a distinction open (lesson 1.4) | a cycle of a weave that no patch closes off: unfilled cycle; loop pairs: cycle pairs |
   | contact | the variable through which a knot binds loops (lesson 1.4) | a distinction several knots share: shared distinction |
   | open | of a distinction, free on its own (lesson 1.4) | the unjoined end of a chain or string: loose end; an open chain: chain |
@@ -1716,10 +1733,10 @@ that earlier records used in two senses.
   | knot | a relation constrained as a whole and free in every part (lesson 2.1) | a knotted rope: classical knot |
   | smallest bond | the bond with the fewest distinctions (lesson 4.6) | the knot that excludes the fewest states: weakest bond |
   | network | a network of loops (lesson 4.5) | a pattern of knots: knot pattern; the foundation's contact network, written in full |
-  | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: a weave under a law |
+  | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: drawn knot pattern |
   | dimension | how fast balls grow (lesson 4.6) | the dimension of a hole or of a complex: the literature's, marked as such |
   | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell |
-  | point | (the literature's only) | a variable: distinction |
+  | point | the owner's moving point, a state with a charge-like strength (his picture of learning), and otherwise the literature's | a variable: distinction |
   | line | (only in the owner's words and the literature's names, such as the number line and a Fano line) | a three-place knot: knot; an open chain: chain |
   | face | (the literature's only: a face of a map) | a knot of a weave: knot; a cycle a law closes: declared cycle |
   | flat | (only in the owner's "flat structure") | six knots at every distinction: six-regular; drawable without crossings: planar, the literature's |

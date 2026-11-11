@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NAE-SURFACE-20261111-001A-E001",
+ "ticket": "NAE-SURFACE-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the not-all-equal law read any connected simple d-regular world of three-place knots alone faithfully when the world is not a surface, for d = 4 to 7?",
+ "definitions": {
+  "world": "Finite distinctions with a set of 3-subsets (knots); connected, simple, every distinction in exactly d knots; up to isomorphism.",
+  "non-surface": "Some co-knotted pair in one knot or in three or more, or every pair in two but some link more than one cycle.",
+  "faithful": "Under NAE (weights {1,2}): allowed, no frozen distinction, no tie, three-place bonds exactly the knots; by KNOTS-ALONE-20261111-001A-E001's frozen read_law_sat (knots_alone.py sha256 aee9a2eda0907064b89eae4fe4badddb22b80fecb62bd91d5a5fa448397010de, checked at start).",
+  "F0": "Every connected simple d-regular world on 6 distinctions, d = 4, 5, 6, 7; isomorphism by all 720 relabellings.",
+  "F1": "d = 4..7, V = 13..30 with 3 | dV: 40 worlds per cell by random_regular_worlds_sat, seed 20261112 + 100 d + V, surfaces removed.",
+  "F2": "Every lattice torus with 24 <= V <= 48 of edge-width >= 5 read faithfully by NAE; k = 1, 2, 4 degree-preserving knot swaps, 2 replicates, seed 20261113 + 1000 n + 10 k + rep; connected non-surface worlds kept.",
+  "coverage": "Every registered F0 and F1 cell must run; checked and reported."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 b8f0cb487df9d9298237ea73c3898b496a04d33e5f055c43ce2ea6c3ecaca380) beside this file; imports KNOTS-ALONE-20261111-001A-E001's knots_alone.py (hash above); pysat Minisat22.",
+  "run": "census.py from the repository root; output artifacts/NAE-SURFACE-20261111-001A/NAE-SURFACE-20261111-001A-E001_faithful_non_surface/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the definitions, families, seeds, sizes or predictions after seeing results"
+ ],
+ "primary_observable": "For each non-surface world: NAE allowed, native, faithful, its defects; every faithful one listed in full.",
+ "cheapest_meaningful_control": "Worlds outside the family (d = 3 on 9 distinctions; swaps of a 12-distinction torus) run before freezing; the coverage check fails in control mode; the library hash check binds the frozen readings.",
+ "predictions": {
+  "P1": "Some F2 swap world is read faithfully.",
+  "P2": "For each d = 4..7, F1 has a faithful non-surface world.",
+  "P3": "No world on 6 distinctions is read faithfully at d = 4..7."
+ },
+ "decision_rules": {
+  "faithful non-surface world": "B145 answered no: faithfulness does not supply the surface count, an input; stop.",
+  "none": "One local-lemma attempt (each defect forces a tie or an extra 3-bond at d >= 4), refereed; until then computed only.",
+  "sample": "A cell with no faithful world reports not found, not an absence."
+ },
+ "stop_rule": "One run; then either stop on a witness or one refereed lemma attempt; report and hold.",
+ "runtime": "Expected under an hour; registered in docs/LONG_RUNNING.md; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

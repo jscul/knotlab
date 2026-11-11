@@ -192,3 +192,38 @@ no goal change. **Assumptions:** none changed.
 
 **Recommendation.** Research directions, #1, a pivot toward the owner's unrestricted object; the owner gave the go-ahead on
 2026-11-11, to start once this epic is closed and reported.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 19:38 UTC and copied here verbatim.
+
+**The ruler on balanced weaves is proved.** Take a closed base in which every co-knotted pair lies in exactly two knots and every distinction in six (drawn: a torus). There, one number decides how not-all-equal reads it: M, the least extra cost of a state's height going once around a loop.
+
+- **States** exist exactly when M ≥ 0.
+- **Bond distance** is never below min(δ, M/3) + 1, and it equals graph distance + 1 whenever δ < M/3. A bond can only cheat by going around a loop.
+- **Faithful** whenever M > 3.
+- **One-sided weaves split in two** (drawn: Klein bottles). If the pairs can be directed so that every knot is a directed cycle, the same theorem holds word for word. If not, heights flip under the twist, and that half stays computed.
+
+Two referees passed it after fixes, and every check passes: two-sided weaves to 96 distinctions, directed one-sided ones to 48.
+
+**Only for two-fold weaves.** All of this needs each co-knotted pair in exactly two knots, because the height only exists there. Beyond that the line knows very little. NAE does read 160 swap-made bases faithfully, and some grown ones with pairs in three knots. But none of 1,440 random regular bases was read faithfully, and where every pair lies in one knot (a Steiner triple system) there is no state at all. Overlap has no ruler and no height yet.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the ruler on closed balanced weaves | **Status:** Partially successful | Two-sided and directed one-sided proved; undirected one-sided not |
+| Local direction — NAE's ruler on two-fold weaves | Continue | The undirected half and the exact range remain |
+| Broader exploration — G1 on bases of knots alone | Promising pivot available | Everything proved needs two knots per pair; overlapping bases are untested |
+| Long-term goal — G1 Space from a law (question 9) | Capability gained | The law measures balanced weaves exactly below a cutoff set by how their knots meet |
+
+**Corrections:** one, Not a block. My pre-registration said heights flip under every one-sided twist, but only the undirected ones do. **Goals:** a G1 checkpoint (capability gained), no goal change. **Assumptions:** none changed.
+**Basket:** the local list of what NAE forbids (2/3, 2/3), bond balls read dimension 2 (2/3, 2/3), other laws (2/3, 2/3); none taken. Direction 1 is new.
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Overlapping bases: pairs in any number of knots | 3/3 — Major | 2/3 — Testable | Census of small bases with no limit on knots per pair, plus B145's 160 bases and GROW-COUNT's re-read as objects → a faithful base with a pair in three or more knots and its ruler, or none in the frozen family | Selected · go-ahead given |
+| 2 | The local list of what NAE forbids | 2/3 — Substantial | 2/3 — Testable | Is faithfulness on balanced weaves exactly "no adjacent apices, M > 3"? → a characterization, or a miss | Alternative · deferred |
+| 3 | The undirected one-sided weaves | 1/3 — Modest | 2/3 — Testable | Turn the referee's flip-symmetric extension into a criterion → T2 to T4 there, or a failure | Alternative · deferred |
+
+It's committed and published ([decision note](https://github.com/jscul/knotlab/blob/main/research/RULER-FLAT-20261111-001/ruler_flat.md)). With your go-ahead I'm starting the overlapping-bases epic now, with its pre-registration and a prior-work check first.

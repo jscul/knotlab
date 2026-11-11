@@ -5865,6 +5865,18 @@ So holes come in two kinds:
      small bases need seven, and one knot swap in a two-fold weave can bind a triple through half the base
      ([decision note](../research/OVERLAP-READ-20261111-001/overlap_read.md)).
 
+   **2026-11-11: infinite bases with periodic overlap** (`PERIODIC-READ-20261111-001`).
+   - **The question.** A base reality in the owner's sense can be infinite: a meeting pattern that repeats without end. Does
+     not-all-equal read such bases faithfully when pairs lie in many knots, and what do they show that their finite repeats do not?
+   - **Yes, with overlap (computed, frozen).** Repeating along one shift the reading is exact: 73 of 181 patterns are read faithfully,
+     with pairs in up to four knots. Repeating along two shifts it is bounded: 134 of 627 are read faithfully, 36 with a pair in three or
+     more knots and two with one repeated pair in four, and in every one, pairs two steps apart share a bond of four.
+   - **Not its finite repeats.** 25 of those bases have no finite repeat read faithfully, and some value patterns occur only in states
+     that pass from one repeating regime to another (literature: a domain wall), which no finite repeat can hold.
+   - **The global triples were two halves of a weave (proved, computed).** A two-fold weave whose knots split into two classes meeting
+     every co-knotted pair once each is read the same from either class; a knot removed from one class is still held by the other, through
+     the whole weave. That accounts for 91 of the 98 global cases ([decision note](../research/PERIODIC-READ-20261111-001/periodic_read.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

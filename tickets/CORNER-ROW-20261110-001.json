@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse",
+      "reach"
+    ],
+    "program": "foundations",
+    "takes": [
+      "B140"
+    ]
+  },
+  "id": "CORNER-ROW-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take B140 at the coordinator's go-ahead (2026-11-11 00:33 UTC, after RETURN-LAW-20261110-001 closed): find a closed form for the corner's row of the block inverse K_n^-1 of RETURN-LAW-20261110-001C (Theorem 7) at n = 2^m, the 2(n - 1) walk series from the corner c = (0, 1) to the v contacts of the two side walls, whose (L, 0) entry is the return law 1/(1 + L(s^2)) and whose whole row carries the count of REACH-HALVES-20261110-001A (B137) by Corollary 10. What counts as a closed form and as no pattern is frozen in the tickets before any exact row is computed; the verdict is a held-out test at side 64. Outcomes: a closed form (then a proof for every m and the count), a partial rule, or no pattern, in which case the line is parked.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CORNER-ROW-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "Frozen 2026-11-11 before any exact row is computed: the epic ends with no pattern, and the line (B137, B140, B141) is parked, when no rule is committed after the training sides 4, 8, 16, 32 or the committed rule fails at the held-out side 64; with a partial rule when a rule for a declared subset of the entries passes at 64; and, when a full rule passes at 64, after ticket B has a refereed proof for every m or the stated lemma that would finish it, checked exactly at sides 4 to 128. The search is not extended past side 64. No successor epic starts without the coordinator's go-ahead.",
+  "title": "A closed form for the corner's row of the block inverse"
+}

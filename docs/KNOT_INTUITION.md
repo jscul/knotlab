@@ -5676,6 +5676,16 @@ So network holes come in two kinds:
    - **So the knot measures its own plane** exactly, as graph distance, and its bond balls read dimension 2. On tori and Klein bottles
      it stays computed ([decision note](../research/RULER-20261111-001/ruler.md)).
 
+   **2026-11-11: the count from growth** (`GROW-COUNT-20261111-001`).
+   - **The question.** The count of how knots meet (two per pair, one link per distinction, six around each) was put in. Can growth
+     supply it, if each new knot is kept only while not-all-equal still reads the world faithfully?
+   - **No (computed, frozen).** Wherever the world grows, the law accepts pairs in three knots and pinched links; with both named, links
+     close at every degree from 3 to 14, never mostly at 6.
+   - **The law refuses one shape (proved).** No pair's two knots may have their other corners knotted together: a pattern of equal
+     values on the pair would force a contradiction. So the sharpest cone, a link closed at three, fails inside any larger world, and a
+     tetrahedron can never grow.
+   - **So how knots meet is an input, static or grown**; the face is still the knot ([decision note](../research/GROW-COUNT-20261111-001/grow_count.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

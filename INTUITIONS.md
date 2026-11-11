@@ -1152,8 +1152,8 @@ closes up in both steps (the literature's torus; proved,
 rings are declared. The register of assumptions records this default as A51,
 "Places and their neighbours are given before the rules"
 ([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)). Lesson 4.7 takes the board
-away: on knots alone the knot law reads dimension two, with only the meeting
-pattern given.
+away: on knots alone the knot law reads the endless six-regular weave's
+dimension two, with only the meeting pattern given.
 
 **The board as distinctions.** The owner's idea in full asks for more: make
 "these two names are one cell" a distinction of the same infinite CNF as the
@@ -1319,14 +1319,22 @@ four distinctions two steps apart already form a bond
 **The ruler (proved).** On the endless six-regular weave, the literature's
 triangular lattice, which it draws as the plane, not-all-equal reads the weave
 faithfully, and two distinctions d steps apart lie together in a bond of
-exactly d + 2 distinctions and in no smaller one. So their bond distance is d +
-1 at every d: the knots measure their own meeting pattern exactly. In the
+exactly d + 2 distinctions and in no smaller one. So their bond distance is
+d + 1 at every d: the knots measure their own meeting pattern exactly. In the
 literature's drawing the bond is one side of a triangle of side d together with
 the opposite corner. Every bond is native: each of its distinctions can be
-flipped by changing finitely many others (lesson 4.6). Since bond distance is
-d + 1, the balls of lesson 4.6 grow like r², and the law reads dimension two
-from its allowed states alone (proved and refereed,
-[RULER-20261111-001](research/RULER-20261111-001/ruler.md)).
+flipped by changing finitely many others (lesson 4.6). These three statements
+are proved and refereed
+([RULER-20261111-001](research/RULER-20261111-001/ruler.md)).
+
+- **Dimension two, as a consequence (proved, from the ruler).** Since bond
+  distance is d + 1, the ball of bond distance r around a distinction (lesson
+  4.6) is the set of distinctions at most r − 1 steps from it. That set holds
+  3r(r − 1) + 1 distinctions, so balls grow like r², and in lesson 4.6's
+  meaning of the word the law reads dimension two from its allowed states
+  alone. The consequence needs the whole endless weave: on finite weaves the
+  ruler holds only below the cutoff M/3 of the next bullet, and how balls grow
+  there has not been measured.
 
 - **Why it is exact (reading of the proof).** The allowed states are the ground
   states of the literature's triangular Ising antiferromagnet, and each carries
@@ -1353,7 +1361,7 @@ the steps x and y are given, and a law fixes the commuting board only by
 declaring the cycle xyx⁻¹y⁻¹: whether x then y meets y then x is something the
 law is told. On knots alone there are no steps x and y to ask that of, and no
 cycle is declared. The knot is the only relation, and not-all-equal still
-measures an exact ruler and reads dimension two. The register records the
+measures an exact ruler and, on the endless weave, reads dimension two. The register records the
 reading that a declared cycle is put in, not built, as A63, now overturned in
 this setting, and the reading that counting how knots meet declares no cycle as
 A64, which that overturning rests on

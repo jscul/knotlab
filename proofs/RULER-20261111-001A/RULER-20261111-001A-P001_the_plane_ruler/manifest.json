@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "source_contribution": 0,
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "artifact_id": "RULER-20261111-001A-P001",
+ "canonical_id": "RULER-20261111-001A-P001",
+ "kind": "proof",
+ "ticket": "RULER-20261111-001A",
+ "proof": "RULER-20261111-001A-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Bond distance is graph distance plus one in the plane",
+ "status": "Partial",
+ "claim": "On the triangular lattice under NAE on every triangle (the ground states of the triangular Ising antiferromagnet): every pair of sites is free and the non-free triples are exactly the triangles; for sites u != v at graph distance d the least bond containing both has d + 2 sites; every site is flipped by a finite change at the flat three-class state.",
+ "dependencies": [
+  "LONG-LOOP-20261111-001A"
+ ],
+ "evidence_modes": [
+  "exact-proof",
+  "finite-validation"
+ ],
+ "epistemic_class": {
+  "primary": "theorem-with-finite-validation",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "Two sites at distance d with a bond of fewer than d + 2 sites containing both (against R2's lower bound).",
+  "Two sites at distance d with no bond of d + 2 sites containing both (against R2's upper bound).",
+  "A tie, or a non-free triple that is not a triangle (against R1).",
+  "A site of the flat three-class state that no finite change flips (against R3)."
+ ],
+ "lineage": {
+  "home_scope": "RULER-20261111-001",
+  "epic_path": [
+   "RULER-20261111-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {},
+ "paths": {
+  "manifest": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/manifest.json",
+  "identity": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/identity.json",
+  "proof": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/proof.md",
+  "result": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/result.json",
+  "check": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/check.py",
+  "directory": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler"
+ },
+ "remaining_obligations": [
+  "Write the proof",
+  "Run check.py",
+  "Independent referee"
+ ],
+ "foundation_claim_scope": "The infinite triangular lattice with NAE on every triangle; finite bonds of the set of all allowed states; the source label at one solution. Flat tori and Klein bottles are not claimed.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11.",
+  "status": "pre-registered; the proof to follow",
+  "novelty": "to be assessed"
+ }
+}

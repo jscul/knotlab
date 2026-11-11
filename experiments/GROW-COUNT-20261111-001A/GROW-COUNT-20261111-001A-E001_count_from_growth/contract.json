@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "GROW-COUNT-20261111-001A-E001",
+ "ticket": "GROW-COUNT-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does growth by NAE-faithful moves supply the count of how knots meet (two per pair, one link per distinction, six per distinction), or must each part be put in?",
+ "definitions": {
+  "move": "Propose {x,y,z} on a co-knotted pair, z existing with probability b else new; keep it if legal under the rule and NAE still reads the world faithfully (KNOTS-ALONE's read_law_sat, knots_alone.py sha256 aee9a2eda0907064b89eae4fe4badddb22b80fecb62bd91d5a5fa448397010de).",
+  "rules": "free: any co-knotted pair; open: pairs in one knot, every pair in at most two knots; disc: that and every link a single path or cycle.",
+  "runs": "rules x b in {0.3, 0.6, 0.9} x seeds 0..9 x laws {NAE, OR}: 180 runs; stop at 80 knots or 400 rejections in a row; seed 1000 rule + 100 bias + seed + 20261115.",
+  "readings": "pairs by number of knots, pinched links, closed distinctions (link a single cycle) and their degrees, closings accepted and rejected by degree, closed surfaces and Euler characteristic."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 a6256cb81c16803fc2a1b4af3e3440dd124352b55e67b93bd78e170f3c9fc504) beside this file; KNOTS-ALONE's knots_alone.py; pysat Minisat22; 12 workers.",
+  "run": "census.py from the repository root; output artifacts/GROW-COUNT-20261111-001A/GROW-COUNT-20261111-001A-E001_count_from_growth/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the rules, biases, seeds, sizes, laws or predictions after seeing results"
+ ],
+ "primary_observable": "Per rule under NAE against OR: pairs in three or more knots, pinched links, closing degrees, rejected closings by degree.",
+ "cheapest_meaningful_control": "The clause law as the frozen comparison arm (accepts every legal move); a pilot with seeds 98 and 99 outside the registered seeds, disclosed; the coverage check fails in control mode.",
+ "predictions": {
+  "P1": "free NAE: every run has a pair in three or more knots.",
+  "P2": "open NAE: some run has a pinched link.",
+  "P3": "disc NAE: closed degrees take at least three values and no run has degree 6 at 90% or more.",
+  "P4": "disc NAE: no flat closed surface.",
+  "P5": "disc NAE: every proposal that would close a link at degree 3 is rejected."
+ },
+ "decision_rules": {
+  "P1-P3 hold": "Faithful growth does not supply the count; each part is put in (A64).",
+  "P3 fails": "NAE chooses flatness given the pair count and the link; stress test before reading it.",
+  "P1 or P2 fails": "That part comes from the law."
+ },
+ "stop_rule": "One run; report and hold.",
+ "runtime": "About a quarter of an hour on 12 workers; registered; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

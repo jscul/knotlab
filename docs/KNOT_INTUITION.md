@@ -3046,6 +3046,15 @@ So holes come in two kinds:
    network so far was laid out by hand. A network's charge hole has a depth
    set by its layout's cut width ("How deep a hole is"): an invariant of a
    whole network's extent, though a width rather than a distance.
+
+   **Words in the early space entries.** The entries from here to the three-regular entries place laws on declared substrates: lattice
+   tori and other drawn surfaces, triangulations of three-manifolds, Sierpinski gaskets and simplices, and the triangular lattice, all
+   drawn or given (A36, A51). Their tori, cylinders, walls, stripes, staircases, corners, genus, surfaces, gaskets and dimensions are
+   the drawings' words. In the census entries a contact is the three-place knot placed on each edge, its visible distinction joined
+   to two hidden ones. Where these entries once said that a law or a gluing builds a space, a surface or a topology, the law reproduces
+   itself on a substrate that is drawn or given, or a gluing has the meeting pattern of one (reworded on 2026-11-11, `docs/CORRECTIONS.md`;
+   the earlier text is in git history).
+
    **2026-10-21.**
    - **What a declared substrate fixes** (`NATIVE-NETWORK-20261021-001`). Its
      allowed states fix contact adjacency, routes, separation and an extended
@@ -3275,12 +3284,12 @@ So holes come in two kinds:
        ways with a free place, both selectivity on every large torus and
        whether reading a direction is hard or easy.
 
-   **2026-10-24: what native gluing builds** (`SURFACE-GLUING-20261024-001`).
-   - **Surfaces from sharing (proved).** Native contact requires every shared distinction to join exactly two knots.
-     - Glued that way, a network is a pants decomposition of a compact orientable surface. Each knot is a pair of pants and each open
-       distinction a boundary circle; the genus is the number of independent cycles.
-     - Two-place relations glue only into lines and loops.
-     - A hub is the one place where three sheets meet.
+   **2026-10-24: what native gluing makes** (`SURFACE-GLUING-20261024-001`).
+   - **Pants decompositions from sharing (proved).** Native contact requires every shared distinction to join exactly two knots.
+     - Glued that way, a network has the meeting pattern of a pants decomposition of a compact orientable surface (the literature's):
+       each knot a pair of pants and each open distinction a boundary circle, the genus the number of independent cycles.
+     - Two-place relations glue only into chains and cycles.
+     - A hub is the one case where three sheets meet.
    - **Laws that see only the surface (proved).** Exactly four knots give witness counts that depend only on the surface:
      - parity, with one hidden bit per handle;
      - the two "no lone value" knots, whose closed counts 2, 5, 15, 50, … grow by the rates (5 ± √5)/2.
@@ -3302,7 +3311,8 @@ So holes come in two kinds:
    - **The Fibonacci rule needs a sign (proved).** To see three-manifolds, it needs a negative weight on the all-τ tetrahedron. Its
      incommensurable rates cancel into counts on surfaces, but in three dimensions they need interference, which no count of hidden
      witnesses supplies.
-   - **Reading.** Native space is two-dimensional topology.
+   - **Reading.** Native networks see of a triangulated three-manifold only what its two-dimensional skeleton shows, its mod-2 first
+     cohomology (reworded on 2026-11-11 from "Native space is two-dimensional topology").
 
    **2026-10-25: twists in three dimensions** (`TWIST-3D-20261025-001`).
    - **Twists add nothing (proved).** Let each triangle read its edges in vertex order, so any triangle rule can be used, the twisted
@@ -3341,11 +3351,11 @@ So holes come in two kinds:
 
    **2026-10-29: geometry from a law, nothing drawn** (`GEOMETRY-LAW-20261029-001`).
    - **The question.** A uniform law can coarse-grain itself: replace each knot by a native gadget made of copies of the same knot,
-     a pattern of patterns. Which laws survive that, in which shapes, and can a law fix an orientation or a scale?
+     a pattern of patterns. Which laws survive that, in which gadgets, and can a law fix an orientation or a scale?
    - **Only parity survives (proved for every gadget size).**
      - The two parity knots are rebuilt by every native gadget of their copies.
      - Every other three-place knot's gadgets exclude strictly fewer tuples: none for the atoms and not-all-equal types, at most one
-       when two tuples at distance two are excluded (only the triangle of three copies), at most two when three are.
+       when two tuples at distance two are excluded (only three copies in a cycle, drawn as a triangle), at most two when three are.
      - So towers of patterns of patterns built from one non-parity law reach the free relation within three levels.
      - The proof is the cactus structure of native contradictions (`NATIVE-HARDNESS-20261024-001B`) applied to three legs.
    - **No orientation at three places (proved).** Every three-place knot's symmetry group contains a transposition, so no
@@ -3353,14 +3363,15 @@ So holes come in two kinds:
    - **Four places (exhaustive for gadgets of two and three copies).**
      - 96 of the 742 four-place knots, in 6 classes, can orient a vertex. None of them survives.
      - What survives is parity, and one implication between the parities of two pairs, (x₁ + x₂ → x₃ + x₄). That implication is a
-       two-place relation on derived bits, rebuilt exactly by chains, so its towers are lines.
+       two-place relation on derived bits, rebuilt exactly by chains, so its towers are chains.
    - **Counting (scoping).** Weighting each tuple by its number of hidden witnesses keeps only a bias at each distinction and pairwise
      bonds under the two smallest substitutions, never a three-way bond.
-   - **Background (classical).** Each knot of a closed native world is a pair of pants, a unit of negative curvature, so the world
-     admits only hyperbolic metrics. Two-place relations are flat and pins are positively curved. The metric itself is left free.
+   - **Background (classical).** In the literature's drawing each knot of a closed native gluing is a pair of pants, a unit of
+     negative curvature, so the drawing admits only hyperbolic metrics. Two-place relations are flat and pins are positively curved. The metric itself is left free.
    - **Reading.**
-     - Native logic builds two-dimensional topology and fixes its curvature type, and nothing geometric survives patterns of
-       patterns. What survives every scale is shapeless (parity) or one-dimensional (pairwise).
+     - Native gluings have the meeting pattern of a two-dimensional drawing and fix its curvature type, and nothing geometric
+       survives patterns of patterns. What survives every scale is parity, which draws nothing, or a pairwise law, whose towers are
+       chains.
      - At the level of patterns of patterns the two/three boundary reappears as "pairwise or parity". Emergent information does not
        grow by naming patterns, except parity's one bit per loop.
      - If anything in the base is universal across scales, it is parity's cycles, the holes. This is a reading of the owner's
@@ -3376,15 +3387,16 @@ So holes come in two kinds:
      - Seven of the 16 classes are rebuilt by their own copies: parity, and from four copies "x or (y ≠ z)", the three-excluded
        classes with a symmetry of order two, and twisted not-all-equal. Their intersections reach parity or an equality.
      - The monotone atoms never are.
-   - **Not-all-equal survives through the Fano plane (proved).**
-     - Its copies on the seven lines of the Fano plane, with one point split into the three legs, rebuild it.
-     - No gadget of six or fewer copies does, and at seven the punctured Fano plane is the only one (property B: m(3) = 7).
+   - **Not-all-equal survives through the Fano pattern (proved).**
+     - Its copies on the seven knots of the Fano pattern, with one distinction split into the three legs, rebuild it.
+     - No gadget of six or fewer copies does, and at seven that split Fano pattern (the literature's punctured Fano plane) is the only
+       one (property B: m(3) = 7).
      - Each allowed tuple has exactly five completions. So not-all-equal is an exact counted fixed point, and each level adds
        log₂ 5 bits per copy.
    - **Reading.**
      - With hubs, emergence beyond parity persists across scales.
-     - The smallest pattern of patterns of the frustration knot is a finite projective plane, an incidence geometry produced by the
-       law's own self-reproduction.
+     - The smallest pattern of patterns of the frustration knot is the Fano pattern, the literature's projective plane of order two,
+       picked out by the law's own self-reproduction.
      - Hubs add nothing to pairwise relations (equalities in parallel stay equalities), but they let three-place knots run in
        parallel.
    - **Next (taken).** Exact self-similar laws (next entry).
@@ -3396,13 +3408,13 @@ So holes come in two kinds:
      - Twisted not-all-equal is exact from four copies, and the two three-excluded classes from five.
      - Not-all-equal is exact at seven copies (the Fano plane).
      - "x or (y ≠ z)" is rebuilt but never exact: its counts drift toward a decomposable pair of tuples.
-   - **What the towers are (proved).** Each law's smallest exact self-reproduction builds a definite space:
+   - **What the towers are (proved).** Each law's smallest exact self-reproduction fixes a definite tower, drawn as:
      - the Sierpinski gasket for parity, growth exponent log₂ 3;
      - a triangle subdivided into four with private midpoints for twisted not-all-equal, exponent 2;
-     - a tower of Fano planes for not-all-equal, exponent log₃ 7.
+     - a tower of Fano patterns for not-all-equal, exponent log₃ 7.
    - **The limit (proved).**
-     - Every exact tower is finitely ramified: bounded treewidth, three points cut off any sub-tower. So exact self-reproduction
-       never builds separation in two or three dimensions.
+     - Every exact tower is finitely ramified: bounded treewidth, three distinctions cut off any sub-tower. So exact
+       self-reproduction never makes separation in two or three dimensions.
      - Its corners are exactly as correlated at distance s^k as at distance 1, but only at the hard law. Softening grows at least
        threefold per level, the classical picture for finitely ramified fractals.
    - **Reading.**
@@ -3411,10 +3423,10 @@ So holes come in two kinds:
        emergence fades.
    - **Next (taken).** Shared-boundary self-reproduction (next entry).
 
-   **2026-10-29: self-reproduction on genuinely two-dimensional space** (`SHARED-SUBDIVISION-20261029-001`).
+   **2026-10-29: self-reproduction on the drawn triangular lattice** (`SHARED-SUBDIVISION-20261029-001`).
    - **The test (exact census).**
      - Copies of one knot class sit on the triangular lattice, on up triangles or on all triangles, which gives 122 rules.
-     - Every triangle is cut into four, or nine, with new vertices shared between neighbours. This space is not finitely ramified.
+     - Every triangle is cut into four, or nine, with new vertices shared between neighbours. This substrate is not finitely ramified.
      - Only 22 rules reproduce themselves exactly at scale 2, and 6 at scale 3.
      - Every exact rule has an affine solution set and zero entropy density. Not-all-equal (Wannier's antiferromagnet) never does.
    - **Who survives (proved).**
@@ -3425,12 +3437,13 @@ So holes come in two kinds:
      - **Twisted not-all-equal.** Exact at every scale, but only by collapsing into lines of constant value. No triangle then carries
        a knot.
    - **Reading.**
-     - On genuine two-dimensional space, exactness keeps a knot only through parity. Everything else that survives is pairwise
+     - On a substrate drawn in two dimensions that is not finitely ramified, exactness keeps a knot only through parity. Everything else that survives is pairwise
        (lines), and all the other knots fail.
      - This is the two/three boundary appearing as a law of self-similarity.
-     - The parity families are rigid on the plane, so under the source-aware reading nothing native lives there.
-     - Non-linear emergence reproduces itself exactly only on tree-like spaces (the previous entry).
-   - **Next (recommended, awaiting the owner).** Is exact self-reproduction on genuine space always affine (2/3)?
+     - The parity families are rigid on the drawn plane, so under the source-aware reading nothing native lives there.
+     - Non-linear emergence reproduces itself exactly only on tree-like substrates (the previous entry).
+   - **Next (recommended, awaiting the owner).** Is exact self-reproduction on substrates that are not finitely ramified always
+     affine (2/3)?
      - First test: all 256 relations on three bits on up triangles, and a local criterion that would make it a theorem.
      - Alternative (1/3): how fast not-all-equal's corner correlation decays across scales (Wannier criticality).
 
@@ -3447,9 +3460,9 @@ So holes come in two kinds:
      its own copies. With weights ±1, 14 of the 16 classes are rebuilt and 12 exactly; 10 are exact on the native triangle, so the
      Sierpinski gasket carries signed not-all-equal at every level. Signs supply what hubs supplied (identity wires by
      cancellation). The Fibonacci knots are never rebuilt with ±1, and the symmetric atoms never exactly.
-   - **What did not change.** On genuine two-dimensional space the answer stays parity: the shared-boundary substitution keeps
+   - **What did not change.** On the drawn triangular lattice the answer stays parity: the shared-boundary substitution keeps
      only parity for signed laws constant on rotation orbits on the first three spheres, as `SHARED-SUBDIVISION-20261029-001` found
-     with counts on the triangular lattice. Interference revives knots in finitely ramified towers, not yet in two dimensions.
+     with counts on the triangular lattice. Interference revives knots in finitely ramified towers, not yet on substrates drawn in two dimensions without finite ramification.
    - **Their cores, replayed (an exploratory experiment).** The eight-square identity and its 3-versus-6-bit costs, the grouped
      pieces of Anthropic's Lemma 2, the partition pieces of its Theorem B at one to three bits, and the swap-matrix lemmas of
      OpenAI's construction recompute exactly from the papers' statements; the octonion sign table is a Hadamard matrix of order 8.
@@ -3458,9 +3471,9 @@ So holes come in two kinds:
      interference the owner's "harmonies" intuition points to: incommensurable signed parts that cancel into a whole.
    - **Owner decision (2026-10-29).** Cancelling witnesses were adopted as a second reading beside the existential one, reopenable
      (question 2; [record](../research/INTERFERENCE-20261029-001/canonical_correction_request.md)).
-   - **Next (taken).** Interference on genuine two-dimensional space (next entry).
+   - **Next (taken).** Interference on the drawn triangular lattice (next entry).
 
-   **2026-10-29: interference on genuine two-dimensional space** (`SIGNED-SUBDIVISION-20261029-001`).
+   **2026-10-29: interference on the drawn triangular lattice** (`SIGNED-SUBDIVISION-20261029-001`).
    - **The test.** The 122 triangular-lattice rules of `SHARED-SUBDIVISION-20261029-001`, now weighted. Weights ±1 give 135,440
      signed rules in 944 gauge classes; arbitrary real weights are read through the interference reading.
    - **Signs (proved by exhaustion).** No new rule reproduces itself, not even its allowed states. The old exact rules keep their
@@ -3479,9 +3492,10 @@ So holes come in two kinds:
      laws. But it failed its own power check, missing two known exact classes, so it counts only as exploratory evidence. Its one
      candidate, at scale 3, was a degenerate point where nearly everything cancels, and it fails on the 3-torus.
    - **Reading.**
-     - Interference reproduces knots on finitely ramified, tree-like space but not on genuine two-dimensional space. There, shared
+     - Interference reproduces knots on finitely ramified, tree-like substrates but not on the drawn triangular lattice. There, shared
        midpoints make a cancellation inside one triangle impossible to arrange across the lattice.
-     - Exact self-reproduction on genuine space is affine under every reading tried: existential, counted, signed and real.
+     - Exact self-reproduction on substrates that are not finitely ramified is affine under every reading tried: existential,
+       counted, signed and real.
    - **A lead (scoping, not evidence).** Take not-all-equal with −1 exactly when the first corner is the odd one out. It reproduces
      itself exactly on the level-k Sierpinski gaskets (copies on the up triangles of a k-subdivided triangle) for k = 2 to 11, with
      factors −1, −4, 13, 85, −634, …, in exact integer arithmetic. These gaskets are finitely ramified, with dimension
@@ -3489,8 +3503,8 @@ So holes come in two kinds:
      neighbouring ones. So the joining triangles are what breaks exactness.
    - **Next (taken).** Signed not-all-equal on every level-k gasket (next entry).
 
-   **2026-10-29: a knot that builds every gasket** (`SIGNED-GASKETS-20261029-001`).
-   - **The law.** Signed not-all-equal, −1 exactly when the first corner is the odd one out, has three faces.
+   **2026-10-29: a knot reproduced on every gasket** (`SIGNED-GASKETS-20261029-001`).
+   - **The law.** Signed not-all-equal, −1 exactly when the first corner is the odd one out, can be written three ways.
      - It is (−1)^a times the Legendre symbol of a + b + c modulo 3.
      - It is the multiplication of the Eisenstein numbers.
      - It is a standing wave of two opposite sixth-root phases, sin(πE/3) with E = Σ(−1)^x.
@@ -3499,7 +3513,8 @@ So holes come in two kinds:
      - Each copy splits into its two phases. The gasket's two edges from the first corner lock the phases at the three corners
        together, and flipping every phase is odd. So the phases always recombine into the same wave.
      - Modulo 3 the gasket collapses to the law, because the only surviving edge sets are the empty set and the two edges.
-   - **So a knot builds space of every dimension below 2.** The towers of these gaskets are exactly self-similar, of dimension
+   - **So a knot reproduces itself on drawn substrates of every dimension below 2.** The towers of these gaskets are exactly
+     self-similar, of dimension
      log(k(k+1)/2)/log k → 2, and their corner relation is the knot (K1–K3).
      - The plane stays out of reach. It is these gaskets plus the triangles joining them, and the joining triangles break exactness
        (the previous entries).
@@ -3509,10 +3524,10 @@ So holes come in two kinds:
      - linear parity, at powers of 2.
      The other 42 are single-level coincidences.
    - **Reading.** Harmonies in a precise form. The knot is the point of a family of standing waves where the all-equal states
-     cancel exactly, and the space it builds is the space on which its two phases never mix.
+     cancel exactly, and the substrate it reproduces itself on is one on which its two phases never mix.
    - **Next (taken).** The standing wave in every dimension (next entry).
 
-   **2026-10-29: a knot that builds space in every dimension** (`SIMPLEX-GASKETS-20261029-001`).
+   **2026-10-29: a knot reproduced on simplices of every dimension** (`SIMPLEX-GASKETS-20261029-001`).
    - **Every dimension, every level (proved).** The standing wave (−1)^(x₀) sin(θE)/sin θ reproduces itself exactly on the
      Sierpinski simplex of every dimension d and every level k.
      - The proof is the gasket's: the d edges from the first corner lock the phases of all d + 1 corners, and flipping every phase is
@@ -3524,7 +3539,7 @@ So holes come in two kinds:
      - The Legendre member (−1)^(x₀)(E | 3) is an exact knot in every dimension d ≥ 2.
      - In odd dimension every member is a knot, because the balanced weight E = 0 always cancels. In three dimensions that knot is
        "not exactly two ones".
-     - These knots build towers whose dimension log C(k+d−1, d)/log k rises towards d.
+     - These knots reproduce themselves on towers whose dimension log C(k+d−1, d)/log k rises towards d.
    - **The second wave.** The cosine wave (−1)^(x₀) cos(θE) keeps its form only when the number of simplices is odd; otherwise it
      turns into the sine wave. Under refinement the sine wave is the attractor. The period-4 family of the plane was the cosine wave.
    - **What persists (censuses in three and four dimensions).** The knots exact at every level computed are exactly standing waves.
@@ -3534,7 +3549,7 @@ So holes come in two kinds:
    - **Reading.**
      - The gluing is the Sierpinski substitution, chosen rather than derived. What the law supplies is a fixed point of that
        substitution at every scale and in every dimension.
-     - These spaces are finitely ramified and the laws signed, so the three-manifold result (bits see only parity) stands.
+     - These substrates are finitely ramified and the laws signed, so the three-manifold result (bits see only parity) stands.
      - What blocks knots is coupling through shared faces, not dimension.
    - **Next (taken).** Interference in three dimensions (next entry).
 
@@ -3551,8 +3566,8 @@ So holes come in two kinds:
      - It tells whether the linking form gives 1/2 on an element of order 2. That is not a function of homology: it separates RP³ # RP³ from
        the quaternion space, which counting cannot.
    - **Reading: three regimes.**
-     - On genuine planar space, laws stay parity, even with signs.
-     - On finitely ramified space, standing-wave knots build space in every dimension.
+     - On planar substrates that are not finitely ramified, laws stay parity, even with signs.
+     - On finitely ramified substrates, standing-wave knots reproduce themselves in every dimension.
      - On three-manifolds, parity plus one phase bit.
      - Coupling through shared faces keeps relations affine, and interference then reads global phases rather than building structure.
        The owner's "incommensurables cancelling" appears literally: classes with a³ = 1 cancel those with a³ = 0, and the cancellation is
@@ -3561,7 +3576,7 @@ So holes come in two kinds:
 
    **2026-10-29: is the harmony forced?** (`WAVE-UNIQUENESS-20261029-001`).
    - **Among knots, yes.**
-     - In the plane, a three-place law that reproduces itself on the gaskets of levels 2 to 5 is a standing wave, or a law that couples
+     - On the planar gaskets, a three-place law that reproduces itself at levels 2 to 5 is a standing wave, or a law that couples
        nothing: a product, a law forcing two corners equal, or one of two frozen laws.
      - The only knot that does so is signed not-all-equal, with its rotations (proved for every symmetric law; for general laws outside
        one degenerate stratum).
@@ -3574,8 +3589,8 @@ So holes come in two kinds:
        gasket, so their factor is that of a path.
      - They are never knots.
    - **Reading.**
-     - Building every scale while coupling three places requires interference: a cancelling pair of phases.
-     - Everything else that builds every scale couples at most two places at a time.
+     - Reproducing itself at every scale while coupling three places requires interference: a cancelling pair of phases.
+     - Everything else that reproduces itself at every scale couples at most two places at a time.
    - **Next (taken).** Which gluings carry the harmony (next entry).
 
    **Words in the three-regular entries.** From here up to the circle entries, apart from the two axis entries (the axis built from

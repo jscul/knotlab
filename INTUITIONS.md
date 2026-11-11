@@ -14,6 +14,18 @@ divided into lessons, and each lesson builds on the ones before it. Chapter 1
 sets up bits, rules and the notation, including how to read A, B → c, before
 anything is built from them.
 
+**A note on words.** The program is trying to build space, so it cannot yet
+use words that take space for granted. Triangle, torus, sphere, plane, surface,
+edge and face name things that sit in a two- or three-dimensional world, and
+no such world has been built here. The guide therefore names its objects by
+knots and counts alone, and uses a spatial word only as the name of a classical
+object it cites, for a picture it says outright is drawn, or for space,
+distance and dimension themselves, each with the native definition given where
+it is used. Lesson 1.1 states the rule, and the
+[glossary](#glossary), under "Words for space", maps each of the guide's words
+to its classical spatial name. Spatial reality, if it comes, is to come later, built in
+simulations from these rules.
+
 | Label | Meaning |
 | --- | --- |
 | **Proved (Lean)** | Kernel-checked in [`lean/`](lean/), core Lean 4, standard axioms only |
@@ -86,6 +98,44 @@ distinction: two alternatives of which exactly one holds. A distinction is one
 bit, and its two alternatives are written 0 and 1. Nothing else is assumed.
 There is no space, no order and no number beyond the two values.
 
+**Words for space.** Because no space is assumed, the guide does not call its
+objects triangles, tori, spheres, planes, surfaces, edges or faces: those words
+belong to a world of two or three dimensions that the program has not built.
+It names them by distinctions, knots and counts instead. A three-place knot is
+a knot, not a triangle; two distinctions in a common knot are a co-knotted
+pair, not an edge.
+
+Knots **overlap** by sharing distinctions, and nothing says how. One knot may
+share distinctions with every other knot and another with only a few; nothing
+makes knots meet "along their sides", one neighbour at a time. A collection of
+knots, finitely or infinitely many, together with the pattern of which
+distinctions they share, is what the guide calls a **base**, in the sense of
+the owner's "base reality": different patterns of overlap, infinite ones
+included, are different bases. In the owner's words (11 November 2026), loops
+"weave in and out and around other loops", the whole is "immensely
+complicated", and the structure that emerges is "folded" and "compressed".
+
+One special pattern has a name of its own: when every co-knotted pair lies in
+exactly two knots and the knots at each distinction close into one cycle, the
+knots form a **two-fold weave**, which the literature draws as a surface. Much
+of the record studies two-fold weaves because they are the easiest to count,
+but a two-fold weave is one flat way of writing an overlap down. It is not
+what a base is, and not the emergent structure the program is after.
+
+A spatial word appears in only three ways:
+
+- as the literature's name for a classical object the guide cites, such as a
+  planar graph or a 3-manifold, marked as that object and not ours;
+- for a picture the guide says outright is drawn, such as the cube of states
+  below or the grid of the Game of Life;
+- as space, distance or dimension, the things the program is trying to build,
+  each with its native definition, such as bond distance (lesson 4.6).
+
+The table under "Words for space" in the [glossary](#glossary) gives each of
+the guide's words with its classical spatial name, so that results stay findable
+in the literature. Spatial reality is what the program hopes to reach later,
+by building simulations from these rules.
+
 **Variables.** A variable names a distinction. The guide writes the
 distinctions that loops bring (lesson 1.4) as capital letters, such as A and B,
 the contact between loops as c, helper variables called witnesses (lesson 1.6)
@@ -103,9 +153,13 @@ states:
 
 Each new variable doubles the count, so n variables have 2^n joint states.
 
-**The cube of states.** It helps to draw the eight states as the corners of a
-cube, with one direction for each variable: A runs from left to right, B from
-front to back, and c from bottom to top.
+**The cube of states.** Link two states when they differ in exactly one
+variable. The eight states and their twelve links form the **flip graph** of
+three variables. It helps to draw it, and the usual drawing is a cube, the
+cube of states: each state is drawn as a corner, each link as
+an edge, and each variable as one direction, with A running from left to
+right, B from front to back, and c from bottom to top. The cube is only the
+drawing; the links are what the states are.
 
 ```text
           011 ─────── 111
@@ -116,10 +170,10 @@ front to back, and c from bottom to top.
       000 ─────── 100
 ```
 
-Two states are **neighbours**, joined by an edge of the cube, when they differ
-in exactly one variable, as 110 and 111 do. They are **opposite** when they
+Two states are **neighbours**, linked in the flip graph, when they differ in
+exactly one variable, as 110 and 111 do. They are **opposite** when they
 differ in all three, as 000 and 111 do. Chapters 1 to 3 read many patterns
-off this cube. It is a picture of the states, not a space in which the
+off this drawing. It is a picture of the states, not a space in which the
 variables sit.
 
 ### 1.2 Rules and what they allow
@@ -229,8 +283,9 @@ nothing here is a claim about biology.
 
 ### 1.4 The picture
 
-**Lines and loops, state by state.** The program starts from a picture of
-lines, loops and what lies between loops. Each part of the picture is a
+**Open chains and loops, state by state.** The program starts from a picture
+of open chains, loops and what lies between loops (the owner first called the
+open chains lines). Each part of the picture is a
 statement about small systems of rules like those of lesson 1.2, so it can be
 checked state by state. With states written in the order x, y, z:
 
@@ -238,17 +293,17 @@ checked state by state. With states written in the order x, y, z:
   every later one is 1, so the chain only orders its members;
 - closing the chain into a loop with z → x leaves 000 and 111: the three are
   forced to be equal, so the loop has collapsed to one free bit, as if it were
-  a single point;
+  a single distinction;
 - a loop of "equal" and "differ" steps does the same or worse:
   x = y, y ≠ z, z ≠ x allows 001 and 110, one free bit again, and
   x = y, y = z, z ≠ x allows nothing.
 
 The picture itself:
 
-- **A line is not enough.** A chain of implications only orders its members,
+- **An open chain is not enough.** A chain of implications only orders its members,
   and open strings can always be rearranged into one another.
 - **A single loop is not enough.** A loop of implications forces all its
-  members to be equal, so it collapses to a point. A loop of "equal" and
+  members to be equal, so it collapses to a single value. A loop of "equal" and
   "unequal" steps collapses to one free bit, or contradicts itself.
 - **What is real is what lies between bound loops.** The binding belongs to
   the pair, not to either loop. No part smaller than the whole shows it, and
@@ -413,14 +468,19 @@ one three-place law, towers of patterns of patterns keep only parity: every
 other law reaches the free relation, which constrains nothing, within three
 levels ([GEOMETRY-LAW-20261029-001](research/GEOMETRY-LAW-20261029-001/geometry_from_a_law.md)).
 
-**Shapes that run on forever.** A line has no end, and a circle can be as large
-as you like. The record has a shape of this kind built with nothing drawn: a
-rule that grows only at knots holding two open ends grows the number line from
-a single knot, while a region with no open ends freezes
+**Shapes that run on forever.** In the owner's words, a line has no end and a
+circle can be as large as you like. The record has a shape of this kind built
+with nothing drawn: a rule that grows only at knots holding two open ends grows
+an endless chain from a single knot, along which bond distance (lesson 4.6)
+counts one per step, while a region with no open ends freezes
 ([OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
-Circles depend on the law. Laws on periodic layouts make polygons, whose π is a
-rational number, and an exactly round circle came from a random layout with no
-preferred direction ([LOGIC-CIRCLE-20261107-001](research/LOGIC-CIRCLE-20261107-001/logic_circle.md)).
+The literature's name for such a chain is the number line. The record's
+circles are drawn: on a layout given in advance, the distinctions within a
+fixed bond distance of one of them are marked, and their outline is drawn.
+That outline depends on the law. Periodic layouts give polygons, whose ratio of
+perimeter to diameter (π, in Gołąb's sense) is a rational number, and an
+exactly round outline came from a random layout with no preferred direction
+([LOGIC-CIRCLE-20261107-001](research/LOGIC-CIRCLE-20261107-001/logic_circle.md)).
 
 **Every bond is finite.** A shape can run on forever, but each binding in it
 joins finitely many things. No system of clauses binds infinitely many loops
@@ -441,8 +501,8 @@ That is open: whether a learning rule, shown what a system allows, can find
 rules, and rules within rules, that make it.
 
 **Two senses of the word.** From lesson 3.3 on, the guide also uses "shape" in
-a narrow sense: the sets of variables a system leaves free, drawn as points,
-edges and filled triangles. The narrow shape is one exact view of the broad
+a narrow sense: the sets of variables a system leaves free, which the
+literature draws as points, edges and filled triangles. The narrow shape is one exact view of the broad
 one, which shows the holes and knots inside what a system allows.
 
 **Reading.** Apart from the results it cites, this lesson is the owner's
@@ -501,8 +561,8 @@ binding survives each erasure. *Proved (Lean):* `ForgettingKernel.lean`
 
 ### 2.2 Knots on the cube
 
-**Free pairs on the cube.** The cube of lesson 1.1 turns the knot test on three
-variables into a picture. Mark the states a relation excludes. A pair of
+**Free pairs on the cube.** The flip graph of lesson 1.1, drawn as the cube of
+states, turns the knot test on three variables into a picture. Mark the states a relation excludes. A pair of
 variables, say A and B, is constrained exactly when some combination of their
 values never occurs, and that happens exactly when both completions of the
 combination are excluded: the state with c = 0 and the state with c = 1. Those
@@ -516,18 +576,18 @@ leaves a pair. So a relation on three variables is a knot exactly when it
 excludes at least one state (K1) and no two of its excluded states are
 neighbours (K2).
 
-- The atom excludes the single corner 110, so it is a knot.
-- Parity A ⊕ B ⊕ c = 0 excludes the four corners with an odd number of 1s:
+- The atom excludes the single state 110, so it is a knot.
+- Parity A ⊕ B ⊕ c = 0 excludes the four states with an odd number of 1s:
   001, 010, 100 and 111. Changing one bit changes the number of 1s by one, so
-  no two of these corners are neighbours, and parity is a knot. No knot on
-  three variables excludes more corners than parity does.
+  no two of these states are neighbours, and parity is a knot. No knot on
+  three variables excludes more states than parity does.
 - Not-all-equal excludes 000 and 111, which are opposite, so it is a knot.
 - The common hub excludes 010, 100 and 110, and 110 is a neighbour of both of
   the others, so it is not a knot.
 
-**Independent sets.** A set of corners with no two of them neighbours is called
-an independent set of the cube. The knots on three variables are therefore the
-nonempty independent sets of excluded states. Two excluded corners of a knot
+**Independent sets.** A set of states with no two of them neighbours is called
+an independent set of the flip graph (classically, of the cube). The knots on three variables are therefore the
+nonempty independent sets of excluded states. Two excluded states of a knot
 never differ in just one variable: they differ in two, which is called Hamming
 distance two (as 110 and 000 do), or they are opposite. The next lesson counts
 these knots: there are 34, in five shapes.
@@ -550,22 +610,23 @@ and parity allows 4 and holds log₂(8/4) = 1 bit.
   | Excluded states | Relations | Bits the whole holds and no pair does |
   | --- | --- | --- |
   | 1 (a single three-literal clause: the atom) | 8 | 0.193 |
-  | 2, opposite corners | 4 | 0.415 |
+  | 2, opposite states | 4 | 0.415 |
   | 2, at Hamming distance two | 12 | 0.415 |
   | 3 | 8 | 0.678 |
   | 4 (parity, even or odd) | 2 | 1.000 |
 
   A relation on three variables has every pair free exactly when no two of
-  its excluded states differ in one coordinate. So a knot's excluded states
-  form a nonempty independent set of the 3-cube. There are 34 such sets, in
-  five classes under the cube's 48 symmetries.
+  its excluded states differ in one variable. So a knot's excluded states
+  form a nonempty independent set of the flip graph (the 3-cube of the
+  literature). There are 34 such sets, in five classes under the flip graph's
+  48 symmetries: the renamings and negations of the three variables.
 - **A knot hides at most one bit, and only parity hides a full bit.**
   *Proved (here).* Forgetting one variable of a knot on m variables leaves all
   2^(m−1) assignments of the others, and each needs at least one allowed
   state. So a knot allows at least half of its states. If it allows exactly
   half, forgetting the last variable is a bijection, so the relation is the
   graph of a function f: the last variable is fixed by the others. Two allowed
-  states that differ in one coordinate would make that projection two-to-one,
+  states that differ in one variable would make that projection two-to-one,
   so f changes whenever one input bit changes. That makes f parity or its
   complement.
 - **The atom is the smallest bond.** It excludes the fewest states. It is
@@ -662,67 +723,76 @@ addresses that question.
 ### 3.3 The shape of a system
 
 **Shapes.** Lesson 1.2 asked whether one set of variables is free. Asking it of
-every set at once gives a picture, the system's **shape**:
+every set at once gives the system's **shape**: the collection of all its free
+sets. The guide names the parts of a shape by their size, as free singles,
+free pairs, free triples and so on. The literature draws them, and the drawing
+is a useful picture as long as it stays a picture:
 
-- each free variable is a point;
-- each free pair is an edge between two points;
-- each free triple is a filled triangle;
-- each free set of four is a filled tetrahedron, and so on.
+- each free single is drawn as a point;
+- each free pair as an edge between two points;
+- each free triple as a filled triangle;
+- each free set of four as a filled tetrahedron, and so on.
 
 **Simplicial complexes and holes.** Every part of a free set is free, since
 each combination of values on the part extends to a combination on the whole
-set, and that one occurs. So every side of a filled triangle is drawn too. A
+set, and that one occurs. So every part of a free triple is in the shape too. A
 collection of sets that contains every part of each of its sets is called a
 **simplicial complex**, and a system's shape is one. Topology studies such
-shapes, and in particular their **holes**: a loop of free sets with nothing
-free filling it, or in higher dimensions a hollow sphere of them.
+collections, and in particular their **holes**: a cycle of free pairs that no
+free sets fill in, or the same at a larger size, which the literature draws as
+a hollow sphere. A hole's **dimension**, in the literature's count, is one less
+than the size of the sets that close it: a cycle of pairs is a hole of
+dimension one.
 
 **Three examples.** On three variables:
 
-- with no rule at all, every set is free, and the shape is a filled triangle;
+- with no rule at all, every set is free, and the shape is the whole free
+  triple, drawn as a filled triangle;
 - under the atom, the three pairs are free but the triple is not, so the shape
-  is a hollow triangle, three edges around a missing face. That is a circle, a
-  hole of dimension one;
-- under A ≠ B, with c unused, the edge between A and B is missing, so the
-  shape is two edges meeting at c, with no hole.
+  is a **hollow triple**: three free pairs closing a cycle around a triple
+  that is not free, drawn as an empty triangle. It is a hole of dimension one;
+- under A ≠ B, with c unused, the pair A, B is not free, so the shape is the
+  two free pairs A, c and B, c, sharing c, with no hole.
 
 **Flags and joins.** Two terms from topology appear in the next lesson. A shape
-is a **flag** shape when every set whose pairs are all edges is filled in, so
+is a **flag** shape when every set whose pairs are all free is itself free, so
 that its pairs decide all of it. Two systems on separate variables, set side by
 side, have the **join** of their shapes as their shape: a set is free when its
-part in each system is free. The join of two circles is a three-dimensional
-sphere (*Classical*).
+part in each system is free. The join of two hollow triples has a hole of
+dimension three, which the literature draws as a three-dimensional sphere
+(*Classical*).
 
 ### 3.4 Holes and knots
 
 **Hole or knot.** The two words are easy to confuse. A system's **shape** is
-built from what it leaves free: each free distinction is a point, each pair
-that takes all four combinations is an edge, each free triple is a filled
-triangle, and so on. A **hole** is any gap in that shape. A **knot** is the
-smallest kind of hole: a set whose every part is free, but which is not free
-itself.
+built from what it leaves free: its free distinctions, its pairs that take all
+four combinations, its free triples, and so on. A **hole** is any gap in that
+shape. A **knot** is the smallest kind of hole: a set whose every part is free,
+but which is not free itself.
 
 ```text
-a knot: an empty triangle            a hole made by ties: a square
+a knot: a hollow triple              a hole made by ties: a hollow
+(drawn as an empty triangle)         cycle of four (drawn as a square)
 
         A                               a ──── b
        / \                              │      │
       B ─ c                             d ──── c
 
 all three pairs are free;            the pairs a–c and b–d are tied, so
-A, B and c together are not          those edges are missing; the gap is
-                                     made of missing edges
+A, B and c together are not          they are missing from the shape; the
+                                     gap is made of missing pairs
 ```
 
 - **Pairwise rules make only "flag" shapes.** In a 2-CNF system a set is free
   exactly when all its pairs are free. So two-place rules can make holes, as
-  the square shows, but never an empty triangle. *Checked* (`SpaceTest`; of
-  399 random 2-clause systems on six variables, 29 have holes and none has an
-  empty triangle).
+  the hollow cycle of four shows, but never a hollow triple. *Checked*
+  (`SpaceTest`; of 399 random 2-clause systems on six variables, 29 have holes
+  and none has a hollow triple).
 - **Every knot is a hole, but not every hole is a knot.** To tell whether
   things are bound, look at the knots, not at the size of the holes. Two
-  unrelated knots side by side leave a three-dimensional hole, because the
-  join of two circles is a 3-sphere, yet nothing binds them.
+  unrelated knots side by side leave a hole of dimension three, because the
+  join of two hollow triples has one (the literature's 3-sphere), yet nothing
+  binds them.
 - **Logic allows every shape.** Every simplicial complex is the shape of some
   system. *Proved (Lean):* `every_complex_is_a_nerve` in `LoopNerve.lean`
   builds one from loops whose contacts permute witness values.
@@ -819,7 +889,7 @@ the preferences it breaks, possibly with weights, so under competition the
 allowed states are those of least energy.
 
 **The intuition.** Ask three distinctions to differ pairwise. Around the
-triangle the differences cannot all hold, so the preferences are
+cycle of three the differences cannot all hold, so the preferences are
 *frustrated*. The states that break exactly one preference are the six
 not-all-equal states, and those form a knot. Competition can make a knot from
 pairs, but only this kind.
@@ -827,7 +897,8 @@ pairs, but only this kind.
 - **Exactly four knots come from competing pairs on three variables.** A knot
   on three variables is the set of least states of an energy with only one-
   and two-variable terms exactly when its excluded states are an opposite
-  pair. These are the four not-all-equal relations, the frustrated triangles.
+  pair. These are the four not-all-equal relations, the frustrated three-cycles
+  (the literature's frustrated triangles).
 - **None on four or more variables.**
 - **With hidden variables, competing pairs make every knot.** Ten 2-clauses
   and one hidden variable have the clause `x ∨ y ∨ z` as their best states.
@@ -858,7 +929,7 @@ exactly one choice of the numbers p, q, r and s, and s is its coefficient on
 the pair.
 
 **Reading.** What a knot certifies depends on what is hidden. With every
-variable visible, a knot other than the frustrated triangles cannot come from
+variable visible, a knot other than the frustrated three-cycles cannot come from
 pairwise terms, even competing ones. With hidden variables, a knot certifies
 only that the rules are not pairwise rules that must all hold.
 
@@ -910,8 +981,8 @@ walk gives the walk's **holonomy**, and a value that a permutation leaves
 unchanged is one of its **fixed points**. A loop can also be given a selector,
 so that it either passes the witness unchanged or applies its holonomy, and a
 set of loops is switched on together when all their selectors can be on at
-once. The **nerve** of a family of sets is the shape with one point for each
-set and a face for each group of sets that share an element.
+once. The **nerve** of a family of sets is the shape with one member for each
+set, in which a group of members is free when their sets share an element.
 
 *Proved (Lean):* `LoopNerve.lean`.
 
@@ -983,12 +1054,14 @@ those loops. A chain of two-place ties has no knot, and so no bond distance
 
 **Dimension read from the rules.** The distinctions within bond distance r of
 one of them form a **ball**. When the number in a ball grows like r^D, the
-rules have dimension D. Tseitin's parity law on the infinite grid of D
-dimensions has balls that grow like r^D, and so does the gauge law in the
-plane, so the allowed states alone recover the grid's dimension. In the plane
-both laws measure like a taxi, by
-steps along x plus steps along y, never along the diagonal (proved, with the
-gauge law's constants computed on a 41 × 41 box; the same record).
+rules have dimension D: this growth rate is the only meaning the guide gives
+the word. Tseitin's parity law on a drawn grid with D independent steps (the
+literature's ℤ^D) has balls that grow like r^D, and so does the gauge law on
+the drawn grid with two steps, x and y, so the allowed states alone recover
+the drawn grid's dimension. On that grid both laws count steps in x plus
+steps in y, never a step that combines the two (the literature's taxicab
+measure; proved, with the gauge law's constants computed on a 41 × 41 block;
+the same record).
 
 **The rules can disagree with the grid.** The grid sets a ruler for a parity
 law that has no ends: one in which every pattern it allows in a region can be
@@ -996,23 +1069,27 @@ reached from any allowed state by changing finitely many cells. Bond distance
 is then at least the separation divided by the law's range (proved).
 Ledrappier's law,
 in which every cell is the parity of two neighbours in the row before, has
-ends. Its three-place knots are exactly its Frobenius triangles, cells 2^k
+ends. Its three-place knots are exactly its Frobenius triples (drawn in the
+literature as triangles), cells 2^k
 apart are bonded as tightly as neighbours, and every ball is infinite (proved,
 the same record). So what the rules measure need not be the grid they are
 written on.
 
-**A line with nothing drawn.** A rule that grows only at knots holding two open
-ends grows exactly the number line from a single knot (proved,
+**A chain with nothing drawn.** A rule that grows only at knots holding two
+open ends grows exactly an endless chain from a single knot, along which bond
+distance counts one per step: the literature's number line (proved,
 [OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
-Here one axis does come from the rules alone.
+Here one of the owner's axes does come from the rules alone.
 
-**The plane is still drawn.** Every plane measured so far had its places, and
-which of them are neighbours, given before the rules were read: a grid, a
-declared network of rings, a group's table, or a gadget whose copies and
-stretch set the dimension. No tested law selects its own dimension (reading,
+**Two axes are still drawn.** Every board of dimension two measured so far had
+its places, and which of them are neighbours, given before the rules were
+read: a grid, a declared network of rings, a group's table, or a gadget whose
+copies and stretch set the dimension. No tested law selects its own dimension
+(reading,
 [LOGIC-AXIS-20261107-001](research/LOGIC-AXIS-20261107-001/logic_axis.md)).
-Under a uniform law, a plane of rings that keeps doubling and then stops reads
-the distance of a fixed torus (proved,
+Under a uniform law, a declared board of rings of dimension two that keeps
+doubling and then stops reads the bond distances of a fixed finite board that
+closes up in both steps (the literature's torus; proved,
 [GROW-STOP-20261110-001](research/GROW-STOP-20261110-001/grow_stop.md)), but its
 rings are declared. The register of assumptions records this default as A51,
 "Places and their neighbours are given before the rules"
@@ -1029,36 +1106,39 @@ neighbours (if u and v are one place, so are ux and vx); and one place has one
 value. *Classical:* the boards are then exactly the Schreier graphs of the
 subgroups of the free group on x and y. When no two names are one place the
 board is the tree, whose balls grow exponentially; when xy and yx always are,
-it is the plane.
+it is the **commuting board**, whose balls grow like r², the literature's
+grid ℤ², usually drawn as the plane.
 
-- **Rules that name no shape never choose the plane (proved).** Call a law
+- **Rules that name no shape never choose the commuting board (proved).** Call a law
   relation-free when its clauses say only which names are one place, never that
   some word comes back to where it started. If such a law allows any infinite
-  board, it also allows the tree. So it never forces the plane, or any other
+  board, it also allows the tree. So it never forces the commuting board, or any other
   infinite board. Far from the few places that look unique, every local view
   repeats, and the views can be unfolded into the tree. Such a law can force a
   finite board, and the rule "two names that look alike are one place" always
   makes the board finite
   ([BOARD-DIST-20261110-001](research/BOARD-DIST-20261110-001/board_dist.md)).
 - **One named shape is enough (proved).** A clause at every name saying that
-  xyx⁻¹y⁻¹ comes back, the closing square, forces exactly the plane when it is
-  joined with tiles that cover the plane but never periodically (the same
-  record).
-- **The values can forbid a square (computed).** In 60 of the 1,024 Life-like
-  one-bit laws the board is bound to the values beyond "one place, one value".
-  Closing the square at a name u makes u and uxyx⁻¹ neighbours. When a 0 must
-  have only 1s around it, they cannot both be 0, so the square's distinction
-  and those two values form one clause of three, a knot (the same record).
+  the four steps xyx⁻¹y⁻¹ come back to where they started, the **commuting
+  cycle** (drawn in the literature as a closing square), forces exactly the
+  commuting board when it is joined with tiles that cover that board but
+  never periodically (the same record).
+- **The values can forbid a commuting cycle (computed).** In 60 of the 1,024
+  Life-like one-bit laws the board is bound to the values beyond "one place,
+  one value". Closing the commuting cycle at a name u makes u and uxyx⁻¹
+  neighbours. When a 0 must have only 1s around it, they cannot both be 0, so
+  the cycle's distinction and those two values form one clause of three, a
+  knot (the same record).
 - **A board made of names is frozen (proved).** Two different boards differ in
   infinitely many distinctions, and off the tree every place holds infinitely
   many names, so no finite change moves a board or its values. The program
   counts a knot as native only where finite changes can flip its variables, so
   no knot that involves the board is native.
 
-**The theorem.** A law that never names a relation cannot choose the plane:
-whenever it allows an infinite board, it allows the tree too, so no such law
-forces the plane. One closing square, joined with a tile law that covers the
-plane but never periodically, does choose it. The question of which boards
+**The theorem.** A law that never names a relation cannot choose the commuting
+board: whenever it allows an infinite board, it allows the tree too, so no
+such law forces the commuting board. One commuting cycle, joined with a tile
+law that covers the board but never periodically, does choose it. The question of which boards
 local rules can force is also studied as graph subshifts (Arrighi, Durbec and
 Guillon 2023).
 
@@ -1068,7 +1148,7 @@ clause of finitely many variables. It still leaves the tree open for every law
 with infinitely many solutions, whatever its finite alphabet of values and
 however far, finitely, its rules reach. Such a law always has a solution that
 repeats nowhere, so no two names are one place and the board is the tree. The
-rule never forces the plane, though the plane is allowed for most one-bit laws
+rule never forces the commuting board, though that board is allowed for most one-bit laws
 ([LEIBNIZ-BOARDS-20261110-001](research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md),
 [WEAK-APER-20261110-001](research/WEAK-APER-20261110-001/weak_aperiodic.md)).
 Some laws have no finite board at all. Among the laws on three values that
@@ -1084,7 +1164,7 @@ variables then cannot make two places touch: whatever it allows, it also
 allows a world in which every place touches every other, or none does
 (Ramsey's theorem). The letters were drawing four neighbours that a rule can
 tell apart, and one connected world. Without them the board is no longer
-frozen: two edges that join the same pair of values can trade partners, and
+frozen: two links that join the same pair of values can trade partners, and
 the board takes part in knots with the values
 ([BARE-NAMES-20261110-001](research/BARE-NAMES-20261110-001/bare_names.md)).
 The values on it can change in place, with the board kept, wherever the world
@@ -1092,16 +1172,17 @@ comes in finite pieces. On the free board a change has to stop somewhere, and
 for most of these rules it never can
 ([PLACE-FLIP-20261110-001](research/PLACE-FLIP-20261110-001/place_flip.md)).
 Growing the board from a seed does not escape this either. A growing rule
-that closes no cycle grows a tree. One that closes squares can grow the
-whole plane, one place at a time, but it names each square as it closes it
+that closes no cycle grows a tree. One that closes commuting cycles can grow
+the whole commuting board, one place at a time, but it names each cycle as it
+closes it
 ([GROW-FACE-20261110-001](research/GROW-FACE-20261110-001/grow_face.md)).
 
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the
 board itself is made of distinctions, rules that never name a shape cannot
-choose the plane: they always leave the tree open. One rule that names the
-square can. In the owner's words of lesson 1.7, shapes have rules; the plane's
-rule is a shape.
+choose the commuting board: they always leave the tree open. One rule that
+names the commuting cycle can. In the owner's words of lesson 1.7, shapes have
+rules; the commuting board's rule is a shape.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1358,6 +1439,45 @@ remains open.
 
 - **Distinction.** Two alternatives of which exactly one holds: one bit
   (lesson 1.1).
+- **Flip graph.** The states of some variables, two of them linked when they
+  differ in exactly one variable. The guide draws the flip graph of three
+  variables as the cube of states, and the cube is only that drawing
+  (lesson 1.1).
+- **Base.** A collection of knots, finitely or infinitely many, together with
+  the pattern of which distinctions they share, in the sense of the owner's
+  "base reality". Knots **overlap** by sharing distinctions, and nothing limits
+  how many knots one knot meets (lesson 1.1).
+- **Two-fold weave.** A base in which every pair of distinctions sharing a
+  knot lies in exactly two knots and the knots at each distinction close into
+  one cycle. The literature draws it as a surface; it is one flat way of
+  writing an overlap down, not what a base is (lesson 1.1).
+- **Words for space.** The guide names its objects by distinctions, knots and
+  counts. It keeps spatial words for classical objects it cites, for pictures
+  it says are drawn, and for space, distance and dimension themselves, each
+  with its native definition (lesson 1.1). The table gives each of the guide's
+  words with the name the literature uses, so that results can be found
+  there.
+
+  | The guide's word | What it is, by counts alone | The literature's spatial name |
+  | --- | --- | --- |
+  | distinction | a variable | point, vertex |
+  | knot (three-place) | a relation on three distinctions passing K1–K3 | triangle; line of a triple system, such as the Fano plane |
+  | co-knotted pair | two distinctions sharing a knot | edge |
+  | base | knots and the pattern of which distinctions they share | (none; a space is what the program hopes to build from one) |
+  | two-fold weave | every co-knotted pair in exactly two knots, the knots at each distinction in one cycle | closed triangulated surface |
+  | closed tour | a cycle met by following, at each distinction, the next knot in a fixed order | face |
+  | Euler count | distinctions − co-knotted pairs + knots | Euler characteristic |
+  | loop pairs | (2 − Euler count) / 2, in a two-sided weave | genus, handles |
+  | zero-pair weave | a two-fold weave with Euler count 2 | sphere |
+  | one-pair weave | a two-sided two-fold weave with Euler count 0 | torus |
+  | balanced | every distinction in exactly six knots | flat |
+  | chain | knots in a row, bond distance growing by one per step | line, number line |
+  | ball | the distinctions within a bond distance of one of them | ball, disc |
+  | dimension | how fast balls grow: like r^D gives D | dimension |
+  | flip graph | states linked when they differ in one variable | cube (of states), hypercube |
+  | hollow triple | three free pairs whose triple is not free | empty triangle, circle |
+  | commuting board | the board on which the steps xy and yx always meet | grid ℤ², drawn as the plane |
+  | commuting cycle | the four steps xyx⁻¹y⁻¹ coming back to where they started | closing square |
 - **Joint state.** A value for every variable, written as a string such as 110
   (lesson 1.1).
 - **Relation.** The set of joint states a system of rules allows. Two systems

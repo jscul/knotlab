@@ -138,3 +138,36 @@ recorded. **Assumptions:** A63 overturned in the knots-alone setting with the su
 4. **Defects.** Payoff 1, concreteness 3, as recorded.
 
 **Recommendation.** Research directions, #1, awaiting the coordinator's go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 06:27 UTC and copied here verbatim.
+
+**Long-loop regime: both frozen predictions held, so A63 is overturned for worlds made of knots alone.** The face can be the knot. What still has to be given is the count of how knots meet.
+
+- **P1.** Not-all-equal reads every flat world in range whose shortest loop has length 5 or more faithfully: 434 tori (49–80 distinctions) and 15 Klein bottles (19–40).
+- **P2.** On all 349 tori with loops of length 6 or more, bond distance is graph distance + 1 at every distinction within three steps. Two steps is a short proof, which the referee checked; three steps is computed.
+- **Scope.** This is computed in range, to distance 3 and edge-width 6. The referee found faithful edge-width-5 tori where a bond shortcuts at three steps, so the ruler looks local. A stress test one size past (tori 81–96) is still running.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the long-loop regime, frozen | **Status:** Successful | P1 and P2 hold on 449 and 349 worlds |
+| Local direction — NAE on worlds of knots alone | Continue | The ruler beyond distance 3 and as a theorem is open |
+| Broader exploration — G1 space from a law | Known alternatives | The count from growth; the ruler; defects |
+| Long-term goal — G1 Space from a law (question 9) | Capability gained | Flat local geometry read natively from knots alone, the surface count given |
+
+**Corrections:** one, Not a block. The board line read "the rules have to say what a face is" as the obstacle. That holds where places are given; with knots alone the face is the knot, and the obstacle is how knots meet.
+**Goals:** a G1 checkpoint (capability gained), no goal change.
+**Assumptions:** A63 overturned in this setting, with the surface count given.
+**Basket:** the ruler (2/3, 2/3), the count from growth (2/3, 1/3), GROW-FACE#1 (2/3, 1/3); none taken yet. Direction 1 is the first.
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | NAE's ruler as a theorem | 2/3 — Substantial | 2/3 — Testable | Hidden-path bonds up, faithfulness and locality down → a proof, or the distance where it fails | Selected · awaiting go-ahead |
+| 2 | The count from growth | 2/3 — Substantial | 1/3 — Stated | A growth rule adding NAE knots while the reading stays faithful → closes into a surface, or not | Alternative · deferred |
+| 3 | Bond balls read dimension 2 | 2/3 — Substantial | 2/3 — Testable | Ball sizes to distance 6 on the largest tori → quadratic growth, or where exact search stops | Alternative · deferred |
+| 4 | Which defects NAE tolerates | 1/3 — Modest | 3/3 — Ready | Classify faithful swaps by distance → a rule, or none | Alternative · deferred |
+
+It's committed and published ([decision note](https://github.com/jscul/knotlab/blob/main/research/LONG-LOOP-20261111-001/long_loop.md)). I'm holding for a go-ahead and will fold in the stress test when it finishes.

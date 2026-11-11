@@ -5583,6 +5583,24 @@ So network holes come in two kinds:
    - **The line closes and is parked.** A uniform local law, static or growing, chooses the plane only by naming a face; growth adds
      one world with no quotient, not a face ([decision note](../research/GROW-FACE-20261110-001/grow_face.md), with the line's closing summary).
 
+   **2026-11-11: knots alone** (`KNOTS-ALONE-20261111-001`, backlog B144).
+   - **The question.** The board line said the plane needs a named face. In the knot's own terms a face can be a knot. So take worlds
+     made of nothing but distinctions and three-place knots, with no board, no names and no declared faces, put one symmetric knot on
+     every knot, and ask what the allowed states read of the world.
+   - **Four knots, four readings (proved).** The clause recovers exactly the knots and relates nothing beyond touching. Parity folds a
+     surface to a 3-colouring, one knot copied everywhere. Not-exactly-one ties every pair to an all-zero state, a hub. Curvature is
+     just counting (flat when every distinction is in six knots).
+   - **Not-all-equal keeps the surface and spaces it (computed, exact, frozen).** It reads 227 of the 229 flat worlds in range without a
+     non-facial triangle faithfully: their three-place bonds are exactly their knots, with no ties. Bond distance is 2 next door and 3
+     two steps away, from bonds around a hidden distinction. Two thin tori fail, and at three steps short loops can shorten a bond, so
+     the frozen predictions failed narrowly and A63 stands. After the run: faithful on every flat world in range whose short loops have
+     length at least 5.
+   - **Where forcing works (computed, exact).** A world with positive curvature has no cover, so a law can fix it: with each
+     distinction in five knots, not-all-equal allows only the icosahedron. Flat worlds always have covers, so no law fixes their size,
+     and not-all-equal allows every Klein bottle in range.
+   - **What is still put in** is the count of how knots meet (A64). Whether reading the knots faithfully supplies it is the next
+     question (sub-goal B145) ([decision note](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

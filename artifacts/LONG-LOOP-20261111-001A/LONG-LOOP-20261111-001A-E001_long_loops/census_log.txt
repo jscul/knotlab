@@ -1,0 +1,68 @@
+library hash matches: True
+glide Klein bottles = SAT Klein bottles at 7..16: True {7: True, 8: True, 9: True, 10: True, 11: True, 12: True, 13: True, 14: True, 15: True, 16: True}
+worlds: Counter({('torus', 7): 113, ('torus', 6): 101, ('torus', 8): 98, ('torus', 5): 85, ('torus', 4): 76, ('torus', 3): 52, ('torus', 9): 29, ('Klein', 4): 29, ('Klein', 3): 22, ('Klein', 5): 11, ('torus', 10): 8, ('Klein', 6): 4}) (636.7 s)
+{
+ "klein control": {
+  "7": true,
+  "8": true,
+  "9": true,
+  "10": true,
+  "11": true,
+  "12": true,
+  "13": true,
+  "14": true,
+  "15": true,
+  "16": true
+ },
+ "worlds": 628,
+ "P1": {
+  "worlds": 449,
+  "failures": [],
+  "holds": true
+ },
+ "P2": {
+  "tori": 349,
+  "not faithful (outside P2)": [],
+  "failures": [],
+  "holds": true
+ },
+ "below edge-width 5 (no prediction)": [
+  [
+   "Klein",
+   3,
+   false,
+   16
+  ],
+  [
+   "Klein",
+   3,
+   true,
+   6
+  ],
+  [
+   "Klein",
+   4,
+   true,
+   29
+  ],
+  [
+   "torus",
+   3,
+   false,
+   42
+  ],
+  [
+   "torus",
+   3,
+   true,
+   10
+  ],
+  [
+   "torus",
+   4,
+   true,
+   76
+  ]
+ ],
+ "seconds": 853.5
+}

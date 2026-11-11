@@ -1368,7 +1368,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Deeper memories from examples (`DEEP-MEM-20261111-001`) | [closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/DEEP-MEM-20261111-001/) |
 | 2026-11-11 | Knots alone (`KNOTS-ALONE-20261111-001`) | [closure](proofs/KNOTS-ALONE-20261111-001Z/KNOTS-ALONE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/KNOTS-ALONE-20261111-001/) |
 | 2026-11-11 | A learned memory that computes parity (`LEARN-PARITY-20261111-001`) | [closure](proofs/LEARN-PARITY-20261111-001Z/LEARN-PARITY-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-PARITY-20261111-001/) |
-| 2026-11-11 | The long-loop regime (`LONG-LOOP-20261111-001`) | — | [folder](research/LONG-LOOP-20261111-001/) |
+| 2026-11-11 | The long-loop regime (`LONG-LOOP-20261111-001`) | [closure](proofs/LONG-LOOP-20261111-001Z/LONG-LOOP-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-LOOP-20261111-001/) |
 | 2026-11-11 | Does a faithful reading supply the surface? (`NAE-SURFACE-20261111-001`) | [closure](proofs/NAE-SURFACE-20261111-001Z/NAE-SURFACE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/NAE-SURFACE-20261111-001/) |
 | 2026-11-11 | Parity of five held points (`PARITY-FIVE-20261111-001`) | — | [folder](research/PARITY-FIVE-20261111-001/) |
 | 2026-11-11 | What a knot space needs to compute parity (`PARITY-NEEDS-20261111-001`) | [closure](proofs/PARITY-NEEDS-20261111-001Z/PARITY-NEEDS-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-NEEDS-20261111-001/) |

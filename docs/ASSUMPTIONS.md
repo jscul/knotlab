@@ -117,7 +117,7 @@ evidence: results and their status come from the records each entry links.
 | [A60](#a60--nativeness-under-abstract-names-is-counted-in-place) | Nativeness under abstract names is counted in place | reading | Assumed |
 | [A61](#a61--closing-a-cycle-in-a-growth-step-names-a-face) | Closing a cycle in a growth step names a face | reading | Assumed |
 | [A62](#a62--a-law-gives-a-shape-only-by-forcing-it) | A law gives a shape only by forcing it | reading | Assumed |
-| [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Assumed |
+| [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Overturned |
 | [A64](#a64--counting-how-knots-meet-at-a-distinction-names-no-face) | Counting how knots meet at a distinction names no face | reading | Assumed |
 
 ## Entries
@@ -1596,7 +1596,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A63 · A named face is put in, not native
 
-**Assumed** · 2026-11-11 · reading
+**Overturned** · 2026-11-11 · reading
 
 - **Statement.** A law that names a face, by fixing which cycle of places closes (a relation of the letters, a face length or
   offsets, or a cycle closed in a growth step as in A61), puts that face in: the face is part of what the law is given, not
@@ -1619,6 +1619,12 @@ evidence: results and their status come from the records each entry links.
   their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
   a face knot is shown to need an input the knot test excludes.
 - **History.**
+  - 2026-11-11 · Overturned in the knots-alone setting, with the surface count given and on computed evidence in range, by
+    `LONG-LOOP-20261111-001`'s frozen rule: the not-all-equal law reads every 6-regular torus with 49 to 80 distinctions and Klein
+    bottle with 19 to 40 of edge-width at least 5 faithfully (449 worlds), and on the 349 tori of edge-width at least 6 sets bond
+    distance graph distance + 1 out to distance 3 (distance 2 proved given faithfulness). A face named only by a knot gives native
+    flat local geometry; what must be put in is how knots meet (A64)
+    ([the long-loop regime](../research/LONG-LOOP-20261111-001/long_loop.md)).
   - 2026-11-11 · Bears on it, status unchanged: the surface count cannot be dropped, since the not-all-equal law reads
     non-surface worlds faithfully too (`NAE-SURFACE-20261111-001`); any overturning of this entry keeps the count as an input
     ([does a faithful reading supply the surface?](../research/NAE-SURFACE-20261111-001/nae_surface.md)).

@@ -250,7 +250,7 @@ No set of clauses, each naming finitely many variables, binds infinitely many
 loops into one knot, even with infinitely many witnesses. The proof is the
 compactness theorem. An endless chain of atoms is a tower of finite knots.
 
-Evidence: [the knot intuition](docs/KNOT_INTUITION.md#infinite-threads)
+Evidence: [the knot intuition](docs/KNOT_INTUITION.md#endless-chains)
 
 ### Ends can open a knot as loops do
 

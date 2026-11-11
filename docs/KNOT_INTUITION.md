@@ -10,21 +10,28 @@ proof artifacts. The mathematics underneath is classical; what the project
 adds is the reading. The sections from "What the atom is" onward explain the
 definition further and add checks; they do not change it.
 
+**Words.** Since 2026-11-11 the notebook names the program's own objects in the
+words of the glossary of the Intuitions guide (`publication/knotlab/INTUITIONS.md`,
+"Glossary"): by distinctions, knots and counts, with each spatial word marked as
+the literature's name or as a drawn picture, and with one meaning to each word.
+The entries were reworded on that day without changing any claim, number or
+verdict; the earlier text is in git history.
+
 ## The picture
 
-- **A line is not enough.** An implication chain only orders its members, and
-  open strings can always be rearranged into one another.
+- **A chain is not enough.** An implication chain only orders its members, and
+  strings with loose ends can always be rearranged into one another.
 - **A single loop is not enough.** A loop of implications forces all of its
-  members to be equal, so it collapses to one point. A loop of equal and
+  members to be equal, so it collapses to one distinction. A loop of equal and
   unequal steps collapses to one free bit or contradicts itself.
 - **What is real is what lies between bound loops.** The binding belongs to
   the pair, not to either loop. No part smaller than the whole shows it, and
   erasing either loop removes it.
 - **A loop is a logical structure that can be entwined.** It is not spatial.
   What it brings to a binding is an open distinction, a bit it leaves free.
-- **A knot is not just any hole.** In the shape of what a system leaves free,
-  a knot is an empty triangle: every pair free, the whole not. Pairwise ties
-  can make other holes, but never this one (see "Holes and knots").
+- **A knot is not just any hole.** In the free complex of what a system leaves
+  free, a knot is a hollow triple: every pair free, the whole not. Pairwise
+  ties can make other holes, but never this one (see "Holes and knots").
 - **Knots live across alternatives.** A knot leaves every loop's distinction
   open and fixes at most one bit. In a single settled world there is nothing
   to see.
@@ -34,7 +41,7 @@ definition further and add checks; they do not change it.
   break the fewest, can leave a knot (see "Knots from competing pairs").
 - **Witnesses carry information about a loop's interior.** A witness is
   information outside a loop that reports on its interior, for example whether
-  two of its points show 00/11 or 01/10. The witness of one binding can take
+  two of its distinctions show 00/11 or 01/10. The witness of one binding can take
   part in the next binding, which is how bindings compose.
 
 ## The working formalization
@@ -84,7 +91,7 @@ forgetting. It stays available as `check_knot(..., erasure="absence")` and in
 [tests/test_knotlab.py](../tests/test_knotlab.py) checks each fact on finite
 cases; the cited results supply the uniform arguments.
 
-1. **Two loops and a contact have 34 knots, in five shapes.** They range from
+1. **Two loops and a contact have 34 knots, in five classes.** They range from
    a single three-literal clause, the atom `¬A ∨ ¬B ∨ c` (one excluded state,
    0.19 bits), to parity (four excluded states, 1 bit). This is checked
    against all 256 relations on three variables.
@@ -158,7 +165,7 @@ In precise terms, with every statement checked by `knotlab patterns`:
   Pixley 1975). This is the post's "2-SAT can only act against one variable".
 - **Hiding from the parts.** On three variables, 34 patterns are
   constrained as a whole but unconstrained in every pair. Up to renaming and
-  negation they come in five shapes:
+  negation they come in five classes:
   - one excluded state: a single clause, which is the atom (0.19 bits);
   - two excluded states at distance two or three (0.42 bits);
   - three excluded states (0.68 bits);
@@ -226,7 +233,7 @@ below).
 The atom is the single clause `¬A ∨ ¬B ∨ c`, read as a requirement: when A
 and B both hold, `c` must hold, and nothing is required otherwise. Of the 34
 two-loop knots it is the one that excludes the fewest states, so it is the
-smallest bond. Five descriptions pick it out, and `knotlab worlds` checks each
+weakest bond. Five descriptions pick it out, and `knotlab worlds` checks each
 of them:
 
 1. **Relation.** It is the knot that excludes exactly one state. Under the
@@ -250,8 +257,9 @@ of them:
 A distinction is the smallest thing: two alternatives of which exactly one is
 present, which is one bit. Spencer-Brown's *Laws of Form* (1969) begins from
 "draw a distinction", and Bateson defined information as a difference that
-makes a difference. The atom is the smallest bond: the smallest relation in
-which things constrain one another jointly rather than in pairs. Peirce held
+makes a difference. The atom is the weakest bond: of the relations in which
+things constrain one another jointly rather than in pairs, it excludes the
+least. Peirce held
 that three-place relations cannot be built from two-place ones, while every
 relation can be built from three-place ones. Facts 3 and 5 are the Boolean
 form of that claim.
@@ -353,12 +361,12 @@ carries. A knot relates choices without making them. Whether every allowed
 state is equally real is the modal-plurality interpretation, which these
 results fit but do not prove.
 
-## Infinite threads
+## Endless chains
 
 Forced worlds make sense for unbounded systems of atoms: the forced world
 contains everything that finitely many steps of propagation reach.
 
-- **Everything rests on finitely many loops.** In the thread `L1 ∧ L2 → w1`,
+- **Everything rests on finitely many loops.** In the chain `L1 ∧ L2 → w1`,
   `wk ∧ L(k+2) → w(k+1)`, the thing `wk` exists exactly when L1, …, L(k+1)
   are all present. Erasing any one of them removes it, and later loops do not
   matter.
@@ -369,9 +377,9 @@ contains everything that finitely many steps of propagation reach.
   Those clauses name finitely many variables, so forget one they do not name.
   The same clauses still exclude every way of filling it back in, but K2 says
   that forgetting a variable leaves the rest unconstrained.
-- **An infinite thread is a tower of finite knots.** Each `wk` binds the
+- **An endless chain is a tower of finite knots.** Each `wk` binds the
   first k+1 loops, and no contact binds them all. A contact for the whole
-  thread would need a limit rule with infinitely many premises, which no
+  chain would need a limit rule with infinitely many premises, which no
   clause can express. Whether the program needs such a rule is open.
 - **Earlier repository work agrees.** `INFINITE-CNF-001A1-P001` proved that
   every finite-support knot core of a countable CNF presentation already
@@ -393,7 +401,7 @@ is finite.
   connection between relations and their closure operations (Geiger 1968;
   Bodnarčuk, Kalužnin, Kotov and Romov 1969).
 - **What every binding looks like from outside.** Two-loop knots come in only
-  34 relations of five shapes. Every mechanism that binds two loops, whether a
+  34 relations of five classes. Every mechanism that binds two loops, whether a
   witness chain, a logic gate or a circuit built inside a game, therefore
   projects to one of them. A requirement projects to the atom `A ∧ B → c`. In
   this sense the knots are the logical shadow of any binding, whatever
@@ -416,21 +424,22 @@ is finite.
 Ticket D answered this on 2026-10-19
 ([decision note](../research/KNOT-FOUNDATION-20261019-001/space.md);
 `knotlab space`). The free sets of a system, the sets whose every assignment
-it allows, form a simplicial complex: the system's shape. Its bonds are the
-knots inside it.
+it allows, form a simplicial complex: the system's free complex. Its bonds are
+the knots inside it.
 
-- **A knot is a hole.** A knot on m variables makes its shape a hollow
-  simplex, an (m − 2)-sphere. The two-loop knot is a circle: three free pairs
-  around a missing whole.
+- **A knot is a hole.** A knot on m variables makes its free complex a hollow
+  simplex, which the literature draws as an (m − 2)-sphere. The two-loop knot
+  is a hollow triple, the literature's circle: three free pairs around a
+  missing whole.
 - **Bonds compose into a bond or into nothing.** For single clauses this is
   resolution.
 - **Paths and separation.** Along a chain of atoms, the smallest bond joining
   the ends grows by one per step.
-- **Logic allows every shape.** Every simplicial complex is the shape of some
-  system, so logic selects no space, and whatever space there is comes from
-  the law.
-- **Not every hole is a knot.** Two pairwise ties can surround a circle.
-  Topology in the knot sense begins at bonds.
+- **Logic allows every free complex.** Every simplicial complex is the free
+  complex of some system, so logic selects no space, and whatever space there
+  is comes from the law.
+- **Not every hole is a knot.** Two pairwise ties can leave a hollow cycle of
+  four, a hole of dimension one. Topology in the knot sense begins at bonds.
 
 So contact structure gives intrinsic holes, paths and separation, but not
 space. A law that produces space without having it written in is the open
@@ -438,43 +447,44 @@ problem studied by causal sets, quantum graphity and hypergraph rewriting.
 
 ### Holes and knots
 
-The two words are easy to confuse. A system's **shape** is built from what it
-leaves free:
-- each free distinction is a point;
-- each pair of distinctions that can take all four combinations is an edge;
-- each free triple is a filled triangle;
+The two words are easy to confuse. A system's **free complex** is built from
+what it leaves free, and the literature draws it so:
+- each free distinction as a point;
+- each pair of distinctions that can take all four combinations as an edge;
+- each free triple as a filled triangle;
 - and so on.
 
-A **hole** is any gap in that shape: a loop (or a sphere) of free sets with
-nothing free filling it. A **knot** is the smallest kind of hole: a set whose
-every part is free but which is not free itself. In two loops and a contact,
-it is an empty triangle. All three edges are there, and only the whole is
-missing.
+A **hole** is any gap in that complex: a cycle of free pairs, or the same at a
+larger size (in the drawing, a hollow sphere), that no free sets fill. A
+**knot** is the smallest kind of hole: a set whose every part is free but
+which is not free itself. In two loops and a contact, it is a hollow triple.
+All three pairs are free, and only the whole is missing.
 
 ```text
-a knot: an empty triangle            a hole made by ties: a square
+a knot: a hollow triple              a hole made by ties: a hollow
+(drawn as an empty triangle)         cycle of four (drawn as a square)
 
         A                               a ──── b
        / \                              │      │
       B ─ c                             d ──── c
 
 all three pairs are free;            the pairs a–c and b–d are tied,
-A, B and c together are not          so those edges are missing; the gap is
-                                     made of missing edges, not of a missing
-                                     triangle
+A, B and c together are not          so they are missing from the complex;
+                                     the gap is made of missing pairs, not of
+                                     a missing triple
 ```
 
 | | Hole | Knot |
 | --- | --- | --- |
-| What it is | Any gap in the shape, of any size | The smallest gap: every part free, the whole not |
-| What it looks like | Any loop or sphere left unfilled | An empty triangle, or an empty simplex for more loops |
-| What can make it | Pairwise ties can make one (the square) | Only a constraint on three or more at once; no 2-clause system has one |
+| What it is | Any gap in the free complex, of any size | The smallest gap: every part free, the whole not |
+| What it looks like | Any cycle of free sets left unfilled | A hollow triple, or a hollow simplex for more loops |
+| What can make it | Pairwise ties can make one (the hollow cycle of four) | Only a constraint on three or more at once; no 2-clause system has one |
 | What it means | Some joint pattern among the distinctions | Information held by the whole and by no part |
 
 Every knot is a hole, but not every hole is a knot. A hole that ties can make
 can be explained by pairs; a knot cannot. When this document says "topology
 begins at the knot", it means knots, not holes in general. Larger holes can
-also arise just from putting separate knots side by side, so to tell whether
+also arise just from taking separate knots together, so to tell whether
 things are bound, look at the knots (bonds), not at the size of the holes.
 
 ### Knots and synergy
@@ -509,18 +519,18 @@ that must all hold. Pairwise preferences that compete can still leave a knot
 been checked beyond a short search. The nearest work to compare is Jansma's
 model-free higher-order interactions (arXiv:2205.04440).
 
-**Emergence in bits** (`EMERGENCE-BITS-20261021-001`). The bits a pattern
-hides from its pairs are log₂ of the patterns its pairs allow, minus log₂ of
-the patterns it allows.
-- **What single patterns hide.** It is zero exactly for 2-CNF patterns,
+**Emergence in bits** (`EMERGENCE-BITS-20261021-001`). The bits a relation
+hides from its pairs are log₂ of the states its pairs allow, minus log₂ of
+the states it allows.
+- **What single relations hide.** It is zero exactly for 2-CNF relations,
   log₂(8/7) ≈ 0.19 for one clause, and one bit for parity. No knot hides more
   than one bit.
 - **What many distinctions can hide.** n distinctions can hide about
   n − log₂log₂n bits from their pairs (minimum covering arrays).
 - **The statistical version.** It is the divergence of the uniform
   distribution from the pairwise model, at most n − log₂(n+1), reached
-  exactly by Hadamard designs. On seven distinctions those are the Fano
-  plane's parity networks.
+  exactly by Hadamard designs. On seven distinctions those are the parity
+  knots on the lines of the Fano plane, the Fano pattern.
 
 ### Knots from competing pairs
 
@@ -533,8 +543,8 @@ Pairwise rules can be combined in two ways:
 
 Competition can make a knot from pairs. Take three distinctions and ask each
 pair to agree or to differ. With an odd number of "differ"s the preferences
-cannot all hold: going around the triangle, the differences would have to
-cancel, and they cannot. Under conjunction the system allows nothing. Under
+cannot all hold: going around the cycle of three, the differences would have
+to cancel, and they cannot. Under conjunction the system allows nothing. Under
 competition it allows the six states that break exactly one preference, and
 those six form a knot: every pair is free, and the three together are not.
 When all three pairs should differ, it is the not-all-equal knot.
@@ -543,8 +553,9 @@ Three results, checked in `PatternTest` (`test_competing_pairs_make_knots`):
 - **Exactly four knots come from competing pairs alone.** A knot on three
   variables is the set of least states of some energy with only one- and
   two-variable terms exactly when its two excluded states are opposite. These
-  are the four frustrated triangles: 4 of the 34 knots.
-- **No knot on four or more variables does.** A frustrated loop of four or
+  are the four frustrated three-cycles (the literature's frustrated
+  triangles): 4 of the 34 knots.
+- **No knot on four or more variables does.** A frustrated cycle of four or
   more distinctions bonds every three of them, but it is not a knot itself.
 - **With hidden variables, competing pairs make every knot.** Ten 2-clauses
   and one hidden variable have the 3-clause x ∨ y ∨ z as their best states
@@ -581,20 +592,20 @@ unchanged. The least world of requirements needs one, since it reads true
 as "exists" ("Requirement and choice").
 
 So what a knot certifies depends on what is hidden. With every variable
-visible, a knot other than the four frustrated triangles cannot come from
+visible, a knot other than the four frustrated three-cycles cannot come from
 pairwise terms, even competing ones. With hidden variables, a knot certifies
 only that the rules are not pairwise rules that must all hold.
 
 **In statistics the four are silent** (`EMERGENCE-BITS-20261021-001A-P001`).
-Take the uniform distribution on a pattern's allowed states. Its divergence
-from the best pairwise model is zero exactly when the pattern is the least
+Take the uniform distribution on a relation's allowed states. Its divergence
+from the best pairwise model is zero exactly when the relation is the least
 set of a pairwise energy.
-- **The frustrated triangles** are therefore the only knots whose allowed
+- **The frustrated three-cycles** are therefore the only knots whose allowed
   states their pair statistics predict exactly.
 - **Every other knot** carries correlations that no pairwise interaction
   explains.
 
-`SIGNED-FRUSTRATION-001D1` recorded the frustrated triangle's six tied least
+`SIGNED-FRUSTRATION-001D1` recorded the frustrated three-cycle's six tied least
 states and classed pairwise frustration as false contact, because its factor
 table had no registered native recurrence. The knot test reads only allowed
 states. If least-violation states count as allowed, those six states are a
@@ -610,36 +621,38 @@ readings instead of choosing one
   exactly the four not-all-equal knots on three variables and none on four or
   more. With hidden variables they make every knot. Under the strict reading
   they make none. The two readings agree whenever some state breaks no rule.
-- **Weights matter.** Weighting one preference of the frustrated triangle
+- **Weights matter.** Weighting one preference of the frustrated three-cycle
   twice removes the knot. With unequal weights, competition selects a few
   states and leaves no alternatives, and knots need alternatives.
 - **Near and far (exact enumeration).** Of 470 uniform pairwise rules around
   a ring, none has near and far under the strict reading. Under competition,
   178 do, but never with more than two separation levels.
-- **Growing separation.** On a strip of triangles where each triangle counts
-  its own broken preferences, competition equals strict not-all-equal knots
-  on the triangles. Separation then grows along the strip, from 3 to 8 on 14
-  vertices, like a chain of atoms. Counted once per pair, the same rules
+- **Growing separation.** On a drawn strip of triangles, a declared layout,
+  where each triangle counts its own broken preferences, competition equals
+  strict not-all-equal knots on the triangles' triples. Separation then grows
+  along the strip, from 3 to 8 on 14 distinctions, like a chain of atoms. Counted once per pair, the same rules
   settle into a few ordered states with at most two levels.
 
-So competition is a law that turns a triangulated layout into a chain of
-knots, but it does not supply the layout. No tested rule produced near and far
+So competition is a law that turns a drawn triangulated layout into a chain
+of knots, but it does not supply the layout. No tested rule produced near and far
 that its layout lacked.
 
 Two follow-ups from 2026-10-19, checked in `tests/test_knotlab.py`
 (`SpaceTest`):
 
-- **Pairwise structure makes only flag shapes.** In a 2-CNF system a set is
-  free exactly when all its pairs are free. So 2-clauses can make holes, as
-  when two ties surround a circle, but never an empty triangle: three
-  distinctions free in every pair yet not free together. That empty triangle
-  is exactly a knot. Of 399 random 2-clause systems on six variables, 29 have
-  holes and none has an empty triangle.
-- **Holes made of holes.** Binding knots raises the dimension of the shape's
-  holes. One knot is a circle; two knots sharing a distinction leave
-  2-dimensional holes; a chain of three leaves 3-dimensional ones.
-  - Two unrelated knots side by side also leave a 3-dimensional hole, because
-    the join of two circles is a 3-sphere. So a higher hole alone does not
+- **Pairwise structure makes only flag complexes.** In a 2-CNF system a set
+  is free exactly when all its pairs are free. So 2-clauses can make holes, as
+  when two ties leave a hollow cycle of four, but never a hollow triple: three
+  distinctions free in every pair yet not free together. That hollow triple is
+  exactly a knot. Of 399 random 2-clause systems on six variables, 29 have
+  holes and none has a hollow triple.
+- **Holes made of holes.** Binding knots raises the dimension, in the
+  literature's count, of the free complex's holes. One knot is a hollow
+  triple, a hole of dimension one; two knots sharing a distinction leave holes
+  of dimension two; a chain of three leaves holes of dimension three.
+  - Two unrelated knots taken together also leave a hole of dimension three,
+    because the join of two hollow triples has one (the literature's
+    3-sphere). So a higher hole alone does not
     show binding; the bonds do. Knots sharing a distinction gain a composite
     bond, and separate knots do not.
   - Naming a difference is itself a knot: A, B and w = (A ≠ B) form a parity
@@ -660,15 +673,16 @@ through a small yes/no table. Under the forgetting reading, each table either
 permutes the two witness values (identity or swap) or misses at most one pair.
 The ring theorem, proved in Lean (`KNOT-LOOPS-20261019-001B-P001`):
 
-- **A ring excludes exactly the odd loops.** A ring rules out a pattern
-  exactly when every table along it is a permutation and an odd number of
+- **A ring excludes exactly the odd loops.** A ring rules out an assignment
+  of its distinctions exactly when every table along it is a permutation and
+  an odd number of
   them swap. So a ring of knots composes into a knot or into nothing.
 - **Only parity carries a loop at full strength.** A knot whose tables are
   all permutations is a parity knot. A ring of parity knots becomes one knot
   on all its distinctions, so the loop becomes a hole, and it keeps one full
   bit at every length.
 - **Other knots fade.** Every other knot keeps a trace only through its
-  permutation tables. Its share of excluded patterns shrinks exponentially
+  permutation tables. Its share of excluded assignments shrinks exponentially
   with the length of the loop. A not-all-equal ring forgets the loop
   completely.
 
@@ -681,9 +695,10 @@ Beyond rings (`KNOT-LOOPS-20261019-001C-E001`, exploratory):
   forbid one pair can chain like implications and frustrate one another.
   **Corrected on 2026-10-21** (`EMERGENCE-BITS-20261021-001B-P001`). Every
   network of knots with hidden witnesses holds at most one bit per
-  independent loop, and only parity fills every loop. But frustrating patches
+  independent loop, and only parity fills every loop. But frustrated parts
   add up, so other knots can hold many bits in large networks: 1.32 bits on
-  the Petersen graph, and an amount growing with the area on tori.
+  the Petersen graph, and an amount growing with the number of vertices on
+  drawn grid tori.
 - **Many-valued tables can remember more, and order.**
   - Witnesses passed through a group of permutations keep a fixed amount at
     every length: log₂3 bits for addition mod 3.
@@ -717,13 +732,13 @@ fixed value.
 - **Contact with fixed points binds loops, into atoms.** Give each loop a
   selector, so that the loop either passes the witness unchanged or applies
   its holonomy.
-  - The shape of the selectors is the nerve of the holonomies' fixed-point
-    sets, so every shape occurs.
-  - A tie or knot among loops excludes only the pattern that selects all of
+  - The free complex of the selectors is the nerve of the holonomies'
+    fixed-point sets, so every free complex occurs.
+  - A tie or knot among loops excludes only the assignment that selects all of
     its loops. Any proper subset of the loops can be on together, but not all
     of them.
   - The transpositions (03), (13) and (23) knot three loops this way, as a
-    hollow triangle.
+    hollow triple.
   - So the two extreme knots play opposite roles: parity carries a single loop
     at full strength, and the atom binds loops through fixed points.
   - **Corrected on 2026-10-21** (`LOOP-HOMOLOGY-20261021-001A-P001`). The atom
@@ -747,16 +762,16 @@ fixed value.
 ### How deep a hole is
 
 Epic `DEEP-HOLES-20261020-001` asked how many distinctions local reasoning
-must hold at once to see a network's hole
+must hold at once to see a hole
 ([decision note](../research/DEEP-HOLES-20261020-001/deep_holes.md);
-`knotlab depth`). The networks turn the previous ones around: knots sit at
-the vertices of a graph and share its edges as distinctions.
-- **Charge networks.** Parity knots ask each vertex's edges to sum to its
-  charge. Such a network is impossible exactly when the total charge is odd:
+`knotlab depth`). These patterns turn the previous networks around: knots sit
+at the vertices of a graph and share its edges as distinctions.
+- **Charge patterns.** Parity knots ask each vertex's edges to sum to its
+  charge. Such a pattern allows nothing exactly when the total charge is odd:
   a charge hole, a class in H̃₀ rather than a loop in H¹.
 - **Local holes say nothing about depth.** Every knot that excludes two or
   more states is already a hole at its own scope. The program's plain hole
-  criterion therefore certifies nothing on these networks.
+  criterion therefore certifies nothing on these patterns.
 - **Matched rings see the hole at once.** Reasoning that can compute mod 2 (F₂,
   or the integers) refutes at the size of one knot: summing every vertex
   counts each edge twice.
@@ -777,7 +792,7 @@ the vertices of a graph and share its edges as distinctions.
   binomial per vertex, with degree measured after reduction, the formula
   needs degree exactly cutwidth.
 
-So network holes come in two kinds:
+So holes come in two kinds:
 - **Loop holes**, where contact acts on witnesses. They are shallow over
   every ring.
 - **Charge holes**, where knots share distinctions. They are as deep as the
@@ -808,30 +823,32 @@ So network holes come in two kinds:
   NP-complete. That locates where hardness enters but says nothing about
   whether P equals NP. Nothing here is physics.
 - **Native complexity (2026-10-24, `NATIVE-HARDNESS-20261024-001`).**
-  - **The half rule.** In a contradictory network without hubs, every knot that does not cut the network allows exactly half the
-    states of its edges.
+  - **The half rule.** In a hub-free knot pattern that allows nothing, every knot whose removal leaves the pattern connected allows
+    exactly half the states of its distinctions.
   - **Native contradictions are parity contradictions.** Every native contradiction is a parity system joined by forced values, and
-    native networks of every law are solved in polynomial time.
+    hub-free knot patterns of every law are solved in polynomial time.
   - **Refutation.** Without parity knots, refutations need only clauses of two literals. With parity, they can need exponential
     resolution size (Tseitin).
-  - **Three in two directions.** NP-hardness needs a hub as well as a knot: three places per relation and three relations per place.
+  - **Three in two directions.** NP-hardness needs a hub as well as a knot: three places per relation and three relations per
+    distinction.
     This is the knot-level form of Tovey's theorem (1984).
 - **Native counting (2026-10-24, `NATIVE-COUNTING-20261024-001`).**
-  - **The gluing criterion is a known recurrence.** The criterion for a knot to see only the surface, two glued copies symmetric in
-    four legs, is the Fibonacci-gate recurrence of holographic algorithms.
-  - **Easy exactly for the topological knots.** The four topological knots count every native network by a closed formula. Counting
+  - **The gluing criterion is a known recurrence.** The criterion for a knot's count to depend only on a hub-free pattern's cycles
+    and open distinctions (the literature's surface), two glued copies symmetric in four legs, is the Fibonacci-gate recurrence of
+    holographic algorithms.
+  - **Easy exactly for the topological knots.** The four topological knots count every hub-free pattern by a closed formula. Counting
     is #P-hard for the other 30 knots, given Backens's dichotomy, although deciding is easy for all.
   - **Reading.** Emergence is countable exactly when it is topological.
-  - **Closed not-all-equal worlds.** They count like an antiferromagnetic Ising model: a determinant on the sphere, with the cost
-    growing with each handle.
+  - **Closed not-all-equal patterns.** They count like an antiferromagnetic Ising model: a determinant when the literature's surface
+    is a sphere, with the cost growing with each of its handles.
 - **Native approximate counting (2026-10-24, `NATIVE-APPROX-20261024-001`).**
   - **K2 is the terraced condition.** The knot axiom K2 is the hypothesis of McQuillan's winding method. The 26 windable knots, those
     excluding at most two tuples and the parity knots, have approximation schemes given his theorem.
   - **Hard exactly, easy approximately.** With the four topological knots, 28 of 34 knots are settled. For 24 of them emergence is
     hard to count exactly and easy to approximate.
-  - **Open where Fibonacci meets a twist.** The six left open are the Fibonacci knot with one or two places negated. Their networks
-    are Fibonacci networks with disequality edges, and in the Fibonacci basis a twist is a reflection with a negative entry.
-  - **Freezing is not hardness.** A knot freezes every native tree, so that the boundary decides the root either way, exactly when
+  - **Open where Fibonacci meets a twist.** The six left open are the Fibonacci knot with one or two places negated. Their hub-free
+    patterns are Fibonacci patterns with disequality ties, and in the Fibonacci basis a twist is a reflection with a negative entry.
+  - **Freezing is not hardness.** A knot freezes every hub-free tree, so that the leaves decide the root either way, exactly when
     its excluded tuples take both values at every place. That holds for 14 knots, including the six, not-all-equal and parity. It
     refuted the predicted decay for the six, but not-all-equal freezes and is approximable.
 - **Imitating a hub (2026-10-25, `SOFT-HUB-20261024-001`).**
@@ -840,7 +857,8 @@ So network holes come in two kinds:
   - **Only linked pairs make hubs.** Two solutions whose difference does not tie all three terminals together can always be rerouted
     onto off-diagonal values. So windable gadgets stay below a hub ratio of √3 (given McQuillan), and parity and no-lone gadgets
     below 1.
-  - **The open knots stay low.** Their non-windable shape is a closed neighbourhood plus its antipode (0, 1 or 3 defects, never 2).
+  - **The open knots stay low.** Their non-windable excluded sets are a closed neighbourhood plus its antipode (0, 1 or 3 defects,
+    never 2).
     The best gadget found reaches only 65/53, composing hubs never amplifies them, and tree gadgets are proved to stay at most 3.
     Gadgets with loops remain a conjecture.
   - **Reading.** Emergence cannot fake reuse exactly, and on trees not even approximately: the hardness of the three-literal side
@@ -852,8 +870,9 @@ So network holes come in two kinds:
     global.
   - **No copying.** In symmetric form the bound says a terminal cannot copy the joint value of the other two without mixing on the
     cross patterns, and two terminals are never locked to each other.
-- **Where counting in three dimensions becomes hard (2026-10-25, `HARD-3D-20261025-001`).**
-  - **Setting.** In three dimensions the native counting laws are group laws, and they count homomorphisms π₁(M) → Γ.
+- **Where counting on 3-manifolds becomes hard (2026-10-25, `HARD-3D-20261025-001`).**
+  - **Setting.** These entries concern the literature's 3-manifolds, and their knots, links and knot groups are the classical knots of
+    knot theory, not logical knots. On 3-manifolds the native counting laws are group laws, and they count homomorphisms π₁(M) → Γ.
   - **With boundary (proved).** Attach thickened tori to a handlebody along the curves of a planar graph. The count of maps into S₃ is
     a spin model on the graph whose repeated edges recover its 3-colourings, so it is #P-hard.
   - **Closed (proved).**
@@ -862,8 +881,9 @@ So network holes come in two kinds:
       group and A₄.
     - The class-2 cases show that the bounded-H² hypothesis of the class-2 algorithm is necessary.
   - **Open.** The dihedral group of order 16, where a collision of growth rates blocks the extraction.
-  - **Reading.** In three dimensions the easy-hard line is the abelian/non-abelian line, the affine boundary the program found in two
-    dimensions. S₃ is hard although it is solvable, and it is the smallest non-abelian group.
+  - **Reading.** On 3-manifolds the easy-hard line is the abelian/non-abelian line, the affine boundary the program found on the
+    hub-free patterns that the literature draws as surfaces. S₃ is hard although it is solvable, and it is the smallest non-abelian
+    group.
   - **Correction (2026-10-25, `DICHOTOMY-3D-20261025-001`).** These hardness results were already implied by Galindo's Turaev–Viro
     dichotomy (arXiv 2605.06984, May 2026). Their identities stand, but they are an independent elementary route, not a new
     frontier.
@@ -876,14 +896,14 @@ So network holes come in two kinds:
   - **Already known.** For every finite group, counting is #P-hard exactly when the group is non-abelian. This follows from Galindo's
     2026 dichotomy for Turaev–Viro invariants: the Drinfeld centre of Vec_Γ is pointed only for abelian Γ.
   - **Reading.**
-    - The program's affine line in three dimensions is "pointed versus non-pointed centre": abelian anyons only, or some anyon of
+    - The program's affine line on 3-manifolds is "pointed versus non-pointed centre": abelian anyons only, or some anyon of
       dimension above 1.
     - Each hard instance hides a colouring of the flux paired with a colouring of the charge.
     - Abelian groups have the same pairs, but no gadget can isolate them, which is why they stay easy.
   - **Next (deferred).** Bounded first homology. Metabelian targets look polynomial there; S₄ is the first open case.
 - **Counting with bounded first homology (2026-10-25, `BOUNDED-H1-20261025-001`).**
   - **Knots are hard for S₄ (proved).**
-    - Draw a plane graph's alternating knot with every edge tripled. A full twist of three crossings is invisible to S₃, so the S₃
+    - Draw a planar graph's alternating classical knot with every edge tripled. A full twist of three crossings is invisible to S₃, so the S₃
       colourings are free vertex potentials.
     - Over each potential, the S₄ lifts number 2 to the number of left-right cycles of the monochromatic subgraph: the bicycle law.
     - The count is a twelve-state spin model. With subdivided edges it is the 12-state Potts model at v = 1/2 (links).
@@ -914,7 +934,8 @@ So network holes come in two kinds:
     - With the peripheral data fixed, C₂ + C₄ = 8 + 3T and 3·C₂(K) + C₂(K # 3₁) = 16 + 12T.
     - So S₄ counting is #P-hard on closed manifolds with H₁ = Z/2, while metabelian targets stay polynomial there.
   - **Reading.**
-    - The longitude, the loop that bounds the knot's surface, cannot carry the second-level bit of a transposition colouring.
+    - The longitude, the closed curve that bounds the classical knot's Seifert surface, cannot carry the second-level bit of a
+      transposition colouring.
     - The interior shows its boundary exactly half of its patterns, and that half fixes the counts.
   - **Observed, not proved.** The 4-cycle longitude is c^{2h}, where 2^h is the number of transposition lifts over the S₃ colouring
     with a fixed meridian. It held on 230 of 230 colourings. It looks like an Arf-type parity.
@@ -5724,6 +5745,20 @@ So network holes come in two kinds:
    - **Only for two-fold weaves.** All of it needs each co-knotted pair in exactly two knots; where pairs lie in three or more knots
      the line has no ruler and no height yet, which is the owner's next question
      ([decision note](../research/RULER-FLAT-20261111-001/ruler_flat.md)).
+
+   **2026-11-11: what not-all-equal makes of overlapping bases** (`OVERLAP-READ-20261111-001`).
+   - **The question.** A knot may share distinctions with any number of others. In such a base, what does not-all-equal bind that no
+     knot names, and is it local?
+   - **Only its own kind (proved).** Nothing is frozen, a tied pair is always equal or always unequal, and every unnamed hollow triple
+     is a not-all-equal knot with some distinctions read negated. Four knots arranged as a Pasch configuration (literature) are read
+     as all eight of the zero-pair weave on six distinctions (literature: the octahedron).
+   - **The law reads pair counts (proved).** Its states depend only on how many knots lie on each pair, so overlaps with the same
+     counts are one base to it. This is one exact sense of the owner's "compressed" structure.
+   - **Overlap is readable, uniform overlap is not (proved and computed).** A pair can lie in any number of knots in a base read
+     faithfully, and grown bases reach nine; where every co-knotted pair lies in three knots, no base in range is read faithfully.
+   - **Not local (computed, frozen).** The configurations that add a knot grow with size (1, 4, 11, 64 at three to six knots), some
+     small bases need seven, and one knot swap in a two-fold weave can bind a triple through half the base
+     ([decision note](../research/OVERLAP-READ-20261111-001/overlap_read.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

@@ -1740,8 +1740,23 @@ So holes come in two kinds:
      wire that carries its count. Growing a second torus piece at the sphere's other knot unties that wire: no distinction is forced by any others in any
      winding (exact; the wire was found after the run).
    - **Reading.** To count more, tori must be wired together, and the wire has to survive the second torus.
-   - **Next.** A host where two counting tori stay wired (sub-goal B148's first step), awaiting a go-ahead
-     ([decision note](../research/PARITY-FIVE-20261111-001/parity_five.md)).
+   - **Next (taken by `SHARED-COUNT-20261111-001`, below, re-posed for overlapping bases).** A host where two counting tori stay wired
+     (sub-goal B148's first step) ([decision note](../research/PARITY-FIVE-20261111-001/parity_five.md)).
+
+   **2026-11-11: two counting copies that share a distinction count five, and the learner finds it** (`SHARED-COUNT-20261111-001`).
+   - **The question.** The owner's direction: knots that overlap freely, not only as a drawing allows. Two copies of the 8-distinction
+     counting pattern (2, 0, 4) (a drawn knot pattern, the literature's torus) are made to share one distinction: the distinction the first
+     copy reads is an input of the second. Does the pair count five held distinctions, and does the learner learn it?
+   - **Exact, by definition.** Yes: the first copy's count feeds the second through the shared distinction, so the read distinction is the
+     sum mod 2 of all five held ones, exactly when both copies sit in their tightest class.
+   - **Computed.** The learner, feeling only its own tension under the world's held answers, learned the count of five and kept it when
+     shaken, 10 runs of 10, its opposite and back again too; it took about fifteen times as many steps as one copy alone. Three copies, the
+     count of seven, were not learned within two hours a run.
+   - **Reading.** Grown together on one drawing, the same two copies count nothing (the entry above). Sharing a distinction by identity
+     leaves nothing to untie: the overlap computes, and is learned, where the drawing failed. The shared distinction lies in six knots, so
+     the pair is no longer one drawn pattern; the learner still feels each copy's own drawn faces.
+   - **Next.** A learner whose tension needs no drawing at all (sub-goal B153), started
+     ([decision note](../research/SHARED-COUNT-20261111-001/shared_count.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LONG-LOOP-20261111-001A-E001",
+ "ticket": "LONG-LOOP-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is NAE faithful on every 6-regular torus with 49 to 80 distinctions and Klein bottle with 19 to 40 of edge-width at least 5, and on tori of edge-width at least 6 is bond distance graph distance + 1 out to distance 3?",
+ "definitions": {
+  "worlds": "Every 6-regular triangulated torus with 49..80 distinctions (lattice modulo a sublattice) and Klein bottle with 19..40 (lattice modulo translations and a glide), one per isomorphism class (flag codes).",
+  "edge-width": "Least lattice distance from a point to its image under a non-identity deck element.",
+  "readings": "KNOTS-ALONE-20261111-001A-E001's frozen read_law_sat (knots_alone.py sha256 aee9a2eda0907064b89eae4fe4badddb22b80fecb62bd91d5a5fa448397010de, checked).",
+  "distance-3 reading": "On each faithful torus of edge-width >= 6, from distinction 0: for every v at graph distance 3, no 4-element bond through 0 and v over all pairs of other distinctions, and a 5-element bond among distinctions within distance 2 of 0 or v; at distance 2, a 4-element bond nearby (the lemma's check). Patterns by a 4,000-state sample (seed 20261114 + world index), then SAT for unseen patterns.",
+  "settled": "Distance 1 by definition; distance 2 by the lemma in the pre-registration (proved, to be refereed); states exist on large tori (Hutchinson, Richter and Seymour)."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 7a338c7599f4cc66db60b0adfadc8909431a19871ae8d27e3214a74879fc362a) and flat_worlds.py (sha256 3450f36a403937f7bc429c9f9b7a9ec0cb5175caa10c872199070a998b24ccef) beside this file; KNOTS-ALONE's knots_alone.py; pysat Minisat22; 12 worker processes.",
+  "run": "census.py from the repository root; output artifacts/LONG-LOOP-20261111-001A/LONG-LOOP-20261111-001A-E001_long_loops/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the world list, thresholds, readings, seeds or predictions after seeing results"
+ ],
+ "primary_observable": "Per world: edge-width and NAE's reading; per measured torus: the distance-2 and distance-3 bond findings.",
+ "cheapest_meaningful_control": "Glide Klein bottles against the SAT Klein bottles at 7..16 by isomorphism class; six 21-distinction tori outside the list run before freezing (the distance-3 search finds the known shortcuts at edge-width 4).",
+ "predictions": {
+  "P1": "NAE faithful on every world in the list of edge-width >= 5.",
+  "P2": "On every faithful torus of edge-width >= 6, beta = delta + 1 for delta <= 3 (no 4-bond at distance 3, a 5-bond nearby)."
+ },
+ "decision_rules": {
+  "both hold": "A63 overturned in the knots-alone setting with the surface count given, on computed evidence in range.",
+  "either fails": "A63 stands; failures reported."
+ },
+ "stop_rule": "One run; report and hold.",
+ "runtime": "About half an hour on 12 workers; registered; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

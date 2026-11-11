@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "DEEP-MEM-20261111-001A-P001",
+  "canonical_id": "DEEP-MEM-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "DEEP-MEM-20261111-001A",
+  "proof": "DEEP-MEM-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Learning gates at deeper and wider groups",
+  "status": "Proved",
+  "claim": "Exact: every gate target is realizable at all 24 groups of three spaces with a leaf three levels down or three atoms under one composite. Computed, frozen: the credit learner with the sturdier probe learned and held 55 of 56 leaf writes and every one of 40 composite writes (one-atom composites two levels down, two-atom composites three levels down, three-atom composites), with no inexact stop and no stop on the impossible 0001; depth cost nothing, a second atom about eighteen times the steps, a third nothing more.",
+  "dependencies": [
+    "STURDY-PROBE-20261110-001A",
+    "CREDIT-PIN-20261110-001B",
+    "NEST-ATOMS-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A frozen mark of research/DEEP-MEM-20261111-001/preregistration.md."
+  ],
+  "lineage": {
+    "home_scope": "DEEP-MEM-20261111-001",
+    "epic_path": [
+      "DEEP-MEM-20261111-001"
+    ],
+    "parents": [
+      "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/probe_lib.py",
+      "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py",
+      "research/DEEP-MEM-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/probe_lib.py": "0a43265ead7402efc0c64c3935a823f47fe76317846984f2ce08141508764a65",
+    "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py": "6cca6f5bbc621e71be09f167683dbf1ab994b5af0b3489666a4fcb163fcaa16b",
+    "research/DEEP-MEM-20261111-001/preregistration.md": "568f880caa46ff8b344be1c1efae14dc642e26c541d0fac2cd7ad563705ada73"
+  },
+  "paths": {
+    "manifest": "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/manifest.json",
+    "identity": "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/identity.json",
+    "proof": "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/proof.md",
+    "result": "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/result.json",
+    "check": "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/check.py",
+    "directory": "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "24 groups of three spaces; one frozen learner.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 6decb62ff).",
+    "status": "realizability exhaustive; learning computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

@@ -2958,6 +2958,17 @@ So network holes come in two kinds:
    - **One fixed value is not enough here (exact in range).** With a fourth point held at 0, no space up to 20 points counts in
      threes. A point would have to read whether three held points are not all equal, the knot's own relation, and none does
      ([decision note](../research/HOLD-COUNT-20261111-001/hold_count.md)).
+
+   **2026-11-11: does a knot world read its own relation?** (`OWN-RELATION-20261111-001`).
+   - **The question.** To count in threes with one fixed value, a distinction would have to read whether three held
+     distinctions are not all equal, against a fourth: the knot's own relation, read as a map. Nothing in the rules forbids it,
+     and knot systems built freely can do it. Do knot worlds, where every distinction lies in three knots?
+   - **None in range (exact, refereed).** On 453 random knot worlds of 16 to 20 distinctions, 180 million sets of four held
+     distinctions, the knot's own relation and the parity-majority switch never appear; the readings that do are majorities
+     fed by at most one parity.
+   - **Bigger is not better.** Past 16 distinctions held distinctions force less: four-point readings get rarer, so a larger
+     random search would not settle it. Whether any knot world reads its own relation is open
+     ([decision note](../research/OWN-RELATION-20261111-001/own_relation.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.

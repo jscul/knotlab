@@ -1659,6 +1659,8 @@ So network holes come in two kinds:
    - **Computed.** A learner asked for a count or a vote never pretended it had one.
    - **Reading.** What the world holds reaches a learned knot's answer only one way round. Plain logic of this kind can count with hidden
      helpers, so the limit belongs to the knot space; whether it holds everywhere is open.
+   - **Corrected (`UNATE-20261111-001`).** It does not hold everywhere: a small knot space with many handles counts three held points
+     exactly. The limit belongs to the learned memories' interfaces, not to knot spaces.
    - **Next (taken by `DEEP-MEM-20261111-001`, below, when the line resumed).** Deeper memories from examples (backlog B135)
      ([decision note](../research/THREE-IN-20261110-001/three_in.md)).
 

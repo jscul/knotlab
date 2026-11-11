@@ -114,7 +114,8 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
   no false stop in 156 writes and 39 runs of AND, at 2.5 times the walk steps; every earlier figure, scored by SAT, stays or rises.
 - Three held inputs (`THREE-IN-20261110-001`): exact on every class of six spaces, no map of three held points is parity, majority or
   non-unate, and the only total maps copy or negate one input; with the frame lemma this covers every law. The learner never accepted
-  parity or majority (8 of 8) and learned the single-input map at 2 of 4 interfaces.
+  parity or majority (8 of 8) and learned the single-input map at 2 of 4 interfaces. *Corrected (`UNATE-20261111-001`): this is a
+  property of the memories' interfaces; an 8-point knot space of genus 4 computes parity of held points.*
 - Deeper memories (`DEEP-MEM-20261111-001`, frozen): composites holding a leaf three levels down and composites of three atoms, 40 of 40
   composite writes learned and held, 55 of 56 leaf writes; depth cost nothing, a second atom about eighteen times the steps.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with

@@ -7,6 +7,10 @@ test with its prediction (stage 1, commit `f3dff17a6`) after the census and befo
 
 ## The answer
 
+*Corrected on 2026-11-11 (`UNATE-20261111-001`).* The limit is not the knot space's: an 8-point knot space of genus 4 computes
+the parity of three held points, and small knot spaces compute majority often. What this epic found is a property of the learned
+memories' interfaces. See `docs/CORRECTIONS.md`.
+
 **No parity, no majority, nothing non-unate: at these interfaces a knot memory's maps of three held points are unate, and the only total
 ones copy or negate a single input.** Self-duality (theorem D) would allow majority and parity with three inputs; none occurs.
 

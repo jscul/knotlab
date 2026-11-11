@@ -1661,11 +1661,14 @@ that earlier records used in two senses.
 - **Depth.** How much of a knot pattern an observer must hold at once to see a
   hole in it (lesson 5.2).
 - **Drawn knot pattern.** A knot pattern given together with a drawing on a
-  surface, which earlier records called a knot space: every distinction lies in
-  three three-place knots and every co-knotted pair in one, and the knots are
-  drawn as the triangles of one colour of a two-coloured triangulation, whose
-  triangles of the other colour, its faces, are not knots. The drawing is a
-  declared substrate, so the words that describe it, such as face, corner,
+  surface, which earlier records called a knot space: every knot holds three
+  distinctions and every distinction lies in three knots, and the drawing is a
+  two-coloured triangulation whose triangles of one colour are the knots and of
+  the other colour the distinctions, each distinction lying in the three knots
+  across its three sides. Two distinctions may share one knot or two. The
+  triangulation's vertices are the record's faces: the corners of the knots
+  around a vertex make one face, where the record reads its even faces. The
+  drawing is a declared substrate, so the words that describe it, such as face, corner,
   sphere, torus, handle and genus, are the drawing's and are marked as drawn.
 - **Three-regular contradiction.** A pattern of not-all-equal knots in which
   every distinction lies in exactly three knots and that allows no state
@@ -1712,7 +1715,7 @@ that earlier records used in two senses.
   | board; cell | cells and which are neighbours; what holds one value | grid, Schreier graph; site, vertex |
   | commuting board | the board on which the steps xy and yx always meet | grid ℤ², drawn as the plane |
   | declared cycle; commuting cycle | a word of steps that a law says comes back; xyx⁻¹y⁻¹ | face; closing square |
-  | drawn knot pattern | every distinction in three knots and every co-knotted pair in one, the knots drawn as one colour of a two-coloured triangulation | the record's knot space; its drawing a checkerboard triangulated surface |
+  | drawn knot pattern | every knot holding three distinctions and every distinction in three knots, drawn as a two-coloured triangulation: knots one colour, distinctions the other, faces at its vertices | the record's knot space; its drawing a checkerboard triangulated surface |
   | three-regular contradiction | not-all-equal knots, every distinction in three, no allowed state | non-2-colourable 3-regular 3-uniform hypergraph |
   | Fano pattern; Fano piece | seven distinctions and seven knots, every two distinctions in one knot; that pattern less one element | Fano plane; Fano plane less a point or a line |
 - **One word, one meaning.** Earlier records used some words in two senses

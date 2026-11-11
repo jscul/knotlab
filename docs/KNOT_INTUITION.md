@@ -1261,8 +1261,9 @@ So holes come in two kinds:
    are the data, and does the static definition survive that change?
 
    **Words in the learning entries.** The learning entries below work on drawn knot patterns (glossary of the Intuitions guide): every
-   distinction lies in three knots and every co-knotted pair in one, and the knots are drawn as the triangles of one colour of a
-   two-coloured triangulation. The knot sphere and the tori, with their faces, corners, handles and genus, belong to that drawing, which
+   knot holds three distinctions and every distinction lies in three knots, drawn as a two-coloured triangulation whose triangles of
+   one colour are the knots and of the other the distinctions, each distinction in the three knots across its sides; the record's
+   faces are the triangulation's vertices (corrected on 2026-11-11, `docs/CORRECTIONS.md`). The knot sphere and the tori, with their faces, corners, handles and genus, belong to that drawing, which
    is declared, not built by the law. Before 2026-11-11 these entries called the knots lines, the distinctions points, the Fano and torus
    pieces atoms and the drawn knot patterns knot spaces; "the point" is still the owner's moving point of dissonance (G15).
 

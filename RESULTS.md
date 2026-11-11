@@ -1364,7 +1364,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |
 | 2026-11-11 | Deeper memories from examples (`DEEP-MEM-20261111-001`) | [closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/DEEP-MEM-20261111-001/) |
 | 2026-11-11 | Knots alone (`KNOTS-ALONE-20261111-001`) | [closure](proofs/KNOTS-ALONE-20261111-001Z/KNOTS-ALONE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/KNOTS-ALONE-20261111-001/) |
-| 2026-11-11 | Does a faithful reading supply the surface? (`NAE-SURFACE-20261111-001`) | — | [folder](research/NAE-SURFACE-20261111-001/) |
+| 2026-11-11 | Does a faithful reading supply the surface? (`NAE-SURFACE-20261111-001`) | [closure](proofs/NAE-SURFACE-20261111-001Z/NAE-SURFACE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/NAE-SURFACE-20261111-001/) |
 | 2026-11-11 | What a knot space needs to compute parity (`PARITY-NEEDS-20261111-001`) | [closure](proofs/PARITY-NEEDS-20261111-001Z/PARITY-NEEDS-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-NEEDS-20261111-001/) |
 | 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |
 

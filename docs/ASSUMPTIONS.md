@@ -1619,6 +1619,9 @@ evidence: results and their status come from the records each entry links.
   their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
   a face knot is shown to need an input the knot test excludes.
 - **History.**
+  - 2026-11-11 · Bears on it, status unchanged: the surface count cannot be dropped, since the not-all-equal law reads
+    non-surface worlds faithfully too (`NAE-SURFACE-20261111-001`); any overturning of this entry keeps the count as an input
+    ([does a faithful reading supply the surface?](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
   - 2026-11-11 · Challenged by `KNOTS-ALONE-20261111-001`, status unchanged: by its frozen rule the entry stands, since the
     not-all-equal law read 227 of 229 flat worlds without a non-facial triangle faithfully, not all, and its bond distance is graph
     distance + 1 only to distance 2. It came close: faithful on every flat world in range whose short loops have length at least 5
@@ -1642,4 +1645,8 @@ evidence: results and their status come from the records each entry links.
   at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
   non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).
 - **History.**
+  - 2026-11-11 · Challenged by `NAE-SURFACE-20261111-001`, status unchanged: the count is an input. 160 of 822 degree-preserving
+    knot swaps of faithful flat tori are read faithfully by the not-all-equal law though none is a surface, so a faithful reading
+    does not supply the count; whether counting is naming is untouched
+    ([does a faithful reading supply the surface?](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
   - 2026-11-11 · Added by `KNOTS-ALONE-20261111-001`.

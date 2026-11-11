@@ -241,12 +241,13 @@ evidence: results and their status come from the records each entry links.
   ([decision](../research/KNOT-FOUNDATION-20261019-001/canonical_correction_request.md)). Erasure entered the agents' gate in the
   workspace's first commit as a test of decomposability, which is the forgetting reading, and the program began from parity
   patterns, which are knots only under forgetting.
-- **Rests on it.** Parity as the knot that hides the most, the 34 two-loop knots in five shapes, and every result about parity's
+- **Rests on it.** Parity as the knot that hides the most, the 34 two-loop knots in five classes, and every result about parity's
   knots since 2026-10-19.
 - **Challenge.** The absence reading (A17) keeps only the atom. Every knot it accepts is a knot under forgetting, and both
   readings exclude the common hub and every 2-CNF pattern, so a challenge needs a question whose answer changes between them.
   The knot laboratory keeps both readings.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-07 · Used by `GROWTH-LAW-20261107-001A`. With the variables of absent sites and pairs forgotten, no knot joins a
     growth order to the world's states. Setting them to 0 instead makes order bits carry existence, and they then knot with the
     states.
@@ -351,17 +352,18 @@ evidence: results and their status come from the records each entry links.
 
 - **Statement.** The spacing a law sets between two distinctions is their bond distance: the size of the least knot through
   both, minus one, read from the allowed states alone. Dimension is read from how fast bond balls grow, and a circle is the
-  large-scale shape of a bond ball.
-- **Why.** It uses nothing but knots and allowed states, so no metric, coordinate or drawing is put in. On a thread of atoms it
-  counts the loops between two points, one unit per loop, which matches the owner's reading of the integers' spacing as space
+  large-scale outline of a bond ball.
+- **Why.** It uses nothing but knots and allowed states, so no metric, coordinate or drawing is put in. On an endless chain of atoms it
+  counts the loops between two distinctions, one unit per loop, which matches the owner's reading of the integers' spacing as space
   ([logic axis](../research/LOGIC-AXIS-20261107-001/logic_axis.md)).
-- **Rests on it.** The results on space from a law since 2026-11-07: the number line, the taxicab plane, the circles of
+- **Rests on it.** The results on space from a law since 2026-11-07: the endless chain (the literature's number line), the taxicab plane, the circles of
   periodic and pinwheel laws, and dimension read from ball growth (question 9).
 - **Challenge.** Other measures can be read from allowed states, such as the shortest chain of knots joining two distinctions,
-  each sharing a distinction with the next. On tree-shaped knot graphs bond distance is the number of knots on the path plus
+  each sharing a distinction with the next. On knot graphs that are trees bond distance is the number of knots on the path plus
   one, so the two agree there, but they need not agree elsewhere. A challenge would compare them on the laws already measured
   and ask whether any dimension or circle changes.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-08 · Overturned as a universal statement by the test `BOND-CHAIN-20261108-001` froze before running: in the NAND
     thread, clauses not(s(t−1) ∧ a(t) ∧ s(t)), chain distance reads a number line and bond distance none, since no knot crosses a
     gate (a value of a shared distinction that satisfies both knots). It holds wherever knots compose: on every parity law chains
@@ -396,7 +398,7 @@ evidence: results and their status come from the records each entry links.
 **Confirmed** · 2026-11-07 · reading
 
 - **Statement.** A growth result belongs to the law only if it holds in every growth order. Information that a growth process
-  keeps from earlier steps, such as a bit carried for one lap, is a hidden witness of the world and is counted as one.
+  keeps from earlier steps, such as a bit carried for one lap, is a hidden witness of the grown pattern and is counted as one.
 - **Why.** It follows from A4: a process may not supply an input, so a kept bit must be written into the system as a variable,
   and a variable that is quantified away is a witness. The grow-coin epic applied it: one bit kept for one lap ties a sphere's
   four equator corners together, so growth lays out a new round sphere only with a witness, just as a finished sphere is checked
@@ -406,16 +408,17 @@ evidence: results and their status come from the records each entry links.
   ([growth as a law](../research/GROWTH-LAW-20261107-001/growth_law.md)).
 - **Challenge.** Settled by `GROWTH-LAW-20261107-001`, which wrote growth histories into the law as variables and read them
   under K1–K3 ([proof](../proofs/GROWTH-LAW-20261107-001A/GROWTH-LAW-20261107-001A-P001_a_beginning_is_a_knot/proof.md)).
-  - **The order adds no knot.** It never knots with the world's states. Existence enters only as a presence literal.
+  - **The order adds no knot.** It never knots with the grown pattern's states. Existence enters only as a presence literal.
   - **The history's parts.** Its local part (which neighbour came first) is pairwise and holds no knot. Its global part, time
-    without a loop, is a knot on every cycle of the world, so a beginning is a knot.
-  - **What is left to carry.** What a kept history adds beyond bounded local information is only whether a world has a
+    without a loop, is a knot on every cycle of the grown pattern, so a beginning is a knot.
+  - **What is left to carry.** What a kept history adds beyond bounded local information is only whether a grown pattern has a
     beginning.
   - **The plane.** There label-free growth by the pinwheel's own law left the pinwheel at once
     ([pinwheel growth](../artifacts/GROWTH-LAW-20261107-001B/GROWTH-LAW-20261107-001B-E001_pinwheel_grown_outward/run/interpretation.md)).
   - **For whom.** Confirmed for rules that read only the law, with absent things forgotten. A rule that reads a state is not a
     law in this sense, and fixing absent variables instead of forgetting them lets order bits carry existence.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-07 · Confirmed by `GROWTH-LAW-20261107-001` (tickets A to C), for the reasons above.
   - 2026-11-07 · Under challenge: backlog B1, growth as a law, taken up as `GROWTH-LAW-20261107-001`.
   - 2026-11-07 · Added when the register was started; first applied by `GROW-COIN-20261107-001`.
@@ -517,7 +520,7 @@ evidence: results and their status come from the records each entry links.
   The program reads the point as a localized dissonance, a violated knot that local moves carry but cannot remove, rather than
   the whole joint state, and its strength as an index that local moves conserve, rather than a persistence time.
 - **Why.** These readings fit what the record already has. The knot sphere's contradiction is a vortex charge that can be placed
-  through any point and steps locally (`FLAT-STATES-20261107-001`), and violated lines minus agreeing faces count the same in
+  through any point and steps locally (`FLAT-STATES-20261107-001`), and violated knots minus agreeing faces count the same in
   every state, so no move removes the forced dissonance (`COUNT-SURFACES-20261107-001`, whose record reads the count as a
   discrete Poincaré–Hopf theorem). They were written down when the owner described the picture, and the direction that would
   test them was scoped and parked.
@@ -526,6 +529,7 @@ evidence: results and their status come from the records each entry links.
   update law. The parked direction's first step decides between them: on the octahedral knot spheres, change one sign at a time
   and check whether the forced dissonance moves as its index predicts.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-09 · On a torus whose Kasteleyn law is in a class no state satisfies, `LEARN-HANDLES-20261109-001` found the point to be
     a pair of opposite charges, one violated line and one face whose three corners agree, which learning removes only by winding
     around a handle ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)). The point stays localized. Kept as Assumed.
@@ -548,9 +552,10 @@ evidence: results and their status come from the records each entry links.
   (`COUNT-SURFACES-20261107-001`; a working hypothesis, not yet checked).
 - **Rests on it.** The framing of the parked steering direction.
 - **Challenge.** The alternative calls a change of state learning, as when a network's connections stay fixed and its activity
-  settles. The steering direction's first check, whether one re-signing moves the forced violated line out of the states once
+  settles. The steering direction's first check, whether one re-signing moves the forced violated knot out of the states once
   two even faces appear, tests the premise of this reading.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-09 · The boundary off the sphere, drawn by `LEARN-HANDLES-20261109-001`: on a torus a law's homology class is what
     learning carries beyond its even faces, and on a class-forced torus every process that removes the dissonance, whatever the
     state does, changes the law around a handle; no change of state does it ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)). Still Confirmed.
@@ -574,9 +579,10 @@ evidence: results and their status come from the records each entry links.
   parallel, is an implementation choice that changes no result.
 - **Rests on it.** The framing of the parked stretch direction, many points at once.
 - **Challenge.** If the owner meant parallel computation, the direction reduces to an implementation choice. Otherwise its first
-  step places two dissonances on one knot space, updates both in every order, and compares the outcomes: points might meet,
-  cancel or bind, since violated lines and over-agreeing faces carry opposite indices.
+  step places two dissonances on one drawn knot pattern, updates both in every order, and compares the outcomes: points might meet,
+  cancel or bind, since violated knots and over-agreeing faces carry opposite indices.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-07 · Added from the readings recorded with the owner's learning picture.
 
 ### A23 · A law's local view is its rooted code
@@ -648,13 +654,13 @@ evidence: results and their status come from the records each entry links.
 
 **Overturned** · 2026-11-10 · scope
 
-- **Statement.** In the steering results a learning step changes one sign, and only on a side of a violated line or on a side
+- **Statement.** In the steering results a learning step changes one sign, and only on a side of a violated knot or on a side
   with an end at an even face, where dissonance can be seen. The state does not change while the law is learned. A target, when
   there is one, is supplied from outside as a graph distance on the triangulation.
 - **Why.** `RESIGN-STEER-20261107-001` took it by default, to separate what changing the law can do from what changing the state
   can do. It is the cleanest reading of "learning orients the logic", and it matches the owner's word for the process,
   rationalization: the belief changes and the behaviour does not.
-- **Rests on it.** That epic's theorem that re-signing alone carries the dissonance from any line to any line with the state fixed,
+- **Rests on it.** That epic's theorem that re-signing alone carries the dissonance from any knot to any knot with the state fixed,
   and its local rule, which reached 2,399 of 2,400 targets
   ([steering by re-signing](../research/RESIGN-STEER-20261107-001/resign_steer.md)).
 - **Challenge.** The alternatives let the state relax by its own local moves between learning steps, or let the learner change any
@@ -662,6 +668,7 @@ evidence: results and their status come from the records each entry links.
   whether every target is still reached or whether the state's own moves pull the point elsewhere. A native target signal, such
   as the count of consistent states (A27) or bond distance (A12), in place of the outside distance, is a second test.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Overturned as a limit on what learning reaches by its challenge, `MOVING-STATE-20261110-001`, under the rule frozen before it
     ran: a state that flips one point between learning steps without raising the dissonance freed a stuck learner in 23 of 50 one-atom
     runs and brought 28 of 50 two-atom runs to the floor, where the fixed-state learner made no step; a unit settled at the genus-2 floor
@@ -1180,19 +1187,20 @@ evidence: results and their status come from the records each entry links.
 
 **Assumed** · 2026-11-09 · reading
 
-- **Statement.** In the learning results a dissonance is a violated line, a face where two or more corners agree, or an even face of
-  the law. A law and a state are resolved only when none of the three is present. The count weighs them together: violated lines
+- **Statement.** In the learning results a dissonance is a violated knot, a face where two or more corners agree, or an even face of
+  the law. A law and a state are resolved only when none of the three is present. The count weighs them together: violated knots
   minus Σ⌊agree/2⌋ equals (χ − |D|) / 2 in every state.
 - **Why.** `LEARN-HANDLES-20261109-001` took it by default, following the count of `COUNT-SURFACES-20261107-001` and the steering
-  learner of `RESIGN-STEER-20261107-001`, which acts at violated lines and even faces. With it, over-agreement is the charge opposite a
-  violated line, and an even face is half a charge kept in the law.
+  learner of `RESIGN-STEER-20261107-001`, which acts at violated knots and even faces. With it, over-agreement is the charge opposite a
+  violated knot, and an even face is half a charge kept in the law.
 - **Rests on it.** That epic's theorem that only surfaces of Euler characteristic 0 can be free of dissonance, and its reading of the
   class-forced torus's least dissonance as a pair that learning removes only by winding ([learning in handles](../research/LEARN-HANDLES-20261109-001/learn_handles.md)).
-- **Challenge.** The alternative counts only violated lines as dissonance. Then one sign change at the violated line resolves a
+- **Challenge.** The alternative counts only violated knots as dissonance. Then one sign change at the violated knot resolves a
   class-forced torus at once, with no winding, and the sphere too, leaving two even faces; learning would then never need a handle. The
   owner's words, dissonance as what learning works to resolve, decide between the readings; a test would ask whether a learner that
   ignores even faces and over-agreement still has anything to steer.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-09 · Added by `LEARN-HANDLES-20261109-001`.
 
 ### A47 · A native signal comes from the law and the state alone
@@ -1207,10 +1215,11 @@ evidence: results and their status come from the records each entry links.
   distance supplied by a simulator is not native.
 - **Rests on it.** That epic's reading that sight and the count of states sharing the state's dissonance steer learning natively
   ([a native target for learning](../research/NATIVE-TARGET-20261110-001/native_target.md)).
-- **Challenge.** Two signals sit on the line. The count is native but global: it weighs the whole law. Sight is local, but it reads the
+- **Challenge.** Two signals sit on the knot. The count is native but global: it weighs the whole law. Sight is local, but it reads the
   learner's moves, which follow the triangulation's incidences. A stricter reading admits only signals that a bounded neighbourhood of
   the hole determines; then only sight of bounded radius qualifies, and it already beats random moves.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `NATIVE-TARGET-20261110-001`.
 
 ### A48 · A grown handle is a Fano piece with the uniform law
@@ -1220,15 +1229,16 @@ evidence: results and their status come from the records each entry links.
 - **Statement.** When learning is paired with growth, the growth move splices one Fano piece (the Fano pattern less a distinction) at a knot,
   by one of the three bijections that keep both rotations; the piece brings the Fano pattern's uniform signs, the old signs are kept, and the
   three new sides take the signs that leave no even face. The experimenter chooses the knot.
-- **Why.** `GROW-HANDLE-20261110-001` took it by default: a Fano atom is the knot's own uniform contradiction, and splicing one across a
+- **Why.** `GROW-HANDLE-20261110-001` took it by default: a Fano piece is the knot's own uniform contradiction, and splicing one across a
   3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`). The uniform signs make the grown law the one class that keeps the
   sphere's contradiction.
 - **Rests on it.** That epic's reading that growth alone does not remove a sphere's dissonance and that learning then removes it through
-  the grown handle ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)). With the atom brought in another class, the atom would be transparent and growth alone would remove it.
-- **Challenge.** Other atoms (a thin torus less a point, other three-fold blocks), the atom brought in the class growth chooses, or a
-  growth site the learner chooses (backlog B68). The cheapest test grows a thin torus's atom instead and reads whether it too acts as the
-  replaced line in one class and is transparent in the others.
+  the grown handle ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)). With the piece brought in another class, the piece would be transparent and growth alone would remove it.
+- **Challenge.** Other pieces (a thin torus less a distinction, other three-fold blocks), the piece brought in the class growth chooses, or a
+  growth site the learner chooses (backlog B68). The cheapest test grows a thin torus's piece instead and reads whether it too acts as the
+  replaced knot in one class and is transparent in the others.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A grown handle is a Fano atom with the uniform law" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Overturned as a limit by `OTHER-ATOMS-20261110-001`: the learned memory does not need the Fano plane. Every torus atom
     whose torus has one class no state satisfies and is free at its point acts as its line in exactly that class on any host and holds
@@ -1245,7 +1255,7 @@ evidence: results and their status come from the records each entry links.
 
 **Assumed** · 2026-11-10 · measure
 
-- **Statement.** The total dissonance of a law and a state is W = violated lines + E + |D| / 2: a violated line counts 1, a face counts
+- **Statement.** The total dissonance of a law and a state is W = violated knots + E + |D| / 2: a violated knot counts 1, a face counts
   ⌊agree / 2⌋, and an even face counts 1/2, the weights of the count's identity.
 - **Why.** `GROW-STUCK-20261110-001` took it by default for its learner, which steps only when W falls. With these weights the count gives
   the floor W ≥ |χ| / 2.
@@ -1254,21 +1264,23 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Other weights (every dissonance counting 1, or over-agreement counted by agree − 1) change when a learner sees progress and
   so when it grows. The cheapest test reruns GROW-r with unit weights and reads whether it still grows once at the dissonance.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `GROW-STUCK-20261110-001`.
 
 ### A50 · The state moves without raising the dissonance while learning acts
 
 **Assumed** · 2026-11-10 · scope
 
-- **Statement.** In the learning picture, between learning steps (sign changes at the dissonance) the state may flip one point, chosen
+- **Statement.** In the learning picture, between learning steps (sign changes at the dissonance) the state may flip one distinction, chosen
   among the flips that do not raise the dissonance weight W (A49). The point moves; learning orients it.
 - **Why.** It replaces A26 as a limit, after `MOVING-STATE-20261110-001` showed that holding the state still is what left a learner stuck
   and a unit frozen. It is the owner's picture most directly: a point that moves through a network that learning orients.
-- **Rests on it.** That epic's finding that a moving point frees learning in about half the runs while a settled unit stays in its atom
+- **Rests on it.** That epic's finding that a moving point frees learning in about half the runs while a settled unit stays in its piece
   ([let the state move](../research/MOVING-STATE-20261110-001/moving_state.md)).
-- **Challenge.** The alternatives let the state take only improving flips, or any flip with a temperature, or flip several points at once.
+- **Challenge.** The alternatives let the state take only improving flips, or any flip with a temperature, or flip several distinctions at once.
   The cheapest test reruns that epic with improving flips only.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `MOVING-STATE-20261110-001`.
   - 2026-11-10 · Used both ways by `NATIVE-WRITE-20261110-001`: its learner tests its memory with this walk (a state flip only when W
     does not rise), and writes with the alternative, state flips at a temperature; status unchanged.
@@ -1289,12 +1301,13 @@ evidence: results and their status come from the records each entry links.
   the reading that no tested law selects its own dimension. Only the number line of `OPEN-END-GROWTH-20261107-001` is grown with
   nothing drawn.
 - **Challenge.** Make the board part of the allowed states, as the owner proposed on 2026-11-07 and 2026-11-10: give each pair of
-  places a distinction saying whether they are neighbours, or whether two names are one place, in the same infinite CNF as the
+  cells a distinction saying whether they are neighbours, or whether two names are one cell, in the same infinite CNF as the
   values, with one uniform clause pattern that names no degree, face size or relation of a group, and read which boards the rules
   allow or force (backlog B92). If every such law leaves the board free, the barrier belongs to uniform laws and not to drawing; if
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Places and their neighbours are given before the rules" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · The board line closes on it, with `GROW-FACE-20261110-001` ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)):
     places and their neighbours need not be given before the rules, but a face must be named by them. Static laws, with letters
@@ -1347,17 +1360,18 @@ evidence: results and their status come from the records each entry links.
   the distinction's three sides leaves a satisfiable law). The piece brings a Kasteleyn law of its torus, the old signs are kept, and the three new sides take the
   signs that leave no even face. The Fano piece (7 distinctions) and the thin-torus pieces of even index (4 to 40 distinctions) are such
   pieces. The experimenter chooses the piece and the knot.
-- **Why.** `OTHER-ATOMS-20261110-001` put it in place of A48: for exactly these atoms the atom rule holds on any host (proved, given
-  freeness, which was checked for every lattice torus to 30 points), and thin-torus atoms wrote and held addresses as the Fano atom does
-  ([other atoms](../research/OTHER-ATOMS-20261110-001/other_atoms.md)). An atom whose torus satisfies every class is transparent in all
+- **Why.** `OTHER-ATOMS-20261110-001` put it in place of A48: for exactly these pieces the piece rule holds on any host (proved, given
+  freeness, which was checked for every lattice torus to 30 distinctions), and thin-torus pieces wrote and held addresses as the Fano piece does
+  ([other pieces](../research/OTHER-ATOMS-20261110-001/other_atoms.md)). A piece whose torus satisfies every class is transparent in all
   four classes and holds nothing, so it is not a memory.
-- **Rests on it.** The learning line's results from `GROW-HANDLE-20261110-001` to `ADDRESS-SEQ-20261110-001`, now read for any such atom;
+- **Rests on it.** The learning line's results from `GROW-HANDLE-20261110-001` to `ADDRESS-SEQ-20261110-001`, now read for any such piece;
   the reading that growth alone does not remove a sphere's dissonance
   ([learning that grows a handle](../research/GROW-HANDLE-20261110-001/grow_handle.md)); backlog B98 and B104.
-- **Challenge.** Atoms of genus 2 or more (a grown space less a point), tori that are not lattice quotients, a torus that is not free, or a
-  growth law that chooses the atom itself (backlog B106). The cheapest test grows a knot sphere carrying two Fano atoms, less a point, as
-  one atom (backlog B104): if it acts only where both inner atoms act, the premise extends to atoms of atoms.
+- **Challenge.** Pieces of genus 2 or more (a grown drawn knot pattern less a distinction), tori that are not lattice quotients, a torus that is not free, or a
+  growth law that chooses the piece itself (backlog B106). The cheapest test grows a knot sphere carrying two Fano pieces, less a distinction, as
+  one piece (backlog B104): if it acts only where both inner pieces act, the premise extends to pieces of pieces.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A grown handle is a class-forced torus atom" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · `NATIVE-ATOM-20261110-001` read the choice: a uniform growth rule (one sign pattern on every line, fired at a violated line)
     grows a remembering atom only with the Fano atom, the one handle whose plain law contradicts itself; every other class-forced atom grows
@@ -1372,18 +1386,19 @@ evidence: results and their status come from the records each entry links.
 **Assumed** · 2026-11-10 · reading
 
 - **Statement.** When the board is made of identity distinctions on names, the source-aware reading counts a change by the name
-  variables it flips. A value at a place of a board other than the tree is one variable per name, so flipping it flips infinitely
+  variables it flips. A value at a cell of a board other than the tree is one variable per name, so flipping it flips infinitely
   many. Under this count no distinction of a state off the tree, and no identity distinction anywhere, is native.
 - **Why.** The source-aware reading (adopted 2026-10-20) is stated for the variables of the system, and in this encoding the variables
-  belong to names. `BOARD-DIST-20261110-001` applied it as written; the alternative, a count per place, was not mapped.
+  belong to names. `BOARD-DIST-20261110-001` applied it as written; the alternative, a count per cell, was not mapped.
 - **Rests on it.** Theorem 5's corollary in
   [boards of laws that name no relation](../proofs/BOARD-DIST-20261110-001A/BOARD-DIST-20261110-001A-P001_boards_of_laws_that_name_no_relation/proof.md),
   and the reading that the 60 knots between the square's identity distinction and the values are not native
   ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)).
-- **Challenge.** Count changes per place: finitely many places' values changed with the board fixed, and identifications at finitely
-  many places. Re-read the census's square knots under that count. If they become native, a board made of distinctions can carry
+- **Challenge.** Count changes per cell: finitely many cells' values changed with the board fixed, and identifications at finitely
+  many cells. Re-read the census's square knots under that count. If they become native, a board made of distinctions can carry
   native knots, and the tension between the owner's idea and the source-aware reading lifts.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Answered by `PLACE-FLIP-20261110-001` ([nativeness up to renaming](../research/PLACE-FLIP-20261110-001/place_flip.md)), for boards of
     abstract names: counting changes per place with the board fixed, as the challenge asks, every board-value knot of the 90 one-bit
     count laws is native in some world of finite pieces, while on the free board 58 of those laws let no value change by any
@@ -1409,10 +1424,11 @@ evidence: results and their status come from the records each entry links.
   (its Theorem 4); every board being connected; and the stabilizer readings of `LEIBNIZ-BOARDS-20261110-001`,
   `RIGID-WORLDS-20261110-001` and `WEAK-APER-20261110-001`, which use the letters' group
   ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md)).
-- **Challenge.** Name places without letters, with a neighbour distinction for each pair and laws that name no degree. The question
+- **Challenge.** Name cells without letters, with a neighbour distinction for each pair and laws that name no degree. The question
   is then whether a finitary law can force a bounded degree at all, and whether the unfolding theorem holds there. If the theorem
   fails, the naming was a hidden drawing; if it holds, the obstruction does not depend on the naming.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Places are named by words in two letters" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Confirmed for the obstruction by `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)), by
     the rule frozen in its pre-registration. Without letters every finitary law that allows a state allows a structureless one,
@@ -1480,14 +1496,15 @@ evidence: results and their status come from the records each entry links.
 - **Statement.** An address asked of the layered memory is a bit for every piece, acting or not, and each piece is given to the learner
   by its region: its knots and every face they touch. The learner knows where each piece is and what is asked of it, and nothing about its
   class or role.
-- **Why.** `NATIVE-WRITE-20261110-001` froze it before any run. With only the atoms asked to act named, a learner cannot tell the forced
-  dissonance of an unnamed atom that acts from a free unit in the host, so it cannot check that the other atoms are clear; a memory word
+- **Why.** `NATIVE-WRITE-20261110-001` froze it before any run. With only the pieces asked to act named, a learner cannot tell the forced
+  dissonance of an unnamed piece that acts from a free unit in the host, so it cannot check that the other pieces are clear; a memory word
   asks for its zeros as well as its ones.
-- **Rests on it.** That epic's native learner, whose probe checks each atom asked 0 for a moment its region is free of dissonance
+- **Rests on it.** That epic's native learner, whose probe checks each piece asked 0 for a moment its region is free of dissonance
   ([native writing](../research/NATIVE-WRITE-20261110-001/native_write.md)).
-- **Challenge.** Name only the atoms asked 1, as backlog B119 first phrased it ("a bias at the named atoms only"), and ask whether a
-  learner can still write exactly, for instance by testing whether dissonance outside the named atoms ever moves.
+- **Challenge.** Name only the pieces asked 1, as backlog B119 first phrased it ("a bias at the named pieces only"), and ask whether a
+  learner can still write exactly, for instance by testing whether dissonance outside the named pieces ever moves.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "An address asks for a bit per atom, each atom given by its region" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `NATIVE-WRITE-20261110-001`.
 
@@ -1501,13 +1518,14 @@ evidence: results and their status come from the records each entry links.
   holding the inputs and the output it asks for.
 - **Why.** `IN-OUT-20261110-001` froze it before any run. A role depends on the law alone, so held inputs cannot change it, and readings of
   roles are monotone (theorem M of `NOT-INSIDE-20261110-001`); a decided value alone allows, for two inputs, only copying or negating one
-  of them (theorem D there). The undecided reading is what a gate does: an acting atom forces its third side exactly when the held sides
+  of them (theorem D there). The undecided reading is what a gate does: an acting piece forces its third side exactly when the held sides
   agree.
 - **Rests on it.** That epic's maps and its learning from examples
   ([inputs and outputs](../research/IN-OUT-20261110-001/in_out.md)).
 - **Challenge.** Read the output differently: as the dissonance near it, as a decided value with more inputs (three held inputs allow
-  majority and parity under theorem D), or as a probability over floor states; or let the world hold inputs as signs rather than points.
+  majority and parity under theorem D), or as a probability over floor states; or let the outside hold inputs as signs rather than distinctions.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "The world holds inputs as points and reads an output at the floor" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `IN-OUT-20261110-001`.
 
@@ -1515,8 +1533,8 @@ evidence: results and their status come from the records each entry links.
 
 **Confirmed** · 2026-11-10 · reading
 
-- **Statement.** When places are names without letters, the source-aware reading counts a change by the distinctions it flips, as
-  written. Exchanging finitely many names is then a finite change, so in a state with infinitely many copies of each place every
+- **Statement.** When cells are names without letters, the source-aware reading counts a change by the distinctions it flips, as
+  written. Exchanging finitely many names is then a finite change, so in a state with infinitely many copies of each cell every
   distinction passes the condition, which then excludes nothing.
 - **Why.** `BARE-NAMES-20261110-001` applied the reading as written. A count up to renaming was not mapped.
 - **Rests on it.** Nothing now: the 90 knots between a neighbour distinction and its two endpoint values found by that epic's census
@@ -1526,6 +1544,7 @@ evidence: results and their status come from the records each entry links.
   of two edges with one pair of values still flips neighbour distinctions; ask which values of the 90 laws are flipped by local
   moves without renaming.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Confirmed for the 90 knots by `PLACE-FLIP-20261110-001` ([nativeness up to renaming](../research/PLACE-FLIP-20261110-001/place_flip.md)):
     counted in place (A60), with renamings excluded, every one of them is native in some world of copies of a finite board, so
     none rests on renamings. On the free board 58 of the laws freeze their values, which no count of renamings changes.
@@ -1535,18 +1554,19 @@ evidence: results and their status come from the records each entry links.
 
 **Assumed** · 2026-11-10 · reading
 
-- **Statement.** When places are names without letters, a distinction counts as native at a state when a finite change flips it that
+- **Statement.** When cells are names without letters, a distinction counts as native at a state when a finite change flips it that
   changes one kind of distinction only, values with the board kept or neighbour distinctions with the values kept, is not a
   renaming, and is minimal. The source-aware reading as written cannot tell a renaming from a change; this is the count used in its
-  place.
+  cell.
 - **Why.** `PLACE-FLIP-20261110-001` froze it before any run, at the coordinator's request. Excluding renamings alone is not enough,
-  since a place can be transplanted by a finite rewiring that is not a renaming, so the count holds one kind of distinction fixed.
+  since a cell can be transplanted by a finite rewiring that is not a renaming, so the count holds one kind of distinction fixed.
 - **Rests on it.** That epic's marks: all 90 board-value knots of `BARE-NAMES-20261110-001B` native in place in some world of finite
   pieces, 26 native in place in some tree world and 64 in none, 58 laws rigid on every tree ([nativeness up to renaming](../research/PLACE-FLIP-20261110-001/place_flip.md)).
 - **Challenge.** Count a change by whether it changes the world up to isomorphism, or allow both kinds of distinction to change in
   one minimal change that is not a transplant, and ask whether the marks move. It is a reading of the canonical source-aware
   condition, not a change to it; any change to the canonical test is the owner's.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `PLACE-FLIP-20261110-001`.
 
 ### A61 · Closing a cycle in a growth step declares that cycle
@@ -1557,14 +1577,15 @@ evidence: results and their status come from the records each entry links.
   cells or by joining two existing cells. Since the cycle runs through the step's view, the step fixes it. Merging cells and
   changing existing values are outside accretion.
 - **Why.** `GROW-FACE-20261110-001` froze it before any computation, at the coordinator's request, as what would count as growth
-  forcing the plane without a named face. Under it a law that names no face grows trees, so growth needs a named face by definition;
-  the epic's content is what laws that do name faces force.
+  forcing the plane without a declared cycle. Under it a law that declares no cycle grows trees, so growth needs a declared cycle by
+  definition; the epic's content is what laws that do declare cycles force.
 - **Rests on it.** That epic's verdict for growth, and with it the board line's closing summary ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)).
-- **Challenge.** Read naming more finely: a rule names a face only when it fixes the face's length or offsets. Then ask whether a law
+- **Challenge.** Read declaring more finely: a rule declares a cycle only when it fixes the cycle's length or offsets. Then ask whether a law
   that closes whatever short cycles it sees, without coordinates, can grow the plane in every fair order; such a law would show the
-  face emerging rather than written in. Merging places whose views agree while growing, a Leibniz rule, is another way to close
+  cycle emerging rather than written in. Merging cells whose views agree while growing, a Leibniz rule, is another way to close
   cycles that no step fixes.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Closing a cycle in a growth step names a face" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `GROW-FACE-20261110-001`.
 
@@ -1616,23 +1637,24 @@ evidence: results and their status come from the records each entry links.
   offsets, or a cycle closed in a growth step as in A61), puts that cycle in: the cycle is part of what the law is given, not
   something it builds. Under this reading "the commuting board needs a declared cycle" is an obstruction. This is a reading of what counts as
   drawn, not a change to the knot test; the canonical K1–K3 test is unchanged.
-- **Why.** Taken by default in the board line of 2026-11-10, whose verdict reads naming a face as the input the line could not
+- **Why.** Taken by default in the board line of 2026-11-10, whose verdict reads declaring a cycle as the input the line could not
   remove ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)). The opposite reading was taken, also by
-  default, in the uniform-spheres epic of 2026-11-07, where faces were declared co-lines and a law of points, lines and co-lines
+  default, in the uniform-spheres epic of 2026-11-07, where faces were declared co-lines and a law of distinctions, knots and co-lines
   was said to build its own closed surface with nothing drawn, flat for co-line sizes (3,3,3), (2,4,4) and (2,3,6)
   ([uniform spheres](../research/UNIFORM-SPHERES-20261107-001/uniform_spheres.md)). Recorded on 2026-11-11, at the coordinator's
   decision, by a read-only review that found the two lines reading the same fact in opposite ways.
 - **Rests on it.** The board line's verdict as an obstruction, "a uniform local law, static or grown, chooses the plane only by
-  naming a face" ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md),
-  [abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)); A61's definition of naming; and the reading that the
-  plane's face is the input space from a law cannot remove.
-- **Challenge.** Count a face as native when its relation passes K1–K3 over the cycle's distinctions: a parity or not-all-equal
+  naming a face" (in the glossary's words, by declaring a cycle) ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md),
+  [abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)); A61's definition of declaring; and the reading that the
+  plane's declared cycle is the input space from a law cannot remove.
+- **Challenge.** Count a declared cycle as native when its relation passes K1–K3 over the cycle's distinctions: a parity or not-all-equal
   relation around a cycle of open distinctions is then a knot, and a three-place knot already spans a triangle. Under that reading
-  the board line's verdict says the plane is built from face knots, and the uniform-spheres result is the positive form of the same
-  fact. The cheapest discriminator is backlog B144: worlds of three-place knots alone, with no declared faces, read for the faces
-  their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
-  a face knot is shown to need an input the knot test excludes.
+  the board line's verdict says the plane is built from knots on its cycles, and the uniform-spheres result is the positive form of the same
+  fact. The cheapest discriminator is backlog B144: patterns of three-place knots alone, with no declared cycles, read for the cycles
+  their knots span. The entry is overturned if such patterns fix the literature's flat local geometry with nothing named but the knot, and confirmed if
+  a knot on a cycle is shown to need an input the knot test excludes.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A named face is put in, not native" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Overturned in the knots-alone setting, conditional on A64 (the surface count names no face, Assumed), with the
     surface count given and on computed evidence in range, by `LONG-LOOP-20261111-001`'s frozen rule, which applies this entry's
@@ -1660,16 +1682,17 @@ evidence: results and their status come from the records each entry links.
 - **Statement.** In a knot pattern of knots alone, the two-fold count (every co-knotted pair in exactly two knots, the knots at
   each distinction one cycle) and the degree d (every distinction in d knots) are counts of how knots meet at a distinction; they
   declare no cycle. The face, in the drawing's word, is the knot itself. The canonical K1–K3 test is unchanged.
-- **Why.** Taken by default in `KNOTS-ALONE-20261111-001`'s pre-registration, which read the surface condition as an incidence
+- **Why.** Taken by default in `KNOTS-ALONE-20261111-001`'s pre-registration, which read the two-fold count as an incidence
   count like d, so that a law with it names nothing but its knot ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
-  The alternative, in the spirit of A61's finer reading, counts a link's fixed length as a named dual face.
-- **Rests on it.** That epic's reading that the not-all-equal law reads flat local geometry natively with nothing named but the
-  knot and the surface count, and A63's overturning in the knots-alone setting (`LONG-LOOP-20261111-001`), which holds only while
+  The alternative, in the spirit of A61's finer reading, counts a link's fixed length as a declared dual cycle.
+- **Rests on it.** That epic's reading that the not-all-equal law reads the literature's flat local geometry natively with nothing named but the
+  knot and the two-fold count, and A63's overturning in the knots-alone setting (`LONG-LOOP-20261111-001`), which holds only while
   this entry does.
-- **Challenge.** Ask whether the count can be dropped: if no world that is not a surface is read faithfully by the not-all-equal law
+- **Challenge.** Ask whether the count can be dropped: if no pattern that is not a two-fold weave is read faithfully by the not-all-equal law
   at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
-  non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).
+  pattern that is not a two-fold weave shows that the count is an input, to be weighed under the finer reading (backlog B145).
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Counting how knots meet at a distinction names no face" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Bearing from `OVERLAP-READ-20261111-001`, status unchanged: the not-all-equal law's states depend only on how many
     knots lie on each pair (proved: two knot patterns with the same count on every pair have the same states), so a count of how
@@ -1693,16 +1716,17 @@ evidence: results and their status come from the records each entry links.
   learning line), a reference is a distinction the outside holds at one fixed value while it holds the inputs, and a map read with a reference is read at that
   value only. The reference is an input supplied by the outside, like the held inputs; the law does not produce it. The canonical K1–K3
   test is unchanged.
-- **Why.** Taken by default in `HOLD-COUNT-20261111-001`'s pre-registration, to ask what one fixed value buys a knot space that, by
-  theorem D of `IN-OUT-20261110-001`, can read a count only up to its mirror. The alternative is a reference made natively, a point
+- **Why.** Taken by default in `HOLD-COUNT-20261111-001`'s pre-registration, to ask what one fixed value buys a drawn knot pattern that, by
+  theorem D of `IN-OUT-20261110-001`, can read a count only up to its mirror. The alternative is a reference made natively, a distinction
   whose value the law or learning fixes; the not-all-equal law cannot fix one, being the only three-place knot with no preferred value
   (`PINNING-20261031-001`, `MUTUAL-SELECTION-20261031-001`).
 - **Rests on it.** `HOLD-COUNT-20261111-001`'s readings with a reference (the count mod 3 and the least spaces holding it), and the
-  reading in backlog B148 that a reference point turns self-dual maps into all maps.
-- **Challenge.** Look for a native reference: a space or a learned frame in which one point's value is fixed in every floor state
-  without the world holding it, or a law with a preferred value that keeps the knot's other properties. Finding one would make the
+  reading in backlog B148 that a reference distinction turns self-dual maps into all maps.
+- **Challenge.** Look for a native reference: a space or a learned frame in which one distinction's value is fixed in every floor state
+  without the outside holding it, or a law with a preferred value that keeps the knot's other properties. Finding one would make the
   counts read here native; a proof that no complement-closed law fixes a value would confirm that the reference is always an input.
 - **History.**
+  - 2026-11-11 · Its other fields reworded under the owner's language rule, status unchanged ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A held reference point is supplied by the world" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Used by `HOLD-COUNT-20261111-001`, status unchanged: one reference point held at 0 gives no count of three held points
     mod 3 or mod 4 on any of its 1,128 spaces; the maps of four held points there never use the reference as a count mod 3 would

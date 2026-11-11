@@ -83,3 +83,40 @@ Direction 2 comes first because it is the cheapest discriminator for direction 1
 B146 and B147 added. **Assumptions:** none new or changed.
 **Basket:** B147 (what a knot space needs to compute parity), B130 (a probe that is a theorem); taken: B147 as the selected next step;
 B146 recorded as a sub-goal.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-11:
+
+**B136 is closed. Unateness is not a theorem: knot spaces can count, and only the learned memories can't.** An 8-point knot space of genus 4 computes the parity of three held points exactly: hold points 0, 3 and 4 at any values, and point 5 is forced to their sum mod 2.
+
+- **Definition (by hand, before anything ran):** a map of held points is only required to be self-dual, and general NAE logic can define parity (Post's lattice). So any limit has to come from the knot space's shape.
+- **Prior work:** planar NAE-3SAT is polynomial (Moret 1988). A handle lets two wires cross, though, and the gadget uses every handle its surface can hold (8 points, 2 faces).
+- **The gadget (exact, three independent readings):** brute force over all 256 states, the dissonance engine (W = |χ| exactly on its 8 floor states), and SAT all agree. Parity recurs at 12 points.
+- **The search (exact):** across 799 random knot spaces of 6 to 12 points, every class and every interface, majority appears at every size and parity 20 times. No other non-unate map appears. The deeper memories' interfaces have no non-unate map and no majority.
+- **Deviation:** the radius-2 census proved infeasible (unfinished after two hours), so I dropped it before any result was read; it's logged. The stop condition was met by the gadget, so no proof attempt was needed; three independent readings stand in for the referee pass.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: are maps of held points unate (B136) | **Status:** Successful | a definite answer: no; an exact 8-point parity gadget |
+| Local direction: what held points can compute | Continue | knot spaces count; what that needs, and whether memories can, is open |
+| Broader exploration: learning program | Known alternatives | a learned memory that computes parity, what parity needs, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | knot spaces compute non-unate maps; the memories' limit is their shape |
+
+**Next step:** Research directions, selected #2.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A learned memory that computes parity (sub-goal B146) | 3/3 Major | 1/3 Exploratory | splice the gadget, less a point, into a memory host and ask whether the learner turns its parity on and off from examples → a learned non-unate map, or what stops it | Recorded as a sub-goal |
+| 2 | What a knot space needs to compute parity (B147) | 2/3 Substantial | 2/3 Testable | the same exact search over genus 1 and 2 and more faces per point → the least genus and local structure parity needs | Selected, awaiting go-ahead |
+| 3 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 4 | How learning cost grows with atoms (B143) | 1/3 Incremental | 3/3 Ready | as recorded | Deferred |
+
+I put #2 first because it's the cheaper discriminator for #1: it says what structure a memory would have to grow.
+
+**Corrections:** one, Narrowing: B133's "the limit belongs to the knot space" was too broad; it belongs to the memories' interfaces.
+**Goals:** G15 checkpoint (capability gained, with G16); B136 taken; sub-goal B146 and B147 added.
+**Assumptions:** none new or changed.
+**Basket:** B147 (what a knot space needs to compute parity), B130; taken: B147 as the selected next step; B146 recorded as a sub-goal.
+
+The long run is registered in docs/LONG_RUNNING.md and folded in. B147 waits for a go-ahead.

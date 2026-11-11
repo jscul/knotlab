@@ -25,7 +25,7 @@ plain planar piece turns out to be twisted. The Fano plane is the only
 non-2-colourable 3-regular 3-uniform hypergraph whose incidence graph is a
 brace.
 
-**The intuition.** A 2-colouring of such a hypergraph is a world of a network
+**The intuition.** A 2-colouring of such a hypergraph is a world of a pattern
 of not-all-equal knots, in which every distinction sits in exactly three knots.
 Deciding is easy natively, but counting worlds is a different matter. See
 [INTUITIONS, lesson 6.2](../../INTUITIONS.md#62-the-worlds-of-not-all-equal-knots).

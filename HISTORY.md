@@ -3,6 +3,44 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 11 November 2026: three theory cards said knots build spaces that were drawn or given
+
+- [THEORY.md](THEORY.md)'s cards for the not-all-equal knot's contradictions
+  and for signed knots on Sierpinski gaskets and simplices, and the reading
+  on native gluing, said that knots and laws "build" surfaces and
+  self-similar spaces. The surfaces are the literature's least-genus drawings
+  of an incidence graph, the gaskets and simplices are drawn in advance, and
+  how knots meet is supplied with the gluing, not by the law
+  ([decision note](research/NAE-SURFACE-20261111-001/nae_surface.md)).
+- The cards now say what a given gluing makes, or what the law reproduces on
+  a drawn substrate, and each says it was reworded.
+- Unchanged: every proved statement, number and evidence link.
+
+## 11 November 2026: the guide and the theory page stop naming the program's objects with spatial words
+
+- The program is trying to build space, so its pages no longer name their own
+  objects with words that belong to a space of two or three dimensions
+  (owner, 11 November). [INTUITIONS.md](INTUITIONS.md) states the rule in
+  lesson 1.1, and its glossary gives each word one meaning, the intuition
+  behind it, the literature's name for each object, and the words earlier
+  records used in two senses.
+- Words that changed: a system's shape (the sets it leaves free) is its free
+  complex; an empty triangle is a hollow triple; a network of knots is a knot
+  pattern, and one that allows a state is a base; a triangulated surface is a
+  two-fold weave; a torus is a one-pair weave and genus is cycle pairs; flat is
+  six-regular, and the triangular lattice is the endless six-regular weave; a
+  three-fold space is a three-regular contradiction and a Fano atom a Fano
+  piece; the points and lines of a knot pattern are its distinctions and
+  knots; a board's places are cells; a named face is a declared cycle; the 34
+  knots come in five classes.
+- Lesson 3.3 is now "The free complex of a system" and lesson 6.3 "Counting
+  on classical 3-manifolds", which says it reports a result about classical
+  objects. Knot patterns, bases and two-fold weaves are introduced in lesson
+  2.1, after knots.
+- Unchanged: every claim, label, number and evidence link. For records that
+  still use the earlier words, the glossary's table "One word, one meaning"
+  gives the word each sense has now.
+
 ## 10 November 2026: the accretion epic's registration offered a test its definition settled
 
 - The pre-registration of `GROW-FACE-20261110-001` listed a failure of its

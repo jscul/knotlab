@@ -118,6 +118,7 @@ evidence: results and their status come from the records each entry links.
 | [A61](#a61--closing-a-cycle-in-a-growth-step-names-a-face) | Closing a cycle in a growth step names a face | reading | Assumed |
 | [A62](#a62--a-law-gives-a-shape-only-by-forcing-it) | A law gives a shape only by forcing it | reading | Assumed |
 | [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Assumed |
+| [A64](#a64--counting-how-knots-meet-at-a-distinction-names-no-face) | Counting how knots meet at a distinction names no face | reading | Assumed |
 
 ## Entries
 
@@ -1584,6 +1585,11 @@ evidence: results and their status come from the records each entry links.
   of worlds made of knots alone, which asks what every allowed world shares. The entry is overturned if question 9 is restated
   under the co-real reading, and confirmed if a question about shape is found that only the forcing reading can pose.
 - **History.**
+  - 2026-11-11 · Challenged by `KNOTS-ALONE-20261111-001`, status unchanged: at positive curvature forcing works, since a world
+    with no cover can be fixed outright (the surface condition and d leave the classical list, and the not-all-equal law removes the
+    projective plane, so at d = 5 it allows only the icosahedron); at d >= 6 no law fixes size, and that law does not fix
+    orientability among flat worlds, so only the co-real reading says what it gives there
+    ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
   - 2026-11-11 · Challenge narrowed: "never global shape" holds only where every world has proper covers; at d <= 5 the
     classical finite lists fix shape and size (found by `KNOTS-ALONE-20261111-001`'s pre-registration).
   - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.
@@ -1613,4 +1619,27 @@ evidence: results and their status come from the records each entry links.
   their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
   a face knot is shown to need an input the knot test excludes.
 - **History.**
+  - 2026-11-11 · Challenged by `KNOTS-ALONE-20261111-001`, status unchanged: by its frozen rule the entry stands, since the
+    not-all-equal law read 227 of 229 flat worlds without a non-facial triangle faithfully, not all, and its bond distance is graph
+    distance + 1 only to distance 2. It came close: faithful on every flat world in range whose short loops have length at least 5
+    (exploratory). What is still put in is the surface count (A64; backlog B145)
+    ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
   - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.
+
+### A64 · Counting how knots meet at a distinction names no face
+
+**Assumed** · 2026-11-11 · reading
+
+- **Statement.** In a world of knots alone, the surface condition (every co-knotted pair in exactly two knots, every link one
+  cycle) and the degree d (every distinction in d knots) are counts of how knots meet at a distinction; they name no face. The face
+  is the knot itself. The canonical K1–K3 test is unchanged.
+- **Why.** Taken by default in `KNOTS-ALONE-20261111-001`'s pre-registration, which read the surface condition as an incidence
+  count like d, so that a law with it names nothing but its knot ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
+  The alternative, in the spirit of A61's finer reading, counts a link's fixed length as a named dual face.
+- **Rests on it.** That epic's reading that the not-all-equal law reads flat local geometry natively with nothing named but the
+  knot and the surface count, and the bearing of its result on A63.
+- **Challenge.** Ask whether the count can be dropped: if no world that is not a surface is read faithfully by the not-all-equal law
+  at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
+  non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).
+- **History.**
+  - 2026-11-11 · Added by `KNOTS-ALONE-20261111-001`.

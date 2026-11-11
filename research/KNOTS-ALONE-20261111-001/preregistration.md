@@ -140,3 +140,13 @@ features a law fixes by excluding worlds.
 
 One run on the frozen family; a stress test one size past (lattice tori to 30 distinctions for P5, Klein bottles at V = 17 and 18
 for P4 and P2) after the run. No extension of the laws, the readings or the ranges in this epic.
+
+## Corrections after freezing (2026-11-11)
+
+Found by the referee, logged in `docs/CORRECTIONS.md` (Not a block); the text above is left as frozen.
+- D3's "at d ≥ 7 there are worlds of every higher genus" fails for χ = −1 (no surface world has it).
+- P4's "PAR allows exactly the 3-colourable flat worlds" should read "is native on": PAR allows the all-ones state everywhere.
+- The A62 rule's "a uniform knot law fixing global shape and size" credits the law with what the surface condition and d do; NAE
+  only removes the projective plane at d = 5.
+- The frozen code's filter d ≤ V − 1 dropped the registered cells (6, 6) and (7, 6); they were run afterwards
+  (`omitted_cells.py`), with P3 unchanged.

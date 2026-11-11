@@ -117,6 +117,7 @@ evidence: results and their status come from the records each entry links.
 | [A60](#a60--nativeness-under-abstract-names-is-counted-in-place) | Nativeness under abstract names is counted in place | reading | Assumed |
 | [A61](#a61--closing-a-cycle-in-a-growth-step-names-a-face) | Closing a cycle in a growth step names a face | reading | Assumed |
 | [A62](#a62--a-law-gives-a-shape-only-by-forcing-it) | A law gives a shape only by forcing it | reading | Assumed |
+| [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Assumed |
 
 ## Entries
 
@@ -1580,5 +1581,32 @@ evidence: results and their status come from the records each entry links.
   rather than block it: a law fixes local geometry and never global shape. The cheapest discriminator is backlog B144, a census
   of worlds made of knots alone, which asks what every allowed world shares. The entry is overturned if question 9 is restated
   under the co-real reading, and confirmed if a question about shape is found that only the forcing reading can pose.
+- **History.**
+  - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.
+
+### A63 · A named face is put in, not native
+
+**Assumed** · 2026-11-11 · reading
+
+- **Statement.** A law that names a face, by fixing which cycle of places closes (a relation of the letters, a face length or
+  offsets, or a cycle closed in a growth step as in A61), puts that face in: the face is part of what the law is given, not
+  something it builds. Under this reading "the plane needs a named face" is an obstruction. This is a reading of what counts as
+  drawn, not a change to the knot test; the canonical K1–K3 test is unchanged.
+- **Why.** Taken by default in the board line of 2026-11-10, whose verdict reads naming a face as the input the line could not
+  remove ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)). The opposite reading was taken, also by
+  default, in the uniform-spheres epic of 2026-11-07, where faces were declared co-lines and a law of points, lines and co-lines
+  was said to build its own closed surface with nothing drawn, flat for co-line sizes (3,3,3), (2,4,4) and (2,3,6)
+  ([uniform spheres](../research/UNIFORM-SPHERES-20261107-001/uniform_spheres.md)). Recorded on 2026-11-11, at the coordinator's
+  decision, by a read-only review that found the two lines reading the same fact in opposite ways.
+- **Rests on it.** The board line's verdict as an obstruction, "a uniform local law, static or grown, chooses the plane only by
+  naming a face" ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md),
+  [abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)); A61's definition of naming; and the reading that the
+  plane's face is the input space from a law cannot remove.
+- **Challenge.** Count a face as native when its relation passes K1–K3 over the cycle's distinctions: a parity or not-all-equal
+  relation around a cycle of open distinctions is then a knot, and a three-place knot already spans a triangle. Under that reading
+  the board line's verdict says the plane is built from face knots, and the uniform-spheres result is the positive form of the same
+  fact. The cheapest discriminator is backlog B144: worlds of three-place knots alone, with no declared faces, read for the faces
+  their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
+  a face knot is shown to need an input the knot test excludes.
 - **History.**
   - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.

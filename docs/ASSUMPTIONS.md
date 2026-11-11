@@ -116,6 +116,7 @@ evidence: results and their status come from the records each entry links.
 | [A59](#a59--renamings-count-as-finite-changes-under-abstract-names) | Renamings count as finite changes under abstract names | reading | Confirmed |
 | [A60](#a60--nativeness-under-abstract-names-is-counted-in-place) | Nativeness under abstract names is counted in place | reading | Assumed |
 | [A61](#a61--closing-a-cycle-in-a-growth-step-names-a-face) | Closing a cycle in a growth step names a face | reading | Assumed |
+| [A62](#a62--a-law-gives-a-shape-only-by-forcing-it) | A law gives a shape only by forcing it | reading | Assumed |
 
 ## Entries
 
@@ -1551,3 +1552,33 @@ evidence: results and their status come from the records each entry links.
   cycles that no step fixes.
 - **History.**
   - 2026-11-10 · Added by `GROW-FACE-20261110-001`.
+
+### A62 · A law gives a shape only by forcing it
+
+**Assumed** · 2026-11-11 · reading
+
+- **Statement.** Question 9 asks which uniform local law gives a shape that looks like a space of low dimension. Every epic on it
+  has read "gives" as "forces": a law gives the plane, a round circle or a sphere only when every world it allows has that shape, so
+  a law that also allows the plane's tori, its covering tree or a long capped tube does not give it. This is a reading of the
+  question, not of the knot test; the canonical K1–K3 test is unchanged.
+- **Why.** Taken by default and never compared with an alternative, from the pinwheel and sphere epics of 2026-11-07 to the board
+  and growth lines of 2026-11-10, whose verdicts are all stated as forcing
+  ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)). Recorded on 2026-11-11, at the coordinator's decision,
+  by a read-only review of why the space lines parked; no epic tested it.
+- **Rests on it.** The negative verdicts of question 9 as worded: no undecorated pinwheel law forces roundness (A25); no law
+  without hidden states tells the knot spheres from capped tubes
+  ([sphere growth](../research/SPHERE-GROWTH-20261107-001/sphere_growth.md)); a law that names no relation allows the tree
+  whenever it allows an infinite board ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md),
+  [weakly aperiodic laws](../research/WEAK-APER-20261110-001/weak_aperiodic.md),
+  [abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)); and growth chooses the plane only by naming a face. Under
+  this reading those verdicts are close to automatic: a law built from windows allows a state on a world exactly when every window
+  is fine, so it allows the same states on every world whose windows look alike, a ring twice as long or a cover included. No
+  bounded law tells a long thread from a ring ([growth as a law](../research/GROWTH-LAW-20261107-001/growth_law.md)).
+- **Challenge.** Read question 9 under A15, where nothing selects one world: a law gives a shape when the shape is among the worlds
+  it allows and some local feature (the link at each distinction, its curvature, the dimension bond balls read) is the same in
+  every world it allows, with global shape and size left co-real. Under that reading the locality results answer the question
+  rather than block it: a law fixes local geometry and never global shape. The cheapest discriminator is backlog B144, a census
+  of worlds made of knots alone, which asks what every allowed world shares. The entry is overturned if question 9 is restated
+  under the co-real reading, and confirmed if a question about shape is found that only the forcing reading can pose.
+- **History.**
+  - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.

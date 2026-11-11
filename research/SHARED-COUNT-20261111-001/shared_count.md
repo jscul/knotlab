@@ -112,3 +112,7 @@ times of ten. A third ring made the count of seven too slow to find in two hours
 wiring separately learned copies stays open); B153 and B155 added as sub-goals, B154 and B156 to the backlog.
 **Assumptions:** A66 added; its statement corrected to drawn knot patterns.
 **Basket:** B153 (selected, started), B154, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-11 (23:10 UTC); the thread message is the record, summarized here: the count of five learned and held through one shared distinction in 10 of 10 runs (30 of 30 writes), where the same copies drawn together count nothing; what the construction drops (three knots per distinction at the shared distinction, and the single drawing); seven not learned within the 2-hour cap (0 of 10); the two tables as above, with B153 selected and started; Corrections: one, Not a block; Goals: G15 checkpoint; Assumptions: A66 added; Basket: B153, B154, B155, B156, B150, B151, B130.

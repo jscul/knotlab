@@ -115,4 +115,34 @@ wiring separately learned copies stays open); B153 and B155 added as sub-goals, 
 
 ## Final report as sent
 
-Posted in the thread on 2026-11-11 (23:10 UTC); the thread message is the record, summarized here: the count of five learned and held through one shared distinction in 10 of 10 runs (30 of 30 writes), where the same copies drawn together count nothing; what the construction drops (three knots per distinction at the shared distinction, and the single drawing); seven not learned within the 2-hour cap (0 of 10); the two tables as above, with B153 selected and started; Corrections: one, Not a block; Goals: G15 checkpoint; Assumptions: A66 added; Basket: B153, B154, B155, B156, B150, B151, B130.
+Posted in the thread on 2026-11-11 (23:10 UTC), exactly:
+
+**SHARED-COUNT is closed: an overlap computes, and is learned, where the drawing failed.** I made two copies of the 8-distinction counting pattern (2, 0, 4) share one distinction, so the distinction the first copy reads is an input of the second. The pair then counts five held distinctions. That holds by definition, and an exact check confirms it: only when both copies sit in their tightest class. The unchanged learner learned and held that count in 10 of 10 runs. All 30 writes (count, negation, count) held after a disturbance, with no false stop. It took about 15 times the steps of one copy. The same two copies grown together on one drawing count nothing (PARITY-FIVE).
+
+- **What the construction drops** (the coordinator asked me to state this exactly): the earlier bases are drawn knot patterns, with every distinction in three knots and one drawing. The shared distinction lies in six knots, and the pair has no single drawing, only one per copy. The knots and each copy's co-knotted pairs are unchanged. The learner still reads each copy's own drawn faces (assumption A66, new).
+- **Seven failed as frozen.** On three copies (seven held distinctions), all ten runs reached the 2-hour cap before a first stop. That shows the count isn't learned within two hours, not that it can't be.
+- **Known results:** that some base computes every self-dual map is classical (Post's lattice), and the composite counting follows by definition. The learning was the open part. I found no prior work on this kind of learner learning wider parity.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: counting through a shared distinction (B148, re-posed) | **Status:** Partially successful | five learned and held 10 of 10; seven not within the cap |
+| Local direction: learning counts on bases with shared distinctions | Continue | the overlap works where flat composition failed; the cost per copy is the obstacle |
+| Broader exploration: learning program | Known alternatives | dissonance needing no drawing, seven's cost, learning what to share, endless chains |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | the first learned map on a base that is not one drawn knot pattern |
+
+**Next step:** Research directions, selected #1, started.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A learner whose dissonance needs no drawing (B153; challenges A66) | 3/3 Major | 2/3 Testable | dissonance from violated knots alone, frozen, on one and two copies against this epic, then on a base with no drawing → learning without faces, or what the faces did | Selected, started |
+| 2 | The count of seven: where the time goes (B154) | 2/3 Substantial | 3/3 Ready | J3 with progress saved and a longer cap, or copies learned one at a time | Deferred |
+| 3 | Learning which distinction to share (B155) | 3/3 Major | 1/3 Exploratory | a learner move that makes two distinctions one → a learned overlap, or none native | Deferred (sub-goal) |
+| 4 | An endless chain of counting copies (B156) | 2/3 Substantial | 1/3 Exploratory | read an endless chain on finite windows → what it counts | Deferred |
+| 5 | Five-input parity on non-lattice drawn knot patterns (B150) | 2/3 Substantial | 2/3 Testable | as recorded | Deferred |
+
+**Corrections:** one, Not a block. My pre-registration and A66 called each copy a two-fold weave; it's a drawn knot pattern. Logged, and A66 is reworded.
+**Goals:** G15 checkpoint (capability gained, with G16); B148 taken in part (wiring separately learned copies stays open); sub-goals B153 and B155, backlog B154 and B156 added.
+**Assumptions:** A66 added (each copy keeps its own drawn faces in the dissonance), status Assumed; B153 challenges it.
+**Basket:** B153 (started), B154, B155, B156, B150, B151, B130.
+
+The run is registered in docs/LONG_RUNNING.md and folded in. Starting B153 now.

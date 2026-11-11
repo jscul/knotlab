@@ -2725,6 +2725,24 @@ So network holes come in two kinds:
      used.
    - **Next (parked).** The collapse line pauses here ([decision note](../research/CODIST-THREE-20261110-001/codist_three.md)).
 
+   **2026-11-10: the corner return law** (`RETURN-LAW-20261110-001`).
+   - **The question.** At a power of two the corner of the cut-open torus returns to itself as 1/(1 + w⁴ + w⁸ + ⋯ + w^(4n)) says, the
+     trace polynomial of GF(2n) (computed). Can that be proved, from the quadrant's Catalan law and one far wall up to the box?
+   - **Cut where the corner is restricted (proved).** On the first column the corner's walk cannot step north, and in the box the last
+     column cannot step south; everywhere else rows and columns move independently. Cutting the walks at those columns turns the count
+     into a matrix on the rows alone: one path for the quadrant or a half-strip, a block of two for the box, explicit at a power of two.
+   - **Proved at every power of two to 512 (exact computation).** The corner's returns and the law obey linear recurrences of bounded
+     order and agree for longer than both, so the law holds exactly at 4, 8, …, 512. For every m it rests on one finite identity per
+     side, unproved.
+   - **A looped path (proved).** At a power of two the trace polynomial is the determinant of a path of n sites with a loop at one end.
+     So, read every four steps, the corner returns exactly as that path's loop end does; in the quadrant the path is endless.
+   - **One far wall is invisible at every even side (computed to 80).** Not only at powers of two; at odd sides it is seen at time 4n,
+     and with the bottom wall removed too it is seen at every side.
+   - **Reading.** The power-of-two effect at the corner is a small one-dimensional object, a quotient of the corner's orbit, but no
+     explicit map onto it is known. The full-reach count (B137) lives in the same block matrix, as the corner's whole row.
+   - **Next (selected, awaiting the coordinator).** The corner's row of the block inverse (B140)
+     ([decision note](../research/RETURN-LAW-20261110-001/return_law.md)).
+
    **2026-11-10: both halves of full reach** (`REACH-HALVES-20261110-001`).
    - **The question.** The cut-open square torus loses full reach exactly at the powers of two from 8 (computed). Can either half be
      proved: the failure at every power of two, and full reach at every other side?

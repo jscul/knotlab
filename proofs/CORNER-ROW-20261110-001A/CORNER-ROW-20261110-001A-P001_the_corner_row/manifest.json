@@ -13,8 +13,8 @@
   "proof": "CORNER-ROW-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "The corner's row of the block inverse: exact rows, a frozen rule, a held-out test",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-11, before any exact row is computed. At n = 2^m, K_n is the block operator of RETURN-LAW-20261110-001C (Theorem 7) on V_L + V_R, the n - 1 rows of the first and last columns of the v-grid. Its corner row e_(L,0) K_n^-1 has 2(n - 1) entries rho_(X,b)(s) in GF(2)(s), X in {L, R}, b = 0, ..., n - 2: rho_(L,b)(w^2) is the series of the walks from c = (0, 1) to the v contact (0, 2b + 1) and rho_(R,b)(w^2) to (N, 2b + 1), N = 2n - 2 (the decomposition counts exactly the walks that end on an end column). Known: rho_(L,0) = 1/(1 + L(s^2)) at 4 to 512 (C1, exact) and rho_(R,n-2) = s^(2n-1)/(1 + L(s^2)) (the far corner, computed to 128). Target: one uniform rule for every entry at every power of two, found on the training sides 4, 8, 16, 32 and tested on the held-out side 64, with the closed form, the partial rule and no pattern defined in proof.md and frozen here. Found before registration (exploration in RETURN-LAW-20261110-001, truncated series to s^64 at 4, 8, 16): the row does not pair the way the quadrant's does (entry 2k = t0 entry 2k - 1); its first two right-block entries equal its last two left-block entries. Nothing exact.",
+  "status": "Proved",
+  "claim": "Closed 2026-11-11 (pre-registered in c53bb2861; the training verdict and the predictions committed in 128b2e30d before any entry at side 64 was computed; refereed). The registered target, a closed form for the corner's row of K_n^-1 at every n = 2^m, was not reached: under the frozen criteria the outcome is a partial rule only, for the six entries next to the corners, all known or derivable before registration (rho_(L,0) = 1/(1 + L(s^2)); rho_(R,n-2) = s^(2n-1) rho_(L,0); rho_(L,n-2) = s^n rho_(L,0); rho_(R,0) = s^(n-1) + s^(3n-1) rho_(L,0); rho_(R,1) = rho_(L,n-2); rho_(L,n-3) = rho_(R,0), the last two failing at every side 3, 5 to 7 and 9 to 12), and no rule was found for the other 2(n - 1) - 6 entries; 128b2e30d's 'no pattern' is corrected to this. Proved: Proposition 1, rho_(L,b)(w^2) and rho_(R,b)(w^2) are the walk series from c = (0, 1) to the v contacts (0, 2b + 1) and (N, 2b + 1). Computed exactly at n = 4, 8, 16, 32 and the held-out 64: the exact rows (linear complexity at most n(n - 1)); the irreducible factors of the reduced denominators are exactly the minimal polynomials of the classes a in GF(2n)* with extended Kloosterman sum K(a) != 0, every such class appearing (that only these classes occur follows from the spectrum: the reversed minimal polynomial of A^2 on the v contacts is the product of m_a^(|K(a)|/2) over them at 4 to 32); every reduced denominator is a perfect square; the largest exponent of m_a over the row is 2 ceil(|K(a)|/8), below the spectrum's |K(a)|/2 from |K| = 8; along each wall the n - 1 entries have linear complexity exactly n/2 over GF(2)(s) (Hankel certificate).",
   "dependencies": [
     "REACH-HALVES-20261110-001A",
     "RETURN-LAW-20261110-001C"
@@ -29,8 +29,9 @@
     "secondary": []
   },
   "failure_conditions": [
-    "The exact rows cannot be computed by the frozen method (Berlekamp-Massey does not stabilise within the bound).",
-    "A rule committed before side 64 fails at side 64 (the verdict is then no pattern, or a partial rule)."
+    "An entry at a side 4 to 64 whose exact rational function differs from the recorded one (each reproduces all 4n^2 walk terms computed in s).",
+    "A class a in GF(2n)* with K(a) != 0 at a side 4 to 64 whose minimal polynomial divides no denominator of the row, a factor outside those classes, an odd exponent, or a largest exponent other than 2 ceil(|K(a)|/8).",
+    "One of the six corner rules failing at a side 4 to 64, or a wall sequence with a singular n/2 x n/2 Hankel matrix there."
   ],
   "lineage": {
     "home_scope": "CORNER-ROW-20261110-001",
@@ -54,11 +55,7 @@
     "check": "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row/check.py",
     "directory": "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row"
   },
-  "remaining_obligations": [
-    "the exact rows at 4, 8, 16, 32",
-    "a rule committed before side 64, or the record that none was found",
-    "the held-out test at 64"
-  ],
+  "remaining_obligations": [],
   "safe_to_conclude": {
     "contract_frozen": false,
     "native_recurrence_defined": false,
@@ -92,8 +89,8 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude in one session at the coordinator's go-ahead for B140 on 2026-11-11.",
-    "status": "pre-registered; the work to follow",
-    "novelty": "to be assessed"
+    "independence": "Written by Claude in one session at the coordinator's go-ahead for B140 on 2026-11-11; read by an independent referee pass on 2026-11-11, which recomputed every row by another method (the Krylov minimal polynomial of e_c under A^2) and every Kloosterman sum and factorization with its own code; its findings are folded in.",
+    "status": "proved and computed as stated; the registered target not reached: the frozen outcome is a partial rule only (the six entries next to the corners, known or derivable before registration), no closed form for the rest; status class closed-null",
+    "novelty": "new as far as found (bounded search 2026-11-11): the corner's walk to the side walls sees every class with K(a) != 0, its denominators are perfect squares and their largest exponents are 2 ceil(|K(a)|/8); that only those classes occur is inherited from the spectrum; not a priority claim"
   }
 }

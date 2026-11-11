@@ -23,8 +23,8 @@
   },
   "parent": null,
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Complete 2026-11-11 (Failed): no closed form for the corner's row of the block inverse (B140). Under the frozen criteria a partial rule only: rules for the six entries next to the corners, all known or derivable before registration, and none found for the other 2(n - 1) - 6 entries; the training verdict, committed in 128b2e30d before side 64, said 'no pattern' and is corrected (docs/CORRECTIONS.md, 2026-11-11). Computed exactly at 4 to 64, side 64 held out, refereed: the row's denominators are supported exactly on the classes a in GF(2n)* with Kloosterman sum K(a) != 0, every such class appearing (that only these occur follows from the spectrum); every denominator is a perfect square with largest exponent 2 ceil(|K(a)|/8), not the spectrum's |K(a)|/2; along each wall the entries have the generic linear complexity n/2. Proved: the row is the walk series from the corner to the side walls. Ticket B retired without work; the corner line (B137, B140, B141) parked by its frozen stop. Recommendation Full pivot, no next action selected: the coordinator picks the next line.",
+  "status_class": "complete",
   "stop_rule": "Frozen 2026-11-11 before any exact row is computed: the epic ends with no pattern, and the line (B137, B140, B141) is parked, when no rule is committed after the training sides 4, 8, 16, 32 or the committed rule fails at the held-out side 64; with a partial rule when a rule for a declared subset of the entries passes at 64; and, when a full rule passes at 64, after ticket B has a refereed proof for every m or the stated lemma that would finish it, checked exactly at sides 4 to 128. The search is not extended past side 64. No successor epic starts without the coordinator's go-ahead.",
   "title": "A closed form for the corner's row of the block inverse"
 }

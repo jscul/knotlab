@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "artifact": "CORNER-ROW-20261110-001A-P001",
+  "checks": {
+    "0 dependencies bound by hash (RETURN-LAW-20261110-001C, REACH-HALVES-20261110-001A manifests)": {
+      "pass": true,
+      "info": {
+        "proofs/RETURN-LAW-20261110-001C/RETURN-LAW-20261110-001C-P001_the_box_law_at_every_power_of_two/manifest.json": "c61ddd96ca03326f445645883f786751392a9c0e755dcc7a058cc26d4823e55c",
+        "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/manifest.json": "1fa0ec2aeb379ac83ad178e1d66ea8f4d86b1934544edb2b0e1c5ef925b9b3d5"
+      }
+    },
+    "1 Proposition 1: the corner row of K_n^-1 is the walk series from c to the v contacts of the two side walls (to s^40 at 4, 8, 16)": {
+      "pass": true,
+      "info": {
+        "4": true,
+        "8": true,
+        "16": true
+      }
+    },
+    "2 the exact rows: every recovered rational function reproduces all 4n^2 walk terms computed in s (more than four times the complexity bound n(n - 1), the number of v contacts), at 4, 8, 16, 32 and 64": {
+      "pass": true,
+      "info": {
+        "4": {
+          "exact": true,
+          "largest complexity": 8,
+          "bound": 12
+        },
+        "8": {
+          "exact": true,
+          "largest complexity": 20,
+          "bound": 56
+        },
+        "16": {
+          "exact": true,
+          "largest complexity": 54,
+          "bound": 240
+        },
+        "32": {
+          "exact": true,
+          "largest complexity": 136,
+          "bound": 992
+        },
+        "64": {
+          "exact": true,
+          "largest complexity": 368,
+          "bound": 4032
+        }
+      }
+    },
+    "3 the training rows equal rows_training.json as committed in 128b2e30d, and rows_heldout64.json equals a fresh computation": {
+      "pass": true,
+      "info": null
+    },
+    "4 the predictions of 128b2e30d: K1 (the denominators' factors are exactly the classes K(a) != 0 of GF(2n)), K2 (perfect squares), K3 (largest exponent 2 ceil(|K|/8)), K4 at random points of GF(2^31) (recurrence order n/2 along each wall) and P5 (the relations next to the corners), at 4 to 32 and at the held-out side 64": {
+      "pass": true,
+      "info": {
+        "4": {
+          "P1": true,
+          "P2": true,
+          "P3": true,
+          "P4": true,
+          "P5": true,
+          "recurrence orders": [
+            2
+          ],
+          "classes with K != 0": 2,
+          "classes": 3
+        },
+        "8": {
+          "P1": true,
+          "P2": true,
+          "P3": true,
+          "P4": true,
+          "P5": true,
+          "recurrence orders": [
+            4
+          ],
+          "classes with K != 0": 3,
+          "classes": 5
+        },
+        "16": {
+          "P1": true,
+          "P2": true,
+          "P3": true,
+          "P4": true,
+          "P5": true,
+          "recurrence orders": [
+            8
+          ],
+          "classes with K != 0": 6,
+          "classes": 7
+        },
+        "32": {
+          "P1": true,
+          "P2": true,
+          "P3": true,
+          "P4": true,
+          "P5": true,
+          "recurrence orders": [
+            16
+          ],
+          "classes with K != 0": 11,
+          "classes": 13
+        },
+        "64": {
+          "P1": true,
+          "P2": true,
+          "P3": true,
+          "P4": true,
+          "P5": true,
+          "recurrence orders": [
+            32
+          ],
+          "classes with K != 0": 17,
+          "classes": 19
+        }
+      }
+    },
+    "5 the protocol: commit 128b2e30d records the verdict and P1 to P5 and does not contain the side-64 rows": {
+      "pass": true,
+      "info": {
+        "files": [
+          "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row/proof.md",
+          "research/CORNER-ROW-20261110-001/denomsq.py",
+          "research/CORNER-ROW-20261110-001/kclass.py",
+          "research/CORNER-ROW-20261110-001/recb.py",
+          "research/CORNER-ROW-20261110-001/rows.py",
+          "research/CORNER-ROW-20261110-001/rows_training.json"
+        ]
+      }
+    },
+    "6 the six entries next to the corners: rho_(L,0) = 1/(1 + L(s^2)), rho_(R,n-2) = s^(2n-1) rho_(L,0), rho_(L,n-2) = s^n rho_(L,0), rho_(R,0) = s^(n-1) + s^(3n-1) rho_(L,0), rho_(R,1) = rho_(L,n-2), rho_(L,n-3) = rho_(R,0), exactly at 4 to 64; the last two relations fail at every side 3, 5 to 7 and 9 to 12": {
+      "pass": true,
+      "info": {
+        "4": {
+          "rules": true,
+          "entries": 6,
+          "with a rule": 6
+        },
+        "8": {
+          "rules": true,
+          "entries": 14,
+          "with a rule": 6
+        },
+        "16": {
+          "rules": true,
+          "entries": 30,
+          "with a rule": 6
+        },
+        "32": {
+          "rules": true,
+          "entries": 62,
+          "with a rule": 6
+        },
+        "64": {
+          "rules": true,
+          "entries": 126,
+          "with a rule": 6
+        },
+        "other sides": {
+          "3": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "5": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "6": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "7": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "9": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "10": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "11": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          },
+          "12": {
+            "rho_(R,1) = rho_(L,n-2)": false,
+            "rho_(L,n-3) = rho_(R,0)": false
+          }
+        }
+      }
+    },
+    "7 K4 exactly: along each wall the n - 1 entries have linear complexity exactly n/2 over GF(2)(s) (their n/2 x n/2 Hankel determinant is nonzero at a point of GF(2^31)), at 4 to 64": {
+      "pass": true,
+      "info": {
+        "4": {
+          "n/2": 2,
+          "Hankel ranks": {
+            "L at 0x2": 2,
+            "L at 0x3": 2,
+            "L at 0x2545f491": 2,
+            "R at 0x2": 2,
+            "R at 0x3": 2,
+            "R at 0x2545f491": 2
+          }
+        },
+        "8": {
+          "n/2": 4,
+          "Hankel ranks": {
+            "L at 0x2": 4,
+            "L at 0x3": 4,
+            "L at 0x2545f491": 4,
+            "R at 0x2": 4,
+            "R at 0x3": 4,
+            "R at 0x2545f491": 4
+          }
+        },
+        "16": {
+          "n/2": 8,
+          "Hankel ranks": {
+            "L at 0x2": 8,
+            "L at 0x3": 8,
+            "L at 0x2545f491": 8,
+            "R at 0x2": 8,
+            "R at 0x3": 8,
+            "R at 0x2545f491": 8
+          }
+        },
+        "32": {
+          "n/2": 16,
+          "Hankel ranks": {
+            "L at 0x2": 16,
+            "L at 0x3": 16,
+            "L at 0x2545f491": 16,
+            "R at 0x2": 16,
+            "R at 0x3": 16,
+            "R at 0x2545f491": 16
+          }
+        },
+        "64": {
+          "n/2": 32,
+          "Hankel ranks": {
+            "L at 0x2": 32,
+            "L at 0x3": 32,
+            "L at 0x2545f491": 32,
+            "R at 0x2": 32,
+            "R at 0x3": 32,
+            "R at 0x2545f491": 32
+          }
+        }
+      }
+    },
+    "8 the spectrum: the reversed minimal polynomial of A^2 on the v contacts is the product of m_a^(|K(a)|/2) over the classes with K(a) != 0, every reduced denominator of the row divides it, the row's largest exponent 2 ceil(|K|/8) is below |K|/2 from |K| = 8, and the corner entry sees exactly the classes with Tr(a) = 1 (4 to 32)": {
+      "pass": true,
+      "info": {
+        "4": {
+          "mu(A^2) = 0": true,
+          "deg mu": 8,
+          "d": 12,
+          "classes (K, exponent in mu, largest exponent in the row)": {
+            "1": [
+              -4,
+              2,
+              2
+            ],
+            "2": [
+              0,
+              0,
+              0
+            ],
+            "3": [
+              4,
+              2,
+              2
+            ]
+          }
+        },
+        "8": {
+          "mu(A^2) = 0": true,
+          "deg mu": 24,
+          "d": 56,
+          "classes (K, exponent in mu, largest exponent in the row)": {
+            "1": [
+              0,
+              0,
+              0
+            ],
+            "2": [
+              0,
+              0,
+              0
+            ],
+            "6": [
+              8,
+              4,
+              2
+            ],
+            "8": [
+              4,
+              2,
+              2
+            ],
+            "9": [
+              -4,
+              2,
+              2
+            ]
+          }
+        },
+        "16": {
+          "mu(A^2) = 0": true,
+          "deg mu": 76,
+          "d": 240,
+          "classes (K, exponent in mu, largest exponent in the row)": {
+            "1": [
+              12,
+              6,
+              4
+            ],
+            "2": [
+              0,
+              0,
+              0
+            ],
+            "3": [
+              -4,
+              2,
+              2
+            ],
+            "6": [
+              -8,
+              4,
+              2
+            ],
+            "7": [
+              4,
+              2,
+              2
+            ],
+            "8": [
+              4,
+              2,
+              2
+            ],
+            "9": [
+              8,
+              4,
+              2
+            ]
+          }
+        },
+        "32": {
+          "mu(A^2) = 0": true,
+          "deg mu": 208,
+          "d": 992,
+          "classes (K, exponent in mu, largest exponent in the row)": {
+            "1": [
+              -8,
+              4,
+              2
+            ],
+            "2": [
+              0,
+              0,
+              0
+            ],
+            "3": [
+              -8,
+              4,
+              2
+            ],
+            "6": [
+              0,
+              0,
+              0
+            ],
+            "7": [
+              8,
+              4,
+              2
+            ],
+            "14": [
+              16,
+              8,
+              4
+            ],
+            "15": [
+              8,
+              4,
+              2
+            ],
+            "32": [
+              12,
+              6,
+              4
+            ],
+            "33": [
+              -4,
+              2,
+              2
+            ],
+            "34": [
+              -4,
+              2,
+              2
+            ],
+            "40": [
+              4,
+              2,
+              2
+            ],
+            "41": [
+              -12,
+              6,
+              4
+            ],
+            "58": [
+              12,
+              6,
+              4
+            ]
+          }
+        }
+      }
+    }
+  },
+  "status": "passed"
+}

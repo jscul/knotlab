@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CORNER-ROW-20261110-001Z-P001",
+  "canonical_id": "CORNER-ROW-20261110-001Z-P001",
+  "kind": "proof",
+  "ticket": "CORNER-ROW-20261110-001Z",
+  "proof": "CORNER-ROW-20261110-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the corner's row of the block inverse",
+  "status": "Proved",
+  "claim": "Ledger closing CORNER-ROW-20261110-001: one line per conclusion with its status, novelty and evidence (ticket A, closed-null: a partial rule only under the frozen criteria, for the six entries next to the corners, all known or derivable before registration, and no closed form found for the rest of the corner row; computed exactly at 4 to 64 with side 64 held out, the row's denominators supported exactly on the classes a in GF(2n)* with Kloosterman sum K(a) != 0, every such class appearing, perfect squares with largest exponent 2 ceil(|K(a)|/8), and linear complexity n/2 along each wall; proved, the row is the walk series to the side walls; ticket B retired without work, as frozen). It makes no new claim.",
+  "dependencies": [
+    "CORNER-ROW-20261110-001A",
+    "CORNER-ROW-20261110-001B"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, ticket A's proof is not Proved with a passed check, or ticket B's stub is not the retired Partial one.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "CORNER-ROW-20261110-001",
+    "epic_path": [
+      "CORNER-ROW-20261110-001"
+    ],
+    "parents": [
+      "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row/manifest.json",
+      "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row/result.json",
+      "proofs/CORNER-ROW-20261110-001B/CORNER-ROW-20261110-001B-P001_from_the_row_to_the_laws/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row/manifest.json": "b15bfd620427bf8d0c7adb48d3e998237ab473ed2e90281a4f2904edbce08df1",
+    "proofs/CORNER-ROW-20261110-001A/CORNER-ROW-20261110-001A-P001_the_corner_row/result.json": "afde02fc0416c564bb2ce32c7c15b8841ecc3d619bc6021f1956848f0f26975d",
+    "proofs/CORNER-ROW-20261110-001B/CORNER-ROW-20261110-001B-P001_from_the_row_to_the_laws/manifest.json": "de800fde14b20c750eeabea5e6f0f87967f4dac2039eedaac7a7405bdb7da16d"
+  },
+  "paths": {
+    "manifest": "proofs/CORNER-ROW-20261110-001Z/CORNER-ROW-20261110-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/CORNER-ROW-20261110-001Z/CORNER-ROW-20261110-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/CORNER-ROW-20261110-001Z/CORNER-ROW-20261110-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/CORNER-ROW-20261110-001Z/CORNER-ROW-20261110-001Z-P001_epic_closure/result.json",
+    "check": "proofs/CORNER-ROW-20261110-001Z/CORNER-ROW-20261110-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/CORNER-ROW-20261110-001Z/CORNER-ROW-20261110-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The closure ledger of CORNER-ROW-20261110-001; the scope of its tickets.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session; ticket A was read by an independent referee pass on 2026-11-11.",
+    "status": "ledger",
+    "novelty": "no new claim"
+  }
+}

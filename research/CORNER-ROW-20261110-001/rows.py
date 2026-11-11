@@ -57,7 +57,6 @@ if __name__ == "__main__":
         row = {}
         for (X, b, p), sq in zip(targets, seqs):
             P, Q, L = series_to_rational(sq)
-            # verify on the second half: the recurrence reproduces every term (exactness check)
             row[f"{X}{b}"] = {"num": hex(P), "den": hex(Q), "L": L}
         out[n] = row
         print(n, "done in %.1f s; max complexity %d (bound %d)" % (time.time() - t, max(v["L"] for v in row.values()), n * (n - 1)), flush=True)

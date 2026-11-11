@@ -51,6 +51,9 @@ must vanish at d*. The other half is computed to side 130, with no proof for any
 **Interpretation, not a theorem.**
 - **The failure is not spectral.** Eight epics went through the spectrum; the failure needs only one walk count, from one corner, and the
   corner's cyclic space is small (40, 108 and 272 dimensions of 112, 480 and 1,984 at 8, 16 and 32). The collapse is not needed for it.
+  - **Correction (2026-11-11).** This says more than the evidence: only the reduction is shown not to need the spectrum. Whether the
+    count can be proved without it is open, and its route through the corner row meets it, since the row's denominators carry every
+    class of the collapse line's Kloosterman law (`CORNER-ROW-20261110-001`; `docs/CORRECTIONS.md`, 2026-11-11).
 - **Where the trace of GF(2n) comes from.** In the quadrant the corner returns as often as the Catalan numbers are odd. The box folds that
   pattern modulo 2n − 1, and that folding is exactly the trace polynomial: 1 + L(z) vanishes on the elements of GF(2n) of trace 1, so the
   poles of the corner's return series are the eigenvalues λ with Tr(1/λ) = 1, exactly the eigenvalues of odd multiplicity (the parity law of

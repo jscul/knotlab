@@ -2725,6 +2725,23 @@ So network holes come in two kinds:
      used.
    - **Next (parked).** The collapse line pauses here ([decision note](../research/CODIST-THREE-20261110-001/codist_three.md)).
 
+   **2026-11-11: the corner's row** (`CORNER-ROW-20261110-001`).
+   - **The question.** The block matrix that gives the corner's return law gives, in its whole first row, the walks from the corner to
+     every contact of the two side walls, and with them the full-reach count (B137). Does that row have a closed form at every power of
+     two? The rule was to be found on the sides 4 to 32 and written down before side 64 was computed to test it.
+   - **No closed form (computed, exact, side 64 held out).** Rules were found only for the six entries next to the corners, all known
+     before the search, and none for the rest of the row. Under the rules frozen beforehand this is a partial rule, and the line stops.
+   - **What the row carries instead (computed, exact, 4 to 64).** Each entry is a fraction in s, and across the row the denominators
+     vanish exactly at the elements a of GF(2n) whose Kloosterman sum is not zero, the a for which the curve y² + xy = x³ + a does not
+     have 2n points. That only those elements occur is the cone's spectrum again, as for any walk in the box; that the corner's walks to
+     the walls reach every one of them, as squares with largest exponent 2⌈|K|/8⌉, is the row's own.
+   - **Reading.** The reduction to one walk count took the failure of full reach away from the spectrum, but read through the corner row
+     the count meets it again. Whether the count itself needs the spectrum is open.
+   - **Corrected.** The training verdict named four entries with rules where six have them and called the outcome "no pattern"; the
+     entry on both halves of full reach said more than its reduction shows (`docs/CORRECTIONS.md`, 2026-11-11).
+   - **Next (parked).** The corner line pauses here by its frozen stop, and the coordinator picks the next line
+     ([decision note](../research/CORNER-ROW-20261110-001/corner_row.md)).
+
    **2026-11-10: the corner return law** (`RETURN-LAW-20261110-001`).
    - **The question.** At a power of two the corner of the cut-open torus returns to itself as 1/(1 + w⁴ + w⁸ + ⋯ + w^(4n)) says, the
      trace polynomial of GF(2n) (computed). Can that be proved, from the quadrant's Catalan law and one far wall up to the box?
@@ -2749,7 +2766,8 @@ So network holes come in two kinds:
    - **The failure is one walk count (proved).** If the contact next to a corner never reaches the point half a side away just below the
      diagonal, the contact just above it never reads the corner's ring, and full reach fails. On every other contact the walk is a grid
      walk with a conveyor belt (no step left on the bottom row, none right on the top row), so the failure needs only that walks from one
-     corner of that grid to one diagonal point are even in number at every length. The spectrum, which eight epics studied, is not needed.
+     corner of that grid to one diagonal point are even in number at every length. That reduction does not use the spectrum, which eight
+     epics studied; whether the count needs it is open (corrected 2026-11-11).
    - **A symmetry the box hides (proved).** The box's mirrors swap the walk with its reverse, but the mirror through the corner's
      neighbour and the target is a true symmetry of the walk. Mod 2 it cancels every excursion off that diagonal except those above it
      that reach the left or top wall; in the open plane nothing gets through.

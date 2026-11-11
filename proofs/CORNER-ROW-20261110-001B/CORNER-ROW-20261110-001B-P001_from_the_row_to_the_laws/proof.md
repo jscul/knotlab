@@ -1,6 +1,8 @@
 # From the row to the laws
 
-Status: Partial (pre-registered 2026-11-11, before any exact row is computed).
+Status: **Retired 2026-11-11 without work, as frozen** (pre-registered 2026-11-11, before any exact row was computed). This ticket was
+to start only if ticket A's full rule passed at side 64; ticket A found a partial rule only, for the six entries next to the corners,
+all known or derivable before registration, and no rule for the rest of the row.
 
 Ticket `CORNER-ROW-20261110-001B`, epic `CORNER-ROW-20261110-001` (B140, at the coordinator's go-ahead after `RETURN-LAW-20261110-001`).
 

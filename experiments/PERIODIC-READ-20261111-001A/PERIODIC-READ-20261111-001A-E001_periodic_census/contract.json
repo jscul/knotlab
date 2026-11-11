@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PERIODIC-READ-20261111-001A-E001",
+ "ticket": "PERIODIC-READ-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which infinite bases with a periodic meeting pattern (any number of knots per pair) does NAE read faithfully, with how much overlap, and what does the infinite base show that its finite repeats do not?",
+ "definitions": {
+  "bounds": "A pattern on a finite set extends if it extends in a finite repeat (sublattice quotient) keeping it distinct or, in two shifts, in a pattern repeating in one shift only (period 2 or 3) read exactly along the other; it does not if it fails in the window of radius R; else unsettled. One shift: the window of radius 24 is exact (de Bruijn bound).",
+  "F1": "d = 1, one or two distinction kinds, one to three knot kinds, shifts {0,1,2}, connected, up to relabelling and reversal (181).",
+  "F2": "d = 2, one distinction kind, one to three knot kinds, shifts {-1,0,1}^2, connected, up to the eight symmetries of Z^2 (2,247): all with one or two knot kinds (127) and a sample of 500 of the 2,120 with three (seed 20261120).",
+  "readings": "states; faithful reading on sets meeting the origin unit within graph distance 2 (stopping at the first settled violation); knots per pair; for faithful patterns: some finite repeat read faithfully (F1 n = 3..15; F2 index 9..30), source labels at the first periodic state (flip inside shift 3), bonds of four for pairs two steps apart."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 8722986805e2b60b639fc2b24215a684bc623a1545c6fc55b5cbea5e684d6765) beside this file; KNOTS-ALONE's knots_alone.py (its read_law_sat and connected); pysat Minisat22; 8 workers.",
+  "run": "census.py from the repository root; output artifacts/PERIODIC-READ-20261111-001A/PERIODIC-READ-20261111-001A-E001_periodic_census/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the families, sample, seeds, bounds or predictions after seeing results"
+ ],
+ "primary_observable": "Per family: faithful, not faithful and unsettled counts by most knots per pair; quotient comparison, source labels and bonds of four on the faithful.",
+ "cheapest_meaningful_control": "F1 is exact, a check of the code; the pilot reproduced the endless six-regular weave as faithful; P1 fails on any unsettled F1 reading.",
+ "predictions": {
+  "P1": "Every F1 reading with states is settled.",
+  "P2": "Some F2 pattern with a pair in four or more knots is read faithfully (settled).",
+  "P3": "Some F2 pattern read faithfully has no finite repeat of index 9 to 30 read faithfully.",
+  "P4": "In every faithful F2 pattern every pair two steps apart lies in a bond of four."
+ },
+ "decision_rules": {
+  "P2 holds": "An infinite base with a pair in four knots is read natively in two shifts.",
+  "P2 fails": "Two-shift periodic overlap read faithfully only up to three per pair in the family.",
+  "P3 holds": "The infinite base differs from its finite repeats.",
+  "P4 fails": "Unbonded pairs persist at infinity."
+ },
+ "stop_rule": "One run; report and hold.",
+ "runtime": "About an hour on 8 workers; registered; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

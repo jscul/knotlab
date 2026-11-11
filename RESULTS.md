@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**314 current results** and 5 superseded ones, from 302 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**314 current results** and 5 superseded ones, from 303 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 302 epics with their closures
+- [Epics](#epics): all 303 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1379,6 +1379,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Does a knot space read its own relation? (`OWN-RELATION-20261111-001`) | [closure](proofs/OWN-RELATION-20261111-001Z/OWN-RELATION-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/OWN-RELATION-20261111-001/) |
 | 2026-11-11 | Parity of five held points (`PARITY-FIVE-20261111-001`) | [closure](proofs/PARITY-FIVE-20261111-001Z/PARITY-FIVE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-FIVE-20261111-001/) |
 | 2026-11-11 | What a knot space needs to compute parity (`PARITY-NEEDS-20261111-001`) | [closure](proofs/PARITY-NEEDS-20261111-001Z/PARITY-NEEDS-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-NEEDS-20261111-001/) |
+| 2026-11-11 | Infinite bases with periodic overlap (`PERIODIC-READ-20261111-001`) | — | [folder](research/PERIODIC-READ-20261111-001/) |
 | 2026-11-11 | The not-all-equal ruler (`RULER-20261111-001`) | [closure](proofs/RULER-20261111-001Z/RULER-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/RULER-20261111-001/) |
 | 2026-11-11 | The ruler on flat worlds (`RULER-FLAT-20261111-001`) | [closure](proofs/RULER-FLAT-20261111-001Z/RULER-FLAT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/RULER-FLAT-20261111-001/) |
 | 2026-11-11 | Counting through a shared distinction (`SHARED-COUNT-20261111-001`) | — | [folder](research/SHARED-COUNT-20261111-001/) |

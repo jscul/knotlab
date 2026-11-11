@@ -124,3 +124,34 @@ gain history lines, statuses unchanged.
 4. **Defects.** Payoff 1: it would describe how far from a surface the reading survives. Concreteness 3: the data exist.
 
 **Recommendation.** Research directions, #1, awaiting the coordinator's go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 05:30 UTC and copied here verbatim.
+
+**B145: no, a faithful reading does not supply the surface.** The surface count is an input to the law.
+
+- **The witnesses.** Swap two knots of a faithful flat torus for two long-range ones. 160 of 822 such worlds are still read faithfully by not-all-equal, though some pairs now sit in one knot and some in three. The smallest has 25 distinctions; I checked it with separate brute-force code and knotlab's checker.
+- **Near-surfaces are where it works.** Each extra swap costs faithfulness. None of 1,440 random regular worlds (d = 4 to 7) was faithful, and neither was any non-surface world on 6 distinctions.
+- **What it means.** The knot law reads which knots there are, not how they meet.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — does a faithful reading supply the surface (B145) | **Status:** Successful | 160 faithful non-surface worlds; the count is an input |
+| Local direction — the surface count from the knot law | Practically exhausted | Faithfulness tolerates defects; nothing in the reading enforces the count |
+| Broader exploration — G1 on worlds of knots alone | Known alternatives | The long-loop regime and the ruler, from knots alone |
+| Long-term goal — G1 Space from a law (question 9) | Obstruction learned | The knot law reads local geometry, not the count of how knots meet |
+
+**Corrections:** none. **Goals:** a G1 checkpoint (obstruction learned), no goal change; B145 taken. **Assumptions:** A64 and A63 gain history lines, statuses unchanged.
+**Basket:** the edge-width reading (2/3, 3/3) and the ruler (2/3, 2/3), both from knots alone, and GROW-FACE#1 (2/3, 1/3); none taken yet. Direction 1 joins the first two.
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The long-loop regime, frozen | 2/3 — Substantial | 3/3 — Ready | NAE on tori 49–80 and Klein bottles past 18: faithful at edge-width ≥ 5, bond distance = graph distance + 1 to distance 3 at edge-width ≥ 6 → confirmed, or the first failure | Selected · awaiting go-ahead |
+| 2 | NAE's ruler as a theorem | 2/3 — Substantial | 2/3 — Testable | Hidden-path bonds up, a splitting argument down → a proof or where it fails | Alternative · deferred |
+| 3 | The count from growth | 2/3 — Substantial | 1/3 — Stated | A growth rule adding one NAE knot at a time while the reading stays faithful → closes into a surface, or not | Alternative · deferred |
+| 4 | Which defects NAE tolerates | 1/3 — Modest | 3/3 — Ready | Classify the faithful swaps by how far apart the swapped knots are → a rule, or none | Alternative · deferred |
+
+It's committed and published ([decision note](https://github.com/jscul/knotlab/blob/main/research/NAE-SURFACE-20261111-001/nae_surface.md)). I'm holding until the coordinator gives the go-ahead.

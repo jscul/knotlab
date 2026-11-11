@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-FIVE-20261111-001A-P001",
+  "canonical_id": "PARITY-FIVE-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "PARITY-FIVE-20261111-001A",
+  "proof": "PARITY-FIVE-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Five-input parity: exact search and learning",
+  "status": "Proved",
+  "claim": "Exact, exhaustive: no lattice torus with 3 to 24 points (421 tori, every class) computes the parity of five held points; only 16 of them, with 8 to 18 points, compute three-input parity. The knot sphere K_2 with the torus (2,0,4) grown at both its lines (30 points, genus 2) computes no parity map in any of its 16 classes. After the run: the second torus unties the six-point host wire the first one uses. Stage 1b (25 to 32 points) dropped by rule at its cap; learning not run.",
+  "dependencies": [
+    "PARITY-NEEDS-20261111-001A",
+    "LEARN-PARITY-20261111-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "V3 failing; a five-input set reported that fails (i) or (ii) on recheck; P5 below 8 of 10 if stage 2 runs."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-FIVE-20261111-001",
+    "epic_path": [
+      "PARITY-FIVE-20261111-001"
+    ],
+    "parents": [
+      "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/five_lib.py",
+      "research/PARITY-FIVE-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/five_lib.py": "0b7449eefd364913229f1e4c8d46c7e7f08bebccaa11f6759514c6ffc33ec3f0",
+    "research/PARITY-FIVE-20261111-001/preregistration.md": "58d50a1c82b0c270413f6ee43c8f797f817b540cac3572dcc3a2b8aec0347bdd"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/manifest.json",
+    "identity": "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/identity.json",
+    "proof": "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/proof.md",
+    "result": "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/result_search.json",
+    "check": "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/check.py",
+    "directory": "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Lattice tori up to 24 points (conditionally 32) and one composed genus-2 space, every class; the learner only if a space is found.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11, pre-registered (commit 95e0c04c3).",
+    "status": "exhaustive (check.py, parts harness, search, composed reproduce); 1b dropped",
+    "novelty": "known-with-delta"
+  }
+}

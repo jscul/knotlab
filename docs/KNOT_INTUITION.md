@@ -5642,6 +5642,17 @@ So network holes come in two kinds:
      the knot law reads which knots there are, not how they meet: the count of how knots meet is an input
      ([decision note](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
 
+   **2026-11-11: the long-loop regime** (`LONG-LOOP-20261111-001`).
+   - **The question.** With the surface count given, does not-all-equal read every flat world with long loops natively, and space it?
+   - **Yes, in range (computed, exact, frozen).** It reads every torus with 49 to 80 distinctions and Klein bottle with 19 to 40 whose
+     shortest non-contractible loop has length at least 5 faithfully, 449 worlds. On the 349 tori whose loops have length at least 6,
+     bond distance is graph distance + 1 at every distinction within three steps.
+   - **Two steps is a lemma (proved).** Two edges of a hidden distinction's link, fixed to opposite equal values, force it both ways,
+     so four distinctions two steps apart already form a bond.
+   - **So the face can be the knot.** Nothing is named but the knot and how knots meet, and flat local geometry is read natively; A63
+     is overturned in this setting. Thinner worlds shortcut, so the ruler is local, out to about half the shortest loop
+     ([decision note](../research/LONG-LOOP-20261111-001/long_loop.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

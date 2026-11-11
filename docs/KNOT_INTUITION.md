@@ -2945,6 +2945,19 @@ So network holes come in two kinds:
    Its smallest form is an open distinction, and requirement and choice are
    one knot read two ways
    ([decision note](../research/KNOT-FOUNDATION-20261019-001/choice.md)).
+
+   **2026-11-11: what it takes to hold a count** (`HOLD-COUNT-20261111-001`).
+   - **The question.** The owner asked whether knapsack, whose choices are summed into one running total, could be a picture of
+     what happens where logic emerges. A total is a magnitude, and the knot's own law has no preferred value. Which counts can a
+     world of knots hold?
+   - **Only counts that look the same from both sides (proved, refereed).** Flipping every point of a knot world gives another
+     allowed state, so c points on looks like n − c points on from the other side. Such a world reads a count of n held points
+     mod m only when m is even and n odd: never in threes, unless the world fixes a value from outside.
+   - **In binary, at the least size (exact).** The 8-point torus that counts three held points mod 2 also reads their majority
+     at another point: parity and carry, the two binary digits of the count, a full adder.
+   - **One fixed value is not enough here (exact in range).** With a fourth point held at 0, no space up to 20 points counts in
+     threes. A point would have to read whether three held points are not all equal, the knot's own relation, and none does
+     ([decision note](../research/HOLD-COUNT-20261111-001/hold_count.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.

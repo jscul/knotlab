@@ -10,7 +10,7 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## Picking the line up cold (updated 2026-11-11, after `DEEP-MEM-20261111-001`)
+## Picking the line up cold (updated 2026-11-11, after `UNATE-20261111-001`)
 
 The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, and resumed it on 2026-11-11. This section is
 what a new thread needs; the section after it is the full current statement, and sections 1 to 8 the history.
@@ -27,7 +27,8 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   composite's interface seeing its atoms only through their AND (IN-OUT, lemma C), and an acting atom's dissonance never walking away
   (NATIVE-WRITE, P1).
 - *Exact:* an atom acts exactly when its own constraints cannot clear its region (seven spaces); an acting atom held on two sides is a
-  gate (18 interfaces); no map of three held points is parity, majority or non-unate (THREE-IN, six spaces, every law).
+  gate (18 interfaces); no map of three held points is parity, majority or non-unate at the memories' interfaces (THREE-IN, six spaces,
+  every law), but an 8-point knot space of genus 4 computes parity of held points (UNATE): the limit is the memories' shape.
 - *Computed, frozen:* native writing of addresses, 100 of 100 (NATIVE-WRITE); learning gates of held inputs from examples, natively and
   without false stops, at every leaf and composite tested, 84 of 84 with the credit learner and the sturdier probe (STURDY-PROBE), and
   at composites three levels deep and three atoms wide, 40 of 40 (DEEP-MEM); the impossible AND, parity and majority never accepted.
@@ -40,9 +41,10 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
   `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
 
-**Where to start again** (the basket, best first): whether every map of held points is unate, a structural bound on what the memory
-computes (B136, 2/3 and 1/3, selected); a probe that is a theorem (B130); how learning cost grows with atoms (B143); writing with only
-the ones named (B131); a frame fixed by learning (B126). The deeper spaces are in `proofs/DEEP-MEM-20261111-001A/.../deep_lib.py`.
+**Where to start again** (the basket, best first): what a knot space needs to compute parity (B147, 2/3 and 2/3, selected); a learned
+memory that computes parity (sub-goal B146, 3/3 and 1/3); a probe that is a theorem (B130); how learning cost grows with atoms (B143);
+writing with only the ones named (B131); a frame fixed by learning (B126). The deeper spaces are in
+`proofs/DEEP-MEM-20261111-001A/.../deep_lib.py`; random knot spaces and the parity gadget in `proofs/UNATE-20261111-001A/.../unate_lib.py`.
 
 **Lessons from the line's corrections** (`docs/CORRECTIONS.md`): read a role through a second signing before calling it stored memory;
 re-run with a defect fixed before reading failures as a property of the system; rule a shared fallible check out before reading a
@@ -118,6 +120,8 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
   property of the memories' interfaces; an 8-point knot space of genus 4 computes parity of held points.*
 - Deeper memories (`DEEP-MEM-20261111-001`, frozen): composites holding a leaf three levels down and composites of three atoms, 40 of 40
   composite writes learned and held, 55 of 56 leaf writes; depth cost nothing, a second atom about eighteen times the steps.
+- Knots can count (`UNATE-20261111-001`, exact): an 8-point knot space of genus 4 computes the parity of three held points; majority
+  occurs in every size of random knot space searched; the deeper memories' interfaces stay unate.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -133,9 +137,9 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
 writer's walk never errs when long enough (B130); writing with only the ones named (B131); how learning cost grows with atoms
-(B143); whether every map of held points is unate (B136); and whether
+(B143); what a knot space needs to compute parity (B147) and whether a learned memory can (B146); and whether
 learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132, B133,
-B134 and B135 are answered above.
+B134, B135 and B136 are answered above.
 
 ## 1. Where it started
 

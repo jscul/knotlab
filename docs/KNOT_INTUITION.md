@@ -1671,8 +1671,17 @@ So network holes come in two kinds:
      as quick to reach as one at the surface; a second pattern beside the first cost about eighteen times the time; a third cost no more.
    - **Reading.** Keeping the parts whose tension cannot be walked away lets the learner build a pattern of patterns one part at a time;
      what still limits the memory is what it can compute: every answer it gives is a gate.
-   - **Next.** Are maps of held points unate (backlog B136): whether "never counts, never votes" is a theorem
-     ([decision note](../research/DEEP-MEM-20261111-001/deep_mem.md)).
+   - **Next (taken by `UNATE-20261111-001`, below).** Are maps of held points unate (backlog B136): whether "never counts, never votes" is
+     a theorem ([decision note](../research/DEEP-MEM-20261111-001/deep_mem.md)).
+
+   **2026-11-11: knots can count** (`UNATE-20261111-001`).
+   - **The question.** Backlog B136: the memories never counted or voted. Is that true of every knot space?
+   - **No (exact).** Eight points tied by eight knots on a surface with four handles count exactly: hold any three, and a fourth is forced
+     to their parity, every time. Small knot spaces vote (majority) often.
+   - **Reading.** The memories never count because of where their knots sit, each pattern of tension in its own handle, not because knots
+     cannot. Counting needs many handles close together, crossings that a flat sheet cannot make.
+   - **Next.** What a knot space needs to count (backlog B147), then whether a learned memory can grow such a place (sub-goal B146)
+     ([decision note](../research/UNATE-20261111-001/unate.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

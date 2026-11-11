@@ -50,8 +50,8 @@
  "proof": "PERIODIC-READ-20261111-001B-P001",
  "authoritative_metadata": "manifest.json",
  "title": "Two classes of knots and the global hollow triples",
- "status": "Partial",
- "claim": "If the knots of a finite pattern split into two classes, every co-knotted pair in exactly one knot of each, the two classes and their union have the same NAE states; so each knot of one class is forced by the other. Registered: OVERLAP-READ's global hollow triples are knots the swaps removed (G1), forced by the untouched class when the removed knots lie in one class (G2).",
+ "status": "Proved",
+ "claim": "If the knots of a finite pattern split into two classes with equal pair counts, the two classes and their union have the same NAE states; so each knot of one class is forced by the other. Registered on OVERLAP-READ's 98 global swap-made bases: G1 (every global hollow triple a removed source knot) held on 91 and failed on 7; G2 (the untouched class forces each removed knot, 85 bases) held.",
  "dependencies": [
   "OVERLAP-READ-20261111-001B",
   "OVERLAP-READ-20261111-001A"
@@ -77,18 +77,14 @@
   "check": "proofs/PERIODIC-READ-20261111-001B/PERIODIC-READ-20261111-001B-P001_two_classes/check.py",
   "directory": "proofs/PERIODIC-READ-20261111-001B/PERIODIC-READ-20261111-001B-P001_two_classes"
  },
- "remaining_obligations": [
-  "Write the proof",
-  "Run check.py",
-  "Independent referee"
- ],
+ "remaining_obligations": [],
  "foundation_claim_scope": "Finite knot patterns under NAE; the registered check on OVERLAP-READ's swap-made bases.",
  "validation": {
   "level": "V1",
   "external_review": false,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11.",
-  "status": "pre-registered; the proof to follow",
-  "novelty": "to be assessed"
+  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11; read by an independent referee (a fresh agent with its own code), which found the lemma and check.py correct, asked for the equal-pair-count statement (made) and characterized G1's exceptions.",
+  "status": "proved by hand; check.py ran as registered: C1 and G2 passed, G1 failed on 7 of 98 (a registered prediction, not the lemma); refereed",
+  "novelty": "known-with-delta: an instance of trades and of the NAE-to-max-cut gadget; the reading of the swap-made bases' global hollow triples is the delta."
  }
 }

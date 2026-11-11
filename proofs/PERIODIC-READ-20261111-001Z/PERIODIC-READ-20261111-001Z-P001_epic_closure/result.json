@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PERIODIC-READ-20261111-001Z-P001",
+ "kind": "proof",
+ "ticket": "PERIODIC-READ-20261111-001Z",
+ "proof": "PERIODIC-READ-20261111-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing PERIODIC-READ-20261111-001: ticket A, the frozen periodic census (P1 to P4 held); ticket B, the two-class lemma proved and refereed (G2 held, G1 failed on 7 of 98); one correction (Not a block); recommendation research directions with bond balls on infinite overlapping bases selected. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/PERIODIC-READ-20261111-001A/PERIODIC-READ-20261111-001A-E001_periodic_census/contract.json": "Frozen",
+   "artifacts/PERIODIC-READ-20261111-001A/PERIODIC-READ-20261111-001A-E001_periodic_census/census.json": "run output",
+   "proofs/PERIODIC-READ-20261111-001B/PERIODIC-READ-20261111-001B-P001_two_classes/manifest.json": "Proved",
+   "proofs/PERIODIC-READ-20261111-001B/PERIODIC-READ-20261111-001B-P001_two_classes/result.json": "failed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -1379,7 +1379,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Does a knot space read its own relation? (`OWN-RELATION-20261111-001`) | [closure](proofs/OWN-RELATION-20261111-001Z/OWN-RELATION-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/OWN-RELATION-20261111-001/) |
 | 2026-11-11 | Parity of five held points (`PARITY-FIVE-20261111-001`) | [closure](proofs/PARITY-FIVE-20261111-001Z/PARITY-FIVE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-FIVE-20261111-001/) |
 | 2026-11-11 | What a knot space needs to compute parity (`PARITY-NEEDS-20261111-001`) | [closure](proofs/PARITY-NEEDS-20261111-001Z/PARITY-NEEDS-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-NEEDS-20261111-001/) |
-| 2026-11-11 | Infinite bases with periodic overlap (`PERIODIC-READ-20261111-001`) | — | [folder](research/PERIODIC-READ-20261111-001/) |
+| 2026-11-11 | Infinite bases with periodic overlap (`PERIODIC-READ-20261111-001`) | [closure](proofs/PERIODIC-READ-20261111-001Z/PERIODIC-READ-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PERIODIC-READ-20261111-001/) |
 | 2026-11-11 | The not-all-equal ruler (`RULER-20261111-001`) | [closure](proofs/RULER-20261111-001Z/RULER-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/RULER-20261111-001/) |
 | 2026-11-11 | The ruler on flat worlds (`RULER-FLAT-20261111-001`) | [closure](proofs/RULER-FLAT-20261111-001Z/RULER-FLAT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/RULER-FLAT-20261111-001/) |
 | 2026-11-11 | Counting through a shared distinction (`SHARED-COUNT-20261111-001`) | — | [folder](research/SHARED-COUNT-20261111-001/) |

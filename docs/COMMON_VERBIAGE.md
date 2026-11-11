@@ -278,14 +278,14 @@ dimensions, since space is what it is trying to build: the glossary's table
 | Contact-capable base | An admissible base with at least one complete-contact witness satisfying recurrence, shared identity, two-sided essentiality, irreducible jointness, loop-erasure contact loss, and persistence. Contact capability does not by itself form a world. |
 | World-generating base | An admissible base that forms persistent composed structure plus a declared branch-state type and native update, transition, or history-construction law with a nontrivial evolution witness, closure and composition in its claimed domain, and persistence under admitted maps. Formation order is not physical time. It requires evidence beyond one complete contact or a static representation. |
 | Mathematical-only base | An admissible base for which an obstruction to world generation has been established in the declared semantics. Without either a world-generation witness or such an obstruction, classify its capacity as unclassified. |
-| World branch | One coherent law-and-history evolution formed within a world-generating base. Under the protected interpretation, every coherently admitted branch of a co-real base is co-real. Branches from different bases need not share a space, time, contact relation, dimension, or containing world. |
+| World branch | One coherent law-and-history evolution formed within a world-generating admissible base. Under the protected interpretation, every coherently admitted branch of a co-real admissible base is co-real. Branches from different admissible bases need not share a space, time, contact relation, dimension, or containing world. |
 | Physics-supporting branch | A world branch with typed laws, observables, units, and measurement interfaces. The label does not identify those laws with ours. |
 | Our-observation-compatible branch | A physics-supporting branch with an admitted empirical bridge to our records. Compatibility narrows self-location; it does not establish exclusive or globally selected reality. |
 | Life-pattern-capable branch | A lateral frontier-only branch classification for a demonstrated persistent propagating pattern. It requires suitable branch dynamics but does not imply compatibility with our observations. It is an exploratory structural example, not a biology, consciousness, or empirical-life claim. |
 | Modal totality | The open-ended interpretive schema ranging over all coherent admissible bases and their coherently admitted world branches, without restriction to a fixed finite roster. It is not a formed native set, carrier, world, global ensemble, cardinality result, or infinity theorem. |
 | Co-reality | The protected interpretive standing of every coherent admissible base. Co-reality is non-temporal: it is not physical simultaneity and does not imply a shared container or cross-base contact. |
 | Branch-relative self-location | The restriction of an observer's equivalence class of compatible branches by admitted records. Observation neither creates the compatible branches nor globally selects one of them. |
-| Global selector | A rule over the modal totality that privileges one base or branch as uniquely real. The protected interpretation denies such a selector while permitting branch-internal laws, selectors, and measures. Mathematical nonselection alone does not prove that interpretive denial. |
+| Global selector | A rule over the modal totality that privileges one admissible base or branch as uniquely real. The protected interpretation denies such a selector while permitting branch-internal laws, selectors, and measures. Mathematical nonselection alone does not prove that interpretive denial. |
 | Branch-internal measure | A typed probability or other measure formed inside one declared branch. It need not, and without separate authority must not, extend to a measure over the modal totality. |
 | Support | The states or histories permitted by a law or constraint. Support does not specify probability mass or actuality. |
 | Probability measure | A normalized law assigning mass to declared events. Existence of a measure does not establish its native source, uniqueness, or actuality. |
@@ -824,15 +824,16 @@ dimensions, since space is what it is trying to build: the glossary's table
      not include arbitrary inconsistent combinations or omit the declared
      semantics and nontrivial coherence witness.
 110. Apply the generative-capacity ladder one gate at a time. A contact-capable
-     base is not thereby world-generating; a world-generating base is not
-     thereby physics-supporting; and a physics-supporting branch is not
+     admissible base is not thereby world-generating; a world-generating
+     admissible base is not thereby physics-supporting; and a physics-supporting branch is not
      thereby compatible with our observations. Use `mathematical-only base`
      only after a world-generation obstruction; otherwise say `unclassified`.
      Treat life-pattern capability as a lateral frontier tag, not evidence of
      compatibility with our observations.
 111. Use `co-reality` only for the protected, non-temporal modal
      interpretation. Never render it as physical simultaneity, a shared
-     containing world, cross-base contact, or a formed native carrier.
+     containing world, contact across admissible bases, or a formed native
+     carrier.
 112. Keep `global selector`, `branch-relative self-location`, and
      `branch-internal measure` distinct. Keep `branch-relative actuality`
      local to one branch. Absence of a global selector does not prohibit local
@@ -844,8 +845,8 @@ dimensions, since space is what it is trying to build: the glossary's table
      a frontier-only propagating-pattern example with no biology claim.
 114. Treat the modal totality as open-ended rather than a fixed finite roster,
      but do not convert that interpretive commitment into a cardinality
-     theorem, an exhibited infinity of pairwise inequivalent bases, or a
-     native infinite carrier.
+     theorem, an exhibited infinity of pairwise inequivalent admissible bases,
+     or a native infinite carrier.
 115. Treat the task-relative statistical-representation premise as an open
      downstream research hypothesis. A statistic, quotient, bottleneck, or
      learned latent state is not a logical knot, contact, topology, or first
@@ -864,3 +865,17 @@ dimensions, since space is what it is trying to build: the glossary's table
 119. An NP-complete synthesis problem, a fast learned approximation, or a
      predictor that bypasses reconstruction proves neither `P != NP` nor
      recovery of the generating mechanism.
+
+## Wording decisions
+
+Dated choices of words, each open to the owner's change. The owner handed these three to the coordinator on 2026-11-11 ("Do what
+you think is best").
+
+- **2026-11-11 · Admissible base.** The foundation's general notion is written "admissible base" in full in `AGENTS.md`, the thesis
+  and this page, since the glossary's "base" is a knot pattern that allows a state. Compound names keep their form: the label
+  `mathematical-only base`, the thesis's heading "Transcendental logical base" and its "base logic", and Proof 0058's "event base".
+- **2026-11-11 · Five classes.** The thesis's census of the 34 two-loop knots says "five classes", not "five shapes": "shape" is
+  the owner's word for what rules make, and the glossary calls the five kinds of three-place knot classes.
+- **2026-11-11 · Meeting pattern and knot pattern.** Both words stay. A meeting pattern is which knots share which distinctions,
+  rules left out; a knot pattern is the knots with their rules and their meeting pattern. Using one word for both is the
+  alternative, should the owner prefer it.

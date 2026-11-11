@@ -31,21 +31,21 @@ branch-internal and require their own formation and evidence; they do not
 induce a measure over, or a selector for, the modal totality.
 
 Co-reality extends from each admissible base to every world branch coherently
-admitted by that base. Branch-relative actuality and branch-local selectors
+admitted by it. Branch-relative actuality and branch-local selectors
 may distinguish states, histories, or continuations inside one declared
 branch; they do not revoke the co-reality of other coherent branches or become
 a global selector.
 
-Co-reality is non-temporal. It is not physical simultaneity. Different bases
-need not share space, time, contact, laws, dimensions, or a containing world,
-and no cross-base contact may be inferred. The modal totality is an interpretive
+Co-reality is non-temporal. It is not physical simultaneity. Different
+admissible bases need not share space, time, contact, laws, dimensions, or a
+containing world, and no contact across admissible bases may be inferred. The modal totality is an interpretive
 schema, not a formed native set, carrier, world, or infinity theorem.
 The schema is open-ended rather than restricted to a fixed finite roster.
 That interpretive open-endedness is not a theorem that infinitely many
-pairwise inequivalent bases have been formed.
+pairwise inequivalent admissible bases have been formed.
 
 Our observed branch is postulated to be a member of this plurality, but no
-current artifact identifies its formal base. Observations restrict our
+current artifact identifies its formal admissible base. Observations restrict our
 branch-relative self-location among empirically compatible branches; they
 neither create a branch nor globally select one. A model-existence or
 nonselection theorem is compatible with this interpretation but does not
@@ -201,7 +201,7 @@ strict 2-CNF or strict 3-CNF substrate and operations being compared.
 Under the canonical knot test, items 1 and 2 are theorems about definability:
 
 - **Census.** For two loops and a contact, exactly 34 relations pass K1–K3.
-  They come in five shapes, from a single three-literal clause (the atom,
+  They come in five classes, from a single three-literal clause (the atom,
   which hides the least) to parity (which hides one full bit, the most any
   three-variable pattern can).
 - **No 2-CNF knot.** No 2-CNF with any number of witnesses defines a knot.

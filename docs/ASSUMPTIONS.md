@@ -72,8 +72,8 @@ evidence: results and their status come from the records each entry links.
 | [A15](#a15--every-coherent-alternative-is-co-real) | Every coherent alternative is co-real | interpretation | Assumed |
 | [A16](#a16--pairs-cannot-make-a-knot-three-places-can) | Pairs cannot make a knot; three places can | premise | Confirmed |
 | [A17](#a17--erasure-is-absence) | Erasure is absence | reading | Overturned |
-| [A18](#a18--the-fano-plane-is-the-knots-only-three-fold-space) | The Fano plane is the knot's only three-fold space | working premise | Overturned |
-| [A19](#a19--a-gadgets-verdict-does-not-depend-on-how-its-points-are-listed) | A gadget's verdict does not depend on how its points are listed | working premise | Overturned |
+| [A18](#a18--the-fano-pattern-is-the-knots-only-three-regular-contradiction) | The Fano pattern is the knot's only three-regular contradiction | working premise | Overturned |
+| [A19](#a19--a-gadgets-verdict-does-not-depend-on-how-its-distinctions-are-listed) | A gadget's verdict does not depend on how its distinctions are listed | working premise | Overturned |
 | [A20](#a20--a-learning-point-is-a-localized-dissonance) | A learning point is a localized dissonance | reading | Assumed |
 | [A21](#a21--learning-changes-the-law-not-the-state) | Learning changes the law, not the state | reading | Confirmed |
 | [A22](#a22--many-points-at-once-means-no-scheduler) | Many points at once means no scheduler | reading | Assumed |
@@ -83,7 +83,7 @@ evidence: results and their status come from the records each entry links.
 | [A26](#a26--a-learner-acts-only-at-dissonance-while-the-state-holds-still) | A learner acts only at dissonance while the state holds still | scope | Overturned |
 | [A27](#a27--a-law-is-weighed-by-how-many-states-it-allows) | A law is weighed by how many states it allows | measure | Assumed |
 | [A28](#a28--outward-growth-is-judged-by-its-laws-local-consistency) | Outward growth is judged by its law's local consistency | scope | Assumed |
-| [A29](#a29--where-an-atom-sits-within-its-switching-class-does-not-matter) | Where an atom sits within its switching class does not matter | scope | Overturned |
+| [A29](#a29--where-a-fano-piece-sits-within-its-switching-class-does-not-matter) | Where a Fano piece sits within its switching class does not matter | scope | Overturned |
 | [A30](#a30--a-processs-memory-is-read-from-its-two-time-knots) | A process's memory is read from its two-time knots | scope | Assumed |
 | [A31](#a31--a-shared-contact-combines-its-two-rings-proposals) | A shared contact combines its two rings' proposals | scope | Confirmed |
 | [A32](#a32--two-sided-essentiality-across-time-is-binding) | Two-sided essentiality across time is binding | reading | Assumed |
@@ -102,24 +102,24 @@ evidence: results and their status come from the records each entry links.
 | [A45](#a45--rings-are-read-as-declared) | Rings are read as declared | reading | Confirmed |
 | [A46](#a46--an-over-agreeing-face-and-an-even-face-are-dissonance) | An over-agreeing face and an even face are dissonance | reading | Assumed |
 | [A47](#a47--a-native-signal-comes-from-the-law-and-the-state-alone) | A native signal comes from the law and the state alone | reading | Assumed |
-| [A48](#a48--a-grown-handle-is-a-fano-atom-with-the-uniform-law) | A grown handle is a Fano atom with the uniform law | scope | Overturned |
+| [A48](#a48--a-grown-handle-is-a-fano-piece-with-the-uniform-law) | A grown handle is a Fano piece with the uniform law | scope | Overturned |
 | [A49](#a49--dissonance-is-weighed-as-the-count-weighs-it) | Dissonance is weighed as the count weighs it | measure | Assumed |
 | [A50](#a50--the-state-moves-without-raising-the-dissonance-while-learning-acts) | The state moves without raising the dissonance while learning acts | scope | Assumed |
-| [A51](#a51--places-and-their-neighbours-are-given-before-the-rules) | Places and their neighbours are given before the rules | scope | Confirmed |
-| [A52](#a52--a-grown-handle-is-a-class-forced-torus-atom) | A grown handle is a class-forced torus atom | scope | Assumed |
+| [A51](#a51--cells-and-their-neighbours-are-given-before-the-rules) | Cells and their neighbours are given before the rules | scope | Confirmed |
+| [A52](#a52--a-grown-handle-is-a-class-forced-torus-piece) | A grown handle is a class-forced torus piece | scope | Assumed |
 | [A53](#a53--nativeness-of-a-board-made-of-names-is-counted-per-name) | Nativeness of a board made of names is counted per name | reading | Assumed |
-| [A54](#a54--places-are-named-by-words-in-two-letters) | Places are named by words in two letters | scope | Confirmed |
+| [A54](#a54--cells-are-named-by-words-in-two-letters) | Cells are named by words in two letters | scope | Confirmed |
 | [A55](#a55--brauns-bit-php-preprint-is-correct) | Braun's bit-PHP preprint is correct | premise | Assumed |
 | [A56](#a56--time-in-a-growing-plane-is-counted-at-the-planes-own-scale) | Time in a growing plane is counted at the plane's own scale | reading | Assumed |
-| [A57](#a57--an-address-asks-for-a-bit-per-atom-each-atom-given-by-its-region) | An address asks for a bit per atom, each atom given by its region | reading | Assumed |
-| [A58](#a58--the-world-holds-inputs-as-points-and-reads-an-output-at-the-floor) | The world holds inputs as points and reads an output at the floor | reading | Assumed |
+| [A57](#a57--an-address-asks-for-a-bit-per-piece-each-piece-given-by-its-region) | An address asks for a bit per piece, each piece given by its region | reading | Assumed |
+| [A58](#a58--the-outside-holds-inputs-as-distinctions-and-reads-an-output-at-the-floor) | The outside holds inputs as distinctions and reads an output at the floor | reading | Assumed |
 | [A59](#a59--renamings-count-as-finite-changes-under-abstract-names) | Renamings count as finite changes under abstract names | reading | Confirmed |
 | [A60](#a60--nativeness-under-abstract-names-is-counted-in-place) | Nativeness under abstract names is counted in place | reading | Assumed |
-| [A61](#a61--closing-a-cycle-in-a-growth-step-names-a-face) | Closing a cycle in a growth step names a face | reading | Assumed |
-| [A62](#a62--a-law-gives-a-shape-only-by-forcing-it) | A law gives a shape only by forcing it | reading | Assumed |
-| [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Overturned |
-| [A64](#a64--counting-how-knots-meet-at-a-distinction-names-no-face) | Counting how knots meet at a distinction names no face | reading | Assumed |
-| [A65](#a65--a-held-reference-point-is-supplied-by-the-world) | A held reference point is supplied by the world | reading | Assumed |
+| [A61](#a61--closing-a-cycle-in-a-growth-step-declares-that-cycle) | Closing a cycle in a growth step declares that cycle | reading | Assumed |
+| [A62](#a62--a-law-gives-a-meeting-pattern-only-by-forcing-it) | A law gives a meeting pattern only by forcing it | reading | Assumed |
+| [A63](#a63--a-declared-cycle-is-put-in-not-native) | A declared cycle is put in, not native | reading | Overturned |
+| [A64](#a64--counting-how-knots-meet-at-a-distinction-declares-no-cycle) | Counting how knots meet at a distinction declares no cycle | reading | Assumed |
+| [A65](#a65--a-held-reference-distinction-is-supplied-by-the-outside) | A held reference distinction is supplied by the outside | reading | Assumed |
 | [A66](#a66--a-joined-base-keeps-each-copys-own-closed-tours) | A joined base keeps each copy's own closed tours | reading | Assumed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 
@@ -471,12 +471,12 @@ evidence: results and their status come from the records each entry links.
   - 2026-10-19 · Overturned: replaced by forgetting (A6).
   - 2026-10-19 · Adopted with the first formalization of the knot test.
 
-### A18 · The Fano plane is the knot's only three-fold space
+### A18 · The Fano pattern is the knot's only three-regular contradiction
 
 **Overturned** · 2026-10-30 · working premise
 
-- **Statement.** The only gluing whose contacts all join three triangles and on which the not-all-equal knot reproduces itself
-  is the Fano plane.
+- **Statement.** The only gluing in which every shared distinction joins three copies of the knot and on which the not-all-equal
+  knot reproduces itself is the Fano pattern (the literature's Fano plane).
 - **Why.** Of about 25,000 random connected 3-regular triple systems with 7 to 15 points, the only ones that could not be
   2-coloured were Fano planes ([space selection](../research/SPACE-SELECTION-20261030-001/which_spaces_the_harmony_builds.md)),
   and the next epic was approved with uniqueness as its premise.
@@ -486,15 +486,16 @@ evidence: results and their status come from the records each entry links.
   ([three-fold spaces](../research/THREEFOLD-SPACES-20261030-001/the_knots_three_fold_spaces.md)). The Fano plane is the
   smallest three-fold space, not the only one. The lesson: a random probe is no evidence of uniqueness.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "The Fano plane is the knot's only three-fold space" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-10-30 · Overturned (`THREEFOLD-SPACES-20261030-001`).
   - 2026-10-30 · Adopted as the premise of the three-fold-spaces epic, from the probe of `SPACE-SELECTION-20261030-001`.
 
-### A19 · A gadget's verdict does not depend on how its points are listed
+### A19 · A gadget's verdict does not depend on how its distinctions are listed
 
 **Overturned** · 2026-11-07 · working premise
 
-- **Statement.** When a far side is glued to a gluing line, the creation test's verdict does not depend on the order in which
-  the far side's points are written.
+- **Statement.** When a far side is glued to a gluing knot, the creation test's verdict does not depend on the order in which
+  the far side's distinctions are written.
 - **Why.** Three of the four far sides the test used, K4^(3), the Fano plane and census 58, have the symmetry that makes the
   order irrelevant, and the test never varied it.
 - **Rests on it.** The split step of the four-step rule that read Fano atoms (`FAR-READ-20261106-001-D002`), and the sentence of
@@ -504,6 +505,7 @@ evidence: results and their status come from the records each entry links.
   native, and both records carry pending qualifications
   ([genus read](../research/GENUS-READ-20261107-001/genus_read.md)). The lesson: a listing order is a choice.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A gadget's verdict does not depend on how its points are listed" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-07 · Overturned (`GENUS-READ-20261107-001`).
   - 2026-11-06 · Used by `FAR-READ-20261106-001`.
 
@@ -721,12 +723,12 @@ evidence: results and their status come from the records each entry links.
     change when growth fails but not whether some order fails, which needs an aperiodic law (`docs/CORRECTIONS.md`).
   - 2026-11-07 · Added by `GROWTH-LAW-20261107-001`.
 
-### A29 · Where an atom sits within its switching class does not matter
+### A29 · Where a Fano piece sits within its switching class does not matter
 
 **Overturned** · 2026-11-08 · scope
 
-- **Statement.** A plain edge-atom space is studied through one placement of its atoms: a Fano atom on each signed incidence of
-  one minimal signing of its glue. Results computed on that placement are taken to hold for every placement in the same switching
+- **Statement.** A plain edge-piece system is studied through one placement of its Fano pieces: a Fano piece on each signed
+  incidence of one minimal signing of its glue. Results computed on that placement are taken to hold for every placement in the same switching
   class.
 - **Why.** HANDLE-COUNT A's generator places the atoms on the minimal signing it finds, and the lines that used it, HANDLE-COUNT B
   and TRISUM-READ, took whichever placement it returned without comparing placements. Which one it returns depends on Python's hash
@@ -741,6 +743,7 @@ evidence: results and their status come from the records each entry links.
   on all five other placements and HANDLE-COUNT B's stated totals reproduce
   ([switch read](../research/SWITCH-READ-20261108-001/switch_read.md)).
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Where an atom sits within its switching class does not matter" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-08 · Overturned (`SWITCH-READ-20261108-001`); the results resting on it rechecked and standing.
   - 2026-11-07 · Added by `TRISUM-READ-20261107-001`.
 
@@ -1210,13 +1213,13 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-10 · Added by `NATIVE-TARGET-20261110-001`.
 
-### A48 · A grown handle is a Fano atom with the uniform law
+### A48 · A grown handle is a Fano piece with the uniform law
 
 **Overturned** · 2026-11-10 · scope
 
-- **Statement.** When learning is paired with growth, the growth move splices one Fano atom (the Fano plane less a point) at a line, by
-  one of the three bijections that keep both rotations; the atom brings the Fano plane's uniform signs, the old signs are kept, and the
-  three new sides take the signs that leave no even face. The experimenter chooses the line.
+- **Statement.** When learning is paired with growth, the growth move splices one Fano piece (the Fano pattern less a distinction) at a knot,
+  by one of the three bijections that keep both rotations; the piece brings the Fano pattern's uniform signs, the old signs are kept, and the
+  three new sides take the signs that leave no even face. The experimenter chooses the knot.
 - **Why.** `GROW-HANDLE-20261110-001` took it by default: a Fano atom is the knot's own uniform contradiction, and splicing one across a
   3-edge cut adds exactly one handle (`THREEFOLD-SURFACES-20261030-001`). The uniform signs make the grown law the one class that keeps the
   sphere's contradiction.
@@ -1226,6 +1229,7 @@ evidence: results and their status come from the records each entry links.
   growth site the learner chooses (backlog B68). The cheapest test grows a thin torus's atom instead and reads whether it too acts as the
   replaced line in one class and is transparent in the others.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A grown handle is a Fano atom with the uniform law" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Overturned as a limit by `OTHER-ATOMS-20261110-001`: the learned memory does not need the Fano plane. Every torus atom
     whose torus has one class no state satisfies and is free at its point acts as its line in exactly that class on any host and holds
     a unit there (proved by hand; freeness checked for every lattice torus to 30 points), which covers the Fano atom and the thin-torus
@@ -1269,11 +1273,11 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-10 · Used both ways by `NATIVE-WRITE-20261110-001`: its learner tests its memory with this walk (a state flip only when W
     does not rise), and writes with the alternative, state flips at a temperature; status unchanged.
 
-### A51 · Places and their neighbours are given before the rules
+### A51 · Cells and their neighbours are given before the rules
 
 **Confirmed** · 2026-11-10 · scope
 
-- **Statement.** Every law measured for space so far has its places, and which of them are neighbours, fixed before the law is
+- **Statement.** Every law measured for space so far has its cells, and which of them are neighbours, fixed before the law is
   read: a lattice Z^D, a declared network of rings (A45), a group's Cayley law, or a gadget's copies. The law's distinctions are
   the values on that board; the board itself is not a distinction, so no allowed state can change it.
 - **Why.** A CNF names its variables, and naming them by positions on a grid is the usual way to write a uniform local law; Conway's
@@ -1291,6 +1295,7 @@ evidence: results and their status come from the records each entry links.
   one forces a plane, dimension follows the rules. Such identity distinctions are read as distinctions of the law, never as
   contact: equality is not a binding.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Places and their neighbours are given before the rules" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · The board line closes on it, with `GROW-FACE-20261110-001` ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)):
     places and their neighbours need not be given before the rules, but a face must be named by them. Static laws, with letters
     or without, and laws that grow the board from a seed choose the plane only by naming a face (for growth by definition, A61).
@@ -1333,15 +1338,15 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-10 · Added at the owner's question whether the axes can follow rules, recording a default every space epic since
     `LOGIC-AXIS-20261107-001` took.
 
-### A52 · A grown handle is a class-forced torus atom
+### A52 · A grown handle is a class-forced torus piece
 
 **Assumed** · 2026-11-10 · scope
 
-- **Statement.** When learning is paired with growth, the growth move splices a torus atom, a torus knot space less one point, whose torus
-  has exactly one sign class that no state satisfies and is free at the removed point (flipping the sign of any one of the point's three
-  sides leaves a satisfiable law). The atom brings a Kasteleyn law of its torus, the old signs are kept, and the three new sides take the
-  signs that leave no even face. The Fano atom (7 points) and the thin-torus atoms of even index (4 to 40 points) are such atoms. The
-  experimenter chooses the atom and the line.
+- **Statement.** When learning is paired with growth, the growth move splices a torus piece, a torus drawn knot pattern less one distinction,
+  whose torus has exactly one sign class that no state satisfies and is free at the removed distinction (flipping the sign of any one of
+  the distinction's three sides leaves a satisfiable law). The piece brings a Kasteleyn law of its torus, the old signs are kept, and the three new sides take the
+  signs that leave no even face. The Fano piece (7 distinctions) and the thin-torus pieces of even index (4 to 40 distinctions) are such
+  pieces. The experimenter chooses the piece and the knot.
 - **Why.** `OTHER-ATOMS-20261110-001` put it in place of A48: for exactly these atoms the atom rule holds on any host (proved, given
   freeness, which was checked for every lattice torus to 30 points), and thin-torus atoms wrote and held addresses as the Fano atom does
   ([other atoms](../research/OTHER-ATOMS-20261110-001/other_atoms.md)). An atom whose torus satisfies every class is transparent in all
@@ -1353,6 +1358,7 @@ evidence: results and their status come from the records each entry links.
   growth law that chooses the atom itself (backlog B106). The cheapest test grows a knot sphere carrying two Fano atoms, less a point, as
   one atom (backlog B104): if it acts only where both inner atoms act, the premise extends to atoms of atoms.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A grown handle is a class-forced torus atom" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · `NATIVE-ATOM-20261110-001` read the choice: a uniform growth rule (one sign pattern on every line, fired at a violated line)
     grows a remembering atom only with the Fano atom, the one handle whose plain law contradicts itself; every other class-forced atom grows
     transparent and needs its class supplied, which learning does ([which atom a growth law grows](../research/NATIVE-ATOM-20261110-001/native_atom.md)).
@@ -1388,11 +1394,11 @@ evidence: results and their status come from the records each entry links.
     this entry rest on the naming (A54). Renamings are then finite changes as well, so the condition excludes nothing (A59).
   - 2026-11-10 · Added by `BOARD-DIST-20261110-001`, which took the per-name count by default.
 
-### A54 · Places are named by words in two letters
+### A54 · Cells are named by words in two letters
 
 **Confirmed** · 2026-11-10 · scope
 
-- **Statement.** In the challenge of A51 the places are named by the reduced words in x, y and their inverses. Every name then has
+- **Statement.** In the challenge of A51 the cells are named by the reduced words in x, y and their inverses. Every name then has
   four neighbour names, so the law's neighbourhood is fixed by the naming, and every board is a quotient of the tree of names.
   Confirmed for the obstruction: without letters no finitary law and no count law forces the plane either. The naming draws
   four neighbours a law can address and one connected world, and it freezes the board.
@@ -1407,6 +1413,7 @@ evidence: results and their status come from the records each entry links.
   is then whether a finitary law can force a bounded degree at all, and whether the unfolding theorem holds there. If the theorem
   fails, the naming was a hidden drawing; if it holds, the obstruction does not depend on the naming.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Places are named by words in two letters" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Confirmed for the obstruction by `BARE-NAMES-20261110-001` ([abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)), by
     the rule frozen in its pre-registration. Without letters every finitary law that allows a state allows a structureless one,
     every count law allows the tree, and a named face gives planes only componentwise (proved), so the obstruction does not
@@ -1466,12 +1473,12 @@ evidence: results and their status come from the records each entry links.
     and up to 78 lags in plain lags ([expansion as a reading](../research/EXPAND-READ-20261110-001/expand_read.md)). Kept as Assumed.
   - 2026-11-10 · Added by `EXPAND-READ-20261110-001`.
 
-### A57 · An address asks for a bit per atom, each atom given by its region
+### A57 · An address asks for a bit per piece, each piece given by its region
 
 **Assumed** · 2026-11-10 · reading
 
-- **Statement.** An address asked of the layered memory is a bit for every atom, acting or not, and each atom is given to the learner by
-  its region: its lines and every face they touch. The learner knows where each atom is and what is asked of it, and nothing about its
+- **Statement.** An address asked of the layered memory is a bit for every piece, acting or not, and each piece is given to the learner
+  by its region: its knots and every face they touch. The learner knows where each piece is and what is asked of it, and nothing about its
   class or role.
 - **Why.** `NATIVE-WRITE-20261110-001` froze it before any run. With only the atoms asked to act named, a learner cannot tell the forced
   dissonance of an unnamed atom that acts from a free unit in the host, so it cannot check that the other atoms are clear; a memory word
@@ -1481,15 +1488,16 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Name only the atoms asked 1, as backlog B119 first phrased it ("a bias at the named atoms only"), and ask whether a
   learner can still write exactly, for instance by testing whether dissonance outside the named atoms ever moves.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "An address asks for a bit per atom, each atom given by its region" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `NATIVE-WRITE-20261110-001`.
 
-### A58 · The world holds inputs as points and reads an output at the floor
+### A58 · The outside holds inputs as distinctions and reads an output at the floor
 
 **Assumed** · 2026-11-10 · reading
 
-- **Statement.** An input-output interface of the layered memory is the three outer points of an atom or composite. The world holds two
-  of them at values (the inputs), and the third is read at the floor (every line satisfied, no even face) as decided (every floor state
-  gives it one value), undecided (both values occur) or excluded (no floor state has those inputs). A learner is taught by the world
+- **Statement.** An input-output interface of the layered memory is the three outer distinctions of a piece or composite. The outside
+  holds two of them at values (the inputs), and the third is read at the floor (every knot satisfied, no even face) as decided (every floor state
+  gives it one value), undecided (both values occur) or excluded (no floor state has those inputs). A learner is taught by the outside
   holding the inputs and the output it asks for.
 - **Why.** `IN-OUT-20261110-001` froze it before any run. A role depends on the law alone, so held inputs cannot change it, and readings of
   roles are monotone (theorem M of `NOT-INSIDE-20261110-001`); a decided value alone allows, for two inputs, only copying or negating one
@@ -1500,6 +1508,7 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read the output differently: as the dissonance near it, as a decided value with more inputs (three held inputs allow
   majority and parity under theorem D), or as a probability over floor states; or let the world hold inputs as signs rather than points.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "The world holds inputs as points and reads an output at the floor" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `IN-OUT-20261110-001`.
 
 ### A59 · Renamings count as finite changes under abstract names
@@ -1540,12 +1549,12 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-10 · Added by `PLACE-FLIP-20261110-001`.
 
-### A61 · Closing a cycle in a growth step names a face
+### A61 · Closing a cycle in a growth step declares that cycle
 
 **Assumed** · 2026-11-10 · reading
 
-- **Statement.** A growth step of an accretion law names a face when it closes a cycle, by joining a new place to two or more existing
-  places or by joining two existing places. Since the cycle runs through the step's view, the step fixes it. Merging places and
+- **Statement.** A growth step of an accretion law declares a cycle when it closes one, by joining a new cell to two or more existing
+  cells or by joining two existing cells. Since the cycle runs through the step's view, the step fixes it. Merging cells and
   changing existing values are outside accretion.
 - **Why.** `GROW-FACE-20261110-001` froze it before any computation, at the coordinator's request, as what would count as growth
   forcing the plane without a named face. Under it a law that names no face grows trees, so growth needs a named face by definition;
@@ -1556,15 +1565,16 @@ evidence: results and their status come from the records each entry links.
   face emerging rather than written in. Merging places whose views agree while growing, a Leibniz rule, is another way to close
   cycles that no step fixes.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Closing a cycle in a growth step names a face" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-10 · Added by `GROW-FACE-20261110-001`.
 
-### A62 · A law gives a shape only by forcing it
+### A62 · A law gives a meeting pattern only by forcing it
 
 **Assumed** · 2026-11-11 · reading
 
-- **Statement.** Question 9 asks which uniform local law gives a shape that looks like a space of low dimension. Every epic on it
-  has read "gives" as "forces": a law gives the plane, a round circle or a sphere only when every world it allows has that shape, so
-  a law that also allows the plane's tori, its covering tree or a long capped tube does not give it. This is a reading of the
+- **Statement.** Question 9 asks which uniform local law gives a meeting pattern that looks like a space of low dimension. Every
+  epic on it has read "gives" as "forces": a law gives the plane, a round circle or a sphere (the drawn targets) only when every
+  world it allows is of that kind, so a law that also allows the plane's tori, its covering tree or a long capped tube does not give it. This is a reading of the
   question, not of the knot test; the canonical K1–K3 test is unchanged.
 - **Why.** Taken by default and never compared with an alternative, from the pinwheel and sphere epics of 2026-11-07 to the board
   and growth lines of 2026-11-10, whose verdicts are all stated as forcing
@@ -1575,19 +1585,20 @@ evidence: results and their status come from the records each entry links.
   ([sphere growth](../research/SPHERE-GROWTH-20261107-001/sphere_growth.md)); a law that names no relation allows the tree
   whenever it allows an infinite board ([the board as distinctions](../research/BOARD-DIST-20261110-001/board_dist.md),
   [weakly aperiodic laws](../research/WEAK-APER-20261110-001/weak_aperiodic.md),
-  [abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)); and growth chooses the plane only by naming a face. Under
+  [abstract names](../research/BARE-NAMES-20261110-001/bare_names.md)); and growth chooses the plane only by declaring a cycle. Under
   this reading those verdicts are close to automatic: a law built from windows allows a state on a world exactly when every window
   is fine, so it allows the same states on every world whose windows look alike, a ring twice as long or a cover included. No
-  bounded law tells a long thread from a ring ([growth as a law](../research/GROWTH-LAW-20261107-001/growth_law.md)).
-- **Challenge.** Read question 9 under A15, where nothing selects one world: a law gives a shape when the shape is among the worlds
+  bounded law tells a long chain from a ring ([growth as a law](../research/GROWTH-LAW-20261107-001/growth_law.md)).
+- **Challenge.** Read question 9 under A15, where nothing selects one world: a law gives a meeting pattern when it is among the worlds
   it allows and some local feature (the link at each distinction, its curvature, the dimension bond balls read) is the same in
-  every world it allows, with global shape and size left co-real. Under that reading the locality results answer the question
+  every world it allows, with the global pattern and size left co-real. Under that reading the locality results answer the question
   rather than block it where every world has proper covers (flat and hyperbolic surfaces, d >= 6): there a law fixes local
-  geometry and never size or global shape. At positive curvature (d <= 5) the worlds are a classical finite list with no proper
-  cover, so a law can fix global shape and size outright (corrected 2026-11-11). The cheapest discriminator is backlog B144, a census
+  geometry and never size or the global pattern. At positive curvature (d <= 5) the worlds are a classical finite list with no proper
+  cover, so a law can fix the global pattern and size outright (corrected 2026-11-11). The cheapest discriminator is backlog B144, a census
   of worlds made of knots alone, which asks what every allowed world shares. The entry is overturned if question 9 is restated
-  under the co-real reading, and confirmed if a question about shape is found that only the forcing reading can pose.
+  under the co-real reading, and confirmed if a question about meeting patterns is found that only the forcing reading can pose.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A law gives a shape only by forcing it", and its statement and challenge said shape for what is now a meeting pattern ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Challenged by `KNOTS-ALONE-20261111-001`, status unchanged: at positive curvature forcing works, since a world
     with no cover can be fixed outright (the surface condition and d leave the classical list, and the not-all-equal law removes the
     projective plane, so at d = 5 it allows only the icosahedron); at d >= 6 no law fixes size, and that law does not fix
@@ -1597,13 +1608,13 @@ evidence: results and their status come from the records each entry links.
     classical finite lists fix shape and size (found by `KNOTS-ALONE-20261111-001`'s pre-registration).
   - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.
 
-### A63 · A named face is put in, not native
+### A63 · A declared cycle is put in, not native
 
 **Overturned** · 2026-11-11 · reading
 
-- **Statement.** A law that names a face, by fixing which cycle of places closes (a relation of the letters, a face length or
-  offsets, or a cycle closed in a growth step as in A61), puts that face in: the face is part of what the law is given, not
-  something it builds. Under this reading "the plane needs a named face" is an obstruction. This is a reading of what counts as
+- **Statement.** A law that declares a cycle, by fixing which cycle of cells closes (a relation of the letters, a cycle length or
+  offsets, or a cycle closed in a growth step as in A61), puts that cycle in: the cycle is part of what the law is given, not
+  something it builds. Under this reading "the commuting board needs a declared cycle" is an obstruction. This is a reading of what counts as
   drawn, not a change to the knot test; the canonical K1–K3 test is unchanged.
 - **Why.** Taken by default in the board line of 2026-11-10, whose verdict reads naming a face as the input the line could not
   remove ([every accretion law](../research/GROW-FACE-20261110-001/grow_face.md)). The opposite reading was taken, also by
@@ -1622,6 +1633,7 @@ evidence: results and their status come from the records each entry links.
   their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
   a face knot is shown to need an input the knot test excludes.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A named face is put in, not native" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Overturned in the knots-alone setting, conditional on A64 (the surface count names no face, Assumed), with the
     surface count given and on computed evidence in range, by `LONG-LOOP-20261111-001`'s frozen rule, which applies this entry's
     registered criterion (flat local geometry fixed with nothing named but the knot). The face relation passed K1–K3 in the
@@ -1641,13 +1653,13 @@ evidence: results and their status come from the records each entry links.
     ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
   - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.
 
-### A64 · Counting how knots meet at a distinction names no face
+### A64 · Counting how knots meet at a distinction declares no cycle
 
 **Assumed** · 2026-11-11 · reading
 
-- **Statement.** In a world of knots alone, the surface condition (every co-knotted pair in exactly two knots, every link one
-  cycle) and the degree d (every distinction in d knots) are counts of how knots meet at a distinction; they name no face. The face
-  is the knot itself. The canonical K1–K3 test is unchanged.
+- **Statement.** In a knot pattern of knots alone, the two-fold count (every co-knotted pair in exactly two knots, the knots at
+  each distinction one cycle) and the degree d (every distinction in d knots) are counts of how knots meet at a distinction; they
+  declare no cycle. The face, in the drawing's word, is the knot itself. The canonical K1–K3 test is unchanged.
 - **Why.** Taken by default in `KNOTS-ALONE-20261111-001`'s pre-registration, which read the surface condition as an incidence
   count like d, so that a law with it names nothing but its knot ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
   The alternative, in the spirit of A61's finer reading, counts a link's fixed length as a named dual face.
@@ -1658,6 +1670,7 @@ evidence: results and their status come from the records each entry links.
   at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
   non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "Counting how knots meet at a distinction names no face" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Bearing from `OVERLAP-READ-20261111-001`, status unchanged: the not-all-equal law's states depend only on how many
     knots lie on each pair (proved: two knot patterns with the same count on every pair have the same states), so a count of how
     knots meet is exactly what this law reads, and it cannot tell apart two patterns with the same counts
@@ -1672,13 +1685,13 @@ evidence: results and their status come from the records each entry links.
     ([does a faithful reading supply the surface?](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
   - 2026-11-11 · Added by `KNOTS-ALONE-20261111-001`.
 
-### A65 · A held reference point is supplied by the world
+### A65 · A held reference distinction is supplied by the outside
 
 **Assumed** · 2026-11-11 · reading
 
-- **Statement.** In a knot space whose law is closed under flipping every point (the not-all-equal law of the learning line), a
-  reference is a point the world holds at one fixed value while it holds the inputs, and a map read with a reference is read at that
-  value only. The reference is an input supplied by the world, like the held inputs; the law does not produce it. The canonical K1–K3
+- **Statement.** In a drawn knot pattern whose law is closed under flipping every distinction (the not-all-equal law of the
+  learning line), a reference is a distinction the outside holds at one fixed value while it holds the inputs, and a map read with a reference is read at that
+  value only. The reference is an input supplied by the outside, like the held inputs; the law does not produce it. The canonical K1–K3
   test is unchanged.
 - **Why.** Taken by default in `HOLD-COUNT-20261111-001`'s pre-registration, to ask what one fixed value buys a knot space that, by
   theorem D of `IN-OUT-20261110-001`, can read a count only up to its mirror. The alternative is a reference made natively, a point
@@ -1690,6 +1703,7 @@ evidence: results and their status come from the records each entry links.
   without the world holding it, or a law with a preferred value that keeps the knot's other properties. Finding one would make the
   counts read here native; a proof that no complement-closed law fixes a value would confirm that the reference is always an input.
 - **History.**
+  - 2026-11-11 · Reworded under the owner's language rule, status unchanged: the title was "A held reference point is supplied by the world" ([glossary](../INTUITIONS.md#glossary)).
   - 2026-11-11 · Used by `HOLD-COUNT-20261111-001`, status unchanged: one reference point held at 0 gives no count of three held points
     mod 3 or mod 4 on any of its 1,128 spaces; the maps of four held points there never use the reference as a count mod 3 would
     ([what it takes to hold a count](../research/HOLD-COUNT-20261111-001/hold_count.md)).

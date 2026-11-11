@@ -1745,28 +1745,30 @@ So holes come in two kinds:
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.
-   - **The order never knots with the world (proved).**
-     - **A fixed world.** For a rule that reads only the law, the history and the states of a fixed world form a product.
-     - **Worlds that vary.** With absent things forgotten, every knot that contains an order variable also contains an existence
-       variable. Existence enters as a presence literal: "if this site grew, its knot holds" is itself a knot.
+   - **The order never knots with the grown pattern (proved).**
+     - **A fixed pattern.** For a rule that reads only the law, the history and the states of a fixed pattern form a product.
+     - **Patterns that vary.** With absent things forgotten, every knot that contains an order variable also contains an existence
+       variable. Existence enters as a presence literal: "if this distinction grew, its knot holds" is itself a knot.
      - **The control.** A rule that reads a state does knot the order to the states. That is the input the canonical test
        forbids.
    - **A beginning is a knot (proved).**
      - **The local part is pairwise.** Which neighbour came first: "at most one parent" is a 2-CNF and holds no knot.
-     - **The global part is not.** Time without a loop has exactly the world's cycles as its knots, each the not-all-equal relation
+     - **The global part is not.** Time without a loop has exactly the pattern's cycles as its knots, each the not-all-equal relation
        on its seams. On a ring the beginning is one knot binding every seam, constrained as a whole and free in every part.
      - **Rings need a closing.** The beginning knot contradicts the pairwise part on a ring, so a ring needs a closing move.
      - **Duality.** The states knot along cuts and the history along cycles, the circuits of two dual matroids.
-   - **Euler's count (proved).** A history's beginnings and ends, less its closing moves, give the world's Euler characteristic. So
-     the open-end rule grows only threads, disc moves grow only discs and spheres, and handles need closings.
+   - **Euler's count (proved).** A history's beginnings and ends, less its closing moves, give the grown pattern's Euler count. So
+     the loose-end rule grows only chains, disc moves grow only patches and zero-pair weaves (the literature's discs and spheres),
+     and cycle pairs (handles) need closings.
    - **What the beginning buys (proved).**
-     - **One dimension.** No law with bounded hidden labels tells a long thread from a ring (pumping). So the beginning does what no
-       bounded witness does: the number line's ends come from its beginning. A static law would need about log n bits per knot.
-     - **Two dimensions.** A law with arbitrarily large flat regions excludes the flat tori only if none of its flat
-       configurations is periodic. The seam law allows all of them.
-     - **Spheres.** The beginning is free, since every two-sphere can be grown by disc moves.
-   - **The plane (exploratory).** The pinwheel was grown outward from one tile by its own label-free collar law, with coins at its
-     choices.
+     - **One dimension.** No law with bounded hidden labels tells a long chain from a ring (pumping). So the beginning does what no
+       bounded witness does: the endless chain's loose ends come from its beginning. A static law would need about log n bits per knot.
+     - **Two dimensions.** A law with arbitrarily large six-regular patches excludes the six-regular one-pair weaves (the
+       literature's flat tori) only if none of its six-regular configurations is periodic. The seam law allows all of them.
+     - **Zero-pair weaves.** The beginning is free, since every zero-pair weave (the literature's two-sphere) can be grown by disc
+       moves.
+   - **The drawn plane (exploratory).** The pinwheel tiling, drawn in the plane, was grown outward from one tile by its own label-free
+     collar law, with coins at its choices.
      - **Every coin run left the pinwheel.** In all 70 runs of four orders it left the pinwheel's own patches. Of these, 66 got
        stuck within 304 tiles, and 4 forced-first runs reached 500 tiles of collar-legal patches that are not pinwheel patches.
      - **Genuine continuations pass.** A genuine continuation is never rejected.
@@ -1777,19 +1779,19 @@ So holes come in two kinds:
      - **A stronger law does not help.** The radius-2 law got stuck in 40 of 40 runs too.
    - **Reading.**
      - **Question 4.** A process written as a law is a static law on its history, so the static definition survives the change.
-       What growth adds is a beginning, which is a knot, and never a knot of the world.
-     - **What grows natively.** In one dimension the beginning grows the number line in every order. Round spaces need more: on
-       spheres a carried bit (`GROW-COIN-20261107-001`), in the plane a few bits of hierarchy shared across the whole growing
-       boundary, which independent local coins cannot share.
+       What growth adds is a beginning, which is a knot, and never a knot of the grown pattern.
+     - **What grows natively.** In one dimension the beginning grows the endless chain, the literature's number line, in every order.
+       Round drawings need more: on drawn spheres a carried bit (`GROW-COIN-20261107-001`), in the drawn plane a few bits of hierarchy
+       shared across the whole growing boundary, which independent local coins cannot share.
      - **Harmonies.** Every aperiodic law of the plane has deceptions of all orders (Dworkin and Shieh 1995). Periodic laws have
        polygonal circles (`LOGIC-CIRCLE-20261107-001`). So a law whose growth never gets stuck, in any order, has a polygonal circle,
-       a harmony, among its spaces.
+       a harmony, among its layouts.
      - **Corrected 2026-11-08 (narrowing).** The pinwheel's collar and radius-2 laws are not aperiodic: a periodic plane obeys both
        (`COLLAR-PLANE-20261108-001`, under question 9). So Dworkin and Shieh do not explain their dead ends, which are measured facts
        about coin growth (`docs/CORRECTIONS.md`).
-     - **Shapes that do not close.** The owner said on 2026-11-08 that our minds are shapes that do not close, continuous with the
-       shapes they touch. Euler's count gives a formal side. A world grown by sprouting stays a tree. One grown by disc moves stays
-       a disc until its last triangle. Closing a ring or a handle takes a move that joins the world to itself.
+     - **What does not close.** The owner said on 2026-11-08 that our minds are "shapes" that do not close, continuous with the
+       "shapes" they touch. Euler's count gives a formal side. A pattern grown by sprouting stays a tree. One grown by disc moves
+       stays a patch until its last knot. Closing a ring or a cycle pair (handle) takes a move that joins the pattern to itself.
    - **Provenance.** Classical: products, the topes of graphic oriented matroids, discrete Morse theory, shellability, pumping,
      proof-labeling schemes, aperiodic tile sets, and deceptions (Dworkin and Shieh 1995; Onoda, Steinhardt, DiVincenzo and
      Socolar 1988). New as far as found: their reading under K1–K3, and the pinwheel's outward growth.
@@ -1797,6 +1799,11 @@ So holes come in two kinds:
      60, then find the knots across time of rules 90 and 150, of one nonlinear rule and of Conway's Life (Payoff 2/3, Concreteness
      2/3). The alternatives are the collar law off the pinwheel (taken by `COLLAR-PLANE-20261108-001`, under question 9), one
      hierarchy bit per level, and every accretion law ([decision note](../research/GROWTH-LAW-20261107-001/growth_law.md)).
+
+   **Words in the process entries.** The entries from here to the end of question 4 run cellular automata on rings of cells, a ring
+   being a loop read as a process, and join the rings at shared contact cells into declared networks (A45), laid out on drawn tilings.
+   Their planes, tori, tubes, bands, squares, honeycombs, lattices, faces, corners, cuts and genus belong to that declared layout, not
+   to anything the law builds (reworded on 2026-11-11; the earlier text is in git history).
 
    **2026-11-08: knots across time are minimal decisive sets** (`TIME-KNOTS-20261107-001`).
    - **The question.** Question 4's other half, backlog B7: when states change under a local dynamics, which knots join a cell's
@@ -1926,7 +1933,7 @@ So holes come in two kinds:
    - **Persistent contacts do not compose in uniform chains (exploratory).**
      - **The census.** Of 5,632 chains, each exact at every lag, both contacts persist in 182. In none of them does a contact bind
        the end rings at every lag from d + 1 on.
-     - **One size past.** With the contacts moved off the opposite point of the middle ring, 198 more chains keep both contacts and
+     - **One size past.** With the contacts moved off the opposite cell of the middle ring, 198 more chains keep both contacts and
        none composes.
      - **Why.** In the persistent chains the far ring's influence is absent (rings that read no neighbour, blocking, cancellation
        between the two ways round), fades, or can always be overridden.
@@ -2028,7 +2035,7 @@ So holes come in two kinds:
    - **The question.** Is there a native path of four rings and three contacts when each ring may run any linear rule, or when the
      second middle ring is hybrid, its cells running different rules?
    - **One rule per ring (exploratory, verified).** Of 20,480,000 paths, 16 are native, all one construction (*corrected on
-     2026-11-08, next entry:* other shapes have other native paths with one rule per ring):
+     2026-11-08, next entry:* other ring sizes have other native paths with one rule per ring):
      - **End rings.** 3 cells running a shift. With its contact reading both neighbours, an end ring is a feedback shift register
        with polynomial x³ + x + 1, which never forgets.
      - **Middle rings.** 5 cells running rule 150, their contacts two apart.
@@ -2063,11 +2070,11 @@ So holes come in two kinds:
      - **Longer paths.** The 8 families native at four rings fail at five.
    - **Growth breaks composition, not persistence.** Paths whose three contacts persist exist at every size, mostly with row cycles
      of at most 12 lags, and none of them is native.
-   - **Native paths sit at isolated shapes.**
+   - **Native paths sit at isolated sizes.**
      - **The map.** Of 36 combinations of end-ring and middle-ring sizes, native paths occur at 3: 3/5/5/3, 5/6/6/5 (rule 90 end rings,
        the one-sided additive rules 60 and 102 in the middle) and 4/7/7/5.
      - **Rule 150 on every ring.** 48 native paths, at end rings of 6 cells or a middle ring of 8 (the NATIVE-PATH-S1 run).
-     - **Isolated.** No family is native at two shapes of the map, and none of the 128 stays native with one more cell.
+     - **Isolated.** No family is native at two sizes of the map, and none of the 128 stays native with one more cell.
    - **Reading.**
      - **A34 under challenge.** Under the every-lag reading, composition across time exists only at isolated sizes and never
        transports. Composition at recurring lags, with the phase fixed by the chain, held at every tested size for three-ring chains
@@ -2215,7 +2222,7 @@ So holes come in two kinds:
      every ring, that is a native separation across time. One ring of cuts round the torus does not separate, since influence goes
      round the other way; two do.
    - **Reading.** Native separation tells a torus from a disc: a ring of cuts that does not bound leaves the lattice in one piece. The
-     gap at the antipode is a symmetry, not a range: on rectangular tori it appears only on some shapes (computed). No census was
+     gap at the antipode is a symmetry, not a range: on rectangular tori it appears only at some proportions (computed). No census was
      used, and no lag cutoff.
    - **Next (taken).** Genus read by rings of cuts (next entry)
      ([decision note](../research/LATTICE-NET-20261108-001/lattice_net.md)).
@@ -2315,7 +2322,7 @@ So holes come in two kinds:
    - **Only the sphere, at every size (proved).** Every loop of rings, pair of rings sharing contacts and Platonic network reads its
      distance plainly. The square, triangular and honeycomb planes do not, from distance 4, 6 and 5, and a quotient whose systole is long
      enough inherits the failure, so exactly 26 tori read it: 9 square, 11 triangular, 6 honeycomb, mirror images apart.
-     *Corrected on 2026-11-09: the 26 are the regular tori; thin tori of other shapes, the ladders first, read it at every size
+     *Corrected on 2026-11-09: the 26 are the regular tori; thin tori of other proportions, the ladders first, read it at every size
      (`GROWN-DISTANCE-20261109-001`, below; `docs/CORRECTIONS.md`).*
    - **The first failing map (exact).** The twisted square torus {4,4}_(2,3), 13 rings: each contact has one late ring, at distance 4,
      first needed at 5. Its mirror image reads every distance plainly, so no rule by type, genus, curvature or size decides finite maps.
@@ -2394,11 +2401,11 @@ So holes come in two kinds:
    - **The question.** If a running tube may add a band, along the loop or across it, only where the band keeps every contact
      persistent, where and which way does it grow, and does it keep growing?
    - **One way (exploratory, exact per decision).** At lags 0 and 1 bands are allowed both ways; once one is in, from lag 3 on every
-     allowed place runs across the tube, in all 72 runs read, so the network lengthens the way its first band went: a tube.
+     allowed insertion runs across the tube, in all 72 runs read, so the network lengthens the way its first band went: a tube.
    - **Then it stops, mostly.** If the cut contact keeps or copies its value, nothing more is allowed after lag 2. If both halves are
-     born, one band per lag for 3 to 13 lags, and then no place is left, except on tubes three rings round grown along their length,
+     born, one band per lag for 3 to 13 lags, and then no insertion is left, except on tubes three rings round grown along their length,
      which reach the horizon of 12 lags.
-   - **All at once grows both ways, briefly.** Filling every allowed place together, which needs no order, doubles both sides at lags 0
+   - **All at once grows both ways, briefly.** Filling every allowed insertion together, which needs no order, doubles both sides at lags 0
      and 1; past that the networks were too large to read.
    - **Reading.** The dynamics breaks the symmetry with its first band and keeps it, so the band law, left to itself, grows a line of
      loops; a band across the tube would cut through old influence. A plane would need the order-free rule to keep going (B38).
@@ -2406,7 +2413,7 @@ So holes come in two kinds:
      ([decision note](../research/GROW-CHOOSE-20261109-001/grow_choose.md)).
 
    **2026-11-09: growth by every allowed cut at once** (`GROW-ALL-20261109-001`).
-   - **The question.** If the running tube fills every place the dynamics allows with a band, all at once, does it keep growing both
+   - **The question.** If the running tube fills every insertion the dynamics allows with a band, all at once, does it keep growing both
      ways past lag 1, or stop?
    - **It doubles (exploratory, exact per decision).** On the 3 × 3, 3 × 4 and 4 × 4 tubes every cut, both ways, stays allowed at lags 0,
      1 and 2, so every ring splits into a 2 × 2 block each lag: 3 × 3, 6 × 6, 12 × 12, 24 × 24, every stage read balanced in the whole
@@ -2428,7 +2435,7 @@ So holes come in two kinds:
      faster than it travels: an original ring is heard only within 0.8 to 2.4 original spacings for P = 2 to 8, the same on 3 × 3 and
      5 × 5, its growth halving at each doubling, while the contacts inside multiply about fourfold per doubling.
    - **Reading.** Growth that outruns influence confines every ring to a neighbourhood fixed at its birth, and at the fastest rate to
-     itself: the plane is shaped, not connected, while it grows. A grown space that reads its own distance needs growth slow enough for
+     itself: the plane is divided, not connected, while it grows. A grown space that reads its own distance needs growth slow enough for
      influence to keep up.
    - **Next (taken, B50).** Why doubling keeps every stage balanced (next entry); the horizon as a theorem; growth slow enough to read
      distance ([decision note](../research/GROW-HORIZON-20261109-001/grow_horizon.md)).
@@ -2487,7 +2494,7 @@ So holes come in two kinds:
    - **Odd spacings keep balance with hearing.** At g = 5 doubling every 2, 3 and 4 lags keeps every stage balanced while rings hear
      each other inside territories, to 24 × 24; at g = 4 every such schedule fails at 12 × 12. With g = 2 and 3, balance with hearing
      appears exactly at the odd spacings read, whose corners hold an even number of own cells.
-   - **Reading.** Territories are the rule at every spacing read; slower doubling at an odd spacing is the one place left where a border
+   - **Reading.** Territories are the rule at every spacing read; slower doubling at an odd spacing is the one case left where a border
      might be crossed with balance kept (sub-goal B63).
    - **Next (taken: sub-goal B63, next entry; then B55).** Crossing a border at odd spacings; why odd spacings keep balance
      ([decision note](../research/SPACING-20261109-001/spacing.md)).
@@ -2524,7 +2531,7 @@ So holes come in two kinds:
      and contact law. Checked on 256 linear substrates, first and second order, on five tubes: every invertible one fails by lag 336.
    - **Not in conflict with doubling.** `DOUBLE-BALANCE-20261109-001A` uses an invertible map, but it is a ring's own cells' evolution
      while every contact is reborn, not the step; the step there is rule 60's, which forgets.
-   - **Reading.** A finite world whose contacts keep their knots across time has an irreversible law. Growth keeps knots by giving the
+   - **Reading.** A finite network whose contacts keep their knots across time has an irreversible law. Growth keeps knots by giving the
      network new beginnings, as the doubling law does, not by reading a later row.
    - **Next (taken: B64, next entry).** The proof pair B55 and B64 for the exclusion while growing; a reversible substrate that never stops
      growing (B67) ([decision note](../research/INVERT-STEP-20261110-001/invert_step.md)).
@@ -2615,7 +2622,7 @@ So holes come in two kinds:
      distance d is heard only when the axis ring at the next power of two would be, on time exactly at d = 2, 4, 8, 16; growth perturbs
      this but keeps it square.
    - **What the law adds to the board.** Scale and clock (2g lags per ring step, and the expansion), bounded offsets (rule 60 reads
-     leftward), and a binary plain reading from Pascal's triangle mod 2. The coarse shape, taxicab, is the drawn board's; roundness
+     leftward), and a binary plain reading from Pascal's triangle mod 2. The coarse outline, taxicab, is the drawn board's; roundness
      would have to come from the board.
    - **Next (taken instead: readings on other boards, next entry).** The plain reading's power-of-two law as a theorem
      ([decision note](../research/ROUND-READ-20261110-001/round_read.md)).
@@ -2629,12 +2636,12 @@ So holes come in two kinds:
      is the board's graph distance times g·d/2, d the ring degree: a route crosses a ring by going half way round it, on average over
      its turns.
    - **The growth line's verdict.** A plane of rings grown by the doubling law reads, in its own clock, the drawn board's distance,
-     scaled, up to a constant; the law adds scale, clock, offsets and a binary plain reading, and no shape. A chosen shape would need the
-     board itself to follow the rules (sub-goal B92) ([decision note](../research/BOARD-READ-20261110-001/board_read.md)).
+     scaled, up to a constant; the law adds scale, clock, offsets and a binary plain reading, and no outline of its own. A chosen outline
+     would need the board itself to follow the rules (sub-goal B92) ([decision note](../research/BOARD-READ-20261110-001/board_read.md)).
 
    **2026-11-09: which finite maps rescue late rings** (`RESCUE-MAP-20261109-001`).
    - **The question.** Every flat tiling is late from distance 4 to 6, so a torus reads distance plainly only if its wrapping rescues
-     the cover's late rings. Which tori do, of every shape, and why does a short loop rescue while its mirror image does not?
+     the cover's late rings. Which tori do, of every proportion, and why does a short loop rescue while its mirror image does not?
    - **Short loops with one fastest way (proved).** A torus is on time exactly when it holds a short loop along which the fastest way
      to every ring is a single route, or is one of finitely many small tori (23 square, 85 triangular, 15 honeycomb, listed). The
      loops are (2, 0) and (2, 1) on the square lattice, up to the quarter turn, and every vector of length √3 on the triangular one;
@@ -2650,7 +2657,7 @@ So holes come in two kinds:
      ([decision note](../research/RESCUE-MAP-20261109-001/rescue_map.md)).
 
    **2026-11-09: which lattices compose everywhere** (`LATTICE-REACH-20261109-001`).
-   - **The question.** The odd square n × n tori compose everywhere: every contact needs every ring. Which tori of every shape, on the
+   - **The question.** The odd square n × n tori compose everywhere: every contact needs every ring. Which tori of every proportion, on the
      square, triangular and honeycomb lattices, do?
    - **Digons stop it (proved).** Where two rings meet at two contacts in a row, their walks cancel at once: a factor of the walk
      polynomial vanishes and every contact needs only a handful of rings. The triangular lattice has no such tori.

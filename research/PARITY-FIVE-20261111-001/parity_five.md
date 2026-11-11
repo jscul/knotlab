@@ -95,3 +95,38 @@ did not find a space that counts five, and it leaves open whether any genus-1 sp
 2/3; B150 and B151 added.
 **Assumptions:** none new or changed.
 **Basket:** B148 (a host where two counting tori stay wired, selected, awaiting a go-ahead), B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-11:
+
+**B149 is closed: one torus counts three held points, and among lattice tori no more.** No lattice torus with up to 24 points computes the parity of five held points (421 tori, every class, exact, nothing dropped). Only 16 of them, with 8 to 18 points, count even three. That's the range searched, not a bound on what one handle can do.
+
+- **Two tori composed count nothing.** I grew the 8-point counting torus at both lines of the knot sphere K_2 (genus 2). The result computes no parity map in any of its 16 classes, though each torus alone counts three. After the run I found why: one torus ties six of the sphere's points into a wire that carries its count, and the second torus unties it. Composition needs a wire that survives.
+- **Known results, stated before the search:** proved, only odd counts are possible (self-duality); proved, a five-input space also counts three, so genus 0 is out unless P = NP; proved by counting, at least 32 floor states are needed. I know of no published bound on how many points one handle can count. Composition at genus 2 was marked as expected, not proved, and it failed here.
+- **Tori of 25 to 32 points are undecided.** That stage ran into its 60-minute cap and was dropped by rule, because the check saved results only at the end. I estimated 15 minutes from one easy class. It's recorded as B151, a rerun that saves each torus as it finishes.
+- **Learning wasn't run.** It was frozen to run only on a five-input space, and none was found. The harness reproduced last epic's learner run exactly.
+- **My predictions were wrong:** I expected a five-input torus at 12 to 16 points, and the composed space to count five.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: parity of five held points (B149) | **Status:** Partially successful | exact: none on 421 lattice tori up to 24 points or on the composed space; why composition fails is found; 25 to 32 points undecided |
+| Local direction: one torus counting more held points | Practically exhausted | lattice tori stop at three, and at 18 points; non-lattice tori remain (B150) |
+| Broader exploration: learning program | Known alternatives | composing through a wire that survives (B148), non-lattice tori, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Obstruction learned | counting more needs composition, and the obvious composition unties its wire |
+
+**Next step:** Research directions, selected #1, holding until you resume.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A host where two counting tori stay wired (sub-goal B148, first step) | 3/3 Major | 2/3 Testable | exact search over hosts K_m and pairs of lines for a six-point parity set across both tori, then learn it → a wired composite, or no host in range | Selected, awaiting go-ahead |
+| 2 | Five-input parity on non-lattice genus-1 spaces (B150) | 2/3 Substantial | 2/3 Testable | the exact method over a frozen sample of steered random tori → one that counts five, or none in the sample | Deferred |
+| 3 | Lattice tori of 25 to 32 points, saved per space (B151) | 1/3 Incremental | 3/3 Ready | rerun writing each torus → every torus decided or named as dropped | Deferred |
+| 4 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (obstruction learned, with G16); B149 taken; sub-goal B148's first step sharpened and its concreteness raised from 1/3 to 2/3; B150 and B151 added.
+**Assumptions:** none new or changed.
+**Basket:** B148 (selected, awaiting a go-ahead), B150, B151, B130.
+
+Both runs are registered in docs/LONG_RUNNING.md and folded in, the second as dropped. Pausing now, as you asked.

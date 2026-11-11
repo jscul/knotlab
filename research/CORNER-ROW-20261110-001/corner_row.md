@@ -151,3 +151,40 @@ behind it), parked by its frozen stop; what comes next is another line, among th
    which bears on B137 only indirectly. Concreteness 1: the law is exact and held out to 64, but no derivation is in hand.
 
 **Recommendation.** Stop the corner line here, as frozen; the coordinator picks the next line.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 01:45 UTC and copied here verbatim.
+
+**Corner row (B140): there's no closed form, so I've parked the corner line as frozen.**
+
+I stopped at side 64 as agreed. Rules in the frozen alphabet exist only for the six entries next to the corners, all known or derivable before registration. I found none for the rest of the row. The training verdict was committed before side 64 was computed, and nothing was fitted afterwards.
+
+What the exact rows show instead, with side 64 held out:
+- The denominators vanish exactly at the elements of GF(2n) whose Kloosterman sum is nonzero, and every one of them appears.
+- Every denominator is a perfect square, and the largest exponent is 2⌈|K|/8⌉.
+
+That only those elements occur was automatic: every walk series in the box inherits it from the spectrum. That all of them appear, the squares and the exponents are new as far as I found.
+
+The independent referee reproduced every computation by another method and caught a real slip. One more corner entry has an affine rule that my training search missed, because it only tried monomial relations. By the letter of the frozen criteria that makes the outcome a "partial rule", not the "no pattern" I had written. I relabelled it and logged the correction. Nothing changes in substance.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — a closed form for the corner row (B140) | **Status:** Failed | Rules only for six corner entries known before; none for the rest by side 64 |
+| Local direction — the corner route to the full-reach count | Practically exhausted (parked) | No rule beyond the corners; frozen stop at side 64 |
+| Broader exploration — the cut-open torus line (G5) | Known alternatives | Other tori (B66), the least solution's degree (B74), the other half (B139) |
+| Long-term goal — G5 Dynamics (question 4) | No demonstrated advance | The corner route meets the spectrum's Kloosterman classes; the count stays open |
+
+**Corrections:** two, both Not a block.
+1. The corner row's training verdict named four entries with rules where six have them, credited two of them to the wrong source, and called the outcome "no pattern" where the frozen criteria give a partial rule ([decision note](https://github.com/jscul/knotlab/blob/main/research/CORNER-ROW-20261110-001/corner_row.md)).
+2. REACH-HALVES said the failure of full reach "is not spectral". Only its reduction avoids the spectrum, and whether the count needs it is open ([note](https://github.com/jscul/knotlab/blob/main/research/REACH-HALVES-20261110-001/reach_halves.md)).
+
+**Goals:** a G5 checkpoint (no demonstrated advance), no goal change; B140 taken, B142 added, B137 parked.
+**Assumptions:** none added or changed.
+**Basket:** B137 (3/3, 1/3), B74 (3/3, 1/3), B66 (2/3, 3/3). I took none of them: the line is parked, and picking the next line is the coordinator's call.
+
+**Next step:** Full pivot — No next action selected. This leaves the corner route to the full-reach count. The next line should come from these:
+
+(The direction table is the one under "Next steps" above.)
+
+Everything is committed and published. I'll hold here until you or the coordinator pick the next line.

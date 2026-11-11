@@ -5685,75 +5685,83 @@ So holes come in two kinds:
      one world with no quotient, not a face ([decision note](../research/GROW-FACE-20261110-001/grow_face.md), with the line's closing summary).
 
    **2026-11-11: knots alone** (`KNOTS-ALONE-20261111-001`, backlog B144).
-   - **The question.** The board line said the plane needs a named face. In the knot's own terms a face can be a knot. So take worlds
-     made of nothing but distinctions and three-place knots, with no board, no names and no declared faces, put one symmetric knot on
-     every knot, and ask what the allowed states read of the world.
+   - **The question.** The board line said the commuting board needs a declared cycle. In the knot's own terms a face can be a knot.
+     So take knot patterns made of nothing but distinctions and three-place knots, with no board, no names and no declared cycles, put
+     one symmetric law on every knot, and ask what the allowed states read of the meeting pattern.
    - **Four knots, four readings (proved).** The clause recovers exactly the knots and relates nothing beyond touching. Parity folds a
-     surface to a 3-colouring, one knot copied everywhere. Not-exactly-one ties every pair to an all-zero state, a hub. Curvature is
-     just counting (flat when every distinction is in six knots).
-   - **Not-all-equal keeps the surface and spaces it (computed, exact, frozen).** It reads 227 of the 229 flat worlds in range without a
-     non-facial triangle faithfully: their three-place bonds are exactly their knots, with no ties. Bond distance is 2 next door and 3
-     two steps away, from bonds around a hidden distinction. Two thin tori fail, and at three steps short loops can shorten a bond, so
-     the frozen predictions failed narrowly and A63 stands. After the run: faithful on every flat world in range whose short loops have
-     length at least 5.
-   - **Where forcing works (computed, exact).** A world with positive curvature has no cover, so a law can fix it: with each
-     distinction in five knots, not-all-equal allows only the icosahedron. Flat worlds always have covers, so no law fixes their size,
-     and not-all-equal allows every Klein bottle in range.
+     two-fold weave to a 3-colouring, one knot copied everywhere. Not-exactly-one ties every pair to an all-zero state, a hub.
+     Curvature, in the literature's word, is just counting (six-regular, the literature's flat, when every distinction is in six
+     knots).
+   - **Not-all-equal keeps the weave and spaces it (computed, exact, frozen).** It reads 227 of the 229 six-regular weaves in range
+     without a triple of pairwise co-knotted distinctions that is not a knot (the literature's non-facial triangle) faithfully: their
+     three-place bonds are exactly their knots, with no ties. Bond distance is 2 for a co-knotted pair and 3 two steps apart, from bonds
+     around a hidden distinction. Two thin one-pair weaves fail, and at three steps short unfilled cycles can shorten a bond, so the
+     frozen predictions failed narrowly and A63 stands. After the run: faithful on every six-regular weave in range whose unfilled
+     cycles all have at least 5 pairs.
+   - **Where forcing works (computed, exact).** A weave with positive curvature, in the literature's word, has no cover, so a law can
+     fix it: with each distinction in five knots, not-all-equal allows only one zero-pair weave, the literature's
+     icosahedron. Six-regular weaves always have covers, so no law fixes their size, and not-all-equal allows every non-orientable
+     weave of Euler count 0 (the literature's Klein bottle) in range.
    - **What is still put in** is the count of how knots meet (A64). Whether reading the knots faithfully supplies it is the next
      question (sub-goal B145) ([decision note](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
 
-   **2026-11-11: does a faithful reading supply the surface?** (`NAE-SURFACE-20261111-001`, sub-goal B145).
-   - **The question.** Not-all-equal reads almost every flat surface of knots alone faithfully, but the surface count (each pair in
-     two knots, each link one cycle) was given. Does reading the knots faithfully force it?
-   - **No (computed, exact, frozen).** Swap two knots of a faithful flat torus for two long-range ones: 160 of 822 such worlds are still
-     read faithfully, though some pairs now lie in one knot and some in three. The smallest has 25 distinctions, checked by independent
+   **2026-11-11: does a faithful reading supply the two-fold count?** (`NAE-SURFACE-20261111-001`, sub-goal B145).
+   - **The question.** Not-all-equal reads almost every six-regular weave of knots alone faithfully, but the two-fold count (each pair
+     in two knots, the knots at each distinction one cycle) was given. Does reading the knots faithfully force it?
+   - **No (computed, exact, frozen).** Swap two knots of a faithfully read six-regular one-pair weave for two long-range ones: 160 of 822
+     such patterns are still read faithfully, though some pairs now lie in one knot and some in three. The smallest has 25 distinctions, checked by independent
      code and knotlab.
-   - **But near-surfaces are where it works.** Each swap costs faithfulness, and random regular worlds were never read faithfully. So
+   - **But near-weaves are where it works.** Each swap costs faithfulness, and random regular patterns were never read faithfully. So
      the knot law reads which knots there are, not how they meet: the count of how knots meet is an input
      ([decision note](../research/NAE-SURFACE-20261111-001/nae_surface.md)).
 
    **2026-11-11: the long-loop regime** (`LONG-LOOP-20261111-001`).
-   - **The question.** With the surface count given, does not-all-equal read every flat world with long loops natively, and space it?
-   - **Yes, in range (computed, exact, frozen).** It reads every torus with 49 to 80 distinctions and Klein bottle with 19 to 40 whose
-     shortest non-contractible loop has length at least 5 faithfully, 449 worlds. On the 349 tori whose loops have length at least 6,
-     bond distance is graph distance + 1 at every distinction within three steps.
-   - **Two steps is a lemma (proved).** Two edges of a hidden distinction's link, fixed to opposite equal values, force it both ways,
-     so four distinctions two steps apart already form a bond.
-   - **So the face can be the knot.** Nothing is named but the knot and how knots meet, and flat local geometry is read natively; A63
-     is overturned in this setting. Thinner worlds shortcut, so the ruler is local, out to about half the shortest loop
+   - **The question.** With the two-fold count given, does not-all-equal read every six-regular weave with long unfilled cycles
+     natively, and space it?
+   - **Yes, in range (computed, exact, frozen).** It reads every orientable six-regular weave with 49 to 80 distinctions and
+     non-orientable one with 19 to 40 (the literature's tori and Klein bottles) whose shortest unfilled cycle has at least 5 pairs
+     faithfully, 449 weaves. On the 349 orientable ones whose unfilled cycles have at least 6 pairs, bond distance is graph distance + 1
+     at every distinction within three steps.
+   - **Two steps is a lemma (proved).** Two pairs that each form a knot with a hidden distinction, each fixed to equal values and the
+     two to opposite values, force it both ways, so four distinctions two steps apart already form a bond.
+   - **So the face can be the knot.** Nothing is named but the knot and its meeting pattern, and the local geometry of six-regular
+     weaves (the literature's flat geometry) is read natively; A63 is overturned in this setting. Thinner weaves shortcut, so the ruler
+     is local, out to about half the shortest unfilled cycle
      ([decision note](../research/LONG-LOOP-20261111-001/long_loop.md)).
 
    **2026-11-11: the not-all-equal ruler** (`RULER-20261111-001`).
    - **The question.** Is "bond distance = graph distance + 1" a theorem?
-   - **Yes, in the plane (proved, refereed).** On the triangular lattice under not-all-equal, every pair is free, the triangles are the
-     only three-site bonds, and two sites d steps apart lie together in a bond of exactly d + 2 sites and in none smaller. The bond is
-     one side of a triangle of side d, all equal, with the opposite corner. Every bond is native.
+   - **Yes, on the endless six-regular weave (proved, refereed).** On the endless six-regular weave (the literature's triangular
+     lattice) under not-all-equal, every pair is free, the knots are the only bonds of three distinctions, and two distinctions d steps
+     apart lie together in a bond of exactly d + 2 distinctions and in none smaller. The bond is one side of a triangle of side d in the
+     literature's drawing, all equal, with the opposite corner. Every bond is native.
    - **Why.** The states are the ground states of the triangular Ising antiferromagnet, and they carry a height that rises at most one
-     per step (known). A pattern is forbidden when it asks the height to climb faster than that around a loop, and each site can supply
-     at most half a unit of the excess, so spanning d steps takes d + 2 sites.
-   - **So the knot measures its own plane** exactly, as graph distance, and its bond balls read dimension 2. On tori and Klein bottles
-     it stays computed ([decision note](../research/RULER-20261111-001/ruler.md)).
+     per step (known). A pattern of values is forbidden when it asks the height to climb faster than that around a cycle, and each
+     distinction can supply at most half a unit of the excess, so spanning d steps takes d + 2 distinctions.
+   - **So the knot measures its own endless weave** exactly, as graph distance, and its bond balls read dimension 2. On the closed
+     six-regular weaves (the literature's tori and Klein bottles) it stays computed ([decision note](../research/RULER-20261111-001/ruler.md)).
 
    **2026-11-11: the count from growth** (`GROW-COUNT-20261111-001`).
    - **The question.** The count of how knots meet (two per pair, one link per distinction, six around each) was put in. Can growth
-     supply it, if each new knot is kept only while not-all-equal still reads the world faithfully?
-   - **No (computed, frozen).** Wherever the world grows, the law accepts pairs in three knots and pinched links; with both named, links
-     close at every degree from 3 to 14, never mostly at 6.
-   - **The law refuses one shape (proved).** No pair's two knots may have their other corners knotted together: a pattern of equal
-     values on the pair would force a contradiction. So the sharpest cone, a link closed at three, fails inside any larger world, and a
-     tetrahedron can never grow.
+     supply it, if each new knot is kept only while not-all-equal still reads the grown pattern faithfully?
+   - **No (computed, frozen).** Wherever the pattern grows, the law accepts pairs in three knots and pinched links; with both named,
+     links close at every degree from 3 to 14, never mostly at 6.
+   - **The law refuses one meeting pattern (proved).** No pair's two knots may have their third distinctions knotted together: equal
+     values on the pair would force a contradiction. So the sharpest cone in the literature's drawing, a link closed at three, fails
+     inside any larger pattern, and the zero-pair weave of four knots (the literature's tetrahedron) can never grow.
    - **So how knots meet is an input, static or grown**; the face is still the knot ([decision note](../research/GROW-COUNT-20261111-001/grow_count.md)).
 
-   **2026-11-11: the ruler on balanced weaves** (`RULER-FLAT-20261111-001`).
-   - **The question.** On the open balanced weave (every co-knotted pair in two knots, six knots at each distinction, no loops;
-     drawn: the triangular lattice) not-all-equal measures distance exactly. On a closed one, where a bond can go around a loop,
-     where does it cheat?
-   - **An exact answer on two-sided weaves (proved, refereed).** A state's height rises by a fixed winding around each loop, and the
-     allowed windings satisfy three inequalities. The margin M of the best winding, the least extra cost of going once around a loop,
+   **2026-11-11: the ruler on six-regular weaves** (`RULER-FLAT-20261111-001`).
+   - **The question.** On the endless six-regular weave (every co-knotted pair in two knots, six knots at each distinction, every
+     cycle filled; drawn: the triangular lattice) not-all-equal measures bond distance exactly. On a closed one, where a bond can go
+     around an unfilled cycle, where does it cheat?
+   - **An exact answer on orientable weaves (proved, refereed).** A state's height rises by a fixed winding around each unfilled cycle,
+     and the allowed windings satisfy three inequalities. The margin M of the best winding, the least extra cost of going once around
+     an unfilled cycle,
      decides everything: states exist exactly when M ≥ 0; bond distance is graph distance + 1 for every distance below M/3 and never
      less than the smaller of the two; and the reading is faithful when M > 3 (drawn: tori).
-   - **One-sided weaves split in two (proved for one half).** If the co-knotted pairs can be directed so that every knot is a directed
-     cycle, the law's heights treat the twist as one more loop and the theorem holds word for word. If not, heights flip under the
+   - **Non-orientable weaves split in two (proved for one half).** If the co-knotted pairs can be directed so that every knot is a
+     directed cycle, the law's heights treat the twist as one more unfilled cycle and the theorem holds word for word. If not, heights flip under the
      twist, and that half stays computed (drawn: Klein bottles, by the direction of the glide mirror).
    - **Only for two-fold weaves.** All of it needs each co-knotted pair in exactly two knots; where pairs lie in three or more knots
      the line has no ruler and no height yet, which is the owner's next question
@@ -5781,10 +5789,10 @@ So holes come in two kinds:
       knots.
     - **Competition reading:** needs weights, a declared measure of
       violation. In return, frustrated pairs make one kind of knot, the
-      not-all-equal triangle.
+      not-all-equal knot (the literature's frustrated triangle).
 
     Is competition the law that question 9 asks for? Not by itself.
-    Competition turns a triangulated layout into a chain of knots whose
+    Competition turns a drawn triangulated layout into a chain of knots whose
     separation grows along the layout, but it does not make the layout.
     Whether to admit least-violation states as allowed remains the owner's
     decision.

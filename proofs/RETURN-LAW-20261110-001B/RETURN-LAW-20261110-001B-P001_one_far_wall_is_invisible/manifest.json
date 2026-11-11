@@ -13,8 +13,8 @@
   "proof": "RETURN-LAW-20261110-001B-P001",
   "authoritative_metadata": "manifest.json",
   "title": "One far wall is invisible at even sides",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt. Doubled coordinates of FULL-REACH-PROOF-20261108-001A: contacts are the points (X, Y) with X + Y odd; an h (X odd) reads (X +- 1, Y +- 1) with equal signs, a v (X even) reads (X +- 1, Y -+ 1); reads leaving the region die; A[c, d] = 1 when c reads d, over GF(2). The box is [0, N]^2, N = 2n - 2; the quadrant is [0, oo)^2; the half-strips are [0, N] x [0, oo) and [0, oo) x [0, N]. The corner contact is c = (0, 1), and r(w) = sum_k A^k[c, c] w^k its return series. C(z) = sum_j z^(2^j - 1) is the Catalan series mod 2 and L(z) = z + z^2 + z^4 + ... + z^n the trace polynomial of GF(2n). Target B1: at every even n >= 2 the corner's return series in either half-strip equals the quadrant's, C(w^4), over GF(2). Target B2: at every odd n >= 3 they differ, first at time 4n. Found before registration (computed, this thread): B1 below w^1200 at the even sides 2 to 38 and below w^700 at 2 to 20; B2 at the odd sides 3 to 21 (first difference at 4n) and some difference below w^1200 at every odd side 3 to 39. The two half-strips have the same return series at every side (the diagonal reflection carries one to the other with A to its transpose, and the corner's return series is the same read from (0, 1) or (1, 0)).",
+  "status": "Obstructed",
+  "claim": "Obstructed under the frozen criterion: B1 (at every even side either half-strip's corner series is the quadrant's C(w^4)) and B2 (at odd sides they differ first at 4n) are not proved; by RETURN-LAW-20261110-001A's Theorem 3, B1 at n is the identity (*1D) on the path of n - 1 vertices. Proved (refereed): Proposition 6, (a) the two half-strips have the same corner series, (b) the four-periodic vector (t, t + 1/t, 1/t, 0, ...) is an eigenvector of the strip [0, N] x Z with eigenvalue t + 1/t exactly at even sides, (c) the two-site transfer matrix squares to I on that branch. Computed: B1 at every even side 2 to 64 below w^2400 (to 80 below w^3200 in the stress test), B2 at every odd side 3 to 63 (to 79); without the bottom wall the far wall is seen first at 4n at every side 2 to 40.",
   "dependencies": [
     "FULL-REACH-PROOF-20261108-001A",
     "REACH-HALVES-20261110-001A"
@@ -55,8 +55,7 @@
     "directory": "proofs/RETURN-LAW-20261110-001B/RETURN-LAW-20261110-001B-P001_one_far_wall_is_invisible"
   },
   "remaining_obligations": [
-    "B1 by proof for every even n, or the lemma that would finish it, checked exactly at the even sides 2 to 40",
-    "B2 by proof or as a computed law"
+    "(*1D) on the paths with an odd number of vertices"
   ],
   "safe_to_conclude": {
     "contract_frozen": false,
@@ -92,7 +91,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead for B138 on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "status": "obstructed under the frozen criterion; proved parts refereed 2026-11-10",
+    "novelty": "new as far as found (bounded search 2026-11-10); not a priority claim"
   }
 }

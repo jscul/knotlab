@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "artifact": "RETURN-LAW-20261110-001A-P001",
+  "checks": {
+    "0 dependencies bound by hash (REACH-HALVES-20261110-001A, FULL-REACH-PROOF-20261108-001A manifests)": {
+      "pass": true,
+      "info": {
+        "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/manifest.json": "1fa0ec2aeb379ac83ad178e1d66ea8f4d86b1934544edb2b0e1c5ef925b9b3d5",
+        "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0"
+      }
+    },
+    "1 Lemma 1: on the v contacts A^2 is the v-grid walk (E, W, N, S; no N from column 0, no S from column n - 1) in boxes 2 to 12, both half-strips and the quadrant; the library's fast rectangle has the same masks": {
+      "pass": true,
+      "info": {
+        "box 2": 0,
+        "box 3": 0,
+        "box 4": 0,
+        "box 5": 0,
+        "box 6": 0,
+        "box 7": 0,
+        "box 8": 0,
+        "box 9": 0,
+        "box 10": 0,
+        "box 11": 0,
+        "box 12": 0,
+        "half-strip Y 2": 0,
+        "half-strip Y 3": 0,
+        "half-strip Y 4": 0,
+        "half-strip Y 7": 0,
+        "half-strip X 2": 0,
+        "half-strip X 3": 0,
+        "half-strip X 4": 0,
+        "half-strip X 7": 0,
+        "quadrant 0": 0,
+        "FastRect = Rect": true
+      }
+    },
+    "2 Theorem 2: the reflection through the corner is a symmetry; the walks whose every excursion lies below the line and touches Y = 0 (or X = N) have the parity of all returns (quadrant to 48, boxes 4, 6, 8); the quadrant's survivors at k = 1..6 are 1, 2, 7, 34, 206, 1458": {
+      "pass": true,
+      "info": {
+        "symmetry": true,
+        "quadrant": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            12,
+            25,
+            7
+          ],
+          [
+            16,
+            196,
+            34
+          ],
+          [
+            20,
+            1764,
+            206
+          ],
+          [
+            24,
+            17424,
+            1458
+          ],
+          [
+            28,
+            184041,
+            11563
+          ],
+          [
+            32,
+            2044900,
+            99976
+          ]
+        ],
+        "quadrant survivors k = 1..6": [
+          1,
+          2,
+          7,
+          34,
+          206,
+          1458
+        ],
+        "box 4": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            12,
+            25,
+            7
+          ],
+          [
+            16,
+            188,
+            32
+          ],
+          [
+            20,
+            1508,
+            158
+          ],
+          [
+            24,
+            12290,
+            814
+          ],
+          [
+            28,
+            100473,
+            4269
+          ],
+          [
+            32,
+            821689,
+            22517
+          ]
+        ],
+        "box 6": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            12,
+            25,
+            7
+          ],
+          [
+            16,
+            196,
+            34
+          ],
+          [
+            20,
+            1764,
+            206
+          ],
+          [
+            24,
+            17412,
+            1456
+          ],
+          [
+            28,
+            183265,
+            11433
+          ],
+          [
+            32,
+            2017128,
+            96036
+          ]
+        ],
+        "box 8": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            12,
+            25,
+            7
+          ],
+          [
+            16,
+            196,
+            34
+          ],
+          [
+            20,
+            1764,
+            206
+          ],
+          [
+            24,
+            17424,
+            1458
+          ],
+          [
+            28,
+            184041,
+            11563
+          ],
+          [
+            32,
+            2044884,
+            99974
+          ]
+        ]
+      }
+    },
+    "3 Theorem 3: the corner's return series is the (0, 0) entry of (I - sD - s^2 f(P))^-1 (over GF(2) to s^60 at the half-strips 2 to 12, to s^48 in the quadrant; over the integers, against the walk A itself, to s^22 at 2 to 6)": {
+      "pass": true,
+      "info": {
+        "half-strip 2": true,
+        "half-strip 3": true,
+        "half-strip 4": true,
+        "half-strip 5": true,
+        "half-strip 6": true,
+        "half-strip 7": true,
+        "half-strip 8": true,
+        "half-strip 9": true,
+        "half-strip 10": true,
+        "half-strip 11": true,
+        "half-strip 12": true,
+        "quadrant": true,
+        "integers, half-strip 2": true,
+        "integers, half-strip 3": true,
+        "integers, half-strip 4": true,
+        "integers, half-strip 5": true,
+        "integers, half-strip 6": true
+      }
+    },
+    "4 Lemma 4: f(P)_00 = 1 mod 2 for the half-line; the shuffle sum is C_t C_(t+1) and even for t = 1..200": {
+      "pass": true,
+      "info": {
+        "f(P)_00 mod 2 below s^60": 1
+      }
+    },
+    "5 Proposition 5: the loop end of the looped half-line returns by C(z) mod 2 (below z^4000)": {
+      "pass": true,
+      "info": null
+    },
+    "6 computed: A1 below w^4000, A2 (C_k^2 returns of length 4k) for k <= 24, and the pairing of the corner's row and column (entry 2k = t0 entry 2k - 1, t0 = s C(s^2)) for k <= 8 below s^44, failing in column 1 and when shifted": {
+      "pass": true,
+      "info": {
+        "A1 below w^4000": true,
+        "A2 for k <= 24": true,
+        "pairing below s^44, k <= 8": true,
+        "no pairing in column 1, none shifted": true
+      }
+    },
+    "7 computed: M^2 on the quadrant's v-grid is the half-scale walk plus loops on the axes plus the couplings (0, b) -> (1, b + 1) and (1, b) -> (0, b + 1) (sites up to 11); the doubled identity on the half-line below u^40": {
+      "pass": true,
+      "info": {
+        "doubled identity below u^40": true
+      }
+    },
+    "8 the kernel equation s(z + Y)a(z) + s(1/z + Y)a(1/z) = (z + 1/z)Y for the corner's column (below s^23), the symmetry that forces a(z) = (1 + zY)(1 + Sigma/z), and the column as the walks from (1, 0) along the bottom row (b < 6, below s^48)": {
+      "pass": true,
+      "info": {
+        "kernel equation below s^23": true,
+        "z a/(1 + zY) + z symmetric below s^23": true,
+        "D identification, b < 6": true
+      }
+    }
+  },
+  "status": "passed"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "artifact": "RETURN-LAW-20261110-001B-P001",
+  "checks": {
+    "0 dependencies bound by hash (REACH-HALVES-20261110-001A, FULL-REACH-PROOF-20261108-001A manifests)": {
+      "pass": true,
+      "info": {
+        "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/manifest.json": "1fa0ec2aeb379ac83ad178e1d66ea8f4d86b1934544edb2b0e1c5ef925b9b3d5",
+        "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0"
+      }
+    },
+    "1 Proposition 6(a): the two half-strips have the same corner return series below w^1600 at the sides 2 to 30": {
+      "pass": true,
+      "info": {}
+    },
+    "2 Proposition 6(b), (c): the four-periodic vector (t, t + 1/t, 1/t, 0, ...) is an eigenvector of the strip [0, N] x Z with eigenvalue t + 1/t exactly at the even sides (2 to 40), and the two-site transfer matrix squares to I on that branch": {
+      "pass": true,
+      "info": {
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": false,
+        "8": true,
+        "M^2 = I at lambda = t + 1/t": true
+      }
+    },
+    "3 computed: B1 (the half-strip's corner series is C(w^4)) at every even side 2 to 64 below w^2400; B2 (first difference at time 4n) at every odd side 3 to 63": {
+      "pass": true,
+      "info": {
+        "odd sides: first difference at 4n": true
+      }
+    },
+    "4 computed: with no bottom wall (the strip [0, N] x Z against the half-plane) the returns of a contact (0, Y0) on the left wall, far from the other walls, differ first at time 4n at every side 2 to 40, even or odd": {
+      "pass": true,
+      "info": {
+        "2": 8,
+        "3": 12,
+        "4": 16,
+        "5": 20,
+        "6": 24,
+        "7": 28,
+        "8": 32
+      }
+    }
+  },
+  "status": "passed"
+}

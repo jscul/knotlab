@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "artifact": "RETURN-LAW-20261110-001C-P001",
+  "checks": {
+    "0 dependencies bound by hash (REACH-HALVES-20261110-001A, FULL-REACH-PROOF-20261108-001A manifests)": {
+      "pass": true,
+      "info": {
+        "proofs/REACH-HALVES-20261110-001A/REACH-HALVES-20261110-001A-P001_the_failure_at_every_power_of_two/manifest.json": "1fa0ec2aeb379ac83ad178e1d66ea8f4d86b1934544edb2b0e1c5ef925b9b3d5",
+        "proofs/FULL-REACH-PROOF-20261108-001A/FULL-REACH-PROOF-20261108-001A-P001_symmetries_the_torus_and_powers_of_two/manifest.json": "affc32533a4d960bd72b879ef5870513fe8ffaad5614bf296900aa27d5d618d0"
+      }
+    },
+    "1 Theorem 7: the box's corner series is the (L, 0) entry of K_n^-1 (over GF(2) to s^60 at the sides 2 to 12; over the integers, with signs, against the walk A itself, to s^18 at 3, 4, 5)": {
+      "pass": true,
+      "info": {
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": true,
+        "10": true,
+        "11": true,
+        "12": true,
+        "integers 3": true,
+        "integers 4": true,
+        "integers 5": true
+      }
+    },
+    "2 Proposition 8: det(I + xP_(2^m - 2)) = C_(m-1)(x^2), det(I + xP_(2^m - 3)) = C_(m-2)(x^4), det(I + xP_(2^m - 1)) = 1 (m = 2..10), P_(2^m - 1) nilpotent (m <= 5), and the first-passage series in closed form (n = 4..32, below x^80)": {
+      "pass": true,
+      "info": {
+        "4": [
+          true,
+          true,
+          true
+        ],
+        "8": [
+          true,
+          true,
+          true
+        ],
+        "16": [
+          true,
+          true,
+          true
+        ],
+        "32": [
+          true,
+          true,
+          true
+        ],
+        "64": [
+          true,
+          true,
+          true
+        ],
+        "128": [
+          true,
+          true,
+          true
+        ],
+        "256": [
+          true,
+          true,
+          true
+        ],
+        "512": [
+          true,
+          true,
+          true
+        ],
+        "1024": [
+          true,
+          true,
+          true
+        ],
+        "first passage 4": true,
+        "first passage 8": true,
+        "first passage 16": true,
+        "first passage 32": true
+      }
+    },
+    "3 Proposition 9: det(I + zP_n^o) = 1 + L(z) and det(I + zP_(n-1)) = 1 at n = 2^m, m = 1..12": {
+      "pass": true,
+      "info": {
+        "2": [
+          true,
+          true
+        ],
+        "4": [
+          true,
+          true
+        ],
+        "8": [
+          true,
+          true
+        ],
+        "16": [
+          true,
+          true
+        ],
+        "32": [
+          true,
+          true
+        ],
+        "64": [
+          true,
+          true
+        ],
+        "128": [
+          true,
+          true
+        ],
+        "256": [
+          true,
+          true
+        ],
+        "512": [
+          true,
+          true
+        ],
+        "1024": [
+          true,
+          true
+        ],
+        "2048": [
+          true,
+          true
+        ],
+        "4096": [
+          true,
+          true
+        ]
+      }
+    },
+    "4 computed: C1 exactly at 4 to 256 (agreement below 2n(n - 1) + 4n terms), C2's first failures at 2, 3, 5, 6, C3 (first deviation from the quadrant at time 8n) at every side 3 to 64, the four-corner formula below w^1200 at 4 to 64, the corner orbit's period 2^(floor(m/2) + 1)(2n - 1) at 4 to 128": {
+      "pass": true,
+      "info": {
+        "C1 exact 4": true,
+        "C1 exact 8": true,
+        "C1 exact 16": true,
+        "C1 exact 32": true,
+        "C1 exact 64": true,
+        "C1 exact 128": true,
+        "C1 exact 256": true,
+        "C2 first failures": {
+          "2": 16,
+          "3": 64,
+          "5": 96,
+          "6": 128
+        },
+        "C3 at 3..64": true,
+        "four corners 4..64": true,
+        "orbit periods": {
+          "4": 28,
+          "8": 60,
+          "16": 248,
+          "32": 504,
+          "64": 2032,
+          "128": 4080
+        }
+      }
+    },
+    "5 Corollary 10 against the walk, each target separately: every inner target at 4, 5, 6, and at 8 and 16 the two targets of the count of REACH-HALVES-20261110-001A (B137), c* and (n + 4, n + 1), whose sum vanishes (below s^40)": {
+      "pass": true,
+      "info": {
+        "every inner target at 4": true,
+        "every inner target at 5": true,
+        "every inner target at 6": true,
+        "B137 targets at 8": [
+          true,
+          true,
+          true
+        ],
+        "B137 targets at 16": [
+          true,
+          true,
+          true
+        ]
+      }
+    }
+  },
+  "status": "passed"
+}

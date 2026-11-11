@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "collapse",
+      "reach"
+    ],
+    "program": "foundations",
+    "takes": [
+      "B138"
+    ]
+  },
+  "id": "RETURN-LAW-20261110-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Take B138 at the coordinator's go-ahead (2026-11-10 21:58, after REACH-HALVES-20261110-001 closed), as the cheaper route to B137: prove the corner return law of the n x n square torus of rule-60 rings cut open both ways, the generating function 1/(1 + L(w^4)) of the corner contact's returns over GF(2) at every power of two n >= 4, L the trace polynomial of GF(2n) (computed at 4 to 128 in REACH-HALVES-20261110-001A), together with the two laws it folds: the quadrant's Catalan series C(w^4) (ticket A) and the invisibility of one far wall at even sides (ticket B); ticket C is the box law itself. Outcomes: a refereed proof of a law, a side where one breaks, or the exact step that resists, stated and checked; and a judgement of whether the proof gives a handle on the wall-reaching excursions of REACH-HALVES-20261110-001A, Theorem 2, so that B137 can be judged next.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RETURN-LAW-20261110-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-10 (Partially successful): the corner return law 1/(1 + L(w^4)) is proved at each power of two from 4 to 512 by exact computation, not for every m. Proved (refereed): cutting the corner's walks at the columns where its moves are restricted (no north step from column 0; in the box no south step from the last column) makes the corner's return series one entry of a matrix on the rows alone, a path for the quadrant and the half-strips and an explicit 2(n - 1)-square block at a power of two in the box; det(I + zP_n^o) = 1 + L(z) at n = 2^m, so the law says the corner returns every four steps as the loop end of a looped path of n sites, a quotient of its orbit; the reflection through the corner is a symmetry; the same decomposition writes the count of B137 over the block inverse. Computed: the quadrant's Catalan law below w^8000 and its C_k^2 returns for k <= 24; one far wall invisible at every even side 2 to 80, seen first at 4n at odd sides; the box first differing from the quadrant at 8n to 128. Recommendation Continue, awaiting the coordinator's go-ahead: the corner's row of the block inverse (B140).",
+  "status_class": "complete",
+  "stop_rule": "Frozen 2026-11-10 before the proof attempt: the epic ends when ticket C has a refereed proof of the box law at every power of two from 4 or has stated the lemma that would finish it (checked exactly at sides 4 to 64), and tickets A and B each have a refereed proof or a stated obstruction. No successor epic starts without the coordinator's go-ahead.",
+  "title": "The corner return law on the square torus cut open"
+}

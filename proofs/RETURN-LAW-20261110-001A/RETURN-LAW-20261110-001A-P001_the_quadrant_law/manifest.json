@@ -13,8 +13,8 @@
   "proof": "RETURN-LAW-20261110-001A-P001",
   "authoritative_metadata": "manifest.json",
   "title": "The quadrant law: the corner returns at the Catalan times",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt. Doubled coordinates of FULL-REACH-PROOF-20261108-001A: contacts are the points (X, Y) with X + Y odd; an h (X odd) reads (X +- 1, Y +- 1) with equal signs, a v (X even) reads (X +- 1, Y -+ 1); reads leaving the region die; A[c, d] = 1 when c reads d, over GF(2). The box is [0, N]^2, N = 2n - 2; the quadrant is [0, oo)^2; the half-strips are [0, N] x [0, oo) and [0, oo) x [0, N]. The corner contact is c = (0, 1), and r(w) = sum_k A^k[c, c] w^k its return series. C(z) = sum_j z^(2^j - 1) is the Catalan series mod 2 and L(z) = z + z^2 + z^4 + ... + z^n the trace polynomial of GF(2n). Target A1: in the quadrant r(w) = C(w^4) over GF(2), equivalently the corner's first returns are odd exactly at the times 4 * 2^j. Target A2 (secondary, over the integers): the corner returns of length 4k number C_k^2; on the h contacts (2i + 1, 2j) this is the statement that the simple walks in the quarter plane that never step west along the x-axis have C_k^2 excursions of length 2k. Found before registration (computed, this thread): A1 below w^1200 (REACH-HALVES-20261110-001A); A2 for k <= 12 (exact integers); under the reflection in the line X - Y = -1 through the corner, a symmetry of the walk, the walks left over mod 2 are those whose every excursion off the line lies on the bottom-wall side and touches Y = 0 (their numbers 1, 2, 7, 34, 206, 1458, ... at k = 1, 2, 3, ... have the parity of C_k^2 to k = 12).",
+  "status": "Obstructed",
+  "claim": "Obstructed under the frozen criterion: A1 (in the quadrant the corner's return series is C(w^4) over GF(2)) and A2 (C_k^2 returns of length 4k) are not proved. Proved (refereed): Lemma 1, on the v contacts (2a, 2b + 1) A^2 is the walk to the four neighbours with no north step from column 0 (and no south step from the last column when X is bounded); Theorem 2, the reflection in X - Y = -1 through the corner is a symmetry of the walk and mod 2 only returns whose excursions lie on the side X - Y >= 1 and touch Y = 0 (or X = N in the box) survive; Theorem 3, with at most one far wall the corner's return series is R(w^2), R(s) = [(I - sD - s^2 f(P))^-1]_00 over the integers, P the row path, D its lowering part, f(P) = sum_h C_h s^2h (I - sP)^-(2h+1), so A1 is one identity on the half-line, (*1D); Lemma 4, the plain quadrant (no ban) has an even number of returns at every positive length; Proposition 5, C(z) is the loop-end return series of the looped half-line; and the kernel equation s(z + Y)a(z) + s(1/z + Y)a(1/z) = (z + 1/z)Y for the corner's column, which forces a(z) = (1 + zY)(1 + Sigma/z) with Sigma symmetric, and the equivalence of A1 with a doubled identity on the half-line. Computed: A1 below w^4000 (w^8000 in the stress test), A2 for k <= 24, the pairing of the corner's row and column (entry 2k = t0 entry 2k - 1, t0 = s C(s^2), k <= 8), the structure of M^2 and the doubled identity below u^40.",
   "dependencies": [
     "FULL-REACH-PROOF-20261108-001A",
     "REACH-HALVES-20261110-001A"
@@ -55,8 +55,8 @@
     "directory": "proofs/RETURN-LAW-20261110-001A/RETURN-LAW-20261110-001A-P001_the_quadrant_law"
   },
   "remaining_obligations": [
-    "A1 by proof, or the lemma that would finish it, checked exactly below w^1200",
-    "A2 by proof or as a computed law with its stress test one size past"
+    "(*1D) on the half-line: [(I + sD + s^2 f(P))^-1]_00 = C(s^2) over GF(2)",
+    "A2 (the integer count C_k^2) by proof"
   ],
   "safe_to_conclude": {
     "contract_frozen": false,
@@ -92,7 +92,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead for B138 on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "status": "obstructed under the frozen criterion; proved parts refereed 2026-11-10",
+    "novelty": "new as far as found (bounded search 2026-11-10); not a priority claim"
   }
 }

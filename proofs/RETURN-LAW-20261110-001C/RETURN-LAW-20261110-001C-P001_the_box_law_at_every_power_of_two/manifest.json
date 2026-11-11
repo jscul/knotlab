@@ -13,8 +13,8 @@
   "proof": "RETURN-LAW-20261110-001C-P001",
   "authoritative_metadata": "manifest.json",
   "title": "The box law at every power of two",
-  "status": "Partial",
-  "claim": "Pre-registered 2026-11-10, before the proof attempt. Doubled coordinates of FULL-REACH-PROOF-20261108-001A: contacts are the points (X, Y) with X + Y odd; an h (X odd) reads (X +- 1, Y +- 1) with equal signs, a v (X even) reads (X +- 1, Y -+ 1); reads leaving the region die; A[c, d] = 1 when c reads d, over GF(2). The box is [0, N]^2, N = 2n - 2; the quadrant is [0, oo)^2; the half-strips are [0, N] x [0, oo) and [0, oo) x [0, N]. The corner contact is c = (0, 1), and r(w) = sum_k A^k[c, c] w^k its return series. C(z) = sum_j z^(2^j - 1) is the Catalan series mod 2 and L(z) = z + z^2 + z^4 + ... + z^n the trace polynomial of GF(2n). Target C1: at every n = 2^m >= 4, r(w) = 1/(1 + L(w^4)) in the box over GF(2); equivalently the corner returns at time 4j exactly when j + 1 is a power of two modulo 2n - 1, or r(w) = C_m(w^4)/(1 + w^(4(2n - 1))) with C_m(z) = 1 + z + z^3 + ... + z^(n - 1) the quadrant's series truncated: the quadrant's Catalan series folded modulo 2n - 1. On the way, C2: the doubling relation 1/r_2n(w) = 1/r_n(w^2) + w^4 for n = 2^m >= 4, which with r_4 gives C1 (computed: it fails from 2 to 4, 3 to 6, 5 to 10 and 6 to 12); C3: at every side n >= 3 the box's first-return series is the quadrant's plus w^(8n) plus higher terms, so the box and the quadrant agree below time 8n and differ at 8n. Found before registration (computed): C1 at 4 to 128 (REACH-HALVES-20261110-001A and its stress test); C3 at every side from 3 to 21; at n = 2 the law fails (the box is one 4-cycle, r = 1/(1 + w^4)); the corner's whole vector returns, e_c A^(4(2n - 1)) = e_c, at 4 and 8, but at 16 and 32 only at 8(2n - 1); the four-corner formula sum_i G_(c, rho^i c) rho^i = C_m(w^4)/(1 + w^(2n - 1) rho) + w^(2n - 3) rho^3 (rho the quarter turn) below w^1200 at 4, 8, 16 and 32, false at 6 and 12.",
+  "status": "Obstructed",
+  "claim": "Obstructed under the frozen criterion: C1 (at every n = 2^m >= 4 the box's corner series is 1/(1 + L(w^4))) is not proved for every m; it is proved at each power of two from 4 to 512 by exact computation (agreement on 2n(n - 1) + 4n terms, as many as the sum of the orders of the two linear recurrences). Proved (refereed): Theorem 7, the box's corner series is R(w^2), R(s) the (L, 0) entry of the inverse of the block operator K_n = I - [[sD + S_LL, S_LR], [S_RL, sD^T + S_RR]] on the rows of the two end columns, S_XY = sum_h N_XY(h) s^h (I - sP)^-(h-1); Proposition 8, at n = 2^m over GF(2) the row path is nilpotent, det(I + xP_(n-2)) = C_(m-1)(x^2), det(I + xP_(n-3)) = C_(m-2)(x^4), so the blocks are explicit and C1 at n is one finite identity; Proposition 9, det(I + zP_n^o) = 1 + L(z) for the looped path, so C1 says the corner returns, every four steps, as the loop end of a looped path of n sites. Corollary 10, the same decomposition counts the walks to any inner target, so the count of REACH-HALVES-20261110-001A (B137) is a sum over the corner's row of K_n^-1. Computed: C2 from 4 to 8 up to 256 to 512 (and its failures at 2, 3, 5, 6), C3 (first deviation from the quadrant at 8n) at 3 to 128, the four-corner formula at 4 to 128, the corner orbit's period 2^(floor(m/2)+1)(2n - 1) at 4 to 128; the looped path is a quotient of the corner's A^4-orbit wherever C1 holds, not an invariant subspace.",
   "dependencies": [
     "FULL-REACH-PROOF-20261108-001A",
     "REACH-HALVES-20261110-001A"
@@ -55,8 +55,7 @@
     "directory": "proofs/RETURN-LAW-20261110-001C/RETURN-LAW-20261110-001C-P001_the_box_law_at_every_power_of_two"
   },
   "remaining_obligations": [
-    "C1 by proof for every m >= 2, or the lemma that would finish it, checked exactly at sides 4 to 64",
-    "C2 and C3 by proof or as computed laws with their stress test one size past"
+    "the identity [K_n^-1]_00 = 1/(1 + L(s^2)) of Proposition 8 for every m"
   ],
   "safe_to_conclude": {
     "contract_frozen": false,
@@ -92,7 +91,7 @@
     "external_review": false,
     "trusted_kernel": false,
     "independence": "Written by Claude in one session at the coordinator's go-ahead for B138 on 2026-11-10.",
-    "status": "pre-registered; the proof attempt to follow",
-    "novelty": "to be assessed"
+    "status": "obstructed under the frozen criterion; proved parts refereed 2026-11-10",
+    "novelty": "new as far as found (bounded search 2026-11-10); the looped-path identity may be folklore; not a priority claim"
   }
 }

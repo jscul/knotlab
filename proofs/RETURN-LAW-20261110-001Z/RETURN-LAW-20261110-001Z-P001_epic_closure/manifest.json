@@ -1,0 +1,104 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RETURN-LAW-20261110-001Z-P001",
+  "canonical_id": "RETURN-LAW-20261110-001Z-P001",
+  "kind": "proof",
+  "ticket": "RETURN-LAW-20261110-001Z",
+  "proof": "RETURN-LAW-20261110-001Z-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Closure of the corner return law",
+  "status": "Proved",
+  "claim": "Ledger closing RETURN-LAW-20261110-001: one line per conclusion with its status, novelty and evidence (ticket A, obstructed: the quadrant law reduced by the column decomposition to one identity on the half-line, with the v-grid, the reflection through the corner, the plain quadrant's evenness, the looped half-line and the kernel equation proved; ticket B, obstructed: the half-strip law reduced to the same identity on paths of odd length, with the strip's four-periodic eigenvector proved and the law computed at every even side to 80; ticket C, obstructed: the box law proved at each power of two from 4 to 512 by exact computation and reduced to one finite identity per side, with the two-sided decomposition, its explicit blocks, the looped path and the decomposition of B137's count proved), and the end-of-epic recommendation. No new claim.",
+  "dependencies": [
+    "RETURN-LAW-20261110-001A",
+    "RETURN-LAW-20261110-001B",
+    "RETURN-LAW-20261110-001C"
+  ],
+  "evidence_modes": [
+    "ledger"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "closure-ledger",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A bound manifest or result changes, or a proof is not Obstructed with a passed check.",
+    "The decision note is missing.",
+    "A ticket lacks its terminal status class."
+  ],
+  "lineage": {
+    "home_scope": "RETURN-LAW-20261110-001",
+    "epic_path": [
+      "RETURN-LAW-20261110-001"
+    ],
+    "parents": [
+      "proofs/RETURN-LAW-20261110-001A/RETURN-LAW-20261110-001A-P001_the_quadrant_law/manifest.json",
+      "proofs/RETURN-LAW-20261110-001A/RETURN-LAW-20261110-001A-P001_the_quadrant_law/result.json",
+      "proofs/RETURN-LAW-20261110-001B/RETURN-LAW-20261110-001B-P001_one_far_wall_is_invisible/manifest.json",
+      "proofs/RETURN-LAW-20261110-001B/RETURN-LAW-20261110-001B-P001_one_far_wall_is_invisible/result.json",
+      "proofs/RETURN-LAW-20261110-001C/RETURN-LAW-20261110-001C-P001_the_box_law_at_every_power_of_two/manifest.json",
+      "proofs/RETURN-LAW-20261110-001C/RETURN-LAW-20261110-001C-P001_the_box_law_at_every_power_of_two/result.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/RETURN-LAW-20261110-001A/RETURN-LAW-20261110-001A-P001_the_quadrant_law/manifest.json": "c8c34657fd35573d7f86bea37f193e0136466d653ee8560ca8d8132e66613e17",
+    "proofs/RETURN-LAW-20261110-001A/RETURN-LAW-20261110-001A-P001_the_quadrant_law/result.json": "ca99dfb2f742f46e53fd6446d0cb9f3a23f8654ed977e8f85b3cd8b22d02b862",
+    "proofs/RETURN-LAW-20261110-001B/RETURN-LAW-20261110-001B-P001_one_far_wall_is_invisible/manifest.json": "5ee5f459465ae316e468d125c00ffbe0ecc53b36478e5447e81cb2c742a91b34",
+    "proofs/RETURN-LAW-20261110-001B/RETURN-LAW-20261110-001B-P001_one_far_wall_is_invisible/result.json": "0a77c02a09e6ec30ed522a1af60b54de22b2989182f6122b06a90f4e27c892db",
+    "proofs/RETURN-LAW-20261110-001C/RETURN-LAW-20261110-001C-P001_the_box_law_at_every_power_of_two/manifest.json": "c61ddd96ca03326f445645883f786751392a9c0e755dcc7a058cc26d4823e55c",
+    "proofs/RETURN-LAW-20261110-001C/RETURN-LAW-20261110-001C-P001_the_box_law_at_every_power_of_two/result.json": "42bd4c39ee61cf63880f6b603c65a6c8f449b7a6723cf329f456183aa8f0d9c4"
+  },
+  "paths": {
+    "manifest": "proofs/RETURN-LAW-20261110-001Z/RETURN-LAW-20261110-001Z-P001_epic_closure/manifest.json",
+    "identity": "proofs/RETURN-LAW-20261110-001Z/RETURN-LAW-20261110-001Z-P001_epic_closure/identity.json",
+    "proof": "proofs/RETURN-LAW-20261110-001Z/RETURN-LAW-20261110-001Z-P001_epic_closure/proof.md",
+    "result": "proofs/RETURN-LAW-20261110-001Z/RETURN-LAW-20261110-001Z-P001_epic_closure/result.json",
+    "check": "proofs/RETURN-LAW-20261110-001Z/RETURN-LAW-20261110-001Z-P001_epic_closure/check.py",
+    "directory": "proofs/RETURN-LAW-20261110-001Z/RETURN-LAW-20261110-001Z-P001_epic_closure"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The closure ledger of RETURN-LAW-20261110-001; the scope of its tickets.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session; the tickets were read by an independent referee pass on 2026-11-10.",
+    "status": "ledger",
+    "novelty": "no new claim"
+  }
+}

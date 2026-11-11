@@ -5569,54 +5569,58 @@ So holes come in two kinds:
 
    **2026-11-10: the board as distinctions** (`BOARD-DIST-20261110-001`).
    - **The question.** In every law measured for space the board comes first (A51). The owner asked whether the axes themselves can
-     follow rules, governed by an essentially infinite CNF. Here "these two names are one place" is a distinction of the same CNF as
-     the values: names are the words in x, y and their inverses, and the board's own rules say only that being one place is an
-     equivalence, that it passes to neighbours, and that one place has one value.
+     follow rules, governed by an essentially infinite CNF. Here "these two names are one cell" is a distinction of the same CNF as
+     the values: names are the words in x, y and their inverses, and the board's own rules say only that naming one cell is an
+     equivalence, that it passes to neighbours, and that one cell has one value.
    - **Boards are subgroups (proved, classical).** The boards are exactly the Schreier graphs of the subgroups of the free group: the
-     tree, the plane (when xy and yx are one place), lines, tori, the collapse, and every other.
-   - **No law that names no relation chooses the plane (proved).** Suppose a law's clauses relate names only at the same offset: they
-     say which names are one place, never that a word comes back. If such a law allows an infinite board, it allows the tree. Far
-     from the finitely many places whose views are unique, every view repeats, and compactness unfolds the board into the tree.
+     tree, the commuting board (when xy and yx are one cell; the literature's ℤ², drawn as the plane), the boards drawn as lines and
+     tori, the collapse, and every other.
+   - **No law that declares no cycle chooses the commuting board (proved).** Suppose a law's clauses relate names only at the same
+     offset: they say which names are one cell, never that a word comes back. If such a law allows an infinite board, it allows the
+     tree. Far from the finitely many cells whose views are unique, every view repeats, and compactness unfolds the board into the tree.
      Such laws can force finite boards, and identity of indiscernibles always makes the board finite.
-   - **One named shape suffices (proved).** The commutator rule, a closing square at every name, with an aperiodic tile law forces
-     exactly the plane.
-   - **Frozen at infinity (proved).** Two boards differ in infinitely many identity distinctions, and off the tree every place holds
+   - **One declared cycle suffices (proved).** The commutator rule, the commuting cycle declared at every name, with an aperiodic tile
+     law forces exactly the commuting board.
+   - **Frozen at infinity (proved).** Two boards differ in infinitely many identity distinctions, and off the tree every cell holds
      infinitely many names, so under the source-aware reading no knot involving the board is native.
    - **The census (computed, exact, frozen).**
      - **The predictions.** All 1,024 Life-like one-bit laws obey them with no violation.
      - **What the laws allow.** 768 allow every board, 31 none, and 225 the tree without every board.
-     - **Identity boards.** At radius 1 they are finite, and a plane-like abelian one always has a non-abelian sibling.
-     - **The values can forbid a square.** In 60 laws the square's identity distinction is knotted with the values at 1 and xyX,
-       which the square makes neighbours; in 56 of them the knot is a single clause of three.
-   - **Reading.** Shapes have rules, and the plane's rule is a shape: a law chooses the plane exactly when it names the square. The
+     - **Identity boards.** At radius 1 they are finite, and an abelian one like the commuting board always has a non-abelian
+       sibling.
+     - **The values can forbid a commuting cycle.** In 60 laws the commuting cycle's identity distinction is knotted with the values
+       at 1 and xyX, which the cycle makes neighbours; in 56 of them the knot is a single clause of three.
+   - **Reading.** "Shapes" have rules, in the owner's words, and here the commuting board's rule is one declared cycle: a law chooses
+     the commuting board exactly when it declares the commuting cycle. The
      board a relation-free law always leaves open is the tree, whose balls grow exponentially.
    - **Next (selected).** Leibniz boards: identity of indiscernibles in the limit, beyond the theorem's reach (sub-goal B111)
      ([decision note](../research/BOARD-DIST-20261110-001/board_dist.md)).
 
    **2026-11-10: Leibniz boards** (`LEIBNIZ-BOARDS-20261110-001`).
    - **The question.** The board theorem needs finitary clauses. Leibniz's rule in full, "names whose views agree at every radius are
-     one place", is one infinitary rule it does not reach. Under it a law's boards are the Schreier graphs of its solutions'
+     one cell", is one infinitary rule it does not reach. Under it a law's boards are the Schreier graphs of its solutions'
      stabilizers.
    - **Not every board is the tree or finite (proved).** A three-value horofunction law has the board of a 3-cycle with trees
      attached.
    - **Free choices bring the tree back (proved).** A periodic solution with a free choice gives, by independent choices on disjoint
      half-trees, a solution with trivial stabilizer (the tree) and one with an infinite cyclic stabilizer.
    - **The census (computed, exact, frozen).** Every one-bit Life-like law and the atom has no solution (31), finitely many (97) or a
-     periodic solution with a free choice (896, and the atom). So Leibniz's rule never forces the plane in the family, though 891
-     laws allow it.
+     periodic solution with a free choice (896, and the atom). So Leibniz's rule never forces the commuting board in the family,
+     though 891 laws allow it.
    - **Reduced, not proved.** For arbitrary finite alphabets the dichotomy, an infinite board brings the tree, comes down to excluding
      one rigid kind of solution, with its freedom along a single end. The line pauses by its stop rule.
-   - **Next (selected).** Rigid finite worlds at radius 2 (`BOARD-DIST-20261110-001` direction 2)
+   - **Next (selected).** Rigid finite boards at radius 2 (`BOARD-DIST-20261110-001` direction 2)
      ([decision note](../research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md)).
 
-   **2026-11-10: rigid worlds at radius 2** (`RIGID-WORLDS-20261110-001`).
-   - **The question.** Finite boards can be forced. With identity at radius 2 (names whose radius-2 views agree are one place), does
-     a one-bit Life-like law force every board to be a genuinely two-dimensional torus, one whose radius-2 balls are the plane's?
-   - **No law of the family does (computed, exact, frozen).** Of the 994 laws with any board, 769 allow the one-place board, 223 a thin
-     abelian board with at most 8 places, and two counting laws a non-abelian board with 7 places; 31 allow none.
-   - **Forcing is visible when it happens.** A law that lists the views of one 13-place torus forces exactly that torus, at one size.
-     That law draws the board in advance.
-   - **Bounded anyway.** At radius 2 a forced torus has at most 256 places, so a growing family would need a growing radius.
+   **2026-11-10: rigid boards at radius 2** (`RIGID-WORLDS-20261110-001`).
+   - **The question.** Finite boards can be forced. With identity at radius 2 (names whose radius-2 views agree are one cell), does
+     a one-bit Life-like law force every board to be a finite quotient of the commuting board of dimension two (the literature's
+     torus), one whose radius-2 balls are the commuting board's?
+   - **No law of the family does (computed, exact, frozen).** Of the 994 laws with any board, 769 allow the one-cell board, 223 a thin
+     abelian board with at most 8 cells, and two counting laws a non-abelian board with 7 cells; 31 allow none.
+   - **Forcing is visible when it happens.** A law that lists the views of one 13-cell such board forces exactly that board, at one
+     size. That law draws the board in advance.
+   - **Bounded anyway.** At radius 2 a forced such board has at most 256 cells, so a growing family would need a growing radius.
    - **Next (proposed for the morning).** Weakly aperiodic laws under Leibniz's rule
      ([decision note](../research/RIGID-WORLDS-20261110-001/rigid_worlds.md)).
 
@@ -5628,26 +5632,26 @@ So holes come in two kinds:
      - Free choices in infinitely many disjoint branches can be made independently, so that nothing repeats.
      - Otherwise the freedom runs toward a few ends in each solution. Over all solutions those ends are every end of the tree,
        including ends no element fixes.
-   - **So the identity rule in the limit never forces the plane (proved).** The tree is a board exactly when a law has infinitely
+   - **So the identity rule in the limit never forces the commuting board (proved).** The tree is a board exactly when a law has infinitely
      many solutions.
    - **No finite board means a drift (proved after the census).** A three-value level law has solutions but no finite board exactly
-     when every place climbs on balance, with more neighbours one level up than down, or every place descends. On a finite board
+     when every cell climbs on balance, with more neighbours one level up than down, or every cell descends. On a finite board
      the steps up and down cancel.
    - **The census (computed, exact, frozen).** Of the 32,768 level laws on three values, 96 have no finite board: 48 drift up and
      48 down. The frozen certificates left 10 laws undecided, mirror images of certified ones, and the mirrored horofunction settles
      them.
-   - **Next (selected).** Abstract names: places named without letters (A54) ([decision note](../research/WEAK-APER-20261110-001/weak_aperiodic.md)).
+   - **Next (selected).** Abstract names: cells named without letters (A54) ([decision note](../research/WEAK-APER-20261110-001/weak_aperiodic.md)).
 
    **2026-11-10: abstract names** (`BARE-NAMES-20261110-001`).
-   - **The question.** The board line named places by words in two letters (A54). Without letters, with a neighbour distinction for
+   - **The question.** The board line named cells by words in two letters (A54). Without letters, with a neighbour distinction for
      each pair of names, what can a law force, and is the board still frozen?
-   - **No finite rule can make places touch (proved).** A law of finitary clauses that allows anything allows a board on which all
-     places are neighbours, or none are (Ramsey). So it can bound the degree but never force a neighbour.
-   - **What the letters drew (proved).** Four neighbours a law can address, and one connected world. An infinite clause "every
-     place has a neighbour" can supply a degree, but not neighbours a law can tell apart, and no law of bounded degree forces a
-     connected world.
+   - **No finite rule can make cells touch (proved).** A law of finitary clauses that allows anything allows a board on which all
+     cells are neighbours, or none are (Ramsey). So it can bound the degree but never force a neighbour.
+   - **What the letters drew (proved).** Four neighbours a law can address, and one connected board. An infinite clause "every
+     cell has a neighbour" can supply a degree, but not neighbours a law can tell apart, and no law of bounded degree forces a
+     connected board.
    - **The tree still comes back (proved).** A law that reads only a place and its neighbours allows the tree whenever it allows a
-     cycle. A named square with aperiodic tiles gives planes, but only one per component.
+     cycle. A declared commuting cycle with aperiodic tiles gives commuting boards, but only one per component.
    - **The board is no longer frozen (proved).** Two edges with the same pair of values can exchange partners, a change of four
      distinctions. In 90 of the 1,024 one-bit laws one neighbour distinction knots with its two endpoint values (computed, exact,
      frozen).
@@ -5658,31 +5662,32 @@ So holes come in two kinds:
    **2026-11-10: nativeness up to renaming** (`PLACE-FLIP-20261110-001`).
    - **The question.** Without letters, exchanging two names is a finite change, so every distinction passed the source-aware
      condition. With renamings not counted, are the 90 knots between the board and the values still native?
-   - **Excluding renamings is not enough (proved).** A place can be cut out of one region and wired into another by a finite change
+   - **Excluding renamings is not enough (proved).** A cell can be cut out of one part of the board and wired into another by a finite change
      that is no renaming. So the count that means something keeps one kind of distinction fixed while the other changes: values
      with the board kept, or neighbour distinctions with the values kept.
    - **In worlds of finite pieces, every knot is native (proved, computed).** In a world made of copies of a finite board, each of
      the 90 knots has its three distinctions flipped this way, so none rests on renamings.
-   - **On the free board most values are frozen (proved).** On a tree world a recolouring has to stop somewhere. In 58 of the laws it
-     never can, among them those where a flipped place forces all four neighbours to flip. 26 knots stay native; the other 64 are not
+   - **On the free board most values are frozen (proved).** On the tree a recolouring has to stop somewhere. In 58 of the laws it
+     never can, among them those where a flipped cell forces all four neighbours to flip. 26 knots stay native; the other 64 are not
      native on any tree.
    - **Next (selected).** Every accretion law, the one route left that could change the line's verdict
      ([decision note](../research/PLACE-FLIP-20261110-001/place_flip.md)).
 
    **2026-11-10: every accretion law** (`GROW-FACE-20261110-001`), the board line's deciding epic.
-   - **The question.** Static laws choose the plane only by naming a face. Can a law that grows the board from a seed do it without
-     naming one?
+   - **The question.** Static laws choose the commuting board only by declaring a cycle. Can a law that grows the board from a seed do
+     it without declaring one?
    - **No, by definition (proved).** A growing rule that closes no cycle grows the seed with trees attached. A local rule that closes
-     a cycle names it, because the cycle runs through what the rule can see. So the escape the epic froze could not exist, which its
+     a cycle declares it, because the cycle runs through what the rule can see. So the escape the epic froze could not exist, which its
      registration should have said (corrected).
-   - **With a named face, growth gives the plane itself (proved).** A rule that closes squares, with coordinates mod 3 as its only
-     values, grows the square spiral one place at a time, in its only order: its head is the only place whose view looks like a
-     head's. With the same values a static law also allows the plane's cylinders and tori.
+   - **With a declared cycle, growth gives the commuting board itself (proved).** A rule that closes commuting cycles, with coordinates
+     mod 3 as its only values, grows the square spiral of the literature's drawing one cell at a time, in its only order: its head is
+     the only cell whose view looks like a head's. With the same values a static law also allows the commuting board's quotients,
+     drawn as cylinders and tori.
    - **Growing everywhere at once, an order splits it (proved).** For every radius and every fixed priority, the rule that fills any
-     missing neighbour and closes every square it sees can be grown into two long arms, and the slit between them, filled from the
-     top, gets two places at one position.
-   - **The line closes and is parked.** A uniform local law, static or growing, chooses the plane only by naming a face; growth adds
-     one world with no quotient, not a face ([decision note](../research/GROW-FACE-20261110-001/grow_face.md), with the line's closing summary).
+     missing neighbour and closes every commuting cycle it sees can be grown into two long arms, and the slit between them, filled
+     from the top, gets two cells at one position.
+   - **The line closes and is parked.** A uniform local law, static or growing, chooses the commuting board only by declaring a cycle;
+     growth adds one board with no quotient, not a declared cycle ([decision note](../research/GROW-FACE-20261110-001/grow_face.md), with the line's closing summary).
 
    **2026-11-11: knots alone** (`KNOTS-ALONE-20261111-001`, backlog B144).
    - **The question.** The board line said the commuting board needs a declared cycle. In the knot's own terms a face can be a knot.

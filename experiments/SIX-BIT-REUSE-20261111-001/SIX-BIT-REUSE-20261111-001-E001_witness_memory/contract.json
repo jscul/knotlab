@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SIX-BIT-REUSE-20261111-001-E001",
+  "ticket": "SIX-BIT-REUSE-20261111-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "training",
+  "question": "Can a generic learner placed in the six-distinction base learn the unnamed constraint on xyz from changes it can make itself, and can its stored reading govern a fresh four-distinction relation?",
+  "public_inputs": {
+    "base": "Only the environment has the four not-all-equal constraints on abc, ayz, xbz and xyc. A trial to flip one distinction succeeds exactly when the four constraints allow the new state. The learner sees six anonymous values, can try one flip and sees its resulting state.",
+    "supplied": "A legal starting state, a fixed ordering of the six ports, an internal law for trying reversible flips with backtracking, initially empty memory of visits and triple readings, and an upper consumer. Run from every legal start. The cost of these facilities belongs to the extension.",
+    "learning": "Without examples, labels or a target triple, retain which of the eight assignments have actually occurred on each of the twenty triples. Finish only on exhausting all moves from the reached states. A finished table describes the reached component. The independent scorer checks whether this covers the base.",
+    "transfer": "After learning, disconnect the six-bit environment. Use each learned table twice on fresh distinctions (p,q,h) and (h,r,s); forget h and determine the allowed four-bit states. Only the particular learned table reaches the consumer. The scorer designates xyz after every table has been transferred."
+  },
+  "forbidden_inputs": [
+    "For the learner: the four rule identities, violated-rule counts, a solver, a list/count of legal states, target triple, target predicate, supplied training trajectory or labels, or any upper-level outcome.",
+    "For the upper consumer: the original base or observations, a not-all-equal test or a list of expected exclusions."
+  ],
+  "primary_observable": "Compare all twenty learned tables to projections of independently enumerated reachable and whole-base states; test the fresh upper relation on all sixteen outer words against direct composition of two copies of the original base. Record the xyz table, any other indistinguishable readings, how many starts cover the base, and whether the upper restrictions depend on the stored table.",
+  "cheapest_meaningful_control": "Erase the transferred table to the free relation. Restore just one previously absent triple value in one copy while holding the other fixed. Remove a lower rule and relearn, or rewire the hidden distinction into two independent copies. Check whether the upper behavior follows the intervention.",
+  "additional_controls": "Complementary four triples with the same relation, a renamed and bit-negated base, the unconstrained base and a disconnected base. Use matched legal starting states to compare indistinguishable presentations. Independently establish the upper knot verdict on its allowed states if it is claimed.",
+  "decision_or_followup_rule": "Count success for the designed extension only if the learner covers the original base from every legal start, finds xyz among all triples, and the independent upper test and memory interventions pass. Report failures and the separate status of the bare base and of discovering the learner itself.",
+  "resource_budget": "Finite enumeration only. At most 64 states per base and 6 forward trials per visited state plus one backtrack per first-entry move. Under 100000 trials for the planned panels. Standard-library CPU; no fitted parameters other than the adaptive record, no sampling budget or patience stop.",
+  "first_executable_signal": "One legal start of the four-rule base produces a nonempty learned table, terminates its own walk, and supplies a relation on the fresh four distinctions.",
+  "stop_rule": "Run the finite intervention panels and independent checks once the implementation passes its focused checks. Preserve an exact obstruction if a discriminator fails.",
+  "nonclaims": [
+    "A supplied finite-state learner in an enlarged system does not show the original six distinctions formed memory, a law of change, or a learner.",
+    "A reachable component may omit legal states. Observationally identical presentations need not have identical written rules.",
+    "This is an exploratory construction on one finite base, without a promotion or general claim about learning."
+  ],
+  "feasibility_disclosure": "The 18 states, the implicit xyz not-all-equal relation and its alternative presentation were checked in the earlier discussion and are known from OVERLAP-READ-20261111-001B. The prospective upper exclusions can be derived by hand. Discovery here refers only to the information accessible to the learner."
+}

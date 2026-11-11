@@ -1,0 +1,32 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "All original starts, all triple readings, disconnection, recoding, changed lower rules, memory interventions and detached upper composition checked against whole-state enumeration.",
+  "dependencies": [
+    "OVERLAP-READ-20261111-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "contract_path": "experiments/SIX-BIT-REUSE-20261111-001/SIX-BIT-REUSE-20261111-001-E001_witness_memory/contract.json",
+    "evidence_stage": "exploratory",
+    "experiment_id": "SIX-BIT-REUSE-20261111-001-E001",
+    "program": "learning",
+    "report_path": "research/SIX-BIT-REUSE-20261111-001/six_bit_reuse.md",
+    "result_sha256": "b245ed6c2cdef54f257b93e1cb8f2117cc216d4d8c023e7419a339a751aca69f",
+    "terminal_artifact": "artifacts/SIX-BIT-REUSE-20261111-001/SIX-BIT-REUSE-20261111-001-E001_witness_memory/result.json",
+    "verification_path": "artifacts/SIX-BIT-REUSE-20261111-001/SIX-BIT-REUSE-20261111-001-E001_witness_memory/verification.json"
+  },
+  "id": "SIX-BIT-REUSE-20261111-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Test G16 on the six-distinction example. Let a supplied learner inside an enlarged base find the constraints on unnamed triples from its own legal changes, retain them and use them in a fresh composition. Establish exactly what the original six distinctions and the supplied learning machinery each contribute.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SIX-BIT-REUSE-20261111-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Supported in the finite exploratory experiment. A supplied learner acquired the unnamed xyz relation from every one of the 18 legal starts, and two copies of its stored reading excluded exactly 0011 and 1100 on four fresh distinctions. Changing one entry in one copy released one exclusion. The original six bits do not specify the learner, memory or law of change.",
+  "status_class": "supported",
+  "stop_rule": "Close after the finite nine-panel experiment and independent content checks. State which parts of the learning system were supplied.",
+  "title": "Can a witness learn and reuse the six-bit constraint?"
+}

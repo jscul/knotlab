@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "experiment_id": "SIX-BIT-MEMORY-20261111-001-E001",
+  "ticket": "SIX-BIT-MEMORY-20261111-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "On the six distinctions of the original four not-all-equal knots, can their own allowed changes write and hold one bit, make it usable later, and distinguish experience of the hidden rule?",
+  "public_inputs": {
+    "rules": [
+      "abc",
+      "ayz",
+      "xbz",
+      "xyc"
+    ],
+    "state": "The six distinctions abcxyz alone. At each attempt choose a distinction uniformly and toggle it if the new assignment is allowed. An external cue may hold named distinctions or command them toward fixed values. Held distinctions already matching a command cannot leave it. No extra state in the base.",
+    "write": "Search every choice of four different roles (reference, gate, sample, read) with reference=0. Neutral holds reference=0, gate=1. From every legal neutral start, open the gate to 0, then hold the sample at the presented bit with the gate open, then shut the gate while still presenting the bit. A phase ends on first reaching the commanded values. Release the sample with only the original neutral cue held. All legal free moves can occur, including while a commanded flip is blocked. Use both sample values, allow either fixed reading convention, and require a distinct read port. Show probability-one completion by finite reachability; indefinite adversarial stalling is a separate case.",
+    "use": "Probe the unheld read distinction by a fresh not-all-equal knot on it and two fresh bits after writing. Check both equal fresh queries, and uncouple the read port as a control. The upper connection and its query are supplied.",
+    "content": "Compare original experience with the base missing abc. Prepare each in its uniform stationary distribution, condition on the same currently visible xyz and test the common evaluation law with abc missing. Also test evaluation that allows every flip, keeping only the same xyz visible. Check for remaining overlap of complete preparations and whether the free visible response law is independent of all hidden distinctions."
+  },
+  "forbidden_inputs": [
+    "No added register, labels of the hidden rule, history counter, designed transition table, trained weights, adaptive connection or solver inside the six distinctions.",
+    "The external scorer can enumerate and measure. It cannot select a favorable path or adjust timing by reading hidden distinctions."
+  ],
+  "primary_observable": "For every write/read role choice, both values must reach the requested commands almost surely from every legal neutral start. After release the separate read port must indicate the sample under every allowed neutral continuation. For rule learning require a reliable content-specific response under the same later test across the two experiences. Quantify weaker statistical effects separately.",
+  "cheapest_meaningful_control": "Release the entire cue after a successful write, hold just one distinction, or try a pulse through the two cue ports with the sample free. Count retained components and ambiguity. Compare the four single-rule deletions, the free base and the complementary presentation. Destroy the upper coupling, and compare with preparation of the same hidden values without training.",
+  "formation_control": "Enumerate four distinct unsigned not-all-equal triples on six labeled distinctions without picking special roles, including patterns with unused distinctions. Count patterns admitting this write/hold/read protocol and patterns working for specified ports. This tests occurrence across supplied meeting patterns. The dynamical rules under test leave the incidences fixed.",
+  "decision_or_followup_rule": "Report an internal writable memory if some roles meet the write and retention tests for both histories. Report what external cues, evolution and output coupling were supplied. A bit written by an external sample is evidence of storage. To call it a learner of the not-all-equal rule require the separate content-transfer test. Distinguish structural possibility from a process that assembles the meeting pattern itself.",
+  "resource_budget": "Exact finite state and reachability enumeration, at most 64 states before an optional two-bit probe, up to C(20,4)=4845 labeled four-knot patterns; symmetry reduction permitted. No Monte Carlo or fitted model.",
+  "first_executable_signal": "Find the components under a common neutral cue and attempt to write both sample values in the original four-knot base. Record closed classes or wrong readouts if it fails.",
+  "stop_rule": "Finish the six-bit protocol and controls, census and independent checks. A negative result on rule transfer is part of the outcome.",
+  "nonclaims": [
+    "An imposed order of input commands and their completion sensing is an external interface. It is not a learner built by the six distinctions.",
+    "A static meeting pattern does not supply a law of change or a process making new knots.",
+    "The finite census does not establish indefinite learning, a new knot test or an infinite hierarchy."
+  ],
+  "feasibility_disclosure": "The prior experiment tabulated all 18 states. Read-only feasibility work identified two isolated states at a held opposite pair and a possible conditional-distribution contrast. Tests are exploratory. No census or three-command writing result had been measured by the producer when this envelope was recorded."
+}

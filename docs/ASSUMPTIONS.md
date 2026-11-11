@@ -121,6 +121,7 @@ evidence: results and their status come from the records each entry links.
 | [A64](#a64--counting-how-knots-meet-at-a-distinction-names-no-face) | Counting how knots meet at a distinction names no face | reading | Assumed |
 | [A65](#a65--a-held-reference-point-is-supplied-by-the-world) | A held reference point is supplied by the world | reading | Assumed |
 | [A66](#a66--a-joined-base-keeps-each-copys-own-closed-tours) | A joined base keeps each copy's own closed tours | reading | Assumed |
+| [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 
 ## Entries
 
@@ -1657,6 +1658,10 @@ evidence: results and their status come from the records each entry links.
   at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
   non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).
 - **History.**
+  - 2026-11-11 · Bearing from `OVERLAP-READ-20261111-001`, status unchanged: the not-all-equal law's states depend only on how many
+    knots lie on each pair (proved: two knot patterns with the same count on every pair have the same states), so a count of how
+    knots meet is exactly what this law reads, and it cannot tell apart two patterns with the same counts
+    ([what not-all-equal makes of overlapping bases](../research/OVERLAP-READ-20261111-001/overlap_read.md)).
   - 2026-11-11 · Challenged again by `GROW-COUNT-20261111-001`, status unchanged: growth does not supply the count either. Worlds
     grown by knots kept only while the not-all-equal law reads them faithfully accept pairs in three knots and pinched links, and
     with both named close links at every degree from 3 to 14
@@ -1707,3 +1712,21 @@ evidence: results and their status come from the records each entry links.
   pieces; if learning succeeds or fails the same way, the tours were inessential; if it differs, the learner's success depends on them.
 - **History.**
   - 2026-11-11 · Added by `SHARED-COUNT-20261111-001`.
+
+### A67 · A base is read on sets of at most three distinctions
+
+**Assumed** · 2026-11-11 · scope
+
+- **Statement.** What a law adds to a base is read on sets of at most three distinctions: frozen distinctions, tied pairs and hollow
+  triples no knot names. A base is read faithfully when it has none of these and its knots' pairs are free (KNOTS-ALONE's
+  definition). Constraints that first appear on four or more distinctions are not counted as added structure.
+- **Why.** Taken by default from `KNOTS-ALONE-20261111-001`'s definition of a faithful reading, and kept by
+  `OVERLAP-READ-20261111-001`, whose catalogue of what the not-all-equal law forces stops at three distinctions
+  ([what not-all-equal makes of overlapping bases](../research/OVERLAP-READ-20261111-001/overlap_read.md)).
+- **Rests on it.** Every faithfulness verdict of the knots-alone line (`KNOTS-ALONE-20261111-001` to `OVERLAP-READ-20261111-001`)
+  and the catalogue's counts; the rulers do not, since bond distance already reads larger sets.
+- **Challenge.** Catalogue the minimal bonds of four and five distinctions a law adds, as the rulers already measure them: in the
+  overlapping bases read faithfully, some pairs at graph distance 2 lie in no bond of five or fewer, so larger sets carry what the
+  three-set reading misses.
+- **History.**
+  - 2026-11-11 · Added by `OVERLAP-READ-20261111-001`.

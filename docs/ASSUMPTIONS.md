@@ -120,6 +120,7 @@ evidence: results and their status come from the records each entry links.
 | [A63](#a63--a-named-face-is-put-in-not-native) | A named face is put in, not native | reading | Overturned |
 | [A64](#a64--counting-how-knots-meet-at-a-distinction-names-no-face) | Counting how knots meet at a distinction names no face | reading | Assumed |
 | [A65](#a65--a-held-reference-point-is-supplied-by-the-world) | A held reference point is supplied by the world | reading | Assumed |
+| [A66](#a66--a-joined-base-keeps-each-copys-own-closed-tours) | A joined base keeps each copy's own closed tours | reading | Assumed |
 
 ## Entries
 
@@ -1688,3 +1689,21 @@ evidence: results and their status come from the records each entry links.
     mod 3 or mod 4 on any of its 1,128 spaces; the maps of four held points there never use the reference as a count mod 3 would
     ([what it takes to hold a count](../research/HOLD-COUNT-20261111-001/hold_count.md)).
   - 2026-11-11 · Added by `HOLD-COUNT-20261111-001`.
+
+### A66 · A joined base keeps each copy's own closed tours
+
+**Assumed** · 2026-11-11 · reading
+
+- **Statement.** When copies of two-fold weaves are joined by sharing distinctions (a distinction of one copy is the same distinction as
+  one of another), the dissonance the learner feels is the sum of the copies' own: violated knots, plus each copy's closed tours read as
+  in that copy alone. A shared distinction's knots close into one tour per copy, not one tour in all. The canonical K1–K3 test is
+  unchanged.
+- **Why.** Taken by default in `SHARED-COUNT-20261111-001`'s pre-registration, so that the learning line's learner, whose dissonance
+  counts closed tours, runs unchanged on the first overlapping bases. On a base with no two-fold pieces there are no closed tours, and the
+  natural dissonance is violated knots alone; that reading is the alternative.
+- **Rests on it.** `SHARED-COUNT-20261111-001`'s learning runs on joined bases (the floor states are the satisfying states either way,
+  since each copy's law is a Kasteleyn law in the literature's term; what changes is the path the learner takes).
+- **Challenge.** Run the same learning with dissonance from violated knots alone, on the joined bases and on bases with no two-fold
+  pieces; if learning succeeds or fails the same way, the tours were inessential; if it differs, the learner's success depends on them.
+- **History.**
+  - 2026-11-11 · Added by `SHARED-COUNT-20261111-001`.

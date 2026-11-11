@@ -78,3 +78,36 @@ B146's concreteness rises to 2/3: the gadget is now an 8-point torus of a known 
 **Assumptions:** none new or changed.
 **Basket:** B146 (a learned memory that computes parity), B130 (a probe that is a theorem); taken: B146 as the selected next step,
 awaiting a go-ahead.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-11:
+
+**B147 is closed: one handle is enough to count.** The 8-point lattice torus (2, 0, 4), in its most constrained class, computes the parity of three held points exactly: hold points 0, 1 and 4, and point 5 is forced to their sum mod 2. Sixteen of the 281 lattice tori up to 20 points do the same, and each time parity sits in the torus's most constrained class.
+
+- **Referee pass on the headline gadget (logged):** fresh code, reading only the gadget's rotation system and signs, confirmed that the 8-point genus-4 space is a valid knot space: every point on three lines, genus 4 traced independently, every face odd (a Kasteleyn law). Under the canonical K1–K3 test (tools/knotlab), every line is a knot and the four-point parity relation is a knot. It's independent code, not an independent reviewer: this session doesn't start other agents.
+- **Least genus, forced or not?** Genus 0 is excluded for gadgets whose terminals share a face, unless P = NP: planar NAE-3SAT is polynomial (Moret 1988), and three four-point parity gates sharing a local reference make a crossover (after Lichtenstein 1982). That much is credited to known results. Whether genus 1 suffices wasn't settled by any construction I know, so the search decided it: it does.
+- **Caps:** set in advance (300 s per space, 30 and 60 minutes per part). The whole search took under a minute, and nothing was dropped.
+- **My prediction was wrong:** I expected no parity on tori.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: what a knot space needs to compute parity (B147) | **Status:** Successful | least genus 1; smallest an 8-point torus in its most constrained class |
+| Local direction: what held points can compute | Exhausted for this phase | the least genus and where parity sits are found |
+| Broader exploration: learning program | Known alternatives | a learned memory that computes parity, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | a single torus in its tightest class counts |
+
+**Next step:** Research directions, selected #1, holding until a go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A learned memory that computes parity (sub-goal B146) | 3/3 Major | 2/3 Testable | grow a (2, 0, 4) torus as an atom, hold four of its points as the interface, and ask whether the learner reaches its most constrained class from the parity examples → a learned parity map, or what stops it | Selected, awaiting go-ahead |
+| 2 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 3 | How learning cost grows with atoms (B143) | 1/3 Incremental | 3/3 Ready | as recorded | Deferred |
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (capability gained, with G16); B147 taken; B146's concreteness raised to 2/3.
+**Assumptions:** none new or changed.
+**Basket:** B146 (a learned memory that computes parity), B130; taken: B146 as the selected next step, awaiting a go-ahead.
+
+The run is registered in docs/LONG_RUNNING.md and folded in. Holding now.

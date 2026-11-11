@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-NEEDS-20261111-001A-P001",
+  "canonical_id": "PARITY-NEEDS-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "PARITY-NEEDS-20261111-001A",
+  "proof": "PARITY-NEEDS-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The gadget refereed, and the least genus for parity",
+  "status": "Proved",
+  "claim": "Exact: the 8-point parity gadget of UNATE-20261111-001 is a valid knot space of genus 4 with a Kasteleyn law under an independent check (fresh code, canonical K1-K3: every line and the four-point parity relation are knots). In a capped exact search of 281 lattice tori and 1,200 random knot spaces steered to genus 1 to 3, parity first occurs at genus 1: the 8-point lattice torus (2,0,4) computes three-input parity in its most constrained class; 16 of 281 lattice tori do.",
+  "dependencies": [
+    "UNATE-20261111-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The referee check failing on the gadget."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-NEEDS-20261111-001",
+    "epic_path": [
+      "PARITY-NEEDS-20261111-001"
+    ],
+    "parents": [
+      "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py",
+      "research/PARITY-NEEDS-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py": "ff9e6d4df55ec71313c4c5ad71fc6e9e5280b3f5be131697233ca0887928f07a",
+    "research/PARITY-NEEDS-20261111-001/preregistration.md": "2a6bdb941daf4429d27558199fb24f268719338b7cd776632d24bcb5801e5798"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/manifest.json",
+    "identity": "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/identity.json",
+    "proof": "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/proof.md",
+    "result": "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/result.json",
+    "check": "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/check.py",
+    "directory": "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The 8-point gadget; lattice tori up to 20 points; random spaces of 8 to 14 points steered to genus 1 to 3.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit b6ededb25).",
+    "status": "independent referee code; exhaustive capped search (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

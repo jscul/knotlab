@@ -71,7 +71,7 @@ def summary():
     out = {}
     for part in ("referee", "tori", "steered"):
         p = HERE / ("result_%s.json" % part)
-        out[part] = json.loads(p.read_text()) if p.exists() else {"dropped by its cap": True}
+        out[part] = json.loads(p.read_text())["checks"]["result"] if p.exists() else {"dropped by its cap": True}
     rows = [r for part in ("tori", "steered") for r in out[part].get("rows", [])]
     tally = {}
     for r in rows:

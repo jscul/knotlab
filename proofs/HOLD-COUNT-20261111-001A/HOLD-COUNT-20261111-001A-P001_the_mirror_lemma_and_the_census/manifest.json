@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HOLD-COUNT-20261111-001A-P001",
+  "canonical_id": "HOLD-COUNT-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "HOLD-COUNT-20261111-001A",
+  "proof": "HOLD-COUNT-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The mirror lemma, refereed, and the census of counts",
+  "status": "Proved",
+  "claim": "Proved by hand and refereed by fresh code: a knot space whose floor states are closed under flipping every point (the not-all-equal law) reads a count of n held points mod m (n >= m - 1) only when m is even and n odd, so never three held points mod 3 without a reference, and holds their count mod 4 exactly as a full adder. Exact census of 1,128 spaces (281 lattice tori up to 20 points, 847 random spaces of 8 to 14 points, genus 1 to 3): the 8-point parity torus (2,0,4) is a full adder (parity and majority of the same three held points), 13 spaces hold one; no space holds the count mod 3 or mod 4 with one held reference point. After the run: outputs of four held points depending on all four are only the weighted majority [2a+b+c+d>=3] and maj(a,b,a+c+d), and no restriction of either is a mod-3 bit.",
+  "dependencies": [
+    "IN-OUT-20261110-001Z",
+    "PARITY-NEEDS-20261111-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A census reading that holds the count mod 3 without a reference (P0).",
+    "The referee failing on the lemma's core, on closure under flipping every point, or on a least instance."
+  ],
+  "lineage": {
+    "home_scope": "HOLD-COUNT-20261111-001",
+    "epic_path": [
+      "HOLD-COUNT-20261111-001"
+    ],
+    "parents": [
+      "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/proof.md",
+      "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/needs_lib.py",
+      "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py",
+      "research/HOLD-COUNT-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/IN-OUT-20261110-001A/IN-OUT-20261110-001A-P001_inputs_and_outputs/proof.md": "719a534a093a26a64aa7b086152b003d39db561b4adb839dcdf276fc4cdbdbf5",
+    "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/needs_lib.py": "7424efc345ec8115c5571fb125c120889e4f6d2c6450ad4704682af5695ef2b2",
+    "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py": "ff9e6d4df55ec71313c4c5ad71fc6e9e5280b3f5be131697233ca0887928f07a",
+    "research/HOLD-COUNT-20261111-001/preregistration.md": "d97b799734c42f4373493a0413be949673093581839366af9f3615e541310259"
+  },
+  "paths": {
+    "manifest": "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/manifest.json",
+    "identity": "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/identity.json",
+    "proof": "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/proof.md",
+    "result": "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/result.json",
+    "check": "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/check.py",
+    "directory": "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Knot spaces with the not-all-equal law (Kasteleyn knot spaces of the learning line); lattice tori up to 20 points; random spaces of 8 to 14 points steered to genus 1 to 3; three held points, with and without one reference point.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11, pre-registered (commit 29121e4e7).",
+    "status": "lemma by hand; fresh-code referee (hold_referee.py) passed with negative controls; exhaustive census (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

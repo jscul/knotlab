@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**313 current results** and 5 superseded ones, from 299 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**314 current results** and 5 superseded ones, from 299 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -27,7 +27,7 @@ How to read an entry:
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
-- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
+- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 18 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
@@ -963,6 +963,9 @@ Patterns of patterns in three dimensions: when counting colourings of knots and 
 - **2026-10-28 · Class-4 pair failures are #P-hard if gadget counts are local up to a Massey-type relabeling** (`CLASS4-PAIRS-20261028-001-D002`).
   If zero-jump gadget counts are local up to a relabeling of degree-3 data, the indeterminacy of a Massey-type obstruction, then linear flows on single edges keep the Fourier dual non-negative even with independent potentials at the two ends of an edge, so counting is #P-hard. Six class-4 census algebras satisfy the single-edge conditions, so they are #P-hard if that locality holds.
   [proof P001](proofs/CLASS4-PAIRS-20261028-001C/CLASS4-PAIRS-20261028-001C-P001_class_4_linear_flow_failures_are_sharp_p_hard_under_gadget_locality/proof.md), [epic closure](proofs/CLASS4-PAIRS-20261028-001Z/CLASS4-PAIRS-20261028-001Z-P001_epic_closure/proof.md)
+- **2026-11-11 · The smallest knot space that counts writes the count in binary** (`HOLD-COUNT-20261111-001-D001`).
+  The eight-point torus that computes the parity of three held points also reads their majority at another point, so it holds their count as two binary digits, a full adder, at the least size at which any knot space counts (exact). Such spaces hold a count mod m only for even m and an odd number of held points, so counting in threes needs a value fixed from outside (proved).
+  [proof P001](proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/proof.md), [epic closure](proofs/HOLD-COUNT-20261111-001Z/HOLD-COUNT-20261111-001Z-P001_epic_closure/proof.md)
 
 ## Res(⊕) follow-ups
 
@@ -1367,7 +1370,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |
 | 2026-11-11 | Deeper memories from examples (`DEEP-MEM-20261111-001`) | [closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/DEEP-MEM-20261111-001/) |
 | 2026-11-11 | The count from growth (`GROW-COUNT-20261111-001`) | [closure](proofs/GROW-COUNT-20261111-001Z/GROW-COUNT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-COUNT-20261111-001/) |
-| 2026-11-11 | What it takes to hold a count (`HOLD-COUNT-20261111-001`) | — | [folder](research/HOLD-COUNT-20261111-001/) |
+| 2026-11-11 | What it takes to hold a count (`HOLD-COUNT-20261111-001`) | [closure](proofs/HOLD-COUNT-20261111-001Z/HOLD-COUNT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/HOLD-COUNT-20261111-001/) |
 | 2026-11-11 | Knots alone (`KNOTS-ALONE-20261111-001`) | [closure](proofs/KNOTS-ALONE-20261111-001Z/KNOTS-ALONE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/KNOTS-ALONE-20261111-001/) |
 | 2026-11-11 | A learned memory that computes parity (`LEARN-PARITY-20261111-001`) | [closure](proofs/LEARN-PARITY-20261111-001Z/LEARN-PARITY-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-PARITY-20261111-001/) |
 | 2026-11-11 | The long-loop regime (`LONG-LOOP-20261111-001`) | [closure](proofs/LONG-LOOP-20261111-001Z/LONG-LOOP-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LONG-LOOP-20261111-001/) |

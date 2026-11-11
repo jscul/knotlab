@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SHARED-COUNT-20261111-001A-P001",
+  "canonical_id": "SHARED-COUNT-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "SHARED-COUNT-20261111-001A",
+  "proof": "SHARED-COUNT-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Learning counts through a shared distinction",
+  "status": "Proved",
+  "claim": "Exact, settled by definition and confirmed: two copies of the drawn knot pattern (2,0,4) sharing one distinction (J2, 15 distinctions) force the read distinction to the sum mod 2 of five held distinctions, three copies (J3) of seven, exactly when every copy is in its tightest class. Computed, frozen: the unchanged credit learner with the sturdier probe learned and held the count of five on J2 in 10 of 10 runs (30 of 30 writes, no inexact stop, median 199,200 steps); on J3 all ten runs reached the 120-minute cap before a first stop (P7 failed).",
+  "dependencies": [
+    "PARITY-FIVE-20261111-001A",
+    "LEARN-PARITY-20261111-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "V1 or R failing; P5 below 8 of 10; P7 below 8 of 10."
+  ],
+  "lineage": {
+    "home_scope": "SHARED-COUNT-20261111-001",
+    "epic_path": [
+      "SHARED-COUNT-20261111-001"
+    ],
+    "parents": [
+      "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/join_lib.py",
+      "research/SHARED-COUNT-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/join_lib.py": "6bc4446af563aa8efb50f06849221ce9b0aa9a14f92be15fa58f11b903ea7285",
+    "research/SHARED-COUNT-20261111-001/preregistration.md": "d2e03edbb280221137838591c4ccf6f8be8f1562d46d6447cc01439a384e73ff"
+  },
+  "paths": {
+    "manifest": "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/manifest.json",
+    "identity": "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/identity.json",
+    "proof": "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/proof.md",
+    "result": "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/result_summary.json",
+    "check": "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction/check.py",
+    "directory": "proofs/SHARED-COUNT-20261111-001A/SHARED-COUNT-20261111-001A-P001_counting_through_a_shared_distinction"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Two bases (two and three copies of the drawn knot pattern (2,0,4) sharing distinctions), ten runs each, one frozen learner.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11, pre-registered (commit 6c391343f).",
+    "status": "realizability exhaustive; learning computed (check.py, run once; harness and summary reproduce)",
+    "novelty": "known-with-delta"
+  }
+}

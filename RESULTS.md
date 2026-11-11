@@ -1382,6 +1382,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Infinite bases with periodic overlap (`PERIODIC-READ-20261111-001`) | [closure](proofs/PERIODIC-READ-20261111-001Z/PERIODIC-READ-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PERIODIC-READ-20261111-001/) |
 | 2026-11-11 | The not-all-equal ruler (`RULER-20261111-001`) | [closure](proofs/RULER-20261111-001Z/RULER-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/RULER-20261111-001/) |
 | 2026-11-11 | The ruler on flat worlds (`RULER-FLAT-20261111-001`) | [closure](proofs/RULER-FLAT-20261111-001Z/RULER-FLAT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/RULER-FLAT-20261111-001/) |
-| 2026-11-11 | Counting through a shared distinction (`SHARED-COUNT-20261111-001`) | — | [folder](research/SHARED-COUNT-20261111-001/) |
+| 2026-11-11 | Counting through a shared distinction (`SHARED-COUNT-20261111-001`) | [closure](proofs/SHARED-COUNT-20261111-001Z/SHARED-COUNT-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/SHARED-COUNT-20261111-001/) |
 | 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |
 

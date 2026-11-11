@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "OWN-RELATION-20261111-001A-P001",
+  "canonical_id": "OWN-RELATION-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "OWN-RELATION-20261111-001A",
+  "proof": "OWN-RELATION-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Four-point maps on larger knot spaces, and a reason",
+  "status": "Proved",
+  "claim": "Proved: the self-dual maps of four held points that use all four form exactly four classes (the weighted majority, maj(a,b,a+c+d), the parity-majority switch, a+NAE(b,c,d)), only the last two can give a mod-3 bit, and general signed not-all-equal systems realise all four, so their absence is not forced by self-duality or by the law alone. Exact census, frozen, positive control passed, refereed by fresh code on 46 spaces: on 453 random knot spaces of 16, 18 and 20 points (genus 2 to 4), 179,559,422 free four-point sets give 4,303 weighted majorities, 33 maj(a,b,a+c+d), no switch and no a+NAE; four-point readings get rarer past 16 points. Proof that the switch and a+NAE never occur: not found.",
+  "dependencies": [
+    "HOLD-COUNT-20261111-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "The positive control failing.",
+    "The referee disagreeing with the census on a sampled space.",
+    "More than 10% of reached spaces dropped by their caps."
+  ],
+  "lineage": {
+    "home_scope": "OWN-RELATION-20261111-001",
+    "epic_path": [
+      "OWN-RELATION-20261111-001"
+    ],
+    "parents": [
+      "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/manifest.json",
+      "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/needs_lib.py",
+      "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py",
+      "research/OWN-RELATION-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/manifest.json": "f2d833f060614f0d65e46fb5367c58b4b65529783b5d15d1863640d857e5e70c",
+    "proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/needs_lib.py": "7424efc345ec8115c5571fb125c120889e4f6d2c6450ad4704682af5695ef2b2",
+    "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py": "ff9e6d4df55ec71313c4c5ad71fc6e9e5280b3f5be131697233ca0887928f07a",
+    "research/OWN-RELATION-20261111-001/preregistration.md": "7d8942732b90c84b4c75151245b231d363194f7ad2fa253a0ad1b94a4ad5feee"
+  },
+  "paths": {
+    "manifest": "proofs/OWN-RELATION-20261111-001A/OWN-RELATION-20261111-001A-P001_four_point_maps_on_larger_spaces/manifest.json",
+    "identity": "proofs/OWN-RELATION-20261111-001A/OWN-RELATION-20261111-001A-P001_four_point_maps_on_larger_spaces/identity.json",
+    "proof": "proofs/OWN-RELATION-20261111-001A/OWN-RELATION-20261111-001A-P001_four_point_maps_on_larger_spaces/proof.md",
+    "result": "proofs/OWN-RELATION-20261111-001A/OWN-RELATION-20261111-001A-P001_four_point_maps_on_larger_spaces/result.json",
+    "check": "proofs/OWN-RELATION-20261111-001A/OWN-RELATION-20261111-001A-P001_four_point_maps_on_larger_spaces/check.py",
+    "directory": "proofs/OWN-RELATION-20261111-001A/OWN-RELATION-20261111-001A-P001_four_point_maps_on_larger_spaces"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Knot spaces with the not-all-equal law; random spaces of 16 to 20 points steered to genus 2 to 4; four held points.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11, pre-registered (commit bce78f40c).",
+    "status": "classes by exhaustion; fresh-code referee (own_referee.py via referee_parallel.py) passed on 46 spaces; positive control passed; exhaustive census (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

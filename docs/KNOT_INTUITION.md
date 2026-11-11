@@ -5653,6 +5653,17 @@ So network holes come in two kinds:
      is overturned in this setting. Thinner worlds shortcut, so the ruler is local, out to about half the shortest loop
      ([decision note](../research/LONG-LOOP-20261111-001/long_loop.md)).
 
+   **2026-11-11: the not-all-equal ruler** (`RULER-20261111-001`).
+   - **The question.** Is "bond distance = graph distance + 1" a theorem?
+   - **Yes, in the plane (proved, refereed).** On the triangular lattice under not-all-equal, every pair is free, the triangles are the
+     only three-site bonds, and two sites d steps apart lie together in a bond of exactly d + 2 sites and in none smaller. The bond is
+     one side of a triangle of side d, all equal, with the opposite corner. Every bond is native.
+   - **Why.** The states are the ground states of the triangular Ising antiferromagnet, and they carry a height that rises at most one
+     per step (known). A pattern is forbidden when it asks the height to climb faster than that around a loop, and each site can supply
+     at most half a unit of the excess, so spanning d steps takes d + 2 sites.
+   - **So the knot measures its own plane** exactly, as graph distance, and its bond balls read dimension 2. On tori and Klein bottles
+     it stays computed ([decision note](../research/RULER-20261111-001/ruler.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

@@ -1,5 +1,8 @@
 # Does every law that composes like cycles keep its top layer rigid?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `TOP-LAYER-20261102-001` (program topology), 2026-11-02.
 
 ## The question
@@ -52,7 +55,7 @@ Epic `TOP-LAYER-20261102-001` (program topology), 2026-11-02.
   - **The leftover.** When the knot's selected space loses a line, the line's three points become tied (the rest forces it to be
     all-equal), and knots remain around it.
   - **In the Fano plane.** The four points off the line become a new four-place knot.
-  - **Why it matters.** The knot's spaces are Fano atoms glued along lines (THREEFOLD-GRAMMAR). So selection's leftover is exactly the
+  - **Why it matters.** The knot's contradictions are Fano pieces glued along lines (THREEFOLD-GRAMMAR). So selection's leftover is exactly the
     gluing interface: this is the lead for the next step.
 
 ## Literature
@@ -92,8 +95,8 @@ Still open from earlier epics:
 | --- | --- | --- |
 | Current attempt — does every law that composes like cycles keep its top layer rigid? | **Status:** Successful | **As phrased, no:** the five-value simple law built around Z4. **In the corrected form, yes**, for sections from one chain ring: emergence needs depth and stays below the section's top. **Open:** mixed domains, and sections from several chain rings. |
 | Local direction — comparing laws that compose like cycles with the knot | Practically exhausted | **What remains is technical completion:** mixed domains, uniserial sections from several rings, non-commutative layers. The evidence is uniform: over 1800 global failures across the checks, none against the corrected statements. |
-| Broader exploration — selection, composition and space | Lead found | **Answered by this branch.** What distinguishes the knot: emergence on two values, in its only layer. **Not yet related to it:** the knot's spaces are Fano atoms glued along lines, and how that gluing relates to what selection leaves. |
+| Broader exploration — selection, composition and space | Lead found | **Answered by this branch.** What distinguishes the knot: emergence on two values, in its only layer. **Not yet related to it:** the knot's contradictions are Fano pieces glued along lines, and how that gluing relates to what selection leaves. |
 | Long-term goal — composed topology from native contact | Obstruction sharpened, lead gained | **The obstruction.** No law that composes like cycles selects as the knot does without depth. **The lead.** When the knot's selected space loses a line, the line becomes a hub of tied points, exactly where pieces glue. |
-| Next recommendation — what selection leaves, and how pieces glue | **Next step:** Continue. **Claim to test.** In the knot's spaces, removing a line leaves a hub (its tied points) and kept knots, and the trisum glues along that hub. **First test.** On the census and on trisums of Fano atoms: does the emergence each piece keeps survive the glue, and does gluing selected spaces along their leftover hubs build every space of the knot natively? | **If yes.** Composed spaces are built from selection itself, a native composition through hubs that keeps emergence. **If no.** The hubs separate, and composed topology needs something beyond selection. **Alternatives.** Completing the theorem (mixed domains, several chain rings; 1/3). The converse: which two-layer sections keep emergence (T2(F2) does not, Z4 does; 1/3). Revising the selection note (conversion; awaits the owner's erratum decision). |
-| Interest — that recommendation | **2/3 — Promising** | **Evidence.** A concrete mechanism: forced all-equal lines are hubs, trisums glue along lines, and the Fano complement becomes a knot. It connects selection, hubs and the knot's space grammar. **Main uncertainty.** It may reduce to the known trisum decomposition without new native composition. |
-| Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** The 73 census substrates and trisums of up to three Fano atoms. **Stop when** the leftover-and-glue picture is proved or refuted on these. |
+| Next recommendation — what selection leaves, and how pieces glue | **Next step:** Continue. **Claim to test.** In the knot's contradictions, removing a line leaves a hub (its tied points) and kept knots, and the trisum glues along that hub. **First test.** On the census and on trisums of Fano pieces: does the emergence each piece keeps survive the glue, and does gluing selected spaces along their leftover hubs build every space of the knot natively? | **If yes.** Composed spaces are built from selection itself, a native composition through hubs that keeps emergence. **If no.** The hubs separate, and composed topology needs something beyond selection. **Alternatives.** Completing the theorem (mixed domains, several chain rings; 1/3). The converse: which two-layer sections keep emergence (T2(F2) does not, Z4 does; 1/3). Revising the selection note (conversion; awaits the owner's erratum decision). |
+| Interest — that recommendation | **2/3 — Promising** | **Evidence.** A concrete mechanism: forced all-equal lines are hubs, trisums glue along lines, and the Fano complement becomes a knot. It connects selection, hubs and the knot's contradiction grammar. **Main uncertainty.** It may reduce to the known trisum decomposition without new native composition. |
+| Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** The 73 census substrates and trisums of up to three Fano pieces. **Stop when** the leftover-and-glue picture is proved or refuted on these. |

@@ -1,5 +1,8 @@
 # Colour refinement on the native creation map
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `REFINE-READ-20261107-001` (program topology), 2026-11-07.
 
 ## The question
@@ -25,7 +28,7 @@ Epic `REFINE-READ-20261107-001` (program topology), 2026-11-07.
 ## Answer
 
 - **The handles are there to be read.** In every space computed, the native creation map determines the partition of lines into Fano
-  atoms, and so the genus wherever every handle is a Fano atom. No symmetry hides them.
+  atoms, and so the genus wherever every handle is a Fano piece. No symmetry hides them.
 - **But no uniform rule reads them all.** The natural rules all stop at 234 of 277 spaces. Where two atoms meet one plane piece, they can
   be complete twins at every atom line, and their difference lies at the glue.
 - **What existence leaves open.** Refinement proves a per-space definition exists. Whether one formula serves every space is open.
@@ -76,8 +79,8 @@ Epic `REFINE-READ-20261107-001` (program topology), 2026-11-07.
 | --- | --- | --- |
 | Current attempt — colour refinement on the native map | **Status:** Successful | **Answered, and sharper than asked.** Colour refinement must merge symmetric atoms, but pair refinement shows the native map fixes the atoms in all 277 spaces. No symmetry obstruction exists in any computed space. |
 | Local direction — a uniform native rule through plane glue | Practically exhausted for hand-made rules | **Four designs.** GLUE-READ's, FAR-READ's (not native), native row twins, and their refinements: all stop at 234 of 277. **What could reopen it.** A uniform formula found by a principled search over refinement invariants, or a proof that none of bounded size exists. |
-| Broader exploration — handles that matter for counting | Known alternative | **Junction handles.** HANDLE-COUNT found that counting hardness on knot spaces lives at the glue's junctions, not at Fano atoms. Whether native creation sees junctions is untested. |
-| Long-term goal — topology from native emergence | Capability gained | **Gained.** Native creation fixes the genus of every computed space built from Fano atoms. Fano trees are read by a theorem. **Missing.** A uniform reading through glue, and handles that are not Fano atoms. |
+| Broader exploration — handles that matter for counting | Known alternative | **Junction handles.** HANDLE-COUNT found that counting hardness on contradictions lives at the glue's junctions, not at Fano pieces. Whether native creation sees junctions is untested. |
+| Long-term goal — topology from native emergence | Capability gained | **Gained.** Native creation fixes the genus of every computed space built from Fano pieces. Fano trees are read by a theorem. **Missing.** A uniform reading through glue, and handles that are not Fano pieces. |
 | Next recommendation — native creation at junction handles | **Next step:** Continue, in the adjacent direction. On spaces with trisum glue (HANDLE-COUNT's constructions), compute exact native creation maps. Ask whether the map fixes the junctions, by pair refinement as here, and whether junction lines carry a native signature that counts them. | **If yes.** Native creation sees exactly the handles where counting becomes hard, linking emergence to hardness. **If no.** Hardness lives where native creation is blind, a sharp and interesting separation. **Alternatives.** Uniform definability of the atoms (1/3); a native audit of earlier far-side records (1/3). |
 | Interest — that recommendation | **2/3 — Promising** | **Evidence.** The method here is general: refinement on the native map decides whether any structure is fixed. HANDLE-COUNT supplies the junction spaces and the hardness link. **Main uncertainty.** Exact creation maps of trisum spaces may be costly, and junctions may be invisible to creation. |
 | Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** HANDLE-COUNT's trisum spaces and a fresh family of them. **Stop when** pair refinement shows whether native creation fixes the junctions, and a junction signature is found or ruled out. |

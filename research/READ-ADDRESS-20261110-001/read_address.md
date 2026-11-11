@@ -1,11 +1,14 @@
 # Reading the address natively
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `READ-ADDRESS-20261110-001` (backlog B85, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family: `proofs/READ-ADDRESS-20261110-001A/READ-ADDRESS-20261110-001A-P001_writing_at_k4_and_reading_from_the_law/`.
 
 ## The answer (computed, pre-registered; small cases)
 
-- **Writing holds one size past.** On K_4 with three Fano atoms, the two leftovers were written into every pair of atoms on every line orbit
+- **Writing holds one size past.** On K_4 with three Fano pieces, the two leftovers were written into every pair of atoms on every line orbit
   (15 of 15). With `ADDRESS-20261110-001`'s K_3 cases, 24 of 24 written.
 - **The law reads it, atom by atom.** In 23 of the 24 written configurations the atoms holding the leftovers are exactly those whose own
   signs make them act as their lines. That read uses no state and no census, only each atom's own 21 sides. The exception ended with one
@@ -30,7 +33,7 @@ None.
 | This attempt — reading the address (B85) | **Status:** Partially successful | read from the law locally in 23 of 24 |
 | Local direction — a learned memory | Continue | written and read at two sphere sizes |
 | Broader exploration — learning program | Known alternatives | memory guiding later learning |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | memory each pattern carries in its signs |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | memory each pattern carries in its signs |
 
 **Next step:** Research directions — selected: #1
 

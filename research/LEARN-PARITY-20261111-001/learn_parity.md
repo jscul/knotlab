@@ -1,5 +1,8 @@
 # A learned memory that computes parity
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LEARN-PARITY-20261111-001` (sub-goal B146, G15 with G16; program learning), 2026-11-11, at the coordinator's go-ahead. Pre-registered
 in [preregistration.md](preregistration.md), frozen with the code in commit `00aafe7f6` before any learning run. Proof family:
 `proofs/LEARN-PARITY-20261111-001A/`.
@@ -33,7 +36,7 @@ All marks held (R, P1, P2), no inexact stop, as predicted. The learner was not c
 ## What it changes
 
 - **The learned memory computes beyond monotone and unate maps.** Earlier memories held their atoms as switches read on their sides; a torus
-  held from inside, in its tightest class, counts. Combined with the gates of `IN-OUT-20261110-001` and majority, which small knot spaces
+  held from inside, in its tightest class, counts. Combined with the gates of `IN-OUT-20261110-001` and majority, which small drawn knot patterns
   compute often, the learned memory has non-monotone, non-unate building blocks.
 - **The open question moves to composition.** Majority with negated inputs generates every self-dual function (Post's lattice); whether a
   memory can wire learned gates into larger functions, the output of one held as the input of the next, is next (sub-goal B148).
@@ -58,7 +61,7 @@ ring kept counting after it was shaken. It did this every time, alone and inside
 | This attempt: a learned memory that computes parity (B146) | **Status:** Successful | 20 of 20 runs learned and held parity; 60 of 60 writes |
 | Local direction: learning non-unate maps | Continue | parity learned; larger functions need composition |
 | Broader exploration: learning program | Known alternatives | composing learned gates, parity of more held points, the probe as a theorem |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | the first learned non-unate map, inside a memory |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | the first learned non-unate map, inside a memory |
 
 **Next step:** Research directions — selected: #2 (holding, per the coordinator, until a go-ahead)
 
@@ -91,7 +94,7 @@ Posted in the thread on 2026-11-11:
 | This attempt: a learned memory that computes parity (B146) | **Status:** Successful | 20 of 20 runs learned and held parity; 60 of 60 writes |
 | Local direction: learning non-unate maps | Continue | parity learned; larger functions need composition |
 | Broader exploration: learning program | Known alternatives | composing learned gates, parity of more held points, the probe as a theorem |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | the first learned non-unate map, inside a memory |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | the first learned non-unate map, inside a memory |
 
 **Next step:** Research directions, selected #2, holding until a go-ahead.
 

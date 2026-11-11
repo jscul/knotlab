@@ -1,5 +1,8 @@
 # The halo of an opened handle
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `HALO-FORCING-20261103-001` (program topology), 2026-11-03.
 
 ## The question
@@ -72,5 +75,5 @@ Still open from earlier epics:
 | Broader exploration — where selection creates | Remapped with a phase structure | **Where creation happens.** Handles create where they sit, and through frozen glue at a distance. Liquid glue screens them. Line-attached handles are screened (HANDLE-LOCALITY). |
 | Long-term goal — topology from native emergence | Capability gained | **Gained.** Native selection's view of a handle is now computable at scale, and it has a classical counterpart: the frozen and liquid regions of the dimer model. |
 | Next recommendation — creation and dimer phases | **Next step:** Continue. Build plane pieces where frozen and liquid parts meet: ladder arms on grids, and regions whose boundaries freeze part of the plane, as in arctic phenomena. Test whether the halo is exactly the frozen region joined to the handle. Prove the ladder law (periodic transfer) and the grid bound (independence after a few steps). | **If yes.** Native creation traces the dimer phase boundary, and a handle is visible exactly through frozen glue. **If no.** The mismatch shows what else carries forcing. **Alternatives.** The screened line-attached handle (1/3). The planar reduction lemma (1/3). Other handles and several handles (1/3). |
-| Interest — that recommendation | **2/3 — Promising** | **Evidence.** The pure families split cleanly: reach equal to size on ladders, 3 on grids, with exact independence beyond distance 7. Random spaces fall between. **Main uncertainty.** Designing knot spaces with controlled dimer phases, since the matching graph is the line–face graph, not the incidence graph. The phase boundary may also not be sharp at accessible sizes. |
+| Interest — that recommendation | **2/3 — Promising** | **Evidence.** The pure families split cleanly: reach equal to size on ladders, 3 on grids, with exact independence beyond distance 7. Random spaces fall between. **Main uncertainty.** Designing contradictions with controlled dimer phases, since the matching graph is the line–face graph, not the incidence graph. The phase boundary may also not be sharp at accessible sizes. |
 | Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** Plane pieces up to a few hundred points, with the validated pipeline. **Stop when** the halo is compared with the frozen region on mixed pieces and the two laws are proved or shown false. |

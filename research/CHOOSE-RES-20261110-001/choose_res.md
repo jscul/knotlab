@@ -1,5 +1,8 @@
 # Choosing the resolution
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `CHOOSE-RES-20261110-001` (backlog B62, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md); frozen contract and run in
 `experiments/CHOOSE-RES-20261110-001A/CHOOSE-RES-20261110-001A-E001_a_learner_given_a_target_class/`; results and their interpretation in
@@ -40,7 +43,7 @@ None.
 
 ## Does tonight's work make B54 (layers) more concrete?
 
-Yes, under one reading. In `GROW-HANDLE-20261110-001` a Fano atom spliced in for a line acts, from outside, exactly as that line (in its
+Yes, under one reading. In `GROW-HANDLE-20261110-001` a Fano piece spliced in for a line acts, from outside, exactly as that line (in its
 class) and becomes transparent when learning winds through it. That is a two-level network: the sphere's lines are the upper level, and an
 atom is a pattern, one level down, that stands for one of them. The sphere's forced dissonance, an upper-level fact, was removed by
 learning inside the lower level. So "learning at one level resolves a dissonance forced at another" now has a working example. The first
@@ -55,7 +58,7 @@ knots (`GEOMETRY-LAW-20261029-001`), nothing changed, and it stays at 1/3.
 | This attempt — choosing the resolution (B62) | **Status:** Partially successful | a targeted learner chooses; the default expectation failed |
 | Local direction — steering by re-signing | Continue | resolutions can be chosen at a known price |
 | Broader exploration — learning program | Known alternatives | growth trigger, layers through atoms |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | the point can be guided to a chosen resolution |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | the point can be guided to a chosen resolution |
 
 **Next step:** Continue — selected: #1
 
@@ -79,7 +82,7 @@ Sent to the owner in the project thread on 2026-11-10 (00:53 UTC).
 
 **B62 done: a learner can choose its resolution, and choosing has a price.** Told which class to end in, a learner that tracks the class its own changes have made reached it in 3,173 of 3,186 runs. On thin tori it was within half a step of the cheapest walk. The price is the handle: the far resolution costs about half the torus, the near one 2 steps. My pre-registered guess was wrong: without a target, random learners mostly go the long way (only 13% short).
 
-**On B54 (layers):** yes, more concrete now. The grown Fano atom acts from outside exactly as the line it replaced, and learning inside it removed the sphere's dissonance. That's a two-level network where learning one level down resolved a contradiction forced one level up. Next step: replace several lines by atoms and watch the dissonance move between levels (2/3 now, kept as a sub-goal).
+**On B54 (layers):** yes, more concrete now. The grown Fano piece acts from outside exactly as the line it replaced, and learning inside it removed the sphere's dissonance. That's a two-level network where learning one level down resolved a contradiction forced one level up. Next step: replace several lines by atoms and watch the dissonance move between levels (2/3 now, kept as a sub-goal).
 
 | Scope | Verdict | Why |
 | --- | --- | --- |

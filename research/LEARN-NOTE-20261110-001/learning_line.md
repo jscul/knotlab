@@ -1,5 +1,8 @@
 # The learning line, 2026-11-09 to 2026-11-10
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LEARN-NOTE-20261110-001` (backlog B95, goal G15). A plain account of fifteen epics, written for the owner to judge as a whole. Each
 claim carries its evidence class:
 
@@ -16,7 +19,7 @@ The owner paused this line on 2026-11-10 while one harder direction is tried els
 again after `PARITY-FIVE-20261111-001` the same day, until the owner resumes. This section is
 what a new thread needs; the section after it is the full current statement, and sections 1 to 8 the history.
 
-**What a learned knot memory is, in one paragraph.** A knot space's law signs its lines; a point's state is a bit per point; dissonance
+**What a learned knot memory is, in one paragraph.** A drawn knot pattern's law signs its lines; a point's state is a bit per point; dissonance
 W counts violated lines and even faces (at a Kasteleyn law, W = |χ| + 4·violated lines + 2·even faces, so the floor states are the
 satisfying ones). An atom (a class-forced torus less a point, spliced at a line) acts as that line in one class and lets everything
 through in the others; composites of atoms act exactly when all their atoms act (AND). Which atoms act is the stored address. Reading
@@ -29,7 +32,7 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   (NATIVE-WRITE, P1).
 - *Exact:* an atom acts exactly when its own constraints cannot clear its region (seven spaces); an acting atom held on two sides is a
   gate (18 interfaces); no map of three held points is parity, majority or non-unate at the memories' interfaces (THREE-IN, six spaces,
-  every law), but an 8-point knot space of genus 4 computes parity of held points (UNATE, independently refereed), and so does the
+  every law), but an 8-point drawn knot pattern of genus 4 computes parity of held points (UNATE, independently refereed), and so does the
   8-point lattice torus (2, 0, 4) in its most constrained class (PARITY-NEEDS): one handle is enough; the limit is the memories' shape.
   No lattice torus up to 24 points counts five held points, and only tori of 8 to 18 points count three; two counting tori grown at the
   two lines of K_2 compute no parity map at all, because the second unties the host's wire (PARITY-FIVE).
@@ -53,7 +56,7 @@ with results kept per space (B151); a probe that is a theorem (B130); how learni
 harness are in `proofs/LEARN-PARITY-20261111-001A/.../parity_lib.py`, and the exact parity-check method, the composed space and the
 five-input harness in `proofs/PARITY-FIVE-20261111-001A/.../five_lib.py`;
 writing with only the ones named (B131); a frame fixed by learning (B126). The deeper spaces are in
-`proofs/DEEP-MEM-20261111-001A/.../deep_lib.py`; random knot spaces and the parity gadget in `proofs/UNATE-20261111-001A/.../unate_lib.py`.
+`proofs/DEEP-MEM-20261111-001A/.../deep_lib.py`; random drawn knot patterns and the parity gadget in `proofs/UNATE-20261111-001A/.../unate_lib.py`.
 
 **Lessons from the line's corrections** (`docs/CORRECTIONS.md`): read a role through a second signing before calling it stored memory;
 re-run with a defect fixed before reading failures as a property of the system; rule a shared fallible check out before reading a
@@ -64,10 +67,10 @@ difference between two learners; every learning count is scored by SAT, so a foo
 Sections 1 to 8 are the note as written for B95. Fourteen epics since then change its statement; this section is the current one.
 
 **Proved by hand.**
-- **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus knot space less a point) acts as the line it
+- **Any class-forced atom remembers** (`OTHER-ATOMS-20261110-001`). A torus atom (a torus drawn knot pattern less a point) acts as the line it
   replaced exactly in the classes where its torus has no satisfying state, and lets everything through where it has one, provided the
   torus is free at the removed point; where it acts it holds a unit. So the atom rule of section 3 holds for such atoms on any orientable
-  knot space with a Kasteleyn law, atoms adjacent or not. The Fano atom is not required (A48 overturned as a limit, replaced by A52).
+  drawn knot pattern with a Kasteleyn law, atoms adjacent or not. The Fano piece is not required (A48 overturned as a limit, replaced by A52).
 - **Atoms nest** (`NEST-ATOMS-20261110-001`). A knot sphere carrying such atoms, less a point, is again such an atom: it acts as its line
   exactly where every atom inside acts, at any depth, and a composite of genus g holds g − 1 units, g where it acts.
 - **Units sit where the rule says** (`MANY-POINTS-20261110-001`). With two composites and three floor units, no region holds three, the
@@ -126,11 +129,11 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 - Three held inputs (`THREE-IN-20261110-001`): exact on every class of six spaces, no map of three held points is parity, majority or
   non-unate, and the only total maps copy or negate one input; with the frame lemma this covers every law. The learner never accepted
   parity or majority (8 of 8) and learned the single-input map at 2 of 4 interfaces. *Corrected (`UNATE-20261111-001`): this is a
-  property of the memories' interfaces; an 8-point knot space of genus 4 computes parity of held points.*
+  property of the memories' interfaces; an 8-point drawn knot pattern of genus 4 computes parity of held points.*
 - Deeper memories (`DEEP-MEM-20261111-001`, frozen): composites holding a leaf three levels down and composites of three atoms, 40 of 40
   composite writes learned and held, 55 of 56 leaf writes; depth cost nothing, a second atom about eighteen times the steps.
-- Knots can count (`UNATE-20261111-001`, exact): an 8-point knot space of genus 4 computes the parity of three held points; majority
-  occurs in every size of random knot space searched; the deeper memories' interfaces stay unate.
+- Knots can count (`UNATE-20261111-001`, exact): an 8-point drawn knot pattern of genus 4 computes the parity of three held points; majority
+  occurs in every size of random drawn knot pattern searched; the deeper memories' interfaces stay unate.
 - One handle is enough (`PARITY-NEEDS-20261111-001`, exact): the 8-point lattice torus (2, 0, 4) in its most constrained class counts three
   held points; 16 of 281 lattice tori do; no planar disk gadget unless P = NP.
 - The memory learns to count (`LEARN-PARITY-20261111-001`, frozen): the unchanged learner learned and held three-input parity in 20 of 20
@@ -177,7 +180,7 @@ learning in handles, had waited since 2026-11-07. On 2026-11-09 the owner asked 
    (**computed**, a finite check of the theorem); a local rule with an outside distance resolved 9,608 of 9,608 starts (**computed**).
 2. **A native target** (`NATIVE-TARGET-20261110-001`). Without the outside distance, a learner that sees its own moves three ahead, or one
    that keeps the most states sharing its dissonance, resolves every start and beats random moves (**computed**, to 46 points).
-3. **Growing a handle** (`GROW-HANDLE-20261110-001`). Splicing a Fano atom (the Fano plane less a point) at a sphere's line makes a torus
+3. **Growing a handle** (`GROW-HANDLE-20261110-001`). Splicing a Fano piece (the Fano plane less a point) at a sphere's line makes a torus
    whose law extends with no even face (**proved**). The atom acts as the line it replaced in one class and is transparent in the others
    (**exact on small cases**: 540 grown tori, K_2 to K_5; later **computer-assisted** for every K_k, item 15). Learning then removes the
    sphere's dissonance through the grown handle (**proved**), in 3 sign changes when grown at the dissonance (**computed**).
@@ -209,7 +212,7 @@ learning in handles, had waited since 2026-11-07. On 2026-11-09 the owner asked 
 
 ## 3. The atom rule, exactly
 
-**Statement.** On an octahedral knot sphere K_k, k ≥ 2, with its Kasteleyn law and Fano atoms spliced at lines whose neighbourhoods are
+**Statement.** On an octahedral knot sphere K_k, k ≥ 2, with its Kasteleyn law and Fano pieces spliced at lines whose neighbourhoods are
 disjoint (separated atoms), with the new sides signed so that no face is even:
 
 1. each atom acts as its replaced line in exactly one of the four classes of its own handle, independently of the other atoms;
@@ -223,7 +226,7 @@ none new beyond K_3, with a structural reason.
 **Outside the theorem.**
 - Atoms whose neighbourhoods overlap (lines at small distance): only the exact small-case results of item 13 cover them.
 - That units beyond the acting atoms are free (when fewer atoms act than there are units): **exact on small cases** only (item 13).
-- Spheres other than the octahedral ones (backlog B96), and atoms other than the Fano atom with uniform signs (A48).
+- Spheres other than the octahedral ones (backlog B96), and atoms other than the Fano piece with uniform signs (A48).
 
 ## 4. Where the pre-registrations were wrong
 
@@ -251,7 +254,7 @@ Recorded as failed predictions, not hidden:
 ## 6. Assumptions in force
 
 A20, A21 (confirmed on the sphere, with its boundary off it), A46 (what counts as dissonance), A47 (what counts as a native signal), A48
-(a grown handle is a Fano atom with the uniform law), A49 (the weight W), A50 (the state moves without raising W while learning acts); A26
+(a grown handle is a Fano piece with the uniform law), A49 (the weight W), A50 (the state moves without raising W while learning acts); A26
 (the state holds still) overturned as a limit by item 7, its fixed-state results standing as such.
 
 ## 7. In the owner's words
@@ -267,15 +270,15 @@ tension around; learning decides where it rests. That much is a theorem on these
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — a note on the learning line (B95) | **Status:** Successful | the line written up; every count checked against its record |
-| Local direction — the learned memory in Fano atoms | Practically complete for this phase | written, held, rewritten, read; the rule proved |
+| Local direction — the learned memory in Fano pieces | Practically complete for this phase | written, held, rewritten, read; the rule proved |
 | Broader exploration — learning program | Known alternatives | other atoms, capacity, the open observations |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a learned memory with a proved rule |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a learned memory with a proved rule |
 
 **Next step:** Research directions — selected: #1
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Other atoms, a challenge of A48 (B97) | 2/3 — Substantial | 2/3 — Testable | grow a thin-torus atom and other genus-1 gadgets at a sphere's line → they act and turn transparent as the Fano atom does, or the memory needs the Fano plane | Selected · awaiting go-ahead |
+| 1 | Other atoms, a challenge of A48 (B97) | 2/3 — Substantial | 2/3 — Testable | grow a thin-torus atom and other genus-1 gadgets at a sphere's line → they act and turn transparent as the Fano piece does, or the memory needs the Fano plane | Selected · awaiting go-ahead |
 | 2 | Capacity of the learned memory (B98) | 1/3 — Incremental | 3/3 — Ready | write every acting subset of three and four atoms, smaller ones included → all 2^g − 1 written and held, or some not | Alternative · deferred |
 | 3 | Learner local minima (B90) | 1/3 — Incremental | 3/3 — Ready | list the 10 stuck ends' dissonance, try the targeted search from each → described and escapable, or not | Alternative · deferred |
 | 4 | The rule beyond octahedral spheres (B96) | 1/3 — Incremental | 2/3 — Testable | the local check on other spheres → same rule, or a breaking type | Alternative · deferred |

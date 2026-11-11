@@ -1,10 +1,13 @@
 # Mutual selection: the decision
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `MUTUAL-SELECTION-20261031-001`, closed 2026-10-31. Program: foundations.
 
 ## The request
 
-`KNOT-COUPLING-20261031-001` showed that on the knot's spaces exactly two non-trivial laws count easily: the knot's law (not-all-equal)
+`KNOT-COUPLING-20261031-001` showed that on the knot's contradictions exactly two non-trivial laws count easily: the knot's law (not-all-equal)
 and the dimer law. The owner approved a bounded scan ("Yes, let's continue"): is this mutual selection special to the knot?
 
 **Mutual selection.** A law has it when two things hold:

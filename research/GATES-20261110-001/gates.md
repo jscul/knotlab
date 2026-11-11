@@ -1,5 +1,8 @@
 # A learned network that computes
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `GATES-20261110-001` (sub-goal B118, G15; program learning), 2026-11-10, at the coordinator's go-ahead after the owner's "Yes, let's
 do that." Pre-registered in [preregistration.md](preregistration.md), frozen in commit `6c0331519` before any run. Proof family:
 `proofs/GATES-20261110-001A/`.
@@ -67,14 +70,14 @@ signal, which way their tension is wound, and that one comes through as an odd-o
 | This attempt — a learned network that computes (B118) | **Status:** Partially successful | AND and OR read and three limits proved; the predicted negation not found |
 | Local direction — gates from cuts and names | Obstruction learned | no negation of an acting bit in the frozen families; lemma C says where one would have to come from |
 | Broader exploration — learning program | Known alternatives | reading the full class, negation inside a cut leaf, composing gates, native writing |
-| Long-term goal — G15 Learning: a point in a learned knot space | No demonstrated advance toward "computes" | monotone readings only, so far |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | No demonstrated advance toward "computes" | monotone readings only, so far |
 
 **Next step:** Research directions — selected: #1
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Reading the class, not the bit (B122) | 2/3 — Substantial | 2/3 — Testable | take each leaf's two class bits as the stored state and census which functions of them the frozen families read; names already read their parity → AND, OR and parity (a complete basis with constants), or a class confined | Selected · awaiting go-ahead |
-| 2 | Negation inside a cut leaf (B123) | 2/3 — Substantial | 2/3 — Testable | F4′ with larger leaves (thin (3,2,2), the Fano atom) and hosts, names inside the leaf → a NOT, or a proof that names inside a cut leaf stay monotone too | Alternative · deferred |
+| 2 | Negation inside a cut leaf (B123) | 2/3 — Substantial | 2/3 — Testable | F4′ with larger leaves (thin (3,2,2), the Fano piece) and hosts, names inside the leaf → a NOT, or a proof that names inside a cut leaf stay monotone too | Alternative · deferred |
 | 3 | Native writing (B119) | 2/3 — Substantial | 2/3 — Testable | as recorded | Alternative · deferred |
 | 4 | Composing gates (B124) | 2/3 — Substantial | 1/3 — Exploratory | make a gate's reading a stored bit of the next network (a role with two values) → gates wired, or readings that do not compose | Alternative · deferred |
 | 5 | Inputs and outputs (B120) | 2/3 — Substantial | 1/3 — Exploratory | as recorded | Alternative · deferred |

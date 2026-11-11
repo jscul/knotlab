@@ -1,5 +1,8 @@
 # The sphere's count written out, and stronger proof systems
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `COUNT-NOTE-20261107-001` (program complexity), 2026-11-07.
 
 ## The question
@@ -83,7 +86,7 @@ Carried from earlier epics:
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
 | Current attempt — the self-contained note (a) and stronger systems (b) | **Status:** Successful | (a) Every lemma is proved, with no gap, and grid Sperner's size bound is upgraded from a sketch. (b) The count is in unary Sherali–Adams of degree 3 (PPADS^dt). Cutting planes and Res(⊕) remain open as proof systems. |
-| Local direction — resolution lower bounds for the knot's spaces | Practically complete for the plane core | Width Θ(√n) and size 2^Θ(√n) are written out. Decorated three-fold spaces are not covered; extending to them is routine, not discovery. |
+| Local direction — resolution lower bounds for the knot's spaces | Practically complete for the plane core | Width Θ(√n) and size 2^Θ(√n) are written out. Decorated three-regular contradictions are not covered; extending to them is routine, not discovery. |
 | Broader exploration — the count among proof systems and TFNP classes | Searching | Sherali–Adams: easy (unary, degree 3). Resolution: 2^Θ(√n). Cutting planes, Res(⊕) and unary Nullstellensatz (PPAD) are unassessed. |
 | Long-term goal — the complexity of the knot's spaces | Capability gained | The knot's emergence on a closed surface is a natural PPADS^dt count that is exponentially hard for resolution. Its place relative to PPAD, the two-sided Sperner class, is the missing bridge. |
 | Next recommendation — the TFNP placement | **Next step:** Research directions. (i) Does the count have low-degree unary Nullstellensatz refutations? Yes would put it in PPAD^dt. A degree lower bound would make it a natural planar member of PPADS^dt outside PPAD^dt. (ii) Alternative (1/3): a short cutting-planes refutation built from the line–face count. | (i) This decides whether one-sided orientation, the knot's sign, matters to the TFNP class. The cheap discriminator is the Nullstellensatz degree over Q on K_2..K_6 by linear algebra, before any proof. |

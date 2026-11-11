@@ -1,5 +1,8 @@
 # Selection versus composition, and counted length
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SELECT-COUNT-20261101-001` (program topology), 2026-11-01.
 
 ## The question
@@ -8,7 +11,7 @@ Epic `SELECT-COUNT-20261101-001` (program topology), 2026-11-01.
   measure." That approves NATIVE-PATHS-20261101-001's recommendation and one of its alternatives.
 - **(A) The selection-versus-composition test.** Does any law both select its spaces (mutual selection) and compose its knots like
   cycles (the program's criterion for native composition)? The five weak four-place classes were the only open candidates.
-- **(B) Counted length.** Is the count of witnesses along the routes of the knot's spaces a measure, and what does it measure?
+- **(B) Counted length.** Is the count of witnesses along the routes of the knot's contradictions a measure, and what does it measure?
 
 ## Conclusions
 
@@ -17,7 +20,7 @@ Epic `SELECT-COUNT-20261101-001` (program topology), 2026-11-01.
 | 1 | Every relation of the five weak classes yields a knot with a forcing place, directly for 13, 16 and 17, and after identifying two places for 14 and 15. Two copies sharing that place form a hub, so none composes its knots like cycles. | proof; 288 relations checked | A |
 | 2 | A law with a knot whose knots compose like cycles is affine, so its count is 2^(n−r) or 0 and it has no mutual selection. Selection and cycle-like composition exclude each other for every Boolean law with a knot. | proof (KNOT-CIRCUITS Theorem 2 plus two lemmas) | A |
 | 3 | A knot-free law, such as signed two-clauses, can select. Selection without knots exists only below three places. | remark (Valiant) | A |
-| 4 | On a knot's space, each side of every nontrivial 2- or 3-edge cut has one count on its accepted channel values, and the two counts multiply to the amplitude. So counted length (log of the count) is additive: a measure on the decomposition. | proof; 216 cuts checked | B |
+| 4 | On a contradiction, each side of every nontrivial 2- or 3-edge cut has one count on its accepted channel values, and the two counts multiply to the amplitude. So counted length (log of the count) is additive: a measure on the decomposition. | proof; 216 cuts checked | B |
 | 5 | Counted length is log 5 per Fano block (one handle) plus the log of the glue's tree-trinity number (log 2 in the twisted cube). It is m log 5 along m units, where relations keep m mod 2. | proof and computation | B |
 | 6 | In rings of units cut from different spaces, the relation (parity of the number of units) and the count (product of amplitudes) vary independently. | proof; 7 rings | B |
 | 7 | Counted length is unchanged by transposition and isomorphism, but not by relationally equal replacement. It is a law-intrinsic measure on substrate routes, not native extended distance. | proof and reading | B |
@@ -30,7 +33,7 @@ Epic `SELECT-COUNT-20261101-001` (program topology), 2026-11-01.
   - parity composes;
   - the affine boundary separates them.
 - **Counted length works as a measure.**
-  - It is additive over every cut of a knot's space and fixed by the law and the substrate.
+  - It is additive over every cut of a contradiction and fixed by the law and the substrate.
   - It counts handles and glue, and it sees what the relations hide.
   - It is a measure on the routes of the declared substrate, not a native distance, because those routes are not native paths.
 
@@ -40,7 +43,7 @@ Epic `SELECT-COUNT-20261101-001` (program topology), 2026-11-01.
   - The relational layer (K1–K3, witnesses quantified away) carries emergence and decides failure, and it carries one bit along a
     route.
   - The counting layer carries magnitude: how much each part hides.
-  - The knot's spaces separate the two cleanly. The relation counts parts mod 2; the count counts handles.
+  - The knot's contradictions separate the two cleanly. The relation counts parts mod 2; the count counts handles.
 - **Selection lives where composition ends.**
   - At two values, composing like cycles needs linearity (an affine law), and linearity makes counting easy.
   - The knot's hard count therefore rules out the linearity that cycle-like composition needs.

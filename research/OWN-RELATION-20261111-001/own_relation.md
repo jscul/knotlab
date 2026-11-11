@@ -1,28 +1,31 @@
-# Does a knot space read its own relation?
+# Does a drawn knot pattern read its own relation?
+
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a knot world is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
 
 Epic `OWN-RELATION-20261111-001` (direction #1 of `HOLD-COUNT-20261111-001`, G8 with G15; program mathematics), 2026-11-11, at the
 coordinator's go-ahead. Pre-registered in [preregistration.md](preregistration.md), frozen in commit `bce78f40c` before the census ran.
 Proof family: `proofs/OWN-RELATION-20261111-001A/`.
 
-Words, after the owner's rule of 2026-11-11 that spatial words are not literal yet: a knot world here is a set of distinctions in which
+Words, after the owner's rule of 2026-11-11 that spatial words are not literal yet: a drawn knot pattern here is a set of distinctions in which
 every distinction lies in three knots and every knot (a not-all-equal relation) joins three distinctions. Its loop count is the number
 of independent loops of distinctions that no patch of knots fills; the literature calls half of it the genus of the drawn surface.
 
 ## The question
 
-To count held distinctions in threes, a knot world with one fixed value would need a distinction that reads one of two maps of four
+To count held distinctions in threes, a drawn knot pattern with one fixed value would need a distinction that reads one of two maps of four
 held distinctions: a ⊕ NAE(b, c, d), the knot's own relation read against a fourth distinction, or a switch between the parity and the
 majority of three. `HOLD-COUNT-20261111-001` found neither on 1,128 worlds of up to 20 distinctions, only the two other kinds of map
 that use four held distinctions. Is that a property of the knot law, or of small worlds?
 
 ## The answer
 
-**No knot world in range reads its own relation, and the reason is not the law alone.**
+**No drawn knot pattern in range reads its own relation, and the reason is not the law alone.**
 
 - **Not forced (proved).** All four kinds are self-dual, so theorem D allows them; not-all-equal with hidden distinctions builds every
   relation closed under flipping every value, so knot systems without the world structure (three knots per distinction, the drawn
   surface, the Kasteleyn law) realise both missing kinds.
-- **Not found (exact, frozen, refereed).** 453 random knot worlds of 16, 18 and 20 distinctions with 4, 6 or 8 unfilled loops, every
+- **Not found (exact, frozen, refereed).** 453 random drawn knot patterns of 16, 18 and 20 distinctions with 4, 6 or 8 unfilled loops, every
   class, 179.6 million free sets of four held distinctions: 4,303 readings of the weighted majority, 33 of maj(a, b, a ⊕ c ⊕ d), none of
   the switch or of a ⊕ NAE. With `HOLD-COUNT-20261111-001`, no world of up to 20 distinctions in 1,581 does it.
 - **Readings thin out (exact; P2 failed).** I predicted the rare kind would grow with size; instead every four-point reading gets
@@ -52,7 +55,7 @@ that use four held distinctions. Is that a property of the knot law, or of small
 
 ## What it changes
 
-- **For the owner's knapsack question.** Counting in twos is native and counting in threes is not, in any knot world this census
+- **For the owner's knapsack question.** Counting in twos is native and counting in threes is not, in any drawn knot pattern this census
   reaches, even with a fixed value supplied: no distinction reads whether three others are not all equal against a fourth. Whether a
   larger or composed world can is open.
 - **For the program.** The decided readings of held distinctions look like a small clone: majorities with at most one parity input.
@@ -68,7 +71,7 @@ None.
 
 ## In the owner's words
 
-A knot world can hold a count in twos, as binary digits. To hold one in threes it would need a distinction that tells whether three
+A drawn knot pattern can hold a count in twos, as binary digits. To hold one in threes it would need a distinction that tells whether three
 others are not all equal, which is the knot's own relation, read against a fourth. Nothing in the rules forbids it, but none of the
 1,581 small worlds tried does it, and bigger random worlds force less, not more.
 
@@ -76,7 +79,7 @@ others are not all equal, which is the knot's own relation, read against a fourt
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — does a knot world read its own relation? | **Status:** Partially successful | none in 453 worlds of 16 to 20; proof not found |
+| This attempt — does a drawn knot pattern read its own relation? | **Status:** Partially successful | none in 453 worlds of 16 to 20; proof not found |
 | Local direction — four-point readings in random worlds | Practically exhausted | readings thin out past 16 distinctions |
 | Broader exploration — arithmetic and learning lines | Known alternatives | targeted search, a matchgate bound, composing counters |
 | Long-term goal — G8 From spacing to arithmetic and sets | Obstruction learned | counting in threes not reached in one small world |

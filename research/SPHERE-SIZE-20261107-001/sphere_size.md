@@ -1,5 +1,8 @@
 # Resolution size of the sphere's count
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SPHERE-SIZE-20261107-001` (program complexity), 2026-11-07.
 
 ## The question
@@ -63,7 +66,7 @@ Carried from earlier epics:
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
 | Current attempt — resolution size of the sphere's count | **Status:** Done, proved | 2^{Θ(√n)}, by local randomization and the island lemma. The constants are tiny but absolute, and the grid-Sperner corollary is sketched. |
-| Local direction — resolution lower bounds for the knot's spaces | Complete for the plane core | Width Θ(√n) and size 2^{Θ(√n)}. What remains here is consolidation: the grid-Sperner details, and decorated three-fold spaces. |
+| Local direction — resolution lower bounds for the knot's spaces | Complete for the plane core | Width Θ(√n) and size 2^{Θ(√n)}. What remains here is consolidation: the grid-Sperner details, and decorated three-regular contradictions. |
 | Broader exploration — stronger proof systems | Open | Sherali–Adams refutes at level 3. Cutting planes, Res(⊕) and bounded-depth Frege are untested on these formulas. |
 | Long-term goal — the complexity of the knot's spaces | Major progress | The plane core is classified for resolution (Θ(√n) width, 2^{Θ(√n)} size) and is easy for Sherali–Adams. The knot's first emergence on a closed surface is a "mutilated chessboard" principle. |
 | Next recommendation — write and verify, or test stronger systems | **Next step:** Research directions. (a) Turn the three width and size proofs into one self-contained note, closing the sketched lemmas (winding bound, isoperimetry, grid-Sperner boundary islands) and checking the closest literature once more. (b) Test whether cutting planes or Res(⊕) refute the sphere's count cheaply. | **(a)** Converts the strongest result into a checkable artifact; the sketches are the main risk to the claim. **(b)** Would place the count among proof systems and tie it to PPADS (the unary Sherali–Adams question). |

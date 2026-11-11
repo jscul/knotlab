@@ -1,12 +1,15 @@
 # The count from growth
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a flat world is a six-regular weave. Results are unchanged;
+the earlier text is in git history.
+
 Epic `GROW-COUNT-20261111-001` (RULER-20261111-001 direction 2; G1, question 9; the challenge of A64), 2026-11-11, at the owner's
 go-ahead ("Yes, let's continue it"). Pre-registered in commit 34610c9ff before any registered run. The canonical K1–K3 test is
 unchanged.
 
 ## The question
 
-- **Where it comes from.** The not-all-equal law (NAE) reads long-loop flat worlds of knots alone faithfully and measures them
+- **Where it comes from.** The not-all-equal law (NAE) reads long-loop six-regular weaves of knots alone faithfully and measures them
   exactly (`LONG-LOOP-20261111-001`, `RULER-20261111-001`), but the count of how knots meet, two knots per co-knotted pair, one link
   per distinction, six knots per distinction, is put in, and a static faithful reading does not supply it (`NAE-SURFACE-20261111-001`).
 - **The question.** Can growth supply it? A world grows from one knot; a knot proposed on a co-knotted pair is kept only while NAE
@@ -130,7 +133,7 @@ gains a history line, status unchanged.
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | The ruler on tori and Klein bottles (was `RULER-20261111-001#1`) | 2/3 — Substantial | 2/3 — Testable | Extend the criterion to quasi-periodic heights; bound the tilt a short pattern sees by edge-width → β = δ + 1 below a proved function of edge-width, or the first counterexample | Selected · awaiting go-ahead |
-| 2 | The local list of what NAE forbids | 2/3 — Substantial | 2/3 — Testable | Is "no adjacent apices plus long loops" exactly NAE-faithfulness on surface worlds? Test the lemma's converse on the frozen flat worlds of `LONG-LOOP-20261111-001` and on small spheres → a characterization, or a faithful failure it misses | Alternative · deferred |
+| 2 | The local list of what NAE forbids | 2/3 — Substantial | 2/3 — Testable | Is "no adjacent apices plus long loops" exactly NAE-faithfulness on surface worlds? Test the lemma's converse on the frozen six-regular weaves of `LONG-LOOP-20261111-001` and on small spheres → a characterization, or a faithful failure it misses | Alternative · deferred |
 | 3 | Write the knots-alone line up as a note | 1/3 — Modest | 3/3 — Ready | Five epics into one self-contained note → a note an expert can check | Alternative · deferred |
 | 4 | A face that emerges (was `GROW-FACE-20261110-001#1`) | 2/3 — Substantial | 1/3 — Stated | As recorded | Alternative · deferred |
 

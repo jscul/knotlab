@@ -1,5 +1,8 @@
 # Many points at once
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `MANY-POINTS-20261110-001` (backlog B3, G15 stretch goal; program learning), 2026-11-10, at the coordinator's go-ahead, which lifted
 the hold on B3. Pre-registered in [preregistration.md](preregistration.md), frozen in commit `880f19375` before any run. Proof families:
 `proofs/MANY-POINTS-20261110-001A/` (where units sit together), `…B/` (two points at once), `…C/` (writing with more addresses).
@@ -71,7 +74,7 @@ order, and the memory keeps what it was told. Two points on one line meet, and u
 | This attempt — many points at once (B3) | **Status:** Successful | points apart move independently in every order; on a shared line they meet, mostly cancelling |
 | Local direction — the layered memory | Capability gained | unit placements proved and realized; parallel disturbances keep the address |
 | Broader exploration — learning program | Known alternatives | an OR from a host, a native atom, naming knots as layers |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | many points in a learned network, with a locality observed |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | many points in a learned network, with a locality observed |
 
 **Next step:** Research directions — selected: #1
 

@@ -1,5 +1,8 @@
 # Does creation between glue lines tell every switching class apart?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SWITCH-COMPLETE-20261108-001` (program topology), 2026-11-08.
 
 ## The question
@@ -41,14 +44,14 @@ Epic `SWITCH-COMPLETE-20261108-001` (program topology), 2026-11-08.
 - **The count is invisible.** Creation is a qualitative reading, which knots a far side adds, and it does not carry the number of
   solutions. Whether it carries any part of what counting needs is open.
 - **Contradiction is visible.** On both glues the class that makes the space contradictory is told apart from every other. That is the
-  class the knot's three-fold spaces use.
+  class the knot's three-regular contradictions use.
 - **Doctrine.** Everything here is invariant under relabeling lines and points; the spanning tree only names the classes.
 
 ## Literature
 
 - **Classical.** Switching classes of signed graphs and the action of the graph's automorphisms on them (Zaslavsky).
 - **Ours.** The theorem this inverts (SWITCH-PROOF), the placements (SWITCH-READ), the glues and the engine (TRISUM-READ,
-  HANDLE-COUNT, CHAIN-TRANSFER, PENDANT-LINE), three-fold spaces (THREEFOLD-SPACES).
+  HANDLE-COUNT, CHAIN-TRANSFER, PENDANT-LINE), three-regular contradictions (THREEFOLD-SPACES).
 - **New here.** The computations, the growth of the blindness, and the Pfaffian class's own block.
 
 ## Stress test

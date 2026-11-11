@@ -1,5 +1,8 @@
 # Relay networks
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `RELAY-NET-20261104-001` (program topology), 2026-11-04.
 
 ## The question
@@ -65,6 +68,6 @@ Epic `RELAY-NET-20261104-001` (program topology), 2026-11-04.
 | Local direction — relays | Practically complete | **What is left.** The display rule (when a live wire creates), the arc lemma's converse as a theorem, and networks with overlapping cuts. |
 | Broader exploration — where selection creates | Mapped as a wiring | **The map.** A handle creates around its point, after collapsing untouched sides. It also creates at the end of every aligned wire leaving its piece, and at every branch of a hub. |
 | Long-term goal — topology from native emergence | Capability gained | **Gained.** Native selection's reading of a handle has a directed wiring structure. The missing bridge: whether that reading sees the space's topology, such as its number of handles. |
-| Next recommendation — a native reading of genus | **Next step:** Continue. Build spaces with several Fano atoms in plane glue joined by wires and liquid regions. Ask whether the creation map over all removals splits into one halo per atom, so that it counts the handles and locates them, and when wires make the halos of different atoms overlap. | **If yes.** Native selection counts handles, a native genus invariant. **If no.** Overlapping halos show what native selection cannot separate. **Alternatives.** The display rule (1/3). The claim rule's converse as a theorem (2/3). |
+| Next recommendation — a native reading of genus | **Next step:** Continue. Build spaces with several Fano pieces in plane glue joined by wires and liquid regions. Ask whether the creation map over all removals splits into one halo per atom, so that it counts the handles and locates them, and when wires make the halos of different atoms overlap. | **If yes.** Native selection counts handles, a native genus invariant. **If no.** Overlapping halos show what native selection cannot separate. **Alternatives.** The display rule (1/3). The claim rule's converse as a theorem (2/3). |
 | Interest — that recommendation | **2/3 — Promising** | **Evidence.** Each removal opens exactly one atom, and halos and wires are now computable at scale, so the creation map is computable and attributable. **Main uncertainty.** Wires and hubs can carry one atom's halo into another's region, which may blur the count. |
 | Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** Spaces with up to four atoms and a few hundred points, with exact checks on small ones. **Stop when** the count and location of handles from the creation map is decided on the families tested. |

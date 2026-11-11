@@ -1,11 +1,14 @@
 # Does the law decide which atom holds the unit?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LAW-HOLDS-20261110-001` (backlog B79, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family: `proofs/LAW-HOLDS-20261110-001A/LAW-HOLDS-20261110-001A-P001_host_faces_by_sign_class/`.
 
 ## The question
 
-With the law fixed, a unit settled at the genus-2 floor never left its Fano atom under state flips (`RISE-ESCAPE-20261110-001`). Is that
+With the law fixed, a unit settled at the genus-2 floor never left its Fano piece under state flips (`RISE-ESCAPE-20261110-001`). Is that
 because no state of that law has it anywhere else?
 
 ## The answer (exact, by SAT over every state)
@@ -34,7 +37,7 @@ None. This makes `RISE-ESCAPE-20261110-001`'s capped K_3 cases exact: no state o
 | This attempt — does the law decide (B79) | **Status:** Successful | the acting atom holds the unit, in every state |
 | Local direction — moving the unit | Continue, by changing the law | the trap is the law's, so learning must move it |
 | Broader exploration — learning program | Known alternatives | learning at a rise |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | where tension sits is a learned fact |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | where tension sits is a learned fact |
 
 **Next step:** Continue — selected: #1
 

@@ -1,4 +1,7 @@
-# What a knot space needs to compute parity
+# What a drawn knot pattern needs to compute parity
+
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
 
 Epic `PARITY-NEEDS-20261111-001` (backlog B147, G15 with G16; program learning), 2026-11-11, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen in commit `b6ededb25` before the search ran. Proof family:
@@ -11,9 +14,9 @@ exactly: hold points 0, 1 and 4, and point 5 is forced to their sum mod 2. Genus
 face unless P = NP. So, in the searched range, the least genus for parity is 1.
 
 - **The headline gadget refereed (exact).** `UNATE-20261111-001`'s 8-point genus-4 gadget passed an independent check by fresh code: a valid
-  knot space with a Kasteleyn law, every line a knot and the four-point parity relation a knot under the canonical K1–K3 test.
-- **The least genus (exact, capped search).** Of 281 lattice tori up to 20 points, 16 (from 8 to 18 points) compute parity; random knot
-  spaces steered to genus 2 and 3 compute it too (20 and 12 maps); the 113 steered random tori did not. No other non-unate map occurs.
+  drawn knot pattern with a Kasteleyn law, every line a knot and the four-point parity relation a knot under the canonical K1–K3 test.
+- **The least genus (exact, capped search).** Of 281 lattice tori up to 20 points, 16 (from 8 to 18 points) compute parity; random drawn knot
+  patterns steered to genus 2 and 3 compute it too (20 and 12 maps); the 113 steered random tori did not. No other non-unate map occurs.
 - **Genus 0 (conditional, by hand).** Planar NAE-3SAT is polynomial (Moret 1988); three four-point parity gates sharing a local reference
   make a crossover (after Lichtenstein 1982), so a planar disk gadget would make planar NAE-3SAT NP-hard.
 - **Where parity sits (computed, after the run).** In every one of the 16 tori, parity occurs exactly in the class with the fewest floor
@@ -23,7 +26,7 @@ face unless P = NP. So, in the searched range, the least genus for parity is 1.
 
 | Claim | Evidence class |
 | --- | --- |
-| The 8-point genus-4 gadget is a valid knot space and its parity relation a K1–K3 knot | independent check (fresh code, canonical test) |
+| The 8-point genus-4 gadget is a valid drawn knot pattern and its parity relation a K1–K3 knot | independent check (fresh code, canonical test) |
 | An 8-point lattice torus computes three-input parity; 16 of 281 lattice tori do | exhaustive computation |
 | No planar disk parity gadget unless P = NP | proved by hand from Moret 1988 and an XOR crossover |
 | Parity sits exactly in the most constrained class of each of the 16 tori | computed, after the run |
@@ -59,10 +62,10 @@ fourth. A flat sheet cannot, unless every hard problem is easy.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: what a knot space needs to compute parity (B147) | **Status:** Successful | least genus 1, smallest an 8-point torus in its most constrained class |
+| This attempt: what a drawn knot pattern needs to compute parity (B147) | **Status:** Successful | least genus 1, smallest an 8-point torus in its most constrained class |
 | Local direction: what held points can compute | Exhausted for this phase | the least genus and the place parity sits are found |
 | Broader exploration: learning program | Known alternatives | a learned memory that computes parity, the probe as a theorem |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | a single torus in its tightest class counts |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | a single torus in its tightest class counts |
 
 **Next step:** Research directions — selected: #1 (holding, per the coordinator, until a go-ahead)
 
@@ -85,17 +88,17 @@ Posted in the thread on 2026-11-11:
 
 **B147 is closed: one handle is enough to count.** The 8-point lattice torus (2, 0, 4), in its most constrained class, computes the parity of three held points exactly: hold points 0, 1 and 4, and point 5 is forced to their sum mod 2. Sixteen of the 281 lattice tori up to 20 points do the same, and each time parity sits in the torus's most constrained class.
 
-- **Referee pass on the headline gadget (logged):** fresh code, reading only the gadget's rotation system and signs, confirmed that the 8-point genus-4 space is a valid knot space: every point on three lines, genus 4 traced independently, every face odd (a Kasteleyn law). Under the canonical K1–K3 test (tools/knotlab), every line is a knot and the four-point parity relation is a knot. It's independent code, not an independent reviewer: this session doesn't start other agents.
+- **Referee pass on the headline gadget (logged):** fresh code, reading only the gadget's rotation system and signs, confirmed that the 8-point genus-4 space is a valid drawn knot pattern: every point on three lines, genus 4 traced independently, every face odd (a Kasteleyn law). Under the canonical K1–K3 test (tools/knotlab), every line is a knot and the four-point parity relation is a knot. It's independent code, not an independent reviewer: this session doesn't start other agents.
 - **Least genus, forced or not?** Genus 0 is excluded for gadgets whose terminals share a face, unless P = NP: planar NAE-3SAT is polynomial (Moret 1988), and three four-point parity gates sharing a local reference make a crossover (after Lichtenstein 1982). That much is credited to known results. Whether genus 1 suffices wasn't settled by any construction I know, so the search decided it: it does.
 - **Caps:** set in advance (300 s per space, 30 and 60 minutes per part). The whole search took under a minute, and nothing was dropped.
 - **My prediction was wrong:** I expected no parity on tori.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: what a knot space needs to compute parity (B147) | **Status:** Successful | least genus 1; smallest an 8-point torus in its most constrained class |
+| This attempt: what a drawn knot pattern needs to compute parity (B147) | **Status:** Successful | least genus 1; smallest an 8-point torus in its most constrained class |
 | Local direction: what held points can compute | Exhausted for this phase | the least genus and where parity sits are found |
 | Broader exploration: learning program | Known alternatives | a learned memory that computes parity, the probe as a theorem |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | a single torus in its tightest class counts |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | a single torus in its tightest class counts |
 
 **Next step:** Research directions, selected #1, holding until a go-ahead.
 

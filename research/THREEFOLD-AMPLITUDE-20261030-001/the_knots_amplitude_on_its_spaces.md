@@ -1,16 +1,19 @@
 # The knot's amplitude on its spaces
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `THREEFOLD-AMPLITUDE-20261030-001`, 2026-10-30.
 
 ## The question
 
 - **The owner's request (2026-10-30).** "Yes, let's continue on that." This approved the recommendation of
-  `THREEFOLD-SURFACES-20261030-001`: prove that the knot's exactness factor λ(0) on a three-fold space is 5 per handle times a factor from
+  `THREEFOLD-SURFACES-20261030-001`: prove that the knot's exactness factor λ(0) on a three-regular contradiction is 5 per handle times a factor from
   planar glue, and identify that factor.
 - **Setting.**
   - λ(0) is the number by which a gadget of the knot reproduces the knot: R = λ(0) · knot.
   - Through the duality of `SPACE-SELECTION-20261030-001C` it is a count of 2-colourings of the space's dual triple system H.
-  - The space decomposes along tight 3-edge cuts into Fano atoms (Heawood graphs, each one handle of the surface) and glue (doubled squares,
+  - The space decomposes along tight 3-edge cuts into Fano pieces (Heawood graphs, each one handle of the surface) and glue (doubled squares,
     planar braces, trisums).
 - **Scoping probe (not evidence).** λ(0) = 5^genus at every corner line on twelve spaces with doubled-square glue. The twisted cube, whose
   glue includes the planar cube, gives 2·5⁶.
@@ -36,7 +39,7 @@ Epic `THREEFOLD-AMPLITUDE-20261030-001`, 2026-10-30.
 
 **Yes, and the factor is Tutte's tree-trinity number. The amplitude is also one number for the whole space.**
 
-- **The product formula (A).** λ(0) = (−1)^(n−1) · 5^(Fano atoms) · Π ρ(P) · 6^(trisums of three cubes).
+- **The product formula (A).** λ(0) = (−1)^(n−1) · 5^(Fano pieces) · Π ρ(P) · 6^(trisums of three cubes).
   - **Planar glue.** ρ(P) is Tutte's tree-trinity number of each planar glue piece. For the omnitruncation of a planar map it is the number
     of spanning trees of the map; in general it is Kálmán's hypertree count.
   - **Doubled squares** contribute 1. So with doubled-square glue |λ(0)| = 5^genus.
@@ -48,7 +51,7 @@ Epic `THREEFOLD-AMPLITUDE-20261030-001`, 2026-10-30.
   - **Proof.** Place an Ising weight with couplings ±iπ/6, half the knot's angle, on the incidence graph. Summed over either side it becomes
     the not-all-equal constraint on the other. Counting one marked line in both orders makes each line's count the average of its points'
     counts, and vice versa. A maximum principle on the connected incidence graph then forces a single value.
-  - **Consequence.** Every brace, planar or not, has one amplitude, and the product formula holds for every three-fold space.
+  - **Consequence.** Every brace, planar or not, has one amplitude, and the product formula holds for every three-regular contradiction.
 - **Computation (B).**
   - Exhaustive on the census (2,652 classes up to 10 points).
   - The law at every corner of every space up to 22 points.
@@ -73,7 +76,7 @@ Epic `THREEFOLD-AMPLITUDE-20261030-001`, 2026-10-30.
 ## Reading
 
 - **The knot's own number measures what it builds.**
-  - Each handle of the surface (each Fano atom) contributes exactly 5.
+  - Each handle of the surface (each Fano piece) contributes exactly 5.
   - Flat glue contributes a classical count of trees: the spanning trees of the map it is cut from, or Tutte's tree-trinity number in general.
   - The sign is the parity of the number of triangles.
 - **The number belongs to the whole space.**
@@ -93,16 +96,16 @@ Epic `THREEFOLD-AMPLITUDE-20261030-001`, 2026-10-30.
 
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
-| Current attempt — the knot's amplitude on three-fold spaces | **Status:** Successful | The owner's question is answered and extended. The planar factor is Tutte's tree-trinity number, and the amplitude is proved to be one number per space for every non-colourable cubic system. |
-| Local direction — λ(0) on three-fold spaces | Practically complete | Open only for the values of non-planar glue (trisums), which depend on the gluing; a formula from boundary data of the pieces is possible but would be completion work. |
-| Broader exploration — space from a law (question 9) | Known alternatives | The knot's spaces now have surfaces and numbers. Unmapped: whether the knot's own signs give its surface further structure (spin), spaces with boundary, mixed contact sizes. |
+| Current attempt — the knot's amplitude on three-regular contradictions | **Status:** Successful | The owner's question is answered and extended. The planar factor is Tutte's tree-trinity number, and the amplitude is proved to be one number per space for every non-colourable cubic system. |
+| Local direction — λ(0) on three-regular contradictions | Practically complete | Open only for the values of non-planar glue (trisums), which depend on the gluing; a formula from boundary data of the pieces is possible but would be completion work. |
+| Broader exploration — space from a law (question 9) | Known alternatives | The knot's contradictions now have surfaces and numbers. Unmapped: whether the knot's own signs give its surface further structure (spin), spaces with boundary, mixed contact sizes. |
 | Long-term goal — space from logic without a drawn space | Capability gained | The knot's quantitative output is a topological and relational invariant of the space it builds: 5 per handle, trees per flat piece, independent of the vantage point. |
-| Next recommendation — the knot's spin structure | **Next step:** Continue, as a fresh epic. Does the knot's own (trivial) signing satisfy Kasteleyn's face condition on every minimal map of every three-fold space, so that each space carries a canonical spin structure on its surface? If so, find its Arf invariant per Fano atom, and whether λ(0) arises from the surface's 4^genus-term Pfaffian (Ising) expansion. Scratch evidence (not evidence of the claim): every face of the minimal maps up to 19 points has length 2 mod 4 (`THREEFOLD-SURFACES-20261030-001B`). | Ties the knot's signs to the topology it builds. A yes would make the surface a spin surface determined by logic; a no would locate where the knot's signs and its surface part ways. |
+| Next recommendation — the knot's spin structure | **Next step:** Continue, as a fresh epic. Does the knot's own (trivial) signing satisfy Kasteleyn's face condition on every minimal map of every three-regular contradiction, so that each space carries a canonical spin structure on its surface? If so, find its Arf invariant per Fano piece, and whether λ(0) arises from the surface's 4^genus-term Pfaffian (Ising) expansion. Scratch evidence (not evidence of the claim): every face of the minimal maps up to 19 points has length 2 mod 4 (`THREEFOLD-SURFACES-20261030-001B`). | Ties the knot's signs to the topology it builds. A yes would make the surface a spin surface determined by logic; a no would locate where the knot's signs and its surface part ways. |
 | Interest — that recommendation | **2/3 — Promising** | The face-length data are suggestive, and Kasteleyn structures on surfaces correspond to spin structures. Main uncertainty: the face condition may follow formally from Pfaffian-ness plus minimal genus, leaving little new meaning. |
 | Execution — that next action | Deferred to the owner (fresh epic) | Done so far: this epic. First discriminator: test the face condition on the minimal maps of spaces with planar and trisum glue (twisted cube, 35-point trisum space). Stop if it fails there, or once the spin structure and its Arf invariant are identified. |
 
 **Recommendation.** **Continue**, as a fresh epic: the knot's spin structure (2/3). Two alternatives were considered.
 - **The trisum law and polynomial time (1/3).** Express a trisum's amplitude through boundary counts of its pieces. That would make λ(0)
-  computable in polynomial time on every three-fold space, via the Robertson–Seymour–Thomas decomposition. It is completion-like.
+  computable in polynomial time on every three-regular contradiction, via the Robertson–Seymour–Thomas decomposition. It is completion-like.
 - **A short note on the one-amplitude theorem (1/3).** A clean combinatorial statement about minimally non-2-colourable cubic hypergraphs.
   It needs a deeper literature check first. The owner asks for write-ups only for results of real magnitude.

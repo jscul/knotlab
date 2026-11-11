@@ -1,5 +1,8 @@
 # Which functions a composite computes
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `COMPOSITE-FN-20261110-001` (backlog B109 with B112 folded in, G15; program learning), 2026-11-10, at the coordinator's go-ahead.
 Pre-registered in [preregistration.md](preregistration.md), frozen in commit `36d02b296` before any run. Proof families:
 `proofs/COMPOSITE-FN-20261110-001A/` (AND for critical hosts), `…B/` (a search outside the proved class), `…C/` (points and a shared
@@ -83,7 +86,7 @@ stays apart.
 | This attempt — which functions a composite computes (B109) | **Status:** Successful | AND only, proved for every host the program can build; the search found no other host |
 | Local direction — the layered memory | Practically complete for this phase | its rule, its units, its parallel moves and its function are all proved |
 | Broader exploration — learning program | Known alternatives | a native choice of atom, naming knots as layers, whether every host is critical |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a layered memory whose logic is proved: conjunctions at every level |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a layered memory whose logic is proved: conjunctions at every level |
 
 **Next step:** Research directions — selected: #1
 

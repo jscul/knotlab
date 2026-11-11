@@ -1,5 +1,8 @@
 # The knot's count in TFNP
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `COUNT-TFNP-20261107-001` (program complexity), 2026-11-07.
 
 ## The question
@@ -74,6 +77,6 @@ Carried from earlier epics:
 | Local direction — the knot sphere's count across proof systems | Practically complete | Resolution 2^Θ(√n) (width Θ(√n)); unary Sherali–Adams degree 3; no low-degree Nullstellensatz; PPADS^dt-complete. Open but incremental: explicit Nullstellensatz degrees, the circuit version, cutting planes and Res(⊕). |
 | Broader exploration — the knot's counts on other spaces | Unmapped | Only the octahedral sphere is classified. The Euler count gives violated lines minus monochromatic faces = (F − L)/2, which depends on the space's topology. Friedl et al. tie Sperner's class to orientability (PPAD/PPADS against PPA). |
 | Long-term goal — the complexity of the knot's spaces, the intuition "hardness at three places" | Capability gained | The knot's first emergence on the sphere is complete for a standard class, and its orientation is exactly the PPAD/PPADS distinction. This chain presupposes a drawn sphere, so it does not move question 9 (space from a law with nothing drawn). |
-| Next recommendation — topology to TFNP class | **Next step:** Research directions. (i) The knot's count on non-orientable and higher-genus knot spaces: does the surface's Euler characteristic and orientability decide its class (PPADS, PPAD, PPA, or satisfiable)? First step: the Euler count and satisfiability on small projective-plane and torus triple systems. (ii) Return to question 9, whose choice is yours. | (i) This would turn the TFNP class into a reading of the space's topology: logic's count would see the surface. That is the closest this line gets to the "space" intuition without drawing more. |
+| Next recommendation — topology to TFNP class | **Next step:** Research directions. (i) The knot's count on non-orientable and higher-genus drawn knot patterns: does the surface's Euler characteristic and orientability decide its class (PPADS, PPAD, PPA, or satisfiable)? First step: the Euler count and satisfiability on small projective-plane and torus triple systems. (ii) Return to question 9, whose choice is yours. | (i) This would turn the TFNP class into a reading of the space's topology: logic's count would see the surface. That is the closest this line gets to the "space" intuition without drawing more. |
 | Interest — that recommendation | **2/3 — Promising** for (i) | **Evidence:** the Euler count makes the surface's χ appear directly, and Friedl et al.'s Sperner results already split by orientability. **Uncertainties:** Kasteleyn-type signs need not exist on non-orientable spaces, and the analogue may be routine. |
 | Execution — that action | Deferred to the owner | **Not started.** **Stop when** the count, satisfiability and the class are settled for the projective plane and torus families, or an obstruction to signing them is found. |

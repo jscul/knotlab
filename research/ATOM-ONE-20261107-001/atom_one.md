@@ -1,30 +1,33 @@
-# Why a Fano atom acts as one
+# Why a Fano piece acts as one
+
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
 
 Epic `ATOM-ONE-20261107-001` (program topology), 2026-11-07.
 
 ## The question
 
-- **The approval.** The owner said "Yes continue." to FAR-READ's recommendation: prove that a Fano atom acts as one from outside.
-- **The property.** FAR-READ A computed it on 1,065 atoms: every line of another Fano atom receives the same creation, far side by far
+- **The approval.** The owner said "Yes continue." to FAR-READ's recommendation: prove that a Fano piece acts as one from outside.
+- **The property.** FAR-READ A computed it on 1,065 atoms: every line of another Fano piece receives the same creation, far side by far
   side, whichever of the atom's lines is removed. FAR-READ B's reading rule rests on it.
-- **The aim.** Find the mechanism, prove what holds in every knot space, and test what remains on fresh spaces.
+- **The aim.** Find the mechanism, prove what holds in every contradiction, and test what remains on fresh spaces.
 
 ## Conclusions
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Every Fano atom, with its closed sides, is the Fano plane.** A closed side acts as its lost element up to signs (KNOT-COMPOSE A, as corrected by NATIVE-PATHS A). Of the 256 signed Fano planes, only the plain one is a knot. | proved: exhaustive over sign classes | A |
-| 2 | **A Fano atom with a line removed is transparent.** With any one of its lines removed, it sends the free relation through every one of its cuts, the same whichever line is removed. | proved: 91 of 91 freeness cases | A |
+| 1 | **Every Fano piece, with its closed sides, is the Fano plane.** A closed side acts as its lost element up to signs (KNOT-COMPOSE A, as corrected by NATIVE-PATHS A). Of the 256 signed Fano planes, only the plain one is a knot. | proved: exhaustive over sign classes | A |
+| 2 | **A Fano piece with a line removed is transparent.** With any one of its lines removed, it sends the free relation through every one of its cuts, the same whichever line is removed. | proved: 91 of 91 freeness cases | A |
 | 3 | **The knot is needed.** With arbitrary relations on the other cuts, the relation sent is the same whichever line is removed for every atom with at most one line-type cut, but for only 209 of 1,609 (configuration, cut) pairs with more. | proved: exhaustive over 253 configurations | A |
-| 4 | **Deep points of a removal's side never decide creation at a Fano atom's line.** This holds even paired with deep points behind the atom's other elements. They add far sides only at a receiving atom's cut lines whose port relation has six patterns. | proved: 5,880 of 5,880 cases; 504 exception cases | B |
-| 5 | **A free relation passes through a closed Fano atom unchanged.** | proved: 182 of 182 | B |
-| 6 | **A Fano atom acts as one.** For creation this holds in every knot space. Far side by far side it holds except at that one place. On Fano trees, and wherever only atoms lie between, it holds without exception. | proved (corollary of 1, 2, 4 and 5) | B |
+| 4 | **Deep points of a removal's side never decide creation at a Fano piece's line.** This holds even paired with deep points behind the atom's other elements. They add far sides only at a receiving atom's cut lines whose port relation has six patterns. | proved: 5,880 of 5,880 cases; 504 exception cases | B |
+| 5 | **A free relation passes through a closed Fano piece unchanged.** | proved: 182 of 182 | B |
+| 6 | **A Fano piece acts as one.** For creation this holds in every contradiction. Far side by far side it holds except at that one place. On Fano trees, and wherever only atoms lie between, it holds without exception. | proved (corollary of 1, 2, 4 and 5) | B |
 | 7 | **Bounding cannot show more.** Deep points behind a receiving atom's own other elements could add creation at its intact lines (56 of 980 abstract cases). They do not depend on the removed line. | proved: exhaustive | B |
-| 8 | **Real spaces never use that room.** On 191 saved and 86 fresh spaces, every Fano atom's line receives exactly its closed verdict for its facing cut's port relation, at 154,165 of 154,165 pairs. The exception occurs at 1,325 receiving cuts and adds nothing. | computed; predictions written before the run | C |
+| 8 | **Real spaces never use that room.** On 191 saved and 86 fresh spaces, every Fano piece's line receives exactly its closed verdict for its facing cut's port relation, at 154,165 of 154,165 pairs. The exception occurs at 1,325 receiving cuts and adds nothing. | computed; predictions written before the run | C |
 
 ## Answer
 
-- **Yes for creation, in every knot space.** Whether a removal in a Fano atom creates at a line of another Fano atom does not depend on
+- **Yes for creation, in every contradiction.** Whether a removal in a Fano piece creates at a line of another Fano piece does not depend on
   which of the atom's lines was removed.
 - **Far side by far side, yes except at one finite place.** That place is a receiving atom's cut lines with a six-pattern port relation.
   - **On Fano trees.** It holds without exception.
@@ -32,12 +35,12 @@ Epic `ATOM-ONE-20261107-001` (program topology), 2026-11-07.
 - **The mechanism is transparency.**
   - An atom missing a line constrains nothing through its cuts.
   - So the rest of the space sees the same port relation whichever line went.
-  - A Fano atom's lines see nothing but that relation, apart from the exception.
+  - A Fano piece's lines see nothing but that relation, apart from the exception.
 
 ## Reading
 
 - **A handle is all or nothing from outside.**
-  - **Present.** With all its lines, a Fano atom constrains each of its cuts exactly as one lost element would.
+  - **Present.** With all its lines, a Fano piece constrains each of its cuts exactly as one lost element would.
   - **Absent.** With any one line gone, it constrains nothing any cut can see.
   - **No partial state.** None shows through a cut. This is the precise sense of FAR-READ's reading, that atoms act as one.
 - **In the intuition's terms.**
@@ -47,11 +50,11 @@ Epic `ATOM-ONE-20261107-001` (program topology), 2026-11-07.
   - **The control.** It fails without the knot (conclusion 3).
 - **Atoms are blind to depth, made precise.**
   - GLUE-READ's reading was that atoms are blind to depth and plane glue is not.
-  - **Proved.** For creation in every knot space, and for far sides outside one finite place.
+  - **Proved.** For creation in every contradiction, and for far sides outside one finite place.
   - **Computed.** Everywhere in 277 spaces.
   - **The gap is narrow.** Bounding alone cannot close it (conclusion 7), yet no real side ever uses the room it leaves.
 - **What this gives the reading rule.** FAR-READ B's split rests on atoms acting as one. That premise is now a theorem on Fano trees and,
-  outside the exception, in every knot space.
+  outside the exception, in every contradiction.
 - **Doctrine.**
   - **No space is assumed.** Cuts, channels and relations are relations among lines and points.
   - **The far sides.** They are the creation map's four census far sides, unchanged.
@@ -64,9 +67,9 @@ Epic `ATOM-ONE-20261107-001` (program topology), 2026-11-07.
   - Robertson, Seymour and Thomas: Pfaffian braces are built from planar braces and the Heawood graph.
 - **Ours.**
   - The cut theorem (KNOT-COMPOSE A, NATIVE-PATHS A).
-  - Minimality of knot spaces (THREEFOLD-SPACES A).
+  - Minimality of contradictions (THREEFOLD-SPACES A).
   - The receiving-cut law and its bound (GLUE-READ A).
-  - Free ports along chains (CHAIN-TRANSFER A), which transparency extends to every knot space.
+  - Free ports along chains (CHAIN-TRANSFER A), which transparency extends to every contradiction.
   - The two-round rule (PENDANT-LINE A).
   - Acts-as-one, computed (FAR-READ A).
 - **New here.**
@@ -101,10 +104,10 @@ All three held.
 
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
-| Current attempt — acts-as-one proved | **Status:** Successful, with one finite exception left to computation | **Proved.** Transparency, and acts-as-one for creation in every knot space; far side by far side outside one place, and fully on Fano trees. **Computed.** The exception is empty on 277 spaces (2,625 lines with room to add). |
+| Current attempt — acts-as-one proved | **Status:** Successful, with one finite exception left to computation | **Proved.** Transparency, and acts-as-one for creation in every contradiction; far side by far side outside one place, and fully on Fano trees. **Computed.** The exception is empty on 277 spaces (2,625 lines with room to add). |
 | Local direction — the reading rule as a theorem | Open | **Now proved.** The premise of FAR-READ B's split. **Not proved.** That no atom splits into smaller parts acting as one; the twin steps; reattachment; the exception. |
-| Broader exploration — handles that are not Fano atoms | Known alternatives | **Untouched.** Non-Fano handles, such as census 58 and the glue's junctions, where HANDLE-COUNT found counting hardness lives. **The tool.** Transparency rests on the Fano plane being the only signed Fano knot; whether other handles are transparent is open. |
-| Long-term goal — topology from native emergence | Capability gained | **Gained.** A handle is provably a unit of native creation, all or nothing from outside. **Missing.** A full proof that creation reads the genus, and handles that are not Fano atoms. |
-| Next recommendation — the genus reading on Fano trees | **Next step:** Continue. Prove that FAR-READ B's rule returns exactly the Fano atoms of every Fano tree, where acts-as-one is now fully proved. **Two lemmas remain.** No atom splits into two parts of three or more lines acting as one, decided from creation inside an atom, whose closed sides are exact elements. The twin steps pick out the atoms, as CHAIN-TRANSFER C proved for trees with at most four cuts per atom. Then add plane glue. | **If proved.** Native creation reads the genus of every Fano tree by a theorem, and the glue case reduces to the exception. **If it fails.** A splitting atom shows what the reading must add. **Alternatives.** Whether junction handles act as one, tested on spaces with trisum glue (2/3); a proof of the exception from the structure of planar sides (1/3). |
+| Broader exploration — handles that are not Fano pieces | Known alternatives | **Untouched.** Non-Fano handles, such as census 58 and the glue's junctions, where HANDLE-COUNT found counting hardness lives. **The tool.** Transparency rests on the Fano plane being the only signed Fano knot; whether other handles are transparent is open. |
+| Long-term goal — topology from native emergence | Capability gained | **Gained.** A handle is provably a unit of native creation, all or nothing from outside. **Missing.** A full proof that creation reads the genus, and handles that are not Fano pieces. |
+| Next recommendation — the genus reading on Fano trees | **Next step:** Continue. Prove that FAR-READ B's rule returns exactly the Fano pieces of every Fano tree, where acts-as-one is now fully proved. **Two lemmas remain.** No atom splits into two parts of three or more lines acting as one, decided from creation inside an atom, whose closed sides are exact elements. The twin steps pick out the atoms, as CHAIN-TRANSFER C proved for trees with at most four cuts per atom. Then add plane glue. | **If proved.** Native creation reads the genus of every Fano tree by a theorem, and the glue case reduces to the exception. **If it fails.** A splitting atom shows what the reading must add. **Alternatives.** Whether junction handles act as one, tested on spaces with trisum glue (2/3); a proof of the exception from the structure of planar sides (1/3). |
 | Interest — that recommendation | **2/3 — Promising** | **Evidence.** Inside an atom everything is finite once closed sides are exact elements, and the twin steps are proved for trees with at most four cuts per atom. **Main uncertainty.** Internal creation may still feel deep points behind the atom's cuts, which bounding cannot control (conclusion 7). |
 | Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** Fano trees first, then the saved and fresh glue spaces. **Stop when** the rule is proved on Fano trees and its status with glue is stated, or a splitting atom is found. |

@@ -1,12 +1,15 @@
 # A temporary rise
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `RISE-ESCAPE-20261110-001` (backlog B72, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family: `proofs/RISE-ESCAPE-20261110-001A/RISE-ESCAPE-20261110-001A-P001_excursions_out_of_an_atom/`
 (long-running row RISE-ESCAPE-A1, run `rise-escape-a1b`).
 
 ## The question
 
-A unit settled at the genus-2 floor inside a Fano atom wanders only inside that atom (`MOVING-STATE-20261110-001`). Can it leave if the
+A unit settled at the genus-2 floor inside a Fano piece wanders only inside that atom (`MOVING-STATE-20261110-001`). Can it leave if the
 dissonance may rise for a few steps?
 
 ## The answer
@@ -47,7 +50,7 @@ None.
 | This attempt — a temporary rise (B72) | **Status:** Failed | no escape at a one-unit rise, with the law fixed |
 | Local direction — moving the point to move the unit | Retire | the trap holds against state moves, even with a rise |
 | Broader exploration — learning program | Known alternatives | the law as the trap, learning at a rise |
-| Long-term goal — G15 Learning: a point in a learned knot space | Obstruction learned | a pattern's leftover tension is not carried by the point |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Obstruction learned | a pattern's leftover tension is not carried by the point |
 
 **Next step:** Research directions — selected: #1
 

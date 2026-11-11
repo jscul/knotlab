@@ -1,5 +1,8 @@
 # Emergence needs a handle
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `HANDLE-EMERGENCE-20261102-001` (program topology), 2026-11-02.
 
 ## The question
@@ -14,7 +17,7 @@ Epic `HANDLE-EMERGENCE-20261102-001` (program topology), 2026-11-02.
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Planar removed sides create nothing beyond the census.** The test: 24 planar knot spaces of 10–14 points (ladder growth from the cube, prisms, the truncated octahedron; Kasteleyn signs, failure checked), spliced into four census spaces. Result: 1612 removals, 432,867 crossing knots, none new. Census: planar sides 0 of 560; Fano and census 58 create 936 knots at 100 of 208 removals. No four-pattern interface creates (1400). | computation | A |
+| 1 | **Planar removed sides create nothing beyond the census.** The test: 24 planar contradictions of 10–14 points (ladder growth from the cube, prisms, the truncated octahedron; Kasteleyn signs, failure checked), spliced into four census spaces. Result: 1612 removals, 432,867 crossing knots, none new. Census: planar sides 0 of 560; Fano and census 58 create 936 knots at 100 of 208 removals. No four-pattern interface creates (1400). | computation | A |
 | 2 | **A new knot is a three-point constraint through the hub.** Every new knot (936) has one point of the removed line's hub, one near point off the ports and one far point. The hub and the near point pin all three ports to one pattern, and the far point separates it: a joint use of the ports that no single port carries, so no elimination produces it. | computation; two elementary lemmas | B |
 | 3 | **Necessary, not sufficient.** New knots need a pinned pair that a far point separates: 100 of the 200 such removals create, and none without such a pair. In the Fano plane every removed line meets the closing line, the hub sits on that port, and the pinned pair's odd port is the hub's own. | computation | B |
 | 4 | **The odd-point model.** Choosing each line's odd point is a bijection between solutions up to complement and choices of one incidence per line with prescribed parities on every cycle. | proof; 56 census removals | C |
@@ -39,7 +42,7 @@ Epic `HANDLE-EMERGENCE-20261102-001` (program topology), 2026-11-02.
 - **Where creation lives.** It happens exactly where those parities, rather than counting, decide (14 face-odd assignments against 5
   solutions in the Fano plane).
 - **What this ties together.**
-  - THREEFOLD-SURFACES: each Fano atom is a handle.
+  - THREEFOLD-SURFACES: each Fano piece is a handle.
   - THREEFOLD-SPIN: the knot's signs are Kasteleyn on minimal maps.
   - The program's long-standing reading of holes as what a loop remembers.
 - **Doctrine.** Hubs remain equality fan-out. What is created is emergence (knots), not contact, native paths or distance.

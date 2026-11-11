@@ -1,15 +1,18 @@
 # The knot's spin structure
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `THREEFOLD-SPIN-20261030-001`, 2026-10-30.
 
 ## The question
 
 - **The owner's request (2026-10-30).** "Yes, let's continue." This approved the recommendation of `THREEFOLD-AMPLITUDE-20261030-001`:
-  - Do the knot's own signs satisfy Kasteleyn's face condition on every minimal map of every three-fold space?
-  - If so, each space carries a spin structure on its surface. Find its Arf invariant per Fano atom.
+  - Do the knot's own signs satisfy Kasteleyn's face condition on every minimal map of every three-regular contradiction?
+  - If so, each space carries a spin structure on its surface. Find its Arf invariant per Fano piece.
 - **Setting.**
-  - The knot's three-fold space H has a triangle–contact incidence graph B(H). Its minimal maps are the least-genus surfaces carrying it,
-    one handle per Fano atom (`THREEFOLD-SURFACES-20261030-001`).
+  - The knot's three-regular contradiction H has a triangle–contact incidence graph B(H). Its minimal maps are the least-genus surfaces carrying it,
+    one handle per Fano piece (`THREEFOLD-SURFACES-20261030-001`).
   - The knot's signs on B(H) are trivial, and they are Pfaffian.
   - Kasteleyn's condition on a face of length 2l asks for l − 1 negated edges mod 2. For trivial signs this means every face has length
     2 mod 4.
@@ -37,12 +40,12 @@ Epic `THREEFOLD-SPIN-20261030-001`, 2026-10-30.
 - **Every face of every minimal map has length 2 mod 4 (A, proved for planar glue).**
   - The proof is a splice lemma. Across a tight three-edge cut, a genus-additive gluing has exactly three crossing faces, each made of one
     face from each side, so face parities add.
-  - Fano atoms (seven hexagons on the torus), doubled squares and planar braces all satisfy the condition.
+  - Fano pieces (seven hexagons on the torus), doubled squares and planar braces all satisfy the condition.
   - Trisum glue, the non-planar kind, satisfies it on every one of its minimal maps (B).
 - **The spin structures are even (A).**
   - Because the signs are Pfaffian, each perfect matching gives a spin structure whose quadratic form vanishes on every difference of
     matchings, so its Arf invariant does not depend on the matching.
-  - The form splits over the Fano atoms. On each atom the matching differences span the torus's homology, which forces Arf 0.
+  - The form splits over the Fano pieces. On each atom the matching differences span the torus's homology, which forces Arf 0.
 - **The matchings induce exactly the spin structures that are even on every handle.**
   - On the Fano torus the 24 matchings induce the three even spin structures, 8 each, and never the odd one.
   - A space with h atoms gets exactly 3^h spin structures (A proves "at most"; B confirms "exactly" up to 22 points): 9 of the 10 even
@@ -83,7 +86,7 @@ Epic `THREEFOLD-SPIN-20261030-001`, 2026-10-30.
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
 | Current attempt — the knot's spin structure | **Status:** Successful | Yes, and more: Kasteleyn on every minimal map (proved for planar glue), even spin structures, handle-even, 3^h of them, odd only on non-minimal maps. |
-| Local direction — spin structures of three-fold spaces | Practically complete | Open: a proof for non-planar glue in general, and why odd spin structures need genus ≥ 3 on non-minimal maps. Both are completion-like. |
+| Local direction — spin structures of three-regular contradictions | Practically complete | Open: a proof for non-planar glue in general, and why odd spin structures need genus ≥ 3 on non-minimal maps. Both are completion-like. |
 | Broader exploration — space from a law (question 9) | Known alternatives | The knot's surface now carries atoms, handles, an amplitude (5 per handle, tree counts for flat glue) and an even spin structure. These two numbers have not yet been connected. |
 | Long-term goal — space from logic without a drawn space | Capability gained | The law's own signs supply the surface's spin structure. That is a second piece of structure determined by logic on the surface it builds. |
 | Next recommendation — the knot's amplitude as a spin sum | **Next step:** Continue, as a fresh epic. The amplitude A(H, L) is an Ising partition function at half the knot's angle on B(H) − L (`THREEFOLD-AMPLITUDE-20261030-001C`). On a surface such a function is a signed sum over the 4^g spin structures of Pfaffians (Kac–Ward, Cimasoni). Which spin structures contribute at the knot's coupling? Does 5 per handle come from the three even spin structures alone, with the odd one cancelling? | Would connect the knot's two numbers, its amplitude and its spin structure, and explain 5 per handle topologically. |

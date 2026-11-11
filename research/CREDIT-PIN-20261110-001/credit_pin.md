@@ -1,5 +1,8 @@
 # Credit from pinned dissonance
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `CREDIT-PIN-20261110-001` (backlog B132, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md) in two stages, each before the runs it governs: stage 1 (commit `08681795e`) froze the defect fix,
 ticket A's re-run and ticket B's targets and marks; stage 2 (commit `15f999a38`, erratum `8ed4bc96f`) froze the credit learner. Proof
@@ -49,7 +52,7 @@ fixed learner's 10 of 16 composites, with no inexact stop. Mark M stands as comp
 - **The memory can see what it holds.** Dissonance that a state-only walk cannot clear marks acting atoms without error here (P1 one
   way; computed the other). That is a native readout of the stored address, usable anywhere.
 - **Reliability, not reach, limits learning from examples.** The clamped probe is fooled once in about every 10 to 20 writes, most often
-  through composites and Fano atoms, and that is what kept every mark of this epic below 90% at composites.
+  through composites and Fano pieces, and that is what kept every mark of this epic below 90% at composites.
 
 ## Assumptions
 
@@ -73,7 +76,7 @@ the inputs and wandering, sometimes misses the wrong answer and says yes too soo
 | This attempt: credit from pinned dissonance (B132) | **Status:** Partial | the defect fixed (composites 1 → 10 of 16); credit exact as a signal but no better overall (M: misleads) |
 | Local direction: learning maps through composites | Continue | reach is shown; the probe's false acceptances are the limiting error |
 | Broader exploration: learning program | Known alternatives | a probe that is not fooled, three held inputs, the probe as a theorem |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | composite gates learned from examples natively, and the memory reads what it holds |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | composite gates learned from examples natively, and the memory reads what it holds |
 
 **Next step:** Research directions — selected: #1
 
@@ -106,7 +109,7 @@ Posted in the thread on 2026-11-10:
 | This attempt: credit from pinned dissonance (B132) | **Status:** Partial | stall fixed (composites 1 → 10 of 16); credit is exact as a signal but no better overall |
 | Local direction: learning maps through composites | Continue | reach is shown; the probe's false acceptances limit it |
 | Broader exploration: learning program | Known alternatives | a probe that isn't fooled, three held inputs, the probe as a theorem |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | composite gates learned from examples natively; the memory reads what it holds |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | composite gates learned from examples natively; the memory reads what it holds |
 
 **Next step:** Research directions, selected #1.
 

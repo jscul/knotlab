@@ -1,12 +1,15 @@
 # Layers through atoms
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `ATOM-LAYERS-20261110-001` (sub-goal B54; G15 with G16; program learning), 2026-11-10, at the coordinator's go-ahead; the owner flagged
 the direction. Pre-registered in [preregistration.md](preregistration.md). Proof family:
 `proofs/ATOM-LAYERS-20261110-001A/ATOM-LAYERS-20261110-001A-P001_where_a_dissonance_sits_among_atoms/`.
 
 ## The question
 
-A Fano atom spliced in for a line acts from outside exactly as that line. Read the sphere as the upper level and each atom as a lower level
+A Fano piece spliced in for a line acts from outside exactly as that line. Read the sphere as the upper level and each atom as a lower level
 standing for one upper line. With several atoms, where does the forced dissonance sit, and does learning carry it between levels and
 between atoms?
 
@@ -53,7 +56,7 @@ None.
 | This attempt — layers through atoms (B54) | **Status:** Partially successful | dissonance flows down into atoms, never back up |
 | Local direction — learning with the state fixed | Continue, with a challenge | A26 is what freezes the unit |
 | Broader exploration — learning program | Known alternatives | moving state, temporary rises |
-| Long-term goal — G15 Learning: a point in a learned knot space | Obstruction learned | a fixed-state, lowering learner cannot move a point between patterns |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Obstruction learned | a fixed-state, lowering learner cannot move a point between patterns |
 
 **Next step:** Research directions — selected: #1
 
@@ -74,7 +77,7 @@ under challenge if #1 is taken.
 
 Sent to the owner in the project thread on 2026-11-10 (01:08 UTC).
 
-**B54 (layers through atoms) done: the dissonance flows down into the named patterns and settles there, but never comes back up or moves across.** I replaced one or two lines of K_2 and K_3 by Fano atoms, each acting as the line it replaced. Growing an atom at the dissonance moves it down into the atom, where learning resolves it. A second atom holds one unit of dissonance from the moment it's grown, and that's where the leftover ends. Once there it's frozen (proved): at genus 2 the leftover is a single over-agreeing face, and a learner that holds the state still has no move there. So moving the point between patterns needs something to raise the tension first.
+**B54 (layers through atoms) done: the dissonance flows down into the named patterns and settles there, but never comes back up or moves across.** I replaced one or two lines of K_2 and K_3 by Fano pieces, each acting as the line it replaced. Growing an atom at the dissonance moves it down into the atom, where learning resolves it. A second atom holds one unit of dissonance from the moment it's grown, and that's where the leftover ends. Once there it's frozen (proved): at genus 2 the leftover is a single over-agreeing face, and a learner that holds the state still has no move there. So moving the point between patterns needs something to raise the tension first.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |

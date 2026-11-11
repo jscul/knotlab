@@ -1,5 +1,8 @@
 # Counting on plain braces
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `PLAIN-BRACE-20261031-001`, 2026-10-31.
 
 ## The question
@@ -62,7 +65,7 @@ Epic `PLAIN-BRACE-20261031-001`, 2026-10-31.
 
 | Epic | Result |
 | --- | --- |
-| `SEYMOUR-COUNT-20261030-001` | Counting is polynomial on every three-fold space (Berman determinants over RST trisum trees). |
+| `SEYMOUR-COUNT-20261030-001` | Counting is polynomial on every three-regular contradiction (Berman determinants over RST trisum trees). |
 | `TWIST-COUNT-20261030-001` | The knot's junction is a similitude; unbranched twists count in polynomial time. |
 | `SOFT-CROSS-20261031-001` | Soft crossings sharpen inside Pfaffian graphs; counting under branched twists is #P-hard. |
 | `PLAIN-COUNT-20261031-001` | Signs interpolate away; plain pages are always twisted; Fano is the only plain non-colourable brace. |
@@ -77,7 +80,7 @@ Epic `PLAIN-BRACE-20261031-001`, 2026-10-31.
 | Broader exploration — the two/three boundary in counting | Known alternatives | Mapped as above. Unmapped: approximate counting; the Ising reading (#col is the Ising partition function at x² = −1/3, the knot's class its free-fermion sign pattern). |
 | Long-term goal — the two/three boundary as emergence | Capability gained | A complete worst-case picture on the knot's own graphs. The knot's signs give determinants; branching twists give universality; the knot's atom is the one twist-free brace. |
 | Next recommendation — a note on the counting arc | **Next step:** Continue, as conversion. Write the five epics as one self-contained note, with independent replays of the key checks. Reader: the owner first, then complexity theorists. Completion check: every theorem stated with its proof sketch, provenance and replay. | The arc is complete and mostly new. A note makes it reviewable and gives the program a first external-facing result in counting. It authorizes no submission. |
-| Interest — that recommendation | **2/3 — Promising** | Evidence: five proved epics forming one picture, with the source hardness clearly attributed. Main uncertainty: whether the results reach the magnitude the owner wants for a write-up. The polynomial count on every three-fold space and the hardness on plain Pfaffian braces are the strongest. |
+| Interest — that recommendation | **2/3 — Promising** | Evidence: five proved epics forming one picture, with the source hardness clearly attributed. Main uncertainty: whether the results reach the magnitude the owner wants for a write-up. The polynomial count on every three-regular contradiction and the hardness on plain Pfaffian braces are the strongest. |
 | Execution — that next action | Deferred to the owner | A bounded conversion: one note and one replay script. Stop and reassess if the literature check finds the polynomial three-fold count already known. |
 
 **Recommendation.** **Continue**, as conversion: a note on the counting arc (2/3). Two alternatives were considered.

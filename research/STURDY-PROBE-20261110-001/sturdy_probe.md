@@ -1,5 +1,8 @@
 # A probe that is not fooled
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `STURDY-PROBE-20261110-001` (backlog B134, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen with the code in commit `fb162b543` before any run on a test space. Proof family:
 `proofs/STURDY-PROBE-20261110-001A/`.
@@ -74,7 +77,7 @@ whose tension it cannot walk away.
 | This attempt: a probe that is not fooled (B134) | **Status:** Successful | mark Z met at 2.5 times the probe's cost; every figure stays or rises |
 | Local direction: learning gates of held inputs | Exhausted for this phase | every gate target learned at every leaf and composite tested |
 | Broader exploration: learning program | Known alternatives | three held inputs, deeper memories, the probe as a theorem |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | gates through composites learned from examples natively, without false stops |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | gates through composites learned from examples natively, without false stops |
 
 **Next step:** Research directions — selected: #1
 
@@ -113,7 +116,7 @@ That reverses B132's reading, so I logged a correction (Narrowing): credit from 
 | This attempt: a probe that is not fooled (B134) | **Status:** Successful | mark met at 2.5 times the probe's cost; every figure stays or rises |
 | Local direction: learning gates of held inputs | Exhausted for this phase | every gate target learned at every leaf and composite tested |
 | Broader exploration: learning program | Known alternatives | three held inputs, deeper memories, the probe as a theorem |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | gates through composites learned from examples natively, with no false stops |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | gates through composites learned from examples natively, with no false stops |
 
 **Next step:** Research directions, selected #1 (as you set).
 

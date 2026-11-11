@@ -1,11 +1,14 @@
 # Negative curvature's count: the genus-2 antivortex
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a knot space is a drawn knot pattern; a knot world is a drawn knot pattern; an open end is a loose end. Results are unchanged;
+the earlier text is in git history.
+
 Epic `COUNT-ANTIVORTEX-20261107-001` (program complexity), 2026-11-07.
 
 ## The question
 
-- **The approval.** The owner said "Please do both" to `COUNT-SURFACES-20261107-001`'s two recommendations. This epic is (i): on knot
-  spaces of genus at least 2 with Kasteleyn signs, the count forces some face to over-agree. Is finding one PPADS-complete, as finding the
+- **The approval.** The owner said "Please do both" to `COUNT-SURFACES-20261107-001`'s two recommendations. This epic is (i): on drawn knot
+  patterns of genus at least 2 with Kasteleyn signs, the count forces some face to over-agree. Is finding one PPADS-complete, as finding the
   sphere's violated line is?
 - **The agreed method.** Mirror FLAT-STATES-20261107-001B's Sperner embedding with the opposite orientation, on a genus-2 cover or the
   trivially signed octahedral sphere.
@@ -17,7 +20,7 @@ Epic `COUNT-ANTIVORTEX-20261107-001` (program complexity), 2026-11-07.
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **The genus-2 mirror.** The double of T(3a Z²) along a hexagonal hole is a genus-2 knot space whose six degree-8 faces turn the frames by +1, the mirror of the knot sphere's six corners at −1. Exactly one of its 16 Kasteleyn classes makes the handles flat. | proved; checked in all 16 classes | A |
+| 1 | **The genus-2 mirror.** The double of T(3a Z²) along a hexagonal hole is a genus-2 drawn knot pattern whose six degree-8 faces turn the frames by +1, the mirror of the knot sphere's six corners at −1. Exactly one of its 16 Kasteleyn classes makes the handles flat. | proved; checked in all 16 classes | A |
 | 2 | **The antivortex.** Developing one frame over the surface cut along six paths from z to the degree-8 faces violates no line and over-agrees at exactly one face, at z. So the knot's lines are satisfiable on genus 2, while some face must over-agree. | proved; checked | A |
 | 3 | **The face problem.** Finding an over-agreeing face is PPADS^dt-complete; finding a violated line or an over-agreeing face is PPAD^dt-complete. | new as far as found; proved | A |
 | 4 | **How the reduction works.** With the mirrored Sperner map, the region's boundary is the canonical one with colours 1 and 2 swapped. Over-agreeing faces sit exactly one in each clockwise fully labelled triangle, violated lines one in each counterclockwise one. | proved; checked on 80 colourings for m = 3..7 | A |
@@ -71,7 +74,7 @@ Carried from earlier epics:
 | --- | --- | --- |
 | Current attempt — is the forced face on genus 2 PPADS-complete? | **Status:** Successful | PPADS^dt-complete on the genus-2 doubles; the two-sided problem PPAD^dt-complete; the lines satisfiable. Every local step was checked, with controls. |
 | Local direction — the count's class across curvature | Practically complete | Sphere, flat and negative curvature are settled: lines or faces fail by the sign of χ − \|D\|, and the forced problem is PPADS-complete either way. Open but incremental: several antivortices (genus ≥ 3, by placing copies), non-lattice genus-2 spaces, and circuit versions. |
-| Broader exploration — the complexity of the knot's spaces | Known alternatives | Knot sphere, surfaces, curvature, three-fold spaces via plane cores. Not mapped: bounded-genus spaces with non-lattice defects. |
+| Broader exploration — the complexity of the knot's spaces | Known alternatives | Knot sphere, surfaces, curvature, three-regular contradictions via plane cores. Not mapped: bounded-genus spaces with non-lattice defects. |
 | Long-term goal — "hardness at three places" | Capability gained | The knot's forced defect has the same class (PPADS) for both signs of curvature; orientation and curvature choose only which constraint fails. This does not move question 9; the surfaces are drawn. |
 | Next recommendation — leave the count's complexity chain | **Next step:** Full pivot to question 9 (low-dimensional shape from a uniform local law, nothing drawn). That pivot is `UNIFORM-SPHERES-20261107-001`, opened in the same request: which uniform laws of lines and co-lines close into spheres, and how deep the knot's contradiction on them can be. | The complexity chain's remaining refinements are incremental. The question it leaves for question 9 is whether a law can grow the sphere that makes the knot contradict itself. |
 | Interest — that pivot | **2/3 — Promising** | **Evidence:** the count reads the curvature of any surface a law builds, and uniformity bounds positive curvature by Euler's formula. **Uncertainty:** whether "uniform" (every point alike) is the right reading of the owner's "uniform local law". |
@@ -100,13 +103,13 @@ I did both, as two epics; both are proved, committed and published.
 - **The knot sphere needs two kinds of point.** It has exactly two (regular points, and twelve at its six digons), and that is where its PPADS-complete contradiction comes from.
 - **One exception, computed.** With uniform signs the knot was satisfiable on every uniform law I tested and on all 327 circulant laws up to 48 points, except the Fano plane. The Fano plane fails by its own structure, not through the count.
 
-Provenance: the curvature formula and the list of uniform spheres are classical (vertex-transitive and Cayley maps). Reading them as self-built knot worlds, the bound on uniform contradictions, and the genus-2 antivortex are new as far as I found. Two limits: laws with a few kinds of points are not classified, and whether a large uniform law can fail without the count, as the Fano plane does, is open.
+Provenance: the curvature formula and the list of uniform spheres are classical (vertex-transitive and Cayley maps). Reading them as self-built drawn knot patterns, the bound on uniform contradictions, and the genus-2 antivortex are new as far as I found. Two limits: laws with a few kinds of points are not classified, and whether a large uniform law can fail without the count, as the Fano plane does, is open.
 
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
 | Current attempt (both directions) | **Status:** Successful | (i) The forced face on genus 2 is PPADS-complete. (ii) Uniform laws close into spheres only as small polyhedra or antiprisms, and never force the knot's contradiction. |
 | Local direction: laws that build their own surface | Continue, with two kinds of points | One kind of point is settled. The knot sphere shows that two kinds suffice for large spheres and deep contradictions. |
-| Broader exploration: question 9 | Known alternatives | Rulers and the number line, growth at open ends, circles from logic, native genus readings, and now self-built closed surfaces. |
+| Broader exploration: question 9 | Known alternatives | Rulers and the number line, growth at loose ends, circles from logic, native genus readings, and now self-built closed surfaces. |
 | Long-term goal: question 9 and "hardness at three places" | Capability gained | A law builds its own closed surface and the knot's count reads its curvature. Uniformity can grow flat space but not a large sphere, so the knot's deep contradiction needs special places. The count-complexity chain is practically complete. |
 | Next recommendation | **Next step:** Research directions. (i) Laws with two kinds of points: which close into large spheres, and can a local growth rule place the six digons itself, so a law grows its own sphere and with it the knot's contradiction? (ii) Large uniform contradictions beyond the Fano plane. Your call. | (i) moves question 9 directly. (ii) asks whether the Fano plane is the only uniform obstruction. |
 | Interest | **(i) 2/3 — Promising; (ii) 1/3 — Exploratory** | Euler's formula fixes the budget at six digons, and the knot sphere realizes it with two point types. The open part is whether a rule that doesn't know where the digons go can still close a sphere. |

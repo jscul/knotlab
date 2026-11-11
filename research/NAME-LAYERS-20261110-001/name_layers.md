@@ -1,5 +1,8 @@
 # Layers through a naming knot
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `NAME-LAYERS-20261110-001` (direction `NEST-ATOMS-20261110-001`#4, first raised as `RESIGN-STEER-20261107-001`#3; G15; program
 learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in [preregistration.md](preregistration.md), frozen in commit
 `6901b52a8` before any run. Proof family: `proofs/NAME-LAYERS-20261110-001A/`.
@@ -61,7 +64,7 @@ line up, and that can be any rule at all, but a contradiction inside stays insid
 | This attempt — layers through a naming knot | **Status:** Successful | two readings: cuts carry contradictions and conjunctions, names carry correlations and clauses |
 | Local direction — the layered memory | Practically complete for this phase | its channels are now both characterized |
 | Broader exploration — learning program | New questions | mixed layers, native writing, inputs and outputs |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | the layer question has an answer: two channels |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | the layer question has an answer: two channels |
 
 **Next step:** Research directions — selected: #1 (for the coordinator to weigh against other lines)
 
@@ -72,7 +75,7 @@ questions the proved layered memory makes askable:
 | --- | --- | --- | --- | --- | --- |
 | 1 | A learned network that computes (next phase) | 3/3 — Breakthrough | 1/3 — Exploratory | combine cuts (AND of stored bits) with names (clauses on states) in one small network and ask which Boolean functions of the stored bits its top level can read → a complete basis from knots alone, or the class it is stuck in | Selected · awaiting go-ahead |
 | 2 | Native writing (next phase) | 2/3 — Substantial | 2/3 — Testable | replace the targeted search, which is told the target configuration, by a learner that sees only its own dissonance and the address it is asked for, as `NATIVE-TARGET-20261110-001` did for resolutions → addresses written natively, or a reason they need an outside map | Alternative · deferred |
-| 3 | Inputs and outputs (next phase) | 2/3 — Substantial | 1/3 — Exploratory | give the outer host input points held by the world and read the composites' roles as outputs; ask whether learning driven by examples writes a chosen input-output map → learning from examples in a knot space (G16), or not | Alternative · deferred |
+| 3 | Inputs and outputs (next phase) | 2/3 — Substantial | 1/3 — Exploratory | give the outer host input points held by the world and read the composites' roles as outputs; ask whether learning driven by examples writes a chosen input-output map → learning from examples in a drawn knot pattern (G16), or not | Alternative · deferred |
 | 4 | Is every host critical (B115) | 1/3 — Incremental | 2/3 — Testable | as recorded | Alternative · deferred |
 | 5 | A writing search that reads roles (B113) | 1/3 — Incremental | 3/3 — Ready | as recorded | Alternative · deferred |
 

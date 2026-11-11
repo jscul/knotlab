@@ -1,5 +1,8 @@
 # Learning in handles
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LEARN-HANDLES-20261109-001` (backlog B6; G15 with G4; program learning), 2026-11-09. Pre-registered in
 [preregistration.md](preregistration.md) before any walk on a torus ran. Proof family:
 `proofs/LEARN-HANDLES-20261109-001A/LEARN-HANDLES-20261109-001A-P001_learning_resolves_a_class_forced_pair_only_by_winding/`.
@@ -85,7 +88,7 @@ None. The stress test of `RESIGN-STEER-20261107-001B`'s local rule passed one si
 | This attempt — learning in handles (B6) | **Status:** Successful | learning resolves class-forced dissonance, only by winding |
 | Local direction — steering by re-signing | Continue | the learner now has a job no state change does |
 | Broader exploration — learning program | Known alternatives | native target, chosen resolution, growth, layers |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | learning carries the class, two bits per handle |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | learning carries the class, two bits per handle |
 
 The attempt leaves unproved the n² count of least states and the exact match between the cheapest walk and the cycle bound (both
 computed), and that every class is reached directly from every least state (computed; proved for the cheapest class).
@@ -130,7 +133,7 @@ On a sphere the forced contradiction can be moved by learning but never removed.
 | This attempt: learning in handles (B6) | **Status:** Successful | learning removes class-forced dissonance, only by winding |
 | Local direction: steering by re-signing | Continue | the learner now does what no state change can |
 | Broader exploration: learning program | Known alternatives | native target, chosen resolution, growth, layers |
-| Long-term goal: G15 a point in a learned knot space | Capability gained | learning carries the class, two bits per handle |
+| Long-term goal: G15 a point in a learned knot pattern | Capability gained | learning carries the class, two bits per handle |
 
 **Next step:** Continue — selected: #1
 

@@ -1,5 +1,8 @@
 # The knot's amplitude as a spin sum
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `THREEFOLD-SPINSUM-20261030-001`, 2026-10-30.
 
 ## The question
@@ -45,7 +48,7 @@ Epic `THREEFOLD-SPINSUM-20261030-001`, 2026-10-30.
 
 - **The amplitude belongs to the whole.** Five per handle is exact, but it comes from the colouring count factoring across cuts (the point
   lemma), not from spin sectors.
-- **The contradiction is a balance.** The knot's space cannot be 2-coloured because its odd spin sector exactly cancels its even ones.
+- **The contradiction is a balance.** The knot's contradiction cannot be 2-coloured because its odd spin sector exactly cancels its even ones.
   Opening a contact unbalances them by twice the amplitude.
 - **Uniqueness.** Among all the sign classes its surface admits, the knot's is the only contradictory one.
 - **Limits.**
@@ -57,10 +60,10 @@ Epic `THREEFOLD-SPINSUM-20261030-001`, 2026-10-30.
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
 | Current attempt — the knot's amplitude as a spin sum | **Status:** Successful (negative answer) | Proved spin sum and balance; exact sector values; the even sectors do not carry the amplitude, the odd one does not cancel, and sectors do not localize on handles. |
-| Local direction — spin structures and spin sums of three-fold spaces | Retire | The spin structure is identified (previous epic) and the spin decomposition does not localize. Further refinement would not change these conclusions. |
-| Broader exploration — three-fold spaces (question 9) | Practically complete | Five epics give atoms and glue, handles, the amplitude (5 per handle, tree counts, one amplitude per space) and the spin structure. Unmapped: mixed contact sizes, and the complexity of the amplitude beyond the knot's spaces. |
-| Long-term goal — space from logic, and the two/three boundary | Obstruction learned | The amplitude's structure is not topological in the spin sense. What the line did find is linear-algebraic: the knot's spaces sit exactly on Seymour's bound, where non-colourability is a determinant condition. |
-| Next recommendation — where counting near-critical instances becomes hard | **Next step:** Continue, as a fresh epic. The knot's spaces are exactly the cubic systems on Seymour's bound for minimally non-2-colourable hypergraphs: as many lines as points, non-colourability a determinant condition, and the count with one line removed a product of determinant-like amplitudes. Is that count polynomial-time on every such system, including non-planar glue? Does it become #P-hard once a minimal system has more lines than points, or is not regular? | Ties the line's results to the program's complexity thesis. Counting on Seymour's bound would be easy because it is a determinant, and it may be hard just off the bound. That is a two/three-style boundary in counting. |
+| Local direction — spin structures and spin sums of three-regular contradictions | Retire | The spin structure is identified (previous epic) and the spin decomposition does not localize. Further refinement would not change these conclusions. |
+| Broader exploration — three-regular contradictions (question 9) | Practically complete | Five epics give atoms and glue, handles, the amplitude (5 per handle, tree counts, one amplitude per space) and the spin structure. Unmapped: mixed contact sizes, and the complexity of the amplitude beyond the knot's contradictions. |
+| Long-term goal — space from logic, and the two/three boundary | Obstruction learned | The amplitude's structure is not topological in the spin sense. What the line did find is linear-algebraic: the knot's contradictions sit exactly on Seymour's bound, where non-colourability is a determinant condition. |
+| Next recommendation — where counting near-critical instances becomes hard | **Next step:** Continue, as a fresh epic. The knot's contradictions are exactly the cubic systems on Seymour's bound for minimally non-2-colourable hypergraphs: as many lines as points, non-colourability a determinant condition, and the count with one line removed a product of determinant-like amplitudes. Is that count polynomial-time on every such system, including non-planar glue? Does it become #P-hard once a minimal system has more lines than points, or is not regular? | Ties the line's results to the program's complexity thesis. Counting on Seymour's bound would be easy because it is a determinant, and it may be hard just off the bound. That is a two/three-style boundary in counting. |
 | Interest — that recommendation | **2/3 — Promising** | The easy side has a concrete route (the product formula, determinants for planar braces, a boundary-tensor recursion over the Robertson–Seymour–Thomas decomposition). Main uncertainty: the hard side may need reductions that preserve minimality, which may not exist. |
 | Execution — that next action | Deferred to the owner (fresh epic) | First discriminator: the trisum amplitude from boundary tensors of its pieces (easy side), and small critical systems with one more line than points (hard side). Stop if both sides stay open after these. |
 

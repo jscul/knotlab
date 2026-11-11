@@ -1,5 +1,8 @@
 # Reading the genus natively
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `GENUS-READ-20261107-001` (program topology), 2026-11-07.
 
 ## The question
@@ -16,7 +19,7 @@ Epic `GENUS-READ-20261107-001` (program topology), 2026-11-07.
 | --- | --- | --- | --- |
 | 1 | **Census 6 depends on how it is glued.** The creation test glues a far side's split-point lines to the gluing line's points in their listed order. For K4^(3), the Fano plane and census 58 the split point's signed stabilizer realizes all six permutations, so they are order-free. For census 6 it realizes two, so there are three gluings. | proved: exhaustive symmetry computation | A |
 | 2 | **Measured.** On 64 saved spaces census 6 changes with the order in 8,046 of 11,552 pairs, creating at none, one or all three gluings. K4^(3), the Fano plane, census 58 and whether creation occurs never change. In the Fano plane alone, census 6's "14 of 42" (BRACE-TREE A) is natively one gluing of three at every pair. | computed | A |
-| 3 | **Natively a Fano atom is homogeneous.** In every Fano tree, every ordered pair of lines of a Fano atom gets one native vector: no K4^(3), census 6 at one gluing of three, the Fano plane, census 58. It is forced by every state the atom's closed sides can show. | proved: 253 configurations, 2,990 pairs | B |
+| 3 | **Natively a Fano piece is homogeneous.** In every Fano tree, every ordered pair of lines of a Fano piece gets one native vector: no K4^(3), census 6 at one gluing of three, the Fano plane, census 58. It is forced by every state the atom's closed sides can show. | proved: 253 configurations, 2,990 pairs | B |
 | 4 | **Atoms act as one natively on Fano trees.** ATOM-ONE B's bound holds at every gluing order. With a free port relation, deep points change nothing at any order. | proved | B |
 | 5 | **FAR-READ B's split step is not a native reading.** Given native vectors it cuts every atom of six or seven lines. On the 23 saved and fresh Fano trees it reads none natively, against all 23 in census 6's stored order. The yes/no twin rule reads all 23 and is a theorem under CHAIN-TRANSFER C's condition N. | proved (corollary) and computed | B |
 | 6 | **The information that separates atoms through glue is native.** K4^(3), the Fano plane and census 58 alone tell apart all 372 yes/no twins across atoms (39 spaces), and every atom acts as one on them (1,065 of 1,065). For 114 pairs the difference lies only in their rows at glue lines. | computed | C |
@@ -50,7 +53,7 @@ Epic `GENUS-READ-20261107-001` (program topology), 2026-11-07.
 ## Reading
 
 - **A handle is homogeneous, natively.**
-  - **From outside.** A Fano atom acts as one (ATOM-ONE).
+  - **From outside.** A Fano piece acts as one (ATOM-ONE).
   - **From inside.** All its lines are alike to each other, far side by far side.
   - **The intuition's word.** A handle is one bound unit, with nothing inside it for creation to tell apart.
 - **Representation must not do the work.**
@@ -94,7 +97,7 @@ Epic `GENUS-READ-20261107-001` (program topology), 2026-11-07.
 | --- | --- | --- |
 | Current attempt — the genus reading on Fano trees | **Status:** Successful, by refutation and correction | **Refuted.** FAR-READ B's rule is not a native reading: natively it cuts atoms, and its success rested on census 6's listing order. **Settled.** The native reading of Fano trees is the yes/no twin rule (a theorem under condition N), and atoms are provably homogeneous inside. |
 | Local direction — a native reading through plane glue | Open | **The information is native.** 372 of 372 obstructed pairs are separated. **Rows are not enough.** Native row twins at atom lines read 234 of 277; 114 pairs differ only at glue lines. **Watch for diminishing returns.** This obstruction has outlived two rule designs (GLUE-READ, FAR-READ). |
-| Broader exploration — handles that are not Fano atoms; other far-side statements | Known alternatives | **Untouched.** Junction handles (HANDLE-COUNT) and census 58. **To review.** Earlier far-side statements that rest on census 6's order (listed above). |
+| Broader exploration — handles that are not Fano pieces; other far-side statements | Known alternatives | **Untouched.** Junction handles (HANDLE-COUNT) and census 58. **To review.** Earlier far-side statements that rest on census 6's order (listed above). |
 | Long-term goal — topology from native emergence | Capability gained, obstruction learned | **Gained.** The genus of Fano trees is read natively by a theorem, and a representation artifact is removed. **Learned.** Inside a handle, native creation sees no structure. Through glue, the native distinction sits in the glue's view. |
 | Next recommendation — colour refinement on the native creation map | **Next step:** Continue. Run colour refinement (1-dimensional Weisfeiler–Leman) on the native creation map, with lines as vertices and native far-side vectors as edge colours. It is canonical, so representation-free by construction. **The discriminator.** Does its stable partition ever put lines of two different atoms in one class, on the 277 spaces? **If never.** Assemble atoms from its classes with the acts-as-one relation, and test on fresh spaces. **If it does.** Those spaces are natively symmetric across atoms as far as refinement can see, a sharper obstruction. | **Why this, not another hand-made rule.** It replaces rule design by a canonical procedure, so a negative is decisive rather than one more failed rule. **Alternatives.** Whether junction handles act as one natively (2/3); a native audit of earlier far-side records (1/3). |
 | Interest — that recommendation | **2/3 — Promising** | **Evidence.** The native map separates every obstructed pair, and refinement uses rows and columns at glue lines together, which the twin rules could not. **Main uncertainty.** Refinement may separate too finely, splitting atoms whose lines differ at glue lines, and reassembly may need a principle not yet in hand. |

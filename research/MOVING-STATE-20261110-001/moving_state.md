@@ -1,5 +1,8 @@
 # Let the state move while learning acts
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `MOVING-STATE-20261110-001` (backlog B71, G15; the challenge of A26; program learning), 2026-11-10, at the coordinator's go-ahead.
 Pre-registered in [preregistration.md](preregistration.md); frozen contract and run in
 `experiments/MOVING-STATE-20261110-001A/MOVING-STATE-20261110-001A-E001_a_moving_state_with_learning/`; results in
@@ -45,7 +48,7 @@ holds the state still).
 | This attempt — let the state move (B71, challenge of A26) | **Status:** Partially successful | frees learning; a settled unit stays in its atom |
 | Local direction — learning with a moving state | Continue | the point now travels to where learning acts |
 | Broader exploration — learning program | Known alternatives | temporary rises, larger networks |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a moving point plus learning, as in the owner's picture |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a moving point plus learning, as in the owner's picture |
 
 **Next step:** Continue — selected: #1
 

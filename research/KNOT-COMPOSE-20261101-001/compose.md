@@ -1,4 +1,7 @@
-# Composition of the knot's spaces: decision at closure
+# Composition of the knot's contradictions: decision at closure
+
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
 
 Epic `KNOT-COMPOSE-20261101-001`, closed 2026-11-01. Program: topology.
 
@@ -12,16 +15,16 @@ networks?
 | # | Result | Status | Evidence |
 | --- | --- | --- | --- |
 | 1 | Every 3-edge cut of a cubic incidence graph is balanced: a point side with three ports, a line side with three slots. | proved | A, Lemma 1 |
-| 2 | Across every nontrivial 3-edge cut of a knot's space the line side is exactly the knot (not-all-equal) and the point side exactly a hub (equality). | proved (point lemma); checked on all 5 cuts of four spaces | A, Theorem 4 |
+| 2 | Across every nontrivial 3-edge cut of a contradiction the line side is exactly the knot (not-all-equal) and the point side exactly a hub (equality). | proved (point lemma); checked on all 5 cuts of four spaces | A, Theorem 4 |
 | 3 | Two sides that both accept knots fail together only as complementary parity cosets (an independent half of the cube is a colour class). | proved | A, Lemma 3 |
-| 4 | Double cuts of knot's spaces accept twelve-class knots or no knot, and two twelve-class sides never fail together. | checked (468 double cuts, 200 joins) | A |
+| 4 | Double cuts of knot's contradictions accept twelve-class knots or no knot, and two twelve-class sides never fail together. | checked (468 double cuts, 200 joins) | A |
 | 5 | Parity does fail hub-free (control). | checked | A |
-| 6 | The transpose maps knot's spaces to knot's spaces and exchanges knot sides with hub sides. | proved | A |
+| 6 | The transpose maps knot's contradictions to knot's contradictions and exchanges knot sides with hub sides. | proved | A |
 | 7 | Against the native-network gate: the composition passes on substrate, native law, endpoint identity and persistence, and fails on the no-common-hub item. So it is a native network of knots with network hubs (in scope by the owner's decision). | documentation | B |
 
 ## Answer
 
-- **Yes, natively, but always through hubs.** The parts of a knot's space meet as a knot against an equality fan-out.
+- **Yes, natively, but always through hubs.** The parts of a contradiction meet as a knot against an equality fan-out.
 - **Hub-free composition is parity's.** A failing composition that joins knot to knot is a parity composition. This echoes the earlier
   results in which only parity survives hub-free composition.
 
@@ -36,13 +39,13 @@ networks?
 - **From the earlier epics.** Tight cuts and the splice calculus (THREEFOLD-SPACES, on Lovász–Plummer and Robertson–Seymour–Thomas), and
   the point lemma and factorization (THREEFOLD-AMPLITUDE).
 - **Elementary.** The complementarity lemma (independent halves of the cube).
-- **New reading.** That the knot's spaces meet only through hubs was found in no source checked.
+- **New reading.** That the knot's contradictions meet only through hubs was found in no source checked.
 
 ## Next steps
 
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
-| Current attempt — composition of the knot's spaces | **Status:** Successful | Every small interface is classified: knot against hub across 3-edge cuts; knot against knot fails only for parity. |
+| Current attempt — composition of the knot's contradictions | **Status:** Successful | Every small interface is classified: knot against hub across 3-edge cuts; knot against knot fails only for parity. |
 | Local direction — composition | Continue later, with scope stated | Open: cuts of four or more edges with a hub side (trisum glue), and native paths and separation through network hubs. |
 | Broader exploration — composed topology | Known alternatives | Paths through network hubs (2/3); the five weak four-place classes (1/3). |
 | Long-term goal — emergence then composed topology | Obstruction learned | The knot's composition needs hubs, and hub-free composition is linear (parity). The missing bridge is native paths through admitted network hubs. |

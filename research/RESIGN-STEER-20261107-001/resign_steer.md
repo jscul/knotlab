@@ -1,5 +1,8 @@
 # Steering the knot sphere's dissonance by re-signing
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `RESIGN-STEER-20261107-001` (program learning), 2026-11-07.
 
 ## The question
@@ -106,7 +109,7 @@ Carried from earlier epics:
 | This attempt — steering the forced dissonance by re-signing (B2) | **Status:** Successful | Re-signing always moves it into the law and carries it anywhere |
 | Local direction — steering on the knot sphere | Practically exhausted | Every question asked is settled on the sphere; the force is fitted, not proved |
 | Broader exploration — G15's open parts | Known alternatives | Handles (B6), many points (B3), layers through naming knots |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | The point, its strength, rationalization and steering have proved forms |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | The point, its strength, rationalization and steering have proved forms |
 
 **Corrections:** none. **Goals:** G15 checkpoint, capability gained; backlog B2 marked taken, B6 parked (learning in handles), B3
 updated. **Assumptions:** A21 confirmed on the sphere, with its boundary drawn; A20 kept as Assumed with a history line; A26 and
@@ -139,7 +142,7 @@ A27 added.
 2. **Many points at once.** The owner's own stretch goal. Several pairs of even faces force over-agreement (theorem 1), so points
    must interact; whether their moves need a scheduler is a sharp question. It is deferred because handles decide first what
    learning can hold.
-3. **Layers.** B2's third hypothesis, still only stated: no network built by naming patterns has been set up as a knot space with
+3. **Layers.** B2's third hypothesis, still only stated: no network built by naming patterns has been set up as a drawn knot pattern with
    dissonance yet.
 4. **The force as a theorem.** It would turn conclusion 6 into a statement with proof, a refinement of a known electrostatic
    picture (Ciucu) on a closed polyhedral surface.
@@ -162,7 +165,7 @@ In your terms, the point is the forced dissonance and its strength is an index n
 | This attempt — steering the forced dissonance by re-signing (B2) | **Status:** Successful | Re-signing always moves it into the law and carries it anywhere |
 | Local direction — steering on the knot sphere | Practically exhausted | Everything asked is settled; the force is fitted, not proved |
 | Broader exploration — G15's open parts | Known alternatives | Handles (B6), many points (B3), layers |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | Point, strength, rationalizing and steering now have proved forms |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | Point, strength, rationalizing and steering now have proved forms |
 
 **Corrections:** none. **Goals:** G15 checkpoint, capability gained; B2 marked taken, B3 updated, B6 parked. **Assumptions:** A21 confirmed on the sphere: a sign change that leaves the even faces in place is a change of state in disguise. Two entries added: A26 (the learner acts only at the dissonance while the state holds still) and A27 (a law is weighed by how many states it allows). A20 gets a history line.
 

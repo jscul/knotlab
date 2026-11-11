@@ -1,5 +1,8 @@
 # What it takes to hold a count
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a knot world is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `HOLD-COUNT-20261111-001` (backlog B152, G8 with G15; program mathematics), 2026-11-11, at the coordinator's go-ahead after the
 owner's question about knapsack. Pre-registered in [preregistration.md](preregistration.md), frozen in commit `29121e4e7` before the
 census ran. Proof family: `proofs/HOLD-COUNT-20261111-001A/`.
@@ -9,14 +12,14 @@ census ran. Proof family: `proofs/HOLD-COUNT-20261111-001A/`.
 The owner asked whether solving a pseudo-polynomial problem is "statistical", some choices leading to the solution faster, and whether
 knapsack could be "an emergent representation of what's happening at the logical emergence scale". Knapsack's table is fast because
 every partial choice is summarised by one running total. A total is a magnitude, and the knot's own law, not-all-equal, has no preferred
-value. So: which counts can a knot space with that law hold, with and without one fixed value supplied by the world, and how small can
+value. So: which counts can a drawn knot pattern with that law hold, with and without one fixed value supplied by the world, and how small can
 the space be?
 
 ## The answer
 
 **The knot law writes a count in binary, and only in mirror pairs.**
 
-- **The mirror lemma (proved by hand, refereed by fresh code).** A knot space whose floor states are closed under flipping every point
+- **The mirror lemma (proved by hand, refereed by fresh code).** A drawn knot pattern whose floor states are closed under flipping every point
   reads a count of n held points mod m (n ≥ m − 1) only when m is even and n is odd, and the codes of c and n − c are complements. So it
   never counts three held points mod 3 without a reference, and it holds their count mod 4 exactly as a full adder.
 - **The full adder at the least size (exact).** The 8-point parity torus (2, 0, 4) is already a full adder: hold points 0, 1 and 4, and
@@ -50,7 +53,7 @@ the space be?
 
 ## What it changes
 
-- **For the owner's knapsack question.** The knot world does hold a running total, natively and at its least size: in binary, as the
+- **For the owner's knapsack question.** The drawn knot pattern does hold a running total, natively and at its least size: in binary, as the
   full adder that digital circuits use, not as a table of every total. It holds only counts that look the same from both sides of the
   mirror, so a count mod 3 needs a fixed value supplied by the world, and in spaces up to 20 points even that is not enough: a point
   would have to read whether three held points are not all equal, the knot's own relation, and none does. Nothing here bears on P versus
@@ -68,7 +71,7 @@ None.
 
 ## In the owner's words
 
-A knot space can keep a running total, and it keeps it the way a computer does: three held points come out as two binary digits, a
+A drawn knot pattern can keep a running total, and it keeps it the way a computer does: three held points come out as two binary digits, a
 parity and a carry, in the smallest space that counts at all. It only keeps counts that look the same from both sides of the mirror,
 so counting in threes needs a fixed value from outside. Even with one, no space this small does it, because it would have to read
 the knot's own relation, whether three things are not all equal, and none can.
@@ -78,7 +81,7 @@ the knot's own relation, whether three things are not all equal, and none can.
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — what it takes to hold a count (B152) | **Status:** Successful | lemma refereed; full adder at 8 points; no count mod 3 with a reference |
-| Local direction — counts held by one knot space | Continue | the two missing four-point maps are a sharp target |
+| Local direction — counts held by one drawn knot pattern | Continue | the two missing four-point maps are a sharp target |
 | Broader exploration — arithmetic and learning lines | Known alternatives | composing counters (B148), phases, a native reference |
 | Long-term goal — G8 From spacing to arithmetic and sets | Capability gained | binary counting is native; odd moduli need an input |
 
@@ -86,7 +89,7 @@ the knot's own relation, whether three things are not all equal, and none can.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Does a knot space read its own relation? | 2/3 — Substantial | 2/3 — Testable | four-point maps on lattice tori of 21 to 24 points by SAT, and a proof attempt → a ⊕ NAE or the switch found, or a reason none occurs | Selected · awaiting go-ahead |
+| 1 | Does a drawn knot pattern read its own relation? | 2/3 — Substantial | 2/3 — Testable | four-point maps on lattice tori of 21 to 24 points by SAT, and a proof attempt → a ⊕ NAE or the switch found, or a reason none occurs | Selected · awaiting go-ahead |
 | 2 | Binary counters from composed tori (sub-goal B148) | 3/3 — Major | 2/3 — Testable | two (2, 0, 4) tori wired so that the carry of one feeds the next → a count of more held points in binary, or the wire unties | Alternative · awaiting go-ahead |
 | 3 | Totals carried as phases in signed laws | 2/3 — Substantial | 1/3 — Stated | a signed law whose phase carries a count mod 3 | Alternative · deferred |
 | 4 | A native reference (challenge A65) | 2/3 — Substantial | 1/3 — Stated | a space or learned frame fixing one value in every floor state | Alternative · deferred |

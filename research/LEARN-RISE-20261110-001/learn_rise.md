@@ -1,12 +1,15 @@
 # Learning at a rise
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LEARN-RISE-20261110-001` (backlog B80, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family: `proofs/LEARN-RISE-20261110-001A/LEARN-RISE-20261110-001A-P001_swapping_the_atoms_roles/`
 (long-running row LEARN-RISE-A1); post-hoc search [posthoc_targeted.py](posthoc_targeted.py).
 
 ## The question
 
-The leftover dissonance sits in whichever Fano atom acts as its line (`LAW-HOLDS-20261110-001`), so moving it means changing the law, and
+The leftover dissonance sits in whichever Fano piece acts as its line (`LAW-HOLDS-20261110-001`), so moving it means changing the law, and
 at the floor learning has no step. One unit above the floor it does. With the state moving and learning acting, can the leftover be
 carried to the other atom?
 
@@ -44,7 +47,7 @@ None.
 | This attempt — learning at a rise (B80) | **Status:** Partially successful | frozen test capped; post hoc the leftover moves |
 | Local direction — moving the leftover by learning | Continue | it works, with the state's help |
 | Broader exploration — learning program | Known alternatives | choosing the atom, shortest paths |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | learning places a pattern's tension |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | learning places a pattern's tension |
 
 **Next step:** Research directions — selected: #1
 

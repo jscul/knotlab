@@ -1,5 +1,8 @@
 # Negation inside a cut leaf
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `NOT-INSIDE-20261110-001` (backlog B123, G15; program learning), 2026-11-10, at the coordinator's go-ahead, as the deciding epic for
 the gates question. Pre-registered in [preregistration.md](preregistration.md), frozen in commit `904fce672` before any run. Proof family:
 `proofs/NOT-INSIDE-20261110-001A/`.
@@ -15,7 +18,7 @@ an explicit network reads NOT a_1 for each of three cut leaves, and another sign
   every outer pattern it allows in c, then some signing of c′ admits the same state: flip the leaf's inner points where a completion under
   c′ differs. For atoms that act in one class and are transparent in the rest, that gives monotone readings and no distinction among
   non-acting classes. Scope: any network whose other constraints do not involve a leaf's signs, of any size.
-- **Census N (computed).** In the frame of the labelled class laws, the thin tori (3,2,2) and (4,3,2) and the Fano atom, cut into the
+- **Census N (computed).** In the frame of the labelled class laws, the thin tori (3,2,2) and (4,3,2) and the Fano piece, cut into the
   torus (2,0,2), each have states only the acting class allows (10, 14 and 12); a network pinning names to one reads NOT a_1 there.
 - **Check F (computed).** Each of the 718 networks that read σ in `CLASS-READ-20261110-001` has a satisfying state under another signing of
   σ. That reading, and the parity reading noted after `GATES-20261110-001`, were frame-level: corrected below.
@@ -63,7 +66,7 @@ is a record of the path learning took, not of what it stored.
 | This attempt — negation inside a cut leaf (B123) | **Status:** Successful | a definite ending: class-level readings proved monotone; a frame-level NOT exhibited |
 | Local direction — gates from cuts and names | Exhausted for this phase | the readable functions of stored classes are monotone, by proof |
 | Broader exploration — learning program | Known alternatives | native writing, inputs and outputs, a frame fixed by learning |
-| Long-term goal — G15 Learning: a point in a learned knot space | Obstruction learned | a learned knot memory computes monotone functions only |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Obstruction learned | a learned knot memory computes monotone functions only |
 
 **Next step:** Research directions — selected: #1 (the line leaves gates, as agreed)
 
@@ -89,7 +92,7 @@ Posted in the thread on 2026-11-10:
 | This attempt: negation inside a cut leaf (B123) | **Status:** Successful | a definite ending: class readings proved monotone, a frame-level NOT exhibited |
 | Local direction: gates from cuts and names | Exhausted for this phase | what stored classes can be read as is monotone, by proof |
 | Broader exploration: learning program | Known alternatives | native writing, inputs and outputs, a frame fixed by learning |
-| Long-term goal: G15, a point in a learned knot space | Obstruction learned | a learned knot memory computes monotone functions only |
+| Long-term goal: G15, a point in a learned knot pattern | Obstruction learned | a learned knot memory computes monotone functions only |
 
 **Next step:** Research directions, selected #1. The line leaves gates, as agreed.
 

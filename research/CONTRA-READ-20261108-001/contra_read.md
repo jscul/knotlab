@@ -1,5 +1,8 @@
 # Does creation between glue lines always single out the contradictory class?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `CONTRA-READ-20261108-001` (program topology), 2026-11-08.
 
 ## The question
@@ -43,7 +46,7 @@ Epic `CONTRA-READ-20261108-001` (program topology), 2026-11-08.
 ## Literature
 
 - **Classical.** Switching classes of signed graphs (Zaslavsky); Pfaffian orientations (Kasteleyn).
-- **Ours.** The theorem behind the rows (SWITCH-PROOF), the blindness of creation (SWITCH-COMPLETE), three-fold spaces as the
+- **Ours.** The theorem behind the rows (SWITCH-PROOF), the blindness of creation (SWITCH-COMPLETE), three-regular contradictions as the
   non-colourable plain spaces (THREEFOLD-SPACES, HANDLE-COUNT).
 - **New here.** The recognition of the contradictory class by creation, and the tie mechanism.
 

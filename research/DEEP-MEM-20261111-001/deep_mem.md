@@ -1,5 +1,8 @@
 # Deeper memories from examples
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `DEEP-MEM-20261111-001` (backlog B135, G15; program learning), 2026-11-11, at the coordinator's go-ahead after the owner resumed the
 learning line. Pre-registered in [preregistration.md](preregistration.md), frozen with the code in commit `6decb62ff` before any run on
 the test spaces. Proof family: `proofs/DEEP-MEM-20261111-001A/`.
@@ -62,7 +65,7 @@ would.
 | This attempt: deeper memories from examples (B135) | **Status:** Successful | every composite write learned and held at depth 3 and with three atoms |
 | Local direction: learning gates from examples | Exhausted for this phase | every gate target learned at every kind of group tested |
 | Broader exploration: learning program | Known alternatives | unateness as a theorem, the probe as a theorem, cost with more atoms |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | learning from examples reaches deep and wide memories natively |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | learning from examples reaches deep and wide memories natively |
 
 **Next step:** Research directions — selected: #1
 
@@ -93,7 +96,7 @@ Posted in the thread on 2026-11-11:
 | This attempt: deeper memories from examples (B135) | **Status:** Successful | every composite write learned and held at depth 3 and with three atoms |
 | Local direction: learning gates from examples | Exhausted for this phase | every gate target learned at every kind of group tested |
 | Broader exploration: learning program | Known alternatives | unateness as a theorem, the probe as a theorem, cost with more atoms |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | learning from examples reaches deep and wide memories natively |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | learning from examples reaches deep and wide memories natively |
 
 **Next step:** Research directions, selected #1.
 

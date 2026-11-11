@@ -1,5 +1,8 @@
 # Grow where learning is stuck
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `GROW-STUCK-20261110-001` (backlog B68; G15 with G1; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family:
 `proofs/GROW-STUCK-20261110-001A/GROW-STUCK-20261110-001A-P001_a_learner_that_grows_only_when_stuck/`; stress test on K_6 in
@@ -13,7 +16,7 @@ In `GROW-HANDLE-20261110-001` the experimenter chose where to grow. Can the lear
 
 - **A floor on dissonance (proved).** Weigh dissonance as the count does, W = violated lines + E + |D| / 2. Then W ≥ |χ| / 2 in every state
   of every law: 1 on a sphere, 0 on a torus, g − 1 at genus g. The torus is the only shape with no forced dissonance.
-- **Growth arithmetic (proved).** Each Fano atom lowers χ by 2. From a sphere, one growth reaches the torus's floor of 0; every further
+- **Growth arithmetic (proved).** Each Fano piece lowers χ by 2. From a sphere, one growth reaches the torus's floor of 0; every further
   growth raises the floor by one, which no learning can remove. One handle is exactly right; more lock dissonance in.
 - **The stuck learner (computed).** A learner that takes a step only when some sequence of at most r steps lowers W, and otherwise grows
   an atom at a violated line, is stuck at once on a sphere (its flat state is already at the floor) and grows at the dissonance, on every
@@ -53,7 +56,7 @@ None.
 | This attempt — grow where stuck (B68) | **Status:** Successful | grows once at the dissonance, given sight 3 |
 | Local direction — steering by re-signing | Continue | growth is now triggered by the learner |
 | Broader exploration — learning program | Known alternatives | layers through atoms, overgrown surfaces |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | the network grows from the learner's own state |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | the network grows from the learner's own state |
 
 **Next step:** Continue — selected: #1
 

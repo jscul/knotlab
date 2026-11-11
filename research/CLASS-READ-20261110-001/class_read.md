@@ -1,5 +1,8 @@
 # Reading the class, not the bit
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `CLASS-READ-20261110-001` (backlog B122, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen in commit `10e19e0a3` before any run. Proof family: `proofs/CLASS-READ-20261110-001A/`.
 
@@ -71,13 +74,13 @@ its states most tightly. The other two ways look alike from outside. The network
 | This attempt — reading the class, not the bit (B122) | **Status:** Partially successful | the parity reading re-found (R1); the complete basis not reached (R2 failed) |
 | Local direction — gates from cuts and names | Obstruction learned | readings stay monotone with classes as stored state; the readable levels form a chain |
 | Broader exploration — learning program | Known alternatives | negation inside a cut leaf, native writing, composing gates |
-| Long-term goal — G15 Learning: a point in a learned knot space | No demonstrated advance toward "computes" | still no negation |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | No demonstrated advance toward "computes" | still no negation |
 
 **Next step:** Research directions — selected: #1
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Negation inside a cut leaf (B123) | 2/3 — Substantial | 2/3 — Testable | the census of `GATES-20261110-001`'s F4′ with larger leaves (thin (3,2,2), the Fano atom) and names inside them → a NOT, or a proof that every reading is monotone, which would close the gates question | Selected · awaiting go-ahead |
+| 1 | Negation inside a cut leaf (B123) | 2/3 — Substantial | 2/3 — Testable | the census of `GATES-20261110-001`'s F4′ with larger leaves (thin (3,2,2), the Fano piece) and names inside them → a NOT, or a proof that every reading is monotone, which would close the gates question | Selected · awaiting go-ahead |
 | 2 | Native writing (B119) | 2/3 — Substantial | 2/3 — Testable | as recorded | Alternative · deferred |
 | 3 | Composing gates (B124) | 2/3 — Substantial | 1/3 — Exploratory | as recorded | Alternative · deferred |
 | 4 | Inputs and outputs (B120) | 2/3 — Substantial | 1/3 — Exploratory | as recorded | Alternative · deferred |

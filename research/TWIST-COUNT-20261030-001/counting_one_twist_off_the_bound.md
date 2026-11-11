@@ -1,11 +1,14 @@
 # Counting one twist off the bound
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `TWIST-COUNT-20261030-001`, 2026-10-30.
 
 ## The question
 
 - **The owner's request (2026-10-30).** "Yes, please continue." This approved the recommendation of `SEYMOUR-COUNT-20261030-001`.
-  - Keep a three-fold space's incidence graph, and change its signs away from the knot's own class, so that the space becomes colourable.
+  - Keep a three-regular contradiction's incidence graph, and change its signs away from the knot's own class, so that the space becomes colourable.
   - Is counting still easy for every sign class (the ease lives in the graph), or hard for some family (the knot's own impossibility is the
     boundary)?
 - **Scoping (not evidence).** In the Hadamard basis every planar piece is a matchgate under any signs. A piece carrying the knot's own signs
@@ -53,7 +56,7 @@ but never sharply.**
 ## Reading
 
 - **The knot's mechanism, seen through a twist.**
-  - Easy counting on the knot's spaces came from determinants. Seen through a twist, it is a local property of every junction: a side with
+  - Easy counting on the knot's contradictions came from determinants. Seen through a twist, it is a local property of every junction: a side with
     the knot's signs is a similitude at the knot's own angle.
   - Twists may wander along a path of pieces without breaking it. Only a branching of twists does.
 - **Interference, again.** The soft crossing exists because signs cancel the turning paths exactly while letting the crossing path through.

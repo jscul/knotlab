@@ -1,5 +1,8 @@
 # The pendant-line statement
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `PENDANT-LINE-20261106-001` (program topology), 2026-11-06.
 
 ## The question
@@ -30,7 +33,7 @@ Epic `PENDANT-LINE-20261106-001` (program topology), 2026-11-06.
     then decided by a handful of classes around the line, and every such configuration was checked.
 - **The two-bit screening lemma is complete.** An intact receiving side acts as its line for creation, as it does for solutions, so
   the one-bit and two-bit screening lemmas together contract any untouched side.
-- **The handle tree, as a theorem.** In spaces built from Fano atoms alone, the following are proved:
+- **The handle tree, as a theorem.** In spaces built from Fano pieces alone, the following are proved:
   - native creation keeps every atom whole;
   - it reads every cut in its direction;
   - it fixes every relation between atoms at most two apart by one rule, touching.
@@ -85,6 +88,6 @@ Epic `PENDANT-LINE-20261106-001` (program topology), 2026-11-06.
 | Local direction — screening in Fano trees | Practically complete | The dictionary up to distance two is a theorem, non-creation included. Nothing below distance three remains open. |
 | Broader exploration — reading the handle tree | One gap for Fano trees | **The gap.** A transfer along chains of four or more atoms, after which the source rule becomes a theorem. **Outside.** Plane glue and non-Fano handles. |
 | Long-term goal — topology from native emergence | Capability gained | **Gained.** Native selection provably keeps each handle whole and reads each cut's direction. Where it creates is decided by a two-round rule at the gluing line. **Missing bridge.** Distances of three atoms and more. |
-| Next recommendation — a transfer along chains | **Next step:** Continue. Prove the touching rule at every distance in Fano trees. Use the two-round rule: show that an atom between a removal and the gluing line passes the gluing-line meetings through unchanged, or find an inductive step from three to four atoms, checked on all four-atom gluings. | **If yes.** The source rule becomes a theorem: native creation recovers the directed handle tree of every space built from Fano atoms. **If no.** The first distance where the touching rule fails, which would refine the source rule. **Alternative.** The bridge to proof complexity (2/3). The two-round rule says derivations through a cut have depth two, a statement in the language of bounded-depth elimination. |
+| Next recommendation — a transfer along chains | **Next step:** Continue. Prove the touching rule at every distance in Fano trees. Use the two-round rule: show that an atom between a removal and the gluing line passes the gluing-line meetings through unchanged, or find an inductive step from three to four atoms, checked on all four-atom gluings. | **If yes.** The source rule becomes a theorem: native creation recovers the directed handle tree of every space built from Fano pieces. **If no.** The first distance where the touching rule fails, which would refine the source rule. **Alternative.** The bridge to proof complexity (2/3). The two-round rule says derivations through a cut have depth two, a statement in the language of bounded-depth elimination. |
 | Interest — that recommendation | **2/3 — Promising** | **Evidence.** The touching rule is exact up to distance two and held at all 18 distance-three places. Creation is now decided locally at the gluing line. **Main uncertainty.** Near knots that meet the gluing line can involve classes far down the chain, so locality at the line is not yet locality in the tree. |
 | Execution — that action | Deferred to the owner | **Not started.** No new epic opened. **Bound.** The touching rule at every distance in Fano trees. **Stop when** it is proved, refuted at a first distance, or reduced to a finite check that is then run. |

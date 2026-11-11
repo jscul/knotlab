@@ -1,5 +1,8 @@
 # Which faces a handle uses
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `FACE-CLAIM-20261103-001` (program topology), 2026-11-03.
 
 ## The question
@@ -17,7 +20,7 @@ Epic `FACE-CLAIM-20261103-001` (program topology), 2026-11-03.
 | 1 | **The reading lemma.** In the split at the attachment point, the merged face takes its one skip on the arc opposite the port that is odd relative to an all-agree pattern fixed by the arc constants. So the own arc between two ports is barred exactly when they disagree, and whenever they agree the face opposite the third port is claimed by that port's line. Barred faces fix two points of each of their lines. | proof; brute force on 2,148 solutions | A |
 | 2 | **The claim lemma.** A frozen line claims an own arc from one port pattern per value, and the face opposite a port from at most two, which share the other two ports. | proof; brute force on 432 corners | A |
 | 3 | **The claim rule.** An opened handle creates at a frozen line exactly when a pair of its points freezes it and each point alone still allows the line's claim at either fixed value. | route direction proved; converse computed with no disagreement against exact creation (728 cases) and the pipeline (26,634 far lines) | A |
-| 4 | **The census of handles.** 24 non-planar knot spaces, 305 handles, all port orders on a ladder (1,830 cases). Which faces are used depends only on the bottom port, and nine signatures occur. | computation | B |
+| 4 | **The census of handles.** 24 non-planar contradictions, 305 handles, all port orders on a ladder (1,830 cases). Which faces are used depends only on the bottom port, and nine signatures occur. | computation | B |
 | 5 | **Faces used are a property of the port relation.** The rule's port form decides all 3,660 (case, face) pairs. The opposite face of c is used when a pair pins one class-c pattern and each single point keeps both disagreeing values of the other ports. The own arc is used when each single point keeps both class-c patterns. | computation (exact on the census) | B |
 | 6 | **The Fano plane.** Every removal meets the removed line at one port. Pairs pin that port's class, and every single point removes exactly one pattern of each other class. So it never uses an own arc (proved) and uses the opposite face at every port (computed). | proof plus finite check | B |
 | 7 | **Census 58.** It uses the own arc exactly when the bottom port is 0 or 5, the third points of its two lines that share two points. | computation | B |

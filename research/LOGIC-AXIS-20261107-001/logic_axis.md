@@ -1,5 +1,8 @@
 # The axis built from logic
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): an open end is a loose end. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LOGIC-AXIS-20261107-001` (program topology), 2026-11-07.
 
 ## The question
@@ -29,8 +32,8 @@ Epic `LOGIC-AXIS-20261107-001` (program topology), 2026-11-07.
 | 6 | **Conservative growth never stretches.** A conservative extension never increases bond distance. A system that keeps its old allowed states grows only by adding distinctions, never by moving existing ones apart. | proved | A |
 | 7 | **The frozen axis is measured in signed bits.** In Ledrappier's law the three-place knots are exactly the Frobenius triangles, so bond balls are infinite. Along each lattice line, bond distance is at most 1 + w(n) (the non-adjacent-form weight of the separation), and equals 2 exactly at powers of two. | proved | B |
 | 8 | **Conjecture: equality.** Bond distance along the axis is exactly 1 + w(n), and 1 + \|v\|_D in the plane. | conjecture; windows: n <= 128 at sizes <= 4, n = 43, 45, 51, 53 at size 5, all 168 vectors of [−6,6]^2 | B |
-| 9 | **Towers with nothing drawn split by open ends.** Gadgets adding no open ends keep the old knot: bond distance 2 at every level (G0, the 2026-10-20 refinement; G6 with hubs). Gadgets adding open ends stretch by a fixed factor: 3^k + 1 (star, hexagon) and 3·4^(k−1) + 1 (prism), with dimension estimates 1.26, 1.63 and 1.29. | exploratory experiment | C |
-| 10 | **Open ends are the criterion (hub-free).** A substitution keeps the old knot exactly when its gadget adds no open end, and then every step is conservative (collapse). On tree-shaped knot graphs, bond distance = path knots + 1, so the star tower stretches as 3^k + 1. | proved | D |
+| 9 | **Towers with nothing drawn split by loose ends.** Gadgets adding no loose ends keep the old knot: bond distance 2 at every level (G0, the 2026-10-20 refinement; G6 with hubs). Gadgets adding loose ends stretch by a fixed factor: 3^k + 1 (star, hexagon) and 3·4^(k−1) + 1 (prism), with dimension estimates 1.26, 1.63 and 1.29. | exploratory experiment | C |
+| 10 | **Loose ends are the criterion (hub-free).** A substitution keeps the old knot exactly when its gadget adds no loose end, and then every step is conservative (collapse). On tree-shaped knot graphs, bond distance = path knots + 1, so the star tower stretches as 3^k + 1. | proved | D |
 
 ## Answer
 
@@ -45,9 +48,9 @@ Epic `LOGIC-AXIS-20261107-001` (program topology), 2026-11-07.
   neighbours, and every bond ball is infinite.
 - **As the system grows.**
   - **No stretching.** Keeping old allowed states never moves two distinctions apart.
-  - **Collapse.** Refinement without open ends (the 2026-10-20 law) keeps every coarse knot, so space
+  - **Collapse.** Refinement without loose ends (the 2026-10-20 law) keeps every coarse knot, so space
     collapses.
-  - **Stretching.** Refinement that adds open ends stretches the ruler by a fixed factor per level, and
+  - **Stretching.** Refinement that adds loose ends stretches the ruler by a fixed factor per level, and
     the result has a definite growth dimension: log(copies)/log(stretch), a ratio of two logical counts.
 - **The barrier.** That dimension is chosen with the gadget, which acts like a drawing. No tested law
   selects its own dimension, and none built a plane (dimension 2) with nothing drawn.
@@ -84,9 +87,9 @@ Epic `LOGIC-AXIS-20261107-001` (program topology), 2026-11-07.
 - **Growth to infinity.** It happens at the edges: in conservative growth, space never stretches
   between existing distinctions.
 - **Where stretching happens.** Space expands between existing distinctions exactly where growth adds
-  open ends, distinctions left free on one side.
+  loose ends, distinctions left free on one side.
 - **The link between two intuitions.** This ties the growth of emergent information to the growth of
-  space. Every stretching gadget added three open ends and three open bits per substitution.
+  space. Every stretching gadget added three loose ends and three open bits per substitution.
 - **Not every new bit stretches.** Bits added as closed cycles of knots (G0) did not.
 
 ## Workspace assumption challenged
@@ -119,10 +122,10 @@ Since the epic opened:
 
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
-| Current attempt — the axis built from logic | **Status:** Successful | Rulers characterized (no ends gives a ruler; dimension read from allowed states); the frozen axis measured in signed bits; growth with nothing drawn stretches exactly through open ends. Unresolved: the signed-binary lower bound, and a law that selects its own dimension. |
+| Current attempt — the axis built from logic | **Status:** Successful | Rulers characterized (no ends gives a ruler; dimension read from allowed states); the frozen axis measured in signed bits; growth with nothing drawn stretches exactly through loose ends. Unresolved: the signed-binary lower bound, and a law that selects its own dimension. |
 | Local direction — rulers on drawn lattices and frozen laws | Practically exhausted for this purpose | The lattice cases are classical in substance. The remaining frozen-law question is number theory (Derksen–Masser), not space. |
-| Broader exploration — question 9, space with nothing drawn | Sharpened | Every tested way to get a dimension supplies it: a lattice, or a gadget's copies and stretch. Open ends are now known to be necessary for stretching. |
-| Long-term goal — space from logic | Obstruction learned, capability gained | Logic can measure and stretch space (a ruler from allowed states; open ends stretch it), but no tested law chooses its dimension. |
-| Next recommendation — growth at open ends | **Next step:** Continue, as a fresh epic. Let a uniform rule act only where the relation shows an open end (frontier growth, the thread's way of growing), with no chosen gadget shape, and measure the growth exponent of bond balls. | This is the direct test of the owner's picture of an axis growing outward. It asks whether frontier growth plus a local closing rule gives polynomial growth (a dimension) or trees and small worlds. A negative answer would be a clean obstruction. |
-| Interest — that recommendation | **2/3 — Promising** | Open ends are now known to be what stretches, and the exact connected-cut method makes bond balls computable at scale. The main risk is that random frontier growth gives trees or small worlds, as random rewriting usually does. |
+| Broader exploration — question 9, space with nothing drawn | Sharpened | Every tested way to get a dimension supplies it: a lattice, or a gadget's copies and stretch. Loose ends are now known to be necessary for stretching. |
+| Long-term goal — space from logic | Obstruction learned, capability gained | Logic can measure and stretch space (a ruler from allowed states; loose ends stretch it), but no tested law chooses its dimension. |
+| Next recommendation — growth at loose ends | **Next step:** Continue, as a fresh epic. Let a uniform rule act only where the relation shows an loose end (frontier growth, the thread's way of growing), with no chosen gadget shape, and measure the growth exponent of bond balls. | This is the direct test of the owner's picture of an axis growing outward. It asks whether frontier growth plus a local closing rule gives polynomial growth (a dimension) or trees and small worlds. A negative answer would be a clean obstruction. |
+| Interest — that recommendation | **2/3 — Promising** | Loose ends are now known to be what stretches, and the exact connected-cut method makes bond balls computable at scale. The main risk is that random frontier growth gives trees or small worlds, as random rewriting usually does. |
 | Execution — that action | Deferred to the owner | **Not started.** **Stop when** a bounded census of frontier rules (three or four rules, sizes up to about 10^4 knots) yields an exponent or an obstruction. The alternatives are the signed-binary lower bound (1/3) and the logical Cartesian product of two threads (1/3). |

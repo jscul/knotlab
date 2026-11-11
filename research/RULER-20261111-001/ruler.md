@@ -1,11 +1,14 @@
 # The not-all-equal ruler
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a flat world is a six-regular weave. Results are unchanged;
+the earlier text is in git history.
+
 Epic `RULER-20261111-001` (LONG-LOOP-20261111-001 direction 1; G1, question 9; program topology, group spacing), 2026-11-11, at the
 coordinator's go-ahead. Statement frozen in commit 6fd9a2c6b before the proof was written. The canonical K1–K3 test is unchanged.
 
 ## The question
 
-- **Where it comes from.** On flat worlds of knots alone, the not-all-equal law (NAE) set bond distance equal to graph distance + 1
+- **Where it comes from.** On six-regular weaves of knots alone, the not-all-equal law (NAE) set bond distance equal to graph distance + 1
   out to distance 3 on every torus of edge-width at least 6 in range (`LONG-LOOP-20261111-001`, computed), with distance 2 proved
   given faithfulness. Is it a theorem at every distance?
 - **The question.** On the triangular lattice under NAE: is every pair free with the triangles as the only three-site bonds (R1), is
@@ -126,7 +129,7 @@ and Klein bottles to distance 3; the equality was computed on tori only.
    Concreteness 2: the torus states are the quasi-periodic height functions; the open step is bounding the tilt a short pattern sees.
 2. **The count from growth.** As recorded.
 3. **Other laws and surfaces.** Payoff 2: whether rulers belong to flatness. Concreteness 2: the criterion needs the height function,
-   which only flat worlds of degree 6 have in this form.
+   which only six-regular weaves of degree 6 have in this form.
 4. **A note.** Payoff 1: result conversion. Concreteness 3.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead; the owner has paused new work until tomorrow.

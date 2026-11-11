@@ -1,11 +1,14 @@
 # Is the sphere's Euler count hard for resolution?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SPHERE-COUNT-20261106-001` (program complexity), 2026-11-06.
 
 ## The question
 
 - **The approval.** The owner said "Yes let's continue." to `TWO-ROUND-BRIDGE-20261106-001`'s recommendation. The plan was to prove
-  resolution width Ω(√n) for the octahedral three-fold spaces from a lemma that the violated line can always move away, and then to
+  resolution width Ω(√n) for the octahedral three-regular contradictions from a lemma that the violated line can always move away, and then to
   attempt the size bound.
 - **The agreed stop condition.** Stop if the width bound is proved, or if a configuration is found where the violated line cannot move.
 
@@ -32,7 +35,7 @@ Epic `SPHERE-COUNT-20261106-001` (program complexity), 2026-11-06.
 
 - **Parity against counting, once more.**
   - **Tseitin.** Tseitin's contradiction is a Z2 charge, and a Z2 charge has no tilt to freeze.
-  - **The knot's spaces.** Their contradiction is an integer count, and its carrier is a vortex of an integer height. Integer heights
+  - **The knot's contradictions.** Their contradiction is an integer count, and its carrier is a vortex of an integer height. Integer heights
     can be maximally tilted, and then the vortex cannot move locally.
 - **Same structure as the dimer model.** Frozen regions of the dimer model are the same structure: the knot's single-defect states are
   ground states of the triangular antiferromagnet, which is the honeycomb dimer model.
@@ -68,8 +71,8 @@ Carried from earlier epics; nothing new here:
 | --- | --- | --- |
 | Current attempt — width from local mobility of the violated line | **Status:** Failed in its planned form | The mobility lemma is false: frozen states pin the violated line, even in whole-sphere states of K_8. The width bound itself is not refuted. |
 | Local direction — state-by-state local moves | Retire | Frozen cones block them at every radius tried. Any proof must choose its states. |
-| Broader exploration — width and size for the knot's spaces | Unresolved; one route mapped | **Width.** Reduced to the flat-state pursuit lemma. **Size.** Not attempted; it would need restrictions that keep flat states available. |
-| Long-term goal — complexity of the knot's spaces | Obstruction learned | Counting principles carried by height vortices are not Tseitin-like: their carrier can freeze. The SA-versus-resolution question stays open. |
-| Next recommendation — the flat-state pursuit lemma | **Next step:** Continue. A fresh epic that proves the width bound through label states. First construct label states on the octahedral sphere with corner structures (a finite search). Then prove that the vortex's six strings can be re-routed in thick pebble-free regions. Then run the giant-component Duplicator. | **If yes.** Resolution width Θ(√n) for the knot's three-fold spaces, and a flat-state framework the size argument would need. **If no.** A pursuit configuration that traps the vortex with few pebbles, which would point to small width. **Alternative.** A bounded literature search for planar height-function or flow principles with known resolution bounds, which might give the bound by reduction (1/3). |
+| Broader exploration — width and size for the knot's contradictions | Unresolved; one route mapped | **Width.** Reduced to the flat-state pursuit lemma. **Size.** Not attempted; it would need restrictions that keep flat states available. |
+| Long-term goal — complexity of the knot's contradictions | Obstruction learned | Counting principles carried by height vortices are not Tseitin-like: their carrier can freeze. The SA-versus-resolution question stays open. |
+| Next recommendation — the flat-state pursuit lemma | **Next step:** Continue. A fresh epic that proves the width bound through label states. First construct label states on the octahedral sphere with corner structures (a finite search). Then prove that the vortex's six strings can be re-routed in thick pebble-free regions. Then run the giant-component Duplicator. | **If yes.** Resolution width Θ(√n) for the knot's three-regular contradictions, and a flat-state framework the size argument would need. **If no.** A pursuit configuration that traps the vortex with few pebbles, which would point to small width. **Alternative.** A bounded literature search for planar height-function or flow principles with known resolution bounds, which might give the bound by reduction (1/3). |
 | Interest — that recommendation | **2/3 — Promising** | **Evidence.** The structure is explicit (strings, vortex, half-circle pebble constraints), and random states move freely. **Main uncertainty.** The topological argument is long, and width alone does not give size in the planar regime. |
 | Execution — that action | Deferred to the owner | **Not started.** **Stop when** label states with corners exist and the pursuit lemma is proved, or a trapping configuration is found. |

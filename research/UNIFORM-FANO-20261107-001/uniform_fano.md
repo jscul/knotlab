@@ -1,5 +1,8 @@
 # The only uniform contradiction
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece; an open end is a loose end. Results are unchanged;
+the earlier text is in git history.
+
 Epic `UNIFORM-FANO-20261107-001` (program topology), 2026-11-07.
 
 ## The question
@@ -23,7 +26,7 @@ Epic `UNIFORM-FANO-20261107-001` (program topology), 2026-11-07.
 ## Answer
 
 There are none. The Fano plane is the only uniform law whose knot contradicts itself. Every other contradiction of the knot needs
-non-uniformity: curvature defects that carry the count, or Fano atoms glued without symmetry.
+non-uniformity: curvature defects that carry the count, or Fano pieces glued without symmetry.
 
 ## Reading
 
@@ -60,8 +63,8 @@ Carried from earlier epics:
 | --- | --- | --- |
 | Current attempt — uniform contradictions beyond the Fano plane | **Status:** Successful | None exist among point- and line-transitive laws: the brace lemma plus McCuaig. Checked on 439 Cayley laws. |
 | Local direction — contradictions of uniform laws | Practically complete | Open but incremental: laws with one kind of point and no transitive symmetry; non-uniform signs on uniform laws. |
-| Broader exploration — question 9 (shape from a uniform local law, nothing drawn) | Known alternatives | Self-built surfaces (UNIFORM-SPHERES), rulers and the number line (LOGIC-AXIS), growth at open ends (OPEN-END-GROWTH), circles (LOGIC-CIRCLE). |
+| Broader exploration — question 9 (shape from a uniform local law, nothing drawn) | Known alternatives | Self-built surfaces (UNIFORM-SPHERES), rulers and the number line (LOGIC-AXIS), growth at loose ends (OPEN-END-GROWTH), circles (LOGIC-CIRCLE). |
 | Long-term goal — question 9 and "hardness at three places" | Capability gained | Uniform laws are coherent, with only the Fano plane as exception. Contradiction and hardness need a law that distinguishes places. |
-| Next recommendation — (i), already directed by the owner | **Next step:** Continue to (i): laws that distinguish places by themselves. First a scoping step, then a first discriminator. **Scoping:** (a) laws with two kinds of points that close into large spheres, background (3,3,3) with twelve (2,3,3) defects, are the knot spaces of (4,6)-fullerenes, which is classical; (b) define a local growth rule precisely, and ask whether such a rule can place the six digons itself so that a law grows its own sphere and with it the knot's contradiction. | Answers how a law can tell places apart without being told, which is question 9's open rung, "a law that lays out its own network". |
+| Next recommendation — (i), already directed by the owner | **Next step:** Continue to (i): laws that distinguish places by themselves. First a scoping step, then a first discriminator. **Scoping:** (a) laws with two kinds of points that close into large spheres, background (3,3,3) with twelve (2,3,3) defects, are the drawn knot patterns of (4,6)-fullerenes, which is classical; (b) define a local growth rule precisely, and ask whether such a rule can place the six digons itself so that a law grows its own sphere and with it the knot's contradiction. | Answers how a law can tell places apart without being told, which is question 9's open rung, "a law that lays out its own network". |
 | Interest — (i) | **Payoff 3/3 — Barrier · Concreteness 1/3 — Stated** | **Payoff:** a law that grows its own sphere would produce space and the knot's hard contradiction from a rule, nothing drawn. **Concreteness:** "local growth rule" is not defined yet, and the expected tension is that a bounded deterministic rule grows one shape, so unbounded families need information or chance. **Uncertainty:** whether any natural rule class gives spheres large in every direction. |
 | Execution — that action | Started | Continuing at once under the owner's "then continue on to i". The scoping step comes first. |

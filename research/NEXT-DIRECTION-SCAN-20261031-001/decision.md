@@ -1,5 +1,8 @@
 # Back toward native emergence: the decision
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `NEXT-DIRECTION-SCAN-20261031-001`, closed 2026-10-31. Program: portfolio.
 
 ## The request
@@ -31,7 +34,7 @@ except the counting point x² = −1/3 and the affine couplings x = 0, ±1, ±i?
 - **It is native.** Nothing is imposed but the coupling. The space's Pfaffian signs decide at which law counting stays planar, and the scan
   finds that they choose the knot's own law, not-all-equal. Lane A's selection, by contrast, needed an imposed dynamics.
 - **It ties the arc to the owner's intuition.** The two/three boundary is emergence, and the knot is where it happens. A positive answer
-  would say that on the knot's spaces the knot's law is the only non-trivial law that counts easily: the signs and the law fit only each
+  would say that on the knot's contradictions the knot's law is the only non-trivial law that counts easily: the signs and the law fit only each
   other.
 - **Its evidence is concrete.** The pattern is exact algebra (common factors, not numerics), cross-checked by brute force and controlled
   by generic matchgates and by the basis check.
@@ -52,7 +55,7 @@ except the counting point x² = −1/3 and the affine couplings x = 0, ±1, ±i?
 | Current attempt — the three-lane scan back toward native emergence | **Status:** Successful | Each lane returned a decision-ready discriminator, every replay reproduced its outputs, and one direction stands out. |
 | Local direction — the counting arc's mechanisms | Continue through lane B; A and C retired as standalone epics | Lane A's funnel and lane C's hardness are recorded. Neither carries native content worth an epic. |
 | Broader exploration — the two/three boundary | Known alternatives | Lane A's funnel on Fano spaces (1/3), the colourable side of H − L (1/3), approximate counting (not assessed here), expert review of the note (the owner's decision). |
-| Long-term goal — the two/three boundary as emergence | Capability gained (computed evidence, not a theorem) | On the knot's spaces, the knot's signs keep counting planar only at the knot's own law, on every tested depth-two tree but one. The missing bridge is hardness at the other couplings. |
+| Long-term goal — the two/three boundary as emergence | Capability gained (computed evidence, not a theorem) | On the knot's contradictions, the knot's signs keep counting planar only at the knot's own law, on every tested depth-two tree but one. The missing bridge is hardness at the other couplings. |
 | Next recommendation — a coupling dichotomy in the knot's class | **Next step:** Continue. Open a fresh epic asking whether the three-body Ising model with the knot's signs is #P-hard at every coupling except x² = −1/3 and x = 0, ±1, ±i. | First discriminator: interpolate a crossing from a deep-branch junction inside the knot's class. Stop if a tractable route appears at a generic coupling, if special families keep the identity in general, or if a published statement is found. |
 | Interest — that recommendation | **3/3 — Hot** | The evidence is exact and cross-checked, and the payoff is a native selection theorem: the space's signs select the knot's law. Main uncertainty: the hardness step inside the knot's class, and special families like the truncated-octahedron pair. |
 | Execution — that action | Planned; awaits the owner | A fresh epic that depends on this closure. Its first ticket is the crossing discriminator; a second would state the depth-two defect (the factor 3x² + 1) as a lemma. |

@@ -1,16 +1,19 @@
 # The long-loop regime
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a flat world is a six-regular weave. Results are unchanged;
+the earlier text is in git history.
+
 Epic `LONG-LOOP-20261111-001` (NAE-SURFACE-20261111-001 direction 1, with KNOTS-ALONE-20261111-001 direction 2; G1, question 9;
 program topology, group spacing), 2026-11-11, at the coordinator's go-ahead. Pre-registered in commit 706c950ae before any run.
 Under challenge: A63, with the surface count given (A64). The canonical K1–K3 test is unchanged.
 
 ## The question
 
-- **Where it comes from.** On worlds of three-place knots alone, the not-all-equal law (NAE) was faithful on every flat world in
+- **Where it comes from.** On worlds of three-place knots alone, the not-all-equal law (NAE) was faithful on every six-regular weave in
   `KNOTS-ALONE-20261111-001`'s range whose short loops have length at least 5, and its bond distance was graph distance + 1 to
   distance 2; both readings came after that run, and its frozen predictions failed on thin worlds, so A63 stood.
   `NAE-SURFACE-20261111-001` then showed that the surface count is an input.
-- **The question.** Frozen one size range up: is NAE faithful on every flat world of edge-width at least 5, and on tori of edge-width
+- **The question.** Frozen one size range up: is NAE faithful on every six-regular weave of edge-width at least 5, and on tori of edge-width
   at least 6 is bond distance graph distance + 1 out to distance 3?
 
 ## The question in standard terms
@@ -24,14 +27,14 @@ contains two vertices at graph distance δ ≤ 3 of size δ + 2?
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **P1 holds: long loops are read faithfully.** NAE reads every one of the 449 flat worlds in range of edge-width at least 5 faithfully: 434 tori with 49 to 80 distinctions and 15 Klein bottles with 19 to 40. Every world of edge-width 4 in range is faithful too (76 tori, 29 Klein bottles; no prediction); at edge-width 3, 10 of 52 tori and 6 of 22 Klein bottles. | computed, exact, frozen | A |
+| 1 | **P1 holds: long loops are read faithfully.** NAE reads every one of the 449 six-regular weaves in range of edge-width at least 5 faithfully: 434 tori with 49 to 80 distinctions and 15 Klein bottles with 19 to 40. Every world of edge-width 4 in range is faithful too (76 tori, 29 Klein bottles; no prediction); at edge-width 3, 10 of 52 tori and 6 of 22 Klein bottles. | computed, exact, frozen | A |
 | 2 | **P2 holds: NAE's knots space the world as a ruler to distance 3.** On every one of the 349 tori of edge-width at least 6 (all faithful), bond distance from a distinction is graph distance + 1 at every distinction within distance 3: at distance 3 no four-element bond contains the pair anywhere in the world, and a five-element bond contains it nearby. | computed, exact (the four-element search over the whole world; the five-element bonds found as witnesses) | A |
 | 3 | **Distance 2 is a lemma.** On a surface world with every distinction in d ≥ 4 knots and no non-facial triangle that NAE reads faithfully, bond distance is 3 at graph distance 2: two disjoint edges of a hidden distinction's link, fixed to opposite equal values, force it both ways. The census found the bond on every torus it measured. | proved, refereed; checked on 349 tori | pre-registration, A |
 | 4 | **The worlds are complete.** Tori are the lattice modulo a sublattice (Altshuler); Klein bottles the lattice modulo translations and a glide, which gave exactly the exhaustive SAT Klein bottles at 7 to 16 by isomorphism class (and to 18 by count). | classical; checked | A |
 
 ## Answer
 
-Both frozen predictions held. Within the surface count, the not-all-equal knot reads every long-loop flat world in range from its
+Both frozen predictions held. Within the surface count, the not-all-equal knot reads every long-loop six-regular weave in range from its
 allowed states alone (the world's knots are exactly its minimal constrained triples) and spaces it as graph distance + 1 out to
 three steps. By the frozen rule, A63 is overturned in the knots-alone setting: a face named only by a knot gives native flat local
 geometry. What is still put in is the count of how knots meet (A64, `NAE-SURFACE-20261111-001`). The evidence is computed in range;
@@ -131,7 +134,7 @@ recorded. **Assumptions:** A63 overturned in the knots-alone setting with the su
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | NAE's ruler as a theorem (was `KNOTS-ALONE-20261111-001#3`) | 2/3 — Substantial | 2/3 — Testable | Prove bond distance = graph distance + 1 at every distance on faithful flat worlds of large edge-width: hidden-path bonds for the upper bound, a lower bound from faithfulness and locality → a proof, or the distance where it fails | Selected · awaiting go-ahead |
+| 1 | NAE's ruler as a theorem (was `KNOTS-ALONE-20261111-001#3`) | 2/3 — Substantial | 2/3 — Testable | Prove bond distance = graph distance + 1 at every distance on faithful six-regular weaves of large edge-width: hidden-path bonds for the upper bound, a lower bound from faithfulness and locality → a proof, or the distance where it fails | Selected · awaiting go-ahead |
 | 2 | The count from growth (was `NAE-SURFACE-20261111-001#3`) | 2/3 — Substantial | 1/3 — Stated | A growth rule adding one NAE knot at a time while the reading stays faithful → closes into a surface, or not | Alternative · deferred |
 | 3 | Bond balls read dimension 2 | 2/3 — Substantial | 2/3 — Testable | Bond-ball sizes from one distinction out to distance 6 on the largest tori, by local search → quadratic growth, or where the search stops being exact | Alternative · deferred |
 | 4 | Which defects NAE tolerates (was `NAE-SURFACE-20261111-001#4`) | 1/3 — Modest | 3/3 — Ready | As recorded | Alternative · deferred |
@@ -153,7 +156,7 @@ Sent to the owner on 2026-11-11 at 06:27 UTC and copied here verbatim.
 
 **Long-loop regime: both frozen predictions held, so A63 is overturned for worlds made of knots alone.** The face can be the knot. What still has to be given is the count of how knots meet.
 
-- **P1.** Not-all-equal reads every flat world in range whose shortest loop has length 5 or more faithfully: 434 tori (49–80 distinctions) and 15 Klein bottles (19–40).
+- **P1.** Not-all-equal reads every six-regular weave in range whose shortest loop has length 5 or more faithfully: 434 tori (49–80 distinctions) and 15 Klein bottles (19–40).
 - **P2.** On all 349 tori with loops of length 6 or more, bond distance is graph distance + 1 at every distinction within three steps. Two steps is a short proof, which the referee checked; three steps is computed.
 - **Scope.** This is computed in range, to distance 3 and edge-width 6. The referee found faithful edge-width-5 tori where a bond shortcuts at three steps, so the ruler looks local. A stress test one size past (tori 81–96) is still running.
 

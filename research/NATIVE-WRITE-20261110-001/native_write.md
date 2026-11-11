@@ -1,5 +1,8 @@
 # Native writing
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `NATIVE-WRITE-20261110-001` (backlog B119, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen with the code in commit `22c1a427f` before any run on the test spaces. Proof families:
 `proofs/NATIVE-WRITE-20261110-001A/` (four fresh spaces) and `proofs/NATIVE-WRITE-20261110-001B/` (one size past).
@@ -75,7 +78,7 @@ there cannot be walked away. No one tells it the configuration to aim for.
 | This attempt: native writing (B119) | **Status:** Successful | 100 of 100 exact and held with no outside map; the probe is why |
 | Local direction: writing the layered memory | Continue | a native writer exists; its probe's reliability is the one computed link |
 | Broader exploration: learning program | Known alternatives | inputs and outputs, the probe as a theorem, writing with only the ones named |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | the point now writes and reads the memory itself |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | the point now writes and reads the memory itself |
 
 **Next step:** Research directions — selected: #1
 
@@ -103,7 +106,7 @@ It tells whether an atom holds a 1 the way the memory does: an acting atom keeps
 | This attempt: native writing (B119) | **Status:** Successful | 100 of 100 exact and held with no outside map; the probe is why |
 | Local direction: writing the layered memory | Continue | a native writer exists; the probe's reliability is the one computed link |
 | Broader exploration: learning program | Known alternatives | inputs and outputs, the probe as a theorem, writing with only the ones named |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | the point now writes and reads the memory itself |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | the point now writes and reads the memory itself |
 
 **Next step:** Research directions, selected #1.
 

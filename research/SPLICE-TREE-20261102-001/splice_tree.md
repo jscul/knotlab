@@ -1,11 +1,14 @@
 # Emergence along the tree of cuts
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SPLICE-TREE-20261102-001` (program topology), 2026-11-02.
 
 ## The question
 
 - **The approval.** The owner said "Yes, let's continue" to HUB-GLUE-20261102-001's recommendation.
-- **The question it approved.** A knot space glued from several pieces has a tree of cuts. After one line is removed, are the kept knots
+- **The question it approved.** A contradiction glued from several pieces has a tree of cuts. After one line is removed, are the kept knots
   iterated 2-sums at the held cuts, with new emergence only at the cuts opened on the way to the removed line?
 - **The test.** Chains and trees of three and four pieces.
 
@@ -41,7 +44,7 @@ Epic `SPLICE-TREE-20261102-001` (program topology), 2026-11-02.
   - K4 > K4 > K4 with touching hubs creates nothing.
   - Fano > K4 > K4 with disjoint hubs creates 36 joint knots.
 - **What looks decisive (scouting for the next step, not a claim): handles.** The scout took single splices of every ordered pair of
-  census knot spaces, with every removal on the point side (720 removals):
+  census contradictions, with every removal on the point side (720 removals):
 
   | Removed line's side | Interface | Removals | With new knots |
   | --- | --- | --- | --- |
@@ -53,7 +56,7 @@ Epic `SPLICE-TREE-20261102-001` (program topology), 2026-11-02.
   - **The pattern.** New knots appeared only when the opened hub had become a knot on its ports (six patterns) and the removed line's
     side was non-planar.
   - **Consistent with the chains.** The chains of K4^(3) pieces (planar) create nothing.
-  - **Why it matters.** By THREEFOLD-SURFACES each Fano atom is a handle. So the knot's emergence after a removal may be created only in
+  - **Why it matters.** By THREEFOLD-SURFACES each Fano piece is a handle. So the knot's emergence after a removal may be created only in
     handles, with planar glue only composing.
 - **Doctrine.**
   - Hubs remain equality fan-out, not contact.
@@ -63,8 +66,8 @@ Epic `SPLICE-TREE-20261102-001` (program topology), 2026-11-02.
 
 - **Ours.**
   - HUB-GLUE A–C.
-  - THREEFOLD-GRAMMAR (Fano atoms, planar glue).
-  - THREEFOLD-SURFACES (genus = number of Fano atoms).
+  - THREEFOLD-GRAMMAR (Fano pieces, planar glue).
+  - THREEFOLD-SURFACES (genus = number of Fano pieces).
   - NATIVE-PATHS A (the 3-edge-cut theorem).
   - MUTUAL-SELECTION C's census.
 - **Classical.**
@@ -90,6 +93,6 @@ Still open from earlier epics:
 | Local direction — decomposing emergence along the splice tree by hubs | Practically exhausted | **Held side settled.** **Opened side.** Three hub-level rules are refuted on 96 chains. What remains is a property of the pieces, not of the hubs. |
 | Broader exploration — where the knot's emergence is created after selection | Open, with a lead | **The lead.** In the census scout, new knots appear only when the hub becomes a knot and the removed line's side is non-planar (100 of 160 such removals, 0 of 560 with a planar side). |
 | Long-term goal — composed structure from native emergence | Capability gained; obstruction learned | **Gained.** A global composition law on the held side. **Obstruction.** The opened side does not decompose by hubs. **The limit.** Hubs are equality fan-out, so emergence composes and is created, but no native path or distance is claimed. |
-| Next recommendation — emergence needs a handle | **Next step:** Continue. **The conjecture.** At an opened cut, new emergence needs both a knot on the hub (six patterns) and a non-planar removed side, so planar glue only composes. **First test.** Planar knot spaces beyond the census as removed sides with six-pattern interfaces (planar splices of census spaces, up to 19 points); one new knot refutes it. **Then.** Prove the planar case, then measure the non-planar side. | **If yes.** The knot's emergence after selection is created only in handles (Fano atoms, the genus), tying logical emergence to the topology of its space. **If no.** The census split was a small-piece effect, and the zone needs another invariant. **Alternatives.** Classify the joint knots of three and four points (1/3). Explain why four-pattern interfaces never create (1/3; likely a lemma inside the main line). |
+| Next recommendation — emergence needs a handle | **Next step:** Continue. **The conjecture.** At an opened cut, new emergence needs both a knot on the hub (six patterns) and a non-planar removed side, so planar glue only composes. **First test.** Planar contradictions beyond the census as removed sides with six-pattern interfaces (planar splices of census spaces, up to 19 points); one new knot refutes it. **Then.** Prove the planar case, then measure the non-planar side. | **If yes.** The knot's emergence after selection is created only in handles (Fano pieces, the genus), tying logical emergence to the topology of its space. **If no.** The census split was a small-piece effect, and the zone needs another invariant. **Alternatives.** Classify the joint knots of three and four points (1/3). Explain why four-pattern interfaces never create (1/3; likely a lemma inside the main line). |
 | Interest — that recommendation | **3/3 — Hot** | **Evidence.** A clean split over all 64 ordered census pairs (0 of 560 planar against 100 of 160 non-planar six-pattern removals), consistent with every chain in ticket C. **Payoff.** It would locate creation in the handles. **Main uncertainty.** The pieces are small (at most 8 points), the only non-planar ones contain a Fano, and no proof route is visible yet. |
 | Execution — that action | Deferred to the owner | **Not started.** No new epic opened; the scout only calibrated this recommendation. **Bound.** Census pieces and planar splices up to 19 points, all circuits. **Stop when** a planar removed side with a six-pattern interface creates a new knot (refuted), or the planar statement is proved. |

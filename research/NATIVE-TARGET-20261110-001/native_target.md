@@ -1,5 +1,8 @@
 # A native target for learning
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `NATIVE-TARGET-20261110-001` (backlog B61, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md); frozen contract and run in
 `experiments/NATIVE-TARGET-20261110-001A/NATIVE-TARGET-20261110-001A-E001_native_signals_that_steer_learning/`; results and their
@@ -56,7 +59,7 @@ None.
 | This attempt — a native target for learning (B61) | **Status:** Successful | sight and the count of shared-dissonance states both steer |
 | Local direction — steering by re-signing | Continue | learning now needs no outside input on these tori |
 | Broader exploration — learning program | Known alternatives | growing a handle, chosen resolution, layers |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | the point is drawn natively, by stability |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | the point is drawn natively, by stability |
 
 Unresolved: why the count's pull is uneven at contact, and whether it holds off the thin tori, which are chains; the class-forced tori
 tested are all thin or Fano.
@@ -65,17 +68,17 @@ tested are all thin or Fano.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Learning that grows a handle (sub-goal B60) | 3/3 — Barrier | 2/3 — Testable | splice a Fano atom at a knot sphere's violated line, then learn → resolved by winding through it, or still forced | Selected · awaiting go-ahead |
+| 1 | Learning that grows a handle (sub-goal B60) | 3/3 — Barrier | 2/3 — Testable | splice a Fano piece at a knot sphere's violated line, then learn → resolved by winding through it, or still forced | Selected · awaiting go-ahead |
 | 2 | Choosing the resolution (B62) | 2/3 — Substantial | 2/3 — Testable | a native rule given a target class on thin tori → all reached, or the long class needs more | Alternative · deferred |
 | 3 | Why the pull is uneven at contact | 1/3 — Incremental | 3/3 — Ready | transfer-matrix counts by hole positions → a closed form, or the dip explained | Alternative · deferred |
 | 4 | A point moving between layers (sub-goal B54) | 3/3 — Barrier | 1/3 — Stated | smallest two-level network with one dissonance → it crosses levels, or not | Alternative · deferred |
 
 - **#1** is now concrete. A sphere's forced dissonance can never be resolved (`LEARN-HANDLES-20261109-001`, theorem 1), and the record
-  has a native move that adds exactly one handle: splicing a Fano atom (the Fano plane less a point, the knot's own uniform contradiction)
+  has a native move that adds exactly one handle: splicing a Fano piece (the Fano plane less a point, the knot's own uniform contradiction)
   across a 3-edge cut adds one handle to the incidence graph's genus (`THREEFOLD-SURFACES-20261030-001`, splice lemma). The move is local
-  and can be made where the dissonance shows, at the violated line. First step: on K_2 to K_4, replace the violated line by a Fano atom,
-  build the knot space of the spliced graph's minimal map (a torus), and ask whether its law still forces a dissonance, and if so whether
-  learning resolves it by winding through the new handle. What is missing is code: a builder from a rotation system to a knot space,
+  and can be made where the dissonance shows, at the violated line. First step: on K_2 to K_4, replace the violated line by a Fano piece,
+  build the drawn knot pattern of the spliced graph's minimal map (a torus), and ask whether its law still forces a dissonance, and if so whether
+  learning resolves it by winding through the new handle. What is missing is code: a builder from a rotation system to a drawn knot pattern,
   hence 2/3. If it works, dissonance that learning cannot remove makes space.
 - **#2** reads "guide the points to some action": the three classes are three resolutions.
 - **#3** is a closed-form question on chains; cheap, local payoff.
@@ -102,11 +105,11 @@ Sent to the owner in the project thread on 2026-11-10 (00:23 UTC).
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Learning that grows a handle (B60) | 3/3 — Barrier | 2/3 — Testable | splice a Fano atom at a sphere's violated line, then learn → resolved by winding, or still forced | Selected · awaiting go-ahead |
+| 1 | Learning that grows a handle (B60) | 3/3 — Barrier | 2/3 — Testable | splice a Fano piece at a sphere's violated line, then learn → resolved by winding, or still forced | Selected · awaiting go-ahead |
 | 2 | Choosing the resolution (B62) | 2/3 — Substantial | 2/3 — Testable | native rule with a target class → all reached, or not | Alternative · deferred |
 | 3 | Why the pull dips at contact | 1/3 — Incremental | 3/3 — Ready | exact counts by position → closed form | Alternative · deferred |
 | 4 | Layers (B54) | 3/3 — Barrier | 1/3 — Stated | two-level network → crosses, or not | Alternative · deferred |
 
-On B60: yes, it can be run. The record already has a local move that adds exactly one handle: splicing in a Fano atom (THREEFOLD-SURFACES). So the test is to grow one where the sphere's dissonance sits and see whether learning then removes it. The only missing piece is a builder from a map to a knot space.
+On B60: yes, it can be run. The record already has a local move that adds exactly one handle: splicing in a Fano piece (THREEFOLD-SURFACES). So the test is to grow one where the sphere's dissonance sits and see whether learning then removes it. The only missing piece is a builder from a map to a drawn knot pattern.
 
 **Corrections:** none. **Goals:** G15 checkpoint; B61 taken; B60 selected and re-rated. **Assumptions:** A47 added (what counts as native); A26, A27 history.

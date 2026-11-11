@@ -1,5 +1,8 @@
 # Learning that grows a handle
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `GROW-HANDLE-20261110-001` (sub-goal B60; G15 with G4 and G1; program learning), 2026-11-10, at the coordinator's go-ahead.
 Pre-registered in [preregistration.md](preregistration.md). Proof family:
 `proofs/GROW-HANDLE-20261110-001A/GROW-HANDLE-20261110-001A-P001_a_fano_atom_grown_at_the_dissonance/` (the builder, the growth move and
@@ -13,7 +16,7 @@ and does it matter where the handle grows?
 
 ## The answer
 
-Yes. Grow a Fano atom (the Fano plane less a point, with its uniform signs, the knot's own self-contradiction) at a line of the sphere by a
+Yes. Grow a Fano piece (the Fano plane less a point, with its uniform signs, the knot's own self-contradiction) at a line of the sphere by a
 3-edge splice, and:
 
 1. **The space becomes a torus** (proved). Three of the six ways to join the atom keep both rotations and give a torus; the old law extends
@@ -35,7 +38,7 @@ The rules of `NATIVE-TARGET-20261110-001` resolved every start: random moves, si
 
 | Claim | Evidence class |
 | --- | --- |
-| The builder turns rotation systems into knot spaces correctly | checked on six spaces against their own rebuild (check 1) |
+| The builder turns rotation systems into drawn knot patterns correctly | checked on six spaces against their own rebuild (check 1) |
 | Three bijections give a torus, three give genus 2; the law extends with no even face uniquely up to gauge (theorem 1) | proved by hand; checked on 288 splices |
 | The atom acts as the replaced line in the grown class and is transparent in the other three (theorem 2) | computed on 540 grown tori, K_2 to K_5; not proved for every sphere |
 | The grown law is the only unsatisfiable class (theorem 3) | proved, given theorem 2 |
@@ -73,7 +76,7 @@ None.
 | This attempt — learning that grows a handle (B60) | **Status:** Successful | growth plus learning removes what the sphere forces |
 | Local direction — steering by re-signing | Continue | learning now has growth as a partner |
 | Broader exploration — learning program | Known alternatives | chosen resolution, a native growth trigger, layers |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | the network grows where the point is stuck |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | the network grows where the point is stuck |
 
 Unresolved: a proof of theorem 2 for every knot sphere, and other atoms or other spaces.
 
@@ -93,14 +96,14 @@ Unresolved: a proof of theorem 2 for every knot sphere, and other atoms or other
 - **#4** is unchanged, Payoff 3/3, Concreteness 1/3.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); sub-goal B60 taken; B54 carried; backlog B68 (grow where learning is
-stuck) added. **Assumptions:** A48 added (the growth move brings a Fano atom with uniform signs and completes the law with no even face);
+stuck) added. **Assumptions:** A48 added (the growth move brings a Fano piece with uniform signs and completes the law with no even face);
 history line for A26.
 
 ## Final report as sent
 
 Sent to the owner in the project thread on 2026-11-10 (00:44 UTC).
 
-**B60 done: growing a handle plus learning removes what the sphere forces.** I spliced a Fano atom (the Fano plane less a point) into the knot sphere at a line. That makes a torus (proved). Growth alone doesn't remove the contradiction: the new piece acts exactly as the line it replaced (computed on 540 grown tori). Learning then removes it, always by going around the new handle (proved). Grown at the dissonance, it takes 3 sign changes on every sphere size; grown farther away it costs more. My guess about the other classes was wrong: there the atom becomes transparent.
+**B60 done: growing a handle plus learning removes what the sphere forces.** I spliced a Fano piece (the Fano plane less a point) into the knot sphere at a line. That makes a torus (proved). Growth alone doesn't remove the contradiction: the new piece acts exactly as the line it replaced (computed on 540 grown tori). Learning then removes it, always by going around the new handle (proved). Grown at the dissonance, it takes 3 sign changes on every sphere size; grown farther away it costs more. My guess about the other classes was wrong: there the atom becomes transparent.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
@@ -118,4 +121,4 @@ Sent to the owner in the project thread on 2026-11-10 (00:44 UTC).
 | 3 | Prove the atom's behaviour for every sphere | 1/3 — Incremental | 3/3 — Ready | parity at the merged faces → proof, or a counterexample | Alternative · deferred |
 | 4 | Layers (B54) | 3/3 — Barrier | 1/3 — Stated | two-level network → crosses, or not | Alternative · deferred |
 
-**Corrections:** none. **Goals:** G15 checkpoint; B60 taken; B68 added. **Assumptions:** A48 added (the grown handle is a Fano atom with the uniform law).
+**Corrections:** none. **Goals:** G15 checkpoint; B60 taken; B68 added. **Assumptions:** A48 added (the grown handle is a Fano piece with the uniform law).

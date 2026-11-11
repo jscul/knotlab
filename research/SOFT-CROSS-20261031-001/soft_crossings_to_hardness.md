@@ -1,5 +1,8 @@
 # Soft crossings to hardness
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SOFT-CROSS-20261031-001`, 2026-10-31.
 
 ## The question
@@ -76,8 +79,8 @@ branches.**
 | Local direction — counting under twisted signs on the knot's graphs | Practically exhausted for the worst case | Both sides are proved: polynomial for the knot's class and unbranched twists, #P-hard in general with branched twists. What remains is refinement: no signs, parameters, approximation. |
 | Broader exploration — counting on and near Seymour's bound | Known alternatives | Mapped: the bound (determinants), unbranched twists (matchgates), branched twists (#P-hard). Unmapped: unsigned Pfaffian triple systems, approximate counting, deficiency ≥ 1. |
 | Long-term goal — the two/three boundary in counting | Capability gained | A two-sided boundary on the knot's own graphs. Two twisted branches pass and three are hard. The knot's sign class is the easy vacuum. |
-| Next recommendation — counting on Pfaffian triple systems without signs | **Next step:** Continue, as a fresh epic. Remove the signs: replace each negated edge of this epic's hard instances by an unsigned long edge and interpolate at t = −1, where P₊ + tP₋ becomes negation. Classify unsigned Pfaffian triple systems by how their own Pfaffian class twists: none (the knot's spaces), unbranched (polynomial by `TWIST-COUNT` with σ = ∅), branched (hard in general). | It would state the boundary for plain hypergraphs, the program's native objects, with no signs supplied. Counting is easy on the knot's spaces and along their unbranched twists, and #P-hard on Pfaffian triple systems in general. |
-| Interest — that recommendation | **2/3 — Promising** | The sign removal is a one-parameter interpolation, and the Pfaffian certificates of this epic should survive long edges inside planar pieces. Main uncertainties: whether the result is routine to Holant specialists (folklore risk moderate), and whether natural unsigned families with unbranched twists exist beyond the knot's spaces. |
+| Next recommendation — counting on Pfaffian triple systems without signs | **Next step:** Continue, as a fresh epic. Remove the signs: replace each negated edge of this epic's hard instances by an unsigned long edge and interpolate at t = −1, where P₊ + tP₋ becomes negation. Classify unsigned Pfaffian triple systems by how their own Pfaffian class twists: none (the knot's contradictions), unbranched (polynomial by `TWIST-COUNT` with σ = ∅), branched (hard in general). | It would state the boundary for plain hypergraphs, the program's native objects, with no signs supplied. Counting is easy on the knot's contradictions and along their unbranched twists, and #P-hard on Pfaffian triple systems in general. |
+| Interest — that recommendation | **2/3 — Promising** | The sign removal is a one-parameter interpolation, and the Pfaffian certificates of this epic should survive long edges inside planar pieces. Main uncertainties: whether the result is routine to Holant specialists (folklore risk moderate), and whether natural unsigned families with unbranched twists exist beyond the knot's contradictions. |
 | Execution — that next action | Deferred to the owner (fresh epic) | First discriminator: K₃,₃'s signed instances from ticket A made unsigned, counted for L + 1 lengths, interpolated at t = −1 and certified Pfaffian. Stop if a long edge breaks the certificate, or if the unsigned instances fall outside Pfaffian triple systems. |
 
 **Recommendation.** **Continue**, as a fresh epic: counting on Pfaffian triple systems without signs (2/3). Two alternatives were

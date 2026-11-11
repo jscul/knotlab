@@ -1,11 +1,14 @@
 # Learning chooses which atom holds the leftover
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `ADDRESS-20261110-001` (backlog B81, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family: `proofs/ADDRESS-20261110-001A/ADDRESS-20261110-001A-P001_a_learned_address_among_three_atoms/`.
 
 ## The question
 
-Can learning place the leftover dissonance in any chosen Fano atom, and does `LEARN-RISE-20261110-001`'s post-hoc role swap hold on fresh
+Can learning place the leftover dissonance in any chosen Fano piece, and does `LEARN-RISE-20261110-001`'s post-hoc role swap hold on fresh
 cases under a frozen prediction?
 
 ## The answer (computed, pre-registered)
@@ -38,7 +41,7 @@ label and gain this confirmation.
 | This attempt — a learned address (B81) | **Status:** Successful | every chosen pair reached; B80 confirmed |
 | Local direction — learning places tension | Continue | writing works; reading is next |
 | Broader exploration — learning program | Known alternatives | reading natively, cost of writing |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a learned, persistent memory |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a learned, persistent memory |
 
 **Next step:** Research directions — selected: #1
 

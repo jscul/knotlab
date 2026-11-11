@@ -1,5 +1,8 @@
 # Four-place laws that prefer a value: decision at closure
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `FOUR-PREFER-20261101-001`, closed 2026-11-01. Program: foundations.
 
 ## The request
@@ -45,7 +48,7 @@ four-place picture with the laws that prefer a value.
 | --- | --- | --- |
 | Current attempt — four-place laws that prefer a value | **Status:** Partially successful | 15 of 20 classes settled; the five weak classes never failed but are not proved to never fail. |
 | Local direction — mutual selection at four places | Practically complete | Open: a never-fails theorem for classes 13–17. Tovey, Seymour–Thomassen and the local lemma do not reach them. |
-| Broader exploration — the two/three boundary | Known alternatives | The owner has already approved (c), composition of the knot's spaces toward native networks, and (a), the note on native selection. |
+| Broader exploration — the two/three boundary | Known alternatives | The owner has already approved (c), composition of the knot's contradictions toward native networks, and (a), the note on native selection. |
 | Long-term goal — the two/three boundary as emergence | Capability gained | Three remains the only arity with a rigid failing law, now across all four-place knots up to five weak classes. |
 | Next recommendation — option (c), then (a) | **Next step:** Continue, as approved. Open the composition epic, then write the note. | (c) asks whether selected spaces compose without hubs. (a) gathers the selection arc. The five weak classes are recorded as a side question (1/3). |
 | Interest — that recommendation | **2/3 — Promising** | (c) bears directly on native networks; its main uncertainty is whether composition is more than the known splice calculus. |

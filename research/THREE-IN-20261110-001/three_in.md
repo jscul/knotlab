@@ -1,5 +1,8 @@
 # Three held inputs
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `THREE-IN-20261110-001` (backlog B133, G15 with G16; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md) in two stages: the census's design (stage 0, commit `9387eb515`) before it ran, and the learning
 test with its prediction (stage 1, commit `f3dff17a6`) after the census and before any learning run. Proof families:
@@ -7,8 +10,8 @@ test with its prediction (stage 1, commit `f3dff17a6`) after the census and befo
 
 ## The answer
 
-*Corrected on 2026-11-11 (`UNATE-20261111-001`).* The limit is not the knot space's: an 8-point knot space of genus 4 computes
-the parity of three held points, and small knot spaces compute majority often. What this epic found is a property of the learned
+*Corrected on 2026-11-11 (`UNATE-20261111-001`).* The limit is not the drawn knot pattern's: an 8-point drawn knot pattern of genus 4 computes
+the parity of three held points, and small drawn knot patterns compute majority often. What this epic found is a property of the learned
 memories' interfaces. See `docs/CORRECTIONS.md`.
 
 **No parity, no majority, nothing non-unate: at these interfaces a knot memory's maps of three held points are unate, and the only total
@@ -43,7 +46,7 @@ had no predicted answer; its answer is that no non-unate map occurs.
 - **The memory's power with held inputs is limited by more than self-duality.** At every interface tested, held inputs reach the output
   only unately: no input both raises and lowers it. With stored roles entering only monotonically (theorem M), the learned knot memory
   computes neither parity nor majority of three held points here. General NAE systems with hidden points can define parity (external:
-  the standard co-clone bases), so the limit is the knot space's, not the logic's, and whether it holds for every knot space and interface
+  the standard co-clone bases), so the limit is the drawn knot pattern's, not the logic's, and whether it holds for every drawn knot pattern and interface
   is open (backlog B136).
 - **The sturdier probe holds up with eight examples:** no false stop on two impossible targets.
 
@@ -69,7 +72,7 @@ The line pauses after this epic at the owner's decision (2026-11-10), not droppe
 | This attempt: three held inputs (B133) | **Status:** Successful | a definite answer: no non-unate map at these interfaces (exact); impossible targets never accepted |
 | Local direction: maps of held points | Exhausted for this phase | every map tested is unate; the open question is whether that is a theorem |
 | Broader exploration: learning program | Known alternatives | deeper memories, unateness as a theorem, the probe as a theorem |
-| Long-term goal: G15 Learning: a point in a learned knot space | Obstruction learned | held inputs reach a knot memory's output only unately here |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Obstruction learned | held inputs reach a knot memory's output only unately here |
 
 **Next step:** Research directions — selected: #1 (paused: no epic starts until a new go-ahead)
 
@@ -92,14 +95,14 @@ Posted in the thread on 2026-11-10:
 
 - **Census (exact).** I read every way of holding three points around a group, on every class of six spaces: 2,976,256 maps. Every one is self-dual. None is parity, none is majority, and none has an input that pushes the output both up and down. The only total maps (1,074) copy or negate a single input while the other two never reach the output. By the frame lemma this covers every law of these spaces, not just one signing per class.
 - **Learning (computed, frozen after the census).** The credit learner with the sturdier probe, extended to three inputs, never stopped on parity or majority (8 of 8). It learned and held the census's single-input map at 2 of 4 interfaces. On the two-level spaces that map lives in only 12 of 256 classes, and the learner didn't find one within the budget. So the L3 mark failed.
-- **Scope.** General NAE logic with hidden points can express parity (an external fact I haven't checked here), so the limit looks like a property of knot spaces. Whether it holds for every knot space and interface is open.
+- **Scope.** General NAE logic with hidden points can express parity (an external fact I haven't checked here), so the limit looks like a property of drawn knot patterns. Whether it holds for every drawn knot pattern and interface is open.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: three held inputs (B133) | **Status:** Successful | a definite answer: no non-unate map at these interfaces (exact); impossible targets never accepted |
 | Local direction: maps of held points | Exhausted for this phase | every map tested is unate; the open question is whether that's a theorem |
 | Broader exploration: learning program | Known alternatives | deeper memories, unateness as a theorem, the probe as a theorem |
-| Long-term goal: G15, a point in a learned knot space | Obstruction learned | held inputs reach a knot memory's output only unately here |
+| Long-term goal: G15, a point in a learned knot pattern | Obstruction learned | held inputs reach a knot memory's output only unately here |
 
 **Next step:** Research directions, selected #1, paused as agreed.
 

@@ -1,12 +1,15 @@
 # Several addresses in sequence
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `ADDRESS-SEQ-20261110-001` (backlog B88, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Tickets A (`proofs/ADDRESS-SEQ-20261110-001A/`, long-running row ADDRESS-SEQ-A1) and B
 (`proofs/ADDRESS-SEQ-20261110-001B/`).
 
 ## Answers (computed, small cases)
 
-- **A, writing in sequence.** On 14 spaces (three Fano atoms on every line orbit of K_3 and K_4 and, one size past, on the first three of
+- **A, writing in sequence.** On 14 spaces (three Fano pieces on every line orbit of K_3 and K_4 and, one size past, on the first three of
   K_5; four atoms on every orbit of K_3), 90 addresses were written in turn, each followed by a random disturbance and return. Every write
   reached its target and every address was held: the acting atoms after the return were always the address just written, never the
   previous one. The memory is rewritten cleanly and keeps no trace of earlier addresses. Neither frozen interference nor frozen failure
@@ -29,7 +32,7 @@ None.
 | This attempt — addresses in sequence (B88) | **Status:** Successful | 90 of 90 written and held; the 17 runs explained |
 | Local direction — a learned memory in atoms | Continue | rewritable, at K_5 too |
 | Broader exploration — learning program | Known alternatives | the proof; capacity |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a rewritable learned register |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a rewritable learned register |
 
 **Next step:** Continue — selected: #1
 

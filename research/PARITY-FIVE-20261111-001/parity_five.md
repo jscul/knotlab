@@ -1,5 +1,8 @@
 # Parity of five held points
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `PARITY-FIVE-20261111-001` (backlog B149, G15 with G16; program learning), 2026-11-11, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen in commit `95e0c04c3` before any five-input search. Proof family:
 `proofs/PARITY-FIVE-20261111-001A/`.
@@ -68,7 +71,7 @@ doesn't help: the second ring loosens the wire the first one spoke through, and 
 | This attempt: parity of five held points (B149) | **Status:** Partially successful | exact: none on 421 lattice tori up to 24 points or on the composed space; the composition's obstacle found; 25 to 32 points undecided |
 | Local direction: one torus counting more held points | Practically exhausted | lattice tori stop at three, and at 18 points; only non-lattice tori remain (B150) |
 | Broader exploration: learning program | Known alternatives | composing through a wire that survives (B148), non-lattice tori, the probe as a theorem |
-| Long-term goal: G15 Learning: a point in a learned knot space | Obstruction learned | counting more needs composition, and the obvious composition unties its wire |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Obstruction learned | counting more needs composition, and the obvious composition unties its wire |
 
 The attempt reached its pre-registered stop (the exact statement that none exists in the range, and what the composed space shows); it
 did not find a space that counts five, and it leaves open whether any genus-1 space does.
@@ -113,7 +116,7 @@ Posted in the thread on 2026-11-11:
 | This attempt: parity of five held points (B149) | **Status:** Partially successful | exact: none on 421 lattice tori up to 24 points or on the composed space; why composition fails is found; 25 to 32 points undecided |
 | Local direction: one torus counting more held points | Practically exhausted | lattice tori stop at three, and at 18 points; non-lattice tori remain (B150) |
 | Broader exploration: learning program | Known alternatives | composing through a wire that survives (B148), non-lattice tori, the probe as a theorem |
-| Long-term goal: G15, a point in a learned knot space | Obstruction learned | counting more needs composition, and the obvious composition unties its wire |
+| Long-term goal: G15, a point in a learned knot pattern | Obstruction learned | counting more needs composition, and the obvious composition unties its wire |
 
 **Next step:** Research directions, selected #1, holding until you resume.
 

@@ -1,5 +1,8 @@
 # Inputs and outputs
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `IN-OUT-20261110-001` (backlog B120, G15 with G16; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen with the code in commit `6d6434df1` before any run on the test spaces. Proof family:
 `proofs/IN-OUT-20261110-001A/`.
@@ -16,7 +19,7 @@ excluded (A58). A learner that sees only its own dissonance under the world's cl
 56 targets at 14 leaves and they held, but only 1 of 16 at 4 composites.
 
 - **Theorem D (proved by hand): every map is self-dual.** Flipping every point leaves the dissonance unchanged, so f(¬x) = ¬f(x). No map
-  is constant, and no knot space computes AND, OR or XOR of two held inputs as a total map. The learner never stopped on AND (18 of 18).
+  is constant, and no drawn knot pattern computes AND, OR or XOR of two held inputs as a total map. The learner never stopped on AND (18 of 18).
 - **Lemma G (proved by hand): the world's inputs supply the frame.** A gauge flip negates one input or the output, so one class gives
   one map up to negations. This is why non-monotone maps appear: theorem M of `NOT-INSIDE-20261110-001` bounds readings of stored
   classes, and held inputs are not stored classes.
@@ -55,7 +58,7 @@ lines near the interface, widening that neighbourhood when its probe keeps faili
 - **C failed, as predicted:** 1 of 16 (only "off"). Three composites never formed a gate in 4,000,000 steps; the fourth stopped three
   times on a false reading.
 - **A held:** 0001 never stopped at any of the 18 interfaces.
-- **R failed:** 6 inexact stops against a prediction of 0, all at S4 (Fano atoms, 90 points), all with the map still `uuuu`.
+- **R failed:** 6 inexact stops against a prediction of 0, all at S4 (Fano pieces, 90 points), all with the map still `uuuu`.
 - **K held as frozen** (composite median 2,024,900 steps to turn a gate on, against 62,600 at leaves), but the composite stops it counts
   were the inexact ones, so it says little.
 - **Census held:** D and G on every class.
@@ -96,7 +99,7 @@ yet reach a knot buried inside another: from outside, a pattern of patterns look
 | This attempt: inputs and outputs (B120) | **Status:** Partial | gates learned natively at single atoms (53 of 56); composites not reached (1 of 16); the probe fooled 6 times |
 | Local direction: learning maps at an interface | Continue | the leaf result holds; depth fails for a stated reason (lemma C) with a native signal not yet used |
 | Broader exploration: learning program | Known alternatives | credit from pinned dissonance, three held inputs, a sturdier probe |
-| Long-term goal: G15 Learning: a point in a learned knot space | Capability gained | the memory computes and learns gates of held inputs, NOT included |
+| Long-term goal: G15 Learning: a point in a learned knot pattern | Capability gained | the memory computes and learns gates of held inputs, NOT included |
 
 **Next step:** Research directions — selected: #1
 
@@ -121,7 +124,7 @@ Posted in the thread on 2026-11-10:
 
 The examples were stored by that learner alone, with no outside map. It is not the native writer and uses no address: it never learns which atoms exist, where they are, their roles or classes, or any target signing.
 
-- **Every map is self-dual (proved by hand).** Flipping every point never changes the dissonance, so the answer for opposite inputs is always the opposite. No knot space computes AND, OR or XOR of two held inputs, and the learner never stopped on AND (18 of 18).
+- **Every map is self-dual (proved by hand).** Flipping every point never changes the dissonance, so the answer for opposite inputs is always the opposite. No drawn knot pattern computes AND, OR or XOR of two held inputs, and the learner never stopped on AND (18 of 18).
 - **Non-monotone maps come from the world's frame (proved by hand).** Flipping one point's frame negates that input or the output. Theorem M only bounds readings of stored classes, and held inputs aren't stored classes, so NOT is allowed here.
 - **An acting atom is a gate (exact, every class).** When the two held points agree, the third is forced to their opposite (the NOT gate); otherwise it's free. A transparent atom reads nothing.
 - **Examples can't see inside a composite (proved by hand).** A composite's interface reads its inner atoms only through the AND of their roles, so every example looks the same until all of them act.
@@ -132,7 +135,7 @@ The examples were stored by that learner alone, with no outside map. It is not t
 | This attempt: inputs and outputs (B120) | **Status:** Partial | gates learned at single atoms (53 of 56); composites not reached (1 of 16); the probe was fooled 6 times |
 | Local direction: learning maps at an interface | Continue | depth fails for a proved reason, and there is a native signal it doesn't use yet |
 | Broader exploration: learning program | Known alternatives | credit from pinned dissonance, three held inputs, a sturdier probe |
-| Long-term goal: G15, a point in a learned knot space | Capability gained | the memory computes and learns gates of held inputs, NOT included |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | the memory computes and learns gates of held inputs, NOT included |
 
 **Next step:** Research directions, selected #1.
 

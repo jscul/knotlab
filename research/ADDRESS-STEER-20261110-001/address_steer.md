@@ -1,5 +1,8 @@
 # Does the stored address steer later learning?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `ADDRESS-STEER-20261110-001` (backlog B86, G15; program learning), 2026-11-10, at the coordinator's go-ahead, as a fuller epic with
 failure stated in advance. Pre-registered in [preregistration.md](preregistration.md). Tickets A (`proofs/ADDRESS-STEER-20261110-001A/`),
 B (`.../001B/`) and C (`.../001C/`, long-running row ADDRESS-STEER-C1).
@@ -7,7 +10,7 @@ B (`.../001B/`) and C (`.../001C/`, long-running row ADDRESS-STEER-C1).
 ## Answers
 
 - **A, the rule behind the exception (exact, SAT over every state, 1,280 classes of 11 spaces).** With no even face, the floor states are
-  exactly the states satisfying every line. If every Fano atom acts as its line there are none; otherwise every acting atom holds a unit in
+  exactly the states satisfying every line. If every Fano piece acts as its line there are none; otherwise every acting atom holds a unit in
   every floor state; and when fewer atoms act than there are units, the extra units can sit anywhere, including outside every acting atom.
   Each atom acts in exactly one of the four classes of its own handle, independently of the others. So "the acting atoms are the address" is
   a rule whenever as many atoms act as there are units; `READ-ADDRESS-20261110-001`'s exception is a class with fewer, where one unit is free.
@@ -34,7 +37,7 @@ None.
 | This attempt — does the address steer later learning (B86) | **Status:** Successful | exact rule, writing at four atoms, memory survives tension |
 | Local direction — a learned memory in atoms | Continue | rule exact on small cases; proof open |
 | Broader exploration — learning program | Known alternatives | a proof, sequences of addresses |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | memory written, kept and steering resolution |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | memory written, kept and steering resolution |
 
 **Next step:** Research directions — selected: #1
 

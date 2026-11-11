@@ -1,5 +1,8 @@
 # Handles seen from a gluing line
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a three-regular contradiction; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `HANDLE-LOCALITY-20261103-001` (program topology), 2026-11-03.
 
 ## The question
@@ -7,16 +10,16 @@ Epic `HANDLE-LOCALITY-20261103-001` (program topology), 2026-11-03.
 - **The approval.** The owner said "Yes, let's continue." to PLANAR-THEOREM-20261102-001's recommendation.
 - **What it asked.**
   - Prove that access at a gluing line depends only on a planar patch around that line.
-  - Test, on spaces with one and two Fano atoms, whether new knots appear exactly at gluing lines on handles.
+  - Test, on spaces with one and two Fano pieces, whether new knots appear exactly at gluing lines on handles.
 
 ## Conclusions
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Plane matching systems.** A plane signed system with as many lines as odd faces has as solutions exactly the perfect matchings of lines to odd faces, and the access lemma holds on it for every pinning. A plane knot space split at a point is one. | proof; 301 splits, 260,892 pinnings | A |
+| 1 | **Plane matching systems.** A plane signed system with as many lines as odd faces has as solutions exactly the perfect matchings of lines to odd faces, and the access lemma holds on it for every pinning. A plane contradiction split at a point is one. | proof; 301 splits, 260,892 pinnings | A |
 | 2 | **The interface lemma.** In a splice, an intact side acts on the cut as the point or line it replaced. So the solutions restricted to a plane piece are its closure minus a line, the point split, or one of two gadget forms, each a plane matching system. | proof; 266 piece–removal pairs | A |
 | 3 | **Access is local.** Every pinning of a plane piece's line by two points of that piece has access, wherever the removed line is. Pinnings by two points outside the piece fail only when the removal is outside too. | proof; 31,596 pinnings (computation for outside pinnings) | A |
-| 4 | **The screening lemma.** If the cut carries one bit after the removal, creation at a plane gluing line is creation on a plane knot space minus a line. One bit crosses when the removal lies in the plane piece next to a handle attached at a point, or inside a handle attached at a line. | proof | B |
+| 4 | **The screening lemma.** If the cut carries one bit after the removal, creation at a plane gluing line is creation on a plane contradiction minus a line. One bit crosses when the removal lies in the plane piece next to a handle attached at a point, or inside a handle attached at a line. | proof | B |
 | 5 | **No handle at either line, no creation.** No new knot appears when neither the gluing line nor the removed line lies on a handle (896 cases), nor at a plane gluing line beside a handle attached at a line (224). | computation, up to three points (four on part) | B |
 | 6 | **An opened handle creates at a distance.** A handle attached at a point and opened by the removal creates at plane gluing lines at distance 1, 3 and 5 from it. Two handles act independently. | computation | B |
 | 7 | **The premise fails on composite spaces.** Near an opened handle, 1,092 of 2,496 new knots are unpinned three-point knots through the hub. Inside handles, four-point new knots appear (2,965). | computation; brute-force spot checks | B |
@@ -53,7 +56,7 @@ Epic `HANDLE-LOCALITY-20261103-001` (program topology), 2026-11-03.
 ## Literature
 
 - **Ours.** PLANAR-THEOREM A–C (heights, every pinning, one-port 2-sums), PLANAR-COMPOSE A, HANDLE-EMERGENCE B–C, THREEFOLD-SURFACES
-  (Fano atoms as handles).
+  (Fano pieces as handles).
 - **Classical.** Kasteleyn's face condition; heights of plane bipartite matchings (Thurston, Propp); L-convex sets (Murota); 2-sums across
   separations.
 - **New here.** All seven conclusions and the scout.

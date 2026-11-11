@@ -1,5 +1,8 @@
 # Does native creation see only the switching class?
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SWITCH-READ-20261108-001` (program topology), 2026-11-08.
 
 ## The question
@@ -31,7 +34,7 @@ Epic `SWITCH-READ-20261108-001` (program topology), 2026-11-08.
 
 ## Reading
 
-- **Why atom removals see more.** An intact Fano atom acts on the glue as one negated incidence (ATOM-ONE), and switching-equivalent
+- **Why atom removals see more.** An intact Fano piece acts on the glue as one negated incidence (ATOM-ONE), and switching-equivalent
   signings give the glue the same solutions up to complementing points, which the creation test does not see. Removing a line of an
   atom makes it transparent and frees its incidence, and which incidence is freed is what the placement records. This is a reading
   from earlier results, not yet a proof.

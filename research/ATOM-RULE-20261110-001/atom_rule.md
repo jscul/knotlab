@@ -1,12 +1,15 @@
 # A proof of the atom rule
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern; a Fano atom is a Fano piece. Results are unchanged;
+the earlier text is in git history.
+
 Epic `ATOM-RULE-20261110-001` (backlog B87, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md). Proof family: `proofs/ATOM-RULE-20261110-001A/ATOM-RULE-20261110-001A-P001_the_atom_rule_for_every_knot_sphere/`
 (long-running row ATOM-RULE-A1).
 
 ## The answer
 
-Proved, computer-assisted, for every octahedral knot sphere with separated Fano atoms (atoms whose neighbourhoods do not overlap):
+Proved, computer-assisted, for every octahedral knot sphere with separated Fano pieces (atoms whose neighbourhoods do not overlap):
 
 1. each atom acts as its line in exactly one of the four classes of its own handle, independently of the others;
 2. if every atom acts, no state satisfies every line;
@@ -46,7 +49,7 @@ None.
 | This attempt — a proof of the atom rule (B87) | **Status:** Successful | proved for every octahedral knot sphere, separated atoms |
 | Local direction — the learned memory in atoms | Practically complete for this phase | written, held, rewritten, read, and the rule proved |
 | Broader exploration — learning program | Known alternatives | other spheres, stuck states, a write-up |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a learned memory with a proved rule |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a learned memory with a proved rule |
 
 **Next step:** Research directions — selected: #1
 
@@ -66,7 +69,7 @@ None.
 
 Sent to the owner in the project thread on 2026-11-10 (03:56 UTC).
 
-**B87 done: the atom rule is now a theorem, not just a small-case observation.** On every octahedral knot sphere, with Fano atoms placed so their neighbourhoods don't overlap:
+**B87 done: the atom rule is now a theorem, not just a small-case observation.** On every octahedral knot sphere, with Fano pieces placed so their neighbourhoods don't overlap:
 - each atom acts as its line in exactly one of the four winding classes of its own handle, independently of the others;
 - if every atom acts, no state satisfies every line;
 - otherwise every acting atom holds a unit of the leftover tension.

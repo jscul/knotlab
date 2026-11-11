@@ -1,5 +1,8 @@
 # Atoms within atoms
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a knot space is a drawn knot pattern. Results are unchanged;
+the earlier text is in git history.
+
 Epic `NEST-ATOMS-20261110-001` (backlog B104, G15; program learning), 2026-11-10, at the coordinator's go-ahead. Pre-registered in
 [preregistration.md](preregistration.md), frozen in commit `4b27647cb` before any run. Proof families:
 `proofs/NEST-ATOMS-20261110-001A/` (composite atoms), `…B/` (units at every level), `…C/` (a two-level address).
@@ -91,7 +94,7 @@ replaced only when every pattern inside it does. So the layers read each other: 
 | This attempt — atoms within atoms (B104) | **Status:** Successful | composites are atoms of the next level, proved by hand at any depth |
 | Local direction — the layered memory | Capability gained | each level reads the one below as an AND; units counted at every level |
 | Broader exploration — learning program | Known alternatives | many points at once, other functions than AND, a native choice of atom |
-| Long-term goal — G15 Learning: a point in a learned knot space | Capability gained | a multi-layer memory with a proved rule |
+| Long-term goal — G15 Learning: a point in a learned knot pattern | Capability gained | a multi-layer memory with a proved rule |
 
 **Next step:** Research directions — selected: #1
 

@@ -1,5 +1,8 @@
 # Which spaces the harmony builds
 
+Words (2026-11-11). Reworded under the owner's language rule (Intuitions guide, Glossary): a three-fold space is a three-regular contradiction; a knot space is a three-regular contradiction. Results are unchanged;
+the earlier text is in git history.
+
 Epic `SPACE-SELECTION-20261030-001`, 2026-10-30.
 
 ## The question
@@ -95,7 +98,7 @@ gluing, the two/three boundary returns.**
   - Two-fold contacts transmit phase (an equality), and interference lets three triangles suffice.
   - Three-fold contacts with odd base count are themselves not-all-equal knots on phases, and positivity returns: the knot then needs the
     Fano plane, the smallest configuration that is not 2-colourable.
-  - So the knot's space made only of knots is the Fano plane. Being self-dual, it reads the same with triangles and contacts exchanged.
+  - So the knot's contradiction made only of knots is the Fano plane. Being self-dual, it reads the same with triangles and contacts exchanged.
 - **The error.** Ticket A's interference bound was stated for "fewer than seven" and proved with the wrong hypergraph. The bound survives
   for 2 ≤ n ≤ 6, now with a correct proof and shown sharp, and A's record is kept with an erratum.
 
@@ -107,11 +110,11 @@ gluing, the two/three boundary returns.**
 | Local direction — gadget censuses for the wave pencil | Practically exhausted | More sizes would add counts, not mechanisms. The coincidences of small sizes end at six or seven triangles, and from there cancellations are algebraic. |
 | Broader exploration — space from a law (question 9) | Known alternatives | The three-fold (phase-knot) side has a concrete classical bridge: 2-colourings of 3-regular triple systems and minimally non-2-colourable square hypergraphs. Mixed gluings (two-fold locks plus three-fold knots) are unmapped. |
 | Long-term goal — space from logic without a drawn space | Capability gained | The law selects gluings by cancellation but does not draw one. At the level of contacts the knot reappears, and the gluing made only of knots is forced to be the Fano plane. |
-| Next recommendation — the knot's three-fold spaces | **Next step:** Continue, as a fresh epic. Prove that the Fano gadgets are the knot's only three-fold odd spaces at every size: check the literature on 2-colourings of 3-regular triple systems, and prove or cite that every connected one other than the Fano plane is 2-colourable. Then classify mixed gluings, two-fold phase locks with three-fold phase knots, up to six triangles. | If true, the knot's space made only of knots is unique: the Fano plane, self-dual. That would be the closest the program has come to a space the law draws by itself. |
+| Next recommendation — the knot's three-regular contradictions | **Next step:** Continue, as a fresh epic. Prove that the Fano gadgets are the knot's only three-fold odd spaces at every size: check the literature on 2-colourings of 3-regular triple systems, and prove or cite that every connected one other than the Fano plane is 2-colourable. Then classify mixed gluings, two-fold phase locks with three-fold phase knots, up to six triangles. | If true, the knot's contradiction made only of knots is unique: the Fano plane, self-dual. That would be the closest the program has come to a space the law draws by itself. |
 | Interest — that recommendation | **2/3 — Promising** | Concrete: duality, an exact criterion, and about 25,000 random samples with no exception. Main uncertainty: the uniqueness may be a known classical theorem, in which case the new content is the duality and the reading. The mixed case may not admit a clean structure. |
 | Execution — that next action | Deferred to the owner (fresh epic) | Done so far: duality, Fano gadgets, the probe. Stop when three-fold odd gluings are classified at every size (proof or exact citation) and mixed gluings up to six triangles are classified or shown to need algebraic cancellation. |
 
-**Recommendation.** **Continue**, as a fresh epic: the knot's three-fold spaces (2/3). Three alternatives were considered.
+**Recommendation.** **Continue**, as a fresh epic: the knot's three-regular contradictions (2/3). Three alternatives were considered.
 - **The census at six triangles (1/3).** Completion work. Sampling already shows the patterns.
 - **A write-up of the standing wave on finitely ramified gluings (1/3).** It would gather `SIGNED-GASKETS`, `SIMPLEX-GASKETS`,
   `WAVE-UNIQUENESS`, `SIGNED-3D` and this epic. Deferred until the three-fold classification settles whether the Fano statement is new.

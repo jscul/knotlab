@@ -1578,10 +1578,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read question 9 under A15, where nothing selects one world: a law gives a shape when the shape is among the worlds
   it allows and some local feature (the link at each distinction, its curvature, the dimension bond balls read) is the same in
   every world it allows, with global shape and size left co-real. Under that reading the locality results answer the question
-  rather than block it: a law fixes local geometry and never global shape. The cheapest discriminator is backlog B144, a census
+  rather than block it where every world has proper covers (flat and hyperbolic surfaces, d >= 6): there a law fixes local
+  geometry and never size or global shape. At positive curvature (d <= 5) the worlds are a classical finite list with no proper
+  cover, so a law can fix global shape and size outright (corrected 2026-11-11). The cheapest discriminator is backlog B144, a census
   of worlds made of knots alone, which asks what every allowed world shares. The entry is overturned if question 9 is restated
   under the co-real reading, and confirmed if a question about shape is found that only the forcing reading can pose.
 - **History.**
+  - 2026-11-11 · Challenge narrowed: "never global shape" holds only where every world has proper covers; at d <= 5 the
+    classical finite lists fix shape and size (found by `KNOTS-ALONE-20261111-001`'s pre-registration).
   - 2026-11-11 · Added by the read-only review of the parked space lines, at the coordinator's decision; nothing started.
 
 ### A63 · A named face is put in, not native

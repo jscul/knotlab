@@ -15,7 +15,7 @@ Ticket `BARE-NAMES-20261110-001Z`, 2026-11-10.
 | 3 | A count law allows the cover of every board, so a tree whenever it allows a cycle. | proved; classical | A (T3) |
 | 4 | A law naming the square, with aperiodic tiles, has exactly the disjoint unions of tiled planes as boards. | proved | A (T4) |
 | 5 | Boards of abstract names are not frozen: two edges with one pair of values exchange partners, which changes the board when the edge lies on a cycle of a finite component. | proved | A (T5) |
-| 6 | 90 of the 1,024 one-bit count laws knot one neighbour distinction with its two endpoint values (29, 29, 31 and 1 by shape); 31 have no state. | computed, exact, frozen | B |
+| 6 | 90 of the 1,024 one-bit count laws knot one neighbour distinction with its two endpoint values (29, 29, 31 and 1 by kind); 31 have no state. | computed, exact, frozen | B |
 | 7 | Renamings are finite changes, so under abstract names the source-aware condition excludes nothing. | proved; a reading (A58) | A (T5) |
 
 ## Answer

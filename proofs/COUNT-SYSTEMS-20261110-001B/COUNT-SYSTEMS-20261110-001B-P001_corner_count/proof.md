@@ -2,6 +2,9 @@
 
 Status: Proved by hand; the finite claims are checked on K_2 to K_8 in `check.py`.
 
+Words (2026-11-11). The statements use the literature's words for the knot sphere's triple system: a line {a, b, c} is a
+knot and a point a distinction (Intuitions guide, Glossary); the lines of a cutting-planes refutation are lines of the proof.
+
 Ticket `COUNT-SYSTEMS-20261110-001B`, 2026-11-10.
 
 ## Standard statement

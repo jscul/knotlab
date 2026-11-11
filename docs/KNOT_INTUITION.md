@@ -1700,8 +1700,20 @@ So network holes come in two kinds:
      points from eight examples, kept it when shaken, turned it into its opposite and back.
    - **Reading.** The memory is no longer limited to "all of these", "any of these" and gates: it counts. What it stores is still which
      way the ring is wound; counting is what that winding does to points held inside it.
-   - **Next.** Whether one ring counts more points (backlog B149), and whether rings can be wired into larger functions (sub-goal B148)
-     ([decision note](../research/LEARN-PARITY-20261111-001/learn_parity.md)).
+   - **Next (taken by `PARITY-FIVE-20261111-001`, below).** Whether one ring counts more points (backlog B149), and whether rings can be
+     wired into larger functions (sub-goal B148) ([decision note](../research/LEARN-PARITY-20261111-001/learn_parity.md)).
+
+   **2026-11-11: one ring counts three, and two rings go quiet** (`PARITY-FIVE-20261111-001`).
+   - **The question.** Backlog B149: can one ring count five held points into a sixth? (An even number can never be counted: flipping
+     every point always flips the read point, but it leaves the parity of an even number of held points unchanged.)
+   - **Exact.** Not among the 421 lattice rings of up to 24 points, in any winding; only rings of 8 to 18 points count even three. This
+     is the range searched, not a limit on what one handle can do.
+   - **Two rings on one sphere count nothing.** One counting ring grown on the knot sphere ties six of the sphere's points into a wire
+     that carries its count. Growing a second ring at the sphere's other line unties that wire: no point is forced by any others in any
+     winding (exact; the wire was found after the run).
+   - **Reading.** To count more, rings must be wired together, and the wire has to survive the second ring.
+   - **Next.** A host where two counting rings stay wired (sub-goal B148's first step), awaiting a go-ahead
+     ([decision note](../research/PARITY-FIVE-20261111-001/parity_five.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

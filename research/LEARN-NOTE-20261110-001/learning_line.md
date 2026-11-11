@@ -10,9 +10,10 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## Picking the line up cold (updated 2026-11-11, after `LEARN-PARITY-20261111-001`)
+## Picking the line up cold (updated 2026-11-11, after `PARITY-FIVE-20261111-001`)
 
-The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, and resumed it on 2026-11-11. This section is
+The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, resumed it on 2026-11-11, and paused new work
+again after `PARITY-FIVE-20261111-001` the same day, until the owner resumes. This section is
 what a new thread needs; the section after it is the full current statement, and sections 1 to 8 the history.
 
 **What a learned knot memory is, in one paragraph.** A knot space's law signs its lines; a point's state is a bit per point; dissonance
@@ -30,6 +31,8 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   gate (18 interfaces); no map of three held points is parity, majority or non-unate at the memories' interfaces (THREE-IN, six spaces,
   every law), but an 8-point knot space of genus 4 computes parity of held points (UNATE, independently refereed), and so does the
   8-point lattice torus (2, 0, 4) in its most constrained class (PARITY-NEEDS): one handle is enough; the limit is the memories' shape.
+  No lattice torus up to 24 points counts five held points, and only tori of 8 to 18 points count three; two counting tori grown at the
+  two lines of K_2 compute no parity map at all, because the second unties the host's wire (PARITY-FIVE).
 - *Computed, frozen:* native writing of addresses, 100 of 100 (NATIVE-WRITE); learning gates of held inputs from examples, natively and
   without false stops, at every leaf and composite tested, 84 of 84 with the credit learner and the sturdier probe (STURDY-PROBE), and
   at composites three levels deep and three atoms wide, 40 of 40 (DEEP-MEM); the impossible AND, parity and majority never accepted
@@ -44,9 +47,11 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
   `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
 
-**Where to start again** (the basket, best first): parity of more held points (B149, 2/3 and 2/3, selected); composing learned parity into
-larger functions (sub-goal B148, 3/3 and 1/3); a probe that is a theorem (B130); how learning cost grows with atoms (B143); the parity
-spaces and harness are in `proofs/LEARN-PARITY-20261111-001A/.../parity_lib.py`;
+**Where to start again** (the basket, best first): a host where two counting tori stay wired (sub-goal B148's first step, 3/3 and 2/3,
+selected, awaiting a go-ahead); five-input parity on genus-1 spaces that are not lattice tori (B150); the lattice tori of 25 to 32 points,
+with results kept per space (B151); a probe that is a theorem (B130); how learning cost grows with atoms (B143); the parity spaces and
+harness are in `proofs/LEARN-PARITY-20261111-001A/.../parity_lib.py`, and the exact parity-check method, the composed space and the
+five-input harness in `proofs/PARITY-FIVE-20261111-001A/.../five_lib.py`;
 writing with only the ones named (B131); a frame fixed by learning (B126). The deeper spaces are in
 `proofs/DEEP-MEM-20261111-001A/.../deep_lib.py`; random knot spaces and the parity gadget in `proofs/UNATE-20261111-001A/.../unate_lib.py`.
 
@@ -130,6 +135,9 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
   held points; 16 of 281 lattice tori do; no planar disk gadget unless P = NP.
 - The memory learns to count (`LEARN-PARITY-20261111-001`, frozen): the unchanged learner learned and held three-input parity in 20 of 20
   runs, on the torus alone and grown inside a memory; 60 of 60 writes, no false stop.
+- One torus counts three, and among lattice tori no more (`PARITY-FIVE-20261111-001`, exact): no lattice torus up to 24 points counts
+  five held points, and only tori of 8 to 18 points count three; K_2 with two counting tori grown at its two lines computes no parity map
+  at all, because the second torus unties the host's six-point wire (found after the run). Tori of 25 to 32 points undecided.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -145,10 +153,10 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
 writer's walk never errs when long enough (B130); writing with only the ones named (B131); how learning cost grows with atoms
-(B143); whether one torus counts more points (B149) and learned gates compose
-(B148); and whether
+(B143); whether a genus-1 space that is not a lattice torus counts five points (B150), and whether a host keeps two counting tori
+wired so that learned gates compose (B148); and whether
 learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132, B133,
-B134, B135, B136, B146 and B147 are answered above.
+B134, B135, B136, B146, B147 and B149 are answered above.
 
 ## 1. Where it started
 

@@ -10,7 +10,7 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## Picking the line up cold (updated 2026-11-11, after `PARITY-NEEDS-20261111-001`)
+## Picking the line up cold (updated 2026-11-11, after `LEARN-PARITY-20261111-001`)
 
 The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, and resumed it on 2026-11-11. This section is
 what a new thread needs; the section after it is the full current statement, and sections 1 to 8 the history.
@@ -32,7 +32,9 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   8-point lattice torus (2, 0, 4) in its most constrained class (PARITY-NEEDS): one handle is enough; the limit is the memories' shape.
 - *Computed, frozen:* native writing of addresses, 100 of 100 (NATIVE-WRITE); learning gates of held inputs from examples, natively and
   without false stops, at every leaf and composite tested, 84 of 84 with the credit learner and the sturdier probe (STURDY-PROBE), and
-  at composites three levels deep and three atoms wide, 40 of 40 (DEEP-MEM); the impossible AND, parity and majority never accepted.
+  at composites three levels deep and three atoms wide, 40 of 40 (DEEP-MEM); the impossible AND, parity and majority never accepted
+  where they were impossible; and the parity of three held points, learned and held in 20 of 20 runs on the torus (2, 0, 4) alone and
+  grown inside a memory (LEARN-PARITY), the first learned non-unate map.
 
 **The tools** (all frozen, each with a `check.py` that reproduces its result):
 - `proofs/NATIVE-WRITE-20261110-001A/.../write_lib.py`: spaces S1 to S5 and the dev spaces (`Space`), the fast incremental dissonance
@@ -42,9 +44,9 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
   `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
 
-**Where to start again** (the basket, best first): a learned memory that computes parity (sub-goal B146, 3/3 and 2/3, selected: grow or
-write a (2, 0, 4) torus in its most constrained class with the held points inside); a probe that is a theorem (B130); how learning cost
-grows with atoms (B143);
+**Where to start again** (the basket, best first): parity of more held points (B149, 2/3 and 2/3, selected); composing learned parity into
+larger functions (sub-goal B148, 3/3 and 1/3); a probe that is a theorem (B130); how learning cost grows with atoms (B143); the parity
+spaces and harness are in `proofs/LEARN-PARITY-20261111-001A/.../parity_lib.py`;
 writing with only the ones named (B131); a frame fixed by learning (B126). The deeper spaces are in
 `proofs/DEEP-MEM-20261111-001A/.../deep_lib.py`; random knot spaces and the parity gadget in `proofs/UNATE-20261111-001A/.../unate_lib.py`.
 
@@ -126,6 +128,8 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
   occurs in every size of random knot space searched; the deeper memories' interfaces stay unate.
 - One handle is enough (`PARITY-NEEDS-20261111-001`, exact): the 8-point lattice torus (2, 0, 4) in its most constrained class counts three
   held points; 16 of 281 lattice tori do; no planar disk gadget unless P = NP.
+- The memory learns to count (`LEARN-PARITY-20261111-001`, frozen): the unchanged learner learned and held three-input parity in 20 of 20
+  runs, on the torus alone and grown inside a memory; 60 of 60 writes, no false stop.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -141,9 +145,10 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
 writer's walk never errs when long enough (B130); writing with only the ones named (B131); how learning cost grows with atoms
-(B143); whether a learned memory can compute parity (B146); and whether
+(B143); whether one torus counts more points (B149) and learned gates compose
+(B148); and whether
 learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132, B133,
-B134, B135, B136 and B147 are answered above.
+B134, B135, B136, B146 and B147 are answered above.
 
 ## 1. Where it started
 

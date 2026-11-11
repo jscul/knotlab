@@ -1659,8 +1659,18 @@ So network holes come in two kinds:
    - **Computed.** A learner asked for a count or a vote never pretended it had one.
    - **Reading.** What the world holds reaches a learned knot's answer only one way round. Plain logic of this kind can count with hidden
      helpers, so the limit belongs to the knot space; whether it holds everywhere is open.
-   - **Next.** The line pauses here (2026-11-10); deeper memories from examples (backlog B135) when it resumes
+   - **Next (taken by `DEEP-MEM-20261111-001`, below, when the line resumed).** Deeper memories from examples (backlog B135)
      ([decision note](../research/THREE-IN-20261110-001/three_in.md)).
+
+   **2026-11-11: depth is free** (`DEEP-MEM-20261111-001`).
+   - **The question.** Backlog B135: can the learner reach a stored pattern buried three levels down, or three patterns that must all
+     hold before the outside sees anything?
+   - **Computed.** Every time it was asked, 40 times out of 40, from four examples and its own tension. A pattern two levels down was
+     as quick to reach as one at the surface; a second pattern beside the first cost about eighteen times the time; a third cost no more.
+   - **Reading.** Keeping the parts whose tension cannot be walked away lets the learner build a pattern of patterns one part at a time;
+     what still limits the memory is what it can compute: every answer it gives is a gate.
+   - **Next.** Are maps of held points unate (backlog B136): whether "never counts, never votes" is a theorem
+     ([decision note](../research/DEEP-MEM-20261111-001/deep_mem.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

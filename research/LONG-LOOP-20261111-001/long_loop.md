@@ -59,8 +59,16 @@ distance 2 is proved given faithfulness.
 
 ## Stress test
 
-One size past, the frozen code unchanged (`stress_test.py`): every torus with 81 to 96 distinctions and Klein bottle with 41 to 48.
-**Stress test pending** (`docs/LONG_RUNNING.md`, LONG-LOOP-S1); its outcome is folded in when it finishes.
+One size past, the frozen code unchanged (`stress_test.py`, output in `stress/`): every torus with 81 to 96 distinctions and Klein
+bottle with 41 to 48 (424 worlds; the glide control again exact at 7 to 16).
+
+| Claim | One size past | Result |
+| --- | --- | --- |
+| P1 (faithful at edge-width ≥ 5) | 339 worlds (tori 81 to 96, Klein bottles 41 to 48) | pass: every one faithful |
+| P2 (graph distance + 1 to distance 3 at edge-width ≥ 6) | 286 tori | pass: every one |
+
+Below edge-width 5, again with no prediction: every edge-width-4 world faithful (38 tori, 10 Klein bottles); at edge-width 3, 6 of 28
+tori and 4 of 9 Klein bottles. Folded in on 2026-11-11 (LONG-LOOP-S1).
 
 ## Review
 
@@ -97,7 +105,7 @@ code with its own brute force. No step of the lemma fails and no bug can flip P1
 
 ## Ratio
 
-- **Substantive.** The world list, the frozen census, the lemma, one referee pass, the stress test (pending).
+- **Substantive.** The world list, the frozen census, the lemma, one referee pass, the stress test (passed).
 - **Administrative.** The pre-registration, this note, the closure and one correction entry.
 
 ## Corrections

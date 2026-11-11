@@ -42,7 +42,7 @@
  "proof": "RULER-20261111-001A-P001",
  "authoritative_metadata": "manifest.json",
  "title": "Bond distance is graph distance plus one in the plane",
- "status": "Partial",
+ "status": "Proved",
  "claim": "On the triangular lattice under NAE on every triangle (the ground states of the triangular Ising antiferromagnet): every pair of sites is free and the non-free triples are exactly the triangles; for sites u != v at graph distance d the least bond containing both has d + 2 sites; every site is flipped by a finite change at the flat three-class state.",
  "dependencies": [
   "LONG-LOOP-20261111-001A"
@@ -77,18 +77,14 @@
   "check": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/check.py",
   "directory": "proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler"
  },
- "remaining_obligations": [
-  "Write the proof",
-  "Run check.py",
-  "Independent referee"
- ],
+ "remaining_obligations": [],
  "foundation_claim_scope": "The infinite triangular lattice with NAE on every triangle; finite bonds of the set of all allowed states; the source label at one solution. Flat tori and Klein bottles are not claimed.",
  "validation": {
   "level": "V1",
   "external_review": false,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11.",
-  "status": "pre-registered; the proof to follow",
-  "novelty": "to be assessed"
+  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11; read by an independent referee (a fresh Claude agent given the proof and the code) with its own SAT oracles on a disc and a torus, which found R1 to R3 fully proved.",
+  "status": "proved by hand; finite checks in check.py passed (result.json); refereed, sound, with presentational fixes made",
+  "novelty": "known-with-delta: the height mapping of the triangular Ising antiferromagnet's ground states and the extension of height functions by difference constraints are known; R1 to R3 as statements on the minimal non-shattered sets were not found in a bounded search; folklore risk moderate."
  }
 }

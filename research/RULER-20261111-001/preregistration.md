@@ -36,3 +36,9 @@ to distance 4; R1 in a box; R3's finite flip by SAT on a disc.
 
 A refereed proof of R1 to R3, or the least distance where R2 fails in the plane; then report and hold (the owner has paused new work
 after this epic).
+
+## Correction after freezing (2026-11-11)
+
+Found by the referee, logged in `docs/CORRECTIONS.md` (Not a block); the text above is left as frozen. "Flat worlds (tori and Klein
+bottles) ... there the result stays computed (to distance 3 on edge-width at least 6)" overstates `LONG-LOOP-20261111-001`: its
+equality to distance 3 covered tori only; Klein bottles got faithfulness only.

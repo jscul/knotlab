@@ -101,3 +101,9 @@ the knot's own relation, whether three things are not all equal, and none can.
 
 **Corrections:** none. **Goals:** G8 checkpoint (capability gained; no goal change). **Assumptions:** A65 added (Assumed), history line
 for its use here. **Basket:** #1 recorded for a go-ahead; B148's entry notes the full adder; B152 taken.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-11 (about 19:00 UTC): the three results above (the mirror lemma proved and refereed;
+the 8-point parity torus a full adder; P2 failed, with the two missing four-point maps as the reason), the position table and the
+next-directions table of this note with #1 selected and awaiting a go-ahead, and the Corrections, Goals, Assumptions and Basket lines.

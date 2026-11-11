@@ -1649,7 +1649,8 @@ evidence: results and their status come from the records each entry links.
   count like d, so that a law with it names nothing but its knot ([knots alone](../research/KNOTS-ALONE-20261111-001/knots_alone.md)).
   The alternative, in the spirit of A61's finer reading, counts a link's fixed length as a named dual face.
 - **Rests on it.** That epic's reading that the not-all-equal law reads flat local geometry natively with nothing named but the
-  knot and the surface count, and the bearing of its result on A63.
+  knot and the surface count, and A63's overturning in the knots-alone setting (`LONG-LOOP-20261111-001`), which holds only while
+  this entry does.
 - **Challenge.** Ask whether the count can be dropped: if no world that is not a surface is read faithfully by the not-all-equal law
   at d ≥ 4, the count is a consequence of reading the knots natively and this entry is confirmed in substance; a faithful
   non-surface world shows that the count is an input, to be weighed under the finer reading (backlog B145).

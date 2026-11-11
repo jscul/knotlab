@@ -16,15 +16,17 @@ anything is built from them.
 
 **A note on words.** The program is trying to build space, so it cannot yet
 use words that take space for granted. Triangle, torus, sphere, plane, surface,
-edge and face name things that sit in a two- or three-dimensional world, and
-no such world has been built here. The guide therefore names its objects by
-knots and counts alone, and uses a spatial word only as the name of a classical
-object it cites, for a picture it says outright is drawn, or for space,
-distance and dimension themselves, each with the native definition given where
-it is used. Lesson 1.1 states the rule, and the
-[glossary](#glossary), under "Words for space", maps each of the guide's words
-to its classical spatial name. Spatial reality, if it comes, is to come later, built in
-simulations from these rules.
+edge and face name things that sit in a space of two or three dimensions, and
+no such space has been built here. The guide therefore names its own objects
+by distinctions, knots and counts, and uses a spatial word only as the
+literature's name for a classical object it cites, for a picture it says
+outright is drawn, or for space, distance and dimension themselves, each with
+its native definition. It also gives each word one meaning and each meaning
+one word. Lesson 1.1 states both rules. The [glossary](#glossary) gives every
+word's meaning and the intuition behind it, the literature's name for each
+object under "Words for space", and the words that earlier records used in two
+senses under "One word, one meaning". Spatial reality, if it comes, is to come
+later, built in simulations from these rules.
 
 | Label | Meaning |
 | --- | --- |
@@ -63,7 +65,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Chapter 3. Pairs and three places](#chapter-3-pairs-and-three-places)
   - [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote)
   - [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can)
-  - [3.3 The shape of a system](#33-the-shape-of-a-system)
+  - [3.3 The free complex of a system](#33-the-free-complex-of-a-system)
   - [3.4 Holes and knots](#34-holes-and-knots)
 - [Chapter 4. How bindings behave](#chapter-4-how-bindings-behave)
   - [4.1 Easy and hard questions](#41-easy-and-hard-questions)
@@ -78,7 +80,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Chapter 6. Counting](#chapter-6-counting)
   - [6.1 Counting worlds](#61-counting-worlds)
   - [6.2 The worlds of not-all-equal knots](#62-the-worlds-of-not-all-equal-knots)
-  - [6.3 Patterns in three dimensions](#63-patterns-in-three-dimensions)
+  - [6.3 Counting on classical 3-manifolds](#63-counting-on-classical-3-manifolds)
 - [Chapter 7. Sources and questions](#chapter-7-sources-and-questions)
   - [7.1 What is classical and what is ours](#71-what-is-classical-and-what-is-ours)
   - [7.2 Open questions](#72-open-questions)
@@ -100,27 +102,11 @@ There is no space, no order and no number beyond the two values.
 
 **Words for space.** Because no space is assumed, the guide does not call its
 objects triangles, tori, spheres, planes, surfaces, edges or faces: those words
-belong to a world of two or three dimensions that the program has not built.
-It names them by distinctions, knots and counts instead. A three-place knot is
-a knot, not a triangle; two distinctions in a common knot are a co-knotted
-pair, not an edge.
-
-Knots **overlap** by sharing distinctions, and nothing says how. One knot may
-share distinctions with every other knot and another with only a few; nothing
-makes knots meet "along their sides", one neighbour at a time. A collection of
-knots, finitely or infinitely many, together with the pattern of which
-distinctions they share, is what the guide calls a **base**, in the sense of
-the owner's "base reality": different patterns of overlap, infinite ones
-included, are different bases. In the owner's words (11 November 2026), loops
-"weave in and out and around other loops", the whole is "immensely
-complicated", and the structure that emerges is "folded" and "compressed".
-
-One special pattern has a name of its own: when every co-knotted pair lies in
-exactly two knots and the knots at each distinction close into one cycle, the
-knots form a **two-fold weave**, which the literature draws as a surface. Much
-of the record studies two-fold weaves because they are the easiest to count,
-but a two-fold weave is one flat way of writing an overlap down. It is not
-what a base is, and not the emergent structure the program is after.
+belong to a space of two or three dimensions that the program has not built.
+It names them by distinctions, by the rules that bind distinctions, and by
+counts. The rule that lesson 2.1 calls a knot is not a triangle, and the
+patterns that knots form by sharing distinctions (lesson 2.1) are not
+surfaces, even where the literature draws them as surfaces.
 
 A spatial word appears in only three ways:
 
@@ -131,10 +117,15 @@ A spatial word appears in only three ways:
 - as space, distance or dimension, the things the program is trying to build,
   each with its native definition, such as bond distance (lesson 4.6).
 
-The table under "Words for space" in the [glossary](#glossary) gives each of
-the guide's words with its classical spatial name, so that results stay findable
-in the literature. Spatial reality is what the program hopes to reach later,
-by building simulations from these rules.
+**One word, one meaning.** Each word in the guide has one meaning, and each
+meaning has one word. Where earlier records used a word in two senses, such as
+"world" for an allowed state and for a pattern of knots, the guide keeps one
+sense and gives the other a word of its own. The [glossary](#glossary) gives
+every word's meaning and the intuition behind it, the literature's spatial
+name for each object under "Words for space", so that results stay findable in
+the literature, and the split words under "One word, one meaning". Spatial
+reality is what the program hopes to reach later, by building simulations from
+these rules.
 
 **Variables.** A variable names a distinction. The guide writes the
 distinctions that loops bring (lesson 1.4) as capital letters, such as A and B,
@@ -159,7 +150,7 @@ three variables. It helps to draw it, and the usual drawing is a cube, the
 cube of states: each state is drawn as a corner, each link as
 an edge, and each variable as one direction, with A running from left to
 right, B from front to back, and c from bottom to top. The cube is only the
-drawing; the links are what the states are.
+drawing; what it shows is which states differ in one variable.
 
 ```text
           011 ─────── 111
@@ -267,8 +258,9 @@ published by Gardner in 1970.
 **The grid is drawn in advance.** Each rule of Life mentions one cell and its
 eight neighbours, and the grid is what decides which cells those are. Logic
 needs no grid. A rule may mention any set of variables, and a variable may
-appear in rules with any others; lesson 3.4 shows that every shape, of any
-dimension, is the shape of some system of rules. So Life shows patterns
+appear in rules with any others; lesson 3.4 shows that every simplicial
+complex, of any dimension, is the free complex of some system of rules. So
+Life shows patterns
 emerging on a space that someone drew. The program asks for more: rules that
 make their own neighbourhoods, so that the space emerges too (lesson 7.2,
 question 1).
@@ -283,11 +275,11 @@ nothing here is a claim about biology.
 
 ### 1.4 The picture
 
-**Open chains and loops, state by state.** The program starts from a picture
-of open chains, loops and what lies between loops (the owner first called the
-open chains lines). Each part of the picture is a
-statement about small systems of rules like those of lesson 1.2, so it can be
-checked state by state. With states written in the order x, y, z:
+**Chains and loops, state by state.** The program starts from a picture of
+chains, loops and what lies between loops (the owner first called the chains
+lines). Each part of the picture is a statement about small
+systems of rules like those of lesson 1.2, so it can be checked state by
+state. With states written in the order x, y, z:
 
 - the chain x → y, y → z allows 000, 001, 011 and 111: once a variable is 1,
   every later one is 1, so the chain only orders its members;
@@ -300,23 +292,24 @@ checked state by state. With states written in the order x, y, z:
 
 The picture itself:
 
-- **An open chain is not enough.** A chain of implications only orders its members,
-  and open strings can always be rearranged into one another.
+- **A chain is not enough.** A chain of implications only orders its
+  members, and strings with loose ends can always be rearranged into one
+  another.
 - **A single loop is not enough.** A loop of implications forces all its
-  members to be equal, so it collapses to a single value. A loop of "equal" and
-  "unequal" steps collapses to one free bit, or contradicts itself.
+  members to be equal, so it collapses to a single distinction. A loop of
+  "equal" and "unequal" steps collapses to one free bit, or contradicts itself.
 - **What is real is what lies between bound loops.** The binding belongs to
   the pair, not to either loop. No part smaller than the whole shows it, and
   erasing either loop removes it.
 - **A loop is a logical structure, not a spatial one.** What it brings to a
   binding is an *open distinction*: a bit it leaves free.
 
-**From loops to A, B and c.** The open strings of the first point are a
-comparison with rope: a tangle in a string with free ends can always be slid
+**From loops to A, B and c.** The strings of the first item are a
+comparison with rope: a tangle in a string with loose ends can always be slid
 off an end, so only closed loops stay knotted. From here on a loop takes part
 only through its open distinction. Two loops bring two distinctions, written A
-and B, and the place where they are bound is one more variable, the **contact**
-c. The next lesson reads the smallest rule that binds them.
+and B, and what binds them is one more variable, the **contact** c. The next
+lesson reads the smallest rule that binds them.
 
 ### 1.5 Reading A, B → c
 
@@ -470,9 +463,9 @@ levels ([GEOMETRY-LAW-20261029-001](research/GEOMETRY-LAW-20261029-001/geometry_
 
 **Shapes that run on forever.** In the owner's words, a line has no end and a
 circle can be as large as you like. The record has a shape of this kind built
-with nothing drawn: a rule that grows only at knots holding two open ends grows
+with nothing drawn: a rule that grows only at knots holding two loose ends grows
 an endless chain from a single knot, along which bond distance (lesson 4.6)
-counts one per step, while a region with no open ends freezes
+counts one per step, while a part with no loose ends freezes
 ([OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
 The literature's name for such a chain is the number line. The record's
 circles are drawn: on a layout given in advance, the distinctions within a
@@ -500,10 +493,12 @@ learn the shape of the underlying pattern somehow. But that is to be tested."
 That is open: whether a learning rule, shown what a system allows, can find
 rules, and rules within rules, that make it.
 
-**Two senses of the word.** From lesson 3.3 on, the guide also uses "shape" in
-a narrow sense: the sets of variables a system leaves free, which the
-literature draws as points, edges and filled triangles. The narrow shape is one exact view of the broad
-one, which shows the holes and knots inside what a system allows.
+**The free complex.** From lesson 3.3 on, the guide also studies one exact
+view of what a system's rules make: the sets of variables it leaves free,
+which lesson 3.3 calls the system's free complex and the literature draws as
+points, edges and filled triangles. It shows the holes and knots inside what a
+system allows. Earlier versions of the guide called it the system's shape; the
+word "shape" now keeps only the owner's sense.
 
 **Reading.** Apart from the results it cites, this lesson is the owner's
 reading. Minds, consciousness and genomes are examples of the word, and nothing
@@ -559,6 +554,29 @@ The first command reports a knot. The second reports a hub, and explains which
 binding survives each erasure. *Proved (Lean):* `ForgettingKernel.lean`
 (`atom_isKnot`, `parity_isKnot`, `hub_not_knot`, `tied_not_knot`).
 
+**Knots that overlap.** Knots **overlap** when they share a distinction, and
+nothing says how: one knot may share distinctions with every other knot and
+another with only a few, and nothing makes knots meet "along their sides", one
+neighbour at a time. A distinction that several knots share is a shared
+distinction, not a contact: a contact is the variable through which one knot
+binds loops. Two distinctions in a common three-place knot are a **co-knotted
+pair**. Knots, finitely or infinitely many, together with the pattern of which
+distinctions they share, form a **knot pattern**, and a knot pattern that
+allows at least one state is a **base**, in the sense of the owner's "base
+reality": different patterns of overlap, infinite ones included, are
+different bases. In the owner's words (11 November 2026), loops "weave in and
+out and around other loops", the whole is "immensely complicated", and the
+structure that emerges is "folded" and "compressed".
+
+**One special pattern.** When every co-knotted pair of a pattern of
+three-place knots lies in exactly two knots, and the knots at each distinction
+form one cycle, each sharing a pair with the next, the pattern is a
+**two-fold weave**. The literature draws it as a closed surface, and much of
+the record studies it. It is one way of writing an overlap down, not what a
+base is. In the owner's words, "we can have a flat structure represent the
+folded compressed structure, but the flat structure and emergent structure are
+different", and the program is after the emergent one.
+
 ### 2.2 Knots on the cube
 
 **Free pairs on the cube.** The flip graph of lesson 1.1, drawn as the cube of
@@ -590,7 +608,7 @@ an independent set of the flip graph (classically, of the cube). The knots on th
 nonempty independent sets of excluded states. Two excluded states of a knot
 never differ in just one variable: they differ in two, which is called Hamming
 distance two (as 110 and 000 do), or they are opposite. The next lesson counts
-these knots: there are 34, in five shapes.
+these knots: there are 34, in five classes.
 
 ### 2.3 What a knot hides
 
@@ -604,7 +622,7 @@ The whole allows fewer. If it allows M of the 8 states, it holds log₂(8/M) bit
 that no pair holds: the atom allows 7 states and holds log₂(8/7) ≈ 0.193 bits,
 and parity allows 4 and holds log₂(8/4) = 1 bit.
 
-- **Two loops and a contact have exactly 34 knots, in five shapes.** *Checked*
+- **Two loops and a contact have exactly 34 knots, in five classes.** *Checked*
   against all 256 relations on three variables:
 
   | Excluded states | Relations | Bits the whole holds and no pair does |
@@ -629,7 +647,7 @@ and parity allows 4 and holds log₂(8/4) = 1 bit.
   states that differ in one variable would make that projection two-to-one,
   so f changes whenever one input bit changes. That makes f parity or its
   complement.
-- **The atom is the smallest bond.** It excludes the fewest states. It is
+- **The atom is the weakest bond.** It excludes the fewest states. It is
   also what an AND gate adds to its two-place parts: a two-input gate's
   relation is pairwise exactly when the gate ignores an input, so each of the
   ten gates that use both inputs needs a three-place clause, which is an atom
@@ -646,8 +664,8 @@ PYTHONPATH=tools python3 -m knotlab patterns
 ## Chapter 3. Pairs and three places
 
 Which rules can build a knot? Rules on two variables never can, and rules on
-three variables always can. The chapter then draws what a system leaves free
-as a shape, and finds the knots among the shape's holes.
+three variables always can. The chapter then collects what a system leaves
+free into its free complex, and finds the knots among the complex's holes.
 
 ### 3.1 Two-place rules and the majority vote
 
@@ -712,21 +730,22 @@ Three-place rules can.
 So **3 is the exact threshold**. Width 2 is closed: pairwise in, pairwise out.
 Width 3 reaches every knot.
 
-**Reading.** Two-place rules are logic, not topology. The first place where
-logic binds something that no part shows is the step from two-literal to
-three-literal clauses. This is a statement about what can be *expressed*, not
+**Reading.** Two-place rules are logic, not topology. Logic first binds
+something that no part shows at the step from two-literal to three-literal
+clauses. This is a statement about what can be *expressed*, not
 about how hard anything is to compute. There are easy knots: the atom is a
 Horn clause, and Horn satisfiability takes linear time (lessons 4.1 and 4.2).
 So this boundary is not the boundary between P and NP, and nothing here
 addresses that question.
 
-### 3.3 The shape of a system
+### 3.3 The free complex of a system
 
-**Shapes.** Lesson 1.2 asked whether one set of variables is free. Asking it of
-every set at once gives the system's **shape**: the collection of all its free
-sets. The guide names the parts of a shape by their size, as free singles,
-free pairs, free triples and so on. The literature draws them, and the drawing
-is a useful picture as long as it stays a picture:
+**Free complexes.** Lesson 1.2 asked whether one set of variables is free.
+Asking it of every set at once gives the system's **free complex**: the
+collection of all its free sets. The guide names the members of a free complex
+by their size, as free singles, free pairs, free triples and so on. The
+literature draws them, and the drawing is a useful picture as long as it stays
+a picture:
 
 - each free single is drawn as a point;
 - each free pair as an edge between two points;
@@ -735,40 +754,42 @@ is a useful picture as long as it stays a picture:
 
 **Simplicial complexes and holes.** Every part of a free set is free, since
 each combination of values on the part extends to a combination on the whole
-set, and that one occurs. So every part of a free triple is in the shape too. A
-collection of sets that contains every part of each of its sets is called a
-**simplicial complex**, and a system's shape is one. Topology studies such
-collections, and in particular their **holes**: a cycle of free pairs that no
-free sets fill in, or the same at a larger size, which the literature draws as
-a hollow sphere. A hole's **dimension**, in the literature's count, is one less
-than the size of the sets that close it: a cycle of pairs is a hole of
-dimension one.
+set, and that one occurs. So every part of a free triple is in the free
+complex too. A collection of sets that contains every part of each of its sets
+is called a **simplicial complex**, and a system's free complex is one, which
+gives it its name. Topology studies such collections, and in particular their
+**holes**: a cycle of free pairs that no free sets fill in, or the same at a
+larger size, which the literature draws as a hollow sphere. A hole's
+dimension, in the literature's count, is one less than the size of the sets it
+is made of: a cycle of free pairs is a hole of dimension one. (The guide's own
+meaning of dimension, a growth rate, comes in lesson 4.6.)
 
 **Three examples.** On three variables:
 
-- with no rule at all, every set is free, and the shape is the whole free
-  triple, drawn as a filled triangle;
-- under the atom, the three pairs are free but the triple is not, so the shape
-  is a **hollow triple**: three free pairs closing a cycle around a triple
-  that is not free, drawn as an empty triangle. It is a hole of dimension one;
-- under A ≠ B, with c unused, the pair A, B is not free, so the shape is the
-  two free pairs A, c and B, c, sharing c, with no hole.
+- with no rule at all, every set is free, and the free complex is the whole
+  free triple, drawn as a filled triangle;
+- under the atom, the three pairs are free but the triple is not, so the free
+  complex is a **hollow triple**: three free pairs closing a cycle around a
+  triple that is not free, drawn as an empty triangle. It is a hole of
+  dimension one;
+- under A ≠ B, with c unused, the pair A, B is not free, so the free complex
+  is the two free pairs A, c and B, c, sharing c, with no hole.
 
-**Flags and joins.** Two terms from topology appear in the next lesson. A shape
-is a **flag** shape when every set whose pairs are all free is itself free, so
-that its pairs decide all of it. Two systems on separate variables, set side by
-side, have the **join** of their shapes as their shape: a set is free when its
-part in each system is free. The join of two hollow triples has a hole of
-dimension three, which the literature draws as a three-dimensional sphere
-(*Classical*).
+**Flags and joins.** Two terms from topology appear in the next lesson. A free
+complex is **flag** when every set whose pairs are all free is itself free, so
+that its pairs decide all of it. Two systems on separate variables, taken
+together, have the **join** of their free complexes as their free complex: a
+set is free when its part in each system is free. The join of two hollow
+triples has a hole of dimension three, which the literature draws as a
+three-dimensional sphere (*Classical*).
 
 ### 3.4 Holes and knots
 
-**Hole or knot.** The two words are easy to confuse. A system's **shape** is
-built from what it leaves free: its free distinctions, its pairs that take all
-four combinations, its free triples, and so on. A **hole** is any gap in that
-shape. A **knot** is the smallest kind of hole: a set whose every part is free,
-but which is not free itself.
+**Hole or knot.** The two words are easy to confuse. A system's free complex
+is built from what it leaves free: its free distinctions, its pairs that take
+all four combinations, its free triples, and so on. A **hole** is any gap in
+that complex. A **knot** is the smallest kind of hole: a set whose every part
+is free, but which is not free itself.
 
 ```text
 a knot: a hollow triple              a hole made by ties: a hollow
@@ -779,28 +800,28 @@ a knot: a hollow triple              a hole made by ties: a hollow
       B ─ c                             d ──── c
 
 all three pairs are free;            the pairs a–c and b–d are tied, so
-A, B and c together are not          they are missing from the shape; the
+A, B and c together are not          they are missing from the complex; the
                                      gap is made of missing pairs
 ```
 
-- **Pairwise rules make only "flag" shapes.** In a 2-CNF system a set is free
+- **Pairwise rules make only flag complexes.** In a 2-CNF system a set is free
   exactly when all its pairs are free. So two-place rules can make holes, as
   the hollow cycle of four shows, but never a hollow triple. *Checked*
   (`SpaceTest`; of 399 random 2-clause systems on six variables, 29 have holes
   and none has a hollow triple).
 - **Every knot is a hole, but not every hole is a knot.** To tell whether
   things are bound, look at the knots, not at the size of the holes. Two
-  unrelated knots side by side leave a hole of dimension three, because the
+  unrelated knots taken together leave a hole of dimension three, because the
   join of two hollow triples has one (the literature's 3-sphere), yet nothing
   binds them.
-- **Logic allows every shape.** Every simplicial complex is the shape of some
-  system. *Proved (Lean):* `every_complex_is_a_nerve` in `LoopNerve.lean`
-  builds one from loops whose contacts permute witness values.
+- **Logic allows every free complex.** Every simplicial complex is the free
+  complex of some system. *Proved (Lean):* `every_complex_is_a_nerve` in
+  `LoopNerve.lean` builds one from loops whose contacts permute witness values.
 
 **Reading.** Logic gives intrinsic holes, paths and separation, but it selects
 no space. Whatever space there is has to come from a law. Which law gives a
-shape that looks like a space of low dimension is open (lesson 7.2,
-question 1).
+shape, in the owner's sense of lesson 1.7, that looks like a space of low
+dimension is open (lesson 7.2, question 1).
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -869,7 +890,7 @@ such as ¬A ∨ ¬B ∨ c.
 - **Knots never select.** Every variable of a knot takes both values, and
   fixing one loop's value removes it from the binding.
 
-Propagation, in the first point, starts from the facts and adds whatever a
+Propagation, in the first item, starts from the facts and adds whatever a
 requirement forces until nothing changes. Complete for polynomial time, in the
 second, means that every question in P translates into these two.
 
@@ -911,7 +932,7 @@ three-variable case is an instance of a known criterion for least sets of
 pairwise energies (faces of the correlation polytope; Rauh, Kahle and Ay
 2011). We have not found the four-variable statement in print.
 
-MAX-2-SAT, in the third point, asks for a state that satisfies as many
+MAX-2-SAT, in the third item, asks for a state that satisfies as many
 two-literal clauses as possible.
 
 **Why only four** (*proved here*). Every function of Boolean variables is a
@@ -981,8 +1002,9 @@ walk gives the walk's **holonomy**, and a value that a permutation leaves
 unchanged is one of its **fixed points**. A loop can also be given a selector,
 so that it either passes the witness unchanged or applies its holonomy, and a
 set of loops is switched on together when all their selectors can be on at
-once. The **nerve** of a family of sets is the shape with one member for each
-set, in which a group of members is free when their sets share an element.
+once. The **nerve** of a family of sets is the simplicial complex with one
+member for each set, in which a group of members is a set of the complex when
+their sets share an element.
 
 *Proved (Lean):* `LoopNerve.lean`.
 
@@ -999,7 +1021,7 @@ set, in which a group of members is free when their sets share an element.
   values (`knot_needs_more_values`). Boolean witnesses cannot even tie two
   loops (`boolean_contact_never_ties`).
 
-The first cohomology class of the first point amounts to one value of the
+The first cohomology class of the first item amounts to one value of the
 contact's group for each independent loop of the network.
 
 **Classical background.** Composing tables is the transfer-matrix method. A
@@ -1026,7 +1048,8 @@ where the dimensions themselves expand out in measures of logic", each axis
 "built out of an infinite structure of logic (emergent space)". So the axes X
 and Y would follow rules, as Life's cells do, and the rules would be an
 essentially infinite CNF. It is the intuition of lesson 1.7 turned on space
-itself: lines and functions are shapes, and shapes have rules. A function's
+itself: in the owner's terms, lines and functions are shapes, and shapes have
+rules. A function's
 graph already obeys one ("A single input (x-value) cannot have two different
 outputs (y-values)", in the owner's words of 8 November), so the axes it is
 drawn on could obey rules too. This lesson says what of that idea is proved,
@@ -1043,19 +1066,22 @@ domino problem (Berger 1966).
 so a space that an infinite CNF makes is made of infinitely many finite bonds.
 *Classical:* the compactness theorem.
 
-**Distance read from the rules.** Two distinctions are as far apart as the
-smallest knot that contains them both: their **bond distance** is that knot's
-size minus one. It is read from the allowed states alone, with every other
-variable forgotten (lesson 1.6), so no ruler is drawn. On a thread of atoms,
+**Distance read from the rules.** A **bond** of a system is a set of its
+distinctions on which its allowed states, with every other variable forgotten
+(lesson 1.6), form a knot, and its size is its number of distinctions. Two
+distinctions are as far apart as the smallest bond that contains them both:
+their **bond distance** is that bond's size minus one. It is read from the
+allowed states alone, so no ruler is drawn. On a chain of atoms,
 w(t−1) ∧ L(t) → w(t), the bond distance from w(s) to w(t) is exactly t − s + 1,
-one unit for each loop between them, and every knot through the two contains
+one unit for each loop between them, and every bond through the two contains
 those loops. A chain of two-place ties has no knot, and so no bond distance
 (proved, [LOGIC-AXIS-20261107-001](research/LOGIC-AXIS-20261107-001/logic_axis.md)).
 
 **Dimension read from the rules.** The distinctions within bond distance r of
 one of them form a **ball**. When the number in a ball grows like r^D, the
-rules have dimension D: this growth rate is the only meaning the guide gives
-the word. Tseitin's parity law on a drawn grid with D independent steps (the
+rules have dimension D: this growth rate is the guide's own meaning of the
+word, and a hole's dimension (lesson 3.3) is the literature's. Tseitin's
+parity law on a drawn grid with D independent steps (the
 literature's ℤ^D) has balls that grow like r^D, and so does the gauge law on
 the drawn grid with two steps, x and y, so the allowed states alone recover
 the drawn grid's dimension. On that grid both laws count steps in x plus
@@ -1067,22 +1093,20 @@ the same record).
 law that has no ends: one in which every pattern it allows in a region can be
 reached from any allowed state by changing finitely many cells. Bond distance
 is then at least the separation divided by the law's range (proved).
-Ledrappier's law,
-in which every cell is the parity of two neighbours in the row before, has
-ends. Its three-place knots are exactly its Frobenius triples (drawn in the
-literature as triangles), cells 2^k
-apart are bonded as tightly as neighbours, and every ball is infinite (proved,
-the same record). So what the rules measure need not be the grid they are
-written on.
+Ledrappier's law, in which every cell is the parity of two neighbours in the
+row before, has ends. Its three-place knots are exactly its Frobenius triples
+(drawn in the literature as triangles), cells 2^k apart are bonded as tightly
+as neighbours, and every ball is infinite (proved, the same record). So what
+the rules measure need not be the grid they are written on.
 
 **A chain with nothing drawn.** A rule that grows only at knots holding two
-open ends grows exactly an endless chain from a single knot, along which bond
+loose ends grows exactly an endless chain from a single knot, along which bond
 distance counts one per step: the literature's number line (proved,
 [OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
 Here one of the owner's axes does come from the rules alone.
 
 **Two axes are still drawn.** Every board of dimension two measured so far had
-its places, and which of them are neighbours, given before the rules were
+its cells, and which of them are neighbours, given before the rules were
 read: a grid, a declared network of rings, a group's table, or a gadget whose
 copies and stretch set the dimension. No tested law selects its own dimension
 (reading,
@@ -1096,93 +1120,97 @@ rings are declared. The register of assumptions records this default as A51,
 ([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
 
 **The board as distinctions.** The owner's idea in full asks for more: make
-"these two names are one place" a distinction of the same infinite CNF as the
+"these two names are one cell" a distinction of the same infinite CNF as the
 cells' values, and let one uniform pattern of clauses constrain both. Name the
-places by words in two letters, x and y, and their inverses, so that every name
+cells by words in two letters, x and y, and their inverses, so that every name
 u has four neighbour names, ux, uy and the two inverse steps. Give each pair of
-names a distinction saying whether they are one place. Three rules make these
-distinctions a board: being one place is an equivalence; it passes to
-neighbours (if u and v are one place, so are ux and vx); and one place has one
+names a distinction saying whether they name one cell. Three rules make these
+distinctions a **board**: naming one cell is an equivalence; it passes to
+neighbours (if u and v name one cell, so do ux and vx); and one cell has one
 value. *Classical:* the boards are then exactly the Schreier graphs of the
-subgroups of the free group on x and y. When no two names are one place the
+subgroups of the free group on x and y. When no two names are one cell the
 board is the tree, whose balls grow exponentially; when xy and yx always are,
 it is the **commuting board**, whose balls grow like r², the literature's
 grid ℤ², usually drawn as the plane.
 
-- **Rules that name no shape never choose the commuting board (proved).** Call a law
-  relation-free when its clauses say only which names are one place, never that
-  some word comes back to where it started. If such a law allows any infinite
-  board, it also allows the tree. So it never forces the commuting board, or any other
-  infinite board. Far from the few places that look unique, every local view
-  repeats, and the views can be unfolded into the tree. Such a law can force a
-  finite board, and the rule "two names that look alike are one place" always
-  makes the board finite
+- **Rules that declare no cycle never choose the commuting board (proved).**
+  Call a law relation-free when its clauses say only which names are one cell,
+  never that some word of steps comes back to where it started, which would
+  make that word a **declared cycle**. If such a law allows any infinite
+  board, it also allows the tree. So it never forces the commuting board, or
+  any other infinite board. Far from the few cells that look unique, every
+  local view repeats, and the views can be unfolded into the tree. Such a law
+  can force a finite board, and the rule "two names that look alike are one
+  cell" always makes the board finite
   ([BOARD-DIST-20261110-001](research/BOARD-DIST-20261110-001/board_dist.md)).
-- **One named shape is enough (proved).** A clause at every name saying that
-  the four steps xyx⁻¹y⁻¹ come back to where they started, the **commuting
-  cycle** (drawn in the literature as a closing square), forces exactly the
-  commuting board when it is joined with tiles that cover that board but
-  never periodically (the same record).
+- **One declared cycle is enough (proved).** A clause at every name saying
+  that the four steps xyx⁻¹y⁻¹ come back to where they started, the
+  **commuting cycle** (drawn in the literature as a closing square), forces
+  exactly the commuting board when it is joined with an aperiodic tile law,
+  the literature's tiles that cover a board but never periodically (the same
+  record).
 - **The values can forbid a commuting cycle (computed).** In 60 of the 1,024
-  Life-like one-bit laws the board is bound to the values beyond "one place,
+  Life-like one-bit laws the board is bound to the values beyond "one cell,
   one value". Closing the commuting cycle at a name u makes u and uxyx⁻¹
   neighbours. When a 0 must have only 1s around it, they cannot both be 0, so
   the cycle's distinction and those two values form one clause of three, a
   knot (the same record).
 - **A board made of names is frozen (proved).** Two different boards differ in
-  infinitely many distinctions, and off the tree every place holds infinitely
+  infinitely many distinctions, and off the tree every cell holds infinitely
   many names, so no finite change moves a board or its values. The program
   counts a knot as native only where finite changes can flip its variables, so
   no knot that involves the board is native.
 
-**The theorem.** A law that never names a relation cannot choose the commuting
+**The theorem.** A law that declares no cycle cannot choose the commuting
 board: whenever it allows an infinite board, it allows the tree too, so no
-such law forces the commuting board. One commuting cycle, joined with a tile
-law that covers the board but never periodically, does choose it. The question of which boards
-local rules can force is also studied as graph subshifts (Arrighi, Durbec and
+such law forces the commuting board. One declared commuting cycle, joined with
+an aperiodic tile law, does choose it. The question of which boards local
+rules can force is also studied as graph subshifts (Arrighi, Durbec and
 Guillon 2023).
 
 **Even in the limit.** Take the identity rule to its limit: names that look
-alike at every radius, however far, are one place. That rule is no longer a
-clause of finitely many variables. It still leaves the tree open for every law
+alike at every radius, however far, are one cell. That rule is no longer a
+clause of finitely many variables. It still allows the tree for every law
 with infinitely many solutions, whatever its finite alphabet of values and
 however far, finitely, its rules reach. Such a law always has a solution that
-repeats nowhere, so no two names are one place and the board is the tree. The
-rule never forces the commuting board, though that board is allowed for most one-bit laws
+repeats nowhere, so no two names are one cell and the board is the tree. The
+rule never forces the commuting board, though that board is allowed for most
+one-bit laws
 ([LEIBNIZ-BOARDS-20261110-001](research/LEIBNIZ-BOARDS-20261110-001/leibniz_boards.md),
 [WEAK-APER-20261110-001](research/WEAK-APER-20261110-001/weak_aperiodic.md)).
 Some laws have no finite board at all. Among the laws on three values that
-count a place's neighbours one level down, level and one level up, they are
-exactly the laws that drift: every place has more neighbours above it than
-below, or every place more below. On a finite board every step up is a step
+count a cell's neighbours one level down, level and one level up, they are
+exactly the laws that drift: every cell has more neighbours above it than
+below, or every cell more below. On a finite board every step up is a step
 down seen from the other end, so a drift cannot close up.
 
 **Without letters.** So far every name came with four neighbour names, its
 letters. Take the letters away: names are only names, and whether two of them
 are neighbours is one more distinction of the law. A rule of finitely many
-variables then cannot make two places touch: whatever it allows, it also
-allows a world in which every place touches every other, or none does
+variables then cannot make two cells touch: whatever it allows, it also
+allows a world in which every cell touches every other, or none does
 (Ramsey's theorem). The letters were drawing four neighbours that a rule can
-tell apart, and one connected world. Without them the board is no longer
+tell apart, and one connected board. Without them the board is no longer
 frozen: two links that join the same pair of values can trade partners, and
 the board takes part in knots with the values
 ([BARE-NAMES-20261110-001](research/BARE-NAMES-20261110-001/bare_names.md)).
-The values on it can change in place, with the board kept, wherever the world
-comes in finite pieces. On the free board a change has to stop somewhere, and
+The values on it can change with the board kept, wherever the board comes in
+finite pieces. On the free board a change has to stop somewhere, and
 for most of these rules it never can
 ([PLACE-FLIP-20261110-001](research/PLACE-FLIP-20261110-001/place_flip.md)).
 Growing the board from a seed does not escape this either. A growing rule
 that closes no cycle grows a tree. One that closes commuting cycles can grow
-the whole commuting board, one place at a time, but it names each cycle as it
-closes it
+the whole commuting board, one cell at a time, but it declares each cycle as
+it closes it
 ([GROW-FACE-20261110-001](research/GROW-FACE-20261110-001/grow_face.md)).
 
 **Reading.** Rules can measure a space and read its dimension from what they
 allow, and in one dimension they can grow the axis with nothing drawn. When the
-board itself is made of distinctions, rules that never name a shape cannot
-choose the commuting board: they always leave the tree open. One rule that
-names the commuting cycle can. In the owner's words of lesson 1.7, shapes have
-rules; the commuting board's rule is a shape.
+board itself is made of distinctions, rules that declare no cycle cannot
+choose the commuting board: they always allow the tree. One rule that
+declares the commuting cycle can. In the owner's words of lesson 1.7, shapes
+have rules; here the commuting board's rule is itself a shape, one declared
+cycle.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1190,15 +1218,15 @@ PYTHONPATH=tools python3 -m knotlab space
 
 ## Chapter 5. Depth
 
-A network of knots can allow nothing while every small window of it looks
-consistent. This chapter asks how much of the network a proof has to hold at
+A knot pattern can allow nothing while every small window of it looks
+consistent. This chapter asks how much of the pattern a proof has to hold at
 once to see that nothing is allowed.
 
 ### 5.1 Proving that nothing is allowed
 
 **Refutations.** When a system allows no state at all, a refutation is a proof
 of that fact: a sequence of steps, each of them following from the rules, that
-ends in a contradiction. Proof systems differ in what one step may do, and the
+ends in a statement no state satisfies. Proof systems differ in what one step may do, and the
 cost that matters here is how much a single step must hold at once.
 
 **Proofs by algebra.** Algebra gives the proof system that the next lesson uses.
@@ -1226,21 +1254,22 @@ cost that matters here is how much a single step must hold at once.
 
 **The intuition.** Put a parity knot at every vertex of a graph, sharing the
 graph's edges as distinctions: each vertex asks its edges to sum to a charge.
-Such a network is impossible exactly when the total charge is odd. That is a
-hole, but every small window of the network looks perfectly consistent, since
+Such a pattern allows nothing exactly when the total charge is odd. That is a
+hole, but every small window of the pattern looks perfectly consistent, since
 the odd unit of charge can be pushed anywhere by flipping edges along a path.
-So how much of the network must an observer hold at once to see the hole? The
+So how much of the pattern must an observer hold at once to see the hole? The
 answer is a width of the graph: the charge has to be carried across the widest
-boundary of the best sweep.
+gap of the best order of the graph's vertices.
 
-These networks are Tseitin formulas, and "how much an observer must hold"
+These patterns are Tseitin formulas, and "how much an observer must hold"
 becomes the degree of a refutation.
 
-**Graph terms.** Three terms about graphs appear below. Lay a graph's vertices
-out in a row: each gap in the row is crossed by some edges, the layout's width
-is the most edges crossing one gap, and the **cutwidth** is the least width of
-any layout. The **maximum degree** is the most edges at one vertex. The **±1
-encoding** writes each bit as +1 or −1 instead of 0 or 1.
+**Graph terms.** Three terms about graphs appear below. Put a graph's vertices
+in an order: each gap in the order is crossed by the edges that join a vertex
+before it to a vertex after it, the order's width is the most edges crossing
+one gap, and the **cutwidth** is the least width of any order. The **maximum
+degree** is the most edges at one vertex. The **±1 encoding** writes each bit
+as +1 or −1 instead of 0 or 1.
 
 - **Reasoning mod 2 sees the hole at once.** Summing every vertex's equation
   counts each edge twice, so a refutation of the size of one knot exists.
@@ -1251,17 +1280,17 @@ encoding** writes each bit as +1 or −1 instead of 0 or 1.
   graph by adding or removing one vertex at a time, where each step costs the
   edges it must keep track of. On graphs of maximum degree at most three this
   is exactly **cutwidth + 1**. In the ±1 encoding, with degree measured after
-  reduction, it is exactly the cutwidth. The upper bound sweeps the charge
-  across a layout, and the lower bound is a design whose values are signed
+  reduction, it is exactly the cutwidth. The upper bound carries the charge
+  along an order, and the lower bound is a design whose values are signed
   sums over cuts.
   See [notes/tseitin-nullstellensatz-degree](notes/tseitin-nullstellensatz-degree/).
 
 **Reading.** A hidden bit has a depth: the width an observer must hold to
 carry it to where it shows. Holes made by loops of witnesses (lesson 4.5) are
 shallow, and local reasoning sees them. Holes made by charges are as deep as
-the graph's layout is wide, unless the reasoning computes in the charge's own
-group. Related results for other proof systems, with tree layouts in place of
-linear ones, are in the full record: see "Holes, depth and Tseitin proof
+the graph's best order is wide, unless the reasoning computes in the charge's
+own group. Related results for other proof systems, with tree layouts instead
+of orders, are in the full record: see "Holes, depth and Tseitin proof
 complexity" in [RESULTS.md](RESULTS.md).
 
 ```bash
@@ -1270,14 +1299,14 @@ PYTHONPATH=tools python3 -m knotlab depth
 
 ## Chapter 6. Counting
 
-Deciding asks whether a network allows any world; counting asks how many
+Deciding asks whether a knot pattern allows any world; counting asks how many
 worlds it allows. This chapter sets up the words for counting, then reports
 where counting turns hard.
 
 ### 6.1 Counting worlds
 
-Deciding whether a network of knots allows any world can be easy while
-counting its worlds is hard. Two notes in this repository locate where
+Deciding whether a knot pattern allows any world can be easy while counting
+its worlds is hard. Two notes in this repository locate where
 counting turns hard.
 
 **Counting words.** The words used for counting follow lesson 4.1. A world here
@@ -1293,35 +1322,41 @@ is an allowed state, as in lesson 4.2.
   time, but counting the states it allows is #P-hard; deciding whether a graph
   has a perfect matching takes polynomial time (Edmonds 1965), but counting
   its perfect matchings is #P-hard. *Classical:* Valiant 1979.
-- **Planar graphs are the classical exception.** On a graph drawn in the plane
-  without crossings, perfect matchings are counted in polynomial time by a
+- **Planar graphs are the classical exception.** On a graph that can be drawn
+  in the plane without crossings, the literature's planar graph, perfect
+  matchings are counted in polynomial time by a
   determinant-like formula, the Pfaffian, once the edges are suitably signed
   (Kasteleyn 1967). A graph that has such a signing is called **Pfaffian**.
   Every planar graph is Pfaffian, and so are some others.
 
 ### 6.2 The worlds of not-all-equal knots
 
-**Hypergraphs and colourings.** A hypergraph has points and edges, where an
-edge may contain any number of points. In a **3-uniform** hypergraph every edge
-has three points, and in a **3-regular** one every point lies in three edges. A
-proper **2-colouring** colours each point black or white so that no edge has
-all three points the same colour, which is the not-all-equal rule on every
-edge. The **incidence graph** has a vertex for each point and one for each
-edge, and joins each point to the edges that contain it. The note also signs
-some incidences: at a signed incidence, the edge sees the point's colour
+**Hypergraphs and colourings.** The note uses the literature's words for a
+knot pattern. A **hypergraph** has vertices and edges, where an edge may
+contain any number of vertices; for a pattern of not-all-equal knots the
+vertices are the distinctions and the edges are the knots. In a **3-uniform**
+hypergraph every edge has three vertices, so every knot has three
+distinctions, and in a **3-regular** one every vertex lies in three edges, so
+every distinction lies in three knots. A proper **2-colouring** colours each
+vertex black or white so that no edge has all three of its vertices the same
+colour, which is an allowed state of the not-all-equal knots. The **incidence
+graph** has a vertex for each distinction and one for each knot, and joins
+each distinction to the knots that contain it. The note also signs some
+incidences: at a signed incidence, the knot sees the distinction's value
 reversed. A twist, roughly, is where the signs differ from a Pfaffian signing,
 and the note defines when twists branch.
 
-**What the note proves.** A 3-regular 3-uniform hypergraph is a network of
-not-all-equal knots in which every distinction sits in exactly three knots. Its
-proper 2-colourings are the network's worlds. Networks with no world at all are
-where these knots close up on themselves, and the program calls them three-fold
+**What the note proves.** A 3-regular 3-uniform hypergraph is a pattern of
+not-all-equal knots in which every distinction sits in exactly three knots,
+and its proper 2-colourings are the pattern's worlds. Patterns with no world
+at all are where these knots close up on themselves, and the program calls
+them **three-regular contradictions**; earlier records called them three-fold
 spaces. Counting is #P-hard in general (Fan and Cai) and easy when the
 incidence graph is planar (Valiant). The note studies the class in between,
-Pfaffian incidence graphs, which contains every network with no world. *Proved
-(note):*
+Pfaffian incidence graphs, which contains every pattern with no world.
+*Proved (note):*
 
-- remove any one knot from a connected network with no world, and the worlds
+- remove any one knot from a connected pattern with no world, and the worlds
   of what is left can be counted in polynomial time;
 - counting stays polynomial under twists that do not branch;
 - counting becomes #P-hard once twists branch. It stays #P-hard without any
@@ -1330,30 +1365,36 @@ Pfaffian incidence graphs, which contains every network with no world. *Proved
 See
 [notes/pfaffian-hypergraph-colourings](notes/pfaffian-hypergraph-colourings/).
 
-### 6.3 Patterns in three dimensions
+### 6.3 Counting on classical 3-manifolds
 
-**Spaces and their groups.** A 3-manifold is a space that looks like ordinary
-three-dimensional space near each of its points, such as the space around a
-knotted rope. Its **fundamental group** records its loops: two loops count as
-the same when one can be slid into the other, and two loops combine by running
-one after the other. A **homomorphism** from the fundamental group to a finite
-group labels every loop with an element of the group so that running two loops
-one after the other multiplies their labels. For the space around a knot drawn
-as a diagram, such a labelling is a colouring of the diagram's arcs that obeys
-one rule at each crossing. A group is **solvable** when it is built in finitely
+**Spaces and their groups.** This lesson reports a result about objects of
+classical topology, which are not the program's objects: the program has built
+no space, and its words here are the literature's. A 3-manifold is a space
+that looks like ordinary three-dimensional space near each of its points, such
+as the space around a knotted rope. Its **fundamental group** records its
+closed paths, which the literature calls loops; they are not the loops of
+lesson 1.4. Two closed paths count as the same when one can be slid into the
+other, and two combine by running one after the other. A **homomorphism** from
+the fundamental group to a finite group labels every closed path with an
+element of the group so that running two of them one after the other
+multiplies their labels. For the space around a **classical knot**, a knotted
+rope drawn as a diagram, such a labelling is a colouring of the diagram's
+arcs that obeys one rule at each crossing. A group is **solvable** when it is built in finitely
 many layers from commutative groups. S₃ is the group of the six permutations of
 three things, and S₄ that of the 24 permutations of four. A group's Fitting
 height counts its layers of a particular kind, the nilpotent ones, which are
 the groups closest to commutative; Heisenberg groups are the simplest nilpotent
-groups that are not commutative. A **link** is several closed loops of rope,
-possibly tangled with one another, and a knot is a link with one loop.
+groups that are not commutative. A **link** is several closed ropes,
+possibly tangled with one another, and a classical knot is a link with one
+rope.
 
 **What the note proves.** When the laws counted are group laws on a 3-manifold,
 counting worlds means counting homomorphisms from its fundamental group to a
 finite group. Rowell conjectured in 2009 that this count is computable in
 polynomial time for solvable groups. *Proved (note):* unless every #P function
 is computable in polynomial time, the conjecture fails. On links it fails
-already for S₃. On knots it fails for S₄, the smallest group for which it can,
+already for S₃. On classical knots it fails for S₄, the smallest group for
+which it can,
 and for some groups of Fitting height two. For Heisenberg-type groups the note
 proves an exact dividing line. See
 [notes/knot-group-counting](notes/knot-group-counting/).
@@ -1367,7 +1408,8 @@ complex numbers of absolute value 1, preserving multiplication.
 twisted obstruction joins three nontrivial characters at once, which
 three-component, pairwise-unlinked (Borromean) surgeries supply. Everything
 pairwise stays countable. This echoes the K2 pattern of lesson 2.1, but it is a
-statement about counting complexity, not about knots in our sense. The knot
+statement about counting complexity, not about the logical knots of lesson 2.1.
+The knot
 test cannot tell hard groups from easy ones: every group law, read as the
 relation x·y = z, is constrained as a whole and free in every pair.
 
@@ -1420,14 +1462,15 @@ remains open.
 
 ### 7.2 Open questions
 
-1. **Space from a law.** Logic allows every shape. Which uniform, local law,
-   not written on a space in advance, gives a shape that looks like a space of
-   low dimension? One necessary condition is known: a law keeps a lasting
-   record of its loops only if its contacts act as group elements (lessons
-   4.4 and 4.5). Lesson 4.6 shows how far the program has got: rules read a
-   drawn grid's dimension and grow a line with nothing drawn, but no tested
-   law yet chooses its own plane, and when the board is made of distinctions
-   no law that names no shape can.
+1. **Space from a law.** Logic allows every free complex (lesson 3.4). Which
+   uniform, local law, not written on a space in advance, gives a shape, in
+   the owner's sense of lesson 1.7, that looks like a space of low dimension?
+   One necessary condition is known: a law keeps a lasting record of its
+   loops only if its contacts act as group elements (lessons 4.4 and 4.5).
+   Lesson 4.6 shows how far the program has got: rules read a drawn grid's
+   dimension and grow an endless chain with nothing drawn, but no tested law
+   yet chooses its own board of dimension two, and when the board is made of
+   distinctions no law that declares no cycle can.
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
    time are the data, and does the static test survive that change?
 3. **Limits.** No set of finite clauses binds infinitely many loops into one
@@ -1437,20 +1480,186 @@ remains open.
 
 ## Glossary
 
+Each word below has the one meaning given here, and the guide uses no other
+word for that meaning. Where it helps, an entry also gives the intuition
+behind the word. Spatial words follow the rule of lesson 1.1, and the two
+tables at the end give the literature's name for each object and the words
+that earlier records used in two senses.
+
 - **Distinction.** Two alternatives of which exactly one holds: one bit
-  (lesson 1.1).
+  (lesson 1.1). A distinction is open when it is free on its own, taking
+  both values; each loop brings an open distinction to a knot. The intuition:
+  the least thing that could be otherwise. Everything in the guide is built
+  from distinctions and from rules about them, and nothing else is assumed,
+  not even a place to put them.
+- **Joint state.** A value for every variable, written as a string such as 110
+  (lesson 1.1). The guide calls it a state for short.
 - **Flip graph.** The states of some variables, two of them linked when they
   differ in exactly one variable. The guide draws the flip graph of three
   variables as the cube of states, and the cube is only that drawing
   (lesson 1.1).
-- **Base.** A collection of knots, finitely or infinitely many, together with
-  the pattern of which distinctions they share, in the sense of the owner's
-  "base reality". Knots **overlap** by sharing distinctions, and nothing limits
-  how many knots one knot meets (lesson 1.1).
-- **Two-fold weave.** A base in which every pair of distinctions sharing a
-  knot lies in exactly two knots and the knots at each distinction close into
-  one cycle. The literature draws it as a surface; it is one flat way of
-  writing an overlap down, not what a base is (lesson 1.1).
+- **Relation.** The set of joint states a system of rules allows. Two systems
+  that allow the same states are the same relation (lesson 1.2).
+- **Free.** A set of variables is free when every combination of their values
+  occurs in some allowed state. The guide also calls such a set
+  **unconstrained**, and any other set **constrained** (lesson 1.2). The
+  intuition: the rules say nothing about a free set, since whatever it does,
+  the other variables can go along with it.
+- **Clause.** An "or" of letters, each possibly negated, such as
+  `¬A ∨ ¬B ∨ c`. It rules out one assignment of its own variables, and a list
+  of clauses that must all hold is a **CNF** (lesson 1.2).
+- **Emergence.** What a system of rules shows as a whole and none of its rules
+  shows alone, as the Game of Life's patterns do on a grid (lesson 1.3). The
+  program places the first emergence at the first knot. The intuition: the
+  whole holds something no part holds, so only the whole can show it.
+- **Loop.** A logical structure that leaves a distinction open (lesson 1.4).
+  The intuition, in the owner's words, is a closed "string" that can "weave in
+  and out and around other loops": a tangle slides off a string with loose
+  ends, so only closed loops stay knotted. A cycle of co-knotted pairs is not a
+  loop; what earlier records called the loops of a two-fold weave are its
+  unfilled cycles.
+- **Contact.** The variable through which a knot binds loops (lesson 1.4). A
+  distinction that several knots share is a shared distinction, not a contact
+  (lesson 2.1).
+- **Atom.** The knot `¬A ∨ ¬B ∨ c`, also written A ∧ B → c, or A, B → c, and
+  read "A and B together demand c": it forbids only the state with A and B
+  but not c (lesson 1.5). It excludes fewer states than any other knot, so it
+  is the weakest bond (lesson 2.3). It is neither the atomic formula of logic
+  nor what earlier records called a Fano atom, now a Fano piece.
+- **Forgetting.** Ignoring a variable: a state of the others stays allowed when
+  some value of the forgotten one completes it. What remains is the
+  **projection**, or **shadow**, on the others (lesson 1.6).
+- **Witness.** An auxiliary variable that reports on something, such as
+  whether two loops are bound. Witnesses are quantified away before a verdict
+  (lesson 1.6).
+- **Shape.** In the owner's sense, which the guide adopts, any structure that
+  rules make, together with those rules (lesson 1.7). The intuition, in the
+  owner's words: emergent structures "are rules, and rules within rules".
+  Earlier versions of the guide also called a system's free complex its shape.
+- **Knot.** A relation that is constrained as a whole and unconstrained in
+  every part (lesson 2.1). The intuition: a binding that lives only in the
+  whole. Forget any one variable and nothing is left tied, as in the
+  literature's Borromean rings, three rings that hold together though no two
+  of them are linked. A knotted rope, the object of classical knot theory, is
+  a **classical knot** (lesson 6.3).
+- **Hub.** One variable shared by several separate relations, such as
+  `(¬A ∨ c) ∧ (¬B ∨ c)`. Sharing identity is not a binding (lesson 2.1).
+- **Overlap.** Knots overlap when they share a distinction, a **shared
+  distinction**. Nothing limits how many knots one knot overlaps, or which
+  (lesson 2.1). The intuition: knots do not sit side by side in a space. They
+  meet only by sharing what they bind, as the owner's loops weave in and out
+  and around other loops.
+- **Knot pattern.** Knots, finitely or infinitely many, together with the
+  pattern of which distinctions they share (lesson 2.1). The literature writes
+  a knot pattern as a hypergraph, its vertices the distinctions and its edges
+  the knots (lesson 6.2).
+- **Base.** A knot pattern that allows at least one state, in the sense of the
+  owner's "base reality": different patterns of overlap, infinite ones
+  included, are different bases (lesson 2.1). The intuition: a reality built
+  from the bottom up, out of nothing but knots and which distinctions they
+  share. The foundation's **admissible base** is the general notion, declared
+  primitives and native rules of any kind with their semantics, admitted maps
+  and a coherence witness
+  ([docs/COMMON_VERBIAGE.md](docs/COMMON_VERBIAGE.md)). A base whose
+  semantics and admitted maps are declared is an admissible base, and the
+  program reads every coherent admissible base as co-real (lesson 7.1).
+- **Co-knotted pair.** Two distinctions in a common three-place knot of a
+  pattern (lesson 2.1).
+- **Two-fold weave.** A knot pattern of three-place knots in which every
+  co-knotted pair lies in exactly two knots and the knots at each distinction
+  form one cycle, each sharing a pair with the next (lesson 2.1). Where no
+  other pattern is in view, the record says weave for short. The literature
+  draws a two-fold weave as a closed surface. The intuition: the one pattern
+  of overlap that can be written down flat, in the owner's words a "flat
+  structure" that can "represent the folded compressed structure" but is not
+  it.
+- **Patch.** A finite pattern of three-place knots whose co-knotted pairs all
+  lie in two knots except the pairs of one cycle, its **selvage**, which lie
+  in one; in which the knots at each distinction form one cycle, or one path
+  for a distinction on the selvage; and whose Euler count is 1. The
+  literature draws a patch as a disc and its selvage as the disc's boundary.
+  Selvage is the weaver's word for the finished border of a cloth.
+- **Unfilled cycle.** A cycle of co-knotted pairs of a two-fold weave that is
+  the selvage of no patch inside the weave: the literature's non-contractible
+  cycle. The fewest pairs in an unfilled cycle is the literature's
+  edge-width. The intuition: a way around the weave that no part of it closes
+  off.
+- **Euler count.** Distinctions minus co-knotted pairs plus knots, for a
+  pattern of three-place knots: the literature's Euler characteristic.
+- **Orientable.** A two-fold weave is orientable when each knot can be given
+  a cyclic order of its three distinctions so that, at every co-knotted pair,
+  the two knots that contain it put its two distinctions in opposite orders:
+  the literature's orientable surface, drawn as two-sided.
+- **Cycle pairs.** In a connected orientable two-fold weave, (2 − Euler
+  count) / 2: the number of pairs of independent unfilled cycles, the
+  literature's genus, or number of handles. A **zero-pair weave** has Euler
+  count 2, the literature's sphere, and a **one-pair weave** has Euler count
+  0, the literature's torus.
+- **Six-regular.** Every distinction in exactly six knots. A finite
+  six-regular two-fold weave has Euler count 0, so a connected one is a
+  one-pair weave or a weave of Euler count 0 that is not orientable: the
+  literature's flat torus and flat Klein bottle. The **endless six-regular
+  weave** is the infinite connected one in which every cycle is filled, the
+  selvage of some patch: the literature's triangular lattice, drawn as the
+  plane.
+- **Majority.** The state that takes, in each variable, the value at least two
+  of three given states take. Systems of two-place rules are closed under it,
+  and knots are not (lesson 3.1).
+- **Free complex.** The collection of all the sets of distinctions a system
+  leaves free (lesson 3.3). Every part of a free set is free, so it is a
+  simplicial complex; in the literature's terms it is the family of sets that
+  the allowed states shatter. A **hole** is a gap in it, and a knot is the
+  smallest kind of hole. A **hollow triple** is three free pairs whose triple
+  is not free, as under every three-place knot, which the literature draws as
+  an empty triangle. The intuition: the free complex records, for every set
+  of distinctions, whether the rules leave it alone.
+- **World.** With 1 read as "exists", the set of things that exist in an
+  allowed state (lesson 4.2), so counting worlds is counting allowed states
+  (lesson 6.1). A knot pattern is not a world: what earlier records called
+  flat worlds and disc worlds are bases, weaves and patches. The foundation's
+  world branch is always written in full.
+- **Requirement.** A rule saying what must exist when other things do, such as
+  `A ∧ B → c`. A **choice** says that when something exists, one of several
+  things must, such as `c → A ∨ B` (lesson 4.2).
+- **Bond.** A set of a system's distinctions on which its allowed states, with
+  every other variable forgotten, form a knot; its size is its number of
+  distinctions (lesson 4.6). A rule of the system that is a knot gives one
+  kind of bond, and bonds can also be read off the allowed states where no
+  single rule is a knot. Bonds are compared by size, and also by how many
+  states they exclude: the atom, which excludes the fewest, is the weakest
+  bond (lesson 2.3).
+- **Bond distance.** The size of the smallest bond containing two
+  distinctions, minus one, read from the allowed states alone. A **ball** is
+  the set of distinctions within a given bond distance of one of them, and how
+  fast balls grow gives a dimension (lesson 4.6). The intuition: two
+  distinctions are as near as the least knot that ties them, so the ruler
+  comes from the rules and is never drawn.
+- **Chain.** Rules in a row, each sharing one distinction with the next: a
+  chain of implications (lesson 1.4), of two-place ties, or of knots. Closed
+  up, a chain of implications is a loop of the picture of lesson 1.4. Along an
+  endless chain of atoms, which earlier records called a thread, bond
+  distance grows by one per step, and the literature draws it as the number
+  line (lesson 4.6).
+- **Board.** Cells, and which cells are neighbours, either given before the
+  rules or made of distinctions (lesson 4.6). A **cell** is what holds one
+  value, as in the Game of Life. The **commuting board** is the board on which
+  the steps xy and yx always reach the same cell: the literature's grid ℤ²,
+  drawn as the plane. A **declared cycle** is a word of steps that a law's
+  clauses say comes back to where it started, and the **commuting cycle**
+  xyx⁻¹y⁻¹ is the declared cycle of the commuting board, which the literature
+  draws as a closing square.
+- **Refutation.** A proof that a system allows no state at all (lesson 5.1). A
+  system that allows no state is a **contradiction**.
+- **Depth.** How much of a knot pattern an observer must hold at once to see a
+  hole in it (lesson 5.2).
+- **Three-regular contradiction.** A pattern of not-all-equal knots in which
+  every distinction lies in exactly three knots and that allows no state
+  (lesson 6.2); earlier records called it a three-fold space. The record cuts
+  one into Fano pieces and the rest, which it calls glue. The **Fano pattern**
+  is seven distinctions and seven three-place knots, every two distinctions in
+  exactly one knot: the literature's Fano plane, its knots the plane's lines.
+  A **Fano piece** is the Fano pattern with one distinction or one knot
+  removed, which earlier records called a Fano atom.
 - **Words for space.** The guide names its objects by distinctions, knots and
   counts. It keeps spatial words for classical objects it cites, for pictures
   it says are drawn, and for space, distance and dimension themselves, each
@@ -1460,67 +1669,60 @@ remains open.
 
   | The guide's word | What it is, by counts alone | The literature's spatial name |
   | --- | --- | --- |
-  | distinction | a variable | point, vertex |
-  | knot (three-place) | a relation on three distinctions passing K1–K3 | triangle; line of a triple system, such as the Fano plane |
-  | co-knotted pair | two distinctions sharing a knot | edge |
-  | base | knots and the pattern of which distinctions they share | (none; a space is what the program hopes to build from one) |
+  | distinction | a variable | point, vertex, site |
+  | knot (three-place) | a relation on three distinctions passing K1–K3 | triangle, when drawn in a surface; line of a triple system, such as the Fano plane |
+  | co-knotted pair | two distinctions in a common three-place knot | edge |
+  | knot pattern | knots and which distinctions they share | hypergraph |
+  | base | a knot pattern that allows a state | (none; a space is what the program hopes to build from one) |
   | two-fold weave | every co-knotted pair in exactly two knots, the knots at each distinction in one cycle | closed triangulated surface |
-  | closed tour | a cycle met by following, at each distinction, the next knot in a fixed order | face |
+  | patch; selvage | a finite pattern of Euler count 1 whose one-knot pairs form one cycle; that cycle | disc; its boundary |
+  | unfilled cycle | a cycle of co-knotted pairs that is the selvage of no patch | non-contractible cycle; the shortest one's length is the edge-width |
+  | tour | in a graph with a cyclic order at each vertex, the closed walk that leaves each vertex by the edge after the one it came in on | face of a map |
   | Euler count | distinctions − co-knotted pairs + knots | Euler characteristic |
-  | loop pairs | (2 − Euler count) / 2, in a two-sided weave | genus, handles |
-  | zero-pair weave | a two-fold weave with Euler count 2 | sphere |
-  | one-pair weave | a two-sided two-fold weave with Euler count 0 | torus |
-  | balanced | every distinction in exactly six knots | flat |
-  | chain | knots in a row, bond distance growing by one per step | line, number line |
+  | orientable | each knot's distinctions ordered so that the two knots at every pair order it oppositely | orientable, two-sided |
+  | cycle pairs | (2 − Euler count) / 2, in a connected orientable weave | genus, handles |
+  | zero-pair weave | a connected orientable weave of Euler count 2 | sphere |
+  | one-pair weave | a connected orientable weave of Euler count 0 | torus |
+  | non-orientable weave of Euler count 0 | connected and not orientable, Euler count 0 | Klein bottle |
+  | six-regular | every distinction in exactly six knots | flat, 6-regular |
+  | six-regular one-pair weave | a one-pair weave with every distinction in six knots | flat torus, triangular-lattice torus |
+  | endless six-regular weave | infinite, connected, six-regular, every cycle filled | triangular lattice, drawn as the plane |
+  | chain; endless chain of atoms | rules in a row, each sharing one distinction with the next; along atoms, bond distance grows by one per step | path; number line |
   | ball | the distinctions within a bond distance of one of them | ball, disc |
   | dimension | how fast balls grow: like r^D gives D | dimension |
   | flip graph | states linked when they differ in one variable | cube (of states), hypercube |
+  | free complex | the sets a system leaves free | complex of shattered sets, drawn as points, edges and filled triangles |
   | hollow triple | three free pairs whose triple is not free | empty triangle, circle |
+  | board; cell | cells and which are neighbours; what holds one value | grid, Schreier graph; site, vertex |
   | commuting board | the board on which the steps xy and yx always meet | grid ℤ², drawn as the plane |
-  | commuting cycle | the four steps xyx⁻¹y⁻¹ coming back to where they started | closing square |
-- **Joint state.** A value for every variable, written as a string such as 110
-  (lesson 1.1).
-- **Relation.** The set of joint states a system of rules allows. Two systems
-  that allow the same states are the same relation (lesson 1.2).
-- **Free.** A set of variables is free when every combination of their values
-  occurs in some allowed state. The guide also calls such a set
-  **unconstrained**, and any other set **constrained** (lesson 1.2).
-- **Clause.** An "or" of letters, each possibly negated, such as
-  `¬A ∨ ¬B ∨ c`. It rules out one assignment of its own variables, and a list
-  of clauses that must all hold is a **CNF** (lesson 1.2).
-- **Emergence.** What a system of rules shows as a whole and none of its rules
-  shows alone, as the Game of Life's patterns do on a grid (lesson 1.3). The
-  program places the first emergence at the first knot.
-- **Loop.** A logical structure that leaves a distinction open (lesson 1.4).
-- **Contact.** The variable through which loops are bound (lesson 1.4).
-- **Atom.** The knot `¬A ∨ ¬B ∨ c`: the smallest bond. It is also written
-  A ∧ B → c, or A, B → c, and read "A and B together demand c": it forbids
-  only the state with A and B but not c (lesson 1.5).
-- **Forgetting.** Ignoring a variable: a state of the others stays allowed when
-  some value of the forgotten one completes it. What remains is the
-  **projection**, or **shadow**, on the others (lesson 1.6).
-- **Witness.** An auxiliary variable that reports on something, such as
-  whether two loops are bound. Witnesses are quantified away before a verdict
-  (lesson 1.6).
-- **Knot.** A relation that is constrained as a whole and unconstrained in
-  every part (lesson 2.1).
-- **Hub.** One variable shared by several separate relations, such as
-  `(¬A ∨ c) ∧ (¬B ∨ c)`. Sharing identity is not a binding (lesson 2.1).
-- **Majority.** The state that takes, in each variable, the value at least two
-  of three given states take. Systems of two-place rules are closed under it,
-  and knots are not (lesson 3.1).
-- **Shape.** The simplicial complex of sets of distinctions a system leaves
-  free. A **hole** is a gap in it, and a knot is the smallest kind of hole
-  (lesson 3.3). In the broad sense of lesson 1.7, any structure that rules make.
-- **World.** With 1 read as "exists", the set of things that exist in an
-  allowed state (lesson 4.2).
-- **Requirement.** A rule saying what must exist when other things do, such as
-  `A ∧ B → c`. A **choice** says that when something exists, one of several
-  things must, such as `c → A ∨ B` (lesson 4.2).
-- **Bond distance.** The size of the smallest knot containing two
-  distinctions, minus one, read from the allowed states alone. A **ball** is
-  the set of distinctions within a given bond distance of one of them, and how
-  fast balls grow gives a dimension (lesson 4.6).
-- **Refutation.** A proof that a system allows no state at all (lesson 5.1).
-- **Depth.** How much of a network an observer must hold at once to see a
-  hole in it (lesson 5.2).
+  | declared cycle; commuting cycle | a word of steps that a law says comes back; xyx⁻¹y⁻¹ | face; closing square |
+  | three-regular contradiction | not-all-equal knots, every distinction in three, no allowed state | non-2-colourable 3-regular 3-uniform hypergraph |
+  | Fano pattern; Fano piece | seven distinctions and seven knots, every two distinctions in one knot; that pattern less one element | Fano plane; Fano plane less a point or a line |
+- **One word, one meaning.** Earlier records used some words in two senses
+  (lesson 1.1). The guide keeps one sense of each and gives the other its own
+  word. The
+  table also lists words the guide keeps only in quotations or for the
+  literature's objects.
+
+  | Word | Its one meaning in the guide | Other senses in earlier records, and the word for each now |
+  | --- | --- | --- |
+  | base | a knot pattern that allows a state (lesson 2.1) | the foundation's general notion: admissible base, written in full |
+  | world | an allowed state, read with 1 as "exists" (lesson 4.2) | a pattern of knots ("flat world", "disc world", "knot world"): base, weave or patch; the foundation's world branch, written in full |
+  | shape | the owner's: any structure that rules make (lesson 1.7) | the sets a system leaves free: free complex; the five kinds of three-place knot: classes |
+  | loop | a logical structure that leaves a distinction open (lesson 1.4) | a cycle of a weave that no patch closes off: unfilled cycle; loop pairs: cycle pairs |
+  | contact | the variable through which a knot binds loops (lesson 1.4) | a distinction several knots share: shared distinction |
+  | open | of a distinction, free on its own (lesson 1.4) | the unjoined end of a chain or string: loose end; an open chain: chain |
+  | atom | the knot ¬A ∨ ¬B ∨ c (lesson 1.5) | an end piece of a three-regular contradiction: Fano piece |
+  | knot | a relation constrained as a whole and free in every part (lesson 2.1) | a knotted rope: classical knot |
+  | smallest bond | the bond with the fewest distinctions (lesson 4.6) | the knot that excludes the fewest states: weakest bond |
+  | network | a network of loops (lesson 4.5) | a pattern of knots: knot pattern; the foundation's contact network, written in full |
+  | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: a weave under a law |
+  | dimension | how fast balls grow (lesson 4.6) | the dimension of a hole or of a complex: the literature's, marked as such |
+  | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell |
+  | point | (the literature's only) | a variable: distinction |
+  | line | (only in the owner's words and the literature's names, such as the number line and a Fano line) | a three-place knot: knot; an open chain: chain |
+  | face | (the literature's only: a face of a map) | a knot of a weave: knot; a cycle a law closes: declared cycle |
+  | flat | (only in the owner's "flat structure") | six knots at every distinction: six-regular; drawable without crossings: planar, the literature's |
+  | balanced | (the doubling line's balanced stages, not used in the guide) | six knots at every distinction: six-regular |
+  | two-sided | (none) | orientable |
+  | thread | (a thread of work, not used in the guide) | an endless chain of atoms: chain |

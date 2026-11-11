@@ -760,7 +760,7 @@ polynomial time, Rowell's 2009 conjecture fails: on links already for S₃, on
 knots for S₄, and for some groups of Fitting height two. For Heisenberg-type
 groups the note proves an exact dividing line.
 
-Evidence: [note](notes/knot-group-counting/), [S₄](proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/proof.md), [Heisenberg-type groups](proofs/COPRIME-CLASS2-20261026-001Z/COPRIME-CLASS2-20261026-001Z-P001_epic_closure/proof.md), [Intuitions, lesson 6.3](INTUITIONS.md#63-patterns-in-three-dimensions)
+Evidence: [note](notes/knot-group-counting/), [S₄](proofs/BOUNDED-H1-20261025-001A/BOUNDED-H1-20261025-001A-P001_s4_colourings_of_knots_are_sharp_p_hard/proof.md), [Heisenberg-type groups](proofs/COPRIME-CLASS2-20261026-001Z/COPRIME-CLASS2-20261026-001Z-P001_epic_closure/proof.md), [Intuitions, lesson 6.3](INTUITIONS.md#63-counting-on-classical-3-manifolds)
 
 ### Hardness as a three-way interaction
 
@@ -773,7 +773,7 @@ it is a statement about counting: the knot test cannot tell hard groups from
 easy ones, since every group law is constrained as a whole and free in every
 pair.
 
-Evidence: [Intuitions, lesson 6.3](INTUITIONS.md#63-patterns-in-three-dimensions)
+Evidence: [Intuitions, lesson 6.3](INTUITIONS.md#63-counting-on-classical-3-manifolds)
 
 ## 9. Open questions
 

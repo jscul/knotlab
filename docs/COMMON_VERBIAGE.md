@@ -3,6 +3,17 @@
 These are guarded working definitions. A proof artifact may strengthen them
 inside a frozen model, but may not weaken their required contact-first gates.
 
+The single reference for the program's words is the glossary of the Intuitions
+guide ([INTUITIONS.md](../INTUITIONS.md#glossary) in knotlab, written in the
+workspace as `publication/knotlab/INTUITIONS.md`), kept with
+`.codex/skills/common-verbiage/SKILL.md`. This page keeps the guarded
+foundational definitions, and a word defined in both has one meaning. Since
+2026-11-11 the program gives each word one meaning and each meaning one word,
+and it does not name its own objects with words from a space of two or three
+dimensions, since space is what it is trying to build: the glossary's table
+"Words for space" gives the literature's name for each object, and its table
+"One word, one meaning" the words earlier records used in two senses.
+
 | Term | Working definition |
 | --- | --- |
 | Substrate | The declared objects, states, native laws, observations, restrictions, transports, and recodings available to a model. |
@@ -263,7 +274,7 @@ inside a frozen model, but may not weaken their required contact-first gates.
 | Full abstraction | Both preservation and reflection of a declared operational equivalence between source and target representations. Universal encodability alone is insufficient. |
 | Finite observation | Information available in a declared finite window, restriction, precision, or transcript. It does not by itself determine a global object. |
 | Projective consistency | Compatibility of finite-window objects or laws under restriction, so each smaller object is the declared image of every larger compatible one. It is a prerequisite, not by itself a global-existence theorem. |
-| Admissible base | Declared primitives, native rules, semantics, admitted maps, and at least one nontrivial coherence witness relative to those semantics. In the protected modal-plurality interpretation, “all possible bases” means all coherent admissible bases, not arbitrary inconsistent combinations. |
+| Admissible base | Declared primitives, native rules, semantics, admitted maps, and at least one nontrivial coherence witness relative to those semantics. In the protected modal-plurality interpretation, “all possible bases” means all coherent admissible bases, not arbitrary inconsistent combinations. Outside this page and the foundation, write it in full: in the Intuitions guide a bare base is a knot pattern that allows at least one state, the owner's “base reality” (2026-11-11), and such a base, once its semantics and admitted maps are declared, is an admissible base. |
 | Contact-capable base | An admissible base with at least one complete-contact witness satisfying recurrence, shared identity, two-sided essentiality, irreducible jointness, loop-erasure contact loss, and persistence. Contact capability does not by itself form a world. |
 | World-generating base | An admissible base that forms persistent composed structure plus a declared branch-state type and native update, transition, or history-construction law with a nontrivial evolution witness, closure and composition in its claimed domain, and persistence under admitted maps. Formation order is not physical time. It requires evidence beyond one complete contact or a static representation. |
 | Mathematical-only base | An admissible base for which an obstruction to world generation has been established in the declared semantics. Without either a world-generation witness or such an obstruction, classify its capacity as unclassified. |

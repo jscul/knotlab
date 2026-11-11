@@ -5173,12 +5173,19 @@ So holes come in two kinds:
    - **Reading.** The obstruction found by CONTRA-PROOF is structural: native creation cannot read the contradiction across such a cut.
    - **Next.** Work paused at the owner's request (2026-11-08). Open: a proof for 3-connected glues; the six-point hanging sides.
 
+   **Words in the circle and sphere entries.** The circle entries read bond balls of laws placed on drawn layouts (periodic plane
+   graphs, arrangements of lines, random tessellations), so their circles, polygons, planes and directions are drawings of those
+   balls. In the sphere entries a law declares its knots and its co-lines, cycles of distinctions through which every co-knotted pair
+   runs once; knots and co-lines together are a drawn knot pattern that the law supplies itself, and its spheres, tubes, digons,
+   corners, discs and flat or round parts belong to the literature's drawing of it. Before 2026-11-11 these entries called the knots
+   lines and the distinctions points; the earlier text is in git history.
+
    **2026-11-07: circles from logic** (`LOGIC-CIRCLE-20261107-001`).
-   - **The question.** Do round spaces exist among logical spaces, perhaps only as large-scale trends, and does roundness differ in
-     kind from polygons?
+   - **The question.** Do round balls exist among the bond balls of laws on drawn layouts, perhaps only as large-scale trends, and
+     does roundness differ in kind from polygons?
      - **A circle** is a bond ball.
      - **Its π** is Gołąb's: half its perimeter measured with its own distance. It is 3.14159… when the circle is round, and between
-       3 and 4 for every plane, with 3 only for hexagons and 4 only for parallelograms.
+       3 and 4 for every norm on the plane, with 3 only for hexagons and 4 only for parallelograms.
    - **Periodic logic makes polygons with rational π (proved).**
      - **The polygon.** On a doubly periodic plane graph, bond distance is twice the dual's graph distance up to a constant. So the
        circle is the dual's velocity polygon, with rational vertices, and its π is rational.
@@ -5198,15 +5205,16 @@ So holes come in two kinds:
    - **Only isotropy rounds it (proved; measured).**
      - **Round.** A law of three-place knots on a Poisson–Voronoi tessellation has an exactly round circle. Its measured anisotropy
        is 1.05 at radius 60.
-     - **No plane.** A uniformly random planar law, with nothing drawn, is not a plane at all. Its bond distance grows like n^0.28,
+     - **No plane.** A law on a uniformly random planar map, with nothing drawn in advance, does not read as a plane at all. Its bond
+       distance grows like n^0.28,
        near the Brownian map's n^(1/4), dimension 4.
    - **Reading.**
      - **Harmonies.** A periodic circle closes after finitely many sides, with a ratio of whole numbers: a harmony. The hexagonal
-       planes, built from three directions, have π = 3: the circumference is exactly three diameters.
+       layouts, built from three directions, have π = 3: the circumference is exactly three diameters.
      - **A ratio that continues.** The round circle's π never stops. Logic reaches it only through infinitely many directions, or
        through chance with no preferred direction.
-     - **Lines are shapes.** Every circle here is assembled from lines: straight segments, and with coins, arcs that are graphs of
-       functions.
+     - **Lines are "shapes", in the owner's word.** Every circle here is assembled from drawn lines: straight segments, and with
+       coins, arcs that are graphs of functions.
    - **Correction.** The axis entry's "What is still chosen" now reads "What is still put in": no law chooses. The question is whether
      a dimension is derived or written in.
    - **Provenance.**
@@ -5218,46 +5226,48 @@ So holes come in two kinds:
      - **The alternatives.** The spectrum of rational π among periodic laws (1/3); the exact taxicab formula (1/3).
 
    **2026-11-07: uniform laws and the spheres they can close into** (`UNIFORM-SPHERES-20261107-001`).
-   - **The setting.** A law of lines and co-lines builds its own closed surface, with nothing drawn: points, lines (triples) and
-     co-lines (cycles), each pair of a line's points lying in exactly one co-line.
-     - **The count reads it.** The knot's count (`COUNT-SURFACES-20261107-001`) reads that surface's Euler characteristic.
-       - It forces a violated line only on a sphere whose co-lines all close under the signs.
+   - **The setting.** A law of knots and co-lines supplies its own closed pattern, which the literature draws as a closed surface,
+     with nothing drawn in advance: distinctions, knots (triples) and co-lines (cycles), each pair of a knot's distinctions lying in
+     exactly one co-line.
+     - **The count reads it.** The knot's count (`COUNT-SURFACES-20261107-001`) reads that pattern's Euler characteristic.
+       - It forces a violated knot only on a sphere whose co-lines all close under the signs.
        - Negative curvature forces an over-agreeing face instead, and finding it is PPADS-complete, as finding the sphere's violated
-         line is (`COUNT-ANTIVORTEX-20261107-001`).
+         knot is (`COUNT-ANTIVORTEX-20261107-001`).
    - **Uniform laws close into few spheres (proved).**
-     - **The formula.** With every point alike, of co-line sizes (d1, d2, d3), χ = n(1/d1 + 1/d2 + 1/d3 − 1).
-     - **The spheres.** A sphere arises only as an antiprism (2,2,d) or a snub polyhedron of 12, 24 or 60 points; each is realized by a
-       law on a group (dihedral, A4, S4, A5).
+     - **The formula.** With every distinction alike, of co-line sizes (d1, d2, d3), χ = n(1/d1 + 1/d2 + 1/d3 − 1).
+     - **The spheres.** A sphere arises only as an antiprism (2,2,d) or a snub polyhedron of 12, 24 or 60 distinctions; each is
+       realized by a law on a group (dihedral, A4, S4, A5).
      - **Otherwise.** The laws are flat, (3,3,3), (2,4,4), (2,3,6), or hyperbolic, such as the Klein quartic's law on PSL(2,7).
    - **Uniform signs never force the contradiction (proved).**
-     - **Why.** Positive curvature sits on digons, two lines sharing two points. Under uniform signs every digon stays open, so the count
-       never forces a line to fail on any uniform law.
+     - **Why.** Positive curvature sits on digons, two knots sharing two distinctions. Under uniform signs every digon stays open, so the
+       count never forces a knot to fail on any uniform law.
      - **With non-uniform signs.** Signs that close the digons make the knot fail only on those small spheres or on antiprisms, which
        are chains solved by binary search.
    - **Computed.**
      - **Uniform signs.** The knot is satisfiable on every tested uniform law, and on all circulant laws with n ≤ 48 except the Fano
-       plane. The Fano plane's contradiction is not the count's.
-     - **The knot sphere** has exactly two kinds of points.
-   - **Reading.** A law that treats every place alike can grow flat space without end, and negatively curved space, but not a large
-     sphere. The knot's deep contradiction marks where a law stops treating places alike: two kinds of points and a sign defect at each
-     of six digons.
+       plane. The Fano pattern's contradiction is not the count's.
+     - **The knot sphere** has exactly two kinds of distinctions.
+   - **Reading.** A law that treats every distinction alike can grow flat patterns without end, and negatively curved ones, in the
+     literature's words, but not a large sphere. The knot's deep contradiction marks where a law stops treating its distinctions alike:
+     two kinds of distinctions and a sign defect at each of six digons.
    - **Provenance.** Vertex-transitive and Cayley maps and the spherical list (antiprisms, snub polyhedra) are classical. The reading of a
      law as a self-built surface, and the bound on uniform contradictions, are new here.
-   - **Next (both taken).** Two kinds of points (2/3): which such laws close into large spheres, and can a local
+   - **Next (both taken).** Two kinds of distinctions (2/3): which such laws close into large spheres, and can a local
      growth rule place the six digons itself, so that a law grows its own sphere and with it the knot's contradiction?
      - **The alternative.** Large uniform contradictions beyond the Fano plane (1/3).
 
    **2026-11-07: the only uniform contradiction** (`UNIFORM-FANO-20261107-001`).
    - **Proved.**
-     - **Sign patterns.** With non-constant uniform signs the all-zero assignment satisfies every line, so only equal signs matter: a
+     - **Sign patterns.** With non-constant uniform signs the all-zero assignment satisfies every knot, so only equal signs matter: a
        plain 2-colouring.
-     - **The brace lemma.** If a law's symmetries are transitive on its points and on its lines, its incidence graph is a brace. Two
-       translates of a smallest tight shore share at most one point, and counting forces a shore too small to hold a line.
-     - **The conclusion.** By Seymour's dictionary and McCuaig's theorem, the Fano plane is the only uniform law whose knot contradicts
-       itself. 439 Cayley laws agree.
-   - **Reading.** Uniform worlds are coherent with one exception, a single handle. Every other contradiction of the knot, its hardness
-     included, needs a law that distinguishes places.
-   - **Next (taken at once, the owner's (i), as `SPHERE-GROWTH-20261107-001`).** How a law can distinguish places by itself. Rated
+     - **The brace lemma.** If a law's symmetries are transitive on its distinctions and on its knots, its incidence graph is a brace.
+       Two translates of a smallest tight shore share at most one distinction, and counting forces a shore too small to hold a knot.
+     - **The conclusion.** By Seymour's dictionary and McCuaig's theorem, the Fano pattern is the only uniform law whose knot
+       contradicts itself. 439 Cayley laws agree.
+   - **Reading.** Uniform patterns are coherent with one exception, a single handle in the literature's drawing. Every other
+     contradiction of the knot, its hardness included, needs a law that treats its distinctions differently.
+   - **Next (taken at once, the owner's (i), as `SPHERE-GROWTH-20261107-001`).** How a law can treat its distinctions differently by
+     itself. Rated
      Payoff 3/3 (Barrier), Concreteness 1/3 (Stated), so the first step is scoping.
 
    **2026-11-07: a law that lays out its own round sphere** (`SPHERE-GROWTH-20261107-001`).
@@ -5269,8 +5279,8 @@ So holes come in two kinds:
      - **Tubes are easy.** The tube's knot still contradicts itself, but resolution refutes it in width O(m) at every length. So such a
        law cannot force the hard contradiction.
    - **With one hidden bit per incidence, yes (proved).**
-     - **The seam law.** Mark each incidence as a seam or not. All four incidences of a digon are seams, and a co-line of three points
-       has no seam or one opposite pair, so seams run straight.
+     - **The seam law.** Mark each incidence as a seam or not. All four incidences of a digon are seams, and a co-line of three
+       distinctions has no seam or one opposite pair, so seams run straight.
      - **What it forces.** The seams cut the sphere into eight equal equilateral triangles forming an octahedron (Gauss–Bonnet on each
        flat face). So a two-kind sphere has a marking exactly when it is K_m, and K_m has one marking.
      - **The contradiction.** Every sphere of the law carries a contradiction that needs resolution width Θ(√n) and size 2^Θ(√n).
@@ -5278,7 +5288,7 @@ So holes come in two kinds:
      leaves only the size free. Random local growth closed 60 spheres in 711 tries, and the only round ones were octahedra.
    - **Reading.** The seams are straight lines the law draws for itself, a native ruler, and roundness is those rulers closing up into
      equal triangles. With one witness bit per incidence, quantified away, a uniform local law lays out its own round sphere (a closed
-     surface built from the law alone, nothing drawn).
+     pattern supplied by the law alone, nothing drawn in advance).
    - **Provenance.** Local views and locally checkable proofs (Göös–Suomela), decorated matching rules (Goodman-Strauss) and flat cone
      spheres (Thurston) are classical. The seam law's characterization of the knot spheres is new as far as found.
    - **Next (taken as `GROW-COIN-20261107-001`).** Grow K_m by a local process, ring by ring from a digon with the seams as signals.
@@ -5315,12 +5325,12 @@ So holes come in two kinds:
    - **The question.** Does the knot's hard contradiction need the round knot sphere, or only corners kept far apart?
    - **Proved.**
      - **Flat states everywhere.** On every two-kind sphere the frames have label holonomy −1 at each of the six corners and are flat
-       elsewhere. So a flat state with one violated line exists, as on the knot sphere.
+       elsewhere. So a flat state with one violated knot exists, as on the knot sphere.
      - **The Sperner reduction needs only a flat disc.** Sperner's lemma sits inside any corner-free lattice triangle whose boundary
        reaches the corners by disjoint cut paths. So the knot needs resolution width at least a constant times the radius of the
        largest such flat disc, and at most O(√n).
    - **Computed.** Lopsided spheres grown with local coins have flat discs of radius 0.14 to 0.35 √n, against 0.25 √n on the knot
-     sphere (8 spheres up to 252 points). On a thin tube the largest disc reaches around the band.
+     sphere (8 spheres up to 252 distinctions). On a thin tube the largest disc reaches around the band.
    - **Reading.** Roundness costs a witness, but hardness, as far as resolution width shows, does not. The hard part of the knot's
      contradiction lives in a flat region far from every corner, where Sperner's lemma sits.
    - **Next (paused).** The owner asked to wrap up open lines. The sphere line stops here. When it reopens, candidates are whether

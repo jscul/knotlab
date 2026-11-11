@@ -1690,7 +1690,18 @@ So network holes come in two kinds:
      canonical knot test, holds up.
    - **Reading.** A flat sheet cannot count unless every hard problem is easy; one handle suffices. The memories' own atoms are tori too, so
      the question is whether learning can wind one into its tightest pattern with the held points inside it.
-   - **Next.** A learned memory that computes parity (sub-goal B146) ([decision note](../research/PARITY-NEEDS-20261111-001/parity_needs.md)).
+   - **Next (taken by `LEARN-PARITY-20261111-001`, below).** A learned memory that computes parity (sub-goal B146)
+     ([decision note](../research/PARITY-NEEDS-20261111-001/parity_needs.md)).
+
+   **2026-11-11: the memory learns to count** (`LEARN-PARITY-20261111-001`).
+   - **The question.** Sub-goal B146: can the learner, feeling only its own tension and taught by the world holding the answers, wind a ring
+     into the pattern that counts, and keep it there?
+   - **Computed.** Every time: 20 runs of 20, on the ring alone and grown inside a larger memory, it learned the parity of three held
+     points from eight examples, kept it when shaken, turned it into its opposite and back.
+   - **Reading.** The memory is no longer limited to "all of these", "any of these" and gates: it counts. What it stores is still which
+     way the ring is wound; counting is what that winding does to points held inside it.
+   - **Next.** Whether one ring counts more points (backlog B149), and whether rings can be wired into larger functions (sub-goal B148)
+     ([decision note](../research/LEARN-PARITY-20261111-001/learn_parity.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

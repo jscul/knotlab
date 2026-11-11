@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**310 current results** and 5 superseded ones, from 291 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**311 current results** and 5 superseded ones, from 291 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 23 results
+- [Other results](#other-results): 24 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 291 epics with their closures
 
@@ -1049,6 +1049,9 @@ Results not yet placed in a line of work.
 - **2026-11-11 · Learning from examples reaches knot memories three levels deep and three atoms wide** (`DEEP-MEM-20261111-001-D001`).
   A learner that sees only its own dissonance under the world's clamps learned and held every one of 40 gate writes at composites holding a leaf three levels down or three atoms, with no false stop (computed). Depth cost nothing; a second atom about eighteen times the steps; a third nothing more.
   [proof P001](proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/proof.md), [epic closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md)
+- **2026-11-11 · An eight-point knot space of genus four computes the parity of three held points** (`UNATE-20261111-001-D001`).
+  Hold three points of an eight-point knot space of genus four at any values and every floor state forces a fourth to their parity (exact, three independent readings). Small knot spaces compute majority often; the learned memories' interfaces stay unate, so their limit is their shape, not knot logic.
+  [proof P001](proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/proof.md), [epic closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md)
 
 ## Notes
 
@@ -1359,5 +1362,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Deeper memories from examples (`DEEP-MEM-20261111-001`) | [closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/DEEP-MEM-20261111-001/) |
 | 2026-11-11 | Knots alone (`KNOTS-ALONE-20261111-001`) | [closure](proofs/KNOTS-ALONE-20261111-001Z/KNOTS-ALONE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/KNOTS-ALONE-20261111-001/) |
 | 2026-11-11 | Does a faithful reading supply the surface? (`NAE-SURFACE-20261111-001`) | — | [folder](research/NAE-SURFACE-20261111-001/) |
-| 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | — | [folder](research/UNATE-20261111-001/) |
+| 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |
 

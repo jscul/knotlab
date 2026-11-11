@@ -1,0 +1,208 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/unate_lib.py": "ff9e6d4df55ec71313c4c5ad71fc6e9e5280b3f5be131697233ca0887928f07a",
+    "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/census_lib.py": "5aa08fb796744679eb1e930fc6f38fbe126f296d7961f181e90f7dde60045f3c",
+    "proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/deep_lib.py": "003f52082393d49086abfe95ea965f74685eb8a9c931e5e656a067ece0a9396d",
+    "research/UNATE-20261111-001/preregistration.md": "271a3d9c642b28e3dbb5b0dfb4dd845af5ca789b0dcd3130c3648369b141b3be"
+   }
+  },
+  "1 census on the deeper spaces and at radius 2 (exact)": {
+   "pass": true,
+   "info": {
+    "by space": {
+     "T1 D2 D2 thin, radius 1": {
+      "maps": 564224,
+      "kinds": {
+       "no floor state": 2204,
+       "partial, unate": 240112,
+       "never decided": 321908
+      },
+      "first instances": {}
+     },
+     "T3 D2 D2 Fano, radius 1": {
+      "maps": 779264,
+      "kinds": {
+       "no floor state": 3044,
+       "partial, unate": 264756,
+       "never decided": 511464
+      },
+      "first instances": {}
+     }
+    },
+    "non-unate or other found": {}
+   }
+  },
+  "2 random small knot spaces, every class and interface (exact)": {
+   "pass": true,
+   "info": {
+    "kinds by n": {
+     "6": {
+      "partial, unate": 518119,
+      "never decided": 37539,
+      "total dictator": 16262,
+      "total majority": 7200
+     },
+     "8": {
+      "partial, unate": 7760227,
+      "never decided": 1106652,
+      "total dictator": 199996,
+      "total majority": 48509,
+      "total parity": 16
+     },
+     "10": {
+      "partial, unate": 69667575,
+      "never decided": 25482279,
+      "total majority": 107206,
+      "total dictator": 1295060
+     },
+     "12": {
+      "never decided": 418895617,
+      "partial, unate": 499291807,
+      "total dictator": 4189636,
+      "total majority": 144536,
+      "total parity": 4
+     }
+    },
+    "skipped (disconnected)": {
+     "8": 1
+    },
+    "spaces by (n, genus)": {
+     "6, 1": 4,
+     "6, 2": 60,
+     "6, 3": 136,
+     "8, 2": 11,
+     "8, 3": 82,
+     "8, 4": 106,
+     "10, 3": 16,
+     "10, 4": 97,
+     "10, 5": 87,
+     "12, 4": 16,
+     "12, 5": 95,
+     "12, 6": 89
+    },
+    "first instances": {
+     "total majority (n=6)": {
+      "n": 6,
+      "seed": 0,
+      "class index": 10,
+      "inputs": [
+       0,
+       1,
+       5
+      ],
+      "output": 2,
+      "map": "10110010"
+     },
+     "total majority (n=8)": {
+      "n": 8,
+      "seed": 0,
+      "class index": 17,
+      "inputs": [
+       1,
+       3,
+       5
+      ],
+      "output": 0,
+      "map": "00101011"
+     },
+     "total parity (n=8)": {
+      "n": 8,
+      "seed": 35,
+      "class index": 123,
+      "inputs": [
+       0,
+       3,
+       4
+      ],
+      "output": 5,
+      "map": "01101001"
+     },
+     "total majority (n=10)": {
+      "n": 10,
+      "seed": 0,
+      "class index": 4,
+      "inputs": [
+       0,
+       3,
+       4
+      ],
+      "output": 2,
+      "map": "00010111"
+     },
+     "total majority (n=12)": {
+      "n": 12,
+      "seed": 0,
+      "class index": 321,
+      "inputs": [
+       2,
+       5,
+       9
+      ],
+      "output": 1,
+      "map": "10110010"
+     },
+     "total parity (n=12)": {
+      "n": 12,
+      "seed": 54,
+      "class index": 786,
+      "inputs": [
+       3,
+       5,
+       6
+      ],
+      "output": 7,
+      "map": "10010110"
+     }
+    }
+   }
+  },
+  "3 every recorded instance re-read by SAT": {
+   "pass": true,
+   "info": {
+    "total majority (n=6)": [
+     true,
+     "10110010"
+    ],
+    "total majority (n=8)": [
+     true,
+     "00101011"
+    ],
+    "total parity (n=8)": [
+     true,
+     "01101001"
+    ],
+    "total majority (n=10)": [
+     true,
+     "00010111"
+    ],
+    "total majority (n=12)": [
+     true,
+     "10110010"
+    ],
+    "total parity (n=12)": [
+     true,
+     "10010110"
+    ]
+   }
+  },
+  "mark N: some map of held points is not unate": {
+   "pass": true,
+   "info": {
+    "census": false,
+    "random spaces": [
+     "total majority (n=10)",
+     "total majority (n=12)",
+     "total majority (n=6)",
+     "total majority (n=8)",
+     "total parity (n=12)",
+     "total parity (n=8)"
+    ]
+   }
+  },
+  "seconds": 340.9
+ }
+}

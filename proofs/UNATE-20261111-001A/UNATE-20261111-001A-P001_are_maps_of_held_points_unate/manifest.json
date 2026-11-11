@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "UNATE-20261111-001A-P001",
+  "canonical_id": "UNATE-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "UNATE-20261111-001A",
+  "proof": "UNATE-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Searching for a non-unate map of held points",
+  "status": "Proved",
+  "claim": "Exact: an 8-point knot space of genus 4 (random seed 35, class 123, a Kasteleyn law) computes the parity of three held points: with points 0, 3, 4 held, point 5 is decided and equals their sum mod 2, confirmed by brute force over all 256 states, by the dissonance engine and by SAT; parity also occurs at 12 points, majority in every size searched, and no non-unate map at the interfaces of the deeper memories.",
+  "dependencies": [
+    "THREE-IN-20261110-001A",
+    "IN-OUT-20261110-001A",
+    "GROW-HANDLE-20261110-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A recorded instance that a SAT re-read does not confirm."
+  ],
+  "lineage": {
+    "home_scope": "UNATE-20261111-001",
+    "epic_path": [
+      "UNATE-20261111-001"
+    ],
+    "parents": [
+      "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/census_lib.py",
+      "research/UNATE-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/THREE-IN-20261110-001A/THREE-IN-20261110-001A-P001_maps_of_three_held_points/census_lib.py": "5aa08fb796744679eb1e930fc6f38fbe126f296d7961f181e90f7dde60045f3c",
+    "research/UNATE-20261111-001/preregistration.md": "271a3d9c642b28e3dbb5b0dfb4dd845af5ca789b0dcd3130c3648369b141b3be"
+  },
+  "paths": {
+    "manifest": "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/manifest.json",
+    "identity": "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/identity.json",
+    "proof": "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/proof.md",
+    "result": "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/result.json",
+    "check": "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate/check.py",
+    "directory": "proofs/UNATE-20261111-001A/UNATE-20261111-001A-P001_are_maps_of_held_points_unate"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Census on three spaces; random small knot spaces n = 6 to 12, 200 seeds each.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit ca98cab51).",
+    "status": "exhaustive searches (check.py); instances re-read by SAT",
+    "novelty": "known-with-delta"
+  }
+}

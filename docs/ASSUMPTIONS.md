@@ -1684,4 +1684,7 @@ evidence: results and their status come from the records each entry links.
   without the world holding it, or a law with a preferred value that keeps the knot's other properties. Finding one would make the
   counts read here native; a proof that no complement-closed law fixes a value would confirm that the reference is always an input.
 - **History.**
+  - 2026-11-11 · Used by `HOLD-COUNT-20261111-001`, status unchanged: one reference point held at 0 gives no count of three held points
+    mod 3 or mod 4 on any of its 1,128 spaces; the maps of four held points there never use the reference as a count mod 3 would
+    ([what it takes to hold a count](../research/HOLD-COUNT-20261111-001/hold_count.md)).
   - 2026-11-11 · Added by `HOLD-COUNT-20261111-001`.

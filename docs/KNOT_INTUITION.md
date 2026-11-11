@@ -1237,7 +1237,7 @@ So holes come in two kinds:
    length.
    **Networks, 2026-10-19** ("What networks remember, and knots among
    loops"). Free contact keeps one class per loop. Contact with fixed points
-   binds loops into atoms, in any shape, at k + 1 witness values for k loops.
+   binds loops into atoms, in any pattern, at k + 1 witness values for k loops.
    **Later answers, 2026-10-21.**
    - **On bits** (`BASE-THREE-20261021-001`). Two knots sharing one
      distinction compose into one knot exactly when they can force it to
@@ -2984,25 +2984,25 @@ So holes come in two kinds:
    **2026-11-11: what it takes to hold a count** (`HOLD-COUNT-20261111-001`).
    - **The question.** The owner asked whether knapsack, whose choices are summed into one running total, could be a picture of
      what happens where logic emerges. A total is a magnitude, and the knot's own law has no preferred value. Which counts can a
-     world of knots hold?
-   - **Only counts that look the same from both sides (proved, refereed).** Flipping every point of a knot world gives another
-     allowed state, so c points on looks like n − c points on from the other side. Such a world reads a count of n held points
-     mod m only when m is even and n odd: never in threes, unless the world fixes a value from outside.
-   - **In binary, at the least size (exact).** The 8-point torus that counts three held points mod 2 also reads their majority
-     at another point: parity and carry, the two binary digits of the count, a full adder.
-   - **One fixed value is not enough here (exact in range).** With a fourth point held at 0, no space up to 20 points counts in
-     threes. A point would have to read whether three held points are not all equal, the knot's own relation, and none does
+     drawn knot pattern hold?
+   - **Only counts that look the same from both sides (proved, refereed).** Flipping every distinction of such a pattern gives
+     another allowed state, so c distinctions on looks like n − c on from the other side. Such a pattern reads a count of n held
+     distinctions mod m only when m is even and n odd: never in threes, unless the outside fixes a value.
+   - **In binary, at the least size (exact).** The 8-distinction pattern drawn on a torus that counts three held distinctions
+     mod 2 also reads their majority at another distinction: parity and carry, the two binary digits of the count, a full adder.
+   - **One fixed value is not enough here (exact in range).** With a fourth distinction held at 0, no drawn knot pattern up to 20
+     distinctions counts in threes. A distinction would have to read whether three held distinctions are not all equal, the knot's own relation, and none does
      ([decision note](../research/HOLD-COUNT-20261111-001/hold_count.md)).
 
-   **2026-11-11: does a knot world read its own relation?** (`OWN-RELATION-20261111-001`).
+   **2026-11-11: does a drawn knot pattern read its own relation?** (`OWN-RELATION-20261111-001`).
    - **The question.** To count in threes with one fixed value, a distinction would have to read whether three held
      distinctions are not all equal, against a fourth: the knot's own relation, read as a map. Nothing in the rules forbids it,
-     and knot systems built freely can do it. Do knot worlds, where every distinction lies in three knots?
-   - **None in range (exact, refereed).** On 453 random knot worlds of 16 to 20 distinctions, 180 million sets of four held
+     and knot systems built freely can do it. Do drawn knot patterns, where every distinction lies in three knots?
+   - **None in range (exact, refereed).** On 453 random drawn knot patterns of 16 to 20 distinctions, 180 million sets of four held
      distinctions, the knot's own relation and the parity-majority switch never appear; the readings that do are majorities
      fed by at most one parity.
-   - **Bigger is not better.** Past 16 distinctions held distinctions force less: four-point readings get rarer, so a larger
-     random search would not settle it. Whether any knot world reads its own relation is open
+   - **Bigger is not better.** Past 16 distinctions held distinctions force less: four-distinction readings get rarer, so a
+     larger random search would not settle it. Whether any drawn knot pattern reads its own relation is open
      ([decision note](../research/OWN-RELATION-20261111-001/own_relation.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
@@ -5889,11 +5889,11 @@ python3 -B -m unittest tests.test_knotlab
 ```
 
 `demo` covers the definition and facts. `worlds` covers forced worlds,
-building from atoms, distinctions, choice and infinite threads. `presence`
+building from atoms, distinctions, choice and endless chains. `presence`
 covers the earlier exploration of presence under the absence reading.
 `patterns` covers the original
 post: controllers, hidden information and the two readings of erasure.
 `choice` covers whether the base has real alternatives. `space` covers bonds,
-the shape of free sets and composition. `competition` covers both readings of
+the free complex and composition. `competition` covers both readings of
 rules that cannot all hold. Each exits nonzero if a result changes, so run all
 seven after changing a definition.

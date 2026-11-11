@@ -7,6 +7,10 @@ owner's request, after the epic met its stop rule. This is a ledger: one line
 per conclusion, with its novelty label and evidence. It makes no new claim.
 The write-up is `docs/FOUNDATION_READING.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: a shape is a free complex; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -29,10 +33,10 @@ owner's decisions are recorded in
 
 | Layer | Assessment | Evidence or consequence |
 | --- | --- | --- |
-| Current attempt: ticket D, whether contact structure is space-like | **Status:** Successful | Contact structure has intrinsic holes, paths and a measure of separation. Every shape is some system's shape, so logic selects no space. |
+| Current attempt: ticket D, whether contact structure is space-like | **Status:** Successful | Contact structure has intrinsic holes, paths and a measure of separation. Every free complex is some system's free complex, so logic selects no space. |
 | Local direction: the knot foundation epic | Practically exhausted under its stop rule | Each question ended in classical facts plus a reading. The results are kept in the write-up, `tools/knotlab` and two Lean kernels. |
 | Broader exploration: the contact-first program | Known alternatives | Space from a uniform local law, a crowded field (causal sets, quantum graphity, hypergraph rewriting). The proof-complexity line behind the ECCC TR26-007 counterexample. Neither has been assessed for novelty here. |
 | Long-term goal: logic constructs relative structure without presupposing space | Obstruction learned | Logic gives knots, holes and separation but selects no space. The missing bridge is a law. |
 | Next recommendation: the contact-first program | **Next step:** Full pivot. Leave foundation research. The next action is a bounded comparison of three options: space from a law, the proof-complexity line, and stopping. | The foundation is complete as a reading of known logic. No further foundation epic is justified without a new question. |
-| Interest: the bounded comparison | **1/3 — Exploratory poking** | Space from a law is heavily studied, and there is no evidence yet that bonds or shapes give an edge. The proof-complexity line has one verified external result but no assessed successor. |
+| Interest: the bounded comparison | **1/3 — Exploratory poking** | Space from a law is heavily studied, and there is no evidence yet that bonds or free complexes give an edge. The proof-complexity line has one verified external result but no assessed successor. |
 | Execution: the bounded comparison | Deferred | The program's direction is the owner's choice. The epic was closed at the owner's request. |

@@ -6,14 +6,18 @@ Ticket `HANDLE-LOCALITY-20261103-001Z`, 2026-11-03.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/HANDLE-LOCALITY-20261103-001/handle_locality.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: the knot's spaces are its contradictions; plane glue and plane sides are planar; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | Plane signed systems with as many lines as odd faces have the perfect matchings of lines to odd faces as solutions, and the access lemma for every pinning. Point splits of plane knot spaces are such systems. | new; classical heights and convexity | A, §§1–2 |
-| 2 | Interface lemma: an intact side of a splice acts on the cut as the point or line it replaced. The solutions restricted to a plane piece form a plane matching system. | new | A, §3 |
-| 3 | Access is local: every pinning by two points of a plane piece has access, wherever the removal is (31,596 checked). Outside pinnings fail only when both points and the removal lie in the other piece. | new | A, §§4–5 |
-| 4 | Screening lemma: when the cut carries one bit, creation at a plane gluing line is creation on a plane knot space minus a line. | new; 2-sum analogue | B, §1 |
+| 1 | Plane signed systems with as many lines as odd faces have the perfect matchings of lines to odd faces as solutions, and the access lemma for every pinning. Point splits of planar contradictions are such systems. | new; classical heights and convexity | A, §§1–2 |
+| 2 | Interface lemma: an intact side of a splice acts on the cut as the point or line it replaced. The solutions restricted to a planar piece form a plane matching system. | new | A, §3 |
+| 3 | Access is local: every pinning by two points of a planar piece has access, wherever the removal is (31,596 checked). Outside pinnings fail only when both points and the removal lie in the other piece. | new | A, §§4–5 |
+| 4 | Screening lemma: when the cut carries one bit, creation at a plane gluing line is creation on a planar contradiction minus a line. | new; 2-sum analogue | B, §1 |
 | 5 | No new knot when neither the gluing line nor the removal lies on a handle (896 cases), nor beside a handle attached at a line (224). | new; finite | B, §3 |
 | 6 | A handle attached at a point and opened by the removal creates at plane gluing lines at distance 1, 3 and 5. Two handles act independently. | new; finite | B, §§3–4 |
 | 7 | The pinned three-point premise fails on composite spaces: 1,092 of 2,496 new knots near opened handles are unpinned, and 2,965 four-point new knots appear inside handles. | new; finite | B, §5 |
@@ -31,7 +35,7 @@ Ticket `HANDLE-LOCALITY-20261103-001Z`, 2026-11-03.
 
 **Continue** (2/3): the halo as dimer forcing.
 - **The task.** Characterize, by forcing in the matching picture of the point split, the plane gluing lines an opened handle reaches.
-  Prove the criterion and measure the reach on large plane pieces.
+  Prove the criterion and measure the reach on large planar pieces.
 - **Alternatives.**
   - Explain the screened line-attached handle (1/3).
   - Finish the planar reduction lemma (1/3).

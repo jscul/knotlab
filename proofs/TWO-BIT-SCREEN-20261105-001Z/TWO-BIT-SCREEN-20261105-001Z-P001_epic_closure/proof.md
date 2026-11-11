@@ -6,6 +6,10 @@ Ticket `TWO-BIT-SCREEN-20261105-001Z`, 2026-11-05.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/TWO-BIT-SCREEN-20261105-001/two_bit.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: a Fano atom is a Fano piece; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -16,9 +20,9 @@ Ticket `TWO-BIT-SCREEN-20261105-001Z`, 2026-11-05.
 | 4 | The pendant-line statement is neither local nor a consequence of the knots alone, and the twin statement is false; elimination through the gluing line's points suffices. | new; computed | A, §4 |
 | 5 | A point on two or three new lines through a line's points can create (8 of 27 profiles); subcube points never did; knot-space sides tried have only subcube points. | new; computed | A, §5 |
 | 6 | Contraction theorem in Fano trees: chain creation implies creation; equality when the rest emits toward the path. | new; proved | B, §1 |
-| 7 | Block lemma: every Fano atom of a Fano tree is a block of mutual creation. | new; proved | B, §2 |
-| 8 | The touching rule: between atoms, a removal creates at a line exactly when that line touches its atom's cut toward the removal (all chains computed, distances one to three). Its creating half holds in every Fano tree at distances one and two. | new; creating half proved, rest computed | B, §3 |
-| 9 | Non-creation at non-touching lines holds in every chain and in four 25-point trees; distance three follows the rule on four-atom paths. | new; computed | B, §4 |
+| 7 | Block lemma: every Fano piece of a Fano tree is a block of mutual creation. | new; proved | B, §2 |
+| 8 | The touching rule: between Fano pieces, a removal creates at a line exactly when that line touches its Fano piece's cut toward the removal (all chains computed, distances one to three). Its creating half holds in every Fano tree at distances one and two. | new; creating half proved, rest computed | B, §3 |
+| 9 | Non-creation at non-touching lines holds in every chain and in four 25-point trees; distance three follows the rule on paths of four Fano pieces. | new; computed | B, §4 |
 
 ## Pending the owner
 

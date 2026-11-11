@@ -6,11 +6,15 @@ Ticket `PLANAR-THEOREM-20261102-001Z`, 2026-11-02.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/PLANAR-THEOREM-20261102-001/planar_theorem.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: the knot's spaces are its contradictions; a Fano atom is a Fano piece; plane glue and plane sides are planar; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | On a plane knot space minus a line, line–face matchings carry integer potentials, one per matching. They form an L-natural convex set, and their parities are the values relative to the hub. | new; classical heights and convexity | A, §1 |
+| 1 | On a planar contradiction minus a line, line–face matchings carry integer potentials, one per matching. They form an L-natural convex set, and their parities are the values relative to the hub. | new; classical heights and convexity | A, §1 |
 | 2 | The staircase at a gluing line: the non-odd difference takes neighbouring values on and off each state, and a hub-tied port puts its state in the middle of a chain. | new | A, §2 |
 | 3 | The access lemma is a theorem (rounded midpoints). Hence every pinned three-point knot through the hub is generated on a plane near side, for any far side. | new | A, §3 |
 | 4 | A crossing knot that one port separates is a 2-sum through that port, or is tie-equivalent to a one-sided circuit, on any splice (33,556 checked). | new; matroid 2-sum analogue | B |
@@ -32,7 +36,7 @@ Ticket `PLANAR-THEOREM-20261102-001Z`, 2026-11-02.
 
 **Continue** (2/3): handles seen from a gluing line.
 - **First.** Prove that access at a gluing line depends only on a planar neighbourhood of that line.
-- **Then.** Test whether creation localizes at gluing lines on handles, on spaces with one and two Fano atoms.
+- **Then.** Test whether creation localizes at gluing lines on handles, on spaces with one and two Fano pieces.
 - **Alternatives.** Finish the reduction lemma (1/3). Selection as a dimer model (2/3).
 
 The table is in the decision note.

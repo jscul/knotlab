@@ -7,6 +7,10 @@ its tickets ended. This is a ledger, one line per conclusion with its novelty
 label and evidence. It makes no new claim. The decision note is
 `research/KNOT-COMPETITION-20261019-001/competition.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: a shape is a free complex; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -31,4 +35,4 @@ readings are now mapped, and the decision remains the owner's.
 | Long-term goal: logic constructs relative structure without presupposing space | Obstruction learned | Growing separation needs a three-place law or a supplied triangulated layout. Neither strict logic nor competition generates the layout; the missing bridge is a law that creates one. |
 | Next recommendation: question 9 | **Next step:** Research directions. Run a bounded search for a law that creates its own layout, starting from the owner's naming recursion, in which each knot names its difference as a new distinction. | Targets the missing bridge directly. Credible alternatives are the proof-complexity line and a write-up. |
 | Interest: that search | **1/3 — Exploratory poking** | Every fixed-layout law tested inherits its near and far, so generative laws are the remaining route in the program's terms. Main uncertainty: naming recursions may grow like trees, with no low dimension, and hypergraph rewriting already covers much of this ground. |
-| Execution: that search | Deferred | The program's direction is the owner's choice, and this epic's authorization covered its three items. Reassess after about ten queries and one probe. Stop if the generated shapes are tree-like or add nothing over hypergraph rewriting. |
+| Execution: that search | Deferred | The program's direction is the owner's choice, and this epic's authorization covered its three items. Reassess after about ten queries and one probe. Stop if the generated free complexes are tree-like or add nothing over hypergraph rewriting. |

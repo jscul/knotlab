@@ -5,6 +5,10 @@ Status: Proved
 Ticket `THREEFOLD-SPINSUM-20261030-001Z`, 2026-10-30. This is a ledger: one line per conclusion, with its novelty label and evidence. It
 makes no new claim. The decision note is `research/THREEFOLD-SPINSUM-20261030-001/the_knots_amplitude_as_a_spin_sum.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: the knot's spaces are its contradictions; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion (standard vocabulary) | Novelty | Evidence |
@@ -17,6 +21,6 @@ makes no new claim. The decision note is `research/THREEFOLD-SPINSUM-20261030-00
 ## Recommendation
 
 **Continue**, as a fresh epic: where counting near-critical instances becomes hard (2/3).
-- **The setting.** The knot's spaces sit on Seymour's bound for minimally non-2-colourable hypergraphs.
+- **The setting.** The knot's contradictions sit on Seymour's bound for minimally non-2-colourable hypergraphs.
 - **The questions.** Is the count with one line removed polynomial-time on every such system? Does it become #P-hard off the bound?
 - **Status.** Deferred to the owner. The decision note has the full assessment.

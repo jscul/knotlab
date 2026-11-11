@@ -6,6 +6,10 @@ Ticket `RELAY-NET-20261104-001Z`, 2026-11-04.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/RELAY-NET-20261104-001/relay_net.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: a Fano atom is a Fano piece; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -30,7 +34,7 @@ Ticket `RELAY-NET-20261104-001Z`, 2026-11-04.
 ## Recommendation
 
 **Continue** (2/3): a native reading of genus.
-- **The question.** Whether the creation map over all removals splits into one halo per Fano atom, so that it counts and locates a space's
+- **The question.** Whether the creation map over all removals splits into one halo per Fano piece, so that it counts and locates a space's
   handles.
 - **Alternatives.**
   - The display rule (1/3).

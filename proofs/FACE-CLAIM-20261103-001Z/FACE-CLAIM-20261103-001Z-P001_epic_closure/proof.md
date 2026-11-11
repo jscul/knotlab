@@ -6,6 +6,10 @@ Ticket `FACE-CLAIM-20261103-001Z`, 2026-11-03.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/FACE-CLAIM-20261103-001/face_claim.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: plane glue and plane sides are planar; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -33,7 +37,7 @@ Ticket `FACE-CLAIM-20261103-001Z`, 2026-11-03.
 **Continue** (2/3): the frozen region by heights, and rigid strips.
 - **The lemma.** Prove that a port pattern freezes exactly the points whose height difference to the ports cannot vary.
 - **The junction.** Explain its extension as a rigid strip.
-- **The test.** Build plane pieces with long rigid strips, and see whether the halo follows them or they stay rigid.
+- **The test.** Build planar pieces with long rigid strips, and see whether the halo follows them or they stay rigid.
 - **Alternatives.**
   - The converse of the claim rule as a theorem (2/3).
   - The structure of the nine signatures (1/3).

@@ -7,11 +7,15 @@ Ticket `NATIVE-PATHS-20261101-001Z`, 2026-11-01.
 - **The decision note** is `research/NATIVE-PATHS-20261101-001/paths.md`.
 - **The correction records** are `research/NATIVE-PATHS-20261101-001R/records.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: the knot's spaces are its contradictions; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | Across every nontrivial 2-edge cut of a knot's space, one side is exactly equality and the other exactly disequality: complementary two-place parity, no hub. | new; elementary | A, item 2 |
+| 1 | Across every nontrivial 2-edge cut of a contradiction, one side is exactly equality and the other exactly disequality: complementary two-place parity, no hub. | new; elementary | A, item 2 |
 | 2 | Across every nontrivial 3-edge cut, the point side is exactly an antipodal pair and the line side its complement: a knot against a hub, up to signs. | new form; from the atom lemma and the point lemma | A, item 3 |
 | 3 | KNOT-COMPOSE's "compose only through hubs" is withdrawn, and its "exactly" holds only up to signs. Its "hub-free failure is parity" stands. | correction | A, R |
 | 4 | Every nontrivial 3-edge cut is a proper splice cut or the shift of a 2-edge cut, with the twist rule. | new; elementary | B, item 1 |

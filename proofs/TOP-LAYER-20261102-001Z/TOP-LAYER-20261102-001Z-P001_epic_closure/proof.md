@@ -6,6 +6,10 @@ Ticket `TOP-LAYER-20261102-001Z`, 2026-11-02.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/TOP-LAYER-20261102-001/top_layer.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: the knot's spaces are its contradictions; a Fano atom is a Fano piece; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -28,9 +32,9 @@ Ticket `TOP-LAYER-20261102-001Z`, 2026-11-02.
 ## Recommendation
 
 **Continue** (2/3): what selection leaves, and how pieces glue.
-- **The observation.** In the knot's spaces, removing a line leaves a hub (its three points tied) and kept knots. The trisums that
+- **The observation.** In the knot's contradictions, removing a line leaves a hub (its three points tied) and kept knots. The trisums that
   build these spaces glue along exactly such lines.
-- **First test.** On the census and on trisums of up to three Fano atoms, ask whether emergence survives the glue, and whether gluing
-  along leftover hubs builds the knot's spaces natively.
+- **First test.** On the census and on trisums of up to three Fano pieces, ask whether emergence survives the glue, and whether gluing
+  along leftover hubs builds the knot's contradictions natively.
 
 The table is in the decision note.

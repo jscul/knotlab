@@ -5,6 +5,10 @@ Status: Proved
 Ticket `THREEFOLD-GRAMMAR-20261030-001Z`, 2026-10-30. This is a ledger: one line per conclusion, with its novelty label and evidence. It
 makes no new claim. The decision note is `research/THREEFOLD-GRAMMAR-20261030-001/the_grammar_of_three_fold_spaces.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: three-fold spaces are three-regular contradictions; a Fano atom is a Fano piece; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion (standard vocabulary) | Novelty | Evidence |
@@ -19,9 +23,9 @@ makes no new claim. The decision note is `research/THREEFOLD-GRAMMAR-20261030-00
 
 ## Recommendation
 
-**Continue**, as a fresh epic: the surfaces of three-fold spaces (2/3).
+**Continue**, as a fresh epic: the surfaces of three-regular contradictions (2/3).
 - **The task.** Embed each space's incidence graph in a closed orientable surface built from its decomposition: spheres for planar glue,
-  tori for Fano atoms, connected sums at splices. Test whether the genus equals the number of Fano atoms.
-- **The first discriminator.** A scratch probe already answers it: the 13-point splice has genus exactly 2, the number of its atoms.
+  tori for Fano pieces, connected sums at splices. Test whether the genus equals the number of Fano pieces.
+- **The first discriminator.** A scratch probe already answers it: the 13-point splice has genus exactly 2, the number of its Fano pieces.
   This is not evidence. Next would be the twisted cube and the 35-point space with trisum glue.
 - **Status.** Deferred to the owner. The decision note has the full assessment.

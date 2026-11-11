@@ -7,6 +7,10 @@ both of its tickets ended. This is a ledger: one line per conclusion, with its
 novelty label and evidence. It makes no new claim. The decision note is
 `research/HOLE-CRITERION-COLOURING-20261019-001/holes_and_colouring.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: a shape is a free complex; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
@@ -26,5 +30,5 @@ novelty label and evidence. It makes no new claim. The decision note is
 | Broader exploration: second family for Theorem 9.1 | Searching; one class ruled out | Not assessed: relative or equivariant hole criteria, and other injective constraint families. |
 | Long-term goal: Res(⊕) lower bounds beyond bit PHP | Capability gained (modest) | Bounds now cover weak bit PHP and bit-colouring up to chromatic number about n²/(16384 ℓ³). Formulas that do not reduce to bit PHP remain open. |
 | Next recommendation: Theorems 1–3 of B-P001 | **Next step:** Continue (conversion). Prepare a two-page statement with the Lean file, which Braun or a Res(⊕) reader could check by running `check.py`. | It answers a question others have studied: Efremenko, Garlík and Itsykson left DAG-like size for weak bit PHP open. |
-| Interest: that conversion | **2/3 — Promising** | Machine-checked and apparently unstated. Main uncertainty: experts may see it as an immediate corollary. Not selected, at **1/3 — Exploratory poking**: search for a non-PHP family whose shape is hole-free up to linear size. |
+| Interest: that conversion | **2/3 — Promising** | Machine-checked and apparently unstated. Main uncertainty: experts may see it as an immediate corollary. Not selected, at **1/3 — Exploratory poking**: search for a non-PHP family whose free complex is hole-free up to linear size. |
 | Execution: that conversion | Deferred | Sharing with Braun is the owner's decision. Stop if the owner declines. |

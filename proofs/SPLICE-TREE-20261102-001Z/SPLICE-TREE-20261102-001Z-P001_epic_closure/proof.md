@@ -6,11 +6,15 @@ Ticket `SPLICE-TREE-20261102-001Z`, 2026-11-02.
 - **What this is.** A ledger: one line per conclusion, with its label and evidence. It makes no new claim.
 - **The decision note** is `research/SPLICE-TREE-20261102-001/splice_tree.md`.
 
+Words (2026-11-11). The statements use the literature's words for triple systems, gadgets and drawn substrates: a line is a
+knot, a point a distinction, a triangle a copy of the knot, and a contact where copies meet a shared distinction (Intuitions
+guide, Glossary). Reworded under the owner's language rule: the knot's spaces are its contradictions; the earlier text is in git history.
+
 ## Conclusions
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
-| 1 | In a knot space assembled along a tree of simple 3-edge cuts, removing a line holds the cuts that point toward it and opens those that point away. Beyond a held cut nothing depends on the removal. | a corollary of HUB-GLUE A–C; the orientation reading is new | A |
+| 1 | In a contradiction assembled along a tree of simple 3-edge cuts, removing a line holds the cuts that point toward it and opens those that point away. Beyond a held cut nothing depends on the removal. | a corollary of HUB-GLUE A–C; the orientation reading is new | A |
 | 2 | The knots crossing only held cuts are exactly the iterated 2-sums, through held hubs, of knots crossing no cut. So new emergence lives only across opened cuts. | new in this relational setting; the matroid analogue is standard | B |
 | 3 | Opened cuts interact: new knots are carried across opened cuts and created jointly by two or three of them. Touching hubs, a shared port on the removed line and the removed line's hub each fail to decide this on 96 chains. | new | C, items 1–2 |
 | 4 | Every joint knot has three or four points, and chains of K4^(3) pieces create nothing. | new; finite | C, item 3 |
@@ -29,6 +33,6 @@ Ticket `SPLICE-TREE-20261102-001Z`, 2026-11-02.
 - **The conjecture.** At an opened cut, new emergence needs both a knot on the hub (six patterns) and a non-planar removed side, so planar
   glue only composes.
 - **The scout behind it.** 0 of 560 removals with a planar side and 100 of 160 non-planar six-pattern removals in the census.
-- **First test.** Planar knot spaces beyond the census.
+- **First test.** Planar contradictions beyond the census.
 
 The table is in the decision note.

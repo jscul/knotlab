@@ -142,3 +142,38 @@ gains a history line, status unchanged.
 4. **A face that emerges.** As recorded.
 
 **Recommendation.** Research directions, #1, the fallback the coordinator named, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 17:39 UTC and copied here verbatim.
+
+**The count from growth: no.** Growing a world one not-all-equal knot at a time, kept only while the reading stays faithful, does not supply how knots meet. That count has to be put in, static or grown.
+
+- **Nothing named (free).** The law accepts pairs in three knots and pinched links in every run that grows past a tetrahedron (26 of 30).
+- **Two per pair named (open).** Pinched links still appear (17 of 30 runs).
+- **Both named (disc).** Links close at every degree from 3 to 14, never mostly at 6, and no flat closed surface forms.
+- **The law's one part (proved, refereed).** No pair's two knots may have their other corners knotted together; that configuration is never faithful. So a link can't close at degree 3 inside a larger world (89 of 89 refused), and a tetrahedron can never grow. It refuses the sharpest cone; it doesn't choose flatness.
+
+Separately, I checked whether the ruler is already in the literature. The tools behind it are known, but I found no statement of the ruler itself.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the count from growth | **Status:** Successful | The count is not supplied; the law's one local part found and proved |
+| Local direction — growth by faithfulness | Practically exhausted | Closed by the stop rule; nothing in the reading chooses the count |
+| Broader exploration — G1 on worlds of knots alone | Known alternatives | The ruler on tori and Klein bottles; the local list of what NAE forbids |
+| Long-term goal — G1 Space from a law (question 9) | Obstruction learned | How knots meet stays an input, static or grown |
+
+**Corrections:** one, Not a block. P1 and P5 failed only on runs that closed into a tetrahedron within their first four knots, and my decision rule would have misread that as the law supplying the count. My frozen code also skipped evaluating P5 and left phantom distinctions behind. A corrected re-run gives identical verdicts.
+**Goals:** a G1 checkpoint (obstruction learned), no goal change. **Assumptions:** A64 gains a history line, status unchanged.
+**Basket:** the ruler on tori and Klein bottles (2/3, 2/3), GROW-FACE#1 (2/3, 1/3), B16 (2/3, 1/3); none taken yet. Direction 1 is the first.
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The ruler on tori and Klein bottles | 2/3 — Substantial | 2/3 — Testable | Quasi-periodic heights; bound the tilt a short pattern sees by edge-width → a proved range, or the first counterexample | Selected · awaiting go-ahead |
+| 2 | The local list of what NAE forbids | 2/3 — Substantial | 2/3 — Testable | Is "no adjacent apices plus long loops" exactly the faithful reading on surfaces? → a characterization, or a miss | Alternative · deferred |
+| 3 | Write the knots-alone line up as a note | 1/3 — Modest | 3/3 — Ready | Five epics into one note → a note an expert can check | Alternative · deferred |
+| 4 | A face that emerges | 2/3 — Substantial | 1/3 — Stated | As recorded | Alternative · deferred |
+
+It's committed and published ([decision note](https://github.com/jscul/knotlab/blob/main/research/GROW-COUNT-20261111-001/grow_count.md)). I'm holding for a go-ahead.

@@ -5857,8 +5857,8 @@ So holes come in two kinds:
    - **Only its own kind (proved).** Nothing is frozen, a tied pair is always equal or always unequal, and every unnamed hollow triple
      is a not-all-equal knot with some distinctions read negated. Four knots arranged as a Pasch configuration (literature) are read
      as all eight of the zero-pair weave on six distinctions (literature: the octahedron).
-   - **The law reads pair counts (proved).** Its states depend only on how many knots lie on each pair, so overlaps with the same
-     counts are one base to it. This is one exact sense of the owner's "compressed" structure.
+   - **The law reads pair counts (proved).** Its states depend only on how many knots lie on each pair, so knot patterns with the
+     same counts allow the same states: different bases, one relation to it. This is one exact sense of the owner's "compressed" structure.
    - **Overlap is readable, uniform overlap is not (proved and computed).** A pair can lie in any number of knots in a base read
      faithfully, and grown bases reach nine; where every co-knotted pair lies in three knots, no base in range is read faithfully.
    - **Not local (computed, frozen).** The configurations that add a knot grow with size (1, 4, 11, 64 at three to six knots), some

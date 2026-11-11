@@ -43,8 +43,8 @@ exactly the edges?
 ## Answer
 
 Overlap makes new knots, and they are always the law's own kind: not-all-equal, sometimes with a distinction read negated. What the law
-reads of a base is decided by how many knots lie on each pair, not by which triples are knots, so different overlaps with the same
-counts are one base to it. Overlap is readable, with a pair in up to nine knots in a base read faithfully, but uniform overlap is not.
+reads of a base is decided by how many knots lie on each pair, not by which triples are knots, so different knot patterns with the
+same counts are one relation to it, though they are different bases. Overlap is readable, with a pair in up to nine knots in a base read faithfully, but uniform overlap is not.
 The configurations that make new knots do not form a short local list: their number grows with size (1, 4, 11, 64 at three to six
 knots), some small bases need seven knots, and a single knot swap in a two-fold weave can make the law bind a triple that only the
 whole base holds. In a base with overlap, some pairs a step or two apart lie in no bond at all.

@@ -40,7 +40,8 @@ later, built in simulations from these rules.
 Most of the mathematics in Chapters 1 to 4 is classical. What is ours there is
 the reading: which questions to ask, and what the known answers mean when asked
 this way. Lessons 5.2, 6.2 and 6.3 report results that are new as far as we
-found. Lesson 7.1 lists what is classical and what is ours.
+found, and lesson 4.7 reports statements that a bounded search did not find,
+built with known tools. Lesson 7.1 lists what is classical and what is ours.
 
 To try anything on this page, run commands from the repository root:
 
@@ -74,6 +75,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [4.4 Which knots remember a loop](#44-which-knots-remember-a-loop)
   - [4.5 What networks of loops remember](#45-what-networks-of-loops-remember)
   - [4.6 Dimensions from rules](#46-dimensions-from-rules)
+  - [4.7 Knots alone](#47-knots-alone)
 - [Chapter 5. Depth](#chapter-5-depth)
   - [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed)
   - [5.2 How deep a hole is](#52-how-deep-a-hole-is)
@@ -495,6 +497,23 @@ learn the shape of the underlying pattern somehow. But that is to be tested."
 That is open: whether a learning rule, shown what a system allows, can find
 rules, and rules within rules, that make it.
 
+**Studying a base from inside.** On 11 November 2026 the owner asked about
+"the infinite series of emergent logic idea": "I feel like the emergence
+there is essentially like a set of rules, and things that emerge from those
+sets of rules can study those patterns in their base reality. So for example,
+a set of rules may be the X and Y axis of a Cartesian base, and the rules show
+up as essentially functions or meeting pattern." The guide reads the idea in
+three parts. A base is knots with their rules, on a meeting pattern that may
+be infinite (lesson 2.1); the rules belong to the knot pattern, and the
+meeting pattern says only which knots share which distinctions. What emerges
+in a base is read as bonds (lesson 4.6) and as named patterns, rules within
+rules, and a named pattern can take part in further rules, so the series need
+not end. And a part of a base studies the base when witnesses inside it report
+on other parts (lesson 1.6). One caution comes first: a witness is part of the
+same allowed states, and a knot shows only across those states, never in one
+of them (lesson 2.3). Lesson 4.7 gathers what the record says of each part,
+once the lessons it needs are in place.
+
 **The free complex.** From lesson 3.3 on, the guide also studies one exact
 view of what a system's rules make: the sets of variables it leaves free,
 which lesson 3.3 calls the system's free complex and the literature draws as
@@ -656,6 +675,16 @@ and parity allows 4 and holds log₂(8/4) = 1 bit.
   ten gates that use both inputs needs a three-place clause, which is an atom
   up to which value of each variable counts as present. *Checked*
   (`knotlab worlds`).
+
+**A knot lives across states.** Every fact in this lesson is about the set of
+allowed states, never about one of them, as lesson 1.2 said of being free. In
+any one allowed state each distinction has one value and nothing is hidden:
+the atom's state 101 is three values and no more. The knot is the fact that
+110 never occurs while every pair takes all four combinations, and only the
+allowed states together show it. So a part of a system that reads a knot, a
+witness (lesson 1.6), reads it the same way: in each state it has one value,
+and what it reports is how that value goes with the others across the states
+the system allows.
 
 **Reading.** A distinction is the material and an atom is what holds material
 together. Digital hardware can build anything because its gates supply atoms.
@@ -834,7 +863,9 @@ PYTHONPATH=tools python3 -m knotlab space
 
 Knots can be read as requirements or as choices, can come from rules that
 compete, and can be joined into rings and networks. They also space
-distinctions apart, so that rules alone can set a distance and a dimension.
+distinctions apart, so that rules alone can set a distance and a dimension:
+first on a board that is given (lesson 4.6), then on knots alone, with only
+their meeting pattern given (lesson 4.7).
 The chapter first fixes the words for easy and hard questions, which these
 behaviours are measured by.
 
@@ -1120,7 +1151,9 @@ closes up in both steps (the literature's torus; proved,
 [GROW-STOP-20261110-001](research/GROW-STOP-20261110-001/grow_stop.md)), but its
 rings are declared. The register of assumptions records this default as A51,
 "Places and their neighbours are given before the rules"
-([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
+([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)). Lesson 4.7 takes the board
+away: on knots alone the knot law reads dimension two, with only the meeting
+pattern given.
 
 **The board as distinctions.** The owner's idea in full asks for more: make
 "these two names are one cell" a distinction of the same infinite CNF as the
@@ -1212,7 +1245,217 @@ allow, and in one dimension they can grow the axis with nothing drawn. When the
 board itself is made of distinctions, rules that declare no cycle cannot
 choose the commuting board: they always allow the tree. One rule that
 declares the commuting cycle can. In the owner's words of lesson 1.7, "shapes"
-have rules; here the commuting board's rule is one declared cycle.
+have rules; here the commuting board's rule is one declared cycle. Lesson
+4.7 asks what is left when there is no board at all.
+
+```bash
+PYTHONPATH=tools python3 -m knotlab space
+```
+
+### 4.7 Knots alone
+
+**The idea.** Lesson 4.6 ended on a board: cells, which of them are neighbours,
+and steps x and y between them. There a law fixes the commuting board only by
+declaring the commuting cycle, the clause that says xy and yx meet, so the
+cycle is part of what the law is given. This lesson takes the board away. A
+knot pattern of three-place knots is nothing but distinctions, knots and which
+knots share which distinctions, its meeting pattern (lesson 2.1): no cells, no
+names, no steps x and y, and no declared cycle. What the literature's drawing
+would call a closing cycle is here the knot itself, so nothing is named but the
+knot. Put one law on every knot, read the allowed states alone, and ask two
+things: do they give the meeting pattern back, and do they space its
+distinctions apart? The lesson ends by saying what is still put in.
+
+**Reading a pattern faithfully.** A law reads a knot pattern **faithfully**
+when its allowed states freeze no distinction (none takes one value in every
+allowed state), tie no pair (every pair is free), and leave no hollow triple
+(lesson 3.3) except the pattern's own knots. Then the knots can be read back
+from the allowed states: they are exactly the sets of three that are
+constrained while every pair is free. The register of assumptions records the
+choice to look only at sets of up to three distinctions here as A67
+([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
+
+**Steps apart.** Two distinctions are **d steps apart** when the shortest row
+of co-knotted pairs that leads from one to the other, each pair sharing a
+distinction with the next, has d pairs. This count belongs to the meeting
+pattern and comes with it. The question is whether the allowed states, which
+know nothing of rows of pairs, measure the same thing as bond distance (lesson
+4.6).
+
+**Four laws, four readings.** Lesson 2.3 counts the knots on three variables.
+Four of them treat their three distinctions alike, up to reading every value
+negated: the clause, parity, not-exactly-one and not-all-equal. Put one of them
+on every knot of a pattern:
+
+- **The clause gives the knots back and spaces nothing (proved).** It reads
+  every pattern faithfully, but its only bonds are its knots, so two
+  distinctions that share no knot have no bond distance at all.
+- **Parity folds the pattern (proved).** On a two-fold weave whose distinctions
+  split into three classes that every knot meets once each, it allows just four
+  states, which give each class one value, so distinctions in one class are
+  tied. Parity reads no weave faithfully.
+- **Not-exactly-one makes a hub (proved).** It ties every pair to the all-zero
+  state, a hub in the sense of lesson 2.1: every two distinctions are at bond
+  distance 2.
+- **Not-all-equal keeps the pattern and spaces it (computed, exact).** It reads
+  227 of the 229 six-regular two-fold weaves in range faithfully (those with no
+  three pairwise co-knotted distinctions outside a knot), and the two it misses
+  have an unfilled cycle of only four pairs. Bond distance is 2 one step apart
+  and 3 two steps apart.
+
+([KNOTS-ALONE-20261111-001](research/KNOTS-ALONE-20261111-001/knots_alone.md))
+
+**Long unfilled cycles (computed, exact).** Not-all-equal reads every
+six-regular two-fold weave in range whose unfilled cycles all have at least
+five pairs faithfully: 449 weaves, the orientable ones with 49 to 80
+distinctions and the others with 19 to 40. On the 349 orientable ones whose
+unfilled cycles have at least six pairs, two distinctions d steps apart are at
+bond distance d + 1 for every d up to 3. Two steps is proved: two co-knotted
+pairs that each form a knot with one hidden distinction, each pair held equal
+and the two pairs held opposite, force the hidden distinction both ways, so
+four distinctions two steps apart already form a bond
+([LONG-LOOP-20261111-001](research/LONG-LOOP-20261111-001/long_loop.md)).
+
+**The ruler (proved).** On the endless six-regular weave, the literature's
+triangular lattice, which it draws as the plane, not-all-equal reads the weave
+faithfully, and two distinctions d steps apart lie together in a bond of
+exactly d + 2 distinctions and in no smaller one. So their bond distance is d +
+1 at every d: the knots measure their own meeting pattern exactly. In the
+literature's drawing the bond is one side of a triangle of side d together with
+the opposite corner. Every bond is native: each of its distinctions can be
+flipped by changing finitely many others (lesson 4.6). Since bond distance is
+d + 1, the balls of lesson 4.6 grow like r², and the law reads dimension two
+from its allowed states alone (proved and refereed,
+[RULER-20261111-001](research/RULER-20261111-001/ruler.md)).
+
+- **Why it is exact (reading of the proof).** The allowed states are the ground
+  states of the literature's triangular Ising antiferromagnet, and each carries
+  what the literature calls a height: with every co-knotted pair given a
+  direction, it rises by at most one along each pair (Blöte and Hilhorst 1982).
+  A pattern of values is forbidden when it asks the height to rise faster than
+  that around a cycle of co-knotted pairs, and each distinction can supply at
+  most half a unit of the excess, so spanning d steps takes d + 2 distinctions.
+- **On finite weaves (proved for the orientable ones).** On a finite
+  six-regular weave the height also winds around each unfilled cycle. On the
+  orientable ones one number decides everything: the margin M, the least extra
+  cost of going once around an unfilled cycle. States exist exactly when M ≥ 0,
+  bond distance is d + 1 whenever d is below M/3, and the reading is faithful
+  when M > 3. The weaves that are not orientable come in two kinds: on one the
+  same theorem holds word for word, and the other stays computed
+  ([RULER-FLAT-20261111-001](research/RULER-FLAT-20261111-001/ruler_flat.md)).
+- **What is known.** The height and the way a partial pattern extends are
+  known. The sizes of the least forbidden patterns, and so the ruler itself,
+  were not found stated in a bounded search, though a specialist could derive
+  them quickly from the known criterion.
+
+**From a board to knots alone.** Compare the two lessons. On a board of names,
+the steps x and y are given, and a law fixes the commuting board only by
+declaring the cycle xyx⁻¹y⁻¹: whether x then y meets y then x is something the
+law is told. On knots alone there are no steps x and y to ask that of, and no
+cycle is declared. The knot is the only relation, and not-all-equal still
+measures an exact ruler and reads dimension two. The register records the
+reading that a declared cycle is put in, not built, as A63, now overturned in
+this setting, and the reading that counting how knots meet declares no cycle as
+A64, which that overturning rests on
+([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
+
+**What is still put in.** The meeting pattern is given: that every co-knotted
+pair lies in two knots, that the knots at each distinction form one cycle, and
+that six knots meet at every distinction. Two attempts to get it from the law
+have failed:
+
+- **A faithful reading does not supply it (computed, exact).** Swap two knots
+  of a faithfully read six-regular one-pair weave for two knots that join
+  distinctions many steps apart: 160 of 822 such patterns are still read
+  faithfully, though in them some pairs lie in one knot and some in three
+  ([NAE-SURFACE-20261111-001](research/NAE-SURFACE-20261111-001/nae_surface.md)).
+- **Growth does not supply it (computed).** Grow a pattern one knot at a time,
+  keeping each new knot only while not-all-equal still reads the pattern
+  faithfully. The law accepts pairs in three knots. Even with two knots on
+  every pair and one cycle of knots at each distinction imposed, the cycle at a
+  distinction closes after anywhere from 3 to 14 knots, not mostly six. It does
+  refuse one meeting pattern (proved): the third distinctions of a pair's two
+  knots never share a knot, since equal values on the pair would then force a
+  contradiction
+  ([GROW-COUNT-20261111-001](research/GROW-COUNT-20261111-001/grow_count.md)).
+
+So the law reads which knots there are and measures them exactly, but how they
+meet is still an input, static or grown, as the board was in lesson 4.6.
+
+**Knots that overlap freely.** Nothing in lesson 2.1 says that a pair lies in
+two knots. In a base where knots share distinctions in any pattern, what does
+not-all-equal force that no knot names?
+
+- **Only its own kind (proved).** Nothing is frozen, a tied pair is always
+  equal or always unequal, and every hollow triple that no knot names is a
+  not-all-equal knot, with some of its distinctions read negated. The
+  literature knows these relations as the co-clone IN2 of complement-closed
+  relations (Böhler, Reith, Schnoor and Vollmer 2005).
+- **The law reads pair counts (proved).** Its allowed states depend only on how
+  many knots lie on each pair of distinctions. So two different knot patterns
+  with the same count on every pair allow the same states: they are different
+  bases with one relation.
+- **An example.** Put not-all-equal on four triples of six distinctions: abc,
+  ayz, xbz and xyc. With x, y and z all 0, the last three knots force a, b and
+  c all to 1, which the first forbids, and all 1 is forbidden in the same way.
+  Every other combination of x, y and z occurs, so x, y and z form a
+  not-all-equal knot that no rule names. The other four triples, xyz, xbc, ayc
+  and abz, cover the same twelve pairs once each, and on the same six
+  distinctions they allow the same 18 states. The literature calls the first
+  four triples a Pasch configuration, and all eight together the octahedron.
+- **Overlap is readable, uniform overlap is not (proved and computed).** A pair
+  can lie in any number of knots in a base read faithfully, and grown bases
+  reach nine. Where every co-knotted pair lies in three knots, no base in range
+  is read faithfully.
+- **What the law adds is not local (computed).** The smallest arrangements that
+  force a knot no rule names number 1, 4, 11 and 64 at three to six knots, some
+  small bases need seven knots to force anything, and one knot swap in a
+  two-fold weave can bind three distinctions through half the base.
+
+([OVERLAP-READ-20261111-001](research/OVERLAP-READ-20261111-001/overlap_read.md))
+
+```bash
+PYTHONPATH=tools python3 -m knotlab check --cnf "a b c; ~a ~b ~c; a y z; ~a ~y ~z; x b z; ~x ~b ~z; x y c; ~x ~y ~c" --loops x y --contact z --witnesses a b c
+```
+
+The command forgets a, b and c and reports that x, y and z form a knot.
+
+**Studying a base from inside.** Lesson 1.7 asked whether what emerges in a
+base can study the base. The record so far:
+
+- **Rules within rules nest to any depth, in one family (proved).** A drawn
+  knot pattern with one distinction removed, a **piece**, can stand in for one
+  knot of a larger drawn knot pattern. A drawn knot pattern carrying pieces
+  gives a piece again when one of its distinctions is removed, and that piece
+  acts as its knot exactly where every piece inside it does. So pieces nest to
+  any finite depth
+  ([NEST-ATOMS-20261110-001](research/NEST-ATOMS-20261110-001/nest_atoms.md)).
+- **Towers from one three-place law keep only parity (proved),** as lesson 1.7
+  says.
+- **A part can read only the relation (reading, from the pair-count lemma).**
+  Whatever reads a base from inside, a witness (lesson 1.6), is one more
+  distinction of the same allowed states, and a knot shows only across those
+  states (lesson 2.3). Under not-all-equal, bases with the same pair counts
+  allow the same states, so nothing inside one can tell it from the other. What
+  a base can learn of itself is its relation, never which meeting pattern made
+  it.
+- **A supplied task can be learned in place (computed).** A learning rule that
+  sees only which knots its state violates changed the signs of the law on a
+  drawn knot pattern until the pattern computed the parity of three held
+  distinctions, and kept it through a disturbance, in 20 of 20 runs. The
+  learning rule, the law's form and the held inputs all come from the outside
+  ([LEARN-PARITY-20261111-001](research/LEARN-PARITY-20261111-001/learn_parity.md)).
+- **Open.** Whether a part of a base can find rules that make what it sees,
+  with nothing designed in advance (lesson 1.7).
+
+**Reading.** On knots alone, with nothing named but the knot, not-all-equal
+gives its meeting pattern back and measures it exactly: on the endless
+six-regular weave, a ruler at every distance and dimension two. It does not
+make the meeting pattern, which is given, as the board was. For the owner's
+Cartesian plane, one axis grows from the rules with nothing drawn (lesson 4.6),
+and a second dimension is measured by the knot law, but on overlaps put in by
+us. A meeting pattern that comes out of rules, and endless bases in which knots
+overlap freely, are the open steps.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1434,6 +1677,10 @@ remains open.
   - frustration (Toulouse 1977) and the MAX-2-SAT gadget (Garey, Johnson and
     Stockmeyer 1976);
   - Tseitin formulas and their parity contradictions (Tseitin 1968);
+  - the ground states of the triangular Ising antiferromagnet and their
+    height (Wannier 1950; Blöte and Hilhorst 1982), and complement-closed
+    relations as a co-clone (Böhler, Reith, Schnoor and Vollmer 2005), which
+    lesson 4.7 uses;
   - Borromean and Brunnian links in topology;
   - the background that lessons 4.1, 5.1 and 6.1 define: 2-CNF decided in
     linear time (Aspvall, Plass and Tarjan 1979) and 3-CNF NP-complete (Cook
@@ -1472,7 +1719,10 @@ remains open.
    Lesson 4.6 shows how far the program has got: rules read a drawn grid's
    dimension and grow an endless chain with nothing drawn, but no tested law
    yet chooses its own board of dimension two, and when the board is made of
-   distinctions no law that declares no cycle can.
+   distinctions no law that declares no cycle can. Lesson 4.7 takes the board
+   away: on knots alone, with nothing named but the knot, the not-all-equal
+   law reads the endless six-regular weave's dimension two exactly, but the
+   meeting pattern is still put in.
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
    time are the data, and does the static test survive that change?
 3. **Limits.** No set of finite clauses binds infinitely many loops into one
@@ -1500,6 +1750,13 @@ that earlier records used in two senses.
   differ in exactly one variable. The guide draws the flip graph of three
   variables as the cube of states, and the cube is only that drawing
   (lesson 1.1).
+- **Rule.** A constraint: it rules out some joint states, as a clause does
+  (lesson 1.2). A **system** is a set of rules, read only through the states it
+  allows. A **law** is a rule given once and put everywhere in a pattern: on
+  every knot of a knot pattern, as the not-all-equal law of lesson 4.7, or at
+  every cell of a board, as a uniform law of lesson 4.6. A law is part of what
+  is put in. What the allowed states force beyond it is read as bonds, and the
+  guide never calls that a law.
 - **Relation.** The set of joint states a system of rules allows. Two systems
   that allow the same states are the same relation (lesson 1.2).
 - **Free.** A set of variables is free when every combination of their values
@@ -1533,7 +1790,12 @@ that earlier records used in two senses.
   **projection**, or **shadow**, on the others (lesson 1.6).
 - **Witness.** An auxiliary variable that reports on something, such as
   whether two loops are bound. Witnesses are quantified away before a verdict
-  (lesson 1.6).
+  (lesson 1.6). The intuition: a witness is how a system reads itself from
+  inside. It is one more distinction of the same system, so what it reports
+  holds across the allowed states, and in any one state it has one value
+  (lesson 2.3). Whatever supplies an input that the system does not make, such
+  as the held inputs of the learning line, is **the outside**, and whoever
+  studies a system without being part of it is an **observer** (lesson 5.2).
 - **Shape.** The owner's word, kept in his own words only: any structure that
   rules make, together with those rules (lesson 1.7). The intuition, in his
   words: emergent structures "are rules, and rules within rules". For the
@@ -1570,7 +1832,10 @@ that earlier records used in two senses.
   and a coherence witness
   ([docs/COMMON_VERBIAGE.md](docs/COMMON_VERBIAGE.md)). A base whose
   semantics and admitted maps are declared is an admissible base, and the
-  program reads every coherent admissible base as co-real (lesson 7.1).
+  program reads every coherent admissible base as co-real (lesson 7.1). What a
+  base can read of itself is its relation, and different bases can allow the
+  same one: under the not-all-equal law, knot patterns with the same number of
+  knots on every pair allow the same states (lesson 4.7).
 - **Co-knotted pair.** Two distinctions in a common three-place knot of a
   meeting pattern (lesson 2.1).
 - **Two-fold weave.** A meeting pattern of three-place knots in which every
@@ -1642,6 +1907,17 @@ that earlier records used in two senses.
   fast balls grow gives a dimension (lesson 4.6). The intuition: two
   distinctions are as near as the least knot that ties them, so the ruler
   comes from the rules and is never drawn.
+- **Steps apart.** Two distinctions are d steps apart when the shortest row of
+  co-knotted pairs leading from one to the other, each pair sharing a
+  distinction with the next, has d pairs (lesson 4.7): the literature's graph
+  distance. It is a count on the meeting pattern, given with it, and the ruler
+  of lesson 4.7 is the theorem that bond distance measures it. On a board, a
+  step is a move from a cell to a neighbour (lesson 4.6).
+- **Faithful.** A law reads a knot pattern faithfully when its allowed states
+  freeze no distinction, tie no pair, and leave no hollow triple except the
+  pattern's own knots, so that the knots can be read back from the allowed
+  states (lesson 4.7). A distinction is **frozen** when it takes one value in
+  every allowed state.
 - **Chain.** Rules in a row, each sharing one distinction with the next: a
   chain of implications (lesson 1.4), of two-place ties, or of knots. Closed
   up, a chain of implications is a loop of the picture of lesson 1.4. Along an
@@ -1678,6 +1954,13 @@ that earlier records used in two senses.
   exactly one knot: the literature's Fano plane, its knots the plane's lines.
   A **Fano piece** is the Fano pattern with one distinction or one knot
   removed, which earlier records called a Fano atom.
+- **Piece.** A drawn knot pattern with one distinction removed, grown
+  into a larger drawn knot pattern in place of one of its knots (lesson 4.7);
+  earlier records of the learning line called it an atom, a torus or Fano
+  atom. Depending on the signs of the law, a piece **acts** as the knot it
+  replaced, allowing on that knot's three distinctions just what the knot
+  allows, or is **transparent**, allowing every combination there. A Fano
+  piece is the same idea in a three-regular contradiction.
 - **Words for space.** The guide names its objects by distinctions, knots and
   counts. It keeps spatial words for classical objects it cites, for pictures
   it says are drawn, and for space, distance and dimension themselves, each
@@ -1707,6 +1990,7 @@ that earlier records used in two senses.
   | six-regular one-pair weave | a one-pair weave with every distinction in six knots | flat torus, triangular-lattice torus |
   | endless six-regular weave | infinite, connected, six-regular, every cycle filled | triangular lattice, drawn as the plane |
   | chain; endless chain of atoms | rules in a row, each sharing one distinction with the next; along atoms, bond distance grows by one per step | path; number line |
+  | steps apart | the fewest co-knotted pairs in a row from one distinction to another | graph distance |
   | ball | the distinctions within a bond distance of one of them | ball, disc |
   | dimension | how fast balls grow: like r^D gives D | dimension |
   | flip graph | states linked when they differ in one variable | cube (of states), hypercube |
@@ -1726,14 +2010,15 @@ that earlier records used in two senses.
 
   | Word | Its one meaning in the guide | Other senses in earlier records, and the word for each now |
   | --- | --- | --- |
-  | base | a knot pattern that allows a state (lesson 2.1) | the foundation's general notion: admissible base, written in full |
+  | base | a knot pattern that allows a state (lesson 2.1) | the foundation's general notion: admissible base, written in full; knot patterns that allow the same states: one relation, never one base |
   | world | an allowed state, read with 1 as "exists" (lesson 4.2) | a pattern of knots ("flat world", "disc world", "knot world"): base, weave, patch or drawn knot pattern; the foundation's world branch, written in full |
   | shape | (the owner's word, in his own words only: any structure that rules make, lesson 1.7) | for the program's own objects: meeting pattern; the sets a system leaves free: free complex; the five kinds of three-place knot: classes |
   | loop | a logical structure that leaves a distinction open (lesson 1.4) | a cycle of a weave that no patch closes off: unfilled cycle; loop pairs: cycle pairs |
   | contact | the variable through which a knot binds loops (lesson 1.4) | a distinction several knots share: shared distinction |
   | open | of a distinction, free on its own (lesson 1.4) | the unjoined end of a chain or string: loose end; an open chain: chain |
-  | atom | the knot ¬A ∨ ¬B ∨ c (lesson 1.5) | an end piece of a three-regular contradiction: Fano piece |
+  | atom | the knot ¬A ∨ ¬B ∨ c (lesson 1.5) | an end piece of a three-regular contradiction: Fano piece; a closed knot space less a point, grown in place of a line (the learning line's torus or Fano atom): piece |
   | knot | a relation constrained as a whole and free in every part (lesson 2.1) | a knotted rope: classical knot |
+  | law | a rule put everywhere in a pattern (lesson 4.6) | a regularity the allowed states force: bond |
   | smallest bond | the bond with the fewest distinctions (lesson 4.6) | the knot that excludes the fewest states: weakest bond |
   | network | a network of loops (lesson 4.5) | a pattern of knots: knot pattern; the foundation's contact network, written in full |
   | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: drawn knot pattern |
@@ -1750,6 +2035,7 @@ that earlier records used in two senses.
   words, and a record whose checksum another record pins (a manifest, a result
   or a discovery) is never edited, so it keeps them. Read such a record with the
   table above: a line of a triple system is a knot, a point a distinction, an
-  atom of a three-fold space a Fano piece, a three-fold or knot space a
+  atom of a three-fold space a Fano piece, an atom of a knot space (a torus or
+  Fano atom) a piece, a three-fold or knot space a
   three-regular contradiction or a drawn knot pattern, a contact where several
   knots meet a shared distinction, and a world of knots a base, weave or patch.

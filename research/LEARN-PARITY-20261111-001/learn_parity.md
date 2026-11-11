@@ -75,3 +75,36 @@ Direction 2 comes first as the cheaper discriminator: whether one torus counts m
 **Assumptions:** none new or changed.
 **Basket:** B149 (parity of more held points), B130 (a probe that is a theorem); taken: B149 as the selected next step; B148 recorded as a
 sub-goal.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-11:
+
+**B146 is closed: a learned memory computes parity.** The unchanged learner (credit from pinned dissonance, the sturdier probe, no outside map) learned the parity of three held points from its eight examples. It held through a disturbance, switched to its negation and back, and did so every time: 10 of 10 runs on the bare 8-point torus (2, 0, 4), and 10 of 10 inside a memory (the knot sphere K_2 with that torus grown as an atom). That's 60 of 60 writes with no inexact stop, at a median of 13,400 and 18,000 steps.
+
+- **Realizable (exact):** each interface computes parity in exactly one of its four classes, the torus's most constrained.
+- **What's crossed and what isn't:** self-duality isn't crossed (parity of three inputs is self-dual). Theorem M isn't crossed either: it bounds readings of stored classes, and parity here is a map of held values; as a function of the stored class it's a gate, present in one class. What's crossed is the observation that every learned map was unate. This is the first learned non-unate map.
+- **Frozen as asked:** learner, probe, budget and marks were set before any run and not changed. Every stop was scored by SAT, and the run reproduces.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a learned memory that computes parity (B146) | **Status:** Successful | 20 of 20 runs learned and held parity; 60 of 60 writes |
+| Local direction: learning non-unate maps | Continue | parity learned; larger functions need composition |
+| Broader exploration: learning program | Known alternatives | composing learned gates, parity of more held points, the probe as a theorem |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | the first learned non-unate map, inside a memory |
+
+**Next step:** Research directions, selected #2, holding until a go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Composing learned parity into larger functions (sub-goal B148) | 3/3 Major | 1/3 Exploratory | two parity tori in one memory, the output of one held as an input of the other, learning five-input parity → a learned composite map, or what stops the wiring | Recorded as a sub-goal |
+| 2 | Parity of more held points (B149) | 2/3 Substantial | 2/3 Testable | exact search on lattice tori up to 24 points for parity of five held points (an even number is impossible by self-duality), then learn the smallest → a torus that counts more, or a bound | Selected, awaiting go-ahead |
+| 3 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 4 | How learning cost grows with atoms (B143) | 1/3 Incremental | 3/3 Ready | as recorded | Deferred |
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (capability gained, with G16); sub-goal B146 taken; sub-goal B148 and B149 added.
+**Assumptions:** none new or changed.
+**Basket:** B149 (parity of more held points), B130; taken: B149 as the selected next step; B148 recorded as a sub-goal.
+
+The run took 141 s inside its 90-minute cap and is registered in docs/LONG_RUNNING.md and folded in. Holding now.

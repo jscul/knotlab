@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**312 current results** and 5 superseded ones, from 293 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**313 current results** and 5 superseded ones, from 293 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -29,7 +29,7 @@ How to read an entry:
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 17 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
-- [Other results](#other-results): 25 results
+- [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
 - [Epics](#epics): all 293 epics with their closures
 
@@ -1049,6 +1049,9 @@ Results not yet placed in a line of work.
 - **2026-11-11 · Learning from examples reaches knot memories three levels deep and three atoms wide** (`DEEP-MEM-20261111-001-D001`).
   A learner that sees only its own dissonance under the world's clamps learned and held every one of 40 gate writes at composites holding a leaf three levels down or three atoms, with no false stop (computed). Depth cost nothing; a second atom about eighteen times the steps; a third nothing more.
   [proof P001](proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples/proof.md), [epic closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md)
+- **2026-11-11 · A learned knot memory computes the parity of three held points** (`LEARN-PARITY-20261111-001-D001`).
+  A learner that sees only its own dissonance learned the parity of three held points from eight examples, on a torus alone and grown inside a memory, and held it after disturbance in 20 of 20 runs (computed). It is the first learned map that is not unate.
+  [proof P001](proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/proof.md), [epic closure](proofs/LEARN-PARITY-20261111-001Z/LEARN-PARITY-20261111-001Z-P001_epic_closure/proof.md)
 - **2026-11-11 · One handle is enough: an eight-point torus counts three held points** (`PARITY-NEEDS-20261111-001-D001`).
   An eight-point lattice torus, in its most constrained class, forces a fourth point to the parity of any three held points (exact); sixteen of 281 lattice tori do. A planar disk gadget would make planar NAE-3SAT NP-hard, so one handle is the least, unless P equals NP.
   [proof P001](proofs/PARITY-NEEDS-20261111-001A/PARITY-NEEDS-20261111-001A-P001_the_parity_gadget_refereed/proof.md), [epic closure](proofs/PARITY-NEEDS-20261111-001Z/PARITY-NEEDS-20261111-001Z-P001_epic_closure/proof.md)
@@ -1364,7 +1367,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-10 | The decoder route for the 2n-pigeon left-pigeon principle (`WIDE-LEFT-20261110-001`) | [closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md) | [folder](research/WIDE-LEFT-20261110-001/) |
 | 2026-11-11 | Deeper memories from examples (`DEEP-MEM-20261111-001`) | [closure](proofs/DEEP-MEM-20261111-001Z/DEEP-MEM-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/DEEP-MEM-20261111-001/) |
 | 2026-11-11 | Knots alone (`KNOTS-ALONE-20261111-001`) | [closure](proofs/KNOTS-ALONE-20261111-001Z/KNOTS-ALONE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/KNOTS-ALONE-20261111-001/) |
-| 2026-11-11 | A learned memory that computes parity (`LEARN-PARITY-20261111-001`) | — | [folder](research/LEARN-PARITY-20261111-001/) |
+| 2026-11-11 | A learned memory that computes parity (`LEARN-PARITY-20261111-001`) | [closure](proofs/LEARN-PARITY-20261111-001Z/LEARN-PARITY-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/LEARN-PARITY-20261111-001/) |
 | 2026-11-11 | Does a faithful reading supply the surface? (`NAE-SURFACE-20261111-001`) | [closure](proofs/NAE-SURFACE-20261111-001Z/NAE-SURFACE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/NAE-SURFACE-20261111-001/) |
 | 2026-11-11 | What a knot space needs to compute parity (`PARITY-NEEDS-20261111-001`) | [closure](proofs/PARITY-NEEDS-20261111-001Z/PARITY-NEEDS-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-NEEDS-20261111-001/) |
 | 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |

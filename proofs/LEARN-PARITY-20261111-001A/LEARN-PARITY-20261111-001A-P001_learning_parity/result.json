@@ -1,0 +1,712 @@
+{
+ "status": "passed",
+ "checks": {
+  "0 dependencies bound by hash": {
+   "pass": true,
+   "info": {
+    "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/parity_lib.py": "8f12ca9ea6037155066335c4b9c1a117f33b5e86b51e67febd3aab177b1b8fc2",
+    "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/io3_lib.py": "0a30f53ed6d39129c9234011aa039217fad8bea2ddfe5e078b8d68c8a45181c3",
+    "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py": "6cca6f5bbc621e71be09f167683dbf1ab994b5af0b3489666a4fcb163fcaa16b",
+    "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/probe_lib.py": "0a43265ead7402efc0c64c3935a823f47fe76317846984f2ce08141508764a65",
+    "research/LEARN-PARITY-20261111-001/preregistration.md": "1aacf2f702bd20ffa52e9fe9e5649048cd4b7958879a146ca3f9698c32a142b0"
+   }
+  },
+  "1 parity is realizable at each interface (exact)": {
+   "pass": true,
+   "info": {
+    "T1": {
+     "maps by class": [
+      "0x1010x1",
+      "u00uu11u",
+      "xx0101xx",
+      "01101001"
+     ],
+     "parity realizable": true
+    },
+    "T2": {
+     "maps by class": [
+      "uu1010uu",
+      "01101001",
+      "x11xx00x",
+      "011xx001"
+     ],
+     "parity realizable": true
+    }
+   }
+  },
+  "2 learning parity from examples (computed, frozen)": {
+   "pass": true,
+   "info": {
+    "verdicts": {
+     "T1": {
+      "first target outcomes": {
+       "learned, held": 10
+      },
+      "all targets outcomes": {
+       "learned, held": 30
+      },
+      "learned and held at the first target": 10,
+      "median steps of learned first targets": 13400,
+      "inexact stops": 0
+     },
+     "T2": {
+      "first target outcomes": {
+       "learned, held": 10
+      },
+      "all targets outcomes": {
+       "learned, held": 30
+      },
+      "learned and held at the first target": 10,
+      "median steps of learned first targets": 18000,
+      "inexact stops": 0
+     }
+    },
+    "P1: T1 learned and held in at least 8 of 10": true,
+    "P2: T2 learned and held in at least 8 of 10": true
+   }
+  },
+  "rows": {
+   "T1 run 0": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 13400,
+     "probes": 22,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 11200,
+     "probes": 11,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 70000,
+     "probes": 124,
+     "radius": 3,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 1": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 18600,
+     "probes": 36,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 13400,
+     "probes": 26,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 2000,
+     "probes": 5,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 2": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 11200,
+     "probes": 20,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 8000,
+     "probes": 22,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 43200,
+     "probes": 70,
+     "radius": 1,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 3": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 8200,
+     "probes": 13,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 4000,
+     "probes": 7,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 200,
+     "probes": 2,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 4": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 73200,
+     "probes": 122,
+     "radius": 3,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 200,
+     "probes": 2,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 18200,
+     "probes": 36,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 5": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 19400,
+     "probes": 34,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 6600,
+     "probes": 11,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 1000,
+     "probes": 3,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 6": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 13400,
+     "probes": 32,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 8400,
+     "probes": 16,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 4000,
+     "probes": 8,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 7": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 4600,
+     "probes": 5,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 5200,
+     "probes": 12,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 8800,
+     "probes": 21,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 8": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 36000,
+     "probes": 59,
+     "radius": 1,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 200,
+     "probes": 2,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 11000,
+     "probes": 25,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T1 run 9": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 400,
+     "probes": 2,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 14600,
+     "probes": 29,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 12600,
+     "probes": 20,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 0": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 4600,
+     "probes": 8,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 17000,
+     "probes": 26,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 1200,
+     "probes": 6,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 1": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 9600,
+     "probes": 9,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 13800,
+     "probes": 27,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 10200,
+     "probes": 21,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 2": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 75600,
+     "probes": 66,
+     "radius": 1,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 7800,
+     "probes": 13,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 7600,
+     "probes": 19,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 3": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 2400,
+     "probes": 7,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 9000,
+     "probes": 10,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 13600,
+     "probes": 26,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 4": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 23200,
+     "probes": 27,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 19600,
+     "probes": 27,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 8600,
+     "probes": 10,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 5": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 18000,
+     "probes": 22,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 9800,
+     "probes": 13,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 32800,
+     "probes": 41,
+     "radius": 1,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 6": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 12200,
+     "probes": 11,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 14200,
+     "probes": 19,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 12600,
+     "probes": 18,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 7": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 22800,
+     "probes": 25,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 1600,
+     "probes": 4,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 12400,
+     "probes": 22,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 8": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 36000,
+     "probes": 46,
+     "radius": 1,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 8800,
+     "probes": 14,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 27400,
+     "probes": 38,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "T2 run 9": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 1800,
+     "probes": 7,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 17400,
+     "probes": 20,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 35600,
+     "probes": 39,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ]
+  },
+  "seconds": 141.4
+ }
+}

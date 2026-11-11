@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LEARN-PARITY-20261111-001A-P001",
+  "canonical_id": "LEARN-PARITY-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "LEARN-PARITY-20261111-001A",
+  "proof": "LEARN-PARITY-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Learning parity on a torus and in a memory",
+  "status": "Proved",
+  "claim": "Exact: parity of three held points is realizable at an interface of the bare 8-point torus (2,0,4) and of a memory made of the knot sphere K_2 with that torus grown as an atom. Computed, frozen: the unchanged credit learner with the three-input sturdier probe learned parity from its eight examples and held it after a disturbance in 10 of 10 runs on each space, switched it to its negation and back (60 of 60 writes), with no inexact stop; median 13,400 and 18,000 steps.",
+  "dependencies": [
+    "PARITY-NEEDS-20261111-001A",
+    "THREE-IN-20261110-001B",
+    "CREDIT-PIN-20261110-001B"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "P1 or P2 below 8 of 10."
+  ],
+  "lineage": {
+    "home_scope": "LEARN-PARITY-20261111-001",
+    "epic_path": [
+      "LEARN-PARITY-20261111-001"
+    ],
+    "parents": [
+      "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/io3_lib.py",
+      "research/LEARN-PARITY-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/io3_lib.py": "0a30f53ed6d39129c9234011aa039217fad8bea2ddfe5e078b8d68c8a45181c3",
+    "research/LEARN-PARITY-20261111-001/preregistration.md": "1aacf2f702bd20ffa52e9fe9e5649048cd4b7958879a146ca3f9698c32a142b0"
+  },
+  "paths": {
+    "manifest": "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/manifest.json",
+    "identity": "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/identity.json",
+    "proof": "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/proof.md",
+    "result": "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/result.json",
+    "check": "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/check.py",
+    "directory": "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Two spaces, ten runs each, one frozen learner.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-10, pre-registered (commit 00aafe7f6).",
+    "status": "realizability exhaustive; learning computed (check.py)",
+    "novelty": "known-with-delta"
+  }
+}

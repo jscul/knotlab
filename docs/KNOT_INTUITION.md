@@ -5699,6 +5699,21 @@ So network holes come in two kinds:
      tetrahedron can never grow.
    - **So how knots meet is an input, static or grown**; the face is still the knot ([decision note](../research/GROW-COUNT-20261111-001/grow_count.md)).
 
+   **2026-11-11: the ruler on balanced weaves** (`RULER-FLAT-20261111-001`).
+   - **The question.** On the open balanced weave (every co-knotted pair in two knots, six knots at each distinction, no loops;
+     drawn: the triangular lattice) not-all-equal measures distance exactly. On a closed one, where a bond can go around a loop,
+     where does it cheat?
+   - **An exact answer on two-sided weaves (proved, refereed).** A state's height rises by a fixed winding around each loop, and the
+     allowed windings satisfy three inequalities. The margin M of the best winding, the least extra cost of going once around a loop,
+     decides everything: states exist exactly when M ≥ 0; bond distance is graph distance + 1 for every distance below M/3 and never
+     less than the smaller of the two; and the reading is faithful when M > 3 (drawn: tori).
+   - **One-sided weaves split in two (proved for one half).** If the co-knotted pairs can be directed so that every knot is a directed
+     cycle, the law's heights treat the twist as one more loop and the theorem holds word for word. If not, heights flip under the
+     twist, and that half stays computed (drawn: Klein bottles, by the direction of the glide mirror).
+   - **Only for two-fold weaves.** All of it needs each co-knotted pair in exactly two knots; where pairs lie in three or more knots
+     the line has no ruler and no height yet, which is the owner's next question
+     ([decision note](../research/RULER-FLAT-20261111-001/ruler_flat.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

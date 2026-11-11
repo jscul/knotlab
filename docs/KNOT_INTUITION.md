@@ -3575,195 +3575,217 @@ So holes come in two kinds:
    - **Reading.**
      - Building every scale while coupling three places requires interference: a cancelling pair of phases.
      - Everything else that builds every scale couples at most two places at a time.
-   - **Next (taken).** Which spaces the harmony builds (next entry).
+   - **Next (taken).** Which gluings carry the harmony (next entry).
 
-   **2026-10-30: which spaces the harmony builds** (`SPACE-SELECTION-20261030-001`).
+   **Words in the three-regular entries.** From here up to the circle entries, apart from the two axis entries (the axis built from
+   logic, and growth at loose ends), the entries glue copies of the not-all-equal knot by identifying distinctions of different
+   copies, three copies at each shared distinction: copies overlap only at shared distinctions, and nothing is glued along sides. Such
+   a gluing that allows no state is a three-regular contradiction (glossary of the Intuitions guide). The entries study it through
+   the literature's graphs: its incidence graph, drawn on closed surfaces, and the glue's cubic graphs, such as cubes, prisms,
+   ladders, rings and grids. Faces, corners, arcs, handles, genus, surfaces, maps, edges, vertices, squares and planarity belong to
+   those graphs and their drawings; planar means, as in the literature, that a graph can be drawn in the plane without crossings, and
+   the Fano plane is the literature's name for the Fano pattern. "The knot" is the not-all-equal law, a knot of a pattern is one copy
+   of it, and a new or created knot is a knot of what is left after a removal, read on its allowed states. Before 2026-11-11 these
+   entries called the copies triangles, the shared distinctions contacts, the knots lines, the distinctions points, the Fano pieces
+   atoms or Fano atoms and the contradictions three-fold spaces, knot spaces or spaces; the earlier text is in git history.
+
+   **2026-10-30: which gluings carry the harmony** (`SPACE-SELECTION-20261030-001`).
    - **The law selects by cancellation.**
-     - A gluing of triangles carries the wave exactly when six signed sums over phase assignments cancel.
-     - Contacts that lock phases make them cancel locally; mirror pairs of assignments and, from six triangles, genuine identities make
-       them cancel globally.
+     - A gluing of copies of the knot carries the wave exactly when six signed sums over phase assignments cancel.
+     - Shared distinctions that lock phases make them cancel locally; mirror pairs of assignments and, from six copies, genuine
+       identities make them cancel globally.
      - The conjectured local criterion (phase locking plus an odd parity) is refuted: the parity is always odd, and locking is not needed.
-   - **It selects many spaces and no dimension.**
-     - Up to five triangles the knot reproduces itself on 8,584 gluings, 3,082 of them at its own angle only.
-     - Exact gluings compose. Bubbles hung from a single vertex keep exactness, so the growth exponents of the towers are unbounded.
+   - **It selects many gluings and no dimension.**
+     - Up to five copies the knot reproduces itself on 8,584 gluings, 3,082 of them at its own angle only.
+     - Exact gluings compose. Bubbles hung from a single distinction keep exactness, so the growth exponents of the towers are unbounded.
      - Other angles (π/4, π/6, π/8, and angles that are not rational multiples of π) have their own gluings, so the knot is not singled
-       out by the spaces it admits.
-   - **Interference is what builds small spaces.** Without signs a not-all-equal law needs at least seven triangles (sharp). With signs it
-     needs three, the Sierpinski triangle.
+       out by the gluings it admits.
+   - **Interference is what makes small gluings.** Without signs a not-all-equal law needs at least seven copies (sharp). With signs it
+     needs three, glued as the literature's Sierpinski triangle.
    - **The two/three boundary, inside the gluing.**
-     - A contact of two triangles locks their phases, an equality.
-     - At the knot angle, a contact of three triangles with an odd number of base corners is itself a not-all-equal knot on their phases.
-     - A gluing made only of such knots is the unsigned problem on its dual. The knot then needs seven triangles, and the seven-triangle
-       spaces (corner triangles distinct) are exactly the Fano plane read as a gluing. On it both the signed and the plain knot reproduce
+     - A distinction shared by two copies locks their phases, an equality.
+     - At the knot angle, a distinction shared by three copies, an odd number of which hold it at their sign-carrying place (the
+       law's x₀, earlier called the base corner), is itself a not-all-equal knot on their phases.
+     - A gluing made only of such knots is the unsigned problem on its dual. The knot then needs seven copies, and the seven-copy
+       gluings (corner copies distinct) are exactly the Fano pattern read as a gluing. On it both the signed and the plain knot reproduce
        themselves.
    - **Reading.**
      - The law does not draw a space by itself.
-     - Where the gluing is made of the knot's own contacts, the smallest space is forced: the Fano plane, which reads the same with
-       triangles and contacts exchanged. (Only the smallest. Larger such spaces exist; see the next entry.)
-   - **Correction.** The epic's first proof stated the seven-triangle bound with a wrong reduction and missed the one-triangle case. A later
+     - Where the gluing is made of the knot's own shared distinctions, the smallest gluing is forced: the Fano pattern, which reads the
+       same with copies and shared distinctions exchanged. (Only the smallest. Larger such gluings exist; see the next entry.)
+   - **Correction.** The epic's first proof stated the seven-copy bound with a wrong reduction and missed the one-copy case. A later
      ticket in the same epic corrected and sharpened it.
-   - **Next (taken).** The knot's three-fold spaces (next entry). Its premise, that the Fano plane is the only one, turned out to be false.
+   - **Next (taken).** The knot's three-regular contradictions (next entry). Its premise, that the Fano pattern is the only one, turned out
+     to be false.
 
-   **2026-10-30: the knot's three-fold spaces** (`THREEFOLD-SPACES-20261030-001`).
-   - **The premise was wrong.** The Fano plane is only the smallest three-fold space. Splicing one Fano plane into another gives a
-     13-triangle space, and Fano planes splice together without limit (7, 13, 19, … triangles). A random probe had missed these rare cases.
-   - **What the knot asks of a three-fold gluing.**
-     - At the knot angle, a gluing whose contacts all join three triangles is a space for the knot exactly when two conditions hold for its
-       dual arrangement of triples: it cannot be 2-coloured as a whole, and it can once the corner line is removed.
+   **2026-10-30: the knot's three-regular contradictions** (`THREEFOLD-SPACES-20261030-001`).
+   - **The premise was wrong.** The Fano pattern is only the smallest three-regular contradiction. Splicing one Fano pattern into
+     another gives a 13-knot contradiction, and Fano patterns splice together without limit (7, 13, 19, … knots). A random probe had
+     missed these rare cases.
+   - **What the knot asks of a three-regular gluing.**
+     - At the knot angle, a gluing in which every shared distinction joins three copies of the knot is one of the knot's
+       contradictions exactly when two conditions hold for its dual arrangement of triples: it cannot be 2-coloured as a whole, and it
+       can once the corner knot is removed.
      - That is the classical even-cycle problem: its sign-nonsingular matrices are those of 2-in 2-out digraphs with no even cycle.
      - Its one indecomposable exception is the Fano plane (McCuaig).
-   - **Up to 13 triangles (exhaustive).** Only the Fano plane and its splice.
-   - **Beyond: odd cycles of Fano planes.**
-     - A Fano plane minus a line forces its three free points to one colour, so a line that meets it twice says "different".
-     - A cycle of an odd number of such blocks cannot be 2-coloured. That gives spaces with 21, 35, … triangles.
-     - One sign flip turns an even cycle odd: a 14-point twisted system found by SAT, and from two of them a 27-triangle space.
+   - **Up to 13 knots (exhaustive).** Only the Fano pattern and its splice.
+   - **Beyond: odd cycles of Fano patterns.**
+     - A Fano pattern minus a knot forces its three free distinctions to one colour, so a knot that meets it twice says "different".
+     - A cycle of an odd number of such blocks cannot be 2-coloured. That gives contradictions with 21, 35, … knots.
+     - One sign flip turns an even cycle odd: a 14-distinction twisted system found by SAT, and from two of them a 27-knot contradiction.
    - **Reading.**
-     - The knot builds its own space from the two classical obstructions to 2-colouring: the Fano plane (three places) and the odd cycle
-       (two places).
+     - The knot builds its own contradictions from the two classical obstructions to 2-colouring: the Fano plane (three places) and the
+       odd cycle (two places).
      - That is the two/three boundary as a grammar, with a sign deciding the parity.
-   - **Also.** Gluings of phase locks and phase knots alone do not exist, because counting base corners forbids every lock. So the planned
-     "mixed" class is empty.
-   - **Correction inside the epic.** A first reduction claimed that Fano compositions were everything. The 14-point twisted system showed
-     the gap: cutting a space into pieces can put a point twice on a line. The reduction was corrected.
-   - **Next (taken).** The grammar of three-fold spaces (next entry). The approved form turned out to be false: odd cycles and splices are
-     not the only glue.
+   - **Also.** Gluings of phase locks and phase knots alone do not exist, because counting sign-carrying places forbids every lock. So
+     the planned "mixed" class is empty.
+   - **Correction inside the epic.** A first reduction claimed that Fano compositions were everything. The 14-distinction twisted
+     system showed the gap: cutting a contradiction into pieces can put a distinction twice in a knot. The reduction was corrected.
+   - **Next (taken).** The grammar of three-regular contradictions (next entry). The approved form turned out to be false: odd cycles
+     and splices are not the only glue.
 
-   **2026-10-30: the grammar of three-fold spaces** (`THREEFOLD-GRAMMAR-20261030-001`).
-   - **The approved grammar was too small.** Fano blocks, splices and odd cycles do not make every space. Twisted 14-point pieces set on
-     three skew edges of a cube give a 43-triangle space whose glue is the cube itself.
-   - **Atoms and glue (proved).**
-     - Cut a three-fold space along its tight three-edge cuts. Every end piece is a Fano plane with one element removed, so every space
-       other than the Fano plane holds at least two Fano atoms.
-     - Everything between the atoms is glue: doubled squares, planar pieces, and pieces glued from planar ones along 4-cycles
-       (Robertson–Seymour–Thomas). Non-planar glue does occur, first seen in a 35-triangle space.
+   **2026-10-30: the grammar of three-regular contradictions** (`THREEFOLD-GRAMMAR-20261030-001`).
+   - **The approved grammar was too small.** Fano blocks, splices and odd cycles do not make every contradiction. Twisted
+     14-distinction pieces set on three skew edges of a cube give a 43-knot contradiction whose glue is the cube itself.
+   - **Fano pieces and glue (proved).**
+     - Cut a three-regular contradiction along its tight three-edge cuts. Every end piece is a Fano pattern with one element removed,
+       so every contradiction other than the Fano pattern holds at least two Fano pieces.
+     - Everything between the Fano pieces is glue: doubled squares, planar pieces, and pieces glued from planar ones along 4-cycles
+       (Robertson–Seymour–Thomas). Non-planar glue does occur, first seen in a 35-knot contradiction.
      - Every planar cubic graph serves as glue. Each of its faces needs a fixed parity of sign flips (Kasteleyn's condition). Twisted pieces
        at the attachments supply them, like a flux through each face.
-   - **Sizes up to 22 triangles (exhaustive through cores).**
-     - Spaces have exactly 7, 13, 19, 21 or 22 triangles: eight in all, each a small core dressed with Fano atoms, six triangles at a time.
-     - None has 8–12, 14–18 or 20 triangles.
-   - **Duality is free.** Exchanging triangles and contacts maps the knot's spaces to its spaces.
+   - **Sizes up to 22 knots (exhaustive through cores).**
+     - Contradictions have exactly 7, 13, 19, 21 or 22 knots: eight in all, each a small core dressed with Fano pieces, six knots at a time.
+     - None has 8–12, 14–18 or 20 knots.
+   - **Duality is free.** Exchanging knots and shared distinctions maps the knot's contradictions to its contradictions.
    - **Reading.**
-     - The knot's own space is two-dimensional glue studded with three-place atoms. The glue's planarity is forced by the law's sign
+     - The knot's own contradictions are planar glue studded with three-place Fano pieces. The glue's planarity is forced by the law's sign
        parity, not drawn.
-     - The two/three boundary again: the atoms are the three-place obstruction, and the glue is a two-place parity structure.
+     - The two/three boundary again: the Fano pieces are the three-place obstruction, and the glue is a two-place parity structure.
    - **Corrections inside the epic.** Two checks predicted wrongly and were fixed by computation:
-     - A Fano block can sit on a twisted point; that is exactly the 14-point twisted piece.
+     - A Fano block can sit on a twisted distinction; that is exactly the 14-distinction twisted piece.
      - The glue can be non-planar, when it is assembled from planar pieces.
-   - **Next (taken).** The surfaces of three-fold spaces (next entry). The answer was yes.
+   - **Next (taken).** The surfaces that carry three-regular contradictions (next entry). The answer was yes.
 
-   **2026-10-30: the surfaces of three-fold spaces** (`THREEFOLD-SURFACES-20261030-001`).
-   - **Each Fano atom is a handle (proved).** Take the graph of a three-fold space's triangles and contacts and ask for the least genus of a
-     closed orientable surface that carries it. When the glue is planar, that genus is exactly the number of Fano atoms. The glue adds no
-     handles.
-   - **Why the atoms keep their handles.**
+   **2026-10-30: the surfaces that carry three-regular contradictions** (`THREEFOLD-SURFACES-20261030-001`).
+   - **Each Fano piece is a handle (proved).** Take the incidence graph of a three-regular contradiction's knots and distinctions and
+     ask for the least genus of a closed orientable surface that carries it. When the glue is planar, that genus is exactly the number
+     of Fano pieces. The glue adds no handles.
+   - **Why the Fano pieces keep their handles.**
      - In general, splicing two non-planar pieces along three edges can lose a handle (two K₃,₃ give genus 1, not 2).
-     - A Fano atom cannot lose its handle: with one vertex deleted it is still not planar. A piece with that property always adds its
+     - A Fano piece cannot lose its handle: with one vertex deleted it is still not planar. A piece with that property always adds its
        full genus.
      - The proof follows the faces across the three cut edges. A face that turns back across a cut edge costs a handle.
    - **The surface is canonical.**
-     - Its genus is fixed by the space, not chosen.
-     - Every minimal map of it is a connected sum of one map, the Heawood map of the Fano plane, with flat maps of the glue. One copy
-       comes per atom, each with a handedness.
-     - Spaces have finitely many minimal maps up to symmetry: 1, 2, then 3 to 6 at 19 triangles.
-   - **The Fano space is the seven-vertex torus.**
+     - Its genus is fixed by the contradiction, not chosen.
+     - Every minimal map of it is a connected sum of one map, the Heawood map of the Fano plane, with planar maps of the glue. One copy
+       comes per Fano piece, each with a handedness.
+     - Contradictions have finitely many minimal maps up to symmetry: 1, 2, then 3 to 6 at 19 knots.
+   - **The Fano pattern's drawing is the seven-vertex torus.**
      - Its minimal map is unique up to symmetry and chiral.
-     - Read dually, it is the seven-vertex triangulation of the torus. The 14 triangles are the knot's seven triangles and seven contacts
-       (the corner line counted as one), coloured like a checkerboard.
+     - Read dually, it is the seven-vertex triangulation of the torus. Its 14 triangles are the seven knots and the seven shared
+       distinctions (the corner counted as one of them), coloured like a checkerboard.
    - **Confirmed by exact computation** up to 180 vertices: the twisted cube has genus 6, the truncated-octahedron glue 12. A non-planar
      glue piece (three cubes glued along a square) adds one handle of its own.
    - **Reading.**
-     - This is the first place in the program where the knot's own space fixes a canonical topological object: a closed surface whose
-       handles are its three-place atoms.
+     - This is the first time in the program that one of the knot's own contradictions fixes a canonical topological object: a
+       closed surface whose handles are its three-place Fano pieces.
      - It is the topology of an incidence graph, not a native contact topology or a metric.
-     - The two/three boundary, once more: the three-place atom becomes a handle, and the two-place glue stays flat.
+     - The two/three boundary, once more: the three-place Fano piece becomes a handle, and the two-place glue stays planar.
    - **Next (taken).** The knot's amplitude on its surface (next entry). The answer was yes, and the glue's factor is Tutte's tree count.
 
-   **2026-10-30: the knot's amplitude on its spaces** (`THREEFOLD-AMPLITUDE-20261030-001`).
-   - **Five per handle, a tree count per flat piece (proved).** The factor by which a gadget of the knot reproduces the knot is, up to sign,
-     a product over the pieces of its space:
-     - 5 for each Fano atom, that is, for each handle of its surface;
+   **2026-10-30: the knot's amplitude on its contradictions** (`THREEFOLD-AMPLITUDE-20261030-001`).
+   - **Five per handle, a tree count per planar piece (proved).** The factor by which a gadget of the knot reproduces the knot is, up
+     to sign, a product over the pieces of its contradiction:
+     - 5 for each Fano piece, that is, for each handle of its surface;
      - 1 for each doubled square;
      - for each planar piece of glue, Tutte's tree-trinity number: the spanning trees of the map it is cut from (for glue cut from a map),
        Kálmán's hypertrees in general;
-     - the sign is the parity of the number of triangles.
-   - **Why.** The factor counts the 2-colourings of the space with one contact opened.
+     - the sign is the parity of the number of knots.
+   - **Why.** The factor counts the 2-colourings of the contradiction with one shared distinction opened.
      - Across each tight three-edge cut the count splits exactly.
-     - On a planar piece, the knot's sign parities (Kasteleyn's condition) turn colourings into Tutte's matchings of faces to contacts.
-   - **One number for the whole space (proved).** The count is the same whichever contact is opened, and the same again when triangles and
-     contacts are exchanged. This holds for every three-place system that cannot be 2-coloured, not only for the knot's spaces.
-     - The proof counts one weighted sum in two orders. With an Ising weight at half the knot's angle on the graph of triangles and
-       contacts, summing out either side gives the not-all-equal rule on the other.
-     - So each contact's count is the average of its triangles' counts and vice versa, and a connected space forces one value.
+     - On a planar piece, the knot's sign parities (Kasteleyn's condition) turn colourings into Tutte's matchings of faces to shared
+       distinctions.
+   - **One number for the whole contradiction (proved).** The count is the same whichever shared distinction is opened, and the same
+     again when knots and shared distinctions are exchanged. This holds for every three-place system that cannot be 2-coloured, not only
+     for the knot's contradictions.
+     - The proof counts one weighted sum in two orders. With an Ising weight at half the knot's angle on the incidence graph of knots
+       and shared distinctions, summing out either side gives the not-all-equal rule on the other.
+     - So each shared distinction's count is the average of its knots' counts and vice versa, and a connected contradiction forces one
+       value.
    - **Confirmed by exact computation.**
-     - All 2,652 cores up to 10 points.
-     - The law at every corner of every space up to 22 triangles.
-     - Glue cut from 13 maps up to the dodecahedron: 5,184,000 spanning trees, at all 60 contacts.
+     - All 2,652 cores up to 10 distinctions.
+     - The law at every corner of every contradiction up to 22 knots.
+     - Glue cut from 13 maps up to the dodecahedron: 5,184,000 spanning trees, at all 60 shared distinctions.
    - **Non-planar glue depends on its gluing.** Three prisms glued along a square have one amplitude, but it changes with how the square is
      matched (13 or 14 for prisms of sizes 2, 3, 3). The pieces' own amplitudes do not determine it.
    - **Reading.**
-     - The knot's own number measures what it builds: handles count 5 each, and flat glue counts trees.
-     - The number belongs to the whole space. No contact is privileged, and reading from triangles or from contacts agrees. That is the
-       relational point.
+     - The knot's own number measures what it builds: handles count 5 each, and planar glue counts trees.
+     - The number belongs to the whole contradiction. No shared distinction is privileged, and reading from knots or from shared
+       distinctions agrees. That is the relational lesson.
      - The two-way count is a three-place phenomenon: with four places, summing out cannot give not-all-equal.
    - **Next (taken).** The knot's spin structure (next entry). The answer was yes, and the spin structure is even on every handle.
 
    **2026-10-30: the knot's spin structure** (`THREEFOLD-SPIN-20261030-001`).
-   - **The knot's signs are Kasteleyn (proved for planar glue).** On every least-genus surface of a three-fold space, every face has length
-     2 mod 4. So the knot's own signs satisfy Kasteleyn's condition, the extra structure a surface needs before its perfect matchings define
-     spin structures.
+   - **The knot's signs are Kasteleyn (proved for planar glue).** On every least-genus surface of a three-regular contradiction, every
+     face has length 2 mod 4. So the knot's own signs satisfy Kasteleyn's condition, the extra structure a surface needs before its
+     perfect matchings define spin structures.
      - The proof follows faces across each tight three-edge cut. Exactly three faces cross, each made of one face from each side, so the
        parities add.
      - Non-planar glue (three prisms glued along a square) behaves the same on all its surfaces (computed).
-   - **The spin structures are even, handle by handle (proved).** Each perfect matching gives a spin structure, and all have Arf invariant 0.
+   - **The spin structures are even, handle by handle (proved).** Each perfect matching gives a spin structure, and all have Arf
+     invariant 0.
      - On the Fano torus the 24 matchings induce exactly the three even spin structures, eight each, never the odd one.
-     - A space with h atoms gets exactly 3^h of them: the spin structures even on every handle (9 of the 10 even ones at genus 2).
+     - A contradiction with h Fano pieces gets exactly 3^h of them: the spin structures even on every handle (9 of the 10 even ones at
+       genus 2).
      - Of the four sign classes on the Fano torus, only the knot's counts its 24 matchings exactly. The other three give 8.
    - **Evenness belongs to the least-genus surface.** On larger surfaces carrying the same signs, odd spin structures appear: about 1–2% of
      them, and only from genus 3 on.
    - **Reading.**
-     - The law equips the space it builds. Its own signs are exactly a spin structure's raw material on its own surface, and what they give
-       is even on every handle.
-     - An even spin surface bounds a spin 3-manifold, so each knot surface with its spin structure is such a boundary.
-     - The two/three boundary, once more: the three-place atom carries a handle and its even spin structures; the two-place glue carries
-       neither.
+     - The law equips the contradiction it builds. Its own signs are exactly a spin structure's raw material on its own surface, and
+       what they give is even on every handle.
+     - An even spin surface bounds a spin 3-manifold, so each of the knot's surfaces, with its spin structure, is such a boundary.
+     - The two/three boundary, once more: the three-place Fano piece carries a handle and its even spin structures; the two-place glue
+       carries neither.
    - **Next (taken).** The knot's amplitude as a spin sum (next entry). The answer was no.
 
    **2026-10-30: the knot's amplitude as a spin sum** (`THREEFOLD-SPINSUM-20261030-001`).
    - **No: every spin structure contributes (proved, with exact values).** The knot's counts split exactly over the spin structures of its
      surface.
-     - On the Fano torus, with one contact opened, the three even spin structures give 16 each and the odd one 28. Twice the amplitude is
-       (3 · 16 − 28)/2 = 10.
+     - On the Fano torus, with one shared distinction opened, the three even spin structures give 16 each and the odd one 28. Twice the
+       amplitude is (3 · 16 − 28)/2 = 10.
      - The even ones alone would give 12, not 5, and the odd one does not cancel.
      - With two handles the spin pieces do not split handle by handle, though the amplitude is exactly 5 · 5. "Five per handle" belongs to
        the whole count, not to spin pieces.
    - **The contradiction is a balance.**
-     - In the closed Fano space the odd spin structure's piece, 24, exactly cancels the three even ones, 8 each. That cancellation is the
+     - In the closed Fano pattern the odd spin structure's piece, 24, exactly cancels the three even ones, 8 each. That cancellation is the
        knot's non-colourability.
-     - Opening a contact unbalances it by twice the amplitude.
+     - Opening a shared distinction unbalances it by twice the amplitude.
    - **The knot's signs are the only contradictory ones.** Of all the sign patterns Kasteleyn's condition allows on its surface, the knot's
      is the only one that cannot be 2-coloured. Every twist of it can.
    - **Reading.**
      - The amplitude and the contradiction are properties of the whole relation, not of local pieces.
-     - The spin line is closed. What the three-fold line found in the end is linear-algebraic: the knot's spaces sit exactly on Seymour's
-       bound (as many contacts as triangles), where impossibility is a determinant condition.
+     - The spin question is closed. What the work on three-regular contradictions found in the end is linear-algebraic: the knot's
+       contradictions sit exactly on Seymour's bound (as many shared distinctions as knots), where impossibility is a determinant
+       condition.
    - **Next (taken).** Where counting near-critical instances becomes hard (next entry). The easy side holds.
 
    **2026-10-30: counting on Seymour's bound** (`SEYMOUR-COUNT-20261030-001`).
-   - **Counting is easy on every space the knot builds (proved, and implemented).** The colourings of a three-fold space with one contact
-     removed are counted exactly in polynomial time, with no signs.
+   - **Counting is easy on every contradiction the knot builds (proved, and implemented).** The colourings of a three-regular
+     contradiction with one shared distinction removed are counted exactly in polynomial time, with no signs.
      - Planar glue is one determinant (Berman's, counting Tutte's matchings).
-     - Non-planar glue is built by gluing three pieces along a square (Robertson–Seymour–Thomas). It is cut back into planar pieces, and each
-       piece is one weighted determinant: two determinants per piece.
-     - Spaces of 1720 vertices are counted in seconds, where generic elimination would need tables over 30 variables.
+     - Non-planar glue is built by gluing three pieces along a square (Robertson–Seymour–Thomas). It is cut back into planar pieces,
+       and each piece is one weighted determinant: two determinants per piece.
+     - Contradictions of 1720 vertices are counted in seconds, where generic elimination would need tables over 30 variables.
    - **The knot reappears one level up (proved).** Each piece's colourings lean to one of the square's two corners, in proportions (α, β).
      - The glued amplitude is ρ₁ρ₂ρ₃ − α₁α₂α₃ − β₁β₂β₃: the knot's not-all-equal rule, applied to the pieces' leanings.
-     - Pieces glued further down act only as weights on these two numbers. A piece tells the rest of the space nothing else.
+     - Pieces glued further down act only as weights on these two numbers. A piece tells the rest of the contradiction nothing else.
    - **Reading.**
-     - The knot's spaces are where counting stays easy. Their impossibility is a determinant condition, and so is their count with one
-       contact removed.
+     - The knot's contradictions are where counting stays easy. Their impossibility is a determinant condition, and so is their count
+       with one shared distinction removed.
      - The surface never has to be seen. The Kasteleyn route on the surface would need 4^genus Pfaffians; the pieces need none.
      - Provenance: planar counting of this kind is classical (Valiant), and the gluing structure is Robertson–Seymour–Thomas's. The counting
-       result on every space was found in no source.
+       result on every contradiction was found in no source.
      - The hard side was not attempted.
    - **Next (taken).** Counting one twist off the bound (next entry). Counting stays easy unless twists branch.
 
@@ -3775,8 +3797,9 @@ So holes come in two kinds:
    - **Counting stays easy well past one twist (proved).** Change the signs anywhere: counting stays polynomial unless some square has
      twisted pieces on all three of its sides. One twist, or twists along any path of pieces, are all easy.
    - **Where twists branch, a junction can cross wires, but only softly.**
-     - Proved: a not-all-equal line forbids only one pattern, so the square's lines can never force two of the host's points into a fixed
-       relation without pinning them. No junction is a sharp crossing; the square's points can carry a wire, its lines cannot.
+     - Proved: a not-all-equal knot forbids only one pattern, so the square's knots can never force two of the host's distinctions into
+       a fixed relation without pinning them. No junction is a sharp crossing; the square's distinctions can carry a wire, its knots
+       cannot.
      - Computed exactly: twisted truncated-octahedron pieces do let both wires through at once, with a small weight (−192 against 40000),
        outside the planar class. The signs cancel the turning paths exactly and let the crossing path through.
    - **Reading.**
@@ -3786,8 +3809,8 @@ So holes come in two kinds:
    - **Next (taken).** Soft crossings to hardness (next entry). Counting is #P-hard where twists branch.
 
    **2026-10-31: soft crossings to hardness** (`SOFT-CROSS-20261031-001`).
-   - **The soft crossing sharpens (proved).** Repeat the junction of two twisted pieces k times, with plumbing whose spare legs are closed by
-     a *dead cap* (a cube minus one edge, whose count is 3 whatever it touches).
+   - **The soft crossing sharpens (proved).** Repeat the junction of two twisted pieces k times, with plumbing whose spare legs are
+     closed by a *dead cap* (a cube minus one edge, whose count is 3 whatever it touches).
      - The four ways of crossing then grow at four rates, 810000, 7506, −22518 and −432 per step, built from the primes 5, 139 and 3.
      - Because the rates are incommensurable, a few counts separate them, and interpolation recovers an exact crossing.
      - So every cubic counting problem, on any graph, can be read off from the knot's own graphs, with their signs twisted.
@@ -3798,7 +3821,7 @@ So holes come in two kinds:
        literature check and is replayed here with merge paths and dead caps, not claimed.
      - The whole chain runs end to end: two small formulas are counted exactly through 44 certified Pfaffian instances.
    - **Reading.**
-     - The boundary is two-sided on the knot's own graphs. The knot's own signs count by determinants. Twists that run along a path stay
+     - The knot's own graphs show both sides of the boundary. The knot's own signs count by determinants. Twists that run along a path stay
        easy. Twists that branch make counting universal, and so hard.
      - Two again against three: two twisted sides at a square pass through as a similitude of the knot's angle; three twisted sides make a
        crossing.
@@ -3812,14 +3835,14 @@ So holes come in two kinds:
      - So counting the 2-colourings of plain triple systems (3-regular 3-uniform hypergraphs) whose incidence graphs are Pfaffian is
        #P-hard. No supplied signs are needed.
      - K₃,₃ is counted end to end from 100 plain instances, the largest of 18504 vertices.
-   - **Squares are twists (proved).** A cubic plane must have at least six square faces (Euler), and at most five can touch a given one. On a
-     square the knot's signs need an odd number of negations, and plain signs have none.
+   - **Squares are twists (proved).** A cubic planar incidence graph must have at least six square faces (Euler), and at most five can
+     touch a given one. On a square the knot's signs need an odd number of negations, and plain signs have none.
      - So every plain planar piece is twisted, and in a plain non-planar brace the twists branch at every square.
-   - **The knot's atom is the exception (proved; likely known).** The Fano plane's incidence graph has no squares at all; its shortest
+   - **The Fano pattern is the exception (proved; likely known).** The Fano pattern's incidence graph has no squares at all; its shortest
      cycles are hexagons, which plain signs allow. It is the only plain brace without twists, and the only plain brace that cannot be
      2-coloured.
    - **Reading.**
-     - In the plain world twisting is the default, and the knot's atom is the one place where it is absent.
+     - Without signs, twisting is the default, and the Fano pattern is the one case where it is absent.
      - Two against three again: one plain page is a planar matchgate, while two plain pages meeting a host at a square always leave the
        matchgate class (2500 of 2500 pairs).
      - Provenance: Euler, Kasteleyn and the nice-cycle condition are classical, and the Fano uniqueness is probably implied by
@@ -3832,20 +3855,21 @@ So holes come in two kinds:
      - The ladder's four rates are a unit of Q(√365) and the two Eisenstein primes above 13. The odd part, x² + 7x + 13, is an Eisenstein
        norm form, like the knot's own similitude multiplier α² + αβ + β². That is an observation, not a claim.
      - K₃,₃ is counted from plain braces of 20 to 104 vertices.
-   - **Plain Pfaffian braces are hard to count (proved).** Weave a hard instance into a planar frame, one vertex per face, and replace every
+   - **Plain Pfaffian braces are hard to count (proved).** Draw a hard instance in a planar frame, one vertex per face, and replace every
      crossing by such a ladder. Every instance is then a brace (cyclically 4-edge-connected) and Pfaffian, with no signs at all.
    - **Reading.**
      - Neither connectivity nor Pfaffian-ness protects counting.
      - The plain picture is complete in the worst case: planar pieces are easy, two plain pieces at a square are twisted and soft, and a
-       ladder of such squares crosses wires exactly. The knot's atom, the Fano plane, is the one plain brace without twists, and with
+       ladder of such squares crosses wires exactly. The Fano pattern is the one plain brace without twists, and with
        planarity the polynomial case found.
      - Provenance: the source hardness is Fan and Cai's, planar tractability Valiant's, and the brace structure Robertson, Seymour and
-       Thomas's. The plain crossing inside braces and the weaving and cube junction lemmas were found in no source.
+       Thomas's. The plain crossing inside braces and the weaving lemma (drawing an instance in a planar frame) and the cube junction
+       lemma were found in no source.
    - **Next (taken).** A note on the counting arc (next entry).
 
    **2026-10-31: the counting note** (`COUNT-NOTE-20261031-001`).
    - **The arc is written up.** One self-contained 10-page note states the five results in standard vocabulary:
-     - counting is polynomial on every space the knot builds;
+     - counting is polynomial on every contradiction the knot builds;
      - it stays polynomial along unbranched twists;
      - it is #P-hard under signs, without signs, and on braces.
    - **How it was checked.**
@@ -3859,45 +3883,45 @@ So holes come in two kinds:
 
    **2026-10-31: back toward native emergence, a scan** (`NEXT-DIRECTION-SCAN-20261031-001`).
    - **Do the knot's signs favour its own law? Yes, on the evidence so far (computed).**
-     - Colouring counts are a three-body Ising model, and the knot's law, not-all-equal, is one coupling on its line.
+     - Colouring counts are a three-body Ising model, and the knot's law, not-all-equal, is one coupling in its family.
      - On single pages, the knot's signs keep the count planar (free-fermion) at every coupling.
      - Once two pieces meet at a square inside a larger tree, they keep it planar only at the knot's own coupling and at the trivially easy
        ones. The factors shared by every tested case are exactly those couplings (5 of 6 cases, with one exception).
      - This is not an artifact of the chosen basis.
-   - **Does a descent toward fewer colourings find the knot's signs? Only on Fano spaces (computed).** Every space with 4-cycles has traps.
-     The descent is imposed, so this is weak.
-   - **Is one line short of Seymour's bound a new regime? No (proved).** It is #P-hard even on connected, sparse systems. Only the knot's
+   - **Does a descent toward fewer colourings find the knot's signs? Only on Fano contradictions (computed).** Every contradiction with
+     4-cycles has traps. The descent is imposed, so this is weak.
+   - **Is one knot short of Seymour's bound a new regime? No (proved).** It is #P-hard even on connected, sparse systems. Only the knot's
      part is easy.
    - **Reading.**
-     - On the knot's spaces, the signs and the law fit each other, and only each other.
-     - This is a selection with nothing imposed but the coupling: the space's signs choose the knot's law.
+     - On the knot's contradictions, the signs and the law fit each other, and only each other.
+     - This is a selection with nothing imposed but the coupling: the contradiction's signs choose the knot's law.
      - Provenance: planar Ising and matchgates are classical, and the source hardness is Fan and Cai's. A singled-out coupling on Pfaffian
-       spaces was found in no source.
+       contradictions was found in no source.
      - *Corrected on 2026-10-31 by the next entry.* The shared couplings also include a point at infinity, the dimer coupling. So the
        knot's law is one of two singled-out laws, not the only one.
    - **Next (taken).** A coupling dichotomy in the knot's class (next entry).
 
    **2026-10-31: the knot's coupling** (`KNOT-COUPLING-20261031-001`).
-   - **Counting on the knot's spaces is easy at exactly two laws besides the trivial ones (proved).**
-     - Weigh each monochromatic line by λ. On the systems that cannot be 2-coloured, counting is easy at λ = 0 (the knot's law), at
+   - **Counting on the knot's contradictions is easy at exactly two laws besides the trivial ones (proved).**
+     - Weigh each monochromatic knot by λ. On the systems that cannot be 2-coloured, counting is easy at λ = 0 (the knot's law), at
        λ = −3, and at the trivially easy couplings.
      - It is #P-hard at every other coupling, real or complex.
-     - At the knot's law every count is 0. At λ = −3 every line uses exactly two of its points, so the count is the number of perfect
-       matchings of the incidence graph: a determinant on the knot's spaces, a permanent in general. Call this the dimer law.
+     - At the knot's law every count is 0. At λ = −3 every knot uses exactly two of its distinctions, so the count is the number of perfect
+       matchings of the incidence graph: a determinant on the knot's contradictions, a permanent in general. Call this the dimer law.
    - **Why the knot's law is special (proved).**
-     - Take a knot's space, remove one incidence, and use it to replace an edge. At the knot's law this atom is exactly a negation, so it
+     - Take a contradiction, remove one incidence, and use it to replace an edge. At the knot's law this gadget is exactly a negation, so it
        cannot change the coupling.
-     - At every other coupling the atom shifts the coupling, and shifted couplings can imitate any twist. That makes counting as hard as on
-       general systems.
+     - At every other coupling the gadget shifts the coupling, and shifted couplings can imitate any twist. That makes counting as hard
+       as on general systems.
      - The complex couplings are closed by torsion points on a curve (Beukers and Smyth).
-   - **With one line deleted** the picture is the same, except that the dimer law is left open.
+   - **With one knot deleted** the picture is the same, except that the dimer law is left open.
    - **Correction.** The scan's "only the knot's law" missed the dimer law, a point at infinity.
    - **Reading.**
-     - The knot's spaces select their own law natively, and with it one partner. Both are faces of one fact: the incidence matrix is
+     - The knot's contradictions select their own law natively, and with it one partner. Both come from one fact: the incidence matrix is
        sign-nonsingular.
      - Both easy laws are cancellations: a count that vanishes, and a determinant.
      - Provenance: the tools are classical (gadgets, interpolation, Seymour, Robertson–Seymour–Thomas, Kasteleyn, Beukers–Smyth). No
-       dichotomy restricted to these spaces was found.
+       dichotomy restricted to these contradictions was found.
    - **Next (taken).** A bounded scan of mutual selection (next entry).
 
    **2026-10-31: mutual selection** (`MUTUAL-SELECTION-20261031-001`).
@@ -3913,8 +3937,8 @@ So holes come in two kinds:
    - **Why: the knot has no preferred value.**
      - It is the only three-place knot that is unchanged when every colour flips. So it can never pin a value: from relations alone it
        cannot make a constant.
-     - The Fibonacci law prefers its vacuum. A five-line piece of it pins a point; one more line with that point copies a variable; copies
-       give unlimited fan-out; and fan-out makes the law hard.
+     - The Fibonacci law prefers its vacuum. A five-knot piece of it pins a distinction; one more knot with that distinction copies a
+       variable; copies give unlimited fan-out; and fan-out makes the law hard.
      - Small pieces of the knot reach only three relations: nothing, everything, and the knot itself. Small Fibonacci pieces reach
        fifteen.
    - **Arity.** On regular systems the knot's law can fail only at three places: every k-regular k-uniform system is 2-colourable for
@@ -3933,8 +3957,8 @@ So holes come in two kinds:
        x ∨ (y ≠ z) and the clause.
      - Only not-all-equal can fail on plain systems. Only it has no preferred value.
    - **A law that can pin a value is as hard on cubic systems as anywhere (proved).**
-     - A pinned point turns one line into an equality, so a variable can be copied without limit.
-     - One small skeleton pins every knot that can pin: four points with three lines among them, and two tails.
+     - A pinned distinction turns one knot into an equality, so a variable can be copied without limit.
+     - One small skeleton pins every knot that can pin: four distinctions with three knots among them, and two tails.
      - So the Fibonacci law and the asymmetric x ∨ (y ≠ z) are NP-complete to decide. The clause cannot pin: it never fails (Tovey).
    - **The knot is the only three-place law with mutual selection (proved, unless NP-complete problems are polynomial).**
      - Its failures (the Pfaffian signings) can be recognised, and they make its own count and the dimer count easy.
@@ -3955,13 +3979,13 @@ So holes come in two kinds:
    **2026-10-31: parity's weighted family, a correction** (`PARITY-CORRECTION-20261031-001`).
    - **What was wrong.**
      - The mutual-selection scan claimed that parity's whole weighted family is easy on every system. It is not.
-     - Changing basis turns each line's weight into a simple equality, but it also turns each point's equality into a parity check. The
-       count becomes a weight count over a code, not a sum over two states.
+     - Changing basis turns each knot's weight into a simple equality, but it also turns each distinction's equality into a parity
+       check. The count becomes a weight count over a code, not a sum over two states.
      - A peer session found the error, citing Fan and Cai (2020, Theorem 2.2).
    - **Parity's weighted family is hard except at six couplings (proved).**
-     - Weigh each line that misses its parity by λ. Counting is easy only at λ = 0, 1, −1, i, −i and ∞, and #P-hard at every other
+     - Weigh each knot that misses its parity by λ. Counting is easy only at λ = 0, 1, −1, i, −i and ∞, and #P-hard at every other
        coupling, real or complex.
-     - The reason is native. Replace each line by three lines through two new points. Parity's weighting on the new system is the
+     - The reason is native. Replace each knot by three knots through two new distinctions. Parity's weighting on the new system is the
        knot's weighting on the old one, at λ + 1/λ − 1. In the knot's even form, its variable is the square of parity's.
    - **Parity's failures make nothing easy (proved).**
      - Where parity fails, a small piece carries the proof of failure, and the piece survives being grafted into any system.
@@ -3972,7 +3996,7 @@ So holes come in two kinds:
      - The knot's coupling, the counting note and the pinning results are unaffected.
      - Seventeen dependent statements are marked in the record. Closed records stay as they were.
    - **Reading.**
-     - Failures select a law back only when they are global. The knot's failures constrain the whole space: a system fails exactly when
+     - Failures select a law back only when they are global. The knot's failures constrain the whole system: a system fails exactly when
        its signs are Pfaffian. Parity's failures are local.
      - In the owner's terms: the error transformed one side of a two-sided relation. A change of basis acts on every incidence at once.
      - Provenance: Fan–Cai for positive λ, Cai–Fan–Liu for rational λ. The complex case for this family follows from the knot's coupling
@@ -3986,12 +4010,13 @@ So holes come in two kinds:
        kind, and not-all-equal.
      - None of them can pin a value.
    - **The four-place knot's law never fails (proved).**
-     - With any signs, not-all-equal on k places never fails on systems where every point is on k lines, for every k ≥ 4.
-     - The reason is Thomassen's theorem on even cycles. A failure would need a sign-nonsingular pattern, and a digraph whose points all
+     - With any signs, not-all-equal on k places never fails on systems where every distinction is in k knots, for every k ≥ 4.
+     - The reason is Thomassen's theorem on even cycles. A failure would need a sign-nonsingular pattern, and a digraph whose vertices all
        have in- and out-degree at least three always has an even cycle.
-     - At three places the degree is two, such digraphs can avoid even cycles, and the failures are exactly the knot's Pfaffian spaces.
+     - At three places the degree is two, such digraphs can avoid even cycles, and the failures are exactly the knot's Pfaffian
+       contradictions.
    - **The other value-free four-place laws build equality (proved).**
-     - Small pieces of five points force two points equal without any constant.
+     - Small pieces of five distinctions force two distinctions equal without any constant.
      - That makes not-exactly-two and the twelve-state kind as hard as satisfiability on 4-regular systems. Parity stays easy to count.
    - **So no value-free four-place law has mutual selection (proved, unless NP-complete problems are polynomial).**
    - **Reading.**
@@ -4003,15 +4028,15 @@ So holes come in two kinds:
    - **Next (all three taken: the owner asked for all three).**
      - a note on native selection;
      - four-place laws that prefer a value (next entry);
-     - composition of the knot's selected spaces toward native networks.
+     - composition of the knot's selected contradictions toward native networks.
 
    **2026-11-01: four-place laws that prefer a value** (`FOUR-PREFER-20261101-001`).
    - **There are twenty kinds of four-place knot (proved).**
      - A four-place relation is a knot exactly when the states it forbids never differ in just one place, i.e. they form an independent
-       set of the 4-cube.
+       set of the flip graph of four bits (the literature's 4-cube).
      - That gives 742 relations in twenty kinds, sixteen of which prefer a value.
    - **Every kind that can fail can copy (proved).**
-     - A core of three points on four lines turns nine different kinds into the value-free twelve-state kind, and that kind builds
+     - A core of three distinctions in four knots turns nine different kinds into the value-free twelve-state kind, and that kind builds
        equality.
      - So ten kinds that prefer a value are as hard as satisfiability on 4-regular systems, and their failures cannot be recognised
        unless NP-complete problems are polynomial.
@@ -4025,43 +4050,46 @@ So holes come in two kinds:
        copy.
      - Three stays the only arity found with a law that fails and stays rigid. This now holds for every law, not just laws without a
        preferred value.
-     - Provenance: Schaefer, Tovey, Seymour, Thomassen. The twenty-kind census and the three-point lift were found in no source checked.
-   - **Next (taken).** Composition of the knot's spaces, then the note.
+     - Provenance: Schaefer, Tovey, Seymour, Thomassen. The twenty-kind census and the three-distinction lift were found in no source
+       checked.
+   - **Next (taken).** Composition of the knot's contradictions, then the note.
 
-   **2026-11-01: composition of the knot's spaces** (`KNOT-COMPOSE-20261101-001`).
-   - **The parts of a knot's space meet as a knot against a hub (proved).**
-     - Cut a knot's space along three incidences. One side always ends in three points and the other in three open line slots.
-     - The line side behaves exactly as the knot itself (not-all-equal) on its three slots, and the point side exactly as one point (an
-       equality hub). The two fit together as a line through a point.
-       - *Corrected on 2026-11-01 (`NATIVE-PATHS-20261101-001`, two entries below).* "Exactly" holds only up to signs. In spaces with
-         cycles of Fano blocks, the point side forces its three points into one fixed pattern or its complement, for example two equal
-         and one opposite. That is an equality hub once one colour is read exchanged, and the line side is the knot read the same way.
+   **2026-11-01: composition of the knot's contradictions** (`KNOT-COMPOSE-20261101-001`).
+   - **The parts of a contradiction meet as a knot against a hub (proved).**
+     - Cut a contradiction along three incidences. One side always ends in three distinctions and the other in three open knot slots.
+     - The knot side behaves exactly as the knot itself (not-all-equal) on its three slots, and the distinction side exactly as one
+       distinction (an equality hub). The two fit together as a knot that contains a distinction.
+       - *Corrected on 2026-11-01 (`NATIVE-PATHS-20261101-001`, two entries below).* "Exactly" holds only up to signs. In
+         contradictions with cycles of Fano blocks, the distinction side forces its three distinctions into one fixed pattern or its
+         complement, for example two equal and one opposite. That is an equality hub once one colour is read exchanged, and the knot
+         side is the knot read the same way.
    - **Knot meeting knot fails only for parity (proved).**
      - A side that behaves as a knot allows at least half of all patterns.
      - Two such sides can exclude each other only if each is exactly half of all patterns, and an exact half with full projections is
        a parity coset.
-     - So every failing composition of the knot's spaces passes through a hub, and the only hub-free failing composition is parity's.
-       - *Corrected on 2026-11-01 (`NATIVE-PATHS-20261101-001`).* Not every one. A knot's space with a cycle of Fano blocks can be cut
+     - So every failing composition of the knot's contradictions passes through a hub, and the only hub-free failing composition is
+       parity's.
+       - *Corrected on 2026-11-01 (`NATIVE-PATHS-20261101-001`).* Not every one. A contradiction with a cycle of Fano blocks can be cut
          along two incidences, and then one side is an equality and the other a negation, with no hub. That two-place parity is exactly
          the hub-free failure predicted here. Across three or more channels, knot never meets knot.
-   - **Knot and hub are two sides of one structure.** Swapping points and lines turns a knot's space into a knot's space and exchanges
-     the knot side and the hub side of every cut.
+   - **Knot and hub are two sides of one structure.** Swapping distinctions and knots turns a contradiction into a contradiction and
+     exchanges the knot side and the hub side of every cut.
    - **Reading.**
-     - Knots relate through shared points. A direct knot-to-knot relation, with nothing between, exists only for parity, the law that
+     - Knots relate through shared distinctions. A direct knot-to-knot relation, with nothing between, exists only for parity, the law that
        hides one full bit. This matches every earlier result in which only parity survived hub-free composition.
-     - Against the native-network gate, the knot's spaces form a native network of knots joined by network hubs, which the owner put in
-       scope on 2026-10-29. They do not form a hub-free contact network.
+     - Against the native-network gate, the knot's contradictions form a native network of knots joined by network hubs, which the
+       owner put in scope on 2026-10-29. They do not form a hub-free contact network.
      - Provenance: the splice calculus and the point lemma are our earlier epics, on Lovász–Plummer and Robertson–Seymour–Thomas. The
        hub reading was found in no source checked.
    - **Next (taken).** The note on native selection. Later: native paths through network hubs (2/3).
 
    **2026-11-01: a note on native selection** (`SELECTION-NOTE-20261101-001`).
-   - **The arc in one place.** A five-page note gathers the results of this question since the coupling dichotomy:
-     - the knot's spaces select its law;
+   - **The arc in one note.** A five-page note gathers the results of this question since the coupling dichotomy:
+     - the knot's contradictions select its law;
      - the knot is the only three-place law whose failures can be recognised while its count is hard;
      - parity's failures are recognisable but local (with the corrected analysis recorded);
      - three places stay special at four;
-     - the knot's spaces compose only through hubs.
+     - the knot's contradictions compose only through hubs.
        - *Corrected on 2026-11-01 (`NATIVE-PATHS-20261101-001`).* Across two-incidence cuts they compose by two-place parity, without
          a hub. The note needs an erratum before it is shared.
    - **Checked again.** Every one of the sixteen proofs it cites was rerun from scratch and reproduced its result exactly. Nine headline
@@ -4070,33 +4098,33 @@ So holes come in two kinds:
    - **Next (taken).** Native paths and separation through network hubs, the step from first emergence toward composed topology (2/3).
      A side question: whether five weak four-place laws can ever fail (1/3).
 
-   **2026-11-01: native paths in the knot's spaces** (`NATIVE-PATHS-20261101-001`).
+   **2026-11-01: native paths in the knot's contradictions** (`NATIVE-PATHS-20261101-001`).
    - **Two kinds of meeting (proved).**
-     - **Two incidences.** Cut a knot's space along two incidences where that separates it, as in every odd cycle of Fano blocks and in
+     - **Two incidences.** Cut a contradiction along two incidences where that separates it, as in every odd cycle of Fano blocks and in
        the twisted cube. One side behaves as a wire (equality), the other as a negation: two-place parity, with no hub.
-     - **Three incidences.** One side forces its three points into one pattern or its complement, and the other side allows the six other
-       patterns: a knot against a hub, up to signs.
-     - **A correction.** This corrects the composition entry: the knot's spaces do not compose only through hubs.
-   - **The routes are fixed by the space (proved; laminarity computed on ten spaces).**
-     - Every three-incidence cut is either a genuine splice or a two-incidence cut with one point or line moved across.
-     - Genuine splices never cross. So the parts, and the routes between them, are determined by the space itself; no observer chooses
-       them.
+     - **Three incidences.** One side forces its three distinctions into one pattern or its complement, and the other side allows the
+       six other patterns: a knot against a hub, up to signs.
+     - **A correction.** This corrects the composition entry: the knot's contradictions do not compose only through hubs.
+   - **The routes are fixed by the contradiction (proved; laminarity computed on ten contradictions).**
+     - Every three-incidence cut is either a genuine splice or a two-incidence cut with one distinction or knot moved across.
+     - Genuine splices never cross. So the parts, and the routes between them, are determined by the contradiction itself; no observer
+       chooses them.
    - **A route carries one bit at most (proved).**
      - **Through a chain of Fano blocks.** A route remembers only whether its length is even or odd. Two blocks of an odd cycle are
-       joined by two routes of opposite parity, and that disagreement is exactly why the space fails.
-     - **Through a hub.** A route remembers nothing of what lies beyond: the far side acts as one point or one line, whatever it
+       joined by two routes of opposite parity, and that disagreement is exactly why no state is allowed.
+     - **Through a hub.** A route remembers nothing of what lies beyond: the far side acts as one distinction or one knot, whatever it
        contains.
      - **Separation.** Cutting both routes separates two blocks. Cutting one leaves the other route's parity.
      - **Length.** Counting the hidden witnesses gives 5 per block and 5^m for a chain of m blocks. So length appears only as a count,
        not as a relation.
    - **Knot meets knot only pairwise (proved).**
-     - Twist some incidences, so that each reads its point's colour exchanged. A knot's space keeps failing exactly when the twisted set
-       is a cut of its incidence graph.
+     - Twist some incidences, so that each reads its distinction's colour exchanged. A contradiction stays contradictory exactly when
+       the twisted set is a cut of its incidence graph.
      - So two parts can both behave as knots toward each other only across two incidences, as two-place parity, and never across three or
        more.
    - **Reading.**
-     - **Fixed, but not native paths.** Routes between the parts of a knot's space are fixed by the space. Each is two-place parity or
-       passes a hub, and neither is a contact. In these spaces the ladder from first emergence stops at hubs.
+     - **Fixed, but not native paths.** Routes between the parts of a contradiction are fixed by the contradiction. Each is two-place
+       parity or passes a hub, and neither is a contact. In these contradictions the ladder from first emergence stops at hubs.
      - **The 2-versus-3 boundary, seen from composition.** Three-place emergence stays inside the parts. Everything joining the parts is
        pairwise or a hub.
      - **Hubs are where the knot selects.** A system in which every distinction lies in at most two knots never fails (Seymour's bound).
@@ -4105,8 +4133,8 @@ So holes come in two kinds:
    - **Pending the owner.**
      - The note needs an erratum before it is shared.
      - The composition record should be marked superseded, text kept, as was done once before at the owner's request.
-   - **Next (taken, together with counted length).** A full pivot to selection versus composition: does any law both select its spaces
-     and compose natively?
+   - **Next (taken, together with counted length).** A full pivot to selection versus composition: does any law both select its
+     contradictions and compose natively?
      - **First test.** The five weak four-place laws, checked for cycle-like composition (2/3).
      - **Alternatives.** The note's erratum and reissue (1/3); counted length as a measure (1/3).
 
@@ -4120,25 +4148,25 @@ So holes come in two kinds:
      - A linear law's count is easy, so it cannot select. The knot selects, parity composes, and no law with a knot does both.
      - A law without knots, such as signed two-clauses, can select, but only below three places.
    - **Counted length is a measure (proved).**
-     - On a knot's space, count the ways each side of a cut can be arranged, given what its channels show.
+     - On a contradiction, count the ways each side of a cut can be arranged, given what its channels show.
      - The count is the same for every allowed pattern, and the two sides' counts multiply to the whole.
      - So the logarithm of the count, counted length, adds up over the parts: log 5 for every Fano block (one handle), plus the
        logarithm of the glue's spanning-tree number (log 2 in the twisted cube).
    - **Counting sees what relations hide (proved).**
      - **Along a chain of m blocks.** The relation remembers only whether m is even, but the count is 5^m.
-     - **Across a hub.** The relation sees one point, but the count sees everything behind it.
-     - **In rings of blocks from different spaces.** The relation (whether the number of blocks is odd) and the count (the product of
-       what each block hides) vary independently.
+     - **Across a hub.** The relation sees one distinction, but the count sees everything behind it.
+     - **In cycles of blocks from different contradictions.** The relation (whether the number of blocks is odd) and the count (the
+       product of what each block hides) vary independently.
    - **Reading.**
      - **Two layers.** Relations carry emergence and decide failure, with one bit per route. Counts carry magnitude: how much each part
        hides.
-     - **Canonical weights.** Counted length is fixed by the law and the space, and unchanged when points and lines swap. It supplies the
-       canonical weights that earlier route values had to choose.
+     - **Canonical weights.** Counted length is fixed by the law and the contradiction, and unchanged when distinctions and knots swap.
+       It supplies the canonical weights that earlier route values had to choose.
      - **Not a native distance.** The routes it measures are not native paths, so it is a measure, not a native distance. Admitting it
        as a native magnitude would be a change of doctrine.
      - **Provenance.** Our circuit-composition theorem, mutual selection and amplitude results; Post, Schaefer and Valiant. The
-       forcing-place hubs, the exclusion statement, factorization across two-incidence cuts, and the rings were found in no source
-       checked.
+       forcing-place hubs, the exclusion statement, factorization across two-incidence cuts, and the cycles of blocks were found in no
+       source checked.
    - **Next (taken).** Values beyond two: a law on three or four values that is Mal'tsev, composes like cycles, and has a hard count
      would both select and compose (2/3).
      - **Alternatives.** Whether the weak four-place laws ever fail (1/3); the note's erratum (1/3).
@@ -4154,22 +4182,22 @@ So holes come in two kinds:
        congruence.
      - So blurred parity (three values) and blurred Z3 (four values) compose like cycles, fail recognisably and count hard. Selection,
        as first defined, and composition coexist from three values on. The two-value exclusion is exactly two-valued.
-   - **Where laws fail, and whether globally (proved; all 60 cubic substrates up to 8 points).**
+   - **Where laws fail, and whether globally (proved; all 60 cubic substrates up to 8 distinctions).**
      - **The knot** fails exactly on Pfaffian substrates (8 of 60), and every failure is global.
      - **Parity** fails exactly where the number of perfect matchings is even (38), and never globally, because each distinction sits
-       in three lines and three is odd.
+       in three knots and three is odd.
      - **Z3** fails everywhere, and globally exactly at Z3-corank 1 (24), because three is zero mod 3.
    - **A bridge at four values, but rigid (proved).**
      - On its corank-1 substrates, blurred Z3 selects in the knot's full sense: its failures are global and recognisable, it is easy to
-       count once a line is removed, and hard in general. It also composes like cycles.
-     - But removing a line leaves one degree of freedom and only ties: its selected spaces are pairwise.
-     - The knot's selected spaces can keep a knot after a line is removed: every line of the Fano plane, and four other Pfaffian
+       count once a knot is removed, and hard in general. It also composes like cycles.
+     - But removing a knot leaves one degree of freedom and only ties: its selected contradictions are pairwise.
+     - The knot's selected contradictions can keep a knot after a knot is removed: every knot of the Fano pattern, and four other Pfaffian
        substrates.
    - **Reading.**
-     - **Three kinds of cancellation.** Parity cannot fail globally on cubic spaces. Z3 fails globally when the whole space cancels.
-       The knot fails globally when nothing cancels: all its perfect matchings agree in sign.
+     - **Three kinds of cancellation.** Parity cannot fail globally on three-regular systems. Z3 fails globally when the whole system
+       cancels. The knot fails globally when nothing cancels: all its perfect matchings agree in sign.
      - **What sets the knot apart.** Counting can be made hard without touching relations. The knot's real distinction is relational:
-       it selects spaces that keep emergence inside, which the linear bridge cannot.
+       it selects contradictions that keep emergence inside, which the linear bridge cannot.
      - **Provenance.** Our circuit theorem, the census, Pfaffian signings and Seymour's bound; Dyer–Richerby, Bulatov and Bulatov–Dalmau.
        The blurring lemma, the three-value enumeration, the bridges, the three-law census and the rigidity contrast were found in no
        source checked.
@@ -4181,35 +4209,36 @@ So holes come in two kinds:
 
    **2026-11-01: does composing like cycles force rigid selection?** (`RIGID-SELECTION-20261101-001`).
    - **Where selection is rigid (proved).**
-     - **Fields.** Over a field, a system that fails globally has exactly one dependency among its lines. Removing any line leaves a
-       single line of solutions, so only ties remain, at every number of places.
+     - **Fields.** Over a field, a system that fails globally has exactly one dependency among its knots. Removing any knot leaves
+       solutions with a single free parameter, so only ties remain, at every number of places.
      - **Blurring.** It keeps this rigidity.
      - **S3 and D_p.** Their knots on full ranges are blurred parity.
      - **Simple three-value laws.** Those that are not affine have no knots on full ranges.
    - **Rigidity fails beyond fields (proved).**
-     - **Signed Z4, four places.** It fails globally on a 6-point substrate (each line omits the two ends of one hexagon edge) and
-       keeps knots after any line is removed.
-     - **Signed Z4, three places.** It needs 9 points: all 73 cubic substrates up to 8 points, under every signing, leave only ties.
+     - **Signed Z4, four places.** It fails globally on a 6-distinction substrate (each knot omits the two ends of one hexagon edge) and
+       keeps knots after any knot is removed.
+     - **Signed Z4, three places.** It needs 9 distinctions: all 73 cubic substrates up to 8 distinctions, under every signing, leave
+       only ties.
      - **Unit-weighted laws.** Z8, Z9, Z25 and Z27 do the same on many small substrates.
    - **Selection spends the top layer (proved).**
      - **The theorem.** Over Z_(p^k), and over any finite chain ring, a system that fails globally leaves, after any removal, solutions
-       whose top digits form a single line. That is exactly what a field would leave.
+       whose top digits have a single free parameter. That is exactly what a field would leave.
      - **Hence fields are rigid.** Over a field the top digit is everything.
      - **What survives otherwise.** A kept knot has at most one variable taking all values, and hides at most k − 1 of its k digits.
      - **Attained.** The bound is reached over Z4, Z8, Z16, Z9, Z27 and Z25.
    - **A law that composes, selects and keeps emergence (proved).**
      - **The law.** Blurred signed Z4 on five values (0 doubled).
      - **What it does.** It composes like cycles, fails globally and recognisably, counts #P-complete, and keeps knots inside its
-       selected spaces, below its top layer.
+       selected contradictions, below its top layer.
    - **Two values (proved).** A two-valued law with knots that composes like cycles is affine, hence rigid. The knot keeps knots
-     inside its selected spaces. So at two values the two exclude each other.
+     inside its selected contradictions. So at two values the two exclude each other.
    - **Reading.**
      - **A failure in a carry.** Z4's global failure is solvable mod 2 and fails only mod 4: a cancellation that closes only once
        the carries are counted.
-     - **What it spends and keeps.** It spends the top digit, and its kept knots relate lower digits to the one shared top line.
-       For example, the 2's digits of two variables and the units digit of a third have even parity.
+     - **What it spends and keeps.** It spends the top digit, and its kept knots relate lower digits to the single free parameter of
+       the top digits. For example, the 2's digits of two variables and the units digit of a third have even parity.
      - **The knot has one layer.** Its failures need no cancellation, and it keeps three-place emergence in its only layer. Of all the
-       laws met so far, it alone keeps top-layer emergence inside the spaces it selects.
+       laws met so far, it alone keeps top-layer emergence inside the contradictions it selects.
      - **Precision.** The census lists 60 incidence graphs, which give 73 substrates when read both ways. The earlier census statements
        hold under both readings.
      - **Provenance.** Smith form over chain rings, Goursat, the skew-free property and Dyer–Richerby are classical. The closest
@@ -4238,62 +4267,63 @@ So holes come in two kinds:
      - **The example.** A simple Mal'tsev law on five values (Z4 plus one value) composes like cycles. Its top is everything.
      - **Why it fails.** The Z4 examples inside it keep knots in that top.
    - **The right layer (proved for sections from one chain ring).**
-     - **Declared domains.** Give each point one domain, which every knot on it uses.
-     - **The theorem.** After any removal, the leading digits of the variables, each read in its own section, form at most one line.
+     - **Declared domains.** Give each distinction one domain, which every knot containing it uses.
+     - **The theorem.** After any removal, the leading digits of the variables, each read in its own section, have at most one free
+       parameter.
      - **Consequence.** Every kept knot has at most one varying leading digit. This answers last entry's objection: with declared
-       domains, each point's own section is the right layer.
+       domains, each distinction's own section is the right layer.
      - **Two different rings** joined through tops: checked, not proved.
-   - **Correction.** The group theorem holds for systems with declared domains. Lines that confine a point further are open, though
+   - **Correction.** The group theorem holds for systems with declared domains. Knots that confine a distinction further are open, though
      every such case met was rigid.
    - **Reading.**
-     - **Laws that compose like cycles.** Such a law keeps emergence inside a selected space only through depth: an abelian section
+     - **Laws that compose like cycles.** Such a law keeps emergence inside a selected contradiction only through depth: an abelian section
        with two layers, where a digit carries into the next, so at least four values. Even then, only below that section's top.
      - **The knot.** It keeps three-place emergence on two values, in its only layer, with no carry. This is the sense in which the
        knot stands apart.
-     - **Selection leaves a hub.** When the knot's space loses a line, the rest forces that line all-equal, so its three points are tied.
-       In the Fano plane the four points off it become a new four-place knot.
+     - **Selection leaves a hub.** When the knot's contradiction loses a knot, the rest forces that knot all-equal, so its three
+       distinctions are tied. In the Fano pattern the four distinctions off it become a new four-place knot.
      - **Provenance.** Commutator theory, Z-groups and Smith forms are classical. The depth theorem, the group list read through our
        circuit theorem, the counterexample and the layer-wise statement were found in no source checked.
    - **Next (taken).** What selection leaves, and how pieces glue (2/3).
-     - **The lead.** The knot's spaces are Fano atoms glued along lines, and a removed line is exactly a hub of tied points.
-     - **The question.** Does gluing selected spaces along these leftover hubs build the knot's spaces natively, keeping emergence
-       across the glue?
+     - **The lead.** The knot's contradictions are Fano pieces glued at knots, and a removed knot is exactly a hub of tied distinctions.
+     - **The question.** Does gluing selected contradictions at these leftover hubs build the knot's contradictions natively, keeping
+       emergence across the glue?
 
    **2026-11-02: what selection leaves, and how pieces glue** (`HUB-GLUE-20261102-001`).
    - **Selection leaves the gluing interface (proved).**
-     - **The hub.** Removing a line from a knot's space ties its three points. That is exactly the point side of the 3-edge cuts along
-       which knot spaces are glued.
-     - **The gluing.** Splicing two knot spaces at a line and a point gives a knot space, for one switching class of signs, and every
-       simple cut is such a splice.
-     - **With the earlier grammar.** Every knot space is built this way from Fano atoms and planar glue.
+     - **The hub.** Removing a knot from a contradiction ties its three distinctions. That is exactly the distinction side of the 3-edge
+       cuts at which contradictions are glued.
+     - **The gluing.** Splicing two contradictions at a knot and a distinction gives a contradiction, for one switching class of signs,
+       and every simple cut is such a splice.
+     - **With the earlier grammar.** Every contradiction is built this way from Fano pieces and planar glue.
    - **A held hub composes like cycles (proved).**
-     - **When it holds.** If the removed line is not on a cut's hub side, the hub keeps its three points tied: one bit.
+     - **When it holds.** If the removed knot is not on a cut's hub side, the hub keeps its three distinctions tied: one bit.
      - **The composition.** The knots crossing the cut are then exactly the eliminations (K1 ∪ K2) minus the hub of one knot through
        the hub on each side, ties included: a 2-sum.
      - **The reason** is the knot's symmetry under flipping every value. An OR, which lacks it, fails.
    - **An opened hub creates (proved, with computation).**
-     - **When it opens.** If the removed line lies on the hub's own side, the interface becomes whatever the closed piece allows. It is
-       one pair (the hub re-ties and still composes), two pairs (one hub point released) or all three (the hub becomes a knot on its own
-       three points).
-     - **Composition fails.** Then composition breaks down. In the 13-point Fano splice, 72 crossing knots arise that no chain of
+     - **When it opens.** If the removed knot lies on the hub's own side, the interface becomes whatever the closed piece allows. It is
+       one pair (the hub re-ties and still composes), two pairs (one hub distinction released) or all three (the hub becomes a knot on
+       its own three distinctions).
+     - **Composition fails.** Then composition breaks down. In the 13-distinction Fano splice, 72 crossing knots arise that no chain of
        eliminations produces, against none through held hubs.
    - **Reading.**
      - **Where the exclusion is lifted.** Selection and cycle-like composition exclude each other as properties of a whole law, but
-       inside the knot's own spaces they meet exactly at the hubs selection leaves.
-     - **One removal decides.** The removal that selects a space also decides, cut by cut, whether the glue composes (held) or creates
-       (opened).
+       inside the knot's own contradictions they meet exactly at the hubs selection leaves.
+     - **One removal decides.** The removal that selects a contradiction also decides, cut by cut, whether the glue composes (held) or
+       creates (opened).
      - **Still hubs.** The hubs are equality fan-out, so this composes emergence, not contacts: no native path or distance is claimed.
      - **Provenance.** Tight cuts of Pfaffian graphs, sign-nonsingularity and the matroid 2-sum are classical. The relational 2-sum
        through a complement-symmetric hub and the classification of opened hubs were found in no source checked.
    - **Next (taken).** Emergence along the splice tree (2/3).
-     - **The question.** In a space of several pieces, are the knots kept after any removal iterated 2-sums along the held cuts, with
-       new emergence only at the cuts opened on the way to the removed line?
+     - **The question.** In a contradiction of several pieces, are the knots kept after any removal iterated 2-sums along the held
+       cuts, with new emergence only at the cuts opened on the way to the removed knot?
 
    **2026-11-02: emergence along the tree of cuts** (`SPLICE-TREE-20261102-001`).
    - **A removal orients the tree (proved).**
-     - **Held and opened.** In a space glued from several pieces, removing a line holds every cut that points toward it and opens every
-       cut that points away.
-     - **Locality.** Beyond a held cut nothing depends on which line was removed.
+     - **Held and opened.** In a contradiction glued from several pieces, removing a knot holds every cut that points toward it and
+       opens every cut that points away.
+     - **Locality.** Beyond a held cut nothing depends on which knot was removed.
    - **Held cuts compose exactly (proved).**
      - **The theorem.** The knots crossing only held cuts are exactly the iterated 2-sums, through held hubs, of knots crossing no cut.
      - **So** new emergence lives only across opened cuts.
@@ -4302,17 +4332,17 @@ So holes come in two kinds:
        jointly.
      - **Hubs decide nothing.** Each of three hub-level rules fails to say where knots are created:
        - touching hubs;
-       - a hub point on the removed line;
-       - the removed line's own hub.
-     - **Regularities.** Every jointly created knot has three or four points, and chains of the smallest knot space (K4^(3)) create
+       - a hub distinction in the removed knot;
+       - the removed knot's own hub.
+     - **Regularities.** Every jointly created knot has three or four distinctions, and chains of the smallest contradiction (K4^(3)) create
        nothing.
    - **Reading.**
      - **Composing and creating.** After a removal, the knot's kept emergence has two sides: a tree of exact compositions on the held
        side, and one zone of creation on the opened side.
      - **A lead toward topology (scouting, not a claim).**
-       - **The scout.** Single splices of the census spaces. New knots appeared only when the opened hub had become a knot and the
-         removed line's side was non-planar: 100 of 160 such removals, against none of the 560 with a planar side.
-       - **What it suggests.** Each Fano atom is a handle, so creation may live in the handles while planar glue only composes.
+       - **The scout.** Single splices of the census contradictions. New knots appeared only when the opened hub had become a knot and the
+         removed knot's side was non-planar: 100 of 160 such removals, against none of the 560 with a planar side.
+       - **What it suggests.** Each Fano piece is a handle, so creation may live in the handles while planar glue only composes.
      - **Still hubs.** Hubs are equality fan-out, so no native path or distance is claimed.
      - **Provenance.** Iterated 2-sums along a tree decomposition are standard for matroids. The relational version, the orientation
        reading and the classification of opened-cut interaction are new here; no literature search was run for them.
@@ -4322,180 +4352,181 @@ So holes come in two kinds:
 
    **2026-11-02: emergence needs a handle** (`HANDLE-EMERGENCE-20261102-001`).
    - **Planar glue creates nothing, as far as tested.**
-     - **Beyond the census.** 24 planar knot spaces were spliced into other knot spaces (grown from the cube, prisms, the truncated
-       octahedron; 10 to 14 points). No removal on the planar side created a new knot across the opened cut: 1612 removals and
+     - **Beyond the census.** 24 planar contradictions were spliced into other contradictions (grown from the cube, prisms, the truncated
+       octahedron; 10 to 14 distinctions). No removal on the planar side created a new knot across the opened cut: 1612 removals and
        432,867 crossing knots.
-     - **The census.** Planar sides create nothing there either. The Fano plane and one other non-planar space create.
+     - **The census.** Planar sides create nothing there either. The Fano pattern and one other non-planar contradiction create.
    - **What a handle creates (computation, with two small lemmas).**
-     - **A three-point knot through the hub.** Every created knot joins a point of the removed line's hub, one near point and one far
-       point.
-     - **How it works.** The hub and the near point fix all three gluing ports at once, and the far point answers to that whole
+     - **A three-distinction knot through the hub.** Every created knot joins a distinction of the removed knot's hub, one near
+       distinction and one far distinction.
+     - **How it works.** The hub and the near distinction fix all three gluing ports at once, and the far distinction answers to that whole
        pattern. No single port carries the constraint across, so no elimination produces it.
-     - **In the Fano plane.** Every removed line meets the gluing line, so the hub sits on a port.
-   - **On a plane space the knot fails by counting faces (proved).**
-     - **The odd point.** Each line has one point that disagrees with the other two. Say the line skips the corner opposite that
-       point.
+     - **In the Fano pattern.** Every removed knot meets the gluing knot, so the hub sits on a port.
+   - **On a planar contradiction the knot fails by counting faces (proved).**
+     - **The odd distinction.** Each knot has one distinction that disagrees with the other two. Say the knot skips the corner opposite that
+       distinction.
      - **The face condition.** With Kasteleyn's signs, every face must hold an odd number of skipped corners.
-     - **The count.** A plane space with n lines has n + 2 faces (Euler's formula). So the n skips can never cover them, and the
+     - **The count.** A planar contradiction with n knots has n + 2 faces (Euler's formula). So the n skips can never cover them, and the
        knot fails.
      - **After a removal.** Every face holds exactly one skipped corner, so the solutions are exactly the perfect matchings of the
-       remaining lines to the faces off the removed line.
-     - **Planar interfaces.** A line meeting the removed line loses a face to it. So the configuration that creates in the Fano plane
-       never forms on a plane side.
+       remaining knots to the faces off the removed knot.
+     - **Planar interfaces.** A knot meeting the removed knot loses a face to it. So the configuration that creates in the Fano pattern
+       never forms on a planar side.
    - **A handle leaves slack (proved count, computed example).**
      - **The count.** Each handle removes two faces and adds two global (homology) parities.
-     - **In the Fano plane.** On its torus embeddings, 14 assignments per removal pass the face test, and the homology parities keep
+     - **In the Fano pattern.** On its torus embeddings, 14 assignments per removal pass the face test, and the homology parities keep
        only 5 of them. That is where creation lives.
-   - **Reading.** Selection on a plane space is a matching of lines to faces, so its emergence only composes. A handle trades two faces
-     for two global parities, and those parities let new knots appear. Hubs remain equality fan-out, so no native path or distance is
-     claimed.
+   - **Reading.** Selection on a planar contradiction is a matching of knots to faces, so its emergence only composes. A handle trades
+     two faces for two global parities, and those parities let new knots appear. Hubs remain equality fan-out, so no native path or
+     distance is claimed.
    - **Open.** A proof that a planar side never creates.
    - **Provenance.**
      - **Classical.** Kasteleyn's face condition, and Moret's theorem that planar not-all-equal 3-SAT is polynomial.
      - **New here, as stated.** The skip model and its genus count. A bounded search found no statement of them.
    - **Next (taken).** Planar glue only composes (2/3).
-     - **The question.** Prove from the matching picture that a plane side never creates. Then test whether a handle creates exactly
+     - **The question.** Prove from the matching picture that a planar side never creates. Then test whether a handle creates exactly
        what its homology parities add.
 
    **2026-11-02: planar glue only composes** (`PLANAR-COMPOSE-20261102-001`).
-   - **On a plane side the hub reaches the gluing ports (proved in part).**
-     - **The tie class (proved).** After a removal, every point on the removed line's faces is tied to its hub. In the matching picture,
-       states differ by flipping the points inside closed curves, and those curves never enter the removed line's faces.
-     - **The route (proved).** Suppose the hub and a near point fix the gluing pattern. If the hub is also tied to one of the pattern's
-       two other ports, or knotted with both in the right way, then every candidate new knot is built from one-sided knots, one port at
-       a time, whatever is glued on the far side.
-     - **The access lemma (checked, not proved).** One of those two always holds on a plane side: all 9020 cases on 42 plane spaces of up
-       to 20 points (8020 as first recorded; corrected by `PLANAR-THEOREM-20261102-001`). On the Fano plane and census 58 it fails in every case: the Fano plane's hub sits on the very port it pins as odd.
+   - **On a planar side the hub reaches the gluing ports (proved in part).**
+     - **The tie class (proved).** After a removal, every distinction on the removed knot's faces is tied to its hub. In the matching
+       picture, states differ by flipping the distinctions inside closed curves, and those curves never enter the removed knot's faces.
+     - **The route (proved).** Suppose the hub and a near distinction fix the gluing pattern. If the hub is also tied to one of the
+       pattern's two other ports, or knotted with both in the right way, then every candidate new knot is built from one-sided knots,
+       one port at a time, whatever is glued on the far side.
+     - **The access lemma (checked, not proved).** One of those two always holds on a planar side: all 9020 cases on 42 planar
+       contradictions of up to 20 distinctions (8020 as first recorded; corrected by `PLANAR-THEOREM-20261102-001`). On the Fano
+       pattern and census 58 it fails in every case: the Fano pattern's hub sits on the very port it pins as odd.
    - **Cutting a handle open is not canonical (computation).**
      - **Dropping one homology parity** removes about nine tenths of a handle's new knots.
      - **Dropping both** removes all of them for some cut positions and not for others, even within one homology class.
-     - **Local point flips** remove none.
+     - **Local distinction flips** remove none.
      - **So** homology carries most of a handle's creation, but "a handle creates exactly what its homology parities add" fails as stated.
    - **Reading.**
-     - **A plane side.** Its removed line always leaves a hub that can reach the ports one at a time. A handle breaks that: its hub lands
+     - **A planar side.** Its removed knot always leaves a hub that can reach the ports one at a time. A handle breaks that: its hub lands
        on the port it must not use.
      - **Still hubs.** Hubs remain equality fan-out, so no native path or distance is claimed.
-     - **Provenance.** The plane matching structure is classical (Kasteleyn). The tie-class, route and access statements and the
+     - **Provenance.** The planar matching structure is classical (Kasteleyn). The tie-class, route and access statements and the
        handle-cut measurements are new here.
    - **Open.**
      - The access lemma in general.
-     - That every new knot is a pinned three-point knot (true in all 2820 found).
+     - That every new knot is a pinned three-distinction knot (true in all 2820 found).
      - Four-pattern removals.
    - **Next (taken).** Finish the planar theorem (2/3).
      - **The plan.** Prove the access lemma from the height picture, then the premise from the matching picture.
-     - **The alternative.** Selection as a dimer model on large plane spaces.
+     - **The alternative.** Selection as a dimer model on large planar contradictions.
 
    **2026-11-02: the planar theorem, by discrete convexity** (`PLANAR-THEOREM-20261102-001`).
    - **The access lemma is proved.**
-     - **Heights.** After a line is removed from a plane space, each solution is a matching of lines to faces. Comparing it with a fixed
-       matching across every corner gives each point an integer height, zero on the removed line's faces. A point's value relative to
-       the hub is the parity of its height.
+     - **Heights.** After a knot is removed from a planar contradiction, each solution is a matching of knots to faces. Comparing it
+       with a fixed matching across every corner gives each distinction an integer height, zero on the removed knot's faces. A
+       distinction's value relative to the hub is the parity of its height.
      - **Convexity.** The heights are exactly the solutions of a system of difference constraints. So they are closed under rounding the
        midpoint of any two, up or down.
-     - **The gluing line.** Its three states form a staircase in the heights of its ports.
-     - **The argument.** Suppose the hub and a near point fix the gluing pattern without reaching the ports. Then rounding midpoints
-       between the pinned state and the other states would force the near point's height to two different values. So the hub is tied to
-       a usable port, or knotted with the other two ports one step away.
-   - **The hub is not special (proved).** Re-centring the heights at any point keeps them convex. So on a plane side, every pair of
-     points that fixes the gluing pattern reaches the ports, and every candidate new knot of that kind is built one port at a time,
+     - **The gluing knot.** Its three states form a staircase in the heights of its ports.
+     - **The argument.** Suppose the hub and a near distinction fix the gluing pattern without reaching the ports. Then rounding
+       midpoints between the pinned state and the other states would force the near distinction's height to two different values. So
+       the hub is tied to a usable port, or knotted with the other two ports one step away.
+   - **The hub is not special (proved).** Re-centring the heights at any distinction keeps them convex. So on a planar side, every pair of
+     distinctions that fixes the gluing pattern reaches the ports, and every candidate new knot of that kind is built one port at a time,
      whatever is glued on the far side.
-   - **Knots across one port are 2-sums (proved, any space).** A crossing knot whose constraint passes through a single port is two
+   - **Knots across one port are 2-sums (proved, any contradiction).** A crossing knot whose constraint passes through a single port is two
      one-sided knots eliminated through that port, or a one-sided knot in disguise.
    - **Handles (computation).**
-     - **The census.** On the Fano plane and census 58, no pair of non-port points that fixes the pattern reaches the ports.
-     - **Larger spaces.** The Fano plane was spliced into plane spaces, giving 16 points with one handle. There, access depends on
-       where the gluing line sits, not on where the removed line is. In the plane part every case has it (6,056). In the Fano part
-       almost none do (992 of 12,368).
+     - **The census.** On the Fano pattern and census 58, no pair of non-port distinctions that fixes the pattern reaches the ports.
+     - **Larger contradictions.** The Fano pattern was spliced into planar contradictions, giving 16 distinctions with one handle.
+       There, access depends on where the gluing knot sits, not on where the removed knot is. In the planar part every case has it
+       (6,056). In the Fano part almost none do (992 of 12,368).
    - **What is left.**
-     - **Generated on every splice tested.** One-sided knots and pinned three-point knots generate all 58,875 crossing knots, and every
-       new knot is a pinned three-point knot through the hub.
+     - **Generated on every splice tested.** One-sided knots and pinned three-distinction knots generate all 58,875 crossing knots, and
+       every new knot is a pinned three-distinction knot through the hub.
      - **Unproved.** The remaining 12,102 crossing knots reduce on every splice, but no proof that they always do is known.
    - **Reading.**
-     - **Why a plane side composes.** Its selections have convex heights, so a pin can always be taken apart one port at a time.
+     - **Why a planar side composes.** Its selections have convex heights, so a pin can always be taken apart one port at a time.
      - **What a handle does.** It breaks the heights where the selection is read.
      - **Doctrine.** Hubs remain equality fan-out, and the heights are a proof device, not a distance.
-   - **Provenance.** Heights of plane matchings (Thurston, Propp) and L-convex sets (Murota) are classical. New here: the access proof,
+   - **Provenance.** Heights of planar matchings (Thurston, Propp) and L-convex sets (Murota) are classical. New here: the access proof,
      its extension to every pinning, the 2-sum lemma and the handle-locality computation.
-   - **Next (taken).** Handles seen from a gluing line (2/3).
-     - **The plan.** First prove that access at a gluing line depends only on a planar neighbourhood of that line. Then test, with one
-       and two Fano atoms, whether creation happens exactly at gluing lines on handles.
+   - **Next (taken).** Handles seen from a gluing knot (2/3).
+     - **The plan.** First prove that access at a gluing knot depends only on a planar neighbourhood of that knot. Then test, with one
+       and two Fano pieces, whether creation happens exactly at gluing knots on handles.
      - **The alternatives.** Finish the reduction of the remaining crossing knots (1/3). Selection as a dimer model (2/3).
 
-   **2026-11-03: handles seen from a gluing line** (`HANDLE-LOCALITY-20261103-001`).
+   **2026-11-03: handles seen from a gluing knot** (`HANDLE-LOCALITY-20261103-001`).
    - **Access is local (proved).**
-     - **A wider setting.** Some plane systems have as many lines as odd faces. Each such system behaves like a plane knot space minus a
-       line: its solutions are matchings of lines to odd faces, with convex heights. So every pinning there reaches the ports.
-     - **Splices.** Seen from across a 3-edge cut, an untouched side looks exactly like the point or line it replaced. So a plane piece
-       seen through a cut is always such a system.
-     - **So** two points of a plane piece that fix a gluing line's pattern always reach its ports, whatever is removed elsewhere.
-   - **Where new knots appear (computation, with one lemma).** The spaces are one or two Fano planes in plane glue.
-     - **A cut carrying one bit screens (proved).** Creation at a plane gluing line is then creation on a plane space.
-     - **No handle at either line: nothing is created** (896 cases).
-     - **A handle attached at a line** never creates outside itself.
-     - **A handle attached at a point, opened by the removal,** creates at plane gluing lines around it, out to distance 5 on the spaces
-       tested. It talks to the plane glue through the point's three copies, which carry two bits.
+     - **A wider setting.** Some planar systems have as many knots as odd faces. Each such system behaves like a planar contradiction
+       minus a knot: its solutions are matchings of knots to odd faces, with convex heights. So every pinning there reaches the ports.
+     - **Splices.** Seen from across a 3-edge cut, an untouched side looks exactly like the distinction or knot it replaced. So a
+       planar piece seen through a cut is always such a system.
+     - **So** two distinctions of a planar piece that fix a gluing knot's pattern always reach its ports, whatever is removed elsewhere.
+   - **Where new knots appear (computation, with one lemma).** The contradictions are one or two Fano patterns in planar glue.
+     - **A cut carrying one bit screens (proved).** Creation at a planar gluing knot is then creation on a planar contradiction.
+     - **No handle at either knot: nothing is created** (896 cases).
+     - **A handle attached at a knot** never creates outside itself.
+     - **A handle attached at a distinction, opened by the removal,** creates at planar gluing knots around it, out to distance 5 on
+       the contradictions tested. It talks to the planar glue through the distinction's three copies, which carry two bits.
    - **The earlier premise fails.**
-     - **Near an opened handle.** Many new knots are not pinned. Two handle points force the gluing line into two adjacent patterns, and
-       a far point rules them out.
-     - **Inside handles.** Four-point new knots appear.
+     - **Near an opened handle.** Many new knots are not pinned. Two handle distinctions force the gluing knot into two adjacent
+       patterns, and a far distinction rules them out.
+     - **Inside handles.** Four-distinction new knots appear.
    - **Reading.**
-     - **An intact handle is invisible.** It looks like the point or line it replaced.
-     - **An opened handle is read twice:** where it sits, and in a halo that the plane glue carries by forced matchings.
+     - **An intact handle is invisible.** It looks like the distinction or knot it replaced.
+     - **An opened handle is read twice:** where it sits, and in a halo that the planar glue carries by forced matchings.
      - **Doctrine.** Distances here only describe where creation was found. Hubs remain equality fan-out.
-   - **Provenance.** Matching heights and convexity are classical (Kasteleyn, Thurston, Propp, Murota). New here: plane matching systems
+   - **Provenance.** Matching heights and convexity are classical (Kasteleyn, Thurston, Propp, Murota). New here: planar matching systems
      as a common setting, the interface and screening lemmas, and the creation map.
    - **Next (taken).** The halo as dimer forcing (2/3).
-     - **The plan.** Characterize, by forcing in the matching picture of the point split, which plane gluing lines an opened handle
-       reaches. Prove it, and measure the reach on large plane pieces.
-     - **The alternatives.** Explain the screened line-attached handle; finish the planar reduction lemma; classify the new knot types
+     - **The plan.** Characterize, by forcing in the matching picture of the distinction split, which planar gluing knots an opened handle
+       reaches. Prove it, and measure the reach on large planar pieces.
+     - **The alternatives.** Explain the screened knot-attached handle; finish the planar reduction lemma; classify the new knot types
        (1/3 each).
 
    **2026-11-03: the halo of an opened handle** (`HALO-FORCING-20261103-001`).
-   - **Which lines an opened handle reaches (route lemma proved, converse checked).**
-     - **The rule.** A new knot is two points in the handle and one far point. It appears exactly when the two handle points squeeze the
-       gluing line into one or two patterns, and no route rebuilds the knot.
-     - **A route.** One of the line's points separates the knot, or a pair of the line's points carries a two-step elimination. The far
-       point decides which pairs are usable, so some far sides see farther than others.
-     - **The evidence.** The rule held for every case on spaces with a Fano plane attached to plane pieces of up to 14 points: 1,500 new
-       knots, and no routed knot new.
-   - **Heights compute it (proved).** Which port patterns and line patterns occur together is a parity question about heights. Shortest
-     paths answer it exactly, so the halo can be computed on plane pieces of hundreds of points.
+   - **Which knots an opened handle reaches (route lemma proved, converse checked).**
+     - **The rule.** A new knot is two distinctions in the handle and one far distinction. It appears exactly when the two handle
+       distinctions squeeze the gluing knot into one or two patterns, and no route rebuilds the knot.
+     - **A route.** One of the knot's distinctions separates the knot, or a pair of the knot's distinctions carries a two-step
+       elimination. The far distinction decides which pairs are usable, so some far sides see farther than others.
+     - **The evidence.** The rule held for every case on contradictions with a Fano pattern attached to planar pieces of up to 14
+       distinctions: 1,500 new knots, and no routed knot new.
+   - **Heights compute it (proved).** Which port patterns and knot patterns occur together is a parity question about heights. Shortest
+     paths answer it exactly, so the halo can be computed on planar pieces of hundreds of distinctions.
    - **How far it reaches (computation).**
-     - **On a ladder,** all the way: on prisms of up to 80 points, the farthest gluing line still creates.
-     - **On a grid,** three steps: on spaces of up to 256 points, nothing farther creates. From distance 7 on, a grid line is exactly
-       independent of the handle's point.
+     - **On a ladder,** all the way: on prisms of up to 80 distinctions, the farthest gluing knot still creates.
+     - **On a grid,** three steps: on contradictions of up to 256 distinctions, nothing farther creates. From distance 7 on, a knot in
+       the grid is exactly independent of the handle's distinction.
    - **Reading.**
-     - **The mechanism.** The plane glue carries a handle's influence by forced matchings. A ladder is frozen and passes it on without
+     - **The mechanism.** The planar glue carries a handle's influence by forced matchings. A ladder is frozen and passes it on without
        loss; a grid is liquid and forgets it.
-     - **So** where native selection can see a handle depends on the rigidity of the plane around it.
+     - **So** where native selection can see a handle depends on the rigidity of the planar glue around it.
      - **Doctrine.** Distances only describe where creation was found. The heights are a proof device. Hubs remain equality fan-out.
    - **Provenance.** Matching heights and the frozen and liquid phases of dimer models are classical (Thurston, Propp, Kenyon, Okounkov,
      Sheffield). New here: the route criterion, the height transfer, and the halo measurements.
    - **Next (taken).** Creation and dimer phases (2/3).
-     - **The test.** Build plane pieces where frozen and liquid parts meet. Is the halo exactly the frozen region joined to the handle?
+     - **The test.** Build planar pieces where frozen and liquid parts meet. Is the halo exactly the frozen region joined to the handle?
      - **The proofs.** The ladder law and the grid bound.
-     - **The alternatives.** The screened line-attached handle; the planar reduction lemma; other and several handles (1/3 each).
+     - **The alternatives.** The screened knot-attached handle; the planar reduction lemma; other and several handles (1/3 each).
 
    **2026-11-03: creation and dimer phases** (`PHASE-HALO-20261103-001`).
-   - **The claiming lemma (proved).** When a handle's point is split open, a port is the odd point of its line exactly when that line
-     takes the one skip of the face opposite the port. So every line around that face feels whether the port is odd.
+   - **The claiming lemma (proved).** When a handle's distinction is split open, a port is the odd distinction of its knot exactly when
+     that knot takes the one skip of the face opposite the port. So every knot around that face feels whether the port is odd.
    - **Opposite faces carry the halo (computation).**
-     - **The test.** The Fano plane as handle, at 126 attachment points: ladders, thick tubes, a grid, random spaces, and a ladder arm
-       spliced onto a grid.
-     - **The result.** Every halo line beyond three steps lies on a face opposite the attachment point. In 124 cases the halo is exactly
-       those faces' far lines.
+     - **The test.** The Fano pattern as handle, at 126 attachment distinctions: ladders, thick tubes, a grid, random contradictions,
+       and a ladder arm spliced onto a grid.
+     - **The result.** Every halo knot beyond three steps lies on a face opposite the attachment distinction. In 124 cases the halo is
+       exactly those faces' far knots.
      - **So the phase reading is replaced.** The reach is the size of the faces opposite the handle, not a frozen region as such. A
        ladder's opposite face is a whole cycle; a grid's faces have at most three corners.
-   - **The handle matters (computation).** Census 58 as handle can also speak through the point's own long face (5 of 24 points). The
-     general law is "the faces around the attachment point".
+   - **The handle matters (computation).** Census 58 as handle can also speak through the distinction's own long face (5 of 24
+     distinctions). The general law is "the faces around the attachment distinction".
    - **The ladder law (proved, given the route criterion).** A prism is a cyclic chain of consecutive triples. Its transfer matrix repeats
-     with period 2, so a far line's transfer depends only on its parity, the same on every prism. The halo runs the full opposite face on
+     with period 2, so a far knot's transfer depends only on its parity, the same on every prism. The halo runs the full opposite face on
      every prism.
-   - **The grid law (certified).** A line with the full transfer is independent of the handle (proved). Every grid line tested at
-     distance 9 or more has it, and at 7 or more on the 256-point grid (exact certificates). Height ranges between ports and lines are 0
-     at every distance on ladders and grow with distance on grids.
+   - **The grid law (certified).** A knot with the full transfer is independent of the handle (proved). Every knot in the grid tested
+     at distance 9 or more has it, and at 7 or more on the 256-distinction grid (exact certificates). Height ranges between ports and
+     knots are 0 at every distance on ladders and grow with distance on grids.
    - **Reading.**
-     - **A face is a native long-range constraint.** Exactly one of its lines skips into it, so a handle is seen as far as the faces
+     - **A face is a native long-range constraint.** Exactly one of its knots skips into it, so a handle is seen as far as the faces
        around it extend.
      - **The dimer phase** summarizes face sizes and how rigid the heights are. It is not a separate cause.
      - **Doctrine.** Distances only describe where creation was found. The heights are a proof device. Hubs remain equality fan-out.
@@ -4503,69 +4534,69 @@ So holes come in two kinds:
      claiming lemma, the opposite-face law and its dependence on the handle, the chain reduction of the ladder, and the height-range
      measurements.
    - **Next (taken).** Which faces a handle uses (2/3).
-     - **The plan.** Classify handles by the faces they speak through, their own or the opposite ones. Explain the Fano plane against
+     - **The plan.** Classify handles by the faces they speak through, their own or the opposite ones. Explain the Fano pattern against
        census 58 through the handle's port relation. Prove the opposite-face law for the handles that obey it.
-     - **The alternatives.** The screened line-attached handle; the planar reduction lemma; several interacting handles (1/3 each).
+     - **The alternatives.** The screened knot-attached handle; the planar reduction lemma; several interacting handles (1/3 each).
 
    **2026-11-03: which faces a handle uses** (`FACE-CLAIM-20261103-001`).
-   - **What each face reads (proved).** Split the plane at the attachment point. Its three faces there merge into one face that takes a
-     single skip, on the arc opposite the port that is odd.
+   - **What each face reads (proved).** Split the planar glue at the attachment distinction. Its three faces there merge into one face
+     that takes a single skip, on the arc opposite the port that is odd.
      - **Own arcs.** The arc between two ports is barred exactly when those ports disagree.
-     - **Opposite faces.** Whenever two ports agree, the face opposite the third port is claimed by that port's line.
-     - **Frozen lines.** A barred face fixes two points of each of its lines.
-   - **Claims (proved).** A frozen line can still deviate by claiming its face, at either fixed value.
+     - **Opposite faces.** Whenever two ports agree, the face opposite the third port is claimed by that port's knot.
+     - **Frozen knots.** A barred face fixes two distinctions of each of its knots.
+   - **Claims (proved).** A frozen knot can still deviate by claiming its face, at either fixed value.
      - **On an own arc,** a claim comes from one port pattern.
      - **On an opposite face,** it comes from two, which share the other two ports.
-   - **The claim rule (one direction proved, the other computed).** An opened handle creates at a frozen line exactly when a pair of its
-     points freezes the line and neither point alone excludes either claim. No disagreement appeared against exact creation or the
-     pipeline.
+   - **The claim rule (one direction proved, the other computed).** An opened handle creates at a frozen knot exactly when a pair of
+     its distinctions freezes the knot and neither distinction alone excludes either claim. No disagreement appeared against exact
+     creation or the pipeline.
    - **Which faces a handle uses (computation).**
-     - **The census.** 305 handles from 24 non-planar knot spaces, in every port order on a ladder. Nine signatures occur.
+     - **The census.** 305 handles from 24 non-planar contradictions, in every port order on a ladder. Nine signatures occur.
      - **The rule.** The faces are decided by the handle's port relation alone.
-     - **The Fano plane.** Each of its single points removes one pattern per other class. That kills every one-pattern claim and never a
-       two-pattern one, so it never uses an own arc (proved) and always uses the opposite face.
+     - **The Fano pattern.** Each of its single distinctions removes one pattern per other class. That kills every one-pattern claim
+       and never a two-pattern one, so it never uses an own arc (proved) and always uses the opposite face.
      - **Census 58** uses its own arc exactly when the bottom port is 0 or 5.
-   - **The last law fails (counterexample, exact on a small piece).** Where a ladder arm is spliced onto a grid, a junction point freezes
-     the arm's far long face with two-pattern claims, and every handle tested creates there. So the halo is not confined to the faces
-     around the point: it lies on frozen lines whose claims survive the handle's single points.
+   - **The last law fails (counterexample, exact on a small piece).** Where a ladder arm is spliced onto a grid, a junction distinction
+     freezes the arm's far long face with two-pattern claims, and every handle tested creates there. So the halo is not confined to the
+     faces around the distinction: it lies on frozen knots whose claims survive the handle's single distinctions.
    - **Reading.**
      - **The bit.** A face reads one bit of the handle: whether two of its ports agree.
-     - **The plane** carries that bit as far as its frozen structure reaches.
-     - **The handle** decides it by how sharply one of its points cuts the port patterns.
+     - **The planar glue** carries that bit as far as its frozen structure reaches.
+     - **The handle** decides it by how sharply one of its distinctions cuts the port patterns.
      - **The phase reading returns, refined.** The frozen region is the dimer model's frozen region for the ports' boundary condition.
      - **Doctrine.** Distances only describe where creation was found. Hubs remain equality fan-out.
    - **Provenance.** Kasteleyn parities, corner matchings, unit propagation and dimer frozen regions are classical. New here: the arc
      identity, the reading and claim lemmas, the claim rule, the census of handles and the junction counterexample.
    - **Next (taken).** The frozen region by heights, and rigid strips (2/3).
-     - **The plan.** Prove that a port pattern freezes exactly the points whose height difference to the ports cannot vary, explain the
-       junction as a rigid strip, and test whether long rigid strips through liquid bodies carry the halo.
+     - **The plan.** Prove that a port pattern freezes exactly the distinctions whose height difference to the ports cannot vary,
+       explain the junction as a rigid strip, and test whether long rigid strips through liquid bodies carry the halo.
      - **The alternatives.** The converse of the claim rule as a theorem (2/3); the structure of the nine signatures; the screened
-       line-attached handle (1/3 each).
+       knot-attached handle (1/3 each).
 
    **2026-11-03: the frozen region by heights, and rigid strips** (`STRIP-RELAY-20261103-001`).
    - **Frozen means fixed height (proved).** The port class fixes the ports' heights, because the merged face's single skip lies on a
-     known arc. Heights with fixed port values are closed under rounded midpoints. So a port pattern freezes exactly the points whose
+     known arc. Heights with fixed port values are closed under rounded midpoints. So a port pattern freezes exactly the distinctions whose
      height difference to the ports cannot vary.
-   - **Collapsing untouched sides (proved for the transfer).** Across a 3-edge cut, a side holding neither the handle nor the gluing line
-     acts as the vertex it lost. Collapsing it leaves creation unchanged, so the faces-around-the-point law holds again in the collapsed
-     space. The last epic's junction was a ring seeing itself as the closed prism.
-   - **Pendant rings (proved, given the ladder law).** From the middle point of the ring's removed line, the halo runs along the ring's
-     whole far face, for every ring length.
+   - **Collapsing untouched sides (proved for the transfer).** Across a 3-edge cut, a side holding neither the handle nor the gluing
+     knot acts as the vertex it lost. Collapsing it leaves creation unchanged, so the faces-around-the-distinction law holds again in
+     the collapsed contradiction. The last epic's junction was a ring seeing itself as the closed prism.
+   - **Pendant rings (proved, given the ladder law).** From the middle distinction of the ring's removed knot, the halo runs along the
+     ring's whole far face, for every ring length.
    - **Rigid strips relay (computation, exact on small pieces).**
      - **The relay.** Between two grids, an opened handle in the strip or the far grid creates in the first grid near its cut. It does so
-       from every distance along a rigid strip, at the same lines whatever the strip's length.
-     - **Liquid screens.** A grid in the strip's place screens it within three steps.
-     - **Direction.** The relay enters only a side split at a point there, and a handle leaves only where its grid lost a line. A
-       line-attached composite handle is screened.
+       from every distance along a rigid strip, at the same knots whatever the strip's length.
+     - **Liquid screens.** A grid instead of the strip screens it within three steps.
+     - **Direction.** The relay enters only a side split at a distinction there, and a handle leaves only where its grid lost a knot. A
+       knot-attached composite handle is screened.
    - **Reading.**
      - **Native channels.** Rigid strips are native channels for a handle's one-bit reading. Native selection sees a handle at the far
        end of a frozen channel, in a liquid region the handle is not in.
-     - **Direction.** The channels are directed, from the side that lost a line to the side that lost a point, the direction of a
+     - **Direction.** The channels are directed, from the side that lost a knot to the side that lost a distinction, the direction of a
        handle's own splice.
      - **Doctrine.** Distances only describe where creation was found. A channel carries a reading, not a metric. Hubs remain equality
        fan-out.
    - **Provenance.** L♮-convexity (Murota) and frozen dimer regions are classical. The interface lemma and the screening of
-     line-attached handles are from HANDLE-LOCALITY. New here: the heights lemma, the reduction lemma, the ring law, relays, their
+     knot-attached handles are from HANDLE-LOCALITY. New here: the heights lemma, the reduction lemma, the ring law, relays, their
      screening and their direction.
    - **Next (taken).** Relay networks (2/3).
      - **The plan.** Branch and chain rigid strips through small pieces. Test whether one handle's halo reaches several grids, how
@@ -4576,12 +4607,12 @@ So holes come in two kinds:
    **2026-11-04: relay networks** (`RELAY-NET-20261104-001`).
    - **Relays are wires.** After a frozen hop, an opened handle's relay reaches the next cut as an arc signal: two ports fixed and
      disagreeing, the third free.
-     - **The arc lemma.** An arc signal freezes exactly the lines with a corner on the own arc between its fixed ports. One direction is
+     - **The arc lemma.** An arc signal freezes exactly the knots with a corner on the own arc between its fixed ports. One direction is
        proved; the other is computed.
-     - **Repeaters.** A station passes the signal on exactly when its out-line lies on that arc. Aligned stations repeat it without
+     - **Repeaters.** A station passes the signal on exactly when its out-knot lies on that arc. Aligned stations repeat it without
        loss, and the relay reaches a grid four cuts away. A misaligned station ends it.
    - **Broadcast, direction, bypasses (computation, exact on small networks).**
-     - **Hubs broadcast.** A hub copies a relay into several receivers at once, so one handle is read in several places.
+     - **Hubs broadcast.** A hub copies a relay into several receivers at once, so one handle is read at several receivers.
      - **Downstream only.** No relay ever runs upstream.
      - **Bypasses.** Stations whose two cut vertices are adjacent are no barrier.
    - **A withdrawn guess.** "Relays cross at most two cuts" was an artifact of one cut placement.
@@ -4593,303 +4624,312 @@ So holes come in two kinds:
    - **Provenance.** Frozen dimer regions and unit propagation are classical. New here: arc signals, the arc lemma, repeaters, broadcast
      and the depth scan.
    - **Next (taken).** A native reading of genus (2/3).
-     - **The plan.** With several Fano atoms in plane glue, ask whether the creation map over all removals splits into one halo per atom,
-       counting and locating the handles.
+     - **The plan.** With several Fano pieces in planar glue, ask whether the creation map over all removals splits into one halo per
+       Fano piece, counting and locating the handles.
      - **The alternatives.** The display rule (1/3); the claim rule's converse (2/3).
 
    **2026-11-04: a native reading of genus** (`NATIVE-GENUS-20261104-001`).
-   - **The creation map splits by atom.** Whether a removal creates at a gluing line depends only on the atoms holding the two lines;
-     every other atom acts as the vertex it replaced.
-     - **Status.** Proved for atoms attached at a point (interface and screening lemmas). Checked exactly for atoms attached at a line
-       (13 designs, 5,130 entries).
-     - **So** each removal's halo is its own atom's, and atoms attached at a line have no halo on plane glue.
+   - **The creation map splits by Fano piece.** Whether a removal creates at a gluing knot depends only on the Fano pieces holding the
+     two knots; every other Fano piece acts as the vertex it replaced.
+     - **Status.** Proved for Fano pieces attached at a distinction (interface and screening lemmas). Checked exactly for Fano pieces
+       attached at a knot (13 designs, 5,130 entries).
+     - **So** each removal's halo is its own Fano piece's, and Fano pieces attached at a knot have no halo on planar glue.
    - **Native selection counts and locates separated handles (computation fixed in advance).**
-     - **The count.** Take a largest set of lines among which nothing creates. The remaining lines fall into one piece per atom, and
-       each piece is an atom: 416 of 420 separated spaces with two or three atoms, every placement on two small prisms.
-     - **Where it stops.** Atoms that touch merge, and so do three atoms on the 4-point cube, whose glue keeps one line. On the 32
-       three-fold spaces up to 22 points, where atoms mostly touch, the count equals the genus in 10. It counts Fano atoms: the one
-       trisum handle in the census is invisible to it.
-   - **Blocks (exploratory).** Inside a piece, maximal blocks of lines that create at one another equal the genus in 29 of the 32 and
+     - **The count.** Take a largest set of knots among which nothing creates. The remaining knots fall into one part per Fano piece, and
+       each part is a Fano piece: 416 of 420 separated contradictions with two or three Fano pieces, every placement on two small prisms.
+     - **Where it stops.** Fano pieces that touch merge, and so do three Fano pieces on the 4-distinction cube, whose glue keeps one
+       knot. On the 32 three-regular contradictions up to 22 distinctions, where Fano pieces mostly touch, the count equals the genus
+       in 10. It counts Fano pieces: the one trisum handle in the census is invisible to it.
+   - **Blocks (exploratory).** Inside a part, maximal blocks of knots that create at one another equal the genus in 29 of the 32 and
      in all 310 Fano pairs, touching ones included.
-     - **They overcount** where two point-attached atoms hang from one Fano atom.
-     - **Census 58 breaks into many blocks**, because its lines sharing two points (a doubled square) never create at each other.
-   - **Wires do not blur the count.** A rigid strip or a hub lands one atom's halo on another atom's cut in every placement tested
-     (exact on a 26-point strip network). The count stays one piece per atom, and each halo stays its atom's: the count reads the
-     quiet glue and the lines the glue creates at, which a halo does not change.
+     - **They overcount** where two distinction-attached Fano pieces hang from one Fano piece.
+     - **Census 58 breaks into many blocks**, because its knots sharing two distinctions (a doubled square) never create at each other.
+   - **Wires do not blur the count.** A rigid strip or a hub lands one Fano piece's halo on another Fano piece's cut in every placement
+     tested (exact on a 26-distinction strip network). The count stays one part per Fano piece, and each halo stays its Fano piece's:
+     the count reads the quiet glue and the knots the glue creates at, which a halo does not change.
    - **Reading.**
-     - **Non-planarity is local.** Native selection marks exactly the handles' lines: plane glue never creates, and the glue creates
-       at every Fano line.
-     - **The brace tree, one level down.** Quiet lines for glue, blocks for atoms, one-way creation for a cut's direction, silence for
+     - **Non-planarity is local.** Native selection marks exactly the handles' knots: planar glue never creates, and the glue creates
+       at every knot of a Fano piece.
+     - **The brace tree, one level down.** Quiet knots for glue, blocks for Fano pieces, one-way creation for a cut's direction, silence for
        doubled squares: native creation may read the whole decomposition.
-     - **Doctrine.** Pieces and blocks describe placements, not distances; no embedding is used.
-   - **Provenance.** Genus = number of Fano atoms (THREEFOLD-SURFACES) and tight cuts (Lovász) are known. New here: the splitting lemma,
+     - **Doctrine.** Parts and blocks describe placements, not distances; no embedding is used.
+   - **Provenance.** Genus = number of Fano pieces (THREEFOLD-SURFACES) and tight cuts (Lovász) are known. New here: the splitting lemma,
      the native count, its exhaustive small tests, blocks, and wires against the count.
    - **Next (taken).** A native reading of the brace tree (2/3).
      - **The plan.** Fix a refined block statistic in advance; test whether blocks, one-way creation and silence recover the
-       tight-cut decomposition on the census and on fresh trees of atoms; try to prove the block lemma for Fano atoms.
-     - **The alternatives.** Proving that plane glue never creates (2/3); the display rule (1/3).
+       tight-cut decomposition on the census and on fresh trees of Fano pieces; try to prove the block lemma for Fano pieces.
+     - **The alternatives.** Proving that planar glue never creates (2/3); the display rule (1/3).
 
    **2026-11-05: a native reading of the brace tree** (`BRACE-TREE-20261105-001`).
-   - **Atoms are blocks.** The Fano plane's creation map is complete: every removal creates at every other line.
-     - **Atoms attached at a line.** Such an atom creates among its own lines exactly as the Fano plane does (proved: the rest of the
-       space forces the ports constant, and the screening lemma applies).
-     - **Atoms attached at a point.** The same is checked on every design.
-   - **Cuts are read in their direction.** A receiver's cut lines and the emitter's lines create at each other; its intact lines create
-     one way at the emitter's, never the reverse. This held at all 213 cuts between two atoms.
-   - **The dictionary.** Where only atoms join two atom lines, their relation is fixed by the tree: 42,090 pairs, none off the rules.
-     - **Same atom.** Mutual.
-     - **Downstream.** Mutual with a receiver's cut lines, one-way with its intact lines.
+   - **Fano pieces are blocks.** The Fano pattern's creation map is complete: every removal creates at every other knot.
+     - **Fano pieces attached at a knot.** Such a Fano piece creates among its own knots exactly as the Fano pattern does (proved: the
+       rest of the contradiction forces the ports constant, and the screening lemma applies).
+     - **Fano pieces attached at a distinction.** The same is checked on every design.
+   - **Cuts are read in their direction.** A receiver's cut knots and the emitter's knots create at each other; its intact knots create
+     one way at the emitter's, never the reverse. This held at all 213 cuts between two Fano pieces.
+   - **The dictionary.** Where only Fano pieces join two knots of Fano pieces, their relation is fixed by the tree: 42,090 pairs, none
+     off the rules.
+     - **Same Fano piece.** Mutual.
+     - **Downstream.** Mutual with a receiver's cut knots, one-way with its intact knots.
      - **Siblings.** Mutual.
-     - **Co-receivers.** Their intact lines are silent to each other.
-     - **Through plane glue.** The relation can depend on more than the tree.
-   - **The source rule counts the genus.** Keep a block of mutual creation when one of its lines is blind to everything the others are
+     - **Co-receivers.** Their intact knots are silent to each other.
+     - **Through planar glue.** The relation can depend on more than the tree.
+   - **The source rule counts the genus.** Keep a block of mutual creation when one of its knots is blind to everything the others are
      blind to.
-     - **The count.** The rule equals the number of Fano atoms, and the genus, on all 157 spaces without a non-Fano brace. 110 of them are
-       fresh: every three-fold class of 23 to 26 points.
-     - **The plain block count** fails 32 of them, wherever atoms hang from a common atom.
-     - **Later (CHAIN-TRANSFER-20261106-001).** On Fano trees the rule holds up to five atoms and fails at six; twins and footprints
+     - **The count.** The rule equals the number of Fano pieces, and the genus, on all 157 contradictions without a non-Fano brace. 110
+       of them are fresh: every three-regular class of 23 to 26 distinctions.
+     - **The plain block count** fails 32 of them, wherever Fano pieces hang from a common Fano piece.
+     - **Later (CHAIN-TRANSFER-20261106-001).** On Fano trees the rule holds up to five Fano pieces and fails at six; twins and footprints
        replace it there.
    - **Refuted along the way.**
-     - **Determinism through plane glue.**
-     - **Silent glue across an atom.** In one class, a Fano atom relays creation from a plane piece to a doubled square.
-   - **Not read.** Handles that are not Fano atoms: census 58 (itself a single brace of another kind) and the trisum brace.
+     - **Determinism through planar glue.**
+     - **Silent glue across a Fano piece.** In one class, a Fano piece relays creation from a planar piece to a doubled square.
+   - **Not read.** Handles that are not Fano pieces: census 58 (itself a single brace of another kind) and the trisum brace.
    - **Reading.**
      - **The oriented handle tree, natively.** Native selection reads the handle tree: how many handles, where, and which way each
-       touching pair is glued. Touching atoms, where the plain count merged them, are resolved.
-     - **Doctrine.** Blocks, directions and silence are relations given by creation; a direction is which side of a cut lost a point,
+       touching pair is glued. Touching Fano pieces, where the plain count merged them, are resolved.
+     - **Doctrine.** Blocks, directions and silence are relations given by creation; a direction is which side of a cut lost a distinction,
        not a direction in space.
-   - **Provenance.** Tight cuts (Lovász) and genus = Fano atoms (THREEFOLD-SURFACES) are known. New here: the dictionary, native cut
+   - **Provenance.** Tight cuts (Lovász) and genus = Fano pieces (THREEFOLD-SURFACES) are known. New here: the dictionary, native cut
      directions, the source rule and its fresh test.
    - **Next (taken).** A two-bit screening lemma (2/3).
-     - **The plan.** Prove that a side attached at a line acts as that line for creation, not just for solutions. That would complete
-       the splitting lemma and should give the block lemma for atoms at a point and the one-way rule.
-     - **The alternatives.** What native creation sees of non-Fano handles (2/3); the source rule beyond 26 points (1/3).
+     - **The plan.** Prove that a side attached at a knot acts as that knot for creation, not just for solutions. That would complete
+       the splitting lemma and should give the block lemma for Fano pieces at a distinction and the one-way rule.
+     - **The alternatives.** What native creation sees of non-Fano handles (2/3); the source rule beyond 26 distinctions (1/3).
 
    **2026-11-05: the two-bit screening lemma** (`TWO-BIT-SCREEN-20261105-001`).
    - **The closure is a bootstrap.** New knots are crossing triples that the rule "four classes with two derived knot triples derive
      all their knot triples" cannot reach from the non-crossing ones (proved equal to the elimination closure).
-   - **No loss (proved).** An intact Fano side attached at a line never removes creation.
-     - **Off the side.** Its new knots off the side are exactly those of the space with the line restored.
-     - **Through the side.** A generated knot through a hidden point has generated port shadows, and no crossing knot meets two hidden
+   - **No loss (proved).** An intact Fano side attached at a knot never removes creation.
+     - **Off the side.** Its new knots off the side are exactly those of the contradiction with the knot restored.
+     - **Through the side.** A generated knot through a hidden distinction has generated port shadows, and no crossing knot meets two hidden
        classes.
-     - **Pendant lines.** The same holds for one new point on one new line through two near points.
-   - **One statement left.** That the side never adds creation follows from the pendant-line statement: one new point on one new line
+     - **Pendant knots.** The same holds for one new distinction in one new knot through two near distinctions.
+   - **One statement left.** That the side never adds creation follows from the pendant-knot statement: one new distinction in one new knot
      never adds creation.
      - **Evidence.** It held on 117,344 cases, random systems included.
      - **Not proved, and not easy.** It is not local, and it is not a consequence of the knots alone.
-   - **One line is the limit.**
-     - **Two or three lines create.** A point on two or three new lines through a line's points, such as the ports' majority, creates
-       where the space without it does not.
-     - **Subcube points never did.** No point whose exclusions are subcubes changed creation.
-     - **Knot-space sides.** Every knot-space side tried, including every three-fold space up to 22 points, has only subcube points.
-   - **In Fano trees (spaces built from Fano atoms alone).**
-     - **Contraction (proved).** Creation in the chain of atoms between two lines implies creation in the whole space.
-     - **Blocks (proved).** So every atom is a block of mutual creation.
-     - **The touching rule.** The brace dictionary between atoms collapses to one rule: a removal creates at a line of another atom
-       exactly when that line touches its atom's cut toward the removal. The removed line's role never matters.
-       - **Checked.** On every chain of two (294) and three (576) atoms, and on four-atom paths.
+   - **One knot is the limit.**
+     - **Two or three knots create.** A distinction in two or three new knots through a knot's distinctions, such as the ports'
+       majority, creates where the contradiction without it does not.
+     - **Subcube distinctions never did.** No distinction whose exclusions are subcubes changed creation.
+     - **Sides cut from contradictions.** Every such side tried, including every three-regular contradiction up to 22 distinctions, has only
+       subcube distinctions.
+   - **In Fano trees (contradictions built from Fano pieces alone).**
+     - **Contraction (proved).** Creation in the chain of Fano pieces between two knots implies creation in the whole contradiction.
+     - **Blocks (proved).** So every Fano piece is a block of mutual creation.
+     - **The touching rule.** The brace dictionary between Fano pieces collapses to one rule: a removal creates at a knot of another
+       Fano piece exactly when that knot touches its Fano piece's cut toward the removal. The removed knot's role never matters.
+       - **Checked.** On every chain of two (294) and three (576) Fano pieces, and on paths of four.
        - **Proved half.** Its creating half holds in every Fano tree at distances one and two.
-     - **Still computed.** Non-creation at lines that do not touch, and atoms three or more apart.
+     - **Still computed.** Non-creation at knots that do not touch, and Fano pieces three or more apart.
    - **Reading.**
-     - **Two bits made precise.** A side is screened when everything it hides is one-line information: each hidden Fano point, seen
-       alone, hangs on one line through two ports.
-     - **The tree, read locally.** A line is seen from a direction exactly when it touches the cut facing that direction. An emitting
-       atom presents all its lines to the cut, and a receiving atom only its three cut lines. That is how creation reads a cut's
+     - **Two bits made precise.** A side is screened when everything it hides is one-knot information: each hidden Fano distinction, seen
+       alone, hangs from one knot through two ports.
+     - **The tree, read locally.** A knot is seen from a direction exactly when it touches the cut facing that direction. An emitting
+       Fano piece presents all its knots to the cut, and a receiving Fano piece only its three cut knots. That is how creation reads a cut's
        direction.
-     - **Doctrine.** Hidden points are witnesses quantified away. Quantifying a Fano side's witnesses away loses no emergence; whether
+     - **Doctrine.** Hidden distinctions are witnesses quantified away. Quantifying a Fano side's witnesses away loses no emergence; whether
        it adds none is the open statement.
    - **Provenance.** Bootstrap closures and principal matroid extensions are classical analogues, neither found stating these results.
-     New here: the tetrahedron form, the no-loss theorem, the pendant reduction and its sharpness, the contraction theorem, and the
-     proofs of the block lemma and nearby creations.
-   - **Next (taken).** Prove the pendant-line statement (2/3), starting from the computed fact that
-     eliminating through the gluing line's points suffices.
+     New here: the four-class form of the closure (the record's tetrahedron form), the no-loss theorem, the pendant reduction and its
+     sharpness, the contraction theorem, and the proofs of the block lemma and nearby creations.
+   - **Next (taken).** Prove the pendant-knot statement (2/3), starting from the computed fact that
+     eliminating through the gluing knot's distinctions suffices.
      - **The alternative.** The bridge to proof complexity (2/3), still the leading alternative for the next arc.
 
-   **2026-11-06: the pendant-line statement** (`PENDANT-LINE-20261106-001`).
-   - **Creation is decided at the gluing line, in two rounds (proved).** The closure reaches exactly the crossing knots whose near and
-     far parts meet through the gluing line.
-     - **Round one.** A near knot and a far knot sit on the same pair of the line's points.
-     - **Round two.** Two round-one knots share a point.
-     - **New knots** are the crossing constraints the parts carry together that pass through no pair of the line's points.
+   **2026-11-06: the pendant-knot statement** (`PENDANT-LINE-20261106-001`).
+   - **Creation is decided at the gluing knot, in two rounds (proved).** The closure reaches exactly the crossing knots whose near and
+     far parts meet through the gluing knot.
+     - **Round one.** A near knot and a far knot sit on the same pair of the knot's distinctions.
+     - **Round two.** Two round-one knots share a distinction.
+     - **New knots** are the crossing constraints the parts carry together that pass through no pair of the knot's distinctions.
      - **Proof.** The closure was reduced to local configurations, and all 348,376,032 were checked.
-   - **One new line never adds creation (proved).** A new point on one new line through two points, whatever its signs, leaves creation
-     unchanged.
+   - **One new knot never adds creation (proved).** A new distinction in one new knot through two distinctions, whatever its signs,
+     leaves creation unchanged.
      - **Proof.** From the two-round rule, with all 347,149,320 local configurations checked.
-     - **Sharpness.** A point on two or three such lines can create (TWO-BIT-SCREEN), so one line is the exact limit.
+     - **Sharpness.** A distinction in two or three such knots can create (TWO-BIT-SCREEN), so one knot is the exact limit.
    - **Completed.**
-     - **The two-bit screening lemma.** An intact Fano side acts as its line for creation, as it does for solutions.
-     - **The splitting lemma** for atoms attached at points and at lines.
-     - **In Fano trees.** A line creates at another exactly when it does in the chain of their atoms.
-     - **The touching rule up to distance two.** A line receives creation from another atom at most two away exactly when it touches
-       its atom's cut toward it. So native creation provably keeps each atom whole and reads every cut in its direction.
+     - **The two-bit screening lemma.** An intact Fano side acts as its knot for creation, as it does for solutions.
+     - **The splitting lemma** for Fano pieces attached at distinctions and at knots.
+     - **In Fano trees.** A knot creates at another exactly when it does in the chain of their Fano pieces.
+     - **The touching rule up to distance two.** A knot receives creation from another Fano piece at most two away exactly when it touches
+       its Fano piece's cut toward it. So native creation provably keeps each Fano piece whole and reads every cut in its direction.
    - **Reading.**
-     - **Where emergence is selected.** Native selection picks out emergence exactly where the parts fail to meet at the gluing line.
-     - **"Two bits", made exact.** One line of hidden information is safe and two are not.
-     - **Doctrine.** Directions are which side of a cut lost a point, and touching is incidence. No space is assumed.
+     - **Where emergence is selected.** Native selection picks out emergence exactly where the parts fail to meet at the gluing knot.
+     - **"Two bits", made exact.** One knot of hidden information is safe and two are not.
+     - **Doctrine.** Directions are which side of a cut lost a distinction, and touching is incidence. No space is assumed.
    - **Provenance.** Reducing a closure to finitely many local configurations is a standard verification route; no statement of these
      results was found.
-   - **What is left.** For the source rule to become a theorem, a transfer along chains of four or more atoms. Distance three held on
-     the 16 four-atom paths computed.
+   - **What is left.** For the source rule to become a theorem, a transfer along chains of four or more Fano pieces. Distance three held on
+     the 16 paths of four Fano pieces computed.
    - **Next (taken).** A transfer along chains (2/3): prove the touching rule at every distance in Fano trees.
      - **The alternative.** The bridge to proof complexity (2/3).
 
    **2026-11-06: the touching rule at every distance** (`CHAIN-TRANSFER-20261106-001`).
-   - **The touching rule holds at every distance (proved).** In every space built from Fano atoms alone, a line receives creation from a
-     removal in another atom exactly when it touches its atom's cut facing the removal, however far away the removal is.
-     - **Proof.** A chain of atoms carries only a finite profile from one cut to the next. There are 47 profiles, none new after three
-       atoms, and each was checked with every last atom (12,894 verdicts).
-     - **What the profiles show.** A removal leaves the ports of every cut beyond it free. So the receiving atom alone decides
+   - **The touching rule holds at every distance (proved).** In every contradiction built from Fano pieces alone, a knot receives
+     creation from a removal in another Fano piece exactly when it touches its Fano piece's cut facing the removal, however far away
+     the removal is.
+     - **Proof.** A chain of Fano pieces carries only a finite profile from one cut to the next. There are 47 profiles, none new after three
+       Fano pieces, and each was checked with every last Fano piece (12,894 verdicts).
+     - **What the profiles show.** A removal leaves the ports of every cut beyond it free. So the receiving Fano piece alone decides
        creation.
    - **The source rule fails (proved).**
-     - **Where it holds.** It counts the atoms of every Fano tree of at most five atoms.
-     - **Where it fails.** At six atoms: a receiver that takes two loaded cuts and emits the line through their points has no source.
-       Exact creation maps confirm it.
+     - **Where it holds.** It counts the Fano pieces of every Fano tree of at most five Fano pieces.
+     - **Where it fails.** At six Fano pieces: a receiver that takes two loaded cuts and emits the knot through their distinctions has
+       no source. Exact creation maps confirm it.
    - **A short rule reads the tree (proved).**
-     - **Atoms.** Lines that create at each other and at the same other lines form one atom.
-     - **Cuts.** Atoms that create at a proper subset of an atom's lines lie beyond one of its receiving cuts.
-     - **What it reads.** The atoms and the directed tree of every Fano tree whose atoms have at most four cuts.
-     - **Not yet through plane glue.** On the census of 23 to 26 points, a glue line can join an atom's class and an atom can split into
-       three pairs.
+     - **Fano pieces.** Knots that create at each other and at the same other knots form one Fano piece.
+     - **Cuts.** Fano pieces that create at a proper subset of a Fano piece's knots lie beyond one of its receiving cuts.
+     - **What it reads.** The Fano pieces and the directed tree of every Fano tree whose Fano pieces have at most four cuts.
+     - **Not yet through planar glue.** On the census of 23 to 26 distinctions, a glue knot can join a Fano piece's class and a Fano
+       piece can split into three pairs.
    - **Reading.**
-     - **Openness travels; direction is read at the receiver.** A removal opens every cut beyond it. A line feels it only if it touches
-       its own atom's cut facing it.
-     - **A handle is a set of lines seen together.** Its lines create at each other and are created at by the same lines elsewhere.
-     - **The tree is read from its receivers.** Every cut has one receiver, whose lines through the lost point name the cut.
-     - **Doctrine.** Twins and footprints are relations among lines. No space is assumed.
+     - **Openness travels; direction is read at the receiver.** A removal opens every cut beyond it. A knot feels it only if it touches
+       its own Fano piece's cut facing it.
+     - **A handle is a set of knots seen together.** Its knots create at each other and are created at by the same knots elsewhere.
+     - **The tree is read from its receivers.** Every cut has one receiver, whose knots through the lost distinction name the cut.
+     - **Doctrine.** Twins and footprints are relations among knots. No space is assumed.
    - **Provenance.** Finite-state transfer along bounded interfaces, and Buneman's theorem that splits determine a tree, are classical.
      No statement of these results was found.
-   - **What is left.** Plane glue, non-Fano handles, heavily loaded atoms, and other far sides.
-   - **Next (taken).** Reading through plane glue (2/3): add plane pieces to the profile automaton and look for
-     one rule that reads the genus of every three-fold space.
+   - **What is left.** Planar glue, non-Fano handles, heavily loaded Fano pieces, and other far sides.
+   - **Next (taken).** Reading through planar glue (2/3): add planar pieces to the profile automaton and look for
+     one rule that reads the genus of every three-regular contradiction.
      - **The alternatives.** Non-Fano handles (1/3); the bridge to proof complexity (2/3).
 
-   **2026-11-06: reading through plane glue** (`GLUE-READ-20261106-001`).
-   - **Creation at an atom is decided by its cut (proved).** Whether a removal creates at a line of a Fano atom depends only on the
-     patterns the removal's side allows on the atom's cut facing it: three ports' worth.
-     - **An emitter.** Its lines receive exactly when the ports may be equal.
-     - **A receiver.** A cut line receives exactly when the other two ports are not forced equal. An intact line receives exactly when
+   **2026-11-06: reading through planar glue** (`GLUE-READ-20261106-001`).
+   - **Creation at a Fano piece is decided by its cut (proved).** Whether a removal creates at a knot of a Fano piece depends only on the
+     patterns the removal's side allows on the Fano piece's cut facing it: three ports' worth.
+     - **An emitter.** Its knots receive exactly when the ports may be equal.
+     - **A receiver.** A cut knot receives exactly when the other two ports are not forced equal. An intact knot receives exactly when
        the side tells the ports apart.
      - **Proof.** Every port relation was checked against every deeper relation at once (8,190 cases). The census agrees at all 47,550
        pairs.
-   - **What glue does (computed, 191 spaces).**
-     - **Through atoms.** The cut is always free, so the touching rule holds.
+   - **What glue does (computed, 191 contradictions).**
+     - **Through Fano pieces.** The cut is always free, so the touching rule holds.
      - **Through glue.** Glue can exclude a pattern pair or tie two ports, and the touching rule fails exactly there.
-     - **Its two disturbances are local.** A doubled-square line through two of an atom's ports joins it. An atom emitting into a plane
-       piece splits by its ports, because plane lines see where a removal entered and atom lines do not.
-   - **Reading the atoms.**
-     - **Where it works.** A two-stage twin rule reads every Fano tree with at most four cuts per atom (proved), every census space and
-       57 of 80 random glued spaces.
-     - **Where it stops.** In 15 random spaces, lines of atoms meeting one plane piece are indistinguishable by whether creation occurs,
-       so no such rule can read them.
+     - **Its two disturbances are local.** A doubled-square knot through two of a Fano piece's ports joins it. A Fano piece emitting into a
+       planar piece splits by its ports, because knots of planar glue see where a removal entered and knots of Fano pieces do not.
+   - **Reading the Fano pieces.**
+     - **Where it works.** A two-stage twin rule reads every Fano tree with at most four cuts per Fano piece (proved), every census
+       contradiction and 57 of 80 random glued contradictions.
+     - **Where it stops.** In 15 random contradictions, knots of Fano pieces meeting one planar piece are indistinguishable by whether
+       creation occurs, so no such rule can read them.
      - **What survives.** Which far side creates still separates them.
    - **Reading.**
-     - **A cut is an atom's whole window.**
-     - **Atoms are blind to depth; plane glue is not.**
-     - **Handles on one plane.** Several handles on one plane can look alike to whether creation occurs. Only how it occurs, which far
-       side completes it, keeps them apart.
-     - **Doctrine.** Cuts, ports and far sides are relations among lines. No space is assumed.
+     - **A cut is a Fano piece's whole window.**
+     - **Fano pieces are blind to depth; planar glue is not.**
+     - **Handles on one planar piece.** Several handles on one planar piece can look alike to whether creation occurs. Only how it
+       occurs, which far side completes it, keeps them apart.
+     - **Doctrine.** Cuts, ports and far sides are relations among knots. No space is assumed.
    - **Provenance.** Bounding an OR over local configurations, and invariance under automorphisms, are standard. No statement of these
      results was found.
    - **What is left.**
      - A rule using the far sides.
-     - The relation a plane piece presents, derived from its faces.
+     - The relation a planar piece presents, derived from its faces.
      - Non-Fano handles.
    - **Next (taken).** Reading with the far sides (2/3): on the 191 saved maps, look for a rule that separates
-     atoms meeting one plane piece without splitting atoms.
+     Fano pieces meeting one planar piece without splitting Fano pieces.
      - **The alternatives.** Glue relations from faces (1/3); non-Fano handles (1/3).
 
    **2026-11-06: do handles govern counting hardness?** (`HANDLE-COUNT-20261106-001`).
-   - **The genus half is classical.** Counting colourings (with any signs and any weight per monochromatic line) is an even-subgraph sum
+   - **The genus half is classical.** Counting colourings (with any signs and any weight per monochromatic knot) is an even-subgraph sum
      on the incidence graph. On a surface of genus g that takes 4^g determinants (Galluccio–Loebl, Tesler, Cimasoni). So counting is
      fixed-parameter tractable in the genus and never hard at bounded genus. Nothing new is claimed here.
-   - **The knot's handles cost nothing (proved).** A Fano atom meets the rest of a space through three edges, and every even tensor on
-     three edges is a planar gadget: the first matchgate identity lives at four. So any number of atoms can be counted through.
+   - **The knot's handles cost nothing (proved).** A Fano piece meets the rest of a contradiction through three edges, and every even
+     tensor on three edges is a planar gadget: the first matchgate identity lives at four. So any number of Fano pieces can be counted
+     through.
    - **The glue's handles can cost (proved).** Where three planar pieces meet at a square (a Robertson–Seymour–Thomas junction), the
      junction can leave the planar class. Each such junction costs at most a factor 2 on the piece it hangs from, so counting takes
      time 2^(junctions) times a polynomial. At the knot's law only squares with three twisted sides, or above them, cost.
-   - **On the knot's own spaces, atoms pay for the junctions (proved).** Every end piece of the glue needs an odd number of signs on a
-     square away from its junction. A plain space has no signs to spend: its signs come only from twisted sides of its tight cuts, and
-     those end in atoms. So junctions + planar glue pieces ≤ atoms − 2. The trisum of three cubes with three atoms (29 points) attains it.
-   - **So on the knot's spaces counting is fixed-parameter tractable in the number of atoms** (time 2^atoms times a polynomial), and
-     polynomial at any number of atoms when the glue is planar. The knot's hard couplings need unboundedly many atoms.
-   - **Off the knot's spaces, signs pay instead.** With signs, or on colourable plain Pfaffian braces, counting is #P-hard with no atom.
-   - **Computed.** On 257 spaces (the census to 26 points, 80 random spaces with plane glue, larger ones and 28 with trisum glue)
-     the bound holds and 771 exact counts agree two ways. Evaluations grow with junctions, never with atoms.
+   - **On the knot's own contradictions, Fano pieces pay for the junctions (proved).** Every end piece of the glue needs an odd number
+     of signs on a square away from its junction. A plain contradiction has no signs to spend: its signs come only from twisted sides
+     of its tight cuts, and those end in Fano pieces. So junctions + planar glue pieces ≤ Fano pieces − 2. The trisum of three cubes
+     with three Fano pieces (29 distinctions) attains it.
+   - **So on the knot's contradictions counting is fixed-parameter tractable in the number of Fano pieces** (time 2^(number of Fano
+     pieces) times a polynomial), and polynomial at any number of Fano pieces when the glue is planar. The knot's hard couplings need
+     unboundedly many Fano pieces.
+   - **Off the knot's contradictions, signs pay instead.** With signs, or on colourable plain Pfaffian braces, counting is #P-hard with
+     no Fano piece.
+   - **Computed.** On 257 contradictions (the census to 26 distinctions, 80 random contradictions with planar glue, larger ones and 28
+     with trisum glue) the bound holds and 771 exact counts agree two ways. Evaluations grow with junctions, never with Fano pieces.
    - **Reading.**
      - Hardness lives in handles, but not in the knot's: in the glue's junctions.
-     - The knot can twist its glue only by spending atoms. Three ports are free; four ports can cost; at the knot's law, three twisted
+     - The knot can twist its glue only by spending Fano pieces. Three ports are free; four ports can cost; at the knot's law, three twisted
        sides at a square are what costs.
-     - The planar half of the owner's hypothesis holds. Pfaffian glue is not tractable by itself; on the knot's spaces it is paid for.
+     - The planar half of the owner's hypothesis holds. Pfaffian glue is not tractable by itself; on the knot's contradictions it is
+       paid for.
    - **Provenance.** Genus: classical. Small separations and matchgate splitting: classical techniques. The junction bound and its
      sharpness: no source found.
    - **Next (recommended, awaiting the owner).** Native reading of junction handles (2/3): do exact creation maps read the glue's junctions
-     and the atoms that pay for them? Start on the 29-point space and the edge-atom chains.
-     - **The alternatives.** A hardness bound in the number of atoms (1/3); reading with the far sides (2/3, still pending).
+     and the Fano pieces that pay for them? Start on the 29-distinction contradiction and the edge-piece chains.
+     - **The alternatives.** A hardness bound in the number of Fano pieces (1/3); reading with the far sides (2/3, still pending).
 
    **2026-11-06: reading with the far sides** (`FAR-READ-20261106-001`).
-   - **The far sides nest (computed, 191 spaces).** The Fano plane and census 58 create at the same pairs. K4^(3) creates only where
-     census 6 does, and census 6 creates without the Fano plane only at glue lines. So at an atom line creation has one of four
-     strengths.
-   - **A Fano atom acts as one from outside (computed, 1,065 of 1,065 atoms).** Whichever of its lines is removed, every atom line
-     outside it receives the same far-side vector. Its lines differ only on glue lines and in what they receive.
-   - **A rule reads the atoms.**
-     - **The rule.** Twins; twins among atom lines; a split into the finest parts of three or more lines that act as one; reattachment
-       of single port lines through the Fano plane.
-     - **Development.** It returns exactly the Fano atoms of all 191 saved spaces, and every step is needed.
-     - **Fresh test.** Frozen, it reads all 86 fresh spaces within a cost cap fixed in advance (334 atoms). That includes the 24 fresh
-       spaces where whether creation occurs cannot tell atoms apart. The two-stage rule reads 51 of the 86, the source rule counts 68.
+   - **The far sides nest (computed, 191 contradictions).** The Fano pattern and census 58 create at the same pairs. K4^(3) creates
+     only where census 6 does, and census 6 creates without the Fano pattern only at glue knots. So at a knot of a Fano piece creation
+     has one of four strengths.
+   - **A Fano piece acts as one from outside (computed, 1,065 of 1,065 Fano pieces).** Whichever of its knots is removed, every knot of
+     another Fano piece receives the same far-side vector. Its knots differ only on glue knots and in what they receive.
+   - **A rule reads the Fano pieces.**
+     - **The rule.** Twins; twins among knots of Fano pieces; a split into the finest parts of three or more knots that act as one;
+       reattachment of single port knots through the Fano pattern.
+     - **Development.** It returns exactly the Fano pieces of all 191 saved contradictions, and every step is needed.
+     - **Fresh test.** Frozen, it reads all 86 fresh contradictions within a cost cap fixed in advance (334 Fano pieces). That includes
+       the 24 fresh contradictions where whether creation occurs cannot tell Fano pieces apart. The two-stage rule reads 51 of the 86,
+       the source rule counts 68.
      - **Not proved.** Neither the rule nor "acts as one" is a theorem.
    - **Reading.**
-     - **A handle is one thing from outside.** Its parts are not separately visible to the rest of the space, so an atom is atomic in a
-       precise sense.
-     - **Why the yes/no relation failed.** A plane piece hides which atom a removal came from. Which far side completes the creation
+     - **A handle is one thing from outside.** Its parts are not separately visible to the rest of the contradiction, so a Fano piece
+       is atomic in a precise sense.
+     - **Why the yes/no relation failed.** A planar piece hides which Fano piece a removal came from. Which far side completes the creation
        does not.
-     - **A known shape.** Acting as one is a one-sided module, as in Gallai's modular decomposition and the clans of 2-structures.
+     - **A known structure.** Acting as one is a one-sided module, as in Gallai's modular decomposition and the clans of 2-structures.
        Reading handles as the finest such modules of the creation map is new.
    - **Provenance.** Modules are classical. No source was found for the far-side structure, the rule or its fresh test.
    - **What is left.**
-     - A proof that atoms act as one.
-     - Non-Fano handles. HANDLE-COUNT's junction handles, where counting hardness on these spaces lives, are such handles.
-     - The cost cap's gaps: census spaces with three more atoms, and the largest plane spaces.
-   - **Next (taken).** Prove that a Fano atom acts as one from outside (2/3).
-     - **The easy case.** A scratch probe found that in 576 of the 731 saved atoms, removing any line leaves every port pattern
-       allowed, so the rest of the space cannot tell which line went.
+     - A proof that Fano pieces act as one.
+     - Non-Fano handles. HANDLE-COUNT's junction handles, where counting hardness on these contradictions lives, are such handles.
+     - The cost cap's gaps: census contradictions with three more Fano pieces, and the largest planar contradictions.
+   - **Next (taken).** Prove that a Fano piece acts as one from outside (2/3).
+     - **The easy case.** A scratch probe found that in 576 of the 731 saved Fano pieces, removing any knot leaves every port pattern
+       allowed, so the rest of the contradiction cannot tell which knot went.
      - **The hard case.** The other 155 have five to twelve ports and need the receiving-cut law.
      - **The alternatives.** Non-Fano handles through the receiving-cut law (1/3); glue relations from faces (1/3).
 
-   **2026-11-07: why a Fano atom acts as one** (`ATOM-ONE-20261107-001`).
-   - **Every Fano atom, with its closed sides, is the Fano plane (proved).**
+   **2026-11-07: why a Fano piece acts as one** (`ATOM-ONE-20261107-001`).
+   - **Every Fano piece, with its closed sides, is the Fano pattern (proved).**
      - **Sides.** A closed side acts as its lost element up to signs (KNOT-COMPOSE A, as corrected by NATIVE-PATHS A).
-     - **Signs.** Of the 256 signed Fano planes, only the plain one is a knot.
-   - **A Fano atom with a line removed is transparent (proved).** With any one of its lines removed, it sends the free relation through
-     every one of its cuts. So the rest of the space sees the same port relation whichever line went.
-     - **The knot is needed.** With arbitrary relations on its other cuts, this holds only for atoms with at most one line-type cut.
-   - **Atoms see only the port relation (proved).**
-     - **Creation.** Deep points of a removal's side never decide whether a Fano atom's line receives creation, even paired with deep
-       points behind the atom's other elements.
-     - **Far sides.** They add census 6 or K4^(3) only at a receiving atom's cut lines whose port relation has six patterns.
-     - **Pass-through.** A free relation passes through a closed atom unchanged.
-   - **So a Fano atom acts as one.**
-     - **Proved.** For creation in every knot space; far side by far side outside that one place; and without exception on Fano trees.
-     - **Computed.** On 277 spaces, saved and fresh, every Fano atom's line receives exactly its closed verdict at all 154,165 pairs. The
-       exception occurs at 1,325 receiving cuts and adds nothing. These predictions were written before the run.
-   - **Bounding cannot show more.** Deep points behind an atom's own other elements could add creation (56 of 980 abstract cases). No real
-     space ever does.
+     - **Signs.** Of the 256 signed Fano patterns, only the plain one is a knot.
+   - **A Fano piece with a knot removed is transparent (proved).** With any one of its knots removed, it sends the free relation through
+     every one of its cuts. So the rest of the contradiction sees the same port relation whichever knot went.
+     - **The knot is needed.** With arbitrary relations on its other cuts, this holds only for Fano pieces with at most one knot-type cut.
+   - **Fano pieces see only the port relation (proved).**
+     - **Creation.** Deep distinctions of a removal's side never decide whether a Fano piece's knot receives creation, even paired with deep
+       distinctions behind the Fano piece's other elements.
+     - **Far sides.** They add census 6 or K4^(3) only at a receiving Fano piece's cut knots whose port relation has six patterns.
+     - **Pass-through.** A free relation passes through a closed Fano piece unchanged.
+   - **So a Fano piece acts as one.**
+     - **Proved.** For creation in every contradiction; far side by far side outside that one case; and without exception on Fano trees.
+     - **Computed.** On 277 contradictions, saved and fresh, every Fano piece's knot receives exactly its closed verdict at all 154,165
+       pairs. The exception occurs at 1,325 receiving cuts and adds nothing. These predictions were written before the run.
+   - **Bounding cannot show more.** Deep distinctions behind a Fano piece's own other elements could add creation (56 of 980 abstract
+     cases). No actual contradiction ever does.
    - **Reading.**
-     - **A handle is all or nothing from outside.** With all its lines, it constrains each cut as one lost element. With any one line gone,
+     - **A handle is all or nothing from outside.** With all its knots, it constrains each cut as one lost element. With any one knot gone,
        it constrains nothing any cut can see.
-     - **Where this comes from.** The knot itself: the plain Fano plane is the only signed Fano knot, and any missing line frees every
+     - **Where this comes from.** The knot itself: the plain Fano pattern is the only signed Fano knot, and any missing knot frees every
        other element.
-     - **Atoms are blind to depth.** That is now a theorem for creation and, outside one finite place, for far sides.
+     - **Fano pieces are blind to depth.** That is now a theorem for creation and, outside one finite case, for far sides.
      - **Doctrine.** No space is assumed.
    - **Provenance.** The Fano plane as the smallest critical non-2-colourable triple system, and the brace decomposition, are classical.
      No statement of the signed classification, transparency or the corollary was found.
    - **What is left.**
      - A proof of the exception.
-     - That no atom splits into smaller parts acting as one.
-     - Handles that are not Fano atoms.
+     - That no Fano piece splits into smaller parts acting as one.
+     - Handles that are not Fano pieces.
    - **Next (taken).** The genus reading on Fano trees (2/3). Prove that FAR-READ B's rule returns exactly the
-     Fano atoms of every Fano tree, then add plane glue.
+     Fano pieces of every Fano tree, then add planar glue.
      - **The alternatives.** Whether junction handles act as one (2/3); a proof of the exception (1/3).
 
    **2026-11-07: the axis built from logic** (`LOGIC-AXIS-20261107-001`).
@@ -4898,280 +4938,288 @@ So holes come in two kinds:
    - **Without ends, bond distance is a ruler (proved).**
      - **Chained knots.** If far-apart parts of a law are independent, every knot is chained, so bond distance grows at least
        linearly with separation. Parity laws whose finite moves are dense (laws without ends) have this property.
-     - **The number line.** On the atom thread w(t−1) ∧ L(t) → w(t), the bond distance between w_s and w_t is exactly t − s + 1: one
-       unit per loop. A chain of two-place ties has no knot, so it has no spacing.
-     - **The plane.** Tseitin's and the gauge law read the lattice's dimension from their allowed states: bond balls grow like r^d. On
-       the plane the ruler is taxicab, 2d + 1 to 2d + 7: an x-count plus a y-count, never the diagonal.
-     - **One bit per site freezes.** A parity law with one distinction per site is free or has no finite moves. A native parity plane
-       needs a distinction per lattice direction.
+     - **An endless chain, the literature's number line.** On the endless chain of atoms w(t−1) ∧ L(t) → w(t), the bond distance
+       between w_s and w_t is exactly t − s + 1: one unit per loop. A chain of two-place ties has no knot, so it has no spacing.
+     - **The drawn lattice.** Tseitin's and the gauge law, placed on a drawn lattice, read its dimension from their allowed states:
+       bond balls grow like r^d. On the drawn plane lattice the ruler is taxicab, 2d + 1 to 2d + 7: an x-count plus a y-count, never the
+       diagonal.
+     - **One bit per cell freezes.** A parity law with one distinction per cell is free or has no finite moves. A native parity law
+       on the drawn plane lattice needs a distinction per lattice direction.
      - **Native in every variable is not enough.** Take Ledrappier's law on x, z free and y = x + z. Every variable is flipped by a
-       finite move, yet a six-variable knot joins points 2^k apart for every k. A correction request asks whether a native knot must
+       finite move, yet a six-variable knot joins distinctions 2^k apart for every k. A correction request asks whether a native knot must
        also be natively bound. On 2026-11-07 the owner recorded the answer as an assumption: yes, open to challenge (A1 of the
        [register of assumptions](ASSUMPTIONS.md)).
      - **Growth never stretches.** A conservative extension never increases bond distance. A system that keeps its old allowed states
-       grows only at its edges.
+       grows only by adding distinctions, never by moving existing ones apart.
    - **The frozen axis is measured in signed bits (proved; equality conjectured).**
-     - **Infinite bond balls.** In Ledrappier's law the three-place knots are exactly the Frobenius triangles.
-     - **The bound.** Along each lattice line, bond distance is at most 1 + w(n), the signed-binary digit count of the separation, and
-       it is 2 exactly at powers of two.
+     - **Infinite bond balls.** In Ledrappier's law the three-place knots are exactly the Frobenius triangles of the drawn lattice.
+     - **The bound.** Along each line of the drawn lattice, bond distance is at most 1 + w(n), the signed-binary digit count of the
+       separation, and it is 2 exactly at powers of two.
      - **Equality** is checked in windows: n <= 128, and all 168 vectors of [−6, 6]^2.
-   - **With nothing drawn, towers stretch only through open ends.**
-     - **Proved (hub-free gadgets).** Replacing every knot by a gadget keeps the old knot exactly when the gadget adds no open end, a
+   - **With nothing drawn, towers stretch only through loose ends.**
+     - **Proved (hub-free gadgets).** Replacing every knot by a gadget keeps the old knot exactly when the gadget adds no loose end, a
        distinction held by one knot. Every step is then conservative, and the original distinctions stay at bond distance 2 forever.
        The 2026-10-20 refinement is such a gadget, which is why it could not grow space.
-     - **Measured (exploratory).** Gadgets with open ends stretch the ruler by a fixed factor per level: 3^k + 1 for the star and the
+     - **Measured (exploratory).** Gadgets with loose ends stretch the ruler by a fixed factor per level: 3^k + 1 for the star and the
        hexagon, 3·4^(k−1) + 1 for the prism. Their growth dimensions, log(copies)/log(stretch), are 1.26, 1.63 and 1.29.
-     - **Trees (proved).** On tree-shaped knot graphs, bond distance is the number of knots on the path plus one.
+     - **Trees (proved).** On knot graphs that are trees, bond distance is the number of knots on the path plus one.
    - **Reading.**
      - **Where logic measures.** Logic measures space faithfully exactly where nothing is opened by infinity.
-     - **Where space expands.** Space expands between existing distinctions exactly where growth adds open ends. The growth of
+     - **Where space expands.** Space expands between existing distinctions exactly where growth adds loose ends. The growth of
        emergent information and the growth of space meet there.
      - **What is still put in.** The dimension comes with the gadget, like a drawing. In no tested law is it derived from a rule
        that does not mention it.
    - **Provenance.** Strong irreducibility and dense homoclinic groups (Lind–Schmidt) underlie the ruler. Ledrappier's non-mixing
      shapes and Masser's unit equations in characteristic p underlie the frozen axis. Wolfram measures dimension by ball growth in
-     drawn hypergraphs. No source was found for the bond-distance reading, the signed-binary construction or the open-end criterion.
-   - **Next (recommended, awaiting the owner).** Growth at open ends (2/3). Let a uniform rule act only where the relation shows an
-     open end, with no chosen gadget shape, and measure the growth exponent of bond balls.
-     - **The alternatives.** The signed-binary lower bound (1/3); the logical Cartesian product of two threads (1/3).
+     drawn hypergraphs. No source was found for the bond-distance reading, the signed-binary construction or the loose-end criterion.
+   - **Next (recommended, awaiting the owner).** Growth at loose ends (2/3). Let a uniform rule act only where the relation shows a
+     loose end, with no chosen gadget design, and measure the growth exponent of bond balls.
+     - **The alternatives.** The signed-binary lower bound (1/3); the logical Cartesian product of two chains (1/3).
 
    **2026-11-07: reading the genus natively** (`GENUS-READ-20261107-001`).
    - **Census 6 depends on how it is glued (proved).**
-     - **How the test glues.** It joins a far side's split-point lines to the gluing line's points in the order they are written.
-     - **Order-free.** K4^(3), the Fano plane and census 58 have the symmetry that makes the order irrelevant.
+     - **How the test glues.** It joins a far side's split-distinction knots to the gluing knot's distinctions in the order they are
+       written.
+     - **Order-free.** K4^(3), the Fano pattern and census 58 have the symmetry that makes the order irrelevant.
      - **Census 6.** It has three inequivalent gluings, and its verdict changed with the order in 8,046 of 11,552 sampled pairs.
      - **Creation.** Whether creation occurs never depends on the order.
-   - **Natively a Fano atom is homogeneous (proved).** Count census 6 over its gluings. Then in every Fano tree every ordered pair of
-     lines of an atom gets the same far-side vector: no K4^(3), census 6 at one gluing of three, the Fano plane, census 58. Whatever hangs
-     behind its cuts forces it.
-   - **So FAR-READ's split step was not native.** Given native vectors, it cuts every atom of six or seven lines: none of 23 Fano trees
-     read, against all 23 in the written order. The native reading of Fano trees is the yes/no twin rule, already a theorem.
-   - **Through plane glue (computed).**
-     - **The information is native.** The order-free far sides tell apart all 372 pairs of atoms that whether creation occurs cannot.
-     - **Where it sits.** For 114 pairs it lies only in what the two lines do to glue lines.
-     - **The best rule so far.** Native row twins read 234 of 277 spaces.
+   - **Natively a Fano piece is homogeneous (proved).** Count census 6 over its gluings. Then in every Fano tree every ordered pair of
+     knots of a Fano piece gets the same far-side vector: no K4^(3), census 6 at one gluing of three, the Fano pattern, census 58.
+     Whatever hangs behind its cuts forces it.
+   - **So FAR-READ's split step was not native.** Given native vectors, it cuts every Fano piece of six or seven knots: none of 23 Fano
+     trees read, against all 23 in the written order. The native reading of Fano trees is the yes/no twin rule, already a theorem.
+   - **Through planar glue (computed).**
+     - **The information is native.** The order-free far sides tell apart all 372 pairs of Fano pieces that whether creation occurs cannot.
+     - **Where it sits.** For 114 pairs it lies only in what the two knots do to glue knots.
+     - **The best rule so far.** Native row twins read 234 of 277 contradictions.
    - **Reading.**
-     - **A handle is one thing inside and out.** All its lines are alike to each other, and it acts as one from outside.
-     - **The structure the split relied on** was how census 6's lines were written down.
+     - **A handle is one thing inside and out.** All its knots are alike to each other, and it acts as one from outside.
+     - **The structure the split relied on** was how census 6's knots were written down.
      - **Doctrine.** No space, and no listing order, is assumed.
    - **Corrections.** `FAR-READ-20261106-001-D002` and the census-6 sentence of `FAR-READ-20261106-001-D001` carry pending qualifications.
    - **Provenance.** Invariance of a gadget's verdict under its symmetries is standard. No statement of the gluing classification or of
      native homogeneity was found.
    - **Next (taken).** Colour refinement on the native creation map (2/3). It is a canonical, representation-free
-     procedure. Does its stable partition ever merge lines of two atoms?
+     procedure. Does its stable partition ever merge knots of two Fano pieces?
      - **The alternatives.** Junction handles natively (2/3); a native audit of earlier far-side records (1/3).
 
-   **2026-11-07: growth at open ends** (`OPEN-END-GROWTH-20261107-001`).
-   - **The question.** Let a uniform rule act only where the relation shows an open end, a distinction held by one knot, with no
-     chosen shape. What space does it grow?
-   - **A local rule grows the number line (proved).** Grow only at knots that hold two or more open ends. From one knot this grows
-     exactly the two-way thread, whatever choices are made: every unit keeps one open loop, and bond distance counts the loops
-     between two points, plus one. The axis goes off to infinity in both directions, grown from a single knot by a rule that reads
-     only open ends.
-   - **Closing open ends freezes or collapses space (proved; census exploratory).**
-     - **Bond distance is a boundary.** It is the least boundary of a two-sided region, counting seams and the open ends held inside.
-     - **Sealing freezes.** A region with no open ends behind one seam pins that seam, and no knot crosses it. Closing the nearest open
-       ends sealed space into frozen cells: no knot for 370 of 374 pairs.
-     - **Short boundaries collapse.** Every two-sided boundary is a knot. Closing that avoids pins and ties left a strip whose bond
-       distance never exceeds 5, at any length.
-     - **No closing at all branches.** Random sprouting, and closing at the flat face size, gave small worlds. No rule grew a plane.
-   - **The Cartesian plane is a product (proved; exact formula conjectured).** In the product law of two laws, whose allowed states
-     are grids with every column and row allowed, a knot of each axis joined at a corner is a knot. So bond distance is at most
-     δx + δy − 1. The product of two threads has no ends, so it is a ruler: taxicab distance, bond balls of order r^2, dimension two
+   **2026-11-07: growth at loose ends** (`OPEN-END-GROWTH-20261107-001`).
+   - **The question.** Let a uniform rule act only where the relation shows a loose end, a distinction held by one knot, with no
+     chosen design. What space does it grow?
+   - **A local rule grows an endless chain, the literature's number line (proved).** Grow only at knots that hold two or more loose
+     ends. From one knot this grows exactly the two-way endless chain, whatever choices are made: every unit keeps one open loop,
+     and bond distance counts the loops between two distinctions, plus one. The axis goes off to infinity in both directions, grown
+     from a single knot by a rule that reads only loose ends.
+   - **Closing loose ends freezes or collapses space (proved; census exploratory).**
+     - **Bond distance is a boundary.** It is the least boundary of a region connected inside and out, counting seams and the loose
+       ends held inside.
+     - **Sealing freezes.** A region with no loose ends behind one seam pins that seam, and no knot crosses it. Closing the nearest
+       loose ends sealed space into parts frozen apart: no knot for 370 of 374 pairs.
+     - **Short boundaries collapse.** Every boundary of a region connected inside and out is a knot. Closing that avoids pins and
+       ties left a strip whose bond distance never exceeds 5, at any length.
+     - **No closing at all branches.** Random sprouting, and closing loose ends at bond distance six (the face size of a drawing in
+       the plane), gave small-world patterns. No rule grew a pattern of dimension two.
+   - **The owner's Cartesian plane is a product (proved; exact formula conjectured).** In the product law of two laws, whose allowed
+     states are arrays with every column and row allowed, a knot of each axis joined at a corner is a knot. So bond distance is at most
+     δx + δy − 1. The product of two chains has no ends, so it is a ruler: taxicab distance, bond balls of order r^2, dimension two
      read from the allowed states. Exactly δx + δy − 1 holds on 855 checked pairs.
-   - **Reading.** The line grows; the plane is the product of lines. Space holds together through open ends kept inside, as on the
-     line, or through long seams, as on a lattice. Growth that consumes its open ends freezes or collapses. Taxicab distance is not
-     round; whether logic can make round balls is open.
+   - **Reading.** The chain grows; the owner's plane is the product of chains. Space holds together through loose ends kept inside,
+     as along the chain, or through long seams, as on a drawn lattice. Growth that consumes its loose ends freezes or collapses.
+     Taxicab distance is not round; whether logic can make round balls is open.
    - **Provenance.** Bonds and bridges are classical (Whitney; Oxley). Product codes and their duals are classical (Elias;
      MacWilliams–Sloane). No source was found for the growth rules' classification, the L-shaped knots or the exact formula.
-   - **Next (recommended, awaiting the owner).** Circles from logic (2/3): can bond balls become round? Map the large-scale shape of
+   - **Next (recommended, awaiting the owner).** Circles from logic (2/3): can bond balls become round? Map the large-scale form of
      bond distance in periodic laws without ends, where polygons are expected, and in random local laws, where roundness could
      appear only as a trend.
-     - **The alternatives.** Dimension under products of k lines (1/3); a proof of the exact taxicab formula (1/3).
+     - **The alternatives.** Dimension under products of k chains (1/3); a proof of the exact taxicab formula (1/3).
 
    **2026-11-07: colour refinement on the native creation map** (`REFINE-READ-20261107-001`).
-   - **The planned test was the wrong one.** Colour refinement (1-WL) must give the same colour to lines that a symmetry exchanges, and
-     symmetric spaces exchange whole atoms. It merges lines of two atoms in 87 of 277 spaces, 14 of the 23 Fano trees among them, though
-     the twin rule reads every Fano tree.
-   - **Native creation fixes the atoms (computed, 277 of 277 spaces).**
-     - **The test.** Pair refinement (folklore 2-WL), on the order-free far sides, never puts a pair within an atom and a pair across two
-       atoms in one class.
-     - **So** every symmetry of the native creation map maps atoms to atoms, and "same atom" is definable in three-variable counting
-       logic in each space.
-     - **What does it.** Whether creation occurs alone mixes them in 42 spaces: the far sides break exactly the symmetries that hid the
-       handles.
-   - **No uniform rule tried reads every space (computed).**
+   - **The planned test was the wrong one.** Colour refinement (1-WL) must give the same colour to knots that a symmetry exchanges, and
+     symmetric contradictions exchange whole Fano pieces. It merges knots of two Fano pieces in 87 of 277 contradictions, 14 of the 23
+     Fano trees among them, though the twin rule reads every Fano tree.
+   - **Native creation fixes the Fano pieces (computed, 277 of 277 contradictions).**
+     - **The test.** Pair refinement (folklore 2-WL), on the order-free far sides, never puts a pair within a Fano piece and a pair
+       across two Fano pieces in one class.
+     - **So** every symmetry of the native creation map maps Fano pieces to Fano pieces, and "same Fano piece" is definable in
+       three-variable counting logic in each contradiction.
+     - **What does it.** Whether creation occurs alone mixes them in 42 contradictions: the far sides break exactly the symmetries that
+       hid the handles.
+   - **No uniform rule tried reads every contradiction (computed).**
      - **The counts.** Yes/no twins read 219; native row twins and three refinements of them 234 each.
-     - **Where they fail.** Atoms meeting one plane piece merge, in 32 of 38 cases as complete twins.
-     - **A regularity.** Twin lines of one atom differ at the glue only by whether they create, never by how. Across atoms 530 of 1,572
-       twin pairs differ by how.
+     - **Where they fail.** Fano pieces meeting one planar piece merge, in 32 of 38 cases as complete twins.
+     - **A regularity.** Twin knots of one Fano piece differ at the glue only by whether they create, never by how. Across Fano pieces
+       530 of 1,572 twin pairs differ by how.
    - **Reading.**
-     - **Native emergence does not hide topology** in any computed space. The handles are determined by native relations; a uniform
+     - **Native emergence does not hide topology** in any computed contradiction. The handles are determined by native relations; a uniform
        reading is what remains.
-     - **In logical terms,** the atoms are definable space by space. Whether one formula serves all spaces is a question of uniform
-       definability.
-     - **Doctrine.** Everything is invariant under relabeling lines and re-listing their points.
+     - **In logical terms,** the Fano pieces are definable contradiction by contradiction. Whether one formula serves all
+       contradictions is a question of uniform definability.
+     - **Doctrine.** Everything is invariant under relabeling knots and re-listing their distinctions.
    - **Provenance.** Weisfeiler–Leman refinement and its equivalence with counting logic (Cai, Fürer, Immerman) are classical. The
      application and the regularity are new here.
-   - **Next (taken as `TRISUM-READ-20261107-001`).** Native creation at junction handles (2/3). On HANDLE-COUNT's trisum spaces, does
-     pair refinement show that the native creation map fixes the junctions, where counting hardness lives?
-     - **The alternatives.** Uniform definability of the atoms (1/3); a native audit of earlier far-side records (1/3).
+   - **Next (taken as `TRISUM-READ-20261107-001`).** Native creation at junction handles (2/3). On HANDLE-COUNT's trisum
+     contradictions, does pair refinement show that the native creation map fixes the junctions, where counting hardness lives?
+     - **The alternatives.** Uniform definability of the Fano pieces (1/3); a native audit of earlier far-side records (1/3).
 
    **2026-11-07: junctions in the native creation map** (`TRISUM-READ-20261107-001`).
    - **The question.** HANDLE-COUNT found that counting cost sits at the glue's junctions, where planar pieces meet along squares, and
-     REFINE-READ that native creation fixes the atoms. Does native creation also fix the junctions, and do junction lines carry a
+     REFINE-READ that native creation fixes the Fano pieces. Does native creation also fix the junctions, and do junction knots carry a
      native signature?
-   - **Junctions are read, and counted (computed, 18 of 18 spaces).**
-     - **The spaces.** Plain spaces from HANDLE-COUNT's trisum generator. Seven small ones trained the reading. Ten larger ones (54
-       to 60 points, up to three junctions) were mapped only after seven statements about them had been frozen. One more, with four
-       junctions, was chosen as a stress test before its map was computed.
-     - **Atoms first.** Yes/no creation reads them: no removal blocks an atom's core lines, and each root is created at by exactly
-       its six core lines.
-     - **Then junctions.** With the atoms set aside, a junction's two lines are never degenerate, and each is the only removal that
+   - **Junctions are read, and counted (computed, 18 of 18 contradictions).**
+     - **The contradictions.** Plain contradictions from HANDLE-COUNT's trisum generator. Seven small ones trained the reading. Ten
+       larger ones (54 to 60 distinctions, up to three junctions) were mapped only after seven statements about them had been frozen.
+       One more, with four junctions, was chosen as a stress test before its map was computed.
+     - **Fano pieces first.** Yes/no creation reads them: no removal blocks a Fano piece's core knots, and each root is created at by
+       exactly its six core knots.
+     - **Then junctions.** With the Fano pieces set aside, a junction's two knots are never degenerate, and each is the only removal that
        blocks the other. No other pair is like that.
-     - **Pair refinement** of the native map fixes the atoms, the skeleton, the junctions and the leaves.
-   - **A control.** Across REFINE-READ's 277 planar-glue spaces the signature appears once: in design 7, the only one whose glue holds
-     a non-planar brace other than Heawood, at that brace's junction.
-   - **One frozen statement failed, by a symmetry.** In one three-junction space native creation cannot tell which of a cube piece's
-     two lines carries an atom. Its map has a symmetry exchanging them that the space lacks, induced by a symmetry of the glue that
-     keeps the signing's switching class but moves the atom.
+     - **Pair refinement** of the native map fixes the Fano pieces, the skeleton, the junctions and the leaves.
+   - **A control.** Across REFINE-READ's 277 planar-glue contradictions the signature appears once: in design 7, the only one whose
+     glue holds a non-planar brace other than Heawood, at that brace's junction.
+   - **One frozen statement failed, by a symmetry.** In one three-junction contradiction native creation cannot tell which of a cube
+     piece's two knots carries a Fano piece. Its map has a symmetry exchanging them that the contradiction lacks, induced by a symmetry
+     of the glue that keeps the signing's switching class but moves the Fano piece.
    - **Reading.**
-     - **A junction is a mutual block:** two lines that depend on each other alone. Plane glue never shows it.
-     - **Both of HANDLE-COUNT's handles are native.** The atoms, which counting gets for free, and the junctions, which it pays for,
+     - **A junction is a mutual block:** two knots that depend on each other alone. Planar glue never shows it.
+     - **Both of HANDLE-COUNT's handles are native.** The Fano pieces, which counting gets for free, and the junctions, which it pays for,
        are read from creation alone, with nothing drawn.
      - **What native creation sees of a signing** may be only its switching class, which is also all that Pfaffian counting uses.
-       That is a conjecture from one space.
-     - **Doctrine.** Everything is invariant under relabeling lines and re-listing their points.
+       That is a conjecture from one contradiction.
+     - **Doctrine.** Everything is invariant under relabeling knots and re-listing their distinctions.
    - **A side finding.** HANDLE-COUNT's generator depends on Python's hash seed through its Pfaffian signing, so reruns can place the
-     atoms differently. HANDLE-COUNT B's stated totals reproduce under two other hash seeds; three to six of its 257 per-space rows
-     change. Each space used here is reproduced at its seed under a recorded hash seed.
+     Fano pieces differently. HANDLE-COUNT B's stated totals reproduce under two other hash seeds; three to six of its 257
+     per-contradiction rows change. Each contradiction used here is reproduced at its seed under a recorded hash seed.
    - **Provenance.** Trisums and trisectors (Robertson, Seymour and Thomas), switching classes (Zaslavsky) and refinement (Weisfeiler
      and Leman; Cai, Fürer and Immerman) are classical. The signature, the held-out test and the hidden symmetry are new here.
    - **Next (taken as `SWITCH-READ-20261108-001`).** Does native creation see the signing only through its switching class (Payoff
-     2/3, Concreteness 2/3)? Map a second placement of one space in the same class and compare.
-     - **The alternatives.** A proof of the junction signature (2/3, 1/3); one uniform native reading of atoms and junctions
+     2/3, Concreteness 2/3)? Map a second placement of one contradiction in the same class and compare.
+     - **The alternatives.** A proof of the junction signature (2/3, 1/3); one uniform native reading of Fano pieces and junctions
        (1/3, 3/3).
 
    **2026-11-08: what native creation sees of a signing** (`SWITCH-READ-20261108-001`).
-   - **The question.** In the junction epic one frozen statement failed because native creation could not tell two places of an atom
-     apart, places related by switching the glue's signing. Does native creation see a signing only through its switching class?
+   - **The question.** In the junction epic one frozen statement failed because native creation could not tell two placements of a Fano
+     piece apart, placements related by switching the glue's signing. Does native creation see a signing only through its switching
+     class?
    - **Placements come for free.** HANDLE-COUNT's generator picks its minimal signing by walking sets, so different hash seeds give 11
-     of the 17 trisum glues two or three placements of their atoms: one glue and one switching class, but spaces that are not
+     of the 17 trisum glues two or three placements of their Fano pieces: one glue and one switching class, but contradictions that are not
      isomorphic.
-   - **No for the whole map, yes between glue lines (computed: five pairs, 38 to 56 points; one size past, all 17 pairs on 11 glues, to
-     60 points).**
-     - **Between glue lines** native creation is the same in both placements, entry by entry.
-     - **Removing a line of an atom** creates differently at glue lines, so the whole native maps are never isomorphic, with the glue
+   - **No for the whole map, yes between glue knots (computed: five pairs, 38 to 56 distinctions; one size past, all 17 pairs on 11
+     glues, to 60 distinctions).**
+     - **Between glue knots** native creation is the same in both placements, entry by entry.
+     - **Removing a knot of a Fano piece** creates differently at glue knots, so the whole native maps are never isomorphic, with the glue
        held fixed or not.
      - **The junction reading transfers.** The junction epic's seven frozen statements hold on all five other placements, and on
-       eight of the nine in the stress test. On the ninth, seed 11's second placement, a symmetry of the glue moves an atom, as in
+       eight of the nine in the stress test. On the ninth, seed 11's second placement, a symmetry of the glue moves a Fano piece, as in
        the junction epic's seed 5.
    - **Reading.**
-     - **Native creation splits in two.** Between glue lines it sees only the switching class, which is also what Pfaffian counting
-       sees. Through its atoms it reads where they sit.
-     - **Why, as read from earlier results.** An intact atom acts on the glue as one negated incidence, and switching only complements
-       points. Removing a line of an atom frees its incidence, and which incidence is freed is the placement. Not yet proved.
-     - **The junction epic's hidden atom** is a placement that a symmetry of the glue moves, so even the atom removals cannot tell its
-       two places apart. Its record's title said more than that, and is narrowed.
+     - **Native creation splits in two.** Between glue knots it sees only the switching class, which is also what Pfaffian counting
+       sees. Through its Fano pieces it reads where they sit.
+     - **Why, as read from earlier results.** An intact Fano piece acts on the glue as one negated incidence, and switching only complements
+       distinctions. Removing a knot of a Fano piece frees its incidence, and which incidence is freed is the placement. Not yet proved.
+     - **The junction epic's hidden Fano piece** is a placement that a symmetry of the glue moves, so even the Fano-piece removals
+       cannot tell its two placements apart. Its record's title said more than that, and is narrowed.
    - **Provenance.** Switching classes of signed graphs (Zaslavsky) are classical. The comparison and the split are new here.
-   - **Next (taken as `SWITCH-PROOF-20261108-001`).** Prove that creation between glue lines depends only on the switching class
-     (Payoff 2/3, Concreteness 2/3): an intact atom acts as one negation, switching complements points, and the creation test should
-     not see complementing.
+   - **Next (taken as `SWITCH-PROOF-20261108-001`).** Prove that creation between glue knots depends only on the switching class
+     (Payoff 2/3, Concreteness 2/3): an intact Fano piece acts as one negation, switching complements distinctions, and the creation
+     test should not see complementing.
      - **The alternatives.** The glue block against Pfaffian counting (2/3, 1/3); folding in the nine remaining placements (done:
        the stress test passed).
 
    **2026-11-08: a theorem on what native creation sees of a signing** (`SWITCH-PROOF-20261108-001`).
-   - **Proved.** For every cubic glue, every two signings in one switching class, and every two glue lines, removing one and gluing at
-     the other gives the same native creation verdict in the two plain edge-atom spaces, for each far side.
+   - **Proved.** For every cubic glue, every two signings in one switching class, and every two glue knots, removing one and gluing at
+     the other gives the same native creation verdict in the two plain edge-piece systems (a Fano piece on each signed edge of the
+     glue), for each far side.
    - **Why.**
-     - **An intact atom only negates its incidence.** Its own lines force its three root points to the negation of its glue point.
-       Its four inner points stay free enough, as an exhaustive check over its 256 assignments shows, that they belong to no knot the
-       two-round rule uses.
-     - **So creation between glue lines is the signed glue's own creation map.** That held on all 3,500 computed entries.
-     - **Switching only complements points,** and complementing points changes no constrained set.
+     - **An intact Fano piece only negates its incidence.** Its own knots force its three root distinctions to the negation of its glue
+       distinction. Its four inner distinctions stay free enough, as an exhaustive check over its 256 assignments shows, that they
+       belong to no knot the two-round rule uses.
+     - **So creation between glue knots is the signed glue's own creation map.** That held on all 3,500 computed entries.
+     - **Switching only complements distinctions,** and complementing distinctions changes no constrained set.
    - **Reading.** Through the glue, native creation reads a signing's switching class, for a bipartite glue the parity of its signs
-     around every cycle. Through the atoms it reads where the signs sit. The first is the data Pfaffian counting uses on these spaces.
+     around every cycle. Through the Fano pieces it reads where the signs sit. The first is the data Pfaffian counting uses on these
+     systems.
    - **Provenance.** Switching classes and balance (Zaslavsky) are classical; the theorem is new here.
    - **Next (taken as `SWITCH-COMPLETE-20261108-001`).** Does the glue block tell every switching class apart (Payoff 2/3,
      Concreteness 3/3)? The smallest glue's 512 classes are computing.
      - **The alternative.** The glue block against Pfaffian counting (2/3, 1/3).
 
    **2026-11-08: does native creation tell signings apart?** (`SWITCH-COMPLETE-20261108-001`).
-   - **The question.** Creation between glue lines depends only on the switching class of the signing. Does it tell every class
+   - **The question.** Creation between glue knots depends only on the switching class of the signing. Does it tell every class
      apart?
-   - **No, and less so as the glue grows (computed, every class of the 8-line and the 10-line trisum glue).**
+   - **No, and less so as the glue grows (computed, every class of the 8-knot and the 10-knot trisum glue).**
      - **The smallest glue, nearly.** Its 512 classes give 448 glue blocks, and up to the glue's 24 symmetries all 42 orbits are told
-       apart but one pair. That pair's signings differ by moving one sign along a line, and their signed glues have 40 and 34
+       apart but one pair. That pair's signings differ by moving one sign along a knot, and their signed glues have 40 and 34
        solutions.
-     - **One size past, far from it.** The 10-line glue's 2,048 classes give 1,526 blocks, and 429 on its 576 orbits.
+     - **One size past, far from it.** The 10-knot glue's 2,048 classes give 1,526 blocks, and 429 on its 576 orbits.
      - **Where nothing creates.** Its largest shared block belongs to the 190 classes at which no far side creates anywhere. They come
        from 66 orbits and have 60 to 110 solutions.
-     - **Confirmed.** Colliding pairs have identical glue blocks on their plain spaces themselves, and census 6 under every order of
-       the gluing line separates neither.
-     - **The contradictory class stands out.** At both sizes the Pfaffian class, whose plain spaces are three-fold, is the only class
-       without solutions and has a block of its own.
+     - **Confirmed.** Colliding pairs have identical glue blocks on their plain systems themselves, and census 6 under every order of
+       the gluing knot separates neither.
+     - **The contradictory class stands out.** At both sizes the Pfaffian class, whose plain systems are three-regular contradictions,
+       is the only class without solutions and has a block of its own.
    - **Reading.**
      - **Creation sees a signing where it creates.** Through the glue it reads the switching class only as far as creation happens;
-       through the atoms it reads where the signs sit.
+       through the Fano pieces it reads where the signs sit.
      - **It does not read the count.** Classes with one block differ in their numbers of solutions, the quantity counting computes.
-     - **It does read the contradiction.** On both glues the one class that makes the space contradictory is told apart from all others.
+     - **It does read the contradiction.** On both glues the one class that makes the system contradictory is told apart from all others.
      - **The stress test mattered.** The smallest glue suggested near-completeness up to symmetry; one size past overturned that before
        it was published.
    - **Provenance.** Switching classes and the action of automorphisms on them are classical (Zaslavsky); the computations are new here.
    - **Next (taken as `CONTRA-READ-20261108-001`).** Does creation always single out the contradictory class (Payoff 2/3,
-     Concreteness 2/3)? Test the five 12-line glues (corrected from "four", 2026-11-08), following only the classes whose rows
+     Concreteness 2/3)? Test the five 12-knot glues (corrected from "four", 2026-11-08), following only the classes whose rows
      match the Pfaffian class's.
      - **The alternatives.** Where nothing creates (1/3, 3/3); what of counting creation carries (2/3, 1/3).
 
    **2026-11-08: native creation reads the contradiction** (`CONTRA-READ-20261108-001`).
-   - **The question.** Creation between glue lines does not tell switching classes apart, but on two glues it told the contradictory
-     class, the one whose plain spaces are three-fold, from all others. Does it always?
-   - **Yes, on every trisum glue of 8 to 12 lines (computed, seven glues).**
+   - **The question.** Creation between glue knots does not tell switching classes apart, but on two glues it told the contradictory
+     class, the one whose plain systems are three-regular contradictions, from all others. Does it always?
+   - **Yes, on every trisum glue of 8 to 12 knots (computed, seven glues).**
      - **One contradictory class.** On each glue exactly one switching class has no solution: the Pfaffian class.
-     - **One row is enough.** For every line a of every one of these glues, creation with a removed, at the other lines, already
+     - **One row is enough.** For every knot a of every one of these glues, creation with a removed, at the other knots, already
        tells the contradictory class's restriction from every other class of the glue without a.
    - **Why.**
-     - **The removed line stays tied.** Every assignment the glue without a allows must break line a, so a's three points are tied
+     - **The removed knot stays tied.** Every assignment the glue without a allows must break knot a, so a's three distinctions are tied
        there. No other class ties them, since that would give a second contradictory class.
-     - **Creation reads the tie.** A line sharing two points with a cannot then show all six patterns, so gluing there is
-       degenerate. At lines that share two points with no other line, the degenerate gluings alone single the class out; elsewhere
+     - **Creation reads the tie.** A knot sharing two distinctions with a cannot then show all six patterns, so gluing there is
+       degenerate. At knots that share two distinctions with no other knot, the degenerate gluings alone single the class out; elsewhere
        the knots that far sides add finish it.
-   - **Reading.** Native creation reads where the contradiction lives: with any one line removed, creation at the other lines tells
+   - **Reading.** Native creation reads where the contradiction lives: with any one knot removed, creation at the other knots tells
      whether restoring it closes a contradiction. With the entry above, it reads the contradiction but not the count. (Narrowed
-     2026-11-08: on glues whose incidence graph is 3-connected; at lines in a two-vertex cut one row can fail, as the next entry
+     2026-11-08: on glues whose incidence graph is 3-connected; at knots in a two-vertex cut one row can fail, as the next entry
      shows.)
    - **Provenance.** Switching classes (Zaslavsky) and Pfaffian orientations (Kasteleyn) are classical; the recognition and its
      mechanism are new here.
-   - **Next (taken as `CONTRA-PROOF-20261108-001`).** Prove that one row reads the removed line's tie (Payoff 2/3, Concreteness
+   - **Next (taken as `CONTRA-PROOF-20261108-001`).** Prove that one row reads the removed knot's tie (Payoff 2/3, Concreteness
      2/3).
-     - **The alternatives.** Why there is one contradictory class (2/3, 1/3); the 14-line glues (1/3, 3/3).
+     - **The alternatives.** Why there is one contradictory class (2/3, 1/3); the 14-knot glues (1/3, 3/3).
 
    **2026-11-08: where one row reads the contradiction** (`CONTRA-PROOF-20261108-001`).
-   - **The question.** On the trisum glues one row of creation reads the removed line's tie. Is that so on every glue, and why?
-   - **Not on every glue (computed, 19 random cubic glues of 8 to 10 lines with a class without solutions).**
-     - **Where it fails.** Exactly at the lines lying in a two-vertex cut of the glue's incidence graph: 16 lines, two on each of the
-       8 glues with such cuts. Removing one of the two cut lines leaves a rigid side, K4^(3) without a line, and nothing creates
+   - **The question.** On the trisum glues one row of creation reads the removed knot's tie. Is that so on every glue, and why?
+   - **Not on every glue (computed, 19 random cubic glues of 8 to 10 knots with a class without solutions).**
+     - **Where it fails.** Exactly at the knots lying in a two-vertex cut of the glue's incidence graph: 16 knots, two on each of the
+       8 glues with such cuts. Removing one of the two cut knots leaves a rigid side, K4^(3) without a knot, and nothing creates
        anywhere in the row, in the contradictory class or in another.
      - **Where it holds.** On every 3-connected glue tested: the 11 random ones and the seven trisum glues.
-     - **No local shortcut.** Under the tie, the K4^(3) far side stays silent at lines meeting the removed line once on 25 of the 26
-       glues, but not on a 12-line trisum glue where one row still reads the tie. No single near point makes K4^(3) create, and points
-       tied to the removed line are never witnesses (an exhaustive local lemma).
-   - **Reading.** Native creation reads the contradiction where the glue cannot be cut at two places; a two-vertex cut hides it. The
+     - **No local shortcut.** Under the tie, the K4^(3) far side stays silent at knots meeting the removed knot once on 25 of the 26
+       glues, but not on a 12-knot trisum glue where one row still reads the tie. No single near distinction makes K4^(3) create, and
+       distinctions tied to the removed knot are never witnesses (an exhaustive local lemma).
+   - **Reading.** Native creation reads the contradiction where the glue cannot be cut at two vertices; a two-vertex cut hides it. The
      previous entry's reading is narrowed accordingly.
    - **Provenance.** Two-vertex cuts and connectivity are classical; the counterexamples, the refined conjecture and the lemma are new
      here.
    - **Next (taken as `CUT-HIDE-20261108-001`).** Why two-vertex cuts hide the tie (Payoff 2/3, Concreteness 2/3): the side K4^(3)
-     without a line, hanging from one point once a cut line is removed, under its eight cycle signings.
+     without a knot, hanging from one distinction once a cut knot is removed, under its eight cycle signings.
      - **The alternatives.** The refined conjecture for 3-connected glues (2/3, 1/3); random 3-connected glues one size past (1/3, 3/3).
 
    **2026-11-08: why two-vertex cuts hide the contradiction** (`CUT-HIDE-20261108-001`).
-   - **Proved.** At a two-line cut whose side meeting the removed line once is K4^(3) without a line, the contradictory class and the
-     class with one sign of the other cut line changed have the same row of creation, and only the first ties the removed line's points.
-   - **Why.** That side has one rigid switching class of its eight, and the contradiction must use it. One sign on the other cut line
-     then decides whether the side is coupled to the rest or free, and creation is blind to it: the side's lines are degenerate either
-     way, and its points add nothing the cut line's third point does not (six local lemmas, exhaustive).
+   - **Proved.** At a two-knot cut whose side meeting the removed knot once is K4^(3) without a knot, the contradictory class and the
+     class with one sign of the other cut knot changed have the same row of creation, and only the first ties the removed knot's
+     distinctions.
+   - **Why.** That side has one rigid switching class of its eight, and the contradiction must use it. One sign on the other cut knot
+     then decides whether the side is coupled to the rest or free, and creation is blind to it: the side's knots are degenerate either
+     way, and its distinctions add nothing the cut knot's third distinction does not (six local lemmas, exhaustive).
    - **Reading.** The obstruction found by CONTRA-PROOF is structural: native creation cannot read the contradiction across such a cut.
-   - **Next.** Work paused at the owner's request (2026-11-08). Open: a proof for 3-connected glues; the six-point hanging sides.
+   - **Next.** Work paused at the owner's request (2026-11-08). Open: a proof for 3-connected glues; the six-distinction hanging sides.
 
    **Words in the circle and sphere entries.** The circle entries read bond balls of laws placed on drawn layouts (periodic plane
    graphs, arrangements of lines, random tessellations), so their circles, polygons, planes and directions are drawings of those

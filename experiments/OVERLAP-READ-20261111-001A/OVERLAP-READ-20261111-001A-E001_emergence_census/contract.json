@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "experiment_id": "OVERLAP-READ-20261111-001A-E001",
+ "ticket": "OVERLAP-READ-20261111-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "In bases with no limit on how many knots a pair lies in, what does NAE bind that no knot names (frozen distinctions, ties, emergent knots), from which minimal configurations, and is it local? Which overlapping bases does it read faithfully?",
+ "definitions": {
+  "emergent sets": "frozen {v}; tie {u,v} (both free) with fewer than 4 patterns; emergent knot {u,v,w}, not a knot, pairs free, fewer than 8 patterns. Faithful: states, none of these, every knot's pairs free (KNOTS-ALONE).",
+  "forcing": "K forces S when S lies in K's distinctions and the states of K alone leave S below full; minimally when no knot of K can be dropped with S still forced. Locality radius: least r with the knots within graph distance r of S forcing S.",
+  "C1": "every connected configuration of at most 6 knots up to isomorphism in which every distinction outside S lies in at least two knots; minimal forcing pairs up to isomorphism (S marked) with S's relation.",
+  "C2": "every labeled connected base on 4 to 6 distinctions (by its state set), with adjacent apices and incomplete Pasch marked; 20,000 random connected bases on each of 7 to 10 (knot count uniform in [2, C(n,3)//3], seed 20261118 + n); first 2,000 unfaithful bases with states per size: greedy forcing set (up to 5 emergent sets x 3 orders), exact catalogue embedding check when above 6 knots.",
+  "C3": "NAE-SURFACE-20261111-001A-E001's F2 recipe (faithful_tori over 24..48, swap_worlds k in {1,2,4}, reps 0..1, seed 20261113 + 1000 n + 10 k + rep), copied verbatim; GROW-COUNT-20261111-001A-E001's 90 NAE runs, compacted; SAT readings; locality radius to 4 for emergent sets until one has radius <= 2.",
+  "C4": "three-fold weaves (every co-knotted pair in exactly three knots, every distinction used, connected): 30 per size on 7 to 14, SAT with seed 20261119 + n.",
+  "C5": "bond distance from distinction 0 at graph distance 2 and 3 on faithful bases with a pair in 3 or more knots: brute force (bonds to 5) on C2 bases with at least 7 distinctions; LONG-LOOP's frozen ruler on C3's grown bases."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 6238d20295d914f88f6c372b10d6a80997f7fc15d170b665c99003c3549c4c5f) beside this file; KNOTS-ALONE's knots_alone.py (sha256 aee9a2eda0907064b89eae4fe4badddb22b80fecb62bd91d5a5fa448397010de); LONG-LOOP's census.py (its ruler); NAE-SURFACE's and GROW-COUNT's census.json; pysat Minisat22; networkx; 12 workers.",
+  "run": "census.py from the repository root; output artifacts/OVERLAP-READ-20261111-001A/OVERLAP-READ-20261111-001A-E001_emergence_census/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the families, sizes, seeds, catalogue bound or predictions after seeing results"
+ ],
+ "primary_observable": "The catalogue to 6 knots; per family the faithful share, the emergent kinds and the size or radius of the smallest forcing set; the three-fold weaves' readings.",
+ "cheapest_meaningful_control": "--control mode: the Pasch (four plain emergent knots), the octahedron (faithful) and a 3-page book (faithful), outside the families; a reduced dry run disclosed in the pre-registration; X1 regenerates NAE-SURFACE's recorded readings.",
+ "predictions": {
+  "P1": "With at most 4 knots the catalogue is exactly: (3, signed), (4, unequal tie), (4, plain), (4, plain), (4, signed).",
+  "P2": "Every emergent knot is plain or signed, every tie an equality or an inequality, nothing frozen (Lemma L1).",
+  "P3": "Every unfaithful base with states in C2's forcing samples has an emergent set forced by at most 6 of its knots.",
+  "P4": "Every unfaithful swap-made base has an emergent set of locality radius at most 3.",
+  "P5": "No three-fold weave in C4 is read faithfully.",
+  "X1": "Regenerated swap-made readings match NAE-SURFACE's record on all 822 (160 faithful).",
+  "X2": "Every forcing set of at most 6 knots found in C2 is isomorphic to a catalogue entry."
+ },
+ "decision_rules": {
+  "P3 and P4 hold": "What NAE adds is local; the catalogue is the local list.",
+  "P3 or P4 fails": "The first base whose emergent sets all need more is the next object (a long obstruction).",
+  "P5 fails": "An overlapping base read natively at uniform overlap three; its ruler next.",
+  "P1, P2, X1 or X2 fails": "A bug or a wrong lemma: stop, fix, report."
+ },
+ "stop_rule": "One run; lemmas L1 to L4 proved in ticket B; one referee pass; report and hold.",
+ "runtime": "About ten to fifteen minutes on 12 workers; registered; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

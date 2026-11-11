@@ -123,3 +123,36 @@ and Klein bottles to distance 3; the equality was computed on tori only.
 4. **A note.** Payoff 1: result conversion. Concreteness 3.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead; the owner has paused new work until tomorrow.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 07:04 UTC and copied here verbatim.
+
+**The not-all-equal ruler is proved in the plane, and the referee found no errors or gaps.**
+
+- **The result.** On the triangular lattice under not-all-equal, every pair is free and the triangles are the only three-site bonds. Two sites d steps apart lie together in a bond of exactly d + 2 sites and in none smaller. So bond distance is graph distance + 1 at every distance, and bond balls read dimension 2.
+- **The bond.** One side of a triangle of side d, all equal, together with the opposite corner (equal to the side exactly when d is odd).
+- **Why it works.** The allowed states are the ground states of the triangular Ising antiferromagnet. They carry a known height function that rises at most one per step. A pattern is forbidden when it asks the height to climb faster than that, and each site can supply at most half a unit of the excess.
+- **What stays computed.** Tori stay computed (the long-loop result, stress test signed off). Klein bottles only got the faithfulness result.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — NAE's ruler as a theorem | **Status:** Successful | R1 to R3 proved in the plane |
+| Local direction — NAE on worlds of knots alone | Continue | Flat worlds (winding heights) remain |
+| Broader exploration — G1 space from a law | Known alternatives | The count from growth; the ruler on tori |
+| Long-term goal — G1 Space from a law (question 9) | Capability gained | A knot law measures its own plane exactly, nothing drawn |
+
+**Corrections:** one, Not a block. The pre-registration said the flat-world equality was computed on Klein bottles too; it covered tori only.
+**Goals:** a G1 checkpoint (capability gained), no goal change. **Assumptions:** none changed.
+**Basket:** the count from growth (2/3, 1/3), bond balls on tori (2/3, 2/3), GROW-FACE#1 (2/3, 1/3); none taken, because new work is paused.
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The ruler on tori and Klein bottles | 2/3 — Substantial | 2/3 — Testable | Extend the criterion to winding heights; bound the tilt a short pattern sees by edge-width → a proved range, or the first counterexample | Selected · awaiting go-ahead |
+| 2 | The count from growth | 2/3 — Substantial | 1/3 — Stated | A growth rule adding NAE knots while the reading stays faithful → closes into a surface, or not | Alternative · deferred |
+| 3 | Other laws and surfaces | 2/3 — Substantial | 2/3 — Testable | NAE on the 4-, 5- and 7-regular worlds, where this height function fails → which have a ruler | Alternative · deferred |
+| 4 | Write the knots-alone line up as a note | 1/3 — Modest | 3/3 — Ready | Four epics into one self-contained note → a note an expert can check | Alternative · deferred |
+
+It's committed and published ([decision note](https://github.com/jscul/knotlab/blob/main/research/RULER-20261111-001/ruler.md)). I'm holding until you resume tomorrow.

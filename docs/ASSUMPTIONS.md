@@ -1619,8 +1619,11 @@ evidence: results and their status come from the records each entry links.
   their knots span. The entry is overturned if such worlds fix flat local geometry with nothing named but the knot, and confirmed if
   a face knot is shown to need an input the knot test excludes.
 - **History.**
-  - 2026-11-11 · Overturned in the knots-alone setting, with the surface count given and on computed evidence in range, by
-    `LONG-LOOP-20261111-001`'s frozen rule: the not-all-equal law reads every 6-regular torus with 49 to 80 distinctions and Klein
+  - 2026-11-11 · Overturned in the knots-alone setting, conditional on A64 (the surface count names no face, Assumed), with the
+    surface count given and on computed evidence in range, by `LONG-LOOP-20261111-001`'s frozen rule, which applies this entry's
+    registered criterion (flat local geometry fixed with nothing named but the knot). The face relation passed K1–K3 in the
+    canonical form: the not-all-equal relation by `knotlab check`, and in every world each face knot as a bond of the allowed
+    states with all other distinctions quantified away (frozen in advance); the canonical test is unchanged. The evidence: the not-all-equal law reads every 6-regular torus with 49 to 80 distinctions and Klein
     bottle with 19 to 40 of edge-width at least 5 faithfully (449 worlds), and on the 349 tori of edge-width at least 6 sets bond
     distance graph distance + 1 out to distance 3 (distance 2 proved given faithfulness). A face named only by a knot gives native
     flat local geometry; what must be put in is how knots meet (A64)

@@ -1,0 +1,208 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RULER-FLAT-20261111-001A-P001",
+ "kind": "proof",
+ "ticket": "RULER-FLAT-20261111-001A",
+ "proof": "RULER-FLAT-20261111-001A-P001",
+ "status": "passed",
+ "claim": "On a 6-regular torus Lambda/L with margin M (the best admissible tilt's least margin over nonzero lattice vectors; admissible tilts are the slopes in a triangle, Lemma T0): states exist exactly when M >= 0 (T1); bond distance is at least min(d, M/3) + 1 (T2); it equals d + 1 when d < M/3 (T3); the torus is read faithfully when M > 3, with nothing frozen and no tie already when M >= 3 (T4). The same on every Klein bottle whose glide keeps the forward steps (an edge glide; Lemma K0: exactly those whose pairs can be directed so that every knot is a directed cycle), with M over the whole deck group (Theorem K). Klein bottles with an altitude glide are not claimed.",
+ "C1": {
+  "tori": 136,
+  "patterns": 850580,
+  "mismatches": 0,
+  "pass": true
+ },
+ "C6": {
+  "mutation mismatches": 53124,
+  "pass": true
+ },
+ "C2": {
+  "tori": 2450,
+  "pass": true
+ },
+ "C3": {
+  "tori with M > 3": 1698,
+  "failures": [],
+  "pass": true
+ },
+ "C4": {
+  "failures": [],
+  "counted": {
+   "d2 with M>=9": 7752,
+   "d3 with M<=6 and a 4-bond": 2394,
+   "d3 with M>=12": 2772
+  },
+  "pass": true
+ },
+ "C5": {
+  "pass": true,
+  "tori with no state": []
+ },
+ "M by edge-width": [
+  [
+   3,
+   0
+  ],
+  [
+   3,
+   3
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   4,
+   3
+  ],
+  [
+   4,
+   6
+  ],
+  [
+   5,
+   3
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   6,
+   6
+  ],
+  [
+   6,
+   9
+  ],
+  [
+   7,
+   3
+  ],
+  [
+   7,
+   6
+  ],
+  [
+   7,
+   9
+  ],
+  [
+   8,
+   6
+  ],
+  [
+   8,
+   9
+  ],
+  [
+   8,
+   12
+  ],
+  [
+   9,
+   6
+  ],
+  [
+   9,
+   9
+  ],
+  [
+   9,
+   12
+  ],
+  [
+   10,
+   9
+  ],
+  [
+   10,
+   12
+  ],
+  [
+   10,
+   15
+  ],
+  [
+   11,
+   12
+  ],
+  [
+   11,
+   15
+  ]
+ ],
+ "C7": {
+  "bottles": 60,
+  "patterns": 481074,
+  "mismatches": 0,
+  "T1 both ways": true,
+  "pass": true
+ },
+ "C10": {
+  "mutation mismatches": 17224,
+  "pass": true
+ },
+ "C12": {
+  "mutation mismatches": 18082,
+  "pass": true
+ },
+ "C8": {
+  "classes": 53,
+  "M invariant": true,
+  "margin facts": true,
+  "T1": true,
+  "with M > 3": 34,
+  "T4 failures": [],
+  "pass": true
+ },
+ "C9": {
+  "failures": [],
+  "counted": {
+   "d2 with M>=9": 72,
+   "d3 with M<=6 and a 4-bond": 78,
+   "d3 with M>=12": 0
+  },
+  "pass": true
+ },
+ "C11": {
+  "one-sided (edge glide, cyclically directed)": {
+   "False False": 1083,
+   "True True": 582
+  },
+  "tori cyclically directed": 2450,
+  "tori": 2450,
+  "pass": true
+ },
+ "Klein M by edge-width": [
+  [
+   3,
+   3
+  ],
+  [
+   4,
+   3
+  ],
+  [
+   4,
+   6
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   6,
+   6
+  ],
+  [
+   6,
+   9
+  ]
+ ],
+ "failures": []
+}

@@ -49,3 +49,11 @@ rounded down to a multiple of 3 in most cases, and is smaller for some (M = 3 at
 ## Stop rule
 
 A refereed proof for tori, or the first counterexample; Klein bottles proved or left computed. Then report and hold.
+
+## Correction after freezing (2026-11-11)
+
+Found by the referee, logged in `docs/CORRECTIONS.md` (Not a block); the text above is left as frozen. "Anti-symmetric under the
+glide (h(gx) = κ − h(x))" holds only for one-sided weaves whose co-knotted pairs cannot be directed so that every knot is a directed
+cycle (drawn: the glide mirror perpendicular to a lattice edge). When they can (mirror parallel to an edge), the glide keeps the
+height's direction of climb, h(gx) = h(x) + κ, and the two-sided proof carries over; that half is proved (Lemma K0 and Theorem K in
+the proof).

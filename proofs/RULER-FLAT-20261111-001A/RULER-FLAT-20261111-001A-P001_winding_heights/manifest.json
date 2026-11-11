@@ -50,16 +50,16 @@
  "proof": "RULER-FLAT-20261111-001A-P001",
  "authoritative_metadata": "manifest.json",
  "title": "The ruler on tori, by winding heights",
- "status": "Partial",
- "claim": "On a 6-regular torus Lambda/L with margin M (the best admissible tilt's least margin over nonzero lattice vectors): states exist if M >= 0; bond distance is at least min(d, M/3) + 1; it equals d + 1 when d < M/3; the torus is read faithfully when M > 3. Klein bottles attempted.",
+ "status": "Proved",
+ "claim": "On a 6-regular torus Lambda/L with margin M (the best admissible tilt's least margin over nonzero lattice vectors; admissible tilts are the slopes in a triangle, Lemma T0): states exist exactly when M >= 0 (T1); bond distance is at least min(d, M/3) + 1 (T2); it equals d + 1 when d < M/3 (T3); the torus is read faithfully when M > 3, with nothing frozen and no tie already when M >= 3 (T4). The same on every Klein bottle whose glide keeps the forward steps (an edge glide; Lemma K0: exactly those whose pairs can be directed so that every knot is a directed cycle), with M over the whole deck group (Theorem K). Klein bottles with an altitude glide are not claimed.",
  "dependencies": [
   "RULER-20261111-001A",
   "LONG-LOOP-20261111-001A"
  ],
  "failure_conditions": [
-  "A torus and a pair at distance d < M/3 with bond distance other than d + 1.",
-  "A torus with M > 3 not read faithfully.",
-  "A torus with M >= 0 and no NAE state."
+  "A torus or edge-glide Klein bottle and a pair at distance d < M/3 with bond distance other than d + 1.",
+  "A torus or edge-glide Klein bottle with M > 3 not read faithfully.",
+  "A torus or edge-glide Klein bottle whose having states disagrees with M >= 0."
  ],
  "lineage": {
   "home_scope": "RULER-FLAT-20261111-001",
@@ -77,18 +77,14 @@
   "check": "proofs/RULER-FLAT-20261111-001A/RULER-FLAT-20261111-001A-P001_winding_heights/check.py",
   "directory": "proofs/RULER-FLAT-20261111-001A/RULER-FLAT-20261111-001A-P001_winding_heights"
  },
- "remaining_obligations": [
-  "Write the proof",
-  "Run check.py",
-  "Independent referee"
- ],
- "foundation_claim_scope": "6-regular triangulated tori with NAE on every knot; finite worlds, no source label needed. Klein bottles only if the equivariant extension is proved.",
+ "remaining_obligations": [],
+ "foundation_claim_scope": "6-regular triangulated tori and edge-glide Klein bottles with NAE on every knot (each co-knotted pair in exactly two knots, each link one ring of six); finite worlds, no source label needed. Altitude-glide Klein bottles and every world with other knot counts are outside it.",
  "validation": {
   "level": "V1",
   "external_review": false,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11.",
-  "status": "pre-registered; the proof to follow",
-  "novelty": "to be assessed"
+  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11; read by two independent referees (fresh Claude agents given the proof, the code and the plane proof, each with its own brute force): the first found T1 to T4 fully proved and the check's margin wrong on 234 tori (fixed) and the pre-registration's Klein note half right; the second found Lemma K1 and Theorem K proved with small fixes, matched check.py's margins on all 1,845 edge-glide presentations to 80, and tested T3 at distance 3 on three Klein bottles with M = 12.",
+  "status": "proved by hand; finite checks C1 to C11 in check.py passed (result.json, third run, exact margins); refereed twice, fixes made",
+  "novelty": "known-with-delta: quasi-periodic heights with a slope and the extension of height functions by difference constraints are known; the margin invariant and T1 to T4 and Theorem K as statements on the minimal non-shattered sets were not found in a bounded search; folklore risk moderate."
  }
 }

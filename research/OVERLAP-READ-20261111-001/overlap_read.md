@@ -161,3 +161,11 @@ gains a history line, status unchanged.
 4. **Reading by pair counts.** Payoff 2: it would say what L5's compression keeps. Concreteness 1.
 
 **Recommendation.** Research directions, #1, the owner's infinite bases, awaiting the go-ahead; #2 is small enough to run beside it.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 20:51 UTC, summarized here (the two tables are those above, with directions 1 to 3). The headline:
+the law makes new knots, always of its own kind, and reads only how many knots sit on each pair; overlap is readable but uniform
+overlap three is not; what it adds is not local (98 of 662 swap-made bases bind a triple only through the whole base); and some pairs
+two steps apart lie in no bond at all. Corrections: one, Not a block. Goals: a G1 checkpoint. Assumptions: A67 added, A64 a history
+line. Holding for a go-ahead on #1, with #2 small enough to run beside it.

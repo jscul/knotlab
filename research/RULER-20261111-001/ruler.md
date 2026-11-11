@@ -75,8 +75,15 @@ findings, folded in:
 - **Known.** The triangular Ising antiferromagnet's ground states (Wannier 1950) and their height mapping (Blöte and Hilhorst 1982;
   Nienhuis, Hilhorst and Blöte 1984); extension of height functions by difference constraints (Thurston 1990 for tilings); weak
   2-colourings of triangulations for existence.
-- **Classification.** Known-with-delta: the tools are known; R1 to R3 as statements about the ground-state space's minimal
-  non-shattered sets were not found in a bounded search. Folklore risk moderate.
+- **Checked again on 2026-11-11 (before building on the theorem).** The extension criterion is known in general: a partial height
+  or Lipschitz function extends exactly when a pairwise distance condition holds, with the extremal extensions as pointwise minima
+  and maxima (Kirszbraun-type theorems for graphs, Chandgotia, Pak and Tassy; dimer limit shapes, arXiv 1712.08396; for the
+  triangular lattice with the mod-3 condition, arXiv 2410.23621). The antiferromagnet's zero-temperature rigidity, forbidden local
+  configurations with long-range effect, is known qualitatively (Nourhani, Crespi and Lammert, Phys. Rev. E 98, 032107). No statement
+  of R1 or R2, the sizes of the minimal forbidden patterns or bond distance, was found.
+- **Classification.** Known-with-delta: the tools are known, Lemmas 3 and 4 in substance; R1 to R3 as statements about the
+  ground-state space's minimal non-shattered sets were not found in a bounded search. Folklore risk moderate: a specialist could
+  derive R2 quickly from the known criterion.
 
 ## Workspace assumptions
 

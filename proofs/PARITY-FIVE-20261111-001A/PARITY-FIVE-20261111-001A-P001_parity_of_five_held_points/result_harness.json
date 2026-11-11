@@ -1,0 +1,76 @@
+{
+ "status": "passed",
+ "checks": {
+  "dependencies": {
+   "proofs/PARITY-FIVE-20261111-001A/PARITY-FIVE-20261111-001A-P001_parity_of_five_held_points/five_lib.py": "0b7449eefd364913229f1e4c8d46c7e7f08bebccaa11f6759514c6ffc33ec3f0",
+   "research/PARITY-FIVE-20261111-001/preregistration.md": "58d50a1c82b0c270413f6ee43c8f797f817b540cac3572dcc3a2b8aec0347bdd",
+   "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/parity_lib.py": "8f12ca9ea6037155066335c4b9c1a117f33b5e86b51e67febd3aab177b1b8fc2",
+   "proofs/THREE-IN-20261110-001B/THREE-IN-20261110-001B-P001_learning_a_map_of_three_points/io3_lib.py": "0a30f53ed6d39129c9234011aa039217fad8bea2ddfe5e078b8d68c8a45181c3",
+   "proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance/credit_lib.py": "6cca6f5bbc621e71be09f167683dbf1ab994b5af0b3489666a4fcb163fcaa16b",
+   "proofs/STURDY-PROBE-20261110-001A/STURDY-PROBE-20261110-001A-P001_a_sturdier_probe/probe_lib.py": "0a43265ead7402efc0c64c3935a823f47fe76317846984f2ce08141508764a65",
+   "proofs/LEARN-PARITY-20261111-001A/LEARN-PARITY-20261111-001A-P001_learning_parity/result.json": "eeeb42b4178381a1b18595e5d1efa8f7ba3d13d416383a0d2fd982b937e55d65"
+  },
+  "result": {
+   "V1: LEARN-PARITY's first T1 run reproduced": true,
+   "rows": [
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 13400,
+     "probes": 22,
+     "radius": 0,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "10010110",
+     "stopped": true,
+     "steps": 11200,
+     "probes": 11,
+     "radius": 0,
+     "map at the stop": "10010110",
+     "map after the disturbance": "10010110",
+     "outcome": "learned, held"
+    },
+    {
+     "target": "01101001",
+     "stopped": true,
+     "steps": 70000,
+     "probes": 124,
+     "radius": 3,
+     "map at the stop": "01101001",
+     "map after the disturbance": "01101001",
+     "outcome": "learned, held"
+    }
+   ],
+   "V2: three-input sets on (2, 0, 4) as found before": true,
+   "three-input sets by class": {
+    "0": [],
+    "1": [],
+    "2": [],
+    "3": [
+     [
+      [
+       0,
+       1,
+       4,
+       5
+      ],
+      0
+     ],
+     [
+      [
+       2,
+       3,
+       6,
+       7
+      ],
+      0
+     ]
+    ]
+   }
+  },
+  "seconds": 102.5
+ }
+}

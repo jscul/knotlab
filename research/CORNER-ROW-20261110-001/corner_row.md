@@ -154,7 +154,7 @@ behind it), parked by its frozen stop; what comes next is another line, among th
 
 ## Final report as sent
 
-Sent to the owner on 2026-11-11 at 01:45 UTC and copied here verbatim.
+Sent to the owner on 2026-11-11 at 01:41 UTC and copied here verbatim.
 
 **Corner row (B140): there's no closed form, so I've parked the corner line as frozen.**
 

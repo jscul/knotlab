@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "OVERLAP-READ-20261111-001Z-P001",
+ "kind": "proof",
+ "ticket": "OVERLAP-READ-20261111-001Z",
+ "proof": "OVERLAP-READ-20261111-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing OVERLAP-READ-20261111-001: one line per conclusion with its status, novelty and evidence (ticket A, the frozen census: P1, P2, P5, X1, X2 held, P3 and P4 failed; ticket B, proved and refereed: L1 to L5), one correction (Not a block) and the recommendation, research directions with infinite periodic bases selected. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/OVERLAP-READ-20261111-001A/OVERLAP-READ-20261111-001A-E001_emergence_census/contract.json": "Frozen",
+   "artifacts/OVERLAP-READ-20261111-001A/OVERLAP-READ-20261111-001A-E001_emergence_census/census.json": "run output",
+   "proofs/OVERLAP-READ-20261111-001B/OVERLAP-READ-20261111-001B-P001_what_nae_forces/manifest.json": "Proved",
+   "proofs/OVERLAP-READ-20261111-001B/OVERLAP-READ-20261111-001B-P001_what_nae_forces/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

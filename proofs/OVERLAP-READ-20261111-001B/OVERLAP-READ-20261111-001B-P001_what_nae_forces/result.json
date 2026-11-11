@@ -1,0 +1,117 @@
+{
+ "schema_version": 3,
+ "artifact_id": "OVERLAP-READ-20261111-001B-P001",
+ "kind": "proof",
+ "ticket": "OVERLAP-READ-20261111-001B",
+ "proof": "OVERLAP-READ-20261111-001B-P001",
+ "status": "passed",
+ "claim": "For a knot pattern under NAE with a state: L1 nothing is frozen, every tied pair is equal or unequal, every hollow triple misses exactly one complementary pair (a plain or signed NAE); L2 a Pasch forces NAE on its four complementary triples (same 18 states as the octahedron); L3 a book of any number of pages, as the whole pattern, is read faithfully; L4 the cut weighted by knots per pair is at most twice the knots, with equality exactly at states, so lambda-fold pair counts give states cutting two thirds of the co-knotted pairs and 2-(v,3,lambda) designs (lambda >= 1) have no state for v >= 5; L5 patterns with the same knot count on every pair have the same states, so at most one of them is read faithfully.",
+ "C1": {
+  "state sets and patterns with a state": 102924,
+  "with a violation": 0
+ },
+ "C2": {
+  "Pasch states": 18,
+  "octahedron states": 18,
+  "equal": true,
+  "every pair free": true,
+  "complementary triples NAE": true,
+  "states": [
+   3,
+   7,
+   11,
+   12,
+   13,
+   14,
+   15,
+   19,
+   28,
+   35,
+   44,
+   48,
+   49,
+   50,
+   51,
+   52,
+   56,
+   60
+  ]
+ },
+ "C3": {
+  "1": true,
+  "2": true,
+  "3": true,
+  "4": true,
+  "5": true,
+  "6": true,
+  "7": true,
+  "8": true,
+  "9": true,
+  "10": true,
+  "11": true,
+  "12": true
+ },
+ "C4": {
+  "identity mismatches": 0,
+  "designs": {
+   "complete on 5": {
+    "design": true,
+    "lambda": 3,
+    "states": 0
+   },
+   "complete on 6": {
+    "design": true,
+    "lambda": 4,
+    "states": 0
+   },
+   "complete on 7": {
+    "design": true,
+    "lambda": 5,
+    "states": 0
+   },
+   "complete on 8": {
+    "design": true,
+    "lambda": 6,
+    "states": 0
+   },
+   "Fano plane": {
+    "design": true,
+    "lambda": 1,
+    "states": 0
+   },
+   "affine plane of order 3": {
+    "design": true,
+    "lambda": 1,
+    "states": 0
+   },
+   "2-(6,3,2)": {
+    "design": true,
+    "lambda": 2,
+    "states": 0
+   }
+  }
+ },
+ "C5": {
+  "state sets and patterns with a state": 3578,
+  "with a violation": 3578
+ },
+ "C6": {
+  "state sets and patterns with a state": 6650,
+  "with a violation": 2722
+ },
+ "C7": {
+  "Pasch and complement same states": true,
+  "random trades": 1000,
+  "with different states": 0
+ },
+ "pass": {
+  "C1": true,
+  "C2": true,
+  "C3": true,
+  "C4": true,
+  "C5": true,
+  "C6": true,
+  "C7": true
+ },
+ "failures": []
+}

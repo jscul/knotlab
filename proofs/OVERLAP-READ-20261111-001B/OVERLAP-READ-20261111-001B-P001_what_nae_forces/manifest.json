@@ -50,8 +50,8 @@
  "proof": "OVERLAP-READ-20261111-001B-P001",
  "authoritative_metadata": "manifest.json",
  "title": "What not-all-equal forces",
- "status": "Partial",
- "claim": "L1: under NAE nothing is frozen, every tie is an equality or an inequality, every emergent knot forbids one complementary pair (a plain or signed NAE). L2: a Pasch forces NAE on its four complementary triples. L3: a book of any number of pages is read faithfully. L4: the weighted cut (weights = knots per pair) is at most twice the number of knots, with equality exactly at states; hence lambda-fold weaves' states cut two thirds of co-knotted pairs and 2-(v,3,lambda) designs have no state for v > 4.",
+ "status": "Proved",
+ "claim": "For a knot pattern under NAE with a state: L1 nothing is frozen, every tied pair is equal or unequal, every hollow triple misses exactly one complementary pair (a plain or signed NAE); L2 a Pasch forces NAE on its four complementary triples (same 18 states as the octahedron); L3 a book of any number of pages, as the whole pattern, is read faithfully; L4 the cut weighted by knots per pair is at most twice the knots, with equality exactly at states, so lambda-fold pair counts give states cutting two thirds of the co-knotted pairs and 2-(v,3,lambda) designs (lambda >= 1) have no state for v >= 5; L5 patterns with the same knot count on every pair have the same states, so at most one of them is read faithfully.",
  "dependencies": [
   "KNOTS-ALONE-20261111-001A"
  ],
@@ -77,18 +77,14 @@
   "check": "proofs/OVERLAP-READ-20261111-001B/OVERLAP-READ-20261111-001B-P001_what_nae_forces/check.py",
   "directory": "proofs/OVERLAP-READ-20261111-001B/OVERLAP-READ-20261111-001B-P001_what_nae_forces"
  },
- "remaining_obligations": [
-  "Write the proofs",
-  "Run check.py",
-  "Independent referee"
- ],
+ "remaining_obligations": [],
  "foundation_claim_scope": "Finite bases of three-place knots under NAE, with any number of knots per pair; no source label needed.",
  "validation": {
   "level": "V1",
   "external_review": false,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-11.",
-  "status": "pre-registered; the proofs to follow",
-  "novelty": "to be assessed"
+  "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-11; read by an independent referee (a fresh Claude agent with its own code), which found L1 to L4 proved with wording fixes (made) and suggested L5.",
+  "status": "proved by hand; check.py C1 to C7 passed (result.json); refereed",
+  "novelty": "known (L1: the co-clone IN2 of complement-closed relations; L4: the NAE-to-max-cut triangle gadget and Rosa's counting) and known-with-delta (L2, L5: elementary consequences with trades; L3 elementary); the reading of what NAE forces on unnamed triples is the delta."
  }
 }

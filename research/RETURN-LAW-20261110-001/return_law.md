@@ -165,3 +165,40 @@ for the coordinator's go-ahead.
 4. **The other half.** Payoff 2 and concreteness 1, unchanged from `REACH-HALVES-20261110-001`.
 
 **Recommendation.** Continue with #1 once the coordinator gives the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-11 at 00:32 UTC and copied here verbatim.
+
+The corner return law is now proved at each power of two from 4 to 512, but not yet for every power of two. Cutting the corner's walks at the columns where its moves are restricted turns the two-dimensional count into a matrix on the rows alone. Column 0 can't step north, and in the box the last column can't step south. At a power of two the box version is an explicit block of size 2(n − 1), and an exact finite check settles each side. A general proof now needs one finite identity per side.
+
+The law also has a one-dimensional reading. At a power of two, a path of n sites with a loop at one end has determinant 1 + the trace polynomial. So, every four steps, the corner returns exactly like that path's loop end. In the quadrant the path is endless. The looped path is a quotient of the corner's orbit, not a piece of it, and no explicit map onto it is known.
+
+There are two more findings. One far wall is invisible to the corner at every even side from 2 to 80, not just at powers of two. In the quadrant, the corner's returns of length 4k number exactly C_k² (checked to k = 24), the same count as for diagonal walks. The quadrant and half-strip laws each reduce to one identity on a path; both are computed but unproved.
+
+For B137, the planned reflection proof didn't land: it is a true symmetry, but the walks it leaves have no closed form. The column decomposition does carry the full-reach count, though, as the corner's whole row of the same block inverse. So B137 and B138 now hinge on one object, and that is the selected next step.
+
+Prior work, for your novelty mark. I found nothing on a walk whose return series is 1/(1 + trace polynomial), or on the Catalan series folded modulo 2n − 1. The looped-path determinant identity follows in a few lines from classical Chebyshev facts over GF(2), so it may be folklore. The quadrant rule (no north step from the y-axis) and its C_k² count weren't found either. Boundary-modified walks do appear in the literature (Beaton, Owczarek and Rechnitzer).
+
+The independent referee confirmed every proved statement and the per-side proofs. It caught one wrong inference: I had placed the looped path inside the corner's orbit, when it is a quotient. It also found some checks weaker than their labels and a few overclaims. All of these were fixed before commit.
+
+| Scope | Verdict | Why |
+|---|---|---|
+| This attempt: the corner return law (B138) | **Status:** Partially successful | Proved at every power of two from 4 to 512; one finite identity per side remains |
+| Local direction: column decompositions | Continue | B137's count and B138's law are entries of one block matrix |
+| Broader exploration: the spectral route (G5) | Known alternatives | The looped path, a quotient of the corner's orbit, is B59's candidate; the spectral route stays parked |
+| Long-term goal: G5 Dynamics | Capability gained | The power-of-two effect at the corner is a looped path of n sites, exact to 512 |
+
+**Next step:** Continue, selected #1, awaiting the coordinator's go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | The corner's row of the block inverse (B140, toward B137) | 3/3 | 2/3 | Compute the row exactly at 4 to 64 and look for a closed form → both laws for every m, or no pattern | Selected · awaiting go-ahead |
+| 2 | The quadrant law as a theorem (B141) | 2/3 | 1/3 | The pairing of the corner's row and column as an ansatz in the kernel equation → a proof, or the ansatz fails | Alternative |
+| 3 | An explicit quotient map onto the looped path (B59) | 3/3 | 1/3 | Describe the corner's orbit modulo what the corner never sees, at 8 and 16 → the single particle, or no description | Alternative |
+| 4 | A short-time certificate for the other half (B139) | 2/3 | 1/3 | Odd counts within 6.4n, sides to 40 → a rule, or sides with none | Alternative |
+
+**Corrections:** none. **Goals:** G5 checkpoint (capability gained), no goal change; B138 taken, B140 and B141 added. **Assumptions:** none added.
+**Basket:** B137 (3/3, 1/3), B74 (3/3, 1/3), B66 (2/3, 3/3). None taken, because #1 (B140) is the concrete route into B137 and is waiting on the go-ahead.
+
+Nothing here comes near the publication hold. The commits are a5769c7a7 (pre-registration), 6ff943cfd (epic) and be3f14cd7 (goals and intuition), plus tracking. The stress test ran in 65 s, so there is no long-running check to sign off.

@@ -75,3 +75,40 @@ would.
 
 **Corrections:** none. **Goals:** G15 checkpoint (capability gained); B135 taken; B143 added. **Assumptions:** none new or changed.
 **Basket:** B136 (are maps of held points unate), B130 (a probe that is a theorem); taken: B136 as the selected next step.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-11:
+
+**B135 is closed: learning from examples reaches deeper and wider memories.** The same learner (credit from pinned dissonance, the sturdier probe), unchanged except for a larger step budget, learned and held every one of 40 composite writes on three new spaces. Those composites hold a leaf three levels down, or three atoms under one composite. Leaves gave 55 of 56. It never stopped on the impossible AND and never stopped inexactly.
+
+- **Realizability (exact):** every gate target is realizable at all 24 groups tested.
+- **Learning (computed, frozen):** one-atom composites two levels down 16 of 16; two-atom composites three levels down 16 of 16; three-atom composites 8 of 8.
+- **Cost:** depth alone costs nothing. A one-atom composite two levels down took about what a leaf took (median 129,400 against 120,200 steps to turn a gate on). A second atom multiplied that about 18 times, and a third added nothing more.
+- **My predictions were wrong:** I expected the depth-3 and three-atom marks to fail at this budget. All six marks held.
+- **Settled by definition:** the AND mark is settled by self-duality as far as learning goes, so it tests only the probe; no other mark is.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: deeper memories from examples (B135) | **Status:** Successful | every composite write learned and held at depth 3 and with three atoms |
+| Local direction: learning gates from examples | Exhausted for this phase | every gate target learned at every kind of group tested |
+| Broader exploration: learning program | Known alternatives | unateness as a theorem, the probe as a theorem, cost with more atoms |
+| Long-term goal: G15, a point in a learned knot space | Capability gained | learning from examples reaches deep and wide memories natively |
+
+**Next step:** Research directions, selected #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Are maps of held points unate (B136) | 2/3 Substantial | 1/3 Exploratory | the census at radius 2 and on the deeper spaces, then a proof attempt from forcing chains → a theorem that every map of held points is unate, or a parity gadget | Selected, awaiting go-ahead |
+| 2 | A probe that is a theorem (B130) | 2/3 Substantial | 1/3 Exploratory | as recorded | Deferred |
+| 3 | How learning cost grows with atoms (B143) | 1/3 Incremental | 3/3 Ready | composites of four and five atoms → cost flat, linear or multiplying | Deferred |
+| 4 | Composing gates (B124) | 1/3 Incremental | 1/3 Exploratory | as recorded | Deferred |
+
+With learning shown to reach these memories, the sharper question is what the memory can compute, which is why B136 now ranks first.
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (capability gained); B135 taken; B143 added.
+**Assumptions:** none new or changed.
+**Basket:** B136 (are maps of held points unate), B130 (a probe that is a theorem); taken: B136 as the selected next step.
+
+The learning note's pick-up section is updated, and the run is registered in docs/LONG_RUNNING.md and folded in. B136 waits for a go-ahead.

@@ -11,6 +11,13 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: patterns alive only in the limit, one word
+
+- The note on nested patterns that live only without a bottom (`LIMIT-ONLY-20261112-001`) said the bottomless pattern needs the
+  knot's three ends all equal somewhere; what is proved is that it allows that state. Corrected minutes after publication
+  ([decision note](research/LIMIT-ONLY-20261112-001/limit_only.md)).
+- Unchanged: every number.
+
 ## 12 November 2026: reading along a nested pattern's levels, narrowed by its referee
 
 - The test of what the law reads along the levels of nested patterns (`NEST-READ-20261112-001`) was confirmed: every figure

@@ -3222,6 +3222,15 @@ So holes come in two kinds:
      But in one block a loop of 2 or 3 knots ties two spare positions that a loop of 6 leaves free: a twisted copy takes exactly the
      states within k moves of their image around a loop of k knots (the referee's rule), the first tie found that depends on how long
      a loop is ([decision note](../research/TWIST-PIN-20261112-001/twist_pin.md)).
+
+   **2026-11-12: endless blocks** (`ENDLESS-BLOCK-20261112-001`; referee pending).
+   - **Bound in every order, they lock completely (proved).** A harmony can spare no distinction, so substituting it for every
+     distinction, bound by its own knots in every order, puts every copy in one shared state; lags fold that to the states whose period
+     divides the loops' net lags, and loop length plays no part.
+   - **Bound in one order, a loop locks (exact).** Bound by its own kinds taken one way round (a stitch of three harmonies), 7 of 45
+     harmonies make a closed loop of knots put every copy on it in one shared state, which the same knots in an open chain, even
+     unrolled nine times, do not. Influence born of the whole loop: for two harmonies only a loop of 3 knots locks, not one of 4 or 6
+     ([decision note](../research/ENDLESS-BLOCK-20261112-001/endless_block.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 89% at the last base, the same at every

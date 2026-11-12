@@ -1,0 +1,142 @@
+{
+ "positives": 685,
+ "negatives": 2055,
+ "negatives ending at the very next knot": 0,
+ "negatives that end later / never": [
+  1386,
+  669
+ ],
+ "distinct negative growths; most uses of one": [
+  587,
+  14
+ ],
+ "concordance (all runs)": {
+  "mn": 0.6851581508515815,
+  "kappa": 0.7440389294403893,
+  "maxD": 0.7272506082725061,
+  "Uprefix": 0.545985401459854,
+  "Pnest": 0.7469586374695864,
+  "hazard": 0.9469586374695864
+ },
+ "concordance (odd runs)": {
+  "mn": 0.6951690821256039,
+  "kappa": 0.7642512077294686,
+  "maxD": 0.7260869565217392,
+  "Uprefix": 0.5468599033816425,
+  "Pnest": 0.755072463768116,
+  "hazard": 0.9352657004830918
+ },
+ "conditional logit, odd runs": {
+  "pairwise objective (the census's), exact optimum": 0.7729468599033816,
+  "1:3 conditional likelihood (Newton)": 0.7719806763285024,
+  "statsmodels ConditionalLogit": 0.7719806763285024
+ },
+ "statsmodels and Newton conditional weights agree (max abs difference)": 0.0010999616767434217,
+ "best cheap feature on odd runs": [
+  "kappa",
+  0.7642512077294686
+ ],
+ "paired differences": {
+  "Pnest minus mn": {
+   "difference": 0.06180048661800486,
+   "bootstrap over positives 95%": [
+    0.03503649635036499,
+    0.08954379562043797
+   ],
+   "bootstrap over growths 95%": [
+    0.020794810090500226,
+    0.10773183221933198
+   ]
+  },
+  "Pnest minus kappa": {
+   "difference": 0.0029197080291970545,
+   "bootstrap over positives 95%": [
+    -0.019957420924574164,
+    0.023600973236009737
+   ],
+   "bootstrap over growths 95%": [
+    -0.03199279402567555,
+    0.03965741923979909
+   ]
+  },
+  "maxD minus mn": {
+   "difference": 0.0420924574209246,
+   "bootstrap over positives 95%": [
+    0.013132603406326082,
+    0.07009124087591244
+   ],
+   "bootstrap over growths 95%": [
+    -0.005810826506618138,
+    0.08883056178828788
+   ]
+  },
+  "logit minus kappa (odd runs)": {
+   "difference": 0.008695652173912993,
+   "bootstrap over positives 95%": [
+    -0.021256038647343045,
+    0.036231884057971064
+   ],
+   "bootstrap over growths 95%": [
+    -0.03785059107957321,
+    0.05359447689897985
+   ]
+  }
+ },
+ "within terciles of the positive's m/n": {
+  "0": {
+   "mn": 0.39592430858806404,
+   "kappa": 0.5676855895196506,
+   "Pnest": 0.6426491994177583,
+   "maxD": 0.6419213973799127
+  },
+  "1": {
+   "mn": 0.7317251461988304,
+   "kappa": 0.7843567251461988,
+   "Pnest": 0.7273391812865497,
+   "maxD": 0.7017543859649122
+  },
+  "2": {
+   "mn": 0.929093567251462,
+   "kappa": 0.8808479532163743,
+   "Pnest": 0.8713450292397661,
+   "maxD": 0.8384502923976608
+  }
+ },
+ "rank correlations (mn, kappa, maxD, Pnest, hazard)": [
+  [
+   1.0,
+   0.628,
+   0.499,
+   0.447,
+   0.42
+  ],
+  [
+   0.628,
+   1.0,
+   0.658,
+   0.754,
+   0.507
+  ],
+  [
+   0.499,
+   0.658,
+   1.0,
+   0.73,
+   0.547
+  ],
+  [
+   0.447,
+   0.754,
+   0.73,
+   1.0,
+   0.47
+  ],
+  [
+   0.42,
+   0.507,
+   0.547,
+   0.47,
+   1.0
+  ]
+ ]
+}

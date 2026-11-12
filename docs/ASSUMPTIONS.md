@@ -125,6 +125,8 @@ evidence: results and their status come from the records each entry links.
 | [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Assumed |
 | [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Overturned |
 | [A70](#a70--a-harmony-is-a-periodic-base-whose-allowed-states-all-repeat) | A harmony is a periodic base whose allowed states all repeat | reading | Assumed |
+| [A71](#a71--each-random-process-is-one-weighting-of-many) | Each random process is one weighting of many | measure | Assumed |
+| [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
 
 ## Entries
 
@@ -1849,3 +1851,41 @@ evidence: results and their status come from the records each entry links.
   arithmetic read (least common multiple, offsets, the mirror's power of 2) changes, the reading carries the result.
 - **History.**
   - 2026-11-12 · Added by `HARMONY-ARITH-20261112-001`.
+
+### A71 · Each random process is one weighting of many
+
+**Assumed** · 2026-11-12 · measure
+
+- **Statement.** When the record says an outcome or a reading is typical or rare among meeting patterns, it means typical or
+  rare under one named random process: uniform knots on a fixed set of distinctions, growth with new distinctions and closings
+  anywhere, growth along co-knotted pairs, or growth among the newest distinctions. The weighting each census uses is one of
+  many, and a statement holds for its process only. Growth among the newest distinctions also comes with the order in which
+  distinctions arrive, so whatever order it reads comes with that process. The canonical K1–K3 test is unchanged.
+- **Why.** The owner's view is that every meeting pattern exists and ours is one random sample, with nothing special about it
+  (2026-11-12), so the question is what is typical and what is rare. There is no uniform weighting over infinitely many
+  patterns, so a census names the weighting it uses; `RANDOM-FATES-20261112-001` uses several and says which results depend on
+  which ([pre-registration](../research/RANDOM-FATES-20261112-001/preregistration.md)). The alternative is to state only
+  what holds for every pattern of a kind, as the proofs do.
+- **Rests on it.** Every "typical", "rare" and every share of runs in `RANDOM-FATES-20261112-001`; not its proofs.
+- **Challenge.** Find a result that changes between two weightings that allow the same patterns (for example uniform knots
+  against growth to the same number of knots), or a weighting under which the readings stop depending on the process.
+- **History.**
+  - 2026-11-12 · Added by `RANDOM-FATES-20261112-001`.
+
+### A72 · A growing pattern ends when it allows no state
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** A growing knot pattern ends, the owner's "dies", at the first knot after which it allows no state: it is
+  then a contradiction (lesson 5.1). Its last base is the pattern just before that knot. The canonical K1–K3 test is
+  unchanged.
+- **Why.** The owner named three fates on 2026-11-12: some combinations "resolve to nothing", some "go for a while then
+  die", and others "go on forever". Allowing no state is the one ending the law decides by itself. The other reading,
+  asked of the owner and not yet answered, is that a pattern ends when it stops producing anything new (for example when
+  no new knot changes what the law reads); `RANDOM-FATES-20261112-001` uses this one until the owner answers
+  ([pre-registration](../research/RANDOM-FATES-20261112-001/preregistration.md)).
+- **Rests on it.** The fates, lifetimes, death cores and last-base readings of `RANDOM-FATES-20261112-001`.
+- **Challenge.** Read the same growths under the other ending: measure when new knots stop changing the tie classes or the
+  bond distances, and compare those times with the times of no allowed state.
+- **History.**
+  - 2026-11-12 · Added by `RANDOM-FATES-20261112-001`.

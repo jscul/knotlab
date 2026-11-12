@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "HARMONY-ARITH-20261112-001A-P001",
+  "canonical_id": "HARMONY-ARITH-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "HARMONY-ARITH-20261112-001A",
+  "proof": "HARMONY-ARITH-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Stitching harmonies, and the harmonies the law makes",
+  "status": "Proved",
+  "claim": "Proved by hand, for any law (lemma S): two stitched or overlapping harmonies (periodic bases along one shift whose allowed states all repeat, A70) have stitched states of period lcm(p, q); the pairs from two orbits fall into gcd(p, q) offsets, each kept or removed whole; no stitched state has period |p - q| or p mod q. Under not-all-equal (proposition M): flipping every value pairs the offsets of two antiperiodic orbits exactly when p and q carry different powers of 2. Exact census, frozen, refereed by fresh code: on every one-shift pattern of one to three knot kinds with span 2 to 10 under four laws, not-all-equal harmonies have only even periods and the connected ones are antiperiodic (also at spans 11 and 12, stress test); odd parity has odd periods, exactly one multiples of 3, the clause law no harmony; M holds in 2,496 stitches; no stitch kind reads divisibility; stitches read orbits, not only periods. The even-period rule is not proved.",
+  "dependencies": [
+    "HOLD-COUNT-20261111-001Z",
+    "PERIODIC-READ-20261111-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A not-all-equal harmony state of odd period (H1).",
+    "A failure of M in the census.",
+    "The referee disagreeing with the census."
+  ],
+  "lineage": {
+    "home_scope": "HARMONY-ARITH-20261112-001",
+    "epic_path": [
+      "HARMONY-ARITH-20261112-001"
+    ],
+    "parents": [
+      "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/manifest.json",
+      "research/HARMONY-ARITH-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/HOLD-COUNT-20261111-001A/HOLD-COUNT-20261111-001A-P001_the_mirror_lemma_and_the_census/manifest.json": "f2d833f060614f0d65e46fb5367c58b4b65529783b5d15d1863640d857e5e70c",
+    "research/HARMONY-ARITH-20261112-001/preregistration.md": "8eb01987fdee4798f99582737346d993c1ea343ccf7ecb0c65038ae22c096f3a"
+  },
+  "paths": {
+    "manifest": "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/manifest.json",
+    "identity": "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/identity.json",
+    "proof": "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/proof.md",
+    "result": "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/result.json",
+    "check": "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/check.py",
+    "directory": "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Plain not-all-equal and three control laws; periodic bases along one shift with one distinction per shift and up to three knot kinds of span at most 10 (12 in the stress test); stitches of one kind with offsets 0 to 3 between orbits found at spans up to 6.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the owner's word on 2026-11-12, pre-registered (commit c423659f4).",
+    "status": "lemma S and proposition M by hand; fresh-code referee (harm_referee.py) passed with negative controls; exhaustive census (check.py); stress test one size past (stress_test.py)",
+    "novelty": "known-with-delta"
+  }
+}

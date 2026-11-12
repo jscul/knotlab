@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RANDOM-FATES-20261112-001A-E001",
+ "ticket": "RANDOM-FATES-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under the not-all-equal law, which outcomes (no state, an end after a while, no end by the horizon) do random meeting patterns have under uniform knots, growth with new distinctions, growth along co-knotted pairs and growth among the newest distinctions; what does the law read off the bases that live (ties, faithfulness, bond distance against steps apart, step balls); and how do its quantities behave on the way to the end?",
+ "definitions": {
+  "processes": "U(n), X(q), O global (q), O local (q), newest-w (q) and the control T, as in fates.py and research/RANDOM-FATES-20261112-001/preregistration.md; knots are sets; distinctions numbered by arrival.",
+  "parameters": "U at n = 50, 100, 200 (200 runs) and 300 (60 runs), minimal contradictions for every run at n <= 200 and the first 5 at 300 (a minimal contradiction at 300 takes 10 to 20 minutes); growth settings X q in {0.1, 0.2, 0.3, 0.35, 0.5}, O global q in {0, 0.05, 0.1, 0.2, 0.3}, O local q in {0.05, 0.1, 0.2, 0.3}, newest-w w in {4, 5, 6} x q in {0.3, 0.5, 0.7}, 100 runs each, horizon 2,000 moves; T 30 runs of 300 moves; the first 30 runs of each setting read.",
+  "ends": "the first knot after which no state is allowed (A72); the last base is the pattern just before it; k knots before the end removes the last k knots.",
+  "readings": "fates.read_base: exact tie classes; largest class; how far ties reach in steps; most knots on a pair; full readings add unnamed hollow triples and faithfulness (at most 150 distinctions), the least bond containing 8 sampled pairs at each of d = 1, 2, 3 steps apart (sizes 2 and 3 over all distinctions, 4 over all when at most 600 distinctions, else the lens; up to min(d + 2, 5) over the lens of the 40 nearest w with steps(u, w) + steps(w, v) <= d + 1), and step balls to radius 6 from three distinctions. U is read at f = 0.5, 0.75, 0.9 of its end and at k = 1, 10, 50 (full) and 2, 3, 5, 20 (ties) knots before; growths at the horizon or at the same k.",
+  "seeds": "sha256 of label:run:grow and label:run:read (census.py seed_of); the pilot used other seeds."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 2ad88ceefd1f84db7122c9d986c40b8f9c86295f901cb975f5a7954c44b7694c) and fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35) beside this file; pysat (CaDiCaL 1.5.3), numpy; 10 workers.",
+  "run": "census.py from the repository root, then census.py --summary; output artifacts/RANDOM-FATES-20261112-001A/RANDOM-FATES-20261112-001A-E001_fates_census/runs.jsonl, summary.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing processes, parameters, readings, seeds, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Per setting: outcome shares, minimal contradiction sizes, and at each reading point the largest tie class share, tie reach, the least-bond shares at d = 1, 2, 3 (ruler d + 2, shortcut, none) and step-ball growth.",
+ "cheapest_meaningful_control": "T, the pattern with no cycle of knots, where ticket B proves the ruler and faithfulness (C2); the last base's killing knot tied all equal by definition (C1); newest-four growth and O global (0), which never end by proof (P4a).",
+ "predictions": {
+  "P1": "U at n = 100, 200, 300, at f = 0.5 and 0.75: no tied pair in >= 90% of bases and least bond d + 2 for >= 95% of sampled pairs at each d = 1, 2, 3.",
+  "P2": "(a) at k = 50 the largest tie class holds <= 5% of distinctions in >= 90% of runs at every n; (b) at k = 1 its median share is >= 0.4 at n = 100, 200, 300; (c) at k = 1, 5, 10, 20 the median share at n = 300 is within a factor two of n = 100, or both <= 0.05.",
+  "P3": "U: median minimal contradiction >= half of the knots at the end, at n = 100 and 200.",
+  "P4": "(a) newest-four and O global (0) still bases at the horizon in every run; (b) newest-five and newest-six at q = 0.5, 0.7 end before the horizon in >= 90%; (c) X still a base in >= 80% for q <= 0.2 and <= 20% for q >= 0.35; (d) O global and O local at q = 0.3 still bases in <= 20%.",
+  "P5": "(a) newest-five/six endings: minimal contradiction <= 20 knots within 20 consecutive distinctions in >= 90%; (b) their last bases: largest tie class <= 40 in >= 90% and Spearman correlation with distinctions at the end < 0.3; (c) X and O endings: largest tie class at the last base >= 10% of distinctions in >= 70%.",
+  "P6": "X q <= 0.2 and O global q <= 0.1 at the horizon: least bond d + 2 for >= 90% of sampled pairs at each d = 1, 2, 3 and median step ball at radius 3 >= 9 times radius 1.",
+  "P7": "newest-four at q = 0.5, 0.7 at the horizon: (a) >= 30% of sampled pairs at d = 2, 3 have a shortcut; (b) ties reach <= 8 steps in >= 90%; (c) median step ball at radius 6 <= 60."
+ },
+ "decision_rules": {
+  "P1 and P6 hold": "Away from the end, random patterns with closings anywhere read as rulers with step balls growing by a constant factor: no finite dimension. Failure by shortcuts: the law's distance is shorter there.",
+  "P2 holds": "The end is a jump taking a fixed number of knots; P2(c) failing: a share of the knots, a gradual approach.",
+  "P5 holds": "Endings among the newest distinctions stay bounded with age; processes closing anywhere end by tying a share of the base.",
+  "P7 holds": "Newest-four growth reads a line with a shorter law distance and local ties.",
+  "C1 or C2 fails": "A bug: the census is not interpreted until fixed."
+ },
+ "stop_rule": "One registered run and its frozen summary; one referee pass; report and hold. A second stage needs its own frozen addendum.",
+ "runtime": "About one to two hours on 10 workers; registered in docs/LONG_RUNNING.md; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0; runs written as they finish, so a rerun resumes."
+}

@@ -102,7 +102,7 @@ Referee pending: handed to the referee thread on 2026-11-12.
 
 ## Workspace assumptions
 
-- **Relied on.** A64, A67, A71. **Added.** A75 (global influence on periodic bases read as ties or travelling along a shift; on finite
+- **Relied on.** A64, A67, A71. **Added.** A76 (global influence on periodic bases read as ties or travelling along a shift; on finite
   samples as the forced fraction of a small set).
 
 ## Advisor model
@@ -119,7 +119,9 @@ ties, propagation and search with a shell profile.
 
 ## Corrections
 
-None. Two deviations, recorded here and in `docs/LONG_RUNNING.md`: ticket B's registered run was stopped after 2 hours with nothing
+One, logged in `docs/CORRECTIONS.md` (**Not a block**): the pre-registration (commit 28c3a3f0d) and this note's first version
+(80d5c66a3) named the new assumption A75 before reserving the number, and A75 is `BASES-WITHIN-20261112-001`'s; it is A76. Two
+deviations, recorded here and in `docs/LONG_RUNNING.md`: ticket B's registered run was stopped after 2 hours with nothing
 written (it writes only at the end, and its 400-distinction samples did not finish; its runtime estimate of 15 minutes was wrong),
 and was rerun unchanged with each run written as it finished and a cap of 30 minutes per run (`rerun_b.py`), which dropped every
 400-distinction sample; its summary leaves out the per-distance profile, which the frozen summary code would have tried to add up
@@ -136,8 +138,8 @@ stopped): write each run as it finishes.
 | Broader exploration — G17 under other weightings | Known alternatives | Bigger boxes of kinds, three shifts, other growth processes |
 | Long-term goal — G17 with G1 | Capability gained | Global influence is typical under dense overlap, in three regimes; the law's own geometry is a middle-density regime, not one chosen sample |
 
-**Corrections:** none (two deviations recorded). **Goals:** a G17 checkpoint (capability gained), served with G1; no goal change.
-**Assumptions:** A75 added. **Basket:** `ACROSS-FOLD-20261112-001#2` (all bonds across, 2/3, 2/3), `ACROSS-FOLD-20261112-001#3` (the other
+**Corrections:** one, Not a block (the new assumption's number; two deviations recorded besides). **Goals:** a G17 checkpoint (capability gained), served with G1; no goal change.
+**Assumptions:** A76 added (the pre-registration called it A75, a number another thread had taken; one correction, Not a block). **Basket:** `ACROSS-FOLD-20261112-001#2` (all bonds across, 2/3, 2/3), `ACROSS-FOLD-20261112-001#3` (the other
 folding classes, 2/3, 3/3), `FOLD-20261112-001#2` (the other shortcuts, 2/3, 3/3); taken: `ACROSS-FOLD-20261112-001#1` by this epic.
 
 **Next step:** Research directions — selected: #1

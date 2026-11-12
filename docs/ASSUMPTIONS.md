@@ -130,6 +130,7 @@ evidence: results and their status come from the records each entry links.
 | [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
 | [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
 | [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
+| [A76](#a76--global-influence-is-read-as-ties-or-travelling-along-a-shift) | Global influence is read as ties or travelling along a shift | reading | Assumed |
 
 ## Entries
 
@@ -1979,3 +1980,22 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-12 · Challenge answered, status back to Assumed: the readings differ in kind. Under substitution (each distinction a block
     whose own knots bind the copies) every distinction the block cannot spare is tied across the whole pattern, in 47 of 87 small
     blocks; under this reading nothing is. Which one the owner meant is his to say ([nesting by substitution](../research/SUBST-NEST-20261112-001/subst_nest.md)).
+
+### A76 · Global influence is read as ties or travelling along a shift
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** The owner's "globally influential" (2026-11-12: meeting patterns "can fold in immensely complex ways and can be kind
+  of globally influential") is read, on periodic bases, as a bounded set whose values decide distinctions arbitrarily many steps
+  away along a shift: either every distinction tied to its translate (tied along the shift) or a finite pattern forcing its own
+  translate (travelling); and on finite samples, where every distinction is a few steps from every other, as the share of the base a
+  co-knotted pair or a knot decides.
+- **Why.** These are the measures the law alone supplies (forcing in its allowed states), with nothing drawn; on base 16, the one
+  sample studied before, travelling is exactly what gave its unlengthened shift. Taken by default in `COMMON-FOLD-20261112-001`
+  ([decision note](../research/COMMON-FOLD-20261112-001/common_fold.md)).
+- **Rests on it.** That epic's answer, that global influence is typical under dense overlap in three regimes.
+- **Challenge.** Ask the owner whether influence he means is forcing (values decided) or correlation (values made likely), and
+  measure the second with an exact point-to-set quantity or model counts; or count influence by what a set decides within a bounded
+  number of steps rather than at unbounded steps.
+- **History.**
+  - 2026-11-12 · Added by `COMMON-FOLD-20261112-001`.

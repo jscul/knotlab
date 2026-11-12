@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SHIFT-COUNT-20261112-001B-E001",
+ "ticket": "SHIFT-COUNT-20261112-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On five creeping and five bounded one-direction bases: structure of far bonds, translation of far clusters, one exhaustive step at 27 across",
+ "definitions": {
+  "pre-registration": "research/SHIFT-COUNT-20261112-001/preregistration.md, section 'Tickets A and B'"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 5b09ab770c5bc47c2cf76e8d8d11a5b087e06a24e82d2580a7eb9b75d4b4889a) beside this file; imports FAR-BOUND's census.py (sha256 aab7adc74a93d55c3331dfa885ab20798c1d60efe6d87587114b99f9dfccdc40)",
+  "run": "one run; output artifacts/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/"
+ },
+ "forbidden_inputs": [
+  "Changing bases, families, certificates or predictions after seeing results"
+ ],
+ "primary_observable": "On five creeping and five bounded one-direction bases: structure of far bonds, translation of far clusters, one exhaustive step at 27 across",
+ "cheapest_meaningful_control": "the bounded reference bases",
+ "predictions": {
+  "B1": "creeping: relay on >= 3 of 5; bounded: two clusters on >= 3 of 5",
+  "B2": "translation works on >= half of the two-cluster bases",
+  "B3": "b(27) >= b(23) on all decided creeping bases, >= b(23)+1 on >= 2"
+ },
+ "decision_rules": {
+  "see": "the pre-registration's failure criteria"
+ },
+ "stop_rule": "One run.",
+ "runtime": "About an hour; each base saved; capped; registered."
+}

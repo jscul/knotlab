@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SHIFT-COUNT-20261112-001A-E001",
+ "ticket": "SHIFT-COUNT-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Certified search for travelling directions (sets of 2-4 in [0,2]^2, primitive shifts to 6 both senses, multiples to 4) on the 169 travelling bases and base 16",
+ "definitions": {
+  "pre-registration": "research/SHIFT-COUNT-20261112-001/preregistration.md, section 'Tickets A and B'"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 a833345b6dfed01691a667b2871b312ed430714cdcfa92c8953dcd8c9e33726b) beside this file; imports FAR-BOUND's census.py (sha256 aab7adc74a93d55c3331dfa885ab20798c1d60efe6d87587114b99f9dfccdc40)",
+  "run": "one run; output artifacts/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/"
+ },
+ "forbidden_inputs": [
+  "Changing bases, families, certificates or predictions after seeing results"
+ ],
+ "primary_observable": "Certified search for travelling directions (sets of 2-4 in [0,2]^2, primitive shifts to 6 both senses, multiples to 4) on the 169 travelling bases and base 16",
+ "cheapest_meaningful_control": "base 16",
+ "predictions": {
+  "A1": "certified rank 2 on >= 140 of 169",
+  "A2": "forced rank 2 without a certified second direction <= 10% of forced rank 2",
+  "A3": "no certified second direction on base 16 or the three growing bases"
+ },
+ "decision_rules": {
+  "see": "the pre-registration's failure criteria"
+ },
+ "stop_rule": "One run.",
+ "runtime": "About an hour; each base saved; capped; registered."
+}

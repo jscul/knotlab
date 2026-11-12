@@ -94,3 +94,35 @@ The failure answers B153's question (the faces were needed), so the attempt fail
 **Goals:** G15 checkpoint (obstruction learned, with G16); sub-goal B153 taken; sub-goal B158 and backlog B159 added.
 **Assumptions:** A66 Confirmed (the faces did real work).
 **Basket:** B158 (selected, awaiting a go-ahead), B157, B154, B159, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (02:03 UTC), exactly:
+
+**B153 is closed: without the drawing's faces, the learner neither finds nor keeps a count.** With dissonance felt only at broken knots, the same learner held the count in 0 of 10 runs on each base: one copy, two copies sharing a distinction, and a 6-distinction base that no drawing fits. Reading the faces, it held 10 of 10 on the first two. By the frozen criterion the faces did real work, so A66 is Confirmed.
+
+- **Why it fails (exact plus the runs).** The faces do two jobs. They narrow where the learner can rest: on one copy, 4 law classes instead of 512 laws, of which 4 count. And they make changing a sign cost something. Without them, a disturbed learner repairs itself by rewriting its rules as freely as its state, so the count washes out. Its few stops at the count were all lost but one. The two jobs weren't tested apart; that's the next step.
+- **A side observation (exact):** the undrawn base counts three held distinctions with 6 distinctions, where no drawn pattern found so far does it with fewer than 8. Exactly 1 of its 2,048 laws counts, so what failed there is the learner, not the base.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a learner whose dissonance needs no drawing (B153) | **Status:** Failed | 0 of 10 held on each of three bases; the faces did real work |
+| Local direction: the credit learner with dissonance at knots alone | Retire | it neither finds nor keeps a count without faces |
+| Broader exploration: learning program | Known alternatives | separating the faces' two jobs (B158), the tie (B157), the count of seven (B154), the two-histories test (B159) |
+| Long-term goal: G15, a point in a learned knot pattern | Obstruction learned | learned memory has so far needed a drawing; bases with no drawing need another source of rigidity |
+
+**Next step:** Research directions, selected #1, awaiting a go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | What does the faces' work on a base with no drawing (B158) | 3/3 Major | 2/3 Testable | on one copy, the two jobs frozen apart (rest only where faces allow, no face dissonance; no faces, repairs flip only distinctions), then a native source of the needed job on the undrawn base | Selected, awaiting go-ahead |
+| 2 | A tie in place of the shared distinction (B157) | 2/3 Substantial | 3/3 Ready | as recorded, copies' faces kept | Deferred |
+| 3 | The count of seven: where the time goes (B154) | 2/3 Substantial | 3/3 Ready | as recorded | Deferred |
+| 4 | A learner that must end differently after two histories (B159) | 2/3 Substantial | 2/3 Testable | referee the two histories, then require different laws at the end | Deferred |
+
+**Corrections:** none.
+**Goals:** G15 checkpoint (obstruction learned, with G16); sub-goal B153 taken; sub-goal B158 and backlog B159 added.
+**Assumptions:** A66 Confirmed (the faces did real work on one and two copies).
+**Basket:** B158 (selected), B157, B154, B159, B155, B156, B150, B151, B130.
+
+The runs are registered in docs/LONG_RUNNING.md and folded in. I'm holding for a go-ahead on B158, since it changes the learner's rules and you may prefer the cheaper tie (B157) first.

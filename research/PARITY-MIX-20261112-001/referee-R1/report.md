@@ -152,9 +152,10 @@ alone.
 | 0011 + 01, its 77 kind sets | 3, 21 or 111 of 510 mixed placements, by kind set | |
 | The 12 where the triples meet | 111 of 510 (21.8%) | |
 | 0011 + 01 with kinds (1, 3) and (5, 6) | | 8,242 of 65,534 (12.6%), at every k from 1 to 12 |
-| 000000111111 + 0011 + 01 with kinds (1, 6), (2, 7), (6, 7) | | still running when this report was committed; folded in when it finishes |
+| 000000111111 + 0011 + 01 with kinds (1, 6), (2, 7), (6, 7) | | 8,242 of 65,534 (12.6%), at every k from 1 to 12 (folded in after the first commit) |
 
-On 4 × 4, 5,108 of the 8,242 survivors of the first kind set have a count fixed but unreached, and 2,810 have full fixing.
+On 4 × 4, 5,108 of the 8,242 survivors of the first kind set have a count fixed but unreached, and 2,810 have full fixing. The second
+kind set has the same survival counts at every k; 6,898 of its survivors have a count fixed but unreached, and 3,520 full fixing.
 
 **The after-run explanation does not hold.** One parity knot empties 3 × 3 under all 96 kind sets, including the 12 whose stitch holds
 flip-blind triples. So "no flip-blind triple is a stitch triple" is not why one knot empties 3 × 3.
@@ -232,5 +233,6 @@ So "none" supports "rare on average under this weighting", and says almost nothi
 | `ref_gadget.py` | `result_gadget.json` | A78's gadget |
 | `ref_fb.py` | `result_fb.json` | flip-blind against stitch triples over every kind set |
 | `ref_presentations.py` | `result_presentations.json` | 3 × 3 for the 96 kind sets |
-| `ref_samples.py` | `result_p6.jsonl`, `result_p8.jsonl`, `result_alt4.jsonl.gz` | the frozen samples; 4 × 4 for the first alternative kind set (the second, by `ref_parity_fast.py`, follows) |
+| `ref_samples.py` | `result_p6.jsonl`, `result_p8.jsonl`, `result_alt4.jsonl.gz` | the frozen samples; 4 × 4 for the first alternative kind set |
+| `ref_parity_fast.py` (with REF_LIGHT_FIX after a timeout) | `result_alt4b.jsonl.gz` | 4 × 4 for the second alternative kind set |
 | `ref_structured.py` | `result_structured.json` | stars on 3 × 3 to 8 × 8 |

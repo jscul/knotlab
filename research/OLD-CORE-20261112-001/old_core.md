@@ -121,4 +121,30 @@ None.
 
 ## Final report as sent
 
-(Appended after sending.)
+Sent to the owner on 2026-11-12 at about 16:30 UTC, in the project thread:
+
+> **The old core's own end: done (referee pending).** Growth that adds distinctions doesn't die by reaching the uniform end.
+>
+> - **Below the uniform end.** The oldest distinctions that first contradict themselves carry 1.55 to 1.74 knots per distinction. Uniform patterns of that size never end (0 of 20 resamples, in every process).
+> - **Two different causes.** Growth along co-knotted pairs ends through its degrees: patterns with the same degrees always end, and once loose distinctions are peeled away, the core sits at the known 2.1 threshold. Growth with closings anywhere ends through something its degrees don't carry: patterns with the same degrees never end. What ends it is how its old distinctions are linked, a structure only its history makes. It ends at closing rates between 0.25 and 0.3, about half the rate a uniform pattern would need.
+> - **Age is a proxy for degree.** Ordering by knots instead of age finds the contradiction at least as early in 82 to 88% of growths.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt: the old core's own end | **Status:** Successful (referee pending) | The uniform-end law is refuted, and the two growth processes end for different reasons |
+> | Local direction: why growths end | Continue | What the expanding growth carries beyond its degrees is not yet named |
+> | Broader exploration: G17 | Searching | Other laws and weightings untried |
+> | Long-term goal: G17 Typical and rare meeting patterns (with G7) | Capability gained | A pattern that goes for a while dies from its history's structure, not from a density it reaches |
+>
+> **Next step:** Research directions. Selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | What the expanding growth's degrees don't carry | 2/3 Substantial | 3/3 Ready | Resample the dying core keeping its pair counts (what the law reads) → that correlation names the cause, or not | Selected · awaiting go-ahead |
+> | 2 | Where the expanding growth ends | 2/3 Substantial | 3/3 Ready | Scan closing rates 0.2 to 0.3, fit the ending hazard against size → its critical rate | Alternative · deferred |
+>
+> **Corrections:** none new.
+> **Goals:** G17 checkpoint, capability gained, with G7.
+> **Assumptions:** A71 and A72 used, unchanged.
+> **Advisor:** it reviewed the design before freezing. It showed the density predictions were settled by arithmetic and proposed the matched resamples used here.
+> **Known vs new:** the 2.1 threshold, degree effects and grown-network effects are known. New: where grown patterns end, and which of these causes ends which process.

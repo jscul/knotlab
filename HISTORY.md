@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: endless blocks' loop-born locking, narrowed by its referee
+
+- Harmonies stitched to each other by their own kinds in one order (`ENDLESS-BLOCK-20261112-001`) were found to lock every copy on a
+  closed loop into one state while an open chain stays free. The referee confirmed every number and narrowed the claim: each of the seven
+  harmonies locks only loops shorter than its girth (4 to 16 knots, at most its period), and longer loops do not lock. It also proved
+  that no open chain ever ties copies, named the known mechanism (closed walks of a reflexive transfer relation, the periodic points of a
+  shift of finite type), and asked that a check run after the freeze be labelled so
+  ([decision note](research/ENDLESS-BLOCK-20261112-001/endless_block.md)).
+- Unchanged: every count, and the complete locking of endless blocks bound in every order.
+
 ## 12 November 2026: the random-pattern census's summary, narrowed by its referee
 
 - The census of random meeting patterns (`RANDOM-FATES-20261112-001`) was confirmed by its referee: every growth regenerates from its

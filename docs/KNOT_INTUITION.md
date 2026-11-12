@@ -3223,13 +3223,14 @@ So holes come in two kinds:
      states within k moves of their image around a loop of k knots (the referee's rule), the first tie found that depends on how long
      a loop is ([decision note](../research/TWIST-PIN-20261112-001/twist_pin.md)).
 
-   **2026-11-12: endless blocks** (`ENDLESS-BLOCK-20261112-001`; referee pending).
+   **2026-11-12: endless blocks** (`ENDLESS-BLOCK-20261112-001`; refereed, confirmed with fixes).
    - **Bound in every order, they lock completely (proved).** A harmony can spare no distinction, so substituting it for every
      distinction, bound by its own knots in every order, puts every copy in one shared state; lags fold that to the states whose period
      divides the loops' net lags, and loop length plays no part.
-   - **Bound in one order, a loop locks (exact).** Bound by its own kinds taken one way round (a stitch of three harmonies), 7 of 45
-     harmonies make a closed loop of knots put every copy on it in one shared state, which the same knots in an open chain, even
-     unrolled nine times, do not. Influence born of the whole loop: for two harmonies only a loop of 3 knots locks, not one of 4 or 6
+   - **Bound in one order, a short loop locks (exact; refereed).** Bound by its own kinds taken one way round (a stitch of three
+     harmonies), 7 of 45 harmonies make a closed loop of knots put every copy on it in one shared state when the loop is shorter than
+     the harmony's girth (4 to 16 knots, at most its period); longer loops do not lock, and no open chain ever ties. Influence born of
+     the whole loop, by a known mechanism (closed walks of a reflexive transfer, periodic points of a shift of finite type)
      ([decision note](../research/ENDLESS-BLOCK-20261112-001/endless_block.md)).
 
    **2026-11-12: which loops lock** (`LOOP-LOCK-20261112-001`; referee pending).

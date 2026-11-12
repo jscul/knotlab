@@ -128,3 +128,10 @@ None to published claims. The pre-registration's runtime (ten to twenty minutes)
 3. **Rigid states.** Payoff 2, concreteness 2.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 02:15 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: on
+infinite overlapping bases the law's distance can be shorter than the meeting pattern's, down to a direction with no length; every
+three-step distinction lies in a bond of at most five, but 42 of 134 bases have shortcuts, and on one a travelling triple keeps
+distinctions twelve steps away at bond distance 3 (computed, not proved). No correction. Holding for a go-ahead on #1.

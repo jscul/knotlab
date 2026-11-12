@@ -1,0 +1,28 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LATE-HOP-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "LATE-HOP-20261112-001Z",
+ "proof": "LATE-HOP-20261112-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing LATE-HOP-20261112-001: ticket A, the frozen deep read (L1 held; L2 failed as stated, on the period-2 harmonies); no correction; referee pending; paused for the owner. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/LATE-HOP-20261112-001A/LATE-HOP-20261112-001A-E001_deep_read/contract.json": "Frozen",
+   "artifacts/LATE-HOP-20261112-001A/LATE-HOP-20261112-001A-E001_deep_read/summary.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

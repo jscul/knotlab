@@ -132,6 +132,7 @@ evidence: results and their status come from the records each entry links.
 | [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
 | [A76](#a76--global-influence-is-read-as-ties-or-travelling-along-a-shift) | Global influence is read as ties or travelling along a shift | reading | Assumed |
 | [A77](#a77--a-walk-around-one-cycle-is-a-state-that-repeats-along-a-short-step) | A walk around one cycle is a state that repeats along a short step | reading | Assumed |
+| [A78](#a78--a-parity-knot-among-copies-is-flip-blind-parity-built-from-our-knots) | A parity knot among copies is flip-blind parity, built from our knots | reading | Assumed |
 
 ## Entries
 
@@ -2023,3 +2024,21 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-12 · Added by `SHIFT-LOCK-20261112-001`.
   - 2026-11-12 · Its referee (R1) moved the cut: at steps of 3 or 4, 42 of the 78 cells open through states that repeat, 21 have a side
     of 3, and 17 stay two-way at any cut; the claim is now stated relative to this reading. Status unchanged.
+
+### A78 · A parity knot among copies is flip-blind parity, built from our knots
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** A parity knot placed among copies of a harmony is read as flip-blind parity: the three copies' placewise sum is all 0s
+  or all 1s, through one hidden reference distinction per knot. So read, it is built from not-all-equal knots with hidden
+  distinctions (it is complement-closed, which is exactly what the not-all-equal law can define), and is the program's own, not a knot
+  brought in from outside.
+- **Why.** Plain three-member parity (sum all 0s) is not complement-closed, so the not-all-equal law cannot build it: it needs a zero,
+  as the count line found (`HOLD-COUNT-20261111-001`). Flip-blind parity differs from it only by a flip of every copy where the sum is all 1s; a
+  reference shared by every knot would be a hub, one per knot is at the scale of a contact. Taken by default in
+  `PARITY-MIX-20261112-001` ([pre-registration](../research/PARITY-MIX-20261112-001/preregistration.md)).
+- **Rests on it.** That epic's reading of its outcomes as effects of a knot our law can make.
+- **Challenge.** Use plain parity (brought from outside), or a single shared reference (a hub), and see whether the outcomes change; or
+  build the gadget explicitly inside the harmony's format (its period and knot shape) and check it gives the same states.
+- **History.**
+  - 2026-11-12 · Added by `PARITY-MIX-20261112-001`.

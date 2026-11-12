@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "STEER-LEARN-20261112-001A-P001",
+  "canonical_id": "STEER-LEARN-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "STEER-LEARN-20261112-001A",
+  "proof": "STEER-LEARN-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Steering rules against blind search",
+  "status": "Proved",
+  "claim": "Computed, frozen, referee pending: on one copy of (2,0,4), with 4 or 64 laws at rest, none of three steering rules (persistence targeting, make and break, two-sided acceptance) nor the unchanged learner finds the count faster than blind search over its rest set, with every check of stored states charged (blind median 6, learners 19 to 1,760 charged probes; with 64 laws at rest most runs do not find it); every learner finds a swap target faster than blind search in the drawn setting, a bias of the walk shared by the learner that uses no examples.",
+  "dependencies": [
+    "SEARCH-AUDIT-20261112-001A",
+    "NATIVE-GRADE-20261112-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A blind baseline wrong; a run misread; a rule passing on the count and on g."
+  ],
+  "lineage": {
+    "home_scope": "STEER-LEARN-20261112-001",
+    "epic_path": [
+      "STEER-LEARN-20261112-001"
+    ],
+    "parents": [
+      "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/steer_lib.py",
+      "research/STEER-LEARN-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/steer_lib.py": "b194bf8328a6364d74377874eaa00e5528d183d1cd9d9535ba539087dc073519",
+    "research/STEER-LEARN-20261112-001/preregistration.md": "e390076934a195aa19307f5fd4b5c3282e1aa6c7d1a5e120c6b13136823917d5"
+  },
+  "paths": {
+    "manifest": "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/manifest.json",
+    "identity": "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/identity.json",
+    "proof": "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/proof.md",
+    "result": "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/result_summary.json",
+    "check": "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/check.py",
+    "directory": "proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Four learners, two settings on one copy of (2,0,4), two targets, 100 seeds each.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit a2cd50751).",
+    "status": "blind baselines exact; runs computed, frozen; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

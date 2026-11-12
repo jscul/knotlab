@@ -1834,8 +1834,18 @@ So holes come in two kinds:
      counting rule slower: its own wandering, or the place every run starts from, leans toward some rules and away from others.
    - **Reading.** Tips read off at the end of a test come too late or say too little. The next try lets each example act on the learner's
      tension while it wanders, as energy-based learners in the literature are taught.
-   - **Next.** Examples felt during the walk (sub-goal B168), awaiting a go-ahead
+   - **Next (taken by `CLAMP-LEARN-20261112-001`, below).** Examples felt during the walk (sub-goal B168)
      ([decision note](../research/STEER-LEARN-20261112-001/steer_learn.md)).
+
+   **2026-11-12: holding the examples in front of it does not teach it either** (`CLAMP-LEARN-20261112-001`, referee pending).
+   - **The question.** Sub-goal B168: if the world holds each example in front of the learner while it wanders, so that its tension depends on
+     what it is being taught, does it find the counting rule faster than chance?
+   - **Computed.** No: held examples made it find the counting rule less often than without them, 13 times in 100 against 48, and no version
+     beat drawing rules at random, even among only the rules that fit every example.
+   - **Its leaning is its own.** Taught nothing it could ever satisfy, it still settles on some rules more and others less than chance, and
+     it does so from random starting points as much as from the usual one: the leaning is in how it wanders.
+   - **Next.** The line is paused (owner, 2026-11-12); a test of drift under held examples against shuffled ones is recorded (B171)
+     ([decision note](../research/CLAMP-LEARN-20261112-001/clamp_learn.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

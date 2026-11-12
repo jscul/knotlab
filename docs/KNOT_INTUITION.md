@@ -3168,6 +3168,14 @@ So holes come in two kinds:
    - **Shifts are where the inner phase matters, and they mostly loosen.** Stitching with shifts ended a living pattern only where
      all four triples of four distinctions are knotted, and brought the contradictory Fano plane back to life almost always
      ([decision note](../research/BASES-WITHIN-20261112-001/bases_within.md)).
+   **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).
+   - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
+     about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 89% at the last base, the same at every
+     size: the end is a jump over a fixed number of knots, not a limit. A minimal contradiction then holds 55 to 86% of the knots.
+   - **Growth that keeps adding distinctions (computed; exploratory over whole lives).** Its tie classes rise in jumps at random
+     times during its life, and 50 knots before its end it already carries 20 to 45% of its distinctions in one class: no jump
+     marks the end. Closer to the owner's limit, but measured on ten whole lives per process only
+     ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose
@@ -6089,6 +6097,26 @@ So holes come in two kinds:
      what the law reads off the ones that live, and the outcomes of other growth processes. Tested by `RANDOM-FATES-20261112-001`;
      the owner's recursion, a base standing in for one distinction, is backlog B164
      ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
+
+   **2026-11-12: outcomes of random meeting patterns** (`RANDOM-FATES-20261112-001`; ticket B and stage 2 refereed, stage 1
+   referee pending).
+   - **The question.** Under not-all-equal, grow meeting patterns by four random processes (each one weighting of many, A71) and
+     read their outcomes, what the law reads off the ones that live, and the bases on the way to their end.
+   - **Outcomes (computed, frozen; two proved).** Uniform knots always end, near 2.1 per distinction (known). Growth with new
+     distinctions lives to 2,000 moves when closings are rare (q ≤ 0.2) and ends when they are not (q ≥ 0.35); growth along
+     co-knotted pairs likewise. Growth among the newest four distinctions never ends (proved: knots within four consecutive
+     distinctions always allow a state), and among the newest five or six it ends with probability one (proved), locally, through
+     about ten knots. Nothing grown resolves to nothing: the least contradiction has seven knots.
+   - **Living patterns read as rulers (computed; proved where knots form no cycle).** Away from any end the least bond of two
+     distinctions d steps apart has d + 2 members for nearly every pair, as it must with no cycle of knots (the alternating
+     chain); step balls grow by a factor of 43 to 150 in two steps, so no finite dimension. Overlap (a quarter of the pairs in two
+     or more knots) does not spoil it.
+   - **The law counts along the growth that never ends (computed, exact, frozen, refereed).** Among the newest four, rare closings
+     leave stretches that no bond spans; within one the least bond grows linearly with distance along the growth, at 0.31 members
+     per distinction with no closings down to 0.024 at q = 0.9, following the knots that are missing (after the run: about one
+     member per 8 to 10 missing knots at every q). Where every knot is present each distinction is tied to the one four before
+     it, a repetition of period four
+     ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

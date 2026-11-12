@@ -156,3 +156,13 @@ folding classes, 2/3, 3/3), `FOLD-20261112-001#2` (the other shortcuts, 2/3, 3/3
 3. **Other weightings.** Payoff 2, concreteness 3: the code exists.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 11:30 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: under a
+uniform weighting of knot kinds, global influence along a shift is typical once knots overlap, in three regimes: free with few kinds,
+travelling (base 16's kind, the law making its own unlengthened shift) in about a third of bases at four and five kinds, and tied
+along a shift near contradiction; base 16, with two kinds, is a rare sample (3.5%). In finite random samples a pair is local until
+the last knots, then decides four fifths of the base, by search, mostly through its own ties. The advisor model's critique changed the
+design (ties separated from travelling). One correction (the assumption is A76), Not a block; two deviations in ticket B; the early
+pilot figure of nine in ten counted ties as well. Referee handed to the referee thread; holding for a go-ahead on #1.

@@ -3302,6 +3302,14 @@ So holes come in two kinds:
      nearest thing yet to the owner's limit. Read 300 knots in, it forecasts an end within a few times that age (AUC 0.82, about 0.1
      above counting knots per distinction), weakly beyond; with rare closings it stays near zero. The uniform jump is the known
      discontinuous backbone at the known threshold, read along one growth
+
+   **2026-11-12: what ends a growth that adds distinctions** (`OLD-CORE-20261112-001`, B170; referee pending).
+   - **Not the uniform end (computed, frozen).** The least set of oldest distinctions whose knots allow no state has 1.55 to 1.74 knots
+     per distinction, where uniform patterns of the same size never end.
+   - **Two causes.** Growth along co-knotted pairs ends through its degrees: patterns with its dying core's degrees always end, and
+     peeled of loose distinctions the core sits at the known threshold. Growth with closings anywhere ends through correlations its
+     degrees do not carry (degree-matched patterns never end), between closing rates 0.25 and 0.3. Age is a proxy for degree
+     ([decision note](../research/OLD-CORE-20261112-001/old_core.md))
      ([decision note](../research/LIFE-JUMPS-20261112-001/life_jumps.md)). Closer to the owner's limit, but measured on ten whole lives per process only
      ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The

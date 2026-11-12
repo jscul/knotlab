@@ -1426,7 +1426,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |
 | 2026-11-11 | Learning without a drawing (`UNDRAWN-LEARN-20261111-001`) | [closure](proofs/UNDRAWN-LEARN-20261111-001Z/UNDRAWN-LEARN-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNDRAWN-LEARN-20261111-001/) |
 | 2026-11-12 | Across the fold: is the law's base a line? (`ACROSS-FOLD-20261112-001`) | [closure](proofs/ACROSS-FOLD-20261112-001Z/ACROSS-FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ACROSS-FOLD-20261112-001/) |
-| 2026-11-12 | What the expanding growth's degrees do not carry (`AGE-NEST-20261112-001`) | — | [folder](research/AGE-NEST-20261112-001/) |
+| 2026-11-12 | What the expanding growth's degrees do not carry (`AGE-NEST-20261112-001`) | [closure](proofs/AGE-NEST-20261112-001Z/AGE-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/AGE-NEST-20261112-001/) |
 | 2026-11-12 | Bases within bases (`BASES-WITHIN-20261112-001`) | [closure](proofs/BASES-WITHIN-20261112-001Z/BASES-WITHIN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/BASES-WITHIN-20261112-001/) |
 | 2026-11-12 | Let the examples shape the dissonance (`CLAMP-LEARN-20261112-001`) | — | [folder](research/CLAMP-LEARN-20261112-001/) |
 | 2026-11-12 | How common folding is among random samples (`COMMON-FOLD-20261112-001`) | [closure](proofs/COMMON-FOLD-20261112-001Z/COMMON-FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/COMMON-FOLD-20261112-001/) |

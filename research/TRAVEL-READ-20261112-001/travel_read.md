@@ -134,3 +134,11 @@ weightings, 2/3, 3/3), `ACROSS-FOLD-20261112-001#2` (all bonds across, 2/3, 2/3)
 3. **Certificates.** Payoff 2, concreteness 2, and it joins the other line.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 12:05 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: base
+16's line is rare; on the typical travelling base the law reads zero dimensions in the measured range (two thirds travel along two
+independent shifts; 85% of the rest keep bond distance about 3 at every across-count to 6; 2 of 169 grow like base 16); 46% of the
+bonds torus-certified, the rest window bonds. One correction (class names), Not a block. Referee handed to the referee thread;
+holding for a go-ahead on #1.

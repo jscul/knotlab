@@ -1,0 +1,411 @@
+{
+ "status": "passed",
+ "checks": {
+  "dependencies": {
+   "proofs/NATIVE-GRADE-20261112-001A/NATIVE-GRADE-20261112-001A-P001_a_graded_native_rule/grade_lib.py": "6fca92a43e7b0cf5cd4dc3bfbfb2484351e2a1781310e7a321f6e56ff1029d70",
+   "research/NATIVE-GRADE-20261112-001/preregistration.md": "89ec57306ebe9f34334a4cb29a4ab58e3f4ed75e30788f541bc9f6740b7a6d10",
+   "proofs/LAW-RIGIDITY-20261112-001B/LAW-RIGIDITY-20261112-001B-P001_a_native_rest_set/native_lib.py": "4bbfaa7dd0be980c62ede5af38256b403df2418cad0eb12b2513a5a2a33608c4"
+  },
+  "result": {
+   "runs": 10,
+   "first target outcomes": {
+    "learned, held": 8,
+    "learned, not held": 2
+   },
+   "all targets outcomes": {
+    "learned, held": 19,
+    "learned, not held": 11
+   },
+   "found at the first target": 10,
+   "learned and held at the first target": 8,
+   "first-target probes": [
+    2,
+    2,
+    4,
+    4,
+    4,
+    6,
+    7,
+    10,
+    13,
+    13
+   ],
+   "inexact stops": 0,
+   "seconds per run": [
+    59.3,
+    59.8,
+    38.0,
+    50.0,
+    49.8,
+    42.9,
+    30.3,
+    65.9,
+    35.0,
+    61.8
+   ],
+   "runs detail": [
+    {
+     "seed": 10000,
+     "seconds": 59.3,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 5800,
+       "probes": 13,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 1000,
+       "probes": 4,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "1u0101u0",
+       "outcome": "learned, not held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1400,
+       "probes": 4,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "011uu001",
+       "outcome": "learned, not held"
+      }
+     ]
+    },
+    {
+     "seed": 10001,
+     "seconds": 59.8,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1000,
+       "probes": 4,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "u110100u",
+       "outcome": "learned, not held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 600,
+       "probes": 2,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 7600,
+       "probes": 17,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01u01u01",
+       "outcome": "learned, not held"
+      }
+     ]
+    },
+    {
+     "seed": 10002,
+     "seconds": 38.0,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 200,
+       "probes": 2,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 4800,
+       "probes": 9,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1800,
+       "probes": 6,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "u110100u",
+       "outcome": "learned, not held"
+      }
+     ]
+    },
+    {
+     "seed": 10003,
+     "seconds": 50.0,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 2800,
+       "probes": 7,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 3200,
+       "probes": 6,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 2600,
+       "probes": 9,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      }
+     ]
+    },
+    {
+     "seed": 10004,
+     "seconds": 49.8,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 3600,
+       "probes": 10,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "0u1010u1",
+       "outcome": "learned, not held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 200,
+       "probes": 2,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 800,
+       "probes": 3,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      }
+     ]
+    },
+    {
+     "seed": 10005,
+     "seconds": 42.9,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1400,
+       "probes": 4,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 4400,
+       "probes": 15,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 2200,
+       "probes": 7,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      }
+     ]
+    },
+    {
+     "seed": 10006,
+     "seconds": 30.3,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1600,
+       "probes": 6,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 2200,
+       "probes": 4,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1000,
+       "probes": 2,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01u01u01",
+       "outcome": "learned, not held"
+      }
+     ]
+    },
+    {
+     "seed": 10007,
+     "seconds": 65.9,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 4400,
+       "probes": 13,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 13600,
+       "probes": 24,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "10010110",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 800,
+       "probes": 3,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      }
+     ]
+    },
+    {
+     "seed": 10008,
+     "seconds": 35.0,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 800,
+       "probes": 4,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 800,
+       "probes": 5,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "1u0101u0",
+       "outcome": "learned, not held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 2400,
+       "probes": 6,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "0u1010u1",
+       "outcome": "learned, not held"
+      }
+     ]
+    },
+    {
+     "seed": 10009,
+     "seconds": 61.8,
+     "rows": [
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 1000,
+       "probes": 2,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "01101001",
+       "outcome": "learned, held"
+      },
+      {
+       "target": "10010110",
+       "stopped": true,
+       "steps": 1400,
+       "probes": 5,
+       "radius": 0,
+       "map at the stop": "10010110",
+       "map after the disturbance": "1u0101u0",
+       "outcome": "learned, not held"
+      },
+      {
+       "target": "01101001",
+       "stopped": true,
+       "steps": 4200,
+       "probes": 7,
+       "radius": 0,
+       "map at the stop": "01101001",
+       "map after the disturbance": "0u1010u1",
+       "outcome": "learned, not held"
+      }
+     ]
+    }
+   ]
+  },
+  "seconds": 66.2
+ }
+}

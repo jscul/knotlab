@@ -1391,5 +1391,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Learning without a drawing (`UNDRAWN-LEARN-20261111-001`) | [closure](proofs/UNDRAWN-LEARN-20261111-001Z/UNDRAWN-LEARN-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNDRAWN-LEARN-20261111-001/) |
 | 2026-11-12 | A direction the knot law does not lengthen (`FOLD-20261112-001`) | — | [folder](research/FOLD-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
-| 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | — | [folder](research/NATIVE-GRADE-20261112-001/) |
+| 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
 

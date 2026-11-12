@@ -95,3 +95,39 @@ it where each sits on one or none. On two other small patterns, though, the rule
 **Goals:** G15 checkpoint (capability gained, with G16); sub-goal B160 taken; B161's payoff raised to 3/3; B162 added.
 **Assumptions:** A69 Overturned for J1 and U; A68 returned to Assumed.
 **Basket:** B161 (selected, awaiting a go-ahead), B162, B157, B154, B159, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (03:06 UTC), exactly:
+
+**B160 is closed: a graded rule of the knots partly replaces the rigidity I'd been supplying.** The learner may rest where the law's sums around its shortest cyclic sequences all agree, with no value chosen, and pays 2 for each sequence that would have to change. Its own repair stays free to re-sign. Results:
+
+- **Undrawn 6-distinction base:** found the count 10 of 10 and held it 8 of 10 at the first target, which passes the frozen mark. Across all writes it held only 19 of 30, so the rigidity is partial. Most of its signs sit on two or more shortest sequences, so rewriting one costs more than it mends.
+- **Drawn copy:** found 10 of 10, held 6 of 10 (17 of 30). It still drifts, as predicted: no sign there sits on two shortest sequences, so the grade gives no rigidity by construction.
+- **Narrowing, logged (exact):** on the next two undrawn bases from the same frozen search, no rule fixing the shortest sums leaves any counting law to rest at. B158's native rest set worked on the 6-distinction base only.
+- **Settled by definition, stated as you asked:** B158's 30 of 30s were nearly settled (2 laws at rest, and a repair that couldn't move the law). In every case so far the learner finds counts no faster than random draws among the laws it may rest at: on the copy, a median of 244 probes against 16 expected. The rest set does the finding, not the examples.
+- **Prior work:** the gauge reading (frustration, Toulouse 1977; a Z2-gauged neural network with a plaquette term, Kemuriyama, Matsui and Sakakibara) is known. Splitting the rest set from the rigidity is not, as far as I found.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a native grade for rigidity (B160) | **Status:** Partially successful | undrawn base holds 8 of 10 (19 of 30); the copy drifts; no chosen value needed |
+| Local direction: rest sets and rigidity from shortest sums | Practically exhausted | the rest set misses the count on two of three undrawn bases |
+| Broader exploration: learning program | Known alternatives | which sequences to fix (B161), longer sequences (B162), the tie, seven, two histories |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | a count kept by a rule of the knots alone on a base no drawing fits, at the first target |
+
+**Next step:** Research directions, selected #1, awaiting a go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Which cyclic sequences to fix (B161) | 3/3 Major | 2/3 Testable | exact census on four bases of rules of the knots over sequences of up to three knots → one that leaves a counting law at rest on all four, or none in the family | Selected, awaiting go-ahead |
+| 2 | Rigidity from longer sequences (B162) | 2/3 Substantial | 3/3 Ready | charge sequences of up to three knots too, on the copy and the undrawn base → the copy holds 8 of 10, or still drifts | Deferred |
+| 3 | The tie (B157) | 2/3 Substantial | 3/3 Ready | as recorded | Deferred |
+| 4 | The count of seven (B154) | 2/3 Substantial | 3/3 Ready | as recorded | Deferred |
+| 5 | Two histories (B159) | 2/3 Substantial | 2/3 Testable | as recorded | Deferred |
+
+**Corrections:** one, Narrowing: B158's native rest set holds a count on one undrawn base, not in general.
+**Goals:** G15 checkpoint (capability gained, with G16); sub-goal B160 taken; B161 raised to 3/3; B162 added.
+**Assumptions:** A69 (the sums' value supplied per base) recorded and then Overturned, since a value-free rule serves both bases. A68 (repairs flip distinctions only) returned to Assumed: the evidence splits by base.
+**Basket:** B161 (selected), B162, B157, B154, B159, B155, B156, B150, B151, B130.
+
+The runs are registered in docs/LONG_RUNNING.md and folded in. Holding for a go-ahead.

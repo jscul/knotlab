@@ -4,8 +4,8 @@ Epic `RANDOM-FATES-20261112-001` (G17 Typical and rare meeting patterns, with G1
 spacing), 2026-11-12, from the owner's question of that night. Stage 1 pre-registered in commit 507421630 and stage 2 in commit
 4902ca615, each before its registered run. The canonical K1–K3 test is unchanged. Referee: ticket B and stage 2 refereed in this
 session; stage 1's census refereed by the referee thread (RANDOM-FATES-R1, **confirmed with fixes**, folded in below; five
-corrections logged, one Narrowing and four Not a block). The five U300 runs with a minimal contradiction are still pending
-(RANDOM-FATES-A2).
+corrections logged, one Narrowing and four Not a block). The five U300 runs with a minimal contradiction were stopped
+unfinished (RANDOM-FATES-A2; see "Stress test").
 
 ## Words
 
@@ -88,6 +88,10 @@ bond spans far stretches.
 
 ## Stress test and pending runs
 
+- **Not finished (2026-11-12, 10:51 UTC).** The five U300 runs with a minimal contradiction were stopped unfinished after 4 hours in
+  the registered unit and 3 hours 21 minutes more on their own (8 hours 35 minutes of CPU) under a heavily shared machine. No minimal
+  contradiction at 300 distinctions was computed, `summary_guarded.py`'s summary stays the record, and the U300 readings rest on runs 5
+  to 29. Nothing claimed depends on them (P3 is registered at n = 100 and 200). The plan below, written before they were stopped:
 - **Pending (stress test).** The five U300 runs with a minimal contradiction did not finish in the registered run's 4-hour cap; they
   run separately (`docs/LONG_RUNNING.md`, RANDOM-FATES-A2) and fold into the U300 summary when they finish. P3 rests on n = 100 and
   200 only, as registered. Until then `summary.json` comes from `summary_guarded.py`, the frozen summary with two lines changed (the

@@ -127,6 +127,7 @@ evidence: results and their status come from the records each entry links.
 | [A70](#a70--a-harmony-is-a-periodic-base-whose-allowed-states-all-repeat) | A harmony is a periodic base whose allowed states all repeat | reading | Assumed |
 | [A71](#a71--each-random-process-is-one-weighting-of-many) | Each random process is one weighting of many | measure | Assumed |
 | [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
+| [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
 
 ## Entries
 
@@ -442,6 +443,12 @@ evidence: results and their status come from the records each entry links.
   obstruction to one infinite carrier does not refute it. The entry keeps the assumption visible, so that no result is read as
   evidence for or against it.
 - **History.**
+  - 2026-11-12 · Applied to meeting patterns by the owner, status unchanged. On 2026-11-11 (Pacific) he said: "there is no choice.
+    I feel like we keep going back to this being a choice. It isn't. It's just random", and of ours: "It is indifferent. It's is
+    purely coincidental." So a meeting pattern the record writes down is worded as one sample, under a declared weighting (A71), of
+    meeting patterns none of which is chosen, never as a defect; the questions about it are which are typical and which rare.
+    Whether a law forces its own meeting pattern stays a question of its own (A62)
+    ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
   - 2026-10-18 · In the foundational thesis as a protected interpretation, in its earliest committed version.
 
 ### A16 · Pairs cannot make a knot; three places can
@@ -1850,6 +1857,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Rerun the questions with a harmony read as a finite repeat of period p, or as a signed standing wave; if the
   arithmetic read (least common multiple, offsets, the mirror's power of 2) changes, the reading carries the result.
 - **History.**
+  - 2026-11-12 · Used by `HARMONY-ARITH-20261112-001`, status unchanged: under this reading stitching gives least common multiples and
+    offsets by definition, and the not-all-equal law's harmonies have even periods only to span 12
+    ([arithmetic of harmonies](../research/HARMONY-ARITH-20261112-001/harmony_arith.md)).
   - 2026-11-12 · Added by `HARMONY-ARITH-20261112-001`.
 
 ### A71 · Each random process is one weighting of many
@@ -1889,3 +1899,27 @@ evidence: results and their status come from the records each entry links.
   bond distances, and compare those times with the times of no allowed state.
 - **History.**
   - 2026-11-12 · Added by `RANDOM-FATES-20261112-001`.
+
+### A73 · The owner's other realities are other knot patterns
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** The owner's "other realities" are read as other knot patterns of one kind of logic: distinctions and knots under
+  the canonical K1–K3 test, differing in which knots meet (the meeting pattern) and possibly in the rules the knots carry, which is
+  how his "binding patterns" are read. Where realities bind to each other, the binding is read as more meeting pattern: knots that
+  share distinctions of both make one larger knot pattern. Two bases that share no distinction share no contact (A15). The
+  canonical K1–K3 test is unchanged.
+- **Why.** The owner, 2026-11-11 (Pacific; 12 November UTC), asked whether other realities have a different law or the same law on
+  a different meeting pattern: "Different meeting patterns! Yes! Both the underlying patterns and even possibly the binding patterns
+  because there are infinite possibilities for both." "Binding patterns" can be read as the knots' rules or as bindings between
+  realities; the coordinator took both, as above, and read "binding between realities is just more meeting pattern", which the
+  owner accepted with "Yes I imagine it like we could have infinite recursions"
+  ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
+- **Rests on it.** Lesson 7.3's account of the owner's picture, and the reading that a census under one law (not-all-equal) studies
+  one part of the owner's "everything", as `RANDOM-FATES-20261112-001` does.
+- **Challenge.** Two ways. Ask the owner which "binding patterns" means: if it names a relation between realities that keeps them
+  separate, this reading is wrong, and the foundation's rule that no contact is inferred across admissible bases would be the
+  owner's to reopen. And test whether the law matters: rerun the census's outcomes and readings under the other symmetric knot laws
+  on the same samples; if they differ in kind, "one kind of logic" has to name its law in every claim.
+- **History.**
+  - 2026-11-12 · Added from the owner's statements of 2026-11-11, recorded in lesson 7.3 of the Intuitions guide.

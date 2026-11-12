@@ -105,3 +105,36 @@ knot's numbers are even from the start.
 
 **Corrections:** none. **Goals:** G8 checkpoint (capability gained, with G1; no goal change). **Assumptions:** A70 added (Assumed),
 used here. **Basket:** #1 to #4 recorded; B163 taken.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 03:31 UTC, verbatim:
+
+> Done: harmony arithmetic works without a zero. Stitching multiplies, the shared divisor counts, nothing subtracts, and the knot law's own harmonies are even. The write-up is research/HARMONY-ARITH-20261112-001/harmony_arith.md.
+>
+> • **By definition, for any law (proved).** Stitch two harmonies together, knot by knot at every shift, and every state repeats at the least common multiple of their periods. The ways they can sit against each other number gcd(p, q), and each one is kept or removed whole. That's division read as "how many ways one fits against the other". No stitched state ever has period p − q or p mod q, so there is no native beat.
+> • **The knot law makes only even periods** (exact, not proved). I checked every not-all-equal harmony among 47,971 bases of up to three knot kinds, out to span 12 (span 11 and 12 as a stress test one size past). All of them have even periods only. Where the base doesn't split, each state flips into its mirror image half a period on. The control laws make other numbers: parity gives the periods of linear recurrences (1, 3, 7, 15, 31, …), exactly-one gives multiples of 3, and the clause law gives no harmony at all.
+> • **The mirror reads a power of 2 (proved; 2,496 cases).** It pairs up the ways two harmonies can sit together exactly when their periods carry different powers of 2. The parity law, which has no mirror, breaks this in 16 cases.
+> • **Divisibility isn't read.** No stitch keeps states exactly when one period divides the other. What a stitch responds to is the harmonies' actual patterns, not just their periods.
+>
+> Every frozen prediction held, and the independent check agreed on 11,046 bases and 50,024 stitches.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — arithmetic of harmonies without a zero | **Status:** Successful | lcm, offsets, no beat proved; even periods exact to span 12 |
+> | Local direction — harmonies along one shift | Continue | the even-period rule is exact but unproved |
+> | Broader exploration — the count line and periodic bases | Known alternatives | two shifts, signed knots, a harmony read as a finite repeat |
+> | Long-term goal — G8 From spacing to arithmetic and sets | Capability gained | lcm and offsets native; the law's numbers even |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Prove the even-period rule | 2/3 — Substantial | 2/3 — Testable | show every unsplit harmony state flips under half its period → a theorem, or an odd period past span 12 | Selected · awaiting go-ahead |
+> | 2 | Harmonies along two shifts | 2/3 — Substantial | 2/3 — Testable | period lattices, stitching as their intersection → two-shift arithmetic, or none | Alternative · deferred |
+> | 3 | Signed knots and the twist | 1/3 — Incremental | 3/3 — Ready | rerun with negated literals → even up to a flip pattern, or odd periods | Alternative · deferred |
+> | 4 | A harmony read as a finite repeat (challenge A70) | 1/3 — Incremental | 3/3 — Ready | rerun the stitching questions on finite repeats → same arithmetic, or A70 carries it | Alternative · deferred |
+>
+> **Corrections:** none. **Goals:** G8 checkpoint (capability gained), no goal change. **Assumptions:** A70 added (Assumed): a harmony is a periodic base whose allowed states all repeat. **Basket:** #1 to #4 recorded. **New words:** "stitch" and "offset" are in the glossary, chosen with the advisor model.
+>
+> One note: knotlab publication is failing right now, but not because of anything in this epic. A committed assumption links lesson 7.3 of the Intuitions guide, and another thread hasn't committed that lesson yet. It will clear once that lesson is committed.

@@ -3062,6 +3062,20 @@ So holes come in two kinds:
    - **Bigger is not better.** Past 16 distinctions held distinctions force less: four-distinction readings get rarer, so a
      larger random search would not settle it. Whether any drawn knot pattern reads its own relation is open
      ([decision note](../research/OWN-RELATION-20261111-001/own_relation.md)).
+
+   **2026-11-12: arithmetic of harmonies without a zero** (`HARMONY-ARITH-20261112-001`).
+   - **The question.** The owner asked what subtraction and division of logical harmonies are. A running total needs a zero
+     the knot law cannot make; a harmony needs none. Read a harmony as a base periodic along one shift whose allowed states all
+     repeat (A70). What happens when two are stitched, knot by knot, at every shift?
+   - **Stitching multiplies; the shared divisor counts; nothing subtracts (proved, for any law).** A stitched state pairs a
+     state of each, so it repeats at their least common multiple; the pairs from two orbits of periods p and q fall into
+     gcd(p, q) offsets, each kept or removed whole; no stitched state has period p − q or p mod q.
+   - **The knot law's harmonies are even (exact, to span 12; not proved).** Under not-all-equal every harmony among 47,971
+     patterns has states of even period only, and where the pattern does not split, each state flips under half its period.
+     Odd parity makes the periods of linear recurrences, the exactly-one law multiples of 3.
+   - **The mirror reads a power of 2 (proved).** Flipping every value pairs the offsets of two such harmonies exactly when
+     their periods carry different powers of 2. No stitch reads whether one period divides the other
+     ([decision note](../research/HARMONY-ARITH-20261112-001/harmony_arith.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.

@@ -86,6 +86,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Chapter 7. Sources and questions](#chapter-7-sources-and-questions)
   - [7.1 What is classical and what is ours](#71-what-is-classical-and-what-is-ours)
   - [7.2 Open questions](#72-open-questions)
+  - [7.3 Every meeting pattern, none chosen](#73-every-meeting-pattern-none-chosen)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -1389,7 +1390,8 @@ have failed:
 
 So on six-regular weaves the law reads which knots there are and measures them
 exactly, but how they meet is still an input, static or grown, as the board was
-in lesson 4.6.
+in lesson 4.6. On the owner's reading that is not a defect: nothing chooses a
+meeting pattern, and one written down is one sample of them (lesson 7.3).
 
 **Knots that overlap freely.** Nothing in lesson 2.1 says that a pair lies in
 two knots. In a finite base where knots share distinctions in any pattern, what
@@ -1525,8 +1527,11 @@ some bases it is shorter, and on one a whole combination of the shifts may have
 no length to the law at all (computed, open). So the space a law reads need not
 be the one its meeting pattern supplies. For the owner's Cartesian plane, one
 axis grows from the rules with nothing drawn (lesson 4.6), and a second
-dimension is measured by the knot law, but on overlaps put in by us. A meeting
-pattern that comes out of rules is the open step.
+dimension is measured by the knot law, on overlaps the record wrote down.
+Whether a law forces its own meeting pattern is still open, but on the owner's
+reading it need not: nothing chooses a meeting pattern, so the next question is
+which meeting patterns are typical and which rare, and what the law reads off
+each (lesson 7.3).
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1731,8 +1736,8 @@ relation x·y = z, is constrained as a whole and free in every pair.
 
 ## Chapter 7. Sources and questions
 
-What the guide takes from classical mathematics, what it adds, and what
-remains open.
+What the guide takes from classical mathematics, what it adds, what
+remains open, and the owner's picture of what the program's bases are part of.
 
 ### 7.1 What is classical and what is ours
 
@@ -1789,18 +1794,251 @@ remains open.
    loops only if its contacts act as group elements (lessons 4.4 and 4.5).
    Lesson 4.6 shows how far the program has got: rules read a drawn grid's
    dimension and grow an endless chain with nothing drawn, but no tested law
-   yet chooses its own board of dimension two, and when the board is made of
+   yet forces a board of dimension two, and when the board is made of
    distinctions no law that declares no cycle can. Lesson 4.7 takes the board
    away: on knots alone, with nothing named but the knot, the not-all-equal
-   law reads the endless six-regular weave's dimension two exactly, but the
-   meeting pattern is still put in. On endless bases that overlap, the law's
-   distance can be shorter than the meeting pattern's.
+   law reads the endless six-regular weave's dimension two exactly, on a
+   meeting pattern the record wrote down. On endless bases that overlap, the
+   law's distance can be shorter than the meeting pattern's. On the owner's
+   reading nothing chooses a meeting pattern, so one written down is one
+   sample, and the question becomes which meeting patterns are typical and
+   which rare (lesson 7.3).
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
    time are the data, and does the static test survive that change?
 3. **Limits.** No set of finite clauses binds infinitely many loops into one
    contact (by compactness). Does the program need a limit rule that does?
+   The owner also sees a limit where a growing knot pattern nears its end
+   (lesson 7.3).
 4. **Competition.** If least-violation states count as allowed, frustrated
    pairs make knots (lesson 4.3). Should they count?
+
+### 7.3 Every meeting pattern, none chosen
+
+On the evening of 11 November 2026 (Pacific time; the record's tickets carry
+12 November, its date in UTC) the owner set out what the program's bases are
+part of. This lesson records his picture in his words, beside the readings of
+the coordinator, the agent that runs the program's lines of research, and the
+tests now running on each part. The readings are interpretations and can be
+challenged; nothing here is proved unless a result is named.
+
+**The owner's picture.** "The intuition is that these structures are
+essentially like a permutation of all the possible logical sequences that
+could exist. Basically like, binding between infinite spaces is itself
+infinite. [...] Basically, the "universe" isn't just the universe,
+"everything" includes the base rules which extend outside of our universe into
+other universes. We are not the sole extension of logic. We are just the one
+that exists in this reality. There may be other realities that have different
+rules."
+
+**Nothing chooses.** "Yes, there is no choice. I feel like we keep going back
+to this being a choice. It isn't. It's just random. Now, there may be some
+realities that are statistically more likely than others, there's nothing to
+say that's not possible. Maybe simple realities are more common than
+non-simple ones. Or maybe realities are all the same likelihood. I don't
+know." And of ours: "It's potentially special because it can create emergence
+within that is intelligent and physical matter too, it's possible other base
+realities can't. But there is no "special". It is indifferent. It's is purely
+coincidental." This is the program's reading that every coherent alternative
+is co-real (lesson 7.1), applied to meeting patterns: no meeting pattern is
+selected, and ours is one among them. It is an interpretation. A result in
+which a law leaves meeting patterns unselected fits it, but is no evidence for
+it.
+
+**What it changes in the record's words.** Lessons 4.6 and 4.7 say that a
+meeting pattern is given, or put in by us. On the owner's reading that
+describes what was studied and is not a defect: a meeting pattern the record
+writes down is one **sample** of meeting patterns, none of which is chosen. The
+older question, whether some law forces its own meeting pattern, stays a
+question of its own, but it is no longer the only way to the owner's base
+reality. The questions become which meeting patterns are typical and which are
+rare, and what a law reads off each. The register of assumptions records this
+wording under A15, the co-reality reading
+([docs/ASSUMPTIONS.md](docs/ASSUMPTIONS.md)).
+
+**Other realities are other knot patterns.** Asked whether other realities
+have a different law or the same law on a different meeting pattern, the
+owner said: "Different meeting patterns! Yes! Both the underlying patterns and
+even possibly the binding patterns because there are infinite possibilities
+for both." The coordinator reads this as one kind of logic, distinctions and
+knots under the knot test of lesson 2.1, with realities differing in which
+knots meet and possibly in the rules the knots carry. Where realities bind to
+each other, the binding is read as more meeting pattern: knots that share
+distinctions of both make one larger knot pattern. Two bases that share no
+distinction share no contact, since the program infers no contact across
+bases (lesson 7.1). The register records this reading as A73, with how to
+challenge it.
+
+**Odds over infinitely many (classical).** The owner's "maybe all the same
+likelihood" meets a fact of probability: infinitely many finite meeting
+patterns cannot all have the same chance. Chances add up to one, and equal
+chances on infinitely many alternatives add up to nothing or to too much. So
+every random way of producing a meeting pattern has a **weighting**, the
+chance it gives to each set of meeting patterns, and the weighting has to be
+declared. Two weightings are natural. One counts how short a pattern's
+description is, so that simple patterns are more common, as the owner
+suggested (the literature's universal prior). The other grows a pattern by a
+random process, so that the process sets the chances. The program uses a
+weighting as a tool for studying meeting patterns, named in each claim, and
+never as the odds of realities: no weighting over all bases is assumed
+(lesson 7.1). A census states its result for its own process only (A71 in the
+register).
+
+**Three outcomes.** Asked whether combinations that contradict themselves
+exist too, the owner said: "Yes, that's kind of the idea. Like some
+combinations should resolve to nothing, some can go for a while then die.
+Others will go on forever and create sets like the natural numbers." In the
+guide's words, grow a knot pattern one knot at a time. Its **outcome** is one
+of three:
+
+- **It resolves to nothing:** it allows no state from its first knots on. A
+  single knot always allows states, so this happens only to a pattern made
+  all at once, or within its first few knots.
+- **It ends:** it allows states for a while and then none. It **ends** at the
+  first knot after which it allows no state, and its **last base** is the
+  pattern before that knot. Adding knots never brings a state back, so an end
+  is final. The record reads the owner's "die" as this (A72); his other
+  possible meaning, that it stops making anything new, waits on his answer.
+- **It goes on forever:** it is a base at every stage. By the compactness
+  theorem (lesson 7.2, question 3) that is the same as the endless pattern it
+  grows into being a base. A computation can only report that a pattern is
+  still a base at the last knot computed, so the record says "goes on
+  forever" only where a proof shows it.
+
+A fixed endless pattern either is a base or is not; "for a while" belongs to a
+pattern that grows in some order, so the outcome is a fact about the growth,
+not about where it leads.
+
+**What is known about the end.** Put knots of the not-all-equal law on n
+distinctions uniformly at random. Below about 2.1 knots per distinction the
+pattern almost surely allows a state, and above it almost surely none. The
+literature's prediction is 2.107, its exact value for three-place knots is
+open, and exact values are proved for knots of many places (random
+not-all-equal satisfiability and hypergraph bicolouring: Castellani,
+Napolano, Ricci-Tersenghi and Zecchina 2003; Gabrié, Dani, Semerjian and
+Zdeborová 2017; Coja-Oghlan and Panagiotou; Ding, Sly and Sun). The end is
+never local: at any fixed density the smallest sets of knots that allow no
+state hold a constant share of all the distinctions (the expansion argument
+behind Chvátal and Szemerédi 1988), and the smallest one of all has seven
+knots, the Fano pattern. So "most random patterns with many knots end" is
+known. What the law reads off the patterns that live, and what growth
+processes other than the uniform one do, were not found in a bounded search.
+
+**Near the end.** "I don't know why, but I get some inkling this is similar to
+limits. This is why I tried to research the calculus angle of logic itself.
+But the calculus is hard because the results themselves will be "non-spatial"
+(at least not in the way that humans normally think). They are just relative
+to each other. It's like relativity, but for logic." The coordinator's
+reading: as a random pattern nears its end, what the law forces reaches
+further, and at the end it spans a share of the whole pattern, as above; that
+is a limit in the exact sense if the law's own quantities, such as the largest
+set of tied distinctions or how far ties reach, approach a value as the end
+nears, and not if they jump. Which happens is under test.
+
+**Only relative.** The record's distance already works the owner's way:
+two distinctions are as near as the smallest bond holding both, with nothing
+behind them to measure against (lesson 4.6). On some endless bases two such
+measures disagree: steps along the meeting pattern say far, and the law says
+near, and on one base a whole combination of the shifts has no length to the
+law (lesson 4.7). The coordinator calls the comparison with relativity an
+analogy so far and nothing more, and nothing here is physics.
+
+**Harmonies and "fractals".** "I think of fractals and harmonies. Where
+harmonies might be something like natural numbers and the fractals are
+consequences of rules. If you're asking how we get things like decimals, I
+think it's just harmonies and logic fractals to infinity for irrational
+numbers." "Fractal" is kept in his own words only, and "harmony" has one
+assumed reading, below (glossary). Earlier he used "harmony" for a relation
+in which incommensurable parts cancel
+("It is ALL relational. There is no real such thing as 'values'", 22 October
+2026) and for polygons whose ratio of perimeter to diameter is rational, as
+against "a ratio that continues" (7 November 2026). The record has these
+pieces that bear on them, none yet tied to his words:
+
+- **One law, the same kind at every level (proved).** Where knots overlap,
+  not-all-equal binds triples that no knot names, and each is again a
+  not-all-equal knot (lesson 4.7).
+- **Towers of named patterns keep only parity (proved).** Built from one
+  three-place law, patterns of patterns reach the free relation within three
+  levels unless the law is parity (lesson 1.7).
+- **Pieces within pieces (proved, drawn).** A drawn knot pattern less a
+  distinction can stand in for a knot, and such pieces nest to any depth in
+  one family (lesson 4.7).
+- **A harmony as a repeat (reading).** For the operations below, the
+  coordinator reads a harmony as an endless base along one shift all of whose
+  allowed states repeat (A70 in the register). The owner has not confirmed it.
+
+**Bases within bases.** "I imagine it like we could have infinite recursions.
+In fact each boolean variable could be its own micro infinite series of logic,
+that's bound to others." The coordinator's test: can a whole base stand in for
+one distinction of a larger base, with the same law at the level above, and
+again at every level? If so, that would be one reading of the owner's
+"fractal", and what stays the same from level to level one reading of his
+"harmony". A base has many states and a distinction one bit, so the test first
+needs a declared way to read one bit from a base's states, and that bit must
+be open, free on its own, not a value computed from distinctions fixed
+elsewhere, which would only classify them. Untested; the register's
+backlog holds it as B164.
+
+**Operations on harmonies.** "We need to cover things like operations, what is
+subtraction of the logical harmonies, what is division? This is why I'm trying
+to investigate base realities like mathmatical spatial functions and shapes. I
+believe these logical patterns exist "existentially" (to use loaded language)
+for our reality." Where the record stands:
+
+- **Counting is native only in part (proved).** A drawn knot pattern under
+  not-all-equal can read the count of n held distinctions modulo m only for
+  even m and odd n
+  ([HOLD-COUNT-20261111-001](research/HOLD-COUNT-20261111-001/hold_count.md)).
+- **A running total needs a zero.** Counting further needs a distinction held
+  at 0 as a reference, which the law cannot make, so it is supplied from
+  outside (A65 in the register). Subtraction and division asked as operations
+  on totals wait behind the same need.
+- **A route with no zero.** The coordinator suggested reading harmonies by
+  their periods: stitch one that repeats every p to one that repeats every q,
+  knot by knot at every shift, and ask which periods the law allows
+  ([HARMONY-ARITH-20261112-001](research/HARMONY-ARITH-20261112-001/harmony_arith.md)).
+- **Stitching multiplies, the shared divisor counts, nothing subtracts
+  (proved, for any law).** A stitched state repeats with period the least
+  common multiple of p and q; the pairs of states fall into as many offsets as
+  the greatest common divisor of p and q, each kept or removed whole; and no
+  stitched state repeats every p − q or every p mod q. So on this route
+  multiples and shared divisors come by definition, and subtraction does not
+  come at all.
+- **What the knot law adds (exact to span 12; proved for the mirror).** Under
+  not-all-equal every harmony found repeats at even periods only, and flipping
+  every value pairs the offsets of two harmonies exactly when their periods
+  carry different powers of 2. No stitch reads whether one period divides the
+  other, so division as a yes-or-no fact is not read.
+
+**The census.** The test of the outcomes and of the end grows meeting
+patterns of not-all-equal knots under four random processes, each with its
+own weighting: knots placed uniformly on a fixed set of distinctions; growth
+with new distinctions; growth along co-knotted pairs; and **newest-w growth**,
+in which each new knot holds only distinctions among the w that arrived last.
+Growth is counted in **moves**, each adding one knot, up to a **horizon**. On
+the patterns that live and on the last bases it reads the **tie classes**,
+sets of distinctions forced equal or unequal, the **minimal contradictions**,
+sets of knots that allow no state while every proper part allows one, and how
+bond distance compares with steps apart, including how fast **step balls**,
+the distinctions within r steps, grow.
+
+**What tests each part.**
+
+| Part | Standing | Tested by |
+| --- | --- | --- |
+| Nothing chooses; ours is coincidental | interpretation (A15); no proof or experiment can settle it | none |
+| Other realities are other knot patterns | reading (A73) | the owner's answer; the census under other laws |
+| Typical and rare meeting patterns | theory under test | `RANDOM-FATES-20261112-001`, pre-registered |
+| Three outcomes | under test; the end of uniform patterns known | the same census, and its proof of which growth can end |
+| Limits near the end | under test | the same census, on the patterns just before their end |
+| Only relative | shortcuts computed; the direction of no length under proof | [FOLD-20261112-001](research/FOLD-20261112-001/preregistration.md) |
+| Harmonies | owner's word; one reading (A70) | `HARMONY-ARITH-20261112-001`, closed: the law's harmonies are even (exact to span 12) |
+| Subtraction and division | stitching multiplies and counts shared divisors, nothing subtracts (proved); divisibility not read | `HARMONY-ARITH-20261112-001`, closed; A70's challenge open |
+| Bases within bases | untested | backlog B164 |
+
+**Reading.** This lesson is the owner's picture and the coordinator's
+readings of it. It claims nothing about physics, matter or minds, and none of
+its readings is a theorem.
 
 ## Glossary
 
@@ -1995,6 +2233,29 @@ that earlier records used in two senses.
   two shifts (lesson 4.7): the literature's periodic hypergraph over ℤ or ℤ².
   A **finite repeat** identifies the blocks whose shifts differ by chosen
   amounts, the literature's periodic quotient.
+- **Harmony.** The owner's word, read as assumption A70 (open to challenge):
+  a base periodic along one shift all of whose allowed states repeat, so that
+  it has finitely many states up to shifting; the literature's finite
+  subshift. Not the harmony of proof theory. The **period** of a state is the
+  least shift that returns it to itself, which is not the period of the base;
+  an **orbit** (the literature's word) is a repeating state with all its
+  shifts; a state is **antiperiodic** (the literature's word) when flipping
+  every value is the same as shifting it by half its period. The intuition: a
+  repeat the law makes, not one drawn into the meeting pattern. Under
+  not-all-equal every harmony found has even periods only. The owner has also
+  used the word for a relation in which incommensurable parts cancel (22
+  October 2026), for drawn polygons whose ratio of perimeter to diameter is
+  rational, against "a ratio that continues" (7 November 2026), and for
+  "something like natural numbers" (11 November 2026; lesson 7.3), so the
+  reading is one assumption about his word, not its only sense.
+- **Stitch.** A knot of one fixed kind, at every shift, holding distinctions
+  of two harmonies, such as one on (a_{i+s}, a_{i+t}, b_{i+u}); harmonies with
+  stitches are **stitched**. (They overlap instead when a_i and b_{i+s} are one
+  shared distinction.) The **offset** of two orbits of periods p and q is the
+  shift between their states counted modulo gcd(p, q), the literature's
+  relative phase; a stitch keeps or removes each offset whole. The intuition:
+  stitching multiplies periods into their least common multiple, and the
+  shared divisor counts the ways two harmonies can sit against each other.
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.
@@ -2041,6 +2302,53 @@ that earlier records used in two senses.
   replaced, allowing on that knot's three distinctions just what the knot
   allows, or is **transparent**, allowing every combination there. A Fano
   piece is the same idea in a three-regular contradiction.
+- **Sample.** One meeting pattern produced by one run of a declared random
+  process (lesson 7.3); several runs give samples. A meeting pattern the
+  record writes down by hand is also read as one sample, of meeting patterns
+  none of which is chosen. The literature's random hypergraph, or a
+  realization; probability's "outcome" is this, and the guide never uses
+  "outcome" in that sense. The guide does not say "draw", since drawn means
+  given with a drawing.
+- **Weighting.** The chance a declared random process gives to each set of
+  meeting patterns, adding up to one (lesson 7.3): the literature's
+  probability distribution. A process has a weighting; two processes can
+  share one. No weighting gives infinitely many finite meeting patterns equal
+  chances, so each must be declared, and a claim of what is typical or rare
+  names its process.
+- **Outcome.** What becomes of a knot pattern grown one knot at a time
+  (lesson 7.3), one of three: it **resolves to nothing**, allowing no state
+  from its first knots; it **ends**, at the first knot after which it allows
+  no state, its **last base** being the pattern before that knot; or it
+  **goes on forever**, a base at every stage, said only with a proof. A
+  computation reports only that a pattern is **still a base at the horizon**.
+  The outcome belongs to the growth, in its order, not to the pattern it
+  reaches. The intuition: the owner's combinations that "resolve to nothing",
+  "go for a while then die" and "go on forever".
+- **Move.** One step of a growth: it adds one knot, or nothing when the
+  process has nothing left to add (lesson 7.3). Growth is counted in moves,
+  never in steps, which belong to steps apart. The **horizon** is the number
+  of moves computed.
+- **Newest-w growth.** Growth in which every new knot holds only distinctions
+  among the w that arrived last (lesson 7.3). The process supplies the order
+  of arrival.
+- **Tie class.** Two distinctions are **tied** when they are equal in every
+  allowed state, or unequal in every allowed state (lesson 4.7). Being tied is
+  an equivalence, and a tie class is one of its classes with two or more
+  members. Under not-all-equal nothing is frozen, so a tie class is the most
+  the law can force.
+- **Minimal contradiction.** A set of knots that allows no state while every
+  proper part of it allows one, minimal under removal and not necessarily
+  smallest (lesson 7.3): the literature's minimal unsatisfiable subformula.
+  The smallest for three-place not-all-equal knots is the Fano pattern of
+  seven knots.
+- **Step ball.** The distinctions within r steps of one distinction: a count
+  on the meeting pattern (lesson 7.3). A ball, unqualified, is measured by
+  bond distance.
+- **Fractal.** The owner's word, kept in quotation only: "the fractals are
+  consequences of rules", with "logic fractals to infinity for irrational
+  numbers" (lesson 7.3). It is not the literature's self-similar set, and the
+  record's drawn self-similar substrates keep the literature's names, such as
+  the Sierpinski gasket.
 - **Words for space.** The guide names its objects by distinctions, knots and
   counts. It keeps spatial words for classical objects it cites, for pictures
   it says are drawn, and for space, distance and dimension themselves, each

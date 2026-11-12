@@ -107,4 +107,30 @@ None.
 
 ## Final report as sent
 
-(Appended after sending.)
+Sent to the owner on 2026-11-12 at about 16:40 UTC, in the project thread:
+
+> **What the expanding growth's degrees don't carry: done (referee pending).** It's the nesting by age.
+>
+> - **Degrees miss it.** Redraw a dying core while keeping every distinction's number of knots: it survives every time (median 0% end). The redraw uses a fair chain, checked exactly symmetric and connected on five enumerated cases.
+> - **The nesting carries it.** Keep instead which distinction is youngest in each knot. That fixes how many knots lie among the oldest j distinctions, for every j. Now about half the redrawn cores still end: 40% at X(0.3) and 50% at X(0.35), above the degree-only redraw in 92 to 95% of cores. Dropping the degrees makes no difference. Redrawing the whole core by the growth's own rule ends just as often.
+> - **Reading:** a pattern that keeps growing dies when its oldest distinctions are knotted densely among themselves, so its own past folds in on it. The order of arrival matters, not the knots per distinction.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt: what the degrees don't carry | **Status:** Successful (referee pending) | N1 and N2 held: the nesting by age carries the end, and degrees and schedule add nothing to it |
+> | Local direction: why growths end | Continue | A criterion read from the nesting alone is next |
+> | Broader exploration: G17 | Searching | Other laws and weightings untried |
+> | Long-term goal: G17 Typical and rare meeting patterns (with G7) | Capability gained | A growing pattern dies from its own past folding in on itself, under this weighting |
+>
+> **Next step:** Research directions. Selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | An end read from the nesting alone | 2/3 Substantial | 2/3 Testable | Fit the chance a nested pattern ends from its counts on half the endings, test it frozen on the rest → a criterion, or none | Selected · awaiting go-ahead |
+> | 2 | Where the expanding growth ends | 2/3 Substantial | 3/3 Ready | Hazard fit over closing rates 0.2 to 0.3 → its critical rate | Alternative · deferred |
+>
+> **Corrections:** none new. The missing-knot referee's four were folded in earlier (one Narrowing).
+> **Goals:** G17 checkpoint, capability gained, with G7.
+> **Assumptions:** A71 and A72 used, unchanged.
+> **Advisor:** proposed the nested rung, the paired per-core test and the held-out pilot before the freeze.
+> **Known vs new:** the switch chains and grown-network effects are known. Which structure ends grown not-all-equal patterns is new.

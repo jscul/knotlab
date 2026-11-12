@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LOOP-LOCK-20261112-001A-P001",
+  "canonical_id": "LOOP-LOCK-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "LOOP-LOCK-20261112-001A",
+  "proof": "LOOP-LOCK-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The locking rule and overlapping loops",
+  "status": "Proved",
+  "claim": "Proved by hand (with the advisor model): for harmonies stitched in one order, a closed chain of k knots locks its shared copies iff k is below the girth of the step relation (the hanging copy quantified away); the open chain is free at every length iff the relation has a step; figure eights are independent; through a shared knot a lock spreads but is never created. Exact: 495 of 495 and 495 of 495 cells; 75 of 75 figure eights and thetas; crossed pairs and circulants lock collectively; rings of overlapping knots lock by the arithmetic of their length. Referee pending.",
+  "dependencies": [
+    "ENDLESS-BLOCK-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A closed chain whose locking disagrees with k < girth.",
+    "An open chain locked although the step relation has a step."
+  ],
+  "lineage": {
+    "home_scope": "LOOP-LOCK-20261112-001",
+    "epic_path": [
+      "LOOP-LOCK-20261112-001"
+    ],
+    "parents": [
+      "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/manifest.json",
+      "research/LOOP-LOCK-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/manifest.json": "0f8b7dea27003d23e06ec3ebb265f94f5483ec34990ea1ea90c45580fd752aeb",
+    "research/LOOP-LOCK-20261112-001/preregistration.md": "a735d30c282d9ab93f33ea5cbdd9068b9ccfd77c99c51dfea9776eba411c0b54"
+  },
+  "paths": {
+    "manifest": "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/manifest.json",
+    "identity": "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/identity.json",
+    "proof": "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/proof.md",
+    "result": "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/result.json",
+    "check": "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/check.py",
+    "directory": "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; 45 harmonies of period <= 16 stitched in one order; loops and chains of 2 to 12 knots; overlap patterns, rings of 4 to 12, drawn nestings of levels 1 to 3.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 36fd0e934); independent referee pending.",
+    "status": "lemmas by hand; exact census (check.py); referee pending",
+    "novelty": "known-with-delta"
+  }
+}

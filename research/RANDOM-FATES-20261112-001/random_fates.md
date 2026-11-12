@@ -149,7 +149,7 @@ correction. The local direction continues because the two strongest new readings
 
 **Corrections:** one, Not a block (newest-five growth ends for certain only when 0 < q < 1). **Goals:** a G17 checkpoint (capability
 gained), with G1; no goal change. **Assumptions:** A71 and A72 added and used; A67 relied on. **Basket:** this epic's directions
-below; the knots-alone line's folding census (G17 with G1) runs beside it and reuses this census's library read-only.
+below (#1 recorded as sub-goal B167); the knots-alone line's folding census (G17 with G1) runs beside it and reuses this census's library read-only.
 
 **Next step:** Research directions — selected: #1
 
@@ -175,4 +175,39 @@ below; the knots-alone line's folding census (G17 with G1) runs beside it and re
 
 ## Final report as sent
 
-(Appended after sending.)
+Sent to the owner on 2026-11-12 at 08:20 UTC, in the project thread:
+
+> **Outcomes of random meeting patterns: done.** Here is what is typical under each random process. A pattern that lives reads as an exact ruler away from its end. A pattern of uniform knots ends in a sudden jump. Growth that keeps adding distinctions builds up its ties over its life. Growth among the four newest distinctions never ends, and along it the law counts.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt: outcomes of random meeting patterns | **Status:** Successful (census referee pending) | Outcomes measured by process. The uniform end is a jump of fixed length. Growth that adds distinctions has no final jump. Newest-four growth is counted |
+> | Local direction: random samples under not-all-equal | Continue | The two strongest readings came after the run and need frozen tests |
+> | Broader exploration: G17 typical and rare | Searching | Other laws and a shortest-description weighting are untried |
+> | Long-term goal: G17 Typical and rare meeting patterns (with G1) | Capability gained | Your three outcomes now have frequencies under named weightings. The limit question has an answer for uniform knots |
+>
+> - **Living patterns are rulers.** Away from an end, two distinctions d steps apart share a least bond of d + 2. That is a theorem wherever knots form no cycle. There is no finite dimension, and heavy overlap doesn't spoil it.
+> - **Uniform knots end in a jump, not a limit.** Nothing is tied until about 20 knots before the end. Then the law ties 87 to 89% of the base into one class, over the same number of knots at every size from 50 to 300.
+> - **Growth that adds distinctions has no final jump.** Its tie classes rise in jumps during its life, and they already hold 20 to 45% of the base 50 knots before the end. That is the closest thing to your limit so far, but it rests on an exploratory run of only ten lives per process.
+> - **"Goes on forever": only among the newest four, by proof.** The law counts along that growth, with a distance that grows in proportion. The count follows the missing knots. Where every knot is present, it repeats with period four. When closings are rare, no bond links distant stretches at all.
+> - Frozen predictions: 4 of 7 held fully; P1, P5 and P6 failed in part. Stage 2's 5 of 5 held.
+>
+> **Next step:** Research directions. Selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Jumps over a whole life | 3/3 Major | 3/3 Ready | Tie classes at every 2% of life for growth and uniform knots → limit or not | Selected · awaiting go-ahead |
+> | 2 | The count of missing knots | 2/3 Substantial | 3/3 Ready | Freeze the unit of about 0.11 per missing knot → fixed, or depends on the process | Alternative · deferred |
+> | 3 | Other weightings | 2/3 Substantial | 1/3 Stated | Shortest description first, on small patterns → results change or not | Alternative · deferred |
+> | 4 | Uniform ends at larger sizes | 1/3 Modest | 2/3 Testable | Ties only at 400 to 800 → fixed length or not | Alternative · deferred |
+> | 5 | The other meaning of "die" | 2/3 Substantial | 2/3 Testable | When new knots stop changing what the law reads → agrees with the end or not | Alternative · awaiting your answer |
+>
+> **Corrections:** one, Not a block. Newest-five growth ends for certain only when closings happen less than always.
+> **Goals:** G17 checkpoint, capability gained, with G1 and G7. No goal change.
+> **Assumptions:** A71 (each process is one weighting of many) and A72 (ends = no allowed state) were added and used.
+> **Basket:** #1 is sub-goal B167. The folding census reuses this library read-only.
+> **Pending:** the census referee, and five slow uniform runs (descriptive only). The advisor model designed stage 2's exact method and reviewed its predictions.
+
+The advisor model (Fable 5.2) was consulted on analysis twice, under the owner's rule of 2026-11-12: for the exact method of stage 2
+(its design is `bonddp.py`'s) and on stage 2's draft predictions before they were frozen; and once on wording (tie class, minimal
+contradiction, move, horizon, step ball, newest-w growth).

@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "ROW-NEST-20261112-001A-E001",
+ "ticket": "ROW-NEST-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do NAE window-1 row rules (rows growing by one, bottom closed) count, make harmonies, or neither, within depth 40, and how common is each under short descriptions?",
+ "definitions": {"rules": "1,024 subsets of the 10 relative knots", "readings": "alive(t), first-row relation T_t for t = 1..40", "classes": "constant; eventually periodic (p <= 10 from a <= 20); unexplained"},
+ "public_inputs": {"code": "census.py (sha256 e3478398b7a5220d5baaa49961c74116dc53fdc86c7e0edfda29c9aa8bcc6764) beside this file; pysat.", "run": "census.py --run W 8 for W in 0-7, then --summary, from the repository root; output artifacts/ROW-NEST-20261112-001A/ROW-NEST-20261112-001A-E001_row_rules/."},
+ "forbidden_inputs": ["Changing the rules, readings, classes, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Rules with unexplained or periodic sequences; their weights.",
+ "cheapest_meaningful_control": "The empty rule (alive at every depth by construction).",
+ "predictions": {"Q2": "no unexplained sequence", "Q3": "at least one rule with periodic life, period >= 2"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About a minute on 8 workers."
+}

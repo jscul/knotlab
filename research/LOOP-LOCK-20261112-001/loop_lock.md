@@ -109,3 +109,30 @@ far the influence goes.
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained, with G8; no goal change). **Assumptions:** A70 used, A75 unchanged.
 **Basket:** #1, #2 recorded. **Advisor:** consulted once before the freeze (L1 to L3's checks, the overlap facts, the crossed pair and
 circulant, the criteria).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 09:54 UTC, verbatim:
+
+> Done: which loops lock. The write-up is research/LOOP-LOCK-20261112-001/loop_lock.md. The referee is pending.
+>
+> • **The rule (proved; 495 of 495).** Between two stitched copies there is one step relation, and it can always stand still. A loop of k knots locks every copy on it exactly when that relation has no round trip of k steps or fewer. An open chain never locks, at any length.
+> • **How overlaps carry a lock (proved and exact).** A lock never crosses a single shared copy. Across a shared knot it spreads from a loop that locks to one that doesn't, but two failing loops never lock that way. Through two shared copies, loops that each fail alone can lock together.
+> • **Bounded or at every size?** Single loops and collective locks are bounded: they only work below the girth, which is at most the period. Rings where each knot overlaps the next in two places are different. There, some harmonies lock at every size in a whole arithmetic class (computed to 60). For example, 0011 locks every ring whose length isn't a multiple of 4, and four other harmonies lock every odd ring.
+> • **Prior work.** All of these mechanisms are classical in kind: closed walks of a transfer relation, periodic points of shifts of finite type, homomorphisms into reflexive digraphs. I'm not claiming novelty, only the harmonies' own data.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — which loops lock | **Status:** Successful, referee pending | rule proved; overlap anatomy mapped; known mechanisms |
+> | Local direction — nesting | Continue | why the rings fall into residue classes |
+> | Broader exploration — G17's census | Known alternatives | random patterns' jumps; folding among random bases |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | how overlapping loops carry influence, natively |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Why rings lock by arithmetic | 2/3 — Substantial | 2/3 — Testable | read the period structure of the pair transfer for each harmony → a rule from the harmony to its residue classes | Selected · awaiting go-ahead |
+> | 2 | Collective locks at scale | 1/3 — Incremental | 3/3 — Ready | circulants up to n = 2g − 1 for the one-offset harmonies → the predicted strict lock, or not | Alternative · deferred |
+>
+> **Corrections:** none this epic. Separately, I folded in the referee's verdict on endless blocks with one Narrowing: only loops shorter than the girth lock, and longer loops don't. **Goals:** G17 checkpoint, no goal change. **Assumptions:** A75 unchanged. **Basket:** #1, #2 recorded. **Advisor:** consulted once before the freeze.

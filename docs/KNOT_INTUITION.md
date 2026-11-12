@@ -3332,6 +3332,13 @@ So holes come in two kinds:
      ([decision note](../research/AGE-NEST-20261112-001/age_nest.md))
      ([decision note](../research/LIFE-JUMPS-20261112-001/life_jumps.md)). Closer to the owner's limit, but measured on ten whole lives per process only
      ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
+   - **Under short descriptions** (`SHORT-DESC-20261112-001`; referee pending): weighting patterns by the length of their
+     description, with self-substitution (a knot holding a definition's pattern inside itself), the typical pattern is one living
+     knot; large patterns are nested and die far less often than uniform or same-degree patterns of their size (2.4% against 5.7%
+     and 8.6% at seven knots or more), by small contradictions, and only through the nesting; the living ones are less tied. Nested
+     families nearly always live at every depth, one in a hundred lives a while and dies within nine levels, and 0.63% die at a
+     finite depth yet live in the infinite limit
+     ([decision note](../research/SHORT-DESC-20261112-001/short_desc.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

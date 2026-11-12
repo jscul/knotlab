@@ -129,6 +129,7 @@ evidence: results and their status come from the records each entry links.
 | [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
 | [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
 | [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
+| [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
 
 ## Entries
 
@@ -1944,3 +1945,25 @@ evidence: results and their status come from the records each entry links.
   that cross more cheaply than heddles, which would change the rate but not the reading.
 - **History.**
   - 2026-11-12 · Added by `ACROSS-FOLD-20261112-001`.
+
+### A75 · Bases within bases are stitched at one place
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** The owner's "each boolean variable could be its own micro infinite series of logic, that's bound to others" is read
+  as: each distinction of an outer base becomes a copy of an inner harmony (A70), and each outer knot becomes a stitch of the three
+  inner harmonies at every place, all at the same place (a stitch at one place); stitches with offsets are the variant tested beside
+  it. Doing it again with the same harmony gives the base along k shifts whose every line is a state of it (the literature's axial
+  power). The canonical K1–K3 test is unchanged.
+- **Why.** Proposed by the coordinator on 2026-11-12, after the owner approved starting B164; the natural inner series is a harmony,
+  and a stitch is how the line already binds harmonies (`HARMONY-ARITH-20261112-001`). The owner's later word on overlapping ("like
+  fractal, or meeting patterns that are more complex than just triangle edges meeting ... globally influential") is tested by the
+  epic's levels and its drawn three-copy nesting.
+- **Rests on it.** `BASES-WITHIN-20261112-001`'s lemmas: stitched at one place, the inner harmonies keep the outer law exactly (the
+  mirror lift), nesting never ends, and ties only multiply. Each of these is about this reading.
+- **Challenge.** A substitution reading would differ: each distinction replaced by a finite block of distinctions, the outer knots
+  binding chosen distinctions of the blocks, iterated toward a self-similar limit (the literature's substitution systems and
+  self-simulating tile sets). Under it the mirror lift need not apply, and nesting could create forcing. Ask the owner which he meant,
+  or run the substitution reading on the same seeds.
+- **History.**
+  - 2026-11-12 · Added with `BASES-WITHIN-20261112-001`'s pre-registration.

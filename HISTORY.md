@@ -11,6 +11,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: how many all-equal knots each depth needs, narrowed by its referee
+
+- The count of all-equal knots a living infinite pattern needs at each depth (`WITNESS-COUNT-20261112-001`) was confirmed by an exact
+  method with no solver. The note said the need is "not a sum of local needs"; it is one: each inner copy's need depends only on the
+  state of its three ends, and the copy above ties those ends together, which is why the whole needs more than each copy's cheapest
+  count ([decision note](research/WITNESS-COUNT-20261112-001/witness_count.md)).
+- Unchanged: every count.
+
 ## 12 November 2026: rows that grow by one, narrowed by its referee
 
 - The test of whether patterns that grow by one distinction per depth can count (`ROW-NEST-20261112-001`) was confirmed for its

@@ -3364,10 +3364,10 @@ So holes come in two kinds:
      depth where the finite versions die, by construction in 788 of them (each copy holds the whole dying pattern again and needs
      its own); one knot per depth, or one thread of them down the nesting, almost never works. The bottom comes loose
      in 87% of them; the interior does not ([decision note](../research/LIMIT-STATE-20261112-001/limit_state.md)).
-   - **How many all-equal knots each depth needs** (`WITNESS-COUNT-20261112-001`; referee pending): more than the dying copies
-     need one by one in 88% of one-definition families, and in 87% of families no living state keeps every depth at its least:
-     the copies constrain each other through the distinctions they share, and the deeper all-equal knots mostly sit in other
-     branches ([decision note](../research/WITNESS-COUNT-20261112-001/witness_count.md)).
+   - **How many all-equal knots each depth needs** (`WITNESS-COUNT-20261112-001`; refereed, confirmed with fixes): more than the
+     dying copies' cheapest counts in 88% of one-definition families, and in 87% of families no living state keeps every depth at
+     its least: each copy's need depends on its three ends (an 8-entry table), and the calling copy's knots tie its calls' ends
+     together ([decision note](../research/WITNESS-COUNT-20261112-001/witness_count.md)).
    - **Can nested patterns count?** (`NEST-COUNT-20261112-001`; refereed, confirmed with fixes): no, from their ends: each self-holding knot
      meets its outside in three distinctions, so the fate in depth repeats with a period and life is always decidable (proved).
      The law is not the limit: NAE knots express every relation closed under complement, and on plane-like patterns, where parts

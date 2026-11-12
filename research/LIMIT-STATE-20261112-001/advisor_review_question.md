@@ -1,0 +1,12 @@
+Review cold and briefly (at most ~300 words): flaws, anything settled by construction presented as a test, thresholds, and whether the measurements answer the question.
+
+SETTING. NAE on three-place knots. Nested families: a 3-port definition D holds its own pattern inside each of its knots (SELF calls). The finite pattern at depth t has knots at the bottom (SELF at depth 1 = knot). The usual limit (keeping knots present at all but finitely many depths; a definition with a SELF call on its own three ends keeps the knot on its ends forever, so we add that knot) is an infinite pattern; it lives iff the main relation is non-empty at the greatest fixed point G from "nothing" (compactness). Prior census: 894 genuine families die at every finite depth from T on (all but one) while the usual limit lives; 94% of their limit relations are "free" (all 8 port states).
+
+LEMMA (restriction). At every dead depth t, every living state of the limit has some SELF call made at level t-1 with all three ends equal (else the restriction satisfies the depth-t pattern).
+
+QUESTION (coordinator): what does a living state look like? Is the all-equal state forced into a regular arrangement across depths, or free? And first: does the limit live only because everything comes loose?
+
+DESIGN. For each genuine family: "loose" = every SELF definition's limit relation and main's relation at G are free. Finite part to depth D = T+3 with G imposed on bottom SELF calls: its states are exactly restrictions of the limit's living states (gfp property). For depths t = T..T+2: list SELF calls of depth t; per call (<= 64 sampled), SAT: can its ends be all equal; must they be (forced). Gate: imposing not-all-equal on every call of a dead depth gives no state.
+PREDICTIONS. P1 >= 80% of genuine families loose. P2 among branching families (>= 2 calls at depth T), >= half have no forced call at depth T. P3 among families with a forced call at depth T, >= 90% have a forced call at T+1 and T+2. Reported: chains (one call per depth: forced by the lemma, settled), shares possible/forced by depth.
+
+Concerns I have: with one SELF call per depth, forcing is settled by the lemma; is P3 then mostly settled too (forced at T implies forced deeper by self-similarity)? Is "loose" the right test of the trivial reading, given the internal knots still constrain? What cheap measure would show whether the all-equal choices are "regular" (e.g. periodic in the call path) beyond forced/free?

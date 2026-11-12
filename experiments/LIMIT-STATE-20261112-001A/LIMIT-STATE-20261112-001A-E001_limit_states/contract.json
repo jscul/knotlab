@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LIMIT-STATE-20261112-001A-E001",
+ "ticket": "LIMIT-STATE-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "In the genuine limit-only nested families, can one all-equal call per dead depth carry every living state's need, and can those calls lie on one ray?",
+ "definitions": {"families": "LIMIT-ONLY's 1,341 bottomless-limit-only records; genuine under the usual limit (pass-through knot added).", "queries": "single and single ray, exact SAT, depths T..T+2 of the depth-T+3 part with G at the bottom."},
+ "public_inputs": {"code": "census.py (sha256 b72f76a655636af6c5b10b54dc5bead6aea2439e2b4a55f43eb3ffdaf756bf8b) beside this file; SHORT-DESC dlang.py; LIMIT-ONLY's sample records; pysat; numpy.", "run": "census.py --run W 16 for W in 0-15, then --summary, from the repository root; output artifacts/LIMIT-STATE-20261112-001A/LIMIT-STATE-20261112-001A-E001_limit_states/."},
+ "forbidden_inputs": ["Changing families, queries, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Shares of branching genuine families with a single witness per depth and with a single ray.",
+ "cheapest_meaningful_control": "Chains (settled by the lemma); the lemma gate.",
+ "validation_gate": "Lemma gate at every dead depth read; finite parts alive; genuine count 894.",
+ "predictions": {"P1": "single share >= 0.8 among branching genuine families", "P2": "single ray share >= 0.5 among branching genuine families"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About a minute on 16 workers."
+}

@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: which loops lock, narrowed by its referee
+
+- Harmonies stitched in one order (`LOOP-LOCK-20261112-001`): the loop rule (a loop locks iff shorter than the girth of the step
+  relation) and the overlap rules were confirmed by the referee, who also proved the ring claim for every ring length. Three fixes. The
+  ring summary read 15 of the 45 harmonies; over all 45, 4 lock rings of every length, 21 every length outside a residue class (14 of
+  them every odd length) and 20 finitely many. The crossed pair's lock comes from a loop of 2 knots it contains, so two loops sharing
+  two copies lock collectively only at one size (n = 2g − 1, for 6 of 7 harmonies). And the residue-class reading was after the run,
+  with a partial tie on even rings that is not a lock
+  ([decision note](research/LOOP-LOCK-20261112-001/loop_lock.md)).
+- Unchanged: the loop rule, the open chain's freedom, every measured lock.
+
 ## 12 November 2026: endless blocks' loop-born locking, narrowed by its referee
 
 - Harmonies stitched to each other by their own kinds in one order (`ENDLESS-BLOCK-20261112-001`) were found to lock every copy on a

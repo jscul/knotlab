@@ -127,15 +127,25 @@ def read(defs0):
     with Solver(name="cadical153", bootstrap_with=cl) as s:
         tots = {}
         for t in depths:
-            tot = ITotalizer(lits=[e[j] for j in by[t]], ubound=len(by[t]), top_id=top[0])
-            top[0] = tot.top_id
-            s.append_formula(tot.cnf.clauses)
-            tots[t] = tot
             b = antichain(calls, rels, t, need=(lambda d: wd.get(d, 1)) if single else None)
             B.append(b)
-            if b > 1 and s.solve(assumptions=[-tot.rhs[b - 1]] if b - 1 < len(tot.rhs) else []):
+            Nt = len(by[t])
+            # the totalizer counts only up to ub, grown by doubling until a state with at most ub witnesses exists (memory stays
+            # proportional to the least count, not to the number of calls)
+            ub = min(Nt, max(2 * b, b + 8))
+            tot = ITotalizer(lits=[e[j] for j in by[t]], ubound=ub, top_id=top[0])
+            top[0] = tot.top_id
+            s.append_formula(tot.cnf.clauses)
+            while ub < Nt and not s.solve(assumptions=[-tot.rhs[ub]]):
+                done = len(tot.cnf.clauses)
+                ub = min(Nt, 2 * ub)
+                tot.increase(ubound=ub, top_id=top[0])
+                top[0] = tot.top_id
+                s.append_formula(tot.cnf.clauses[done:])
+            tots[t] = tot
+            if b > 1 and s.solve(assumptions=[-tot.rhs[b - 1]]):
                 rec["bound_violation"] = True                       # a state with fewer witnesses than the proved bound
-            lo, hi = max(1, b), len(by[t])
+            lo, hi = max(1, b), ub
             while lo < hi:                                           # least b with a living state of <= b witnesses
                 mid = (lo + hi) // 2
                 if s.solve(assumptions=[-tot.rhs[mid]] if mid < len(tot.rhs) else []):

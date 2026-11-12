@@ -58,3 +58,11 @@ looked at.
 
 One run on 16 workers (about ten minutes; registered in `docs/LONG_RUNNING.md`), its summary, a hand-off to the referee thread,
 report.
+
+## Amendment (before any outcome was looked at)
+
+2026-11-12, about 22:25 UTC. The first registered run (16 workers, 8 GB each) was killed for memory after 202 families: the
+cardinality counter was built up to the number of calls at a depth (up to 20,000). The counter is now built only up to a bound grown
+by doubling until some living state lies within it, which changes memory, not answers. Nothing in the 202 records was looked at; all
+families are rerun with the amended code (12 workers, 10 GB each). The thread missed the failure for about an hour because its
+waiting loop counted failed units as running.

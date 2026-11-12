@@ -73,8 +73,15 @@ L3's share would be at worst 76 of 88 = 86%, above 70%.
 the solver is slow. Slow kept runs (1,200 to 2,250 s) exist and are counted, so this is not a selection on any registered outcome. It
 does leave the slowest, possibly most critical cores out, which matters only for P_u2's distribution, and not for its verdict.
 
-**My recomputation of runs 54 and 99 was still running** when this report was committed. My solver calls are capped, so a run can
-end undecided. It will be folded in if it finishes.
+**My recomputation of runs 54 and 99 (folded in after the first commit).** Both end.
+
+| Run | k* | m* | P_u | P_d (both starts) | Peeled density | P_u2 | k*_deg ≤ k* |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 54 | 544 | 934 | 0 | 1.0 | 747 / 357 = 2.09 | 10 of 20 resamples undecided at 2 million conflicts, none of the rest ending | yes |
+| 99 | 783 | 1,291 | 0 | 1.0 | 984 / 476 = 2.07 | 3 of 20 undecided, none of the rest ending | yes |
+
+Their peeled cores sit at the threshold, which is why they were slow: uniform resamples there are hard for a solver. They change no
+verdict.
 
 ## 4. (Check 4) The dying core, and D* in the arithmetic band
 
@@ -145,5 +152,5 @@ near the threshold. A slow onset below 0.25 at much longer horizons cannot be ex
 | Script | Output | What it does |
 | --- | --- | --- |
 | `ref_oldcore.py regen` | `result_regen.jsonl` | the regeneration and the switch-chain P_d |
-| `ref_oldcore.py missing` | `result_missing.json` | runs 54 and 99, pending |
+| `ref_oldcore.py missing` | `result_missing.json` | runs 54 and 99 |
 | `ref_horizon.py` | `result_horizon.json` | the growths to 20,000 moves |

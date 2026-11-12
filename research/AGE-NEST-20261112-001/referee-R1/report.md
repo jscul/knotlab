@@ -119,10 +119,14 @@ by age" is a fair name for that, provided it is read as "the prefix counts, with
 So the end is not a crossing of the uniform end by an early part. It comes from the inhomogeneity by age: older distinctions are
 knotted among themselves more than a uniform or degree-matched pattern would make them.
 
-**Known in kind.** Random patterns whose knots depend on the members' ages are inhomogeneous random hypergraphs, whose thresholds are
-set by the age kernel rather than by degrees (Bollobás, Janson and Riordan 2007). Grown networks differ from degree-matched static ones
-for the same reason (Callaway, Hopcroft, Kleinberg, Newman and Strogatz 2001). The rungs, the shares and the null result for degrees
-are new data; the mechanism is known in kind.
+**Known in kind.** Random patterns whose knots depend on the members' ages are inhomogeneous random hypergraphs. Their component and
+core thresholds are set by the age kernel rather than by degrees (Bollobás, Janson and Riordan 2007; Riordan 2008 for cores). Grown
+networks differ from degree-matched static ones for the same reason (Callaway, Hopcroft, Kleinberg, Newman and Strogatz 2001). The
+rungs, the shares and the null result for degrees are new data; the mechanism is known in kind.
+
+*Corrected on 2026-11-12 (PREFIX-END-R1).* This paragraph first said these patterns' "thresholds are set by the age kernel", as if
+that theory gave a 2-colourability threshold. It gives component and core thresholds only; a core is necessary for an end, since a
+minimal pattern with no state has every distinction in at least two knots. No 2-colourability condition for such kernels is known.
 
 ## 6. (Check 5) The pilot, and tied cores
 

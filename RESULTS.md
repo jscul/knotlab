@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**314 current results** and 5 superseded ones, from 309 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**314 current results** and 5 superseded ones, from 310 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 309 epics with their closures
+- [Epics](#epics): all 310 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1389,5 +1389,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Can a witness learn and reuse the six-bit constraint? (`SIX-BIT-REUSE-20261111-001`) | — | [folder](research/SIX-BIT-REUSE-20261111-001/) |
 | 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |
 | 2026-11-11 | Learning without a drawing (`UNDRAWN-LEARN-20261111-001`) | [closure](proofs/UNDRAWN-LEARN-20261111-001Z/UNDRAWN-LEARN-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNDRAWN-LEARN-20261111-001/) |
+| 2026-11-12 | A direction the knot law does not lengthen (`FOLD-20261112-001`) | — | [folder](research/FOLD-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
 

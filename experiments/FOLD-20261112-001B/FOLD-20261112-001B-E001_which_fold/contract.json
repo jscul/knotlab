@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FOLD-20261112-001B-E001",
+ "ticket": "FOLD-20261112-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which of BOND-BALLS's 42 shortcut bases fold to six steps (a bond of four with the origin at five and at six steps)?",
+ "definitions": {
+  "fold": "for k = 5 and 6: some w k steps away and x, y within one step of w with {origin, w, x, y} constrained in the window of radius 15 and every three-element part free by PERIODIC-READ's bounds (300 sampled periodic states first); first found recorded."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 0ccedbc4f43a610c5194710ca197b40fe3436c6bb0785784ba710225fa509bab) beside this file; BOND-BALLS-20261111-001A-E001's census.py (sha256 d10ec0db9055dabc0ed26f7a7174314f69c5c12d2508cff2f13231c35d2e33f1) and census.json; 8 workers.",
+  "run": "census.py from the repository root; output artifacts/FOLD-20261112-001B/FOLD-20261112-001B-E001_which_fold/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing the family, k, the cluster rule, the window or the prediction after seeing results"
+ ],
+ "primary_observable": "Per base: a bond of four at five and at six steps, or none; folds; whether the base has a four-step shortcut.",
+ "cheapest_meaningful_control": "Base 16 (folds, by ticket A's proof) and base 14 (no four-step shortcut) in a timing run, disclosed.",
+ "predictions": {
+  "G": "Every base that folds to six steps has a four-step shortcut."
+ },
+ "decision_rules": {
+  "G holds": "Folding bases are among those with four-step shortcuts; the fold is visible at four steps.",
+  "G fails": "A base folds without a four-step shortcut: the four-step search missed it."
+ },
+ "stop_rule": "One run; report and hold.",
+ "runtime": "Minutes on 8 workers (0.2 to 0.3 s a base in the timing run); registered."
+}

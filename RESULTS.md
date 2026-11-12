@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**320 current results** and 5 superseded ones, from 329 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**321 current results** and 5 superseded ones, from 329 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -27,7 +27,7 @@ How to read an entry:
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
-- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 24 results
+- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 25 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
@@ -969,6 +969,9 @@ Patterns of patterns in three dimensions: when counting colourings of knots and 
 - **2026-11-12 · Bases within bases keep the law and spread no influence** (`BASES-WITHIN-20261112-001-D001`).
   Stitched at one place, harmonies standing in for distinctions keep the outer law exactly at every level, never end, and only multiply the seed's forced values, and only the alternation 0101 is one distinction exactly (proved). A drawn three-copy nesting forces nothing to level 7 (exact).
   [proof P001](proofs/BASES-WITHIN-20261112-001A/BASES-WITHIN-20261112-001A-P001_inner_series/proof.md), [epic closure](proofs/BASES-WITHIN-20261112-001Z/BASES-WITHIN-20261112-001Z-P001_epic_closure/proof.md)
+- **2026-11-12 · A closed loop locks stitched harmonies into step** (`ENDLESS-BLOCK-20261112-001-D001`).
+  Stitched by their own kinds in one order, 7 of 45 not-all-equal harmonies make a closed loop of knots lock every copy on it into one shared state, which the same knots in an open chain do not (exact; robust to a nine-fold unrolling), and for 2 of them only a loop of 3 knots does.
+  [proof P001](proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/proof.md), [epic closure](proofs/ENDLESS-BLOCK-20261112-001Z/ENDLESS-BLOCK-20261112-001Z-P001_epic_closure/proof.md)
 - **2026-11-12 · The knot law's repeats have no odd period up to 29** (`EVEN-PERIOD-20261112-001-D001`).
   No base of not-all-equal knots along one shift, at any span and with any number of knot kinds, whose allowed states all repeat has a state of odd period up to 29 (computer-assisted). The mirror alone does not forbid odd periods; what does is a value that can flip unseen, and a word of odd period without one would itself make such a base.
   [proof P001](proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/proof.md), [epic closure](proofs/EVEN-PERIOD-20261112-001Z/EVEN-PERIOD-20261112-001Z-P001_epic_closure/proof.md)
@@ -1411,7 +1414,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Bases within bases (`BASES-WITHIN-20261112-001`) | [closure](proofs/BASES-WITHIN-20261112-001Z/BASES-WITHIN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/BASES-WITHIN-20261112-001/) |
 | 2026-11-12 | Let the examples shape the dissonance (`CLAMP-LEARN-20261112-001`) | — | [folder](research/CLAMP-LEARN-20261112-001/) |
 | 2026-11-12 | How common folding is among random samples (`COMMON-FOLD-20261112-001`) | — | [folder](research/COMMON-FOLD-20261112-001/) |
-| 2026-11-12 | Endless blocks (`ENDLESS-BLOCK-20261112-001`) | — | [folder](research/ENDLESS-BLOCK-20261112-001/) |
+| 2026-11-12 | Endless blocks (`ENDLESS-BLOCK-20261112-001`) | [closure](proofs/ENDLESS-BLOCK-20261112-001Z/ENDLESS-BLOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ENDLESS-BLOCK-20261112-001/) |
 | 2026-11-12 | Why the knot law's harmonies are even (`EVEN-PERIOD-20261112-001`) | [closure](proofs/EVEN-PERIOD-20261112-001Z/EVEN-PERIOD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/EVEN-PERIOD-20261112-001/) |
 | 2026-11-12 | A direction the knot law does not lengthen (`FOLD-20261112-001`) | [closure](proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/FOLD-20261112-001/) |
 | 2026-11-12 | Arithmetic of harmonies without a zero (`HARMONY-ARITH-20261112-001`) | [closure](proofs/HARMONY-ARITH-20261112-001Z/HARMONY-ARITH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HARMONY-ARITH-20261112-001/) |

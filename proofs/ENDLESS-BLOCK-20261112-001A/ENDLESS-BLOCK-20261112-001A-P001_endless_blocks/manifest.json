@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ENDLESS-BLOCK-20261112-001A-P001",
+  "canonical_id": "ENDLESS-BLOCK-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "ENDLESS-BLOCK-20261112-001A",
+  "proof": "ENDLESS-BLOCK-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Harmonies substituted for distinctions",
+  "status": "Proved",
+  "claim": "Proved by hand: a harmony substituted for every distinction and bound by its own knots in every order locks every copy into one shared state (no spare distinction, the pinning theorem); with lags, the states are those whose period divides the loops' net lags, with no loop-length effect (after the freeze, by hand). Exact on 45 harmonies: both predictions on every cell; bound in one order (a stitch of three harmonies by their own kinds), 7 harmonies make a closed loop of knots lock every copy on it into one state while the open chain, unrolled three or nine times, does not (1,376 cycle-born ties in 17 cells), 2 of them at loops of 3 knots only. Referee pending.",
+  "dependencies": [
+    "TWIST-PIN-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An every-order cell whose copies are not all equal.",
+    "A cycle-born tie that a longer unrolling forces."
+  ],
+  "lineage": {
+    "home_scope": "ENDLESS-BLOCK-20261112-001",
+    "epic_path": [
+      "ENDLESS-BLOCK-20261112-001"
+    ],
+    "parents": [
+      "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/manifest.json",
+      "research/ENDLESS-BLOCK-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/manifest.json": "883e252a46e709a18632645ae6479f312ec58157f2e94576db80ef40cf789639",
+    "research/ENDLESS-BLOCK-20261112-001/preregistration.md": "c32c50e73773d99cb39de772a41af06e209284c200115b2ac106eca6024eaeb6"
+  },
+  "paths": {
+    "manifest": "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/manifest.json",
+    "identity": "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/identity.json",
+    "proof": "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/proof.md",
+    "result": "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/result.json",
+    "check": "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/check.py",
+    "directory": "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; 45 harmonies of span <= 8 and period <= 16 as blocks; patterns of up to 37 distinctions.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit b602c411a); independent referee pending.",
+    "status": "lemmas by hand; exact census (check.py); robustness after the run (after_run_longer_unrolling.py); referee pending",
+    "novelty": "known-with-delta"
+  }
+}

@@ -11,6 +11,16 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: patterns alive only in the limit, narrowed by its referee
+
+- The census of nested patterns that die at a finite depth while the limit lives (`LIMIT-ONLY-20261112-001`) was confirmed: every
+  family regenerates. But the pattern with no bottom is the usual limit only when no self-holding definition passes its own three
+  ends to itself; otherwise the bottom knot comes back at every depth. Counted that way, 894 families live only in the limit, 37.5%
+  of the dying ones, not 56%. The one-word correction below went too far: the bottomless pattern does need the ends all equal
+  somewhere. The criterion inside the knot fails one way only; small families never die by their first step
+  ([decision note](research/LIMIT-ONLY-20261112-001/limit_only.md)).
+- Unchanged: the gates and every count.
+
 ## 12 November 2026: patterns alive only in the limit, one word
 
 - The note on nested patterns that live only without a bottom (`LIMIT-ONLY-20261112-001`) said the bottomless pattern needs the

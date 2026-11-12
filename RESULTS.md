@@ -1443,7 +1443,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
 | 2026-11-12 | Which odd periods the knot law makes, and why 61 (`ODD-FAMILY-20261112-001`) | [closure](proofs/ODD-FAMILY-20261112-001Z/ODD-FAMILY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-FAMILY-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | [closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-SEARCH-20261112-001/) |
-| 2026-11-12 | The old core's own end (`OLD-CORE-20261112-001`) | — | [folder](research/OLD-CORE-20261112-001/) |
+| 2026-11-12 | The old core's own end (`OLD-CORE-20261112-001`) | [closure](proofs/OLD-CORE-20261112-001Z/OLD-CORE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/OLD-CORE-20261112-001/) |
 | 2026-11-12 | A parity knot among stitched copies (`PARITY-MIX-20261112-001`) | [closure](proofs/PARITY-MIX-20261112-001Z/PARITY-MIX-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-MIX-20261112-001/) |
 | 2026-11-12 | Which parity placements survive (`PARITY-SURVIVE-20261112-001`) | [closure](proofs/PARITY-SURVIVE-20261112-001Z/PARITY-SURVIVE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-SURVIVE-20261112-001/) |
 | 2026-11-12 | The pinning theorem, and pins that vary (`PIN-RULE-20261112-001`) | [closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PIN-RULE-20261112-001/) |

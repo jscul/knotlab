@@ -124,6 +124,7 @@ evidence: results and their status come from the records each entry links.
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 | [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Assumed |
 | [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Overturned |
+| [A70](#a70--a-harmony-is-a-periodic-base-whose-allowed-states-all-repeat) | A harmony is a periodic base whose allowed states all repeat | reading | Assumed |
 
 ## Entries
 
@@ -1829,3 +1830,22 @@ evidence: results and their status come from the records each entry links.
     need be chosen; on two further undrawn bases no shortest-sum rule leaves a counting law at rest at all ([a native grade for rigidity](../research/NATIVE-GRADE-20261112-001/native_grade.md)).
   - 2026-11-12 · Added, and put under challenge, by `NATIVE-GRADE-20261112-001` (recorded at the coordinator's request; the choice was
     made in `LAW-RIGIDITY-20261112-001`).
+
+### A70 · A harmony is a periodic base whose allowed states all repeat
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** The owner's "harmony" is read as a periodic base along one shift (one block of distinctions and knots at every
+  whole number) all of whose allowed states repeat, so that it has finitely many states up to shifting (the literature's finite
+  subshift). Its periods are the periods of its states, not of its meeting pattern. Not the harmony of proof theory. The canonical
+  K1–K3 test is unchanged.
+- **Why.** Proposed by the coordinator on 2026-11-12, after the owner asked what subtraction and division of logical harmonies are,
+  and taken by default in `HARMONY-ARITH-20261112-001`'s pre-registration: a repeat the law makes, not one drawn into the meeting
+  pattern, is the closest finite object to "a pattern that repeats every p steps". Alternatives: a harmony as a repeat of the meeting
+  pattern itself (a finite repeat of period p), as a relation where incommensurable parts cancel (the owner's 2026-10-22 picture), or
+  as the relation between stitched parts rather than a single base.
+- **Rests on it.** `HARMONY-ARITH-20261112-001`'s readings of which periods the law's harmonies have and what stitching them does.
+- **Challenge.** Rerun the questions with a harmony read as a finite repeat of period p, or as a signed standing wave; if the
+  arithmetic read (least common multiple, offsets, the mirror's power of 2) changes, the reading carries the result.
+- **History.**
+  - 2026-11-12 · Added by `HARMONY-ARITH-20261112-001`.

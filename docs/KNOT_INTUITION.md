@@ -3203,9 +3203,12 @@ So holes come in two kinds:
      locked value that travels around a loop of the pattern can come back renamed; when no loop leaves a symmetry, the twist undoes
      copy by copy. Otherwise the pins are the block's, folded by the loops' symmetries: a position tied to its image, unequal to it,
      or an end.
-   - **Length does not matter; parity can (exact on the range).** Living was the same on loops of 2, 3 and 6 knots for all 60 pairs
-     of block and symmetry tested. On the one-shift ring, twisting each knot's middle by a swap undoes on 6 distinctions and folds on 7
-     ([decision note](../research/TWIST-PIN-20261112-001/twist_pin.md)).
+   - **Length does not matter for living; parity can; length can matter for ties (exact on the range; after the run; the referee's
+     rule).** Living was the same on loops of 2, 3 and 6 knots for all 60 pairs
+     of block and symmetry tested. On the one-shift ring, twisting each knot's middle by a swap undoes on 6 distinctions and folds on 7.
+     But in one block a loop of 2 or 3 knots ties two spare positions that a loop of 6 leaves free: a twisted copy takes exactly the
+     states within k moves of their image around a loop of k knots (the referee's rule), the first tie found that depends on how long
+     a loop is ([decision note](../research/TWIST-PIN-20261112-001/twist_pin.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 89% at the last base, the same at every

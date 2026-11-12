@@ -11,8 +11,10 @@ change with the cycle it goes around, nearer to the owner's "fold in immensely c
 
 ## The answer
 
-**A short result, mostly settled by definition: twisted pins vary exactly when the pattern's cycles carry a symmetry that cannot be
-undone, and then they are ordinary pins of the block folded by that symmetry; cycle length does not matter.**
+**A short result, mostly settled by definition: twisted pins vary only when the pattern's cycles carry a symmetry that cannot be
+undone; living does not depend on cycle length (after the run), but ties can.** *Narrowed by referee R1 (logged): the folded block is a
+necessary condition, not the whole story; on one twisted cycle of k knots the twisted copy takes exactly the states t with t∘h within k
+moves of t (the referee's rule), so a tie can appear on short cycles and vanish on long ones.*
 
 - **By definition (proved).** A twist that every cycle undoes can be removed copy by copy (the null outcome: on a pattern without
   closed chains, always). Otherwise the cycles' symmetries form a group H, and the pinned values are those of the block folded by H:
@@ -35,11 +37,27 @@ undone, and then they are ordinary pins of the block folded by that symmetry; cy
 | Transport, gauge and the folded-block form of twisted pins | proved by hand (the advisor model's form) |
 | No cycle-length effect; the advisor's living condition exact; parity on rings | exact on the stated range; the length part descriptive, after the run |
 
+## Referee R1 (folded in 2026-11-12)
+
+The background referee thread confirmed the census with fixes ([report](referee-R1/report.md)), reproducing every count with its own
+code, and found the exception's mechanism. In the block (0,1,2), (0,1,3), (0,1,4), (2,3,4), (2,3,5) with h exchanging 2 and 3 (spare
+2, 3, 4, 5; N = {0, 1}; N-balanced), the states with 4 = 5 are 0 or 2 moves from their image under h and those with 4 ≠ 5 exactly 4
+moves (a move changes a set of places meeting every knot at most once). **The referee's rule:** on one twisted cycle of k knots, the
+twisted copy takes exactly the states t with t∘h within k moves of t (gauge the twist onto one knot; consecutive copies are allowed
+together exactly when they differ by a move). So 4 and 5 are tied on cycles of 2 and 3 knots and on two cycles of 3, and not on the
+cycle of 6. The rule predicts the whole tie relation in all 111 living single-cycle cells and contains the advisor's living
+condition. Fixes, logged in `docs/CORRECTIONS.md`: the length claims hold for living only and are after the run (Narrowing); T3 is a
+necessary condition on the pinned layer, not a full description, and "pins vary exactly where a holonomy moves a pinned distinction"
+is contradicted by this N-balanced tie (Narrowing); P2 failed in one frozen cell (52 of 53 living N-balanced cells unchanged), and the
+tie of 4 and 5 is not "on every cycle" (Not a block); the count of 69 N-balanced endings is after the run (the frozen run has 33)
+(Not a block). This is the first tie found whose presence depends on how long a loop is: influence that is not plain connectivity.
+
 ## What it changes
 
 - **For the owner's "fold".** Pins can fold, but only as the symmetries a pattern's cycles carry: a value travelling around a cycle
   comes back renamed, and the block must accept that renaming. Whether it folds is global (a ring's parity, a cycle's symmetry), but
-  what it does is local (the block folded by a group). It is not a new mechanism beyond the pinning theorem.
+  what it does is local (the block folded by a group). It is not a new mechanism beyond the pinning theorem, except where the block can spare distinctions: there the
+  referee's rule makes ties depend on how long the loop is.
 - **Next.** The coordinator's preferred target: endless blocks, a harmony substituted for each distinction and bound by its own
   kinds, joining both readings of the owner's question.
 
@@ -55,14 +73,14 @@ None. (The frozen design flaw changed no claim; it is disclosed above.)
 
 If the ties between copies pass through a symmetry of the block, a locked value that travels around a loop of the pattern can come
 back as a different position of the block, and then the block has to agree with itself under that symmetry. That is a fold, and
-whether it happens depends on the whole loop (a ring of odd length folds, an even one does not), but it never depends on how long the
-loop is, and what it locks is just the block folded onto itself.
+whether it happens depends on the whole loop (a ring of odd length folds, an even one does not). Whether the pattern survives does not depend on how long the loop is,
+but what it locks can: in one block a short loop locks two positions together and a long one does not. *(Narrowed after the referee.)*
 
 ## Position and next directions
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — twisted pins | **Status:** Successful, referee pending | settled by definition, with the one open piece (cycle length) answered: no effect |
+| This attempt — twisted pins | **Status:** Successful, referee R1 confirmed with fixes | settled by definition for living; cycle length matters for ties (the referee's rule), not for living (after the run) |
 | Local direction — nesting | Continue | endless blocks join both readings |
 | Broader exploration — G17's census | Known alternatives | random patterns' jumps; folding among random bases (knots alone) |
 | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | folding pins are the block folded by the pattern's cycle symmetries |

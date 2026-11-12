@@ -3231,6 +3231,15 @@ So holes come in two kinds:
      harmonies make a closed loop of knots put every copy on it in one shared state, which the same knots in an open chain, even
      unrolled nine times, do not. Influence born of the whole loop: for two harmonies only a loop of 3 knots locks, not one of 4 or 6
      ([decision note](../research/ENDLESS-BLOCK-20261112-001/endless_block.md)).
+
+   **2026-11-12: which loops lock** (`LOOP-LOCK-20261112-001`; referee pending).
+   - **The rule (proved).** Drop each loop's hanging copies and two stitched copies are joined by one step relation; a loop of k knots
+     locks exactly when that relation has no round trip of k steps or fewer other than staying put, and an open chain never locks.
+   - **How overlaps carry it (proved and exact).** A lock never crosses a single shared copy; across a shared knot it spreads from a
+     loop that locks to one that does not, but is never created; two loops sharing two copies can lock together though neither does
+     alone; and a ring of knots each overlapping the next locks or not by how its length fits the period (0011: rings of 5, 6, 7, 9,
+     10, 11 lock, of 4, 8, 12 not), even where no simple loop locks
+     ([decision note](../research/LOOP-LOCK-20261112-001/loop_lock.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

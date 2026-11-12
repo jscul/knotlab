@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ODD-FAMILY-20261112-001A-P001",
+  "canonical_id": "ODD-FAMILY-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "ODD-FAMILY-20261112-001A",
+  "proof": "ODD-FAMILY-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Symmetric step sets that make a harmony",
+  "status": "Proved",
+  "claim": "Proved, refereed by fresh code and an independent session: odd not-all-equal harmonies of periods 73 and 193 exist, unsplit (steps {1, 2}·H at 73 and {1, 2, 4+3i}·H at 193, H the fourth roots of 1; 730 and 386 compatible words, no two differing in one place), by lemma 4 of EVEN-PERIOD-20261112-001, which holds at every odd n. Exact, within the two frozen families (unions of one to three cosets of a subgroup containing -1; the doubled steps {±1,±2,±t(,±2t)}): harmonies at 61, 73 and 193 only, for every odd n from 33 to 59 and every prime from 61 to 199, one set each up to a multiplier, each with stabiliser exactly the fourth roots of 1.",
+  "dependencies": [
+    "ODD-SEARCH-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "Two compatible words of a reported harmony differing in one place.",
+    "A state of a reported base on a long window breaking its n-repeat.",
+    "A set of the frozen families making a harmony that the scan missed, or one it reported failing to."
+  ],
+  "lineage": {
+    "home_scope": "ODD-FAMILY-20261112-001",
+    "epic_path": [
+      "ODD-FAMILY-20261112-001"
+    ],
+    "parents": [
+      "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/manifest.json",
+      "research/ODD-FAMILY-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/manifest.json": "52eb2b330c4230dcaa1430b2c3d844aca5d62ce2cfb8a6885b306e32c98515ba",
+    "research/ODD-FAMILY-20261112-001/preregistration.md": "543b802b51c9f0adbeea4acd4fba6d13a07bfb2036083a4810645e5f53429da4"
+  },
+  "paths": {
+    "manifest": "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/manifest.json",
+    "identity": "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/identity.json",
+    "proof": "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/proof.md",
+    "result": "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/result.json",
+    "check": "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/check.py",
+    "directory": "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law on bases along one shift; step sets of two frozen families at every odd n from 33 to 59 and every prime from 61 to 199; counts of H u 2H at the primes 1 mod 4 from 41 to 199.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 3cec8a886); refereed by fresh code (fam_referee.py) and by an independent fresh model session (independent_referee/report.md).",
+    "status": "lemma by hand; exhaustive scan of the frozen families (check.py); both referees passed",
+    "novelty": "known-with-delta"
+  }
+}

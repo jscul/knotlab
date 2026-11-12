@@ -1,0 +1,232 @@
+{
+ "status": "passed",
+ "checks": {
+  "dependencies": {
+   "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/fam_lib.py": "e5c5e88fdc230cd3c5799dd9cc71f4a0214b6b6393cdbe96b1f2bc5308b5a3f8",
+   "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/check.py": "c4881a5bad9ea5d8c92514636683ac4921952f289e98cf44c2b63f5f2b87d27e",
+   "proofs/ODD-FAMILY-20261112-001A/ODD-FAMILY-20261112-001A-P001_symmetric_steps/fam_referee.py": "6c9c4f23e5bc0b23ae61e579cb636d3d666ce66064ac076206cd4d56a0820fe0",
+   "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/odd_lib.py": "c9d2fd463715136d85c8e2d6a14d7b7f8713a1fffd636b1d1572d7ea6b495602",
+   "research/ODD-FAMILY-20261112-001/preregistration.md": "543b802b51c9f0adbeea4acd4fba6d13a07bfb2036083a4810645e5f53429da4"
+  },
+  "result": {
+   "X1 11^2 = -1 mod 61": true,
+   "X1 6 + 5*11 = 61": true,
+   "X1 S = {\u00b11, \u00b12} u 11*{\u00b11, \u00b12}": true,
+   "X1 every compatible word: along each shift (step 1, step 11) no 000, 111, 01010, 10101": true,
+   "X2 compatible words": 122,
+   "X2 fixed exactly by every fourth root of 1": 2,
+   "X3": [
+    {
+     "word weight": 29,
+     "value at 0": 1,
+     "cosets": "ones",
+     "D": [
+      2,
+      4,
+      6,
+      8,
+      9,
+      10,
+      14
+     ],
+     "|D|": 7,
+     "a difference set (every nonzero difference equally often)": false,
+     "difference counts": [
+      2,
+      4,
+      2,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      2,
+      4,
+      2
+     ]
+    },
+    {
+     "word weight": 29,
+     "value at 0": 1,
+     "cosets": "zeros",
+     "D": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      11,
+      12,
+      13
+     ],
+     "|D|": 8,
+     "a difference set (every nonzero difference equally often)": false,
+     "difference counts": [
+      3,
+      5,
+      3,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      3,
+      5,
+      3
+     ]
+    },
+    {
+     "word weight": 32,
+     "value at 0": 0,
+     "cosets": "ones",
+     "D": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      11,
+      12,
+      13
+     ],
+     "|D|": 8,
+     "a difference set (every nonzero difference equally often)": false,
+     "difference counts": [
+      3,
+      5,
+      3,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      3,
+      5,
+      3
+     ]
+    },
+    {
+     "word weight": 32,
+     "value at 0": 0,
+     "cosets": "zeros",
+     "D": [
+      2,
+      4,
+      6,
+      8,
+      9,
+      10,
+      14
+     ],
+     "|D|": 7,
+     "a difference set (every nonzero difference equally often)": false,
+     "difference counts": [
+      2,
+      4,
+      2,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      2,
+      4,
+      2
+     ]
+    }
+   ],
+   "X5 lift to 305": [
+    {
+     "t": 72,
+     "S'": [
+      1,
+      2,
+      72,
+      144,
+      161,
+      233,
+      303,
+      304
+     ],
+     "lifted 61 word compatible": true,
+     "lifted word has no flippable residue": true,
+     "S' at 305: a compatible word": true,
+     "S' makes a harmony at 305": false
+    },
+    {
+     "t": 133,
+     "S'": [
+      1,
+      2,
+      39,
+      133,
+      172,
+      266,
+      303,
+      304
+     ],
+     "lifted 61 word compatible": true,
+     "lifted word has no flippable residue": true,
+     "S' at 305: a compatible word": true,
+     "S' makes a harmony at 305": false
+    },
+    {
+     "t": 172,
+     "S'": [
+      1,
+      2,
+      39,
+      133,
+      172,
+      266,
+      303,
+      304
+     ],
+     "lifted 61 word compatible": true,
+     "lifted word has no flippable residue": true,
+     "S' at 305: a compatible word": true,
+     "S' makes a harmony at 305": false
+    },
+    {
+     "t": 233,
+     "S'": [
+      1,
+      2,
+      72,
+      144,
+      161,
+      233,
+      303,
+      304
+     ],
+     "lifted 61 word compatible": true,
+     "lifted word has no flippable residue": true,
+     "S' at 305: a compatible word": true,
+     "S' makes a harmony at 305": false
+    }
+   ],
+   "61 enumeration": {
+    "colourings": 122,
+    "orbits": 2,
+    "Hamming-1 pairs": 0,
+    "least distance": 11,
+    "minimal periods": [
+     61
+    ]
+   }
+  },
+  "seconds": 1.3
+ }
+}

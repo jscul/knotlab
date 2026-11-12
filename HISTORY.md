@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: the old core's end, narrowed by its referee
+
+- The test of whether growing patterns end when their oldest part reaches the uniform end (`OLD-CORE-20261112-001`) was confirmed:
+  every ending regenerates. For growth with closings anywhere, the dying part's density is set by the growth's own arithmetic, so its
+  being below the uniform end is no finding; only growth along pairs tests the uniform end, and after peeling comes near it. The
+  degree-matched resampler was not the uniform one, but a fair one gives the same shares. The closing rate at which growth with
+  closings anywhere ends was measured only within the horizons run
+  ([decision note](research/OLD-CORE-20261112-001/old_core.md)).
+- Unchanged: every verdict.
+
 ## 12 November 2026: the count of missing knots, narrowed by its referee
 
 - The test of whether the law counts missing knots along growth that never ends (`MISSING-KNOTS-20261112-001`) was confirmed: every

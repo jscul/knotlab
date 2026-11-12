@@ -3303,12 +3303,14 @@ So holes come in two kinds:
      above counting knots per distinction), weakly beyond; with rare closings it stays near zero. The uniform jump is the known
      discontinuous backbone at the known threshold, read along one growth
 
-   **2026-11-12: what ends a growth that adds distinctions** (`OLD-CORE-20261112-001`, B170; referee pending).
+   **2026-11-12: what ends a growth that adds distinctions** (`OLD-CORE-20261112-001`, B170; refereed, confirmed with fixes).
    - **Not the uniform end (computed, frozen).** The least set of oldest distinctions whose knots allow no state has 1.55 to 1.74 knots
-     per distinction, where uniform patterns of the same size never end.
+     per distinction, where uniform patterns of the same size never end; for growth with closings anywhere that density is the
+     growth's own arithmetic, so only growth along pairs tests the uniform end.
    - **Two causes.** Growth along co-knotted pairs ends through its degrees: patterns with its dying core's degrees always end, and
      peeled of loose distinctions the core sits at the known threshold. Growth with closings anywhere ends through correlations its
-     degrees do not carry (degree-matched patterns never end), between closing rates 0.25 and 0.3. Age is a proxy for degree
+     degrees do not carry (degree-matched patterns never end, also with a fair switch chain), between closing rates 0.25 and 0.3
+     within the horizons run. Age is a proxy for degree
      ([decision note](../research/OLD-CORE-20261112-001/old_core.md)).
    - **What those correlations are: the nesting by age** (`AGE-NEST-20261112-001`; referee pending). Redrawn cores that keep every
      knot's youngest distinction, so every count of knots among the oldest j, end about half the time, with or without the degrees;

@@ -1,0 +1,34 @@
+{
+ "schema_version": 3,
+ "artifact_id": "SHIFT-COUNT-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "SHIFT-COUNT-20261112-001Z",
+ "proof": "SHIFT-COUNT-20261112-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing SHIFT-COUNT-20261112-001: ticket A supported (146 of 169 certified rank 2; A3 failed on one growing base with a second direction on its other side); ticket B refuted as frozen (no relays; a plateau at 6 between 23 and 27 across); ticket C refuted in the main (the harmony thread's tiling reading fails on 13 of 21 patterns, base 16's among them); referee pending; recommendation research directions with 'the cone rule' selected. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/contract.json": "Frozen",
+   "artifacts/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/rows.jsonl": "run output",
+   "experiments/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/contract.json": "Frozen",
+   "artifacts/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/rows.jsonl": "run output",
+   "experiments/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/contract.json": "Frozen",
+   "artifacts/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/rows.jsonl": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "refuted",
+   "C": "refuted"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

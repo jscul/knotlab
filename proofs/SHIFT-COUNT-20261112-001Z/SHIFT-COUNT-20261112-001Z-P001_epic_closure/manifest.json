@@ -1,0 +1,104 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "SHIFT-COUNT-20261112-001Z-P001",
+ "canonical_id": "SHIFT-COUNT-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "SHIFT-COUNT-20261112-001Z",
+ "proof": "SHIFT-COUNT-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure of one unlengthened shift against two",
+ "status": "Proved",
+ "claim": "Ledger closing SHIFT-COUNT-20261112-001: ticket A supported (146 of 169 certified rank 2; A3 failed on one growing base with a second direction on its other side); ticket B refuted as frozen (no relays; a plateau at 6 between 23 and 27 across); ticket C refuted in the main (the harmony thread's tiling reading fails on 13 of 21 patterns, base 16's among them); referee pending; recommendation research directions with 'the cone rule' selected. No new claim.",
+ "dependencies": [
+  "SHIFT-COUNT-20261112-001A",
+  "SHIFT-COUNT-20261112-001B",
+  "SHIFT-COUNT-20261112-001C"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "SHIFT-COUNT-20261112-001",
+  "epic_path": [
+   "SHIFT-COUNT-20261112-001"
+  ],
+  "parents": [
+   "experiments/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/contract.json",
+   "artifacts/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/rows.jsonl",
+   "experiments/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/contract.json",
+   "artifacts/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/rows.jsonl",
+   "experiments/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/contract.json",
+   "artifacts/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/rows.jsonl"
+  ]
+ },
+ "parent_bindings": {
+  "experiments/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/contract.json": "d2fa4fa413c4d84896dce3e464615fedd2c541793bcc7d193f789bdc0007ac61",
+  "artifacts/SHIFT-COUNT-20261112-001A/SHIFT-COUNT-20261112-001A-E001_second_direction/rows.jsonl": "04224ddecc23c468a46b69b821b868533ccb9bf983ddcdefe71c99df35015796",
+  "experiments/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/contract.json": "3c35257e1a6230c673676739a630fea7bb6e03609ce36c2c8a71f952be6cc38c",
+  "artifacts/SHIFT-COUNT-20261112-001B/SHIFT-COUNT-20261112-001B-E001_growth_signature/rows.jsonl": "4d8fb832e3560f7639a9f3277ed981859d6d52576b2b5fc9210c7fdf9d8d6c73",
+  "experiments/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/contract.json": "c269259cc8aed0c2c75d24b9a201c2f2c926bcd9d4d5c6b67d518498710ccf86",
+  "artifacts/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/rows.jsonl": "34a7fc7acce8a2b4adea39dcede9bf0a9006338bb04d95b531614b36f8193069"
+ },
+ "paths": {
+  "manifest": "proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-12; referee pending (the referee thread).",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: the whole-life census, narrowed by its referee
+
+- The census of tie classes over whole lives (`LIFE-JUMPS-20261112-001`) was confirmed: every number recomputes and every growth
+  regenerates. Two readings were narrowed. "The tie class sits in the oldest distinctions" is met by degree alone, since old
+  distinctions sit in more knots; only in growth with closings anywhere is the class older than that. "The law signals the end long
+  before" holds for ends within a few times the reading's age, about 0.1 of AUC better than counting knots per distinction, and weakly
+  beyond. The uniform jump is the known discontinuous backbone at the known 2-colouring threshold, and the features of growth that adds
+  distinctions are known for grown random networks; the single-growth readings are new
+  ([decision note](research/LIFE-JUMPS-20261112-001/life_jumps.md)).
+- Unchanged: every frozen prediction's verdict.
+
 ## 12 November 2026: one shift against two, confirmed with fixes by its referee
 
 - `SHIFT-COUNT-20261112-001`: 147 of 169 travelling bases have two certified unlengthened shifts (one more than reported, certified by a

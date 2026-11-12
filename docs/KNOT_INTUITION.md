@@ -3293,13 +3293,15 @@ So holes come in two kinds:
      times during its life, and 50 knots before its end it already carries 20 to 45% of its distinctions in one class: no jump
      marks the end (at X(0.3), X(0.35) and O at 0.2 and 0.3; not at X(0.5), whose growths die young).
 
-   **2026-11-12: over a whole life** (`LIFE-JUMPS-20261112-001`; referee pending).
+   **2026-11-12: over a whole life** (`LIFE-JUMPS-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen, fresh seeds).** The largest tie class stays near one distinction in n for 90 to 95% of the
      life and jumps in the last 20 knots, to 0.87 to 0.88 of the base.
    - **Growth that adds distinctions (computed, frozen).** At closing rates 0.3 to 0.35 its largest tie class rises over the second
-     half of its life (at X(0.3): 0.08 at half, 0.24 at nine tenths, 0.33 at the end), always in its oldest distinctions, and the last
-     50 knots add almost nothing: the share approaches its last value before the end, the nearest thing yet to the owner's limit. Read
-     300 knots in, it forecasts the end (AUC 0.82); with rare closings it stays near zero
+     half of its life (at X(0.3): 0.08 at half, 0.24 at nine tenths, 0.33 at the end), in its most knotted distinctions (older than
+     their knots predict only in X), and the last 50 knots add almost nothing: the share approaches its last value before the end, the
+     nearest thing yet to the owner's limit. Read 300 knots in, it forecasts an end within a few times that age (AUC 0.82, about 0.1
+     above counting knots per distinction), weakly beyond; with rare closings it stays near zero. The uniform jump is the known
+     discontinuous backbone at the known threshold, read along one growth
      ([decision note](../research/LIFE-JUMPS-20261112-001/life_jumps.md)). Closer to the owner's limit, but measured on ten whole lives per process only
      ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The

@@ -3083,6 +3083,8 @@ So holes come in two kinds:
      gcd(p, q) offsets, each kept or removed whole; no stitched state has period p − q or p mod q.
    - **The knot law's harmonies are even (exact, to span 12; not proved).** Under not-all-equal every harmony among 47,971
      patterns has states of even period only, and where the pattern does not split, each state flips under half its period.
+     *Narrowed 2026-11-12 (`ODD-SEARCH-20261112-001`): not at every period. An odd harmony of period 61 exists; no odd one up to
+     29, or at 31 or 37.*
      Odd parity makes the periods of linear recurrences, the exactly-one law multiples of 3.
    - **The mirror reads a power of 2 (proved).** Flipping every value pairs the offsets of two such harmonies exactly when
      their periods carry different powers of 2. No stitch reads whether one period divides the other
@@ -3097,6 +3099,16 @@ So holes come in two kinds:
    - **To period 29 (computer-assisted, refereed twice).** All 25,328,938 words of odd period 3 to 29 have such a flip, so no
      not-all-equal harmony, at any span and with any number of knot kinds, has an odd period up to 29. Beyond that it is open
      ([decision note](../research/EVEN-PERIOD-20261112-001/even_period.md)).
+
+   **2026-11-12: the first odd harmony, or none** (`ODD-SEARCH-20261112-001`).
+   - **The question.** Does every word of odd period have an unseen flip, so that the law's repeats are always even?
+   - **No: one of period 61 (proved, refereed).** Forbid three equally spaced equal values with step 1, 2, 11 or 22, counted
+     modulo 61: these 12 knot kinds allow exactly 122 states, one repeating word of period 61 with its shifts and its mirror,
+     and no two differ in one place, so nothing can flip unseen and every state repeats. 61 is odd, and the base does not split.
+   - **None smaller in the searched range.** None up to 29 (proved), none at 31 or 37 (complete search); periods 33, 35 and 39
+     to 59 are open. The steps are the four fourth roots of 1 modulo 61 and their doubles: the law's numbers are not all even,
+     and where an odd one appears it is pinned by a symmetry of the arithmetic modulo 61
+     ([decision note](../research/ODD-SEARCH-20261112-001/odd_search.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.

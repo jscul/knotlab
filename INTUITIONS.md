@@ -2246,7 +2246,8 @@ that earlier records used in two senses.
   shifts; a state is **antiperiodic** (the literature's word) when flipping
   every value is the same as shifting it by half its period. The intuition: a
   repeat the law makes, not one drawn into the meeting pattern. Under
-  not-all-equal every harmony found has even periods only. The owner has also
+  not-all-equal no harmony has an odd period up to 29, or at 31
+  or 37, and one has period 61 (corrected 2026-11-12). The owner has also
   used the word for a relation in which incommensurable parts cancel (22
   October 2026), for drawn polygons whose ratio of perimeter to diameter is
   rational, against "a ratio that continues" (7 November 2026), and for

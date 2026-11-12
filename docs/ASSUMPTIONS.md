@@ -122,6 +122,7 @@ evidence: results and their status come from the records each entry links.
 | [A65](#a65--a-held-reference-distinction-is-supplied-by-the-outside) | A held reference distinction is supplied by the outside | reading | Assumed |
 | [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Confirmed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
+| [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Assumed |
 
 ## Entries
 
@@ -1780,3 +1781,22 @@ evidence: results and their status come from the records each entry links.
   three-set reading misses.
 - **History.**
   - 2026-11-11 · Added by `OVERLAP-READ-20261111-001`.
+
+### A68 · A repair flips distinctions only
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** After the learner stops and the world disturbs it, the repair that brings it back to rest flips distinctions only and
+  never changes a sign of the law. The learner still changes signs while it learns. This is a rule supplied by us, not a property of the
+  base. The canonical K1–K3 test is unchanged.
+- **Why.** `LAW-RIGIDITY-20261112-001` found, on one copy of the drawn knot pattern (2, 0, 4), that a learner resting only where the faces
+  allow finds the count in 10 of 10 runs but holds it in only 5 of 10, because its repair re-signs knots; with this rule all 30 writes held.
+  On a base with no drawing nothing makes a sign change cost more than a flip, so the rule stands in for the drawing's rigidity until a
+  native source is found. The alternative is a repair free to re-sign, as before.
+- **Rests on it.** `LAW-RIGIDITY-20261112-001`'s stage 2 (native rest sets on one copy and on a base with no drawing): with this rule a
+  learned law holds whenever the repair reaches rest, by definition.
+- **Challenge.** Find a native reason for a learned law to stay put on a base with no drawing: a rule of the knot pattern that makes a sign
+  change cost more than a flip near rest, or a learner whose signs change on a slower clock for a stated native reason; if it holds as well,
+  this rule is unneeded.
+- **History.**
+  - 2026-11-12 · Added by `LAW-RIGIDITY-20261112-001`.

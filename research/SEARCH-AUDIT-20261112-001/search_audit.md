@@ -88,3 +88,36 @@ stops when one fits; it would have done as well drawing rules at random. What it
 **Goals:** G15 checkpoint (obstruction learned, with G16); B165 added as a sub-goal.
 **Assumptions:** none new or changed.
 **Basket:** B161 (started), B165, B159, B162, B157, B154, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (05:26 UTC), exactly:
+
+**The audit is closed, and it's a real finding: the learner has never been taught by its examples.** I covered all 91 cases the line called learned: parity, the count of five, gates, deeper memories, written addresses, and the rest-set learners. In each, I compared the learner's recorded probes with blind search, meaning uniform random draws among the laws it may rest at, computed exactly.
+
+- **By the frozen rule:** 67 cases slower than blind search, 22 at search speed, and 2 "learning". Those 2 are single writes and consistent with chance.
+- **Pooled:** only 10% of 215 successful runs found the target within the blind median, where blind search would manage 50%. Parity, for example: blind median 6 probes, learner median 27. The count of five: 22 against 281.
+- **What it means:** the examples decide when the learner stops; they don't steer where it goes. So I've logged a correction (Narrowing): every "learned" in the line now means *found by a search the examples stop, then held*. Each map found, each exact stop and each hold stands. Learning from examples is not shown, and is now open as sub-goal B165. I also fixed one number: the blind expectation in the B160 report was 32, not 16.
+- **Consequence:** with a blind search, the cost is simply how many rules the learner may settle on per right one. That makes B161 (shrinking that set natively) the direct lever. I'm starting it now, as asked, with the advisor model's design points folded in. Its main point: tabulate the counting laws' sums by symmetry orbit first, and add a null test plus many more bases.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: has the learner ever beaten blind search | **Status:** Successful | decided: no, in 91 cases |
+| Local direction: the credit learner as a learner from examples | Retire | examples stop, don't steer |
+| Broader exploration: learning program | Known alternatives | shrink the rest set (B161), a steered learner (B165), two histories (B159) |
+| Long-term goal: G15 | Obstruction learned | gained: storing and keeping found maps; learning from examples not shown |
+
+**Next step:** Research directions, selected #1, started.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Which cyclic sequences to fix (B161) | 3/3 Major | 3/3 Ready | counting laws' sums by kind and symmetry orbit, a null, a dozen or more bases → a native rule that raises counting density beyond chance, or a reason none can | Selected, started |
+| 2 | A learner whose examples steer (B165) | 3/3 Major | 1/3 Exploratory | change first the signs nearest failing examples → beat the blind median, or not | Deferred (sub-goal) |
+| 3 | Two histories (B159) | 2/3 Substantial | 2/3 Testable | as recorded | Deferred |
+
+**Corrections:** two. "Learned" narrowed (Narrowing); the blind expectation in B160's report fixed from 16 to 32 (Not a block).
+**Goals:** G15 checkpoint (obstruction learned, with G16); sub-goal B165 added.
+**Assumptions:** none new or changed.
+**Basket:** B161 (started), B165, B159, B162, B157, B154, B155, B156, B150, B151, B130.
+
+The audit run is registered in docs/LONG_RUNNING.md and folded in.

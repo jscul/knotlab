@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: the random-pattern census's summary, narrowed by its referee
+
+- The census of random meeting patterns (`RANDOM-FATES-20261112-001`) was confirmed by its referee: every growth regenerates from its
+  seed and every number recomputes. Its summary said too much. It said every living pattern, under every process, reads as a ruler with
+  nothing tied; that holds for uniform patterns away from their end (at 100 to 300 distinctions) and for growth whose closings are rare,
+  while some living patterns carry ties and many shortcuts, and the theorem for patterns with no cycle of knots does not cover patterns
+  full of cycles. The uniform end's fixed length in knots is consistent with the data, not pinned (a slow growth with size is not
+  excluded), and its last share is 87 to 90%. "No final jump" holds at the closing rates where growth lives long, not where it ends
+  young. Two slips in the record were fixed
+  ([decision note](research/RANDOM-FATES-20261112-001/random_fates.md)).
+- Unchanged: every result, number and prediction's verdict.
+
 ## 12 November 2026: the steering report's wording, corrected by its referee
 
 - The steering epic (`STEER-LEARN-20261112-001`) found that no steering rule lets the learner's examples speed its search. Its referee

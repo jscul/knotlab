@@ -2044,13 +2044,16 @@ sets of knots that allow no state while every proper part allows one, and how
 bond distance compares with steps apart, including how fast **step balls**,
 the distinctions within r steps, grow.
 
-**What it found** (computed, under these weightings; stage 1 is awaiting its
-referee). Away from an end, the patterns that live read as rulers: two
-distinctions d steps apart lie in a least bond of d + 2, which is a theorem
-wherever knots form no cycle. Uniform knots end suddenly: within about twenty
-knots, the same at every size from 50 to 300 distinctions, the law ties nine
-tenths of the base into one class. Growth that keeps adding distinctions
-carries large tie classes for much of its life and ends with no final jump.
+**What it found** (computed, under these weightings; refereed). Uniform
+patterns away from their end, and growth with rare closings, read as rulers:
+two distinctions d steps apart lie in a least bond of d + 2 for nearly every
+pair. (Where knots form no cycle that is a theorem; these patterns are full of
+cycles, and some living ones carry ties and shortcuts.) Uniform knots end
+suddenly: within about twenty knots, consistent with the same number at every
+size from 50 to 300 distinctions, the law ties nine tenths of the base into
+one class. Growth that keeps adding distinctions, at the closing rates
+measured, carries large tie classes for much of its life and ends with no
+final jump.
 Growth among the newest four distinctions never ends (proved), and the law
 counts along it, its least bond growing in proportion to distance, except
 where closings are so rare that no bond spans far stretches; where every knot
@@ -2063,9 +2066,9 @@ is present it repeats with period four
 | --- | --- | --- |
 | Nothing chooses; ours is coincidental | interpretation (A15); no proof or experiment can settle it | none |
 | Other realities are other knot patterns | reading (A73) | the owner's answer; the census under other laws |
-| Typical and rare meeting patterns | computed under four weightings: living patterns read as rulers away from an end | [RANDOM-FATES-20261112-001](research/RANDOM-FATES-20261112-001/random_fates.md), closed; its census's referee pending |
+| Typical and rare meeting patterns | computed under four weightings: uniform and rare-closing patterns read as rulers away from an end | [RANDOM-FATES-20261112-001](research/RANDOM-FATES-20261112-001/random_fates.md), closed and refereed (confirmed with fixes) |
 | Three outcomes | computed by process; growth among the newest four never ends and among five or more ends for certain (proved) | the same epic |
-| Limits near the end | uniform knots: a jump over a fixed number of knots, not a limit (computed); growth that adds distinctions: no final jump | the same epic |
+| Limits near the end | uniform knots: a jump of about twenty knots, consistent with a fixed number, not a limit (computed); growth that adds distinctions: no final jump at the rates measured | the same epic; whole lives in `LIFE-JUMPS-20261112-001` |
 | Only relative | shortcuts computed; the direction of no length proved; relativity an analogy only | [FOLD-20261112-001](research/FOLD-20261112-001/fold.md), closed |
 | Harmonies | owner's word; one reading (A70) | `HARMONY-ARITH-20261112-001`, closed: the law's harmonies are even (exact to span 12) |
 | Subtraction and division | stitching multiplies and counts shared divisors, nothing subtracts (proved); divisibility not read | `HARMONY-ARITH-20261112-001`, closed; A70's challenge open |

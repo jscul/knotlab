@@ -1809,8 +1809,20 @@ So holes come in two kinds:
      tries each rule it settles on against the examples, and it stops at one that fits.
    - **Reading.** Everything above that says "learned" means found by a search the examples stop, then kept. Keeping is real; being taught is
      not shown. With a blind search, how many rules the learner may settle on per right rule is the whole cost.
-   - **Next.** Fewer rules to settle on, chosen by the knots (B161), and a learner its examples steer (B165)
-     ([decision note](../research/SEARCH-AUDIT-20261112-001/search_audit.md)).
+   - **Next (B161 taken by `WHICH-SEQUENCES-20261112-001`, below).** Fewer rules to settle on, chosen by the knots (B161), and a learner its
+     examples steer (B165) ([decision note](../research/SEARCH-AUDIT-20261112-001/search_audit.md)).
+
+   **2026-11-12: the knots alone do not choose where to look** (`WHICH-SEQUENCES-20261112-001`).
+   - **The question.** Since the learner searches blindly, fewer rules to settle on per right rule is the whole saving. Can the knots, by
+     some request about the sums around their short cyclic sequences, made the same way on every pattern, keep the counting rule among the
+     few?
+   - **Exact.** No, across 13 patterns: of 16 such requests, the best keeps the counting rule on 2 and hides it on the other 11. Random
+     targets do no better, so this is not chance.
+   - **Symmetry.** On the two undrawn patterns that have symmetries, the counting rule is one the symmetries fix, which few rules are. On the
+     drawn copy, whose symmetries move the place where the count is read, it is not; most small patterns have no symmetry at all.
+   - **Reading.** Where to look cannot be read off the knots this way; the learner will have to be steered by what it is taught.
+   - **Next.** A learner whose examples steer it (sub-goal B165), awaiting a go-ahead
+     ([decision note](../research/WHICH-SEQUENCES-20261112-001/which_sequences.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

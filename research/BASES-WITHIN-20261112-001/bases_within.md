@@ -133,3 +133,32 @@ answered for stitches at one place). **Assumptions:** A70 used; A75 added and us
 arithmetic line's basket ODD-FAMILY #1 and #2 rate higher on concreteness (3/3) but were set aside by the coordinator as of
 diminishing return for the owner's goals, and HARMONY-ARITH #2 (harmonies along two shifts) now has these levels as instances. **Advisor:** consulted twice before the freeze: it supplied the mirror lift (L4), the product form
 of L7, the shifted arm, the counts P1 and P2, the positive control and the drawn nesting arm, and judged native shift rules flat.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 08:03 UTC, verbatim:
+
+> Done. If every yes-or-no is its own endless pattern, bound to the others at every place, the logic one level up is exactly the logic below. That holds at every level, and nesting never ends. It also spreads no influence. The write-up is research/BASES-WITHIN-20261112-001/bases_within.md. The independent referee is pending with the background referee thread.
+>
+> • **The level above is the level below (proved).** Every outer state lifts, so the nested base allows exactly the outer base's states, at every depth. The rule is its own fixed point. The inner patterns add hidden room and never a new constraint: 0011 gives 4, 16 and 256 states at levels 1 to 3.
+> • **One endless pattern is exactly one yes-or-no: 0101… (proved).** Every other pattern carries a hidden phase on top of its bit.
+> • **No global influence from nesting (proved; exact to depth 7).** Forced values only multiply what the seed pattern already forces. A drawn fractal of three copies sharing corners forces nothing at all down to level 7, even though its far end doubles at every level. A seed that does force (the Fano plane less one knot) reaches every depth, but over a shrinking share: (3/7)^k.
+> • **Shifts are where the hidden phase matters, and they mostly loosen.** Stitches with shifts ended a living pattern only in one case, where all four triples of four distinctions are knotted. They brought the contradictory Fano plane back to life almost every time.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — bases within bases | **Status:** Successful, referee pending | your three questions answered for stitches at one place (proved); the levels run hit its cap and was followed up after the run |
+> | Local direction — nesting | Continue | the one reading where nesting itself could spread influence (substitution) is untested |
+> | Broader exploration — G17's census | Known alternatives | the random-patterns census; harmonies along two shifts |
+> | Long-term goal — G17 Typical and rare meeting patterns | Obstruction learned | nesting keeps the law and spreads no influence; influence has to come from the seed or from shifts |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Nesting by substitution | 2/3 — Substantial | 2/3 — Testable | each distinction becomes a finite block, blocks bound at chosen distinctions, iterated → forcing that grows with depth, or none | Selected · awaiting go-ahead |
+> | 2 | A seed whose influence doesn't shrink | 2/3 — Substantial | 2/3 — Testable | search small near-contradictory seeds → one whose forced share holds at depth, or a proof it must fall | Alternative · deferred |
+> | 3 | Why shifts loosen | 1/3 — Incremental | 3/3 — Ready | patterns of up to 5 knots under shifts; why the Fano plane revives → a lemma | Alternative · deferred |
+> | 4 | Counting the levels | 1/3 — Incremental | 3/3 — Ready | level-2 counts 2, 16, 102, 528, 2,470, 11,016 → a formula | Alternative · deferred |
+>
+> **Corrections:** none. **Goals:** G17 checkpoint (obstruction learned), no goal change. **Assumptions:** A75 added (this reading of "bound to others"; substitution is its challenge, #1). **Basket:** #1 to #4 recorded. **Words:** "stitch" in the glossary now covers three harmonies, with "stitch at one place" and "shifted stitch". **Advisor:** consulted twice before the freeze. It supplied the lifting lemma and its main counts, and it judged that native shift rules reduce to stitches at one place. Also: the last epic's route measurement hit its cap and is recorded as dropped, with no claims affected.

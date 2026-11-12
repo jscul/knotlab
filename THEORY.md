@@ -913,14 +913,18 @@ Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-c
 
 John Cullen: "each boolean variable could be its own micro infinite series of
 logic, that's bound to others". Tested one way (referee pending): each
-distinction an inner harmony, each outer knot a stitch of the inner harmonies
-at every place. Then the level above allows exactly the outer states, at every
+distinction an inner harmony, each outer knot an unlagged stitch of the inner
+harmonies. Then the level above allows exactly the outer states, at every
 level, and never ends (proved: every outer state lifts); only the alternation
 0101… is one distinction exactly; forced values only multiply the seed's, and
-a drawn three-copy nesting forces nothing to level 7. Open: nesting by
-substitution, and influence that does not shrink with depth.
+a drawn three-copy nesting forces nothing to level 7. Tested the other way
+(referee pending): replace each distinction by a block whose own knots bind
+the copies, and every distinction the block cannot spare is tied across the
+whole pattern (in 47 of 87 small blocks; one direction proved, the other
+exact), while nesting deeper adds nothing new. Open: a proof of the other
+direction, and which reading John meant.
 
-Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
+Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [nesting by substitution](research/SUBST-NEST-20261112-001/subst_nest.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
 
 ### The weak four-place kinds
 

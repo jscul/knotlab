@@ -3168,6 +3168,22 @@ So holes come in two kinds:
    - **Shifts are where the inner phase matters, and they mostly loosen.** Stitching with shifts ended a living pattern only where
      all four triples of four distinctions are knotted, and brought the contradictory Fano plane back to life almost always
      ([decision note](../research/BASES-WITHIN-20261112-001/bases_within.md)).
+     *Narrowed 2026-11-12 (`SUBST-NEST-20261112-001`, below): "spreads no influence" holds for nesting by stitches; nesting by
+     substitution can pin a value across the whole pattern. Read steps apart for bond distance (corrected).*
+
+   **2026-11-12: nesting by substitution** (`SUBST-NEST-20261112-001`, the challenge to A75; referee pending).
+   - **The question.** Instead of an endless series stitched to its neighbours, replace each distinction by a small block, and let
+     the block's own knots bind the copies to each other. Does influence then travel?
+   - **Yes: a value can be pinned across everything (exact).** In 47 of 87 small blocks, some distinction of the block is tied in
+     every copy across the whole pattern: on a chain of 16 knots, fixing it at one end fixes it at the other, 16 steps away, and so
+     after a second substitution. Neither the test patterns nor most of the blocks hold any tie of their own.
+   - **The block decides (proved one way, exact the other).** A distinction the block can spare (its other distinctions can satisfy
+     every knot without it) is never pinned; every other one was pinned, in all 4,850 cases. All four knots on four distinctions
+     spares none, so every copy must take the same state and the whole nested pattern has just six.
+   - **Depth carries, it does not create.** Nothing new appeared after the second substitution. Replacing knots instead of
+     distinctions is decided at the first level (kept, freed, forced equal, or ended), and with every triple of distinct block
+     distinctions bound, blocks of five or more end every pattern
+     ([decision note](../research/SUBST-NEST-20261112-001/subst_nest.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 89% at the last base, the same at every

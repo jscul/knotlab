@@ -2286,15 +2286,34 @@ that earlier records used in two senses.
   reading is one assumption about his word, not its only sense.
 - **Stitch.** A knot of one fixed kind, at every shift, holding distinctions
   of two or three harmonies, such as one on (a_{i+s}, a_{i+t}, b_{i+u});
-  harmonies with stitches are **stitched**. A stitch whose members all sit at
-  the same place, such as (a_i, b_i, c_i), is a **stitch at one place**; one
-  whose members are moved by **shifts** s, t, u is a **shifted stitch**
-  (bases within bases, 12 November 2026). (They overlap instead when a_i and b_{i+s} are one
+  harmonies with stitches are **stitched**. The members' **lags** s, t, u
+  count only up to a common addend; a stitch with all lags equal, such as
+  (a_i, b_i, c_i), is **unlagged**, and any other is **lagged** (bases within
+  bases, 12 November 2026). (They overlap instead when a_i and b_{i+s} are one
   shared distinction.) The **offset** of two orbits of periods p and q is the
   shift between their states counted modulo gcd(p, q), the literature's
   relative phase; a stitch keeps or removes each offset whole. The intuition:
   stitching multiplies periods into their least common multiple, and the
   shared divisor counts the ways two harmonies can sit against each other.
+- **Distinction substitution.** Each distinction v of a pattern is replaced
+  by a copy of a block, with distinctions (v, p), and each knot (x, y, z) by
+  the **between-copy knots** ((x, p), (y, q), (z, r)) for the **block
+  triples** (p, q, r) in a set fixed by the block (its own knots, in every
+  order, or every triple of distinct distinctions). A distinction p of the
+  block is **spare** when its other distinctions can be given values with
+  every knot of the block holding both values without p; p's **part** is the
+  distinctions (v, p), and it is **tied** when they lie in one tie class.
+  The intuition: with the block's own knots between copies, a part is pinned
+  across the whole pattern exactly when the block cannot spare its
+  distinction (proved one way, exact the other, on 387 blocks; nesting by
+  substitution, 12 November 2026).
+- **Knot substitution.** Each knot is replaced by a copy of a **gadget** (the
+  complexity literature's word), a pattern glued to the knot at its three
+  **terminals**, again and again (the literature's hierarchical lattice). A
+  gadget that treats its terminals alike decides every level at the first:
+  the law is kept, freed, its terminals forced equal, or the pattern ends.
+- **Tie extent.** Of a distinction, the most steps apart to a distinction
+  tied to it: how far fixing it forces a value.
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.
@@ -2470,10 +2489,11 @@ that earlier records used in two senses.
   | knot | a relation constrained as a whole and free in every part (lesson 2.1) | a knotted rope: classical knot |
   | law | a rule put everywhere in a pattern (lesson 4.6) | a regularity the allowed states force: bond |
   | smallest bond | the bond with the fewest distinctions (lesson 4.6) | the knot that excludes the fewest states: weakest bond |
+  | bond distance | read from the allowed states (lesson 4.6) | a count of knots or co-knotted pairs in a chain: steps apart (bases within bases and nesting by substitution, 12 November 2026, corrected) |
   | network | a network of loops (lesson 4.5) | a pattern of knots: knot pattern; the foundation's contact network, written in full |
   | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: drawn knot pattern |
   | dimension | how fast balls grow (lesson 4.6) | the dimension of a hole or of a complex: the literature's, marked as such |
-  | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell |
+  | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell; the index of a stitch's members: lag (unlagged stitch, formerly "stitch at one place"); a block's position: its distinction (spare distinction, formerly "loose place") |
   | point | the owner's moving point, a state with a charge-like strength (his picture of learning), and otherwise the literature's | a variable: distinction |
   | line | (only in the owner's words and the literature's names, such as the number line and a Fano line) | a three-place knot: knot; an open chain: chain |
   | face | (the literature's only: a face of a map) | a knot of a weave: knot; a cycle a law closes: declared cycle |

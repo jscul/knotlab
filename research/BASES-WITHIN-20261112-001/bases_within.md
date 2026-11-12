@@ -87,7 +87,7 @@ same night and is recorded as dropped there.
   not yet a fractal of structure: the inner series add hidden room, never a new constraint or a new forced value.
 - **For "globally influential".** Influence does not come from nesting. It comes from a seed that already forces (then it reaches
   every depth, in a shrinking share) or from shifted stitches, which mostly undo contradictions rather than spread them. A design where
-  influence grows with depth was not found.
+  influence grows with depth was not found. *Narrowed 2026-11-12 (`SUBST-NEST-20261112-001`; logged in `docs/CORRECTIONS.md`, Narrowing): true of nesting by unlagged stitches (A75); nesting by substitution can pin a value across the whole pattern. Also read "steps apart" for "bond distance" and "steps" for "bonds" throughout (Not a block), "unlagged" for "at one place" and "lagged" for "shifted" (the glossary's words).*
 
 ## Assumptions
 
@@ -103,7 +103,8 @@ If every yes-or-no is itself an endless pattern tied to the others at every poin
 below: the same patterns are allowed, nothing new is ruled out, and it never runs out of room. That holds at every depth, so the rule
 is its own fixed point. The one endless pattern that behaves exactly like a single yes-or-no is the plain alternation 0101…; every
 other one carries extra hidden freedom. What nesting does not do is spread influence: fixing one point forces nothing new, even in a
-fractal built from copies of copies. Influence only travels as far as the smallest piece already forces it.
+fractal built from copies of copies. Influence only travels as far as the smallest piece already forces it. *Narrowed 2026-11-12: for nesting by stitches; nesting by
+substitution can pin a value everywhere (`SUBST-NEST-20261112-001`).*
 
 ## Position and next directions
 

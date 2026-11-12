@@ -3364,6 +3364,10 @@ So holes come in two kinds:
      depth where the finite versions die, by construction in 788 of them (each copy holds the whole dying pattern again and needs
      its own); one knot per depth, or one thread of them down the nesting, almost never works. The bottom comes loose
      in 87% of them; the interior does not ([decision note](../research/LIMIT-STATE-20261112-001/limit_state.md)).
+   - **How many all-equal knots each depth needs** (`WITNESS-COUNT-20261112-001`; referee pending): more than the dying copies
+     need one by one in 88% of one-definition families, and in 87% of families no living state keeps every depth at its least:
+     the copies constrain each other through the distinctions they share, and the deeper all-equal knots mostly sit in other
+     branches ([decision note](../research/WITNESS-COUNT-20261112-001/witness_count.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

@@ -1400,5 +1400,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | — | [folder](research/ODD-SEARCH-20261112-001/) |
 | 2026-11-12 | Outcomes of random meeting patterns (`RANDOM-FATES-20261112-001`) | — | [folder](research/RANDOM-FATES-20261112-001/) |
-| 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | — | [folder](research/SEARCH-AUDIT-20261112-001/) |
+| 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |
 

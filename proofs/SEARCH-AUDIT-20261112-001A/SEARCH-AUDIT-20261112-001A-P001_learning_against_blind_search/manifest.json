@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SEARCH-AUDIT-20261112-001A-P001",
+  "canonical_id": "SEARCH-AUDIT-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "SEARCH-AUDIT-20261112-001A",
+  "proof": "SEARCH-AUDIT-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The audit: learning against blind search",
+  "status": "Proved",
+  "claim": "Exact baselines, recorded runs: in 91 cases covering every learned result of the learning line, the learner found its target no faster than uniform random draws among the laws it may rest at (67 slower than blind search, 22 search, 2 single writes faster by the frozen rule, consistent with chance); pooled over 215 found runs, 10.2% found within the blind median where blind search would reach half.",
+  "dependencies": [
+    "NATIVE-GRADE-20261112-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A blind baseline computed wrongly; a case misread from its record."
+  ],
+  "lineage": {
+    "home_scope": "SEARCH-AUDIT-20261112-001",
+    "epic_path": [
+      "SEARCH-AUDIT-20261112-001"
+    ],
+    "parents": [
+      "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/audit.py",
+      "research/SEARCH-AUDIT-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/audit.py": "a72b73c494f45abb1f1f2edd565123f2c4bbb7c4ce8f309e2dcb3cb3152f7e2f",
+    "research/SEARCH-AUDIT-20261112-001/preregistration.md": "e577c66c4c2808973a3bbeb27a576f900c0671d4b554ddaaed9beaf27b5fa3d2"
+  },
+  "paths": {
+    "manifest": "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/manifest.json",
+    "identity": "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/identity.json",
+    "proof": "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/proof.md",
+    "result": "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/result.json",
+    "check": "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search/audit.py",
+    "directory": "proofs/SEARCH-AUDIT-20261112-001A/SEARCH-AUDIT-20261112-001A-P001_learning_against_blind_search"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Every learned result in the learning note's cold-start section: 91 cases, recorded runs only.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 06d0f2a5f).",
+    "status": "exact baselines over recorded runs (audit.py)",
+    "novelty": "known-with-delta"
+  }
+}

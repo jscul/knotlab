@@ -94,16 +94,57 @@ def native_write():
 
 # ---------------------------------------------------------------- 2. gates with the credit learner, 3. deeper memories
 
-def gate_cases(spaces_rows, W, I, read_map, groups_of):
+def read_maps(K, s, ports_list):
+    """read_map for several interfaces of one class with one solver (the same readings as io_lib.read_map)"""
+    from pysat.solvers import Solver
     out = []
-    for (name, iname), (ports, runs) in spaces_rows.items():
-        sp = W.Space(name)
-        rest = [s for s in sp.O.classes(sp.K) if W.has_floor_state(sp.K, s, sp.floor2 // 2)]
+    with Solver(name="cadical153", bootstrap_with=list(K.clauses(s))) as so:
+        for ports in ports_list:
+            ins, o = ports[:2], ports[2]
+            m = ""
+            for x in itertools.product((0, 1), repeat=2):
+                a = [(p + 1) if v else -(p + 1) for p, v in zip(ins, x)]
+                v0, v1 = so.solve(assumptions=a + [-(o + 1)]), so.solve(assumptions=a + [o + 1])
+                m += "x" if not (v0 or v1) else ("u" if v0 and v1 else ("1" if v1 else "0"))
+            out.append(m)
+    return out
+
+
+def gate_space(args):
+    """one space of a gate family: every case on it, the class maps read once per class"""
+    lib, name, cases = args
+    W = _gate_lib(lib)
+    sp = W.Space(name)
+    rest = [s for s in sp.O.classes(sp.K) if W.has_floor_state(sp.K, s, sp.floor2 // 2)]
+    keys = sorted(cases)
+    maps = [read_maps(sp.K, s, [cases[k][0] for k in keys]) for s in rest]
+    out = []
+    for j, iname in enumerate(keys):
+        ports, runs = cases[iname]
         tg = runs[0][2]
-        shares = [flips_share(read_map(sp.K, s, ports), tg) for s in rest]
+        shares = [flips_share(m[j], tg) for m in maps]
         out.append(case_row("%s / %s / target %s" % (name, iname, tg), sum(shares) / len(rest), [(a, b) for a, b, _ in runs],
                             len(rest), sum(x > 0 for x in shares)))
     return out
+
+
+def _gate_lib(lib):
+    if lib == "credit":
+        sys.path.insert(0, p_path("proofs/CREDIT-PIN-20261110-001B/CREDIT-PIN-20261110-001B-P001_credit_from_pinned_dissonance"))
+        import credit_lib as C
+        return C.W
+    sys.path.insert(0, p_path("proofs/DEEP-MEM-20261111-001A/DEEP-MEM-20261111-001A-P001_deeper_memories_from_examples"))
+    import deep_lib as L
+    return L.W
+
+
+def gate_cases(spaces_rows, W, I, read_map, groups_of, lib="credit"):
+    by = {}
+    for (name, iname), v in spaces_rows.items():
+        by.setdefault(name, {})[iname] = v
+    with Pool(min(8, len(by))) as pool:
+        parts = pool.map(gate_space, [(lib, name, cases) for name, cases in sorted(by.items())])
+    return [r for part in parts for r in part]
 
 
 def sturdy():
@@ -134,7 +175,7 @@ def deep():
         ports = cache[name][g]
         r0 = rec["rows"][0]
         rows.setdefault((name, g), (ports, []))[1].append((r0["outcome"] in ("learned, held", "learned, not held"), r0["probes"], r0["target"]))
-    return gate_cases(rows, L.W, L.I, L.I.read_map, None)
+    return gate_cases(rows, L.W, L.I, L.I.read_map, None, lib="deep")
 
 
 # ---------------------------------------------------------------- 4 to 6. parity and counts
@@ -218,8 +259,12 @@ def main():
     if os.environ.get("PYTHONHASHSEED") != "0":
         os.execve(sys.executable, [sys.executable, "-B"] + sys.argv, {**os.environ, "PYTHONHASHSEED": "0"})
     names = ["native writing", "gates (credit learner, sturdier probe)", "deeper memories", "parity and the count of five", "rest-set and graded learners"]
-    with Pool(5) as pool:
-        res = dict(pool.map(job, names))
+    res = {}
+    for n in names:
+        res[n] = job(n)[1]
+        if "--write" in sys.argv:
+            (HERE / ("result_%s.json" % n.split(" ")[0])).write_text(json.dumps(res[n], indent=1, default=str) + "\n")
+        print(n, {r["reading"] for r in res[n]}, round(time.time() - T0, 1), "s", flush=True)
     rows = [r for n in names for r in res[n]]
     tally = {}
     for r in rows:

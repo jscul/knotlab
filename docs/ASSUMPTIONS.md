@@ -120,7 +120,7 @@ evidence: results and their status come from the records each entry links.
 | [A63](#a63--a-declared-cycle-is-put-in-not-native) | A declared cycle is put in, not native | reading | Overturned |
 | [A64](#a64--counting-how-knots-meet-at-a-distinction-declares-no-cycle) | Counting how knots meet at a distinction declares no cycle | reading | Assumed |
 | [A65](#a65--a-held-reference-distinction-is-supplied-by-the-outside) | A held reference distinction is supplied by the outside | reading | Assumed |
-| [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Under challenge |
+| [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Confirmed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 
 ## Entries
@@ -1735,7 +1735,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A66 · Copies sharing distinctions keep each copy's own drawn faces
 
-**Under challenge** · 2026-11-11 · reading
+**Confirmed** · 2026-11-12 · reading
 
 - **Statement.** When copies of drawn knot patterns share distinctions (a distinction of one copy is the same distinction as one of
   another), the dissonance the learner feels is the sum of the copies' own: violated knots, plus each copy's faces, which belong to that
@@ -1750,6 +1750,10 @@ evidence: results and their status come from the records each entry links.
   drawing (sub-goal B153); if learning succeeds or fails the same way, the faces were inessential; if it differs, the learner's success
   depends on them.
 - **History.**
+  - 2026-11-12 · Confirmed by `UNDRAWN-LEARN-20261111-001`, for this reason: with dissonance at violated knots alone and no faces, the
+    learner held the count in 0 of 10 runs on one copy and 0 of 10 on two copies sharing a distinction, where reading the faces it held
+    10 of 10 on each; the faces did real work. Reopenable by a drawing-free learner that holds these counts
+    ([learning without a drawing](../research/UNDRAWN-LEARN-20261111-001/undrawn_learn.md)).
   - 2026-11-11 · Under challenge by `UNDRAWN-LEARN-20261111-001` (sub-goal B153): the credit learner with dissonance at knots alone,
     on one copy, on two copies sharing a distinction, and on a base that cannot be drawn.
   - 2026-11-11 · Used by `SHARED-COUNT-20261111-001`, status unchanged: with each copy's faces in the dissonance, the count of five held

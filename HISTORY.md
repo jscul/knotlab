@@ -11,6 +11,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: rows that grow by one, narrowed by its referee
+
+- The test of whether patterns that grow by one distinction per depth can count (`ROW-NEST-20261112-001`) was confirmed for its
+  class, but its null result comes from the class: it had no fresh distinctions and left each generation's ends free. With a parity
+  and ends read against one reference, the known additive rules count depth in binary. The reason first given, that one NAE
+  distinction per position has no room for a signal, is wrong; such rules carry signals and settle, as threshold maps do
+  ([decision note](research/ROW-NEST-20261112-001/row_nest.md)).
+- Unchanged: every count in the class.
+
 ## 12 November 2026: can nested patterns count, narrowed by its referee
 
 - The proof that nested patterns of the description language are finite-state (`NEST-COUNT-20261112-001`) was confirmed. The note
